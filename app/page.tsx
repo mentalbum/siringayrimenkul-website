@@ -14,13 +14,13 @@ import {
 const ozellikler = [
   {
     icon: MapPinIcon,
-    baslik: "Yerel Uzmanlık",
-    aciklama: "Eryaman'daki her mahalleyi, her site ve rezidansı yakından tanıyoruz.",
+    baslik: "Mahalle Mahalle Keşfedin",
+    aciklama: "Eryaman'daki mahalleleri ve içlerindeki siteleri tek tek inceleyin, size en uygun bölgeyi kendiniz görün.",
   },
   {
     icon: BuildingIcon,
-    baslik: "Mahalle Mahalle Rehber",
-    aciklama: "Genel bir ilan listesi değil; her mahalle ve sitenin kendi detaylı sayfası.",
+    baslik: "Evinizi Değerlendirin",
+    aciklama: "Satmak ya da kiraya vermek istediğiniz mülkünüz için doğrudan bizimle iletişime geçin.",
   },
   {
     icon: PhoneIcon,
@@ -51,19 +51,19 @@ export default function HomePage() {
               Eryaman · Etimesgut &amp; Yenimahalle
             </p>
             <h1 className="mt-3 text-4xl leading-tight sm:text-5xl">
-              Eryaman&apos;da Mahallenizi, Sitenizi Tanıyın
+              Eryaman&apos;da Emlağın Adresi
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-body">
-              Şirin Gayrimenkul, Eryaman bölgesindeki mahalleleri ve içindeki site/rezidansları
-              tek tek tanıtan yerel bir emlak rehberi sunuyor. Güncel ilanlarımıza ise doğrudan
-              sahibinden.com üzerinden ulaşabilirsiniz.
+              Şirin Gayrimenkul, Eryaman bölgesinde ev almak, satmak ya da kiraya vermek
+              isteyenler için yerel bir çözüm ortağı. Mahallenizi keşfedin ya da evinizi
+              değerlendirmek için bize ulaşın.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <CtaButton href="/mahalleler" variant="primary">
                 Mahalleleri İncele
               </CtaButton>
-              <CtaButton href={siteConfig.sahibindenUrl} external variant="outline">
-                İlanlarımı Gör
+              <CtaButton href="/iletisim" variant="outline">
+                Evinizi Değerlendirin
               </CtaButton>
             </div>
           </div>
@@ -132,11 +132,10 @@ export default function HomePage() {
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="flex flex-col items-center gap-5 rounded-2xl bg-navy px-6 py-12 text-center text-white sm:px-12">
           <h2 className="text-2xl text-white sm:text-3xl">
-            Eryaman&apos;da Doğru Mahalleyi Bulmaya Hazır mısınız?
+            Eryaman&apos;da Bir Sonraki Adımınızı Birlikte Atalım
           </h2>
           <p className="max-w-xl text-sm text-white/75">
-            Sorularınız için bize doğrudan ulaşın veya güncel ilanlarımızı sahibinden.com
-            üzerinden inceleyin.
+            Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3">
             <CtaButton href="/iletisim" variant="primary">

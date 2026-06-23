@@ -24,6 +24,7 @@ export interface Site {
   mahalleSlug: string;
   adres?: string;
   koordinat?: Koordinat;
+  sinirGeoJSON?: string;
   aciklama: string;
   ozellikler?: string[];
 }

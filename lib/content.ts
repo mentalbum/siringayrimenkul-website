@@ -51,6 +51,13 @@ export function getSiteBySlug(mahalleSlug: string, slug: string): Site | undefin
   return readJson<Site>(filePath);
 }
 
+export function getSiteBoundary(site: Site): GeoJSON.Feature | undefined {
+  if (!site.sinirGeoJSON) return undefined;
+  const filePath = path.join(CONTENT_DIR, site.sinirGeoJSON);
+  if (!fs.existsSync(filePath)) return undefined;
+  return readJson<GeoJSON.Feature>(filePath);
+}
+
 export function getAllBlogPosts(): BlogPost[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
   const files = fs.readdirSync(BLOG_DIR).filter((file) => file.endsWith(".mdx"));

@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import {
   getAllMahalleler,
   getMahalleBySlug,
+  getSiteBoundary,
   getSiteBySlug,
   getSitelerByMahalle,
 } from "@/lib/content";
@@ -46,6 +47,7 @@ export default async function SitePage({ params }: Props) {
   const digerSiteler = getSitelerByMahalle(mahalleSlug)
     .filter((item) => item.slug !== site.slug)
     .slice(0, 3);
+  const sinir = getSiteBoundary(site);
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -86,8 +88,16 @@ export default async function SitePage({ params }: Props) {
           )}
         </div>
         {site.koordinat && (
-          <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
-            <MahalleMapLoader center={site.koordinat} siteler={[site]} />
+          <div className="flex flex-col gap-2">
+            <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
+              <MahalleMapLoader center={site.koordinat} boundary={sinir} siteler={[site]} />
+            </div>
+            {sinir && (
+              <p className="text-right text-xs text-muted">
+                Sınır verisi: TKGM parsel sorgu görüntüsünden türetilmiş tahmini sınırdır, resmi
+                kadastro verisi değildir.
+              </p>
+            )}
           </div>
         )}
       </div>
