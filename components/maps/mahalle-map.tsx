@@ -1,10 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { APIProvider, Map, Marker, Polygon } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
 import { geoJsonPolygonToPaths } from "@/lib/geo";
 import type { Koordinat, Site } from "@/lib/types";
+import { ClusteredMarkers } from "@/components/maps/clustered-markers";
 
 interface MahalleMapProps {
   center: Koordinat;
@@ -24,6 +25,9 @@ export function MahalleMap({ center, boundary, siteler }: MahalleMapProps) {
   }
 
   const paths = boundary ? geoJsonPolygonToPaths(boundary) : [];
+  const sitelerWithKoordinat = siteler.filter(
+    (site): site is Site & { koordinat: Koordinat } => Boolean(site.koordinat)
+  );
 
   return (
     <APIProvider apiKey={siteConfig.googleMapsApiKey}>
@@ -43,17 +47,15 @@ export function MahalleMap({ center, boundary, siteler }: MahalleMapProps) {
             fillOpacity={0.18}
           />
         )}
-        {siteler
-          .filter((site): site is Site & { koordinat: Koordinat } => Boolean(site.koordinat))
-          .map((site) => (
-            <Marker
-              key={site.slug}
-              position={site.koordinat}
-              title={site.isim}
-              icon="/icons/pin-gold.svg"
-              onClick={() => router.push(`/mahalleler/${site.mahalleSlug}/${site.slug}`)}
-            />
-          ))}
+        <ClusteredMarkers
+          markers={sitelerWithKoordinat.map((site) => ({
+            key: site.slug,
+            position: site.koordinat,
+            title: site.isim,
+            icon: "/icons/pin-gold.svg",
+            onClick: () => router.push(`/mahalleler/${site.mahalleSlug}/${site.slug}`),
+          }))}
+        />
       </Map>
     </APIProvider>
   );

@@ -10,6 +10,16 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_SAHIBINDEN_URL ??
     "https://eryamansiringayrimenkul.sahibinden.com/one-cikanlar",
   serviceArea: "Eryaman, Etimesgut ve Yenimahalle / Ankara",
+  officeAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı, 06824 Etimesgut/Ankara",
+  officeAddressParts: {
+    streetAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı",
+    addressLocality: "Etimesgut",
+    addressRegion: "Ankara",
+    postalCode: "06824",
+    addressCountry: "TR",
+  },
+  officeKoordinat: { lat: 39.9892632, lng: 32.6238687 },
+  officeMapsUrl: "https://maps.app.goo.gl/Buv7sKF7P3ujwVpt7",
   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
 } as const;
 

@@ -39,14 +39,15 @@ export default function HakkimizdaPage() {
         <h1 className="mt-2 text-3xl sm:text-4xl">{siteConfig.name}</h1>
         <p className="mt-5 text-base leading-relaxed text-body">
           {siteConfig.name}, Ankara&apos;nın Eryaman bölgesinde (Etimesgut ve Yenimahalle ilçe
-          sınırları içinde) faaliyet gösteren yerel bir gayrimenkul ofisidir. Amacımız, klasik bir
-          ilan sitesi olmak değil; bölgedeki her mahalleyi ve içindeki site/rezidansı tek tek
-          tanıyan, gerçek bir yerel rehber sunmak.
+          sınırları içinde) faaliyet gösteren yerel bir gayrimenkul ofisidir. Ofisimiz Tunahan
+          Mahallesi&apos;nde, 4. Etap Çarşı&apos;da yer alıyor — bölgeyi uzaktan değil, içinden
+          takip ediyoruz.
         </p>
         <p className="mt-4 text-base leading-relaxed text-body">
           Bu sitede ilan yayınlamıyoruz — güncel satılık ve kiralık ilanlarımıza sahibinden.com
-          üzerindeki mağazamızdan ulaşabilirsiniz. Burada bulacağınız şey, Eryaman&apos;ı evi gibi
-          bilen biri tarafından hazırlanmış, mahalle ve site bazlı içerikler.
+          üzerindeki mağazamızdan ulaşabilirsiniz. Burada bulacağınız şey, mahalle ve site bazlı
+          rehber içerikler; evinizi satmak ya da kiraya vermek istiyorsanız da doğrudan bize
+          ulaşabilirsiniz.
         </p>
       </header>
 

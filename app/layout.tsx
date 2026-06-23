@@ -50,9 +50,12 @@ const localBusinessJsonLd = {
   ],
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Etimesgut",
-    addressRegion: "Ankara",
-    addressCountry: "TR",
+    ...siteConfig.officeAddressParts,
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: siteConfig.officeKoordinat.lat,
+    longitude: siteConfig.officeKoordinat.lng,
   },
 };
 

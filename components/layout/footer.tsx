@@ -39,9 +39,16 @@ export function Footer() {
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">İletişim</h2>
           <ul className="mt-4 space-y-3 text-sm text-white/80">
-            <li className="flex items-center gap-2">
-              <MapPinIcon className="h-4 w-4 shrink-0 text-gold" />
-              {siteConfig.serviceArea}
+            <li className="flex items-start gap-2">
+              <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
+              <a
+                href={siteConfig.officeMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-gold"
+              >
+                {siteConfig.officeAddress}
+              </a>
             </li>
             <li className="flex items-center gap-2">
               <PhoneIcon className="h-4 w-4 shrink-0 text-gold" />

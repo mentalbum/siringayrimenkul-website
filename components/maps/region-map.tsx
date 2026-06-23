@@ -1,9 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+import { APIProvider, Map } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
 import type { Mahalle } from "@/lib/types";
+import { ClusteredMarkers } from "@/components/maps/clustered-markers";
 
 interface RegionMapProps {
   mahalleler: Mahalle[];
@@ -36,15 +37,15 @@ export function RegionMap({ mahalleler }: RegionMapProps) {
         gestureHandling="greedy"
         style={{ width: "100%", height: "100%" }}
       >
-        {mahalleler.map((mahalle) => (
-          <Marker
-            key={mahalle.slug}
-            position={mahalle.merkezKoordinat}
-            title={mahalle.isim}
-            icon={mahalle.durum === "yayinda" ? "/icons/pin-gold.svg" : "/icons/pin-muted.svg"}
-            onClick={() => router.push(`/mahalleler/${mahalle.slug}`)}
-          />
-        ))}
+        <ClusteredMarkers
+          markers={mahalleler.map((mahalle) => ({
+            key: mahalle.slug,
+            position: mahalle.merkezKoordinat,
+            title: mahalle.isim,
+            icon: mahalle.durum === "yayinda" ? "/icons/pin-gold.svg" : "/icons/pin-muted.svg",
+            onClick: () => router.push(`/mahalleler/${mahalle.slug}`),
+          }))}
+        />
       </Map>
     </APIProvider>
   );
