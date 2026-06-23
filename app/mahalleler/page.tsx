@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { getAllMahalleler } from "@/lib/content";
+import { getAllMahalleler, getMahalleBoundary } from "@/lib/content";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
 
@@ -13,6 +13,10 @@ export default function MahallelerPage() {
   const mahalleler = getAllMahalleler();
   const etimesgut = mahalleler.filter((mahalle) => mahalle.ilce === "Etimesgut");
   const yenimahalle = mahalleler.filter((mahalle) => mahalle.ilce === "Yenimahalle");
+  const mapItems = mahalleler.map((mahalle) => ({
+    mahalle,
+    boundary: getMahalleBoundary(mahalle),
+  }));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -29,7 +33,7 @@ export default function MahallelerPage() {
       </header>
 
       <div className="mt-8 h-[420px] overflow-hidden rounded-2xl border border-border">
-        <RegionMapLoader mahalleler={mahalleler} />
+        <RegionMapLoader items={mapItems} />
       </div>
 
       <section className="mt-12">

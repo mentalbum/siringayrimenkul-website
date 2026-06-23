@@ -4,5 +4,9 @@
   "ilce": "Etimesgut",
   "durum": "yakinda",
   "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
-  "merkezKoordinat": { "lat": 39.9647722, "lng": 32.6045166 }
+  "merkezKoordinat": {
+    "lat": 39.9647722,
+    "lng": 32.6045166
+  },
+  "sinirGeoJSON": "mahalleler/yesilova-boundary.geojson"
 }

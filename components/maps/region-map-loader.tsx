@@ -9,6 +9,10 @@ const RegionMap = dynamic(
   { ssr: false, loading: () => <MapSkeleton /> }
 );
 
-export function RegionMapLoader({ mahalleler }: { mahalleler: Mahalle[] }) {
-  return <RegionMap mahalleler={mahalleler} />;
+interface RegionMapLoaderProps {
+  items: { mahalle: Mahalle; boundary?: GeoJSON.Feature }[];
+}
+
+export function RegionMapLoader({ items }: RegionMapLoaderProps) {
+  return <RegionMap items={items} />;
 }

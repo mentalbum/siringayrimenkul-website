@@ -4,5 +4,9 @@
   "ilce": "Yenimahalle",
   "durum": "yakinda",
   "kisaAciklama": "Eryaman bölgesinin Yenimahalle tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
-  "merkezKoordinat": { "lat": 40.0204091, "lng": 32.6551222 }
+  "merkezKoordinat": {
+    "lat": 40.0204091,
+    "lng": 32.6551222
+  },
+  "sinirGeoJSON": "mahalleler/susuz-boundary.geojson"
 }
