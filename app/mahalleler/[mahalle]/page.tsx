@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  getAllAdalar,
   getAllMahalleler,
   getMahalleBoundary,
   getMahalleBySlug,
@@ -64,6 +66,10 @@ export default async function MahallePage({ params }: Props) {
 
   const siteler = getSitelerByMahalle(mahalle.slug);
   const boundary = getMahalleBoundary(mahalle);
+  const adalar = getAllAdalar(mahalle.slug);
+  const etaplar = (
+    Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
+  ).sort((a, b) => Number(a) - Number(b));
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -119,6 +125,38 @@ export default async function MahallePage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {etaplar.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl">{mahalle.isim}&apos;ndeki Etaplar ve Adalar</h2>
+          <p className="mt-2 text-sm text-muted">
+            Eryaman bölgesindeki yapılaşma etap ve ada numaralarına göre düzenlenmiştir.
+          </p>
+          <div className="mt-5 space-y-6">
+            {etaplar.map((etap) => (
+              <div key={etap}>
+                <h3 className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+                  {etap}. Etap
+                </h3>
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {adalar
+                    .filter((ada) => ada.etap === etap)
+                    .map((ada) => (
+                      <Link
+                        key={`${ada.no}-${ada.site.slug}`}
+                        href={`/mahalleler/${mahalle.slug}/adalar/${ada.no}`}
+                        title={ada.site.isim}
+                        className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                      >
+                        {ada.no}
+                      </Link>
+                    ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
         <h2 className="text-xl text-white">{mahalle.isim}&apos;nde Ev mi Arıyorsunuz?</h2>

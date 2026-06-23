@@ -18,6 +18,12 @@ export interface Mahalle {
   sinirGeoJSON?: string;
 }
 
+export interface AdaBilgi {
+  no: string;
+  etap?: string;
+  blok?: string;
+}
+
 export interface Site {
   isim: string;
   slug: string;
@@ -27,6 +33,7 @@ export interface Site {
   sinirGeoJSON?: string;
   aciklama: string;
   ozellikler?: string[];
+  adalar?: AdaBilgi[];
 }
 
 export interface BlogFrontmatter {

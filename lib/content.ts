@@ -1,7 +1,11 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
-import type { BlogPost, Mahalle, Site } from "@/lib/types";
+import type { AdaBilgi, BlogPost, Mahalle, Site } from "@/lib/types";
+
+export interface AdaEntry extends AdaBilgi {
+  site: Site;
+}
 
 const CONTENT_DIR = path.join(process.cwd(), "content");
 const MAHALLELER_DIR = path.join(CONTENT_DIR, "mahalleler");
@@ -56,6 +60,22 @@ export function getSiteBoundary(site: Site): GeoJSON.Feature | undefined {
   const filePath = path.join(CONTENT_DIR, site.sinirGeoJSON);
   if (!fs.existsSync(filePath)) return undefined;
   return readJson<GeoJSON.Feature>(filePath);
+}
+
+export function getAllAdalar(mahalleSlug: string): AdaEntry[] {
+  const siteler = getSitelerByMahalle(mahalleSlug);
+  const adalar: AdaEntry[] = [];
+  for (const site of siteler) {
+    if (!site.adalar) continue;
+    for (const ada of site.adalar) {
+      adalar.push({ ...ada, site });
+    }
+  }
+  return adalar.sort((a, b) => a.no.localeCompare(b.no));
+}
+
+export function getAdaByNo(mahalleSlug: string, adaNo: string): AdaEntry | undefined {
+  return getAllAdalar(mahalleSlug).find((ada) => ada.no === adaNo);
 }
 
 export function getAllBlogPosts(): BlogPost[] {

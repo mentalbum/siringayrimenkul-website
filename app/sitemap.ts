@@ -1,5 +1,10 @@
 import type { MetadataRoute } from "next";
-import { getAllBlogPosts, getYayindaMahalleler, getSitelerByMahalle } from "@/lib/content";
+import {
+  getAllAdalar,
+  getAllBlogPosts,
+  getYayindaMahalleler,
+  getSitelerByMahalle,
+} from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -28,6 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
+    getAllAdalar(mahalle.slug).map((ada) => ({
+      url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${ada.no}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    }))
+  );
+
   const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,
     lastModified: post.tarih,
@@ -35,5 +48,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.6,
   }));
 
-  return [...statikSayfalar, ...mahalleSayfalari, ...siteSayfalari, ...blogSayfalari];
+  return [
+    ...statikSayfalar,
+    ...mahalleSayfalari,
+    ...siteSayfalari,
+    ...adaSayfalari,
+    ...blogSayfalari,
+  ];
 }

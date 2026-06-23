@@ -3,13 +3,34 @@
   "slug": "camli-klima-bloklari",
   "mahalleSlug": "tunahan",
   "aciklama": "Camlı Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
-  "ozellikler": [
-    "Eryaman 4. Etap — 17621 Ada",
-    "Eryaman 4. Etap — 17622 Ada",
-    "Eryaman 4. Etap — 17623 Ada",
-    "Eryaman 4. Etap — 17629 Ada",
-    "Eryaman 4. Etap — 17630 Ada",
-    "Eryaman 4. Etap — 17631 Ada",
-    "Eryaman 4. Etap — 17632 Ada"
+  "adalar": [
+    {
+      "no": "17621",
+      "etap": "4"
+    },
+    {
+      "no": "17622",
+      "etap": "4"
+    },
+    {
+      "no": "17623",
+      "etap": "4"
+    },
+    {
+      "no": "17629",
+      "etap": "4"
+    },
+    {
+      "no": "17630",
+      "etap": "4"
+    },
+    {
+      "no": "17631",
+      "etap": "4"
+    },
+    {
+      "no": "17632",
+      "etap": "4"
+    }
   ]
 }

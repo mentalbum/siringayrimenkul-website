@@ -3,5 +3,10 @@
   "slug": "ilgazlar-sitesi",
   "mahalleSlug": "tunahan",
   "aciklama": "Ilgazlar Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46493 Ada). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
-  "ozellikler": ["Eryaman 5. Etap — 46493 Ada"]
+  "adalar": [
+    {
+      "no": "46493",
+      "etap": "5"
+    }
+  ]
 }

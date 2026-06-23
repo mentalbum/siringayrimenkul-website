@@ -3,13 +3,34 @@
   "slug": "klima-bloklari",
   "mahalleSlug": "tunahan",
   "aciklama": "Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. 17625 Ada, bölgede yerel olarak \"Gökkuşağı Evleri\" adıyla da bilinir. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
-  "ozellikler": [
-    "Eryaman 4. Etap — 17624 Ada",
-    "Eryaman 4. Etap — 17625 Ada (Gökkuşağı Evleri)",
-    "Eryaman 4. Etap — 17644 Ada",
-    "Eryaman 4. Etap — 17645 Ada",
-    "Eryaman 4. Etap — 17646 Ada",
-    "Eryaman 4. Etap — 17647 Ada",
-    "Eryaman 4. Etap — 17648 Ada"
+  "adalar": [
+    {
+      "no": "17624",
+      "etap": "4"
+    },
+    {
+      "no": "17625",
+      "etap": "4"
+    },
+    {
+      "no": "17644",
+      "etap": "4"
+    },
+    {
+      "no": "17645",
+      "etap": "4"
+    },
+    {
+      "no": "17646",
+      "etap": "4"
+    },
+    {
+      "no": "17647",
+      "etap": "4"
+    },
+    {
+      "no": "17648",
+      "etap": "4"
+    }
   ]
 }

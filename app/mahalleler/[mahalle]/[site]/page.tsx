@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
   getAllMahalleler,
@@ -11,6 +12,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { SiteCard } from "@/components/site/site-card";
+import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 
 type Props = {
@@ -71,6 +73,21 @@ export default async function SitePage({ params }: Props) {
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
+          {site.adalar && site.adalar.length > 0 && (
+            <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
+              {site.adalar.map((ada) => (
+                <Link
+                  key={ada.no}
+                  href={`/mahalleler/${mahalle.slug}/adalar/${ada.no}`}
+                  className="flex cursor-pointer items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                >
+                  {ada.no} Ada
+                  {ada.blok ? ` (${ada.blok})` : ""}
+                  <ArrowRightIcon className="h-3.5 w-3.5 shrink-0" />
+                </Link>
+              ))}
+            </div>
+          )}
           {site.ozellikler && site.ozellikler.length > 0 && (
             <ul className="grid grid-cols-2 gap-2 text-sm text-body">
               {site.ozellikler.map((ozellik) => (

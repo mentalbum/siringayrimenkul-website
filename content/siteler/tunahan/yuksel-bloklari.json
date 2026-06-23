@@ -3,13 +3,34 @@
   "slug": "yuksel-bloklari",
   "mahalleSlug": "tunahan",
   "aciklama": "Yüksel Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
-  "ozellikler": [
-    "Eryaman 4. Etap — 17649 Ada",
-    "Eryaman 4. Etap — 17650 Ada",
-    "Eryaman 4. Etap — 17651 Ada",
-    "Eryaman 4. Etap — 17662 Ada",
-    "Eryaman 4. Etap — 17669 Ada",
-    "Eryaman 4. Etap — 17670 Ada",
-    "Eryaman 4. Etap — 17671 Ada"
+  "adalar": [
+    {
+      "no": "17649",
+      "etap": "4"
+    },
+    {
+      "no": "17650",
+      "etap": "4"
+    },
+    {
+      "no": "17651",
+      "etap": "4"
+    },
+    {
+      "no": "17662",
+      "etap": "4"
+    },
+    {
+      "no": "17669",
+      "etap": "4"
+    },
+    {
+      "no": "17670",
+      "etap": "4"
+    },
+    {
+      "no": "17671",
+      "etap": "4"
+    }
   ]
 }

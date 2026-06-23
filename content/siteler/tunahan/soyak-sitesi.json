@@ -3,11 +3,26 @@
   "slug": "soyak-sitesi",
   "mahalleSlug": "tunahan",
   "aciklama": "Soyak Sitesi, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 5 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
-  "ozellikler": [
-    "Eryaman 4. Etap — 17655 Ada",
-    "Eryaman 4. Etap — 17656 Ada",
-    "Eryaman 4. Etap — 17657 Ada",
-    "Eryaman 4. Etap — 17658 Ada",
-    "Eryaman 4. Etap — 17665 Ada"
+  "adalar": [
+    {
+      "no": "17655",
+      "etap": "4"
+    },
+    {
+      "no": "17656",
+      "etap": "4"
+    },
+    {
+      "no": "17657",
+      "etap": "4"
+    },
+    {
+      "no": "17658",
+      "etap": "4"
+    },
+    {
+      "no": "17665",
+      "etap": "4"
+    }
   ]
 }
