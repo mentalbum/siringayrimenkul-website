@@ -1,26 +1,49 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #373643;
 }
 
 @theme inline {
+  --color-gold: #fbca12;
+  --color-gold-dark: #dfac0a;
+  --color-navy: #373643;
+  --color-navy-light: #4b4959;
+  --color-body: #55535f;
+  --color-muted: #6b6975;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f7f6f2;
+  --color-border: #e6e3dd;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    background: var(--color-surface);
+    color: var(--color-body);
+    font-family: var(--font-sans);
   }
-}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    color: var(--color-navy);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+  }
+
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
 }

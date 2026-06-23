@@ -1,0 +1,15 @@
+{
+  "isim": "Tunahan Mahallesi",
+  "slug": "tunahan",
+  "ilce": "Etimesgut",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, Eryaman 5 metro istasyonuna yürüme mesafesinde, hızla büyüyen ve aileler tarafından tercih edilen bir mahalle.",
+  "uzunAciklama": [
+    "Tunahan Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinin merkezi noktalarından biri. Etimesgut ilçe merkezine yaklaşık 7 kilometre, Ankara şehir merkezine ise yaklaşık 21 kilometre uzaklıkta yer alır.",
+    "2023 nüfus verilerine göre 22.000'i aşan nüfusuyla Tunahan, Eryaman'ın en hızlı büyüyen mahallelerinden biri; nüfusun kısa sürede 30 binin üzerine çıkması bekleniyor. Bu büyüme, bölgedeki site ve rezidans çeşitliliğinin de hızla artmasını sağlıyor.",
+    "Mahalle sınırları içinde yer alan Eryaman 5 metro istasyonu sayesinde Ankaray ve metro hattına yürüme mesafesinde ulaşım mümkün; bu da Tunahan'ı toplu taşımayla şehrin diğer noktalarına bağlanmak isteyen aileler için cazip kılıyor.",
+    "Şirin Gayrimenkul olarak Tunahan Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Bölgede ev almak veya kiralamak isteyenler güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
+  "merkezKoordinat": { "lat": 39.9860189, "lng": 32.6232237 },
+  "sinirGeoJSON": "mahalleler/tunahan-boundary.geojson"
+}

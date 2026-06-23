@@ -1,0 +1,134 @@
+import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import {
+  getAllMahalleler,
+  getMahalleBoundary,
+  getMahalleBySlug,
+  getSitelerByMahalle,
+} from "@/lib/content";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { CtaButton } from "@/components/ui/button";
+import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
+import { SiteCard } from "@/components/site/site-card";
+import { siteConfig } from "@/lib/site-config";
+
+type Props = {
+  params: Promise<{ mahalle: string }>;
+};
+
+export function generateStaticParams() {
+  return getAllMahalleler().map((mahalle) => ({ mahalle: mahalle.slug }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { mahalle: slug } = await params;
+  const mahalle = getMahalleBySlug(slug);
+  if (!mahalle) return {};
+
+  return {
+    title: `${mahalle.isim} Emlak Rehberi`,
+    description: mahalle.kisaAciklama,
+    robots:
+      mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
+  };
+}
+
+export default async function MahallePage({ params }: Props) {
+  const { mahalle: slug } = await params;
+  const mahalle = getMahalleBySlug(slug);
+  if (!mahalle) notFound();
+
+  if (mahalle.durum === "yakinda") {
+    return (
+      <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
+        <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+          {mahalle.ilce}
+        </p>
+        <h1 className="mt-2 text-3xl">{mahalle.isim}</h1>
+        <p className="mt-4 text-base text-body">{mahalle.kisaAciklama}</p>
+        <p className="mt-6 text-sm text-muted">
+          Bu mahalle için detaylı rehberimizi hazırlıyoruz. O zamana kadar Tunahan Mahallesi
+          rehberimize göz atabilir veya doğrudan bizi arayabilirsiniz.
+        </p>
+        <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+          <CtaButton href="/mahalleler" variant="outline">
+            Tüm Mahalleler
+          </CtaButton>
+          <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="primary">
+            Bizi Arayın
+          </CtaButton>
+        </div>
+      </div>
+    );
+  }
+
+  const siteler = getSitelerByMahalle(mahalle.slug);
+  const boundary = getMahalleBoundary(mahalle);
+
+  return (
+    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <Breadcrumbs
+        items={[
+          { label: "Anasayfa", href: "/" },
+          { label: "Mahalleler", href: "/mahalleler" },
+          { label: mahalle.isim, href: `/mahalleler/${mahalle.slug}` },
+        ]}
+      />
+
+      <header className="mt-4 max-w-3xl">
+        <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+          {mahalle.ilce}
+        </p>
+        <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
+      </header>
+
+      <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+        <div className="space-y-4">
+          {mahalle.uzunAciklama?.map((paragraph) => (
+            <p key={paragraph.slice(0, 24)} className="text-base leading-relaxed text-body">
+              {paragraph}
+            </p>
+          ))}
+        </div>
+        <div className="flex flex-col gap-2">
+          <div className="h-[360px] overflow-hidden rounded-2xl border border-border lg:h-full">
+            <MahalleMapLoader
+              center={mahalle.merkezKoordinat}
+              boundary={boundary}
+              siteler={siteler}
+            />
+          </div>
+          {boundary && (
+            <p className="text-right text-xs text-muted">
+              Mahalle sınırı verisi: © OpenStreetMap katkıda bulunanları
+            </p>
+          )}
+        </div>
+      </div>
+
+      <section className="mt-14">
+        <h2 className="text-xl">{mahalle.isim}&apos;ndeki Siteler ve Rezidanslar</h2>
+        <p className="mt-2 text-sm text-muted">
+          {siteler.length > 0
+            ? `${siteler.length} site/rezidans listelendi.`
+            : "Bu mahalledeki siteler yakında eklenecek."}
+        </p>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {siteler.map((site) => (
+            <SiteCard key={site.slug} site={site} />
+          ))}
+        </div>
+      </section>
+
+      <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
+        <h2 className="text-xl text-white">{mahalle.isim}&apos;nde Ev mi Arıyorsunuz?</h2>
+        <p className="mt-2 text-sm text-white/75">
+          Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.
+        </p>
+        <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
+          İlanlarımı Gör
+        </CtaButton>
+      </div>
+    </div>
+  );
+}

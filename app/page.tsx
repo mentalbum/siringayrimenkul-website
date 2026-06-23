@@ -1,65 +1,158 @@
-import Image from "next/image";
+import { getAllBlogPosts, getAllMahalleler } from "@/lib/content";
+import { siteConfig } from "@/lib/site-config";
+import { CtaButton } from "@/components/ui/button";
+import { HeroIllustration } from "@/components/home/hero-illustration";
+import { MahalleCard } from "@/components/mahalle/mahalle-card";
+import { BlogCard } from "@/components/blog/blog-card";
+import {
+  BuildingIcon,
+  CheckBadgeIcon,
+  MapPinIcon,
+  PhoneIcon,
+} from "@/components/ui/icons";
 
-export default function Home() {
+const ozellikler = [
+  {
+    icon: MapPinIcon,
+    baslik: "Yerel Uzmanlık",
+    aciklama: "Eryaman'daki her mahalleyi, her site ve rezidansı yakından tanıyoruz.",
+  },
+  {
+    icon: BuildingIcon,
+    baslik: "Mahalle Mahalle Rehber",
+    aciklama: "Genel bir ilan listesi değil; her mahalle ve sitenin kendi detaylı sayfası.",
+  },
+  {
+    icon: PhoneIcon,
+    baslik: "Doğrudan İletişim",
+    aciklama: "Aracısız, doğrudan bizimle görüşün; telefon veya WhatsApp ile hızlı dönüş alın.",
+  },
+  {
+    icon: CheckBadgeIcon,
+    baslik: "Güncel İlanlar",
+    aciklama: "Güncel ilanlarımıza sahibinden.com üzerindeki mağazamızdan anında ulaşın.",
+  },
+];
+
+export default function HomePage() {
+  const mahalleler = getAllMahalleler();
+  const oneCikanMahalleler = [
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda"),
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda"),
+  ].slice(0, 3);
+  const sonYazilar = getAllBlogPosts().slice(0, 3);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div>
+      <section className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16">
+        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+              Eryaman · Etimesgut &amp; Yenimahalle
+            </p>
+            <h1 className="mt-3 text-4xl leading-tight sm:text-5xl">
+              Eryaman&apos;da Mahallenizi, Sitenizi Tanıyın
+            </h1>
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-body">
+              Şirin Gayrimenkul, Eryaman bölgesindeki mahalleleri ve içindeki site/rezidansları
+              tek tek tanıtan yerel bir emlak rehberi sunuyor. Güncel ilanlarımıza ise doğrudan
+              sahibinden.com üzerinden ulaşabilirsiniz.
+            </p>
+            <div className="mt-8 flex flex-wrap items-center gap-3">
+              <CtaButton href="/mahalleler" variant="primary">
+                Mahalleleri İncele
+              </CtaButton>
+              <CtaButton href={siteConfig.sahibindenUrl} external variant="outline">
+                İlanlarımı Gör
+              </CtaButton>
+            </div>
+          </div>
+          <div className="mx-auto h-72 w-72 sm:h-96 sm:w-96">
+            <HeroIllustration />
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-surface-muted py-16">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {ozellikler.map((ozellik) => (
+              <div key={ozellik.baslik} className="rounded-2xl bg-surface p-5">
+                <ozellik.icon className="h-7 w-7 text-gold-dark" />
+                <h3 className="mt-3 text-base">{ozellik.baslik}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-body">{ozellik.aciklama}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+              Bölge Rehberi
+            </p>
+            <h2 className="mt-2 text-2xl sm:text-3xl">Öne Çıkan Mahalleler</h2>
+          </div>
+          <CtaButton href="/mahalleler" variant="ghost" className="px-0">
+            Tüm Mahalleler →
+          </CtaButton>
+        </div>
+        <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {oneCikanMahalleler.map((mahalle) => (
+            <MahalleCard key={mahalle.slug} mahalle={mahalle} />
+          ))}
+        </div>
+      </section>
+
+      {sonYazilar.length > 0 && (
+        <section className="bg-surface-muted py-16">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+                  Blog
+                </p>
+                <h2 className="mt-2 text-2xl sm:text-3xl">Son Yazılar</h2>
+              </div>
+              <CtaButton href="/blog" variant="ghost" className="px-0">
+                Tüm Yazılar →
+              </CtaButton>
+            </div>
+            <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {sonYazilar.map((post) => (
+                <BlogCard key={post.slug} post={post} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="flex flex-col items-center gap-5 rounded-2xl bg-navy px-6 py-12 text-center text-white sm:px-12">
+          <h2 className="text-2xl text-white sm:text-3xl">
+            Eryaman&apos;da Doğru Mahalleyi Bulmaya Hazır mısınız?
+          </h2>
+          <p className="max-w-xl text-sm text-white/75">
+            Sorularınız için bize doğrudan ulaşın veya güncel ilanlarımızı sahibinden.com
+            üzerinden inceleyin.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-3">
+            <CtaButton href="/iletisim" variant="primary">
+              Bize Ulaşın
+            </CtaButton>
+            <CtaButton
+              href={siteConfig.sahibindenUrl}
+              external
+              variant="outline"
+              className="border-white text-white hover:bg-white hover:text-navy"
+            >
+              İlanlarımı Gör
+            </CtaButton>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
+      </section>
     </div>
   );
 }
