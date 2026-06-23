@@ -71,6 +71,23 @@ export default async function MahallePage({ params }: Props) {
     Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
   ).sort((a, b) => Number(a) - Number(b));
 
+  const mahalleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: mahalle.isim,
+    description: mahalle.kisaAciklama,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: mahalle.merkezKoordinat.lat,
+      longitude: mahalle.merkezKoordinat.lng,
+    },
+    containedInPlace: {
+      "@type": "AdministrativeArea",
+      name: `${mahalle.ilce}, Ankara`,
+    },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <Breadcrumbs
@@ -167,6 +184,10 @@ export default async function MahallePage({ params }: Props) {
           İlanlarımı Gör
         </CtaButton>
       </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(mahalleJsonLd) }}
+      />
     </div>
   );
 }

@@ -51,6 +51,35 @@ export default async function SitePage({ params }: Props) {
     .slice(0, 3);
   const sinir = getSiteBoundary(site);
 
+  const siteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    name: site.isim,
+    description: site.aciklama,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
+    ...(site.adres && {
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: site.adres,
+        addressLocality: mahalle.ilce,
+        addressRegion: "Ankara",
+        addressCountry: "TR",
+      },
+    }),
+    ...(site.koordinat && {
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: site.koordinat.lat,
+        longitude: site.koordinat.lng,
+      },
+    }),
+    containedInPlace: {
+      "@type": "Place",
+      name: mahalle.isim,
+      url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
+    },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <Breadcrumbs
@@ -139,6 +168,10 @@ export default async function SitePage({ params }: Props) {
           </div>
         </section>
       )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
+      />
     </div>
   );
 }

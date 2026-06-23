@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons";
 
@@ -32,7 +33,9 @@ const adimlar = [
 export default function HakkimizdaPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
-      <header>
+      <Breadcrumbs items={[{ label: "Anasayfa", href: "/" }, { label: "Hakkımızda", href: "/hakkimizda" }]} />
+
+      <header className="mt-4">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Hakkımızda
         </p>
