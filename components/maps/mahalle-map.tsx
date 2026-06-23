@@ -43,15 +43,17 @@ export function MahalleMap({ center, boundary, siteler }: MahalleMapProps) {
             fillOpacity={0.18}
           />
         )}
-        {siteler.map((site) => (
-          <Marker
-            key={site.slug}
-            position={site.koordinat}
-            title={site.isim}
-            icon="/icons/pin-gold.svg"
-            onClick={() => router.push(`/mahalleler/${site.mahalleSlug}/${site.slug}`)}
-          />
-        ))}
+        {siteler
+          .filter((site): site is Site & { koordinat: Koordinat } => Boolean(site.koordinat))
+          .map((site) => (
+            <Marker
+              key={site.slug}
+              position={site.koordinat}
+              title={site.isim}
+              icon="/icons/pin-gold.svg"
+              onClick={() => router.push(`/mahalleler/${site.mahalleSlug}/${site.slug}`)}
+            />
+          ))}
       </Map>
     </APIProvider>
   );

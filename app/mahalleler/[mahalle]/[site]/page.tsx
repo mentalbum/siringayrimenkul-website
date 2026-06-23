@@ -66,7 +66,7 @@ export default async function SitePage({ params }: Props) {
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
       </header>
 
-      <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_1fr]">
+      <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           {site.ozellikler && site.ozellikler.length > 0 && (
@@ -79,10 +79,17 @@ export default async function SitePage({ params }: Props) {
               ))}
             </ul>
           )}
+          {!site.koordinat && (
+            <CtaButton href={`/mahalleler/${mahalle.slug}`} variant="outline">
+              {mahalle.isim} Haritasını Görüntüle
+            </CtaButton>
+          )}
         </div>
-        <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
-          <MahalleMapLoader center={site.koordinat} siteler={[site]} />
-        </div>
+        {site.koordinat && (
+          <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
+            <MahalleMapLoader center={site.koordinat} siteler={[site]} />
+          </div>
+        )}
       </div>
 
       <div className="mt-12 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">

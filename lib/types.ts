@@ -23,7 +23,7 @@ export interface Site {
   slug: string;
   mahalleSlug: string;
   adres?: string;
-  koordinat: Koordinat;
+  koordinat?: Koordinat;
   aciklama: string;
   ozellikler?: string[];
 }
