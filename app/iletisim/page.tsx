@@ -52,8 +52,16 @@ export default function IletisimPage() {
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <MapPinIcon className="h-5 w-5 shrink-0 text-gold-dark" />
             <div>
-              <p className="text-sm font-semibold text-navy">Hizmet Bölgesi</p>
-              <p className="text-sm text-body">{siteConfig.serviceArea}</p>
+              <p className="text-sm font-semibold text-navy">Ofis Adresimiz</p>
+              <p className="text-sm text-body">{siteConfig.officeAddress}</p>
+              <a
+                href={siteConfig.officeMapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-1.5 inline-block text-sm font-semibold text-gold-dark hover:underline"
+              >
+                Yol Tarifi Al →
+              </a>
             </div>
           </div>
           <CtaButton
