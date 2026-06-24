@@ -3,7 +3,7 @@ import Link from "next/link";
 import { mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import { MapPinIcon, PhoneIcon } from "@/components/ui/icons";
+import { MapPinIcon, PhoneIcon, TiktokIcon } from "@/components/ui/icons";
 
 export function Footer() {
   return (
@@ -65,6 +65,26 @@ export function Footer() {
           <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
             İlanlarımı Gör
           </CtaButton>
+          <div className="mt-5 flex items-center gap-3">
+            <a
+              href={siteConfig.yandexMapsUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Yandex Haritalar'da görüntüle"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
+            >
+              <MapPinIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={siteConfig.tiktokUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="TikTok'ta takip edin"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
+            >
+              <TiktokIcon className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       </div>
 

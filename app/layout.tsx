@@ -48,6 +48,7 @@ const localBusinessJsonLd = {
   image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
   url: siteConfig.url,
   telephone: siteConfig.phoneTel,
+  sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
   areaServed: [
     { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
     { "@type": "Place", name: "Eryaman, Yenimahalle, Ankara" },

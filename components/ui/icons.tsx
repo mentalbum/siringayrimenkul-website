@@ -43,6 +43,14 @@ export function WhatsAppIcon({ className }: IconProps) {
   );
 }
 
+export function TiktokIcon({ className }: IconProps) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M16.6 2h-3.2v13.2a2.8 2.8 0 1 1-2-2.68V9.4a6 6 0 1 0 5.2 5.95V8.6a6.7 6.7 0 0 0 4.4 1.66V7.06A3.9 3.9 0 0 1 16.6 3.1V2Z" />
+    </svg>
+  );
+}
+
 export function MapPinIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className} aria-hidden="true">
