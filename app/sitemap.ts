@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statikSayfalar: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/mahalleler`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/siteler`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/blog`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/hakkimizda`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, changeFrequency: "yearly", priority: 0.4 },
