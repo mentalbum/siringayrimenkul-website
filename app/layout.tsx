@@ -21,7 +21,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Eryaman Emlak Rehberi`,
+    default: `${siteConfig.name} | Eryaman Emlakçısı`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -29,12 +29,12 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Eryaman Emlak Rehberi`,
+    title: `${siteConfig.name} | Eryaman Emlakçısı`,
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Eryaman Emlak Rehberi`,
+    title: `${siteConfig.name} | Eryaman Emlakçısı`,
     description: siteConfig.description,
   },
 };
@@ -43,6 +43,7 @@ const localBusinessJsonLd = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   name: siteConfig.name,
+  description: siteConfig.description,
   image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
   url: siteConfig.url,
   telephone: siteConfig.phoneTel,

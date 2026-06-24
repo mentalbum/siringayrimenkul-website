@@ -54,9 +54,9 @@ export default function HomePage() {
               Eryaman&apos;da Emlağın Adresi
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-body">
-              Şirin Gayrimenkul, Eryaman bölgesinde ev almak, satmak ya da kiraya vermek
-              isteyenler için yerel bir çözüm ortağı. Mahallenizi keşfedin ya da evinizi
-              değerlendirmek için bize ulaşın.
+              Eryaman&apos;da emlakçı arıyorsanız doğru yerdesiniz. Şirin Gayrimenkul, ev almak,
+              satmak ya da kiraya vermek isteyenler için yerel bir çözüm ortağı. Mahallenizi
+              keşfedin ya da evinizi değerlendirmek için bize ulaşın.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-3">
               <CtaButton href="/mahalleler" variant="primary">

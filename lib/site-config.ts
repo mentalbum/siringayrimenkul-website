@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Şirin Gayrimenkul",
   description:
-    "Eryaman (Etimesgut ve Yenimahalle) bölgesinde mahalle mahalle, site site hazırlanmış yerel emlak rehberi. İlanlarımıza sahibinden.com üzerinden ulaşın.",
+    "Eryaman'da emlakçı arıyorsanız doğru yerdesiniz. Mahalle mahalle, site site hazırlanmış yerel emlak rehberimizle bölgenizi tanıyın.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",
