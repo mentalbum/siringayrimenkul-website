@@ -186,7 +186,12 @@ export default async function MahallePage({ params }: Props) {
             {etaplar.map((etap) => (
               <div key={etap}>
                 <h3 className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-                  {etap}. Etap
+                  <Link
+                    href={`/mahalleler/${mahalle.slug}/etaplar/${etap}`}
+                    className="cursor-pointer hover:underline"
+                  >
+                    {etap}. Etap
+                  </Link>
                 </h3>
                 <div className="mt-3 flex flex-wrap gap-2">
                   {adalar

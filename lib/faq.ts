@@ -1,3 +1,4 @@
+import type { EtapEntry } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
 
@@ -66,4 +67,21 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   });
 
   return items;
+}
+
+export function getEtapFaq(etap: EtapEntry, mahalle: Mahalle): FaqItem[] {
+  return [
+    {
+      soru: `Eryaman ${etap.no}. Etap hangi mahallede yer alıyor?`,
+      cevap: `Eryaman ${etap.no}. Etap, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim} içinde yer alıyor.`,
+    },
+    {
+      soru: `Eryaman ${etap.no}. Etap'ta kaç site veya ada var?`,
+      cevap: `Eryaman ${etap.no}. Etap'ta ${siteConfig.name} olarak tanıdığımız ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`,
+    },
+    {
+      soru: `Eryaman ${etap.no}. Etap'ta ev almak veya kiralamak için kiminle iletişime geçebilirim?`,
+      cevap: `${siteConfig.name} olarak Eryaman ${etap.no}. Etap'taki siteleri yakından tanıyoruz. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
+    },
+  ];
 }

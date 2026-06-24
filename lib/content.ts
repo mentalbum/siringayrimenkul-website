@@ -95,6 +95,39 @@ export function getAdaByNo(mahalleSlug: string, adaNo: string): AdaEntry | undef
   return getAllAdalar(mahalleSlug).find((ada) => ada.no === adaNo);
 }
 
+export interface EtapEntry {
+  no: string;
+  adalar: AdaEntry[];
+  siteler: Site[];
+}
+
+export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
+  const adalar = getAllAdalar(mahalleSlug);
+  const etapMap = new Map<string, { adalar: AdaEntry[]; siteMap: Map<string, Site> }>();
+
+  for (const ada of adalar) {
+    if (!ada.etap) continue;
+    if (!etapMap.has(ada.etap)) {
+      etapMap.set(ada.etap, { adalar: [], siteMap: new Map() });
+    }
+    const entry = etapMap.get(ada.etap)!;
+    entry.adalar.push(ada);
+    entry.siteMap.set(ada.site.slug, ada.site);
+  }
+
+  return Array.from(etapMap.entries())
+    .map(([no, { adalar: etapAdalar, siteMap }]) => ({
+      no,
+      adalar: etapAdalar,
+      siteler: Array.from(siteMap.values()).sort((a, b) => a.isim.localeCompare(b.isim, "tr")),
+    }))
+    .sort((a, b) => Number(a.no) - Number(b.no));
+}
+
+export function getEtapByNo(mahalleSlug: string, etapNo: string): EtapEntry | undefined {
+  return getAllEtaplar(mahalleSlug).find((etap) => etap.no === etapNo);
+}
+
 export function getAllBlogPosts(): BlogPost[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
   const files = fs.readdirSync(BLOG_DIR).filter((file) => file.endsWith(".mdx"));

@@ -65,7 +65,17 @@ export default async function AdaPage({ params }: Props) {
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           {mahalle.isim}
-          {ada.etap ? ` · Eryaman ${ada.etap}. Etap` : ""}
+          {ada.etap && (
+            <>
+              {" · "}
+              <Link
+                href={`/mahalleler/${mahalle.slug}/etaplar/${ada.etap}`}
+                className="cursor-pointer hover:underline"
+              >
+                Eryaman {ada.etap}. Etap
+              </Link>
+            </>
+          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{ada.no} Ada</h1>
       </header>
@@ -113,7 +123,13 @@ export default async function AdaPage({ params }: Props) {
       {ayniEtaptakiler.length > 0 && (
         <section className="mt-14">
           <h2 className="text-xl">
-            Eryaman {ada.etap}. Etap&apos;taki Diğer Adalar
+            <Link
+              href={`/mahalleler/${mahalle.slug}/etaplar/${ada.etap}`}
+              className="cursor-pointer hover:text-gold-dark hover:underline"
+            >
+              Eryaman {ada.etap}. Etap
+            </Link>
+            &apos;taki Diğer Adalar
           </h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {ayniEtaptakiler.map((item) => (

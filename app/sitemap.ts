@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import {
   getAllAdalar,
   getAllBlogPosts,
+  getAllEtaplar,
   getYayindaMahalleler,
   getSitelerByMahalle,
 } from "@/lib/content";
@@ -33,6 +34,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
+  const etapSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
+    getAllEtaplar(mahalle.slug).map((etap) => ({
+      url: `${baseUrl}/mahalleler/${mahalle.slug}/etaplar/${etap.no}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.7,
+    }))
+  );
+
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getAllAdalar(mahalle.slug).map((ada) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${ada.no}`,
@@ -52,6 +61,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...statikSayfalar,
     ...mahalleSayfalari,
     ...siteSayfalari,
+    ...etapSayfalari,
     ...adaSayfalari,
     ...blogSayfalari,
   ];
