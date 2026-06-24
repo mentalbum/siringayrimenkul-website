@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { MapPinIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
@@ -28,9 +29,9 @@ export default function NotFound() {
         <CtaButton href="/" variant="outline">
           Anasayfa
         </CtaButton>
-        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline">
+        <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" variant="outline">
           Bizi Arayın
-        </CtaButton>
+        </TrackedCtaLink>
       </div>
     </div>
   );

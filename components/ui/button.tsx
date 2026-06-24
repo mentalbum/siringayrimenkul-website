@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type ButtonVariant = "primary" | "outline" | "ghost";
+export type ButtonVariant = "primary" | "outline" | "ghost";
 
 interface CtaButtonProps {
   href: string;
@@ -18,6 +18,10 @@ const variantClasses: Record<ButtonVariant, string> = {
   ghost: "text-navy hover:text-gold-dark focus-visible:outline-navy",
 };
 
+export function getCtaButtonClasses(variant: ButtonVariant = "primary", className = "") {
+  return `inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${variantClasses[variant]} ${className}`;
+}
+
 export function CtaButton({
   href,
   children,
@@ -25,7 +29,7 @@ export function CtaButton({
   external = false,
   className = "",
 }: CtaButtonProps) {
-  const classes = `inline-flex min-h-11 cursor-pointer items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ${variantClasses[variant]} ${className}`;
+  const classes = getCtaButtonClasses(variant, className);
 
   if (external) {
     return (

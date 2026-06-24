@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import { MapPinIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function Footer() {
@@ -52,9 +53,13 @@ export function Footer() {
             </li>
             <li className="flex items-center gap-2">
               <PhoneIcon className="h-4 w-4 shrink-0 text-gold" />
-              <a href={`tel:${siteConfig.phoneTel}`} className="hover:text-gold">
+              <TrackedLink
+                href={`tel:${siteConfig.phoneTel}`}
+                gaEvent="phone_click"
+                className="hover:text-gold"
+              >
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
             </li>
           </ul>
           <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">

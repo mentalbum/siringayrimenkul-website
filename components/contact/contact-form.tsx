@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import { sendGAEvent } from "@next/third-parties/google";
 import { siteConfig } from "@/lib/site-config";
 import { WhatsAppIcon } from "@/components/ui/icons";
 
@@ -11,6 +12,7 @@ export function ContactForm() {
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    sendGAEvent("event", "contact_form_submit");
     const metin = `Merhaba, ben ${isim}.\n\n${mesaj}\n\nTelefon: ${telefon}`;
     const url = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(metin)}`;
     window.open(url, "_blank", "noopener,noreferrer");

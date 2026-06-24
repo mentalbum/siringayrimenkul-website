@@ -10,6 +10,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { SiteCard } from "@/components/site/site-card";
 import { siteConfig } from "@/lib/site-config";
@@ -56,9 +57,9 @@ export default async function MahallePage({ params }: Props) {
           <CtaButton href="/mahalleler" variant="outline">
             Tüm Mahalleler
           </CtaButton>
-          <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="primary">
+          <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" variant="primary">
             Bizi Arayın
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
       </div>
     );

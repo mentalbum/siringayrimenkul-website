@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import { ContactForm } from "@/components/contact/contact-form";
 import { MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 
@@ -30,26 +31,27 @@ export default function IletisimPage() {
             <PhoneIcon className="h-5 w-5 shrink-0 text-gold-dark" />
             <div>
               <p className="text-sm font-semibold text-navy">Telefon</p>
-              <a
+              <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
+                gaEvent="phone_click"
                 className="text-sm text-body hover:text-gold-dark"
               >
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <WhatsAppIcon className="h-5 w-5 shrink-0 text-gold-dark" />
             <div>
               <p className="text-sm font-semibold text-navy">WhatsApp</p>
-              <a
+              <TrackedLink
                 href={siteConfig.whatsappUrl}
-                target="_blank"
-                rel="noopener noreferrer"
+                gaEvent="whatsapp_click"
+                openInNewTab
                 className="text-sm text-body hover:text-gold-dark"
               >
                 WhatsApp ile yazın
-              </a>
+              </TrackedLink>
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">

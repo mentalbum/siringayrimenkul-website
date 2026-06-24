@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { sendGAEvent } from "@next/third-parties/google";
 import { mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
@@ -44,6 +45,7 @@ export function Header() {
         <div className="hidden items-center gap-5 lg:flex">
           <a
             href={`tel:${siteConfig.phoneTel}`}
+            onClick={() => sendGAEvent("event", "phone_click")}
             className="flex items-center gap-1.5 text-sm font-semibold text-navy hover:text-gold-dark"
           >
             <PhoneIcon className="h-4 w-4" />
@@ -82,6 +84,7 @@ export function Header() {
           <div className="mt-3 flex flex-col gap-3 border-t border-border pt-4">
             <a
               href={`tel:${siteConfig.phoneTel}`}
+              onClick={() => sendGAEvent("event", "phone_click")}
               className="flex items-center gap-2 px-3 text-base font-semibold text-navy"
             >
               <PhoneIcon className="h-5 w-5" />
