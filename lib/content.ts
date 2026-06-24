@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import type { AdaBilgi, BlogPost, Mahalle, Site } from "@/lib/types";
+import { haversineDistanceKm } from "@/lib/geo";
 
 export interface AdaEntry extends AdaBilgi {
   site: Site;
@@ -38,6 +39,22 @@ export function getMahalleBoundary(mahalle: Mahalle): GeoJSON.Feature | undefine
   const filePath = path.join(CONTENT_DIR, mahalle.sinirGeoJSON);
   if (!fs.existsSync(filePath)) return undefined;
   return readJson<GeoJSON.Feature>(filePath);
+}
+
+export interface NearbyMahalle {
+  mahalle: Mahalle;
+  uzaklikKm: number;
+}
+
+export function getNearbyMahalleler(mahalle: Mahalle, limit = 4): NearbyMahalle[] {
+  return getAllMahalleler()
+    .filter((other) => other.slug !== mahalle.slug)
+    .map((other) => ({
+      mahalle: other,
+      uzaklikKm: haversineDistanceKm(mahalle.merkezKoordinat, other.merkezKoordinat),
+    }))
+    .sort((a, b) => a.uzaklikKm - b.uzaklikKm)
+    .slice(0, limit);
 }
 
 export function getSitelerByMahalle(mahalleSlug: string): Site[] {

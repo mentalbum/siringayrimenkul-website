@@ -6,6 +6,7 @@ import {
   getAllMahalleler,
   getMahalleBoundary,
   getMahalleBySlug,
+  getNearbyMahalleler,
   getSitelerByMahalle,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -44,6 +45,7 @@ export default async function MahallePage({ params }: Props) {
   if (!mahalle) notFound();
 
   if (mahalle.durum === "yakinda") {
+    const yakindakiler = getNearbyMahalleler(mahalle, 4);
     return (
       <div className="mx-auto max-w-3xl px-4 py-20 text-center sm:px-6">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
@@ -63,6 +65,33 @@ export default async function MahallePage({ params }: Props) {
             Bizi Arayın
           </TrackedCtaLink>
         </div>
+
+        {yakindakiler.length > 0 && (
+          <div className="mt-14 text-left">
+            <h2 className="text-center text-base font-semibold text-navy">
+              Yakındaki Mahalleler
+            </h2>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {yakindakiler.map(({ mahalle: yakin, uzaklikKm }) => (
+                <Link
+                  key={yakin.slug}
+                  href={`/mahalleler/${yakin.slug}`}
+                  className="flex flex-col gap-1 rounded-2xl border border-border bg-surface p-4 transition-colors hover:border-gold"
+                >
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="text-sm font-semibold text-navy">{yakin.isim}</span>
+                    {yakin.durum === "yakinda" && (
+                      <span className="shrink-0 rounded-full bg-surface-muted px-2 py-0.5 text-[11px] font-semibold text-muted">
+                        Yakında
+                      </span>
+                    )}
+                  </div>
+                  <span className="text-xs text-muted">~{uzaklikKm.toFixed(1)} km</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -70,6 +99,7 @@ export default async function MahallePage({ params }: Props) {
   const siteler = getSitelerByMahalle(mahalle.slug);
   const boundary = getMahalleBoundary(mahalle);
   const adalar = getAllAdalar(mahalle.slug);
+  const yakindakiler = getNearbyMahalleler(mahalle, 4);
   const etaplar = (
     Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
   ).sort((a, b) => Number(a) - Number(b));
@@ -182,6 +212,34 @@ export default async function MahallePage({ params }: Props) {
         title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
         items={getMahalleFaq(mahalle, siteler.length)}
       />
+
+      {yakindakiler.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl">Yakındaki Mahalleler</h2>
+          <p className="mt-2 text-sm text-muted">
+            {mahalle.isim}&apos;ne en yakın mahalleler.
+          </p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {yakindakiler.map(({ mahalle: yakin, uzaklikKm }) => (
+              <Link
+                key={yakin.slug}
+                href={`/mahalleler/${yakin.slug}`}
+                className="flex flex-col gap-1 rounded-2xl border border-border bg-surface p-4 transition-colors hover:border-gold"
+              >
+                <div className="flex items-center justify-between gap-2">
+                  <span className="text-sm font-semibold text-navy">{yakin.isim}</span>
+                  {yakin.durum === "yakinda" && (
+                    <span className="shrink-0 rounded-full bg-surface-muted px-2 py-0.5 text-[11px] font-semibold text-muted">
+                      Yakında
+                    </span>
+                  )}
+                </div>
+                <span className="text-xs text-muted">~{uzaklikKm.toFixed(1)} km</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
         <h2 className="text-xl text-white">{mahalle.isim}&apos;nde Ev mi Arıyorsunuz?</h2>
