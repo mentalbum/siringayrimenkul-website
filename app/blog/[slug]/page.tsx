@@ -4,6 +4,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllBlogPosts, getBlogPostBySlug, getMahalleBySlug } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 
 type Props = {
@@ -21,11 +22,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: post.baslik,
-    description: post.ozet,
+    description: truncateForMeta(post.ozet),
     openGraph: {
       type: "article",
       title: post.baslik,
-      description: post.ozet,
+      description: truncateForMeta(post.ozet),
       publishedTime: post.tarih,
     },
   };

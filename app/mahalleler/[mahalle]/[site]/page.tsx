@@ -15,6 +15,7 @@ import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { SiteCard } from "@/components/site/site-card";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
+import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 
 type Props = {
@@ -38,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${site.isim} (${mahalle.isim})`,
-    description: site.aciklama,
+    description: truncateForMeta(site.aciklama),
   };
 }
 

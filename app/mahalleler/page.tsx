@@ -7,7 +7,7 @@ import { RegionMapLoader } from "@/components/maps/region-map-loader";
 export const metadata: Metadata = {
   title: "Mahalleler",
   description:
-    "Eryaman bölgesindeki (Etimesgut ve Yenimahalle) tüm mahalleler için Şirin Gayrimenkul'un hazırladığı yerel emlak rehberi: yaşam, ulaşım ve site/rezidans bilgileri.",
+    "Eryaman bölgesindeki (Etimesgut ve Yenimahalle) tüm mahalleler için yaşam, ulaşım ve site/rezidans bilgileri içeren yerel emlak rehberi.",
 };
 
 export default function MahallelerPage() {
