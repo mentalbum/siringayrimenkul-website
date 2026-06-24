@@ -7,6 +7,7 @@ import {
   getMahalleBoundary,
   getMahalleBySlug,
   getNearbyMahalleler,
+  getSiteBoundary,
   getSitelerByMahalle,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -99,6 +100,10 @@ export default async function MahallePage({ params }: Props) {
 
   const siteler = getSitelerByMahalle(mahalle.slug);
   const boundary = getMahalleBoundary(mahalle);
+  const siteBoundaries = siteler.flatMap((site) => {
+    const siteBoundary = getSiteBoundary(site);
+    return siteBoundary ? [{ site, boundary: siteBoundary }] : [];
+  });
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
   const etaplar = (
@@ -153,6 +158,7 @@ export default async function MahallePage({ params }: Props) {
               center={mahalle.merkezKoordinat}
               boundary={boundary}
               siteler={siteler}
+              siteBoundaries={siteBoundaries}
             />
           </div>
           {boundary && (
