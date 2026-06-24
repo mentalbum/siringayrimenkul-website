@@ -59,6 +59,20 @@ const localBusinessJsonLd = {
     latitude: siteConfig.officeKoordinat.lat,
     longitude: siteConfig.officeKoordinat.lng,
   },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      opens: "09:00",
+      closes: "19:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Sunday"],
+      opens: "09:00",
+      closes: "17:00",
+    },
+  ],
 };
 
 export default function RootLayout({

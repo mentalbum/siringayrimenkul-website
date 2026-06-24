@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import { ContactForm } from "@/components/contact/contact-form";
-import { MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
   title: "İletişim",
@@ -52,6 +52,17 @@ export default function IletisimPage() {
               >
                 WhatsApp ile yazın
               </TrackedLink>
+            </div>
+          </div>
+          <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
+            <ClockIcon className="h-5 w-5 shrink-0 text-gold-dark" />
+            <div>
+              <p className="text-sm font-semibold text-navy">Çalışma Saatleri</p>
+              {siteConfig.calismaSaatleri.map((gun) => (
+                <p key={gun.gunler} className="text-sm text-body">
+                  {gun.gunler}: {gun.saat}
+                </p>
+              ))}
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">

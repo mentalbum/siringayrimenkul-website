@@ -20,6 +20,10 @@ export const siteConfig = {
   },
   officeKoordinat: { lat: 39.9892632, lng: 32.6238687 },
   officeMapsUrl: "https://maps.app.goo.gl/Buv7sKF7P3ujwVpt7",
+  calismaSaatleri: [
+    { gunler: "Pazartesi - Cumartesi", saat: "09:00 - 19:00" },
+    { gunler: "Pazar", saat: "09:00 - 17:00" },
+  ],
   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "",
 } as const;
