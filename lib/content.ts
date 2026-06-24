@@ -17,6 +17,14 @@ function readJson<T>(filePath: string): T {
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
 }
 
+export function getMahalleLastModified(mahalleSlug: string): Date {
+  return fs.statSync(path.join(MAHALLELER_DIR, `${mahalleSlug}.json`)).mtime;
+}
+
+export function getSiteLastModified(mahalleSlug: string, siteSlug: string): Date {
+  return fs.statSync(path.join(SITELER_DIR, mahalleSlug, `${siteSlug}.json`)).mtime;
+}
+
 export function getAllMahalleler(): Mahalle[] {
   const files = fs.readdirSync(MAHALLELER_DIR).filter((file) => file.endsWith(".json"));
   return files

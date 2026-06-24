@@ -3,6 +3,8 @@ import {
   getAllAdalar,
   getAllBlogPosts,
   getAllEtaplar,
+  getMahalleLastModified,
+  getSiteLastModified,
   getYayindaMahalleler,
   getSitelerByMahalle,
 } from "@/lib/content";
@@ -23,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const mahalleSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.map((mahalle) => ({
     url: `${baseUrl}/mahalleler/${mahalle.slug}`,
+    lastModified: getMahalleLastModified(mahalle.slug),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
@@ -30,6 +33,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getSitelerByMahalle(mahalle.slug).map((site) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/${site.slug}`,
+      lastModified: getSiteLastModified(mahalle.slug, site.slug),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))
@@ -38,6 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const etapSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getAllEtaplar(mahalle.slug).map((etap) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/etaplar/${etap.no}`,
+      lastModified: etap.siteler
+        .map((site) => getSiteLastModified(mahalle.slug, site.slug))
+        .sort((a, b) => b.getTime() - a.getTime())[0],
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))
@@ -46,6 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getAllAdalar(mahalle.slug).map((ada) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${ada.no}`,
+      lastModified: getSiteLastModified(mahalle.slug, ada.site.slug),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     }))
