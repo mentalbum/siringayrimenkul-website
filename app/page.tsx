@@ -75,6 +75,7 @@ export default function HomePage() {
 
       <section className="bg-surface-muted py-16">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <h2 className="sr-only">Neden Şirin Gayrimenkul?</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {ozellikler.map((ozellik) => (
               <div key={ozellik.baslik} className="rounded-2xl bg-surface p-5">
