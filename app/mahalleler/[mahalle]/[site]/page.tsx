@@ -10,9 +10,11 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { SiteCard } from "@/components/site/site-card";
 import { ArrowRightIcon } from "@/components/ui/icons";
+import { getSiteFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
 type Props = {
@@ -168,6 +170,9 @@ export default async function SitePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <FaqSection title={`${site.isim} Hakkında Sık Sorulan Sorular`} items={getSiteFaq(site, mahalle)} />
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}

@@ -11,8 +11,10 @@ import {
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
+import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { SiteCard } from "@/components/site/site-card";
+import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
 type Props = {
@@ -175,6 +177,11 @@ export default async function MahallePage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <FaqSection
+        title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
+        items={getMahalleFaq(mahalle, siteler.length)}
+      />
 
       <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
         <h2 className="text-xl text-white">{mahalle.isim}&apos;nde Ev mi Arıyorsunuz?</h2>
