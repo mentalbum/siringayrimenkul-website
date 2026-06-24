@@ -68,7 +68,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/50 sm:px-6">
+      <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/60 sm:px-6">
         © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır.
       </div>
     </footer>
