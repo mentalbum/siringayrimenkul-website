@@ -9,6 +9,7 @@ import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/
 export const metadata: Metadata = {
   title: "İletişim",
   description: `${siteConfig.name} ile iletişime geçin. Telefon: ${siteConfig.phoneDisplay}.`,
+  alternates: { canonical: "/iletisim" },
 };
 
 export default function IletisimPage() {

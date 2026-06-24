@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Blog",
   description:
     "Eryaman bölgesinde mahalle rehberleri, site/rezidans tanıtımları ve emlak tavsiyeleri. Şirin Gayrimenkul'dan yerel emlak blogu.",
+  alternates: { canonical: "/blog" },
 };
 
 export default function BlogPage() {

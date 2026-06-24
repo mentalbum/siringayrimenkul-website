@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${site.isim} (${mahalle.isim})`,
     description: truncateForMeta(site.aciklama),
+    alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
   };
 }
 

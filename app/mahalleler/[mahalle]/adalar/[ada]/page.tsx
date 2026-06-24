@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${ada.no} Ada (${ada.site.isim}) — ${mahalle.isim}`,
     description: `${ada.no} Ada, ${mahalle.isim} içinde yer alan ${ada.site.isim}'nin bir parçasıdır.`,
+    alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${ada.no}` },
   };
 }
 

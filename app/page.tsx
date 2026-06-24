@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { getAllBlogPosts, getAllMahalleler } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
@@ -10,6 +11,10 @@ import {
   MapPinIcon,
   PhoneIcon,
 } from "@/components/ui/icons";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+};
 
 const ozellikler = [
   {

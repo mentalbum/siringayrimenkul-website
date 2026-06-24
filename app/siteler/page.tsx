@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Tüm Siteler ve Rezidanslar",
   description:
     "Eryaman bölgesindeki tüm site ve rezidansları mahallesine göre listeleyen rehber. Aradığınız siteyi bulun, detaylarını inceleyin.",
+  alternates: { canonical: "/siteler" },
 };
 
 export default function SitelerPage() {

@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Eryaman ${etap.no}. Etap — ${mahalle.isim}`,
     description: `Eryaman ${etap.no}. Etap bölgesinde, ${mahalle.isim} içinde yer alan ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada.`,
+    alternates: { canonical: `/mahalleler/${mahalle.slug}/etaplar/${etap.no}` },
   };
 }
 

@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Mahalleler",
   description:
     "Eryaman bölgesindeki (Etimesgut ve Yenimahalle) tüm mahalleler için yaşam, ulaşım ve site/rezidans bilgileri içeren yerel emlak rehberi.",
+  alternates: { canonical: "/mahalleler" },
 };
 
 export default function MahallelerPage() {

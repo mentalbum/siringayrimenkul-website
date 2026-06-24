@@ -7,6 +7,7 @@ import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons"
 export const metadata: Metadata = {
   title: "Hakkımızda",
   description: `${siteConfig.name}, Eryaman bölgesinde yerel emlak rehberliği yapan bir gayrimenkul ofisidir.`,
+  alternates: { canonical: "/hakkimizda" },
 };
 
 const adimlar = [
