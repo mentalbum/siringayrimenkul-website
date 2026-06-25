@@ -93,11 +93,7 @@ export default function HakkimizdaPage() {
           <CtaButton href="/mahalleler" variant="primary">
             Mahalleleri İncele
           </CtaButton>
-          <CtaButton
-            href="/iletisim"
-            variant="outline"
-            className="border-white text-white hover:bg-white hover:text-navy"
-          >
+          <CtaButton href="/iletisim" variant="outline-light">
             İletişime Geçin
           </CtaButton>
         </div>

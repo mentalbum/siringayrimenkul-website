@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-export type ButtonVariant = "primary" | "outline" | "ghost";
+export type ButtonVariant = "primary" | "outline" | "outline-light" | "ghost";
 
 interface CtaButtonProps {
   href: string;
@@ -15,6 +15,8 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary: "bg-gold text-navy hover:bg-gold-dark focus-visible:outline-gold",
   outline:
     "border border-navy text-navy hover:bg-navy hover:text-white focus-visible:outline-navy",
+  "outline-light":
+    "border border-white text-white hover:bg-white hover:text-navy focus-visible:outline-white",
   ghost: "text-navy hover:text-gold-dark focus-visible:outline-navy",
 };
 
