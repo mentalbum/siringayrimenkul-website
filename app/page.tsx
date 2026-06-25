@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getAllBlogPosts, getAllMahalleler } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
-import { HeroIllustration } from "@/components/home/hero-illustration";
 import { ReviewBadge } from "@/components/ui/review-badge";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
@@ -50,16 +50,24 @@ export default function HomePage() {
 
   return (
     <div>
-      <section className="mx-auto max-w-6xl px-4 pt-12 pb-16 sm:px-6 sm:pt-16">
-        <div className="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+      <section className="relative overflow-hidden bg-navy">
+        <Image
+          src="/images/ofis-ic-mekan.jpg"
+          alt=""
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-navy/95 sm:bg-gradient-to-r sm:from-navy sm:via-navy/90 sm:to-navy/55" />
+        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+          <div className="max-w-xl">
+            <p className="text-sm font-semibold uppercase tracking-wide text-gold">
               Eryaman · Etimesgut &amp; Yenimahalle
             </p>
-            <h1 className="mt-3 text-4xl leading-tight sm:text-5xl">
+            <h1 className="mt-3 text-4xl leading-tight text-white sm:text-5xl">
               Eryaman&apos;da Emlağın Adresi
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-body">
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
               Eryaman&apos;da emlakçı arıyorsanız doğru yerdesiniz. Şirin Gayrimenkul, ev almak,
               satmak ya da kiraya vermek isteyenler için yerel bir çözüm ortağı. Mahallenizi
               keşfedin ya da evinizi değerlendirmek için bize ulaşın.
@@ -68,14 +76,11 @@ export default function HomePage() {
               <CtaButton href="/mahalleler" variant="primary">
                 Mahalleleri İncele
               </CtaButton>
-              <CtaButton href="/iletisim" variant="outline">
+              <CtaButton href="/iletisim" variant="outline-light">
                 Evinizi Değerlendirin
               </CtaButton>
             </div>
-            <ReviewBadge className="mt-6" />
-          </div>
-          <div className="mx-auto h-72 w-72 sm:h-96 sm:w-96">
-            <HeroIllustration />
+            <ReviewBadge className="mt-6" variant="dark" />
           </div>
         </div>
       </section>
@@ -152,8 +157,7 @@ export default function HomePage() {
             <CtaButton
               href={siteConfig.sahibindenUrl}
               external
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-navy"
+              variant="outline-light"
             >
               İlanlarımı Gör
             </CtaButton>
