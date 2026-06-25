@@ -3,6 +3,7 @@ import { getAllBlogPosts, getAllMahalleler } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { HeroIllustration } from "@/components/home/hero-illustration";
+import { ReviewBadge } from "@/components/ui/review-badge";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
 import {
@@ -71,6 +72,7 @@ export default function HomePage() {
                 Evinizi Değerlendirin
               </CtaButton>
             </div>
+            <ReviewBadge className="mt-6" />
           </div>
           <div className="mx-auto h-72 w-72 sm:h-96 sm:w-96">
             <HeroIllustration />

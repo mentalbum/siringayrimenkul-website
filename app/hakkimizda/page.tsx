@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon } from "@/components/ui/icons";
+import { ReviewBadge } from "@/components/ui/review-badge";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
@@ -48,6 +49,7 @@ export default function HakkimizdaPage() {
           Hakkımızda
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{siteConfig.name}</h1>
+        <ReviewBadge className="mt-3" />
         <p className="mt-5 text-base leading-relaxed text-body">
           {siteConfig.name}, Ankara&apos;nın Eryaman bölgesinde (Etimesgut ve Yenimahalle ilçe
           sınırları içinde) faaliyet gösteren yerel bir gayrimenkul ofisidir. Ofisimiz Tunahan
