@@ -2,8 +2,14 @@
   "isim": "Eryaman Mahallesi",
   "slug": "eryaman",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesine adını veren merkezi mahalle. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesine adını veren, 30.000'e yaklaşan nüfusuyla bölgenin en yoğun ve merkezi mahallelerinden biri.",
+  "uzunAciklama": [
+    "Eryaman Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, bölgenin tamamına adını veren merkezi mahalledir. Tunahan, Güzelkent, Şeyh Şamil, Göksu ve Devlet mahalleleriyle sınır komşusu olan bu mahalle, Eryaman'ın en bilinen ve en yoğun yerleşim alanlarından biri.",
+    "2023 nüfus verilerine göre 30.000'e yaklaşan nüfusuyla Eryaman Mahallesi, bölgenin en kalabalık mahallelerinden biri. TOKİ'nin 1990'lardan itibaren bölgede yürüttüğü toplu konut projeleri, Eryaman'ın hızla büyüyen bir yerleşim alanına dönüşmesinde önemli rol oynadı; bugün mahallede TOKİ Konutları'ndan modern rezidanslara kadar geniş bir site çeşitliliği bulunuyor.",
+    "Mahalle, Ankara M3 metro hattındaki Eryaman 1-2 ve Devlet Mahallesi duraklarına yakın konumda olup toplu taşımayla şehrin diğer bölgelerine ulaşım kolaylığı sağlıyor.",
+    "Şirin Gayrimenkul olarak Eryaman Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Bölgede ev almak veya kiralamak isteyenler güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9722971,
     "lng": 32.6212797
