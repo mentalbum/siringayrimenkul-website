@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
-import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons";
+import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
@@ -28,6 +28,13 @@ const adimlar = [
     baslik: "Güncel İlanlar sahibinden.com'da",
     aciklama:
       "Sitemiz bir ilan panosu değil, bölge rehberidir. Güncel satılık/kiralık ilanlarımızı sahibinden.com üzerindeki mağazamızdan takip edebilirsiniz.",
+  },
+  {
+    icon: CubeIcon,
+    baslik: "Profesyonel Sanal Tur Hizmeti",
+    aciklama:
+      "Talep eden müşterilerimiz için 3D sanal tur çekimi de sunuyoruz; bir örneğini aşağıdan inceleyebilirsiniz.",
+    link: { href: "https://my.matterport.com/models/uUjuZULQtzJ", label: "Örnek Turu İncele" },
   },
 ];
 
@@ -55,12 +62,22 @@ export default function HakkimizdaPage() {
         </p>
       </header>
 
-      <div className="mt-12 grid gap-5 sm:grid-cols-3">
+      <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {adimlar.map((adim) => (
           <div key={adim.baslik} className="rounded-2xl border border-border bg-surface p-5">
             <adim.icon className="h-7 w-7 text-gold-dark" />
             <h2 className="mt-3 text-base">{adim.baslik}</h2>
             <p className="mt-2 text-sm leading-relaxed text-body">{adim.aciklama}</p>
+            {adim.link && (
+              <a
+                href={adim.link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-3 inline-block cursor-pointer text-sm font-semibold text-gold-dark hover:underline"
+              >
+                {adim.link.label} →
+              </a>
+            )}
           </div>
         ))}
       </div>

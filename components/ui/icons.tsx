@@ -94,6 +94,14 @@ export function ClockIcon({ className }: IconProps) {
   );
 }
 
+export function CubeIcon({ className }: IconProps) {
+  return (
+    <svg {...base} className={className} aria-hidden="true">
+      <path d="M21 7.5 12 2.25 3 7.5m18 0-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25M21 7.5v9l-9 5.25m0-9v9" />
+    </svg>
+  );
+}
+
 export function BuildingIcon({ className }: IconProps) {
   return (
     <svg {...base} className={className} aria-hidden="true">
