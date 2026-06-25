@@ -43,6 +43,10 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
       soru: `${site.isim} hangi mahallede yer alıyor?`,
       cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim}'nde yer alıyor.`,
     },
+    {
+      soru: `${site.isim} emlakçısı kimdir?`,
+      cevap: `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
+    },
   ];
 
   if (site.adalar && site.adalar.length > 0) {

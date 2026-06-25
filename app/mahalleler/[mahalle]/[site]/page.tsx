@@ -38,8 +38,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!mahalle || !site) return {};
 
   return {
-    title: `${site.isim} (${mahalle.isim})`,
-    description: truncateForMeta(site.aciklama),
+    title: `${site.isim} Emlakçısı`,
+    description: truncateForMeta(
+      `${site.isim} emlakçısı: Satılık ve kiralık seçenekler için Şirin Gayrimenkul'dan bilgi alın. ${site.aciklama}`
+    ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
   };
 }
@@ -105,6 +107,10 @@ export default async function SitePage({ params }: Props) {
 
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
+          <p className="text-base font-medium text-navy">
+            {site.isim} emlakçısı mı arıyorsunuz? Şirin Gayrimenkul olarak bu sitedeki satılık ve
+            kiralık seçenekler hakkında size yardımcı oluyoruz.
+          </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
