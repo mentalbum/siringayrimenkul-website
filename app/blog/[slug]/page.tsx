@@ -88,13 +88,18 @@ export default async function BlogPostPage({ params }: Props) {
       )}
 
       <div className="mt-8 rounded-2xl bg-navy px-6 py-8 text-center text-white">
-        <h2 className="text-xl text-white">Eryaman&apos;da Ev mi Arıyorsunuz?</h2>
+        <h2 className="text-xl text-white">Eryaman&apos;da Bir Sonraki Adımınızı Birlikte Atalım</h2>
         <p className="mt-2 text-sm text-white/75">
-          Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.
+          Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın.
         </p>
-        <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
-          İlanlarımı Gör
-        </CtaButton>
+        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
+          <CtaButton href="/iletisim" variant="primary">
+            Bize Ulaşın
+          </CtaButton>
+          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
+            İlanlarımı Gör
+          </CtaButton>
+        </div>
       </div>
 
       <script
