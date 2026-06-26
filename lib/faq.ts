@@ -93,6 +93,10 @@ export function getEtapFaq(etap: EtapEntry, mahalle: Mahalle): FaqItem[] {
       cevap: `Eryaman ${etap.no}. Etap'ta ${siteConfig.name} olarak tanıdığımız ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`,
     },
     {
+      soru: `Eryaman ${etap.no}. Etap'ta evimi satmak veya kiraya vermek istiyorum, nasıl başvurabilirim?`,
+      cevap: `${siteConfig.name} olarak ücretsiz değerlendirme yapıyoruz; bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
+    },
+    {
       soru: `Eryaman ${etap.no}. Etap'ta ev almak veya kiralamak için kiminle iletişime geçebilirim?`,
       cevap: `${siteConfig.name} olarak Eryaman ${etap.no}. Etap'taki siteleri yakından tanıyoruz. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
     },
