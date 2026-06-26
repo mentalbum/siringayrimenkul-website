@@ -38,6 +38,9 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} | Eryaman Emlakçısı`,
     description: siteConfig.description,
   },
+  verification: {
+    google: "k1TcGp1CMeFpPUlbp91mnEqvCaHu1y1-si6t0F6xjOA",
+  },
 };
 
 const localBusinessJsonLd = {
