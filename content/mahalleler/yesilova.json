@@ -2,8 +2,14 @@
   "isim": "Yeşilova Mahallesi",
   "slug": "yesilova",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, Eryaman Mahallesi'nin karşısında yer alan, 2007'den bu yana hızla büyüyen modern bir yerleşim alanı.",
+  "uzunAciklama": [
+    "Yeşilova Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman Mahallesi'nin karşısında ve Elvankent sınırlarına yakın bir konumda yer alıyor. Şehir merkezine özel araçla ortalama 25 dakika mesafede.",
+    "2023 nüfus verilerine göre 11.382 olan mahalle nüfusu, 2025 itibarıyla 14.000'i aşmış durumda; 2007'den bu yana görülen yaklaşık 19 katlık büyüme, Yeşilova'yı bölgenin en hızlı gelişen mahallelerinden biri yapıyor. Bu büyümeyle birlikte yeni konut sitesi, rezidans ve alışveriş merkezi projeleri mahalleye hızla eklenmeye devam ediyor.",
+    "Ulaşımda Elvankent Tren İstasyonu'na ve EGO otobüs hatlarına erişim mümkün; metroya bağlanmak isteyenler 539 numaralı EGO ring hattıyla Devlet Mahallesi/1910 Ankaragücü istasyonuna ulaşabiliyor.",
+    "Şirin Gayrimenkul olarak Yeşilova Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9647722,
     "lng": 32.6045166
