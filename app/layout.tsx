@@ -7,6 +7,7 @@ import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
+import { getGoogleReviewSummary } from "@/lib/google-reviews";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -43,49 +44,58 @@ export const metadata: Metadata = {
   },
 };
 
-const localBusinessJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "RealEstateAgent",
-  name: siteConfig.name,
-  description: siteConfig.description,
-  image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
-  url: siteConfig.url,
-  telephone: siteConfig.phoneTel,
-  sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
-  areaServed: [
-    { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
-    { "@type": "Place", name: "Eryaman, Yenimahalle, Ankara" },
-  ],
-  address: {
-    "@type": "PostalAddress",
-    ...siteConfig.officeAddressParts,
-  },
-  geo: {
-    "@type": "GeoCoordinates",
-    latitude: siteConfig.officeKoordinat.lat,
-    longitude: siteConfig.officeKoordinat.lng,
-  },
-  openingHoursSpecification: [
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-      opens: "09:00",
-      closes: "19:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: ["Sunday"],
-      opens: "09:00",
-      closes: "17:00",
-    },
-  ],
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const reviewSummary = await getGoogleReviewSummary();
+
+  const localBusinessJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    name: siteConfig.name,
+    description: siteConfig.description,
+    image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
+    url: siteConfig.url,
+    telephone: siteConfig.phoneTel,
+    sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
+    areaServed: [
+      { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
+      { "@type": "Place", name: "Eryaman, Yenimahalle, Ankara" },
+    ],
+    address: {
+      "@type": "PostalAddress",
+      ...siteConfig.officeAddressParts,
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: siteConfig.officeKoordinat.lat,
+      longitude: siteConfig.officeKoordinat.lng,
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        opens: "09:00",
+        closes: "19:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Sunday"],
+        opens: "09:00",
+        closes: "17:00",
+      },
+    ],
+    ...(reviewSummary && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: reviewSummary.rating,
+        reviewCount: reviewSummary.userRatingCount,
+      },
+    }),
+  };
+
   return (
     <html lang="tr" className={`${poppins.variable} ${inter.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
