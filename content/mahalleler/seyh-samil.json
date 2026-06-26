@@ -2,8 +2,13 @@
   "isim": "Şeyh Şamil Mahallesi",
   "slug": "seyh-samil",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Eryaman'ın 3. Etap bölgesinde, townhouse tarzı toplu konutlarıyla tanınan, 18.000'i aşan nüfuslu yerleşik bir mahalle.",
+  "uzunAciklama": [
+    "Şeyh Şamil Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinin 3. Etap'ında yer alıyor. Tunahan, Göksu, Yavuz Selim ve Ata mahalleleriyle sınır komşusu olan mahalle, şehir merkezine özel araçla ortalama 20 dakika mesafede.",
+    "2023 nüfus verilerine göre 18.493 olan mahalle nüfusu, en hızlı büyümesini 2007-2008 döneminde yaşadı; bu iki yılda nüfus 7.821'den 12.927'ye çıkarak yaklaşık %65 arttı. Mahalle, Alarko Blokları ve Tepe Blokları gibi townhouse tarzı büyük toplu konut projeleriyle tanınıyor.",
+    "Şirin Gayrimenkul olarak Şeyh Şamil Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9983957,
     "lng": 32.6295384
