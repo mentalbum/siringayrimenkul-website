@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${site.isim} Emlakçısı`,
     description: truncateForMeta(
-      `${site.isim} emlakçısı: Satılık ve kiralık seçenekler için Şirin Gayrimenkul'dan bilgi alın. ${site.aciklama}`
+      `${site.isim} emlakçısı: Evinizi satmak veya kiraya vermek için Şirin Gayrimenkul'dan bilgi alın. ${site.aciklama}`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
   };
@@ -108,8 +108,8 @@ export default async function SitePage({ params }: Props) {
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           <p className="text-base font-medium text-navy">
-            {site.isim} emlakçısı mı arıyorsunuz? Şirin Gayrimenkul olarak bu sitedeki satılık ve
-            kiralık seçenekler hakkında size yardımcı oluyoruz.
+            Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, {site.isim} emlakçısı
+            olarak size yardımcı oluyoruz.
           </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           {site.adalar && site.adalar.length > 0 && (
@@ -159,12 +159,13 @@ export default async function SitePage({ params }: Props) {
       </div>
 
       <div className="mt-12 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
-        <h2 className="text-xl text-white">{site.isim} Hakkında Bilgi mi İstiyorsunuz?</h2>
+        <h2 className="text-xl text-white">Bu Sitede Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?</h2>
         <p className="mt-2 text-sm text-white/75">
-          Bu site/rezidanstaki güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.
+          Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş
+          alın.
         </p>
-        <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
-          İlanlarımı Gör
+        <CtaButton href="/iletisim" variant="primary" className="mt-5">
+          Bize Ulaşın
         </CtaButton>
       </div>
 

@@ -66,6 +66,10 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   }
 
   items.push({
+    soru: `Bu sitede evimi satmak veya kiraya vermek istiyorum, nasıl başvurabilirim?`,
+    cevap: `${siteConfig.name} olarak ücretsiz değerlendirme yapıyoruz; bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
+  });
+  items.push({
     soru: `${site.isim} hakkında güncel ilan veya fiyat bilgisi nereden alabilirim?`,
     cevap: `${site.isim} ile ilgili güncel satılık/kiralık ilanlarımıza sahibinden.com mağazamızdan ulaşabilir, fiyat ve detaylar için bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
   });
