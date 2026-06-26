@@ -244,12 +244,15 @@ export default async function MahallePage({ params }: Props) {
       )}
 
       <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
-        <h2 className="text-xl text-white">{mahalle.isim}&apos;nde Ev mi Arıyorsunuz?</h2>
+        <h2 className="text-xl text-white">
+          {mahalle.isim}&apos;nde Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?
+        </h2>
         <p className="mt-2 text-sm text-white/75">
-          Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.
+          Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş
+          alın.
         </p>
-        <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
-          İlanlarımı Gör
+        <CtaButton href="/iletisim" variant="primary" className="mt-5">
+          Bize Ulaşın
         </CtaButton>
       </div>
       <script
