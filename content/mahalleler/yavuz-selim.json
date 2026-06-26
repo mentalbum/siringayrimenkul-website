@@ -2,8 +2,13 @@
   "isim": "Yavuz Selim Mahallesi",
   "slug": "yavuz-selim",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, Güzelkent ve Ata mahalleleri arasında yer alan, yaklaşık 11.000 nüfuslu yerleşik bir mahalle.",
+  "uzunAciklama": [
+    "Yavuz Selim Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Güzelkent ve Ata mahalleleri arasında yer alıyor. Ankara şehir merkezine özel araçla yaklaşık 30 kilometre uzaklıkta.",
+    "2023 nüfus verilerine göre yaklaşık 11.000 kişinin yaşadığı Yavuz Selim Mahallesi, Eryaman bölgesinin yerleşik ve istikrarlı nüfuslu mahallelerinden biri.",
+    "Şirin Gayrimenkul olarak Yavuz Selim Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9973354,
     "lng": 32.6106209
