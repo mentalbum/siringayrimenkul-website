@@ -2,8 +2,13 @@
   "isim": "Göksu Mahallesi",
   "slug": "goksu",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, 33.000'i aşan nüfusuyla ilçenin en kalabalık üçüncü mahallesi.",
+  "uzunAciklama": [
+    "Göksu Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinde yer alıyor. Yerel halk arasında mahallenin bir kısmı \"Yukarı Göksu\", bir kısmı ise \"Aşağı Göksu\" olarak adlandırılıyor.",
+    "2023 nüfus verilerine göre 33.203 olan mahalle nüfusuyla Göksu, Etimesgut'un Süvari ve Ahi Mesut'tan sonra en kalabalık üçüncü mahallesi konumunda.",
+    "Şirin Gayrimenkul olarak Göksu Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9898979,
     "lng": 32.6411265
