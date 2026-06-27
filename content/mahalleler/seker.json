@@ -2,8 +2,13 @@
   "isim": "Şeker Mahallesi",
   "slug": "seker",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, 2007'den bu yana 6 katı aşan bir nüfus artışı yaşayan, hızla gelişen bir mahalle.",
+  "uzunAciklama": [
+    "Şeker Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinde yer alıyor.",
+    "Mahalle, 2007'den 2023'e kadar dikkat çekici bir nüfus artışı yaşadı: 1.591 olan nüfus 10.339'a çıktı; en yüksek artış %73 ile 2012 yılında gerçekleşti, son yıllarda büyüme daha istikrarlı bir seyir izliyor.",
+    "Şirin Gayrimenkul olarak Şeker Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.966909,
     "lng": 32.6601073
