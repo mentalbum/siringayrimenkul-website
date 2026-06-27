@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import type { Mahalle } from "@/lib/types";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
+import { InViewport } from "@/components/maps/in-viewport";
 
 const RegionMap = dynamic(
   () => import("@/components/maps/region-map").then((mod) => mod.RegionMap),
@@ -14,5 +15,9 @@ interface RegionMapLoaderProps {
 }
 
 export function RegionMapLoader({ items }: RegionMapLoaderProps) {
-  return <RegionMap items={items} />;
+  return (
+    <InViewport>
+      <RegionMap items={items} />
+    </InViewport>
+  );
 }

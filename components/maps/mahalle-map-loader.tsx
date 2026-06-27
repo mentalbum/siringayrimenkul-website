@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import type { Koordinat, Site } from "@/lib/types";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
+import { InViewport } from "@/components/maps/in-viewport";
 
 const MahalleMap = dynamic(
   () => import("@/components/maps/mahalle-map").then((mod) => mod.MahalleMap),
@@ -16,5 +17,9 @@ interface MahalleMapLoaderProps {
 }
 
 export function MahalleMapLoader({ center, boundary, siteler }: MahalleMapLoaderProps) {
-  return <MahalleMap center={center} boundary={boundary} siteler={siteler} />;
+  return (
+    <InViewport>
+      <MahalleMap center={center} boundary={boundary} siteler={siteler} />
+    </InViewport>
+  );
 }

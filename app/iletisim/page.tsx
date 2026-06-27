@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { getAllMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
@@ -13,6 +14,11 @@ export const metadata: Metadata = {
 };
 
 export default function IletisimPage() {
+  const mahalleler = getAllMahalleler().map((mahalle) => ({
+    slug: mahalle.slug,
+    isim: mahalle.isim,
+  }));
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <Breadcrumbs items={[{ label: "Anasayfa", href: "/" }, { label: "İletişim", href: "/iletisim" }]} />
@@ -95,10 +101,11 @@ export default function IletisimPage() {
         <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="text-xl">Mesaj Gönderin</h2>
           <p className="mt-1.5 text-sm text-muted">
-            Tüm alanlar zorunludur. Form, mesajınızı WhatsApp üzerinden iletir.
+            Ne kadar detay paylaşırsanız o kadar hızlı dönüş alırsınız. Form, mesajınızı WhatsApp
+            üzerinden iletir.
           </p>
           <div className="mt-6">
-            <ContactForm />
+            <ContactForm mahalleler={mahalleler} />
           </div>
         </div>
       </div>

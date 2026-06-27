@@ -52,9 +52,16 @@ export default async function SitePage({ params }: Props) {
   const site = getSiteBySlug(mahalleSlug, siteSlug);
   if (!mahalle || !site) notFound();
 
-  const digerSiteler = getSitelerByMahalle(mahalleSlug)
-    .filter((item) => item.slug !== site.slug)
-    .slice(0, 3);
+  const mahalleSiteleri = getSitelerByMahalle(mahalleSlug);
+  const siteIndex = mahalleSiteleri.findIndex((item) => item.slug === site.slug);
+  const digerSiteSayisi = Math.min(3, mahalleSiteleri.length - 1);
+  const digerSiteler =
+    siteIndex === -1
+      ? mahalleSiteleri.filter((item) => item.slug !== site.slug).slice(0, digerSiteSayisi)
+      : Array.from(
+          { length: digerSiteSayisi },
+          (_, i) => mahalleSiteleri[(siteIndex + 1 + i) % mahalleSiteleri.length]
+        );
   const sinir = getSiteBoundary(site);
 
   const siteJsonLd = {
