@@ -2,8 +2,13 @@
   "isim": "Güzelkent Mahallesi",
   "slug": "guzelkent",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, içinde bir villa bölgesini de barındıran, 15.000'i aşan nüfuslu bir mahalle.",
+  "uzunAciklama": [
+    "Güzelkent Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman'a yakın bir konumda yer alıyor. Şehir merkezine özel araçla yaklaşık 25 kilometre mesafede.",
+    "2022-2023 verilerine göre nüfusu 15.400'ü aşan Güzelkent'te, site ve rezidansların yanında müstakil ve ikiz evlerden oluşan bir villa bölgesi de bulunuyor.",
+    "Şirin Gayrimenkul olarak Güzelkent Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9872497,
     "lng": 32.6074042
