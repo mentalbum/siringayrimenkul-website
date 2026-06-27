@@ -2,8 +2,13 @@
   "isim": "Altay Mahallesi",
   "slug": "altay",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, nüfusu 2007'den sonra azalsa da 2014'ten itibaren yeniden ölçülü bir artış gösteren bir mahalle.",
+  "uzunAciklama": [
+    "Altay Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinde yer alıyor.",
+    "Mahalle nüfusu 2007 yılında 21.987'ye kadar yükselmiş, ardından 2013'e kadar azalmış; 2023 itibarıyla 13.892 olan nüfus, 2014'ten sonra yeniden ölçülü bir artış gösteriyor.",
+    "Şirin Gayrimenkul olarak Altay Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.972489,
     "lng": 32.6447493
