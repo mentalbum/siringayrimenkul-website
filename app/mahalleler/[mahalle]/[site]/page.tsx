@@ -17,6 +17,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+import { inferSiteTipi } from "@/lib/site-tipi";
 
 type Props = {
   params: Promise<{ mahalle: string; site: string }>;
@@ -63,6 +64,7 @@ export default async function SitePage({ params }: Props) {
           (_, i) => mahalleSiteleri[(siteIndex + 1 + i) % mahalleSiteleri.length]
         );
   const sinir = getSiteBoundary(site);
+  const tipi = inferSiteTipi(site.isim);
 
   const siteJsonLd = {
     "@context": "https://schema.org",
@@ -109,16 +111,23 @@ export default async function SitePage({ params }: Props) {
           {mahalle.isim} · {mahalle.ilce}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{site.isim}</h1>
+        {tipi && (
+          <span className="mt-2 inline-flex items-center rounded-full bg-gold/15 px-2.5 py-1 text-xs font-semibold text-gold-dark">
+            {tipi}
+          </span>
+        )}
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
       </header>
 
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           <p className="text-base font-medium text-navy">
+            {tipi && `${site.isim}, ${mahalle.isim} içinde yer alan ${tipi} bir yerleşimdir. `}
             Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, {site.isim} emlakçısı
             olarak size yardımcı oluyoruz.
           </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
+          <p className="text-sm leading-relaxed text-muted">{mahalle.kisaAciklama}</p>
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {site.adalar.map((ada) => (

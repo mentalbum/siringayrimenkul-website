@@ -1,6 +1,7 @@
 import type { EtapEntry } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
+import { inferSiteTipi } from "@/lib/site-tipi";
 
 export interface FaqItem {
   soru: string;
@@ -43,14 +44,17 @@ export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
 }
 
 export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
+  const tipi = inferSiteTipi(site.isim);
   const items: FaqItem[] = [
     {
       soru: `${site.isim} hangi mahallede yer alıyor?`,
-      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim}'nde yer alıyor.`,
+      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim}'nde yer alıyor. ${mahalle.kisaAciklama}`,
     },
     {
       soru: `${site.isim} emlakçısı kimdir?`,
-      cevap: `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
+      cevap: tipi
+        ? `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor; ${site.isim} de yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
+        : `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
   ];
 
