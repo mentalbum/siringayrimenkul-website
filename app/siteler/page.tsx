@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { getSitelerByMahalle, getYayindaMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { SiteCard } from "@/components/site/site-card";
+import { SitelerBrowser } from "@/components/site/siteler-browser";
 
 export const metadata: Metadata = {
   title: "Tüm Siteler ve Rezidanslar",
@@ -33,27 +32,8 @@ export default function SitelerPage() {
         </p>
       </header>
 
-      <div className="mt-12 space-y-14">
-        {mahalleler.map(({ mahalle, siteler }) => (
-          <section key={mahalle.slug}>
-            <div className="flex flex-wrap items-baseline justify-between gap-2">
-              <h2 className="text-xl">
-                <Link
-                  href={`/mahalleler/${mahalle.slug}`}
-                  className="cursor-pointer hover:text-gold-dark hover:underline"
-                >
-                  {mahalle.isim}
-                </Link>
-              </h2>
-              <span className="text-sm text-muted">{siteler.length} site/rezidans</span>
-            </div>
-            <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-              {siteler.map((site) => (
-                <SiteCard key={site.slug} site={site} />
-              ))}
-            </div>
-          </section>
-        ))}
+      <div className="mt-10">
+        <SitelerBrowser gruplar={mahalleler} />
       </div>
     </div>
   );
