@@ -5,9 +5,9 @@ import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
 
 export const metadata: Metadata = {
-  title: "Mahalleler",
+  title: "Eryaman Mahalleleri — Etimesgut ve Yenimahalle Emlak Rehberi",
   description:
-    "Eryaman bölgesindeki (Etimesgut ve Yenimahalle) tüm mahalleler için yaşam, ulaşım ve site/rezidans bilgileri içeren yerel emlak rehberi.",
+    "Eryaman bölgesindeki 14 mahalleyi, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin. Şirin Gayrimenkul olarak her mahalleyi yakından tanıyoruz.",
   alternates: { canonical: "/mahalleler" },
 };
 
@@ -28,11 +28,17 @@ export default function MahallelerPage() {
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Eryaman Bölgesi
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">Mahalleler</h1>
+        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman; Etimesgut ve Yenimahalle ilçe sınırlarını birlikte kapsayan, Ankara&apos;nın en
-          yoğun yaşanan bölgelerinden biri. Şirin Gayrimenkul olarak bölgedeki her mahalleyi ve
-          içindeki site/rezidansları tek tek tanıyoruz. Aşağıdan mahallenizi seçin.
+          Eryaman; Etimesgut ve Yenimahalle ilçe sınırlarını birlikte kapsayan, planlı etap
+          yapılaşmasıyla tanınan ve Ankara metrosuna bağlı bir semt. İdari olarak 11 mahalleyle
+          Etimesgut&apos;a, 3 mahalleyle Yenimahalle&apos;ye bağlıdır; bu 14 mahallenin tamamını
+          ve içlerindeki 500&apos;den fazla site ile rezidansı Şirin Gayrimenkul olarak yakından
+          tanıyoruz.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-muted">
+          Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
+          uzman danışmanımıza ulaşın.
         </p>
       </header>
 
