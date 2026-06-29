@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import {
   getAllAdalar,
   getAllMahalleler,
+  getBlogPostsByMahalle,
   getMahalleBoundary,
   getMahalleBySlug,
   getNearbyMahalleler,
@@ -101,6 +102,7 @@ export default async function MahallePage({ params }: Props) {
   const boundary = getMahalleBoundary(mahalle);
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
+  const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug);
   const etaplar = (
     Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
   ).sort((a, b) => Number(a) - Number(b));
@@ -214,6 +216,24 @@ export default async function MahallePage({ params }: Props) {
         title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
         items={getMahalleFaq(mahalle, siteler.length)}
       />
+
+      {ilgiliYazilar.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl">{mahalle.isim} ile İlgili Blog Yazıları</h2>
+          <div className="mt-5 space-y-4">
+            {ilgiliYazilar.map((yazi) => (
+              <Link
+                key={yazi.slug}
+                href={`/blog/${yazi.slug}`}
+                className="block rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-gold"
+              >
+                <p className="text-sm font-semibold text-navy hover:text-gold-dark">{yazi.baslik}</p>
+                <p className="mt-1 text-xs leading-relaxed text-muted">{yazi.ozet}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {yakindakiler.length > 0 && (
         <section className="mt-14">

@@ -156,3 +156,7 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   const { data, content } = matter(raw);
   return { ...(data as BlogPost), slug, content };
 }
+
+export function getBlogPostsByMahalle(mahalleSlug: string): BlogPost[] {
+  return getAllBlogPosts().filter((post) => post.ilgiliMahalle === mahalleSlug);
+}
