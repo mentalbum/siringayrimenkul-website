@@ -1,6 +1,14 @@
 import type { FaqItem } from "@/lib/faq";
 
-export function FaqSection({ title, items }: { title: string; items: FaqItem[] }) {
+export function FaqSection({
+  title,
+  items,
+  className,
+}: {
+  title: string;
+  items: FaqItem[];
+  className?: string;
+}) {
   if (items.length === 0) return null;
 
   const jsonLd = {
@@ -17,7 +25,7 @@ export function FaqSection({ title, items }: { title: string; items: FaqItem[] }
   };
 
   return (
-    <section className="mt-14">
+    <section className={className ?? "mt-14"}>
       <h2 className="text-xl">{title}</h2>
       <div className="mt-5 divide-y divide-border rounded-2xl border border-border bg-surface">
         {items.map((item) => (

@@ -6,6 +6,7 @@ import { CtaButton } from "@/components/ui/button";
 import { ReviewBadge } from "@/components/ui/review-badge";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
+import { FaqSection } from "@/components/ui/faq-section";
 import {
   BuildingIcon,
   CheckBadgeIcon,
@@ -141,6 +142,31 @@ export default function HomePage() {
           </div>
         </section>
       )}
+
+      <section className="mx-auto max-w-3xl px-4 pb-4 pt-8 sm:px-6">
+        <FaqSection
+          title="Sık Sorulan Sorular"
+          className="mt-0"
+          items={[
+            {
+              soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
+              cevap: `Eryaman bölgesinde; Etimesgut'a bağlı 11 mahalle ve Yenimahalle'ye bağlı 3 mahalle olmak üzere toplam 14 mahallede hizmet veriyoruz. Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
+            },
+            {
+              soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",
+              cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerlendirme görüşmesi için ek bir ücret almıyoruz; evinizin bulunduğu mahalle ve site hakkında size doğrudan bilgi veriyoruz.`,
+            },
+            {
+              soru: "Bu sitede ilan var mı?",
+              cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yer alıyor. Bu web sitesi ilan platformu değil; mahalle rehberi ve iletişim kanalı olarak tasarlandı. Mahallenizi veya sitenizi seçerek bize ulaşabilirsiniz.`,
+            },
+            {
+              soru: "Eryaman'da hangi siteleri tanıyorsunuz?",
+              cevap: `Eryaman genelinde 500'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
+            },
+          ]}
+        />
+      </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <div className="flex flex-col items-center gap-5 rounded-2xl bg-navy px-6 py-12 text-center text-white sm:px-12">
