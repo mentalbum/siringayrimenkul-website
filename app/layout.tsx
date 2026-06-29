@@ -33,11 +33,20 @@ export const metadata: Metadata = {
     siteName: siteConfig.name,
     title: `${siteConfig.name} | Eryaman Emlakçısı`,
     description: siteConfig.description,
+    images: [
+      {
+        url: "/images/ofis-ic-mekan.jpg",
+        width: 1284,
+        height: 936,
+        alt: "Şirin Gayrimenkul ofisi — Eryaman Etimesgut",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} | Eryaman Emlakçısı`,
     description: siteConfig.description,
+    images: ["/images/ofis-ic-mekan.jpg"],
   },
   verification: {
     google: "k1TcGp1CMeFpPUlbp91mnEqvCaHu1y1-si6t0F6xjOA",

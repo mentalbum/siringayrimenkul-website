@@ -40,14 +40,17 @@ export default async function BlogPostPage({ params }: Props) {
 
   const ilgiliMahalle = post.ilgiliMahalle ? getMahalleBySlug(post.ilgiliMahalle) : undefined;
 
+  const postUrl = `${siteConfig.url}/blog/${post.slug}`;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
+    mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
     headline: post.baslik,
     description: post.ozet,
     datePublished: post.tarih,
-    author: { "@type": "Organization", name: siteConfig.name },
-    publisher: { "@type": "Organization", name: siteConfig.name },
+    url: postUrl,
+    author: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+    publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
   };
 
   return (

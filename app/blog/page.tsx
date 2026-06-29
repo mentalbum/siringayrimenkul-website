@@ -4,9 +4,9 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { BlogCard } from "@/components/blog/blog-card";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Eryaman Emlak Rehberi",
   description:
-    "Eryaman bölgesinde mahalle rehberleri, site/rezidans tanıtımları ve emlak tavsiyeleri. Şirin Gayrimenkul'dan yerel emlak blogu.",
+    "Eryaman mahalle rehberleri, site/rezidans tanıtımları ve ev satış-kiralama tavsiyeleri. Şirin Gayrimenkul'dan Eryaman bölgesi için güncel içerikler.",
   alternates: { canonical: "/blog" },
 };
 
