@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getAllBlogPosts, getBlogPostBySlug, getMahalleBySlug } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -82,7 +83,7 @@ export default async function BlogPostPage({ params }: Props) {
       </header>
 
       <div className="prose prose-slate mt-8 max-w-none prose-headings:font-heading prose-headings:text-navy prose-a:text-gold-dark prose-a:no-underline hover:prose-a:underline">
-        <MDXRemote source={post.content} />
+        <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
 
       {ilgiliMahalle && (

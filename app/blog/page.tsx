@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { BlogCard } from "@/components/blog/blog-card";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Eryaman Emlak Rehberi",
@@ -12,6 +13,21 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   const posts = getAllBlogPosts();
+
+  const collectionJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    name: "Eryaman Emlak Rehberi",
+    description: "Eryaman mahalle rehberleri, site/rezidans tanıtımları ve ev satış-kiralama tavsiyeleri.",
+    url: `${siteConfig.url}/blog`,
+    publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+    hasPart: posts.map((post) => ({
+      "@type": "Article",
+      headline: post.baslik,
+      url: `${siteConfig.url}/blog/${post.slug}`,
+      datePublished: post.tarih,
+    })),
+  };
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -35,6 +51,11 @@ export default function BlogPage() {
       ) : (
         <p className="mt-10 text-sm text-muted">Yakında burada olacak.</p>
       )}
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
     </div>
   );
 }
