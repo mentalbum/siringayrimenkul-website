@@ -52,6 +52,26 @@ export default async function AdaPage({ params }: Props) {
   );
   const sinir = getSiteBoundary(ada.site);
 
+  const adaJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Place",
+    name: `${ada.no} Ada — ${ada.site.isim}`,
+    description: `${ada.no} Ada, ${mahalle.isim} içinde yer alan ${ada.site.isim}'nin bir parçasıdır.`,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}/adalar/${ada.no}`,
+    ...(ada.site.koordinat && {
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: ada.site.koordinat.lat,
+        longitude: ada.site.koordinat.lng,
+      },
+    }),
+    containedInPlace: {
+      "@type": "Place",
+      name: mahalle.isim,
+      url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
+    },
+  };
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <Breadcrumbs
@@ -123,6 +143,11 @@ export default async function AdaPage({ params }: Props) {
           Bize Ulaşın
         </CtaButton>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(adaJsonLd) }}
+      />
 
       {ayniEtaptakiler.length > 0 && (
         <section className="mt-14">
