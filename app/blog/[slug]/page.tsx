@@ -61,6 +61,18 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
   };
 
+  const faqJsonLd = post.faq && post.faq.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: post.faq.map(({ soru, cevap }) => ({
+          "@type": "Question",
+          name: soru,
+          acceptedAnswer: { "@type": "Answer", text: cevap },
+        })),
+      }
+    : null;
+
   return (
     <div className="mx-auto max-w-3xl px-4 py-12 sm:px-6">
       <Breadcrumbs
@@ -135,6 +147,12 @@ export default async function BlogPostPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
     </div>
   );
 }

@@ -43,6 +43,7 @@ export interface BlogFrontmatter {
   kapakGorseli?: string;
   ilgiliMahalle?: string;
   ilgiliSite?: string;
+  faq?: { soru: string; cevap: string }[];
 }
 
 export interface BlogPost extends BlogFrontmatter {
