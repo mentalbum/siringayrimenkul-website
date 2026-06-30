@@ -25,6 +25,10 @@ export function getSiteLastModified(mahalleSlug: string, siteSlug: string): Date
   return fs.statSync(path.join(SITELER_DIR, mahalleSlug, `${siteSlug}.json`)).mtime;
 }
 
+export function getBlogPostLastModified(slug: string): Date {
+  return fs.statSync(path.join(BLOG_DIR, `${slug}.mdx`)).mtime;
+}
+
 export function getAllMahalleler(): Mahalle[] {
   const files = fs.readdirSync(MAHALLELER_DIR).filter((file) => file.endsWith(".json"));
   return files

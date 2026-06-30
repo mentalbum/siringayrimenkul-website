@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef } from "@/lib/structured-data";
 import { getAllMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -13,6 +14,15 @@ export const metadata: Metadata = {
   alternates: { canonical: "/iletisim" },
 };
 
+const contactJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: `İletişim | ${siteConfig.name}`,
+  url: `${siteConfig.url}/iletisim`,
+  inLanguage: "tr-TR",
+  mainEntity: organizationRef,
+};
+
 export default function IletisimPage() {
   const mahalleler = getAllMahalleler().map((mahalle) => ({
     slug: mahalle.slug,
@@ -21,6 +31,10 @@ export default function IletisimPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
       <Breadcrumbs items={[{ label: "Anasayfa", href: "/" }, { label: "İletişim", href: "/iletisim" }]} />
 
       <header className="mt-4 max-w-2xl">

@@ -8,6 +8,7 @@ import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
+import { ORG_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -27,6 +28,17 @@ export const metadata: Metadata = {
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
   openGraph: {
     type: "website",
     locale: "tr_TR",
@@ -63,11 +75,14 @@ export default async function RootLayout({
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
+    "@id": ORG_ID,
     name: siteConfig.name,
     description: siteConfig.description,
     image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
+    logo: organizationLogo,
     url: siteConfig.url,
     telephone: siteConfig.phoneTel,
+    knowsLanguage: "tr-TR",
     sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
     areaServed: [
       { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
@@ -116,6 +131,10 @@ export default async function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
       </body>
       {siteConfig.gaMeasurementId && <GoogleAnalytics gaId={siteConfig.gaMeasurementId} />}

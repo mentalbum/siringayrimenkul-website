@@ -3,11 +3,17 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkGfm from "remark-gfm";
-import { getAllBlogPosts, getBlogPostBySlug, getMahalleBySlug } from "@/lib/content";
+import {
+  getAllBlogPosts,
+  getBlogPostBySlug,
+  getBlogPostLastModified,
+  getMahalleBySlug,
+} from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef, WEBSITE_ID } from "@/lib/structured-data";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -49,16 +55,25 @@ export default async function BlogPostPage({ params }: Props) {
   ].slice(0, 3);
 
   const postUrl = `${siteConfig.url}/blog/${post.slug}`;
+  const dateModified = (() => {
+    const mtime = getBlogPostLastModified(post.slug);
+    // dateModified must never predate publication.
+    return mtime > new Date(post.tarih) ? mtime.toISOString() : post.tarih;
+  })();
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     mainEntityOfPage: { "@type": "WebPage", "@id": postUrl },
     headline: post.baslik,
     description: post.ozet,
+    image: `${siteConfig.url}/images/ofis-ic-mekan.jpg`,
     datePublished: post.tarih,
+    dateModified,
+    inLanguage: "tr-TR",
     url: postUrl,
-    author: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
-    publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+    isPartOf: { "@id": WEBSITE_ID },
+    author: organizationRef,
+    publisher: organizationRef,
   };
 
   const faqJsonLd = post.faq && post.faq.length > 0

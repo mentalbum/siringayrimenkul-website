@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon } from "@/components/ui/icons";
@@ -39,9 +40,22 @@ const adimlar = [
   },
 ];
 
+const aboutJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  name: `Hakkımızda | ${siteConfig.name}`,
+  url: `${siteConfig.url}/hakkimizda`,
+  inLanguage: "tr-TR",
+  mainEntity: organizationRef,
+};
+
 export default function HakkimizdaPage() {
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }}
+      />
       <Breadcrumbs items={[{ label: "Anasayfa", href: "/" }, { label: "Hakkımızda", href: "/hakkimizda" }]} />
 
       <header className="mt-4">
