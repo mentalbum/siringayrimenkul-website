@@ -33,9 +33,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ada = getAdaByNo(mahalleSlug, adaNo);
   if (!mahalle || !ada) return {};
 
+  const etapBilgi = ada.etap ? ` Eryaman ${ada.etap}. Etap,` : "";
   return {
-    title: `${ada.no} Ada (${ada.site.isim}) — ${mahalle.isim}`,
-    description: `${ada.no} Ada, ${mahalle.isim} içinde yer alan ${ada.site.isim}'nin bir parçasıdır.`,
+    title: `${ada.no} Ada — ${ada.site.isim} | ${mahalle.isim}`,
+    description: `${etapBilgi} ${mahalle.isim} içindeki ${ada.site.isim} bünyesinde yer alan ${ada.no} Ada. Şirin Gayrimenkul ile bu adada ücretsiz değerlendirme için iletişime geçin.`.trim(),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${ada.no}` },
   };
 }

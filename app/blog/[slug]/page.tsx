@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { getAllBlogPosts, getBlogPostBySlug, getMahalleBySlug } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -39,6 +40,12 @@ export default async function BlogPostPage({ params }: Props) {
   if (!post) notFound();
 
   const ilgiliMahalle = post.ilgiliMahalle ? getMahalleBySlug(post.ilgiliMahalle) : undefined;
+
+  const tumYazilar = getAllBlogPosts().filter((p) => p.slug !== post.slug);
+  const ilgiliYazilar = [
+    ...tumYazilar.filter((p) => p.ilgiliMahalle && p.ilgiliMahalle === post.ilgiliMahalle),
+    ...tumYazilar.filter((p) => !post.ilgiliMahalle || p.ilgiliMahalle !== post.ilgiliMahalle),
+  ].slice(0, 3);
 
   const postUrl = `${siteConfig.url}/blog/${post.slug}`;
   const jsonLd = {
@@ -88,6 +95,24 @@ export default async function BlogPostPage({ params }: Props) {
             {ilgiliMahalle.isim} Rehberi
           </CtaButton>
         </div>
+      )}
+
+      {ilgiliYazilar.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl">İlgili Yazılar</h2>
+          <div className="mt-5 space-y-4">
+            {ilgiliYazilar.map((yazi) => (
+              <Link
+                key={yazi.slug}
+                href={`/blog/${yazi.slug}`}
+                className="block rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-gold"
+              >
+                <p className="text-sm font-semibold text-navy hover:text-gold-dark">{yazi.baslik}</p>
+                <p className="mt-1 text-xs leading-relaxed text-muted">{yazi.ozet}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
       )}
 
       <div className="mt-8 rounded-2xl bg-navy px-6 py-8 text-center text-white">

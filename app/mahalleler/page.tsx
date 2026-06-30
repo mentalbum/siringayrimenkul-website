@@ -3,6 +3,7 @@ import { getAllMahalleler, getMahalleBoundary } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
+import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Eryaman Mahalleleri — Etimesgut ve Yenimahalle Emlak Rehberi",
@@ -19,6 +20,21 @@ export default function MahallelerPage() {
     mahalle,
     boundary: getMahalleBoundary(mahalle),
   }));
+
+  const itemListJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Eryaman Mahalleleri",
+    description: "Eryaman bölgesindeki 14 mahallenin emlak rehberi — Şirin Gayrimenkul",
+    url: `${siteConfig.url}/mahalleler`,
+    numberOfItems: mahalleler.length,
+    itemListElement: mahalleler.map((m, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      name: m.isim,
+      url: `${siteConfig.url}/mahalleler/${m.slug}`,
+    })),
+  };
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
@@ -63,6 +79,11 @@ export default function MahallelerPage() {
           ))}
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
+      />
     </div>
   );
 }
