@@ -2,8 +2,13 @@
   "isim": "Devlet Mahallesi",
   "slug": "devlet",
   "ilce": "Etimesgut",
-  "durum": "yakinda",
-  "kisaAciklama": "Eryaman bölgesinin Etimesgut tarafında yer alan mahallelerden biri. Bu mahalle için içerik hazırlığımız sürüyor.",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, 2021'de Eryaman Mahallesi'nden ayrılarak bağımsız mahalle olan ve ilk yılında nüfusu %22 artan bir mahalle.",
+  "uzunAciklama": [
+    "Devlet Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinde yer alıyor.",
+    "Mahalle, 2021 yılında semt ile aynı adı taşıyan Eryaman Mahallesi'nden ayrılarak bağımsız bir idari birim haline geldi. İlk yılında 12.794 olan nüfus, 2022'de %22 artışla 15.584'e ulaştı; 2023 itibarıyla 15.654 ile istikrara kavuştu.",
+      "Şirin Gayrimenkul olarak Devlet Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilir, bölgede ev almak veya kiralamak isteyenler ise güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir."
+  ],
   "merkezKoordinat": {
     "lat": 39.9772884,
     "lng": 32.6066636
