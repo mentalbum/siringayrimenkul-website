@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation";
 import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
 import { geoJsonPolygonToPaths } from "@/lib/geo";
+import { brandMapStyle } from "@/lib/map-style";
 import type { Koordinat, Site } from "@/lib/types";
 import { ClusteredMarkers } from "@/components/maps/clustered-markers";
 
@@ -35,16 +36,18 @@ export function MahalleMap({ center, boundary, siteler }: MahalleMapProps) {
         defaultCenter={center}
         defaultZoom={15}
         gestureHandling="greedy"
+        clickableIcons={false}
+        styles={brandMapStyle}
         style={{ width: "100%", height: "100%" }}
       >
         {paths.length > 0 && (
           <Polygon
             paths={paths}
-            strokeColor="#373643"
-            strokeOpacity={0.9}
+            strokeColor="#FBCA12"
+            strokeOpacity={0.95}
             strokeWeight={2}
             fillColor="#FBCA12"
-            fillOpacity={0.18}
+            fillOpacity={0.14}
           />
         )}
         <ClusteredMarkers

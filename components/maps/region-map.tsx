@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
 import { geoJsonPolygonToPaths } from "@/lib/geo";
+import { brandMapStyle } from "@/lib/map-style";
 import type { Mahalle } from "@/lib/types";
 import { ClusteredMarkers } from "@/components/maps/clustered-markers";
 
@@ -51,6 +52,8 @@ export function RegionMap({ items }: RegionMapProps) {
           padding: 32,
         }}
         gestureHandling="greedy"
+        clickableIcons={false}
+        styles={brandMapStyle}
         style={{ width: "100%", height: "100%" }}
       >
         {withBoundary.map(({ mahalle, boundary }) => {
@@ -60,11 +63,11 @@ export function RegionMap({ items }: RegionMapProps) {
             <Polygon
               key={mahalle.slug}
               paths={geoJsonPolygonToPaths(boundary!)}
-              strokeColor="#373643"
+              strokeColor={isYayinda ? "#FBCA12" : "#b3ad9f"}
               strokeOpacity={isYayinda ? 0.9 : 0.5}
               strokeWeight={isYayinda ? 2 : 1.5}
-              fillColor={isYayinda ? "#FBCA12" : "#373643"}
-              fillOpacity={isYayinda ? (isHovered ? 0.32 : 0.22) : isHovered ? 0.16 : 0.06}
+              fillColor={isYayinda ? "#FBCA12" : "#b3ad9f"}
+              fillOpacity={isYayinda ? (isHovered ? 0.34 : 0.2) : isHovered ? 0.14 : 0.05}
               onClick={() => router.push(`/mahalleler/${mahalle.slug}`)}
               onMouseOver={() => setHoveredSlug(mahalle.slug)}
               onMouseOut={() => setHoveredSlug((current) => (current === mahalle.slug ? null : current))}
