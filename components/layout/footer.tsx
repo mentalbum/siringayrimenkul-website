@@ -1,11 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { mainNav, siteConfig } from "@/lib/site-config";
+import { getAllMahalleler } from "@/lib/content";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import { MapPinIcon, PhoneIcon, TiktokIcon } from "@/components/ui/icons";
 
 export function Footer() {
+  const mahalleler = getAllMahalleler();
+
   return (
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
@@ -85,6 +88,26 @@ export function Footer() {
               <TiktokIcon className="h-4 w-4" />
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10">
+        <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">
+            Eryaman Mahalleleri
+          </h2>
+          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
+            {mahalleler.map((mahalle) => (
+              <li key={mahalle.slug}>
+                <Link
+                  href={`/mahalleler/${mahalle.slug}`}
+                  className="text-sm text-white/70 hover:text-gold"
+                >
+                  {mahalle.isim.replace(/\s*Mahallesi$/, "")}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
