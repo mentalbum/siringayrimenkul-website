@@ -3,34 +3,40 @@
   "slug": "camli-klima-bloklari",
   "mahalleSlug": "tunahan",
   "koordinat": {
-    "lat": 39.988052,
-    "lng": 32.619645
+    "lat": 39.990229,
+    "lng": 32.619134
   },
   "sinirGeoJSON": "siteler/tunahan/camli-klima-bloklari-boundary.geojson",
   "aciklama": "Camlı Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "17621",
+      "parsel": "1",
       "etap": "4"
     },
     {
       "no": "17622",
+      "parsel": "1",
       "etap": "4"
     },
     {
       "no": "17623",
+      "parsel": "1",
       "etap": "4"
     },
     {
       "no": "17629",
+      "parsel": "1",
       "etap": "4"
     },
     {
       "no": "17630",
+      "parsel": "1",
       "etap": "4"
     },
     {
       "no": "17631",
+      "parsel": "1",
       "etap": "4"
     },
     {
