@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import type { Mahalle, Site } from "@/lib/types";
 import { SiteCard } from "@/components/site/site-card";
@@ -12,6 +12,13 @@ interface SitelerBrowserProps {
 
 export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
   const [sorgu, setSorgu] = useState("");
+
+  // Prefill from a ?ara= query (e.g. the homepage hero search) without opting
+  // the statically-rendered page into useSearchParams / Suspense.
+  useEffect(() => {
+    const ara = new URLSearchParams(window.location.search).get("ara");
+    if (ara) setSorgu(ara);
+  }, []);
 
   const filtreliGruplar = useMemo(() => {
     const normalize = (s: string) => s.toLocaleLowerCase("tr");

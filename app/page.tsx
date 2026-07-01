@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import { getAllBlogPosts, getAllMahalleler } from "@/lib/content";
+import Link from "next/link";
+import {
+  getAllBlogPosts,
+  getAllMahalleler,
+  getSitelerByMahalle,
+  getYayindaMahalleler,
+} from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { ReviewBadge } from "@/components/ui/review-badge";
+import { HeroSearch } from "@/components/home/hero-search";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
 import { FaqSection } from "@/components/ui/faq-section";
@@ -49,19 +55,47 @@ export default function HomePage() {
   ].slice(0, 3);
   const sonYazilar = getAllBlogPosts().slice(0, 3);
 
+  const siteGruplari = getYayindaMahalleler()
+    .map((mahalle) => ({ mahalle, siteler: getSitelerByMahalle(mahalle.slug) }))
+    .filter((grup) => grup.siteler.length > 0);
+  const toplamSite = siteGruplari.reduce((sum, grup) => sum + grup.siteler.length, 0);
+  const mahalleSayisi = siteGruplari.length;
+
   return (
     <div>
       <section className="relative overflow-hidden bg-navy">
-        <Image
-          src="/images/ofis-ic-mekan.jpg"
-          alt=""
-          fill
-          priority
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-navy/95 sm:bg-gradient-to-r sm:from-navy sm:via-navy/90 sm:to-navy/55" />
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 800 500"
+          preserveAspectRatio="xMidYMid slice"
+          className="absolute inset-0 h-full w-full"
+        >
+          <g transform="rotate(-18 600 250)">
+            {Array.from({ length: 7 }).map((_, i) => {
+              const r = 70 + i * 48;
+              return (
+                <ellipse
+                  key={i}
+                  cx={600}
+                  cy={250}
+                  rx={r}
+                  ry={r * 0.82}
+                  fill="none"
+                  stroke="#FBCA12"
+                  strokeWidth={1}
+                  strokeOpacity={0.46 - i * 0.055}
+                />
+              );
+            })}
+          </g>
+          <circle cx={600} cy={250} r={16} fill="#FBCA12" fillOpacity={0.22} />
+          <circle cx={600} cy={250} r={5} fill="#FBCA12" />
+        </svg>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/55" />
+
         <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
-          <div className="max-w-xl">
+          <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-gold">
               Eryaman · Etimesgut &amp; Yenimahalle
             </p>
@@ -69,19 +103,26 @@ export default function HomePage() {
               Eryaman&apos;da Emlağın Adresi
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
-              Eryaman&apos;da emlakçı arıyorsanız doğru yerdesiniz. Şirin Gayrimenkul, ev almak,
-              satmak ya da kiraya vermek isteyenler için yerel bir çözüm ortağı. Mahallenizi
-              keşfedin ya da evinizi değerlendirmek için bize ulaşın.
+              Eryaman&apos;ı mahalle mahalle, site site biliyoruz. Sitenizi arayın; satmak veya
+              kiraya vermek istediğiniz evinizi ücretsiz değerlendirelim.
             </p>
-            <div className="mt-8 flex flex-wrap items-center gap-3">
-              <CtaButton href="/mahalleler" variant="primary">
-                Mahalleleri İncele
-              </CtaButton>
-              <CtaButton href="/iletisim" variant="outline-light">
+
+            <div className="mt-8 max-w-xl">
+              <HeroSearch />
+              <p className="mt-3 text-xs text-white/55">
+                {toplamSite}+ site/rezidans · {mahalleSayisi} mahalle arasından bulun · veya{" "}
+                <Link href="/mahalleler" className="font-semibold text-gold hover:underline">
+                  tüm mahalleleri keşfedin →
+                </Link>
+              </p>
+            </div>
+
+            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <CtaButton href="/iletisim" variant="primary">
                 Evinizi Değerlendirin
               </CtaButton>
+              <ReviewBadge variant="dark" />
             </div>
-            <ReviewBadge className="mt-6" variant="dark" />
           </div>
         </div>
       </section>
