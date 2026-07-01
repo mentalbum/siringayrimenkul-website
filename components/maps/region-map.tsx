@@ -4,10 +4,11 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
-import { geoJsonPolygonToPaths } from "@/lib/geo";
+import { geoJsonPolygonToPaths, polygonCentroid } from "@/lib/geo";
 import { brandMapStyle } from "@/lib/map-style";
 import type { Mahalle } from "@/lib/types";
 import { ClusteredMarkers } from "@/components/maps/clustered-markers";
+import { MapLabels } from "@/components/maps/map-labels";
 
 interface RegionMapItem {
   mahalle: Mahalle;
@@ -85,6 +86,13 @@ export function RegionMap({ items }: RegionMapProps) {
             }))}
           />
         )}
+        <MapLabels
+          labels={withBoundary.map(({ mahalle, boundary }) => ({
+            key: mahalle.slug,
+            position: polygonCentroid(geoJsonPolygonToPaths(boundary!)[0]),
+            text: mahalle.isim.replace(/\s*Mahallesi$/, ""),
+          }))}
+        />
       </Map>
     </APIProvider>
   );

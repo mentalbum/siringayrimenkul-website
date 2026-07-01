@@ -28,3 +28,31 @@ export function geoJsonPolygonToPaths(feature: GeoJSON.Feature): Koordinat[][] {
 
   return [];
 }
+
+/** Area-weighted centroid of a simple polygon ring — a better label anchor
+ * than averaging vertices, which skews toward whichever edge has more points. */
+export function polygonCentroid(ring: Koordinat[]): Koordinat {
+  let area = 0;
+  let cx = 0;
+  let cy = 0;
+
+  for (let i = 0; i < ring.length; i++) {
+    const p0 = ring[i];
+    const p1 = ring[(i + 1) % ring.length];
+    const cross = p0.lng * p1.lat - p1.lng * p0.lat;
+    area += cross;
+    cx += (p0.lng + p1.lng) * cross;
+    cy += (p0.lat + p1.lat) * cross;
+  }
+  area /= 2;
+
+  if (Math.abs(area) < 1e-12) {
+    const avg = ring.reduce((acc, p) => ({ lat: acc.lat + p.lat, lng: acc.lng + p.lng }), {
+      lat: 0,
+      lng: 0,
+    });
+    return { lat: avg.lat / ring.length, lng: avg.lng / ring.length };
+  }
+
+  return { lat: cy / (6 * area), lng: cx / (6 * area) };
+}
