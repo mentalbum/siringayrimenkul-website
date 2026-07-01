@@ -21,6 +21,37 @@ interface MahalleMapProps {
   siteler: SiteMapEntry[];
 }
 
+interface SiteShape {
+  key: string;
+  paths: Koordinat[];
+  labelPosition: Koordinat;
+  labelText: string;
+  href: string;
+}
+
+/** One shape per parcel ring — a multi-ada site (e.g. 7 separate adalar) is
+ * several disjoint parcels, not one shape with holes, so each ring needs its
+ * own <Polygon> (Google Maps treats extra paths on a single Polygon as
+ * cutout holes, not separate shapes). Each ring is labeled "{site adı} {ada
+ * no} Ada" when its ada number is known (so sites with several parcels can
+ * be told apart from their very first one), falling back to the site name
+ * alone for older boundary files that don't record a per-ring ada number. */
+function siteShapes(site: Site, boundary: GeoJSON.Feature): SiteShape[] {
+  const rings = geoJsonPolygonToPaths(boundary);
+  const adalar = (boundary.properties?.adalar as string[] | undefined) ?? [];
+
+  return rings.map((ring, index) => {
+    const adaNo = adalar[index]?.split("/")[0];
+    return {
+      key: `${site.slug}-${index}`,
+      paths: ring,
+      labelPosition: polygonCentroid(ring),
+      labelText: adaNo ? `${site.isim} ${adaNo} Ada` : site.isim,
+      href: `/mahalleler/${site.mahalleSlug}/${site.slug}`,
+    };
+  });
+}
+
 export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps) {
   const router = useRouter();
 
@@ -37,9 +68,9 @@ export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps
   // Only sites with a real TKGM-derived parcel boundary are shown on the map —
   // no pins as a placeholder. A site simply doesn't appear here until its own
   // boundary has been added.
-  const withParcel = siteler.filter(
-    (entry): entry is SiteMapEntry & { boundary: GeoJSON.Feature } => Boolean(entry.boundary)
-  );
+  const shapes = siteler
+    .filter((entry): entry is SiteMapEntry & { boundary: GeoJSON.Feature } => Boolean(entry.boundary))
+    .flatMap(({ site, boundary }) => siteShapes(site, boundary));
 
   return (
     <APIProvider apiKey={siteConfig.googleMapsApiKey}>
@@ -60,23 +91,23 @@ export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps
             fillOpacity={0}
           />
         )}
-        {withParcel.map(({ site, boundary }) => (
+        {shapes.map((shape) => (
           <Polygon
-            key={site.slug}
-            paths={geoJsonPolygonToPaths(boundary)}
+            key={shape.key}
+            paths={shape.paths}
             strokeColor="#FBCA12"
             strokeOpacity={0.95}
             strokeWeight={2}
             fillColor="#FBCA12"
             fillOpacity={0.14}
-            onClick={() => router.push(`/mahalleler/${site.mahalleSlug}/${site.slug}`)}
+            onClick={() => router.push(shape.href)}
           />
         ))}
         <MapLabels
-          labels={withParcel.map(({ site, boundary }) => ({
-            key: site.slug,
-            position: polygonCentroid(geoJsonPolygonToPaths(boundary)[0]),
-            text: site.isim,
+          labels={shapes.map((shape) => ({
+            key: shape.key,
+            position: shape.labelPosition,
+            text: shape.labelText,
           }))}
         />
       </Map>
