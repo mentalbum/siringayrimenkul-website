@@ -7,7 +7,6 @@ import { siteConfig } from "@/lib/site-config";
 import { geoJsonPolygonToPaths, polygonCentroid } from "@/lib/geo";
 import { brandMapStyle } from "@/lib/map-style";
 import type { Mahalle } from "@/lib/types";
-import { ClusteredMarkers } from "@/components/maps/clustered-markers";
 import { MapLabels } from "@/components/maps/map-labels";
 
 interface RegionMapItem {
@@ -75,17 +74,6 @@ export function RegionMap({ items }: RegionMapProps) {
             />
           );
         })}
-        {withoutBoundary.length > 0 && (
-          <ClusteredMarkers
-            markers={withoutBoundary.map(({ mahalle }) => ({
-              key: mahalle.slug,
-              position: mahalle.merkezKoordinat,
-              title: mahalle.isim,
-              icon: mahalle.durum === "yayinda" ? "/icons/pin-gold.svg" : "/icons/pin-muted.svg",
-              onClick: () => router.push(`/mahalleler/${mahalle.slug}`),
-            }))}
-          />
-        )}
         <MapLabels
           labels={withBoundary.map(({ mahalle, boundary }) => ({
             key: mahalle.slug,

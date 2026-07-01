@@ -10,6 +10,7 @@ import {
   getMahalleBoundary,
   getMahalleBySlug,
   getNearbyMahalleler,
+  getSiteBoundary,
   getSitelerByMahalle,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -102,6 +103,8 @@ export default async function MahallePage({ params }: Props) {
 
   const siteler = getSitelerByMahalle(mahalle.slug);
   const boundary = getMahalleBoundary(mahalle);
+  const siteMapEntries = siteler.map((site) => ({ site, boundary: getSiteBoundary(site) }));
+  const hasSiteParcel = siteMapEntries.some((entry) => entry.boundary);
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
   const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug);
@@ -153,11 +156,18 @@ export default async function MahallePage({ params }: Props) {
         </div>
         <div className="flex flex-col gap-2">
           <div className="h-[360px] overflow-hidden rounded-2xl border border-border lg:h-full">
-            <MahalleMapLoader center={mahalle.merkezKoordinat} boundary={boundary} siteler={[]} />
+            <MahalleMapLoader
+              center={mahalle.merkezKoordinat}
+              mahalleBoundary={boundary}
+              siteler={siteMapEntries}
+            />
           </div>
-          {boundary && (
+          {(boundary || hasSiteParcel) && (
             <p className="text-right text-xs text-muted">
-              Mahalle sınırı verisi: © OpenStreetMap katkıda bulunanları
+              {boundary && "Mahalle sınırı verisi: © OpenStreetMap katkıda bulunanları"}
+              {boundary && hasSiteParcel && " · "}
+              {hasSiteParcel &&
+                "Site sınırları: TKGM parsel sorgu görüntüsünden türetilmiş tahmini sınırlardır, resmi kadastro verisi değildir."}
             </p>
           )}
         </div>

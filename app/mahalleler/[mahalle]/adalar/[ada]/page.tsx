@@ -129,8 +129,7 @@ export default async function AdaPage({ params }: Props) {
           <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
             <MahalleMapLoader
               center={ada.site.koordinat}
-              boundary={sinir}
-              siteler={[ada.site]}
+              siteler={[{ site: ada.site, boundary: sinir }]}
             />
           </div>
         )}

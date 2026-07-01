@@ -1,7 +1,8 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import type { Koordinat, Site } from "@/lib/types";
+import type { Koordinat } from "@/lib/types";
+import type { SiteMapEntry } from "@/components/maps/mahalle-map";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
 import { InViewport } from "@/components/maps/in-viewport";
 
@@ -12,14 +13,14 @@ const MahalleMap = dynamic(
 
 interface MahalleMapLoaderProps {
   center: Koordinat;
-  boundary?: GeoJSON.Feature;
-  siteler: Site[];
+  mahalleBoundary?: GeoJSON.Feature;
+  siteler: SiteMapEntry[];
 }
 
-export function MahalleMapLoader({ center, boundary, siteler }: MahalleMapLoaderProps) {
+export function MahalleMapLoader({ center, mahalleBoundary, siteler }: MahalleMapLoaderProps) {
   return (
     <InViewport>
-      <MahalleMap center={center} boundary={boundary} siteler={siteler} />
+      <MahalleMap center={center} mahalleBoundary={mahalleBoundary} siteler={siteler} />
     </InViewport>
   );
 }

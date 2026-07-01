@@ -66,7 +66,6 @@ export function MapLabels({ labels }: { labels: MapLabelDef[] }) {
       listener.remove();
       markers.forEach(({ marker }) => marker.setMap(null));
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [map, labels]);
 
   return null;

@@ -164,7 +164,10 @@ export default async function SitePage({ params }: Props) {
         {site.koordinat && (
           <div className="flex flex-col gap-2">
             <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
-              <MahalleMapLoader center={site.koordinat} boundary={sinir} siteler={[site]} />
+              <MahalleMapLoader
+                center={site.koordinat}
+                siteler={[{ site, boundary: sinir }]}
+              />
             </div>
             {sinir && (
               <p className="text-right text-xs text-muted">
