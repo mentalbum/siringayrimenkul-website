@@ -58,7 +58,7 @@ export default function MahallelerPage() {
         </p>
       </header>
 
-      <div className="mt-8 h-[420px] overflow-hidden rounded-2xl border border-border">
+      <div className="mt-8 h-[420px] overflow-hidden rounded-2xl border border-border sm:h-[520px]">
         <RegionMapLoader items={mapItems} />
       </div>
 
