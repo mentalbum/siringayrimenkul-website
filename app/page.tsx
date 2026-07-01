@@ -97,7 +97,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-gold">
-              Eryaman · Etimesgut &amp; Yenimahalle
+              Eryaman · Etimesgut
             </p>
             <h1 className="mt-3 text-4xl leading-tight text-white sm:text-5xl">
               Eryaman&apos;da Emlağın Adresi
@@ -196,7 +196,7 @@ export default function HomePage() {
           items={[
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
-              cevap: `Eryaman bölgesinde; Etimesgut'a bağlı 11 mahalle ve Yenimahalle'ye bağlı 3 mahalle olmak üzere toplam 14 mahallede hizmet veriyoruz. Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
+              cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
             },
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",

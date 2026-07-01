@@ -65,8 +65,8 @@ export default function HakkimizdaPage() {
         <h1 className="mt-2 text-3xl sm:text-4xl">{siteConfig.name}</h1>
         <ReviewBadge className="mt-3" />
         <p className="mt-5 text-base leading-relaxed text-body">
-          {siteConfig.name}, Ankara&apos;nın Eryaman bölgesinde (Etimesgut ve Yenimahalle ilçe
-          sınırları içinde) faaliyet gösteren yerel bir gayrimenkul ofisidir. Ofisimiz Tunahan
+          {siteConfig.name}, Ankara&apos;nın Eryaman bölgesinde (Etimesgut ilçe sınırları
+          içinde) faaliyet gösteren yerel bir gayrimenkul ofisidir. Ofisimiz Tunahan
           Mahallesi&apos;nde, 4. Etap Çarşı&apos;da yer alıyor — bölgeyi uzaktan değil, içinden
           takip ediyoruz.
         </p>

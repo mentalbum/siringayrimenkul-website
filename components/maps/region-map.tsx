@@ -33,18 +33,13 @@ export function RegionMap({ items }: RegionMapProps) {
   const withBoundary = items.filter((item) => item.boundary);
   const withoutBoundary = items.filter((item) => !item.boundary);
 
-  // Frame the map on the live Eryaman core (the Etimesgut mahalleler). The
-  // three Yenimahalle "yakında" mahalleler sit well to the north and would
-  // otherwise stretch the default view out across all of Ankara.
-  const framedItems = items.filter((item) => item.mahalle.durum === "yayinda");
-  const boundsItems = framedItems.length > 0 ? framedItems : items;
-  const boundsPoints = boundsItems.flatMap((item) =>
-    item.boundary
-      ? geoJsonPolygonToPaths(item.boundary).flat()
-      : [item.mahalle.merkezKoordinat]
+  const boundaryPoints = withBoundary.flatMap((item) =>
+    geoJsonPolygonToPaths(item.boundary!).flat()
   );
-  const lats = boundsPoints.map((point) => point.lat);
-  const lngs = boundsPoints.map((point) => point.lng);
+  const fallbackPoints = withoutBoundary.map((item) => item.mahalle.merkezKoordinat);
+  const allPoints = [...boundaryPoints, ...fallbackPoints];
+  const lats = allPoints.map((point) => point.lat);
+  const lngs = allPoints.map((point) => point.lng);
 
   return (
     <APIProvider apiKey={siteConfig.googleMapsApiKey}>

@@ -84,10 +84,7 @@ export default async function RootLayout({
     telephone: siteConfig.phoneTel,
     knowsLanguage: "tr-TR",
     sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
-    areaServed: [
-      { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
-      { "@type": "Place", name: "Eryaman, Yenimahalle, Ankara" },
-    ],
+    areaServed: [{ "@type": "Place", name: "Eryaman, Etimesgut, Ankara" }],
     address: {
       "@type": "PostalAddress",
       ...siteConfig.officeAddressParts,

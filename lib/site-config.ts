@@ -9,7 +9,7 @@ export const siteConfig = {
   sahibindenUrl:
     process.env.NEXT_PUBLIC_SAHIBINDEN_URL ??
     "https://eryamansiringayrimenkul.sahibinden.com/one-cikanlar",
-  serviceArea: "Eryaman, Etimesgut ve Yenimahalle / Ankara",
+  serviceArea: "Eryaman, Etimesgut / Ankara",
   officeAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı, 06824 Etimesgut/Ankara",
   officeAddressParts: {
     streetAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı",
