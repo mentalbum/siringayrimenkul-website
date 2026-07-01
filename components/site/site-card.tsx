@@ -6,7 +6,7 @@ export function SiteCard({ site }: { site: Site }) {
   return (
     <Link
       href={`/mahalleler/${site.mahalleSlug}/${site.slug}`}
-      className="group flex cursor-pointer flex-col gap-3 rounded-2xl border border-border bg-surface p-5 transition-colors hover:border-gold"
+      className="group flex cursor-pointer flex-col gap-3 rounded-2xl border border-border bg-surface p-5 transition duration-200 hover:-translate-y-0.5 hover:border-gold hover:shadow-lg hover:shadow-navy/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2"
     >
       <div className="flex items-center gap-2">
         <BuildingIcon className="h-5 w-5 shrink-0 text-gold-dark" />

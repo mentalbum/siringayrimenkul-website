@@ -132,9 +132,14 @@ export default function HomePage() {
           <h2 className="sr-only">Neden Şirin Gayrimenkul?</h2>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {ozellikler.map((ozellik) => (
-              <div key={ozellik.baslik} className="rounded-2xl bg-surface p-5">
-                <ozellik.icon className="h-7 w-7 text-gold-dark" />
-                <h3 className="mt-3 text-base">{ozellik.baslik}</h3>
+              <div
+                key={ozellik.baslik}
+                className="rounded-2xl border border-border bg-surface p-5"
+              >
+                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15">
+                  <ozellik.icon className="h-6 w-6 text-gold-dark" />
+                </div>
+                <h3 className="mt-4 text-base">{ozellik.baslik}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-body">{ozellik.aciklama}</p>
               </div>
             ))}

@@ -14,10 +14,36 @@ export function BlogCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-gold"
+      className="group flex cursor-pointer flex-col overflow-hidden rounded-2xl border border-border bg-surface transition duration-200 hover:-translate-y-0.5 hover:border-gold hover:shadow-lg hover:shadow-navy/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2"
     >
-      <div className="flex h-32 items-center justify-center bg-navy px-5">
-        <p className="text-center text-sm font-semibold uppercase tracking-wide text-gold">
+      <div className="relative flex h-32 items-center justify-center overflow-hidden bg-navy px-5">
+        <svg
+          aria-hidden="true"
+          viewBox="0 0 320 140"
+          preserveAspectRatio="xMidYMid slice"
+          className="absolute inset-0 h-full w-full"
+        >
+          <g transform="rotate(-18 268 70)">
+            {Array.from({ length: 5 }).map((_, i) => {
+              const r = 26 + i * 26;
+              return (
+                <ellipse
+                  key={i}
+                  cx={268}
+                  cy={70}
+                  rx={r}
+                  ry={r * 0.82}
+                  fill="none"
+                  stroke="#FBCA12"
+                  strokeWidth={1}
+                  strokeOpacity={0.34 - i * 0.055}
+                />
+              );
+            })}
+          </g>
+          <circle cx={268} cy={70} r={3.5} fill="#FBCA12" />
+        </svg>
+        <p className="relative text-center text-sm font-semibold uppercase tracking-wide text-gold">
           Şirin Gayrimenkul Blog
         </p>
       </div>
