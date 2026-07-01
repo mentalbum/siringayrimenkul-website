@@ -103,8 +103,19 @@ export function getAllAdalar(mahalleSlug: string): AdaEntry[] {
   return adalar.sort((a, b) => a.no.localeCompare(b.no));
 }
 
-export function getAdaByNo(mahalleSlug: string, adaNo: string): AdaEntry | undefined {
-  return getAllAdalar(mahalleSlug).find((ada) => ada.no === adaNo);
+/** Ada + parsel together identify a real parcel — ada number alone can repeat
+ * across different parsels/sites, so this (not `.no`) is the unique route key. */
+export function adaRouteKey(ada: AdaBilgi): string {
+  return ada.parsel ? `${ada.no}-${ada.parsel}` : ada.no;
+}
+
+/** Human-readable "46494/2" style label; falls back to just the ada number. */
+export function adaDisplayLabel(ada: AdaBilgi): string {
+  return ada.parsel ? `${ada.no}/${ada.parsel}` : ada.no;
+}
+
+export function getAdaByRouteKey(mahalleSlug: string, routeKey: string): AdaEntry | undefined {
+  return getAllAdalar(mahalleSlug).find((ada) => adaRouteKey(ada) === routeKey);
 }
 
 export interface EtapEntry {

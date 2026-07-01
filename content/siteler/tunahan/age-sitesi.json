@@ -2,10 +2,16 @@
   "isim": "Age Sitesi",
   "slug": "age-sitesi",
   "mahalleSlug": "tunahan",
-  "aciklama": "Age Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46494 Ada). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "koordinat": {
+    "lat": 39.98452,
+    "lng": 32.632869
+  },
+  "sinirGeoJSON": "siteler/tunahan/age-46494-2-boundary.geojson",
+  "aciklama": "Age Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46494 Ada, 2 Parsel). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "46494",
+      "parsel": "2",
       "etap": "5"
     }
   ]

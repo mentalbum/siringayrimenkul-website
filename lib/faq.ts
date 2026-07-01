@@ -1,4 +1,5 @@
 import type { EtapEntry } from "@/lib/content";
+import { adaDisplayLabel } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
@@ -60,7 +61,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
 
   if (site.adalar && site.adalar.length > 0) {
     const adaListesi = site.adalar
-      .map((ada) => `${ada.no}${ada.blok ? ` (${ada.blok} Blok)` : ""}`)
+      .map((ada) => `${adaDisplayLabel(ada)}${ada.blok ? ` (${ada.blok} Blok)` : ""}`)
       .join(", ");
     items.push({
       soru:

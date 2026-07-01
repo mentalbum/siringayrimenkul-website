@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  adaDisplayLabel,
+  adaRouteKey,
   getAllEtaplar,
   getAllMahalleler,
   getEtapByNo,
@@ -98,12 +100,12 @@ export default async function EtapPage({ params }: Props) {
         <div className="mt-5 flex flex-wrap gap-2">
           {etap.adalar.map((ada) => (
             <Link
-              key={`${ada.no}-${ada.site.slug}`}
-              href={`/mahalleler/${mahalle.slug}/adalar/${ada.no}`}
+              key={adaRouteKey(ada)}
+              href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
               title={ada.site.isim}
               className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
             >
-              {ada.no}
+              {adaDisplayLabel(ada)}
             </Link>
           ))}
         </div>

@@ -20,6 +20,7 @@ export interface Mahalle {
 
 export interface AdaBilgi {
   no: string;
+  parsel?: string;
   etap?: string;
   blok?: string;
 }

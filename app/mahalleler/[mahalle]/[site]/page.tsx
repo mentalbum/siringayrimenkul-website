@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
+  adaDisplayLabel,
+  adaRouteKey,
   getAllMahalleler,
   getMahalleBySlug,
   getSiteBoundary,
@@ -132,11 +134,11 @@ export default async function SitePage({ params }: Props) {
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {site.adalar.map((ada) => (
                 <Link
-                  key={ada.no}
-                  href={`/mahalleler/${mahalle.slug}/adalar/${ada.no}`}
+                  key={adaRouteKey(ada)}
+                  href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
                   className="flex cursor-pointer items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
                 >
-                  {ada.no} Ada
+                  {adaDisplayLabel(ada)} Ada
                   {ada.blok ? ` (${ada.blok})` : ""}
                   <ArrowRightIcon className="h-3.5 w-3.5 shrink-0" />
                 </Link>

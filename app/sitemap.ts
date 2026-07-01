@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import {
+  adaRouteKey,
   getAllAdalar,
   getAllBlogPosts,
   getAllEtaplar,
@@ -52,7 +53,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getAllAdalar(mahalle.slug).map((ada) => ({
-      url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${ada.no}`,
+      url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`,
       lastModified: getSiteLastModified(mahalle.slug, ada.site.slug),
       changeFrequency: "monthly" as const,
       priority: 0.6,
