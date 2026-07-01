@@ -1,0 +1,39 @@
+{
+  "type": "Feature",
+  "properties": {
+    "isim": "Camlı Klima Blokları",
+    "kaynak": "TKGM Parsel Sorgu ekran görüntüsünden türetilmiş tahmini sınır (gerçek kadastro verisi değil)",
+    "adalar": [
+      "17632/1"
+    ]
+  },
+  "geometry": {
+    "type": "MultiPolygon",
+    "coordinates": [
+      [
+        [
+          [
+            32.620184,
+            39.987984
+          ],
+          [
+            32.619527,
+            39.987533
+          ],
+          [
+            32.619085,
+            39.988215
+          ],
+          [
+            32.619841,
+            39.988507
+          ],
+          [
+            32.620184,
+            39.987984
+          ]
+        ]
+      ]
+    ]
+  }
+}
