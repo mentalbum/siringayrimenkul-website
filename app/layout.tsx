@@ -10,10 +10,13 @@ import { siteConfig } from "@/lib/site-config";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
 import { ORG_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
 
+// Only weight 600 is ever used (globals.css sets all headings to 600; the map
+// label and step-number chips are 600 too) — extra weights just add preloaded
+// font files that compete with the LCP on slow connections.
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin", "latin-ext"],
-  weight: ["500", "600", "700"],
+  weight: ["600"],
 });
 
 const inter = Inter({
