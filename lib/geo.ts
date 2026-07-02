@@ -56,3 +56,12 @@ export function polygonCentroid(ring: Koordinat[]): Koordinat {
 
   return { lat: cy / (6 * area), lng: cx / (6 * area) };
 }
+
+/** East-west extent of a ring in meters — used to decide whether a text label
+ * fits inside the shape at a given zoom level. */
+export function ringWidthMeters(ring: Koordinat[]): number {
+  const lats = ring.map((p) => p.lat);
+  const lngs = ring.map((p) => p.lng);
+  const midLat = (Math.min(...lats) + Math.max(...lats)) / 2;
+  return (Math.max(...lngs) - Math.min(...lngs)) * 111320 * Math.cos((midLat * Math.PI) / 180);
+}

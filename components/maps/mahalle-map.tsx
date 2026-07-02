@@ -3,7 +3,7 @@
 import { useRouter } from "next/navigation";
 import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
-import { geoJsonPolygonToPaths, polygonCentroid } from "@/lib/geo";
+import { geoJsonPolygonToPaths, polygonCentroid, ringWidthMeters } from "@/lib/geo";
 import { brandMapStyle } from "@/lib/map-style";
 import type { Koordinat, Site } from "@/lib/types";
 import { MapLabels } from "@/components/maps/map-labels";
@@ -26,6 +26,7 @@ interface SiteShape {
   paths: Koordinat[];
   labelPosition: Koordinat;
   labelText: string;
+  labelWidthMeters: number;
   href: string;
 }
 
@@ -47,6 +48,7 @@ function siteShapes(site: Site, boundary: GeoJSON.Feature): SiteShape[] {
       paths: ring,
       labelPosition: polygonCentroid(ring),
       labelText: adaNo ? `${site.isim} ${adaNo} Ada` : site.isim,
+      labelWidthMeters: ringWidthMeters(ring),
       href: `/mahalleler/${site.mahalleSlug}/${site.slug}`,
     };
   });
@@ -108,6 +110,7 @@ export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps
             key: shape.key,
             position: shape.labelPosition,
             text: shape.labelText,
+            widthMeters: shape.labelWidthMeters,
           }))}
         />
       </Map>
