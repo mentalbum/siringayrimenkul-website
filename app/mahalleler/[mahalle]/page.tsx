@@ -18,6 +18,7 @@ import { CtaButton } from "@/components/ui/button";
 import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
+import { ResourceHints } from "@/components/seo/resource-hints";
 import { SiteCard } from "@/components/site/site-card";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
@@ -131,6 +132,7 @@ export default async function MahallePage({ params }: Props) {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <ResourceHints />
       <Breadcrumbs
         items={[
           { label: "Anasayfa", href: "/" },

@@ -5,7 +5,6 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
-import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
 import { ORG_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
@@ -123,7 +122,6 @@ export default async function RootLayout({
   return (
     <html lang="tr" className={`${poppins.variable} ${inter.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
-        <ResourceHints />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

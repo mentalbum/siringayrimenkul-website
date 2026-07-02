@@ -3,6 +3,7 @@ import { getAllMahalleler, getMahalleBoundary } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
+import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -36,6 +37,7 @@ export default function MahallelerPage() {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <ResourceHints />
       <Breadcrumbs items={[{ label: "Anasayfa", href: "/" }, { label: "Mahalleler", href: "/mahalleler" }]} />
 
       <header className="mt-4 max-w-3xl">

@@ -14,6 +14,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
+import { ResourceHints } from "@/components/seo/resource-hints";
 import { SiteCard } from "@/components/site/site-card";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
@@ -171,6 +172,7 @@ export default async function SitePage({ params }: Props) {
         </div>
         {site.koordinat && (
           <div className="flex flex-col gap-2">
+            <ResourceHints />
             <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
               <MahalleMapLoader
                 center={site.koordinat}

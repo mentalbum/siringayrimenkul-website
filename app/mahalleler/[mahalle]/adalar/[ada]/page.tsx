@@ -13,6 +13,7 @@ import {
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
+import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 
@@ -127,6 +128,7 @@ export default async function AdaPage({ params }: Props) {
         </div>
         {ada.site.koordinat && (
           <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
+            <ResourceHints />
             <MahalleMapLoader
               center={ada.site.koordinat}
               siteler={[{ site: ada.site, boundary: sinir }]}
