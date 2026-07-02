@@ -40,10 +40,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const site = getSiteBySlug(mahalleSlug, siteSlug);
   if (!mahalle || !site) return {};
 
+  // The money query is "{site adı} eryaman emlakçı" — make sure all three
+  // terms live in the title (without doubling "Eryaman" for site names that
+  // already contain it, e.g. "Bahçen Eryaman Konutları").
+  const isimdeEryamanVar = /eryaman/i.test(site.isim);
   return {
-    title: `${site.isim} Emlakçısı`,
+    title: isimdeEryamanVar ? `${site.isim} Emlakçısı` : `${site.isim} Emlakçısı — Eryaman`,
     description: truncateForMeta(
-      `${site.isim} emlakçısı: Evinizi satmak veya kiraya vermek için Şirin Gayrimenkul'dan bilgi alın. ${site.aciklama}`
+      `${site.isim}, Eryaman ${mahalle.isim}'nde. Evinizi satmak veya kiraya vermek için siteyi yakından tanıyan yerel emlakçınızdan ücretsiz değerleme alın.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
   };
@@ -94,6 +98,10 @@ export default async function SitePage({ params }: Props) {
       "@type": "Place",
       name: mahalle.isim,
       url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
+      containedInPlace: {
+        "@type": "Place",
+        name: `Eryaman, ${mahalle.ilce}, Ankara`,
+      },
     },
   };
 
@@ -110,7 +118,7 @@ export default async function SitePage({ params }: Props) {
 
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          {mahalle.isim} · {mahalle.ilce}
+          Eryaman · {mahalle.isim} · {mahalle.ilce}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{site.isim}</h1>
         {tipi && (
@@ -124,9 +132,9 @@ export default async function SitePage({ params }: Props) {
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           <p className="text-base font-medium text-navy">
-            {tipi && `${site.isim}, ${mahalle.isim} içinde yer alan ${tipi} bir yerleşimdir. `}
-            Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, {site.isim} emlakçısı
-            olarak size yardımcı oluyoruz.
+            {`${site.isim}, Eryaman'da ${mahalle.isim} sınırları içinde yer alan ${
+              tipi ? `${tipi} ` : ""
+            }bir yerleşimdir. Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`}
           </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           <p className="text-sm leading-relaxed text-muted">{mahalle.kisaAciklama}</p>

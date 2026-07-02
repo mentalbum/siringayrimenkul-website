@@ -49,13 +49,13 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   const items: FaqItem[] = [
     {
       soru: `${site.isim} hangi mahallede yer alıyor?`,
-      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim}'nde yer alıyor. ${mahalle.kisaAciklama}`,
+      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesindeki Eryaman bölgesinde, ${mahalle.isim}'nde yer alıyor. ${mahalle.kisaAciklama}`,
     },
     {
       soru: `${site.isim} emlakçısı kimdir?`,
       cevap: tipi
-        ? `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor; ${site.isim} de yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
-        : `${siteConfig.name}, ${mahalle.ilce} bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
+        ? `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor; ${site.isim} de yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
+        : `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
   ];
 
