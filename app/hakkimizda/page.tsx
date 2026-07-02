@@ -3,8 +3,15 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
-import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon } from "@/components/ui/icons";
+import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon, UserIcon } from "@/components/ui/icons";
 import { ReviewBadge } from "@/components/ui/review-badge";
+
+const ekip = [
+  { isim: "Hamza Şirin", unvan: "Kurucu" },
+  { isim: "Özgün Şirin", unvan: "Emlak Danışmanı" },
+];
+
+const YETKI_BELGESI_NO = "0603771";
 
 export const metadata: Metadata = {
   title: "Hakkımızda",
@@ -76,7 +83,30 @@ export default function HakkimizdaPage() {
           rehber içerikler; evinizi satmak ya da kiraya vermek istiyorsanız da doğrudan bize
           ulaşabilirsiniz.
         </p>
+        <p className="mt-4 text-xs text-muted">
+          Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO}
+        </p>
       </header>
+
+      <section className="mt-12">
+        <h2 className="text-xl">Ekibimiz</h2>
+        <div className="mt-5 grid gap-5 sm:grid-cols-2">
+          {ekip.map((kisi) => (
+            <div
+              key={kisi.isim}
+              className="flex items-center gap-4 rounded-2xl border border-border bg-surface p-5"
+            >
+              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/15">
+                <UserIcon className="h-6 w-6 text-gold-dark" />
+              </div>
+              <div>
+                <p className="text-base font-semibold text-navy">{kisi.isim}</p>
+                <p className="text-sm text-muted">{kisi.unvan}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {adimlar.map((adim) => (

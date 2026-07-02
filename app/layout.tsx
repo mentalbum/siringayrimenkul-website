@@ -87,6 +87,13 @@ export default async function RootLayout({
     knowsLanguage: "tr-TR",
     sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
     areaServed: [{ "@type": "Place", name: "Eryaman, Etimesgut, Ankara" }],
+    founder: { "@type": "Person", name: "Hamza Şirin" },
+    employee: { "@type": "Person", name: "Özgün Şirin", jobTitle: "Emlak Danışmanı" },
+    identifier: {
+      "@type": "PropertyValue",
+      name: "Taşınmaz Ticareti Yetki Belgesi No",
+      value: "0603771",
+    },
     address: {
       "@type": "PostalAddress",
       ...siteConfig.officeAddressParts,
