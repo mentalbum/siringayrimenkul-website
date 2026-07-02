@@ -118,8 +118,8 @@ export default function HomePage() {
             </div>
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <CtaButton href="/iletisim" variant="primary">
-                Evinizi Değerlendirin
+              <CtaButton href="/ev-degerleme" variant="primary">
+                Evinizi Ücretsiz Değerletin
               </CtaButton>
               <ReviewBadge variant="dark" />
             </div>

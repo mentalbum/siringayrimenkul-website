@@ -34,6 +34,7 @@ export const mainNav = [
   { label: "Anasayfa", href: "/" },
   { label: "Mahalleler", href: "/mahalleler" },
   { label: "Siteler", href: "/siteler" },
+  { label: "Değerleme", href: "/ev-degerleme" },
   { label: "Blog", href: "/blog" },
   { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "İletişim", href: "/iletisim" },
