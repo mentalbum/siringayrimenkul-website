@@ -9,6 +9,7 @@ import {
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { ReviewBadge } from "@/components/ui/review-badge";
+import { ReviewQuotes } from "@/components/home/review-quotes";
 import { HeroSearch } from "@/components/home/hero-search";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
@@ -166,8 +167,10 @@ export default function HomePage() {
         </div>
       </section>
 
+      <ReviewQuotes />
+
       {sonYazilar.length > 0 && (
-        <section className="bg-surface-muted py-16">
+        <section className="py-16">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
             <div className="flex flex-wrap items-end justify-between gap-4">
               <div>
