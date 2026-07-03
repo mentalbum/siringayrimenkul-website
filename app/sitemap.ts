@@ -4,6 +4,7 @@ import {
   getAllAdalar,
   getAllBlogPosts,
   getAllEtaplar,
+  getBlogPostLastModified,
   getMahalleLastModified,
   getSiteLastModified,
   getYayindaMahalleler,
@@ -61,12 +62,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.tarih,
-    changeFrequency: "monthly",
-    priority: 0.6,
-  }));
+  const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => {
+    // Edited posts should signal their real modification time so crawlers
+    // refetch them — but never a date before publication.
+    const mtime = getBlogPostLastModified(post.slug);
+    return {
+      url: `${baseUrl}/blog/${post.slug}`,
+      lastModified: mtime > new Date(post.tarih) ? mtime : post.tarih,
+      changeFrequency: "monthly" as const,
+      priority: 0.6,
+    };
+  });
 
   return [
     ...statikSayfalar,
