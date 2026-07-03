@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ege Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17546/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63866,
+      39.97043
+     ],
+     [
+      32.63864,
+      39.97051
+     ],
+     [
+      32.63809,
+      39.97083
+     ],
+     [
+      32.63775,
+      39.97048
+     ],
+     [
+      32.63741,
+      39.97014
+     ],
+     [
+      32.63804,
+      39.96979
+     ],
+     [
+      32.63835,
+      39.97011
+     ],
+     [
+      32.63866,
+      39.97043
+     ]
+    ]
+   ]
+  ]
+ }
+}

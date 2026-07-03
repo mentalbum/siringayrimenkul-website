@@ -2,15 +2,22 @@
   "isim": "Özar Sitesi",
   "slug": "ozar-sitesi",
   "mahalleSlug": "tunahan",
+  "koordinat": {
+    "lat": 39.984766,
+    "lng": 32.622764
+  },
+  "sinirGeoJSON": "siteler/tunahan/ozar-sitesi-boundary.geojson",
   "aciklama": "Özar Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46500 Ada ve 46503 Ada olmak üzere iki ayrı blok halinde). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "46500",
-      "etap": "5"
+      "etap": "5",
+      "parsel": "2"
     },
     {
       "no": "46503",
-      "etap": "5"
+      "etap": "5",
+      "parsel": "2"
     }
   ]
 }
