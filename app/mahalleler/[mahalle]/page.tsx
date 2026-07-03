@@ -170,7 +170,7 @@ export default async function MahallePage({ params }: Props) {
               {boundary && "Mahalle sınırı verisi: © OpenStreetMap katkıda bulunanları"}
               {boundary && hasSiteParcel && " · "}
               {hasSiteParcel &&
-                "Site sınırları: TKGM parsel sorgu görüntüsünden türetilmiş tahmini sınırlardır, resmi kadastro verisi değildir."}
+                "Site sınırları: TKGM parsel sorgu verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez."}
             </p>
           )}
         </div>

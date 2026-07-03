@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Elit Yaşam Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46505/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62143,
+      39.98394
+     ],
+     [
+      32.62143,
+      39.98438
+     ],
+     [
+      32.62123,
+      39.98438
+     ],
+     [
+      32.62073,
+      39.98384
+     ],
+     [
+      32.62067,
+      39.98377
+     ],
+     [
+      32.62063,
+      39.9837
+     ],
+     [
+      32.62062,
+      39.98361
+     ],
+     [
+      32.62143,
+      39.98362
+     ],
+     [
+      32.62143,
+      39.98394
+     ]
+    ]
+   ]
+  ]
+ }
+}

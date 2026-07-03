@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Okyanus Plaza",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46502/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62505,
+      39.9818
+     ],
+     [
+      32.62648,
+      39.98178
+     ],
+     [
+      32.62651,
+      39.98272
+     ],
+     [
+      32.62509,
+      39.98277
+     ],
+     [
+      32.62505,
+      39.9818
+     ]
+    ]
+   ]
+  ]
+ }
+}

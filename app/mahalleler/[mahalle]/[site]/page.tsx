@@ -182,8 +182,8 @@ export default async function SitePage({ params }: Props) {
             </div>
             {sinir && (
               <p className="text-right text-xs text-muted">
-                Sınır verisi: TKGM parsel sorgu görüntüsünden türetilmiş tahmini sınırdır, resmi
-                kadastro verisi değildir.
+                Sınır verisi: TKGM parsel sorgu verisine dayalıdır; bilgilendirme amaçlıdır,
+                resmi kadastro belgesi yerine geçmez.
               </p>
             )}
           </div>

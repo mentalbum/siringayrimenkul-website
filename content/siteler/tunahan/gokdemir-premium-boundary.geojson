@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gökdemir Premium",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46512/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6128,
+      39.98703
+     ],
+     [
+      32.61236,
+      39.9872
+     ],
+     [
+      32.61271,
+      39.98761
+     ],
+     [
+      32.61259,
+      39.98766
+     ],
+     [
+      32.61187,
+      39.98681
+     ],
+     [
+      32.61324,
+      39.98609
+     ],
+     [
+      32.61352,
+      39.98637
+     ],
+     [
+      32.61397,
+      39.98703
+     ],
+     [
+      32.61311,
+      39.98743
+     ],
+     [
+      32.6128,
+      39.98703
+     ]
+    ]
+   ]
+  ]
+ }
+}

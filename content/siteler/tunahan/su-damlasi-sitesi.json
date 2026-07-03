@@ -2,6 +2,17 @@
   "isim": "Su Damlası Sitesi",
   "slug": "su-damlasi-sitesi",
   "mahalleSlug": "tunahan",
-  "koordinat": { "lat": 39.984996, "lng": 32.613057 },
-  "aciklama": "Su Damlası Sitesi, Ankara Etimesgut'a bağlı Tunahan Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Tunahan Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984996,
+    "lng": 32.613057
+  },
+  "sinirGeoJSON": "siteler/tunahan/su-damlasi-sitesi-boundary.geojson",
+  "aciklama": "Su Damlası Sitesi, Ankara Etimesgut'a bağlı Tunahan Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Tunahan Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46512",
+      "parsel": "9",
+      "etap": "5"
+    }
+  ]
 }

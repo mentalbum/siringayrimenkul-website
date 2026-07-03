@@ -6,12 +6,14 @@
     "lat": 39.982225,
     "lng": 32.630395
   },
+  "sinirGeoJSON": "siteler/tunahan/kur-sitesi-c2b-2h-boundary.geojson",
   "aciklama": "Kur Sitesi C2B - 2H Blok, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde, Kur Sitesi'nin 46496 Ada'sında yer alan bir bloktur. Bu blok hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "46496",
       "etap": "5",
-      "blok": "C2B-2H"
+      "blok": "C2B-2H",
+      "parsel": "2"
     }
   ]
 }

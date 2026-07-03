@@ -2,27 +2,37 @@
   "isim": "STFA Blokları",
   "slug": "stfa-bloklari",
   "mahalleSlug": "tunahan",
+  "koordinat": {
+    "lat": 39.988396,
+    "lng": 32.632491
+  },
+  "sinirGeoJSON": "siteler/tunahan/stfa-bloklari-boundary.geojson",
   "aciklama": "STFA Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 5 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "17666",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17672",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17673",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17674",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17675",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     }
   ]
 }

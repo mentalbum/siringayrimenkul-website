@@ -2,31 +2,42 @@
   "isim": "Haznedaroğlu Blokları",
   "slug": "haznedaroglu-bloklari",
   "mahalleSlug": "tunahan",
+  "koordinat": {
+    "lat": 39.98708,
+    "lng": 32.621864
+  },
+  "sinirGeoJSON": "siteler/tunahan/haznedaroglu-bloklari-boundary.geojson",
   "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 6 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "17633",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17634",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17635",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17636",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17637",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     },
     {
       "no": "17639",
-      "etap": "4"
+      "etap": "4",
+      "parsel": "1"
     }
   ]
 }

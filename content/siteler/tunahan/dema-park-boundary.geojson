@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Dema Park",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46498/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62991,
+      39.98351
+     ],
+     [
+      32.62995,
+      39.98418
+     ],
+     [
+      32.62899,
+      39.98423
+     ],
+     [
+      32.62896,
+      39.98355
+     ],
+     [
+      32.62991,
+      39.98351
+     ]
+    ]
+   ]
+  ]
+ }
+}

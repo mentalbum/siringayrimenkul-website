@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sutek Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46506/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61898,
+      39.98336
+     ],
+     [
+      32.61892,
+      39.98199
+     ],
+     [
+      32.61897,
+      39.98195
+     ],
+     [
+      32.62042,
+      39.98192
+     ],
+     [
+      32.62047,
+      39.98195
+     ],
+     [
+      32.62053,
+      39.98342
+     ],
+     [
+      32.62048,
+      39.98346
+     ],
+     [
+      32.61904,
+      39.98341
+     ],
+     [
+      32.61901,
+      39.98339
+     ],
+     [
+      32.61898,
+      39.98336
+     ]
+    ]
+   ]
+  ]
+ }
+}
