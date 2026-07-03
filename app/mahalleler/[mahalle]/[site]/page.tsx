@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: isimdeEryamanVar ? `${site.isim} Emlakçısı` : `${site.isim} Emlakçısı — Eryaman`,
     description: truncateForMeta(
-      `${site.isim}, Eryaman ${mahalle.isim}'nde. Evinizi satmak veya kiraya vermek için siteyi yakından tanıyan yerel emlakçınızdan ücretsiz değerleme alın.`
+      `${site.isim}, Eryaman ${mahalle.isim}'nde. Bu sitede satılık ve kiralık daireler ile ücretsiz ev değerleme için siteyi yakından tanıyan yerel emlakçınıza ulaşın.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
   };
@@ -189,6 +189,25 @@ export default async function SitePage({ params }: Props) {
           </div>
         )}
       </div>
+
+      <section className="mt-12">
+        <h2 className="text-xl">{`${site.isim} Satılık ve Kiralık Daireler`}</h2>
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
+          {`Bu sitede eviniz mi var? Satılık ya da kiralık vermeden önce `}
+          <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
+            ücretsiz değerleme
+          </Link>
+          {` alın. ${site.isim}'nde satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+        </p>
+        <CtaButton
+          href={siteConfig.sahibindenUrl}
+          external
+          variant="outline"
+          className="mt-4"
+        >
+          sahibinden.com&apos;daki İlanlarımız
+        </CtaButton>
+      </section>
 
       <CtaBanner
         className="mt-12"

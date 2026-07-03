@@ -57,6 +57,10 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
         ? `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor; ${site.isim} de yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
         : `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
+    {
+      soru: `${site.isim}'nde satılık veya kiralık daire var mı?`,
+      cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın; ${site.isim}'nde portföyümüze eklenen daireleri size ilk biz haber verelim.`,
+    },
   ];
 
   if (site.adalar && site.adalar.length > 0) {
