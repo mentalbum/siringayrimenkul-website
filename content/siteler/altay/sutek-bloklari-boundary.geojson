@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sutek Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17541/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64252,
+      39.97023
+     ],
+     [
+      32.64179,
+      39.9706
+     ],
+     [
+      32.64166,
+      39.9706
+     ],
+     [
+      32.64126,
+      39.97016
+     ],
+     [
+      32.64207,
+      39.96972
+     ],
+     [
+      32.64252,
+      39.97023
+     ]
+    ]
+   ]
+  ]
+ }
+}

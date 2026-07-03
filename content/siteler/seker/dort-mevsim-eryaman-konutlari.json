@@ -2,5 +2,16 @@
   "isim": "Dört Mevsim Eryaman Konutları",
   "slug": "dort-mevsim-eryaman-konutlari",
   "mahalleSlug": "seker",
-  "aciklama": "Dört Mevsim Eryaman Konutları, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.966073,
+    "lng": 32.658608
+  },
+  "sinirGeoJSON": "siteler/seker/dort-mevsim-eryaman-konutlari-boundary.geojson",
+  "aciklama": "Dört Mevsim Eryaman Konutları, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48305",
+      "parsel": "6"
+    }
+  ]
 }

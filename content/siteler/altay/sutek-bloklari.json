@@ -2,5 +2,16 @@
   "isim": "Sutek Blokları",
   "slug": "sutek-bloklari",
   "mahalleSlug": "altay",
-  "aciklama": "Sutek Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.970185,
+    "lng": 32.641891
+  },
+  "sinirGeoJSON": "siteler/altay/sutek-bloklari-boundary.geojson",
+  "aciklama": "Sutek Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17541",
+      "parsel": "1"
+    }
+  ]
 }
