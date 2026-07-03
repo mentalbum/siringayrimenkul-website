@@ -26,7 +26,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} | Eryaman Emlakçısı`,
+    // Keyword-first for the homepage: the head query is "eryaman emlakçı".
+    default: `Eryaman Emlakçısı | ${siteConfig.name}`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

@@ -5,9 +5,9 @@ import { SitelerBrowser } from "@/components/site/siteler-browser";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Tüm Siteler ve Rezidanslar",
+  title: "Eryaman Siteleri ve Rezidansları — Tam Liste",
   description:
-    "Eryaman bölgesindeki tüm site ve rezidansları mahallesine göre listeleyen rehber. Aradığınız siteyi bulun, detaylarını inceleyin.",
+    "Eryaman'daki tüm site ve rezidansları mahallesine göre listeleyen rehber. Aradığınız siteyi bulun; satmak veya kiraya vermek için yerel emlakçınıza ulaşın.",
   alternates: { canonical: "/siteler" },
 };
 
@@ -44,7 +44,7 @@ export default function SitelerPage() {
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Eryaman Bölgesi
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">Tüm Siteler ve Rezidanslar</h1>
+        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;daki Tüm Siteler ve Rezidanslar</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman bölgesinde tanıdığımız {toplamSite} site/rezidans, mahallesine göre aşağıda
           listelendi. Aradığınız siteyi bulup detaylarını inceleyebilirsiniz.

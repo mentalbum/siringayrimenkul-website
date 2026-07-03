@@ -37,8 +37,8 @@ export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
   });
 
   items.push({
-    soru: `${mahalle.isim}'nde ev almak veya kiralamak için kiminle iletişime geçebilirim?`,
-    cevap: `${siteConfig.name} olarak ${mahalle.isim}'ndeki site ve rezidansları yakından tanıyoruz. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
+    soru: `${mahalle.isim}'nde emlakçı arıyorum — kiminle iletişime geçebilirim?`,
+    cevap: `${mahalle.isim} emlakçısı olarak ${siteConfig.name}, mahalledeki site ve rezidansları yakından tanıyor. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
   });
 
   return items;

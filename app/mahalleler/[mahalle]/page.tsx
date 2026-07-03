@@ -38,8 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!mahalle) return {};
 
   return {
-    title: `${mahalle.isim} Emlak Rehberi`,
-    description: mahalle.kisaAciklama,
+    title: `${mahalle.isim} Emlakçısı — Eryaman Emlak Rehberi`,
+    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: mahalledeki siteleri ve satılık/kiralık piyasayı yakından tanıyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },

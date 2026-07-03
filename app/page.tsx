@@ -99,14 +99,15 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
           <div className="max-w-2xl">
             <p className="text-sm font-semibold uppercase tracking-wide text-gold">
-              Eryaman · Etimesgut
+              Şirin Gayrimenkul · Etimesgut
             </p>
             <h1 className="mt-3 text-4xl leading-tight text-white sm:text-5xl">
-              Eryaman&apos;da Emlağın Adresi
+              Eryaman&apos;ın Emlakçısı
             </h1>
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
-              Eryaman&apos;ı mahalle mahalle, site site biliyoruz. Sitenizi arayın; satmak veya
-              kiraya vermek istediğiniz evinizi ücretsiz değerlendirelim.
+              Eryaman&apos;da emlağın adresi: satılık ve kiralık için {mahalleSayisi} mahalleyi,
+              site site biliyoruz. Sitenizi arayın; satmak veya kiraya vermek istediğiniz evinizi
+              ücretsiz değerlendirelim.
             </p>
 
             <div className="mt-8 max-w-xl">
@@ -126,6 +127,45 @@ export default function HomePage() {
               <ReviewBadge variant="dark" />
             </div>
           </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+        <div className="max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl">Eryaman&apos;da Yerel Emlak Ofisiniz</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da satılık ve
+            kiralık konut danışmanlığı yapıyor,{" "}
+            <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
+              ücretsiz ev değerleme
+            </Link>{" "}
+            hizmeti sunuyoruz; talep eden müşterilerimiz için 3D sanal tur da çekiyoruz. Güncel
+            ilanlarımız{" "}
+            <a
+              href={siteConfig.sahibindenUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              sahibinden.com mağazamızda
+            </a>
+            . (Taşınmaz Ticareti Yetki Belgesi No: 0603771)
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Hizmet bölgemiz Eryaman&apos;ın tamamı:{" "}
+            {mahalleler.map((mahalle, index) => (
+              <span key={mahalle.slug}>
+                <Link
+                  href={`/mahalleler/${mahalle.slug}`}
+                  className="font-medium text-navy hover:text-gold-dark hover:underline"
+                >
+                  {mahalle.isim.replace(/\s*Mahallesi$/, "")}
+                </Link>
+                {index < mahalleler.length - 2 ? ", " : index === mahalleler.length - 2 ? " ve " : ""}
+              </span>
+            ))}{" "}
+            mahallelerindeki 580&apos;den fazla site ve rezidansı tek tek tanıyoruz.
+          </p>
         </div>
       </section>
 
@@ -198,6 +238,11 @@ export default function HomePage() {
           title="Sık Sorulan Sorular"
           className="mt-0"
           items={[
+            {
+              soru: "Eryaman'da hangi emlak hizmetlerini veriyorsunuz?",
+              cevap:
+                "Satılık ve kiralık konut danışmanlığı, ücretsiz ev değerleme ve talep eden müşterilerimiz için 3D sanal tur çekimi sunuyoruz. Güncel ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır; süreç boyunca doğrudan bizimle çalışırsınız.",
+            },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
               cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
