@@ -4,7 +4,13 @@ import { mainNav, siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
-import { MapPinIcon, PhoneIcon, TiktokIcon } from "@/components/ui/icons";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  MapPinIcon,
+  PhoneIcon,
+  TiktokIcon,
+} from "@/components/ui/icons";
 
 export function Footer() {
   const mahalleler = getAllMahalleler();
@@ -86,6 +92,24 @@ export function Footer() {
               className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
             >
               <TiktokIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={siteConfig.instagramUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram'da takip edin"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
+            >
+              <InstagramIcon className="h-4 w-4" />
+            </a>
+            <a
+              href={siteConfig.facebookUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook'ta takip edin"
+              className="flex h-9 w-9 cursor-pointer items-center justify-center rounded-full border border-white/20 text-white/80 transition-colors hover:border-gold hover:text-gold"
+            >
+              <FacebookIcon className="h-4 w-4" />
             </a>
           </div>
         </div>

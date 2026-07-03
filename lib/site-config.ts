@@ -28,6 +28,8 @@ export const siteConfig = {
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "",
   yandexMapsUrl: "https://yandex.com.tr/maps/org/eryaman_sirin_gayrimenkul/40827902036/",
   tiktokUrl: "https://www.tiktok.com/@siringayrimenkul",
+  instagramUrl: "https://www.instagram.com/eryamansiringayrimenkul/",
+  facebookUrl: "https://www.facebook.com/profile.php?id=61585267540417",
 } as const;
 
 export const mainNav = [

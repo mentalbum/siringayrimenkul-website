@@ -86,7 +86,12 @@ export default async function RootLayout({
     url: siteConfig.url,
     telephone: siteConfig.phoneTel,
     knowsLanguage: "tr-TR",
-    sameAs: [siteConfig.yandexMapsUrl, siteConfig.tiktokUrl],
+    sameAs: [
+      siteConfig.yandexMapsUrl,
+      siteConfig.tiktokUrl,
+      siteConfig.instagramUrl,
+      siteConfig.facebookUrl,
+    ],
     areaServed: [{ "@type": "Place", name: "Eryaman, Etimesgut, Ankara" }],
     founder: { "@type": "Person", name: "Hamza Şirin" },
     employee: { "@type": "Person", name: "Özgün Şirin", jobTitle: "Emlak Danışmanı" },
