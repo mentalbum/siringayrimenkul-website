@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Aşiyan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18688/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60888,
+      39.97901
+     ],
+     [
+      32.60799,
+      39.97897
+     ],
+     [
+      32.60799,
+      39.97752
+     ],
+     [
+      32.60862,
+      39.97752
+     ],
+     [
+      32.60903,
+      39.97797
+     ],
+     [
+      32.60888,
+      39.97901
+     ]
+    ]
+   ]
+  ]
+ }
+}

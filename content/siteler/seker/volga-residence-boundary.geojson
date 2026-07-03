@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Volga Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46368/10"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65408,
+      39.96531
+     ],
+     [
+      32.6528,
+      39.96546
+     ],
+     [
+      32.6527,
+      39.96505
+     ],
+     [
+      32.65399,
+      39.96491
+     ],
+     [
+      32.65408,
+      39.96531
+     ]
+    ]
+   ]
+  ]
+ }
+}

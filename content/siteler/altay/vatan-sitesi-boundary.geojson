@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vatan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45895/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64765,
+      39.96765
+     ],
+     [
+      32.6469,
+      39.96771
+     ],
+     [
+      32.64686,
+      39.96743
+     ],
+     [
+      32.64683,
+      39.96729
+     ],
+     [
+      32.64682,
+      39.96723
+     ],
+     [
+      32.64756,
+      39.96717
+     ],
+     [
+      32.64765,
+      39.96765
+     ]
+    ]
+   ]
+  ]
+ }
+}

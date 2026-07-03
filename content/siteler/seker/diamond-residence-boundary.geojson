@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Diamond Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46368/9"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65399,
+      39.96491
+     ],
+     [
+      32.6527,
+      39.96505
+     ],
+     [
+      32.6526,
+      39.96464
+     ],
+     [
+      32.65322,
+      39.96457
+     ],
+     [
+      32.6539,
+      39.9645
+     ],
+     [
+      32.65399,
+      39.96491
+     ]
+    ]
+   ]
+  ]
+ }
+}

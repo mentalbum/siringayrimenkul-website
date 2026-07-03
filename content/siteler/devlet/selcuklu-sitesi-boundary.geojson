@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Selçuklu Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18690/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60659,
+      39.9789
+     ],
+     [
+      32.60564,
+      39.97886
+     ],
+     [
+      32.60565,
+      39.97806
+     ],
+     [
+      32.60586,
+      39.97796
+     ],
+     [
+      32.6066,
+      39.97797
+     ],
+     [
+      32.60659,
+      39.9789
+     ]
+    ]
+   ]
+  ]
+ }
+}

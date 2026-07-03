@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Oray Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18701/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60361,
+      39.97504
+     ],
+     [
+      32.60254,
+      39.97527
+     ],
+     [
+      32.60247,
+      39.97501
+     ],
+     [
+      32.60236,
+      39.97435
+     ],
+     [
+      32.60319,
+      39.97413
+     ],
+     [
+      32.60335,
+      39.97419
+     ],
+     [
+      32.60361,
+      39.97504
+     ]
+    ]
+   ]
+  ]
+ }
+}

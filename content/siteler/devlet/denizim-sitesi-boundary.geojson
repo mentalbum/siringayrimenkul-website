@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Denizim Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18707/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60547,
+      39.97336
+     ],
+     [
+      32.60452,
+      39.97362
+     ],
+     [
+      32.60453,
+      39.97224
+     ],
+     [
+      32.60549,
+      39.97189
+     ],
+     [
+      32.60547,
+      39.97336
+     ]
+    ]
+   ]
+  ]
+ }
+}

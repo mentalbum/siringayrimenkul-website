@@ -2,5 +2,16 @@
   "isim": "Meydan Ada Sitesi",
   "slug": "meydan-ada-sitesi",
   "mahalleSlug": "seker",
-  "aciklama": "Meydan Ada Sitesi, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.965256,
+    "lng": 32.654729
+  },
+  "sinirGeoJSON": "siteler/seker/meydan-ada-sitesi-boundary.geojson",
+  "aciklama": "Meydan Ada Sitesi, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46368",
+      "parsel": "11"
+    }
+  ]
 }

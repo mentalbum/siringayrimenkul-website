@@ -2,11 +2,17 @@
   "isim": "Sarıgül Sitesi",
   "slug": "sarigul-sitesi",
   "mahalleSlug": "tunahan",
+  "koordinat": {
+    "lat": 39.98292,
+    "lng": 32.62786
+  },
+  "sinirGeoJSON": "siteler/tunahan/sarigul-sitesi-boundary.geojson",
   "aciklama": "Sarıgül Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46497 Ada). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
   "adalar": [
     {
       "no": "46497",
-      "etap": "5"
+      "etap": "5",
+      "parsel": "2"
     }
   ]
 }

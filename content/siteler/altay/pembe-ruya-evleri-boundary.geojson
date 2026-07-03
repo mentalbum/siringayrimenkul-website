@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Pembe Rüya Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45889/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64845,
+      39.97149
+     ],
+     [
+      32.64875,
+      39.97102
+     ],
+     [
+      32.64929,
+      39.9712
+     ],
+     [
+      32.64898,
+      39.97169
+     ],
+     [
+      32.64845,
+      39.97149
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Zirve Loft",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46363/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65847,
+      39.96823
+     ],
+     [
+      32.65843,
+      39.96713
+     ],
+     [
+      32.65849,
+      39.96709
+     ],
+     [
+      32.65916,
+      39.96705
+     ],
+     [
+      32.65906,
+      39.96811
+     ],
+     [
+      32.65847,
+      39.96823
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kutlutaş Villaları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17499/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64483,
+      39.97653
+     ],
+     [
+      32.64434,
+      39.97665
+     ],
+     [
+      32.64384,
+      39.97678
+     ],
+     [
+      32.6437,
+      39.97674
+     ],
+     [
+      32.64359,
+      39.97617
+     ],
+     [
+      32.64364,
+      39.97604
+     ],
+     [
+      32.6445,
+      39.97588
+     ],
+     [
+      32.64459,
+      39.97592
+     ],
+     [
+      32.64483,
+      39.97653
+     ]
+    ]
+   ]
+  ]
+ }
+}

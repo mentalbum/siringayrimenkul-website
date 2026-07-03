@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çınar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18678/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60916,
+      39.98149
+     ],
+     [
+      32.60823,
+      39.98153
+     ],
+     [
+      32.60823,
+      39.9807
+     ],
+     [
+      32.60887,
+      39.98068
+     ],
+     [
+      32.60916,
+      39.9809
+     ],
+     [
+      32.60916,
+      39.98149
+     ]
+    ]
+   ]
+  ]
+ }
+}

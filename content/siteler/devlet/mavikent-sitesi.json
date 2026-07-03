@@ -2,5 +2,16 @@
   "isim": "Mavikent Sitesi",
   "slug": "mavikent-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Mavikent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.978386,
+    "lng": 32.604614
+  },
+  "sinirGeoJSON": "siteler/devlet/mavikent-sitesi-boundary.geojson",
+  "aciklama": "Mavikent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18691",
+      "parsel": "1"
+    }
+  ]
 }

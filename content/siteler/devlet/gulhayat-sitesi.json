@@ -2,5 +2,16 @@
   "isim": "Gülhayat Sitesi",
   "slug": "gulhayat-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Gülhayat Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.974055,
+    "lng": 32.606405
+  },
+  "sinirGeoJSON": "siteler/devlet/gulhayat-sitesi-boundary.geojson",
+  "aciklama": "Gülhayat Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18698",
+      "parsel": "1"
+    }
+  ]
 }

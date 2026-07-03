@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Meydan Ada Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46368/11"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65418,
+      39.96574
+     ],
+     [
+      32.65408,
+      39.96532
+     ],
+     [
+      32.65408,
+      39.96531
+     ],
+     [
+      32.65399,
+      39.96491
+     ],
+     [
+      32.65528,
+      39.96477
+     ],
+     [
+      32.65537,
+      39.96517
+     ],
+     [
+      32.65546,
+      39.96561
+     ],
+     [
+      32.65418,
+      39.96574
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sarı Çınar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18692/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60392,
+      39.97912
+     ],
+     [
+      32.60379,
+      39.97967
+     ],
+     [
+      32.60273,
+      39.97966
+     ],
+     [
+      32.60307,
+      39.97824
+     ],
+     [
+      32.60314,
+      39.9782
+     ],
+     [
+      32.60393,
+      39.97821
+     ],
+     [
+      32.60392,
+      39.97912
+     ]
+    ]
+   ]
+  ]
+ }
+}

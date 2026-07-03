@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eryaman Park Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45891/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64958,
+      39.96965
+     ],
+     [
+      32.64911,
+      39.96971
+     ],
+     [
+      32.64906,
+      39.96941
+     ],
+     [
+      32.64898,
+      39.96902
+     ],
+     [
+      32.64932,
+      39.96898
+     ],
+     [
+      32.64941,
+      39.96903
+     ],
+     [
+      32.64958,
+      39.96965
+     ]
+    ]
+   ]
+  ]
+ }
+}

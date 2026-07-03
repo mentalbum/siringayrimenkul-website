@@ -2,5 +2,16 @@
   "isim": "Eryaman Park Evleri",
   "slug": "eryaman-park-evleri",
   "mahalleSlug": "altay",
-  "aciklama": "Eryaman Park Evleri, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.969339,
+    "lng": 32.649261
+  },
+  "sinirGeoJSON": "siteler/altay/eryaman-park-evleri-boundary.geojson",
+  "aciklama": "Eryaman Park Evleri, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45891",
+      "parsel": "6"
+    }
+  ]
 }

@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Meydan Cadde",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46361/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65591,
+      39.96764
+     ],
+     [
+      32.65464,
+      39.96769
+     ],
+     [
+      32.65459,
+      39.96748
+     ],
+     [
+      32.65449,
+      39.96708
+     ],
+     [
+      32.65571,
+      39.96725
+     ],
+     [
+      32.65575,
+      39.96726
+     ],
+     [
+      32.65579,
+      39.96728
+     ],
+     [
+      32.65582,
+      39.96731
+     ],
+     [
+      32.65584,
+      39.96734
+     ],
+     [
+      32.65591,
+      39.96764
+     ]
+    ]
+   ]
+  ]
+ }
+}

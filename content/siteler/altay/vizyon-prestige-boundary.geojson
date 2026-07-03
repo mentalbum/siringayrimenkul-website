@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vizyon Prestige",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45898/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64656,
+      39.96534
+     ],
+     [
+      32.64652,
+      39.96617
+     ],
+     [
+      32.6458,
+      39.96615
+     ],
+     [
+      32.64577,
+      39.96539
+     ],
+     [
+      32.64656,
+      39.96534
+     ]
+    ]
+   ]
+  ]
+ }
+}

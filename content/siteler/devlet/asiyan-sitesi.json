@@ -2,5 +2,16 @@
   "isim": "Aşiyan Sitesi",
   "slug": "asiyan-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Aşiyan Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.978272,
+    "lng": 32.60846
+  },
+  "sinirGeoJSON": "siteler/devlet/asiyan-sitesi-boundary.geojson",
+  "aciklama": "Aşiyan Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18688",
+      "parsel": "1"
+    }
+  ]
 }

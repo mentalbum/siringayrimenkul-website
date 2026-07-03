@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ilgazlar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46493/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6267,
+      39.98447
+     ],
+     [
+      32.62673,
+      39.98445
+     ],
+     [
+      32.62878,
+      39.98464
+     ],
+     [
+      32.62903,
+      39.98559
+     ],
+     [
+      32.62755,
+      39.98581
+     ],
+     [
+      32.6269,
+      39.98574
+     ],
+     [
+      32.62692,
+      39.9856
+     ],
+     [
+      32.62669,
+      39.98558
+     ],
+     [
+      32.62658,
+      39.98518
+     ],
+     [
+      32.62657,
+      39.98513
+     ],
+     [
+      32.62657,
+      39.98509
+     ],
+     [
+      32.6267,
+      39.98447
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eryaman Royal City",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18693/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60388,
+      39.97688
+     ],
+     [
+      32.60297,
+      39.97687
+     ],
+     [
+      32.60262,
+      39.97556
+     ],
+     [
+      32.6037,
+      39.97536
+     ],
+     [
+      32.60388,
+      39.97595
+     ],
+     [
+      32.60388,
+      39.97688
+     ]
+    ]
+   ]
+  ]
+ }
+}

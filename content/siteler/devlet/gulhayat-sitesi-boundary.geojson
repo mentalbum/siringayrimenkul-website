@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gülhayat Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18698/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60689,
+      39.97487
+     ],
+     [
+      32.60585,
+      39.97486
+     ],
+     [
+      32.60586,
+      39.9734
+     ],
+     [
+      32.60669,
+      39.97317
+     ],
+     [
+      32.60676,
+      39.97316
+     ],
+     [
+      32.60682,
+      39.97317
+     ],
+     [
+      32.60688,
+      39.9732
+     ],
+     [
+      32.60692,
+      39.97324
+     ],
+     [
+      32.60696,
+      39.97329
+     ],
+     [
+      32.60689,
+      39.97487
+     ]
+    ]
+   ]
+  ]
+ }
+}

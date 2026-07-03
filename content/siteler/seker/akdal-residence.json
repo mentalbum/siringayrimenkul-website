@@ -2,5 +2,16 @@
   "isim": "Akdal Residence",
   "slug": "akdal-residence",
   "mahalleSlug": "seker",
-  "aciklama": "Akdal Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.968157,
+    "lng": 32.654121
+  },
+  "sinirGeoJSON": "siteler/seker/akdal-residence-boundary.geojson",
+  "aciklama": "Akdal Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46361",
+      "parsel": "7"
+    }
+  ]
 }

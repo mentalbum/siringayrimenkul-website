@@ -2,5 +2,16 @@
   "isim": "Mil - Kooperatifi Sitesi",
   "slug": "mil-kooperatifi-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Mil - Kooperatifi Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.980006,
+    "lng": 32.60976
+  },
+  "sinirGeoJSON": "siteler/devlet/mil-kooperatifi-sitesi-boundary.geojson",
+  "aciklama": "Mil - Kooperatifi Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18687",
+      "parsel": "1"
+    }
+  ]
 }

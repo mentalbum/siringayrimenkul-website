@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bilgi Sevgi Hoşgörü Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18709/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60808,
+      39.97296
+     ],
+     [
+      32.6071,
+      39.97294
+     ],
+     [
+      32.60711,
+      39.9715
+     ],
+     [
+      32.60814,
+      39.9715
+     ],
+     [
+      32.60808,
+      39.97296
+     ]
+    ]
+   ]
+  ]
+ }
+}

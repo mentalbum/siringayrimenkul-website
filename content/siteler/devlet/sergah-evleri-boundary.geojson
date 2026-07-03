@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sergah Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18675/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60566,
+      39.98161
+     ],
+     [
+      32.60479,
+      39.98164
+     ],
+     [
+      32.60479,
+      39.98079
+     ],
+     [
+      32.60566,
+      39.98076
+     ],
+     [
+      32.60566,
+      39.98161
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Address Enda",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46362/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6572,
+      39.96773
+     ],
+     [
+      32.65827,
+      39.96762
+     ],
+     [
+      32.65829,
+      39.96802
+     ],
+     [
+      32.65821,
+      39.96815
+     ],
+     [
+      32.65729,
+      39.96834
+     ],
+     [
+      32.6572,
+      39.96773
+     ]
+    ]
+   ]
+  ]
+ }
+}

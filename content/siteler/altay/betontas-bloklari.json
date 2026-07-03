@@ -2,5 +2,16 @@
   "isim": "Betontaş Blokları",
   "slug": "betontas-bloklari",
   "mahalleSlug": "altay",
-  "aciklama": "Betontaş Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.968179,
+    "lng": 32.644221
+  },
+  "sinirGeoJSON": "siteler/altay/betontas-bloklari-boundary.geojson",
+  "aciklama": "Betontaş Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17317",
+      "parsel": "8"
+    }
+  ]
 }

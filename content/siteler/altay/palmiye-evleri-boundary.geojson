@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Palmiye Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45889/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64845,
+      39.97149
+     ],
+     [
+      32.64795,
+      39.97129
+     ],
+     [
+      32.64823,
+      39.97084
+     ],
+     [
+      32.64875,
+      39.97102
+     ],
+     [
+      32.64845,
+      39.97149
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Cabadağ Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45892/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64807,
+      39.96981
+     ],
+     [
+      32.64728,
+      39.9699
+     ],
+     [
+      32.64717,
+      39.96927
+     ],
+     [
+      32.64721,
+      39.96924
+     ],
+     [
+      32.64797,
+      39.96915
+     ],
+     [
+      32.64807,
+      39.96981
+     ]
+    ]
+   ]
+  ]
+ }
+}

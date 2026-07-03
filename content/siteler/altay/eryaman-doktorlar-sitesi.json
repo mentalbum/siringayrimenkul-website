@@ -2,5 +2,16 @@
   "isim": "Eryaman Doktorlar Sitesi",
   "slug": "eryaman-doktorlar-sitesi",
   "mahalleSlug": "altay",
-  "aciklama": "Eryaman Doktorlar Sitesi, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.970463,
+    "lng": 32.647822
+  },
+  "sinirGeoJSON": "siteler/altay/eryaman-doktorlar-sitesi-boundary.geojson",
+  "aciklama": "Eryaman Doktorlar Sitesi, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45890",
+      "parsel": "1"
+    }
+  ]
 }

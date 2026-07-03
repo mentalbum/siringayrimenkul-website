@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Erland Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45899/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64206,
+      39.96698
+     ],
+     [
+      32.64126,
+      39.96742
+     ],
+     [
+      32.64106,
+      39.96674
+     ],
+     [
+      32.64088,
+      39.96612
+     ],
+     [
+      32.64176,
+      39.96596
+     ],
+     [
+      32.64206,
+      39.96698
+     ]
+    ]
+   ]
+  ]
+ }
+}

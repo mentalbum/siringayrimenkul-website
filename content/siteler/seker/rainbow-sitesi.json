@@ -2,5 +2,16 @@
   "isim": "Rainbow Sitesi",
   "slug": "rainbow-sitesi",
   "mahalleSlug": "seker",
-  "aciklama": "Rainbow Sitesi, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.968453,
+    "lng": 32.655403
+  },
+  "sinirGeoJSON": "siteler/seker/rainbow-sitesi-boundary.geojson",
+  "aciklama": "Rainbow Sitesi, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46361",
+      "parsel": "2"
+    }
+  ]
 }

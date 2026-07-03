@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Motto Butik",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45899/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64176,
+      39.96596
+     ],
+     [
+      32.64088,
+      39.96612
+     ],
+     [
+      32.64066,
+      39.96535
+     ],
+     [
+      32.64154,
+      39.96518
+     ],
+     [
+      32.64176,
+      39.96596
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Çamdalı Sitesi",
   "slug": "camdali-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Çamdalı Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.972419,
+    "lng": 32.606165
+  },
+  "sinirGeoJSON": "siteler/devlet/camdali-sitesi-boundary.geojson",
+  "aciklama": "Çamdalı Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18708",
+      "parsel": "1"
+    }
+  ]
 }

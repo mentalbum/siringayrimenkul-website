@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mavikent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18691/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60506,
+      39.97883
+     ],
+     [
+      32.60441,
+      39.9788
+     ],
+     [
+      32.60434,
+      39.9788
+     ],
+     [
+      32.60428,
+      39.9788
+     ],
+     [
+      32.60422,
+      39.97881
+     ],
+     [
+      32.60417,
+      39.97882
+     ],
+     [
+      32.60417,
+      39.97794
+     ],
+     [
+      32.60506,
+      39.97798
+     ],
+     [
+      32.60506,
+      39.97883
+     ]
+    ]
+   ]
+  ]
+ }
+}

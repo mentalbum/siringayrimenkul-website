@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kutlutaş Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17500/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64605,
+      39.97622
+     ],
+     [
+      32.64555,
+      39.97635
+     ],
+     [
+      32.64505,
+      39.97647
+     ],
+     [
+      32.64481,
+      39.97586
+     ],
+     [
+      32.64487,
+      39.97581
+     ],
+     [
+      32.64574,
+      39.97559
+     ],
+     [
+      32.64605,
+      39.97622
+     ]
+    ]
+   ]
+  ]
+ }
+}

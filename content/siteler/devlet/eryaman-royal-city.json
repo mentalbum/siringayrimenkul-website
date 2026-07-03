@@ -2,5 +2,16 @@
   "isim": "Eryaman Royal City",
   "slug": "eryaman-royal-city",
   "mahalleSlug": "devlet",
-  "aciklama": "Eryaman Royal City, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.976136,
+    "lng": 32.603326
+  },
+  "sinirGeoJSON": "siteler/devlet/eryaman-royal-city-boundary.geojson",
+  "aciklama": "Eryaman Royal City, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18693",
+      "parsel": "1"
+    }
+  ]
 }

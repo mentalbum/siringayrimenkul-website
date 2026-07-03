@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akdal Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46361/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65476,
+      39.9682
+     ],
+     [
+      32.65479,
+      39.96832
+     ],
+     [
+      32.65355,
+      39.96842
+     ],
+     [
+      32.6535,
+      39.96816
+     ],
+     [
+      32.65345,
+      39.968
+     ],
+     [
+      32.65469,
+      39.9679
+     ],
+     [
+      32.65476,
+      39.9682
+     ]
+    ]
+   ]
+  ]
+ }
+}

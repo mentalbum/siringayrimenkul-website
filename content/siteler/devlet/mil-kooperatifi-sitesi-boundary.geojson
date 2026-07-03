@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mil - Kooperatifi Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18687/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61028,
+      39.98095
+     ],
+     [
+      32.61015,
+      39.98106
+     ],
+     [
+      32.60979,
+      39.98105
+     ],
+     [
+      32.60915,
+      39.98058
+     ],
+     [
+      32.60914,
+      39.98054
+     ],
+     [
+      32.60926,
+      39.97934
+     ],
+     [
+      32.60925,
+      39.97929
+     ],
+     [
+      32.60923,
+      39.97925
+     ],
+     [
+      32.60921,
+      39.9792
+     ],
+     [
+      32.60984,
+      39.97886
+     ],
+     [
+      32.61029,
+      39.97936
+     ],
+     [
+      32.61028,
+      39.98095
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Oasis Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45899/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64281,
+      39.96657
+     ],
+     [
+      32.64206,
+      39.96698
+     ],
+     [
+      32.64176,
+      39.96596
+     ],
+     [
+      32.64262,
+      39.96579
+     ],
+     [
+      32.64281,
+      39.96657
+     ]
+    ]
+   ]
+  ]
+ }
+}

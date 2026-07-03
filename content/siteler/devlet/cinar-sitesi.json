@@ -2,5 +2,16 @@
   "isim": "Çınar Sitesi",
   "slug": "cinar-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Çınar Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.981113,
+    "lng": 32.608677
+  },
+  "sinirGeoJSON": "siteler/devlet/cinar-sitesi-boundary.geojson",
+  "aciklama": "Çınar Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18678",
+      "parsel": "1"
+    }
+  ]
 }

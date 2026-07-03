@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Özdenizyıldızı Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18705/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60314,
+      39.97399
+     ],
+     [
+      32.60237,
+      39.9742
+     ],
+     [
+      32.6023,
+      39.97422
+     ],
+     [
+      32.60224,
+      39.97422
+     ],
+     [
+      32.60217,
+      39.97423
+     ],
+     [
+      32.60218,
+      39.97312
+     ],
+     [
+      32.60316,
+      39.97276
+     ],
+     [
+      32.60314,
+      39.97399
+     ]
+    ]
+   ]
+  ]
+ }
+}

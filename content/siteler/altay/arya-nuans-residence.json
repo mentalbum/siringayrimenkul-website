@@ -2,5 +2,16 @@
   "isim": "Arya Nüans Residence",
   "slug": "arya-nuans-residence",
   "mahalleSlug": "altay",
-  "aciklama": "Arya Nüans Residence, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.965751,
+    "lng": 32.646875
+  },
+  "sinirGeoJSON": "siteler/altay/arya-nuans-residence-boundary.geojson",
+  "aciklama": "Arya Nüans Residence, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45898",
+      "parsel": "4"
+    }
+  ]
 }

@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sarıgül Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46497/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62686,
+      39.98187
+     ],
+     [
+      32.62858,
+      39.98183
+     ],
+     [
+      32.62864,
+      39.98188
+     ],
+     [
+      32.6287,
+      39.983
+     ],
+     [
+      32.62849,
+      39.98301
+     ],
+     [
+      32.6285,
+      39.98311
+     ],
+     [
+      32.6287,
+      39.9831
+     ],
+     [
+      32.62875,
+      39.9841
+     ],
+     [
+      32.62862,
+      39.98417
+     ],
+     [
+      32.6275,
+      39.98407
+     ],
+     [
+      32.6269,
+      39.98297
+     ],
+     [
+      32.62686,
+      39.98187
+     ]
+    ]
+   ]
+  ]
+ }
+}

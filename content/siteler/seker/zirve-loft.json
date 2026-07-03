@@ -2,5 +2,16 @@
   "isim": "Zirve Loft",
   "slug": "zirve-loft",
   "mahalleSlug": "seker",
-  "aciklama": "Zirve Loft, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.967603,
+    "lng": 32.658776
+  },
+  "sinirGeoJSON": "siteler/seker/zirve-loft-boundary.geojson",
+  "aciklama": "Zirve Loft, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46363",
+      "parsel": "1"
+    }
+  ]
 }

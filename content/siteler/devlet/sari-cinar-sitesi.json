@@ -2,5 +2,16 @@
   "isim": "Sarı Çınar Sitesi",
   "slug": "sari-cinar-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Sarı Çınar Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.978964,
+    "lng": 32.603397
+  },
+  "sinirGeoJSON": "siteler/devlet/sari-cinar-sitesi-boundary.geojson",
+  "aciklama": "Sarı Çınar Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18692",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çamdalı Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18708/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60664,
+      39.97304
+     ],
+     [
+      32.60568,
+      39.9733
+     ],
+     [
+      32.6057,
+      39.97181
+     ],
+     [
+      32.60623,
+      39.97161
+     ],
+     [
+      32.60665,
+      39.97161
+     ],
+     [
+      32.60664,
+      39.97304
+     ]
+    ]
+   ]
+  ]
+ }
+}

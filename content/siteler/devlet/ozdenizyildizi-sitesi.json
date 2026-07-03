@@ -2,5 +2,16 @@
   "isim": "Özdenizyıldızı Sitesi",
   "slug": "ozdenizyildizi-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Özdenizyıldızı Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.973529,
+    "lng": 32.602671
+  },
+  "sinirGeoJSON": "siteler/devlet/ozdenizyildizi-sitesi-boundary.geojson",
+  "aciklama": "Özdenizyıldızı Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18705",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İkizler Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18695/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60658,
+      39.97713
+     ],
+     [
+      32.60619,
+      39.9773
+     ],
+     [
+      32.60565,
+      39.9773
+     ],
+     [
+      32.60566,
+      39.97615
+     ],
+     [
+      32.60646,
+      39.97616
+     ],
+     [
+      32.60653,
+      39.97615
+     ],
+     [
+      32.60659,
+      39.97614
+     ],
+     [
+      32.60658,
+      39.97713
+     ]
+    ]
+   ]
+  ]
+ }
+}

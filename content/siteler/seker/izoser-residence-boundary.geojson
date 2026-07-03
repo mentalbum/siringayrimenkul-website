@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İzoser Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45064/16"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66126,
+      39.96665
+     ],
+     [
+      32.66107,
+      39.96664
+     ],
+     [
+      32.66107,
+      39.96664
+     ],
+     [
+      32.66088,
+      39.96663
+     ],
+     [
+      32.66088,
+      39.96663
+     ],
+     [
+      32.66087,
+      39.96663
+     ],
+     [
+      32.66088,
+      39.96641
+     ],
+     [
+      32.6609,
+      39.96641
+     ],
+     [
+      32.66108,
+      39.96642
+     ],
+     [
+      32.66127,
+      39.96642
+     ],
+     [
+      32.66126,
+      39.96665
+     ]
+    ]
+   ]
+  ]
+ }
+}

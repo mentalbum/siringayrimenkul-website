@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Rainbow Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46361/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65476,
+      39.9682
+     ],
+     [
+      32.65602,
+      39.96816
+     ],
+     [
+      32.65608,
+      39.96844
+     ],
+     [
+      32.65607,
+      39.96848
+     ],
+     [
+      32.65604,
+      39.96853
+     ],
+     [
+      32.65601,
+      39.96857
+     ],
+     [
+      32.65596,
+      39.9686
+     ],
+     [
+      32.65591,
+      39.96863
+     ],
+     [
+      32.65491,
+      39.96884
+     ],
+     [
+      32.65479,
+      39.96832
+     ],
+     [
+      32.65476,
+      39.9682
+     ]
+    ]
+   ]
+  ]
+ }
+}

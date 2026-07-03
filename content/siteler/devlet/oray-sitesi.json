@@ -2,5 +2,16 @@
   "isim": "Oray Sitesi",
   "slug": "oray-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Oray Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.974703,
+    "lng": 32.602959
+  },
+  "sinirGeoJSON": "siteler/devlet/oray-sitesi-boundary.geojson",
+  "aciklama": "Oray Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18701",
+      "parsel": "1"
+    }
+  ]
 }
