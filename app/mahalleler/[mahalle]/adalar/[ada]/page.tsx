@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import {
   adaDisplayLabel,
   adaRouteKey,
-  getAdaByRouteKey,
+  getAdaEntriesByRouteKey,
   getAllAdalar,
   getAllMahalleler,
   getMahalleBySlug,
@@ -23,10 +23,11 @@ type Props = {
 };
 
 export function generateStaticParams() {
+  // Bir parseli birden fazla site paylaşabilir — rota anahtarlarını tekilleştir.
   return getAllMahalleler().flatMap((mahalle) =>
-    getAllAdalar(mahalle.slug).map((ada) => ({
+    Array.from(new Set(getAllAdalar(mahalle.slug).map((ada) => adaRouteKey(ada)))).map((key) => ({
       mahalle: mahalle.slug,
-      ada: adaRouteKey(ada),
+      ada: key,
     }))
   );
 }
@@ -34,37 +35,50 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { mahalle: mahalleSlug, ada: adaKey } = await params;
   const mahalle = getMahalleBySlug(mahalleSlug);
-  const ada = getAdaByRouteKey(mahalleSlug, adaKey);
-  if (!mahalle || !ada) return {};
+  const entries = getAdaEntriesByRouteKey(mahalleSlug, adaKey);
+  if (!mahalle || entries.length === 0) return {};
+  const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
   const etapBilgi = ada.etap ? ` Eryaman ${ada.etap}. Etap,` : "";
+  const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
   return {
-    title: `${label} Ada — ${ada.site.isim} | ${mahalle.isim}`,
-    description: `${etapBilgi} ${mahalle.isim} içindeki ${ada.site.isim} bünyesinde yer alan ${label} Ada. Şirin Gayrimenkul ile bu adada ücretsiz değerlendirme için iletişime geçin.`.trim(),
-    alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}` },
+    title:
+      entries.length > 1
+        ? `${label} Ada — ${mahalle.isim} | Eryaman`
+        : `${label} Ada — ${ada.site.isim} | ${mahalle.isim}`,
+    description: `${etapBilgi} ${mahalle.isim} içindeki ${label} Ada (${siteIsimleri}). Şirin Gayrimenkul ile bu adada ücretsiz değerlendirme için iletişime geçin.`.trim(),
+    alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
   };
 }
 
 export default async function AdaPage({ params }: Props) {
   const { mahalle: mahalleSlug, ada: adaKey } = await params;
   const mahalle = getMahalleBySlug(mahalleSlug);
-  const ada = getAdaByRouteKey(mahalleSlug, adaKey);
-  if (!mahalle || !ada) notFound();
+  const entries = getAdaEntriesByRouteKey(mahalleSlug, adaKey);
+  if (!mahalle || entries.length === 0) notFound();
+  const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
   const tumAdalar = getAllAdalar(mahalleSlug);
-  const ayniEtaptakiler = tumAdalar.filter(
-    (item) => item.etap === ada.etap && adaRouteKey(item) !== adaRouteKey(ada)
+  const ayniEtapMap = new Map(
+    tumAdalar
+      .filter((item) => item.etap === ada.etap && adaRouteKey(item) !== adaKey)
+      .map((item) => [adaRouteKey(item), item] as const)
   );
-  const sinir = getSiteBoundary(ada.site);
+  const ayniEtaptakiler = Array.from(ayniEtapMap.values());
 
   const adaJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
-    name: `${label} Ada — ${ada.site.isim}`,
-    description: `${label} Ada, ${mahalle.isim} içinde yer alan ${ada.site.isim}'nin bir parçasıdır.`,
-    url: `${siteConfig.url}/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`,
+    name:
+      entries.length > 1
+        ? `${label} Ada — ${mahalle.isim}`
+        : `${label} Ada — ${ada.site.isim}`,
+    description: `${label} Ada, ${mahalle.isim} içinde yer alır (${entries
+      .map((entry) => entry.site.isim)
+      .join(", ")}).`,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}/adalar/${adaKey}`,
     ...(ada.site.koordinat && {
       geo: {
         "@type": "GeoCoordinates",
@@ -86,7 +100,7 @@ export default async function AdaPage({ params }: Props) {
           { label: "Anasayfa", href: "/" },
           { label: "Mahalleler", href: "/mahalleler" },
           { label: mahalle.isim, href: `/mahalleler/${mahalle.slug}` },
-          { label: `${label} Ada`, href: `/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}` },
+          { label: `${label} Ada`, href: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
         ]}
       />
 
@@ -110,17 +124,37 @@ export default async function AdaPage({ params }: Props) {
 
       <div className={`mt-8 grid gap-8 ${ada.site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
-          <p className="text-base leading-relaxed text-body">
-            {label} Ada, {mahalle.isim} içinde yer alan{" "}
-            <Link
-              href={`/mahalleler/${mahalle.slug}/${ada.site.slug}`}
-              className="font-semibold text-navy hover:text-gold-dark"
-            >
-              {ada.site.isim}
-            </Link>
-            &apos;nin bir parçasıdır
-            {ada.blok ? ` (${ada.blok} Blok)` : ""}.
-          </p>
+          {entries.length === 1 ? (
+            <p className="text-base leading-relaxed text-body">
+              {label} Ada, {mahalle.isim} içinde yer alan{" "}
+              <Link
+                href={`/mahalleler/${mahalle.slug}/${ada.site.slug}`}
+                className="font-semibold text-navy hover:text-gold-dark"
+              >
+                {ada.site.isim}
+              </Link>
+              &apos;nin bir parçasıdır
+              {ada.blok ? ` (${ada.blok} Blok)` : ""}.
+            </p>
+          ) : (
+            <>
+              <p className="text-base leading-relaxed text-body">
+                {`${label} Ada, ${mahalle.isim} içinde yer alır ve bu parselde ${entries.length} ayrı site bulunur:`}
+              </p>
+              <div className="grid gap-2">
+                {entries.map((entry) => (
+                  <Link
+                    key={entry.site.slug}
+                    href={`/mahalleler/${mahalle.slug}/${entry.site.slug}`}
+                    className="flex cursor-pointer items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-sm font-semibold text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                  >
+                    {entry.site.isim}
+                    <ArrowRightIcon className="h-3.5 w-3.5 shrink-0" />
+                  </Link>
+                ))}
+              </div>
+            </>
+          )}
           {!ada.site.koordinat && (
             <CtaButton href={`/mahalleler/${mahalle.slug}`} variant="outline">
               {mahalle.isim} Haritasını Görüntüle
@@ -132,7 +166,10 @@ export default async function AdaPage({ params }: Props) {
             <ResourceHints />
             <MahalleMapLoader
               center={ada.site.koordinat}
-              siteler={[{ site: ada.site, boundary: sinir }]}
+              siteler={entries.map((entry) => ({
+                site: entry.site,
+                boundary: getSiteBoundary(entry.site),
+              }))}
             />
           </div>
         )}

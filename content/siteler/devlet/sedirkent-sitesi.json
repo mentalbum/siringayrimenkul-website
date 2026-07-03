@@ -2,5 +2,16 @@
   "isim": "Sedirkent Sitesi",
   "slug": "sedirkent-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Sedirkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.97841,
+    "lng": 32.620937
+  },
+  "sinirGeoJSON": "siteler/devlet/sedirkent-sitesi-boundary.geojson",
+  "aciklama": "Sedirkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46518",
+      "parsel": "1"
+    }
+  ]
 }

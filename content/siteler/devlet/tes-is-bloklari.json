@@ -2,5 +2,16 @@
   "isim": "Tes-İş Blokları",
   "slug": "tes-is-bloklari",
   "mahalleSlug": "devlet",
-  "aciklama": "Tes-İş Blokları, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977533,
+    "lng": 32.615696
+  },
+  "sinirGeoJSON": "siteler/devlet/tes-is-bloklari-boundary.geojson",
+  "aciklama": "Tes-İş Blokları, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46520",
+      "parsel": "1"
+    }
+  ]
 }

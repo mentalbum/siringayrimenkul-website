@@ -1,0 +1,44 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Fırat Life Style Botanik",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46403/5"
+  ],
+  "paylasimli": true
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63384,
+      39.97002
+     ],
+     [
+      32.63327,
+      39.96924
+     ],
+     [
+      32.6328,
+      39.96778
+     ],
+     [
+      32.63417,
+      39.96776
+     ],
+     [
+      32.63432,
+      39.97001
+     ],
+     [
+      32.63384,
+      39.97002
+     ]
+    ]
+   ]
+  ]
+ }
+}

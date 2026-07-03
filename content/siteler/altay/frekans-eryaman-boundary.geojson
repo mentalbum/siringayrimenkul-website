@@ -1,0 +1,64 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Frekans Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45899/4"
+  ],
+  "paylasimli": true
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64335,
+      39.96632
+     ],
+     [
+      32.64319,
+      39.96638
+     ],
+     [
+      32.64307,
+      39.96644
+     ],
+     [
+      32.64293,
+      39.9665
+     ],
+     [
+      32.64281,
+      39.96657
+     ],
+     [
+      32.64262,
+      39.96579
+     ],
+     [
+      32.64348,
+      39.96563
+     ],
+     [
+      32.6436,
+      39.9662
+     ],
+     [
+      32.64358,
+      39.96625
+     ],
+     [
+      32.6435,
+      39.96627
+     ],
+     [
+      32.64335,
+      39.96632
+     ]
+    ]
+   ]
+  ]
+ }
+}

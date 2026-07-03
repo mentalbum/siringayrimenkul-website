@@ -1,0 +1,68 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Cevizlidere Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46521/1"
+  ],
+  "paylasimli": true
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61538,
+      39.97906
+     ],
+     [
+      32.61732,
+      39.97837
+     ],
+     [
+      32.61739,
+      39.97849
+     ],
+     [
+      32.61746,
+      39.97863
+     ],
+     [
+      32.61753,
+      39.97881
+     ],
+     [
+      32.61759,
+      39.97901
+     ],
+     [
+      32.61763,
+      39.9792
+     ],
+     [
+      32.61767,
+      39.97948
+     ],
+     [
+      32.61774,
+      39.97986
+     ],
+     [
+      32.61623,
+      39.97999
+     ],
+     [
+      32.61587,
+      39.98002
+     ],
+     [
+      32.61538,
+      39.97906
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -33,23 +33,66 @@ interface SiteShape {
 /** One shape per parcel ring — a multi-ada site (e.g. 7 separate adalar) is
  * several disjoint parcels, not one shape with holes, so each ring needs its
  * own <Polygon> (Google Maps treats extra paths on a single Polygon as
- * cutout holes, not separate shapes). Each ring is labeled "{site adı} {ada
- * no} Ada" when its ada number is known (so sites with several parcels can
- * be told apart from their very first one), falling back to the site name
- * alone for older boundary files that don't record a per-ring ada number. */
-function siteShapes(site: Site, boundary: GeoJSON.Feature): SiteShape[] {
-  const rings = geoJsonPolygonToPaths(boundary);
-  const adalar = (boundary.properties?.adalar as string[] | undefined) ?? [];
+ * cutout holes, not separate shapes). A single cadastral parcel can also be
+ * shared by several distinct sites (Devlet's cooperative parcels), so rings
+ * are deduped by ada/parsel: the shape renders once, its label carries all
+ * site names, and its click goes to the shared ada page instead of one
+ * arbitrary site. */
+function buildShapes(
+  entries: { site: Site; boundary: GeoJSON.Feature }[]
+): SiteShape[] {
+  interface Group {
+    ring: Koordinat[];
+    adaNo?: string;
+    routeKey?: string;
+    mahalleSlug: string;
+    siteler: Site[];
+  }
+  const groups: Record<string, Group> = {};
 
-  return rings.map((ring, index) => {
-    const adaNo = adalar[index]?.split("/")[0];
+  for (const { site, boundary } of entries) {
+    const rings = geoJsonPolygonToPaths(boundary);
+    const adalar = (boundary.properties?.adalar as string[] | undefined) ?? [];
+    rings.forEach((ring, index) => {
+      const adaParsel = adalar[index]; // "46518/1" biçiminde
+      const key = adaParsel
+        ? `${site.mahalleSlug}:${adaParsel}`
+        : `${site.slug}:${index}`;
+      const group = groups[key];
+      if (group) {
+        group.siteler.push(site);
+      } else {
+        groups[key] = {
+          ring,
+          adaNo: adaParsel?.split("/")[0],
+          routeKey: adaParsel?.replace("/", "-"),
+          mahalleSlug: site.mahalleSlug,
+          siteler: [site],
+        };
+      }
+    });
+  }
+
+  const groupList = Object.values(groups);
+  return Object.entries(groups).map(([key, g]) => {
+    const paylasimli = g.siteler.length > 1;
+    const isimler = g.siteler.map((s) => s.isim);
+    const cokParselli =
+      !paylasimli && groupList.filter((o) => o.siteler[0] === g.siteler[0]).length > 1;
     return {
-      key: `${site.slug}-${index}`,
-      paths: ring,
-      labelPosition: polygonCentroid(ring),
-      labelText: adaNo ? `${site.isim} ${adaNo} Ada` : site.isim,
-      labelWidthMeters: ringWidthMeters(ring),
-      href: `/mahalleler/${site.mahalleSlug}/${site.slug}`,
+      key,
+      paths: g.ring,
+      labelPosition: polygonCentroid(g.ring),
+      labelText: paylasimli
+        ? isimler.join(" · ")
+        : cokParselli && g.adaNo
+          ? `${isimler[0]} ${g.adaNo} Ada`
+          : isimler[0],
+      labelWidthMeters: ringWidthMeters(g.ring),
+      href:
+        paylasimli && g.routeKey
+          ? `/mahalleler/${g.mahalleSlug}/adalar/${g.routeKey}`
+          : `/mahalleler/${g.siteler[0].mahalleSlug}/${g.siteler[0].slug}`,
     };
   });
 }
@@ -70,9 +113,11 @@ export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps
   // Only sites with a real TKGM-derived parcel boundary are shown on the map —
   // no pins as a placeholder. A site simply doesn't appear here until its own
   // boundary has been added.
-  const shapes = siteler
-    .filter((entry): entry is SiteMapEntry & { boundary: GeoJSON.Feature } => Boolean(entry.boundary))
-    .flatMap(({ site, boundary }) => siteShapes(site, boundary));
+  const shapes = buildShapes(
+    siteler.filter(
+      (entry): entry is SiteMapEntry & { boundary: GeoJSON.Feature } => Boolean(entry.boundary)
+    )
+  );
 
   return (
     <APIProvider apiKey={siteConfig.googleMapsApiKey}>

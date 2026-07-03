@@ -118,6 +118,13 @@ export function getAdaByRouteKey(mahalleSlug: string, routeKey: string): AdaEntr
   return getAllAdalar(mahalleSlug).find((ada) => adaRouteKey(ada) === routeKey);
 }
 
+/** All entries sharing a route key — a single cadastral parcel can hold
+ * several distinct sites (e.g. Devlet's big cooperative parcels), in which
+ * case each owning site contributes an entry for the same ada/parsel. */
+export function getAdaEntriesByRouteKey(mahalleSlug: string, routeKey: string): AdaEntry[] {
+  return getAllAdalar(mahalleSlug).filter((ada) => adaRouteKey(ada) === routeKey);
+}
+
 export interface EtapEntry {
   no: string;
   adalar: AdaEntry[];

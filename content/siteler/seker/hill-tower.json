@@ -2,5 +2,16 @@
   "isim": "Hill Tower",
   "slug": "hill-tower",
   "mahalleSlug": "seker",
-  "aciklama": "Hill Tower, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.967404,
+    "lng": 32.657724
+  },
+  "sinirGeoJSON": "siteler/seker/hill-tower-boundary.geojson",
+  "aciklama": "Hill Tower, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46362",
+      "parsel": "3"
+    }
+  ]
 }

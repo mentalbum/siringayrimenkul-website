@@ -2,5 +2,16 @@
   "isim": "Türkkonut Sinem Sitesi",
   "slug": "turkkonut-sinem-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Türkkonut Sinem Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977263,
+    "lng": 32.618374
+  },
+  "sinirGeoJSON": "siteler/devlet/turkkonut-sinem-sitesi-boundary.geojson",
+  "aciklama": "Türkkonut Sinem Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46519",
+      "parsel": "1"
+    }
+  ]
 }
