@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Aktürk Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17536/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64091,
+      39.97292
+     ],
+     [
+      32.64027,
+      39.97296
+     ],
+     [
+      32.64006,
+      39.97259
+     ],
+     [
+      32.63986,
+      39.97223
+     ],
+     [
+      32.63987,
+      39.97218
+     ],
+     [
+      32.64075,
+      39.97212
+     ],
+     [
+      32.64081,
+      39.97216
+     ],
+     [
+      32.64086,
+      39.97256
+     ],
+     [
+      32.64091,
+      39.97292
+     ]
+    ]
+   ]
+  ]
+ }
+}
