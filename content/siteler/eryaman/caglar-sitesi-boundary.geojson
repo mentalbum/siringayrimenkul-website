@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çağlar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46390/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61929,
+      39.96976
+     ],
+     [
+      32.6192,
+      39.96907
+     ],
+     [
+      32.62026,
+      39.969
+     ],
+     [
+      32.62034,
+      39.96968
+     ],
+     [
+      32.61929,
+      39.96976
+     ]
+    ]
+   ]
+  ]
+ }
+}

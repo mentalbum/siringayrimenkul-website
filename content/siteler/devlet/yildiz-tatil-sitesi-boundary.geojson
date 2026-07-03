@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yıldız Tatil Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18706/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60429,
+      39.97368
+     ],
+     [
+      32.60338,
+      39.97393
+     ],
+     [
+      32.60339,
+      39.97267
+     ],
+     [
+      32.6043,
+      39.97233
+     ],
+     [
+      32.60429,
+      39.97368
+     ]
+    ]
+   ]
+  ]
+ }
+}

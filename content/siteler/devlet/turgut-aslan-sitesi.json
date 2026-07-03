@@ -2,5 +2,16 @@
   "isim": "Turgut Aslan Sitesi",
   "slug": "turgut-aslan-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Turgut Aslan Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.976836,
+    "lng": 32.604582
+  },
+  "sinirGeoJSON": "siteler/devlet/turgut-aslan-sitesi-boundary.geojson",
+  "aciklama": "Turgut Aslan Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18694",
+      "parsel": "1"
+    }
+  ]
 }

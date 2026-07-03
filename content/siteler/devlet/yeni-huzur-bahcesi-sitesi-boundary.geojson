@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Huzur Bahçesi Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18677/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.608,
+      39.98153
+     ],
+     [
+      32.60712,
+      39.98156
+     ],
+     [
+      32.60712,
+      39.98073
+     ],
+     [
+      32.608,
+      39.98071
+     ],
+     [
+      32.608,
+      39.98153
+     ]
+    ]
+   ]
+  ]
+ }
+}

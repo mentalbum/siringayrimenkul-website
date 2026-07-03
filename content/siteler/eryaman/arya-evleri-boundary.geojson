@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Arya Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45918/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61047,
+      39.97629
+     ],
+     [
+      32.61048,
+      39.97595
+     ],
+     [
+      32.61102,
+      39.97594
+     ],
+     [
+      32.61102,
+      39.97624
+     ],
+     [
+      32.61047,
+      39.97629
+     ]
+    ]
+   ]
+  ]
+ }
+}

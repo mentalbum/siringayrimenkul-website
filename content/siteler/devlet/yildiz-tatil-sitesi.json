@@ -2,5 +2,16 @@
   "isim": "Yıldız Tatil Sitesi",
   "slug": "yildiz-tatil-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Yıldız Tatil Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.973151,
+    "lng": 32.603845
+  },
+  "sinirGeoJSON": "siteler/devlet/yildiz-tatil-sitesi-boundary.geojson",
+  "aciklama": "Yıldız Tatil Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18706",
+      "parsel": "1"
+    }
+  ]
 }

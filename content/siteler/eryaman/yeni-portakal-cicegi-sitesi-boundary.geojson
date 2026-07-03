@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Portakal Çiçeği Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46546/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62461,
+      39.97418
+     ],
+     [
+      32.62554,
+      39.97311
+     ],
+     [
+      32.62559,
+      39.97309
+     ],
+     [
+      32.62702,
+      39.97317
+     ],
+     [
+      32.62704,
+      39.97319
+     ],
+     [
+      32.627,
+      39.97342
+     ],
+     [
+      32.62672,
+      39.974
+     ],
+     [
+      32.62626,
+      39.97465
+     ],
+     [
+      32.62508,
+      39.97442
+     ],
+     [
+      32.62466,
+      39.97431
+     ],
+     [
+      32.62461,
+      39.97418
+     ]
+    ]
+   ]
+  ]
+ }
+}

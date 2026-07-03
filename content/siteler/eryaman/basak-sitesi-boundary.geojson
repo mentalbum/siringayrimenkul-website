@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Başak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46528/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6312,
+      39.9787
+     ],
+     [
+      32.63124,
+      39.97901
+     ],
+     [
+      32.63121,
+      39.97904
+     ],
+     [
+      32.62951,
+      39.97919
+     ],
+     [
+      32.62936,
+      39.97889
+     ],
+     [
+      32.62904,
+      39.9778
+     ],
+     [
+      32.62906,
+      39.97776
+     ],
+     [
+      32.63068,
+      39.97745
+     ],
+     [
+      32.6312,
+      39.9787
+     ]
+    ]
+   ]
+  ]
+ }
+}

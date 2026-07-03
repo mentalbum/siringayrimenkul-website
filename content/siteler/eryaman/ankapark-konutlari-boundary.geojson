@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ankapark Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46391/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61927,
+      39.97069
+     ],
+     [
+      32.61776,
+      39.97072
+     ],
+     [
+      32.61766,
+      39.97069
+     ],
+     [
+      32.61759,
+      39.97001
+     ],
+     [
+      32.61917,
+      39.96991
+     ],
+     [
+      32.61927,
+      39.97069
+     ]
+    ]
+   ]
+  ]
+ }
+}

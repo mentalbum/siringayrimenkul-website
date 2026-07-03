@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Platin Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "48964/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61119,
+      39.97128
+     ],
+     [
+      32.61045,
+      39.97025
+     ],
+     [
+      32.61052,
+      39.97024
+     ],
+     [
+      32.61239,
+      39.96991
+     ],
+     [
+      32.61259,
+      39.97079
+     ],
+     [
+      32.61229,
+      39.97087
+     ],
+     [
+      32.61216,
+      39.97091
+     ],
+     [
+      32.61197,
+      39.97097
+     ],
+     [
+      32.61176,
+      39.97103
+     ],
+     [
+      32.61128,
+      39.97122
+     ],
+     [
+      32.61119,
+      39.97128
+     ]
+    ]
+   ]
+  ]
+ }
+}

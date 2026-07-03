@@ -2,5 +2,16 @@
   "isim": "Çiğdem Sitesi",
   "slug": "cigdem-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Çiğdem Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.975288,
+    "lng": 32.612619
+  },
+  "sinirGeoJSON": "siteler/eryaman/cigdem-sitesi-boundary.geojson",
+  "aciklama": "Çiğdem Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45919",
+      "parsel": "3"
+    }
+  ]
 }

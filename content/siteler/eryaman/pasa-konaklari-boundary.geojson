@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Paşa Konakları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45919/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61229,
+      39.9761
+     ],
+     [
+      32.61125,
+      39.9762
+     ],
+     [
+      32.61126,
+      39.97571
+     ],
+     [
+      32.61204,
+      39.9756
+     ],
+     [
+      32.61228,
+      39.97557
+     ],
+     [
+      32.61229,
+      39.9761
+     ]
+    ]
+   ]
+  ]
+ }
+}

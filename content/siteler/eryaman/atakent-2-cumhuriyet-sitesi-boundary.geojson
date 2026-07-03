@@ -1,0 +1,71 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Atakent 2 Cumhuriyet Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46526/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63213,
+      39.98056
+     ],
+     [
+      32.63208,
+      39.98053
+     ],
+     [
+      32.63202,
+      39.97964
+     ],
+     [
+      32.63223,
+      39.97951
+     ],
+     [
+      32.63357,
+      39.97946
+     ],
+     [
+      32.6337,
+      39.97947
+     ],
+     [
+      32.63382,
+      39.9795
+     ],
+     [
+      32.63394,
+      39.97957
+     ],
+     [
+      32.63399,
+      39.97964
+     ],
+     [
+      32.634,
+      39.97967
+     ],
+     [
+      32.63408,
+      39.9805
+     ],
+     [
+      32.63247,
+      39.98056
+     ],
+     [
+      32.63213,
+      39.98056
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Kayaevleri Sitesi",
   "slug": "kayaevleri-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Kayaevleri Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.971764,
+    "lng": 32.625727
+  },
+  "sinirGeoJSON": "siteler/eryaman/kayaevleri-sitesi-boundary.geojson",
+  "aciklama": "Kayaevleri Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46539",
+      "parsel": "1"
+    }
+  ]
 }

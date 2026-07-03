@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Cumhuriyet Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46382/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62402,
+      39.97048
+     ],
+     [
+      32.62375,
+      39.97053
+     ],
+     [
+      32.62361,
+      39.97057
+     ],
+     [
+      32.62343,
+      39.97062
+     ],
+     [
+      32.62304,
+      39.97076
+     ],
+     [
+      32.62205,
+      39.96995
+     ],
+     [
+      32.62205,
+      39.9699
+     ],
+     [
+      32.6221,
+      39.96987
+     ],
+     [
+      32.62243,
+      39.96979
+     ],
+     [
+      32.62281,
+      39.96971
+     ],
+     [
+      32.62374,
+      39.96955
+     ],
+     [
+      32.62402,
+      39.97048
+     ]
+    ]
+   ]
+  ]
+ }
+}

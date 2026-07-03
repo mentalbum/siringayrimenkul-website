@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Turgut Aslan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18694/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60505,
+      39.97755
+     ],
+     [
+      32.6041,
+      39.9775
+     ],
+     [
+      32.60411,
+      39.97614
+     ],
+     [
+      32.60503,
+      39.97615
+     ],
+     [
+      32.60506,
+      39.9762
+     ],
+     [
+      32.60505,
+      39.97755
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çiğdem Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45919/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61322,
+      39.97545
+     ],
+     [
+      32.61228,
+      39.97557
+     ],
+     [
+      32.61204,
+      39.9756
+     ],
+     [
+      32.61203,
+      39.97511
+     ],
+     [
+      32.61293,
+      39.97497
+     ],
+     [
+      32.61308,
+      39.97501
+     ],
+     [
+      32.61322,
+      39.97513
+     ],
+     [
+      32.61322,
+      39.97545
+     ]
+    ]
+   ]
+  ]
+ }
+}
