@@ -3,6 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { CtaBanner } from "@/components/ui/cta-banner";
 import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon, UserIcon } from "@/components/ui/icons";
 import { ReviewBadge } from "@/components/ui/review-badge";
 
@@ -128,20 +129,19 @@ export default function HakkimizdaPage() {
         ))}
       </div>
 
-      <div className="mt-12 flex flex-col items-center gap-5 rounded-2xl bg-navy px-6 py-10 text-center text-white sm:px-12">
-        <h2 className="text-2xl text-white">Eryaman&apos;ı Birlikte Keşfedelim</h2>
-        <p className="max-w-xl text-sm text-white/75">
-          Hizmet bölgemizdeki mahalleleri inceleyin veya doğrudan bizimle iletişime geçin.
-        </p>
-        <div className="flex flex-wrap items-center justify-center gap-3">
-          <CtaButton href="/mahalleler" variant="primary">
-            Mahalleleri İncele
-          </CtaButton>
-          <CtaButton href="/iletisim" variant="outline-light">
-            İletişime Geçin
-          </CtaButton>
-        </div>
-      </div>
+      <CtaBanner
+        size="large"
+        className="mt-12"
+        baslik="Eryaman'ı Birlikte Keşfedelim"
+        aciklama="Hizmet bölgemizdeki mahalleleri inceleyin veya doğrudan bizimle iletişime geçin."
+      >
+        <CtaButton href="/mahalleler" variant="primary">
+          Mahalleleri İncele
+        </CtaButton>
+        <CtaButton href="/iletisim" variant="outline-light">
+          İletişime Geçin
+        </CtaButton>
+      </CtaBanner>
     </div>
   );
 }

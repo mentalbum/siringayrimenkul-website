@@ -11,6 +11,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { CtaBanner } from "@/components/ui/cta-banner";
 import { FaqSection } from "@/components/ui/faq-section";
 import { SiteCard } from "@/components/site/site-card";
 import { getEtapFaq } from "@/lib/faq";
@@ -116,18 +117,15 @@ export default async function EtapPage({ params }: Props) {
         items={getEtapFaq(etap, mahalle)}
       />
 
-      <div className="mt-14 rounded-2xl bg-navy px-6 py-8 text-center text-white sm:px-10">
-        <h2 className="text-xl text-white">
-          Eryaman {etap.no}. Etap&apos;ta Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?
-        </h2>
-        <p className="mt-2 text-sm text-white/75">
-          Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş
-          alın.
-        </p>
-        <CtaButton href="/iletisim" variant="primary" className="mt-5">
-          Bize Ulaşın
+      <CtaBanner
+        className="mt-14"
+        baslik={`Eryaman ${etap.no}. Etap'ta Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
+        aciklama="Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş alın."
+      >
+        <CtaButton href="/ev-degerleme" variant="primary">
+          Ücretsiz Değerleme Alın
         </CtaButton>
-      </div>
+      </CtaBanner>
 
       {digerEtaplar.length > 0 && (
         <section className="mt-14">

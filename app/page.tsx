@@ -8,6 +8,7 @@ import {
 } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
+import { CtaBanner } from "@/components/ui/cta-banner";
 import { ReviewBadge } from "@/components/ui/review-badge";
 import { ReviewQuotes } from "@/components/home/review-quotes";
 import { HeroSearch } from "@/components/home/hero-search";
@@ -218,26 +219,18 @@ export default function HomePage() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="flex flex-col items-center gap-5 rounded-2xl bg-navy px-6 py-12 text-center text-white sm:px-12">
-          <h2 className="text-2xl text-white sm:text-3xl">
-            Eryaman&apos;da Bir Sonraki Adımınızı Birlikte Atalım
-          </h2>
-          <p className="max-w-xl text-sm text-white/75">
-            Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın.
-          </p>
-          <div className="flex flex-wrap items-center justify-center gap-3">
-            <CtaButton href="/iletisim" variant="primary">
-              Bize Ulaşın
-            </CtaButton>
-            <CtaButton
-              href={siteConfig.sahibindenUrl}
-              external
-              variant="outline-light"
-            >
-              İlanlarımı Gör
-            </CtaButton>
-          </div>
-        </div>
+        <CtaBanner
+          size="large"
+          baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
+          aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
+        >
+          <CtaButton href="/iletisim" variant="primary">
+            Bize Ulaşın
+          </CtaButton>
+          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
+            İlanlarımı Gör
+          </CtaButton>
+        </CtaBanner>
       </section>
     </div>
   );

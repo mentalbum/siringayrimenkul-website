@@ -11,6 +11,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { CtaBanner } from "@/components/ui/cta-banner";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef, WEBSITE_ID } from "@/lib/structured-data";
@@ -143,20 +144,18 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
       )}
 
-      <div className="mt-8 rounded-2xl bg-navy px-6 py-8 text-center text-white">
-        <h2 className="text-xl text-white">Eryaman&apos;da Bir Sonraki Adımınızı Birlikte Atalım</h2>
-        <p className="mt-2 text-sm text-white/75">
-          Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın.
-        </p>
-        <div className="mt-5 flex flex-wrap items-center justify-center gap-3">
-          <CtaButton href="/iletisim" variant="primary">
-            Bize Ulaşın
-          </CtaButton>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
-            İlanlarımı Gör
-          </CtaButton>
-        </div>
-      </div>
+      <CtaBanner
+        className="mt-8"
+        baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
+        aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
+      >
+        <CtaButton href="/iletisim" variant="primary">
+          Bize Ulaşın
+        </CtaButton>
+        <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
+          İlanlarımı Gör
+        </CtaButton>
+      </CtaBanner>
 
       <script
         type="application/ld+json"

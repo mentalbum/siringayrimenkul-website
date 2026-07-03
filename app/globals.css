@@ -46,6 +46,11 @@
   a {
     -webkit-tap-highlight-color: transparent;
   }
+
+  ::selection {
+    background: var(--color-gold);
+    color: var(--color-navy);
+  }
 }
 
 /* Text-only mahalle labels drawn on the branded map (see components/maps/map-labels.tsx) */
