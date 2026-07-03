@@ -41,12 +41,14 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
+  // og:title / og:description are deliberately NOT set here: a fixed value in
+  // the root layout would be inherited by every page, so shared links (e.g.
+  // a site page on WhatsApp) would all preview with the same generic text.
+  // Left unset, Next fills them from each page's own resolved title/description.
   openGraph: {
     type: "website",
     locale: "tr_TR",
     siteName: siteConfig.name,
-    title: `${siteConfig.name} | Eryaman Emlakçısı`,
-    description: siteConfig.description,
     images: [
       {
         url: "/images/ofis-ic-mekan.jpg",
@@ -58,8 +60,6 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} | Eryaman Emlakçısı`,
-    description: siteConfig.description,
     images: ["/images/ofis-ic-mekan.jpg"],
   },
   verification: {
