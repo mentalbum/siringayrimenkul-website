@@ -118,6 +118,16 @@ export default async function MahallePage({ params }: Props) {
   const etaplar = (
     Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
   ).sort((a, b) => Number(a) - Number(b));
+  // "4. ve 5." — etap numaraları kimliktir; adet göstermek "2. Etap" sanılıyor
+  const etapEtiketi =
+    etaplar.length > 1
+      ? `${etaplar
+          .slice(0, -1)
+          .map((no) => `${no}.`)
+          .join(", ")} ve ${etaplar[etaplar.length - 1]}.`
+      : etaplar.length === 1
+        ? `${etaplar[0]}.`
+        : "";
 
   const mahalleJsonLd = {
     "@context": "https://schema.org",
@@ -167,7 +177,7 @@ export default async function MahallePage({ params }: Props) {
         )}
         {etaplar.length > 0 && (
           <div className="rounded-2xl border border-border bg-surface p-4">
-            <dd className="text-2xl font-semibold tabular-nums text-navy">{etaplar.length}</dd>
+            <dd className="text-2xl font-semibold tabular-nums text-navy">{etapEtiketi}</dd>
             <dt className="mt-1 text-xs font-medium text-muted">Etap</dt>
           </div>
         )}
