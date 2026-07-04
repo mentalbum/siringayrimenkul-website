@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${mahalle.isim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık/kiralık piyasayı yakından takip ediyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
+    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık daire ve kiralık daire piyasasını günlük takip ediyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -239,6 +239,41 @@ export default async function MahallePage({ params }: Props) {
             <SiteCard key={site.slug} site={site} />
           ))}
         </div>
+      </section>
+
+      <section className="mt-14">
+        <h2 className="text-xl">{`${mahalle.isim} Satılık ve Kiralık Daireler`}</h2>
+        <div className="mt-5 grid gap-4 lg:grid-cols-2">
+          <div className="rounded-2xl border border-border bg-surface p-6">
+            <h3 className="text-base font-semibold text-navy">
+              {`${mahalle.isim}'nde Satılık Daire`}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-body">
+              {siteler.length > 0
+                ? `Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim — mahalledeki ${siteler.length} site ve rezidansın her birini tanıyoruz. `
+                : "Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim. "}
+              İlk adım ücretsiz ve yükümlülüksüz:{" "}
+              <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
+                ev değerleme talebi
+              </Link>
+              {" bırakın, aynı gün dönüş yapalım."}
+            </p>
+          </div>
+          <div className="rounded-2xl border border-border bg-surface p-6">
+            <h3 className="text-base font-semibold text-navy">
+              {`${mahalle.isim}'nde Kiralık Daire`}
+            </h3>
+            <p className="mt-2 text-sm leading-relaxed text-body">
+              Boş dairenizi kiraya mı vereceksiniz? Doğru kira bedeli, sağlam sözleşme ve
+              doğrulanmış kiracıyla süreci sizin adınıza yönetiyoruz. Kiralık daire arayanlar
+              için güncel ilanlarımız sahibinden.com mağazamızda; aradığınız daire listede
+              yoksa bize ulaşın, portföye eklenen daireleri ilk siz öğrenin.
+            </p>
+          </div>
+        </div>
+        <CtaButton href={siteConfig.sahibindenUrl} external variant="outline" className="mt-5">
+          sahibinden.com&apos;daki İlanlarımız
+        </CtaButton>
       </section>
 
       {etaplar.length > 0 && (
