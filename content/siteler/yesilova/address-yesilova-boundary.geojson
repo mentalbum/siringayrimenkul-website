@@ -1,12 +1,11 @@
 {
  "type": "Feature",
  "properties": {
-  "isim": "Relax Line",
+  "isim": "Address Yeşilova",
   "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
   "adalar": [
-   "46362/3"
-  ],
-  "paylasimli": true
+   "47542/6"
+  ]
  },
  "geometry": {
   "type": "MultiPolygon",
@@ -14,28 +13,32 @@
    [
     [
      [
-      32.65827,
-      39.96762
+      32.6105,
+      39.96564
      ],
      [
-      32.6572,
-      39.96773
+      32.61036,
+      39.96517
      ],
      [
-      32.6572,
-      39.96716
+      32.61103,
+      39.96505
      ],
      [
-      32.65819,
-      39.9671
+      32.61117,
+      39.96552
      ],
      [
-      32.65826,
-      39.96715
+      32.611,
+      39.96555
      ],
      [
-      32.65827,
-      39.96762
+      32.61053,
+      39.96563
+     ],
+     [
+      32.6105,
+      39.96564
      ]
     ]
    ]

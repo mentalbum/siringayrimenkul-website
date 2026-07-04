@@ -2,5 +2,16 @@
   "isim": "Address Yeşilova",
   "slug": "address-yesilova",
   "mahalleSlug": "yesilova",
-  "aciklama": "Address Yeşilova, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.965361,
+    "lng": 32.610743
+  },
+  "sinirGeoJSON": "siteler/yesilova/address-yesilova-boundary.geojson",
+  "aciklama": "Address Yeşilova, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47542",
+      "parsel": "6"
+    }
+  ]
 }
