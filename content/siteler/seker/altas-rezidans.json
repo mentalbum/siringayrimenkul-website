@@ -3,15 +3,15 @@
   "slug": "altas-rezidans",
   "mahalleSlug": "seker",
   "koordinat": {
-    "lat": 39.967404,
-    "lng": 32.657724
+    "lat": 39.967483,
+    "lng": 32.656729
   },
   "sinirGeoJSON": "siteler/seker/altas-rezidans-boundary.geojson",
   "aciklama": "Altaş Rezidans, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
   "adalar": [
     {
       "no": "46362",
-      "parsel": "3"
+      "parsel": "4"
     }
   ]
 }
