@@ -2,5 +2,16 @@
   "isim": "Keyfim Sitesi",
   "slug": "keyfim-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Keyfim Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995742,
+    "lng": 32.606623
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/keyfim-sitesi-boundary.geojson",
+  "aciklama": "Keyfim Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19507",
+      "parsel": "1"
+    }
+  ]
 }

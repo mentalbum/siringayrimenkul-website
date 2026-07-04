@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Keyfim Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19507/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60725,
+      39.99584
+     ],
+     [
+      32.60704,
+      39.99595
+     ],
+     [
+      32.60632,
+      39.99634
+     ],
+     [
+      32.60584,
+      39.99582
+     ],
+     [
+      32.60586,
+      39.99575
+     ],
+     [
+      32.60701,
+      39.99513
+     ],
+     [
+      32.60725,
+      39.99539
+     ],
+     [
+      32.60725,
+      39.99584
+     ]
+    ]
+   ]
+  ]
+ }
+}

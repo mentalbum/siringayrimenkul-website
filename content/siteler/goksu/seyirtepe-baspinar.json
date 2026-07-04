@@ -2,5 +2,16 @@
   "isim": "Seyirtepe Başpınar",
   "slug": "seyirtepe-baspinar",
   "mahalleSlug": "goksu",
-  "aciklama": "Seyirtepe Başpınar, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000903,
+    "lng": 32.652242
+  },
+  "sinirGeoJSON": "siteler/goksu/seyirtepe-baspinar-boundary.geojson",
+  "aciklama": "Seyirtepe Başpınar, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63400",
+      "parsel": "2"
+    }
+  ]
 }

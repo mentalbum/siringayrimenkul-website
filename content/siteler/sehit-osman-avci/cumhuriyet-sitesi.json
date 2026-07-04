@@ -2,5 +2,16 @@
   "isim": "Cumhuriyet Sitesi",
   "slug": "cumhuriyet-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Cumhuriyet Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.973581,
+    "lng": 32.650182
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/cumhuriyet-sitesi-boundary.geojson",
+  "aciklama": "Cumhuriyet Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17491",
+      "parsel": "1"
+    }
+  ]
 }

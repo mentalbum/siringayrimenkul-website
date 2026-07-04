@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Başkent Sular Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19524/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61472,
+      39.99923
+     ],
+     [
+      32.61407,
+      39.99881
+     ],
+     [
+      32.61454,
+      39.99838
+     ],
+     [
+      32.6152,
+      39.9988
+     ],
+     [
+      32.61472,
+      39.99923
+     ]
+    ]
+   ]
+  ]
+ }
+}

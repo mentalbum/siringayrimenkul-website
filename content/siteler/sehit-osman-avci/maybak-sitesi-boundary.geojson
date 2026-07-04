@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Maybak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46473/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65094,
+      39.98717
+     ],
+     [
+      32.65124,
+      39.98756
+     ],
+     [
+      32.65124,
+      39.9876
+     ],
+     [
+      32.65114,
+      39.98796
+     ],
+     [
+      32.65024,
+      39.98848
+     ],
+     [
+      32.64883,
+      39.98785
+     ],
+     [
+      32.64875,
+      39.98778
+     ],
+     [
+      32.64874,
+      39.98772
+     ],
+     [
+      32.65002,
+      39.9872
+     ],
+     [
+      32.65026,
+      39.98715
+     ],
+     [
+      32.65094,
+      39.98717
+     ]
+    ]
+   ]
+  ]
+ }
+}
