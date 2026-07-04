@@ -6,6 +6,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
 import { siteConfig } from "@/lib/site-config";
+import { getAllMahalleler } from "@/lib/content";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
 import { ORG_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
 
@@ -92,7 +93,15 @@ export default async function RootLayout({
       siteConfig.instagramUrl,
       siteConfig.facebookUrl,
     ],
-    areaServed: [{ "@type": "Place", name: "Eryaman, Etimesgut, Ankara" }],
+    // Görünmez ama meşru "gömme": hizmet bölgesinin tamamı — Eryaman + 11
+    // mahalle — arama motorlarına yapılandırılmış veriyle bildirilir.
+    areaServed: [
+      { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
+      ...getAllMahalleler().map((m) => ({
+        "@type": "Place",
+        name: `${m.isim}, ${m.ilce}, Ankara`,
+      })),
+    ],
     founder: { "@type": "Person", name: "Hamza Şirin" },
     employee: { "@type": "Person", name: "Özgün Şirin", jobTitle: "Emlak Danışmanı" },
     identifier: {

@@ -129,6 +129,24 @@ export default async function MahallePage({ params }: Props) {
         ? `${etaplar[0]}.`
         : "";
 
+  // Sayfada görünen site kartlarının makine-okur karşılığı: Google mahalledeki
+  // tüm site/rezidans envanterini tek listede okur (görünen içerikle birebir).
+  const siteListJsonLd =
+    siteler.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `${mahalle.isim} Siteleri ve Rezidansları`,
+          numberOfItems: siteler.length,
+          itemListElement: siteler.map((s, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: s.isim,
+            url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${s.slug}`,
+          })),
+        }
+      : null;
+
   const mahalleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
@@ -377,6 +395,12 @@ export default async function MahallePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mahalleJsonLd) }}
       />
+      {siteListJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteListJsonLd) }}
+        />
+      )}
     </div>
   );
 }
