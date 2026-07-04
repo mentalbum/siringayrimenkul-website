@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Doğankaya Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46542/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6205,
+      39.97517
+     ],
+     [
+      32.62007,
+      39.97526
+     ],
+     [
+      32.61898,
+      39.97495
+     ],
+     [
+      32.61892,
+      39.97491
+     ],
+     [
+      32.61893,
+      39.97488
+     ],
+     [
+      32.61997,
+      39.97392
+     ],
+     [
+      32.62102,
+      39.97461
+     ],
+     [
+      32.62103,
+      39.97465
+     ],
+     [
+      32.6205,
+      39.97517
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Büyük Ankara Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18475/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61349,
+      39.99434
+     ],
+     [
+      32.61279,
+      39.99434
+     ],
+     [
+      32.61278,
+      39.99428
+     ],
+     [
+      32.6128,
+      39.99368
+     ],
+     [
+      32.61286,
+      39.99363
+     ],
+     [
+      32.6135,
+      39.99363
+     ],
+     [
+      32.61354,
+      39.99371
+     ],
+     [
+      32.61353,
+      39.99426
+     ],
+     [
+      32.61349,
+      39.99434
+     ]
+    ]
+   ]
+  ]
+ }
+}

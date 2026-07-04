@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Boyut Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18487/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61086,
+      39.99171
+     ],
+     [
+      32.61086,
+      39.99166
+     ],
+     [
+      32.61129,
+      39.99104
+     ],
+     [
+      32.61135,
+      39.991
+     ],
+     [
+      32.61207,
+      39.99154
+     ],
+     [
+      32.61197,
+      39.99169
+     ],
+     [
+      32.61188,
+      39.99174
+     ],
+     [
+      32.61086,
+      39.99171
+     ]
+    ]
+   ]
+  ]
+ }
+}

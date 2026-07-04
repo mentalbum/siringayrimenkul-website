@@ -2,5 +2,36 @@
   "isim": "KC Lale Evleri",
   "slug": "kc-lale-evleri",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "KC Lale Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977698,
+    "lng": 32.653852
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/kc-lale-evleri-boundary.geojson",
+  "aciklama": "KC Lale Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46638",
+      "parsel": "1"
+    },
+    {
+      "no": "46639",
+      "parsel": "1"
+    },
+    {
+      "no": "46641",
+      "parsel": "1"
+    },
+    {
+      "no": "46644",
+      "parsel": "1"
+    },
+    {
+      "no": "46645",
+      "parsel": "1"
+    },
+    {
+      "no": "46646",
+      "parsel": "1"
+    }
+  ]
 }

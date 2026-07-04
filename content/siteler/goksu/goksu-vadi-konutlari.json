@@ -2,5 +2,16 @@
   "isim": "Göksu Vadi Konutları",
   "slug": "goksu-vadi-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksu Vadi Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995702,
+    "lng": 32.639672
+  },
+  "sinirGeoJSON": "siteler/goksu/goksu-vadi-konutlari-boundary.geojson",
+  "aciklama": "Göksu Vadi Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ]
 }

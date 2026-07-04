@@ -2,5 +2,16 @@
   "isim": "Hassas Çizgi Sitesi",
   "slug": "hassas-cizgi-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Hassas Çizgi Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.975579,
+    "lng": 32.624978
+  },
+  "sinirGeoJSON": "siteler/eryaman/hassas-cizgi-sitesi-boundary.geojson",
+  "aciklama": "Hassas Çizgi Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46544",
+      "parsel": "1"
+    }
+  ]
 }

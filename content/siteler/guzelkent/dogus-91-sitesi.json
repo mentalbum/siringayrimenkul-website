@@ -2,5 +2,16 @@
   "isim": "Doğuş 91 Sitesi",
   "slug": "dogus-91-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Doğuş 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990835,
+    "lng": 32.61507
+  },
+  "sinirGeoJSON": "siteler/guzelkent/dogus-91-sitesi-boundary.geojson",
+  "aciklama": "Doğuş 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18482",
+      "parsel": "1"
+    }
+  ]
 }

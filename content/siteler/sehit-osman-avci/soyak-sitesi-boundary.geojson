@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Soyak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17463/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65275,
+      39.984
+     ],
+     [
+      32.65219,
+      39.98346
+     ],
+     [
+      32.65262,
+      39.98319
+     ],
+     [
+      32.65307,
+      39.9829
+     ],
+     [
+      32.65344,
+      39.98326
+     ],
+     [
+      32.65314,
+      39.98365
+     ],
+     [
+      32.65289,
+      39.98399
+     ],
+     [
+      32.65275,
+      39.984
+     ]
+    ]
+   ]
+  ]
+ }
+}

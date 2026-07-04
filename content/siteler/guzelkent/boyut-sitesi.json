@@ -2,5 +2,16 @@
   "isim": "Boyut Sitesi",
   "slug": "boyut-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Boyut Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.991467,
+    "lng": 32.611453
+  },
+  "sinirGeoJSON": "siteler/guzelkent/boyut-sitesi-boundary.geojson",
+  "aciklama": "Boyut Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18487",
+      "parsel": "1"
+    }
+  ]
 }

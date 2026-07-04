@@ -2,5 +2,16 @@
   "isim": "Asilkent Sitesi",
   "slug": "asilkent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Asilkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990972,
+    "lng": 32.612144
+  },
+  "sinirGeoJSON": "siteler/guzelkent/asilkent-sitesi-boundary.geojson",
+  "aciklama": "Asilkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18486",
+      "parsel": "1"
+    }
+  ]
 }

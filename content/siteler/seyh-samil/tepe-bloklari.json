@@ -2,5 +2,16 @@
   "isim": "Tepe Blokları",
   "slug": "tepe-bloklari",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Tepe Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99382,
+    "lng": 32.626994
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/tepe-bloklari-boundary.geojson",
+  "aciklama": "Tepe Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17335",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Büyük Ankara Sitesi",
   "slug": "buyuk-ankara-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Büyük Ankara Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.993991,
+    "lng": 32.613165
+  },
+  "sinirGeoJSON": "siteler/guzelkent/buyuk-ankara-sitesi-boundary.geojson",
+  "aciklama": "Büyük Ankara Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18475",
+      "parsel": "1"
+    }
+  ]
 }

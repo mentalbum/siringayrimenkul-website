@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Demirer Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17460/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64945,
+      39.98509
+     ],
+     [
+      32.64946,
+      39.98474
+     ],
+     [
+      32.64947,
+      39.9844
+     ],
+     [
+      32.64949,
+      39.98434
+     ],
+     [
+      32.64954,
+      39.98429
+     ],
+     [
+      32.64961,
+      39.98426
+     ],
+     [
+      32.65043,
+      39.98429
+     ],
+     [
+      32.65041,
+      39.98471
+     ],
+     [
+      32.65039,
+      39.98514
+     ],
+     [
+      32.64991,
+      39.98511
+     ],
+     [
+      32.64945,
+      39.98509
+     ]
+    ]
+   ]
+  ]
+ }
+}

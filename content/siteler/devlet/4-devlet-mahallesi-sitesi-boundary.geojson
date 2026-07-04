@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "4. Devlet Mahallesi Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18700/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6047,
+      39.97481
+     ],
+     [
+      32.60378,
+      39.97501
+     ],
+     [
+      32.60351,
+      39.97415
+     ],
+     [
+      32.60357,
+      39.97402
+     ],
+     [
+      32.60419,
+      39.97385
+     ],
+     [
+      32.60441,
+      39.97432
+     ],
+     [
+      32.60447,
+      39.97431
+     ],
+     [
+      32.6047,
+      39.97481
+     ]
+    ]
+   ]
+  ]
+ }
+}

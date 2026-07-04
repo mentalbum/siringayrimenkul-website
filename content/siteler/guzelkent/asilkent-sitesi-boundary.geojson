@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Asilkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18486/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61207,
+      39.99052
+     ],
+     [
+      32.6127,
+      39.99107
+     ],
+     [
+      32.6127,
+      39.99112
+     ],
+     [
+      32.61224,
+      39.99141
+     ],
+     [
+      32.61171,
+      39.99102
+     ],
+     [
+      32.6116,
+      39.99084
+     ],
+     [
+      32.61207,
+      39.99052
+     ]
+    ]
+   ]
+  ]
+ }
+}

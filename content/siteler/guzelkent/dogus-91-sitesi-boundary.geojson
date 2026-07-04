@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Doğuş 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18482/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61509,
+      39.99122
+     ],
+     [
+      32.61499,
+      39.99124
+     ],
+     [
+      32.61457,
+      39.99101
+     ],
+     [
+      32.61457,
+      39.99095
+     ],
+     [
+      32.61508,
+      39.9904
+     ],
+     [
+      32.6156,
+      39.99067
+     ],
+     [
+      32.61509,
+      39.99122
+     ]
+    ]
+   ]
+  ]
+ }
+}

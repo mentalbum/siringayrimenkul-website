@@ -2,5 +2,16 @@
   "isim": "Soyak Sitesi",
   "slug": "soyak-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Soyak Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.983449,
+    "lng": 32.652849
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/soyak-sitesi-boundary.geojson",
+  "aciklama": "Soyak Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17463",
+      "parsel": "1"
+    }
+  ]
 }

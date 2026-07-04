@@ -2,5 +2,36 @@
   "isim": "Tekser Blokları",
   "slug": "tekser-bloklari",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Tekser Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.997848,
+    "lng": 32.624475
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/tekser-bloklari-boundary.geojson",
+  "aciklama": "Tekser Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17322",
+      "parsel": "1"
+    },
+    {
+      "no": "17323",
+      "parsel": "1"
+    },
+    {
+      "no": "17324",
+      "parsel": "1"
+    },
+    {
+      "no": "17325",
+      "parsel": "1"
+    },
+    {
+      "no": "17326",
+      "parsel": "1"
+    },
+    {
+      "no": "17327",
+      "parsel": "1"
+    }
+  ]
 }

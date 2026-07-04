@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Tepe Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17335/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62719,
+      39.99404
+     ],
+     [
+      32.62675,
+      39.99427
+     ],
+     [
+      32.62635,
+      39.99382
+     ],
+     [
+      32.62679,
+      39.99359
+     ],
+     [
+      32.62723,
+      39.99336
+     ],
+     [
+      32.62763,
+      39.99381
+     ],
+     [
+      32.62719,
+      39.99404
+     ]
+    ]
+   ]
+  ]
+ }
+}

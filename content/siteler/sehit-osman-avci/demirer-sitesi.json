@@ -2,5 +2,16 @@
   "isim": "Demirer Sitesi",
   "slug": "demirer-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Demirer Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984692,
+    "lng": 32.649939
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/demirer-sitesi-boundary.geojson",
+  "aciklama": "Demirer Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17460",
+      "parsel": "1"
+    }
+  ]
 }
