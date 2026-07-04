@@ -37,9 +37,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const mahalle = getMahalleBySlug(slug);
   if (!mahalle) return {};
 
+  const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
+  const sitelerParcasi =
+    siteSayisi > 0 ? `mahalledeki ${siteSayisi} site ve rezidansı tek tek tanıyor` : "mahalledeki siteleri tek tek tanıyor";
+
   return {
     title: `${mahalle.isim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: mahalledeki siteleri ve satılık/kiralık piyasayı yakından tanıyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
+    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık/kiralık piyasayı yakından takip ediyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -107,6 +111,7 @@ export default async function MahallePage({ params }: Props) {
   const boundary = getMahalleBoundary(mahalle);
   const siteMapEntries = siteler.map((site) => ({ site, boundary: getSiteBoundary(site) }));
   const hasSiteParcel = siteMapEntries.some((entry) => entry.boundary);
+  const haritaliSayisi = siteMapEntries.filter((entry) => entry.boundary).length;
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
   const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug);
@@ -148,6 +153,42 @@ export default async function MahallePage({ params }: Props) {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
       </header>
+
+      <dl className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <div className="rounded-2xl border border-border bg-surface p-4">
+          <dd className="text-2xl font-semibold tabular-nums text-navy">{siteler.length}</dd>
+          <dt className="mt-1 text-xs font-medium text-muted">Site &amp; Rezidans</dt>
+        </div>
+        {adalar.length > 0 && (
+          <div className="rounded-2xl border border-border bg-surface p-4">
+            <dd className="text-2xl font-semibold tabular-nums text-navy">{adalar.length}</dd>
+            <dt className="mt-1 text-xs font-medium text-muted">Kayıtlı Ada / Parsel</dt>
+          </div>
+        )}
+        {etaplar.length > 0 && (
+          <div className="rounded-2xl border border-border bg-surface p-4">
+            <dd className="text-2xl font-semibold tabular-nums text-navy">{etaplar.length}</dd>
+            <dt className="mt-1 text-xs font-medium text-muted">Etap</dt>
+          </div>
+        )}
+        {siteler.length > 0 && haritaliSayisi === siteler.length && (
+          <div className="rounded-2xl border border-gold bg-surface p-4">
+            <dd className="text-2xl font-semibold tabular-nums text-navy">
+              {haritaliSayisi}/{siteler.length}
+            </dd>
+            <dt className="mt-1 text-xs font-medium text-gold-dark">
+              Tapu Sınırlarıyla Haritalı Site
+            </dt>
+          </div>
+        )}
+      </dl>
+      {siteler.length > 0 && haritaliSayisi === siteler.length && (
+        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
+          {mahalle.isim}&apos;ndeki sitelerin <strong>tamamını</strong> gerçek tapu (TKGM) ada/parsel
+          sınırlarıyla haritaladık. Evinizin değerini mahalle ortalamasından değil, sitenizin
+          gerçeğinden yola çıkarak konuşuyoruz.
+        </p>
+      )}
 
       <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_1fr]">
         <div className="space-y-4">
