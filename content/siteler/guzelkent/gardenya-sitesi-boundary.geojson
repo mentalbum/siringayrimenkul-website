@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gardenya Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18479/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61505,
+      39.99259
+     ],
+     [
+      32.61497,
+      39.99245
+     ],
+     [
+      32.61512,
+      39.99217
+     ],
+     [
+      32.61521,
+      39.99212
+     ],
+     [
+      32.61604,
+      39.99238
+     ],
+     [
+      32.61608,
+      39.9924
+     ],
+     [
+      32.61588,
+      39.99277
+     ],
+     [
+      32.61576,
+      39.9928
+     ],
+     [
+      32.61505,
+      39.99259
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gülenkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18452/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61862,
+      39.99685
+     ],
+     [
+      32.61917,
+      39.99637
+     ],
+     [
+      32.61924,
+      39.99636
+     ],
+     [
+      32.6196,
+      39.9966
+     ],
+     [
+      32.61951,
+      39.99719
+     ],
+     [
+      32.61942,
+      39.9973
+     ],
+     [
+      32.61895,
+      39.99707
+     ],
+     [
+      32.61862,
+      39.99685
+     ]
+    ]
+   ]
+  ]
+ }
+}

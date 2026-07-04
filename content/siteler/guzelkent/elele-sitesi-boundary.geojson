@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Elele Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18454/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61986,
+      39.99662
+     ],
+     [
+      32.6198,
+      39.99657
+     ],
+     [
+      32.61988,
+      39.99598
+     ],
+     [
+      32.61994,
+      39.99595
+     ],
+     [
+      32.62066,
+      39.99601
+     ],
+     [
+      32.62071,
+      39.99605
+     ],
+     [
+      32.62063,
+      39.99663
+     ],
+     [
+      32.62057,
+      39.99667
+     ],
+     [
+      32.61986,
+      39.99662
+     ]
+    ]
+   ]
+  ]
+ }
+}

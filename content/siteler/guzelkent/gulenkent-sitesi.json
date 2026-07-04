@@ -2,5 +2,16 @@
   "isim": "Gülenkent Sitesi",
   "slug": "gulenkent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gülenkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.996818,
+    "lng": 32.619195
+  },
+  "sinirGeoJSON": "siteler/guzelkent/gulenkent-sitesi-boundary.geojson",
+  "aciklama": "Gülenkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18452",
+      "parsel": "1"
+    }
+  ]
 }

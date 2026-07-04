@@ -2,5 +2,16 @@
   "isim": "Durtaş 91 Sitesi",
   "slug": "durtas-91-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Durtaş 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990168,
+    "lng": 32.613421
+  },
+  "sinirGeoJSON": "siteler/guzelkent/durtas-91-sitesi-boundary.geojson",
+  "aciklama": "Durtaş 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18484",
+      "parsel": "1"
+    }
+  ]
 }

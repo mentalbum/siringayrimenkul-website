@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Durtaş 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18484/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61345,
+      39.99059
+     ],
+     [
+      32.61283,
+      39.99003
+     ],
+     [
+      32.6131,
+      39.98985
+     ],
+     [
+      32.61385,
+      39.98991
+     ],
+     [
+      32.61381,
+      39.9904
+     ],
+     [
+      32.6135,
+      39.9906
+     ],
+     [
+      32.61345,
+      39.99059
+     ]
+    ]
+   ]
+  ]
+ }
+}

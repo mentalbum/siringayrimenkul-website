@@ -2,5 +2,16 @@
   "isim": "Elele Sitesi",
   "slug": "elele-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Elele Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.996314,
+    "lng": 32.620256
+  },
+  "sinirGeoJSON": "siteler/guzelkent/elele-sitesi-boundary.geojson",
+  "aciklama": "Elele Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18454",
+      "parsel": "1"
+    }
+  ]
 }

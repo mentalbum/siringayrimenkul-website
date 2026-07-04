@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Evrimkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18656/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60472,
+      39.98483
+     ],
+     [
+      32.60372,
+      39.98489
+     ],
+     [
+      32.60368,
+      39.98487
+     ],
+     [
+      32.60363,
+      39.98442
+     ],
+     [
+      32.60469,
+      39.98435
+     ],
+     [
+      32.60472,
+      39.98483
+     ]
+    ]
+   ]
+  ]
+ }
+}
