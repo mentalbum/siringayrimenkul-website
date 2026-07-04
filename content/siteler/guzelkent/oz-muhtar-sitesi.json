@@ -2,5 +2,16 @@
   "isim": "Öz Muhtar Sitesi",
   "slug": "oz-muhtar-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Öz Muhtar Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.985235,
+    "lng": 32.608585
+  },
+  "sinirGeoJSON": "siteler/guzelkent/oz-muhtar-sitesi-boundary.geojson",
+  "aciklama": "Öz Muhtar Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18670",
+      "parsel": "1"
+    }
+  ]
 }

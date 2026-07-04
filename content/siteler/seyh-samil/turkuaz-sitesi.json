@@ -2,5 +2,16 @@
   "isim": "Turkuaz Sitesi",
   "slug": "turkuaz-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Turkuaz Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998193,
+    "lng": 32.634613
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/turkuaz-sitesi-boundary.geojson",
+  "aciklama": "Turkuaz Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46273",
+      "parsel": "3"
+    }
+  ]
 }

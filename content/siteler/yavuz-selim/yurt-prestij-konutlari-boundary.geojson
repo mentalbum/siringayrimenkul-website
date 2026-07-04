@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yurt Prestij Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46433/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6142,
+      40.00441
+     ],
+     [
+      32.61413,
+      40.00443
+     ],
+     [
+      32.61291,
+      40.00461
+     ],
+     [
+      32.61288,
+      40.00458
+     ],
+     [
+      32.61328,
+      40.00396
+     ],
+     [
+      32.61334,
+      40.00386
+     ],
+     [
+      32.61397,
+      40.0033
+     ],
+     [
+      32.6147,
+      40.00375
+     ],
+     [
+      32.61483,
+      40.00383
+     ],
+     [
+      32.6142,
+      40.00441
+     ]
+    ]
+   ]
+  ]
+ }
+}

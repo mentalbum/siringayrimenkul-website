@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Utku Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45822/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61152,
+      40.00164
+     ],
+     [
+      32.61146,
+      40.00169
+     ],
+     [
+      32.61044,
+      40.00147
+     ],
+     [
+      32.6105,
+      40.00005
+     ],
+     [
+      32.61111,
+      40.00017
+     ],
+     [
+      32.61133,
+      40.00026
+     ],
+     [
+      32.61148,
+      40.00042
+     ],
+     [
+      32.61158,
+      40.00073
+     ],
+     [
+      32.61152,
+      40.00164
+     ]
+    ]
+   ]
+  ]
+ }
+}

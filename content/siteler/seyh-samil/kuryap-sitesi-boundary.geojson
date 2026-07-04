@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kuryap Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46275/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63321,
+      40.00005
+     ],
+     [
+      32.63176,
+      40.00004
+     ],
+     [
+      32.63156,
+      39.9999
+     ],
+     [
+      32.63161,
+      39.99936
+     ],
+     [
+      32.63331,
+      39.99907
+     ],
+     [
+      32.63321,
+      40.00005
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Arzutaş Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18644/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60465,
+      39.987
+     ],
+     [
+      32.60465,
+      39.98703
+     ],
+     [
+      32.60392,
+      39.98748
+     ],
+     [
+      32.60349,
+      39.98706
+     ],
+     [
+      32.6042,
+      39.98662
+     ],
+     [
+      32.60427,
+      39.98663
+     ],
+     [
+      32.60465,
+      39.987
+     ]
+    ]
+   ]
+  ]
+ }
+}

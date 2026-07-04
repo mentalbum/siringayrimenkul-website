@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ra-Da Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46530/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62611,
+      39.97837
+     ],
+     [
+      32.62695,
+      39.97837
+     ],
+     [
+      32.62696,
+      39.97898
+     ],
+     [
+      32.62614,
+      39.97899
+     ],
+     [
+      32.62611,
+      39.97837
+     ]
+    ]
+   ]
+  ]
+ }
+}

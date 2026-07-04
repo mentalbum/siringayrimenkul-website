@@ -2,5 +2,16 @@
   "isim": "Umar Sitesi",
   "slug": "umar-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Umar Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99944,
+    "lng": 32.634083
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/umar-sitesi-boundary.geojson",
+  "aciklama": "Umar Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46272",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Arzutaş Sitesi",
   "slug": "arzutas-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Arzutaş Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.987037,
+    "lng": 32.604076
+  },
+  "sinirGeoJSON": "siteler/guzelkent/arzutas-sitesi-boundary.geojson",
+  "aciklama": "Arzutaş Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18644",
+      "parsel": "1"
+    }
+  ]
 }

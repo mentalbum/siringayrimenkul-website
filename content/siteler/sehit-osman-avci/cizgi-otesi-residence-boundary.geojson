@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çizgi Ötesi Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46654/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66033,
+      39.97033
+     ],
+     [
+      32.65991,
+      39.97027
+     ],
+     [
+      32.65922,
+      39.97018
+     ],
+     [
+      32.6592,
+      39.9697
+     ],
+     [
+      32.65931,
+      39.96965
+     ],
+     [
+      32.6604,
+      39.96969
+     ],
+     [
+      32.66048,
+      39.9697
+     ],
+     [
+      32.66033,
+      39.97033
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gerçek - 92 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18669/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60836,
+      39.98571
+     ],
+     [
+      32.60782,
+      39.98594
+     ],
+     [
+      32.60775,
+      39.98593
+     ],
+     [
+      32.6073,
+      39.98533
+     ],
+     [
+      32.60732,
+      39.98528
+     ],
+     [
+      32.60786,
+      39.98504
+     ],
+     [
+      32.608,
+      39.98516
+     ],
+     [
+      32.60836,
+      39.98571
+     ]
+    ]
+   ]
+  ]
+ }
+}

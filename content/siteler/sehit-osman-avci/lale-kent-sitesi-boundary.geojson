@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Lale Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46665/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65272,
+      39.97161
+     ],
+     [
+      32.65261,
+      39.97147
+     ],
+     [
+      32.65317,
+      39.97123
+     ],
+     [
+      32.65328,
+      39.97137
+     ],
+     [
+      32.65272,
+      39.97161
+     ]
+    ]
+   ]
+  ]
+ }
+}

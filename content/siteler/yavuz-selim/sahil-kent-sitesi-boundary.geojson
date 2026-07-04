@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sahil Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45823/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61123,
+      40.00272
+     ],
+     [
+      32.61018,
+      40.00247
+     ],
+     [
+      32.61042,
+      40.00161
+     ],
+     [
+      32.61144,
+      40.00182
+     ],
+     [
+      32.61148,
+      40.00188
+     ],
+     [
+      32.61123,
+      40.00272
+     ]
+    ]
+   ]
+  ]
+ }
+}

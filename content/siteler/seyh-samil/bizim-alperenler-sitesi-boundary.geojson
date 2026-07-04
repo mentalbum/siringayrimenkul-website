@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bizim Alperenler Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46265/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62873,
+      40.00231
+     ],
+     [
+      32.62927,
+      40.0019
+     ],
+     [
+      32.62935,
+      40.0019
+     ],
+     [
+      32.63082,
+      40.00287
+     ],
+     [
+      32.63048,
+      40.00317
+     ],
+     [
+      32.63032,
+      40.00319
+     ],
+     [
+      32.62955,
+      40.00268
+     ],
+     [
+      32.62939,
+      40.00276
+     ],
+     [
+      32.62873,
+      40.00231
+     ]
+    ]
+   ]
+  ]
+ }
+}

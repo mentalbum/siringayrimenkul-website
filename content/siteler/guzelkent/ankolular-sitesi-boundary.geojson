@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ankolular Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18668/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60755,
+      39.98602
+     ],
+     [
+      32.60751,
+      39.98608
+     ],
+     [
+      32.60697,
+      39.98632
+     ],
+     [
+      32.6065,
+      39.9857
+     ],
+     [
+      32.60651,
+      39.98565
+     ],
+     [
+      32.60704,
+      39.98541
+     ],
+     [
+      32.6071,
+      39.98542
+     ],
+     [
+      32.60755,
+      39.98602
+     ]
+    ]
+   ]
+  ]
+ }
+}

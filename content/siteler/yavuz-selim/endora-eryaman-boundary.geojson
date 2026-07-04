@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Endora Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46431/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.612,
+      40.00471
+     ],
+     [
+      32.61096,
+      40.0044
+     ],
+     [
+      32.61135,
+      40.0031
+     ],
+     [
+      32.61277,
+      40.00335
+     ],
+     [
+      32.612,
+      40.00471
+     ]
+    ]
+   ]
+  ]
+ }
+}

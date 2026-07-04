@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Serpil Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46438/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61339,
+      40.00199
+     ],
+     [
+      32.61186,
+      40.00179
+     ],
+     [
+      32.61175,
+      40.00169
+     ],
+     [
+      32.6118,
+      40.00095
+     ],
+     [
+      32.61375,
+      40.00113
+     ],
+     [
+      32.61339,
+      40.00199
+     ]
+    ]
+   ]
+  ]
+ }
+}

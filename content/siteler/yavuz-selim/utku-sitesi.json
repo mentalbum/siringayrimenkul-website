@@ -2,5 +2,16 @@
   "isim": "Utku Sitesi",
   "slug": "utku-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Utku Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000888,
+    "lng": 32.610998
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/utku-sitesi-boundary.geojson",
+  "aciklama": "Utku Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45822",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Ödevci Sitesi",
   "slug": "odevci-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Ödevci Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.974524,
+    "lng": 32.655159
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/odevci-sitesi-boundary.geojson",
+  "aciklama": "Ödevci Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46648",
+      "parsel": "5"
+    }
+  ]
 }

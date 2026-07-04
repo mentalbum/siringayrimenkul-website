@@ -2,5 +2,16 @@
   "isim": "Bizim Şirinköy Sitesi",
   "slug": "bizim-sirinkoy-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Bizim Şirinköy Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.996616,
+    "lng": 32.605181
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/bizim-sirinkoy-sitesi-boundary.geojson",
+  "aciklama": "Bizim Şirinköy Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19508",
+      "parsel": "3"
+    }
+  ]
 }

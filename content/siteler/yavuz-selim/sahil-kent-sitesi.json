@@ -2,5 +2,16 @@
   "isim": "Sahil Kent Sitesi",
   "slug": "sahil-kent-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Sahil Kent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002157,
+    "lng": 32.610833
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/sahil-kent-sitesi-boundary.geojson",
+  "aciklama": "Sahil Kent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45823",
+      "parsel": "1"
+    }
+  ]
 }

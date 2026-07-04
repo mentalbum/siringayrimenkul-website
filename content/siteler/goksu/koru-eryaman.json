@@ -2,5 +2,16 @@
   "isim": "Koru Eryaman",
   "slug": "koru-eryaman",
   "mahalleSlug": "goksu",
-  "aciklama": "Koru Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002714,
+    "lng": 32.646857
+  },
+  "sinirGeoJSON": "siteler/goksu/koru-eryaman-boundary.geojson",
+  "aciklama": "Koru Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63379",
+      "parsel": "6"
+    }
+  ]
 }

@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Taşkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45830/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60924,
+      40.00358
+     ],
+     [
+      32.60832,
+      40.00339
+     ],
+     [
+      32.60852,
+      40.00248
+     ],
+     [
+      32.60955,
+      40.00272
+     ],
+     [
+      32.60924,
+      40.00358
+     ]
+    ]
+   ]
+  ]
+ }
+}

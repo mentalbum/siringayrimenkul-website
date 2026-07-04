@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Türeli Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46643/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65805,
+      39.97654
+     ],
+     [
+      32.65746,
+      39.97652
+     ],
+     [
+      32.65746,
+      39.97651
+     ],
+     [
+      32.65751,
+      39.97583
+     ],
+     [
+      32.65809,
+      39.97585
+     ],
+     [
+      32.65805,
+      39.97654
+     ]
+    ]
+   ]
+  ]
+ }
+}

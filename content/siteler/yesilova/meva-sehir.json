@@ -2,5 +2,16 @@
   "isim": "Meva Şehir",
   "slug": "meva-sehir",
   "mahalleSlug": "yesilova",
-  "aciklama": "Meva Şehir, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.964418,
+    "lng": 32.623667
+  },
+  "sinirGeoJSON": "siteler/yesilova/meva-sehir-boundary.geojson",
+  "aciklama": "Meva Şehir, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "49152",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Postakent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18663/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60933,
+      39.98381
+     ],
+     [
+      32.60862,
+      39.98406
+     ],
+     [
+      32.60857,
+      39.98405
+     ],
+     [
+      32.60822,
+      39.98345
+     ],
+     [
+      32.60897,
+      39.98319
+     ],
+     [
+      32.60933,
+      39.98381
+     ]
+    ]
+   ]
+  ]
+ }
+}

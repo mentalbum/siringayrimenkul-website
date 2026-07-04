@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Burak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46269/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62942,
+      40.00154
+     ],
+     [
+      32.62886,
+      40.00116
+     ],
+     [
+      32.62957,
+      40.00064
+     ],
+     [
+      32.63008,
+      40.00103
+     ],
+     [
+      32.62942,
+      40.00154
+     ]
+    ]
+   ]
+  ]
+ }
+}

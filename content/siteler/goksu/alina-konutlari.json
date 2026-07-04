@@ -2,5 +2,16 @@
   "isim": "Alina Konutları",
   "slug": "alina-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Alina Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999841,
+    "lng": 32.641697
+  },
+  "sinirGeoJSON": "siteler/goksu/alina-konutlari-boundary.geojson",
+  "aciklama": "Alina Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63391",
+      "parsel": "5"
+    }
+  ]
 }

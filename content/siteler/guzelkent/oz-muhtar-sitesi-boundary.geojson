@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Öz Muhtar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18670/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6091,
+      39.98528
+     ],
+     [
+      32.6091,
+      39.98533
+     ],
+     [
+      32.60907,
+      39.98538
+     ],
+     [
+      32.60903,
+      39.98541
+     ],
+     [
+      32.60841,
+      39.98568
+     ],
+     [
+      32.60805,
+      39.98514
+     ],
+     [
+      32.60807,
+      39.98508
+     ],
+     [
+      32.60879,
+      39.98484
+     ],
+     [
+      32.60886,
+      39.98488
+     ],
+     [
+      32.6091,
+      39.98528
+     ]
+    ]
+   ]
+  ]
+ }
+}

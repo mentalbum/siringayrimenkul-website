@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ay Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45917/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60977,
+      39.97636
+     ],
+     [
+      32.60914,
+      39.97642
+     ],
+     [
+      32.60904,
+      39.9764
+     ],
+     [
+      32.60846,
+      39.97608
+     ],
+     [
+      32.60847,
+      39.9759
+     ],
+     [
+      32.60978,
+      39.9759
+     ],
+     [
+      32.60977,
+      39.97636
+     ]
+    ]
+   ]
+  ]
+ }
+}

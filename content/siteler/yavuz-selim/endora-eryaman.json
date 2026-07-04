@@ -2,5 +2,16 @@
   "isim": "Endora Eryaman",
   "slug": "endora-eryaman",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Endora Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003863,
+    "lng": 32.611793
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/endora-eryaman-boundary.geojson",
+  "aciklama": "Endora Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46431",
+      "parsel": "1"
+    }
+  ]
 }

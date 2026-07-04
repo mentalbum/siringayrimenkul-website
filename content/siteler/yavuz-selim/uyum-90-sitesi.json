@@ -2,5 +2,16 @@
   "isim": "Uyum 90 Sitesi",
   "slug": "uyum-90-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Uyum 90 Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000449,
+    "lng": 32.607825
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/uyum-90-sitesi-boundary.geojson",
+  "aciklama": "Uyum 90 Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47603",
+      "parsel": "1"
+    }
+  ]
 }

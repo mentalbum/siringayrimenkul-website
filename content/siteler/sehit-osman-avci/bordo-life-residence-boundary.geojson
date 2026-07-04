@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bordo Life Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46659/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65745,
+      39.97188
+     ],
+     [
+      32.65745,
+      39.97127
+     ],
+     [
+      32.65831,
+      39.97126
+     ],
+     [
+      32.6583,
+      39.9719
+     ],
+     [
+      32.65745,
+      39.97188
+     ]
+    ]
+   ]
+  ]
+ }
+}

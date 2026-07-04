@@ -2,5 +2,16 @@
   "isim": "Çizgi Ötesi Residence",
   "slug": "cizgi-otesi-residence",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Çizgi Ötesi Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.969957,
+    "lng": 32.65983
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/cizgi-otesi-residence-boundary.geojson",
+  "aciklama": "Çizgi Ötesi Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46654",
+      "parsel": "6"
+    }
+  ]
 }

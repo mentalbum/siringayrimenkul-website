@@ -2,5 +2,16 @@
   "isim": "Safir Rezidans",
   "slug": "safir-rezidans",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Safir Rezidans, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977294,
+    "lng": 32.655155
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/safir-rezidans-boundary.geojson",
+  "aciklama": "Safir Rezidans, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46640",
+      "parsel": "5"
+    }
+  ]
 }

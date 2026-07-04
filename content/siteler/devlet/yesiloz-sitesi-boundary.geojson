@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeşilöz Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18686/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60505,
+      39.97967
+     ],
+     [
+      32.60397,
+      39.97967
+     ],
+     [
+      32.60411,
+      39.97908
+     ],
+     [
+      32.60414,
+      39.97903
+     ],
+     [
+      32.60418,
+      39.97899
+     ],
+     [
+      32.60423,
+      39.97896
+     ],
+     [
+      32.6043,
+      39.97894
+     ],
+     [
+      32.60438,
+      39.97893
+     ],
+     [
+      32.60506,
+      39.97896
+     ],
+     [
+      32.60505,
+      39.97967
+     ]
+    ]
+   ]
+  ]
+ }
+}

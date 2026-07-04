@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Buse Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46470/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6419,
+      39.98386
+     ],
+     [
+      32.64195,
+      39.98503
+     ],
+     [
+      32.64189,
+      39.98537
+     ],
+     [
+      32.64135,
+      39.98531
+     ],
+     [
+      32.63994,
+      39.98503
+     ],
+     [
+      32.63992,
+      39.98502
+     ],
+     [
+      32.6399,
+      39.98498
+     ],
+     [
+      32.64025,
+      39.98397
+     ],
+     [
+      32.6419,
+      39.98386
+     ]
+    ]
+   ]
+  ]
+ }
+}

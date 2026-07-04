@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Köşk Birlik Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46266/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63233,
+      40.00253
+     ],
+     [
+      32.63156,
+      40.00317
+     ],
+     [
+      32.63148,
+      40.00318
+     ],
+     [
+      32.63053,
+      40.00255
+     ],
+     [
+      32.63052,
+      40.00249
+     ],
+     [
+      32.63124,
+      40.0018
+     ],
+     [
+      32.63233,
+      40.00253
+     ]
+    ]
+   ]
+  ]
+ }
+}

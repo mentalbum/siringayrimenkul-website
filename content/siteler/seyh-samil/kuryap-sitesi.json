@@ -2,5 +2,16 @@
   "isim": "Kuryap Sitesi",
   "slug": "kuryap-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Kuryap Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999623,
+    "lng": 32.63248
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/kuryap-sitesi-boundary.geojson",
+  "aciklama": "Kuryap Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46275",
+      "parsel": "1"
+    }
+  ]
 }

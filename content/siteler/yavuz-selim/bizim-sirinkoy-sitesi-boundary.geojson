@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bizim Şirinköy Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19508/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60486,
+      39.99726
+     ],
+     [
+      32.60452,
+      39.99689
+     ],
+     [
+      32.60476,
+      39.99634
+     ],
+     [
+      32.6054,
+      39.996
+     ],
+     [
+      32.60548,
+      39.99602
+     ],
+     [
+      32.60595,
+      39.99653
+     ],
+     [
+      32.60565,
+      39.99669
+     ],
+     [
+      32.60561,
+      39.99686
+     ],
+     [
+      32.60486,
+      39.99726
+     ]
+    ]
+   ]
+  ]
+ }
+}

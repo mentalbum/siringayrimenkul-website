@@ -2,5 +2,16 @@
   "isim": "Meltem Sitesi",
   "slug": "meltem-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Meltem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984155,
+    "lng": 32.602837
+  },
+  "sinirGeoJSON": "siteler/guzelkent/meltem-sitesi-boundary.geojson",
+  "aciklama": "Meltem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18654",
+      "parsel": "1"
+    }
+  ]
 }

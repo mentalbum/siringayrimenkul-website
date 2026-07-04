@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Z. Yayla Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46661/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65569,
+      39.97063
+     ],
+     [
+      32.65511,
+      39.97066
+     ],
+     [
+      32.65507,
+      39.97031
+     ],
+     [
+      32.65565,
+      39.97025
+     ],
+     [
+      32.65569,
+      39.97063
+     ]
+    ]
+   ]
+  ]
+ }
+}

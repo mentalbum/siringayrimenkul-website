@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Havayolları Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46235/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61827,
+      39.99775
+     ],
+     [
+      32.6178,
+      39.99818
+     ],
+     [
+      32.61775,
+      39.99818
+     ],
+     [
+      32.61689,
+      39.99774
+     ],
+     [
+      32.61688,
+      39.9977
+     ],
+     [
+      32.61723,
+      39.99738
+     ],
+     [
+      32.61765,
+      39.99701
+     ],
+     [
+      32.61806,
+      39.99696
+     ],
+     [
+      32.61841,
+      39.99714
+     ],
+     [
+      32.61872,
+      39.9973
+     ],
+     [
+      32.61873,
+      39.99733
+     ],
+     [
+      32.61827,
+      39.99775
+     ]
+    ]
+   ]
+  ]
+ }
+}

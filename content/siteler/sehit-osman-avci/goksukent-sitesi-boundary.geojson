@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksukent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46619/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65376,
+      39.98858
+     ],
+     [
+      32.65317,
+      39.98908
+     ],
+     [
+      32.65308,
+      39.98908
+     ],
+     [
+      32.65208,
+      39.98866
+     ],
+     [
+      32.65258,
+      39.98789
+     ],
+     [
+      32.65394,
+      39.9884
+     ],
+     [
+      32.65376,
+      39.98858
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Acar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46267/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63215,
+      40.00199
+     ],
+     [
+      32.63215,
+      40.00117
+     ],
+     [
+      32.63365,
+      40.00117
+     ],
+     [
+      32.63368,
+      40.00121
+     ],
+     [
+      32.63358,
+      40.00135
+     ],
+     [
+      32.63314,
+      40.00185
+     ],
+     [
+      32.63239,
+      40.00248
+     ],
+     [
+      32.63194,
+      40.00218
+     ],
+     [
+      32.63215,
+      40.00199
+     ]
+    ]
+   ]
+  ]
+ }
+}

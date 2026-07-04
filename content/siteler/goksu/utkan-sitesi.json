@@ -2,5 +2,16 @@
   "isim": "Utkan Sitesi",
   "slug": "utkan-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Utkan Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99375,
+    "lng": 32.639265
+  },
+  "sinirGeoJSON": "siteler/goksu/utkan-sitesi-boundary.geojson",
+  "aciklama": "Utkan Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46457",
+      "parsel": "1"
+    }
+  ]
 }

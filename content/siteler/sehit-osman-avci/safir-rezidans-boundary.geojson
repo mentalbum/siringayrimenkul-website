@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Safir Rezidans",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46640/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6555,
+      39.9768
+     ],
+     [
+      32.65547,
+      39.97788
+     ],
+     [
+      32.65496,
+      39.97787
+     ],
+     [
+      32.65481,
+      39.97723
+     ],
+     [
+      32.65472,
+      39.97686
+     ],
+     [
+      32.65472,
+      39.97678
+     ],
+     [
+      32.6555,
+      39.9768
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Şehr-i Huzur Gold Konutları",
   "slug": "sehr-i-huzur-gold-konutlari",
   "mahalleSlug": "eryaman",
-  "aciklama": "Şehr-i Huzur Gold Konutları, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.972186,
+    "lng": 32.609167
+  },
+  "sinirGeoJSON": "siteler/eryaman/sehr-i-huzur-gold-konutlari-boundary.geojson",
+  "aciklama": "Şehr-i Huzur Gold Konutları, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45926",
+      "parsel": "3"
+    }
+  ]
 }

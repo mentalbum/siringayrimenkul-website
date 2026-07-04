@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Daldikenler Yasemin Evleri Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46660/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65622,
+      39.97213
+     ],
+     [
+      32.65525,
+      39.97213
+     ],
+     [
+      32.65517,
+      39.9713
+     ],
+     [
+      32.65623,
+      39.9713
+     ],
+     [
+      32.65622,
+      39.97213
+     ]
+    ]
+   ]
+  ]
+ }
+}

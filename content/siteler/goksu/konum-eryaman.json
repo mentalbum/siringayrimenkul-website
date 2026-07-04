@@ -2,5 +2,16 @@
   "isim": "Konum Eryaman",
   "slug": "konum-eryaman",
   "mahalleSlug": "goksu",
-  "aciklama": "Konum Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998895,
+    "lng": 32.639088
+  },
+  "sinirGeoJSON": "siteler/goksu/konum-eryaman-boundary.geojson",
+  "aciklama": "Konum Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63407",
+      "parsel": "2"
+    }
+  ]
 }

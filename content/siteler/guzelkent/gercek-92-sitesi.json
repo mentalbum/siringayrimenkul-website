@@ -2,5 +2,16 @@
   "isim": "Gerçek - 92 Sitesi",
   "slug": "gercek-92-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gerçek - 92 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.985501,
+    "lng": 32.607832
+  },
+  "sinirGeoJSON": "siteler/guzelkent/gercek-92-sitesi-boundary.geojson",
+  "aciklama": "Gerçek - 92 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18669",
+      "parsel": "1"
+    }
+  ]
 }

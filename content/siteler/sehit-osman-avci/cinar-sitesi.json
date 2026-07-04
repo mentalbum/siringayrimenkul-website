@@ -2,5 +2,16 @@
   "isim": "Çınar Sitesi",
   "slug": "cinar-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Çınar Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.971017,
+    "lng": 32.652317
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/cinar-sitesi-boundary.geojson",
+  "aciklama": "Çınar Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46667",
+      "parsel": "2"
+    }
+  ]
 }

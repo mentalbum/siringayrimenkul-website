@@ -2,5 +2,16 @@
   "isim": "Göksukent Sitesi",
   "slug": "goksukent-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Göksukent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988503,
+    "lng": 32.652957
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/goksukent-sitesi-boundary.geojson",
+  "aciklama": "Göksukent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46619",
+      "parsel": "4"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Eryaman Port",
   "slug": "eryaman-port",
   "mahalleSlug": "yesilova",
-  "aciklama": "Eryaman Port, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.964857,
+    "lng": 32.60819
+  },
+  "sinirGeoJSON": "siteler/yesilova/eryaman-port-boundary.geojson",
+  "aciklama": "Eryaman Port, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47545",
+      "parsel": "1"
+    }
+  ]
 }

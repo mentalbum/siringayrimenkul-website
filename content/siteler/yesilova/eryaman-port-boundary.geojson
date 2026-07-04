@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eryaman Port",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47545/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6091,
+      39.96424
+     ],
+     [
+      32.60935,
+      39.96509
+     ],
+     [
+      32.60788,
+      39.96535
+     ],
+     [
+      32.60788,
+      39.96542
+     ],
+     [
+      32.60733,
+      39.96552
+     ],
+     [
+      32.60707,
+      39.96466
+     ],
+     [
+      32.60711,
+      39.96462
+     ],
+     [
+      32.60715,
+      39.96458
+     ],
+     [
+      32.6091,
+      39.96424
+     ]
+    ]
+   ]
+  ]
+ }
+}

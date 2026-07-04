@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Golden Life Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46368/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65418,
+      39.96574
+     ],
+     [
+      32.6529,
+      39.96587
+     ],
+     [
+      32.6528,
+      39.96546
+     ],
+     [
+      32.65408,
+      39.96531
+     ],
+     [
+      32.65408,
+      39.96532
+     ],
+     [
+      32.65418,
+      39.96574
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Doğapark Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46229/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62075,
+      39.99987
+     ],
+     [
+      32.62017,
+      39.99986
+     ],
+     [
+      32.6197,
+      39.99986
+     ],
+     [
+      32.61947,
+      39.99978
+     ],
+     [
+      32.61902,
+      39.99948
+     ],
+     [
+      32.61863,
+      39.9992
+     ],
+     [
+      32.61861,
+      39.99912
+     ],
+     [
+      32.61909,
+      39.99858
+     ],
+     [
+      32.61965,
+      39.9988
+     ],
+     [
+      32.62027,
+      39.99905
+     ],
+     [
+      32.6209,
+      39.9993
+     ],
+     [
+      32.62075,
+      39.99987
+     ]
+    ]
+   ]
+  ]
+ }
+}

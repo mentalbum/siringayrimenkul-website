@@ -2,5 +2,16 @@
   "isim": "Ak 91 Sitesi",
   "slug": "ak-91-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Ak 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99052,
+    "lng": 32.61283
+  },
+  "sinirGeoJSON": "siteler/guzelkent/ak-91-sitesi-boundary.geojson",
+  "aciklama": "Ak 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18485",
+      "parsel": "1"
+    }
+  ]
 }

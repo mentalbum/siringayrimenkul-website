@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Lapis Garden",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45924/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60981,
+      39.97392
+     ],
+     [
+      32.60856,
+      39.97392
+     ],
+     [
+      32.60858,
+      39.9736
+     ],
+     [
+      32.6092,
+      39.9736
+     ],
+     [
+      32.60981,
+      39.9736
+     ],
+     [
+      32.60981,
+      39.97392
+     ]
+    ]
+   ]
+  ]
+ }
+}

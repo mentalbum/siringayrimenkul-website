@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ödevci Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46648/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65557,
+      39.97486
+     ],
+     [
+      32.65512,
+      39.97485
+     ],
+     [
+      32.65472,
+      39.97484
+     ],
+     [
+      32.65472,
+      39.97429
+     ],
+     [
+      32.65481,
+      39.97423
+     ],
+     [
+      32.6556,
+      39.97418
+     ],
+     [
+      32.65557,
+      39.97486
+     ]
+    ]
+   ]
+  ]
+ }
+}

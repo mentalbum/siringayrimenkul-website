@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Metro Yaşam Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18672/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60837,
+      39.98404
+     ],
+     [
+      32.60766,
+      39.98429
+     ],
+     [
+      32.6076,
+      39.98426
+     ],
+     [
+      32.60756,
+      39.98349
+     ],
+     [
+      32.60762,
+      39.98345
+     ],
+     [
+      32.60793,
+      39.98344
+     ],
+     [
+      32.60798,
+      39.98345
+     ],
+     [
+      32.60802,
+      39.98347
+     ],
+     [
+      32.60805,
+      39.98351
+     ],
+     [
+      32.60837,
+      39.98404
+     ]
+    ]
+   ]
+  ]
+ }
+}

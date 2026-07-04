@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Pınar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45923/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60979,
+      39.97474
+     ],
+     [
+      32.60852,
+      39.97474
+     ],
+     [
+      32.60854,
+      39.97442
+     ],
+     [
+      32.6098,
+      39.97443
+     ],
+     [
+      32.60979,
+      39.97474
+     ]
+    ]
+   ]
+  ]
+ }
+}

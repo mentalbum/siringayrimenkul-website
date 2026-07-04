@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Uyum 90 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47603/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60825,
+      40.00103
+     ],
+     [
+      32.60782,
+      40.00098
+     ],
+     [
+      32.6073,
+      40.0009
+     ],
+     [
+      32.60724,
+      40.00083
+     ],
+     [
+      32.60727,
+      40.0005
+     ],
+     [
+      32.60748,
+      39.99994
+     ],
+     [
+      32.60755,
+      39.9999
+     ],
+     [
+      32.60836,
+      39.99991
+     ],
+     [
+      32.60825,
+      40.00103
+     ]
+    ]
+   ]
+  ]
+ }
+}

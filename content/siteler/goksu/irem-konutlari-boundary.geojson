@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İrem Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46460/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63898,
+      39.99076
+     ],
+     [
+      32.63873,
+      39.99046
+     ],
+     [
+      32.63849,
+      39.98824
+     ],
+     [
+      32.63854,
+      39.98819
+     ],
+     [
+      32.63861,
+      39.98817
+     ],
+     [
+      32.64032,
+      39.98847
+     ],
+     [
+      32.64067,
+      39.98977
+     ],
+     [
+      32.64057,
+      39.99001
+     ],
+     [
+      32.63898,
+      39.99076
+     ]
+    ]
+   ]
+  ]
+ }
+}

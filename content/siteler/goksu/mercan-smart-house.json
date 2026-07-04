@@ -2,5 +2,16 @@
   "isim": "Mercan Smart House",
   "slug": "mercan-smart-house",
   "mahalleSlug": "goksu",
-  "aciklama": "Mercan Smart House, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999868,
+    "lng": 32.645985
+  },
+  "sinirGeoJSON": "siteler/goksu/mercan-smart-house-boundary.geojson",
+  "aciklama": "Mercan Smart House, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63404",
+      "parsel": "2"
+    }
+  ]
 }

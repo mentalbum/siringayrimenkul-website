@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Umar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46272/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63339,
+      39.99905
+     ],
+     [
+      32.63496,
+      39.99873
+     ],
+     [
+      32.63499,
+      39.99877
+     ],
+     [
+      32.63473,
+      39.99951
+     ],
+     [
+      32.63447,
+      39.99999
+     ],
+     [
+      32.63434,
+      40.00006
+     ],
+     [
+      32.63329,
+      40.00005
+     ],
+     [
+      32.63339,
+      39.99905
+     ]
+    ]
+   ]
+  ]
+ }
+}

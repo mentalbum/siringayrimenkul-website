@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Finest Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46469/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64125,
+      39.98653
+     ],
+     [
+      32.64069,
+      39.98632
+     ],
+     [
+      32.64105,
+      39.98577
+     ],
+     [
+      32.64124,
+      39.98585
+     ],
+     [
+      32.64144,
+      39.98553
+     ],
+     [
+      32.64174,
+      39.98563
+     ],
+     [
+      32.64176,
+      39.98575
+     ],
+     [
+      32.64125,
+      39.98653
+     ]
+    ]
+   ]
+  ]
+ }
+}

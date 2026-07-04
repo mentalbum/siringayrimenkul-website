@@ -2,5 +2,16 @@
   "isim": "Sümeyra Sitesi",
   "slug": "sumeyra-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Sümeyra Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000674,
+    "lng": 32.625657
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/sumeyra-sitesi-boundary.geojson",
+  "aciklama": "Sümeyra Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46224",
+      "parsel": "1"
+    }
+  ]
 }

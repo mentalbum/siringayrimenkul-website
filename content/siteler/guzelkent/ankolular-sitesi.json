@@ -2,5 +2,16 @@
   "isim": "Ankolular Sitesi",
   "slug": "ankolular-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Ankolular Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.985862,
+    "lng": 32.607027
+  },
+  "sinirGeoJSON": "siteler/guzelkent/ankolular-sitesi-boundary.geojson",
+  "aciklama": "Ankolular Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18668",
+      "parsel": "1"
+    }
+  ]
 }

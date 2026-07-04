@@ -2,5 +2,16 @@
   "isim": "Gördoğu Şen Sitesi",
   "slug": "gordogu-sen-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gördoğu Şen Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.985418,
+    "lng": 32.604081
+  },
+  "sinirGeoJSON": "siteler/guzelkent/gordogu-sen-sitesi-boundary.geojson",
+  "aciklama": "Gördoğu Şen Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18646",
+      "parsel": "1"
+    }
+  ]
 }

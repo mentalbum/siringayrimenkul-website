@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Üçyıldız Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46667/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65177,
+      39.97117
+     ],
+     [
+      32.65174,
+      39.97113
+     ],
+     [
+      32.65138,
+      39.97068
+     ],
+     [
+      32.6515,
+      39.97061
+     ],
+     [
+      32.65163,
+      39.97052
+     ],
+     [
+      32.6522,
+      39.9702
+     ],
+     [
+      32.65237,
+      39.97025
+     ],
+     [
+      32.65265,
+      39.9706
+     ],
+     [
+      32.65177,
+      39.97117
+     ]
+    ]
+   ]
+  ]
+ }
+}

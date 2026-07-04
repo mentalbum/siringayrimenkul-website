@@ -2,5 +2,16 @@
   "isim": "Türeli Residence",
   "slug": "tureli-residence",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Türeli Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.976191,
+    "lng": 32.657782
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/tureli-residence-boundary.geojson",
+  "aciklama": "Türeli Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46643",
+      "parsel": "7"
+    }
+  ]
 }

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Atadostlar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46232/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61869,
+      40.00066
+     ],
+     [
+      32.61823,
+      40.00108
+     ],
+     [
+      32.61785,
+      40.00142
+     ],
+     [
+      32.61732,
+      40.00105
+     ],
+     [
+      32.61688,
+      40.00075
+     ],
+     [
+      32.61772,
+      39.99999
+     ],
+     [
+      32.61777,
+      39.99999
+     ],
+     [
+      32.61868,
+      40.00061
+     ],
+     [
+      32.61869,
+      40.00066
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Serpil Sitesi",
   "slug": "serpil-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Serpil Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001451,
+    "lng": 32.612689
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/serpil-sitesi-boundary.geojson",
+  "aciklama": "Serpil Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46438",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Acar Sitesi",
   "slug": "acar-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Acar Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001675,
+    "lng": 32.632697
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/acar-sitesi-boundary.geojson",
+  "aciklama": "Acar Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46267",
+      "parsel": "3"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Yeşilöz Sitesi",
   "slug": "yesiloz-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Yeşilöz Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.979323,
+    "lng": 32.604558
+  },
+  "sinirGeoJSON": "siteler/devlet/yesiloz-sitesi-boundary.geojson",
+  "aciklama": "Yeşilöz Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18686",
+      "parsel": "1"
+    }
+  ]
 }

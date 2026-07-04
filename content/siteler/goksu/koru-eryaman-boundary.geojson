@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Koru Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63379/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64643,
+      40.00302
+     ],
+     [
+      32.64639,
+      40.00292
+     ],
+     [
+      32.64636,
+      40.00284
+     ],
+     [
+      32.64632,
+      40.00277
+     ],
+     [
+      32.6464,
+      40.00263
+     ],
+     [
+      32.6472,
+      40.00234
+     ],
+     [
+      32.64737,
+      40.00285
+     ],
+     [
+      32.64643,
+      40.00302
+     ]
+    ]
+   ]
+  ]
+ }
+}

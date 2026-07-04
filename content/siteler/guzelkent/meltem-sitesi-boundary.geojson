@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Meltem Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18654/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60345,
+      39.98438
+     ],
+     [
+      32.60235,
+      39.98445
+     ],
+     [
+      32.6023,
+      39.98441
+     ],
+     [
+      32.60223,
+      39.98407
+     ],
+     [
+      32.60288,
+      39.98377
+     ],
+     [
+      32.60339,
+      39.98403
+     ],
+     [
+      32.60341,
+      39.98406
+     ],
+     [
+      32.60345,
+      39.98438
+     ]
+    ]
+   ]
+  ]
+ }
+}

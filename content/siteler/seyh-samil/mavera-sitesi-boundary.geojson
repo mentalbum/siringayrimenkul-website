@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mavera Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46269/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63008,
+      40.00103
+     ],
+     [
+      32.62957,
+      40.00064
+     ],
+     [
+      32.6297,
+      40.00054
+     ],
+     [
+      32.6297,
+      40.00011
+     ],
+     [
+      32.63042,
+      40.00013
+     ],
+     [
+      32.63042,
+      40.00076
+     ],
+     [
+      32.63008,
+      40.00103
+     ]
+    ]
+   ]
+  ]
+ }
+}

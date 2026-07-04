@@ -2,5 +2,16 @@
   "isim": "İrem Konutları",
   "slug": "irem-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "İrem Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.989381,
+    "lng": 32.639491
+  },
+  "sinirGeoJSON": "siteler/goksu/irem-konutlari-boundary.geojson",
+  "aciklama": "İrem Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46460",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Lale Kent Sitesi",
   "slug": "lale-kent-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Lale Kent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.971413,
+    "lng": 32.65294
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/lale-kent-sitesi-boundary.geojson",
+  "aciklama": "Lale Kent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46665",
+      "parsel": "3"
+    }
+  ]
 }

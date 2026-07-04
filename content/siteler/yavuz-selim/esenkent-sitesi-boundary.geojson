@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Esenkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45824/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6101,
+      40.00245
+     ],
+     [
+      32.60901,
+      40.00218
+     ],
+     [
+      32.60921,
+      40.00136
+     ],
+     [
+      32.61035,
+      40.0016
+     ],
+     [
+      32.6101,
+      40.00245
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Kaşmir Mavi Orkide Sitesi",
   "slug": "kasmir-mavi-orkide-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Kaşmir Mavi Orkide Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990048,
+    "lng": 32.643271
+  },
+  "sinirGeoJSON": "siteler/goksu/kasmir-mavi-orkide-sitesi-boundary.geojson",
+  "aciklama": "Kaşmir Mavi Orkide Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63933",
+      "parsel": "2"
+    }
+  ]
 }

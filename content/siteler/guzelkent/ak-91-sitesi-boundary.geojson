@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ak 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18485/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61287,
+      39.99095
+     ],
+     [
+      32.61225,
+      39.99041
+     ],
+     [
+      32.61277,
+      39.99007
+     ],
+     [
+      32.6134,
+      39.99063
+     ],
+     [
+      32.6134,
+      39.99066
+     ],
+     [
+      32.61294,
+      39.99096
+     ],
+     [
+      32.61287,
+      39.99095
+     ]
+    ]
+   ]
+  ]
+ }
+}

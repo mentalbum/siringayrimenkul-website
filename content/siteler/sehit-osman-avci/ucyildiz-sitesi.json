@@ -2,5 +2,16 @@
   "isim": "Üçyıldız Sitesi",
   "slug": "ucyildiz-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Üçyıldız Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.970656,
+    "lng": 32.652012
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/ucyildiz-sitesi-boundary.geojson",
+  "aciklama": "Üçyıldız Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46667",
+      "parsel": "3"
+    }
+  ]
 }

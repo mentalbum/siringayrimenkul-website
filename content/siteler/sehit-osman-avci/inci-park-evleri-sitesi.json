@@ -2,5 +2,16 @@
   "isim": "İnci Park Evleri Sitesi",
   "slug": "inci-park-evleri-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "İnci Park Evleri Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.986319,
+    "lng": 32.654283
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/inci-park-evleri-sitesi-boundary.geojson",
+  "aciklama": "İnci Park Evleri Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46623",
+      "parsel": "4"
+    }
+  ]
 }

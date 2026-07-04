@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akçakent 87 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45831/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61087,
+      40.00389
+     ],
+     [
+      32.61079,
+      40.00391
+     ],
+     [
+      32.60931,
+      40.0036
+     ],
+     [
+      32.60963,
+      40.00274
+     ],
+     [
+      32.61111,
+      40.0031
+     ],
+     [
+      32.61087,
+      40.00389
+     ]
+    ]
+   ]
+  ]
+ }
+}

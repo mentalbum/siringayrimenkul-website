@@ -2,5 +2,16 @@
   "isim": "Referans Ankara",
   "slug": "referans-ankara",
   "mahalleSlug": "devlet",
-  "aciklama": "Referans Ankara, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.978295,
+    "lng": 32.612823
+  },
+  "sinirGeoJSON": "siteler/devlet/referans-ankara-boundary.geojson",
+  "aciklama": "Referans Ankara, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48507",
+      "parsel": "1"
+    }
+  ]
 }

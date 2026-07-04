@@ -2,5 +2,16 @@
   "isim": "Mavera Sitesi",
   "slug": "mavera-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Mavera Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000511,
+    "lng": 32.630051
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/mavera-sitesi-boundary.geojson",
+  "aciklama": "Mavera Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46269",
+      "parsel": "3"
+    }
+  ]
 }

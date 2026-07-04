@@ -2,5 +2,16 @@
   "isim": "Doğapark Sitesi",
   "slug": "dogapark-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Doğapark Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99931,
+    "lng": 32.619753
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/dogapark-sitesi-boundary.geojson",
+  "aciklama": "Doğapark Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46229",
+      "parsel": "1"
+    }
+  ]
 }

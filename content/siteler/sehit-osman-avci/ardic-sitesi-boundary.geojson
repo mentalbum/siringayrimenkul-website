@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ardıç Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46662/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65544,
+      39.96931
+     ],
+     [
+      32.65611,
+      39.96917
+     ],
+     [
+      32.6562,
+      39.96923
+     ],
+     [
+      32.6562,
+      39.96977
+     ],
+     [
+      32.65621,
+      39.97011
+     ],
+     [
+      32.65558,
+      39.97017
+     ],
+     [
+      32.65552,
+      39.96983
+     ],
+     [
+      32.65544,
+      39.96931
+     ]
+    ]
+   ]
+  ]
+ }
+}

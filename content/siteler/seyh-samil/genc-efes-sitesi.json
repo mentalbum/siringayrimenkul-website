@@ -2,5 +2,16 @@
   "isim": "Genç Efes Sitesi",
   "slug": "genc-efes-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Genç Efes Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.997434,
+    "lng": 32.633809
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/genc-efes-sitesi-boundary.geojson",
+  "aciklama": "Genç Efes Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46569",
+      "parsel": "1"
+    }
+  ]
 }

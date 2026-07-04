@@ -2,5 +2,16 @@
   "isim": "Şelale Evleri Sitesi",
   "slug": "selale-evleri-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Şelale Evleri Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.983095,
+    "lng": 32.641163
+  },
+  "sinirGeoJSON": "siteler/goksu/selale-evleri-sitesi-boundary.geojson",
+  "aciklama": "Şelale Evleri Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46466",
+      "parsel": "1"
+    }
+  ]
 }

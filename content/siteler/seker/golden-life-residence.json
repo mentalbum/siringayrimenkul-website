@@ -2,5 +2,16 @@
   "isim": "Golden Life Residence",
   "slug": "golden-life-residence",
   "mahalleSlug": "seker",
-  "aciklama": "Golden Life Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.965591,
+    "lng": 32.653492
+  },
+  "sinirGeoJSON": "siteler/seker/golden-life-residence-boundary.geojson",
+  "aciklama": "Golden Life Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46368",
+      "parsel": "1"
+    }
+  ]
 }

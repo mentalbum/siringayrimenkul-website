@@ -2,5 +2,16 @@
   "isim": "Dalgıç Residence",
   "slug": "dalgic-residence",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Dalgıç Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.970058,
+    "lng": 32.660736
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/dalgic-residence-boundary.geojson",
+  "aciklama": "Dalgıç Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46654",
+      "parsel": "5"
+    }
+  ]
 }

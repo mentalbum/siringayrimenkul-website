@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Dalgıç Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46654/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66092,
+      39.97041
+     ],
+     [
+      32.6606,
+      39.97037
+     ],
+     [
+      32.66033,
+      39.97033
+     ],
+     [
+      32.66048,
+      39.9697
+     ],
+     [
+      32.66119,
+      39.96981
+     ],
+     [
+      32.66092,
+      39.97041
+     ]
+    ]
+   ]
+  ]
+ }
+}

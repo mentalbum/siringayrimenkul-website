@@ -2,5 +2,16 @@
   "isim": "Yeniçeri Kule",
   "slug": "yeniceri-kule",
   "mahalleSlug": "goksu",
-  "aciklama": "Yeniçeri Kule, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999062,
+    "lng": 32.653086
+  },
+  "sinirGeoJSON": "siteler/goksu/yeniceri-kule-boundary.geojson",
+  "aciklama": "Yeniçeri Kule, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "16828",
+      "parsel": "4"
+    }
+  ]
 }

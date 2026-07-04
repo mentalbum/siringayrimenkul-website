@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Safir Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46236/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61722,
+      39.9987
+     ],
+     [
+      32.61675,
+      39.99913
+     ],
+     [
+      32.6167,
+      39.99913
+     ],
+     [
+      32.61594,
+      39.9986
+     ],
+     [
+      32.61593,
+      39.99856
+     ],
+     [
+      32.61636,
+      39.99817
+     ],
+     [
+      32.61676,
+      39.99781
+     ],
+     [
+      32.61681,
+      39.99781
+     ],
+     [
+      32.61726,
+      39.99804
+     ],
+     [
+      32.61767,
+      39.99825
+     ],
+     [
+      32.61768,
+      39.99829
+     ],
+     [
+      32.61722,
+      39.9987
+     ]
+    ]
+   ]
+  ]
+ }
+}

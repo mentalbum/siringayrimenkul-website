@@ -2,5 +2,16 @@
   "isim": "Melis Sitesi",
   "slug": "melis-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Melis Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.993207,
+    "lng": 32.634713
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/melis-sitesi-boundary.geojson",
+  "aciklama": "Melis Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46488",
+      "parsel": "2"
+    }
+  ]
 }

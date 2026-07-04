@@ -2,5 +2,16 @@
   "isim": "Havuzlu Bahçe Konutları",
   "slug": "havuzlu-bahce-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Havuzlu Bahçe Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988598,
+    "lng": 32.64172
+  },
+  "sinirGeoJSON": "siteler/goksu/havuzlu-bahce-konutlari-boundary.geojson",
+  "aciklama": "Havuzlu Bahçe Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48145",
+      "parsel": "1"
+    }
+  ]
 }

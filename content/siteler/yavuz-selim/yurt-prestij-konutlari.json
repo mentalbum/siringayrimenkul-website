@@ -2,5 +2,16 @@
   "isim": "Yurt Prestij Konutları",
   "slug": "yurt-prestij-konutlari",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Yurt Prestij Konutları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.004014,
+    "lng": 32.613868
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/yurt-prestij-konutlari-boundary.geojson",
+  "aciklama": "Yurt Prestij Konutları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46433",
+      "parsel": "1"
+    }
+  ]
 }

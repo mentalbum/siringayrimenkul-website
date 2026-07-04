@@ -2,5 +2,16 @@
   "isim": "Genç Avrasya Sitesi",
   "slug": "genc-avrasya-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Genç Avrasya Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999317,
+    "lng": 32.615797
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/genc-avrasya-sitesi-boundary.geojson",
+  "aciklama": "Genç Avrasya Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46239",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Havacılar Sitesi",
   "slug": "havacilar-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Havacılar Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.993181,
+    "lng": 32.642493
+  },
+  "sinirGeoJSON": "siteler/goksu/havacilar-sitesi-boundary.geojson",
+  "aciklama": "Havacılar Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46455",
+      "parsel": "1"
+    }
+  ]
 }

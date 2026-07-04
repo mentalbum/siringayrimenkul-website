@@ -2,5 +2,16 @@
   "isim": "Esenkent Sitesi",
   "slug": "esenkent-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Esenkent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001898,
+    "lng": 32.609674
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/esenkent-sitesi-boundary.geojson",
+  "aciklama": "Esenkent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45824",
+      "parsel": "1"
+    }
+  ]
 }

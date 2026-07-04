@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gökkuşağı Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18671/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6087,
+      39.98467
+     ],
+     [
+      32.60798,
+      39.98492
+     ],
+     [
+      32.6079,
+      39.98489
+     ],
+     [
+      32.60761,
+      39.9844
+     ],
+     [
+      32.60764,
+      39.98434
+     ],
+     [
+      32.60839,
+      39.98408
+     ],
+     [
+      32.60872,
+      39.98463
+     ],
+     [
+      32.6087,
+      39.98467
+     ]
+    ]
+   ]
+  ]
+ }
+}
