@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çankaya Vefa Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18522/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60686,
+      39.99172
+     ],
+     [
+      32.60679,
+      39.99191
+     ],
+     [
+      32.60614,
+      39.99224
+     ],
+     [
+      32.60575,
+      39.99179
+     ],
+     [
+      32.60652,
+      39.9914
+     ],
+     [
+      32.60659,
+      39.99141
+     ],
+     [
+      32.60686,
+      39.99172
+     ]
+    ]
+   ]
+  ]
+ }
+}

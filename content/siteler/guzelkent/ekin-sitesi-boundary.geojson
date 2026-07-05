@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ekin Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18501/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61278,
+      39.98911
+     ],
+     [
+      32.61248,
+      39.98905
+     ],
+     [
+      32.61242,
+      39.98924
+     ],
+     [
+      32.61235,
+      39.98928
+     ],
+     [
+      32.61212,
+      39.98925
+     ],
+     [
+      32.61181,
+      39.9889
+     ],
+     [
+      32.61183,
+      39.98883
+     ],
+     [
+      32.61252,
+      39.98848
+     ],
+     [
+      32.61287,
+      39.9889
+     ],
+     [
+      32.61278,
+      39.98911
+     ]
+    ]
+   ]
+  ]
+ }
+}

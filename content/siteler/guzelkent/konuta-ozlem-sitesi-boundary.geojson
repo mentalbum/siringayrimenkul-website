@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Konuta Özlem Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18468/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61564,
+      39.9943
+     ],
+     [
+      32.61576,
+      39.99408
+     ],
+     [
+      32.61653,
+      39.99432
+     ],
+     [
+      32.61664,
+      39.99453
+     ],
+     [
+      32.61663,
+      39.99458
+     ],
+     [
+      32.61603,
+      39.995
+     ],
+     [
+      32.61582,
+      39.99482
+     ],
+     [
+      32.61564,
+      39.9943
+     ]
+    ]
+   ]
+  ]
+ }
+}

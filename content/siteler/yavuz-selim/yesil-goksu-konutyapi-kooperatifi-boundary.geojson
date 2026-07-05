@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeşil Göksu Konutyapı Kooperatifi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45821/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6095,
+      40.00031
+     ],
+     [
+      32.61041,
+      40.00032
+     ],
+     [
+      32.61036,
+      40.00146
+     ],
+     [
+      32.60929,
+      40.00124
+     ],
+     [
+      32.6095,
+      40.00031
+     ]
+    ]
+   ]
+  ]
+ }
+}

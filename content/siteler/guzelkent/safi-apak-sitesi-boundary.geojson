@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Safi Apak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18505/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6103,
+      39.9871
+     ],
+     [
+      32.61024,
+      39.98712
+     ],
+     [
+      32.61005,
+      39.98709
+     ],
+     [
+      32.60961,
+      39.98649
+     ],
+     [
+      32.61013,
+      39.98626
+     ],
+     [
+      32.61056,
+      39.98635
+     ],
+     [
+      32.6103,
+      39.9871
+     ]
+    ]
+   ]
+  ]
+ }
+}

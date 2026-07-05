@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kuşburnu Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18460/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62007,
+      39.99459
+     ],
+     [
+      32.62017,
+      39.99383
+     ],
+     [
+      32.62025,
+      39.9938
+     ],
+     [
+      32.62083,
+      39.99384
+     ],
+     [
+      32.62072,
+      39.99457
+     ],
+     [
+      32.6206,
+      39.99467
+     ],
+     [
+      32.62011,
+      39.99463
+     ],
+     [
+      32.62007,
+      39.99459
+     ]
+    ]
+   ]
+  ]
+ }
+}

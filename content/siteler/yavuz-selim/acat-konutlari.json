@@ -2,5 +2,16 @@
   "isim": "Acat Konutları",
   "slug": "acat-konutlari",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Acat Konutları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.00047,
+    "lng": 32.613088
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/acat-konutlari-boundary.geojson",
+  "aciklama": "Acat Konutları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46439",
+      "parsel": "1"
+    }
+  ]
 }

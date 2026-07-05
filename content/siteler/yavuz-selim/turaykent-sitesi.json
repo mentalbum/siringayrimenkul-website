@@ -2,5 +2,16 @@
   "isim": "Turaykent Sitesi",
   "slug": "turaykent-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Turaykent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995269,
+    "lng": 32.61508
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/turaykent-sitesi-boundary.geojson",
+  "aciklama": "Turaykent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19526",
+      "parsel": "1"
+    }
+  ]
 }

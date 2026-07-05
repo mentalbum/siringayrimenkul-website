@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Karköy Villaları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19537/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61361,
+      39.99626
+     ],
+     [
+      32.61326,
+      39.99626
+     ],
+     [
+      32.61325,
+      39.99705
+     ],
+     [
+      32.61185,
+      39.99705
+     ],
+     [
+      32.61186,
+      39.99568
+     ],
+     [
+      32.61211,
+      39.99548
+     ],
+     [
+      32.61361,
+      39.99549
+     ],
+     [
+      32.61361,
+      39.99626
+     ]
+    ]
+   ]
+  ]
+ }
+}

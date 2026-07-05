@@ -2,5 +2,16 @@
   "isim": "Yükselay Sitesi",
   "slug": "yukselay-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Yükselay Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.991082,
+    "lng": 32.613637
+  },
+  "sinirGeoJSON": "siteler/guzelkent/yukselay-sitesi-boundary.geojson",
+  "aciklama": "Yükselay Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18497",
+      "parsel": "1"
+    }
+  ]
 }

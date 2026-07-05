@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Tez Konak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18469/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61619,
+      39.99513
+     ],
+     [
+      32.61682,
+      39.99469
+     ],
+     [
+      32.61687,
+      39.99469
+     ],
+     [
+      32.61737,
+      39.99511
+     ],
+     [
+      32.61737,
+      39.99516
+     ],
+     [
+      32.61679,
+      39.99556
+     ],
+     [
+      32.61673,
+      39.99557
+     ],
+     [
+      32.61619,
+      39.99513
+     ]
+    ]
+   ]
+  ]
+ }
+}

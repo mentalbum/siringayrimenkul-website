@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni İlkay Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19508/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6054,
+      39.99784
+     ],
+     [
+      32.60486,
+      39.99726
+     ],
+     [
+      32.60561,
+      39.99686
+     ],
+     [
+      32.60615,
+      39.99744
+     ],
+     [
+      32.6054,
+      39.99784
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yükselay Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18497/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61389,
+      39.99138
+     ],
+     [
+      32.61338,
+      39.99139
+     ],
+     [
+      32.61308,
+      39.99113
+     ],
+     [
+      32.61308,
+      39.99105
+     ],
+     [
+      32.61353,
+      39.99076
+     ],
+     [
+      32.61375,
+      39.99075
+     ],
+     [
+      32.61421,
+      39.991
+     ],
+     [
+      32.61422,
+      39.99104
+     ],
+     [
+      32.61389,
+      39.99138
+     ]
+    ]
+   ]
+  ]
+ }
+}

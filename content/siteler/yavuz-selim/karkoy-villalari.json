@@ -2,5 +2,16 @@
   "isim": "Karköy Villaları",
   "slug": "karkoy-villalari",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Karköy Villaları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.996228,
+    "lng": 32.612658
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/karkoy-villalari-boundary.geojson",
+  "aciklama": "Karköy Villaları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19537",
+      "parsel": "1"
+    }
+  ]
 }

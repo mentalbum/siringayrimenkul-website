@@ -2,5 +2,16 @@
   "isim": "Özle İletişim Sitesi",
   "slug": "ozle-iletisim-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Özle İletişim Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990408,
+    "lng": 32.614378
+  },
+  "sinirGeoJSON": "siteler/guzelkent/ozle-iletisim-sitesi-boundary.geojson",
+  "aciklama": "Özle İletişim Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18483",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Safi Apak Sitesi",
   "slug": "safi-apak-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Safi Apak Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.986645,
+    "lng": 32.610124
+  },
+  "sinirGeoJSON": "siteler/guzelkent/safi-apak-sitesi-boundary.geojson",
+  "aciklama": "Safi Apak Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18505",
+      "parsel": "1"
+    }
+  ]
 }

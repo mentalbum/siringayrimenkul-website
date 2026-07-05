@@ -2,5 +2,16 @@
   "isim": "Şahinbey Sitesi",
   "slug": "sahinbey-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Şahinbey Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.993295,
+    "lng": 32.620586
+  },
+  "sinirGeoJSON": "siteler/guzelkent/sahinbey-sitesi-boundary.geojson",
+  "aciklama": "Şahinbey Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18461",
+      "parsel": "1"
+    }
+  ]
 }

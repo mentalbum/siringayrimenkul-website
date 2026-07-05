@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Özle İletişim Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18483/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6149,
+      39.99031
+     ],
+     [
+      32.61439,
+      39.99086
+     ],
+     [
+      32.61432,
+      39.99087
+     ],
+     [
+      32.61407,
+      39.99073
+     ],
+     [
+      32.61404,
+      39.99068
+     ],
+     [
+      32.6141,
+      39.98993
+     ],
+     [
+      32.6142,
+      39.98994
+     ],
+     [
+      32.6149,
+      39.99031
+     ]
+    ]
+   ]
+  ]
+ }
+}

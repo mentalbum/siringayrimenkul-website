@@ -2,5 +2,16 @@
   "isim": "Yeni İlkay Sitesi",
   "slug": "yeni-ilkay-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Yeni İlkay Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.997349,
+    "lng": 32.605504
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/yeni-ilkay-sitesi-boundary.geojson",
+  "aciklama": "Yeni İlkay Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19508",
+      "parsel": "2"
+    }
+  ]
 }

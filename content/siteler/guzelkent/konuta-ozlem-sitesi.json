@@ -2,5 +2,16 @@
   "isim": "Konuta Özlem Sitesi",
   "slug": "konuta-ozlem-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Konuta Özlem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.994514,
+    "lng": 32.616098
+  },
+  "sinirGeoJSON": "siteler/guzelkent/konuta-ozlem-sitesi-boundary.geojson",
+  "aciklama": "Konuta Özlem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18468",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Serhatkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46233/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6197,
+      40.00009
+     ],
+     [
+      32.61936,
+      40.00042
+     ],
+     [
+      32.61903,
+      40.00074
+     ],
+     [
+      32.61838,
+      40.00029
+     ],
+     [
+      32.61785,
+      39.99992
+     ],
+     [
+      32.61784,
+      39.99988
+     ],
+     [
+      32.6181,
+      39.99962
+     ],
+     [
+      32.61842,
+      39.9993
+     ],
+     [
+      32.61855,
+      39.99929
+     ],
+     [
+      32.61914,
+      39.9997
+     ],
+     [
+      32.6197,
+      40.00009
+     ]
+    ]
+   ]
+  ]
+ }
+}

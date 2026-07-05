@@ -2,5 +2,16 @@
   "isim": "Şelale Sitesi",
   "slug": "selale-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Şelale Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99636,
+    "lng": 32.618555
+  },
+  "sinirGeoJSON": "siteler/guzelkent/selale-sitesi-boundary.geojson",
+  "aciklama": "Şelale Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18451",
+      "parsel": "1"
+    }
+  ]
 }

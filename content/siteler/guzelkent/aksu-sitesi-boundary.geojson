@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Aksu Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18512/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60975,
+      39.98808
+     ],
+     [
+      32.60937,
+      39.98759
+     ],
+     [
+      32.60939,
+      39.98753
+     ],
+     [
+      32.60998,
+      39.98727
+     ],
+     [
+      32.61022,
+      39.98731
+     ],
+     [
+      32.61052,
+      39.98764
+     ],
+     [
+      32.6105,
+      39.9877
+     ],
+     [
+      32.60975,
+      39.98808
+     ]
+    ]
+   ]
+  ]
+ }
+}

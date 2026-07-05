@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İlk Umut Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46263/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62661,
+      40.00249
+     ],
+     [
+      32.62713,
+      40.00192
+     ],
+     [
+      32.62807,
+      40.0025
+     ],
+     [
+      32.62807,
+      40.00256
+     ],
+     [
+      32.62751,
+      40.003
+     ],
+     [
+      32.62661,
+      40.00249
+     ]
+    ]
+   ]
+  ]
+ }
+}

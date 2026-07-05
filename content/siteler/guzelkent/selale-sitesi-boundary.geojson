@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Şelale Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18451/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61858,
+      39.99682
+     ],
+     [
+      32.61796,
+      39.99641
+     ],
+     [
+      32.61849,
+      39.99593
+     ],
+     [
+      32.61857,
+      39.99592
+     ],
+     [
+      32.61911,
+      39.99628
+     ],
+     [
+      32.61911,
+      39.99634
+     ],
+     [
+      32.61858,
+      39.99682
+     ]
+    ]
+   ]
+  ]
+ }
+}

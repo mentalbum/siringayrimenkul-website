@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Kaynak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46238/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61584,
+      40.00004
+     ],
+     [
+      32.61629,
+      39.99963
+     ],
+     [
+      32.61671,
+      39.99925
+     ],
+     [
+      32.61714,
+      39.99955
+     ],
+     [
+      32.61759,
+      39.99987
+     ],
+     [
+      32.6176,
+      39.99991
+     ],
+     [
+      32.61718,
+      40.0003
+     ],
+     [
+      32.61678,
+      40.00068
+     ],
+     [
+      32.61632,
+      40.00037
+     ],
+     [
+      32.61584,
+      40.00004
+     ]
+    ]
+   ]
+  ]
+ }
+}
