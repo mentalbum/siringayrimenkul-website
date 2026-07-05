@@ -7,7 +7,12 @@
     "lng": 32.629134
   },
   "sinirGeoJSON": "siteler/tunahan/dema-park-boundary.geojson",
-  "aciklama": "Dema Park, Ankara Etimesgut'a bağlı Tunahan Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Tunahan Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Dema Park, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor. TKGM kayıtlarına göre 6.111 m²'lik parsel (46498 ada / 7 parsel) üzerine kurulu site, A ve B olmak üzere iki bloktan oluşuyor ve kat mülkiyeti tapulu. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Tunahan Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "ozellikler": [
+    "A ve B blok",
+    "6.111 m² parsel alanı",
+    "Kat mülkiyeti tapulu"
+  ],
   "adalar": [
     {
       "no": "46498",
