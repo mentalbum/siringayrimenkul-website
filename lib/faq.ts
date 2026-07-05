@@ -80,8 +80,12 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   }
 
   items.push({
-    soru: `Bu sitede evimi satmak veya kiraya vermek istiyorum, nasıl başvurabilirim?`,
-    cevap: `${siteConfig.name} olarak ücretsiz değerlendirme yapıyoruz; bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
+    soru: `${site.isim}'ndeki dairemi satmak istiyorum, nereden başlamalıyım?`,
+    cevap: `İlk adım doğru fiyatı bilmek: ${site.isim}'ndeki dairenizi mahalle ortalamasından değil, sitenizdeki gerçek satış hareketliliğinden yola çıkarak ücretsiz değerliyoruz. Ardından fotoğraf ve tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya ücretsiz değerleme formunu doldurun; aynı gün dönüş yapalım.`,
+  });
+  items.push({
+    soru: `${site.isim}'nde dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
+    cevap: `Doğru kira, ${site.isim}'ndeki emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerinde görünen fiyatlar çoğu zaman yanıltıcıdır. Dairenize özel kira tespitini ücretsiz yapıyoruz; sonrasında kiracı doğrulama, sözleşme ve fotoğraflı teslim tutanağı dahil tüm süreci üstleniyoruz.`,
   });
   items.push({
     soru: `${site.isim} hakkında güncel ilan veya fiyat bilgisi nereden alabilirim?`,
