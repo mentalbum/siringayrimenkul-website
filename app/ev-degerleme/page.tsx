@@ -10,9 +10,9 @@ import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
-  title: "Eryaman Ücretsiz Ev Değerleme — Eviniz Ne Kadar Eder?",
+  title: "Eryaman Ev Değerleme — Evinizi Doğru Fiyatla Satın veya Kiraya Verin",
   description:
-    "Eryaman'daki evinizin güncel piyasa değerini ücretsiz öğrenin. Mahallenizi ve sitenizi yakından tanıyan Şirin Gayrimenkul'den gerçekçi fiyat analizi.",
+    "Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim. Mahallenizi ve sitenizi yakından tanıyan Şirin Gayrimenkul'den gerçekçi fiyat analizi ve satış yol haritası.",
   alternates: { canonical: "/ev-degerleme" },
 };
 
@@ -30,7 +30,7 @@ const adimlar = [
   {
     baslik: "Gerçekçi Fiyat ve Yol Haritası",
     aciklama:
-      "Satış veya kiralama için gerçekçi bir fiyat aralığı ve süreç önerisi sunuyoruz. Değerleme tamamen ücretsizdir; satış zorunluluğu yoktur.",
+      "Satış veya kiralama için gerçekçi bir fiyat aralığı ve süreç önerisi sunuyoruz. Fiyatta birlikte karar verdiğimizde ilan, gösterim ve tapu dahil süreci uçtan uca biz yönetiyoruz.",
   },
 ];
 
@@ -48,14 +48,13 @@ export default function EvDegerlemePage() {
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Ücretsiz Ev Değerleme",
-    serviceType: "Gayrimenkul değerleme",
+    name: "Ev Değerleme ve Satış Danışmanlığı",
+    serviceType: "Gayrimenkul değerleme ve satış/kiralama danışmanlığı",
     description:
-      "Eryaman bölgesindeki konutlar için ücretsiz piyasa değeri analizi — mahalle ve site bazlı emsal karşılaştırmasıyla.",
+      "Eryaman bölgesinde satış veya kiralama öncesi fiyat analizi — mahalle ve site bazlı emsal karşılaştırması ve uçtan uca süreç yönetimiyle.",
     url: `${siteConfig.url}/ev-degerleme`,
     provider: organizationRef,
     areaServed: { "@type": "Place", name: "Eryaman, Etimesgut, Ankara" },
-    offers: { "@type": "Offer", price: "0", priceCurrency: "TRY" },
   };
 
   return (
@@ -63,20 +62,22 @@ export default function EvDegerlemePage() {
       <Breadcrumbs
         items={[
           { label: "Anasayfa", href: "/" },
-          { label: "Ücretsiz Ev Değerleme", href: "/ev-degerleme" },
+          { label: "Ev Değerleme", href: "/ev-degerleme" },
         ]}
       />
 
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          Ücretsiz Hizmet
+          Satışın ve Kiralamanın İlk Adımı
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;da Ücretsiz Ev Değerleme</h1>
+        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;da Ev Değerleme</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           &quot;Evim ne kadar eder?&quot; sorusunun cevabı, ilan sitelerindeki fiyatlardan değil;
           mahallenizi, sitenizi ve güncel emsalleri yakından takip eden yerel bir gözden geçer.
           Eryaman&apos;ın 11 mahallesini ve içlerindeki {toplamSite}+ site/rezidansı tek tek
-          tanıyoruz — evinizin gerçekçi piyasa değerini ücretsiz çıkarıyoruz.
+          tanıyoruz. Değerlemeyi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için
+          yapıyoruz: görüşmenin sonunda elinizde gerçekçi bir fiyat aralığıyla birlikte satış ya
+          da kiralama yol haritanız da olur.
         </p>
         <ReviewBadge className="mt-4" />
       </header>
@@ -118,8 +119,9 @@ export default function EvDegerlemePage() {
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <CheckBadgeIcon className="h-5 w-5 shrink-0 text-gold-dark" />
             <p className="text-sm leading-relaxed text-body">
-              <strong className="text-navy">Ücretsiz ve bağlayıcı değil.</strong> Değerleme için
-              ücret almıyoruz; evinizi bizimle satmak ya da kiraya vermek zorunda değilsiniz.
+              <strong className="text-navy">Değerlemeden tapuya tek muhatap.</strong> Fiyat
+              analiziyle yetinmiyoruz; evinizi bize emanet ettiğinizde ilan, gösterim, pazarlık ve
+              tapu dahil tüm süreci sizin adınıza biz yönetiyoruz.
             </p>
           </div>
           <p className="text-sm text-muted">
@@ -150,9 +152,9 @@ export default function EvDegerlemePage() {
         title="Ev Değerleme Hakkında Sık Sorulan Sorular"
         items={[
           {
-            soru: "Ev değerleme gerçekten ücretsiz mi?",
+            soru: "Ev değerleme için ücret ödüyor muyum?",
             cevap:
-              "Evet. Eryaman bölgesindeki konutlar için yaptığımız piyasa değeri analizi tamamen ücretsizdir ve herhangi bir satış ya da kiralama zorunluluğu doğurmaz.",
+              "Değerleme için ücret almıyoruz. Bu analizi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için satış sürecinin ilk adımı olarak yapıyoruz — fiyatla birlikte yol haritasını da aynı görüşmede netleştiriyoruz.",
           },
           {
             soru: "Değerleme nasıl yapılıyor?",

@@ -107,7 +107,7 @@ export default function HomePage() {
             <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
               Eryaman&apos;da emlağın adresi: satılık ve kiralık için {mahalleSayisi} mahalleyi,
               site site biliyoruz. Sitenizi arayın; satmak veya kiraya vermek istediğiniz evinizi
-              ücretsiz değerlendirelim.
+              birlikte değerlendirelim; fiyatla birlikte satış yol haritanız da hazır olsun.
             </p>
 
             <div className="mt-8 max-w-xl">
@@ -122,7 +122,7 @@ export default function HomePage() {
 
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
               <CtaButton href="/ev-degerleme" variant="primary">
-                Evinizi Ücretsiz Değerletin
+                Evinizi Değerlendirelim
               </CtaButton>
               <ReviewBadge variant="dark" />
             </div>
@@ -137,7 +137,7 @@ export default function HomePage() {
             Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da satılık ve
             kiralık konut danışmanlığı yapıyor,{" "}
             <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
-              ücretsiz ev değerleme
+              satış öncesi ev değerleme
             </Link>{" "}
             hizmeti sunuyoruz; talep eden müşterilerimiz için 3D sanal tur da çekiyoruz. Güncel
             ilanlarımız{" "}
@@ -241,7 +241,7 @@ export default function HomePage() {
             {
               soru: "Eryaman'da hangi emlak hizmetlerini veriyorsunuz?",
               cevap:
-                "Satılık ve kiralık konut danışmanlığı, ücretsiz ev değerleme ve talep eden müşterilerimiz için 3D sanal tur çekimi sunuyoruz. Güncel ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır; süreç boyunca doğrudan bizimle çalışırsınız.",
+                "Satılık ve kiralık konut danışmanlığı, satış öncesi ev değerleme ve talep eden müşterilerimiz için 3D sanal tur çekimi sunuyoruz. Güncel ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır; süreç boyunca doğrudan bizimle çalışırsınız.",
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",

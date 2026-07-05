@@ -41,7 +41,7 @@ export default function IletisimPage() {
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">İletişim</p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Bize Ulaşın</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Evinizi satmak veya kiraya vermek istiyorsanız, ücretsiz değerlendirme için bize
+          Evinizi satmak veya kiraya vermek istiyorsanız, fiyatı ve yol haritasını birlikte netleştirmek için bize
           doğrudan ulaşabilirsiniz. Eryaman bölgesiyle ilgili başka bir sorunuz varsa da
           yardımcı olmaktan mutluluk duyarız.
         </p>

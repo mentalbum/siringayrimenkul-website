@@ -43,7 +43,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: `${mahalle.isim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık daire ve kiralık daire piyasasını günlük takip ediyoruz. Ücretsiz ev değerleme için bize ulaşın.`,
+    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık daire ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -270,7 +270,7 @@ export default async function MahallePage({ params }: Props) {
               {siteler.length > 0
                 ? `Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim — mahalledeki ${siteler.length} site ve rezidansın her birini tanıyoruz. `
                 : "Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim. "}
-              İlk adım ücretsiz ve yükümlülüksüz:{" "}
+              Satış kararının ilk adımı doğru fiyat:{" "}
               <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
                 ev değerleme talebi
               </Link>
@@ -385,10 +385,10 @@ export default async function MahallePage({ params }: Props) {
       <CtaBanner
         className="mt-14"
         baslik={`${mahalle.isim}'nde Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
-        aciklama="Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş alın."
+        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton href="/ev-degerleme" variant="primary">
-          Ücretsiz Değerleme Alın
+          Evinizi Değerlendirelim
         </CtaButton>
       </CtaBanner>
       <script

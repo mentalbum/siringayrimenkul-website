@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Şirin Gayrimenkul",
   description:
-    "Eryaman emlakçısı Şirin Gayrimenkul — satılık ve kiralık için 11 mahalleyi ve 580'den fazla site/rezidansı yakından tanıyan yerel emlak ofisi. Ücretsiz ev değerleme.",
+    "Eryaman emlakçısı Şirin Gayrimenkul — satılık ve kiralık için 11 mahalleyi ve 580'den fazla site/rezidansı yakından tanıyan yerel emlak ofisi. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",

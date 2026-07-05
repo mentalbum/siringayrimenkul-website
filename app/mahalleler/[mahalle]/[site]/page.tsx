@@ -54,7 +54,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${site.isim} Emlakçısı — Satılık, Kiralık ve Ev Değerleme`
       : `${site.isim} Emlakçısı Eryaman — Satılık, Kiralık, Değerleme`,
     description: truncateForMeta(
-      `${site.isim}'nde eviniz mi var? Satmadan veya kiraya vermeden önce siteyi blok blok tanıyan yerel emlakçıdan ücretsiz değerleme alın. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
+      `${site.isim}'nde eviniz mi var? Satmadan veya kiraya vermeden önce fiyatı, siteyi blok blok tanıyan yerel emlakçınızla birlikte belirleyin. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.gorsel && {
@@ -218,7 +218,7 @@ export default async function SitePage({ params }: Props) {
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
           {`Bu sitede eviniz mi var? Satılık ya da kiralık vermeden önce `}
           <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
-            ücretsiz değerleme
+            satış öncesi değerleme
           </Link>
           {` alın. ${site.isim}'nde satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
@@ -235,10 +235,10 @@ export default async function SitePage({ params }: Props) {
       <CtaBanner
         className="mt-12"
         baslik="Bu Sitede Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?"
-        aciklama="Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş alın."
+        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton href="/ev-degerleme" variant="primary">
-          Ücretsiz Değerleme Alın
+          Evinizi Değerlendirelim
         </CtaButton>
       </CtaBanner>
 

@@ -120,10 +120,10 @@ export default async function EtapPage({ params }: Props) {
       <CtaBanner
         className="mt-14"
         baslik={`Eryaman ${etap.no}. Etap'ta Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
-        aciklama="Ücretsiz değerlendirme için doğrudan bizimle iletişime geçin; aracısız ve hızlı dönüş alın."
+        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton href="/ev-degerleme" variant="primary">
-          Ücretsiz Değerleme Alın
+          Evinizi Değerlendirelim
         </CtaButton>
       </CtaBanner>
 
