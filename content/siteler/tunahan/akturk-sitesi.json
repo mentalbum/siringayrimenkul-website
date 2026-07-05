@@ -7,7 +7,13 @@
     "lng": 32.621433
   },
   "sinirGeoJSON": "siteler/tunahan/akturk-sitesi-boundary.geojson",
-  "aciklama": "Aktürk Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46499 Ada ve 46501 Ada olmak üzere iki ayrı blok halinde). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Aktürk Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor ve iki ayrı parselden oluşuyor: TKGM kayıtlarına göre 46499 ada/2 parsel (23.976 m²) üzerinde 15 blok ve 340 daire, 46501 ada/2 parsel (19.633 m²) üzerinde 12 blok bulunuyor. Sitede 1+1, 2+1 ve 3+1 daire tipleri mevcut; her iki parsel de kat mülkiyeti tapulu. Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "ozellikler": [
+    "Toplam 27 blok (46499 adada 15, 46501 adada 12)",
+    "46499 adada 340 daire",
+    "1+1, 2+1 ve 3+1 daire tipleri",
+    "Kat mülkiyeti tapulu"
+  ],
   "adalar": [
     {
       "no": "46499",
