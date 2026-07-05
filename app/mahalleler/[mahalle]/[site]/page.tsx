@@ -138,7 +138,7 @@ export default async function SitePage({ params }: Props) {
       </header>
 
       {site.gorsel && (
-        <div className="mt-8 overflow-hidden rounded-2xl border border-border">
+        <div className="mt-8 max-w-xl overflow-hidden rounded-2xl border border-border">
           <Image
             src={site.gorsel}
             alt={`${site.isim} — Eryaman ${mahalle.isim}`}
@@ -146,7 +146,7 @@ export default async function SitePage({ params }: Props) {
             height={1080}
             priority
             className="h-auto w-full object-cover"
-            sizes="(min-width: 1152px) 1152px, 100vw"
+            sizes="(min-width: 640px) 576px, 100vw"
           />
         </div>
       )}
