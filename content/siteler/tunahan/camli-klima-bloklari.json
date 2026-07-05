@@ -7,7 +7,13 @@
     "lng": 32.618537
   },
   "sinirGeoJSON": "siteler/tunahan/camli-klima-bloklari-boundary.geojson",
-  "aciklama": "Camlı Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Camlı Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor. TKGM kayıtlarına göre yedi ayrı ada üzerine (17621, 17622, 17623, 17629, 17630, 17631 ve 17632) kurulu site, her adada 4 blok olmak üzere toplam 28 bloktan oluşuyor; toplam parsel alanı yaklaşık 38.300 m² ve yedi parselin tamamı kat mülkiyeti tapulu. Bloklarda 1+1, 2+1 ve 3+1 daire tipleri bulunuyor. Konum olarak 4. Etap Çarşısı'na yaklaşık 300 metre, metroya yaklaşık 1 kilometre mesafede; TBMM Caddesi güzergâhına uzaklık adaya göre 50 ile 300 metre arasında değişiyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "ozellikler": [
+    "7 ada üzerinde toplam 28 blok",
+    "1+1, 2+1 ve 3+1 daire tipleri",
+    "Kat mülkiyeti tapulu",
+    "4. Etap Çarşısı'na ~300 m, metroya ~1 km"
+  ],
   "adalar": [
     {
       "no": "17621",
