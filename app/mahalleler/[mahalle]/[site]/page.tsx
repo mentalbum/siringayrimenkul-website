@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import {
@@ -52,6 +53,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${site.isim}, Eryaman ${mahalle.isim}'nde. Bu sitede satılık ve kiralık daireler ile ücretsiz ev değerleme için siteyi yakından tanıyan yerel emlakçınıza ulaşın.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
+    ...(site.gorsel && {
+      openGraph: { images: [{ url: site.gorsel, alt: site.isim }] },
+      twitter: { card: "summary_large_image" as const, images: [site.gorsel] },
+    }),
   };
 }
 
@@ -80,6 +85,7 @@ export default async function SitePage({ params }: Props) {
     name: site.isim,
     description: site.aciklama,
     url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
+    ...(site.gorsel && { image: `${siteConfig.url}${site.gorsel}` }),
     ...(site.adres && {
       address: {
         "@type": "PostalAddress",
@@ -130,6 +136,20 @@ export default async function SitePage({ params }: Props) {
         )}
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
       </header>
+
+      {site.gorsel && (
+        <div className="mt-8 overflow-hidden rounded-2xl border border-border">
+          <Image
+            src={site.gorsel}
+            alt={`${site.isim} — Eryaman ${mahalle.isim}`}
+            width={1440}
+            height={1080}
+            priority
+            className="h-auto w-full object-cover"
+            sizes="(min-width: 1152px) 1152px, 100vw"
+          />
+        </div>
+      )}
 
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Address Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45900/9"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63895,
+      39.96868
+     ],
+     [
+      32.63877,
+      39.96826
+     ],
+     [
+      32.63847,
+      39.96757
+     ],
+     [
+      32.63991,
+      39.9673
+     ],
+     [
+      32.64002,
+      39.96733
+     ],
+     [
+      32.64042,
+      39.96781
+     ],
+     [
+      32.64037,
+      39.9679
+     ],
+     [
+      32.63895,
+      39.96868
+     ]
+    ]
+   ]
+  ]
+ }
+}

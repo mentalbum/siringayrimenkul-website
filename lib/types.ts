@@ -32,6 +32,8 @@ export interface Site {
   adres?: string;
   koordinat?: Koordinat;
   sinirGeoJSON?: string;
+  /** public/ altına göre görsel yolu, örn. "/images/siteler/address-eryaman.jpg" */
+  gorsel?: string;
   aciklama: string;
   ozellikler?: string[];
   adalar?: AdaBilgi[];
