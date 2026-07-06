@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ada Loft Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44756/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60639,
+      40.00334
+     ],
+     [
+      32.60555,
+      40.00321
+     ],
+     [
+      32.60579,
+      40.00228
+     ],
+     [
+      32.60621,
+      40.00107
+     ],
+     [
+      32.60685,
+      40.00123
+     ],
+     [
+      32.6069,
+      40.00127
+     ],
+     [
+      32.60639,
+      40.00334
+     ]
+    ]
+   ]
+  ]
+ }
+}
