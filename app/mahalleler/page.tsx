@@ -7,9 +7,9 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Eryaman ve Yenimahalle Mahalleleri — Emlak Rehberi",
+  title: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi",
   description:
-    "Eryaman'ın 11 mahallesi ile komşu Yenimahalle mahallelerini (Ata, Susuz, Cumhuriyet), site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin.",
+    "Eryaman'ın 11 mahallesini, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin. Ek hizmet bölgemiz Yenimahalle'de Ata, Susuz ve Cumhuriyet de rehberde.",
   alternates: { canonical: "/mahalleler" },
 };
 
@@ -25,12 +25,11 @@ export default function MahallelerPage() {
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Eryaman ve Yenimahalle Mahalleleri",
-    description:
-      "Eryaman'ın 11 mahallesi ile komşu Yenimahalle mahallelerinin emlak rehberi — Şirin Gayrimenkul",
+    name: "Eryaman Mahalleleri",
+    description: "Eryaman bölgesindeki 11 mahallenin emlak rehberi — Şirin Gayrimenkul",
     url: `${siteConfig.url}/mahalleler`,
-    numberOfItems: mahalleler.length,
-    itemListElement: mahalleler.map((m, i) => ({
+    numberOfItems: eryamanMahalleleri.length,
+    itemListElement: eryamanMahalleleri.map((m, i) => ({
       "@type": "ListItem",
       position: i + 1,
       name: m.isim,
@@ -45,15 +44,13 @@ export default function MahallelerPage() {
 
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          Hizmet Bölgemiz
+          Eryaman Bölgesi
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman ve Yenimahalle Mahalleleri</h1>
+        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
           metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 500&apos;den fazla
-          site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz. Bölgeyle iç içe
-          yaşayan komşu Yenimahalle mahallelerine — Ata, Susuz ve Cumhuriyet — de hizmet
-          veriyoruz.
+          site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
@@ -66,8 +63,7 @@ export default function MahallelerPage() {
       </div>
 
       <section className="mt-12">
-        <h2 className="text-xl">Eryaman Mahalleleri</h2>
-        <p className="mt-2 text-sm text-muted">Etimesgut ilçesi — Eryaman bölgesinin 11 mahallesi.</p>
+        <h2 className="text-xl">Eryaman&apos;ın 11 Mahallesi</h2>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {eryamanMahalleleri.map((mahalle) => (
             <MahalleCard key={mahalle.slug} mahalle={mahalle} />
@@ -76,11 +72,15 @@ export default function MahallelerPage() {
       </section>
 
       {yenimahalleMahalleleri.length > 0 && (
-        <section className="mt-14">
-          <h2 className="text-xl">Yenimahalle Mahalleleri</h2>
-          <p className="mt-2 text-sm text-muted">
-            Eryaman&apos;a komşu, günlük yaşamı bölgeyle iç içe olan ve hizmet verdiğimiz
-            Yenimahalle mahalleleri.
+        <section className="mt-16 rounded-3xl border border-[#8FA3BF]/40 bg-[#8FA3BF]/[0.06] p-6 sm:p-8">
+          <p className="text-sm font-semibold uppercase tracking-wide text-[#5f7699]">
+            Ek Hizmet Bölgemiz
+          </p>
+          <h2 className="mt-2 text-xl">Yenimahalle: Ata, Susuz ve Cumhuriyet</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
+            Önceliğimiz Eryaman — ama günlük yaşamı Eryaman&apos;la iç içe olan bu üç komşu
+            mahalleye de aynı yakınlıkla hizmet veriyoruz. Haritada mavi-gri çerçeveyle
+            gördüğünüz bölge burasıdır.
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {yenimahalleMahalleleri.map((mahalle) => (
