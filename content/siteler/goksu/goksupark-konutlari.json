@@ -2,5 +2,16 @@
   "isim": "Göksupark Konutları",
   "slug": "goksupark-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksupark Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984981,
+    "lng": 32.646487
+  },
+  "sinirGeoJSON": "siteler/goksu/goksupark-konutlari-boundary.geojson",
+  "aciklama": "Göksupark Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48147",
+      "parsel": "1"
+    }
+  ]
 }
