@@ -2,5 +2,16 @@
   "isim": "Ahsen Sitesi",
   "slug": "ahsen-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Ahsen Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9860414,
+    "lng": 32.691025
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ahsen-sitesi-boundary.geojson",
+  "aciklama": "Ahsen Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43253",
+      "parsel": "3"
+    }
+  ]
 }
