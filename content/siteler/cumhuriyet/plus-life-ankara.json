@@ -2,5 +2,16 @@
   "isim": "Plus Life Ankara",
   "slug": "plus-life-ankara",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Plus Life Ankara, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9870314,
+    "lng": 32.6625769
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/plus-life-ankara-boundary.geojson",
+  "aciklama": "Plus Life Ankara, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62661",
+      "parsel": "4"
+    }
+  ]
 }
