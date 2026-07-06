@@ -1,4 +1,4 @@
-export type Ilce = "Etimesgut";
+export type Ilce = "Etimesgut" | "Yenimahalle";
 
 export type MahalleDurum = "yayinda" | "yakinda";
 

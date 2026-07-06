@@ -121,16 +121,35 @@ export function Footer() {
             Eryaman Mahalleleri
           </h2>
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
-            {mahalleler.map((mahalle) => (
-              <li key={mahalle.slug}>
-                <Link
-                  href={`/mahalleler/${mahalle.slug}`}
-                  className="text-sm text-white/70 hover:text-gold"
-                >
-                  {mahalle.isim.replace(/\s*Mahallesi$/, "")}
-                </Link>
-              </li>
-            ))}
+            {mahalleler
+              .filter((mahalle) => mahalle.ilce === "Etimesgut")
+              .map((mahalle) => (
+                <li key={mahalle.slug}>
+                  <Link
+                    href={`/mahalleler/${mahalle.slug}`}
+                    className="text-sm text-white/70 hover:text-gold"
+                  >
+                    {mahalle.isim.replace(/\s*Mahallesi$/, "")}
+                  </Link>
+                </li>
+              ))}
+          </ul>
+          <h2 className="mt-6 text-sm font-semibold uppercase tracking-wide text-gold">
+            Yenimahalle Mahalleleri
+          </h2>
+          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
+            {mahalleler
+              .filter((mahalle) => mahalle.ilce === "Yenimahalle")
+              .map((mahalle) => (
+                <li key={mahalle.slug}>
+                  <Link
+                    href={`/mahalleler/${mahalle.slug}`}
+                    className="text-sm text-white/70 hover:text-gold"
+                  >
+                    {mahalle.isim.replace(/\s*Mahallesi$/, "")}
+                  </Link>
+                </li>
+              ))}
           </ul>
         </div>
       </div>

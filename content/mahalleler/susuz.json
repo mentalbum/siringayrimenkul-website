@@ -1,0 +1,17 @@
+{
+  "isim": "Susuz Mahallesi",
+  "slug": "susuz",
+  "ilce": "Yenimahalle",
+  "durum": "yayinda",
+  "kisaAciklama": "Yenimahalle ilçesine bağlı, Eryaman ve Göksu bölgesinin kuzey komşusu olan gelişme bölgesindeki mahalle.",
+  "uzunAciklama": [
+    "Susuz Mahallesi, Yenimahalle ilçesinin batı ucunda, Eryaman ve Göksu bölgesinin kuzeyinde yer alıyor. İstanbul Yolu'na yakınlığı sayesinde hem Eryaman'a hem şehir merkezine bağlantısı güçlüdür.",
+    "Bölge, Göksu tarafındaki yeni konut gelişiminin devamı niteliğinde büyüyen, yeni site ve konut projelerinin yükseldiği bir gelişme aksındadır.",
+    "Şirin Gayrimenkul olarak Susuz Mahallesi'ndeki site ve konutlara da hizmet veriyoruz. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim; süreci uçtan uca biz yönetelim."
+  ],
+  "merkezKoordinat": {
+    "lat": 40.0204091,
+    "lng": 32.6551222
+  },
+  "sinirGeoJSON": "mahalleler/susuz-boundary.geojson"
+}

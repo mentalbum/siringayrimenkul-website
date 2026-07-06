@@ -245,7 +245,7 @@ export default function HomePage() {
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
-              cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
+              cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz. Ayrıca bölgeyle iç içe yaşayan komşu Yenimahalle mahallelerinde — Ata, Susuz ve Cumhuriyet — de hizmet veriyoruz.`,
             },
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",

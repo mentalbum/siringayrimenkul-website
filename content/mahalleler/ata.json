@@ -1,0 +1,17 @@
+{
+  "isim": "Ata Mahallesi",
+  "slug": "ata",
+  "ilce": "Yenimahalle",
+  "durum": "yayinda",
+  "kisaAciklama": "Yenimahalle ilçesine bağlı, Eryaman'ın kuzeybatı komşusu olan ve bölgeyle iç içe yaşayan bir mahalle.",
+  "uzunAciklama": [
+    "Ata Mahallesi, Ankara'nın Yenimahalle ilçesine bağlı olmakla birlikte coğrafi olarak Eryaman bölgesinin hemen yanı başında yer alıyor; günlük yaşamı, ulaşımı ve emlak piyasası Eryaman'la iç içedir.",
+    "Mahalle, site tipi konutların ve müstakil dokunun bir arada bulunduğu, Eryaman'ın çarşı ve metro imkânlarından kolayca yararlanan bir yerleşimdir.",
+    "Şirin Gayrimenkul olarak Eryaman'daki ofisimizden Ata Mahallesi'ne de hizmet veriyoruz. Bu mahallede evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim; süreci uçtan uca biz yönetelim."
+  ],
+  "merkezKoordinat": {
+    "lat": 40.0069573,
+    "lng": 32.6102469
+  },
+  "sinirGeoJSON": "mahalleler/ata-boundary.geojson"
+}

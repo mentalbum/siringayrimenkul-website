@@ -7,14 +7,16 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi",
+  title: "Eryaman ve Yenimahalle Mahalleleri — Emlak Rehberi",
   description:
-    "Eryaman bölgesindeki 11 mahalleyi, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin. Şirin Gayrimenkul olarak her mahalleyi yakından tanıyoruz.",
+    "Eryaman'ın 11 mahallesi ile komşu Yenimahalle mahallelerini (Ata, Susuz, Cumhuriyet), site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin.",
   alternates: { canonical: "/mahalleler" },
 };
 
 export default function MahallelerPage() {
   const mahalleler = getAllMahalleler();
+  const eryamanMahalleleri = mahalleler.filter((m) => m.ilce === "Etimesgut");
+  const yenimahalleMahalleleri = mahalleler.filter((m) => m.ilce === "Yenimahalle");
   const mapItems = mahalleler.map((mahalle) => ({
     mahalle,
     boundary: getMahalleBoundary(mahalle),
@@ -48,7 +50,9 @@ export default function MahallelerPage() {
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
           metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 500&apos;den fazla
-          site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
+          site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz. Bölgeyle iç içe
+          yaşayan komşu Yenimahalle mahallelerine — Ata, Susuz ve Cumhuriyet — de hizmet
+          veriyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
@@ -61,13 +65,29 @@ export default function MahallelerPage() {
       </div>
 
       <section className="mt-12">
-        <h2 className="text-xl">Eryaman&apos;ın Mahalleleri</h2>
+        <h2 className="text-xl">Eryaman Mahalleleri</h2>
+        <p className="mt-2 text-sm text-muted">Etimesgut ilçesi — Eryaman bölgesinin 11 mahallesi.</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {mahalleler.map((mahalle) => (
+          {eryamanMahalleleri.map((mahalle) => (
             <MahalleCard key={mahalle.slug} mahalle={mahalle} />
           ))}
         </div>
       </section>
+
+      {yenimahalleMahalleleri.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl">Yenimahalle Mahalleleri</h2>
+          <p className="mt-2 text-sm text-muted">
+            Eryaman&apos;a komşu, günlük yaşamı bölgeyle iç içe olan ve hizmet verdiğimiz
+            Yenimahalle mahalleleri.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {yenimahalleMahalleleri.map((mahalle) => (
+              <MahalleCard key={mahalle.slug} mahalle={mahalle} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <script
         type="application/ld+json"
