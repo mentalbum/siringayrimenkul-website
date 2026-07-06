@@ -2,5 +2,16 @@
   "isim": "Paradise Göksu",
   "slug": "paradise-goksu",
   "mahalleSlug": "susuz",
-  "aciklama": "Paradise Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.006463,
+    "lng": 32.64776
+  },
+  "sinirGeoJSON": "siteler/susuz/paradise-goksu-boundary.geojson",
+  "aciklama": "Paradise Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63376",
+      "parsel": "4"
+    }
+  ]
 }

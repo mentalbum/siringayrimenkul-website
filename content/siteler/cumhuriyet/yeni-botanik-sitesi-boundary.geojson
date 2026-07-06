@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Botanik Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43264/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68678,
+      39.98721
+     ],
+     [
+      32.68601,
+      39.98743
+     ],
+     [
+      32.68583,
+      39.98693
+     ],
+     [
+      32.68595,
+      39.98691
+     ],
+     [
+      32.68594,
+      39.98688
+     ],
+     [
+      32.68668,
+      39.98669
+     ],
+     [
+      32.68671,
+      39.98684
+     ],
+     [
+      32.68673,
+      39.98696
+     ],
+     [
+      32.68678,
+      39.98721
+     ]
+    ]
+   ]
+  ]
+ }
+}

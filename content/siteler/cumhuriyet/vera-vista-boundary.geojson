@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vera Vista",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63261/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66373,
+      39.9962
+     ],
+     [
+      32.66405,
+      39.99582
+     ],
+     [
+      32.66421,
+      39.99567
+     ],
+     [
+      32.66443,
+      39.99558
+     ],
+     [
+      32.66467,
+      39.99557
+     ],
+     [
+      32.66494,
+      39.99564
+     ],
+     [
+      32.66537,
+      39.9959
+     ],
+     [
+      32.66489,
+      39.99664
+     ],
+     [
+      32.66373,
+      39.9962
+     ]
+    ]
+   ]
+  ]
+ }
+}

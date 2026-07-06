@@ -2,5 +2,16 @@
   "isim": "Paryap West Life",
   "slug": "paryap-west-life",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Paryap West Life, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988888,
+    "lng": 32.658422
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/paryap-west-life-boundary.geojson",
+  "aciklama": "Paryap West Life, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62669",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Paryap West Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62669/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65899,
+      39.98922
+     ],
+     [
+      32.65791,
+      39.98929
+     ],
+     [
+      32.65779,
+      39.98921
+     ],
+     [
+      32.65778,
+      39.98886
+     ],
+     [
+      32.6578,
+      39.98873
+     ],
+     [
+      32.65785,
+      39.98856
+     ],
+     [
+      32.65903,
+      39.98848
+     ],
+     [
+      32.65906,
+      39.98915
+     ],
+     [
+      32.65899,
+      39.98922
+     ]
+    ]
+   ]
+  ]
+ }
+}

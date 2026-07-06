@@ -2,5 +2,16 @@
   "isim": "Endora Batı",
   "slug": "endora-bati",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Endora Batı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98806,
+    "lng": 32.658497
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/endora-bati-boundary.geojson",
+  "aciklama": "Endora Batı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62669",
+      "parsel": "2"
+    }
+  ]
 }

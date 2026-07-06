@@ -2,5 +2,16 @@
   "isim": "Astim Flora Evleri",
   "slug": "astim-flora-evleri",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Astim Flora Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.986231,
+    "lng": 32.688811
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/astim-flora-evleri-boundary.geojson",
+  "aciklama": "Astim Flora Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43267",
+      "parsel": "1"
+    }
+  ]
 }

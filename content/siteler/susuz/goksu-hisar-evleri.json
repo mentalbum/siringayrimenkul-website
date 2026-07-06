@@ -2,5 +2,16 @@
   "isim": "Göksu Hisar Evleri",
   "slug": "goksu-hisar-evleri",
   "mahalleSlug": "susuz",
-  "aciklama": "Göksu Hisar Evleri, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.011097,
+    "lng": 32.632622
+  },
+  "sinirGeoJSON": "siteler/susuz/goksu-hisar-evleri-boundary.geojson",
+  "aciklama": "Göksu Hisar Evleri, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63929",
+      "parsel": "3"
+    }
+  ]
 }

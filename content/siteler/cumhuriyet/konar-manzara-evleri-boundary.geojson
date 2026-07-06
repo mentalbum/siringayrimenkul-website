@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Konar Manzara Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62683/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66343,
+      39.98331
+     ],
+     [
+      32.6639,
+      39.98357
+     ],
+     [
+      32.66392,
+      39.98363
+     ],
+     [
+      32.66324,
+      39.98442
+     ],
+     [
+      32.66262,
+      39.98398
+     ],
+     [
+      32.66343,
+      39.98331
+     ]
+    ]
+   ]
+  ]
+ }
+}

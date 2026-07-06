@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vera West",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62659/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66398,
+      39.99018
+     ],
+     [
+      32.66392,
+      39.98927
+     ],
+     [
+      32.66496,
+      39.98913
+     ],
+     [
+      32.66507,
+      39.99002
+     ],
+     [
+      32.66497,
+      39.9902
+     ],
+     [
+      32.66447,
+      39.99037
+     ],
+     [
+      32.66398,
+      39.99018
+     ]
+    ]
+   ]
+  ]
+ }
+}

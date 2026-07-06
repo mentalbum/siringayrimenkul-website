@@ -2,5 +2,16 @@
   "isim": "AP İstGate",
   "slug": "ap-istgate",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "AP İstGate, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.976983,
+    "lng": 32.660619
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ap-istgate-boundary.geojson",
+  "aciklama": "AP İstGate, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62689",
+      "parsel": "2"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Başakşehir Ankara Konutları",
   "slug": "basaksehir-ankara-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Başakşehir Ankara Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.985922,
+    "lng": 32.658034
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/basaksehir-ankara-konutlari-boundary.geojson",
+  "aciklama": "Başakşehir Ankara Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62673",
+      "parsel": "1"
+    }
+  ]
 }

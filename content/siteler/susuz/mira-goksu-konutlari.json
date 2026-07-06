@@ -2,5 +2,16 @@
   "isim": "Mira Göksu Konutları",
   "slug": "mira-goksu-konutlari",
   "mahalleSlug": "susuz",
-  "aciklama": "Mira Göksu Konutları, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.00997,
+    "lng": 32.64199
+  },
+  "sinirGeoJSON": "siteler/susuz/mira-goksu-konutlari-boundary.geojson",
+  "aciklama": "Mira Göksu Konutları, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64526",
+      "parsel": "3"
+    }
+  ]
 }

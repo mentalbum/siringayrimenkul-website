@@ -2,5 +2,16 @@
   "isim": "Starlife",
   "slug": "starlife",
   "mahalleSlug": "susuz",
-  "aciklama": "Starlife, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.011519,
+    "lng": 32.643082
+  },
+  "sinirGeoJSON": "siteler/susuz/starlife-boundary.geojson",
+  "aciklama": "Starlife, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64527",
+      "parsel": "7"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Mood Altınok",
   "slug": "mood-altinok",
   "mahalleSlug": "susuz",
-  "aciklama": "Mood Altınok, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.01186,
+    "lng": 32.644384
+  },
+  "sinirGeoJSON": "siteler/susuz/mood-altinok-boundary.geojson",
+  "aciklama": "Mood Altınok, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64527",
+      "parsel": "10"
+    }
+  ]
 }

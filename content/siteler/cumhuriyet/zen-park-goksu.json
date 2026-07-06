@@ -2,5 +2,16 @@
   "isim": "Zen Park Göksu",
   "slug": "zen-park-goksu",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Zen Park Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98705,
+    "lng": 32.657618
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/zen-park-goksu-boundary.geojson",
+  "aciklama": "Zen Park Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62672",
+      "parsel": "1"
+    }
+  ]
 }

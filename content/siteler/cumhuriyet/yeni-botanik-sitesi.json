@@ -2,5 +2,16 @@
   "isim": "Yeni Botanik Sitesi",
   "slug": "yeni-botanik-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Yeni Botanik Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.987054,
+    "lng": 32.686319
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/yeni-botanik-sitesi-boundary.geojson",
+  "aciklama": "Yeni Botanik Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43264",
+      "parsel": "6"
+    }
+  ]
 }

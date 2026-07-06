@@ -2,5 +2,16 @@
   "isim": "Angora Göksu Evleri",
   "slug": "angora-goksu-evleri",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Angora Göksu Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.991965,
+    "lng": 32.658674
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/angora-goksu-evleri-boundary.geojson",
+  "aciklama": "Angora Göksu Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63268",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Ata Yıldız Batı Konutları",
   "slug": "ata-yildiz-bati-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Ata Yıldız Batı Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98911,
+    "lng": 32.665576
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ata-yildiz-bati-konutlari-boundary.geojson",
+  "aciklama": "Ata Yıldız Batı Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62660",
+      "parsel": "1"
+    }
+  ]
 }

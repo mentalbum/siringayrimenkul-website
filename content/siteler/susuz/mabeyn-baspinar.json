@@ -1,0 +1,17 @@
+{
+  "isim": "Mabeyn Başpınar",
+  "slug": "mabeyn-baspinar",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 39.999395,
+    "lng": 32.663452
+  },
+  "sinirGeoJSON": "siteler/susuz/mabeyn-baspinar-boundary.geojson",
+  "aciklama": "Mabeyn Başpınar, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63276",
+      "parsel": "1"
+    }
+  ]
+}

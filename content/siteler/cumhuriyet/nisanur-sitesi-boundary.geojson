@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Nisanur Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43251/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68786,
+      39.98978
+     ],
+     [
+      32.68727,
+      39.98975
+     ],
+     [
+      32.68718,
+      39.98971
+     ],
+     [
+      32.68709,
+      39.98966
+     ],
+     [
+      32.68702,
+      39.98958
+     ],
+     [
+      32.68693,
+      39.98948
+     ],
+     [
+      32.68679,
+      39.98929
+     ],
+     [
+      32.68737,
+      39.98913
+     ],
+     [
+      32.6879,
+      39.98899
+     ],
+     [
+      32.68804,
+      39.98963
+     ],
+     [
+      32.68799,
+      39.98973
+     ],
+     [
+      32.68786,
+      39.98978
+     ]
+    ]
+   ]
+  ]
+ }
+}

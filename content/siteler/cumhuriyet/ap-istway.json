@@ -2,5 +2,16 @@
   "isim": "AP İstWay",
   "slug": "ap-istway",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "AP İstWay, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.973831,
+    "lng": 32.661446
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ap-istway-boundary.geojson",
+  "aciklama": "AP İstWay, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62690",
+      "parsel": "3"
+    }
+  ]
 }

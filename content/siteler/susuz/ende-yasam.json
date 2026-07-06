@@ -2,5 +2,16 @@
   "isim": "Ende Yaşam",
   "slug": "ende-yasam",
   "mahalleSlug": "susuz",
-  "aciklama": "Ende Yaşam, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.011411,
+    "lng": 32.651813
+  },
+  "sinirGeoJSON": "siteler/susuz/ende-yasam-boundary.geojson",
+  "aciklama": "Ende Yaşam, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63340",
+      "parsel": "6"
+    }
+  ]
 }

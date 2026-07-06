@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "AP İstWay",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62690/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66089,
+      39.97417
+     ],
+     [
+      32.66091,
+      39.97414
+     ],
+     [
+      32.66107,
+      39.97389
+     ],
+     [
+      32.66131,
+      39.97355
+     ],
+     [
+      32.66149,
+      39.97335
+     ],
+     [
+      32.66181,
+      39.97333
+     ],
+     [
+      32.66174,
+      39.97408
+     ],
+     [
+      32.66173,
+      39.97423
+     ],
+     [
+      32.66089,
+      39.97417
+     ]
+    ]
+   ]
+  ]
+ }
+}

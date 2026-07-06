@@ -2,5 +2,16 @@
   "isim": "Wind Göksu",
   "slug": "wind-goksu",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Wind Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988874,
+    "lng": 32.664413
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/wind-goksu-boundary.geojson",
+  "aciklama": "Wind Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62659",
+      "parsel": "2"
+    }
+  ]
 }

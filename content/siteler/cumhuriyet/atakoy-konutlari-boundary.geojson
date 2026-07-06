@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ataköy Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62682/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66015,
+      39.98472
+     ],
+     [
+      32.65996,
+      39.98472
+     ],
+     [
+      32.65943,
+      39.98432
+     ],
+     [
+      32.65943,
+      39.98426
+     ],
+     [
+      32.6602,
+      39.98362
+     ],
+     [
+      32.66091,
+      39.98413
+     ],
+     [
+      32.66015,
+      39.98472
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Öz Uğur Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43254/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68923,
+      39.98499
+     ],
+     [
+      32.68912,
+      39.98452
+     ],
+     [
+      32.68907,
+      39.98442
+     ],
+     [
+      32.68904,
+      39.98436
+     ],
+     [
+      32.68898,
+      39.98429
+     ],
+     [
+      32.68891,
+      39.98423
+     ],
+     [
+      32.68894,
+      39.98418
+     ],
+     [
+      32.68965,
+      39.98414
+     ],
+     [
+      32.68983,
+      39.98493
+     ],
+     [
+      32.68923,
+      39.98499
+     ]
+    ]
+   ]
+  ]
+ }
+}

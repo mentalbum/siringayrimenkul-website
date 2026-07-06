@@ -2,5 +2,16 @@
   "isim": "Ataköy Konutları",
   "slug": "atakoy-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Ataköy Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984202,
+    "lng": 32.660145
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/atakoy-konutlari-boundary.geojson",
+  "aciklama": "Ataköy Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62682",
+      "parsel": "1"
+    }
+  ]
 }

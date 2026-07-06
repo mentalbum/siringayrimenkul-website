@@ -2,5 +2,16 @@
   "isim": "Bulut Kule",
   "slug": "bulut-kule",
   "mahalleSlug": "susuz",
-  "aciklama": "Bulut Kule, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.005209,
+    "lng": 32.641528
+  },
+  "sinirGeoJSON": "siteler/susuz/bulut-kule-boundary.geojson",
+  "aciklama": "Bulut Kule, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63384",
+      "parsel": "1"
+    }
+  ]
 }

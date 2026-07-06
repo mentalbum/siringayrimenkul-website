@@ -2,5 +2,16 @@
   "isim": "Ender Doğuş Konut Yapı",
   "slug": "ender-dogus-konut-yapi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Ender Doğuş Konut Yapı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98122,
+    "lng": 32.685167
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ender-dogus-konut-yapi-boundary.geojson",
+  "aciklama": "Ender Doğuş Konut Yapı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43259",
+      "parsel": "7"
+    }
+  ]
 }

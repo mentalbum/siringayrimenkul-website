@@ -2,5 +2,16 @@
   "isim": "Çağ Life Sitesi",
   "slug": "cag-life-sitesi",
   "mahalleSlug": "susuz",
-  "aciklama": "Çağ Life Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.00382,
+    "lng": 32.641539
+  },
+  "sinirGeoJSON": "siteler/susuz/cag-life-sitesi-boundary.geojson",
+  "aciklama": "Çağ Life Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63387",
+      "parsel": "2"
+    }
+  ]
 }

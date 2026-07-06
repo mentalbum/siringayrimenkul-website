@@ -2,5 +2,16 @@
   "isim": "Gülbaran Residence",
   "slug": "gulbaran-residence",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Gülbaran Residence, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.990018,
+    "lng": 32.656768
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/gulbaran-residence-boundary.geojson",
+  "aciklama": "Gülbaran Residence, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62655",
+      "parsel": "1"
+    }
+  ]
 }

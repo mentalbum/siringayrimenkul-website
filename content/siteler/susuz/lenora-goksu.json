@@ -2,5 +2,16 @@
   "isim": "Lenora Göksu",
   "slug": "lenora-goksu",
   "mahalleSlug": "susuz",
-  "aciklama": "Lenora Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.005312,
+    "lng": 32.648485
+  },
+  "sinirGeoJSON": "siteler/susuz/lenora-goksu-boundary.geojson",
+  "aciklama": "Lenora Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63377",
+      "parsel": "3"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Ütopya Konutları",
   "slug": "utopya-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Ütopya Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98468,
+    "lng": 32.658841
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/utopya-konutlari-boundary.geojson",
+  "aciklama": "Ütopya Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62676",
+      "parsel": "1"
+    }
+  ]
 }

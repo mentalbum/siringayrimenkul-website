@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Starlife",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "64527/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64372,
+      40.01173
+     ],
+     [
+      32.64372,
+      40.01184
+     ],
+     [
+      32.64286,
+      40.01199
+     ],
+     [
+      32.64281,
+      40.01187
+     ],
+     [
+      32.64275,
+      40.01175
+     ],
+     [
+      32.64267,
+      40.01163
+     ],
+     [
+      32.64246,
+      40.01138
+     ],
+     [
+      32.64249,
+      40.01128
+     ],
+     [
+      32.64314,
+      40.01097
+     ],
+     [
+      32.64347,
+      40.0114
+     ],
+     [
+      32.64372,
+      40.01173
+     ]
+    ]
+   ]
+  ]
+ }
+}

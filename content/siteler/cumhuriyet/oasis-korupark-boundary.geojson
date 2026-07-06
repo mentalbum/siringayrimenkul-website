@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Oasis Korupark",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62661/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66367,
+      39.98672
+     ],
+     [
+      32.66401,
+      39.98697
+     ],
+     [
+      32.66406,
+      39.98704
+     ],
+     [
+      32.66409,
+      39.98747
+     ],
+     [
+      32.66405,
+      39.98754
+     ],
+     [
+      32.66379,
+      39.98776
+     ],
+     [
+      32.66309,
+      39.98721
+     ],
+     [
+      32.66367,
+      39.98672
+     ]
+    ]
+   ]
+  ]
+ }
+}

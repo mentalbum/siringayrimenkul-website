@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Palas Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63360/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64077,
+      40.00788
+     ],
+     [
+      32.64112,
+      40.00832
+     ],
+     [
+      32.64139,
+      40.00866
+     ],
+     [
+      32.64159,
+      40.0089
+     ],
+     [
+      32.64048,
+      40.00888
+     ],
+     [
+      32.63981,
+      40.00879
+     ],
+     [
+      32.6399,
+      40.00837
+     ],
+     [
+      32.64002,
+      40.00823
+     ],
+     [
+      32.64077,
+      40.00788
+     ]
+    ]
+   ]
+  ]
+ }
+}

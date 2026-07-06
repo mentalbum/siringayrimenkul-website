@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Angora Göksu Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63268/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65792,
+      39.99252
+     ],
+     [
+      32.65786,
+      39.99132
+     ],
+     [
+      32.65791,
+      39.99128
+     ],
+     [
+      32.65874,
+      39.99122
+     ],
+     [
+      32.6588,
+      39.99127
+     ],
+     [
+      32.65882,
+      39.99175
+     ],
+     [
+      32.65888,
+      39.99179
+     ],
+     [
+      32.65969,
+      39.99176
+     ],
+     [
+      32.65973,
+      39.99247
+     ],
+     [
+      32.65792,
+      39.99252
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Günebakan Sitesi",
   "slug": "gunebakan-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Günebakan Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984494,
+    "lng": 32.685735
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/gunebakan-sitesi-boundary.geojson",
+  "aciklama": "Günebakan Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43263",
+      "parsel": "3"
+    }
+  ]
 }

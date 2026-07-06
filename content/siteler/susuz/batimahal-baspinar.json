@@ -2,5 +2,16 @@
   "isim": "Batımahal Başpınar",
   "slug": "batimahal-baspinar",
   "mahalleSlug": "susuz",
-  "aciklama": "Batımahal Başpınar, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000895,
+    "lng": 32.66141
+  },
+  "sinirGeoJSON": "siteler/susuz/batimahal-baspinar-boundary.geojson",
+  "aciklama": "Batımahal Başpınar, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63280",
+      "parsel": "2"
+    }
+  ]
 }

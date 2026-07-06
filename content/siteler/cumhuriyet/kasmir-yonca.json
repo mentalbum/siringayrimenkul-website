@@ -2,5 +2,16 @@
   "isim": "Kaşmir Yonca",
   "slug": "kasmir-yonca",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Kaşmir Yonca, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.994648,
+    "lng": 32.656702
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/kasmir-yonca-boundary.geojson",
+  "aciklama": "Kaşmir Yonca, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63271",
+      "parsel": "2"
+    }
+  ]
 }

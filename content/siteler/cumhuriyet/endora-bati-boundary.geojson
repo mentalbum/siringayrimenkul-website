@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Endora Batı",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62669/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6582,
+      39.98748
+     ],
+     [
+      32.65902,
+      39.98761
+     ],
+     [
+      32.659,
+      39.98772
+     ],
+     [
+      32.65903,
+      39.98848
+     ],
+     [
+      32.65785,
+      39.98856
+     ],
+     [
+      32.6582,
+      39.98748
+     ]
+    ]
+   ]
+  ]
+ }
+}

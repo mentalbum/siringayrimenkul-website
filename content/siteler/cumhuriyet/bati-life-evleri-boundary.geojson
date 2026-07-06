@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Batı Life Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43272/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68749,
+      39.98295
+     ],
+     [
+      32.6861,
+      39.98289
+     ],
+     [
+      32.68602,
+      39.98282
+     ],
+     [
+      32.68598,
+      39.98255
+     ],
+     [
+      32.68721,
+      39.98243
+     ],
+     [
+      32.68761,
+      39.9827
+     ],
+     [
+      32.68761,
+      39.98288
+     ],
+     [
+      32.68749,
+      39.98295
+     ]
+    ]
+   ]
+  ]
+ }
+}

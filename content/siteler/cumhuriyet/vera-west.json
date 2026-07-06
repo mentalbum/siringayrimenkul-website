@@ -2,5 +2,16 @@
   "isim": "Vera West",
   "slug": "vera-west",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Vera West, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.989738,
+    "lng": 32.664496
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/vera-west-boundary.geojson",
+  "aciklama": "Vera West, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62659",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Motto Göksu",
   "slug": "motto-goksu",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Motto Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98993,
+    "lng": 32.659548
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/motto-goksu-boundary.geojson",
+  "aciklama": "Motto Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62656",
+      "parsel": "1"
+    }
+  ]
 }

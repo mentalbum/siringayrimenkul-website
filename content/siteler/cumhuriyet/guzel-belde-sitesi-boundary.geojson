@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Güzel Belde Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43263/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68477,
+      39.9854
+     ],
+     [
+      32.68472,
+      39.98538
+     ],
+     [
+      32.68447,
+      39.98494
+     ],
+     [
+      32.68441,
+      39.98474
+     ],
+     [
+      32.6844,
+      39.98465
+     ],
+     [
+      32.68455,
+      39.98462
+     ],
+     [
+      32.68468,
+      39.9846
+     ],
+     [
+      32.68508,
+      39.98458
+     ],
+     [
+      32.68518,
+      39.98495
+     ],
+     [
+      32.68529,
+      39.98535
+     ],
+     [
+      32.68477,
+      39.9854
+     ]
+    ]
+   ]
+  ]
+ }
+}

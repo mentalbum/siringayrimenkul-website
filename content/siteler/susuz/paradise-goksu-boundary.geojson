@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Paradise Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63376/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6468,
+      40.00631
+     ],
+     [
+      32.64785,
+      40.00559
+     ],
+     [
+      32.64858,
+      40.00647
+     ],
+     [
+      32.64868,
+      40.00675
+     ],
+     [
+      32.64867,
+      40.00694
+     ],
+     [
+      32.64729,
+      40.00712
+     ],
+     [
+      32.6468,
+      40.00631
+     ]
+    ]
+   ]
+  ]
+ }
+}

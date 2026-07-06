@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mavera Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63356/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65168,
+      40.00528
+     ],
+     [
+      32.65167,
+      40.00525
+     ],
+     [
+      32.65238,
+      40.00511
+     ],
+     [
+      32.65239,
+      40.00514
+     ],
+     [
+      32.6524,
+      40.00519
+     ],
+     [
+      32.6524,
+      40.00525
+     ],
+     [
+      32.6524,
+      40.0053
+     ],
+     [
+      32.65232,
+      40.00594
+     ],
+     [
+      32.65162,
+      40.00589
+     ],
+     [
+      32.65168,
+      40.00537
+     ],
+     [
+      32.65168,
+      40.00528
+     ]
+    ]
+   ]
+  ]
+ }
+}

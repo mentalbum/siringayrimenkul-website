@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hityenibatı Haktanır Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62677/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65935,
+      39.98413
+     ],
+     [
+      32.65919,
+      39.98425
+     ],
+     [
+      32.65912,
+      39.98427
+     ],
+     [
+      32.65805,
+      39.98409
+     ],
+     [
+      32.65801,
+      39.98404
+     ],
+     [
+      32.65813,
+      39.98364
+     ],
+     [
+      32.65942,
+      39.98388
+     ],
+     [
+      32.65935,
+      39.98413
+     ]
+    ]
+   ]
+  ]
+ }
+}

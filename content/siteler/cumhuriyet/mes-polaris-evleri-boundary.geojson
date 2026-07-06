@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mes Polaris Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62662/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6613,
+      39.98603
+     ],
+     [
+      32.6613,
+      39.98594
+     ],
+     [
+      32.66159,
+      39.98572
+     ],
+     [
+      32.66217,
+      39.9862
+     ],
+     [
+      32.66186,
+      39.98643
+     ],
+     [
+      32.66178,
+      39.98643
+     ],
+     [
+      32.6613,
+      39.98603
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akın Garden Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62680/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66114,
+      39.98255
+     ],
+     [
+      32.66096,
+      39.9828
+     ],
+     [
+      32.6606,
+      39.9831
+     ],
+     [
+      32.66044,
+      39.98313
+     ],
+     [
+      32.65992,
+      39.98303
+     ],
+     [
+      32.65988,
+      39.98298
+     ],
+     [
+      32.66015,
+      39.98207
+     ],
+     [
+      32.6612,
+      39.98233
+     ],
+     [
+      32.66114,
+      39.98255
+     ]
+    ]
+   ]
+  ]
+ }
+}

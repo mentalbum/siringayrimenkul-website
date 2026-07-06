@@ -2,5 +2,16 @@
   "isim": "Majör Göksu",
   "slug": "major-goksu",
   "mahalleSlug": "susuz",
-  "aciklama": "Majör Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.006391,
+    "lng": 32.649374
+  },
+  "sinirGeoJSON": "siteler/susuz/major-goksu-boundary.geojson",
+  "aciklama": "Majör Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63377",
+      "parsel": "5"
+    }
+  ]
 }

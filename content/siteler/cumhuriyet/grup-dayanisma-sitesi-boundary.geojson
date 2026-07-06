@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Grup Dayanışma Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43252/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68867,
+      39.98855
+     ],
+     [
+      32.68808,
+      39.98796
+     ],
+     [
+      32.68877,
+      39.98777
+     ],
+     [
+      32.68929,
+      39.98818
+     ],
+     [
+      32.68921,
+      39.98823
+     ],
+     [
+      32.68867,
+      39.98855
+     ]
+    ]
+   ]
+  ]
+ }
+}

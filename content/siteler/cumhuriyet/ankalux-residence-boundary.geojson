@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ankalüx Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62684/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66513,
+      39.98217
+     ],
+     [
+      32.66512,
+      39.9822
+     ],
+     [
+      32.66512,
+      39.98222
+     ],
+     [
+      32.6651,
+      39.98225
+     ],
+     [
+      32.66509,
+      39.98227
+     ],
+     [
+      32.66491,
+      39.98248
+     ],
+     [
+      32.66431,
+      39.98238
+     ],
+     [
+      32.66445,
+      39.98161
+     ],
+     [
+      32.66501,
+      39.9816
+     ],
+     [
+      32.66513,
+      39.98167
+     ],
+     [
+      32.66513,
+      39.98217
+     ]
+    ]
+   ]
+  ]
+ }
+}

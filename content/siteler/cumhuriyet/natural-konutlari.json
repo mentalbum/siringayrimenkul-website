@@ -2,5 +2,16 @@
   "isim": "Natural Konutları",
   "slug": "natural-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Natural Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988078,
+    "lng": 32.664983
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/natural-konutlari-boundary.geojson",
+  "aciklama": "Natural Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62660",
+      "parsel": "2"
+    }
+  ]
 }

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "AP Green Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62679/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65977,
+      39.98212
+     ],
+     [
+      32.6597,
+      39.98216
+     ],
+     [
+      32.6587,
+      39.98196
+     ],
+     [
+      32.65866,
+      39.9819
+     ],
+     [
+      32.65887,
+      39.98119
+     ],
+     [
+      32.65891,
+      39.98117
+     ],
+     [
+      32.65995,
+      39.98141
+     ],
+     [
+      32.65997,
+      39.98145
+     ],
+     [
+      32.65977,
+      39.98212
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Güzel Belde Sitesi",
   "slug": "guzel-belde-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Güzel Belde Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.984983,
+    "lng": 32.684858
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/guzel-belde-sitesi-boundary.geojson",
+  "aciklama": "Güzel Belde Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43263",
+      "parsel": "1"
+    }
+  ]
 }

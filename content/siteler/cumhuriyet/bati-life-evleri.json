@@ -2,5 +2,16 @@
   "isim": "Batı Life Evleri",
   "slug": "bati-life-evleri",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Batı Life Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98271,
+    "lng": 32.686818
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/bati-life-evleri-boundary.geojson",
+  "aciklama": "Batı Life Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43272",
+      "parsel": "1"
+    }
+  ]
 }

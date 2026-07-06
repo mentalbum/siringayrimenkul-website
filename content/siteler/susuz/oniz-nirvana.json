@@ -2,5 +2,16 @@
   "isim": "Öniz Nirvana",
   "slug": "oniz-nirvana",
   "mahalleSlug": "susuz",
-  "aciklama": "Öniz Nirvana, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.013702,
+    "lng": 32.647855
+  },
+  "sinirGeoJSON": "siteler/susuz/oniz-nirvana-boundary.geojson",
+  "aciklama": "Öniz Nirvana, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63339",
+      "parsel": "4"
+    }
+  ]
 }

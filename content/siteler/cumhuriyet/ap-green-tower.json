@@ -2,5 +2,16 @@
   "isim": "AP Green Tower",
   "slug": "ap-green-tower",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "AP Green Tower, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.981674,
+    "lng": 32.659311
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ap-green-tower-boundary.geojson",
+  "aciklama": "AP Green Tower, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62679",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Nisanur Sitesi",
   "slug": "nisanur-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Nisanur Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.989428,
+    "lng": 32.687509
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/nisanur-sitesi-boundary.geojson",
+  "aciklama": "Nisanur Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43251",
+      "parsel": "3"
+    }
+  ]
 }

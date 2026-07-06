@@ -2,5 +2,16 @@
   "isim": "Hityenibatı Haktanır Konutları",
   "slug": "hityenibati-haktanir-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Hityenibatı Haktanır Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.983972,
+    "lng": 32.658698
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/hityenibati-haktanir-konutlari-boundary.geojson",
+  "aciklama": "Hityenibatı Haktanır Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62677",
+      "parsel": "1"
+    }
+  ]
 }
