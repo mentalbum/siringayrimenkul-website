@@ -7,14 +7,18 @@
     "lng": 32.645009
   },
   "sinirGeoJSON": "siteler/goksu/kasmir-gol-evleri-boundary.geojson",
-  "aciklama": "Kaşmir Göl Evleri, Göksu Mahallesi'nde Susuz Gölü ve Göksu Parkı'na komşu konumda, Kaşmir Yapı A.Ş. imzasıyla 2014'te teslim edilen ve Eryaman'ın en prestijli konut projeleri arasında sayılan bir yaşam kompleksi. TKGM kayıtlarına göre yaklaşık 120.000 m²'lik tek parsel (63932 ada / 2 parsel) üzerine kurulu site, 14 blokta toplam 1.438 konuttan oluşuyor. Site içinde ticaret meydanı, kafe ve restoranlar, yüzme havuzu, su yolları ve süs havuzları, spor sahaları ve çocuk oyun alanları bulunuyor; 740 m²'lik kreş ile 670 m²'lik market siteye hizmet veren ticari alanlardan. Konum olarak metroya ve İstanbul Yolu'na yaklaşık 1 km, Göksu AVM'ye 500 m mesafede. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin; süreci uçtan uca biz yönetelim.",
+  "aciklama": "Kaşmir Göl Evleri, Göksu Mahallesi'nde Susuz Gölü ve Göksu Parkı'na komşu konumda, Kaşmir Yapı A.Ş. imzasıyla 2014'te teslim edilen ve Eryaman'ın en prestijli konut projeleri arasında sayılan bir yaşam kompleksi. TKGM kayıtlarına göre yaklaşık 120.000 m²'lik tek parsel (63932 ada / 2 parsel) üzerine kurulu site, 14 blokta toplam 1.438 konuttan oluşuyor. Site içinde ticaret meydanı, kafe ve restoranlar, yüzme havuzu, su yolları ve süs havuzları, spor sahaları ve çocuk oyun alanları bulunuyor; 740 m²'lik kreş ile 670 m²'lik market siteye hizmet veren ticari alanlardan. Sitede açık ve kapalı otopark ile 7/24 güvenlik bulunuyor; tapular kat mülkiyetli ve bloklar B sınıfı Enerji Kimlik Belgeli. Konum olarak metroya ve İstanbul Yolu'na yaklaşık 1 km, Göksu AVM'ye 500 m mesafede. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin; süreci uçtan uca biz yönetelim.",
   "ozellikler": [
     "14 blok, 1.438 konut",
     "~120.000 m² tek parsel (63932/2)",
     "Yüzme havuzu, su yolları ve süs havuzları",
     "Site içi ticaret meydanı, kreş (740 m²) ve market (670 m²)",
     "Göksu Parkı ve Susuz Gölü'ne komşu",
-    "Teslim: 2014 — Kaşmir Yapı A.Ş."
+    "Teslim: 2014 — Kaşmir Yapı A.Ş.",
+    "Açık ve kapalı otopark",
+    "7/24 güvenlik",
+    "Kat mülkiyeti tapulu",
+    "Enerji Kimlik Belgesi: B sınıfı"
   ],
   "adalar": [
     {
