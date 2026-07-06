@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Parkyaman Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45839/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61005,
+      40.00873
+     ],
+     [
+      32.61004,
+      40.00891
+     ],
+     [
+      32.60995,
+      40.00923
+     ],
+     [
+      32.60988,
+      40.00928
+     ],
+     [
+      32.60859,
+      40.00925
+     ],
+     [
+      32.60841,
+      40.00767
+     ],
+     [
+      32.61004,
+      40.00799
+     ],
+     [
+      32.61009,
+      40.00804
+     ],
+     [
+      32.61005,
+      40.00873
+     ]
+    ]
+   ]
+  ]
+ }
+}

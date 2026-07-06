@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Billur Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44783/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.59375,
+      39.99781
+     ],
+     [
+      32.59343,
+      39.99847
+     ],
+     [
+      32.59273,
+      39.99825
+     ],
+     [
+      32.59267,
+      39.99785
+     ],
+     [
+      32.59265,
+      39.99755
+     ],
+     [
+      32.59272,
+      39.99751
+     ],
+     [
+      32.59375,
+      39.99781
+     ]
+    ]
+   ]
+  ]
+ }
+}

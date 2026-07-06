@@ -2,5 +2,16 @@
   "isim": "Sermina Life",
   "slug": "sermina-life",
   "mahalleSlug": "ata",
-  "aciklama": "Sermina Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.007929,
+    "lng": 32.616817
+  },
+  "sinirGeoJSON": "siteler/ata/sermina-life-boundary.geojson",
+  "aciklama": "Sermina Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46419",
+      "parsel": "1"
+    }
+  ]
 }

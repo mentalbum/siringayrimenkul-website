@@ -2,5 +2,16 @@
   "isim": "Siyah Beyaz Evler",
   "slug": "siyah-beyaz-evler",
   "mahalleSlug": "ata",
-  "aciklama": "Siyah Beyaz Evler, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000599,
+    "lng": 32.594245
+  },
+  "sinirGeoJSON": "siteler/ata/siyah-beyaz-evler-boundary.geojson",
+  "aciklama": "Siyah Beyaz Evler, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44781",
+      "parsel": "1"
+    }
+  ]
 }

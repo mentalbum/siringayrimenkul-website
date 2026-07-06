@@ -2,5 +2,16 @@
   "isim": "Endora Plus",
   "slug": "endora-plus",
   "mahalleSlug": "ata",
-  "aciklama": "Endora Plus, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.005444,
+    "lng": 32.618934
+  },
+  "sinirGeoJSON": "siteler/ata/endora-plus-boundary.geojson",
+  "aciklama": "Endora Plus, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46426",
+      "parsel": "1"
+    }
+  ]
 }

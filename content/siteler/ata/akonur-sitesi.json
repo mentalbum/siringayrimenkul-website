@@ -2,5 +2,16 @@
   "isim": "Akonur Sitesi",
   "slug": "akonur-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Akonur Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.00955,
+    "lng": 32.621703
+  },
+  "sinirGeoJSON": "siteler/ata/akonur-sitesi-boundary.geojson",
+  "aciklama": "Akonur Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46195",
+      "parsel": "1"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Billur Sitesi",
   "slug": "billur-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Billur Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.997978,
+    "lng": 32.593142
+  },
+  "sinirGeoJSON": "siteler/ata/billur-sitesi-boundary.geojson",
+  "aciklama": "Billur Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44783",
+      "parsel": "1"
+    }
+  ]
 }

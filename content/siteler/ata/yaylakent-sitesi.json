@@ -2,5 +2,16 @@
   "isim": "Yaylakent Sitesi",
   "slug": "yaylakent-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Yaylakent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.009991,
+    "lng": 32.608979
+  },
+  "sinirGeoJSON": "siteler/ata/yaylakent-sitesi-boundary.geojson",
+  "aciklama": "Yaylakent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45840",
+      "parsel": "1"
+    }
+  ]
 }

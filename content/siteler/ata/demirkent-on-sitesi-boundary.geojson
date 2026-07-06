@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Demirkent On Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45834/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60771,
+      40.00335
+     ],
+     [
+      32.60855,
+      40.00353
+     ],
+     [
+      32.60844,
+      40.00383
+     ],
+     [
+      32.60786,
+      40.00422
+     ],
+     [
+      32.60776,
+      40.00452
+     ],
+     [
+      32.60736,
+      40.00444
+     ],
+     [
+      32.60771,
+      40.00335
+     ]
+    ]
+   ]
+  ]
+ }
+}

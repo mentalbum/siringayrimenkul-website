@@ -2,5 +2,16 @@
   "isim": "Trend Life Sitesi",
   "slug": "trend-life-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Trend Life Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.009235,
+    "lng": 32.613109
+  },
+  "sinirGeoJSON": "siteler/ata/trend-life-sitesi-boundary.geojson",
+  "aciklama": "Trend Life Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46413",
+      "parsel": "1"
+    }
+  ]
 }

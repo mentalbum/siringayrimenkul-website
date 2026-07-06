@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Liva Life Yaşam Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46407/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61093,
+      40.01088
+     ],
+     [
+      32.60974,
+      40.01056
+     ],
+     [
+      32.61007,
+      40.00961
+     ],
+     [
+      32.61019,
+      40.00956
+     ],
+     [
+      32.61099,
+      40.00962
+     ],
+     [
+      32.61093,
+      40.01088
+     ]
+    ]
+   ]
+  ]
+ }
+}

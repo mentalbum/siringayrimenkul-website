@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Armoni Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46417/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61485,
+      40.00727
+     ],
+     [
+      32.61451,
+      40.0083
+     ],
+     [
+      32.6133,
+      40.00821
+     ],
+     [
+      32.61338,
+      40.00716
+     ],
+     [
+      32.61485,
+      40.00727
+     ]
+    ]
+   ]
+  ]
+ }
+}

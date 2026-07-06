@@ -2,5 +2,16 @@
   "isim": "Taflan Sitesi",
   "slug": "taflan-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Taflan Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002881,
+    "lng": 32.601211
+  },
+  "sinirGeoJSON": "siteler/ata/taflan-sitesi-boundary.geojson",
+  "aciklama": "Taflan Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44752",
+      "parsel": "2"
+    }
+  ]
 }

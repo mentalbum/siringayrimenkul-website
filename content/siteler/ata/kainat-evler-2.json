@@ -2,5 +2,16 @@
   "isim": "Kainat Evler 2",
   "slug": "kainat-evler-2",
   "mahalleSlug": "ata",
-  "aciklama": "Kainat Evler 2, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003313,
+    "lng": 32.600032
+  },
+  "sinirGeoJSON": "siteler/ata/kainat-evler-2-boundary.geojson",
+  "aciklama": "Kainat Evler 2, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44750",
+      "parsel": "1"
+    }
+  ]
 }

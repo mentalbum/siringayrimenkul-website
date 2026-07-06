@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Havuz Kent",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46409/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6136,
+      40.0116
+     ],
+     [
+      32.61198,
+      40.01117
+     ],
+     [
+      32.61199,
+      40.01057
+     ],
+     [
+      32.61381,
+      40.01067
+     ],
+     [
+      32.6136,
+      40.0116
+     ]
+    ]
+   ]
+  ]
+ }
+}

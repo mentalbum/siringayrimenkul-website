@@ -2,5 +2,16 @@
   "isim": "Güzel Akyüzüm Sitesi",
   "slug": "guzel-akyuzum-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Güzel Akyüzüm Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.010409,
+    "lng": 32.621833
+  },
+  "sinirGeoJSON": "siteler/ata/guzel-akyuzum-sitesi-boundary.geojson",
+  "aciklama": "Güzel Akyüzüm Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46194",
+      "parsel": "1"
+    }
+  ]
 }

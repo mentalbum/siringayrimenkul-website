@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akdam Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44776/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.59802,
+      39.99995
+     ],
+     [
+      32.59789,
+      39.99992
+     ],
+     [
+      32.59743,
+      39.99938
+     ],
+     [
+      32.59878,
+      39.999
+     ],
+     [
+      32.59884,
+      39.99902
+     ],
+     [
+      32.59892,
+      39.99906
+     ],
+     [
+      32.59899,
+      39.9991
+     ],
+     [
+      32.59904,
+      39.99914
+     ],
+     [
+      32.59932,
+      39.9995
+     ],
+     [
+      32.59931,
+      39.99959
+     ],
+     [
+      32.59802,
+      39.99995
+     ]
+    ]
+   ]
+  ]
+ }
+}

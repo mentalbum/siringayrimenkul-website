@@ -2,5 +2,16 @@
   "isim": "Alkon Sitesi",
   "slug": "alkon-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Alkon Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.005009,
+    "lng": 32.62163
+  },
+  "sinirGeoJSON": "siteler/ata/alkon-sitesi-boundary.geojson",
+  "aciklama": "Alkon Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46214",
+      "parsel": "1"
+    }
+  ]
 }

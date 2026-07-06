@@ -2,5 +2,16 @@
   "isim": "Armoni Life",
   "slug": "armoni-life",
   "mahalleSlug": "ata",
-  "aciklama": "Armoni Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.007718,
+    "lng": 32.614013
+  },
+  "sinirGeoJSON": "siteler/ata/armoni-life-boundary.geojson",
+  "aciklama": "Armoni Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46417",
+      "parsel": "3"
+    }
+  ]
 }

@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Etikent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44770/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60272,
+      39.99834
+     ],
+     [
+      32.60166,
+      39.99716
+     ],
+     [
+      32.60174,
+      39.9971
+     ],
+     [
+      32.60192,
+      39.99705
+     ],
+     [
+      32.60348,
+      39.99688
+     ],
+     [
+      32.6036,
+      39.99685
+     ],
+     [
+      32.60371,
+      39.99682
+     ],
+     [
+      32.60388,
+      39.99675
+     ],
+     [
+      32.60404,
+      39.99675
+     ],
+     [
+      32.60463,
+      39.9974
+     ],
+     [
+      32.60272,
+      39.99834
+     ]
+    ]
+   ]
+  ]
+ }
+}

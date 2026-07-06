@@ -2,5 +2,16 @@
   "isim": "Belmi Kent",
   "slug": "belmi-kent",
   "mahalleSlug": "ata",
-  "aciklama": "Belmi Kent, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998353,
+    "lng": 32.604035
+  },
+  "sinirGeoJSON": "siteler/ata/belmi-kent-boundary.geojson",
+  "aciklama": "Belmi Kent, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44769",
+      "parsel": "1"
+    }
+  ]
 }

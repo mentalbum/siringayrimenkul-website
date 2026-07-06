@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Belmi Kent",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44769/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60428,
+      39.99879
+     ],
+     [
+      32.60406,
+      39.99897
+     ],
+     [
+      32.6037,
+      39.99935
+     ],
+     [
+      32.60363,
+      39.99936
+     ],
+     [
+      32.60277,
+      39.99839
+     ],
+     [
+      32.60468,
+      39.99745
+     ],
+     [
+      32.60522,
+      39.99804
+     ],
+     [
+      32.6052,
+      39.99824
+     ],
+     [
+      32.60428,
+      39.99879
+     ]
+    ]
+   ]
+  ]
+ }
+}

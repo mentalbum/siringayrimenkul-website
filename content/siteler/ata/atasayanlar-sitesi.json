@@ -2,5 +2,16 @@
   "isim": "Atasayanlar Sitesi",
   "slug": "atasayanlar-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Atasayanlar Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003982,
+    "lng": 32.606949
+  },
+  "sinirGeoJSON": "siteler/ata/atasayanlar-sitesi-boundary.geojson",
+  "aciklama": "Atasayanlar Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45835",
+      "parsel": "1"
+    }
+  ]
 }

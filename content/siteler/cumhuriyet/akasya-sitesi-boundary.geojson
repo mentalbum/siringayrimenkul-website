@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akasya Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43254/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68965,
+      39.98414
+     ],
+     [
+      32.69079,
+      39.98408
+     ],
+     [
+      32.69083,
+      39.9841
+     ],
+     [
+      32.69109,
+      39.98439
+     ],
+     [
+      32.69123,
+      39.98461
+     ],
+     [
+      32.69129,
+      39.98472
+     ],
+     [
+      32.69132,
+      39.9848
+     ],
+     [
+      32.69078,
+      39.98485
+     ],
+     [
+      32.68996,
+      39.98492
+     ],
+     [
+      32.68983,
+      39.98493
+     ],
+     [
+      32.68965,
+      39.98414
+     ]
+    ]
+   ]
+  ]
+ }
+}

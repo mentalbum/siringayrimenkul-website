@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bayer Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44752/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60207,
+      40.0029
+     ],
+     [
+      32.60282,
+      40.00382
+     ],
+     [
+      32.60322,
+      40.0041
+     ],
+     [
+      32.60311,
+      40.00423
+     ],
+     [
+      32.6011,
+      40.0038
+     ],
+     [
+      32.60084,
+      40.00349
+     ],
+     [
+      32.60207,
+      40.0029
+     ]
+    ]
+   ]
+  ]
+ }
+}

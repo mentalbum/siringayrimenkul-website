@@ -2,5 +2,16 @@
   "isim": "Doğasu Elmaslar Evleri",
   "slug": "dogasu-elmaslar-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Doğasu Elmaslar Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003886,
+    "lng": 32.605816
+  },
+  "sinirGeoJSON": "siteler/ata/dogasu-elmaslar-evleri-boundary.geojson",
+  "aciklama": "Doğasu Elmaslar Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44756",
+      "parsel": "1"
+    }
+  ]
 }

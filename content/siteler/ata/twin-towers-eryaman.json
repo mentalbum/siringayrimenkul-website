@@ -2,5 +2,16 @@
   "isim": "Twin Towers Eryaman",
   "slug": "twin-towers-eryaman",
   "mahalleSlug": "ata",
-  "aciklama": "Twin Towers Eryaman, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001969,
+    "lng": 32.598182
+  },
+  "sinirGeoJSON": "siteler/ata/twin-towers-eryaman-boundary.geojson",
+  "aciklama": "Twin Towers Eryaman, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44764",
+      "parsel": "3"
+    }
+  ]
 }

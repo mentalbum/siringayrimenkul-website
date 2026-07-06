@@ -2,5 +2,16 @@
   "isim": "Aker Mücevher Evleri",
   "slug": "aker-mucevher-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Aker Mücevher Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.010342,
+    "lng": 32.611468
+  },
+  "sinirGeoJSON": "siteler/ata/aker-mucevher-evleri-boundary.geojson",
+  "aciklama": "Aker Mücevher Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46408",
+      "parsel": "1"
+    }
+  ]
 }

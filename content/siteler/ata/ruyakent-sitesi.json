@@ -2,5 +2,16 @@
   "isim": "Rüyakent Sitesi",
   "slug": "ruyakent-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Rüyakent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999384,
+    "lng": 32.602528
+  },
+  "sinirGeoJSON": "siteler/ata/ruyakent-sitesi-boundary.geojson",
+  "aciklama": "Rüyakent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44768",
+      "parsel": "3"
+    }
+  ]
 }

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mercan Life Buse Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44753/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60412,
+      40.00236
+     ],
+     [
+      32.60462,
+      40.00291
+     ],
+     [
+      32.6031,
+      40.00371
+     ],
+     [
+      32.60305,
+      40.00368
+     ],
+     [
+      32.60262,
+      40.00314
+     ],
+     [
+      32.60412,
+      40.00236
+     ]
+    ]
+   ]
+  ]
+ }
+}

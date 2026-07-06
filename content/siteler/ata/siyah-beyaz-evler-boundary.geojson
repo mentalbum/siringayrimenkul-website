@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Siyah Beyaz Evler",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44781/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.59528,
+      40.00094
+     ],
+     [
+      32.594,
+      40.00121
+     ],
+     [
+      32.59389,
+      40.00118
+     ],
+     [
+      32.59371,
+      40.00089
+     ],
+     [
+      32.59326,
+      39.99999
+     ],
+     [
+      32.59336,
+      39.99995
+     ],
+     [
+      32.59369,
+      40.00003
+     ],
+     [
+      32.59399,
+      40.00011
+     ],
+     [
+      32.59442,
+      40.00019
+     ],
+     [
+      32.59489,
+      40.00027
+     ],
+     [
+      32.59528,
+      40.00094
+     ]
+    ]
+   ]
+  ]
+ }
+}

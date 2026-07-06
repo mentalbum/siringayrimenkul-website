@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Twin Towers Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44764/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.59817,
+      40.00126
+     ],
+     [
+      32.59901,
+      40.00229
+     ],
+     [
+      32.59827,
+      40.00268
+     ],
+     [
+      32.59816,
+      40.00267
+     ],
+     [
+      32.5974,
+      40.00165
+     ],
+     [
+      32.59741,
+      40.00156
+     ],
+     [
+      32.59817,
+      40.00126
+     ]
+    ]
+   ]
+  ]
+ }
+}

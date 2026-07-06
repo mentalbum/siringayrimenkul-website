@@ -2,5 +2,16 @@
   "isim": "Demirkent On Sitesi",
   "slug": "demirkent-on-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Demirkent On Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003875,
+    "lng": 32.607898
+  },
+  "sinirGeoJSON": "siteler/ata/demirkent-on-sitesi-boundary.geojson",
+  "aciklama": "Demirkent On Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45834",
+      "parsel": "2"
+    }
+  ]
 }

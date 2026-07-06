@@ -2,5 +2,16 @@
   "isim": "Elit Yaşam Konutları 3",
   "slug": "elit-yasam-konutlari-3",
   "mahalleSlug": "ata",
-  "aciklama": "Elit Yaşam Konutları 3, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.006733,
+    "lng": 32.617014
+  },
+  "sinirGeoJSON": "siteler/ata/elit-yasam-konutlari-3-boundary.geojson",
+  "aciklama": "Elit Yaşam Konutları 3, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46423",
+      "parsel": "1"
+    }
+  ]
 }

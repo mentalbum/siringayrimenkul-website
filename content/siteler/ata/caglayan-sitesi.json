@@ -2,5 +2,16 @@
   "isim": "Çağlayan Sitesi",
   "slug": "caglayan-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Çağlayan Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.997998,
+    "lng": 32.601362
+  },
+  "sinirGeoJSON": "siteler/ata/caglayan-sitesi-boundary.geojson",
+  "aciklama": "Çağlayan Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44772",
+      "parsel": "1"
+    }
+  ]
 }

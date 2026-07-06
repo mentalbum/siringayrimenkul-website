@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kainat Evler 2",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44750/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60016,
+      40.00281
+     ],
+     [
+      32.60089,
+      40.00372
+     ],
+     [
+      32.60085,
+      40.00375
+     ],
+     [
+      32.59901,
+      40.00336
+     ],
+     [
+      32.60016,
+      40.00281
+     ]
+    ]
+   ]
+  ]
+ }
+}

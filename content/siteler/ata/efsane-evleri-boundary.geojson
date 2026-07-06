@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Efsane Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44758/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60557,
+      40.00078
+     ],
+     [
+      32.60419,
+      39.9993
+     ],
+     [
+      32.6042,
+      39.9992
+     ],
+     [
+      32.60429,
+      39.99911
+     ],
+     [
+      32.60448,
+      39.99895
+     ],
+     [
+      32.60538,
+      39.99842
+     ],
+     [
+      32.60558,
+      39.99843
+     ],
+     [
+      32.60591,
+      39.99878
+     ],
+     [
+      32.60581,
+      40.00025
+     ],
+     [
+      32.60564,
+      40.00077
+     ],
+     [
+      32.60557,
+      40.00078
+     ]
+    ]
+   ]
+  ]
+ }
+}

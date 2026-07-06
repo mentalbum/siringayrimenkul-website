@@ -2,5 +2,16 @@
   "isim": "Batı Sistemciler Sitesi",
   "slug": "bati-sistemciler-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Batı Sistemciler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998767,
+    "lng": 32.60002
+  },
+  "sinirGeoJSON": "siteler/ata/bati-sistemciler-sitesi-boundary.geojson",
+  "aciklama": "Batı Sistemciler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44773",
+      "parsel": "3"
+    }
+  ]
 }

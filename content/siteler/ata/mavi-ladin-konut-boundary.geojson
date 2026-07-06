@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mavi Ladin Konut",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46201/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61807,
+      40.01039
+     ],
+     [
+      32.61736,
+      40.01039
+     ],
+     [
+      32.6174,
+      40.01005
+     ],
+     [
+      32.61744,
+      40.01003
+     ],
+     [
+      32.61782,
+      40.01003
+     ],
+     [
+      32.61792,
+      40.01
+     ],
+     [
+      32.61876,
+      40.00939
+     ],
+     [
+      32.61897,
+      40.00939
+     ],
+     [
+      32.61905,
+      40.00968
+     ],
+     [
+      32.61863,
+      40.00999
+     ],
+     [
+      32.61807,
+      40.01039
+     ]
+    ]
+   ]
+  ]
+ }
+}

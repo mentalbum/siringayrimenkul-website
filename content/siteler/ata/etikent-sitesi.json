@@ -2,5 +2,16 @@
   "isim": "Etikent Sitesi",
   "slug": "etikent-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Etikent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.99744,
+    "lng": 32.603141
+  },
+  "sinirGeoJSON": "siteler/ata/etikent-sitesi-boundary.geojson",
+  "aciklama": "Etikent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44770",
+      "parsel": "1"
+    }
+  ]
 }

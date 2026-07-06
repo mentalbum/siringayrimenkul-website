@@ -2,5 +2,16 @@
   "isim": "Tuana Evleri",
   "slug": "tuana-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Tuana Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.005557,
+    "lng": 32.617293
+  },
+  "sinirGeoJSON": "siteler/ata/tuana-evleri-boundary.geojson",
+  "aciklama": "Tuana Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46425",
+      "parsel": "1"
+    }
+  ]
 }

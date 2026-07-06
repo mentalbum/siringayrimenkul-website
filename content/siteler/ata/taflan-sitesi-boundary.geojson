@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Taflan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44752/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60207,
+      40.0029
+     ],
+     [
+      32.60084,
+      40.00349
+     ],
+     [
+      32.60039,
+      40.00293
+     ],
+     [
+      32.60039,
+      40.00286
+     ],
+     [
+      32.60154,
+      40.00228
+     ],
+     [
+      32.60159,
+      40.00229
+     ],
+     [
+      32.60207,
+      40.0029
+     ]
+    ]
+   ]
+  ]
+ }
+}

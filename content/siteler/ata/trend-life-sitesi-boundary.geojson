@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Trend Life Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46413/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61406,
+      40.00968
+     ],
+     [
+      32.61213,
+      40.00953
+     ],
+     [
+      32.61203,
+      40.00948
+     ],
+     [
+      32.61203,
+      40.0088
+     ],
+     [
+      32.61429,
+      40.00896
+     ],
+     [
+      32.61406,
+      40.00968
+     ]
+    ]
+   ]
+  ]
+ }
+}

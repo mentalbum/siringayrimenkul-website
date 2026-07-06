@@ -2,5 +2,16 @@
   "isim": "Çağlar Belde Sitesi",
   "slug": "caglar-belde-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Çağlar Belde Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002287,
+    "lng": 32.597332
+  },
+  "sinirGeoJSON": "siteler/ata/caglar-belde-sitesi-boundary.geojson",
+  "aciklama": "Çağlar Belde Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44763",
+      "parsel": "4"
+    }
+  ]
 }

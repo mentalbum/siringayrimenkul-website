@@ -2,5 +2,16 @@
   "isim": "Kozlar Towers",
   "slug": "kozlar-towers",
   "mahalleSlug": "ata",
-  "aciklama": "Kozlar Towers, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998385,
+    "lng": 32.594394
+  },
+  "sinirGeoJSON": "siteler/ata/kozlar-towers-boundary.geojson",
+  "aciklama": "Kozlar Towers, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44783",
+      "parsel": "2"
+    }
+  ]
 }

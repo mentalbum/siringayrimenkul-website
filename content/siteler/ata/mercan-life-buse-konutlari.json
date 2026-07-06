@@ -2,5 +2,16 @@
   "isim": "Mercan Life Buse Konutları",
   "slug": "mercan-life-buse-konutlari",
   "mahalleSlug": "ata",
-  "aciklama": "Mercan Life Buse Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003032,
+    "lng": 32.603609
+  },
+  "sinirGeoJSON": "siteler/ata/mercan-life-buse-konutlari-boundary.geojson",
+  "aciklama": "Mercan Life Buse Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44753",
+      "parsel": "2"
+    }
+  ]
 }

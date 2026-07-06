@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Güzel Akyüzüm Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46194/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62294,
+      40.01082
+     ],
+     [
+      32.62292,
+      40.01085
+     ],
+     [
+      32.62097,
+      40.0108
+     ],
+     [
+      32.62084,
+      40.01071
+     ],
+     [
+      32.62056,
+      40.00996
+     ],
+     [
+      32.62126,
+      40.00999
+     ],
+     [
+      32.62184,
+      40.01002
+     ],
+     [
+      32.62243,
+      40.01005
+     ],
+     [
+      32.62301,
+      40.01008
+     ],
+     [
+      32.62294,
+      40.01082
+     ]
+    ]
+   ]
+  ]
+ }
+}

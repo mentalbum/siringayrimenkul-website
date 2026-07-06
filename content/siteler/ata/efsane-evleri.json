@@ -2,5 +2,16 @@
   "isim": "Efsane Evleri",
   "slug": "efsane-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Efsane Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.999456,
+    "lng": 32.60523
+  },
+  "sinirGeoJSON": "siteler/ata/efsane-evleri-boundary.geojson",
+  "aciklama": "Efsane Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44758",
+      "parsel": "1"
+    }
+  ]
 }

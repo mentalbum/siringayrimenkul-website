@@ -2,5 +2,16 @@
   "isim": "Mavi Ladin Konut",
   "slug": "mavi-ladin-konut",
   "mahalleSlug": "ata",
-  "aciklama": "Mavi Ladin Konut, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.009966,
+    "lng": 32.618237
+  },
+  "sinirGeoJSON": "siteler/ata/mavi-ladin-konut-boundary.geojson",
+  "aciklama": "Mavi Ladin Konut, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46201",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Elit Yaşam Konutları 3",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46423/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61783,
+      40.0074
+     ],
+     [
+      32.616,
+      40.00725
+     ],
+     [
+      32.6159,
+      40.00719
+     ],
+     [
+      32.61598,
+      40.00699
+     ],
+     [
+      32.6163,
+      40.00611
+     ],
+     [
+      32.61797,
+      40.00611
+     ],
+     [
+      32.61786,
+      40.00718
+     ],
+     [
+      32.61783,
+      40.0074
+     ]
+    ]
+   ]
+  ]
+ }
+}
