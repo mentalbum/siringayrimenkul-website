@@ -2,5 +2,16 @@
   "isim": "Astim Platinium",
   "slug": "astim-platinium",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Astim Platinium, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9830262,
+    "lng": 32.6884806
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/astim-platinium-boundary.geojson",
+  "aciklama": "Astim Platinium, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43255",
+      "parsel": "1"
+    }
+  ]
 }
