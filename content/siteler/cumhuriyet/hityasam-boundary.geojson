@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hityaşam",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62689/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65999,
+      39.97815
+     ],
+     [
+      32.65985,
+      39.97798
+     ],
+     [
+      32.65998,
+      39.97753
+     ],
+     [
+      32.66101,
+      39.97762
+     ],
+     [
+      32.66104,
+      39.97774
+     ],
+     [
+      32.66131,
+      39.97835
+     ],
+     [
+      32.65999,
+      39.97815
+     ]
+    ]
+   ]
+  ]
+ }
+}
