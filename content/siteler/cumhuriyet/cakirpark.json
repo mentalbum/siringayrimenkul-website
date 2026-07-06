@@ -2,5 +2,16 @@
   "isim": "Çakırpark",
   "slug": "cakirpark",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Çakırpark, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9874551,
+    "lng": 32.6868266
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/cakirpark-boundary.geojson",
+  "aciklama": "Çakırpark, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43264",
+      "parsel": "5"
+    }
+  ]
 }
