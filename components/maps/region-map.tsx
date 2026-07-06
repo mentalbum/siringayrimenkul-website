@@ -33,10 +33,15 @@ export function RegionMap({ items }: RegionMapProps) {
   const withBoundary = items.filter((item) => item.boundary);
   const withoutBoundary = items.filter((item) => !item.boundary);
 
-  const boundaryPoints = withBoundary.flatMap((item) =>
-    geoJsonPolygonToPaths(item.boundary!).flat()
+  // Görünüm çerçevesi yalnızca Eryaman (Etimesgut) mahallelerine göre kurulur;
+  // komşu Yenimahalle sınırları haritada durur ama odağı kaydırmaz.
+  const eryamanWithBoundary = withBoundary.filter((item) => item.mahalle.ilce === "Etimesgut");
+  const boundaryPoints = (eryamanWithBoundary.length > 0 ? eryamanWithBoundary : withBoundary).flatMap(
+    (item) => geoJsonPolygonToPaths(item.boundary!).flat()
   );
-  const fallbackPoints = withoutBoundary.map((item) => item.mahalle.merkezKoordinat);
+  const fallbackPoints = withoutBoundary
+    .filter((item) => item.mahalle.ilce === "Etimesgut")
+    .map((item) => item.mahalle.merkezKoordinat);
   const allPoints = [...boundaryPoints, ...fallbackPoints];
   const lats = allPoints.map((point) => point.lat);
   const lngs = allPoints.map((point) => point.lng);
@@ -59,15 +64,31 @@ export function RegionMap({ items }: RegionMapProps) {
         {withBoundary.map(({ mahalle, boundary }) => {
           const isYayinda = mahalle.durum === "yayinda";
           const isHovered = hoveredSlug === mahalle.slug;
+          // Yenimahalle grubu Eryaman'a ait değildir — altın yerine soluk
+          // mavi-gri stille "komşu bölge" olarak ayrışır.
+          const isKomsu = mahalle.ilce !== "Etimesgut";
+          const renk = isKomsu ? "#8FA3BF" : isYayinda ? "#FBCA12" : "#b3ad9f";
           return (
             <Polygon
               key={mahalle.slug}
               paths={geoJsonPolygonToPaths(boundary!)}
-              strokeColor={isYayinda ? "#FBCA12" : "#b3ad9f"}
-              strokeOpacity={isYayinda ? 0.9 : 0.5}
-              strokeWeight={isYayinda ? 2 : 1.5}
-              fillColor={isYayinda ? "#FBCA12" : "#b3ad9f"}
-              fillOpacity={isYayinda ? (isHovered ? 0.34 : 0.2) : isHovered ? 0.14 : 0.05}
+              strokeColor={renk}
+              strokeOpacity={isKomsu ? 0.7 : isYayinda ? 0.9 : 0.5}
+              strokeWeight={isKomsu ? 1.5 : isYayinda ? 2 : 1.5}
+              fillColor={renk}
+              fillOpacity={
+                isKomsu
+                  ? isHovered
+                    ? 0.12
+                    : 0.04
+                  : isYayinda
+                    ? isHovered
+                      ? 0.34
+                      : 0.2
+                    : isHovered
+                      ? 0.14
+                      : 0.05
+              }
               onClick={() => router.push(`/mahalleler/${mahalle.slug}`)}
               onMouseOver={() => setHoveredSlug(mahalle.slug)}
               onMouseOut={() => setHoveredSlug((current) => (current === mahalle.slug ? null : current))}

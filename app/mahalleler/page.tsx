@@ -25,8 +25,9 @@ export default function MahallelerPage() {
   const itemListJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    name: "Eryaman Mahalleleri",
-    description: "Eryaman bölgesindeki 11 mahallenin emlak rehberi — Şirin Gayrimenkul",
+    name: "Eryaman ve Yenimahalle Mahalleleri",
+    description:
+      "Eryaman'ın 11 mahallesi ile komşu Yenimahalle mahallelerinin emlak rehberi — Şirin Gayrimenkul",
     url: `${siteConfig.url}/mahalleler`,
     numberOfItems: mahalleler.length,
     itemListElement: mahalleler.map((m, i) => ({
@@ -44,9 +45,9 @@ export default function MahallelerPage() {
 
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          Eryaman Bölgesi
+          Hizmet Bölgemiz
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
+        <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman ve Yenimahalle Mahalleleri</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
           metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 500&apos;den fazla
