@@ -2,5 +2,16 @@
   "isim": "Zirveden Batı",
   "slug": "zirveden-bati",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Zirveden Batı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9976445,
+    "lng": 32.663056
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/zirveden-bati-boundary.geojson",
+  "aciklama": "Zirveden Batı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63261",
+      "parsel": "1"
+    }
+  ]
 }
