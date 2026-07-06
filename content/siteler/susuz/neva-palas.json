@@ -1,0 +1,17 @@
+{
+  "isim": "Neva Palas",
+  "slug": "neva-palas",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.006276,
+    "lng": 32.63765
+  },
+  "sinirGeoJSON": "siteler/susuz/neva-palas-boundary.geojson",
+  "aciklama": "Neva Palas, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64515",
+      "parsel": "2"
+    }
+  ]
+}

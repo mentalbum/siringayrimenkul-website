@@ -1,0 +1,17 @@
+{
+  "isim": "Liva Göksu",
+  "slug": "liva-goksu",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.007296,
+    "lng": 32.641043
+  },
+  "sinirGeoJSON": "siteler/susuz/liva-goksu-boundary.geojson",
+  "aciklama": "Liva Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63368",
+      "parsel": "3"
+    }
+  ]
+}

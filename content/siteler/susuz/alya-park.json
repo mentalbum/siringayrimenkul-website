@@ -1,0 +1,17 @@
+{
+  "isim": "Alya Park",
+  "slug": "alya-park",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.006084,
+    "lng": 32.636952
+  },
+  "sinirGeoJSON": "siteler/susuz/alya-park-boundary.geojson",
+  "aciklama": "Alya Park, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64515",
+      "parsel": "1"
+    }
+  ]
+}

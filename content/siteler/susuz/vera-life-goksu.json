@@ -1,0 +1,17 @@
+{
+  "isim": "Vera Life Göksu",
+  "slug": "vera-life-goksu",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.011917,
+    "lng": 32.650735
+  },
+  "sinirGeoJSON": "siteler/susuz/vera-life-goksu-boundary.geojson",
+  "aciklama": "Vera Life Göksu, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63340",
+      "parsel": "5"
+    }
+  ]
+}

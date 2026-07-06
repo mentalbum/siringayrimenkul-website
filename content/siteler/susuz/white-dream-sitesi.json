@@ -1,0 +1,17 @@
+{
+  "isim": "White Dream Sitesi",
+  "slug": "white-dream-sitesi",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.010384,
+    "lng": 32.645987
+  },
+  "sinirGeoJSON": "siteler/susuz/white-dream-sitesi-boundary.geojson",
+  "aciklama": "White Dream Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63331",
+      "parsel": "4"
+    }
+  ]
+}

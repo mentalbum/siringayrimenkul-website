@@ -1,0 +1,17 @@
+{
+  "isim": "Green Life Göksu Konutları",
+  "slug": "green-life-goksu-konutlari",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.008224,
+    "lng": 32.651227
+  },
+  "sinirGeoJSON": "siteler/susuz/green-life-goksu-konutlari-boundary.geojson",
+  "aciklama": "Green Life Göksu Konutları, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63352",
+      "parsel": "2"
+    }
+  ]
+}

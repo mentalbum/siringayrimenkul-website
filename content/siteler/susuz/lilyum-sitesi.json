@@ -1,0 +1,17 @@
+{
+  "isim": "Lilyum Sitesi",
+  "slug": "lilyum-sitesi",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.007853,
+    "lng": 32.641466
+  },
+  "sinirGeoJSON": "siteler/susuz/lilyum-sitesi-boundary.geojson",
+  "aciklama": "Lilyum Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63360",
+      "parsel": "4"
+    }
+  ]
+}
