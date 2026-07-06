@@ -2,5 +2,16 @@
   "isim": "10. Botanik Evleri",
   "slug": "10-botanik-evleri",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "10. Botanik Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98591,
+    "lng": 32.685661
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/10-botanik-evleri-boundary.geojson",
+  "aciklama": "10. Botanik Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43264",
+      "parsel": "8"
+    }
+  ]
 }
