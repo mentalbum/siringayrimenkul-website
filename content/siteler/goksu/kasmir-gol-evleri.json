@@ -2,5 +2,16 @@
   "isim": "Kaşmir Göl Evleri",
   "slug": "kasmir-gol-evleri",
   "mahalleSlug": "goksu",
-  "aciklama": "Kaşmir Göl Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995674,
+    "lng": 32.645009
+  },
+  "sinirGeoJSON": "siteler/goksu/kasmir-gol-evleri-boundary.geojson",
+  "aciklama": "Kaşmir Göl Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63932",
+      "parsel": "2"
+    }
+  ]
 }
