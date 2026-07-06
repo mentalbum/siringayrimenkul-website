@@ -2,5 +2,16 @@
   "isim": "Natura Göksu",
   "slug": "natura-goksu",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Natura Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9942624,
+    "lng": 32.6635391
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/natura-goksu-boundary.geojson",
+  "aciklama": "Natura Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63262",
+      "parsel": "3"
+    }
+  ]
 }
