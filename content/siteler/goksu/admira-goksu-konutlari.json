@@ -2,5 +2,16 @@
   "isim": "Admira Göksu Konutları",
   "slug": "admira-goksu-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Admira Göksu Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001983,
+    "lng": 32.646108
+  },
+  "sinirGeoJSON": "siteler/goksu/admira-goksu-konutlari-boundary.geojson",
+  "aciklama": "Admira Göksu Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63396",
+      "parsel": "1"
+    }
+  ]
 }

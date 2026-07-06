@@ -2,5 +2,16 @@
   "isim": "Neovadi Konutları",
   "slug": "neovadi-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Neovadi Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.007251,
+    "lng": 32.648083
+  },
+  "sinirGeoJSON": "siteler/goksu/neovadi-konutlari-boundary.geojson",
+  "aciklama": "Neovadi Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63376",
+      "parsel": "5"
+    }
+  ]
 }

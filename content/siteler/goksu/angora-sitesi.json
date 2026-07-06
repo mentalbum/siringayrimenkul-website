@@ -2,5 +2,16 @@
   "isim": "Angora Sitesi",
   "slug": "angora-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Angora Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.991494,
+    "lng": 32.640485
+  },
+  "sinirGeoJSON": "siteler/goksu/angora-sitesi-boundary.geojson",
+  "aciklama": "Angora Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    }
+  ]
 }

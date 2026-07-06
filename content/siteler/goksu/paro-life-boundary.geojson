@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Paro Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63406/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64219,
+      40.00145
+     ],
+     [
+      32.64162,
+      40.00106
+     ],
+     [
+      32.64222,
+      40.00058
+     ],
+     [
+      32.64332,
+      40.00132
+     ],
+     [
+      32.64219,
+      40.00145
+     ]
+    ]
+   ]
+  ]
+ }
+}

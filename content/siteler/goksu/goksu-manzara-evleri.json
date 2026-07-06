@@ -2,5 +2,16 @@
   "isim": "Göksu Manzara Evleri",
   "slug": "goksu-manzara-evleri",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksu Manzara Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003189,
+    "lng": 32.646971
+  },
+  "sinirGeoJSON": "siteler/goksu/goksu-manzara-evleri-boundary.geojson",
+  "aciklama": "Göksu Manzara Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63379",
+      "parsel": "7"
+    }
+  ]
 }

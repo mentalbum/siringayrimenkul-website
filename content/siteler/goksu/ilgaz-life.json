@@ -2,5 +2,16 @@
   "isim": "Ilgaz Life",
   "slug": "ilgaz-life",
   "mahalleSlug": "goksu",
-  "aciklama": "Ilgaz Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002425,
+    "lng": 32.63937
+  },
+  "sinirGeoJSON": "siteler/goksu/ilgaz-life-boundary.geojson",
+  "aciklama": "Ilgaz Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63388",
+      "parsel": "3"
+    }
+  ]
 }

@@ -2,5 +2,16 @@
   "isim": "Göksu Evleri Sitesi",
   "slug": "goksu-evleri-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksu Evleri Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995942,
+    "lng": 32.642357
+  },
+  "sinirGeoJSON": "siteler/goksu/goksu-evleri-sitesi-boundary.geojson",
+  "aciklama": "Göksu Evleri Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46454",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Serline Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63385/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64031,
+      40.0057
+     ],
+     [
+      32.63944,
+      40.00611
+     ],
+     [
+      32.63913,
+      40.00613
+     ],
+     [
+      32.63847,
+      40.00593
+     ],
+     [
+      32.64021,
+      40.00526
+     ],
+     [
+      32.64025,
+      40.00534
+     ],
+     [
+      32.64031,
+      40.00544
+     ],
+     [
+      32.64038,
+      40.00555
+     ],
+     [
+      32.64031,
+      40.0057
+     ]
+    ]
+   ]
+  ]
+ }
+}

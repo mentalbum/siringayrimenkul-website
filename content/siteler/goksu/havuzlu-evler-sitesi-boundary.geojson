@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Havuzlu Evler Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "48146/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64319,
+      39.98884
+     ],
+     [
+      32.64314,
+      39.98884
+     ],
+     [
+      32.64246,
+      39.98781
+     ],
+     [
+      32.64347,
+      39.98735
+     ],
+     [
+      32.64375,
+      39.98735
+     ],
+     [
+      32.64487,
+      39.98786
+     ],
+     [
+      32.64472,
+      39.9881
+     ],
+     [
+      32.64466,
+      39.98813
+     ],
+     [
+      32.64409,
+      39.98841
+     ],
+     [
+      32.64319,
+      39.98884
+     ]
+    ]
+   ]
+  ]
+ }
+}

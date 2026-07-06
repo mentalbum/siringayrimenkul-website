@@ -2,5 +2,16 @@
   "isim": "Neva Palas",
   "slug": "neva-palas",
   "mahalleSlug": "goksu",
-  "aciklama": "Neva Palas, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.006276,
+    "lng": 32.63765
+  },
+  "sinirGeoJSON": "siteler/goksu/neva-palas-boundary.geojson",
+  "aciklama": "Neva Palas, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64515",
+      "parsel": "2"
+    }
+  ]
 }

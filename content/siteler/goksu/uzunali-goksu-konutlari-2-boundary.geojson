@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Uzunali Göksu Konutları 2",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63396/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64726,
+      40.00218
+     ],
+     [
+      32.64671,
+      40.00237
+     ],
+     [
+      32.64606,
+      40.00131
+     ],
+     [
+      32.64669,
+      40.00124
+     ],
+     [
+      32.64692,
+      40.00163
+     ],
+     [
+      32.64726,
+      40.00218
+     ]
+    ]
+   ]
+  ]
+ }
+}

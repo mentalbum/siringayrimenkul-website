@@ -2,5 +2,16 @@
   "isim": "Göksu Metrokent Sitesi",
   "slug": "goksu-metrokent-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksu Metrokent Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9798,
+    "lng": 32.64408
+  },
+  "sinirGeoJSON": "siteler/goksu/goksu-metrokent-sitesi-boundary.geojson",
+  "aciklama": "Göksu Metrokent Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46479",
+      "parsel": "2"
+    }
+  ]
 }

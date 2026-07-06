@@ -2,5 +2,16 @@
   "isim": "Endora Göksu",
   "slug": "endora-goksu",
   "mahalleSlug": "goksu",
-  "aciklama": "Endora Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000882,
+    "lng": 32.6397
+  },
+  "sinirGeoJSON": "siteler/goksu/endora-goksu-boundary.geojson",
+  "aciklama": "Endora Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63391",
+      "parsel": "1"
+    }
+  ]
 }

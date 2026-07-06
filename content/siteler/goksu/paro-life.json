@@ -2,5 +2,16 @@
   "isim": "Paro Life",
   "slug": "paro-life",
   "mahalleSlug": "goksu",
-  "aciklama": "Paro Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.001086,
+    "lng": 32.642382
+  },
+  "sinirGeoJSON": "siteler/goksu/paro-life-boundary.geojson",
+  "aciklama": "Paro Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63406",
+      "parsel": "1"
+    }
+  ]
 }

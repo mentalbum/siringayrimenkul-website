@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Lake Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63379/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64674,
+      40.00498
+     ],
+     [
+      32.64609,
+      40.0049
+     ],
+     [
+      32.64601,
+      40.0048
+     ],
+     [
+      32.64628,
+      40.00417
+     ],
+     [
+      32.64703,
+      40.00426
+     ],
+     [
+      32.64674,
+      40.00498
+     ]
+    ]
+   ]
+  ]
+ }
+}

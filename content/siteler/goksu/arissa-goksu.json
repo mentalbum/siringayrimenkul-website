@@ -2,5 +2,16 @@
   "isim": "Arissa Göksu",
   "slug": "arissa-goksu",
   "mahalleSlug": "goksu",
-  "aciklama": "Arissa Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.998399,
+    "lng": 32.645489
+  },
+  "sinirGeoJSON": "siteler/goksu/arissa-goksu-boundary.geojson",
+  "aciklama": "Arissa Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63932",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ilgaz Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63388/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63972,
+      40.00212
+     ],
+     [
+      32.64012,
+      40.00232
+     ],
+     [
+      32.64008,
+      40.00241
+     ],
+     [
+      32.64003,
+      40.00252
+     ],
+     [
+      32.63999,
+      40.00264
+     ],
+     [
+      32.63995,
+      40.00276
+     ],
+     [
+      32.63993,
+      40.00282
+     ],
+     [
+      32.63813,
+      40.00234
+     ],
+     [
+      32.63972,
+      40.00212
+     ]
+    ]
+   ]
+  ]
+ }
+}

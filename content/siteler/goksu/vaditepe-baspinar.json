@@ -2,5 +2,16 @@
   "isim": "Vaditepe Başpınar",
   "slug": "vaditepe-baspinar",
   "mahalleSlug": "goksu",
-  "aciklama": "Vaditepe Başpınar, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002604,
+    "lng": 32.645038
+  },
+  "sinirGeoJSON": "siteler/goksu/vaditepe-baspinar-boundary.geojson",
+  "aciklama": "Vaditepe Başpınar, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63380",
+      "parsel": "1"
+    }
+  ]
 }

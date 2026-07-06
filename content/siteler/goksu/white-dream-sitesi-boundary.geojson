@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "White Dream Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63331/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64629,
+      40.01086
+     ],
+     [
+      32.6452,
+      40.01102
+     ],
+     [
+      32.64476,
+      40.01044
+     ],
+     [
+      32.64575,
+      40.01005
+     ],
+     [
+      32.6455,
+      40.00969
+     ],
+     [
+      32.64687,
+      40.00981
+     ],
+     [
+      32.64693,
+      40.01077
+     ],
+     [
+      32.64629,
+      40.01086
+     ]
+    ]
+   ]
+  ]
+ }
+}

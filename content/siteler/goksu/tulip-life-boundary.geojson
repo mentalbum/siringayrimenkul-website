@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Tulip Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63391/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64194,
+      40.00035
+     ],
+     [
+      32.64153,
+      40.00067
+     ],
+     [
+      32.64085,
+      40.00017
+     ],
+     [
+      32.64024,
+      39.9997
+     ],
+     [
+      32.64088,
+      39.99956
+     ],
+     [
+      32.64194,
+      40.00035
+     ]
+    ]
+   ]
+  ]
+ }
+}

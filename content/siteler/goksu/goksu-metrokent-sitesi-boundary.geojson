@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksu Metrokent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46479/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64477,
+      39.97934
+     ],
+     [
+      32.64478,
+      39.98026
+     ],
+     [
+      32.6434,
+      39.98028
+     ],
+     [
+      32.64339,
+      39.97932
+     ],
+     [
+      32.64399,
+      39.97933
+     ],
+     [
+      32.64477,
+      39.97934
+     ]
+    ]
+   ]
+  ]
+ }
+}

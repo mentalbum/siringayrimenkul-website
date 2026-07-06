@@ -2,5 +2,16 @@
   "isim": "Tulip Life",
   "slug": "tulip-life",
   "mahalleSlug": "goksu",
-  "aciklama": "Tulip Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000071,
+    "lng": 32.641133
+  },
+  "sinirGeoJSON": "siteler/goksu/tulip-life-boundary.geojson",
+  "aciklama": "Tulip Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63391",
+      "parsel": "4"
+    }
+  ]
 }

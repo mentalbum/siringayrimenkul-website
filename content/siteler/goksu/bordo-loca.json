@@ -2,5 +2,16 @@
   "isim": "Bordo Loca",
   "slug": "bordo-loca",
   "mahalleSlug": "goksu",
-  "aciklama": "Bordo Loca, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002147,
+    "lng": 32.652918
+  },
+  "sinirGeoJSON": "siteler/goksu/bordo-loca-boundary.geojson",
+  "aciklama": "Bordo Loca, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63400",
+      "parsel": "1"
+    }
+  ]
 }

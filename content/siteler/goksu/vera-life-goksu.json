@@ -2,5 +2,16 @@
   "isim": "Vera Life Göksu",
   "slug": "vera-life-goksu",
   "mahalleSlug": "goksu",
-  "aciklama": "Vera Life Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.011917,
+    "lng": 32.650735
+  },
+  "sinirGeoJSON": "siteler/goksu/vera-life-goksu-boundary.geojson",
+  "aciklama": "Vera Life Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63340",
+      "parsel": "5"
+    }
+  ]
 }

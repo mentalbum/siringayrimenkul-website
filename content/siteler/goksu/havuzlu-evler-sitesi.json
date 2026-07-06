@@ -2,5 +2,16 @@
   "isim": "Havuzlu Evler Sitesi",
   "slug": "havuzlu-evler-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Havuzlu Evler Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.988017,
+    "lng": 32.643594
+  },
+  "sinirGeoJSON": "siteler/goksu/havuzlu-evler-sitesi-boundary.geojson",
+  "aciklama": "Havuzlu Evler Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48146",
+      "parsel": "1"
+    }
+  ]
 }

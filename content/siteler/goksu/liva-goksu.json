@@ -2,5 +2,16 @@
   "isim": "Liva Göksu",
   "slug": "liva-goksu",
   "mahalleSlug": "goksu",
-  "aciklama": "Liva Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.007296,
+    "lng": 32.641043
+  },
+  "sinirGeoJSON": "siteler/goksu/liva-goksu-boundary.geojson",
+  "aciklama": "Liva Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63368",
+      "parsel": "3"
+    }
+  ]
 }
