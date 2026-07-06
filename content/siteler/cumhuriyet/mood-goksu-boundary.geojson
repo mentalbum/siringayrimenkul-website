@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mood Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63271/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6575,
+      39.99584
+     ],
+     [
+      32.65752,
+      39.99371
+     ],
+     [
+      32.65886,
+      39.99323
+     ],
+     [
+      32.65898,
+      39.99338
+     ],
+     [
+      32.65912,
+      39.99577
+     ],
+     [
+      32.65906,
+      39.99582
+     ],
+     [
+      32.6575,
+      39.99584
+     ]
+    ]
+   ]
+  ]
+ }
+}
