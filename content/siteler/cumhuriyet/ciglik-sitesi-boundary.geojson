@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çığlık Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "43263/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.68518,
+      39.98495
+     ],
+     [
+      32.68508,
+      39.98458
+     ],
+     [
+      32.68535,
+      39.98457
+     ],
+     [
+      32.68531,
+      39.98407
+     ],
+     [
+      32.68615,
+      39.98403
+     ],
+     [
+      32.68619,
+      39.98406
+     ],
+     [
+      32.68632,
+      39.98482
+     ],
+     [
+      32.68518,
+      39.98495
+     ]
+    ]
+   ]
+  ]
+ }
+}

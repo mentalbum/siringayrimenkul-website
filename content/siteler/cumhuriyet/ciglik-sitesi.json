@@ -2,5 +2,16 @@
   "isim": "Çığlık Sitesi",
   "slug": "ciglik-sitesi",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Çığlık Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9846525,
+    "lng": 32.6861527
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/ciglik-sitesi-boundary.geojson",
+  "aciklama": "Çığlık Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "43263",
+      "parsel": "3"
+    }
+  ]
 }
