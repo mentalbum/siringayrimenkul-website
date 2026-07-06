@@ -2,5 +2,16 @@
   "isim": "City Life",
   "slug": "city-life",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "City Life, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9888756,
+    "lng": 32.662999
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/city-life-boundary.geojson",
+  "aciklama": "City Life, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62658",
+      "parsel": "2"
+    }
+  ]
 }
