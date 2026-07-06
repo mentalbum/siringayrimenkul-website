@@ -2,5 +2,16 @@
   "isim": "Yesil Göl Sitesi",
   "slug": "yesil-gol-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Yesil Göl Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.986453,
+    "lng": 32.644248
+  },
+  "sinirGeoJSON": "siteler/goksu/yesil-gol-sitesi-boundary.geojson",
+  "aciklama": "Yesil Göl Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46463",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yesil Göl Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46463/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64365,
+      39.98561
+     ],
+     [
+      32.64469,
+      39.98558
+     ],
+     [
+      32.64472,
+      39.98561
+     ],
+     [
+      32.64481,
+      39.9875
+     ],
+     [
+      32.64479,
+      39.98753
+     ],
+     [
+      32.64473,
+      39.98753
+     ],
+     [
+      32.64393,
+      39.98719
+     ],
+     [
+      32.64395,
+      39.98699
+     ],
+     [
+      32.64364,
+      39.98684
+     ],
+     [
+      32.64365,
+      39.98561
+     ]
+    ]
+   ]
+  ]
+ }
+}

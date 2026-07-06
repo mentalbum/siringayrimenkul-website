@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Zirveden Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63388/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63778,
+      40.00409
+     ],
+     [
+      32.63712,
+      40.00307
+     ],
+     [
+      32.63757,
+      40.00242
+     ],
+     [
+      32.63813,
+      40.00234
+     ],
+     [
+      32.63993,
+      40.00282
+     ],
+     [
+      32.63991,
+      40.00288
+     ],
+     [
+      32.63988,
+      40.00301
+     ],
+     [
+      32.63944,
+      40.00345
+     ],
+     [
+      32.63778,
+      40.00409
+     ]
+    ]
+   ]
+  ]
+ }
+}

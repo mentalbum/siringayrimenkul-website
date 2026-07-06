@@ -2,5 +2,16 @@
   "isim": "Zirveden Göksu",
   "slug": "zirveden-goksu",
   "mahalleSlug": "goksu",
-  "aciklama": "Zirveden Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.003125,
+    "lng": 32.638386
+  },
+  "sinirGeoJSON": "siteler/goksu/zirveden-goksu-boundary.geojson",
+  "aciklama": "Zirveden Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63388",
+      "parsel": "2"
+    }
+  ]
 }
