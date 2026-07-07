@@ -2,5 +2,16 @@
   "isim": "Vera City",
   "slug": "vera-city",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Vera City, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9714418,
+    "lng": 32.6603711
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/vera-city-boundary.geojson",
+  "aciklama": "Vera City, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46653",
+      "parsel": "3"
+    }
+  ]
 }

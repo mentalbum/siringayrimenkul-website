@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vera City",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46653/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66112,
+      39.97129
+     ],
+     [
+      32.66118,
+      39.97133
+     ],
+     [
+      32.661,
+      39.97173
+     ],
+     [
+      32.6593,
+      39.97158
+     ],
+     [
+      32.65928,
+      39.9713
+     ],
+     [
+      32.6594,
+      39.97124
+     ],
+     [
+      32.66112,
+      39.97129
+     ]
+    ]
+   ]
+  ]
+ }
+}
