@@ -2,5 +2,16 @@
   "isim": "Bulvar 312 Konutları",
   "slug": "bulvar-312-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Bulvar 312 Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9747141,
+    "lng": 32.6596134
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/bulvar-312-konutlari-boundary.geojson",
+  "aciklama": "Bulvar 312 Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46652",
+      "parsel": "1"
+    }
+  ]
 }

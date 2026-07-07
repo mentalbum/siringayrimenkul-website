@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bulvar 312 Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46652/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65928,
+      39.97479
+     ],
+     [
+      32.65929,
+      39.97433
+     ],
+     [
+      32.65934,
+      39.97345
+     ],
+     [
+      32.66043,
+      39.97347
+     ],
+     [
+      32.65968,
+      39.97481
+     ],
+     [
+      32.65928,
+      39.97479
+     ]
+    ]
+   ]
+  ]
+ }
+}
