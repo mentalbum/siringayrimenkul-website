@@ -2,5 +2,16 @@
   "isim": "Ak Kent Sitesi",
   "slug": "ak-kent-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Ak Kent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9935163,
+    "lng": 32.6352532
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/ak-kent-sitesi-boundary.geojson",
+  "aciklama": "Ak Kent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46488",
+      "parsel": "2"
+    }
+  ]
 }

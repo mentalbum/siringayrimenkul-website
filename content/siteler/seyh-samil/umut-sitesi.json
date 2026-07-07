@@ -2,5 +2,16 @@
   "isim": "Umut Sitesi",
   "slug": "umut-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Umut Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9930598,
+    "lng": 32.6340602
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/umut-sitesi-boundary.geojson",
+  "aciklama": "Umut Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46488",
+      "parsel": "2"
+    }
+  ]
 }
