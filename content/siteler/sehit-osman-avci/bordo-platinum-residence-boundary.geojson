@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bordo Platinum Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46654/8"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66042,
+      39.97109
+     ],
+     [
+      32.65987,
+      39.97107
+     ],
+     [
+      32.65935,
+      39.97105
+     ],
+     [
+      32.65927,
+      39.97097
+     ],
+     [
+      32.65922,
+      39.97018
+     ],
+     [
+      32.65991,
+      39.97027
+     ],
+     [
+      32.66033,
+      39.97033
+     ],
+     [
+      32.66035,
+      39.97033
+     ],
+     [
+      32.66033,
+      39.9704
+     ],
+     [
+      32.66045,
+      39.97049
+     ],
+     [
+      32.66042,
+      39.97109
+     ]
+    ]
+   ]
+  ]
+ }
+}
