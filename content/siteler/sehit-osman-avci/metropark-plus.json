@@ -2,5 +2,16 @@
   "isim": "Metropark Plus",
   "slug": "metropark-plus",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Metropark Plus, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9809157,
+    "lng": 32.65598
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/metropark-plus-boundary.geojson",
+  "aciklama": "Metropark Plus, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46628",
+      "parsel": "7"
+    }
+  ]
 }

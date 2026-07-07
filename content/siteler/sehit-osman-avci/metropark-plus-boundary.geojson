@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Metropark Plus",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46628/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65776,
+      39.98083
+     ],
+     [
+      32.65765,
+      39.98126
+     ],
+     [
+      32.65669,
+      39.98123
+     ],
+     [
+      32.65583,
+      39.98124
+     ],
+     [
+      32.65591,
+      39.98088
+     ],
+     [
+      32.65678,
+      39.98086
+     ],
+     [
+      32.65776,
+      39.98083
+     ]
+    ]
+   ]
+  ]
+ }
+}
