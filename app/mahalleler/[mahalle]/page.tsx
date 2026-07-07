@@ -39,13 +39,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!mahalle) return {};
 
   const kisaIsim = mahalleKisaIsim(mahalle);
+  const alias = mahalle.alternatifAdlar?.[0];
+  const baslikIsim = alias ? `${kisaIsim} (${alias})` : kisaIsim;
+  const metaIsim = alias ? `${kisaIsim} (halk arasında ${alias})` : kisaIsim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
-    title: `${kisaIsim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${kisaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}, satılık ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek istiyorsanız fiyatı birlikte belirleyelim.`,
+    title: `${baslikIsim} Emlakçısı — Eryaman Emlak Rehberi`,
+    description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}, satılık ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek istiyorsanız fiyatı birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -188,6 +191,17 @@ export default async function MahallePage({ params }: Props) {
           Gayrimenkul, {mahalle.isim}&apos;ndeki site ve rezidansları tek tek tanıyor; satılık ve
           kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek
           istiyorsanız doğru fiyatı birlikte belirleyelim.
+          {mahalle.alternatifAdlar?.[0] && (
+            <>
+              {" "}
+              Bölge halk arasında{" "}
+              <strong className="font-semibold text-navy">
+                {mahalle.alternatifAdlar[0]}
+              </strong>{" "}
+              olarak da biliniyor; {mahalle.alternatifAdlar[0]} emlakçısı arıyorsanız da doğru
+              yerdesiniz.
+            </>
+          )}
         </p>
       </header>
 

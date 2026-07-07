@@ -13,5 +13,6 @@
     "lat": 39.9884484,
     "lng": 32.663044
   },
-  "sinirGeoJSON": "mahalleler/cumhuriyet-boundary.geojson"
+  "sinirGeoJSON": "mahalleler/cumhuriyet-boundary.geojson",
+  "alternatifAdlar": ["Yeni Batı"]
 }

@@ -16,6 +16,10 @@ export interface Mahalle {
   uzunAciklama?: string[];
   merkezKoordinat: Koordinat;
   sinirGeoJSON?: string;
+  /** Halk arasında/eskiden kullanılan diğer adlar — yerel aramaların bu
+   * biçimlerini de hedeflemek için (örn. Cumhuriyet = eski adıyla "Yeni Batı",
+   * 2024 sonunda Yeni Batı'dan ayrılarak kuruldu). */
+  alternatifAdlar?: string[];
 }
 
 export interface AdaBilgi {

@@ -42,6 +42,14 @@ export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
     cevap: `${kisaIsim} emlakçısı olarak ${siteConfig.name}, ${mahalle.isim}'ndeki site ve rezidansları yakından tanıyor. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
   });
 
+  const alias = mahalle.alternatifAdlar?.[0];
+  if (alias) {
+    items.push({
+      soru: `${alias} emlakçısı mı arıyorsunuz?`,
+      cevap: `${mahalle.isim}, ${alias} Mahallesi'nden ayrılarak kuruldu ve bölge halk arasında hâlâ ${alias} olarak biliniyor. ${alias} emlakçısı olarak ${siteConfig.name}, bu bölgedeki site ve rezidansları yakından tanıyor; evinizi satmak veya kiraya vermek için bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
+    });
+  }
+
   return items;
 }
 
