@@ -2,5 +2,16 @@
   "isim": "İntes Sitesi",
   "slug": "intes-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "İntes Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.98157,
+    "lng": 32.650188
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/intes-sitesi-boundary.geojson",
+  "aciklama": "İntes Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17468",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İntes Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17468/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65032,
+      39.98193
+     ],
+     [
+      32.64959,
+      39.98194
+     ],
+     [
+      32.64909,
+      39.98141
+     ],
+     [
+      32.64953,
+      39.98114
+     ],
+     [
+      32.65028,
+      39.98112
+     ],
+     [
+      32.65032,
+      39.98193
+     ]
+    ]
+   ]
+  ]
+ }
+}
