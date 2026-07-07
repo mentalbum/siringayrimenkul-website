@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Relax Göksu Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46622/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65465,
+      39.98766
+     ],
+     [
+      32.65357,
+      39.98786
+     ],
+     [
+      32.65292,
+      39.98763
+     ],
+     [
+      32.65208,
+      39.98759
+     ],
+     [
+      32.65203,
+      39.98757
+     ],
+     [
+      32.65205,
+      39.98708
+     ],
+     [
+      32.65487,
+      39.98718
+     ],
+     [
+      32.6549,
+      39.98719
+     ],
+     [
+      32.65492,
+      39.98722
+     ],
+     [
+      32.65492,
+      39.98725
+     ],
+     [
+      32.65465,
+      39.98766
+     ]
+    ]
+   ]
+  ]
+ }
+}

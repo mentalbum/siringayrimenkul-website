@@ -2,5 +2,16 @@
   "isim": "Relax Göksu Konutları",
   "slug": "relax-goksu-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Relax Göksu Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9876199,
+    "lng": 32.6543784
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/relax-goksu-konutlari-boundary.geojson",
+  "aciklama": "Relax Göksu Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46622",
+      "parsel": "1"
+    }
+  ]
 }
