@@ -2,5 +2,16 @@
   "isim": "Güngörler Tower",
   "slug": "gungorler-tower",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Güngörler Tower, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9765338,
+    "lng": 32.6568349
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/gungorler-tower-boundary.geojson",
+  "aciklama": "Güngörler Tower, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46643",
+      "parsel": "5"
+    }
+  ]
 }

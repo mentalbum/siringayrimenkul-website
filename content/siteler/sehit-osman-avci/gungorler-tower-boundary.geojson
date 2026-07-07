@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Güngörler Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46643/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65744,
+      39.97685
+     ],
+     [
+      32.65665,
+      39.97682
+     ],
+     [
+      32.65663,
+      39.97647
+     ],
+     [
+      32.65746,
+      39.97651
+     ],
+     [
+      32.65746,
+      39.97652
+     ],
+     [
+      32.65744,
+      39.97685
+     ]
+    ]
+   ]
+  ]
+ }
+}
