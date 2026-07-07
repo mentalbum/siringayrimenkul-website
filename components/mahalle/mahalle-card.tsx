@@ -25,6 +25,9 @@ export function MahalleCard({ mahalle }: { mahalle: Mahalle }) {
       <p className="flex items-center gap-1.5 text-xs font-medium text-muted">
         <MapPinIcon className="h-3.5 w-3.5" />
         {mahalle.ilce}
+        {mahalle.alternatifAdlar?.[0] && (
+          <span className="text-gold-dark">· {mahalle.alternatifAdlar[0]} olarak da bilinir</span>
+        )}
       </p>
       <p className="text-sm leading-relaxed text-body">{mahalle.kisaAciklama}</p>
       <span className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-navy group-hover:text-gold-dark">
