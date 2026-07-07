@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Alarko Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17365/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63093,
+      39.99612
+     ],
+     [
+      32.63091,
+      39.99622
+     ],
+     [
+      32.63045,
+      39.99646
+     ],
+     [
+      32.63027,
+      39.99641
+     ],
+     [
+      32.62979,
+      39.99586
+     ],
+     [
+      32.63042,
+      39.99554
+     ],
+     [
+      32.63093,
+      39.99612
+     ]
+    ]
+   ]
+  ]
+ }
+}
