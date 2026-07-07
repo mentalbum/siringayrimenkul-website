@@ -2,5 +2,16 @@
   "isim": "Ahikent Sitesi",
   "slug": "ahikent-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Ahikent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.974284,
+    "lng": 32.6540539
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/ahikent-sitesi-boundary.geojson",
+  "aciklama": "Ahikent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46644",
+      "parsel": "1"
+    }
+  ]
 }

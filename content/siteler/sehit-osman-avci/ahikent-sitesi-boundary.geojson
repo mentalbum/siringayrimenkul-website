@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ahikent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46644/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65449,
+      39.97529
+     ],
+     [
+      32.65327,
+      39.97526
+     ],
+     [
+      32.65329,
+      39.97425
+     ],
+     [
+      32.65333,
+      39.9742
+     ],
+     [
+      32.65444,
+      39.9742
+     ],
+     [
+      32.65449,
+      39.97423
+     ],
+     [
+      32.65449,
+      39.97529
+     ]
+    ]
+   ]
+  ]
+ }
+}
