@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Öz Tamer Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46269/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6297,
+      40.00011
+     ],
+     [
+      32.6297,
+      40.00054
+     ],
+     [
+      32.62957,
+      40.00064
+     ],
+     [
+      32.62886,
+      40.00116
+     ],
+     [
+      32.62849,
+      40.0009
+     ],
+     [
+      32.62949,
+      40.00015
+     ],
+     [
+      32.62958,
+      40.00011
+     ],
+     [
+      32.6297,
+      40.00011
+     ]
+    ]
+   ]
+  ]
+ }
+}
