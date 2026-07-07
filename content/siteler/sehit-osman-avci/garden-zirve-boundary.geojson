@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Garden Zirve",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46658/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65829,
+      39.97108
+     ],
+     [
+      32.65763,
+      39.97109
+     ],
+     [
+      32.65762,
+      39.97049
+     ],
+     [
+      32.65828,
+      39.97047
+     ],
+     [
+      32.65829,
+      39.97108
+     ]
+    ]
+   ]
+  ]
+ }
+}

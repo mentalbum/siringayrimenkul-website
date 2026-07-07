@@ -2,5 +2,16 @@
   "isim": "Garden Zirve",
   "slug": "garden-zirve",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Garden Zirve, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9709372,
+    "lng": 32.6580854
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/garden-zirve-boundary.geojson",
+  "aciklama": "Garden Zirve, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46658",
+      "parsel": "2"
+    }
+  ]
 }
