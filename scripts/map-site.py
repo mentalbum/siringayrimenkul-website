@@ -121,6 +121,12 @@ def main():
 
     # --- DOĞRULAMA KAPISI ---
     problems = []
+    nitelik = (p.get("nitelik") or "").strip()
+    if not str(p.get("adaNo") or "").strip():
+        problems.append(f"ADA YOK: parsel {p.get('parselNo')} ada numarasız "
+                        f"(nitelik: {nitelik[:30]}) — bina parseli değil, pin yanlış")
+    if "tarla" in nitelik.lower():
+        problems.append(f"TARLA: parsel niteliği '{nitelik[:30]}' — yapı değil, pin yanlış")
     owner = existing_parsel_owner(ada_parsel, mahalle, slug)
     if owner:
         problems.append(f"ÇAKIŞMA: {ada_parsel} zaten {owner}'a atanmış (duplicate/parça?)")
