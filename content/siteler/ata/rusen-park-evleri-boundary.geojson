@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ruşen Park Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46213/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6213,
+      40.00678
+     ],
+     [
+      32.62117,
+      40.00684
+     ],
+     [
+      32.62032,
+      40.00678
+     ],
+     [
+      32.62036,
+      40.00632
+     ],
+     [
+      32.62039,
+      40.00587
+     ],
+     [
+      32.62043,
+      40.00542
+     ],
+     [
+      32.62101,
+      40.00543
+     ],
+     [
+      32.62163,
+      40.00563
+     ],
+     [
+      32.62217,
+      40.00581
+     ],
+     [
+      32.62173,
+      40.0063
+     ],
+     [
+      32.6213,
+      40.00678
+     ]
+    ]
+   ]
+  ]
+ }
+}

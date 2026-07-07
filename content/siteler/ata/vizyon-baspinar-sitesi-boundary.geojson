@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Vizyon Başpınar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46410/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61382,
+      40.01061
+     ],
+     [
+      32.61199,
+      40.0105
+     ],
+     [
+      32.61201,
+      40.00976
+     ],
+     [
+      32.61213,
+      40.00971
+     ],
+     [
+      32.61399,
+      40.00985
+     ],
+     [
+      32.61382,
+      40.01061
+     ]
+    ]
+   ]
+  ]
+ }
+}
