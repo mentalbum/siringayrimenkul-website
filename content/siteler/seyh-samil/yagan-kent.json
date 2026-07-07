@@ -2,5 +2,16 @@
   "isim": "Yağan Kent",
   "slug": "yagan-kent",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Yağan Kent, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.992582999999996,
+    "lng": 32.6314655
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/yagan-kent-boundary.geojson",
+  "aciklama": "Yağan Kent, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46489",
+      "parsel": "1"
+    }
+  ]
 }
