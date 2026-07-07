@@ -2,5 +2,16 @@
   "isim": "Ağaçlı Göl Sitesi",
   "slug": "agacli-gol-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Ağaçlı Göl Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9905569,
+    "lng": 32.6410756
+  },
+  "sinirGeoJSON": "siteler/goksu/agacli-gol-sitesi-boundary.geojson",
+  "aciklama": "Ağaçlı Göl Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    }
+  ]
 }
