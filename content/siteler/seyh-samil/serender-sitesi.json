@@ -2,5 +2,16 @@
   "isim": "Serender Sitesi",
   "slug": "serender-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Serender Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9942832,
+    "lng": 32.6336106
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/serender-sitesi-boundary.geojson",
+  "aciklama": "Serender Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46487",
+      "parsel": "5"
+    }
+  ]
 }

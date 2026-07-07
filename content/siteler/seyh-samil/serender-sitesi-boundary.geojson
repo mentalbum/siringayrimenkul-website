@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Serender Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46487/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6328,
+      39.99395
+     ],
+     [
+      32.63348,
+      39.99389
+     ],
+     [
+      32.63352,
+      39.99394
+     ],
+     [
+      32.63366,
+      39.99427
+     ],
+     [
+      32.63375,
+      39.99444
+     ],
+     [
+      32.63323,
+      39.99471
+     ],
+     [
+      32.63283,
+      39.99425
+     ],
+     [
+      32.6328,
+      39.99395
+     ]
+    ]
+   ]
+  ]
+ }
+}
