@@ -2,5 +2,16 @@
   "isim": "Selinkent Sitesi",
   "slug": "selinkent-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Selinkent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.996268,
+    "lng": 32.631347
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/selinkent-sitesi-boundary.geojson",
+  "aciklama": "Selinkent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46486",
+      "parsel": "2"
+    }
+  ]
 }
