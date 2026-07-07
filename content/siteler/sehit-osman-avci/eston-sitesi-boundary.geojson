@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eston Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17488/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65288,
+      39.97262
+     ],
+     [
+      32.65254,
+      39.97296
+     ],
+     [
+      32.652,
+      39.97279
+     ],
+     [
+      32.6515,
+      39.97263
+     ],
+     [
+      32.65185,
+      39.972
+     ],
+     [
+      32.65235,
+      39.97216
+     ],
+     [
+      32.65284,
+      39.97232
+     ],
+     [
+      32.65288,
+      39.97262
+     ]
+    ]
+   ]
+  ]
+ }
+}

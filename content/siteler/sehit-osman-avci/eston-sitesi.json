@@ -2,5 +2,16 @@
   "isim": "Eston Sitesi",
   "slug": "eston-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Eston Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9721803,
+    "lng": 32.6522262
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/eston-sitesi-boundary.geojson",
+  "aciklama": "Eston Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17488",
+      "parsel": "1"
+    }
+  ]
 }
