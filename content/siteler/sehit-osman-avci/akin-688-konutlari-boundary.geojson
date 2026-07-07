@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Akın 688 Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46625/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65507,
+      39.98396
+     ],
+     [
+      32.65496,
+      39.98403
+     ],
+     [
+      32.65438,
+      39.98388
+     ],
+     [
+      32.65392,
+      39.98379
+     ],
+     [
+      32.65365,
+      39.98334
+     ],
+     [
+      32.65408,
+      39.98255
+     ],
+     [
+      32.65472,
+      39.98228
+     ],
+     [
+      32.65531,
+      39.98231
+     ],
+     [
+      32.65507,
+      39.98396
+     ]
+    ]
+   ]
+  ]
+ }
+}

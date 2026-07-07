@@ -2,5 +2,16 @@
   "isim": "Akın 688 Konutları",
   "slug": "akin-688-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Akın 688 Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9838579,
+    "lng": 32.654847
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/akin-688-konutlari-boundary.geojson",
+  "aciklama": "Akın 688 Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46625",
+      "parsel": "1"
+    }
+  ]
 }
