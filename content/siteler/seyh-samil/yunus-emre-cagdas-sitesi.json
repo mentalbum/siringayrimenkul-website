@@ -2,5 +2,16 @@
   "isim": "Yunus Emre Çağdaş Sitesi",
   "slug": "yunus-emre-cagdas-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Yunus Emre Çağdaş Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.993339,
+    "lng": 32.631808
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/yunus-emre-cagdas-sitesi-boundary.geojson",
+  "aciklama": "Yunus Emre Çağdaş Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46489",
+      "parsel": "1"
+    }
+  ]
 }
