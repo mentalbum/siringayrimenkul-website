@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Barış Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46268/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63035,
+      40.00243
+     ],
+     [
+      32.62997,
+      40.00219
+     ],
+     [
+      32.63025,
+      40.00181
+     ],
+     [
+      32.6306,
+      40.00151
+     ],
+     [
+      32.63103,
+      40.00117
+     ],
+     [
+      32.63152,
+      40.00096
+     ],
+     [
+      32.63178,
+      40.00114
+     ],
+     [
+      32.63043,
+      40.00243
+     ],
+     [
+      32.63035,
+      40.00243
+     ]
+    ]
+   ]
+  ]
+ }
+}
