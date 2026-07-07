@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yazıcı Modern",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46664/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65511,
+      39.97213
+     ],
+     [
+      32.65416,
+      39.97213
+     ],
+     [
+      32.65378,
+      39.97165
+     ],
+     [
+      32.6541,
+      39.97165
+     ],
+     [
+      32.65506,
+      39.97165
+     ],
+     [
+      32.65511,
+      39.97213
+     ]
+    ]
+   ]
+  ]
+ }
+}
