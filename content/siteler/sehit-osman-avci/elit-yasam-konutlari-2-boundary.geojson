@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Elit Yaşam Konutları 2",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46664/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65506,
+      39.97165
+     ],
+     [
+      32.6541,
+      39.97165
+     ],
+     [
+      32.6541,
+      39.97117
+     ],
+     [
+      32.65501,
+      39.9711
+     ],
+     [
+      32.65506,
+      39.97165
+     ]
+    ]
+   ]
+  ]
+ }
+}
