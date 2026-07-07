@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Alpak & Neve Armonia Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46651/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65909,
+      39.97491
+     ],
+     [
+      32.65736,
+      39.97483
+     ],
+     [
+      32.65735,
+      39.97426
+     ],
+     [
+      32.65767,
+      39.97427
+     ],
+     [
+      32.65775,
+      39.97344
+     ],
+     [
+      32.65916,
+      39.97341
+     ],
+     [
+      32.65911,
+      39.97431
+     ],
+     [
+      32.65909,
+      39.97491
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Alpak & Neve Armonia Residence",
   "slug": "alpak-neve-armonia-residence",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Alpak & Neve Armonia Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9740177,
+    "lng": 32.6586654
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/alpak-neve-armonia-residence-boundary.geojson",
+  "aciklama": "Alpak & Neve Armonia Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46651",
+      "parsel": "6"
+    }
+  ]
 }
