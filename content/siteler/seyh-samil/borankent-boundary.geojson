@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Borankent",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46268/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6306,
+      40.00151
+     ],
+     [
+      32.63019,
+      40.0012
+     ],
+     [
+      32.63099,
+      40.00058
+     ],
+     [
+      32.63152,
+      40.00096
+     ],
+     [
+      32.63103,
+      40.00117
+     ],
+     [
+      32.6306,
+      40.00151
+     ]
+    ]
+   ]
+  ]
+ }
+}
