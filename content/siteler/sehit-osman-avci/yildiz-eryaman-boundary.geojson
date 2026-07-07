@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yıldız Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46656/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66114,
+      39.96922
+     ],
+     [
+      32.66127,
+      39.96875
+     ],
+     [
+      32.6619,
+      39.96884
+     ],
+     [
+      32.66212,
+      39.96912
+     ],
+     [
+      32.66201,
+      39.96936
+     ],
+     [
+      32.66114,
+      39.96922
+     ]
+    ]
+   ]
+  ]
+ }
+}

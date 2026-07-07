@@ -2,5 +2,16 @@
   "isim": "Yıldız Eryaman",
   "slug": "yildiz-eryaman",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Yıldız Eryaman, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9691952,
+    "lng": 32.6615074
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/yildiz-eryaman-boundary.geojson",
+  "aciklama": "Yıldız Eryaman, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46656",
+      "parsel": "3"
+    }
+  ]
 }
