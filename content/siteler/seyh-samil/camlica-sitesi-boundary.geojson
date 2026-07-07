@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çamlıca Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17341/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62335,
+      39.99405
+     ],
+     [
+      32.62328,
+      39.99459
+     ],
+     [
+      32.62275,
+      39.99455
+     ],
+     [
+      32.62222,
+      39.99451
+     ],
+     [
+      32.62229,
+      39.99398
+     ],
+     [
+      32.62283,
+      39.99402
+     ],
+     [
+      32.62335,
+      39.99405
+     ]
+    ]
+   ]
+  ]
+ }
+}
