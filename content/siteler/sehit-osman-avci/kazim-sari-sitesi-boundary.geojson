@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kazım Sarı Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17483/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65051,
+      39.97912
+     ],
+     [
+      32.65049,
+      39.97845
+     ],
+     [
+      32.65101,
+      39.97844
+     ],
+     [
+      32.65154,
+      39.97843
+     ],
+     [
+      32.65199,
+      39.97889
+     ],
+     [
+      32.6516,
+      39.9791
+     ],
+     [
+      32.65107,
+      39.97911
+     ],
+     [
+      32.65051,
+      39.97912
+     ]
+    ]
+   ]
+  ]
+ }
+}

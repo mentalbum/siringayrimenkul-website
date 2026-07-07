@@ -2,5 +2,16 @@
   "isim": "Kazım Sarı Sitesi",
   "slug": "kazim-sari-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Kazım Sarı Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9786544,
+    "lng": 32.6506785
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/kazim-sari-sitesi-boundary.geojson",
+  "aciklama": "Kazım Sarı Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17483",
+      "parsel": "1"
+    }
+  ]
 }
