@@ -12,6 +12,7 @@ import {
   getNearbyMahalleler,
   getSiteBoundary,
   getSitelerByMahalle,
+  mahalleKisaIsim,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -37,13 +38,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const mahalle = getMahalleBySlug(slug);
   if (!mahalle) return {};
 
+  const kisaIsim = mahalleKisaIsim(mahalle);
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
-    siteSayisi > 0 ? `mahalledeki ${siteSayisi} site ve rezidansı tek tek tanıyor` : "mahalledeki siteleri tek tek tanıyor";
+    siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
-    title: `${mahalle.isim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${mahalle.isim} emlakçısı Şirin Gayrimenkul: ${sitelerParcasi}, satılık daire ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.`,
+    title: `${kisaIsim} Emlakçısı — Eryaman Emlak Rehberi`,
+    description: `${kisaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}, satılık ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek istiyorsanız fiyatı birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -107,6 +109,7 @@ export default async function MahallePage({ params }: Props) {
     );
   }
 
+  const kisaIsim = mahalleKisaIsim(mahalle);
   const siteler = getSitelerByMahalle(mahalle.slug);
   const boundary = getMahalleBoundary(mahalle);
   const siteMapEntries = siteler.map((site) => ({ site, boundary: getSiteBoundary(site) }));
@@ -180,6 +183,12 @@ export default async function MahallePage({ params }: Props) {
           {mahalle.ilce}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
+        <p className="mt-3 text-base leading-relaxed text-body">
+          <strong className="font-semibold text-navy">{kisaIsim} emlakçısı</strong> Şirin
+          Gayrimenkul, {mahalle.isim}&apos;ndeki site ve rezidansları tek tek tanıyor; satılık ve
+          kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek
+          istiyorsanız doğru fiyatı birlikte belirleyelim.
+        </p>
       </header>
 
       <dl className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">

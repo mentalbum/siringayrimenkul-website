@@ -1,5 +1,5 @@
 import type { EtapEntry } from "@/lib/content";
-import { adaDisplayLabel } from "@/lib/content";
+import { adaDisplayLabel, mahalleKisaIsim } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
@@ -36,9 +36,10 @@ export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
     cevap: `${siteConfig.name} olarak evini satmayı veya kiraya vermeyi düşünen ev sahipleri için değerleme ve yol haritası çıkarıyoruz; bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
   });
 
+  const kisaIsim = mahalleKisaIsim(mahalle);
   items.push({
-    soru: `${mahalle.isim}'nde emlakçı arıyorum — kiminle iletişime geçebilirim?`,
-    cevap: `${mahalle.isim} emlakçısı olarak ${siteConfig.name}, mahalledeki site ve rezidansları yakından tanıyor. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
+    soru: `${kisaIsim} emlakçısı kimdir — ${mahalle.isim}'nde kiminle iletişime geçebilirim?`,
+    cevap: `${kisaIsim} emlakçısı olarak ${siteConfig.name}, ${mahalle.isim}'ndeki site ve rezidansları yakından tanıyor. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
   });
 
   return items;

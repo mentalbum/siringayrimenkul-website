@@ -46,6 +46,13 @@ export function getMahalleBySlug(slug: string): Mahalle | undefined {
   return readJson<Mahalle>(filePath);
 }
 
+/** Mahalle adının "Mahallesi" olmadan kısa hâli — "Yavuz Selim Mahallesi" →
+ * "Yavuz Selim". Yerel aramaların hem "yavuz selim emlakçı" hem "yavuz selim
+ * mahallesi emlakçı" biçimini hedeflemek için kullanılır. */
+export function mahalleKisaIsim(mahalle: Mahalle): string {
+  return mahalle.isim.replace(/\s*Mahallesi\s*$/, "").trim();
+}
+
 export function getMahalleBoundary(mahalle: Mahalle): GeoJSON.Feature | undefined {
   if (!mahalle.sinirGeoJSON) return undefined;
   const filePath = path.join(CONTENT_DIR, mahalle.sinirGeoJSON);
