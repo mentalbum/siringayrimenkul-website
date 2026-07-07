@@ -2,5 +2,16 @@
   "isim": "Hill Tower Göksu",
   "slug": "hill-tower-goksu",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Hill Tower Göksu, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9859971,
+    "lng": 32.6556653
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/hill-tower-goksu-boundary.geojson",
+  "aciklama": "Hill Tower Göksu, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48581",
+      "parsel": "1"
+    }
+  ]
 }

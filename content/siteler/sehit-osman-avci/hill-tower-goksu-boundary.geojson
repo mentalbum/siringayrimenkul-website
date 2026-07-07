@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hill Tower Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "48581/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65608,
+      39.98654
+     ],
+     [
+      32.65544,
+      39.98655
+     ],
+     [
+      32.65538,
+      39.9865
+     ],
+     [
+      32.65538,
+      39.98559
+     ],
+     [
+      32.65632,
+      39.98558
+     ],
+     [
+      32.6563,
+      39.98568
+     ],
+     [
+      32.65608,
+      39.98654
+     ]
+    ]
+   ]
+  ]
+ }
+}
