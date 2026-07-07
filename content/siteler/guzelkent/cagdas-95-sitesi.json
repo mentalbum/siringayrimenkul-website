@@ -2,5 +2,16 @@
   "isim": "Çağdaş - 95 Sitesi",
   "slug": "cagdas-95-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Çağdaş - 95 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9933064,
+    "lng": 32.6128196
+  },
+  "sinirGeoJSON": "siteler/guzelkent/cagdas-95-sitesi-boundary.geojson",
+  "aciklama": "Çağdaş - 95 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18491",
+      "parsel": "1"
+    }
+  ]
 }
