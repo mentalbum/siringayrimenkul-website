@@ -2,5 +2,16 @@
   "isim": "Anka - 2001 Sitesi",
   "slug": "anka-2001-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Anka - 2001 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9837998,
+    "lng": 32.6059326
+  },
+  "sinirGeoJSON": "siteler/guzelkent/anka-2001-sitesi-boundary.geojson",
+  "aciklama": "Anka - 2001 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18650",
+      "parsel": "1"
+    }
+  ]
 }

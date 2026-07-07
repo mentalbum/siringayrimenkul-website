@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Anka - 2001 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18650/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60594,
+      39.98404
+     ],
+     [
+      32.60499,
+      39.98407
+     ],
+     [
+      32.60496,
+      39.98358
+     ],
+     [
+      32.60502,
+      39.98353
+     ],
+     [
+      32.60594,
+      39.9835
+     ],
+     [
+      32.60594,
+      39.98404
+     ]
+    ]
+   ]
+  ]
+ }
+}
