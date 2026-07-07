@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Didem Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18489/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61082,
+      39.99312
+     ],
+     [
+      32.61082,
+      39.99266
+     ],
+     [
+      32.61092,
+      39.99258
+     ],
+     [
+      32.61169,
+      39.99259
+     ],
+     [
+      32.61183,
+      39.99272
+     ],
+     [
+      32.61182,
+      39.99312
+     ],
+     [
+      32.61176,
+      39.99315
+     ],
+     [
+      32.61087,
+      39.99314
+     ],
+     [
+      32.61082,
+      39.99312
+     ]
+    ]
+   ]
+  ]
+ }
+}
