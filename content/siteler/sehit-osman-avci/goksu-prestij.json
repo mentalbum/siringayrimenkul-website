@@ -2,5 +2,16 @@
   "isim": "Göksu Prestij",
   "slug": "goksu-prestij",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Göksu Prestij, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9885144,
+    "lng": 32.6543317
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/goksu-prestij-boundary.geojson",
+  "aciklama": "Göksu Prestij, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46620",
+      "parsel": "3"
+    }
+  ]
 }

@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksu Prestij",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46620/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65519,
+      39.98943
+     ],
+     [
+      32.65385,
+      39.98884
+     ],
+     [
+      32.65398,
+      39.98872
+     ],
+     [
+      32.65486,
+      39.98783
+     ],
+     [
+      32.65493,
+      39.98773
+     ],
+     [
+      32.65568,
+      39.98801
+     ],
+     [
+      32.65519,
+      39.98943
+     ]
+    ]
+   ]
+  ]
+ }
+}
