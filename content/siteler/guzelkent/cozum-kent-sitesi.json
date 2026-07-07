@@ -2,5 +2,16 @@
   "isim": "Çözüm Kent Sitesi",
   "slug": "cozum-kent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Çözüm Kent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9918289,
+    "lng": 32.615911
+  },
+  "sinirGeoJSON": "siteler/guzelkent/cozum-kent-sitesi-boundary.geojson",
+  "aciklama": "Çözüm Kent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18480",
+      "parsel": "1"
+    }
+  ]
 }

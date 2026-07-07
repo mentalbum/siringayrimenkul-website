@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çözüm Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18480/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61528,
+      39.99195
+     ],
+     [
+      32.61526,
+      39.9919
+     ],
+     [
+      32.61534,
+      39.99174
+     ],
+     [
+      32.61536,
+      39.99173
+     ],
+     [
+      32.61641,
+      39.9915
+     ],
+     [
+      32.61646,
+      39.99151
+     ],
+     [
+      32.61649,
+      39.99162
+     ],
+     [
+      32.61617,
+      39.99222
+     ],
+     [
+      32.61613,
+      39.99222
+     ],
+     [
+      32.61528,
+      39.99195
+     ]
+    ]
+   ]
+  ]
+ }
+}
