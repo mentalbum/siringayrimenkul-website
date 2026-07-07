@@ -2,5 +2,16 @@
   "isim": "Demirel Park Evleri",
   "slug": "demirel-park-evleri",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Demirel Park Evleri, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0032883,
+    "lng": 32.6254625
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/demirel-park-evleri-boundary.geojson",
+  "aciklama": "Demirel Park Evleri, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46261",
+      "parsel": "1"
+    }
+  ]
 }

@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Demirel Park Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46261/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62618,
+      40.00413
+     ],
+     [
+      32.62612,
+      40.00416
+     ],
+     [
+      32.62605,
+      40.00418
+     ],
+     [
+      32.62601,
+      40.00418
+     ],
+     [
+      32.62593,
+      40.00418
+     ],
+     [
+      32.62585,
+      40.00418
+     ],
+     [
+      32.62575,
+      40.00414
+     ],
+     [
+      32.62446,
+      40.0034
+     ],
+     [
+      32.62445,
+      40.00335
+     ],
+     [
+      32.62512,
+      40.00253
+     ],
+     [
+      32.62686,
+      40.00351
+     ],
+     [
+      32.62618,
+      40.00413
+     ]
+    ]
+   ]
+  ]
+ }
+}
