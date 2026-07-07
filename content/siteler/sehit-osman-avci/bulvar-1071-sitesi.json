@@ -2,5 +2,16 @@
   "isim": "Bulvar 1071 Sitesi",
   "slug": "bulvar-1071-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Bulvar 1071 Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9776376,
+    "lng": 32.6568337
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/bulvar-1071-sitesi-boundary.geojson",
+  "aciklama": "Bulvar 1071 Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46642",
+      "parsel": "5"
+    }
+  ]
 }

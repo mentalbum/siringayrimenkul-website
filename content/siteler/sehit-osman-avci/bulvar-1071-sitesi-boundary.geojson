@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bulvar 1071 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46642/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65646,
+      39.97819
+     ],
+     [
+      32.65654,
+      39.97779
+     ],
+     [
+      32.65661,
+      39.97738
+     ],
+     [
+      32.65671,
+      39.97732
+     ],
+     [
+      32.65755,
+      39.97735
+     ],
+     [
+      32.65746,
+      39.97788
+     ],
+     [
+      32.65744,
+      39.97795
+     ],
+     [
+      32.65738,
+      39.97831
+     ],
+     [
+      32.65649,
+      39.97822
+     ],
+     [
+      32.65646,
+      39.97819
+     ]
+    ]
+   ]
+  ]
+ }
+}
