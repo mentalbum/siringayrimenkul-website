@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Altıntepe Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46432/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61494,
+      40.005
+     ],
+     [
+      32.615,
+      40.00509
+     ],
+     [
+      32.61249,
+      40.00544
+     ],
+     [
+      32.6124,
+      40.00535
+     ],
+     [
+      32.61282,
+      40.00468
+     ],
+     [
+      32.61415,
+      40.00449
+     ],
+     [
+      32.61422,
+      40.00449
+     ],
+     [
+      32.61494,
+      40.005
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Ayata Kent Sitesi",
   "slug": "ayata-kent-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Ayata Kent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9999698,
+    "lng": 32.6139276
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/ayata-kent-sitesi-boundary.geojson",
+  "aciklama": "Ayata Kent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46439",
+      "parsel": "1"
+    }
+  ]
 }

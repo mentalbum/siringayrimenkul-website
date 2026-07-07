@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ayata Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46439/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61378,
+      40.00107
+     ],
+     [
+      32.61181,
+      40.00088
+     ],
+     [
+      32.61181,
+      40.00081
+     ],
+     [
+      32.61201,
+      40.00044
+     ],
+     [
+      32.61219,
+      40.00023
+     ],
+     [
+      32.61269,
+      39.99996
+     ],
+     [
+      32.61278,
+      39.99991
+     ],
+     [
+      32.61419,
+      39.99992
+     ],
+     [
+      32.61426,
+      39.99994
+     ],
+     [
+      32.61378,
+      40.00107
+     ]
+    ]
+   ]
+  ]
+ }
+}

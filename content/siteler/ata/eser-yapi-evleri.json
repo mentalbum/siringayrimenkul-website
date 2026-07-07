@@ -2,5 +2,16 @@
   "isim": "Eser Yapı Evleri",
   "slug": "eser-yapi-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Eser Yapı Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0041955,
+    "lng": 32.6023075
+  },
+  "sinirGeoJSON": "siteler/ata/eser-yapi-evleri-boundary.geojson",
+  "aciklama": "Eser Yapı Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44749",
+      "parsel": "1"
+    }
+  ]
 }

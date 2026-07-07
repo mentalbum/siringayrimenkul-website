@@ -2,5 +2,16 @@
   "isim": "Çiğdem Sitesi",
   "slug": "cigdem-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Çiğdem Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0036293,
+    "lng": 32.606761
+  },
+  "sinirGeoJSON": "siteler/ata/cigdem-sitesi-boundary.geojson",
+  "aciklama": "Çiğdem Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45835",
+      "parsel": "1"
+    }
+  ]
 }

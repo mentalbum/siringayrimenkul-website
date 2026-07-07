@@ -2,5 +2,16 @@
   "isim": "Mavi Bayrak Sitesi",
   "slug": "mavi-bayrak-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Mavi Bayrak Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9984955,
+    "lng": 32.6000383
+  },
+  "sinirGeoJSON": "siteler/ata/mavi-bayrak-sitesi-boundary.geojson",
+  "aciklama": "Mavi Bayrak Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44773",
+      "parsel": "3"
+    }
+  ]
 }
