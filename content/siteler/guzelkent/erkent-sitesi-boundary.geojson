@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Erkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18639/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60626,
+      39.98753
+     ],
+     [
+      32.60624,
+      39.98758
+     ],
+     [
+      32.60562,
+      39.98785
+     ],
+     [
+      32.60554,
+      39.98784
+     ],
+     [
+      32.60516,
+      39.98733
+     ],
+     [
+      32.60524,
+      39.98723
+     ],
+     [
+      32.60581,
+      39.98698
+     ],
+     [
+      32.60585,
+      39.98699
+     ],
+     [
+      32.60626,
+      39.98753
+     ]
+    ]
+   ]
+  ]
+ }
+}
