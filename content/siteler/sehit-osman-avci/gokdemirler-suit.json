@@ -2,5 +2,16 @@
   "isim": "Gökdemirler Suit",
   "slug": "gokdemirler-suit",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Gökdemirler Suit, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9847435,
+    "lng": 32.6560721
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/gokdemirler-suit-boundary.geojson",
+  "aciklama": "Gökdemirler Suit, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48581",
+      "parsel": "3"
+    }
+  ]
 }
