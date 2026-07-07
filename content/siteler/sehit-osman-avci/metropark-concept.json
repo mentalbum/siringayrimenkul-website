@@ -2,5 +2,16 @@
   "isim": "Metropark Concept",
   "slug": "metropark-concept",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Metropark Concept, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9821742,
+    "lng": 32.65644
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/metropark-concept-boundary.geojson",
+  "aciklama": "Metropark Concept, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46628",
+      "parsel": "1"
+    }
+  ]
 }

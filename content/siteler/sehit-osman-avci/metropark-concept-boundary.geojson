@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Metropark Concept",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46628/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65572,
+      39.9822
+     ],
+     [
+      32.65564,
+      39.98212
+     ],
+     [
+      32.65569,
+      39.9819
+     ],
+     [
+      32.65651,
+      39.98193
+     ],
+     [
+      32.65747,
+      39.98196
+     ],
+     [
+      32.65742,
+      39.98214
+     ],
+     [
+      32.65727,
+      39.98225
+     ],
+     [
+      32.65572,
+      39.9822
+     ]
+    ]
+   ]
+  ]
+ }
+}
