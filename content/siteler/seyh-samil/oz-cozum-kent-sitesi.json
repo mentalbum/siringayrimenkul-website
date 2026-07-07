@@ -2,5 +2,16 @@
   "isim": "Öz Çözüm Kent Sitesi",
   "slug": "oz-cozum-kent-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Öz Çözüm Kent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9959206,
+    "lng": 32.6326842
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/oz-cozum-kent-sitesi-boundary.geojson",
+  "aciklama": "Öz Çözüm Kent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46486",
+      "parsel": "2"
+    }
+  ]
 }
