@@ -2,5 +2,16 @@
   "isim": "Çiçek Sitesi",
   "slug": "cicek-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Çiçek Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9838407,
+    "lng": 32.6488146
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/cicek-sitesi-boundary.geojson",
+  "aciklama": "Çiçek Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "17471",
+      "parsel": "1"
+    }
+  ]
 }
