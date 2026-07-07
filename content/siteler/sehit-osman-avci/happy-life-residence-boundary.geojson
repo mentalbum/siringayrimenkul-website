@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Happy Life Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46631/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65535,
+      39.98212
+     ],
+     [
+      32.65466,
+      39.98208
+     ],
+     [
+      32.65424,
+      39.98158
+     ],
+     [
+      32.65547,
+      39.98155
+     ],
+     [
+      32.65535,
+      39.98212
+     ]
+    ]
+   ]
+  ]
+ }
+}

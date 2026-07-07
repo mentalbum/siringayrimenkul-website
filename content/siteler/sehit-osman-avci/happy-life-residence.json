@@ -2,5 +2,16 @@
   "isim": "Happy Life Residence",
   "slug": "happy-life-residence",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Happy Life Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.981707,
+    "lng": 32.6551407
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/happy-life-residence-boundary.geojson",
+  "aciklama": "Happy Life Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46631",
+      "parsel": "1"
+    }
+  ]
 }
