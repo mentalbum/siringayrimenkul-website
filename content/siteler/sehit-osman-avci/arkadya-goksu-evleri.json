@@ -2,5 +2,16 @@
   "isim": "Arkadya Göksu Evleri",
   "slug": "arkadya-goksu-evleri",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Arkadya Göksu Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9868895,
+    "lng": 32.6548375
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/arkadya-goksu-evleri-boundary.geojson",
+  "aciklama": "Arkadya Göksu Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46623",
+      "parsel": "4"
+    }
+  ]
 }
