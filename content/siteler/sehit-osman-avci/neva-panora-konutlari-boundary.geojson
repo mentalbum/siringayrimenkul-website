@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Neva Panora Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46631/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65371,
+      39.98094
+     ],
+     [
+      32.65561,
+      39.98089
+     ],
+     [
+      32.65553,
+      39.98123
+     ],
+     [
+      32.65399,
+      39.98127
+     ],
+     [
+      32.65371,
+      39.98094
+     ]
+    ]
+   ]
+  ]
+ }
+}

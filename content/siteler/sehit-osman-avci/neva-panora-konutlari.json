@@ -2,5 +2,16 @@
   "isim": "Neva Panora Konutları",
   "slug": "neva-panora-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Neva Panora Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9811296,
+    "lng": 32.655348
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/neva-panora-konutlari-boundary.geojson",
+  "aciklama": "Neva Panora Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46631",
+      "parsel": "3"
+    }
+  ]
 }
