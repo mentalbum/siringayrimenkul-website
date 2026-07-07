@@ -2,5 +2,16 @@
   "isim": "Özanadolu",
   "slug": "ozanadolu",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Özanadolu, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0018832,
+    "lng": 32.6295322
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/ozanadolu-boundary.geojson",
+  "aciklama": "Özanadolu, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46268",
+      "parsel": "4"
+    }
+  ]
 }

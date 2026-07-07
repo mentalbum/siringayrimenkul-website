@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Özanadolu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46268/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63019,
+      40.0012
+     ],
+     [
+      32.6306,
+      40.00151
+     ],
+     [
+      32.63025,
+      40.00181
+     ],
+     [
+      32.62997,
+      40.00219
+     ],
+     [
+      32.62944,
+      40.00184
+     ],
+     [
+      32.62944,
+      40.00178
+     ],
+     [
+      32.63019,
+      40.0012
+     ]
+    ]
+   ]
+  ]
+ }
+}
