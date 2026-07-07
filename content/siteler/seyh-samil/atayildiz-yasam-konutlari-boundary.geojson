@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Atayıldız Yaşam Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46271/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63378,
+      40.00108
+     ],
+     [
+      32.63235,
+      40.00108
+     ],
+     [
+      32.63236,
+      40.00015
+     ],
+     [
+      32.63426,
+      40.00017
+     ],
+     [
+      32.63433,
+      40.00025
+     ],
+     [
+      32.63414,
+      40.00059
+     ],
+     [
+      32.63378,
+      40.00108
+     ]
+    ]
+   ]
+  ]
+ }
+}
