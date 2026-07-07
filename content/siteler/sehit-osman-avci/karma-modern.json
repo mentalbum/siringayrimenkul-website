@@ -2,5 +2,16 @@
   "isim": "Karma Modern",
   "slug": "karma-modern",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Karma Modern, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9689888,
+    "lng": 32.6602506
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/karma-modern-boundary.geojson",
+  "aciklama": "Karma Modern, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46656",
+      "parsel": "5"
+    }
+  ]
 }
