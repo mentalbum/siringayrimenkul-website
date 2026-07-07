@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Zekioğlu Rezidans",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46657/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65744,
+      39.9698
+     ],
+     [
+      32.65685,
+      39.96997
+     ],
+     [
+      32.65684,
+      39.96902
+     ],
+     [
+      32.65743,
+      39.96889
+     ],
+     [
+      32.65744,
+      39.9698
+     ]
+    ]
+   ]
+  ]
+ }
+}
