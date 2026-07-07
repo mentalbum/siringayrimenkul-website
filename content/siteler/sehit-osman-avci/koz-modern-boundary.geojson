@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Koz Modern",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46658/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65909,
+      39.97097
+     ],
+     [
+      32.65897,
+      39.97107
+     ],
+     [
+      32.65829,
+      39.97108
+     ],
+     [
+      32.65828,
+      39.97047
+     ],
+     [
+      32.65828,
+      39.96976
+     ],
+     [
+      32.65895,
+      39.96966
+     ],
+     [
+      32.65902,
+      39.96971
+     ],
+     [
+      32.65909,
+      39.97097
+     ]
+    ]
+   ]
+  ]
+ }
+}
