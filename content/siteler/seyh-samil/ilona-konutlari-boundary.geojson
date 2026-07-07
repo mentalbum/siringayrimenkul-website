@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İlona Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46264/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62826,
+      40.00242
+     ],
+     [
+      32.62817,
+      40.00243
+     ],
+     [
+      32.62724,
+      40.00185
+     ],
+     [
+      32.62843,
+      40.00095
+     ],
+     [
+      32.62935,
+      40.00158
+     ],
+     [
+      32.62826,
+      40.00242
+     ]
+    ]
+   ]
+  ]
+ }
+}
