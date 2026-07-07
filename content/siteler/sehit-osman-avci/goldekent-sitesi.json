@@ -2,5 +2,16 @@
   "isim": "Göldekent Sitesi",
   "slug": "goldekent-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Göldekent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9859467,
+    "lng": 32.64916
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/goldekent-sitesi-boundary.geojson",
+  "aciklama": "Göldekent Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48150",
+      "parsel": "1"
+    }
+  ]
 }
