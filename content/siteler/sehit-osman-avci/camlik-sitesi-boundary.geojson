@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çamlık Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17470/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64818,
+      39.98331
+     ],
+     [
+      32.64819,
+      39.98284
+     ],
+     [
+      32.64821,
+      39.98274
+     ],
+     [
+      32.64886,
+      39.98278
+     ],
+     [
+      32.64945,
+      39.98282
+     ],
+     [
+      32.6494,
+      39.98332
+     ],
+     [
+      32.64879,
+      39.98331
+     ],
+     [
+      32.64818,
+      39.98331
+     ]
+    ]
+   ]
+  ]
+ }
+}
