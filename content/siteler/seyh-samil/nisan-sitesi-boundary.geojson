@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Nisan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46265/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6285,
+      40.00315
+     ],
+     [
+      32.62808,
+      40.00288
+     ],
+     [
+      32.62809,
+      40.00281
+     ],
+     [
+      32.62873,
+      40.00231
+     ],
+     [
+      32.62939,
+      40.00276
+     ],
+     [
+      32.6285,
+      40.00315
+     ]
+    ]
+   ]
+  ]
+ }
+}
