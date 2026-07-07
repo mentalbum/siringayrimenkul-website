@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Relax Eryaman Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46624/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65368,
+      39.98481
+     ],
+     [
+      32.65382,
+      39.98403
+     ],
+     [
+      32.65427,
+      39.98403
+     ],
+     [
+      32.65434,
+      39.98396
+     ],
+     [
+      32.65503,
+      39.98414
+     ],
+     [
+      32.65506,
+      39.98416
+     ],
+     [
+      32.65508,
+      39.98419
+     ],
+     [
+      32.65508,
+      39.98518
+     ],
+     [
+      32.65416,
+      39.98521
+     ],
+     [
+      32.65411,
+      39.98521
+     ],
+     [
+      32.65406,
+      39.98518
+     ],
+     [
+      32.65368,
+      39.98481
+     ]
+    ]
+   ]
+  ]
+ }
+}
