@@ -2,5 +2,16 @@
   "isim": "Gözde Evler Sitesi",
   "slug": "gozde-evler-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Gözde Evler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0051739,
+    "lng": 32.6136434
+  },
+  "sinirGeoJSON": "siteler/ata/gozde-evler-sitesi-boundary.geojson",
+  "aciklama": "Gözde Evler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46432",
+      "parsel": "1"
+    }
+  ]
 }
