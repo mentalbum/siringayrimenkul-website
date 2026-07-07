@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eston Blokları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17342/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62319,
+      39.99522
+     ],
+     [
+      32.62308,
+      39.9953
+     ],
+     [
+      32.62224,
+      39.99524
+     ],
+     [
+      32.62214,
+      39.99515
+     ],
+     [
+      32.6222,
+      39.99469
+     ],
+     [
+      32.62273,
+      39.99473
+     ],
+     [
+      32.62325,
+      39.99477
+     ],
+     [
+      32.62319,
+      39.99522
+     ]
+    ]
+   ]
+  ]
+ }
+}
