@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İçtaş",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "17498/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64916,
+      39.97907
+     ],
+     [
+      32.64915,
+      39.97858
+     ],
+     [
+      32.64973,
+      39.97857
+     ],
+     [
+      32.65031,
+      39.97856
+     ],
+     [
+      32.65033,
+      39.97908
+     ],
+     [
+      32.65024,
+      39.97917
+     ],
+     [
+      32.64977,
+      39.97917
+     ],
+     [
+      32.64928,
+      39.97918
+     ],
+     [
+      32.64916,
+      39.97907
+     ]
+    ]
+   ]
+  ]
+ }
+}
