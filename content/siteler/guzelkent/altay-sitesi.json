@@ -2,16 +2,5 @@
   "isim": "Altay Sitesi",
   "slug": "altay-sitesi",
   "mahalleSlug": "guzelkent",
-  "koordinat": {
-    "lat": 39.989441,
-    "lng": 32.6054318
-  },
-  "sinirGeoJSON": "siteler/guzelkent/altay-sitesi-boundary.geojson",
-  "aciklama": "Altay Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
-  "adalar": [
-    {
-      "no": "",
-      "parsel": "27"
-    }
-  ]
+  "aciklama": "Altay Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
 }
