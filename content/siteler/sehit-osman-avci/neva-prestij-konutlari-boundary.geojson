@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Neva Prestij Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46643/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65746,
+      39.97651
+     ],
+     [
+      32.65663,
+      39.97647
+     ],
+     [
+      32.6566,
+      39.97589
+     ],
+     [
+      32.65674,
+      39.9758
+     ],
+     [
+      32.65751,
+      39.97583
+     ],
+     [
+      32.65746,
+      39.97651
+     ]
+    ]
+   ]
+  ]
+ }
+}

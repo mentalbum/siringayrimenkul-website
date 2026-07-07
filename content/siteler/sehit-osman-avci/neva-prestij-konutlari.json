@@ -2,5 +2,16 @@
   "isim": "Neva Prestij Konutları",
   "slug": "neva-prestij-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Neva Prestij Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9763358,
+    "lng": 32.6570918
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/neva-prestij-konutlari-boundary.geojson",
+  "aciklama": "Neva Prestij Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46643",
+      "parsel": "4"
+    }
+  ]
 }
