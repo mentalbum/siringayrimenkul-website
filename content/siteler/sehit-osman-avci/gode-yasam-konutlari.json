@@ -2,5 +2,16 @@
   "isim": "Göde Yaşam Konutları",
   "slug": "gode-yasam-konutlari",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Göde Yaşam Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9890752,
+    "lng": 32.653937
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/gode-yasam-konutlari-boundary.geojson",
+  "aciklama": "Göde Yaşam Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46620",
+      "parsel": "2"
+    }
+  ]
 }

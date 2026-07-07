@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göde Yaşam Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46620/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65519,
+      39.98943
+     ],
+     [
+      32.6551,
+      39.98971
+     ],
+     [
+      32.65502,
+      39.98979
+     ],
+     [
+      32.65351,
+      39.98912
+     ],
+     [
+      32.65385,
+      39.98884
+     ],
+     [
+      32.65519,
+      39.98943
+     ]
+    ]
+   ]
+  ]
+ }
+}
