@@ -2,5 +2,16 @@
   "isim": "Yenigüç Sitesi Eryaman",
   "slug": "yeniguc-sitesi-eryaman",
   "mahalleSlug": "goksu",
-  "aciklama": "Yenigüç Sitesi Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9923251,
+    "lng": 32.6397353
+  },
+  "sinirGeoJSON": "siteler/goksu/yeniguc-sitesi-eryaman-boundary.geojson",
+  "aciklama": "Yenigüç Sitesi Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    }
+  ]
 }
