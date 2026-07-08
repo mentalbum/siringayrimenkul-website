@@ -2,5 +2,16 @@
   "isim": "Akşafak Sitesi",
   "slug": "aksafak-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Akşafak Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9941253,
+    "lng": 32.6394081
+  },
+  "sinirGeoJSON": "siteler/goksu/aksafak-sitesi-boundary.geojson",
+  "aciklama": "Akşafak Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46457",
+      "parsel": "1"
+    }
+  ]
 }
