@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Doğan Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47550/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60735,
+      39.96292
+     ],
+     [
+      32.60715,
+      39.96223
+     ],
+     [
+      32.60743,
+      39.96218
+     ],
+     [
+      32.60751,
+      39.96217
+     ],
+     [
+      32.60771,
+      39.96286
+     ],
+     [
+      32.60735,
+      39.96292
+     ]
+    ]
+   ]
+  ]
+ }
+}
