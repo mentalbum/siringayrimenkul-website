@@ -2,5 +2,16 @@
   "isim": "Barla Konutları",
   "slug": "barla-konutlari",
   "mahalleSlug": "yesilova",
-  "aciklama": "Barla Konutları, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.968935,
+    "lng": 32.6029233
+  },
+  "sinirGeoJSON": "siteler/yesilova/barla-konutlari-boundary.geojson",
+  "aciklama": "Barla Konutları, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47568",
+      "parsel": "5"
+    }
+  ]
 }

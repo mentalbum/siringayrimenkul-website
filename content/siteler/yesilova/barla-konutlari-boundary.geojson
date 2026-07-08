@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Barla Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47568/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6028,
+      39.96913
+     ],
+     [
+      32.60221,
+      39.96891
+     ],
+     [
+      32.60215,
+      39.96889
+     ],
+     [
+      32.60239,
+      39.96852
+     ],
+     [
+      32.60273,
+      39.96864
+     ],
+     [
+      32.60304,
+      39.96876
+     ],
+     [
+      32.6028,
+      39.96913
+     ]
+    ]
+   ]
+  ]
+ }
+}
