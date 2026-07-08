@@ -2,5 +2,16 @@
   "isim": "Doğan City",
   "slug": "dogan-city",
   "mahalleSlug": "yesilova",
-  "aciklama": "Doğan City, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9644051,
+    "lng": 32.6109751
+  },
+  "sinirGeoJSON": "siteler/yesilova/dogan-city-boundary.geojson",
+  "aciklama": "Doğan City, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47544",
+      "parsel": "2"
+    }
+  ]
 }
