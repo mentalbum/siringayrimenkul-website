@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Alpar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47541/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6096,
+      39.96593
+     ],
+     [
+      32.60911,
+      39.96601
+     ],
+     [
+      32.60893,
+      39.96542
+     ],
+     [
+      32.60942,
+      39.96533
+     ],
+     [
+      32.6096,
+      39.96593
+     ]
+    ]
+   ]
+  ]
+ }
+}

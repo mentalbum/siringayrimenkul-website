@@ -2,5 +2,16 @@
   "isim": "Alpar Sitesi",
   "slug": "alpar-sitesi",
   "mahalleSlug": "yesilova",
-  "aciklama": "Alpar Sitesi, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9658089,
+    "lng": 32.609402
+  },
+  "sinirGeoJSON": "siteler/yesilova/alpar-sitesi-boundary.geojson",
+  "aciklama": "Alpar Sitesi, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47541",
+      "parsel": "3"
+    }
+  ]
 }
