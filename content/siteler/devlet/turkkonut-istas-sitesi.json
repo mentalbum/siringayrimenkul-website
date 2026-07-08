@@ -2,5 +2,16 @@
   "isim": "Türkkonut İstaş Sitesi",
   "slug": "turkkonut-istas-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Türkkonut İstaş Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9808883,
+    "lng": 32.6196487
+  },
+  "sinirGeoJSON": "siteler/devlet/turkkonut-istas-sitesi-boundary.geojson",
+  "aciklama": "Türkkonut İstaş Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46516",
+      "parsel": "1"
+    }
+  ]
 }

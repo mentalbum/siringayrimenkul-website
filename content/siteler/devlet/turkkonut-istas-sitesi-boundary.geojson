@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Türkkonut İstaş Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46516/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6182,
+      39.98101
+     ],
+     [
+      32.61807,
+      39.98009
+     ],
+     [
+      32.61833,
+      39.98008
+     ],
+     [
+      32.62053,
+      39.97984
+     ],
+     [
+      32.62069,
+      39.98037
+     ],
+     [
+      32.62073,
+      39.981
+     ],
+     [
+      32.6207,
+      39.98103
+     ],
+     [
+      32.61836,
+      39.9811
+     ],
+     [
+      32.6182,
+      39.98101
+     ]
+    ]
+   ]
+  ]
+ }
+}
