@@ -2,5 +2,16 @@
   "isim": "Utku Kent 2 Sitesi",
   "slug": "utku-kent-2-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Utku Kent 2 Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9962726,
+    "lng": 32.6399016
+  },
+  "sinirGeoJSON": "siteler/goksu/utku-kent-2-sitesi-boundary.geojson",
+  "aciklama": "Utku Kent 2 Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ]
 }
