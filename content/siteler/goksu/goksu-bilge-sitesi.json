@@ -2,5 +2,16 @@
   "isim": "Göksu Bilge Sitesi",
   "slug": "goksu-bilge-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Göksu Bilge Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9944409,
+    "lng": 32.6400007
+  },
+  "sinirGeoJSON": "siteler/goksu/goksu-bilge-sitesi-boundary.geojson",
+  "aciklama": "Göksu Bilge Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46457",
+      "parsel": "1"
+    }
+  ]
 }
