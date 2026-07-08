@@ -2,5 +2,16 @@
   "isim": "Mutlu Sitesi",
   "slug": "mutlu-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Mutlu Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9918094,
+    "lng": 32.6394665
+  },
+  "sinirGeoJSON": "siteler/goksu/mutlu-sitesi-boundary.geojson",
+  "aciklama": "Mutlu Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    }
+  ]
 }
