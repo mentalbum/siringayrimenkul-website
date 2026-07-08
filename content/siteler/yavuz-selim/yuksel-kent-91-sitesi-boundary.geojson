@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yüksel Kent 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47614/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61041,
+      39.99883
+     ],
+     [
+      32.60954,
+      39.99883
+     ],
+     [
+      32.60954,
+      39.99864
+     ],
+     [
+      32.60958,
+      39.99864
+     ],
+     [
+      32.60958,
+      39.99833
+     ],
+     [
+      32.60955,
+      39.99833
+     ],
+     [
+      32.60955,
+      39.99815
+     ],
+     [
+      32.61041,
+      39.99814
+     ],
+     [
+      32.61041,
+      39.99883
+     ]
+    ]
+   ]
+  ]
+ }
+}
