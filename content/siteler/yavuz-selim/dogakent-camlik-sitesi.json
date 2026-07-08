@@ -2,5 +2,16 @@
   "isim": "Doğakent Çamlık Sitesi",
   "slug": "dogakent-camlik-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Doğakent Çamlık Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9965889,
+    "lng": 32.6166872
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/dogakent-camlik-sitesi-boundary.geojson",
+  "aciklama": "Doğakent Çamlık Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19525",
+      "parsel": "3"
+    }
+  ]
 }
