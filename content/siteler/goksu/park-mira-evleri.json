@@ -2,5 +2,16 @@
   "isim": "Park Mira Evleri",
   "slug": "park-mira-evleri",
   "mahalleSlug": "goksu",
-  "aciklama": "Park Mira Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0012026,
+    "lng": 32.6476608
+  },
+  "sinirGeoJSON": "siteler/goksu/park-mira-evleri-boundary.geojson",
+  "aciklama": "Park Mira Evleri, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63396",
+      "parsel": "4"
+    }
+  ]
 }

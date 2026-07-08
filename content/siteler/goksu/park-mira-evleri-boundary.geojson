@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Park Mira Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63396/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64692,
+      40.00163
+     ],
+     [
+      32.64669,
+      40.00124
+     ],
+     [
+      32.6478,
+      40.0011
+     ],
+     [
+      32.64784,
+      40.00118
+     ],
+     [
+      32.64789,
+      40.00127
+     ],
+     [
+      32.64793,
+      40.00135
+     ],
+     [
+      32.64797,
+      40.00143
+     ],
+     [
+      32.648,
+      40.0015
+     ],
+     [
+      32.64692,
+      40.00163
+     ]
+    ]
+   ]
+  ]
+ }
+}
