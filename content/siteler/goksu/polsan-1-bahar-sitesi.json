@@ -2,5 +2,16 @@
   "isim": "Polsan 1 Bahar Sitesi",
   "slug": "polsan-1-bahar-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Polsan 1 Bahar Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9779245,
+    "lng": 32.6452943
+  },
+  "sinirGeoJSON": "siteler/goksu/polsan-1-bahar-sitesi-boundary.geojson",
+  "aciklama": "Polsan 1 Bahar Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46481",
+      "parsel": "1"
+    }
+  ]
 }

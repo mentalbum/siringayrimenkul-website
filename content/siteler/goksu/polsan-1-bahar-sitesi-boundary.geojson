@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Polsan 1 Bahar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46481/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64338,
+      39.9776
+     ],
+     [
+      32.64425,
+      39.97763
+     ],
+     [
+      32.64548,
+      39.97764
+     ],
+     [
+      32.64545,
+      39.97895
+     ],
+     [
+      32.64361,
+      39.97893
+     ],
+     [
+      32.64335,
+      39.97878
+     ],
+     [
+      32.64338,
+      39.9776
+     ]
+    ]
+   ]
+  ]
+ }
+}
