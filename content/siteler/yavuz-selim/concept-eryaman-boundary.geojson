@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Concept Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46445/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61776,
+      40.00212
+     ],
+     [
+      32.61723,
+      40.0026
+     ],
+     [
+      32.61704,
+      40.00262
+     ],
+     [
+      32.61644,
+      40.00225
+     ],
+     [
+      32.61708,
+      40.00165
+     ],
+     [
+      32.61776,
+      40.00212
+     ]
+    ]
+   ]
+  ]
+ }
+}
