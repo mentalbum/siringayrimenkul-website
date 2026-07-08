@@ -2,5 +2,16 @@
   "isim": "Elit Nar Çiçeği",
   "slug": "elit-nar-cicegi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Elit Nar Çiçeği, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9985893,
+    "lng": 32.618252
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/elit-nar-cicegi-boundary.geojson",
+  "aciklama": "Elit Nar Çiçeği, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46237",
+      "parsel": "1"
+    }
+  ]
 }
