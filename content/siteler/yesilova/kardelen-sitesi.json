@@ -2,5 +2,16 @@
   "isim": "Kardelen Sitesi",
   "slug": "kardelen-sitesi",
   "mahalleSlug": "yesilova",
-  "aciklama": "Kardelen Sitesi, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9673351,
+    "lng": 32.6062153
+  },
+  "sinirGeoJSON": "siteler/yesilova/kardelen-sitesi-boundary.geojson",
+  "aciklama": "Kardelen Sitesi, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47564",
+      "parsel": "7"
+    }
+  ]
 }

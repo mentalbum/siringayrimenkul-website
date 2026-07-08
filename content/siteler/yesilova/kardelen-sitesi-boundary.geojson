@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kardelen Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47564/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60665,
+      39.96743
+     ],
+     [
+      32.60606,
+      39.96754
+     ],
+     [
+      32.60597,
+      39.96723
+     ],
+     [
+      32.60656,
+      39.96713
+     ],
+     [
+      32.60665,
+      39.96743
+     ]
+    ]
+   ]
+  ]
+ }
+}
