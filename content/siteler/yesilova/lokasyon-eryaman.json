@@ -2,5 +2,16 @@
   "isim": "Lokasyon Eryaman",
   "slug": "lokasyon-eryaman",
   "mahalleSlug": "yesilova",
-  "aciklama": "Lokasyon Eryaman, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9636173,
+    "lng": 32.606895
+  },
+  "sinirGeoJSON": "siteler/yesilova/lokasyon-eryaman-boundary.geojson",
+  "aciklama": "Lokasyon Eryaman, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47546",
+      "parsel": "1"
+    }
+  ]
 }
