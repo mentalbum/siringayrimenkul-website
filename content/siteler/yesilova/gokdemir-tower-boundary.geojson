@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gökdemir Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46395/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61755,
+      39.96865
+     ],
+     [
+      32.61709,
+      39.96869
+     ],
+     [
+      32.61708,
+      39.96796
+     ],
+     [
+      32.61755,
+      39.96802
+     ],
+     [
+      32.61845,
+      39.96814
+     ],
+     [
+      32.61846,
+      39.9686
+     ],
+     [
+      32.6182,
+      39.96859
+     ],
+     [
+      32.61755,
+      39.96865
+     ]
+    ]
+   ]
+  ]
+ }
+}
