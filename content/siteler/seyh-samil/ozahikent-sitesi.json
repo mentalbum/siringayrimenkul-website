@@ -1,6 +1,10 @@
 {
-  "isim": "Özahikent Sitesi",
+  "isim": "Özahikent",
   "slug": "ozahikent-sitesi",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Özahikent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0004,
+    "lng": 32.6256
+  },
+  "aciklama": "Özahikent, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
 }
