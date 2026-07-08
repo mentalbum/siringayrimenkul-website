@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Polsan 1 Gözde Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46478/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64135,
+      39.97906
+     ],
+     [
+      32.64136,
+      39.97903
+     ],
+     [
+      32.6414,
+      39.979
+     ],
+     [
+      32.64252,
+      39.97901
+     ],
+     [
+      32.64259,
+      39.97903
+     ],
+     [
+      32.64263,
+      39.97905
+     ],
+     [
+      32.64328,
+      39.97941
+     ],
+     [
+      32.64329,
+      39.98031
+     ],
+     [
+      32.64174,
+      39.98035
+     ],
+     [
+      32.64172,
+      39.98033
+     ],
+     [
+      32.64135,
+      39.97906
+     ]
+    ]
+   ]
+  ]
+ }
+}
