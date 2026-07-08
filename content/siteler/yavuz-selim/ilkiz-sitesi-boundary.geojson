@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İlkiz Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19526/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61645,
+      39.99581
+     ],
+     [
+      32.61583,
+      39.99624
+     ],
+     [
+      32.61541,
+      39.9959
+     ],
+     [
+      32.61536,
+      39.99586
+     ],
+     [
+      32.61531,
+      39.99582
+     ],
+     [
+      32.61526,
+      39.99578
+     ],
+     [
+      32.61521,
+      39.99575
+     ],
+     [
+      32.61577,
+      39.99524
+     ],
+     [
+      32.61645,
+      39.99581
+     ]
+    ]
+   ]
+  ]
+ }
+}

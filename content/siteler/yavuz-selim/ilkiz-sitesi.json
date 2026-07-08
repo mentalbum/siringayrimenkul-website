@@ -2,5 +2,16 @@
   "isim": "İlkiz Sitesi",
   "slug": "ilkiz-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "İlkiz Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9958568,
+    "lng": 32.615911
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/ilkiz-sitesi-boundary.geojson",
+  "aciklama": "İlkiz Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19526",
+      "parsel": "2"
+    }
+  ]
 }
