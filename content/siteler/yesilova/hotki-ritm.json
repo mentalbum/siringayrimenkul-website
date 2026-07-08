@@ -2,5 +2,16 @@
   "isim": "Hotki Ritm",
   "slug": "hotki-ritm",
   "mahalleSlug": "yesilova",
-  "aciklama": "Hotki Ritm, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9624333,
+    "lng": 32.6090161
+  },
+  "sinirGeoJSON": "siteler/yesilova/hotki-ritm-boundary.geojson",
+  "aciklama": "Hotki Ritm, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47549",
+      "parsel": "1"
+    }
+  ]
 }

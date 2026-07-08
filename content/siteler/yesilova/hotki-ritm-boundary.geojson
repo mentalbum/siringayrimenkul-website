@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hotki Ritm",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47549/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60887,
+      39.96266
+     ],
+     [
+      32.60877,
+      39.96231
+     ],
+     [
+      32.60948,
+      39.96218
+     ],
+     [
+      32.60958,
+      39.96254
+     ],
+     [
+      32.60887,
+      39.96266
+     ]
+    ]
+   ]
+  ]
+ }
+}
