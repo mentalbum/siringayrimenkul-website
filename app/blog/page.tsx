@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { BlogCard } from "@/components/blog/blog-card";
+import { Reveal } from "@/components/ui/reveal";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -44,8 +45,10 @@ export default function BlogPage() {
 
       {posts.length > 0 ? (
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
+          {posts.map((post, i) => (
+            <Reveal key={post.slug} delay={(i % 3) * 70} className="h-full">
+              <BlogCard post={post} />
+            </Reveal>
           ))}
         </div>
       ) : (

@@ -15,6 +15,7 @@ import { HeroSearch } from "@/components/home/hero-search";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { BlogCard } from "@/components/blog/blog-card";
 import { FaqSection } from "@/components/ui/faq-section";
+import { Reveal } from "@/components/ui/reveal";
 import {
   BuildingIcon,
   CheckBadgeIcon,
@@ -62,6 +63,11 @@ export default function HomePage() {
     .filter((grup) => grup.siteler.length > 0);
   const toplamSite = siteGruplari.reduce((sum, grup) => sum + grup.siteler.length, 0);
   const mahalleSayisi = siteGruplari.length;
+  // Tapu (TKGM) sınırıyla haritalanmış site sayısı — ofisin somut farkı.
+  const haritaliSite = siteGruplari.reduce(
+    (sum, grup) => sum + grup.siteler.filter((site) => site.sinirGeoJSON).length,
+    0
+  );
 
   return (
     <div>
@@ -70,7 +76,7 @@ export default function HomePage() {
           aria-hidden="true"
           viewBox="0 0 800 500"
           preserveAspectRatio="xMidYMid slice"
-          className="absolute inset-0 h-full w-full"
+          className="animate-drift absolute inset-0 h-full w-full"
         >
           <g transform="rotate(-18 600 250)">
             {Array.from({ length: 7 }).map((_, i) => {
@@ -90,27 +96,53 @@ export default function HomePage() {
               );
             })}
           </g>
-          <circle cx={600} cy={250} r={16} fill="#FBCA12" fillOpacity={0.22} />
+          <circle
+            cx={600}
+            cy={250}
+            r={16}
+            fill="#FBCA12"
+            fillOpacity={0.22}
+            className="animate-pulse-soft"
+          />
           <circle cx={600} cy={250} r={5} fill="#FBCA12" />
         </svg>
 
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/55" />
 
-        <div className="relative mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+        <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-14 sm:pt-28">
           <div className="max-w-2xl">
-            <p className="text-sm font-semibold uppercase tracking-wide text-gold">
+            <p className="animate-fade-up text-sm font-semibold uppercase tracking-wide text-gold">
               Şirin Gayrimenkul · Etimesgut
             </p>
-            <h1 className="mt-3 text-4xl leading-tight text-white sm:text-5xl">
+            <h1 className="animate-fade-up mt-3 text-4xl leading-tight text-white [animation-delay:0.07s] sm:text-5xl">
               Eryaman&apos;ın Emlakçısı
             </h1>
-            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
-              Eryaman&apos;da emlağın adresi: satılık ve kiralık için {mahalleSayisi} mahalleyi,
-              site site biliyoruz. Sitenizi arayın; satmak veya kiraya vermek istediğiniz evinizi
-              birlikte değerlendirelim; fiyatla birlikte satış yol haritanız da hazır olsun.
+            <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
+              Satmak veya kiraya vermek istediğiniz eviniz mi var? Fiyatı, {mahalleSayisi}{" "}
+              mahalleyi site site tanıyan yerel emlakçınızla birlikte belirleyin — fiyatla
+              birlikte satış yol haritanız da hazır olsun.
             </p>
 
-            <div className="mt-8 max-w-xl">
+            <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">
+              <CtaButton href="/ev-degerleme" variant="primary" className="px-8 text-base">
+                Evinizi Değerlendirelim
+              </CtaButton>
+              <a
+                href={`tel:${siteConfig.phoneTel}`}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors duration-200 hover:text-gold"
+              >
+                <PhoneIcon className="h-4 w-4" />
+                {siteConfig.phoneDisplay}
+              </a>
+            </div>
+            <div className="animate-fade-up mt-5 [animation-delay:0.28s]">
+              <ReviewBadge variant="dark" />
+            </div>
+
+            <div className="animate-fade-up mt-10 max-w-xl [animation-delay:0.35s]">
+              <p className="mb-2 text-xs font-medium uppercase tracking-wide text-white/55">
+                Sitenizi mi merak ediyorsunuz?
+              </p>
               <HeroSearch />
               <p className="mt-3 text-xs text-white/55">
                 {toplamSite}+ site/rezidans · {mahalleSayisi} mahalle arasından bulun · veya{" "}
@@ -119,20 +151,33 @@ export default function HomePage() {
                 </Link>
               </p>
             </div>
-
-            <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
-              <CtaButton href="/ev-degerleme" variant="primary">
-                Evinizi Değerlendirelim
-              </CtaButton>
-              <ReviewBadge variant="dark" />
-            </div>
           </div>
+
+          <dl className="animate-fade-up mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7 [animation-delay:0.42s]">
+            <div>
+              <dd className="text-2xl font-semibold tabular-nums text-gold">{toplamSite}+</dd>
+              <dt className="mt-0.5 text-xs font-medium text-white/60">Site &amp; Rezidans</dt>
+            </div>
+            <div>
+              <dd className="text-2xl font-semibold tabular-nums text-gold">{mahalleSayisi}</dd>
+              <dt className="mt-0.5 text-xs font-medium text-white/60">Mahalle Rehberi</dt>
+            </div>
+            <div>
+              <dd className="text-2xl font-semibold tabular-nums text-gold">{haritaliSite}+</dd>
+              <dt className="mt-0.5 text-xs font-medium text-white/60">
+                Tapu Sınırıyla Haritalı Site
+              </dt>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl">Eryaman&apos;da Yerel Emlak Ofisiniz</h2>
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <Reveal className="max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+            Ofisimiz
+          </p>
+          <h2 className="mt-2 text-2xl sm:text-3xl">Eryaman&apos;da Yerel Emlak Ofisiniz</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
             Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da satılık ve
             kiralık konut danışmanlığı yapıyor,{" "}
@@ -164,69 +209,83 @@ export default function HomePage() {
                 {index < mahalleler.length - 2 ? ", " : index === mahalleler.length - 2 ? " ve " : ""}
               </span>
             ))}{" "}
-            mahallelerindeki 580&apos;den fazla site ve rezidansı tek tek tanıyoruz.
+            mahallelerindeki {toplamSite}&apos;den fazla site ve rezidansı tek tek tanıyoruz.
           </p>
-        </div>
+        </Reveal>
       </section>
 
-      <section className="bg-surface-muted py-16">
+      <section className="bg-surface-muted py-16 sm:py-20">
         <div className="mx-auto max-w-6xl px-4 sm:px-6">
-          <h2 className="sr-only">Neden Şirin Gayrimenkul?</h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ozellikler.map((ozellik) => (
-              <div
-                key={ozellik.baslik}
-                className="rounded-2xl border border-border bg-surface p-5"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15">
-                  <ozellik.icon className="h-6 w-6 text-gold-dark" />
+          <Reveal>
+            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+              Neden Biz
+            </p>
+            <h2 className="mt-2 text-2xl sm:text-3xl">Neden Şirin Gayrimenkul?</h2>
+          </Reveal>
+          <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {ozellikler.map((ozellik, i) => (
+              <Reveal key={ozellik.baslik} delay={i * 70} className="h-full">
+                <div className="h-full rounded-2xl border border-border bg-surface p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-gold hover:shadow-xl hover:shadow-navy/10 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15">
+                    <ozellik.icon className="h-6 w-6 text-gold-dark" />
+                  </div>
+                  <h3 className="mt-4 text-base">{ozellik.baslik}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-body">{ozellik.aciklama}</p>
                 </div>
-                <h3 className="mt-4 text-base">{ozellik.baslik}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-body">{ozellik.aciklama}</p>
-              </div>
+              </Reveal>
             ))}
           </div>
         </div>
       </section>
 
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-              Bölge Rehberi
-            </p>
-            <h2 className="mt-2 text-2xl sm:text-3xl">Öne Çıkan Mahalleler</h2>
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <Reveal>
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+                Bölge Rehberi
+              </p>
+              <h2 className="mt-2 text-2xl sm:text-3xl">Öne Çıkan Mahalleler</h2>
+            </div>
+            <CtaButton href="/mahalleler" variant="ghost" className="px-0">
+              Tüm Mahalleler →
+            </CtaButton>
           </div>
-          <CtaButton href="/mahalleler" variant="ghost" className="px-0">
-            Tüm Mahalleler →
-          </CtaButton>
-        </div>
+        </Reveal>
         <div className="mt-7 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {oneCikanMahalleler.map((mahalle) => (
-            <MahalleCard key={mahalle.slug} mahalle={mahalle} />
+          {oneCikanMahalleler.map((mahalle, i) => (
+            <Reveal key={mahalle.slug} delay={i * 70} className="h-full">
+              <MahalleCard mahalle={mahalle} />
+            </Reveal>
           ))}
         </div>
       </section>
 
-      <ReviewQuotes />
+      <Reveal>
+        <ReviewQuotes />
+      </Reveal>
 
       {sonYazilar.length > 0 && (
-        <section className="py-16">
+        <section className="py-16 sm:py-20">
           <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <div className="flex flex-wrap items-end justify-between gap-4">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-                  Blog
-                </p>
-                <h2 className="mt-2 text-2xl sm:text-3xl">Son Yazılar</h2>
+            <Reveal>
+              <div className="flex flex-wrap items-end justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+                    Blog
+                  </p>
+                  <h2 className="mt-2 text-2xl sm:text-3xl">Son Yazılar</h2>
+                </div>
+                <CtaButton href="/blog" variant="ghost" className="px-0">
+                  Tüm Yazılar →
+                </CtaButton>
               </div>
-              <CtaButton href="/blog" variant="ghost" className="px-0">
-                Tüm Yazılar →
-              </CtaButton>
-            </div>
+            </Reveal>
             <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {sonYazilar.map((post) => (
-                <BlogCard key={post.slug} post={post} />
+              {sonYazilar.map((post, i) => (
+                <Reveal key={post.slug} delay={i * 70} className="h-full">
+                  <BlogCard post={post} />
+                </Reveal>
               ))}
             </div>
           </div>
@@ -234,7 +293,8 @@ export default function HomePage() {
       )}
 
       <section className="mx-auto max-w-3xl px-4 pb-4 pt-8 sm:px-6">
-        <FaqSection
+        <Reveal>
+          <FaqSection
           title="Sık Sorulan Sorular"
           className="mt-0"
           items={[
@@ -260,22 +320,25 @@ export default function HomePage() {
               cevap: `Eryaman genelinde 750'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
             },
           ]}
-        />
+          />
+        </Reveal>
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-        <CtaBanner
-          size="large"
-          baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
-          aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
-        >
-          <CtaButton href="/iletisim" variant="primary">
-            Bize Ulaşın
-          </CtaButton>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
-            İlanlarımı Gör
-          </CtaButton>
-        </CtaBanner>
+        <Reveal>
+          <CtaBanner
+            size="large"
+            baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
+            aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
+          >
+            <CtaButton href="/iletisim" variant="primary">
+              Bize Ulaşın
+            </CtaButton>
+            <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
+              İlanlarımı Gör
+            </CtaButton>
+          </CtaBanner>
+        </Reveal>
       </section>
     </div>
   );

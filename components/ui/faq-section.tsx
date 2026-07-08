@@ -30,13 +30,13 @@ export function FaqSection({
       <div className="mt-5 divide-y divide-border rounded-2xl border border-border bg-surface">
         {items.map((item) => (
           <details key={item.soru} className="group p-5">
-            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-navy [&::-webkit-details-marker]:hidden">
+            <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-navy transition-colors duration-200 hover:text-gold-dark [&::-webkit-details-marker]:hidden">
               {item.soru}
-              <span className="shrink-0 text-lg leading-none text-gold-dark transition-transform group-open:rotate-45">
+              <span className="shrink-0 text-lg leading-none text-gold-dark transition-transform duration-300 ease-out group-open:rotate-45">
                 +
               </span>
             </summary>
-            <p className="mt-3 text-sm leading-relaxed text-body">{item.cevap}</p>
+            <p className="faq-cevap mt-3 text-sm leading-relaxed text-body">{item.cevap}</p>
           </details>
         ))}
       </div>

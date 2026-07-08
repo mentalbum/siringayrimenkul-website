@@ -22,6 +22,7 @@ import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { SiteCard } from "@/components/site/site-card";
+import { Reveal } from "@/components/ui/reveal";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
@@ -206,24 +207,24 @@ export default async function MahallePage({ params }: Props) {
       </header>
 
       <dl className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-4">
-        <div className="rounded-2xl border border-border bg-surface p-4">
+        <div className="rounded-2xl border border-border bg-surface p-4 transition-shadow duration-300 hover:shadow-md hover:shadow-navy/5">
           <dd className="text-2xl font-semibold tabular-nums text-navy">{siteler.length}</dd>
           <dt className="mt-1 text-xs font-medium text-muted">Site &amp; Rezidans</dt>
         </div>
         {adalar.length > 0 && (
-          <div className="rounded-2xl border border-border bg-surface p-4">
+          <div className="rounded-2xl border border-border bg-surface p-4 transition-shadow duration-300 hover:shadow-md hover:shadow-navy/5">
             <dd className="text-2xl font-semibold tabular-nums text-navy">{adalar.length}</dd>
             <dt className="mt-1 text-xs font-medium text-muted">Kayıtlı Ada / Parsel</dt>
           </div>
         )}
         {etaplar.length > 0 && (
-          <div className="rounded-2xl border border-border bg-surface p-4">
+          <div className="rounded-2xl border border-border bg-surface p-4 transition-shadow duration-300 hover:shadow-md hover:shadow-navy/5">
             <dd className="text-2xl font-semibold tabular-nums text-navy">{etapEtiketi}</dd>
             <dt className="mt-1 text-xs font-medium text-muted">Etap</dt>
           </div>
         )}
         {siteler.length > 0 && haritaliSayisi === siteler.length && (
-          <div className="rounded-2xl border border-gold bg-surface p-4">
+          <div className="rounded-2xl border border-gold bg-surface p-4 transition-shadow duration-300 hover:shadow-md hover:shadow-gold/15">
             <dd className="text-2xl font-semibold tabular-nums text-navy">
               {haritaliSayisi}/{siteler.length}
             </dd>
@@ -276,8 +277,10 @@ export default async function MahallePage({ params }: Props) {
             : "Bu mahalledeki siteler yakında eklenecek."}
         </p>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {siteler.map((site) => (
-            <SiteCard key={site.slug} site={site} />
+          {siteler.map((site, i) => (
+            <Reveal key={site.slug} delay={(i % 3) * 60} className="h-full">
+              <SiteCard site={site} />
+            </Reveal>
           ))}
         </div>
       </section>

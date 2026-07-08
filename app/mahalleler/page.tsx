@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllMahalleler, getMahalleBoundary } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
+import { Reveal } from "@/components/ui/reveal";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
@@ -65,8 +66,10 @@ export default function MahallelerPage() {
       <section className="mt-12">
         <h2 className="text-xl">Eryaman&apos;ın 11 Mahallesi</h2>
         <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {eryamanMahalleleri.map((mahalle) => (
-            <MahalleCard key={mahalle.slug} mahalle={mahalle} />
+          {eryamanMahalleleri.map((mahalle, i) => (
+            <Reveal key={mahalle.slug} delay={(i % 3) * 70} className="h-full">
+              <MahalleCard mahalle={mahalle} />
+            </Reveal>
           ))}
         </div>
       </section>
@@ -83,8 +86,10 @@ export default function MahallelerPage() {
             gördüğünüz bölge burasıdır.
           </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {yenimahalleMahalleleri.map((mahalle) => (
-              <MahalleCard key={mahalle.slug} mahalle={mahalle} />
+            {yenimahalleMahalleleri.map((mahalle, i) => (
+              <Reveal key={mahalle.slug} delay={(i % 3) * 70} className="h-full">
+                <MahalleCard mahalle={mahalle} />
+              </Reveal>
             ))}
           </div>
         </section>

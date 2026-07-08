@@ -144,6 +144,10 @@ export default async function RootLayout({
   return (
     <html lang="tr" className={`${poppins.variable} ${inter.variable} h-full`}>
       <body className="flex min-h-full flex-col antialiased">
+        {/* Scroll-reveal no-JS güvenliği: JS çalışmazsa .reveal içerik görünür kalır. */}
+        <noscript>
+          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+        </noscript>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

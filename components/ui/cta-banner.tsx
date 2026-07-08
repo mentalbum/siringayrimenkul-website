@@ -29,7 +29,7 @@ export function CtaBanner({
         aria-hidden="true"
         viewBox="0 0 600 240"
         preserveAspectRatio="xMaxYMid slice"
-        className="pointer-events-none absolute inset-0 h-full w-full"
+        className="animate-drift pointer-events-none absolute inset-0 h-full w-full"
       >
         <g transform="rotate(-18 520 120)">
           {Array.from({ length: 5 }).map((_, i) => {

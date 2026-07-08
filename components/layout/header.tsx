@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
@@ -10,9 +10,22 @@ import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  // Sayfa kaydıkça header'a derinlik ver — içerik altından akarken yüzer hissi.
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-sm">
+    <header
+      className={`sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-sm transition-shadow duration-300 ${
+        scrolled ? "shadow-md shadow-navy/5" : ""
+      }`}
+    >
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
         <Link
           href="/"
@@ -68,7 +81,7 @@ export function Header() {
       </div>
 
       {open && (
-        <div className="border-t border-border bg-surface px-4 py-4 lg:hidden">
+        <div className="animate-fade-up border-t border-border bg-surface px-4 py-4 lg:hidden [animation-duration:0.25s]">
           <nav className="flex flex-col gap-1" aria-label="Mobil menü">
             {mainNav.map((item) => (
               <Link

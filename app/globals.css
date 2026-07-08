@@ -40,7 +40,12 @@
     font-family: var(--font-heading);
     color: var(--color-navy);
     font-weight: 600;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
   }
 
   a {
@@ -50,6 +55,107 @@
   ::selection {
     background: var(--color-gold);
     color: var(--color-navy);
+  }
+}
+
+/* ---------------------------------------------------------------------------
+ * Hareket temeli — "akıcı" tema katmanı.
+ * Tümü transform/opacity (compositor-dostu); prefers-reduced-motion'da kapalı.
+ * ------------------------------------------------------------------------- */
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Hero/CTA topografik motifinin çok yavaş salınımı — fark edilir ama yormaz. */
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-14px, 9px);
+  }
+}
+
+/* Halka merkezindeki altın noktanın nefes alması. */
+@keyframes pulse-soft {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+/* Saf CSS giriş animasyonu (hero) — JS beklemez, LCP'yi geciktirmez.
+ * Kademe için inline `animation-delay` kullanılır; `both` ile gecikme
+ * sırasında başlangıç karesinde (görünmez) bekler. */
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+.animate-drift {
+  animation: drift 26s ease-in-out infinite;
+}
+
+.animate-pulse-soft {
+  animation: pulse-soft 5s ease-in-out infinite;
+}
+
+/* Scroll-reveal — components/ui/reveal.tsx görünür olunca .reveal-visible ekler.
+ * no-JS güvenliği: app/layout.tsx'teki <noscript> stili .reveal'ı görünür kılar. */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition:
+    opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+}
+
+.reveal-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* FAQ: <details> açılınca cevabın yumuşak girişi. */
+details[open] > .faq-cevap {
+  animation: fade-up 0.35s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .animate-fade-up,
+  .animate-drift,
+  .animate-pulse-soft {
+    animation: none;
+  }
+
+  details[open] > .faq-cevap {
+    animation: none;
   }
 }
 

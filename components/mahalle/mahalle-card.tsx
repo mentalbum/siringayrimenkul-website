@@ -8,7 +8,7 @@ export function MahalleCard({ mahalle }: { mahalle: Mahalle }) {
   return (
     <Link
       href={`/mahalleler/${mahalle.slug}`}
-      className="group flex cursor-pointer flex-col gap-3 rounded-2xl border border-border bg-surface p-5 transition duration-200 hover:-translate-y-0.5 hover:border-gold hover:shadow-lg hover:shadow-navy/5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2"
+      className="group flex h-full cursor-pointer flex-col gap-3 rounded-2xl border border-border bg-surface p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-gold hover:shadow-xl hover:shadow-navy/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold/50 focus-visible:ring-offset-2 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
     >
       <div className="flex items-start justify-between gap-2">
         <h3 className="text-lg leading-snug">{mahalle.isim}</h3>
@@ -30,9 +30,9 @@ export function MahalleCard({ mahalle }: { mahalle: Mahalle }) {
         )}
       </p>
       <p className="text-sm leading-relaxed text-body">{mahalle.kisaAciklama}</p>
-      <span className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-navy group-hover:text-gold-dark">
+      <span className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-navy transition-colors duration-200 group-hover:text-gold-dark">
         Mahalleyi İncele
-        <ArrowRightIcon className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
+        <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />
       </span>
     </Link>
   );
