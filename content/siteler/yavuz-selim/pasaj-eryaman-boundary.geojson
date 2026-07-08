@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Pasaj Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46443/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61737,
+      40.00393
+     ],
+     [
+      32.61724,
+      40.00393
+     ],
+     [
+      32.61653,
+      40.00348
+     ],
+     [
+      32.61715,
+      40.00295
+     ],
+     [
+      32.61778,
+      40.003
+     ],
+     [
+      32.61817,
+      40.00328
+     ],
+     [
+      32.61737,
+      40.00393
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Pasaj Eryaman",
   "slug": "pasaj-eryaman",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Pasaj Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0034128,
+    "lng": 32.61772
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/pasaj-eryaman-boundary.geojson",
+  "aciklama": "Pasaj Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46443",
+      "parsel": "1"
+    }
+  ]
 }
