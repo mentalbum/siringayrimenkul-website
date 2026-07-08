@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Koçaklar Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47540/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60859,
+      39.96788
+     ],
+     [
+      32.60845,
+      39.96742
+     ],
+     [
+      32.6084,
+      39.96722
+     ],
+     [
+      32.60885,
+      39.96714
+     ],
+     [
+      32.60889,
+      39.96728
+     ],
+     [
+      32.60905,
+      39.9678
+     ],
+     [
+      32.60859,
+      39.96788
+     ]
+    ]
+   ]
+  ]
+ }
+}
