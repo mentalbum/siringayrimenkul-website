@@ -49,7 +49,7 @@ export default function MahallelerPage() {
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
-          metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 500&apos;den fazla
+          metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 750&apos;den fazla
           site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">

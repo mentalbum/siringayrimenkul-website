@@ -257,7 +257,7 @@ export default function HomePage() {
             },
             {
               soru: "Eryaman'da hangi siteleri tanıyorsunuz?",
-              cevap: `Eryaman genelinde 500'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
+              cevap: `Eryaman genelinde 750'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
             },
           ]}
         />
