@@ -2,5 +2,16 @@
   "isim": "Gölkent 1 Sitesi",
   "slug": "golkent-1-sitesi",
   "mahalleSlug": "goksu",
-  "aciklama": "Gölkent 1 Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9935185,
+    "lng": 32.6430286
+  },
+  "sinirGeoJSON": "siteler/goksu/golkent-1-sitesi-boundary.geojson",
+  "aciklama": "Gölkent 1 Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46455",
+      "parsel": "1"
+    }
+  ]
 }
