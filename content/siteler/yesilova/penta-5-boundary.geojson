@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Penta 5",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47549/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61042,
+      39.96196
+     ],
+     [
+      32.6104,
+      39.96207
+     ],
+     [
+      32.61039,
+      39.96218
+     ],
+     [
+      32.61038,
+      39.96229
+     ],
+     [
+      32.61037,
+      39.9624
+     ],
+     [
+      32.60958,
+      39.96254
+     ],
+     [
+      32.60948,
+      39.96218
+     ],
+     [
+      32.60943,
+      39.96201
+     ],
+     [
+      32.61045,
+      39.96183
+     ],
+     [
+      32.61044,
+      39.96185
+     ],
+     [
+      32.61042,
+      39.96196
+     ]
+    ]
+   ]
+  ]
+ }
+}
