@@ -2,5 +2,16 @@
   "isim": "Green Place Residence",
   "slug": "green-place-residence",
   "mahalleSlug": "yesilova",
-  "aciklama": "Green Place Residence, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.963153,
+    "lng": 32.6083946
+  },
+  "sinirGeoJSON": "siteler/yesilova/green-place-residence-boundary.geojson",
+  "aciklama": "Green Place Residence, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47546",
+      "parsel": "3"
+    }
+  ]
 }

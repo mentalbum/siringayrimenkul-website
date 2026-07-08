@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Green Place Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47546/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60838,
+      39.9639
+     ],
+     [
+      32.60813,
+      39.96304
+     ],
+     [
+      32.60872,
+      39.96294
+     ],
+     [
+      32.60897,
+      39.9638
+     ],
+     [
+      32.60838,
+      39.9639
+     ]
+    ]
+   ]
+  ]
+ }
+}
