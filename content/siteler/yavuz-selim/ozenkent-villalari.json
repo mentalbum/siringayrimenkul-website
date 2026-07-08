@@ -2,5 +2,16 @@
   "isim": "Özenkent Villaları",
   "slug": "ozenkent-villalari",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Özenkent Villaları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9950862,
+    "lng": 32.6140412
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/ozenkent-villalari-boundary.geojson",
+  "aciklama": "Özenkent Villaları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19527",
+      "parsel": "1"
+    }
+  ]
 }

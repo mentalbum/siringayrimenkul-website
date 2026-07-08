@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Özenkent Villaları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19527/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61418,
+      39.99536
+     ],
+     [
+      32.61382,
+      39.99536
+     ],
+     [
+      32.61383,
+      39.99471
+     ],
+     [
+      32.6144,
+      39.99471
+     ],
+     [
+      32.61447,
+      39.99472
+     ],
+     [
+      32.61453,
+      39.99472
+     ],
+     [
+      32.61459,
+      39.99473
+     ],
+     [
+      32.61466,
+      39.99474
+     ],
+     [
+      32.61418,
+      39.99536
+     ]
+    ]
+   ]
+  ]
+ }
+}
