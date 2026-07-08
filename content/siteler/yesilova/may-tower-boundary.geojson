@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "May Tower",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47538/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60996,
+      39.96716
+     ],
+     [
+      32.60998,
+      39.96725
+     ],
+     [
+      32.60989,
+      39.96765
+     ],
+     [
+      32.60912,
+      39.96779
+     ],
+     [
+      32.60899,
+      39.96733
+     ],
+     [
+      32.60996,
+      39.96716
+     ]
+    ]
+   ]
+  ]
+ }
+}
