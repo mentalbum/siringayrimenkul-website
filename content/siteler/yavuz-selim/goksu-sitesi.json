@@ -2,5 +2,16 @@
   "isim": "Göksu Sitesi",
   "slug": "goksu-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Göksu Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9983333,
+    "lng": 32.6152778
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/goksu-sitesi-boundary.geojson",
+  "aciklama": "Göksu Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19524",
+      "parsel": "3"
+    }
+  ]
 }

@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksu Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19524/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61454,
+      39.99838
+     ],
+     [
+      32.61506,
+      39.99791
+     ],
+     [
+      32.61519,
+      39.99792
+     ],
+     [
+      32.6157,
+      39.99826
+     ],
+     [
+      32.61569,
+      39.99835
+     ],
+     [
+      32.6152,
+      39.9988
+     ],
+     [
+      32.61454,
+      39.99838
+     ]
+    ]
+   ]
+  ]
+ }
+}
