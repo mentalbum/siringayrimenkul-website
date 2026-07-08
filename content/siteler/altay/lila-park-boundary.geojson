@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Lila Park",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46404/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63442,
+      39.96895
+     ],
+     [
+      32.63438,
+      39.96836
+     ],
+     [
+      32.63523,
+      39.96834
+     ],
+     [
+      32.63526,
+      39.96898
+     ],
+     [
+      32.63449,
+      39.969
+     ],
+     [
+      32.63442,
+      39.96895
+     ]
+    ]
+   ]
+  ]
+ }
+}
