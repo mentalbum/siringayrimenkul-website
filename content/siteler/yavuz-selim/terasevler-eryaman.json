@@ -2,5 +2,16 @@
   "isim": "Terasevler Eryaman",
   "slug": "terasevler-eryaman",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Terasevler Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002373,
+    "lng": 32.6116434
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/terasevler-eryaman-boundary.geojson",
+  "aciklama": "Terasevler Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46437",
+      "parsel": "1"
+    }
+  ]
 }
