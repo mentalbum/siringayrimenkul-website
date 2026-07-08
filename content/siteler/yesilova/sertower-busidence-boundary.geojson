@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sertower Busidence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46395/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61666,
+      39.96872
+     ],
+     [
+      32.61572,
+      39.9688
+     ],
+     [
+      32.61567,
+      39.96788
+     ],
+     [
+      32.61626,
+      39.96788
+     ],
+     [
+      32.61664,
+      39.9679
+     ],
+     [
+      32.61666,
+      39.96872
+     ]
+    ]
+   ]
+  ]
+ }
+}

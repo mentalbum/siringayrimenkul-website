@@ -2,5 +2,16 @@
   "isim": "Sertower Busidence",
   "slug": "sertower-busidence",
   "mahalleSlug": "yesilova",
-  "aciklama": "Sertower Busidence, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9682911,
+    "lng": 32.6164608
+  },
+  "sinirGeoJSON": "siteler/yesilova/sertower-busidence-boundary.geojson",
+  "aciklama": "Sertower Busidence, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46395",
+      "parsel": "1"
+    }
+  ]
 }
