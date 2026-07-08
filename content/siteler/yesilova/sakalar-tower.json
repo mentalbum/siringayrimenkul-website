@@ -2,5 +2,16 @@
   "isim": "Sakalar Tower",
   "slug": "sakalar-tower",
   "mahalleSlug": "yesilova",
-  "aciklama": "Sakalar Tower, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9602676,
+    "lng": 32.6105421
+  },
+  "sinirGeoJSON": "siteler/yesilova/sakalar-tower-boundary.geojson",
+  "aciklama": "Sakalar Tower, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "47549",
+      "parsel": "5"
+    }
+  ]
 }
