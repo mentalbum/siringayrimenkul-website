@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çağkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18673/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60344,
+      39.98154
+     ],
+     [
+      32.60229,
+      39.98154
+     ],
+     [
+      32.60267,
+      39.97994
+     ],
+     [
+      32.60373,
+      39.97994
+     ],
+     [
+      32.6036,
+      39.9805
+     ],
+     [
+      32.6036,
+      39.98057
+     ],
+     [
+      32.60344,
+      39.98057
+     ],
+     [
+      32.60344,
+      39.98154
+     ]
+    ]
+   ]
+  ]
+ }
+}

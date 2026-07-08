@@ -2,5 +2,16 @@
   "isim": "Çağkent Sitesi",
   "slug": "cagkent-sitesi",
   "mahalleSlug": "devlet",
-  "aciklama": "Çağkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9805731,
+    "lng": 32.6025254
+  },
+  "sinirGeoJSON": "siteler/devlet/cagkent-sitesi-boundary.geojson",
+  "aciklama": "Çağkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18673",
+      "parsel": "1"
+    }
+  ]
 }
