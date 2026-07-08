@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hekimler Ve Sağlıkçılar Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "16828/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65309,
+      39.99844
+     ],
+     [
+      32.65351,
+      39.99887
+     ],
+     [
+      32.65382,
+      39.99937
+     ],
+     [
+      32.65287,
+      39.99957
+     ],
+     [
+      32.6524,
+      39.99899
+     ],
+     [
+      32.65265,
+      39.99875
+     ],
+     [
+      32.65282,
+      39.99862
+     ],
+     [
+      32.65309,
+      39.99844
+     ]
+    ]
+   ]
+  ]
+ }
+}
