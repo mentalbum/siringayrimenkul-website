@@ -2,5 +2,16 @@
   "isim": "Sahibin Sitesi",
   "slug": "sahibin-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Sahibin Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9977856,
+    "lng": 32.6157671
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/sahibin-sitesi-boundary.geojson",
+  "aciklama": "Sahibin Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19525",
+      "parsel": "1"
+    }
+  ]
 }

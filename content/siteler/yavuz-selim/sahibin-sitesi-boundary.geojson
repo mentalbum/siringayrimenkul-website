@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Sahibin Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19525/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61609,
+      39.99764
+     ],
+     [
+      32.61627,
+      39.99782
+     ],
+     [
+      32.61589,
+      39.99817
+     ],
+     [
+      32.61584,
+      39.99817
+     ],
+     [
+      32.61532,
+      39.99782
+     ],
+     [
+      32.61529,
+      39.9977
+     ],
+     [
+      32.61579,
+      39.99725
+     ],
+     [
+      32.61593,
+      39.9974
+     ],
+     [
+      32.61609,
+      39.99764
+     ]
+    ]
+   ]
+  ]
+ }
+}
