@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Maybak Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46474/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65108,
+      39.9884
+     ],
+     [
+      32.65302,
+      39.98921
+     ],
+     [
+      32.65266,
+      39.98976
+     ],
+     [
+      32.65254,
+      39.9898
+     ],
+     [
+      32.65201,
+      39.98969
+     ],
+     [
+      32.6518,
+      39.98964
+     ],
+     [
+      32.65156,
+      39.98957
+     ],
+     [
+      32.65094,
+      39.98934
+     ],
+     [
+      32.65045,
+      39.9888
+     ],
+     [
+      32.65108,
+      39.9884
+     ]
+    ]
+   ]
+  ]
+ }
+}

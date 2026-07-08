@@ -2,5 +2,16 @@
   "isim": "Maybak Konutları",
   "slug": "maybak-konutlari",
   "mahalleSlug": "goksu",
-  "aciklama": "Maybak Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9892786,
+    "lng": 32.6529386
+  },
+  "sinirGeoJSON": "siteler/goksu/maybak-konutlari-boundary.geojson",
+  "aciklama": "Maybak Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46474",
+      "parsel": "1"
+    }
+  ]
 }
