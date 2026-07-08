@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Lowland Business",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47563/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60656,
+      39.96694
+     ],
+     [
+      32.60645,
+      39.96655
+     ],
+     [
+      32.60709,
+      39.96644
+     ],
+     [
+      32.60721,
+      39.96683
+     ],
+     [
+      32.60656,
+      39.96694
+     ]
+    ]
+   ]
+  ]
+ }
+}
