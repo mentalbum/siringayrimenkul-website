@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Green Hill",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47547/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60995,
+      39.96363
+     ],
+     [
+      32.60937,
+      39.96373
+     ],
+     [
+      32.60911,
+      39.96287
+     ],
+     [
+      32.6097,
+      39.96277
+     ],
+     [
+      32.60995,
+      39.96363
+     ]
+    ]
+   ]
+  ]
+ }
+}
