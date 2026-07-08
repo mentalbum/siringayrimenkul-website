@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Küçükevlerimiz Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19511/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60716,
+      39.99753
+     ],
+     [
+      32.60709,
+      39.99756
+     ],
+     [
+      32.60701,
+      39.99786
+     ],
+     [
+      32.60684,
+      39.99796
+     ],
+     [
+      32.60586,
+      39.99689
+     ],
+     [
+      32.6059,
+      39.99674
+     ],
+     [
+      32.60626,
+      39.99655
+     ],
+     [
+      32.60716,
+      39.99753
+     ]
+    ]
+   ]
+  ]
+ }
+}

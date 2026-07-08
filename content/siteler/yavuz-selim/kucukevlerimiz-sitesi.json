@@ -2,5 +2,16 @@
   "isim": "Küçükevlerimiz Sitesi",
   "slug": "kucukevlerimiz-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Küçükevlerimiz Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9970753,
+    "lng": 32.6062253
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/kucukevlerimiz-sitesi-boundary.geojson",
+  "aciklama": "Küçükevlerimiz Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "19511",
+      "parsel": "1"
+    }
+  ]
 }
