@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Meydan Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46483/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63796,
+      39.97893
+     ],
+     [
+      32.63788,
+      39.97889
+     ],
+     [
+      32.63768,
+      39.97806
+     ],
+     [
+      32.63937,
+      39.97788
+     ],
+     [
+      32.63948,
+      39.9779
+     ],
+     [
+      32.63981,
+      39.97809
+     ],
+     [
+      32.63988,
+      39.97817
+     ],
+     [
+      32.64005,
+      39.97871
+     ],
+     [
+      32.63796,
+      39.97893
+     ]
+    ]
+   ]
+  ]
+ }
+}

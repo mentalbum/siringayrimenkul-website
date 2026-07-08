@@ -2,5 +2,16 @@
   "isim": "Meydan Eryaman",
   "slug": "meydan-eryaman",
   "mahalleSlug": "goksu",
-  "aciklama": "Meydan Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9781031,
+    "lng": 32.6377422
+  },
+  "sinirGeoJSON": "siteler/goksu/meydan-eryaman-boundary.geojson",
+  "aciklama": "Meydan Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46483",
+      "parsel": "1"
+    }
+  ]
 }
