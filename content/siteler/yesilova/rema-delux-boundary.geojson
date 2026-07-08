@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Rema Delux",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47563/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6055,
+      39.96565
+     ],
+     [
+      32.60535,
+      39.96512
+     ],
+     [
+      32.60603,
+      39.965
+     ],
+     [
+      32.60619,
+      39.96553
+     ],
+     [
+      32.6055,
+      39.96565
+     ]
+    ]
+   ]
+  ]
+ }
+}
