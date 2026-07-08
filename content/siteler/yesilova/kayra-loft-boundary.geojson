@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kayra Loft",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47529/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61351,
+      39.96377
+     ],
+     [
+      32.61341,
+      39.96341
+     ],
+     [
+      32.61505,
+      39.96313
+     ],
+     [
+      32.61516,
+      39.96348
+     ],
+     [
+      32.61351,
+      39.96377
+     ]
+    ]
+   ]
+  ]
+ }
+}
