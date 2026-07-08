@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kardeşkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45820/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6085,
+      39.99991
+     ],
+     [
+      32.60987,
+      39.99993
+     ],
+     [
+      32.61042,
+      40.00003
+     ],
+     [
+      32.61041,
+      40.00026
+     ],
+     [
+      32.60847,
+      40.00023
+     ],
+     [
+      32.6085,
+      39.99991
+     ]
+    ]
+   ]
+  ]
+ }
+}

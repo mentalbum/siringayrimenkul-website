@@ -2,5 +2,16 @@
   "isim": "Kardeşkent Sitesi",
   "slug": "kardeskent-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Kardeşkent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.000103,
+    "lng": 32.6097269
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/kardeskent-sitesi-boundary.geojson",
+  "aciklama": "Kardeşkent Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45820",
+      "parsel": "1"
+    }
+  ]
 }
