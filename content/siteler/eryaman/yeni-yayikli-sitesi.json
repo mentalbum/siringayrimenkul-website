@@ -2,5 +2,16 @@
   "isim": "Yeni Yayıklı Sitesi",
   "slug": "yeni-yayikli-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Yeni Yayıklı Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.97345,
+    "lng": 32.621165
+  },
+  "sinirGeoJSON": "siteler/eryaman/yeni-yayikli-sitesi-boundary.geojson",
+  "aciklama": "Yeni Yayıklı Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46541",
+      "parsel": "1"
+    }
+  ]
 }
