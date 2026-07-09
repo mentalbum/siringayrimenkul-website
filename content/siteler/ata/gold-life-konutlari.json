@@ -2,5 +2,16 @@
   "isim": "Gold Life Konutları",
   "slug": "gold-life-konutlari",
   "mahalleSlug": "ata",
-  "aciklama": "Gold Life Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0020237,
+    "lng": 32.599186
+  },
+  "sinirGeoJSON": "siteler/ata/gold-life-konutlari-boundary.geojson",
+  "aciklama": "Gold Life Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44764",
+      "parsel": "2"
+    }
+  ]
 }
