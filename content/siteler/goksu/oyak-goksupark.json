@@ -7,11 +7,20 @@
     "lng": 32.652172
   },
   "sinirGeoJSON": "siteler/goksu/oyak-goksupark-boundary.geojson",
-  "aciklama": "Oyak Göksupark, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "OYAK Göksupark, Göksu Mahallesi'nde 5350. Cadde üzerinde, OYAK İnşaat tarafından geliştirilip 2020'de tamamlanan, Eryaman'ın en büyük konut projelerinden biri: resmi proje verilerine göre 15 blokta 1.876 konut, 7 ticari ünite, sosyal tesis ve 38.000 m²'lik peyzaj alanı. İlan pazarında 2+1'den 4+1'e uzanan daire tipleri görülüyor; üst katlar göl ve park manzarasıyla ayrıca prim yapıyor. Göksu Parkı'na doğrudan açılan konumu, kurumsal OYAK yapılaşması ve geniş sosyal donatısıyla site, hem oturum hem yatırım tarafında bölgenin en likit adreslerinden. Bu sitede satılık veya kiralık daireniz mi var? 1.876 konutluk bir sitede emsal çok, ama doğru emsal azdır — blok, kat ve manzara farkını bilen emlakçınızla fiyatı birlikte belirleyin.",
   "adalar": [
     {
       "no": "63357",
       "parsel": "2"
     }
-  ]
+  ],
+  "adres": "Göksu, 5350. Cadde No:4, Etimesgut/Ankara",
+  "ozellikler": [
+    "15 blokta 1.876 konut (OYAK İnşaat, teslim 2020)",
+    "7 ticari ünite + sosyal tesis",
+    "38.000 m² peyzaj alanı",
+    "Göksu Parkı'na doğrudan açılan konum",
+    "2+1 / 3+1 / 4+1 daire tipleri"
+  ],
+  "zenginlestirildi": "2026-07-09"
 }

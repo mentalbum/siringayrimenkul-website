@@ -7,11 +7,19 @@
     "lng": 32.6548375
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/arkadya-goksu-evleri-boundary.geojson",
-  "aciklama": "Arkadya Göksu Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Arkadya Göksu Evleri, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi üzerinde, Alpak Mühendislik tarafından geliştirilip Ağustos 2018'de teslim edilen 258 konutluk bir site. Daireler 98 ile 158 m² arasında 2+1, 3+1 ve 4+1 tiplerinde — yani kompakt aile dairesinden geniş plana uzanan dengeli bir karma. Site donatıları proje tanıtımlarında öne çıkan yanı: aquaparklı açık havuz, kapalı ısıtmalı çocuk havuzu, açık/kapalı çocuk oyun alanları ve peyzajlı yeşil alanlar. Göksu Gölü'ne yaklaşık 300 m, parka ve metro aksına yürüme mesafesi. Bu sitede satılık veya kiralık daireniz mi var? Tip çeşitliliği olan sitelerde doğru emsal seçimi fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46623",
       "parsel": "4"
     }
-  ]
+  ],
+  "adres": "Malazgirt 1071. Cadde No:49, Şehit Osman Avcı, Etimesgut/Ankara",
+  "ozellikler": [
+    "258 konut (Alpak Mühendislik, teslim 08/2018)",
+    "98–158 m² — 2+1, 3+1, 4+1 tipleri",
+    "Aquaparklı açık havuz + ısıtmalı kapalı çocuk havuzu",
+    "Göksu Gölü'ne ~300 m"
+  ],
+  "zenginlestirildi": "2026-07-09"
 }
