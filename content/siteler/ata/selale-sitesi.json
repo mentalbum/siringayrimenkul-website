@@ -2,5 +2,16 @@
   "isim": "Şelale Sitesi",
   "slug": "selale-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Şelale Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0081677,
+    "lng": 32.6234406
+  },
+  "sinirGeoJSON": "siteler/ata/selale-sitesi-boundary.geojson",
+  "aciklama": "Şelale Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46196",
+      "parsel": "4"
+    }
+  ]
 }
