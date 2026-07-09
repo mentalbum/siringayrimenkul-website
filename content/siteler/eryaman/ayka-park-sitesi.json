@@ -2,5 +2,16 @@
   "isim": "Ayka Park Sitesi",
   "slug": "ayka-park-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Ayka Park Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9694152,
+    "lng": 32.6228882
+  },
+  "sinirGeoJSON": "siteler/eryaman/ayka-park-sitesi-boundary.geojson",
+  "aciklama": "Ayka Park Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46385",
+      "parsel": "9"
+    }
+  ]
 }

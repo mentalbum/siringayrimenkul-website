@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Ayka Park Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46385/9"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62246,
+      39.96884
+     ],
+     [
+      32.62261,
+      39.96883
+     ],
+     [
+      32.62306,
+      39.9688
+     ],
+     [
+      32.62326,
+      39.96947
+     ],
+     [
+      32.62276,
+      39.96956
+     ],
+     [
+      32.62268,
+      39.96957
+     ],
+     [
+      32.62246,
+      39.96884
+     ]
+    ]
+   ]
+  ]
+ }
+}
