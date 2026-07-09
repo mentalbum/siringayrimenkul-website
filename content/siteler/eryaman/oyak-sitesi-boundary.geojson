@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Oyak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46527/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63356,
+      39.979
+     ],
+     [
+      32.63359,
+      39.9793
+     ],
+     [
+      32.63356,
+      39.97933
+     ],
+     [
+      32.63232,
+      39.97938
+     ],
+     [
+      32.63183,
+      39.97895
+     ],
+     [
+      32.63177,
+      39.97889
+     ],
+     [
+      32.6312,
+      39.97752
+     ],
+     [
+      32.63158,
+      39.97735
+     ],
+     [
+      32.63223,
+      39.97749
+     ],
+     [
+      32.63318,
+      39.97791
+     ],
+     [
+      32.63356,
+      39.979
+     ]
+    ]
+   ]
+  ]
+ }
+}

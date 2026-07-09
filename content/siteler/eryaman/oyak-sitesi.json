@@ -2,5 +2,16 @@
   "isim": "Oyak Sitesi",
   "slug": "oyak-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Oyak Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977665,
+    "lng": 32.631489
+  },
+  "sinirGeoJSON": "siteler/eryaman/oyak-sitesi-boundary.geojson",
+  "aciklama": "Oyak Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46527",
+      "parsel": "1"
+    }
+  ]
 }
