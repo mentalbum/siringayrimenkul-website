@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Mizan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46197/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62263,
+      40.00914
+     ],
+     [
+      32.62132,
+      40.00906
+     ],
+     [
+      32.62136,
+      40.00865
+     ],
+     [
+      32.62267,
+      40.00873
+     ],
+     [
+      32.62263,
+      40.00914
+     ]
+    ]
+   ]
+  ]
+ }
+}
