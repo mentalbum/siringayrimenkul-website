@@ -2,5 +2,16 @@
   "isim": "Panorama Life",
   "slug": "panorama-life",
   "mahalleSlug": "ata",
-  "aciklama": "Panorama Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9998195,
+    "lng": 32.5992904
+  },
+  "sinirGeoJSON": "siteler/ata/panorama-life-boundary.geojson",
+  "aciklama": "Panorama Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44775",
+      "parsel": "1"
+    }
+  ]
 }
