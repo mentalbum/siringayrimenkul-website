@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeşim Kent2 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18643/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60404,
+      39.98649
+     ],
+     [
+      32.60322,
+      39.98699
+     ],
+     [
+      32.60298,
+      39.98676
+     ],
+     [
+      32.60297,
+      39.98637
+     ],
+     [
+      32.60368,
+      39.98614
+     ],
+     [
+      32.60377,
+      39.98616
+     ],
+     [
+      32.60405,
+      39.98643
+     ],
+     [
+      32.60404,
+      39.98649
+     ]
+    ]
+   ]
+  ]
+ }
+}

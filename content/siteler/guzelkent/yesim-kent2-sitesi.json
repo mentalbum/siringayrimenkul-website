@@ -2,5 +2,16 @@
   "isim": "Yeşim Kent2 Sitesi",
   "slug": "yesim-kent2-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Yeşim Kent2 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9865165,
+    "lng": 32.6035451
+  },
+  "sinirGeoJSON": "siteler/guzelkent/yesim-kent2-sitesi-boundary.geojson",
+  "aciklama": "Yeşim Kent2 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18643",
+      "parsel": "1"
+    }
+  ]
 }
