@@ -2,5 +2,16 @@
   "isim": "Beyaz Residence",
   "slug": "beyaz-residence",
   "mahalleSlug": "eryaman",
-  "aciklama": "Beyaz Residence, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9730944,
+    "lng": 32.6198898
+  },
+  "sinirGeoJSON": "siteler/eryaman/beyaz-residence-boundary.geojson",
+  "aciklama": "Beyaz Residence, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "45794",
+      "parsel": "15"
+    }
+  ]
 }
