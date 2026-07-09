@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Neva Butik Home",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46651/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65722,
+      39.97535
+     ],
+     [
+      32.65658,
+      39.97532
+     ],
+     [
+      32.65656,
+      39.97469
+     ],
+     [
+      32.65721,
+      39.9747
+     ],
+     [
+      32.65722,
+      39.97535
+     ]
+    ]
+   ]
+  ]
+ }
+}

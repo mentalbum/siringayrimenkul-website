@@ -2,5 +2,16 @@
   "isim": "Neva Butik Home",
   "slug": "neva-butik-home",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Neva Butik Home, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9751654,
+    "lng": 32.6569083
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/neva-butik-home-boundary.geojson",
+  "aciklama": "Neva Butik Home, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46651",
+      "parsel": "5"
+    }
+  ]
 }
