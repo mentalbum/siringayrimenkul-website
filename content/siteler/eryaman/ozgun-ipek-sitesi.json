@@ -2,5 +2,16 @@
   "isim": "Özgün İpek Sitesi",
   "slug": "ozgun-ipek-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Özgün İpek Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9749865,
+    "lng": 32.6254277
+  },
+  "sinirGeoJSON": "siteler/eryaman/ozgun-ipek-sitesi-boundary.geojson",
+  "aciklama": "Özgün İpek Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46544",
+      "parsel": "1"
+    }
+  ]
 }
