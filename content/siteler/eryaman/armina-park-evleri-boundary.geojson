@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Armina Park Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46385/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62133,
+      39.96892
+     ],
+     [
+      32.62139,
+      39.96892
+     ],
+     [
+      32.62139,
+      39.96892
+     ],
+     [
+      32.62173,
+      39.9689
+     ],
+     [
+      32.62191,
+      39.96888
+     ],
+     [
+      32.62215,
+      39.9697
+     ],
+     [
+      32.62204,
+      39.96973
+     ],
+     [
+      32.62182,
+      39.96981
+     ],
+     [
+      32.62139,
+      39.96947
+     ],
+     [
+      32.62133,
+      39.96892
+     ]
+    ]
+   ]
+  ]
+ }
+}

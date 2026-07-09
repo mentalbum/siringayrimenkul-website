@@ -2,5 +2,16 @@
   "isim": "Armina Park Evleri",
   "slug": "armina-park-evleri",
   "mahalleSlug": "eryaman",
-  "aciklama": "Armina Park Evleri, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.969645,
+    "lng": 32.6220969
+  },
+  "sinirGeoJSON": "siteler/eryaman/armina-park-evleri-boundary.geojson",
+  "aciklama": "Armina Park Evleri, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46385",
+      "parsel": "5"
+    }
+  ]
 }
