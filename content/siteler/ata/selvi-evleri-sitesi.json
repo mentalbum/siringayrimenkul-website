@@ -2,5 +2,16 @@
   "isim": "Selvi Evleri Sitesi",
   "slug": "selvi-evleri-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Selvi Evleri Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9979942,
+    "lng": 32.6027998
+  },
+  "sinirGeoJSON": "siteler/ata/selvi-evleri-sitesi-boundary.geojson",
+  "aciklama": "Selvi Evleri Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44770",
+      "parsel": "1"
+    }
+  ]
 }
