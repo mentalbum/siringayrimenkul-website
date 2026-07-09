@@ -2,5 +2,16 @@
   "isim": "Yıldız Life",
   "slug": "yildiz-life",
   "mahalleSlug": "susuz",
-  "aciklama": "Yıldız Life, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0164533,
+    "lng": 32.638374
+  },
+  "sinirGeoJSON": "siteler/susuz/yildiz-life-boundary.geojson",
+  "aciklama": "Yıldız Life, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63316",
+      "parsel": "2"
+    }
+  ]
 }
