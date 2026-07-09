@@ -1,16 +1,21 @@
 import type { Metadata } from "next";
+import { getAllMahalleler, getSitelerByMahalle } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
-import { organizationRef } from "@/lib/structured-data";
+import { organizationRef, ozgunPersonJsonLd } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
-import { BuildingIcon, CheckBadgeIcon, CubeIcon, MapPinIcon, UserIcon } from "@/components/ui/icons";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
+import {
+  BuildingIcon,
+  CheckBadgeIcon,
+  CubeIcon,
+  MapPinIcon,
+  PhoneIcon,
+  UserIcon,
+  WhatsAppIcon,
+} from "@/components/ui/icons";
 import { ReviewBadge } from "@/components/ui/review-badge";
-
-const ekip = [
-  { isim: "Hamza Şirin", unvan: "Kurucu" },
-  { isim: "Özgün Şirin", unvan: "Emlak Danışmanı" },
-];
 
 const YETKI_BELGESI_NO = "0603771";
 
@@ -58,6 +63,15 @@ const aboutJsonLd = {
 };
 
 export default function HakkimizdaPage() {
+  // Deneyim iddiası yerine işin kendisi: rehberdeki gerçek site ve tapu
+  // sınırı sayıları — "bölgeyi tanıyoruz" lafının kanıtı.
+  const gruplar = getAllMahalleler().map((m) => getSitelerByMahalle(m.slug));
+  const toplamSite = gruplar.reduce((sum, siteler) => sum + siteler.length, 0);
+  const haritaliSite = gruplar.reduce(
+    (sum, siteler) => sum + siteler.filter((site) => site.sinirGeoJSON).length,
+    0
+  );
+
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
       <script
@@ -91,23 +105,66 @@ export default function HakkimizdaPage() {
 
       <section className="mt-12">
         <h2 className="text-xl">Ekibimiz</h2>
-        <div className="mt-5 grid gap-5 sm:grid-cols-2">
-          {ekip.map((kisi) => (
-            <div
-              key={kisi.isim}
-              className="flex items-center gap-4 rounded-2xl border border-border bg-surface p-5"
-            >
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/15">
-                <UserIcon className="h-6 w-6 text-gold-dark" />
+        <div className="mt-5 space-y-5">
+          {/* Danışman profili — E-E-A-T: içeriğin arkasındaki kişi.
+              Fotoğraf bilinçli yok; kanıt işin kendisi (site + tapu sayıları). */}
+          <div id="ozgun-sirin" className="rounded-2xl border border-gold/40 bg-surface p-6">
+            <div className="flex flex-wrap items-start gap-5">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-navy font-heading text-xl font-semibold text-gold">
+                ÖŞ
               </div>
-              <div>
-                <p className="text-base font-semibold text-navy">{kisi.isim}</p>
-                <p className="text-sm text-muted">{kisi.unvan}</p>
+              <div className="min-w-0 flex-1">
+                <p className="text-lg font-semibold text-navy">Özgün Şirin</p>
+                <p className="text-sm text-muted">Emlak Danışmanı — Eryaman</p>
+                <p className="mt-3 text-sm leading-relaxed text-body">
+                  Değerleme talepleriniz ve site/mahalle sorularınız aracıya değil, doğrudan
+                  Özgün Şirin&apos;e ulaşır. Bu rehberdeki {toplamSite} site kaydı ve{" "}
+                  {haritaliSite} sitenin gerçek tapu (TKGM) sınırı, mahalle mahalle yürüttüğü
+                  saha çalışmasının ürünü — Eryaman&apos;ı tabeladan değil, ada ve parsel
+                  düzeyinde tanır.
+                </p>
+                <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
+                  <TrackedCtaLink
+                    href={`tel:${siteConfig.phoneTel}`}
+                    gaEvent="phone_click"
+                    variant="ghost"
+                    className="px-0 text-gold-dark"
+                  >
+                    <PhoneIcon className="h-4 w-4" />
+                    {siteConfig.phoneDisplay}
+                  </TrackedCtaLink>
+                  <a
+                    href={siteConfig.whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition-colors hover:text-gold-dark"
+                  >
+                    <WhatsAppIcon className="h-4 w-4" />
+                    WhatsApp
+                  </a>
+                  <span className="text-xs text-muted">
+                    Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO}
+                  </span>
+                </div>
               </div>
             </div>
-          ))}
+          </div>
+          <div className="flex items-center gap-4 rounded-2xl border border-border bg-surface p-5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gold/15">
+              <UserIcon className="h-6 w-6 text-gold-dark" />
+            </div>
+            <div>
+              <p className="text-base font-semibold text-navy">Hamza Şirin</p>
+              <p className="text-sm text-muted">Kurucu</p>
+            </div>
+          </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(ozgunPersonJsonLd) }}
+      />
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {adimlar.map((adim) => (

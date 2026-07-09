@@ -14,7 +14,7 @@ import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { organizationRef, WEBSITE_ID } from "@/lib/structured-data";
+import { organizationRef, OZGUN_ID, WEBSITE_ID } from "@/lib/structured-data";
 
 type Props = {
   params: Promise<{ slug: string }>;
@@ -73,7 +73,12 @@ export default async function BlogPostPage({ params }: Props) {
     inLanguage: "tr-TR",
     url: postUrl,
     isPartOf: { "@id": WEBSITE_ID },
-    author: organizationRef,
+    author: {
+      "@type": "Person",
+      "@id": OZGUN_ID,
+      name: "Özgün Şirin",
+      url: `${siteConfig.url}/hakkimizda`,
+    },
     publisher: organizationRef,
   };
 
@@ -100,13 +105,24 @@ export default async function BlogPostPage({ params }: Props) {
       />
 
       <header className="mt-4">
-        <time dateTime={post.tarih} className="text-xs font-medium text-muted">
-          {new Date(post.tarih).toLocaleDateString("tr-TR", {
-            day: "numeric",
-            month: "long",
-            year: "numeric",
-          })}
-        </time>
+        <p className="flex flex-wrap items-center gap-x-2 text-xs font-medium text-muted">
+          <Link
+            href="/hakkimizda#ozgun-sirin"
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            Özgün Şirin
+          </Link>
+          <span aria-hidden="true">·</span>
+          <span>Emlak Danışmanı, {siteConfig.name}</span>
+          <span aria-hidden="true">·</span>
+          <time dateTime={post.tarih}>
+            {new Date(post.tarih).toLocaleDateString("tr-TR", {
+              day: "numeric",
+              month: "long",
+              year: "numeric",
+            })}
+          </time>
+        </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{post.baslik}</h1>
       </header>
 

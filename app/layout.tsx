@@ -8,7 +8,7 @@ import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button
 import { siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
-import { ORG_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
+import { ORG_ID, OZGUN_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
 
 // Only weight 600 is ever used (globals.css sets all headings to 600; the map
 // label and step-number chips are 600 too) — extra weights just add preloaded
@@ -103,7 +103,7 @@ export default async function RootLayout({
       })),
     ],
     founder: { "@type": "Person", name: "Hamza Şirin" },
-    employee: { "@type": "Person", name: "Özgün Şirin", jobTitle: "Emlak Danışmanı" },
+    employee: { "@type": "Person", "@id": OZGUN_ID, name: "Özgün Şirin", jobTitle: "Emlak Danışmanı" },
     identifier: {
       "@type": "PropertyValue",
       name: "Taşınmaz Ticareti Yetki Belgesi No",

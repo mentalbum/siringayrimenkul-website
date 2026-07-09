@@ -178,11 +178,6 @@ export default function EvDegerlemePage() {
               "Temel bilgileri paylaştıktan sonra genellikle aynı gün içinde ön değerlendirme yapıyoruz. Yerinde inceleme gerekiyorsa randevuya göre birkaç gün içinde net fiyat aralığını iletiyoruz.",
           },
           {
-            soru: "Resmi (SPK lisanslı) değerleme raporu mu veriyorsunuz?",
-            cevap:
-              "Hayır; bu hizmet, satış veya kiralama kararı için piyasa değeri analizi sunar. Banka kredisi gibi işlemler için gereken resmi değerleme raporu, SPK lisanslı değerleme kuruluşlarınca hazırlanır.",
-          },
-          {
             soru: "Eryaman dışındaki evler için de değerleme yapıyor musunuz?",
             cevap:
               "Odak bölgemiz Eryaman'ın 11 mahallesidir. Bölge dışındaki talepler için yine de bize ulaşabilirsiniz; yardımcı olamayacaksak doğru yönlendirmeyi yaparız.",

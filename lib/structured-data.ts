@@ -20,6 +20,29 @@ export const organizationLogo = {
   height: 327,
 } as const;
 
+/** E-E-A-T: sitedeki içeriğin arkasındaki kişi — blog yazarı ve danışman.
+ * Tek Person düğümü; blog Article'ları ve Hakkımızda buna @id ile bağlanır. */
+export const OZGUN_ID = `${siteConfig.url}/hakkimizda#ozgun-sirin`;
+
+export const ozgunRef = { "@id": OZGUN_ID } as const;
+
+export const ozgunPersonJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": OZGUN_ID,
+  name: "Özgün Şirin",
+  jobTitle: "Emlak Danışmanı",
+  worksFor: organizationRef,
+  telephone: siteConfig.phoneTel,
+  url: `${siteConfig.url}/hakkimizda`,
+  knowsAbout: [
+    "Eryaman emlak piyasası",
+    "Eryaman satılık ve kiralık konut",
+    "Ev değerleme",
+    "Etimesgut ve Yenimahalle site/rezidans yerleşimleri",
+  ],
+} as const;
+
 /** WebSite entity — establishes the site name + language for Google. */
 export const websiteJsonLd = {
   "@context": "https://schema.org",
