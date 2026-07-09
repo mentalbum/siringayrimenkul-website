@@ -1,16 +1,64 @@
 {
-  "isim": "Kutlutaş Sitesi",
+  "isim": "Kutlutaş Blokları",
   "slug": "kutlutas-sitesi",
   "mahalleSlug": "altay",
   "koordinat": {
-    "lat": 39.97603,
-    "lng": 32.645411
+    "lat": 39.9745,
+    "lng": 32.6458
   },
   "sinirGeoJSON": "siteler/altay/kutlutas-sitesi-boundary.geojson",
   "aciklama": "Kutlutaş Sitesi, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
   "adalar": [
     {
+      "no": "17499",
+      "parsel": "1"
+    },
+    {
       "no": "17500",
+      "parsel": "1"
+    },
+    {
+      "no": "17501",
+      "parsel": "1"
+    },
+    {
+      "no": "17502",
+      "parsel": "1"
+    },
+    {
+      "no": "17503",
+      "parsel": "1"
+    },
+    {
+      "no": "17504",
+      "parsel": "1"
+    },
+    {
+      "no": "17505",
+      "parsel": "1"
+    },
+    {
+      "no": "17506",
+      "parsel": "1"
+    },
+    {
+      "no": "17507",
+      "parsel": "1"
+    },
+    {
+      "no": "17508",
+      "parsel": "1"
+    },
+    {
+      "no": "17509",
+      "parsel": "1"
+    },
+    {
+      "no": "17510",
+      "parsel": "1"
+    },
+    {
+      "no": "17511",
       "parsel": "1"
     }
   ]
