@@ -2,5 +2,16 @@
   "isim": "Elif Özgen Sitesi",
   "slug": "elif-ozgen-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Elif Özgen Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9692122,
+    "lng": 32.6242703
+  },
+  "sinirGeoJSON": "siteler/eryaman/elif-ozgen-sitesi-boundary.geojson",
+  "aciklama": "Elif Özgen Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48297",
+      "parsel": "1"
+    }
+  ]
 }
