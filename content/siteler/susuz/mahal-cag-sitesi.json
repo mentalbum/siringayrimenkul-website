@@ -2,5 +2,16 @@
   "isim": "Mahal Çağ Sitesi",
   "slug": "mahal-cag-sitesi",
   "mahalleSlug": "susuz",
-  "aciklama": "Mahal Çağ Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0067843,
+    "lng": 32.6408844
+  },
+  "sinirGeoJSON": "siteler/susuz/mahal-cag-sitesi-boundary.geojson",
+  "aciklama": "Mahal Çağ Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63368",
+      "parsel": "6"
+    }
+  ]
 }
