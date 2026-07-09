@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Park Göksu Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "64527/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64429,
+      40.01395
+     ],
+     [
+      32.64324,
+      40.01484
+     ],
+     [
+      32.64173,
+      40.01377
+     ],
+     [
+      32.64255,
+      40.01305
+     ],
+     [
+      32.64266,
+      40.01294
+     ],
+     [
+      32.64272,
+      40.01285
+     ],
+     [
+      32.64429,
+      40.01395
+     ]
+    ]
+   ]
+  ]
+ }
+}
