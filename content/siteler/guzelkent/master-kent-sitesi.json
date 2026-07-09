@@ -2,5 +2,16 @@
   "isim": "Master Kent Sitesi",
   "slug": "master-kent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Master Kent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9911655,
+    "lng": 32.615761
+  },
+  "sinirGeoJSON": "siteler/guzelkent/master-kent-sitesi-boundary.geojson",
+  "aciklama": "Master Kent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18481",
+      "parsel": "1"
+    }
+  ]
 }

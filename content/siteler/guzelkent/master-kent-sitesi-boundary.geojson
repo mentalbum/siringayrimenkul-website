@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Master Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18481/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61581,
+      39.99079
+     ],
+     [
+      32.61632,
+      39.99105
+     ],
+     [
+      32.61639,
+      39.99128
+     ],
+     [
+      32.61636,
+      39.99132
+     ],
+     [
+      32.61548,
+      39.99151
+     ],
+     [
+      32.61524,
+      39.99138
+     ],
+     [
+      32.61524,
+      39.99135
+     ],
+     [
+      32.61561,
+      39.99095
+     ],
+     [
+      32.61581,
+      39.99079
+     ]
+    ]
+   ]
+  ]
+ }
+}
