@@ -2,5 +2,16 @@
   "isim": "Akkonaklar Sitesi",
   "slug": "akkonaklar-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Akkonaklar Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.976311,
+    "lng": 32.621593
+  },
+  "sinirGeoJSON": "siteler/eryaman/akkonaklar-sitesi-boundary.geojson",
+  "aciklama": "Akkonaklar Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46532",
+      "parsel": "1"
+    }
+  ]
 }
