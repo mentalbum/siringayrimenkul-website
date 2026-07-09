@@ -2,5 +2,16 @@
   "isim": "Elif Elvan Sitesi",
   "slug": "elif-elvan-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Elif Elvan Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.969626,
+    "lng": 32.6247898
+  },
+  "sinirGeoJSON": "siteler/eryaman/elif-elvan-sitesi-boundary.geojson",
+  "aciklama": "Elif Elvan Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46383",
+      "parsel": "1"
+    }
+  ]
 }

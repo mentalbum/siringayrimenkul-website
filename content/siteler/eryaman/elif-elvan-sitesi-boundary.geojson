@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Elif Elvan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46383/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62523,
+      39.97022
+     ],
+     [
+      32.62513,
+      39.97026
+     ],
+     [
+      32.62501,
+      39.97029
+     ],
+     [
+      32.62422,
+      39.97044
+     ],
+     [
+      32.62394,
+      39.96952
+     ],
+     [
+      32.62503,
+      39.96936
+     ],
+     [
+      32.62523,
+      39.97022
+     ]
+    ]
+   ]
+  ]
+ }
+}
