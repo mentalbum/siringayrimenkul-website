@@ -2,5 +2,16 @@
   "isim": "Atakent Sitesi",
   "slug": "atakent-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Atakent Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977709499999996,
+    "lng": 32.6297596
+  },
+  "sinirGeoJSON": "siteler/eryaman/atakent-sitesi-boundary.geojson",
+  "aciklama": "Atakent Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46528",
+      "parsel": "1"
+    }
+  ]
 }
