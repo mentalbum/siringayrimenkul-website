@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Genova",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45828/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60686,
+      40.00241
+     ],
+     [
+      32.60694,
+      40.00209
+     ],
+     [
+      32.60797,
+      40.00234
+     ],
+     [
+      32.6079,
+      40.00262
+     ],
+     [
+      32.60686,
+      40.00241
+     ]
+    ]
+   ]
+  ]
+ }
+}
