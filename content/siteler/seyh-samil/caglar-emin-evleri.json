@@ -2,5 +2,16 @@
   "isim": "Çağlar Emin Evleri",
   "slug": "caglar-emin-evleri",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "Çağlar Emin Evleri, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.002636,
+    "lng": 32.629986
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/caglar-emin-evleri-boundary.geojson",
+  "aciklama": "Çağlar Emin Evleri, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46265",
+      "parsel": "4"
+    }
+  ]
 }
