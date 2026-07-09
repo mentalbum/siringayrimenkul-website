@@ -41,6 +41,10 @@ export interface Site {
   aciklama: string;
   ozellikler?: string[];
   adalar?: AdaBilgi[];
+  /** İçerik zenginleştirme süpürmesi damgası (YYYY-AA-GG) — "kaç yaptık/kaç
+   * kaldı" sayacı bu alanla ölçülür. Yalnızca doğrulanabilir kaynaklardan
+   * (TKGM, proje sitesi, bilgiemlak, Google Maps) beslenen kayıtlara eklenir. */
+  zenginlestirildi?: string;
 }
 
 export interface BlogFrontmatter {
