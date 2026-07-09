@@ -2,5 +2,16 @@
   "isim": "Sarıtaş Seyir Evleri",
   "slug": "saritas-seyir-evleri",
   "mahalleSlug": "susuz",
-  "aciklama": "Sarıtaş Seyir Evleri, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0103473,
+    "lng": 32.6521264
+  },
+  "sinirGeoJSON": "siteler/susuz/saritas-seyir-evleri-boundary.geojson",
+  "aciklama": "Sarıtaş Seyir Evleri, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63343",
+      "parsel": "2"
+    }
+  ]
 }
