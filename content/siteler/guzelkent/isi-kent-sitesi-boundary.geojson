@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Isı Kent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18462/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62005,
+      39.99314
+     ],
+     [
+      32.61999,
+      39.99314
+     ],
+     [
+      32.61945,
+      39.99295
+     ],
+     [
+      32.61944,
+      39.99291
+     ],
+     [
+      32.61978,
+      39.99234
+     ],
+     [
+      32.61991,
+      39.99238
+     ],
+     [
+      32.62005,
+      39.99243
+     ],
+     [
+      32.62016,
+      39.99246
+     ],
+     [
+      32.62029,
+      39.99249
+     ],
+     [
+      32.62061,
+      39.99284
+     ],
+     [
+      32.62005,
+      39.99314
+     ]
+    ]
+   ]
+  ]
+ }
+}
