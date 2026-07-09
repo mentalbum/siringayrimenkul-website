@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeni Isıkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18455/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62068,
+      39.99582
+     ],
+     [
+      32.61996,
+      39.99576
+     ],
+     [
+      32.61991,
+      39.99571
+     ],
+     [
+      32.62,
+      39.99513
+     ],
+     [
+      32.62005,
+      39.9951
+     ],
+     [
+      32.62077,
+      39.99516
+     ],
+     [
+      32.62082,
+      39.99519
+     ],
+     [
+      32.62074,
+      39.99578
+     ],
+     [
+      32.62068,
+      39.99582
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -2,5 +2,16 @@
   "isim": "Yeni Isıkent Sitesi",
   "slug": "yeni-isikent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Yeni Isıkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9952974,
+    "lng": 32.6200977
+  },
+  "sinirGeoJSON": "siteler/guzelkent/yeni-isikent-sitesi-boundary.geojson",
+  "aciklama": "Yeni Isıkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18455",
+      "parsel": "1"
+    }
+  ]
 }
