@@ -2,5 +2,16 @@
   "isim": "Prestij Park Konutları",
   "slug": "prestij-park-konutlari",
   "mahalleSlug": "ata",
-  "aciklama": "Prestij Park Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9980414,
+    "lng": 32.6049306
+  },
+  "sinirGeoJSON": "siteler/ata/prestij-park-konutlari-boundary.geojson",
+  "aciklama": "Prestij Park Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44769",
+      "parsel": "1"
+    }
+  ]
 }
