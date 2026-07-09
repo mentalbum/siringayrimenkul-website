@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bossphorus Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46652/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66043,
+      39.97347
+     ],
+     [
+      32.65934,
+      39.97345
+     ],
+     [
+      32.65935,
+      39.97272
+     ],
+     [
+      32.65946,
+      39.97264
+     ],
+     [
+      32.66057,
+      39.97266
+     ],
+     [
+      32.66059,
+      39.97301
+     ],
+     [
+      32.66043,
+      39.97347
+     ]
+    ]
+   ]
+  ]
+ }
+}
