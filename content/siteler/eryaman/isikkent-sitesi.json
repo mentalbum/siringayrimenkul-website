@@ -2,5 +2,16 @@
   "isim": "Işıkkent Sitesi",
   "slug": "isikkent-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Işıkkent Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.977047,
+    "lng": 32.622689
+  },
+  "sinirGeoJSON": "siteler/eryaman/isikkent-sitesi-boundary.geojson",
+  "aciklama": "Işıkkent Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46533",
+      "parsel": "1"
+    }
+  ]
 }
