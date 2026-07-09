@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Endora Park",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46385/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62191,
+      39.96888
+     ],
+     [
+      32.62191,
+      39.96888
+     ],
+     [
+      32.62246,
+      39.96884
+     ],
+     [
+      32.62268,
+      39.96957
+     ],
+     [
+      32.62237,
+      39.96964
+     ],
+     [
+      32.62215,
+      39.9697
+     ],
+     [
+      32.62191,
+      39.96888
+     ]
+    ]
+   ]
+  ]
+ }
+}
