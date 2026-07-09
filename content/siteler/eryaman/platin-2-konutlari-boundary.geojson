@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Platin 2 Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45928/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61201,
+      39.97237
+     ],
+     [
+      32.61131,
+      39.97193
+     ],
+     [
+      32.61256,
+      39.97096
+     ],
+     [
+      32.61312,
+      39.97139
+     ],
+     [
+      32.6131,
+      39.97146
+     ],
+     [
+      32.61201,
+      39.97237
+     ]
+    ]
+   ]
+  ]
+ }
+}
