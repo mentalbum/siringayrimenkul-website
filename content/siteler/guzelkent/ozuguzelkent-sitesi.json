@@ -2,5 +2,16 @@
   "isim": "Özügüzelkent Sitesi",
   "slug": "ozuguzelkent-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Özügüzelkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9829903,
+    "lng": 32.6076817
+  },
+  "sinirGeoJSON": "siteler/guzelkent/ozuguzelkent-sitesi-boundary.geojson",
+  "aciklama": "Özügüzelkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "18664",
+      "parsel": "1"
+    }
+  ]
 }
