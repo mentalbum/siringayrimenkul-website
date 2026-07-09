@@ -2,5 +2,16 @@
   "isim": "Tekirdağ Park Evleri",
   "slug": "tekirdag-park-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Tekirdağ Park Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0101079,
+    "lng": 32.6233294
+  },
+  "sinirGeoJSON": "siteler/ata/tekirdag-park-evleri-boundary.geojson",
+  "aciklama": "Tekirdağ Park Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46193",
+      "parsel": "1"
+    }
+  ]
 }
