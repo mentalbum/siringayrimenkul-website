@@ -2,5 +2,16 @@
   "isim": "Güzel Ankara Evleri Sitesi",
   "slug": "guzel-ankara-evleri-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Güzel Ankara Evleri Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9723052,
+    "lng": 32.6223487
+  },
+  "sinirGeoJSON": "siteler/eryaman/guzel-ankara-evleri-sitesi-boundary.geojson",
+  "aciklama": "Güzel Ankara Evleri Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46540",
+      "parsel": "1"
+    }
+  ]
 }
