@@ -2,5 +2,16 @@
   "isim": "Gölde Lüxe Konutları",
   "slug": "golde-luxe-konutlari",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "Gölde Luxe Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9895096,
+    "lng": 32.6580863
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/golde-luxe-konutlari-boundary.geojson",
+  "aciklama": "Gölde Luxe Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62655",
+      "parsel": "2"
+    }
+  ]
 }
