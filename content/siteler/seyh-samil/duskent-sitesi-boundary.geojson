@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Düşkent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46223/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62582,
+      40.00148
+     ],
+     [
+      32.6251,
+      40.00236
+     ],
+     [
+      32.62503,
+      40.00237
+     ],
+     [
+      32.62451,
+      40.00208
+     ],
+     [
+      32.62479,
+      40.00172
+     ],
+     [
+      32.62485,
+      40.00175
+     ],
+     [
+      32.62528,
+      40.00121
+     ],
+     [
+      32.62582,
+      40.00148
+     ]
+    ]
+   ]
+  ]
+ }
+}
