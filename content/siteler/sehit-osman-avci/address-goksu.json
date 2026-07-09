@@ -2,5 +2,16 @@
   "isim": "Address Göksu",
   "slug": "address-goksu",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Address Göksu, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9895625,
+    "lng": 32.6533366
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/address-goksu-boundary.geojson",
+  "aciklama": "Address Göksu, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "46620",
+      "parsel": "5"
+    }
+  ]
 }

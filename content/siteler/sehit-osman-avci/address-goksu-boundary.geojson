@@ -1,0 +1,59 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Address Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46620/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65308,
+      39.98961
+     ],
+     [
+      32.65326,
+      39.98934
+     ],
+     [
+      32.65338,
+      39.98924
+     ],
+     [
+      32.65351,
+      39.98912
+     ],
+     [
+      32.65502,
+      39.98979
+     ],
+     [
+      32.65473,
+      39.99011
+     ],
+     [
+      32.65447,
+      39.99018
+     ],
+     [
+      32.65433,
+      39.99016
+     ],
+     [
+      32.65418,
+      39.99014
+     ],
+     [
+      32.65308,
+      39.98961
+     ]
+    ]
+   ]
+  ]
+ }
+}
