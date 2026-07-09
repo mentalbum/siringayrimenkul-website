@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Nazlıdeniz Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18488/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61091,
+      39.99244
+     ],
+     [
+      32.61082,
+      39.99239
+     ],
+     [
+      32.61082,
+      39.9919
+     ],
+     [
+      32.61178,
+      39.99192
+     ],
+     [
+      32.61184,
+      39.99196
+     ],
+     [
+      32.61184,
+      39.99235
+     ],
+     [
+      32.61174,
+      39.99245
+     ],
+     [
+      32.61091,
+      39.99244
+     ]
+    ]
+   ]
+  ]
+ }
+}
