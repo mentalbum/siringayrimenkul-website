@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "GreenPark Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "62684/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.66405,
+      39.98348
+     ],
+     [
+      32.66396,
+      39.98349
+     ],
+     [
+      32.66304,
+      39.98299
+     ],
+     [
+      32.66304,
+      39.98291
+     ],
+     [
+      32.66315,
+      39.98278
+     ],
+     [
+      32.66323,
+      39.98265
+     ],
+     [
+      32.66329,
+      39.9825
+     ],
+     [
+      32.66332,
+      39.98235
+     ],
+     [
+      32.66333,
+      39.98221
+     ],
+     [
+      32.66431,
+      39.98238
+     ],
+     [
+      32.66491,
+      39.98248
+     ],
+     [
+      32.66405,
+      39.98348
+     ]
+    ]
+   ]
+  ]
+ }
+}

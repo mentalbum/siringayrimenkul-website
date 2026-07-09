@@ -2,5 +2,16 @@
   "isim": "GreenPark Evleri",
   "slug": "greenpark-evleri",
   "mahalleSlug": "cumhuriyet",
-  "aciklama": "GreenPark Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9828883,
+    "lng": 32.6641652
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet/greenpark-evleri-boundary.geojson",
+  "aciklama": "GreenPark Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "62684",
+      "parsel": "1"
+    }
+  ]
 }
