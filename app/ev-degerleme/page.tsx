@@ -40,6 +40,17 @@ export default function EvDegerlemePage() {
     isim: mahalle.isim,
   }));
 
+  // Site-farkında değerleme: tüm sitelerin ince listesi (isim+slug) forma
+  // gider; site sayfalarından gelen ?mahalle=&site= parametreleri formu
+  // önceden doldurur.
+  const siteler = getAllMahalleler().flatMap((mahalle) =>
+    getSitelerByMahalle(mahalle.slug).map((site) => ({
+      slug: site.slug,
+      isim: site.isim,
+      mahalleSlug: mahalle.slug,
+    }))
+  );
+
   const toplamSite = getYayindaMahalleler().reduce(
     (sum, mahalle) => sum + getSitelerByMahalle(mahalle.slug).length,
     0
@@ -143,7 +154,7 @@ export default function EvDegerlemePage() {
             Bilgileriniz WhatsApp üzerinden bize iletilir; en kısa sürede dönüş yaparız.
           </p>
           <div className="mt-6">
-            <ContactForm mahalleler={mahalleler} />
+            <ContactForm mahalleler={mahalleler} siteler={siteler} />
           </div>
         </div>
       </section>

@@ -7,6 +7,12 @@
       "runtimeArgs": ["run", "dev"],
       "port": 3000,
       "autoPort": true
+    },
+    {
+      "name": "hazal-kurgan-tattoo",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4180", "-d", "/Users/ozgun/hazal-kurgan"],
+      "port": 4180
     }
   ]
 }

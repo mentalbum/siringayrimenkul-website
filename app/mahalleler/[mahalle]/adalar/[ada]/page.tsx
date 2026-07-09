@@ -180,7 +180,10 @@ export default async function AdaPage({ params }: Props) {
         baslik={`${label} Ada'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
-        <CtaButton href="/ev-degerleme" variant="primary">
+        <CtaButton
+          href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${ada.site.slug}`}
+          variant="primary"
+        >
           Evinizi Değerlendirelim
         </CtaButton>
       </CtaBanner>

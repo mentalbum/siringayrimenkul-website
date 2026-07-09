@@ -16,8 +16,11 @@ export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
   // Prefill from a ?ara= query (e.g. the homepage hero search) without opting
   // the statically-rendered page into useSearchParams / Suspense.
   useEffect(() => {
-    const ara = new URLSearchParams(window.location.search).get("ara");
-    if (ara) setSorgu(ara);
+    const id = window.setTimeout(() => {
+      const ara = new URLSearchParams(window.location.search).get("ara");
+      if (ara) setSorgu(ara);
+    }, 0);
+    return () => window.clearTimeout(id);
   }, []);
 
   const filtreliGruplar = useMemo(() => {

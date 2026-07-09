@@ -297,7 +297,10 @@ export default async function MahallePage({ params }: Props) {
                 ? `Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim — mahalledeki ${siteler.length} site ve rezidansın her birini tanıyoruz. `
                 : "Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim. "}
               Satış kararının ilk adımı doğru fiyat:{" "}
-              <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
+              <Link
+                href={`/ev-degerleme?mahalle=${mahalle.slug}`}
+                className="font-semibold text-gold-dark hover:underline"
+              >
                 ev değerleme talebi
               </Link>
               {" bırakın, aynı gün dönüş yapalım."}
@@ -413,7 +416,7 @@ export default async function MahallePage({ params }: Props) {
         baslik={`${mahalle.isim}'nde Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
-        <CtaButton href="/ev-degerleme" variant="primary">
+        <CtaButton href={`/ev-degerleme?mahalle=${mahalle.slug}`} variant="primary">
           Evinizi Değerlendirelim
         </CtaButton>
       </CtaBanner>
