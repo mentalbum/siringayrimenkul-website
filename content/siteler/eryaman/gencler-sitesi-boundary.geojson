@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gençler Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45926/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61015,
+      39.97203
+     ],
+     [
+      32.61012,
+      39.97205
+     ],
+     [
+      32.61,
+      39.97215
+     ],
+     [
+      32.60995,
+      39.9722
+     ],
+     [
+      32.60865,
+      39.97183
+     ],
+     [
+      32.60866,
+      39.97171
+     ],
+     [
+      32.60907,
+      39.97133
+     ],
+     [
+      32.61015,
+      39.97203
+     ]
+    ]
+   ]
+  ]
+ }
+}
