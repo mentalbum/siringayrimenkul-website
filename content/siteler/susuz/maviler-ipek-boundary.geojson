@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Maviler İpek",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63275/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65962,
+      39.99876
+     ],
+     [
+      32.66005,
+      39.99887
+     ],
+     [
+      32.66106,
+      39.99912
+     ],
+     [
+      32.66235,
+      39.99944
+     ],
+     [
+      32.66236,
+      39.99995
+     ],
+     [
+      32.66229,
+      40.00002
+     ],
+     [
+      32.66033,
+      40.00015
+     ],
+     [
+      32.66024,
+      40.0001
+     ],
+     [
+      32.65962,
+      39.99876
+     ]
+    ]
+   ]
+  ]
+ }
+}

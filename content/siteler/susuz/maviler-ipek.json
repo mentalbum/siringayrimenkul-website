@@ -2,5 +2,16 @@
   "isim": "Maviler İpek",
   "slug": "maviler-ipek",
   "mahalleSlug": "susuz",
-  "aciklama": "Maviler İpek, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9999125,
+    "lng": 32.6623193
+  },
+  "sinirGeoJSON": "siteler/susuz/maviler-ipek-boundary.geojson",
+  "aciklama": "Maviler İpek, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "63275",
+      "parsel": "1"
+    }
+  ]
 }
