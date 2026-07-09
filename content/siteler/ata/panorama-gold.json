@@ -2,5 +2,16 @@
   "isim": "Panorama Gold",
   "slug": "panorama-gold",
   "mahalleSlug": "ata",
-  "aciklama": "Panorama Gold, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0007637,
+    "lng": 32.5996449
+  },
+  "sinirGeoJSON": "siteler/ata/panorama-gold-boundary.geojson",
+  "aciklama": "Panorama Gold, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44765",
+      "parsel": "1"
+    }
+  ]
 }
