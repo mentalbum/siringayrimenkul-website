@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Güzel Ankara Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18463/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61922,
+      39.99284
+     ],
+     [
+      32.61918,
+      39.99285
+     ],
+     [
+      32.6185,
+      39.99261
+     ],
+     [
+      32.61849,
+      39.99256
+     ],
+     [
+      32.61883,
+      39.992
+     ],
+     [
+      32.61957,
+      39.99226
+     ],
+     [
+      32.61922,
+      39.99284
+     ]
+    ]
+   ]
+  ]
+ }
+}
