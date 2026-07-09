@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksu Marina",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "64674/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65493,
+      40.01881
+     ],
+     [
+      32.65467,
+      40.0188
+     ],
+     [
+      32.65468,
+      40.01857
+     ],
+     [
+      32.6547,
+      40.01832
+     ],
+     [
+      32.65477,
+      40.01831
+     ],
+     [
+      32.6548,
+      40.01832
+     ],
+     [
+      32.65495,
+      40.01839
+     ],
+     [
+      32.65495,
+      40.01839
+     ],
+     [
+      32.65493,
+      40.01881
+     ]
+    ]
+   ]
+  ]
+ }
+}

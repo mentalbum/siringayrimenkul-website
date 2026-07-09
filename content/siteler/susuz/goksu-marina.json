@@ -2,5 +2,16 @@
   "isim": "Göksu Marina",
   "slug": "goksu-marina",
   "mahalleSlug": "susuz",
-  "aciklama": "Göksu Marina, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 40.0185574,
+    "lng": 32.6549105
+  },
+  "sinirGeoJSON": "siteler/susuz/goksu-marina-boundary.geojson",
+  "aciklama": "Göksu Marina, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "64674",
+      "parsel": "5"
+    }
+  ]
 }
