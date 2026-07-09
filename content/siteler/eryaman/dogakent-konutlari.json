@@ -2,5 +2,16 @@
   "isim": "Doğakent Konutları",
   "slug": "dogakent-konutlari",
   "mahalleSlug": "eryaman",
-  "aciklama": "Doğakent Konutları, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9683405,
+    "lng": 32.6270451
+  },
+  "sinirGeoJSON": "siteler/eryaman/dogakent-konutlari-boundary.geojson",
+  "aciklama": "Doğakent Konutları, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "48298",
+      "parsel": "1"
+    }
+  ]
 }
