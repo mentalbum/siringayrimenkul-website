@@ -2,5 +2,16 @@
   "isim": "Panorama Plus",
   "slug": "panorama-plus",
   "mahalleSlug": "ata",
-  "aciklama": "Panorama Plus, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9993125,
+    "lng": 32.5971664
+  },
+  "sinirGeoJSON": "siteler/ata/panorama-plus-boundary.geojson",
+  "aciklama": "Panorama Plus, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44778",
+      "parsel": "1"
+    }
+  ]
 }

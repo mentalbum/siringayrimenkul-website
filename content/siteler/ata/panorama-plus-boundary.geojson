@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Panorama Plus",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "44778/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.59646,
+      40.00029
+     ],
+     [
+      32.59632,
+      40.00023
+     ],
+     [
+      32.59565,
+      39.99916
+     ],
+     [
+      32.59575,
+      39.99911
+     ],
+     [
+      32.59711,
+      39.99924
+     ],
+     [
+      32.59722,
+      39.9993
+     ],
+     [
+      32.59776,
+      39.99993
+     ],
+     [
+      32.59774,
+      40.00001
+     ],
+     [
+      32.59646,
+      40.00029
+     ]
+    ]
+   ]
+  ]
+ }
+}
