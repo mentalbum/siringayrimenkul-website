@@ -2,5 +2,16 @@
   "isim": "Palmiye Evleri",
   "slug": "palmiye-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Palmiye Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.9976667,
+    "lng": 32.5945317
+  },
+  "sinirGeoJSON": "siteler/ata/palmiye-evleri-boundary.geojson",
+  "aciklama": "Palmiye Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "adalar": [
+    {
+      "no": "44784",
+      "parsel": "1"
+    }
+  ]
 }
