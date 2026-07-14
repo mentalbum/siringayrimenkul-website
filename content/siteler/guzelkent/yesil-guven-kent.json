@@ -1,6 +1,16 @@
 {
   "isim": "Yeşil Güven Kent",
+  "alternatifAdlar": [
+    "Yeşil Güvenkent Sitesi"
+  ],
   "slug": "yesil-guven-kent",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Yeşil Güven Kent, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Yeşil Güven Kent — yerel kayıtlarda bitişik yazımla \"Yeşil Güvenkent Sitesi\" olarak geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel emlak kayıtları siteyi 18490 adasında gösterir. Bloklar 14 serisinin karma kodlarıyla sıralanıyor: 14, 14-1, 14-2, 14-3, 14-D ve 14-E — altı blok. Didem Sitesi'yle (18489) ardışık adalardadır. Satmayı ya da kiraya vermeyi düşünüyorsanız, değeri sitenin emsallerini bilen emlakçınızla birlikte netleştirin.",
+  "ozellikler": [
+    "Yerel kayıtlarda 18490 adası",
+    "6 blok (14, 14-1–14-3, 14-D, 14-E)",
+    "Yerel kayıtlarda \"Yeşil Güvenkent\" yazımıyla geçer",
+    "Didem Sitesi'yle ardışık adalarda"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

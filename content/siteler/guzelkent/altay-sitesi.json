@@ -2,5 +2,11 @@
   "isim": "Altay Sitesi",
   "slug": "altay-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Altay Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Altay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel emlak kayıtları siteyi 18519 adasında gösterir. Bloklar aynı kayıtlarda 10 ile 10A'dan 10E'ye uzanan adlarla sıralanıyor — altı blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Yerel kayıtlarda 18519 adası",
+    "6 blok (10, 10A–10E)",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

@@ -1,6 +1,15 @@
 {
   "isim": "Gülşah - 95 Sitesi",
+  "alternatifAdlar": [
+    "Gülşah Sitesi"
+  ],
   "slug": "gulsah-95-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gülşah - 95 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Gülşah 95 Sitesi — yerel kayıtlarda kısaca \"Gülşah Sitesi\" olarak da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel emlak kayıtları siteyi 18518 adasında gösterir. Bloklar 12 ile 12A'dan 12E'ye uzanan adlarla sıralanıyor — altı blok. Gülşah 95'te dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini bilen emlakçınızla süreç hem hızlı hem doğru fiyattan yürür.",
+  "ozellikler": [
+    "Yerel kayıtlarda 18518 adası",
+    "6 blok (12, 12A–12E)",
+    "Yerel kayıtlarda \"Gülşah Sitesi\" adıyla da geçer"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

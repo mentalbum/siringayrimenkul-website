@@ -2,5 +2,11 @@
   "isim": "Yeşimkent",
   "slug": "yesimkent",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Yeşimkent, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Yeşimkent, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel emlak kayıtları siteyi 18520 adasında gösterir. Bloklar aynı kayıtlarda 12 ile 12A'dan 12E'ye uzanan adlarla sıralanıyor — altı blok. Altay Sitesi'yle (18519) ardışık adalardadır. Yeşimkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat, cephe ve iç durumla netleşir — birlikte değerlendirelim.",
+  "ozellikler": [
+    "Yerel kayıtlarda 18520 adası",
+    "6 blok (12, 12A–12E)",
+    "Altay Sitesi'yle ardışık adalarda"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
