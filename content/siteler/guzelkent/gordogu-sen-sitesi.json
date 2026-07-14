@@ -10,11 +10,18 @@
     "lng": 32.604081
   },
   "sinirGeoJSON": "siteler/guzelkent/gordogu-sen-sitesi-boundary.geojson",
-  "aciklama": "Gördoğu Şen Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gördoğu-Şen Sitesi — yerel kayıtlarda \"Gürdoğuşen Sitesi\" olarak anılır — Etimesgut Güzelkent Mahallesi'nde, 18646 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 8 ile 8-A'dan 8-E'ye uzanan adlarla geçiyor — toplam altı blok. Gördoğu-Şen'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini izleyen emlakçınızla ilerlemek süreci hızlandırır; değeri birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18646",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18646 Ada",
+    "6 blok (8, 8-A–8-E)",
+    "Yerel kayıtlarda \"Gürdoğuşen\" adıyla geçer",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

@@ -7,11 +7,17 @@
     "lng": 32.618958
   },
   "sinirGeoJSON": "siteler/guzelkent/guzel-ankara-sitesi-boundary.geojson",
-  "aciklama": "Güzel Ankara Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Güzel Ankara Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18463 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarındaki blok adlandırması mahallede benzeri az görülen bir düzende: 19C-2, 21C-3, 23C-1 ve 25C-4 — tek sayılı numara ile C kodunun birleştiği dört blok. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur; fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18463",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18463 Ada",
+    "4 blok (19C-2, 21C-3, 23C-1, 25C-4)",
+    "Orta ölçekli yerleşim"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
