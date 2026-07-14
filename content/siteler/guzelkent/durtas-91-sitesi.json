@@ -7,11 +7,18 @@
     "lng": 32.613421
   },
   "sinirGeoJSON": "siteler/guzelkent/durtas-91-sitesi-boundary.geojson",
-  "aciklama": "Durtaş 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Durtaş 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, 18484 ada 1 parseldeki 4.691 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 2-1'den 2-5'e ve 2A olarak sıralanıyor. Parsel bütünüyle kat mülkiyetinde — tapu ve kredi süreçleri açısından alıcıya güven veren bir tablo. Kadastroda mahalle adı \"Eryaman\" olarak geçer. Durtaş 91'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini yakından izleyen emlakçınızla ilerlemek süreci hem hızlandırır hem doğru fiyattan yürütür.",
   "adalar": [
     {
       "no": "18484",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18484/1 Ada — 4.691 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (2-1–2-5 ve 2A)",
+    "Kat mülkiyetli, krediye uygun",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

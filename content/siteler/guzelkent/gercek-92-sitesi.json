@@ -7,11 +7,18 @@
     "lng": 32.607832
   },
   "sinirGeoJSON": "siteler/guzelkent/gercek-92-sitesi-boundary.geojson",
-  "aciklama": "Gerçek - 92 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gerçek 92 Sitesi, Etimesgut Güzelkent Mahallesi'nin kooperatif kökenli dokusunda yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18669 ada 1 parseldeki 4.985 m²'lik tek parsel üzerine kurulu ve tapuda \"6 Blok Kârgir Apartman\" niteliğiyle kayıtlı; bloklar yerel kayıtlarda 7 ile 7A–7E olarak adlandırılmış. Parselin tamamı kat mülkiyetine geçmiş durumda — banka kredisiyle alım planlayanlar için önemli bir kolaylık. Kadastro kaydında mahalle adının \"Eryaman\" olarak geçmesi, Güzelkent'in Eryaman yerleşkesiyle iç içe konumunun tapudaki karşılığı. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi yakından tanıyan emlakçınızla birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18669",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18669/1 Ada — 4.985 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (7, 7A–7E bloklar)",
+    "Kat mülkiyetli, krediye uygun",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
