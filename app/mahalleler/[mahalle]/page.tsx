@@ -312,15 +312,32 @@ export default async function MahallePage({ params }: Props) {
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-body">
               Boş dairenizi kiraya mı vereceksiniz? Doğru kira bedeli, sağlam sözleşme ve
-              doğrulanmış kiracıyla süreci sizin adınıza yönetiyoruz. Kiralık daire arayanlar
-              için güncel ilanlarımız sahibinden.com mağazamızda; aradığınız daire listede
-              yoksa bize ulaşın, portföye eklenen daireleri ilk siz öğrenin.
+              doğrulanmış kiracıyla süreci sizin adınıza yönetiyoruz. Kira artışı ve boş kalma
+              maliyeti için{" "}
+              <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
+                ev sahibi hesap araçlarımız
+              </Link>{" "}
+              elinizin altında. Kiralık daire arayanlar için güncel ilanlarımız sahibinden.com
+              mağazamızda; aradığınız daire listede yoksa bize ulaşın, portföye eklenen
+              daireleri ilk siz öğrenin.
             </p>
           </div>
         </div>
-        <CtaButton href={siteConfig.sahibindenUrl} external variant="outline" className="mt-5">
-          sahibinden.com&apos;daki İlanlarımız
-        </CtaButton>
+        <div className="mt-5 flex flex-wrap gap-3">
+          <TrackedCtaLink
+            href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
+              `Merhaba! ${mahalle.isim} — bu mahalledeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
+            )}`}
+            gaEvent="mahalle_whatsapp_cta"
+            variant="primary"
+            openInNewTab
+          >
+            WhatsApp&apos;tan Yazın
+          </TrackedCtaLink>
+          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline">
+            sahibinden.com&apos;daki İlanlarımız
+          </CtaButton>
+        </div>
       </section>
 
       {etaplar.length > 0 && (
