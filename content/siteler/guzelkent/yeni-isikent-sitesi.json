@@ -7,11 +7,17 @@
     "lng": 32.6200977
   },
   "sinirGeoJSON": "siteler/guzelkent/yeni-isikent-sitesi-boundary.geojson",
-  "aciklama": "Yeni Isıkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yeni Işıkent Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18455 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarında bloklar harf ve sayının birlikte kullanıldığı A-2, B-4 ve C-6 adlarıyla geçiyor; üç bloklu, sakin bir site profili. Yeni Işıkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, üç bloklu bir sitede her ilan dikkat çeker — fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18455",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18455 Ada",
+    "3 blok (A-2, B-4, C-6)",
+    "Küçük ölçekli, sakin yerleşim"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

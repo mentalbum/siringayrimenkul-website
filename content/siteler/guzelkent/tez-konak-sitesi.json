@@ -7,11 +7,17 @@
     "lng": 32.616799
   },
   "sinirGeoJSON": "siteler/guzelkent/tez-konak-sitesi-boundary.geojson",
-  "aciklama": "Tez Konak Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Tez Konak Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18469 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarında bloklar 123 serisiyle, 123-A'dan 123-D'ye uzanan adlarla geçiyor; dört bloklu, orta ölçekli bir yerleşim. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur — doğru fiyatı ve sunumu siteyi tanıyan emlakçınızla birlikte kurgulayın.",
   "adalar": [
     {
       "no": "18469",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18469 Ada",
+    "4 blok (123-A–123-D)",
+    "Orta ölçekli yerleşim"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

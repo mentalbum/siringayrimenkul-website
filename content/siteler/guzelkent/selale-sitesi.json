@@ -7,11 +7,17 @@
     "lng": 32.618555
   },
   "sinirGeoJSON": "siteler/guzelkent/selale-sitesi-boundary.geojson",
-  "aciklama": "Şelale Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Şelale Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18451 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 13 serisiyle adlandırılmış: 13 numaralı ana blokla birlikte A-13'ten E-13'e uzanan bloklar — toplamda altı blok. Şelale'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, doğru fiyat blok, kat ve iç durumla netleşir; sitenin emsallerini yakından izleyen emlakçınızla birlikte karar verin.",
   "adalar": [
     {
       "no": "18451",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18451 Ada",
+    "6 blok (13, A-13–E-13)",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

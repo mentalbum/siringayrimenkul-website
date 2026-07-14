@@ -5,8 +5,9 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 
 ## Bekleyenler
 
-### Parti 17 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
-Parti 17 (elele, gardenya, gokkusagi, gulenkent, kusburnu, meltem) bilgiemlak blok
+### Parti 17-18 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
+Parti 17-18 (elele, gardenya, gokkusagi, gulenkent, kusburnu, meltem, asilkent, evrimkent,
+tez-konak, yeni-isikent, sahinbey, selale) bilgiemlak blok
 kayıtlarıyla zenginleştirildi; TKGM açılınca her birine tek sorguyla **alan + tapu niteliği +
 kat mülkiyeti** cümlesi eklenecek (`api/parsel/{koordinat}` ya da 124123/{ada}/1).
 DİKKAT: bilgiemlak "Alan" değeri TKGM'den sapıyor (Konuta Özlem: 5.638 vs 5.169 m²) —
