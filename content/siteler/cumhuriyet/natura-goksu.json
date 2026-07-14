@@ -7,11 +7,19 @@
     "lng": 32.6635391
   },
   "sinirGeoJSON": "siteler/cumhuriyet/natura-goksu-boundary.geojson",
-  "aciklama": "Natura Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Natura Göksu, Cumhuriyet Mahallesi'nde Göksu Parkı'nın karşısında, Fırat Life Style tarafından geliştirilen prestijli bir konut projesi. Müteahhidin resmi verilerine göre 17.025 m²'lik alan üzerinde 3 blokta toplam 150 konut yer alıyor ve projenin 5.865 m²'si yeşil alana ayrılmış. Daireler tamamı 4+1 (net ~159-175 m²) geniş aile planında — yani proje net biçimde ferah oturum arayan aile profiline odaklı. Açık ve kapalı otopark, yerden ısıtma ve geniş peyzaj alanlarıyla donatılı. Göksu Parkı manzarası ve İstanbul Yolu-metro hattına yakınlık projeye hem yaşam hem yatırım değeri katıyor. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip geniş dairelerde fiyatı kat, cephe ve manzara belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63262",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "3 blokta 150 konut (Fırat Life Style)",
+    "Tümü 4+1 (net ~159-175 m²)",
+    "17.025 m² alan, 5.865 m² yeşil alan",
+    "Yerden ısıtma, açık/kapalı otopark",
+    "Göksu Parkı karşısı"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }
