@@ -7,11 +7,20 @@
     "lng": 32.65983
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/cizgi-otesi-residence-boundary.geojson",
-  "aciklama": "Çizgi Ötesi Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Çizgi Ötesi Residence, Eryaman Şehit Osman Avcı Mahallesi'nde (Melekli Cadde) Dek-Em İnşaat tarafından yaklaşık 6.700 m²'lik arsa üzerinde geliştirilmiş bir konut projesidir. Proje ağırlıklı olarak 2+1 (yaklaşık 95 m²) lüks daire tiplerinden oluşuyor; kapalı otopark, güvenlik ve site içi donatılarıyla nezih bir aile sitesi olarak biliniyor. İstanbul Yolu aksına ve toplu ulaşıma yakın konumu günlük yaşamı kolaylaştırıyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46654",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "46654/6 Ada",
+    "Dek-Em İnşaat — ~6.700 m² arsa",
+    "Ağırlıklı 2+1 (~95 m²) lüks daireler",
+    "Kapalı otopark, güvenlik — nezih aile sitesi",
+    "Melekli Cadde / Şehit Osman Avcı"
+  ],
+  "adres": "Melekli Cadde No:6, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }

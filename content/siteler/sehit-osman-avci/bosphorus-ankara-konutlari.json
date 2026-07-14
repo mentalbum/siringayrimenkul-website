@@ -7,11 +7,21 @@
     "lng": 32.658343
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/bosphorus-ankara-konutlari-boundary.geojson",
-  "aciklama": "Bosphorus Ankara Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Bosphorus Ankara Konutları, Eryaman Şehit Osman Avcı Mahallesi'nde (Malazgirt 1071. Cadde / İstanbul Yolu aksı) On Altın A.Ş. tarafından geliştirilmiş, üç etaptan oluşan büyük ölçekli güvenlikli bir sitedir. Proje kaynaklarına göre üç etapta toplam 650 konut yer alıyor; tamamı 2+1 dairelerden oluşan ilk etapta 180 konut bulunurken, sonraki etaplarda geniş 4+1 (net ~163–165 m²) daireler de yer alıyor. Kapalı otopark, güvenlik ve site içi sosyal donatılarıyla Eryaman'ın oturmuş, tanınan sitelerinden biri; İstanbul Yolu ve otobana yakın konumu ulaşım avantajı sağlıyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı etap, kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46651",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "46651/6 Ada",
+    "On Altın A.Ş. — 3 etap, 650 konut",
+    "1. etap 180 konut (tamamı 2+1)",
+    "Geniş 4+1 (net ~163–165 m²) seçenekleri",
+    "Güvenlikli site, kapalı otopark",
+    "Malazgirt 1071. Cadde / İstanbul Yolu aksı"
+  ],
+  "adres": "Malazgirt 1071. Cadde, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }
