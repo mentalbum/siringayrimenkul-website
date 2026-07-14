@@ -1,5 +1,8 @@
 {
   "isim": "Çözüm Kent Sitesi",
+  "alternatifAdlar": [
+    "Çözümkent Sitesi"
+  ],
   "slug": "cozum-kent-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

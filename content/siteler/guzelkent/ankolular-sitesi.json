@@ -1,5 +1,8 @@
 {
   "isim": "Ankolular Sitesi",
+  "alternatifAdlar": [
+    "Ankollar Sitesi"
+  ],
   "slug": "ankolular-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

@@ -1,5 +1,8 @@
 {
   "isim": "Öz Muhtar Sitesi",
+  "alternatifAdlar": [
+    "Öz Muhtarlar 2 Sitesi"
+  ],
   "slug": "oz-muhtar-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

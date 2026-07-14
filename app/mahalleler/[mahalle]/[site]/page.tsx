@@ -58,6 +58,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       `${site.isim}'nde eviniz mi var? Satmadan veya kiraya vermeden önce fiyatı, siteyi blok blok tanıyan yerel emlakçınızla birlikte belirleyin. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
+    ...(site.alternatifAdlar?.length && {
+      keywords: [
+        site.isim,
+        ...site.alternatifAdlar,
+        `${mahalle.isim} emlakçı`,
+        "Eryaman emlakçı",
+      ],
+    }),
     ...(site.gorsel && {
       openGraph: { images: [{ url: site.gorsel, alt: site.isim }] },
       twitter: { card: "summary_large_image" as const, images: [site.gorsel] },
@@ -88,6 +96,7 @@ export default async function SitePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "ApartmentComplex",
     name: site.isim,
+    ...(site.alternatifAdlar?.length && { alternateName: site.alternatifAdlar }),
     description: site.aciklama,
     url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
     ...(site.gorsel && { image: `${siteConfig.url}${site.gorsel}` }),

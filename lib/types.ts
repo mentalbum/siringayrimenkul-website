@@ -31,6 +31,10 @@ export interface AdaBilgi {
 
 export interface Site {
   isim: string;
+  /** Halk arasında/yerel kayıtlarda geçen diğer adlar (örn. Çağdaş 95 = "Çağdaş 91",
+   * Ankolular = "Ankollar") — site içi arama, meta keywords ve schema.org
+   * alternateName bu alandan beslenir. Yalnızca doğrulanmış adlar yazılır. */
+  alternatifAdlar?: string[];
   slug: string;
   mahalleSlug: string;
   adres?: string;

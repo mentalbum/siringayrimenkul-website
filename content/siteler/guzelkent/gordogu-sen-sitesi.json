@@ -1,5 +1,8 @@
 {
   "isim": "Gördoğu Şen Sitesi",
+  "alternatifAdlar": [
+    "Gürdoğuşen Sitesi"
+  ],
   "slug": "gordogu-sen-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

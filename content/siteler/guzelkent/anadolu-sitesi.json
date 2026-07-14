@@ -1,5 +1,8 @@
 {
   "isim": "Anadolu Sitesi",
+  "alternatifAdlar": [
+    "Ankara Anadolu Sitesi"
+  ],
   "slug": "anadolu-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

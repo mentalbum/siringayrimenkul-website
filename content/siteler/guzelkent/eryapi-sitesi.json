@@ -1,5 +1,8 @@
 {
   "isim": "Eryapı Sitesi",
+  "alternatifAdlar": [
+    "Eray Sitesi"
+  ],
   "slug": "eryapi-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {

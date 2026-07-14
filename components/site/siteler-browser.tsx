@@ -31,7 +31,11 @@ export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
     return gruplar
       .map(({ mahalle, siteler }) => ({
         mahalle,
-        siteler: siteler.filter((site) => normalize(site.isim).includes(sorguNormalized)),
+        siteler: siteler.filter(
+          (site) =>
+            normalize(site.isim).includes(sorguNormalized) ||
+            (site.alternatifAdlar ?? []).some((ad) => normalize(ad).includes(sorguNormalized))
+        ),
       }))
       .filter((grup) => grup.siteler.length > 0);
   }, [gruplar, sorgu]);
