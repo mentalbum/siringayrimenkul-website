@@ -7,11 +7,17 @@
     "lng": 32.608777
   },
   "sinirGeoJSON": "siteler/guzelkent/postakent-sitesi-boundary.geojson",
-  "aciklama": "Postakent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Postakent Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18663 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarındaki blok düzeni mahallede alışılmışın tersine: bloklar 2, 4, 6 ve 8 olarak yalnızca çift sayılarla numaralanmış — dört blok. (Güzelkent'in birçok sitesinde tek sayılı seriler görülür; Postakent bu geleneğin ayrık örneği.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18663",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18663 Ada",
+    "4 blok (2, 4, 6, 8 — çift sayılı seri)",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

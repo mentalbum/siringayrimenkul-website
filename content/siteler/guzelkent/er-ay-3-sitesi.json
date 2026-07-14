@@ -1,5 +1,8 @@
 {
   "isim": "Er - Ay 3 Sitesi",
+  "alternatifAdlar": [
+    "Eray 3 Sitesi"
+  ],
   "slug": "er-ay-3-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {
@@ -7,11 +10,18 @@
     "lng": 32.603035
   },
   "sinirGeoJSON": "siteler/guzelkent/er-ay-3-sitesi-boundary.geojson",
-  "aciklama": "Er - Ay 3 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Er-Ay 3 Sitesi — yerel kayıtlarda \"Eray 3\" yazımıyla geçer — Etimesgut Güzelkent Mahallesi'nde, 18645 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 8-A'dan 8-F'ye uzanan adlarla sıralanıyor — altı blok. Arzutaş (18644) ve Gördoğu-Şen (18646) siteleriyle ardışık adalardadır. Bu sitede satılık veya kiralık daireniz mi var? İki yazımla da aranan sitede doğru görünürlük için fiyatı ve sunumu siteyi tanıyan emlakçınızla kurgulayın.",
   "adalar": [
     {
       "no": "18645",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18645 Ada",
+    "6 blok (8-A–8-F)",
+    "Yerel kayıtlarda \"Eray 3\" yazımıyla geçer",
+    "Arzutaş ve Gördoğu-Şen ile ardışık adalarda"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

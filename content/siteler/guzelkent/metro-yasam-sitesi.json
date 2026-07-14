@@ -7,11 +7,18 @@
     "lng": 32.607884
   },
   "sinirGeoJSON": "siteler/guzelkent/metro-yasam-sitesi-boundary.geojson",
-  "aciklama": "Metro Yaşam Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Metro Yaşam Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18672 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 4 ile 4A'dan 4E'ye uzanan adlarla sıralanıyor — altı blok. Gökkuşağı Sitesi'yle (18671) ardışık adalardadır. Metro Yaşam'da dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini izleyen emlakçınızla süreç hem hızlı hem doğru fiyattan yürür.",
   "adalar": [
     {
       "no": "18672",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18672 Ada",
+    "6 blok (4, 4A–4E)",
+    "Gökkuşağı Sitesi'yle ardışık adalarda",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
