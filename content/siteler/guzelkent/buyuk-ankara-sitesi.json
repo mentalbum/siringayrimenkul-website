@@ -7,11 +7,19 @@
     "lng": 32.613165
   },
   "sinirGeoJSON": "siteler/guzelkent/buyuk-ankara-sitesi-boundary.geojson",
-  "aciklama": "Büyük Ankara Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Büyük Ankara Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18475 ada 1 parseldeki 4.961 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 4 ile 4-1'den 4-5'e uzanan adlarla geçiyor. Anadolu Sitesi'yle (18474) komşu parseldedir. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak kayıtlı. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18475",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18475/1 Ada — 4.961 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (4, 4-1–4-5)",
+    "Anadolu Sitesi'ne komşu",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

@@ -14,6 +14,25 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 - Yapılacak: 18512'nin gerçek konumu bulunup koordinat + sınır GeoJSON yeniden üretilecek,
   sonra zenginleştirilecek.
 
+### guzelkent/baskent-sular-sitesi (2026-07-14, parti 16'da atlandı)
+- Dosya koordinatı (39.993773, 32.614902) TKGM'de ada numarasız tarlaya düşüyor ("Eryaman-/50", 9.637 m²).
+- Hedef ada 18477 (dosya + bilgiemlak uyumlu); ±180 m taramada bulunamadı, sonra TKGM günlük kotası doldu.
+- Yerel sayfa: `yer/baskent-sular-sitesi-18477-ada-617`.
+
+### guzelkent/cankaya-vefa-sitesi (2026-07-14, parti 16'da atlandı)
+- Dosya koordinatı (39.991810, 32.606339) ada numarasız tarlaya düşüyor ("Eryaman-/883", 5.547 m²).
+- bilgiemlak siteyi İKİ adada gösteriyor: **18521-18522** (`yer/cankaya-vefa-sitesi-18521-18522-ada-622`);
+  dosyada yalnızca 18522/1 var → bulununca ada + sınır genişletmesi de gerekli.
+
+### GÜZELKENT GB CEBİ — sistematik koordinat sorunu (2026-07-14)
+- aksu, ekin, ulas, safi-apak koordinatları TKGM'de ya boş dönüyor ya numarasız tarlaya düşüyor;
+  185xx ada cebinin dosyalardaki koordinatları topluca kaymış görünüyor.
+- Bu cebe girmeden önce koordinat kaynağını düzelt; tek tek halka taramasıyla uğraşma.
+- KOLAY YOL: TKGM'nin `api/parsel/{mahalleId}/{ada}/{parsel}/` doğrudan uç noktası GEÇERLİ
+  (Eryaman mahalleId=124123) — 2026-07-14'te kota dolu olduğu için denenemedi; kota açılınca
+  18512 (aksu), 18477 (başkent sular), 18521+18522 (çankaya vefa), 18501/18503/18505
+  (ekin/ulaş/safi apak) doğrudan çekilip koordinat+sınır yeniden üretilebilir.
+
 ### eryaman/atakent-metro (önceki oturumdan devir)
 - 46523/8'e force edilmişti; bilgiemlak o adayı Oyak 555'e ait gösteriyor
   (bloklar A1/A2/B1/D1, TKGM nitelikle uyumlu).
