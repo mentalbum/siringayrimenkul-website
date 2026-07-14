@@ -7,11 +7,19 @@
     "lng": 32.616098
   },
   "sinirGeoJSON": "siteler/guzelkent/konuta-ozlem-sitesi-boundary.geojson",
-  "aciklama": "Konuta Özlem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Konuta Özlem Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, 18468 ada 1 parseldeki 5.169 m²'lik tek parsel üzerine kurulu ve tapuda \"6 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda 2, 2A, 2B, 2C, 2D ve 2E olarak adlandırılmış. Kadastro kaydında mahalle adının \"Eryaman\" olarak geçmesi, Güzelkent dokusunun Eryaman yerleşkesiyle ne kadar iç içe olduğunun tapudaki karşılığı. Parselin tamamı kat mülkiyetine geçmiş durumda — krediye uygunluk arayan alıcılar için önemli bir artı. İlan arşivlerinde sitede 3+1 daire kayıtları görülüyor. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi yakından tanıyan emlakçınızla birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18468",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18468/1 Ada — 5.169 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (2, 2A–2E bloklar)",
+    "Kat mülkiyetli, krediye uygun",
+    "İlan arşivlerinde 3+1 daireler",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
