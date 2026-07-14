@@ -7,11 +7,21 @@
     "lng": 32.661446
   },
   "sinirGeoJSON": "siteler/cumhuriyet/ap-istway-boundary.geojson",
-  "aciklama": "AP İstWay, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "AP İstWay, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:14/A'da; AP serisinin (AP Green Tower, AP İstGate, AP İst Port) müteahhidi Şani İnşaat tarafından yapılmış bir residence projesidir. Proje kaynaklarına göre 132 adet 1+1, 33 adet 2,5+1 ve 2 adet 4,5+1 loft dubleks olmak üzere farklı yaşam tiplerini bir arada sunuyor — kompakt yatırımlık dairelerden loft dublekslere uzanan geniş bir yelpaze. İstanbul Yolu metrosuna ve ana arterlere yakın konumu ulaşımı kolaylaştırıyor; kapalı otopark, güvenlik ve sosyal donatılar bulunuyor. Bu binada satılık veya kiralık daireniz mi var? Farklı tiplerin bir arada olduğu bu projede fiyatı tip, kat ve cephe belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62690",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62690/3 Ada",
+    "Şani İnşaat (AP serisi)",
+    "132 × 1+1, 33 × 2,5+1, 2 × 4,5+1 loft dubleks (167 daire)",
+    "Kompakt daireden loft dublekse tip çeşitliliği",
+    "İstanbul Yolu metrosuna yakın",
+    "Fatih Sultan Mehmet Bulvarı No:14/A / Yeni Batı"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı No:14/A, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }

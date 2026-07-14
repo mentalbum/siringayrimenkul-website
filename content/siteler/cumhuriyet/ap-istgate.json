@@ -7,11 +7,21 @@
     "lng": 32.660619
   },
   "sinirGeoJSON": "siteler/cumhuriyet/ap-istgate-boundary.geojson",
-  "aciklama": "AP İstGate, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "AP İstGate, Yeni Batı'da Fatih Sultan Mehmet Bulvarı üzerinde Şani İnşaat imzalı; konut ve işyerini bir arada sunan bir residence projesidir. Geliştiricinin verilerine göre yaklaşık 42.000 m² inşaat alanı üzerinde 297 daire ve toplam 12.500 m² büyüklüğünde 18 işyeri yer alıyor. İstanbul Yolu metro hattı ve ana arterlere yakın konumu, projeye hem yaşam hem ticari kullanım için güçlü bir erişim avantajı katıyor; kapalı otopark, güvenlik ve sosyal alanlar standart donatılar arasında. Bu residence'ta satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62689",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62689/2 Ada",
+    "Şani İnşaat — ~42.000 m² inşaat",
+    "297 daire + 18 işyeri (~12.500 m²)",
+    "Konut + ticari karma kullanım",
+    "İstanbul Yolu metro ve arterlere yakın",
+    "Fatih Sultan Mehmet Bulvarı / Yeni Batı"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı 22-B, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }

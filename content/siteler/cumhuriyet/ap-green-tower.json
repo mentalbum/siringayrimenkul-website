@@ -7,11 +7,21 @@
     "lng": 32.659311
   },
   "sinirGeoJSON": "siteler/cumhuriyet/ap-green-tower-boundary.geojson",
-  "aciklama": "AP Green Tower, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "AP Green Tower, Yeni Batı'da Fatih Sultan Mehmet Bulvarı üzerinde Şani İnşaat tarafından yapılmış bir residence projesidir. Geliştiricinin verilerine göre yaklaşık 33.000 m² inşaat alanına sahip proje, 184 daire ile toplam 10.000 m²'yi bulan ticari/işyeri alanını bir arada barındırıyor — yani konutun altında kendi çarşısı olan karma bir yapı. İstanbul Yolu aksındaki konumu metro ve ana arter ulaşımını kolaylaştırıyor; kapalı otopark, güvenlik ve sosyal donatılar projenin standart olanakları arasında. Bu binada satılık veya kiralık daireniz mi var? Residence dairelerinde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte netleştirelim.",
   "adalar": [
     {
       "no": "62679",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62679/1 Ada",
+    "Şani İnşaat — ~33.000 m² inşaat",
+    "184 daire + ~10.000 m² ticari alan",
+    "Konut altında çarşı (karma kullanım)",
+    "Kapalı otopark, güvenlik, sosyal donatı",
+    "Fatih Sultan Mehmet Bulvarı / İstanbul Yolu"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı A-Blok No:21, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }
