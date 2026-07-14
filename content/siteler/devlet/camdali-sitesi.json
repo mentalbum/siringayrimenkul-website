@@ -7,11 +7,17 @@
     "lng": 32.606165
   },
   "sinirGeoJSON": "siteler/devlet/camdali-sitesi-boundary.geojson",
-  "aciklama": "Çamdalı Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Çamdalı Sitesi, Eryaman Devlet Mahallesi'nde, 18708 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarında bloklar sade bir düzenle A, B, C ve D olarak adlandırılmış — dört blok. Çamdalı'da dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini bilen emlakçınızla ilerlemek süreci hızlandırır; fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18708",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18708 Ada",
+    "4 blok (A, B, C, D)",
+    "Devlet Mahallesi'nin yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

@@ -5,6 +5,16 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 
 ## Bekleyenler
 
+### devlet/arslanlar + cagrikent — AYNI ADA ÇAKIŞMASI (2026-07-14)
+- İki dosya da 18679 adasını iddia ediyor; bilgiemlak 18679'u "Arslanlar Sitesi" gösteriyor.
+- Çağrıkent'in gerçek adası TKGM/başka kaynakla bulunmadan ikisi de zenginleştirilmedi.
+- Devlet'te ayrıca bekleyen TAM eşleşmeler (sıradaki partiler): eryaman-royal-city↔"Royal"
+  (18693, takma ad!), gulhayat (18698), ikizler (18695), mavi-koy (18689), mavikent (18691),
+  mil-kooperatifi↔"Mil Koop" (18687), oray (18701), ozdenizyildizi↔"Özdeniz Yıldızı" (18705),
+  sari-cinar↔"Sarıçınar" (18692), selcuklu (18690), sergah-evleri↔"Eryaman Sergah" (18675),
+  turgut-aslan (18694), yeni-huzur-bahcesi (18677), yesiloz↔"Yeşil Öz" (18686),
+  yildiz-tatil (18706). Tunahan'da da 7 TAM eşleşme var.
+
 ### Parti 21 kayıt tamamlama (2026-07-14 — ada yalnızca yerel kayıttan, TKGM teyidi + koordinat + sınır gerekli)
 altay (18519), gulsah-95 (18518), sirin-91 (18653), yenigun-isigi (18465),
 yesil-guven-kent (18490), yesimkent (18520) — dosyalarda adalar/koordinat alanı YOK;
@@ -31,11 +41,12 @@ evi burası olabilir. DİKKAT: apartman bölgesindeki adlarla çakışanlar var 
 Kardelen no-17 19504) — dosya başına hangi bölge olduğu netleşmeden zenginleştirme YAPMA.
 
 
-### Parti 17-20 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
+### Parti 17-22 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
 Parti 17-19 (elele, gardenya, gokkusagi, gulenkent, kusburnu, meltem, asilkent, evrimkent,
 tez-konak, yeni-isikent, sahinbey, selale, eryapi, gordogu-sen, nazlideniz, oz-muhtar,
 guzel-ankara, isi-kent, master-kent, ekin, metro-yasam, postakent, yesim-kent2,
-yukselay, er-ay-3) bilgiemlak blok
+yukselay, er-ay-3 + DEVLET: asiyan, cagkent, camdali, cinar, demirkent, denizim,
+bilgi-sevgi-hosgoru) bilgiemlak blok
 kayıtlarıyla zenginleştirildi; TKGM açılınca her birine tek sorguyla **alan + tapu niteliği +
 kat mülkiyeti** cümlesi eklenecek (`api/parsel/{koordinat}` ya da 124123/{ada}/1).
 DİKKAT: bilgiemlak "Alan" değeri TKGM'den sapıyor (Konuta Özlem: 5.638 vs 5.169 m²) —

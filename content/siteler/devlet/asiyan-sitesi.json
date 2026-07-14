@@ -7,11 +7,17 @@
     "lng": 32.60846
   },
   "sinirGeoJSON": "siteler/devlet/asiyan-sitesi-boundary.geojson",
-  "aciklama": "Aşiyan Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Aşiyan Sitesi, Eryaman Devlet Mahallesi'nde, 18688 adada yer alan büyük ölçekli bir konut sitesidir. Yerel emlak kayıtlarında bloklar çift kodlu bir düzenle sıralanıyor: 1-31'den 10-13'e uzanan toplam on blok. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri site içi emsalleri izleyen emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18688",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18688 Ada",
+    "10 blok (1-31 … 10-13, çift kodlu düzen)",
+    "Devlet Mahallesi'nin büyük ölçekli sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

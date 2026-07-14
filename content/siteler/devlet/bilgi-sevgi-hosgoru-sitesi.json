@@ -7,11 +7,17 @@
     "lng": 32.607608
   },
   "sinirGeoJSON": "siteler/devlet/bilgi-sevgi-hosgoru-sitesi-boundary.geojson",
-  "aciklama": "Bilgi Sevgi Hoşgörü Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Bilgi Sevgi Hoşgörü Sitesi, Eryaman Devlet Mahallesi'nde, 18709 adada yer alan büyük ölçekli bir konut sitesidir — adı da mahallenin en ilgi çekici site adlarından. Yerel emlak kayıtlarında bloklar 3'ten 25'e yalnızca tek sayılarla numaralanmış: toplam on iki blok. Bu ölçekte bir sitede emsal çoktur ama her dairenin hikâyesi farklıdır — satmayı ya da kiraya vermeyi düşünüyorsanız, doğru fiyatı site içi emsalleri yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18709",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18709 Ada",
+    "12 blok (3–25, tek sayılı seri)",
+    "Devlet Mahallesi'nin büyük ölçekli sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
