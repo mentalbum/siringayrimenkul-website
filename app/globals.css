@@ -58,6 +58,20 @@
   }
 }
 
+/* iOS Safari, font-size < 16px olan bir metin alanına odaklanınca sayfayı
+ * otomatik zoom'lar ve geri döndürmez — kullanıcı "telefondan girince zoomlu
+ * geliyor" derken yaşanan buydu (hero arama kutusuna dokunmak yetiyor).
+ * Mobilde tüm metin girişlerini 16px'e sabitleyerek engelle; masaüstünde
+ * tasarım text-sm kalır. Kural bilinçli olarak @layer DIŞINDA: layer'sız stil,
+ * Tailwind'in `text-sm` utility'sini (utilities layer) ezmek için gerekli. */
+@media (max-width: 640px) {
+  input:not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    font-size: 16px;
+  }
+}
+
 /* ---------------------------------------------------------------------------
  * Hareket temeli — "akıcı" tema katmanı.
  * Tümü transform/opacity (compositor-dostu); prefers-reduced-motion'da kapalı.

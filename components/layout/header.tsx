@@ -12,9 +12,10 @@ export function Header() {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Sayfa kaydıkça header'a derinlik ver — içerik altından akarken yüzer hissi.
+  // Sayfa kaydıkça header, ortada yüzen glassy (koyu, yarı saydam) bir "pill"e
+  // dönüşür — tam ekranı kaplamaz, oval kenarlı orta boy bir menü olur.
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 8);
+    const onScroll = () => setScrolled(window.scrollY > 24);
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
@@ -22,11 +23,19 @@ export function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-sm transition-shadow duration-300 ${
-        scrolled ? "shadow-md shadow-navy/5" : ""
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        scrolled
+          ? "bg-transparent"
+          : "border-b border-border bg-surface/95 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-2.5 sm:px-6">
+      <div
+        className={`mx-auto flex max-w-6xl items-center justify-between gap-4 transition-all duration-300 ${
+          scrolled
+            ? "mx-3 mt-3 rounded-full border border-white/10 bg-navy/85 px-4 py-2 shadow-xl shadow-black/30 backdrop-blur-md sm:mx-auto sm:px-6"
+            : "px-4 py-2.5 sm:px-6"
+        }`}
+      >
         <Link
           href="/"
           className="shrink-0"
@@ -34,7 +43,7 @@ export function Header() {
           onClick={() => setOpen(false)}
         >
           <Image
-            src="/brand/sirin-logo-on-light.png"
+            src={scrolled ? "/brand/sirin-logo-on-dark.png" : "/brand/sirin-logo-on-light.png"}
             alt={siteConfig.name}
             width={480}
             height={233}
@@ -48,7 +57,9 @@ export function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-sm font-medium text-navy transition-colors hover:text-gold-dark"
+              className={`text-sm font-medium transition-colors ${
+                scrolled ? "text-white/85 hover:text-gold" : "text-navy hover:text-gold-dark"
+              }`}
             >
               {item.label}
             </Link>
@@ -59,7 +70,9 @@ export function Header() {
           <a
             href={`tel:${siteConfig.phoneTel}`}
             onClick={() => sendGAEvent("event", "phone_click")}
-            className="flex items-center gap-1.5 text-sm font-semibold text-navy hover:text-gold-dark"
+            className={`flex items-center gap-1.5 text-sm font-semibold transition-colors ${
+              scrolled ? "text-white hover:text-gold" : "text-navy hover:text-gold-dark"
+            }`}
           >
             <PhoneIcon className="h-4 w-4" />
             {siteConfig.phoneDisplay}
@@ -74,31 +87,49 @@ export function Header() {
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-label={open ? "Menüyü kapat" : "Menüyü aç"}
-          className="inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full text-navy lg:hidden"
+          className={`inline-flex h-11 w-11 cursor-pointer items-center justify-center rounded-full transition-colors lg:hidden ${
+            scrolled ? "text-white" : "text-navy"
+          }`}
         >
           {open ? <CloseIcon className="h-6 w-6" /> : <MenuIcon className="h-6 w-6" />}
         </button>
       </div>
 
       {open && (
-        <div className="animate-fade-up border-t border-border bg-surface px-4 py-4 lg:hidden [animation-duration:0.25s]">
+        <div
+          className={`animate-fade-up mx-3 mt-2 max-w-6xl overflow-hidden rounded-2xl border px-2 py-2 lg:hidden [animation-duration:0.25s] sm:mx-auto ${
+            scrolled
+              ? "border-white/10 bg-navy/90 shadow-xl shadow-black/30 backdrop-blur-md"
+              : "border-border bg-surface shadow-lg shadow-navy/10"
+          }`}
+        >
           <nav className="flex flex-col gap-1" aria-label="Mobil menü">
             {mainNav.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 onClick={() => setOpen(false)}
-                className="rounded-lg px-3 py-3 text-base font-medium text-navy hover:bg-surface-muted"
+                className={`rounded-xl px-3 py-3 text-base font-medium transition-colors ${
+                  scrolled
+                    ? "text-white/90 hover:bg-white/10"
+                    : "text-navy hover:bg-surface-muted"
+                }`}
               >
                 {item.label}
               </Link>
             ))}
           </nav>
-          <div className="mt-3 flex flex-col gap-3 border-t border-border pt-4">
+          <div
+            className={`mt-2 flex flex-col gap-3 border-t pt-4 ${
+              scrolled ? "border-white/10" : "border-border"
+            }`}
+          >
             <a
               href={`tel:${siteConfig.phoneTel}`}
               onClick={() => sendGAEvent("event", "phone_click")}
-              className="flex items-center gap-2 px-3 text-base font-semibold text-navy"
+              className={`flex items-center gap-2 px-3 text-base font-semibold ${
+                scrolled ? "text-white" : "text-navy"
+              }`}
             >
               <PhoneIcon className="h-5 w-5" />
               {siteConfig.phoneDisplay}
