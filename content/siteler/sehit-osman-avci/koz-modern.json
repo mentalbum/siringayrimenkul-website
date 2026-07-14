@@ -7,7 +7,7 @@
     "lng": 32.6585147
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/koz-modern-boundary.geojson",
-  "aciklama": "Koz Modern, Eryaman Şehit Osman Avcı Mahallesi'nde yer alan bir konut sitesidir. İlan kaynaklarına göre proje ağırlıklı olarak 1+1 (net ~50 m²) kompakt daire tiplerinden oluşuyor; 7 katlı bloklarda merkezi sistem ısıtmaya sahip — yatırımlık ve kompakt oturum arayan profile uygun bir yapı. Kat mülkiyetli ve krediye uygun daireleriyle özellikle yatırımcıların ilgisini çeken proje, İstanbul Yolu aksına ve toplu ulaşıma yakın konumda. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Koz Modern, Eryaman Şehit Osman Avcı Mahallesi'nde yer alan bir konut sitesidir. İlan kaynaklarına göre proje ağırlıklı olarak 1+1 (net ~50 m²) kompakt daire tiplerinden oluşuyor; 7 katlı bloklarda merkezi sistem ısıtmaya sahip — yatırımlık ve kompakt oturum arayan profile uygun bir yapı. Kat mülkiyetli yapısıyla özellikle yatırımcıların ilgisini çeken proje, İstanbul Yolu aksına ve toplu ulaşıma yakın konumda. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46658",
@@ -18,7 +18,7 @@
     "46658/3 Ada",
     "Ağırlıklı 1+1 (net ~50 m²) kompakt daireler",
     "7 katlı, merkezi sistem ısıtma",
-    "Kat mülkiyetli, krediye uygun",
+    "Kat mülkiyetli parsel (TKGM)",
     "Şehit Osman Avcı / İstanbul Yolu aksı"
   ],
   "zenginlestirildi": "2026-07-14"

@@ -7,7 +7,7 @@
     "lng": 32.61283
   },
   "sinirGeoJSON": "siteler/guzelkent/ak-91-sitesi-boundary.geojson",
-  "aciklama": "Ak 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18485 ada 1 parseldeki 4.907 m²'lik tek parsel üzerine kurulu; tapu niteliği \"6 Blok Betonarme Apartman\" olarak geçiyor ve bloklar yerel kayıtlarda 3 ile 3A–3E olarak adlandırılmış. Parselin tamamı kat mülkiyetinde — krediye uygunluk arayan alıcılar için artı. Kadastro kaydında mahalle adı \"Eryaman\"dır; Güzelkent dokusu tapu düzeninde Eryaman yerleşkesinin devamı olarak görünür. Ak 91'de dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok ve kat konumuyla iç duruma göre netleşir — değeri birlikte belirleyelim.",
+  "aciklama": "Ak 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18485 ada 1 parseldeki 4.907 m²'lik tek parsel üzerine kurulu; tapu niteliği \"6 Blok Betonarme Apartman\" olarak geçiyor ve bloklar yerel kayıtlarda 3 ile 3A–3E olarak adlandırılmış. Parselin tamamı kat mülkiyetine geçmiş durumda. Kadastro kaydında mahalle adı \"Eryaman\"dır; Güzelkent dokusu tapu düzeninde Eryaman yerleşkesinin devamı olarak görünür. Ak 91'de dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok ve kat konumuyla iç duruma göre netleşir — değeri birlikte belirleyelim.",
   "adalar": [
     {
       "no": "18485",
@@ -17,7 +17,7 @@
   "ozellikler": [
     "18485/1 Ada — 4.907 m² tek parsel (TKGM)",
     "6 blok betonarme apartman (3, 3A–3E bloklar)",
-    "Kat mülkiyetli, krediye uygun",
+    "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
