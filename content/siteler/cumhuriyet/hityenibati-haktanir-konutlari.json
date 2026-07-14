@@ -7,11 +7,19 @@
     "lng": 32.658698
   },
   "sinirGeoJSON": "siteler/cumhuriyet/hityenibati-haktanir-konutlari-boundary.geojson",
-  "aciklama": "Hityenibatı Haktanır Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Hityenibatı Haktanır Konutları, Yeni Batı'da Hityapı İnşaat (Hit Yapı) tarafından hayata geçirilmiş, kompakt/butik ölçekli bir konut projesidir. İlan kaynaklarına göre proje ağırlıklı olarak 1+1 (yaklaşık 55 m²) daire tiplerinden oluşuyor ve merkezi sistem (pay ölçerli) ısıtmaya sahip — yatırımlık ve tek-iki kişilik hane profiline uygun bir yapı. İstanbul Yolu aksındaki konumu metro ve ana arter ulaşımını kolaylaştırıyor. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62677",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62677/1 Ada",
+    "Hityapı İnşaat (Hit Yapı)",
+    "Ağırlıklı 1+1 (~55 m²) kompakt daireler",
+    "Merkezi sistem (pay ölçerli) ısıtma",
+    "İstanbul Yolu aksı / Yeni Batı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

@@ -7,11 +7,21 @@
     "lng": 32.6601306
   },
   "sinirGeoJSON": "siteler/cumhuriyet/hityasam-boundary.geojson",
-  "aciklama": "Hityaşam, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Hityaşam, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:642'de Hityapı İnşaat (Hit Yapı) tarafından geliştirilmiş, konut ve ticareti bir arada sunan butik bir projedir. Geliştiricinin verilerine göre projede 126 daire (2+1 ve 2,5+1 tiplerinde) ile 34 adet cadde mağazası, restoran ve kafe yer alıyor; ayrıca Nata Delta AVM ile bağlantısı bulunuyor. İstanbul Yolu metro durağına yürüme mesafesi ve Atatürk Olimpiyat Parkı manzarası projenin öne çıkan avantajları arasında; açık-kapalı çocuk oyun alanları, kapalı spor salonu ve 7/24 güvenlik standart donatıları. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62689",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62689/1 Ada",
+    "Hityapı İnşaat — 126 daire (2+1 / 2,5+1)",
+    "34 cadde mağazası + restoran/kafe",
+    "Nata Delta AVM bağlantısı",
+    "İstanbul Yolu metrosuna yürüme mesafesi",
+    "Atatürk Olimpiyat Parkı manzarası"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı No:642, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }
