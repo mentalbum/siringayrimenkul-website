@@ -122,7 +122,11 @@ export default function AraclarPage() {
         >
           TÜİK
         </a>
-        , harç ve tarifeler için ilgili resmî kurumlar esastır. Mahalle ve site rehberlerimiz için{" "}
+        , harç ve tarifeler için ilgili resmî kurumlar esastır. Terimler yabancı geldiyse{" "}
+        <Link href="/sozluk" className="font-semibold text-gold-dark underline-offset-2 hover:underline">
+          emlak terimleri sözlüğümüze
+        </Link>
+        , mahalle ve site rehberlerimiz için{" "}
         <Link href="/mahalleler" className="font-semibold text-gold-dark underline-offset-2 hover:underline">
           Mahalleler
         </Link>{" "}

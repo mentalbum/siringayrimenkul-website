@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/siteler`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/ev-degerleme`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/araclar`, changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/sozluk`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/blog`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/hakkimizda`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, changeFrequency: "yearly", priority: 0.4 },
