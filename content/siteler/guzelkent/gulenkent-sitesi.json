@@ -7,11 +7,17 @@
     "lng": 32.619195
   },
   "sinirGeoJSON": "siteler/guzelkent/gulenkent-sitesi-boundary.geojson",
-  "aciklama": "Gülenkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gülenkent Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18452 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarında bloklar 115, 115-A ve 115-B olarak numaralanmış; üç bloklu, küçük ölçekli bir yerleşim. Gülenkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, üç bloklu bir sitede her ilan dikkat çeker — doğru fiyat ve doğru sunum için siteyi yakından tanıyan emlakçınızla ilerleyin.",
   "adalar": [
     {
       "no": "18452",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18452 Ada",
+    "3 blok (115, 115-A, 115-B)",
+    "Küçük ölçekli, sakin yerleşim"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

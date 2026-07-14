@@ -7,11 +7,17 @@
     "lng": 32.602837
   },
   "sinirGeoJSON": "siteler/guzelkent/meltem-sitesi-boundary.geojson",
-  "aciklama": "Meltem Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Meltem Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18654 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında blok adlandırması çift kodlu: 4 numaralı ana blokla birlikte hem harf hem sayı taşıyan 4-A(1)'den 4-E(5)'e uzanan bloklar — toplamda altı blok. Meltem'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini izleyen emlakçınızla ilerlemek süreci hızlandırır; doğru fiyatı birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18654",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18654 Ada",
+    "6 blok (4, 4-A(1)–4-E(5) — çift kodlu adlandırma)",
+    "Güzelkent'in yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

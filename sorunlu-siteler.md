@@ -5,6 +5,25 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 
 ## Bekleyenler
 
+### Parti 17 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
+Parti 17 (elele, gardenya, gokkusagi, gulenkent, kusburnu, meltem) bilgiemlak blok
+kayıtlarıyla zenginleştirildi; TKGM açılınca her birine tek sorguyla **alan + tapu niteliği +
+kat mülkiyeti** cümlesi eklenecek (`api/parsel/{koordinat}` ya da 124123/{ada}/1).
+DİKKAT: bilgiemlak "Alan" değeri TKGM'den sapıyor (Konuta Özlem: 5.638 vs 5.169 m²) —
+alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
+
+### Eksik ikinci ada bulunanlar (2026-07-14, bilgiemlak indeks taraması)
+- **erkent-sitesi**: dosyada 18639, bilgiemlak 18639+18640 → 18640 TKGM'den doğrulanıp eklenecek.
+- **ulas-sitesi**: dosyada 18503, bilgiemlak 18502+18503 → 18502 eklenecek (koordinatı da GB cebinde, bozuk).
+- **safi-apak-sitesi**: dosyada 18505, bilgiemlak 18504+18505 → 18504 eklenecek (koordinat GB cebi).
+Üçünde de sınır GeoJSON genişletmesi gerekir (Anka 2001/Akkonak yöntemi).
+
+### Takma ad adayları (zenginleştirilirken açıklamaya gömülecek)
+- eryapi-sitesi ↔ bilgiemlak "Eray Sitesi" (18657)
+- gordogu-sen-sitesi ↔ "Gürdoğuşen Sitesi" (18646)
+- oz-muhtar-sitesi ↔ "Öz Muhtarlar 2 Sitesi" (18670)
+- nazlideniz-sitesi ↔ "Nazlı Deniz" ayrık yazımı (18488)
+
 ### guzelkent/aksu-sitesi (2026-07-14, parti 15'te atlandı)
 - Dosyadaki koordinat (39.987639, 32.609934) TKGM'de **ada numarasız boş parsele** düşüyor
   ("Eryaman-/49", 8.125 m², Tarla) — muhtemelen park/yeşil alan parseli.
