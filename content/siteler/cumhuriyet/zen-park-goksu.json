@@ -7,11 +7,21 @@
     "lng": 32.657618
   },
   "sinirGeoJSON": "siteler/cumhuriyet/zen-park-goksu-boundary.geojson",
-  "aciklama": "Zen Park Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Zen Park Göksu, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Nesce Grup (NC Yapı) tarafından geliştirilmiş; modern ve yatay mimari çizgisiyle öne çıkan bir konut projesidir. Geliştiricinin verilerine göre proje 89 adet 2+1 daire ve 10 adet cadde mağazasından oluşuyor — tek-tip 2+1 kurgusuyla hem oturum hem yatırım için dengeli bir yapı. Cadde cepheli mağazalar, site içi peyzaj ve otopark projenin öne çıkan özellikleri arasında; İstanbul Yolu aksındaki konumu ulaşımı kolaylaştırıyor. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62672",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62672/1 Ada",
+    "Nesce Grup (NC Yapı) — modern/yatay mimari",
+    "89 adet 2+1 daire",
+    "10 adet cadde mağazası",
+    "Site içi peyzaj, otopark",
+    "Yeni Batı, 5610. Sokak / İstanbul Yolu aksı"
+  ],
+  "adres": "Yeni Batı Mahallesi 5610. Sokak No:2/A, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }

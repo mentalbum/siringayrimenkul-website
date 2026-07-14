@@ -7,11 +7,20 @@
     "lng": 32.664496
   },
   "sinirGeoJSON": "siteler/cumhuriyet/vera-west-boundary.geojson",
-  "aciklama": "Vera West, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Vera West, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Çelikoğlu İnşaat (Çelikoğlu Grup) tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre iki blokta toplam 135 daire (82 adet 2,5+1 ve 53 adet 3,5+1) ile 12 ticari üniteden oluşuyor — geniş aile dairelerine odaklı bir yapı. Atatürk Orman Çiftliği (AOÇ) yönüne bakan cephesi projenin öne çıkan özelliği; asansör, kapalı otopark, çocuk oyun alanları, güvenlik ve fitness gibi site içi donatılar bulunuyor. Bu sitede satılık veya kiralık daireniz mi var? Geniş dairelerde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62659",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "62659/1 Ada",
+    "Çelikoğlu İnşaat — 2 blok, 135 daire",
+    "82 × 2,5+1, 53 × 3,5+1",
+    "12 ticari ünite",
+    "Atatürk Orman Çiftliği (AOÇ) manzaralı cephe",
+    "Asansör, kapalı otopark, fitness, güvenlik"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

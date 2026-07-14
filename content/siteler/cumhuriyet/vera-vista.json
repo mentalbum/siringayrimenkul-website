@@ -7,11 +7,21 @@
     "lng": 32.664593
   },
   "sinirGeoJSON": "siteler/cumhuriyet/vera-vista-boundary.geojson",
-  "aciklama": "Vera Vista, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Vera Vista, Yeni Batı'da Sezai Karakoç Bulvarı üzerinde Çelikoğlu İnşaat tarafından geliştirilmiş, oturuma hazır bir konut projesidir. Projede daireler ağırlıklı olarak geniş 4+1 tipinde (yaklaşık 184 m² brüt / 167 m² net) planlanmış ve 12 katlı bloklarda yer alıyor — ferah oturum arayan büyük aile profiline yönelik. Atatürk Orman Çiftliği/orman manzaralı cepheler, asansör, kapalı/açık otopark, fitness center, 7/24 güvenlik, çocuk oyun alanları ve jeneratör projenin öne çıkan olanakları arasında. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip geniş dairelerde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63261",
       "parsel": "7"
     }
-  ]
+  ],
+  "ozellikler": [
+    "63261/7 Ada",
+    "Çelikoğlu İnşaat — 12 katlı bloklar, oturuma hazır",
+    "Ağırlıklı 4+1 (~184 m² brüt / 167 m² net)",
+    "Orman / AOÇ manzaralı cepheler",
+    "Fitness center, kapalı/açık otopark, jeneratör",
+    "7/24 güvenlik, çocuk oyun alanları"
+  ],
+  "adres": "Sezai Karakoç Bulvarı, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
 }
