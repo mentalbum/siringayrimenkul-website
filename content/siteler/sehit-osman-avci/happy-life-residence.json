@@ -7,11 +7,18 @@
     "lng": 32.6551407
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/happy-life-residence-boundary.geojson",
-  "aciklama": "Happy Life Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Happy Life Residence, Şehit Osman Avcı Mahallesi'nde Akağ İnşaat tarafından 2015'te tamamlanan 138 konutluk bir rezidans projesi. Akağ'ın bölgedeki Metropark ve Metropark Concept projeleriyle aynı aksta yer alıyor; müteahhit bu üç projeyi birlikte '450+ konut ve 2.000 m² ticari alan' olarak anıyor. İlan pazarında 1+1, 2+1 ve 3+1 daire tipleri görülüyor. Metro aksına ve Göksu hattına yakın konumu, oturmuş çevre dokusu ve rezidans donatılarıyla site, hem oturum hem kiralama tarafında talep görüyor. Bu sitede satılık veya kiralık daireniz mi var? Farklı tiplerin bir arada olduğu sitelerde doğru emsal seçimi fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46631",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "138 konut (Akağ İnşaat, teslim 2015)",
+    "1+1, 2+1, 3+1 daire tipleri",
+    "Metropark ailesiyle aynı aks",
+    "Metro ve Göksu hattına yakın"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }
