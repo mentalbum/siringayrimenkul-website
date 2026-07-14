@@ -7,11 +7,18 @@
     "lng": 32.6586654
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/alpak-neve-armonia-residence-boundary.geojson",
-  "aciklama": "Alpak & Neve Armonia Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Alpak & Neve Armonia Residence, Şehit Osman Avcı Mahallesi'nde yaklaşık 21 dönümlük geniş bir alana yayılan, Alpak ve Neva ortaklığında geliştirilen büyük ölçekli bir rezidans projesi. Kaynaklarda proje 4 blokta yaklaşık 650 konut olarak geçiyor; daireler ağırlıklı 1+1 ve 2+1 tiplerinde (net 60 m² civarından başlayan planlar). Zemin katlardaki ofis ve dükkan üniteleri projeye karma bir kullanım kazandırıyor. Göksu Gölü'ne yaklaşık 5 dakika, metroya yürüme mesafesindeki konumu, kompakt daire ağırlığıyla birleşince siteyi kiralama ve yatırım tarafında hareketli kılıyor. Bu sitede satılık veya kiralık daireniz mi var? 1+1/2+1 pazarında doğru fiyatlama dolu kalma süresini doğrudan etkiler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46651",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~21 dönüm alan, 4 blok ~650 konut (Alpak & Neva)",
+    "Ağırlıklı 1+1 ve 2+1 daireler (net ~60 m²'den)",
+    "Zeminde ofis + dükkan üniteleri",
+    "Göksu Gölü'ne ~5 dk, metroya yürüme mesafesi"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }

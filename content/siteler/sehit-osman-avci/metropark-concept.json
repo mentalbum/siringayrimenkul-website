@@ -7,11 +7,18 @@
     "lng": 32.65644
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/metropark-concept-boundary.geojson",
-  "aciklama": "Metropark Concept, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Metropark Concept, Şehit Osman Avcı Mahallesi'nde Akağ İnşaat imzasıyla yaklaşık 6.000 m² arsa üzerinde geliştirilen, konut ve caddeye açılan çarşı dokusunu birleştiren bir proje: 82 konut ve 12 dükkan. Daire karması net — 50 adet 2+1 ve 32 adet 3+1; alanlar 80 m²'den başlıyor. Akağ'ın bölgedeki Metropark ailesinin (Metropark, Metropark Plus, Happy Life) devamı niteliğinde, yeni yapı stoğunda kompakt-orta boy daire arayanların adresi. Metro aksına ve Göksu hattına yakın konumuyla kiralama tarafında da hareketli. Bu sitede satılık veya kiralık daireniz mi var? 2+1/3+1 pazarında doğru emsal fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46628",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "82 konut + 12 dükkan (Akağ İnşaat)",
+    "50 adet 2+1, 32 adet 3+1 — 80 m²'den başlayan",
+    "~6.000 m² arsa, cadde-çarşı dokusu",
+    "Metropark ailesinin devam projesi"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }
