@@ -14,6 +14,7 @@ import {
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
@@ -223,7 +224,11 @@ export default async function SitePage({ params }: Props) {
           >
             satış öncesi değerleme
           </Link>
-          {` alın. ${site.isim}'nde satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+          {` alın; kira artışı, tapu harcı ve komisyon rakamları için `}
+          <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
+            ev sahibi hesap araçlarımız
+          </Link>
+          {` elinizin altında. ${site.isim}'nde satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
         <CtaButton
           href={siteConfig.sahibindenUrl}
@@ -246,6 +251,16 @@ export default async function SitePage({ params }: Props) {
         >
           Evinizi Değerlendirelim
         </CtaButton>
+        <TrackedCtaLink
+          href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
+            `Merhaba! ${site.isim} (${mahalle.isim}) — bu sitedeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
+          )}`}
+          gaEvent="site_whatsapp_cta"
+          variant="outline-light"
+          openInNewTab
+        >
+          WhatsApp&apos;tan Yazın
+        </TrackedCtaLink>
       </CtaBanner>
 
       {digerSiteler.length > 0 && (
