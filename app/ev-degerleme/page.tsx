@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { getAllMahalleler, getYayindaMahalleler, getSitelerByMahalle } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
@@ -91,6 +92,16 @@ export default function EvDegerlemePage() {
           da kiralama yol haritanız da olur.
         </p>
         <ReviewBadge className="mt-4" />
+        <p className="mt-4 text-sm leading-relaxed text-body">
+          Karar aşamasındaysanız{" "}
+          <Link
+            href="/araclar"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            ev sahibi hesap araçlarımıza
+          </Link>{" "}
+          da göz atın: kira artışı, tapu harcı, yasal komisyon ve boş kalma maliyeti.
+        </p>
       </header>
 
       <section className="mt-10">
