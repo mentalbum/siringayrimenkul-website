@@ -7,11 +7,18 @@
     "lng": 32.604076
   },
   "sinirGeoJSON": "siteler/guzelkent/arzutas-sitesi-boundary.geojson",
-  "aciklama": "Arzutaş Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Arzutaş Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18644 ada 1 parseldeki 4.838 m²'lik tek parsel üzerine kurulu; tapu niteliği \"6 Blok Betonarme Apartman\" ve bloklar yerel kayıtlarda 19 ile 19-A'dan 19-E'ye uzanan adlarla geçiyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak kayıtlı. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18644",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18644/1 Ada — 4.838 m² tek parsel (TKGM)",
+    "6 blok betonarme apartman (19, 19-A–19-E)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }

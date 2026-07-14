@@ -7,11 +7,18 @@
     "lng": 32.604442
   },
   "sinirGeoJSON": "siteler/guzelkent/aknergiz-sitesi-boundary.geojson",
-  "aciklama": "Aknergiz Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Aknergiz Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18638 ada 1 parseldeki 5.191 m²'lik tek parsel üzerinde \"4 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 6, 6A, 6B ve 6C olarak sıralanıyor. Dört bloklu yapısıyla mahallenin orta ölçekli, sakin sitelerinden biri. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Dört bloklu sitelerde ilan sayısı azdır ve doğru fiyatlanan daire hızlı hareket eder — satış ya da kiralama planınızı siteyi tanıyan emlakçınızla birlikte yapın.",
   "adalar": [
     {
       "no": "18638",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "18638/1 Ada — 5.191 m² tek parsel (TKGM)",
+    "4 blok kârgir apartman (6, 6A, 6B, 6C)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
 }
