@@ -7,11 +7,18 @@
     "lng": 32.662971
   },
   "sinirGeoJSON": "siteler/cumhuriyet/diamond-goksu-boundary.geojson",
-  "aciklama": "Diamond Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Diamond Göksu, Cumhuriyet Mahallesi'nde (halk arasında Yeni Batı) İstanbul Yolu'na, metro istasyonuna ve Göksu Parkı'na yürüme mesafesindeki merkezi konumuyla öne çıkan bir konut projesi. İlanlarda 'bölgenin en geniş daire projesi' olarak anılıyor: 1+1 daireler brüt 50–65 m², 2+1 daireler ise Amerikan mutfaklı, brüt 95–100 m². Daireler 14 kata varan bloklarda farklı cephe ve kat seçenekleriyle yer alıyor; üst katlar şehir ve orman manzarası sunuyor. Açık ve kapalı otopark, yerden ısıtma gibi donatılar sıfır daire konforunu tamamlıyor. Bu sitede satılık veya kiralık daireniz mi var? Aynı tipte bol daire olan projelerde fiyatı kat, cephe ve iç durum belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62658",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "1+1 (brüt 50–65 m²) ve 2+1 (brüt 95–100 m², Amerikan mutfak)",
+    "14 kata varan bloklar, şehir/orman manzarası",
+    "İstanbul Yolu, metro ve Göksu Parkı'na yürüme mesafesi",
+    "Açık + kapalı otopark, yerden ısıtma"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }

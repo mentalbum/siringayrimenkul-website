@@ -7,11 +7,19 @@
     "lng": 32.6586452
   },
   "sinirGeoJSON": "siteler/cumhuriyet/mood-goksu-boundary.geojson",
-  "aciklama": "Mood Göksu, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Mood Göksu, Cumhuriyet Mahallesi'nde (Yenimahalle) Batıkent-Eryaman yolu üzerinde, Dinamik Life tarafından geliştirilen büyük ölçekli bir yaşam projesi: müteahhidin resmi tanıtımına göre 37.000 m²'lik alan üzerinde 10 blokta 1.100 konut. Daireler 1+1, 2+1 ve 3+1 (butik) tiplerinde — kompakt ağırlıklı bu karma, projeyi yeni yapı stoğunda hem ilk ev alıcısı hem yatırımcı için çekici kılıyor. Merkezi ısıtma, asansör ve otopark gibi standart donatılara sahip; çağdaş mimarili blok yerleşimi geniş sosyal alanlarla destekleniyor. Metro ve çarşı hattına yakınlık günlük yaşamı pratikleştiriyor. Bu sitede satılık veya kiralık daireniz mi var? 1.100 konutluk bir projede fiyatı belirleyen şey doğru emsaldir — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63271",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "10 blokta 1.100 konut (Dinamik Life)",
+    "37.000 m² yaşam alanı",
+    "1+1, 2+1, 3+1 (butik) daire tipleri",
+    "Merkezi ısıtma, asansör, otopark",
+    "Batıkent-Eryaman yolu üzeri, metro yakını"
+  ],
+  "zenginlestirildi": "2026-07-10"
 }
