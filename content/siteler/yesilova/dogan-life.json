@@ -7,11 +7,23 @@
     "lng": 32.6073552
   },
   "sinirGeoJSON": "siteler/yesilova/dogan-life-boundary.geojson",
-  "aciklama": "Doğan Life, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Doğan Life Konutları, Yeşilova'da 4014. Cadde üzerinde Doğan Grup tarafından geliştirilen bir konut sitesidir. Proje kaynaklarına göre 2 blokta toplam 112 daire yer alıyor; daireler 2+1 ve 3+1 tiplerinde. Geniş peyzaj alanı, 7/24 güvenlik ile kapalı ve açık otoparka sahip site, Optimum AVM-Ayaş Yolu aksına yakındır. (Doğan Grup'un City, Tower ve Castle projeleri ayrı yerleşimlerdir.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47550",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Doğan Grup — 2 blok, 112 daire",
+    "2+1 ve 3+1 tipler",
+    "Geniş peyzaj, 7/24 güvenlik, kapalı+açık otopark",
+    "Optimum AVM aksına yakın",
+    "Yeşilova / Eryaman gelişim aksı"
+  ],
+  "adres": "4014. Cadde No:4, Yeşilova, Etimesgut/Ankara",
+  "alternatifAdlar": [
+    "Doğan Life Konutları"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
