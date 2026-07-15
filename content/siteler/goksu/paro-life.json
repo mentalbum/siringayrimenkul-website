@@ -7,11 +7,20 @@
     "lng": 32.642382
   },
   "sinirGeoJSON": "siteler/goksu/paro-life-boundary.geojson",
-  "aciklama": "Paro Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Paro Life, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim ve dönüşüm bölgesinde, kendi yerleşim adasında konumlanan modern bir konut projesidir; 2. İnönü Caddesi üzerindeki konumuyla Tulip Life'ın karşı komşusudur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63406",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Kendi yerleşim adasında",
+    "2. İnönü Caddesi üzeri",
+    "Göksu kentsel gelişim ve dönüşüm bölgesi"
+  ],
+  "alternatifAdlar": [
+    "Eryaman Paro Life Konutları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

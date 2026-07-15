@@ -4,6 +4,18 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Mega dalga D-2 ipuçları (2026-07-15, Yeni Batı + Göksu kentsel gelişim taraması)
+- **firat-life-style-goksu-sitesi'nin evi bulundu: be 46620'yi 'FIRAT LİFE STYLE GÖKSU
+  konutları' gösteriyor** — relax-goksu (46622) mükerrer şüphesi YANLIŞmış, ayrı site!
+  AMA 46620 bizde gode-yasam-konutlari'na haritalı → gode-yasam pini şüpheli;
+  TKGM günü 46620 parselleri incele, firat-life-style'ı haritala, gode-yasam'ı araştır.
+- zekioglu-rezidans (46657): be aynı adayı 'Neva Prestige Metro Rezidens 1-2.Blok'
+  gösteriyor (Neva Prestij bizde 46643'te, müteahhit PDF'iyle) → Neva'nın 2. parseli mi,
+  zekioglu pini mi yanlış? Özgün/TKGM.
+- siyah-beyaz-evler (44781): be 'Adfa İnş. 1. Blok' gösteriyor → teyit gerekli.
+- Çıplak ada sayfaları (blok döküsüz): Yeni Batı 62xxx modern projeleri ve Susuz 63xxx
+  kentsel dönüşüm adaları be'de içeriksiz — bu ~60 kayıt Google/proje portalı yolu istiyor.
+
 ### Mega dalga D — şüpheliler + ipuçları (2026-07-15, be ada sayfaları taraması)
 İPUÇLARI (kota günü işlenecek):
 - **atakent-metro: be 6-etap sayfası 'Oyak Atakent2 Metro Sitesi 46524 Ada' diyor** —
