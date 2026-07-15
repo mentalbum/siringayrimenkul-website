@@ -7,11 +7,18 @@
     "lng": 32.638386
   },
   "sinirGeoJSON": "siteler/goksu/zirveden-goksu-boundary.geojson",
-  "aciklama": "Zirveden Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Zirveden Göksu, Göksu'nun gelişen aksında Zirve Beton tarafından geliştirilen bir rezidans projesidir — Zirveden Batı'nın kardeşi. Proje kaynaklarına göre yaklaşık 25-28 dönümlük alanda toplam 224 daire yer alır ve dairelerin tamamı geniş 4+1 tipindedir (~170-173 m²); 7/24 güvenlikli site düzeniyle ferah aile yaşamına odaklıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63388",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Zirve Beton — 224 daire, tamamı 4+1 (~170-173 m²)",
+    "~25-28 dönüm alan, 7/24 güvenlik",
+    "Zirveden Batı'nın kardeş projesi",
+    "Göksu gelişim aksı"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

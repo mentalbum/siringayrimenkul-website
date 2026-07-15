@@ -7,11 +7,17 @@
     "lng": 32.646108
   },
   "sinirGeoJSON": "siteler/goksu/admira-goksu-konutlari-boundary.geojson",
-  "aciklama": "Admira Göksu Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Admira Göksu Konutları, Göksu'ya hakim bir tepede konumlanan butik bir projedir. Geliştiricinin tanıtımına göre 7.500 m²'lik proje alanında 2 blokta toplam 55 daire yer alır ve her katta yalnızca 2 daire bulunur — az komşulu, ferah bir yerleşim. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63396",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok — 55 daire (7.500 m²)",
+    "Her katta yalnızca 2 daire",
+    "Göksu'ya hakim tepe konumu"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
