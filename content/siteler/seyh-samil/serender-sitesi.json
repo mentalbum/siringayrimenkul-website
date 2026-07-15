@@ -7,11 +7,18 @@
     "lng": 32.6336106
   },
   "sinirGeoJSON": "siteler/seyh-samil/serender-sitesi-boundary.geojson",
-  "aciklama": "Serender Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Serender Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Blokları yerel kayıtlarda 8 ve 10 olarak geçer — iki blok; Akkent, Melis ve Umut 92 sitelerinin komşusudur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46487",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "İki bloklu kooperatif sitesi (8 ve 10)",
+    "Türkonut Göl Bölgesi",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

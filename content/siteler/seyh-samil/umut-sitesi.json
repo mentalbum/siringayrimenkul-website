@@ -7,11 +7,21 @@
     "lng": 32.6340602
   },
   "sinirGeoJSON": "siteler/seyh-samil/umut-sitesi-boundary.geojson",
-  "aciklama": "Umut Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Umut Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Umut'un blokları yerel kayıtlarda 6-1 ve 6A-2 olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Akkent, Melis ve Serender siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46488",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Iki blok kooperatif sitesi",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Umut 92 Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

@@ -7,11 +7,18 @@
     "lng": 32.6333427
   },
   "sinirGeoJSON": "siteler/seyh-samil/yayginkent-sitesi-boundary.geojson",
-  "aciklama": "Yaygınkent Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yaygınkent Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Yaygınkent'in yerel kayıtlarda 5 numaralı blokla temsil edilir — tek bloklu kooperatif. Aynı adayı paylaştığı komşuları arasında Gül, Özlüce, Selinkent, Uzunbey ve Öz Çözüm Kent siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46486",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Tek bloklu kooperatif sitesi",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
