@@ -7,11 +7,20 @@
     "lng": 32.656768
   },
   "sinirGeoJSON": "siteler/cumhuriyet/gulbaran-residence-boundary.geojson",
-  "aciklama": "Gülbaran Residence, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gülbaran Residence, Yeni Batı'da Veysel Karani Bulvarı kesişiminde yer alan bir konut sitesidir. İlanlarda göl (Göksu) manzaralı, ebeveyn banyolu geniş 4+1 daireleriyle öne çıkıyor; güneydoğu-batı cepheli, geniş balkonlu tipleri şerefiyesi yüksek daireler olarak biliniyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62655",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Göl (Göksu) manzaralı geniş 4+1 daireler",
+    "Geniş balkonlu, ebeveyn banyolu tipler",
+    "Veysel Karani Bulvarı kesişimi / Yeni Batı"
+  ],
+  "alternatifAdlar": [
+    "Gülbaran Rezidans"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

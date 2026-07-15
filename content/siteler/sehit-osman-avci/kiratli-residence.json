@@ -7,11 +7,19 @@
     "lng": 32.6570175
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/kiratli-residence-boundary.geojson",
-  "aciklama": "Kıratlı Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Kıratlı Residence, Şehit Osman Avcı Mahallesi'nde 1404. Cadde üzerinde yer alan butik bir rezidans sitesidir. İlanlarda 2+1 ve 2,5+1 dubleks/teraslı daire tipleri öne çıkıyor; merkeze ve metroya yakın konumuyla hem oturum hem yatırım için tercih ediliyor. Bordo Life Residence ile aynı yerleşim adasını paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46659",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2+1 ve 2,5+1 dubleks/teraslı tipler",
+    "Butik rezidans — metroya yakın",
+    "1404. Cadde / Şehit Osman Avcı",
+    "Bordo Life ile aynı adada"
+  ],
+  "adres": "1404. Cadde, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }

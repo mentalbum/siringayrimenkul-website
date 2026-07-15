@@ -7,11 +7,22 @@
     "lng": 32.664748
   },
   "sinirGeoJSON": "siteler/cumhuriyet/ankalux-residence-boundary.geojson",
-  "aciklama": "Ankalüx Residence, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ankalüx Residence, Yeni Batı'da Fatih Sultan Mehmet Bulvarı aksında Hityapı İnşaat (Hit Yapı) imzalı bir rezidans projesidir — Hittown ve Hityaşam'ın müteahhidinin lüks segment işi. Geliştiricinin tanıtımına göre projede 2,5+1 ağırlıklı geniş daireler; kapalı otopark, yüzme havuzu, sauna, çocuk oyun alanları ile mini futbol ve basketbol sahaları yer alıyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62684",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Hityapı İnşaat (Hit ailesi)",
+    "2,5+1 ağırlıklı geniş daireler",
+    "Yüzme havuzu, sauna, spor sahaları",
+    "Kapalı otopark",
+    "FSM Bulvarı aksı / Yeni Batı"
+  ],
+  "alternatifAdlar": [
+    "Ankalux"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

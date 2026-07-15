@@ -7,11 +7,19 @@
     "lng": 32.658497
   },
   "sinirGeoJSON": "siteler/cumhuriyet/endora-bati-boundary.geojson",
-  "aciklama": "Endora Batı, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Endora Batı, Endora markasının (Arıkan Yapı Teknolojileri) Yeni Batı projesidir. Geliştiricinin verilerine göre 23.138 m²'lik alanda iki blokta toplam 143 konut yer alıyor; daireler 2+1 (Minör ve Majör tipler) ile 4+1 seçeneklerinde planlanmış. 2024'te tamamlanan proje, sosyal aktivite alanları ve peyzajıyla öne çıkıyor. (Endora ailesinin Göksu, Plus ve Park projeleri ayrı yerleşimlerdir.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62669",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok — 143 konut (23.138 m² alan)",
+    "2+1 (Minör/Majör) ve 4+1 tipleri",
+    "2024 teslim — Arıkan Yapı Teknolojileri",
+    "Endora ailesinin Yeni Batı projesi"
+  ],
+  "adres": "5408. Cadde No:5, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }
