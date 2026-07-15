@@ -7,11 +7,19 @@
     "lng": 32.641528
   },
   "sinirGeoJSON": "siteler/susuz/bulut-kule-boundary.geojson",
-  "aciklama": "Bulut Kule, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Bulut Kule, Susuz'da 2. İnönü Caddesi'nin başında yükselen tek kule bir konut projesidir. Yerel tanıtımlara göre toplam 36 daireden oluşur ve her katta yalnızca iki daire bulunur — katta az daireli, ferah bir kule konsepti; 1+1'den 3+1'e daire tipleri görülür. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63384",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Tek kule — 36 daire",
+    "Her katta yalnızca 2 daire",
+    "1+1, 2+1, 3+1 tipleri",
+    "Susuz — Göksu kentsel gelişim bölgesi"
+  ],
+  "adres": "2. İnönü Caddesi No:2, Susuz, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }

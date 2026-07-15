@@ -4,6 +4,14 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Susuz turu notları (2026-07-16)
+- **MA1 Tower (goksu/ma1-tower) ipucu: müteahhidi büyük olasılıkla MA1 YAPI** (Majör Göksu'nun
+  müteahhidi; hepsiemlak MA1 Yapı sayfası mevcut, geçmişi 'Neva PLAS 57 konut 2013-15') →
+  bir sonraki turda MA1 Yapı proje listesinden teyit et.
+- Lenora ailesi: 'Lenora Yaşam Konutları' + 'Lenora Nefes' iki ayrı proje; bizim lenora-goksu
+  hangisi tam netleşmedi (tek-blok/2+1-3+1 bilgisi tek IG kaynağıydı, YAZILMADI).
+- neovadi (63376, bordo-gol+paradise komşusu): veri ince, atlandı.
+
 ### Devlet kalanları — parti 38 notları (2026-07-16)
 - **4-devlet-mahallesi-sitesi (18700/1): parsel tapuda '7 Katlı Betonarme OKUL, Üniversite,
   Araştırma'** — mapping yanlış görünüyor (okul parseli); sitenin gerçek adası → Özgün/TKGM.
