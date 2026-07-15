@@ -4,6 +4,10 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Yeni site adayı: Altaş İnşaat 'Relax Line' (2026-07-16)
+- Yandex: 'Altaş İnşaat Relax Line, Şeker Mahallesi, 2 blok 65 konut' — repo'da kayıt YOK
+  (Relax Göksu/Eryaman ile karıştırma — bu Altaş'ın ayrı projesi) → Özgün: kayıt açılsın mı?
+
 ### Susuz/Göksu toplu TKGM kuyruğu — kota bitti (2026-07-16 akşam)
 - Susuz-İmar mahalleId=123432 KEŞFİ; 19 parsel çekildi (17 yazıldı + 2 ARSA:
   bordo-gol 63376/6 kat irtifaklı, maviler-ipek 63275/1 ana taşınmaz → Özgün).

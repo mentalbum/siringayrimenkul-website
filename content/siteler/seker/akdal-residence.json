@@ -7,11 +7,21 @@
     "lng": 32.654121
   },
   "sinirGeoJSON": "siteler/seker/akdal-residence-boundary.geojson",
-  "aciklama": "Akdal Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Akdal Residence, Şeker Mahallesi'nde 1407. Sokak No:16A'da yer alan güvenlikli bir rezidanstır; ilanlarda 1+1 ve 2+1 daireleri görülür. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46361",
       "parsel": "7"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Güvenlikli rezidans — 1+1 ve 2+1",
+    "1407. Sokak No:16A",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "adres": "1407. Sokak No:16A, Şeker, Eryaman/Ankara",
+  "alternatifAdlar": [
+    "Akdal Rezidans"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

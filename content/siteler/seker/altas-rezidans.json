@@ -7,11 +7,19 @@
     "lng": 32.656729
   },
   "sinirGeoJSON": "siteler/seker/altas-rezidans-boundary.geojson",
-  "aciklama": "Altaş Rezidans, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Altaş Rezidans, Şeker Mahallesi'nde Malazgirt 1071 Caddesi aksında (1408. Cadde No:30) yer alan 10 katlı güvenlikli bir rezidanstır; Altaş İnşaat imzasını taşır ve ilanlarda açık mutfaklı 2+1 daireleri (~77-85 m²) öne çıkar. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46362",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Altaş İnşaat — 10 katlı güvenlikli rezidans",
+    "Açık mutfaklı 2+1 (~77-85 m²)",
+    "Malazgirt 1071 Cd aksı",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "adres": "1408. Cadde No:30, Şeker, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }
