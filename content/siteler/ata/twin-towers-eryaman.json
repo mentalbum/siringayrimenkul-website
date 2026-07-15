@@ -7,11 +7,18 @@
     "lng": 32.598182
   },
   "sinirGeoJSON": "siteler/ata/twin-towers-eryaman-boundary.geojson",
-  "aciklama": "Twin Towers Eryaman, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Twin Towers Eryaman, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 11.316 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Ve B Bloklardan Oluşan 35 Katlı Betonarme Apartman Ve C,D,E,F Bloklardan Oluşan 1 Katlı Betonarme Ofis Ve İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44764",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~11.316 m² parsel (TKGM)",
+    "1-35 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

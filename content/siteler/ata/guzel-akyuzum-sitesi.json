@@ -7,11 +7,18 @@
     "lng": 32.621833
   },
   "sinirGeoJSON": "siteler/ata/guzel-akyuzum-sitesi-boundary.geojson",
-  "aciklama": "Güzel Akyüzüm Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Güzel Akyüzüm Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 17.144 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Katlı A,B,C,D Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46194",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~17.144 m² parsel (TKGM)",
+    "10 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

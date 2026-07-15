@@ -7,11 +7,18 @@
     "lng": 32.610448
   },
   "sinirGeoJSON": "siteler/ata/liva-life-yasam-konutlari-boundary.geojson",
-  "aciklama": "Liva Life Yaşam Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Liva Life Yaşam Konutları, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 11.614 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"13 Katlı A Ve B Blok Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46407",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~11.614 m² parsel (TKGM)",
+    "13 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

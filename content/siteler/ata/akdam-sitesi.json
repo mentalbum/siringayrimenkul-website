@@ -7,11 +7,18 @@
     "lng": 32.598407
   },
   "sinirGeoJSON": "siteler/ata/akdam-sitesi-boundary.geojson",
-  "aciklama": "Akdam Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Akdam Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.933 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Bloktan Oluşan 8 Katlı Ve B Bloktan Oluşan 7 Katlı Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44776",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~9.933 m² parsel (TKGM)",
+    "7-8 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

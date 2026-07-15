@@ -7,11 +7,18 @@
     "lng": 32.603179
   },
   "sinirGeoJSON": "siteler/ata/guldede-sitesi-boundary.geojson",
-  "aciklama": "Güldede Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Güldede Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.849 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Apartman - Beton A Blok 11 Katlı, B Blok 11 Katlı\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44754",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.849 m² parsel (TKGM)",
+    "11 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

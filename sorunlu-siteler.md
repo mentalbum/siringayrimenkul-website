@@ -4,6 +4,14 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Ata ARSA-nitelikli parseller (2026-07-16, parti 48 — 8 kayıt zenginleştirilemedi)
+Tapuda bina kaydı yok (Arsa + çoğu kat irtifaklı = yeni proje/cins tashihsiz):
+ata-life (12.748m²), beloren + erkent-umut (aynı 7.955m² arsa — İKİSİ AYNI PARSELDE, dupe/karışım şüphesi de var),
+cagdas-onur (6.748m²), emin-guven (6.218m²), eser-yapi (57.342m² ANA TAŞINMAZ — dev boş arsa, pin yanlış olabilir),
+gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitmemiş proje mi, pinler doğru mu?
++ ayyildiz-sitesi (44759 Şenser/Selsen çakışması) yine atlandı.
++ genova tapuda 9 katlı OFİS-İŞYERİ çıktı (konut değil) — metne öyle yazıldı.
+
 ### yesilova/dogan-city + anka-vega — AYNI parsel 47544/2 (2026-07-16)
 - İki kayıt da 47544/2'de haritalı; farklı isimli iki site (paylaşım?) ya da biri komşuya
   kaymış pin. Doğan City adresi 4016.Cd No:10 net → TKGM günü parsel/blok kontrolü.

@@ -7,11 +7,18 @@
     "lng": 32.597332
   },
   "sinirGeoJSON": "siteler/ata/caglar-belde-sitesi-boundary.geojson",
-  "aciklama": "Çağlar Belde Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Çağlar Belde Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 7.387 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"C Blok Apartman Beton Ve 11 Katlı A Blok Apartman Beton\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44763",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~7.387 m² parsel (TKGM)",
+    "11 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

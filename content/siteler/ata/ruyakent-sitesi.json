@@ -7,11 +7,18 @@
     "lng": 32.602528
   },
   "sinirGeoJSON": "siteler/ata/ruyakent-sitesi-boundary.geojson",
-  "aciklama": "Rüyakent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Rüyakent Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 22.477 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 11 Kat B Blok 11 Kat C Blok 11 Kat D Blok 11 Kat E Blok 11 Kat F Blok 11 Kat G Blok 10 Katlı 7 Bloktan Oluşan Beton Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44768",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~22.477 m² parsel (TKGM)",
+    "10 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

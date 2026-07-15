@@ -7,11 +7,17 @@
     "lng": 32.622975
   },
   "sinirGeoJSON": "siteler/ata/ozkardesler-sitesi-boundary.geojson",
-  "aciklama": "Özkardeşler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Özkardeşler Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 20.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"4 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46212",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~20.000 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

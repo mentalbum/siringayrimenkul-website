@@ -7,11 +7,18 @@
     "lng": 32.614013
   },
   "sinirGeoJSON": "siteler/ata/armoni-life-boundary.geojson",
-  "aciklama": "Armoni Life, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Armoni Life, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 13.365 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Katlı A Blok Ve 16 Katlı B Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46417",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~13.365 m² parsel (TKGM)",
+    "14-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

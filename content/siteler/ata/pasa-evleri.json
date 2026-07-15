@@ -7,11 +7,17 @@
     "lng": 32.6036029
   },
   "sinirGeoJSON": "siteler/ata/pasa-evleri-boundary.geojson",
-  "aciklama": "Paşa Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Paşa Evleri, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.640 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A-B-C Bloklu Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44753",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~10.640 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

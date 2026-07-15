@@ -7,11 +7,18 @@
     "lng": 32.595995
   },
   "sinirGeoJSON": "siteler/ata/zirve-park-konutlari-boundary.geojson",
-  "aciklama": "Zirve Park Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Zirve Park Konutları, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 18.968 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"15'Er Katlı 4 Blok Apartman Ve 2 Katlı Dükkan Beton\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44777",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~18.968 m² parsel (TKGM)",
+    "2-15 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

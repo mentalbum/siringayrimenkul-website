@@ -7,11 +7,17 @@
     "lng": 32.6136434
   },
   "sinirGeoJSON": "siteler/ata/gozde-evler-sitesi-boundary.geojson",
-  "aciklama": "Gözde Evler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gözde Evler Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 13.824 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Kargir 3 Adet Bina Ve Dükkan\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46432",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~13.824 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

@@ -7,11 +7,18 @@
     "lng": 32.601211
   },
   "sinirGeoJSON": "siteler/ata/taflan-sitesi-boundary.geojson",
-  "aciklama": "Taflan Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Taflan Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A-B-C Bloktan Oluşan Apartman -Beton A:13 Katlı B:13 Katlı C:13 Katlı\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44752",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~10.000 m² parsel (TKGM)",
+    "13 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

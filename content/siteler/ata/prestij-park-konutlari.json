@@ -7,11 +7,19 @@
     "lng": 32.6049306
   },
   "sinirGeoJSON": "siteler/ata/prestij-park-konutlari-boundary.geojson",
-  "aciklama": "Prestij Park Konutları, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Prestij Park Konutları, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 21.145 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"2 Katlı Dükkan Ve 7 Bloktan Oluşan Apartman Beton\". Parselini Belmi Kent ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44769",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~21.145 m² parsel (TKGM)",
+    "2 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi",
+    "Paylaşımlı parsel — komşu sitelerle"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
