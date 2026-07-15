@@ -7,11 +7,19 @@
     "lng": 32.640376
   },
   "sinirGeoJSON": "siteler/susuz/nil-my-home-boundary.geojson",
-  "aciklama": "Nil My Home, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Nil My Home, Susuz'da 2. İnönü Caddesi No:37'de yer alan modern bir konut sitesidir; ilanlarda geniş balkonlu, lüks 4+1 daireleriyle bilinir. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63368",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Modern site — lüks 4+1 tipler",
+    "Geniş balkonlu daireler",
+    "2. İnönü Caddesi No:37",
+    "Susuz — Göksu kentsel gelişim bölgesi"
+  ],
+  "adres": "2. İnönü Caddesi No:37, Susuz, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }
