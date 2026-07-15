@@ -7,11 +7,19 @@
     "lng": 32.686251
   },
   "sinirGeoJSON": "siteler/cumhuriyet/arissa-botanik-boundary.geojson",
-  "aciklama": "Arissa Botanik, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Arissa Botanik, Yeni Batı'nın Botanik metro çevresinde Arissa İnşaat'ın ('yeni nesil kooperatif' modeli) anahtar teslimi yapılmış projesidir; ilanlarda geniş 3+1 daireleri (~170 m²) öne çıkar ve yeşil dokusuyla tanıtılır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "43264",
       "parsel": "7"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Arissa İnşaat — yeni nesil kooperatif modeli",
+    "Anahtar teslimi yapıldı",
+    "Geniş 3+1 (~170 m²) tipler",
+    "Botanik metro çevresi / Yeni Batı"
+  ],
+  "adres": "2424. Sokak, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }

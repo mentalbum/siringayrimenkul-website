@@ -7,11 +7,19 @@
     "lng": 32.645489
   },
   "sinirGeoJSON": "siteler/goksu/arissa-goksu-boundary.geojson",
-  "aciklama": "Arissa Göksu, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Arissa Göksu, Göksu'da 2. İnönü Caddesi No:6'da, 'yeni nesil kooperatif' modeliyle çalışan Arissa İnşaat tarafından geliştirilen ve teslim edilmiş bir konut projesidir; müteahhidin ödüllü projeler ailesinin (Botanik, Point, İncek, Batıkent) Göksu ayağıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63932",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Arissa İnşaat — yeni nesil kooperatif modeli",
+    "Teslim edilmiş proje",
+    "Arissa ailesinin Göksu projesi",
+    "2. İnönü Caddesi No:6 / Göksu"
+  ],
+  "adres": "2. İnönü Caddesi No:6, Göksu, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }
