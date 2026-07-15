@@ -7,7 +7,7 @@
     "lng": 32.608677
   },
   "sinirGeoJSON": "siteler/devlet/cinar-sitesi-boundary.geojson",
-  "aciklama": "Çınar Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar harf ve çift sayının birleştiği adlarla geçiyor: A-6, B-8, C-4 ve D-2 — dört blok. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur; doğru fiyatı sitenin emsallerini bilen emlakçınızla birlikte kurgulayın.",
+  "aciklama": "Çınar Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"4 Adet 5 Katlı Kârgir Apartman\" niteliğiyle kayıtlı 6.912 m²'lik kat mülkiyetli tek parselin üzerine kurulu. Yerel emlak kayıtlarında bloklar harf ve çift sayının birleştiği adlarla geçiyor: A-6, B-8, C-4 ve D-2 — dört blok. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur; doğru fiyatı sitenin emsallerini bilen emlakçınızla birlikte kurgulayın.",
   "adalar": [
     {
       "no": "18678",
@@ -15,9 +15,12 @@
     }
   ],
   "ozellikler": [
+    "6.912 m² tek parsel (TKGM)",
     "18678 Ada",
     "4 blok (A-6, B-8, C-4, D-2)",
-    "Devlet Mahallesi'nin yerleşik sitelerinden"
+    "Devlet Mahallesi'nin yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

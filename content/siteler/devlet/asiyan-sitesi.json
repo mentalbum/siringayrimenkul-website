@@ -7,7 +7,7 @@
     "lng": 32.60846
   },
   "sinirGeoJSON": "siteler/devlet/asiyan-sitesi-boundary.geojson",
-  "aciklama": "Aşiyan Sitesi, Eryaman Devlet Mahallesi'nde yer alan büyük ölçekli bir konut sitesidir. Yerel emlak kayıtlarında bloklar çift kodlu bir düzenle sıralanıyor: 1-31'den 10-13'e uzanan toplam on blok. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri site içi emsalleri izleyen emlakçınızla birlikte netleştirin.",
+  "aciklama": "Aşiyan Sitesi, Eryaman Devlet Mahallesi'nde yer alan büyük ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"10 Blok Kârgir Apartman\" niteliğiyle kayıtlı 12.893 m²'lik kat mülkiyetli tek parselin üzerine kurulu. Yerel emlak kayıtlarında bloklar çift kodlu bir düzenle sıralanıyor: 1-31'den 10-13'e uzanan toplam on blok. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri site içi emsalleri izleyen emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18688",
@@ -15,9 +15,12 @@
     }
   ],
   "ozellikler": [
+    "12.893 m² tek parsel (TKGM)",
     "18688 Ada",
     "10 blok (1-31 … 10-13, çift kodlu düzen)",
-    "Devlet Mahallesi'nin büyük ölçekli sitelerinden"
+    "Devlet Mahallesi'nin büyük ölçekli sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }
