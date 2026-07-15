@@ -7,11 +7,17 @@
     "lng": 32.61977
   },
   "sinirGeoJSON": "siteler/eryaman/caglar-sitesi-boundary.geojson",
-  "aciklama": "Çağlar Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Çağlar Sitesi, Eryaman Mahallesi'nde A-7, B-5A ve C-5 bloklarından oluşan üç bloklu bir sitedir; adasını Gülbahar ve İrem apartmanlarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46390",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "3 blok (A-7, B-5A, C-5)",
+    "Komşular: Gülbahar ve İrem apartmanları",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

@@ -7,11 +7,17 @@
     "lng": 32.609162
   },
   "sinirGeoJSON": "siteler/eryaman/pinar-sitesi-boundary.geojson",
-  "aciklama": "Pınar Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Pınar Sitesi, Eryaman Mahallesi'nde A-16 ve B-10 bloklarından oluşan iki bloklu bir sitedir; adasını ASM Prestij ve Şeker Konutları'nın bloklarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45923",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (A-16, B-10)",
+    "Komşular: ASM Prestij, Şeker Konutları",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

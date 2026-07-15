@@ -7,11 +7,18 @@
     "lng": 32.638056
   },
   "sinirGeoJSON": "siteler/altay/age-bloklari-boundary.geojson",
-  "aciklama": "Age Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — 1. Etap'ın en geniş blok kümelerinden. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki 5. Etap Age Sitesi ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17546",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Yerel kayıtlarda 9 adalık küme — 1. Etap'ın en genişlerinden",
+    "Eryaman 1. Etap kooperatif kuşağı",
+    "Tunahan'daki Age Sitesi'nden ayrı yerleşim",
+    "Altay Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

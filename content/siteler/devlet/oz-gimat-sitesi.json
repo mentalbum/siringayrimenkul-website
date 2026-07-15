@@ -7,11 +7,19 @@
     "lng": 32.620937
   },
   "sinirGeoJSON": "siteler/devlet/oz-gimat-sitesi-boundary.geojson",
-  "aciklama": "Öz Gimat Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Öz Gimat Sitesi, Eryaman Devlet Mahallesi'nde blokları iki komşu adaya yayılmış bir sitedir; yerel kayıtlarda 2A-2C ve 7A-7D serisi olmak üzere toplam yedi blokla gösterilir — kümesinin en büyük sitesi. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46518",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "7 blok, iki komşu adada (2A-2C + 7A-7D)",
+    "Devlet Mahallesi'nin büyük sitelerinden"
+  ],
+  "alternatifAdlar": [
+    "Özgimat Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

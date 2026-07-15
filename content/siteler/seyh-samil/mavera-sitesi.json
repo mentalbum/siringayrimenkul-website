@@ -7,11 +7,20 @@
     "lng": 32.630051
   },
   "sinirGeoJSON": "siteler/seyh-samil/mavera-sitesi-boundary.geojson",
-  "aciklama": "Mavera Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Mavera Sitesi, Şeyh Şamil Mahallesi'nde yer alan bir kooperatif sitesidir; adasını Öz Tamer ve Yeni Burak siteleriyle paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46269",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Paylaşımlı yerleşim adası",
+    "Komşular: Öz Tamer, Yeni Burak",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "alternatifAdlar": [
+    "Muavera Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

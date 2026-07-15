@@ -7,11 +7,21 @@
     "lng": 32.6230417
   },
   "sinirGeoJSON": "siteler/seyh-samil/eston-bloklari-boundary.geojson",
-  "aciklama": "Eston Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Eston Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında, yerel kayıtlarda 'Eston 2' olarak anılan beş adalık kümenin içinde yer alır; aynı kümede Çamlıca Sitesi de bulunur. (Şehit Osman Avcı'daki 2. Etap Eston Blokları ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17342",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "'Eston 2' kümesi (5 ada) içinde",
+    "Çamlıca Sitesi ile komşu",
+    "Eryaman 3. Etap kooperatif kuşağı",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Eston 2 Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

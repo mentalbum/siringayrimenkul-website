@@ -4,6 +4,29 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Mega dalga D — şüpheliler + ipuçları (2026-07-15, be ada sayfaları taraması)
+İPUÇLARI (kota günü işlenecek):
+- **atakent-metro: be 6-etap sayfası 'Oyak Atakent2 Metro Sitesi 46524 Ada' diyor** —
+  eski aday 46530 değil! TKGM'de 46524 sorgula, haritala.
+- **inci-park-evleri-sitesi: be 46662'de 'İnci Park Evleri 20A/B/C' gösteriyor** —
+  46623/4 çakışma sorusunun cevabı bu olabilir; TKGM günü 46662 kontrol.
+ŞÜPHELİLER (be listesinde adı geçmeyen / çelişen kayıtlar — zenginleştirilmedi):
+- altay/ilbeyi-sitesi (45890): be 'İlbeyli' apartmanlarını DOKTORLAR Sitesi'ne bağlıyor → dupe/alt-birim?
+- altay/mood-street + vizyon-prestige (45898): be sadece Arya Nüans + Fırat Residence Life gösteriyor.
+- ata/ayyildiz-sitesi (44759): be 'Akgüner KYK + Selsen' — Ayyıldız yok (eski çakışma notuyla uyumlu).
+- ata/eser-yapi, genova, gold-life, panorama ×3, siyah-beyaz, twin-towers, armoni-life,
+  atasehir (46412 'İnşaat'), endora-plus: ada sayfalarında blok dökümü yok.
+- eryaman/sehr-i-huzur-gold (45926) ↔ asm-golt AYNI ada; be 'ASM Golt Knt.Urhal sitesi' diyor →
+  Şehr-i Huzur Gold = ASM Golt mu? DUPE ŞÜPHESİ. sehr-i-huzur-prestij (45923) ↔ 'ASM Prestij' aynı soru.
+- eryaman/beyaz-residence (45794): be 'Tertipler/Tusun Apt' gösteriyor, Beyaz yok.
+- eryaman/elif-elvan-sitesi (46383): be 'Seyitoğulları Sitesi 4-10' gösteriyor → Elif Elvan=Seyitoğulları mı?
+- eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.
+- seyh-samil/acar-sitesi (46267): be 'Gülistan Apt.4-A' gösteriyor (Acar A-C-D bekleniyordu).
+- SOA/cumhuriyet-sitesi (17491): be adayı Kutlutaş-2 kümesinde, apartmanlar İLÇE adlı
+  (Çayeli, Gebze, Havran, Kaman...) — kayıt kimliği belirsiz.
+- SOA/ahikent-sitesi (46644): be 46644'ü LALEEVLERİ gösteriyor → Ahikent mapping'i YANLIŞ şüphesi güçlendi.
+- SOA/tan-yildizi (46662), yazici-modern (46664): be listelerinde yok.
+
 ### Göksu göl-kuşağı — parti 33 notları (2026-07-15)
 - merkez-sitesi + angora-sitesi 46456/1'de haritalı AMA be 46456 blok listesinde
   Merkez/Angora YOK (liste: Ağaçlı Göl, Akdüzen, Kafdağı, Mutlu, Utkan, Uzuner, Yenigüç)

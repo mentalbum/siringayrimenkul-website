@@ -7,11 +7,17 @@
     "lng": 32.6228882
   },
   "sinirGeoJSON": "siteler/eryaman/ayka-park-sitesi-boundary.geojson",
-  "aciklama": "Ayka Park Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ayka Park Sitesi, Eryaman Mahallesi'nde tek apartmanla temsil edilen butik bir sitedir; adasını Armina Park Evleri ve Salkuma Sitesi ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46385",
       "parsel": "9"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Tek bloklu butik site",
+    "Komşular: Armina Park, Salkuma",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

@@ -7,11 +7,16 @@
     "lng": 32.618585
   },
   "sinirGeoJSON": "siteler/eryaman/akasya-evleri-boundary.geojson",
-  "aciklama": "Akasya Evleri, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Akasya Evleri, Eryaman Mahallesi'nde A ve B bloklarından oluşan, iki bloklu derli toplu bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45793",
       "parsel": "15"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (A ve B)",
+    "Eryaman Mahallesi'nin yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

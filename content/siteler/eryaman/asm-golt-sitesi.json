@@ -7,11 +7,20 @@
     "lng": 32.609529
   },
   "sinirGeoJSON": "siteler/eryaman/asm-golt-sitesi-boundary.geojson",
-  "aciklama": "Asm Golt Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz. Site, \"Şehr-i Huzur Gold Konutları\" adıyla da bilinir.",
+  "aciklama": "ASM Golt Sitesi, Eryaman Mahallesi'nde A, B ve C bloklarından oluşan üç bloklu bir konut sitesidir; yerel kayıtlarda 'Urhal Sitesi' adıyla birlikte anılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45926",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "3 blok (A, B, C)",
+    "Yerel kayıtlarda 'Urhal Sitesi' adıyla birlikte geçer",
+    "Eryaman Mahallesi"
+  ],
+  "alternatifAdlar": [
+    "Urhal Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

@@ -7,11 +7,17 @@
     "lng": 32.655858
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/ardic-sitesi-boundary.geojson",
-  "aciklama": "Ardıç Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ardıç Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan yerleşik bir sitedir; yerel kayıtlarda 'Ardınç' yazımıyla da geçer ve adasını İnci Park Evleri'nin bloklarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46662",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Yerel kayıtlarda 'Ardınç' yazımıyla da geçer",
+    "Komşu: İnci Park Evleri",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

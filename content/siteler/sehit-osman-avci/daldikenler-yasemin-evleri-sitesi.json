@@ -7,11 +7,19 @@
     "lng": 32.655717
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/daldikenler-yasemin-evleri-sitesi-boundary.geojson",
-  "aciklama": "Daldikenler Yasemin Evleri Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Daldikenler Yasemin Evleri, Şehit Osman Avcı Mahallesi'nde kendi adasında yer alan yerleşik bir sitedir; yerel kayıtlarda 'Daldiken Sitesi Yasemin Evleri' olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46660",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Kendi yerleşim adasında",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "alternatifAdlar": [
+    "Daldiken Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

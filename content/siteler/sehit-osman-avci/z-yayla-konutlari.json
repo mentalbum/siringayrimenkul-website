@@ -7,11 +7,17 @@
     "lng": 32.655383
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/z-yayla-konutlari-boundary.geojson",
-  "aciklama": "Z. Yayla Konutları, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Z. Yayla Konutları, Şehit Osman Avcı Mahallesi'nde A ve B bloklarından oluşan iki bloklu bir sitedir; adasını Ser Grup'un Elit Yaşam Konutları 1 ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46661",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (A, B)",
+    "Komşu: Elit Yaşam Konutları 1",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

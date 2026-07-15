@@ -7,11 +7,18 @@
     "lng": 32.641891
   },
   "sinirGeoJSON": "siteler/altay/sutek-bloklari-boundary.geojson",
-  "aciklama": "Sutek Blokları, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Sutek Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Age, Aktürk ve Mesa kümeleriyle aynı kuşaktadır. (Tunahan'daki 5. Etap Sutek Sitesi ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17541",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Yerel kayıtlarda 5 adalık küme",
+    "Eryaman 1. Etap kooperatif kuşağı",
+    "Tunahan'daki Sutek Sitesi'nden ayrı yerleşim",
+    "Altay Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

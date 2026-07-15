@@ -7,11 +7,17 @@
     "lng": 32.609188
   },
   "sinirGeoJSON": "siteler/eryaman/ay-sitesi-boundary.geojson",
-  "aciklama": "Ay Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ay Sitesi, Eryaman Mahallesi'nde A, B, C ve D bloklarından oluşan dört bloklu bir sitedir; adasını Burak ve Dostlar apartmanlarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45917",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "4 blok (A, B, C, D)",
+    "Komşular: Burak ve Dostlar apartmanları",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

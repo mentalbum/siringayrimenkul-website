@@ -7,7 +7,7 @@
     "lng": 32.624475
   },
   "sinirGeoJSON": "siteler/seyh-samil/tekser-bloklari-boundary.geojson",
-  "aciklama": "Tekser Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Tekser Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında, altı ayrı yerleşim adasına yayılmış büyük bir konut bölgesidir. Geniş ada aralıkları ve yeşil koridorlarıyla 3. Etap'ın planlı dokusunu taşır; Alarko, Tepe ve Eston blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17322",
@@ -33,5 +33,12 @@
       "no": "17327",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "6 ayrı yerleşim adası",
+    "Eryaman 3. Etap kooperatif kuşağı",
+    "Alarko, Tepe ve Eston kümelerine komşu",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

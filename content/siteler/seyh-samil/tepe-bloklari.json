@@ -7,11 +7,18 @@
     "lng": 32.626994
   },
   "sinirGeoJSON": "siteler/seyh-samil/tepe-bloklari-boundary.geojson",
-  "aciklama": "Tepe Blokları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Tepe Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında yer alan yerleşik bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Tekser, Eston ve Yardımcı blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17335",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Yerel kayıtlarda 5 adalık küme",
+    "Eryaman 3. Etap kooperatif kuşağı",
+    "Tekser, Eston ve Yardımcı kümelerine komşu",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

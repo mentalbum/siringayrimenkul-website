@@ -7,11 +7,16 @@
     "lng": 32.623146
   },
   "sinirGeoJSON": "siteler/eryaman/cumhuriyet-sitesi-boundary.geojson",
-  "aciklama": "Cumhuriyet Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Cumhuriyet Sitesi, Eryaman Mahallesi'nde çift sayılı numaralandırmayla 12'den 20'ye uzanan beş bloktan oluşan yerleşik bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46382",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "5 blok (12, 14, 16, 18, 20 — çift sayılı düzen)",
+    "Eryaman Mahallesi'nin yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

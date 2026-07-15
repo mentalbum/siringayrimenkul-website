@@ -7,11 +7,17 @@
     "lng": 32.654672
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/elit-yasam-konutlari-2-boundary.geojson",
-  "aciklama": "Elit Yaşam Konutları 2, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Elit Yaşam Konutları 2, Şehit Osman Avcı Mahallesi'nde Ser Grup imzalı bir konut sitesidir; blokları yerel kayıtlarda 3A ve 3B olarak geçer ve adasını Cumhuriyet Apartmanı ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46664",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (3A, 3B) — Ser Grup",
+    "Komşu: Cumhuriyet Apartmanı",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

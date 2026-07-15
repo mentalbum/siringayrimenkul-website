@@ -7,11 +7,17 @@
     "lng": 32.618374
   },
   "sinirGeoJSON": "siteler/devlet/alis-sitesi-boundary.geojson",
-  "aciklama": "Alis Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Aliş Sitesi, Eryaman Devlet Mahallesi'nde tek blokla temsil edilen bir kooperatif sitesidir; adasını Dastarlı, Sinem ve Öz Gimat'ın blok grubuyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46519",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Tek bloklu kooperatif sitesi",
+    "Komşular: Dastarlı, Sinem, Öz Gimat",
+    "Devlet Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

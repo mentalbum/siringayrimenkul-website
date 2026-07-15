@@ -7,11 +7,16 @@
     "lng": 32.609189
   },
   "sinirGeoJSON": "siteler/eryaman/lapis-garden-boundary.geojson",
-  "aciklama": "Lapis Garden, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Lapis Garden, Eryaman Mahallesi'nde A ve B bloklarından oluşan iki bloklu, yeni nesil bir konut sitesidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45924",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (A ve B)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
