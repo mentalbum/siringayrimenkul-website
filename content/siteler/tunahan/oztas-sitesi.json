@@ -7,7 +7,7 @@
     "lng": 32.627991
   },
   "sinirGeoJSON": "siteler/tunahan/oztas-sitesi-boundary.geojson",
-  "aciklama": "Öztaş Sitesi, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 6 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Öztaş Sitesi (Öztaş Blokları), Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde altı ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda toplam 29 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 32.420 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17652",
@@ -39,5 +39,16 @@
       "etap": "4",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "6 ayrı ada — toplam 29 kârgir apartman (TKGM)",
+    "Toplam ~32.420 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 4. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Öztaş Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

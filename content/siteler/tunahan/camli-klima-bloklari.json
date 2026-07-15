@@ -7,12 +7,13 @@
     "lng": 32.618537
   },
   "sinirGeoJSON": "siteler/tunahan/camli-klima-bloklari-boundary.geojson",
-  "aciklama": "Camlı Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor. TKGM kayıtlarına göre yedi ayrı ada üzerine (17621, 17622, 17623, 17629, 17630, 17631 ve 17632) kurulu site, her adada 4 blok olmak üzere toplam 28 bloktan oluşuyor; toplam parsel alanı yaklaşık 38.300 m² ve yedi parselin tamamı kat mülkiyeti tapulu. Bloklarda 1+1, 2+1 ve 3+1 daire tipleri bulunuyor. Konum olarak 4. Etap Çarşısı'na yaklaşık 300 metre, metroya yaklaşık 1 kilometre mesafede; TBMM Caddesi güzergâhına uzaklık adaya göre 50 ile 300 metre arasında değişiyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Camlı Klima Blokları — yerel kayıtlarda \"Klima (8, Camlı) Blokları\" olarak geçer — Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde, yedi ayrı adaya yayılmış bir konut kümesidir; adındaki \"Camlı\" ifadesiyle komşusu Klima (6) Blokları'ndan ayrışır; iki küme birlikte bölgenin tanıdık 'Klima' yerleşimini oluşturur. TKGM kayıtlarına göre adalarda toplam 28 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 38.345 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "7 ada üzerinde toplam 28 blok",
-    "1+1, 2+1 ve 3+1 daire tipleri",
-    "Kat mülkiyeti tapulu",
-    "4. Etap Çarşısı'na ~300 m, metroya ~1 km"
+    "7 ayrı ada — toplam 28 kârgir apartman (TKGM)",
+    "Toplam ~38.345 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 4. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
   ],
   "adalar": [
     {
@@ -50,5 +51,9 @@
       "parsel": "1",
       "etap": "4"
     }
-  ]
+  ],
+  "alternatifAdlar": [
+    "Klima (8, Camlı) Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

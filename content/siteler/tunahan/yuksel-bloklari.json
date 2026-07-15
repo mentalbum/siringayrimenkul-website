@@ -7,7 +7,7 @@
     "lng": 32.626337
   },
   "sinirGeoJSON": "siteler/tunahan/yuksel-bloklari-boundary.geojson",
-  "aciklama": "Yüksel Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Yüksel Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda toplam 21 kârgir apartman bulunuyor — ada başına üçer apartmanlık seyrek ve ferah bir yerleşim düzeni; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 37.554 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17649",
@@ -44,5 +44,13 @@
       "etap": "4",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "7 ayrı ada — toplam 21 kârgir apartman (TKGM)",
+    "Toplam ~37.554 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 4. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

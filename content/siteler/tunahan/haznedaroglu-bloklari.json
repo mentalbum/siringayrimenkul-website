@@ -7,7 +7,7 @@
     "lng": 32.621864
   },
   "sinirGeoJSON": "siteler/tunahan/haznedaroglu-bloklari-boundary.geojson",
-  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 6 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap kooperatif kuşağında, yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda toplam 24 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 37.169 m². Geniş ada aralıkları, yeşil alanları ve oturmuş çevresiyle 4. Etap'ın karakteristik dokusunu taşır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17633",
@@ -35,9 +35,21 @@
       "parsel": "1"
     },
     {
+      "no": "17638",
+      "parsel": "1"
+    },
+    {
       "no": "17639",
       "etap": "4",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "7 ayrı ada — toplam 24 kârgir apartman (TKGM)",
+    "Toplam ~37.169 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 4. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

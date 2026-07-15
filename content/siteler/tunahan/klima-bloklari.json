@@ -7,7 +7,7 @@
     "lng": 32.622302
   },
   "sinirGeoJSON": "siteler/tunahan/klima-bloklari-boundary.geojson",
-  "aciklama": "Klima Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde yer alıyor; 7 ayrı ada üzerinde konumlanmış bloklardan oluşuyor. 17625 Ada, bölgede yerel olarak \"Gökkuşağı Evleri\" adıyla da bilinir. Bu bloklar hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Klima Blokları — yerel kayıtlarda \"Klima (6) Blokları\" olarak geçer — Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde, yedi ayrı adaya yayılmış yerleşik bir konut kümesidir; komşusu Camlı Klima Blokları ile birlikte 4. Etap'ın tanıdık 'Klima' yerleşimini oluşturur. TKGM kayıtlarına göre adalarda toplam 28 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 37.998 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17624",
@@ -44,5 +44,16 @@
       "etap": "4",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "7 ayrı ada — toplam 28 kârgir apartman (TKGM)",
+    "Toplam ~37.998 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 4. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Klima (6) Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
