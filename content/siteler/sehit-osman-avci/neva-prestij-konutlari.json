@@ -7,7 +7,7 @@
     "lng": 32.6570918
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/neva-prestij-konutlari-boundary.geojson",
-  "aciklama": "Neva Prestij Konutları (Neva Prestij Metro Rezidansları), Eryaman Şehit Osman Avcı Mahallesi'nde Neva Prestij Yapı tarafından geliştirilmiş, yüksek katlı bir rezidans projesidir. Müteahhidin kendi proje listesine göre 46643 ada / 4 parsel üzerinde toplam 100 daireden oluşuyor — bu parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanıyor. Daire yelpazesi geniş: kompakt 1+1'lerden 5+1 teraslı dublekslere kadar farklı tipler bulunuyor; krediye uygun, ankastreli daireleriyle biliniyor. 'Metro rezidansı' konseptiyle İstanbul Yolu metro hattına yakın konumda. Bu sitede satılık veya kiralık daireniz mi var? Tip çeşitliliği yüksek projelerde fiyatı tip, kat ve cephe belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Neva Prestij Konutları (Neva Prestij Metro Rezidansları), Eryaman Şehit Osman Avcı Mahallesi'nde Neva Prestij Yapı tarafından geliştirilmiş, yüksek katlı bir rezidans projesidir. Müteahhidin kendi proje listesine göre tek parsel üzerinde toplam 100 daireden oluşuyor — bu parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanıyor. Daire yelpazesi geniş: kompakt 1+1'lerden 5+1 teraslı dublekslere kadar farklı tipler bulunuyor; krediye uygun, ankastreli daireleriyle biliniyor. 'Metro rezidansı' konseptiyle İstanbul Yolu metro hattına yakın konumda. Bu sitede satılık veya kiralık daireniz mi var? Tip çeşitliliği yüksek projelerde fiyatı tip, kat ve cephe belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46643",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "46643/4 Ada — müteahhit beyanı TKGM ile birebir uyumlu",
+    "Müteahhit parsel beyanı TKGM tapu kaydımızla birebir uyumlu",
     "Neva Prestij Yapı — 100 daire, yüksek katlı",
     "1+1'den 5+1 teraslı dublekse geniş yelpaze",
     "Metro rezidansı konsepti (İstanbul Yolu hattı)",

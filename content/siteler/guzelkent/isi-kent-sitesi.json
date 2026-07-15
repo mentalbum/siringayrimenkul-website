@@ -10,7 +10,7 @@
     "lng": 32.6198834
   },
   "sinirGeoJSON": "siteler/guzelkent/isi-kent-sitesi-boundary.geojson",
-  "aciklama": "Işı Kent Sitesi — yerel kayıtlarda bitişik yazımla \"Işıkent\" olarak geçer — Etimesgut Güzelkent Mahallesi'nde, 18462 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 27'den 37'ye yalnızca tek sayılarla numaralanmış (27, 29, 31, 33, 35, 37) — altı blok; komşu Şahinbey Sitesi'nin 39-47 serisiyle birlikte okununca mahalledeki tek sayılı blok geleneğinin parçası olduğu görülüyor. Işı Kent'te dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, değeri siteyi tanıyan emlakçınızla birlikte netleştirin.",
+  "aciklama": "Işı Kent Sitesi — yerel kayıtlarda bitişik yazımla \"Işıkent\" olarak geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.225 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 27'den 37'ye yalnızca tek sayılarla numaralanmış (27, 29, 31, 33, 35, 37) — altı blok; komşu Şahinbey Sitesi'nin 39-47 serisiyle birlikte okununca mahalledeki tek sayılı blok geleneğinin parçası olduğu görülüyor. Işı Kent'te dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, değeri siteyi tanıyan emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18462",
@@ -18,10 +18,12 @@
     }
   ],
   "ozellikler": [
-    "18462 Ada",
+    "5.225 m² tek parsel (TKGM)",
     "6 blok (27–37, tek sayılı seri)",
     "Yerel kayıtlarda \"Işıkent\" yazımıyla geçer",
-    "Şahinbey Sitesi'yle komşu numara serisi"
+    "Şahinbey Sitesi'yle komşu numara serisi",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

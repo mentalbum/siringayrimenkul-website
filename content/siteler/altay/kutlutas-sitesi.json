@@ -7,7 +7,7 @@
     "lng": 32.6458
   },
   "sinirGeoJSON": "siteler/altay/kutlutas-sitesi-boundary.geojson",
-  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde Eryaman'ın 1. Etap bölgesinde, yaklaşık 189.000 m²'lik (189 dönüm) bir alana yayılan, bölgenin en büyük kooperatif kökenli yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada (17499–17511) üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve 17502 adadaki 23 dublekslik konut grubundan oluşuyor. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde Eryaman'ın 1. Etap bölgesinde, yaklaşık 189.000 m²'lik (189 dönüm) bir alana yayılan, bölgenin en büyük kooperatif kökenli yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve 17502 adadaki 23 dublekslik konut grubundan oluşuyor. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17499",

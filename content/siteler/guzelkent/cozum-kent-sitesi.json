@@ -10,7 +10,7 @@
     "lng": 32.615911
   },
   "sinirGeoJSON": "siteler/guzelkent/cozum-kent-sitesi-boundary.geojson",
-  "aciklama": "Çözüm Kent Sitesi — yerel kayıtlarda bitişik yazımla \"Çözümkent\" olarak da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18480 ada 1 parseldeki 4.979 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 2, 2-1, 2-4, 2-5, 2B ve 2C olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat ve iç durumla netleşir — sitenin güncel talebini bilen emlakçınızla birlikte karar verin.",
+  "aciklama": "Çözüm Kent Sitesi — yerel kayıtlarda bitişik yazımla \"Çözümkent\" olarak da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 4.979 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 2, 2-1, 2-4, 2-5, 2B ve 2C olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat ve iç durumla netleşir — sitenin güncel talebini bilen emlakçınızla birlikte karar verin.",
   "adalar": [
     {
       "no": "18480",
@@ -18,7 +18,7 @@
     }
   ],
   "ozellikler": [
-    "18480/1 Ada — 4.979 m² tek parsel (TKGM)",
+    "4.979 m² tek parsel (TKGM)",
     "6 blok kârgir apartman (2, 2-1, 2-4, 2-5, 2B, 2C)",
     "Yerel kayıtlarda \"Çözümkent\" yazımıyla da geçer",
     "Kat mülkiyetli parsel (TKGM)",

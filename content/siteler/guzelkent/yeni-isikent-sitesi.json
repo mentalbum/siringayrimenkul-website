@@ -7,7 +7,7 @@
     "lng": 32.6200977
   },
   "sinirGeoJSON": "siteler/guzelkent/yeni-isikent-sitesi-boundary.geojson",
-  "aciklama": "Yeni Işıkent Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18455 adada yer alan bir konut sitesidir. Yerel emlak kayıtlarında bloklar harf ve sayının birlikte kullanıldığı A-2, B-4 ve C-6 adlarıyla geçiyor; üç bloklu, sakin bir site profili. Yeni Işıkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, üç bloklu bir sitede her ilan dikkat çeker — fiyatı emsallerle birlikte netleştirelim.",
+  "aciklama": "Yeni Işıkent Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"3 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.201 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar harf ve sayının birlikte kullanıldığı A-2, B-4 ve C-6 adlarıyla geçiyor; üç bloklu, sakin bir site profili. Yeni Işıkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, üç bloklu bir sitede her ilan dikkat çeker — fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18455",
@@ -15,9 +15,11 @@
     }
   ],
   "ozellikler": [
-    "18455 Ada",
+    "5.201 m² tek parsel (TKGM)",
     "3 blok (A-2, B-4, C-6)",
-    "Küçük ölçekli, sakin yerleşim"
+    "Küçük ölçekli, sakin yerleşim",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

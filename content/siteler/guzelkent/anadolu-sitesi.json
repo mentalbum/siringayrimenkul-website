@@ -10,7 +10,7 @@
     "lng": 32.612186
   },
   "sinirGeoJSON": "siteler/guzelkent/anadolu-sitesi-boundary.geojson",
-  "aciklama": "Anadolu Sitesi — yerel emlak kayıtlarında \"Ankara Anadolu Sitesi\" adıyla da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18474 ada 1 parseldeki 4.923 m²'lik parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 6, 6A, 6B, 7, 12 ve 12A olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Büyük Ankara Sitesi'yle komşudur. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri birlikte değerlendirelim.",
+  "aciklama": "Anadolu Sitesi — yerel emlak kayıtlarında \"Ankara Anadolu Sitesi\" adıyla da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 4.923 m²'lik parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 6, 6A, 6B, 7, 12 ve 12A olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Büyük Ankara Sitesi'yle komşudur. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri birlikte değerlendirelim.",
   "adalar": [
     {
       "no": "18474",
@@ -18,7 +18,7 @@
     }
   ],
   "ozellikler": [
-    "18474/1 Ada — 4.923 m² parsel (TKGM)",
+    "Tek parsel, 4.923 m² parsel (TKGM)",
     "6 blok kârgir apartman (6, 6A, 6B, 7, 12, 12A)",
     "Yerel kayıtlarda \"Ankara Anadolu Sitesi\" adıyla da geçer",
     "Kat mülkiyetli parsel (TKGM)",

@@ -7,7 +7,7 @@
     "lng": 32.618077
   },
   "sinirGeoJSON": "siteler/guzelkent/cagdas-sistem-sitesi-boundary.geojson",
-  "aciklama": "Çağdaş Sistem Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 18472 ada 1 parseldeki 5.411 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı — bu, çevresindeki emsallere göre geniş bir parsel. Blokların yerel kayıtlardaki adlandırması dikkat çekici: 1, 3, 5, 7, 9 ve 11 olarak yalnızca tek sayılarla numaralanmış. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Satmayı ya da kiraya vermeyi düşünüyorsanız — geniş parselli, oturmuş sitelerde doğru fiyatın anahtarı emsal takibi; onu siteyi bilen emlakçınızla birlikte yapın.",
+  "aciklama": "Çağdaş Sistem Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 5.411 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı — bu, çevresindeki emsallere göre geniş bir parsel. Blokların yerel kayıtlardaki adlandırması dikkat çekici: 1, 3, 5, 7, 9 ve 11 olarak yalnızca tek sayılarla numaralanmış. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Satmayı ya da kiraya vermeyi düşünüyorsanız — geniş parselli, oturmuş sitelerde doğru fiyatın anahtarı emsal takibi; onu siteyi bilen emlakçınızla birlikte yapın.",
   "adalar": [
     {
       "no": "18472",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "18472/1 Ada — 5.411 m² tek parsel (TKGM)",
+    "5.411 m² tek parsel (TKGM)",
     "6 blok kârgir apartman (1, 3, 5, 7, 9, 11 — tek sayılı düzen)",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"

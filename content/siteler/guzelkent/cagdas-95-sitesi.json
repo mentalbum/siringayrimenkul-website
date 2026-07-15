@@ -10,7 +10,7 @@
     "lng": 32.6128196
   },
   "sinirGeoJSON": "siteler/guzelkent/cagdas-95-sitesi-boundary.geojson",
-  "aciklama": "Çağdaş 95 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan, mahallenin küçük ölçekli sitelerinden biridir. TKGM kayıtlarına göre 18491 ada 1 parseldeki 4.627 m²'lik parsel üzerinde \"3 Blok Kârgir Apartman\" olarak kayıtlı; bloklar 1, 2 ve 3 olarak numaralanmış. Üç bloklu yapısıyla az daireli, sakin bir site profili çiziyor. Yerel emlak kayıtlarında \"Çağdaş 91 Sitesi\" adıyla da anılıyor — arama yaparken iki isimle de karşılaşabilirsiniz. Parselin tamamı kat mülkiyetine geçmiş; kadastroda mahalle adı \"Eryaman\" olarak kayıtlı. Bu sitede satılık veya kiralık daireniz mi var? Az daireli sitelerde her ilan daha görünür olur — doğru fiyatı ve doğru sunumu, siteyi tanıyan emlakçınızla birlikte kurgulayalım.",
+  "aciklama": "Çağdaş 95 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan, mahallenin küçük ölçekli sitelerinden biridir. TKGM kayıtlarına göre 4.627 m²'lik parsel üzerinde \"3 Blok Kârgir Apartman\" olarak kayıtlı; bloklar 1, 2 ve 3 olarak numaralanmış. Üç bloklu yapısıyla az daireli, sakin bir site profili çiziyor. Yerel emlak kayıtlarında \"Çağdaş 91 Sitesi\" adıyla da anılıyor — arama yaparken iki isimle de karşılaşabilirsiniz. Parselin tamamı kat mülkiyetine geçmiş; kadastroda mahalle adı \"Eryaman\" olarak kayıtlı. Bu sitede satılık veya kiralık daireniz mi var? Az daireli sitelerde her ilan daha görünür olur — doğru fiyatı ve doğru sunumu, siteyi tanıyan emlakçınızla birlikte kurgulayalım.",
   "adalar": [
     {
       "no": "18491",
@@ -18,7 +18,7 @@
     }
   ],
   "ozellikler": [
-    "18491/1 Ada — 4.627 m² parsel (TKGM)",
+    "Tek parsel, 4.627 m² parsel (TKGM)",
     "3 blok kârgir apartman (1, 2, 3)",
     "Yerel kayıtlarda \"Çağdaş 91\" adıyla da geçer",
     "Kat mülkiyetli parsel (TKGM)",

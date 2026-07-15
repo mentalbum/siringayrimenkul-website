@@ -7,7 +7,7 @@
     "lng": 32.655348
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/neva-panora-konutlari-boundary.geojson",
-  "aciklama": "Neva Panora Konutları (Neva Panora Metro Rezidansları), Eryaman Şehit Osman Avcı Mahallesi'nde Malazgirt Caddesi çevresinde, Neva Prestij Yapı tarafından geliştirilmiş bir konut projesidir. Müteahhidin kendi proje listesine göre 46631 ada / 3 parsel üzerinde toplam 100 daireden oluşuyor — bu parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanıyor. Dairelar 1+1, 2+1 ve 3+1 tiplerinde; 'metro rezidansı' konseptiyle İstanbul Yolu metro hattına yakınlık projenin ana satış vaadi. Cadde cepheli ve site içi blok seçenekleri bulunuyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Neva Panora Konutları (Neva Panora Metro Rezidansları), Eryaman Şehit Osman Avcı Mahallesi'nde Malazgirt Caddesi çevresinde, Neva Prestij Yapı tarafından geliştirilmiş bir konut projesidir. Müteahhidin kendi proje listesine göre tek parsel üzerinde toplam 100 daireden oluşuyor — bu parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanıyor. Dairelar 1+1, 2+1 ve 3+1 tiplerinde; 'metro rezidansı' konseptiyle İstanbul Yolu metro hattına yakınlık projenin ana satış vaadi. Cadde cepheli ve site içi blok seçenekleri bulunuyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46631",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "46631/3 Ada — müteahhit beyanı TKGM ile birebir uyumlu",
+    "Müteahhit parsel beyanı TKGM tapu kaydımızla birebir uyumlu",
     "Neva Prestij Yapı — 100 daire",
     "1+1, 2+1 ve 3+1 tipleri",
     "Metro rezidansı konsepti (İstanbul Yolu hattı)",

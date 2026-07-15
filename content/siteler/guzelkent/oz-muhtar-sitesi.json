@@ -11,7 +11,7 @@
     "lng": 32.608585
   },
   "sinirGeoJSON": "siteler/guzelkent/oz-muhtar-sitesi-boundary.geojson",
-  "aciklama": "Öz Muhtar Sitesi — yerel kayıtlarda \"Öz Muhtarlar 2\" ve bitişik yazımla \"Özmuhtar 2\" adlarıyla geçer — Etimesgut Güzelkent Mahallesi'nde, 18670 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 7 ile 7A'dan 7E'ye uzanan adlarla sıralanıyor — altı blok. Gökkuşağı Sitesi'yle (18671) ardışık adalardadır. Öz Muhtar'da dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat için sitenin emsallerini yakından izleyen emlakçınızla ilerleyin.",
+  "aciklama": "Öz Muhtar Sitesi — yerel kayıtlarda \"Öz Muhtarlar 2\" ve bitişik yazımla \"Özmuhtar 2\" adlarıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.013 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 7 ile 7A'dan 7E'ye uzanan adlarla sıralanıyor — altı blok. Gökkuşağı Sitesi'yle (18671) ardışık adalardadır. Öz Muhtar'da dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat için sitenin emsallerini yakından izleyen emlakçınızla ilerleyin.",
   "adalar": [
     {
       "no": "18670",
@@ -19,10 +19,12 @@
     }
   ],
   "ozellikler": [
-    "18670 Ada",
+    "5.013 m² tek parsel (TKGM)",
     "6 blok (7, 7A–7E)",
     "Yerel kayıtlarda \"Öz Muhtarlar 2 / Özmuhtar 2\" adıyla geçer",
-    "Güzelkent'in yerleşik sitelerinden"
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

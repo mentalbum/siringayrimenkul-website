@@ -7,7 +7,7 @@
     "lng": 32.6025254
   },
   "sinirGeoJSON": "siteler/devlet/cagkent-sitesi-boundary.geojson",
-  "aciklama": "Çağkent Sitesi, Eryaman Devlet Mahallesi'nde, 18673 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar A-12, B-12, C-12 ve D-12 olarak geçiyor — dört blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çağkent Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar A-12, B-12, C-12 ve D-12 olarak geçiyor — dört blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18673",

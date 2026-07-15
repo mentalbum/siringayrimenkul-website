@@ -7,7 +7,7 @@
     "lng": 32.620586
   },
   "sinirGeoJSON": "siteler/guzelkent/sahinbey-sitesi-boundary.geojson",
-  "aciklama": "Şahinbey Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18461 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar dikkat çekici bir düzenle, 39'dan 47'ye yalnızca tek sayılarla (39, 41, 43, 45, 47) numaralanmış — beş blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — değeri birlikte netleştirelim.",
+  "aciklama": "Şahinbey Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"5 Blok Kargir Apartman\" niteliğiyle kayıtlı 4.865 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar dikkat çekici bir düzenle, 39'dan 47'ye yalnızca tek sayılarla (39, 41, 43, 45, 47) numaralanmış — beş blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — değeri birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18461",
@@ -15,9 +15,11 @@
     }
   ],
   "ozellikler": [
-    "18461 Ada",
+    "4.865 m² tek parsel (TKGM)",
     "5 blok (39, 41, 43, 45, 47 — tek sayılı seri)",
-    "Güzelkent'in yerleşik sitelerinden"
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

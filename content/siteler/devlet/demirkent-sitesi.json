@@ -7,7 +7,7 @@
     "lng": 32.60633
   },
   "sinirGeoJSON": "siteler/devlet/demirkent-sitesi-boundary.geojson",
-  "aciklama": "Demirkent Sitesi, Eryaman Devlet Mahallesi'nde, 18676 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar A-12, B-12, C-12 ve D olarak sıralanıyor — dört blok. Demirkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat ve iç durumla netleşir — birlikte değerlendirelim.",
+  "aciklama": "Demirkent Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar A-12, B-12, C-12 ve D olarak sıralanıyor — dört blok. Demirkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat ve iç durumla netleşir — birlikte değerlendirelim.",
   "adalar": [
     {
       "no": "18676",

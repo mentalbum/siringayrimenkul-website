@@ -7,7 +7,7 @@
     "lng": 32.60846
   },
   "sinirGeoJSON": "siteler/devlet/asiyan-sitesi-boundary.geojson",
-  "aciklama": "Aşiyan Sitesi, Eryaman Devlet Mahallesi'nde, 18688 adada yer alan büyük ölçekli bir konut sitesidir. Yerel emlak kayıtlarında bloklar çift kodlu bir düzenle sıralanıyor: 1-31'den 10-13'e uzanan toplam on blok. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri site içi emsalleri izleyen emlakçınızla birlikte netleştirin.",
+  "aciklama": "Aşiyan Sitesi, Eryaman Devlet Mahallesi'nde yer alan büyük ölçekli bir konut sitesidir. Yerel emlak kayıtlarında bloklar çift kodlu bir düzenle sıralanıyor: 1-31'den 10-13'e uzanan toplam on blok. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri site içi emsalleri izleyen emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18688",

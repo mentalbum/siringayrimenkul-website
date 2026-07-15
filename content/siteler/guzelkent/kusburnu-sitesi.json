@@ -7,7 +7,7 @@
     "lng": 32.620445
   },
   "sinirGeoJSON": "siteler/guzelkent/kusburnu-sitesi-boundary.geojson",
-  "aciklama": "Kuşburnu Sitesi, Etimesgut Güzelkent Mahallesi'nde, 18460 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 9 serisiyle adlandırılmış: 9 ile 9-1'den 9-5'e uzanan toplam altı blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — fiyatı emsallerle birlikte belirleyelim, süreci birlikte yürütelim.",
+  "aciklama": "Kuşburnu Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Bloktan Oluşan Kargir Apt.\" niteliğiyle kayıtlı 5.057 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 9 serisiyle adlandırılmış: 9 ile 9-1'den 9-5'e uzanan toplam altı blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — fiyatı emsallerle birlikte belirleyelim, süreci birlikte yürütelim.",
   "adalar": [
     {
       "no": "18460",
@@ -15,9 +15,11 @@
     }
   ],
   "ozellikler": [
-    "18460 Ada",
+    "5.057 m² tek parsel (TKGM)",
     "6 blok (9, 9-1–9-5)",
-    "Güzelkent'in yerleşik sitelerinden"
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

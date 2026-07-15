@@ -10,7 +10,7 @@
     "lng": 32.6113889
   },
   "sinirGeoJSON": "siteler/guzelkent/nazlideniz-sitesi-boundary.geojson",
-  "aciklama": "Nazlıdeniz Sitesi — ayrık yazımla \"Nazlı Deniz Sitesi\" olarak da bilinir — Etimesgut Güzelkent Mahallesi'nde, 18488 adada yer alan yerleşik bir konut sitesidir. Yerel emlak kayıtlarında bloklar 10 ile 10A'dan 10E'ye uzanan adlarla sıralanıyor — altı blok. Didem Sitesi'yle (18489) ardışık adalarda yer alır. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — birlikte değerlendirelim.",
+  "aciklama": "Nazlıdeniz Sitesi — ayrık yazımla \"Nazlı Deniz Sitesi\" olarak da bilinir — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.132 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 10 ile 10A'dan 10E'ye uzanan adlarla sıralanıyor — altı blok. Didem Sitesi'yle (18489) ardışık adalarda yer alır. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — birlikte değerlendirelim.",
   "adalar": [
     {
       "no": "18488",
@@ -18,10 +18,12 @@
     }
   ],
   "ozellikler": [
-    "18488 Ada",
+    "5.132 m² tek parsel (TKGM)",
     "6 blok (10, 10A–10E)",
     "Didem Sitesi'yle ardışık adalarda",
-    "Güzelkent'in yerleşik sitelerinden"
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }
