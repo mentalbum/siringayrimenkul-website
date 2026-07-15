@@ -7,11 +7,18 @@
     "lng": 32.632622
   },
   "sinirGeoJSON": "siteler/susuz/goksu-hisar-evleri-boundary.geojson",
-  "aciklama": "Göksu Hisar Evleri, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Göksu Hisar Evleri, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 14.750 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"17 Katlı A Blok Ve 16 Katlı B Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63929",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~14.750 m² parsel (TKGM)",
+    "16-17 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

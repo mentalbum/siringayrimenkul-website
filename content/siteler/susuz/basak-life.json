@@ -7,11 +7,18 @@
     "lng": 32.652854
   },
   "sinirGeoJSON": "siteler/susuz/basak-life-boundary.geojson",
-  "aciklama": "Başak Life, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Başak Life, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 4.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"19 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63355",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~4.000 m² parsel (TKGM)",
+    "19 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

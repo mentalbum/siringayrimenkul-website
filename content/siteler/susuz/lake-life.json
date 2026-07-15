@@ -7,11 +7,18 @@
     "lng": 32.646511
   },
   "sinirGeoJSON": "siteler/susuz/lake-life-boundary.geojson",
-  "aciklama": "Lake Life, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Lake Life, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.336 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"15 Katlı Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63379",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~5.336 m² parsel (TKGM)",
+    "15 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

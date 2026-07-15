@@ -4,6 +4,13 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Susuz/Göksu toplu TKGM kuyruğu — kota bitti (2026-07-16 akşam)
+- Susuz-İmar mahalleId=123432 KEŞFİ; 19 parsel çekildi (17 yazıldı + 2 ARSA:
+  bordo-gol 63376/6 kat irtifaklı, maviler-ipek 63275/1 ana taşınmaz → Özgün).
+- KALAN 55 kayıt scratchpad susuz-goksu-kalan.json'da — yarın kota tazeyken
+  aynı script'le (63xxx→123432, 46xxx/48xxx/16828→124123) çek + Ata-formatı yaz.
+- Not: yildiz-life pini 63316/2'ye düşüyor (ARSA), dosyada 63316/1 — teyit.
+
 ### Ata ARSA-nitelikli parseller (2026-07-16, parti 48 — 8 kayıt zenginleştirilemedi)
 Tapuda bina kaydı yok (Arsa + çoğu kat irtifaklı = yeni proje/cins tashihsiz):
 ata-life (12.748m²), beloren + erkent-umut (aynı 7.955m² arsa — İKİSİ AYNI PARSELDE, dupe/karışım şüphesi de var),

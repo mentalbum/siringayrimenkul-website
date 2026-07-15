@@ -7,11 +7,18 @@
     "lng": 32.659228
   },
   "sinirGeoJSON": "siteler/susuz/ap-forest-gate-boundary.geojson",
-  "aciklama": "Ap Forest Gate, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ap Forest Gate, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.152 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Er Katlı 2 Adet A Ve B Bloklardan Oluşan 3 Er Katlı 6 Adet C,D,E,F,G Ve H Bloklardan Oluşan Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63285",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~9.152 m² parsel (TKGM)",
+    "3-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

@@ -7,11 +7,18 @@
     "lng": 32.641466
   },
   "sinirGeoJSON": "siteler/susuz/lilyum-sitesi-boundary.geojson",
-  "aciklama": "Lilyum Sitesi, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Lilyum Sitesi, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.006 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"18 Katlı Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63360",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.006 m² parsel (TKGM)",
+    "18 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
