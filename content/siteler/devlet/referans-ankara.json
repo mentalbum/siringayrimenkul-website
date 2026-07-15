@@ -7,11 +7,18 @@
     "lng": 32.612823
   },
   "sinirGeoJSON": "siteler/devlet/referans-ankara-boundary.geojson",
-  "aciklama": "Referans Ankara, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Referans Ankara, Devlet Mahallesi sınırındaki modern gelişim aksında yükselen, Eryaman silüetinin en büyük kule projelerinden biridir. TKGM kayıtlarına göre 49.233 m²'lik kat mülkiyetli tek parselde tapu niteliği yapıyı ayrıntısıyla anlatır: 33 katlı A-B-C-D-E blokları, 31 katlı F-G-H blokları ve 29 katlı I bloğu — toplam dokuz kule. Ölçeği ve kat yüksekliğiyle bölgedeki en yoğun dikey yaşam alanıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "48507",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "49.233 m² tek parsel (TKGM)",
+    "9 kule: 5×33 + 3×31 + 1×29 kat (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman silüetinin en büyük projelerinden"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

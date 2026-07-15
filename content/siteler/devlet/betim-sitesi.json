@@ -7,11 +7,18 @@
     "lng": 32.615696
   },
   "sinirGeoJSON": "siteler/devlet/betim-sitesi-boundary.geojson",
-  "aciklama": "Betim Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Betim Sitesi, Devlet Mahallesi'nin büyük paylaşımlı adasında yer alır; blokları yerel kayıtlarda 1 ve 3 olarak geçer — iki blok. Paylaştığı büyük yerleşim adası TKGM kayıtlarında yaklaşık 39.842 m²'lik kat mülkiyetli tek parseldir; adada Betim, İlkbahar, Özarda Göktürk, Sahil, Sözova ve Tesiş sitelerinin blokları bir arada yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46520",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (1 ve 3)",
+    "Ada parseli ~39.842 m² (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Altı sitenin paylaştığı büyük ada"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

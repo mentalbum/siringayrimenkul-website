@@ -4,6 +4,16 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Devlet kalanları — parti 38 notları (2026-07-16)
+- **4-devlet-mahallesi-sitesi (18700/1): parsel tapuda '7 Katlı Betonarme OKUL, Üniversite,
+  Araştırma'** — mapping yanlış görünüyor (okul parseli); sitenin gerçek adası → Özgün/TKGM.
+- ornek-tes-is-sitesi ↔ tes-is-bloklari: ikisi de 46520'de; be tek 'Tesiş Sitesi' gösteriyor →
+  DUPE şüphesi (Özgün: hangisi kalsın?). tes-is-bloklari zenginleştirildi, ornek-tes-is bekliyor.
+- hotki-meydan (ADASIZ): be 18684'ü 'HOTKİ RESİDANCE' gösteriyor — ad farkı (Meydan vs Residance);
+  cumhuriyet/hotki-bulvar da ayrı. Hotki ailesi netleşmeli → Özgün.
+- 18674 'Lojman 8-A..D' (kayıt yok — lojman, kayıt açılmaz muhtemelen).
+- Devlet 18680-85/18702/18704 ada sayfaları boş.
+
 ### firat-life-style-goksu-sitesi = GÖKSU PRESTİJ MÜKERRERİ (2026-07-15, TKGM+QA kanıtlı)
 - be'nin 'FIRAT LİFE STYLE GÖKSU konutları' dediği 46620/3, TKGM'de '5 Katlı A Blok +
   17'şer Katlı B,C,D,E' (15.523 m²) — goksu-prestij'in haritalı parseli ve '5 blok 192
