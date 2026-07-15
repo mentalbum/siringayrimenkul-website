@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gülşah - 95 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18518/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60638,
+      39.9887
+     ],
+     [
+      32.60593,
+      39.9889
+     ],
+     [
+      32.60539,
+      39.98868
+     ],
+     [
+      32.60521,
+      39.98844
+     ],
+     [
+      32.60595,
+      39.98812
+     ],
+     [
+      32.60638,
+      39.9887
+     ]
+    ]
+   ]
+  ]
+ }
+}

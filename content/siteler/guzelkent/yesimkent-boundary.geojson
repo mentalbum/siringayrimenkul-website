@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeşimkent",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18520/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60577,
+      39.99033
+     ],
+     [
+      32.60571,
+      39.99037
+     ],
+     [
+      32.60483,
+      39.99036
+     ],
+     [
+      32.60484,
+      39.9898
+     ],
+     [
+      32.60578,
+      39.9898
+     ],
+     [
+      32.60577,
+      39.99033
+     ]
+    ]
+   ]
+  ]
+ }
+}

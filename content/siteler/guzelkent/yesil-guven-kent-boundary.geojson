@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yeşil Güven Kent",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18490/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61082,
+      39.99387
+     ],
+     [
+      32.61082,
+      39.99333
+     ],
+     [
+      32.61086,
+      39.99331
+     ],
+     [
+      32.61174,
+      39.99332
+     ],
+     [
+      32.61177,
+      39.99333
+     ],
+     [
+      32.61175,
+      39.99383
+     ],
+     [
+      32.61168,
+      39.99389
+     ],
+     [
+      32.61085,
+      39.99388
+     ],
+     [
+      32.61082,
+      39.99387
+     ]
+    ]
+   ]
+  ]
+ }
+}

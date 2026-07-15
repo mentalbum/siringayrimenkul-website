@@ -2,11 +2,24 @@
   "isim": "Altay Sitesi",
   "slug": "altay-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Altay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel emlak kayıtları siteyi 18519 adasında gösterir. Bloklar aynı kayıtlarda 10 ile 10A'dan 10E'ye uzanan adlarla sıralanıyor — altı blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Altay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; TKGM kayıtlarına göre site, 18519 ada 1 parseldeki 5.040 m²'lik tek parsel üzerine kurulu ve tapuda \"6 Blok Kargir Apartman\" niteliğiyle geçiyor. Bloklar yerel emlak kayıtlarında 10 ile 10A'dan 10E'ye uzanan adlarla sıralanıyor — altı blok. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "Yerel kayıtlarda 18519 adası",
+    "18519/1 Ada — 5.040 m² tek parsel (TKGM)",
     "6 blok (10, 10A–10E)",
-    "Güzelkent'in yerleşik sitelerinden"
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-07-14",
+  "koordinat": {
+    "lat": 39.989437,
+    "lng": 32.605443
+  },
+  "sinirGeoJSON": "siteler/guzelkent/altay-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18519",
+      "parsel": "1"
+    }
+  ]
 }

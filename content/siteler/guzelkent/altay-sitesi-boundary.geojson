@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Altay Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18519/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60578,
+      39.98971
+     ],
+     [
+      32.60484,
+      39.98971
+     ],
+     [
+      32.60485,
+      39.98913
+     ],
+     [
+      32.60562,
+      39.98914
+     ],
+     [
+      32.60579,
+      39.98922
+     ],
+     [
+      32.60578,
+      39.98971
+     ]
+    ]
+   ]
+  ]
+ }
+}

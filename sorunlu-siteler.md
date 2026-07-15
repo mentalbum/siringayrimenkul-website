@@ -15,7 +15,7 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   turgut-aslan (18694), yeni-huzur-bahcesi (18677), yesiloz↔"Yeşil Öz" (18686),
   yildiz-tatil (18706). Tunahan'da da 7 TAM eşleşme var.
 
-### Parti 21 kayıt tamamlama (2026-07-14 — ada yalnızca yerel kayıttan, TKGM teyidi + koordinat + sınır gerekli)
+### Parti 21 kayıt tamamlama — ✅ TAMAMLANDI 2026-07-15 (6/6 TKGM doğrudan uç noktayla doğrulandı; adalar+koordinat+sınır+alan/nitelik yazıldı)
 altay (18519), gulsah-95 (18518), sirin-91 (18653), yenigun-isigi (18465),
 yesil-guven-kent (18490), yesimkent (18520) — dosyalarda adalar/koordinat alanı YOK;
 TKGM açılınca 124123/{ada}/1 ile doğrula → adalar + koordinat (merkez) + sınır GeoJSON üret,
@@ -52,7 +52,7 @@ kat mülkiyeti** cümlesi eklenecek (`api/parsel/{koordinat}` ya da 124123/{ada}
 DİKKAT: bilgiemlak "Alan" değeri TKGM'den sapıyor (Konuta Özlem: 5.638 vs 5.169 m²) —
 alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
 
-### Eksik ikinci ada bulunanlar (2026-07-14, bilgiemlak indeks taraması)
+### Eksik ikinci ada bulunanlar — ✅ TAMAMLANDI 2026-07-15 (18640/18502/18504/18521 TKGM'den çekildi, sınırlar MultiPolygon'a genişletildi, koordinatlar birleşik merkeze düzeltildi)
 - **erkent-sitesi**: dosyada 18639, bilgiemlak 18639+18640 → 18640 TKGM'den doğrulanıp eklenecek.
 - **ulas-sitesi**: dosyada 18503, bilgiemlak 18502+18503 → 18502 eklenecek (koordinatı da GB cebinde, bozuk).
 - **safi-apak-sitesi**: dosyada 18505, bilgiemlak 18504+18505 → 18504 eklenecek (koordinat GB cebi).

@@ -3,12 +3,16 @@
   "slug": "cankaya-vefa-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {
-    "lat": 39.99181,
-    "lng": 32.606339
+    "lat": 39.991458,
+    "lng": 32.606166
   },
   "sinirGeoJSON": "siteler/guzelkent/cankaya-vefa-sitesi-boundary.geojson",
   "aciklama": "Çankaya Vefa Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
   "adalar": [
+    {
+      "no": "18521",
+      "parsel": "1"
+    },
     {
       "no": "18522",
       "parsel": "1"

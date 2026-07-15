@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Şirin 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18653/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60378,
+      39.98366
+     ],
+     [
+      32.60354,
+      39.98387
+     ],
+     [
+      32.60352,
+      39.98388
+     ],
+     [
+      32.60265,
+      39.98342
+     ],
+     [
+      32.60264,
+      39.98337
+     ],
+     [
+      32.60306,
+      39.98297
+     ],
+     [
+      32.60318,
+      39.98297
+     ],
+     [
+      32.60378,
+      39.98366
+     ]
+    ]
+   ]
+  ]
+ }
+}
