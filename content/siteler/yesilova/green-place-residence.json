@@ -7,11 +7,18 @@
     "lng": 32.6083946
   },
   "sinirGeoJSON": "siteler/yesilova/green-place-residence-boundary.geojson",
-  "aciklama": "Green Place Residence, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Green Place Residence, Yeşilova'da geniş balkonlu, bağımsız mutfaklı 2+1 daireleriyle bilinen modern bir rezidanstır; Green Hill ile birlikte mahallenin 'yeşil' konseptli ikilisini oluşturur. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47546",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Bağımsız mutfaklı 2+1 daireler",
+    "Geniş balkonlar",
+    "Green Hill'in kardeş konsepti",
+    "Yeşilova / Eryaman gelişim aksı"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

@@ -7,11 +7,21 @@
     "lng": 32.6100162
   },
   "sinirGeoJSON": "siteler/yesilova/penta-5-boundary.geojson",
-  "aciklama": "Penta 5, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Penta 5 Residence, Yeşilova'da 4014. Cadde No:14'te yer alan bir rezidanstır; ilanlarda bağımsız mutfaklı, ultra lüks 2+1 daireleri öne çıkar. Yeşilova'nın 4014. Cadde rezidans koridorunun parçasıdır — Doğan Life, Hotki Ritm ve Penta 5'in sıralandığı bu aks, mahallenin yeni nesil konut vitrini durumundadır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47549",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Bağımsız mutfaklı 2+1 daireler",
+    "Rezidans yapısı",
+    "Yeşilova / Eryaman gelişim aksı"
+  ],
+  "adres": "4014. Cadde No:14, Yeşilova, Etimesgut/Ankara",
+  "alternatifAdlar": [
+    "Penta 5 Residence"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
