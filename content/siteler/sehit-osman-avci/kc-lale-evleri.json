@@ -7,7 +7,7 @@
     "lng": 32.653852
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/kc-lale-evleri-boundary.geojson",
-  "aciklama": "KC Lale Evleri, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "KC Lale Evleri, Şehit Osman Avcı Mahallesi'nde altı ayrı adaya yayılan, mahallenin en büyük yerleşimlerinden biridir. TKGM kayıtlarına göre adalarda toplam 26 blok bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 83.659 m² — yani 80 dönümü aşan bir yaşam alanı. Geniş iç bahçeleri ve ada aralarındaki yeşil koridorlarıyla site, bölgede 'Lale Evleri' adıyla bilinen oturmuş bir çevre sunar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46638",
@@ -33,5 +33,16 @@
       "no": "46646",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "6 ayrı ada — toplam 26 blok (TKGM)",
+    "Toplam ~83.659 m² (TKGM) — 80+ dönüm",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Şehit Osman Avcı — kadastroda Şeker kaydı"
+  ],
+  "alternatifAdlar": [
+    "Lale Evleri",
+    "Laleevleri KC Konutları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

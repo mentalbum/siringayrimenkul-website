@@ -7,11 +7,19 @@
     "lng": 32.6506785
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/kazim-sari-sitesi-boundary.geojson",
-  "aciklama": "Kazım Sarı Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Kazım Sarı Sitesi, Şehit Osman Avcı Mahallesi'nde Eryaman 2. Etap bölgesinde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre parselde 4 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 8.097 m². Yerel kayıtlarda komşu İçtaş ile birlikte 'İçtaş, Kazım Sarı Blokları' kümesi içinde anılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17483",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "4 kârgir apartman (TKGM)",
+    "~8.097 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman 2. Etap kooperatif kuşağı",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

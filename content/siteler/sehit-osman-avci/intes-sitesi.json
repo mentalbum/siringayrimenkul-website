@@ -3,15 +3,30 @@
   "slug": "intes-sitesi",
   "mahalleSlug": "sehit-osman-avci",
   "koordinat": {
-    "lat": 39.98157,
-    "lng": 32.650188
+    "lat": 39.981944,
+    "lng": 32.649197
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/intes-sitesi-boundary.geojson",
-  "aciklama": "İntes Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "İntes Sitesi (İntes Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman 2. Etap bölgesinde iki adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre her adada beşer olmak üzere toplam 10 betonarme apartman bulunuyor; parseller kat mülkiyetli ve toplam alanları yaklaşık 15.692 m². Yerel kayıtlarda komşu Çamlık ve Çiçek siteleriyle birlikte daha geniş bir 'İntes Blokları' kümesi içinde anılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17468",
       "parsel": "1"
+    },
+    {
+      "no": "17469",
+      "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 ada — toplam 10 apartman (her adada 5, TKGM)",
+    "Toplam ~15.692 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eryaman 2. Etap kooperatif kuşağı",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "İntes Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

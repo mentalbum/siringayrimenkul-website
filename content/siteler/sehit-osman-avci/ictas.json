@@ -7,11 +7,19 @@
     "lng": 32.6497771
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/ictas-boundary.geojson",
-  "aciklama": "İçtaş, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "İçtaş, Şehit Osman Avcı Mahallesi'nde Eryaman 2. Etap bölgesinde yer alan yerleşik bir konut adasıdır. TKGM kayıtlarına göre parselde 6 betonarme apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 6.578 m². Yerel kayıtlarda komşu Kazım Sarı Sitesi ile birlikte 'İçtaş, Kazım Sarı Blokları' kümesi içinde anılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17498",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "6 betonarme apartman (TKGM)",
+    "~6.578 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman 2. Etap kooperatif kuşağı",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

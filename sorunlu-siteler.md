@@ -4,6 +4,21 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### SOA İntes kümesi — be gruplaması kaba (2026-07-15, QA kapısı yakaladı)
+- bilgiemlak 'İntes Blokları' 4 ada gösteriyor (17468-71) ama 17470 = bizim
+  camlik-sitesi, 17471 = cicek-sitesi. İntes kaydına eklemiştim, QA çakışma verdi
+  → GERİ ALINDI; İntes 17468+17469 ile kaldı.
+- Muhtemelen İntes yapımcı firmanın kümesi; Çamlık/Çiçek o kümede ayrı adlandırılmış
+  siteler. Çamlık/Çiçek zenginleştirilirken bu bağ metne yazılabilir (TKGM verileri
+  hazır: 17470 = 5 apt 6.276 m², 17471 = 5 apt 6.751 m²).
+
+### SOA İçtaş-Kazım Sarı kümesinin sahipsiz 3 adası (2026-07-15)
+- bilgiemlak 'İçtaş, Kazım Sarı Blokları' kümesinde 4 ada gösteriyor: 17480 (7 apt),
+  17481 (9 apt), 17482 (6 apt), 17498 (6 apt = bizim ictas kaydı).
+- Bizim kazim-sari-sitesi ise 17483'te (4 kârgir apt — be kümesinde YOK).
+- 17480/81/82 (toplam 22 apartman) hangi kayda ait? İçtaş'ın mı, Kazım Sarı'nın mı,
+  ayrı bir site mi? → Özgün'e sor; şimdilik iki kayıt kendi tek adasıyla zenginleştirildi.
+
 ### tunahan/kur-sitesi — MÜKERRER ŞÜPHESİ (2026-07-15)
 - kur-sitesi (46496/2) ile kur-sitesi-c2b-2h (46496/2) AYNI ada/parseli taşıyor;
   bilgiemlak Kur Blokları'nı tek yerleşim, iki ada (46495+46496) olarak gösteriyor.
