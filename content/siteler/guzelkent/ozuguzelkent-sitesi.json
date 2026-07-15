@@ -3,15 +3,26 @@
   "slug": "ozuguzelkent-sitesi",
   "mahalleSlug": "guzelkent",
   "koordinat": {
-    "lat": 39.9829903,
-    "lng": 32.6076817
+    "lat": 39.983095,
+    "lng": 32.607548
   },
   "sinirGeoJSON": "siteler/guzelkent/ozuguzelkent-sitesi-boundary.geojson",
-  "aciklama": "Özügüzelkent Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Özügüzelkent Sitesi, Etimesgut Güzelkent Mahallesi'nde yan yana iki parsel üzerine kurulu yerleşik bir konut sitesidir. TKGM kayıtlarına göre ilki 5.095 m², ikincisi 5.212 m² olmak üzere toplam yaklaşık 10.307 m²; her iki parsel de tapuda altışar blok kârgir apartman niteliğiyle kayıtlı — toplam 12 blok — ve kat mülkiyetli. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18664",
       "parsel": "1"
+    },
+    {
+      "no": "18665",
+      "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "İki parsel, toplam ~10.307 m² (TKGM)",
+    "Toplam 12 blok (iki parselde altışar, tapu kaydı)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

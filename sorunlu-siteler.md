@@ -146,7 +146,22 @@ yesil-guven-kent (18490), yesimkent (18520) — dosyalarda adalar/koordinat alan
 TKGM açılınca 124123/{ada}/1 ile doğrula → adalar + koordinat (merkez) + sınır GeoJSON üret,
 açıklamaya alan+nitelik cümlesi ekle.
 
-### Çift-adalı / belirsiz eşleşmeler (TKGM günü çözülecek)
+### Çift-adalı / belirsiz eşleşmeler — 2026-07-16 KISMEN ÇÖZÜLDÜ
+✔ gozde-91: 18641+18642 haritalandı (iki parselde 6'şar blok, toplam 12, ~9.972 m²).
+✔ ozuguzelkent: +18665 eklendi (iki parselde 6'şar blok, toplam ~10.307 m²).
+✔ aksu: 18512 doğrudan sorguyla haritalandı (6 blok=8/8A-8E, 5.072 m²) + zenginleşti.
+✔ baskent-sular: 18477 haritalandı — tapu 'A ve B Blok 14 KATLI' ikiz kule! + zenginleşti.
+✔ arslanlar: 18679 tapu 'A-F 6 blok' + be teyidi → Arslanlar'da kaldı, zenginleşti;
+  cagrikent'in 18679 iddiası KALDIRILDI (haritasız; gerçek adası → Özgün).
+KALAN (Özgün/ek kaynak):
+- gozde-1 ↔ gozde-2: 18651/18652'den hangisi hangisi? (ikisi de 6 blok; metin-only zenginleştirildi,
+  sıralı varsayım YAPILMADI — Özgün söylerse haritalanır)
+- seniz-sitesi ↔ seniz-konut-kooperatifi: 18516+18517 (ikisi de 3 blok) — iki site mi tek sitenin
+  iki kaydı mı? TKGM verisi hazır (4.426 + 4.615 m², KM).
+- mesa çifti: 18506/18507/18659 üçü de '3 Blok' — adlar çapraz, TKGM ayıramıyor → Özgün.
+- ipek-yapi ↔ be 'İpek Sitesi' 18476 (3 blok, 4.279 m² KM hazır) — ad bağı teyidi → Özgün.
+- pinarkent-91 ↔ be 'Pınar Sitesi' 18511 (6 blok, 4.950 m² KM hazır) — ad bağı teyidi → Özgün.
+--- (eski metin) ---
 - gozde-1 + gozde-2 ↔ be "gozde-sitesi 18651-18652" (hangi dosya hangi ada? TKGM nitelik+konum ile ayrıştır)
 - gozde-91 ↔ 18641-18642 (iki ada, tek dosya — Anka 2001 tipi çoklu parsel olabilir)
 - seniz-sitesi + seniz-konut-kooperatifi ↔ 18516-18517 (iki dosya iki ada mı, tek site mi?)

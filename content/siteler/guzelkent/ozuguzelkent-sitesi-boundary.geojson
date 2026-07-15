@@ -4,7 +4,8 @@
   "isim": "Özügüzelkent Sitesi",
   "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
   "adalar": [
-   "18664/1"
+   "18664/1",
+   "18665/1"
   ]
  },
  "geometry": {
@@ -39,6 +40,34 @@
      [
       32.60832,
       39.98326
+     ]
+    ]
+   ],
+   [
+    [
+     [
+      32.60732,
+      39.98329
+     ],
+     [
+      32.60727,
+      39.98332
+     ],
+     [
+      32.60648,
+      39.98335
+     ],
+     [
+      32.60649,
+      39.98268
+     ],
+     [
+      32.60729,
+      39.98265
+     ],
+     [
+      32.60732,
+      39.98329
      ]
     ]
    ]

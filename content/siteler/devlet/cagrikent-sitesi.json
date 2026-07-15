@@ -2,16 +2,5 @@
   "isim": "Çağrıkent Sitesi",
   "slug": "cagrikent-sitesi",
   "mahalleSlug": "devlet",
-  "koordinat": {
-    "lat": 39.980303,
-    "lng": 32.604323
-  },
-  "sinirGeoJSON": "siteler/devlet/cagrikent-sitesi-boundary.geojson",
-  "aciklama": "Çağrıkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
-  "adalar": [
-    {
-      "no": "18679",
-      "parsel": "1"
-    }
-  ]
+  "aciklama": "Çağrıkent Sitesi, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
 }

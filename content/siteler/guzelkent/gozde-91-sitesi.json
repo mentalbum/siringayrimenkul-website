@@ -2,5 +2,27 @@
   "isim": "Gözde 91 Sitesi",
   "slug": "gozde-91-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gözde 91 Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Gözde 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yan yana iki parsel üzerine kurulu yerleşik bir konut sitesidir. TKGM kayıtlarına göre her iki parsel de tapuda altışar blok kârgir apartman niteliğiyle kayıtlı — toplam 12 blok; parseller kat mülkiyetli ve toplam alanları yaklaşık 9.972 m². Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18641",
+      "parsel": "1"
+    },
+    {
+      "no": "18642",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.986478,
+    "lng": 32.604907
+  },
+  "sinirGeoJSON": "siteler/guzelkent/gozde-91-sitesi-boundary.geojson",
+  "ozellikler": [
+    "İki parsel, toplam ~9.972 m² (TKGM)",
+    "Toplam 12 blok (iki parselde altışar, tapu kaydı)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
