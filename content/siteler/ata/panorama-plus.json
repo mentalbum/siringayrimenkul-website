@@ -7,11 +7,19 @@
     "lng": 32.5971664
   },
   "sinirGeoJSON": "siteler/ata/panorama-plus-boundary.geojson",
-  "aciklama": "Panorama Plus, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Panorama Plus, Dimaş İnşaat imzalı; yaklaşık 7.000 m² alanda 14 katlı 3 blokta toplam 168 daireden oluşan bir konut projesidir. Dairelerin tamamı 3+1 tipindedir (141-142 m²) — tek tip plan, fiyatlamayı kat ve cepheye indirger. Dimaş İnşaat'ın Ata Mahallesi'ndeki beş projelik 'Panorama' ailesinin (Life, Garden, Gold, Plus, Prestij) üyesidir; her proje kendi parselinde ayrı bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44778",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "3 blok (14 katlı) — 168 daire",
+    "Tamamı 3+1 (141-142 m²)",
+    "~7.000 m² alan",
+    "Dimaş İnşaat — Panorama ailesi",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

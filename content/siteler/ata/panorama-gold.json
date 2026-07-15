@@ -7,11 +7,19 @@
     "lng": 32.5996449
   },
   "sinirGeoJSON": "siteler/ata/panorama-gold-boundary.geojson",
-  "aciklama": "Panorama Gold, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Panorama Gold, Dimaş İnşaat imzalı; Mavi Yıldız Caddesi üzerinde yaklaşık 15.000 m²'lik alanda kurulu güvenlikli bir sitedir. Geniş daire tipleriyle ailenin üst segment projelerindendir. Dimaş İnşaat'ın Ata Mahallesi'ndeki beş projelik 'Panorama' ailesinin (Life, Garden, Gold, Plus, Prestij) üyesidir; her proje kendi parselinde ayrı bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "44765",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~15.000 m² alan — güvenlikli site",
+    "Mavi Yıldız Caddesi üzeri",
+    "Geniş daire tipleri",
+    "Dimaş İnşaat — Panorama ailesi",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
