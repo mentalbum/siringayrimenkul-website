@@ -7,7 +7,7 @@
     "lng": 32.6394081
   },
   "sinirGeoJSON": "siteler/goksu/aksafak-sitesi-boundary.geojson",
-  "aciklama": "Akşafak Sitesi, Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Akşafak'ın blokları yerel kayıtlarda 7-1A ve 7-2B olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Gölkent 2, Havacılar ve Utkan siteleri bulunur. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Akşafak Sitesi, Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Akşafak'ın blokları yerel kayıtlarda 7-1A ve 7-2B olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Gölkent 2, Havacılar ve Utkan siteleri bulunur. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 20.963 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46457",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "2 blok (7-1A, 7-2B)",
+    "Ada parseli ~20.963 m², kat mülkiyetli (TKGM)",
     "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
     "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
     "Göksu — kadastroda Eryaman kaydı"

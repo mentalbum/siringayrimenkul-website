@@ -3,19 +3,37 @@
   "slug": "tepe-bloklari",
   "mahalleSlug": "seyh-samil",
   "koordinat": {
-    "lat": 39.99382,
-    "lng": 32.626994
+    "lat": 39.993906,
+    "lng": 32.626972
   },
   "sinirGeoJSON": "siteler/seyh-samil/tepe-bloklari-boundary.geojson",
-  "aciklama": "Tepe Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında yer alan yerleşik bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Tekser, Eston ve Yardımcı blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Tepe Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında yer alan beş ayrı yerleşim adasına yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre adalarda toplam 24 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 28.050 m². Tekser, Eston ve Yardımcı blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
+      "no": "17333",
+      "parsel": "1"
+    },
+    {
+      "no": "17334",
+      "parsel": "1"
+    },
+    {
       "no": "17335",
+      "parsel": "1"
+    },
+    {
+      "no": "17336",
+      "parsel": "1"
+    },
+    {
+      "no": "17337",
       "parsel": "1"
     }
   ],
   "ozellikler": [
-    "Yerel kayıtlarda 5 adalık küme",
+    "5 ayrı ada — toplam 24 kârgir apartman (TKGM)",
+    "Toplam ~28.050 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
     "Eryaman 3. Etap kooperatif kuşağı",
     "Tekser, Eston ve Yardımcı kümelerine komşu",
     "Şeyh Şamil — kadastroda Eryaman kaydı"

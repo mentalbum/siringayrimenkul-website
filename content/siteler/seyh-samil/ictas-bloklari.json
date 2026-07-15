@@ -2,12 +2,41 @@
   "isim": "İçtaş Blokları",
   "slug": "ictas-bloklari",
   "mahalleSlug": "seyh-samil",
-  "aciklama": "İçtaş Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında yer alır; yerel kayıtlarda beş adalık bir küme olarak gösterilir. (Şehit Osman Avcı'daki 2. Etap İçtaş adası ayrı bir yerleşimdir.) Tekser ve Yardımcı kümeleriyle aynı kuşaktadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "İçtaş Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında beş ayrı yerleşim adasına yayılmış olarak yer alır. TKGM kayıtlarına göre adalarda toplam 33 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 30.829 m². (Şehit Osman Avcı'daki 2. Etap İçtaş adası ayrı bir yerleşimdir.) Tekser ve Yardımcı kümeleriyle aynı kuşaktadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "Yerel kayıtlarda 5 adalık küme",
+    "5 ayrı ada — toplam 33 kârgir apartman (TKGM)",
+    "Toplam ~30.829 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
     "Eryaman 3. Etap kooperatif kuşağı",
     "SOA'daki 2. Etap İçtaş'tan ayrı yerleşim",
     "Şeyh Şamil — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-07-15",
+  "adalar": [
+    {
+      "no": "17346",
+      "parsel": "1"
+    },
+    {
+      "no": "17347",
+      "parsel": "1"
+    },
+    {
+      "no": "17348",
+      "parsel": "1"
+    },
+    {
+      "no": "17349",
+      "parsel": "1"
+    },
+    {
+      "no": "17350",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.996955,
+    "lng": 32.626336
+  },
+  "sinirGeoJSON": "siteler/seyh-samil/ictas-bloklari-boundary.geojson"
 }

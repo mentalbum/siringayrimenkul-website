@@ -7,7 +7,7 @@
     "lng": 32.6336106
   },
   "sinirGeoJSON": "siteler/seyh-samil/serender-sitesi-boundary.geojson",
-  "aciklama": "Serender Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Blokları yerel kayıtlarda 8 ve 10 olarak geçer — iki blok; Akkent, Melis ve Umut 92 sitelerinin komşusudur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Serender Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kuşakta yer alır. Haritaladığımız parselin tapu kaydı 16 katlı betonarme apartmanı gösterir (yaklaşık 4.780 m², kat mülkiyetli); yerel emlak kayıtları ise Serender adına komşu adada 8 ve 10 numaralı blokları da yazar — site iki kayıtta da Akkent, Melis ve Umut 92'nin komşusudur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konum, bölgenin sakin kooperatif dokusuyla birleşir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46487",
@@ -15,9 +15,10 @@
     }
   ],
   "ozellikler": [
-    "İki bloklu kooperatif sitesi (8 ve 10)",
+    "16 katlı betonarme apartman, ~4.780 m² (TKGM, haritalı parsel)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yerel kayıtlarda ayrıca 8 ve 10 numaralı bloklar",
     "Türkonut Göl Bölgesi",
-    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
     "Şeyh Şamil — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15"

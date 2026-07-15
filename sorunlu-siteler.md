@@ -4,6 +4,21 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### firat-life-style-goksu-sitesi = GÖKSU PRESTİJ MÜKERRERİ (2026-07-15, TKGM+QA kanıtlı)
+- be'nin 'FIRAT LİFE STYLE GÖKSU konutları' dediği 46620/3, TKGM'de '5 Katlı A Blok +
+  17'şer Katlı B,C,D,E' (15.523 m²) — goksu-prestij'in haritalı parseli ve '5 blok 192
+  konut' verisiyle birebir örtüşüyor. → firat-life-style-goksu-sitesi dosyası SİLİNMELİ
+  (Özgün onayı); 'Fırat Life Style Göksu' adı goksu-prestij'e alternatifAd yazıldı. ✔yarı-çözüldü
+- 46524/1 (Eryaman kadastro): '3 Blok Kargir Apartman', 13.908 m² — be adı 'Oyak Atakent2
+  Metro Sitesi'. atakent-metro-sitesi ile atakent-2-sitesi kayıtlarımız muhtemelen AYNI
+  sitenin iki kaydı (dupe şüphesi); atakent-metro'nun eski koordinatı da (32.6263) yanlış
+  bölgeyi gösteriyor. → Özgün: Atakent Metro = Atakent 2 mi? Onaydan sonra 46524/1 haritalanır.
+- 46662 İnci Park araması: /3 'Yedi Katlı A Blok' KAT İRTİFAKI (muhtemelen be'deki 'İnşaat
+  A/B' blokları), /1,/2,/4,/5 Arsa. İnci Park'ın 20A/B/C blokları 46662'nin kalan
+  parsellerinde olabilir ya da be konumu yaklaşık → çözülemedi, inci-park 46623/4'te kaldı.
+- zekioglu-rezidans (46657/1): parsel tapuda ARSA (kat irtifaklı) — bina pini şüpheli;
+  be 46657'yi 'Neva Prestige Metro Rezidens' (yeni proje) gösteriyor. → Özgün.
+
 ### Mega dalga D-2 ipuçları (2026-07-15, Yeni Batı + Göksu kentsel gelişim taraması)
 - **firat-life-style-goksu-sitesi'nin evi bulundu: be 46620'yi 'FIRAT LİFE STYLE GÖKSU
   konutları' gösteriyor** — relax-goksu (46622) mükerrer şüphesi YANLIŞmış, ayrı site!
