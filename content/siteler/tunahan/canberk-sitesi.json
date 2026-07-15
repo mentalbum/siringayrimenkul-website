@@ -7,12 +7,14 @@
     "lng": 32.634518
   },
   "sinirGeoJSON": "siteler/tunahan/canberk-sitesi-boundary.geojson",
-  "aciklama": "Canberk Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor. TKGM kayıtlarına göre site, 50.423 m²'lik tek bir parsel üzerine kurulu 10 bloktan oluşuyor — bu haliyle Tunahan'ın en büyük tek parselli sitelerinden biri. Dairelerin tamamı 3+1 tipinde ve parsel kat mülkiyeti tapulu. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Tunahan Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Canberk Sitesi — yerel emlak kayıtlarında \"Canberk Heyet Sitesi\" olarak da geçer — Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alır. TKGM kayıtlarına göre site, 50.423 m²'lik tek parsel üzerine kurulu 10 bloktan oluşuyor — Tunahan'ın en büyük tek parselli yerleşimlerinden biri; bloklar yerel kayıtlarda 3, 3A'dan 3H'ye ve 3K olarak sıralanıyor ve parsel kat mülkiyetli. Geniş parseli ve yeşil alanlarıyla 5. Etap kooperatif dokusunun karakteristik örneğidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "Tek parsel üzerinde 10 blok",
-    "50.423 m² parsel alanı",
-    "3+1 daireler",
-    "Kat mülkiyeti tapulu"
+    "50.423 m² tek parsel (TKGM)",
+    "10 blok (3, 3A–3H, 3K)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tunahan'ın en büyük tek parselli yerleşimlerinden",
+    "Eryaman 5. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
   ],
   "adalar": [
     {
@@ -20,5 +22,9 @@
       "parsel": "1",
       "etap": "5"
     }
-  ]
+  ],
+  "alternatifAdlar": [
+    "Canberk Heyet Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
