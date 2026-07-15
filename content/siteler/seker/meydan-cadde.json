@@ -7,11 +7,18 @@
     "lng": 32.655161
   },
   "sinirGeoJSON": "siteler/seker/meydan-cadde-boundary.geojson",
-  "aciklama": "Meydan Cadde, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Meydan Cadde, Şeker Mahallesi'nin 1408. Cadde aksında konut ve çarşıyı bir arada barındıran karma bir yapıdır; zemininde asma katlı cadde dükkânları yer alır. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46361",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Konut + cadde dükkânları (karma)",
+    "1408. Cadde aksı",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "adres": "1408. Cadde, Şeker, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-16"
 }
