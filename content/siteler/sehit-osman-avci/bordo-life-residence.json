@@ -7,11 +7,21 @@
     "lng": 32.657879
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/bordo-life-residence-boundary.geojson",
-  "aciklama": "Bordo Life Residence, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Bordo Life Residence, Eryaman Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi üzerinde yer alan, Bordo markasının (Bordokent) projelerinden bir rezidans sitesidir. Geliştiricinin proje kaydına göre 2015'te teslim edilen yapıda toplam 148 daire ve 1 dükkan bulunuyor; daireler ağırlıklı olarak 1+1, 2+1, 3+1 ve 4+1 tiplerinde. Yerel emlak kayıtlarında fitness ve sauna, dış cephe mantolama, ısı-ses izolasyonu, hidrofor ve güvenlik siteye ait donatılar arasında geçiyor. 10+ katlı yapısıyla manzaralı üst kat daireleri öne çıkıyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46659",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "46659/4 Ada — yerel emlak kaydı (46659) ile uyumlu",
+    "148 daire + 1 dükkan (geliştirici verisi)",
+    "1+1, 2+1, 3+1 ve 4+1 tipleri",
+    "2015 teslim",
+    "Fitness, sauna, mantolama, güvenlik",
+    "Malazgirt 1071. Caddesi üzeri"
+  ],
+  "adres": "Malazgirt 1071. Caddesi No:28, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-15"
 }
