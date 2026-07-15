@@ -4,6 +4,21 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Göksu göl-kuşağı — parti 33 notları (2026-07-15)
+- merkez-sitesi + angora-sitesi 46456/1'de haritalı AMA be 46456 blok listesinde
+  Merkez/Angora YOK (liste: Ağaçlı Göl, Akdüzen, Kafdağı, Mutlu, Utkan, Uzuner, Yenigüç)
+  → pin kayması ya da be eksiği; TKGM günü + Özgün'le teyit, ikisi de zenginleştirilMEDİ.
+- goksu-bilge-sitesi de 46457'de haritalı ama be 46457 listesinde YOK (Akşafak/Gölkent2/Havacılar/Utkan var) → aynı şüphe grubunda.
+- golkent-sitesi (ADASIZ): be'de 'Gölkent' (46455 = bizim golkent-1) ve 'Gölkent 2'
+  (46457, bloklar 7-5/7-6) var → golkent-sitesi hangisi? Gölkent 2 mi, golkent-1 dupe mu?
+- YENİ SİTE ADAYLARI (repo'da yok): Eceser (46453), Göksu Aura (46453, 3/3A),
+  Utkukent (46453-46454, Çınar/Kardelen apt), Hava Destek (46455, 5-5/5-6),
+  Akdüzen (46456, 5A/5B), Kafdağı (46456, 1B), Uzuner (46456, 5D — altay/uzuner-konutlari
+  ilişkisi?), Gölkent 2 (46457) → Özgün: kayıt açılsın mı?
+- Tamamlama kuyruğu (TKGM günü, 5 sorgu): 46453/1, 46454/1, 46455/1, 46456/1, 46457/1
+  alan+nitelik → 10 site metnine eklenebilir. goksu-arma sınırı goksu-evleri kopyası
+  (aynı parsel varsayımı) — TKGM günü 46454/1 geometrisiyle çapraz kontrol.
+
 ### Türkonut Göl Bölgesi — parti 32 notları (2026-07-15)
 - YENİ SİTE ADAYLARI (repo'da yok, be ada sayfalarında var): İlksebat Sitesi (46486'da
   10/12/14 blokları), Yuvam Başar Sitesi (46489'da 59-4/59-5) → Özgün: kayıt açılsın mı?

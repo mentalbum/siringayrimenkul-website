@@ -7,11 +7,18 @@
     "lng": 32.6394665
   },
   "sinirGeoJSON": "siteler/goksu/mutlu-sitesi-boundary.geojson",
-  "aciklama": "Mutlu Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Mutlu Sitesi, Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Mutlu Sitesi yerel kayıtlarda 5 numaralı blokla temsil edilir — tek bloklu kooperatif. Aynı adayı paylaştığı komşuları arasında Ağaçlı Göl (Yakamoz), Akdüzen, Kafdağı, Utkan, Uzuner ve Yenigüç siteleri bulunur. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46456",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Tek bloklu kooperatif sitesi",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Göksu — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
