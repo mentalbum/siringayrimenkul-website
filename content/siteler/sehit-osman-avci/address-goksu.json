@@ -7,11 +7,21 @@
     "lng": 32.6533366
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/address-goksu-boundary.geojson",
-  "aciklama": "Address Göksu, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Address Göksu, Eryaman Şehit Osman Avcı Mahallesi'nde 1. TBMM Caddesi üzerinde, ALR İnşaat tarafından geliştirilmiş bir konut projesidir. Göksu Parkı ve gölet manzarasına bakan konumu projenin ana değeri; ilanlarda özellikle göl cepheli büyük tip 4+1 daireler (~151 m²) öne çıkıyor. Modern mimarisi, site içi sosyal alanları ve otoparkıyla mahallenin yeni nesil projelerinden; hem doğaya hem İstanbul Yolu aksının ulaşım imkanlarına yakın. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı projelerde fiyatı cephe (göl/park yönü) ve kat ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46620",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "46620/5 Ada",
+    "ALR İnşaat — modern mimari",
+    "Göksu Parkı ve gölet manzarası",
+    "Büyük tip 4+1 (~151 m²) öne çıkıyor",
+    "Site içi sosyal alanlar, otopark",
+    "1. TBMM Caddesi / Şehit Osman Avcı"
+  ],
+  "adres": "1. TBMM Caddesi, Şehit Osman Avcı, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-07-15"
 }

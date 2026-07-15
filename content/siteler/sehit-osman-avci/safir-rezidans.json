@@ -7,11 +7,20 @@
     "lng": 32.655155
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/safir-rezidans-boundary.geojson",
-  "aciklama": "Safir Rezidans, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Safir Rezidans, Eryaman Şehit Osman Avcı Mahallesi'nde, İstanbul Yolu metro istasyonuna yaklaşık 100 metre mesafede konumlanan bir rezidans projesidir. İlan kaynaklarına göre ağırlıklı olarak 1+1 (yaklaşık 65–70 m²) kompakt dairelerden oluşuyor; merkezi ısıtma, jeneratör, tam otomatik asansörler ve yük asansörü ile 261 araçlık otoparkı bulunuyor. Metro dibi konumu sayesinde özellikle kiralık talebinin yüksek olduğu, yatırımcı ağırlıklı bir yapı. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46640",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "46640/5 Ada",
+    "Ağırlıklı 1+1 (~65–70 m²) kompakt daireler",
+    "İstanbul Yolu metrosuna ~100 m",
+    "261 araçlık otopark, yük asansörü",
+    "Merkezi ısıtma, jeneratör",
+    "Yatırımlık/kiralık talebi yüksek konum"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
