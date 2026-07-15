@@ -7,11 +7,22 @@
     "lng": 32.653492
   },
   "sinirGeoJSON": "siteler/seker/golden-life-residence-boundary.geojson",
-  "aciklama": "Golden Life Residence, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Golden Life Residence, Şeker Mahallesi'nde Gimsa Park AVM yanında, Dinamik Grup tarafından 2014-2015'te inşa edilen bir rezidans projesidir — Mood, Motto ve Metropark'ın müteahhidinin Şeker'deki işi. Geliştiricinin verilerine göre projede 69 adet 1+1 ve 32 adet 2+1 olmak üzere toplam 101 daire bulunuyor; kompakt tipleriyle yatırımcı profiline uygun. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46368",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Dinamik Grup — 101 daire (69×1+1 + 32×2+1)",
+    "2014-2015 inşa",
+    "Gimsa Park AVM yanı",
+    "Kompakt/yatırımlık profil",
+    "Şeker Mahallesi / Eryaman"
+  ],
+  "alternatifAdlar": [
+    "Golden Life Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

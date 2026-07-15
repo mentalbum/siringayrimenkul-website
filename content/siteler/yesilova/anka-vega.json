@@ -7,11 +7,20 @@
     "lng": 32.6108601
   },
   "sinirGeoJSON": "siteler/yesilova/anka-vega-boundary.geojson",
-  "aciklama": "Anka Vega, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Anka Vega Konutları, Yeşilova'nın yeni gelişim aksında yer alan modern bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir'in komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe, manzara ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47544",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Modern site — 2+1 (~82 m²) tipler",
+    "Meva Şehir komşuluğunda genç doku",
+    "Yeşilova / Eryaman"
+  ],
+  "alternatifAdlar": [
+    "Anka Vega Konutları"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

@@ -7,11 +7,23 @@
     "lng": 32.658608
   },
   "sinirGeoJSON": "siteler/seker/dort-mevsim-eryaman-konutlari-boundary.geojson",
-  "aciklama": "Dört Mevsim Eryaman Konutları, Ankara Etimesgut'a bağlı Şeker Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeker Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Dört Mevsim Eryaman Konutları, Şeker Mahallesi'nde Tuna-Türkoğlu ortak girişimiyle (Türkoğlu Yapı) geliştirilen ve Kasım 2016'da teslim edilen büyük bir sitedir. Müteahhidin verilerine göre yaklaşık 50.000 m²'lik alanda 7 blokta toplam 360 konut yer alıyor ve daireler 4+1 tipindedir. Kapalı yüzme havuzu, kondisyon salonu ve yeşilin her tonuyla tasarlanmış peyzaj alanları projenin öne çıkan donatılarıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "48305",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Türkoğlu Yapı (Tuna-Türkoğlu ortaklığı) — 7 blok, 360 konut",
+    "4+1 daireler",
+    "~50.000 m² alan — Kasım 2016 teslim",
+    "Kapalı yüzme havuzu, kondisyon salonu",
+    "Şeker Mahallesi / Eryaman"
+  ],
+  "adres": "1408. Cadde No:19, Şeker, Eryaman/Ankara",
+  "alternatifAdlar": [
+    "Dört Mevsim Konutları"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }
