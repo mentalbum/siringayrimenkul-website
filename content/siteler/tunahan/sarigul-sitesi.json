@@ -7,12 +7,20 @@
     "lng": 32.62786
   },
   "sinirGeoJSON": "siteler/tunahan/sarigul-sitesi-boundary.geojson",
-  "aciklama": "Sarıgül Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46497 Ada). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Sarıgül Sitesi (Sarıgül Blokları), Tunahan Mahallesi'nde Eryaman 5. Etap kooperatif kuşağında yer alan büyük bir yerleşimdir. TKGM kayıtlarına göre site, tapuda \"18 Blok Kârgir Apartman\" niteliğiyle kayıtlı 35.358 m²'lik kat mülkiyetli tek parsel üzerine kurulu; bloklar yerel kayıtlarda A, B, C, D ve E serisi kodlarla kapı numaralarıyla birlikte anılıyor. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46497",
       "etap": "5",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "35.358 m² tek parsel (TKGM)",
+    "18 blok kârgir apartman (tapu kaydı)",
+    "A–E serisi blok kodları",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

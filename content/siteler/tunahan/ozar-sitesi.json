@@ -7,7 +7,7 @@
     "lng": 32.622764
   },
   "sinirGeoJSON": "siteler/tunahan/ozar-sitesi-boundary.geojson",
-  "aciklama": "Özar Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46500 Ada ve 46503 Ada olmak üzere iki ayrı blok halinde). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Özar Sitesi (Özar Blokları), Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde iki adaya yayılmış bir kooperatif sitesidir ve blokları adeta bir botanik sözlüğü gibidir: 17 apartman Cemre, Cumhuriyet, Çınar, Defne, Efes, Gardenya, Gül, Ihlamur, Lale, Manolya, Palmiye, Safran, Sahra, Söğüt, Tuna, Yağmur ve Yasemin adlarını taşır. TKGM kayıtlarına göre ilk parselde 6, ikincisinde 11 blok kayıtlı — toplam yaklaşık 37.900 m² ve her iki parsel de kat mülkiyetli; tapu blok sayısı yerel listeyle birebir örtüşüyor. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46500",
@@ -19,5 +19,13 @@
       "etap": "5",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "İki parsel, toplam ~37.900 m² (TKGM)",
+    "17 apartman — çiçek ve ağaç adlı (Gardenya, Manolya, Ihlamur…)",
+    "Tapu kaydı ile blok listesi birebir uyumlu",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

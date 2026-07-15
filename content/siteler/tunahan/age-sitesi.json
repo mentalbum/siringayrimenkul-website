@@ -7,12 +7,21 @@
     "lng": 32.632869
   },
   "sinirGeoJSON": "siteler/tunahan/age-sitesi-boundary.geojson",
-  "aciklama": "Age Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46494 Ada, 2 Parsel). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Age Sitesi, ofisimizin de bulunduğu Tunahan Mahallesi'nde, Eryaman 5. Etap kooperatif kuşağının büyük sitelerinden biridir. TKGM kayıtlarına göre 38.618 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"19 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda A, B, C, D ve E serisi kodlarla (A1, B2, C1A, D3B gibi) kapı numaralarıyla birlikte anılıyor. Geniş parseli, yeşil alanları ve oturmuş çevresiyle 5. Etap'ın yerleşik yaşamını temsil eder. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46494",
       "parsel": "2",
       "etap": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "38.618 m² tek parsel (TKGM)",
+    "19 blok kârgir apartman (tapu kaydı)",
+    "A–E serisi blok kodları",
+    "Kat mülkiyetli parsel (TKGM)",
+    "5. Etap kooperatif kuşağı",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }

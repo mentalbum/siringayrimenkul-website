@@ -7,7 +7,7 @@
     "lng": 32.619733
   },
   "sinirGeoJSON": "siteler/tunahan/sutek-sitesi-boundary.geojson",
-  "aciklama": "Sutek Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alıyor (46506 Ada ve 46507 Ada olmak üzere iki ayrı blok halinde). Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki bu site hakkında detaylı bilgi almak veya güncel ilanlarımızı görmek için bizimle iletişime geçebilirsiniz.",
+  "aciklama": "Sutek Sitesi (Sutek Blokları), Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde iki adaya yayılmış büyük bir kooperatif sitesidir. TKGM kayıtlarına göre ilk parselde 13, ikincisinde 12 blok kayıtlı — toplam 25 blok ve yaklaşık 41.300 m²; her iki parsel de kat mülkiyetli. Bloklar yerel kayıtlarda A'dan E'ye uzanan seri kodlarla anılıyor. Geniş yeşil alanlı yerleşim düzeniyle 5. Etap'ın karakteristik sitelerindendir. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46506",
@@ -19,5 +19,13 @@
       "etap": "5",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "İki parsel, toplam ~41.300 m² (TKGM)",
+    "25 blok (13 + 12, tapu kaydı)",
+    "A–E serisi blok kodları",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
 }
