@@ -9,6 +9,7 @@ import { mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
+
 export function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
@@ -49,7 +50,7 @@ export function Header() {
             // başka sayfadan gelişte Next zaten en üstten açar.
             if (pathname === "/") {
               event.preventDefault();
-              window.scrollTo(0, 0);
+              window.scrollTo({ top: 0, behavior: "smooth" });
             }
           }}
         >
