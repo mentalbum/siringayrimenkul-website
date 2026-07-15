@@ -4,6 +4,24 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### 3. ETAP KUYRUĞU — kota doldu, yarına hazır analiz (2026-07-15)
+TKGM kotası bu kümenin başında bitti (173xx sorguları FAIL = kota, kayıt yokluğu DEĞİL).
+mahalleId de belirsiz (124123 Eryaman değil; Şeker 124128 de değil — nokta sorgusuyla keşfet:
+tekser koordinatı 39.997848/32.624475). bilgiemlak 3-etap-44 küme analizi HAZIR:
+- tekser-bloklari (SŞ): 6 ada DOSYADA TAM (17322-27) → sadece TKGM sayım + zenginleştirme.
+- tepe-bloklari (SŞ): dosyada 17335; küme 17333-37, diğer 4 ada SAHİPSİZ → tepe'ye eklenebilir (QA kontrolüyle).
+- ictas-bloklari (SŞ): ADASIZ duruyor; be 3.Etap İçtaş = 17346-50 (5 ada, tümü sahipsiz).
+  ESKİ 'SOA ictas dupe' ŞÜPHESİ YANLIŞ ÇIKTI — SOA İçtaş 17498 AYRI. Bu dosya 3.Etap İçtaş
+  olarak haritalanmalı (5 ada + koordinat + sınır) + zenginleştirilmeli. Silme listesinden ÇIKAR.
+- alarko-bloklari (17365) + alarko-sitesi (17367): be TEK 'Alarko Blokları' kümesi (17361-68, 8 ada)
+  gösteriyor — iki kayıt muhtemelen mükerrer; 6 ada sahipsiz → Özgün: hangisi kalsın?
+- eston-bloklari (17342) + camlica-sitesi (17341): be 'Eston 2' kümesi 17338-42 içinde;
+  17338-40 sahipsiz. eston-2-sitesi (ADASIZ dosya) muhtemelen bu kümenin asıl kaydı →
+  eston-bloklari ile mükerrer mi? Özgün. Çamlıca ayrı site (Çamlık/Çiçek deseni).
+- Eston 1 kümesi (17328-32, 5 ada) ve Yardımcı-3Etap (17321,17343-45,17358) ve
+  Sutek-3Etap (17352-54): repo'da karşılık kaydı YOK görünüyor — Özgün'e sor
+  (yeni kayıt mı açılmalı, başka adla mı varlar?).
+
 ### SOA İntes kümesi — be gruplaması kaba (2026-07-15, QA kapısı yakaladı)
 - bilgiemlak 'İntes Blokları' 4 ada gösteriyor (17468-71) ama 17470 = bizim
   camlik-sitesi, 17471 = cicek-sitesi. İntes kaydına eklemiştim, QA çakışma verdi
