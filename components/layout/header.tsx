@@ -3,12 +3,14 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { sendGAEvent } from "@next/third-parties/google";
 import { mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 export function Header() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -40,7 +42,16 @@ export function Header() {
           href="/"
           className="shrink-0"
           aria-label={`${siteConfig.name} anasayfa`}
-          onClick={() => setOpen(false)}
+          onClick={(event) => {
+            setOpen(false);
+            // Zaten anasayfadayken logoya tıklanınca navigasyon yerine sayfa
+            // en üste kaysın (aynı-rota navigasyonu animasyonu iptal ediyor);
+            // başka sayfadan gelişte Next zaten en üstten açar.
+            if (pathname === "/") {
+              event.preventDefault();
+              window.scrollTo(0, 0);
+            }
+          }}
         >
           <Image
             src={scrolled ? "/brand/sirin-logo-on-dark.png" : "/brand/sirin-logo-on-light.png"}
