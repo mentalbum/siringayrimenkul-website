@@ -2,5 +2,27 @@
   "isim": "Özharitacılar Sitesi",
   "slug": "ozharitacilar-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Özharitacılar Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Özharitacılar Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adaları tapuda toplam 57 adet dubleks ev barındırır; parseller kat mülkiyetli ve toplam yaklaşık 21.649 m². Güzel Ev ve Gülvatan siteleriyle adalarını paylaşır. Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19501",
+      "parsel": "1"
+    },
+    {
+      "no": "19502",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.999116,
+    "lng": 32.608337
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/ozharitacilar-sitesi-boundary.geojson",
+  "ozellikler": [
+    "57 adet dubleks ev (tapu kaydı)",
+    "Toplam ~21.649 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

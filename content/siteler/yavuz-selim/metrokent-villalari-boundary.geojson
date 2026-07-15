@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Metrokent Villaları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19530/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61167,
+      39.99705
+     ],
+     [
+      32.61082,
+      39.99704
+     ],
+     [
+      32.61083,
+      39.99584
+     ],
+     [
+      32.61168,
+      39.99584
+     ],
+     [
+      32.61167,
+      39.99705
+     ]
+    ]
+   ]
+  ]
+ }
+}

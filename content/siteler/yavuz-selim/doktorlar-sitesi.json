@@ -2,5 +2,23 @@
   "isim": "Doktorlar Sitesi",
   "slug": "doktorlar-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Doktorlar Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Doktorlar Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 17 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 9.194 m². Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19509",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.998665,
+    "lng": 32.60811
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/doktorlar-sitesi-boundary.geojson",
+  "ozellikler": [
+    "17 adet dubleks ev (tapu kaydı)",
+    "Toplam ~9.194 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

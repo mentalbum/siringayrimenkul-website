@@ -2,5 +2,23 @@
   "isim": "Gülvatan Sitesi",
   "slug": "gulvatan-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Gülvatan Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Gülvatan Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 19 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 10.538 m². Öz Haritacılar Sitesi ile aynı adayı paylaşır. Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19502",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.999255,
+    "lng": 32.609754
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/gulvatan-sitesi-boundary.geojson",
+  "ozellikler": [
+    "19 adet dubleks ev (tapu kaydı)",
+    "Toplam ~10.538 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

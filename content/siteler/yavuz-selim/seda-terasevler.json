@@ -2,5 +2,23 @@
   "isim": "Seda Terasevler",
   "slug": "seda-terasevler",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Seda Terasevler, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Seda Terasevler, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 42 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 14.966 m². Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19529",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.995377,
+    "lng": 32.611766
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim/seda-terasevler-boundary.geojson",
+  "ozellikler": [
+    "42 adet dubleks ev (tapu kaydı)",
+    "Toplam ~14.966 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
 }

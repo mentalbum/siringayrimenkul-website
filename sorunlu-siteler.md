@@ -171,7 +171,25 @@ KALAN (Özgün/ek kaynak):
 - pinarkent-91 ↔ be "pinar-sitesi 18511" (ad farkı büyük, temkinli)
 - portakal-cicegi ailesi: 3 dosya (portakal-cicegi, portakal-cicegi-2, 1-portakal-cicegi) ↔ be apartman "18450" + villa bölgesi "19517" — aile ayrıştırması gerekli
 
-### Güzelkent VİLLA BÖLGESİ (be yer/guzelkent-villalar-54, 195xx adaları — ayrı analiz günü)
+### Güzelkent VİLLA BÖLGESİ — 2026-07-16 BÜYÜK ÇÖZÜM (YS ölü bölgesi kapandı!)
+✔ 13 Yavuz Selim dosyası doğrudan ada sorgusuyla haritalandı+zenginleşti (nokta sorgusu
+ölüydü, ada sorgusu çalıştı): doktorlar(17 dubleks), gulvatan(19), kirkayak+guz-gol(24,
+paylaşımlı 19506), kardelen(16 — Güzelkent 18453 Kardelen'den AYRI), metrokent(24),
+ozenkent-2(32), guzel-ev(38), ozharitacilar(57/2 ada), sacak-91(42), seda-terasevler(42),
+yunuskent(46, kat irtifakı), eylul-evleri(18 kârgir ev — eylul-sitesi apartman kaydından ayrı).
+KALAN SORULAR:
+- guzelkent/guz-gol-sitesi dosyası da var → YS guz-gol ile DUPE (Özgün: Güzelkent kopyası silinsin mi?)
+- Güzelkent klasöründeki villa dosyaları (angora, eczacilar, erenkoy, kosk, ersan,
+  renk-villalari, eryaman-renk-villalari, korukent, portakal-cicegi ailesi) be'de 19516/19517'de
+  listeleniyor AMA be bölgeyi 'Yavuz Selim Mh.' etiketliyor → mahalle ataması + paylaşımlı
+  19516 (Angora+Eczacılar+Köşk/Ersan+Renk) ve 19517 (Erenköy+Korukent+Portakal Çiçeği)
+  haritalaması Özgün onayıyla.
+- Villa bölgesinde repo'da OLMAYAN siteler: Bizim Şirinköy(19508), Karköy(19537), Keyfim(19507),
+  Korukent 91(19508), Turaykent(19526), Yeni İlkay(19508), Yükselen(19524), Serenköy(19532-33-36),
+  Göksu no:24(19505) → yeni kayıt adayları.
+- Villa indexinde 'Başkent Sular no:13-15 (19524)' var — bizim baskent-sular 18477'de (14 katlı
+  ikiz kule, be guzelkent sayfası teyitli). İKİ ayrı Başkent Sular olabilir → Özgün.
+--- (eski not) ---
 Villa bölgesi indexinde 40+ site var (Renk Villaları 19516, Erenköy 19517, Köşk-Ersan 19516,
 Eczacılar 19516, Angora 19516, Korukent no-10/no-15, Guz-Göl 19506, ikinci bir "Kardelen no-17
 19504" vb.). Bizim koordinatsız villa/atipik dosyaların (renk-villalari, eryaman-renk-villalari,

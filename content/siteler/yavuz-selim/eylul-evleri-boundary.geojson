@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eylül Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19528/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61367,
+      39.99536
+     ],
+     [
+      32.61278,
+      39.99535
+     ],
+     [
+      32.61279,
+      39.9947
+     ],
+     [
+      32.61368,
+      39.99471
+     ],
+     [
+      32.61367,
+      39.99536
+     ]
+    ]
+   ]
+  ]
+ }
+}

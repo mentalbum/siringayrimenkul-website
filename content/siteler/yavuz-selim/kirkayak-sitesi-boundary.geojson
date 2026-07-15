@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kırkayak Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19506/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60845,
+      39.99547
+     ],
+     [
+      32.60844,
+      39.99548
+     ],
+     [
+      32.60838,
+      39.99549
+     ],
+     [
+      32.608,
+      39.9956
+     ],
+     [
+      32.60741,
+      39.99578
+     ],
+     [
+      32.60742,
+      39.99499
+     ],
+     [
+      32.60843,
+      39.99469
+     ],
+     [
+      32.60847,
+      39.99469
+     ],
+     [
+      32.60845,
+      39.99547
+     ]
+    ]
+   ]
+  ]
+ }
+}

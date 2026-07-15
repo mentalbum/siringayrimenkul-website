@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Saçak 91 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19523/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61251,
+      39.99964
+     ],
+     [
+      32.61096,
+      39.99964
+     ],
+     [
+      32.61082,
+      39.99954
+     ],
+     [
+      32.61082,
+      39.99891
+     ],
+     [
+      32.61166,
+      39.99891
+     ],
+     [
+      32.61179,
+      39.99899
+     ],
+     [
+      32.61272,
+      39.999
+     ],
+     [
+      32.61272,
+      39.99915
+     ],
+     [
+      32.61251,
+      39.99964
+     ]
+    ]
+   ]
+  ]
+ }
+}

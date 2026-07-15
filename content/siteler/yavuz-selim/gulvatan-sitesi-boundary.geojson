@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Gülvatan Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19502/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61041,
+      39.99954
+     ],
+     [
+      32.61024,
+      39.99964
+     ],
+     [
+      32.609,
+      39.99964
+     ],
+     [
+      32.60872,
+      39.99893
+     ],
+     [
+      32.6094,
+      39.99894
+     ],
+     [
+      32.60944,
+      39.9989
+     ],
+     [
+      32.61041,
+      39.99891
+     ],
+     [
+      32.61041,
+      39.99954
+     ]
+    ]
+   ]
+  ]
+ }
+}

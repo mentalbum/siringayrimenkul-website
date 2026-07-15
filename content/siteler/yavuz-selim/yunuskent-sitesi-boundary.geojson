@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Yunuskent Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19514/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60938,
+      39.99663
+     ],
+     [
+      32.6075,
+      39.99662
+     ],
+     [
+      32.60741,
+      39.99656
+     ],
+     [
+      32.60741,
+      39.99592
+     ],
+     [
+      32.60746,
+      39.99591
+     ],
+     [
+      32.60806,
+      39.99573
+     ],
+     [
+      32.60844,
+      39.99561
+     ],
+     [
+      32.60846,
+      39.99561
+     ],
+     [
+      32.60853,
+      39.9956
+     ],
+     [
+      32.60916,
+      39.9956
+     ],
+     [
+      32.60938,
+      39.99576
+     ],
+     [
+      32.60938,
+      39.99663
+     ]
+    ]
+   ]
+  ]
+ }
+}
