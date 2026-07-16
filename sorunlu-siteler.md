@@ -218,8 +218,11 @@ açıklamaya alan+nitelik cümlesi ekle.
 KALAN (Özgün/ek kaynak):
 ✔ gozde-1=18651 (bloklar 8/8A-8E), gozde-2=18652 (10 ailesi) — be blok sayfaları
   (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
-- seniz-sitesi ↔ seniz-konut-kooperatifi: 18516+18517 (ikisi de 3 blok) — iki site mi tek sitenin
-  iki kaydı mı? TKGM verisi hazır (4.426 + 4.615 m², KM).
+✔ Şeniz ÇÖZÜLDÜ 2026-07-17 (Özgün be kroki kanıtı): TEK site, A1-A3 (18516) + B1-B3 (18517);
+  seniz-konut-kooperatifi silindi (alternatifAd olarak seniz-sitesi'nde), haritalandı+zenginleşti.
+- **18519 ad çelişkisi (be iç tutarsızlığı)**: be veritabanı 'Altay Sitesi (18519)' diyor
+  (bizim kayıt da öyle, 10/10A-10E blokları), ama be krokisi aynı blokları 'AKKONAK KENT'
+  etiketliyor. Özgün'e soruldu → cevaba göre altay-sitesi'ne alternatifAd eklenir.
 ✔ mesa çifti ÇÖZÜLDÜ 2026-07-17 (be küme sayfaları): mesa-calisanlari-kooperatifi=18506+18507
   (4/4A/4B + 6/6A/6B blokları, haritalandı+zenginleşti); mesa-sitesi=18659-18662 (12 blok:
   7F/9E/11D + G→O). ÇAPRAZ DEĞİLMİŞ, adlar doğrudan eşleşiyor. mesa-sitesi şimdilik 18659/1
