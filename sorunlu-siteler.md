@@ -220,7 +220,11 @@ KALAN (Özgün/ek kaynak):
   (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
 - seniz-sitesi ↔ seniz-konut-kooperatifi: 18516+18517 (ikisi de 3 blok) — iki site mi tek sitenin
   iki kaydı mı? TKGM verisi hazır (4.426 + 4.615 m², KM).
-- mesa çifti: 18506/18507/18659 üçü de '3 Blok' — adlar çapraz, TKGM ayıramıyor → Özgün.
+✔ mesa çifti ÇÖZÜLDÜ 2026-07-17 (be küme sayfaları): mesa-calisanlari-kooperatifi=18506+18507
+  (4/4A/4B + 6/6A/6B blokları, haritalandı+zenginleşti); mesa-sitesi=18659-18662 (12 blok:
+  7F/9E/11D + G→O). ÇAPRAZ DEĞİLMİŞ, adlar doğrudan eşleşiyor. mesa-sitesi şimdilik 18659/1
+  ile kayıtlı; **TKGM günü 3 sorgu: 18660/18661/18662 (parsel no + geometri) → adalar tamamla,
+  4 adalık MultiPolygon sınır çiz.**
 - ipek-yapi ↔ be 'İpek Sitesi' 18476 (3 blok, 4.279 m² KM hazır) — ad bağı teyidi → Özgün.
 - pinarkent-91 ↔ be 'Pınar Sitesi' 18511 (6 blok, 4.950 m² KM hazır) — ad bağı teyidi → Özgün.
 --- (eski metin) ---
