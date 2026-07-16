@@ -4,6 +4,8 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### atakent-2-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün: 'sadece Atakent 2 Sitesi diye bir site yok'; Cumhuriyet ve Metro kayıtları asıl)
+
 ### Susuz/Göksu toplu tur sonuçları (2026-07-17 sabah)
 - 3. Susuz kimliği: 'Susuz' köy kadastrosu id=123431 (64xxx adaları; İmar=123432).
 - PIN ŞÜPHELİLERİ (parsel konut değil): sky-goksu 63356/2 ARSA (Yukarıyurtçu şüphesiyle
