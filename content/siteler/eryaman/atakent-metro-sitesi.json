@@ -3,8 +3,25 @@
   "slug": "atakent-metro-sitesi",
   "mahalleSlug": "eryaman",
   "koordinat": {
-    "lat": 39.9796923,
-    "lng": 32.6263489
+    "lat": 39.980349,
+    "lng": 32.628379
   },
-  "aciklama": "Atakent Metro Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Atakent Metro Sitesi, Eryaman'ın 6. Etap (Oyak-Atakent) bölgesinde, adını metro hattına yakınlığından alan bir konut sitesidir; yerel kayıtlarda 'Oyak Atakent-2 Metro Sitesi' olarak da geçer. TKGM kayıtlarına göre yaklaşık 13.908 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"3 Blok Kârgir Apartman\" olarak tanımlar. (Atakent 2 Cumhuriyet Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat ve cepheyle netleşir — değeri, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46524",
+      "parsel": "1"
+    }
+  ],
+  "sinirGeoJSON": "siteler/eryaman/atakent-metro-sitesi-boundary.geojson",
+  "ozellikler": [
+    "~13.908 m² parsel (TKGM)",
+    "3 blok kârgir apartman (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "6. Etap Oyak-Atakent bölgesi — metroya yakın"
+  ],
+  "alternatifAdlar": [
+    "Oyak Atakent 2 Metro Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

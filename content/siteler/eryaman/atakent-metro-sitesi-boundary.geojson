@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Atakent Metro Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46524/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62767,
+      39.98079
+     ],
+     [
+      32.62766,
+      39.9798
+     ],
+     [
+      32.62904,
+      39.97977
+     ],
+     [
+      32.62917,
+      39.97984
+     ],
+     [
+      32.62922,
+      39.98067
+     ],
+     [
+      32.62822,
+      39.98078
+     ],
+     [
+      32.62767,
+      39.98079
+     ]
+    ]
+   ]
+  ]
+ }
+}
