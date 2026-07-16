@@ -4,6 +4,15 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Mega tur 2 notları (2026-07-17)
+- KOTA yine doldu (~250 sorgu); kalan 65 kayıt scratchpad mega-kalan.json'da (YS çoğunluğu +
+  Yeşilova 47xxx) — yarın ilk iş. YS 19xxx/45xxx/46xxx/47xxx FAIL'leri kota kaynaklı.
+- YENİ ARSA/pin şüphelileri: 10-botanik (43264/8 ANA TAŞINMAZ), batihan (43255/2 Kİ),
+  botanik-park-evleri (43254/6 Kİ), mes-polaris (62662/2 = SPOR TESİSİ!), akasya-SOA
+  (46659/2 arsa — Bordo Life adasında). → Özgün/pin düzeltme.
+- Kadastro kimlik haritası TAMAMLANDI: Eryaman=124123, Şeker=124128, Ata=205665,
+  Susuz-köy=123431 (62xxx+64xxx!), Susuz-İmar=123432 (63xxx), Yuva=123403 (43xxx).
+
 ### atakent-2-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün: 'sadece Atakent 2 Sitesi diye bir site yok'; Cumhuriyet ve Metro kayıtları asıl)
 
 ### Susuz/Göksu toplu tur sonuçları (2026-07-17 sabah)

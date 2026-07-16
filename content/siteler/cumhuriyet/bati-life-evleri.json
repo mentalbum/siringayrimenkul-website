@@ -7,11 +7,19 @@
     "lng": 32.686818
   },
   "sinirGeoJSON": "siteler/cumhuriyet/bati-life-evleri-boundary.geojson",
-  "aciklama": "Batı Life Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Batı Life Evleri, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.185 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Katlı Betonarme -Mesken A Blok Ve 2 Katlı Betonarme Ofis Ve İşyeri B Blok\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43272",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.185 m² parsel (TKGM)",
+    "2-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

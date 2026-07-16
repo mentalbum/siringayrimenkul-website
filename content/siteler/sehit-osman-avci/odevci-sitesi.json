@@ -7,11 +7,18 @@
     "lng": 32.655159
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/odevci-sitesi-boundary.geojson",
-  "aciklama": "Ödevci Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ödevci Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.221 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"8 Katlı A Ve B Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46648",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~5.221 m² parsel (TKGM)",
+    "8 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

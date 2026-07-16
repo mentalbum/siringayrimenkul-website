@@ -7,11 +7,18 @@
     "lng": 32.68871
   },
   "sinirGeoJSON": "siteler/cumhuriyet/yesil-koru-sitesi-boundary.geojson",
-  "aciklama": "Yeşil Koru Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yeşil Koru Sitesi, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.003 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 9 Katlı Ve B Blok 8 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43267",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~5.003 m² parsel (TKGM)",
+    "8-9 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

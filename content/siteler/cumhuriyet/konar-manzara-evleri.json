@@ -7,11 +7,18 @@
     "lng": 32.663297
   },
   "sinirGeoJSON": "siteler/cumhuriyet/konar-manzara-evleri-boundary.geojson",
-  "aciklama": "Konar Manzara Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Konar Manzara Evleri, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.639 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"19 Katlı Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62683",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.639 m² parsel (TKGM)",
+    "19 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

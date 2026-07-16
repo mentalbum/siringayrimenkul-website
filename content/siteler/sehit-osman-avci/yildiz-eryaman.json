@@ -7,11 +7,19 @@
     "lng": 32.6615074
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/yildiz-eryaman-boundary.geojson",
-  "aciklama": "Yıldız Eryaman, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yıldız Eryaman, Şehit Osman Avcı Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 3.916 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"12 Katlı Betonarme Ofis,İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46656",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~3.916 m² parsel (TKGM)",
+    "12 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

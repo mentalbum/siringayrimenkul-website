@@ -7,11 +7,19 @@
     "lng": 32.6285104
   },
   "sinirGeoJSON": "siteler/seyh-samil/ilona-konutlari-boundary.geojson",
-  "aciklama": "İlona Konutları, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "İlona Konutları, Şeyh Şamil Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 14.810 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Katlı A Ve B Bloklardan Oluşan Betonarme Apartman Ve 1 Katlı C Blok Betonarme Ofis,İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46264",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~14.810 m² parsel (TKGM)",
+    "1-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

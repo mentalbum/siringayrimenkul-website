@@ -7,7 +7,7 @@
     "lng": 32.610459
   },
   "sinirGeoJSON": "siteler/guzelkent/safi-apak-sitesi-boundary.geojson",
-  "aciklama": "Safi Apak Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Safi Apak Sitesi, Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 4.669 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Üç Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18504",
@@ -17,5 +17,11 @@
       "no": "18505",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~4.669 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

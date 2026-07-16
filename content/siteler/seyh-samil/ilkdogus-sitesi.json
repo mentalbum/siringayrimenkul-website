@@ -7,11 +7,18 @@
     "lng": 32.6311101
   },
   "sinirGeoJSON": "siteler/seyh-samil/ilkdogus-sitesi-boundary.geojson",
-  "aciklama": "İlkdoğuş Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "İlkdoğuş Sitesi, Şeyh Şamil Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 15.674 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Katlı 1 Nolu, 14 Katlı 2,3 Ve 4 Nolu Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46491",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~15.674 m² parsel (TKGM)",
+    "14-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

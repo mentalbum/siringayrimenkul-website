@@ -7,11 +7,17 @@
     "lng": 32.625727
   },
   "sinirGeoJSON": "siteler/eryaman/kayaevleri-sitesi-boundary.geojson",
-  "aciklama": "Kayaevleri Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Kayaevleri Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 37.690 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46539",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~37.690 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

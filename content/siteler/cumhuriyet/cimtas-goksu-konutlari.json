@@ -7,11 +7,18 @@
     "lng": 32.660825
   },
   "sinirGeoJSON": "siteler/cumhuriyet/cimtas-goksu-konutlari-boundary.geojson",
-  "aciklama": "Çimtaş Göksu Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Çimtaş Göksu Konutları, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.195 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 15 Katlı B Blok 14 Katlı C,D,E Ve F Blok 2 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63262",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~9.195 m² parsel (TKGM)",
+    "2-15 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

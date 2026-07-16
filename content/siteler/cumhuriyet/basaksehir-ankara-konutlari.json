@@ -7,11 +7,19 @@
     "lng": 32.658034
   },
   "sinirGeoJSON": "siteler/cumhuriyet/basaksehir-ankara-konutlari-boundary.geojson",
-  "aciklama": "Başakşehir Ankara Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Başakşehir Ankara Konutları, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 15.229 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 18 Katlı,B Blok 3 Katlı,C Blok 3 Katlı,D Blok 4 Katlı,E Blok 18 Katlı ,F Blok 18 Katlı Betonarme Apartman,Ofis,İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62673",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~15.229 m² parsel (TKGM)",
+    "3-18 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

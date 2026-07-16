@@ -7,11 +7,18 @@
     "lng": 32.66143
   },
   "sinirGeoJSON": "siteler/cumhuriyet/anadolu-vizyon-konutlari-boundary.geojson",
-  "aciklama": "Anadolu Vizyon Konutları, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Anadolu Vizyon Konutları, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 16.329 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A-12 Katlı ,B-13Katlı,C-14 Katlı Ve D-2 Katlı Bloklardan Oluşan Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63265",
       "parsel": "4"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~16.329 m² parsel (TKGM)",
+    "2-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
