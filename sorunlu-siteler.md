@@ -52,7 +52,7 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 - 18674 'Lojman 8-A..D' (kayıt yok — lojman, kayıt açılmaz muhtemelen).
 - Devlet 18680-85/18702/18704 ada sayfaları boş.
 
-### firat-life-style-goksu-sitesi = GÖKSU PRESTİJ MÜKERRERİ (2026-07-15, TKGM+QA kanıtlı)
+### firat-life-style-goksu-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün onayı; ad goksu-prestij'de alternatifAd)
 - be'nin 'FIRAT LİFE STYLE GÖKSU konutları' dediği 46620/3, TKGM'de '5 Katlı A Blok +
   17'şer Katlı B,C,D,E' (15.523 m²) — goksu-prestij'in haritalı parseli ve '5 blok 192
   konut' verisiyle birebir örtüşüyor. → firat-life-style-goksu-sitesi dosyası SİLİNMELİ
