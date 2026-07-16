@@ -45,8 +45,7 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 ### Devlet kalanları — parti 38 notları (2026-07-16)
 - **4-devlet-mahallesi-sitesi (18700/1): parsel tapuda '7 Katlı Betonarme OKUL, Üniversite,
   Araştırma'** — mapping yanlış görünüyor (okul parseli); sitenin gerçek adası → Özgün/TKGM.
-- ornek-tes-is-sitesi ↔ tes-is-bloklari: ikisi de 46520'de; be tek 'Tesiş Sitesi' gösteriyor →
-  DUPE şüphesi (Özgün: hangisi kalsın?). tes-is-bloklari zenginleştirildi, ornek-tes-is bekliyor.
+- ✅ ornek-tes-is-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; ad tes-is-bloklari'na alternatifAd).
 - hotki-meydan (ADASIZ): be 18684'ü 'HOTKİ RESİDANCE' gösteriyor — ad farkı (Meydan vs Residance);
   cumhuriyet/hotki-bulvar da ayrı. Hotki ailesi netleşmeli → Özgün.
 - 18674 'Lojman 8-A..D' (kayıt yok — lojman, kayıt açılmaz muhtemelen).
