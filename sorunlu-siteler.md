@@ -12,6 +12,11 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   (46659/2 arsa — Bordo Life adasında). → Özgün/pin düzeltme.
 - Kadastro kimlik haritası TAMAMLANDI: Eryaman=124123, Şeker=124128, Ata=205665,
   Susuz-köy=123431 (62xxx+64xxx!), Susuz-İmar=123432 (63xxx), Yuva=123403 (43xxx).
+- **ASM Gold parsel sorusu (TKGM günü 2 sorgu: 45926/2 ve 45926/3)**: Gold birleştirmesinde
+  asm-golt 45926/2'de kaldı; silinen Şehr-i Huzur Gold kaydı ise 45926/**3**'teymiş (komşu
+  parsel, sınırı `sehr-i-huzur-gold-konutlari-boundary.geojson` olarak yetim duruyor —
+  BİLEREK silinmedi). Site 3 bloklu (A/B/C): iki parsele mi yayılıyor? Nitelik çekilince
+  ya adalar+sınır genişletilir ya yetim dosya silinir. (45926/4 = Gençler, 17 katlı.)
 
 ### atakent-2-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün: 'sadece Atakent 2 Sitesi diye bir site yok'; Cumhuriyet ve Metro kayıtları asıl)
 
