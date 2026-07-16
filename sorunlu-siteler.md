@@ -290,7 +290,7 @@ alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
   18512 (aksu), 18477 (başkent sular), 18521+18522 (çankaya vefa), 18501/18503/18505
   (ekin/ulaş/safi apak) doğrudan çekilip koordinat+sınır yeniden üretilebilir.
 
-### eryaman/atakent-metro (önceki oturumdan devir)
+### eryaman/atakent-metro — ✅ ÇÖZÜLDÜ 2026-07-17 (46524/1 haritalandı+zenginleşti; Özgün: Atakent 2 Cumhuriyet AYRI site)
 - 46523/8'e force edilmişti; bilgiemlak o adayı Oyak 555'e ait gösteriyor
   (bloklar A1/A2/B1/D1, TKGM nitelikle uyumlu).
 - Yapılacak: Atakent Metro'nun kendi parseli aranacak, kota açılınca yeniden bakılacak.
