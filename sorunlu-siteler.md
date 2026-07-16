@@ -166,7 +166,7 @@ tekser koordinatı 39.997848/32.624475). bilgiemlak 3-etap-44 küme analizi HAZI
 - 17480/81/82 (toplam 22 apartman) hangi kayda ait? İçtaş'ın mı, Kazım Sarı'nın mı,
   ayrı bir site mi? → Özgün'e sor; şimdilik iki kayıt kendi tek adasıyla zenginleştirildi.
 
-### tunahan/kur-sitesi — MÜKERRER ŞÜPHESİ (2026-07-15)
+### tunahan/kur — ✅ ÇÖZÜLDÜ 2026-07-17 (Özgün: iki kayıt 'Kur Sitesi 46495 Ada' + 'Kur Sitesi 46496 Ada' olarak adlandırıldı; jenerik kopya kaldırıldı)
 - kur-sitesi (46496/2) ile kur-sitesi-c2b-2h (46496/2) AYNI ada/parseli taşıyor;
   bilgiemlak Kur Blokları'nı tek yerleşim, iki ada (46495+46496) olarak gösteriyor.
 - C1B-2K ve C2B-2H kayıtları zenginleştirildi; jenerik "kur-sitesi" muhtemelen silinmeli
