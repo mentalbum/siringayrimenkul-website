@@ -1,0 +1,30 @@
+{
+  "isim": "ASM Prestij Konutları (Urhal Sitesi)",
+  "slug": "asm-prestij-konutlari",
+  "mahalleSlug": "eryaman",
+  "alternatifAdlar": [
+    "Şehr-i Huzur Prestij Konutları",
+    "Urhal Sitesi",
+    "ASM Prestij Urhal Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.97488,
+    "lng": 32.609147
+  },
+  "sinirGeoJSON": "siteler/eryaman/asm-prestij-konutlari-boundary.geojson",
+  "aciklama": "ASM Prestij Konutları, Eryaman Mahallesi'nde 9'ar katlı A ve B bloklarından oluşan bir konut sitesidir. Google Haritalar'da 'Şehr-i Huzur Prestij Konutları' adıyla geçer; ikisi aynı sitedir ve hemen komşusu ASM Gold gibi Urhal Sitesi adıyla da bilinir. TKGM kayıtlarına göre yaklaşık 3.515 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Katlı A Ve B Blok Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "2 blok (A ve B), 9'ar katlı",
+    "~3.515 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Haritalarda 'Şehr-i Huzur Prestij' adıyla da bilinir",
+    "Eryaman Mahallesi"
+  ],
+  "adalar": [
+    {
+      "no": "45923",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}
