@@ -92,8 +92,7 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 - ata/ayyildiz-sitesi (44759): be 'Akgüner KYK + Selsen' — Ayyıldız yok (eski çakışma notuyla uyumlu).
 - ata/eser-yapi, genova, gold-life, panorama ×3, siyah-beyaz, twin-towers, armoni-life,
   atasehir (46412 'İnşaat'), endora-plus: ada sayfalarında blok dökümü yok.
-- eryaman/sehr-i-huzur-gold (45926) ↔ asm-golt AYNI ada; be 'ASM Golt Knt.Urhal sitesi' diyor →
-  Şehr-i Huzur Gold = ASM Golt mu? DUPE ŞÜPHESİ. sehr-i-huzur-prestij (45923) ↔ 'ASM Prestij' aynı soru.
+- ✅ Şehr-i Huzur Gold = ASM Gold Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün StreetView tabela kanıtı; birleştirildi, sehr-i-huzur-gold silindi). Prestij sorusu ayrıca soruldu.
 - eryaman/beyaz-residence (45794): be 'Tertipler/Tusun Apt' gösteriyor, Beyaz yok.
 - eryaman/elif-elvan-sitesi (46383): be 'Seyitoğulları Sitesi 4-10' gösteriyor → Elif Elvan=Seyitoğulları mı?
 - eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.

@@ -1,5 +1,5 @@
 {
-  "isim": "Asm Golt Sitesi",
+  "isim": "ASM Gold Konutları (Urhal Sitesi)",
   "slug": "asm-golt-sitesi",
   "mahalleSlug": "eryaman",
   "koordinat": {
@@ -7,7 +7,7 @@
     "lng": 32.609529
   },
   "sinirGeoJSON": "siteler/eryaman/asm-golt-sitesi-boundary.geojson",
-  "aciklama": "ASM Golt Sitesi, Eryaman Mahallesi'nde A, B ve C bloklarından oluşan üç bloklu bir konut sitesidir; yerel kayıtlarda 'Urhal Sitesi' adıyla birlikte anılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "ASM Gold Konutları — giriş tabelasında 'ASM Gold Konutları Urhal Sitesi', Google Haritalar'da ise 'Şehr-i Huzur Gold Konutları' adıyla geçer; üçü de aynı sitedir. Eryaman Mahallesi'nde A, B ve C bloklarından oluşan üç bloklu bir konut sitesidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45926",
@@ -16,11 +16,14 @@
   ],
   "ozellikler": [
     "3 blok (A, B, C)",
-    "Yerel kayıtlarda 'Urhal Sitesi' adıyla birlikte geçer",
+    "Tabela adı: ASM Gold Konutları Urhal Sitesi",
+    "Haritalarda 'Şehr-i Huzur Gold' adıyla da bilinir",
     "Eryaman Mahallesi"
   ],
   "alternatifAdlar": [
-    "Urhal Sitesi"
+    "Şehr-i Huzur Gold Konutları",
+    "Urhal Sitesi",
+    "ASM Golt Sitesi"
   ],
   "zenginlestirildi": "2026-07-15"
 }
