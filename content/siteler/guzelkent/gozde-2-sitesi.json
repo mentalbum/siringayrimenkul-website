@@ -2,12 +2,24 @@
   "isim": "Gözde 2 Sitesi",
   "slug": "gozde-2-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Gözde 2 Sitesi, Etimesgut Güzelkent Mahallesi'nde, yerel emlak kayıtlarının 'Gözde Sitesi' başlığı altında gösterdiği iki adalık kümenin parçasıdır. TKGM kayıtlarına göre kümenin her adası tapuda altışar blok kârgir apartman niteliğiyle kayıtlı ve kat mülkiyetlidir (adalar yaklaşık 5.238 ve 5.120 m²). Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Gözde 2 Sitesi, Etimesgut Güzelkent Mahallesi'nde kapı numarası '10' ailesini taşıyan (10, 10-1, 10-2, 10-C, 10-D, 10-E) altı bloktan oluşan bir konut sitesidir; komşusu Gözde 1 ile birlikte yerel emlak kayıtlarında 'Gözde Sitesi' başlığı altında anılır. TKGM kayıtlarına göre yaklaşık 5.120 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "İki adalık 'Gözde' kümesinin parçası",
-    "Kümede her ada 6 blok kârgir apartman (TKGM)",
-    "Kat mülkiyetli parseller (TKGM)",
+    "6 blok (kapı no 10 ailesi: 10, 10-1, 10-2, 10-C/D/E)",
+    "~5.120 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Komşu Gözde 1 ile 'Gözde Sitesi' kümesi",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-07-17",
+  "koordinat": {
+    "lat": 39.983173,
+    "lng": 32.60442
+  },
+  "sinirGeoJSON": "siteler/guzelkent/gozde-2-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18652",
+      "parsel": "1"
+    }
+  ]
 }

@@ -216,8 +216,8 @@ açıklamaya alan+nitelik cümlesi ekle.
 ✔ arslanlar: 18679 tapu 'A-F 6 blok' + be teyidi → Arslanlar'da kaldı, zenginleşti;
   cagrikent'in 18679 iddiası KALDIRILDI (haritasız; gerçek adası → Özgün).
 KALAN (Özgün/ek kaynak):
-- gozde-1 ↔ gozde-2: 18651/18652'den hangisi hangisi? (ikisi de 6 blok; metin-only zenginleştirildi,
-  sıralı varsayım YAPILMADI — Özgün söylerse haritalanır)
+✔ gozde-1=18651 (bloklar 8/8A-8E), gozde-2=18652 (10 ailesi) — be blok sayfaları
+  (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
 - seniz-sitesi ↔ seniz-konut-kooperatifi: 18516+18517 (ikisi de 3 blok) — iki site mi tek sitenin
   iki kaydı mı? TKGM verisi hazır (4.426 + 4.615 m², KM).
 - mesa çifti: 18506/18507/18659 üçü de '3 Blok' — adlar çapraz, TKGM ayıramıyor → Özgün.
