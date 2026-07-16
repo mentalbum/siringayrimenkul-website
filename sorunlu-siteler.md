@@ -226,7 +226,7 @@ paylaşımlı 19506), kardelen(16 — Güzelkent 18453 Kardelen'den AYRI), metro
 ozenkent-2(32), guzel-ev(38), ozharitacilar(57/2 ada), sacak-91(42), seda-terasevler(42),
 yunuskent(46, kat irtifakı), eylul-evleri(18 kârgir ev — eylul-sitesi apartman kaydından ayrı).
 KALAN SORULAR:
-- guzelkent/guz-gol-sitesi dosyası da var → YS guz-gol ile DUPE (Özgün: Güzelkent kopyası silinsin mi?)
+- ✅ guzelkent/guz-gol-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; YS villa kaydı kaldı)
 - Güzelkent klasöründeki villa dosyaları (angora, eczacilar, erenkoy, kosk, ersan,
   renk-villalari, eryaman-renk-villalari, korukent, portakal-cicegi ailesi) be'de 19516/19517'de
   listeleniyor AMA be bölgeyi 'Yavuz Selim Mh.' etiketliyor → mahalle ataması + paylaşımlı
