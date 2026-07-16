@@ -141,8 +141,7 @@ tekser koordinatı 39.997848/32.624475). bilgiemlak 3-etap-44 küme analizi HAZI
 - ictas-bloklari (SŞ): ADASIZ duruyor; be 3.Etap İçtaş = 17346-50 (5 ada, tümü sahipsiz).
   ESKİ 'SOA ictas dupe' ŞÜPHESİ YANLIŞ ÇIKTI — SOA İçtaş 17498 AYRI. Bu dosya 3.Etap İçtaş
   olarak haritalanmalı (5 ada + koordinat + sınır) + zenginleştirilmeli. Silme listesinden ÇIKAR.
-- alarko-bloklari (17365) + alarko-sitesi (17367): be TEK 'Alarko Blokları' kümesi (17361-68, 8 ada)
-  gösteriyor — iki kayıt muhtemelen mükerrer; 6 ada sahipsiz → Özgün: hangisi kalsın?
+- ✅ alarko-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; ad alarko-bloklari'na alternatifAd; kümenin 6 sahipsiz adası hâlâ genişletmeye açık)
 - eston-bloklari (17342) + camlica-sitesi (17341): be 'Eston 2' kümesi 17338-42 içinde;
   17338-40 sahipsiz. eston-2-sitesi (ADASIZ dosya) muhtemelen bu kümenin asıl kaydı →
   eston-bloklari ile mükerrer mi? Özgün. Çamlıca ayrı site (Çamlık/Çiçek deseni).
