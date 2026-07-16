@@ -233,7 +233,7 @@ KALAN (Özgün/ek kaynak):
   Hassas Çizgi 3 blok (A12-56/B15-54/C13-52) + Özgün İpek 4 blok (A13-44/A14-48/B16-46/C14-50)
   = tapudaki 7 blok. İki metin de blok paylaşımına göre düzeltildi (parti 54'te ikisi de
   parselin tamamını sahipleniyordu).
-- pinarkent-91 ↔ be 'Pınar Sitesi' 18511 (6 blok, 4.950 m² KM hazır) — ad bağı teyidi → Özgün.
+✔ pinarkent-91 ÇÖZÜLDÜ 2026-07-17 (Özgün: 'aynı site'): 18511 haritalandı+zenginleşti (6/6A-6E blokları), 'Pınar Sitesi' alternatifAd.
 --- (eski metin) ---
 - gozde-1 + gozde-2 ↔ be "gozde-sitesi 18651-18652" (hangi dosya hangi ada? TKGM nitelik+konum ile ayrıştır)
 - gozde-91 ↔ 18641-18642 (iki ada, tek dosya — Anka 2001 tipi çoklu parsel olabilir)
