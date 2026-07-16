@@ -2,5 +2,27 @@
   "isim": "İpek Yapı Sitesi",
   "slug": "ipek-yapi-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "İpek Yapı Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "İpek Yapı Sitesi, Etimesgut Güzelkent Mahallesi'nde 2, 2A ve 2B kapı numaralı üç bloktan oluşan bir konut sitesidir; yerel emlak kayıtlarında kısaca 'İpek Sitesi' adıyla da geçer. TKGM kayıtlarına göre yaklaşık 4.279 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"3 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "İpek Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.99403,
+    "lng": 32.614046
+  },
+  "sinirGeoJSON": "siteler/guzelkent/ipek-yapi-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18476",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "3 blok (kapı no 2, 2A, 2B)",
+    "~4.279 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "'İpek Sitesi' adıyla da bilinir",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

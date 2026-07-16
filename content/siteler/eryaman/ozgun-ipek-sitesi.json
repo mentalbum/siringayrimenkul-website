@@ -7,7 +7,7 @@
     "lng": 32.6254277
   },
   "sinirGeoJSON": "siteler/eryaman/ozgun-ipek-sitesi-boundary.geojson",
-  "aciklama": "Özgün İpek Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 27.627 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"7 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Özgün İpek Sitesi, Eryaman Mahallesi'nin Eryaman Evleri bölgesinde, komşusu Hassas Çizgi Sitesi ile aynı büyük parseli paylaşan dört bloklu bir konut sitesidir (bloklar: A13-44, A14-48, B16-46 ve C14-50). TKGM kayıtlarına göre yaklaşık 27.627 m²'lik kat mülkiyetli parselin tapu niteliği \"7 Blok Kargir Apartman\"dır; bu yedi bloğun 4'ü bu siteye aittir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46544",
@@ -15,8 +15,10 @@
     }
   ],
   "ozellikler": [
-    "~27.627 m² parsel (TKGM)",
+    "4 blok (A13-44, A14-48, B16-46 ve C14-50)",
+    "Parseli Hassas Çizgi Sitesi ile paylaşır — toplam ~27.627 m² (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Evleri bölgesi",
     "Eryaman Mahallesi"
   ],
   "zenginlestirildi": "2026-07-17"

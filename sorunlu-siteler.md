@@ -220,15 +220,19 @@ KALAN (Özgün/ek kaynak):
   (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
 ✔ Şeniz ÇÖZÜLDÜ 2026-07-17 (Özgün be kroki kanıtı): TEK site, A1-A3 (18516) + B1-B3 (18517);
   seniz-konut-kooperatifi silindi (alternatifAd olarak seniz-sitesi'nde), haritalandı+zenginleşti.
-- **18519 ad çelişkisi (be iç tutarsızlığı)**: be veritabanı 'Altay Sitesi (18519)' diyor
-  (bizim kayıt da öyle, 10/10A-10E blokları), ama be krokisi aynı blokları 'AKKONAK KENT'
-  etiketliyor. Özgün'e soruldu → cevaba göre altay-sitesi'ne alternatifAd eklenir.
+- 18519 ad çelişkisi (be kroki 'AKKONAK KENT' vs be sayfa 'Altay Sitesi'): Özgün 2026-07-17
+  'karıştırma, atla' dedi → kayıt Altay Sitesi olarak KALIR, alternatifAd eklenmez, KAPANDI.
 ✔ mesa çifti ÇÖZÜLDÜ 2026-07-17 (be küme sayfaları): mesa-calisanlari-kooperatifi=18506+18507
   (4/4A/4B + 6/6A/6B blokları, haritalandı+zenginleşti); mesa-sitesi=18659-18662 (12 blok:
   7F/9E/11D + G→O). ÇAPRAZ DEĞİLMİŞ, adlar doğrudan eşleşiyor. mesa-sitesi şimdilik 18659/1
   ile kayıtlı; **TKGM günü 3 sorgu: 18660/18661/18662 (parsel no + geometri) → adalar tamamla,
   4 adalık MultiPolygon sınır çiz.**
-- ipek-yapi ↔ be 'İpek Sitesi' 18476 (3 blok, 4.279 m² KM hazır) — ad bağı teyidi → Özgün.
+✔ ipek-yapi ÇÖZÜLDÜ 2026-07-17 (Özgün: 'evet aynı yer, İpek Yapı Sitesi diye geçiyor'):
+  18476 haritalandı+zenginleşti, 'İpek Sitesi' alternatifAd.
+✔ 46544 çift-kayıt MEŞRU ÇIKTI 2026-07-17: be iki siteyi de aynı adada gösteriyor —
+  Hassas Çizgi 3 blok (A12-56/B15-54/C13-52) + Özgün İpek 4 blok (A13-44/A14-48/B16-46/C14-50)
+  = tapudaki 7 blok. İki metin de blok paylaşımına göre düzeltildi (parti 54'te ikisi de
+  parselin tamamını sahipleniyordu).
 - pinarkent-91 ↔ be 'Pınar Sitesi' 18511 (6 blok, 4.950 m² KM hazır) — ad bağı teyidi → Özgün.
 --- (eski metin) ---
 - gozde-1 + gozde-2 ↔ be "gozde-sitesi 18651-18652" (hangi dosya hangi ada? TKGM nitelik+konum ile ayrıştır)

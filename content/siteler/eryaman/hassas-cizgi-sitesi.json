@@ -7,7 +7,7 @@
     "lng": 32.624978
   },
   "sinirGeoJSON": "siteler/eryaman/hassas-cizgi-sitesi-boundary.geojson",
-  "aciklama": "Hassas Çizgi Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 27.627 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"7 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Hassas Çizgi Sitesi, Eryaman Mahallesi'nin Eryaman Evleri bölgesinde, komşusu Özgün İpek Sitesi ile aynı büyük parseli paylaşan üç bloklu bir konut sitesidir (bloklar: A12-56, B15-54 ve C13-52). TKGM kayıtlarına göre yaklaşık 27.627 m²'lik kat mülkiyetli parselin tapu niteliği \"7 Blok Kargir Apartman\"dır; bu yedi bloğun 3'ü bu siteye aittir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46544",
@@ -15,8 +15,10 @@
     }
   ],
   "ozellikler": [
-    "~27.627 m² parsel (TKGM)",
+    "3 blok (A12-56, B15-54 ve C13-52)",
+    "Parseli Özgün İpek Sitesi ile paylaşır — toplam ~27.627 m² (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Evleri bölgesi",
     "Eryaman Mahallesi"
   ],
   "zenginlestirildi": "2026-07-17"
