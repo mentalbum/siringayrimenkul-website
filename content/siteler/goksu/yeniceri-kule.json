@@ -7,7 +7,7 @@
     "lng": 32.653086
   },
   "sinirGeoJSON": "siteler/goksu/yeniceri-kule-boundary.geojson",
-  "aciklama": "Yeniçeri Kule, Göksu'da İhlas Caddesi üzerinde, Göksu Parkı'nın bitişiğinde Yeniçeri Grup tarafından yükseltilen 26 katlı (zemin+25) bir kuledir — tamamlandığı dönemde Eryaman'ın en yüksek yapısı olarak duyurulmuştu. Dairelerin tamamı geniş 4+1 tipinde (brüt 196 m²) ve akıllı ev donanımlıdır; park bitişiği konumu üst katlara kesintisiz göl-park manzarası kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Yeniçeri Kule, Göksu'da İhlas Caddesi üzerinde, Göksu Parkı'nın bitişiğinde Yeniçeri Grup tarafından yükseltilen 26 katlı (zemin+25) yükselen bir yapıdır — tamamlandığı dönemde Eryaman'ın en yüksek yapısı olarak duyurulmuştu. Dairelerin tamamı geniş 4+1 tipinde (brüt 196 m²) ve akıllı ev donanımlıdır; park bitişiği konumu üst katlara kesintisiz göl-park manzarası kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "16828",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "Yeniçeri Grup — 26 katlı kule",
+    "Yeniçeri Grup — 26 katlı yapı",
     "Tamamı 4+1 (brüt 196 m²), akıllı daireler",
     "Göksu Parkı bitişiği — park/göl manzarası",
     "İhlas Caddesi / Göksu"

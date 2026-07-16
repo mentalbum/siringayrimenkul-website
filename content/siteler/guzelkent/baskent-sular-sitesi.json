@@ -7,7 +7,7 @@
     "lng": 32.614934
   },
   "sinirGeoJSON": "siteler/guzelkent/baskent-sular-sitesi-boundary.geojson",
-  "aciklama": "Başkent Sular Sitesi, Etimesgut Güzelkent Mahallesi'nde, mahallenin alçak kooperatif dokusundan ayrışan ikiz kuleleriyle dikkat çeker. TKGM kayıtlarına göre site, tapuda \"A ve B Bloktan Oluşan 14 Katlı Betonarme Apartman\" niteliğiyle kayıtlı 5.051 m²'lik kat mülkiyetli tek parsel üzerine kurulu — yani iki 14 katlı kule. Yüksek katlarda bölge manzarası sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Başkent Sular Sitesi, Etimesgut Güzelkent Mahallesi'nde, mahallenin alçak kooperatif dokusundan ayrışan 14 katlı ikiz bloklarıyla dikkat çeker. TKGM kayıtlarına göre site, tapuda \"A ve B Bloktan Oluşan 14 Katlı Betonarme Apartman\" niteliğiyle kayıtlı 5.051 m²'lik kat mülkiyetli tek parsel üzerine kurulu — yani iki 14 katlı blok. Yüksek katlarda bölge manzarası sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18477",
@@ -16,7 +16,7 @@
   ],
   "ozellikler": [
     "5.051 m² tek parsel (TKGM)",
-    "İki 14 katlı kule (A ve B — tapu kaydı)",
+    "İki 14 katlı blok (A ve B — tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],

@@ -7,7 +7,7 @@
     "lng": 32.612823
   },
   "sinirGeoJSON": "siteler/devlet/referans-ankara-boundary.geojson",
-  "aciklama": "Referans Ankara, Devlet Mahallesi sınırındaki modern gelişim aksında yükselen, Eryaman silüetinin en büyük kule projelerinden biridir. TKGM kayıtlarına göre 49.233 m²'lik kat mülkiyetli tek parselde tapu niteliği yapıyı ayrıntısıyla anlatır: 33 katlı A-B-C-D-E blokları, 31 katlı F-G-H blokları ve 29 katlı I bloğu — toplam dokuz kule. Ölçeği ve kat yüksekliğiyle bölgedeki en yoğun dikey yaşam alanıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Referans Ankara, Devlet Mahallesi sınırındaki modern gelişim aksında yükselen, Eryaman silüetinin en yüksek projelerinden biridir. TKGM kayıtlarına göre 49.233 m²'lik kat mülkiyetli tek parselde tapu niteliği yapıyı ayrıntısıyla anlatır: 33 katlı A-B-C-D-E blokları, 31 katlı F-G-H blokları ve 29 katlı I bloğu — toplam dokuz yüksek blok. Ölçeği ve kat yüksekliğiyle bölgedeki en yoğun dikey yaşam alanıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "48507",
@@ -16,7 +16,7 @@
   ],
   "ozellikler": [
     "49.233 m² tek parsel (TKGM)",
-    "9 kule: 5×33 + 3×31 + 1×29 kat (tapu kaydı)",
+    "9 yüksek blok: 5×33 + 3×31 + 1×29 kat (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman silüetinin en büyük projelerinden"
   ],

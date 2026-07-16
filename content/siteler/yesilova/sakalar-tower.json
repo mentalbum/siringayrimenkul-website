@@ -7,7 +7,7 @@
     "lng": 32.6105421
   },
   "sinirGeoJSON": "siteler/yesilova/sakalar-tower-boundary.geojson",
-  "aciklama": "Sakalar Tower, Yeşilova'da İstasyon Caddesi üzerinde yükselen 14 katı aşan kule tipi bir konut yapısıdır; ilanlarda 1+1 ve 2+1 daireleri görülür — istasyon aksının yatırımlık noktalarından. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Sakalar Tower, Yeşilova'da İstasyon Caddesi üzerinde yükselen 14 katı aşan yüksek bir konut yapısıdır; ilanlarda 1+1 ve 2+1 daireleri görülür — istasyon aksının yatırımlık noktalarından. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47549",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "Kule tipi yapı (14+ kat)",
+    "Yüksek katlı yapı (14+ kat)",
     "1+1 ve 2+1 daireler",
     "İstasyon Caddesi üzeri",
     "Yeşilova / Eryaman gelişim aksı"

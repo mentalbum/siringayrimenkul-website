@@ -7,7 +7,7 @@
     "lng": 32.661171
   },
   "sinirGeoJSON": "siteler/cumhuriyet/vizyon-tower-boundary.geojson",
-  "aciklama": "Vizyon Tower, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:650'de yer alan kule tipi bir rezidans yapısıdır; profesyonel tesis yönetimiyle (site yaşam kılavuzlu) işletilen, bulvar cepheli modern bir konut noktasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Vizyon Tower, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:650'de yer alan yüksek katlı bir rezidans yapısıdır; profesyonel tesis yönetimiyle (site yaşam kılavuzlu) işletilen, bulvar cepheli modern bir konut noktasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62690",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "Kule tipi rezidans",
+    "Yüksek katlı rezidans",
     "Profesyonel tesis yönetimi",
     "FSM Bulvarı No:650 / Yeni Batı"
   ],

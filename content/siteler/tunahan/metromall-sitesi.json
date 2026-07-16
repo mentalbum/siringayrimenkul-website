@@ -7,7 +7,7 @@
     "lng": 32.610825
   },
   "sinirGeoJSON": "siteler/tunahan/metromall-sitesi-boundary.geojson",
-  "aciklama": "Metromall Sitesi (Metromall Residence), Tunahan Mahallesi'nde 30 Ağustos Caddesi üzerinde, Söğüt İnşaat tarafından geliştirilen; alışveriş merkezi, ofis ve konutu bir arada barındıran Eryaman'ın en büyük karma projelerinden biridir. TKGM kayıtlarına göre 49.796 m²'lik parselde tapu niteliği yapıyı ayrıntısıyla anlatıyor: 7 katlı A blok ofis-işyeri, B'den E'ye dört blok ise 35 katlı betonarme konut kuleleri — Eryaman silüetinin en yüksek yapıları arasında. Zemindeki Metromall AVM (Migros'lu çarşısıyla) bölgenin alışveriş merkezi işlevini görüyor; parselde kat irtifakı kurulu. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Metromall Sitesi (Metromall Residence), Tunahan Mahallesi'nde 30 Ağustos Caddesi üzerinde, Söğüt İnşaat tarafından geliştirilen; alışveriş merkezi, ofis ve konutu bir arada barındıran Eryaman'ın en büyük karma projelerinden biridir. TKGM kayıtlarına göre 49.796 m²'lik parselde tapu niteliği yapıyı ayrıntısıyla anlatıyor: 7 katlı A blok ofis-işyeri, B'den E'ye dört blok ise 35 katlı betonarme konut blokları — Eryaman silüetinin en yüksek yapıları arasında. Zemindeki Metromall AVM (Migros'lu çarşısıyla) bölgenin alışveriş merkezi işlevini görüyor; parselde kat irtifakı kurulu. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46510",
@@ -18,7 +18,7 @@
   "ozellikler": [
     "49.796 m² parsel (TKGM)",
     "Söğüt İnşaat — AVM + ofis + konut karma",
-    "35 katlı 4 konut kulesi (B–E, tapu kaydı)",
+    "35 katlı 4 konut bloğu (B–E, tapu kaydı)",
     "7 katlı A blok ofis-işyeri",
     "Metromall AVM — Migros'lu çarşı",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
