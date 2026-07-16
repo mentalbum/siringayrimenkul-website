@@ -7,11 +7,18 @@
     "lng": 32.644384
   },
   "sinirGeoJSON": "siteler/susuz/mood-altinok-boundary.geojson",
-  "aciklama": "Mood Altınok, Yenimahalle'ye bağlı Susuz Mahallesi'nde, Göksu bölgesinin hemen kuzeyindeki yeni gelişim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Susuz Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Mood Altınok, Susuz'un Göksu kentsel gelişim bölgesinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 21.334 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 21 Katlı Betonarme Mesken Ve B Blok 21 Katlı Betonarme Mesken Ve C Ve D Bloklardan Oluşan 2 Katlı Betonarme Ofis İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "64527",
       "parsel": "10"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~21.334 m² parsel (TKGM)",
+    "2-21 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

@@ -7,11 +7,18 @@
     "lng": 32.645792
   },
   "sinirGeoJSON": "siteler/goksu/park-evo-konutlari-boundary.geojson",
-  "aciklama": "Park Evo Konutları, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Park Evo Konutları, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 7.186 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"15 Katlı A Blok Ve 17 Katlı B Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63380",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~7.186 m² parsel (TKGM)",
+    "15-17 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

@@ -7,11 +7,18 @@
     "lng": 32.646672
   },
   "sinirGeoJSON": "siteler/goksu/uzunali-goksu-konutlari-2-boundary.geojson",
-  "aciklama": "Uzunali Göksu Konutları 2, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Uzunali Göksu Konutları 2, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.340 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"27 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63396",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.340 m² parsel (TKGM)",
+    "27 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

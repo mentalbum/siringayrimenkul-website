@@ -7,11 +7,17 @@
     "lng": 32.643594
   },
   "sinirGeoJSON": "siteler/goksu/havuzlu-evler-sitesi-boundary.geojson",
-  "aciklama": "Havuzlu Evler Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Havuzlu Evler Sitesi, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 19.282 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"3 Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "48146",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~19.282 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

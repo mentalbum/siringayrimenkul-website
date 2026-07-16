@@ -7,11 +7,18 @@
     "lng": 32.645038
   },
   "sinirGeoJSON": "siteler/goksu/vaditepe-baspinar-boundary.geojson",
-  "aciklama": "Vaditepe Başpınar, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Vaditepe Başpınar, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 16.978 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 17 Katlı, B Blok 18 Katlı, C Blok 2 Katlı Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63380",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~16.978 m² parsel (TKGM)",
+    "2-18 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

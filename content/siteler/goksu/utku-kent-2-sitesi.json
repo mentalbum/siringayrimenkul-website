@@ -7,11 +7,18 @@
     "lng": 32.6399016
   },
   "sinirGeoJSON": "siteler/goksu/utku-kent-2-sitesi-boundary.geojson",
-  "aciklama": "Utku Kent 2 Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Utku Kent 2 Sitesi, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 18.815 m²'lik tapuda kat irtifakı kayıtlı parselde tapu kaydı yapıyı şöyle tanımlar: \"11 Katlı 1 Ve 2 Nolu,12 Katlı 3,4,7 Ve 8 Nolu,13 Katlı 5 Nolu Bloklarından Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46453",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~18.815 m² parsel (TKGM)",
+    "11-13 kat aralığında bloklar (tapu kaydı)",
+    "Tapuda kat irtifakı kayıtlı (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

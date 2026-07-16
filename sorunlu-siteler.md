@@ -4,6 +4,13 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Susuz/Göksu toplu tur sonuçları (2026-07-17 sabah)
+- 3. Susuz kimliği: 'Susuz' köy kadastrosu id=123431 (64xxx adaları; İmar=123432).
+- PIN ŞÜPHELİLERİ (parsel konut değil): sky-goksu 63356/2 ARSA (Yukarıyurtçu şüphesiyle
+  uyumlu), yildiz-life 63316/2 ARSA, goksu-metrokent 46479/2 = İLKÖĞRETİM OKULU(!),
+  goksu-marina 64674/5 = 1.140m² ana taşınmaz arsa (Marina etap/pin sorusu) → Özgün/yeniden pin.
+- merkez/angora/goksu-bilge şüphelileri korundu (yazılmadı).
+
 ### Yeni site adayı: Altaş İnşaat 'Relax Line' (2026-07-16)
 - Yandex: 'Altaş İnşaat Relax Line, Şeker Mahallesi, 2 blok 65 konut' — repo'da kayıt YOK
   (Relax Göksu/Eryaman ile karıştırma — bu Altaş'ın ayrı projesi) → Özgün: kayıt açılsın mı?

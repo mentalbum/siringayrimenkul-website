@@ -7,11 +7,18 @@
     "lng": 32.652918
   },
   "sinirGeoJSON": "siteler/goksu/bordo-loca-boundary.geojson",
-  "aciklama": "Bordo Loca, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Bordo Loca, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 18.920 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Katlı Betonarme B Blok Mesken Ve 13'Şer Katlı A Ve C Blok Betonarme Apartman İle 3'Şer Katlı D,E,F Bloktan Oluşan Ofis İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63400",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~18.920 m² parsel (TKGM)",
+    "3-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

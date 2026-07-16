@@ -7,11 +7,18 @@
     "lng": 32.63937
   },
   "sinirGeoJSON": "siteler/goksu/ilgaz-life-boundary.geojson",
-  "aciklama": "Ilgaz Life, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ilgaz Life, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.642 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"15 Katlı Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63388",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.642 m² parsel (TKGM)",
+    "15 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

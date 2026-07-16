@@ -7,11 +7,18 @@
     "lng": 32.646857
   },
   "sinirGeoJSON": "siteler/goksu/koru-eryaman-boundary.geojson",
-  "aciklama": "Koru Eryaman, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Koru Eryaman, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 4.033 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Katlı A Blok Betonarme Mesken 2 Katlı B Blok Betonarme Ofis Ve İşyeri\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63379",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~4.033 m² parsel (TKGM)",
+    "2-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
