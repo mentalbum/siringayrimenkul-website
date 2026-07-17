@@ -80,15 +80,38 @@ export default async function SitePage({ params }: Props) {
   if (!mahalle || !site) notFound();
 
   const mahalleSiteleri = getSitelerByMahalle(mahalleSlug);
+  // Komşu siteler: koordinatı olan sitelerde coğrafi olarak en yakın 6 komşu
+  // (ziyaretçiye gerçek komşuluk, tarayıcıya zengin iç bağlantı ağı). Koordinatı
+  // olmayanlarda eski sıralı-pencere mantığı devrede kalır.
+  const digerSiteSayisi = Math.min(6, mahalleSiteleri.length - 1);
   const siteIndex = mahalleSiteleri.findIndex((item) => item.slug === site.slug);
-  const digerSiteSayisi = Math.min(3, mahalleSiteleri.length - 1);
-  const digerSiteler =
+  const halkaSiteler =
     siteIndex === -1
       ? mahalleSiteleri.filter((item) => item.slug !== site.slug).slice(0, digerSiteSayisi)
       : Array.from(
           { length: digerSiteSayisi },
           (_, i) => mahalleSiteleri[(siteIndex + 1 + i) % mahalleSiteleri.length]
         );
+  const merkez = site.koordinat;
+  const digerSiteler = merkez
+    ? (() => {
+        const uzaklikKare = (k: { lat: number; lng: number }) => {
+          const dLat = k.lat - merkez.lat;
+          const dLng = (k.lng - merkez.lng) * Math.cos((merkez.lat * Math.PI) / 180);
+          return dLat * dLat + dLng * dLng;
+        };
+        const yakinlar = mahalleSiteleri
+          .filter((item) => item.slug !== site.slug && item.koordinat)
+          .sort((a, b) => uzaklikKare(a.koordinat!) - uzaklikKare(b.koordinat!))
+          .slice(0, digerSiteSayisi);
+        // Koordinatlı komşu azsa halkadan tamamla (tekrarsız).
+        for (const aday of halkaSiteler) {
+          if (yakinlar.length >= digerSiteSayisi) break;
+          if (!yakinlar.some((item) => item.slug === aday.slug)) yakinlar.push(aday);
+        }
+        return yakinlar;
+      })()
+    : halkaSiteler;
   const sinir = getSiteBoundary(site);
   const tipi = inferSiteTipi(site.isim);
 
@@ -274,7 +297,11 @@ export default async function SitePage({ params }: Props) {
 
       {digerSiteler.length > 0 && (
         <section className="mt-14">
-          <h2 className="text-xl">{mahalle.isim}&apos;ndeki Diğer Siteler</h2>
+          <h2 className="text-xl">
+            {site.koordinat
+              ? `Komşu Siteler — ${mahalle.isim}`
+              : `${mahalle.isim}'ndeki Diğer Siteler`}
+          </h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {digerSiteler.map((item) => (
               <SiteCard key={item.slug} site={item} />
