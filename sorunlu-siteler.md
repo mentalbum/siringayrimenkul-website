@@ -251,7 +251,7 @@ KALAN ŞÜPHELİLER (Yandex'te de yok / çözümsüz):
 - ✅ Şehr-i Huzur Gold = ASM Gold Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün StreetView tabela kanıtı; birleştirildi, sehr-i-huzur-gold silindi).
 - ✅ Şehr-i Huzur Prestij = ASM Prestij Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün onayı; be 18-A/18-B + tapu '9 Katlı A Ve B Blok' örtüştü; dosya asm-prestij-konutlari olarak yeniden adlandı, eski ad alternatifAd, tapu alıntısıyla zenginleştirildi).
 - eryaman/beyaz-residence (45794): be 'Tertipler/Tusun Apt' gösteriyor, Beyaz yok.
-- eryaman/elif-elvan-sitesi (46383): be 'Seyitoğulları Sitesi 4-10' gösteriyor → Elif Elvan=Seyitoğulları mı?
+✅ elif-elvan ÇÖZÜLDÜ 2026-07-17 (Özgün: 'Seyitoğulları ile aynı site'): 46383/1'de kaldı, tapu quote + altAd yazıldı. (Elif Özgen 46384 AYRI — yeni aday.)
 - eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.
 - seyh-samil/acar-sitesi (46267): be 'Gülistan Apt.4-A' gösteriyor (Acar A-C-D bekleniyordu).
 - SOA/cumhuriyet-sitesi (17491): be adayı Kutlutaş-2 kümesinde, apartmanlar İLÇE adlı
