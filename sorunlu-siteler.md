@@ -66,6 +66,15 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   * meric = Yandex 'Meriç 88' AYYILDIZ Mh (bölge dışı güney!) — bizim yesilova/meric bu mu? → Özgün.
   * botanik-cumhuriyet: Yandex 2 aday — 'Arissa Botanik' + 'Yeni Botanik' (Cumhuriyet, ~80 m arayla);
     bizim düz 'Botanik Sitesi' hangisi? → Özgün.
+  * ✔ PORTAKAL AİLESİ ÇÖZÜLDÜ (Yandex 1/2/3 pinleri be markerlarıyla birebir): 1-portakal=18464/1
+    (kapı 7-17), portakal-cicegi-2=18450/1 (kapı 119 ailesi), portakal-cicegi(düz)=19517/2
+    (14 blok, 'Portakal Çiçeği 3') — üçü de yazıldı.
+  * ✔ kosk-sitesi=19516/4 yazıldı (Yandex 'Köşk Sitesi' pini birebir; Ersan için ayrı pin YOK
+    → ersan-sitesi muhtemel dupe, silme onayı Özgün'de). ✔ renk-villalari=19516/2 yazıldı
+    (36 blok villa; eryaman-renk-villalari aynı 687. Cad adresli muhtemel dupe → Özgün).
+  * tuna-park-evleri: Yandex'te sadece 'Tuna Parkı 2013' (Tunahan'da PARK, site değil) →
+    kayıt hayalet/park karışıklığı olabilir → Özgün. ekiciler: 'Ekiciler Park' YENİ BAĞLICA
+    Mah (bölge dışı) → yesilova/ekiciler kaydı şüpheli → Özgün.
   * kiratli-akropolis: Nominatim 'Akropolis Konutları' ERGAZİ İmar 42966/1 ARSA (Batıkent tarafı,
     bölge dışı) → kayıt kapsam içi mi? → Özgün.
   * goksu-park-vadi pini 63404/3 ARSA Kİ (10.498 m²) → arsa/yeni proje listesine.

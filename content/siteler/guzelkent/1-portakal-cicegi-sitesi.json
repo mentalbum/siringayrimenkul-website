@@ -2,5 +2,27 @@
   "isim": "1. Portakal Çiçeği Sitesi",
   "slug": "1-portakal-cicegi-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "1. Portakal Çiçeği Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "1. Portakal Çiçeği Sitesi, Güzelkent Mahallesi'nde 7'den 17'ye tek kapı numaralı altı bloktan oluşan bir konut sitesidir; Portakal Çiçeği ailesinin ilk sitesidir. TKGM kayıtlarına göre yaklaşık 5.195 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Portakal Çiçeği 1 Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.992174,
+    "lng": 32.618144
+  },
+  "sinirGeoJSON": "siteler/guzelkent/1-portakal-cicegi-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18464",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (kapı no 7, 9, 11, 13, 15, 17)",
+    "Portakal Çiçeği ailesinin 1. sitesi",
+    "~5.195 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

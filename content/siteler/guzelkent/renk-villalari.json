@@ -2,5 +2,24 @@
   "isim": "Renk Villaları",
   "slug": "renk-villalari",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Renk Villaları, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Renk Villaları, Güzelkent villa bölgesinde, 687. Cadde üzerinde 36 bloktan oluşan büyük bir villa sitesidir. TKGM kayıtlarına göre yaklaşık 12.624 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Otuzaltı Blok Kargir Villa\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.995078,
+    "lng": 32.602672
+  },
+  "sinirGeoJSON": "siteler/guzelkent/renk-villalari-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19516",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "36 blok kârgir villa (tapu)",
+    "687. Cadde üzeri, Güzelkent villa bölgesi",
+    "~12.624 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

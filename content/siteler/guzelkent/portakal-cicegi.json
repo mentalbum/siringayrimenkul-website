@@ -2,5 +2,28 @@
   "isim": "Portakal Çiçeği",
   "slug": "portakal-cicegi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Portakal Çiçeği, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Portakal Çiçeği, Güzelkent villa bölgesinin içinde kalan, 14 bloklu büyük bir konut sitesidir; yerel kayıtlarda 'Portakal Çiçeği 3' olarak da geçer. TKGM kayıtlarına göre yaklaşık 11.276 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14.Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Portakal Çiçeği 3 Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.994342,
+    "lng": 32.6061
+  },
+  "sinirGeoJSON": "siteler/guzelkent/portakal-cicegi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19517",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "14 blok (tapu)",
+    "Villa bölgesi içindeki apartman sitesi",
+    "Portakal Çiçeği ailesinin 3. sitesi",
+    "~11.276 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
