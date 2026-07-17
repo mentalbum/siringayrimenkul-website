@@ -71,7 +71,11 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   * goksu-park-vadi pini 63404/3 ARSA Kİ (10.498 m²) → arsa/yeni proje listesine.
   * YENİ ADAYLAR (Yandex, repo'da yok): Yavuz Selim Sitesi (YS), Türkkonut Betim (Devlet),
     Türkkonut Havacılar 2 (Göksu), Türkkonut Selinkent (ŞŞ), Umut Yapı (Ata), Laçin Eryaman,
-    Meydan Eryaman (Göksu), Eylül YS 39.99805/32.61881.
+    Meydan Eryaman (Göksu), Eylül YS 39.99805/32.61881, Oyak 555 Konut (Eryaman 39.98032/32.62568),
+    Hotki Ritm Residence (Yeşilova 4014. Cad No:12 — hotki ailesine ek).
+  * ✔ kardelen-SOA = 'Kardelen Konutları' 46619/7 (3 blok, Şeker kadastro) — yazıldı.
+  * intes-dogakent: Yandex 'Doğakent Konutları' pini (39.96905/32.62762, 1. Meşrutiyet Cad
+    civarı) kadastro boşluğuna/tarlaya düşüyor (3 deneme) — İntes proje sayfası yolu denenecek → sonra.
 - Aranıp BULUNAMAYANLAR (2026-07-17 gece; dizin-düzeyi kayıt var, olgu yok — Özgün/Maps gerekli):
   75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
   intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,

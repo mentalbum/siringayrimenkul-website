@@ -2,5 +2,26 @@
   "isim": "Kardelen Sitesi",
   "slug": "kardelen-sitesi",
   "mahalleSlug": "sehit-osman-avci",
-  "aciklama": "Kardelen Sitesi, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Kardelen Sitesi, Şehit Osman Avcı Mahallesi'nde üç bloklu bir konut sitesidir; 'Kardelen Konutları' adıyla da bilinir. TKGM kayıtlarına göre yaklaşık 5.560 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"3 Blok Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Kardelen Konutları"
+  ],
+  "koordinat": {
+    "lat": 39.987968,
+    "lng": 32.651818
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci/kardelen-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46619",
+      "parsel": "7"
+    }
+  ],
+  "ozellikler": [
+    "3 blok (tapu)",
+    "~5.560 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı — kadastroda Şeker kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
