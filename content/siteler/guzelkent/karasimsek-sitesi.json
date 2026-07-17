@@ -2,5 +2,26 @@
   "isim": "Karaşimşek Sitesi",
   "slug": "karasimsek-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Karaşimşek Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Karaşimşek Sitesi, Etimesgut Güzelkent Mahallesi'nde 16'dan 26'ya çift kapı numaralı altı bloktan oluşan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.011 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Karşimşek Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.984756,
+    "lng": 32.602937
+  },
+  "sinirGeoJSON": "siteler/guzelkent/karasimsek-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18655",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (kapı no 16–26, çift)",
+    "~5.011 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
