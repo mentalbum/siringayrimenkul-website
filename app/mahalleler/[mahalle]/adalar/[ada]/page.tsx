@@ -17,6 +17,7 @@ import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { tamlayanEk } from "@/lib/turkce";
 
 type Props = {
   params: Promise<{ mahalle: string; ada: string }>;
@@ -66,7 +67,13 @@ export default async function AdaPage({ params }: Props) {
       .filter((item) => item.etap === ada.etap && adaRouteKey(item) !== adaKey)
       .map((item) => [adaRouteKey(item), item] as const)
   );
-  const ayniEtaptakiler = Array.from(ayniEtapMap.values());
+  const buNo = Number.parseInt(ada.no, 10);
+  const ayniEtaptakiler = Array.from(ayniEtapMap.values())
+    .sort(
+      (a, b) =>
+        Math.abs(Number.parseInt(a.no, 10) - buNo) - Math.abs(Number.parseInt(b.no, 10) - buNo)
+    )
+    .slice(0, 12);
 
   const adaJsonLd = {
     "@context": "https://schema.org",
@@ -133,7 +140,7 @@ export default async function AdaPage({ params }: Props) {
               >
                 {ada.site.isim}
               </Link>
-              &apos;nin bir parçasıdır
+              {tamlayanEk(ada.site.isim)} bir parçasıdır
               {ada.blok ? ` (${ada.blok} Blok)` : ""}.
             </p>
           ) : (

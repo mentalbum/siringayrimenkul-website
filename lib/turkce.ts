@@ -82,3 +82,13 @@ export function tamlayanHali(isim: string): string {
   const ek = u === "a" || u === "ı" ? "ın" : u === "e" || u === "i" ? "in" : u === "o" || u === "u" ? "un" : "ün";
   return `${isim}'${UNLULER.includes(harf) ? "n" : ""}${ek}`;
 }
+
+/** Yalnızca tamlayan eki: "'nin/'in/'un…" — link içi ad + dışarıda ek dizmek için. */
+export function tamlayanEk(isim: string): string {
+  return tamlayanHali(isim).slice(isim.length);
+}
+
+/** Yalnızca bulunma eki: "'nde/'de/'te…". */
+export function bulunmaEk(isim: string): string {
+  return bulunmaHali(isim).slice(isim.length);
+}
