@@ -4,6 +4,26 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Soru turu + final süpürme (2026-07-17 öğleden sonra)
+- ✅ SORU TURU SONUÇLARI (Özgün): Eston birleşti; Ersan=Köşk (silindi); eryaman-renk silindi
+  ('Renk Villaları diye geçiyor'); 18679=ARSLANLAR (önce Çağrıkent dedi, düzeltti; Google
+  Çağrıkent pini yanlış, 'Çağrıkent yok' → dosya silindi); Elif Elvan=Seyitoğulları (46383'te
+  zenginleşti); 'Utkukent 2 var 1 yok' → utku-kent-1 silindi; beloren=Belören Manzara kesin
+  (erkent-umut silindi); bölge dışı 5'li silindi (sky-goksu/meric/ekiciler/kiratli/tuna-park);
+  gestas-toki silindi (genel ad). Botanik sorusunda yoruldu → kalan otonom.
+- ✅ ahikent 46644/1 DOĞRULANDI (Yandex 'Ahikent Sitesi SOA' pini tam mevcut parsele düştü;
+  be'nin 'Laleevleri' etiketi yanlış/karışık) — tapu quote ile yazıldı. Ayrıca 'Öz Ahikent
+  Sitesi' YS 39.99849/32.62021 YENİ ADAY (Özahikent'in kendisi olabilir).
+- ✅ eser-yapi-evleri 44749/1 (57k boş arsa) → 44752/1 REMAP (Yandex tam-ad pini; 11 katlı Kİ
+  apartman) + yazıldı. susuz/eser-yapi-sitesi hâlâ belirsiz (muhtemel dupe) → Özgün.
+- ✅ alpar Kİ formatıyla yazıldı (47541/3).
+- Yazıcı ipucu: Yandex 'Yazıcı Opensky Konutları' (Zirve Cad) — yazici-modern ile bağ? → sonra.
+- KALAN 25: Botanik ikilisi (10-botanik + botanik-sitesi ↔ Botanik Evleri 43253/6 /Arissa/Yeni
+  — isim kanıtı yetersiz, eşleştirme Özgün'e), ata-life↔hurev 44774/3 çekişmesi (pin vs pin),
+  manzara/mercankent-manzara, cumhuriyet-SOA 17491, 4-devlet+goksu-metrokent (okul parselleri),
+  tan-yildizi, yazici-modern, zekioglu, yildiz-life, hotki-meydan, kurtulus (pin tarlaya düşüyor),
+  celikler, konut-sitesi (YS), 75-yil, turk-konut (ŞŞ), kanat, ortak-grup, enday, dostlar/tatlı-
+  yamaç mahalle taşımaları — hepsi Özgün'ün yerel bilgisine kaldı.
 ### Villa turu (2026-07-17 gece — be villa dizini + TKGM marker eşleştirme)
 - ✔ 5 adasız kayıt haritalandı+zenginleşti: eczacilar=19516/6 (20 dubleks), angora-güzelkent=19516/5
   (22 dubleks), erenkoy=19517/4 (16 villa), korukent=19517/1 (16 dubleks), kardelen-güzelkent=19504/1
