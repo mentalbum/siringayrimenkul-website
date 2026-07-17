@@ -3,27 +3,37 @@
   "slug": "eston-bloklari",
   "mahalleSlug": "seyh-samil",
   "koordinat": {
-    "lat": 39.9951328,
-    "lng": 32.6230417
+    "lat": 39.993784,
+    "lng": 32.623379
   },
   "sinirGeoJSON": "siteler/seyh-samil/eston-bloklari-boundary.geojson",
-  "aciklama": "Eston Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. TKGM kayıtlarına göre haritaladığımız parselde 3 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 5.351 m². Etap kooperatif kuşağında, yerel kayıtlarda 'Eston 2' olarak anılan beş adalık kümenin içinde yer alır; aynı kümede Çamlıca Sitesi de bulunur. (Şehit Osman Avcı'daki 2. Etap Eston Blokları ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eston Blokları (Eston 2), Şeyh Şamil Mahallesi'nin 3. Etap dokusunda dört komşu adaya yayılan bir konut kümesidir; bloklar yerel kayıtlarda A6/A7, B3/B4, BK ve C4 kodlu adlarla listelenir. TKGM kayıtlarına göre dört parsel de kat mülkiyetlidir; tapular parselleri sırasıyla 6, 5, 5 ve 3 adet kârgir apartman olarak tanımlar (toplam yaklaşık 22.780 m²). Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
+    {
+      "no": "17338",
+      "parsel": "1"
+    },
+    {
+      "no": "17339",
+      "parsel": "1"
+    },
+    {
+      "no": "17340",
+      "parsel": "1"
+    },
     {
       "no": "17342",
       "parsel": "1"
     }
   ],
   "ozellikler": [
-    "3 kârgir apartman, ~5.351 m² (TKGM, haritalı parsel)",
-    "Kat mülkiyetli parsel (TKGM)",
-    "'Eston 2' kümesi (5 ada) içinde",
-    "Çamlıca Sitesi ile komşu",
-    "Eryaman 3. Etap kooperatif kuşağı",
-    "Şeyh Şamil — kadastroda Eryaman kaydı"
+    "Dört komşu adada apartman kümesi (6+5+5+3 blok, tapu)",
+    "Dört parsel toplamı ~22.780 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "3. Etap — Şeyh Şamil Mahallesi"
   ],
   "alternatifAdlar": [
     "Eston 2 Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-07-17"
 }

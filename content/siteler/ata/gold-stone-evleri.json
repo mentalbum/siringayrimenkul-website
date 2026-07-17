@@ -7,11 +7,18 @@
     "lng": 32.615073
   },
   "sinirGeoJSON": "siteler/ata/gold-stone-evleri-boundary.geojson",
-  "aciklama": "Gold Stone Evleri, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Gold Stone Evleri, Ata Mahallesi'nde beş bloktan oluşan bir konut sitesidir; bloklarda ikişer asansör bulunur. TKGM kayıtlarına göre yaklaşık 23.540 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46411",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "5 blok",
+    "~23.540 m² parsel (TKGM)",
+    "Kat irtifaklı parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

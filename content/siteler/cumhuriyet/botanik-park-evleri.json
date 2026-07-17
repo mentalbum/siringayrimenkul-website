@@ -7,11 +7,17 @@
     "lng": 32.6910298
   },
   "sinirGeoJSON": "siteler/cumhuriyet/botanik-park-evleri-boundary.geojson",
-  "aciklama": "Botanik Park Evleri, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Botanik Park Evleri, Cumhuriyet Mahallesi'nin (Yeni Batı bölgesi) doğu hattında yer alan modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 11.411 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43254",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~11.411 m² parsel (TKGM)",
+    "Kat irtifaklı parsel (TKGM)",
+    "Cumhuriyet (Yeni Batı) — kadastroda Yuva kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

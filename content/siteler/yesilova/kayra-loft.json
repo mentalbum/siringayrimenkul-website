@@ -7,11 +7,16 @@
     "lng": 32.6136146
   },
   "sinirGeoJSON": "siteler/yesilova/kayra-loft-boundary.geojson",
-  "aciklama": "Kayra Loft, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Kayra Loft, Yeşilova Mahallesi'nde 4014. Cadde üzerinde yer alan, modern mimarili bir konut kompleksidir; geniş yeşil alanları ve yürüyüş yollarıyla bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47529",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Modern mimari, yeşil alanlı yerleşim",
+    "4014. Cadde — Yeşilova Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
