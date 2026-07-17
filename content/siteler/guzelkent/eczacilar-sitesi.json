@@ -2,5 +2,23 @@
   "isim": "Eczacılar Sitesi",
   "slug": "eczacilar-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Eczacılar Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Eczacılar Sitesi, Etimesgut Güzelkent Mahallesi'nin villa bölgesinde yer alan bir sitedir. TKGM kayıtlarına göre yaklaşık 6.932 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"20 Blok Dubleks Ev\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.995507,
+    "lng": 32.603641
+  },
+  "sinirGeoJSON": "siteler/guzelkent/eczacilar-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19516",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "20 dubleks ev (tapu)",
+    "~6.932 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

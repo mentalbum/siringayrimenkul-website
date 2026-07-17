@@ -2,5 +2,23 @@
   "isim": "Erenköy Sitesi",
   "slug": "erenkoy-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Erenköy Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Erenköy Sitesi, Etimesgut Güzelkent Mahallesi'nin villa bölgesinde yer alan bir sitedir. TKGM kayıtlarına göre yaklaşık 4.372 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"3 Katlı,16 Adet Betonarme Villa\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.993204,
+    "lng": 32.60563
+  },
+  "sinirGeoJSON": "siteler/guzelkent/erenkoy-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19517",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "16 villa, 3 katlı (tapu)",
+    "~4.372 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

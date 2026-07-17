@@ -4,6 +4,29 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Villa turu (2026-07-17 gece — be villa dizini + TKGM marker eşleştirme)
+- ✔ 5 adasız kayıt haritalandı+zenginleşti: eczacilar=19516/6 (20 dubleks), angora-güzelkent=19516/5
+  (22 dubleks), erenkoy=19517/4 (16 villa), korukent=19517/1 (16 dubleks), kardelen-güzelkent=19504/1
+  (16 dubleks). Yöntem: be sayfa Enlem/Boylam işaretçisi → point-in-polygon.
+- **Özgün'e sorulacak (kanıt hazır):** kosk-sitesi + ersan-sitesi ↔ be 'Köşk (Ersan) Sitesi no:17'
+  TEK site, 19516/4 (16 dubleks, 5.439 m²) → birleştirme onayı. renk-villalari +
+  eryaman-renk-villalari ↔ be 'Renk Villaları no:14' TEK site, 19516/2 ('Otuzaltı Blok Kargir
+  Villa', 12.624 m²) → birleştirme onayı.
+- Portakal Çiçeği ailesi verisi: be 'Portakal Çiçeği Sitesi' = 19517/2 '14.Blok Kargir APARTMAN'
+  (11.276 m², marker içinde) + eski not be 18450 apartman. 3 dosyanın ayrıştırması → Özgün.
+- Boşta parseller: 19516/1 (22 blok, 8.303 m²) ve 19517/3 (16 villa, 4.991 — Erenköy'ün ikizi
+  olabilir; be Erenköy alanı 9.579 ≈ /3+/4 toplamı) → sonra.
+- YENİ villa-adayları (repo'da yok): Bizim Şirinköy (19508), Doktorlar no:3 (19509), Eylül (19528),
+  Göksu no:24 (19505) & no:7 (19524), Metrokent (19530), Özenkent 2 (19531), Saçak 91 (19523),
+  Seda Terasevler (19529), Yunus Kent (19514), Büyük Ankara (18475), Ankara Anadolu (18474),
+  Çağdaş Sistem (18472), Çözümkent (18480), Gardenya (18479), Şelale (18451), Boyut (18487),
+  Nazlı Deniz (18488), Çağdaş-91 (18491), Didem (18489) → Özgün: kayıt açılsın mı?
+- yuksel-kent-91 bizde 47614'te; be villa dizini ayrıca 'Yüksel Kent no:1' 19503 gösteriyor —
+  iki ayrı site olabilir → sonra. YS korukent-sitesi (19508/1) ↔ be 'Korukent 91 no:10' —
+  bizim YS kaydı muhtemelen Korukent 91, Güzelkent korukent (19517/1) ayrı → altAd sonra.
+- ✔ gode-yasam şüphesi KAPANDI: 46620/2 tapusu gerçek bina kaydı (parti 54'te zenginleşti);
+  goksu-arma sınırı 46454/1 TKGM geometrisiyle birebir doğrulandı.
+
 ### Mega tur 2 notları (2026-07-17)
 - ✔ 65'lik kota kuyruğu İŞLENDİ 2026-07-17 gece (kota tazelendi, 74/74 sorgu OK):
   58 yazıldı (6'sı dürüst ticari format: pasaj-eryaman, kocaklar-tower, lowland-business,

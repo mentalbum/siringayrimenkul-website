@@ -2,5 +2,23 @@
   "isim": "Angora Sitesi",
   "slug": "angora-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Angora Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Angora Sitesi, Etimesgut Güzelkent Mahallesi'nin villa bölgesinde yer alan bir sitedir. TKGM kayıtlarına göre yaklaşık 7.626 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"22 Adet Dublek Ev (Konut)\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.99582,
+    "lng": 32.603163
+  },
+  "sinirGeoJSON": "siteler/guzelkent/angora-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19516",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "22 dubleks ev (tapu)",
+    "~7.626 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
