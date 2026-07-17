@@ -7,11 +7,18 @@
     "lng": 32.6152778
   },
   "sinirGeoJSON": "siteler/yavuz-selim/goksu-sitesi-boundary.geojson",
-  "aciklama": "Göksu Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Göksu Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.312 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Adet Kargir Ev\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19524",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~5.312 m² parsel (TKGM)",
+    "16 adet konut (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

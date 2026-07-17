@@ -7,11 +7,19 @@
     "lng": 32.61772
   },
   "sinirGeoJSON": "siteler/yavuz-selim/pasaj-eryaman-boundary.geojson",
-  "aciklama": "Pasaj Eryaman, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Pasaj Eryaman, Yavuz Selim Mahallesi'nde yer alan bir ticari yapıdır (ofis/işyeri). TKGM kayıtlarına göre yaklaşık 8.846 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Katlı Betonarme Ofis,İşyeri\". Bu yapıda satılık veya kiralık ofis ya da dükkânınız mı var? Ticari birimde doğru fiyat konum, kat ve kiracı profiline göre netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46443",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~8.846 m² parsel (TKGM)",
+    "16 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

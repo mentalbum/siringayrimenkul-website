@@ -7,11 +7,19 @@
     "lng": 32.610743
   },
   "sinirGeoJSON": "siteler/yesilova/address-yesilova-boundary.geojson",
-  "aciklama": "Address Yeşilova, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Address Yeşilova, Yeşilova Mahallesi'nde yer alan bir ticari yapıdır (ofis/işyeri). TKGM kayıtlarına göre yaklaşık 3.162 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"2' Şer Katlı A Ve C Blok, 12 Katlı B Bloktan Oluşan Betonarme Ofis Ve İşyeri Ve Arsa\". Bu yapıda satılık veya kiralık ofis ya da dükkânınız mı var? Ticari birimde doğru fiyat konum, kat ve kiracı profiline göre netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47542",
       "parsel": "6"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~3.162 m² parsel (TKGM)",
+    "12 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

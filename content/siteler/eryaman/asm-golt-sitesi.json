@@ -3,19 +3,26 @@
   "slug": "asm-golt-sitesi",
   "mahalleSlug": "eryaman",
   "koordinat": {
-    "lat": 39.972675,
-    "lng": 32.609529
+    "lat": 39.972436,
+    "lng": 32.609389
   },
   "sinirGeoJSON": "siteler/eryaman/asm-golt-sitesi-boundary.geojson",
-  "aciklama": "ASM Gold Konutları — giriş tabelasında 'ASM Gold Konutları Urhal Sitesi', Google Haritalar'da ise 'Şehr-i Huzur Gold Konutları' adıyla geçer; üçü de aynı sitedir. Eryaman Mahallesi'nde A, B ve C bloklarından oluşan üç bloklu bir konut sitesidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "ASM Gold Konutları — giriş tabelasında 'ASM Gold Konutları Urhal Sitesi', Google Haritalar'da ise 'Şehr-i Huzur Gold Konutları' adıyla geçer; üçü de aynı sitedir. Eryaman Mahallesi'nde iki komşu parsele oturan A, B ve C bloklarından oluşur. TKGM kayıtlarına göre iki parsel de kat mülkiyetlidir: tapu bir parseli \"A Blok 9 Katlı, B Blok 8 Katlı Betonarme Apartman\" (yaklaşık 4.753 m²), diğerini \"9 Katlı Betonarme Apartman\" (yaklaşık 3.000 m²) olarak tanımlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45926",
       "parsel": "2"
+    },
+    {
+      "no": "45926",
+      "parsel": "3"
     }
   ],
   "ozellikler": [
-    "3 blok (A, B, C)",
+    "3 blok (A, B, C), iki komşu parselde",
+    "8–9 katlı bloklar (tapu)",
+    "~4.753 + ~3.000 m² parseller (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
     "Tabela adı: ASM Gold Konutları Urhal Sitesi",
     "Haritalarda 'Şehr-i Huzur Gold' adıyla da bilinir",
     "Eryaman Mahallesi"
@@ -25,5 +32,5 @@
     "Urhal Sitesi",
     "ASM Golt Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-07-17"
 }

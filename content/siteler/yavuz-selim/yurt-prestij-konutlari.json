@@ -7,11 +7,18 @@
     "lng": 32.613868
   },
   "sinirGeoJSON": "siteler/yavuz-selim/yurt-prestij-konutlari-boundary.geojson",
-  "aciklama": "Yurt Prestij Konutları, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yurt Prestij Konutları, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 12.267 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"12 Katlı A Ve C Bloklardan ,11 Katlı B Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46433",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~12.267 m² parsel (TKGM)",
+    "11–12 katlı bloklar (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Ata kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

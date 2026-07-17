@@ -7,11 +7,18 @@
     "lng": 32.634613
   },
   "sinirGeoJSON": "siteler/seyh-samil/turkuaz-sitesi-boundary.geojson",
-  "aciklama": "Turkuaz Sitesi, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Turkuaz Sitesi, Şeyh Şamil Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.721 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"11 Katlı Betonarme A Blok Ve B Blok 10 Katlı Betonarme C Blok Ve D Bloklardan Oluşan Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46273",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~9.721 m² parsel (TKGM)",
+    "10–11 katlı bloklar (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

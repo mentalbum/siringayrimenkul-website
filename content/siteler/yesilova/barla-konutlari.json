@@ -7,11 +7,18 @@
     "lng": 32.6029233
   },
   "sinirGeoJSON": "siteler/yesilova/barla-konutlari-boundary.geojson",
-  "aciklama": "Barla Konutları, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Barla Konutları, Yeşilova Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.844 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"5 Katlı A,B,C Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47568",
       "parsel": "5"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~2.844 m² parsel (TKGM)",
+    "5 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

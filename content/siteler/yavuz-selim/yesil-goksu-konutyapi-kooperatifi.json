@@ -7,11 +7,18 @@
     "lng": 32.609902
   },
   "sinirGeoJSON": "siteler/yavuz-selim/yesil-goksu-konutyapi-kooperatifi-boundary.geojson",
-  "aciklama": "Yeşil Göksu Konutyapı Kooperatifi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Yeşil Göksu Konutyapı Kooperatifi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.833 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"4 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45821",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~9.833 m² parsel (TKGM)",
+    "4 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

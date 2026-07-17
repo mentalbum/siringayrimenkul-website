@@ -5,18 +5,22 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 
 ## Bekleyenler
 ### Mega tur 2 notları (2026-07-17)
-- KOTA yine doldu (~250 sorgu); kalan 65 kayıt scratchpad mega-kalan.json'da (YS çoğunluğu +
-  Yeşilova 47xxx) — yarın ilk iş. YS 19xxx/45xxx/46xxx/47xxx FAIL'leri kota kaynaklı.
+- ✔ 65'lik kota kuyruğu İŞLENDİ 2026-07-17 gece (kota tazelendi, 74/74 sorgu OK):
+  58 yazıldı (6'sı dürüst ticari format: pasaj-eryaman, kocaklar-tower, lowland-business,
+  rema-delux, address-yesilova + 1), 7 ARSA atlandı (aşağıda).
+- YENİ ARSA/pin şüphelileri (kuyruktan): yesil-vadim-sitesi (46216/1, 20.134 m² Kİ ARSA!),
+  alpar-sitesi (47541/3 Kİ), kayra-loft (47529/1 ana taşınmaz), may-tower (47538/1 ana
+  taşınmaz) — muhtemelen yeni/bitmemiş projeler ya da pin hatası → Özgün.
+  (bordo-gol, goksu-marina, maviler-ipek zaten eski listede.)
 - YENİ ARSA/pin şüphelileri: 10-botanik (43264/8 ANA TAŞINMAZ), batihan (43255/2 Kİ),
   botanik-park-evleri (43254/6 Kİ), mes-polaris (62662/2 = SPOR TESİSİ!), akasya-SOA
   (46659/2 arsa — Bordo Life adasında). → Özgün/pin düzeltme.
 - Kadastro kimlik haritası TAMAMLANDI: Eryaman=124123, Şeker=124128, Ata=205665,
   Susuz-köy=123431 (62xxx+64xxx!), Susuz-İmar=123432 (63xxx), Yuva=123403 (43xxx).
-- **ASM Gold parsel sorusu (TKGM günü 2 sorgu: 45926/2 ve 45926/3)**: Gold birleştirmesinde
-  asm-golt 45926/2'de kaldı; silinen Şehr-i Huzur Gold kaydı ise 45926/**3**'teymiş (komşu
-  parsel, sınırı `sehr-i-huzur-gold-konutlari-boundary.geojson` olarak yetim duruyor —
-  BİLEREK silinmedi). Site 3 bloklu (A/B/C): iki parsele mi yayılıyor? Nitelik çekilince
-  ya adalar+sınır genişletilir ya yetim dosya silinir. (45926/4 = Gençler, 17 katlı.)
+- ✔ ASM Gold parsel sorusu ÇÖZÜLDÜ 2026-07-17 gece: TKGM 45926/3 = "A Blok 9 Katlı + B Blok
+  8 Katlı" (4.753 m²), 45926/2 = "9 Katlı Betonarme Apartman" (3.000 m², muhtemelen C blok).
+  Site GERÇEKTEN iki parselde → asm-golt adalar 45926/2+3 oldu, MultiPolygon sınır çizildi,
+  yetim gold sınır dosyası silindi. (45926/4 = Gençler, 17 katlı — hâlâ şüpheli listesinde.)
 
 ### atakent-2-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün: 'sadece Atakent 2 Sitesi diye bir site yok'; Cumhuriyet ve Metro kayıtları asıl)
 
@@ -223,10 +227,9 @@ KALAN (Özgün/ek kaynak):
 - 18519 ad çelişkisi (be kroki 'AKKONAK KENT' vs be sayfa 'Altay Sitesi'): Özgün 2026-07-17
   'karıştırma, atla' dedi → kayıt Altay Sitesi olarak KALIR, alternatifAd eklenmez, KAPANDI.
 ✔ mesa çifti ÇÖZÜLDÜ 2026-07-17 (be küme sayfaları): mesa-calisanlari-kooperatifi=18506+18507
-  (4/4A/4B + 6/6A/6B blokları, haritalandı+zenginleşti); mesa-sitesi=18659-18662 (12 blok:
-  7F/9E/11D + G→O). ÇAPRAZ DEĞİLMİŞ, adlar doğrudan eşleşiyor. mesa-sitesi şimdilik 18659/1
-  ile kayıtlı; **TKGM günü 3 sorgu: 18660/18661/18662 (parsel no + geometri) → adalar tamamla,
-  4 adalık MultiPolygon sınır çiz.**
+  (4/4A/4B + 6/6A/6B blokları); mesa-sitesi=18659-18662 (12 blok: 7F/9E/11D + G→O).
+  ÇAPRAZ DEĞİLMİŞ. Aynı gece TKGM ile 18660-62 çekildi (hepsi /1, 3'er blok KM) →
+  mesa-sitesi 4 adalı MultiPolygon sınırla TAMAMLANDI (toplam ~18.985 m²).
 ✔ ipek-yapi ÇÖZÜLDÜ 2026-07-17 (Özgün: 'evet aynı yer, İpek Yapı Sitesi diye geçiyor'):
   18476 haritalandı+zenginleşti, 'İpek Sitesi' alternatifAd.
 ✔ 46544 çift-kayıt MEŞRU ÇIKTI 2026-07-17: be iki siteyi de aynı adada gösteriyor —

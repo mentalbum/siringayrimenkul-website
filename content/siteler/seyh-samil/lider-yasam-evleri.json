@@ -7,11 +7,19 @@
     "lng": 32.6266798
   },
   "sinirGeoJSON": "siteler/seyh-samil/lider-yasam-evleri-boundary.geojson",
-  "aciklama": "Lider Yaşam Evleri, Ankara Etimesgut'a bağlı Şeyh Şamil Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şeyh Şamil Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Lider Yaşam Evleri, Şeyh Şamil Mahallesi'nde yer alan bir ticari yapıdır (ofis/işyeri). TKGM kayıtlarına göre yaklaşık 6.162 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"11 Katlı A Bloktan Oluşan Apartman Ve 1 Katlı B Bloktan Oluşan Ofis İşyeri\". Bu yapıda satılık veya kiralık ofis ya da dükkânınız mı var? Ticari birimde doğru fiyat konum, kat ve kiracı profiline göre netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46263",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~6.162 m² parsel (TKGM)",
+    "1–11 katlı bloklar (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

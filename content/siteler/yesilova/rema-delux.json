@@ -7,11 +7,19 @@
     "lng": 32.6054049
   },
   "sinirGeoJSON": "siteler/yesilova/rema-delux-boundary.geojson",
-  "aciklama": "Rema Delux, Ankara Etimesgut'a bağlı Yeşilova Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yeşilova Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Rema Delux, Yeşilova Mahallesi'nde yer alan bir ticari yapıdır (ofis/işyeri). TKGM kayıtlarına göre yaklaşık 3.611 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 16 Katlı,Bve C Blok 2 Katlı Betonarme Ofis,İşyeri\". Bu yapıda satılık veya kiralık ofis ya da dükkânınız mı var? Ticari birimde doğru fiyat konum, kat ve kiracı profiline göre netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47563",
       "parsel": "7"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~3.611 m² parsel (TKGM)",
+    "2–16 katlı bloklar (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

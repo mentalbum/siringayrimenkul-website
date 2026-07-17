@@ -7,11 +7,18 @@
     "lng": 32.61334
   },
   "sinirGeoJSON": "siteler/yavuz-selim/serenkoy-sitesi-boundary.geojson",
-  "aciklama": "Serenköy Sitesi, Ankara Etimesgut'a bağlı Yavuz Selim Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Yavuz Selim Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Serenköy Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.989 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"18 Adet Kargir Dubleks Bina\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19533",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "~5.989 m² parsel (TKGM)",
+    "18 adet konut (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
