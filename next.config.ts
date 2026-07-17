@@ -66,6 +66,7 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/sehit-osman-avci/golde-luxe-konutlari", destination: "/mahalleler/cumhuriyet/golde-luxe-konutlari", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/hill-tower-cadde", destination: "/mahalleler/sehit-osman-avci/hill-tower-goksu", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/koroglu-goldekent-evleri", destination: "/mahalleler/sehit-osman-avci/goldekent-sitesi", permanent: true },
+      { source: "/mahalleler/seyh-samil/concept-eryaman", destination: "/mahalleler/yavuz-selim/concept-eryaman", permanent: true },
       { source: "/mahalleler/seyh-samil/alarko-sitesi", destination: "/mahalleler/seyh-samil/alarko-bloklari", permanent: true },
       { source: "/mahalleler/seyh-samil/alkon-sitesi", destination: "/mahalleler/ata/alkon-sitesi", permanent: true },
       { source: "/mahalleler/seyh-samil/borankent-sitesi", destination: "/mahalleler/seyh-samil/borankent", permanent: true },
