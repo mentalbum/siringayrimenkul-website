@@ -53,7 +53,7 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   daire), kayra-loft (minimal), yesil-vadim (minimal, Gülüm Cad — 46216 tapu karmaşası notta
   sürüyor), acar 46267/3 (be site sayfası: Eren 7A/Emre 7C/Altıntaş 7D = tapu A-C-D birebir,
   eski 'Gülistan' çelişkisi ÇÜRÜDÜ), eston-bloklari 4 adaya tamamlandı (17338-42).
-- SKY GÖKSU BÖLGE DIŞI TEYİT: Sky-B (Land Home) projesi YUKARIYURTÇU'da (2 blok 11+10 kat,
+- ✅ BÖLGE DIŞI 5 KAYIT SİLİNDİ 2026-07-17 (Özgün onayı): sky-goksu, meric, ekiciler, kiratli-akropolis, tuna-park. SKY GÖKSU BÖLGE DIŞI TEYİT: Sky-B (Land Home) projesi YUKARIYURTÇU'da (2 blok 11+10 kat,
   146 daire) — kayıt kapsam kararı → Özgün. Yıldız Life hâlâ hayalet.
 - BOTANİK AİLESİ HARİTASI (3 dosya ↔ 4 Yandex kaydı, Özgün'e): 'Botanik Evleri'=43253/6
   (A-C 11'er katlı + D 4 katlı ofis, 6.901 KM — GERÇEK BİNA); 'Arissa Botanik' 39.98689/32.68566;
