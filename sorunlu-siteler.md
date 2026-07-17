@@ -38,6 +38,18 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   bizim YS kaydı muhtemelen Korukent 91, Güzelkent korukent (19517/1) ayrı → altAd sonra.
 - ✔ gode-yasam şüphesi KAPANDI: 46620/2 tapusu gerçek bina kaydı (parti 54'te zenginleşti);
   goksu-arma sınırı 46454/1 TKGM geometrisiyle birebir doğrulandı.
+- ✔ kent-konaklari = 46531/1 (5 blok A6-96..C7-92, 24.135 m² KM) — be+tapu birebir, haritalandı.
+- **gestas-toki kimlik ipucu**: Gestaş İnş. A.Ş. = TOKİ Eryaman 6. Etap 1. Kısım (1.660 konut)
+  müteahhidi; 'Atakent 2005 TOKİ+Gestaş, 286.000 m²' (emlakkulisi/egefen). Dosyamız muhtemelen
+  Atakent TOKİ bloklarının halk ağzındaki adı → ayrı site mi genel ad mı? Özgün.
+- Aranıp BULUNAMAYANLAR (2026-07-17 gece; dizin-düzeyi kayıt var, olgu yok — Özgün/Maps gerekli):
+  75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
+  intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,
+  enday, dostlar-birikim, eser-yapi-susuz, tatli-yamac-palmiye, ekiciler, meric, kucuk-ankara-
+  villalari, kurtulus, sehit-ferhat-koc, 1-portakal ailesi (Q), Ata 11'lisi (dogasu/hurev/kainat/
+  kanat/manzara/mercankent/ortak-grup/rayli-sistemciler/sarmasikli/sumeyra-2/turuncu), SOA
+  kardelen, goksu-park-vadi, kiratli-akropolis (Kıratlı Emlak İnş, Yeni Batı, '144 daire+6
+  villa' TEK kaynak — yazılmadı), turku-sitesi, park-sera, botanik-cumhuriyet, gestas-toki (Q).
 
 ### Mega tur 2 notları (2026-07-17)
 - ✔ 65'lik kota kuyruğu İŞLENDİ 2026-07-17 gece (kota tazelendi, 74/74 sorgu OK):

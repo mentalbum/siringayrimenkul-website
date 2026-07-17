@@ -2,5 +2,24 @@
   "isim": "Kent Konakları Sitesi",
   "slug": "kent-konaklari-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Kent Konakları Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Kent Konakları Sitesi, Eryaman Mahallesi'nin Eryaman Evleri bölgesinde beş bloktan oluşan bir konut sitesidir (bloklar: A6-96, B6-98, B7-94, C6-100, C7-92). TKGM kayıtlarına göre yaklaşık 24.135 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"5 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.975966,
+    "lng": 32.618559
+  },
+  "sinirGeoJSON": "siteler/eryaman/kent-konaklari-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46531",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5 blok (A6-96, B6-98, B7-94, C6-100, C7-92)",
+    "~24.135 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Evleri bölgesi",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
