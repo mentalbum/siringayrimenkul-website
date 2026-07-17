@@ -2,5 +2,22 @@
   "isim": "Raylı Sistemciler Sitesi",
   "slug": "rayli-sistemciler-sitesi",
   "mahalleSlug": "ata",
-  "aciklama": "Raylı Sistemciler Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Raylı Sistemciler Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.849 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.999424,
+    "lng": 32.60072
+  },
+  "sinirGeoJSON": "siteler/ata/rayli-sistemciler-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "44774",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~6.849 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
