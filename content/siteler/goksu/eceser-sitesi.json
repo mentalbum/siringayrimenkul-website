@@ -1,0 +1,23 @@
+{
+  "isim": "Eceser Sitesi",
+  "slug": "eceser-sitesi",
+  "mahalleSlug": "goksu",
+  "koordinat": {
+    "lat": 39.995585,
+    "lng": 32.639857
+  },
+  "sinirGeoJSON": "siteler/goksu/eceser-sitesi-boundary.geojson",
+  "aciklama": "Eceser Sitesi, Göksu göl kuşağında, birden çok sitenin paylaştığı büyük bir parselde yer alan bir konut sitesidir; bloğu yerel kayıtlarda 4 kapı numarasıyla geçer. TKGM'ye göre paylaşılan parsel yaklaşık 18.815 m² olup 11-13 katlı bloklar barındırır ve tapuda kat irtifakı kayıtlıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Göksu göl kuşağı — paylaşımlı büyük parsel",
+    "11-13 katlı bloklar (parsel geneli, tapu)",
+    "Kat irtifaklı parsel (TKGM)"
+  ],
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -1,0 +1,23 @@
+{
+  "isim": "İlksebat Sitesi",
+  "slug": "ilksebat-sitesi",
+  "mahalleSlug": "seyh-samil",
+  "sinirGeoJSON": "siteler/seyh-samil/ilksebat-sitesi-boundary.geojson",
+  "koordinat": {
+    "lat": 39.995645,
+    "lng": 32.634634
+  },
+  "aciklama": "İlksebat Sitesi, Şeyh Şamil Mahallesi'nin Türkonut dokusunda, Gül ve Öz Çözüm Kent siteleriyle aynı büyük parseli paylaşan bir konut sitesidir; blokları yerel kayıtlarda 10, 12 ve 14 kapı numaralarıyla geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "3 blok (kapı no 10, 12, 14)",
+    "Türkonut bölgesi — paylaşımlı parsel",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "adalar": [
+    {
+      "no": "46486",
+      "parsel": "2"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

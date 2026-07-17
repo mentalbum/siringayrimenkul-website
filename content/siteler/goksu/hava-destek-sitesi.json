@@ -1,0 +1,23 @@
+{
+  "isim": "Hava Destek Sitesi",
+  "slug": "hava-destek-sitesi",
+  "mahalleSlug": "goksu",
+  "koordinat": {
+    "lat": 39.993302,
+    "lng": 32.642425
+  },
+  "sinirGeoJSON": "siteler/goksu/hava-destek-sitesi-boundary.geojson",
+  "aciklama": "Hava Destek Sitesi, Göksu göl kuşağında, Gölkent 1 ve Havacılar ile aynı büyük parseli paylaşan bir konut sitesidir; blokları yerel kayıtlarda 5-5 ve 5-6 kapı numaralarıyla geçer. TKGM'ye göre paylaşılan parsel yaklaşık 23.101 m² olup 12-14 katlı bloklar barındırır ve kat mülkiyetlidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "2 blok (kapı no 5-5 ve 5-6)",
+    "Gölkent 1 ve Havacılar ile paylaşımlı parsel",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "adalar": [
+    {
+      "no": "46455",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -4,6 +4,18 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Yeni kayıt açılışları (2026-07-17 akşam — Özgün '1' onayıyla)
+- ✅ 10 YENİ SİTE AÇILDI (hepsi kanıtlı + zenginleştirilmiş): eceser, goksu-aura, hava-destek,
+  akduzen, kafdagi (göl kuşağı paylaşımlı 46453/46455/46456), ilksebat (ŞŞ 46486/2, Gül/Öz Çözüm
+  parseli), lacin-eryaman (45919/4, 15 katlı KM), yavuz-selim-sitesi (46435/1, A-B-C 8 katlı KM),
+  umut-yapi (Ata 44756/2 Kİ), altas-relax-line (Şeker 1408. Cad, adasız — Altaş 2 blok 65 konut).
+- Aday analizi: eski aday listelerindeki ~29 isim ZATEN kayıtlıymış (Elif Özgen, Bizim Şirinköy,
+  Saçak 91, Seda Terasevler, Yunus Kent, Boyut, Didem, Hotki Ritm, Meydan Eryaman, Betim...).
+- Gri kalanlar (açılmadı): Yüksel Kent no:1 (19503 — yuksel-kent-91 ile ilişki?), Doktorlar no:3
+  (19509 villa — YS doktorlar'la ilişki?), Göksu no:7 (19524), Yuvam Başar (kaynak zayıf),
+  Demirer≈Demirel Park typo çifti, Korukent 91 altAd işi → düzeltme turuna.
+
+
 ### Kalite turu bulguları (2026-07-17 akşam)
 - ✔ Türkçe ek üretici (lib/turkce.ts) + 7 dosyada tapu-typo temizliği (Bolk/Betanarme/Karğir/
   Dublek/Luşan/Apartman×2) + komşu-siteler ağı.
