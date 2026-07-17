@@ -93,6 +93,18 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
     46381=Emek+Uğur Apt; 46385=Armina Park/Ayka-Park/Salkuma (yeni adaylar).
   * hurev: 44774/1,4,5,6 yok; /2=raylı-sistemciler, /3=ata-life arsası → Hürev'in parseli
     bulunamadı (belki komşu ada) → Özgün/Maps.
+  * ✔ demirglass = be 'İlk Umut Sitesi (Demirglas Sit.)' 46263/2 (11 katlı A konut + 1 katlı
+    B ticari, 6.162 m² KM; 46263/1=13.763 m² TARLA) — yazıldı. Dosya YS'de, bölge ŞŞ → taşıma? Özgün.
+  * be Sümeyra sayfası başlığı '46424' YAZIM HATASI (marker 46224 bölgesini gösteriyor; 46424=
+    Karkonut doğru). 'Sümeyra Sitesi' (A-3/B-1 blokları, ~46224) repo'da YOK — muhtemel Sümeyra 1,
+    yeni aday; bizim sumeyra-2=46259/1 Yandex tam-ad pinliyle kaldı.
+  * ŞŞ Konutları sayfasından YENİ ADAYLAR: Ata Yıldız Yaşam (46271), Demirer Park (46261),
+    Düşkent + Övgü İletişim (46423), Umar (46272), Liderkent (46274), Tuğçekent (46215 —
+    Onur'un adası!), Sümeyra-1 (46224). Teyitler: kuryap=46275 ✓, inci-park=46222 ✓ (be'yle birebir).
+  * 46216 KARMAŞASI: be 'Cumhuriyet Sitesi (46216)' diyor; bizim yesil-vadim 46216/1'de ARSA
+    bulmuştu. Cumhuriyet Sitesi belki başka parselde (/2+?), yesil-vadim kimliği belirsiz → Özgün.
+  * Özahikent bölge sayfası (ŞŞ, marker 40.0004/32.6256): ahikent-sitesi'nin gerçek evi ŞŞ
+    462xx bölgesi olabilir (46644=Laleevleri şüphesiyle uyumlu) → Özgün.
 - Aranıp BULUNAMAYANLAR (2026-07-17 gece; dizin-düzeyi kayıt var, olgu yok — Özgün/Maps gerekli):
   75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
   intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,
