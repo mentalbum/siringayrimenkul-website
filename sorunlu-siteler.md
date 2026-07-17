@@ -4,6 +4,20 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Kalite turu bulguları (2026-07-17 akşam)
+- ✔ Türkçe ek üretici (lib/turkce.ts) + 7 dosyada tapu-typo temizliği (Bolk/Betanarme/Karğir/
+  Dublek/Luşan/Apartman×2) + komşu-siteler ağı.
+- **DUPE KANIT TABLOSU (Özgün'e):**
+  (a) concept-eryaman ×2: YS dosyası 46445/1 mapped (Ünsal 2013-14) + ŞŞ dosyası adasız
+      (bugün yanlışlıkla oraya yazıldı) → KESİN dupe, ŞŞ silinmeli (onay).
+  (b) izoser (Şeker 45064/16, 825 m² Kİ) vs izo-ser (SOA 46362/1, 10 katlı) → İKİ FARKLI
+      parsel; aynı müteahhidin iki projesi mi tek mi? → Özgün.
+  (c) ilk-umut (46263/3, 7.601 m²) vs demirglass (46263/2) → AYNI ADANIN komşu parselleri;
+      be ikisini tek başlıkta gösteriyor (İlk Umut (Demirglas)) → tek site mi? → Özgün.
+  (d) ✔ sumeyra-sitesi (ŞŞ 46224) + sumeyra-2 (Ata 46259) İKİ AYRI GERÇEK SİTE — dupe değil,
+      aday notu kapandı.
+
+
 ### Soru turu + final süpürme (2026-07-17 öğleden sonra)
 - ✅ SORU TURU SONUÇLARI (Özgün): Eston birleşti; Ersan=Köşk (silindi); eryaman-renk silindi
   ('Renk Villaları diye geçiyor'); 18679=ARSLANLAR (önce Çağrıkent dedi, düzeltti; Google
