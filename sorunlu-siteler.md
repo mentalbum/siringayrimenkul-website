@@ -17,7 +17,7 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   (b) 18464 'Portakal Çiçeği' bloklar 7-1, 9-2, 11-3, 13-4, 15-5, 17-6 (6 blok, be alan 5.988);
   (c) 19517/2 '14.Blok Kargir Apartman' (villa bölgesi, 11.276 m²).
   Dosyalar: portakal-cicegi, portakal-cicegi-2, 1-portakal-cicegi → hangisi hangisi? Özgün.
-- **ESTON 2 = eston-bloklari + eston-2-sitesi MÜKERRER ŞÜPHESİ (kanıt güçlü, Özgün onayı bekliyor)**:
+- ✅ ESTON 2 BİRLEŞTİ 2026-07-17 (Özgün onayı): eston-2-sitesi silindi, ad eston-bloklari'nda altAd.
   be 'Eston 2 Blokları' = 4 ada: 17338 (6 apt), 17339 (5), 17340 (5), 17342 (3) — TKGM'den
   dördü de çekildi (KM). Bizim eston-bloklari 17342'de haritalı ve altAd'ı ZATEN 'Eston 2
   Blokları'; eston-2-sitesi ise adasız boş dosya. Birleşince: tek kayıt, 4 ada, MultiPolygon.
