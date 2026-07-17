@@ -42,6 +42,36 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 - **gestas-toki kimlik ipucu**: Gestaş İnş. A.Ş. = TOKİ Eryaman 6. Etap 1. Kısım (1.660 konut)
   müteahhidi; 'Atakent 2005 TOKİ+Gestaş, 286.000 m²' (emlakkulisi/egefen). Dosyamız muhtemelen
   Atakent TOKİ bloklarının halk ağzındaki adı → ayrı site mi genel ad mı? Özgün.
+### Yandex+OSM nokta zinciri turu (2026-07-17 gece geç — 18 kayıt çözüldü)
+- YÖNTEM KİLİDİ AÇILDI: TKGM nokta API'si Referer başlığıyla ÇALIŞIYOR
+  (https://parselsorgu.tkgm.gov.tr/ referer'ı şart). Yandex suggest-geo (anahtarsız) →
+  ymapsbm1 URI protobuf'undan f32 lat/lng decode → nokta sorgusu → parsel. Nominatim de kullanıldı.
+- ✔ Çözülenler: kainat=46418/1, rayli-sistemciler=44774/2, dogasu=44756/1, turku=43252/4 (Yuva),
+  golkent=Gölkent 2=46457/1 (paylaşımlı, OSM iki Gölkent'i ayrı gösterdi), sarmasikli=44763/4,
+  turuncu=44776/2, izgi-park=45889/2, dostlar-birikim=44776/3 (TAPU ATA — dosya susuz'da,
+  taşınmalı mı → Özgün), duru-life=63268/3, tatli-yamac-palmiye=44784/1 (TAPU ATA — dosya
+  susuz'da → Özgün), park-sera=43264/7, turk-konut-calisanlar=46512/9 (37.340 m² Türkkonut),
+  bahar-eryaman=46380/2, sumeyra-2=46259/1 (Kİ), kucuk-ankara=19516/1 (villa kümesinin BOŞTA
+  parseli — o soru kapandı), sehit-ferhat-koc=18645/1 (be'nin 'Eray-3'ü; eski ad altAd yazıldı),
+  ataturk-altay=17313/1.
+- Yeni ipuçları/çelişkiler:
+  * hurev pini 44774/3 ARSA'ya düştü — o arsa 12.748 m² = ata-life notundaki arsa! (ata-life
+    arsası 44774/3'müş). Hürev'in gerçek parseli bulunamadı → Özgün.
+  * beloren = Yandex 'Belören Manzara Evleri' (44780/2 = bilinen 7.955 m² Kİ arsa; erkent-umut
+    aynı parsel şüphesi sürüyor) → hâlâ arsa, yazılamaz.
+  * ata/manzara-evleri ↔ Yandex 'Göksu Manzara Evleri' 63379/7 (14 katlı KM) — mahalle çelişkisi → Özgün.
+  * eser-yapi karmaşası: Yandex 'Eser Yapı Evleri' Ata 44752/1 (11 katlı Kİ apartman);
+    bizde ata/eser-yapi (57k ARSA şüphelisi) + susuz/eser-yapi-sitesi (adasız) → Özgün.
+  * kurtulus (Güzelkent) pini kadastroda 'Tarla'ya düştü (697/698 parseller) → çözülemedi.
+  * meric = Yandex 'Meriç 88' AYYILDIZ Mh (bölge dışı güney!) — bizim yesilova/meric bu mu? → Özgün.
+  * botanik-cumhuriyet: Yandex 2 aday — 'Arissa Botanik' + 'Yeni Botanik' (Cumhuriyet, ~80 m arayla);
+    bizim düz 'Botanik Sitesi' hangisi? → Özgün.
+  * kiratli-akropolis: Nominatim 'Akropolis Konutları' ERGAZİ İmar 42966/1 ARSA (Batıkent tarafı,
+    bölge dışı) → kayıt kapsam içi mi? → Özgün.
+  * goksu-park-vadi pini 63404/3 ARSA Kİ (10.498 m²) → arsa/yeni proje listesine.
+  * YENİ ADAYLAR (Yandex, repo'da yok): Yavuz Selim Sitesi (YS), Türkkonut Betim (Devlet),
+    Türkkonut Havacılar 2 (Göksu), Türkkonut Selinkent (ŞŞ), Umut Yapı (Ata), Laçin Eryaman,
+    Meydan Eryaman (Göksu), Eylül YS 39.99805/32.61881.
 - Aranıp BULUNAMAYANLAR (2026-07-17 gece; dizin-düzeyi kayıt var, olgu yok — Özgün/Maps gerekli):
   75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
   intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,

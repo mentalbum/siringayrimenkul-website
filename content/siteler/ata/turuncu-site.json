@@ -2,5 +2,23 @@
   "isim": "Turuncu Site",
   "slug": "turuncu-site",
   "mahalleSlug": "ata",
-  "aciklama": "Turuncu Site, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Turuncu Site, Ata Mahallesi'nde 8 katlı A ve 7 katlı B bloklarından oluşan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.933 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Bloktan Oluşan 8 Katlı Ve B Bloktan Oluşan 7 Katlı Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.999419,
+    "lng": 32.598596
+  },
+  "sinirGeoJSON": "siteler/ata/turuncu-site-boundary.geojson",
+  "adalar": [
+    {
+      "no": "44776",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A 8 katlı, B 7 katlı)",
+    "~9.933 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

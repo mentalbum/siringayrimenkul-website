@@ -2,5 +2,27 @@
   "isim": "Şehit Ferhat Koç Sitesi",
   "slug": "sehit-ferhat-koc-sitesi",
   "mahalleSlug": "guzelkent",
-  "aciklama": "Şehit Ferhat Koç Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Şehit Ferhat Koç Sitesi, Güzelkent Mahallesi'nde 6'şar katlı A'dan F'ye altı bloktan oluşan bir konut sitesidir; eski kayıtlarda 'Eray-3 Sitesi' adıyla geçer. TKGM kayıtlarına göre yaklaşık 4.880 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Katli A,B,C,D,E,F Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Eray-3 Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.985374,
+    "lng": 32.603039
+  },
+  "sinirGeoJSON": "siteler/guzelkent/sehit-ferhat-koc-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18645",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (A–F), 6'şar katlı",
+    "Eski adı: Eray-3 Sitesi",
+    "~4.880 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

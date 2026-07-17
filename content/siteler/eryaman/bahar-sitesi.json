@@ -2,5 +2,22 @@
   "isim": "Bahar Sitesi",
   "slug": "bahar-sitesi",
   "mahalleSlug": "eryaman",
-  "aciklama": "Bahar Sitesi, Ankara Etimesgut'a bağlı Eryaman Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Eryaman Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Bahar Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 3.520 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Betanarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.97132,
+    "lng": 32.620683
+  },
+  "sinirGeoJSON": "siteler/eryaman/bahar-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46380",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~3.520 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
