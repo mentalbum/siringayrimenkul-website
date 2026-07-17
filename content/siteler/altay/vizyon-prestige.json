@@ -7,11 +7,18 @@
     "lng": 32.646166
   },
   "sinirGeoJSON": "siteler/altay/vizyon-prestige-boundary.geojson",
-  "aciklama": "Vizyon Prestige, Ankara Etimesgut'a bağlı Altay Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Altay Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Vizyon Prestige, Altay Mahallesi'nde, Söğüt Caddesi hattında 16 katlı tek bloktan oluşan rezidans tipi bir yapıdır; tapuda ofis/işyeri niteliğiyle kayıtlıdır. TKGM kayıtlarına göre yaklaşık 5.729 m²'lik tapuda kat irtifakı kayıtlı parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Katlı B Blok Betonarme Ofis İşyeri\". Bu yapıda satılık veya kiralık daireniz ya da ofisiniz mi var? Doğru fiyat kat, cephe ve kullanım durumuyla netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45898",
       "parsel": "3"
     }
-  ]
+  ],
+  "ozellikler": [
+    "16 katlı yüksek yapı",
+    "Tapu niteliği: ofis/işyeri (rezidans tipi)",
+    "~5.729 m² parsel (TKGM)",
+    "Kat irtifaklı parsel (TKGM)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

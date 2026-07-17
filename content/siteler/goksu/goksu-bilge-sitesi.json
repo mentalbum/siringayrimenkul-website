@@ -7,11 +7,18 @@
     "lng": 32.6400007
   },
   "sinirGeoJSON": "siteler/goksu/goksu-bilge-sitesi-boundary.geojson",
-  "aciklama": "Göksu Bilge Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Göksu Bilge Sitesi, Göksu göl kuşağında, birden çok sitenin paylaştığı büyük bir parselde yer alan bir konut sitesidir; parseldeki bloklar 16 katlıdır. TKGM kayıtlarına göre yaklaşık 20.963 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Katli 1,2,3,4,5,6 Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46457",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "Paylaşımlı büyük parsel (16 katlı bloklar)",
+    "Göksu göl kuşağı",
+    "~20.963 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

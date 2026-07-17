@@ -214,10 +214,21 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
   eski aday 46530 değil! TKGM'de 46524 sorgula, haritala.
 - **inci-park-evleri-sitesi: be 46662'de 'İnci Park Evleri 20A/B/C' gösteriyor** —
   46623/4 çakışma sorusunun cevabı bu olabilir; TKGM günü 46662 kontrol.
-ŞÜPHELİLER (be listesinde adı geçmeyen / çelişen kayıtlar — zenginleştirilmedi):
-- altay/ilbeyi-sitesi (45890): be 'İlbeyli' apartmanlarını DOKTORLAR Sitesi'ne bağlıyor → dupe/alt-birim?
-- altay/mood-street + vizyon-prestige (45898): be sadece Arya Nüans + Fırat Residence Life gösteriyor.
-- ata/ayyildiz-sitesi (44759): be 'Akgüner KYK + Selsen' — Ayyıldız yok (eski çakışma notuyla uyumlu).
+ŞÜPHELİLER — 2026-07-17 gece BÜYÜK TEMİZLİK: Yandex pinleri 8 şüphelinin TAM parselimizin
+içine düştü → mapping'ler bağımsız doğrulandı, tapu verisiyle zenginleştirildi (be'nin farklı
+ad göstermesi metne yazılmadı, aşağıda not olarak duruyor):
+✔ ayyildiz (44759/1, 6 blok 10-11 katlı KM) — be'nin 'Akgüner KYK+Selsen' iddiası nota düştü.
+✔ ilbeyi (45890/2, 2 blok) — be 'İlbeyli→Doktorlar' bağlantısı Özgün'e soru olarak kalabilir.
+✔ vizyon-prestige (45898/3, 16 katlı, tapu OFİS/rezidans Kİ) + ✔ mood-street (45898/2,
+  14+4 katlı, tapu OFİS/rezidans KM) — Söğüt Cad ticari koridoru; dürüst rezidans formatı.
+✔ beyaz-residence (45794/15, 11 katlı KM) — be 'Tertipler/Tusun' notu arşive.
+✔ gencler-sitesi (45926/4, 17 katlı KM) — be 'Gerim' adı → Gençler=Gerim mi? Özgün (metinde yok).
+✔ goksu-bilge (46457/1 paylaşımlı) + ✔ city-life (CUMHURİYET dosyası; 62658/2, A12+B13 KM).
+KALAN ŞÜPHELİLER (Yandex'te de yok / çözümsüz):
+- SOA/tan-yildizi (46662), yazici-modern (46664): hiçbir kaynakta yok.
+- zekioglu-rezidans (46657), sky-goksu, yildiz-life, merkez-sitesi (Yandex: Merkez yalnız
+  Ahi Mesut'ta ×3 — bizim kayıt muhtemelen yanlış/bölge dışı), angora-goksu (Yandex: yalnız
+  Yapracık) — Özgün.
 - ata/eser-yapi, genova, gold-life, panorama ×3, siyah-beyaz, twin-towers, armoni-life,
   atasehir (46412 'İnşaat'), endora-plus: ada sayfalarında blok dökümü yok.
 - ✅ Şehr-i Huzur Gold = ASM Gold Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün StreetView tabela kanıtı; birleştirildi, sehr-i-huzur-gold silindi).

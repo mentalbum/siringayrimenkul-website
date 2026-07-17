@@ -7,11 +7,17 @@
     "lng": 32.6041804
   },
   "sinirGeoJSON": "siteler/ata/ayyildiz-sitesi-boundary.geojson",
-  "aciklama": "Ayyıldız Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Ata Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Ayyıldız Sitesi, Ata Mahallesi'nde altı bloklu büyük bir konut sitesidir: A, B, C ve F blokları 10'ar, D ve E blokları 11'er katlıdır. TKGM kayıtlarına göre yaklaşık 19.214 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A,B,C,F Blok 10 Katlı Ve D,E Blok 11 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44759",
       "parsel": "1"
     }
-  ]
+  ],
+  "ozellikler": [
+    "6 blok (A-F; 10–11 katlı)",
+    "~19.214 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }

@@ -7,11 +7,18 @@
     "lng": 32.662999
   },
   "sinirGeoJSON": "siteler/cumhuriyet/city-life-boundary.geojson",
-  "aciklama": "City Life, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde, Eryaman'ın hemen doğusundaki yerleşim aksında yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Cumhuriyet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "City Life, Cumhuriyet Mahallesi'nin (Yeni Batı bölgesi) modern konut hattında, 12 katlı A ve 13 katlı B bloklarından oluşan bir sitedir. TKGM kayıtlarına göre yaklaşık 8.790 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 12 Katlı Betonarme B Blok 13 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62658",
       "parsel": "2"
     }
-  ]
+  ],
+  "ozellikler": [
+    "2 blok (A 12 katlı, B 13 katlı)",
+    "~8.790 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet (Yeni Batı) — kadastroda Susuz kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
 }
