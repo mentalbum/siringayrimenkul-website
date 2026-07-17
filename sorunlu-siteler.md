@@ -42,6 +42,23 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 - **gestas-toki kimlik ipucu**: Gestaş İnş. A.Ş. = TOKİ Eryaman 6. Etap 1. Kısım (1.660 konut)
   müteahhidi; 'Atakent 2005 TOKİ+Gestaş, 286.000 m²' (emlakkulisi/egefen). Dosyamız muhtemelen
   Atakent TOKİ bloklarının halk ağzındaki adı → ayrı site mi genel ad mı? Özgün.
+### Kalanları-hallet turu (2026-07-17 gece son — 16 kayıt daha)
+- ✔ Kİ-arsa dürüst formatıyla yazıldı: cagdas-onur 45834/3 (be sayfası, 5 blok 6-1..6-10),
+  gold-stone 46411/1 (5 blok), tekirdag-park 46193/1 (pin ✓), emin-guven (44754 — pin komşu
+  /2'ye düştü, adalar /4'te bırakıldı, alansız yazıldı), batihan, bordo-gol (pin ✓),
+  botanik-park (pin ✓), goksu-park-vadi 63404/3 (adasızdı, haritalandı), maviler-ipek (minimal,
+  5611. Sok), akasya 46659/2→46653/1 REMAP (pin+2651. Cad; eski arsa parseli yanlıştı).
+- ✔ Proje kimliğiyle yazıldı: mes-polaris (MES İnş, 4 blok 206 daire, Yeni Batı), goksu-marina
+  (ARUS GRUP, etaplı; 2. etap 58 daire teslim 12/2026), may-tower (May Ankara AŞ, 12 kat 48
+  daire), kayra-loft (minimal), yesil-vadim (minimal, Gülüm Cad — 46216 tapu karmaşası notta
+  sürüyor), acar 46267/3 (be site sayfası: Eren 7A/Emre 7C/Altıntaş 7D = tapu A-C-D birebir,
+  eski 'Gülistan' çelişkisi ÇÜRÜDÜ), eston-bloklari 4 adaya tamamlandı (17338-42).
+- SKY GÖKSU BÖLGE DIŞI TEYİT: Sky-B (Land Home) projesi YUKARIYURTÇU'da (2 blok 11+10 kat,
+  146 daire) — kayıt kapsam kararı → Özgün. Yıldız Life hâlâ hayalet.
+- BOTANİK AİLESİ HARİTASI (3 dosya ↔ 4 Yandex kaydı, Özgün'e): 'Botanik Evleri'=43253/6
+  (A-C 11'er katlı + D 4 katlı ofis, 6.901 KM — GERÇEK BİNA); 'Arissa Botanik' 39.98689/32.68566;
+  'Yeni Botanik' 39.98706/32.68644; bizim 10-botanik (eski pin Arissa civarı; 43264/8 ana
+  taşınmaz YANLIŞTI) + botanik-sitesi (adasız) → hangisi hangisi? Özgün.
 ### Yandex+OSM nokta zinciri turu (2026-07-17 gece geç — 18 kayıt çözüldü)
 - YÖNTEM KİLİDİ AÇILDI: TKGM nokta API'si Referer başlığıyla ÇALIŞIYOR
   (https://parselsorgu.tkgm.gov.tr/ referer'ı şart). Yandex suggest-geo (anahtarsız) →
