@@ -83,8 +83,16 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
     Meydan Eryaman (Göksu), Eylül YS 39.99805/32.61881, Oyak 555 Konut (Eryaman 39.98032/32.62568),
     Hotki Ritm Residence (Yeşilova 4014. Cad No:12 — hotki ailesine ek).
   * ✔ kardelen-SOA = 'Kardelen Konutları' 46619/7 (3 blok, Şeker kadastro) — yazıldı.
-  * intes-dogakent: Yandex 'Doğakent Konutları' pini (39.96905/32.62762, 1. Meşrutiyet Cad
-    civarı) kadastro boşluğuna/tarlaya düşüyor (3 deneme) — İntes proje sayfası yolu denenecek → sonra.
+  * ✔ intes-dogakent ÇÖZÜLDÜ: be 'Doğakent' bölge sayfası (dogakent-51) → 16414+16415+16418
+    (4'er blok KM, toplam 12 numaralı blok, ~21.560 m²) — 3 adalı MultiPolygon yazıldı.
+  * **Doğakent bölge dökümünden yeni kanıtlar**: 46383='Seyitoğulları Sitesi 4-10.Blok'
+    (elif-elvan oraya mapped — YANLIŞ olabilir); 46384='ELİF ÖZGEN Sitesi 1/1-A/1-B/1-C' —
+    bizim 'Elif Elvan' muhtemelen 'Elif Özgen'in bozuk yazımı, gerçek adası 46384! → Özgün
+    (isim de düzelir mi?). 46382='Cumhuriyet Sitesi 12-20.Blok' (Doğakent'te GERÇEK bir
+    Cumhuriyet Sitesi — SOA/cumhuriyet-sitesi 17491 kimlik şüphesiyle bağlantılı olabilir → Özgün).
+    46381=Emek+Uğur Apt; 46385=Armina Park/Ayka-Park/Salkuma (yeni adaylar).
+  * hurev: 44774/1,4,5,6 yok; /2=raylı-sistemciler, /3=ata-life arsası → Hürev'in parseli
+    bulunamadı (belki komşu ada) → Özgün/Maps.
 - Aranıp BULUNAMAYANLAR (2026-07-17 gece; dizin-düzeyi kayıt var, olgu yok — Özgün/Maps gerekli):
   75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
   intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,
