@@ -355,9 +355,9 @@ açıklamaya alan+nitelik cümlesi ekle.
 ✔ ozuguzelkent: +18665 eklendi (iki parselde 6'şar blok, toplam ~10.307 m²).
 ✔ aksu: 18512 doğrudan sorguyla haritalandı (6 blok=8/8A-8E, 5.072 m²) + zenginleşti.
 ✔ baskent-sular: 18477 haritalandı — tapu 'A ve B Blok 14 KATLI' ikiz kule! + zenginleşti.
-✅ 18679/1 = ÇAĞRIKENT (Özgün 2026-07-17 TKGM ekran görüntüsüyle kesinleştirdi; be'nin
-  'Arslanlar 18679' etiketi YANLIŞMIŞ). cagrikent haritalandı+zenginleşti; arslanlar kaydı
-  geri alındı (adasız, nötr metin) — Arslanlar'ın gerçek yeri → Özgün. Çağkent (18673) AYRI site (Özgün teyidi).
+✅ 18679/1 = ARSLANLAR KESİNLEŞTİ (Özgün 2026-07-17: önce Çağrıkent sandı, sonra 'pardon,
+  Arslanlar'mış' diye düzeltti; be etiketi doğruymuş). Google'ın 'Çağrıkent' pini YANLIŞ konumda.
+  Çağkent (18673) ayrı site (Özgün). cagrikent-sitesi yine KONUMSUZ — var mı/silinsin mi → Özgün.
 KALAN (Özgün/ek kaynak):
 ✔ gozde-1=18651 (bloklar 8/8A-8E), gozde-2=18652 (10 ailesi) — be blok sayfaları
   (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
