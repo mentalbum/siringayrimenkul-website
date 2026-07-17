@@ -12,8 +12,20 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
   TEK site, 19516/4 (16 dubleks, 5.439 m²) → birleştirme onayı. renk-villalari +
   eryaman-renk-villalari ↔ be 'Renk Villaları no:14' TEK site, 19516/2 ('Otuzaltı Blok Kargir
   Villa', 12.624 m²) → birleştirme onayı.
-- Portakal Çiçeği ailesi verisi: be 'Portakal Çiçeği Sitesi' = 19517/2 '14.Blok Kargir APARTMAN'
-  (11.276 m², marker içinde) + eski not be 18450 apartman. 3 dosyanın ayrıştırması → Özgün.
+- Portakal Çiçeği ailesi verisi TAMAMLANDI (3 be kümesi ↔ 3 dosyamız, eşleşme → Özgün):
+  (a) 18450 'Portakal Çiçeği' bloklar 119, 119-1..119-5 (6 blok, be alan 5.621);
+  (b) 18464 'Portakal Çiçeği' bloklar 7-1, 9-2, 11-3, 13-4, 15-5, 17-6 (6 blok, be alan 5.988);
+  (c) 19517/2 '14.Blok Kargir Apartman' (villa bölgesi, 11.276 m²).
+  Dosyalar: portakal-cicegi, portakal-cicegi-2, 1-portakal-cicegi → hangisi hangisi? Özgün.
+- **ESTON 2 = eston-bloklari + eston-2-sitesi MÜKERRER ŞÜPHESİ (kanıt güçlü, Özgün onayı bekliyor)**:
+  be 'Eston 2 Blokları' = 4 ada: 17338 (6 apt), 17339 (5), 17340 (5), 17342 (3) — TKGM'den
+  dördü de çekildi (KM). Bizim eston-bloklari 17342'de haritalı ve altAd'ı ZATEN 'Eston 2
+  Blokları'; eston-2-sitesi ise adasız boş dosya. Birleşince: tek kayıt, 4 ada, MultiPolygon.
+  (SOA/eston-sitesi 17487-90 AYRI — o 2. Etap Eston'u.) 17341=Çamlıca (be), 17333 muhtemelen Eston 1.
+- ✔ goksu/bahar-sitesi = Polsan 1 Bahar 46481/1 (7 blok, 26.051 m²) — be marker kanıtı,
+  haritalandı+zenginleşti. (eryaman/bahar-sitesi hâlâ adasız, AYRI site.)
+- ✔ seyh-samil/onur-sitesi = 46215/5 ('A-C Bloklardan Oluşan 2 Adet Karğir Apartman',
+  10.479 m²) — be marker parselin içinde; haritalandı+zenginleşti. Not: 46215/4 'Tarla' Kİ!
 - Boşta parseller: 19516/1 (22 blok, 8.303 m²) ve 19517/3 (16 villa, 4.991 — Erenköy'ün ikizi
   olabilir; be Erenköy alanı 9.579 ≈ /3+/4 toplamı) → sonra.
 - YENİ villa-adayları (repo'da yok): Bizim Şirinköy (19508), Doktorlar no:3 (19509), Eylül (19528),
