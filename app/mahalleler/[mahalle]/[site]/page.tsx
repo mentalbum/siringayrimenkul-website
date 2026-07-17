@@ -24,6 +24,7 @@ import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
+import { bulunmaHali } from "@/lib/turkce";
 
 type Props = {
   params: Promise<{ mahalle: string; site: string }>;
@@ -55,7 +56,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${site.isim} Emlakçısı — Satılık, Kiralık ve Ev Değerleme`
       : `${site.isim} Emlakçısı Eryaman — Satılık, Kiralık, Değerleme`,
     description: truncateForMeta(
-      `${site.isim}'nde eviniz mi var? Satmadan veya kiraya vermeden önce fiyatı, siteyi blok blok tanıyan yerel emlakçınızla birlikte belirleyin. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
+      `${bulunmaHali(site.isim)} eviniz mi var? Satmadan veya kiraya vermeden önce fiyatı, siteyi blok blok tanıyan yerel emlakçınızla birlikte belirleyin. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
@@ -260,7 +261,7 @@ export default async function SitePage({ params }: Props) {
           <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
             ev sahibi hesap araçlarımız
           </Link>
-          {` elinizin altında. ${site.isim}'nde satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+          {` elinizin altında. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
         <CtaButton
           href={siteConfig.sahibindenUrl}

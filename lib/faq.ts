@@ -1,6 +1,7 @@
 import type { EtapEntry } from "@/lib/content";
 import { adaDisplayLabel, mahalleKisaIsim } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
+import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
 
@@ -67,8 +68,8 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
         : `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
     {
-      soru: `${site.isim}'nde satılık veya kiralık daire var mı?`,
-      cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın; ${site.isim}'nde portföyümüze eklenen daireleri size ilk biz haber verelim.`,
+      soru: `${bulunmaHali(site.isim)} satılık veya kiralık daire var mı?`,
+      cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın; ${bulunmaHali(site.isim)} portföyümüze eklenen daireleri size ilk biz haber verelim.`,
     },
   ];
 
@@ -80,7 +81,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
       soru:
         site.adalar.length > 1
           ? `${site.isim} hangi adalar üzerinde yer alıyor?`
-          : `${site.isim}'nin ada numarası kaçtır?`,
+          : `${tamlayanHali(site.isim)} ada numarası kaçtır?`,
       cevap:
         site.adalar.length > 1
           ? `${site.isim}, ${adaListesi} adaları üzerinde yer alıyor.`
@@ -89,12 +90,12 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   }
 
   items.push({
-    soru: `${site.isim}'ndeki dairemi satmak istiyorum, nereden başlamalıyım?`,
-    cevap: `İlk adım doğru fiyatı bilmek: ${site.isim}'ndeki dairenizi mahalle ortalamasından değil, sitenizdeki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz. Ardından fotoğraf ve tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya değerleme formunu doldurun; aynı gün dönüş yapalım.`,
+    soru: `${bulunmaHaliKi(site.isim)} dairemi satmak istiyorum, nereden başlamalıyım?`,
+    cevap: `İlk adım doğru fiyatı bilmek: ${bulunmaHaliKi(site.isim)} dairenizi mahalle ortalamasından değil, sitenizdeki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz. Ardından fotoğraf ve tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya değerleme formunu doldurun; aynı gün dönüş yapalım.`,
   });
   items.push({
-    soru: `${site.isim}'nde dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
-    cevap: `Doğru kira, ${site.isim}'ndeki emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerinde görünen fiyatlar çoğu zaman yanıltıcıdır. Kiralamayı bize emanet ettiğinizde dairenize özel kira tespitini biz yapıyoruz; sonrasında kiracı doğrulama, sözleşme ve fotoğraflı teslim tutanağı dahil tüm süreci üstleniyoruz.`,
+    soru: `${bulunmaHali(site.isim)} dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
+    cevap: `Doğru kira, ${bulunmaHaliKi(site.isim)} emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerinde görünen fiyatlar çoğu zaman yanıltıcıdır. Kiralamayı bize emanet ettiğinizde dairenize özel kira tespitini biz yapıyoruz; sonrasında kiracı doğrulama, sözleşme ve fotoğraflı teslim tutanağı dahil tüm süreci üstleniyoruz.`,
   });
   items.push({
     soru: `${site.isim} hakkında güncel ilan veya fiyat bilgisi nereden alabilirim?`,
