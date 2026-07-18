@@ -1,4 +1,5 @@
 import type { FaqItem } from "@/lib/faq";
+import { Reveal } from "@/components/ui/reveal";
 
 export function FaqSection({
   title,
@@ -26,6 +27,7 @@ export function FaqSection({
 
   return (
     <section className={className ?? "mt-14"}>
+      <Reveal>
       <h2 className="text-xl">{title}</h2>
       <div className="mt-5 divide-y divide-border rounded-2xl border border-border bg-surface">
         {items.map((item) => (
@@ -40,6 +42,7 @@ export function FaqSection({
           </details>
         ))}
       </div>
+      </Reveal>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -19,6 +19,7 @@ import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { SiteCard } from "@/components/site/site-card";
+import { Reveal } from "@/components/ui/reveal";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
@@ -307,8 +308,10 @@ export default async function SitePage({ params }: Props) {
               : `${mahalle.isim}'ndeki Diğer Siteler`}
           </h2>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {digerSiteler.map((item) => (
-              <SiteCard key={item.slug} site={item} />
+            {digerSiteler.map((item, i) => (
+              <Reveal key={item.slug} delay={(i % 3) * 60} className="h-full">
+                <SiteCard site={item} />
+              </Reveal>
             ))}
           </div>
         </section>

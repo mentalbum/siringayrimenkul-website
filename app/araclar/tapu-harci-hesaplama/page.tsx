@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
+import { Reveal } from "@/components/ui/reveal";
 import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
@@ -82,6 +83,7 @@ export default function TapuHarciPage() {
       </div>
 
       <section className="mt-12 max-w-3xl text-body">
+      <Reveal>
         <h2 className="text-xl text-navy">Örnek: 5.000.000 TL'lik satışta tapu masrafı</h2>
         <p className="mt-3 text-base leading-relaxed">
           Toplam harç 200.000 TL'dir; yasal paylaşımla satıcı 100.000 TL, alıcı 100.000 TL
@@ -100,6 +102,7 @@ export default function TapuHarciPage() {
           </Link>{" "}
           bakabilirsiniz.
         </p>
+      </Reveal>
       </section>
 
       <FaqSection title="Tapu Harcı Hakkında Sık Sorulan Sorular" items={faqItems} />

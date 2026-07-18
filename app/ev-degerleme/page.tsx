@@ -6,6 +6,7 @@ import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactForm } from "@/components/contact/contact-form";
 import { FaqSection } from "@/components/ui/faq-section";
+import { Reveal } from "@/components/ui/reveal";
 import { ReviewBadge } from "@/components/ui/review-badge";
 import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons";
@@ -108,19 +109,21 @@ export default function EvDegerlemePage() {
         <h2 className="text-xl">Nasıl Çalışıyor?</h2>
         <div className="mt-5 grid gap-5 sm:grid-cols-3">
           {adimlar.map((adim, index) => (
-            <div key={adim.baslik} className="rounded-2xl border border-border bg-surface p-5">
+            <Reveal key={adim.baslik} delay={(index % 3) * 70} className="h-full">
+            <div className="h-full rounded-2xl border border-border bg-surface p-5">
               <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 font-heading text-lg font-semibold text-gold-dark">
                 {index + 1}
               </div>
               <h3 className="mt-4 text-base">{adim.baslik}</h3>
               <p className="mt-2 text-sm leading-relaxed text-body">{adim.aciklama}</p>
             </div>
+            </Reveal>
           ))}
         </div>
       </section>
 
       <section className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.2fr]">
-        <div className="space-y-5">
+        <Reveal className="space-y-5">
           <h2 className="text-xl">Neden Şirin Gayrimenkul?</h2>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <MapPinIcon className="h-5 w-5 shrink-0 text-gold-dark" />
@@ -157,9 +160,10 @@ export default function EvDegerlemePage() {
               {siteConfig.phoneDisplay}
             </TrackedCtaLink>
           </p>
-        </div>
+        </Reveal>
 
-        <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
+        <Reveal delay={90}>
+        <div className="h-full rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="text-xl">Değerleme Talebi Oluşturun</h2>
           <p className="mt-1.5 text-sm text-muted">
             Bilgileriniz WhatsApp üzerinden bize iletilir; en kısa sürede dönüş yaparız.
@@ -168,6 +172,7 @@ export default function EvDegerlemePage() {
             <ContactForm mahalleler={mahalleler} siteler={siteler} />
           </div>
         </div>
+        </Reveal>
       </section>
 
       <FaqSection

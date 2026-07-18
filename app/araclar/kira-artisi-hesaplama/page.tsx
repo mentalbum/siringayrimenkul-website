@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
+import { Reveal } from "@/components/ui/reveal";
 import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
@@ -83,6 +84,7 @@ export default function KiraArtisiPage() {
       </div>
 
       <section className="prose-sm mt-12 max-w-3xl text-body">
+      <Reveal>
         <h2 className="text-xl text-navy">Kira artışı adım adım nasıl hesaplanır?</h2>
         <ol className="mt-3 list-decimal space-y-2 pl-5 text-base leading-relaxed">
           <li>
@@ -114,6 +116,7 @@ export default function KiraArtisiPage() {
           </Link>{" "}
           göz atın.
         </p>
+      </Reveal>
       </section>
 
       <FaqSection title="Kira Artışı Hakkında Sık Sorulan Sorular" items={faqItems} />

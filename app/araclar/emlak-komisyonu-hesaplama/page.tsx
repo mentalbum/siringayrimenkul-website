@@ -5,6 +5,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
+import { Reveal } from "@/components/ui/reveal";
 import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
@@ -83,6 +84,7 @@ export default function KomisyonPage() {
       </div>
 
       <section className="mt-12 max-w-3xl text-body">
+      <Reveal>
         <h2 className="text-xl text-navy">Komisyon bir masraf mı, yatırım mı?</h2>
         <p className="mt-3 text-base leading-relaxed">
           Doğru soru komisyonun tutarı değil, karşılığıdır: yanlış fiyatlanan bir ev aylarca
@@ -111,6 +113,7 @@ export default function KomisyonPage() {
           </Link>{" "}
           yanınızda.
         </p>
+      </Reveal>
       </section>
 
       <FaqSection title="Emlak Komisyonu Hakkında Sık Sorulan Sorular" items={faqItems} />

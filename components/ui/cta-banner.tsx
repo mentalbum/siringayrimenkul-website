@@ -1,5 +1,7 @@
 import type { ReactNode } from "react";
 
+import { Reveal } from "@/components/ui/reveal";
+
 interface CtaBannerProps {
   baslik: string;
   aciklama?: string;
@@ -20,10 +22,11 @@ export function CtaBanner({
   className = "",
 }: CtaBannerProps) {
   return (
+    <Reveal className={className}>
     <div
       className={`relative overflow-hidden rounded-2xl bg-navy px-6 text-center text-white ${
         size === "large" ? "py-12 sm:px-12" : "py-8 sm:px-10"
-      } ${className}`}
+      }`}
     >
       <svg
         aria-hidden="true"
@@ -60,5 +63,6 @@ export function CtaBanner({
         <div className="mt-3 flex flex-wrap items-center justify-center gap-3">{children}</div>
       </div>
     </div>
+    </Reveal>
   );
 }

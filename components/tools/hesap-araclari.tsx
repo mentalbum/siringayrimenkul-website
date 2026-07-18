@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
 
+import { Reveal } from "@/components/ui/reveal";
+
 const inputClass =
   "mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30";
 
@@ -304,10 +306,11 @@ export function BosKalmaAraci() {
 export function HesapAraclari() {
   return (
     <div className="grid gap-5 lg:grid-cols-2">
-      <KiraArtisiAraci />
-      <TapuHarciAraci />
-      <KomisyonAraci />
-      <BosKalmaAraci />
+      {[KiraArtisiAraci, TapuHarciAraci, KomisyonAraci, BosKalmaAraci].map((Arac, i) => (
+        <Reveal key={i} delay={(i % 2) * 70} className="h-full">
+          <Arac />
+        </Reveal>
+      ))}
     </div>
   );
 }
