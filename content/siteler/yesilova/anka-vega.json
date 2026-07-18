@@ -3,24 +3,28 @@
   "slug": "anka-vega",
   "mahalleSlug": "yesilova",
   "koordinat": {
-    "lat": 39.9647743,
-    "lng": 32.6108601
+    "lat": 39.96462,
+    "lng": 32.60999
   },
   "sinirGeoJSON": "siteler/yesilova/anka-vega-boundary.geojson",
-  "aciklama": "Anka Vega Konutları, Yeşilova'nın yeni gelişim aksında yer alan modern bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir'in komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe, manzara ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Anka Vega Konutları, Yeşilova'nın yeni gelişim aksında yer alan modern bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir'in komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe, manzara ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim. TKGM kayıtlarına göre yaklaşık 7.268 m²'lik kat mülkiyetli parselde yapı, 14'er katlı A1 ve A2 ikiz blok olarak kayıtlıdır (tapu niteliği ofis/işyeri — rezidans tipi).",
   "adalar": [
     {
       "no": "47544",
-      "parsel": "2"
+      "parsel": "4"
     }
   ],
   "ozellikler": [
     "Modern site — 2+1 (~82 m²) tipler",
     "Meva Şehir komşuluğunda genç doku",
-    "Yeşilova / Eryaman"
+    "Yeşilova / Eryaman",
+    "2 ikiz blok (A1, A2), 14'er katlı",
+    "Tapu niteliği: ofis/işyeri (rezidans tipi)",
+    "4016. Cadde No:17"
   ],
   "alternatifAdlar": [
     "Anka Vega Konutları"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-07-16",
+  "adres": "4016. Cadde No:17, Yeşilova, Etimesgut/Ankara"
 }

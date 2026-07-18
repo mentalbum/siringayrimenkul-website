@@ -7,7 +7,7 @@
     "lng": 32.6109751
   },
   "sinirGeoJSON": "siteler/yesilova/dogan-city-boundary.geojson",
-  "aciklama": "Doğan City, Yeşilova'da Şehit Ferhat Koç Caddesi'nde (4016. Cadde No:10) Doğan Grup tarafından geliştirilen bir konut sitesidir; ilanlarda şehir manzaralı 3+1 daireleri öne çıkar. Doğan Grup'un Yeşilova'daki ikinci projesi olan Doğan Life'ın yakın komşusudur. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Doğan City, Yeşilova'da Şehit Ferhat Koç Caddesi'nde (4016. Cadde No:10) Doğan Grup tarafından geliştirilen bir konut sitesidir; ilanlarda şehir manzaralı 3+1 daireleri öne çıkar. Doğan Grup'un Yeşilova'daki ikinci projesi olan Doğan Life'ın yakın komşusudur. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim. TKGM kayıtlarına göre yaklaşık 9.387 m²'lik kat mülkiyetli parselde yapı, 11 katlı A, 15 katlı B ve 4 katlı C bloklardan oluşur (tapu niteliği ofis/işyeri — rezidans tipi).",
   "adalar": [
     {
       "no": "47544",
@@ -18,7 +18,9 @@
     "Doğan Grup projesi",
     "Şehir manzaralı 3+1 daireler",
     "Doğan Life'ın komşusu",
-    "Yeşilova / Eryaman gelişim aksı"
+    "Yeşilova / Eryaman gelişim aksı",
+    "3 blok (A 11, B 15, C 4 katlı)",
+    "Tapu niteliği: ofis/işyeri (rezidans tipi)"
   ],
   "adres": "4016. Cadde No:10, Yeşilova, Etimesgut/Ankara",
   "alternatifAdlar": [
