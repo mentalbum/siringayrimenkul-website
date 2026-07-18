@@ -7,11 +7,12 @@
     "lng": 32.61378
   },
   "sinirGeoJSON": "siteler/tunahan/tunahan-sitesi-boundary.geojson",
-  "aciklama": "Tunahan Sitesi, mahalleyle aynı adı taşıyan, Eryaman 5. Etap bölgesinin en büyük yerleşimlerinden biridir. TKGM kayıtlarına göre site, 54.035 m²'lik kat mülkiyetli tek parsel üzerine kurulu — Tunahan'ın tek parseldeki en geniş sitesi. Geniş iç bahçeleri ve oturmuş çevresiyle mahallenin kimliğini taşıyan yerleşimlerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Tunahan Sitesi, mahalleyle aynı adı taşıyan, Eryaman 5. Etap bölgesinin en büyük yerleşimlerinden biridir. TKGM kayıtlarına göre site, 54.035 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — Tunahan'ın tek parseldeki en geniş sitesi. Mahalleyle aynı adı taşımak siteye doğal bir tanınırlık kazandırır: adres tarif etmek kolaydır, arama yapan alıcı siteyi hemen bulur. Geniş iç bahçeleri ve oturmuş çevre düzeniyle 5. Etap kooperatif kuşağının olgun örneklerindendir; çevresi mahallenin iki farklı yüzünü bir arada gösterir — bir yanda köklü kooperatif siteleri, diğer yanda Metromall gibi yeni nesil karma projeler. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46508",
-      "parsel": "1"
+      "parsel": "1",
+      "etap": "5"
     }
   ],
   "ozellikler": [
