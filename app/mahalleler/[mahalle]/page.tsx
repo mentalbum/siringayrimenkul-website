@@ -48,8 +48,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
-    title: `${baslikIsim} Emlakçısı — Eryaman Emlak Rehberi`,
-    description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}, satılık ve kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek istiyorsanız fiyatı birlikte belirleyelim.`,
+    title: `${baslikIsim} Satılık ve Kiralık Daire Fiyatları — Eryaman Emlakçısı`,
+    description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -296,7 +296,7 @@ export default async function MahallePage({ params }: Props) {
               {siteler.length > 0
                 ? `Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim — mahalledeki ${siteler.length} site ve rezidansın her birini tanıyoruz. `
                 : "Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim. "}
-              Satış kararının ilk adımı doğru fiyat:{" "}
+              Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen eski rakamlar yanıltabilir; güncel değeri emsallerden okuyoruz. Satış kararının ilk adımı doğru fiyat:{" "}
               <Link
                 href={`/ev-degerleme?mahalle=${mahalle.slug}`}
                 className="font-semibold text-gold-dark hover:underline"
