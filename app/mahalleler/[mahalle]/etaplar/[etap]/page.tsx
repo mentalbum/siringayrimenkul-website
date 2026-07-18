@@ -37,8 +37,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!mahalle || !etap) return {};
 
   return {
-    title: `Eryaman ${etap.no}. Etap Emlak Rehberi — ${mahalle.isim}`,
-    description: `Eryaman ${etap.no}. Etap'ta (${mahalle.isim}) ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada. Bu etapta satmak veya kiraya vermek için yerel emlakçınıza ulaşın.`,
+    title: `Eryaman ${etap.no}. Etap Satılık ve Kiralık Daireler — ${mahalle.isim} | Eryaman Emlakçısı`,
+    description: `Eryaman ${etap.no}. Etap'ta eviniz mi var? ${etap.siteler.length} site ve ${etap.adalar.length} adayı tek tek tanıyoruz; satış ve kira değerini yerel emlakçınızla netleştirin: ${siteConfig.phoneDisplay}.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}/etaplar/${etap.no}` },
   };
 }

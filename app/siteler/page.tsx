@@ -6,9 +6,9 @@ import { SitelerTabs } from "@/components/site/siteler-tabs";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Eryaman Siteleri ve Rezidansları — Tam Liste",
+  title: "Eryaman Siteleri ve Rezidansları — Satılık ve Kiralık Daireler İçin Tam Liste",
   description:
-    "Eryaman'daki tüm site ve rezidansları mahallesine göre listeleyen rehber. Aradığınız siteyi bulun; satmak veya kiraya vermek için yerel emlakçınıza ulaşın.",
+    "Eryaman'daki tüm site ve rezidansların tam listesi. Sitenizi bulun; dairenizin satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin: 0532 363 96 60.",
   alternates: { canonical: "/siteler" },
 };
 
