@@ -8,7 +8,7 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Emlak Terimleri Sözlüğü — Kat Mülkiyeti, Kârgir, İskân, Emsal Nedir?",
   description:
-    "Kat mülkiyeti ile kat irtifakı farkı, kârgir ne demek, iskân neden önemli, emsal nasıl okunur? Ev satan ve kiraya veren ev sahipleri için 19 temel emlak ve tapu teriminin sade açıklaması.",
+    "Kat mülkiyeti ile kat irtifakı farkı, kârgir ne demek, iskân neden önemli, emsal nasıl okunur? Ev satan ve kiraya veren ev sahipleri için 27 temel emlak ve tapu teriminin sade açıklaması.",
   alternates: { canonical: "/sozluk" },
 };
 
@@ -274,6 +274,120 @@ const terimler: Terim[] = [
     ad: "Dönüm",
     tanimDuz: "1.000 m²'lik arazi ölçüsü. Site parselleri anlatılırken sık kullanılır.",
     tanim: <>1.000 m²&apos;lik arazi ölçüsü. Site parselleri anlatılırken sık kullanılır.</>,
+  },
+  {
+    id: "ana-tasinmaz",
+    ad: "Ana Taşınmaz",
+    tanimDuz:
+      "Tapuda kat mülkiyeti veya kat irtifakı henüz kurulmamış, tek bütün olarak kayıtlı taşınmaz (arsa ya da bina). 'Tapuda ana taşınmaz' ifadesi, parselin bağımsız bölümlere ayrılmadığını gösterir.",
+    tanim: (
+      <>
+        Tapuda kat mülkiyeti veya kat irtifakı henüz kurulmamış, tek bütün olarak kayıtlı
+        taşınmaz (arsa ya da bina). Bir parsel &quot;ana taşınmaz&quot; görünüyorsa daireler
+        henüz ayrı tapulara bağlanmamış demektir; alım-satımda bu ayrımın netleşmesi önemlidir.
+      </>
+    ),
+  },
+  {
+    id: "cins-tashihi",
+    ad: "Cins Tashihi (Cins Değişikliği)",
+    tanimDuz:
+      "Tapudaki nitelik kaydının fiilî duruma uyarlanması; örneğin bina tamamlandığında 'arsa' kaydının 'apartman' olarak düzeltilmesi. Yapılmadığında bina bitmiş olsa da tapu 'arsa' görünmeye devam eder.",
+    tanim: (
+      <>
+        Tapudaki nitelik kaydının fiilî duruma uyarlanması; örneğin bina tamamlandığında
+        &quot;arsa&quot; kaydının &quot;apartman&quot; olarak düzeltilmesi. Bazı yeni sitelerin
+        sayfalarında &quot;parsel tapuda kat irtifakı/arsa aşamasında&quot; notunu bu yüzden
+        görürsünüz: bina yerinde, kayıt henüz güncellenmemiştir.
+      </>
+    ),
+  },
+  {
+    id: "emlak-hizmet-bedeli",
+    ad: "Emlak Hizmet Bedeli (Komisyon)",
+    tanimDuz:
+      "Taşınmaz Ticareti Hakkında Yönetmelik uyarınca satışta en fazla satış bedelinin %4'ü + KDV (uygulamada alıcı-satıcı %2+%2), kiralamada bir aylık kira + KDV olan yasal hizmet bedeli.",
+    tanim: (
+      <>
+        Taşınmaz Ticareti Hakkında Yönetmelik uyarınca satışta en fazla satış bedelinin %4&apos;ü
+        + KDV (uygulamada alıcı ve satıcıdan %2+%2), kiralamada bir aylık kira + KDV olan yasal
+        hizmet bedeli. Kendi rakamlarınız için{" "}
+        <Link href="/araclar" className={linkClass}>
+          komisyon hesaplayıcımızı
+        </Link>{" "}
+        kullanabilirsiniz.
+      </>
+    ),
+  },
+  {
+    id: "rayic-bedel",
+    ad: "Rayiç Bedel",
+    tanimDuz:
+      "Bir taşınmazın güncel piyasa koşullarında alıcı bulabileceği gerçekçi değer. Belediyenin emlak vergisine esas rayici ile piyasa rayici farklı kavramlardır; satış fiyatı piyasa rayicinden okunur.",
+    tanim: (
+      <>
+        Bir taşınmazın güncel piyasa koşullarında alıcı bulabileceği gerçekçi değer. Belediyenin
+        emlak vergisine esas rayici ile piyasa rayici farklıdır; doğru satış fiyatı, sitenizdeki
+        gerçekleşen emsallerle belirlenir —{" "}
+        <Link href="/ev-degerleme" className={linkClass}>
+          değerleme görüşmesi
+        </Link>{" "}
+        tam bunun içindir.
+      </>
+    ),
+  },
+  {
+    id: "serh",
+    ad: "Şerh",
+    tanimDuz:
+      "Tapu kütüğüne düşülen ve taşınmazın hukuki durumunu etkileyen not (satış vaadi, kira şerhi, aile konutu, haciz gibi). Satış öncesi tapu kaydındaki şerhlerin bilinmesi gerekir.",
+    tanim: (
+      <>
+        Tapu kütüğüne düşülen ve taşınmazın hukuki durumunu etkileyen not (satış vaadi, kira
+        şerhi, aile konutu, haciz gibi). Satış sürecine başlamadan tapu kaydındaki şerhlerin
+        görülmesi, sonradan sürpriz yaşanmaması için önemlidir.
+      </>
+    ),
+  },
+  {
+    id: "hisseli-tapu",
+    ad: "Hisseli Tapu",
+    tanimDuz:
+      "Bir taşınmazın birden fazla kişiye paylar hâlinde ait olması. Payın satışı mümkündür; ancak fiilî kullanım ve satış süreci hissedarlar arasındaki anlaşmaya bağlı olduğundan dikkat ister.",
+    tanim: (
+      <>
+        Bir taşınmazın birden fazla kişiye paylar hâlinde ait olması. Payın satışı mümkündür;
+        ancak fiilî kullanım ve satış süreci hissedarlar arasındaki anlaşmaya bağlı olduğundan
+        süreç yönetimi dikkat ister.
+      </>
+    ),
+  },
+  {
+    id: "rezidans-tapu",
+    ad: "Rezidans (Tapuda Ofis Niteliği)",
+    tanimDuz:
+      "Konut gibi kullanılan ancak imar durumu gereği tapuda 'ofis/işyeri' niteliğiyle kayıtlı yapılar. Aidat, vergi ve abonelik kalemleri konuttan farklı işleyebilir; alım-satımda tapu niteliğine bakılmalıdır.",
+    tanim: (
+      <>
+        Konut gibi kullanılan ancak imar durumu gereği tapuda &quot;ofis/işyeri&quot; niteliğiyle
+        kayıtlı yapılar. Bazı site sayfalarımızdaki &quot;tapu niteliği: ofis (rezidans tipi)&quot;
+        notu bunu anlatır; aidat, vergi ve abonelik kalemleri konuttan farklı işleyebileceği için
+        alım-satımda tapu niteliğine mutlaka bakılır.
+      </>
+    ),
+  },
+  {
+    id: "kentsel-donusum",
+    ad: "Kentsel Dönüşüm",
+    tanimDuz:
+      "Riskli veya ömrünü doldurmuş yapıların yıkılıp yeniden yapılması süreci. Hak sahipleri müteahhitle kat karşılığı ya da bedel üzerinden anlaşır; Eryaman çevresinde birçok yeni site bu yolla doğmuştur.",
+    tanim: (
+      <>
+        Riskli veya ömrünü doldurmuş yapıların yıkılıp yeniden yapılması süreci. Hak sahipleri
+        müteahhitle kat karşılığı ya da bedel üzerinden anlaşır; bölgedeki bazı yeni projeler
+        (ör. 96 konutluk Ritim Eryaman) bu yolla doğmuştur.
+      </>
+    ),
   },
 ];
 
