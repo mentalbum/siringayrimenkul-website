@@ -91,6 +91,7 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/tunahan/kur-sitesi-c1b-2k", destination: "/mahalleler/tunahan/kur-sitesi-46495-ada", permanent: true },
       { source: "/mahalleler/tunahan/kur-sitesi-c2b-2h", destination: "/mahalleler/tunahan/kur-sitesi-46496-ada", permanent: true },
       { source: "/mahalleler/yavuz-selim/aker-mucevher-evleri", destination: "/mahalleler/ata/aker-mucevher-evleri", permanent: true },
+      { source: "/mahalleler/yavuz-selim/demirglass-sitesi", destination: "/mahalleler/seyh-samil/lider-yasam-evleri", permanent: true },
       { source: "/mahalleler/yavuz-selim/elitnar-cicegi-sitesi", destination: "/mahalleler/yavuz-selim/elit-nar-cicegi", permanent: true },
       { source: "/mahalleler/yavuz-selim/genova", destination: "/mahalleler/ata/genova", permanent: true },
       { source: "/mahalleler/yavuz-selim/gold-life-konutlari", destination: "/mahalleler/ata/gold-life-konutlari", permanent: true },

@@ -518,3 +518,7 @@ alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
   Apartman, bloklar 6/6A/6B/7/12/12A). Koordinat, adalar ve sınır GeoJSON 18474'e taşındı.
 - Not: 18493/1 dükkan parseli sitenin çarşısı olabilir ama aidiyeti doğrulanamadı — kayda alınmadı.
 - [parti-24 notu] Güngörler Tower (SOA, 46643/5, Malazgirt 1071 Cd No:18): Google verisi ince — IG sigorta akışlarında '129 daire' ve '60 konut+2 ticari' quote'ları farklı projelere ait olabilir, güvenilmez → sayı yazılmadı, zenginleştirilmedi. Özgün'e sor: blok/daire yapısı? | firat-life-style-goksu-sitesi (SOA, adasız/koordinatsız): Fırat Life Style'ın Göksu projesi = relax-goksu-konutlari olabilir (aynı müteahhit) — mükerrer mi, ayrı proje mi? Özgün'e sor.
+
+### İlk Umut / Demirglass ÇÖZÜLDÜ (2026-07-18)
+Özgün: "Demirglass diye bir yer yok; demirglasın olduğu yerin ismi Lider Yaşam Evleri."
+→ 46263/2 için İKİ kayıt açılmış olduğu ortaya çıktı (yavuz-selim/demirglass-sitesi + seyh-samil/lider-yasam-evleri, aynı tapu alıntısı). Demirglass kaydı SİLİNDİ (dupe+yanlış ad+yanlış mahalle — koordinat P-i-P testi her iki parseli ŞŞ sınırı içinde gösterdi); redirect yavuz-selim/demirglass-sitesi → seyh-samil/lider-yasam-evleri. Lider kaydındaki 'ticari yapı' nitelemesi düzeltildi (tapu: 11 katlı A APARTMAN + 1 katlı B ofis → konut sitesi + tek katlı ticari birim). İlk Umut (46263/3) AYRI site olarak kaldı, bitişik komşu. be'nin 'İlk Umut Sitesi (Demirglas Sit.)' tek-başlığı yanıltıcıydı; 'Demirglas' altAd olarak EKLENMEDİ (kullanılmayan ad — Renk Villaları kuralı).
