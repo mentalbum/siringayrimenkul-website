@@ -89,6 +89,21 @@ export default function AraclarPage() {
       </header>
 
       <section className="mt-10">
+        <div className="mb-5 flex flex-wrap gap-2 text-sm">
+          {[
+            ["Kira Artışı Hesaplama", "/araclar/kira-artisi-hesaplama"],
+            ["Tapu Harcı Hesaplama", "/araclar/tapu-harci-hesaplama"],
+            ["Emlak Komisyonu Hesaplama", "/araclar/emlak-komisyonu-hesaplama"],
+          ].map(([etiket, href]) => (
+            <Link
+              key={href}
+              href={href}
+              className="rounded-full border border-border bg-surface px-4 py-2 font-semibold text-navy transition-colors hover:border-gold hover:text-gold-dark"
+            >
+              {etiket} →
+            </Link>
+          ))}
+        </div>
         <HesapAraclari />
       </section>
 
