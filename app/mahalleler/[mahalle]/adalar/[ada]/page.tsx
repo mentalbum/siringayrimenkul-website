@@ -13,6 +13,8 @@ import {
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
+import { FaqSection } from "@/components/ui/faq-section";
+import { getAdaFaq } from "@/lib/faq";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
@@ -41,14 +43,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
-  const etapBilgi = ada.etap ? ` Eryaman ${ada.etap}. Etap,` : "";
-  const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
+  // Ev sahibinin gerçek arama kalıpları ("17666 ada satılık daire", "46508 ada
+  // kiralık") başlıkta birebir karşılansın — site sayfalarındaki vitrin dili.
   return {
     title:
       entries.length > 1
-        ? `${label} Ada — ${mahalle.isim} | Eryaman`
-        : `${label} Ada — ${ada.site.isim} | ${mahalle.isim}`,
-    description: `${etapBilgi} ${mahalle.isim} içindeki ${label} Ada (${siteIsimleri}). Bu adadaki dairenizi satmayı veya kiraya vermeyi düşünüyorsanız Şirin Gayrimenkul ile fiyatı birlikte belirleyin.`.trim(),
+        ? `${label} Ada Satılık ve Kiralık Daireler — ${mahalle.isim} | Eryaman Emlakçısı`
+        : `${label} Ada Satılık ve Kiralık Daireler — ${ada.site.isim} | Eryaman Emlakçısı`,
+    description: `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
   };
 }
@@ -228,6 +230,11 @@ export default async function AdaPage({ params }: Props) {
           </div>
         </section>
       )}
+
+      <FaqSection
+        title={`${label} Ada Hakkında Sık Sorulan Sorular`}
+        items={getAdaFaq(label, entries, mahalle)}
+      />
     </div>
   );
 }

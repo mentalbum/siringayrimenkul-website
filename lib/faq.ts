@@ -1,4 +1,4 @@
-import type { EtapEntry } from "@/lib/content";
+import type { AdaEntry, EtapEntry } from "@/lib/content";
 import { adaDisplayLabel, mahalleKisaIsim } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
@@ -126,6 +126,38 @@ export function getEtapFaq(etap: EtapEntry, mahalle: Mahalle): FaqItem[] {
     {
       soru: `Eryaman ${etap.no}. Etap'ta ev almak veya kiralamak için kiminle iletişime geçebilirim?`,
       cevap: `${siteConfig.name} olarak Eryaman ${etap.no}. Etap'taki siteleri yakından tanıyoruz. Güncel ilanlarımıza sahibinden.com üzerinden ulaşabilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
+    },
+  ];
+}
+
+export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle): FaqItem[] {
+  const ada = entries[0];
+  const tekSite = entries.length === 1;
+  const siteAdi = ada.site.isim;
+  const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
+  const etapNot = ada.etap ? ` ve Eryaman ${ada.etap}. Etap içinde yer alır` : "";
+  return [
+    {
+      soru: `${label} Ada'da satılık daire var mı?`,
+      cevap: `Portföyümüz sürekli değişiyor; ${label} Ada'daki (${siteIsimleri}) güncel satılık ilanlarımıza sahibinden.com mağazamızdan ulaşabilirsiniz. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın — bu adada portföyümüze eklenen daireleri size ilk biz haber verelim.`,
+    },
+    {
+      soru: `${label} Ada'da kiralık daire var mı?`,
+      cevap: `Kiralık portföyü satılıktan da hızlı döner; ${label} Ada için güncel kiralık seçeneklerini sahibinden.com mağazamızdan takip edebilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz. Kiraya vermek isteyen ev sahipleri için de doğru kira tespitini birlikte yapıyoruz.`,
+    },
+    {
+      soru: `${label} Ada'daki daire fiyatları ne durumda?`,
+      cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, bu adadaki ve ${tekSite ? bulunmaHaliKi(siteAdi) : "çevresindeki sitelerde"} gerçekleşen satış ve kiralamalardan okunur. Dairenizin veya almak istediğiniz dairenin güncel değeri için bizi ${siteConfig.phoneDisplay} numarasından arayın.`,
+    },
+    {
+      soru: `${label} Ada hangi sitede yer alıyor?`,
+      cevap: tekSite
+        ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır${etapNot}.`
+        : `${label} Ada, ${mahalle.isim} sınırları içindedir${etapNot}; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
+    },
+    {
+      soru: `Bu adadaki evimi satmak istiyorum — süreç nasıl işler?`,
+      cevap: `İlk adım doğru fiyat: dairenizi ilan sitelerindeki 'istenen' rakamlardan değil, adanızdaki ve sitenizdeki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz. Ardından tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya değerleme formunu doldurun; aynı gün dönüş yapalım.`,
     },
   ];
 }
