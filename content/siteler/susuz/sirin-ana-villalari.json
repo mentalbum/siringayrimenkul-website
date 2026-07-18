@@ -1,0 +1,35 @@
+{
+  "isim": "Şirin Ana Villaları",
+  "slug": "sirin-ana-villalari",
+  "mahalleSlug": "susuz",
+  "koordinat": {
+    "lat": 40.011606,
+    "lng": 32.618584
+  },
+  "sinirGeoJSON": "siteler/susuz/sirin-ana-villalari-boundary.geojson",
+  "aciklama": "Şirin Ana Villaları, Susuz bölgesinin kuzeyinde dört komşu adaya yayılan bir villa yerleşimidir. TKGM kayıtlarına göre parseller tapuda henüz kat irtifakı/arsa aşamasındadır (dördü toplam ~23.836 m²). Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Dört komşu adaya yayılan villa yerleşimi",
+    "Parseller tapuda kat irtifakı/arsa aşamasında (TKGM)",
+    "Susuz — kadastroda Ata kaydı"
+  ],
+  "adalar": [
+    {
+      "no": "46185",
+      "parsel": "1"
+    },
+    {
+      "no": "46186",
+      "parsel": "1"
+    },
+    {
+      "no": "46187",
+      "parsel": "1"
+    },
+    {
+      "no": "46188",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-18"
+}
