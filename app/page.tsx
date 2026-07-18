@@ -179,8 +179,15 @@ export default function HomePage() {
           </p>
           <h2 className="mt-2 text-2xl sm:text-3xl">Eryaman&apos;da Yerel Emlak Ofisiniz</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da satılık ve
-            kiralık konut danışmanlığı yapıyor,{" "}
+            Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da{" "}
+            <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
+              ev satış
+            </Link>{" "}
+            ve{" "}
+            <Link href="/eryamanda-ev-kiraya-vermek" className="font-semibold text-gold-dark hover:underline">
+              kiralama danışmanlığı
+            </Link>{" "}
+            yapıyor,{" "}
             <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
               satış öncesi ev değerleme
             </Link>{" "}

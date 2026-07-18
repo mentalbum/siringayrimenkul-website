@@ -21,6 +21,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/mahalleler`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/siteler`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/ev-degerleme`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-satmak`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/araclar`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, changeFrequency: "monthly", priority: 0.6 },
