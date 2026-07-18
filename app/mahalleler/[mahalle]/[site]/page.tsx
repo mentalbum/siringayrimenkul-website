@@ -51,12 +51,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Asıl hedef kitle bu sitede EVİ OLANLAR: "{site} satılık daire",
   // "{site} daire fiyatları", "evimi satmak/kiraya vermek" niyetli aramalar.
   const isimdeEryamanVar = /eryaman/i.test(site.isim);
+  // Ev sahibinin gerçek arama kalıpları ("X satılık daire", "X kiralık daire",
+  // "X daire fiyatları", "X emlakçı") başlıkta birebir karşılansın; açıklama
+  // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
   return {
     title: isimdeEryamanVar
-      ? `${site.isim} Emlakçısı — Satılık, Kiralık ve Ev Değerleme`
-      : `${site.isim} Emlakçısı Eryaman — Satılık, Kiralık, Değerleme`,
+      ? `${site.isim} Satılık ve Kiralık Daireler — Emlakçısı ve Daire Fiyatları`
+      : `${site.isim} Satılık ve Kiralık Daireler — Eryaman Emlakçısı`,
     description: truncateForMeta(
-      `${bulunmaHali(site.isim)} eviniz mi var? Satmadan veya kiraya vermeden önce fiyatı, siteyi blok blok tanıyan yerel emlakçınızla birlikte belirleyin. ${site.isim} satılık ve kiralık daireler için: ${siteConfig.phoneDisplay}.`
+      `${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
