@@ -177,6 +177,21 @@ export default async function SitePage({ params }: Props) {
           </span>
         )}
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
+        {/* İlan niyetiyle gelen ziyaretçinin beklentisi İLK ekranda karşılansın:
+            gerçek ilanlar sahibinden mağazamızda — dürüst ve tek tık. */}
+        <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
+          <span>
+            {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
+          </span>
+          <TrackedCtaLink
+            href={siteConfig.sahibindenUrl}
+            gaEvent="site_ust_sahibinden"
+            variant="ghost"
+            className="px-0 font-semibold text-gold-dark"
+          >
+            sahibinden.com mağazamız →
+          </TrackedCtaLink>
+        </p>
       </header>
 
       <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>

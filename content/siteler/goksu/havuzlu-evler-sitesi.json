@@ -7,7 +7,7 @@
     "lng": 32.643594
   },
   "sinirGeoJSON": "siteler/goksu/havuzlu-evler-sitesi-boundary.geojson",
-  "aciklama": "Havuzlu Evler Sitesi, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 19.282 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"3 Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Havuzlu Evler Sitesi — yerel kayıtlarda 'Havuzkent' olarak da geçer — Göksu'nun adını da verdiği 'Havuzluevler' kuşağının merkezindeki sitelerden biridir. TKGM kayıtlarına göre 19.282 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '3 Bloktan Oluşan Betonarme Apartman' olarak tanımlar. Üç bloklu ferah yerleşimi ve havuzlu site geleneğiyle, komşuları Sude Konutları ve Havuzlu Bahçe Konutları ile birlikte Göksu'nun bu kesimine karakterini veren yerleşimlerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "48146",
@@ -19,5 +19,9 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Havuzkent Sitesi",
+    "Havuzkent"
+  ]
 }
