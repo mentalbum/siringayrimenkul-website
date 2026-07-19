@@ -529,3 +529,13 @@ alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
 Ayrıca: be ada numaraları ESKİYEBİLİYOR (Sude: be '46468' → gerçek 48056/1; Havuzlu Bahçe: be '46461' → 48145/1 — imar yenilemesi). be tek başına ada kanıtı DEĞİL, nokta sorgusuyla teyit şart.
 
 **DÜZELTME (Özgün, 2026-07-19): Eryaman'da 6. Etap YOKTUR.** be'nin '6. Etap Oyak Atakent' başlığı yanlış adlandırma. Etap ataması ve '6. Etabı olarak bilinen' ifadesi 8 kayıttan geri alındı; 'Oyak Atakent' bölge adı ve be site altAd'ları kaldı (onlara itiraz yok). Ders: be'nin BÖLGE BAŞLIKLARI da hatalı olabilir — bölge adlarını Özgün teyidi olmadan etap/idari yapıya çevirme.
+
+### GSC sorgu keşifleri (2026-07-19, 28g CSV analizi) — araştırılacak 5 ad
+Gösterim alıyoruz ama kayıtları yok (kullanıcılar arıyor, sayfamız dolaylı çıkıyor):
+- **sarıgüllük sitesi** (12 göst.) — Tunahan Sarıgül'den FARKLI olabilir; nerede?
+- **nover westlife** (11) + "westlife sitesi" (4) — Yeni Batı bölgesi projesi olabilir
+- **sky göksu** (7) — Göksu'da proje adayı
+- **sorguçaspor sitesi ankara** (7) — spor kulübü kooperatifi?
+- **başkent eryaman sitesi** (5) — jenerik mi, gerçek site mi belirsiz
+Ayrıca: "uzunali göksu 2" (8) — mevcut uzunali-goksu-konutlari'nın 2. etabı mı?; "boyut 1 sitesi" (8) — Boyut'un numaralı hâli mi?; "kozlar towers" (4×) — Twin Towers'ın müteahhit adı mı (teyitsiz)?
+"X fotoğraflar" sorguları (7 adet): kullanıcılar site FOTOĞRAFI arıyor — Özgün'e: sahibinden fotoğraflarından site sayfalarına görsel eklemek istersek ayrı konuşulmalı (telif bizim ilanlarımızsa sorun yok).
