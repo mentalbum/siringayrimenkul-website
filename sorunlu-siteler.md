@@ -542,3 +542,7 @@ Ayrıca: "uzunali göksu 2" (8) — mevcut uzunali-goksu-konutlari'nın 2. etab�
 
 ### ZAYIFLIK KUYRUĞU (GSC 28g sayfa verisi, 2026-07-19) — 171 sayfa
 Scratchpad'de zayif-kuyruk.json (skor=gösterim×(poz-4); gösterim≥15, poz≥6.5). Parti 1+2 işlendi (16 kayıt). Mia Concept KOORDİNATSIZ (haritasız, komşu ağı dışında — pin kanıtı bulununca eklenecek). Sıradaki parti adayları: Özahikent(104/8.5), Efsane Evleri(111/8.2), Vera City(110/7.8), Eryaman Royal City(78/9.3), Mia Concept(104/8), Siyah Beyaz(137/6.9), Botanik Park(67/9.5), Mutlu(67/9.4), Panorama Prestij(57/10), Serhatkent(86/9.3), Kainat(85/8.3), Eser Yapı(109/7.3), Mavi Bayrak(90/8), Astim Metrolife(74/8.7), Hittown(98/9), Zirve Loft(74/8.5). NOT: Google SERP otomatik sorgusu bot-doğrulamaya takılıyor (CAPTCHA aşılmaz, aşılmayacak) — pozisyon kaynağı GSC'dir; SERP görsel kontrolü gerekiyorsa Özgün kendi tarayıcısında bakar.
+
+### İNCE-KAYIT KUYRUĞU (2026-07-19) — zenginleştirme eksik yapılmış kayıtlar
+Özgün'ün tespiti doğrulandı: 500 kr altı 431 kayıt var; 290'ında tapu cache'inde KULLANILMAMIŞ zengin döküm duruyor (scratchpad/ince-kuyruk.json). Parti 6-7 (16 kayıt) işlendi. Kalan ~274, uzunluk sırasıyla işlenecek. Veri-kuru ~141 kayıt (nitelik 'Arsa'/'Betonarme Apartman' tek kelime ya da cache yok) → şişirilmeyecek, araştırma turu bekliyor.
+YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (nitelik: İlköğretim Okulu) ve 4-devlet-mahallesi-sitesi (nitelik: Okul/Üniversite) — ada/parsel eşleşmeleri yanlış olabilir, koordinat+parsel yeniden doğrulanmalı.
