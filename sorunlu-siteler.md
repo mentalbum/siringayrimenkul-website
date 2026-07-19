@@ -539,3 +539,6 @@ Gösterim alıyoruz ama kayıtları yok (kullanıcılar arıyor, sayfamız dolay
 - **başkent eryaman sitesi** (5) — jenerik mi, gerçek site mi belirsiz
 Ayrıca: "uzunali göksu 2" (8) — mevcut uzunali-goksu-konutlari'nın 2. etabı mı?; "boyut 1 sitesi" (8) — Boyut'un numaralı hâli mi?; "kozlar towers" (4×) — Twin Towers'ın müteahhit adı mı (teyitsiz)?
 "X fotoğraflar" sorguları (7 adet): kullanıcılar site FOTOĞRAFI arıyor — Özgün'e: sahibinden fotoğraflarından site sayfalarına görsel eklemek istersek ayrı konuşulmalı (telif bizim ilanlarımızsa sorun yok).
+
+### ZAYIFLIK KUYRUĞU (GSC 28g sayfa verisi, 2026-07-19) — 171 sayfa
+Scratchpad'de zayif-kuyruk.json (skor=gösterim×(poz-4); gösterim≥15, poz≥6.5). Parti 1 işlendi (8 kayıt, 87c25f2 sonrası commit). Sıradaki parti adayları: Özahikent(104/8.5), Efsane Evleri(111/8.2), Vera City(110/7.8), Eryaman Royal City(78/9.3), Mia Concept(104/8), Siyah Beyaz(137/6.9), Botanik Park(67/9.5), Mutlu(67/9.4), Panorama Prestij(57/10), Serhatkent(86/9.3), Kainat(85/8.3), Eser Yapı(109/7.3), Mavi Bayrak(90/8), Astim Metrolife(74/8.7), Hittown(98/9), Zirve Loft(74/8.5). NOT: Google SERP otomatik sorgusu bot-doğrulamaya takılıyor (CAPTCHA aşılmaz, aşılmayacak) — pozisyon kaynağı GSC'dir; SERP görsel kontrolü gerekiyorsa Özgün kendi tarayıcısında bakar.

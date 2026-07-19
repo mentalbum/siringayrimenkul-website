@@ -7,7 +7,7 @@
     "lng": 32.60523
   },
   "sinirGeoJSON": "siteler/ata/efsane-evleri-boundary.geojson",
-  "aciklama": "Efsane Evleri, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 22.607 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 10 Katlı B Blok 10 Katlı C Blok 10 Katlı G Blok 10 Katlı D Blok 11 Katlı E Blok 11 Katlı F Blok 11 Katlı Apartman-Beton\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Efsane Evleri, Ata Mahallesi'nde yedi bloklu, büyük ölçekli bir konut sitesidir. TKGM kayıtlarına göre 22.607 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A, B, C ve G blokları 10'ar katlı, D, E ve F blokları 11'er katlı — toplam yedi betonarme blok. Yedi bloğun 22 dönümü aşan tek parsele yayılması, site içi açık alan ve otopark payını yüksek tutar; blok ve kat çeşitliliği, aynı sitede farklı cephe ve fiyat katmanları demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44758",
