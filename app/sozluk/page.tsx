@@ -389,6 +389,101 @@ const terimler: Terim[] = [
       </>
     ),
   },
+  {
+    id: "veraset-ilami",
+    ad: "Veraset İlamı (Mirasçılık Belgesi)",
+    tanimDuz:
+      "Kimlerin, hangi payla mirasçı olduğunu gösteren resmî belge. Çoğu durumda noterden aynı gün alınır; miras kalan evin intikali ve satışı için ilk adımdır.",
+    tanim: (
+      <>
+        Kimlerin, hangi payla mirasçı olduğunu gösteren resmî belge. Çoğu durumda noterden aynı
+        gün alınır; miras kalan evin intikali ve satışı için ilk adımdır. Sürecin tamamı için{" "}
+        <Link href="/blog/miras-kalan-ev-nasil-satilir" className="font-semibold text-gold-dark hover:underline">
+          miras rehberimize
+        </Link>{" "}
+        bakın.
+      </>
+    ),
+  },
+  {
+    id: "intikal",
+    ad: "İntikal",
+    tanimDuz:
+      "Miras kalan taşınmazın, vefat edenin adından mirasçıların adına tapuda tescil edilmesi. İntikal yapılmadan ev satılamaz; mirasçılardan birinin başvurusu yeterlidir.",
+    tanim: (
+      <>
+        Miras kalan taşınmazın, vefat edenin adından mirasçıların adına tapuda tescil edilmesi.
+        İntikal yapılmadan ev satılamaz; mirasçılardan birinin başvurusu yeterlidir.
+      </>
+    ),
+  },
+  {
+    id: "ortakligin-giderilmesi",
+    ad: "Ortaklığın Giderilmesi (İzale-i Şüyu)",
+    tanimDuz:
+      "Paydaşların anlaşamadığı durumda, ortak taşınmazın paylaşımı için açılan dava. Ev bu yolda çoğunlukla mahkeme kanalıyla açık artırmada satılır; süreç uzun olduğundan masada anlaşmak genellikle tüm taraflar için daha kazançlıdır.",
+    tanim: (
+      <>
+        Paydaşların anlaşamadığı durumda, ortak taşınmazın paylaşımı için açılan dava. Ev bu
+        yolda çoğunlukla mahkeme kanalıyla açık artırmada satılır; süreç uzun olduğundan masada
+        anlaşmak genellikle tüm taraflar için daha kazançlıdır.
+      </>
+    ),
+  },
+  {
+    id: "elbirligi-payli-mulkiyet",
+    ad: "Elbirliği / Paylı Mülkiyet",
+    tanimDuz:
+      "Elbirliği mülkiyetinde (miras kalan evin ilk hâli) mirasçılar ancak birlikte tasarruf edebilir; paylı mülkiyette her paydaşın bağımsız, satılabilir bir payı vardır. Miras kalan ev istenirse paylı mülkiyete çevrilebilir.",
+    tanim: (
+      <>
+        Elbirliği mülkiyetinde (miras kalan evin ilk hâli) mirasçılar ancak birlikte tasarruf
+        edebilir; paylı mülkiyette her paydaşın bağımsız, satılabilir bir payı vardır. Miras
+        kalan ev istenirse paylı mülkiyete çevrilebilir.
+      </>
+    ),
+  },
+  {
+    id: "temerrut",
+    ad: "Temerrüt (Kirada)",
+    tanimDuz:
+      "Kiracının kirayı ödememesi durumu. Ev sahibi yazılı ihtarla en az 30 günlük ödeme süresi verir; süre sonunda ödeme yapılmazsa sözleşmeyi feshedip tahliye isteyebilir.",
+    tanim: (
+      <>
+        Kiracının kirayı ödememesi durumu. Ev sahibi yazılı ihtarla en az 30 günlük ödeme süresi
+        verir; süre sonunda ödeme yapılmazsa sözleşmeyi feshedip tahliye isteyebilir. Yollar için{" "}
+        <Link href="/blog/kiraci-tahliye-sureci" className="font-semibold text-gold-dark hover:underline">
+          tahliye rehberimize
+        </Link>{" "}
+        bakın.
+      </>
+    ),
+  },
+  {
+    id: "ipotek-feki",
+    ad: "İpotek Feki (Fek Yazısı)",
+    tanimDuz:
+      "Kredi borcu kapanan taşınmazın üzerindeki ipoteğin tapudan kaldırılması; bankanın verdiği belgeye fek yazısı denir. İpotekli ev satışında devrin ön koşuludur.",
+    tanim: (
+      <>
+        Kredi borcu kapanan taşınmazın üzerindeki ipoteğin tapudan kaldırılması; bankanın verdiği
+        belgeye fek yazısı denir. İpotekli ev satışında devrin ön koşuludur.
+      </>
+    ),
+  },
+  {
+    id: "vekaletname",
+    ad: "Vekâletname (Taşınmaz Satışında)",
+    tanimDuz:
+      "Tapu işlemine bizzat gidemeyecek malikin, noterde düzenlenen belgeyle bir başkasını yetkilendirmesi. Taşınmaz satışı için genel vekâletname yetmeyebilir; satış yetkisinin açıkça yazılması gerekir. Yurt dışında konsolosluktan düzenlenir.",
+    tanim: (
+      <>
+        Tapu işlemine bizzat gidemeyecek malikin, noterde düzenlenen belgeyle bir başkasını
+        yetkilendirmesi. Taşınmaz satışı için genel vekâletname yetmeyebilir; satış yetkisinin
+        açıkça yazılması gerekir. Yurt dışında konsolosluktan düzenlenir.
+      </>
+    ),
+  },
 ];
 
 export default function SozlukPage() {
