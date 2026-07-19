@@ -9,8 +9,8 @@ import { ContactForm } from "@/components/contact/contact-form";
 import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
-  title: "İletişim",
-  description: `${siteConfig.name} ile iletişime geçin. Telefon: ${siteConfig.phoneDisplay}.`,
+  title: "İletişim — Eryaman Emlakçınız, Tunahan 4. Etap Çarşı",
+  description: `Eryaman/Etimesgut'ta evinizi satmak veya kiraya vermek için ${siteConfig.name}'a ulaşın: ${siteConfig.phoneDisplay} — Tunahan Mahallesi, 4. Etap Çarşı. WhatsApp ve değerleme formu da açık.`,
   alternates: { canonical: "/iletisim" },
 };
 

@@ -20,8 +20,8 @@ import { ReviewBadge } from "@/components/ui/review-badge";
 const YETKI_BELGESI_NO = "0603771";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda",
-  description: `${siteConfig.name}, Eryaman bölgesinde yerel emlak rehberliği yapan bir gayrimenkul ofisidir.`,
+  title: "Hakkımızda — Eryaman'ın Yerel Emlak Ofisi",
+  description: `${siteConfig.name} — Etimesgut Eryaman'da satılık ve kiralık konutta uzman yerel emlak ofisi. 750'den fazla siteyi tek tek tanıyoruz; evinizi doğru fiyatla satmanız veya kiraya vermeniz için yanınızdayız.`,
   alternates: { canonical: "/hakkimizda" },
 };
 
