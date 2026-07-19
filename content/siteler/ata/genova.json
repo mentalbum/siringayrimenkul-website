@@ -7,7 +7,7 @@
     "lng": 32.6073029
   },
   "sinirGeoJSON": "siteler/ata/genova-boundary.geojson",
-  "aciklama": "Genova, Ata Mahallesi'nde tapu kaydına göre 9 katlı betonarme ofis-işyeri yapısıdır (yaklaşık 3.105 m² parsel, kat mülkiyetli) — konut değil, bölgenin ticari-ofis noktalarındandır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Genova, Ata Mahallesi'nde 9 katlı bir ticari-ofis yapısıdır. TKGM kayıtlarına göre 3.105 m²'lik kat mülkiyetli parselde tapu niteliği 'Ofis-İşyeri'dir — yani konut değil, rezidans/ofis tipi bir yapıdır; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, ayrıntısını sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Ata'nın günlük yaşam aksındaki konumu, birimleri hem ofis kullanımı hem yatırım tarafında talep gören bir profile koyar. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45828",

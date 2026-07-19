@@ -7,7 +7,7 @@
     "lng": 32.60385
   },
   "sinirGeoJSON": "siteler/ata/senser-sitesi-boundary.geojson",
-  "aciklama": "Şenser Sitesi, Ata Mahallesi'nde yer alan yerleşik bir konut sitesidir; yerel kayıtlarda 'Selsen Sitesi' yazımıyla da geçer ve adasını Akgüner yurt binasıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Şenser Sitesi, Ata Mahallesi'nde altı bloklu yerleşik bir konut sitesidir; yerel kayıtlarda 'Selsen Sitesi' yazımıyla da geçer ve adasını Akgüner yurt binasıyla paylaşır. TKGM kayıtlarına göre 19.214 m²'lik parselde tapu kaydı yapıyı 'A, B, C, F Blok 10 Katlı ve D, E Blok 11 Katlı Betonarme Mesken' olarak tanımlar — iki kat kademesindeki altı blok, aynı sitede farklı cephe ve fiyat katmanları oluşturur. 19 dönümlük parselin ferah düzeniyle Ata'nın yerleşik dokusunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44759",

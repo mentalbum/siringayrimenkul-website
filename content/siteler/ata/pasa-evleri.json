@@ -7,7 +7,7 @@
     "lng": 32.6036029
   },
   "sinirGeoJSON": "siteler/ata/pasa-evleri-boundary.geojson",
-  "aciklama": "Paşa Evleri, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.640 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A-B-C Bloklu Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Paşa Evleri, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda 'A-B-C Bloklu Apartman' niteliğiyle kayıtlı 10.640 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun 10 dönümü aşan parsele yerleşimi blok aralarını geniş tutar; Ata'nın Eryaman'la iç içe yaşayan dokusunda, sakin ve yerleşik bir konumdadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44753",

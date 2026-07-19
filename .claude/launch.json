@@ -13,6 +13,12 @@
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4180", "-d", "/Users/ozgun/hazal-kurgan"],
       "port": 4180
+    },
+    {
+      "name": "sinavradar-dev",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--prefix", "/Users/ozgun/sinavradar", "--", "-p", "3041"],
+      "port": 3041
     }
   ]
 }
