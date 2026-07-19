@@ -7,7 +7,7 @@
     "lng": 32.602528
   },
   "sinirGeoJSON": "siteler/ata/ruyakent-sitesi-boundary.geojson",
-  "aciklama": "Rüyakent Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 22.477 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 11 Kat B Blok 11 Kat C Blok 11 Kat D Blok 11 Kat E Blok 11 Kat F Blok 11 Kat G Blok 10 Katlı 7 Bloktan Oluşan Beton Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Rüyakent Sitesi, Ata Mahallesi'nde yedi bloklu büyük bir konut sitesidir. TKGM kayıtlarına göre 22.477 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A'dan F'ye altı blok 11'er katlı, G bloğu 10 katlı — toplam yedi betonarme blok. Yedi bloğun 22 dönümü aşan tek parsele yayılması, site içi yeşil ve otopark payını güçlü tutar; ölçeği sayesinde kümede her dönem el değiştiren daire olur, emsal verisi bol ve tazedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44768",
