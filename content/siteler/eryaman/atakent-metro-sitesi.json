@@ -6,11 +6,12 @@
     "lat": 39.980349,
     "lng": 32.628379
   },
-  "aciklama": "Atakent Metro Sitesi, Eryaman'ın 6. Etap (Oyak-Atakent) bölgesinde, adını metro hattına yakınlığından alan bir konut sitesidir; yerel kayıtlarda 'Oyak Atakent-2 Metro Sitesi' olarak da geçer. TKGM kayıtlarına göre yaklaşık 13.908 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"3 Blok Kârgir Apartman\" olarak tanımlar. (Atakent 2 Cumhuriyet Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat ve cepheyle netleşir — değeri, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Atakent Metro Sitesi, Eryaman'ın 6. Etap (Oyak-Atakent) bölgesinde, adını metro hattına yakınlığından alan bir konut sitesidir; yerel kayıtlarda 'Oyak Atakent-2 Metro Sitesi' olarak da geçer. TKGM kayıtlarına göre yaklaşık 13.908 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"3 Blok Kârgir Apartman\" olarak tanımlar. (Atakent 2 Cumhuriyet Sitesi ayrı bir yerleşimdir.) Site, yerel kayıtlarda 'Oyak Atakent' olarak anılan ve Eryaman'ın 6. Etabı olarak bilinen toplu konut bölgesinin parçasıdır; bölge halk arasında kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat ve cepheyle netleşir — değeri, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46524",
-      "parsel": "1"
+      "parsel": "1",
+      "etap": "6"
     }
   ],
   "sinirGeoJSON": "siteler/eryaman/atakent-metro-sitesi-boundary.geojson",

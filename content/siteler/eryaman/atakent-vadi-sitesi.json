@@ -7,11 +7,12 @@
     "lng": 32.632693
   },
   "sinirGeoJSON": "siteler/eryaman/atakent-vadi-sitesi-boundary.geojson",
-  "aciklama": "Atakent Vadi Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 37.587 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Atakent Vadi Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 37.587 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok Kargir Apartman\". Site, yerel kayıtlarda 'Oyak Atakent' olarak anılan ve Eryaman'ın 6. Etabı olarak bilinen toplu konut bölgesinin parçasıdır; bölge halk arasında kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46535",
-      "parsel": "2"
+      "parsel": "2",
+      "etap": "6"
     }
   ],
   "ozellikler": [
@@ -19,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Oyak Atakent 1 Vadi Sitesi"
+  ]
 }
