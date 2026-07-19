@@ -7,7 +7,7 @@
     "lng": 32.603609
   },
   "sinirGeoJSON": "siteler/ata/mercan-life-buse-konutlari-boundary.geojson",
-  "aciklama": "Mercan Life Buse Konutları, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 11.806 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A-17 Ve B-18 Katlı Bloklardan Oluşan Betonarme Mesken\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Mercan Life Buse Konutları — aramalarda kısaca 'Buse Konutları' olarak da geçer — Ata Mahallesi'nde, mahalle silüetinin en yüksek yapıları arasındaki ikiz bloklu bir konut sitesidir. TKGM kayıtlarına göre 11.806 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A-17 ve B-18 Katlı Bloklardan Oluşan Betonarme Mesken' olarak tanımlar. 17 ve 18 katlı iki yüksek blok, üst katlarda Eryaman ve Ata yönüne geniş görüş sunar; iki bloklu yalın düzen site yönetimini de sade tutar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44753",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-07-16",
+  "alternatifAdlar": [
+    "Buse Konutları"
+  ]
 }

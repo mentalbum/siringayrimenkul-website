@@ -7,7 +7,7 @@
     "lng": 32.62163
   },
   "sinirGeoJSON": "siteler/ata/alkon-sitesi-boundary.geojson",
-  "aciklama": "Alkon Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 21.341 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A,B,C Ve D Bloklardan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Alkon Sitesi, Ata Mahallesi'nde yer alan dört bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda 'A, B, C ve D Bloklardan Oluşan Betonarme Apartman' niteliğiyle kayıtlı 21.341 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Dört bloğun 21 dönümü aşkın tek parsele yerleşimi, blok araları geniş ve açık alan payı yüksek bir site düzeni anlamına gelir; Ata'nın Eryaman'la iç içe yaşayan dokusunda, günlük yaşam akslarına yakın konumdadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46214",
@@ -19,5 +19,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-07-16",
+  "alternatifAdlar": [
+    "Alkon Konutları"
+  ]
 }
