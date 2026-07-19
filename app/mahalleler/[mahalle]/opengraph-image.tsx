@@ -13,7 +13,7 @@ export default async function Image({ params }: { params: Promise<{ mahalle: str
   const { mahalle: slug } = await params;
   const mahalle = getMahalleBySlug(slug);
   const isim = mahalle?.isim ?? siteConfig.name;
-  const ustBilgi = `${mahalle?.ilce ?? "Eryaman"} · ${siteConfig.name}`;
+  const puntoBoyu = isim.length > 24 ? 58 : 72;
 
   return new ImageResponse(
     (
@@ -23,28 +23,79 @@ export default async function Image({ params }: { params: Promise<{ mahalle: str
           height: "100%",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "space-between",
           background: "#373643",
-          padding: 80,
+          padding: 72,
           fontFamily: "sans-serif",
+          position: "relative",
         }}
       >
+        {/* Marka imzası: sağ üstte topografik halkalar (site kartıyla aynı motif) */}
+        <svg
+          width="560"
+          height="560"
+          viewBox="0 0 560 560"
+          style={{ position: "absolute", top: -140, right: -120 }}
+        >
+          {[70, 120, 170, 220, 270].map((r, i) => (
+            <ellipse
+              key={r}
+              cx="280"
+              cy="280"
+              rx={r}
+              ry={r * 0.82}
+              fill="none"
+              stroke="#FBCA12"
+              strokeWidth="2"
+              strokeOpacity={0.28 - i * 0.045}
+            />
+          ))}
+          <circle cx="280" cy="280" r="7" fill="#FBCA12" fillOpacity="0.6" />
+        </svg>
+
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div
+            style={{
+              fontSize: 26,
+              fontWeight: 600,
+              color: "#FBCA12",
+              letterSpacing: 3,
+            }}
+          >
+            {`ERYAMAN · ${(mahalle?.ilce ?? "Etimesgut").toLocaleUpperCase("tr-TR")}`}
+          </div>
+          <div
+            style={{
+              marginTop: 18,
+              fontSize: puntoBoyu,
+              fontWeight: 700,
+              color: "#FFFFFF",
+              lineHeight: 1.1,
+              maxWidth: 900,
+            }}
+          >
+            {isim}
+          </div>
+          <div style={{ marginTop: 22, fontSize: 32, color: "rgba(255,255,255,0.8)" }}>
+            Satılık ve Kiralık Daire Fiyatları
+          </div>
+        </div>
+
         <div
           style={{
-            fontSize: 28,
-            fontWeight: 600,
-            color: "#FBCA12",
-            textTransform: "uppercase",
-            letterSpacing: 2,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            borderTop: "2px solid rgba(255,255,255,0.15)",
+            paddingTop: 28,
           }}
         >
-          {ustBilgi}
-        </div>
-        <div style={{ marginTop: 20, fontSize: 72, fontWeight: 700, color: "#FFFFFF" }}>
-          {isim}
-        </div>
-        <div style={{ marginTop: 24, fontSize: 28, color: "rgba(255,255,255,0.75)" }}>
-          Eryaman Emlak Rehberi
+          <div style={{ fontSize: 30, fontWeight: 700, color: "#FBCA12" }}>
+            {siteConfig.name}
+          </div>
+          <div style={{ fontSize: 30, fontWeight: 600, color: "#FFFFFF" }}>
+            {siteConfig.phoneDisplay}
+          </div>
         </div>
       </div>
     ),
