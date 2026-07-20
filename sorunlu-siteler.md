@@ -546,3 +546,8 @@ Scratchpad'de zayif-kuyruk.json (skor=gösterim×(poz-4); gösterim≥15, poz≥
 ### İNCE-KAYIT KUYRUĞU (2026-07-19) — zenginleştirme eksik yapılmış kayıtlar
 Özgün'ün tespiti doğrulandı: 500 kr altı 431 kayıt var; 290'ında tapu cache'inde KULLANILMAMIŞ zengin döküm duruyor (scratchpad/ince-kuyruk.json). Parti 6-7 (16 kayıt) işlendi. Kalan ~274, uzunluk sırasıyla işlenecek. Veri-kuru ~141 kayıt (nitelik 'Arsa'/'Betonarme Apartman' tek kelime ya da cache yok) → şişirilmeyecek, araştırma turu bekliyor.
 YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (nitelik: İlköğretim Okulu) ve 4-devlet-mahallesi-sitesi (nitelik: Okul/Üniversite) — ada/parsel eşleşmeleri yanlış olabilir, koordinat+parsel yeniden doğrulanmalı.
+
+### Araştırmalı parti 9 notları (2026-07-19)
+- **toki-konutlari (eryaman) ↔ oyak-sitesi AYNI PARSEL (46527/1)**: TOKİ≠OYAK; be 46527'yi 'Oyak Atakent2 Oyak Sitesi' diye adlandırıyor. TOKİ kaydı muhtemelen yanlış adlandırma/dupe — Özgün'e: Eryaman Mh.'de gerçekten 'TOKİ Konutları' denen ayrı bir yer var mı?
+- **ARTE MAYBAK**: yapı denetim kaydında (ankaraustayapidenetim.com) 'Maybak Göksu / ARTE MAYBAK' projesi, yüklenici MAYBAK İNŞ. AŞ, 37.000 m² inşaat alanı. Bizim goksu/maybak-konutlari (4 blok koop) ile AYNI OLDUĞU BELİRSİZ — ARTE yeni/ayrı proje olabilir. Aday olarak bekliyor; pin/adres kanıtı gerekli.
+- WebSearch yan ürünleri (ileriki kayıtlar için doğrulanabilir): Göksu Prestij=Fırat Life Style 192 daire/5 blok tamamı 4+1; Arkadya Göksu=Alpak Müh. 258 daire/6 blok; Meydan Göksu=~12.000 m² 130 daire+30 dükkan; Motto Göksu=Dinamik Grup 202 daire (kaynak: guncelprojebilgileri/projeskop/mottogoksu.com/meydaninsaat.com.tr).
