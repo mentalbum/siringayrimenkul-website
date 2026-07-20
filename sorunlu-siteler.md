@@ -532,7 +532,7 @@ Ayrıca: be ada numaraları ESKİYEBİLİYOR (Sude: be '46468' → gerçek 48056
 
 ### GSC sorgu keşifleri (2026-07-19, 28g CSV analizi) — araştırılacak 5 ad
 Gösterim alıyoruz ama kayıtları yok (kullanıcılar arıyor, sayfamız dolaylı çıkıyor):
-- **sarıgüllük sitesi** (12 göst.) — Tunahan Sarıgül'den FARKLI olabilir; nerede?
+- ✔ sarıgüllük ÇÖZÜLDÜ: ata/sari-gulluk-konutlari (46430) imiş; 'Sarıgüllük Sitesi' altAd köprüsü kuruldu (parti 13).
 - **nover westlife** (11) + "westlife sitesi" (4) — Yeni Batı bölgesi projesi olabilir
 - **sky göksu** (7) — Göksu'da proje adayı
 - **sorguçaspor sitesi ankara** (7) — spor kulübü kooperatifi?

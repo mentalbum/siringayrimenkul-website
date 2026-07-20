@@ -7,7 +7,7 @@
     "lng": 32.593142
   },
   "sinirGeoJSON": "siteler/ata/billur-sitesi-boundary.geojson",
-  "aciklama": "Billur Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 6.319 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"12 Katlı A Blok Ve 8 Katlı B Blok Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Billur Sitesi, Ata Mahallesi'nde kademeli ikiz bloklu bir konut sitesidir. TKGM kayıtlarına göre 6.319 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '12 Katlı A Blok ve 8 Katlı B Blok Betonarme Apartman' olarak tanımlar; aynı yerleşim adasını 18'er katlı üç bloklu Kozlar Towers ile paylaşır. İki farklı kat kademesi, aynı sitede farklı manzara ve fiyat katmanları sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44783",
