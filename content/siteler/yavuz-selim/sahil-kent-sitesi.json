@@ -7,7 +7,7 @@
     "lng": 32.610833
   },
   "sinirGeoJSON": "siteler/yavuz-selim/sahil-kent-sitesi-boundary.geojson",
-  "aciklama": "Sahil Kent Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.321 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"8 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sahil Kent Sitesi — aramalarda 'Sahilkent' yazımıyla da geçer — Yavuz Selim Mahallesi'nde sekiz apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '8 Blok Kargir Apartman' niteliğiyle kayıtlı 9.321 m²'lik kat mülkiyetli parsel üzerine kuruludur. Sekiz bloğun oturmuş komşuluk düzeni ve mahallenin yerleşik dokusundaki konumuyla bilinen bir adrestir; Utku Sitesi ile komşu banttadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45823",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Sahilkent Sitesi"
+  ]
 }
