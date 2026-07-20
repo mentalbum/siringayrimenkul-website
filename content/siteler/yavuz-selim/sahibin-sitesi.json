@@ -7,7 +7,7 @@
     "lng": 32.6157671
   },
   "sinirGeoJSON": "siteler/yavuz-selim/sahibin-sitesi-boundary.geojson",
-  "aciklama": "Sahibin Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 4.574 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"8 Blok Dubleks Ev\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sahibin Sitesi — yerel emlak kayıtlarında 'Sahibim Sitesi' yazımıyla geçer — Yavuz Selim Mahallesi'nin bahçeli kooperatif kuşağında, apartman değil dubleks evlerden oluşan bir sitedir. TKGM kayıtlarına göre site, tapuda '8 Blok Dubleks Ev' niteliğiyle kayıtlı 4.574 m²'lik kat mülkiyetli parsel üzerine kuruludur. Sekiz dubleksin yatay dokusu, müstakil hissiyatlı yaşam arayan aileler için mahallenin nadir profillerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19525",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Sahibim Sitesi"
+  ]
 }
