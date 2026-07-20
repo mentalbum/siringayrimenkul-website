@@ -551,3 +551,10 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - **toki-konutlari (eryaman) ↔ oyak-sitesi AYNI PARSEL (46527/1)**: TOKİ≠OYAK; be 46527'yi 'Oyak Atakent2 Oyak Sitesi' diye adlandırıyor. TOKİ kaydı muhtemelen yanlış adlandırma/dupe — Özgün'e: Eryaman Mh.'de gerçekten 'TOKİ Konutları' denen ayrı bir yer var mı?
 - **ARTE MAYBAK**: yapı denetim kaydında (ankaraustayapidenetim.com) 'Maybak Göksu / ARTE MAYBAK' projesi, yüklenici MAYBAK İNŞ. AŞ, 37.000 m² inşaat alanı. Bizim goksu/maybak-konutlari (4 blok koop) ile AYNI OLDUĞU BELİRSİZ — ARTE yeni/ayrı proje olabilir. Aday olarak bekliyor; pin/adres kanıtı gerekli.
 - WebSearch yan ürünleri (ileriki kayıtlar için doğrulanabilir): Göksu Prestij=Fırat Life Style 192 daire/5 blok tamamı 4+1; Arkadya Göksu=Alpak Müh. 258 daire/6 blok; Meydan Göksu=~12.000 m² 130 daire+30 dükkan; Motto Göksu=Dinamik Grup 202 daire (kaynak: guncelprojebilgileri/projeskop/mottogoksu.com/meydaninsaat.com.tr).
+
+### Araştırmalı parti 10 notları (2026-07-19)
+- ✔ **46533 mega-adası ÇÖZÜLDÜ**: tapudaki '11 Blok' = Günötesi 4 + Işıkkent 3 + Yeşil Manolya 4 (be dökümü birebir). eryaman-evleri bu adadan ÇIKARILDI.
+- ✔ **eryaman-evleri 46533→46539/1 düzeltildi** (be + TKGM '9 Blok Kargir' 37.690 m²; Kaya Evleri ile paylaşım 5+4). Boundary+koordinat yenilendi.
+- **Düşkent ada çelişkisi**: bizim tapu 46223/3 (3 blok, 6.682) ↔ be başlığı '46423 Ada' (Elit Yaşam 3 adası!). be blokları '5.A/5.B/5.C'. Pin doğrulaması gerekli.
+- **İkinci Doğankaya adayı**: be 46532'de de 'Doğankaya Sitesi' gösteriyor (bizde 46542 kayıtlı; 46532'de Akkonak var). Ada mı çift, ad mı hatalı — pin gerekli.
+- WebSearch yan ürünü: Neva Prestij Yapı ailesi (Armonia Residence 650 daire, Neva Prestij Metro 100, Neva Panora Metro 100 — nevaprestij.com). Neva Palas bağlantısı İSPATSIZ (yazılmadı); Neva Panora kaydına sırası gelince kullanılabilir.

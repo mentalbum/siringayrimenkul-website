@@ -3,14 +3,14 @@
   "slug": "eryaman-evleri",
   "mahalleSlug": "eryaman",
   "koordinat": {
-    "lat": 39.9768384,
-    "lng": 32.6250881
+    "lat": 39.971562,
+    "lng": 32.625687
   },
   "sinirGeoJSON": "siteler/eryaman/eryaman-evleri-boundary.geojson",
-  "aciklama": "Eryaman Evleri, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 49.844 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"11 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eryaman Evleri, Eryaman Mahallesi'nin güneyinde adını çevresindeki kesime de veren yerleşik bir kooperatif sitesidir. TKGM kayıtlarına göre üzerinde bulunduğu parsel, tapuda '9 Blok Kargir Apartman' niteliğiyle kayıtlı 37.690 m²'lik kat mülkiyetli tek parseldir ve bu parseli komşusu Kaya Evleri Sitesi ile paylaşır — yerel emlak kayıtları Eryaman Evleri'nin payına beş bloğu yazar. Geniş ada düzeni, oturmuş yeşili ve bölgeye ad olmuş kimliğiyle mahallenin bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
-      "no": "46533",
+      "no": "46539",
       "parsel": "1"
     }
   ],
