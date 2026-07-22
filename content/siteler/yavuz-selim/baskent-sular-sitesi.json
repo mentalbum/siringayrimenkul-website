@@ -7,7 +7,7 @@
     "lng": 32.614631
   },
   "sinirGeoJSON": "siteler/yavuz-selim/baskent-sular-sitesi-boundary.geojson",
-  "aciklama": "Başkent Sular Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 4.568 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"16 Adet Dubleks Ev\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Başkent Sular Sitesi, Yavuz Selim Mahallesi'nde apartman değil ev ölçeğinde kurulmuş bir sitedir: tapu kaydı yapıyı \"16 Adet Dubleks Ev\" olarak tanımlar ve yaklaşık 4.568 m²'lik kat mülkiyetli parselde ev başına ortalama 285 m² dolayında parsel alanı düşer. Sitenin ayırt edici yanı konumunda gizli — aynı yapı adasını Yükselen ve Göksu siteleriyle paylaşır ve üç komşu parselin tamamı tapuda dubleks ya da müstakil ev olarak kayıtlıdır. Böylece tek bir adada, yaklaşık 20,5 dönüm üzerinde toplam 70 ev kesintisiz bir yatay yerleşim oluşturur; zemine basan bir ev arayanlar için bu bütünlük, tekil bir dubleks parselinden daha fazlasını ifade eder. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19524",

@@ -7,7 +7,7 @@
     "lng": 32.686251
   },
   "sinirGeoJSON": "siteler/cumhuriyet/arissa-botanik-boundary.geojson",
-  "aciklama": "Arissa Botanik, Yeni Batı'nın Botanik metro çevresinde Arissa İnşaat'ın ('yeni nesil kooperatif' modeli) anahtar teslimi yapılmış projesidir; ilanlarda geniş 3+1 daireleri (~170 m²) öne çıkar ve yeşil dokusuyla tanıtılır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Arissa Botanik, Arissa İnşaat'ın 'yeni nesil kooperatif' modeliyle Yeni Batı'nın Botanik metro çevresinde geliştirdiği, Kasım 2023'te anahtar teslimi yapılmış bir projedir. Tapu kaydı yapıyı net tarif eder: 15 katlı A Blok konutları taşır, 3 katlı B Blok tapuda dükkan olarak geçer — sitenin ticari yüzü ayrı blokta toplanmıştır. Yaklaşık 7 dönümlük kat mülkiyetli parselde (TKGM) yalnızca 38 daire olması, geniş dairelerin az komşuyla paylaşıldığı ferah bir düzen demek: müteahhidin proje sayfası net 145 m² daireleri, akıllı ev teknolojilerini ve yeşil ağırlıklı peyzajı öne çıkarır; ilanlarda aynı daireler brüt ~170 m² 3+1 olarak anılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43264",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
+    "~7.002 m² parsel (TKGM)",
     "Arissa İnşaat — yeni nesil kooperatif modeli",
     "Anahtar teslimi yapıldı",
-    "Geniş 3+1 (~170 m²) tipler",
     "Botanik metro çevresi / Yeni Batı"
   ],
   "adres": "2424. Sokak, Yeni Batı, Yenimahalle/Ankara",

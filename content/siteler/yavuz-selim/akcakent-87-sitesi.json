@@ -7,7 +7,7 @@
     "lng": 32.61022
   },
   "sinirGeoJSON": "siteler/yavuz-selim/akcakent-87-sitesi-boundary.geojson",
-  "aciklama": "Akçakent 87 Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 12.989 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Akçakent 87 Sitesi, Yavuz Selim Mahallesi'nde, semt rehberlerinde kısaca 'Akçakent Sitesi' adıyla da geçen yerleşik bir konut sitesidir. Tapu kaydı yapıyı '10 Blok Kargir Apartman' olarak tanımlar; TKGM'ye göre yaklaşık 12.989 m²'lik tek parsel kat mülkiyetlidir. On bloğun 13 dönüme yakın bu alana dağılması, blokların birbirini sıkıştırmadığı ferah bir oturum demektir. Sitenin küçük bir imzası da blok adlarında saklı: bloklar alışıldık A-B-C düzeni yerine 7-A'dan 7-L'ye uzanan '7' ön ekli harflerle anılır. Mahalle rehberlerinde site, Yavuz Selim konutları kuşağının içinde gösterilir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45831",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Akçakent Sitesi"
+  ]
 }

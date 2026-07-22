@@ -7,7 +7,7 @@
     "lng": 32.615911
   },
   "sinirGeoJSON": "siteler/yavuz-selim/ilkiz-sitesi-boundary.geojson",
-  "aciklama": "İlkiz Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.860 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok.Oluşan Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yavuz Selim Mahallesi'nin kadastroda Eryaman üzerinden kayıt gören kesimindeki İlkiz Sitesi, tapuda \"9 blok kargir apartman\" niteliğiyle tanımlıdır. Yaklaşık 5.860 m²'lik parseli dokuz bloğun paylaşması, siteye büyük toplu projelerden farklı, mahalle ölçeğinde kompakt bir karakter kazandırır. Hemen batısında 16 bloklu İlkiz 2 Sitesi yer alır; iki site birlikte 25 bloğa ulaşan bir İlkiz kümesi oluşturur — haritalarda bu sitenin \"İlkiz 1 Sitesi\" adıyla da geçmesi bundandır. Parsel TKGM kayıtlarında kat mülkiyetine geçmiş durumda; yani tapu tarafı netleşmiş, kat mülkiyetli bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19526",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "İlkiz 1 Sitesi"
+  ]
 }

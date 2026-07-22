@@ -555,6 +555,8 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 ### Araştırmalı parti 10 notları (2026-07-19)
 - ✔ **46533 mega-adası ÇÖZÜLDÜ**: tapudaki '11 Blok' = Günötesi 4 + Işıkkent 3 + Yeşil Manolya 4 (be dökümü birebir). eryaman-evleri bu adadan ÇIKARILDI.
 - ✔ **eryaman-evleri 46533→46539/1 düzeltildi** (be + TKGM '9 Blok Kargir' 37.690 m²; Kaya Evleri ile paylaşım 5+4). Boundary+koordinat yenilendi.
-- **Düşkent ada çelişkisi**: bizim tapu 46223/3 (3 blok, 6.682) ↔ be başlığı '46423 Ada' (Elit Yaşam 3 adası!). be blokları '5.A/5.B/5.C'. Pin doğrulaması gerekli.
+- ✔ Düşkent/Övgü ÇÖZÜLDÜ (parti 15 ajanı): 46223 adasında /3=Düşkent (3 blok), /2=Övgü İletişim (2 blok, 4.109 m² — TKGM nokta kanıtlı). Övgü'nün parseli+sınırı+koordinatı düzeltildi (sınır dosyası Düşkent'inkinin kopyasıymış). be'nin '46423' etiketi hatalıydı.
 - **İkinci Doğankaya adayı**: be 46532'de de 'Doğankaya Sitesi' gösteriyor (bizde 46542 kayıtlı; 46532'de Akkonak var). Ada mı çift, ad mı hatalı — pin gerekli.
 - WebSearch yan ürünü: Neva Prestij Yapı ailesi (Armonia Residence 650 daire, Neva Prestij Metro 100, Neva Panora Metro 100 — nevaprestij.com). Neva Palas bağlantısı İSPATSIZ (yazılmadı); Neva Panora kaydına sırası gelince kullanılabilir.
+- **Sermina Life mahalle şüphesi (parti 15)**: bizde Ata, be 'Susuz Mh. Konutları' grubunda gösteriyor — mahalle sınırı P-i-P testiyle doğrulanmalı.
+- Havayolları be sayfası bloklarını 2-A..2-D, Akçakent'i 7-A..7-L olarak veriyor (numaralı kooperatif kodları — metinlere işlendi).

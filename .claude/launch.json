@@ -9,6 +9,12 @@
       "autoPort": true
     },
     {
+      "name": "sanal-drone-deneme",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["-m", "http.server", "4190", "-d", "/Users/ozgun/sanal-drone-deneme"],
+      "port": 4190
+    },
+    {
       "name": "hazal-kurgan-tattoo",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4180", "-d", "/Users/ozgun/hazal-kurgan"],
