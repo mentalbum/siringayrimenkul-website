@@ -22,5 +22,6 @@
     "Yerel kayıtlarda 'Hotki Residance' adıyla da geçer",
     "Devlet Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-23"
+  "zenginlestirildi": "2026-07-23",
+  "sinirGeoJSON": "siteler/devlet/hotki-meydan-boundary.geojson"
 }

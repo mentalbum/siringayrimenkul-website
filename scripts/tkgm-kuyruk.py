@@ -28,13 +28,11 @@ DOGRUDAN = [
 
 # (etiket, lat, lng) — koordinattan parsel bulunur; kayda işleme elle yapılır.
 NOKTA = [
-    ("mercankent",   40.001236, 32.596409),
     ("altas-relax",  39.967214, 32.654429),
-    ("hurev",        40.000053, 32.601020),
+    ("hurev-atalife-ayrimi", 40.000053, 32.601020),
     ("ritim",        39.993945, 32.615106),
     ("ma1-tower",    40.007739, 32.636384),
     ("pozitif-life", 39.964436, 32.609806),
-    ("eser-yapi",    40.003604, 32.602072),
 ]
 
 

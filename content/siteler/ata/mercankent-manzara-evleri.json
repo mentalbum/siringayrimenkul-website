@@ -2,7 +2,7 @@
   "isim": "Mercankent Manzara Evleri",
   "slug": "mercankent-manzara-evleri",
   "mahalleSlug": "ata",
-  "aciklama": "Mercan Kent Manzara Evleri, Ata Mahallesi'nin Etikent kesiminde yer alan iki bloklu bir konut sitesidir. Yerel emlak kayıtlarına göre yerleşim yaklaşık 7,3 dönümlük bir alana oturur; adı gibi manzaraya dönük, batı yamacındaki konumuyla bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mercan Kent Manzara Evleri, Ata Mahallesi'nin Etikent kesiminde yer alan iki bloklu bir konut sitesidir. Yenimahalle Belediyesi kent rehberi kayıtlarına göre sitenin parseli 7.955 m² tapu yüzölçümüne sahiptir; adı gibi manzaraya dönük, batı yamacındaki konumuyla bilinir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 40.001236,
     "lng": 32.596409
@@ -12,8 +12,14 @@
   ],
   "ozellikler": [
     "2 blok",
-    "Yaklaşık 7,3 dönümlük yerleşim (yerel kayıtlar)",
+    "7.955 m² tapu yüzölçümü (belediye kent rehberi)",
     "Etikent kesimi — Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-23"
+  "zenginlestirildi": "2026-07-23",
+  "adalar": [
+    {
+      "no": "44780",
+      "parsel": "2"
+    }
+  ]
 }

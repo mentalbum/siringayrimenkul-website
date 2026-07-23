@@ -642,3 +642,19 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - **Kira sözleşmesi örneği sayfası** (14 sorgu): indirilebilir PDF/Word şablonu hukuki sorumluluk taşır — Özgün kararı. Alternatif: "madde madde açıklamalı örnek" rehberi (şablonsuz) yazılabilir.
 - **Kira artışı aracına aylık TÜFE bloğu** (ay-bazlı sorgular): aylık el bakımı ister — Özgün'ün "aylık yayın sistemi istemem" çizgisine takılabilir; TÜİK verisi otomatik çekilebilirse değerlendirilir.
 - Rakip-marka ve dua sorguları bilinçli atlandı; alıcı-ağırlıklı 276 sorgu mevcut mahalle/site sayfalarınca karşılanıyor.
+
+## Belediye kent rehberi keşfi (2026-07-24) — yeni kaynaklar + 4 yeni kart
+İki belediye sistemi TKGM'den bağımsız parsel verisi veriyor (reçeteler memory'de): Etimesgut KEOS (geometri+alan; tarayıcı bağlamı şart) ve Yenimahalle TeoKbs (nokta→parsel + NİTELİK + tapu yüzölçümü; curl'lenebilir, yalnız Ata/Susuz vb. batı mahalleleri kapsar).
+
+### Çözülenler
+- Mercan Kent = **44780/2** (ARSA, 7.955 m² tapu yüzölçümü — Yenimahalle KBS + be çifte teyit) → kayda işlendi.
+- Eser Yapı = **44752/1** ("11 katlı beton apartman ve arsası", 13.740 m²; be 'Eserkent Sitesi' 7-A/B/C) → kayda işlendi.
+- Hotki Meydan 18684/1 → KEOS geometrisiyle boundary yazıldı, haritaya girdi.
+- Cumhuriyet Sitesi 46382/1 → KEOS alanı ~13.697 m² → metin zenginleşti (nitelik hâlâ TKGM'de).
+
+### Yeni Özgün kartları
+- **Ata Life ↔ Hür-Ev KYK (44774/3):** Hürev'in Yandex koordinatı KBS'de Ata Life'ın parseline (44774/3, ARSA 12.748) düşüyor; be'de 'Hür-Ev KYK (44774 Ada)' hedefe 6,5 m. Ata Life, eski Hür-Ev kooperatif arsasının yeni projesi mi, yoksa iki ayrı yerleşim mi? (Hürev'e ada YAZILMADI.)
+- **Konut Sitesi (YS) ↔ Atadostlar:** be 'Atadostlar (46231-46232 birleşik)' diyor; bizim atadostlar kaydı 46232/1'de, 'Konut Sitesi' kaydı 46231/1'de (TKGM: A-B-C 3 kargir apartman = Atadostlar 1-A/B/C bloklarıyla uyumlu). 'Konut Sitesi' jenerik POI adı — gerçekte Atadostlar'ın 1. adası olabilir. (KEOS geometrisi scratchpad'te; kart çözülmeden boundary yazılmıyor.)
+- **Ritim Eryaman ↔ Başkent Sular (18477):** Ritim koordinatı Başkent Sular kaydımızın 25 m yanı; Ritim 'Özer Grup 96 konut kentsel dönüşüm' — Başkent Sular'ın yıkılıp yeniden yapımı olabilir. Öyleyse birleştirme+redirect gerekir.
+- **Ma1 Tower ada çelişkisi:** KBS nokta sorgusu 64517/1 (Arsa 5.534) diyor, be 63362 (10 m mesafe) diyor; OSM durakları 450 m uzakta. Kentsel dönüşümde çifte yenileme olabilir — TKGM kota açılınca nokta sorgusuyla kesinleştirilecek, şimdilik ada yazılmadı.
+- Altaş Relax zayıf aday: be 46331 adası (92 m, 43,7 dönümlük dev ada) — tek kaynak, yazılmadı.
