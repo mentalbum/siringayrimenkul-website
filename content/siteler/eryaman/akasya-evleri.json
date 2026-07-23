@@ -7,7 +7,7 @@
     "lng": 32.618585
   },
   "sinirGeoJSON": "siteler/eryaman/akasya-evleri-boundary.geojson",
-  "aciklama": "Akasya Evleri, Eryaman Mahallesi'nde A ve B bloklarından oluşan, iki bloklu derli toplu bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Akasya Evleri, Eryaman Mahallesi'nde A ve B bloklarından oluşan, iki bloklu derli toplu bir sitedir. TKGM kayıtlarına göre iki bloğun oturduğu parsel yaklaşık 7.589 m² — 7,5 dönümün üzerinde — bir alana karşılık gelir; iki blok için bu genişlik, siteye bahçeli ve ferah bir yerleşim kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45793",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "2 blok (A ve B)",
+    "Yaklaşık 7,5 dönümlük ferah parsel (TKGM)",
     "Eryaman Mahallesi'nin yerleşik sitelerinden"
   ],
   "zenginlestirildi": "2026-07-15"

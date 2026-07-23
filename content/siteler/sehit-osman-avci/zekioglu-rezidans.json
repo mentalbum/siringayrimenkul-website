@@ -7,11 +7,16 @@
     "lng": 32.6571163
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/zekioglu-rezidans-boundary.geojson",
-  "aciklama": "Zekioğlu Rezidans, Ankara Etimesgut'a bağlı Şehit Osman Avcı Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Şehit Osman Avcı Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Zekioğlu Rezidans, Şehit Osman Avcı Mahallesi'nde yer alan, rezidans konseptli bir yapıdır. TKGM kayıtlarına göre yapının bulunduğu parsel yaklaşık 5.247 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46657",
       "parsel": "1"
     }
+  ],
+  "ozellikler": [
+    "Rezidans konseptli yapı",
+    "Yaklaşık 5,2 dönümlük parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
   ]
 }

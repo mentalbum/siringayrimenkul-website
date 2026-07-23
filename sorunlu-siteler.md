@@ -584,3 +584,9 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - **Turuncu ÇÖZÜLEMEDİ**: be'nin kendi pini de 44776/2 (Akdam parseli) içine düşüyor — Turuncu blokları (2-C..2-F) muhtemelen fiilen Akdam parselinde (tapu niteliği yalnız A+B sayıyor; tapu eksik/güncellenmemiş olabilir) ya da ayrı parselde ama pin kaymış. TABELA sorusu.
 - **Mes Polaris netleşemedi**: koordinatı 62662/2 'Spor Tesisi'ne düşüyor; komşu 62662/1 (Arsa 7.235) ve /3 (Arsa 4.209) Kİ-arsa. Proje muhtemelen bunlardan birinde — pin/tabela teyidi gerekli.
 - **Park Sera dupe olasılığı GÜÇLENDİ**: kayıt koordinatı da Arissa Botanik'in 43264/7'sine düşüyor — Park Sera ≈ Arissa Botanik'in diğer adı olabilir. Özgün'e.
+
+## Lale Kent Sitesi (ŞOA) — koordinat ofis parseline düşüyor (2026-07-23)
+Kayıt: sehit-osman-avci/lale-kent-sitesi, adalar 46665/3. TKGM nokta sorgusu (kayıt koordinatı) → Şeker kad. 46665/3 "3 Katlı Betonarme Ofis İşyeri Ve Arsası", 1.000 m². "2 bloklu konut sitesi" tanımıyla uyumsuz — ya koordinat/parsel yanlış ya da siteye bitişik ofis parseli işaretlenmiş. Özgün'e: Lale Kent'in yeri/blokları?
+
+## Angora adı iki ayrı yerde (2026-07-23)
+Bizim kayıt: goksu/angora-sitesi — Türkonut Göl Bölgesi mega-parseli üyesi (koordinat parsel içinde, komşularıyla tutarlı yazıldı). bilgiemlak'ta ise "Güzelkent Villalar Angora Sitesi no:23 (19516 Ada)" — Yavuz Selim, 22 villa, 6.059 m², 39.9961/32.6032. İki ayrı yerleşim olabilir; YS Güzelkent'teki Angora bizde YOK → yeni kayıt adayı (Özgün teyidi: Göksu'daki "Angora" tabelası gerçek mi?).
