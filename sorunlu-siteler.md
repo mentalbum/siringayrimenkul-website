@@ -623,3 +623,6 @@ goksu/enday-sitesi, seyh-samil/turk-konut, cumhuriyet/botanik-sitesi, ata/kanat-
 
 ### TKGM bekleyen nokta sorguları (API bugün 403 — kota)
 hotki-meydan (18684/1 teyidi), altas-relax-line, hurev, mercankent (44780 parsel no), ritim-eryaman, ma1-tower, pozitif-life, eser-yapi, polsan-gozde 46482/1 canlı teyit. Kota açılınca koşulacak; koordinatlar Yandex/yerel rehber kaynaklı eklendi.
+
+## Nover WestLife koordinatı — kaynaklar çelişkili (2026-07-23)
+Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor — bu nokta Eryaman'ın DOĞUSU (ŞOA/Şeker tarafı); oysa tüm proje kaynakları Yeni Batı / 5412. Sokak / Necip Fazıl Cad. diyor (batı yakası). Yandex kaydı yanlış konumlanmış olabilir → koordinat EKLENMEDİ. Sky Göksu için de Yandex'te doğrudan kayıt yok (adres: Sancak Sok. No:3). İkisi de sahada/harita üzerinde teyit bekliyor.
