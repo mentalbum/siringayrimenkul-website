@@ -16,6 +16,7 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/altay/frekans-cadde", destination: "/mahalleler/altay/frekans-eryaman", permanent: true },
       { source: "/mahalleler/altay/kutlutas-villalari", destination: "/mahalleler/altay/kutlutas-sitesi", permanent: true },
       { source: "/mahalleler/ata/bilgeturk-manzara-evleri", destination: "/mahalleler/ata", permanent: true },
+      { source: "/mahalleler/ata/karkonut", destination: "/mahalleler/ata/anemon-sitesi", permanent: true },
       { source: "/mahalleler/ata/erkent-umut-sitesi", destination: "/mahalleler/ata/beloren-manzara-evleri", permanent: true },
       { source: "/mahalleler/ata/prestige-park-konutlari", destination: "/mahalleler/ata/prestij-park-konutlari", permanent: true },
       { source: "/mahalleler/ata/selvi-evleri", destination: "/mahalleler/ata/selvi-evleri-sitesi", permanent: true },
