@@ -160,7 +160,11 @@ export default function EvSatmakPage() {
             &quot;pazarlıklı ev&quot; izlenimi verir. Emsal satışlara dayanan gerçekçi bir fiyat,
             derli toplu bir sunum ve ciddi alıcının hızla ayrıştırılması — Eryaman&apos;da
             satışları hızlandıran üç şey budur. Eviniz bir süredir satılmıyorsa da başlangıç
-            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek.
+            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek —{" "}
+            <Link href="/blog/eviniz-satilmiyor-mu" className="font-semibold text-gold-dark hover:underline">
+              en sık 7 nedeni bu rehberde
+            </Link>{" "}
+            topladık.
           </p>
         </Reveal>
       </section>
