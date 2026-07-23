@@ -7,7 +7,7 @@
     "lng": 32.642659
   },
   "sinirGeoJSON": "siteler/altay/mesa-bloklari-boundary.geojson",
-  "aciklama": "Mesa Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında, üç ayrı yerleşim adasına yayılmış bir konut kümesidir. Age, Aktürk ve Sutek kümeleriyle aynı kuşaktadır; 1. Etap'ın oturmuş, yeşil dokulu çevresini paylaşır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mesa Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında, üç ayrı yerleşim adasına yayılmış bir konut kümesidir; Age, Aktürk ve Sutek kümeleriyle aynı kuşaktadır. Tapu kayıtları kümeyi net tarif eder: üç parselde sırasıyla üç bloklu, iki bloklu ve iki bloklu kargir apartmanlar — toplam yedi blok, üç adanın toplamı yaklaşık 25 dönüm. 1. Etap'ın oturmuş, yeşil dokulu çevresini paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17312",
@@ -23,10 +23,10 @@
     }
   ],
   "ozellikler": [
-    "3 ayrı yerleşim adası",
-    "Eryaman 1. Etap kooperatif kuşağı",
+    "3 ayrı yerleşim adası — toplam 7 blok (tapu kayıtları)",
+    "Üç adanın toplamı ~25 dönüm (TKGM)",
     "Age, Aktürk ve Sutek kümelerine komşu",
-    "Altay Mahallesi"
+    "Eryaman 1. Etap kooperatif kuşağı — Altay"
   ],
   "zenginlestirildi": "2026-07-15"
 }

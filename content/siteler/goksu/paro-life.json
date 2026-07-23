@@ -7,7 +7,7 @@
     "lng": 32.642382
   },
   "sinirGeoJSON": "siteler/goksu/paro-life-boundary.geojson",
-  "aciklama": "Paro Life, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim ve dönüşüm bölgesinde, kendi yerleşim adasında konumlanan modern bir konut projesidir; 2. İnönü Caddesi üzerindeki konumuyla Tulip Life'ın karşı komşusudur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Paro Life, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim ve dönüşüm bölgesinde, kendi yerleşim adasında konumlanan modern bir konut projesidir; 2. İnönü Caddesi üzerindeki konumuyla Tulip Life'ın karşı komşusudur. Tapu kaydı yapıyı net tarif eder: yaklaşık 7.066 m²'lik parsel üzerinde on altı katlı betonarme mesken — bölgenin yeni, yüksek katlı silüetinin parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63406",
@@ -15,8 +15,9 @@
     }
   ],
   "ozellikler": [
-    "Kendi yerleşim adasında",
-    "2. İnönü Caddesi üzeri",
+    "16 katlı — tapu nitelik kaydı (TKGM)",
+    "Kendi yerleşim adasında — yaklaşık 7 dönüm",
+    "2. İnönü Caddesi üzeri — Tulip Life karşısı",
     "Göksu kentsel gelişim ve dönüşüm bölgesi"
   ],
   "alternatifAdlar": [

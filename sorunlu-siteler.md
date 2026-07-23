@@ -596,3 +596,6 @@ Kayıt cumhuriyet/10-botanik-evleri, adalar 43264/8 → TKGM 404. Aynı adada 43
 
 ## Çığlık ↔ Günebakan (Cumhuriyet) — aynı parsel 43263/3 (2026-07-23)
 İki kayıt da adalar=43263/3 (Yuva kad.); Günebakan'ın koordinatı da TKGM nokta sorgusunda aynı parsele düştü. Tapu: "Betonarme Apartman", 8.025 m² — tekil nitelik, iki ayrı site için tek tapu. Dupe ya da tabela farkı olabilir. Özgün'e: Çığlık ve Günebakan aynı yerleşim mi, ayrı mı?
+
+## İkinci Korukent sorusu KAPANDI (2026-07-23)
+guzelkent/korukent-sitesi zaten 19517/1 adasında kayıtlıymış; TKGM tapusu "16 Bl. Kargir Dub.Ev", 5.130 m² doğruladı. be'deki "Korukent no:15 (19517 Ada)" bununla aynı yerleşim — ayrı kayıt AÇILMAYACAK.
