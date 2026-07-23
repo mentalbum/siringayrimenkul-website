@@ -7,7 +7,7 @@
     "lng": 32.604614
   },
   "sinirGeoJSON": "siteler/devlet/mavikent-sitesi-boundary.geojson",
-  "aciklama": "Mavikent Sitesi, Eryaman Devlet Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre 7.143 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda iki kârgir apartman kayıtlı; bloklar yerel kayıtlarda A ve B olarak geçiyor. Az bloklu, sakin bir site profili çiziyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "aciklama": "Mavikent Sitesi, Eryaman Devlet Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 7.143 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve tapuda iki kargir apartman kayıtlıdır; bloklar yerel kayıtlarda A ve B olarak geçer — iki blok için 7 dönümlük alan, bahçesi bol bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18691",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "7.143 m² tek parsel (TKGM)",
-    "2 blok (A ve B)",
-    "Kat mülkiyetli parsel (TKGM)",
+    "2 blok (A, B) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 7,1 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Butik ölçekli, bahçeli yerleşim",
     "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15"

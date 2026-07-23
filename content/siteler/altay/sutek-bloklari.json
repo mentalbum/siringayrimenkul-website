@@ -7,7 +7,7 @@
     "lng": 32.641891
   },
   "sinirGeoJSON": "siteler/altay/sutek-bloklari-boundary.geojson",
-  "aciklama": "Sutek Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Age, Aktürk ve Mesa kümeleriyle aynı kuşaktadır. (Tunahan'daki 5. Etap Sutek Sitesi ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sutek Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Ana parselinde tapu, yaklaşık 5.660 m²'lik alanda dört kargir apartman kaydeder. Age, Aktürk ve Mesa kümeleriyle aynı kuşaktadır; 1. Etap'ın oturmuş, yeşil dokulu çevresini paylaşır. (Tunahan'daki Sutek Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17541",
@@ -15,10 +15,10 @@
     }
   ],
   "ozellikler": [
-    "Yerel kayıtlarda 5 adalık küme",
+    "Yerel kayıtlarda 5 adalık küme — ana parselde 4 apartman (tapu)",
     "Eryaman 1. Etap kooperatif kuşağı",
-    "Tunahan'daki Sutek Sitesi'nden ayrı yerleşim",
-    "Altay Mahallesi"
+    "Age, Aktürk ve Mesa kümelerine komşu",
+    "Tunahan'daki Sutek Sitesi'nden ayrı yerleşim — Altay"
   ],
   "zenginlestirildi": "2026-07-15"
 }

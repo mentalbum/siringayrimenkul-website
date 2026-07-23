@@ -7,7 +7,7 @@
     "lng": 32.60633
   },
   "sinirGeoJSON": "siteler/devlet/demirkent-sitesi-boundary.geojson",
-  "aciklama": "Demirkent Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"4 Blok Betonarme Apartman\" niteliğiyle kayıtlı 6.950 m²'lik kat mülkiyetli tek parselin üzerine kurulu. Yerel emlak kayıtlarında bloklar A-12, B-12, C-12 ve D olarak sıralanıyor — dört blok. Demirkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat ve iç durumla netleşir — birlikte değerlendirelim.",
+  "aciklama": "Demirkent Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '4 blok betonarme apartman' niteliğiyle kayıtlı yaklaşık 6.950 m²'lik kat mülkiyetli tek parsel üzerine kuruludur; yerel kayıtlarda blokları A-12, B-12, C-12 ve D olarak geçer. Devlet Mahallesi'nin oturmuş, bahçeli dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18676",
@@ -15,11 +15,8 @@
     }
   ],
   "ozellikler": [
-    "6.950 m² tek parsel (TKGM)",
-    "18676 Ada",
-    "4 blok (A-12, B-12, C-12, D)",
-    "Devlet Mahallesi'nin yerleşik sitelerinden",
-    "Kat mülkiyetli parsel (TKGM)",
+    "4 blok (A-12, B-12, C-12, D) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 7 dönümlük kat mülkiyetli tek parsel (TKGM)",
     "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
