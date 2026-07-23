@@ -7,7 +7,7 @@
     "lng": 32.608777
   },
   "sinirGeoJSON": "siteler/guzelkent/postakent-sitesi-boundary.geojson",
-  "aciklama": "Postakent Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, 5.272 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarındaki blok düzeni mahallede alışılmışın tersine: bloklar 2, 4, 6 ve 8 olarak yalnızca çift sayılarla numaralanmış — dört blok. (Güzelkent'in birçok sitesinde tek sayılı seriler görülür; Postakent bu geleneğin ayrık örneği.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı emsallerle birlikte netleştirelim.",
+  "aciklama": "Postakent Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 5.272 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve kargir apartman niteliğiyle kayıtlıdır; yerel emlak kayıtlarındaki blok düzeni mahallede alışılmışın dışındadır — bloklar 2, 4, 6 ve 8 olmak üzere çift sayılı seriyle anılır. Güzelkent'in az katlı, sakin dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18663",
@@ -15,11 +15,9 @@
     }
   ],
   "ozellikler": [
-    "5.272 m² tek parsel (TKGM)",
     "4 blok (2, 4, 6, 8 — çift sayılı seri)",
-    "Güzelkent'in yerleşik sitelerinden",
-    "Kat mülkiyetli parsel (TKGM)",
-    "Güzelkent — kadastroda Eryaman kaydı"
+    "Yaklaşık 5,3 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Güzelkent'in yerleşik sitelerinden — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

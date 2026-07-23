@@ -7,7 +7,7 @@
     "lng": 32.6097345
   },
   "sinirGeoJSON": "siteler/yesilova/may-tower-boundary.geojson",
-  "aciklama": "May Tower, May Ankara A.Ş. imzalı, 12 katlı tek bloktan oluşan tamamlanmış bir konut projesidir; Yeşilova Mahallesi 4017. Sokak üzerindedir ve 48 adet 3+1 daire (yaklaşık 127 m² brüt) barındırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "May Tower, May Ankara A.Ş. imzalı, 12 katlı tek bloktan oluşan tamamlanmış bir konut projesidir; Yeşilova Mahallesi 4017. Sokak üzerindedir ve 48 adet 3+1 daire (yaklaşık 127 m² brüt) barındırır. TKGM kayıtlarına göre yapının parseli yaklaşık 4.076 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47538",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "12 katlı tek blok",
-    "48 daire (3+1, ~127 m² brüt)",
+    "12 katlı tek blok — 48 daire (3+1, ~127 m² brüt)",
     "Müteahhit: May Ankara A.Ş.",
+    "Yaklaşık 4,1 dönümlük parsel (TKGM)",
     "4017. Sokak — Yeşilova Mahallesi"
   ],
   "zenginlestirildi": "2026-07-17"

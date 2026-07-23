@@ -7,7 +7,7 @@
     "lng": 32.649261
   },
   "sinirGeoJSON": "siteler/altay/eryaman-park-evleri-boundary.geojson",
-  "aciklama": "Eryaman Park Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; adasını Ata, Eren, Gökay, Nursaray ve Örnek apartmanları ile Vatan Sitesi'nin Menekşe bloğuyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eryaman Park Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; adasını Ata, Eren, Gökay, Nursaray ve Örnek apartmanları ile Vatan Sitesi'nin Menekşe bloğuyla paylaşır. TKGM'de sitenin parseli, yaklaşık 2.882 m²'lik alanı üzerinde beton apartman niteliğiyle kayıtlıdır — çok ortaklı adanın iç içe geçmiş, bahçeli dokusunda derli toplu bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45891",
@@ -15,8 +15,8 @@
     }
   ],
   "ozellikler": [
-    "Paylaşımlı yerleşim adası",
-    "Komşular: Ata, Eren, Gökay, Nursaray, Örnek apartmanları",
+    "Yaklaşık 2,9 dönümlük parsel (TKGM)",
+    "Komşular: Ata, Eren, Gökay, Nursaray, Örnek apartmanları + Menekşe bloğu",
     "Altay — Eryaman Evleri kuşağı"
   ],
   "zenginlestirildi": "2026-07-15"
