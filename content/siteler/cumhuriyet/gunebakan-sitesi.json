@@ -7,7 +7,7 @@
     "lng": 32.685735
   },
   "sinirGeoJSON": "siteler/cumhuriyet/gunebakan-sitesi-boundary.geojson",
-  "aciklama": "Günebakan Sitesi, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 8.025 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Günebakan Sitesi, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM'de site, yaklaşık 8.025 m²'lik kat mülkiyetli parseli üzerinde betonarme apartman niteliğiyle kayıtlıdır — 8 dönümlük alan, bahçeli ve ferah bir yerleşim payı bırakır. Yeni Batı'nın genç, gelişen konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43263",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "~8.025 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
-    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+    "Yaklaşık 8 dönümlük kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)",
+    "Gelişen konut dokusu"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-23"
 }

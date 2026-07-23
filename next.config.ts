@@ -23,6 +23,7 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/ata/selvi-evleri", destination: "/mahalleler/ata/selvi-evleri-sitesi", permanent: true },
       { source: "/mahalleler/ata/sogut-bahce-sitesi", destination: "/mahalleler/ata/sogut-bahce-konutlari", permanent: true },
       { source: "/mahalleler/cumhuriyet/bati-konutlari", destination: "/mahalleler/cumhuriyet", permanent: true },
+      { source: "/mahalleler/cumhuriyet/ciglik-sitesi", destination: "/mahalleler/cumhuriyet/gunebakan-sitesi", permanent: true },
       { source: "/mahalleler/cumhuriyet/green-tower", destination: "/mahalleler/cumhuriyet/ap-green-tower", permanent: true },
       { source: "/mahalleler/cumhuriyet/kiratli-akropolis", destination: "/mahalleler/cumhuriyet", permanent: true },
       { source: "/mahalleler/cumhuriyet/tuna-park-evleri", destination: "/mahalleler/cumhuriyet", permanent: true },

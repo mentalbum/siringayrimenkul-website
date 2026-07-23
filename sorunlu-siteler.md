@@ -632,3 +632,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## KAPANDI: Bosphorus ↔ Alpak & Neve Armonia (2026-07-23, Özgün teyidi)
 "Orası Alpak & Neve Armonia Residence, Bosphorus değil." → bosphorus-ankara-konutlari.json + boundary silindi, URL Armonia'ya redirect. Not: 'Bosphorus Ankara' adı başka bir projeye aitse (On Altın A.Ş. iddiası) ileride doğru parseliyle yeniden açılabilir — şimdilik Eryaman kapsamında izi yok.
+
+## KAPANDI: Çığlık ↔ Günebakan (2026-07-23, Özgün teyidi)
+"Senin kaydettiğin yer Günebakan Sitesi." → ciglik-sitesi.json + boundary silindi, URL Günebakan'a redirect (sayfa zaten o parseli anlatıyordu). Günebakan tapu verisiyle zenginleştirildi. 'Çığlık Sitesi' adında ayrı bir yer başka konumda çıkarsa yeni kayıt açılır.
