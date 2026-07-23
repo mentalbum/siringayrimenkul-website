@@ -7,7 +7,7 @@
     "lng": 32.60613
   },
   "sinirGeoJSON": "siteler/yavuz-selim/korukent-sitesi-boundary.geojson",
-  "aciklama": "Korukent Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 8.208 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"28 Adet Kargir Dubleks Ev\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Korukent Sitesi, Yavuz Selim Mahallesi'nin yerel emlak kayıtlarında 'Güzelkent Villalar' diye anılan kesiminde yer alır; aynı kayıtlar siteyi 'Korukent 91' adıyla da tanır. TKGM tapu kaydı yapıyı \"28 Adet Kargir Dubleks Ev\" olarak tanımlar: sekiz dönümü aşkın kat mülkiyetli parsele yayılan yirmi sekiz iki katlı ev, apartman bloğu değil bahçeli ve yatay bir yerleşim kurar. Bu doku siteyi mahallenin müstakil hissiyatlı ev kuşağına bağlar — birkaç yüz metrelik çevresinde Bizim Şirinköy'ün kargir evleri, Keyfim'in dubleksleri ve Yüksel Kent 91'in sıralı dubleksleri uzanır. Eryaman'da bahçeli ev arayan aileler için sınırlı bir stok profilidir. Bu sitede satılık veya kiralık eviniz mi var? Dubleks dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19508",
@@ -20,5 +20,8 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Korukent 91 Sitesi"
+  ]
 }

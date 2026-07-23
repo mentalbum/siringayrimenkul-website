@@ -560,3 +560,5 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - WebSearch yan ürünü: Neva Prestij Yapı ailesi (Armonia Residence 650 daire, Neva Prestij Metro 100, Neva Panora Metro 100 — nevaprestij.com). Neva Palas bağlantısı İSPATSIZ (yazılmadı); Neva Panora kaydına sırası gelince kullanılabilir.
 - **Sermina Life mahalle şüphesi (parti 15)**: bizde Ata, be 'Susuz Mh. Konutları' grubunda gösteriyor — mahalle sınırı P-i-P testiyle doğrulanmalı.
 - Havayolları be sayfası bloklarını 2-A..2-D, Akçakent'i 7-A..7-L olarak veriyor (numaralı kooperatif kodları — metinlere işlendi).
+- **İkinci Korukent adayı (parti 16)**: be'de ayrı 'Korukent Sitesi no:15 (19517 Ada)' var (5.408 m², bizim 19508 kaydının ~350 m güneyi) — sahada iki Korukent olabilir; 19517 için yeni kayıt adayı.
+- **be↔TKGM mahalle çelişkileri birikiyor**: Sermina Life (be: Susuz, biz: Ata), Akonur (be: Susuz, TKGM canlı: Ata ✓ bizimki doğru), Maybak ikilisi (be tek yerleşke sayıyor). TKGM esas; P-i-P toplu denetim bir ara yapılabilir.
