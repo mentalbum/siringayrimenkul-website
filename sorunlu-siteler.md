@@ -574,3 +574,4 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - **Serenköy genişletme adayı**: be+OSM siteyi ÜÇ adaya (19532-33-36, ~20,5 dönüm) yayıyor; bizim kayıt tek ada (19533/1, 18 dubleks). Diğer iki adanın tapuları çekilip kayda eklenebilir.
 - **Çağlar Belde kimlik şüphesi**: 44763/4'ü be 'Erkent Umut + Sarmaşık Köşk' blokları olarak adlandırıyor — 'Çağlar Belde' adının bu parsele aidiyeti doğrulanamadı (eski Çağdaş Belde sorusuyla ilişkili olabilir). Pin/tabela kanıtı gerekli.
 - garden-zirve: TKGM canlı erişilemedi (API yönlendirme değişikliği görüldü: online.tkgm.gov.tr) — Kİ/KM durumu askıda, ihtiyatlı yazıldı.
+- **Belmi Kent ↔ Prestij Park AYNI PARSEL (44769/1)**: tapu/alan birebir; 'belmi emlak' GSC'de rakip emlakçı adı olarak da geçiyor — 'Belmi Kent' muhtemelen aynı sitenin eski/emlakçı adı ya da hatalı kayıt. Özgün'e: tabelada ne yazıyor? (Dupe ise redirect ile birleştirilir.) Metnine dokunulmadı, işlem dışı bırakıldı.
