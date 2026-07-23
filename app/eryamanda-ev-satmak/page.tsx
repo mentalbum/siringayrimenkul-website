@@ -153,6 +153,20 @@ export default function EvSatmakPage() {
 
       <section className="mt-12 max-w-3xl">
         <Reveal>
+          <h2 className="text-2xl">Evinizi Hızlı Satmanın Yolu</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Hızlı ev satmanın sırrı ilan çokluğu değil, <strong>doğru fiyatla çıkmaktır</strong>:
+            piyasanın üzerinde başlayan ilan aylarca bekler, sonra art arda indirimlerle
+            &quot;pazarlıklı ev&quot; izlenimi verir. Emsal satışlara dayanan gerçekçi bir fiyat,
+            derli toplu bir sunum ve ciddi alıcının hızla ayrıştırılması — Eryaman&apos;da
+            satışları hızlandıran üç şey budur. Eviniz bir süredir satılmıyorsa da başlangıç
+            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek.
+          </p>
+        </Reveal>
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <Reveal>
           <h2 className="text-2xl">Neden Şirin Gayrimenkul?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
             Genel bir portal değil, Eryaman&apos;a gömülü bir ofisiz: 11 mahallenin her sitesinin

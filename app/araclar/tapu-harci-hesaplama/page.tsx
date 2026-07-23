@@ -10,7 +10,7 @@ import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Tapu Harcı Hesaplama — Alıcı ve Satıcı Payı (%4) Hesaplayıcı",
+  title: "Tapu Harcı (Tapu Masrafı) Hesaplama — Alıcı ve Satıcı Payı (%4) Hesaplayıcı",
   description:
     "Tapu harcı ne kadar, kim öder? Satış bedelini girin; toplam %4 harcın alıcı ve satıcı paylarını (%2+%2) anında görün. Ev satan ve alanlar için ücretsiz tapu masrafı hesaplayıcı.",
   alternates: { canonical: "/araclar/tapu-harci-hesaplama" },
@@ -36,6 +36,16 @@ const faqItems: FaqItem[] = [
     soru: "Tapu harcını kim öder — alıcı mı, satıcı mı?",
     cevap:
       "Yasal olarak her iki taraf da %2'şer öder. Uygulamada 'tüm harç alıcıya ait' gibi pazarlıklar görülür; bu tamamen tarafların anlaşmasına bağlıdır ve sözleşmede netleştirilmesi sonradan tartışmayı önler.",
+  },
+  {
+    soru: "Tapu harcı nasıl ödenir?",
+    cevap:
+      "Tapu randevusu öncesinde, işlem numarasıyla anlaşmalı bankalar, GİB'in online ödeme kanalları ya da vergi dairesi üzerinden ödenir; ödeme yapılmadan devir işlemi tamamlanmaz. Dekontu tapu günü yanınızda bulundurun.",
+  },
+  {
+    soru: "Tapu harcı kredi kartıyla ödenir mi, taksit yapılır mı?",
+    cevap:
+      "GİB'in online ödeme kanallarında kredi kartıyla ödeme çoğu durumda mümkündür; harcın kendisi tek seferde tahakkuk eder, karta taksit ise tamamen bankanızın kampanya koşullarına bağlıdır. Güncel ödeme seçeneklerini işlem günü GİB kanalından teyit etmek en sağlıklısıdır.",
   },
   {
     soru: "Eryaman'da evimi satarken tapu sürecini kim yönetir?",

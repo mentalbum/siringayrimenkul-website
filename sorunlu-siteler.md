@@ -635,3 +635,10 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## KAPANDI: Çığlık ↔ Günebakan (2026-07-23, Özgün teyidi)
 "Senin kaydettiğin yer Günebakan Sitesi." → ciglik-sitesi.json + boundary silindi, URL Günebakan'a redirect (sayfa zaten o parseli anlatıyordu). Günebakan tapu verisiyle zenginleştirildi. 'Çığlık Sitesi' adında ayrı bir yer başka konumda çıkarsa yeni kayıt açılır.
+
+## Sorgu-evreni operasyonu (2026-07-23) — kalan büyük işler
+805 gerçek autocomplete sorgusu tarandı; 9 yeni rehber + 8 sayfa güçlendirmesi yayınlandı. Özgün'le konuşulacak / sonraki tur adayları:
+- **Eryaman 1./2./3. Etap sayfaları**: şablon hazır ama etap verisi yalnız Tunahan kayıtlarında; Altay (1. Etap), ŞOA (2. Etap), Şeyh Şamil (3. Etap) ada kayıtlarına doğrulanmış etap alanı işlenirse 3 yeni etap sayfası açılır ("eryaman 3 etap emlakçılar" gerçek arama). Kroki kaynakları: eryaman4/5.com benzeri; blok adları autocomplete'te (2. Etap: Demirer/Eston/İçtaş; 4: Öztaş/Yüksel/Yardımcı/Klima/Soyak).
+- **Kira sözleşmesi örneği sayfası** (14 sorgu): indirilebilir PDF/Word şablonu hukuki sorumluluk taşır — Özgün kararı. Alternatif: "madde madde açıklamalı örnek" rehberi (şablonsuz) yazılabilir.
+- **Kira artışı aracına aylık TÜFE bloğu** (ay-bazlı sorgular): aylık el bakımı ister — Özgün'ün "aylık yayın sistemi istemem" çizgisine takılabilir; TÜİK verisi otomatik çekilebilirse değerlendirilir.
+- Rakip-marka ve dua sorguları bilinçli atlandı; alıcı-ağırlıklı 276 sorgu mevcut mahalle/site sayfalarınca karşılanıyor.
