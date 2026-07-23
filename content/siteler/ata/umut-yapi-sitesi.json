@@ -7,11 +7,11 @@
     "lng": 32.606297
   },
   "sinirGeoJSON": "siteler/ata/umut-yapi-sitesi-boundary.geojson",
-  "aciklama": "Umut Yapı Sitesi, Ata Mahallesi'nde, Doğasu Evleri'nin komşu parselinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 16.809 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Umut Yapı Sitesi, Ata Mahallesi'nde, Doğasu Evleri'nin komşu parselinde yer alan bir konut sitesidir. TKGM kayıtlarına göre sitenin parseli yaklaşık 16.809 m² — yani 16,8 dönümlük — geniş bir alana karşılık gelir; bu ölçek, Ata'nın ferah planlanmış büyük site yerleşimlerinden biri olduğunu gösterir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "~16.809 m² parsel (TKGM)",
-    "Kat irtifaklı parsel (TKGM)",
-    "Ata Mahallesi"
+    "Yaklaşık 16,8 dönümlük geniş parsel (TKGM)",
+    "Komşu: Doğasu Evleri",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
   ],
   "adalar": [
     {

@@ -2,7 +2,7 @@
   "isim": "İzgi Park Evleri",
   "slug": "izgi-park-evleri",
   "mahalleSlug": "altay",
-  "aciklama": "İzgi Park Evleri, Altay Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 3.860 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Apartman-Kargir\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İzgi Park Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alan bir konut sitesidir; adasını Doktorlar Sitesi'nin blokları, Palmiye Evleri ve Pembe Rüya Evleri ile paylaşır. TKGM'de site, yaklaşık 3.860 m²'lik kat mülkiyetli parseli üzerinde kargir apartman niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.971683,
     "lng": 32.648448
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "~3.860 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
-    "Altay Mahallesi"
+    "Yaklaşık 3,9 dönümlük kat mülkiyetli parsel (TKGM)",
+    "Komşular: Doktorlar, Palmiye, Pembe Rüya",
+    "Altay — Eryaman Evleri kuşağı"
   ],
   "zenginlestirildi": "2026-07-17"
 }

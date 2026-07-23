@@ -7,7 +7,7 @@
     "lng": 32.607825
   },
   "sinirGeoJSON": "siteler/yavuz-selim/uyum-90-sitesi-boundary.geojson",
-  "aciklama": "Uyum 90 Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 9.794 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Apartman-Kargir\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Uyum 90 Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM'de site, yaklaşık 9.794 m² — 10 dönüme yakın — kat mülkiyetli parseli üzerinde kargir apartman niteliğiyle kayıtlıdır; bu genişlik, sitenin bahçeli ve ferah yerleşiminin kaynağıdır. Yavuz Selim'in kooperatif kökenli, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47603",
@@ -15,8 +15,8 @@
     }
   ],
   "ozellikler": [
-    "~9.794 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
+    "Yaklaşık 10 dönümlük kat mülkiyetli parsel (TKGM)",
+    "Bahçeli, ferah yerleşim",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-17"

@@ -7,7 +7,7 @@
     "lng": 32.647242
   },
   "sinirGeoJSON": "siteler/altay/vatan-sitesi-boundary.geojson",
-  "aciklama": "Vatan Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları birden çok adaya yayılan bir sitedir; apartmanları ağaç ve çiçek adları taşır: Çınar, Defne ve komşu adadaki Menekşe. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Vatan Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları birden çok adaya yayılan bir sitedir; apartmanları ağaç ve çiçek adları taşır: Çınar, Defne ve komşu adadaki Menekşe. TKGM'de sitenin ana parseli, yaklaşık 3.375 m²'lik alanı üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır. Eryaman Evleri kuşağının yeşili bol, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45895",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "Apartmanlar ağaç/çiçek adlı: Çınar, Defne, Menekşe",
+    "Ana parselde 2 blok — tapu nitelik kaydı (TKGM)",
     "Bloklar birden çok adada",
     "Altay — Eryaman Evleri kuşağı"
   ],

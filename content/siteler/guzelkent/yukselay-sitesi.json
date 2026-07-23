@@ -7,7 +7,7 @@
     "lng": 32.613637
   },
   "sinirGeoJSON": "siteler/guzelkent/yukselay-sitesi-boundary.geojson",
-  "aciklama": "Yükselay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, 4.761 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 2, 2A ve 2B olarak geçiyor — üç blok. Üç bloklu bir sitede her ilan dikkat çeker: satış ya da kiralama planınızı sitenin emsallerini bilen emlakçınızla birlikte yapın.",
+  "aciklama": "Yükselay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 4.761 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve kargir apartman niteliğiyle kayıtlıdır; yerel emlak kayıtlarında blokları 2, 2A ve 2B olarak geçer. Güzelkent'in az katlı, sakin dokusunun derli toplu örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18497",
@@ -15,10 +15,9 @@
     }
   ],
   "ozellikler": [
-    "4.761 m² tek parsel (TKGM)",
     "3 blok (2, 2A, 2B)",
+    "Yaklaşık 4,8 dönümlük kat mülkiyetli tek parsel (TKGM)",
     "Butik ölçekli, az daireli site",
-    "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-14"
