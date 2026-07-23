@@ -7,7 +7,7 @@
     "lng": 32.611779
   },
   "sinirGeoJSON": "siteler/eryaman/pasa-konaklari-boundary.geojson",
-  "aciklama": "Paşa Konakları, Eryaman Mahallesi'nde 45-A ve 45-B bloklarından oluşan iki bloklu bir sitedir; adasını Çiğdem Sitesi ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Paşa Konakları, Eryaman Mahallesi'nde 45-A ve 45-B bloklarından oluşan iki bloklu bir sitedir; adasını Çiğdem Sitesi ile paylaşır. Tapu kaydı yapıyı net tarif eder: TKGM'de site, yaklaşık 4.992 m²'lik parseli üzerinde sekizer katlı A ve B bloklardan oluşan betonarme apartman niteliğiyle kayıtlıdır — iki blok için yaklaşık 5 dönümlük alan, ferah bir yerleşim payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45919",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "2 blok (45-A, 45-B)",
+    "2 blok (45-A, 45-B), 8'er katlı — tapu nitelik kaydı",
+    "Yaklaşık 5 dönümlük parsel (TKGM)",
     "Komşu: Çiğdem Sitesi",
     "Eryaman Mahallesi"
   ],

@@ -590,3 +590,6 @@ Kayıt: sehit-osman-avci/lale-kent-sitesi, adalar 46665/3. TKGM nokta sorgusu (k
 
 ## Angora adı iki ayrı yerde (2026-07-23)
 Bizim kayıt: goksu/angora-sitesi — Türkonut Göl Bölgesi mega-parseli üyesi (koordinat parsel içinde, komşularıyla tutarlı yazıldı). bilgiemlak'ta ise "Güzelkent Villalar Angora Sitesi no:23 (19516 Ada)" — Yavuz Selim, 22 villa, 6.059 m², 39.9961/32.6032. İki ayrı yerleşim olabilir; YS Güzelkent'teki Angora bizde YOK → yeni kayıt adayı (Özgün teyidi: Göksu'daki "Angora" tabelası gerçek mi?).
+
+## 10. Botanik Evleri (Cumhuriyet) — 43264/8 tapuda yok (2026-07-23)
+Kayıt cumhuriyet/10-botanik-evleri, adalar 43264/8 → TKGM 404. Aynı adada 43264/7 = Arissa Botanik (Park Sera çakışması da bu adada). Botanik ailesi imar değişikliği geçirmiş olabilir; nokta sorgusu + be turu gerekiyor. Botanik ailesi zaten eski parked sorularda.

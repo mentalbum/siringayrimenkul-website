@@ -7,7 +7,7 @@
     "lng": 32.609188
   },
   "sinirGeoJSON": "siteler/eryaman/ay-sitesi-boundary.geojson",
-  "aciklama": "Ay Sitesi, Eryaman Mahallesi'nde A, B, C ve D bloklarından oluşan dört bloklu bir sitedir; adasını Burak ve Dostlar apartmanlarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ay Sitesi, Eryaman Mahallesi'nde A, B, C ve D bloklarından oluşan dört bloklu bir sitedir; adasını Burak ve Dostlar apartmanlarıyla paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 5.218 m²'lik parseli üzerinde '4 blok kargir apartman' niteliğiyle kayıtlıdır. Eryaman Mahallesi'nin ilk etap kooperatif dokusunun derli toplu örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45917",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "4 blok (A, B, C, D)",
+    "4 blok (A, B, C, D) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 5,2 dönümlük parsel (TKGM)",
     "Komşular: Burak ve Dostlar apartmanları",
     "Eryaman Mahallesi"
   ],

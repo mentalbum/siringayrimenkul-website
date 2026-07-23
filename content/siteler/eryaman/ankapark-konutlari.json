@@ -7,7 +7,7 @@
     "lng": 32.618436
   },
   "sinirGeoJSON": "siteler/eryaman/ankapark-konutlari-boundary.geojson",
-  "aciklama": "Ankapark Konutları, Eryaman Mahallesi'nde 8-A, 8-B, 8-C ve 8-D bloklarından oluşan dört bloklu, kendi adasında yer alan bir sitedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ankapark Konutları, Eryaman Mahallesi'nde 8-A, 8-B, 8-C ve 8-D bloklarından oluşan dört bloklu, kendi adasında yer alan bir sitedir. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 11.404 m²'lik parseli üzerinde '4 blok betonarme apartman' niteliğiyle kayıtlıdır — dört blok için 11,4 dönümlük müstakil ada, bloklar arasına geniş bahçe ve otopark payı bırakan ferah bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46391",
@@ -15,8 +15,8 @@
     }
   ],
   "ozellikler": [
-    "4 blok (8-A, 8-B, 8-C, 8-D)",
-    "Kendi yerleşim adasında",
+    "4 blok (8-A, 8-B, 8-C, 8-D) — tapu nitelik kaydıyla uyumlu",
+    "Kendi yerleşim adasında — yaklaşık 11,4 dönüm (TKGM)",
     "Eryaman Mahallesi"
   ],
   "alternatifAdlar": [

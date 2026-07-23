@@ -7,7 +7,7 @@
     "lng": 32.6228882
   },
   "sinirGeoJSON": "siteler/eryaman/ayka-park-sitesi-boundary.geojson",
-  "aciklama": "Ayka Park Sitesi, Eryaman Mahallesi'nde tek apartmanla temsil edilen butik bir sitedir; adasını Armina Park Evleri ve Salkuma Sitesi ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ayka Park Sitesi, Eryaman Mahallesi'nde tek apartmanla temsil edilen butik bir sitedir; adasını Armina Park Evleri ve Salkuma Sitesi ile paylaşır. TKGM kayıtlarına göre sitenin kendi parseli yaklaşık 4.028 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46385",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "Tek bloklu butik site",
+    "Yaklaşık 4 dönümlük parsel (TKGM)",
     "Komşular: Armina Park, Salkuma",
     "Eryaman Mahallesi"
   ],
