@@ -7,7 +7,7 @@
     "lng": 32.6521264
   },
   "sinirGeoJSON": "siteler/susuz/saritas-seyir-evleri-boundary.geojson",
-  "aciklama": "Sarıtaş Seyir Evleri, Susuz'da 5324. Cadde üzerinde yer alan, adı gibi manzaraya dönük konumlanmış bir konut sitesidir; bölgenin sakin, yeni gelişim dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Sarıtaş Seyir Evleri, Susuz'da 5324. Cadde üzerinde yer alan, adı gibi manzaraya dönük konumlanmış bir konut sitesidir; bölgenin sakin, yeni gelişim dokusunun parçasıdır. TKGM kayıtlarına göre sitenin bulunduğu parsel yaklaşık 8.292 m²'lik bir alana karşılık gelir — bu ölçek, bahçeli ve ferah bir site planlamasına işaret eder. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63343",
@@ -17,6 +17,7 @@
   "ozellikler": [
     "Manzaraya dönük konum",
     "5324. Cadde No:11",
+    "Yaklaşık 8,3 dönümlük parsel (TKGM)",
     "Susuz — Göksu kentsel gelişim bölgesi"
   ],
   "adres": "5324. Cadde No:11, Susuz, Yenimahalle/Ankara",

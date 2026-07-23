@@ -7,7 +7,7 @@
     "lng": 32.618374
   },
   "sinirGeoJSON": "siteler/devlet/alis-sitesi-boundary.geojson",
-  "aciklama": "Aliş Sitesi, Eryaman Devlet Mahallesi'nde tek blokla temsil edilen bir kooperatif sitesidir; adasını Dastarlı, Sinem ve Öz Gimat'ın blok grubuyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Aliş Sitesi, Eryaman Devlet Mahallesi'nde, Dastarlı, Sinem ve Öz Gimat'ın blok grubuyla paylaştığı büyük yerleşim adasında tek blokla temsil edilen bir kooperatif sitesidir. Tapu kaydı adanın ölçeğini anlatır: yaklaşık 21.178 m²'lik ortak parselde orta katlı bloklarla birlikte on bir katlı yüksek bloklardan oluşan yedi bloklu karma bir doku kayıtlıdır — 21 dönümlük ada, bloklar arasına geniş nefes payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46519",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "Tek bloklu kooperatif sitesi",
+    "Paylaşımlı büyük yerleşim adası — yaklaşık 21 dönüm (TKGM)",
+    "Adada 7 blok: orta katlı + 11 katlı karma doku",
     "Komşular: Dastarlı, Sinem, Öz Gimat",
     "Devlet Mahallesi"
   ],

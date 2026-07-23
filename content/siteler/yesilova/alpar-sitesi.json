@@ -7,7 +7,7 @@
     "lng": 32.609402
   },
   "sinirGeoJSON": "siteler/yesilova/alpar-sitesi-boundary.geojson",
-  "aciklama": "Alpar Sitesi, Yeşilova Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.891 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Alpar Sitesi, Yeşilova Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.891 m²'lik parseli tapuda kat irtifakı aşamasındadır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Yeşilova'nın Eryaman aksına komşu, gelişmekte olan konut dokusu içinde derli toplu bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47541",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "~2.891 m² parsel (TKGM)",
+    "Yaklaşık 2.9 dönümlük parsel (TKGM)",
     "Kat irtifaklı parsel (TKGM)",
     "Yeşilova Mahallesi"
   ],

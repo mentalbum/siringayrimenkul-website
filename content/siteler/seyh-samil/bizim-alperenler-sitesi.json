@@ -7,7 +7,7 @@
     "lng": 32.629763
   },
   "sinirGeoJSON": "siteler/seyh-samil/bizim-alperenler-sitesi-boundary.geojson",
-  "aciklama": "Bizim Alperenler Sitesi, Şeyh Şamil Mahallesi'nde iki bloklu bir kooperatif sitesidir; adasını Çağlar Emin ve Nisan apartmanlarıyla paylaşır. TKGM kayıtlarına göre sitenin kendi parseli yaklaşık 10.593 m² — 10,5 dönümün üzerinde — bir alana karşılık gelir ve apartman niteliğiyle kayıtlıdır; iki blok için bu genişlik, sitenin bahçeli ve ferah yerleşiminin kaynağıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bizim Alperenler Sitesi, Şeyh Şamil Mahallesi'nde iki bloklu bir kooperatif sitesidir; adasını Çağlar Emin ve Nisan siteleriyle paylaşır, Çağlar Emin Evleri ile de aynı parselde yer alır. TKGM'ye göre bu ortak parsel yaklaşık 10.593 m² — 10,5 dönümün üzerinde — bir alana karşılık gelir ve apartman niteliğiyle kayıtlıdır; az sayıda blok için bu genişlik, sitenin bahçeli ve ferah yerleşiminin kaynağıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46265",
@@ -15,8 +15,8 @@
     }
   ],
   "ozellikler": [
-    "2 blok — kat mülkiyetli parsel (TKGM)",
-    "Yaklaşık 10,5 dönümlük ferah parsel",
+    "2 blok",
+    "Çağlar Emin ile ortak parsel — ~10,5 dönüm (TKGM)",
     "Komşular: Çağlar Emin, Nisan",
     "Şeyh Şamil Mahallesi"
   ],

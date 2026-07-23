@@ -7,7 +7,7 @@
     "lng": 32.61977
   },
   "sinirGeoJSON": "siteler/eryaman/caglar-sitesi-boundary.geojson",
-  "aciklama": "Çağlar Sitesi, Eryaman Mahallesi'nde A-7, B-5A ve C-5 bloklarından oluşan üç bloklu bir sitedir; adasını Gülbahar ve İrem apartmanlarıyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çağlar Sitesi, Eryaman Mahallesi'nde A-7, B-5A ve C-5 bloklarından oluşan üç bloklu bir sitedir; adasını Gülbahar ve İrem apartmanlarıyla paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 6.972 m²'lik parseli üzerinde A, B ve C bloklardan oluşan kargir apartman niteliğiyle kayıtlıdır — üç blok için yaklaşık 7 dönümlük alan, ferah bir yerleşim düzeni sağlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46390",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "3 blok (A-7, B-5A, C-5)",
+    "3 blok (A-7, B-5A, C-5) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 7 dönümlük parsel (TKGM)",
     "Komşular: Gülbahar ve İrem apartmanları",
     "Eryaman Mahallesi"
   ],

@@ -7,7 +7,7 @@
     "lng": 32.631143
   },
   "sinirGeoJSON": "siteler/seyh-samil/borankent-boundary.geojson",
-  "aciklama": "Borankent Sitesi, Şeyh Şamil Mahallesi'nde 1B ve 1C bloklarından oluşan iki bloklu bir kooperatif sitesidir; adasını Barış ve Özanadolu siteleriyle paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Borankent Sitesi, Şeyh Şamil Mahallesi'nde 1B ve 1C bloklarından oluşan bir kooperatif sitesidir; adasını Barış ve Özanadolu siteleriyle paylaşır. TKGM'de sitenin parseli yaklaşık 5.076 m²'lik alanı üzerinde on bir katlı betonarme apartman niteliğiyle kayıtlıdır — komşu Özanadolu ile birlikte bu kesim, mahallenin ağırlıkla orta katlı dokusu içinde dikkat çeken yüksek katlı bloklara ev sahipliği yapar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46268",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "2 blok (1B, 1C)",
+    "2 blok (1B, 1C), 11 katlı — tapu nitelik kaydı",
+    "Yaklaşık 5 dönümlük parsel (TKGM)",
     "Komşular: Barış, Özanadolu",
     "Şeyh Şamil Mahallesi"
   ],
