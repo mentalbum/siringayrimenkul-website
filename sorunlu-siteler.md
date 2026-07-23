@@ -629,3 +629,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## KAPANDI: Anemon ↔ Karkonut (2026-07-23, Özgün teyidi)
 "Orası sadece Anemon, diğer isim yanlış girilmiş." → karkonut.json + boundary silindi, /mahalleler/ata/karkonut → anemon-sitesi redirect'i eklendi, Anemon metnindeki 'Karkonut' atfı kaldırıldı.
+
+## KAPANDI: Bosphorus ↔ Alpak & Neve Armonia (2026-07-23, Özgün teyidi)
+"Orası Alpak & Neve Armonia Residence, Bosphorus değil." → bosphorus-ankara-konutlari.json + boundary silindi, URL Armonia'ya redirect. Not: 'Bosphorus Ankara' adı başka bir projeye aitse (On Altın A.Ş. iddiası) ileride doğru parseliyle yeniden açılabilir — şimdilik Eryaman kapsamında izi yok.
