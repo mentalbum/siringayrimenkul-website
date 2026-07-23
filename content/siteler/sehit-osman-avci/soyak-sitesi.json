@@ -11,15 +11,18 @@
   "adalar": [
     {
       "no": "17462",
-      "parsel": "1"
+      "parsel": "1",
+      "etap": "2"
     },
     {
       "no": "17463",
-      "parsel": "1"
+      "parsel": "1",
+      "etap": "2"
     },
     {
       "no": "17477",
-      "parsel": "1"
+      "parsel": "1",
+      "etap": "2"
     }
   ],
   "ozellikler": [
