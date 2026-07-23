@@ -658,3 +658,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - **Ritim Eryaman ↔ Başkent Sular (18477):** Ritim koordinatı Başkent Sular kaydımızın 25 m yanı; Ritim 'Özer Grup 96 konut kentsel dönüşüm' — Başkent Sular'ın yıkılıp yeniden yapımı olabilir. Öyleyse birleştirme+redirect gerekir.
 - **Ma1 Tower ada çelişkisi:** KBS nokta sorgusu 64517/1 (Arsa 5.534) diyor, be 63362 (10 m mesafe) diyor; OSM durakları 450 m uzakta. Kentsel dönüşümde çifte yenileme olabilir — TKGM kota açılınca nokta sorgusuyla kesinleştirilecek, şimdilik ada yazılmadı.
 - Altaş Relax zayıf aday: be 46331 adası (92 m, 43,7 dönümlük dev ada) — tek kaynak, yazılmadı.
+
+## Ma1 Tower konumu KESİNLEŞTİ (2026-07-24, Özgün teyidi — uydu görüntüsüyle)
+Özgün, Google'da 'Göksu Hisar Evleri' etiketli parselin (iki yüksek blok + avlu, Ankara Çevre Yolu bitişiği, Hisar Cad.) Ma1'in yaptığı yer olduğunu teyit etti. Kayda 'Göksu Hisar Evleri' + 'MA1 Yapı' alternatif adları ve iki-blok/çevre-yolu detayları işlendi. KALAN: ada/parsel no (KBS 64517/1 vs be 63362 çelişkisi) — TKGM kotası açılınca nokta sorgusu kesinleştirecek (kuyrukta); mahalle ataması (goksu↔susuz) kartı da açık.
