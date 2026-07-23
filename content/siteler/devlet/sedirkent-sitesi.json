@@ -7,7 +7,7 @@
     "lng": 32.620937
   },
   "sinirGeoJSON": "siteler/devlet/sedirkent-sitesi-boundary.geojson",
-  "aciklama": "Sedirkent Sitesi, Eryaman Devlet Mahallesi'nde yer alır; blokları yerel kayıtlarda 1, 1A, 1B ve 1C olarak geçer — dört blok. Adasını Öz Gimat ve Yüceyurt siteleriyle paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sedirkent Sitesi, Eryaman Devlet Mahallesi'nde yer alır; blokları yerel kayıtlarda 1, 1A, 1B ve 1C olarak geçer — dört blok. Adasını Öz Gimat ve Yüceyurt siteleriyle paylaşır; tapuya göre bu ortak ada yaklaşık 22.111 m²'lik tek parselde, orta katlı bloklarla birlikte on bir ve on dört katlı yüksek blokları barındıran yedi bloklu karma bir dokudur. 22 dönümlük ada, bloklar arasına geniş yeşil ve otopark payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46518",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "4 blok (1, 1A, 1B, 1C)",
+    "Paylaşımlı büyük ada — yaklaşık 22 dönüm (TKGM)",
     "Komşular: Öz Gimat, Yüceyurt",
     "Devlet Mahallesi"
   ],

@@ -7,7 +7,7 @@
     "lng": 32.6470914
   },
   "sinirGeoJSON": "siteler/susuz/bordo-gol-evleri-boundary.geojson",
-  "aciklama": "Bordo Göl Evleri, Göksu göl bölgesine komşu konumda yer alan modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.906 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bordo Göl Evleri, Göksu göl bölgesine komşu konumda yer alan modern bir konut sitesidir. TKGM kayıtlarına göre sitenin parseli yaklaşık 10.907 m² — yani 11 dönüme yakın — bir alana karşılık gelir; göl bölgesinin yeni gelişim dokusunda bu ölçek, bahçeli ve ferah site planlamasının göstergesidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63376",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "~10.906 m² parsel (TKGM)",
-    "Kat irtifaklı parsel (TKGM)",
-    "Göl bölgesi komşuluğu"
+    "Yaklaşık 11 dönümlük parsel (TKGM)",
+    "Göl bölgesi komşuluğu",
+    "Susuz — yeni gelişim aksı"
   ],
   "zenginlestirildi": "2026-07-17"
 }

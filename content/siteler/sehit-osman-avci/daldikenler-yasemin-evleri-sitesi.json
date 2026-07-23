@@ -7,7 +7,7 @@
     "lng": 32.655717
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/daldikenler-yasemin-evleri-sitesi-boundary.geojson",
-  "aciklama": "Daldikenler Yasemin Evleri, Şehit Osman Avcı Mahallesi'nde kendi adasında yer alan yerleşik bir sitedir; yerel kayıtlarda 'Daldiken Sitesi Yasemin Evleri' olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Daldikenler Yasemin Evleri, Şehit Osman Avcı Mahallesi'nde kendi adasında yer alan yerleşik bir sitedir; yerel kayıtlarda 'Daldiken Sitesi Yasemin Evleri' olarak geçer. Tapu kaydı yapıyı net tarif eder: yaklaşık 7.982 m²'lik parsel üzerinde A, B ve C bloklardan oluşan beton apartman — üç blok için 8 dönümlük müstakil ada, bahçeli ve ferah bir yerleşim düzeni demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46660",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "Kendi yerleşim adasında",
+    "3 blok (A, B, C) — tapu nitelik kaydı",
+    "Kendi yerleşim adasında — yaklaşık 8 dönüm (TKGM)",
     "Şehit Osman Avcı Mahallesi"
   ],
   "alternatifAdlar": [

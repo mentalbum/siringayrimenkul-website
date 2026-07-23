@@ -7,7 +7,7 @@
     "lng": 32.601362
   },
   "sinirGeoJSON": "siteler/ata/caglayan-sitesi-boundary.geojson",
-  "aciklama": "Çağlayan Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 17.840 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Apartman- Beton\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Çağlayan Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM'de site, yaklaşık 17.840 m² — yani 17,8 dönümlük — geniş parseli üzerinde apartman niteliğiyle, kat mülkiyetli olarak kayıtlıdır; bu ölçek, Ata'nın ferah planlanmış büyük site yerleşimlerinden biri olduğunu gösterir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44772",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "~17.840 m² parsel (TKGM)",
+    "Yaklaşık 17,8 dönümlük geniş parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Ata Mahallesi"
+    "Ata Mahallesi — Eryaman'ın yanı başı"
   ],
   "zenginlestirildi": "2026-07-16"
 }
