@@ -562,3 +562,9 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - Havayolları be sayfası bloklarını 2-A..2-D, Akçakent'i 7-A..7-L olarak veriyor (numaralı kooperatif kodları — metinlere işlendi).
 - **İkinci Korukent adayı (parti 16)**: be'de ayrı 'Korukent Sitesi no:15 (19517 Ada)' var (5.408 m², bizim 19508 kaydının ~350 m güneyi) — sahada iki Korukent olabilir; 19517 için yeni kayıt adayı.
 - **be↔TKGM mahalle çelişkileri birikiyor**: Sermina Life (be: Susuz, biz: Ata), Akonur (be: Susuz, TKGM canlı: Ata ✓ bizimki doğru), Maybak ikilisi (be tek yerleşke sayıyor). TKGM esas; P-i-P toplu denetim bir ara yapılabilir.
+
+### Parti 17 bulguları (2026-07-23)
+- ✔ **Altıntepe yanlış parsel DÜZELTİLDİ**: kayıt Gözde Evler'in (46432/1) kopyasıydı; kanıt zinciri (TKGM nokta + Yandex org pini + yerel kayıtlar) gerçek parseli 46434/1 gösterdi — Kİ/'Arsa' niteliği, 12.022 m², sınır+koordinat yenilendi. NOT: be 46434'ü 'Demirglas Sitesi' diye adlandırıyor; Özgün kuralı gereği (Demirglas diye yer yok) bu ad KULLANILMADI.
+- **Turuncu Sitesi kaydı Akdam'ın parselini kopyalamış** (44776/2 — tapu/alan/sınır birebir): be'ye göre Turuncu aynı adada AYRI yerleşim (2-C..2-F blokları, adanın batısı). Turuncu'nun gerçek parseli pin kanıtıyla bulunup düzeltilmeli.
+- **Ahikent ↔ KC Lale Evleri aynı parselde (46644/1)**: be o adayı 'KC Lale Evleri' + 'Laleevleri 17-A..17-D' sayıyor; 'Ahikent' adı sahada doğrulanamadı — muhtemel dupe/eski ad, Özgün'e.
+- Akdam ailesi: be 'Yeni Akdam KYK' + bölge 'Etikent' (yeni bölge adı!); aynı adada be 'Gülkent Konutları' da listeliyor — repo'da gülkent kaydı var mı kontrol edilecek (yoksa aday).

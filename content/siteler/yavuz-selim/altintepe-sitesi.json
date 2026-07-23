@@ -3,22 +3,22 @@
   "slug": "altintepe-sitesi",
   "mahalleSlug": "yavuz-selim",
   "koordinat": {
-    "lat": 40.005027,
-    "lng": 32.613721
+    "lat": 40.004724,
+    "lng": 32.615533
   },
   "sinirGeoJSON": "siteler/yavuz-selim/altintepe-sitesi-boundary.geojson",
-  "aciklama": "Altıntepe Sitesi, Yavuz Selim Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 13.824 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Kargir 3 Adet Bina Ve Dükkan\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Altıntepe Sitesi, Yavuz Selim Mahallesi'nin Ata sınırındaki konut kuşağında yer alan üç bloklu bir sitedir; yerel emlak kayıtları A, B ve C bloklarını listeler; harita ve ilan platformlarında Altıntepe adı yerleşiktir. TKGM'ye göre yerleşke yaklaşık on iki dönümlük tek parsel üzerine kuruludur. Tapu niteliği hâlen 'Arsa' olarak görünür ve zemin kat irtifakı aşamasındadır; kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı maddesinde anlattık. Gözde Evler Sitesi ve Yurt Prestij Konutları'nın hemen yanı başındadır; kadastroda parsel Ata kaydıyla izlenir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
-      "no": "46432",
+      "no": "46434",
       "parsel": "1"
     }
   ],
   "ozellikler": [
-    "~13.824 m² parsel (TKGM)",
-    "3 adet konut (tapu)",
-    "Kat mülkiyetli parsel (TKGM)",
-    "Yavuz Selim Mahallesi — kadastroda Ata kaydı"
+    "3 blok — A, B, C (yerel kayıtlar)",
+    "~12.022 m² parsel (TKGM)",
+    "Kat irtifaklı — tapuda 'Arsa' (TKGM)",
+    "Yavuz Selim — kadastroda Ata kaydı"
   ],
   "zenginlestirildi": "2026-07-17"
 }
