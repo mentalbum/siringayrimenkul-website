@@ -7,7 +7,7 @@
     "lng": 32.660119
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/akasya-sitesi-boundary.geojson",
-  "aciklama": "Akasya Sitesi, Şehit Osman Avcı Mahallesi'nin gelişen konut hattında, 2651. Cadde üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.400 m²'lik parsel tapuda kat irtifakı aşamasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Akasya Sitesi, Şehit Osman Avcı Mahallesi'nin gelişen konut hattında, 2651. Cadde üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre sitenin parseli yaklaşık 5.400 m²'lik bir alana karşılık gelir — derli toplu, bahçeli bir site ölçeğidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46653",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "~5.400 m² parsel (TKGM)",
-    "Kat irtifaklı parsel (TKGM)",
-    "2651. Cadde — Şehit Osman Avcı Mahallesi"
+    "Yaklaşık 5,4 dönümlük parsel (TKGM)",
+    "2651. Cadde — Şehit Osman Avcı Mahallesi",
+    "Gelişen konut hattı"
   ],
   "zenginlestirildi": "2026-07-17"
 }

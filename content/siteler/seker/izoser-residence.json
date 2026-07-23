@@ -7,7 +7,7 @@
     "lng": 32.661075
   },
   "sinirGeoJSON": "siteler/seker/izoser-residence-boundary.geojson",
-  "aciklama": "İzoser Residence, Şeker Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 825 m²'lik tapuda kat irtifakı kayıtlı parselde tapu kaydı yapıyı şöyle tanımlar: \"Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İzoser Residence, Şeker Mahallesi'nde yer alan butik ölçekli bir konut yapısıdır. TKGM'de yapı, yaklaşık 825 m²'lik parseli üzerinde kargir apartman niteliğiyle, tapuda kat irtifakı kaydıyla yer alır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Şeker Mahallesi'nin gelişen, yeni yapılaşmalı dokusunun parçasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45064",
@@ -15,7 +15,7 @@
     }
   ],
   "ozellikler": [
-    "~825 m² parsel (TKGM)",
+    "Butik ölçekli tek yapı",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Şeker Mahallesi"
   ],
