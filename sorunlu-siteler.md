@@ -593,3 +593,6 @@ Bizim kayıt: goksu/angora-sitesi — Türkonut Göl Bölgesi mega-parseli üyes
 
 ## 10. Botanik Evleri (Cumhuriyet) — 43264/8 tapuda yok (2026-07-23)
 Kayıt cumhuriyet/10-botanik-evleri, adalar 43264/8 → TKGM 404. Aynı adada 43264/7 = Arissa Botanik (Park Sera çakışması da bu adada). Botanik ailesi imar değişikliği geçirmiş olabilir; nokta sorgusu + be turu gerekiyor. Botanik ailesi zaten eski parked sorularda.
+
+## Çığlık ↔ Günebakan (Cumhuriyet) — aynı parsel 43263/3 (2026-07-23)
+İki kayıt da adalar=43263/3 (Yuva kad.); Günebakan'ın koordinatı da TKGM nokta sorgusunda aynı parsele düştü. Tapu: "Betonarme Apartman", 8.025 m² — tekil nitelik, iki ayrı site için tek tapu. Dupe ya da tabela farkı olabilir. Özgün'e: Çığlık ve Günebakan aynı yerleşim mi, ayrı mı?

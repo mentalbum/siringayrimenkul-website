@@ -7,7 +7,7 @@
     "lng": 32.618374
   },
   "sinirGeoJSON": "siteler/devlet/turkkonut-sinem-sitesi-boundary.geojson",
-  "aciklama": "Türkkonut Sinem Sitesi — yerel kayıtlarda kısaca 'Sinem Sitesi' — Eryaman Devlet Mahallesi'nde tek blokla temsil edilen bir kooperatif sitesidir; adasını Aliş, Dastarlı ve Öz Gimat'ın blok grubuyla paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Türkkonut Sinem Sitesi — yerel kayıtlarda kısaca 'Sinem Sitesi' — Eryaman Devlet Mahallesi'nde tek blokla temsil edilen bir kooperatif sitesidir; adasını Aliş, Dastarlı ve Öz Gimat'ın blok grubuyla paylaşır. Tapuya göre bu ortak ada yaklaşık 21.178 m²'lik tek parselde, orta katlı bloklarla birlikte on bir katlı yüksek blokları barındıran yedi bloklu karma bir dokudur — 21 dönümlük ada, bloklar arasına geniş nefes payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46519",
@@ -15,8 +15,9 @@
     }
   ],
   "ozellikler": [
-    "Tek bloklu kooperatif sitesi",
-    "Yerel kayıtlarda 'Sinem Sitesi'",
+    "Tek bloklu kooperatif sitesi — yerel kayıtlarda 'Sinem Sitesi'",
+    "Paylaşımlı büyük ada — yaklaşık 21 dönüm (TKGM)",
+    "Komşular: Aliş, Dastarlı, Öz Gimat",
     "Devlet Mahallesi"
   ],
   "alternatifAdlar": [
