@@ -674,3 +674,7 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - **Pozitif Life ↔ Anka Vega (47544/4) YENİ ÇAKIŞMA:** Pozitif'in Yandex noktası TKGM'de 47544/4'e düştü — o parsel bizde Anka Vega'nın ("14 katlı A1+A2 betonarme ofis", 7.268 m²; koordinatlar 25 m). İki ad aynı yapıya mı ait (Meva/Pozitif ROİ), ayrı mı? Pozitif'e ada YAZILMADI.
 - **Ritim Eryaman:** noktası adasız parsel "/51"e düştü (Tarla, 10.926 m² — kentsel dönüşüm tapuya henüz yansımamış). Başkent Sular'ın 18477/1'inden AYRI parsel → dönüşüm hipotezi zayıfladı ama Tarla niteliği yüzünden dışlanamadı; ada yazılamıyor (ada no yok). Kart açık.
 - **Hürev ↔ Ata Life:** TKGM de Hürev noktasını 44774/3'te doğruladı (üçüncü kaynak). Kart açık, veri tarafı tamam.
+
+## İki kart daha KAPANDI (2026-07-23 gece, kota penceresi)
+- **10. Botanik 43264/8 GERÇEK:** önceki 404 yanlış kadastro ID'sindendi; nokta sorgusu Yuva kadastrosunda buldu (Arsa, 7.895 m²). Kayıt+boundary işlendi; Arissa (43264/7) komşuluğu metne girdi. '43264/8 tapuda yok' kartı kapandı.
+- **Manzara Evleri (Ata) = 44776/3:** iki-aday ikilemi bitti — ne Bilge Türk ne Mercan Kent; kendi parseli var ("11 katlı A + 10 katlı B betonarme mesken", 9.331 m²). Koordinat+ada+boundary+metin işlendi, haritaya girdi. Not: 44776 adası Turuncu kartındaki adayla aynı (Akdam /2'de) — Turuncu sorusu hâlâ açık.
