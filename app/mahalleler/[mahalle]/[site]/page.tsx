@@ -72,7 +72,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ],
     }),
     ...(site.gorsel && {
-      openGraph: { images: [{ url: site.gorsel, alt: site.isim }] },
+      // Nested openGraph replaces the root layout's wholesale — restate the
+      // shared fields alongside the per-site image.
+      openGraph: {
+        type: "website" as const,
+        locale: "tr_TR",
+        siteName: siteConfig.name,
+        images: [{ url: site.gorsel, alt: site.isim }],
+      },
       twitter: { card: "summary_large_image" as const, images: [site.gorsel] },
     }),
   };
@@ -215,6 +222,22 @@ export default async function SitePage({ params }: Props) {
             }bir yerleşimdir. Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`}
           </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
+          {site.aciklama.includes("sözlüğümüzdeki kat irtifakı maddesinde") && (
+            <p className="text-sm leading-relaxed text-muted">
+              İlgili terim:{" "}
+              <Link href="/sozluk#kat-irtifaki" className="font-semibold text-gold-dark hover:underline">
+                kat irtifakı nedir?
+              </Link>
+            </p>
+          )}
+          {site.aciklama.includes("sözlüğümüzdeki rezidans tapusu maddesinde") && (
+            <p className="text-sm leading-relaxed text-muted">
+              İlgili terim:{" "}
+              <Link href="/sozluk#rezidans-tapu" className="font-semibold text-gold-dark hover:underline">
+                rezidans tapusu nedir?
+              </Link>
+            </p>
+          )}
           <p className="text-sm leading-relaxed text-muted">{mahalle.kisaAciklama}</p>
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">

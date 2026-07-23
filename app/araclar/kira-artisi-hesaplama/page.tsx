@@ -104,7 +104,7 @@ export default function KiraArtisiPage() {
           Örnek: 20.000 TL kira, %45 oran → yeni kira 29.000 TL; aylık fark 9.000 TL, yıllık
           fark 108.000 TL. Tavan oran uygulansa bile kiranız emsallerin altında kalmış
           olabilir — 5 yılı dolan sözleşmelerde{" "}
-          <Link href="/sozluk#kira-tespit" className="font-semibold text-gold-dark hover:underline">
+          <Link href="/sozluk#kira-tespit-davasi" className="font-semibold text-gold-dark hover:underline">
             kira tespit davası
           </Link>{" "}
           ile piyasa düzeyine çıkma hakkınız vardır. Ayrıntılar için{" "}

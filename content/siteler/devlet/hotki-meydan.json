@@ -2,5 +2,24 @@
   "isim": "Hotki Meydan",
   "slug": "hotki-meydan",
   "mahalleSlug": "devlet",
-  "aciklama": "Hotki Meydan, Ankara Etimesgut'a bağlı Devlet Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Devlet Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Hotki Meydan, Devlet Mahallesi'nde Hotki İnşaat imzalı, modern bir konut yapısıdır; yerel emlak kayıtlarında 'Hotki Residance' adıyla da geçer. Devlet Mahallesi'nin oturmuş dokusu içinde, yenilenen yapı kuşağının parçasıdır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.979305,
+    "lng": 32.607063
+  },
+  "adalar": [
+    {
+      "no": "18684",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Hotki Residence",
+    "Hotki İnşaat"
+  ],
+  "ozellikler": [
+    "Hotki İnşaat imzalı",
+    "Yerel kayıtlarda 'Hotki Residance' adıyla da geçer",
+    "Devlet Mahallesi"
+  ]
 }

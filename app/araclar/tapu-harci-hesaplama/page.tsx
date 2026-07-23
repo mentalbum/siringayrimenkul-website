@@ -84,9 +84,9 @@ export default function TapuHarciPage() {
 
       <section className="mt-12 max-w-3xl text-body">
       <Reveal>
-        <h2 className="text-xl text-navy">Örnek: 5.000.000 TL'lik satışta tapu masrafı</h2>
+        <h2 className="text-xl text-navy">Örnek: 5.000.000 TL&apos;lik satışta tapu masrafı</h2>
         <p className="mt-3 text-base leading-relaxed">
-          Toplam harç 200.000 TL'dir; yasal paylaşımla satıcı 100.000 TL, alıcı 100.000 TL
+          Toplam harç 200.000 TL&apos;dir; yasal paylaşımla satıcı 100.000 TL, alıcı 100.000 TL
           öder. Buna tapu müdürlüğünün döner sermaye ücreti eklenir. Satıcıysanız eve koyacağınız
           fiyatı belirlerken bu maliyeti ve varsa{" "}
           <Link href="/araclar/emlak-komisyonu-hesaplama" className="font-semibold text-gold-dark hover:underline">

@@ -10,6 +10,7 @@ import {
   getMahalleBySlug,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { FaqSection } from "@/components/ui/faq-section";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { truncateForMeta } from "@/lib/seo";
@@ -33,11 +34,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.baslik,
     description: truncateForMeta(post.ozet),
     alternates: { canonical: `/blog/${post.slug}` },
+    // Nested metadata objects replace the root layout's openGraph wholesale,
+    // so locale/siteName/images must be restated here.
     openGraph: {
       type: "article",
+      locale: "tr_TR",
+      siteName: siteConfig.name,
       title: post.baslik,
       description: truncateForMeta(post.ozet),
       publishedTime: post.tarih,
+      images: [{ url: "/images/ofis-ic-mekan.jpg", width: 1284, height: 936 }],
     },
   };
 }
@@ -82,7 +88,11 @@ export default async function BlogPostPage({ params }: Props) {
     publisher: organizationRef,
   };
 
-  const faqJsonLd = post.faq && post.faq.length > 0
+  // Posts that already carry a hand-written, richly-linked FAQ section in the
+  // body only get the JSON-LD; the rest get a visible FaqSection (which emits
+  // its own FAQPage JSON-LD).
+  const govdedeSss = post.content.includes("## Sık Sorulan Sorular");
+  const faqJsonLd = govdedeSss && post.faq && post.faq.length > 0
     ? {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -129,6 +139,10 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="prose prose-slate mt-8 max-w-none prose-headings:font-heading prose-headings:text-navy prose-a:text-gold-dark prose-a:no-underline hover:prose-a:underline">
         <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
+
+      {!govdedeSss && post.faq && post.faq.length > 0 && (
+        <FaqSection title="Sık Sorulan Sorular" items={post.faq} className="mt-12" />
+      )}
 
       {ilgiliMahalle && (
         <div className="mt-12 rounded-2xl border border-border bg-surface-muted px-6 py-6">

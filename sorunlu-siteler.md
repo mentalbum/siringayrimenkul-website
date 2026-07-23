@@ -599,3 +599,27 @@ Kayıt cumhuriyet/10-botanik-evleri, adalar 43264/8 → TKGM 404. Aynı adada 43
 
 ## İkinci Korukent sorusu KAPANDI (2026-07-23)
 guzelkent/korukent-sitesi zaten 19517/1 adasında kayıtlıymış; TKGM tapusu "16 Bl. Kargir Dub.Ev", 5.130 m² doğruladı. be'deki "Korukent no:15 (19517 Ada)" bununla aynı yerleşim — ayrı kayıt AÇILMAYACAK.
+
+## Denetim turu bulguları (2026-07-23 — ultracode denetimi)
+
+### Özgün'e sorulacak yeni çakışmalar
+- **Anemon ↔ Karkonut (Ata, 46424/1):** İki kayıt aynı parsel, aynı 4 blok (10'ar katlı) — aynı site için iki ad olabilir. Dupe ise birleştirme+redirect.
+- **Bosphorus Ankara ↔ Alpak & Neve Armonia (ŞOA, 46651/6):** İkisi de aynı parselde "650 konut" anlatıyor, metinler birbirinden habersiz. Aynı proje mi (On Altın ↔ Alpak+Neva ortaklığı), iki ayrı etap mı?
+- **Özharitacılar (YS, 19501/1+19502/1):** Güzel Ev (38 dubleks) + Gülvatan (19 dubleks) = 57; Özharitacılar da "57 dubleks, 2 ada" diyor — kooperatif çatı adı mı, ayrı yerleşim mi?
+- **Çelikler Sitesi (YS):** mahalleportal POI'si 45824/1'e düşüyor (11 katlı A-C + 10 katlı D); ama o parseli yerel rehber 'Esenkent' gösteriyor — kimlik çelişkili, koordinat bilerek eklenmedi.
+- **Ortak Grup Yapı (Ata):** Tek kaynak yerel rehberin '44756 Ada Ortak Yapı Grup' dizin etiketi — o parsel (44756/2) bizde Umut Yapı'ya kayıtlı. Gerçek bir site adı olmayabilir; silinsin mi?
+- **Manzara Evleri (Ata):** İki aday var — Bilge Türk Manzara Evleri (44784) ya da Mercan Kent; POI koordinatı ikisine de tam oturmuyor. Tabela teyidi gerekli.
+- **Ma1 Tower (goksu/):** Yandex kaydı Susuz Mah. Hisar Cad. gösteriyor — mahalle taşınsın mı (goksu→susuz)? (Koordinat eklendi, sayfa URL'si değişmedi.)
+- **Eser Yapı (susuz/):** Yandex + sahibinden 'Ata Mh. Eser Yapı Evleri' diyor — susuz→ata taşınsın mı?
+
+### Hayalet kayıtlar — hiçbir kaynakta iz yok (silinsin mi?)
+goksu/enday-sitesi, seyh-samil/turk-konut, cumhuriyet/botanik-sitesi, ata/kanat-yapi-evleri ("Kainat Yapı" 46418 olabilir — yazım hatası ihtimali), guzelkent/kurtulus-sitesi (sahibinden filtresinde adı var ama konum/kanıt yok — kalsın ama zenginleştirilemez).
+
+### GSC bilinmeyenleri — sonuç
+- nover westlife → YENİ KAYIT açıldı: cumhuriyet/nover-westlife (Nover Yapı, Necip Fazıl Cad, 16 kat/129 daire)
+- sky göksu → YENİ KAYIT açıldı: susuz/sky-goksu (RDV İnşaat, Sancak Sok No:3)
+- başkent eryaman → mevcut ata/baskent-sitesi; 'Başkent Eryaman' altAd eklendi
+- sorguçaspor → ÇÖZÜLEMEDİ (hiçbir kaynakta yok)
+
+### TKGM bekleyen nokta sorguları (API bugün 403 — kota)
+hotki-meydan (18684/1 teyidi), altas-relax-line, hurev, mercankent (44780 parsel no), ritim-eryaman, ma1-tower, pozitif-life, eser-yapi, polsan-gozde 46482/1 canlı teyit. Kota açılınca koşulacak; koordinatlar Yandex/yerel rehber kaynaklı eklendi.

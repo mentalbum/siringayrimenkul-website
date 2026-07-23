@@ -3,11 +3,19 @@
   "slug": "altas-relax-line",
   "mahalleSlug": "seker",
   "adres": "Şeker Mahallesi 1408. Cadde, Etimesgut/Ankara",
-  "aciklama": "Altaş Relax Line, Altaş İnşaat imzalı, iki blokta 65 konuttan oluşan bir sitedir; Şeker Mahallesi 1408. Cadde üzerindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Altaş Relax Line, Şeker Mahallesi'nde 1408. Cadde aksında yer alan, Altaş İnşaat imzalı modern bir konut projesidir; kayıtlarda 'Relax Line Projesi' adıyla geçer. Proje tanıtımlarına göre iki blokta 65 konut barındırır; ağırlıklı daire tipi yaklaşık 90 m² büyüklüğünde 2+1'dir, açık otopark ve yeşil alan düzenlemesi bulunur. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "2 blok, 65 konut",
-    "Müteahhit: Altaş İnşaat",
-    "1408. Cadde — Şeker Mahallesi"
+    "2 blok — 65 konut (proje tanıtımı)",
+    "2+1 daireler (~90 m²)",
+    "Altaş İnşaat — 'Relax Line' projesi",
+    "1408. Cadde aksı — Şeker Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "koordinat": {
+    "lat": 39.967214,
+    "lng": 32.654429
+  },
+  "alternatifAdlar": [
+    "Relax Line"
+  ]
 }

@@ -11,5 +11,9 @@
     "4022. Sokak No:7",
     "Yeşilova Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "koordinat": {
+    "lat": 39.964436,
+    "lng": 32.609806
+  }
 }
