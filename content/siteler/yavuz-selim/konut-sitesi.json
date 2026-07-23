@@ -19,5 +19,6 @@
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Çiçeklik Sokak çevresi — Yavuz Selim"
   ],
-  "zenginlestirildi": "2026-07-23"
+  "zenginlestirildi": "2026-07-23",
+  "sinirGeoJSON": "siteler/yavuz-selim/konut-sitesi-boundary.geojson"
 }

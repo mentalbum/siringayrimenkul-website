@@ -661,3 +661,16 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## Ma1 Tower konumu KESİNLEŞTİ (2026-07-24, Özgün teyidi — uydu görüntüsüyle)
 Özgün, Google'da 'Göksu Hisar Evleri' etiketli parselin (iki yüksek blok + avlu, Ankara Çevre Yolu bitişiği, Hisar Cad.) Ma1'in yaptığı yer olduğunu teyit etti. Kayda 'Göksu Hisar Evleri' + 'MA1 Yapı' alternatif adları ve iki-blok/çevre-yolu detayları işlendi. KALAN: ada/parsel no (KBS 64517/1 vs be 63362 çelişkisi) — TKGM kotası açılınca nokta sorgusu kesinleştirecek (kuyrukta); mahalle ataması (goksu↔susuz) kartı da açık.
+
+## TKGM kuyruğu KOŞULDU (2026-07-23 gece — kota gece penceresinde açıldı)
+### Kapananlar
+- **Altaş Relax = 46361/5** ("8 katlı A + 10 katlı B + 3 katlı C", 6.685 m²) — Akdal (46361/7) ve Meydan Cadde (46361/4) ile aynı ada. Kayıt+boundary işlendi; be'nin 46331 adayı yanlıştı.
+- **Ma1 Tower = 64517/1** (Arsa, 5.534 m²) — KBS ile TKGM aynı sonucu verdi, be'nin 63362'si eski. Kayıt+boundary işlendi, haritaya girdi. Ada çelişkisi kartı KAPANDI (mahalle taşıma kartı hâlâ açık).
+- Cumhuriyet Sitesi 46382/1 niteliği geldi: "1-5 blok kargir apartman" — metne işlendi; boundary TKGM geometrisiyle tazelendi.
+- Hotki 18684/1 niteliği: Tarla (proje yeni, tapu henüz dönüşmemiş) — ihtiyat cümlesi yerinde, alan metne işlendi.
+- Konut Sitesi 46231/1 boundary üretildi (tapu teyitli); KİMLİK kartı (Atadostlar mı?) hâlâ açık.
+
+### Yeni/güncellenen kartlar
+- **Pozitif Life ↔ Anka Vega (47544/4) YENİ ÇAKIŞMA:** Pozitif'in Yandex noktası TKGM'de 47544/4'e düştü — o parsel bizde Anka Vega'nın ("14 katlı A1+A2 betonarme ofis", 7.268 m²; koordinatlar 25 m). İki ad aynı yapıya mı ait (Meva/Pozitif ROİ), ayrı mı? Pozitif'e ada YAZILMADI.
+- **Ritim Eryaman:** noktası adasız parsel "/51"e düştü (Tarla, 10.926 m² — kentsel dönüşüm tapuya henüz yansımamış). Başkent Sular'ın 18477/1'inden AYRI parsel → dönüşüm hipotezi zayıfladı ama Tarla niteliği yüzünden dışlanamadı; ada yazılamıyor (ada no yok). Kart açık.
+- **Hürev ↔ Ata Life:** TKGM de Hürev noktasını 44774/3'te doğruladı (üçüncü kaynak). Kart açık, veri tarafı tamam.

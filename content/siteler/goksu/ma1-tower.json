@@ -2,7 +2,7 @@
   "isim": "MA1 Tower",
   "slug": "ma1-tower",
   "mahalleSlug": "goksu",
-  "aciklama": "MA1 Tower — haritalarda 'Göksu Hisar Evleri' adıyla da etiketlenir — Göksu-Susuz sınırındaki yeni gelişim aksında, Hisar Caddesi üzerinde MA1 Yapı tarafından geliştirilen 118 konutluk bir projedir. Uydu görünümünde iki yüksek blok ile ortadaki ortak avlu-otopark düzeni seçilir; Ankara Çevre Yolu bağlantısına bitişik konumu, şehir içi ve şehirlerarası ulaşımı aynı anda yakın kılar. Müteahhidin bölgedeki ikinci projesi olan Majör Göksu ile aynı imzayı taşır. Bu sitede satılık veya kiralık daireniz mi var? Yüksek katlı yapılarda fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "MA1 Tower — haritalarda 'Göksu Hisar Evleri' adıyla da etiketlenir — Göksu-Susuz sınırındaki yeni gelişim aksında, Hisar Caddesi üzerinde MA1 Yapı tarafından geliştirilen 118 konutluk bir projedir. Uydu görünümünde iki yüksek blok ile ortadaki ortak avlu-otopark düzeni seçilir; Ankara Çevre Yolu bağlantısına bitişik konumu, şehir içi ve şehirlerarası ulaşımı aynı anda yakın kılar. Müteahhidin bölgedeki ikinci projesi olan Majör Göksu ile aynı imzayı taşır. TKGM kayıtlarına göre projenin ana parseli yaklaşık 5.534 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Yüksek katlı yapılarda fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "ozellikler": [
     "Haritalarda 'Göksu Hisar Evleri' adıyla etiketli",
     "MA1 Yapı — 118 konut, iki yüksek blok",
@@ -18,5 +18,12 @@
   "alternatifAdlar": [
     "Göksu Hisar Evleri",
     "MA1 Yapı"
-  ]
+  ],
+  "adalar": [
+    {
+      "no": "64517",
+      "parsel": "1"
+    }
+  ],
+  "sinirGeoJSON": "siteler/goksu/ma1-tower-boundary.geojson"
 }

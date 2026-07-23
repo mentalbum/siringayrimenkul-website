@@ -2,7 +2,7 @@
   "isim": "Hotki Meydan",
   "slug": "hotki-meydan",
   "mahalleSlug": "devlet",
-  "aciklama": "Hotki Meydan, Devlet Mahallesi'nde Hotki İnşaat imzalı, modern bir konut yapısıdır; yerel emlak kayıtlarında 'Hotki Residance' adıyla da geçer. Devlet Mahallesi'nin oturmuş dokusu içinde, yenilenen yapı kuşağının parçasıdır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Hotki Meydan, Devlet Mahallesi'nde Hotki İnşaat imzalı, modern bir konut yapısıdır; yerel emlak kayıtlarında 'Hotki Residance' adıyla da geçer. TKGM kayıtlarına göre yapının bulunduğu parsel yaklaşık 3.004 m²'lik bir alana karşılık gelir. Devlet Mahallesi'nin oturmuş dokusu içinde, yenilenen yapı kuşağının parçasıdır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.979305,
     "lng": 32.607063
@@ -19,9 +19,10 @@
   ],
   "ozellikler": [
     "Hotki İnşaat imzalı",
+    "Yaklaşık 3 dönümlük parsel (TKGM)",
     "Yerel kayıtlarda 'Hotki Residance' adıyla da geçer",
     "Devlet Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-23",
+  "zenginlestirildi": "2026-07-24",
   "sinirGeoJSON": "siteler/devlet/hotki-meydan-boundary.geojson"
 }

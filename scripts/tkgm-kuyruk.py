@@ -21,18 +21,12 @@ BEKLE = 3.0  # sn — art arda isteklerde rate-limit şart
 # (etiket, kadastroId, ada, parsel, kayıt-yolu | None)
 # Kayıt yolu verilirse --uygula boundary üretir.
 DOGRUDAN = [
-    ("cumhuriyet-sitesi", "124123", "46382", "1", "content/siteler/eryaman/cumhuriyet-sitesi.json"),
-    ("hotki-meydan",      "124123", "18684", "1", "content/siteler/devlet/hotki-meydan.json"),
-    ("konut-sitesi",      "124123", "46231", "1", "content/siteler/yavuz-selim/konut-sitesi.json"),
+    # kuyruk boş — yeni bekleyenleri buraya ekle
 ]
 
 # (etiket, lat, lng) — koordinattan parsel bulunur; kayda işleme elle yapılır.
 NOKTA = [
-    ("altas-relax",  39.967214, 32.654429),
-    ("hurev-atalife-ayrimi", 40.000053, 32.601020),
-    ("ritim",        39.993945, 32.615106),
-    ("ma1-tower",    40.007739, 32.636384),
-    ("pozitif-life", 39.964436, 32.609806),
+    # kuyruk boş
 ]
 
 
