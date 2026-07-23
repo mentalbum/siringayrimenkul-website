@@ -7,7 +7,7 @@
     "lng": 32.6478
   },
   "sinirGeoJSON": "siteler/goksu/evinora-sitesi-boundary.geojson",
-  "aciklama": "Evinora Sitesi, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 7.186 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"15 Katlı A Blok Ve 16 Katlı B Bloktan Oluşan Betonarme Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Evinora Sitesi, Göksu Mahallesi'nde Akıncılar Caddesi üzerinde konumlanan iki bloklu bir konut sitesidir. Tapu kaydı yapıyı \"15 Katlı A Blok ve 16 Katlı B Bloktan Oluşan Betonarme Apartman\" olarak tanımlar; tek kat farkla kademelenen iki yüksek katlı blok, TKGM verisine göre yaklaşık 7.186 m²'lik — 7 dönümü aşan — kat mülkiyetli tek parselde yükselir. Site, aynı yapı adasını paylaştığı Koru Eryaman ve Göksu Manzara Evleri ile yan yanadır; adanın kuzey ucunda ise Lake Life yer alır. Harita servislerinde ve ilan portallarında sitenin \"Evinora 1\" adıyla da anıldığını görürsünüz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63379",
@@ -20,5 +20,9 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Evinora 1 Sitesi",
+    "Evinora 1 Konutları"
+  ]
 }

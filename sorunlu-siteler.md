@@ -568,3 +568,9 @@ YANLIŞ PARSEL ŞÜPHESİ (tapu 'okul' gösteriyor!): goksu-metrokent-sitesi (ni
 - **Turuncu Sitesi kaydı Akdam'ın parselini kopyalamış** (44776/2 — tapu/alan/sınır birebir): be'ye göre Turuncu aynı adada AYRI yerleşim (2-C..2-F blokları, adanın batısı). Turuncu'nun gerçek parseli pin kanıtıyla bulunup düzeltilmeli.
 - **Ahikent ↔ KC Lale Evleri aynı parselde (46644/1)**: be o adayı 'KC Lale Evleri' + 'Laleevleri 17-A..17-D' sayıyor; 'Ahikent' adı sahada doğrulanamadı — muhtemel dupe/eski ad, Özgün'e.
 - Akdam ailesi: be 'Yeni Akdam KYK' + bölge 'Etikent' (yeni bölge adı!); aynı adada be 'Gülkent Konutları' da listeliyor — repo'da gülkent kaydı var mı kontrol edilecek (yoksa aday).
+
+### Büyük parti ilk dalga notları (2026-07-26, 19 kayıt uygulandı)
+- Paketin ki-bayrağı ('Ve Arsası' kalıbından çıkarım) 3 parselde YANLIŞ alarm verdi (Güngörler, Yıldız Eryaman, +1) — ajanlar TKGM canlıyla düzeltip doğru yazdı; kalan dalgalar için paket bayrağına körü körüne güvenilmeyecek.
+- **Serenköy genişletme adayı**: be+OSM siteyi ÜÇ adaya (19532-33-36, ~20,5 dönüm) yayıyor; bizim kayıt tek ada (19533/1, 18 dubleks). Diğer iki adanın tapuları çekilip kayda eklenebilir.
+- **Çağlar Belde kimlik şüphesi**: 44763/4'ü be 'Erkent Umut + Sarmaşık Köşk' blokları olarak adlandırıyor — 'Çağlar Belde' adının bu parsele aidiyeti doğrulanamadı (eski Çağdaş Belde sorusuyla ilişkili olabilir). Pin/tabela kanıtı gerekli.
+- garden-zirve: TKGM canlı erişilemedi (API yönlendirme değişikliği görüldü: online.tkgm.gov.tr) — Kİ/KM durumu askıda, ihtiyatlı yazıldı.
