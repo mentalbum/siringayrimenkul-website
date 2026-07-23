@@ -7,7 +7,7 @@
     "lng": 32.606137
   },
   "sinirGeoJSON": "siteler/guzelkent/erkent-sitesi-boundary.geojson",
-  "aciklama": "Erkent Sitesi, Güzelkent Mahallesi'nde iki yerleşim adasına yayılan bir kooperatif sitesidir. TKGM kayıtlarına göre adalardan biri tapuda 'Dört Blok Betonarme Apartman' niteliğiyle kat mülkiyetli kayıtlıdır. İki adalı düzeni ve yerleşik komşuluk çevresiyle Güzelkent'in oturmuş kooperatif dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Erkent Sitesi, Güzelkent Mahallesi'nde iki yerleşim adasına yayılan bir kooperatif sitesidir. Tapu kayıtları iki adayı da net tarif eder: her iki parselde de dörder blok betonarme apartman — toplam sekiz blok; iki parselin toplamı yaklaşık 10.410 m²'dir. İki adalı düzeni ve yeşil ara bahçeleriyle Güzelkent'in oturmuş kooperatif dokusunun tipik örneğidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18639",
@@ -19,8 +19,9 @@
     }
   ],
   "ozellikler": [
-    "~5.247 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
+    "İki adada 4'er blok — toplam 8 blok (tapu kayıtları)",
+    "İki parselin toplamı ~10,4 dönüm (TKGM)",
+    "Kat mülkiyetli parseller",
     "Güzelkent Mahallesi"
   ],
   "zenginlestirildi": "2026-07-17"

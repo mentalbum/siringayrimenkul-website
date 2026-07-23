@@ -7,7 +7,7 @@
     "lng": 32.602959
   },
   "sinirGeoJSON": "siteler/devlet/oray-sitesi-boundary.geojson",
-  "aciklama": "Oray Sitesi, Eryaman Devlet Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre 9.540 m²'lik tek parsel üzerine kurulu ve tapuda iki kârgir apartman kayıtlı; parselde kat irtifakı kurulu. Bloklar yerel kayıtlarda 1 ve 1-A olarak geçiyor — geniş parseli iki bloğun paylaştığı ferah bir yerleşim. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "aciklama": "Oray Sitesi, Eryaman Devlet Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 9.540 m²'lik tek parsel üzerine kuruludur ve tapuda iki kargir apartman kayıtlıdır; bloklar yerel kayıtlarda 1 ve 1-A olarak anılır — iki blok için 9,5 dönümlük alan, bahçesi bol bir yerleşim demektir. Parselde kat irtifakı kuruludur; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18701",
@@ -15,8 +15,8 @@
     }
   ],
   "ozellikler": [
-    "9.540 m² tek parsel (TKGM)",
-    "2 blok (1 ve 1-A)",
+    "2 blok (1, 1-A) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 9,5 dönümlük tek parsel (TKGM)",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],

@@ -7,7 +7,7 @@
     "lng": 32.655161
   },
   "sinirGeoJSON": "siteler/seker/meydan-cadde-boundary.geojson",
-  "aciklama": "Meydan Cadde, Şeker Mahallesi'nin 1408. Cadde aksında konut ve çarşıyı bir arada barındıran karma bir yapıdır; zemininde asma katlı cadde dükkânları yer alır. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Meydan Cadde, Şeker Mahallesi'nin 1408. Cadde aksında konut ve çarşıyı bir arada barındıran karma bir yapıdır; zemininde asma katlı cadde dükkânları yer alır. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; adasını Akdal Residence ile paylaşır. Tapu kaydına göre yapı, yaklaşık 5.994 m²'lik parselde on iki katlı, ofis-işyeri niteliğiyle kayıtlıdır — dairelerde bu tapu tipi değerleme açısından fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46361",
@@ -15,9 +15,10 @@
     }
   ],
   "ozellikler": [
-    "Konut + cadde dükkânları (karma)",
-    "1408. Cadde aksı",
-    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+    "12 katlı — tapuda ofis-işyeri niteliği",
+    "Konut + asma katlı cadde dükkânları (karma)",
+    "Komşu: Akdal Residence (aynı ada)",
+    "1408. Cadde — Şeker çarşı-rezidans kümesi"
   ],
   "adres": "1408. Cadde, Şeker, Eryaman/Ankara",
   "zenginlestirildi": "2026-07-16"

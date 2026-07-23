@@ -7,7 +7,7 @@
     "lng": 32.656729
   },
   "sinirGeoJSON": "siteler/seker/altas-rezidans-boundary.geojson",
-  "aciklama": "Altaş Rezidans, Şeker Mahallesi'nde Malazgirt 1071 Caddesi aksında (1408. Cadde No:30) yer alan 10 katlı güvenlikli bir rezidanstır; Altaş İnşaat imzasını taşır ve ilanlarda açık mutfaklı 2+1 daireleri (~77-85 m²) öne çıkar. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Altaş Rezidans, Şeker Mahallesi'nde Malazgirt 1071 Caddesi aksında (1408. Cadde No:30) yer alan güvenlikli bir rezidanstır; Altaş İnşaat imzasını taşır ve ilanlarda açık mutfaklı 2+1 daireleri (~77-85 m²) öne çıkar. Tapu kaydına göre yapı, yaklaşık 5.200 m²'lik parselde on iki katlı A blok ile iki katlı B bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır — rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46362",
@@ -15,9 +15,9 @@
     }
   ],
   "ozellikler": [
-    "Altaş İnşaat — 10 katlı güvenlikli rezidans",
-    "Açık mutfaklı 2+1 (~77-85 m²)",
-    "Malazgirt 1071 Cd aksı",
+    "12 katlı A + 2 katlı B — tapuda ofis-işyeri niteliği",
+    "Altaş İnşaat — güvenlikli rezidans, açık mutfaklı 2+1",
+    "Malazgirt 1071 Cd aksı (1408. Cadde No:30)",
     "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
   ],
   "adres": "1408. Cadde No:30, Şeker, Eryaman/Ankara",
