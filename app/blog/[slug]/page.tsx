@@ -11,6 +11,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { FaqSection } from "@/components/ui/faq-section";
+import { getBlogKonu } from "@/lib/blog-konular";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { truncateForMeta } from "@/lib/seo";
@@ -56,9 +57,21 @@ export default async function BlogPostPage({ params }: Props) {
   const ilgiliMahalle = post.ilgiliMahalle ? getMahalleBySlug(post.ilgiliMahalle) : undefined;
 
   const tumYazilar = getAllBlogPosts().filter((p) => p.slug !== post.slug);
+  // Önce aynı mahalle, sonra aynı konu (satış/kira/miras-tapu/mahalle),
+  // en son geri kalanlar — okur kendi derdinin devamını görsün.
+  const buKonu = getBlogKonu(post.slug);
   const ilgiliYazilar = [
     ...tumYazilar.filter((p) => p.ilgiliMahalle && p.ilgiliMahalle === post.ilgiliMahalle),
-    ...tumYazilar.filter((p) => !post.ilgiliMahalle || p.ilgiliMahalle !== post.ilgiliMahalle),
+    ...tumYazilar.filter(
+      (p) =>
+        getBlogKonu(p.slug) === buKonu &&
+        !(p.ilgiliMahalle && p.ilgiliMahalle === post.ilgiliMahalle)
+    ),
+    ...tumYazilar.filter(
+      (p) =>
+        getBlogKonu(p.slug) !== buKonu &&
+        !(p.ilgiliMahalle && p.ilgiliMahalle === post.ilgiliMahalle)
+    ),
   ].slice(0, 3);
 
   const postUrl = `${siteConfig.url}/blog/${post.slug}`;

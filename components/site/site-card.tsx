@@ -1,8 +1,16 @@
 import Link from "next/link";
-import type { Site } from "@/lib/types";
 import { ArrowRightIcon, BuildingIcon } from "@/components/ui/icons";
 
-export function SiteCard({ site }: { site: Site }) {
+/** Kartın gerçekten kullandığı alanlar — tam Site da, liste için inceltilmiş
+ * özet de bu şekle uyar (structural typing). */
+interface SiteKartVerisi {
+  isim: string;
+  slug: string;
+  mahalleSlug: string;
+  aciklama: string;
+}
+
+export function SiteCard({ site }: { site: SiteKartVerisi }) {
   return (
     <Link
       href={`/mahalleler/${site.mahalleSlug}/${site.slug}`}

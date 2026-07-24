@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getSitelerByMahalle, getYayindaMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { SitelerBrowser } from "@/components/site/siteler-browser";
+import { inceltGruplar, sekmeAdlari } from "@/lib/siteler-liste";
 import { SitelerTabs } from "@/components/site/siteler-tabs";
 import { siteConfig } from "@/lib/site-config";
 
@@ -65,7 +66,18 @@ export default function YenimahalleSitelerPage() {
 
       <div className="mt-8">
         {mahalleler.length > 0 ? (
-          <SitelerBrowser gruplar={mahalleler} />
+          <SitelerBrowser
+            gruplar={inceltGruplar(mahalleler)}
+            digerSekme={{
+              etiket: "Eryaman",
+              href: "/siteler",
+              adlar: sekmeAdlari(
+                getYayindaMahalleler()
+                  .filter((mahalle) => mahalle.ilce === "Etimesgut")
+                  .map((mahalle) => ({ siteler: getSitelerByMahalle(mahalle.slug) }))
+              ),
+            }}
+          />
         ) : (
           <p className="rounded-2xl border border-border bg-surface p-6 text-sm text-muted">
             Bu bölgenin site listesi hazırlanıyor. Ata, Susuz veya Cumhuriyet

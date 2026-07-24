@@ -34,7 +34,15 @@ function AracKarti({
   );
 }
 
-function Sonuc({ satirlar, vurgu }: { satirlar: [string, string][]; vurgu?: string }) {
+function Sonuc({
+  satirlar,
+  vurgu,
+  ctaMetin = "Bu rakam sizin dairenizde nasıl görünür? Birlikte bakalım",
+}: {
+  satirlar: [string, string][];
+  vurgu?: string;
+  ctaMetin?: string;
+}) {
   return (
     <div className="mt-4 rounded-xl bg-navy p-4 text-white">
       {satirlar.map(([etiket, deger]) => (
@@ -44,6 +52,13 @@ function Sonuc({ satirlar, vurgu }: { satirlar: [string, string][]; vurgu?: stri
         </div>
       ))}
       {vurgu ? <p className="mt-2 border-t border-white/15 pt-2 text-xs leading-relaxed text-white/85">{vurgu}</p> : null}
+      <a
+        href="/ev-degerleme"
+        onClick={() => sendGAEvent("event", "arac_sonuc_cta")}
+        className="mt-3 block border-t border-white/15 pt-2.5 text-xs font-semibold text-gold hover:underline"
+      >
+        {ctaMetin} →
+      </a>
     </div>
   );
 }
@@ -110,6 +125,7 @@ export function KiraArtisiAraci() {
       </p>
       {yeniKira > 0 ? (
         <Sonuc
+          ctaMetin="Yeni kira sitenizdeki emsallere uyuyor mu? Kira değerlendirmesi isteyin"
           satirlar={[
             ["Yeni aylık kira", tl(yeniKira)],
             ["Aylık fark", tl(yeniKira - kiraN)],

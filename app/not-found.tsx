@@ -22,7 +22,25 @@ export default function NotFound() {
         bölgesindeki mahalleleri aşağıdan inceleyebilir veya doğrudan bizimle iletişime
         geçebilirsiniz.
       </p>
-      <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+      <form action="/siteler" method="get" className="mt-8 flex w-full max-w-md gap-2">
+        <label htmlFor="ara-404" className="sr-only">
+          Site adı arayın
+        </label>
+        <input
+          id="ara-404"
+          type="search"
+          name="ara"
+          placeholder="Hangi siteyi arıyordunuz? (örn. Ayyıldız)"
+          className="w-full rounded-full border border-border bg-surface px-5 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
+        />
+        <button
+          type="submit"
+          className="shrink-0 cursor-pointer rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition-colors hover:bg-gold-dark"
+        >
+          Ara
+        </button>
+      </form>
+      <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
         <CtaButton href="/mahalleler" variant="primary">
           Mahalleleri İncele
         </CtaButton>
