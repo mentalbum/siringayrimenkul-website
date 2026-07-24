@@ -19,6 +19,7 @@ import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { blokOzellikleri, tapuCumlesi } from "@/lib/ada-bilgi";
 import { bulunmaHaliKi, tamlayanEk } from "@/lib/turkce";
 
 type Props = {
@@ -164,6 +165,45 @@ export default async function AdaPage({ params }: Props) {
               </div>
             </>
           )}
+          {/* Bu parselin tapu kimliği — ziyaretçi kendi adasını arayıp geldiğinde
+              aradığı bilgi ilk ekranda olsun. Paylaşımlı adalarda aynı tapu
+              cümlesi her site için tekrar etmesin: tek kez gösterilir, bloklar
+              site adıyla ayrı listelenir. */}
+          {(() => {
+            const tapuMetinleri = Array.from(
+              new Set(entries.map((entry) => tapuCumlesi(entry.site)).filter(Boolean))
+            ) as string[];
+            const blokSatirlari = entries
+              .map((entry) => ({ isim: entry.site.isim, bloklar: blokOzellikleri(entry.site) }))
+              .filter((satir) => satir.bloklar.length > 0);
+            if (tapuMetinleri.length === 0 && blokSatirlari.length === 0) return null;
+            return (
+              <div className="rounded-2xl border border-border bg-surface-muted p-5">
+                {tapuMetinleri.map((metin) => (
+                  <p key={metin} className="text-sm leading-relaxed text-body [&+p]:mt-2">
+                    {metin}
+                  </p>
+                ))}
+                {blokSatirlari.map((satir) => (
+                  <div key={satir.isim} className="mt-3">
+                    {entries.length > 1 && (
+                      <p className="text-xs font-semibold text-navy">{satir.isim}</p>
+                    )}
+                    <ul className="mt-1.5 flex flex-wrap gap-2">
+                      {satir.bloklar.map((blok) => (
+                        <li
+                          key={blok}
+                          className="rounded-full border border-border bg-surface px-3 py-1 text-xs font-medium text-body"
+                        >
+                          {blok}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            );
+          })()}
           {!ada.site.koordinat && (
             <CtaButton href={`/mahalleler/${mahalle.slug}`} variant="outline">
               {mahalle.isim} Haritasını Görüntüle
