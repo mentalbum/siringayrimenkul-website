@@ -203,6 +203,19 @@ export default async function MahallePage({ params }: Props) {
               yerdesiniz.
             </>
           )}
+          {mahalle.ilce === "Yenimahalle" && (
+            <>
+              {" "}
+              {kisaIsim} dahil Yenimahalle tarafındaki tüm siteleri{" "}
+              <Link
+                href="/siteler/yenimahalle"
+                className="font-semibold text-gold-dark hover:underline"
+              >
+                Yenimahalle siteleri listemizde
+              </Link>{" "}
+              bulabilirsiniz.
+            </>
+          )}
         </p>
       </header>
 

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { SiteCard } from "@/components/site/site-card";
 import { SearchIcon } from "@/components/ui/icons";
@@ -37,8 +37,12 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
     return () => window.clearTimeout(id);
   }, []);
 
+  // Bitişik yazımlar da eşleşsin ("eryamanevleri" → "Eryaman Evleri").
   const normalize = (s: string) => s.toLocaleLowerCase("tr");
-  const sorguNormalized = normalize(sorgu.trim());
+  const duz = (s: string) => normalize(s).replace(/\s+/g, "");
+  const ertelenmisSorgu = useDeferredValue(sorgu);
+  const sorguNormalized = normalize(ertelenmisSorgu.trim());
+  const sorguDuz = duz(ertelenmisSorgu.trim());
 
   const filtreliGruplar = useMemo(() => {
     if (!sorguNormalized) return gruplar;
@@ -52,7 +56,10 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
           siteler: siteler.filter(
             (site) =>
               normalize(site.isim).includes(sorguNormalized) ||
-              (site.alternatifAdlar ?? []).some((ad) => normalize(ad).includes(sorguNormalized))
+              duz(site.isim).includes(sorguDuz) ||
+              (site.alternatifAdlar ?? []).some(
+                (ad) => normalize(ad).includes(sorguNormalized) || duz(ad).includes(sorguDuz)
+              )
           ),
         };
       })
@@ -63,7 +70,7 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
 
   const digerSekmeEslesme = useMemo(() => {
     if (!digerSekme || !sorguNormalized || toplamEslesme > 0) return 0;
-    return digerSekme.adlar.filter((ad) => normalize(ad).includes(sorguNormalized)).length;
+    return digerSekme.adlar.filter((ad) => normalize(ad).includes(sorguNormalized) || duz(ad).includes(sorguDuz)).length;
   }, [digerSekme, sorguNormalized, toplamEslesme]);
 
   return (

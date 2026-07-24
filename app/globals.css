@@ -183,3 +183,9 @@ details[open] > .faq-cevap {
     0 0 4px #1c1b24,
     0 1px 3px #1c1b24;
 }
+
+/* Uzun listelerde ekran dışı kartların render maliyetini erteler */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 220px;
+}

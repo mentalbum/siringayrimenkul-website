@@ -49,7 +49,7 @@ const adimlar = [
     baslik: "Profesyonel Sanal Tur Hizmeti",
     aciklama:
       "Talep eden müşterilerimiz için 3D sanal tur çekimi de sunuyoruz; bir örneğini aşağıdan inceleyebilirsiniz.",
-    link: { href: "https://my.matterport.com/models/uUjuZULQtzJ", label: "Örnek Turu İncele" },
+    link: { href: "https://my.matterport.com/show/?m=uUjuZULQtzJ", label: "Örnek Turu İncele" },
   },
 ];
 

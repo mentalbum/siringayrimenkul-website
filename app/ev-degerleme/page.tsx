@@ -102,7 +102,15 @@ export default function EvDegerlemePage() {
           >
             ev sahibi hesap araçlarımıza
           </Link>{" "}
-          da göz atın: kira artışı, tapu harcı, yasal komisyon ve boş kalma maliyeti.
+          da göz atın: kira artışı, tapu harcı, yasal komisyon ve boş kalma maliyeti. Değerlemede
+          nelere baktığımızı merak ediyorsanız{" "}
+          <Link
+            href="/blog/eryamanda-ev-fiyatlarini-ne-belirler"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            fiyatı ne belirler yazımız
+          </Link>{" "}
+          etap, site, kat ve tapu durumunun etkisini anlatır.
         </p>
       </header>
 

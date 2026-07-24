@@ -176,6 +176,17 @@ export default async function SitePage({ params }: Props) {
       <header className="mt-4 max-w-3xl">
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Eryaman · {mahalle.isim} · {mahalle.ilce}
+          {site.adalar?.[0]?.etap && (
+            <>
+              {" · "}
+              <Link
+                href={`/mahalleler/${mahalle.slug}/etaplar/${site.adalar[0].etap}`}
+                className="cursor-pointer hover:underline"
+              >
+                {site.adalar[0].etap}. Etap
+              </Link>
+            </>
+          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{site.isim}</h1>
         {tipi && (

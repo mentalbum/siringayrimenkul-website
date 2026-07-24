@@ -88,11 +88,49 @@ export default async function RootLayout({
     telephone: siteConfig.phoneTel,
     knowsLanguage: "tr-TR",
     sameAs: [
+      siteConfig.officeMapsUrl,
       siteConfig.yandexMapsUrl,
       siteConfig.tiktokUrl,
       siteConfig.instagramUrl,
       siteConfig.facebookUrl,
     ],
+    knowsAbout: [
+      "Eryaman emlak piyasası",
+      "konut satışı",
+      "konut kiralama",
+      "ev değerleme ve emsal analizi",
+      "tapu ve kat mülkiyeti işlemleri",
+    ],
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Emlak Hizmetleri",
+      itemListElement: [
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Eryaman'da Ev Satış Danışmanlığı",
+            url: `${siteConfig.url}/eryamanda-ev-satmak`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Eryaman'da Ev Kiraya Verme Danışmanlığı",
+            url: `${siteConfig.url}/eryamanda-ev-kiraya-vermek`,
+          },
+        },
+        {
+          "@type": "Offer",
+          itemOffered: {
+            "@type": "Service",
+            name: "Ev Değerleme (Emsal Bazlı Fiyat Analizi)",
+            url: `${siteConfig.url}/ev-degerleme`,
+          },
+        },
+      ],
+    },
     // Görünmez ama meşru "gömme": hizmet bölgesinin tamamı — Eryaman + 11
     // mahalle — arama motorlarına yapılandırılmış veriyle bildirilir.
     areaServed: [

@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  images: {
+    // Logo/görseller dosya adı değişmeden güncellenmez — tarayıcı önbelleği 31 gün.
+    minimumCacheTTL: 2678400,
+    formats: ["image/avif", "image/webp"],
+  },
   async redirects() {
     return [
       {
