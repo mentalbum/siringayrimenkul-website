@@ -7,7 +7,7 @@
     "lng": 32.66354
   },
   "sinirGeoJSON": "siteler/cumhuriyet/hittown-boundary.geojson",
-  "aciklama": "Hittown, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Hityapı İnşaat (Hit Yapı) tarafından geliştirilmiş, karma kullanımlı büyük bir konut projesidir. Geliştiricinin verilerine göre 4 blokta toplam 586 daire ile 62 adet cadde mağazası yer alıyor; daireler 1+1, 1,5+1, 2+1, 2,5+1, 3,5+1 ve 4,5+1 olmak üzere geniş bir tip yelpazesinde planlanmış. 2016'da teslim edilen projede doğal süs havuzu ve peyzaj, çocuk oyun alanları, basketbol ve mini futbol sahaları, kapalı fitness salonu ve 7/24 güvenlik bulunuyor. 62 cadde mağazalı zemin düzeni, Hittown'u yalnızca bir konut sitesi değil Yeni Batı'nın alışveriş akslarından biri yapar; site sakini için kapıda çözülen günlük yaşam demektir. Bu sitede satılık veya kiralık daireniz mi var? Geniş tip çeşitliliği olan bu projede fiyatı tip, kat ve cephe belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Hittown, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Hityapı İnşaat (Hit Yapı) tarafından geliştirilmiş, karma kullanımlı büyük bir konut projesidir. Geliştiricinin verilerine göre 4 blokta toplam 586 daire ile 62 adet cadde mağazası yer alıyor; daireler 1+1, 1,5+1, 2+1, 2,5+1, 3,5+1 ve 4,5+1 olmak üzere geniş bir tip yelpazesinde planlanmış. 2016'da teslim edilen projede doğal süs havuzu ve peyzaj, çocuk oyun alanları, basketbol ve mini futbol sahaları, kapalı fitness salonu ve 7/24 güvenlik bulunuyor. 62 cadde mağazalı zemin düzeni, Hittown'u yalnızca bir konut sitesi değil Yeni Batı'nın alışveriş akslarından biri yapar; site sakini için kapıda çözülen günlük yaşam demektir. Tapu kaydı karma yapıyı doğrular: yaklaşık 26.568 m²'lik parselde on dokuzar katlı A, B, C ve D konut blokları ile iki katlı F blok (ofis-işyeri) — 26 dönümü aşan tek parsel. Bu sitede satılık veya kiralık daireniz mi var? Geniş tip çeşitliliği olan bu projede fiyatı tip, kat ve cephe belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62685",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 19'ar katlı 4 konut bloğu + 2 katlı ticari blok",
+    "Yaklaşık 26,6 dönümlük parsel (TKGM)",
     "Hityapı İnşaat — 4 blok, 586 daire",
     "1+1'den 4,5+1'e geniş tip yelpazesi",
     "62 adet cadde mağazası (karma kullanım)",
-    "2016 teslim",
-    "Süs havuzu, fitness, basketbol/mini futbol, güvenlik"
+    "2016 teslim"
   ],
   "zenginlestirildi": "2026-07-14"
 }

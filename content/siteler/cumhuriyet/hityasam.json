@@ -7,7 +7,7 @@
     "lng": 32.6601306
   },
   "sinirGeoJSON": "siteler/cumhuriyet/hityasam-boundary.geojson",
-  "aciklama": "Hityaşam, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:642'de Hityapı İnşaat (Hit Yapı) tarafından geliştirilmiş, konut ve ticareti bir arada sunan butik bir projedir. Geliştiricinin verilerine göre projede 126 daire (2+1 ve 2,5+1 tiplerinde) ile 34 adet cadde mağazası, restoran ve kafe yer alıyor; ayrıca Nata Delta AVM ile bağlantısı bulunuyor. İstanbul Yolu metro durağına yürüme mesafesi ve Atatürk Olimpiyat Parkı manzarası projenin öne çıkan avantajları arasında; açık-kapalı çocuk oyun alanları, kapalı spor salonu ve 7/24 güvenlik standart donatıları. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Hityaşam, Yeni Batı'da Fatih Sultan Mehmet Bulvarı No:642'de Hityapı İnşaat (Hit Yapı) tarafından geliştirilmiş, konut ve ticareti bir arada sunan butik bir projedir. Geliştiricinin verilerine göre projede 126 daire (2+1 ve 2,5+1 tiplerinde) ile 34 adet cadde mağazası, restoran ve kafe yer alıyor; ayrıca Nata Delta AVM ile bağlantısı bulunuyor. İstanbul Yolu metro durağına yürüme mesafesi ve Atatürk Olimpiyat Parkı manzarası projenin öne çıkan avantajları arasında; açık-kapalı çocuk oyun alanları, kapalı spor salonu ve 7/24 güvenlik standart donatıları. Tapu kaydına göre yapı, yaklaşık 7.620 m²'lik parselde on sekiz katlı, konut ile ofis-işyerini bir arada barındıran nitelikle kayıtlıdır; karma tapu tipi değerlemede fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62689",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "18 katlı — tapuda konut + ofis-işyeri karma niteliği",
+    "Yaklaşık 7,6 dönümlük parsel (TKGM)",
     "Hityapı İnşaat — 126 daire (2+1 / 2,5+1)",
     "34 cadde mağazası + restoran/kafe",
     "Nata Delta AVM bağlantısı",
-    "İstanbul Yolu metrosuna yürüme mesafesi",
-    "Atatürk Olimpiyat Parkı manzarası"
+    "İstanbul Yolu metrosuna yürüme mesafesi"
   ],
   "adres": "Fatih Sultan Mehmet Bulvarı No:642, Yeni Batı, Yenimahalle/Ankara",
   "zenginlestirildi": "2026-07-14"
