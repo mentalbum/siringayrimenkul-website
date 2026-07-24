@@ -1,7 +1,7 @@
 import type { AdaEntry, EtapEntry } from "@/lib/content";
 import { adaDisplayLabel, mahalleKisaIsim } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
-import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
+import { bulunmaHali, bulunmaHaliKi, tamlayanHali, dahiBaglaci } from "@/lib/turkce";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
 
@@ -64,7 +64,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
     {
       soru: `${site.isim} emlakçısı kimdir?`,
       cevap: tipi
-        ? `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor; ${site.isim} de yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
+        ? `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
         : `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
     {

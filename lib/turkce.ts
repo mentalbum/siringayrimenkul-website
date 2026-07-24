@@ -92,3 +92,13 @@ export function tamlayanEk(isim: string): string {
 export function bulunmaEk(isim: string): string {
   return bulunmaHali(isim).slice(isim.length);
 }
+
+/** Ayrı yazılan "de/da" bağlacı — son ünlüye göre: Blokları da, Sitesi de. */
+export function dahiBaglaci(isim: string): string {
+  const unluler = "aeıioöuü";
+  const kucuk = isim.toLocaleLowerCase("tr");
+  for (let i = kucuk.length - 1; i >= 0; i--) {
+    if (unluler.includes(kucuk[i])) return "aıou".includes(kucuk[i]) ? "da" : "de";
+  }
+  return "de";
+}

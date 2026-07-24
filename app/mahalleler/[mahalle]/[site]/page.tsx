@@ -57,7 +57,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
   return {
     title: isimdeEryamanVar
-      ? `${site.isim} Satılık ve Kiralık Daireler — Emlakçısı ve Daire Fiyatları`
+      ? `${site.isim} Satılık ve Kiralık Daireler — Yerel Emlakçısı ve Daire Fiyatları`
       : `${site.isim} Satılık ve Kiralık Daireler — Eryaman Emlakçısı ve Daire Fiyatları`,
     description: truncateForMeta(
       `${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
