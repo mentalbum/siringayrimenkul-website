@@ -678,3 +678,14 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 ## İki kart daha KAPANDI (2026-07-23 gece, kota penceresi)
 - **10. Botanik 43264/8 GERÇEK:** önceki 404 yanlış kadastro ID'sindendi; nokta sorgusu Yuva kadastrosunda buldu (Arsa, 7.895 m²). Kayıt+boundary işlendi; Arissa (43264/7) komşuluğu metne girdi. '43264/8 tapuda yok' kartı kapandı.
 - **Manzara Evleri (Ata) = 44776/3:** iki-aday ikilemi bitti — ne Bilge Türk ne Mercan Kent; kendi parseli var ("11 katlı A + 10 katlı B betonarme mesken", 9.331 m²). Koordinat+ada+boundary+metin işlendi, haritaya girdi. Not: 44776 adası Turuncu kartındaki adayla aynı (Akdam /2'de) — Turuncu sorusu hâlâ açık.
+
+## Yenimahalle KBS ada dökümleri (2026-07-23 gece) — kartlara kanıt
+8 tartışmalı adanın TAM parsel listesi alındı (kotasız kaynak; cache: scratchpad/kbs-ada-dokumleri.json, geometriler WGS84 dahil):
+- **44756:** /1 "A 15 katlı + B 17 katlı mesken" 10.188 (Doğasu çifti BU parselde — tapu TEK site tarif ediyor → dupe kanıtı güçlendi) · /2 ARSA 16.809 (Umut Yapı ✓).
+- **44759:** TEK parsel /1 "A,B,C,F 10 katlı + D,E 11 katlı" 19.214 — Ayyıldız↔Şenser: iki blok grubu tek tapuda; paylaşım deseni mümkün.
+- **44769:** TEK parsel /1 "2 katlı dükkan + 7 blok apartman" 21.145 — Belmi Kent↔Prestij Park aynı tapuda.
+- **44773/3:** "A-B-C-D 12'şer katlı mesken, Or…" 14.821 — Batı Sistemciler↔Mavi Bayrak.
+- **44776:** /2 "A 8 katlı + B 7 katlı" 9.933 (Akdam; Turuncu pini burada) · /3 ARSA 9.331 (Manzara Evleri ✓ — dikkat: TKGM /3'e "11+10 katlı A-B mesken" diyor, KBS "ARSA" — KBS niteliği bayat olabilir, TKGM esas).
+- **44784/1:** TEK parsel "11 katlı A-D-E + 14 katlı B-C" 19.783 — be'nin 'Bilge Türk Manzara' tarif ettiği 5 bloklu kompleks; Tatlı Yamaç↔Palmiye kartının nesnesi bu tek kompleks.
+- **43264 (Botanik ailesi) 6 parsel:** /4 "A 10 katlı + B dükkan" 4.112 · /5 "13 katlı" 5.238 · /6 apartman 4.264 (Yeni Botanik ✓) · /7 "A 15 katlı + B 3 katlı dükkan" 7.002 (Arissa ✓; Park Sera pini burada) · /8 ARSA 7.895 (10. Botanik ✓) · /9 ARSA 4.649. Park Sera için boş adaylar: /4, /5, /9.
+- **62662 (Mes Polaris):** KBS'de yalnız /2 Arsa 3.026 ve /3 Arsa 4.209 (TKGM /2'ye 'Spor Tesisi' demişti — kaynak farkı not edildi).
