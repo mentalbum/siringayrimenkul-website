@@ -7,7 +7,7 @@
     "lng": 32.653387
   },
   "sinirGeoJSON": "siteler/seker/volga-residence-boundary.geojson",
-  "aciklama": "Volga Residence, Şeker Mahallesi'nde Gimsa Park yanında, cadde üzeri konumlu bir rezidanstır; ilanlarda eşyalı 1+1 daireleri (~55 m² net) öne çıkar — kiralık talebi yüksek bir yatırım noktası. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Volga Residence, Şeker Mahallesi'nde Gimsa Park yanında, cadde üzeri konumlu bir rezidanstır; ilanlarda eşyalı 1+1 daireleri (~55 m² net) öne çıkar — kiralık talebi yüksek bir yatırım noktası. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Tapu kaydına göre yapı, yaklaşık 5.054 m²'lik parselde sekizer katlı A ve B bloklardan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46368",
@@ -15,6 +15,8 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 2 blok (A-B), 8'er katlı — ofis-işyeri niteliği",
+    "Yaklaşık 5 dönümlük parsel (TKGM)",
     "1+1 ağırlıklı (~55 m² net)",
     "Gimsa Park yanı, cadde üzeri",
     "Eşyalı kiralık talebi yüksek",

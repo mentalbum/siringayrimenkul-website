@@ -7,7 +7,7 @@
     "lng": 32.647855
   },
   "sinirGeoJSON": "siteler/susuz/oniz-nirvana-boundary.geojson",
-  "aciklama": "Öniz Nirvana Susuz Konutları, Öniz Şirketler Grubu'nun (ASM Group) Susuz projesidir. Proje kaynaklarına göre 11.585 m²'lik alanda yükseliyor; yürüyüş alanları, spor alanları ve çocuk oyun alanlarıyla donatılmış. İlanlarda 'ASM Öniz' adıyla geçen geniş 4+1 daireleri öne çıkar. (Grubun Öniz Center, Öniz Bağlıca ve Öniz Kent projeleri ayrı yerleşimlerdir.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Öniz Nirvana Susuz Konutları, Öniz Şirketler Grubu'nun (ASM Group) Susuz projesidir. Proje kaynaklarına göre 11.585 m²'lik alanda yükseliyor; yürüyüş alanları, spor alanları ve çocuk oyun alanlarıyla donatılmış. İlanlarda 'ASM Öniz' adıyla geçen geniş 4+1 daireleri öne çıkar. (Grubun Öniz Center, Öniz Bağlıca ve Öniz Kent projeleri ayrı yerleşimlerdir.) Tapu kaydına göre proje, yaklaşık 11.585 m²'lik parselde on yedişer katlı A ve B bloklardan oluşur; nitelik konut ile ofis-işyerini bir arada kaydeder — rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63339",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 2 blok (A-B), 17'şer katlı — karma nitelik",
+    "Yaklaşık 11,6 dönümlük parsel (TKGM)",
     "Öniz Şirketler Grubu / ASM Group",
     "11.585 m² alan",
     "Yürüyüş, spor ve çocuk oyun alanları",
-    "Geniş 4+1 tipler",
-    "Susuz — Göksu kentsel gelişim bölgesi"
+    "Geniş 4+1 tipler"
   ],
   "alternatifAdlar": [
     "ASM Öniz",

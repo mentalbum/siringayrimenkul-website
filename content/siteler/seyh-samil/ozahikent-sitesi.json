@@ -6,7 +6,7 @@
     "lat": 40.0004,
     "lng": 32.6256
   },
-  "aciklama": "Özahikent Sitesi, Şeyh Şamil Mahallesi'nde on iki yerleşim adasına yayılan büyük bir kooperatif yerleşimidir ve Eryaman'ın en şiirsel blok adlandırmasına sahiptir: apartmanları alfabetik sırayla çiçek ve bitki adları taşır — Damla, Defne, Doğa; Filiz, Fulya, Funda; Gonca, Gül; Ilgaz, Itır; Manolya, Melisa, Menekşe; Yakamoz, Yaprak, Yasemin, Yonca... Her ada kendi harf grubunun çiçekleriyle anılır. On iki adaya yayılan bu ölçek, Özahikent'i Şeyh Şamil'in en geniş kooperatif yerleşimlerinden biri yapar; ada ada ilerleyen düzeni ve bitki adlı apartmanlarıyla mahalle kimliğinin taşıyıcılarındandır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Özahikent Sitesi, Şeyh Şamil Mahallesi'nde on iki yerleşim adasına yayılan büyük bir kooperatif yerleşimidir ve Eryaman'ın en şiirsel blok adlandırmasına sahiptir: apartmanları alfabetik sırayla çiçek ve bitki adları taşır — Damla, Defne, Doğa; Filiz, Fulya, Funda; Gonca, Gül; Ilgaz, Itır; Manolya, Melisa, Menekşe; Yakamoz, Yaprak, Yasemin, Yonca... Her ada kendi harf grubunun çiçekleriyle anılır. On iki adaya yayılan bu ölçek, Özahikent'i Şeyh Şamil'in en geniş kooperatif yerleşimlerinden biri yapar; ada ada ilerleyen düzeni ve bitki adlı apartmanlarıyla mahalle kimliğinin taşıyıcılarındandır. Tapu kayıtları kümenin ölçeğini gösterir: on iki ayrı adada toplam yaklaşık 161 dönümlük alan, her adada iki ile dört arasında değişen betonarme apartman bloğu — Eryaman'ın en geniş kooperatif yerleşimlerinden. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "sinirGeoJSON": "siteler/seyh-samil/ozahikent-sitesi-boundary.geojson",
   "adalar": [
     {
@@ -59,6 +59,8 @@
     }
   ],
   "ozellikler": [
+    "12 ada — toplam ~161 dönüm (TKGM)",
+    "Ada başına 2-4 blok, betonarme apartman",
     "12 yerleşim adası — büyük kooperatif yerleşimi",
     "Apartmanlar alfabetik çiçek/bitki adlı (Damla'dan Yonca'ya)",
     "Şeyh Şamil Mahallesi"

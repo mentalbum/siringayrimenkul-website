@@ -7,7 +7,7 @@
     "lng": 32.6073552
   },
   "sinirGeoJSON": "siteler/yesilova/dogan-life-boundary.geojson",
-  "aciklama": "Doğan Life Konutları, Yeşilova'da 4014. Cadde üzerinde Doğan Grup tarafından geliştirilen bir konut sitesidir. Proje kaynaklarına göre 2 blokta toplam 112 daire yer alıyor; daireler 2+1 ve 3+1 tiplerinde. Geniş peyzaj alanı, 7/24 güvenlik ile kapalı ve açık otoparka sahip site, Optimum AVM-Ayaş Yolu aksına yakındır. (Doğan Grup'un City, Tower ve Castle projeleri ayrı yerleşimlerdir.) Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Doğan Life Konutları, Yeşilova'da 4014. Cadde üzerinde Doğan Grup tarafından geliştirilen bir konut sitesidir. Proje kaynaklarına göre 2 blokta toplam 112 daire yer alıyor; daireler 2+1 ve 3+1 tiplerinde. Geniş peyzaj alanı, 7/24 güvenlik ile kapalı ve açık otoparka sahip site, Optimum AVM-Ayaş Yolu aksına yakındır. (Doğan Grup'un City, Tower ve Castle projeleri ayrı yerleşimlerdir.) Tapu kaydına göre yapı, yaklaşık 2.500 m²'lik parselde yedi katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47550",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "7 katlı — tapuda ofis-işyeri niteliği",
+    "Yaklaşık 2,5 dönümlük parsel (TKGM)",
     "Doğan Grup — 2 blok, 112 daire",
     "2+1 ve 3+1 tipler",
     "Geniş peyzaj, 7/24 güvenlik, kapalı+açık otopark",
-    "Optimum AVM aksına yakın",
-    "Yeşilova / Eryaman gelişim aksı"
+    "Optimum AVM aksına yakın"
   ],
   "adres": "4014. Cadde No:4, Yeşilova, Etimesgut/Ankara",
   "alternatifAdlar": [

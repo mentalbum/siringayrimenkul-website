@@ -7,7 +7,7 @@
     "lng": 32.657724
   },
   "sinirGeoJSON": "siteler/seker/hill-tower-boundary.geojson",
-  "aciklama": "Hill Tower, Şeker Mahallesi'nde 1408. Cadde üzerinde yükselen yüksek katlı bir rezidanstır; yatırımlık kompakt daireleriyle bilinir. (Şehit Osman Avcı'daki Hill Tower Göksu ayrı bir projedir.) Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Hill Tower, Şeker Mahallesi'nde 1408. Cadde üzerinde yükselen yüksek katlı bir rezidanstır; yatırımlık kompakt daireleriyle bilinir. (Şehit Osman Avcı'daki Hill Tower Göksu ayrı bir projedir.) Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Tapu kaydına göre yapı, yaklaşık 5.488 m²'lik parselde on katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46362",
@@ -15,6 +15,8 @@
     }
   ],
   "ozellikler": [
+    "10 katlı — tapuda ofis-işyeri niteliği",
+    "Yaklaşık 5,5 dönümlük parsel (TKGM)",
     "Yüksek katlı rezidans",
     "Yatırımlık kompakt daireler",
     "SOA'daki Hill Tower Göksu'dan ayrı",
