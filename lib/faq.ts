@@ -101,10 +101,45 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
     soru: `${bulunmaHali(site.isim)} dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
     cevap: `Doğru kira, ${bulunmaHaliKi(site.isim)} emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerinde görünen fiyatlar çoğu zaman yanıltıcıdır. Kiralamayı bize emanet ettiğinizde dairenize özel kira tespitini biz yapıyoruz; sonrasında kiracı doğrulama, sözleşme ve fotoğraflı teslim tutanağı dahil tüm süreci üstleniyoruz.`,
   });
-  items.push({
-    soru: `${site.isim} hakkında güncel ilan veya fiyat bilgisi nereden alabilirim?`,
-    cevap: `${site.isim} ile ilgili güncel satılık/kiralık ilanlarımıza sahibinden.com mağazamızdan ulaşabilir, fiyat ve detaylar için bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
-  });
+  // Siteye ÖZEL sorular — kaydın kendi tapu diline göre. Ziyaretçi kendi
+  // sitesinin sayfasında kendi durumunun cevabını görsün diye; hepsi mevcut
+  // veriden türer, uydurma yok. (Jenerik "güncel ilan nereden" sorusu 3.
+  // maddeyle çakıştığı için kaldırıldı — sayı artmıyor, isabet artıyor.)
+  const metin = `${site.aciklama} ${(site.ozellikler ?? []).join(" ")}`.toLocaleLowerCase("tr");
+
+  if (metin.includes("ofis-işyeri") || metin.includes("ofis işyeri") || metin.includes("büro")) {
+    items.push({
+      soru: `${bulunmaHaliKi(site.isim)} tapu niteliği nedir — konut mu, ofis mi?`,
+      cevap: `Tapu kaydında bu yapı ofis-işyeri niteliğiyle görünüyor; bölgedeki birçok rezidansta karşılaşılan bir durumdur. Daire fiilen konut olarak kullanılsa da tapu tipi değerlemeyi, alıcının kredi sürecini ve aidat/kullanım düzenini etkileyebilir. Satış ya da kiralama öncesi güncel tapu kaydını birlikte kontrol edip sizi doğru bilgilendiriyoruz.`,
+    });
+  } else if (metin.includes("kat irtifak")) {
+    items.push({
+      soru: `${bulunmaHaliKi(site.isim)} tapu kat irtifaklı mı, kat mülkiyetli mi?`,
+      cevap: `Kayıtlarımızda bu parsel kat irtifakı aşamasında görünüyor. Kat irtifakı satışa engel değildir; ancak kat mülkiyetine geçmiş bir tapu alıcı gözünde daha nettir ve süreci hızlandırır. İşlem öncesi güncel kaydı birlikte kontrol eder, gerekirse geçiş adımlarını anlatırız.`,
+    });
+  }
+
+  if (metin.includes("paylaş")) {
+    items.push({
+      soru: `${site.isim} komşu siteyle aynı parseli mi paylaşıyor?`,
+      cevap: `Evet — Eryaman'ın kooperatif kökenli dokusunda birden çok sitenin tek bir tapu parselini paylaşması sık görülür. Bu, dairenizin bağımsız bölüm olarak satılmasına engel değildir; ama emsal seçerken hangi bloğun hangi siteye ait olduğunu bilmek fiyatı doğrudan etkiler. Bu ayrımı blok blok tutuyoruz.`,
+    });
+  }
+
+  if (site.adalar && site.adalar.length > 2) {
+    items.push({
+      soru: `${site.isim} kaç ayrı ada üzerine yayılıyor?`,
+      cevap: `${site.isim}, ${site.adalar.length} ayrı tapu adasına yayılan bir yerleşim. Bu ölçekteki sitelerde aynı ad altında farklı yapı grupları bulunabilir; dairenizin hangi adada ve hangi blokta olduğu değerlemede belirleyicidir.`,
+    });
+  }
+
+  const etap = site.adalar?.find((ada) => ada.etap)?.etap;
+  if (etap) {
+    items.push({
+      soru: `${site.isim} Eryaman'ın kaçıncı etabında?`,
+      cevap: `${site.isim}, Eryaman ${etap}. Etap bölgesinde yer alıyor. Etaplar Eryaman'da yapılaşma dönemini ve dokusunu anlatır; alıcılar da çoğu zaman "kaçıncı etap" diye sorar, bu yüzden ilan ve tanıtımda etabı belirtmek işe yarar.`,
+    });
+  }
 
   return items;
 }
