@@ -182,8 +182,8 @@ export default async function BlogPostPage({ params }: Props) {
         <CtaButton href="/iletisim" variant="primary">
           Bize Ulaşın
         </CtaButton>
-        <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
-          İlanlarımı Gör
+        <CtaButton href="/ev-degerleme" variant="outline-light">
+          Değerleme İsteyin
         </CtaButton>
       </CtaBanner>
 

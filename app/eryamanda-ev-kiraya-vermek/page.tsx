@@ -102,7 +102,7 @@ export default function KirayaVermekPage() {
           Kiraya vermenin iki büyük riski vardır: yanlış kira ve yanlış kiracı. İlki evinizi
           aylarca boş bekletir, ikincisi yıllarca uğraştırır. Eryaman&apos;ın{" "}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
-            750&apos;den fazla sitesini
+            700&apos;den fazla sitesini
           </Link>{" "}
           tek tek tanıyan yerel ofis olarak ikisini de sizin adınıza yönetiyoruz. (Taşınmaz
           Ticareti Yetki Belgesi No: 0603771)
@@ -147,7 +147,11 @@ export default function KirayaVermekPage() {
             <Link href="/blog/eryamanda-kira-tespiti-dogru-kira-belirleme" className="font-semibold text-gold-dark hover:underline">
               kira tespiti rehberimiz
             </Link>{" "}
-            açık; ileride yollar ayrılırsa{" "}
+            açık; anahtar tesliminden sonrası —{" "}
+            <Link href="/blog/evinizi-kiraya-verdikten-sonra" className="font-semibold text-gold-dark hover:underline">
+              beyan, vergi ve bildirimler
+            </Link>{" "}
+            — da düşünülmüş durumda. İleride yollar ayrılırsa{" "}
             <Link href="/blog/kiraci-tahliye-sureci" className="font-semibold text-gold-dark hover:underline">
               tahliye rehberimiz
             </Link>{" "}

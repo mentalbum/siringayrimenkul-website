@@ -87,7 +87,8 @@ export default function EvDegerlemePage() {
         <p className="mt-4 text-base leading-relaxed text-body">
           &quot;Evim ne kadar eder?&quot; sorusunun cevabı, ilan sitelerindeki fiyatlardan değil;
           mahallenizi, sitenizi ve güncel emsalleri yakından takip eden yerel bir gözden geçer.
-          Eryaman&apos;ın 11 mahallesini ve içlerindeki {toplamSite}+ site/rezidansı tek tek
+          Eryaman&apos;ın 11 mahallesi ile komşu Ata, Susuz ve Cumhuriyet&apos;i — 14 mahalledeki{" "}
+          {toplamSite}+ site/rezidansı — tek tek
           tanıyoruz. Değerlemeyi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için
           yapıyoruz: görüşmenin sonunda elinizde gerçekçi bir fiyat aralığıyla birlikte satış ya
           da kiralama yol haritanız da olur.

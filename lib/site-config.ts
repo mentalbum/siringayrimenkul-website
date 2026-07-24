@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Şirin Gayrimenkul",
   description:
-    "Eryaman emlakçısı Şirin Gayrimenkul — satılık ve kiralık için Eryaman'ın 11 mahallesini, komşu Yenimahalle mahallelerini ve 750'den fazla site/rezidansı yakından tanıyan yerel emlak ofisi. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.",
+    "Eryaman emlakçısı Şirin Gayrimenkul — satılık ve kiralık için Eryaman'ın 11 mahallesini, komşu Yenimahalle mahallelerini ve 700'den fazla site/rezidansı yakından tanıyan yerel emlak ofisi. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",
@@ -41,4 +41,11 @@ export const mainNav = [
   { label: "Blog", href: "/blog" },
   { label: "Hakkımızda", href: "/hakkimizda" },
   { label: "İletişim", href: "/iletisim" },
+] as const;
+
+/** Ev sahibi hizmet sayfaları — mobil menüde ve footer'da öne çıkar
+ * (masaüstü menüsüne sığmadığı için ayrı liste). */
+export const hizmetNav = [
+  { label: "Evinizi Satmak", href: "/eryamanda-ev-satmak" },
+  { label: "Evinizi Kiraya Vermek", href: "/eryamanda-ev-kiraya-vermek" },
 ] as const;

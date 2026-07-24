@@ -12,7 +12,7 @@ import { organizationRef } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Eryaman'da Ev Satmak — Satış Sürecini Sizin Adınıza Yönetiyoruz",
   description:
-    "Eryaman'da evinizi satmayı mı düşünüyorsunuz? Değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 750'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
+    "Eryaman'da evinizi satmayı mı düşünüyorsunuz? Değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-satmak" },
 };
 
@@ -107,7 +107,7 @@ export default function EvSatmakPage() {
           Ev satmak bir ilan verme işi değil, bir süreç yönetimi işidir: doğru fiyat, doğru
           alıcı, güvenli tapu. Eryaman&apos;ın {""}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
-            750&apos;den fazla sitesini
+            700&apos;den fazla sitesini
           </Link>{" "}
           blok blok tanıyan yerel ofis olarak bu sürecin tamamını sizin adınıza yürütüyoruz —
           siz kararları verirsiniz, koşturmayı biz üstleniriz. (Taşınmaz Ticareti Yetki Belgesi
@@ -149,6 +149,38 @@ export default function EvSatmakPage() {
             </div>
           </Reveal>
         </div>
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <Reveal>
+          <h2 className="text-2xl">Eryaman&apos;da Değilseniz</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Tayin, iş, yurt dışı ya da miras — Eryaman&apos;daki evinizi uzaktan da satabilirsiniz:
+            değerleme görüşmesi telefonla veya görüntülü yapılır, gösterimleri biz yönetiriz,
+            tapu günü için{" "}
+            <Link
+              href="/blog/emlakciya-vekalet-verme-rehberi"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              kapsamı dar tutulmuş bir vekâlet
+            </Link>{" "}
+            yeterlidir. Ayrıntılar{" "}
+            <Link
+              href="/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              uzaktan satış rehberimizde
+            </Link>
+            ; ev miras kaldıysa{" "}
+            <Link
+              href="/blog/miras-kalan-ev-nasil-satilir"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              miras rehberimiz
+            </Link>{" "}
+            adım adım yol gösterir.
+          </p>
+        </Reveal>
       </section>
 
       <section className="mt-12 max-w-3xl">

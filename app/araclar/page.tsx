@@ -40,7 +40,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Doğru kira veya satış fiyatını nasıl belirlerim?",
     cevap:
-      "İlan sitelerindeki istenen fiyatlar tek başına yanıltıcıdır; doğru fiyat, sitenizdeki ve mahallenizdeki gerçekleşen emsallerle belirlenir. Eryaman'ın mahallelerini ve 750'den fazla sitesini tek tek takip ediyoruz. Satış ya da kiralama kararı aşamasındaysanız değerleme görüşmesiyle başlayalım: sonunda elinizde gerçekçi bir fiyat aralığı ve yol haritası olur.",
+      "İlan sitelerindeki istenen fiyatlar tek başına yanıltıcıdır; doğru fiyat, sitenizdeki ve mahallenizdeki gerçekleşen emsallerle belirlenir. Eryaman'ın mahallelerini ve 700'den fazla sitesini tek tek takip ediyoruz. Satış ya da kiralama kararı aşamasındaysanız değerleme görüşmesiyle başlayalım: sonunda elinizde gerçekçi bir fiyat aralığı ve yol haritası olur.",
   },
   {
     soru: "Bu hesaplayıcıların sonuçları bağlayıcı mı?",

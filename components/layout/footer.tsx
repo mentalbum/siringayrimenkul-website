@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { mainNav, siteConfig } from "@/lib/site-config";
+import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
@@ -36,6 +36,16 @@ export function Footer() {
             Hızlı Bağlantılar
           </h2>
           <ul className="mt-4 space-y-2.5">
+            {hizmetNav.map((item) => (
+              <li key={item.href}>
+                <Link
+                  href={item.href}
+                  className="text-sm font-semibold text-gold/90 hover:text-gold"
+                >
+                  {item.label}
+                </Link>
+              </li>
+            ))}
             {mainNav.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className="text-sm text-white/80 hover:text-gold">
@@ -70,9 +80,23 @@ export function Footer() {
                 {siteConfig.phoneDisplay}
               </TrackedLink>
             </li>
+            <li className="flex items-center gap-2">
+              <PhoneIcon className="h-4 w-4 shrink-0 text-gold" />
+              <TrackedLink
+                href={siteConfig.whatsappUrl}
+                gaEvent="whatsapp_click"
+                openInNewTab
+                className="hover:text-gold"
+              >
+                WhatsApp ile yazın
+              </TrackedLink>
+            </li>
+            <li className="pl-6 text-white/60">
+              Pzt–Cmt 09:00–19:00 · Paz 09:00–17:00
+            </li>
           </ul>
           <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
-            İlanlarımı Gör
+            İlanlarımız — sahibinden.com
           </CtaButton>
           <div className="mt-5 flex items-center gap-3">
             <a

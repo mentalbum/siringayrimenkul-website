@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { sendGAEvent } from "@next/third-parties/google";
-import { mainNav, siteConfig } from "@/lib/site-config";
+import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
@@ -86,7 +86,7 @@ export function Header() {
             {siteConfig.phoneDisplay}
           </a>
           <CtaButton href={siteConfig.sahibindenUrl} external variant="primary">
-            İlanlarım
+            İlanlarımız
           </CtaButton>
         </div>
 
@@ -112,6 +112,20 @@ export function Header() {
           }`}
         >
           <nav className="flex flex-col gap-1" aria-label="Mobil menü">
+            {hizmetNav.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className={`rounded-xl px-3 py-3 text-base font-semibold transition-colors ${
+                  scrolled
+                    ? "text-gold hover:bg-white/10"
+                    : "text-gold-dark hover:bg-surface-muted"
+                }`}
+              >
+                {item.label}
+              </Link>
+            ))}
             {mainNav.map((item) => (
               <Link
                 key={item.href}
@@ -148,7 +162,7 @@ export function Header() {
               variant="primary"
               className="w-full"
             >
-              İlanlarım
+              İlanlarımız
             </CtaButton>
           </div>
         </div>

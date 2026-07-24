@@ -254,6 +254,17 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
         <WhatsAppIcon className="h-4 w-4" />
         WhatsApp ile Gönder
       </button>
+      <p className="text-xs leading-relaxed text-muted">
+        Buton, mesajınız hazır yazılmış hâlde WhatsApp&apos;ı açar — göndermek için orada yeşil
+        gönder tuşuna basmayı unutmayın. WhatsApp kullanmıyorsanız doğrudan arayın:{" "}
+        <a
+          href={`tel:${siteConfig.phoneTel}`}
+          className="font-semibold text-gold-dark hover:underline"
+        >
+          {siteConfig.phoneDisplay}
+        </a>
+        . Bilgileriniz sitemizde saklanmaz; yalnızca size dönüş yapmamız için bize iletilir.
+      </p>
     </form>
   );
 }
