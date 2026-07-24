@@ -21,5 +21,6 @@
       "no": "44780",
       "parsel": "2"
     }
-  ]
+  ],
+  "sinirGeoJSON": "siteler/ata/mercankent-manzara-evleri-boundary.geojson"
 }

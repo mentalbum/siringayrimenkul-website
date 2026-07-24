@@ -21,7 +21,8 @@ BEKLE = 3.0  # sn — art arda isteklerde rate-limit şart
 # (etiket, kadastroId, ada, parsel, kayıt-yolu | None)
 # Kayıt yolu verilirse --uygula boundary üretir.
 DOGRUDAN = [
-    # kuyruk boş — yeni bekleyenleri buraya ekle
+    ("mercankent", "205665", "44780", "2", "content/siteler/ata/mercankent-manzara-evleri.json"),
+    ("eser-yapi",  "205665", "44752", "1", "content/siteler/susuz/eser-yapi-sitesi.json"),
 ]
 
 # (etiket, lat, lng) — koordinattan parsel bulunur; kayda işleme elle yapılır.

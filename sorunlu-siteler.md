@@ -689,3 +689,9 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - **44784/1:** TEK parsel "11 katlı A-D-E + 14 katlı B-C" 19.783 — be'nin 'Bilge Türk Manzara' tarif ettiği 5 bloklu kompleks; Tatlı Yamaç↔Palmiye kartının nesnesi bu tek kompleks.
 - **43264 (Botanik ailesi) 6 parsel:** /4 "A 10 katlı + B dükkan" 4.112 · /5 "13 katlı" 5.238 · /6 apartman 4.264 (Yeni Botanik ✓) · /7 "A 15 katlı + B 3 katlı dükkan" 7.002 (Arissa ✓; Park Sera pini burada) · /8 ARSA 7.895 (10. Botanik ✓) · /9 ARSA 4.649. Park Sera için boş adaylar: /4, /5, /9.
 - **62662 (Mes Polaris):** KBS'de yalnız /2 Arsa 3.026 ve /3 Arsa 4.209 (TKGM /2'ye 'Spor Tesisi' demişti — kaynak farkı not edildi).
+
+## TKGM eksik envanteri kapandı (2026-07-24 gece)
+- Sınırsız kayıt KALMADI: Mercan Kent (44780/2) ve Eser Yapı (44752/1) TKGM geometrileriyle haritaya girdi (KBS ile birebir doğrulandı).
+- 71 kaydın metnine işlenmemiş tapu verisi için 79 parsel cache'e çekildi (~/.cache/tkgm-eryaman) — sonraki içerik dalgasının hammaddesi hazır; sorgu gerekmeden yazılabilir.
+- Bulunamayan 3 parsel (kadastro yenileme şüphesi) yukarıda listeli — nokta sorgusuyla çözülebilir, acil değil.
+- Adasız 17 kayıt: 9'u açık kart/araştırma (Hürev, Ritim, Pozitif, ap-ist-port, bp/ela/mia, Çelikler, 75-yıl), 6'sı kaynaksız hayalet (silinme kararı Özgün'de), 2'si yeni koordinatsız kayıt (Nover, Sky).

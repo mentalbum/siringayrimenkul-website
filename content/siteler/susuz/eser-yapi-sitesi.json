@@ -23,5 +23,6 @@
     "13.740 m² tapu yüzölçümü",
     "'Eserkent Sitesi' adıyla da bilinir",
     "Ata Mahallesi hattı"
-  ]
+  ],
+  "sinirGeoJSON": "siteler/susuz/eser-yapi-sitesi-boundary.geojson"
 }
