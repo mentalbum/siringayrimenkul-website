@@ -7,7 +7,7 @@
     "lng": 32.658608
   },
   "sinirGeoJSON": "siteler/seker/dort-mevsim-eryaman-konutlari-boundary.geojson",
-  "aciklama": "Dört Mevsim Eryaman Konutları, Şeker Mahallesi'nde Tuna-Türkoğlu ortak girişimiyle (Türkoğlu Yapı) geliştirilen ve Kasım 2016'da teslim edilen büyük bir sitedir. Müteahhidin verilerine göre yaklaşık 50.000 m²'lik alanda 7 blokta toplam 360 konut yer alıyor ve daireler 4+1 tipindedir. Kapalı yüzme havuzu, kondisyon salonu ve yeşilin her tonuyla tasarlanmış peyzaj alanları projenin öne çıkan donatılarıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Dört Mevsim Eryaman Konutları, Şeker Mahallesi'nde Tuna-Türkoğlu ortak girişimiyle (Türkoğlu Yapı) geliştirilen ve Kasım 2016'da teslim edilen büyük bir sitedir. Müteahhidin verilerine göre yaklaşık 50.000 m²'lik alanda 7 blokta toplam 360 konut yer alıyor ve daireler 4+1 tipindedir. Kapalı yüzme havuzu, kondisyon salonu ve yeşilin her tonuyla tasarlanmış peyzaj alanları projenin öne çıkan donatılarıdır. Tapu kaydı projeyi net tarif eder: yaklaşık 26.516 m² — 26 dönümü aşan — parselde on dörder katlı A, B, C blokları, on beşer katlı D ve E, on üç katlı F ve on bir katlı G blokları ile iki katlı H blok (ofis-işyeri). Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "48305",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 7 konut bloğu (11-15 kat) + 2 katlı ticari blok",
+    "Yaklaşık 26,5 dönümlük parsel (TKGM)",
     "Türkoğlu Yapı (Tuna-Türkoğlu ortaklığı) — 7 blok, 360 konut",
     "4+1 daireler",
     "~50.000 m² alan — Kasım 2016 teslim",
-    "Kapalı yüzme havuzu, kondisyon salonu",
-    "Şeker Mahallesi / Eryaman"
+    "Kapalı yüzme havuzu, kondisyon salonu"
   ],
   "adres": "1408. Cadde No:19, Şeker, Eryaman/Ankara",
   "alternatifAdlar": [

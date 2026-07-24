@@ -701,3 +701,6 @@ Tapu-derinliği taramasında çıktı: ata/ada-loft-eryaman ile ata/umut-yapi-si
 
 ## 4. Devlet Mahallesi Sitesi — tapu OKUL parseli (2026-07-25)
 devlet/4-devlet-mahallesi-sitesi kaydının parseli TKGM'de "7 Katlı Betonarme Okul, Üniversite, Araştırma" (8.180 m²). Konut sitesi değil — kayıt ya yanlış parselde ya da site adı okul yerleşkesiyle karışmış. Metne tapu YAZILMADI. (Aynı desen goksu/goksu-metrokent-sitesi'nde de vardı — ikisi birlikte Özgün'e sorulacak.)
+
+## Karma Modern (ŞOA) — tapu "Yönetim ve Hizmet Binası" (2026-07-25)
+sehit-osman-avci/karma-modern parseli TKGM'de "Yönetim Ve Hizmet Binası" (14.982 m²) — konut/rezidans niteliği yok. Kayıt yanlış parselde olabilir ya da proje henüz tapuya yansımamış olabilir. Metne tapu YAZILMADI; nokta sorgusuyla teyit edilecek.
