@@ -19,7 +19,7 @@ import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
-import { tamlayanEk } from "@/lib/turkce";
+import { bulunmaHaliKi, tamlayanEk } from "@/lib/turkce";
 
 type Props = {
   params: Promise<{ mahalle: string; ada: string }>;
@@ -205,13 +205,19 @@ export default async function AdaPage({ params }: Props) {
       {ayniEtaptakiler.length > 0 && (
         <section className="mt-14">
           <h2 className="text-xl">
-            <Link
-              href={`/mahalleler/${mahalle.slug}/etaplar/${ada.etap}`}
-              className="cursor-pointer hover:text-gold-dark hover:underline"
-            >
-              Eryaman {ada.etap}. Etap
-            </Link>
-            &apos;taki Diğer Adalar
+            {ada.etap ? (
+              <>
+                <Link
+                  href={`/mahalleler/${mahalle.slug}/etaplar/${ada.etap}`}
+                  className="cursor-pointer hover:text-gold-dark hover:underline"
+                >
+                  Eryaman {ada.etap}. Etap
+                </Link>
+                &apos;taki Diğer Adalar
+              </>
+            ) : (
+              `${bulunmaHaliKi(mahalle.isim)} Diğer Adalar`
+            )}
           </h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {ayniEtaptakiler.map((item) => (
