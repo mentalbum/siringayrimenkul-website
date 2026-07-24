@@ -24,6 +24,10 @@ interface SitelerBrowserProps {
   digerSekme?: { etiket: string; href: string; adlar: string[] };
 }
 
+const normalize = (s: string) => s.toLocaleLowerCase("tr");
+// Bitişik yazımlar da eşleşsin ("eryamanevleri" → "Eryaman Evleri").
+const duz = (s: string) => normalize(s).replace(/\s+/g, "");
+
 export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
   const [sorgu, setSorgu] = useState("");
 
@@ -37,9 +41,6 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
     return () => window.clearTimeout(id);
   }, []);
 
-  // Bitişik yazımlar da eşleşsin ("eryamanevleri" → "Eryaman Evleri").
-  const normalize = (s: string) => s.toLocaleLowerCase("tr");
-  const duz = (s: string) => normalize(s).replace(/\s+/g, "");
   const ertelenmisSorgu = useDeferredValue(sorgu);
   const sorguNormalized = normalize(ertelenmisSorgu.trim());
   const sorguDuz = duz(ertelenmisSorgu.trim());
@@ -64,14 +65,14 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
         };
       })
       .filter((grup) => grup.siteler.length > 0);
-  }, [gruplar, sorguNormalized]);
+  }, [gruplar, sorguNormalized, sorguDuz]);
 
   const toplamEslesme = filtreliGruplar.reduce((sum, grup) => sum + grup.siteler.length, 0);
 
   const digerSekmeEslesme = useMemo(() => {
     if (!digerSekme || !sorguNormalized || toplamEslesme > 0) return 0;
     return digerSekme.adlar.filter((ad) => normalize(ad).includes(sorguNormalized) || duz(ad).includes(sorguDuz)).length;
-  }, [digerSekme, sorguNormalized, toplamEslesme]);
+  }, [digerSekme, sorguNormalized, sorguDuz, toplamEslesme]);
 
   return (
     <div>
