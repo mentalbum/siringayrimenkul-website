@@ -31,22 +31,35 @@ const ozellikler = [
   {
     icon: MapPinIcon,
     baslik: "Mahalle Mahalle Keşfedin",
-    aciklama: "Eryaman'daki mahalleleri ve içlerindeki siteleri tek tek inceleyin, size en uygun bölgeyi kendiniz görün.",
+    aciklama:
+      "Eryaman'ın her mahallesi ve 750'den fazla sitesi için tek tek hazırlanmış rehberler: bloklar, adalar, ulaşım ve yaşam. Bölgenizi tapu kayıtlarına dayanan haritalarla inceleyin.",
+    href: "/mahalleler",
+    linkYazisi: "Mahalle rehberlerine git",
   },
   {
     icon: BuildingIcon,
     baslik: "Evinizi Değerlendirin",
-    aciklama: "Satmak ya da kiraya vermek istediğiniz mülkünüz için doğrudan bizimle iletişime geçin.",
+    aciklama:
+      "Satmadan ya da kiraya vermeden önce evinizin gerçek değerini öğrenin: sitenizdeki emsallere dayanan değerlendirme ve net bir yol haritası — aynı gün dönüş.",
+    href: "/ev-degerleme",
+    linkYazisi: "Değerleme talebi bırakın",
   },
   {
     icon: PhoneIcon,
     baslik: "Doğrudan İletişim",
-    aciklama: "Aracısız, doğrudan bizimle görüşün; telefon veya WhatsApp ile hızlı dönüş alın.",
+    aciklama:
+      "Çağrı merkezi yok, aracı yok: telefonda ya da WhatsApp'ta doğrudan danışmanınızla konuşursunuz. Sorunuzu yazın, aynı gün dönüş alın.",
+    href: "/iletisim",
+    linkYazisi: "Bize ulaşın",
   },
   {
     icon: CheckBadgeIcon,
     baslik: "Güncel İlanlar",
-    aciklama: "Güncel ilanlarımıza sahibinden.com üzerindeki mağazamızdan anında ulaşın.",
+    aciklama:
+      "Satılık ve kiralık portföyümüzün tamamı sahibinden.com mağazamızda — her ilanın arkasında, o siteyi blok blok tanıyan bir ekip var.",
+    href: siteConfig.sahibindenUrl,
+    linkYazisi: "İlanları görüntüleyin",
+    dis: true,
   },
 ];
 
@@ -230,17 +243,40 @@ export default function HomePage() {
             <h2 className="mt-2 text-2xl sm:text-3xl">Neden Şirin Gayrimenkul?</h2>
           </Reveal>
           <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-            {ozellikler.map((ozellik, i) => (
-              <Reveal key={ozellik.baslik} delay={i * 70} className="h-full">
-                <div className="h-full rounded-2xl border border-border bg-surface p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-gold hover:shadow-xl hover:shadow-navy/10 motion-reduce:transition-none motion-reduce:hover:translate-y-0">
+            {ozellikler.map((ozellik, i) => {
+              const kartIcerik = (
+                <>
                   <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15">
                     <ozellik.icon className="h-6 w-6 text-gold-dark" />
                   </div>
                   <h3 className="mt-4 text-base">{ozellik.baslik}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-body">{ozellik.aciklama}</p>
-                </div>
-              </Reveal>
-            ))}
+                  <p className="mt-auto pt-4 text-sm font-semibold text-gold-dark">
+                    {ozellik.linkYazisi} →
+                  </p>
+                </>
+              );
+              const kartSinif =
+                "flex h-full flex-col rounded-2xl border border-border bg-surface p-5 transition-all duration-300 ease-out hover:-translate-y-1 hover:border-gold hover:shadow-xl hover:shadow-navy/10 motion-reduce:transition-none motion-reduce:hover:translate-y-0";
+              return (
+                <Reveal key={ozellik.baslik} delay={i * 70} className="h-full">
+                  {ozellik.dis ? (
+                    <a
+                      href={ozellik.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className={kartSinif}
+                    >
+                      {kartIcerik}
+                    </a>
+                  ) : (
+                    <Link href={ozellik.href} className={kartSinif}>
+                      {kartIcerik}
+                    </Link>
+                  )}
+                </Reveal>
+              );
+            })}
           </div>
         </div>
       </section>
