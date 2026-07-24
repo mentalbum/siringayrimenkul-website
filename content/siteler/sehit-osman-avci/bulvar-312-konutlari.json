@@ -7,7 +7,7 @@
     "lng": 32.6596134
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/bulvar-312-konutlari-boundary.geojson",
-  "aciklama": "Bulvar 312 Konutları, Eryaman Şehit Osman Avcı Mahallesi'nde yer alan, tamamlanmış bir konut projesidir. Proje kaynaklarına göre toplam 108 daireden oluşuyor; daireler 2+1, 3+1 ve 4+1 tiplerinde, yaklaşık 95–170 m² aralığında planlanmış (4+1'ler net ~160 m²). Geniş aile dairelerine ağırlık veren yapısı ve İstanbul Yolu aksına yakın konumuyla hem oturum hem yatırım için tercih ediliyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Bulvar 312 Konutları, Eryaman Şehit Osman Avcı Mahallesi'nde yer alan, tamamlanmış bir konut projesidir. Proje kaynaklarına göre toplam 108 daireden oluşuyor; daireler 2+1, 3+1 ve 4+1 tiplerinde, yaklaşık 95–170 m² aralığında planlanmış (4+1'ler net ~160 m²). Geniş aile dairelerine ağırlık veren yapısı ve İstanbul Yolu aksına yakın konumuyla hem oturum hem yatırım için tercih ediliyor. Tapu kaydına göre proje, yaklaşık 9.638 m²'lik parselde on altışar katlı A ve B blokları ile iki katlı C bloktan oluşur; apartman ve ofis-işyeri karma niteliğiyle kayıtlıdır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46652",
@@ -15,6 +15,8 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 16'şar katlı A-B + 2 katlı C blok — karma nitelik",
+    "Yaklaşık 9,6 dönümlük parsel (TKGM)",
     "108 daire — tamamlanmış proje",
     "2+1, 3+1, 4+1 (95–170 m²; 4+1 net ~160 m²)",
     "İstanbul Yolu aksına yakın",
