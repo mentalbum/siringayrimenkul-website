@@ -736,3 +736,8 @@ sehit-osman-avci/karma-modern parseli TKGM'de "Yönetim Ve Hizmet Binası" (14.9
 - Göksu Sitesi (Güzelkent 18478/1, 6 blok) — üçüncü Göksu Sitesi!
 - Eray 4 Sitesi (Güzelkent 18658/1, A/B/C 6 katlı)
 Geometri dosyaları hazır: scratchpad/cikti/*.geojson
+
+## Mahalle gövde araştırması (2026-07-25) — 6 mahalle yeniden yazıldı
+Düzeltilen YANLIŞ bilgiler: (1) Ata'da "müstakil doku" — 90 kaydın sadece 2'sinde müstakil geçiyor, baskın doku 10-15 katlı blok; (2) Ata'da "metro imkânlarından kolayca yararlanan" — mahalle içinde istasyon YOK, en yakınlar 1,4-2,8 km; (3) Ata "kuzeybatı komşusu" → kuzey; (4) Altay "nüfusu azalıyor" çerçevesi — 2013'ten beri kesintisiz artıyor (2025: 14.525); (5) Güzelkent "2022-2023'te 15.400'ü aşan" — o yıllarda 15.384 ve 15.167 idi, yani ALTINDA; (6) Devlet "2023'te istikrara kavuştu" — artış sürüyor (2025: 16.044); (7) Göksu 33.203 bayat (2025: 34.124); (8) Susuz "İstanbul Yolu'na yakınlığı" — yol mahallenin İÇİNDEN geçiyor.
+Eklenen doğrulanmış bilgiler: Ata'nın 2017 kuruluş hikâyesi (Susuz'dan ayrılma, 2015 referandumu), Devlet'te metro istasyonu + Eryaman Stadyumu sınır içinde, Göksu'da Eryaman 1-2 istasyonu + 500 bin m²'lik Göksu Parkı, Altay = Eryaman 1. Etap (resmî pazar/okul adresleriyle), Güzelkent'te 15 park/100+ dönüm ve yıl taşıyan site adları, Susuz'un köy kökeni.
+KALAN: blog/eryamanda-hangi-mahalle.mdx tablosundaki nüfuslar 2023 tarihli (yanlış değil ama bayat) — 14 mahallenin tamamı için güncel ADNKS toplanınca tazelenecek. Nüfus kaynağı: nufusune.com (TÜİK ADNKS aktarımı) + Vikipedi çapraz doğrulama; metinlerde rakam yerine "güncel ADNKS verilerine göre X bini aşan" kalıbı kullanıldı — bayatlamaz.
