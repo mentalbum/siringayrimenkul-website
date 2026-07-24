@@ -7,7 +7,7 @@
     "lng": 32.6601397
   },
   "sinirGeoJSON": "siteler/cumhuriyet/vera-point-boundary.geojson",
-  "aciklama": "Vera Point, Yeni Batı'da Veysel Karani Bulvarı çevresinde (5400–5401. Sokak) Çelikoğlu İnşaat tarafından tamamlanmış bir konut projesidir. Vera serisinin geniş aile dairelerine odaklı projelerinin (Vera West/Vista) aksine, Vera Point'te 1+1 ve 2+1 kompakt daire tipleri öne çıkıyor — yatırımlık ve küçük hane profiline uygun bir yapı. Asansör, otopark ve güvenlik gibi site içi donatılara sahip proje, İstanbul Yolu aksındaki konumuyla ulaşım avantajı sunuyor. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Vera Point, Yeni Batı'da Veysel Karani Bulvarı çevresinde (5400–5401. Sokak) Çelikoğlu İnşaat tarafından tamamlanmış bir konut projesidir. Vera serisinin geniş aile dairelerine odaklı projelerinin (Vera West/Vista) aksine, Vera Point'te 1+1 ve 2+1 kompakt daire tipleri öne çıkıyor — yatırımlık ve küçük hane profiline uygun bir yapı. Asansör, otopark ve güvenlik gibi site içi donatılara sahip proje, İstanbul Yolu aksındaki konumuyla ulaşım avantajı sunuyor. Tapu kaydına göre proje, yaklaşık 10.492 m²'lik parselde üç katlı A blok ile on yedişer katlı B ve C bloklardan oluşur. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62656",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 17'şer katlı B-C blokları + 3 katlı A blok",
+    "Yaklaşık 10,5 dönümlük parsel (TKGM)",
     "Çelikoğlu İnşaat — tamamlanmış proje",
     "1+1 ve 2+1 kompakt daire tipleri",
     "Asansör, otopark, güvenlik",
-    "Veysel Karani Bulvarı / 5400–5401. Sokak",
-    "İstanbul Yolu aksı / Yeni Batı"
+    "Veysel Karani Bulvarı / 5400–5401. Sokak"
   ],
   "zenginlestirildi": "2026-07-14"
 }

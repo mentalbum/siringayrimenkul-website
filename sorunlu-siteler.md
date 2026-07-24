@@ -698,3 +698,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## YENİ ÇAKIŞMA: Ada Loft ↔ Umut Yapı (Ata 44756/2) — 2026-07-24
 Tapu-derinliği taramasında çıktı: ata/ada-loft-eryaman ile ata/umut-yapi-sitesi aynı parselde (44756/2, ARSA 16.809 m²). Ada Loft "2024 teslim, 3 blok 92 daire loft projesi"; Umut Yapı "Doğasu komşusu, 16,8 dönüm". Aynı arsanın eski/yeni adı mı, yoksa biri yanlış parselde mi? (Aynı adanın /1 parseli de Doğasu çifti çakışmasında.) İkisine de tapu cümlesi YAZILMADI.
+
+## 4. Devlet Mahallesi Sitesi — tapu OKUL parseli (2026-07-25)
+devlet/4-devlet-mahallesi-sitesi kaydının parseli TKGM'de "7 Katlı Betonarme Okul, Üniversite, Araştırma" (8.180 m²). Konut sitesi değil — kayıt ya yanlış parselde ya da site adı okul yerleşkesiyle karışmış. Metne tapu YAZILMADI. (Aynı desen goksu/goksu-metrokent-sitesi'nde de vardı — ikisi birlikte Özgün'e sorulacak.)

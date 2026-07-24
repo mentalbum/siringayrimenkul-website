@@ -7,7 +7,7 @@
     "lng": 32.659548
   },
   "sinirGeoJSON": "siteler/cumhuriyet/motto-goksu-boundary.geojson",
-  "aciklama": "Motto Göksu, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde İstanbul Yolu aksına yakın konumda, Dinamik Grup (Dinamik Life) tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre 12 katlı iki blokta toplam 202 daireden oluşuyor; daireler 1+1 ve 2+1 tiplerinde (yaklaşık 70–100 m²) planlanmış — kompakt daire arayan yatırımcı ve küçük aile profiline uygun bir yapı. Aralık 2022'de teslim edilen projede kapalı otopark, güvenlik ve sosyal donatılar yer alıyor; satışları tamamlandığı için daireler artık ikinci el piyasada el değiştiriyor. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Motto Göksu, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde İstanbul Yolu aksına yakın konumda, Dinamik Grup (Dinamik Life) tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre 12 katlı iki blokta toplam 202 daireden oluşuyor; daireler 1+1 ve 2+1 tiplerinde (yaklaşık 70–100 m²) planlanmış — kompakt daire arayan yatırımcı ve küçük aile profiline uygun bir yapı. Aralık 2022'de teslim edilen projede kapalı otopark, güvenlik ve sosyal donatılar yer alıyor; satışları tamamlandığı için daireler artık ikinci el piyasada el değiştiriyor. Tapu kaydı yapıyı net tarif eder: yaklaşık 7.875 m²'lik parselde iki katlı A blok (ticari) ile on dörder katlı B ve C konut blokları. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62656",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "Tapu: 14'er katlı B-C konut blokları + 2 katlı A blok",
+    "Yaklaşık 7,9 dönümlük parsel (TKGM)",
     "2 blok, 12 kat, 202 daire (Dinamik Grup)",
     "1+1 ve 2+1 (~70–100 m²)",
     "Aralık 2022 teslim — satışı tamamlanmış",
-    "Kapalı otopark, güvenlik, sosyal donatı",
-    "İstanbul Yolu aksı / Yeni Batı"
+    "Kapalı otopark, güvenlik, sosyal donatı"
   ],
   "zenginlestirildi": "2026-07-14"
 }

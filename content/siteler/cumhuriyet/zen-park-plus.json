@@ -7,7 +7,7 @@
     "lng": 32.658737
   },
   "sinirGeoJSON": "siteler/cumhuriyet/zen-park-plus-boundary.geojson",
-  "aciklama": "Zen Park Plus, Yeni Batı'da Fatih Sultan Mehmet Bulvarı (İstanbul Yolu) üzerinde, Zen Park serisinin müteahhidi Nesce Grup tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre 16 katlı yapıda 112 konut yer alıyor; daireler 2+1 ve 3+1 tiplerinde (yaklaşık 86–120 m²) planlanmış ve proje 2021'in son çeyreğinde teslim edilmiş. Kardeş projesi Zen Park Göksu'ya göre daha yüksek katlı bir yapı kurgusuna sahip; İstanbul Yolu ve metro aksına yakın konumu ulaşım avantajı sağlıyor. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Zen Park Plus, Yeni Batı'da Fatih Sultan Mehmet Bulvarı (İstanbul Yolu) üzerinde, Zen Park serisinin müteahhidi Nesce Grup tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre 16 katlı yapıda 112 konut yer alıyor; daireler 2+1 ve 3+1 tiplerinde (yaklaşık 86–120 m²) planlanmış ve proje 2021'in son çeyreğinde teslim edilmiş. Kardeş projesi Zen Park Göksu'ya göre daha yüksek katlı bir yapı kurgusuna sahip; İstanbul Yolu ve metro aksına yakın konumu ulaşım avantajı sağlıyor. Tapu kaydına göre yapı, yaklaşık 5.024 m²'lik parselde on sekiz katlı, konut ile ofis-işyerini bir arada barındıran nitelikle kayıtlıdır; karma tapu tipi değerlemede fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62669",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
+    "18 katlı — tapuda konut + ofis-işyeri karma niteliği",
+    "Yaklaşık 5 dönümlük parsel (TKGM)",
     "Nesce Grup — 16 katlı, 112 konut",
     "2+1 ve 3+1 (~86–120 m²)",
     "2021 son çeyrek teslim",
-    "FSM Bulvarı (İstanbul Yolu) / metro yakını",
-    "Yeni Batı, 5404. Cadde"
+    "FSM Bulvarı (İstanbul Yolu) / metro yakını"
   ],
   "adres": "Fatih Sultan Mehmet Bulvarı, 5404. Cadde No:4, Yeni Batı, Yenimahalle/Ankara",
   "zenginlestirildi": "2026-07-14"
