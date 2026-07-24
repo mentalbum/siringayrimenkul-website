@@ -7,7 +7,7 @@
     "lng": 32.638056
   },
   "sinirGeoJSON": "siteler/altay/age-bloklari-boundary.geojson",
-  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — 1. Etap'ın en geniş blok kümelerinden. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki 5. Etap Age Sitesi ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman 1. Etap kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — 1. Etap'ın en geniş blok kümelerinden. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki 5. Etap Age Sitesi ayrı bir yerleşimdir.) Ana parselinde tapu, yaklaşık 6.252 m²'lik alanda sekiz kargir apartman kaydeder. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17546",
@@ -17,6 +17,7 @@
   ],
   "ozellikler": [
     "Yerel kayıtlarda 9 adalık küme — 1. Etap'ın en genişlerinden",
+    "Ana parselde 8 apartman — yaklaşık 6,3 dönüm (TKGM)",
     "Eryaman 1. Etap kooperatif kuşağı",
     "Tunahan'daki Age Sitesi'nden ayrı yerleşim",
     "Altay Mahallesi"

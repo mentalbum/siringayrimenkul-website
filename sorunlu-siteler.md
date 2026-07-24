@@ -695,3 +695,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - 71 kaydın metnine işlenmemiş tapu verisi için 79 parsel cache'e çekildi (~/.cache/tkgm-eryaman) — sonraki içerik dalgasının hammaddesi hazır; sorgu gerekmeden yazılabilir.
 - Bulunamayan 3 parsel (kadastro yenileme şüphesi): cumhuriyet 43267/1, goksu 16828/4, susuz 63340/6 — nokta sorgusuyla çözülebilir, acil değil.
 - Adasız 17 kayıt: 9'u açık kart/araştırma (Hürev, Ritim, Pozitif, ap-ist-port, bp/ela/mia, Çelikler, 75-yıl), 6'sı kaynaksız hayalet (silinme kararı Özgün'de), 2'si yeni koordinatsız kayıt (Nover, Sky).
+
+## YENİ ÇAKIŞMA: Ada Loft ↔ Umut Yapı (Ata 44756/2) — 2026-07-24
+Tapu-derinliği taramasında çıktı: ata/ada-loft-eryaman ile ata/umut-yapi-sitesi aynı parselde (44756/2, ARSA 16.809 m²). Ada Loft "2024 teslim, 3 blok 92 daire loft projesi"; Umut Yapı "Doğasu komşusu, 16,8 dönüm". Aynı arsanın eski/yeni adı mı, yoksa biri yanlış parselde mi? (Aynı adanın /1 parseli de Doğasu çifti çakışmasında.) İkisine de tapu cümlesi YAZILMADI.

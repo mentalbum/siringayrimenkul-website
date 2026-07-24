@@ -7,7 +7,7 @@
     "lng": 32.659311
   },
   "sinirGeoJSON": "siteler/cumhuriyet/ap-green-tower-boundary.geojson",
-  "aciklama": "AP Green Tower, Yeni Batı'da Fatih Sultan Mehmet Bulvarı üzerinde Şani İnşaat tarafından yapılmış bir residence projesidir. Geliştiricinin verilerine göre yaklaşık 33.000 m² inşaat alanına sahip proje, 184 daire ile toplam 10.000 m²'yi bulan ticari/işyeri alanını bir arada barındırıyor — yani konutun altında kendi çarşısı olan karma bir yapı. İstanbul Yolu aksındaki konumu metro ve ana arter ulaşımını kolaylaştırıyor; kapalı otopark, güvenlik ve sosyal donatılar projenin standart olanakları arasında. Bu binada satılık veya kiralık daireniz mi var? Residence dairelerinde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte netleştirelim.",
+  "aciklama": "AP Green Tower, Yeni Batı'da Fatih Sultan Mehmet Bulvarı üzerinde Şani İnşaat tarafından yapılmış bir residence projesidir. Geliştiricinin verilerine göre yaklaşık 33.000 m² inşaat alanına sahip proje, 184 daire ile toplam 10.000 m²'yi bulan ticari/işyeri alanını bir arada barındırıyor — yani konutun altında kendi çarşısı olan karma bir yapı. İstanbul Yolu aksındaki konumu metro ve ana arter ulaşımını kolaylaştırıyor; kapalı otopark, güvenlik ve sosyal donatılar projenin standart olanakları arasında. Tapu kaydı karma yapıyı doğrular: yaklaşık 8.496 m²'lik parselde üç katlı A blok (iş yeri) ile on dört katlı B blok (apartman). Bu binada satılık veya kiralık daireniz mi var? Residence dairelerinde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte netleştirelim.",
   "adalar": [
     {
       "no": "62679",
@@ -15,7 +15,8 @@
     }
   ],
   "ozellikler": [
-    "Şani İnşaat — ~33.000 m² inşaat",
+    "Tapu: 3 katlı ticari A blok + 14 katlı konut B blok",
+    "Yaklaşık 8,5 dönümlük parsel (TKGM)",
     "184 daire + ~10.000 m² ticari alan",
     "Konut altında çarşı (karma kullanım)",
     "Kapalı otopark, güvenlik, sosyal donatı",
