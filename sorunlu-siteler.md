@@ -704,3 +704,35 @@ devlet/4-devlet-mahallesi-sitesi kaydının parseli TKGM'de "7 Katlı Betonarme 
 
 ## Karma Modern (ŞOA) — tapu "Yönetim ve Hizmet Binası" (2026-07-25)
 sehit-osman-avci/karma-modern parseli TKGM'de "Yönetim Ve Hizmet Binası" (14.982 m²) — konut/rezidans niteliği yok. Kayıt yanlış parselde olabilir ya da proje henüz tapuya yansımamış olabilir. Metne tapu YAZILMADI; nokta sorgusuyla teyit edilecek.
+
+## TKGM ARAŞTIRMA TURU (2026-07-25, 7 ajan) — ÇÖZÜLENLER ve YENİ KARTLAR
+
+### Yanlış bildiğimiz 3 şey düzeldi (KRİTİK)
+1. **"Ölü bölge" diye bir şey YOK.** Yavuz Selim batı şeridi ve Güzelkent'te nokta sorgusu HTTP 401 ("kadastro müdürlüğünden edinilebilir") dönüyor ama AYNI parsel doğrudan ada/parsel sorgusuyla tam veriyle geliyor. Kısıt coğrafi değil, parsel bazlı ve yalnız nokta ucunu etkiliyor. Bundan sonra 401 alınca doğrudan ada sorgusu denenecek.
+2. **Yuva kadastro ID'si 123403** (Cumhuriyet'in 43xxx adaları). Hafızadaki "123432" YANLIŞTI — o Susuz-İmar. 43267/1 bu yüzden "bulunamıyordu".
+3. **Göksu'nun 16828 adası Şeker kadastrosunda** (124128), Eryaman'da değil.
+
+### Uygulanan düzeltmeler
+- Nover WestLife=62661/1, AP İst Port=62687/1, Pozitif Life=47544/4, Karma Modern=46657/5 (okul/yönetim binası tapusu yanlıştı), Göksu Metrokent=46477/1+46480/1 (okul parselinden alındı), 75. Yıl=17462/1 (Soyak parseli, blok olduğu metinde açık), Yeşil Göksu +45819/1, Concept Eryaman +46446/1.
+- **Yavuz Selim villa üçlüsü 1:1 oturdu:** Özharitacılar=19501/1 (38 dubleks), Güzel Ev=19501/2 (16 dubleks — daha önce bilinmeyen parsel), Gülvatan=19502/1 (19 dubleks, adanın tek sahibi). Üç kayıt da yeniden yazıldı, çakışma kalktı.
+- Anka Vega'dan yanlış 47544/4 ataması çıkarıldı (kendi konumu 4016. Cadde'nin kuzeyinde, ayrı parsel).
+
+### Özgün'e sorulacak YENİ kartlar
+- **Ritim Eryaman ↔ Başkent Sular (18477/1):** dört kaynak Ritim'i bu parselde gösteriyor, tapu "A+B blok 14 katlı" Ritim'in 96 konut anlatımıyla birebir. Ama parsel şu an Başkent Sular kaydında. Ritim = Başkent Sular'ın kentsel dönüşümü mü?
+- **Ada Loft ↔ Umut Yapı (44756/2):** ada dökümünde 2 parsel var (/1 Doğasu, /2 Arsa-Kİ). Kanıtlar 44756/2'yi Ada Loft'a veriyor — Umut Yapı'nın gerçek yeri neresi?
+- **Çelikler ↔ Esenkent:** iki bağımsız rehber aynı parseli (45824/1) iki farklı adla anıyor; Çelikler'in bağımsız kanıtı yok. Aynı site mi?
+- **Lale Kent:** kayıttaki parsel bir dükkân bloğu (A101/iş merkezi). Gerçek Lalekent 240 m kuzeyde ve muhtemelen mevcut kc-lale-evleri kaydı. Silinsin mi?
+- **Atadostlar ↔ Konut Sitesi (46231/46232):** iki ikiz parsel; tek site iki parselde mi, iki ayrı kooperatif mi?
+
+### KESİN DUPE'lar (veri kanıtlı — silme onayı bekliyor)
+- **Bahar ↔ Polsan 1 Bahar (46481/1):** ada tek parsel, komşu boş parsel yok. Kanonik ad: Polsan 1 Bahar.
+- **Belmi Kent ↔ Prestij Park (44769/1):** ada tek parsel, çevre parseller dolu. Kanonik: Prestij Park Konutları.
+- **Tatlı Yamaç Palmiye ↔ Palmiye Evleri (44784/1):** ada tek parsel. Kanonik: ata/palmiye-evleri.
+
+### YENİ KAYIT ADAYLARI (geometri+tapu hazır, ad kararı Özgün'de)
+- Göksu Sitesi (Yavuz Selim 19505/1, 24 dubleks) — mevcut YS Göksu Sitesi'nden AYRI, ad ayrımı gerek
+- Öz Muhtarlar Sitesi (Güzelkent 18470/1+18471/1, 6+6 blok) — mevcut oz-muhtar-sitesi 18670'te, AYRI site
+- Kardelen Sitesi (Güzelkent 18453/1, 6 blok apartman) — mevcut guzelkent/kardelen 19504 villa bölgesinde, AYRI
+- Göksu Sitesi (Güzelkent 18478/1, 6 blok) — üçüncü Göksu Sitesi!
+- Eray 4 Sitesi (Güzelkent 18658/1, A/B/C 6 katlı)
+Geometri dosyaları hazır: scratchpad/cikti/*.geojson

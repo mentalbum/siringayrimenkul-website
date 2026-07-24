@@ -2,11 +2,11 @@
   "isim": "Güzel Ev Sitesi",
   "slug": "guzel-ev-sitesi",
   "mahalleSlug": "yavuz-selim",
-  "aciklama": "Güzel Ev Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 38 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 11.111 m². Öz Haritacılar Sitesi ile aynı adayı paylaşır. Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Güzel Ev Sitesi, Yavuz Selim Mahallesi'nin 'Güzelkent Villalar' olarak anılan dubleks kuşağında yer alan butik bir yerleşimdir. Tapu kaydına göre site, yaklaşık 3.900 m²'lik kendi parselinde on altı kargir dubleks evden oluşur — komşusu Özharitacılar ile aynı adayı paylaşır, ancak her ikisi de kendi parselinde bağımsızdır. Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19501",
-      "parsel": "1"
+      "parsel": "2"
     }
   ],
   "koordinat": {
@@ -15,10 +15,9 @@
   },
   "sinirGeoJSON": "siteler/yavuz-selim/guzel-ev-sitesi-boundary.geojson",
   "ozellikler": [
-    "38 adet dubleks ev (tapu kaydı)",
-    "Toplam ~11.111 m² (TKGM)",
-    "Kat mülkiyetli (TKGM)",
-    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+    "16 dubleks ev — tapu nitelik kaydı (TKGM)",
+    "Yaklaşık 3,9 dönümlük kendi parseli",
+    "Güzelkent Villalar dubleks kuşağı — Yavuz Selim"
   ],
   "zenginlestirildi": "2026-07-16"
 }

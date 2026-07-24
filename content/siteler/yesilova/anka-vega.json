@@ -8,12 +8,7 @@
   },
   "sinirGeoJSON": "siteler/yesilova/anka-vega-boundary.geojson",
   "aciklama": "Anka Vega Konutları, Yeşilova'nın yeni gelişim aksında yer alan modern bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir'in komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe, manzara ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim. TKGM kayıtlarına göre yaklaşık 7.268 m²'lik kat mülkiyetli parselde yapı, 14'er katlı A1 ve A2 ikiz blok olarak kayıtlıdır (tapu niteliği ofis/işyeri — rezidans tipi).",
-  "adalar": [
-    {
-      "no": "47544",
-      "parsel": "4"
-    }
-  ],
+  "adalar": [],
   "ozellikler": [
     "Modern site — 2+1 (~82 m²) tipler",
     "Meva Şehir komşuluğunda genç doku",
