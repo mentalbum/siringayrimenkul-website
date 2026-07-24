@@ -693,5 +693,5 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 ## TKGM eksik envanteri kapandı (2026-07-24 gece)
 - Sınırsız kayıt KALMADI: Mercan Kent (44780/2) ve Eser Yapı (44752/1) TKGM geometrileriyle haritaya girdi (KBS ile birebir doğrulandı).
 - 71 kaydın metnine işlenmemiş tapu verisi için 79 parsel cache'e çekildi (~/.cache/tkgm-eryaman) — sonraki içerik dalgasının hammaddesi hazır; sorgu gerekmeden yazılabilir.
-- Bulunamayan 3 parsel (kadastro yenileme şüphesi) yukarıda listeli — nokta sorgusuyla çözülebilir, acil değil.
+- Bulunamayan 3 parsel (kadastro yenileme şüphesi): cumhuriyet 43267/1, goksu 16828/4, susuz 63340/6 — nokta sorgusuyla çözülebilir, acil değil.
 - Adasız 17 kayıt: 9'u açık kart/araştırma (Hürev, Ritim, Pozitif, ap-ist-port, bp/ela/mia, Çelikler, 75-yıl), 6'sı kaynaksız hayalet (silinme kararı Özgün'de), 2'si yeni koordinatsız kayıt (Nover, Sky).
