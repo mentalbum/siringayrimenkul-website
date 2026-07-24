@@ -24,7 +24,6 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { siteRehberleri } from "@/lib/site-rehberleri";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { bulunmaHali } from "@/lib/turkce";
 
@@ -327,25 +326,6 @@ export default async function SitePage({ params }: Props) {
         >
           sahibinden.com&apos;daki İlanlarımız
         </CtaButton>
-      </section>
-
-      <section className="mt-12">
-        <h2 className="text-xl">Karar Vermeden Önce: Ev Sahibi Rehberleri</h2>
-        <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
-          {`${bulunmaHali(site.isim)} evinizi satmayı ya da kiraya vermeyi düşünüyorsanız, sürecin
-          tamamını abartısız anlatan rehberlerimiz hazır — okuyup gelin, görüşmede zaman kazanın.`}
-        </p>
-        <div className="mt-5 flex flex-wrap gap-2.5">
-          {siteRehberleri(site).map((rehber) => (
-            <Link
-              key={rehber.href}
-              href={rehber.href}
-              className="cursor-pointer rounded-full border border-border bg-surface px-4 py-2 text-sm font-medium text-body transition-colors hover:border-gold hover:text-gold-dark"
-            >
-              {rehber.etiket} →
-            </Link>
-          ))}
-        </div>
       </section>
 
       <CtaBanner

@@ -110,12 +110,12 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   if (metin.includes("ofis-işyeri") || metin.includes("ofis işyeri") || metin.includes("büro")) {
     items.push({
       soru: `${bulunmaHaliKi(site.isim)} tapu niteliği nedir — konut mu, ofis mi?`,
-      cevap: `Tapu kaydında bu yapı ofis-işyeri niteliğiyle görünüyor; bölgedeki birçok rezidansta karşılaşılan bir durumdur. Daire fiilen konut olarak kullanılsa da tapu tipi değerlemeyi, alıcının kredi sürecini ve aidat/kullanım düzenini etkileyebilir. Satış ya da kiralama öncesi güncel tapu kaydını birlikte kontrol edip sizi doğru bilgilendiriyoruz.`,
+      cevap: `Tapu kaydında bu yapı ofis-işyeri niteliğiyle görünüyor; bölgedeki birçok rezidansta karşılaşılan bir durumdur. Daire fiilen konut olarak kullanılsa da tapu tipi değerlemeyi, alıcının kredi sürecini ve aidat/kullanım düzenini etkileyebilir. Satış ya da kiralama öncesi güncel tapu kaydını birlikte kontrol edip sizi doğru bilgilendiriyoruz; bu tapu tipinin ne anlama geldiğini sözlüğümüzdeki rezidans tapusu maddesinde de anlattık.`,
     });
   } else if (metin.includes("kat irtifak")) {
     items.push({
       soru: `${bulunmaHaliKi(site.isim)} tapu kat irtifaklı mı, kat mülkiyetli mi?`,
-      cevap: `Kayıtlarımızda bu parsel kat irtifakı aşamasında görünüyor. Kat irtifakı satışa engel değildir; ancak kat mülkiyetine geçmiş bir tapu alıcı gözünde daha nettir ve süreci hızlandırır. İşlem öncesi güncel kaydı birlikte kontrol eder, gerekirse geçiş adımlarını anlatırız.`,
+      cevap: `Kayıtlarımızda bu parsel kat irtifakı aşamasında görünüyor. Kat irtifakı satışa engel değildir; ancak kat mülkiyetine geçmiş bir tapu alıcı gözünde daha nettir ve süreci hızlandırır. İşlem öncesi güncel kaydı birlikte kontrol eder, gerekirse geçiş adımlarını anlatırız — kat irtifakından kat mülkiyetine geçiş rehberimizde süreci adım adım bulabilirsiniz.`,
     });
   }
 
