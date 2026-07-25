@@ -40,7 +40,10 @@ const KUNYE = "siringayrimenkul.com";
 const YIL = new Date().getFullYear();
 const POS = arg("pos", "br");
 const SIZE = Number(arg("size", "0.028"));
-const OP = Number(arg("op", "0.72"));
+// Emlak fotoğraflarında alt kenar çoğu zaman açık renktir (yol, kaldırım, beyaz
+// araba). 0,72 opaklık + zayıf gölgeyle künye o zeminde siliniyordu; 0,92 + güçlü
+// gölge her iki zeminde de okunuyor ve hâlâ fotoğrafın önüne geçmiyor.
+const OP = Number(arg("op", "0.92"));
 const TEMIZ = flag("temiz");
 
 // Filigranlı kopya siteye girer. Filigransız kopya public/ DIŞINA yazılır:
@@ -62,9 +65,9 @@ const anchor = POS === "bl" ? `x="${pad}" text-anchor="start"` : `x="${W - pad}"
 
 const kunyeSvg = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="g" x="-40%" y="-40%" width="180%" height="180%">
-      <feDropShadow dx="0" dy="${Math.max(1, Math.round(fontSize * 0.05))}"
-        stdDeviation="${Math.max(1, Math.round(fontSize * 0.09))}" flood-color="#000" flood-opacity="0.55"/>
+    <filter id="g" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="${Math.max(1, Math.round(fontSize * 0.06))}"
+        stdDeviation="${Math.max(2, Math.round(fontSize * 0.167))}" flood-color="#000" flood-opacity="0.85"/>
     </filter>
   </defs>
   <text ${anchor} y="${H - pad}" font-family="Helvetica, Arial, sans-serif" font-size="${fontSize}"
