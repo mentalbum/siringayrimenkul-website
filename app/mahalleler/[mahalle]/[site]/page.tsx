@@ -73,17 +73,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         "Eryaman emlakçı",
       ],
     }),
-    ...(site.gorsel && {
-      // Nested openGraph replaces the root layout's wholesale — restate the
-      // shared fields alongside the per-site image.
-      openGraph: {
-        type: "website" as const,
-        locale: "tr_TR",
-        siteName: siteConfig.name,
-        images: [{ url: site.gorsel, alt: site.isim }],
-      },
-      twitter: { card: "summary_large_image" as const, images: [site.gorsel] },
-    }),
+    // Paylaşım kartı bilinçli olarak site fotoğrafına DEĞİL, opengraph-image.tsx'in
+    // ürettiği markalı 1200x630 karta bırakıldı. Bina fotoğrafları 4:3; OG'nin
+    // beklediği 1.91:1'e kırpılınca yapının üstü ya da altı gidiyor ve
+    // og:image:width/height/type etiketleri de düşüyor. Fotoğraf sayfa içinde ve
+    // JSON-LD'de kullanılır — orada tam boy görünür.
   };
 }
 
@@ -136,7 +130,22 @@ export default async function SitePage({ params }: Props) {
     ...(site.alternatifAdlar?.length && { alternateName: site.alternatifAdlar }),
     description: site.aciklama,
     url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
-    ...(site.gorsel && { image: `${siteConfig.url}${site.gorsel}` }),
+    // Görsel telif künyesi: Google, sahiplik bilgisini ya dosyaya gömülü
+    // IPTC/XMP'den ya da buradaki ImageObject'ten okur. next/image sunum
+    // sırasında gömülü meta veriyi sildiği için tek güvenilir kanal burası.
+    // (license/acquireLicensePage bilerek yok — fotoğraf lisanslamıyoruz,
+    // "licensable" rozeti istemiyoruz.)
+    ...(site.gorsel && {
+      image: {
+        "@type": "ImageObject",
+        url: `${siteConfig.url}${site.gorsel}`,
+        contentUrl: `${siteConfig.url}${site.gorsel}`,
+        caption: `${site.isim} — Eryaman ${mahalle.isim}`,
+        creator: { "@type": "Organization", name: siteConfig.name },
+        creditText: siteConfig.name,
+        copyrightNotice: `© ${siteConfig.name}`,
+      },
+    }),
     ...(site.adres && {
       address: {
         "@type": "PostalAddress",
@@ -223,7 +232,7 @@ export default async function SitePage({ params }: Props) {
                 alt={`${site.isim} — Eryaman ${mahalle.isim}`}
                 width={1440}
                 height={1080}
-                priority
+                preload
                 className="h-auto w-full object-cover"
                 sizes="(min-width: 1024px) 590px, 100vw"
               />

@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Portala (sahibinden.com) giden filigransiz kopyalar — siteye girmez
+portal-fotograflari/

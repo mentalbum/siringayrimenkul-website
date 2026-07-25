@@ -56,7 +56,7 @@ export function Header() {
             width={480}
             height={233}
             className="h-10 w-auto sm:h-11"
-            priority
+            preload
           />
         </Link>
 

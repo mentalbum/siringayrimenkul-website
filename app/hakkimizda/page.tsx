@@ -113,7 +113,7 @@ export default function HakkimizdaPage() {
           alt={`${siteConfig.name} ofisi — Tunahan Mahallesi, 4. Etap Çarşı, Eryaman`}
           width={1284}
           height={936}
-          priority
+          preload
           sizes="(min-width: 896px) 896px, 100vw"
           className="w-full rounded-2xl border border-border object-cover"
         />

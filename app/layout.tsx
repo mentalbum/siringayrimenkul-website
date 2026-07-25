@@ -62,7 +62,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    images: ["/images/ofis-ic-mekan.jpg"],
+    // images bilerek yok: burada tanımlanırsa 727 site sayfasının tamamı bu tek
+    // görseli miras alıyor ve sayfaya özel opengraph-image kartını gölgeliyordu.
+    // twitter:image yokken X/Twitter og:image'a düşer — o da doğru karttır.
   },
   verification: {
     google: "k1TcGp1CMeFpPUlbp91mnEqvCaHu1y1-si6t0F6xjOA",

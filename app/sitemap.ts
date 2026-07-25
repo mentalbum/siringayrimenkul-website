@@ -47,6 +47,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: getSiteLastModified(mahalle.slug, site.slug),
       changeFrequency: "monthly" as const,
       priority: 0.7,
+      // Sayfada görsel /_next/image?url=... proxy'si üzerinden servis ediliyor
+      // ve Google bu adresleri indekslemiyor; orijinal yolu sitemap'ten veriyoruz.
+      ...(site.gorsel && { images: [`${baseUrl}${site.gorsel}`] }),
     }))
   );
 
