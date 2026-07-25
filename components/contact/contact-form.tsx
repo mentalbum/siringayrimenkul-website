@@ -44,7 +44,13 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
 
   useEffect(() => {
     const id = window.setTimeout(
-      () => setMobil(/Android|iPhone|iPad|iPod/i.test(window.navigator.userAgent)),
+      () =>
+        setMobil(
+          /Android|iPhone|iPad|iPod/i.test(window.navigator.userAgent) ||
+            // iPadOS 13+ masaüstü UA bildiriyor; dokunmatik + dar ekran birlikte
+            // güvenilir bir işaret.
+            (window.navigator.maxTouchPoints > 1 && window.matchMedia("(max-width: 1024px)").matches)
+        ),
       0
     );
     return () => window.clearTimeout(id);
@@ -229,6 +235,15 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
           </span>
         </p>
       )}
+      {/* Opsiyonel alanlar katlı geliyor: form ne kadar uzun görünürse o kadar
+          terk ediliyor. Zorunlu olan yalnız ad ve telefon; gerisi görüşmede de
+          konuşulabilir. Değerleme sayfasından gelen için açık başlıyor, çünkü
+          orada m²/oda bilgisi işi gerçekten hızlandırıyor. */}
+      <details className="group rounded-xl border border-border bg-surface-muted px-4 py-3" open={Boolean(siteler)}>
+        <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-navy [&::-webkit-details-marker]:hidden">
+          Daire bilgisi ekleyin <span className="text-xs font-normal text-muted">(opsiyonel — daha hızlı dönüş)</span>
+        </summary>
+        <div className="mt-4 space-y-4">
       <div className="grid gap-4 sm:grid-cols-2">
         <div>
           <label htmlFor="metrekare" className="text-sm font-medium text-navy">
@@ -278,6 +293,8 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
           className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
         />
       </div>
+        </div>
+      </details>
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
         <button
           type="submit"
