@@ -7,7 +7,7 @@
     "lng": 32.652441
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/soyak-sitesi-boundary.geojson",
-  "aciklama": "Soyak Sitesi (2. Etap Soyak Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman 2. Etap bölgesinde üç adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre adalarda toplam 16 apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 20.677 m². (Tunahan'daki 4. Etap Soyak Blokları ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Soyak Sitesi (Soyak Blokları), Şehit Osman Avcı Mahallesi'nde üç adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre adalarda toplam 16 apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 20.677 m². (Tunahan'daki Soyak Blokları ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17462",
@@ -29,7 +29,6 @@
     "3 ayrı ada — toplam 16 apartman (TKGM)",
     "Toplam ~20.677 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
-    "Eryaman 2. Etap kooperatif kuşağı",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [

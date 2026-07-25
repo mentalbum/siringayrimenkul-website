@@ -7,7 +7,7 @@
     "lng": 32.630968
   },
   "sinirGeoJSON": "siteler/tunahan/soyak-sitesi-boundary.geojson",
-  "aciklama": "Soyak Sitesi (Soyak Blokları), Tunahan Mahallesi'nde Eryaman 4. Etap bölgesinde beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı ikiden altıya uzanır — toplam 21 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 28.201 m². İki apartmanlık sakin adadan altı apartmanlık hareketli adaya uzanan bu yelpaze, aynı küme içinde birbirinden farklı yaşam tercihleri barındırır — satışta da her adanın kendi emsal çizgisi vardır. Okyanus çarşı bölgesine ve 4. Etap'ın günlük yaşam aksına yakın konumdadır; banka ATM'leri, eczane ve PTT yürüme mesafesindedir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin. (Not: Şehit Osman Avcı Mahallesi'ndeki 2. Etap Soyak Blokları ayrı bir yerleşimdir; iki Soyak sık karıştırılır.)",
+  "aciklama": "Soyak Sitesi (Soyak Blokları), Tunahan Mahallesi'nde beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı ikiden altıya uzanır — toplam 21 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 28.201 m². İki apartmanlık sakin adadan altı apartmanlık hareketli adaya uzanan bu yelpaze, aynı küme içinde birbirinden farklı yaşam tercihleri barındırır — satışta da her adanın kendi emsal çizgisi vardır. Okyanus çarşı bölgesine ve bölgenin günlük yaşam aksına yakın konumdadır; banka ATM'leri, eczane ve PTT yürüme mesafesindedir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin. (Not: Şehit Osman Avcı Mahallesi'ndeki Soyak Blokları ayrı bir yerleşimdir; iki Soyak sık karıştırılır.)",
   "adalar": [
     {
       "no": "17655",
@@ -40,7 +40,6 @@
     "Toplam ~28.201 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 2-6 apartman — değişken ölçek (TKGM)",
-    "Eryaman 4. Etap kooperatif kuşağı",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [

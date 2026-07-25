@@ -7,7 +7,7 @@
     "lng": 32.62105
   },
   "sinirGeoJSON": "siteler/tunahan/elit-yasam-evleri-boundary.geojson",
-  "aciklama": "Elit Yaşam Evleri, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde, büyük bir yerleşim adasının içinde kendi parseline sahip tek bloklu butik bir yapıdır. TKGM kayıtlarına göre 3.971 m²'lik kat mülkiyetli parselde betonarme apartman olarak kayıtlıdır; yerel kayıtlarda adanın \"6. Blok\"u olarak geçer. Dev kooperatif kümelerinin arasında tek apartmanlık bu ölçek, az daireli ve sakin bir apartman yaşamı arayanların profilidir: komşu sayısı az, ortak gider ve yönetim yalındır. Bulunduğu kesim, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksına komşudur; banka ATM'leri ve eczanesiyle Okyanus Plaza'nın çarşı işlevi de yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Elit Yaşam Evleri, Tunahan Mahallesi'nde, büyük bir yerleşim adasının içinde kendi parseline sahip tek bloklu butik bir yapıdır. TKGM kayıtlarına göre 3.971 m²'lik kat mülkiyetli parselde betonarme apartman olarak kayıtlıdır; yerel kayıtlarda adanın \"6. Blok\"u olarak geçer. Dev kooperatif kümelerinin arasında tek apartmanlık bu ölçek, az daireli ve sakin bir apartman yaşamı arayanların profilidir: komşu sayısı az, ortak gider ve yönetim yalındır. Bulunduğu kesim, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksına komşudur; banka ATM'leri ve eczanesiyle Okyanus Plaza'nın çarşı işlevi de yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46505",
@@ -19,7 +19,6 @@
     "3.971 m² kendi parseli (TKGM)",
     "Tek blok — butik yapı",
     "Kat mülkiyetli parsel (TKGM)",
-    "Eryaman 5. Etap",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15"

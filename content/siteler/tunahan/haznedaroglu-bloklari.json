@@ -7,7 +7,7 @@
     "lng": 32.621864
   },
   "sinirGeoJSON": "siteler/tunahan/haznedaroglu-bloklari-boundary.geojson",
-  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap kooperatif kuşağında, yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda üçer ve dörder apartmanlık gruplar hâlinde toplam 24 kârgir apartman bulunur; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 37.169 m². Konumu bölgenin tam kalbine denk gelir: iki Klima kümesi ve Öztaş Blokları ile çevrilidir, 4. Etap'ın kesintisiz kooperatif kuşağı burada birleşir. Geniş ada aralıkları ve oturmuş yeşiliyle 4. Etap'ın karakteristik dokusunu taşır; eczane, aile sağlığı merkezi ve 4. Etap Çarşısı mahallenin bu kesiminde günlük ihtiyacı karşılar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında, yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda üçer ve dörder apartmanlık gruplar hâlinde toplam 24 kârgir apartman bulunur; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 37.169 m². Konumu bölgenin tam kalbine denk gelir: iki Klima kümesi ve Öztaş Blokları ile çevrilidir, bölgenin kesintisiz kooperatif kuşağı burada birleşir. Geniş ada aralıkları ve oturmuş yeşiliyle bölgenin karakteristik dokusunu taşır; eczane, aile sağlığı merkezi ve 4. Etap Çarşısı mahallenin bu kesiminde günlük ihtiyacı karşılar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17633",
@@ -50,7 +50,6 @@
     "Toplam ~37.169 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 3-4 apartman (TKGM)",
-    "Eryaman 4. Etap kooperatif kuşağı",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15"

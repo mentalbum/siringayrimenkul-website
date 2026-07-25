@@ -7,7 +7,7 @@
     "lng": 32.616397
   },
   "sinirGeoJSON": "siteler/tunahan/mavicam-sitesi-boundary.geojson",
-  "aciklama": "Maviçam Sitesi, Tunahan Mahallesi'nde Eryaman 5. Etap bölgesinde yer alan büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, 38.282 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — 5. Etap'ın en geniş parsellerinden biri. Tek ve bütünlüklü parsel yapısının sakinlere yansıması nettir: ortak alanlar bölünmemiştir, yeşil doku ve iç yollar site içinde kesintisiz akar, yönetim tek çatı altındadır. Çevresinde hem 5. Etap kooperatifleri hem de 4. Etap'ın Klima kümeleri bulunur; mahallenin iki etabının buluştuğu bu kesim, günlük yaşamda her iki tarafın çarşı ve okul imkânlarına erişim sağlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Maviçam Sitesi, Tunahan Mahallesi'nde yer alan büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, 38.282 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — bölgenin en geniş parsellerinden biri. Tek ve bütünlüklü parsel yapısının sakinlere yansıması nettir: ortak alanlar bölünmemiştir, yeşil doku ve iç yollar site içinde kesintisiz akar, yönetim tek çatı altındadır. Çevresinde hem bölge kooperatifleri hem de bölgenin Klima kümeleri bulunur; mahallenin iki etabının buluştuğu bu kesim, günlük yaşamda her iki tarafın çarşı ve okul imkânlarına erişim sağlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46514",
@@ -18,8 +18,7 @@
   "ozellikler": [
     "38.282 m² tek parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "5. Etap'ın en geniş parsellerinden",
-    "Eryaman 5. Etap kooperatif kuşağı",
+    "Bölgenin en geniş parsellerinden",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15"

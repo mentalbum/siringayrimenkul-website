@@ -7,7 +7,7 @@
     "lng": 32.650928
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci/demirer-sitesi-boundary.geojson",
-  "aciklama": "Demirer Sitesi (Demirer Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman 2. Etap kooperatif kuşağında, yerel kayıtlarda \"Demirer 1\" ve \"Demirer 2\" olarak anılan iki küme hâlinde toplam yedi adaya yayılmış büyük bir yerleşimdir. TKGM kayıtlarına göre adalarda toplam 24 betonarme apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 49.525 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Demirer Sitesi (Demirer Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman'ın kooperatif kuşağında, yerel kayıtlarda \"Demirer 1\" ve \"Demirer 2\" olarak anılan iki küme hâlinde toplam yedi adaya yayılmış büyük bir yerleşimdir. TKGM kayıtlarına göre adalarda toplam 24 betonarme apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 49.525 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17460",
@@ -49,7 +49,6 @@
     "7 ayrı ada, iki küme (Demirer 1 ve 2) — toplam 24 apartman (TKGM)",
     "Toplam ~49.525 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
-    "Eryaman 2. Etap kooperatif kuşağı",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [

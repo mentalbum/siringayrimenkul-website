@@ -7,7 +7,7 @@
     "lng": 32.632491
   },
   "sinirGeoJSON": "siteler/tunahan/stfa-bloklari-boundary.geojson",
-  "aciklama": "STFA Blokları, Tunahan Mahallesi'nde Eryaman 4. Etap kooperatif kuşağında, beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarındaki yerleşim düzeni dikkat çekecek kadar simetriktir: beş adanın her birinde dörder kârgir apartman bulunur — toplam 20 apartman; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 26.328 m². Günlük yaşam 4. Etap'ın kendi içinde çözülür: banka ATM'lerinin sıralandığı 4. Etap Çarşısı, PTT şubesi, eczaneler ve aile sağlığı merkezi mahallenin bu kesiminde toplanmıştır. Kümenin çevresini Yardımcı, Yüksel ve Haznedaroğlu blokları sarar; araya giren geniş yeşil bantlar 4. Etap'ın ferah dokusunu korur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "STFA Blokları, Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında, beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarındaki yerleşim düzeni dikkat çekecek kadar simetriktir: beş adanın her birinde dörder kârgir apartman bulunur — toplam 20 apartman; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 26.328 m². Günlük yaşam bölgenin kendi içinde çözülür: banka ATM'lerinin sıralandığı 4. Etap Çarşısı, PTT şubesi, eczaneler ve aile sağlığı merkezi mahallenin bu kesiminde toplanmıştır. Kümenin çevresini Yardımcı, Yüksel ve Haznedaroğlu blokları sarar; araya giren geniş yeşil bantlar bölgenin ferah dokusunu korur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17666",
@@ -40,7 +40,6 @@
     "Toplam ~26.328 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Her adada dörder apartman — simetrik yerleşim (TKGM)",
-    "Eryaman 4. Etap kooperatif kuşağı",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-07-15",

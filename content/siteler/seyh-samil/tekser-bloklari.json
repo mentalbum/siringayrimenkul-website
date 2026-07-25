@@ -7,7 +7,7 @@
     "lng": 32.624475
   },
   "sinirGeoJSON": "siteler/seyh-samil/tekser-bloklari-boundary.geojson",
-  "aciklama": "Tekser Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap kooperatif kuşağında, altı ayrı yerleşim adasına yayılmış büyük bir konut bölgesidir. TKGM kayıtlarına göre adalarda toplam 34 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 32.321 m². Geniş ada aralıkları ve yeşil koridorlarıyla 3. Etap'ın planlı dokusunu taşır; Alarko, Tepe ve Eston blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Tekser Blokları, Şeyh Şamil Mahallesi'nde Eryaman'ın kooperatif kuşağında, altı ayrı yerleşim adasına yayılmış büyük bir konut bölgesidir. TKGM kayıtlarına göre adalarda toplam 34 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 32.321 m². Geniş ada aralıkları ve yeşil koridorlarıyla bölgenin planlı dokusunu taşır; Alarko, Tepe ve Eston blok kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17322",
@@ -44,7 +44,6 @@
     "6 ayrı ada — toplam 34 kârgir apartman (TKGM)",
     "Toplam ~32.321 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
-    "Eryaman 3. Etap kooperatif kuşağı",
     "Alarko, Tepe ve Eston kümelerine komşu",
     "Şeyh Şamil — kadastroda Eryaman kaydı"
   ],

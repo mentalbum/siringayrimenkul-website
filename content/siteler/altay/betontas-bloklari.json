@@ -7,7 +7,7 @@
     "lng": 32.6443
   },
   "sinirGeoJSON": "siteler/altay/betontas-bloklari-boundary.geojson",
-  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesi olan 1. Etap'ta, yaklaşık 86.400 m²'lik (86 dönüm) bir alana yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. 1. Etap'ın oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesinde, yaklaşık 86.400 m²'lik (86 dönüm) bir alana yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. Bölgenin oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17516",
@@ -53,7 +53,7 @@
   "ozellikler": [
     "8 ada, toplam 66 kargir apartman bloğu (TKGM)",
     "~86.400 m² (86 dönüm) yerleşim alanı",
-    "Eryaman 1. Etap — bölgenin ilk yapılaşma dokusu",
+    "Bölgenin ilk yapılaşma dokusu",
     "Okul, çarşı ve park aksına yerleşik konum"
   ],
   "zenginlestirildi": "2026-07-09"
