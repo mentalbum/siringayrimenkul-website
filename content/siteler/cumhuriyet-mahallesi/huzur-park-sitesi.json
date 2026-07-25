@@ -1,0 +1,25 @@
+{
+  "isim": "Huzur Park Sitesi",
+  "slug": "huzur-park-sitesi",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.98539,
+    "lng": 32.689695
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/huzur-park-sitesi-boundary.geojson",
+  "aciklama": "Huzur Park Sitesi, Cumhuriyet Mahallesi'nde karma yapılı bir sitedir. TKGM kayıtlarına göre yaklaşık 6.230 m²'lik parselde tapu, 15 katlı A bloğu 'Apartman ve Dükkan' niteliğiyle tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Zemindeki ticari birimler günlük ihtiyacı site sınırında karşılar; üst katlarda bölgeye açık görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "43254",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~6.230 m² parsel (TKGM)",
+    "2-15 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

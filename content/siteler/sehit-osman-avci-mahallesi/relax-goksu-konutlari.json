@@ -1,0 +1,26 @@
+{
+  "isim": "Relax Göksu Konutları",
+  "slug": "relax-goksu-konutlari",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9876199,
+    "lng": 32.6543784
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/relax-goksu-konutlari-boundary.geojson",
+  "aciklama": "Relax Göksu Konutları, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi üzerinde, Fırat Life Style (Dema ve İnvest Yapı ortaklığıyla) tarafından geliştirilen ve 2016 sonunda teslim edilen, 1.209 konutluk dev bir yerleşim — Eryaman'ın en büyük rezidans tipi projelerinden biri. Daireler 30–55 m² aralığında stüdyo (1+0) ve 1+1 tiplerinden oluşuyor; bu kompakt yapı siteyi özellikle kiralama pazarında bölgenin en hareketli adreslerinden biri yapıyor. Bünyesindeki çarşı/alışveriş alanı, 7/24 güvenliği ve ilanlarda öne çıkan havuz, sauna, hamam gibi olanaklarıyla kendi kendine yeten bir kompleks. Konum olarak Göksu Parkı'na ve göl hattına komşu, Eryaman metro-çarşı aksına araçla birkaç dakika mesafede. TKGM kaydında site tek parsel üzerinde yer alıyor. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde doğru fiyatlama, dolu kalma süresini doğrudan etkiler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46622",
+      "parsel": "1"
+    }
+  ],
+  "adres": "Malazgirt 1071. Cd. No:51, Şehit Osman Avcı, Etimesgut/Ankara",
+  "ozellikler": [
+    "1.209 konut (Fırat Life Style, teslim 2016)",
+    "30–55 m² stüdyo (1+0) ve 1+1 daire tipleri",
+    "Bünyesinde çarşı/alışveriş alanı",
+    "7/24 güvenlik; havuz, sauna ve hamam",
+    "Göksu Parkı ve göl hattına komşu"
+  ],
+  "zenginlestirildi": "2026-07-09"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Kardelen Sitesi",
+  "slug": "kardelen-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "aciklama": "Kardelen Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 16 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 5.347 m². (Güzelkent'in apartman bölgesindeki Kardelen Sitesi ayrı bir yerleşimdir.) Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19504",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.997726,
+    "lng": 32.610049
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/kardelen-sitesi-boundary.geojson",
+  "ozellikler": [
+    "16 adet dubleks ev (tapu kaydı)",
+    "Toplam ~5.347 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

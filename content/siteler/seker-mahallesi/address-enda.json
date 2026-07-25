@@ -1,0 +1,23 @@
+{
+  "isim": "Address Enda",
+  "slug": "address-enda",
+  "mahalleSlug": "seker-mahallesi",
+  "koordinat": {
+    "lat": 39.967954,
+    "lng": 32.657743
+  },
+  "sinirGeoJSON": "siteler/seker-mahallesi/address-enda-boundary.geojson",
+  "aciklama": "Address Enda, Şeker Mahallesi'nde 11 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Kompakt birimleri ve tek blok düzeniyle genç ve yatırımcı profiline hitap eder; Şeker'in gelişen aksında yeni nesil bir adrestir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46362",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Konut + cadde dükkânları (karma)",
+    "Köşe konumlu geniş ticari üniteler",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

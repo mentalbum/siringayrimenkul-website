@@ -1,0 +1,23 @@
+{
+  "isim": "Hava Destek Sitesi",
+  "slug": "hava-destek-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.993302,
+    "lng": 32.642425
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/hava-destek-sitesi-boundary.geojson",
+  "aciklama": "Hava Destek Sitesi, Göksu Mahallesi'nde numaralı bloklu büyük bir kooperatif parselinin parçasıdır. TKGM kayıtlarına göre yaklaşık 23.101 m²'lik kat mülkiyetli parselde tapu, yapıları '14 Katlı 1-4 ve 8-9 Numaralı Bloklar ile 5 ve 6 Numaralı Bloklar' olarak sayar; parseli komşu kooperatif siteleriyle paylaşır. Adını kurucu meslek kooperatifinden taşıyan yerleşim, geniş ortak çevresiyle bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "2 blok (kapı no 5-5 ve 5-6)",
+    "Gölkent 1 ve Havacılar ile paylaşımlı parsel",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "adalar": [
+    {
+      "no": "46455",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

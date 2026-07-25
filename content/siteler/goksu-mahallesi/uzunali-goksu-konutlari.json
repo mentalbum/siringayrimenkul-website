@@ -1,0 +1,24 @@
+{
+  "isim": "Uzunali Göksu Konutları",
+  "slug": "uzunali-goksu-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.001793,
+    "lng": 32.647533
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/uzunali-goksu-konutlari-boundary.geojson",
+  "aciklama": "Uzunali Göksu Konutları, Göksu Mahallesi'nde 20 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 4.687 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '20 Katlı Betonarme Mesken' olarak tanımlar. Uzunali ailesinin ikinci etabı olan 27 katlı Uzunali Göksu 2 ile birlikte bölgenin tanınan modern konut ikilisini oluşturur; üst katlarda Göksu'ya hâkim görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63396",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~4.687 m² parsel (TKGM)",
+    "20 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

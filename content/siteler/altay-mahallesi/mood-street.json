@@ -1,0 +1,24 @@
+{
+  "isim": "Mood Street",
+  "slug": "mood-street",
+  "mahalleSlug": "altay-mahallesi",
+  "koordinat": {
+    "lat": 39.96577,
+    "lng": 32.645399
+  },
+  "sinirGeoJSON": "siteler/altay-mahallesi/mood-street-boundary.geojson",
+  "aciklama": "Mood Street, Altay Mahallesi'nde, Söğüt Caddesi üzerinde 14 katlı ana blok ile 4 katlı yan bloktan oluşan rezidans tipi bir projedir; tapuda ofis/işyeri niteliğiyle kayıtlıdır. TKGM kayıtlarına göre yaklaşık 5.364 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Katlı A Blok Ve 4 Katlı B Bloktan Oluşan Betonarme Ofis, İşyeri\". Bu yapıda satılık veya kiralık daireniz ya da ofisiniz mi var? Doğru fiyat kat, cephe ve kullanım durumuyla netleşir — bölgeyi yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45898",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A 14 katlı, B 4 katlı)",
+    "Tapu niteliği: ofis/işyeri (rezidans tipi)",
+    "~5.364 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

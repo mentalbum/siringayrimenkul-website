@@ -1,0 +1,28 @@
+{
+  "isim": "White Dream Sitesi",
+  "slug": "white-dream-sitesi",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.010384,
+    "lng": 32.645987
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/white-dream-sitesi-boundary.geojson",
+  "aciklama": "White Dream Sitesi, Susuz'da 2. İnönü Caddesi üzerinde Ünsal imzalı, yüksek katlı güvenlikli bir konut sitesidir. İlanlarda geniş 4,5+1 daireleri (net ~185 m²) öne çıkar. Tapu kaydı siteyi net tarif eder: yaklaşık 18.222 m²'lik parselde on altışar katlı A ve B bloklar ile on iki katlı C blok — 18 dönümlük alan, yüksek bloklara geniş peyzaj payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63331",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "3 blok: 16'şar katlı A-B + 12 katlı C — tapu nitelik kaydı",
+    "Yaklaşık 18 dönümlük parsel (TKGM)",
+    "Ünsal — güvenlikli site, geniş 4,5+1 daireler",
+    "2. İnönü Caddesi — Göksu kentsel gelişim bölgesi"
+  ],
+  "adres": "2. İnönü Caddesi, Susuz, Yenimahalle/Ankara",
+  "alternatifAdlar": [
+    "Ünsal White Dream"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

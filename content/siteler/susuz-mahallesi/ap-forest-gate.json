@@ -1,0 +1,24 @@
+{
+  "isim": "Ap Forest Gate",
+  "slug": "ap-forest-gate",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.005893,
+    "lng": 32.659228
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/ap-forest-gate-boundary.geojson",
+  "aciklama": "AP Forest Gate, Susuz'un Göksu kentsel gelişim bölgesinde 14'er katlı ikiz ana blokları ve 3'er katlı yan bloklarıyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14'er Katlı A ve B Bloklar ile 3'er Katlı Bloklar' niteliğiyle kayıtlı 9.152 m²'lik kat mülkiyetli parsel üzerine kuruludur. AP ailesinin (İstGate, İst Port, Green Tower) bölgedeki halkalarındandır — aile içi çapraz talep satıcıya görünürlük kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63285",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~9.152 m² parsel (TKGM)",
+    "3-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

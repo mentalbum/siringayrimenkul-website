@@ -1,0 +1,23 @@
+{
+  "isim": "Düşkent Sitesi",
+  "slug": "duskent-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 40.0015077,
+    "lng": 32.6254695
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/duskent-sitesi-boundary.geojson",
+  "aciklama": "Düşkent Sitesi, Şeyh Şamil Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 6.682 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloklu yalın ölçeği; az komşulu, yönetimi kolay bir site yaşamı demektir ve Şeyh Şamil'in yerleşik kooperatif kuşağının içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46223",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~6.682 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

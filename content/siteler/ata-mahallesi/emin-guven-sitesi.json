@@ -1,0 +1,23 @@
+{
+  "isim": "Emin Güven Sitesi",
+  "slug": "emin-guven-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.0015,
+    "lng": 32.6032222
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/emin-guven-sitesi-boundary.geojson",
+  "aciklama": "Emin Güven Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre sitenin bulunduğu parsel yaklaşık 6.218 m²'lik bir alana karşılık gelir ve tapuda kat irtifakı aşamasındadır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Ata Mahallesi'nin Eryaman'a komşu, yeni gelişen konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44754",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "Yaklaşık 6,2 dönümlük parsel (TKGM)",
+    "Kat irtifaklı parsel (TKGM)",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

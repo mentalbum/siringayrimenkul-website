@@ -1,0 +1,28 @@
+{
+  "isim": "Dalgıç Residence",
+  "slug": "dalgic-residence",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.970058,
+    "lng": 32.660736
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/dalgic-residence-boundary.geojson",
+  "aciklama": "Dalgıç Residence, Şehit Osman Avcı Mahallesi'nde 12 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 3.980 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — yani yapı rezidans tipindedir; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, ayrıntısını sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Kompakt birimleri ve tek blok düzeniyle genç ve yatırımcı profiline hitap eder; mahallenin gelişen modern aksında bilinen bir adrestir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46654",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~3.980 m² parsel (TKGM)",
+    "12 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Dalgıç Rezidans"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "isim": "Mahal Çağ Sitesi",
+  "slug": "mahal-cag-sitesi",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.0067843,
+    "lng": 32.6408844
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/mahal-cag-sitesi-boundary.geojson",
+  "aciklama": "Mahal Çağ Sitesi, Susuz'un Göksu kentsel gelişim bölgesinde, 17'şer katlı iki yüksek blok ve 3 katlı ticari bloktan oluşan karma bir yerleşim parselinin parçasıdır. TKGM kayıtlarına göre 15.600 m²'lik kat mülkiyetli parseli Nil My Home ile paylaşır; tapu, yapıları '17'şer Katlı A ve B Blok ile 3 Katlı C Blok Ofis-İşyeri' olarak tanımlar. Üst katlar gelişim aksına geniş görüş sunar; alçak blok günlük ihtiyacı site sınırında karşılar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63368",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "~15.600 m² parsel (TKGM)",
+    "3 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16",
+  "alternatifAdlar": [
+    "Çağ Mahal Sitesi"
+  ]
+}

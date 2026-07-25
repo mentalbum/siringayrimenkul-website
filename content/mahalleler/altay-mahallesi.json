@@ -1,0 +1,18 @@
+{
+  "isim": "Altay Mahallesi",
+  "slug": "altay-mahallesi",
+  "ilce": "Etimesgut",
+  "durum": "yayinda",
+  "kisaAciklama": "Etimesgut'un Eryaman bölgesinde, Eryaman 1. Etap'ın kurulduğu ve 2013'ten bu yana nüfusu istikrarlı biçimde artan mahalle.",
+  "uzunAciklama": [
+    "Altay Mahallesi, Ankara'nın Etimesgut ilçesine bağlı, Eryaman bölgesinde yer alıyor. Mahallenin en ayırt edici özelliği Eryaman'ın ilk yapılaşma bölgesi olması: resmî kayıtlarda pazar yeri \"Eryaman 1. Etap Toplu Konut Bölgesi Pazarı\" adıyla, okul adresleri ise \"1. Etap\" ibaresiyle geçiyor — yani Eryaman 1. Etap denince kastedilen yer büyük ölçüde burasıdır.",
+    "Nüfus 2007'de yaklaşık 22 bine kadar yükselmiş, ardından 2013'e kadar gerilemiş; o tarihten bu yana ise kesintisiz artıyor ve güncel ADNKS verilerine göre 14 binin üzerine çıkmış durumda. Yani mahalle son on yılda yeniden nüfus kazanan bir yerleşim.",
+    "Doku, 1. Etap'ın kooperatif kökenli blok kümelerinden (Age, Aktürk, Mesa, Sutek, Betontaş, Kutlutaş) ve son yıllarda eklenen yeni nesil rezidanslardan oluşuyor. Yeşil alan tarafında Selçuklular Caddesi'ndeki Cumhuriyet Parkı 31 dönümü aşan büyüklüğüyle mahallenin en büyük donatısı; Söğüt Caddesi'ndeki Altay Koşuyolu ise 38 dönümlük yeşil bir aks sunuyor.",
+    "Şirin Gayrimenkul olarak Altay Mahallesi'ndeki siteleri ve rezidansları tek tek tanıyoruz. Evinizi satmak veya kiraya vermek istiyorsanız doğrudan bizimle iletişime geçebilirsiniz."
+  ],
+  "merkezKoordinat": {
+    "lat": 39.972489,
+    "lng": 32.6447493
+  },
+  "sinirGeoJSON": "mahalleler/altay-boundary.geojson"
+}

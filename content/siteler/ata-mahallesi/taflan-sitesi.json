@@ -1,0 +1,24 @@
+{
+  "isim": "Taflan Sitesi",
+  "slug": "taflan-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.002881,
+    "lng": 32.601211
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/taflan-sitesi-boundary.geojson",
+  "aciklama": "Taflan Sitesi, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre tam 10.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A-B-C Bloktan Oluşan Beton Apartman' olarak, A bloğunu 13 katlı biçiminde tanımlar — kademeli üç blok, aynı sitede farklı cephe ve fiyat katmanları oluşturur. On dönümlük düzenli parseliyle Ata'nın yerleşik dokusunda ferah bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44752",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~10.000 m² parsel (TKGM)",
+    "13 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

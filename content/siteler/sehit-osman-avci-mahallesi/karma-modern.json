@@ -1,0 +1,26 @@
+{
+  "isim": "Karma Modern",
+  "slug": "karma-modern",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9689888,
+    "lng": 32.6602506
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/karma-modern-boundary.geojson",
+  "aciklama": "Karma Modern, Eryaman Şehit Osman Avcı Mahallesi'nde (1419. Cadde) yer alan, konut ve ticareti bir arada barındıran bir sitedir. Proje kaynaklarına göre yaklaşık 9.000 m²'lik alan üzerinde 92 konut ve 17 ticari ünite bulunuyor; daireler 2+1, 3+1 ve 4+1 tiplerinde planlanmış (2+1'ler net ~113 m²). Nispeten yeni yapısı, kapalı otoparkı ve site içi donatılarıyla hem oturum hem yatırım için tercih edilen bir proje; İstanbul Yolu aksına ve toplu ulaşıma yakın konumda. Tapu kaydına göre proje, yaklaşık 8.954 m²'lik parselde on iki katlı A blok ile üç katlı B bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46657",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~9.000 m² alan — 92 konut + 17 ticari",
+    "2+1 (net ~113 m²), 3+1, 4+1",
+    "Kapalı otopark, site içi donatı",
+    "1419. Cadde / Şehit Osman Avcı",
+    "İstanbul Yolu aksı, toplu ulaşıma yakın"
+  ],
+  "adres": "1419. Cadde No:4, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-14"
+}

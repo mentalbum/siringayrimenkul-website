@@ -1,0 +1,24 @@
+{
+  "isim": "Zirveden Göksu",
+  "slug": "zirveden-goksu",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.003125,
+    "lng": 32.638386
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/zirveden-goksu-boundary.geojson",
+  "aciklama": "Zirveden Göksu, Göksu Mahallesi'nde 20'şer katlı üç bloklu modern bir konut sitesidir. TKGM kayıtlarına göre kat mülkiyetli parselde tapu kaydı yapıyı '20 Katlı A, B ve C Blok Betonarme Apartman' olarak tanımlar — üç eş yüksek blok, bölge silüetinin zirve çizgisindedir. Zirve markasının bölgedeki halkalarındandır; üst katlar çok geniş görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63388",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Zirve Beton — 224 daire, tamamı 4+1 (~170-173 m²)",
+    "~25-28 dönüm alan, 7/24 güvenlik",
+    "Zirveden Batı'nın kardeş projesi",
+    "Göksu gelişim aksı"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

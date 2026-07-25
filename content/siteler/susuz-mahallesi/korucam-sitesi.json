@@ -1,0 +1,24 @@
+{
+  "isim": "Koruçam Sitesi",
+  "slug": "korucam-sitesi",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.00664,
+    "lng": 32.638642
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/korucam-sitesi-boundary.geojson",
+  "aciklama": "Koruçam Sitesi, Susuz'un Göksu kentsel gelişim bölgesinde ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 12.228 m²'lik parselde tapu kaydı yapıyı '14 Katlı A Blok ve 13 Katlı B Blok Betonarme Mesken' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki bloğun 12 dönümlük parsele yerleşimi açık alan payını geniş tutar; adının çağrıştırdığı yeşil tema, bölgenin planlı dokusuyla uyumludur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "64515",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~12.228 m² parsel (TKGM)",
+    "13-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

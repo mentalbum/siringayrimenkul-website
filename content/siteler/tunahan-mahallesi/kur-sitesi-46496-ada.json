@@ -1,0 +1,32 @@
+{
+  "isim": "Kur Sitesi 46496 Ada",
+  "slug": "kur-sitesi-46496-ada",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.982225,
+    "lng": 32.630395
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/kur-sitesi-46496-ada-boundary.geojson",
+  "aciklama": "Kur Sitesi 46496 Ada, Tunahan Mahallesi'ndeki Kur Sitesi'nin iki adasından ikincisidir; yerel kayıtlarda C2B–2H blok grubu olarak geçer. TKGM kayıtlarına göre bu bölüm, tapuda \"10 Blok Kârgir Apartman\" niteliğiyle kayıtlı 16.514 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Komşusu Kur Sitesi 46495 Ada ile birlikte Kur Sitesi toplamda yirmi dört bloğa ulaşır. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46496",
+      "etap": "5",
+      "blok": "C2B-2H",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "16.514 m² tek parsel (TKGM)",
+    "10 blok kârgir apartman (tapu kaydı)",
+    "Kur Sitesi'nin iki adasından ikincisi (yerel kayıt: C2B–2H)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15",
+  "alternatifAdlar": [
+    "Kur Sitesi",
+    "Kur Blokları",
+    "Kur Sitesi C2B-2H"
+  ]
+}

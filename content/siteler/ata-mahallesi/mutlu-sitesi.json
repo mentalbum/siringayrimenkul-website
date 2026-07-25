@@ -1,0 +1,24 @@
+{
+  "isim": "Mutlu Sitesi",
+  "slug": "mutlu-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.011582,
+    "lng": 32.621514
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/mutlu-sitesi-boundary.geojson",
+  "aciklama": "Mutlu Sitesi, Ata Mahallesi'nde yaklaşık 23 dönümlük (22.914 m², TKGM) kat mülkiyetli tek parsel üzerine kurulu bir konut sitesidir. Tapu kaydı yapıyı \"10 Katlı A1, A2, A3, A4, B1, B2 Bloklardan Oluşan Betonarme Apartman\" olarak tanımlar: iki harf grubunda toplanan altı blok, kademesiz biçimde tamamı 10 katlıdır ve bu düzen blok başına yaklaşık dört dönüme karşılık gelir. Parselin doğu komşusu Aydınkent Sitesi, güney komşusu Güzel Akyüzüm Sitesi'dir; güneydoğusunda ise Tekirdağ Park Evleri yer alır — bu komşulukları hem kadastro haritası hem yerel emlak kayıtları doğrular. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46190",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~22.914 m² parsel (TKGM)",
+    "10 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Terasevler Eryaman",
+  "slug": "terasevler-eryaman",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 40.002373,
+    "lng": 32.6116434
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/terasevler-eryaman-boundary.geojson",
+  "aciklama": "Terasevler Eryaman, Yavuz Selim Mahallesi'nde 13'er katlı dört bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '13 Katlı A, B, C ve D Blok Betonarme' niteliğiyle kayıtlı 13.141 m²'lik kat mülkiyetli parsel üzerine kuruludur. Dört eş bloğun 13 dönümlük parsele düzenli yerleşimi, adındaki teras temasıyla uyumlu, açık alan payı yüksek bir düzen sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46437",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~13.141 m² parsel (TKGM)",
+    "2–13 katlı bloklar (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

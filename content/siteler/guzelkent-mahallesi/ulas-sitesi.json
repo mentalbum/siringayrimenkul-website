@@ -1,0 +1,27 @@
+{
+  "isim": "Ulaş Sitesi",
+  "slug": "ulas-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.987986,
+    "lng": 32.611545
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/ulas-sitesi-boundary.geojson",
+  "aciklama": "Ulaş Sitesi, Güzelkent Mahallesi'nde dört bloklu kompakt bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '4 Blok Kargir Apartman' niteliğiyle kayıtlı 4.616 m²'lik kat mülkiyetli parsel üzerine kuruludur. Dört bloklu yalın ölçeği, yönetimi kolay ve komşuluğu yakın bir site yaşamı sunar; Güzelkent'in cadde düzenli, oturmuş dokusunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18502",
+      "parsel": "1"
+    },
+    {
+      "no": "18503",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~4.616 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

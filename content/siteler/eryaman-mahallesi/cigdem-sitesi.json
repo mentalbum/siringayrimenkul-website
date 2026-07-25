@@ -1,0 +1,24 @@
+{
+  "isim": "Çiğdem Sitesi",
+  "slug": "cigdem-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.975288,
+    "lng": 32.612619
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/cigdem-sitesi-boundary.geojson",
+  "aciklama": "Çiğdem Sitesi, Eryaman Mahallesi'nde iki bloklu butik bir sitedir; adasını Paşa Konakları ile paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 5.488 m²'lik parseli üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır — iki blok için 5,4 dönümlük alan, bloklar arasında geniş nefes payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45919",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "2 blok — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 5,4 dönümlük parsel (TKGM)",
+    "Komşu: Paşa Konakları",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

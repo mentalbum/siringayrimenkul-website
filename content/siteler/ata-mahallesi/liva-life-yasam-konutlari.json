@@ -1,0 +1,24 @@
+{
+  "isim": "Liva Life Yaşam Konutları",
+  "slug": "liva-life-yasam-konutlari",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.010187,
+    "lng": 32.610448
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/liva-life-yasam-konutlari-boundary.geojson",
+  "aciklama": "Liva Life Yaşam Konutları, Ata Mahallesi'nde 13'er katlı ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 11.614 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '13 Katlı A ve B Blok Betonarme Apartman' olarak tanımlar. İki eş bloğun yalın düzeni yönetimi kolay tutar; mahallenin modern konut kuşağında bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46407",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~11.614 m² parsel (TKGM)",
+    "13 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

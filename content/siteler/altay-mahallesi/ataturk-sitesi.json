@@ -1,0 +1,25 @@
+{
+  "isim": "Atatürk Sitesi",
+  "slug": "ataturk-sitesi",
+  "mahalleSlug": "altay-mahallesi",
+  "aciklama": "Atatürk Sitesi, Altay Mahallesi'nde — Eryaman'ın en eski yerleşim kuşağında — on iki apartmanlık büyük bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '12 Adet Kargir Apartman' niteliğiyle kayıtlı 12.573 m²'lik kat mülkiyetli parsel üzerine kuruludur. On iki bloğun oturmuş komşuluk düzeni sayesinde kümede her dönem el değiştiren daire olur; bölgenin ağaçlı, yerleşik dokusunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.973304,
+    "lng": 32.636701
+  },
+  "sinirGeoJSON": "siteler/altay-mahallesi/ataturk-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "17313",
+      "parsel": "1",
+      "etap": "1"
+    }
+  ],
+  "ozellikler": [
+    "12 apartman bloğu (tapu)",
+    "~12.573 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Altay Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

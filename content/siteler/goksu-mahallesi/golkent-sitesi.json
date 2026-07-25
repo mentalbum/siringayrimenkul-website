@@ -1,0 +1,27 @@
+{
+  "isim": "Gölkent Sitesi",
+  "slug": "golkent-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "aciklama": "Gölkent Sitesi — yerel kayıtlarda 'Gölkent 2' olarak geçer; Göksu göl kuşağında, Gölkent 1'in komşuluğundadır ve 7-5 ile 7-6 kapı numaralı bloklardan oluşur. Site, birden çok sitenin paylaştığı büyük bir parselde yer alır: TKGM'ye göre yaklaşık 20.963 m²'lik kat mülkiyetli parselin tapu niteliği \"16 Katlı 1-6 Bloklardan Oluşan Betonarme Apartman\"dır; Gölkent 2 bu yüksek katlı bloklardan ikisini kapsar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Gölkent 2 Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.99343,
+    "lng": 32.63947
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/golkent-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46457",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (kapı no 7-5 ve 7-6), 16 katlı",
+    "Paylaşımlı büyük parsel: toplam ~20.963 m² (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu göl kuşağı — Gölkent 1 komşusu"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

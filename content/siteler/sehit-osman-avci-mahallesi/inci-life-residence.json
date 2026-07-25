@@ -1,0 +1,27 @@
+{
+  "isim": "İnci Life Residence",
+  "slug": "inci-life-residence",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9700607,
+    "lng": 32.6574042
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/inci-life-residence-boundary.geojson",
+  "aciklama": "İnci Life Residence, Eryaman Şehit Osman Avcı Mahallesi'nde Melekli Caddesi No:12'de yer alan; konut ve iş merkezi işlevini bir arada taşıyan bir rezidans yapısıdır. İlanlarda ağırlıklı olarak 1+1 kompakt daireler görülüyor — eşyalı kiralama ve yatırımlık kullanım için tercih edilen bir profil. İstanbul Yolu aksına ve toplu ulaşıma yakın merkezi konumu, hem oturan hem işyeri kullanıcısı için erişim kolaylığı sağlıyor. Tapu kaydına göre yapı, yaklaşık 7.896 m²'lik parselde on birer katlı A ve B bloklardan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46658",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 2 blok (A-B), 11'er katlı — ofis-işyeri niteliği",
+    "Yaklaşık 7,9 dönümlük parsel (TKGM)",
+    "Konut + iş merkezi karma kullanım",
+    "Ağırlıklı 1+1 kompakt daireler",
+    "Melekli Caddesi No:12 — merkezi konum",
+    "İstanbul Yolu aksına yakın"
+  ],
+  "adres": "Melekli Caddesi No:12, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-15"
+}

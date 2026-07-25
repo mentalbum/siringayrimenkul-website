@@ -1,0 +1,24 @@
+{
+  "isim": "Panorama Life",
+  "slug": "panorama-life",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 39.9998195,
+    "lng": 32.5992904
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/panorama-life-boundary.geojson",
+  "aciklama": "Panorama Life, Dimaş İnşaat imzalı, tamamlanmış bir projedir; Dimaş'ın Ata Mahallesi'ndeki beş projelik 'Panorama' ailesinin (Life, Garden, Gold, Plus, Prestij) üyesidir. Tapu kaydı projeyi net tarif eder: yaklaşık 12.679 m²'lik parselde on sekizer katlı A, B, C ve D bloklar ile üç katlı E blok (dükkânlar) — dört yüksek konut bloğunda toplam 136 konut. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44775",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4 konut bloğu (A-D), 18'er katlı — toplam 136 konut",
+    "3 katlı E blok dükkânlar — tapu nitelik kaydı",
+    "Yaklaşık 12,7 dönümlük parsel (TKGM)",
+    "Dimaş İnşaat — Panorama ailesi, Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

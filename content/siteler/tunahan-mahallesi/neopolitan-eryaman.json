@@ -1,0 +1,26 @@
+{
+  "isim": "Neopolitan Eryaman",
+  "slug": "neopolitan-eryaman",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.991427,
+    "lng": 32.620716
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/neopolitan-eryaman-boundary.geojson",
+  "aciklama": "Neopolitan Eryaman, Tunahan Mahallesi'nde Dema İnşaat – Fırat Life Style ortaklığıyla geliştirilen ve Aralık 2014'te teslim edilen, Eryaman silüetinin tanınmış yüksek yapılarındandır. Proje kaynaklarına göre 27 katlı A ve B bloklarında toplam 204 konut bulunuyor ve daireler tamamı 4+1 (174 m²) tek tipte — her katta dört daire; alçak C bloğu ise ofis-işyeri olarak tapuda kayıtlı. Kapalı yüzme havuzu, fitness, basketbol sahası, kapalı otopark ve bünyesindeki AVM ile tam donanımlı bir yaşam kompleksi; TKGM parseli (13.627 m²) proje kaynaklarıyla birebir örtüşüyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45878",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (27 kat) + ofis bloğu — 13.627 m² (TKGM)",
+    "204 konut, tamamı 4+1 (174 m²)",
+    "Dema İnşaat – Fırat Life Style ortaklığı, Aralık 2014",
+    "Kapalı yüzme havuzu, fitness, AVM",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

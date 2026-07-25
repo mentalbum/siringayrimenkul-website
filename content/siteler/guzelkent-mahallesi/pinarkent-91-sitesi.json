@@ -1,0 +1,28 @@
+{
+  "isim": "Pınarkent 91 Sitesi",
+  "slug": "pinarkent-91-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Pınarkent 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde 6 ile 6A'dan 6E'ye uzanan kapı numaralı altı bloktan oluşan bir konut sitesidir; yerel emlak kayıtlarında 'Pınar Sitesi' adıyla geçer. Aksu Sitesi'nin komşuluğundadır. TKGM kayıtlarına göre yaklaşık 4.950 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Pınar Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.988267,
+    "lng": 32.610553
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/pinarkent-91-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18511",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (kapı no 6, 6A–6E)",
+    "~4.950 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "'Pınar Sitesi' adıyla da bilinir",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

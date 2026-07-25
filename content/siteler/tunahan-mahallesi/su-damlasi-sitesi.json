@@ -1,0 +1,26 @@
+{
+  "isim": "Su Damlası Sitesi",
+  "slug": "su-damlasi-sitesi",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.984996,
+    "lng": 32.613057
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/su-damlasi-sitesi-boundary.geojson",
+  "aciklama": "Su Damlası Sitesi, Tunahan Mahallesi'nde — mahallenin bu kesiminde —, Gökdemir Premium ile aynı büyük yerleşim adasını paylaşan çok bloklu bir konut sitesidir. TKGM kayıtlarına göre 37.340 m²'lik kat mülkiyetli parsel üzerine kurulu; tapu niteliği kademeli bir yapılaşmayı anlatıyor: 15 katlı dört blok, 13 katlı iki blok, 11 katlı iki blok ve 8 katlı iki blok olmak üzere toplam on blok. Farklı kat yükseklikleri sayesinde manzara ve fiyat yelpazesi geniştir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46512",
+      "parsel": "9",
+      "etap": "5"
+    }
+  ],
+  "ozellikler": [
+    "37.340 m² parsel (TKGM)",
+    "10 blok — kademeli 8/11/13/15 kat (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Gökdemir Premium ile komşu parselde",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,26 @@
+{
+  "isim": "75. Yıl Sitesi",
+  "slug": "75-yil-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "aciklama": "75. Yıl, Şehit Osman Avcı Mahallesi'nde Soyak Blokları içinde yer alan ve yerel kayıtlarda '75. Yıl Apartmanı' olarak geçen bir bloktur; bağımsız bir site olmaktan çok, bölgenin büyük kooperatif dokusunun adlandırılmış parçalarından biridir. Bulunduğu parselin tapu kaydı '6 adet betonarme apartman' niteliğindedir (yaklaşık 7.297 m², kat mülkiyetli) — yani bu blok, Soyak kümesinin tapuda tek kalemde kayıtlı yerleşimi içindedir. Çevresi, bölgenin yeşili bol, oturmuş yerleşimidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.984268,
+    "lng": 32.652248
+  },
+  "alternatifAdlar": [
+    "75. Yıl Apartmanı"
+  ],
+  "ozellikler": [
+    "Soyak Blokları içinde",
+    "Yerel kayıtlarda '75. Yıl Apartmanı'",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-23",
+  "adalar": [
+    {
+      "no": "17462",
+      "parsel": "1",
+      "etap": "2"
+    }
+  ]
+}

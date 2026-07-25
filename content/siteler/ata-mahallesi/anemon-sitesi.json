@@ -1,0 +1,24 @@
+{
+  "isim": "Anemon Sitesi",
+  "slug": "anemon-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.006807,
+    "lng": 32.618724
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/anemon-sitesi-boundary.geojson",
+  "aciklama": "Anemon Sitesi, Ata Mahallesi'nde 10'ar katlı A, B, C ve D bloklarından oluşan dört bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 18.286 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Ar Katlı A.B.C.D Bloklardan Oluşan 4 Adet Betonarme Mesken\". Dört bloğun 18 dönümü aşkın parsele yayılması blok aralarını ve açık alan payını geniş tutar; tek tip 10 katlı düzen site genelinde dengeli bir siluet kurar. Batısında Elit Yaşam Konutları 3, güneyinde Endora Plus ile komşu olan site, Ata'nın yerleşik konut kuşağının içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46424",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~18.286 m² parsel (TKGM)",
+    "10 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

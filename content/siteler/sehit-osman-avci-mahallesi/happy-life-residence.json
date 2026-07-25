@@ -1,0 +1,26 @@
+{
+  "isim": "Happy Life Residence",
+  "slug": "happy-life-residence",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.981707,
+    "lng": 32.6551407
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/happy-life-residence-boundary.geojson",
+  "aciklama": "Happy Life Residence, Şehit Osman Avcı Mahallesi'nde Akağ İnşaat tarafından 2015'te tamamlanan 138 konutluk bir rezidans projesi. Akağ'ın bölgedeki Metropark ve Metropark Concept projeleriyle aynı aksta yer alıyor; müteahhit bu üç projeyi birlikte '450+ konut ve 2.000 m² ticari alan' olarak anıyor. İlan pazarında 1+1, 2+1 ve 3+1 daire tipleri görülüyor. Metro aksına ve Göksu hattına yakın konumu, oturmuş çevre dokusu ve rezidans donatılarıyla site, hem oturum hem kiralama tarafında talep görüyor. Tapu kaydına göre yapı, yaklaşık 4.865 m²'lik parselde on dört katlı A blok ile dört katlı B bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Farklı tiplerin bir arada olduğu sitelerde doğru emsal seçimi fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46631",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 14 katlı A + 4 katlı B blok — ofis-işyeri niteliği",
+    "Yaklaşık 4,9 dönümlük parsel (TKGM)",
+    "138 konut (Akağ İnşaat, teslim 2015)",
+    "1+1, 2+1, 3+1 daire tipleri",
+    "Metropark ailesiyle aynı aks",
+    "Metro ve Göksu hattına yakın"
+  ],
+  "zenginlestirildi": "2026-07-10"
+}

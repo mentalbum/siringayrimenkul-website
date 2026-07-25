@@ -1,0 +1,25 @@
+{
+  "isim": "Pasaj Eryaman",
+  "slug": "pasaj-eryaman",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 40.0034128,
+    "lng": 32.61772
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/pasaj-eryaman-boundary.geojson",
+  "aciklama": "Pasaj Eryaman, Yavuz Selim Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 8.846 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Adındaki 'pasaj' vurgusuyla zemin ticaret dokusunu çağrıştıran yapı, kompakt birim arayan ve kiralamada hızlı dönüş isteyen profillere hitap eder. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46443",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~8.846 m² parsel (TKGM)",
+    "16 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

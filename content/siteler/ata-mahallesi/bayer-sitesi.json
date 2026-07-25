@@ -1,0 +1,24 @@
+{
+  "isim": "Bayer Sitesi",
+  "slug": "bayer-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.003611,
+    "lng": 32.60199
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/bayer-sitesi-boundary.geojson",
+  "aciklama": "Bayer Sitesi, Ata Mahallesi'nde 11 katlı tek ana yapılı bir konut sitesidir. TKGM kayıtlarına göre 13.740 m²'lik parselde yapı '11 Katlı Beton Apartman' olarak kayıtlıdır; parsel tapuda kat irtifakı aşamasındadır — alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Yaklaşık 14 dönümlük parselde tek yapının yükselmesi, geniş açık alan payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44752",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~13.740 m² parsel (TKGM)",
+    "11 katlı bloklar (tapu kaydı)",
+    "Tapuda kat irtifakı kayıtlı (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

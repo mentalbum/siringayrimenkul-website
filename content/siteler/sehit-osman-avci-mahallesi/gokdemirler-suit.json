@@ -1,0 +1,27 @@
+{
+  "isim": "Gökdemirler Suit",
+  "slug": "gokdemirler-suit",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9847435,
+    "lng": 32.6560721
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/gokdemirler-suit-boundary.geojson",
+  "aciklama": "Gökdemirler Suit (Gökdemir Suit), Eryaman Şehit Osman Avcı Mahallesi'nde Malazgirt 1071 Bulvarı No:42'de, bölgenin tanınmış müteahhitlerinden Gökdemir Grup tarafından geliştirilmiş bir rezidans projesidir. Satışları 2021'de başlayan projede konutların yanı sıra zemin ve alt katlarda kafe, etüt merkezi ve spor salonu gibi ticari işletmeler yer alıyor — bina bu yönüyle mahallenin gündelik yaşam noktalarından biri haline gelmiş durumda. İlanlarda 1+1, 2+1 ve 3+1 daire tipleri görülüyor; Gökdemir Grup'un Gökdemir Tower ve Gökdemir Premium gibi diğer Eryaman projeleriyle aynı kalite çizgisinde. Tapu kaydına göre yapı, yaklaşık 5.174 m²'lik parselde on beşer katlı A ve B bloklardan oluşur. Bu rezidansta satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "48581",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 2 blok (A-B), 15'er katlı",
+    "Yaklaşık 5,2 dönümlük parsel (TKGM)",
+    "Gökdemir Grup — satışlar 2021'de başladı",
+    "1+1, 2+1 ve 3+1 tipleri",
+    "Zemin katlarda kafe, etüt merkezi, spor salonu",
+    "Malazgirt 1071 Bulvarı No:42"
+  ],
+  "adres": "Malazgirt 1071 Bulvarı No:42, Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-15"
+}

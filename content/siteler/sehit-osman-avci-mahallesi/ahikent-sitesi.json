@@ -1,0 +1,25 @@
+{
+  "isim": "Ahikent Sitesi",
+  "slug": "ahikent-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.974284,
+    "lng": 32.6540539
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/ahikent-sitesi-boundary.geojson",
+  "aciklama": "Ahikent Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan dört bloklu bir konut sitesidir. Tapu kaydı yapıyı \"4 Blok Kargir Apartman\" olarak tanımlar; parsel kat mülkiyetlidir ve yaklaşık on iki dönümlük bir alana oturur (TKGM). Site, mahallenin en büyük yerleşimlerinden Lale Evleri (KC) kümesiyle iç içedir: yerel emlak kayıtları buradaki dört bloğu Laleevleri 17-A, 17-B, 17-C ve 17-D blok kodlarıyla listeler; komşu adalarda da aynı kümenin blokları uzanır. Tapu kayıtlarında mahalle, kadastrodaki eski adıyla \"Şeker\" olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46644",
+      "parsel": "1",
+      "etap": "2"
+    }
+  ],
+  "ozellikler": [
+    "4 blok (tapu)",
+    "~12.257 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı — kadastroda Şeker kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

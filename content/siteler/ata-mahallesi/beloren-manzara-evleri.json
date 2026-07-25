@@ -1,0 +1,23 @@
+{
+  "isim": "Belören Manzara Evleri",
+  "slug": "beloren-manzara-evleri",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.0013114,
+    "lng": 32.5965138
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/beloren-manzara-evleri-boundary.geojson",
+  "aciklama": "Belören Manzara Evleri, Ata Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 7.955 m²'lik parsel tapuda kat irtifakı aşamasındadır; alım-satımda kredi ve değerleme süreçleri için bu ayrımın bilinmesi önemlidir — farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Az bloklu ölçeği, Ata'nın sakin konut dokusunda yalın bir site yaşamı arayan profile hitap eder. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44780",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~7.955 m² parsel (TKGM)",
+    "Kat irtifaklı parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

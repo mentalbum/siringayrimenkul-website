@@ -1,0 +1,27 @@
+{
+  "isim": "Zirveden Batı",
+  "slug": "zirveden-bati",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.9976445,
+    "lng": 32.663056
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/zirveden-bati-boundary.geojson",
+  "aciklama": "Zirveden Batı, Yeni Batı'da (Cumhuriyet Mahallesi) Zirve Beton tarafından geliştirilen ve Eylül 2022'de teslim edilen bir konut projesidir. Yüklenici kaynağına göre 6 blokta 168 konut ve 6 dükkândan oluşuyor; daireler tamamı geniş 5+1 tipinde (net ~175 m²) — ferah aile evi arayanlara odaklı ender projelerden. Göksu Parkı'na, Göksu AVM'ye ve metro duraklarına yakın konumdadır. Tamamı geniş daire tiplerinden oluşan yapısı, Yeni Batı'da aile boyu oturum arayanların kısa listesine girmesini sağlar; zemindeki dükkânlar günlük yaşamı pratikleştirir. Tapu kaydı ölçeği gösterir: yaklaşık 19.960 m² — 20 dönüme yakın — parselde on beşer katlı A ve B blokları, on altı katlı C blok ve iki katlı D blok. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "63261",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 15'er katlı A-B + 16 katlı C + 2 katlı D blok",
+    "Yaklaşık 20 dönümlük parsel (TKGM)",
+    "6 blok — 168 konut + 6 dükkân (yüklenici verisi)",
+    "Tamamı 5+1 (net ~175 m²)",
+    "Eylül 2022 teslim — Zirve Beton",
+    "Göksu Parkı, AVM ve metroya yakın"
+  ],
+  "adres": "5609. Cadde, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-16"
+}

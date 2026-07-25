@@ -1,0 +1,27 @@
+{
+  "isim": "Eryaman Port",
+  "slug": "eryaman-port",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.964857,
+    "lng": 32.60819
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/eryaman-port-boundary.geojson",
+  "aciklama": "Eryaman Port, Yeşilova'nın yeni gelişim aksında alışveriş merkezi işleviyle bilinen karma bir yaşam kompleksidir; Lokasyon Eryaman projesine bitişik konumda, YHT istasyonu ve Metromall-Optimum aksına yakındır. Tapu kaydı kompleksin ölçeğini anlatır: yaklaşık 17.785 m²'lik parselde bir ila beş katlı çarşı blokları ile on yedi katlı yüksek bloğun bir arada olduğu on bloklu betonarme yapı kayıtlıdır — ticaret ve konutun iç içe geçtiği bir düzendir. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47545",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "AVM-karma yaşam kompleksi — 10 blok (tapu nitelik kaydı)",
+    "17 katlı yüksek blok + 1-5 katlı çarşı blokları",
+    "Yaklaşık 17,8 dönümlük parsel (TKGM)",
+    "Lokasyon Eryaman'a bitişik — YHT ve AVM aksına yakın"
+  ],
+  "alternatifAdlar": [
+    "Eryaman Port AVM"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

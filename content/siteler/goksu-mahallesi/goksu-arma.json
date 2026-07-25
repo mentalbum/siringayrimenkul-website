@@ -1,0 +1,29 @@
+{
+  "isim": "Göksu Arma",
+  "slug": "goksu-arma",
+  "mahalleSlug": "goksu-mahallesi",
+  "aciklama": "Göksu Arma — yerel kayıtlarda 'ETM Birlik Göksu Arma Sitesi' olarak geçer — Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Göksu Arma'nın yapıları yerel kayıtlarda A ve B blokları ile Gonca ve Yasemin apartmanları olarak sıralanır — dört yapı. Aynı adayı paylaştığı komşuları arasında çiçek adlı apartmanlarıyla bilinen Göksu Evleri ile Utkukent bulunur. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 32.039 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46454",
+      "parsel": "1"
+    }
+  ],
+  "sinirGeoJSON": "siteler/goksu-mahallesi/goksu-arma-boundary.geojson",
+  "koordinat": {
+    "lat": 39.995809,
+    "lng": 32.642349
+  },
+  "ozellikler": [
+    "4 yapı (A, B blokları + Gonca ve Yasemin apartmanları)",
+    "Ada parseli ~32.039 m², kat mülkiyetli (TKGM)",
+    "Yerel kayıtlarda 'ETM Birlik Göksu Arma' adıyla geçer",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Göksu — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "ETM Birlik Göksu Arma Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

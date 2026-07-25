@@ -1,0 +1,24 @@
+{
+  "isim": "Mabeyn Başpınar",
+  "slug": "mabeyn-baspinar",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 39.999395,
+    "lng": 32.663452
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/mabeyn-baspinar-boundary.geojson",
+  "aciklama": "Mabeyn Başpınar, Susuz'un Göksu kentsel gelişim bölgesinde 13'er katlı ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.792 m²'lik parselde tapu kaydı yapıyı '13 Katlı A ve B Blok Betonarme Mesken' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki eş bloğun 10 dönümü aşan parsele yerleşimi, açık alan payını geniş tutar; bölgenin yeni konut stoğunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63276",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~10.792 m² parsel (TKGM)",
+    "13 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

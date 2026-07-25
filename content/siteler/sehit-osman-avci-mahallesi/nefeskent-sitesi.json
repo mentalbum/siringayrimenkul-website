@@ -1,0 +1,23 @@
+{
+  "isim": "Nefeskent Sitesi",
+  "slug": "nefeskent-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.971224,
+    "lng": 32.651222
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/nefeskent-sitesi-boundary.geojson",
+  "aciklama": "Nefeskent Sitesi, Şehit Osman Avcı Mahallesi'nde iki bloklu, sakin ölçekli bir konut sitesidir. Tapu kaydı yapıyı \"2 Blok Kargir Apartman\" olarak tanımlar; TKGM'ye göre yaklaşık 5.252 m²'lik parsel kat mülkiyetlidir. İki blok için bu genişlikte bir parsel, blok aralarında nefes alan, ferah bir yerleşim anlamına gelir; mahalle rehberlerinde bloklar A ve B olarak kayıtlıdır. Site, tapuda aynı yapı adasını paylaştığı Çınar Sitesi ve Üçyıldız Sitesi ile iç içe bir komşuluk dokusundadır; bu kesim, mahallenin Şeker Mahallesi ve bölge yönüne bakan tarafında kalır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46667",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "~5.252 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

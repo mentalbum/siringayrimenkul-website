@@ -1,0 +1,24 @@
+{
+  "isim": "Doğa Konutları",
+  "slug": "doga-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.002687,
+    "lng": 32.643402
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/doga-konutlari-boundary.geojson",
+  "aciklama": "Doğa Konutları, Göksu Mahallesi'nde 18 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 4.010 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '18 Katlı Betonarme Apartman' olarak tanımlar — bölge silüetinin yüksek yapılarından biri. Tek blok düzeni yönetimi yalın tutar; üst katlar Göksu ve göl yönüne açık görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63381",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~4.010 m² parsel (TKGM)",
+    "18 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -1,0 +1,27 @@
+{
+  "isim": "Güldede Sitesi",
+  "slug": "guldede-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.002526,
+    "lng": 32.603179
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/guldede-sitesi-boundary.geojson",
+  "aciklama": "Güldede Sitesi — yerel kayıtlarda 'Gül Dede Sitesi' yazımıyla da geçer — Ata Mahallesi'nde ikiz bloklu bir konut sitesidir. TKGM kayıtlarına göre 6.849 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '11'er Katlı A ve B Blok Beton Apartman' olarak tanımlar. İki eş yükseklikteki bloğun yalın düzeni; az komşulu, yönetimi kolay bir site yaşamı sunar ve Ata'nın yerleşik dokusunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44754",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~6.849 m² parsel (TKGM)",
+    "11 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16",
+  "alternatifAdlar": [
+    "Gül Dede Sitesi"
+  ]
+}

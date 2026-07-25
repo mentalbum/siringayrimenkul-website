@@ -1,0 +1,28 @@
+{
+  "isim": "Göksu Prestij",
+  "slug": "goksu-prestij",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9885144,
+    "lng": 32.6543317
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/goksu-prestij-boundary.geojson",
+  "aciklama": "Göksu Prestij, Göksu bölgesinde Optimum AVM karşısında, Fırat Life Style (Çys İnşaat) tarafından geliştirilip 2019 sonunda teslim edilen bir konut projesi: 5 blokta toplam 192 konut. Blokların dördü konuta ayrılırken beşinci blok farklı kullanıma tahsis edilmiş; konutların tamamı 4+1 geniş aile planında (bazı bloklarda 1+1 seçenekleri de görülüyor). Modern mimarisi, manzaralı üst katları ve Optimum AVM ile metro aksına yürüme mesafesindeki konumuyla proje hem oturum hem yatırım tarafında talep görüyor. Bu sitede satılık veya kiralık daireniz mi var? Geniş daire ağırlıklı projelerde kat ve manzara farkı fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin. Tapu kaydı blok yapısını doğrular: 5 katlı A blok ile 17'şer katlı B, C, D ve E bloklarından oluşur; yerel kayıtlarda site 'Fırat Life Style Göksu' adıyla da anılır.",
+  "adalar": [
+    {
+      "no": "46620",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "5 blokta 192 konut (Fırat Life Style / Çys İnşaat)",
+    "Ağırlıklı 4+1 geniş daireler",
+    "Teslim: Aralık 2019",
+    "Optimum AVM karşısı, metro aksına yürüme mesafesi"
+  ],
+  "zenginlestirildi": "2026-07-10",
+  "alternatifAdlar": [
+    "Fırat Life Style Göksu",
+    "Fırat Life Style Göksu Prestij"
+  ]
+}

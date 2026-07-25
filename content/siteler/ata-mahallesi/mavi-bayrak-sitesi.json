@@ -1,0 +1,24 @@
+{
+  "isim": "Mavi Bayrak Sitesi",
+  "slug": "mavi-bayrak-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 39.9984955,
+    "lng": 32.6000383
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/mavi-bayrak-sitesi-boundary.geojson",
+  "aciklama": "Mavi Bayrak Sitesi, Ata Mahallesi'nde dört bloklu bir konut sitesidir. TKGM kayıtlarına göre 14.821 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A-B-C-D Bloklardan Oluşan 12'şer Katlı Betonarme Mesken ve Ortak Alan' olarak tanımlar — dört eş bloğun yanında ortak alan da tapuda ayrıca tanımlıdır; bu, site düzeninin baştan planlı kurulduğunun işaretidir. Eş yükseklikteki dört bloğun simetrik yerleşimi ve Ata'nın Eryaman'la iç içe konumu, siteyi mahallenin aranan adreslerinden biri yapar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44773",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~14.821 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi",
+    "Paylaşımlı parsel — komşu sitelerle"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

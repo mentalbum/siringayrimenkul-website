@@ -1,0 +1,26 @@
+{
+  "isim": "Vera West",
+  "slug": "vera-west",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.989738,
+    "lng": 32.664496
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/vera-west-boundary.geojson",
+  "aciklama": "Vera West, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Çelikoğlu İnşaat (Çelikoğlu Grup) tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre iki blokta toplam 135 daire (82 adet 2,5+1 ve 53 adet 3,5+1) ile 12 ticari üniteden oluşuyor — geniş aile dairelerine odaklı bir yapı. Atatürk Orman Çiftliği (AOÇ) yönüne bakan cephesi projenin öne çıkan özelliği; asansör, kapalı otopark, çocuk oyun alanları, güvenlik ve fitness gibi site içi donatılar bulunuyor. Tapu kaydına göre proje, yaklaşık 10.927 m²'lik parselde on beşer katlı A ve B blokları ile ikişer katlı C ve D bloklarından oluşur. Bu sitede satılık veya kiralık daireniz mi var? Geniş dairelerde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "62659",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 15'er katlı A-B + 2'şer katlı C-D blokları",
+    "Yaklaşık 10,9 dönümlük parsel (TKGM)",
+    "Çelikoğlu İnşaat — 2 blok, 135 daire",
+    "82 × 2,5+1, 53 × 3,5+1",
+    "12 ticari ünite",
+    "Atatürk Orman Çiftliği (AOÇ) manzaralı cephe"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Göksu Vadi Konutları",
+  "slug": "goksu-vadi-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.995702,
+    "lng": 32.639672
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/goksu-vadi-konutlari-boundary.geojson",
+  "aciklama": "Göksu Vadi Konutları, Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Göksu Vadi'nin blokları yerel kayıtlarda tek sayılarla 1, 3, 5 ve 7 olarak sıralanır — dört blok. Aynı adayı paylaştığı komşuları arasında Eceser, Göksu Aura ve Utkukent siteleri bulunur. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 18.815 m²'lik kat irtifakı kayıtlı tek parseldir. Tapu kaydı adada 11-13 katlı sekiz blok sayar. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4 blok (1, 3, 5, 7 — tek sayılı düzen)",
+    "Ada parseli ~18.815 m², kat irtifakı kayıtlı (TKGM)",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Göksu — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

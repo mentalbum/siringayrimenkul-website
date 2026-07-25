@@ -1,0 +1,24 @@
+{
+  "isim": "Safir Sitesi",
+  "slug": "safir-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.998453,
+    "lng": 32.616788
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/safir-sitesi-boundary.geojson",
+  "aciklama": "Safir Sitesi, Yavuz Selim Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Betonarme Apartman' niteliğiyle kayıtlı 11.413 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloklu yalın ölçeği; az komşulu, yönetimi kolay bir site yaşamı demektir ve mahallenin yerleşik dokusunun içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46236",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~11.413 m² parsel (TKGM)",
+    "3 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

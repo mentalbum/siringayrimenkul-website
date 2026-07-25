@@ -1,0 +1,28 @@
+{
+  "isim": "Doğapark Sitesi",
+  "slug": "dogapark-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.99931,
+    "lng": 32.619753
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/dogapark-sitesi-boundary.geojson",
+  "aciklama": "Doğapark Sitesi, yerel emlak kayıtlarında 'Doğa Park Konutları' adıyla da geçen, Yavuz Selim Mahallesi'nin Şeyh Şamil sınırına yakın kesimindeki bir konut sitesidir. Tapu kaydı yapıyı '3 Adet 14 Katlı Betonarme Apartman' olarak tanımlar; bloklar yerel kayıtlarda A, B ve C adlarıyla anılır. TKGM'ye göre yaklaşık 16.912 m²'lik, kat mülkiyetli tek parselde yalnızca üç blok yükselir — blok başına yaklaşık 5,6 dönüm düşen bu yerleşim, on dört katlı yüksek yapılaşmaya rağmen ferah bir vaziyet planına işaret eder. Yakın çevresinde Şeyh Şamil tarafındaki Tekser ve İçtaş blokları ile Eryaman bölge dokusu yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46229",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~16.912 m² parsel (TKGM)",
+    "14 katlı yapı (tapu)",
+    "3 adet konut (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Doğa Park Konutları"
+  ]
+}

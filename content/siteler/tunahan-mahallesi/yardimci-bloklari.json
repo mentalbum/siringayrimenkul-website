@@ -1,0 +1,51 @@
+{
+  "isim": "Yardımcı Blokları",
+  "slug": "yardimci-bloklari",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.98653,
+    "lng": 32.630275
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/yardimci-bloklari-boundary.geojson",
+  "aciklama": "Yardımcı Blokları, Tunahan Mahallesi'nde altı ayrı adaya yayılmış, apartman sayısıyla bölgenin en yoğun kümelerinden biridir. TKGM kayıtlarına göre altı adanın biri beş, beşi altışar apartman barındırır — toplam 35 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 32.614 m². Bu yoğunluğun ev sahibine somut bir getirisi vardır: kümede her dönem el değiştiren daire olur, emsal verisi bol ve tazedir; doğru fiyat aralığını yakalamak, bu veriyi gün gün izleyenler için kolaylaşır. 4. Etap Çarşısı, PTT şubesi ve aile sağlığı merkezi mahallenin bu kesimindedir; küme, STFA ve Yüksel bloklarıyla komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17688",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17689",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17703",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17704",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17705",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17711",
+      "etap": "4",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 ayrı ada — toplam 35 kârgir apartman (TKGM)",
+    "Toplam ~32.614 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Ada başına 5-6 apartman — bölgenin en yoğun kümesi (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

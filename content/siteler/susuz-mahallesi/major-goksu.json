@@ -1,0 +1,26 @@
+{
+  "isim": "Majör Göksu",
+  "slug": "major-goksu",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.006391,
+    "lng": 32.649374
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/major-goksu-boundary.geojson",
+  "aciklama": "Majör Göksu, Susuz'un Göksu kentsel gelişim bölgesinde MA1 Yapı tarafından geliştirilen ve Aralık 2023'te teslim edilen butik bir projedir. Proje kaynaklarına göre toplam 60 daireden oluşuyor ve tamamı geniş 4+1 tipinde (185 m², ~170 m² kullanım) ve kat başına yalnızca iki daire düşüyor — tek tip, ferah aile dairesi konsepti; satışları tamamlanmıştır. Tapu kaydına göre proje, yaklaşık 8.506 m²'lik parselde on altışar katlı A ve B konut blokları ile üç katlı C bloktan (konut + ofis-işyeri) oluşur. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "63377",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 16'şar katlı A-B blokları + 3 katlı C blok",
+    "Yaklaşık 8,5 dönümlük parsel (TKGM)",
+    "MA1 Yapı — 60 daire, tamamı 4+1 (185 m²)",
+    "Aralık 2023 teslim — satış tamamlandı",
+    "Kat başına yalnızca 2 daire",
+    "Butik ölçek, tek tip plan"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

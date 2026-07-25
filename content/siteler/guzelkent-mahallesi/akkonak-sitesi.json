@@ -1,0 +1,29 @@
+{
+  "isim": "Akkonak Sitesi",
+  "slug": "akkonak-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.9933326,
+    "lng": 32.6166176
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/akkonak-sitesi-boundary.geojson",
+  "aciklama": "Akkonak Sitesi, Etimesgut Güzelkent Mahallesi'nin büyük ölçekli sitelerinden biridir. TKGM kayıtlarına göre yan yana iki parsel üzerine kurulu: ilki (5.265 m²) ve ikincisi (5.237 m²) — toplamda yaklaşık 10.502 m² ve her iki parselde de tapu niteliği \"6 Blok Kârgir Apartman\", yani toplam 12 blok. İki parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak kayıtlı. Konuta Özlem Sitesi'nin hemen güneyinde, komşu konumdadır. Bu ölçekte bir sitede emsal ilan her zaman bulunur; doğru fiyat ise blok, kat ve iç duruma göre ayrışır — satmayı ya da kiraya vermeyi düşünüyorsanız değeri birlikte netleştirelim.",
+  "adalar": [
+    {
+      "no": "18466",
+      "parsel": "1"
+    },
+    {
+      "no": "18467",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "İki parsel, toplam ~10.502 m² (TKGM)",
+    "12 blok kârgir apartman (iki parselde 6+6)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konuta Özlem Sitesi'ne komşu",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

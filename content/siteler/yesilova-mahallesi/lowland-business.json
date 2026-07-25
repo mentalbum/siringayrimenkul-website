@@ -1,0 +1,25 @@
+{
+  "isim": "Lowland Business",
+  "slug": "lowland-business",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.966681,
+    "lng": 32.6070241
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/lowland-business-boundary.geojson",
+  "aciklama": "Lowland Business, Yeşilova Mahallesi'nde 11 katlı bir iş ve rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 2.500 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — adının da söylediği gibi ticari ağırlıklı, rezidans tipi bir yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Yeşilova'nın genç dokusunda ofis ve yatırım birimi arayanların adresidir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47563",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~2.500 m² parsel (TKGM)",
+    "11 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

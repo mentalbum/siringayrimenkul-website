@@ -1,0 +1,24 @@
+{
+  "isim": "Pınar Sitesi",
+  "slug": "pinar-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.974586,
+    "lng": 32.609162
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/pinar-sitesi-boundary.geojson",
+  "aciklama": "Pınar Sitesi, Eryaman Mahallesi'nde A-16 ve B-10 bloklarından oluşan iki bloklu bir sitedir; adasını ASM Prestij ve Şeker Konutları'nın bloklarıyla paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 3.750 m²'lik parseli üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır. Eryaman Mahallesi'nin yerleşik kooperatif dokusunun derli toplu örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45923",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A-16, B-10) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 3,8 dönümlük parsel (TKGM)",
+    "Komşular: ASM Prestij, Şeker Konutları",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

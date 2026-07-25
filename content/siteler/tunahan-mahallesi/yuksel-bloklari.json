@@ -1,0 +1,56 @@
+{
+  "isim": "Yüksel Blokları",
+  "slug": "yuksel-bloklari",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.989601,
+    "lng": 32.626337
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/yuksel-bloklari-boundary.geojson",
+  "aciklama": "Yüksel Blokları, Tunahan Mahallesi'nde yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtları kümenin en ayırt edici özelliğini açıkça gösterir: yedi adanın her birinde yalnızca üçer apartman vardır — toplam 21 apartman, yaklaşık 37.554 m²'lik toplam alana seyrekçe yerleşir; parsellerin tümü kat mülkiyetli. Ada başına düşen bu düşük yapı sayısı, bölgenin en ferah yerleşimlerinden birini ortaya çıkarır: apartmanlar arası mesafeler geniş, yeşil payı yüksektir. Az komşulu, sakin ada yaşamı arayanların aradığı profil tam olarak budur. Mahalledeki okul, cami ve bölge çarşı aksı günlük yaşamı tamamlar; küme Öztaş, Soyak ve Klima yerleşimleriyle çevrilidir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17649",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17650",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17651",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17662",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17669",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17670",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17671",
+      "etap": "4",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "7 ayrı ada — toplam 21 kârgir apartman (TKGM)",
+    "Toplam ~37.554 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Her adada üçer apartman — bölgenin en ferah dokusu (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

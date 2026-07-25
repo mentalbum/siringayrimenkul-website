@@ -1,0 +1,24 @@
+{
+  "isim": "Erenköy Sitesi",
+  "slug": "erenkoy-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Erenköy Sitesi, Güzelkent Mahallesi'nde apartman değil villalardan oluşan bir sitedir: TKGM kayıtlarına göre site, tapuda '3 Katlı 16 Adet Betonarme Villa' niteliğiyle kayıtlı 4.372 m²'lik kat mülkiyetli parsel üzerine kuruludur. On altı üçer katlı villanın yatay dokusu, müstakil yaşam arayan aileler için Güzelkent'in nadir profillerindendir. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.993204,
+    "lng": 32.60563
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/erenkoy-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19517",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "16 villa, 3 katlı (tapu)",
+    "~4.372 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

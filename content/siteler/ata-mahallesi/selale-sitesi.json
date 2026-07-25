@@ -1,0 +1,23 @@
+{
+  "isim": "Şelale Sitesi",
+  "slug": "selale-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.0081677,
+    "lng": 32.6234406
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/selale-sitesi-boundary.geojson",
+  "aciklama": "Şelale Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM'de site, yaklaşık 4.530 m²'lik parseli üzerinde kargir apartman niteliğiyle kayıtlıdır — 4,5 dönümlük alan, derli toplu bir site yerleşimine karşılık gelir. Ata Mahallesi'nin Eryaman'a komşu, oturmuş konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46196",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "Yaklaşık 4,5 dönümlük parsel (TKGM)",
+    "Tapuda apartman niteliğiyle kayıtlı yapı",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Gülhayat Sitesi",
+  "slug": "gulhayat-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.974055,
+    "lng": 32.606405
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/gulhayat-sitesi-boundary.geojson",
+  "aciklama": "Gülhayat Sitesi, Eryaman Devlet Mahallesi'nde yer alan, yüksek katlı bloklardan oluşan bir konut sitesidir. TKGM kayıtlarına göre 16.221 m²'lik tek parsel üzerine kurulu — mahallenin en geniş parsellerinden biri; tapu niteliğinde 9 katlı A ve B blokları ile 12 katlı D bloğu sayılıyor ve parselde kat irtifakı kurulu. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18698",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "16.221 m² tek parsel (TKGM)",
+    "9 katlı A-B + 12 katlı D blok (tapu kaydı)",
+    "Tapuda kat irtifakı kayıtlı (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

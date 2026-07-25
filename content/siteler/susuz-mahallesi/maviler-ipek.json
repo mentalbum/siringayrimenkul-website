@@ -1,0 +1,23 @@
+{
+  "isim": "Maviler İpek",
+  "slug": "maviler-ipek",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 39.9999125,
+    "lng": 32.6623193
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/maviler-ipek-boundary.geojson",
+  "aciklama": "Maviler İpek, Susuz Mahallesi'nde 5611. Sokak üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yerleşimin oturduğu parsel yaklaşık 21.572 m² — yani 21,5 dönümün üzerinde — geniş bir alana karşılık gelir; bu ölçek, Susuz'un yeni gelişen konut dokusundaki ferah yerleşim planının göstergesidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63275",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5611. Sokak — Susuz Mahallesi",
+    "Yaklaşık 21,5 dönümlük geniş parsel (TKGM)",
+    "Susuz'un yeni gelişen konut kesimi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

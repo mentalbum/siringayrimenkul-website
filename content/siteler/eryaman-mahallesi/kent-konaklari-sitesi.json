@@ -1,0 +1,25 @@
+{
+  "isim": "Kent Konakları Sitesi",
+  "slug": "kent-konaklari-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "aciklama": "Kent Konakları Sitesi, Eryaman Mahallesi'nde beş bloklu, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Blok Kargir Apartman' niteliğiyle kayıtlı 24.135 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — beş bloğa karşılık 24 dönümlük parsel, mahallenin en ferah yerleşim düzenlerinden birini oluşturur. Adındaki konak vurgusu, geniş ve oturaklı yerleşim düzeninde karşılığını bulur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.975966,
+    "lng": 32.618559
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/kent-konaklari-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46531",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5 blok (A6-96, B6-98, B7-94, C6-100, C7-92)",
+    "~24.135 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Evleri bölgesi",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

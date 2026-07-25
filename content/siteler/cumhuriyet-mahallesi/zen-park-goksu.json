@@ -1,0 +1,27 @@
+{
+  "isim": "Zen Park Göksu",
+  "slug": "zen-park-goksu",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.98705,
+    "lng": 32.657618
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/zen-park-goksu-boundary.geojson",
+  "aciklama": "Zen Park Göksu, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Nesce Grup (NC Yapı) tarafından geliştirilmiş; modern ve yatay mimari çizgisiyle öne çıkan bir konut projesidir. Geliştiricinin verilerine göre proje 89 adet 2+1 daire ve 10 adet cadde mağazasından oluşuyor — tek-tip 2+1 kurgusuyla hem oturum hem yatırım için dengeli bir yapı. Cadde cepheli mağazalar, site içi peyzaj ve otopark projenin öne çıkan özellikleri arasında; İstanbul Yolu aksındaki konumu ulaşımı kolaylaştırıyor. Tapu kaydına göre yapı, yaklaşık 5.366 m²'lik parselde on sekiz katlı, konut ile ofis-işyerini bir arada barındıran nitelikle kayıtlıdır; karma tapu tipi değerlemede fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "62672",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "18 katlı — tapuda konut + ofis-işyeri karma niteliği",
+    "Yaklaşık 5,4 dönümlük parsel (TKGM)",
+    "Nesce Grup (NC Yapı) — modern/yatay mimari",
+    "89 adet 2+1 daire",
+    "10 adet cadde mağazası",
+    "Site içi peyzaj, otopark"
+  ],
+  "adres": "Yeni Batı Mahallesi 5610. Sokak No:2/A, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
+}

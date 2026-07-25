@@ -1,0 +1,25 @@
+{
+  "isim": "Gül Sitesi",
+  "slug": "gul-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.995645,
+    "lng": 32.634634
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/gul-sitesi-boundary.geojson",
+  "aciklama": "Gül Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Gül'ün blokları yerel kayıtlarda A-9 ve B-7 olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Özlüce, Selinkent, Uzunbey, Yaygınkent ve Öz Çözüm Kent siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 38.937 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46486",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Iki blok kooperatif sitesi",
+    "Ada parseli ~38.937 m², kat mülkiyetli (TKGM)",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

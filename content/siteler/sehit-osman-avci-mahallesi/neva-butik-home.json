@@ -1,0 +1,26 @@
+{
+  "isim": "Neva Butik Home",
+  "slug": "neva-butik-home",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9751654,
+    "lng": 32.6569083
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/neva-butik-home-boundary.geojson",
+  "aciklama": "Neva Butik Home, Eryaman Şehit Osman Avcı Mahallesi'nde Neva Prestij Yapı tarafından geliştirilmiş, adı gibi butik ölçekli bir konut projesidir. Müteahhidin kendi proje listesine göre toplam 50 daireden oluşuyor; ilanlarda ağırlıklı olarak 2+1 daire tipleri görülüyor. Küçük ölçeği sayesinde kalabalık sitelerin yoğunluğunu istemeyen, daha sakin bir apartman yaşamı arayan profile uygun; İstanbul Yolu aksına ve metroya yakın konumu ulaşımı kolaylaştırıyor. Tapu kaydına göre yapı, yaklaşık 3.963 m²'lik parselde on dört katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Butik projelerde emsal az olduğu için doğru fiyatlama daha da önemlidir — fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46651",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "14 katlı — tapuda ofis-işyeri niteliği",
+    "Yaklaşık 4 dönümlük parsel (TKGM)",
+    "Neva Prestij Yapı — 50 daire (müteahhit verisi)",
+    "Butik ölçek, ağırlıklı 2+1",
+    "İstanbul Yolu aksı, metroya yakın",
+    "Şehit Osman Avcı / Eryaman"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

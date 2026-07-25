@@ -1,0 +1,24 @@
+{
+  "isim": "Elif Özgen Sitesi",
+  "slug": "elif-ozgen-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.9692122,
+    "lng": 32.6242703
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/elif-ozgen-sitesi-boundary.geojson",
+  "aciklama": "Elif Özgen Sitesi, Eryaman Mahallesi'nde dört bloklu bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '9 Katlı 1, 2, 3 ve 4 Nolu Bloklardan Oluşan Betonarme Apartman' niteliğiyle kayıtlı 10.976 m²'lik kat mülkiyetli parsel üzerine kuruludur — numaralı blok sistemi, kooperatif geleneğinin izidir. Dört eş bloğun 11 dönümlük parsele düzenli yerleşimi, ferah bir site yaşamı sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "48297",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~10.976 m² parsel (TKGM)",
+    "9 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

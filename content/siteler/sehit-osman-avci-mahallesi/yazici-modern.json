@@ -1,0 +1,18 @@
+{
+  "isim": "Yazıcı Modern",
+  "slug": "yazici-modern",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9718513,
+    "lng": 32.6549186
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/yazici-modern-boundary.geojson",
+  "aciklama": "Yazıcı Modern, Şehit Osman Avcı Mahallesi'nde kademeli yapılı butik bir konut sitesidir. TKGM kayıtlarına göre 5.000 m²'lik parselde tapu kaydı yapıyı '10 Katlı Betonarme A Blok ve 3 Katlı Betonarme B-C Blok' olarak tanımlar — yüksek ana blok ile iki az katlı bloğun aynı sitede buluşması, apartman dairesinden az katlı yaşama uzanan seçenek sunar. Butik ölçeği, komşu sayısı az ve yönetimi yalın bir site yaşamı demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46664",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-23"
+}

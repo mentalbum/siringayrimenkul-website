@@ -1,0 +1,23 @@
+{
+  "isim": "Maybak Sitesi",
+  "slug": "maybak-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.987752,
+    "lng": 32.650151
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/maybak-sitesi-boundary.geojson",
+  "aciklama": "Maybak Sitesi, Şehit Osman Avcı Mahallesi'nde, tapuda '5 Blok Betonarme Apartman' niteliğiyle kayıtlı, yaklaşık on dokuz dönümlük kat mülkiyetli tek parsel üzerine kurulmuş bir konut sitesidir. Beş bloğun bu genişlikte bir parseli paylaşması, yoğunluğu düşük, blok aralarını açık alan ve otopark lehine cömert kullanan bir yerleşim düzeni anlamına gelir. Sitenin bir de adaşı var: hemen kuzeydoğusundaki komşu parselde, Göksu tarafında kalan Maybak Konutları. Yerel emlak kayıtları iki parseli tek bir Maybak yerleşkesi olarak birlikte anar; iki site yan yana, toplamda otuz yedi dönümü aşan bütünlüklü bir konut dokusu oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46473",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~19.366 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

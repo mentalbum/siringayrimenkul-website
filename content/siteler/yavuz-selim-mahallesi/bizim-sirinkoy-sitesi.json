@@ -1,0 +1,24 @@
+{
+  "isim": "Bizim Şirinköy Sitesi",
+  "slug": "bizim-sirinkoy-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.996616,
+    "lng": 32.605181
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi-boundary.geojson",
+  "aciklama": "Bizim Şirinköy Sitesi, Yavuz Selim Mahallesi'nin bahçeli kooperatif kuşağında, apartman değil müstakil evlerden oluşan bir sitedir: TKGM kayıtlarına göre site, tapuda '15 Blok Kargir Ev' niteliğiyle kayıtlı kat mülkiyetli parsel üzerine kuruludur. On beş evin yatay dokusu, bahçeli ve müstakil hissiyatlı yaşam arayan aileler için mahallenin nadir profillerindendir; 'Şirinköy' adı bölgede yerleşik bir tanınırlık taşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19508",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~9.403 m² parsel (TKGM)",
+    "15 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

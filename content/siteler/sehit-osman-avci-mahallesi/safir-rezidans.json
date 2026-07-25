@@ -1,0 +1,26 @@
+{
+  "isim": "Safir Rezidans",
+  "slug": "safir-rezidans",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.977294,
+    "lng": 32.655155
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/safir-rezidans-boundary.geojson",
+  "aciklama": "Safir Rezidans, Eryaman Şehit Osman Avcı Mahallesi'nde, İstanbul Yolu metro istasyonuna yaklaşık 100 metre mesafede konumlanan bir rezidans projesidir. İlan kaynaklarına göre ağırlıklı olarak 1+1 (yaklaşık 65–70 m²) kompakt dairelerden oluşuyor; merkezi ısıtma, jeneratör, tam otomatik asansörler ve yük asansörü ile 261 araçlık otoparkı bulunuyor. Metro dibi konumu sayesinde özellikle kiralık talebinin yüksek olduğu, yatırımcı ağırlıklı bir yapı. Tapu kaydına göre yapı, yaklaşık 6.748 m²'lik parselde on dört katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46640",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "14 katlı — tapuda ofis-işyeri niteliği",
+    "Yaklaşık 6,7 dönümlük parsel (TKGM)",
+    "Ağırlıklı 1+1 (~65–70 m²) kompakt daireler",
+    "İstanbul Yolu metrosuna ~100 m",
+    "261 araçlık otopark, yük asansörü",
+    "Merkezi ısıtma, jeneratör"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

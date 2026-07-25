@@ -1,0 +1,25 @@
+{
+  "isim": "Panorama Gold",
+  "slug": "panorama-gold",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.0007637,
+    "lng": 32.5996449
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/panorama-gold-boundary.geojson",
+  "aciklama": "Panorama Gold, Dimaş İnşaat imzalı; Mavi Yıldız Caddesi üzerinde yaklaşık 15.000 m²'lik alanda kurulu güvenlikli bir sitedir. Geniş daire tipleriyle ailenin üst segment projelerindendir. Dimaş İnşaat'ın Ata Mahallesi'ndeki beş projelik 'Panorama' ailesinin (Life, Garden, Gold, Plus, Prestij) üyesidir; her proje kendi parselinde ayrı bir sitedir. Tapu kaydı projeyi net tarif eder: yaklaşık 15.027 m²'lik parselde on dokuzar katlı A, B, C ve D konut blokları ile iki katlı E blok (ofis-işyeri) — dört yüksek blok ve kendi ticari katı. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "44765",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4 konut bloğu (A-D), 19'ar katlı + 2 katlı ticari E blok (tapu kaydı)",
+    "Yaklaşık 15 dönümlük parsel (TKGM)",
+    "Güvenlikli site — Mavi Yıldız Caddesi üzeri",
+    "Dimaş İnşaat — Panorama ailesi",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,23 @@
+{
+  "isim": "Havuzlu Bahçe Konutları",
+  "slug": "havuzlu-bahce-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.988598,
+    "lng": 32.64172
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/havuzlu-bahce-konutlari-boundary.geojson",
+  "aciklama": "Havuzlu Bahçe Konutları, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 24.218 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"Üç Bloktan Oluşan Betonarme Apartman\". Site, Göksu'nun yerel kayıtlarda 'Havuzluevler' olarak anılan havuzlu siteler kuşağında, Polsan konutlarıyla komşu konumda yer alır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "48145",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~24.218 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

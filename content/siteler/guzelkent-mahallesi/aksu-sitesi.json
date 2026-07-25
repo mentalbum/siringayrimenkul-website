@@ -1,0 +1,24 @@
+{
+  "isim": "Aksu Sitesi",
+  "slug": "aksu-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.98765,
+    "lng": 32.609935
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/aksu-sitesi-boundary.geojson",
+  "aciklama": "Aksu Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kârgir Apartman\" niteliğiyle kayıtlı 5.072 m²'lik kat mülkiyetli tek parsel üzerine kurulu; bloklar yerel emlak kayıtlarında 8 ile 8A'dan 8E'ye uzanan adlarla sıralanıyor — tapu ile yerel kayıt birebir örtüşüyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18512",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5.072 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (8, 8A–8E)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

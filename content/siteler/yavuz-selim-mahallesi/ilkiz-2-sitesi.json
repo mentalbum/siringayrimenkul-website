@@ -1,0 +1,24 @@
+{
+  "isim": "İlkiz 2 Sitesi",
+  "slug": "ilkiz-2-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.9960927,
+    "lng": 32.6148978
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/ilkiz-2-sitesi-boundary.geojson",
+  "aciklama": "İlkiz 2 Sitesi, Yavuz Selim Mahallesi'nin kadastroda Eryaman üzerinden kayıt gören kesiminde, yerel emlak kayıtlarının Güzelkent Villalar adıyla andığı konut kuşağında yer alır. Tapu kaydı siteyi \"16 bloktan oluşan kargir apartman\" olarak tanımlar; yaklaşık 10.211 m²'lik — on dönümü aşkın — tek parseli on altı bloğun paylaşması siteye çok bloklu, parçalı bir yerleşim düzeni kazandırır. Hemen doğusundaki dokuz bloklu İlkiz Sitesi'yle (İlkiz 1) birlikte 25 bloğa ulaşan İlkiz kümesinin büyük kanadını bu site oluşturur. Parsel TKGM kayıtlarında kat mülkiyetine geçmiş durumda; tapu tarafı netleşmiş, kat mülkiyetli bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19540",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~10.211 m² parsel (TKGM)",
+    "16 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

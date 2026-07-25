@@ -1,0 +1,23 @@
+{
+  "isim": "Lapis Garden",
+  "slug": "lapis-garden",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.973759,
+    "lng": 32.609189
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/lapis-garden-boundary.geojson",
+  "aciklama": "Lapis Garden, Eryaman Mahallesi'nde A ve B bloklarından oluşan iki bloklu, yeni nesil bir konut sitesidir. Tapu kaydı yapıyı net tarif eder: TKGM'de site, yaklaşık 3.786 m²'lik parseli üzerinde sekizer katlı A ve B bloklardan oluşan betonarme apartman niteliğiyle kayıtlıdır. Eryaman Mahallesi'nin yerleşik dokusu içinde görece yeni tarihli yapılaşması, siteyi çevresinden ayıran özelliğidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45924",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A ve B), 8'er katlı — tapu nitelik kaydı",
+    "Yaklaşık 3,8 dönümlük parsel (TKGM)",
+    "Yeni nesil yapılaşma — Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

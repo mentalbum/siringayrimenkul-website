@@ -1,0 +1,19 @@
+{
+  "isim": "Ata Mahallesi",
+  "slug": "ata-mahallesi",
+  "ilce": "Yenimahalle",
+  "durum": "yayinda",
+  "kisaAciklama": "Yenimahalle'ye bağlı, 2017'de Susuz'dan ayrılarak kurulan ve Eryaman'ın kuzeyinde bölgeyle iç içe yaşayan bir mahalle.",
+  "uzunAciklama": [
+    "Ata Mahallesi, Ankara'nın Yenimahalle ilçesine bağlı olmakla birlikte coğrafi olarak Eryaman bölgesinin hemen kuzeyinde yer alıyor; günlük yaşamı, ulaşımı ve emlak piyasası Eryaman'la iç içe işliyor.",
+    "Mahalle Eryaman'ın en genç komşularından: Susuz Mahallesi'nin çevre otoyolu batısında kalan kesimi ayrılarak kurulmuş, adı 2015 sonundaki referandumla belirlenmiş ve 2017 başında resmen mahalle olmuştur. \"Neden Yenimahalle'ye bağlı ama Eryaman'la iç içe?\" sorusunun cevabı bu geçmişte yatıyor.",
+    "Doku, çok katlı bloklardan oluşan site yerleşimleri üzerine kurulu; kayıtlarımızdaki 90 site ve rezidansta baskın kat aralığı 10 ile 15 arasında değişiyor. Mahallenin bir başka belirgin özelliği kooperatif kökeni: Akdam, Arıkovanı, Atasayanlar, Başkent, Raylı Sistemciler gibi yerleşimler kooperatif olarak kurulmuş ve bunların bir kısmında birden fazla site aynı tapu parselini paylaşıyor — emsal fiyatı ve ortak yönetimi doğrudan ilgilendiren bir düzen.",
+    "Ulaşımda dürüst tablo şu: mahalle sınırları içinde metro istasyonu yok; en yakın M3 istasyonlarına (Fatih, Gazi Osman Paşa, Harikalar Diyarı yönü) otobüs ya da araç aktarmasıyla ulaşılıyor. Semt pazarı salı günleri Mavi Yıldız Caddesi çevresinde kuruluyor; Şehit Mahmut Uslu İlkokulu ve Şehit Haydar Çetin Anadolu Lisesi mahalle sınırları içindeki okullar arasında.",
+    "Şirin Gayrimenkul olarak Eryaman'daki ofisimizden Ata Mahallesi'ne de hizmet veriyoruz. Bu mahallede evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim; sürecin tamamını sizin adınıza yürütelim."
+  ],
+  "merkezKoordinat": {
+    "lat": 40.0069573,
+    "lng": 32.6102469
+  },
+  "sinirGeoJSON": "mahalleler/ata-boundary.geojson"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Nil My Home",
+  "slug": "nil-my-home",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.006533,
+    "lng": 32.640376
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/nil-my-home-boundary.geojson",
+  "aciklama": "Nil My Home, Susuz'da 2. İnönü Caddesi No:37'de yer alan modern bir konut sitesidir; ilanlarda geniş balkonlu 4+1 daireleriyle bilinir. TKGM kayıtlarına göre 15.600 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17'şer Katlı A ve B Blok Betonarme Apartman ile 3 Katlı C Blok Ofis-İşyeri' olarak tanımlar — iki yüksek konut bloğunun yanındaki alçak ticari blok, günlük ihtiyacı site sınırında karşılar. Üst katlar Susuz-Göksu hattına açık görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63368",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "Modern site — lüks 4+1 tipler",
+    "Geniş balkonlu daireler",
+    "2. İnönü Caddesi No:37",
+    "Susuz — Göksu kentsel gelişim bölgesi"
+  ],
+  "adres": "2. İnönü Caddesi No:37, Susuz, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-07-16"
+}

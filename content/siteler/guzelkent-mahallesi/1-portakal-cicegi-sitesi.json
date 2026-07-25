@@ -1,0 +1,28 @@
+{
+  "isim": "1. Portakal Çiçeği Sitesi",
+  "slug": "1-portakal-cicegi-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "1. Portakal Çiçeği Sitesi, Güzelkent Mahallesi'nde altı bloklu bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '6 Blok Kargir Apartman' niteliğiyle kayıtlı 5.195 m²'lik kat mülkiyetli parsel üzerine kuruludur. Bölgedeki Portakal Çiçeği adlı sitelerin ilk halkasıdır; kompakt ölçeği ve yerleşik komşuluğuyla bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "alternatifAdlar": [
+    "Portakal Çiçeği 1 Sitesi"
+  ],
+  "koordinat": {
+    "lat": 39.992174,
+    "lng": 32.618144
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/1-portakal-cicegi-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18464",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (kapı no 7, 9, 11, 13, 15, 17)",
+    "Portakal Çiçeği ailesinin 1. sitesi",
+    "~5.195 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

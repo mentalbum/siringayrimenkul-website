@@ -1,0 +1,23 @@
+{
+  "isim": "Polsan 1 Bahar Sitesi",
+  "slug": "polsan-1-bahar-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.9779245,
+    "lng": 32.6452943
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/polsan-1-bahar-sitesi-boundary.geojson",
+  "aciklama": "Polsan 1 Bahar Sitesi, Göksu'nun 'Polsan Konutları' olarak anılan kooperatif bölgesinin parçasıdır. TKGM kayıtlarına göre site, tapuda '7 Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 26.051 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğun 26 dönüme yayılan ferah düzeni, Polsan kuşağının geniş yeşilli yerleşim anlayışını taşır. Gözde ve Ayışığı siteleriyle birlikte Polsan 1 ailesini oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46481",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~26.051 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

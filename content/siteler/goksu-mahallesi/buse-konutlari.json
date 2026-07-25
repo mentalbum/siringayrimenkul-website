@@ -1,0 +1,23 @@
+{
+  "isim": "Buse Konutları",
+  "slug": "buse-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.984595,
+    "lng": 32.641046
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/buse-konutlari-boundary.geojson",
+  "aciklama": "Buse Konutları, Göksu Mahallesi'nde sekiz apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda 'Sekiz Blok Kargir Apartman' niteliğiyle kayıtlı 23.150 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Sekiz bloğun 23 dönüme yayılan oturmuş düzeni, geniş blok araları ve yerleşik komşuluk çevresi sunar; Göksu'nun kooperatif kuşağının bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46470",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~23.150 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

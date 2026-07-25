@@ -1,0 +1,25 @@
+{
+  "isim": "Çiçek Sitesi",
+  "slug": "cicek-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9838407,
+    "lng": 32.6488146
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/cicek-sitesi-boundary.geojson",
+  "aciklama": "Çiçek Sitesi, Şehit Osman Avcı Mahallesi'nde beş apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Adet Betonarme Apartman' niteliğiyle kayıtlı 6.751 m²'lik kat mülkiyetli parsel üzerine kuruludur. Beş bloğun oturmuş komşuluk düzeni ve mahallenin yerleşik dokusundaki konumuyla bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17471",
+      "parsel": "1",
+      "etap": "2"
+    }
+  ],
+  "ozellikler": [
+    "5 betonarme apartman (TKGM)",
+    "~6.751 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Endora Park",
+  "slug": "endora-park",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.9693063,
+    "lng": 32.6223116
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/endora-park-boundary.geojson",
+  "aciklama": "Endora Park, Eryaman Mahallesi'nde 2. Cadde üzerinde, Endora ailesinin (Endora Plus, Endora Batı) butik halkasıdır. TKGM kayıtlarına göre 4.173 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '9 Katlı Betonarme Apartman' olarak tanımlar; müteahhit kaynaklarına göre 2021'de teslim edilen yapıda toplam 47 daire bulunur — 3+1 (net ~115 m²) ve 4+1 (net ~142 m²) tiplerinde. Az daireli ölçeği ve cadde üzeri konumu; okul, eczane ve ulaşım akslarına yürüme mesafesinde, yönetimi yalın bir yaşam sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46385",
+      "parsel": "7"
+    }
+  ],
+  "ozellikler": [
+    "~4.173 m² parsel (TKGM)",
+    "9 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "adres": "Eryaman 2. Cadde No:7, Eryaman/Ankara"
+}

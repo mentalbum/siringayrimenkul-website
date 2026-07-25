@@ -1,0 +1,27 @@
+{
+  "isim": "Sergah Evleri",
+  "slug": "sergah-evleri",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.9812,
+    "lng": 32.605225
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/sergah-evleri-boundary.geojson",
+  "aciklama": "Sergah Evleri — yerel kayıtlarda \"Eryaman Sergah Evleri\" olarak da geçer — Eryaman Devlet Mahallesi'nde yer alan, yüksek katlı üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 7.001 m²'lik kat mülkiyetli tek parsel üzerine kurulu; tapu niteliği \"11 Katlı A, B, C Bloklardan Oluşan Betonarme Apartman\" — yani üç bloğun tamamı 11 katlı. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18675",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "7.001 m² tek parsel (TKGM)",
+    "11 katlı A-B-C blokları (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Eryaman Sergah Evleri"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

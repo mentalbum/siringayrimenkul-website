@@ -1,0 +1,24 @@
+{
+  "isim": "Onur Sitesi",
+  "slug": "onur-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "aciklama": "Onur Sitesi, Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda iki apartmanlık bir sitedir. TKGM kayıtlarına göre üzerinde bulunduğu yaklaşık 10.479 m²'lik kat mülkiyetli parselde tapu, yapıyı 'A-C Bloklardan Oluşan 2 Adet Kargir Apartman' olarak tanımlar; parseli komşusu Tuğçe Kent Sitesi ile paylaşır. İki bloklu yalın ölçek, az komşulu ve yönetimi kolay bir site yaşamı demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 40.003546,
+    "lng": 32.62102
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/onur-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "46215",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~10.479 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "A ve C blokları (tapu)",
+    "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

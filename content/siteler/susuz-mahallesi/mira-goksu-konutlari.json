@@ -1,0 +1,24 @@
+{
+  "isim": "Mira Göksu Konutları",
+  "slug": "mira-goksu-konutlari",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.00997,
+    "lng": 32.64199
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/mira-goksu-konutlari-boundary.geojson",
+  "aciklama": "Mira Göksu Konutları, Susuz'un Göksu kentsel gelişim bölgesinde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 7.311 m²'lik parselde tapu kaydı yapıyı '15 Katlı A Blok ve 16 Katlı B Blok Betonarme Mesken' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Üst katlar gelişim aksına ve göl yönüne açık görüş sunar; bölgenin yeni konut stoğunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "64526",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~7.311 m² parsel (TKGM)",
+    "15-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

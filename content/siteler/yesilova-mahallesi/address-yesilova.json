@@ -1,0 +1,25 @@
+{
+  "isim": "Address Yeşilova",
+  "slug": "address-yesilova",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.965361,
+    "lng": 32.610743
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/address-yesilova-boundary.geojson",
+  "aciklama": "Address Yeşilova, Yeşilova Mahallesi'nde 12 katlı ana bloğu ve 2'şer katlı iki yan bloğuyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '2'şer Katlı A ve C Blok ile 12 Katlı B Blok' niteliğiyle kayıtlı 3.162 m²'lik kat mülkiyetli parsel üzerine kuruludur. Kompakt ölçeğiyle Yeşilova'nın genç dokusunda bilinen yeni nesil adreslerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47542",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "~3.162 m² parsel (TKGM)",
+    "12 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -1,0 +1,23 @@
+{
+  "isim": "Gold Stone Evleri",
+  "slug": "gold-stone-evleri",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.011127,
+    "lng": 32.615073
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/gold-stone-evleri-boundary.geojson",
+  "aciklama": "Gold Stone Evleri, Ata Mahallesi'nde beş bloktan oluşan bir konut sitesidir; bloklarda ikişer asansör bulunur. TKGM kayıtlarına göre sitenin parseli yaklaşık 23.540 m² — yani 23,5 dönümlük — geniş bir alana karşılık gelir; beş blok için bu ölçek, bloklar arasına geniş bahçe ve donatı payı bırakan ferah bir yerleşim demektir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46411",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5 blok — bloklarda ikişer asansör",
+    "Yaklaşık 23,5 dönümlük geniş parsel (TKGM)",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

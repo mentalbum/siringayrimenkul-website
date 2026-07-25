@@ -1,0 +1,24 @@
+{
+  "isim": "Mercan Smart House",
+  "slug": "mercan-smart-house",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.999868,
+    "lng": 32.645985
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/mercan-smart-house-boundary.geojson",
+  "aciklama": "Mercan Smart House, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim bölgesinde Mercan Grup İnşaat imzasıyla yükselen bir projedir. TKGM kayıtlarına göre yaklaşık yedi dönümlük parseli kat mülkiyetlidir; tapu yapıyı on beş katlı betonarme A ve B bloklardan oluşan apartman olarak tescil eder. Projeye adını veren akıllı ev altyapısı, müteahhit tanıtımında aydınlatmadan perdelere ve çelik kapıya kadar telefon uygulamasıyla yönetilen daireler olarak anlatılır; kış bahçeli, üç cepheli 4+1 planlar ve Göksu Parkı manzarası projenin diğer vaatleridir. Yaklaşık yirmi beş dönümlük yerleşim adasını kuzey komşusu Göksu Park Vadi Konutları ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63404",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~6.820 m² parsel (TKGM)",
+    "15 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

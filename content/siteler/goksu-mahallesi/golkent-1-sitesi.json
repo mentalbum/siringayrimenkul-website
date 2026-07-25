@@ -1,0 +1,29 @@
+{
+  "isim": "Gölkent 1 Sitesi",
+  "slug": "golkent-1-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.9935185,
+    "lng": 32.6430286
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/golkent-1-sitesi-boundary.geojson",
+  "aciklama": "Gölkent 1 Sitesi — yerel kayıtlarda 'Gölkent Sitesi' olarak geçer — Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Gölkent'in blokları yerel kayıtlarda 5-1, 5-2, 5-3, 5-4, 5-8 ve 5-9 olarak sıralanır — altı blok, adanın en büyük sitesi. Aynı adayı paylaştığı komşuları arasında Hava Destek ve Havacılar siteleri bulunur. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 23.101 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46455",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (5-1…5-4, 5-8, 5-9) — adanın en büyüğü",
+    "Ada parseli ~23.101 m², kat mülkiyetli (TKGM)",
+    "Yerel kayıtlarda 'Gölkent Sitesi' adıyla geçer",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Göksu — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Gölkent Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Doktorlar Sitesi",
+  "slug": "doktorlar-sitesi",
+  "mahalleSlug": "altay-mahallesi",
+  "koordinat": {
+    "lat": 39.970463,
+    "lng": 32.647822
+  },
+  "sinirGeoJSON": "siteler/altay-mahallesi/doktorlar-sitesi-boundary.geojson",
+  "aciklama": "Doktorlar Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları iki komşu adaya yayılan yerleşik bir sitedir; yerel kayıtlarda İlbeyli ve İsmail Engin apartmanları ile numaralı bloklar (4, 5, 70-74 serisi) sitenin adıyla anılır. TKGM'de sitenin ana parseli, yaklaşık 2.616 m²'lik alanı üzerinde '2 bloklu kargir apartman' niteliğiyle kayıtlıdır; komşu adada İzgi Park, Palmiye ve Pembe Rüya ile iç içe bir doku paylaşılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45890",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Bloklar iki komşu adada — ana parselde 2 blok (tapu)",
+    "İlbeyli ve İsmail Engin apartmanları",
+    "Komşular: İzgi Park, Palmiye, Pembe Rüya",
+    "Altay — Eryaman Evleri kuşağı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

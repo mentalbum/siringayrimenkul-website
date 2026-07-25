@@ -1,0 +1,23 @@
+{
+  "isim": "Cumhuriyet Sitesi",
+  "slug": "cumhuriyet-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.970123,
+    "lng": 32.623146
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/cumhuriyet-sitesi-boundary.geojson",
+  "aciklama": "Cumhuriyet Sitesi, Eryaman Mahallesi'nde çift sayılı kapı numaralarıyla 12'den 20'ye uzanan beş bloktan oluşan yerleşik bir sitedir. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 13.668 m²'lik parseli üzerinde beş blok kargir apartman niteliğiyle kayıtlıdır — beş blok için 13,7 dönümlük alan, bloklar arasına bahçe ve otopark payı bırakan ferah bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46382",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5 blok (kapı no 12-20, çift sayılı) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 13,7 dönümlük parsel (TKGM)",
+    "Eryaman Mahallesi'nin yerleşik sitelerinden"
+  ],
+  "zenginlestirildi": "2026-07-24"
+}

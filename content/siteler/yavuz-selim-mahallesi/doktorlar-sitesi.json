@@ -1,0 +1,24 @@
+{
+  "isim": "Doktorlar Sitesi",
+  "slug": "doktorlar-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "aciklama": "Doktorlar Sitesi, Yavuz Selim Mahallesi'nin bahçeli ev kuşağında, dublekslerden oluşan bir kooperatif sitesidir: TKGM kayıtlarına göre site, tapuda '17 Bloktan Oluşan Dubleks Ev' niteliğiyle kayıtlı 9.194 m²'lik kat mülkiyetli parsel üzerine kuruludur. Adını kurucu meslek kooperatifinden taşıyan yerleşim, 'Güzelkent Villalar' olarak anılan yatay kuşağın parçasıdır. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19509",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.998665,
+    "lng": 32.60811
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/doktorlar-sitesi-boundary.geojson",
+  "ozellikler": [
+    "17 adet dubleks ev (tapu kaydı)",
+    "Toplam ~9.194 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

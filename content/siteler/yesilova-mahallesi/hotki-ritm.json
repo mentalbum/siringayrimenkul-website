@@ -1,0 +1,28 @@
+{
+  "isim": "Hotki Ritm",
+  "slug": "hotki-ritm",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.9624333,
+    "lng": 32.6090161
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/hotki-ritm-boundary.geojson",
+  "aciklama": "Hotki Ritm Residence, Yeşilova'da 4014. Cadde No:12'de yer alan bir rezidans kompleksidir — Hotki markasının (Bulvar ve Meydan'dan sonra) üçüncü projesidir. Yeşilova'nın 4014. Cadde rezidans koridorunun parçasıdır — Doğan Life, Hotki Ritm ve Penta 5'in sıralandığı bu aks, mahallenin yeni nesil konut vitrini durumundadır. TKGM kayıtlarına göre yapının parseli yaklaşık 2.500 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "47549",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Yaklaşık 2,5 dönümlük parsel (TKGM)",
+    "Hotki ailesinin Yeşilova projesi",
+    "Rezidans kompleksi",
+    "Yeşilova / Eryaman gelişim aksı"
+  ],
+  "adres": "4014. Cadde No:12, Yeşilova, Etimesgut/Ankara",
+  "alternatifAdlar": [
+    "Hotki Ritm Residence"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

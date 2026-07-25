@@ -1,0 +1,23 @@
+{
+  "isim": "Selçuklu Sitesi",
+  "slug": "selcuklu-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.97843,
+    "lng": 32.60613
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/selcuklu-sitesi-boundary.geojson",
+  "aciklama": "Selçuklu Sitesi, Eryaman Devlet Mahallesi'nde, altı sitenin paylaştığı büyük adanın komşuluğunda yer alan bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 8.144 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve tapuda 'iki blok kargir apartman' niteliğiyle geçer; bloklar yerel kayıtlarda A ve B olarak anılır — iki blok için 8 dönümlük alan, bahçesi bol bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18690",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A, B) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 8,1 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

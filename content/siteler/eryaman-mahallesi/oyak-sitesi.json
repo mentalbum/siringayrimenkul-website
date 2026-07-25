@@ -1,0 +1,27 @@
+{
+  "isim": "Oyak Sitesi",
+  "slug": "oyak-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.977665,
+    "lng": 32.631489
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/oyak-sitesi-boundary.geojson",
+  "aciklama": "Oyak Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin adını taşıyan yedi bloklu büyük sitesidir. TKGM kayıtlarına göre üzerinde bulunduğu yaklaşık 29.676 m²'lik kat mülkiyetli parselde tapu, yapıları '7 Blok Kargir Apartman' olarak sayar — yedi bloğa karşılık 30 dönüme yaklaşan parsel, kuşağın en ferah düzenlerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46527",
+      "parsel": "1",
+      "etap": ""
+    }
+  ],
+  "ozellikler": [
+    "~29.676 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Oyak Atakent 2 Oyak Sitesi"
+  ]
+}

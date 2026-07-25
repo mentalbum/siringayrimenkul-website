@@ -1,0 +1,23 @@
+{
+  "isim": "Kardelen Sitesi",
+  "slug": "kardelen-sitesi",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.9673351,
+    "lng": 32.6062153
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/kardelen-sitesi-boundary.geojson",
+  "aciklama": "Kardelen Sitesi, Yeşilova Mahallesi'nde yer alan butik bir konut sitesidir. Tapu kaydı yapıyı net tarif eder: yaklaşık 1.787 m²'lik kat mülkiyetli parsel üzerinde dört katlı A ve B bloklardan oluşan betonarme apartman — az katlı, derli toplu bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47564",
+      "parsel": "7"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A, B), 4 katlı — tapu nitelik kaydı",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

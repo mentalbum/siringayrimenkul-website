@@ -1,0 +1,24 @@
+{
+  "isim": "Mavi Köy Sitesi",
+  "slug": "mavi-koy-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.978227,
+    "lng": 32.607292
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/mavi-koy-sitesi-boundary.geojson",
+  "aciklama": "Mavi Köy Sitesi, Eryaman Devlet Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 12.630 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"6 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda A'dan F'ye uzanan adlarla sıralanıyor. Altı bloğun geniş parsele yayıldığı, siteler bölgesinin oturmuş yerleşimlerinden biri. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18689",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "12.630 m² tek parsel (TKGM)",
+    "6 blok (A–F)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

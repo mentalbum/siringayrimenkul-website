@@ -1,0 +1,25 @@
+{
+  "isim": "Tanışkent Sitesi",
+  "slug": "taniskent-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.9948742,
+    "lng": 32.6313002
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/taniskent-sitesi-boundary.geojson",
+  "aciklama": "Tanışkent Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Tanışkent'in blokları yerel kayıtlarda 5, 5A ve 5B olarak geçer — üç blok. Aynı adayı Site Konut ile paylaşır. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 15.674 m²'lik kat mülkiyetli tek parseldir. Ada, tapu kaydında 14-16 katlı dört bloktan oluşur. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46491",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Üç blok kooperatif sitesi",
+    "Ada parseli ~15.674 m², kat mülkiyetli (TKGM)",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Oyak 555 Konut Sitesi",
+  "slug": "oyak-555-konut-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.9800721,
+    "lng": 32.6266342
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/oyak-555-konut-sitesi-boundary.geojson",
+  "aciklama": "Oyak 555 Konut Sitesi, Eryaman Mahallesi'nde metro aksına yakın konumda, 2013 yılında tamamlanan ve kendi site yönetimi (OYAK Eryaman Konutları) tarafından işletilen büyük ölçekli bir yerleşim. TKGM kaydına göre yaklaşık 46.700 m²'lik tek büyük parsel üzerine kurulu; A1, A2, A3, B1 ve D1 gibi harf-numara sistemiyle adlandırılan çok katlı bloklardan oluşuyor. Daireler 45 ile 140 m² arasında değişen tiplerde; ısınma merkezi sistem. Site yönetiminin kurumsal yapısı (düzenli güvenlik/temizlik ihaleleri, blok yöneticileri sistemi) siteyi bakımlı ve düzenli kılar — bu da ikinci el pazarında güven unsuru. Bu sitede satılık veya kiralık daireniz mi var? Blok ve kat farkları fiyata belirgin yansır — fiyatı, siteyi blok düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46523",
+      "parsel": "8"
+    }
+  ],
+  "ozellikler": [
+    "2013 teslim, kurumsal site yönetimi (OYAK Eryaman Konutları)",
+    "~46.700 m² tek parsel (TKGM), çok katlı bloklar",
+    "45–140 m² daire yelpazesi",
+    "Merkezi sistem ısınma",
+    "Eryaman metro aksına yakın"
+  ],
+  "zenginlestirildi": "2026-07-09"
+}

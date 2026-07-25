@@ -1,0 +1,25 @@
+{
+  "isim": "Kaçkar Sitesi",
+  "slug": "kackar-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.992841,
+    "lng": 32.632972
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/kackar-sitesi-boundary.geojson",
+  "aciklama": "Kaçkar Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Kaçkar'ın yerel kayıtlarda 59-7 blokla temsil edilir — tek bloklu kooperatif. Aynı adayı paylaştığı komşuları arasında Yeşil Aşiyan, Yağan Kent, Yunus Emre Çağdaş ve Zadegan siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 33.777 m²'lik kat irtifakı kayıtlı tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46489",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tek bloklu kooperatif sitesi",
+    "Ada parseli ~33.777 m², kat irtifakı kayıtlı (TKGM)",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,23 @@
+{
+  "isim": "Gülvatan Sitesi",
+  "slug": "gulvatan-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "aciklama": "Gülvatan Sitesi, Yavuz Selim Mahallesi'nin 'Güzelkent Villalar' dubleks kuşağında yer alan bir villa yerleşimidir. Tapu kaydına göre site, yaklaşık 10.538 m²'lik kendi adasında on dokuz kargir dubleks evden oluşur — adanın tek sahibidir. Kuşağın bahçeli, az katlı dokusunun parçasıdır. Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19502",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.999255,
+    "lng": 32.609754
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/gulvatan-sitesi-boundary.geojson",
+  "ozellikler": [
+    "19 dubleks ev — tapu nitelik kaydı (TKGM)",
+    "Yaklaşık 10,5 dönümlük kendi adası",
+    "Güzelkent Villalar dubleks kuşağı — Yavuz Selim"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

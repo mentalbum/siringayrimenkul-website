@@ -1,0 +1,25 @@
+{
+  "isim": "Elele Sitesi",
+  "slug": "elele-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.996314,
+    "lng": 32.620256
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/elele-sitesi-boundary.geojson",
+  "aciklama": "Elele Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"4 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.271 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar yalnızca tek sayılarla, 1, 3, 5 ve 7 olarak adlandırılmış — mahallede Çağdaş Sistem Sitesi'nde de görülen bir numaralandırma geleneği. Dört bloklu yapısıyla orta ölçekli, sakin bir site profili çiziyor. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur — doğru fiyatı, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18454",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5.271 m² tek parsel (TKGM)",
+    "4 blok (1, 3, 5, 7 — tek sayılı düzen)",
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

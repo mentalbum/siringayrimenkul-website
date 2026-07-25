@@ -1,0 +1,24 @@
+{
+  "isim": "City Life",
+  "slug": "city-life",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.9888756,
+    "lng": 32.662999
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/city-life-boundary.geojson",
+  "aciklama": "City Life, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '12 Katlı A Blok ve 13 Katlı B Blok Betonarme' niteliğiyle kayıtlı 8.790 m²'lik kat mülkiyetli parsel üzerine kuruludur. İki bloklu yalın düzeniyle Yeni Batı'nın genç konut stoğunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "62658",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A 12 katlı, B 13 katlı)",
+    "~8.790 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet (Yeni Batı) — kadastroda Susuz kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

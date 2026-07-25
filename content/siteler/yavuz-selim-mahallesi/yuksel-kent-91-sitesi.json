@@ -1,0 +1,24 @@
+{
+  "isim": "Yüksel Kent 91 Sitesi",
+  "slug": "yuksel-kent-91-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.9982368,
+    "lng": 32.6099049
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/yuksel-kent-91-sitesi-boundary.geojson",
+  "aciklama": "Yüksel Kent 91, Yavuz Selim Mahallesi'nin yerel emlak kayıtlarında 'Güzelkent Villalar' diye anılan az katlı kuşağının içinde kalır. Tapu niteliği TKGM'de '18 Blok Dubleks Ev' olarak geçer: beş buçuk dönümü aşan kat mülkiyetli tek parsele dizilmiş on sekiz bahçeli dubleks. Sınır verilerimize göre Gülvatan ve Kardelen siteleriyle burun buruna komşudur; Keyfim, Turaykent, Korukent ve Özenkent'le birlikte mahallenin apartman siluetinden ayrışan yatay villa dokusunu tamamlar. On sekiz bağımsız bölümlük kompakt ölçeği, bu adreste satılık ya da kiralık stoğu doğal olarak seyrek kılar. Bu sitede satılık veya kiralık eviniz mi var? Dubleks dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47614",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~5.542 m² parsel (TKGM)",
+    "18 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

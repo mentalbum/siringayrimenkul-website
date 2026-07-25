@@ -1,0 +1,27 @@
+{
+  "isim": "Finest Blokları",
+  "slug": "finest-bloklari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.986049,
+    "lng": 32.641254
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/finest-bloklari-boundary.geojson",
+  "aciklama": "Finest Blokları, Göksu Mahallesi'nde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 4.930 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '13 Katlı A Blok ve 11 Katlı B Blok Betonarme Apartman' olarak tanımlar. İki bloklu yalın düzen yönetimi sade tutar; kat farkı aynı sitede farklı manzara katmanları sunar ve bölgenin yeni yapı stoğunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46469",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~4.930 m² parsel (TKGM)",
+    "2-13 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Eryaman Finest Residence"
+  ]
+}

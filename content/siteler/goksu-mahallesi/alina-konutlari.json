@@ -1,0 +1,24 @@
+{
+  "isim": "Alina Konutları",
+  "slug": "alina-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.999841,
+    "lng": 32.641697
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/alina-konutlari-boundary.geojson",
+  "aciklama": "Alina Konutları, Göksu Mahallesi'nde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 5.921 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '15 Katlı A Blok ve 13 Katlı B Blok Betonarme Apartman' olarak tanımlar; aynı yerleşim adasını 16 katlı Tulip Life ile paylaşır. İki kat kademesi, aynı sitede farklı manzara ve fiyat katmanları sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63391",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~5.921 m² parsel (TKGM)",
+    "13-15 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

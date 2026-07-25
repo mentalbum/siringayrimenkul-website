@@ -1,0 +1,24 @@
+{
+  "isim": "Utku Sitesi",
+  "slug": "utku-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 40.000888,
+    "lng": 32.610998
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/utku-sitesi-boundary.geojson",
+  "aciklama": "Utku Sitesi, Yavuz Selim Mahallesi'nde on iki apartmanlık büyük bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '12 Blok Kargir Apartman' niteliğiyle kayıtlı 14.388 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. On iki bloğun oturmuş komşuluk düzeni sayesinde kümede her dönem el değiştiren daire olur — emsal verisi bol ve taze kalır; mahallenin yerleşik dokusunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45822",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~14.388 m² parsel (TKGM)",
+    "12 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

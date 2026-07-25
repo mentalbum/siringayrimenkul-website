@@ -1,0 +1,25 @@
+{
+  "isim": "Panorama Plus",
+  "slug": "panorama-plus",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 39.9993125,
+    "lng": 32.5971664
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/panorama-plus-boundary.geojson",
+  "aciklama": "Panorama Plus, Dimaş İnşaat imzalı; on beşer katlı üç blokta toplam 168 daireden oluşan bir konut projesidir; tapuya göre üç blok yaklaşık 14.409 m²'lik parsele yayılır. Dairelerin tamamı 3+1 tipindedir (141-142 m²) — tek tip plan, fiyatlamayı kat ve cepheye indirger. Dimaş İnşaat'ın Ata Mahallesi'ndeki beş projelik 'Panorama' ailesinin (Life, Garden, Gold, Plus, Prestij) üyesidir; her proje kendi parselinde ayrı bir sitedir. Bu ölçek, bloklar arasına geniş bahçe ve otopark payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "44778",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "3 blok, 15'er katlı — 168 daire (tapu nitelik kaydı)",
+    "Tamamı 3+1 (141-142 m²)",
+    "Yaklaşık 14,4 dönümlük parsel (TKGM)",
+    "Dimaş İnşaat — Panorama ailesi",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

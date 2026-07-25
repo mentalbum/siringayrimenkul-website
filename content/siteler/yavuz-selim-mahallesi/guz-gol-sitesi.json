@@ -1,0 +1,24 @@
+{
+  "isim": "Güz - Göl Sitesi",
+  "slug": "guz-gol-sitesi",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "aciklama": "Güz - Göl Sitesi, Yavuz Selim Mahallesi'nin villa bölgesinde yer alan müstakil/dubleks konut sitelerindendir. TKGM kayıtlarına göre adası tapuda toplam 24 adet dubleks ev barındırır; parsel kat mülkiyetli ve toplam yaklaşık 7.795 m². Kırkayak Sitesi ile aynı adayı paylaşır. Bahçeli, az katlı dokusuyla apartman kuşağından ayrışan sakin bir yaşam sunar. Bu sitede satılık veya kiralık villanız/dubleksiniz mi var? Villa piyasasında emsal azdır, doğru fiyat uzmanlık ister — değeri, bölgeyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19506",
+      "parsel": "1"
+    }
+  ],
+  "koordinat": {
+    "lat": 39.995296,
+    "lng": 32.608161
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/guz-gol-sitesi-boundary.geojson",
+  "ozellikler": [
+    "24 adet dubleks ev (tapu kaydı)",
+    "Toplam ~7.795 m² (TKGM)",
+    "Kat mülkiyetli (TKGM)",
+    "Yavuz Selim villa bölgesi — bahçeli/az katlı doku"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

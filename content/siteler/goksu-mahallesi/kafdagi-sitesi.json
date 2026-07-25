@@ -1,0 +1,23 @@
+{
+  "isim": "Kafdağı Sitesi",
+  "slug": "kafdagi-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.991775,
+    "lng": 32.640224
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/kafdagi-sitesi-boundary.geojson",
+  "aciklama": "Kafdağı Sitesi, Göksu göl kuşağında, Ağaçlı Göl ve Akdüzen ile aynı büyük parseli paylaşan bir konut sitesidir; bloğu yerel kayıtlarda 1B kapı numarasıyla geçer. TKGM'ye göre paylaşılan parsel yaklaşık 41.977 m² olup kat mülkiyetlidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Kapı no 1B",
+    "Göl kuşağı paylaşımlı parseli",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

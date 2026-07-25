@@ -1,0 +1,25 @@
+{
+  "isim": "Türkü Sitesi",
+  "slug": "turku-sitesi",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "aciklama": "Türkü Sitesi, Cumhuriyet Mahallesi'nde 15 katlı, karma nitelikli bir yapıdır. TKGM kayıtlarına göre yaklaşık 4.380 m²'lik parselde tapu niteliği 'Mesken, Ofis-İşyeri' olarak karmadır — yapıda hem konut hem ticari birimler bulunur; alım-satımda birimin tapudaki niteliğine bakmak önemlidir, ayrıntıyı sözlüğümüzdeki rezidans tapusu maddesinde anlattık; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.987729,
+    "lng": 32.68924
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/turku-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "43252",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "15 katlı yapı (tapu)",
+    "Zeminde ticari birimler (karma kullanım)",
+    "~4.380 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet (Yeni Batı) — kadastroda Yuva kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

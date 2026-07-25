@@ -1,0 +1,23 @@
+{
+  "isim": "Yıldız Tatil Sitesi",
+  "slug": "yildiz-tatil-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.973151,
+    "lng": 32.603845
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/yildiz-tatil-sitesi-boundary.geojson",
+  "aciklama": "Yıldız Tatil Sitesi, Eryaman Devlet Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 11.270 m² — 11 dönümü aşan — kat mülkiyetli tek parsel üzerine kuruludur ve tapuda A, B ve C bloklardan oluşan kargir apartman niteliğiyle geçer; üç blok için bu ölçek, bahçeli ve ferah bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18706",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "3 blok (A, B, C) — tapu nitelik kaydı",
+    "Yaklaşık 11 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

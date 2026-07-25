@@ -1,0 +1,23 @@
+{
+  "isim": "Korukent Sitesi",
+  "slug": "korukent-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Korukent Sitesi, Etimesgut Güzelkent Mahallesi'nin villa bölgesinde yer alan bir sitedir. Tapu kaydı yapıyı net tarif eder: yaklaşık 5.130 m²'lik kat mülkiyetli parsel üzerinde on altı kargir dubleks ev — Güzelkent'in az katlı, bahçeli villa dokusunun tipik örneğidir. Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.994935,
+    "lng": 32.605724
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/korukent-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19517",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "16 dubleks ev — tapu nitelik kaydı (TKGM)",
+    "Yaklaşık 5,1 dönümlük kat mülkiyetli parsel",
+    "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

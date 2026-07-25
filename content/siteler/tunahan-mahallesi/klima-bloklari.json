@@ -1,0 +1,59 @@
+{
+  "isim": "Klima Blokları",
+  "slug": "klima-bloklari",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.992091,
+    "lng": 32.622302
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/klima-bloklari-boundary.geojson",
+  "aciklama": "Klima Blokları — yerel kayıtlarda \"Klima (6) Blokları\" olarak geçer — Tunahan Mahallesi'nde, yedi ayrı adaya yayılmış yerleşik bir konut kümesidir; komşusu Camlı Klima Blokları ile birlikte bölgenin tanıdık 'Klima' yerleşimini oluşturur. TKGM kayıtlarındaki düzen simetriktir: yedi adanın her birinde dörder kârgir apartman — toplam 28 apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 37.998 m². Yan yana duran iki Klima kümesi neredeyse eş büyüklükte iki mahalle parçasıdır; ayrım adlarında saklıdır — 'Camlı' olan komşudur, bu küme sade 'Klima' adıyla anılır ve alıcılar iki kümeyi sıkça birlikte değerlendirir. Eczanesi, çarşısı ve okullarıyla bölgenin oturmuş günlük düzeni yürüme mesafesindedir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17624",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17625",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17644",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17645",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17646",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17647",
+      "etap": "4",
+      "parsel": "1"
+    },
+    {
+      "no": "17648",
+      "etap": "4",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "7 ayrı ada — toplam 28 kârgir apartman (TKGM)",
+    "Toplam ~37.998 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Her adada dörder apartman — simetrik yerleşim (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Klima (6) Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

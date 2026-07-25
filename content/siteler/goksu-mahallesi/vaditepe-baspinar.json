@@ -1,0 +1,24 @@
+{
+  "isim": "Vaditepe Başpınar",
+  "slug": "vaditepe-baspinar",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.002604,
+    "lng": 32.645038
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/vaditepe-baspinar-boundary.geojson",
+  "aciklama": "Vaditepe Başpınar, Göksu Mahallesi'nde kademeli üç bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 16.978 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A Blok, 18 Katlı B Blok ve 2 Katlı C Blok' olarak tanımlar — iki yüksek konut bloğunun yanındaki alçak blok tamamlayıcı birimdir. 17 dönümlük parselin ferah düzeni ve üst katların açık görüşüyle bölgenin bilinen modern adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63380",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~16.978 m² parsel (TKGM)",
+    "2-18 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

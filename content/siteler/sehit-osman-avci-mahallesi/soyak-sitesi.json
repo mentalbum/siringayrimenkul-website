@@ -1,0 +1,38 @@
+{
+  "isim": "Soyak Sitesi",
+  "slug": "soyak-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.983321,
+    "lng": 32.652441
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/soyak-sitesi-boundary.geojson",
+  "aciklama": "Soyak Sitesi (Soyak Blokları), Şehit Osman Avcı Mahallesi'nde üç adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre adalarda toplam 16 apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 20.677 m². (Tunahan'daki Soyak Blokları ayrı bir yerleşimdir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17462",
+      "parsel": "1",
+      "etap": "2"
+    },
+    {
+      "no": "17463",
+      "parsel": "1",
+      "etap": "2"
+    },
+    {
+      "no": "17477",
+      "parsel": "1",
+      "etap": "2"
+    }
+  ],
+  "ozellikler": [
+    "3 ayrı ada — toplam 16 apartman (TKGM)",
+    "Toplam ~20.677 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Soyak Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

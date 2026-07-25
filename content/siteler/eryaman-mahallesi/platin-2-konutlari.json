@@ -1,0 +1,24 @@
+{
+  "isim": "Platin 2 Konutları",
+  "slug": "platin-2-konutlari",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.9719577,
+    "lng": 32.6124283
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/platin-2-konutlari-boundary.geojson",
+  "aciklama": "Platin 2 Konutları, Eryaman Mahallesi'nde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 11.044 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı A Blok ve 17 Katlı B Blok Betonarme' olarak tanımlar. Platin Konutları ile birlikte bölgede bilinen bir site ailesinin ikinci halkasıdır; 11 dönümlük parselin düzeni açık alan payını korur, üst katlarda geniş görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45928",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~11.044 m² parsel (TKGM)",
+    "16-17 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

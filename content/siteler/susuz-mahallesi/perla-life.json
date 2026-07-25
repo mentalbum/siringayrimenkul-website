@@ -1,0 +1,24 @@
+{
+  "isim": "Perla Life",
+  "slug": "perla-life",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.004059,
+    "lng": 32.645657
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/perla-life-boundary.geojson",
+  "aciklama": "Perla Life, Susuz'un Göksu kentsel gelişim bölgesinde 13 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 5.957 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '13 Katlı Betonarme Apartman' olarak tanımlar. Bölgenin yeni yapı stoğunda kompakt ve modern daire arayan profile hitap eder; yaklaşık 6 dönümlük parsel, tek blok için ferah bir zemin bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63380",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~5.957 m² parsel (TKGM)",
+    "13 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

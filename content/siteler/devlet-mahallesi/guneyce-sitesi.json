@@ -1,0 +1,24 @@
+{
+  "isim": "Güneyce Sitesi",
+  "slug": "guneyce-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.9808483,
+    "lng": 32.6186331
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/guneyce-sitesi-boundary.geojson",
+  "aciklama": "Güneyce Sitesi, Devlet Mahallesi'nin yerleşik kooperatif dokusunda yer alır. TKGM kayıtlarına göre üzerinde bulunduğu yaklaşık 26.363 m²'lik büyük parseli Çayılkay, Güneyce, Türkkonut-İstaş ve Vatan sitelerinden oluşan dörtlü küme paylaşır — Devlet Mahallesi'nin adalar hâlinde ilerleyen kooperatif dokusunun karakteristik örneğidir; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Sakin iç sokak konumu ve oturmuş komşuluğuyla bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46516",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Dört sitenin paylaştığı ada",
+    "Ada parseli ~26.363 m² (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Türkonut Metro bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

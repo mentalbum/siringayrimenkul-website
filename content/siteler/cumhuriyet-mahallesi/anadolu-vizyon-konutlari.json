@@ -1,0 +1,24 @@
+{
+  "isim": "Anadolu Vizyon Konutları",
+  "slug": "anadolu-vizyon-konutlari",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.992041,
+    "lng": 32.66143
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari-boundary.geojson",
+  "aciklama": "Anadolu Vizyon Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli dört bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '12 Katlı A, 13 Katlı B, 14 Katlı C ve 2 Katlı D Bloklar' niteliğiyle kayıtlı 16.329 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç kademeli konut bloğu farklı manzara katmanları sunar, alçak D blok tamamlayıcı birimdir. 16 dönümlük parsel ferah bir düzen sağlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63265",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "~16.329 m² parsel (TKGM)",
+    "2-14 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cumhuriyet Mahallesi (Yeni Batı aksı)"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Trend Life Sitesi",
+  "slug": "trend-life-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.009235,
+    "lng": 32.613109
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/trend-life-sitesi-boundary.geojson",
+  "aciklama": "Trend Life Sitesi, Eryaman'ın Yenimahalle tarafında kalan Ata Mahallesi'nde yer alır. Tapu kaydı yapıyı \"15'er katlı A ve B bloklardan oluşan betonarme apartman\" olarak tanımlar; site, TKGM'ye göre yaklaşık 14.737 m²'lik kat mülkiyetli tek parselde toplanmıştır. Yani 15 dönüme yaklaşan arazide yalnızca iki blok yükselir; bu da blok başına 7 dönümü aşan geniş bir açık alan payı demektir. Kayıtlarımıza göre 15 katlı bloklar, hemen çevresindeki Vizyon Başpınar Sitesi ile Aker Mücevher Evleri'nin 13 katlı bloklarından iki kat daha yüksektir; üst kat daireler bu kesimin çatı çizgisinin üzerinde kalır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46413",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~14.737 m² parsel (TKGM)",
+    "15 katlı bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,28 @@
+{
+  "isim": "Sarı Çınar Sitesi",
+  "slug": "sari-cinar-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.978964,
+    "lng": 32.603397
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/sari-cinar-sitesi-boundary.geojson",
+  "aciklama": "Sarı Çınar Sitesi — yerel kayıtlarda bitişik yazımla \"Sarıçınar\" olarak da geçer — Eryaman Devlet Mahallesi'nin büyük ölçekli sitelerinden biridir. TKGM kayıtlarına göre 13.773 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"10 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda 10-A'dan 10-K'ye uzanan adlarla sıralanıyor — on bloklu, mahallenin en kalabalık sitelerinden. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18692",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "13.773 m² tek parsel (TKGM)",
+    "10 blok (10-A – 10-K)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yerel kayıtlarda \"Sarıçınar\" yazımıyla geçer",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Sarıçınar Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

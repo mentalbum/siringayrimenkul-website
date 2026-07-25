@@ -1,0 +1,24 @@
+{
+  "isim": "Zirve Park Konutları",
+  "slug": "zirve-park-konutlari",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 39.998352,
+    "lng": 32.595995
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/zirve-park-konutlari-boundary.geojson",
+  "aciklama": "Zirve Park Konutları, Ata Mahallesi'nde yer alan dört yüksek bloklu bir konut sitesidir. TKGM kayıtlarına göre 18.968 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '15'er Katlı 4 Blok Apartman ve 2 Katlı Dükkan' olarak tanımlar — dört 15 katlı konut bloğunun yanında iki katlı ticari birim, günlük ihtiyacı site sınırında karşılar. Dört bloğun simetrik düzeni ve yüksek katların açık görüşüyle Ata'nın modern konut kuşağının karakteristik sitelerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44777",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~18.968 m² parsel (TKGM)",
+    "2-15 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

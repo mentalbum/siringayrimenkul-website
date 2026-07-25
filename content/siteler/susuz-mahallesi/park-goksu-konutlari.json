@@ -1,0 +1,24 @@
+{
+  "isim": "Park Göksu Konutları",
+  "slug": "park-goksu-konutlari",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.0133412,
+    "lng": 32.6423684
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/park-goksu-konutlari-boundary.geojson",
+  "aciklama": "Park Göksu Konutları, Susuz'un Göksu kentsel gelişim bölgesinde üç yüksek bloklu, çok geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '15 Katlı A Blok ile 16 Katlı B ve C Blok Betonarme Mesken' niteliğiyle kayıtlı 23.419 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 23 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "64527",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~23.419 m² parsel (TKGM)",
+    "3-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

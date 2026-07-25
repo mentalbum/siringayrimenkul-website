@@ -1,0 +1,27 @@
+{
+  "isim": "Umar Sitesi",
+  "slug": "umar-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.99944,
+    "lng": 32.634083
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/umar-sitesi-boundary.geojson",
+  "aciklama": "Umar Sitesi — aramalarda 'Umar Siteleri' olarak da geçer — Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 15.071 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — üç bloğun bu genişlikte bir parsele yerleşmesi, apartman başına düşen bahçe ve açık alan payını mahalle ortalamasının üzerine taşır. Çevresi Şeyh Şamil'in tanıdık kooperatif siteleriyle sarılıdır; mahallenin okul ve çarşı aksına yakın, sakin bir konumdadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46272",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~15.071 m² parsel (TKGM)",
+    "3 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Umar Siteleri"
+  ]
+}

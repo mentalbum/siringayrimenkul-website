@@ -1,0 +1,23 @@
+{
+  "isim": "Ekin Sitesi",
+  "slug": "ekin-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.988895,
+    "lng": 32.612346
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/ekin-sitesi-boundary.geojson",
+  "aciklama": "Ekin Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '4 blok kargir apartman' niteliğiyle kayıtlı yaklaşık 4.597 m²'lik kat mülkiyetli tek parsel üzerine kuruludur; bloklar yerel emlak kayıtlarında 15-1A, 15-2B, 15-3C ve 15-5 numaralarıyla anılır. Güzelkent'in az katlı, sakin dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18501",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4 blok (15-1A, 15-2B, 15-3C, 15-5) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 4,6 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Güzelkent'in yerleşik sitelerinden — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Age Blokları",
+  "slug": "age-bloklari",
+  "mahalleSlug": "altay-mahallesi",
+  "koordinat": {
+    "lat": 39.970305,
+    "lng": 32.638056
+  },
+  "sinirGeoJSON": "siteler/altay-mahallesi/age-bloklari-boundary.geojson",
+  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — bölgenin en geniş blok kümelerinden. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki Age Sitesi ayrı bir yerleşimdir.) Ana parselinde tapu, yaklaşık 6.252 m²'lik alanda sekiz kargir apartman kaydeder. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17546",
+      "parsel": "1",
+      "etap": "1"
+    }
+  ],
+  "ozellikler": [
+    "Yerel kayıtlarda 9 adalık küme — bölgenin en genişlerinden",
+    "Ana parselde 8 apartman — yaklaşık 6,3 dönüm (TKGM)",
+    "Tunahan'daki Age Sitesi'nden ayrı yerleşim",
+    "Altay Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

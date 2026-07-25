@@ -1,0 +1,24 @@
+{
+  "isim": "Yeni Huzur Bahçesi Sitesi",
+  "slug": "yeni-huzur-bahcesi-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.981132,
+    "lng": 32.607558
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi-boundary.geojson",
+  "aciklama": "Yeni Huzur Bahçesi Sitesi, Eryaman Devlet Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre 6.919 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda iki blok kârgir apartman kayıtlı; bloklar yerel kayıtlarda 8-A ve 8-B olarak geçiyor. Adının çağrıştırdığı gibi sakin, az bloklu bir yerleşim. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18677",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6.919 m² tek parsel (TKGM)",
+    "2 blok (8-A ve 8-B)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,28 @@
+{
+  "isim": "Özdenizyıldızı Sitesi",
+  "slug": "ozdenizyildizi-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.973529,
+    "lng": 32.602671
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/ozdenizyildizi-sitesi-boundary.geojson",
+  "aciklama": "Özdenizyıldızı Sitesi — yerel kayıtlarda \"Özdeniz Yıldızı\" yazımıyla geçer — Eryaman Devlet Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre 10.938 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda üç kârgir apartman kayıtlı. Üç bloğun geniş parsele yayıldığı, yeşil alanı bol bir yerleşim düzeni sunuyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18705",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "10.938 m² tek parsel (TKGM)",
+    "3 blok (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yerel kayıtlarda \"Özdeniz Yıldızı\" yazımıyla geçer",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Özdeniz Yıldızı Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

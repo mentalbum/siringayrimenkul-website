@@ -1,0 +1,25 @@
+{
+  "isim": "Meltem Sitesi",
+  "slug": "meltem-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.984155,
+    "lng": 32.602837
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/meltem-sitesi-boundary.geojson",
+  "aciklama": "Meltem Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.579 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında blok adlandırması çift kodlu: 4 numaralı ana blokla birlikte hem harf hem sayı taşıyan 4-A(1)'den 4-E(5)'e uzanan bloklar — toplamda altı blok. Meltem'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini izleyen emlakçınızla ilerlemek süreci hızlandırır; doğru fiyatı birlikte netleştirelim.",
+  "adalar": [
+    {
+      "no": "18654",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5.579 m² tek parsel (TKGM)",
+    "6 blok (4, 4-A(1)–4-E(5) — çift kodlu adlandırma)",
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

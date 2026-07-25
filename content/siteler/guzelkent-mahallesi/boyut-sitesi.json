@@ -1,0 +1,24 @@
+{
+  "isim": "Boyut Sitesi",
+  "slug": "boyut-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.991467,
+    "lng": 32.611453
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/boyut-sitesi-boundary.geojson",
+  "aciklama": "Boyut Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 4.898 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 8, 8-1, 8-2, 8-3, 8-14 ve 8-15 olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Boyut'ta dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat ve doğru sunum için siteyi yakından tanıyan emlakçınızla ilerleyin — değeri birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "18487",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4.898 m² tek parsel (TKGM)",
+    "6 blok kârgir apartman (8, 8-1, 8-2, 8-3, 8-14, 8-15)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

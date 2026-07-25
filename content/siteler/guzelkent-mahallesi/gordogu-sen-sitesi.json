@@ -1,0 +1,29 @@
+{
+  "isim": "Gördoğu Şen Sitesi",
+  "alternatifAdlar": [
+    "Gürdoğuşen Sitesi"
+  ],
+  "slug": "gordogu-sen-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.985418,
+    "lng": 32.604081
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/gordogu-sen-sitesi-boundary.geojson",
+  "aciklama": "Gördoğu-Şen Sitesi — yerel kayıtlarda \"Gürdoğuşen Sitesi\" olarak anılır — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 4.964 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 8 ile 8-A'dan 8-E'ye uzanan adlarla geçiyor — toplam altı blok. Gördoğu-Şen'de dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, sitenin güncel talebini izleyen emlakçınızla ilerlemek süreci hızlandırır; değeri birlikte netleştirelim.",
+  "adalar": [
+    {
+      "no": "18646",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "4.964 m² tek parsel (TKGM)",
+    "6 blok (8, 8-A–8-E)",
+    "Yerel kayıtlarda \"Gürdoğuşen\" adıyla geçer",
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

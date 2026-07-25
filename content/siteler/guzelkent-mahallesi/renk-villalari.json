@@ -1,0 +1,25 @@
+{
+  "isim": "Renk Villaları",
+  "slug": "renk-villalari",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Renk Villaları, Güzelkent Mahallesi'nin villa kuşağında, apartman değil villalardan oluşan büyük bir sitedir: TKGM kayıtlarına göre site, tapuda 'Otuz Altı Blok Kargir Villa' niteliğiyle kayıtlı 12.624 m²'lik kat mülkiyetli parsel üzerine kuruludur. Otuz altı villanın yatay dokusu, mahallenin adıyla anılan villa kimliğinin büyük örneklerindendir; bahçeli ve müstakil yaşam arayan aileler için değerli bir stoktur. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.995078,
+    "lng": 32.602672
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/renk-villalari-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19516",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "36 blok kârgir villa (tapu)",
+    "687. Cadde üzeri, Güzelkent villa bölgesi",
+    "~12.624 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

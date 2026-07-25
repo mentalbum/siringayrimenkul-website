@@ -1,0 +1,28 @@
+{
+  "isim": "Elif Elvan Sitesi",
+  "slug": "elif-elvan-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.969626,
+    "lng": 32.6247898
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/elif-elvan-sitesi-boundary.geojson",
+  "aciklama": "Elif Elvan Sitesi — yerel emlak kayıtlarında 'Seyitoğulları Sitesi' adıyla da geçer; ikisi aynı sitedir. Eryaman'ın Doğakent bölgesinde, 4'ten 10'a çift kapı numaralı dört bloktan oluşur. TKGM kayıtlarına göre yaklaşık 9.403 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"1, 2, 3, 4 Bloktan Oluşan Kargir Apartman\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46383",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Seyitoğulları Sitesi"
+  ],
+  "ozellikler": [
+    "4 blok (kapı no 4, 6, 8, 10)",
+    "~9.403 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "'Seyitoğulları Sitesi' adıyla da bilinir",
+    "Doğakent bölgesi — Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

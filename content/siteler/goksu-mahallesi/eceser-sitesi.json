@@ -1,0 +1,23 @@
+{
+  "isim": "Eceser Sitesi",
+  "slug": "eceser-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.995585,
+    "lng": 32.639857
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/eceser-sitesi-boundary.geojson",
+  "aciklama": "Eceser Sitesi, Göksu Mahallesi'nde, numaralı bloklu büyük bir kooperatif parselinin parçasıdır. TKGM kayıtlarına göre yaklaşık 18.815 m²'lik parseli Utku Kent 2 ve komşu kooperatif siteleriyle paylaşır; tapu, parseldeki yapıları 11-13 kat arasında kademeli numaralı bloklar olarak sayar ve tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Paylaşımlı geniş parsel, ferah bir ortak çevre demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Göksu göl kuşağı — paylaşımlı büyük parsel",
+    "11-13 katlı bloklar (parsel geneli, tapu)",
+    "Kat irtifaklı parsel (TKGM)"
+  ],
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

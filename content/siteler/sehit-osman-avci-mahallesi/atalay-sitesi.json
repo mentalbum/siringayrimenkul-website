@@ -1,0 +1,24 @@
+{
+  "isim": "Atalay Sitesi",
+  "slug": "atalay-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.974523,
+    "lng": 32.655925
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/atalay-sitesi-boundary.geojson",
+  "aciklama": "Atalay Sitesi, Şehit Osman Avcı Mahallesi'nde kademeli ikiz bloklu kompakt bir sitedir. TKGM kayıtlarına göre yaklaşık 4.435 m²'lik parselde tapu kaydı yapıyı '8 Katlı A Blok ve 9 Katlı B Blok Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki bloklu yalın ölçek, az komşulu ve yönetimi kolay bir site yaşamı sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46648",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "~4.435 m² parsel (TKGM)",
+    "8-9 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

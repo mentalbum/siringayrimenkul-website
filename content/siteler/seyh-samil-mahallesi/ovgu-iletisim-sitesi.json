@@ -1,0 +1,25 @@
+{
+  "isim": "Övgü İletişim Sitesi",
+  "slug": "ovgu-iletisim-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 40.001533,
+    "lng": 32.624776
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/ovgu-iletisim-sitesi-boundary.geojson",
+  "aciklama": "Övgü İletişim Sitesi, Şeyh Şamil Mahallesi'nin sıra sıra konut siteleriyle örülü dokusunda, Düşkent Sitesi ile aynı yapı adasını paylaşan iki bloklu bir konut sitesidir. TKGM kaydında yaklaşık 4.109 m²'lik kat mülkiyetli parselin tapu niteliği '2 Blok Kargir Apartman' olarak geçer; konutların yalnızca iki blokta toplanması, gündelik hayatı ve site yönetimini sade tutan küçük ölçekli bir yerleşim demektir. Semtin yerleşik konut rehberinde bloklar 4.A ve 4.B adıyla paylaşılır; İncipark Evleri ile Sümeyra Sitesi de birkaç adım mesafededir. Tapu araştırmasında kadastro kaydının 'Eryaman' mahallesi üzerinden tutulduğunu bilmek işleri kolaylaştırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46223",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok kârgir apartman (tapu)",
+    "~4.109 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Düşkent Sitesi ile aynı adada",
+    "Şeyh Şamil — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

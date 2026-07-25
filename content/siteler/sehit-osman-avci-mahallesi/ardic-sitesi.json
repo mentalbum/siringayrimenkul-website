@@ -1,0 +1,25 @@
+{
+  "isim": "Ardıç Sitesi",
+  "slug": "ardic-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.969674,
+    "lng": 32.655858
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/ardic-sitesi-boundary.geojson",
+  "aciklama": "Ardıç Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan yerleşik bir sitedir; yerel kayıtlarda 'Ardınç' yazımıyla da geçer ve adasını İnci Park Evleri'nin bloklarıyla paylaşır. Tapu kaydı yapıyı net tarif eder: yaklaşık 6.053 m²'lik parsel üzerinde onar katlı A ve B bloklardan oluşan betonarme apartman — mahallenin orta-yüksek katlı, yeşili bol dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46662",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A, B), 10'ar katlı — tapu nitelik kaydı",
+    "Yaklaşık 6 dönümlük parsel (TKGM)",
+    "Yerel kayıtlarda 'Ardınç' yazımıyla da geçer",
+    "Komşu: İnci Park Evleri",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

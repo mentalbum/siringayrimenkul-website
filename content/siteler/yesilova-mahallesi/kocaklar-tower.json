@@ -1,0 +1,25 @@
+{
+  "isim": "Koçaklar Tower",
+  "slug": "kocaklar-tower",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.9677586,
+    "lng": 32.608948
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/kocaklar-tower-boundary.geojson",
+  "aciklama": "Koçaklar Tower, Yeşilova Mahallesi'nde 11 katlı bir iş ve rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 2.989 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Tek blok ölçeğiyle Yeşilova'nın gelişen aksında ofis ve yatırım birimi arayan profile hitap eder. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47540",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~2.989 m² parsel (TKGM)",
+    "11 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ticari nitelik: ofis/işyeri (tapu)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

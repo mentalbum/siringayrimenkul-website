@@ -1,0 +1,24 @@
+{
+  "isim": "Seçkin Atasaylar Sitesi",
+  "slug": "seckin-atasaylar-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.002827,
+    "lng": 32.599273
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/seckin-atasaylar-sitesi-boundary.geojson",
+  "aciklama": "Seçkin Atasaylar Sitesi, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 9.880 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '10 Katlı A Blok ile 11 Katlı B ve C Blok Betonarme Mesken' olarak tanımlar — iki kat kademesindeki üç blok, aynı sitede farklı cephe ve fiyat katmanları oluşturur. Yaklaşık 10 dönümlük parselin düzeni, Ata'nın yerleşik dokusunda ferah bir yerleşim sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44750",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~9.880 m² parsel (TKGM)",
+    "10-11 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

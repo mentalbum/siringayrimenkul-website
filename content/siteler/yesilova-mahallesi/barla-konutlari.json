@@ -1,0 +1,24 @@
+{
+  "isim": "Barla Konutları",
+  "slug": "barla-konutlari",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.968935,
+    "lng": 32.6029233
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/barla-konutlari-boundary.geojson",
+  "aciklama": "Barla Konutları, Yeşilova Mahallesi'nde az katlı üç bloklu butik bir sitedir. TKGM kayıtlarına göre yaklaşık 2.844 m²'lik parselde tapu kaydı yapıyı '5 Katlı A, B, C Bloklardan Oluşan Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Beş katlı ölçek, asansörlü yüksek bloklardan farklı, sakin ve az komşulu bir apartman yaşamı arayanların profilidir; Yeşilova'nın genç dokusunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47568",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "~2.844 m² parsel (TKGM)",
+    "5 katlı yapı (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Yeşilova Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

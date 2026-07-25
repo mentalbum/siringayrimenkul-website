@@ -1,0 +1,24 @@
+{
+  "isim": "Küçük Ankara Villaları",
+  "slug": "kucuk-ankara-villalari",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Küçük Ankara Villaları, Güzelkent villa bölgesinde, 1'den 22'ye numaralı iki katlı bloklardan oluşan bir villa sitesidir. TKGM kayıtlarına göre yaklaşık 8.303 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22 Bloklardan Oluşan 2 Katlı Betonarme Mesken\". Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.994349,
+    "lng": 32.601927
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/kucuk-ankara-villalari-boundary.geojson",
+  "adalar": [
+    {
+      "no": "19516",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "22 blok, 2'şer katlı (tapu)",
+    "Güzelkent villa bölgesi",
+    "~8.303 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

@@ -1,0 +1,23 @@
+{
+  "isim": "Raylı Sistemciler Sitesi",
+  "slug": "rayli-sistemciler-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "aciklama": "Raylı Sistemciler Sitesi, Ata Mahallesi'nde yer alan kooperatif kökenli bir konut sitesidir; Ata Life Sitesi ile aynı yerleşim adasının komşu parselinde bulunur. TKGM'de site, yaklaşık 6.849 m²'lik kat mülkiyetli parseli üzerinde betonarme apartman niteliğiyle kayıtlıdır — yaklaşık 7 dönümlük alan, bahçeli bir yerleşim payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.999424,
+    "lng": 32.60072
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/rayli-sistemciler-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "44774",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Yaklaşık 7 dönümlük kat mülkiyetli parsel (TKGM)",
+    "Komşu: Ata Life Sitesi (aynı ada)",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

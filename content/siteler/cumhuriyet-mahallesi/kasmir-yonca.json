@@ -1,0 +1,27 @@
+{
+  "isim": "Kaşmir Yonca",
+  "slug": "kasmir-yonca",
+  "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.994648,
+    "lng": 32.656702
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/kasmir-yonca-boundary.geojson",
+  "aciklama": "Kaşmir Yonca, Cumhuriyet Mahallesi'nde (Yeni Batı) Fatih Sultan Mehmet Bulvarı üzerinde Kaşmir Yapı A.Ş. tarafından yapılmış, göl (Göksu Parkı) manzarasıyla öne çıkan yüksek katlı bir konut projesidir. Proje çok bloklu bir yerleşim olup üst bloklarda 2+1 ve 3+1, alt bloklarda 1+1 daireler ile geniş 4+1 ve 5+1 seçenekleri bir arada bulunuyor — kompakt yatırımlıktan geniş aile evine uzanan bir yelpaze. Yüksek katlarda göl ve park manzaralı, cam balkonlu, ebeveyn banyolu ferah daireleriyle bilinen proje, İstanbul Yolu ve metro aksına yakın konumdadır. Tapu kaydı projenin ölçeğini gösterir: yaklaşık 35.548 m² — 35 dönümü aşan — parselde on sekizer katlı A'dan G'ye yedi blok; G blokta konutun yanında işyeri de kayıtlıdır. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı yüksek katlı dairelerde fiyatı kat, cephe ve manzara ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "63271",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "Tapu: 7 blok (A-G), 18'er katlı — G blokta işyeri de var",
+    "Yaklaşık 35,5 dönümlük parsel (TKGM)",
+    "Kaşmir Yapı A.Ş. — çok bloklu, yüksek katlı",
+    "1+1'den 5+1'e geniş daire yelpazesi",
+    "Göl (Göksu Parkı) ve park manzaralı üst katlar",
+    "Cam balkon, ebeveyn banyosu (geniş tipler)"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı, Yeni Batı, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-07-14"
+}

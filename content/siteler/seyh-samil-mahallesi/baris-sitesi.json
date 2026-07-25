@@ -1,0 +1,24 @@
+{
+  "isim": "Barış Sitesi",
+  "slug": "baris-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 40.0014309,
+    "lng": 32.6309688
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/baris-sitesi-boundary.geojson",
+  "aciklama": "Barış Sitesi, Şeyh Şamil Mahallesi'nde yer alan bir kooperatif sitesidir; adasını Borankent ve Özanadolu siteleriyle paylaşır. Tapu kaydına göre site, yaklaşık 9.135 m²'lik parseli üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır — iki blok için 9 dönümlük alan, bahçesi bol bir yerleşim payı bırakır. Adanın diğer parsellerindeki on bir katlı yüksek bloklarla birlikte bu kesim, Şeyh Şamil'in karma dokulu kooperatif adalarındandır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46268",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok — tapu nitelik kaydı (TKGM)",
+    "Yaklaşık 9 dönümlük parsel",
+    "Komşular: Borankent, Özanadolu",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

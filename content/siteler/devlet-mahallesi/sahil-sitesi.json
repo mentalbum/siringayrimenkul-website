@@ -1,0 +1,24 @@
+{
+  "isim": "Sahil Sitesi",
+  "slug": "sahil-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.977533,
+    "lng": 32.615696
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/sahil-sitesi-boundary.geojson",
+  "aciklama": "Sahil Sitesi, Devlet Mahallesi'nin büyük paylaşımlı adasında tek blokla temsil edilir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 39.842 m² — yani 40 dönüme yakın — kat mülkiyetli tek parseldir; adada Betim, İlkbahar, Özarda Göktürk, Selçuklu ve Oray ile birlikte altı site bir arada yaşar. Bu ölçek, bloklar arasına geniş yeşil ve donatı payı bırakan ferah bir doku demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46520",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "Tek bloklu site",
+    "Altı sitenin paylaştığı büyük ada — yaklaşık 40 dönüm (TKGM)",
+    "Komşular: Betim, İlkbahar, Özarda Göktürk, Selçuklu, Oray",
+    "Devlet Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

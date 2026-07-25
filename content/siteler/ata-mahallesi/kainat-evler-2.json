@@ -1,0 +1,24 @@
+{
+  "isim": "Kainat Evler 2",
+  "slug": "kainat-evler-2",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.003313,
+    "lng": 32.600032
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/kainat-evler-2-boundary.geojson",
+  "aciklama": "Kainat Evler 2, Ata Mahallesi'nde ikiz yüksek bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 7.196 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '15 Katlı A Blok ve 16 Katlı B Blok Betonarme Apartman' olarak tanımlar. Kainat Evleri ile birlikte bölgede bilinen bir site ailesinin ikinci halkasıdır; üst katlar Ata ve Eryaman yönüne geniş görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44750",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~7.196 m² parsel (TKGM)",
+    "15-16 kat aralığında bloklar (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

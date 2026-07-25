@@ -1,0 +1,24 @@
+{
+  "isim": "Elit Yaşam Konutları 2",
+  "slug": "elit-yasam-konutlari-2",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9712433,
+    "lng": 32.654672
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-2-boundary.geojson",
+  "aciklama": "Elit Yaşam Konutları 2, Şehit Osman Avcı Mahallesi'nde Ser Grup imzalı bir konut sitesidir; blokları yerel kayıtlarda 3A ve 3B olarak geçer ve adasını Cumhuriyet Apartmanı ile paylaşır. Tapu kaydı yapıyı net tarif eder: yaklaşık 4.610 m²'lik parsel üzerinde dokuz katlı A blok ile sekiz katlı B bloktan oluşan betonarme apartman — mahallenin yeni nesil, orta-yüksek katlı dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46664",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (3A, 3B): 9 katlı A + 8 katlı B — tapu nitelik kaydı",
+    "Yaklaşık 4,6 dönümlük parsel (TKGM)",
+    "Komşu: Cumhuriyet Apartmanı",
+    "Şehit Osman Avcı Mahallesi — Ser Grup"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Köşk Birlik Sitesi",
+  "slug": "kosk-birlik-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 40.002511,
+    "lng": 32.631399
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/kosk-birlik-sitesi-boundary.geojson",
+  "aciklama": "Köşk Birlik Sitesi, Şeyh Şamil Mahallesi'nde üç bloklu, geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Beton Apartman' niteliğiyle kayıtlı 12.307 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 12 dönümü aşan parsel, blok aralarını ve yeşil payını geniş tutar. Şeyh Şamil'in yerleşik kooperatif kuşağının sakin adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46266",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~12.307 m² parsel (TKGM)",
+    "3 blok (tapu)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

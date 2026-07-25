@@ -1,0 +1,27 @@
+{
+  "isim": "Atakent 1 Aşiyan Sitesi",
+  "slug": "atakent-1-asiyan-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.976462,
+    "lng": 32.628338
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/atakent-1-asiyan-sitesi-boundary.geojson",
+  "aciklama": "Atakent 1 Aşiyan Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 43.538 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"11 Blok Kargir Apartman\". Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46534",
+      "parsel": "2",
+      "etap": ""
+    }
+  ],
+  "ozellikler": [
+    "~43.538 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17",
+  "alternatifAdlar": [
+    "Oyak Atakent 1 Aşiyan Sitesi"
+  ]
+}

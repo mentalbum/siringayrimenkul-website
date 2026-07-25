@@ -1,0 +1,29 @@
+{
+  "isim": "Utkan Sitesi",
+  "slug": "utkan-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.99375,
+    "lng": 32.639265
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/utkan-sitesi-boundary.geojson",
+  "aciklama": "Utkan Sitesi, Göksu Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Utkan'ın blokları iki komşu adaya dağılır: yerel kayıtlarda 1-13, 1-14, 6, 6A ve 9 numaralı bloklar — beş blok. Ada komşuları arasında Ağaçlı Göl (Yakamoz), Mutlu, Yenigüç, Akşafak ve Gölkent 2 siteleri bulunur. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 41.977 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46456",
+      "parsel": "1"
+    },
+    {
+      "no": "46457",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5 blok — iki komşu adada (1-13, 1-14, 6, 6A, 9)",
+    "Ada parseli ~41.977 m², kat mülkiyetli (TKGM)",
+    "Türkonut Göl Bölgesi — paylaşımlı yerleşim adaları",
+    "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
+    "Göksu — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

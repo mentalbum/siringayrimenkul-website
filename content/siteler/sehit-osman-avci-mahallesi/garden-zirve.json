@@ -1,0 +1,25 @@
+{
+  "isim": "Garden Zirve",
+  "slug": "garden-zirve",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9709372,
+    "lng": 32.6580854
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/garden-zirve-boundary.geojson",
+  "aciklama": "Garden Zirve, Şehit Osman Avcı Mahallesi'nde yaklaşık 3.775 m²'lik parselde yükselen 10 katlı betonarme bir yapıdır. Dürüst bir not: tapu kaydı burayı \"ofis işyeri\" niteliğiyle tanımlar — daireler konut gibi kullanılsa da tapudaki karşılık mesken değildir; rezidans tipi projelerin bilinen bu özelliğini satış ve kiralamada doğru anlatmak gerekir. Yerel emlak kayıtlarına göre yapı, çevresi yarım kilometreyi bulan yaklaşık 25,6 dönümlük geniş bir yapı adasında yer alır; aynı adayı İnci Life Residence ve ağırlıklı 1+1 planlı Koz Modern ile paylaşır. Üç projeyi buluşturan bu ada, mahallenin rezidans stokunun yoğun noktalarından biridir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46658",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~3.775 m² parsel (TKGM)",
+    "10 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

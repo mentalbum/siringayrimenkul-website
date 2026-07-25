@@ -1,0 +1,24 @@
+{
+  "isim": "Ada Loft Eryaman",
+  "slug": "ada-loft-eryaman",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.002669,
+    "lng": 32.60652
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/ada-loft-eryaman-boundary.geojson",
+  "aciklama": "Ada Loft Eryaman, Ata Mahallesi'nde (Yenimahalle) Eryaman'ın hemen yanı başındaki yeni yapılaşma dokusunda, Ada 1 Mimarlık tarafından geliştirilip 2024'te teslim edilen çağdaş bir loft projesi. Üç bloktan oluşan projede toplam 92 daire yer alıyor; loft konseptine uygun yüksek tavanlı, geniş planlı daireler (4+1 dahil) öne çıkıyor. Yeni yapı stoğunda mimari-odaklı, az daireli bir proje olması, siteyi standart konuttan farklı bir alıcı profiline konumlandırıyor. Bu sitede satılık veya kiralık daireniz mi var? Az emsalli ve nitelikli projelerde fiyatı belirleyen şey doğru kıyastır — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44756",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "3 blokta 92 daire (Ada 1 Mimarlık)",
+    "Loft konsepti — yüksek tavan, geniş plan",
+    "Teslim: 2024",
+    "Eryaman'a bitişik yeni yapılaşma dokusu"
+  ],
+  "zenginlestirildi": "2026-07-10"
+}

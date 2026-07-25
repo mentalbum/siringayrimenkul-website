@@ -1,0 +1,23 @@
+{
+  "isim": "İlk Umut Sitesi",
+  "slug": "ilk-umut-sitesi",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 40.002472,
+    "lng": 32.627337
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/ilk-umut-sitesi-boundary.geojson",
+  "aciklama": "İlk Umut Sitesi, Şeyh Şamil Mahallesi'nde iki bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '2 Blok Betonarme Apartman' niteliğiyle kayıtlı 7.601 m²'lik kat mülkiyetli parsel üzerine kuruludur — iki bloğa karşılık yaklaşık 8 dönümlük parsel, geniş bir açık alan payı bırakır. Bitişiğinde, aynı adayı paylaştığı Lider Yaşam Evleri yer alır; ikili, mahallenin bu kesiminin tanıdık komşuluğunu oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46263",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~7.601 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şeyh Şamil Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

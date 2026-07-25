@@ -1,0 +1,26 @@
+{
+  "isim": "Vera City",
+  "slug": "vera-city",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.9714418,
+    "lng": 32.6603711
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/vera-city-boundary.geojson",
+  "aciklama": "Vera City, Eryaman Şehit Osman Avcı Mahallesi'nde, İstanbul Yolu (Fatih Sultan Mehmet Bulvarı) aksında Çelikoğlu İnşaat tarafından hayata geçirilmiş; konut ve ticareti bir arada sunan bir projedir. Geliştiricinin verilerine göre projede 110 adet 2+1 daire, 14 adet cadde dükkânı ve 1.700 m²'lik showroom alanı yer alıyor; daireler oturuma hazır ve hemen tapu devri yapılabiliyor. Cadde cepheli dükkânlar ve site içi peyzajlı yaşam alanları projenin öne çıkan özellikleri arasında. Bulvar aksındaki konum, alt kattaki ticari birimlerle birleşince günlük yaşamı pratikleştirir; ana ulaşım hattına cepheli siteler kiralama tarafında istikrarlı talep görür. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve konum (peyzaj mı, cadde mi) belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46653",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "Çelikoğlu İnşaat — konut + ticari",
+    "110 adet 2+1 daire",
+    "14 cadde dükkânı + 1.700 m² showroom",
+    "Oturuma hazır, hemen tapu",
+    "İstanbul Yolu / Fatih Sultan Mehmet Bulvarı"
+  ],
+  "adres": "Fatih Sultan Mehmet Bulvarı (İstanbul Yolu), Şehit Osman Avcı, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-14"
+}

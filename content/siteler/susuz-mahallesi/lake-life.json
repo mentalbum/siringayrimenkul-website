@@ -1,0 +1,24 @@
+{
+  "isim": "Lake Life",
+  "slug": "lake-life",
+  "mahalleSlug": "susuz-mahallesi",
+  "koordinat": {
+    "lat": 40.004573,
+    "lng": 32.646511
+  },
+  "sinirGeoJSON": "siteler/susuz-mahallesi/lake-life-boundary.geojson",
+  "aciklama": "Lake Life, Susuz'un Göksu kentsel gelişim bölgesinde 15 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 5.336 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '15 Katlı Betonarme Apartman' olarak tanımlar. Adının çağrıştırdığı göl teması bölgeyle uyumludur — Susuz Gölü çevresindeki gelişim aksının yeni yapı stoğundadır; üst katlar göl yönüne açık görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63379",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~5.336 m² parsel (TKGM)",
+    "15 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Göksu kentsel gelişim bölgesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

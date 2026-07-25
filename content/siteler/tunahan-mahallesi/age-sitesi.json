@@ -1,0 +1,29 @@
+{
+  "isim": "Age Sitesi",
+  "slug": "age-sitesi",
+  "mahalleSlug": "tunahan-mahallesi",
+  "koordinat": {
+    "lat": 39.98452,
+    "lng": 32.632869
+  },
+  "sinirGeoJSON": "siteler/tunahan-mahallesi/age-sitesi-boundary.geojson",
+  "aciklama": "Age Sitesi, ofisimizin de bulunduğu Tunahan Mahallesi'nde, Eryaman'ın kooperatif kuşağının büyük sitelerinden biridir. TKGM kayıtlarına göre 38.618 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"19 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda A, B, C, D ve E serisi kodlarla (A1, B2, C1A, D3B gibi) kapı numaralarıyla birlikte anılıyor. Geniş parseli, yeşil alanları ve oturmuş çevresiyle bölgenin yerleşik yaşamını temsil eder. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin. (Not: Eryaman bölgede, Altay Mahallesi'ndeki Age Blokları ayrı bir yerleşimdir; onu Altay sayfamızda ayrıca anlatıyoruz.)",
+  "adalar": [
+    {
+      "no": "46494",
+      "parsel": "2",
+      "etap": "5"
+    }
+  ],
+  "ozellikler": [
+    "38.618 m² tek parsel (TKGM)",
+    "19 blok kârgir apartman (tapu kaydı)",
+    "A–E serisi blok kodları",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tunahan — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-15",
+  "alternatifAdlar": [
+    "Age Blokları"
+  ]
+}

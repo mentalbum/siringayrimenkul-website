@@ -1,0 +1,25 @@
+{
+  "isim": "İnci Park Evleri Sitesi",
+  "slug": "inci-park-evleri-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.986319,
+    "lng": 32.654283
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi-boundary.geojson",
+  "aciklama": "İnci Park Evleri Sitesi, Şehit Osman Avcı Mahallesi'nde altı bloklu, çok geniş parselli bir yerleşimdir. TKGM kayıtlarına göre 24.462 m²'lik kat mülkiyetli parselde tapu niteliği \"A'dan F'ye 13'er Katlı Ofis-İşyeri\" olarak geçer — yani birimler tapuda rezidans tipindedir; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Altı eş bloğun 24 dönüme yayılan düzeni, geniş açık alan payı bırakır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46623",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "~24.462 m² parsel (TKGM)",
+    "13 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

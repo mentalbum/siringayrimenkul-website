@@ -1,0 +1,43 @@
+{
+  "isim": "Eston Sitesi",
+  "slug": "eston-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.972631,
+    "lng": 32.651361
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/eston-sitesi-boundary.geojson",
+  "aciklama": "Eston Sitesi, Şehit Osman Avcı Mahallesi'nde dört apartmanlık, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '4 Adet Betonarme Apartman' niteliğiyle kayıtlı 28.615 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — dört bloğa karşılık yaklaşık 29 dönümlük parsel, mahallenin en ferah yerleşim düzenlerinden birini oluşturur; geniş yeşil alan payıyla bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17487",
+      "parsel": "1",
+      "etap": "2"
+    },
+    {
+      "no": "17488",
+      "parsel": "1",
+      "etap": "2"
+    },
+    {
+      "no": "17489",
+      "parsel": "1",
+      "etap": "2"
+    },
+    {
+      "no": "17490",
+      "parsel": "1",
+      "etap": "2"
+    }
+  ],
+  "ozellikler": [
+    "4 ayrı ada — toplam 18 apartman (TKGM)",
+    "Toplam ~28.615 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Eston Blokları"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

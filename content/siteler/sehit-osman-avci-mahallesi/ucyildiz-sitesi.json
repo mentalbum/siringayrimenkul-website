@@ -1,0 +1,24 @@
+{
+  "isim": "Üçyıldız Sitesi",
+  "slug": "ucyildiz-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.970656,
+    "lng": 32.652012
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/ucyildiz-sitesi-boundary.geojson",
+  "aciklama": "Üçyıldız Sitesi, Şehit Osman Avcı Mahallesi'nde az katlı üç bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.958 m²'lik parselde tapu kaydı yapıyı '7 Katlı A, B, C Bloklardan Oluşan Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Aynı yerleşim adasını Çınar ve Nefeskent siteleriyle paylaşır; yedi katlı sakin ölçeğiyle yerleşik bir komşuluk çevresi sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46667",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~5.958 m² parsel (TKGM)",
+    "7 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-17"
+}

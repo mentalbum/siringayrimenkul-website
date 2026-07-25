@@ -1,0 +1,24 @@
+{
+  "isim": "Örnek Arı Sitesi",
+  "slug": "ornek-ari-sitesi",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.979292,
+    "lng": 32.616662
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/ornek-ari-sitesi-boundary.geojson",
+  "aciklama": "Örnek Arı Sitesi, Devlet Mahallesi'nde Cevizlidere Sitesi ile aynı büyük yerleşim adasını paylaşır ve apartmanları kadın adları taşır: Hülya, Olgun ve Gönen apartmanları — üç blok. TKGM kayıtlarına göre ada 24.693 m²'lik kat mülkiyetli tek parseldir. Devlet Mahallesi'nin adalar hâlinde ilerleyen kooperatif dokusunda bu paylaşımlı düzen yaygındır; site, mahallenin sakin iç sokaklarında yerleşik bir komşuluk çevresine sahiptir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46521",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "3 apartman: Hülya, Olgun, Gönen",
+    "Ada parseli ~24.693 m² (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Cevizlidere ile paylaşımlı ada"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

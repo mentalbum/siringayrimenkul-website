@@ -1,0 +1,27 @@
+{
+  "isim": "Gülşah - 95 Sitesi",
+  "alternatifAdlar": [
+    "Gülşah Sitesi"
+  ],
+  "slug": "gulsah-95-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "aciklama": "Gülşah 95 Sitesi — yerel kayıtlarda kısaca 'Gülşah Sitesi' olarak da geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 4.786 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve tapuda '6 blok kargir apartman' niteliğiyle geçer; bloklar yerel emlak kayıtlarında 12 ve 12A-12E numaralarıyla anılır. Güzelkent'in az katlı, sakin dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "6 blok (12, 12A–12E) — tapu nitelik kaydıyla uyumlu",
+    "Yaklaşık 4,8 dönümlük kat mülkiyetli tek parsel (TKGM)",
+    "Yerel kayıtlarda 'Gülşah Sitesi' adıyla da geçer",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14",
+  "koordinat": {
+    "lat": 39.98859,
+    "lng": 32.605873
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/gulsah-95-sitesi-boundary.geojson",
+  "adalar": [
+    {
+      "no": "18518",
+      "parsel": "1"
+    }
+  ]
+}

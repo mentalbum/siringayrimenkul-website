@@ -1,0 +1,28 @@
+{
+  "isim": "Eryaman Royal City",
+  "slug": "eryaman-royal-city",
+  "mahalleSlug": "devlet-mahallesi",
+  "koordinat": {
+    "lat": 39.976136,
+    "lng": 32.603326
+  },
+  "sinirGeoJSON": "siteler/devlet-mahallesi/eryaman-royal-city-boundary.geojson",
+  "aciklama": "Eryaman Royal City — yerel emlak kayıtlarında kısaca \"Royal Sitesi\" olarak geçer — Eryaman Devlet Mahallesi'nin en dikkat çekici yüksek yapılarından biridir. TKGM kayıtlarına göre 14.387 m²'lik kat mülkiyetli tek parsel üzerine kurulu; tapu niteliği yapıyı ayrıntısıyla anlatıyor: 16 katlı A ve B blokları ile 14 katlı C bloğu konut, 2 katlı D bloğu ise dükkân olarak kayıtlı. Yani site, mahallenin apartman dokusundan ayrışan yüksek katlı bloklara ve kendi ticari birimine sahip. Devlet Mahallesi'nin ağırlıkla orta yükseklikte sitelerden oluşan dokusunda bu yükseklik, üst katlara bölgeye hâkim bir görüş kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18693",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "14.387 m² tek parsel (TKGM)",
+    "16 katlı A-B + 14 katlı C blok (tapu kaydı)",
+    "2 katlı D blok dükkân — kendi ticari birimi",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Devlet Mahallesi — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Royal Sitesi"
+  ],
+  "zenginlestirildi": "2026-07-15"
+}

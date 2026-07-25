@@ -1,0 +1,25 @@
+{
+  "isim": "Gökkuşağı Sitesi",
+  "slug": "gokkusagi-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.984515,
+    "lng": 32.608167
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/gokkusagi-sitesi-boundary.geojson",
+  "aciklama": "Gökkuşağı Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.255 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar ikili gruplar hâlinde adlandırılmış: 1 ve 1A, 5 ve 5A, 6 ve 6-A — toplamda altı blok. Bu sitede satılık veya kiralık daireniz mi var? Altı bloklu bir sitede emsal ilan bulunur ama doğru fiyat blok, kat, cephe ve iç duruma göre ayrışır; değeri siteyi tanıyan emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "18671",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "5.255 m² tek parsel (TKGM)",
+    "6 blok (1/1A, 5/5A, 6/6-A — ikili gruplar)",
+    "Güzelkent'in yerleşik sitelerinden",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "zenginlestirildi": "2026-07-14"
+}

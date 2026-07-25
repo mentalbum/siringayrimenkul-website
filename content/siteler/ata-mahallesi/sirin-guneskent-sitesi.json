@@ -1,0 +1,23 @@
+{
+  "isim": "Şirin Güneşkent Sitesi",
+  "slug": "sirin-guneskent-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 40.007221,
+    "lng": 32.6092
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/sirin-guneskent-sitesi-boundary.geojson",
+  "aciklama": "Şirin Güneşkent Sitesi, Ata Mahallesi'nde on dört apartmanlık büyük bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '14 Bloktan Oluşan Betonarme Apartman' niteliğiyle kayıtlı 15.110 m²'lik kat mülkiyetli tek parsel üzerine kuruludur; yerel emlak kayıtları blokları A'dan N'ye alfabetik sıralar — tapu ile yerel kayıt birebir örtüşür. On dört bloğun oturmuş komşuluk düzeni sayesinde kümede her dönem el değiştiren daire olur; emsal verisi bol ve taze kalır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45836",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~15.110 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,24 @@
+{
+  "isim": "Meydan Ada Sitesi",
+  "slug": "meydan-ada-sitesi",
+  "mahalleSlug": "seker-mahallesi",
+  "koordinat": {
+    "lat": 39.965256,
+    "lng": 32.654729
+  },
+  "sinirGeoJSON": "siteler/seker-mahallesi/meydan-ada-sitesi-boundary.geojson",
+  "aciklama": "Meydan Ada Sitesi, Şeker Mahallesi'nde peyzajlı iç bahçesiyle bilinen bir konut sitesidir; ilanlarda 2+1 ve 3+1 daireleri görülür. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; adasını Oasis Rezidans ile paylaşır. Tapu kaydı siteyi net tarif eder: yaklaşık 10.466 m²'lik parselde üç katlı A blok ile sekizer katlı B, C ve D bloklar — 10 dönümü aşan alan, iç bahçeli yerleşim planının kaynağıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46368",
+      "parsel": "11"
+    }
+  ],
+  "ozellikler": [
+    "4 blok: 3 katlı A + 8'er katlı B-C-D — tapu nitelik kaydı",
+    "Yaklaşık 10,5 dönümlük parsel (TKGM)",
+    "Peyzaj manzaralı iç bahçe — komşu: Oasis Rezidans",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

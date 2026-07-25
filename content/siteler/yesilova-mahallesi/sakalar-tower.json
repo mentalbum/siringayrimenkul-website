@@ -1,0 +1,25 @@
+{
+  "isim": "Sakalar Tower",
+  "slug": "sakalar-tower",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.9602676,
+    "lng": 32.6105421
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/sakalar-tower-boundary.geojson",
+  "aciklama": "Sakalar Tower, Yeşilova'da İstasyon Caddesi üzerinde yükselen yüksek katlı bir konut yapısıdır. Tapu kaydı yapıyı net tarif eder: yaklaşık 9.926 m²'lik parsel üzerinde on yedişer katlı A ve B bloklar ile iki katlı C bloktan oluşan betonarme yapı — ilanlarında 1+1 ve 2+1 daireleri görülür, istasyon aksının yatırımlık noktalarındandır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47549",
+      "parsel": "5"
+    }
+  ],
+  "ozellikler": [
+    "17'şer katlı A-B bloklar + 2 katlı C blok — tapu nitelik kaydı",
+    "Yaklaşık 10 dönümlük parsel (TKGM)",
+    "1+1 ve 2+1 daireler",
+    "İstasyon Caddesi üzeri — Yeşilova / Eryaman gelişim aksı"
+  ],
+  "adres": "İstasyon Caddesi, Yeşilova, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-07-16"
+}

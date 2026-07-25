@@ -1,0 +1,24 @@
+{
+  "isim": "Batı Sistemciler Sitesi",
+  "slug": "bati-sistemciler-sitesi",
+  "mahalleSlug": "ata-mahallesi",
+  "koordinat": {
+    "lat": 39.998767,
+    "lng": 32.60002
+  },
+  "sinirGeoJSON": "siteler/ata-mahallesi/bati-sistemciler-sitesi-boundary.geojson",
+  "aciklama": "Batı Sistemciler Sitesi, Ata Mahallesi'nde dört bloklu bir konut sitesidir. TKGM kayıtlarına göre üzerinde bulunduğu parselde tapu, yapıları 'A-B-C-D Bloklardan Oluşan 12'şer Katlı Betonarme Mesken' olarak tanımlar. Adını kurucu kooperatifinden taşıyan yerleşim, dört eş bloğun düzenli yerleşimiyle Ata'nın yerleşik dokusunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44773",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~14.821 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ata Mahallesi",
+    "Paylaşımlı parsel — komşu sitelerle"
+  ],
+  "zenginlestirildi": "2026-07-16"
+}

@@ -1,0 +1,25 @@
+{
+  "isim": "Oasis Rezidans",
+  "slug": "oasis-rezidans",
+  "mahalleSlug": "seker-mahallesi",
+  "koordinat": {
+    "lat": 39.964637,
+    "lng": 32.654592
+  },
+  "sinirGeoJSON": "siteler/seker-mahallesi/oasis-rezidans-boundary.geojson",
+  "aciklama": "Oasis Rezidans, Şeker Mahallesi'nde 1414. Cadde üzerinde yer alan bir rezidanstır; ilanlarda geniş 1+1 ve 2+1 daireleri görülür. Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; adasını Meydan Ada Sitesi ile paylaşır. Tapu kaydına göre yapı, yaklaşık 5.124 m²'lik parselde sekizer katlı A ve B bloklardan oluşur ve büro niteliğiyle kayıtlıdır — rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46368",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "2 blok (A, B), 8'er katlı — tapuda büro niteliği",
+    "1+1 ve 2+1 daireler — 1414. Cadde No:3/A",
+    "Komşu: Meydan Ada Sitesi (aynı ada)",
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+  ],
+  "adres": "1414. Cadde No:3/A, Şeker, Eryaman/Ankara",
+  "zenginlestirildi": "2026-07-16"
+}
