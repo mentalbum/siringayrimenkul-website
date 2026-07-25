@@ -109,6 +109,23 @@ export default function KirayaVermekPage() {
         </p>
       </header>
 
+      <section className="mt-10 max-w-3xl rounded-2xl border border-gold/40 bg-gold/10 p-6">
+        <h2 className="text-xl">Ev Sahibi Olarak Bize Komisyon Ödemezsiniz</h2>
+        <p className="mt-3 text-base leading-relaxed text-body">
+          En sık sorulan soru bu: <strong className="font-semibold text-navy">kiralamada hizmet
+          bedeli kural olarak kiracıdan alınır</strong> ve yönetmelik gereği bir aylık kira
+          bedelini (artı KDV) aşamaz. Yani kiracı bulma, eleme, sözleşme ve teslim sürecini bize
+          bırakmanın size doğrudan bir komisyon maliyeti olmaz. Kendi hesabınızı{" "}
+          <Link
+            href="/araclar/emlak-komisyonu-hesaplama"
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            komisyon hesaplayıcımızda
+          </Link>{" "}
+          görebilirsiniz.
+        </p>
+      </section>
+
       <section className="mt-12">
         <h2 className="text-2xl">Kiralama Süreci Adım Adım</h2>
         <div className="mt-6 grid gap-5 sm:grid-cols-2">
@@ -121,6 +138,27 @@ export default function KirayaVermekPage() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <Reveal>
+          <h2 className="text-2xl">Eryaman&apos;da Değilseniz: Uzaktan Kiraya Verme</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Tayin, iş ya da yurt dışı — Eryaman&apos;daki evinizi burada olmadan da kiraya
+            verebilirsiniz. Anahtar bizde durur, gösterimleri biz yaparız; kiracı adayını
+            çalışma ve ödeme düzeni üzerinden ön elemeden geçirir, size yalnızca uygun bulduğumuz
+            adayları iletiriz. Sözleşme ve teslim aşamasında evin durumunu fotoğraflı tutanakla
+            kayda alır, demirbaş listesini ve sayaç değerlerini yazılı hâle getiririz; süreç
+            boyunca muhatabınız tek kişi olur. Ayrıntılar için{" "}
+            <Link
+              href="/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              şehir dışından ev satışı ve kiralama rehberimize
+            </Link>{" "}
+            bakabilirsiniz.
+          </p>
+        </Reveal>
       </section>
 
       <section className="mt-12 max-w-3xl">
