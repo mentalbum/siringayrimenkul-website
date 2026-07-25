@@ -133,13 +133,10 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
     });
   }
 
-  const etap = site.adalar?.find((ada) => ada.etap)?.etap;
-  if (etap) {
-    items.push({
-      soru: `${site.isim} Eryaman'ın kaçıncı etabında?`,
-      cevap: `${site.isim}, Eryaman ${etap}. Etap bölgesinde yer alıyor. Etaplar Eryaman'da yapılaşma dönemini ve dokusunu anlatır; alıcılar da çoğu zaman "kaçıncı etap" diye sorar, bu yüzden ilan ve tanıtımda etabı belirtmek işe yarar.`,
-    });
-  }
+  // "Bu site kaçıncı etapta?" sorusu bilerek üretilmiyor: cevabı adalar[].etap
+  // alanından türetiliyordu, o alan ise iç gruplama verisi — sitenin hangi etapta
+  // sayıldığı doğrulanması gereken bir iddia. Doğrulanmamış bilgiyi soru-cevap
+  // biçiminde yazmak onu daha da kesin gösterir.
 
   return items;
 }
@@ -170,7 +167,8 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
   const tekSite = entries.length === 1;
   const siteAdi = ada.site.isim;
   const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
-  const etapNot = ada.etap ? ` ve Eryaman ${ada.etap}. Etap içinde yer alır` : "";
+  // Etap notu bilerek yok — site sayfasındaki gibi, adalar[].etap iç gruplama
+  // verisi; "N. Etap içinde yer alır" doğrulanmamış bir iddia olurdu.
   return [
     {
       soru: `${label} Ada'da satılık daire var mı?`,
@@ -187,8 +185,8 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
     {
       soru: `${label} Ada hangi sitede yer alıyor?`,
       cevap: tekSite
-        ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır${etapNot}.`
-        : `${label} Ada, ${mahalle.isim} sınırları içindedir${etapNot}; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
+        ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır.`
+        : `${label} Ada, ${mahalle.isim} sınırları içindedir; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
     },
     {
       soru: `Bu adadaki evimi satmak istiyorum — süreç nasıl işler?`,
