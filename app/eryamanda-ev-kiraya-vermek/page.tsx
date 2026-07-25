@@ -56,6 +56,11 @@ const faqItems: FaqItem[] = [
       "Yönetmelik gereği kiralamada hizmet bedeli bir aylık kira + KDV'yi aşamaz ve kural olarak kiracıdan alınır; yani ev sahibi için kiracı bulma hizmetinin doğrudan bir komisyon maliyeti yoktur. Ayrıntıyı komisyon hesaplayıcımızda görebilirsiniz.",
   },
   {
+    soru: "Kiraya mı versem, satsam mı — hâlâ karar veremedim.",
+    cevap:
+      "Bu soruda kararsız kalmak normaldir ve acele edilmesi gereken bir durum da değildir. Belirleyen dört şey var: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol, dairenizin bugünkü satış ve kira değerini yan yana görmektir.",
+  },
+  {
     soru: "Evim boş kaldıkça ne kaybederim?",
     cevap:
       "Boş geçen her ay bir aylık kira gelirinin tamamen kaybıdır; aidat ve DASK ödenmeye devam eder. Piyasanın üzerinde kira isteyip beklemek çoğu zaman en pahalı senaryodur — boş kalma hesaplayıcımızla kendi rakamlarınızı deneyin.",
@@ -138,6 +143,26 @@ export default function KirayaVermekPage() {
             </Reveal>
           ))}
         </div>
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <Reveal>
+          <h2 className="text-2xl">Bize Ulaştıktan Sonra Ne Oluyor?</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Aramakta tereddüt edilmesinin sebebi genelde belirsizliktir: &quot;bir arasam sonra ne
+            olacak?&quot; İlk görüşme bir pazarlama konuşması değil, birkaç dakikalık bir durum
+            tespitidir: dairenin sitesi, katı, oda sayısı ve ne zaman boşalacağı. Sonunda elinizde
+            gerçekçi bir kira aralığı olur — devam etmeye karar vermeseniz de o bilgi sizde kalır,
+            evinizi bize emanet etme zorunluluğunuz yoktur.
+          </p>
+          <p className="mt-4 rounded-2xl border border-border bg-surface-muted p-5 text-base leading-relaxed text-body">
+            <strong className="font-semibold text-navy">Sonrasında telefonunuz susar.</strong>{" "}
+            Evini kendi ilanıyla kiraya vermeye çalışanların en sık şikâyeti budur: numara ilana
+            düştüğü anda gün boyu arama gelir, çoğu da kiracı değil aracıdır. Süreci bize
+            bıraktığınızda ilanda bizim numaramız olur; siz yalnızca elenmiş adaylar netleştiğinde
+            aranırsınız.
+          </p>
+        </Reveal>
       </section>
 
       <section className="mt-12 max-w-3xl">

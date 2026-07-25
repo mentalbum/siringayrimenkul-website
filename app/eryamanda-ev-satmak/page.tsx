@@ -66,6 +66,11 @@ const faqItems: FaqItem[] = [
       "Evet — satış kira sözleşmesini sona erdirmez, yeni malik sözleşmenin tarafı olur. Kiracılı satışın gösterim düzeni ve alıcı profili farklı işler; ayrıntılar 'Kiracılı ev satılır mı?' rehberimizde. Bu süreci sık yönetiyoruz.",
   },
   {
+    soru: "Satmak mı doğru, kiraya vermek mi?",
+    cevap:
+      "Cevap evin değil, sizin durumunuzun içindedir: paraya belirli bir tarihte ihtiyacınız varsa ve evi elde tutmanın bir amacı yoksa satış öne çıkar; nakit ihtiyacınız yoksa, evi ileride kullanma ihtimaliniz varsa ya da değer artışı kazancı vergisi açısından beş yılı doldurmanıza az kaldıysa kiraya vermek mantıklı olabilir. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık — iki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok.",
+  },
+  {
     soru: "Neden bir emlakçıyla çalışayım? Kendim satamaz mıyım?",
     cevap:
       "Satabilirsiniz — yasal engel yok, bunu açıkça yazdığımız bir rehberimiz bile var. Emlakçının karşılığı somuttur: gerçekleşen satışlara dayalı fiyat, alıcı eleme, pazarlık tamponu ve güvenli tapu süreci. Yanlış fiyatın maliyeti çoğu zaman komisyonun birkaç katıdır.",
@@ -222,6 +227,34 @@ export default function EvSatmakPage() {
             </Link>{" "}
             — hepsi açık. Bilgi bizde saklı değil; farkımız, bu bilgiyi sizin eviniz için
             uygulamak.
+          </p>
+        </Reveal>
+      </section>
+
+      <section className="mt-12 max-w-3xl">
+        <Reveal>
+          <h2 className="text-2xl">İlk Görüşme Neye Benzer?</h2>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Aramakta tereddüt edilmesinin sebebi genelde belirsizliktir. İlk görüşme bir satış
+            konuşması değil, bir durum tespitidir: dairenin sitesi, katı, durumu ve tapu tipi
+            üzerinden konuşuruz; sonunda elinizde gerçekçi bir fiyat aralığı ve &quot;bu evi
+            satmak için önce şunu yapmalı&quot; diyebileceğimiz kısa bir yol haritası olur. Devam
+            etmeye karar vermeseniz de o bilgi sizde kalır — evinizi bize emanet etme
+            zorunluluğunuz yoktur, yetki sözleşmesi ayrı ve sonraki bir adımdır.{" "}
+            <strong className="font-semibold text-navy">
+              Süreci bize bıraktığınızda telefonunuz da susar:
+            </strong>{" "}
+            ilanda bizim numaramız yer alır, gün boyu gelen &quot;fiyat düşer mi&quot; aramalarını
+            ve portföy toplayan aracıları biz karşılarız; siz yalnızca ciddi alıcı çıktığında
+            aranırsınız. Yetkinin kapsamı ve süresi konusunda ne imzaladığınızı merak
+            ediyorsanız{" "}
+            <Link
+              href="/blog/emlakci-yetki-sozlesmesi-rehberi"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              yetki sözleşmesi rehberimiz
+            </Link>{" "}
+            her maddeyi açıkça anlatır.
           </p>
         </Reveal>
       </section>

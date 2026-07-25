@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { sendGAEvent } from "@next/third-parties/google";
 import { siteConfig } from "@/lib/site-config";
 import { CheckBadgeIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { OfisDurumu } from "@/components/ui/ofis-durumu";
 
 const talepTurleri = [
   "Evimi satmak istiyorum",
@@ -37,6 +38,17 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
   const [metrekare, setMetrekare] = useState("");
   const [odaSayisi, setOdaSayisi] = useState("");
   const [mesaj, setMesaj] = useState("");
+  // WhatsApp herkeste yok — mobilde SMS ikinci bir kapı olsun. Sunucuda
+  // bilinemez, mount sonrası açılır.
+  const [mobil, setMobil] = useState(false);
+
+  useEffect(() => {
+    const id = window.setTimeout(
+      () => setMobil(/Android|iPhone|iPad|iPod/i.test(window.navigator.userAgent)),
+      0
+    );
+    return () => window.clearTimeout(id);
+  }, []);
 
   // Site sayfalarındaki "Evinizi Değerlendirelim" linkleri ?mahalle=&site=
   // taşır — formu önceden doldur (statik sayfayı useSearchParams'a sokmadan;
@@ -63,15 +75,9 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
   );
   const seciliSite = mahalleSiteleri.find((site) => site.slug === siteSlug);
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
-    event.preventDefault();
+  function talepMetni() {
     const mahalleIsim = mahalleler.find((m) => m.slug === mahalleSlug)?.isim;
-    sendGAEvent("event", "contact_form_submit", {
-      mahalle: mahalleSlug || "(yok)",
-      site: seciliSite?.slug ?? "(yok)",
-    });
-
-    const satirlar = [
+    return [
       `Merhaba, ben ${isim}.`,
       "",
       `Talep: ${talepTuru}`,
@@ -82,10 +88,35 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
       mesaj ? `Not: ${mesaj}` : null,
       "",
       `Telefon: ${telefon}`,
-    ].filter((satir) => satir !== null);
+    ]
+      .filter((satir) => satir !== null)
+      .join("\n");
+  }
 
-    const url = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(satirlar.join("\n"))}`;
+  function olay(kanal: string) {
+    sendGAEvent("event", "contact_form_submit", {
+      kanal,
+      mahalle: mahalleSlug || "(yok)",
+      site: seciliSite?.slug ?? "(yok)",
+    });
+  }
+
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    olay("whatsapp");
+    const url = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(talepMetni())}`;
     window.open(url, "_blank", "noopener,noreferrer");
+  }
+
+  function handleSms() {
+    // Zorunlu alanlar tarayıcı doğrulamasından geçmiyor (submit değil) — elle bak.
+    if (!isim.trim() || !telefon.trim()) {
+      window.alert("SMS ile göndermek için ad soyad ve telefon alanlarını doldurun.");
+      return;
+    }
+    olay("sms");
+    // "?&body=" hem iOS hem Android'de çalışan ortak biçim.
+    window.location.href = `sms:${siteConfig.phoneTel}?&body=${encodeURIComponent(talepMetni())}`;
   }
 
   return (
@@ -247,16 +278,36 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
           className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
         />
       </div>
-      <button
-        type="submit"
-        className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:bg-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-auto"
-      >
-        <WhatsAppIcon className="h-4 w-4" />
-        WhatsApp ile Gönder
-      </button>
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
+        <button
+          type="submit"
+          className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:bg-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-auto"
+        >
+          <WhatsAppIcon className="h-4 w-4" />
+          WhatsApp ile Gönder
+        </button>
+        {mobil ? (
+          <button
+            type="button"
+            onClick={handleSms}
+            className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:border-gold hover:text-gold-dark sm:w-auto"
+          >
+            SMS ile Gönder
+          </button>
+        ) : (
+          <a
+            href={`tel:${siteConfig.phoneTel}`}
+            onClick={() => olay("telefon")}
+            className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:border-gold hover:text-gold-dark sm:w-auto"
+          >
+            {siteConfig.phoneDisplay}
+          </a>
+        )}
+      </div>
+      <OfisDurumu />
       <p className="text-xs leading-relaxed text-muted">
-        Buton, mesajınız hazır yazılmış hâlde WhatsApp&apos;ı açar — göndermek için orada yeşil
-        gönder tuşuna basmayı unutmayın. WhatsApp kullanmıyorsanız doğrudan arayın:{" "}
+        Butonlar mesajınızı hazır yazılmış hâlde açar — göndermek için orada gönder tuşuna
+        basmayı unutmayın. WhatsApp da SMS de kullanmak istemiyorsanız doğrudan arayın:{" "}
         <a
           href={`tel:${siteConfig.phoneTel}`}
           className="font-semibold text-gold-dark hover:underline"

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { getAllMahalleler, getSitelerByMahalle } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef, ozgunPersonJsonLd } from "@/lib/structured-data";
@@ -102,6 +103,24 @@ export default function HakkimizdaPage() {
           Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO}
         </p>
       </header>
+
+      {/* Ofisin kendisi. Ziyaretçilerin bir kısmı buraya "beni arayan / bana
+          tavsiye edilen bu ofis gerçek mi" sorusuyla geliyor; o soruya en hızlı
+          cevabı metin değil, kapıdan içerisi veriyor. */}
+      <figure className="mt-8">
+        <Image
+          src="/images/ofis-ic-mekan.jpg"
+          alt={`${siteConfig.name} ofisi — Tunahan Mahallesi, 4. Etap Çarşı, Eryaman`}
+          width={1284}
+          height={936}
+          priority
+          sizes="(min-width: 896px) 896px, 100vw"
+          className="w-full rounded-2xl border border-border object-cover"
+        />
+        <figcaption className="mt-2 text-xs text-muted">
+          Ofisimiz — {siteConfig.officeAddress}
+        </figcaption>
+      </figure>
 
       <section className="mt-12">
         <h2 className="text-xl">Ekibimiz</h2>

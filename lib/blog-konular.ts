@@ -30,6 +30,8 @@ const KONULAR: Record<string, BlogKonu> = {
   "emlakci-yetki-belgesi-sorgulama": "satis",
   "evinizin-degerini-nasil-ogrenebilirsiniz": "satis",
   "eryamanda-ev-fiyatlarini-ne-belirler": "satis",
+  // İki yolun ortasındaki karar yazısı — satış grubunda listeleniyor.
+  "evimi-satmak-mi-kiraya-vermek-mi": "satis",
   // Kiraya vermek
   "dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler": "kira",
   "kira-artisi-nasil-hesaplanir": "kira",

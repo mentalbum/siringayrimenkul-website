@@ -7,6 +7,7 @@ import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
+import { OfisDurumu } from "@/components/ui/ofis-durumu";
 
 export const metadata: Metadata = {
   title: "İletişim — Eryaman Emlakçınız, Tunahan 4. Etap Çarşı",
@@ -85,6 +86,7 @@ export default function IletisimPage() {
                   {gun.gunler}: {gun.saat}
                 </p>
               ))}
+              <OfisDurumu className="mt-2" />
             </div>
           </div>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">

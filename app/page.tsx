@@ -355,6 +355,16 @@ export default function HomePage() {
               cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerlendirme görüşmesi için ek bir ücret almıyoruz; evinizin bulunduğu mahalle ve site hakkında size doğrudan bilgi veriyoruz.`,
             },
             {
+              soru: "Evimi kiraya verirken size komisyon ödeyecek miyim?",
+              cevap:
+                "Hayır. Yönetmelik gereği kiralamada hizmet bedeli kural olarak kiracıdan alınır ve bir aylık kira bedelini (artı KDV) aşamaz; yani kiracı bulma, eleme, sözleşme ve teslim sürecini bize bırakmanın ev sahibi için doğrudan bir komisyon maliyeti yoktur. Satışta ise hizmet bedelinin satıcı payı yönetmelikte belirlenen oranlar dahilindedir ve yetki sözleşmesinde baştan yazılı olarak netleşir — sürpriz bir kalem çıkmaz.",
+            },
+            {
+              soru: "Evimi satsam mı, kiraya mı versem?",
+              cevap:
+                "Bu sorunun cevabı evin değil, sizin durumunuzun içindedir: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol iki rakamı da öğrenmektir — dairenizin bugünkü satış değeri ve bugünkü kira değeri yan yana geldiğinde karar çoğu zaman kendiliğinden netleşir.",
+            },
+            {
               soru: "Bu sitede ilan var mı?",
               cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yer alıyor. Bu web sitesi ilan platformu değil; mahalle rehberi ve iletişim kanalı olarak tasarlandı. Mahallenizi veya sitenizi seçerek bize ulaşabilirsiniz.`,
             },

@@ -85,3 +85,142 @@ Evet, düzenli olarak yürüttüğümüz bir süreçtir. Evinizi biz gösteririz
 ### S6 — İçinde kiracı oturan evimi satabilir miyim?
 
 Evet, kiracılı ev satılabilir; kiracı tapu devrine engel değildir ve mevcut kira sözleşmesi yeni ev sahibiyle devam eder. Kira getirisi arayan alıcılar için oturan kiracı avantaj bile olabilir; kendisi oturmak isteyen alıcıda ise yasal bildirim süreleri devreye girer. Evinizin durumuna göre en doğru satış stratejisini birlikte belirleriz: 0 (532) 363 96 60
+---
+
+# EK — KİRAYA VERME TARAFI (2026-07-25)
+
+Neden bu ek: Yukarıdaki 8 gönderinin 8'i de satış çağrısıyla bitiyor; 6 Soru-Cevap'ın hiçbiri
+kiraya verme üzerine değil. Oysa Eryaman'da evini kiraya verecek ev sahibi, satacak olandan
+daha kalabalık bir grup. Aşağıdakiler o boşluğu kapatır.
+
+**Öncelik sırası (en yüksek etkiden düşüğe):** BÖLÜM 5 (hizmet listesi) → BÖLÜM 6 (soru-cevap)
+→ BÖLÜM 4 (panel ayarları) → BÖLÜM 7 (gönderiler).
+
+---
+
+## BÖLÜM 4 — Panel Ayarları Kontrol Listesi
+
+Bunlar metin değil, panelde yapılacak işler. Sırayla ve **aynı hafta içinde tek alan** değiştir
+— kategori, isim ve adres değişiklikleri üst üste yapılınca Google yeniden doğrulama isteyebilir
+veya profili askıya alabilir. İşletme adına asla dokunma.
+
+1. **Birincil kategori ne, kontrol et.** Yerel harita sıralamasında en ağırlıklı tek faktör bu.
+   Panelde ne yazdığını oku ve bana söyle — "Emlakçı", "Emlak Ajansı", "Emlak Danışmanı"
+   seçeneklerinden hangisi olduğu önemli.
+2. **İkincil kategori ekle.** Kiralama niyetli aramalarda görünmek için kiralamayla ilgili bir
+   ikincil kategori gerekiyor. Birincil kategoriye dokunmadan, yalnızca ekleme yap.
+3. **Çalışma saatlerini siteyle birebir eşitle.** Site: Pzt–Cmt 09:00–19:00, Pazar 09:00–17:00.
+   **Pazar açık olmak gerçek bir avantaj** — bölgedeki çoğu ofis Pazar kapalı, ev sahipleri de en
+   çok hafta sonu araştırma yapıyor. Bayram/tatil için "özel saatler" alanını önceden doldur.
+4. **Mesajlaşmayı aç** — ama yalnızca günde birkaç kez bakabileceksen. Telefonla konuşmak
+   istemeyen ev sahibi segmenti (özellikle yurt dışı/tayin) için tek temas yolu bu. Açıp
+   yanıtlamamak açmamaktan kötüdür; Google düşük yanıt oranında özelliği kapatır.
+5. **Web sitesi bağlantısına takip eki koy:** `https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp`
+   Bu olmadan "kaç kişi haritadan geldi" sorusunun cevabı yok.
+6. **Randevu bağlantısını kiralama sayfasına ver:** `https://www.siringayrimenkul.com/eryamanda-ev-kiraya-vermek`
+   (Web sitesi bağlantısı ana sayfada kalsın.)
+7. **Fotoğraf ekle** — ofis dış cephesi ve tabela (müşteri kapıyı tanısın diye), ofis içi, yetki
+   belgesi. Ayda 2-3 kare yeterli. İlan/portföy görseli yok.
+8. **Performans sekmesinden taban rakamları not al:** son 3 ayın arama sayısı, yol tarifi, web
+   sitesi tıklaması ve profili gören sorgular. Bu olmadan yapılanların işe yarayıp yaramadığı
+   ölçülemez.
+
+---
+
+## BÖLÜM 5 — Hizmet Listesi (Services)
+
+GBP'nin en az doldurulan, en çok işe yarayan alanı. Google'a ne yaptığını doğrudan söyler.
+Adlar sitedeki hizmet tanımlarıyla birebir aynı tutuldu — profil ile site aynı işletmeyi
+anlatsın diye.
+
+**1. Eryaman'da Ev Kiraya Verme Danışmanlığı**
+Eryaman ve çevresindeki 11 mahallede evini kiraya verecek ev sahipleri için uçtan uca hizmet: kira tespiti, tanıtım, kiracı ön elemesi, sözleşme ve teslim. Kiralamada hizmet bedeli yönetmelik gereği kural olarak kiracıdan alınır; ev sahibi için doğrudan bir komisyon maliyeti doğmaz. İlan trafiğini biz karşılarız, telefonunuz gün boyu çalmaz.
+
+**2. Eryaman'da Ev Satış Danışmanlığı**
+Değerlemeden tapuya satışın tamamı: emsal bazlı fiyat tespiti, tanıtım ve ilan, alıcı elemesi, pazarlık ve tapu koordinasyonu. 700'den fazla site ve rezidansı blok blok tanıyoruz; fiyat konuşurken mahalle ortalamasını değil, sitenizin kendi hareketliliğini esas alıyoruz.
+
+**3. Ev Değerleme (Emsal Bazlı Fiyat Analizi)**
+Satış ya da kira değerinin, dairenizin bulunduğu sitenin gerçekleşen emsalleriyle belirlenmesi. Blok, kat, cephe, iç durum ve tapu niteliği hesaba katılır. Görüşmenin sonunda elinizde gerçekçi bir fiyat aralığı ve yol haritası olur.
+
+**4. Kira Tespiti**
+Doğru kira, ilan sitelerindeki istenen rakamlardan değil, sitenizde gerçekleşen kiralamalardan okunur. Yüksek kira koyup evi aylarca boş bekletmek çoğu senaryoda gerçekçi kirayla hemen kiraya vermekten pahalıdır.
+
+**5. Kiracı Elemesi ve Referans Kontrolü**
+Kiraya vermenin en kritik adımı. Adayın çalışma düzeni, ödeme gücü ve referansları görüşme aşamasında sorgulanır; ev sahibine yalnızca elenmiş adaylar iletilir. Kiracı seçimi her zaman ev sahibinindir.
+
+**6. Kira Sözleşmesi ve Teslim Tutanağı**
+Depozito, demirbaş listesi, sayaç değerleri ve teslim tutanağının doğru kurulması, ileride yaşanacak tartışmaların sigortasıdır. Evrak düzenini birlikte kurar, teslimi kayıt altına alırız.
+
+**7. Uzaktan Kiraya Verme ve Satış**
+Tayin, iş ya da yurt dışı sebebiyle Eryaman'da olmayan ev sahipleri için: anahtar bizde durur, gösterimleri biz yaparız, evin durumu fotoğraflı tutanakla kayda alınır. Süreç boyunca muhatabınız tek kişidir.
+
+---
+
+## BÖLÜM 6 — Kiraya Verme Soru-Cevap (6 hazır çift)
+
+Uygulama: Soruyu kişisel hesabından sor, cevabı işletme hesabından ver. Mevcut S1–S6'nın
+devamı olarak numaralandırıldı.
+
+### S7 — Evimi kiraya verirken emlakçıya komisyon öder miyim?
+
+Hayır. Yönetmelik gereği kiralamada hizmet bedeli kural olarak kiracıdan alınır ve bir aylık kira bedelini (artı KDV) aşamaz. Yani kiracı bulma, eleme, sözleşme ve teslim sürecini bize bırakmanın ev sahibi için doğrudan bir komisyon maliyeti yoktur. Bu, en sık sorulan ve en çok yanlış bilinen konudur. Ayrıntı için: 0 (532) 363 96 60
+
+### S8 — Evimin kirasını nasıl belirliyorsunuz?
+
+İlan sitelerinde görünen rakamlar "istenen" kiralardır; gerçek kira, sitenizde fiilen gerçekleşen kiralamalardan okunur. Dairenizin katı, cephesi, iç durumu ve site içindeki konumu da doğrudan etkiler. Yüksek kira koyup evi aylarca boş bekletmek çoğu senaryoda gerçekçi kirayla hemen kiraya vermekten pahalıdır — boş geçen her ay bir aylık kira gelirinin tamamen kaybıdır, aidat ve DASK ise ödenmeye devam eder.
+
+### S9 — Kiracıyı nasıl buluyor ve eliyorsunuz?
+
+İlan trafiğini biz karşılarız; adaylarla çalışma düzeni, ödeme gücü ve referans düzeyinde ön görüşme yaparız. Evinize yalnızca bu elemeden geçmiş adaylar gelir. Nihai kiracı seçimi her zaman ev sahibinindir — biz kararı vermeyiz, kararı sağlıklı verebilmeniz için gereken bilgiyi toplarız.
+
+### S10 — Depozito ve demirbaş konusunda ne yapmam gerekir?
+
+Kira sözleşmesinin doğru kurulması ileride yaşanacak tartışmaların sigortasıdır: depozito tutarı ve iade koşulları, demirbaş listesi, sayaç değerleri ve teslim tutanağı yazılı olmalıdır. Teslim anındaki durumu fotoğrafla kayda almak, kiracı çıkışında en çok işe yarayan belgedir. Evrak düzenini birlikte kurarız.
+
+### S11 — Şehir dışındayım/yurt dışındayım; evimi uzaktan kiraya verebilir miyim?
+
+Evet, düzenli olarak yürüttüğümüz bir süreçtir. Anahtar bizde durur, gösterimleri biz yaparız; kiracı adayını ön elemeden geçirir, size yalnızca uygun bulduğumuz adayları iletiriz. Sözleşme ve teslim aşamasında evin durumunu fotoğraflı tutanakla kayda alır, demirbaş listesini ve sayaç değerlerini yazılı hâle getiririz. Süreç boyunca muhatabınız tek kişi olur.
+
+### S12 — Sonraki yıllarda kira artışını nasıl yapacağım?
+
+Konut kiralarında yasal artış tavanı, son 12 aylık TÜFE ortalamasıdır; sözleşmede bunun üzerinde bir oran yazsa bile tavan geçerlidir. Web sitemizdeki kira artışı hesaplayıcısıyla yeni kirayı saniyeler içinde görebilirsiniz. Beş yılı dolduran sözleşmelerde kira tespit davasıyla emsal düzeye çıkma hakkınız da bulunur; bu kritik kararlarda yön gösteriyoruz.
+
+---
+
+## BÖLÜM 7 — Kiraya Verme Gönderileri (8 adet)
+
+Yukarıdaki 8 gönderi site anlatıp satış çağrısıyla bitiyordu. Bunlar farklı çalışıyor: kiraya
+verecek ev sahibinin kafasındaki soruya cevap veriyor. Haftada 1, sırayla. Fiyat rakamı, ilan
+iddiası ve ada numarası yok.
+
+### K1 — Komisyonu kim öder?
+
+Eryaman'da en sık sorulan ve en çok yanlış bilinen konu: evini kiraya veren ev sahibi emlakçıya komisyon ödemez. Yönetmelik gereği kiralamada hizmet bedeli kural olarak kiracıdan alınır ve bir aylık kira bedelini (artı KDV) aşamaz. Yani kiracı bulma, eleme, sözleşme ve teslim sürecini bize bırakmanın size doğrudan bir maliyeti olmaz. Özgün Şirin — 0 (532) 363 96 60
+
+### K2 — Telefonunuz susar
+
+Evini kendi ilanıyla kiraya vermeye çalışan ev sahiplerinin bir numaralı şikâyeti şu: numara ilana düştüğü anda gün boyu arama gelir ve arayanların çoğu kiracı değil, aracıdır. Süreci bize bıraktığınızda ilanda bizim numaramız olur; siz yalnızca elenmiş adaylar netleştiğinde aranırsınız. Eryaman'da kiraya vereceğiniz daireniz mi var? Özgün Şirin — 0 (532) 363 96 60
+
+### K3 — Boş kalan evin gerçek maliyeti
+
+"Biraz daha yüksek isteyeyim, nasılsa bulunur" — Eryaman'da en pahalıya mal olan cümle budur. Boş geçen her ay bir aylık kira gelirinin tamamen kaybıdır; aidat, emlak vergisi ve DASK ödenmeye devam eder. İki ay boş bekleyen bir daire, çoğu senaryoda gerçekçi kirayla hemen kiraya verilenin gerisine düşer. Kirayı sitenizde gerçekleşen kiralamalara göre belirliyoruz: 0 (532) 363 96 60
+
+### K4 — Kiracı elemesi neye benzer?
+
+Kiraya vermenin en kritik adımı kiracıyı bulmak değil, doğru olanı ayırmaktır. Adayla çalışma düzeni, ödeme gücü ve referans düzeyinde ön görüşme yaparız; evinize yalnızca bu elemeden geçmiş kişiler gelir. Karar her zaman sizindir — biz kararı vermeyiz, sağlıklı verebilmeniz için gereken bilgiyi toplarız. Özgün Şirin — 0 (532) 363 96 60
+
+### K5 — Teslim tutanağı: kiracı çıkışında en çok işe yarayan belge
+
+Kira sözleşmesi imzalanırken atlanan iki şey, iki yıl sonra tartışma çıkarır: demirbaş listesi ve teslim tutanağı. Evin teslim anındaki durumunu sayaç değerleriyle ve fotoğrafla kayda almak, çıkış gününde tarafların birbirine söyleyecek sözünü bırakmaz. Sözleşme düzenini ev sahiplerimizle birlikte kuruyoruz. 0 (532) 363 96 60
+
+### K6 — Eryaman'da değilseniz
+
+Tayin, iş ya da yurt dışı — Eryaman'daki evinizi burada olmadan da kiraya verebilirsiniz. Anahtar bizde durur, gösterimleri biz yaparız; kiracı adayını çalışma ve ödeme düzeni üzerinden ön elemeden geçiririz. Sözleşme ve teslimde evin durumu fotoğraflı tutanakla kayda alınır, demirbaş ve sayaç değerleri yazılı hâle gelir. Süreç boyunca muhatabınız tek kişidir. 0 (532) 363 96 60
+
+### K7 — Kira artışında yasal tavan
+
+Konut kiralarında yıllık artış tavanı, son 12 aylık TÜFE ortalamasıdır; sözleşmede daha yüksek bir oran yazsa bile tavan geçerlidir. Beş yılı dolduran sözleşmelerde ise kira tespit davasıyla emsal düzeye çıkma hakkı doğar. Ev sahiplerimize bu kararlarda yön gösteriyoruz. Sorularınız için: Özgün Şirin — 0 (532) 363 96 60
+
+### K8 — Satmak mı, kiraya vermek mi?
+
+Eryaman'da evi olan çoğu kişi bu soruyla başlıyor. Cevap evin değil, sizin durumunuzun içinde: paraya ne zaman ihtiyacınız var, evi ileride kullanma ihtimaliniz var mı, konutu edinmenizden bu yana beş yıl geçti mi, bakım yükünü taşıyabilir misiniz. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok — iki rakamı da konuşalım. 0 (532) 363 96 60
