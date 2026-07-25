@@ -25,6 +25,7 @@ import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
+import { onayliEtap } from "@/lib/etap-onayli";
 import { bulunmaHali } from "@/lib/turkce";
 
 type Props = {
@@ -122,6 +123,7 @@ export default async function SitePage({ params }: Props) {
     : halkaSiteler;
   const sinir = getSiteBoundary(site);
   const tipi = inferSiteTipi(site.isim);
+  const dogrulanmisEtap = onayliEtap(site.adalar);
 
   const siteJsonLd = {
     "@context": "https://schema.org",
@@ -185,11 +187,22 @@ export default async function SitePage({ params }: Props) {
       />
 
       <header className="mt-4 max-w-3xl">
-        {/* Etap ibaresi bilerek yok: adalar[].etap alanı iç gruplama verisi, sitenin
-            hangi etapta sayıldığı ise Özgün'ün doğrulaması gereken bir iddia.
-            Doğrulanmamış etap bilgisini başlığın yanında iddia olarak yazmıyoruz. */}
+        {/* Etap etiketi yalnız RESMÎ ada listesiyle doğrulanmış etaplarda çıkar
+            (lib/etap-onayli.ts). Kayıttaki adalar[].etap alanı iç gruplama
+            verisidir ve tek başına iddia olarak yazılmaz. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Eryaman · {mahalle.isim} · {mahalle.ilce}
+          {dogrulanmisEtap && (
+            <>
+              {" · "}
+              <Link
+                href={`/mahalleler/${mahalle.slug}/etaplar/${dogrulanmisEtap}`}
+                className="cursor-pointer hover:underline"
+              >
+                {dogrulanmisEtap}. Etap
+              </Link>
+            </>
+          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{site.isim}</h1>
         {tipi && (
@@ -214,7 +227,9 @@ export default async function SitePage({ params }: Props) {
                 sizes="(min-width: 1024px) 590px, 100vw"
               />
               <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
-                {`${site.isim} — ${mahalle.isim}, Eryaman`}
+                {`${site.isim} — ${mahalle.isim}, Eryaman${
+                  dogrulanmisEtap ? ` ${dogrulanmisEtap}. Etap` : ""
+                }`}
               </figcaption>
             </figure>
           )}

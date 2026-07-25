@@ -20,6 +20,7 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { blokOzellikleri, tapuCumlesi } from "@/lib/ada-bilgi";
+import { adaOnayliEtap } from "@/lib/etap-onayli";
 import { bulunmaHaliKi, tamlayanEk } from "@/lib/turkce";
 
 type Props = {
@@ -64,6 +65,7 @@ export default async function AdaPage({ params }: Props) {
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
+  const dogrulanmisEtap = adaOnayliEtap(ada.no);
   const tumAdalar = getAllAdalar(mahalleSlug);
   const ayniEtapMap = new Map(
     tumAdalar
@@ -115,10 +117,21 @@ export default async function AdaPage({ params }: Props) {
       />
 
       <header className="mt-4 max-w-3xl">
-        {/* Site sayfasındaki gibi: doğrulanmamış etap bilgisi başlığın yanında
-            iddia olarak yer almaz. */}
+        {/* Etap etiketi yalnız resmî ada listesiyle doğrulanmış etaplarda çıkar
+            (lib/etap-onayli.ts) — kayıttaki ada.etap alanı tek başına yetmez. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           {mahalle.isim}
+          {dogrulanmisEtap && (
+            <>
+              {" · "}
+              <Link
+                href={`/mahalleler/${mahalle.slug}/etaplar/${dogrulanmisEtap}`}
+                className="cursor-pointer hover:underline"
+              >
+                Eryaman {dogrulanmisEtap}. Etap
+              </Link>
+            </>
+          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{label} Ada</h1>
       </header>

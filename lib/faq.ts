@@ -4,6 +4,7 @@ import type { Mahalle, Site } from "@/lib/types";
 import { bulunmaHali, bulunmaHaliKi, tamlayanHali, dahiBaglaci } from "@/lib/turkce";
 import { siteConfig } from "@/lib/site-config";
 import { inferSiteTipi } from "@/lib/site-tipi";
+import { adaOnayliEtap, onayliEtap } from "@/lib/etap-onayli";
 
 export interface FaqItem {
   soru: string;
@@ -133,10 +134,17 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
     });
   }
 
-  // "Bu site kaçıncı etapta?" sorusu bilerek üretilmiyor: cevabı adalar[].etap
-  // alanından türetiliyordu, o alan ise iç gruplama verisi — sitenin hangi etapta
-  // sayıldığı doğrulanması gereken bir iddia. Doğrulanmamış bilgiyi soru-cevap
-  // biçiminde yazmak onu daha da kesin gösterir.
+  // "Kaçıncı etapta?" sorusu yalnız RESMÎ ada listesiyle doğrulanmış etaplarda
+  // üretilir (lib/etap-onayli.ts). Kayıttaki adalar[].etap alanı iç gruplama
+  // verisidir; doğrulanmamış bilgiyi soru-cevap biçiminde yazmak onu daha da
+  // kesin gösterir, o yüzden oradan beslenmiyoruz.
+  const etap = onayliEtap(site.adalar);
+  if (etap) {
+    items.push({
+      soru: `${site.isim} Eryaman'ın kaçıncı etabında?`,
+      cevap: `${site.isim}, Eryaman ${etap}. Etap sınırları içindedir — bunu ${etap}. Etap Toplu Yapı Yönetimi'nin yayımladığı resmî ada listesiyle doğruluyoruz. Etaplar Eryaman'da yapılaşma dönemini ve dokusunu anlatır; alıcılar da çoğu zaman "kaçıncı etap" diye sorduğu için ilan ve tanıtımda etabı belirtmek işe yarar.`,
+    });
+  }
 
   return items;
 }
@@ -167,8 +175,9 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
   const tekSite = entries.length === 1;
   const siteAdi = ada.site.isim;
   const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
-  // Etap notu bilerek yok — site sayfasındaki gibi, adalar[].etap iç gruplama
-  // verisi; "N. Etap içinde yer alır" doğrulanmamış bir iddia olurdu.
+  // Etap notu yalnız resmî listeyle doğrulanmışsa eklenir (lib/etap-onayli.ts).
+  const dogrulanmisEtap = adaOnayliEtap(ada.no);
+  const etapNot = dogrulanmisEtap ? ` ve Eryaman ${dogrulanmisEtap}. Etap sınırları içindedir` : "";
   return [
     {
       soru: `${label} Ada'da satılık daire var mı?`,
@@ -185,8 +194,8 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
     {
       soru: `${label} Ada hangi sitede yer alıyor?`,
       cevap: tekSite
-        ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır.`
-        : `${label} Ada, ${mahalle.isim} sınırları içindedir; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
+        ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır${etapNot}.`
+        : `${label} Ada, ${mahalle.isim} sınırları içindedir${etapNot}; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
     },
     {
       soru: `Bu adadaki evimi satmak istiyorum — süreç nasıl işler?`,
