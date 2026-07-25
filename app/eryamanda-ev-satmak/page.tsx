@@ -66,6 +66,11 @@ const faqItems: FaqItem[] = [
       "Evet — satış kira sözleşmesini sona erdirmez, yeni malik sözleşmenin tarafı olur. Kiracılı satışın gösterim düzeni ve alıcı profili farklı işler; ayrıntılar 'Kiracılı ev satılır mı?' rehberimizde. Bu süreci sık yönetiyoruz.",
   },
   {
+    soru: "Kiracım evi göstermiyor, ne yapabilirim?",
+    cevap:
+      "Kiracının gösterime katlanma yükümlülüğü kanunda yazılıdır (Türk Borçlar Kanunu m. 319) ve emlak danışmanınızla getirdiği alıcı adayını da kapsar; buna karşılık ev sahibi gösterimi önceden bildirmek ve kiracının yararlarını gözetmekle yükümlüdür. Dosyaların çoğu mahkemeye gitmeden, gösterimleri belirli gün ve saat pencerelerinde toplayarak çözülür — bu düzeni kiracıyla biz kurarız, siz karşı karşıya gelmezsiniz. Gerçekten tıkanan dosyalarda yol kiralananın gösterilmesine izin davasıdır; 'Kiracı evi göstermiyor' rehberimizde adım adım anlattık. Not: gösterime engel olmak tek başına bir tahliye sebebi değildir, iki süreç ayrıdır.",
+  },
+  {
     soru: "Satmak mı doğru, kiraya vermek mi?",
     cevap:
       "Cevap evin değil, sizin durumunuzun içindedir: paraya belirli bir tarihte ihtiyacınız varsa ve evi elde tutmanın bir amacı yoksa satış öne çıkar; nakit ihtiyacınız yoksa, evi ileride kullanma ihtimaliniz varsa ya da değer artışı kazancı vergisi açısından beş yılı doldurmanıza az kaldıysa kiraya vermek mantıklı olabilir. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık — iki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok.",

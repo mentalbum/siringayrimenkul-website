@@ -24,6 +24,7 @@ const KONULAR: Record<string, BlogKonu> = {
   "eviniz-satilmiyor-mu": "satis",
   "hisseli-ipotekli-ev-satisi": "satis",
   "kiracili-ev-satilir-mi": "satis",
+  "kiraci-evi-gostermiyor-ne-yapmaliyim": "satis",
   "eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama": "satis",
   "emlakciya-vekalet-verme-rehberi": "satis",
   "emlakci-yetki-sozlesmesi-rehberi": "satis",
