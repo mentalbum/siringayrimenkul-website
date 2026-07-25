@@ -115,19 +115,10 @@ export default async function AdaPage({ params }: Props) {
       />
 
       <header className="mt-4 max-w-3xl">
+        {/* Site sayfasındaki gibi: doğrulanmamış etap bilgisi başlığın yanında
+            iddia olarak yer almaz. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           {mahalle.isim}
-          {ada.etap && (
-            <>
-              {" · "}
-              <Link
-                href={`/mahalleler/${mahalle.slug}/etaplar/${ada.etap}`}
-                className="cursor-pointer hover:underline"
-              >
-                Eryaman {ada.etap}. Etap
-              </Link>
-            </>
-          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{label} Ada</h1>
       </header>

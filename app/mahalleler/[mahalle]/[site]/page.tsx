@@ -185,19 +185,11 @@ export default async function SitePage({ params }: Props) {
       />
 
       <header className="mt-4 max-w-3xl">
+        {/* Etap ibaresi bilerek yok: adalar[].etap alanı iç gruplama verisi, sitenin
+            hangi etapta sayıldığı ise Özgün'ün doğrulaması gereken bir iddia.
+            Doğrulanmamış etap bilgisini başlığın yanında iddia olarak yazmıyoruz. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
           Eryaman · {mahalle.isim} · {mahalle.ilce}
-          {site.adalar?.[0]?.etap && (
-            <>
-              {" · "}
-              <Link
-                href={`/mahalleler/${mahalle.slug}/etaplar/${site.adalar[0].etap}`}
-                className="cursor-pointer hover:underline"
-              >
-                {site.adalar[0].etap}. Etap
-              </Link>
-            </>
-          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{site.isim}</h1>
         {tipi && (
@@ -222,9 +214,7 @@ export default async function SitePage({ params }: Props) {
                 sizes="(min-width: 1024px) 590px, 100vw"
               />
               <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
-                {`${site.isim} — ${mahalle.isim}${
-                  site.adalar?.[0]?.etap ? `, Eryaman ${site.adalar[0].etap}. Etap` : ""
-                }`}
+                {`${site.isim} — ${mahalle.isim}, Eryaman`}
               </figcaption>
             </figure>
           )}

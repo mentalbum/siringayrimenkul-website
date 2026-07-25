@@ -2,20 +2,26 @@
 /**
  * Site fotoğrafı hazırlama — tek standart, tek komut.
  *
- * Temiz ORİJİNAL asla public/ içine konmaz (konursa filigranın anlamı kalmaz).
- * Bu script orijinali alır, 1440x1080'e ölçekler, sağ alt köşeye
- * "siringayrimenkul.com" künyesini basar, telif meta verisini gömer ve
- * public/images/siteler/<slug>-eryaman.jpg olarak yazar.
+ * Orijinali alır, 1440x1080'e ölçekler, iki işaret basar:
+ *   - MERKEZE "siringayrimenkul.com" künyesi. Köşede değil, çünkü köşe filigranı
+ *     tek kırpmayla gider; merkezdeki künye kırpılamaz — fotoğrafı kim kullanırsa
+ *     adresi de birlikte taşımak zorunda kalır.
+ *   - SOL ALTA logo. İkisinde de gölge var: emlak fotoğraflarında alt kenar ve
+ *     gökyüzü açık renk olduğu için gölgesiz beyaz metin siliniyor.
+ * Ardından telif meta verisini (EXIF + XMP) gömer ve dosyayı yazar.
  *
  * Kullanım:
  *   node scripts/filigran.mjs --in ~/Desktop/okyanus.jpg --slug okyanus-plaza \
  *        --baslik "Okyanus Plaza, Tunahan Mahallesi, Eryaman"
  *
  * Seçenekler:
- *   --pos br|bl   künye köşesi (varsayılan br = sağ alt)
- *   --size 0.028  metin yüksekliği / görsel yüksekliği (varsayılan %2,8)
- *   --op 0.72     metin opaklığı
- *   --temiz       filigransız üret (sahibinden.com vitrin fotoğrafı için)
+ *   --size 0.034  künye yüksekliği / görsel yüksekliği (varsayılan %3,4)
+ *   --op 0.85     künye opaklığı
+ *   --y 0.50      künyenin dikey konumu (0 = üst, 1 = alt; varsayılan tam orta)
+ *   --logosuz     logoyu basma, yalnız künye
+ *   --temiz       hiçbir işaret basma — sahibinden.com ilan görseli için
+ *                 (ilan kurallarına göre ilan fotoğrafında logo/web adresi yasak;
+ *                 vitrin fotoğrafı doğrudan reddediliyor)
  */
 import sharp from "sharp";
 import path from "node:path";
@@ -38,18 +44,15 @@ if (!IN || !SLUG) {
 
 const KUNYE = "siringayrimenkul.com";
 const YIL = new Date().getFullYear();
-const POS = arg("pos", "br");
-const SIZE = Number(arg("size", "0.028"));
-// Emlak fotoğraflarında alt kenar çoğu zaman açık renktir (yol, kaldırım, beyaz
-// araba). 0,72 opaklık + zayıf gölgeyle künye o zeminde siliniyordu; 0,92 + güçlü
-// gölge her iki zeminde de okunuyor ve hâlâ fotoğrafın önüne geçmiyor.
-const OP = Number(arg("op", "0.92"));
+const SIZE = Number(arg("size", "0.034"));
+const OP = Number(arg("op", "0.85"));
+const CY = Number(arg("y", "0.50"));
+const LOGOSUZ = flag("logosuz");
 const TEMIZ = flag("temiz");
+const LOGO_YOLU = path.join(process.cwd(), "public", "brand", "sirin-logo-on-dark.png");
 
-// Filigranlı kopya siteye girer. Filigransız kopya public/ DIŞINA yazılır:
-// sahibinden.com ilan kurallarına göre ilan görsellerinde firma logosu, telefon
-// ve web adresi bulunamaz (vitrin fotoğrafı doğrudan reddedilir), o yüzden
-// portala giden dosya ayrı üretilir — ve siteye sızarsa filigranın anlamı kalmaz.
+// Filigranlı kopya siteye girer. Filigransız kopya public/ DIŞINA yazılır —
+// oraya sızarsa filigranın anlamı kalmaz.
 const OUT_DIR = TEMIZ
   ? path.join(process.cwd(), "portal-fotograflari")
   : path.join(process.cwd(), "public", "images", "siteler");
@@ -59,27 +62,44 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 const base = sharp(IN).rotate().resize(1440, 1080, { fit: "cover", withoutEnlargement: true });
 const { width: W, height: H } = await base.clone().toBuffer({ resolveWithObject: true }).then((r) => r.info);
 
-const fontSize = Math.round(H * SIZE);
-const pad = Math.round(H * 0.022);
-const anchor = POS === "bl" ? `x="${pad}" text-anchor="start"` : `x="${W - pad}" text-anchor="end"`;
+async function isaretKatmani() {
+  const fontSize = Math.round(H * SIZE);
+  const logoVar = !LOGOSUZ && fs.existsSync(LOGO_YOLU);
 
-const kunyeSvg = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
+  let logoParcasi = "";
+  if (logoVar) {
+    const b64 = fs.readFileSync(LOGO_YOLU).toString("base64");
+    const meta = await sharp(LOGO_YOLU).metadata();
+    const lh = Math.round(H * 0.058);
+    const lw = Math.round((meta.width * lh) / meta.height);
+    const lx = Math.round(W * 0.025);
+    const ly = H - lh - Math.round(H * 0.03);
+    logoParcasi = `<image xlink:href="data:image/png;base64,${b64}" x="${lx}" y="${ly}" width="${lw}" height="${lh}" opacity="0.92" filter="url(#l)"/>`;
+  }
+
+  return Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
-    <filter id="g" x="-60%" y="-60%" width="220%" height="220%">
-      <feDropShadow dx="0" dy="${Math.max(1, Math.round(fontSize * 0.06))}"
-        stdDeviation="${Math.max(2, Math.round(fontSize * 0.167))}" flood-color="#000" flood-opacity="0.85"/>
+    <filter id="t" x="-60%" y="-60%" width="220%" height="220%">
+      <feDropShadow dx="0" dy="${Math.max(1, Math.round(fontSize * 0.05))}"
+        stdDeviation="${Math.max(2, Math.round(fontSize * 0.14))}" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
+    <filter id="l" x="-40%" y="-40%" width="180%" height="180%">
+      <feDropShadow dx="0" dy="2" stdDeviation="${Math.max(2, Math.round(H * 0.0058))}" flood-color="#000" flood-opacity="0.75"/>
     </filter>
   </defs>
-  <text ${anchor} y="${H - pad}" font-family="Helvetica, Arial, sans-serif" font-size="${fontSize}"
-        font-weight="600" letter-spacing="${(fontSize * 0.02).toFixed(2)}"
-        fill="#ffffff" fill-opacity="${OP}" filter="url(#g)">${KUNYE}</text>
+  <text x="${Math.round(W / 2)}" y="${Math.round(H * CY)}" text-anchor="middle"
+        font-family="Helvetica, Arial, sans-serif" font-size="${fontSize}" font-weight="600"
+        letter-spacing="${(fontSize * 0.03).toFixed(2)}" fill="#ffffff" fill-opacity="${OP}"
+        filter="url(#t)">${KUNYE}</text>
+  ${logoParcasi}
 </svg>`);
+}
 
 const telif = `(c) ${YIL} Sirin Gayrimenkul - ${KUNYE}`;
 const xmp = `<?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?><x:xmpmeta xmlns:x="adobe:ns:meta/"><rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"><rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/" xmlns:plus="http://ns.useplus.org/ldf/xmp/1.0/"><dc:creator><rdf:Seq><rdf:li>Sirin Gayrimenkul</rdf:li></rdf:Seq></dc:creator><dc:rights><rdf:Alt><rdf:li xml:lang="x-default">${telif}</rdf:li></rdf:Alt></dc:rights><xmpRights:Marked>True</xmpRights:Marked><xmpRights:WebStatement>https://www.siringayrimenkul.com/</xmpRights:WebStatement><plus:Licensor><rdf:Seq><rdf:li rdf:parseType="Resource"><plus:LicensorName>Sirin Gayrimenkul</plus:LicensorName><plus:LicensorURL>https://www.siringayrimenkul.com/iletisim</plus:LicensorURL></rdf:li></rdf:Seq></plus:Licensor></rdf:Description></rdf:RDF></x:xmpmeta><?xpacket end="r"?>`;
 
 let pipe = base;
-if (!TEMIZ) pipe = pipe.composite([{ input: kunyeSvg, top: 0, left: 0 }]);
+if (!TEMIZ) pipe = pipe.composite([{ input: await isaretKatmani(), top: 0, left: 0 }]);
 
 await pipe
   .withExif({
@@ -94,7 +114,7 @@ await pipe
   .toFile(OUT);
 
 const kb = Math.round(fs.statSync(OUT).size / 1024);
-console.log(`${OUT}  ${W}x${H}  ${kb} KB  ${TEMIZ ? "(filigransız)" : `künye: ${fontSize}px / ${POS}`}`);
+console.log(`${OUT}  ${W}x${H}  ${kb} KB  ${TEMIZ ? "(işaretsiz)" : `künye: merkez${LOGOSUZ ? "" : " + sol alt logo"}`}`);
 if (TEMIZ) {
   console.log("Bu dosya siteye GİRMEZ — sahibinden.com ilanı için ayrıldı.");
 } else {
