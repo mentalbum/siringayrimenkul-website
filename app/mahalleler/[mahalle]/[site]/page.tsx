@@ -206,38 +206,41 @@ export default async function SitePage({ params }: Props) {
           </span>
         )}
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
-        {/* İlan niyetiyle gelen ziyaretçinin beklentisi İLK ekranda karşılansın:
-            gerçek ilanlar sahibinden mağazamızda — dürüst ve tek tık. */}
-        <p className="mt-4 flex flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
-          <span>
-            {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
-          </span>
-          <TrackedCtaLink
-            href={siteConfig.sahibindenUrl}
-            gaEvent="site_ust_sahibinden"
-            variant="ghost"
-            className="px-0 font-semibold text-gold-dark"
-          >
-            sahibinden.com mağazamız →
-          </TrackedCtaLink>
-        </p>
       </header>
 
-      <div className={`mt-8 grid gap-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
+      <div className={`mt-6 grid gap-8 sm:mt-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
           {site.gorsel && (
-            <div className="overflow-hidden rounded-2xl border border-border">
+            <figure className="overflow-hidden rounded-2xl border border-border">
               <Image
                 src={site.gorsel}
-                alt={`${site.isim} — Eryaman ${mahalle.isim}`}
+                alt={`${site.isim} dış cephesi — Eryaman ${mahalle.isim}`}
                 width={1440}
                 height={1080}
                 preload
                 className="h-auto w-full object-cover"
                 sizes="(min-width: 1024px) 590px, 100vw"
               />
-            </div>
+              <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
+                {`${site.isim} — ${mahalle.isim}${
+                  site.adalar?.[0]?.etap ? `, Eryaman ${site.adalar[0].etap}. Etap` : ""
+                }`}
+              </figcaption>
+            </figure>
           )}
+          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
+            <span>
+              {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
+            </span>
+            <TrackedCtaLink
+              href={siteConfig.sahibindenUrl}
+              gaEvent="site_ust_sahibinden"
+              variant="ghost"
+              className="px-0 font-semibold text-gold-dark"
+            >
+              sahibinden.com mağazamız →
+            </TrackedCtaLink>
+          </p>
           <p className="text-base font-medium text-navy">
             {`${site.isim}, Eryaman'da ${mahalle.isim} sınırları içinde yer alan ${
               tipi ? `${tipi} ` : ""
