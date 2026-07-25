@@ -48,7 +48,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
-    title: `${baslikIsim} Satılık ve Kiralık Daire Fiyatları — Eryaman Emlakçısı`,
+    // "Fiyatları" kelimesi bilerek yok: sayfada fiyat rakamı vermiyoruz (proje
+    // kuralı), o yüzden başlıkta fiyat vaat etmek tıklayanı hayal kırıklığına
+    // uğratıyor ve çıkma oranını yükseltiyordu. Sorgunun kendisi zaten
+    // "<mahalle> satılık daire" biçiminde geliyor.
+    title: `${baslikIsim} Satılık ve Kiralık Daire — Eryaman Emlakçısı`,
     description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:

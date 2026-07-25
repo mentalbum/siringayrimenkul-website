@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import { sendGAEvent } from "@next/third-parties/google";
-import { WhatsAppIcon } from "@/components/ui/icons";
+import { PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 
 /** Sayfa bağlamına göre hazır WhatsApp mesajı: müşteri tek dokunuşla derdini
@@ -41,20 +41,57 @@ function baglamMesaji(pathname: string): string {
   return "Merhaba, Eryaman'daki evimle ilgili görüşmek istiyorum.";
 }
 
+/**
+ * Kalıcı iletişim erişimi.
+ *
+ * MOBİL: ekranın altında iki butonlu ETİKETLİ çubuk. Sebebi ölçüm: mobil
+ * başlıkta telefon linki `hidden lg:flex` olduğu için görünmüyordu — anasayfa
+ * dışındaki her sayfada "ara" eylemi hamburgerin arkasında iki dokunuş
+ * uzaktaydı. Etiketsiz yüzen daire ise hem ne olduğunu söylemiyor hem de
+ * altındaki gövde metnini kapatıyordu.
+ *
+ * MASAÜSTÜ: başlıkta telefon zaten görünür olduğu için yüzen WhatsApp dairesi
+ * yeterli; alt çubuk gereksiz yer kaplar.
+ */
 export function FloatingWhatsAppButton() {
   const pathname = usePathname() ?? "/";
   const href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(baglamMesaji(pathname))}`;
 
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      onClick={() => sendGAEvent("event", "whatsapp_click", { page_path: pathname })}
-      aria-label="WhatsApp ile yazın"
-      className="fixed bottom-5 right-5 z-40 flex h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366]"
-    >
-      <WhatsAppIcon className="h-7 w-7" />
-    </a>
+    <>
+      {/* Mobil: etiketli çift kapı */}
+      <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-border bg-surface/95 px-3 pt-2 backdrop-blur-sm pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden">
+        <a
+          href={`tel:${siteConfig.phoneTel}`}
+          onClick={() => sendGAEvent("event", "phone_click", { page_path: pathname, konum: "mobil_cubuk" })}
+          className="flex min-h-12 flex-1 cursor-pointer items-center justify-center gap-2 rounded-full bg-gold text-sm font-semibold text-navy transition-colors active:bg-gold-dark"
+        >
+          <PhoneIcon className="h-4 w-4" />
+          {siteConfig.phoneDisplay}
+        </a>
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => sendGAEvent("event", "whatsapp_click", { page_path: pathname, konum: "mobil_cubuk" })}
+          className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
+        >
+          <WhatsAppIcon className="h-5 w-5" />
+          WhatsApp
+        </a>
+      </div>
+
+      {/* Masaüstü: yüzen daire */}
+      <a
+        href={href}
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() => sendGAEvent("event", "whatsapp_click", { page_path: pathname, konum: "yuzen" })}
+        aria-label="WhatsApp ile yazın"
+        className="fixed bottom-5 right-5 z-40 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] lg:flex"
+      >
+        <WhatsAppIcon className="h-7 w-7" />
+      </a>
+    </>
   );
 }

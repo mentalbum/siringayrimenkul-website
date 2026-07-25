@@ -366,6 +366,17 @@ export default async function SitePage({ params }: Props) {
         >
           WhatsApp&apos;tan Yazın
         </TrackedCtaLink>
+        {/* Üçüncü kapı: telefon. Mobilde başlıkta telefon görünmüyor ve bu
+            banner sayfadaki en görünür temas noktası — burada tıklanabilir bir
+            numara olmazsa "arayayım" diyen kişi numarayı elle kopyalamak
+            zorunda kalıyor. */}
+        <TrackedCtaLink
+          href={`tel:${siteConfig.phoneTel}`}
+          gaEvent="phone_click"
+          variant="outline-light"
+        >
+          {siteConfig.phoneDisplay}
+        </TrackedCtaLink>
       </CtaBanner>
 
       {digerSiteler.length > 0 && (

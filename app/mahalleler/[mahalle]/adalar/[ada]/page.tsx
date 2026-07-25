@@ -12,6 +12,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { FaqSection } from "@/components/ui/faq-section";
 import { getAdaFaq } from "@/lib/faq";
@@ -239,6 +240,26 @@ export default async function AdaPage({ params }: Props) {
         >
           Evinizi Değerlendirelim
         </CtaButton>
+        {/* Site sayfasındaki gibi üç kapı: form herkese göre değil, kimi arar
+            kimi yazar. Mobilde başlıkta telefon görünmediği için burada
+            tıklanabilir olması şart. */}
+        <TrackedCtaLink
+          href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
+            `Merhaba! ${label} Ada (${mahalle.isim}) — buradaki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
+          )}`}
+          gaEvent="ada_whatsapp_cta"
+          variant="outline-light"
+          openInNewTab
+        >
+          WhatsApp&apos;tan Yazın
+        </TrackedCtaLink>
+        <TrackedCtaLink
+          href={`tel:${siteConfig.phoneTel}`}
+          gaEvent="phone_click"
+          variant="outline-light"
+        >
+          {siteConfig.phoneDisplay}
+        </TrackedCtaLink>
       </CtaBanner>
 
       <script

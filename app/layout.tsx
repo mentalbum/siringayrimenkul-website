@@ -83,15 +83,25 @@ export default async function RootLayout({
     "@type": "RealEstateAgent",
     "@id": ORG_ID,
     name: siteConfig.name,
+    // İnsanlar bizi "Eryaman Şirin Gayrimenkul" diye de arıyor (Yandex kaydımız
+    // da bu adla); ayrıca başka illerde aynı adlı firmalar var — alternateName
+    // marka aramasında doğru işletmeyi ayırt etmeye yardım eder.
+    alternateName: ["Eryaman Şirin Gayrimenkul", "Şirin Gayrimenkul Eryaman"],
     description: siteConfig.description,
-    image: `${siteConfig.url}/brand/sirin-logo-on-dark.png`,
+    image: `${siteConfig.url}/images/ofis-ic-mekan.jpg`,
     logo: organizationLogo,
     url: siteConfig.url,
     telephone: siteConfig.phoneTel,
+    // Kanonik harita kaydımız — Google'ın işletme kaydıyla site arasındaki bağı
+    // sameAs'e ek olarak açıkça kurar.
+    hasMap: siteConfig.officeMapsUrl,
+    priceRange: "₺₺",
+    currenciesAccepted: "TRY",
     knowsLanguage: "tr-TR",
     sameAs: [
       siteConfig.officeMapsUrl,
       siteConfig.yandexMapsUrl,
+      siteConfig.sahibindenUrl,
       siteConfig.tiktokUrl,
       siteConfig.instagramUrl,
       siteConfig.facebookUrl,
@@ -183,7 +193,9 @@ export default async function RootLayout({
 
   return (
     <html lang="tr" className={`${poppins.variable} ${inter.variable} h-full`}>
-      <body className="flex min-h-full flex-col antialiased">
+      {/* pb-* : mobildeki sabit iletişim çubuğu sayfanın son satırını kapatmasın
+          (bkz. components/ui/floating-whatsapp-button.tsx). */}
+      <body className="flex min-h-full flex-col pb-[max(4.5rem,calc(3.5rem+env(safe-area-inset-bottom)))] antialiased lg:pb-0">
         {/* Scroll-reveal no-JS güvenliği: JS çalışmazsa .reveal içerik görünür kalır. */}
         <noscript>
           <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>

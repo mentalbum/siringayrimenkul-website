@@ -5,6 +5,7 @@ import { CtaBanner } from "@/components/ui/cta-banner";
 import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
 import { Reveal } from "@/components/ui/reveal";
+import { OfisDurumu } from "@/components/ui/ofis-durumu";
 import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
@@ -112,6 +113,18 @@ export default function KirayaVermekPage() {
           tek tek tanıyan yerel ofis olarak ikisini de sizin adınıza yönetiyoruz. (Taşınmaz
           Ticareti Yetki Belgesi No: 0603771)
         </p>
+        {/* Ölçüm: bu sayfada ilk iletişim CTA'sı 5,1. ekranda, 516 kelime
+            sonraydı — kiralama hunisi zaten satıştan 3,9 kat düşük dönüşüyor,
+            sayfa farkı kapatmak yerine açıyordu. Kapıyı başlığın altına aldık. */}
+        <div className="mt-6 flex flex-wrap items-center gap-3">
+          <CtaButton href="/ev-degerleme" variant="primary">
+            Kira Değerlendirmesi İsteyin
+          </CtaButton>
+          <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline">
+            {siteConfig.phoneDisplay}
+          </CtaButton>
+        </div>
+        <OfisDurumu className="mt-3" />
       </header>
 
       <section className="mt-10 max-w-3xl rounded-2xl border border-gold/40 bg-gold/10 p-6">
@@ -129,6 +142,11 @@ export default function KirayaVermekPage() {
           </Link>{" "}
           görebilirsiniz.
         </p>
+        {/* Personanın 1 numaralı sorusunun cevabı burada veriliyor; ikna anı
+            geçmeden ikinci kapıyı açıyoruz. */}
+        <CtaButton href="/ev-degerleme" variant="primary" className="mt-4">
+          Kiracı Arama Sürecini Başlatalım
+        </CtaButton>
       </section>
 
       <section className="mt-12">
