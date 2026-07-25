@@ -41,7 +41,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const kisaIsim = mahalleKisaIsim(mahalle);
   const alias = mahalle.alternatifAdlar?.[0];
-  const baslikIsim = alias ? `${kisaIsim} (${alias})` : kisaIsim;
+  // Başlıkta TAM ad kullanılıyor ("Tunahan Mahallesi"), kısaltılmışı değil.
+  // Sebebi: mahalle adlarının çoğu tek başına belirsiz — "Tunahan" başka
+  // illerde de var ve autocomplete'te o illerin ofislerini getiriyor. Gerçek
+  // sorgu da "tunahan mahallesi satılık daire" biçiminde geliyor. Sayfanın
+  // H1'i, breadcrumb'ı ve gövdesi zaten tam adı kullanıyordu; eksik olan
+  // tek yer başlıktı.
+  const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
   const metaIsim = alias ? `${kisaIsim} (halk arasında ${alias})` : kisaIsim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
@@ -52,7 +58,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // kuralı), o yüzden başlıkta fiyat vaat etmek tıklayanı hayal kırıklığına
     // uğratıyor ve çıkma oranını yükseltiyordu. Sorgunun kendisi zaten
     // "<mahalle> satılık daire" biçiminde geliyor.
-    title: `${baslikIsim} Satılık ve Kiralık Daire — Eryaman Emlakçısı`,
+    // absolute: kök şablondaki " | Şirin Gayrimenkul" eki burada eklenmiyor.
+    // Tam mahalle adıyla birlikte başlık 90+ karaktere çıkıyordu ve Google
+    // ~60 karakterde kestiği için asıl anahtar kelime "Emlakçısı" görünmez
+    // oluyordu. Marka zaten alan adında ve sonuç kartının üstünde görünüyor.
+    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — Eryaman Emlakçısı` },
     description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
