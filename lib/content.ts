@@ -3,6 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import type { AdaBilgi, BlogPost, Mahalle, Site } from "@/lib/types";
 import { haversineDistanceKm } from "@/lib/geo";
+import { adaOnayliEtap } from "@/lib/etap-onayli";
 
 export interface AdaEntry extends AdaBilgi {
   site: Site;
@@ -143,11 +144,17 @@ export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
   const etapMap = new Map<string, { adalar: AdaEntry[]; siteMap: Map<string, Site> }>();
 
   for (const ada of adalar) {
-    if (!ada.etap) continue;
-    if (!etapMap.has(ada.etap)) {
-      etapMap.set(ada.etap, { adalar: [], siteMap: new Map() });
+    // Etap sayfaları da yalnız DOĞRULANMIŞ etaplardan kurulur (lib/etap-onayli.ts).
+    // Kayıttaki ada.etap alanı tek başına yeterli değil: örneğin 5. Etap Toplu Yapı
+    // Yönetimi'nin resmî ada listesi 11 ada içerirken kayıtlarda 17 site "5. etap"
+    // işaretliydi. Site sayfasında etiket göstermeyip etap sayfasında listelemek
+    // çelişki olurdu.
+    const etapNo = adaOnayliEtap(ada.no);
+    if (!etapNo) continue;
+    if (!etapMap.has(etapNo)) {
+      etapMap.set(etapNo, { adalar: [], siteMap: new Map() });
     }
-    const entry = etapMap.get(ada.etap)!;
+    const entry = etapMap.get(etapNo)!;
     entry.adalar.push(ada);
     entry.siteMap.set(ada.site.slug, ada.site);
   }

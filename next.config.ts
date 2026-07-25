@@ -13,6 +13,14 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
+      // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
+      // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.
+      // İlgili etabın toplu yapı yönetiminden resmî ada listesi gelirse geri açılır.
+      { source: "/mahalleler/altay/etaplar/1", destination: "/mahalleler/altay", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci/etaplar/2", destination: "/mahalleler/sehit-osman-avci", permanent: true },
+      { source: "/mahalleler/seyh-samil/etaplar/3", destination: "/mahalleler/seyh-samil", permanent: true },
+
       // Silinen/birleştirilen/taşınan site kayıtlarının eski URL'leri —
       // 404 yerine yaşayan varislerine kalıcı yönlendirme (SEO değeri taşınır).
       { source: "/mahalleler/altay/ege-bloklari", destination: "/mahalleler/altay/age-bloklari", permanent: true },

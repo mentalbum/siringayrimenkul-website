@@ -32,11 +32,21 @@ const ETAP_4_ADALARI = [
   "17689", "17703", "17704", "17705", "17711",
 ];
 
+const ETAP_5_ADALARI = [
+  "46493", "46494", "46495", "46496", "46497",
+  "46499", "46500", "46501", "46503", "46506", "46507",
+];
+
 const ONAYLI: readonly OnayliEtap[] = [
   {
     no: "4",
     kaynak: "Eryaman 4. Etap Toplu Yapı Yönetimi — eryaman4.com (Adalar sayfası)",
     adalar: new Set(ETAP_4_ADALARI),
+  },
+  {
+    no: "5",
+    kaynak: "Eryaman 5. Etap Toplu Yapı Yönetimi — eryaman5.com (Adalar sayfası)",
+    adalar: new Set(ETAP_5_ADALARI),
   },
 ];
 
