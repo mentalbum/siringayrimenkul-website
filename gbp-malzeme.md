@@ -42,19 +42,27 @@ Güzelkent'te siteler bazen aile olur: 1. Portakal Çiçeği Sitesi, bölgedeki 
 
 ## BÖLÜM 2 — Yorum İsteme Şablonları (tek mesaj, WhatsApp/SMS)
 
-Not: [GOOGLE YORUM LİNKİ] yerine GBP panelindeki "Yorum isteyin" kısa linkini yapıştır. [MÜŞTERİ ADI] alanını doldur. Mesaj işlem günü, tek sefer gönderilir.
+**Yorum bağlantısı (2026-07-26'da panelden alındı):**
+- Mesajlarda kullanılacak adres: `siringayrimenkul.com/yorum` — markalı ve okunabilir.
+- Gerçek hedef: `https://g.page/r/CYTc7nWjtnEoEBM/review` (kısa yol buraya gider; next.config.ts)
+- Panelde bir de QR kod var: "Yorum isteme" ekranından indirilip ofiste basılı bulundurulabilir.
+
+[MÜŞTERİ ADI] alanını doldur; mesaj işlem günü, tek sefer gönderilir. Toplu gönderim ve
+hediye/indirim karşılığı yorum Google politikasına aykırıdır — yapma. Müşteriye ne yazacağını da
+dikte etme: kendi cümleleriyle anlatması hem politikaya uygun hem daha değerli, çünkü yorum
+metnindeki kelimeler Google için bir alaka sinyali.
 
 ### Genel Şablon
 
-Merhaba [MÜŞTERİ ADI] Bey/Hanım, işleminizin sorunsuz tamamlanmasına aracılık etmekten memnuniyet duyduk. Bizden aldığınız hizmetten memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, bize sonradan ulaşacak ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: [GOOGLE YORUM LİNKİ] Vakit ayırdığınız için şimdiden teşekkür eder, ihtiyaç duyduğunuz her konuda hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
+Merhaba [MÜŞTERİ ADI] Bey/Hanım, işleminizin sorunsuz tamamlanmasına aracılık etmekten memnuniyet duyduk. Bizden aldığınız hizmetten memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, bize sonradan ulaşacak ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: siringayrimenkul.com/yorum Vakit ayırdığınız için şimdiden teşekkür eder, ihtiyaç duyduğunuz her konuda hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
 
 ### Varyant A — Satış Sonrası
 
-Merhaba [MÜŞTERİ ADI] Bey/Hanım, tapu devrinizin sorunsuz tamamlanmasına aracılık etmekten memnuniyet duyduk; hayırlı olsun. Satış sürecimizden memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, evini satmayı düşünen diğer ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: [GOOGLE YORUM LİNKİ] Vakit ayırdığınız için şimdiden teşekkür eder, ilerideki gayrimenkul işlemlerinizde de hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
+Merhaba [MÜŞTERİ ADI] Bey/Hanım, tapu devrinizin sorunsuz tamamlanmasına aracılık etmekten memnuniyet duyduk; hayırlı olsun. Satış sürecimizden memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, evini satmayı düşünen diğer ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: siringayrimenkul.com/yorum Vakit ayırdığınız için şimdiden teşekkür eder, ilerideki gayrimenkul işlemlerinizde de hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
 
 ### Varyant B — Kiralama Sonrası
 
-Merhaba [MÜŞTERİ ADI] Bey/Hanım, kiralama sürecinizin sözleşme ve teslimle birlikte tamamlanmasına aracılık etmekten memnuniyet duyduk; hayırlı olsun. Sürecimizden memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, evini kiraya vermeyi düşünen diğer ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: [GOOGLE YORUM LİNKİ] Vakit ayırdığınız için şimdiden teşekkür eder, ihtiyaç duyduğunuz her konuda hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
+Merhaba [MÜŞTERİ ADI] Bey/Hanım, kiralama sürecinizin sözleşme ve teslimle birlikte tamamlanmasına aracılık etmekten memnuniyet duyduk; hayırlı olsun. Sürecimizden memnun kaldıysanız, Google üzerinde birkaç cümlelik bir değerlendirme bırakmanız bizim için çok değerli olur — deneyiminiz, evini kiraya vermeyi düşünen diğer ev sahiplerine yol gösteriyor. Yorumunuzu şu bağlantıdan bırakabilirsiniz: siringayrimenkul.com/yorum Vakit ayırdığınız için şimdiden teşekkür eder, ihtiyaç duyduğunuz her konuda hizmetinizde olduğumuzu hatırlatmak isteriz. Özgün Şirin — Şirin Gayrimenkul | Eryaman
 
 ---
 

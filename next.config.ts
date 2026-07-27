@@ -13,6 +13,15 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
+      // Google yorum kısa yolu: müşteriye "siringayrimenkul.com/yorum" demek,
+      // g.page/r/... bağlantısını okumaktan kolay ve markalı. permanent DEĞİL —
+      // hedef Google tarafında değişebilir ve dış siteye kalıcı yönlendirme
+      // vermek istemiyoruz.
+      {
+        source: "/yorum",
+        destination: "https://g.page/r/CYTc7nWjtnEoEBM/review",
+        permanent: false,
+      },
       // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
       // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
       // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.
