@@ -128,22 +128,21 @@ export default function KirayaVermekPage() {
       </header>
 
       <section className="mt-10 max-w-3xl rounded-2xl border border-gold/40 bg-gold/10 p-6">
-        <h2 className="text-xl">Ev Sahibi Olarak Bize Komisyon Ödemezsiniz</h2>
+        {/* Bu kutu sayfanın en değerli yeri (H1'in hemen altı, ilk ekran) — buraya
+            ayırt edici olan konur. Daha önce burada "bize komisyon ödemezsiniz"
+            yazıyordu; kaldırıldı: yönetmelik her emlakçı için aynı olduğundan hiçbir
+            ofisi diğerinden ayırmıyor ve ilişkiyi parayla açmak "bunlar nereden
+            kazanıyor" sorusunu doğuruyor. Komisyon bilgisi SSS'te duruyor — arayan
+            orada bulur. Kutunun konusu artık ev sahibinin 1 numaralı korkusu. */}
+        <h2 className="text-xl">Asıl Risk Kira Değil, Kiracıdır</h2>
         <p className="mt-3 text-base leading-relaxed text-body">
-          En sık sorulan soru bu: <strong className="font-semibold text-navy">kiralamada hizmet
-          bedeli kural olarak kiracıdan alınır</strong> ve yönetmelik gereği bir aylık kira
-          bedelini (artı KDV) aşamaz. Yani kiracı bulma, eleme, sözleşme ve teslim sürecini bize
-          bırakmanın size doğrudan bir komisyon maliyeti olmaz. Kendi hesabınızı{" "}
-          <Link
-            href="/araclar/emlak-komisyonu-hesaplama"
-            className="font-semibold text-gold-dark hover:underline"
-          >
-            komisyon hesaplayıcımızda
-          </Link>{" "}
-          görebilirsiniz.
+          Yanlış kira evinizi birkaç ay boş bekletir; <strong className="font-semibold text-navy">
+          yanlış kiracı yıllarca uğraştırır</strong>. Bu yüzden işin en çok emek verdiğimiz kısmı
+          ilan vermek değil, adayı elemektir: çalışma düzeni, ödeme gücü ve referanslar görüşme
+          aşamasında sorgulanır; evinize yalnızca uygun bulduğumuz adaylar gelir. İlan trafiğini
+          biz karşıladığımız için telefonunuz gün boyu çalmaz. Nihai kiracı kararı ise her zaman
+          sizindir — biz eleriz, siz seçersiniz.
         </p>
-        {/* Personanın 1 numaralı sorusunun cevabı burada veriliyor; ikna anı
-            geçmeden ikinci kapıyı açıyoruz. */}
         <CtaButton href="/ev-degerleme" variant="primary" className="mt-4">
           Kiracı Arama Sürecini Başlatalım
         </CtaButton>
