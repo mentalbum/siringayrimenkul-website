@@ -107,12 +107,15 @@ export default function HakkimizdaPage() {
       {/* Ofisin kendisi. Ziyaretçilerin bir kısmı buraya "beni arayan / bana
           tavsiye edilen bu ofis gerçek mi" sorusuyla geliyor; o soruya en hızlı
           cevabı metin değil, kapıdan içerisi veriyor. */}
+      {/* Tek kare, ama "çalışırken" hâli: iki benzer açıyı yan yana koymak ek
+          bilgi vermiyordu. Doğrulama anında gelen ziyaretçi için içinde insan
+          olan bir ofis, boş bir mekândan ikna edicidir. */}
       <figure className="mt-8">
         <Image
-          src="/images/ofis-ic-mekan.jpg"
+          src="/images/ofis-ic-mekan-2.jpg"
           alt={`${siteConfig.name} ofisi — Tunahan Mahallesi, 4. Etap Çarşı, Eryaman`}
           width={1284}
-          height={936}
+          height={934}
           preload
           sizes="(min-width: 896px) 896px, 100vw"
           className="w-full rounded-2xl border border-border object-cover"

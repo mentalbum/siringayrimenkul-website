@@ -233,24 +233,26 @@ export default async function SitePage({ params }: Props) {
               </figcaption>
             </figure>
           )}
-          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
-            <span>
-              {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
-            </span>
-            <TrackedCtaLink
-              href={siteConfig.sahibindenUrl}
-              gaEvent="site_ust_sahibinden"
-              variant="ghost"
-              className="px-0 font-semibold text-gold-dark"
-            >
-              sahibinden.com mağazamız →
-            </TrackedCtaLink>
-          </p>
           <p className="text-base font-medium text-navy">
             {`${site.isim}, Eryaman'da ${mahalle.isim} sınırları içinde yer alan ${
               tipi ? `${tipi} ` : ""
             }bir yerleşimdir. Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`}
           </p>
+          {/* Sayfadaki İLK tıklanabilir öğe ev sahibinin kapısı olsun. Daha önce
+              burada sahibinden.com kutusu vardı ve ziyaretçiyi 0,4. ekranda
+              siteden dışarı çıkarıyordu; ev sahibi CTA'sı ise 3. ekrandaydı.
+              İlan arayan için bağlantı duruyor, sadece açıklamanın altına indi. */}
+          <div className="flex flex-wrap items-center gap-3">
+            <CtaButton
+              href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}
+              variant="primary"
+            >
+              Evinizi Değerlendirelim
+            </CtaButton>
+            <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline">
+              {siteConfig.phoneDisplay}
+            </CtaButton>
+          </div>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           {site.aciklama.includes("sözlüğümüzdeki kat irtifakı maddesinde") && (
             <p className="text-sm leading-relaxed text-muted">
@@ -269,6 +271,19 @@ export default async function SitePage({ params }: Props) {
             </p>
           )}
           <p className="text-sm leading-relaxed text-muted">{mahalle.kisaAciklama}</p>
+          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
+            <span>
+              {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
+            </span>
+            <TrackedCtaLink
+              href={siteConfig.sahibindenUrl}
+              gaEvent="site_ust_sahibinden"
+              variant="ghost"
+              className="px-0 font-semibold text-gold-dark"
+            >
+              sahibinden.com mağazamız →
+            </TrackedCtaLink>
+          </p>
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {site.adalar.map((ada) => (
