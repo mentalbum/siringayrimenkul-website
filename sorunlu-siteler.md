@@ -53,36 +53,22 @@ ve 18477 (kapı no 1). 18477/1 tapusu: "A ve B bloktan oluşan 14 katlı betonar
 görünüyor (39.9989911/32.6144095) ve orası 19524/2 = "16 adet dubleks ev" — bambaşka bir yapı
 tipi. İkisinden biri yanlış yerde; hangisi?
 
-⚠️ **ÖZGÜN'E — Hürev ile Ata Life aynı site mi? (tek kalan gerçek soru)**
+✅ **KAPANDI — Ata Mahallesi 44774/3 = Ata Life Sitesi.** Aynı parseli iddia eden ikinci
+kayıt (bir kooperatif adıydı) Özgün'ün "öyle bir yer yok" demesi üzerine tamamen kaldırıldı:
+sitenin hiçbir sayfasında, hiçbir içerik dosyasında adı geçmiyor, alternatif ad olarak da
+tutulmadı. Eski URL yalnız 404 vermesin diye Ata Life'a yönlendiriliyor. **Yeniden açma.**
 
-Yeni kanıtlar (çürütme turu + Google Maps):
-- **Ad senin listenden geliyor.** commit 8eb833a "Populate Ata Mahallesi with 75 sites from
-  Özgün's screenshots" — aynı partide Ata Life ve Hürev AYRI AYRI kayıt olarak açılmış.
-  Yani ikisini ayrı site olarak listelemişsin.
-- **44774/3 ataması ise senin değil, sonradan bir ajan turunun tahmini** (commit b28e545,
-  "gate-found coords"). Yani "Ata Life'ın tek verisi bir pin" argümanı döngüsel: o pini de
-  ajan koymuş.
-- **Eleme Hür-Ev'i gösteriyor:** ada 44774'te tam iki parsel var; /2 = Raylı Sistemciler
-  (bilgiemlak 6.742 m² vs repo poligonu 6.772 m², %0,4 sapma ile çivilendi) → geriye /3
-  kalıyor ve bilgiemlak orayı "Hür-Ev KYK (44774 Ada)", 3 blok (1-A/1-B/1-C) diye anıyor.
-- **Ama Google Maps 44774/3'e "Ata Life Sitesi" diyor:** tabelalı fotoğraf, 19 yorum (4,6),
-  adres "Ata Mahallesi 3768. Sokak". Yani sahada bugün o adı taşıyan bir tabela var.
+Parsel neden Ata Life'ın: ada 44774'te yalnız iki parsel var ve /2 Raylı Sistemciler'e
+alanla çivilendi (dizin 6.742 m² vs repo poligonu 6.772 m², %0,4 sapma) → /3 elemeyle Ata
+Life'a kalıyor; saha tabelası, Google kaydı (19 yorum, 4,6) ve 3768. Sokak adresi de onu
+gösteriyor.
 
-**✅ KAPANDI — hurev-yapi-kooperatifi KALDIRILDI (Özgün, 2026-07-29: "hürev yapı
-kooperatifi diye bir yer yok").** Kayıt bilgiemlak'ın 2013 dönemi dizininden gelmişti
-("Hür-Ev KYK (44774 Ada)", 3 blok). O parselde (44774/3) bugün **Ata Life Sitesi** var:
-saha tabelası, Google kaydı (19 yorum, 4,6) ve 3768. Sokak adresi onu gösteriyor. Ada
-44774'te yalnız iki parsel var; /2 Raylı Sistemciler'e alanla çivilendi (bilgiemlak
-6.742 m² vs repo poligonu 6.772 m², %0,4) → /3 elemeyle Ata Life'a kalıyor.
-
-Kayıt silindi ve Ata Life'a yönlendirildi. **Kooperatif adı alternatif ad olarak da
-tutulmadı** — Özgün tanımıyor, yani halk o adı kullanmıyor demektir; bilgiemlak'ın eski
-dizin etiketini arama terimi diye siteye taşımak yanlış olurdu.
-
-**DERS:** bilgiemlak'ın dizin etiketleri (kooperatif adları, "N Ada Ortak Yapı Grup" gibi
-betimleyici başlıklar) SİTE ADI değildir. Bu turda aynı kalıptan üç kayıt çıktı: Hürev,
-Ortak Grup Yapı, Türk Konut. Yeni kayıt açarken bilgiemlak başlığını tek kaynak olarak
-kullanma; Özgün'ün listesi veya saha tabelası doğrulamıyorsa açma.
+**DERS — bu turda ÜÇ kayıt aynı kalıptan çıktı.** eryaman.bilgiemlak.com.tr adını bilmediği
+parseller için betimleyici başlık üretiyor ("N Ada Ortak Yapı Grup", kooperatif adları,
+"10 Blok (45075 Ada)"). Bunlar dizin etiketi, SİTE ADI değil — üçü de gerçekte başka bir
+yerleşimin parseliydi (bkz. Ortak Grup Yapı → Umut Yapı, Türk Konut → çatı marka). Kaynağı
+koordinat/ada ipucu için kullan, ad kaynağı olarak kullanma; Özgün'ün listesi veya saha
+tabelası doğrulamıyorsa yeni kayıt açma.
 
 ✅ **KAPANDI — ela-concept-evleri SİLİNDİ (Özgün, 2026-07-28).** Kanıt yetersiz ve parsel
 uyduda boş. (Eski not:) Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:
@@ -130,8 +116,7 @@ Güzelkent'in bu kuşağı imar parseline dönüşmemiş. Adres ve koordinat kay
 - ✅ alpar Kİ formatıyla yazıldı (47541/3).
 - Yazıcı ipucu: Yandex 'Yazıcı Opensky Konutları' (Zirve Cad) — yazici-modern ile bağ? → sonra.
 - KALAN 25: Botanik ikilisi (10-botanik + botanik-sitesi ↔ Botanik Evleri 43253/6 /Arissa/Yeni
-  — isim kanıtı yetersiz, eşleştirme Özgün'e), ata-life↔hurev 44774/3 çekişmesi (pin vs pin),
-  manzara/mercankent-manzara, cumhuriyet-SOA 17491, 4-devlet+goksu-metrokent (okul parselleri),
+  — isim kanıtı yetersiz, eşleştirme Özgün'e),   manzara/mercankent-manzara, cumhuriyet-SOA 17491, 4-devlet+goksu-metrokent (okul parselleri),
   tan-yildizi, yazici-modern, zekioglu, yildiz-life, hotki-meydan, kurtulus (pin tarlaya düşüyor),
   celikler, konut-sitesi (YS), 75-yil, turk-konut (ŞŞ), kanat, ortak-grup, enday, dostlar/tatlı-
   yamaç mahalle taşımaları — hepsi Özgün'ün yerel bilgisine kaldı.
@@ -203,8 +188,6 @@ Güzelkent'in bu kuşağı imar parseline dönüşmemiş. Adres ve koordinat kay
   parseli — o soru kapandı), sehit-ferhat-koc=18645/1 (be'nin 'Eray-3'ü; eski ad altAd yazıldı),
   ataturk-altay=17313/1.
 - Yeni ipuçları/çelişkiler:
-  * hurev pini 44774/3 ARSA'ya düştü — o arsa 12.748 m² = ata-life notundaki arsa! (ata-life
-    arsası 44774/3'müş). Hürev'in gerçek parseli bulunamadı → Özgün.
   * beloren = Yandex 'Belören Manzara Evleri' (44780/2 = bilinen 7.955 m² Kİ arsa; erkent-umut
     aynı parsel şüphesi sürüyor) → hâlâ arsa, yazılamaz.
   * ata/manzara-evleri ↔ Yandex 'Göksu Manzara Evleri' 63379/7 (14 katlı KM) — mahalle çelişkisi → Özgün.
@@ -239,7 +222,7 @@ Güzelkent'in bu kuşağı imar parseline dönüşmemiş. Adres ve koordinat kay
     (isim de düzelir mi?). 46382='Cumhuriyet Sitesi 12-20.Blok' (Doğakent'te GERÇEK bir
     Cumhuriyet Sitesi — SOA/cumhuriyet-sitesi 17491 kimlik şüphesiyle bağlantılı olabilir → Özgün).
     46381=Emek+Uğur Apt; 46385=Armina Park/Ayka-Park/Salkuma (yeni adaylar).
-  * hurev: 44774/1,4,5,6 yok; /2=raylı-sistemciler, /3=ata-life arsası → Hürev'in parseli
+  * ada 44774: /1,4,5,6 yok; /2=raylı-sistemciler, /3=ata-life → ikinci kaydın parseli
     bulunamadı (belki komşu ada) → Özgün/Maps.
   * ✔ demirglass = be 'İlk Umut Sitesi (Demirglas Sit.)' 46263/2 (11 katlı A konut + 1 katlı
     B ticari, 6.162 m² KM; 46263/1=13.763 m² TARLA) — yazıldı. Dosya YS'de, bölge ŞŞ → taşıma? Özgün.
@@ -257,7 +240,7 @@ Güzelkent'in bu kuşağı imar parseline dönüşmemiş. Adres ve koordinat kay
   75-yil (SOA), demirglass, celikler, konut-sitesi (YS), turk-konut (ŞŞ), turk-konut-calisanlar,
   intes-dogakent, bahar (eryaman), ataturk-sitesi, izgi-park (altay), duru-life, tuna-park,
   enday, dostlar-birikim, eser-yapi-susuz, tatli-yamac-palmiye, ekiciler, meric, kucuk-ankara-
-  villalari, kurtulus, sehit-ferhat-koc, 1-portakal ailesi (Q), Ata 11'lisi (dogasu/hurev/kainat/
+  villalari, kurtulus, sehit-ferhat-koc, 1-portakal ailesi (Q), Ata 11'lisi (dogasu/kainat/
   kanat/manzara/mercankent/ortak-grup/rayli-sistemciler/sarmasikli/sumeyra-2/turuncu), SOA
   kardelen, goksu-park-vadi, kiratli-akropolis (Kıratlı Emlak İnş, Yeni Batı, '144 daire+6
   villa' TEK kaynak — yazılmadı), turku-sitesi, park-sera, botanik-cumhuriyet, gestas-toki (Q).
@@ -707,7 +690,7 @@ goksu/enday-sitesi, seyh-samil/turk-konut, cumhuriyet/botanik-sitesi, ata/kanat-
 - sorguçaspor → ÇÖZÜLEMEDİ (hiçbir kaynakta yok)
 
 ### TKGM bekleyen nokta sorguları (API bugün 403 — kota)
-hotki-meydan (18684/1 teyidi), altas-relax-line, hurev, mercankent (44780 parsel no), ritim-eryaman, ma1-tower, pozitif-life, eser-yapi, polsan-gozde 46482/1 canlı teyit. Kota açılınca koşulacak; koordinatlar Yandex/yerel rehber kaynaklı eklendi.
+hotki-meydan (18684/1 teyidi), altas-relax-line, mercankent (44780 parsel no), ritim-eryaman, ma1-tower, pozitif-life, eser-yapi, polsan-gozde 46482/1 canlı teyit. Kota açılınca koşulacak; koordinatlar Yandex/yerel rehber kaynaklı eklendi.
 
 ## Nover WestLife koordinatı — kaynaklar çelişkili (2026-07-23)
 Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor — bu nokta Eryaman'ın DOĞUSU (ŞOA/Şeker tarafı); oysa tüm proje kaynakları Yeni Batı / 5412. Sokak / Necip Fazıl Cad. diyor (batı yakası). Yandex kaydı yanlış konumlanmış olabilir → koordinat EKLENMEDİ. Sky Göksu için de Yandex'te doğrudan kayıt yok (adres: Sancak Sok. No:3). İkisi de sahada/harita üzerinde teyit bekliyor.
@@ -738,7 +721,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - Cumhuriyet Sitesi 46382/1 → KEOS alanı ~13.697 m² → metin zenginleşti (nitelik hâlâ TKGM'de).
 
 ### Yeni Özgün kartları
-- **Ata Life ↔ Hür-Ev KYK (44774/3):** Hürev'in Yandex koordinatı KBS'de Ata Life'ın parseline (44774/3, ARSA 12.748) düşüyor; be'de 'Hür-Ev KYK (44774 Ada)' hedefe 6,5 m. Ata Life, eski Hür-Ev kooperatif arsasının yeni projesi mi, yoksa iki ayrı yerleşim mi? (Hürev'e ada YAZILMADI.)
 - **Konut Sitesi (YS) ↔ Atadostlar:** be 'Atadostlar (46231-46232 birleşik)' diyor; bizim atadostlar kaydı 46232/1'de, 'Konut Sitesi' kaydı 46231/1'de (TKGM: A-B-C 3 kargir apartman = Atadostlar 1-A/B/C bloklarıyla uyumlu). 'Konut Sitesi' jenerik POI adı — gerçekte Atadostlar'ın 1. adası olabilir. (KEOS geometrisi scratchpad'te; kart çözülmeden boundary yazılmıyor.)
 - **Ritim Eryaman ↔ Başkent Sular (18477):** Ritim koordinatı Başkent Sular kaydımızın 25 m yanı; Ritim 'Özer Grup 96 konut kentsel dönüşüm' — Başkent Sular'ın yıkılıp yeniden yapımı olabilir. Öyleyse birleştirme+redirect gerekir.
 - **Ma1 Tower ada çelişkisi:** KBS nokta sorgusu 64517/1 (Arsa 5.534) diyor, be 63362 (10 m mesafe) diyor; OSM durakları 450 m uzakta. Kentsel dönüşümde çifte yenileme olabilir — TKGM kota açılınca nokta sorgusuyla kesinleştirilecek, şimdilik ada yazılmadı.
@@ -758,7 +740,6 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 ### Yeni/güncellenen kartlar
 - **Pozitif Life ↔ Anka Vega (47544/4) YENİ ÇAKIŞMA:** Pozitif'in Yandex noktası TKGM'de 47544/4'e düştü — o parsel bizde Anka Vega'nın ("14 katlı A1+A2 betonarme ofis", 7.268 m²; koordinatlar 25 m). İki ad aynı yapıya mı ait (Meva/Pozitif ROİ), ayrı mı? Pozitif'e ada YAZILMADI.
 - **Ritim Eryaman:** noktası adasız parsel "/51"e düştü (Tarla, 10.926 m² — kentsel dönüşüm tapuya henüz yansımamış). Başkent Sular'ın 18477/1'inden AYRI parsel → dönüşüm hipotezi zayıfladı ama Tarla niteliği yüzünden dışlanamadı; ada yazılamıyor (ada no yok). Kart açık.
-- **Hürev ↔ Ata Life:** TKGM de Hürev noktasını 44774/3'te doğruladı (üçüncü kaynak). Kart açık, veri tarafı tamam.
 
 ## İki kart daha KAPANDI (2026-07-23 gece, kota penceresi)
 - **10. Botanik 43264/8 GERÇEK:** önceki 404 yanlış kadastro ID'sindendi; nokta sorgusu Yuva kadastrosunda buldu (Arsa, 7.895 m²). Kayıt+boundary işlendi; Arissa (43264/7) komşuluğu metne girdi. '43264/8 tapuda yok' kartı kapandı.
@@ -779,7 +760,7 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 - Sınırsız kayıt KALMADI: Mercan Kent (44780/2) ve Eser Yapı (44752/1) TKGM geometrileriyle haritaya girdi (KBS ile birebir doğrulandı).
 - 71 kaydın metnine işlenmemiş tapu verisi için 79 parsel cache'e çekildi (~/.cache/tkgm-eryaman) — sonraki içerik dalgasının hammaddesi hazır; sorgu gerekmeden yazılabilir.
 - Bulunamayan 3 parsel (kadastro yenileme şüphesi): cumhuriyet 43267/1, goksu 16828/4, susuz 63340/6 — nokta sorgusuyla çözülebilir, acil değil.
-- Adasız 17 kayıt: 9'u açık kart/araştırma (Hürev, Ritim, Pozitif, ap-ist-port, bp/ela/mia, Çelikler, 75-yıl), 6'sı kaynaksız hayalet (silinme kararı Özgün'de), 2'si yeni koordinatsız kayıt (Nover, Sky).
+- Adasız 17 kayıt: 9'u açık kart/araştırma (Ritim, Pozitif, ap-ist-port, bp/ela/mia, Çelikler, 75-yıl), 6'sı kaynaksız hayalet (silinme kararı Özgün'de), 2'si yeni koordinatsız kayıt (Nover, Sky).
 
 ## YENİ ÇAKIŞMA: Ada Loft ↔ Umut Yapı (Ata 44756/2) — 2026-07-24
 Tapu-derinliği taramasında çıktı: ata/ada-loft-eryaman ile ata/umut-yapi-sitesi aynı parselde (44756/2, ARSA 16.809 m²). Ada Loft "2024 teslim, 3 blok 92 daire loft projesi"; Umut Yapı "Doğasu komşusu, 16,8 dönüm". Aynı arsanın eski/yeni adı mı, yoksa biri yanlış parselde mi? (Aynı adanın /1 parseli de Doğasu çifti çakışmasında.) İkisine de tapu cümlesi YAZILMADI.
