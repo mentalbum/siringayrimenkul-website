@@ -22,12 +22,18 @@ tek pinden geliyor. Paylaşımlı kooperatif parseli mi, yoksa ata-life yanlış
 (Not: parselin tapu niteliği "Arsa" görünüyor ama içinde 3 bina var — bayat cins kaydı; buradan
 kat mülkiyeti/kredi çıkarımı YAPILMAZ.)
 
-❌ **SİLİNMESİ ÖNERİLEN — susuz/sky-goksu (BÖLGE DIŞI, İKİNCİ KEZ).** Bu kayıt 2026-07-17'de
-Özgün onayıyla zaten silinmişti; sonra RDV İnşaat'ın Sancak Sok. No:3 adresi görülüp yeniden
-açıldı. O adres şirketin OFİS adresi. Müteahhidin kendi sayfası (sky-b.com.tr): proje
-"YUKARIYURTÇU MAHALLESİ'NDE ... ÇANKAYA ÜNİVERSİTESİ'NE 500 M" — Eryaman'a 18,7 km, Eskişehir
-Yolu'nun güneyi. tasinmazhaber + emlakjet aynı yeri doğruluyor. Silme + /mahalleler/susuz-mahallesi'ne
-yönlendirme bekliyor (silme izni bu turda verilmedi).
+✅ **sky-goksu ÇÖZÜLDÜ — 63356/2, Susuz-İmar (Özgün, 2026-07-28).** Bu tur "bölge dışı,
+silinmeli" diye raporlanmıştı; YANLIŞTI. Özgün TKGM parsel sorgu ekranını gönderdi:
+40.004962762457076 / 32.65200555324555 → **63356/2, Susuz-İmar (kadastro 123432), 4.963,12 m²**,
+harita etiketi "Göksu Sky Rezidans", Sancak Sk. üzerinde, Furkan Cd. ve Göksu Başak Life
+komşuluğunda. Yani RDV İnşaat'ın verdiği Sancak Sok. adresi PROJE adresiydi, ofis adresi değil.
+
+**ARAŞTIRMA HATASI — dersi burada dursun:** ajan sky-b.com.tr'deki "Sky Göksu B" projesini
+(Yukarıyurtçu, Çankaya Ü. yanı) bu kayıtla aynı sandı ve "18,7 km uzakta, bölge dışı" sonucuna
+vardı. Aynı müteahhidin BENZER ADLI BAŞKA projesiydi. Dört kaynak aynı yanlış eşleşmeyi
+doğruladığı için güven "yüksek" göründü — çoklu kaynak, yanlış varlığı doğruluyorsa işe yaramaz.
+Kayıt haritalandı + metin gerçek verilerle yeniden yazıldı; alternatifAdlar'a "Göksu Sky Rezidans"
+eklendi.
 
 ❓ **ÖZGÜN'E — çelikler-sitesi ↔ esenkent-sitesi.** mahalleportal 45824/1'i "Çelikler Sitesi"
 diyor; aynı noktanın 33 m'sinde Yandex "Esenkent Evleri" kayıtlı ve repo/ilanlar da Esenkent
