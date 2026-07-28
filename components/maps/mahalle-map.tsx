@@ -43,11 +43,15 @@ function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
     for (const halka of halkalar) for (const nokta of halka) bounds.extend(nokta);
     // Kenar payı: parsel kutuya yapışık durmasın, çevresi de bir miktar görünsün.
     map.fitBounds(bounds, 44);
-    // Küçük parsellerde fitBounds çatıların arasına girecek kadar yakınlaşabiliyor;
-    // orada bağlam kayboluyor, o yüzden bir tavan koyuyoruz.
+    // Tavan neden 17: küçük parsellerde (örn. BP Residence, 4.116 m²) fitBounds
+    // 18'e çıkıyor ve Eryaman'ın bir kısmında Google'ın o seviyede net uydu
+    // görüntüsü yok — parsel doğru çerçevelenirken görüntü bulanıklaşıyor.
+    // Canlıda ölçüldü (2026-07-28): 18 bulanık, iki kademe altı net ve parsel
+    // hâlâ baskın. Büyük parseller zaten 17'nin altında kaldığı için bu tavan
+    // yalnız küçükleri sınırlar.
     const dinleyici = google.maps.event.addListenerOnce(map, "idle", () => {
       const z = map.getZoom();
-      if (typeof z === "number" && z > 18.5) map.setZoom(18.5);
+      if (typeof z === "number" && z > 17) map.setZoom(17);
     });
     return () => google.maps.event.removeListener(dinleyici);
   }, [map]);
