@@ -2,5 +2,23 @@
   "isim": "Enday Sitesi",
   "slug": "enday-sitesi",
   "mahalleSlug": "goksu-mahallesi",
-  "aciklama": "Enday Sitesi, Ankara Etimesgut'a bağlı Göksu Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Göksu Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "koordinat": {
+    "lat": 39.995077,
+    "lng": 32.639363
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/enday-sitesi-boundary.geojson",
+  "aciklama": "Enday Sitesi, Göksu Mahallesi'nde, Susuz Gölü çevresindeki kooperatif kuşağında yer alır; bu dokuda birden çok site tek büyük yerleşim adasını paylaşır. Aynı adayı paylaştığı komşuları arasında Eceser, Göksu Aura, Göksu Vadi ve Utkukent siteleri bulunur. Paylaşılan yerleşim adası TKGM kayıtlarında yaklaşık 18.815 m²'lik tek parseldir; tapu kaydı adada 11 ile 13 kat arasında değişen numaralı bloklar sayar. Paylaşımlı düzen, blokların arasına geniş bir ortak çevre bırakır. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "ozellikler": [
+    "Susuz Gölü çevresi kooperatif kuşağı",
+    "Paylaşımlı yerleşim adası — komşuları Eceser, Göksu Aura, Göksu Vadi, Utkukent",
+    "Tapuda 11-13 kat arası numaralı bloklar",
+    "Yaklaşık 18.815 m²'lik ortak parsel"
+  ],
+  "adalar": [
+    {
+      "no": "46453",
+      "parsel": "1"
+    }
+  ],
+  "zenginlestirildi": "2026-07-28"
 }

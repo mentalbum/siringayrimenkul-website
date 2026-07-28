@@ -1,7 +1,8 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import { useRouter } from "next/navigation";
-import { APIProvider, Map, Polygon } from "@vis.gl/react-google-maps";
+import { APIProvider, Map, Polygon, useMap } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
 import { geoJsonPolygonToPaths, polygonCentroid, ringWidthMeters } from "@/lib/geo";
 import { brandMapStyle } from "@/lib/map-style";
@@ -19,6 +20,39 @@ interface MahalleMapProps {
    * no label) behind the individual site parcels. */
   mahalleBoundary?: GeoJSON.Feature;
   siteler: SiteMapEntry[];
+  /** Tek bir yerleşimin anlatıldığı sayfalarda (site ve ada sayfaları) harita
+   * mahalleyi değil o parseli anlatır: görünüm parsele oturtulur ve uydu
+   * katmanıyla açılır — ziyaretçi binaları ve parselin gerçek dokusunu görür,
+   * site adı da taralı alanın içinde okunacak ölçekte kalır. Mahalle
+   * sayfasında kapalıdır; orada amaç tüm mahalleyi bir arada göstermek. */
+  parseleOdakla?: boolean;
+}
+
+/** fitBounds ile parseli çerçeveye oturtur. Sabit bir zoom yerine bunu
+ * kullanmamızın sebebi: parseller 4 dönümden 30 dönüme kadar değişiyor ve
+ * harita kutusu responsive — tek bir zoom değeri hepsinde doğru olmuyor. */
+function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
+  const map = useMap();
+  const pathsRef = useRef(paths);
+  pathsRef.current = paths;
+
+  useEffect(() => {
+    const halkalar = pathsRef.current;
+    if (!map || halkalar.length === 0) return;
+    const bounds = new google.maps.LatLngBounds();
+    for (const halka of halkalar) for (const nokta of halka) bounds.extend(nokta);
+    // Kenar payı: parsel kutuya yapışık durmasın, çevresi de bir miktar görünsün.
+    map.fitBounds(bounds, 44);
+    // Küçük parsellerde fitBounds çatıların arasına girecek kadar yakınlaşabiliyor;
+    // orada bağlam kayboluyor, o yüzden bir tavan koyuyoruz.
+    const dinleyici = google.maps.event.addListenerOnce(map, "idle", () => {
+      const z = map.getZoom();
+      if (typeof z === "number" && z > 18.5) map.setZoom(18.5);
+    });
+    return () => google.maps.event.removeListener(dinleyici);
+  }, [map]);
+
+  return null;
 }
 
 interface SiteShape {
@@ -97,7 +131,12 @@ function buildShapes(
   });
 }
 
-export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps) {
+export function MahalleMap({
+  center,
+  mahalleBoundary,
+  siteler,
+  parseleOdakla = false,
+}: MahalleMapProps) {
   const router = useRouter();
 
   if (!siteConfig.googleMapsApiKey) {
@@ -126,9 +165,21 @@ export function MahalleMap({ center, mahalleBoundary, siteler }: MahalleMapProps
         defaultZoom={15}
         gestureHandling="greedy"
         clickableIcons={false}
-        styles={brandMapStyle}
+        // Tekil sayfalarda uydu+etiket ("hybrid"): parselin üzerindeki gerçek
+        // yapılar görünür, sokak adları da okunur kalır. Markalı yol stili
+        // yalnız yol görünümüne uygulandığı için mahalle sayfasında devrede.
+        // NOT: kütüphanede `defaultMapTypeId` YOK — geçerli olan tek ad
+        // `mapTypeId` (bkz. use-map-options.ts'teki mapOptionKeys). Ziyaretçi
+        // "Harita" düğmesine basınca React yeniden render olmadığı için
+        // setOptions tekrar çalışmaz; seçimi korunur.
+        {...(parseleOdakla
+          ? { mapTypeId: "hybrid" }
+          : { styles: brandMapStyle })}
         style={{ width: "100%", height: "100%" }}
       >
+        {parseleOdakla && shapes.length > 0 && (
+          <ParseleOdakla paths={shapes.map((shape) => shape.paths)} />
+        )}
         {mahallePaths.length > 0 && (
           <Polygon
             paths={mahallePaths}

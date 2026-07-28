@@ -2,21 +2,26 @@
   "isim": "Nover WestLife",
   "slug": "nover-westlife",
   "mahalleSlug": "cumhuriyet-mahallesi",
+  "koordinat": {
+    "lat": 39.987727,
+    "lng": 32.663124
+  },
+  "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/nover-westlife-boundary.geojson",
+  "aciklama": "Nover WestLife, Cumhuriyet Mahallesi'nin Yeni Batı kesiminde, Necip Fazıl Caddesi üzerinde yer alan, Nover Yapı imzalı tamamlanmış bir konut projesidir. Proje tanıtımlarına göre yaklaşık 6.200 m²'lik arsada on altı katlı tek bloktan oluşur; 129 daire ile zeminde 4 dükkân barındırır. Yeni Batı'nın genç, yüksek katlı silüetinin parçasıdır. TKGM kaydında parsel yaklaşık 6.439 m² ve arsa niteliğindedir; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "62661",
+      "parsel": "1"
+    }
+  ],
   "alternatifAdlar": [
     "Nover West Life"
   ],
-  "aciklama": "Nover WestLife, Cumhuriyet Mahallesi'nin Yeni Batı kesiminde, Necip Fazıl Caddesi üzerinde yer alan, Nover Yapı imzalı tamamlanmış bir konut projesidir. Proje tanıtımlarına göre yaklaşık 6.200 m²'lik arsada on altı katlı tek bloktan oluşur; 129 daire ile zeminde 4 dükkân barındırır. Yeni Batı'nın genç, yüksek katlı silüetinin parçasıdır. TKGM kaydında parsel yaklaşık 6.439 m² ve arsa niteliğindedir; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "16 katlı tek blok — 129 daire + 4 dükkân (proje tanıtımı)",
     "Yaklaşık 6,2 dönümlük arsa",
     "Nover Yapı imzalı — teslim edilmiş proje",
     "Necip Fazıl Caddesi — Cumhuriyet (Yeni Batı)"
   ],
-  "zenginlestirildi": "2026-07-23",
-  "adalar": [
-    {
-      "no": "62661",
-      "parsel": "1"
-    }
-  ]
+  "zenginlestirildi": "2026-07-23"
 }

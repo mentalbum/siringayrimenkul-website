@@ -1,7 +1,5 @@
 import type { MetadataRoute } from "next";
 import {
-  adaRouteKey,
-  getAllAdalar,
   getAllBlogPosts,
   getAllEtaplar,
   getBlogPostLastModified,
@@ -64,14 +62,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
-    getAllAdalar(mahalle.slug).map((ada) => ({
-      url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`,
-      lastModified: getSiteLastModified(mahalle.slug, ada.site.slug),
-      changeFrequency: "monthly" as const,
-      priority: 0.6,
-    }))
-  );
+  // Ada sayfaları bilinçli olarak sitemap DIŞINDA (2026-07-28). Search Console
+  // ölçümü: 777 ada sayfası 3 ayda 0 tıklama / 0 gösterim aldı — "17312 ada"
+  // diye arama yapılmıyor. Buna karşılık 727 site sayfasının 329'u "keşfedildi,
+  // şu anda dizine eklenmiş değil" durumundaydı; tarama bütçesi getirisi olmayan
+  // ada sayfalarına gidiyordu. Sayfalar duruyor (site sayfasından tıklayan
+  // kullanıcı tapu bilgisini görsün) ama noindex + sitemap dışı: bütçe site
+  // sayfalarına aksın. Geri almak için burayı ve ada sayfasındaki robots'u aç.
 
   const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => {
     // Edited posts should signal their real modification time so crawlers
@@ -90,7 +87,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mahalleSayfalari,
     ...siteSayfalari,
     ...etapSayfalari,
-    ...adaSayfalari,
     ...blogSayfalari,
   ];
 }

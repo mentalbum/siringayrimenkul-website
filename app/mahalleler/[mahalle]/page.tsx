@@ -25,6 +25,7 @@ import { SiteCard } from "@/components/site/site-card";
 import { Reveal } from "@/components/ui/reveal";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
+import { ustBolgeEtiketi } from "@/lib/bolge";
 
 type Props = {
   params: Promise<{ mahalle: string }>;
@@ -62,7 +63,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Tam mahalle adıyla birlikte başlık 90+ karaktere çıkıyordu ve Google
     // ~60 karakterde kestiği için asıl anahtar kelime "Emlakçısı" görünmez
     // oluyordu. Marka zaten alan adında ve sonuç kartının üstünde görünüyor.
-    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — Eryaman Emlakçısı` },
+    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${ustBolgeEtiketi(mahalle)} Emlakçısı` },
     description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:

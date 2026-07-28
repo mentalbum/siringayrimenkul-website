@@ -15,12 +15,23 @@ interface MahalleMapLoaderProps {
   center: Koordinat;
   mahalleBoundary?: GeoJSON.Feature;
   siteler: SiteMapEntry[];
+  parseleOdakla?: boolean;
 }
 
-export function MahalleMapLoader({ center, mahalleBoundary, siteler }: MahalleMapLoaderProps) {
+export function MahalleMapLoader({
+  center,
+  mahalleBoundary,
+  siteler,
+  parseleOdakla,
+}: MahalleMapLoaderProps) {
   return (
     <InViewport>
-      <MahalleMap center={center} mahalleBoundary={mahalleBoundary} siteler={siteler} />
+      <MahalleMap
+        center={center}
+        mahalleBoundary={mahalleBoundary}
+        siteler={siteler}
+        parseleOdakla={parseleOdakla}
+      />
     </InViewport>
   );
 }

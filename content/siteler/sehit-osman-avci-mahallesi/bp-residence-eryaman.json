@@ -2,7 +2,18 @@
   "isim": "BP Residence Eryaman",
   "slug": "bp-residence-eryaman",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
-  "aciklama": "BP Residence Eryaman, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071 Caddesi No:4'te, metro ve ana cadde aksına yakın konumda yer alan bir rezidans yapısıdır. İlanlarda 1+1 ve 2+1 daire tipleri görülüyor; eşyalı kiralık talebinin yüksek olduğu, yatırımcı ağırlıklı bir profil taşıyor. Binada Voltrun elektrikli araç şarj istasyonu bulunuyor — bölgede bu donatıya sahip az sayıda yapıdan biri. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "koordinat": {
+    "lat": 39.981411,
+    "lng": 32.654739
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/bp-residence-eryaman-boundary.geojson",
+  "aciklama": "BP Residence Eryaman, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071 Caddesi No:4'te, metro ve ana cadde aksına yakın konumda yer alan bir rezidans yapısıdır. İlanlarda 1+1 ve 2+1 daire tipleri görülüyor; eşyalı kiralık talebinin yüksek olduğu, yatırımcı ağırlıklı bir profil taşıyor. Binada Voltrun elektrikli araç şarj istasyonu bulunuyor — bölgede bu donatıya sahip az sayıda yapıdan biri. Tapu kaydına göre yapı, yaklaşık 4.116 m²'lik parselde on iki katlı olarak ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "46631",
+      "parsel": "2"
+    }
+  ],
   "ozellikler": [
     "1+1 ve 2+1 rezidans daireleri",
     "Metro ve ana cadde aksına yakın",

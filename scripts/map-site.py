@@ -30,14 +30,28 @@ OFFSETS = [(0, 0), (0.0002, 0), (-0.0002, 0), (0, 0.00025), (0, -0.00025),
            (0.0002, 0.00025), (-0.0002, -0.00025)]
 
 
-def tkgm(lat, lng):
-    url = f"https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/parsel/{lat}/{lng}"
+HDR = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)",
+       "Referer": "https://parselsorgu.tkgm.gov.tr/"}
+
+
+def _cek(url):
     try:
-        with urllib.request.urlopen(url, timeout=20) as r:
+        req = urllib.request.Request(url, headers=HDR)
+        with urllib.request.urlopen(req, timeout=25) as r:
             d = json.loads(r.read().decode())
         return d if isinstance(d, dict) and d.get("type") == "Feature" else None
     except Exception:
         return None
+
+
+def tkgm(lat, lng):
+    return _cek(f"https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/parsel/{lat}/{lng}")
+
+
+def tkgm_ada(kadastro_id, ada, parsel):
+    """Doğrudan ada sorgusu. Nokta ucu 401 döndüğünde (parsel bazlı kısıt) tek yol budur."""
+    return _cek(f"https://cbsapi.tkgm.gov.tr/megsiswebapi.v3/api/parsel/"
+                f"{kadastro_id}/{ada}/{parsel}/")
 
 
 def rings(geom):
@@ -94,24 +108,38 @@ def main():
     args = [a for a in sys.argv[1:] if a != "--force"]
     force = "--force" in sys.argv
     if len(args) != 4:
-        print("KULLANIM: map-site.py <mahalle> <slug> <lat> <lng> [--force]")
+        print("KULLANIM: map-site.py <mahalle> <slug> <lat> <lng> [--force]\n"
+              "     ya da map-site.py <mahalle> <slug> --ada <kadastroId>/<ada>/<parsel>")
         sys.exit(1)
-    mahalle, slug, lat, lng = args
+    ada_modu = args[2] == "--ada"
+    mahalle, slug = args[0], args[1]
     site_path = os.path.join(SITELER, mahalle, f"{slug}.json")
     if not os.path.exists(site_path):
         print(f"SORUN: site json yok: {site_path}"); sys.exit(1)
     site = json.load(open(site_path))
 
-    tk = None
-    used = (lat, lng)
-    for dlat, dlng in OFFSETS:
-        tk = tkgm(float(lat) + dlat, float(lng) + dlng)
-        if tk:
-            used = (float(lat) + dlat, float(lng) + dlng)
-            break
-    if not tk:
-        print("FLAG: parsel bulunamadı (offset'ler de tutmadı) — pin yeniden bakılmalı")
-        sys.exit(2)
+    if ada_modu:
+        try:
+            kid, ada, parsel = args[3].split("/")
+        except ValueError:
+            print("SORUN: --ada biçimi <kadastroId>/<ada>/<parsel> olmalı"); sys.exit(1)
+        tk = tkgm_ada(kid, ada, parsel)
+        if not tk:
+            print(f"FLAG: {ada}/{parsel} kadastro {kid}'de bulunamadı — kadastro id yanlış olabilir")
+            sys.exit(2)
+        used = None  # koordinat parsel merkezinden türetilir
+    else:
+        lat, lng = args[2], args[3]
+        tk = None
+        used = (lat, lng)
+        for dlat, dlng in OFFSETS:
+            tk = tkgm(float(lat) + dlat, float(lng) + dlng)
+            if tk:
+                used = (float(lat) + dlat, float(lng) + dlng)
+                break
+        if not tk:
+            print("FLAG: parsel bulunamadı (offset'ler de tutmadı) — pin yeniden bakılmalı")
+            sys.exit(2)
 
     p = tk["properties"]
     ada_parsel = f"{p['adaNo']}/{p['parselNo']}"
@@ -159,7 +187,8 @@ def main():
 
     yeni = {
         "isim": site["isim"], "slug": site["slug"], "mahalleSlug": site["mahalleSlug"],
-        "koordinat": {"lat": used[0], "lng": used[1]},
+        "koordinat": ({"lat": used[0], "lng": used[1]} if used
+                      else {"lat": round(clat, 6), "lng": round(clng, 6)}),
         "sinirGeoJSON": f"siteler/{mahalle}/{slug}-boundary.geojson",
         "aciklama": site["aciklama"],
         "adalar": [{"no": p["adaNo"], "parsel": p["parselNo"]}],

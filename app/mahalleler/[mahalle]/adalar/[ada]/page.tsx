@@ -22,6 +22,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 import { blokOzellikleri, tapuCumlesi } from "@/lib/ada-bilgi";
 import { adaOnayliEtap } from "@/lib/etap-onayli";
+import { ustBolgeEtiketi } from "@/lib/bolge";
 import { bulunmaHaliKi, tamlayanEk } from "@/lib/turkce";
 
 type Props = {
@@ -51,10 +52,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title:
       entries.length > 1
-        ? `${label} Ada Satılık ve Kiralık Daireler — ${mahalle.isim} | Eryaman Emlakçısı`
-        : `${label} Ada Satılık ve Kiralık Daireler — ${ada.site.isim} | Eryaman Emlakçısı`,
+        ? `${label} Ada Satılık ve Kiralık Daireler — ${mahalle.isim} | ${ustBolgeEtiketi(mahalle)} Emlakçısı`
+        : `${label} Ada Satılık ve Kiralık Daireler — ${ada.site.isim} | ${ustBolgeEtiketi(mahalle)} Emlakçısı`,
     description: `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
+    // Ölçülen gerçek: 777 ada sayfası 3 ayda 0 tıklama / 0 gösterim aldı — kimse
+    // "17312 ada" diye aramıyor. Aynı dönemde 727 site sayfasının 329'u hiç
+    // taranmamıştı. Bu sayfalar ziyaretçi için duruyor (tapu niteliği, komşu
+    // adalar, harita) ama arama dizinine girmiyor; follow açık ki iç link değeri
+    // site ve mahalle sayfalarına geçsin. Sitemap tarafı: app/sitemap.ts.
+    robots: { index: false, follow: true },
   };
 }
 
@@ -224,6 +231,7 @@ export default async function AdaPage({ params }: Props) {
                 site: entry.site,
                 boundary: getSiteBoundary(entry.site),
               }))}
+              parseleOdakla
             />
           </div>
         )}

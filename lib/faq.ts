@@ -1,4 +1,5 @@
 import type { AdaEntry, EtapEntry } from "@/lib/content";
+import { eryamandaMi } from "./bolge";
 import { adaDisplayLabel, mahalleKisaIsim } from "@/lib/content";
 import type { Mahalle, Site } from "@/lib/types";
 import { bulunmaHali, bulunmaHaliKi, tamlayanHali, dahiBaglaci } from "@/lib/turkce";
@@ -55,18 +56,31 @@ export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
   return items;
 }
 
+/**
+ * "Eryaman'da emlakçılık yapıyoruz" ifadesi Ata/Susuz/Cumhuriyet sitelerinde
+ * yanlış konum iddiası doğurur — o mahalleler Yenimahalle'dedir. Eryaman
+ * tarafında bölge adını, komşu tarafta mahalle adını kullan (lib/bolge.ts).
+ */
+function hizmetBolgesi(mahalle: Mahalle): string {
+  return eryamandaMi(mahalle)
+    ? `Eryaman (${mahalle.ilce}) bölgesinde`
+    : `${mahalle.isim} ve çevresinde`;
+}
+
 export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   const tipi = inferSiteTipi(site.isim);
   const items: FaqItem[] = [
     {
       soru: `${site.isim} hangi mahallede yer alıyor?`,
-      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesindeki Eryaman bölgesinde, ${mahalle.isim}'nde yer alıyor. ${mahalle.kisaAciklama}`,
+      cevap: `${site.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlı ${mahalle.isim}'nde${
+        eryamandaMi(mahalle) ? " — Eryaman bölgesinde —" : ""
+      } yer alıyor. ${mahalle.kisaAciklama}`,
     },
     {
       soru: `${site.isim} emlakçısı kimdir?`,
       cevap: tipi
-        ? `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
-        : `${siteConfig.name}, Eryaman (${mahalle.ilce}) bölgesinde emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
+        ? `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
+        : `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
     {
       soru: `${bulunmaHali(site.isim)} satılık veya kiralık daire var mı?`,
@@ -123,7 +137,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   if (metin.includes("paylaş")) {
     items.push({
       soru: `${site.isim} komşu siteyle aynı parseli mi paylaşıyor?`,
-      cevap: `Evet — Eryaman'ın kooperatif kökenli dokusunda birden çok sitenin tek bir tapu parselini paylaşması sık görülür. Bu, dairenizin bağımsız bölüm olarak satılmasına engel değildir; ama emsal seçerken hangi bloğun hangi siteye ait olduğunu bilmek fiyatı doğrudan etkiler. Bu ayrımı blok blok tutuyoruz.`,
+      cevap: `Evet — bölgenin kooperatif kökenli dokusunda birden çok sitenin tek bir tapu parselini paylaşması sık görülür. Bu, dairenizin bağımsız bölüm olarak satılmasına engel değildir; ama emsal seçerken hangi bloğun hangi siteye ait olduğunu bilmek fiyatı doğrudan etkiler. Bu ayrımı blok blok tutuyoruz.`,
     });
   }
 

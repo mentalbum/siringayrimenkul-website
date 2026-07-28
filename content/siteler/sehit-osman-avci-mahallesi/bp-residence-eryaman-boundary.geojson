@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "BP Residence Eryaman",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46631/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65547,
+      39.98155
+     ],
+     [
+      32.65424,
+      39.98158
+     ],
+     [
+      32.65399,
+      39.98127
+     ],
+     [
+      32.65553,
+      39.98123
+     ],
+     [
+      32.65547,
+      39.98155
+     ]
+    ]
+   ]
+  ]
+ }
+}

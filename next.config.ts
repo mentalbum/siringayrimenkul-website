@@ -127,6 +127,18 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/ekiciler-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova/meric-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // Search Console'un raporladığı gerçek 404'ler (2026-07-28). Ada rota
+      // anahtarı bugün "<ada>-<parsel>"; Google'ın hâlâ denediği parselsiz eski
+      // biçim 404 veriyordu. Ada sayfaları artık noindex olduğu için hedef,
+      // adanın kendisi değil o adadaki SİTE sayfası — link değeri dizindeki
+      // sayfaya aksın. "etaplar/undefined" ise ölü bir link hatasının kalıntısı.
+      { source: "/mahalleler/tunahan/adalar/46497", destination: "/mahalleler/tunahan-mahallesi/sarigul-sitesi", permanent: true },
+      { source: "/mahalleler/tunahan-mahallesi/adalar/46497", destination: "/mahalleler/tunahan-mahallesi/sarigul-sitesi", permanent: true },
+      { source: "/mahalleler/tunahan/adalar/17635", destination: "/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari", permanent: true },
+      { source: "/mahalleler/tunahan-mahallesi/adalar/17635", destination: "/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari", permanent: true },
+      { source: "/mahalleler/yesilova/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
+      { source: "/mahalleler/yesilova-mahallesi/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
+
       // MAHALLE SLUG TAŞIMASI (2026-07-26): /mahalleler/tunahan ->
       // /mahalleler/tunahan-mahallesi. Eski adreslerin TAMAMI (mahalle sayfası,
       // altındaki site/ada/etap sayfaları) kalıcı olarak yenisine taşınıyor.

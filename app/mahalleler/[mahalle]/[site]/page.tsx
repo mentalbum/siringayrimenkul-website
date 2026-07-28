@@ -24,6 +24,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
 import { bulunmaHali } from "@/lib/turkce";
@@ -53,6 +54,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Asıl hedef kitle bu sitede EVİ OLANLAR: "{site} satılık daire",
   // "{site} daire fiyatları", "evimi satmak/kiraya vermek" niyetli aramalar.
   const isimdeEryamanVar = /eryaman/i.test(site.isim);
+  // Ata/Susuz/Cumhuriyet Yenimahalle'dedir — Eryaman'da DEĞİL. O mahallelerdeki
+  // sitelere "Eryaman <site adı>" demek yanlış konum iddiasıdır (lib/bolge.ts).
+  const eryamanda = eryamandaMi(mahalle);
   // Ev sahibinin gerçek arama kalıpları ("X satılık daire", "X kiralık daire",
   // "X daire fiyatları", "X emlakçı") başlıkta birebir karşılansın; açıklama
   // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
@@ -61,7 +65,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // başlık da o sırayı izlesin (adında Eryaman geçenlerde tekrar etmeden).
     title: isimdeEryamanVar
       ? `${site.isim} Satılık Daire ve Kiralık Daire — Yerel Emlakçısı`
-      : `Eryaman ${site.isim} Satılık Daire ve Kiralık Daire — Emlakçısı`,
+      : eryamanda
+        ? `Eryaman ${site.isim} Satılık Daire ve Kiralık Daire — Emlakçısı`
+        : `${site.isim} Satılık Daire ve Kiralık Daire — ${mahalle.isim} Emlakçısı`,
     description: truncateForMeta(
       `${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
@@ -71,7 +77,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         site.isim,
         ...site.alternatifAdlar,
         `${mahalle.isim} emlakçı`,
-        "Eryaman emlakçı",
+        eryamanda ? "Eryaman emlakçı" : `${mahalle.ilce} emlakçı`,
       ],
     }),
     // Paylaşım kartı bilinçli olarak site fotoğrafına DEĞİL, opengraph-image.tsx'in
@@ -124,6 +130,9 @@ export default async function SitePage({ params }: Props) {
   const sinir = getSiteBoundary(site);
   const tipi = inferSiteTipi(site.isim);
   const dogrulanmisEtap = onayliEtap(site.adalar);
+  // Ata/Susuz/Cumhuriyet Yenimahalle'dedir; o mahallelerdeki sitelere "Eryaman"
+  // demek yanlış konum iddiası olur (lib/bolge.ts).
+  const eryamanda = eryamandaMi(mahalle);
 
   const siteJsonLd = {
     "@context": "https://schema.org",
@@ -142,7 +151,7 @@ export default async function SitePage({ params }: Props) {
         "@type": "ImageObject",
         url: `${siteConfig.url}${site.gorsel}`,
         contentUrl: `${siteConfig.url}${site.gorsel}`,
-        caption: `${site.isim} — Eryaman ${mahalle.isim}`,
+        caption: `${site.isim} — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`,
         creator: { "@type": "Organization", name: siteConfig.name },
         creditText: siteConfig.name,
         copyrightNotice: `© ${siteConfig.name}`,
@@ -170,7 +179,9 @@ export default async function SitePage({ params }: Props) {
       url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
       containedInPlace: {
         "@type": "Place",
-        name: `Eryaman, ${mahalle.ilce}, Ankara`,
+        name: eryamanda
+          ? `Eryaman, ${mahalle.ilce}, Ankara`
+          : `${mahalle.ilce}, Ankara`,
       },
     },
   };
@@ -191,7 +202,8 @@ export default async function SitePage({ params }: Props) {
             (lib/etap-onayli.ts). Kayıttaki adalar[].etap alanı iç gruplama
             verisidir ve tek başına iddia olarak yazılmaz. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          Eryaman · {mahalle.isim} · {mahalle.ilce}
+          {eryamanda ? "Eryaman · " : ""}
+          {mahalle.isim} · {mahalle.ilce}
           {dogrulanmisEtap && (
             <>
               {" · "}
@@ -219,7 +231,7 @@ export default async function SitePage({ params }: Props) {
             <figure className="overflow-hidden rounded-2xl border border-border">
               <Image
                 src={site.gorsel}
-                alt={`${site.isim} dış cephesi — Eryaman ${mahalle.isim}`}
+                alt={`${site.isim} dış cephesi — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`}
                 width={1440}
                 height={1080}
                 preload
@@ -227,14 +239,14 @@ export default async function SitePage({ params }: Props) {
                 sizes="(min-width: 1024px) 590px, 100vw"
               />
               <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
-                {`${site.isim} — ${mahalle.isim}, Eryaman${
+                {`${site.isim} — ${mahalle.isim}${eryamanda ? ", Eryaman" : ""}${
                   dogrulanmisEtap ? ` ${dogrulanmisEtap}. Etap` : ""
                 }`}
               </figcaption>
             </figure>
           )}
           <p className="text-base font-medium text-navy">
-            {`${site.isim}, Eryaman'da ${mahalle.isim} sınırları içinde yer alan ${
+            {`${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
               tipi ? `${tipi} ` : ""
             }bir yerleşimdir. Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`}
           </p>
@@ -322,6 +334,7 @@ export default async function SitePage({ params }: Props) {
               <MahalleMapLoader
                 center={site.koordinat}
                 siteler={[{ site, boundary: sinir }]}
+                parseleOdakla
               />
             </div>
             {sinir && (

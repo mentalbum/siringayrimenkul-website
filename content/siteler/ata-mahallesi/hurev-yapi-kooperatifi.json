@@ -2,11 +2,18 @@
   "isim": "Hürev Yapı Kooperatifi",
   "slug": "hurev-yapi-kooperatifi",
   "mahalleSlug": "ata-mahallesi",
-  "aciklama": "Hürev Yapı Kooperatifi — güncel kayıtlarda kısaca 'Hürev Sitesi' — Yenimahalle'ye bağlı Ata Mahallesi'nde yer alan kooperatif kökenli bir konut sitesidir. Çağlayan Sitesi ve Pazar Yeri çevresindeki oturmuş konut aksının parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 40.000053,
     "lng": 32.60102
   },
+  "sinirGeoJSON": "siteler/ata-mahallesi/hurev-yapi-kooperatifi-boundary.geojson",
+  "aciklama": "Hürev Yapı Kooperatifi — güncel kayıtlarda kısaca 'Hürev Sitesi' — Yenimahalle'ye bağlı Ata Mahallesi'nde yer alan kooperatif kökenli bir konut sitesidir. Çağlayan Sitesi ve Pazar Yeri çevresindeki oturmuş konut aksının parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "44774",
+      "parsel": "3"
+    }
+  ],
   "alternatifAdlar": [
     "Hürev Sitesi"
   ],
