@@ -139,6 +139,24 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova-mahallesi/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // Özgün kararı (2026-07-28): kanat-yapi-evleri ve ela-concept-evleri silindi.
+      // Kanat Yapı: sahibinden'in Ata Mahallesi site listesinden gelmişti ama Google,
+      // Yandex, OSM, bilgiemlak ve ticaret sicilinin hiçbirinde iz yok. Ela Concept:
+      // müteahhidin 2014 tanıtımı dışında kanıt yok, işaret ettiği parsel (46653/2)
+      // uyduda hâlâ boş ve tapuda "tek katlı kargir ahır" — proje gerçekleşmemiş.
+      { source: "/mahalleler/ata/kanat-yapi-evleri", destination: "/mahalleler/ata-mahallesi", permanent: true },
+      { source: "/mahalleler/ata-mahallesi/kanat-yapi-evleri", destination: "/mahalleler/ata-mahallesi", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci/ela-concept-evleri", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/ela-concept-evleri", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
+
+      // Başkent Sular Sitesi iki kez kayıtlıydı. Yavuz Selim'deki kayıt doğru
+      // (19524/2, "16 adet dubleks ev"); Google ve Yandex de siteyi Yavuz Selim'de
+      // gösteriyor. Güzelkent'teki ikinci kayıt hatalıydı: 18477/1 parselini tutuyordu
+      // ama orası Ritim Eryaman (510. Sok. No:1, "A ve B blok 14 katlı", 96 konut).
+      // Dupe silindi, parsel Ritim'e verildi.
+      { source: "/mahalleler/guzelkent/baskent-sular-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi", permanent: true },
+      { source: "/mahalleler/guzelkent-mahallesi/baskent-sular-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi", permanent: true },
+
       // "Çelikler Sitesi": Eryaman'da bu adla bir yerleşim yok — Google Maps, OSM,
       // bilgiemlak ve Yandex'te sıfır sonuç (Ankara'daki tek Çelikler Sitesi Bilkent
       // tarafında, 20 km uzakta). mahalleportal'ın 45824/1'e verdiği bu etiket yanlış;

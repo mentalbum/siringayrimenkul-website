@@ -39,7 +39,12 @@ kayıt Esenkent'e yönlendirildi.
 Güneş, Gökkuşağı, Şelale) TKGM'nin "6 adet betonarme apartman" niteliğiyle BİREBİR örtüşüyor.
 Ayrı sınır verilmedi (doğru karar); metne blok adı ve kardeş bloklar işlendi.
 
-⚠️ **ÖZGÜN'E — 18477/1 Ritim Eryaman'ın mı, Başkent Sular'ın mı?** Parsel şu an repoda
+✅ **ÇÖZÜLDÜ — 18477/1 RİTİM ERYAMAN'IN (Özgün, 2026-07-28).** Meğer Başkent Sular repoda
+İKİ KEZ kayıtlıymış: Yavuz Selim'deki kayıt doğru (19524/2, "16 adet dubleks ev" — Google ve
+Yandex de siteyi orada gösteriyor), Güzelkent'teki ikinci kayıt ise hatalıydı ve Ritim'in
+parselini tutuyordu. Dupe silindi, 18477/1 Ritim'e verildi ("A ve B blok 14 katlı", 5.051 m²,
+96 konut, Özer Grup), eski URL Yavuz Selim'deki kayda yönlendirildi. Ritim artık haritalı.
+(Eski soru metni:) Parsel şu an repoda
 Başkent Sular'a atanmış ama kanıtlar Ritim'i gösteriyor: Ritim'in adresi Yandex ve Google'da
 "Güzelkent Mah. 510. Sok. No:1" (müteahhit Özer Grup, 96 konut kentsel dönüşüm, teslim
 edilmiş) ve 510. Sokak'ın yalnızca iki cephe parseli var — 18476 (İpek Sitesi, kapı 2/2A/2B)
@@ -56,14 +61,16 @@ Hürev'e yazılan sınır geri alındı (parsel Ata Life'ın), Hürev adları At
 alternatifAdlar'ına eklendi. Hürev ayrı bir kayıt olarak kalsın mı, yoksa Ata Life'a tamamen
 birleşsin mi?
 
-⚠️ **ÖZGÜN'E — Ela Concept yapıldı mı?** Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:
+✅ **KAPANDI — ela-concept-evleri SİLİNDİ (Özgün, 2026-07-28).** Kanıt yetersiz ve parsel
+uyduda boş. (Eski not:) Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:
 "2651. Cadde, İşbir Sünger Sokak No:1, İşbir Sünger Fabrikası yanı", 5 blok (Zümrüt, Yakut,
 İnci, Safir, Lal), 330 daire. bilgiemlak'ın "Ela Concept" poligonu 46653/2'ye denk düşüyor
 AMA o parsel uyduda hâlâ boş ve TKGM "2 adet tek katlı kargir ahır" diyor — yani proje
 gerçekleşmemiş olabilir. Sınır YAZILMADI; metin "proje" çerçevesinde yazıldı. Bu proje
 tamamlandı mı, yoksa kayıt kapatılsın mı?
 
-⚠️ **ÖZGÜN'E — Kanat Yapı Evleri.** Google/Yandex/OSM/bilgiemlak/ticaret sicili — hepsinde
+✅ **KAPANDI — kanat-yapi-evleri SİLİNDİ (Özgün, 2026-07-28): "hiçbir kayıt bulamadık".**
+(Eski not:) Google/Yandex/OSM/bilgiemlak/ticaret sicili — hepsinde
 sıfır. Ama ad, sahibinden.com'un Ata Mahallesi "Site Seçiniz" listesinden geldi (kayıt oradan
 üretildi), yani uydurma değil. Portalda hâlâ görünüyor mu, gerçek bir yerleşim mi?
 

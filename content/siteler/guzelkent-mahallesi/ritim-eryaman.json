@@ -2,17 +2,25 @@
   "isim": "Ritim Eryaman",
   "slug": "ritim-eryaman",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Ritim Eryaman, Güzelkent Mahallesi'nde 510. Sokak üzerinde yükselen, Özer Grup imzalı bir kentsel dönüşüm projesidir; resmi adıyla 'Ritim Eryaman 96 Konut Kentsel Dönüşüm Projesi' olarak geçer. Güzelkent'in az katlı dokusunu yenileyen, 96 konutluk modern bir yerleşimdir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.993773,
+    "lng": 32.614902
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/ritim-eryaman-boundary.geojson",
+  "aciklama": "Ritim Eryaman, Güzelkent Mahallesi'nde 510. Sokak No:1'de yükselen, Özer Grup imzalı bir kentsel dönüşüm projesidir; resmi adıyla 'Ritim Eryaman 96 Konut Kentsel Dönüşüm Projesi' olarak geçer ve teslim edilmiştir. TKGM kayıtlarına göre yaklaşık 5.051 m²'lik parselde tapu, yapıyı 'A ve B bloktan oluşan 14 katlı betonarme apartman' olarak tanımlar — yani iki yüksek blok, 96 konut. Güzelkent'in alçak kooperatif dokusu içinde yükseldiği için üst katlar bölge manzarasına açılır. Bu sitede satılık veya kiralık daireniz mi var? Yüksek bloklarda fiyatı kat, cephe ve manzara ciddi biçimde değiştirir — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "adalar": [
+    {
+      "no": "18477",
+      "parsel": "1"
+    }
+  ],
   "ozellikler": [
-    "96 konut — kentsel dönüşüm projesi",
-    "Özer Grup imzalı",
-    "510. Sokak No:1 — Güzelkent"
+    "Özer Grup imzalı kentsel dönüşüm projesi",
+    "A ve B blok — 14 katlı, toplam 96 konut",
+    "510. Sokak No:1 — Güzelkent",
+    "Yaklaşık 5.051 m²'lik parsel (TKGM)"
   ],
   "zenginlestirildi": "2026-07-28",
-  "koordinat": {
-    "lat": 39.99398,
-    "lng": 32.6150589
-  },
   "alternatifAdlar": [
     "Ritim Eryaman Sitesi"
   ],
