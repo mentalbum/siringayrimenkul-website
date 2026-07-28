@@ -127,12 +127,14 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/ekiciler-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova/meric-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
-      // Hürev → Ata Life birleştirmesi (2026-07-28). Tek yer, iki ad: parseli
-      // (44774/3) Hür-Ev Konut Yapı Kooperatifi kurmuş, saha tabelası ve Google
-      // kaydı bugün "Ata Life Sitesi" diyor (19 yorum, 3768. Sokak). Ada 44774'te
-      // yalnız iki parsel var ve /2 Raylı Sistemciler'e alanla çivilendiği için
-      // /3 elemeyle bu yerleşime kalıyor — yani iki ayrı site değil. Kooperatif
-      // adı Ata Life'ın alternatifAdlar'ında yaşıyor, o adla arayan da bulsun.
+      // "Hürev Yapı Kooperatifi" kaydı kaldırıldı (Özgün, 2026-07-29:
+      // "hürev yapı kooperatifi diye bir yer yok"). Kayıt bilgiemlak'ın 2013
+      // dönemi dizininden gelmişti ("Hür-Ev KYK (44774 Ada)"); o parselde
+      // (44774/3) bugün Ata Life Sitesi var — saha tabelası, Google kaydı ve
+      // 3768. Sokak adresi onu gösteriyor. Ada 44774'te yalnız iki parsel var
+      // ve /2 Raylı Sistemciler'e alanla çivilendiği için /3 elemeyle Ata
+      // Life'a kalıyor. Kooperatif adı Özgün tanımadığı için alternatif ad
+      // olarak da tutulmadı.
       { source: "/mahalleler/ata/hurev-yapi-kooperatifi", destination: "/mahalleler/ata-mahallesi/ata-life-sitesi", permanent: true },
       { source: "/mahalleler/ata-mahallesi/hurev-yapi-kooperatifi", destination: "/mahalleler/ata-mahallesi/ata-life-sitesi", permanent: true },
 

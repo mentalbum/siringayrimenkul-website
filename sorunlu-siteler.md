@@ -68,18 +68,21 @@ Yeni kanıtlar (çürütme turu + Google Maps):
 - **Ama Google Maps 44774/3'e "Ata Life Sitesi" diyor:** tabelalı fotoğraf, 19 yorum (4,6),
   adres "Ata Mahallesi 3768. Sokak". Yani sahada bugün o adı taşıyan bir tabela var.
 
-**✅ KARAR (Özgün: "hangisi daha doğruysa onu yap") — TEK YER, BİRLEŞTİRİLDİ.** Çelişki
-sanılan şey aslında aynılıktı: iki kanıt zinciri de aynı parseli gösteriyordu. Parseli
-Hür-Ev Konut Yapı Kooperatifi kurmuş, saha bugün "Ata Life" adını kullanıyor.
+**✅ KAPANDI — hurev-yapi-kooperatifi KALDIRILDI (Özgün, 2026-07-29: "hürev yapı
+kooperatifi diye bir yer yok").** Kayıt bilgiemlak'ın 2013 dönemi dizininden gelmişti
+("Hür-Ev KYK (44774 Ada)", 3 blok). O parselde (44774/3) bugün **Ata Life Sitesi** var:
+saha tabelası, Google kaydı (19 yorum, 4,6) ve 3768. Sokak adresi onu gösteriyor. Ada
+44774'te yalnız iki parsel var; /2 Raylı Sistemciler'e alanla çivilendi (bilgiemlak
+6.742 m² vs repo poligonu 6.772 m², %0,4) → /3 elemeyle Ata Life'a kalıyor.
 
-Yapılan: **ata-life-sitesi ana kayıt** (bugünkü tabela adı, aranan ad, 44774/3 + sınır onda);
-Hürev adlarının üçü de alternatifAdlar'da (Hürev Sitesi / Hür-Ev Konut Yapı Kooperatifi /
-Hürev Yapı Kooperatifi) — o adla arayan da bulsun; metne kooperatif geçmişi ve üç blok
-işlendi; `hurev-yapi-kooperatifi` kaydı silinip Ata Life'a yönlendirildi.
+Kayıt silindi ve Ata Life'a yönlendirildi. **Kooperatif adı alternatif ad olarak da
+tutulmadı** — Özgün tanımıyor, yani halk o adı kullanmıyor demektir; bilgiemlak'ın eski
+dizin etiketini arama terimi diye siteye taşımak yanlış olurdu.
 
-Not: bilgiemlak sayfası mahalleyi "Susuz Mh." yazıyor, ama Google + Yandex + OSM Nominatim
-üçü de Ata Mahallesi diyor — bilgiemlak'ın mahalle alanı 2013 dönemine ait, Yenimahalle'nin
-mahalle sınırları sonradan yeniden çizildi. Repodaki `ata-mahallesi` ataması doğru.
+**DERS:** bilgiemlak'ın dizin etiketleri (kooperatif adları, "N Ada Ortak Yapı Grup" gibi
+betimleyici başlıklar) SİTE ADI değildir. Bu turda aynı kalıptan üç kayıt çıktı: Hürev,
+Ortak Grup Yapı, Türk Konut. Yeni kayıt açarken bilgiemlak başlığını tek kaynak olarak
+kullanma; Özgün'ün listesi veya saha tabelası doğrulamıyorsa açma.
 
 ✅ **KAPANDI — ela-concept-evleri SİLİNDİ (Özgün, 2026-07-28).** Kanıt yetersiz ve parsel
 uyduda boş. (Eski not:) Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:
