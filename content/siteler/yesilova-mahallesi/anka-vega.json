@@ -3,23 +3,26 @@
   "slug": "anka-vega",
   "mahalleSlug": "yesilova-mahallesi",
   "koordinat": {
-    "lat": 39.96462,
-    "lng": 32.60999
+    "lat": 39.9647743,
+    "lng": 32.6108601
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/anka-vega-boundary.geojson",
-  "aciklama": "Anka Vega Konutları, Yeşilova'nın yeni gelişim aksında yer alan modern bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir'in komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe, manzara ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim. TKGM kayıtlarına göre yaklaşık 7.268 m²'lik kat mülkiyetli parselde yapı, 14'er katlı A1 ve A2 ikiz blok olarak kayıtlıdır (tapu niteliği ofis/işyeri — rezidans tipi).",
-  "adalar": [],
+  "aciklama": "Anka Vega Konutları, Yeşilova Mahallesi'nde 4016. Cadde üzerinde yer alan, üç bloklu bir konut sitesidir. Tapu kaydına göre yaklaşık 9.387 m²'lik parselde 11 katlı A blok, 15 katlı B blok ve 4 katlı C bloktan oluşur — kademeli blok düzeni, site içinde farklı daire tipi ve manzara seçeneği anlamına gelir. İlanlarda kompakt 2+1 daireleri (~82 m²) görülür; Meva Şehir komşuluğundaki genç konut dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Blokların kat yükseklikleri farklı olduğu için fiyatı blok, kat, cephe ve manzara birlikte belirler — değeri, siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
+  "adalar": [
+    {
+      "no": "47544",
+      "parsel": "2"
+    }
+  ],
   "ozellikler": [
-    "Modern site — 2+1 (~82 m²) tipler",
-    "Meva Şehir komşuluğunda genç doku",
-    "Yeşilova / Eryaman",
-    "2 ikiz blok (A1, A2), 14'er katlı",
-    "Tapu niteliği: ofis/işyeri (rezidans tipi)",
-    "4016. Cadde No:17"
+    "Üç blok: 11 katlı A, 15 katlı B, 4 katlı C",
+    "Yaklaşık 9.387 m²'lik parsel (TKGM)",
+    "4016. Cadde — Yeşilova",
+    "İlanlarda kompakt 2+1 (~82 m²) daireler"
   ],
   "alternatifAdlar": [
     "Anka Vega Konutları"
   ],
-  "zenginlestirildi": "2026-07-16",
+  "zenginlestirildi": "2026-07-28",
   "adres": "4016. Cadde No:17, Yeşilova, Etimesgut/Ankara"
 }

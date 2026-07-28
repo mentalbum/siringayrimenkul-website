@@ -2,7 +2,18 @@
   "isim": "Pozitif Life",
   "slug": "pozitif-life",
   "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.964436,
+    "lng": 32.609806
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/pozitif-life-boundary.geojson",
   "aciklama": "Pozitif Life, Pozitif ROİ Şirketler Grubu imzalı, 144 daireli tamamlanmış bir konut projesidir; Yeşilova Mahallesi 4022. Sokak üzerinde yer alır. Daire karması 2+1 ağırlıklıdır (48 adet ~94 m² ve 96 adet ~71 m²); yapının zemininde yaklaşık 4.500 m²'lik bir iş merkezi bulunur. Tapu kaydına göre yapı, yaklaşık 7.268 m²'lik parselde on dörder katlı A1 ve A2 bloklardan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47544",
+      "parsel": "4"
+    }
+  ],
   "adres": "Yeşilova Mahallesi 4022. Sokak No:7, Etimesgut/Ankara",
   "ozellikler": [
     "144 daire (2+1 ağırlıklı: ~94 m² ve ~71 m² tipler)",
@@ -11,15 +22,5 @@
     "4022. Sokak No:7",
     "Yeşilova Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
-  "koordinat": {
-    "lat": 39.964436,
-    "lng": 32.609806
-  },
-  "adalar": [
-    {
-      "no": "47544",
-      "parsel": "4"
-    }
-  ]
+  "zenginlestirildi": "2026-07-17"
 }

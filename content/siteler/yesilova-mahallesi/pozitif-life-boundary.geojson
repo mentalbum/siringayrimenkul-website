@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Pozitif Life",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47544/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60975,
+      39.96502
+     ],
+     [
+      32.6095,
+      39.96417
+     ],
+     [
+      32.61035,
+      39.96402
+     ],
+     [
+      32.6106,
+      39.96487
+     ],
+     [
+      32.60975,
+      39.96502
+     ]
+    ]
+   ]
+  ]
+ }
+}

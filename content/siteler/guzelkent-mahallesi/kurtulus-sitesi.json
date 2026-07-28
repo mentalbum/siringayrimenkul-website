@@ -2,5 +2,16 @@
   "isim": "Kurtuluş Sitesi",
   "slug": "kurtulus-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Kurtuluş Sitesi, Ankara Etimesgut'a bağlı Güzelkent Mahallesi içinde yer alan bir sitedir. Mahalledeki yaşam, ulaşım ve çevre imkanları hakkında Güzelkent Mahallesi rehberimizden bilgi alabilir, bu site özelinde güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz."
+  "aciklama": "Kurtuluş Sitesi, Güzelkent Mahallesi'nde 514. Sokak üzerinde yer alan bir konut sitesidir; Didem Sitesi ve Çözüm Kent çevresindeki oturmuş kooperatif dokusunun parçasıdır. Kerkük Parkı ve Arya AVM yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "koordinat": {
+    "lat": 39.9924746,
+    "lng": 32.6117925
+  },
+  "adres": "514. Sokak, Güzelkent, Etimesgut/Ankara",
+  "ozellikler": [
+    "514. Sokak — Güzelkent",
+    "Kerkük Parkı ve Arya AVM yakını",
+    "Oturmuş kooperatif dokusu"
+  ],
+  "zenginlestirildi": "2026-07-28"
 }
