@@ -4,75 +4,72 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
-### TKGM sınır turu (2026-07-28) — 18 sınırsız kayıt tarandı, 7'si kapandı
+### Açık soru turu (2026-07-28) — 5 karar sorusu + sınırsız kayıtlar
 
-✅ **KAPANAN 7** (hepsi TKGM ile doğrulandı, doğrulama kapısından geçti):
-- nover-westlife 62661/1 (Susuz kadastro 123431 — "A blok 18 katlı, B blok 3 katlı mesken")
-- ap-ist-port 62687/1 (20.000 m², "Arsa" — proje parseli)
-- goksu-metrokent 46477/1 (30.171 m² — kayıttaki ada BİREBİR tuttu; eski pin okul binasına düşüyordu)
-- bp-residence 46631/2 (Şeker kadastro; "12 katlı ofis-işyeri" → tapu tipi metne işlendi)
-- mia-concept 46659/2 (9.552 m², "Arsa")
-- enday-sitesi 46453/1 (--force, göl kuşağı paylaşımlı adası: Eceser/Göksu Aura/Göksu Vadi/Utkukent) + metin zenginleştirildi
-- hurev-yapi-kooperatifi 44774/3 (--force) — 4 bağımsız kaynak: Yandex toponim, bilgiemlak
-  "Etikent Hür-Ev KYK (44774 Ada)" 3 blok koordinatı, OSM Nominatim mahalle, OSM bina ayak izleri.
+✅ **ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL.** Aynı adada komşu iki parsel:
+Anka Vega 47544/2 (9.387 m², "11 katlı A + 15 katlı B + 4 katlı C blok", 4016. Cad. No:17,
+Google'da 37 yorum), Pozitif Life 47544/4 (7.268 m², "14 katlı A1+A2, ofis-işyeri", 4022. Sk).
+Anka Vega kaydına yanlışlıkla Pozitif Life'ın tapu verisi yazılmıştı; düzeltildi, sınırı da
+47544/4'ten 47544/2'ye taşındı. İkisi de haritalı.
 
-⚠️ **ÖZGÜN'E — hurev ↔ ata-life aynı parselde (44774/3).** Defterdeki eski "pin vs pin" çekişmesi
-bu tura kadar açık kaldı. Hürev tarafı artık 4 kaynakla sağlam; ata-life'ın 44774/3 iddiası ise
-tek pinden geliyor. Paylaşımlı kooperatif parseli mi, yoksa ata-life yanlış parselde mi?
-(Not: parselin tapu niteliği "Arsa" görünüyor ama içinde 3 bina var — bayat cins kaydı; buradan
-kat mülkiyeti/kredi çıkarımı YAPILMAZ.)
+✅ **ÇÖZÜLDÜ — Botanik Sitesi hayaletti ama yerine GERÇEK bir kayıt kondu.** Cumhuriyet'te
+düz "Botanik Sitesi" adlı yerleşim yok (ad Botanik metrosundan türeyen kısaltma; birebir
+toponim 3 km doğuda Kardelen Mah.'de). Araştırma repoda EKSİK olan gerçek siteyi buldu:
+**Botanik Evleri 43253/6** (6.901 m², "11 katlı betonarme mesken"). Slot bu siteye çevrildi
+ve haritalandı; "Botanik Sitesi" alternatif ad olarak kaldı.
 
-✅ **sky-goksu ÇÖZÜLDÜ — 63356/2, Susuz-İmar (Özgün, 2026-07-28).** Bu tur "bölge dışı,
-silinmeli" diye raporlanmıştı; YANLIŞTI. Özgün TKGM parsel sorgu ekranını gönderdi:
-40.004962762457076 / 32.65200555324555 → **63356/2, Susuz-İmar (kadastro 123432), 4.963,12 m²**,
-harita etiketi "Göksu Sky Rezidans", Sancak Sk. üzerinde, Furkan Cd. ve Göksu Başak Life
-komşuluğunda. Yani RDV İnşaat'ın verdiği Sancak Sok. adresi PROJE adresiydi, ofis adresi değil.
+✅ **ÇÖZÜLDÜ — Türk Konut hayaletti, SİLİNDİ.** TÜRKKONUT = S.S. Yapı Kooperatifleri Merkez
+Birliği, yani çatı marka. Şeyh Şamil'deki 14+ site zaten "Türkkonut X Sitesi" adıyla ayrı
+kayıtlı; düz bu adla anılan tek bir yerleşim yok (Yandex'teki tek eşleşme otobüs durağı).
+Markanın SEO'su Şeyh Şamil mahalle kaydının alternatifAdlar'ına taşındı, kayıt mahalleye
+yönlendirildi.
 
-**ARAŞTIRMA HATASI — dersi burada dursun:** ajan sky-b.com.tr'deki "Sky Göksu B" projesini
-(Yukarıyurtçu, Çankaya Ü. yanı) bu kayıtla aynı sandı ve "18,7 km uzakta, bölge dışı" sonucuna
-vardı. Aynı müteahhidin BENZER ADLI BAŞKA projesiydi. Dört kaynak aynı yanlış eşleşmeyi
-doğruladığı için güven "yüksek" göründü — çoklu kaynak, yanlış varlığı doğruluyorsa işe yaramaz.
-Kayıt haritalandı + metin gerçek verilerle yeniden yazıldı; alternatifAdlar'a "Göksu Sky Rezidans"
-eklendi.
+✅ **ÇÖZÜLDÜ — Ortak Grup Yapı hayaletti, SİLİNDİ.** bilgiemlak'ın "Etikent 44756 Ada Ortak
+Yapı Grup" dizin etiketinin bozulmuş hâli. O parselde (44756/2) gerçekte Umut Yapı Sitesi var
+ve zaten kayıtlı → yönlendirildi.
 
-❓ **ÖZGÜN'E — çelikler-sitesi ↔ esenkent-sitesi.** mahalleportal 45824/1'i "Çelikler Sitesi"
-diyor; aynı noktanın 33 m'sinde Yandex "Esenkent Evleri" kayıtlı ve repo/ilanlar da Esenkent
-diyor. 1 kaynak vs 3 kaynak. Çelikler, Esenkent'in eski/halk arasındaki adı mı, ayrı bir yer mi?
-Kanıt Çelikler aleyhine olduğu için ada ATANMADI.
+✅ **ÇÖZÜLDÜ — Çelikler Sitesi yok, SİLİNDİ.** Google Maps / OSM / bilgiemlak / Yandex'in
+dördünde de Eryaman'da "Çelikler" sıfır sonuç (Ankara'daki tek Çelikler Sitesi Bilkent
+tarafında, 20 km uzakta). mahalleportal'ın 45824/1'e verdiği etiket yanlıştı; o parsel
+Esenkent Sitesi'nin ve TKGM ile doğrulanmış. Ad Esenkent'in alternatifAdlar'ında,
+kayıt Esenkent'e yönlendirildi.
 
-❓ **ÖZGÜN'E — turk-konut (Şeyh Şamil) hayalet görünüyor.** OSM'de 16 "Türkkonut X Sitesi" var
-(Gül, Vatan, Sedirkent, Cevizlidere, Bayrak, Kaçkar, Umut, Yeşil Aşiyan, Havacılar...) — hepsi
-repoda zaten ayrı kayıt. Düz "Türk Konut" bir SİTE ADI değil, kooperatif/marka ÖN EKİ gibi
-duruyor. Yandex'teki tek "Türk Konut Sitesi" POI'si bir OTOBÜS DURAĞI. Kayıt silinsin mi?
+✅ **ÇÖZÜLDÜ — 75. Yıl, Soyak'ın bloğu.** bilgiemlak hiyerarşisi: Soyak Blokları > 17462 Ada >
+"A-2(8) Blok — 75. Yıl Apt.". Aynı adada listelenen 6 blok (75. Yıl, Ayyıldız, Cumhuriyet,
+Güneş, Gökkuşağı, Şelale) TKGM'nin "6 adet betonarme apartman" niteliğiyle BİREBİR örtüşüyor.
+Ayrı sınır verilmedi (doğru karar); metne blok adı ve kardeş bloklar işlendi.
 
-❓ **ÖZGÜN'E — botanik-sitesi (Cumhuriyet).** Cumhuriyet'te düz "Botanik Sitesi" adlı yer hiçbir
-kaynakta yok. Repoda zaten Arissa Botanik (43264/7), Yeni Botanik (43264/6), 10. Botanik Evleri
-(43264/8), Botanik Park Evleri (43254/6) var. Birebir "Botanik Sitesi" toponimi 2,8 km doğuda,
-Kardelen Mah. — başka yer. Bu kayıt fazlalık mı?
+⚠️ **ÖZGÜN'E — 18477/1 Ritim Eryaman'ın mı, Başkent Sular'ın mı?** Parsel şu an repoda
+Başkent Sular'a atanmış ama kanıtlar Ritim'i gösteriyor: Ritim'in adresi Yandex ve Google'da
+"Güzelkent Mah. 510. Sok. No:1" (müteahhit Özer Grup, 96 konut kentsel dönüşüm, teslim
+edilmiş) ve 510. Sokak'ın yalnızca iki cephe parseli var — 18476 (İpek Sitesi, kapı 2/2A/2B)
+ve 18477 (kapı no 1). 18477/1 tapusu: "A ve B bloktan oluşan 14 katlı betonarme apartman",
+5.051 m² — Ritim'in iki bloğuyla uyuşuyor. Başkent Sular ise Google'da YAVUZ SELİM'de
+görünüyor (39.9989911/32.6144095) ve orası 19524/2 = "16 adet dubleks ev" — bambaşka bir yapı
+tipi. İkisinden biri yanlış yerde; hangisi?
 
-🔍 **KANIT BULUNAMADI (koordinat/ada yazılmadı, uydurulmadı):** kanat-yapi-evleri (4 kanal sıfır
-sonuç), ortak-grup-yapi (düşük güven, 44756/2 "Arsa" — ayrıca umut-yapi ile çakışma riski).
+⚠️ **ÖZGÜN'E — Hürev ile Ata Life aynı site mi?** 44774/3'te Google Maps'e göre **Ata Life
+Sitesi** var: tabelalı fotoğraf, 19 yorum (4,6), adres "Ata Mahallesi 3768. Sokak". Hürev ise
+Google'da "Konut Geliştirme" kategorisinde bir FİRMA kaydı ve bilgiemlak o adayı "Etikent
+Hür-Ev KYK (44774 Ada)" diye anıyor — yani Hürev muhtemelen siteyi YAPAN kooperatif. Bu turda
+Hürev'e yazılan sınır geri alındı (parsel Ata Life'ın), Hürev adları Ata Life'ın
+alternatifAdlar'ına eklendi. Hürev ayrı bir kayıt olarak kalsın mı, yoksa Ata Life'a tamamen
+birleşsin mi?
 
-🔍 **PİN YANLIŞ YERDE, YAZILMADI:** ritim-eryaman (aday pin de "Tarla" dönüyor),
-kurtulus-sitesi (Güzelkent batı kuşağı, "Tarla"), ela-concept-evleri (46653/2 = "2 adet tek katlı
-kargir AHIR" — kesinlikle yanlış parsel).
+⚠️ **ÖZGÜN'E — Ela Concept yapıldı mı?** Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:
+"2651. Cadde, İşbir Sünger Sokak No:1, İşbir Sünger Fabrikası yanı", 5 blok (Zümrüt, Yakut,
+İnci, Safir, Lal), 330 daire. bilgiemlak'ın "Ela Concept" poligonu 46653/2'ye denk düşüyor
+AMA o parsel uyduda hâlâ boş ve TKGM "2 adet tek katlı kargir ahır" diyor — yani proje
+gerçekleşmemiş olabilir. Sınır YAZILMADI; metin "proje" çerçevesinde yazıldı. Bu proje
+tamamlandı mı, yoksa kayıt kapatılsın mı?
 
-⚠️ **DUPE ŞÜPHESİ (map-site kapısı yakaladı):** pozitif-life ↔ anka-vega ikisi de 47544/4'ü
-iddia ediyor, aynı alan (7.268 m²) ve aynı yapı tarifi (14 katlı A1+A2, ofis-işyeri nitelikli)
-— büyük olasılıkla TEK site, iki isim. 75-yil-sitesi ↔ soyak-sitesi 17462/1: 75. Yıl zaten
-"Soyak Blokları içinde bir blok" olarak yazılmış, yani hiyerarşi — sınır bilinçli verilmedi.
+⚠️ **ÖZGÜN'E — Kanat Yapı Evleri.** Google/Yandex/OSM/bilgiemlak/ticaret sicili — hepsinde
+sıfır. Ama ad, sahibinden.com'un Ata Mahallesi "Site Seçiniz" listesinden geldi (kayıt oradan
+üretildi), yani uydurma değil. Portalda hâlâ görünüyor mu, gerçek bir yerleşim mi?
 
-### Yeni kayıt açılışları (2026-07-17 akşam — Özgün '1' onayıyla)
-- ✅ 10 YENİ SİTE AÇILDI (hepsi kanıtlı + zenginleştirilmiş): eceser, goksu-aura, hava-destek,
-  akduzen, kafdagi (göl kuşağı paylaşımlı 46453/46455/46456), ilksebat (ŞŞ 46486/2, Gül/Öz Çözüm
-  parseli), lacin-eryaman (45919/4, 15 katlı KM), yavuz-selim-sitesi (46435/1, A-B-C 8 katlı KM),
-  umut-yapi (Ata 44756/2 Kİ), altas-relax-line (Şeker 1408. Cad, adasız — Altaş 2 blok 65 konut).
-- Aday analizi: eski aday listelerindeki ~29 isim ZATEN kayıtlıymış (Elif Özgen, Bizim Şirinköy,
-  Saçak 91, Seda Terasevler, Yunus Kent, Boyut, Didem, Hotki Ritm, Meydan Eryaman, Betim...).
-- Gri kalanlar (açılmadı): Yüksel Kent no:1 (19503 — yuksel-kent-91 ile ilişki?), Doktorlar no:3
-  (19509 villa — YS doktorlar'la ilişki?), Göksu no:7 (19524), Yuvam Başar (kaynak zayıf),
-  Demirer≈Demirel Park typo çifti, Korukent 91 altAd işi → düzeltme turuna.
-
+🔍 **KONUMU BULUNDU, SINIR ÇİZİLEMEDİ:** kurtulus-sitesi (Güzelkent 514. Sk., Google Maps
+doğrulamalı) — TKGM o noktada hâlâ ada numarasız kadastro parseli ("Tarla") döndürüyor,
+Güzelkent'in bu kuşağı imar parseline dönüşmemiş. Adres ve koordinat kaydedildi.
 
 ### Kalite turu bulguları (2026-07-17 akşam)
 - ✔ Türkçe ek üretici (lib/turkce.ts) + 7 dosyada tapu-typo temizliği (Bolk/Betanarme/Karğir/

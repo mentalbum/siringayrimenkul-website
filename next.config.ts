@@ -139,6 +139,14 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova-mahallesi/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // "Çelikler Sitesi": Eryaman'da bu adla bir yerleşim yok — Google Maps, OSM,
+      // bilgiemlak ve Yandex'te sıfır sonuç (Ankara'daki tek Çelikler Sitesi Bilkent
+      // tarafında, 20 km uzakta). mahalleportal'ın 45824/1'e verdiği bu etiket yanlış;
+      // o parsel Esenkent Sitesi'nin ve TKGM ile doğrulanmış. Ad, Esenkent'in
+      // alternatifAdlar'ında yaşıyor.
+      { source: "/mahalleler/yavuz-selim/celikler-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim-mahallesi/celikler-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi", permanent: true },
+
       // Hayalet kayıt temizliği (2026-07-28, araştırma turu). Üçü de gerçek bir
       // yerleşim değil, dizin/etiket artığıydı:
       //  - "Ortak Grup Yapı": bilgiemlak'ın "Etikent 44756 Ada Ortak Yapı Grup" etiketinin
