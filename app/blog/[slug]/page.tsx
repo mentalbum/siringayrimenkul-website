@@ -7,6 +7,7 @@ import {
   getAllBlogPosts,
   getBlogPostBySlug,
   getMahalleBySlug,
+  getSitelerByMahalle,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { FaqSection } from "@/components/ui/faq-section";
@@ -180,6 +181,31 @@ export default async function BlogPostPage({ params }: Props) {
             Bu yazı <strong>{ilgiliMahalle.isim}</strong> ile ilgili. Mahalle rehberinin tamamını
             inceleyebilirsiniz.
           </p>
+          {/* İç bağ ölçümü (2026-07-29): 44 yazının 35'inde tek site linki yoktu.
+              Mahalleli yazılar mahallenin öne çıkan (TKGM sınırı doğrulanmış)
+              sitelerine köprü kurar — seçim deterministik, veri değişmedikçe sabit. */}
+          {(() => {
+            const oneCikanlar = getSitelerByMahalle(ilgiliMahalle.slug)
+              .filter((site) => site.sinirGeoJSON)
+              .slice(0, 4);
+            if (oneCikanlar.length === 0) return null;
+            return (
+              <p className="mt-3 text-sm text-body">
+                Mahalleden site rehberleri:{" "}
+                {oneCikanlar.map((site, i) => (
+                  <span key={site.slug}>
+                    {i > 0 && " · "}
+                    <Link
+                      href={`/mahalleler/${ilgiliMahalle.slug}/${site.slug}`}
+                      className="font-semibold text-gold-dark hover:underline"
+                    >
+                      {site.isim}
+                    </Link>
+                  </span>
+                ))}
+              </p>
+            );
+          })()}
           <CtaButton href={`/mahalleler/${ilgiliMahalle.slug}`} variant="outline" className="mt-4">
             {ilgiliMahalle.isim} Rehberi
           </CtaButton>

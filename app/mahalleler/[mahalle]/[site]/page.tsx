@@ -22,6 +22,7 @@ import { SiteCard } from "@/components/site/site-card";
 import { Reveal } from "@/components/ui/reveal";
 import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
+import { getBlogPostBySlug } from "@/lib/content";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { OZGUN_ID } from "@/lib/structured-data";
@@ -145,6 +146,33 @@ export default async function SitePage({ params }: Props) {
     `Bu sitede daireniz varsa — satış da kiralama da olsa — süreci sizin adınıza biz yürütüyoruz.`,
     `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, ilk görüşmeden tapuya kadar yanınızdayız.`,
   ][varyant % 4];
+
+  // İç bağ ölçümü (2026-07-29): 720 site sayfasından rehberlere 0 link vardı.
+  // Havuzdan slug'a göre DETERMİNİSTİK seçim — her rehber ~150-250 sayfadan
+  // doğal dağılımla link alır, her build aynı sonucu üretir.
+  const SATIS_HAVUZU = [
+    "eryamanda-ev-satis-sureci",
+    "emlakcisiz-ev-satilir-mi",
+    "ev-satarken-odenecek-vergiler",
+    "kiracili-ev-satilir-mi",
+    "evinizi-satisa-hazirlamak",
+    "evinizin-degerini-nasil-ogrenebilirsiniz",
+  ];
+  const KIRA_HAVUZU = [
+    "kiraci-tahliye-sureci",
+    "kira-artisi-nasil-hesaplanir",
+    "dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler",
+    "kira-sozlesmesinde-dikkat-edilmesi-gerekenler",
+    "evinizi-kiraya-verdikten-sonra",
+  ];
+  const rehberler = [
+    getBlogPostBySlug(SATIS_HAVUZU[varyant % SATIS_HAVUZU.length]),
+    getBlogPostBySlug(KIRA_HAVUZU[(varyant + 2) % KIRA_HAVUZU.length]),
+  ].filter((r): r is NonNullable<typeof r> => Boolean(r));
+  const hizmetLinki =
+    varyant % 2 === 0
+      ? { href: "/eryamanda-ev-satmak", etiket: "Eryaman'da Ev Satmak — Hizmet Sayfamız" }
+      : { href: "/eryamanda-ev-kiraya-vermek", etiket: "Eryaman'da Ev Kiraya Vermek — Hizmet Sayfamız" };
 
   // "2026-07-28" -> "Temmuz 2026". Gecersiz/eksik tarihte hic gosterilmez.
   const dogrulamaTarihi = (() => {
@@ -480,6 +508,33 @@ export default async function SitePage({ params }: Props) {
       )}
 
       <FaqSection title={`${site.isim} Hakkında Sık Sorulan Sorular`} items={getSiteFaq(site, mahalle)} />
+
+      {/* İç bağ katmanı: siteden ev-sahibi rehberlerine köprü. Ölçüm (2026-07-29):
+          720 site sayfasından rehber/hizmet sayfalarına 0 link vardı — Google
+          rehberlerin önemini site katmanından okuyamıyordu. Seçim deterministik,
+          bkz. yukarıdaki havuzlar. */}
+      {rehberler.length > 0 && (
+        <section className="mt-12 rounded-2xl border border-border bg-surface-muted px-6 py-6">
+          <h2 className="text-base font-semibold text-navy">Ev Sahipleri İçin Rehberler</h2>
+          <ul className="mt-3 space-y-2 text-sm">
+            {rehberler.map((rehber) => (
+              <li key={rehber.slug}>
+                <Link
+                  href={`/blog/${rehber.slug}`}
+                  className="font-semibold text-gold-dark hover:underline"
+                >
+                  {rehber.baslik}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <Link href={hizmetLinki.href} className="font-semibold text-gold-dark hover:underline">
+                {hizmetLinki.etiket}
+              </Link>
+            </li>
+          </ul>
+        </section>
+      )}
 
       <script
         type="application/ld+json"

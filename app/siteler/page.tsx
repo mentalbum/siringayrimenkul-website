@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { getSitelerByMahalle, getYayindaMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -52,7 +53,22 @@ export default function SitelerPage() {
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;daki Tüm Siteler ve Rezidanslar</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman bölgesinde tanıdığımız {toplamSite} site/rezidans, mahallesine göre aşağıda
-          listelendi. Aradığınız siteyi bulup detaylarını inceleyebilirsiniz.
+          listelendi. Aradığınız siteyi bulup detaylarını inceleyebilirsiniz. Site, rezidans,
+          villa ve kooperatif arasındaki farkları{" "}
+          <Link
+            href="/blog/eryamanda-konut-turleri"
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            konut türleri rehberimizde
+          </Link>
+          , alım aşamasındaysanız dikkat edilecekleri{" "}
+          <Link
+            href="/blog/eryamanda-ev-alirken-dikkat-edilmesi-gerekenler"
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            alım rehberimizde
+          </Link>{" "}
+          anlattık.
         </p>
       </header>
 

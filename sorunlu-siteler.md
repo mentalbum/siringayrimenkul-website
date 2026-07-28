@@ -4,6 +4,21 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### İç bağlantı grafı optimizasyonu (2026-07-29 — 1.578 sayfa ölçüldü, önce/sonra)
+Üretilmiş HTML'den tam graf çıkarıldı (header/footer hariç gövde linkleri). Bulgular ve sonuçlar:
+- **REGRESYON YAKALANDI: blog frontmatter'daki `ilgiliMahalle` eski slug'larla kalmıştı**
+  ("altay" vs yeni "altay-mahallesi") — 26 Tem URL göçünden beri mahalle↔blog modülleri sessizce
+  boştu. 12 yazıda düzeltildi. DERS: slug göçlerinde İÇERİK frontmatter'ı da taranmalı.
+- site→rehber linki: **0/720 → 720/720** (her site sayfasına deterministik 2 rehber + 1 hizmet
+  linki; havuzdan slug-hash rotasyonu — her rehber 127-166 sayfadan doğal dağılımla link alıyor)
+- site→hizmet: 0/720 → 720/720; hub'lara gelen link 9→365 (satmak) / 373 (kiraya)
+- hub→rehber: satmak 9→19, kiraya 5→9 — iki hub'a veri-güdümlü "Rehber Kitaplığı" bölümü
+  (lib/blog-konular.ts haritasından; yeni rehber otomatik girer)
+- blog→site: mahalleli yazılara "Mahalleden site rehberleri" modülü (TKGM sınırlı ilk 4 site)
+- yetim sayfa (≤1 gövde gelen-link): 8→0 (son ikisi /siteler dizin girişinden bağlandı)
+Kalan bilinçli durum: 32 satış/kira rehberinde site linki yok — konusal olarak gerekmiyor, zorlama
+link eklenmedi.
+
 ### E-E-A-T / Helpful Content denetimi (2026-07-29, 6 kollu tur — 15 eksik, önem sıralı)
 **UYGULAMA DURUMU (aynı gün):** ✅ 1 (gizlilik sayfası + footer + form linki), ✅ 2 (çerez rıza
 kapısı — kabul/ret iki yol da önizlemede uçtan uca test edildi; gtag yalnız kabulde enjekte),

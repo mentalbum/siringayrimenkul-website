@@ -6,6 +6,8 @@ import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
 import { Reveal } from "@/components/ui/reveal";
 import type { FaqItem } from "@/lib/faq";
+import { getAllBlogPosts } from "@/lib/content";
+import { getBlogKonu } from "@/lib/blog-konular";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
@@ -265,6 +267,28 @@ export default function EvSatmakPage() {
       </section>
 
       <FaqSection title="Eryaman'da Ev Satmak Hakkında Sık Sorulanlar" items={faqItems} />
+
+{/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun
+          HUB'ı ama rehberlerin yalnız bir kısmına düzyazıdan bağlanıyordu.
+          Kitaplık veri-güdümlü: lib/blog-konular.ts haritasına eklenen her
+          yeni rehber otomatik listeye girer. */}
+      <section className="mt-12">
+        <h2 className="text-xl">Satış Rehberi Kitaplığı</h2>
+        <ul className="mt-4 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
+          {getAllBlogPosts()
+            .filter((post) => getBlogKonu(post.slug) === "satis")
+            .map((post) => (
+              <li key={post.slug}>
+                <Link
+                  href={`/blog/${post.slug}`}
+                  className="font-semibold text-gold-dark hover:underline"
+                >
+                  {post.baslik}
+                </Link>
+              </li>
+            ))}
+        </ul>
+      </section>
 
       <CtaBanner
         size="large"
