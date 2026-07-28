@@ -68,19 +68,18 @@ Yeni kanıtlar (çürütme turu + Google Maps):
 - **Ama Google Maps 44774/3'e "Ata Life Sitesi" diyor:** tabelalı fotoğraf, 19 yorum (4,6),
   adres "Ata Mahallesi 3768. Sokak". Yani sahada bugün o adı taşıyan bir tabela var.
 
-En makul okuma: Hür-Ev kooperatifi parseli yaptı, yapı bugün "Ata Life" adıyla anılıyor —
-aynı yer, iki dönem iki ad. Şu an repo bunu varsayıyor (Ata Life ana kayıt, "Hürev Sitesi"
-ve "Hür-Ev Konut Yapı Kooperatifi" onun alternatifAdlar'ında; Hürev kaydı sınırsız duruyor).
-**Soru:** Ata Life ile Hürev senin için aynı yer mi, yoksa Ata Mahallesi'nde ayrı ayrı iki
-site mi? Ayrıysa Ata Life hangi sokakta?
+**✅ KARAR (Özgün: "hangisi daha doğruysa onu yap") — TEK YER, BİRLEŞTİRİLDİ.** Çelişki
+sanılan şey aslında aynılıktı: iki kanıt zinciri de aynı parseli gösteriyordu. Parseli
+Hür-Ev Konut Yapı Kooperatifi kurmuş, saha bugün "Ata Life" adını kullanıyor.
 
-(Eski not:) 44774/3'te Google Maps'e göre **Ata Life
-Sitesi** var: tabelalı fotoğraf, 19 yorum (4,6), adres "Ata Mahallesi 3768. Sokak". Hürev ise
-Google'da "Konut Geliştirme" kategorisinde bir FİRMA kaydı ve bilgiemlak o adayı "Etikent
-Hür-Ev KYK (44774 Ada)" diye anıyor — yani Hürev muhtemelen siteyi YAPAN kooperatif. Bu turda
-Hürev'e yazılan sınır geri alındı (parsel Ata Life'ın), Hürev adları Ata Life'ın
-alternatifAdlar'ına eklendi. Hürev ayrı bir kayıt olarak kalsın mı, yoksa Ata Life'a tamamen
-birleşsin mi?
+Yapılan: **ata-life-sitesi ana kayıt** (bugünkü tabela adı, aranan ad, 44774/3 + sınır onda);
+Hürev adlarının üçü de alternatifAdlar'da (Hürev Sitesi / Hür-Ev Konut Yapı Kooperatifi /
+Hürev Yapı Kooperatifi) — o adla arayan da bulsun; metne kooperatif geçmişi ve üç blok
+işlendi; `hurev-yapi-kooperatifi` kaydı silinip Ata Life'a yönlendirildi.
+
+Not: bilgiemlak sayfası mahalleyi "Susuz Mh." yazıyor, ama Google + Yandex + OSM Nominatim
+üçü de Ata Mahallesi diyor — bilgiemlak'ın mahalle alanı 2013 dönemine ait, Yenimahalle'nin
+mahalle sınırları sonradan yeniden çizildi. Repodaki `ata-mahallesi` ataması doğru.
 
 ✅ **KAPANDI — ela-concept-evleri SİLİNDİ (Özgün, 2026-07-28).** Kanıt yetersiz ve parsel
 uyduda boş. (Eski not:) Müteahhit Murat Kumsel İnşaat'ın 2014 tanıtımı:

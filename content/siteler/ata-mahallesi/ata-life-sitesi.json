@@ -4,7 +4,8 @@
   "mahalleSlug": "ata-mahallesi",
   "alternatifAdlar": [
     "Hürev Sitesi",
-    "Hür-Ev Konut Yapı Kooperatifi"
+    "Hür-Ev Konut Yapı Kooperatifi",
+    "Hürev Yapı Kooperatifi"
   ],
   "koordinat": {
     "lat": 40.0003322,
@@ -12,11 +13,12 @@
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/ata-life-sitesi-boundary.geojson",
   "adres": "3768. Sokak, Ata Mahallesi, Yenimahalle/Ankara",
-  "aciklama": "Ata Life Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki yerleşim aksında yer alan bir konut sitesidir. TKGM kayıtlarına göre sitenin bulunduğu parsel yaklaşık 12.748 m² — 12,7 dönümlük — bir alana karşılık gelir; bu genişlik, Ata Mahallesi'nin yeni gelişen dokusundaki ferah site planlamasının örneğidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ata Life Sitesi — yerel kayıtlarda ve kooperatif geçmişinde 'Hür-Ev' adıyla da geçer — Yenimahalle'ye bağlı Ata Mahallesi'nde, 3768. Sokak üzerinde yer alan bir konut sitesidir. Yerleşim, Hür-Ev Konut Yapı Kooperatifi eliyle kurulmuş üç bloktan oluşur; bugün saha tabelasında ve harita kayıtlarında 'Ata Life' adı kullanılır. TKGM kayıtlarına göre sitenin bulunduğu parsel yaklaşık 12.748 m² — 12,7 dönümlük — bir alana karşılık gelir; bu genişlik, blok aralarına ferah bir ortak alan bırakır. Çağlayan Sitesi ve Ata Mahallesi pazar yeri çevresindeki oturmuş konut aksının parçasıdır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
-    "Ata Mahallesi — Eryaman'ın yanı başı",
+    "Hür-Ev Konut Yapı Kooperatifi eliyle kurulmuş üç blok",
+    "3768. Sokak — Ata Mahallesi",
     "Yaklaşık 12,7 dönümlük parsel (TKGM)",
-    "Yeni gelişen konut aksı"
+    "Çağlayan Sitesi ve pazar yeri çevresi"
   ],
   "adalar": [
     {
@@ -24,5 +26,5 @@
       "parsel": "3"
     }
   ],
-  "zenginlestirildi": "2026-07-23"
+  "zenginlestirildi": "2026-07-28"
 }

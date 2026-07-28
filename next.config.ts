@@ -127,6 +127,15 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/ekiciler-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova/meric-sitesi", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // Hürev → Ata Life birleştirmesi (2026-07-28). Tek yer, iki ad: parseli
+      // (44774/3) Hür-Ev Konut Yapı Kooperatifi kurmuş, saha tabelası ve Google
+      // kaydı bugün "Ata Life Sitesi" diyor (19 yorum, 3768. Sokak). Ada 44774'te
+      // yalnız iki parsel var ve /2 Raylı Sistemciler'e alanla çivilendiği için
+      // /3 elemeyle bu yerleşime kalıyor — yani iki ayrı site değil. Kooperatif
+      // adı Ata Life'ın alternatifAdlar'ında yaşıyor, o adla arayan da bulsun.
+      { source: "/mahalleler/ata/hurev-yapi-kooperatifi", destination: "/mahalleler/ata-mahallesi/ata-life-sitesi", permanent: true },
+      { source: "/mahalleler/ata-mahallesi/hurev-yapi-kooperatifi", destination: "/mahalleler/ata-mahallesi/ata-life-sitesi", permanent: true },
+
       // Search Console'un raporladığı gerçek 404'ler (2026-07-28). Ada rota
       // anahtarı bugün "<ada>-<parsel>"; Google'ın hâlâ denediği parselsiz eski
       // biçim 404 veriyordu. Ada sayfaları artık noindex olduğu için hedef,
