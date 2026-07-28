@@ -25,7 +25,7 @@ import { SiteCard } from "@/components/site/site-card";
 import { Reveal } from "@/components/ui/reveal";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
-import { ustBolgeEtiketi } from "@/lib/bolge";
+import { eryamandaMi } from "@/lib/bolge";
 
 type Props = {
   params: Promise<{ mahalle: string }>;
@@ -50,6 +50,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // tek yer başlıktı.
   const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
   const metaIsim = alias ? `${kisaIsim} (halk arasında ${alias})` : kisaIsim;
+  // Başlık soneki: Cumhuriyet'te halk adı ("Yeni Batı"), diğerlerinde kısa ad.
+  const emlakciIsmi =
+    mahalle.slug === "cumhuriyet-mahallesi" && alias ? alias : kisaIsim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
@@ -63,8 +66,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Tam mahalle adıyla birlikte başlık 90+ karaktere çıkıyordu ve Google
     // ~60 karakterde kestiği için asıl anahtar kelime "Emlakçısı" görünmez
     // oluyordu. Marka zaten alan adında ve sonuç kartının üstünde görünüyor.
-    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${ustBolgeEtiketi(mahalle)} Emlakçısı` },
-    description: `${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    // Sonek MAHALLEYE ÖZEL ("Göksu Emlakçısı"): SERP ölçümü (2026-07-29)
+    // "mahalle + emlakçı" sorgu sınıfının kazanılabilir tek sınıf olduğunu
+    // gösterdi (satılık/kiralık sorguları portal duvarı). Cumhuriyet'te sonek
+    // "Yeni Batı Emlakçısı" — o sorguyu bu sayfa hedefliyor (bkz. memory).
+    // "Eryaman" baş terimi başlıktan taştığı için description'a taşındı.
+    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${emlakciIsmi} Emlakçısı` },
+    description: `${eryamandaMi(mahalle) ? "Eryaman " : ""}${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },

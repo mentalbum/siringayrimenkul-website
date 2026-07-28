@@ -68,12 +68,19 @@ export function GET() {
     `- [İletişim](${siteConfig.url}/iletisim): telefon, WhatsApp, adres ve çalışma saatleri`,
     "",
     "## Eryaman Mahalleleri",
-    ...eryaman.map((m) => `- [${m.isim}](${siteConfig.url}/mahalleler/${m.slug}): ${m.kisaAciklama}`),
+    ...eryaman.map(
+      (m) =>
+        `- [${m.isim}](${siteConfig.url}/mahalleler/${m.slug}): ${m.kisaAciklama} (${getSitelerByMahalle(m.slug).length} site/rezidans sayfası)`
+    ),
     "",
     "## Komşu Yenimahalle Mahalleleri",
-    ...yenimahalle.map((m) => `- [${m.isim}](${siteConfig.url}/mahalleler/${m.slug}): ${m.kisaAciklama}`),
+    ...yenimahalle.map(
+      (m) =>
+        `- [${m.isim}](${siteConfig.url}/mahalleler/${m.slug}): ${m.kisaAciklama} (${getSitelerByMahalle(m.slug).length} site/rezidans sayfası)`
+    ),
     "",
     "## Notlar",
+    `- Her site/rezidansın kendi sayfası vardır: /mahalleler/{mahalle-slug}/{site-slug} deseninde ${toplamSite}+ sayfa (örnek: ${siteConfig.url}/mahalleler/tunahan-mahallesi/dema-park). Bir sitenin konumu, tapu niteliği, parsel alanı ve komşu siteleri bu sayfadan okunabilir.`,
     "- Etap sayfaları /mahalleler/{mahalle}/etaplar/{no}, ada sayfaları /mahalleler/{mahalle}/adalar/{ada} desenindedir.",
     "- Site kayıtlarındaki ada/parsel, alan ve blok bilgileri TKGM ve yerel emlak kayıtlarından doğrulanarak yazılır; doğrulanamayan bilgi yayınlanmaz.",
     "- Çalışma saatleri: " + siteConfig.calismaSaatleri.map((s) => `${s.gunler} ${s.saat}`).join(", "),

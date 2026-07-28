@@ -1,6 +1,6 @@
 "use client";
 
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/ga";
 import type { ReactNode } from "react";
 import { getCtaButtonClasses, type ButtonVariant } from "@/components/ui/button";
 

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/ga";
 import { siteConfig } from "@/lib/site-config";
 import { CheckBadgeIcon, WhatsAppIcon } from "@/components/ui/icons";
 import { OfisDurumu } from "@/components/ui/ofis-durumu";

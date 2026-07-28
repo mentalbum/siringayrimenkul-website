@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
@@ -212,8 +212,30 @@ export default async function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        {/* GA, @next/third-parties yerine elle: o bileşen gtag.js'i hidrasyonla
+            birlikte yüklüyor ve mobil LCP'ye ölçülmüş ~1,6 sn bindiriyordu.
+            Satır içi bootstrap dataLayer'ı ilk byte'tan kurar (olaylar
+            kuyruklanır, kayıp yok); ağır gtag.js ise boşta (lazyOnload) gelir.
+            Olay gönderimi lib/ga.ts üzerinden — davranış birebir aynı. */}
+        {siteConfig.gaMeasurementId && (
+          <>
+            <script
+              dangerouslySetInnerHTML={{
+                __html:
+                  `window.dataLayer=window.dataLayer||[];` +
+                  `function gtag(){dataLayer.push(arguments);}` +
+                  `gtag('js',new Date());` +
+                  `gtag('config','${siteConfig.gaMeasurementId}');`,
+              }}
+            />
+            <Script
+              id="_ga"
+              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
+              strategy="lazyOnload"
+            />
+          </>
+        )}
       </body>
-      {siteConfig.gaMeasurementId && <GoogleAnalytics gaId={siteConfig.gaMeasurementId} />}
     </html>
   );
 }

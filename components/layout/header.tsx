@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/ga";
 import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
 import { CtaButton } from "@/components/ui/button";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
@@ -50,13 +50,18 @@ export function Header() {
             window.scrollTo({ top: 0, behavior: "smooth" });
           }}
         >
+          {/* preload DEĞİL fetchPriority: src scroll durumuna göre değiştiği
+              için preload <head>'e link basıp LCP kaynaklarıyla yarışıyordu
+              (Next Image dokümanının kendi tavsiyesi). sizes ile srcset,
+              gerçek ~91px genişliğe iner — 480px varyant indirilmez. */}
           <Image
             src={scrolled ? "/brand/sirin-logo-on-dark.png" : "/brand/sirin-logo-on-light.png"}
             alt={siteConfig.name}
             width={480}
             height={233}
+            sizes="91px"
             className="h-10 w-auto sm:h-11"
-            preload
+            fetchPriority="high"
           />
         </Link>
 

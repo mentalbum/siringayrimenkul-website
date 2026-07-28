@@ -134,6 +134,28 @@ export default async function SitePage({ params }: Props) {
   // demek yanlış konum iddiası olur (lib/bolge.ts).
   const eryamanda = eryamandaMi(mahalle);
 
+  // "2026-07-28" -> "Temmuz 2026". Gecersiz/eksik tarihte hic gosterilmez.
+  const dogrulamaTarihi = (() => {
+    if (!site.zenginlestirildi) return null;
+    const t = new Date(site.zenginlestirildi);
+    if (Number.isNaN(t.getTime())) return null;
+    return t.toLocaleDateString("tr-TR", { month: "long", year: "numeric" });
+  })();
+
+  // AI cevap motorlari ve Google icin tazelik sinyali: sayfanin kendisi bir
+  // WebPage dugumu olarak dateModified tasir (ApartmentComplex'te bu alan yok).
+  const webPageJsonLd = site.zenginlestirildi
+    ? {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "@id": `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
+        url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
+        name: `${site.isim} — ${mahalle.isim}`,
+        dateModified: site.zenginlestirildi,
+        inLanguage: "tr-TR",
+      }
+    : null;
+
   const siteJsonLd = {
     "@context": "https://schema.org",
     "@type": "ApartmentComplex",
@@ -343,6 +365,13 @@ export default async function SitePage({ params }: Props) {
                 resmi kadastro belgesi yerine geçmez.
               </p>
             )}
+            {dogrulamaTarihi && (
+              // Tazelik sinyali (ziyaretçi + AI cevap motorları): fiyat değil,
+              // VERİ doğrulama tarihi — fiyat-rakamı kuralına takılmaz.
+              <p className="text-right text-xs text-muted">
+                Site bilgileri son doğrulama: {dogrulamaTarihi}
+              </p>
+            )}
           </div>
         )}
       </div>
@@ -430,6 +459,12 @@ export default async function SitePage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd) }}
       />
+      {webPageJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+        />
+      )}
     </div>
   );
 }

@@ -4,6 +4,36 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### SEO güçlendirme sırası (2026-07-29 keşif turu — etki/efor sıralı bekleyen kalemler)
+7 ajanlı ölçüm turu (SERP + autocomplete + PSI + AI-arama + en iyi örnekler) 12 kalem çıkardı;
+1-2-3-10 uygulandı (CWV/GA erteleme, mahalle-özel başlıklar, ana sayfa USP açıklaması,
+llms.txt + dateModified). Kalanlar sırayla:
+- **#4 Ulaşım modülü:** lib/metro.ts (Batıkent-Sincan istasyon koordinatları, resmî EGO kaynağı)
+  + site sayfalarına "En yakın metro: X — yaklaşık N m" chip'i; mahalle sayfalarına "Ulaşım ve
+  Günlük Yaşam" H2 (POI adları doğrulanmadan yazılmaz — Özgün'le 6-7'lik teyit turları).
+- **#5 İç bağ katmanı:** /eryamanda-ev-satmak hub-spoke (5 satış yazısı + tapu harcı aracı çift
+  yönlü), site sayfalarına 3 linklik "Ev sahipleri için rehberler" bloğu, mahalle-yaşam MDX'lerine
+  site linkleri.
+- **#6 "Fiyatı Ne Belirler" modülü** (rakamsız) + mahalle SSS'ine işlem-niyetli 2 soru.
+  Not: "eryaman satılık/kiralık daire" = portal duvarı, organik hedef DEĞİL (ölçüldü);
+  hedef sınıf "mahalle + emlakçı".
+- **#7 Site künyesi paketi:** kunye alanları (blok/konut/parsel m²/tapu tipi — %61-97 regex'le
+  çekilebilir, ölçüldü) + görünür künye tablosu + numberOfAccommodationUnits + "kaç blok?" SSS.
+  Yarı-otomatik çıkarım + parça parça onay.
+- **#8 Ev sahibi içerik kümesi:** kira sözleşmesi yenileme (~25 autocomplete boşluğu),
+  ev sahibinin hakları (çatı), depozito rehberi (TBK 342/347, ihtiyatlı dil).
+- **#9 Değerleme formu progresif:** Adım 1 = site autocomplete + sat/kirala; Unbounce verisi
+  3 alan %10,1 vs 9 alan %3,6.
+- **#11 Mahalle site listesi filtresi** + komşu mahalle karşılaştırma tablosu (fiyatsız).
+- **#12 4. araç:** Değer Artışı Kazancı (satış vergisi) hesaplayıcı — Yİ-ÜFE endeksleme,
+  istisna/tarife sabitleri tek config'de.
+- **Özgün'ün sahası:** emlakclick/bilgiemlak-firmalar/ilaneryaman dizin kayıtları; geçmiş işlem
+  vitrini verisi (fiyatsız); GBP yorumlarından 2-3 alıntı seçimi; TR mobil SERP'te AI Overview
+  manuel kontrolü; fotoğraf + backlink.
+- **İzleme notu:** 26 Tem URL göçü dizinde henüz oturmadı (3 kol bağımsız gördü) — 2-3 hafta
+  sıralama oynaklığı NORMAL, yanlış teşhisle içerik kararı alma. GSC sitemap artık 795 URL okuyor;
+  IndexNow'a 795 URL bildirildi (29 Tem).
+
 ### Açık soru turu (2026-07-28) — 5 karar sorusu + sınırsız kayıtlar
 
 ✅ **ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL.** Aynı adada komşu iki parsel:

@@ -1,7 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/ga";
 import { PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 

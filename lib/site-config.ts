@@ -1,7 +1,11 @@
 export const siteConfig = {
   name: "Şirin Gayrimenkul",
+  // İlk ~160 karakter SERP snippet'i: ayırt edici iddia öne (720 site + tapu
+  // sınırlı tek rehber + 5,0 profil), eylem çağrısı sona. Rakip snippet'ler
+  // jenerik ("N yıllık tecrübe") — ölçülen TO %2,2'yi yukarı çekmek için USP
+  // görünür olmalı. Yorum SAYISI bilerek yok (rakip sabotajı kuralı), puan var.
   description:
-    "Eryaman emlakçısı Şirin Gayrimenkul — satılık ve kiralık için Eryaman'ın 11 mahallesini, komşu Yenimahalle mahallelerini ve 700'den fazla site/rezidansı yakından tanıyan yerel emlak ofisi. Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim.",
+    "Eryaman emlakçısı Şirin Gayrimenkul — 720 site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",

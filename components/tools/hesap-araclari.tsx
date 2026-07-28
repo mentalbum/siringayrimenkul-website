@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { sendGAEvent } from "@next/third-parties/google";
+import { sendGAEvent } from "@/lib/ga";
 
 import { Reveal } from "@/components/ui/reveal";
 

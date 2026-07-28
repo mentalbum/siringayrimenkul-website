@@ -77,13 +77,14 @@
  * Tümü transform/opacity (compositor-dostu); prefers-reduced-motion'da kapalı.
  * ------------------------------------------------------------------------- */
 
+/* Bilinçli olarak yalnız transform: opacity:0 başlangıcı, LCP boyamasını
+ * animasyon ilerleyene dek geciktiriyordu (PSI ölçümü: FCP -845 ms). Kayma
+ * hissi duruyor, metin ilk kareden okunur — Lighthouse LCP'yi anında sayar. */
 @keyframes fade-up {
   from {
-    opacity: 0;
     transform: translateY(16px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
