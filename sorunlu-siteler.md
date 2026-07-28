@@ -53,7 +53,28 @@ ve 18477 (kapı no 1). 18477/1 tapusu: "A ve B bloktan oluşan 14 katlı betonar
 görünüyor (39.9989911/32.6144095) ve orası 19524/2 = "16 adet dubleks ev" — bambaşka bir yapı
 tipi. İkisinden biri yanlış yerde; hangisi?
 
-⚠️ **ÖZGÜN'E — Hürev ile Ata Life aynı site mi?** 44774/3'te Google Maps'e göre **Ata Life
+⚠️ **ÖZGÜN'E — Hürev ile Ata Life aynı site mi? (tek kalan gerçek soru)**
+
+Yeni kanıtlar (çürütme turu + Google Maps):
+- **Ad senin listenden geliyor.** commit 8eb833a "Populate Ata Mahallesi with 75 sites from
+  Özgün's screenshots" — aynı partide Ata Life ve Hürev AYRI AYRI kayıt olarak açılmış.
+  Yani ikisini ayrı site olarak listelemişsin.
+- **44774/3 ataması ise senin değil, sonradan bir ajan turunun tahmini** (commit b28e545,
+  "gate-found coords"). Yani "Ata Life'ın tek verisi bir pin" argümanı döngüsel: o pini de
+  ajan koymuş.
+- **Eleme Hür-Ev'i gösteriyor:** ada 44774'te tam iki parsel var; /2 = Raylı Sistemciler
+  (bilgiemlak 6.742 m² vs repo poligonu 6.772 m², %0,4 sapma ile çivilendi) → geriye /3
+  kalıyor ve bilgiemlak orayı "Hür-Ev KYK (44774 Ada)", 3 blok (1-A/1-B/1-C) diye anıyor.
+- **Ama Google Maps 44774/3'e "Ata Life Sitesi" diyor:** tabelalı fotoğraf, 19 yorum (4,6),
+  adres "Ata Mahallesi 3768. Sokak". Yani sahada bugün o adı taşıyan bir tabela var.
+
+En makul okuma: Hür-Ev kooperatifi parseli yaptı, yapı bugün "Ata Life" adıyla anılıyor —
+aynı yer, iki dönem iki ad. Şu an repo bunu varsayıyor (Ata Life ana kayıt, "Hürev Sitesi"
+ve "Hür-Ev Konut Yapı Kooperatifi" onun alternatifAdlar'ında; Hürev kaydı sınırsız duruyor).
+**Soru:** Ata Life ile Hürev senin için aynı yer mi, yoksa Ata Mahallesi'nde ayrı ayrı iki
+site mi? Ayrıysa Ata Life hangi sokakta?
+
+(Eski not:) 44774/3'te Google Maps'e göre **Ata Life
 Sitesi** var: tabelalı fotoğraf, 19 yorum (4,6), adres "Ata Mahallesi 3768. Sokak". Hürev ise
 Google'da "Konut Geliştirme" kategorisinde bir FİRMA kaydı ve bilgiemlak o adayı "Etikent
 Hür-Ev KYK (44774 Ada)" diye anıyor — yani Hürev muhtemelen siteyi YAPAN kooperatif. Bu turda
