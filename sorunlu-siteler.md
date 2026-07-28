@@ -4,6 +4,47 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### E-E-A-T / Helpful Content denetimi (2026-07-29, 6 kollu tur — 15 eksik, önem sıralı)
+Genel durum: Expertise + teknik altyapı güçlü (byline→Person şeması, hukuki içerikte yanlış iddia
+bulunamadı, yasak kalıplar sızmamış, linkler temiz). İki yapısal açık: yasal/güven katmanı (KVKK+çerez
+hiç yok) ve Experience ayağının iddia düzeyinde kalması. Detaylı kanıtlar workflow çıktısında.
+
+**KRİTİK:**
+1. KVKK aydınlatma metni + gizlilik sayfası YOK (/gizlilik, /kvkk... hepsi 404); form ad+telefon
+   topluyor. → /gizlilik rotası + footer yasal blok + form altına tek satır. [kod+Özgün onayı]
+2. GA4 çerezleri rızasız yükleniyor; çerez politikası yok (KVKK Kurulu Çerez Rehberi: analitik çerez
+   açık rıza ister). → rıza kapısı (hafif bant / Consent Mode v2) + aydınlatmaya çerez tablosu. [kod]
+   NOT: reddedenlerde GA ölçüm kaybı olacak — Özgün'e bildirilecek ticari gerçek.
+3. Tahliye/kira rehberlerinde 1 Eyl 2023'ten beri dava şartı olan ZORUNLU ARABULUCULUK hiç yok
+   (44 yazıda 'arabulucu' 0 sonuç); pinpoint TBK atıfları eksik. → iki rehbere bölüm + madde
+   referansları (her madde no eklenmeden önce mevzuattan doğrulanacak). [içerik]
+
+**YÜKSEK:**
+4. Feragat tutarsız: kira-artışı ve vergi yazılarında hukuki/mali feragat yok. [içerik, hızlı]
+5. 720 site sayfasında özgün/şablon oranı ters (medyan 85 kelime özgün vs ~1.400 ortak kalıp);
+   jenerik 5 SSS FAQPage şemasına giriyor. → jenerikleri şemadan çıkar, giriş/CTA'ya varyasyon,
+   'sahaNotu' alanı (SADECE Özgün'ün bildiği sitelere). [kod + Özgün turları]
+6. 720 başlık 'Satılık Daire' vaat ediyor, sayfada daire bilgisi yok. → veri olan sayfalarda H2'yi
+   gerçek bilgiyle doldur (daire tipleri/blok/tapu); ince kayıtlarda başlığı rehber varyantına düşür. [kod+içerik]
+7. Yazar kimliği yarım: portre yok, deneyim yılı yok, blog sonu bio kutusu yok, site sayfalarında
+   sorumlu kişi yok. → Özgün: 1 portre + yıl + Hamza 2 cümle; kod: yazar kartı + reviewedBy + sameAs. 
+8. Experience iddia düzeyinde: tek vaka anlatısı yok. → 'Sahadan bir örnek' kutuları (anonim,
+   fiyatsız, GERÇEK — Özgün'den tek-soru turlarıyla). [ikisi]
+9. Görünür güncellik katmanı eksik + dateModified mtime'dan (deploy'da yapay tazelenme riski!).
+   → frontmatter 'guncelleme' alanı, görünür 'Güncellendi' satırı, sözlüğe gözden geçirme tarihi. [kod]
+10. Sayı tutarsızlıkları: Ata sayfası 90 vs 87; blogda hayalet '729'; llms.txt '720+' vs dizin 517.
+    → alt-sınır kalıbına tek geçişlik tarama + build'de otomatik sayım. [kod+içerik]
+
+**ORTA:**
+11. 'NASIL' ayağı boş: /hakkimizda#yontem bölümü (TKGM süreci + AI şeffaflığı paragrafı). [kod]
+12. Komisyon çelişkisi: araç 'kural olarak kiracıdan' vs blog 'anlaşmaya göre' — blogdaki nötr
+    çerçeve esas alınıp araç düzeltilir (geçmiş 'komisyon argümanı' kararıyla uyumlu). [içerik]
+13. Kira artışı aracında güncel yasal tavan oranı + TÜİK linki + feragat yok — resmî endeks oranı
+    fiyat yasağına GİRMEZ ama ay etiketi + aylık güncelleme rutini şart. [kod; rutin kararı Özgün]
+14. 377 yorumun İÇERİĞİ sitede yok → sayısız/yıldızsız 2-3 METİN alıntısı (izinli, birebir,
+    süreç anlatan) hizmet sayfalarına. [Özgün seçer, kod yerleştirir]
+15. Nüfus/sıralama iddiaları kaynaksız-yılsız → '(TÜİK ADNKS, yıl)' atfı; teyit edilemeyen çıkarılır. [içerik]
+
 ### SEO güçlendirme sırası (2026-07-29 keşif turu — etki/efor sıralı bekleyen kalemler)
 7 ajanlı ölçüm turu (SERP + autocomplete + PSI + AI-arama + en iyi örnekler) 12 kalem çıkardı;
 1-2-3-10 uygulandı (CWV/GA erteleme, mahalle-özel başlıklar, ana sayfa USP açıklaması,
