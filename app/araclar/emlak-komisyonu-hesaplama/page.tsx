@@ -25,7 +25,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Emlak komisyonunu kim öder — alıcı mı, satıcı mı?",
     cevap:
-      "Satışta yaygın ve yönetmeliğe uygun uygulama, alıcı ve satıcının %2'şer + KDV ödemesidir. Kiralamada hizmet bedeli kural olarak kiracıdan alınır. Her durumda bedelin yazılı hizmet sözleşmesinde netleştirilmesi gerekir.",
+      "Satışta yaygın ve yönetmeliğe uygun uygulama, alıcı ve satıcının %2'şer + KDV ödemesidir. Kiralamada hizmet bedeli yaygın uygulamada kiracıdan alınır; bölüşüm taraflar arasında sözleşmeyle belirlenebilir — kimin ödeyeceğini işlem öncesi yazılı netleştirin. Her durumda bedelin yazılı hizmet sözleşmesinde netleştirilmesi gerekir.",
   },
   {
     soru: "Komisyon hangi bedel üzerinden hesaplanır?",

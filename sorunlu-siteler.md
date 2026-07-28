@@ -5,6 +5,18 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 
 ## Bekleyenler
 ### E-E-A-T / Helpful Content denetimi (2026-07-29, 6 kollu tur — 15 eksik, önem sıralı)
+**UYGULAMA DURUMU (aynı gün):** ✅ 1 (gizlilik sayfası + footer + form linki), ✅ 2 (çerez rıza
+kapısı — kabul/ret iki yol da önizlemede uçtan uca test edildi; gtag yalnız kabulde enjekte),
+✅ 3 (arabuluculuk bölümleri 2 rehbere + TBK/kanun atıfları + FAQ sorusu), ✅ 4 (feragatlar),
+✅ 9 (dateModified mtime→frontmatter 'guncelleme'; görünür Güncellendi satırı; sözlük tarihi),
+✅ 10 (90→85'ten fazla, 729→700'den fazla, site-config alt-sınır, llms kapsam), ✅ 11 (#yontem
+bölümü + AI şeffaflığı), ✅ 12 (komisyon nötrlendi), ✅ 5-kod kısmı (jenerik 5 SSS FAQPage
+şemasından çıktı, giriş/CTA'ya deterministik varyasyon), ✅ 6-kısmi (H2 beklenti yönetimi;
+başlık değişikliği BİLİNÇLİ ERTELENDİ — URL göçü otururken 218 başlık değiştirmek uzun kuyruk
+sıralamasını riske atar), ✅ 7-kod kısmı (blog yazar kartı, site sayfası 'Derleyen' satırı,
+WebPage author/reviewedBy). ⏳ 13-kısmi (TÜİK linki/feragat araç sayfasına eklenecek; güncel
+ORAN yazılmadı — aylık rutin istemiyorsun, o karar sende). KALAN ÖZGÜN KALEMLERİ: portre+yıl+
+Hamza cümleleri (7), saha notları/vaka (5,8), yorum seçimi (14), nüfus yıl teyidi (15).
 Genel durum: Expertise + teknik altyapı güçlü (byline→Person şeması, hukuki içerikte yanlış iddia
 bulunamadı, yasak kalıplar sızmamış, linkler temiz). İki yapısal açık: yasal/güven katmanı (KVKK+çerez
 hiç yok) ve Experience ayağının iddia düzeyinde kalması. Detaylı kanıtlar workflow çıktısında.

@@ -523,6 +523,13 @@ export default function SozlukPage() {
           mülkiyetinden kârgire, emsalden tahliye taahhütnamesine. Satış ya da kiralama
           görüşmesine bu sözlükle oturduğunuzda masada eşit konuşursunuz.
         </p>
+        {/* Statik tarih bilinçli: terimler değiştikçe elle güncellenir — mevzuata
+            bağlı tanımlar (depozito sınırı, tahliye taahhüdü) bayatlayabilir,
+            okuyucu son kontrolün ne zaman yapıldığını görmeli (YMYL tazelik). */}
+        <p className="mt-3 text-xs text-muted">
+          Son gözden geçirme: Temmuz 2026 · Bu sözlük bilgilendirme amaçlıdır; hukuki danışmanlık
+          yerine geçmez.
+        </p>
       </header>
 
       <dl className="mt-10 space-y-4">

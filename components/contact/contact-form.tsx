@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import { sendGAEvent } from "@/lib/ga";
 import { siteConfig } from "@/lib/site-config";
@@ -331,7 +332,12 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
         >
           {siteConfig.phoneDisplay}
         </a>
-        . Bilgileriniz sitemizde saklanmaz; yalnızca size dönüş yapmamız için bize iletilir.
+        . Bilgileriniz sitemizde saklanmaz; mesajınız kendi WhatsApp uygulamanız üzerinden bize
+        iletilir. Ayrıntılar:{" "}
+        <Link href="/gizlilik" className="font-semibold text-gold-dark hover:underline">
+          Gizlilik ve KVKK Aydınlatma Metni
+        </Link>
+        .
       </p>
     </form>
   );

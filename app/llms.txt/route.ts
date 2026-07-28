@@ -50,7 +50,7 @@ export function GET() {
     "",
     "## Ana Sayfalar",
     `- [Mahalle rehberleri](${siteConfig.url}/mahalleler): ${mahalleler.length} mahallenin yaşam, ulaşım ve site rehberi`,
-    `- [Site ve rezidans dizini](${siteConfig.url}/siteler): ${toplamSite}+ sitenin ada/parsel, blok ve konum bilgisi`,
+    `- [Site ve rezidans dizini](${siteConfig.url}/siteler): Eryaman tarafındaki siteler tek listede; komşu Yenimahalle mahalleleri ${siteConfig.url}/siteler/yenimahalle dizininde. Toplam ${toplamSite}+ site/rezidans sayfası.`,
     `- [Ev değerleme](${siteConfig.url}/ev-degerleme): satış/kiralama öncesi emsal bazlı fiyat analizi`,
     `- [Ev sahibi hesap araçları](${siteConfig.url}/araclar): kira artışı (TÜFE), tapu harcı, yasal komisyon, boş kalma maliyeti hesaplayıcıları`,
     `- [Yenimahalle siteleri](${siteConfig.url}/siteler/yenimahalle): Ata, Cumhuriyet ve Susuz mahallelerindeki sitelerin ayrı dizini`,

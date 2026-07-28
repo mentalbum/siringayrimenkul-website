@@ -24,6 +24,7 @@ import { ArrowRightIcon } from "@/components/ui/icons";
 import { getSiteFaq } from "@/lib/faq";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+import { OZGUN_ID } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
@@ -134,6 +135,17 @@ export default async function SitePage({ params }: Props) {
   // demek yanlış konum iddiası olur (lib/bolge.ts).
   const eryamanda = eryamandaMi(mahalle);
 
+  // 720 sayfada birebir aynı kalıp "ölçeklendirilmiş içerik" görünümü veriyordu
+  // (E-E-A-T denetimi, 2026-07-29). Varyant seçimi DETERMİNİSTİK (slug'dan) —
+  // her build'de aynı sayfa aynı metni alır, yapay tazelenme olmaz.
+  const varyant = Array.from(site.slug).reduce((t, ch) => t + ch.charCodeAt(0), 0);
+  const girisVaadi = [
+    `Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`,
+    `Buradaki dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, siteyi yakından tanıyan emlakçınız olarak yanınızdayız.`,
+    `Bu sitede daireniz varsa — satış da kiralama da olsa — süreci sizin adınıza biz yürütüyoruz.`,
+    `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, ilk görüşmeden tapuya kadar yanınızdayız.`,
+  ][varyant % 4];
+
   // "2026-07-28" -> "Temmuz 2026". Gecersiz/eksik tarihte hic gosterilmez.
   const dogrulamaTarihi = (() => {
     if (!site.zenginlestirildi) return null;
@@ -153,6 +165,10 @@ export default async function SitePage({ params }: Props) {
         name: `${site.isim} — ${mahalle.isim}`,
         dateModified: site.zenginlestirildi,
         inLanguage: "tr-TR",
+        // İçerikten sorumlu gerçek kişi — QRG 2.5.2 "kim sorumlu" sorusunun
+        // yapılandırılmış cevabı. OZGUN_ID, hakkımızdaki Person düğümüne bağlanır.
+        author: { "@id": OZGUN_ID },
+        reviewedBy: { "@id": OZGUN_ID },
       }
     : null;
 
@@ -270,7 +286,7 @@ export default async function SitePage({ params }: Props) {
           <p className="text-base font-medium text-navy">
             {`${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
               tipi ? `${tipi} ` : ""
-            }bir yerleşimdir. Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`}
+            }bir yerleşimdir. ${girisVaadi}`}
           </p>
           {/* Sayfadaki İLK tıklanabilir öğe ev sahibinin kapısı olsun. Daha önce
               burada sahibinden.com kutusu vardı ve ziyaretçiyi 0,4. ekranda
@@ -369,7 +385,13 @@ export default async function SitePage({ params }: Props) {
               // Tazelik sinyali (ziyaretçi + AI cevap motorları): fiyat değil,
               // VERİ doğrulama tarihi — fiyat-rakamı kuralına takılmaz.
               <p className="text-right text-xs text-muted">
-                Site bilgileri son doğrulama: {dogrulamaTarihi}
+                Site bilgileri son doğrulama: {dogrulamaTarihi} · Derleyen:{" "}
+                <Link
+                  href="/hakkimizda#ozgun-sirin"
+                  className="font-medium text-gold-dark hover:underline"
+                >
+                  Özgün Şirin
+                </Link>
               </p>
             )}
           </div>
@@ -390,7 +412,7 @@ export default async function SitePage({ params }: Props) {
           <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
             ev sahibi hesap araçlarımız
           </Link>
-          {` elinizin altında. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda yayınlanıyor; aradığınız daire şu anda listede yoksa bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+          {` elinizin altında. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Bu sayfada ilan yayınlamıyoruz — güncel ilanlarımız sahibinden.com mağazamızda. Bu sayfanın işi başka: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada; karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
         <CtaButton
           href={siteConfig.sahibindenUrl}
@@ -404,7 +426,11 @@ export default async function SitePage({ params }: Props) {
 
       <CtaBanner
         className="mt-12"
-        baslik="Bu Sitede Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?"
+        baslik={[
+          "Bu Sitede Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?",
+          `${site.isim} İçindeki Daireniz İçin Doğru Fiyatı Birlikte Bulalım`,
+          "Dairenizin Bu Sitedeki Gerçek Değerini Konuşalım",
+        ][varyant % 3]}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton

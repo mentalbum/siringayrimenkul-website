@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
+import { CerezOnayi } from "@/components/analytics/cerez-onayi";
 import { siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
@@ -215,7 +215,9 @@ export default async function RootLayout({
         {/* GA, @next/third-parties yerine elle: o bileşen gtag.js'i hidrasyonla
             birlikte yüklüyor ve mobil LCP'ye ölçülmüş ~1,6 sn bindiriyordu.
             Satır içi bootstrap dataLayer'ı ilk byte'tan kurar (olaylar
-            kuyruklanır, kayıp yok); ağır gtag.js ise boşta (lazyOnload) gelir.
+            kuyruklanır, kayıp yok). Ağır gtag.js ise ÇEREZ RIZASINA bağlı:
+            KVKK Kurulu Çerez Rehberi analitik çerez için açık rıza istiyor —
+            CerezOnayi "Kabul" gelmeden script'i hiç yüklemez (bkz. /gizlilik).
             Olay gönderimi lib/ga.ts üzerinden — davranış birebir aynı. */}
         {siteConfig.gaMeasurementId && (
           <>
@@ -228,11 +230,7 @@ export default async function RootLayout({
                   `gtag('config','${siteConfig.gaMeasurementId}');`,
               }}
             />
-            <Script
-              id="_ga"
-              src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.gaMeasurementId}`}
-              strategy="lazyOnload"
-            />
+            <CerezOnayi gaId={siteConfig.gaMeasurementId} />
           </>
         )}
       </body>

@@ -27,6 +27,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/sozluk`, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/gizlilik`, changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/hakkimizda`, changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, changeFrequency: "yearly", priority: 0.4 },

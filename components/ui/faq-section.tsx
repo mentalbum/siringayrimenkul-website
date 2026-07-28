@@ -12,18 +12,23 @@ export function FaqSection({
 }) {
   if (items.length === 0) return null;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: items.map((item) => ({
-      "@type": "Question",
-      name: item.soru,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: item.cevap,
-      },
-    })),
-  };
+  // Şemaya yalnız veriye dayalı, siteye özgü sorular girer (bkz. FaqItem.semaDisi).
+  const semaSorulari = items.filter((item) => !item.semaDisi);
+  const jsonLd =
+    semaSorulari.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: semaSorulari.map((item) => ({
+            "@type": "Question",
+            name: item.soru,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.cevap,
+            },
+          })),
+        }
+      : null;
 
   return (
     <section className={className ?? "mt-14"}>
@@ -43,10 +48,12 @@ export function FaqSection({
         ))}
       </div>
       </Reveal>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {jsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      )}
     </section>
   );
 }

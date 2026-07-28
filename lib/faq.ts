@@ -10,6 +10,11 @@ import { adaOnayliEtap, onayliEtap } from "@/lib/etap-onayli";
 export interface FaqItem {
   soru: string;
   cevap: string;
+  /** true ise FAQPage JSON-LD'ye GİRMEZ, yalnız sayfada görünür. Neden:
+   * 720 site sayfasında yalnız site adı çekimlenen jenerik pazarlama soruları
+   * şemaya birebir aynı cevapla giriyordu — "ölçeklendirilmiş içerik" sinyali.
+   * Şemada yalnız siteye özgü, veriye dayalı sorular kalır. */
+  semaDisi?: boolean;
 }
 
 export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
@@ -77,12 +82,14 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
       } yer alıyor. ${mahalle.kisaAciklama}`,
     },
     {
+      semaDisi: true,
       soru: `${site.isim} emlakçısı kimdir?`,
       cevap: tipi
         ? `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
         : `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
     {
+      semaDisi: true,
       soru: `${bulunmaHali(site.isim)} satılık veya kiralık daire var mı?`,
       cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın; ${bulunmaHali(site.isim)} portföyümüze eklenen daireleri size ilk biz haber verelim.`,
     },
@@ -105,14 +112,17 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   }
 
   items.push({
+    semaDisi: true,
     soru: `${bulunmaHaliKi(site.isim)} dairemi satmak istiyorum, nereden başlamalıyım?`,
     cevap: `İlk adım doğru fiyatı bilmek: ${bulunmaHaliKi(site.isim)} dairenizi mahalle ortalamasından değil, sitenizdeki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz. Ardından fotoğraf ve tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya değerleme formunu doldurun; aynı gün dönüş yapalım.`,
   });
   items.push({
+    semaDisi: true,
     soru: `${bulunmaHaliKi(site.isim)} daire fiyatları ne durumda?`,
     cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, ${bulunmaHaliKi(site.isim)} gerçekleşen satış ve kiralamalardan okunur. Dairenizin veya almak istediğiniz dairenin güncel değerini öğrenmek için bizi ${siteConfig.phoneDisplay} numarasından arayın — siteyi blok blok tanıyoruz.`,
   },
   {
+    semaDisi: true,
     soru: `${bulunmaHali(site.isim)} dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
     cevap: `Doğru kira, ${bulunmaHaliKi(site.isim)} emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerinde görünen fiyatlar çoğu zaman yanıltıcıdır. Kiralamayı bize emanet ettiğinizde dairenize özel kira tespitini biz yapıyoruz; sonrasında kiracı doğrulama, sözleşme ve fotoğraflı teslim tutanağı dahil tüm süreci üstleniyoruz.`,
   });

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getAllMahalleler, getSitelerByMahalle } from "@/lib/content";
@@ -187,6 +188,39 @@ export default function HakkimizdaPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(ozgunPersonJsonLd) }}
       />
+
+      {/* "NASIL" ayağı (Google'ın Kim/Nasıl/Neden çerçevesi): içerik ve verinin
+          nasıl üretildiği tek yerde, dürüstçe. AI şeffaflığı paragrafı bilinçli —
+          700+ sayfalık tek-imzalı sitede okuyucunun sorması makul bir soru. */}
+      <section id="yontem" className="mt-12 rounded-2xl border border-border bg-surface p-6">
+        <h2 className="text-xl">İçerik ve Veri Yöntemimiz</h2>
+        <div className="mt-4 space-y-3 text-sm leading-relaxed text-body">
+          <p>
+            <strong className="text-navy">Konum ve tapu verisi:</strong> Site sayfalarındaki
+            parsel sınırları TKGM parsel sorgu verisine dayanır; her sınır yayına alınmadan önce
+            ada/parsel düzeyinde doğrulanır, doğrulanamayan bilgi yayınlanmaz. Sayfalardaki
+            &quot;son doğrulama&quot; tarihi, o kaydın en son ne zaman elden geçtiğini gösterir.
+          </p>
+          <p>
+            <strong className="text-navy">Yazılar:</strong> Rehber ve site tanıtımları{" "}
+            <Link
+              href="/hakkimizda#ozgun-sirin"
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              Özgün Şirin
+            </Link>{" "}
+            sorumluluğunda yayımlanır. Hazırlıkta yapay zekâ araçlarından destek alıyoruz;
+            bilgilerin kaynağı her zaman TKGM kayıtları, resmî mevzuat ve saha bilgisidir ve
+            yayın öncesi insan kontrolünden geçer. Hukuk ve vergi konularında yazılarımız
+            bilgilendirme amaçlıdır — somut adımlar için ilgili meslek insanına yönlendiririz.
+          </p>
+          <p>
+            <strong className="text-navy">Fiyat politikası:</strong> Sayfalarımızda güncel piyasa
+            fiyatı rakamı yayınlamıyoruz — enflasyon ortamında yazılı rakam günü geçmiş bilgi
+            hâline gelir ve yanıltır. Fiyat, güncel emsallerle görüşmede birlikte belirlenir.
+          </p>
+        </div>
+      </section>
 
       <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {adimlar.map((adim) => (

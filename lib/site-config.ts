@@ -5,7 +5,7 @@ export const siteConfig = {
   // jenerik ("N yıllık tecrübe") — ölçülen TO %2,2'yi yukarı çekmek için USP
   // görünür olmalı. Yorum SAYISI bilerek yok (rakip sabotajı kuralı), puan var.
   description:
-    "Eryaman emlakçısı Şirin Gayrimenkul — 720 site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
+    "Eryaman emlakçısı Şirin Gayrimenkul — 700'den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",

@@ -6,11 +6,11 @@ import remarkGfm from "remark-gfm";
 import {
   getAllBlogPosts,
   getBlogPostBySlug,
-  getBlogPostLastModified,
   getMahalleBySlug,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { FaqSection } from "@/components/ui/faq-section";
+import { YazarKarti } from "@/components/blog/yazar-karti";
 import { getBlogKonu } from "@/lib/blog-konular";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
@@ -75,11 +75,11 @@ export default async function BlogPostPage({ params }: Props) {
   ].slice(0, 3);
 
   const postUrl = `${siteConfig.url}/blog/${post.slug}`;
-  const dateModified = (() => {
-    const mtime = getBlogPostLastModified(post.slug);
-    // dateModified must never predate publication.
-    return mtime > new Date(post.tarih) ? mtime.toISOString() : post.tarih;
-  })();
+  // mtime KULLANILMIYOR: Vercel taze checkout'ta tüm mtime'lar build gününe
+  // eşitlenir → her deploy tüm yazıları "bugün güncellendi" gösterirdi (yapay
+  // tazelik — Google'ın tarih kılavuzuna aykırı). Kaynak: elle beyan edilen
+  // frontmatter `guncelleme`; yoksa yayın tarihi.
+  const dateModified = post.guncelleme && post.guncelleme > post.tarih ? post.guncelleme : post.tarih;
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
@@ -145,6 +145,21 @@ export default async function BlogPostPage({ params }: Props) {
               year: "numeric",
             })}
           </time>
+          {post.guncelleme && post.guncelleme > post.tarih && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>
+                Güncellendi:{" "}
+                <time dateTime={post.guncelleme}>
+                  {new Date(post.guncelleme).toLocaleDateString("tr-TR", {
+                    day: "numeric",
+                    month: "long",
+                    year: "numeric",
+                  })}
+                </time>
+              </span>
+            </>
+          )}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{post.baslik}</h1>
       </header>
@@ -152,6 +167,8 @@ export default async function BlogPostPage({ params }: Props) {
       <div className="prose prose-slate mt-8 max-w-none prose-headings:font-heading prose-headings:text-navy prose-a:text-gold-dark prose-a:no-underline hover:prose-a:underline">
         <MDXRemote source={post.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
       </div>
+
+      <YazarKarti />
 
       {!govdedeSss && post.faq && post.faq.length > 0 && (
         <FaqSection title="Sık Sorulan Sorular" items={post.faq} className="mt-12" />

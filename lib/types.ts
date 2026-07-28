@@ -54,6 +54,12 @@ export interface Site {
 export interface BlogFrontmatter {
   baslik: string;
   tarih: string;
+  /** Elle beyan edilen son içerik güncellemesi (YYYY-AA-GG). dateModified BU
+   * alandan üretilir, dosya mtime'ından DEĞİL: taze git checkout'ta (Vercel)
+   * tüm dosyaların mtime'ı build gününe eşitlenir ve her deploy "bugün
+   * güncellendi" yalanı üretirdi — Google'ın "yapay tazeleme yapma" uyarısının
+   * tam kendisi. İçeriği gerçekten değiştirince bu alanı elle güncelle. */
+  guncelleme?: string;
   ozet: string;
   kapakGorseli?: string;
   ilgiliMahalle?: string;

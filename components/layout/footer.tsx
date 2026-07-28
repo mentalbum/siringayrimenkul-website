@@ -180,7 +180,10 @@ export function Footer() {
 
       <div className="border-t border-white/10 px-4 py-5 text-center text-xs text-white/60 sm:px-6">
         © {new Date().getFullYear()} {siteConfig.name}. Tüm hakları saklıdır. · Taşınmaz Ticareti
-        Yetki Belgesi No: 0603771
+        Yetki Belgesi No: 0603771 ·{" "}
+        <Link href="/gizlilik" className="underline-offset-2 hover:text-gold hover:underline">
+          Gizlilik ve KVKK
+        </Link>
       </div>
     </footer>
   );
