@@ -139,6 +139,18 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova-mahallesi/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // Hayalet kayıt temizliği (2026-07-28, araştırma turu). Üçü de gerçek bir
+      // yerleşim değil, dizin/etiket artığıydı:
+      //  - "Ortak Grup Yapı": bilgiemlak'ın "Etikent 44756 Ada Ortak Yapı Grup" etiketinin
+      //    bozulmuş hâli. O parselde (44756/2) gerçekte Umut Yapı Sitesi var, kayıtlı.
+      //  - "Türk Konut": TÜRKKONUT = yapı kooperatifleri merkez birliği, yani çatı marka.
+      //    Şeyh Şamil'deki 14+ site zaten "Türkkonut X Sitesi" adıyla ayrı ayrı kayıtlı;
+      //    düz bu adla anılan tek bir yerleşim yok. SEO'su mahallenin alternatifAdlar'ında.
+      { source: "/mahalleler/ata/ortak-grup-yapi", destination: "/mahalleler/ata-mahallesi/umut-yapi-sitesi", permanent: true },
+      { source: "/mahalleler/ata-mahallesi/ortak-grup-yapi", destination: "/mahalleler/ata-mahallesi/umut-yapi-sitesi", permanent: true },
+      { source: "/mahalleler/seyh-samil/turk-konut", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+      { source: "/mahalleler/seyh-samil-mahallesi/turk-konut", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+
       // MAHALLE SLUG TAŞIMASI (2026-07-26): /mahalleler/tunahan ->
       // /mahalleler/tunahan-mahallesi. Eski adreslerin TAMAMI (mahalle sayfası,
       // altındaki site/ada/etap sayfaları) kalıcı olarak yenisine taşınıyor.
