@@ -27,6 +27,7 @@ import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { OZGUN_ID } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
+import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
 import { bulunmaHali } from "@/lib/turkce";
@@ -144,6 +145,7 @@ export default async function SitePage({ params }: Props) {
   })();
   const sinir = getSiteBoundary(site);
   const tipi = inferSiteTipi(site.isim);
+  const kunye = cikarKunye(site);
   const dogrulanmisEtap = onayliEtap(site.adalar);
   // Ata/Susuz/Cumhuriyet Yenimahalle'dedir; o mahallelerdeki sitelere "Eryaman"
   // demek yanlış konum iddiası olur (lib/bolge.ts).
@@ -324,10 +326,18 @@ export default async function SitePage({ params }: Props) {
               </figcaption>
             </figure>
           )}
+          {/* AEO "önce cevap" kalıbı (Özgün onayı, 2026-07-29): ilk cümle
+              müşteriye telefonda verilecek cevap gibi — blok/kat/tapu önde.
+              Uzmanlık kanıtı ev sahibine güven verir; yapay zekâ asistanları da
+              "X sitesi nasıl?" cevabında ilk cümleyi alıntılar. Künye metinden
+              çıkarılamadıysa eski genel kalıp aynen kalır. */}
           <p className="text-base font-medium text-navy">
-            {`${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
-              tipi ? `${tipi} ` : ""
-            }bir yerleşimdir. ${girisVaadi}`}
+            {`${
+              kunyeCumlesi(site, kunye, mahalle.isim, eryamanda) ??
+              `${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
+                tipi ? `${tipi} ` : ""
+              }bir yerleşimdir.`
+            } ${girisVaadi}`}
           </p>
           {/* Sayfadaki İLK tıklanabilir öğe ev sahibinin kapısı olsun. Daha önce
               burada sahibinden.com kutusu vardı ve ziyaretçiyi 0,4. ekranda

@@ -940,3 +940,20 @@ Ağırlıklı PageRank (gövde 3x, nav/footer 1x, d=0.85, 1.578 sayfa) + BFS der
 - her indexlenebilir tip kazandı: site %23,2→%23,9, mahalle %19,6→%20,5, blog %7,2→%7,5, değerleme %6,0→%6,3, anasayfa %5,6→%5,9
 - site katmanı: min PR 215→**237** (+%10), maks/min 2,9x→**2,5x**, gelen bağ tabanı 3→**5**
 - doğrulama: canlı DOM 6 kart + 0 konsol hatası; ada sayfasında 4 ada bağı
+
+## Künye paketi + karşılaştırma aracı + AEO açılışı (2026-07-30)
+ChatGPT istişaresinden onaylanan üçlü uygulandı: lib/kunye.ts (720 kayıttan tapu tabanlı yapısal çıkarım), /araclar/site-karsilastirma (fiyatsız karşılaştırma aracı), /eryaman-site-dokusu (fiyatsız rapor — basın için kaynak-gösterme bölümü var), site sayfalarında "önce cevap" açılış cümlesi (679 sayfada künyeli, kalanı eski kalıp).
+
+### Parser iki çürütme turundan geçti (7+8 ajan, 268 kayıt incelendi)
+Yakalanan ve kod korumasına dönüşen hata sınıfları lib/kunye.ts baş yorumunda listeli (binlik ayraç, ticari blok katı, komşu site sayıları, paylaşılan ada alanı, proje/inşaat alanı, sahte villa/rezidans, isimden sayı, kısmi etap/parsel sayıları, JS \b'nin Türkçe harflerde çalışmaması). Kapsama (720 kayıt): cümle 679, tapu 530, alan 474, blok 429, kat 329, konut 86. Tip dağılımı: 615 apartman / 54 rezidans / 35 villa.
+
+### İçerik ÇELİŞKİ kartları (kayıt metni kendi içinde tutarsız — düzeltme turu bekliyor)
+- **"X-Y kat aralığında bloklar (tapu kaydı)" şablon artıkları** aciklama'daki tapu alıntısıyla çelişiyor: seyirtepe-baspinar (2-17 vs 17'şer), mood-altinok (2-21 vs 21'er), twin-towers (1-35 vs 35'er), gold-life (4-18 vs 18'er), ilona (1-14 vs 14'er), finest (2-13 vs 11-13), park-goksu (3-16 vs 15-16), batimahal (2-16 vs 15-16), bulvar-1071 (4-15 — bu DOĞRU olabilir, tapuda 4 katlı D blok var). Parser bu kalıbı artık hiç okumuyor; kayıtlar yine de temizlenmeli.
+- **bahcen-eryaman-konutlari**: ozellik "1 katlı yapı (tapu kaydı)" — aciklama 16-20 katlı 10 blok sayıyor.
+- **kasmir-mavi-orkide**: ozellik "~55.000 m² proje alanı" TKGM parseli değil; gerçek parsel alanı kayıtta yok.
+- **zen-park-plus**: dev verisi 16 kat vs tapu 18 kat aynı kayıtta.
+- **ankalux-residence**: metin "bir rezidans projesidir" diyor, tapu "betonarme apartman" — hangisi doğru? (parser metnin kendi tanımına uyup rezidans diyor)
+- **eston-sitesi**: aciklama "4 Adet Betonarme Apartman + tek parsel" vs ozellik "4 ayrı ada — 18 apartman + parseller".
+
+## Analitik ölçüm kararı (2026-07-30)
+GA rakamları çerez rızası kapısı sonrası düştü (7g ort. ~48/gün → görünen 20). Özgün'le konuşuldu; bandı kaldırma önerisi REDDEDİLDİ (KVKK + rakip şikayet riski + gizlilik sayfasıyla çelişki). Onaylanan çözüm: (1) Vercel Web Analytics (çerezsiz, rızasız herkesi sayar) — kod eklendi, PANEL AÇMA ADIMI ÖZGÜN'DE; (2) band davetkârlaştırıldı ("Ziyaretinizi sayabilir miyiz?"). Gizlilik sayfasına çerezsiz ölçüm bölümü eklendi.

@@ -94,6 +94,7 @@ export default function AraclarPage() {
             ["Kira Artışı Hesaplama", "/araclar/kira-artisi-hesaplama"],
             ["Tapu Harcı Hesaplama", "/araclar/tapu-harci-hesaplama"],
             ["Emlak Komisyonu Hesaplama", "/araclar/emlak-komisyonu-hesaplama"],
+            ["Site Karşılaştırma Aracı", "/araclar/site-karsilastirma"],
           ].map(([etiket, href]) => (
             <Link
               key={href}
