@@ -87,6 +87,13 @@ export default function GizlilikPage() {
             Zorunlu (siteyi çalıştıran) çerez kullanmıyoruz; oturum açma, üyelik veya ödeme sistemi
             yoktur.
           </p>
+          <p className="mt-3">
+            <strong>Çerezsiz toplu ölçüm:</strong> Sayfaların kaç kez görüntülendiğini saymak için
+            ayrıca Vercel Web Analytics kullanıyoruz. Bu ölçüm <strong>çerez kullanmaz</strong>,
+            cihazınıza hiçbir şey kaydetmez ve sizi kimliklendirmez; yalnızca &quot;bu sayfa bugün
+            kaç kez açıldı&quot; düzeyinde toplu sayılar üretir. Çerez bildirimindeki seçiminizden
+            bağımsız çalışır ve reddetmeniz hâlinde de kişisel veri işlemez.
+          </p>
         </section>
 
         <section>

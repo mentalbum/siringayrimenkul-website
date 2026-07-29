@@ -53,11 +53,15 @@ export function CerezOnayi({ gaId }: { gaId: string }) {
         <div
           role="dialog"
           aria-label="Çerez bildirimi"
-          className="fixed inset-x-4 bottom-24 z-50 rounded-2xl border border-border bg-surface p-4 shadow-lg lg:bottom-6 lg:left-6 lg:right-auto lg:max-w-sm"
+          className="fixed inset-x-4 bottom-24 z-50 rounded-2xl border border-gold/50 bg-surface p-4 shadow-xl lg:bottom-6 lg:left-6 lg:right-auto lg:max-w-sm"
         >
-          <p className="text-sm leading-relaxed text-body">
-            Siteyi geliştirmek için Google Analytics çerezleri kullanmak istiyoruz. Reddederseniz
-            site aynı şekilde çalışır.{" "}
+          {/* Metin davetkâr ama dürüst; Reddet eşit erişilebilir kalır (KVKK).
+              "Kimliğinizi bilmeyiz" iddiası doğru: GA4 yapılandırmamız ad/e-posta
+              görmez, biz de reklam/satış yapmayız. */}
+          <p className="text-sm font-semibold text-navy">Ziyaretinizi sayabilir miyiz?</p>
+          <p className="mt-1 text-sm leading-relaxed text-body">
+            Hangi rehberlerin işe yaradığını görmek için Google Analytics çerezine izin verir
+            misiniz? Kimliğinizi bilmeyiz, veriyi kimseyle paylaşmayız.{" "}
             <Link href="/gizlilik" className="font-semibold text-gold-dark hover:underline">
               Ayrıntılar
             </Link>

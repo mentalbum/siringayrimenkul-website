@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
+import { Analytics } from "@vercel/analytics/next";
 import { CerezOnayi } from "@/components/analytics/cerez-onayi";
 import { siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
@@ -233,6 +234,11 @@ export default async function RootLayout({
             <CerezOnayi gaId={siteConfig.gaMeasurementId} />
           </>
         )}
+        {/* Vercel Web Analytics: ÇEREZSİZ toplu sayaç — kimlik/çerez yok,
+            bu yüzden rıza bandına bağlı değildir ve HERKESİ sayar (GA yalnız
+            "Kabul" diyenleri görür; toplam trafik buradan okunur). Panelde
+            Web Analytics açık olmalı; kapalıyken bileşen sessizce boşa döner. */}
+        <Analytics />
       </body>
     </html>
   );
