@@ -125,6 +125,13 @@ export default function EvSatmakPage() {
           siz kararları verirsiniz, koşturmayı biz üstleniriz. (Taşınmaz Ticareti Yetki Belgesi
           No: 0603771)
         </p>
+        {/* Niyet denetimi (2026-07-29): hero'da tıklanabilir CTA yoktu; hizmet
+            niyetli ziyaretçi ilk ekranda eylem yolu görmeli. */}
+        <div className="mt-6">
+          <CtaButton href="/ev-degerleme" variant="primary" className="px-8">
+            Evinizi Değerlendirelim
+          </CtaButton>
+        </div>
       </header>
 
       <section className="mt-12">
@@ -268,7 +275,22 @@ export default function EvSatmakPage() {
 
       <FaqSection title="Eryaman'da Ev Satmak Hakkında Sık Sorulanlar" items={faqItems} />
 
-{/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun
+
+      <CtaBanner
+        size="large"
+        className="mt-14"
+        baslik="Satış Kararının İlk Adımı: Değerleme"
+        aciklama="Dairenizin güncel satış değerini sitenizdeki gerçek emsallerle birlikte netleştirelim; satış yol haritanızı aynı görüşmede çıkaralım."
+      >
+        <CtaButton href="/ev-degerleme" variant="primary">
+          Evinizi Değerlendirelim
+        </CtaButton>
+        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
+          {siteConfig.phoneDisplay}
+        </CtaButton>
+      </CtaBanner>
+
+      {/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun
           HUB'ı ama rehberlerin yalnız bir kısmına düzyazıdan bağlanıyordu.
           Kitaplık veri-güdümlü: lib/blog-konular.ts haritasına eklenen her
           yeni rehber otomatik listeye girer. */}
@@ -289,20 +311,6 @@ export default function EvSatmakPage() {
             ))}
         </ul>
       </section>
-
-      <CtaBanner
-        size="large"
-        className="mt-14"
-        baslik="Satış Kararının İlk Adımı: Değerleme"
-        aciklama="Dairenizin güncel satış değerini sitenizdeki gerçek emsallerle birlikte netleştirelim; satış yol haritanızı aynı görüşmede çıkaralım."
-      >
-        <CtaButton href="/ev-degerleme" variant="primary">
-          Evinizi Değerlendirelim
-        </CtaButton>
-        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
-          {siteConfig.phoneDisplay}
-        </CtaButton>
-      </CtaBanner>
     </div>
   );
 }

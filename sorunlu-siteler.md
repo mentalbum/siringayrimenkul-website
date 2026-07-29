@@ -4,6 +4,23 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### Niyet-düzeni turu (2026-07-29 — 4 kollu denetim, tüm şablonlar yeniden sıralandı)
+Kullanıcı niyeti modeliyle 4 şablon denetlendi ve uygulandı:
+- **Site (720):** sahibinden yönlendirmesi ilk ekrana çıktı ("Daire mi arıyorsunuz?" — ev sahibi
+  CTA'sı DOM'da önce, Temmuz kararı korundu); künye ada grid'inin üstüne; "doğrulama · Derleyen"
+  satırı artık koordinatsız sayfalarda da; alt sıra SSS → Rehberler → Komşu Siteler.
+- **Mahalle (14):** ev sahibi bloğu 51-91 kartlık listenin ÜSTÜNE; içine rakamsız "Fiyatı Ne
+  Belirler" şeridi (backlog #6 kapandı); hero cümlesine değerleme linki (ilk tıklanabilir ev
+  sahibi öğesi); alt sıra SSS → CTA → Etaplar → Blog → Yakın Mahalleler.
+- **Blog (44):** kapanış CTA'sı konuya göre niyet-uyumlu (satis→değerleme+süreç, kira→hizmet+araç,
+  miras-tapu→iletişim+harç aracı, mahalle→değerleme+rehberler).
+- **Dönüşüm:** /ev-degerleme'de form hero'nun hemen altına, hero'ya #degerleme-formu çapa CTA'sı,
+  karar-destek linkleri "Henüz kararsız mısınız?" olarak formun altına, form kartına güven satırı
+  (yetki no + 5,0 puan — yorum SAYISI kural gereği YOK); iki hub'a hero CTA'sı, kitaplıklar final
+  CTA'nın altına.
+Yapılmayanlar (bilinçli): mahalle listesi istemci filtresi (backlog #11'de duruyor), kitaplık
+tematik gruplaması, blog mini-içindekiler — düşük öncelik, sonraki tur.
+
 ### İç bağlantı grafı optimizasyonu (2026-07-29 — 1.578 sayfa ölçüldü, önce/sonra)
 Üretilmiş HTML'den tam graf çıkarıldı (header/footer hariç gövde linkleri). Bulgular ve sonuçlar:
 - **REGRESYON YAKALANDI: blog frontmatter'daki `ilgiliMahalle` eski slug'larla kalmıştı**

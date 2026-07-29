@@ -127,6 +127,13 @@ export default function KirayaVermekPage() {
           </CtaButton>
         </div>
         <OfisDurumu className="mt-3" />
+        {/* Niyet denetimi (2026-07-29): hero'da tıklanabilir CTA yoktu; hizmet
+            niyetli ziyaretçi ilk ekranda eylem yolu görmeli. */}
+        <div className="mt-6">
+          <CtaButton href="/ev-degerleme" variant="primary" className="px-8">
+            Kira Değerlendirmesi İsteyin
+          </CtaButton>
+        </div>
       </header>
 
       <section className="mt-10 max-w-3xl rounded-2xl border border-gold/40 bg-gold/10 p-6">
@@ -244,7 +251,22 @@ export default function KirayaVermekPage() {
 
       <FaqSection title="Evini Kiraya Verecekler İçin Sık Sorulanlar" items={faqItems} />
 
-{/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun
+
+      <CtaBanner
+        size="large"
+        className="mt-14"
+        baslik="İlk Adım: Kira Değerlendirmesi"
+        aciklama="Dairenizin güncel kira değerini sitenizdeki gerçek kiralamalara göre birlikte belirleyelim; kiracı arama sürecini aynı gün başlatalım."
+      >
+        <CtaButton href="/ev-degerleme" variant="primary">
+          Kira Değerlendirmesi İsteyin
+        </CtaButton>
+        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
+          {siteConfig.phoneDisplay}
+        </CtaButton>
+      </CtaBanner>
+
+      {/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun
           HUB'ı ama rehberlerin yalnız bir kısmına düzyazıdan bağlanıyordu.
           Kitaplık veri-güdümlü: lib/blog-konular.ts haritasına eklenen her
           yeni rehber otomatik listeye girer. */}
@@ -265,20 +287,6 @@ export default function KirayaVermekPage() {
             ))}
         </ul>
       </section>
-
-      <CtaBanner
-        size="large"
-        className="mt-14"
-        baslik="İlk Adım: Kira Değerlendirmesi"
-        aciklama="Dairenizin güncel kira değerini sitenizdeki gerçek kiralamalara göre birlikte belirleyelim; kiracı arama sürecini aynı gün başlatalım."
-      >
-        <CtaButton href="/ev-degerleme" variant="primary">
-          Kira Değerlendirmesi İsteyin
-        </CtaButton>
-        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
-          {siteConfig.phoneDisplay}
-        </CtaButton>
-      </CtaBanner>
     </div>
   );
 }

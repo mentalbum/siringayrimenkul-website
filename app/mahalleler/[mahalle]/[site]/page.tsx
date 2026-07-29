@@ -331,6 +331,24 @@ export default async function SitePage({ params }: Props) {
               {siteConfig.phoneDisplay}
             </CtaButton>
           </div>
+          {/* Niyet ayrımı (2026-07-29 denetimi): "satılık daire" sorgusuyla gelen
+              İKİ niyet taşır — ev sahibi (birincil, CTA yukarıda ve DOM'da önce)
+              ve daire arayan. Daire arayanın dürüst yolu artık ilk ekranda;
+              Temmuz kararı (ilk tıklanabilir = ev sahibi CTA'sı) korunuyor. */}
+          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
+            <span>
+              Daire mi arıyorsunuz? {site.isim} ve çevresindeki{" "}
+              <strong className="text-navy">güncel ilanlarımız</strong>:
+            </span>
+            <TrackedCtaLink
+              href={siteConfig.sahibindenUrl}
+              gaEvent="site_ust_sahibinden"
+              variant="ghost"
+              className="px-0 font-semibold text-gold-dark"
+            >
+              sahibinden.com mağazamız →
+            </TrackedCtaLink>
+          </p>
           <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
           {site.aciklama.includes("sözlüğümüzdeki kat irtifakı maddesinde") && (
             <p className="text-sm leading-relaxed text-muted">
@@ -349,19 +367,16 @@ export default async function SitePage({ params }: Props) {
             </p>
           )}
           <p className="text-sm leading-relaxed text-muted">{mahalle.kisaAciklama}</p>
-          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
-            <span>
-              {site.isim} ve çevresindeki <strong className="text-navy">güncel satılık ve kiralık ilanlarımız</strong> için:
-            </span>
-            <TrackedCtaLink
-              href={siteConfig.sahibindenUrl}
-              gaEvent="site_ust_sahibinden"
-              variant="ghost"
-              className="px-0 font-semibold text-gold-dark"
-            >
-              sahibinden.com mağazamız →
-            </TrackedCtaLink>
-          </p>
+          {site.ozellikler && site.ozellikler.length > 0 && (
+            <ul className="grid grid-cols-2 gap-2 text-sm text-body">
+              {site.ozellikler.map((ozellik) => (
+                <li key={ozellik} className="flex items-center gap-2">
+                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
+                  {ozellik}
+                </li>
+              ))}
+            </ul>
+          )}
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {site.adalar.map((ada) => (
@@ -377,15 +392,18 @@ export default async function SitePage({ params }: Props) {
               ))}
             </div>
           )}
-          {site.ozellikler && site.ozellikler.length > 0 && (
-            <ul className="grid grid-cols-2 gap-2 text-sm text-body">
-              {site.ozellikler.map((ozellik) => (
-                <li key={ozellik} className="flex items-center gap-2">
-                  <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold" />
-                  {ozellik}
-                </li>
-              ))}
-            </ul>
+          {dogrulamaTarihi && (
+            // Tazelik + sorumluluk sinyali — koordinatı olmayan sayfalar da
+            // taşısın diye harita sütunundan buraya alındı (niyet denetimi).
+            <p className="text-xs text-muted">
+              Site bilgileri son doğrulama: {dogrulamaTarihi} · Derleyen:{" "}
+              <Link
+                href="/hakkimizda#ozgun-sirin"
+                className="font-medium text-gold-dark hover:underline"
+              >
+                Özgün Şirin
+              </Link>
+            </p>
           )}
           {!site.koordinat && (
             <CtaButton href={`/mahalleler/${mahalle.slug}`} variant="outline">
@@ -407,19 +425,6 @@ export default async function SitePage({ params }: Props) {
               <p className="text-right text-xs text-muted">
                 Sınır verisi: TKGM parsel sorgu verisine dayalıdır; bilgilendirme amaçlıdır,
                 resmi kadastro belgesi yerine geçmez.
-              </p>
-            )}
-            {dogrulamaTarihi && (
-              // Tazelik sinyali (ziyaretçi + AI cevap motorları): fiyat değil,
-              // VERİ doğrulama tarihi — fiyat-rakamı kuralına takılmaz.
-              <p className="text-right text-xs text-muted">
-                Site bilgileri son doğrulama: {dogrulamaTarihi} · Derleyen:{" "}
-                <Link
-                  href="/hakkimizda#ozgun-sirin"
-                  className="font-medium text-gold-dark hover:underline"
-                >
-                  Özgün Şirin
-                </Link>
               </p>
             )}
           </div>
@@ -490,23 +495,6 @@ export default async function SitePage({ params }: Props) {
         </TrackedCtaLink>
       </CtaBanner>
 
-      {digerSiteler.length > 0 && (
-        <section className="mt-14">
-          <h2 className="text-xl">
-            {site.koordinat
-              ? `Komşu Siteler — ${mahalle.isim}`
-              : `${mahalle.isim}'ndeki Diğer Siteler`}
-          </h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {digerSiteler.map((item, i) => (
-              <Reveal key={item.slug} delay={(i % 3) * 60} className="h-full">
-                <SiteCard site={item} />
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
-
       <FaqSection title={`${site.isim} Hakkında Sık Sorulan Sorular`} items={getSiteFaq(site, mahalle)} />
 
       {/* İç bağ katmanı: siteden ev-sahibi rehberlerine köprü. Ölçüm (2026-07-29):
@@ -535,6 +523,23 @@ export default async function SitePage({ params }: Props) {
           </ul>
         </section>
       )}
+      {digerSiteler.length > 0 && (
+        <section className="mt-14">
+          <h2 className="text-xl">
+            {site.koordinat
+              ? `Komşu Siteler — ${mahalle.isim}`
+              : `${mahalle.isim}'ndeki Diğer Siteler`}
+          </h2>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {digerSiteler.map((item, i) => (
+              <Reveal key={item.slug} delay={(i % 3) * 60} className="h-full">
+                <SiteCard site={item} />
+              </Reveal>
+            ))}
+          </div>
+        </section>
+      )}
+
 
       <script
         type="application/ld+json"

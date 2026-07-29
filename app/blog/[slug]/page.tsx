@@ -230,18 +230,53 @@ export default async function BlogPostPage({ params }: Props) {
         </section>
       )}
 
-      <CtaBanner
-        className="mt-8"
-        baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
-        aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
-      >
-        <CtaButton href="/iletisim" variant="primary">
-          Bize Ulaşın
-        </CtaButton>
-        <CtaButton href="/ev-degerleme" variant="outline-light">
-          Değerleme İsteyin
-        </CtaButton>
+      {/* Niyet-uyumlu kapanış (2026-07-29): 44 yazının tamamı tek tip genel
+          CTA taşıyordu. Yazının konusu okuyucunun niyetini söylüyor — kapanış
+          o niyetin bir sonraki gerçek adımını sunmalı (satış yazısı → değerleme,
+          kira yazısı → kiraya verme hizmeti, mahalle yazısı → mahalle rehberi). */}
+      {(() => {
+        const konu = getBlogKonu(post.slug);
+        const kapanis = {
+          satis: {
+            baslik: "Evinizi Satmayı mı Düşünüyorsunuz?",
+            aciklama:
+              "İlk adım doğru fiyat: dairenizi sitenizin gerçeğinden yola çıkarak birlikte değerleyelim, satış yol haritanız aynı gün elinizde olsun.",
+            birincil: { href: "/ev-degerleme", etiket: "Evinizi Değerlendirelim" },
+            ikincil: { href: "/eryamanda-ev-satmak", etiket: "Satış Sürecimiz" },
+          },
+          kira: {
+            baslik: "Evinizi Kiraya mı Vereceksiniz?",
+            aciklama:
+              "Doğru kira bedeli, doğrulanmış kiracı ve sağlam sözleşme — süreci sizin adınıza biz yönetelim.",
+            birincil: { href: "/eryamanda-ev-kiraya-vermek", etiket: "Kiraya Verme Sürecimiz" },
+            ikincil: { href: "/araclar/kira-artisi-hesaplama", etiket: "Kira Artışı Hesaplayın" },
+          },
+          "miras-tapu": {
+            baslik: "Tapu ve Miras İşlerinde Yol Arkadaşınız Olalım",
+            aciklama:
+              "Kat mülkiyeti, hisse ve miras satışı teknik işlerdir — durumunuzu dinleyelim, gerçekçi bir yol haritası çıkaralım.",
+            birincil: { href: "/iletisim", etiket: "Bize Ulaşın" },
+            ikincil: { href: "/araclar/tapu-harci-hesaplama", etiket: "Tapu Harcı Hesaplayın" },
+          },
+          mahalle: {
+            baslik: "Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım",
+            aciklama:
+              "Mahalleleri ve siteleri tek tek tanıyoruz; evinizi değerlendirmek isterseniz doğrudan bize ulaşın.",
+            birincil: { href: "/ev-degerleme", etiket: "Değerleme İsteyin" },
+            ikincil: { href: "/mahalleler", etiket: "Mahalle Rehberleri" },
+          },
+        }[konu];
+        return (
+          <CtaBanner className="mt-8" baslik={kapanis.baslik} aciklama={kapanis.aciklama}>
+            <CtaButton href={kapanis.birincil.href} variant="primary">
+              {kapanis.birincil.etiket}
+            </CtaButton>
+            <CtaButton href={kapanis.ikincil.href} variant="outline-light">
+              {kapanis.ikincil.etiket}
+            </CtaButton>
       </CtaBanner>
+        );
+      })()}
 
       <script
         type="application/ld+json"

@@ -214,7 +214,14 @@ export default async function MahallePage({ params }: Props) {
           <strong className="font-semibold text-navy">{kisaIsim} emlakçısı</strong> Şirin
           Gayrimenkul, {mahalle.isim}&apos;ndeki site ve rezidansları tek tek tanıyor; satılık ve
           kiralık daire piyasasını günlük takip ediyoruz. Evinizi satmak veya kiraya vermek
-          istiyorsanız doğru fiyatı birlikte belirleyelim.
+          istiyorsanız{" "}
+          <Link
+            href={`/ev-degerleme?mahalle=${mahalle.slug}`}
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            doğru fiyatı birlikte belirleyelim
+          </Link>
+          .
           {mahalle.alternatifAdlar?.[0] && (
             <>
               {" "}
@@ -306,22 +313,6 @@ export default async function MahallePage({ params }: Props) {
       </div>
 
       <section className="mt-14">
-        <h2 className="text-xl">{mahalle.isim}&apos;ndeki Siteler ve Rezidanslar</h2>
-        <p className="mt-2 text-sm text-muted">
-          {siteler.length > 0
-            ? `${siteler.length} site/rezidans listelendi.`
-            : "Bu mahalledeki siteler yakında eklenecek."}
-        </p>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {siteler.map((site, i) => (
-            <Reveal key={site.slug} delay={(i % 3) * 60} className="h-full">
-              <SiteCard site={site} />
-            </Reveal>
-          ))}
-        </div>
-      </section>
-
-      <section className="mt-14">
         <h2 className="text-xl">{`${mahalle.isim} Satılık ve Kiralık Daireler`}</h2>
         <div className="mt-5 grid gap-4 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-surface p-6">
@@ -374,8 +365,62 @@ export default async function MahallePage({ params }: Props) {
             sahibinden.com&apos;daki İlanlarımız
           </CtaButton>
         </div>
+        {/* Rakamsız fiyat modülü (SERP ölçümü: portalların üstünlük bloğu fiyat
+            istatistiği; bizim kuralımız rakam yazmamak — cevap "fiyatı ne
+            belirler" çerçevesi + değerleme köprüsü. Niyet: ölçülen en derin
+            ev sahibi acısı fiyat belirsizliği.) */}
+        <div className="mt-5 rounded-2xl border border-gold/40 bg-gold/10 p-6">
+          <h3 className="text-base font-semibold text-navy">
+            {`${mahalle.isim}'nde Daire Fiyatını Ne Belirler?`}
+          </h3>
+          <p className="mt-2 text-sm leading-relaxed text-body">
+            Portal ortalamaları siteler arasındaki farkı gizler: aynı mahallede iki dairenin
+            değeri site, blok, kat, cephe ve tapu durumuna (kat mülkiyeti/kat irtifakı) göre
+            ciddi biçimde ayrışır. İlanda görülen istenen fiyatlar çoğu zaman gerçekleşen
+            rakamların gerisinden ya da ilerisinden gelir. Dairenizin gerçek değerini mahalle
+            ortalamasından değil, {haritaliSayisi > 0 ? "tapu sınırlarıyla haritaladığımız " : ""}
+            sitenizin emsallerinden okuyoruz —{" "}
+            <Link
+              href={`/ev-degerleme?mahalle=${mahalle.slug}`}
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              değerleme görüşmesi
+            </Link>{" "}
+            ile başlayalım.
+          </p>
+        </div>
+      </section>
+      <section className="mt-14">
+        <h2 className="text-xl">{mahalle.isim}&apos;ndeki Siteler ve Rezidanslar</h2>
+        <p className="mt-2 text-sm text-muted">
+          {siteler.length > 0
+            ? `${siteler.length} site/rezidans listelendi.`
+            : "Bu mahalledeki siteler yakında eklenecek."}
+        </p>
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {siteler.map((site, i) => (
+            <Reveal key={site.slug} delay={(i % 3) * 60} className="h-full">
+              <SiteCard site={site} />
+            </Reveal>
+          ))}
+        </div>
       </section>
 
+
+      <FaqSection
+        title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
+        items={getMahalleFaq(mahalle, siteler.length)}
+      />
+
+      <CtaBanner
+        className="mt-14"
+        baslik={`${mahalle.isim}'nde Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
+        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
+      >
+        <CtaButton href={`/ev-degerleme?mahalle=${mahalle.slug}`} variant="primary">
+          Evinizi Değerlendirelim
+        </CtaButton>
+      </CtaBanner>
       {etaplar.length > 0 && (
         <section className="mt-14">
           <h2 className="text-xl">{mahalle.isim}&apos;ndeki Etaplar ve Adalar</h2>
@@ -412,11 +457,6 @@ export default async function MahallePage({ params }: Props) {
           </div>
         </section>
       )}
-
-      <FaqSection
-        title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
-        items={getMahalleFaq(mahalle, siteler.length)}
-      />
 
       {ilgiliYazilar.length > 0 && (
         <section className="mt-14">
@@ -464,15 +504,6 @@ export default async function MahallePage({ params }: Props) {
         </section>
       )}
 
-      <CtaBanner
-        className="mt-14"
-        baslik={`${mahalle.isim}'nde Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
-        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
-      >
-        <CtaButton href={`/ev-degerleme?mahalle=${mahalle.slug}`} variant="primary">
-          Evinizi Değerlendirelim
-        </CtaButton>
-      </CtaBanner>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mahalleJsonLd) }}

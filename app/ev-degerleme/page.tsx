@@ -5,6 +5,7 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { ContactForm } from "@/components/contact/contact-form";
+import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
 import { Reveal } from "@/components/ui/reveal";
 import { ReviewBadge } from "@/components/ui/review-badge";
@@ -94,54 +95,15 @@ export default function EvDegerlemePage() {
           da kiralama yol haritanız da olur.
         </p>
         <ReviewBadge className="mt-4" />
-        <p className="mt-4 text-sm leading-relaxed text-body">
-          Satmak mı kiraya vermek mi konusunda henüz karar vermediyseniz sorun değil — iki işi de
-          yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; görüşmede iki rakamı da
-          konuşabiliriz.{" "}
-          <Link
-            href="/blog/evimi-satmak-mi-kiraya-vermek-mi"
-            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
-          >
-            Kararı belirleyen başlıkları
-          </Link>{" "}
-          tarafsızca sıraladığımız yazı da elinizin altında.
-        </p>
-        <p className="mt-4 text-sm leading-relaxed text-body">
-          Karar aşamasındaysanız{" "}
-          <Link
-            href="/araclar"
-            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
-          >
-            ev sahibi hesap araçlarımıza
-          </Link>{" "}
-          da göz atın: kira artışı, tapu harcı, yasal komisyon ve boş kalma maliyeti. Değerlemede
-          nelere baktığımızı merak ediyorsanız{" "}
-          <Link
-            href="/blog/eryamanda-ev-fiyatlarini-ne-belirler"
-            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
-          >
-            fiyatı ne belirler yazımız
-          </Link>{" "}
-          etap, site, kat ve tapu durumunun etkisini anlatır.
-        </p>
-      </header>
-
-      <section className="mt-10">
-        <h2 className="text-xl">Nasıl Çalışıyor?</h2>
-        <div className="mt-5 grid gap-5 sm:grid-cols-3">
-          {adimlar.map((adim, index) => (
-            <Reveal key={adim.baslik} delay={(index % 3) * 70} className="h-full">
-            <div className="h-full rounded-2xl border border-border bg-surface p-5">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 font-heading text-lg font-semibold text-gold-dark">
-                {index + 1}
-              </div>
-              <h3 className="mt-4 text-base">{adim.baslik}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-body">{adim.aciklama}</p>
-            </div>
-            </Reveal>
-          ))}
+        {/* Niyet denetimi (2026-07-29): sayfaya gelen zaten niyetli — ilk
+            tıklanabilir öğe forma çapa olmalı; karar-destek linkleri (blog/araç
+            çıkışları) formun ALTINA taşındı, kararsız azınlık orada bulur. */}
+        <div className="mt-6">
+          <CtaButton href="#degerleme-formu" variant="primary" className="px-8">
+            Değerleme Talebi Oluşturun
+          </CtaButton>
         </div>
-      </section>
+      </header>
 
       <section className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.2fr]">
         <Reveal className="space-y-5">
@@ -184,10 +146,15 @@ export default function EvDegerlemePage() {
         </Reveal>
 
         <Reveal delay={90}>
-        <div className="h-full rounded-2xl border border-border bg-surface p-6 sm:p-8">
+        <div id="degerleme-formu" className="h-full scroll-mt-24 rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="text-xl">Değerleme Talebi Oluşturun</h2>
           <p className="mt-1.5 text-sm text-muted">
-            Bilgileriniz WhatsApp üzerinden bize iletilir; en kısa sürede dönüş yaparız.
+            Bilgileriniz WhatsApp üzerinden bize iletilir; genellikle aynı gün ön
+            değerlendirmeyle dönüş yaparız.
+          </p>
+          {/* Karar anındaki güven satırı — yorum SAYISI bilinçli yok (kural). */}
+          <p className="mt-2 text-xs text-muted">
+            Taşınmaz Ticareti Yetki Belgesi No: 0603771 · 5,0 puanlı Google profili
           </p>
           <div className="mt-6">
             <ContactForm mahalleler={mahalleler} siteler={siteler} />
@@ -195,6 +162,57 @@ export default function EvDegerlemePage() {
         </div>
         </Reveal>
       </section>
+      <section className="mt-10 rounded-2xl border border-border bg-surface-muted px-6 py-6">
+        <h2 className="text-base font-semibold text-navy">Henüz kararsız mısınız?</h2>
+        <p className="mt-3 text-sm leading-relaxed text-body">
+          Satmak mı kiraya vermek mi konusunda henüz karar vermediyseniz sorun değil — iki işi de
+          yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; görüşmede iki rakamı da
+          konuşabiliriz.{" "}
+          <Link
+            href="/blog/evimi-satmak-mi-kiraya-vermek-mi"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            Kararı belirleyen başlıkları
+          </Link>{" "}
+          tarafsızca sıraladığımız yazı da elinizin altında.
+        </p>
+        <p className="mt-3 text-sm leading-relaxed text-body">
+          Karar aşamasındaysanız{" "}
+          <Link
+            href="/araclar"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            ev sahibi hesap araçlarımıza
+          </Link>{" "}
+          da göz atın: kira artışı, tapu harcı, yasal komisyon ve boş kalma maliyeti. Değerlemede
+          nelere baktığımızı merak ediyorsanız{" "}
+          <Link
+            href="/blog/eryamanda-ev-fiyatlarini-ne-belirler"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            fiyatı ne belirler yazımız
+          </Link>{" "}
+          etap, site, kat ve tapu durumunun etkisini anlatır.
+        </p>
+      </section>
+
+      <section className="mt-10">
+        <h2 className="text-xl">Nasıl Çalışıyor?</h2>
+        <div className="mt-5 grid gap-5 sm:grid-cols-3">
+          {adimlar.map((adim, index) => (
+            <Reveal key={adim.baslik} delay={(index % 3) * 70} className="h-full">
+            <div className="h-full rounded-2xl border border-border bg-surface p-5">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gold/15 font-heading text-lg font-semibold text-gold-dark">
+                {index + 1}
+              </div>
+              <h3 className="mt-4 text-base">{adim.baslik}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-body">{adim.aciklama}</p>
+            </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
 
       <FaqSection
         title="Ev Değerleme Hakkında Sık Sorulan Sorular"
