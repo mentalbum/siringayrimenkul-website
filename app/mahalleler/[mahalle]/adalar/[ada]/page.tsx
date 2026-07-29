@@ -81,12 +81,18 @@ export default async function AdaPage({ params }: Props) {
       .map((item) => [adaRouteKey(item), item] as const)
   );
   const buNo = Number.parseInt(ada.no, 10);
+  // 4 komşu ada yeter: bu sayfalar noindex, ada→ada bağları PageRank'i noindex
+  // kümesinin içinde döndürüyordu (12 bağla kenar ağırlığının %22'si, PR
+  // kütlesinin %15,6'sı burada park ediyordu — grafta ölçüldü). Bağ sayısı
+  // düşünce sayfanın çıkış ağırlığı site/mahalle bağlarına kayar, değer
+  // dizindeki sayfalara geri akar. Ziyaretçi yine en yakın numaralı 4 adayı
+  // görür; kayıp yok.
   const ayniEtaptakiler = Array.from(ayniEtapMap.values())
     .sort(
       (a, b) =>
         Math.abs(Number.parseInt(a.no, 10) - buNo) - Math.abs(Number.parseInt(b.no, 10) - buNo)
     )
-    .slice(0, 12);
+    .slice(0, 4);
 
   const adaJsonLd = {
     "@context": "https://schema.org",

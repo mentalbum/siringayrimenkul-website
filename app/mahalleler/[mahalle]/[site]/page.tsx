@@ -97,9 +97,13 @@ export default async function SitePage({ params }: Props) {
   if (!mahalle || !site) notFound();
 
   const mahalleSiteleri = getSitelerByMahalle(mahalleSlug);
-  // Komşu siteler: koordinatı olan sitelerde coğrafi olarak en yakın 6 komşu
-  // (ziyaretçiye gerçek komşuluk, tarayıcıya zengin iç bağlantı ağı). Koordinatı
-  // olmayanlarda eski sıralı-pencere mantığı devrede kalır.
+  // Komşu siteler: 6 kartın 2'si "atlama" (mahalle sıralamasında altın-oran
+  // adımı), 4'ü coğrafi en yakın. Salt en-yakın seçim merkezî siteleri
+  // kayırıyordu — kenardaki sitelere gelen bağ 3'e düşüyor, merkezde 20'ye
+  // çıkıyordu (grafta ölçüldü). Atlama bağları her siteye tam 2 garanti gelen
+  // bağ verir (i−adım ve i−2·adım'daki sayfalardan), grafın çapını küçültür ve
+  // PageRank'i tabana yayar (expander graf). Ziyaretçi yine aynı mahalleden
+  // 6 site kartı görür; kartlarda mesafe yazmadığı için karışım görünmez.
   const digerSiteSayisi = Math.min(6, mahalleSiteleri.length - 1);
   const siteIndex = mahalleSiteleri.findIndex((item) => item.slug === site.slug);
   const halkaSiteler =
@@ -109,26 +113,35 @@ export default async function SitePage({ params }: Props) {
           { length: digerSiteSayisi },
           (_, i) => mahalleSiteleri[(siteIndex + 1 + i) % mahalleSiteleri.length]
         );
+  const adim = Math.max(1, Math.round(mahalleSiteleri.length * 0.382));
+  const atlamaSiteler =
+    siteIndex === -1
+      ? []
+      : [...new Set([1, 2].map((k) => (siteIndex + k * adim) % mahalleSiteleri.length))]
+          .filter((i) => i !== siteIndex)
+          .map((i) => mahalleSiteleri[i]);
   const merkez = site.koordinat;
-  const digerSiteler = merkez
-    ? (() => {
-        const uzaklikKare = (k: { lat: number; lng: number }) => {
-          const dLat = k.lat - merkez.lat;
-          const dLng = (k.lng - merkez.lng) * Math.cos((merkez.lat * Math.PI) / 180);
-          return dLat * dLat + dLng * dLng;
-        };
-        const yakinlar = mahalleSiteleri
-          .filter((item) => item.slug !== site.slug && item.koordinat)
-          .sort((a, b) => uzaklikKare(a.koordinat!) - uzaklikKare(b.koordinat!))
-          .slice(0, digerSiteSayisi);
-        // Koordinatlı komşu azsa halkadan tamamla (tekrarsız).
-        for (const aday of halkaSiteler) {
-          if (yakinlar.length >= digerSiteSayisi) break;
-          if (!yakinlar.some((item) => item.slug === aday.slug)) yakinlar.push(aday);
-        }
-        return yakinlar;
-      })()
-    : halkaSiteler;
+  const digerSiteler = (() => {
+    const secim = [...atlamaSiteler];
+    const ekle = (aday: (typeof mahalleSiteleri)[number]) => {
+      if (secim.length < digerSiteSayisi && !secim.some((item) => item.slug === aday.slug))
+        secim.push(aday);
+    };
+    if (merkez) {
+      const uzaklikKare = (k: { lat: number; lng: number }) => {
+        const dLat = k.lat - merkez.lat;
+        const dLng = (k.lng - merkez.lng) * Math.cos((merkez.lat * Math.PI) / 180);
+        return dLat * dLat + dLng * dLng;
+      };
+      for (const aday of mahalleSiteleri
+        .filter((item) => item.slug !== site.slug && item.koordinat)
+        .sort((a, b) => uzaklikKare(a.koordinat!) - uzaklikKare(b.koordinat!)))
+        ekle(aday);
+    }
+    // Koordinatsız sitede (veya koordinatlı komşu azsa) halkadan tamamla.
+    for (const aday of halkaSiteler) ekle(aday);
+    return secim;
+  })();
   const sinir = getSiteBoundary(site);
   const tipi = inferSiteTipi(site.isim);
   const dogrulanmisEtap = onayliEtap(site.adalar);

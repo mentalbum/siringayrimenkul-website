@@ -922,3 +922,21 @@ Geometri dosyaları hazır: scratchpad/cikti/*.geojson
 Düzeltilen YANLIŞ bilgiler: (1) Ata'da "müstakil doku" — 90 kaydın sadece 2'sinde müstakil geçiyor, baskın doku 10-15 katlı blok; (2) Ata'da "metro imkânlarından kolayca yararlanan" — mahalle içinde istasyon YOK, en yakınlar 1,4-2,8 km; (3) Ata "kuzeybatı komşusu" → kuzey; (4) Altay "nüfusu azalıyor" çerçevesi — 2013'ten beri kesintisiz artıyor (2025: 14.525); (5) Güzelkent "2022-2023'te 15.400'ü aşan" — o yıllarda 15.384 ve 15.167 idi, yani ALTINDA; (6) Devlet "2023'te istikrara kavuştu" — artış sürüyor (2025: 16.044); (7) Göksu 33.203 bayat (2025: 34.124); (8) Susuz "İstanbul Yolu'na yakınlığı" — yol mahallenin İÇİNDEN geçiyor.
 Eklenen doğrulanmış bilgiler: Ata'nın 2017 kuruluş hikâyesi (Susuz'dan ayrılma, 2015 referandumu), Devlet'te metro istasyonu + Eryaman Stadyumu sınır içinde, Göksu'da Eryaman 1-2 istasyonu + 500 bin m²'lik Göksu Parkı, Altay = Eryaman 1. Etap (resmî pazar/okul adresleriyle), Güzelkent'te 15 park/100+ dönüm ve yıl taşıyan site adları, Susuz'un köy kökeni.
 KALAN: blog/eryamanda-hangi-mahalle.mdx tablosundaki nüfuslar 2023 tarihli (yanlış değil ama bayat) — 14 mahallenin tamamı için güncel ADNKS toplanınca tazelenecek. Nüfus kaynağı: nufusune.com (TÜİK ADNKS aktarımı) + Vikipedi çapraz doğrulama; metinlerde rakam yerine "güncel ADNKS verilerine göre X bini aşan" kalıbı kullanıldı — bayatlamaz.
+
+## İç bağ grafı: matematiksel güçlendirme turu (2026-07-29)
+Ağırlıklı PageRank (gövde 3x, nav/footer 1x, d=0.85, 1.578 sayfa) + BFS derinlik ölçüldü; iki yapısal zayıflık bulunup giderildi.
+
+### Teşhis (önce)
+- **Noindex ada kümesi PR tuzağıydı:** kenar ağırlığının %22'si ada sayfalarına akıyordu, PR kütlesinin %15,6'sı orada park ediyordu. Suçlu ada→ada iç dolaşımı: 9.306 link (sayfa başına 12 "aynı etaptaki adalar").
+- **Site katmanı dengesizdi:** salt coğrafi en-yakın komşu seçimi merkezî siteleri kayırıyordu — gelen bağ 3-20 arası, PR maks/min 2,9x; zayıf kuyruğun tamamı Ata'nın kenar siteleri.
+- Derinlik zaten kusursuz: tüm indexlenebilir sayfalar anasayfadan ≤2 tık (müdahale gerekmedi).
+
+### Müdahale
+1. **Ada sayfası: "aynı etaptaki adalar" 12→4.** Sayfanın çıkış ağırlığı site/mahalle bağlarına kaydı; değer noindex kümesinde dönmek yerine dizine geri akıyor.
+2. **Komşu Siteler = 4 en yakın + 2 altın-oran atlaması (expander graf).** Mahalle sıralamasında adım=round(n×0,382); her site i+adım ve i+2·adım'a bağlanır → her site TAM 2 garanti gelen bağ alır (i−adım, i−2·adım'dan), graf çapı küçülür. UI aynı: 6 kart, mesafe yazmadığı için karışım görünmez.
+
+### Sonuç (üretim build'inde yeniden ölçüldü)
+- ada'ya kenar ağırlığı %22,0 → **%10,2**; ada PR kütlesi %15,6 → **%12,2** (−3,4 puan dizine döndü)
+- her indexlenebilir tip kazandı: site %23,2→%23,9, mahalle %19,6→%20,5, blog %7,2→%7,5, değerleme %6,0→%6,3, anasayfa %5,6→%5,9
+- site katmanı: min PR 215→**237** (+%10), maks/min 2,9x→**2,5x**, gelen bağ tabanı 3→**5**
+- doğrulama: canlı DOM 6 kart + 0 konsol hatası; ada sayfasında 4 ada bağı
