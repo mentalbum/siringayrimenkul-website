@@ -988,3 +988,6 @@ SONUÇ: tapu-bilgisiz kayıt 190 → (aşağıdaki envanter çıktısına göre)
 
 ## Yetki belgesi yazısı aramadan çekildi (2026-07-31, Özgün kararı)
 TTBS/yetki-belgesi sorguları Türkiye genelinden alakasız tık + telefon araması getiriyordu; hedef kitle yalnız Eryaman ev sahibi. Çözüm: BlogFrontmatter.dizinDisi=true (noindex+follow, sitemap dışı) — yazı sitede güven içeriği olarak duruyor, müşteriye linkle gösterilebilir. Google'dan düşmesi birkaç gün–2 hafta; IndexNow bildirildi. Aynı bayrak ileride benzer sayfalar için genel mekanizma. Araç sayfalarına dokunulmadı (huninin parçası, zaten tık almıyorlar).
+
+## GERİ ALMA (2026-07-31 akşam): yetki belgesi yazısı yeniden dizinde
+Özgün noindex kararını aynı gün geri aldı: "görüntülenmelerimiz düşmesin." Sayfa tekrar index+sitemap'te (commit d17d4e2); dizinDisi mekanizması kodda duruyor ama hiçbir yazıda etkin değil. KURAL: bundan sonra hiçbir sayfayı aramadan çekme önerme (ada sayfaları eski kararı hariç).
