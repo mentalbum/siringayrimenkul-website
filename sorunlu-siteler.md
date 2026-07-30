@@ -985,3 +985,6 @@ Kota kuyruğundaki 32 kayıt koşuldu: 27 nokta sorgusu uygun→yazıldı; 4 ina
 - mesa-bloklari: tek parselin alan satırı geri alındı (üç adalı site, toplam ~25 dönüm zaten kayıtlı)
 
 SONUÇ: tapu-bilgisiz kayıt 190 → (aşağıdaki envanter çıktısına göre) yalnız gerçekten TKGM'de kaydı okunamayanlar kaldı. Ritim koordinat kartı ve Özahikent 46224 eksik-ada kartı Özgün'de.
+
+## Yetki belgesi yazısı aramadan çekildi (2026-07-31, Özgün kararı)
+TTBS/yetki-belgesi sorguları Türkiye genelinden alakasız tık + telefon araması getiriyordu; hedef kitle yalnız Eryaman ev sahibi. Çözüm: BlogFrontmatter.dizinDisi=true (noindex+follow, sitemap dışı) — yazı sitede güven içeriği olarak duruyor, müşteriye linkle gösterilebilir. Google'dan düşmesi birkaç gün–2 hafta; IndexNow bildirildi. Aynı bayrak ileride benzer sayfalar için genel mekanizma. Araç sayfalarına dokunulmadı (huninin parçası, zaten tık almıyorlar).
