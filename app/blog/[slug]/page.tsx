@@ -36,6 +36,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: post.baslik,
     description: truncateForMeta(post.ozet),
     alternates: { canonical: `/blog/${post.slug}` },
+    // dizinDisi: sayfa ziyaretçiye açık kalır ama aramadan çekilir
+    // (Türkiye geneli alakasız tık/arama istenmiyor — bkz. BlogFrontmatter).
+    ...(post.dizinDisi ? { robots: { index: false, follow: true } } : {}),
     // Nested metadata objects replace the root layout's openGraph wholesale,
     // so locale/siteName/images must be restated here.
     openGraph: {

@@ -73,7 +73,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // kullanıcı tapu bilgisini görsün) ama noindex + sitemap dışı: bütçe site
   // sayfalarına aksın. Geri almak için burayı ve ada sayfasındaki robots'u aç.
 
-  const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts().map((post) => {
+  // dizinDisi yazılar sitemap'e girmez (noindex ile tutarlı — bkz. lib/types.ts).
+  const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts()
+    .filter((post) => !post.dizinDisi)
+    .map((post) => {
     // Edited posts should signal their real modification time so crawlers
     // refetch them — but never a date before publication.
     const mtime = getBlogPostLastModified(post.slug);

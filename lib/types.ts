@@ -65,6 +65,11 @@ export interface BlogFrontmatter {
   ilgiliMahalle?: string;
   ilgiliSite?: string;
   faq?: { soru: string; cevap: string }[];
+  /** true → sayfa yayında kalır ama noindex olur ve sitemap'e girmez.
+   * Özgün kararı (2026-07-31): Türkiye genelinden alakasız tık/telefon çeken
+   * bilgi sayfaları aramadan çekilir; müşteriye linkle gösterilmeye devam
+   * eder (ilk örnek: emlakci-yetki-belgesi-sorgulama — TTBS sorguları). */
+  dizinDisi?: boolean;
 }
 
 export interface BlogPost extends BlogFrontmatter {
