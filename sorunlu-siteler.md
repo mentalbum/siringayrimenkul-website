@@ -973,3 +973,15 @@ Tapu niteliği metinde olmayan 190 kayda TKGM nokta sorgusu (koordinattan; döne
 - Ana Taşınmaz dönen 9 kayıt (may-tower, ma1-tower, panorama-prestij, kayra-loft...): kat mülkiyeti/irtifakı HENÜZ kurulmamış (yeni projeler) — tapu satırı bilerek yazılmadı
 
 Sıradaki SERP kaldıraçları (bu tur değil): og:image üretimi (718 sayfa görselsiz — OSM tabanlı sınır haritası adayı), alternatifAdlar süpürmesi (556 eksik; aynı-ad tuzağı korumalı), ilk-3'teki 20 sorgunun profil analizi.
+
+## TKGM tamamlama — 2. parti (2026-07-30 akşam)
+Kota kuyruğundaki 32 kayıt koşuldu: 27 nokta sorgusu uygun→yazıldı; 4 inatçı hata (401/404) DOĞRUDAN parsel sorgusuyla çözüldü (Özharitacılar 19501/1 ✓38 dubleks, Güzel Ev 19501/2 ✓16, Gülvatan 19502/1 ✓19, Kutlutaş 17499/1 ✓7 apartman+8 dubleks — hepsi Kat Mülkiyet, defterdeki villa üçlüsü teyidiyle birebir). Betontaş koordinatı sağlık ocağına düşmüştü → doğru adadan (17516/1) sorgu: Kat Mülkiyet, "8 Blok Kargir Apartman" = kayıttaki 8 ada ✓.
+
+4 ajanlık çapraz denetim (32/32) eklenen satırları temiz buldu; 6 ESKİ metin hatasını TKGM kanıtıyla yakalattı ve düzeltildi:
+- altas-relax-line + meydan-ada: tapu "Ofis İşyeri" (rezidans tipi) iken metin düz "konut" diyordu → nitelik bilgisi eklendi
+- frekans-eryaman: "12-13 katlı iki blok" → gerçek: 2 katlı çarşı A + 13 katlı B
+- concept-eryaman: 16 → 17 kat (tapu)
+- address-eryaman: 13'er → tapuda 16'şar kat
+- mesa-bloklari: tek parselin alan satırı geri alındı (üç adalı site, toplam ~25 dönüm zaten kayıtlı)
+
+SONUÇ: tapu-bilgisiz kayıt 190 → (aşağıdaki envanter çıktısına göre) yalnız gerçekten TKGM'de kaydı okunamayanlar kaldı. Ritim koordinat kartı ve Özahikent 46224 eksik-ada kartı Özgün'de.

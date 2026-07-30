@@ -7,7 +7,7 @@
     "lng": 32.643114
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/frekans-eryaman-boundary.geojson",
-  "aciklama": "Frekans Eryaman, Altay Mahallesi'nde Söğüt Caddesi ile Ayaş Yolu arasında, Fırat Life Style ve Ata Yıldız Grup ortaklığında geliştirilip 2023'te teslim edilen karma bir proje: 12-13 katlı iki blokta 104 daire ve zeminde 26 mağazalık canlı bir çarşı dokusu. Daireler 130 m² 3+1 ve 156 m² 4+1 tiplerinde — bölgenin yeni yapı stoğunda geniş aile dairesi arayanların adreslerinden. Eryaman 1-2 metro durağına yürüme mesafesi, cadde cephesi ve mağaza katı projeye hem oturum hem yatırım tarafında talep getiriyor. Tapu kaydı yapının iki katmanlı düzenini doğrular: yaklaşık 5.658 m²'lik parselde iki katlı A blok (çarşı) ile on üç katlı B blok (konut). Bu sitede satılık veya kiralık daireniz mi var? Yeni ve az emsalli projelerde doğru fiyatlama daha da kritiktir — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Frekans Eryaman, Altay Mahallesi'nde Söğüt Caddesi ile Ayaş Yolu arasında, Fırat Life Style ve Ata Yıldız Grup ortaklığında geliştirilip 2023'te teslim edilen karma bir proje: 2 katlı çarşı bloğu (A) ile 13 katlı B blokta 104 daire ve zeminde 26 mağazalık canlı bir çarşı dokusu. Daireler 130 m² 3+1 ve 156 m² 4+1 tiplerinde — bölgenin yeni yapı stoğunda geniş aile dairesi arayanların adreslerinden. Eryaman 1-2 metro durağına yürüme mesafesi, cadde cephesi ve mağaza katı projeye hem oturum hem yatırım tarafında talep getiriyor. Tapu kaydı yapının iki katmanlı düzenini doğrular: yaklaşık 5.658 m²'lik parselde iki katlı A blok (çarşı) ile on üç katlı B blok (konut). Bu sitede satılık veya kiralık daireniz mi var? Yeni ve az emsalli projelerde doğru fiyatlama daha da kritiktir — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45899",
@@ -20,7 +20,8 @@
     "130 m² 3+1 ve 156 m² 4+1 tipleri",
     "Teslim: 2023 (2. çeyrek)",
     "Eryaman 1-2 metro durağına yürüme mesafesi",
+    "Kat mülkiyetli parsel (TKGM)",
     "Tapu: 2 katlı çarşı bloğu + 13 katlı konut bloğu, ~5,7 dönüm"
   ],
-  "zenginlestirildi": "2026-07-10"
+  "zenginlestirildi": "2026-07-30"
 }
