@@ -21,8 +21,9 @@
     "Hotki İnşaat imzalı",
     "Yaklaşık 3 dönümlük parsel (TKGM)",
     "Yerel kayıtlarda 'Hotki Residance' adıyla da geçer",
+    "Kat irtifaklı parsel (TKGM)",
     "Devlet Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-24",
+  "zenginlestirildi": "2026-07-30",
   "sinirGeoJSON": "siteler/devlet-mahallesi/hotki-meydan-boundary.geojson"
 }

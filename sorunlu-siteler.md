@@ -960,3 +960,16 @@ GA rakamları çerez rızası kapısı sonrası düştü (7g ort. ~48/gün → g
 
 ## Çerez bandı kaldırıldı (2026-07-30, Özgün'ün açık talimatı)
 KVKK riski iki kez ayrıntılı anlatıldı (Kurul rehberi, rakip şikayet vektörü, gizlilik sayfası çelişkisi); Özgün "çerezleri kaldır" diye net talimat verdi — bilinçli ticari karar. Uygulama: band silindi, gtag.js herkeste idle-yüklemeyle (LCP deseni korundu), /gizlilik dürüstlüğü korundu (çerezlerin rızasız kullanıldığı açıkça yazıyor + tarayıcı/opt-out yolu + çerezsiz Vercel ölçümü bölümü). GA yarından itibaren tekrar tam ölçüm gösterecek.
+
+## TKGM tapu tamamlama turu (2026-07-30) — site-adı SERP hakimiyeti işi
+Hedef: "X sitesi" aramalarında üst sıra. GSC ölçümü (28g, 1.456 site-adı sorgusu, 18,7B gösterim): ilk 3'te sadece 20 sorgu; 1.028 sorgu 7-12. konumda (ilan portallarının altında). Vurma listesi scratchpad/gsc-site-sorgu-analizi.md'de.
+
+Tapu niteliği metinde olmayan 190 kayda TKGM nokta sorgusu (koordinattan; dönen adaNo ↔ kayıt adalar[] çapraz eşleşme şartı):
+- 154 uygun → 144'üne yazıldı: 110 "Kat mülkiyetli parsel (TKGM)", 33 "Kat irtifaklı parsel (TKGM)", 8 alan satırı (geri alınan 2 düşüldü)
+- 10 ajanlık çapraz denetim (146/146): 2 GERİ ALMA — kasmir-mavi-orkide (koordinat 63933/2 beş katlı OFİS parseline düştü; sitenin konut parseli ayrı olmalı → parsel yapısı kartı), lale-kent (46665/3 "3 Katlı Ofis İşyeri", 1.000 m² — dükkân bloğu teşhisini TEYİT ETTİ, silinme kartı güçlendi)
+- Metin düzeltmeleri (TKGM kanıtıyla): nover-westlife (arsa→kat mülkiyeti geçmiş, kayıt güncellendi), bulut-kule (tapu 2 değil 4 blok: A16+B13+C13 mesken + D2 işyeri — \r\n kaçağı), oyak-goksupark (14→15 konut bloğu), meva-sehir (107 dönümü aşan→yaklaşık 107 dönümlük)
+- 32 kayıt kota (403) kuyruğunda → YARIN: scratchpad/tapu-sonuclar.json "kota" satırları yeniden koşulacak
+- Yeni kartlar: ozahikent — TKGM 46224 (12 katlı B blok) kayıttaki 12 adada YOK, eksik ada adayı; ritim-eryaman — koordinat boş/tarla parsele düşüyor (18477/1 hedefti), koordinat kontrol edilmeli
+- Ana Taşınmaz dönen 9 kayıt (may-tower, ma1-tower, panorama-prestij, kayra-loft...): kat mülkiyeti/irtifakı HENÜZ kurulmamış (yeni projeler) — tapu satırı bilerek yazılmadı
+
+Sıradaki SERP kaldıraçları (bu tur değil): og:image üretimi (718 sayfa görselsiz — OSM tabanlı sınır haritası adayı), alternatifAdlar süpürmesi (556 eksik; aynı-ad tuzağı korumalı), ilk-3'teki 20 sorgunun profil analizi.

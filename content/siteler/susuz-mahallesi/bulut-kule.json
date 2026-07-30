@@ -7,7 +7,7 @@
     "lng": 32.641528
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/bulut-kule-boundary.geojson",
-  "aciklama": "Bulut Kule, Susuz'da 2. İnönü Caddesi'nin başında yükselen bir konut projesidir. Yerel tanıtımlarında toplam 36 daire ve her katta yalnızca iki daire öne çıkar — katta az daireli, ferah bir yaşam konsepti. Tapu kaydına göre proje, yaklaşık 21.180 m²'lik geniş parselde on altı katlı A blok ile on üç katlı B bloktan oluşur; 21 dönümlük alan, yüksek bloklara geniş peyzaj payı bırakır. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bulut Kule, Susuz'da 2. İnönü Caddesi'nin başında yükselen bir konut projesidir. Yerel tanıtımlarında toplam 36 daire ve her katta yalnızca iki daire öne çıkar — katta az daireli, ferah bir yaşam konsepti. Tapu kaydına göre proje, yaklaşık 21.180 m²'lik geniş parselde on altı katlı A bloğu ile on üçer katlı B ve C bloklarından oluşur; parseldeki iki katlı D blok ofis-işyeri birimidir; 21 dönümlük alan, yüksek bloklara geniş peyzaj payı bırakır. Bu rezidansta satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63384",
@@ -15,11 +15,12 @@
     }
   ],
   "ozellikler": [
-    "Tapuda 2 blok: 16 katlı A + 13 katlı B (TKGM)",
+    "Tapuda 4 blok: 16 katlı A + 13'er katlı B-C (mesken) + 2 katlı D (ofis-işyeri) (TKGM)",
     "Her katta yalnızca 2 daire — katta az daireli konsept",
     "Yaklaşık 21 dönümlük parsel",
+    "Kat mülkiyetli parsel (TKGM)",
     "2. İnönü Caddesi — Göksu kentsel gelişim bölgesi"
   ],
   "adres": "2. İnönü Caddesi No:2, Susuz, Yenimahalle/Ankara",
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-07-30"
 }

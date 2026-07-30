@@ -11,7 +11,7 @@
     "Eser Yapı Evleri",
     "Eserkent Sitesi"
   ],
-  "zenginlestirildi": "2026-07-24",
+  "zenginlestirildi": "2026-07-30",
   "adalar": [
     {
       "no": "44752",
@@ -22,6 +22,7 @@
     "3 blok (7-A, 7-B, 7-C) — 11 katlı (belediye kaydı)",
     "13.740 m² tapu yüzölçümü",
     "'Eserkent Sitesi' adıyla da bilinir",
+    "Kat irtifaklı parsel (TKGM)",
     "Ata Mahallesi hattı"
   ],
   "sinirGeoJSON": "siteler/susuz-mahallesi/eser-yapi-sitesi-boundary.geojson"
