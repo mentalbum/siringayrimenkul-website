@@ -957,3 +957,6 @@ Yakalanan ve kod korumasına dönüşen hata sınıfları lib/kunye.ts baş yoru
 
 ## Analitik ölçüm kararı (2026-07-30)
 GA rakamları çerez rızası kapısı sonrası düştü (7g ort. ~48/gün → görünen 20). Özgün'le konuşuldu; bandı kaldırma önerisi REDDEDİLDİ (KVKK + rakip şikayet riski + gizlilik sayfasıyla çelişki). Onaylanan çözüm: (1) Vercel Web Analytics (çerezsiz, rızasız herkesi sayar) — kod eklendi, PANEL AÇMA ADIMI ÖZGÜN'DE; (2) band davetkârlaştırıldı ("Ziyaretinizi sayabilir miyiz?"). Gizlilik sayfasına çerezsiz ölçüm bölümü eklendi.
+
+## Çerez bandı kaldırıldı (2026-07-30, Özgün'ün açık talimatı)
+KVKK riski iki kez ayrıntılı anlatıldı (Kurul rehberi, rakip şikayet vektörü, gizlilik sayfası çelişkisi); Özgün "çerezleri kaldır" diye net talimat verdi — bilinçli ticari karar. Uygulama: band silindi, gtag.js herkeste idle-yüklemeyle (LCP deseni korundu), /gizlilik dürüstlüğü korundu (çerezlerin rızasız kullanıldığı açıkça yazıyor + tarayıcı/opt-out yolu + çerezsiz Vercel ölçümü bölümü). GA yarından itibaren tekrar tam ölçüm gösterecek.

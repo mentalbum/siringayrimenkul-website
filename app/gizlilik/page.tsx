@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CerezTercihiSifirla } from "@/components/analytics/cerez-tercihi-sifirla";
 import { siteConfig } from "@/lib/site-config";
 
 // Statik tarih bilinçli: metin değiştikçe elle güncellenir (tek seferlik işler
 // kuralı — otomatik tarih, değişmeyen metne yapay tazelik verir).
-const SON_GUNCELLEME = "29 Temmuz 2026";
+const SON_GUNCELLEME = "30 Temmuz 2026";
 
 export const metadata: Metadata = {
   title: "Gizlilik ve KVKK Aydınlatma Metni",
@@ -52,10 +51,18 @@ export default function GizlilikPage() {
             olağan bir müşteri görüşmesi olarak telefonumuzda/WhatsApp geçmişinde kalır.
           </p>
           <p className="mt-3">
-            <strong>Çerezler (yalnız izninizle):</strong> Site deneyimini ölçmek için Google
-            Analytics kullanıyoruz. Bu çerezler ancak çerez bildirimindeki{" "}
-            <em>&quot;Kabul&quot;</em> seçeneğini işaretlerseniz çalışır; reddederseniz hiçbir
-            analitik çerez yüklenmez ve site aynı şekilde çalışmaya devam eder.
+            <strong>Çerezler:</strong> Site deneyimini ölçmek için Google Analytics kullanıyoruz.
+            Aşağıdaki analitik çerezler siteyi ziyaret ettiğinizde kullanılır. Bu çerezleri
+            istemiyorsanız tarayıcınızın çerez engelleme ayarlarını ya da Google&apos;ın{" "}
+            <a
+              href="https://tools.google.com/dlpage/gaoptout"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+            >
+              Analytics kapsam dışı eklentisini
+            </a>{" "}
+            kullanabilirsiniz; site engelli çerezlerle de aynı şekilde çalışır.
           </p>
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[480px] border-collapse text-sm">
@@ -71,13 +78,13 @@ export default function GizlilikPage() {
                 <tr className="border-b border-border/60">
                   <td className="py-2 pr-4 font-mono text-xs">_ga</td>
                   <td className="py-2 pr-4">Ziyaretçileri anonim olarak ayırt etme (istatistik)</td>
-                  <td className="py-2 pr-4">Analitik — açık rızayla</td>
+                  <td className="py-2 pr-4">Analitik</td>
                   <td className="py-2">2 yıl</td>
                 </tr>
                 <tr>
                   <td className="py-2 pr-4 font-mono text-xs">_ga_*</td>
                   <td className="py-2 pr-4">Oturum ve sayfa görüntüleme istatistikleri</td>
-                  <td className="py-2 pr-4">Analitik — açık rızayla</td>
+                  <td className="py-2 pr-4">Analitik</td>
                   <td className="py-2">2 yıl</td>
                 </tr>
               </tbody>
@@ -91,8 +98,7 @@ export default function GizlilikPage() {
             <strong>Çerezsiz toplu ölçüm:</strong> Sayfaların kaç kez görüntülendiğini saymak için
             ayrıca Vercel Web Analytics kullanıyoruz. Bu ölçüm <strong>çerez kullanmaz</strong>,
             cihazınıza hiçbir şey kaydetmez ve sizi kimliklendirmez; yalnızca &quot;bu sayfa bugün
-            kaç kez açıldı&quot; düzeyinde toplu sayılar üretir. Çerez bildirimindeki seçiminizden
-            bağımsız çalışır ve reddetmeniz hâlinde de kişisel veri işlemez.
+            kaç kez açıldı&quot; düzeyinde toplu sayılar üretir.
           </p>
         </section>
 
@@ -129,14 +135,6 @@ export default function GizlilikPage() {
               {siteConfig.phoneDisplay}
             </a>{" "}
             numarasından bize ulaşabilirsiniz.
-          </p>
-        </section>
-
-        <section>
-          <h2 className="text-xl text-navy">Çerez Tercihinizi Değiştirme</h2>
-          <p className="mt-3">
-            Daha önce verdiğiniz çerez kararını istediğiniz an değiştirebilirsiniz:{" "}
-            <CerezTercihiSifirla />
           </p>
         </section>
 

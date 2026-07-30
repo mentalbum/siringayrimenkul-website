@@ -5,7 +5,7 @@ import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
 import { Analytics } from "@vercel/analytics/next";
-import { CerezOnayi } from "@/components/analytics/cerez-onayi";
+import { GaYukleyici } from "@/components/analytics/ga-yukleyici";
 import { siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
 import { getGoogleReviewSummary } from "@/lib/google-reviews";
@@ -216,9 +216,10 @@ export default async function RootLayout({
         {/* GA, @next/third-parties yerine elle: o bileşen gtag.js'i hidrasyonla
             birlikte yüklüyor ve mobil LCP'ye ölçülmüş ~1,6 sn bindiriyordu.
             Satır içi bootstrap dataLayer'ı ilk byte'tan kurar (olaylar
-            kuyruklanır, kayıp yok). Ağır gtag.js ise ÇEREZ RIZASINA bağlı:
-            KVKK Kurulu Çerez Rehberi analitik çerez için açık rıza istiyor —
-            CerezOnayi "Kabul" gelmeden script'i hiç yüklemez (bkz. /gizlilik).
+            kuyruklanır, kayıp yok); ağır gtag.js boşta (idle) enjekte edilir.
+            Çerez rıza bandı 2026-07-30'da Özgün'ün açık talimatıyla kaldırıldı
+            (gerekçe/uyarılar sorunlu-siteler.md defterinde) — GA tüm
+            ziyaretçilerde çalışır, /gizlilik metni bu duruma göre günceldir.
             Olay gönderimi lib/ga.ts üzerinden — davranış birebir aynı. */}
         {siteConfig.gaMeasurementId && (
           <>
@@ -231,7 +232,7 @@ export default async function RootLayout({
                   `gtag('config','${siteConfig.gaMeasurementId}');`,
               }}
             />
-            <CerezOnayi gaId={siteConfig.gaMeasurementId} />
+            <GaYukleyici gaId={siteConfig.gaMeasurementId} />
           </>
         )}
         {/* Vercel Web Analytics: ÇEREZSİZ toplu sayaç — kimlik/çerez yok,
