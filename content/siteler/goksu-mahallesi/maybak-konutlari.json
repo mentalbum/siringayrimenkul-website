@@ -7,7 +7,7 @@
     "lng": 32.6529386
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/maybak-konutlari-boundary.geojson",
-  "aciklama": "Maybak Konutları, Göksu Mahallesi'nde dört bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '4 Blok Betonarme Apartman' niteliğiyle kayıtlı 18.048 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — dört bloğa karşılık 18 dönümlük parsel, blok aralarını geniş, yeşil ve otopark payını yüksek tutan ferah bir yerleşim düzeni demektir. Göksu'nun oturmuş konut dokusunda, günlük yaşam akslarına yakın bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Maybak Konutları, Göksu Mahallesi'nde dört bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '4 Blok Betonarme Apartman' niteliğiyle kayıtlı 18.048 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — dört bloğa karşılık 18 dönümlük parsel, blok aralarını geniş, yeşil ve otopark payını yüksek tutan ferah bir yerleşim düzeni demektir. Göksu'nun oturmuş konut dokusunda, günlük yaşam akslarına yakın bilinen bir adrestir. Yerel emlak kayıtlarına göre 2009 yapımı sitenin blokları 3-A, 3-B, 3-C ve 3-D olarak adlandırılır; 13-14 kat aralığındaki dört blokta, ağırlıklı 4+1 planlı yaklaşık 110 daire bulunur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46474",
@@ -17,7 +17,9 @@
   "ozellikler": [
     "~18.048 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Yaklaşık 110 daire, ağırlıklı 4+1 (yerel kayıtlar)",
+    "2009 yapımı (yerel kayıtlar)",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

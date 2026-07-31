@@ -7,7 +7,7 @@
     "lng": 32.641133
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/tulip-life-boundary.geojson",
-  "aciklama": "Tulip Life, Göksu Mahallesi'nde 16 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 6.989 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı Betonarme Apartman' olarak tanımlar. Yaklaşık 7 dönümlük parselde tek bloğun yükselmesi, zemin kullanımını ve otopark payını ferah bırakır; Göksu'nun modern konut aksında bilinen adreslerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Tulip Life, Göksu Mahallesi'nde 16 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre 6.989 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı Betonarme Apartman' olarak tanımlar. Yaklaşık 7 dönümlük parselde tek bloğun yükselmesi, zemin kullanımını ve otopark payını ferah bırakır; Göksu'nun modern konut aksında bilinen adreslerdendir. Geliştiricinin tanıtımına göre proje Lale Yapı imzasını taşır ve tek blokta 55 daireden oluşur; iskan belgesi Eylül 2018 tarihinde alınmıştır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63391",
@@ -18,10 +18,12 @@
     "~6.989 m² parsel (TKGM)",
     "16 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Lale Yapı imzalı proje — 55 daire (geliştirici tanıtımı)",
+    "İskan: Eylül 2018 (geliştirici tanıtımı)",
     "Göksu Mahallesi"
   ],
   "alternatifAdlar": [
     "Tulip Life Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

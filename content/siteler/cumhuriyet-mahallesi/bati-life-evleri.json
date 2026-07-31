@@ -7,7 +7,7 @@
     "lng": 32.686818
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/bati-life-evleri-boundary.geojson",
-  "aciklama": "Batı Life Evleri, Cumhuriyet Mahallesi'nin Yeni Batı aksında 14 katlı ana bloğu ve 2 katlı yan bloğuyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A Blok Mesken ve 2 Katlı Blok' niteliğiyle kayıtlı 6.185 m²'lik kat mülkiyetli parsel üzerine kuruludur — alçak blok tamamlayıcı birimdir. Üst katlarda Yeni Batı'ya açık görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Batı Life Evleri, Cumhuriyet Mahallesi'nin Yeni Batı aksında 14 katlı ana bloğu ve 2 katlı yan bloğuyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A Blok Mesken ve 2 Katlı Blok' niteliğiyle kayıtlı 6.185 m²'lik kat mülkiyetli parsel üzerine kuruludur — alçak blok tamamlayıcı birimdir. Üst katlarda Yeni Batı'ya açık görüş vardır. Geliştiricinin tanıtımına göre proje Kızılkaplan Grup imzasını taşır; 48 konut ile yaklaşık 2.400 m²'lik ticari alandan oluşan butik ölçekli bir yapıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43272",
@@ -19,10 +19,12 @@
     "2-14 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "Kızılkaplan Grup imzalı proje (geliştirici tanıtımı)",
+    "48 konut + ~2.400 m² ticari alan (geliştirici tanıtımı)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "Batı Life Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

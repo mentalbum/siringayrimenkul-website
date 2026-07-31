@@ -7,7 +7,7 @@
     "lng": 32.6571163
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/zekioglu-rezidans-boundary.geojson",
-  "aciklama": "Zekioğlu Rezidans, Şehit Osman Avcı Mahallesi'nde yer alan, rezidans konseptli bir yapıdır. TKGM kayıtlarına göre yapının bulunduğu parsel yaklaşık 5.247 m²'lik bir alana karşılık gelir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Zekioğlu Rezidans, Şehit Osman Avcı Mahallesi'nde yer alan, rezidans konseptli bir yapıdır. TKGM kayıtlarına göre yapının bulunduğu parsel yaklaşık 5.247 m²'lik bir alana karşılık gelir. Firma tanıtım kaynaklarına göre yapı, Zekioğlu İnşaat imzasını taşır ve 2013 yılında tamamlanmıştır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46657",
@@ -18,10 +18,12 @@
     "Rezidans konseptli yapı",
     "Yaklaşık 5,2 dönümlük parsel (TKGM)",
     "Kat irtifaklı parsel (TKGM)",
+    "Zekioğlu İnşaat yapımı (firma tanıtımı)",
+    "Tamamlanma yılı 2013 (firma tanıtımı)",
     "Şehit Osman Avcı Mahallesi"
   ],
   "alternatifAdlar": [
     "Zekioğlu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

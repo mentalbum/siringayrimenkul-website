@@ -7,7 +7,7 @@
     "lng": 32.646108
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/admira-goksu-konutlari-boundary.geojson",
-  "aciklama": "Admira Göksu Konutları, Göksu Mahallesi'nde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 7.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı A Blok ve 14 Katlı B Blok Betonarme Apartman' olarak tanımlar. Kat farkı aynı sitede farklı manzara ve fiyat katmanları oluşturur; bölgenin yeni yüksek yapı kuşağının bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Admira Göksu Konutları, Göksu Mahallesi'nde kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 7.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı A Blok ve 14 Katlı B Blok Betonarme Apartman' olarak tanımlar. Kat farkı aynı sitede farklı manzara ve fiyat katmanları oluşturur; bölgenin yeni yüksek yapı kuşağının bilinen adreslerindendir. Dizin ve proje kayıtlarında geliştirici olarak Laçin Grup İnşaat geçer; proje kaynaklarına göre daireler 2018 sonunda teslime hazır duruma gelmiştir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63396",
@@ -17,10 +17,11 @@
   "ozellikler": [
     "2 blok — 55 daire (7.500 m²)",
     "Her katta yalnızca 2 daire",
-    "Göksu'ya hakim tepe konumu"
+    "Göksu'ya hakim tepe konumu",
+    "Laçin Grup İnşaat projesi — teslim 2018 (proje kaynakları)"
   ],
   "alternatifAdlar": [
     "Admira Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

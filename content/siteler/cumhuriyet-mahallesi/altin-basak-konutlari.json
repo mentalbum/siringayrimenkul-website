@@ -7,7 +7,7 @@
     "lng": 32.6637169
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/altin-basak-konutlari-boundary.geojson",
-  "aciklama": "Altın Başak Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '15 Katlı A Blok ve 13 Katlı B Blok Betonarme Apartman' niteliğiyle kayıtlı 6.710 m²'lik kat mülkiyetli parsel üzerine kuruludur. Kat farkı aynı sitede farklı manzara katmanları sunar; Yeni Batı'nın genç konut stoğunun bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Altın Başak Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '15 Katlı A Blok ve 13 Katlı B Blok Betonarme Apartman' niteliğiyle kayıtlı 6.710 m²'lik kat mülkiyetli parsel üzerine kuruludur. Kat farkı aynı sitede farklı manzara katmanları sunar; Yeni Batı'nın genç konut stoğunun bilinen adreslerindendir. Proje tanıtımlarına göre site Çağıl İnşaat tarafından geliştirilmiş ve 2016 yılında teslim edilmiştir; toplam 68 daireden oluşur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62684",
@@ -18,10 +18,12 @@
     "~6.710 m² parsel (TKGM)",
     "13-15 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Yaklaşık 68 daire (proje tanıtımı)",
+    "2016 teslim (proje tanıtımı)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "Altın Başak Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

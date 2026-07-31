@@ -7,7 +7,7 @@
     "lng": 32.6641652
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/greenpark-evleri-boundary.geojson",
-  "aciklama": "Greenpark Evleri, Cumhuriyet Mahallesi'nin Yeni Batı aksında 18'er katlı ikiz bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 12.983 m²'lik parselde tapu kaydı yapıyı '18'er Katlı A ve B Blok Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki eş yüksek bloğa karşılık 13 dönümlük parsel, yeşil ve açık alan payını cömert tutar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Greenpark Evleri, Cumhuriyet Mahallesi'nin Yeni Batı aksında 18'er katlı ikiz bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 12.983 m²'lik parselde tapu kaydı yapıyı '18'er Katlı A ve B Blok Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki eş yüksek bloğa karşılık 13 dönümlük parsel, yeşil ve açık alan payını cömert tutar. Yerel emlak kaynaklarına göre proje Ünsal Group tarafından geliştirildi ve Kasım 2015 itibarıyla teslim edildi; iki blokta toplam 164 daire yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62684",
@@ -18,10 +18,12 @@
     "~12.983 m² parsel (TKGM)",
     "18 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "164 daire (yerel kaynaklar)",
+    "2015 teslimi (yerel kaynaklar)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "GreenPark Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

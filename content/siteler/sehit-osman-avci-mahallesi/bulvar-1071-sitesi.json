@@ -7,7 +7,7 @@
     "lng": 32.6568337
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi-boundary.geojson",
-  "aciklama": "Bulvar 1071 Sitesi, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi aksında, karma nitelikli modern bir yapıdır. TKGM kayıtlarına göre 8.201 m²'lik kat mülkiyetli parselde tapu niteliği '15 Katlı A-B-C Blok ile 4 Katlı D Blok Ofis-İşyeri' olarak karmadır — alım-satımda birimin tapudaki niteliğine bakmak önemlidir; ayrıntıyı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Üç eş yüksek bloğuyla bulvar silüetinin bilinen yapılarındandır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bulvar 1071 Sitesi, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi aksında, karma nitelikli modern bir yapıdır. TKGM kayıtlarına göre 8.201 m²'lik kat mülkiyetli parselde tapu niteliği '15 Katlı A-B-C Blok ile 4 Katlı D Blok Ofis-İşyeri' olarak karmadır — alım-satımda birimin tapudaki niteliğine bakmak önemlidir; ayrıntıyı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Üç eş yüksek bloğuyla bulvar silüetinin bilinen yapılarındandır. Proje FS Keskin İnşaat imzası taşır; geliştiricinin tanıtımına göre 2020 yılında tamamlanan yapıda 142 daire ile 23 dükkan bulunur. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46642",
@@ -19,7 +19,9 @@
     "4-15 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "142 daire + 23 dükkan (geliştirici tanıtımı)",
+    "2020 yapımı (geliştirici tanıtımı)",
     "Şehit Osman Avcı Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

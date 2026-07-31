@@ -7,7 +7,7 @@
     "lng": 32.665576
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari-boundary.geojson",
-  "aciklama": "Ata Yıldız Batı Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 8.060 m²'lik parselde tapu kaydı yapıyı '15 Katlı A Blok ve 14 Katlı B Blok Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Üst katlarda Yeni Batı'ya açık geniş görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ata Yıldız Batı Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 8.060 m²'lik parselde tapu kaydı yapıyı '15 Katlı A Blok ve 14 Katlı B Blok Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Üst katlarda Yeni Batı'ya açık geniş görüş vardır. Yerel kaynaklara göre proje Ata Yıldız Grup İnşaat tarafından hayata geçirilmiştir ve 2+1 ile 3+1 kat planlarında toplam 136 daire barındırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62660",
@@ -18,9 +18,10 @@
     "~8.060 m² parsel (TKGM)",
     "14-15 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Yaklaşık 136 daire (yerel kaynaklara göre)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Atayıldız Batı Konutları",
     "Ata Yıldız Batı Sitesi"

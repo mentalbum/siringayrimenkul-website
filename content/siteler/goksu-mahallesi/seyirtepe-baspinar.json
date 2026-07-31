@@ -7,7 +7,7 @@
     "lng": 32.652242
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/seyirtepe-baspinar-boundary.geojson",
-  "aciklama": "Seyirtepe Başpınar, Göksu Mahallesi'nde 17'şer katlı üç bloklu, çok geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 20.245 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A, B ve C Blok Betonarme' olarak tanımlar — üç eş yüksek bloğa karşılık 20 dönümlük parsel, açık alan payını cömert tutar. Adındaki 'seyir' vurgusu boş değildir: üst katlar bölgeye çok geniş bir görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Seyirtepe Başpınar, Göksu Mahallesi'nde 17'şer katlı üç bloklu, çok geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 20.245 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A, B ve C Blok Betonarme' olarak tanımlar — üç eş yüksek bloğa karşılık 20 dönümlük parsel, açık alan payını cömert tutar. Adındaki 'seyir' vurgusu boş değildir: üst katlar bölgeye çok geniş bir görüş sunar. Yerel kaynaklara ve emlak platformlarındaki tanıtımlara göre proje Başpınar İnşaat imzası taşır ve toplam 160 daireden oluşur; dairelerin tamamı brüt yaklaşık 190, net 170 m² büyüklüğünde geniş aile planlıdır (4+1+1). Aynı kaynaklara göre teslimler 2022-2023 döneminde gerçekleşmiş; kapalı otopark, spor sahaları, süs havuzu ve sosyal tesis site donatıları arasında sayılmıştır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63400",
@@ -16,12 +16,15 @@
   ],
   "ozellikler": [
     "~20.245 m² parsel (TKGM)",
-    "2-17 kat aralığında bloklar (tapu kaydı)",
+    "17'şer katlı A, B ve C blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "160 daire — tamamı 4+1+1 (brüt ~190 / net ~170 m²)",
+    "Başpınar İnşaat projesi (proje kaynakları)",
+    "Kapalı otopark, spor sahaları ve sosyal tesis",
     "Göksu Mahallesi"
   ],
   "alternatifAdlar": [
     "Seyirtepe Başpınar Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }
