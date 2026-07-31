@@ -7,7 +7,7 @@
     "lng": 32.653296
   },
   "sinirGeoJSON": "siteler/seker-mahallesi/diamond-residence-boundary.geojson",
-  "aciklama": "Diamond Residence, Şeker Mahallesi'nde cam balkonlu 1+1 daireleri ve bünyesindeki spor salonuyla bilinen bir rezidanstır. (Cumhuriyet'teki Diamond Göksu ayrı bir projedir.) Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Tapu kaydına göre yapı, yaklaşık 5.162 m²'lik parselde onar katlı A ve B bloklardan oluşur ve betonarme apartman niteliğiyle kayıtlıdır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Diamond Residence, Şeker Mahallesi'nde cam balkonlu 1+1 daireleri ve bünyesindeki spor salonuyla bilinen bir rezidanstır. (Cumhuriyet'teki Diamond Göksu ayrı bir projedir.) Gimsa Park AVM çevresindeki Şeker çarşı-rezidans kümesinin parçasıdır; bölge, Eryaman'ın kompakt/yatırımlık daire yoğunluğu en yüksek noktasıdır. Tapu kaydına göre yapı, yaklaşık 5.162 m²'lik parselde onar katlı A ve B bloklardan oluşur ve betonarme apartman niteliğiyle kayıtlıdır. Proje, Ankara merkezli Limit İnşaat imzasını taşır; geliştiricinin dönem tanıtımına göre projede 1+1 ile 4+1 arasında değişen daire tipleri yer almıştır. Bu rezidansta satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46368",
@@ -19,6 +19,7 @@
     "Yaklaşık 5,2 dönümlük parsel (TKGM)",
     "1+1 cam balkonlu daireler",
     "Bünyesinde spor salonu",
+    "Geliştirici: Limit İnşaat",
     "Diamond Göksu'dan ayrı proje",
     "Kat mülkiyetli parsel (TKGM)",
     "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
@@ -27,5 +28,5 @@
     "Diamond Rezidans",
     "Diamond Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

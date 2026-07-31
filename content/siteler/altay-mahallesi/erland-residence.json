@@ -7,7 +7,7 @@
     "lng": 32.641473
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/erland-residence-boundary.geojson",
-  "aciklama": "Erland Residence, Altay Mahallesi'nde 14'er katlı ikiz bloklu bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. İki eş yüksek bloğuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Erland Residence, Altay Mahallesi'nde 14'er katlı ikiz bloklu bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. İki eş yüksek bloğuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Proje tanıtımlarına ve dönemin yerel haberlerine göre yapı, Hasan Turan Emtisi Grup A.Ş. tarafından geliştirilmiş; teslimler 2016 yılının Şubat ayında yapılmış ve yapı toplam 251 konut barındıracak şekilde tasarlanmıştır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45899",
@@ -18,6 +18,8 @@
   "ozellikler": [
     "~10.259 m² parsel (TKGM)",
     "14 katlı yapı (tapu kaydı)",
+    "Toplam 251 konut (proje tanıtımları)",
+    "Şubat 2016 teslim (yerel kaynaklar)",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
     "Altay Mahallesi"
@@ -25,5 +27,5 @@
   "alternatifAdlar": [
     "Erland Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

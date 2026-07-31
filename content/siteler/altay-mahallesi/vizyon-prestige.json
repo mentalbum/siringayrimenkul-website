@@ -7,7 +7,7 @@
     "lng": 32.646166
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/vizyon-prestige-boundary.geojson",
-  "aciklama": "Vizyon Prestige, Altay Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.729 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksının yeni nesil stoğunda kompakt birim ve yatırım arayanların adresidir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Vizyon Prestige, Altay Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.729 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksının yeni nesil stoğunda kompakt birim ve yatırım arayanların adresidir. Geliştirici ALR İnşaat'ın tanıtımına göre 2018 yılında teslim edilen proje, tek blokta 4 farklı tipte 2+1 planlı toplam 92 konut ile 7 cadde mağazasından oluşur. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45898",
@@ -19,10 +19,12 @@
     "16 katlı yüksek yapı",
     "Tapu niteliği: ofis/işyeri (rezidans tipi)",
     "~5.729 m² parsel (TKGM)",
-    "Kat irtifaklı parsel (TKGM)"
+    "Kat irtifaklı parsel (TKGM)",
+    "92 konut + 7 cadde mağazası (geliştirici tanıtımı)",
+    "2018 teslim (geliştirici tanıtımı)"
   ],
   "alternatifAdlar": [
     "Vizyon Prestige Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

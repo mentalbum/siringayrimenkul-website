@@ -7,7 +7,7 @@
     "lng": 32.657743
   },
   "sinirGeoJSON": "siteler/seker-mahallesi/address-enda-boundary.geojson",
-  "aciklama": "Address Enda, Şeker Mahallesi'nde 11 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Kompakt birimleri ve tek blok düzeniyle genç ve yatırımcı profiline hitap eder; Şeker'in gelişen aksında yeni nesil bir adrestir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Address Enda, Şeker Mahallesi'nde 11 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Kompakt birimleri ve tek blok düzeniyle genç ve yatırımcı profiline hitap eder; Şeker'in gelişen aksında yeni nesil bir adrestir. Yerel emlak basınına yansıyan proje tanıtımına göre yapı, Ata Yıldız Grup İnşaat tarafından geliştirilmiş olup brüt 98 m² 2+1 ve brüt 123 m² 3+1 planlarda 54 daire ile 9 dükkândan oluşur. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46362",
@@ -19,10 +19,11 @@
     "Köşe konumlu geniş ticari üniteler",
     "Kat mülkiyetli parsel (TKGM)",
     "~5.539 m² parsel (TKGM)",
-    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)"
+    "Şeker çarşı-rezidans kümesi (Gimsa Park çevresi)",
+    "54 daire + 9 dükkân (yerel basın)"
   ],
   "alternatifAdlar": [
     "Address Enda Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }
