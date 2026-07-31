@@ -6,7 +6,7 @@ import { CtaButton } from "@/components/ui/button";
 import { FaqSection } from "@/components/ui/faq-section";
 import { Reveal } from "@/components/ui/reveal";
 import type { FaqItem } from "@/lib/faq";
-import { getAllBlogPosts } from "@/lib/content";
+import { getAllBlogPosts, getYayindaMahalleler } from "@/lib/content";
 import { getBlogKonu } from "@/lib/blog-konular";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
@@ -275,6 +275,46 @@ export default function EvSatmakPage() {
 
       <FaqSection title="Eryaman'da Ev Satmak Hakkında Sık Sorulanlar" items={faqItems} />
 
+
+
+      {/* Tam mahalle adlarıyla hizmet bölgesi köprüleri: "X mahallesi emlakçı"
+          sorgularında yüksek otoriteli hizmet sayfasından tam-eşleşme çapa
+          sinyali (2026-07-31 SERP taraması — 7 mahalle ilk sayfada değildi). */}
+      <section className="mt-14 max-w-3xl">
+        <h2 className="text-xl">Hangi Mahallelerde Çalışıyoruz?</h2>
+        <p className="mt-3 text-base leading-relaxed text-body">
+          Eryaman tarafında{" "}
+          {getYayindaMahalleler()
+            .filter((m) => m.ilce === "Etimesgut")
+            .map((m, i, dizi) => (
+              <span key={m.slug}>
+                <Link
+                  href={`/mahalleler/${m.slug}`}
+                  className="font-medium text-navy hover:text-gold-dark hover:underline"
+                >
+                  {m.isim}
+                </Link>
+                {i < dizi.length - 2 ? ", " : i === dizi.length - 2 ? " ve " : ""}
+              </span>
+            ))}
+          ; komşu Yenimahalle tarafında{" "}
+          {getYayindaMahalleler()
+            .filter((m) => m.ilce === "Yenimahalle")
+            .map((m, i, dizi) => (
+              <span key={m.slug}>
+                <Link
+                  href={`/mahalleler/${m.slug}`}
+                  className="font-medium text-navy hover:text-gold-dark hover:underline"
+                >
+                  {m.isim}
+                </Link>
+                {i < dizi.length - 2 ? ", " : i === dizi.length - 2 ? " ve " : ""}
+              </span>
+            ))}
+          {" "}için mahalle emlakçınız olarak çalışıyoruz — her mahallenin site envanteri kendi
+          rehber sayfasında.
+        </p>
+      </section>
 
       <CtaBanner
         size="large"

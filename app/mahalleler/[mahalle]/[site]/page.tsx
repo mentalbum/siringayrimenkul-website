@@ -155,11 +155,15 @@ export default async function SitePage({ params }: Props) {
   // (E-E-A-T denetimi, 2026-07-29). Varyant seçimi DETERMİNİSTİK (slug'dan) —
   // her build'de aynı sayfa aynı metni alır, yapay tazelenme olmaz.
   const varyant = Array.from(site.slug).reduce((t, ch) => t + ch.charCodeAt(0), 0);
+  // Dört varyantın DÖRDÜNDE de "emlakçı" kelimesi geçer: "X sitesi emlakçı"
+  // sorgusunda 720 sayfanın tamamında kelime eşleşmesi garanti (2026-07-31
+  // SERP taraması: bu sınıfta örneklem 12/12 ilk sayfadaydı; garanti kalıcı
+  // olsun diye v2/v3'e de doğal biçimde eklendi).
   const girisVaadi = [
     `Bu sitede eviniz mi var? Satmak veya kiraya vermek istiyorsanız, ${site.isim} emlakçısı olarak size yardımcı oluyoruz.`,
     `Buradaki dairenizi satmayı ya da kiraya vermeyi düşünüyorsanız, siteyi yakından tanıyan emlakçınız olarak yanınızdayız.`,
-    `Bu sitede daireniz varsa — satış da kiralama da olsa — süreci sizin adınıza biz yürütüyoruz.`,
-    `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, ilk görüşmeden tapuya kadar yanınızdayız.`,
+    `Bu sitede daireniz varsa — satış da kiralama da olsa — süreci site emlakçınız olarak sizin adınıza biz yürütüyoruz.`,
+    `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, emlakçınız olarak ilk görüşmeden tapuya kadar yanınızdayız.`,
   ][varyant % 4];
 
   // İç bağ ölçümü (2026-07-29): 720 site sayfasından rehberlere 0 link vardı.

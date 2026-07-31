@@ -10,6 +10,9 @@ const SERT_UNSUZLER = "fstkçşhp";
 // "Blokları", "Villaları", "Konakları" vb. → bulunma hâlinde kaynaştırma
 // n'si alır (Sitesi'nde), yalın ünlüyle bitenler almaz (Genova'da).
 const IYELIK_SONU = /(s[ıiuü]|lar[ıi]|ler[ıi])$/;
+// "su" ile biten BİRLEŞİK coğrafi adlar iyelikli değildir: "Göksu'da" doğru,
+// "Göksu'nda" değil (kural denetimi, 2026-07-31). Gerekirse listeye ekle.
+const IYELIK_DEGIL = /^(göksu|karasu|aksu|incesu)$/;
 
 // Yabancı yazılışlı adlar okunuşa göre ek alır: "Life" → "layf" (kalın ünlü,
 // sert f) → Life'ta. Tablo, korpustaki ad sonlarıyla sınırlı tutuldu.
@@ -63,7 +66,8 @@ export function bulunmaHali(isim: string): string {
   const harf = sonHarf(isim);
   const unlu = KALIN.includes(sonUnlu(isim)) ? "a" : "e";
   if (UNLULER.includes(harf)) {
-    const iyelikli = IYELIK_SONU.test(sonKelime(isim).toLocaleLowerCase("tr"));
+    const son = sonKelime(isim).toLocaleLowerCase("tr");
+    const iyelikli = IYELIK_SONU.test(son) && !IYELIK_DEGIL.test(son);
     return `${isim}'${iyelikli ? "n" : ""}d${unlu}`;
   }
   const d = SERT_UNSUZLER.includes(harf) ? "t" : "d";

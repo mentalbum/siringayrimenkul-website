@@ -23,10 +23,12 @@ export async function ReviewBadge({ className = "", variant = "light" }: ReviewB
           <StarIcon key={i} className="h-4 w-4" />
         ))}
       </span>
+      {/* Yorum SAYISI görünür metinde gösterilmez (rakip sabotajı kuralı —
+          kural denetimi, 2026-07-31); puan Türkçe virgülle yazılır. */}
       <span
         className={`text-sm font-semibold ${variant === "dark" ? "text-white" : "text-navy"}`}
       >
-        {summary.rating.toFixed(1)} · {summary.userRatingCount} Google Yorumu
+        {summary.rating.toFixed(1).replace(".", ",")} · Google Yorumları
       </span>
     </a>
   );

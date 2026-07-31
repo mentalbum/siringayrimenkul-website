@@ -215,20 +215,24 @@ export default function HomePage() {
             </a>
             . (Taşınmaz Ticareti Yetki Belgesi No: 0603771)
           </p>
+          {/* Tam mahalle adları bilinçli ("Göksu Mahallesi", kırpılmış "Göksu"
+              değil): "X mahallesi emlakçı" sorgularında anasayfadan tam-eşleşme
+              çapa sinyali (2026-07-31 SERP taraması). "Eryaman'ın tamamı" +
+              Yenimahalle listesi tek şemsiyede sunulmaz — kural. */}
           <p className="mt-4 text-base leading-relaxed text-body">
-            Hizmet bölgemiz Eryaman&apos;ın tamamı:{" "}
+            Hizmet bölgemiz Eryaman&apos;ın tamamı ve komşu Yenimahalle mahalleleri:{" "}
             {mahalleler.map((mahalle, index) => (
               <span key={mahalle.slug}>
                 <Link
                   href={`/mahalleler/${mahalle.slug}`}
                   className="font-medium text-navy hover:text-gold-dark hover:underline"
                 >
-                  {mahalle.isim.replace(/\s*Mahallesi$/, "")}
+                  {mahalle.isim}
                 </Link>
                 {index < mahalleler.length - 2 ? ", " : index === mahalleler.length - 2 ? " ve " : ""}
               </span>
-            ))}{" "}
-            mahallelerindeki {toplamSite}&apos;den fazla site ve rezidansı tek tek tanıyoruz.
+            ))}
+            . Bu mahallelerdeki {toplamSite}&apos;den fazla site ve rezidansı tek tek tanıyoruz.
           </p>
         </Reveal>
       </section>

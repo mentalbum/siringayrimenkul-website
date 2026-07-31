@@ -25,6 +25,8 @@ import { SiteCard } from "@/components/site/site-card";
 import { Reveal } from "@/components/ui/reveal";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef } from "@/lib/structured-data";
+import { bulunmaHali } from "@/lib/turkce";
 import { eryamandaMi } from "@/lib/bolge";
 
 type Props = {
@@ -70,8 +72,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // "mahalle + emlakçı" sorgu sınıfının kazanılabilir tek sınıf olduğunu
     // gösterdi (satılık/kiralık sorguları portal duvarı). Cumhuriyet'te sonek
     // "Yeni Batı Emlakçısı" — o sorguyu bu sayfa hedefliyor (bkz. memory).
-    // "Eryaman" baş terimi başlıktan taştığı için description'a taşındı.
-    title: { absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${emlakciIsmi} Emlakçısı` },
+    // BÖLGE SON EKİ ("| Eryaman" / "| Yenimahalle Ankara"): canlı SERP taraması
+    // (2026-07-31) 7 mahallenin ilk sayfada ÇIKMADIĞINI gösterdi ve hepsi ya
+    // Türkiye'de yaygın adlar (Göksu, Yeşilova, Şeyh Şamil, Şehit Osman Avcı)
+    // ya da Yenimahalle grubuydu — Google başlıkta coğrafi nitelik olmadan
+    // hangi ilin mahallesi olduğunu ayıramıyor. Görünümde kesilse bile
+    // sıralama sinyali başlıkta durur.
+    title: {
+      absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${emlakciIsmi} Emlakçısı | ${
+        eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
+      }`,
+    },
     description: `${eryamandaMi(mahalle) ? "Eryaman " : ""}${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
@@ -177,6 +188,27 @@ export default async function MahallePage({ params }: Props) {
         }
       : null;
 
+  // "Bu mahalleye hizmet veren emlakçı" ilişkisinin makine-okunur hâli —
+  // yaygın adlı mahallelerde (Göksu, Yeşilova...) coğrafi ayrıştırmayı
+  // güçlendirir (2026-07-31 SERP taraması bulgusu).
+  const hizmetJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Emlak danışmanlığı — satış ve kiralama",
+    name: `${mahalle.isim} Emlakçısı — ${siteConfig.name}`,
+    provider: organizationRef,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
+    areaServed: {
+      "@type": "Place",
+      name: `${mahalle.isim}, ${mahalle.ilce}, Ankara`,
+      geo: {
+        "@type": "GeoCoordinates",
+        latitude: mahalle.merkezKoordinat.lat,
+        longitude: mahalle.merkezKoordinat.lng,
+      },
+    },
+  };
+
   const mahalleJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
@@ -206,8 +238,10 @@ export default async function MahallePage({ params }: Props) {
       />
 
       <header className="mt-4 max-w-3xl">
+        {/* Bölge etiketi coğrafi ayrıştırma sinyali: "Göksu" Türkiye'de çok
+            yerde var; Eryaman/Yenimahalle bağlamı hero'da açıkça durmalı. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          {mahalle.ilce}
+          {eryamandaMi(mahalle) ? "Eryaman · Etimesgut · Ankara" : "Yenimahalle · Ankara"}
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
         <p className="mt-3 text-base leading-relaxed text-body">
@@ -407,6 +441,39 @@ export default async function MahallePage({ params }: Props) {
       </section>
 
 
+      {/* "X mahallesi emlakçı" sorgusunun gövdedeki karşılığı: kim, nerede,
+          hangi yetkiyle. Bölge bağlamı (Eryaman/Yenimahalle · Ankara) yaygın
+          adlı mahallelerde ayrıştırma sinyalidir (2026-07-31 SERP bulgusu).
+          Rakam kuralları: yorum sayısı yok (puan serbest), fiyat yok. */}
+      <section className="mt-14 max-w-3xl">
+        <h2 className="text-xl">{mahalle.isim} Emlakçısı: Şirin Gayrimenkul</h2>
+        <p className="mt-3 text-base leading-relaxed text-body">
+          {eryamandaMi(mahalle) ? (
+            <>
+              Ofisimiz Eryaman&apos;da; {bulunmaHali(mahalle.isim)} — Etimesgut, Ankara —
+              satılık ve kiralık daire süreçlerini yerinde yürütüyoruz.
+            </>
+          ) : (
+            <>
+              Ofisimiz hemen komşudaki Eryaman&apos;da; {bulunmaHali(mahalle.isim)} —
+              Yenimahalle, Ankara — satılık ve kiralık daire süreçlerini yerinde yürütüyoruz.
+            </>
+          )}{" "}
+          Mahalledeki {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}{" "}
+          tapu yapısını, bloklarını ve emsallerini kayıt altında tutuyor; değerlemeyi ilan
+          fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. Google&apos;da 5,0
+          puanlı işletme profilimiz ve 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
+          çalışıyoruz. {bulunmaHali(kisaIsim)} eviniz varsa{" "}
+          <Link
+            href={`/ev-degerleme?mahalle=${mahalle.slug}`}
+            className="font-semibold text-gold-dark hover:underline"
+          >
+            değerleme görüşmesiyle
+          </Link>{" "}
+          başlayalım.
+        </p>
+      </section>
+
       <FaqSection
         title={`${mahalle.isim} Hakkında Sık Sorulan Sorular`}
         items={getMahalleFaq(mahalle, siteler.length)}
@@ -507,6 +574,10 @@ export default async function MahallePage({ params }: Props) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(mahalleJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hizmetJsonLd) }}
       />
       {siteListJsonLd && (
         <script
