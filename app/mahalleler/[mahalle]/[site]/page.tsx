@@ -10,6 +10,8 @@ import {
   getSiteBoundary,
   getSiteBySlug,
   getSitelerByMahalle,
+  isimBirdenCokMahallede,
+  mahalleKisaIsim,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -68,13 +70,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // insanlar "aktürk sitesi emlakçı" diye arıyor — tam dizi başlığın ilk
     // kelimeleri. Bölge soneki coğrafi ayrıştırma için (mahalle şablonuyla
     // aynı desen); adında Eryaman geçen sitelerde tekrarlanmaz.
+    // Aynı ad birden çok mahallede varsa (Kardelen 4 mahallede!) özdeş başlık
+    // Google'ın sayfaları tek sonuca katlamasına yol açıyordu — sonek mahalleyle
+    // açılır: "… | Göksu Eryaman" (lib/content.ts isimBirdenCokMahallede).
     title: isimdeEryamanVar
       ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire`
       : eryamanda
-        ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire | Eryaman`
+        ? isimBirdenCokMahallede(site.isim)
+          ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalleKisaIsim(mahalle)} Eryaman`
+          : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | Eryaman`
         : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalle.isim}`,
     description: truncateForMeta(
-      `${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {

@@ -92,6 +92,28 @@ export function getSiteBySlug(mahalleSlug: string, slug: string): Site | undefin
   return readJson<Site>(filePath);
 }
 
+// Birden fazla mahallede birebir aynı adla kayıtlı site isimleri (tr küçük
+// harf). Aynı ad özdeş <title>/description üretince Google benzer sayfaları
+// tek sonuca katlıyor ve diğer kayıt SERP'te hiç görünmüyordu (canlı tarama,
+// 2026-07-31: Kardelen 4 kayıt, Çınar/Bahar/Doktorlar… 9 grup / 19 sayfa).
+// Bu adlarda başlık soneki mahalle adıyla açılır.
+let cokMahalleliIsimler: Set<string> | undefined;
+export function isimBirdenCokMahallede(isim: string): boolean {
+  if (!cokMahalleliIsimler) {
+    const sayilar = new Map<string, number>();
+    for (const mahalle of getAllMahalleler()) {
+      for (const site of getSitelerByMahalle(mahalle.slug)) {
+        const anahtar = site.isim.toLocaleLowerCase("tr");
+        sayilar.set(anahtar, (sayilar.get(anahtar) ?? 0) + 1);
+      }
+    }
+    cokMahalleliIsimler = new Set(
+      [...sayilar].filter(([, adet]) => adet > 1).map(([anahtar]) => anahtar)
+    );
+  }
+  return cokMahalleliIsimler.has(isim.toLocaleLowerCase("tr"));
+}
+
 export function getSiteBoundary(site: Site): GeoJSON.Feature | undefined {
   if (!site.sinirGeoJSON) return undefined;
   const filePath = path.join(CONTENT_DIR, site.sinirGeoJSON);
