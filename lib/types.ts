@@ -66,9 +66,9 @@ export interface BlogFrontmatter {
   ilgiliSite?: string;
   faq?: { soru: string; cevap: string }[];
   /** true → sayfa yayında kalır ama noindex olur ve sitemap'e girmez.
-   * Özgün kararı (2026-07-31): Türkiye genelinden alakasız tık/telefon çeken
-   * bilgi sayfaları aramadan çekilir; müşteriye linkle gösterilmeye devam
-   * eder (ilk örnek: emlakci-yetki-belgesi-sorgulama — TTBS sorguları). */
+   * Türkiye genelinden alakasız trafik çeken bilgi sayfaları için genel
+   * mekanizma. Şu an hiçbir yazıda etkin değil — ilk kullanıcısı olan TTBS
+   * yazısı 2026-07-31'de tamamen silindi (301 → doğru emlakçı seçimi). */
   dizinDisi?: boolean;
 }
 

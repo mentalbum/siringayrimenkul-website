@@ -22,6 +22,15 @@ const nextConfig: NextConfig = {
         destination: "https://g.page/r/CYTc7nWjtnEoEBM/review",
         permanent: false,
       },
+      // TTBS/yetki belgesi yazısı tamamen silindi (2026-07-31, Özgün kararı):
+      // Türkiye genelinden alakasız trafik çekiyordu, müşteri değeri yoktu.
+      // Eski URL en yakın varisine gidiyor; e-Devlet sorgulama notu ve belge
+      // numarası o yazıya taşındı.
+      {
+        source: "/blog/emlakci-yetki-belgesi-sorgulama",
+        destination: "/blog/evinizi-satarken-dogru-emlakci-secimi",
+        permanent: true,
+      },
       // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
       // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
       // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.

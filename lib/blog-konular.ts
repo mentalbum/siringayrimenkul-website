@@ -28,7 +28,6 @@ const KONULAR: Record<string, BlogKonu> = {
   "eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama": "satis",
   "emlakciya-vekalet-verme-rehberi": "satis",
   "emlakci-yetki-sozlesmesi-rehberi": "satis",
-  "emlakci-yetki-belgesi-sorgulama": "satis",
   "evinizin-degerini-nasil-ogrenebilirsiniz": "satis",
   "eryamanda-ev-fiyatlarini-ne-belirler": "satis",
   // İki yolun ortasındaki karar yazısı — satış grubunda listeleniyor.

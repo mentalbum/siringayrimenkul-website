@@ -992,6 +992,9 @@ TTBS/yetki-belgesi sorguları Türkiye genelinden alakasız tık + telefon arama
 ## GERİ ALMA (2026-07-31 akşam): yetki belgesi yazısı yeniden dizinde
 Özgün noindex kararını aynı gün geri aldı: "görüntülenmelerimiz düşmesin." Sayfa tekrar index+sitemap'te (commit d17d4e2); dizinDisi mekanizması kodda duruyor ama hiçbir yazıda etkin değil. KURAL: bundan sonra hiçbir sayfayı aramadan çekme önerme (ada sayfaları eski kararı hariç).
 
+## TTBS yazısı TAMAMEN silindi (2026-07-31 gece, Özgün kararı — geri almanın geri alınması)
+Reklam-eşdeğeri analizde TTBS sorgularının müşteri değeri sıfır çıktı; Özgün "gösterimler düşmesin" kuralını bu sayfa için bilerek deldi: "ttbs hikayesi... tamamen silelim, gereksiz bir hit alıyor." Yapılan: mdx silindi, blog-konular'dan çıkarıldı, komisyon + emlakçı seçimi yazılarındaki iç linkler düz metne çevrildi (belge no 0603771 ve e-Devlet sorgulama notu emlakçı seçimi yazısına taşındı), 301 → /blog/evinizi-satarken-dogru-emlakci-secimi. dizinDisi bayrağı kodda duruyor, kullanan yazı yok.
+
 ## İlk sayfa harekâtı (2026-07-31) — "mahalle/site + emlakçı" SERP taraması ve paket
 Canlı Google taraması (Özgün'ün Chrome'u, 27 sorgu):
 - **Siteler: 12/12 İLK SAYFADA** (6'sı 1. sıra; ort ~1,8): aktürk sitesi 3, aktürk blokları 1, selvi 2, sümeyra-2 2, göksu hisar 1, koz modern 1, twin towers 2, mavi bayrak 1, bahçen 4, özkardeşler 1, armoni life 1, kardelen 2. Bu sınıf kazanılmış durumda.
