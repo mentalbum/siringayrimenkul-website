@@ -32,7 +32,21 @@ import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
-import { bulunmaHali } from "@/lib/turkce";
+import { bulunmaHali, tamlayanHali } from "@/lib/turkce";
+
+// Komşu sayfalara ÇEŞİTLENMİŞ anchor kalıpları: hedef sayfa her yerden aynı
+// "site adı" metniyle değil, farklı arama kalıplarıyla bağ alsın (Zyppy 23M iç
+// bağlantı çalışması — anchor çeşitliliği trafikle korele; 1. sıra araştırması
+// A2, defter 2026-07-31). Kalıp seçimi sayfa slug'ına göre kayar ki aynı komşu
+// her sayfadan aynı kalıbı almasın.
+const ANCHOR_KALIPLARI: ((ad: string) => string)[] = [
+  (ad) => `${bulunmaHali(ad)} satılık daire`,
+  (ad) => `${bulunmaHali(ad)} kiralık daire`,
+  (ad) => `${ad} emlakçısı`,
+  (ad) => `${bulunmaHali(ad)} emlak danışmanlığı`,
+  (ad) => `${bulunmaHali(ad)} daire değerleme`,
+  (ad) => `${tamlayanHali(ad)} güncel piyasası`,
+];
 
 type Props = {
   params: Promise<{ mahalle: string; site: string }>;
@@ -80,8 +94,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalleKisaIsim(mahalle)} Eryaman`
           : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | Eryaman`
         : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalle.isim}`,
+    // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
+    // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
+    // (1. sıra araştırması A1, defter 2026-07-31).
     description: truncateForMeta(
-      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin (TTBS No ${siteConfig.yetkiBelgeNo}). Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
@@ -566,6 +583,23 @@ export default async function SitePage({ params }: Props) {
               ? `Komşu Siteler — ${mahalle.isim}`
               : `${mahalle.isim}'ndeki Diğer Siteler`}
           </h2>
+          {/* Kartlardan ÖNCE gelir: Google sayfadaki İLK anchor'ı esas alır,
+              varyantlı metin kart başlığının yalın adına baskın çıksın. */}
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-muted">
+            Çevredeki sitelerde de aynı yerel uzmanlıkla çalışıyoruz:{" "}
+            {digerSiteler.map((item, i) => (
+              <span key={item.slug}>
+                {i > 0 && (i === digerSiteler.length - 1 ? " ve " : ", ")}
+                <Link
+                  href={`/mahalleler/${item.mahalleSlug}/${item.slug}`}
+                  className="text-gold-dark hover:underline"
+                >
+                  {ANCHOR_KALIPLARI[(i + site.slug.length) % ANCHOR_KALIPLARI.length](item.isim)}
+                </Link>
+              </span>
+            ))}
+            .
+          </p>
           <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {digerSiteler.map((item, i) => (
               <Reveal key={item.slug} delay={(i % 3) * 60} className="h-full">

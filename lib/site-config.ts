@@ -7,6 +7,9 @@ export const siteConfig = {
   description:
     "Eryaman emlakçısı Şirin Gayrimenkul — 700'den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
+  // Taşınmaz Ticareti Yetki Belgesi — meta description güven öğesi ve görünür
+  // künyelerde tek kaynak (footer/yazar kartındaki eski hardcode'larla aynı no).
+  yetkiBelgeNo: "0603771",
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",
   whatsappUrl: process.env.NEXT_PUBLIC_WHATSAPP_URL ?? "https://wa.me/905323639660",
