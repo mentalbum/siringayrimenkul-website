@@ -991,3 +991,13 @@ TTBS/yetki-belgesi sorguları Türkiye genelinden alakasız tık + telefon arama
 
 ## GERİ ALMA (2026-07-31 akşam): yetki belgesi yazısı yeniden dizinde
 Özgün noindex kararını aynı gün geri aldı: "görüntülenmelerimiz düşmesin." Sayfa tekrar index+sitemap'te (commit d17d4e2); dizinDisi mekanizması kodda duruyor ama hiçbir yazıda etkin değil. KURAL: bundan sonra hiçbir sayfayı aramadan çekme önerme (ada sayfaları eski kararı hariç).
+
+## İlk sayfa harekâtı (2026-07-31) — "mahalle/site + emlakçı" SERP taraması ve paket
+Canlı Google taraması (Özgün'ün Chrome'u, 27 sorgu):
+- **Siteler: 12/12 İLK SAYFADA** (6'sı 1. sıra; ort ~1,8): aktürk sitesi 3, aktürk blokları 1, selvi 2, sümeyra-2 2, göksu hisar 1, koz modern 1, twin towers 2, mavi bayrak 1, bahçen 4, özkardeşler 1, armoni life 1, kardelen 2. Bu sınıf kazanılmış durumda.
+- **Mahalleler: 8/15 ilk sayfada** — 1. sıra: tunahan, devlet, şeker, susuz; 3: altay, yavuz selim; 9-10: güzelkent, eryaman mah. **ÇIKMAYAN 7**: göksu, yeşilova, şeyh şamil, şehit osman avcı, ata, cumhuriyet, yeni batı. Ortak desen: Türkiye'de yaygın adlar + Yenimahalle grubu (coğrafi ayrıştırma zayıf).
+- GSC teyidi: 28 günde "mahalle+emlakçı" sorgu sınıfında SIFIR gösterim satırı (yalnız "eryaman emlakçı" 5,9).
+
+Uygulanan paket (commit d7670b9): title bölge soneki (| Eryaman / | Yenimahalle Ankara), hero etiketi (Eryaman · Etimesgut · Ankara / Yenimahalle · Ankara), Service+areaServed JSON-LD, gövdeye "X Mahallesi Emlakçısı: Şirin Gayrimenkul" bölümü (NAP+yetki no+5,0 puan; SAYI YOK), anasayfa tam-adlı mahalle çapaları + "Eryaman'ın tamamı ve komşu Yenimahalle mahalleleri" düzeltmesi, iki hizmet sayfasına "Hangi Mahallelerde Çalışıyoruz?" tam-adlı köprü blokları, girisVaadi 4/4 varyantta "emlakçı".
+Denetim workflow'u (17 sayfa) 4 hata yakalattı → düzeltildi: bulunmaHali "Göksu'nda"→"Göksu'da" (IYELIK_DEGIL istisnası), anasayfa rozeti "5.0 · 377 Google Yorumu"→"5,0 · Google Yorumları" (yorum sayısı kuralı — JSON-LD reviewCount zengin sonuç için duruyor), yeniceri-kule çift ortaç, twin-towers "Eryaman bölgesinin"→"bölgenin".
+İZLEME: 2-3 hafta sonra 7 zayıf sorgu yeniden taranacak; hâlâ çıkmayan olursa sıradaki kaldıraçlar: GBP hizmet bölgesi tanımları (Özgün paneli), mahalle sayfalarına og:image, harici yerel bağlantılar.
