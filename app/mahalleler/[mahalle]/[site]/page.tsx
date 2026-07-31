@@ -64,13 +64,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // "X daire fiyatları", "X emlakçı") başlıkta birebir karşılansın; açıklama
   // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
   return {
-    // Autocomplete kalıbı "eryaman <site adı> satılık daire" biçiminde geliyor;
-    // başlık da o sırayı izlesin (adında Eryaman geçenlerde tekrar etmeden).
+    // Hedef sorgu biçimi Özgün'ün kararıyla (2026-07-31) YALIN ve BAŞTA:
+    // insanlar "aktürk sitesi emlakçı" diye arıyor — tam dizi başlığın ilk
+    // kelimeleri. Bölge soneki coğrafi ayrıştırma için (mahalle şablonuyla
+    // aynı desen); adında Eryaman geçen sitelerde tekrarlanmaz.
     title: isimdeEryamanVar
-      ? `${site.isim} Satılık Daire ve Kiralık Daire — Yerel Emlakçısı`
+      ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire`
       : eryamanda
-        ? `Eryaman ${site.isim} Satılık Daire ve Kiralık Daire — Emlakçısı`
-        : `${site.isim} Satılık Daire ve Kiralık Daire — ${mahalle.isim} Emlakçısı`,
+        ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire | Eryaman`
+        : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalle.isim}`,
     description: truncateForMeta(
       `${bulunmaHali(site.isim)} eviniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
