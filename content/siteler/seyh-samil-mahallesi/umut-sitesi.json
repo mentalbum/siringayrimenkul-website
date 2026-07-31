@@ -7,7 +7,7 @@
     "lng": 32.6340602
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/umut-sitesi-boundary.geojson",
-  "aciklama": "Umut Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Umut'un blokları yerel kayıtlarda 6-1 ve 6A-2 olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Akkent, Melis ve Serender siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 27.864 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Umut Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Umut'un blokları yerel kayıtlarda 6-1 ve 6A-2 olarak geçer — iki blok. Aynı adayı paylaştığı komşuları arasında Akkent, Melis ve Serender siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 27.864 m²'lik kat mülkiyetli tek parseldir. Yerel emlak dizini kayıtlarına göre 6-1 blok 2007 yapımıdır; 10 katlı blokta 20 daire bulunur ve daireler yaklaşık 117 m² büyüklüğünde 3+1 plan tipinde, kombi doğalgazlıdır. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46488",
@@ -15,14 +15,16 @@
     }
   ],
   "ozellikler": [
-    "Iki blok kooperatif sitesi",
+    "İki blok kooperatif sitesi",
     "Ada parseli ~27.864 m², kat mülkiyetli (TKGM)",
     "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
     "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
-    "Şeyh Şamil — kadastroda Eryaman kaydı"
+    "Şeyh Şamil — kadastroda Eryaman kaydı",
+    "6-1 blok: 2007 yapımı, 10 kat, 20 daire (yerel dizin)",
+    "6-1 blokta 3+1, yaklaşık 117 m² daireler; kombi doğalgaz"
   ],
   "alternatifAdlar": [
     "Umut 92 Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

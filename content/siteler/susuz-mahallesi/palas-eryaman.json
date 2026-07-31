@@ -7,7 +7,7 @@
     "lng": 32.64062
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/palas-eryaman-boundary.geojson",
-  "aciklama": "Palas Eryaman, Susuz'un Göksu kentsel gelişim bölgesinde 23 katıyla bölge silüetinin en yüksek yapıları arasında yer alan modern bir konut yapısıdır. TKGM kayıtlarına göre kat mülkiyetli parselde tapu kaydı yapıyı '23 Katlı Betonarme Mesken' olarak tanımlar; aynı yerleşim adasını Lilyum Sitesi ile paylaşır. Üst katlar gelişim aksına ve göl yönüne çok geniş bir görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Palas Eryaman, Susuz'un Göksu kentsel gelişim bölgesinde 23 katıyla bölge silüetinin en yüksek yapıları arasında yer alan modern bir konut yapısıdır. TKGM kayıtlarına göre kat mülkiyetli parselde tapu kaydı yapıyı '23 Katlı Betonarme Mesken' olarak tanımlar; aynı yerleşim adasını Lilyum Sitesi ile paylaşır. Üst katlar gelişim aksına ve göl yönüne çok geniş bir görüş sunar. Proje, Özşeker Grup bünyesindeki Özşeker İnşaat tarafından geliştirilmiştir; geliştiricinin tanıtımına göre tek yüksek katlı blokta tamamı 4+1 olan 83 daire bulunur ve projede süs havuzu, fitness alanı, sosyal tesis, kapalı ve açık otopark, akıllı ev sistemleri ile yerden ısıtma yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63360",
@@ -18,10 +18,13 @@
     "~10.388 m² parsel (TKGM)",
     "23 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Göksu kentsel gelişim bölgesi"
+    "Göksu kentsel gelişim bölgesi",
+    "Tek blokta 83 daire (geliştirici tanıtımı)",
+    "Tamamı 4+1 daireler (geliştirici tanıtımı)",
+    "Özşeker İnşaat projesi"
   ],
   "alternatifAdlar": [
     "Palas Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

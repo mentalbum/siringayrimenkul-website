@@ -7,7 +7,7 @@
     "lng": 32.6198898
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/beyaz-residence-boundary.geojson",
-  "aciklama": "Beyaz Residence, Eryaman Mahallesi'nde 11 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 4.942 m²'lik parselde tapu kaydı yapıyı '11 Katlı Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Tek blok ölçeği yönetimi yalın tutar; adıyla uyumlu sade, modern bir profil sunar ve mahallenin bilinen yeni nesil adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Beyaz Residence, Eryaman Mahallesi'nde 11 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 4.942 m²'lik parselde tapu kaydı yapıyı '11 Katlı Betonarme Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Tek blok ölçeği yönetimi yalın tutar; adıyla uyumlu sade, modern bir profil sunar ve mahallenin bilinen yeni nesil adreslerindendir. Proje kayıtlarına göre yapı, Özdemir İnşaat tarafından 2015-2017 döneminde inşa edilmiş olup mimari tasarımı Evren Yiğit imzası taşır; tek blokta 64 daire ile 9 dükkan yer alır ve daireler ağırlıklı olarak 1+1 ve 2+1 tiplerindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45794",
@@ -17,10 +17,12 @@
   "ozellikler": [
     "11 katlı yapı (tapu)",
     "~4.942 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)"
+    "Kat mülkiyetli parsel (TKGM)",
+    "64 daire + 9 dükkan (proje kayıtları)",
+    "Özdemir İnşaat yapısı, 2015-2017 (proje kayıtları)"
   ],
   "alternatifAdlar": [
     "Beyaz Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

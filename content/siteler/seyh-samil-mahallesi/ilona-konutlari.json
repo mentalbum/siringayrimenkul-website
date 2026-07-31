@@ -7,7 +7,7 @@
     "lng": 32.6285104
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/ilona-konutlari-boundary.geojson",
-  "aciklama": "İlona Konutları, Şeyh Şamil Mahallesi'nde 14'er katlı ikiz bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A ve B Bloklardan Oluşan Betonarme Apartman' niteliğiyle kayıtlı 14.810 m²'lik kat mülkiyetli parsel üzerine kuruludur — iki bloğa karşılık yaklaşık 15 dönümlük parsel, açık alan payını cömert tutar. Üst katlarda mahalleye geniş görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İlona Konutları, Şeyh Şamil Mahallesi'nde 14'er katlı ikiz bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A ve B Bloklardan Oluşan Betonarme Apartman' niteliğiyle kayıtlı 14.810 m²'lik kat mülkiyetli parsel üzerine kuruludur — iki bloğa karşılık yaklaşık 15 dönümlük parsel, açık alan payını cömert tutar. Üst katlarda mahalleye geniş görüş vardır. Proje tanıtımlarına göre site Ser Grup imzası taşır; iki blokta toplam 104 daire bulunur ve dairelerin tamamı geniş 4+1 plana sahiptir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46264",
@@ -16,13 +16,16 @@
   ],
   "ozellikler": [
     "~14.810 m² parsel (TKGM)",
-    "1-14 kat aralığında bloklar (tapu kaydı)",
+    "14 katlı ikiz bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "Toplam 104 daire (proje tanıtımı)",
+    "Tamamı 4+1 daireler (proje tanıtımı)",
+    "Ser Grup projesi",
     "Şeyh Şamil Mahallesi"
   ],
   "alternatifAdlar": [
     "İlona Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -2,7 +2,7 @@
   "isim": "Kent Konakları Sitesi",
   "slug": "kent-konaklari-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
-  "aciklama": "Kent Konakları Sitesi, Eryaman Mahallesi'nde beş bloklu, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Blok Kargir Apartman' niteliğiyle kayıtlı 24.135 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — beş bloğa karşılık 24 dönümlük parsel, mahallenin en ferah yerleşim düzenlerinden birini oluşturur. Adındaki konak vurgusu, geniş ve oturaklı yerleşim düzeninde karşılığını bulur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kent Konakları Sitesi, Eryaman Mahallesi'nde beş bloklu, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Blok Kargir Apartman' niteliğiyle kayıtlı 24.135 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — beş bloğa karşılık 24 dönümlük parsel, mahallenin en ferah yerleşim düzenlerinden birini oluşturur. Adındaki konak vurgusu, geniş ve oturaklı yerleşim düzeninde karşılığını bulur. Site, TOKİ arsa tahsisiyle yürütülen Eryaman Evleri Projesi kapsamında, ERYAMAN-KOOP çatısı altındaki S.S. Kent Konakları Konut Yapı Kooperatifi eliyle hayata geçirilmiştir; birliğin resmi kayıtlarına göre bloklar tünel kalıp sistemle inşa edilmiş, anahtar teslimleri Eylül 2004, tapu teslimleri ise Ekim 2005 olarak gerçekleşmiştir. Yerel emlak dizini kayıtlarına göre 2003 yapımlı bloklar 8 ile 15 kat arasında değişir ve sitede yaklaşık 240-250 daire yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.975966,
     "lng": 32.618559
@@ -19,7 +19,11 @@
     "~24.135 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Evleri bölgesi",
+    "Yaklaşık 240-250 daire (yerel dizin)",
+    "2003 yapımlı bloklar, 8-15 kat (yerel dizin)",
+    "Tünel kalıp sistem — Eryaman Evleri Projesi",
+    "Merkezi ısıtma (yerel dizin)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

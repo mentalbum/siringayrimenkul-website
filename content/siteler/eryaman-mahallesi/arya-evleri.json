@@ -7,7 +7,7 @@
     "lng": 32.610743
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/arya-evleri-boundary.geojson",
-  "aciklama": "Arya Evleri, Eryaman Mahallesi'nde A, B ve C bloklarıyla anılan bir sitedir; adasını Melis Evleri, Nadide Apartmanı ve Prestij Konutları ile paylaşır. TKGM'de sitenin parseli, yaklaşık 1.658 m²'lik alanı üzerinde A ve B bloklardan oluşan apartman niteliğiyle kayıtlıdır — paylaşımlı adanın iç içe geçmiş butik dokusunda her giriş kendi kimliğini korur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Arya Evleri, Eryaman Mahallesi'nde A, B ve C bloklarıyla anılan bir sitedir; adasını Melis Evleri, Nadide Apartmanı ve Prestij Konutları ile paylaşır. TKGM'de sitenin parseli, yaklaşık 1.658 m²'lik alanı üzerinde A ve B bloklardan oluşan apartman niteliğiyle kayıtlıdır — paylaşımlı adanın iç içe geçmiş butik dokusunda her giriş kendi kimliğini korur. Yerel emlak dizini kayıtlarına göre B Blok 2007 yapımıdır; 4 katlı blokta 3+1 planlı, yaklaşık 120 m² büyüklüğünde daireler yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45918",
@@ -19,10 +19,11 @@
     "Yaklaşık 1,7 dönümlük parsel (TKGM)",
     "Komşular: Melis Evleri, Nadide Apartmanı, Prestij Konutları",
     "Kat mülkiyetli parsel (TKGM)",
+    "B Blok: 2007 yapımı, 4 kat, 3+1 daireler (yerel dizin)",
     "Eryaman Mahallesi"
   ],
   "alternatifAdlar": [
     "Arya Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

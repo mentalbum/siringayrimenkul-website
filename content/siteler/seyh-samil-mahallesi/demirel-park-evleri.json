@@ -7,7 +7,7 @@
     "lng": 32.6254625
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/demirel-park-evleri-boundary.geojson",
-  "aciklama": "Demirel Park Evleri, Şeyh Şamil Mahallesi'nde 10'ar katlı üç bloklu, çok geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '10 Katlı A, B ve C Blok' niteliğiyle kayıtlı 19.523 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 20 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Demirel Park Evleri, Şeyh Şamil Mahallesi'nde 10'ar katlı üç bloklu, çok geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '10 Katlı A, B ve C Blok' niteliğiyle kayıtlı 19.523 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 20 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan payı bırakır. Yerel kaynaklara göre site 2007 yılında inşa edilmiştir; aynı kayıtlarda daireler 3+1 planlı ve yaklaşık 120 m² büyüklüğünde görünür. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46261",
@@ -18,10 +18,12 @@
     "~19.523 m² parsel (TKGM)",
     "10 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Şeyh Şamil Mahallesi"
+    "Şeyh Şamil Mahallesi",
+    "2007 yapımı (yerel kayıtlar)",
+    "3+1, yaklaşık 120 m² daireler (yerel kayıtlar)"
   ],
   "alternatifAdlar": [
     "Demirel Park Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }
