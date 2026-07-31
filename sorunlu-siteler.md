@@ -1014,3 +1014,7 @@ TARAMA PROGRAMI: günde 1-2 mahalle (~50-90 sorgu, insan hızında; 720'yi tek s
 ## Canlı tarama — Yeşilova (2026-07-31, baseline): 23/23 İLK SAYFADA (tam isabet)
 1.sıra (13): Address Yeşilova, Alpar, Barla, Doğan Life, Eryaman Port, Green Place, Hotki Ritm, Kardelen, Koçaklar Tower, Lowland Business, Meva Şehir, Rema Delux, Sakalar Tower · 2 (5): Anka Vega, Gökdemir Tower, Green Hill, Penta 5, Sertower · 4: Kayra Loft, Pozitif Life · 5: Lokasyon Eryaman · 8: Doğan City, May Tower
 **KÜMÜLATİF (4 mahalle, 91 kayıt): 84/91 ilk sayfada (%92), 33'ü 1. sıra.** Bugün ~156 arama yapıldı — günlük tarama burada kapandı (bot koruması). SIRADAKİ: Devlet (45) + Yavuz Selim (59'un ilk yarısı).
+
+## Canlı tarama — Devlet (2026-07-31, baseline): 41/45 ilk sayfada (%91)
+**1. sıra (23):** 4. Devlet Mah. Sitesi, Alis, Bayrak, Bilgi Sevgi Hoşgörü, Çayılkay, Demirkent, Eryaman Royal City, Gülhayat, Hotki Meydan, İlk Bahar, Mavikent, Mil-Koop, Örnek Arı, Öz Gimat, Özarda Göktürk, Sahil, Sergah, Sözova, Tes-İş, Turgut Aslan, Türkkonut İstaş, Yeşilöz, Yıldız Tatil · 2 (7): Arslanlar, Cevizlidere, Çınar, Oray, Özdenizyıldızı, Sarı Çınar, Yeni Huzur Bahçesi · 3 (10): Aşiyan, Betim, Çamdalı, Dastarlı, Denizim, Güneyce, İkizler, Mavi Köy, Selçuklu, Türkkonut Sinem · 4: Vatan · **YOK (4): Çağkent, Referans Ankara, Sedirkent, Yüceyurt**
+**KÜMÜLATİF (5 mahalle, 136 kayıt): 125/136 ilk sayfada (%92), 56'sı 1. sıra.** Çıkmayan 11'in deseni değişmedi: jenerik/çakışan adlar. SIRADAKİ: Yavuz Selim (59).
