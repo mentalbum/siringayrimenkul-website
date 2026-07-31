@@ -51,10 +51,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // H1'i, breadcrumb'ı ve gövdesi zaten tam adı kullanıyordu; eksik olan
   // tek yer başlıktı.
   const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
-  const metaIsim = alias ? `${kisaIsim} (halk arasında ${alias})` : kisaIsim;
-  // Başlık soneki: Cumhuriyet'te halk adı ("Yeni Batı"), diğerlerinde kısa ad.
-  const emlakciIsmi =
-    mahalle.slug === "cumhuriyet-mahallesi" && alias ? alias : kisaIsim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
@@ -78,12 +74,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // ya da Yenimahalle grubuydu — Google başlıkta coğrafi nitelik olmadan
     // hangi ilin mahallesi olduğunu ayıramıyor. Görünümde kesilse bile
     // sıralama sinyali başlıkta durur.
+    // "EMLAKÇI" YALIN HÂLDE VE BAŞTA (Özgün'ün hedef biçimi, 2026-07-31):
+    // insanlar "göksu mahallesi emlakçı" diye arıyor — tam dizi başlığın
+    // başında birebir geçer; iyelikli "Emlakçısı" biçimi gövdede zaten var.
     title: {
-      absolute: `${baslikIsim} Satılık ve Kiralık Daire — ${emlakciIsmi} Emlakçısı | ${
+      absolute: `${baslikIsim} Emlakçı — Satılık ve Kiralık Daire | ${
         eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
       }`,
     },
-    description: `${eryamandaMi(mahalle) ? "Eryaman " : ""}${metaIsim} emlakçısı Şirin Gayrimenkul: ${mahalle.isim}'ndeki ${sitelerParcasi}. Fiyatlar hızla değişiyor — dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -195,7 +194,7 @@ export default async function MahallePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Service",
     serviceType: "Emlak danışmanlığı — satış ve kiralama",
-    name: `${mahalle.isim} Emlakçısı — ${siteConfig.name}`,
+    name: `${mahalle.isim} Emlakçı — ${siteConfig.name}`,
     provider: organizationRef,
     url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
     areaServed: {
@@ -446,7 +445,9 @@ export default async function MahallePage({ params }: Props) {
           adlı mahallelerde ayrıştırma sinyalidir (2026-07-31 SERP bulgusu).
           Rakam kuralları: yorum sayısı yok (puan serbest), fiyat yok. */}
       <section className="mt-14 max-w-3xl">
-        <h2 className="text-xl">{mahalle.isim} Emlakçısı: Şirin Gayrimenkul</h2>
+        {/* Başlıkta yalın "Emlakçı" bilinçli: hedef sorgu dizisi birebir
+            ("göksu mahallesi emlakçı") — "Arayanlara" ile Türkçesi doğal. */}
+        <h2 className="text-xl">{mahalle.isim} Emlakçı Arayanlara: Şirin Gayrimenkul</h2>
         <p className="mt-3 text-base leading-relaxed text-body">
           {eryamandaMi(mahalle) ? (
             <>
