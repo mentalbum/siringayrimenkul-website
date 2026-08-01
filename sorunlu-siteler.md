@@ -1117,6 +1117,13 @@ Verim yeni-dönem bölgelerde belirgin yüksek (dalga 3-4: %44-46; dalga 1-2: %2
 **Elle müdahale:** Ataşehir Eryaman'da "yaklaşık 20.000 m² peyzaj" (23.733 m² parselin %84'ü — zorlama) rakamı çıkarıldı, "geniş bir bölümü" olarak yumuşatıldı; kaynak çerçevesi korundu.
 63 URL IndexNow'a bildirildi (4 partide, hepsi 200).
 
+## İndeksleme turu 2 (2026-08-01) — GSC kotası kapalı, kotasız kanallar kullanıldı
+GSC "dizine eklenmesini iste" bugün yine "Kota Aşıldı" verdi (Mia Concept denendi; Google 24 saatlik pencerede yeniliyor, dünkü 10'luk parti kotayı doldurmuş). Kotasız kanallar devreye alındı:
+1. **Sitemap yeniden gönderildi** — GSC Site Haritaları'ndan tekrar gönderim: "Son okuma tarihi 1 Ağu 2026, Başarılı, 797 sayfa" (öncesi 31 Tem). Bugünkü 63 zenginleştirmenin taze lastmod'ları Google'a bildirilmiş oldu.
+2. **32 dizinsiz URL IndexNow'a** yeniden bildirildi (Bing/Yandex anında; HTTP 200). Liste: scratchpad/dizinsiz32.json.
+3. **İç bağlantı denetimi (kotasız kaldıraç kontrolü):** canlı HTML'de linkler Google'ın görebileceği biçimde basılıyor — /siteler 517 link (kalan 203 Yenimahalle grubu /siteler/yenimahalle'de; 517+203=720 ✓), ŞOA mahalle sayfasında 68 link ve dizinsiz 6 markalı kaydın (Mia Concept, Güngörler, Bossphorus, Göldekent, Ahikent, Üçyıldız) hepsi mevcut. **Yani keşif sorunu YOK — darboğaz sadece tarama bütçesi.** Teşhis üçüncü kez doğrulandı.
+SONRAKİ ADIM: kota yenilenince öncelik sırasıyla 10'ar istek (markalı adlar önce: Mia Concept, Güngörler Tower, Bossphorus, Göldekent, Ahikent, Üçyıldız, Başak Life, Çağ Life, Ataköy, Botanik Park → sonra jenerikler).
+
 ## alternatifAdlar süpürmesi UYGULANDI (2026-07-31, commit 2d31442)
 330 kayda tek güvenli varyant sınıfı eklendi: tür soneki değişimi → "Aktürk Blokları" tipine "X Sitesi", soneksizlere (Motto Göksu) "İsim + Sitesi", sayılılara doğal biçim ("Elit Yaşam Konutları 3" → "Elit Yaşam 3 Sitesi"). Başka kaydın GERÇEK adıyla çakışan 11 üretim atlandı (yamyamlık koruması — "Aktürk Sitesi" zaten ayrı kayıt). "Sitesi/Site" ile biten ~380 kayda üretim yapılmadı (arama substring'i zaten eşleşir; ters yön uydurma olurdu). Kullanım: site içi arama eşleşmesi + JSON-LD alternateName + keywords meta; dev'de doğrulandı, 330 URL IndexNow (200). Envanter: 720 kaydın 494'ünde artık alternatifAdlar dolu.
 
