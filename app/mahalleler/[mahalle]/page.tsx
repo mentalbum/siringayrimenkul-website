@@ -507,12 +507,15 @@ export default async function MahallePage({ params }: Props) {
                   </Link>
                 </h3>
                 <div className="mt-3 flex flex-wrap gap-2">
+                  {/* Ada rozetleri doğrudan SİTE sayfasına gider — ada sayfaları
+                      2026-08-01'de site sayfasına yönlendirildi, araya bir
+                      yönlendirme adımı koymanın anlamı yok. */}
                   {adalar
                     .filter((ada) => ada.etap === etap)
                     .map((ada) => (
                       <Link
                         key={adaRouteKey(ada)}
-                        href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
+                        href={`/mahalleler/${mahalle.slug}/${ada.site.slug}`}
                         title={ada.site.isim}
                         className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
                       >

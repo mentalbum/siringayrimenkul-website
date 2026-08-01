@@ -430,18 +430,19 @@ export default async function SitePage({ params }: Props) {
               ))}
             </ul>
           )}
+          {/* Parsel künyesi — bilgi olarak durur, bağlantı DEĞİL. Ada sayfaları
+              2026-08-01'de site sayfasına yönlendirildi (next.config.ts); buradan
+              link vermek ziyaretçiyi aynı sayfaya geri döndürürdü. */}
           {site.adalar && site.adalar.length > 0 && (
             <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
               {site.adalar.map((ada) => (
-                <Link
+                <span
                   key={adaRouteKey(ada)}
-                  href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
-                  className="flex cursor-pointer items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                  className="flex items-center gap-1.5 rounded-xl border border-border px-3 py-2 text-sm text-body"
                 >
                   {adaDisplayLabel(ada)} Ada
                   {ada.blok ? ` (${ada.blok})` : ""}
-                  <ArrowRightIcon className="h-3.5 w-3.5 shrink-0" />
-                </Link>
+                </span>
               ))}
             </div>
           )}
