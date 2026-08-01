@@ -47,14 +47,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
-  // Ev sahibinin gerçek arama kalıpları ("17666 ada satılık daire", "46508 ada
-  // kiralık") başlıkta birebir karşılansın — site sayfalarındaki vitrin dili.
+  // Başlıkta ÖNCE site adı, sonra ada numarası (Özgün kararı, 2026-08-01):
+  // "46512/9 Ada — Su Damlası Sitesi" biçiminde arama sonucunda çıkan sayfa,
+  // hangi yerleşimden söz ettiğini ancak satırın sonunda söylüyordu. Ada
+  // numarasını kimse ezbere bilmez, site adını herkes bilir — sıralama
+  // tersine çevrildi, sayfa ilk bakışta tanınsın. Ada numarası başlıkta
+  // kalır: "17666 ada satılık daire" tipi aramalar da karşılansın.
   return {
     title:
       entries.length > 1
-        ? `${label} Ada Satılık ve Kiralık Daireler — ${mahalle.isim} | ${ustBolgeEtiketi(mahalle)} Emlakçısı`
-        : `${label} Ada Satılık ve Kiralık Daireler — ${ada.site.isim} | ${ustBolgeEtiketi(mahalle)} Emlakçısı`,
-    description: `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
+        ? `${mahalle.isim} ${label} Ada — Satılık ve Kiralık Daireler | ${ustBolgeEtiketi(mahalle)} Emlakçısı`
+        : `${ada.site.isim} ${label} Ada — Satılık ve Kiralık Daireler | ${ustBolgeEtiketi(mahalle)} Emlakçısı`,
+    description:
+      entries.length > 1
+        ? `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+        : `${ada.site.isim} ${label} Ada'da daireniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
     // Ölçülen gerçek: 777 ada sayfası 3 ayda 0 tıklama / 0 gösterim aldı — kimse
     // "17312 ada" diye aramıyor. Aynı dönemde 727 site sayfasının 329'u hiç
@@ -73,6 +80,9 @@ export default async function AdaPage({ params }: Props) {
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
+  // Sayfa boyunca tek bir ad: "Su Damlası Sitesi 46512/9 Ada". Paylaşımlı
+  // parselde tek bir site adı olmadığı için sade ada etiketi kullanılır.
+  const adaEtiketi = entries.length > 1 ? `${label} Ada` : `${ada.site.isim} ${label} Ada`;
   const dogrulanmisEtap = adaOnayliEtap(ada.no);
   const tumAdalar = getAllAdalar(mahalleSlug);
   const ayniEtapMap = new Map(
@@ -147,7 +157,9 @@ export default async function AdaPage({ params }: Props) {
             </>
           )}
         </p>
-        <h1 className="mt-2 text-3xl sm:text-4xl">{label} Ada</h1>
+        {/* Sayfa başlığı da site adıyla açılır — ziyaretçi hangi yerleşime
+            baktığını ilk satırda görsün (bkz. generateMetadata notu). */}
+        <h1 className="mt-2 text-3xl sm:text-4xl">{adaEtiketi}</h1>
       </header>
 
       <div className={`mt-8 grid gap-8 ${ada.site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
@@ -245,7 +257,7 @@ export default async function AdaPage({ params }: Props) {
 
       <CtaBanner
         className="mt-12"
-        baslik={`${label} Ada'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
+        baslik={`${adaEtiketi}'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton
@@ -259,7 +271,7 @@ export default async function AdaPage({ params }: Props) {
             tıklanabilir olması şart. */}
         <TrackedCtaLink
           href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
-            `Merhaba! ${label} Ada (${mahalle.isim}) — buradaki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
+            `Merhaba! ${adaEtiketi} (${mahalle.isim}) — buradaki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
           )}`}
           gaEvent="ada_whatsapp_cta"
           variant="outline-light"
@@ -317,7 +329,7 @@ export default async function AdaPage({ params }: Props) {
       )}
 
       <FaqSection
-        title={`${label} Ada Hakkında Sık Sorulan Sorular`}
+        title={`${adaEtiketi} Hakkında Sık Sorulan Sorular`}
         items={getAdaFaq(label, entries, mahalle)}
       />
     </div>
