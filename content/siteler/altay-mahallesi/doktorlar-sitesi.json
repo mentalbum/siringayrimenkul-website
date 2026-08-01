@@ -7,7 +7,7 @@
     "lng": 32.647822
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/doktorlar-sitesi-boundary.geojson",
-  "aciklama": "Doktorlar Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları iki komşu adaya yayılan yerleşik bir sitedir; yerel kayıtlarda İlbeyli ve İsmail Engin apartmanları ile numaralı bloklar (4, 5, 70-74 serisi) sitenin adıyla anılır. TKGM'de sitenin ana parseli, yaklaşık 2.616 m²'lik alanı üzerinde '2 bloklu kargir apartman' niteliğiyle kayıtlıdır; komşu adada İzgi Park, Palmiye ve Pembe Rüya ile iç içe bir doku paylaşılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Doktorlar Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları iki komşu adaya yayılan yerleşik bir sitedir; yerel kayıtlarda İlbeyli ve İsmail Engin apartmanları ile 4 ve 5 numaralı bloklar sitenin adıyla anılır. Ana parselin bulunduğu ada üzerindeki 70A ve 72B kapı numaralı bloklar ise komşu İlbeyi Sitesi'ne aittir; adların ve kapı numaralarının yakınlığı yüzünden bu iki site ilan kayıtlarında sık sık birbirine karışır. TKGM'de sitenin ana parseli, yaklaşık 2.616 m²'lik alanı üzerinde '2 bloklu kargir apartman' niteliğiyle kayıtlıdır; komşu adada İzgi Park, Palmiye ve Pembe Rüya ile iç içe bir doku paylaşılır. Yerel konut rehberi kayıtlarına göre sitenin numaralı iki bloğu 2008 yapımıdır; bunlardan biri dört katlı ve on daireli, diğeri beş katlı ve on iki dairelidir. Aynı kayıtlarda dairelerin tamamı 3+1 planlı, ortalama büyüklükleri 130 m² dolayında ve ısıtma sistemi doğalgaz kombi olarak geçer — yani aynı sitenin blokları birbirinden farklı bir stok sunar, bu da blok bazında değer farkı anlamına gelir. Ankara'da Yavuz Selim Mahallesi'nde de aynı adı taşıyan ayrı bir site vardır; bu sayfadaki yerleşim Altay Mahallesi, Etimesgut sınırlarındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45890",
@@ -19,7 +19,14 @@
     "İlbeyli ve İsmail Engin apartmanları",
     "Komşular: İzgi Park, Palmiye, Pembe Rüya",
     "Kat mülkiyetli parsel (TKGM)",
+    "Numaralı bloklar 2008 yapımı (yerel kayıt)",
+    "4 katlı 10 daireli ve 5 katlı 12 daireli bloklar (yerel kayıt)",
+    "Daireler 3+1, ortalama 130 m² (yerel kayıt)",
+    "Isıtma: doğalgaz kombi (yerel kayıt)",
     "Altay — Eryaman Evleri kuşağı"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "alternatifAdlar": [
+    "Eryaman Doktorlar Sitesi"
+  ],
+  "zenginlestirildi": "2026-08-01"
 }

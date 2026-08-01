@@ -7,7 +7,7 @@
     "lng": 32.647242
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/vatan-sitesi-boundary.geojson",
-  "aciklama": "Vatan Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları birden çok adaya yayılan bir sitedir; apartmanları ağaç ve çiçek adları taşır: Çınar, Defne ve komşu adadaki Menekşe. TKGM'de sitenin ana parseli, yaklaşık 3.375 m²'lik alanı üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır. Eryaman Evleri kuşağının yeşili bol, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Vatan Sitesi, Altay Mahallesi'nin Eryaman Evleri kuşağında, blokları birden çok adaya yayılan bir sitedir; apartmanları ağaç ve çiçek adları taşır: Çınar, Defne ve komşu adadaki Menekşe. Yerel konut rehberi kayıtlarına göre her üç blok da 2005 yapımıdır; Çınar 58A ve Defne 58B dokuzar katlıdır, birinde 18, diğerinde 36 daire bulunur — ikisi birlikte 54 daire eder. Aynı kayıtlar daireleri 3+1 ve ortalama 130 m² olarak tarif eder, ısınma ise bireysel doğalgaz kombidir. TKGM'de sitenin ana parseli, yaklaşık 3.375 m²'lik alanı üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır. Etimesgut'ta aynı adı taşıyan başka yerleşimler de vardır — Devlet Mahallesi'nde ve Türkkonut metro bölgesinde ayrı birer Vatan Sitesi kayıtlıdır; buradaki site Altay Mahallesi'ndedir. Eryaman Evleri kuşağının yeşili bol, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45895",
@@ -16,10 +16,14 @@
   ],
   "ozellikler": [
     "Apartmanlar ağaç/çiçek adlı: Çınar, Defne, Menekşe",
+    "Çınar ve Defne 9'ar katlı, 2005 yapımı (yerel kayıt)",
+    "Bloklarda 18 ve 36 daire — birlikte 54; 3+1, ortalama 130 m² (yerel kayıt)",
+    "Bireysel doğalgaz kombi ısıtma (yerel kayıt)",
     "Ana parselde 2 blok — tapu nitelik kaydı (TKGM)",
     "Bloklar birden çok adada",
+    "Devlet Mahallesi'ndeki Vatan Sitesi'nden ayrı yerleşim",
     "Kat mülkiyetli parsel (TKGM)",
     "Altay — Eryaman Evleri kuşağı"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

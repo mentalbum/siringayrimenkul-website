@@ -7,7 +7,7 @@
     "lng": 32.63369
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/firat-life-style-botanik-boundary.geojson",
-  "aciklama": "Fırat Life Style Botanik, Altay Mahallesi'nde beş yüksek bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 21.906 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '1 Katlı A Blok ile 17 Katlı B, C, D, E ve F Bloklar' olarak tanımlar — tek katlı A blok sitenin ortak/ticari tabanıdır. Beş eş yüksek bloğun 22 dönüme yayılan düzeni, Fırat Life Style'ın bölgedeki proje ailesinin büyük halkalarındandır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Fırat Life Style Botanik, Altay Mahallesi'nde beş yüksek bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 21.906 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '1 Katlı A Blok ile 17 Katlı B, C, D, E ve F Bloklar' olarak tanımlar — tek katlı A blok sitenin ortak/ticari tabanıdır. Beş eş yüksek bloğun 22 dönüme yayılan düzeni, Fırat Life Style'ın bölgedeki proje ailesinin büyük halkalarındandır. Site 2668. Cadde üzerindedir; yerel dizin kayıtlarına göre B'den F'ye uzanan bloklarda toplam 864 konut yer alır ve yapılar 2013 yapımlıdır. Aynı kayıtlar daire stoğunu 25, 52-53 ve 70 m² büyüklüklerindeki 1+1 ile 2+1 kompakt planlar olarak tarif eder; ısıtma ise, çevredeki pek çok sitede görülen daire kombisinden farklı olarak merkezi sistemdir. Blok donatıları arasında asansör, güvenlik, kapıcı, jeneratör, hidrofor, su deposu, ısı ve ses yalıtımı, yangın merdiveni, otopark, oyun parkı ve bahçe sayılır; ada düzeyindeki kayıtlarda ayrıca spor alanı geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46403",
@@ -17,12 +17,17 @@
   "ozellikler": [
     "~21.906 m² parsel (TKGM)",
     "1-17 kat aralığında bloklar (tapu kaydı)",
+    "Yerel kayıtlara göre toplam 864 konut",
+    "2013 yapımı bloklar (yerel kayıt)",
+    "1+1 ve 2+1 kompakt daireler, 25-70 m² (yerel kayıt)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Güvenlik, kapıcı, jeneratör, otopark, oyun parkı (yerel kayıt)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
-    "Altay Mahallesi"
+    "2668. Cadde üzerinde — Altay Mahallesi"
   ],
   "alternatifAdlar": [
     "Fırat Life Style Botanik Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

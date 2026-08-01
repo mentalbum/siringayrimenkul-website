@@ -7,7 +7,7 @@
     "lng": 32.647799
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/ilbeyi-sitesi-boundary.geojson",
-  "aciklama": "İlbeyi Sitesi, Altay Mahallesi'nde — Eryaman'ın en eski yerleşim kuşağında — iki bloklu butik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda 'İki Blok Kargir Apartman' niteliğiyle kayıtlı 3.537 m²'lik kat mülkiyetli parsel üzerine kuruludur. İki bloklu ölçek; az komşulu, yönetimi yalın bir apartman yaşamı demektir ve bölgenin oturmuş, ağaçlı dokusunun içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İlbeyi Sitesi, Altay Mahallesi'nde — Eryaman'ın en eski yerleşim kuşağında — iki bloklu butik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda 'İki Blok Kargir Apartman' niteliğiyle kayıtlı 3.537 m²'lik kat mülkiyetli parsel üzerine kuruludur; yerel konut kayıtları da iki bloğu 70A ve 72B kapı numaralarıyla ayrı ayrı listeleyerek bu tapu niteliğini sahadan doğrular. Aynı kayıtlara göre bloklar 2002 yapımı ve 7 katlı, her blokta 14 daire bulunuyor — yani sitenin tamamı 28 daireden oluşuyor. Isıtma doğalgaz kombi ile daire başına bağımsız sağlanıyor; ortalama konut alanı yerel kayıtlarda yaklaşık 130 m² olarak geçiyor, ilanlarda ise hem geniş 3+1 hem 4+1 planlar görülüyor. İki bloklu ve 28 daireli ölçek; az komşulu, yönetimi yalın bir apartman yaşamı demektir ve bölgenin oturmuş, ağaçlı dokusunun içindedir — harita kayıtlarında site, Doktorlar Sitesi'nin bloklarıyla aynı ada üzerinde, hemen bitişiğinde görünür. İki site ayrı tapu parselleridir; Doktorlar Sitesi'nin bir bloğunun adı da 'İlbeyli' olduğu için ilan kayıtlarında sık sık karıştırılır — İlbeyi Sitesi'ni ayırt etmenin en güvenilir yolu 70A ve 72B kapı numaralarıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45890",
@@ -18,7 +18,14 @@
   "ozellikler": [
     "2 blok (tapu)",
     "~3.537 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)"
+    "Kat mülkiyetli parsel (TKGM)",
+    "Bloklar 2002 yapımı, 7 katlı (yerel kayıt)",
+    "Her blokta 14 daire — toplam 28 daire (yerel kayıt)",
+    "Doğalgaz kombi ile bağımsız ısıtma (yerel kayıt)",
+    "Ortalama konut alanı ~130 m² (yerel kayıt)",
+    "Bloklar 70A ve 72B kapı numaralı (yerel kayıt)",
+    "Doktorlar Sitesi bloklarının hemen bitişiğinde — ayrı tapu parselleri",
+    "Altay Mahallesi — Eryaman'ın en eski yerleşim kuşağı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

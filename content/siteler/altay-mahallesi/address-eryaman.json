@@ -8,7 +8,7 @@
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/address-eryaman-boundary.geojson",
   "gorsel": "/images/siteler/address-eryaman.jpg",
-  "aciklama": "Address Eryaman, Altay Mahallesi'nde Söğüt Caddesi üzerinde, 14.556 m²'lik parsel üzerinde yükselen üç bloklu bir karma yaşam projesi. Tapuda 16'şar katlı kayıtlı A, B ve C bloklarda toplam 156 daire bulunuyor; dairelerin tamamı net 163 m² büyüklüğünde 4+1 olarak tasarlandı. Blokların altındaki çarşı katında 35 ticari alan yer alıyor — market, eczane ve kafeler kapının hemen altında. Alışveriş merkezine, parklara ve buluşma alanlarına yürüme mesafesindeki konumuyla Address Eryaman, geniş daire arayanların bölgedeki ilk adreslerinden biri. Tapu kaydında yapı, betonarme ofis-işyeri niteliğiyle kayıtlıdır; karma projelerde sık görülen bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Geliştiricinin tanıtımına göre proje, ALR İnşaat Gayrimenkul tarafından hayata geçirilmiş; imalat 2019 yılında tamamlanarak oturuma açılmıştır. Bu sitede satılık veya kiralık daireniz mi var? Değerleme, doğru fiyatın ve hızlı sonucun ilk adımı; güncel ilanlarımıza sahibinden.com üzerinden ulaşabilirsiniz.",
+  "aciklama": "Address Eryaman, Altay Mahallesi'nde Söğüt Caddesi No: 8'de, 14.556 m²'lik parsel üzerinde yükselen üç bloklu bir karma yaşam projesi. Tapuda 16'şar katlı kayıtlı A, B ve C bloklarda toplam 156 daire bulunuyor; dairelerin tamamı net 163 m² büyüklüğünde 4+1 olarak tasarlandı. Blokların altındaki çarşı katında 35 ticari alan yer alıyor — market, eczane ve kafeler kapının hemen altında; harita kayıtlarında aynı kapı adresinde bir zincir kahve markasının şubesi de görünüyor, yani çarşı katı projede çizili kalmamış, fiilen işleyen bir ticaret aksına dönüşmüş. Proje tanıtımına göre sosyal donatılar arasında kapalı yüzme havuzu, fitness salonu, Türk hamamı ve sauna; açık ve kapalı çocuk oyun alanları; açık ve kapalı otopark ile bisiklet park alanı; peyzajlı ortak yeşil alan; 7/24 güvenlik, görüntülü interkom sistemi, jeneratör, paratoner ve her blokta dört asansör sayılıyor. Aynı tanıtım künyesinde yapı sistemi statik betonarme ve C30 beton olarak veriliyor. Alışveriş merkezine, parklara ve buluşma alanlarına yürüme mesafesindeki konumuyla Address Eryaman, geniş daire arayanların bölgedeki ilk adreslerinden biri; toplu taşımada en yakın duraklar da Söğüt Caddesi durakları. Tapu kaydında yapı, betonarme ofis-işyeri niteliğiyle kayıtlıdır; karma projelerde sık görülen bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Geliştiricinin tanıtımına göre proje, ALR İnşaat Gayrimenkul tarafından hayata geçirilmiş; imalat 2019 yılında tamamlanarak oturuma açılmıştır. Firma kayıtlarına göre ALR İnşaat'ın merkez adresi de aynı cadde üzerinde, sitenin hemen bitişiğindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "3 blok (A, B, C) — tapuda 16'şar kat",
     "Toplam 156 daire — tamamı 4+1, net 163 m²",
@@ -16,7 +16,14 @@
     "14.556 m² parsel",
     "Kat irtifaklı parsel (TKGM)",
     "Tapuda ofis-işyeri niteliği (karma proje)",
-    "2019 teslim (geliştirici tanıtımı)"
+    "Söğüt Caddesi No: 8 kapı adresi (yerel kayıt)",
+    "Kapalı yüzme havuzu, fitness, Türk hamamı ve sauna (geliştirici tanıtımı)",
+    "Açık ve kapalı otopark, bisiklet park alanı (geliştirici tanıtımı)",
+    "Her blokta 4 asansör, jeneratör, paratoner (geliştirici tanıtımı)",
+    "7/24 güvenlik ve görüntülü interkom (geliştirici tanıtımı)",
+    "Statik betonarme, C30 beton (tanıtım künyesi)",
+    "2019 teslim (geliştirici tanıtımı)",
+    "Altay Mahallesi — Söğüt Caddesi aksı"
   ],
   "adalar": [
     {

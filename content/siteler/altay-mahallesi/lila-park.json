@@ -7,7 +7,7 @@
     "lng": 32.6345501
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/lila-park-boundary.geojson",
-  "aciklama": "Lila Park, Altay Mahallesi'nde 11 katlı ana bloğu ve 3 katlı yan bloğuyla bir iş ve rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.067 m²'lik kat mülkiyetli parselde her iki bloğun tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksında kompakt birim ve yatırım arayanların adresidir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Lila Park, Altay Mahallesi'nde 11 katlı ana bloğu ve 3 katlı yan bloğuyla bir iş ve rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.067 m²'lik kat mülkiyetli parselde her iki bloğun tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksında kompakt birim ve yatırım arayanların adresidir. Yapı, harita ve adres kayıtlarında 2668. Cadde üzerinde görünür; Altay Mahallesi'nin batı kesiminde, konut dokusunun yoğunlaştığı hattadır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46404",
@@ -20,10 +20,11 @@
     "3-11 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "2668. Cadde üzerinde (adres kayıtları)",
     "Altay Mahallesi"
   ],
   "alternatifAdlar": [
     "Lila Park Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

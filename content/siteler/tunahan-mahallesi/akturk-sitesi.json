@@ -7,15 +7,22 @@
     "lng": 32.621433
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/akturk-sitesi-boundary.geojson",
-  "aciklama": "Aktürk Sitesi, Tunahan Mahallesi'nde yer alan, iki ayrı parsele yayılmış büyük bir kooperatif sitesidir. TKGM kayıtlarına göre ilk parsel (23.976 m²) üzerinde 15 blok ve 340 daire, ikinci parsel (19.633 m²) üzerinde 12 blok bulunuyor — toplam 27 blok; her iki parsel de tapuda kat mülkiyetli. Sitede 1+1, 2+1 ve 3+1 daire tipleri mevcut; Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki konumu günlük yaşamı kolaylaştırıyor. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin. (Not: Eryaman bölgede, Altay Mahallesi'ndeki Aktürk Blokları ayrı bir yerleşimdir; karıştırılmamalıdır.)",
+  "aciklama": "Aktürk Sitesi, Tunahan Mahallesi'nde yer alan, iki ayrı parsele yayılmış büyük bir kooperatif sitesidir. TKGM kayıtlarına göre ilk parsel (23.976 m²) üzerinde 15 blok ve 340 daire, ikinci parsel (19.633 m²) üzerinde 12 blok bulunuyor — toplam 27 blok; her iki parsel de tapuda kat mülkiyetli. Toplu yapı yönetiminin resmî ada künyelerine göre ikinci parselde 252 konut yer alıyor; iki parsel birlikte 592 konut eder — bunların 276'sı asansörlü, 316'sı asansörsüz bloklarda. Aynı künyeler her parselde üçer ısı merkezi bulunduğunu, ikinci parselin ortak alan ısıtmasının 2017'de yenilenerek 21 adet duvar tipi üniteye geçildiğini kaydediyor. Sitede 1+1, 2+1 ve 3+1 daire tipleri mevcut; Okyanus AVM, Ufuk Arslan Lisesi ve metro durağına yürüme mesafesindeki konumu günlük yaşamı kolaylaştırıyor — yerel kayıtlarda sitenin adresi Tunahan Mahallesi Üç Şehitler Caddesi olarak geçiyor ve lise de aynı cadde üzerinde. Yerel emlak kayıtlarına göre bloklar 2000 yapımı ve kat yelpazesi geniş: dört katlı sekiz daireli bloktan on beş katlı altmış daireli yüksek katlı bloğa kadar uzanıyor. Örneklenen bloklarda beş katlı asansörsüz bloklar 20 daireli (10 adet 2+1 ve 10 adet 1+1, 54-72 m²), on katlı bloklar 40 daireli (20 adet 3+1 ve 20 adet 1+1, 62-104 m²), on beş katlı bloklar ise 60 daireli (30 adet 3+1 ve 30 adet 2+1, 90-104 m²). Isıtma tüm bloklarda merkezi sistem; donatılar arasında asansör, bahçe, jeneratör, hidrofor ve su deposu, kapıcı, otopark, oyun parkı ile yangın merdiveni sayılıyor. Aktürk'te dairenizin değerini belirleyen ilk soru bu yüzden oda sayısı değil, kaç katlı blokta olduğudur: sekiz daireli sakin bir blokla altmış daireli yüksek katlı bir bloğun emsali de alıcı profili de aynı olmaz. Bir ayrıntı daha var ki satışta doğrudan görünürlük anlamına geliyor: ikinci parseldeki bloklar hem kodla hem çiçek adıyla anılıyor — Fulya, Yasemin, Orkide ve Nergis apartmanları gibi — ilk parseldeki bloklar ise yalnızca kodludur. İlanda yalnızca çiçek adı yazıldığında daire, Aktürk diye arayan alıcının karşısına çıkmayabilir; iki adı birlikte kullanmak bu kaybı önler. (Not: Eryaman bölgesinde, Altay Mahallesi'ndeki Aktürk Blokları ayrı bir yerleşimdir; karıştırılmamalıdır.) Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "Toplam 27 blok, iki parsel (~43.600 m², TKGM)",
     "İlk parselde 15 blok ve 340 daire",
+    "İkinci parselde 12 blok ve 252 konut (yerel kayıt)",
+    "Toplam 592 konut — 276'sı asansörlü blokta (yerel kayıt)",
+    "2000 yapım — bloklar dört kattan on beş kata (yerel kayıt)",
+    "Blok başına 8-60 daire; 54-104 m² aralığı (yerel kayıt)",
     "1+1, 2+1 ve 3+1 daire tipleri",
+    "Merkezi sistem ısıtma, altı ısı merkezi (yerel kayıt)",
+    "İkinci parsel blokları çift adlı: Fulya, Yasemin, Orkide, Nergis (yerel kayıt)",
     "Kat mülkiyetli parseller (TKGM)",
     "Okyanus AVM, lise ve metroya yürüme mesafesi",
-    "Tunahan — kadastroda Eryaman kaydı"
+    "Üç Şehitler Caddesi — Tunahan, kadastroda Eryaman kaydı"
   ],
+  "adres": "Üç Şehitler Caddesi, Tunahan, Eryaman/Ankara",
   "adalar": [
     {
       "no": "46499",
@@ -28,7 +35,7 @@
       "parsel": "2"
     }
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Aktürk Blokları"
   ]

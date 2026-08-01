@@ -7,7 +7,7 @@
     "lng": 32.627991
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/oztas-sitesi-boundary.geojson",
-  "aciklama": "Öztaş Sitesi (Öztaş Blokları), Tunahan Mahallesi'nde altı ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı dörtle altı arasında değişir ve toplamda 29 kârgir apartmana ulaşır; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 32.420 m². Küçük ve büyük adaların aynı kümede buluşması, daire arayanlara da satanlara da çeşitlilik sunar: daha sakin bir ada ile daha hareketli bir ada arasındaki fark, fiyata ve talebe yansır. Eczanesi, aile sağlığı merkezi ve çarşısıyla günlük ihtiyacın yürüme mesafesinde çözüldüğü bölge dokusunun içindedir; komşuları arasında Soyak, Yüksel ve Klima kümeleri sayılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Öztaş Sitesi (Öztaş Blokları), Tunahan Mahallesi'nde altı ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı dörtle altı arasında değişir ve toplamda 29 kârgir apartmana ulaşır; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 32.420 m². Küçük ve büyük adaların aynı kümede buluşması, daire arayanlara da satanlara da çeşitlilik sunar: daha sakin bir ada ile daha hareketli bir ada arasındaki fark, fiyata ve talebe yansır. Eczanesi, aile sağlığı merkezi ve çarşısıyla günlük ihtiyacın yürüme mesafesinde çözüldüğü bölge dokusunun içindedir; komşuları arasında Soyak, Yüksel ve Klima kümeleri sayılır; küme, Tunahan'ın ana akslarından Üç Şehitler Caddesi hattında yer alır. Bölgenin resmî toplu yapı yönetimi kayıtlarına göre bu 29 blokta toplam 472 konut bulunuyor ve küme neredeyse tam ortadan ikiye ayrılıyor: 232 konut asansörlü, 240 konut asansörsüz bloklarda. Yerel emlak kayıtları bu ayrımın nedenini de gösteriyor; bloklar 1998 yapımıdır ve kat yüksekliği dörtle yedi arasında değişir. Yedi katlı bir blokta 28 daire bulunur, daireler ağırlıklı olarak 3+1'dir ve konut alanları 71-88 m² arasındadır; beş katlı asansörsüz bloklarda daire sayısı 20'ye iner, giriş katlarında iki adet 2+1 yer alır; kümede ayrıca tamamı 1+1 dairelerden oluşan, dört katlı ve 16 daireli bir blok tipi vardır ve buradaki daireler 45-47 m² civarındadır. Yani aynı kümede 45 m²'lik tam bir 1+1'den 88 m²'lik bir 3+1'e uzanan geniş bir yelpaze yan yana durur; dairenizin değerini belirleyen ilk şey, hangi blokta olduğudur. Isıtma yerel kayıtlarda merkezi sistem olarak geçer; blok künyelerinde asansör, bahçe, hidrofor, jeneratör, kablo TV-uydu, kapıcı, otopark, oyun parkı, su deposu ve yangın merdiveni ortak tesis olarak sayılır, okul ve otobüs durağı ise yakın çevre işareti olarak işaretlenir. Blok adları düz sayı sistemiyle verildiği için — adalara göre 1, 2, 3, 4 ya da tek ve çift sayı dizileri — blok numarası tek başına daireyi tarif etmez; ilanlarda hangi adadaki blok olduğunun da belirtilmesi gerekir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17652",
@@ -45,10 +45,17 @@
     "Toplam ~32.420 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 4-6 apartman (TKGM)",
+    "29 blokta toplam 472 konut (yerel kayıt)",
+    "232 konut asansörlü, 240 konut asansörsüz (yerel kayıt)",
+    "1998 yapımı, 4-7 katlı bloklar (yerel kayıt)",
+    "Ağırlıklı 3+1 (71-88 m²); 2+1 ve tamamı 1+1 (45-47 m²) bloklar (yerel kayıt)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı (yerel kayıt)",
+    "Üç Şehitler Caddesi hattında (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Öztaş Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

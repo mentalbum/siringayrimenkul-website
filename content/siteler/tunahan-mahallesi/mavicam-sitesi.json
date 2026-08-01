@@ -7,7 +7,7 @@
     "lng": 32.616397
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/mavicam-sitesi-boundary.geojson",
-  "aciklama": "Maviçam Sitesi, Tunahan Mahallesi'nde yer alan büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, 38.282 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — bölgenin en geniş parsellerinden biri. Tek ve bütünlüklü parsel yapısının sakinlere yansıması nettir: ortak alanlar bölünmemiştir, yeşil doku ve iç yollar site içinde kesintisiz akar, yönetim tek çatı altındadır. Çevresinde hem bölge kooperatifleri hem de bölgenin Klima kümeleri bulunur; mahallenin iki etabının buluştuğu bu kesim, günlük yaşamda her iki tarafın çarşı ve okul imkânlarına erişim sağlar. Geliştiricinin tanıtımına göre yerleşim, Ahsen İnşaat'ın tamamlanmış işleri arasında 'Eryaman Mavi Çam Sitesi' adıyla ve 142 konutluk bir proje olarak anılır — yazım ilanlarda bitişik de ayrı da geçebildiğinden arama yaparken iki biçimi de denemekte fayda var. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Maviçam Sitesi, Tunahan Mahallesi'nde yer alan büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, 38.282 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — bölgenin en geniş parsellerinden biri. Tek ve bütünlüklü parsel yapısının sakinlere yansıması nettir: ortak alanlar bölünmemiştir, yeşil doku ve iç yollar site içinde kesintisiz akar, yönetim tek çatı altındadır. Yerel emlak kayıtlarına göre yerleşim, 12 ve 12A'dan 12I'ya kadar kodlanmış on bloktan oluşur; bloklar 2006 yapımıdır ve dokuz kattan on dört kata kadar kademelenir. Daire dokusu tek tiptir: aynı kayıtlarda daireler 3+1 ve 117 m² olarak görünür, ısıtma bireysel doğalgaz kombidir. Tek tip planın ev sahibine doğrudan bir faydası vardır — burada fiyatı ayıran değişken oda sayısı değil, blok, kat, cephe ve iç durumdur; emsal karşılaştırması bu yüzden başka sitelere göre daha nettir. Ortak donatı olarak asansör, bahçe, güvenlik, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı ve yangın merdiveni sayılıyor; listede bölgede az rastlanan biçimde kreş de yer alıyor, metro durağı ise yakın çevre olarak işaretli. Çevresinde hem bölge kooperatifleri hem de bölgenin Klima kümeleri bulunur; mahallenin iki etabının buluştuğu bu kesim, günlük yaşamda her iki tarafın çarşı ve okul imkânlarına erişim sağlar. Geliştiricinin tanıtımına göre yerleşim, Ahsen İnşaat'ın tamamlanmış işleri arasında 'Eryaman Mavi Çam Sitesi' adıyla ve 142 konutluk bir proje olarak anılır; ancak bu rakam yerleşimin tamamını karşılamaz — yerel kayıtlardaki on bloğun yalnızca dördünün daire toplamı bile bu sayıyı aşıyor, dolayısıyla tanıtımın geliştiricinin ürettiği bölümü anlattığı anlaşılıyor. Ad yazımı ilanlarda bitişik de ayrı da geçebildiğinden arama yaparken iki biçimi de denemekte fayda var. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46514",
@@ -19,7 +19,12 @@
     "38.282 m² tek parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
     "Bölgenin en geniş parsellerinden",
-    "142 konut, Ahsen İnşaat (geliştirici tanıtımı)",
+    "10 blok: 12 ve 12A-12I (yerel kayıt)",
+    "2006 yapımı, 9-14 kat arası kademeli bloklar (yerel kayıt)",
+    "Daireler 3+1, 117 m² (yerel kayıt)",
+    "Bireysel doğalgaz kombi ısıtma (yerel kayıt)",
+    "Kreş, güvenlik, jeneratör, otopark, oyun parkı (yerel kayıt)",
+    "Ahsen İnşaat projesi (geliştirici tanıtımı)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [

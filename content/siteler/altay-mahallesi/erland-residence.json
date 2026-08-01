@@ -7,7 +7,7 @@
     "lng": 32.641473
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/erland-residence-boundary.geojson",
-  "aciklama": "Erland Residence, Altay Mahallesi'nde 14'er katlı ikiz bloklu bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. İki eş yüksek bloğuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Proje tanıtımlarına ve dönemin yerel haberlerine göre yapı, Hasan Turan Emtisi Grup A.Ş. tarafından geliştirilmiş; teslimler 2016 yılının Şubat ayında yapılmış ve yapı toplam 251 konut barındıracak şekilde tasarlanmıştır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Erland Residence, Altay Mahallesi'nde Söğüt Caddesi üzerinde yükselen 14 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Yüksek katlı kurgusuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Proje tanıtımlarına ve dönemin yerel haberlerine göre yapı, Hasan Turan Emtisi Grup A.Ş. tarafından geliştirilmiş; teslimler 2016 yılının Şubat ayında yapılmış ve yapı toplam 251 konut barındıracak şekilde tasarlanmıştır. Aynı tanıtımlar daire kurgusunu 58 m² 1+1, 78 m² 2+1 ve 109 m² 2+1 dubleks planlar olarak verir, toplam inşaat alanını da 32.000 m² olarak anar. Yine proje tanıtımına göre site donatıları arasında kapalı ve açık yüzme havuzu, çocuk havuzu, fitness merkezi, sauna, hamam, kafe, lobi, çocuk oyun alanları, kapalı ve açık otopark, 24 saat kameralı güvenlik, jeneratör ile su deposu bulunur; ısıtma ısı sayaçlı merkezi sistemdir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45899",
@@ -19,10 +19,15 @@
     "~10.259 m² parsel (TKGM)",
     "14 katlı yapı (tapu kaydı)",
     "Toplam 251 konut (proje tanıtımları)",
+    "1+1 58 m², 2+1 78 m², 2+1 dubleks 109 m² (proje tanıtımı)",
+    "32.000 m² inşaat alanı (proje tanıtımı)",
+    "Kapalı ve açık havuz, fitness, sauna, hamam (proje tanıtımı)",
+    "24 saat kameralı güvenlik, jeneratör, kapalı otopark (proje tanıtımı)",
+    "Isı sayaçlı merkezi ısıtma (proje tanıtımı)",
     "Şubat 2016 teslim (yerel kaynaklar)",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
-    "Altay Mahallesi"
+    "Söğüt Caddesi üzerinde — Altay Mahallesi"
   ],
   "alternatifAdlar": [
     "Erland Sitesi"

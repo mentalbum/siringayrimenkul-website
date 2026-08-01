@@ -7,7 +7,7 @@
     "lng": 32.62786
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/sarigul-sitesi-boundary.geojson",
-  "aciklama": "Sarıgül Sitesi (Sarıgül Blokları), Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir yerleşimdir. TKGM kayıtlarına göre site, tapuda \"18 Blok Kârgir Apartman\" niteliğiyle kayıtlı 35.358 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Bloklar yerel kayıtlarda A serisinden E serisine uzanan kodlarla (A1, B1, B2, B3, C1A, C1B, C3A, C3B, D1A, D2A, E1, E6 gibi) kapı numaralarıyla birlikte anılır — daire tarifi bu sistemle kolaylaşır, ilan ve emsal takibi blok bazında yapılabilir. Küme; Kur, Özar ve Sutek blokları ile çevrili, bölgenin iç kesiminde sakin bir konumdadır; Okyanus Plaza'nın çarşı aksı yürüme mesafesindedir. Toplu yapı yönetiminin resmî kayıtlarına göre 18 blokta toplam 428 konut bulunur; bunun 276 adedi asansörlü, 152 adedi asansörsüz bloklarda yer alır. Site, TOKİ eliyle yürütülen etap projeleri kapsamında inşa edilmiştir; yüklenici kayıtları etabın inşa dönemini 1998 ile 2000 yılları arası olarak gösterir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sarıgül Sitesi (Sarıgül Blokları), Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir yerleşimdir. TKGM kayıtlarına göre site, tapuda \"18 Blok Kârgir Apartman\" niteliğiyle kayıtlı 35.358 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Bloklar yerel kayıtlarda A serisinden E serisine uzanan kodlarla (A1, B1, B2, B3, C1A, C1B, C3A, C3B, D1A, D2A, E1, E6 gibi) kapı numaralarıyla birlikte anılır — daire tarifi bu sistemle kolaylaşır, ilan ve emsal takibi blok bazında yapılabilir. Küme; Kur, Özar ve Sutek blokları ile çevrili, bölgenin iç kesiminde sakin bir konumdadır; Okyanus Plaza'nın çarşı aksı yürüme mesafesindedir. Toplu yapı yönetiminin resmî kayıtlarına göre 18 blokta toplam 428 konut bulunur; bunun 276 adedi asansörlü, 152 adedi asansörsüz bloklarda yer alır. Aynı kayıt bu bölünmenin yapısal karşılığını da veriyor: 18 bloğun 8'i asansörlü, 10'u asansörsüzdür. Sarıgül bu yüzden tek tip bir yerleşim değil, iki ayrı yapı grubunun bir arada durduğu bir sitedir — ev sahibi için bunun karşılığı doğrudan emsaldir: aynı metrekare, site içinde iki farklı çizgide işlem görür. İlan kayıtlarına göre asansörlü blokların bir bölümü on dört ve on beş kat yüksekliğindedir. Yönetim kaydı ayrıca sitede beş ayrı ısı merkezi bulunduğunu ve ada yönetim odasının D2A bloğunda olduğunu gösteriyor; ısıtma merkezi doğalgazdır. İlan künyelerine göre 3+1 daireler yaklaşık 115 m² brüt / 113 m² net; sitede yaklaşık 45 m²'lik 1+1 daireler de bulunur. Harita kayıtlarında sitenin adresi Samsun 19 Mayıs Caddesi No 10 olarak geçiyor; küme 254. ve 2628. Sokak hattında yer alıyor. Yakın çevre ölçüleri de aynı kayıtlarda: Oruç Reis Parkı yaklaşık 54, Peyami Safa Parkı 265, Ufuk Arslan Anadolu Lisesi 267 ve Okyanus Plaza 315 metre mesafede; emlakçı beyanlarına göre metro istasyonu yaklaşık 200 metre uzaklıkta. Site, TOKİ eliyle yürütülen etap projeleri kapsamında inşa edilmiştir; yüklenici kayıtları etabın inşa dönemini 1998 ile 2000 yılları arası olarak gösterir. Bu sitede satılık veya kiralık daireniz mi var? Burada doğru fiyatın ilk sorusu \"kaç oda\" değil, \"asansörlü blokta mı\" olur; sonrasında kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46497",
@@ -20,6 +20,12 @@
     "18 blok kârgir apartman (tapu kaydı)",
     "A–E serisi blok kodları",
     "Toplam 428 konut (toplu yapı yönetimi kaydı)",
+    "18 bloğun 8'i asansörlü, 10'u asansörsüz (yönetim kaydı)",
+    "5 ayrı ısı merkezi — merkezi doğalgaz ısıtma",
+    "Asansörlü blokların bir bölümü 14 ve 15 kat yüksekliğinde (ilan kayıtları)",
+    "3+1 daireler ~115 m² brüt / 113 m² net; 1+1 daireler ~45 m²",
+    "Samsun 19 Mayıs Caddesi hattı; 254. ve 2628. Sokak (harita kaydı)",
+    "Oruç Reis Parkı ~54 m, Okyanus Plaza ~315 m (harita kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],

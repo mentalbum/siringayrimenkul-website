@@ -7,7 +7,7 @@
     "lng": 32.621864
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/haznedaroglu-bloklari-boundary.geojson",
-  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında, yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda üçer ve dörder apartmanlık gruplar hâlinde toplam 24 kârgir apartman bulunur; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 37.169 m². Konumu bölgenin tam kalbine denk gelir: iki Klima kümesi ve Öztaş Blokları ile çevrilidir, bölgenin kesintisiz kooperatif kuşağı burada birleşir. Geniş ada aralıkları ve oturmuş yeşiliyle bölgenin karakteristik dokusunu taşır; eczane, aile sağlığı merkezi ve 4. Etap Çarşısı mahallenin bu kesiminde günlük ihtiyacı karşılar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Haznedaroğlu Blokları, Tunahan Mahallesi'nde Eryaman'ın kooperatif kuşağında, yedi ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalarda üçer ve dörder apartmanlık gruplar hâlinde toplam 24 kârgir apartman bulunur; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 37.169 m². Bölgenin toplu yapı yönetiminin ada ada tablosuna göre bu 24 blokta toplam 558 konut vardır; kayda göre 406 konut asansörlü, 152 konut asansörsüz bloklardadır — yani küme ağırlıklı olarak asansörlüdür. Yerel emlak kayıtlarındaki blok künyeleri 1998 yapımını ve merkezi sistem ısıtmayı gösteriyor. Kümenin en dikkat çekici yanı, blokların birbirinden çok farklı ölçeklerde olması: üç katlı altı daireli küçük bloklarla sekiz katlı otuz altı daireli bloklar aynı yerleşimde yan yana durur. Daire yelpazesi de buna bağlı olarak geniştir — kayıtlarda 45 m² 1+1 daireler, 71 m² 2+1 daireler, 86-90 m² 3+1 daireler ve sekiz katlı blokların zemininde 60 m² dubleksler görünüyor. Dubleks, bölgenin kooperatif dokusunda az rastlanan bir tiptir; kendi arayanı olduğu için burada dubleks bir dairesi olanın bunu ilanında öne çıkarması işe yarar. Yerel kayıtlara göre blok adları harf ve rakamdan oluşan çift kodludur (N/4, P/8, R/8, M/3 gibi) ve koddaki rakam bloğun kat sayısını taşır — kendi bloğunun kodunu bilen bir ev sahibi dairesinin hangi blok tipinde olduğunu doğrudan buradan okuyabilir. Ortak donatı olarak asansör, bahçe, hidrofor, ısı yalıtımı, jeneratör, kapıcı, otopark, oyun parkı, su deposu ve yangın merdiveni sayılıyor; okul ve otobüs durağı yakın çevrede işaretli. Küme Üç Şehitler Caddesi'ne cephelidir ve yerel kayıtlara göre bölgenin toplu yapı yönetim ofisi de bu kümenin içindedir; aidat, ısıtma ve ortak alan işleri en yakından burada takip edilir. Konumu bölgenin tam kalbine denk gelir: iki Klima kümesi ve Öztaş Blokları ile çevrilidir, bölgenin kesintisiz kooperatif kuşağı burada birleşir. Geniş ada aralıkları ve oturmuş yeşiliyle bölgenin karakteristik dokusunu taşır; eczane, aile sağlığı merkezi ve 4. Etap Çarşısı mahallenin bu kesiminde günlük ihtiyacı karşılar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17633",
@@ -50,10 +50,17 @@
     "Toplam ~37.169 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 3-4 apartman (TKGM)",
+    "24 blokta toplam 558 konut — 406'sı asansörlü (yerel yönetim kaydı)",
+    "1998 yapımı, 3-8 kat arası bloklar (yerel kayıt)",
+    "1+1 45 m², 2+1 71 m², 3+1 86-90 m² daireler (yerel kayıt)",
+    "Sekiz katlı blokların zemininde 60 m² dubleksler (yerel kayıt)",
+    "Merkezi sistem ısıtma; asansör, jeneratör, hidrofor, su deposu (yerel kayıt)",
+    "Blok kodundaki rakam kat sayısını gösterir — N/4, P/8, R/8 (yerel kayıt)",
+    "Üç Şehitler Caddesi'ne cepheli (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Haznedaroğlu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.646875
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/arya-nuans-residence-boundary.geojson",
-  "aciklama": "Arya Nüans Residence, Altay Mahallesi'nin Eryaman Evleri kuşağında, Fırat Residence Life ile aynı yerleşim adasını paylaşan modern bir rezidans yapısıdır. Tapu kaydı yapıyı net tarif eder: TKGM'de yapı, yaklaşık 5.459 m²'lik parseli üzerinde '13 katlı ofis-işyeri' niteliğiyle kayıtlıdır — rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır; işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Arya Nüans Residence, Altay Mahallesi'nin Eryaman Evleri kuşağında, yerleşim adasını Vizyon Prestige ve Mood Street ile paylaşan modern bir rezidans yapısıdır. Tapu kaydı yapıyı net tarif eder: TKGM'de yapı, yaklaşık 5.459 m²'lik parseli üzerinde '13 katlı ofis-işyeri' niteliğiyle kayıtlıdır — rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır; işlem öncesi güncel kaydı birlikte kontrol ederiz. Geliştirici tanıtımına göre projeyi Besmak İnşaat hayata geçirmiştir ve yapı 80 konut ile 5 dükkandan oluşur; zemin katındaki ticari birimlerde market ve yeme-içme işletmeleri hizmet verir. Daire kurgusu 1+1 ve 2+1 planlardan dubleks tiplere uzanır. Tanıtım ve yerel rehber kayıtlarında ortak kullanım alanları yüzme havuzu, sauna ve buhar odası, fitness merkezi, dinlenme ve oyun alanları, açık ile kapalı otopark, asansör, güvenlik, kapıcı hizmeti ve ısı yalıtımı olarak sıralanır. Yapı adres kayıtlarında 1408. Cadde üzerinde görünür; aynı kayıtlara göre en yakın otobüs durağı yaklaşık 265 metre, Eryaman 1-2 raylı sistem istasyonu ise yaklaşık iki kilometre mesafededir. Bu yapıda satılık veya kiralık gayrimenkulünüz mü var? Doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, binayı ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45898",
@@ -17,12 +17,22 @@
   "ozellikler": [
     "13 katlı — tapu niteliği ofis-işyeri (rezidans tipi)",
     "Yaklaşık 5,5 dönümlük parsel (TKGM)",
-    "Fırat Residence Life ile aynı adada",
+    "Vizyon Prestige ve Mood Street ile aynı adada (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Besmak İnşaat projesi (geliştirici tanıtımı)",
+    "80 konut + 5 dükkan (geliştirici tanıtımı)",
+    "1+1, 2+1 ve dubleks daire tipleri (geliştirici tanıtımı)",
+    "Yüzme havuzu, sauna ve buhar odası (geliştirici tanıtımı)",
+    "Fitness merkezi, açık ve kapalı otopark (geliştirici tanıtımı)",
+    "Asansör, güvenlik, kapıcı, ısı yalıtımı (yerel kayıt)",
+    "Zemin katta market ve yeme-içme birimleri (yerel kayıt)",
+    "1408. Cadde üzerinde (adres kayıtları)",
+    "Otobüs durağı ~265 m, Eryaman 1-2 ~2 km (yerel kayıt)",
     "Altay — Eryaman Evleri kuşağı"
   ],
   "alternatifAdlar": [
-    "Arya Nüans Sitesi"
+    "Arya Nüans Sitesi",
+    "Arya Nüans Rezidans"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

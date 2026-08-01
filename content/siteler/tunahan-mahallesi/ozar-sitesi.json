@@ -7,7 +7,7 @@
     "lng": 32.622764
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/ozar-sitesi-boundary.geojson",
-  "aciklama": "Özar Sitesi (Özar Blokları), Tunahan Mahallesi'nde iki adaya yayılmış bir kooperatif sitesidir ve blokları adeta bir botanik sözlüğü gibidir: 17 apartman Cemre, Cumhuriyet, Çınar, Defne, Efes, Gardenya, Gül, Ihlamur, Lale, Manolya, Palmiye, Safran, Sahra, Söğüt, Tuna, Yağmur ve Yasemin adlarını taşır. TKGM kayıtlarına göre ilk parselde 6, ikincisinde 11 blok kayıtlı — toplam yaklaşık 37.900 m² ve her iki parsel de kat mülkiyetli; tapu blok sayısı yerel listeyle birebir örtüşüyor. Metro aksına inen Türkonut bölgesi de kümenin komşuları arasındadır. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Özar Sitesi (Özar Blokları), Tunahan Mahallesi'nde iki adaya yayılmış bir kooperatif sitesidir ve blokları adeta bir botanik sözlüğü gibidir: 17 apartman Cemre, Cumhuriyet, Çınar, Defne, Efes, Gardenya, Gül, Ihlamur, Lale, Manolya, Palmiye, Safran, Sahra, Söğüt, Tuna, Yağmur ve Yasemin adlarını taşır. TKGM kayıtlarına göre ilk parselde 6, ikincisinde 11 blok kayıtlı — toplam yaklaşık 37.900 m² ve her iki parsel de kat mülkiyetli; tapu blok sayısı yerel listeyle birebir örtüşüyor. Metro aksına inen Türkonut bölgesi de kümenin komşuları arasındadır. Yerel emlak kayıtları, bu 17 apartmanın tek tip olmadığını gösteriyor ve ev sahibi için asıl ayrım burada: kayıtlara giren blokların bir bölümü 10 katlı ve 20 daireli, daireleri tamamı 3+1 ve 130 m²; buna karşılık 15 katlı ve 60 daireli, yarısı 3+1 yarısı 2+1 olmak üzere 90-104 m² arasında daire barındıran ikinci bir blok tipi de var. Yani sitede daire büyüklüğü kabaca 90 ile 130 m² arasında değişiyor ve dairenizin hangi blok tipinde olduğu, emsal karşılaştırmasını doğrudan değiştiriyor — botanik adlarıyla anılan bloklar birbirinin aynısı değil. Aynı kayıtlara göre site 2000 yapımıdır, ısıtma merkezi sistemdir ve bloklarda asansör, otopark ile bahçe bulunur. Konum tarafında küme 241. Sokak hattında yer alır; harita kayıtlarına göre anaokulu yaklaşık 260, PTT şubesi yaklaşık 220 metre uzaklıktadır. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46500",
@@ -25,9 +25,15 @@
     "17 apartman — çiçek ve ağaç adlı (Gardenya, Manolya, Ihlamur…)",
     "Tapu kaydı ile blok listesi birebir uyumlu",
     "Kat mülkiyetli parseller (TKGM)",
+    "2000 yapımı (yerel kayıt)",
+    "10 katlı / 20 daireli blok tipi — tamamı 3+1, 130 m² (yerel kayıt)",
+    "15 katlı / 60 daireli blok tipi — 2+1 ve 3+1, 90-104 m² (yerel kayıt)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Asansör, otopark, bahçe (yerel kayıt)",
+    "241. Sokak hattı; anaokulu ~260 m, PTT şubesi ~220 m (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Özar Blokları"
   ]

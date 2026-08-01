@@ -8,7 +8,7 @@
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/okyanus-plaza-boundary.geojson",
   "gorsel": "/images/siteler/okyanus-plaza-eryaman.jpg",
-  "aciklama": "Okyanus Plaza, Tunahan Mahallesi'nde, konut ve iş merkezini bir arada barındıran karma bir yapıdır. TKGM kayıtlarına göre 12.996 m²'lik kat mülkiyetli parselde \"Betonarme Karkas Konut ve İş Merkezi\" olarak kayıtlıdır. Bölgenin fiili çarşısı burasıdır: yerel işletme kayıtlarına göre altı ayrı bankanın ATM'si, eczane ve çok sayıda dükkân plazada ve çevresinde toplanır; Aktürk, Dema Park ve çevre kooperatiflerin günlük alışverişi bu aksta çözülür. Üst katlardaki konutlar için bu konum, kapıdan çıkınca her işin halledildiği bir pratiklik demektir — hem oturum hem kiralama tarafında aranan bir özelliktir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Okyanus Plaza, Tunahan Mahallesi'nde, konut ve iş merkezini bir arada barındıran karma bir yapıdır. TKGM kayıtlarına göre 12.996 m²'lik kat mülkiyetli parselde \"Betonarme Karkas Konut ve İş Merkezi\" olarak kayıtlıdır. Bölgenin fiili çarşısı burasıdır: yerel işletme kayıtlarına göre altı ayrı bankanın ATM'si, eczane ve çok sayıda dükkân plazada ve çevresinde toplanır; Aktürk, Dema Park ve çevre kooperatiflerin günlük alışverişi bu aksta çözülür. Yapı Amasya Beyannamesi Caddesi'ne cephelidir; yerel harita kayıtlarında Samsun 19 Mayıs Caddesi cephesiyle de anılır ve Eryaman 5 metro durağının hemen yanındadır — plazadaki dükkân ilanlarına göre metro çıkışına mesafe yaklaşık 50 metredir. Çarşı işlevi ATM'lerle sınırlı değildir: komşu site yönetiminin resmî aidat duyurusunda da geçtiği üzere plazanın altında Halk Bankası'nın tam şubesi bulunur, ayrıca yapıda Yunus Market şubesi vardır — zincirin kendi mağaza listesinde adres Tunahan Mahallesi olarak kayıtlıdır. İşletmenin kendi tanıtımına göre plaza bünyesinde restoranlar, market, hırdavatçı, kuaför, petshop, kuyumcu, mandıra, optik, terzi ve tuhafiye yer alır; yapı, harita servislerinde doğrudan alışveriş merkezi kategorisinde kayıtlıdır; bağımsız bölge tanıtımlarında da Eryaman'ın sayılı çarşılarından biri olarak anılır. Yürüme mesafesindeki işaretler bu dokuyu tamamlar: yerel harita kayıtlarına göre ortaokul yaklaşık 350, anaokulu yaklaşık 340, PTT şubesi yaklaşık 300 metre uzaklıktadır; Sarıgül Sitesi'ne mesafe yaklaşık 315 metredir. Konut tarafında ilan kayıtlarına göre 4+1 daire tipleri de bulunur. Üst katlardaki konutlar için bu konum, kapıdan çıkınca her işin halledildiği bir pratiklik demektir — asansörden inince bankanın, marketin ve eczanenin aynı yapıda olması, özellikle kiralama tarafında dairenin boş kalma süresini kısaltan somut bir üstünlüktür. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46502",
@@ -21,11 +21,18 @@
     "Konut + iş merkezi (tapu kaydı)",
     "Bölge çarşı aksının merkezi",
     "Altı bankanın ATM'si ve eczane — bölgenin çarşı işlevi",
+    "Amasya Beyannamesi Caddesi cephesi (yerel kayıt)",
+    "Eryaman 5 metro çıkışına yaklaşık 50 m (yerel kayıt)",
+    "Yapıda banka şubesi ve market şubesi (yerel kayıt)",
+    "Restoran, hırdavat, kuaför, petshop, kuyumcu, optik, terzi dükkânları (işletme tanıtımı)",
+    "Harita servislerinde alışveriş merkezi kategorisinde kayıtlı (yerel kayıt)",
+    "Konut tarafında 4+1 daire tipleri (yerel kayıt)",
+    "Ortaokul ~350 m, anaokulu ~340 m, PTT şubesi ~300 m (yerel kayıt)",
     "Kat mülkiyetli parsel (TKGM)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Okyanus Plaza Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

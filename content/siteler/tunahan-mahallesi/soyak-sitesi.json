@@ -1,5 +1,5 @@
 {
-  "isim": "Soyak Sitesi",
+  "isim": "Soyak Blokları",
   "slug": "soyak-sitesi",
   "mahalleSlug": "tunahan-mahallesi",
   "koordinat": {
@@ -7,7 +7,7 @@
     "lng": 32.630968
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/soyak-sitesi-boundary.geojson",
-  "aciklama": "Soyak Sitesi (Soyak Blokları), Tunahan Mahallesi'nde beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı ikiden altıya uzanır — toplam 21 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 28.201 m². İki apartmanlık sakin adadan altı apartmanlık hareketli adaya uzanan bu yelpaze, aynı küme içinde birbirinden farklı yaşam tercihleri barındırır — satışta da her adanın kendi emsal çizgisi vardır. Okyanus çarşı bölgesine ve bölgenin günlük yaşam aksına yakın konumdadır; banka ATM'leri, eczane ve PTT yürüme mesafesindedir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin. (Not: Şehit Osman Avcı Mahallesi'ndeki Soyak Blokları ayrı bir yerleşimdir; iki Soyak sık karıştırılır.)",
+  "aciklama": "Soyak Blokları, Tunahan Mahallesi'nde beş ayrı adaya yayılmış yerleşik bir konut bölgesidir. TKGM kayıtlarına göre adalardaki apartman sayısı ikiden altıya uzanır — toplam 21 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 28.201 m². İki apartmanlık sakin adadan altı apartmanlık hareketli adaya uzanan bu yelpaze, aynı küme içinde birbirinden farklı yaşam tercihleri barındırır — satışta da her adanın kendi emsal çizgisi vardır. Okyanus çarşı bölgesine ve bölgenin günlük yaşam aksına yakın konumdadır; banka ATM'leri, eczane ve PTT yürüme mesafesindedir. Yerel emlak kayıtlarına göre bloklar 1998 yapımı ve sekiz katlı; örneklenen bloklarda 36 daire yer alıyor — 10 adet 1+1 (45-60 m²), 14 adet 2+1 (71 m²) ve 12 adet 3+1 (86-90 m²). Yani kümede küçük tip ağırlıkta: dairelerin üçte ikisi 1+1 ve 2+1. Tunahan'ın 3+1 ağırlıklı kooperatif dokusu içinde bu, küçük dairenizin azınlıkta kalan bir tip değil kümenin ana ürünü olduğu anlamına gelir; kiralama tarafında talep de buna göre şekillenir. Aynı kayıtlarda blokların zemin katında dört adet bağımsız girişli, 60 m² 1+1 dubleks daire bulunduğu belirtiliyor — bölgede eşine az rastlanan bu tip, standart bir zemin kat dairesiyle aynı çerçevede fiyatlanmaz. Isıtma merkezi sistem; donatılar arasında asansör, bahçe, jeneratör, hidrofor ve su deposu, kapıcı, otopark, oyun parkı ile yangın merdiveni sayılıyor. Blokların bir kısmı apartman adı taşır — Damla Apartmanı ve Deniz Apartmanı gibi — diğerleri sade numarayla anılır; kümenin en büyük adasındaki altı blok ise tek sayılarla (1., 3., 5., 7., 9. ve 11.) numaralanmıştır. İlanınızda hem apartman adını hem blok numarasını birlikte kullanmak, dairenizin doğru aramada çıkmasını sağlar. (Not: Şehit Osman Avcı Mahallesi'ndeki Soyak Sitesi ayrı bir yerleşimdir; iki Soyak sık karıştırılır.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17655",
@@ -40,10 +40,18 @@
     "Toplam ~28.201 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 2-6 apartman — değişken ölçek (TKGM)",
+    "1998 yapım, sekiz katlı bloklar (yerel kayıt)",
+    "Blok başına 36 daire — 10 adet 1+1, 14 adet 2+1, 12 adet 3+1 (yerel kayıt)",
+    "Daire büyüklükleri 45-90 m² aralığında (yerel kayıt)",
+    "Zemin katta bağımsız girişli 60 m² 1+1 dubleksler (yerel kayıt)",
+    "Merkezi sistem ısıtma; jeneratör, hidrofor, yangın merdiveni (yerel kayıt)",
+    "Damla ve Deniz Apartmanı — adlı bloklar (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
-    "Soyak Blokları"
+    "Soyak Sitesi",
+    "Tunahan Soyak Blokları",
+    "Soyak 4. Etap Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

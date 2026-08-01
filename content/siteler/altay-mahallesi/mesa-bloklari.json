@@ -7,7 +7,7 @@
     "lng": 32.642659
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/mesa-bloklari-boundary.geojson",
-  "aciklama": "Mesa Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında, üç ayrı yerleşim adasına yayılmış bir konut kümesidir; Age, Aktürk ve Sutek kümeleriyle aynı kuşaktadır. Tapu kayıtları kümeyi net tarif eder: üç parselde sırasıyla üç bloklu, iki bloklu ve iki bloklu kargir apartmanlar — toplam yedi blok, üç adanın toplamı yaklaşık 25 dönüm. Bölgenin oturmuş, yeşil dokulu çevresini paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mesa Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında, üç ayrı yerleşim adasına yayılmış bir konut kümesidir; Age, Aktürk ve Sutek kümeleriyle aynı kuşaktadır. Tapu kayıtları kümeyi net tarif eder: üç parselde sırasıyla üç bloklu, iki bloklu ve iki bloklu kargir apartmanlar — toplam yedi blok, üç adanın toplamı yaklaşık 25 dönüm. Yedi bloğun tamamı ad taşır: Bergama, Emirdağ, Gözde, Bayındır, Emre, Aydın ve Dikmen apartmanları. Yerel yapı rehberi kayıtlarına göre bloklar 1989 yapımıdır ve on dört katlıdır — kuşağın en yüksek katlı yapıları arasındadır; her blokta 56 daire bulunur ve dairelerin tamamı 3+1, 100 m² net planlıdır, canlı ilanlar aynı daireleri 110 m² brüt / 100 m² net olarak verir. Isıtma merkezi sistemdir ve ısı pay ölçerlidir; asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı, ısı ve ses yalıtımı ile yangın merdiveni de kayıtlı donatılar arasındadır, kreş, okul ve otobüs durağı yakınlığı aynı listede işaretlidir. Kümenin adı bölgedeki bir toplu taşıma durağına da verilmiştir. (Güzelkent'teki Mesa Sitesi ayrı bir yerleşimdir.) Bölgenin oturmuş, yeşil dokulu çevresini paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17312",
@@ -27,9 +27,15 @@
   ],
   "ozellikler": [
     "3 ayrı yerleşim adası — toplam 7 blok (tapu kayıtları)",
+    "Bloklar: Bergama, Emirdağ, Gözde, Bayındır, Emre, Aydın, Dikmen (yerel kayıt)",
+    "1989 yapımı, 14 katlı bloklar (yerel kayıt)",
+    "Blok başına 56 daire — tamamı 3+1, ~100 m² net (yerel kayıt)",
+    "Merkezi sistem ısıtma, ısı pay ölçerli (yerel kayıt)",
+    "Asansör, jeneratör, kapıcı, otopark, oyun parkı (yerel kayıt)",
     "Üç adanın toplamı ~25 dönüm (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Age, Aktürk ve Sutek kümelerine komşu"
+    "Age, Aktürk ve Sutek kümelerine komşu",
+    "Altay Mahallesi — Eryaman kooperatif kuşağı"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

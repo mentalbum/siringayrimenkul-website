@@ -7,11 +7,17 @@
     "lng": 32.629134
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/dema-park-boundary.geojson",
-  "aciklama": "Dema Park, Tunahan Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre 6.111 m²'lik kat mülkiyetli parsel üzerine kurulu site, A ve B olmak üzere iki bloktan oluşur. Onlarca apartmanlık dev kooperatif kümelerinin hâkim olduğu bölgede iki bloklu bu ölçek siteyi ayrıştırır: az sayıda komşu, yalın bir site düzeni ve yönetimi kolay ortak alanlar. Banka ATM'leri ve eczanesiyle fiilen çarşı işlevi gören Okyanus Plaza ile bölgenin günlük yaşam aksı yürüme mesafesindedir. Butik site arayan alıcı profili Eryaman'da her dönem vardır ve seçenek azdır — bu da Dema Park'taki bir dairenin vitrinde kolay fark edilmesi demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin. (Aynı adı taşıyan Dema Park çarşısıyla karıştırılmasın: bu sayfa, A ve B bloklu konut sitesini anlatır; ilanlarda 'Demapark Konutları' adıyla da geçer.)",
+  "aciklama": "Dema Park, Tunahan Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre 6.111 m²'lik kat mülkiyetli parsel üzerine kurulu site, A ve B olmak üzere iki bloktan oluşur. Geliştiricinin proje künyesine göre yerleşimde 140 konut ve 25 iş yeri vardır; yapım 30 Ocak 2009'da başlamış, 30 Haziran 2010'da tamamlanmıştır. Aynı künyede toplam alan 17.000 m² olarak verilir — bu rakam parsel büyüklüğü değil, projenin toplamıdır. Daire tipleri künyede 1+1, 2+1 ve 3+1 dubleks olarak sıralanır; dubleks seçeneği, onlarca apartmanlık kooperatif kümelerinin hâkim olduğu bu bölgede az bulunur ve kendi arayanı vardır. Donatı olarak 24 saat güvenlik ile açık ve kapalı otopark alanları sayılır; yüklenici firmanın kendi duyurusuna göre inşaatı Aras İnşaat tamamlamıştır. Onlarca apartmanlık dev kooperatif kümelerinin hâkim olduğu bölgede iki bloklu bu ölçek siteyi ayrıştırır: az sayıda komşu, yalın bir site düzeni ve yönetimi kolay ortak alanlar. Yerleşim Tunahan Mahallesi 254. Cadde üzerindedir; aynı yerleşimin çarşı bölümünde market, kurs ve yeme-içme işletmeleri bulunur — kiracı adayının günlük ihtiyacını binadan çıkmadan çözebilmesi, kiraya verilecek bir daire için somut bir avantajdır. Ulaşım kayıtlarına göre Eryaman 5 Metro İstasyonu yaklaşık 330 metre, beş dakikalık yürüme mesafesindedir. Banka ATM'leri ve eczanesiyle fiilen çarşı işlevi gören Okyanus Plaza ile bölgenin günlük yaşam aksı da yürüme mesafesindedir. Butik site arayan alıcı profili Eryaman'da her dönem vardır ve seçenek azdır — bu da Dema Park'taki bir dairenin vitrinde kolay fark edilmesi demektir. (Karışıklığa dikkat: yerleşimin konut bölümü ile çarşı bölümü aynı adla anılır; ilanlarda 'Demapark Konutları', 'Demapark Yaşam Merkezi' ve 'Demapark İş Merkezi' adları birlikte dolaşır. Bu sayfa, A ve B bloklu konut bölümünü anlatır.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "6.111 m² parsel (TKGM)",
     "2 blok (A ve B)",
     "Kat mülkiyetli parsel (TKGM)",
+    "140 konut + 25 iş yeri (geliştirici tanıtımı)",
+    "2009-2010 yapım (geliştirici tanıtımı)",
+    "1+1, 2+1 ve 3+1 dubleks daire tipleri (geliştirici tanıtımı)",
+    "24 saat güvenlik, açık ve kapalı otopark (geliştirici tanıtımı)",
+    "Tunahan Mahallesi 254. Cadde üzerinde (yerel kayıt)",
+    "Eryaman 5 Metro İstasyonu'na ~330 m (ulaşım kaydı)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "adalar": [
@@ -21,10 +27,12 @@
       "etap": "5"
     }
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Demapark Konutları",
     "Demapark Residence",
-    "Dema Park Sitesi"
+    "Dema Park Sitesi",
+    "Demapark Yaşam Merkezi",
+    "Demapark İş Merkezi"
   ]
 }

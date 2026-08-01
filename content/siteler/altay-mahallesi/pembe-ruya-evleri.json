@@ -7,7 +7,7 @@
     "lng": 32.64887
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/pembe-ruya-evleri-boundary.geojson",
-  "aciklama": "Pembe Rüya Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında tek blokla temsil edilen, adıyla gülümseten butik bir sitedir; adasını Doktorlar Sitesi'nin blokları, İzgi Park Evleri ve Palmiye Evleri ile paylaşır. TKGM'de sitenin parseli, yaklaşık 3.000 m²'lik alanı üzerinde beton apartman niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusu içinde küçük ve sakin bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Pembe Rüya Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında tek blokla temsil edilen, adıyla gülümseten butik bir sitedir; adasını Doktorlar Sitesi'nin 4 ve 5 blokları, İzgi Park Evleri'nin 3A ve 3B blokları ve Palmiye Evleri'nin 78 numaralı bloğu ile paylaşır. TKGM'de sitenin parseli, yaklaşık 3.000 m²'lik alanı üzerinde beton apartman niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusu içinde küçük ve sakin bir yerleşimdir. Yerel dizin kayıtlarına göre 2008 yapımı olan blok 7 katlıdır ve içinde toplam 21 daire bulunur; dairelerin tamamı 135 m² 3+1 planlıdır, yani site baştan aile ölçeğinde kurgulanmıştır. Isıtma, çevredeki eski kuşak blokların merkezi sisteminden farklı olarak daire başına doğalgaz kombidir. Aynı kayıtlarda asansör, kapıcı, jeneratör, hidrofor, su deposu, otopark, oyun parkı, ısı ve ses yalıtımı ile yangın merdiveni donatı olarak sayılır. Blok 2663. Cadde üzerindedir; yapının oturum alanı yaklaşık 671 m² olduğu için parselin büyük bölümü bahçe ve açık alan olarak kalır. Yerel toplu taşıma kayıtlarında sitenin adını taşıyan bir durak da geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45889",
@@ -16,13 +16,18 @@
   ],
   "ozellikler": [
     "Tek bloklu butik site",
+    "Tek blokta toplam 21 daire (yerel kayıt)",
+    "2008 yapımı, 7 katlı blok (yerel kayıt)",
+    "Dairelerin tamamı 3+1, 135 m² (yerel kayıt)",
+    "Daire bazlı doğalgaz kombi ısıtma (yerel kayıt)",
+    "Asansör, kapıcı, jeneratör, otopark, oyun parkı (yerel kayıt)",
     "Yaklaşık 3 dönümlük parsel (TKGM)",
     "Komşular: Doktorlar, İzgi Park, Palmiye",
     "Kat mülkiyetli parsel (TKGM)",
-    "Altay — Eryaman Evleri kuşağı"
+    "2663. Cadde — Altay, Eryaman Evleri kuşağı"
   ],
   "alternatifAdlar": [
     "Pembe Rüya Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

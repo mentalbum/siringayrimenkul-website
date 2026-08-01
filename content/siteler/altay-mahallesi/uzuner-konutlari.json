@@ -7,7 +7,7 @@
     "lng": 32.64733
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/uzuner-konutlari-boundary.geojson",
-  "aciklama": "Uzuner Konutları, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; blokları yerel kayıtlarda Metin Apartmanı ve A54 olarak geçer — iki blok. (Göksu'daki göl kuşağında da Uzuner adlı ayrı bir blok vardır.) Tapu kaydı da bu yapıyı doğrular: yaklaşık 6.592 m²'lik parsel üzerinde '2 blok kargir apartman' — iki blok için 6,6 dönümlük alan, bahçeli bir yerleşim payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Uzuner Konutları, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; blokları yerel kayıtlarda Metin Apartmanı 56 Blok ve A54 Blok olarak geçer — iki blok. (Göksu'daki göl kuşağında da Uzuner adlı ayrı bir yerleşim vardır; bu ayrım bağımsız kayıtlarla da doğrulanır.) Tapu kaydı da bu yapıyı doğrular: yaklaşık 6.592 m²'lik parsel üzerinde '2 blok kargir apartman' — iki blok için 6,6 dönümlük alan, bahçeli bir yerleşim payı bırakır. Sitenin yer aldığı ada bütünü ise yaklaşık 11.566 m²; yani parsel, adanın yarısından biraz fazlasını kaplar. Adada Uzuner'e ait olmayan bir yapı daha bulunur: yerel kayıtlarda 2010 yapımı ve 17 katlı görünen Okuyucu Apartmanı, iki Uzuner bloğundan hem yaş hem yükseklik olarak ayrışır. Yerel konut kayıtlarına göre A54 Blok 2005 yapımı, 12 katlı ve 22 daireli; daireler 4+1 ve yaklaşık 155 m², ısıtma doğalgaz kombi ile daire başına bağımsız. Aynı kaynakta Metin Apartmanı'nın künyesi boş olduğu için bu yıl ve kat bilgileri yalnızca A54 için geçerlidir. A54 künyesinde sayılan ortak donatılar arasında asansör, bahçe, kapıcı, otopark, oyun parkı, jeneratör, hidrofor, su deposu ve yangın merdiveni yer alıyor; otobüs durağı yürüme mesafesinde. Adres kayıtları siteyi Söğüt Caddesi'nde gösterirken harita verisi adaya en yakın aksı 1408. Cadde (Şehit Mehmet Çavuş Caddesi) olarak veriyor — yerleşim bu iki cadde arasındaki adada yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45897",
@@ -15,13 +15,20 @@
     }
   ],
   "ozellikler": [
-    "2 blok (Metin Apartmanı + A54) — tapu nitelik kaydıyla uyumlu",
+    "2 blok (Metin Apartmanı 56 + A54) — tapu nitelik kaydıyla uyumlu",
     "Yaklaşık 6,6 dönümlük parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "A54 Blok: 2005 yapımı, 12 katlı, 22 daire (yerel kayıt)",
+    "Daireler 4+1, yaklaşık 155 m² (yerel kayıt)",
+    "Doğalgaz kombi ile bağımsız ısıtma (yerel kayıt)",
+    "Asansör, kapıcı, jeneratör, otopark, oyun parkı (yerel kayıt)",
+    "Ada bütünü ~11.566 m² — parsel adanın yarısından fazlası",
+    "Adadaki Okuyucu Apartmanı Uzuner'e ait değildir (yerel kayıt)",
+    "Söğüt Caddesi ile 1408. Cadde arasındaki ada",
     "Altay — Eryaman Evleri kuşağı"
   ],
   "alternatifAdlar": [
     "Uzuner Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.632869
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/age-sitesi-boundary.geojson",
-  "aciklama": "Age Sitesi, ofisimizin de bulunduğu Tunahan Mahallesi'nde, Eryaman'ın kooperatif kuşağının büyük sitelerinden biridir. TKGM kayıtlarına göre 38.618 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"19 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda A, B, C, D ve E serisi kodlarla (A1, B2, C1A, D3B gibi) kapı numaralarıyla birlikte anılıyor. Geniş parseli, yeşil alanları ve oturmuş çevresiyle bölgenin yerleşik yaşamını temsil eder. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin. (Not: Eryaman bölgede, Altay Mahallesi'ndeki Age Blokları ayrı bir yerleşimdir; onu Altay sayfamızda ayrıca anlatıyoruz.)",
+  "aciklama": "Age Sitesi, ofisimizin de bulunduğu Tunahan Mahallesi'nde, Eryaman'ın kooperatif kuşağının büyük sitelerinden biridir. TKGM kayıtlarına göre 38.618 m²'lik kat mülkiyetli tek parsel üzerine kurulu ve tapuda \"19 Blok Kârgir Apartman\" niteliğiyle geçiyor; bloklar yerel kayıtlarda A, B, C, D ve E serisi kodlarla (A1, B2, C1A, D3B gibi) kapı numaralarıyla birlikte anılıyor. Aynı kayıtlar bu bloklar için ikinci bir kod dizisi daha veriyor: her blok bir de \"3\" serisinden bir numarayla geçiyor — A1 için 3V, D3A için 3A, E6 için 3L gibi. İlanlarda aynı yapının iki ayrı kodla karşınıza çıkmasının nedeni budur; iki dizi de aynı blokları tarif eder. Toplu yapı yönetiminin resmî kayıtlarına göre 19 blokta toplam 448 konut bulunur; bunun 328'i on bir asansörlü blokta, 120'si sekiz asansörsüz blokta yer alır — yani sitenin içinde asansörlü ve asansörsüz olmak üzere iki ayrı emsal çizgisi vardır. Aynı kayıt sitede beş ayrı ısı merkezi bulunduğunu gösteriyor; ısıtma merkezi sistemdir ve yerel kayıtlara göre blokların yapım yılı 2000'dir. Blok ölçekleri birbirinden belirgin biçimde farklıdır: yerel künyelere göre bir uçta dört katlı, sekiz daireli ve dairelerinin tamamı 104 m² 3+1 olan bir blok; diğer uçta on katlı, kırk daireli, yarısı 2+1 yarısı 3+1 (yaklaşık 62-104 m²) bloklar var. Beş katlı ve yirmi daireli bir blokta daireler 54-72 m² aralığında 1+1 ve 2+1 iken, on katlı başka bir blokta yirmi dairenin tamamı 130 m² 3+1 olarak kayıtlı. Bu yüzden \"Age Sitesi'nde daire\" tek bir tarif değildir; 1+1'den 130 m² 3+1'e uzanan geniş bir yelpazedir. Blok künyelerinde asansör, kapıcı, jeneratör, hidrofor, su deposu, bahçe, otopark, oyun parkı, kablo TV-uydu ve yangın merdiveni sayılıyor; metro durağı, okul ve otobüs durağı yakın çevre olarak işaretli. Geniş parseli, yeşil alanları ve oturmuş çevresiyle bölgenin yerleşik yaşamını temsil eder. (Not: Eryaman bölgesinde, Altay Mahallesi'ndeki Age Blokları ayrı bir yerleşimdir; onu Altay sayfamızda ayrıca anlatıyoruz.) Bu sitede satılık veya kiralık daireniz mi var? Blok blok değişen bu yapıda doğru fiyatın ilk sorusu \"kaç oda\" değil, \"hangi blokta ve asansörlü mü\" olur — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46494",
@@ -19,10 +19,18 @@
     "38.618 m² tek parsel (TKGM)",
     "19 blok kârgir apartman (tapu kaydı)",
     "A–E serisi blok kodları",
+    "Her blok ikinci bir kodla da anılır: A1 = 3V, E6 = 3L (yerel kayıt)",
+    "19 blokta toplam 448 konut (toplu yapı yönetimi kaydı)",
+    "11 asansörlü blokta 328, 8 asansörsüz blokta 120 konut",
+    "5 ayrı ısı merkezi — merkezi sistem ısıtma (yönetim kaydı)",
+    "2000 yapım (yerel kayıt)",
+    "Blok ölçekleri 4 kat / 8 daireden 10 kat / 40 daireye (yerel kayıt)",
+    "1+1, 2+1 ve 3+1 — yaklaşık 54-130 m² (yerel kayıt)",
+    "Asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı",
     "Kat mülkiyetli parsel (TKGM)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Age Blokları"
   ]

@@ -7,7 +7,7 @@
     "lng": 32.620716
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/neopolitan-eryaman-boundary.geojson",
-  "aciklama": "Neopolitan Eryaman, Tunahan Mahallesi'nde Dema İnşaat – Fırat Life Style ortaklığıyla geliştirilen ve Aralık 2014'te teslim edilen, Eryaman silüetinin tanınmış yüksek yapılarındandır. Proje kaynaklarına göre 27 katlı A ve B bloklarında toplam 204 konut bulunuyor ve daireler tamamı 4+1 (174 m²) tek tipte — her katta dört daire; alçak C bloğu ise ofis-işyeri olarak tapuda kayıtlı. Kapalı yüzme havuzu, fitness, basketbol sahası, kapalı otopark ve bünyesindeki AVM ile tam donanımlı bir yaşam kompleksi; TKGM parseli (13.627 m²) proje kaynaklarıyla birebir örtüşüyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Neopolitan Eryaman, Tunahan Mahallesi'nde Dema İnşaat – Fırat Life Style ortaklığıyla geliştirilen ve Aralık 2014'te teslim edilen, Eryaman silüetinin tanınmış yüksek yapılarındandır. Geliştirici tanıtımına göre 28 katlı A ve B bloklarında toplam 204 konut bulunuyor; aynı tanıtımda tipik kat planı dört daireli olarak veriliyor — yani blokların her katı konut değildir. Alçak C bloğu ise ofis-işyeri olarak tapuda kayıtlı. Daireler tek tip değil: proje kayıtlarına göre 204 konutun 196'sı 4+1, 8'i dubleks ve daire büyüklükleri 174 m² ile 350 m² arasında değişiyor. Bu yüzden emsal, blok ve daire tipine göre ayrışır; sitedeki her 4+1 aynı büyüklükte değildir. Kapalı yüzme havuzu, fitness, basketbol sahası, kapalı otopark ve bünyesindeki AVM ile tam donanımlı bir yaşam kompleksi; TKGM parseli (13.627 m²) proje kaynaklarıyla birebir örtüşüyor. Geliştirici tanıtımı donatı listesini daha da genişletiyor: 24 saat güvenlik, açık otopark, hamam ve sauna, çocuk oyun alanları, tam besleme jeneratör ve tünel kalıp yapı sistemi. Yerel kayıtlarda ısıtmanın merkezi sistem olduğu, buna karşılık her dairede yerden ısıtma tesisatı bulunduğu belirtiliyor — kiraya veren için somut bir konfor argümanı. Konutların yanında 18 dükkânlık ticari birim de projenin parçası. Site, Tunahan Mahallesi'nde 211. Cadde hattında yer alıyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45878",
@@ -15,15 +15,22 @@
     }
   ],
   "ozellikler": [
-    "2 blok (27 kat) + ofis bloğu — 13.627 m² (TKGM)",
-    "204 konut, tamamı 4+1 (174 m²)",
+    "2 yüksek blok + ofis bloğu — 13.627 m² parsel (TKGM)",
+    "A ve B blokları 28 katlı, tipik katta dört daire (geliştirici tanıtımı)",
+    "204 konut — 196 daire 4+1, 8 daire dubleks (proje kaydı)",
+    "Daire büyüklükleri 174-350 m² aralığında (proje kaydı)",
     "Dema İnşaat – Fırat Life Style ortaklığı, Aralık 2014",
     "Kapalı yüzme havuzu, fitness, AVM",
+    "Hamam, sauna, çocuk oyun alanı, jeneratör, 24 saat güvenlik (geliştirici tanıtımı)",
+    "Her dairede yerden ısıtma tesisatı (yerel kayıt)",
+    "18 dükkânlık ticari birim (geliştirici tanıtımı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Tunahan — kadastroda Eryaman kaydı"
+    "211. Cadde hattı — Tunahan, kadastroda Eryaman kaydı"
   ],
+  "adres": "211. Cadde No:8, Tunahan, Eryaman/Ankara",
   "alternatifAdlar": [
-    "Neopolitan Eryaman Sitesi"
+    "Neopolitan Eryaman Sitesi",
+    "Neopolitan Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

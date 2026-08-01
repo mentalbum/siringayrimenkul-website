@@ -7,7 +7,7 @@
     "lng": 32.646166
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/vizyon-prestige-boundary.geojson",
-  "aciklama": "Vizyon Prestige, Altay Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.729 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksının yeni nesil stoğunda kompakt birim ve yatırım arayanların adresidir. Geliştirici ALR İnşaat'ın tanıtımına göre 2018 yılında teslim edilen proje, tek blokta 4 farklı tipte 2+1 planlı toplam 92 konut ile 7 cadde mağazasından oluşur. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Vizyon Prestige, Altay Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 5.729 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bölge aksının yeni nesil stoğunda kompakt birim ve yatırım arayanların adresidir. Geliştirici ALR İnşaat'ın tanıtımına göre 2018 yılında teslim edilen proje, tek blokta 4 farklı tipte 2+1 planlı toplam 92 konut ile 7 cadde mağazasından oluşur; aynı tanıtımda daire büyüklükleri 70 ile 98 m² arasında verilir, yerel ilan kayıtlarına göre de kat başına yedi daire düşer. Ortak kullanım alanları tanıtımda çocuk oyun alanları, kadınlar ve erkekler için ayrı fitness salonları, SPA ile Türk hamamı ve sauna, açık ve kapalı otopark, jeneratör ve 7/24 kamera destekli güvenlik olarak sıralanır; zemin katta alışveriş dükkanları yer alır. Yapı, adres ve harita kayıtlarında Söğüt Caddesi aksında ve yerleşim adasını Arya Nüans Residence ile Mood Street'in paylaştığı konumda görünür; raylı sistemde en yakın istasyon Eryaman 1-2'dir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45898",
@@ -21,10 +21,22 @@
     "~5.729 m² parsel (TKGM)",
     "Kat irtifaklı parsel (TKGM)",
     "92 konut + 7 cadde mağazası (geliştirici tanıtımı)",
-    "2018 teslim (geliştirici tanıtımı)"
+    "2018 teslim (geliştirici tanıtımı)",
+    "Tek blok, tamamı 2+1 — 70-98 m² arası 4 tip (geliştirici tanıtımı)",
+    "SPA, Türk hamamı ve sauna (geliştirici tanıtımı)",
+    "Kadınlar ve erkekler için ayrı fitness salonu (geliştirici tanıtımı)",
+    "Açık ve kapalı otopark, jeneratör (geliştirici tanıtımı)",
+    "7/24 kamera destekli güvenlik (geliştirici tanıtımı)",
+    "Zemin katta alışveriş dükkanları (geliştirici tanıtımı)",
+    "Söğüt Caddesi aksında (adres kayıtları)",
+    "Raylı sistemde en yakın istasyon Eryaman 1-2 (yerel kayıt)",
+    "Arya Nüans Residence ve Mood Street ile aynı adada (TKGM)",
+    "Altay Mahallesi — Söğüt Caddesi çevresi"
   ],
   "alternatifAdlar": [
-    "Vizyon Prestige Sitesi"
+    "Vizyon Prestige Sitesi",
+    "Vizyon Prestij Sitesi",
+    "Vizyon Prestige Konutları"
   ],
   "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.647622
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/cabadag-bloklari-boundary.geojson",
-  "aciklama": "Cabadağ Blokları, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; iki apartmanı yerel kayıtlarda Oğuzhan ve Timurhan adlarını taşır — Türk devlet geleneğinden isimlerle anılan nadir bloklardandır. Tapu kaydı yapıyı net tarif eder: yaklaşık 5.114 m²'lik parsel üzerinde on birer katlı A1 ve A2 bloklardan oluşan betonarme apartman — kuşağın orta-yüksek katlı silüetinin parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Cabadağ Blokları, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alır; iki apartmanı yerel kayıtlarda Oğuzhan ve Timurhan adlarını taşır — Türk devlet geleneğinden isimlerle anılan nadir bloklardandır. Tapu kaydı yapıyı net tarif eder: yaklaşık 5.114 m²'lik parsel üzerinde on birer katlı A1 ve A2 bloklardan oluşan betonarme apartman — kuşağın orta-yüksek katlı silüetinin parçasıdır. Yerel kayıtlara göre sitenin bulunduğu adada başka bir yapı bulunmaz; iki apartman bahçeyi ve ortak alanları kendi arasında kullanır, bu da blokların iç içe geçtiği Eryaman Evleri kuşağında ayırt edici bir niteliktir. Aynı kayıtlarda blokların ortak donanımı asansör, jeneratör, hidrofor ve su deposu, kapıcı, otopark, oyun parkı ile kablo TV-uydu altyapısı olarak listelenir. Ulaşımda sitenin hemen önünde Bahçen Konutları otobüs durağı, yaklaşık 270 metre ötesinde Olimpiyat Merkezi durağı yer alır; Eryaman 1-2 raylı sistem istasyonu ise yaklaşık 1,2 kilometre, on beş dakikalık yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45892",
@@ -18,10 +18,15 @@
     "2 apartman: Oğuzhan ve Timurhan — 11'er katlı (tapu kaydı)",
     "Yaklaşık 5,1 dönümlük parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Adayı tek başına kullanan yerleşim (yerel kayıt)",
+    "Asansör, jeneratör, hidrofor ve su deposu (yerel kayıt)",
+    "Kapıcı, otopark, oyun parkı (yerel kayıt)",
+    "Bahçen Konutları otobüs durağı kapı önünde (yerel kayıt)",
+    "Eryaman 1-2 istasyonu ~1,2 km yürüme (yerel kayıt)",
     "Altay — Eryaman Evleri kuşağı"
   ],
   "alternatifAdlar": [
     "Cabadağ Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

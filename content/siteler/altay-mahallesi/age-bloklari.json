@@ -7,7 +7,7 @@
     "lng": 32.638056
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/age-bloklari-boundary.geojson",
-  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — bölgenin en geniş blok kümelerinden. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki Age Sitesi ayrı bir yerleşimdir.) Ana parselinde tapu, yaklaşık 6.252 m²'lik alanda sekiz kargir apartman kaydeder. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Age Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda dokuz adalık bir küme olarak gösterilir — bölgenin en geniş blok kümelerinden. Aynı kayıtlar kümeyi, çevresi 1,3 kilometreyi bulan yaklaşık 93,6 dönümlük bir yerleşim alanı olarak ölçer; bu genişlik, blok aralarındaki bahçeleri ve iç yolları da kapsayan bir kuşağa işaret eder. Küme içindeki apartmanlar kendi adlarını taşır: yerel adres ve ilan kayıtlarında Yarımca, Pamucak ve Alagöz apartmanları geçer — bu adlar, aynı adı taşıyan başka yerleşimlerden ayırt etmenin en güvenilir işaretidir. Aktürk, Mesa ve Sutek kümeleriyle aynı kuşaktadır. (Tunahan'daki Age Sitesi ile Eryaman'ın başka kesimlerinde Age adıyla kayıtlı bloklar ayrı yerleşimlerdir.) Ana parselinde tapu, yaklaşık 6.252 m²'lik alanda sekiz kargir apartman kaydeder. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17546",
@@ -17,10 +17,12 @@
   ],
   "ozellikler": [
     "Yerel kayıtlarda 9 adalık küme — bölgenin en genişlerinden",
+    "Küme geneli ~93,6 dönüm, çevresi 1,3 km (yerel kayıt)",
+    "Apartmanlar adlı: Yarımca, Pamucak, Alagöz (yerel kayıt)",
     "Ana parselde 8 apartman — yaklaşık 6,3 dönüm (TKGM)",
     "Tunahan'daki Age Sitesi'nden ayrı yerleşim",
     "Kat mülkiyetli parsel (TKGM)",
     "Altay Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.641212
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/motto-butik-boundary.geojson",
-  "aciklama": "Motto Butik, Altay Mahallesi'nde 12 katlı ana bloğu ve 2 katlı yan bloğuyla modern bir yapıdır. TKGM kayıtlarına göre yaklaşık 6.830 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; kredi ve alım-satım süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Adındaki 'butik' vurgusuyla kompakt birim arayan genç ve yatırımcı profiline hitap eder; bölgenin yerleşik dokusunda yeni nesil bir adrestir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Motto Butik, Altay Mahallesi'nde 12 katlı ana bloğu ve 2 katlı yan bloğuyla modern bir yapıdır. Harita kayıtlarında yapı, Ayaş Ankara Yolu Bulvarı'na cepheli bir adresle geçer; en yakın toplu taşıma durağı 2664. Cadde üzerinde, yaklaşık 380 metre uzaklıktadır, Eryaman 1-2 metro istasyonu ise yaklaşık 2,4 kilometre ötededir. TKGM kayıtlarına göre yaklaşık 6.830 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; kredi ve alım-satım süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Adındaki 'butik' vurgusuyla kompakt birim arayan genç ve yatırımcı profiline hitap eder; bölgenin yerleşik dokusunda yeni nesil bir adrestir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45899",
@@ -20,10 +20,12 @@
     "2-12 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "Ayaş Ankara Yolu Bulvarı'na cepheli (yerel kayıt)",
+    "En yakın durak 2664. Cadde — ~380 m; Eryaman 1-2 metro ~2,4 km (yerel kayıt)",
     "Altay Mahallesi"
   ],
   "alternatifAdlar": [
     "Motto Butik Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.6458
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/kutlutas-sitesi-boundary.geojson",
-  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde, yaklaşık 189.000 m²'lik (189 dönüm) bir alana yayılan, bölgenin en büyük kooperatif kökenli yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve adalarından birindeki 23 dublekslik konut grubundan oluşuyor. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde 27. Cadde aksında, yaklaşık 87.500 m²'lik (87,5 dönüm) parsel bütününe yayılan, bölgenin en büyük toplu konut yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve bunlara eşlik eden dubleks konutlardan oluşuyor; adalardan biri tümüyle 23 dublekslik bir konut grubudur. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Kümenin adını taşıyan Kutlutaş İş Merkezi de bu yerleşimin içinde yer alır ve bölgenin toplu yapı yönetimi kendi resmi adresini bu iş merkezine göre tarif eder — yani yerleşim, çevrenin yön tarifine yerleşmiş bir referans noktasıdır. Bloklar, yönetimin tanıtımına göre 1990'da yerleşime açılan ve Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olarak anılan geniş bir toplu yapının parçası; bu bütün, 457 apartmanda 6.371 bağımsız bölüm, yaklaşık 25.000 nüfus ve 1 milyon m²'si yeşil alan olmak üzere toplam 1.500.000 m²'lik bir alan demek. Aynı kaynak kuşağın ortak donatılarını 2 sağlık ocağı, 2 kreş, 2 cami, 3 ilköğretim okulu, bir gençlik merkezi, bir ısı merkezi, 126 işyerinden oluşan 3 iş merkezi, çocuk parkları ve toplam 4.000 araç kapasiteli 64 otopark olarak sayıyor — bunlar tek bir kümenin değil, kuşağın tamamının envanteri; Kutlutaş bu ortak donatı ağının içinde konumlanır. Yerleşim, Şehit Osman Avcı Mahallesi sınırına komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17499",
@@ -77,13 +77,18 @@
   ],
   "ozellikler": [
     "13 ada, ada başına 5–10 blok (TKGM)",
-    "Adalarından birinde 23 dublekslik konut grubu",
-    "~189.000 m² (189 dönüm) yerleşim alanı",
+    "Bloklara eşlik eden dubleks konutlar; bir ada tümüyle 23 dublekslik grup (TKGM)",
+    "13 adanın parsel toplamı ~87.500 m² (87,5 dönüm, TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Kooperatif kökenli köklü doku"
+    "27. Cadde aksında (yerel kayıt)",
+    "Kutlutaş İş Merkezi yerleşimin içinde — bölgenin yön referansı",
+    "1990'da yerleşime açılan toplu yapının parçası (yönetim tanıtımı)",
+    "Kuşak genelinde okul, kreş, sağlık ocağı, cami ve iş merkezleri (yönetim tanıtımı)",
+    "Şehit Osman Avcı Mahallesi sınırına komşu",
+    "Altay Mahallesi — Eryaman toplu konut kuşağı"
   ],
   "alternatifAdlar": [
     "Kutlutaş Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

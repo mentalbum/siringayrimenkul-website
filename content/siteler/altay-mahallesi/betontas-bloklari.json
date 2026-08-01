@@ -7,7 +7,7 @@
     "lng": 32.6443
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/betontas-bloklari-boundary.geojson",
-  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesinde, yaklaşık 86.400 m²'lik (86 dönüm) bir alana yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. Bölgenin oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesinde, yaklaşık 50.800 m²'lik (51 dönüm) parsel bütününe yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. Yerel konut kayıtlarında ada yüzeylerinin toplamı yaklaşık 56 dönüm olarak ölçülür; tapu parsellerinin toplamıyla arasındaki fark, blokların arasını dolduran yol ve ortak yeşil alanlardır. Aynı kayıtlara göre bloklar 1989 yapımı, 4–5 katlı ve blok başına 8 ile 10 daire düşüyor; bu, kümeyi çevredeki yüksek katlı yapılardan ayıran en belirgin özellik — az daireli, alçak katlı ve bahçeye açılan bir apartman dokusu. Daireler ağırlıklı olarak 2+1 ve 3+1; 2+1'ler yaklaşık 80 m², 3+1'ler 100 m² net (110 m² brüt) kullanım alanı sunuyor. Isıtma merkezi sistemle sağlanıyor; ilan bilgilerine göre bloklarda asansör bulunmuyor — 4–5 katlı yapı ölçeğiyle tutarlı bu durum, kat tercihini ve dolayısıyla değerlemeyi doğrudan etkiler. Blok künyelerinde sayılan ortak donatılar arasında bahçe, kapıcı, otopark, oyun parkı, jeneratör, hidrofor, su deposu, yangın merdiveni ile ısı ve ses yalıtımı yer alıyor; adalardan birinin künyesinde tenis kortu geçiyor, ilan metinleri de site içinde çocuk parkı ve basketbol sahası bulunduğunu belirtiyor. Blok adları Anadolu yer adları ve doğa sözcüklerinden seçilmiş; Söğüt, Çınar, Manolya, Kocatepe, Gelibolu, İncesu, Kızılırmak, Kirazlı, Zeytinlik ve Yağmur apartmanları bu adlardan yalnızca birkaçı. Küme Söğüt Caddesi'ne cephelidir, Şehit Ahmet Taner Ekici Caddesi de yakın aksıdır; çevrede Betontaş adını taşıyan bir iş merkezi, bir park ve bir spor tesisi bulunur — yerleşimin adı çevrenin yön tarifine yerleşmiş durumda. Bölgenin oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17516",
@@ -52,13 +52,21 @@
   ],
   "ozellikler": [
     "8 ada, toplam 66 kargir apartman bloğu (TKGM)",
-    "~86.400 m² (86 dönüm) yerleşim alanı",
+    "8 adanın parsel toplamı ~50.800 m² (51 dönüm, TKGM)",
     "Bölgenin ilk yapılaşma dokusu",
     "Kat mülkiyetli parsel (TKGM)",
-    "Okul, çarşı ve park aksına yerleşik konum"
+    "Bloklar 1989 yapımı (yerel kayıt)",
+    "4–5 katlı bloklar, blok başına 8–10 daire (yerel kayıt)",
+    "Daireler 2+1 (~80 m²) ve 3+1 (100 m² net / 110 m² brüt)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "İlan bilgilerine göre bloklarda asansör yok",
+    "Site içinde çocuk parkı ve basketbol sahası (ilan bilgisi)",
+    "Söğüt Caddesi cephesi; Betontaş İş Merkezi ve parkı yakın",
+    "Okul, çarşı ve park aksına yerleşik konum",
+    "Altay Mahallesi — Eryaman'ın ilk yapılaşma kuşağı"
   ],
   "alternatifAdlar": [
     "Betontaş Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }
