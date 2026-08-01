@@ -99,12 +99,10 @@ export default async function EtapPage({ params }: Props) {
       <section className="mt-12">
         <h2 className="text-xl">{etap.no}. Etap&apos;taki Adalar</h2>
         <div className="mt-5 flex flex-wrap gap-2">
-          {/* Ada sayfaları site sayfasına yönlendirildi (2026-08-01) — rozetler
-              doğrudan hedefe gitsin, araya yönlendirme adımı girmesin. */}
           {etap.adalar.map((ada) => (
             <Link
               key={adaRouteKey(ada)}
-              href={`/mahalleler/${mahalle.slug}/${ada.site.slug}`}
+              href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
               title={ada.site.isim}
               className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
             >

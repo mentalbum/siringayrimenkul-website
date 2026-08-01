@@ -1,58 +1,4 @@
-import fs from "node:fs";
-import path from "node:path";
 import type { NextConfig } from "next";
-
-/**
- * Ada sayfaları → o adadaki SİTE sayfasına kalıcı yönlendirme.
- *
- * Ölçülen gerçek (2026-08-01, canlı SERP): Tunahan'da 25 site aramasının
- * 7'sinde Google, site sayfası yerine ada sayfasını gösteriyordu — "Su Damlası
- * Sitesi emlakçı" → /adalar/46512-9, "Yüksel Blokları emlakçı" → /adalar/17662-1
- * gibi. Ada sayfaları noindex + sitemap dışıydı ama bu, dizinden düşmelerini
- * hızlandırmak yerine YAVAŞLATTI: Google noindex etiketini ancak sayfayı
- * yeniden tarayınca görür, sitemap dışı sayfaların tarama sırası ise hiç
- * gelmiyordu. Sonuç: zenginleştirdiğimiz site sayfaları aramada görünmüyor,
- * yerlerine kimsenin aramadığı ada sayfaları çıkıyordu.
- *
- * 308 yönlendirme bu döngüyü kesin olarak kırar: Google URL'i her ziyaretinde
- * site sayfasına düşer, ada sayfası dizinden çıkar ve topladığı sinyal site
- * sayfasına aktarılır.
- *
- * KAPSAM: yalnızca TEK siteli parseller. Paylaşımlı parsellerde (bir adada
- * birden çok site) ada sayfası kalır — orada gerçek bir işlevi var, ziyaretçiye
- * o parseldeki siteleri seçtiriyor ve tek bir doğru yönlendirme hedefi yok.
- * SERP'te site sayfasının önüne geçen 7 vakanın hepsi tekil parseldi.
- */
-function adaYonlendirmeleri() {
-  const kok = path.join(process.cwd(), "content", "siteler");
-  if (!fs.existsSync(kok)) return [];
-  const kurallar: { source: string; destination: string; permanent: true }[] = [];
-  for (const mahalle of fs.readdirSync(kok)) {
-    const dizin = path.join(kok, mahalle);
-    if (!fs.statSync(dizin).isDirectory()) continue;
-    // routeKey → o parseli tutan site slug'ları
-    const parseller = new Map<string, Set<string>>();
-    for (const dosya of fs.readdirSync(dizin)) {
-      if (!dosya.endsWith(".json")) continue;
-      const kayit = JSON.parse(fs.readFileSync(path.join(dizin, dosya), "utf8"));
-      for (const ada of kayit.adalar ?? []) {
-        const key = ada.parsel ? `${ada.no}-${ada.parsel}` : String(ada.no);
-        if (!parseller.has(key)) parseller.set(key, new Set());
-        parseller.get(key)!.add(kayit.slug);
-      }
-    }
-    for (const [key, slugSeti] of parseller) {
-      if (slugSeti.size !== 1) continue; // paylaşımlı parsel — sayfası kalsın
-      const [slug] = slugSeti;
-      kurallar.push({
-        source: `/mahalleler/${mahalle}/adalar/${key}`,
-        destination: `/mahalleler/${mahalle}/${slug}`,
-        permanent: true,
-      });
-    }
-  }
-  return kurallar;
-}
 
 const nextConfig: NextConfig = {
   images: {
@@ -62,10 +8,6 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
-      // Ada sayfalarının tamamı → o adadaki site sayfası (üstteki açıklamaya bak).
-      // Elle yazılmış tekil kurallardan ÖNCE gelir; Next ilk eşleşeni uygular,
-      // aşağıdaki parselsiz eski biçimler (46497, 17635) bununla çakışmaz.
-      ...adaYonlendirmeleri(),
       {
         source: "/index.html",
         destination: "/",
