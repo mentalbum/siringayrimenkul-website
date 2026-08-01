@@ -7,7 +7,7 @@
     "lng": 32.618958
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/guzel-ankara-sitesi-boundary.geojson",
-  "aciklama": "Güzel Ankara Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"Dört Bloktan Oluşan Kargir Apartman\" niteliğiyle kayıtlı 5.097 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarındaki blok adlandırması mahallede benzeri az görülen bir düzende: 19C-2, 21C-3, 23C-1 ve 25C-4 — tek sayılı numara ile C kodunun birleştiği dört blok. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur; fiyatı emsallerle birlikte netleştirelim.",
+  "aciklama": "Güzel Ankara Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"Dört Bloktan Oluşan Kargir Apartman\" niteliğiyle kayıtlı 5.097 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarındaki blok adlandırması mahallede benzeri az görülen bir düzende: 19C-2, 21C-3, 23C-1 ve 25C-4 — tek sayılı numara ile C kodunun birleştiği dört blok. Yerel emlak kayıtlarına göre bloklar 2002 yapımıdır; her blokta 15 daire olmak üzere sitede toplam 60 konut bulunur ve dairelerin tamamı 117 m² 3+1 tipindedir. Bu sitede satılık veya kiralık daireniz mi var? Az bloklu sitelerde her ilan daha görünür olur; fiyatı emsallerle birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18463",
@@ -17,9 +17,12 @@
   "ozellikler": [
     "5.097 m² tek parsel (TKGM)",
     "4 blok (19C-2, 21C-3, 23C-1, 25C-4)",
+    "2002 yapımı (yerel kayıtlar)",
+    "Toplam 60 daire (blok başına 15)",
+    "Daireler 3+1, 117 m²",
     "Orta ölçekli yerleşim",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

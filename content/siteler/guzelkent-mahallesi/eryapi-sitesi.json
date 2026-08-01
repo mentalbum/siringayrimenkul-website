@@ -10,7 +10,7 @@
     "lng": 32.604233
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/eryapi-sitesi-boundary.geojson",
-  "aciklama": "Eryapı Sitesi — yerel emlak kayıtlarında \"Eray Sitesi\" adıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 7.277 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel kayıtlarda bloklar 4A'dan 4F'ye uzanan adlarla sıralanıyor — altı blok. Bu sitede satılık veya kiralık daireniz mi var? İki adla da aranan bir sitede doğru görünürlük önemli: fiyatı ve sunumu, siteyi yakından tanıyan emlakçınızla birlikte kurgulayın.",
+  "aciklama": "Eryapı Sitesi — yerel emlak kayıtlarında \"Eray Sitesi\" adıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 7.277 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel kayıtlarda bloklar 4A'dan 4F'ye uzanan adlarla sıralanıyor — altı blok. Aynı kayıtlar sitenin 2002 yapımı olduğunu gösteriyor; blok bazında verilen dökümde daireler 3+1 ve yaklaşık 117 m² olarak görünüyor. Bu sitede satılık veya kiralık daireniz mi var? İki adla da aranan bir sitede doğru görünürlük önemli: fiyatı ve sunumu, siteyi yakından tanıyan emlakçınızla birlikte kurgulayın.",
   "adalar": [
     {
       "no": "18657",
@@ -20,10 +20,12 @@
   "ozellikler": [
     "7.277 m² tek parsel (TKGM)",
     "6 blok (4A–4F)",
+    "2002 yapımı (yerel kayıtlar)",
+    "3+1 daireler, yaklaşık 117 m² (yerel kayıtlar)",
     "Yerel kayıtlarda \"Eray Sitesi\" adıyla geçer",
     "Güzelkent'in yerleşik sitelerinden",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

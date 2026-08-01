@@ -7,7 +7,7 @@
     "lng": 32.609247
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/parkyaman-evleri-boundary.geojson",
-  "aciklama": "Parkyaman Evleri, Ata Mahallesi'nde üç bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Beton Apartman' niteliğiyle kayıtlı 20.925 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 21 dönümlük parsel, blok başına düşen açık alan payını mahalle ortalamasının belirgin üzerine taşır. Adının çağrıştırdığı ferah yerleşim düzeniyle bahçeli site yaşamı arayan profile hitap eder. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Parkyaman Evleri, Ata Mahallesi'nde üç bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Beton Apartman' niteliğiyle kayıtlı 20.925 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 21 dönümlük parsel, blok başına düşen açık alan payını mahalle ortalamasının belirgin üzerine taşır. Adının çağrıştırdığı ferah yerleşim düzeniyle bahçeli site yaşamı arayan profile hitap eder. Yerel emlak kayıtlarına göre site 2009 yapımıdır; 15A, 15B ve 15C adlarıyla anılan bloklarda her birinde 44 daire, toplamda 132 konut bulunur. Aynı kayıtlarda daire karması blok başına 40 adet 3+1 ve 4 adet 6+1 olarak verilir, konut alanları 150-220 m² aralığında gösterilir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45839",
@@ -16,11 +16,14 @@
   ],
   "ozellikler": [
     "~20.925 m² parsel (TKGM)",
+    "2009 yapımı (yerel kayıtlar)",
+    "Toplam 132 daire (3 blok, blok başına 44)",
+    "3+1 ve 6+1 daire tipleri, 150-220 m²",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
     "Parkyaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

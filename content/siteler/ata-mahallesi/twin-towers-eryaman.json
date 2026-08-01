@@ -7,7 +7,7 @@
     "lng": 32.598182
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/twin-towers-eryaman-boundary.geojson",
-  "aciklama": "Twin Towers Eryaman, Ata Mahallesi'nde 35'er katlı ikiz bloklarıyla bölgenin en yüksek yapıları arasındadır. TKGM kayıtlarına göre 11.316 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '35 Katlı A ve B Blok Betonarme Apartman' olarak tanımlar; proje kaynaklarına göre sitede toplam 128 daire bulunur — bu yükseklikte az daire, kat başına düşen ferahlığın işaretidir. Üst katlar Ankara'nın batısına eşsiz genişlikte bir görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Twin Towers Eryaman, Ata Mahallesi'nde 35'er katlı ikiz bloklarıyla bölgenin en yüksek yapıları arasındadır. TKGM kayıtlarına göre 11.316 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '35 Katlı A ve B Blok Betonarme Apartman' olarak tanımlar; proje kaynaklarına göre sitede toplam 128 daire bulunur — bu yükseklikte az daire, kat başına düşen ferahlığın işaretidir. Üst katlar Ankara'nın batısına eşsiz genişlikte bir görüş sunar. Aynı proje kaynakları, yapının geliştiricisi olarak Mandalin A.Ş. adlı firmayı gösterir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44764",
@@ -16,12 +16,13 @@
   ],
   "ozellikler": [
     "~11.316 m² parsel (TKGM)",
-    "1-35 kat aralığında bloklar (tapu kaydı)",
+    "35'er katlı ikiz bloklar (tapu kaydı)",
+    "Geliştirici: Mandalin A.Ş. (proje kaynakları)",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
     "Twin Towers Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

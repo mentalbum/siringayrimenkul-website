@@ -2,7 +2,7 @@
   "isim": "Kainat Evleri",
   "slug": "kainat-evleri",
   "mahalleSlug": "ata-mahallesi",
-  "aciklama": "Kainat Evleri, Ata Mahallesi'nde 10 katlı A bloğu ile 12'şer katlı B ve C bloklarından oluşan bir konut sitesidir; parseldeki tek katlı D blok ticari (ofis/işyeri) birimdir. TKGM kayıtlarına göre yaklaşık 15.971 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Katli A Blok,12 Katli B Ve C Blok,Betonarme Apartman Ve 1 Katli D Blok Betonarme Ofis-Işyeri\". Konut bloklarının kat farkı aynı sitede farklı manzara katmanları oluştururken, tek katlı ticari birim günlük ihtiyacı site sınırında karşılar; Kainat 2 Evleri ile birlikte bölgede bilinen bir site ailesidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kainat Evleri, Ata Mahallesi'nde 10 katlı A bloğu ile 12'şer katlı B ve C bloklarından oluşan bir konut sitesidir; parseldeki tek katlı D blok ticari (ofis/işyeri) birimdir. TKGM kayıtlarına göre yaklaşık 15.971 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Katli A Blok,12 Katli B Ve C Blok,Betonarme Apartman Ve 1 Katli D Blok Betonarme Ofis-Işyeri\". Konut bloklarının kat farkı aynı sitede farklı manzara katmanları oluştururken, tek katlı ticari birim günlük ihtiyacı site sınırında karşılar; Kainat Evler 2 ile birlikte bölgede bilinen bir site ailesidir. Yüklenici firmanın kendi proje kayıtlarına göre yapım işini Leda Grup (Leda Yapı ve Proje Taahhüt) üstlenmiş, 150 konutluk proje 2013-2014 döneminde tamamlanmıştır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 40.009323,
     "lng": 32.615804
@@ -17,6 +17,8 @@
   "ozellikler": [
     "3 konut bloğu (A 10 katlı, B ve C 12'şer katlı)",
     "Tek katlı ticari D blok (tapu)",
+    "Yüklenici: Leda Grup (proje kaydı)",
+    "150 konutluk proje, 2013-2014 (proje kaydı)",
     "~15.971 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
@@ -24,5 +26,5 @@
   "alternatifAdlar": [
     "Kainat Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

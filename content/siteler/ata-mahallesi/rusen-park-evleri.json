@@ -7,7 +7,7 @@
     "lng": 32.6204573
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/rusen-park-evleri-boundary.geojson",
-  "aciklama": "Ruşen Park Evleri, Ata Mahallesi'nde üç yüksek bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre 17.170 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '12 Katlı A ve B Blok ile 13 Katlı C Blok Betonarme' olarak tanımlar. Üç bloğun 17 dönümlük parsele seyrek yerleşimi, adındaki 'park' vurgusunu karşılayan geniş açık alan payı bırakır; Ata'nın modern konut kuşağının bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ruşen Park Evleri, Ata Mahallesi'nde üç yüksek bloklu, geniş parselli bir konut sitesidir. TKGM kayıtlarına göre 17.170 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '12 Katlı A ve B Blok ile 13 Katlı C Blok Betonarme' olarak tanımlar. Üç bloğun 17 dönümlük parsele seyrek yerleşimi, adındaki 'park' vurgusunu karşılayan geniş açık alan payı bırakır; Ata'nın modern konut kuşağının bilinen adreslerindendir. Yerel emlak kayıtlarına göre site 2010 yapımıdır; A ve B bloklarında 43, C bloğunda 48 daire olmak üzere toplam 134 konut bulunur. Aynı kayıtlarda her blokta dört adet 6+1 dubleks yer aldığı, diğer dairelerin 3+1 tipinde olduğu belirtilir; konut alanları 125-210 m² aralığında gösterilir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46213",
@@ -16,6 +16,9 @@
   ],
   "ozellikler": [
     "~17.170 m² parsel (TKGM)",
+    "2010 yapımı (yerel kayıtlar)",
+    "Toplam 134 daire (A 43, B 43, C 48)",
+    "3+1 daireler ve 6+1 dubleksler, 125-210 m²",
     "12-13 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
@@ -23,5 +26,5 @@
   "alternatifAdlar": [
     "Ruşen Park Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

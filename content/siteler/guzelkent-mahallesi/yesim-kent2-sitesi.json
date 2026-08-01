@@ -10,7 +10,7 @@
     "lng": 32.6035451
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/yesim-kent2-sitesi-boundary.geojson",
-  "aciklama": "Yeşim Kent 2 Sitesi — yerel kayıtlarda \"Yeşimkent 2\" yazımıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Bloktan Oluşan Kargir Aprt.\" niteliğiyle kayıtlı 5.264 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 2 ile 2-A'dan 2-E'ye uzanan adlarla sıralanıyor — altı blok. Arzutaş Sitesi'yle ardışık adalardadır. Yeşim Kent 2'de dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat ve iç durumla netleşir — birlikte değerlendirelim.",
+  "aciklama": "Yeşim Kent 2 Sitesi — yerel kayıtlarda \"Yeşimkent 2\" yazımıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Bloktan Oluşan Kargir Aprt.\" niteliğiyle kayıtlı 5.264 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 2 ile 2-A'dan 2-E'ye uzanan adlarla sıralanıyor — altı blok. Arzutaş Sitesi'yle ardışık adalardadır. Kooperatif birliğinin kendi kayıtlarına göre site, ERYAMAN-KOOP birliğine bağlı S.S. Yeşimkent Konut Yapı Kooperatifi eliyle, 1990'ların ikinci yarısında tamamlanan Güzelkent Projesi kapsamında yapılmıştır. Aynı kooperatifin ikinci parselinde kurulan Yeşimkent Sitesi ile kardeş yerleşimlerdir. Yeşim Kent 2'de dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat ve iç durumla netleşir — birlikte değerlendirelim.",
   "adalar": [
     {
       "no": "18643",
@@ -21,9 +21,12 @@
     "5.264 m² tek parsel (TKGM)",
     "6 blok (2, 2-A–2-E)",
     "Yerel kayıtlarda \"Yeşimkent 2\" yazımıyla geçer",
+    "S.S. Yeşimkent Konut Yapı Kooperatifi yapısı (ERYAMAN-KOOP üyesi)",
+    "Güzelkent Projesi kapsamında yapıldı",
+    "Yeşimkent Sitesi ile aynı kooperatifin kardeş yerleşimi",
     "Arzutaş Sitesi'yle ardışık adalarda",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

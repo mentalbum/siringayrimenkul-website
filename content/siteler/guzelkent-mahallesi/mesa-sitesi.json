@@ -2,7 +2,7 @@
   "isim": "Mesa Sitesi",
   "slug": "mesa-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Mesa Sitesi, Etimesgut Güzelkent Mahallesi'nde dört komşu adaya yayılan 12 bloklu bir konut sitesidir. Yerel emlak kayıtlarında bloklar 7F, 9E ve 11D ile G'den O'ya uzanan harfli adlarla (G-1B, H-1A, I-1, J-5B, K-5A, L-5, M-3B, N-3A, O-3) listelenir. TKGM kayıtlarına göre dört parselin dördü de kat mülkiyetlidir ve her birinin tapu niteliği \"3 Blok Kargir Apartman\"dır; toplam alanları yaklaşık 18.985 m²'yi bulur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mesa Sitesi, Etimesgut Güzelkent Mahallesi'nde dört komşu adaya yayılan 12 bloklu bir konut sitesidir. Yerel emlak kayıtlarında bloklar 7F, 9E ve 11D ile G'den O'ya uzanan harfli adlarla (G-1B, H-1A, I-1, J-5B, K-5A, L-5, M-3B, N-3A, O-3) listelenir. TKGM kayıtlarına göre dört parselin tamamı kat mülkiyetlidir ve her birinin tapu niteliği \"3 Blok Kargir Apartman\"dır; toplam alanları yaklaşık 18.985 m²'yi bulur. Yerel emlak kayıtlarına göre bloklar 2002 yapımı ve dörder katlıdır; daireler 117 m² büyüklüğünde 3+1 planlıdır; site toplamı yaklaşık 230 daireyi bulur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.985355,
     "lng": 32.60931
@@ -28,10 +28,12 @@
   "ozellikler": [
     "12 blok, dört komşu adada (üçer blok)",
     "Bloklar: 7F, 9E, 11D ve G–O harfli adlar",
+    "2002 yapımı, dörder katlı bloklar (yerel kayıt)",
+    "Yaklaşık 230 daire — 3+1, 117 m²",
     "Dört parsel toplamı ~18.985 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/mesa-sitesi-boundary.geojson"
 }

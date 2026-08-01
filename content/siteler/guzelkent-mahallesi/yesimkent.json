@@ -2,18 +2,20 @@
   "isim": "Yeşimkent",
   "slug": "yesimkent",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Yeşimkent, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; TKGM kayıtlarına göre site, 5.001 m²'lik tek parsel üzerine kurulu ve tapuda \"A-1,A-2,A-3,A-4,A-5,A-6 Bloktan Oluşan Kargir Apartman\" niteliğiyle geçiyor. Bloklar yerel emlak kayıtlarında 12 ile 12A'dan 12E'ye uzanan adlarla sıralanıyor — altı blok. Altay Sitesi'yle ardışık adalardadır. Yeşimkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat, cephe ve iç durumla netleşir — birlikte değerlendirelim.",
+  "aciklama": "Yeşimkent, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir; TKGM kayıtlarına göre site, 5.001 m²'lik tek parsel üzerine kurulu ve tapuda \"A-1,A-2,A-3,A-4,A-5,A-6 Bloktan Oluşan Kargir Apartman\" niteliğiyle geçiyor. Bloklar yerel emlak kayıtlarında 12 ile 12A'dan 12E'ye uzanan adlarla sıralanıyor — altı blok. Altay Sitesi'yle ardışık adalardadır. Yerel emlak kayıtlarına göre blokların yapım yılı 1999; her biri 5 katlı ve blok başına 10 daireli olduğundan sitede toplam 60 daire bulunur, daireler 3+1 ve yaklaşık 117 m² olarak geçer. Yeşimkent'te dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat blok, kat, cephe ve iç durumla netleşir — birlikte değerlendirelim.",
   "ozellikler": [
     "5.001 m² tek parsel (TKGM)",
     "6 blok (12, 12A–12E)",
     "Altay Sitesi'yle ardışık adalarda",
     "Kat mülkiyetli parsel (TKGM)",
+    "1999 yapımı (yerel kayıtlar)",
+    "Yaklaşık 60 daire (3+1, ~117 m²)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Yeşimkent Sitesi"
   ],
-  "zenginlestirildi": "2026-07-14",
+  "zenginlestirildi": "2026-08-01",
   "koordinat": {
     "lat": 39.990165,
     "lng": 32.60545

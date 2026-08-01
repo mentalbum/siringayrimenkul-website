@@ -7,7 +7,7 @@
     "lng": 32.622355
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/dilara-sitesi-boundary.geojson",
-  "aciklama": "Dilara Sitesi, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 14.839 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun yaklaşık 15 dönümlük parsele seyrek yerleşimi, blok aralarını ve yeşil payını geniş tutar; Ata'nın villa ve bahçeli site kuşağına komşu bu kesim, sakin bir yerleşim dokusu sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Dilara Sitesi, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 14.839 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun yaklaşık 15 dönümlük parsele seyrek yerleşimi, blok aralarını ve yeşil payını geniş tutar; Ata'nın villa ve bahçeli site kuşağına komşu bu kesim, sakin bir yerleşim dokusu sunar. Yerel emlak kayıtlarında Dilara Sitesi adı, hemen bitişikteki komşu adada yer alan bloklarla birlikte kullanılır; bu geniş anlamıyla site toplam sekiz bloğu kapsar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46197",
@@ -17,7 +17,8 @@
   "ozellikler": [
     "~14.839 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Geniş anlamıyla 8 blok (komşu adayla birlikte)",
     "Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

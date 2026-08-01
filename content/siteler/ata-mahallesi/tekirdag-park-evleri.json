@@ -7,7 +7,7 @@
     "lng": 32.6233294
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/tekirdag-park-evleri-boundary.geojson",
-  "aciklama": "Tekirdağ Park Evleri, Ata Mahallesi'nde adını site içindeki parktan alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 21.949 m²'lik parsel tapuda arsa/kat irtifakı aşamasında görünmektedir — alım-satım ve kredi süreçlerinde bu ayrım önemlidir; işlem öncesi güncel tapu durumunu birlikte kontrol ederiz. 22 dönüme yaklaşan parselin park içeren düzeni, siteye adını veren yeşil karakteri taşır; Ata'nın bahçeli site kuşağında aileler için aranan bir profildir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Tekirdağ Park Evleri, Ata Mahallesi'nde adını site içindeki parktan alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 21.949 m²'lik parsel tapuda arsa/kat irtifakı aşamasında görünmektedir; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. 22 dönüme yaklaşan parselin park içeren düzeni, siteye adını veren yeşil karakteri taşır; Ata'nın bahçeli site kuşağında aileler için aranan bir profildir. Site yönetiminin yayımladığı daire dökümüne göre A, B, C ve D adlı dört blokta her birinde 43 daire yer alır; dairelerin tamamı 3+1 ve yaklaşık 130 m² tipindedir, her blokta asansör bulunur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46193",
@@ -17,11 +17,14 @@
   "ozellikler": [
     "Site içi park alanı",
     "~21.949 m² parsel (TKGM)",
+    "4 blok (A, B, C, D), blok başına 43 daire",
+    "Daireler 3+1, yaklaşık 130 m²",
+    "Her blokta asansör",
     "Kat irtifaklı parsel (TKGM)",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
     "Tekirdağ Park Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }
