@@ -7,7 +7,7 @@
     "lng": 32.657782
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/tureli-residence-boundary.geojson",
-  "aciklama": "Türeli Residence, Şehit Osman Avcı Mahallesi'nde 10 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 3.838 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Tek blok ölçeği yönetimi yalın tutar; kompakt daire arayan ve kiralama tarafında hızlı dönüş isteyen profillerin adresidir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Türeli Residence, Şehit Osman Avcı Mahallesi'nde 10 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 3.838 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Tek blok ölçeği yönetimi yalın tutar; kompakt daire arayan ve kiralama tarafında hızlı dönüş isteyen profillerin adresidir. Yüklenici proje kayıtlarına göre yapının elektrik ve mekanik taahhüt işleri 2015-2017 döneminde tamamlanmıştır; aynı kayıtlar binada ofisler ve bir sosyal tesis bulunduğunu, analog adresli yangın algılama sistemi, IP güvenlik kameraları ve görüntülü diafon sisteminin kurulu olduğunu belirtir. Bu teknik altyapı, tapudaki ofis-işyeri niteliğiyle örtüşen somut bir ayrıntıdır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46643",
@@ -18,10 +18,13 @@
     "~3.838 m² parsel (TKGM)",
     "10 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Konut + ticari karma kullanım (tapu kaydı)",
+    "Ticari nitelik: ofis-işyeri (tapu kaydı)",
+    "Bünyesinde ofisler ve sosyal tesis (proje kayıtları)",
+    "Adresli yangın algılama, IP kamera, görüntülü diafon",
+    "Elektrik-mekanik işleri 2015-2017 döneminde tamamlandı",
     "Şehit Osman Avcı Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Türeli Rezidans",
     "Türeli Sitesi"

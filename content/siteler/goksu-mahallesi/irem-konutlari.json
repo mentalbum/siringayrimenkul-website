@@ -7,7 +7,7 @@
     "lng": 32.639491
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/irem-konutlari-boundary.geojson",
-  "aciklama": "İrem Konutları, Göksu Mahallesi'nde on dört apartmanlık büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, tapuda '14 Blok Kargir Apartman' niteliğiyle kayıtlı 37.844 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — Göksu'nun tek parseldeki en geniş sitelerinden biri. On dört bloğun 38 dönüme yayılan düzeni geniş yeşil alan bırakır; ölçeği sayesinde emsal verisi her dönem bol ve tazedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İrem Konutları, Göksu Mahallesi'nde on dört apartmanlık büyük bir kooperatif yerleşimidir. TKGM kayıtlarına göre site, tapuda '14 Blok Kargir Apartman' niteliğiyle kayıtlı 37.844 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — Göksu'nun tek parseldeki en geniş sitelerinden biri. On dört bloğun 38 dönüme yayılan düzeni geniş yeşil alan bırakır; ölçeği sayesinde emsal verisi her dönem bol ve tazedir. İlan kayıtlarında daireler ağırlıklı olarak 4+1 ve 160-175 m² aralığında temsil ediliyor; konum tariflerinde Göksu AVM ve sağlık ocağı yakınlığı öne çıkıyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46460",
@@ -17,10 +17,12 @@
   "ozellikler": [
     "~37.844 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "İlanlarda ağırlıklı 4+1 (160-175 m²)",
+    "Göksu AVM ve sağlık ocağına yakın",
     "Göksu Mahallesi"
   ],
   "alternatifAdlar": [
     "İrem Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

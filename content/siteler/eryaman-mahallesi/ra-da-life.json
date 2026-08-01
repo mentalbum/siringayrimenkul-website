@@ -7,7 +7,7 @@
     "lng": 32.62654
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/ra-da-life-boundary.geojson",
-  "aciklama": "Ra-Da Life, Eryaman Mahallesi'nde kademeli iki bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 4.869 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A Blok ve 5 Katlı B Blok Betonarme' olarak tanımlar — yüksek ana blok ile az katlı yan bloğun buluşması, apartman dairesinden sakin az-katlı yaşama uzanan seçenek sunar. Üst katlarda mahalleye açık geniş görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ra-Da Life, Eryaman Mahallesi'nde kademeli iki bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 4.869 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A Blok ve 5 Katlı B Blok Betonarme' olarak tanımlar — yüksek ana blok ile az katlı yan bloğun buluşması, apartman dairesinden sakin az-katlı yaşama uzanan seçenek sunar. Üst katlarda mahalleye açık geniş görüş vardır. Geliştiricinin tanıtımına göre proje Ra-Da İnşaat imzasını taşır; inşaat Eylül 2014'te başlamış, daireler Mart 2016'da teslim edilmiştir. Aynı tanıtım yapıyı bir otopark katı, dört ticari kat ve on iki konut katı olarak anlatır: toplam 120 daire 2+1 ile geniş ve kompakt 1+1 tipleri arasında dağılır, her konut katında on daire bulunur. Daire başına birer araçlık kapalı otopark, sosyal tesis ve yaklaşık 14.000 m²'lik ticari alan projenin öne çıkan başlıkları; metro istasyonunun hemen çıkışındaki konumu günlük ulaşımı pratikleştirir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46530",
@@ -17,11 +17,15 @@
   "ozellikler": [
     "~4.869 m² parsel (TKGM)",
     "5-17 kat aralığında bloklar (tapu kaydı)",
+    "Ra-Da İnşaat projesi — Mart 2016 teslim (geliştirici tanıtımı)",
+    "120 daire; 1 otopark + 4 ticari + 12 konut katı (geliştirici tanıtımı)",
+    "2+1 ve 1+1 daire tipleri, katta 10 daire",
+    "Daire başına birer araçlık kapalı otopark",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
   "alternatifAdlar": [
     "Ra-Da Life Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

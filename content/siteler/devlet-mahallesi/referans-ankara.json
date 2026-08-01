@@ -7,7 +7,7 @@
     "lng": 32.612823
   },
   "sinirGeoJSON": "siteler/devlet-mahallesi/referans-ankara-boundary.geojson",
-  "aciklama": "Referans Ankara, Devlet Mahallesi sınırındaki modern gelişim aksında yükselen, Eryaman silüetinin en yüksek projelerinden biridir. TKGM kayıtlarına göre 49.233 m²'lik kat mülkiyetli tek parselde tapu niteliği yapıyı ayrıntısıyla anlatır: 33 katlı A-B-C-D-E blokları, 31 katlı F-G-H blokları ve 29 katlı I bloğu — toplam dokuz yüksek blok. Ölçeği ve kat yüksekliğiyle bölgedeki en yoğun dikey yaşam alanıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Referans Ankara, Devlet Mahallesi sınırındaki modern gelişim aksında yükselen, Eryaman silüetinin en yüksek projelerinden biridir. TKGM kayıtlarına göre 49.233 m²'lik kat mülkiyetli tek parselde tapu niteliği yapıyı ayrıntısıyla anlatır: 33 katlı A-B-C-D-E blokları, 31 katlı F-G-H blokları ve 29 katlı I bloğu — toplam dokuz yüksek blok. Ölçeği ve kat yüksekliğiyle bölgedeki en yoğun dikey yaşam alanıdır. Yerel kaynaklara göre proje SF Yıldız İnşaat, Fırat Life Style ve Ata Yıldız Grup ortaklığıyla geliştirilmiş, teslimler 2021 sonunda başlamıştır; dokuz blokta 1+1'den 4+1'e uzanan toplam 2.104 konut yer alır. Site içinde kapalı yüzme havuzu, fitness, spa, sauna, hamam, sinema, kütüphane, kreş, hobi atölyeleri, basketbol-voleybol ve tenis sahaları, yürüyüş parkuru ve çarşı bulunur; giriş 7/24 kameralı güvenliklidir. Şapka Devrimi Caddesi üzerindeki, Eryaman Stadı'na komşu konumu Metromall ve metro istasyonunu yürüme mesafesinde bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "48507",
@@ -18,10 +18,17 @@
     "49.233 m² tek parsel (TKGM)",
     "9 yüksek blok: 5×33 + 3×31 + 1×29 kat (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Eryaman silüetinin en büyük projelerinden"
+    "SF Yıldız + Fırat Life Style + Ata Yıldız ortaklığı",
+    "2.104 konut, 1+1'den 4+1'e daire tipleri",
+    "Kapalı havuz, spa, sauna, hamam, fitness, sinema",
+    "Kreş, kütüphane, hobi atölyeleri, spor sahaları, çarşı",
+    "Teslimler 2021 sonunda başladı (yerel kaynaklar)",
+    "Şapka Devrimi Caddesi — Eryaman Stadı komşusu",
+    "Eryaman silüetinin en büyük projelerinden",
+    "Devlet Mahallesi"
   ],
   "alternatifAdlar": [
     "Referans Ankara Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

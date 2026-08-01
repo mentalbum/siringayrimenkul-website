@@ -7,7 +7,7 @@
     "lng": 32.6533366
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/address-goksu-boundary.geojson",
-  "aciklama": "Address Göksu, Eryaman Şehit Osman Avcı Mahallesi'nde 1. TBMM Caddesi üzerinde, ALR İnşaat tarafından geliştirilmiş bir konut projesidir. Göksu Parkı ve gölet manzarasına bakan konumu projenin ana değeri; ilanlarda özellikle göl cepheli büyük tip 4+1 daireler (~151 m²) öne çıkıyor. Modern mimarisi, site içi sosyal alanları ve otoparkıyla mahallenin yeni nesil projelerinden; hem doğaya hem İstanbul Yolu aksının ulaşım imkanlarına yakın. Tapu kaydına göre yapı, yaklaşık 9.863 m²'lik parselde on sekizer katlı A ve B blokları ile sekiz katlı C bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı projelerde fiyatı cephe (göl/park yönü) ve kat ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Address Göksu, Eryaman Şehit Osman Avcı Mahallesi'nde 1. TBMM Caddesi üzerinde, ALR İnşaat tarafından geliştirilmiş bir konut projesidir. Göksu Parkı ve gölet manzarasına bakan konumu projenin ana değeri; ilanlarda özellikle göl cepheli büyük tip 4+1 daireler (~151 m²) öne çıkıyor. Modern mimarisi, site içi sosyal alanları ve otoparkıyla mahallenin yeni nesil projelerinden; hem doğaya hem İstanbul Yolu aksının ulaşım imkanlarına yakın. Geliştiricinin tanıtımına göre projede 102 konut ve 44 adet cadde dükkânı yer alır; daireler 3+1 ve 4+1 tiplerindedir ve imalat 2023'te başlamıştır. Konut ile cadde ticaretini bir arada barındıran bu karma kurgu, hem oturum hem işletme tarafında ayrı bir talep tabanı oluşturur. Tapu kaydına göre yapı, yaklaşık 9.863 m²'lik parselde on sekizer katlı A ve B blokları ile sekiz katlı C bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı projelerde fiyatı cephe (göl/park yönü) ve kat ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46620",
@@ -18,14 +18,18 @@
     "Tapu: 18'er katlı A-B + 8 katlı C blok — ofis-işyeri niteliği",
     "Yaklaşık 9,9 dönümlük parsel (TKGM)",
     "ALR İnşaat — modern mimari",
+    "102 konut + 44 cadde dükkânı (geliştirici tanıtımı)",
+    "3+1 ve 4+1 daire tipleri",
+    "İmalat 2023'te başladı (geliştirici tanıtımı)",
     "Göksu Parkı ve gölet manzarası",
     "Büyük tip 4+1 (~151 m²) öne çıkıyor",
     "Kat mülkiyetli parsel (TKGM)",
-    "Site içi sosyal alanlar, otopark"
+    "Site içi sosyal alanlar, otopark",
+    "1. TBMM Caddesi — Şehit Osman Avcı Mahallesi"
   ],
   "adres": "1. TBMM Caddesi, Şehit Osman Avcı, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Address Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

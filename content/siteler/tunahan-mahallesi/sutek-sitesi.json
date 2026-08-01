@@ -2,12 +2,13 @@
   "isim": "Sutek Sitesi",
   "slug": "sutek-sitesi",
   "mahalleSlug": "tunahan-mahallesi",
+  "adres": "Tunahan Mahallesi 237. Sokak No: 1K, Etimesgut/Ankara",
   "koordinat": {
     "lat": 39.982684,
     "lng": 32.619733
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/sutek-sitesi-boundary.geojson",
-  "aciklama": "Sutek Sitesi (Sutek Blokları), Tunahan Mahallesi'nde iki adaya yayılmış büyük bir kooperatif sitesidir. TKGM kayıtlarına göre ilk parselde 13, ikincisinde 12 blok kayıtlı — toplam 25 blok ve yaklaşık 41.300 m²; her iki parsel de kat mülkiyetli. Bloklar yerel kayıtlarda A'dan E'ye uzanan seri kodlarla anılıyor. Geniş yeşil alanlı yerleşim düzeniyle bölgenin karakteristik sitelerindendir. Yerleşimin çevresi, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksıyla komşudur. Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin. (Yazımı 'Sütek' olarak da geçer; Eryaman bölgedeki Sutek Blokları ise Altay'da ayrı bir yerleşimdir.)",
+  "aciklama": "Sutek Sitesi (Sutek Blokları), Tunahan Mahallesi'nde iki adaya yayılmış büyük bir kooperatif sitesidir. TKGM kayıtlarına göre ilk parselde 13, ikincisinde 12 blok kayıtlı — toplam 25 blok ve yaklaşık 41.300 m²; her iki parsel de kat mülkiyetli. Bloklar yerel kayıtlarda A'dan E'ye uzanan seri kodlarla anılıyor. Geniş yeşil alanlı yerleşim düzeniyle bölgenin karakteristik sitelerindendir. Yerleşimin çevresi, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksıyla komşudur; site 237. Sokak hattında yer alır. İlan kayıtlarında 1+1 (yaklaşık 55 m²) ve 3+1 daireler görülür; 25 bloklu bu ölçekte tip çeşitliliğinin daha geniş olması beklenir. (Yazımı 'Sütek' olarak da geçer; Altay Mahallesi'ndeki Sutek Blokları ise ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Büyük kooperatif sitelerinde doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46506",
@@ -24,10 +25,11 @@
     "İki parsel, toplam ~41.300 m² (TKGM)",
     "25 blok (13 + 12, tapu kaydı)",
     "A–E serisi blok kodları",
+    "1+1 (~55 m²) ve 3+1 daireler (ilan kayıtları)",
     "Kat mülkiyetli parseller (TKGM)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Sutek Blokları",
     "Sütek Sitesi"

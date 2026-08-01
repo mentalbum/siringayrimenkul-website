@@ -2,12 +2,13 @@
   "isim": "Park İnci Konutları",
   "slug": "park-inci-konutlari",
   "mahalleSlug": "goksu-mahallesi",
+  "adres": "2. TBMM Caddesi No:4/7, Göksu Mahallesi, Etimesgut/Ankara",
   "koordinat": {
     "lat": 39.984109,
     "lng": 32.6393023
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/park-inci-konutlari-boundary.geojson",
-  "aciklama": "Park İnci Konutları, Göksu'nun yerel kayıtlarda 'Havuzluevler' olarak anılan kuşağında, on iki apartmanlık büyük bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda 'On İki Blok Kargir Apartman' niteliğiyle kayıtlı 21.973 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — on iki bloğun 22 dönüme yayılan oturmuş düzeni, bol ve taze emsal verisi demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Park İnci Konutları, Göksu'nun yerel kayıtlarda 'Havuzluevler' olarak anılan kuşağında, on iki apartmanlık büyük bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda 'On İki Blok Kargir Apartman' niteliğiyle kayıtlı 21.973 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — on iki bloğun 22 dönüme yayılan oturmuş düzeni, bol ve taze emsal verisi demektir. Site 2. TBMM Caddesi üzerindedir; harita kayıtlarına göre Polis Şehitleri Parkı'na yaklaşık 150 metre, Eryaman 1-2 metro durağına yaklaşık 1,2 kilometre uzaklıktadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46467",
@@ -17,9 +18,12 @@
   "ozellikler": [
     "~21.973 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "2. TBMM Caddesi üzerinde",
+    "Polis Şehitleri Parkı'na yaklaşık 150 m",
+    "Eryaman 1-2 metro durağına yaklaşık 1,2 km",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Polsan 2 Park İnci Konutları",
     "Park İnci Sitesi"

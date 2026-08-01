@@ -7,7 +7,7 @@
     "lng": 32.660825
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/cimtas-goksu-konutlari-boundary.geojson",
-  "aciklama": "Çimtaş Göksu Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında yer alan, karma yapılı bir konut sitesidir. TKGM kayıtlarına göre 9.195 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı blok blok sayar: 15 katlı A ve 14 katlı B yüksek blokları ile 2'şer katlı C, D, E ve F blokları. Yüksek blok ve alçak blokların aynı sitede buluşması, apartman dairesinden az katlı yaşama uzanan geniş bir seçenek yelpazesi demektir — bu çeşitlilik fiyatlamada da her bloğun kendi emsal çizgisini doğurur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çimtaş Göksu Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında yer alan, karma yapılı bir konut sitesidir. TKGM kayıtlarına göre 9.195 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı blok blok sayar: 15 katlı A ve 14 katlı B yüksek blokları ile 2'şer katlı C, D, E ve F blokları. Yüksek blok ve alçak blokların aynı sitede buluşması, apartman dairesinden az katlı yaşama uzanan geniş bir seçenek yelpazesi demektir — bu çeşitlilik fiyatlamada da her bloğun kendi emsal çizgisini doğurur. Projeyi 1997'de Ankara'da kurulan Çimtaş İnşaat geliştirmiştir; geliştiricinin tanıtımına göre yüksek bloklarda her katta üç daire yer alır ve bu daireler 4+1 tipindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63262",
@@ -17,11 +17,13 @@
   "ozellikler": [
     "~9.195 m² parsel (TKGM)",
     "2-15 kat aralığında bloklar (tapu kaydı)",
+    "Çimtaş İnşaat projesi (1997 kuruluşlu Ankara firması)",
+    "Yüksek bloklarda katta 3 daire, 4+1 (geliştirici tanıtımı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "Çimtaş Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

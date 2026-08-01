@@ -7,7 +7,7 @@
     "lng": 32.605225
   },
   "sinirGeoJSON": "siteler/devlet-mahallesi/sergah-evleri-boundary.geojson",
-  "aciklama": "Sergah Evleri — yerel kayıtlarda \"Eryaman Sergah Evleri\" olarak da geçer — Eryaman Devlet Mahallesi'nde yer alan, yüksek katlı üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 7.001 m²'lik kat mülkiyetli tek parsel üzerine kurulu; tapu niteliği \"11 Katlı A, B, C Bloklardan Oluşan Betonarme Apartman\" — yani üç bloğun tamamı 11 katlı. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
+  "aciklama": "Sergah Evleri — yerel kayıtlarda \"Eryaman Sergah Evleri\" olarak da geçer — Eryaman Devlet Mahallesi'nde yer alan, yüksek katlı üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 7.001 m²'lik kat mülkiyetli tek parsel üzerine kurulu; tapu niteliği \"11 Katlı A, B, C Bloklardan Oluşan Betonarme Apartman\" — yani üç bloğun tamamı 11 katlı. Yerel emlak kayıtlarına göre bloklar A-14, B-14 ve C-14 kodlarıyla anılıyor ve site 2012 yapımı; örneklenen C-14 blokta 22 dairenin tamamı 125 m² büyüklüğünde 4+1 tipinde. Aynı kayıtlar doğalgaz kombi ısıtma, asansör, bahçe, ısı yalıtımı, jeneratör, hidrofor ve su deposu, kapıcı, otopark ile oyun parkını listeliyor; metro durağı, okul ve otobüs durağı yakın çevrede. Bu yapım yılıyla site, Devlet Mahallesi'nin 1990'lar kooperatif dokusuna göre görece genç yapılardan biridir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyatı blok, kat, cephe ve iç durum belirler — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18675",
@@ -17,6 +17,9 @@
   "ozellikler": [
     "7.001 m² tek parsel (TKGM)",
     "11 katlı A-B-C blokları (tapu kaydı)",
+    "2012 yapım (yerel kayıtlar)",
+    "4+1, yaklaşık 125 m² daireler",
+    "Doğalgaz kombi, asansör, ısı yalıtımı, oyun parkı",
     "Kat mülkiyetli parsel (TKGM)",
     "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
@@ -24,5 +27,5 @@
     "Eryaman Sergah Evleri",
     "Sergah Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

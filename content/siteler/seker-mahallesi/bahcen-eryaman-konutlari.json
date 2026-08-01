@@ -7,7 +7,7 @@
     "lng": 32.652267
   },
   "sinirGeoJSON": "siteler/seker-mahallesi/bahcen-eryaman-konutlari-boundary.geojson",
-  "aciklama": "Bahçe-N Eryaman Konutları, Şeker Mahallesi'nde, Eryaman silüetinin en tanınmış modern yerleşimlerinden biridir. TKGM kayıtlarına göre 48.358 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A'dan E'ye beş blok 20'şer katlı, F bloğu 18, G-H-I blokları 16'şar katlı ve J bloğu tek katlı — toplam on blok. Kat yelpazesinin bu genişliği, aynı site içinde farklı manzara ve fiyat katmanları demektir: üst katlarda Eryaman'a hâkim görüş, alt katlarda bahçe kotuna yakın aile yaşamı. Bu ölçek, satış ve kiralamada blok-kat ayrımını doğru okumayı özellikle önemli kılar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bahçe-N Eryaman Konutları, Şeker Mahallesi'nde, Eryaman silüetinin en tanınmış modern yerleşimlerinden biridir. TKGM kayıtlarına göre 48.358 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A'dan E'ye beş blok 20'şer katlı, F bloğu 18, G-H-I blokları 16'şar katlı ve J bloğu tek katlı — toplam on blok. Kat yelpazesinin bu genişliği, aynı site içinde farklı manzara ve fiyat katmanları demektir: üst katlarda Eryaman'a hâkim görüş, alt katlarda bahçe kotuna yakın aile yaşamı. Bu ölçek, satış ve kiralamada blok-kat ayrımını doğru okumayı özellikle önemli kılar. Geliştiricinin tanıtımına göre Köroğlu İnşaat ve MNT İnşaat ortaklığıyla yapılan projede 120.000 m²'lik inşaat alanında toplam 618 konut üretilmiş, teslimler 2012 Eylül'ünde yapılmıştır; daireler ağırlıklı olarak 170 m² 4+1 tipindedir. Blokları ağaç adlarıyla anılır — Ihlamur, Köknar, Çınar, Sedir, Erguvan, Ladin, Akça, Meşe ve Defne — ve site içinde 3.000 ağaçlık botanik park, organik meyve-sebze bahçeleri, açık yüzme havuzu, fitness, spor sahaları, çocuk oyun alanı ve 2.600 m²'lik bir ticaret alanı yer alır; giriş 7/24 güvenliklidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46360",
@@ -16,11 +16,16 @@
   ],
   "ozellikler": [
     "~48.358 m² parsel (TKGM)",
-    "1 katlı yapı (tapu kaydı)",
+    "A-E blokları 20, F 18, G-H-I 16 katlı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Köroğlu + MNT İnşaat — Eylül 2012 teslim (geliştirici tanıtımı)",
+    "618 konut, ağırlıklı 170 m² 4+1",
+    "Ağaç adlı bloklar: Ihlamur, Köknar, Çınar, Sedir, Erguvan, Ladin, Akça, Meşe, Defne",
+    "3.000 ağaçlık botanik park + 2.600 m² ticaret alanı",
+    "Açık yüzme havuzu, fitness, spor sahaları, 7/24 güvenlik",
     "Şeker Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Bahçen Konutları",
     "Bahçe-N Eryaman",

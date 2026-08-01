@@ -7,7 +7,7 @@
     "lng": 32.61507
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/dogus-91-sitesi-boundary.geojson",
-  "aciklama": "Doğuş 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 4.280 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı — mahalledeki emsallerine göre daha derli toplu bir parsel. Bloklar yerel kayıtlarda 23 ile 23A–23E olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — değeri birlikte netleştirelim.",
+  "aciklama": "Doğuş 91 Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 4.280 m²'lik tek parsel üzerinde \"6 Blok Kârgir Apartman\" olarak kayıtlı — mahalledeki emsallerine göre daha derli toplu bir parsel. Bloklar yerel kayıtlarda 23 ile 23A–23E olarak sıralanıyor. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Yerel kayıtlara göre site bir konut yapı kooperatifi (Doğuş-91 K.Y.K.) olarak üretilmiş; çevre düzenlemesi, işi yapan peyzaj firmasının toplu konut referansları arasında yer alıyor. İlan kayıtlarında daireler ağırlıklı olarak 2+1 ve 3+1 tiplerinde geçer. Bu sitede satılık veya kiralık daireniz mi var? Yerleşik sitelerde alıcı da kiracı da siteyi bilen danışmana daha hızlı güvenir — değeri birlikte netleştirelim.",
   "adalar": [
     {
       "no": "18482",
@@ -18,7 +18,9 @@
     "4.280 m² tek parsel (TKGM)",
     "6 blok kârgir apartman (23, 23A–23E bloklar)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Doğuş-91 Konut Yapı Kooperatifi kimliği",
+    "İlanlarda 2+1 ve 3+1 daireler",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

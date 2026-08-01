@@ -7,7 +7,7 @@
     "lng": 32.64916
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/goldekent-sitesi-boundary.geojson",
-  "aciklama": "Göldekent Sitesi (Göldekent Konutları ve Ticaret Merkezi), Şehit Osman Avcı Mahallesi'nde Göksu Parkı seyrine konumlanmış, Köroğlu İnşaat imzalı bir projedir. Proje kaynaklarına göre 6 blokta 326 daire barındırır; daireler geniş aile planlarında 3,5+1 ve 4+1 tiplerindedir (net 140-155 m²) ve bünyesinde ticaret merkezi bulunur. Site yakın dönemde akıllı yaşam (interkom) dönüşümü de geçirmiştir. Tapu kaydına göre site, yaklaşık 36.358 m² — 36 dönümü aşan — parselde betonarme apartman ve kendi kreş binasıyla birlikte kayıtlıdır; bu ölçek, site içinde donatı alanı barındıran büyük yerleşimlere işaret eder. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Göldekent Sitesi (Göldekent Konutları ve Ticaret Merkezi), Şehit Osman Avcı Mahallesi'nde Göksu Parkı seyrine konumlanmış, Köroğlu İnşaat imzalı bir projedir. Geliştirici ve yüklenicinin tanıtımlarına göre 6 blokta 320 konut barındırır; daireler geniş aile planlarında 3,5+1 ve 4+1 tiplerindedir (net 140-155 m²) ve bünyesinde ticaret merkezi bulunur. Yapım işlerini Türkoğlu Yapı üstlenmiş; geliştiricinin tanıtımına göre 24 aylık inşaat süresinin ardından Mayıs 2007'de teslim edilmiştir. Yine geliştiricinin tanıtımına göre site içinde yaklaşık 2.000 çam ağacından oluşan özel bir koru bulunur ve blokların alt katlarından üst katlarına kadar tüm daireler Göksu Parkı'nı seyreder. Site yakın dönemde akıllı yaşam (interkom) dönüşümü de geçirmiştir. Tapu kaydına göre site, yaklaşık 36.358 m² — 36 dönümü aşan — parselde betonarme apartman ve kendi kreş binasıyla birlikte kayıtlıdır; bu ölçek, site içinde donatı alanı barındıran büyük yerleşimlere işaret eder. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "48150",
@@ -16,14 +16,18 @@
   ],
   "ozellikler": [
     "Tapu: apartman + kreş binası, ~36,4 dönümlük parsel (TKGM)",
-    "Köroğlu İnşaat — 6 blok, 326 daire",
+    "Köroğlu İnşaat — 6 blok, 320 konut",
+    "Yapım yüklenicisi Türkoğlu Yapı",
+    "Mayıs 2007 teslim (geliştirici tanıtımı)",
     "3,5+1 ve 4+1 (net 140-155 m²)",
     "Bünyesinde ticaret merkezi",
+    "Site içinde ~2.000 ağaçlık çam korusu",
     "Kat mülkiyetli parsel (TKGM)",
-    "Göksu Parkı seyri"
+    "Göksu Parkı seyri",
+    "Şehit Osman Avcı Mahallesi"
   ],
   "alternatifAdlar": [
     "Göldekent Konutları"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.604442
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/aknergiz-sitesi-boundary.geojson",
-  "aciklama": "Aknergiz Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 5.191 m²'lik tek parsel üzerinde \"4 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 6, 6A, 6B ve 6C olarak sıralanıyor. Dört bloklu yapısıyla mahallenin orta ölçekli, sakin sitelerinden biri. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Dört bloklu sitelerde ilan sayısı azdır ve doğru fiyatlanan daire hızlı hareket eder — satış ya da kiralama planınızı siteyi tanıyan emlakçınızla birlikte yapın.",
+  "aciklama": "Aknergiz Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre 5.191 m²'lik tek parsel üzerinde \"4 Blok Kârgir Apartman\" olarak kayıtlı; bloklar yerel kayıtlarda 6, 6A, 6B ve 6C olarak sıralanıyor. Dört bloklu yapısıyla mahallenin orta ölçekli, sakin sitelerinden biri. Parselin tamamı kat mülkiyetine geçmiş durumda; kadastroda mahalle adı \"Eryaman\" olarak geçer. Site, S.S. Aknergiz Konut Yapı Kooperatifi eliyle üretilmiştir; kooperatif 1992'de Eryaman Güzelkent Konut Üretim Yapı Kooperatifleri Birliği'ne (Eryaman-Koop) 24 ortakla katılmış, arsa tahsisi birlik tarafından yapılmıştır. Birliğin kayıtlarına göre 43 kooperatifin yürüttüğü ve toplam 3.080 konut üretilen Eryaman Güzelkent Çevre Geliştirme Projesi'nde inşaatlar 1990'ların ilk yarısında sürmüş, 1998'den itibaren geçici iskanla taşınmalar başlamış, ferdileşme 2003'te tamamlanmıştır. Dört bloklu sitelerde ilan sayısı azdır ve doğru fiyatlanan daire hızlı hareket eder — satış ya da kiralama planınızı siteyi tanıyan emlakçınızla birlikte yapın.",
   "adalar": [
     {
       "no": "18638",
@@ -17,8 +17,11 @@
   "ozellikler": [
     "5.191 m² tek parsel (TKGM)",
     "4 blok kârgir apartman (6, 6A, 6B, 6C)",
+    "S.S. Aknergiz Konut Yapı Kooperatifi — Eryaman-Koop üyesi (1992)",
+    "24 ortaklı kooperatif",
+    "Eryaman Güzelkent Çevre Geliştirme Projesi kapsamında",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

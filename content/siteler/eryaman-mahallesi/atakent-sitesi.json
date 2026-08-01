@@ -7,7 +7,7 @@
     "lng": 32.6297596
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/atakent-sitesi-boundary.geojson",
-  "aciklama": "Atakent Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 26.289 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Atakent Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 26.289 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. OYAK'ın kurumsal tarihçesine göre Eryaman Atakent toplu konut projesi OYAK-TOKİ işbirliğiyle geliştirilmiş; konutlar 2003 ve 2004'te üyelere tahsis edilmiş, teslimler 2006'da yapılmıştır. Bu köken, bölgeyi planlı ve tek elden üretilmiş bir toplu konut dokusu yapar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46528",
@@ -18,7 +18,9 @@
   "ozellikler": [
     "~26.289 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "OYAK-TOKİ işbirliğiyle geliştirilen Atakent bölgesi",
+    "Tahsisler 2003-2004, teslim 2006 (OYAK tarihçesi)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

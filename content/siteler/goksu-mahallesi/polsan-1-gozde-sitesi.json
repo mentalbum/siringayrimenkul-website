@@ -7,7 +7,7 @@
     "lng": 32.641262
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/polsan-1-gozde-sitesi-boundary.geojson",
-  "aciklama": "Polsan 1 Gözde Sitesi, Göksu'nun 'Polsan Konutları' olarak anılan kooperatif bölgesinin parçasıdır. TKGM kayıtlarına göre site, tapuda '6 Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 23.398 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — altı bloğa karşılık 23 dönümü aşan parsel, Polsan kuşağının geniş yeşilli yerleşim anlayışını taşır. Bahar ve Ayışığı siteleriyle birlikte Polsan 1 ailesini oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Polsan 1 Gözde Sitesi, Göksu'nun 'Polsan Konutları' olarak anılan kooperatif bölgesinin parçasıdır. TKGM kayıtlarına göre site, tapuda '6 Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 23.398 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — altı bloğa karşılık 23 dönümü aşan parsel, Polsan kuşağının geniş yeşilli yerleşim anlayışını taşır. Bahar ve Ayışığı siteleriyle birlikte Polsan 1 ailesini oluşturur. Yerel emlak kayıtlarında bloklar 2, 2A, 2B, 2C, 2D ve 2E kodlarıyla anılır; kayıtlara giren 2C bloğu 2005 yapımı, dokuz katlı ve 36 dairelidir. Daireler 3+1 ve yaklaşık 109 m² planlı; ısıtma doğalgaz kombi, sitede asansör, otopark, jeneratör ve hidrofor bulunur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46482",
@@ -15,9 +15,12 @@
     }
   ],
   "ozellikler": [
-    "~20.672 m² parsel (TKGM)",
+    "~23.398 m² parsel (TKGM)",
+    "6 blok (2, 2A–2E)",
+    "2005 yapımı (yerel emlak kayıtları)",
+    "3+1, yaklaşık 109 m² daireler",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.628107
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/ilke-sitesi-boundary.geojson",
-  "aciklama": "İlke Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin yedi bloklu büyük sitelerindendir. TKGM kayıtlarına göre site, tapuda '7 Blok Kargir Apartman' niteliğiyle kayıtlı 27.963 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğa karşılık 28 dönümlük parsel, Atakent kuşağının ferah yerleşim anlayışını taşır; bölge kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İlke Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin yedi bloklu büyük sitelerindendir. TKGM kayıtlarına göre site, tapuda '7 Blok Kargir Apartman' niteliğiyle kayıtlı 27.963 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğa karşılık 28 dönümlük parsel, Atakent kuşağının ferah yerleşim anlayışını taşır; bölge kısaca 'Atakent' diye geçer. OYAK'ın kurumsal kayıtlarına göre Eryaman Atakent konutları OYAK ile TOKİ işbirliğinde geliştirilmiş ve 2000'li yılların ilk yarısında üyelere tahsis edilmiştir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46529",
@@ -17,10 +17,11 @@
   ],
   "ozellikler": [
     "~27.963 m² parsel (TKGM)",
+    "Atakent bölgesi: OYAK-TOKİ işbirliği (OYAK kurumsal kayıtları)",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Oyak Atakent 2 İlke Sitesi"
   ]

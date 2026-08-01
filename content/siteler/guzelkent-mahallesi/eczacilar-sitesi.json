@@ -2,7 +2,7 @@
   "isim": "Eczacılar Sitesi",
   "slug": "eczacilar-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Eczacılar Sitesi, Güzelkent Mahallesi'nde apartman değil dubleks evlerden oluşan bir kooperatif sitesidir: TKGM kayıtlarına göre site, tapuda '20 Blok Dubleks Ev' niteliğiyle kayıtlı 6.932 m²'lik kat mülkiyetli parsel üzerine kuruludur. Adını kurucu meslek kooperatifinden taşıyan yerleşim, yirmi evlik yatay dokusuyla Güzelkent'in bahçeli yaşam kuşağının parçasıdır. Bu sitede satılık veya kiralık eviniz mi var? Dubleks dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eczacılar Sitesi, Güzelkent Mahallesi'nde apartman değil dubleks evlerden oluşan bir kooperatif sitesidir: TKGM kayıtlarına göre site, tapuda '20 Blok Dubleks Ev' niteliğiyle kayıtlı 6.932 m²'lik kat mülkiyetli parsel üzerine kuruludur. Adını kurucu meslek kooperatifinden taşıyan yerleşim, yirmi evlik yatay dokusuyla Güzelkent'in bahçeli yaşam kuşağının parçasıdır. Birlik kayıtlarına göre siteyi üreten S.S. Eczacılar Konut Yapı Kooperatifi, Güzelkent'in dokusunu ortaya çıkaran S.S. Eryaman Güzelkent Konut Üretim Yapı Kooperatifleri Birliği'ne (Eryaman-Koop) 1997'de katılmış ve yirmi ortakla kayıtlıdır — bu sayı, tapudaki yirmi evle birebir örtüşür. Aynı kayıtlara göre 43 kooperatifle yürütülen çevre geliştirme projesi kapsamında 316 dubleks ve 2.764 çok katlı konut olmak üzere toplam 3.080 konut üretilmiş, 1999'dan itibaren iskana geçilmiştir; bugün alanda yaklaşık 14.000 kişi yaşamaktadır. Bu sitede satılık veya kiralık eviniz mi var? Dubleks dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.995507,
     "lng": 32.603641
@@ -18,7 +18,9 @@
     "20 dubleks ev (tapu)",
     "~6.932 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "S.S. Eczacılar Konut Yapı Kooperatifi — 20 ortak",
+    "Eryaman-Koop üyesi kooperatif (1997)",
     "Güzelkent villa bölgesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

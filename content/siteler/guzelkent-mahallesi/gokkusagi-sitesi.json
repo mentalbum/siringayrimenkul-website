@@ -7,7 +7,7 @@
     "lng": 32.608167
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/gokkusagi-sitesi-boundary.geojson",
-  "aciklama": "Gökkuşağı Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.255 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar ikili gruplar hâlinde adlandırılmış: 1 ve 1A, 5 ve 5A, 6 ve 6-A — toplamda altı blok. Bu sitede satılık veya kiralık daireniz mi var? Altı bloklu bir sitede emsal ilan bulunur ama doğru fiyat blok, kat, cephe ve iç duruma göre ayrışır; değeri siteyi tanıyan emlakçınızla birlikte netleştirin.",
+  "aciklama": "Gökkuşağı Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.255 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar ikili gruplar hâlinde adlandırılmış: 1 ve 1A, 5 ve 5A, 6 ve 6-A — toplamda altı blok. Site, S.S. Gökkuşağı Konut Yapı Kooperatifi eliyle üretilmiştir; kooperatif, Eryaman Güzelkent Çevre Geliştirme Projesi'ni yürüten ERYAMAN-KOOP birliğinin üyesidir ve birliğin resmî kayıtlarında 60 ortakla listelenir. Birliğin anlatımına göre kooperatif inşaatları 1992-93 döneminde başlamış, büyük bölümü 1998'de geçici iskân almış, 2003'te ferdileşme ve tasfiye tamamlanmıştır; 43 kooperatifle üretilen proje bütününde toplam 3.080 konut ve yaklaşık 14.000 kişilik bir yerleşim vardır. Bu sitede satılık veya kiralık daireniz mi var? Altı bloklu bir sitede emsal ilan bulunur ama doğru fiyat blok, kat, cephe ve iç duruma göre ayrışır; değeri siteyi tanıyan emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "18671",
@@ -17,9 +17,12 @@
   "ozellikler": [
     "5.255 m² tek parsel (TKGM)",
     "6 blok (1/1A, 5/5A, 6/6-A — ikili gruplar)",
+    "S.S. Gökkuşağı Konut Yapı Kooperatifi (ERYAMAN-KOOP üyesi)",
+    "Birlik kaydında 60 ortak",
+    "Güzelkent kooperatif projesi kapsamında (1992-93 başlangıç)",
     "Güzelkent'in yerleşik sitelerinden",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.652854
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/basak-life-boundary.geojson",
-  "aciklama": "Başak Life, Susuz'un Göksu kentsel gelişim bölgesinde 19 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 4.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '19 Katlı Betonarme Mesken' olarak tanımlar. Bölgenin yeni yapı stoğunda kompakt ve modern daire arayan profile hitap eder; üst katlarda gelişim aksına açık görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Başak Life, Susuz'un Göksu kentsel gelişim bölgesinde 19 katlı tek bloklu modern bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 4.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '19 Katlı Betonarme Mesken' olarak tanımlar. Bölgenin yeni yapı stoğunda kompakt ve modern daire arayan profile hitap eder; üst katlarda gelişim aksına açık görüş vardır. Harita ve yerel kayıtlarda site, Susuz Mahallesi Sancak Sokak adresiyle ve zaman zaman \"Göksu Başak Life\" adıyla geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63355",
@@ -18,9 +18,10 @@
     "~4.000 m² parsel (TKGM)",
     "19 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Göksu kentsel gelişim bölgesi"
+    "Göksu kentsel gelişim bölgesi",
+    "Sancak Sokak — Susuz Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16",
+  "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Göksu Başak Life",
     "Başak Life Sitesi"

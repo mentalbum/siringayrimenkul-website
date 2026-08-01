@@ -7,7 +7,7 @@
     "lng": 32.61772
   },
   "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/pasaj-eryaman-boundary.geojson",
-  "aciklama": "Pasaj Eryaman, Yavuz Selim Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 8.846 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Adındaki 'pasaj' vurgusuyla zemin ticaret dokusunu çağrıştıran yapı, kompakt birim arayan ve kiralamada hızlı dönüş isteyen profillere hitap eder. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Pasaj Eryaman, Yavuz Selim Mahallesi'nde 16 katlı modern bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 8.846 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Adındaki 'pasaj' vurgusuyla zemin ticaret dokusunu çağrıştıran yapı, kompakt birim arayan ve kiralamada hızlı dönüş isteyen profillere hitap eder. Geliştiricinin tanıtımına göre projeyi Arıkan Yapı geliştirmiştir; tek blokta tamamı 1+1 ve yaklaşık 60 m² olan 98 konut ile zemin kotunda çarşı bölümü yer alır ve satışlar 2016'da başlamıştır. Proje kayıtlarında asansör, kapalı ve açık otopark, kameralı güvenlik, çocuk oyun alanı ve spor sahası sayılır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46443",
@@ -19,10 +19,15 @@
     "16 katlı yapı (tapu)",
     "Kat mülkiyetli parsel (TKGM)",
     "Ticari nitelik: ofis/işyeri (tapu)",
+    "Arıkan Yapı — tek blokta 98 konut",
+    "Tamamı 1+1, ~60 m²",
+    "Zemin kotunda çarşı bölümü",
+    "Asansör, kapalı-açık otopark, kameralı güvenlik",
+    "Satışlar 2016'da başladı (geliştirici tanıtımı)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Pasaj Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -2,7 +2,7 @@
   "isim": "Şeniz Sitesi",
   "slug": "seniz-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Şeniz Sitesi, Etimesgut Güzelkent Mahallesi'nde iki komşu adaya oturan altı bloklu bir konut sitesidir: A blokları (A1, A2, A3) bir parselde, B blokları (B1, B2, B3) hemen komşusunda yer alır. Semt pazarının yanında, 6. Cadde hattındadır. TKGM kayıtlarına göre iki parsel de kat mülkiyetli ve tapuda \"3 Blok Kargir Apartman\" niteliğiyle kayıtlıdır (yaklaşık 4.426 ve 4.615 m²). Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Şeniz Sitesi, Etimesgut Güzelkent Mahallesi'nde iki komşu adaya oturan altı bloklu bir konut sitesidir: A blokları (A1, A2, A3) bir parselde, B blokları (B1, B2, B3) hemen komşusunda yer alır. Semt pazarının yanında, 6. Cadde hattındadır. TKGM kayıtlarına göre iki parsel de kat mülkiyetli ve tapuda \"3 Blok Kargir Apartman\" niteliğiyle kayıtlıdır (yaklaşık 4.426 ve 4.615 m²). Yerel kayıtlarda site yönetimi halen 'Şeniz Konut Kooperatifi' adıyla, 404. Sokak adresinde görünür; ilan kayıtlarında daireler 3+1 planlıdır ve konum tarifinde Metromall AVM yakınlığı öne çıkarılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "alternatifAdlar": [
     "Şeniz Konut Kooperatifi"
   ],
@@ -26,7 +26,9 @@
     "İki komşu parsel: ~4.426 + ~4.615 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Semt pazarı yanı, 6. Cadde hattı",
+    "404. Sokak — Metromall AVM yakını",
+    "İlan kayıtlarında 3+1 daireler",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

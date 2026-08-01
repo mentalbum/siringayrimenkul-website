@@ -7,7 +7,7 @@
     "lng": 32.63251
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/liderkent-boundary.geojson",
-  "aciklama": "Liderkent, Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda yer alır. TKGM kayıtlarına göre yaklaşık 12.532 m²'lik kat mülkiyetli tek parselde tapu, yapıyı '10 Bloktan Oluşan Betonarme Apartman' olarak tanımlar. Yerel emlak kayıtları bu on bloğu tek tek sayar: kimi 5'ten 10'a numaralıdır, kimi 58-1, 58-2, 58-3 ve 88-4 gibi ikili kodlar taşır; taban izleri birbirine çok yakın bu bloklardan biri kayıtlarda 2002 yapımı, beş katlı ve tamamı 3+1 planlı on daire olarak geçer. Site, hemen kuzeyindeki Kuryap ve kuzeydoğusundaki Umar siteleriyle yol komşusudur; Atayıldız ve Turkuaz'la birlikte mahallenin ardışık kooperatif kuşağının içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Liderkent, Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda yer alır. TKGM kayıtlarına göre yaklaşık 12.532 m²'lik kat mülkiyetli tek parselde tapu, yapıyı '10 Bloktan Oluşan Betonarme Apartman' olarak tanımlar. Yerel emlak kayıtları bu on bloğu tek tek sayar: kimi 5'ten 10'a numaralıdır, kimi 58-1, 58-2, 58-3 ve 88-4 gibi ikili kodlar taşır; taban izleri birbirine çok yakın bu bloklardan biri kayıtlarda 2002 yapımı, beş katlı ve tamamı 3+1 planlı on daire olarak geçer. Site, hemen kuzeyindeki Kuryap ve kuzeydoğusundaki Umar siteleriyle yol komşusudur; Atayıldız ve Turkuaz'la birlikte mahallenin ardışık kooperatif kuşağının içindedir. İlan kayıtlarında site genelinde 3+1 daireler öne çıkar; aynı kayıtlarda yerleşim, önünden otobüs ve dolmuş hatlarının geçtiği bir konum olarak tarif edilir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46274",
@@ -17,11 +17,13 @@
   "ozellikler": [
     "~12.532 m² parsel (TKGM)",
     "10 blok (tapu)",
+    "3+1 daireler (ilan kayıtları)",
+    "Otobüs ve dolmuş hatlarına yakın",
     "Kat mülkiyetli parsel (TKGM)",
     "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Liderkent Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

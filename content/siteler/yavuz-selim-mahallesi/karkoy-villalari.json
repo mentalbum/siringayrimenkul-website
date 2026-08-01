@@ -7,7 +7,7 @@
     "lng": 32.612658
   },
   "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/karkoy-villalari-boundary.geojson",
-  "aciklama": "Karköy Villaları, Yavuz Selim Mahallesi'nin bahçeli ev kuşağında, mahallenin en büyük dubleks yerleşimlerinden biridir: TKGM kayıtlarına göre yaklaşık 23.110 m²'lik parselde tapu, yapıları '58 Adet Betonarme Dubleks Konut' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Elli sekiz dubleksin 23 dönüme yayılan yatay dokusu; komşu Özenkent ve Turaykent'le birlikte 'Güzelkent Villalar' olarak anılan kuşağın omurgasını oluşturur. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Karköy Villaları, Yavuz Selim Mahallesi'nin bahçeli ev kuşağında, mahallenin en büyük dubleks yerleşimlerinden biridir: TKGM kayıtlarına göre yaklaşık 23.110 m²'lik parselde tapu, yapıları '58 Adet Betonarme Dubleks Konut' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Elli sekiz dubleksin 23 dönüme yayılan yatay dokusu; komşu Özenkent ve Turaykent'le birlikte 'Güzelkent Villalar' olarak anılan kuşağın omurgasını oluşturur. Yerel emlak dizinlerinde bu kuşaktaki siteler sırayla numaralandırılır; Karköy 16, komşu Korukent 15, Köşk-Ersan ise 17 numarayla listelenir — kuşağın diziliş sırasını gösteren, adres tarifinde işe yarayan bir ayrıntı. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19537",
@@ -18,10 +18,11 @@
     "~23.110 m² parsel (TKGM)",
     "58 adet konut (tapu)",
     "Kat irtifaklı parsel (TKGM)",
+    "Güzelkent Villalar kuşağında 16 numara (yerel dizin)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Karköy Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

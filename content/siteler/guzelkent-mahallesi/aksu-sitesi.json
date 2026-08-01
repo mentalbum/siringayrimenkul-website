@@ -7,7 +7,7 @@
     "lng": 32.609935
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/aksu-sitesi-boundary.geojson",
-  "aciklama": "Aksu Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kârgir Apartman\" niteliğiyle kayıtlı 5.072 m²'lik kat mülkiyetli tek parsel üzerine kurulu; bloklar yerel emlak kayıtlarında 8 ile 8A'dan 8E'ye uzanan adlarla sıralanıyor — tapu ile yerel kayıt birebir örtüşüyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Aksu Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kârgir Apartman\" niteliğiyle kayıtlı 5.072 m²'lik kat mülkiyetli tek parsel üzerine kurulu; bloklar yerel emlak kayıtlarında 8 ile 8A'dan 8E'ye uzanan adlarla sıralanıyor — tapu ile yerel kayıt birebir örtüşüyor. Site, ERYAMAN-KOOP'un yürüttüğü Eryaman Güzelkent Çevre Geliştirme Projesi'nde adı geçen kooperatiflerden biri olarak anılır; birliğin resmî anlatımına göre kaba inşaatlar 1995 sonunda tamamlanmış, çok katlı bloklarda üyeler 1999'dan itibaren konutlarına taşınmaya başlamıştır. Kırk üç kooperatifle üretilen proje bütününde toplam 3.080 konut yer alır ve alanın altyapısı proje kapsamında tamamlanmıştır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18512",
@@ -17,8 +17,10 @@
   "ozellikler": [
     "5.072 m² tek parsel (TKGM)",
     "6 blok kârgir apartman (8, 8A–8E)",
+    "Güzelkent kooperatif projesi kapsamında (ERYAMAN-KOOP)",
+    "1999'dan itibaren oturuma açıldı",
     "Kat mülkiyetli parsel (TKGM)",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

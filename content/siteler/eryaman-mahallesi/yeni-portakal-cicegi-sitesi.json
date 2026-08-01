@@ -7,7 +7,7 @@
     "lng": 32.625889
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi-boundary.geojson",
-  "aciklama": "Yeni Portakal Çiçeği Sitesi, Eryaman Mahallesi'nin 'Eryaman Evleri' olarak anılan kesiminde beş bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '5 Blok Kargir Apartman' niteliğiyle kayıtlı 23.523 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Beş bloğun 23 dönümü aşan parsele yayılması, blok aralarını ferah ve yeşil payını yüksek tutar; mahallenin oturmuş kooperatif dokusunda yerleşik bir komşuluk çevresi sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yeni Portakal Çiçeği Sitesi, Eryaman Mahallesi'nin 'Eryaman Evleri' olarak anılan kesiminde beş bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '5 Blok Kargir Apartman' niteliğiyle kayıtlı 23.523 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Beş bloğun 23 dönümü aşan parsele yayılması, blok aralarını ferah ve yeşil payını yüksek tutar; mahallenin oturmuş kooperatif dokusunda yerleşik bir komşuluk çevresi sunar. Yerel yapı kayıtlarına göre bloklar 2003 yapımıdır ve blok blok değişir: örneklenen iki blok dokuz ve on bir katlı, daire sayıları 36 ile 44 arasındadır. Site 1+1 ile 3+1 arasında değişen karma bir daire yelpazesi sunar (yaklaşık 46-105 m²) — aynı adreste hem kompakt hem geniş daire arayanına seçenek çıkar. Aynı kayıtlarda merkezi sistem ısıtma, güvenlik, otopark, çocuk oyun parkı, spor alanı ve kreş yer alır; bloklarda asansör, jeneratör, hidrofor ve su deposu ile ısı yalıtımı da sayılır. Metro ile otobüs durağı ve okullar yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46546",
@@ -17,7 +17,12 @@
   "ozellikler": [
     "~23.523 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "2003 yapımı bloklar (yerel yapı kayıtları)",
+    "1+1, 2+1 ve 3+1 karma daire yelpazesi (~46-105 m²)",
+    "Blok başına 36-44 daire, 9-11 kat",
+    "Merkezi sistem ısıtma, güvenlik, kreş, oyun parkı",
+    "Bloklarda asansör, jeneratör, hidrofor ve ısı yalıtımı",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.606895
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/lokasyon-eryaman-boundary.geojson",
-  "aciklama": "Lokasyon Eryaman, Yeşilova'da Prof. Dr. Necmettin Erbakan Caddesi üzerinde MÇ Yatırım Yapı A.Ş. tarafından geliştirilen karma bir projedir — müteahhidin ilan ettiği parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanmaktadır. Projede A blokta 81 daire (85 m², ebeveyn banyolu 2+1) ve B blokta 100 daire (83 m² standart ve 104 m² ekstra büyük 2+1) olmak üzere toplam 181 konut; ayrıca 3.600 m²'lik 26 cadde mağazası ile 16 teraslı butik ofis yer alıyor. YHT istasyonuna, Metromall ve Optimum AVM'lere yürüme mesafesinde, Eryaman Port'a bitişiktir. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Lokasyon Eryaman, Yeşilova'da Prof. Dr. Necmettin Erbakan Caddesi üzerinde MÇ Yatırım Yapı A.Ş. tarafından geliştirilen karma bir projedir — müteahhidin ilan ettiği parsel bilgisi sitemizdeki TKGM tapu sınırı eşlemesiyle birebir doğrulanmaktadır. Projede A blokta 81 daire (85 m², ebeveyn banyolu 2+1) ve B blokta 100 daire (83 m² standart ve 104 m² ekstra büyük 2+1) olmak üzere toplam 181 konut; ayrıca 3.600 m²'lik 26 cadde mağazası ile 16 teraslı butik ofis yer alıyor. Müteahhidin proje künyesine göre B bloktaki dairelerin 48'i 83 m², 52'si 104 m² tipindedir; projede otopark ve güvenlik sistemi yer alır, proje süresi 24 ay olarak veriliyor. YHT istasyonuna, Metromall ve Optimum AVM'lere yürüme mesafesinde, Eryaman Port'a bitişiktir. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47546",
@@ -17,7 +17,9 @@
   "ozellikler": [
     "MÇ Yatırım Yapı — 2 blok, 181 daire",
     "2+1 tipler: 83-85 m² + 104 m² ekstra büyük",
+    "B blok: 48 daire 83 m², 52 daire 104 m² (proje künyesi)",
     "26 cadde mağazası (3.600 m²) + 16 butik ofis",
+    "Otopark ve güvenlik sistemi (proje künyesi)",
     "Müteahhit parsel beyanı TKGM kaydımızla birebir uyumlu",
     "YHT, Metromall ve Optimum'a yürüme mesafesi",
     "Kat irtifaklı parsel (TKGM)",
@@ -27,5 +29,5 @@
   "alternatifAdlar": [
     "Lokasyon Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

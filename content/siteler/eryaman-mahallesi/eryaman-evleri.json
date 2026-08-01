@@ -7,7 +7,7 @@
     "lng": 32.625687
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/eryaman-evleri-boundary.geojson",
-  "aciklama": "Eryaman Evleri, Eryaman Mahallesi'nin güneyinde adını çevresindeki kesime de veren yerleşik bir kooperatif sitesidir. TKGM kayıtlarına göre üzerinde bulunduğu parsel, tapuda '9 Blok Kargir Apartman' niteliğiyle kayıtlı 37.690 m²'lik kat mülkiyetli tek parseldir ve bu parseli komşusu Kaya Evleri Sitesi ile paylaşır — yerel emlak kayıtları Eryaman Evleri'nin payına beş bloğu yazar. Geniş ada düzeni, oturmuş yeşili ve bölgeye ad olmuş kimliğiyle mahallenin bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eryaman Evleri, Eryaman Mahallesi'nin güneyinde adını çevresindeki kesime de veren yerleşik bir kooperatif sitesidir. TKGM kayıtlarına göre üzerinde bulunduğu parsel, tapuda '9 Blok Kargir Apartman' niteliğiyle kayıtlı 37.690 m²'lik kat mülkiyetli tek parseldir ve bu parseli komşusu Kaya Evleri Sitesi ile paylaşır — yerel emlak kayıtları Eryaman Evleri'nin payına beş bloğu yazar. Geniş ada düzeni, oturmuş yeşili ve bölgeye ad olmuş kimliğiyle mahallenin bilinen adreslerindendir. Yerel kayıtlara göre Eryaman Evleri projesinin arsası Toplu Konut İdaresi tarafından Türkkent'e, oradan da Eryaman-Koop'a tahsis edilmiş; projeye 1999'da başlanmış ve 14 kooperatif bünyesinde 2.632 üye örgütlenmiştir. Anahtar teslimleri Eylül 2004'te yapılmış, tapular Ekim 2005'te üyelere verilmiştir. Proje kapsamında iki ilköğretim tesisi, anaokulu, sağlık ocağı, çok amaçlı salon ve ticaret yapıları ile tüm altyapı ve çevre düzenlemesi tamamlanmış; kentsel tasarım ve peyzaj projesi Tasarım Peyzaj imzasını taşımıştır. Bu rakamlar Eryaman Evleri toplu yapısının tamamına aittir, tek bir ada ya da bloğa değil. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46539",
@@ -15,12 +15,15 @@
     }
   ],
   "ozellikler": [
-    "~49.844 m² parsel (TKGM)",
+    "~37.690 m² parsel (TKGM)",
+    "Proje geneli: 14 kooperatif, 2.632 konut",
+    "1999 başlangıç, Eylül 2004 anahtar teslim, Ekim 2005 tapu (proje geneli)",
+    "Okul, anaokulu, sağlık ocağı ve ticaret yapıları (proje geneli)",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
   "alternatifAdlar": [
     "Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

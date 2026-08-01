@@ -7,7 +7,7 @@
     "lng": 32.632697
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/acar-sitesi-boundary.geojson",
-  "aciklama": "Acar Sitesi, Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda üç bloklu bir sitedir. TKGM kayıtlarına göre site, tapuda 'A-C-D Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 12.159 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 12 dönümlük parsel ferah bir düzen sunar. Mahallenin ardışık kooperatif bandının içindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Acar Sitesi, Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda üç bloklu bir sitedir. TKGM kayıtlarına göre site, tapuda 'A-C-D Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 12.159 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 12 dönümlük parsel ferah bir düzen sunar. Mahallenin ardışık kooperatif bandının içindedir. Yerel emlak kayıtlarına göre bloklar 2007 yapımı ve yedişer katlı; örneklenen Eren ve Altıntaş bloklarında daireler 135 m² büyüklüğünde 3+1 tipinde ve blok başına 32 daire bulunuyor. Aynı kayıtlar doğalgaz kombi ısıtma, asansör, ısı ve ses yalıtımı, jeneratör, hidrofor ve su deposu, kapıcı, otopark ile oyun parkını listeliyor. Yedi katlı bloklar, mahallenin 11-14 katlı kooperatif yapılarına göre belirgin biçimde alçak ve ferah bir doku oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46267",
@@ -17,8 +17,11 @@
   "ozellikler": [
     "3 blok (A, C, D — Eren/Emre/Altıntaş apartmanları)",
     "~12.159 m² parsel (TKGM)",
+    "2007 yapım, yedişer katlı bloklar (yerel kayıtlar)",
+    "3+1, yaklaşık 135 m² daireler — blok başına 32 daire",
+    "Doğalgaz kombi, asansör, ısı ve ses yalıtımı",
     "Kat mülkiyetli parsel (TKGM)",
     "Şeyh Şamil Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

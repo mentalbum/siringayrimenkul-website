@@ -7,7 +7,7 @@
     "lng": 32.6452943
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/polsan-1-bahar-sitesi-boundary.geojson",
-  "aciklama": "Polsan 1 Bahar Sitesi, Göksu'nun 'Polsan Konutları' olarak anılan kooperatif bölgesinin parçasıdır. TKGM kayıtlarına göre site, tapuda '7 Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 26.051 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğun 26 dönüme yayılan ferah düzeni, Polsan kuşağının geniş yeşilli yerleşim anlayışını taşır. Gözde ve Ayışığı siteleriyle birlikte Polsan 1 ailesini oluşturur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Polsan 1 Bahar Sitesi, Göksu'nun 'Polsan Konutları' olarak anılan kooperatif bölgesinin parçasıdır. TKGM kayıtlarına göre site, tapuda '7 Bloktan Oluşan Kargir Apartman' niteliğiyle kayıtlı 26.051 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğun 26 dönüme yayılan ferah düzeni, Polsan kuşağının geniş yeşilli yerleşim anlayışını taşır. Gözde ve Ayışığı siteleriyle birlikte Polsan 1 ailesini oluşturur. Yerel kayıtlara göre yedi apartman çiçek adları taşır: Fulya, Gonca, Gül, Karanfil, Kardelen, Lale ve Nilüfer — bu liste tapudaki yedi bloklu nitelik kaydıyla birebir örtüşür. Site Göksu Mahallesi 82. Sokak üzerindedir; parçası olduğu Polsan Konutları kuşağı yaklaşık 193 dönümlük bir alana yayılır ve bünyesinde yedi ayrı site barındırır. Yerel değerlendirmelerde geniş açık otopark, yeşil alanlar ve güvenlik öne çıkar; aynı kayıtlarda basketbol sahası ve halı saha da anılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46481",
@@ -16,8 +16,11 @@
   ],
   "ozellikler": [
     "~26.051 m² parsel (TKGM)",
+    "7 apartman: Fulya, Gonca, Gül, Karanfil, Kardelen, Lale, Nilüfer",
+    "Geniş açık otopark ve yeşil alan, güvenlik (yerel kayıtlar)",
+    "82. Sokak — Polsan Konutları kuşağı (yaklaşık 193 dönüm, 7 site)",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

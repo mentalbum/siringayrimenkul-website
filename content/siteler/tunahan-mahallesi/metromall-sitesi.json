@@ -7,7 +7,7 @@
     "lng": 32.610825
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/metromall-sitesi-boundary.geojson",
-  "aciklama": "Metromall Sitesi (Metromall Residence), Tunahan Mahallesi'nde 30 Ağustos Caddesi üzerinde, Söğüt İnşaat tarafından geliştirilen; alışveriş merkezi, ofis ve konutu bir arada barındıran Eryaman'ın en büyük karma projelerinden biridir. TKGM kayıtlarına göre 49.796 m²'lik parselde tapu niteliği yapıyı ayrıntısıyla anlatıyor: 7 katlı A blok ofis-işyeri, B'den E'ye dört blok ise 35 katlı betonarme konut blokları — Eryaman silüetinin en yüksek yapıları arasında. Zemindeki Metromall AVM (Migros'lu çarşısıyla) bölgenin alışveriş merkezi işlevini görüyor; parselde kat irtifakı kurulu. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Metromall Sitesi (Metromall Residence), Tunahan Mahallesi'nde 30 Ağustos Caddesi üzerinde, Söğüt İnşaat tarafından geliştirilen; alışveriş merkezi, ofis ve konutu bir arada barındıran Eryaman'ın en büyük karma projelerinden biridir. TKGM kayıtlarına göre 49.796 m²'lik parselde tapu niteliği yapıyı ayrıntısıyla anlatıyor: 7 katlı A blok ofis-işyeri, B'den E'ye dört blok ise 35 katlı betonarme konut blokları — Eryaman silüetinin en yüksek yapıları arasında. Zemindeki Metromall AVM (Migroslu çarşısıyla) bölgenin alışveriş merkezi işlevini görüyor; parselde kat irtifakı kurulu. Proje kayıtlarına göre dört konut bloğunda toplam 671 konut ile çarşıda 198 mağaza yer alır; daireler konut bloklarında 2+1, 3+1 ve 4+1, home-office bloğunda 1+1 ve 2+1 tiplerindedir ve teslimler 2017 yılında yapılmıştır. Site içinde biri kapalı biri açık iki yarı olimpik yüzme havuzu ve çocuk havuzu, 3.500 m²'lik fitness-sauna-hamam-masaj bölümü, 13.000 m² yeşil alan, basketbol ve voleybol sahaları, çocuk parkı, çok katlı kapalı otopark ile elektrikli araç şarj üniteleri bulunur; giriş 7/24 güvenliklidir. Ankara metrosunun M3 hattı projeye bitişiktir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46510",
@@ -20,13 +20,19 @@
     "Söğüt İnşaat — AVM + ofis + konut karma",
     "35 katlı 4 konut bloğu (B–E, tapu kaydı)",
     "7 katlı A blok ofis-işyeri",
-    "Metromall AVM — Migros'lu çarşı",
+    "Metromall AVM — Migroslu çarşı",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
+    "671 konut + 198 mağaza, 2017 teslim (proje kayıtları)",
+    "Konutlarda 2+1/3+1/4+1, home-office blokta 1+1/2+1",
+    "2 yarı olimpik havuz + 3.500 m² spa-fitness bölümü",
+    "13.000 m² yeşil alan, spor sahaları, çocuk parkı",
+    "Elektrikli araç şarj üniteleri + 7/24 güvenlik",
+    "M3 metro hattına bitişik",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "adres": "30 Ağustos Caddesi No:2, Tunahan, Eryaman/Ankara",
   "alternatifAdlar": [
     "Metromall Residence"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

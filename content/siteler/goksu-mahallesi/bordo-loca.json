@@ -7,7 +7,7 @@
     "lng": 32.652918
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/bordo-loca-boundary.geojson",
-  "aciklama": "Bordo Loca, Göksu Mahallesi'nde kademeli üç bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı B Blok ile 13'er Katlı A ve C Blok Betonarme Mesken' niteliğiyle kayıtlı 18.920 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 19 dönümlük parsel, açık alan payını cömert tutar. Bordo markasının bölgedeki halkalarındandır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bordo Loca, Göksu Mahallesi'nde kademeli üç bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı B Blok ile 13'er Katlı A ve C Blok Betonarme Mesken' niteliğiyle kayıtlı 18.920 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 19 dönümlük parsel, açık alan payını cömert tutar. Bordo markasının bölgedeki halkalarındandır. Proje kayıtlarına göre yapımı Bordo 145 Yapı A.Ş. üstlenmiş, teslimler 2020 yılının sonunda yapılmıştır; üç blokta 48'er daire ile 6 villa olmak üzere toplam 150 konut yer alır. Daireler tek tip 4+1 ve brüt 186 m² planlıdır. Aynı kayıtlar kapalı otopark, sosyal tesis, yüzme havuzu, sauna, fitness merkezi, güneşlenme terası, çocuk oyun alanları, futbol ve basketbol sahaları ile kameralı güvenlik sistemini sayar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63400",
@@ -16,12 +16,19 @@
   ],
   "ozellikler": [
     "~18.920 m² parsel (TKGM)",
-    "3-14 kat aralığında bloklar (tapu kaydı)",
+    "13-14 kat aralığında bloklar (tapu kaydı)",
+    "Bordo 145 Yapı A.Ş. (proje kayıtları)",
+    "Blok başına 48 daire + 6 villa — toplam 150 konut (proje kayıtları)",
+    "4+1, brüt ~186 m² daireler",
+    "2020 teslim (proje kayıtları)",
+    "Yüzme havuzu, fitness, sauna, kapalı otopark",
+    "Futbol ve basketbol sahası, çocuk oyun alanları",
+    "Kameralı güvenlik sistemi",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
   "alternatifAdlar": [
     "Bordo Loca Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

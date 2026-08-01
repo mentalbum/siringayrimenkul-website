@@ -2,12 +2,13 @@
   "isim": "Hotki Bulvar",
   "slug": "hotki-bulvar",
   "mahalleSlug": "cumhuriyet-mahallesi",
+  "adres": "Kalem Caddesi No:40, Cumhuriyet (Yeni Batı) Mahallesi, Yenimahalle/Ankara",
   "koordinat": {
     "lat": 39.983355,
     "lng": 32.658899
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/hotki-bulvar-boundary.geojson",
-  "aciklama": "Hotki Bulvar, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"17 Katlı Betonarme Mesken Olan A Blok, 3 Katlı Betonarme Ofis Ve İşyeri Olan B,C Bloklar Ve 2 Katlı Betonarme Ofis Ve İşyeri Olan D Blok\". Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Hotki Bulvar, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"17 Katlı Betonarme Mesken Olan A Blok, 3 Katlı Betonarme Ofis Ve İşyeri Olan B,C Bloklar Ve 2 Katlı Betonarme Ofis Ve İşyeri Olan D Blok\". Proje kayıtlarına göre yapıyı Hotki İnşaat Enerji A.Ş. geliştirmiş; A blok ticari bölümlerden bağımsız kurgulanan konut bloğudur, üç ticari blok ise Fatih Sultan Mehmet Bulvarı cephesinde konumlanır. Aynı kayıtlar konut bölümünü 31 adet 3+1 (yaklaşık 126 m²) ve 64 adet 4+1 (yaklaşık 160 m²) daire ile bir hizmetli dairesinden oluşan 96 bağımsız birim olarak tarif eder; sitede güvenlik ve resepsiyon hizmeti, kameralı güvenlik sistemi, asansör, yürüyüş yolları, kameriyeler ve çocuk oyun parkı bulunur. Konum olarak Göksu Parkı ve Göksu Mall'a yürüme mesafesinde, metroya yaklaşık beş dakika uzaklıktadır; Aile Sağlığı Merkezi hemen yanındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62677",
@@ -19,10 +20,15 @@
     "2-17 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
+    "Geliştirici: Hotki İnşaat Enerji A.Ş. (proje kayıtları)",
+    "95 konut + 1 hizmetli dairesi = 96 bağımsız birim",
+    "3+1 (~126 m²) ve 4+1 (~160 m²) daire tipleri",
+    "Güvenlik ve resepsiyon hizmeti, kameralı güvenlik",
+    "Göksu Parkı ve Göksu Mall'a yürüme mesafesi",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "Hotki Bulvar Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

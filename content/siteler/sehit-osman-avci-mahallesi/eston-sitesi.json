@@ -7,7 +7,7 @@
     "lng": 32.651361
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/eston-sitesi-boundary.geojson",
-  "aciklama": "Eston Sitesi, Şehit Osman Avcı Mahallesi'nde dört apartmanlık, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '4 Adet Betonarme Apartman' niteliğiyle kayıtlı 28.615 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — dört bloğa karşılık yaklaşık 29 dönümlük parsel, mahallenin en ferah yerleşim düzenlerinden birini oluşturur; geniş yeşil alan payıyla bilinir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eston Sitesi, Şehit Osman Avcı Mahallesi'nde dört ayrı adaya yayılan, çok geniş parselli bir kooperatif sitesidir. TKGM kayıtlarına göre siteyi oluşturan dört kat mülkiyetli parselin toplam alanı 28.615 m²'dir ve tapu kayıtları yapıları 'Betonarme Apartman' niteliğiyle tanımlar — apartmanlara karşılık yaklaşık 29 dönümlük toplam alan, mahallenin en ferah yerleşim düzenlerinden birini oluşturur; geniş yeşil alan payıyla bilinir. Sitenin ayırt edici bir yanı, apartmanlarının blok koduyla değil isimle anılmasıdır: yerel yapı kayıtlarında Deniz, Güneş, Günay, Meşe ve Yıldız apartmanları bir adada; Cumhuriyet, Ata, Çiçek ve İstiklal apartmanları komşu adada; Emek Apartmanı ise bir diğerinde geçer — ilan başlıklarında ve adres tarifinde çoğunlukla bu isimler kullanılır. İlan kayıtlarına göre sitede 1+1, 2+1 ve 3+1 daireler ile 3+1 dubleks tipler bulunur; güvenlikli site düzeni, kapalı ve açık otopark ile sosyal tesis ilanlarda tekrar eden özelliklerdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17487",
@@ -34,10 +34,13 @@
     "4 ayrı ada — toplam 18 apartman (TKGM)",
     "Toplam ~28.615 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
+    "Apartmanlar isimle anılır: Deniz, Güneş, Günay, Meşe, Yıldız, Cumhuriyet, Ata, Çiçek, İstiklal, Emek",
+    "1+1, 2+1, 3+1 ve dubleks tipler (ilan kayıtları)",
+    "Güvenlikli site, kapalı ve açık otopark, sosyal tesis",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Eston Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

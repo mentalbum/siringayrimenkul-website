@@ -7,7 +7,7 @@
     "lng": 32.6377422
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/meydan-eryaman-boundary.geojson",
-  "aciklama": "Meydan Eryaman, Göksu'da konut değil ticaret odaklı bir merkezdir. TKGM kayıtlarına göre 17.700 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 4 Katlı Betonarme Ofis Ve İşyeri B,C,D,E,F Bloklar 16'Şar Katlı Betonarme Apartman\" — yani 4 katlı ofis bloğu ve işyeri bloklarından oluşan bir çarşı-ofis kompleksi. Çevre sitelerin günlük alışveriş ve hizmet noktasıdır. Bu merkezde satılık veya kiralık işyeriniz/ofisiniz mi var? Ticari birimlerde doğru fiyat konum ve cepheyle belirlenir — bölgeyi yakından tanıyan emlakçınızla birlikte değerlendirin.",
+  "aciklama": "Meydan Eryaman, Göksu'da konut ile ticareti bir arada kurgulayan karma bir projedir. TKGM kayıtlarına göre 17.700 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 4 Katlı Betonarme Ofis Ve İşyeri B,C,D,E,F Bloklar 16'Şar Katlı Betonarme Apartman\" — yani 4 katlı ofis-işyeri bloğunun yanında beş konut bloğu yer alır. Proje kayıtlarına göre bu beş blokta toplam 550 konut ile 51 ticari birim bulunur; dairelerin 454'ü 2+1 (76-86 m²), 96'sı 3+1 (103 m²) tipindedir. Yaklaşık 6.700 m²'lik peyzaj alanında süs havuzları, kamelyalar, yürüyüş ve koşu parkuru, açık fitness alanı ile çocuk oyun alanları; ayrıca 201'i açık, 397'si kapalı olmak üzere 598 otopark yeri yer alır. Zemindeki ticari birimler hem site sakinlerinin hem de çevre sitelerin günlük alışveriş ve hizmet noktasıdır. Bu sitede satılık veya kiralık daireniz ya da işyeriniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, projeyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46483",
@@ -15,13 +15,17 @@
     }
   ],
   "ozellikler": [
-    "Çarşı-ofis kompleksi (tapu: ofis + işyeri blokları)",
+    "5 konut bloğu (B–F) + 4 katlı A ofis-işyeri bloğu (tapu)",
+    "550 konut + 51 ticari birim (proje kayıtları)",
+    "454 adet 2+1 (76-86 m²), 96 adet 3+1 (103 m²)",
+    "~6.700 m² peyzaj: süs havuzu, yürüyüş parkuru, çocuk oyun alanı",
+    "598 otopark (201 açık + 397 kapalı)",
     "~17.700 m² parsel (TKGM)",
     "Kat mülkiyetli (TKGM)",
-    "Göksu'nun ticari merkezi"
+    "Göksu Mahallesi — konut ve çarşı bir arada"
   ],
   "alternatifAdlar": [
     "Meydan Eryaman Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-01"
 }

@@ -7,7 +7,7 @@
     "lng": 32.645489
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/arissa-goksu-boundary.geojson",
-  "aciklama": "Arissa Göksu, Göksu Mahallesi'nde Arissa İnşaat imzalı, bölge silüetinin en yüksek yapılarını taşıyan bir projedir. TKGM kayıtlarına göre kat mülkiyetli parselde tapu, yapıyı '3 Katlı A Blok ile 30 Katlı B Blok ve 28 Katlı C Blok' olarak tanımlar — 30 ve 28 katlı iki yüksek blok, Eryaman genelinin de en yüksekleri arasındadır; üç katlı A blok ise ticari-sosyal tabanı oluşturur. Üst katlarda çok geniş, engelsiz bir görüş vardır; Arissa ailesinin (Botanik) bölgedeki büyük halkasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Arissa Göksu, Göksu Mahallesi'nde Arissa İnşaat imzalı, bölge silüetinin en yüksek yapılarını taşıyan bir projedir. TKGM kayıtlarına göre kat mülkiyetli parselde tapu, yapıyı '3 Katlı A Blok ile 30 Katlı B Blok ve 28 Katlı C Blok' olarak tanımlar — 30 ve 28 katlı iki yüksek blok, Eryaman genelinin de en yüksekleri arasındadır; üç katlı A blok ise ticari-sosyal tabanı oluşturur. Üst katlarda çok geniş, engelsiz bir görüş vardır; Arissa ailesinin (Botanik) bölgedeki büyük halkasıdır. Geliştiricinin tanıtımına göre proje 2018'de başlamış ve 2021 Mayıs ayında teslim edilmiştir; 19.000 m²'lik proje alanında 211 konut ile 9 mağaza yer alır, dairelerin net alanı 224 m² olarak verilir. Aynı tanıtımda akıllı ev teknolojileri, yüksek enerji verimliliği, çocuk oyun parkları, yürüyüş yolları ve dinlenme alanlarıyla sürdürülebilir peyzaj tasarımı öne çıkarılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63932",
@@ -16,7 +16,12 @@
   ],
   "ozellikler": [
     "Arissa İnşaat — yeni nesil kooperatif modeli",
-    "Teslim edilmiş proje",
+    "2021 teslim (geliştirici tanıtımı)",
+    "211 konut + 9 mağaza (geliştirici tanıtımı)",
+    "19.000 m² proje alanı (geliştirici tanıtımı)",
+    "Daire net alanı ~224 m²",
+    "Akıllı ev teknolojileri",
+    "Çocuk oyun parkı, yürüyüş yolları, peyzaj alanları",
     "Arissa ailesinin Göksu projesi",
     "2. İnönü Caddesi No:6 / Göksu"
   ],
@@ -24,5 +29,5 @@
   "alternatifAdlar": [
     "Arissa Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-01"
 }

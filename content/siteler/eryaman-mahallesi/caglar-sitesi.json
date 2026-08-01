@@ -7,7 +7,7 @@
     "lng": 32.61977
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/caglar-sitesi-boundary.geojson",
-  "aciklama": "Çağlar Sitesi, Eryaman Mahallesi'nde A-7, B-5A ve C-5 bloklarından oluşan üç bloklu bir sitedir; adasını Gülbahar ve İrem apartmanlarıyla paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 6.972 m²'lik parseli üzerinde A, B ve C bloklardan oluşan kargir apartman niteliğiyle kayıtlıdır — üç blok için yaklaşık 7 dönümlük alan, ferah bir yerleşim düzeni sağlar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çağlar Sitesi, Eryaman Mahallesi'nde A-7, B-5A ve C-5 bloklarından oluşan üç bloklu bir sitedir; adasını Gülbahar ve İrem apartmanlarıyla paylaşır. Tapu kaydı da bu yapıyı doğrular: TKGM'de site, yaklaşık 6.972 m²'lik parseli üzerinde A, B ve C bloklardan oluşan kargir apartman niteliğiyle kayıtlıdır — üç blok için yaklaşık 7 dönümlük alan, ferah bir yerleşim düzeni sağlar. Yerel kayıtlara göre site S.S. Altyapıcılar Konut Yapı Kooperatifi eliyle üretilmiştir; aynı kayıtlarda blokların dış cephesinin mantolama ve Betopan cephe kaplamasıyla yenilendiği belirtilir. İlanlarda daireler 3+1 tipinde geçer ve sitenin Ayaş yolu cepheli konumu öne çıkar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46390",
@@ -18,8 +18,11 @@
     "3 blok (A-7, B-5A, C-5) — tapu nitelik kaydıyla uyumlu",
     "Yaklaşık 7 dönümlük parsel (TKGM)",
     "Komşular: Gülbahar ve İrem apartmanları",
+    "S.S. Altyapıcılar Konut Yapı Kooperatifi (yerel kayıtlar)",
+    "Dış cephe mantolama / Betopan kaplama uygulaması yapılmış",
+    "3+1 daireler (ilan kayıtları) — Ayaş yolu cepheli",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-01"
 }

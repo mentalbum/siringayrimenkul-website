@@ -7,7 +7,7 @@
     "lng": 32.631347
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/selinkent-sitesi-boundary.geojson",
-  "aciklama": "Selinkent Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Selinkent'in yerel kayıtlarda 6 numaralı blokla temsil edilir — tek bloklu kooperatif. Aynı adayı paylaştığı komşuları arasında Gül, Özlüce, Uzunbey, Yaygınkent ve Öz Çözüm Kent siteleri bulunur. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 38.937 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Selinkent Sitesi, Şeyh Şamil Mahallesi'nde, Susuz Gölü çevresindeki 'Türkonut Göl Bölgesi' olarak anılan kooperatif kuşağında yer alır. Bu dokuda birden çok kooperatif sitesi tek büyük yerleşim adasını paylaşır; Selinkent yerel kayıtlarda 6 numaralı blokla temsil edilir — tek bloklu kooperatif. Aynı adayı paylaştığı komşuları arasında Gül, İlksebat, Özlüce, Uzunbey, Yaygınkent ve Öz Çözüm Kent siteleri bulunur. Yerel yapı kayıtlarına göre blok 2006 yapımı ve on dört katlıdır; toplam 28 daireden oluşur ve daireler 3+1 planlı, yaklaşık 117 m²'dir — bu yüksekliğiyle paylaşımlı adanın en yüksek yapılarından biridir. Isıtma doğalgaz kombilidir; asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, çocuk oyun parkı, bahçe ve yangın merdiveni aynı kayıtlarda sayılan donatılardır, okul ve otobüs durağı yakındır. Susuz Gölü ve Göksu Parkı'na yürüme mesafesindeki konumu, bölgenin sakin kooperatif dokusuyla birleşir. Paylaştığı yerleşim adası TKGM kayıtlarında yaklaşık 38.937 m²'lik kat mülkiyetli tek parseldir. Bu sitede satılık veya kiralık daireniz mi var? Paylaşımlı adalarda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46486",
@@ -16,10 +16,13 @@
   ],
   "ozellikler": [
     "Tek bloklu kooperatif sitesi",
+    "2006 yapımı, 14 katlı blok (yerel yapı kayıtları)",
+    "Toplam 28 daire — 3+1, yaklaşık 117 m²",
+    "Doğalgaz kombi ısıtma, asansör, jeneratör",
     "Ada parseli ~38.937 m², kat mülkiyetli (TKGM)",
     "Türkonut Göl Bölgesi — paylaşımlı yerleşim adası",
     "Susuz Gölü ve Göksu Parkı'na yürüme mesafesi",
     "Şeyh Şamil — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-01"
 }

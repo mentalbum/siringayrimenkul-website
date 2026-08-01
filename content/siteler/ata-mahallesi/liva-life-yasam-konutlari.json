@@ -7,7 +7,7 @@
     "lng": 32.610448
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/liva-life-yasam-konutlari-boundary.geojson",
-  "aciklama": "Liva Life Yaşam Konutları, Ata Mahallesi'nde 13'er katlı ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 11.614 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '13 Katlı A ve B Blok Betonarme Apartman' olarak tanımlar. İki eş bloğun yalın düzeni yönetimi kolay tutar; mahallenin modern konut kuşağında bilinen bir adrestir. Geliştiricinin tanıtımına göre proje MAY Ankara imzasını taşır ve 2014 yılında tamamlanmıştır; daireler 3+1 olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Liva Life Yaşam Konutları, Ata Mahallesi'nde 13'er katlı ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 11.614 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '13 Katlı A ve B Blok Betonarme Apartman' olarak tanımlar. İki eş bloğun yalın düzeni yönetimi kolay tutar; mahallenin modern konut kuşağında bilinen bir adrestir. Geliştiricinin tanıtımına göre proje MAY Ankara imzasını taşır; inşaatına 2013'te başlanmış, 2014 yılında tamamlanmıştır ve daireler 3+1 olarak geçer. Geliştiricinin proje künyesinde adres Ata Mahallesi, Iğdır Sokak olarak veriliyor. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46407",
@@ -18,7 +18,8 @@
     "~11.614 m² parsel (TKGM)",
     "13 katlı bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "MAY Ankara projesi, 2014 tamamlanma (geliştirici tanıtımı)",
+    "MAY Ankara projesi — 2013-2014 yapım, 2014 tamamlanma (geliştirici tanıtımı)",
+    "Iğdır Sokak (geliştirici proje künyesi)",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
