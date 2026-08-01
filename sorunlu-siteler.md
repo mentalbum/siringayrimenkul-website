@@ -1087,6 +1087,23 @@ Hedef evren: 2. sırada takılan 181 kayıttan proje verisi (geliştirici/yıl/d
 ## A4 — 2. dalga UYGULANDI (2026-08-01, commit a9f4524) + Frekans dizine girdi
 2. dalga 40 kayıt: **12'sinde doğrulanmış yeni veri** (AP Forest Gate — Şani İnşaat/2023/78 konut; Beyaz Residence, Park Göksu, Ankapark, İlona, Kent Konakları, Arya, Palas Eryaman, Akasya Evleri, Demirel Park, Özahikent, Umut). Denetçi 4 kusur düzeltti: Park Göksu + İlona'da özellikler-tapu kat çelişkisi, Özahikent'te tekrar, Umut'ta "Iki→İki" imla. 28 kayıt dürüst boş. 12 URL IndexNow (200). **ARA ÖLÇÜM: dün istek atılan 10 dizinsizden Frekans Eryaman bir gecede Google dizinine GİRDİ** (site: teyitli); kalan 9 kuyrukta. A4 toplamı: 80 kayıt tarandı, 23 zenginleşti. Dalga 3 (40) + dalga 4 (46) listeleri hazır.
 
+## 🎯 A3 SONUÇ ÖLÇÜMÜ (2026-08-01) — indeksleme isteği KANITLANDI: 10/10 dizine girdi, 8'i ilk sayfada, 4'ü 1. SIRA
+Dün GSC'den "dizine eklenmesini iste" gönderilen 10 dizinsiz sayfanın 24 saat sonraki durumu (site: + canlı SERP ölçümü):
+| Sayfa | Önce | Şimdi |
+|---|---|---|
+| Hill Tower (Şeker) | dizinde YOK | **1. sıra** |
+| Meydan Cadde (Şeker) | dizinde YOK | **1. sıra** |
+| Gökdemir Premium (Tunahan) | dizinde YOK | **1. sıra** |
+| Frekans Eryaman (Altay) | dizinde YOK | **1. sıra** |
+| Oasis Rezidans (Şeker) | dizinde YOK | 2. sıra |
+| Arya Nüans (Altay) | dizinde YOK | 2. sıra |
+| Kaşmir Yonca (Cumhuriyet) | dizinde YOK | 2. sıra |
+| Hotki Bulvar (Cumhuriyet) | dizinde YOK | 4. sıra |
+| Mood Göksu (Cumhuriyet) | dizinde YOK | dizinde, henüz sıralanmıyor |
+| Bordo Loca (Göksu) | dizinde YOK | dizinde, henüz sıralanmıyor |
+**SONUÇ: 10/10 dizine girdi (%100), 8/10 ilk sayfaya girdi, 4/10 doğrudan 1. SIRA.** Teşhis doğrulandı: bu sayfaların sorunu sıralama değil, Google'ın sayfayı hiç taramamış olmasıydı (tarama bütçesi). Manuel indeksleme isteği bu darboğazı 24 saatte açıyor. **KALAN 32 dizinsiz sayfa için aynı sonuç bekleniyor — kota (günde ~10) yenilendikçe devam edilecek. Bu, 430 hedefindeki en yüksek getirili tek iş.**
+Not: bugün kota yine dolu çıktı (Mia Concept denendi, "Kota Aşıldı"); Google 24 saatlik pencerede yeniliyor.
+
 ## alternatifAdlar süpürmesi UYGULANDI (2026-07-31, commit 2d31442)
 330 kayda tek güvenli varyant sınıfı eklendi: tür soneki değişimi → "Aktürk Blokları" tipine "X Sitesi", soneksizlere (Motto Göksu) "İsim + Sitesi", sayılılara doğal biçim ("Elit Yaşam Konutları 3" → "Elit Yaşam 3 Sitesi"). Başka kaydın GERÇEK adıyla çakışan 11 üretim atlandı (yamyamlık koruması — "Aktürk Sitesi" zaten ayrı kayıt). "Sitesi/Site" ile biten ~380 kayda üretim yapılmadı (arama substring'i zaten eşleşir; ters yön uydurma olurdu). Kullanım: site içi arama eşleşmesi + JSON-LD alternateName + keywords meta; dev'de doğrulandı, 330 URL IndexNow (200). Envanter: 720 kaydın 494'ünde artık alternatifAdlar dolu.
 
