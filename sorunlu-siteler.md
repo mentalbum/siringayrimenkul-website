@@ -1104,6 +1104,19 @@ Dün GSC'den "dizine eklenmesini iste" gönderilen 10 dizinsiz sayfanın 24 saat
 **SONUÇ: 10/10 dizine girdi (%100), 8/10 ilk sayfaya girdi, 4/10 doğrudan 1. SIRA.** Teşhis doğrulandı: bu sayfaların sorunu sıralama değil, Google'ın sayfayı hiç taramamış olmasıydı (tarama bütçesi). Manuel indeksleme isteği bu darboğazı 24 saatte açıyor. **KALAN 32 dizinsiz sayfa için aynı sonuç bekleniyor — kota (günde ~10) yenilendikçe devam edilecek. Bu, 430 hedefindeki en yüksek getirili tek iş.**
 Not: bugün kota yine dolu çıktı (Mia Concept denendi, "Kota Aşıldı"); Google 24 saatlik pencerede yeniliyor.
 
+## ✅ A4 KAMPANYASI TAMAMLANDI (2026-08-01) — 166 kayıt tarandı, 63'ü zenginleşti
+| Dalga | Bölge | Taranan | Veri işlenen |
+|---|---|---|---|
+| 1 | Şeker/Altay/Tunahan/Yeşilova/Devlet/Y.Selim | 40 | 11 |
+| 2 | Y.Selim/Susuz/Eryaman/Ş.Şamil | 40 | 12 |
+| 3 | Ş.Şamil/Göksu/ŞOA/Cumhuriyet | 40 | 19 |
+| 4 | Cumhuriyet/Güzelkent/Ata | 46 | 21 |
+| **TOPLAM** | | **166** | **63 (%38)** |
+Verim yeni-dönem bölgelerde belirgin yüksek (dalga 3-4: %44-46; dalga 1-2: %28-30) — eski kooperatif sitelerinde internet kaydı yok, dürüstçe boş bırakıldı. 4. dalga bir kez kota hatasıyla boş döndü, model değişimiyle yeniden koşuldu (working tree temizdi, kalıntı yok).
+**Denetçi katma değeri (4 dalga toplamı): 14 düzeltme** — en kritikleri olgusal: Twin Towers kat aralığı (1-35 → 35'er), Mercan Life (18 → 17+18), Kainat Evleri'nde VAR OLMAYAN "Kainat 2 Evleri"ne atıf (→ Kainat Evler 2), Park Göksu + İlona + Seyirtepe'de özellik-tapu kat çelişkileri. Ayrıca Tekirdağ Park'ta kayıp `sözlüğümüzdeki kat irtifakı maddesinde` kalıbı eklenerek iç bağlantı geri kazanıldı.
+**Elle müdahale:** Ataşehir Eryaman'da "yaklaşık 20.000 m² peyzaj" (23.733 m² parselin %84'ü — zorlama) rakamı çıkarıldı, "geniş bir bölümü" olarak yumuşatıldı; kaynak çerçevesi korundu.
+63 URL IndexNow'a bildirildi (4 partide, hepsi 200).
+
 ## alternatifAdlar süpürmesi UYGULANDI (2026-07-31, commit 2d31442)
 330 kayda tek güvenli varyant sınıfı eklendi: tür soneki değişimi → "Aktürk Blokları" tipine "X Sitesi", soneksizlere (Motto Göksu) "İsim + Sitesi", sayılılara doğal biçim ("Elit Yaşam Konutları 3" → "Elit Yaşam 3 Sitesi"). Başka kaydın GERÇEK adıyla çakışan 11 üretim atlandı (yamyamlık koruması — "Aktürk Sitesi" zaten ayrı kayıt). "Sitesi/Site" ile biten ~380 kayda üretim yapılmadı (arama substring'i zaten eşleşir; ters yön uydurma olurdu). Kullanım: site içi arama eşleşmesi + JSON-LD alternateName + keywords meta; dev'de doğrulandı, 330 URL IndexNow (200). Envanter: 720 kaydın 494'ünde artık alternatifAdlar dolu.
 
