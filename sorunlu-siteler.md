@@ -1149,3 +1149,36 @@ Tam-ad çakışma envanteri: 14 grup / 30 kayıt. İlçe süzgeciyle 9 grup / 19
 **SİTE: 1. sıra 243 · 2. sıra 253 · 3. sıra 106 · 4-10 60 · çıkmayan 37 → ilk sayfa %95 (rekor).**
 **MAHALLE: 1. sıra 4/14** (Devlet, Eryaman, Şeker, Yavuz Selim) · Altay 3 · Tunahan 4 · Güzelkent 9 · çıkmayan 7 (Ata, Cumhuriyet, Göksu, ŞOA, Şeyh Şamil, Susuz, Yeşilova). Mahalle sorgularında rakip portal ağırlığı çok yüksek (sahibinden/remax/hepsiemlak ilk 3'ü kapıyor) — site sorgularından yapısal olarak zor sınıf.
 **KRİTİK METODOLOJİ NOTU:** Dün 1. sırada olan 290 kaydın bugünkü ölçümünde koruma oranı **%59**; kalan %41 2-3. sıraya kaymış. Aynı gün içinde bile oynama görüldü (Keyfim 1→2, Mood Göksu 3→0→0, Soyak 4→0). Sebep: bugün 720 sayfanın title/description/içeriği topluca değişti + 720 URL IndexNow'a bildirildi → Google tüm korpusu yeniden değerlendiriyor. **Bu yüzden bugünkü 243 rakamı "dip" ölçümdür, kalıcı seviye değil.** Sağlıklı karşılaştırma için 2-3 hafta sonra aynı sorgu listesiyle tekrar ölçülecek (sorgu listeleri: yeniden-tarama-hedef.json + tur3-birinciler.json).
+
+## 📌 İNDEKSLEME DURUMU (2026-08-01 akşam ölçümü)
+
+**GSC ERİŞİM SORUNU:** Search Console mülküne (`sc-domain:siringayrimenkul.com`)
+tarayıcıdaki üç Google hesabının da erişimi yok — ozgundeniss@gmail.com,
+ozgundeniss1@gmail.com, 1hamza.sirin@gmail.com hepsinde "Maalesef bu mülke
+erişiminiz yok". Mülk var ama yetki başka bir hesapta. **Özgün'ün çözmesi
+gereken tek şey bu** — çözülürse "dizine eklenmesini iste" düğmesi günde ~10
+sayfayı 24 saatte dizine sokuyor (ölçüldü: 10/10, 4'ü doğrudan 1. sıraya).
+
+**ÖLÇÜM (canlı `site:` sorgusu, 36 aday tek tek soruldu):**
+31 Temmuz'daki 36 dizinsizden **15'i dizine girdi**: Çağ Life, Ataköy Konutları,
+Mood Göksu, Referans Ankara, Çağkent, Ayyıldız, Bayer, Göksu Evleri, Hekimler,
+Eryaman Evleri, Başkent Sitesi, Sitekonut, Ak Kent, Soyak Blokları (Tunahan),
+Bordo Loca.
+
+**HÂLÂ DİZİNSİZ 21** (lib/tarama-oncelikli.ts'te kayıtlı):
+- ŞOA (6): güngörler-tower, mia-concept-konutlari, goldekent-sitesi,
+  ahikent-sitesi, safir-rezidans, soyak-sitesi
+- Ata (4): arıkovani, gözde-evler, mizan, sarmaşıklıköşk
+- Susuz (3): başak-life, starlife, başkent-göksu
+- Göksu (2): hava-destek, meydan-eryaman
+- Yavuz Selim (2): doğapark, göksu-sitesi
+- Güzelkent (2): eczacılar, küçük-ankara-villaları
+- Eryaman (1): toki-konutlari · Cumhuriyet (1): akasya · Şeyh Şamil (1): borankent
+
+**YAPILAN (GSC'siz kotasız kaldıraç):** site sayfasındaki 6 komşu kartından biri
+artık aynı mahalledeki dizinsiz bir sayfaya ayrılıyor (lib/tarama-oncelikli.ts +
+[site]/page.tsx). Cumhuriyet'te 70 sayfa tek hedefe, ŞOA'da 68 sayfa altı hedefe
+bağ veriyor. Örneklem ölçümü (ŞOA 12 sayfa): 21 yeni bağ, dağılım 3-5 dengeli.
+Ayrıca 22 URL IndexNow'a yeniden bildirildi (HTTP 200).
+
+**BAKIM:** sayfa dizine girince lib/tarama-oncelikli.ts'ten ÇIKARILMALI.
