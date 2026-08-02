@@ -8,7 +8,7 @@
     "lng": 32.641046
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/buse-konutlari-boundary.geojson",
-  "aciklama": "Buse Konutları, Göksu Mahallesi'nde sekiz apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda 'Sekiz Blok Kargir Apartman' niteliğiyle kayıtlı 23.150 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Sekiz bloğun 23 dönüme yayılan oturmuş düzeni, geniş blok araları ve yerleşik komşuluk çevresi sunar; Göksu'nun kooperatif kuşağının bilinen adreslerindendir. Yerel emlak kayıtlarında bloklar A-1'den A-8'e kodlanır; ilan kayıtlarında 2+1 daireler öne çıkar. Site 93. Sokak hattında yer alır ve kendi site yönetimi bulunur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Buse Konutları, Göksu Mahallesi'nde sekiz apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda 'Sekiz Blok Kargir Apartman' niteliğiyle kayıtlı 23.150 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Sekiz bloğun 23 dönüme yayılan oturmuş düzeni, geniş blok araları ve yerleşik komşuluk çevresi sunar; Göksu'nun kooperatif kuşağının bilinen adreslerindendir. Yerel emlak kayıtlarında bloklar A-1'den A-8'e kodlanır; ilan kayıtlarında 2+1 daireler öne çıkar. Site 93. Sokak hattında yer alır ve kendi site yönetimi bulunur. (Ata Mahallesi'ndeki Mercan Life Buse Konutları ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46470",
@@ -24,7 +24,9 @@
     "Göksu Mahallesi"
   ],
   "alternatifAdlar": [
-    "Buse Sitesi"
+    "Buse Sitesi",
+    "Göksu Buse Konutları",
+    "Göksu Buse Sitesi"
   ],
   "zenginlestirildi": "2026-08-01"
 }

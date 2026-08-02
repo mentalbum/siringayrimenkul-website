@@ -7,7 +7,7 @@
     "lng": 32.603609
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/mercan-life-buse-konutlari-boundary.geojson",
-  "aciklama": "Mercan Life Buse Konutları — aramalarda kısaca 'Buse Konutları' olarak da geçer — Ata Mahallesi'nde, mahalle silüetinin en yüksek yapıları arasındaki ikiz bloklu bir konut sitesidir. TKGM kayıtlarına göre 11.806 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A-17 ve B-18 Katlı Bloklardan Oluşan Betonarme Mesken' olarak tanımlar. 17 ve 18 katlı iki yüksek blok, üst katlarda Eryaman ve Ata yönüne geniş görüş sunar; iki bloklu yalın düzen site yönetimini de sade tutar. Geliştiricinin tanıtımına göre proje Mercan Grup İnşaat imzasını taşır; iki blokta 3+1 ve 4+1 tiplerinde toplam 130 daire yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mercan Life Buse Konutları, Ata Mahallesi'nde A ve B kodlu iki bloktan oluşan, mahalle silüetinin en yüksek yapıları arasında yer alan bir konut sitesidir. TKGM kayıtlarına göre 11.806 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A-17 ve B-18 Katlı Bloklardan Oluşan Betonarme Mesken' olarak tanımlar. 17 ve 18 katlı iki yüksek blok, üst katlarda Eryaman ve Ata yönüne geniş görüş sunar; iki bloklu yalın düzen site yönetimini de sade tutar. Geliştiricinin tanıtımına göre proje Mercan Grup İnşaat imzasını taşır; iki blokta 3+1 ve 4+1 tiplerinde toplam 130 daire yer alır. (Göksu Mahallesi'ndeki Buse Konutları ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44753",
@@ -24,7 +24,8 @@
   ],
   "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
-    "Buse Konutları",
-    "Mercan Life Buse Sitesi"
+    "Mercan Life Buse Sitesi",
+    "Mercan Life Buse",
+    "Ata Mahallesi Mercan Life Buse Konutları"
   ]
 }
