@@ -8,7 +8,9 @@ import { SitelerTabs } from "@/components/site/siteler-tabs";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Eryaman Siteleri ve Rezidansları — Satılık ve Kiralık Daireler İçin Tam Liste",
+  // Ticari mesaj ev sahibine seslenir (Özgün kararı, 2026-08-01) — gerekçe
+  // app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata içinde.
+  title: "Eryaman Siteleri ve Rezidansları — Evinizi Satalım, Kiraya Verelim",
   description:
     "Eryaman'daki tüm site ve rezidansların tam listesi. Sitenizi bulun; dairenizin satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin: 0532 363 96 60.",
   alternates: { canonical: "/siteler" },

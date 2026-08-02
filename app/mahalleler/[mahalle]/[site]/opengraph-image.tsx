@@ -88,7 +88,7 @@ export default async function Image({
             {isim}
           </div>
           <div style={{ marginTop: 22, fontSize: 32, color: "rgba(255,255,255,0.8)" }}>
-            Satılık ve Kiralık Daireler
+            Evinizi Satalım, Kiraya Verelim
           </div>
         </div>
 

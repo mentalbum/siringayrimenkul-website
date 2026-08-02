@@ -56,8 +56,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title:
       entries.length > 1
-        ? `${mahalle.isim} ${label} Ada — Satılık ve Kiralık Daireler | ${ustBolgeEtiketi(mahalle)} Emlakçısı`
-        : `${ada.site.isim} ${label} Ada — Satılık ve Kiralık Daireler | ${ustBolgeEtiketi(mahalle)} Emlakçısı`,
+        ? `${mahalle.isim} ${label} Ada Emlakçı | Evinizi Satalım, Kiraya Verelim | ${ustBolgeEtiketi(mahalle)}`
+        : `${ada.site.isim} ${label} Ada Emlakçı | Evinizi Satalım, Kiraya Verelim | ${ustBolgeEtiketi(mahalle)}`,
     description:
       entries.length > 1
         ? `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`

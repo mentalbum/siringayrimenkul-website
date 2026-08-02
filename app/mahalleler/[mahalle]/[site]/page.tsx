@@ -87,13 +87,23 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Aynı ad birden çok mahallede varsa (Kardelen 4 mahallede!) özdeş başlık
     // Google'ın sayfaları tek sonuca katlamasına yol açıyordu — sonek mahalleyle
     // açılır: "… | Göksu Eryaman" (lib/content.ts isimBirdenCokMahallede).
+    // Başlıktaki ticari mesaj EV SAHİBİNE seslenir (Özgün kararı, 2026-08-01).
+    // Ölçülen gerçek: siteye gelip telefon eden son 10 kişinin hepsi "sizde
+    // satılık/kiralık var mı" diye sordu — yani başlıktaki "Satılık ve Kiralık
+    // Daire" ifadesi ALICI çekiyordu, oysa hedef kitle evini emlakçı
+    // aracılığıyla satmak/kiraya vermek isteyen ev sahibi.
+    // Kaybedilen bir şey yok: "X Sitesi satılık daire" sorgularında zaten 4-6.
+    // sıradayız (portalların arkasında), ev sahibi sorgularında ("evimi satmak
+    // istiyorum eryaman emlakçı", "eryaman emlakçı") zaten 1. sıradayız.
+    // Rakiplerin hiçbiri ev sahibine seslenmiyor — bu başlık tek başına
+    // farklılaştırıyor. Yeni başlık eskisinden de kısa (80 → 68 karakter).
     title: isimdeEryamanVar
-      ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire`
+      ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
       : eryamanda
         ? isimBirdenCokMahallede(site.isim)
-          ? `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalleKisaIsim(mahalle)} Eryaman`
-          : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | Eryaman`
-        : `${site.isim} Emlakçı — Satılık ve Kiralık Daire | ${mahalle.isim}`,
+          ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalleKisaIsim(mahalle)} Eryaman`
+          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman`
+        : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
     // (1. sıra araştırması A1, defter 2026-07-31).
@@ -485,9 +495,12 @@ export default async function SitePage({ params }: Props) {
       </div>
 
       <section className="mt-12">
-        <h2 className="text-xl">{`${site.isim} Satılık Daire ve Kiralık Daire`}</h2>
+        {/* Başlık ev sahibine seslenir; alıcıyı sahibinden mağazasına yönlendiren
+            cümle paragrafta duruyor — o bilinçli bir filtre, telefonu meşgul
+            etmeden doğru yere gönderiyor. */}
+        <h2 className="text-xl">{`${bulunmaHali(site.isim)} Evinizi Satmak veya Kiraya Vermek`}</h2>
         <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
-          {`Bu sitede eviniz mi var? Satılık ya da kiralık vermeden önce `}
+          {`Bu sitede eviniz mi var? Satmadan ya da kiraya vermeden önce `}
           <Link
             href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}
             className="font-semibold text-gold-dark hover:underline"

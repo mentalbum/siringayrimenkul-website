@@ -77,8 +77,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // "EMLAKÇI" YALIN HÂLDE VE BAŞTA (Özgün'ün hedef biçimi, 2026-07-31):
     // insanlar "göksu mahallesi emlakçı" diye arıyor — tam dizi başlığın
     // başında birebir geçer; iyelikli "Emlakçısı" biçimi gövdede zaten var.
+    // Ticari mesaj ev sahibine seslenir — gerekçe site sayfası şablonunda
+    // (app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata).
     title: {
-      absolute: `${baslikIsim} Emlakçı — Satılık ve Kiralık Daire | ${
+      absolute: `${baslikIsim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
         eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
       }`,
     },
@@ -346,11 +348,15 @@ export default async function MahallePage({ params }: Props) {
       </div>
 
       <section className="mt-14">
-        <h2 className="text-xl">{`${mahalle.isim} Satılık ve Kiralık Daireler`}</h2>
+        {/* Başlıklar da gövde metniyle aynı kitleye seslensin: altındaki iki
+            paragraf zaten "Evinizi satmayı düşünüyorsanız" / "Boş dairenizi
+            kiraya mı vereceksiniz" diyor, başlıklar ise ilan arayana
+            sesleniyordu (Özgün kararı, 2026-08-01). */}
+        <h2 className="text-xl">{`${mahalle.isim}'nde Evinizi Satmak veya Kiraya Vermek`}</h2>
         <div className="mt-5 grid gap-4 lg:grid-cols-2">
           <div className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="text-base font-semibold text-navy">
-              {`${mahalle.isim}'nde Satılık Daire`}
+              {`${mahalle.isim}'nde Evinizi Satmak`}
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-body">
               {siteler.length > 0
@@ -368,7 +374,7 @@ export default async function MahallePage({ params }: Props) {
           </div>
           <div className="rounded-2xl border border-border bg-surface p-6">
             <h3 className="text-base font-semibold text-navy">
-              {`${mahalle.isim}'nde Kiralık Daire`}
+              {`${mahalle.isim}'nde Evinizi Kiraya Vermek`}
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-body">
               Boş dairenizi kiraya mı vereceksiniz? Doğru kira bedeli, sağlam sözleşme ve
