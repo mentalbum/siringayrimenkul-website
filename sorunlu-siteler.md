@@ -1198,9 +1198,13 @@ Akış: kutuya URL yaz → Enter → ~18 sn → "DİZİNE EKLENMESİNİ İSTE" �
 → "Kapat". Doğrudan `/search-console/inspect?...&id=<url>` bağlantısı 404 veriyor,
 panelden gitmek şart.
 
-**BUGÜN GÖNDERİLEN 8 İNDEKSLEME İSTEĞİ** (hepsi "Dizine eklenmesi istendi" onayı aldı):
-Güngörler Tower, Mia Concept Konutları, Safir Rezidans, Başak Life, Starlife,
-Göldekent Sitesi, Ahikent Sitesi, Meydan Eryaman.
+**BUGÜN GÖNDERİLEN 10 İNDEKSLEME İSTEĞİ** (hepsi "Dizine eklenmesi istendi" onayı aldı
+— günlük kota tamamlandı): Güngörler Tower, Mia Concept Konutları, Safir Rezidans,
+Başak Life, Starlife, Göldekent Sitesi, Ahikent Sitesi, Meydan Eryaman, Başkent Göksu,
+Doğapark Sitesi.
+
+**Sitemap durumu (GSC Site Haritaları):** /sitemap.xml — Başarılı, 797 sayfa keşfedildi,
+son okuma 2 Ağu 2026. Sitemap tarafında sorun YOK; yeniden göndermeye gerek yok.
 
 Hepsinin denetim sonucu aynıydı: **"Keşfedildi - şu anda dizine eklenmiş değil",
 Son tarama: Yok.** Yani Google sayfayı sitemap'ten biliyor ama HİÇ TARAMAMIŞ —
@@ -1208,8 +1212,12 @@ tarama bütçesi teşhisi dördüncü kez doğrulandı. (Starlife, Ahikent ve Me
 Eryaman'da "URL Google tarafından bilinmiyor" + "yönlendiren site haritası
 algılanmadı" çıktı; bu üçü sitemap eşleşmesi henüz oluşmamış sayfalar.)
 
-**KUYRUKTA (kota yenilendikçe, günde ~10):** Başkent Göksu, Doğapark, Göksu Sitesi
-(Yavuz Selim), Arıkovanı, Gözde Evler, Mizan, Sarmaşıklıköşk, Hava Destek,
-TOKİ Konutları, Akasya (Cumhuriyet), Borankent, Eczacılar, Küçük Ankara Villaları,
-Soyak Sitesi (ŞOA).
+**KUYRUKTA 12 SAYFA (yarın, kota yenilenince):** Göksu Sitesi (Yavuz Selim), Arıkovanı,
+Gözde Evler, Mizan, Sarmaşıklıköşk (hepsi Ata), Hava Destek (Göksu), TOKİ Konutları
+(Eryaman), Akasya (Cumhuriyet), Borankent (Şeyh Şamil), Eczacılar + Küçük Ankara
+Villaları (Güzelkent), Soyak Sitesi (ŞOA).
+
+**İZLEME:** 10 isteğin sonucu 24 saat içinde bakılmalı. Geçen partide 10/10 dizine
+girmişti, 8'i ilk sayfaya, 4'ü doğrudan 1. sıraya. Dizine girenler
+lib/tarama-oncelikli.ts'ten çıkarılacak.
 
