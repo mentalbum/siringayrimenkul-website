@@ -32,6 +32,7 @@ import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
+import { taramaOncelikliSlugs } from "@/lib/tarama-oncelikli";
 import { bulunmaHali, tamlayanHali } from "@/lib/turkce";
 
 // Komşu sayfalara ÇEŞİTLENMİŞ anchor kalıpları: hedef sayfa her yerden aynı
@@ -165,8 +166,28 @@ export default async function SitePage({ params }: Props) {
           .filter((i) => i !== siteIndex)
           .map((i) => mahalleSiteleri[i]);
   const merkez = site.koordinat;
+  // Kartlardan biri, bu mahallede Google dizinine HENÜZ GİRMEMİŞ bir sayfaya
+  // ayrılır (lib/tarama-oncelikli.ts). Ölçülen teşhis: o sayfaların sorunu
+  // keşif değil tarama bütçesi — sitemap'te ve graftalar ama Google sırayı
+  // onlara getirmiyor. Search Console'un elle indeksleme isteği bu darboğazı
+  // 24 saatte açıyordu; mülke erişim şu an yok, kotasız kaldıraç iç bağ
+  // yoğunluğu. Mahalledeki her site sayfası dizinsiz komşusuna bağ verince
+  // o sayfanın aldığı iç bağ sayısı katlanıyor (Cumhuriyet'te 70 sayfa tek
+  // bir dizinsiz sayfaya, Şehit Osman Avcı'da 68 sayfa altı sayfaya).
+  // Sayfa dizine girdiğinde listeden çıkarılmalı.
+  const oncelikliSlugs = taramaOncelikliSlugs(mahalleSlug);
+  const oncelikliKomsu = (() => {
+    const adaylar = mahalleSiteleri.filter(
+      (item) => item.slug !== site.slug && oncelikliSlugs.includes(item.slug)
+    );
+    if (!adaylar.length) return undefined;
+    // Aynı sayfa her komşudan aynı adayı almasın: slug'a göre dönüşümlü seç,
+    // böylece birden çok dizinsiz sayfa varsa bağ bütçesi aralarında paylaşılır.
+    const kaydirma = site.slug.split("").reduce((t, c) => t + c.charCodeAt(0), 0);
+    return adaylar[kaydirma % adaylar.length];
+  })();
   const digerSiteler = (() => {
-    const secim = [...atlamaSiteler];
+    const secim = oncelikliKomsu ? [oncelikliKomsu, ...atlamaSiteler] : [...atlamaSiteler];
     const ekle = (aday: (typeof mahalleSiteleri)[number]) => {
       if (secim.length < digerSiteSayisi && !secim.some((item) => item.slug === aday.slug))
         secim.push(aday);
