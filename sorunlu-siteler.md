@@ -1182,3 +1182,34 @@ bağ veriyor. Örneklem ölçümü (ŞOA 12 sayfa): 21 yeni bağ, dağılım 3-5
 Ayrıca 22 URL IndexNow'a yeniden bildirildi (HTTP 200).
 
 **BAKIM:** sayfa dizine girince lib/tarama-oncelikli.ts'ten ÇIKARILMALI.
+
+### ✅ GSC ERİŞİMİ ÇÖZÜLDÜ (2026-08-01 gece)
+
+**Doğru mülk: `https://www.siringayrimenkul.com/` (URL ÖNEKİ mülkü), `sc-domain:` DEĞİL.**
+ozgundeniss@gmail.com bu mülke erişiyor. Domain mülkü (sc-domain:siringayrimenkul.com)
+ayrı bir kayıt ve ona erişim yok — bugün saatlerce onu denediğimiz için "erişim yok"
+sanmıştık. www'suz URL öneki mülkü de var ama neredeyse boş (87 tıklama, 1 sayfa).
+
+**Panel verisi:** 1.132 web arama tıklaması (son 28 gün), dizine eklenen 1.070 sayfa,
+dizine eklenmeyen 643 sayfa.
+
+**Arayüz notu güncellendi:** URL denetim kutusunda **Enter ÇALIŞIYOR** (eski not yanlış).
+Akış: kutuya URL yaz → Enter → ~18 sn → "DİZİNE EKLENMESİNİ İSTE" → ~60 sn → onay modalı
+→ "Kapat". Doğrudan `/search-console/inspect?...&id=<url>` bağlantısı 404 veriyor,
+panelden gitmek şart.
+
+**BUGÜN GÖNDERİLEN 8 İNDEKSLEME İSTEĞİ** (hepsi "Dizine eklenmesi istendi" onayı aldı):
+Güngörler Tower, Mia Concept Konutları, Safir Rezidans, Başak Life, Starlife,
+Göldekent Sitesi, Ahikent Sitesi, Meydan Eryaman.
+
+Hepsinin denetim sonucu aynıydı: **"Keşfedildi - şu anda dizine eklenmiş değil",
+Son tarama: Yok.** Yani Google sayfayı sitemap'ten biliyor ama HİÇ TARAMAMIŞ —
+tarama bütçesi teşhisi dördüncü kez doğrulandı. (Starlife, Ahikent ve Meydan
+Eryaman'da "URL Google tarafından bilinmiyor" + "yönlendiren site haritası
+algılanmadı" çıktı; bu üçü sitemap eşleşmesi henüz oluşmamış sayfalar.)
+
+**KUYRUKTA (kota yenilendikçe, günde ~10):** Başkent Göksu, Doğapark, Göksu Sitesi
+(Yavuz Selim), Arıkovanı, Gözde Evler, Mizan, Sarmaşıklıköşk, Hava Destek,
+TOKİ Konutları, Akasya (Cumhuriyet), Borankent, Eczacılar, Küçük Ankara Villaları,
+Soyak Sitesi (ŞOA).
+
