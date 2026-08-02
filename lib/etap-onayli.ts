@@ -69,3 +69,16 @@ export function adaOnayliEtap(adaNo: string): string | null {
   }
   return null;
 }
+
+/**
+ * Bu etap numarası için sayfa üretiliyor mu?
+ *
+ * Etap sayfaları yalnızca resmî ada listesi olan etaplarda var (4 ve 5).
+ * Kayıtlardaki `adalar[].etap` alanı ise doğrulanmamış etapları da taşıyor —
+ * mahalle sayfası o alandan link üretince olmayan sayfaya bağ veriyordu.
+ * Canlı ölçümde yakalandı (2026-08-01): Şehit Osman Avcı mahalle sayfası
+ * /etaplar/2 adresine link basıyor, adres 404 dönüyordu.
+ */
+export function etapSayfasiVarMi(no: string | undefined): boolean {
+  return !!no && ONAYLI.some((etap) => etap.no === no);
+}

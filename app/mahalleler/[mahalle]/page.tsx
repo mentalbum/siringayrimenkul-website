@@ -28,6 +28,7 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
 import { eryamandaMi } from "@/lib/bolge";
+import { etapSayfasiVarMi } from "@/lib/etap-onayli";
 
 type Props = {
   params: Promise<{ mahalle: string }>;
@@ -157,9 +158,15 @@ export default async function MahallePage({ params }: Props) {
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
   const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug);
+  // SADECE sayfası olan etaplar listelenir. Kayıtlardaki adalar[].etap alanı
+  // doğrulanmamış etapları da taşıyor; filtre olmadan mahalle sayfası olmayan
+  // sayfaya link basıyordu (canlı ölçümde yakalandı: Şehit Osman Avcı →
+  // /etaplar/2 → 404). Bkz. lib/etap-onayli.ts.
   const etaplar = (
     Array.from(new Set(adalar.map((ada) => ada.etap).filter(Boolean))) as string[]
-  ).sort((a, b) => Number(a) - Number(b));
+  )
+    .filter((no) => etapSayfasiVarMi(no))
+    .sort((a, b) => Number(a) - Number(b));
   // "4. ve 5." — etap numaraları kimliktir; adet göstermek "2. Etap" sanılıyor
   const etapEtiketi =
     etaplar.length > 1

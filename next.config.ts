@@ -94,6 +94,10 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/guzelkent/guz-gol-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi", permanent: true },
       { source: "/mahalleler/guzelkent/seniz-konut-kooperatifi", destination: "/mahalleler/guzelkent-mahallesi/seniz-sitesi", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/akin-689-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari", permanent: true },
+      // "-mahallesi" ekli biçim de kapsanmalı: canlı SERP taramasında (2026-08-01)
+      // "Akın 688 Konutları emlakçı" aramasında Google TAM BU ADRESİ gösteriyordu
+      // ve adres 404 veriyordu — kural yalnızca eski kısa mahalle adına yazılmıştı.
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/akin-689-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/armonia-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/firat-life-style-goksu-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/golde-luxe-konutlari", destination: "/mahalleler/cumhuriyet-mahallesi/golde-luxe-konutlari", permanent: true },
@@ -105,6 +109,13 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/seyh-samil/borankent-sitesi", destination: "/mahalleler/seyh-samil-mahallesi/borankent", permanent: true },
       { source: "/mahalleler/seyh-samil/dilara-sitesi", destination: "/mahalleler/ata-mahallesi/dilara-sitesi", permanent: true },
       { source: "/mahalleler/seyh-samil/eston-2-sitesi", destination: "/mahalleler/seyh-samil-mahallesi/eston-bloklari", permanent: true },
+      { source: "/mahalleler/seyh-samil-mahallesi/eston-2-sitesi", destination: "/mahalleler/seyh-samil-mahallesi/eston-bloklari", permanent: true },
+      // Google, "Eston Sitesi eryaman emlakçı" aramasında Şehit Osman Avcı
+      // altındaki eston-2-sitesi adresini gösteriyor (canlı ölçüm 2026-08-01) —
+      // orada hiç sayfa olmadı, 404 dönüyordu. Eston Sitesi ŞOA'da, Eston
+      // Blokları Şeyh Şamil'de; bu adres ŞOA kaydına gitmeli.
+      { source: "/mahalleler/sehit-osman-avci/eston-2-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/eston-2-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi", permanent: true },
       { source: "/mahalleler/seyh-samil/hava-yollari-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/havayollari-sitesi", permanent: true },
       { source: "/mahalleler/seyh-samil/oz-ahi-sitesi", destination: "/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi", permanent: true },
       { source: "/mahalleler/seyh-samil/ozahi-kent", destination: "/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi", permanent: true },
