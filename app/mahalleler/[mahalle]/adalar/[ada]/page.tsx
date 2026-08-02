@@ -62,13 +62,35 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       entries.length > 1
         ? `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
         : `${ada.site.isim} ${label} Ada'da daireniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
-    alternates: { canonical: `/mahalleler/${mahalle.slug}/adalar/${adaKey}` },
-    // Ölçülen gerçek: 777 ada sayfası 3 ayda 0 tıklama / 0 gösterim aldı — kimse
-    // "17312 ada" diye aramıyor. Aynı dönemde 727 site sayfasının 329'u hiç
-    // taranmamıştı. Bu sayfalar ziyaretçi için duruyor (tapu niteliği, komşu
-    // adalar, harita) ama arama dizinine girmiyor; follow açık ki iç link değeri
-    // site ve mahalle sayfalarına geçsin. Sitemap tarafı: app/sitemap.ts.
-    robots: { index: false, follow: true },
+    // ASIL SAYFA = SİTE SAYFASI (2026-08-02).
+    //
+    // Ölçüm: 298 sitelik canlı SERP taramasında 51 sitede Google, site adı
+    // arandığında site sayfası yerine BU ada sayfasını gösteriyordu (Şeyh
+    // Şamil'de oran %45). Yani zenginleştirdiğimiz site sayfaları aramada
+    // görünmüyor, yerlerine kimsenin "17312 ada" diye aramadığı sayfalar
+    // çıkıyordu.
+    //
+    // Önce yönlendirme denendi (cda17a7), Özgün'ün kararıyla geri alındı:
+    // sayfalar ziyaretçi için değerli (tapu niteliği, blok künyesi, komşu
+    // adalar, harita) ve başlıkları site adıyla açılacak şekilde düzeltildi.
+    // Bu çözüm sayfayı YERİNDE BIRAKIR ama arama motoruna asıl sürümün site
+    // sayfası olduğunu söyler: canonical site sayfasına işaret eder ve
+    // topladığı sinyal oraya akar.
+    //
+    // noindex KALDIRILDI çünkü ikisi bir arada çelişkili sinyaldir — noindex
+    // gören Google canonical'ı hiç değerlendirmez, sayfayı olduğu gibi bırakır
+    // (nitekim bugüne kadar öyle oldu: noindex'e rağmen 51 vakada sayfa SERP'te
+    // duruyordu, çünkü Google onu yeniden tarayıp etiketi görmemişti).
+    //
+    // Paylaşımlı parselde (bir adada birden çok site) tek bir doğru hedef
+    // olmadığı için sayfa kendi kanonik sürümü olarak kalır ve noindex sürer.
+    alternates: {
+      canonical:
+        entries.length === 1
+          ? `/mahalleler/${mahalle.slug}/${ada.site.slug}`
+          : `/mahalleler/${mahalle.slug}/adalar/${adaKey}`,
+    },
+    ...(entries.length > 1 && { robots: { index: false, follow: true } }),
   };
 }
 

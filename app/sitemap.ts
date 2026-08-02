@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import {
   getAllBlogPosts,
+  getAllAdalar,
+  adaRouteKey,
   getAllEtaplar,
   getBlogPostLastModified,
   getMahalleLastModified,
@@ -65,13 +67,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  // Ada sayfaları bilinçli olarak sitemap DIŞINDA (2026-07-28). Search Console
-  // ölçümü: 777 ada sayfası 3 ayda 0 tıklama / 0 gösterim aldı — "17312 ada"
-  // diye arama yapılmıyor. Buna karşılık 727 site sayfasının 329'u "keşfedildi,
-  // şu anda dizine eklenmiş değil" durumundaydı; tarama bütçesi getirisi olmayan
-  // ada sayfalarına gidiyordu. Sayfalar duruyor (site sayfasından tıklayan
-  // kullanıcı tapu bilgisini görsün) ama noindex + sitemap dışı: bütçe site
-  // sayfalarına aksın. Geri almak için burayı ve ada sayfasındaki robots'u aç.
+  // TEK SİTELİ ada sayfaları sitemap'e GEÇİCİ olarak alındı (2026-08-02).
+  //
+  // Arka plan: 2026-07-28'de bu sayfalar sitemap dışına çıkarılmıştı (777 ada
+  // sayfası 3 ayda 0 tıklama / 0 gösterim almıştı; tarama bütçesi getirisi
+  // olmayan sayfalara gidiyordu). Ama bu, ters bir sonuç doğurdu: sayfalar
+  // noindex etiketi taşımasına rağmen dizinde KALDI, çünkü Google onları
+  // yeniden tarayıp etiketi görmedi. 298 sitelik canlı SERP taramasında 51
+  // sitede, site adı arandığında site sayfası yerine ada sayfası çıkıyordu.
+  //
+  // Yeni çözüm: ada sayfasının canonical'ı artık site sayfasını gösteriyor
+  // (app/mahalleler/[mahalle]/adalar/[ada]/page.tsx). Ama canonical'ın işe
+  // yaraması için Google'ın sayfayı BİR KEZ taraması şart — sitemap dışında
+  // kaldığı sürece o tarama hiç gelmiyor. Bu yüzden tek siteli ada sayfaları
+  // düşük öncelikle sitemap'e alındı: Google tarayıp canonical'ı görsün,
+  // sayfayı site sayfasına katlasın.
+  //
+  // Paylaşımlı parseller (bir adada birden çok site) HARİÇ: onların kanonik
+  // sürümü kendileri ve noindex sürüyor, sitemap'e girmezler.
+  //
+  // BU GEÇİCİDİR: canonical'lar işlendikten sonra (Search Console'da ada
+  // sayfaları "alternatif sayfa, uygun kanonik etiketi var" durumuna geçince)
+  // burası tekrar kapatılmalı ki tarama bütçesi site sayfalarına kalsın.
+  const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) => {
+    const gruplar = new Map<string, number>();
+    for (const ada of getAllAdalar(mahalle.slug)) {
+      const key = adaRouteKey(ada);
+      gruplar.set(key, (gruplar.get(key) ?? 0) + 1);
+    }
+    return [...gruplar]
+      .filter(([, adet]) => adet === 1)
+      .map(([key]) => ({
+        url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
+        lastModified: getMahalleLastModified(mahalle.slug),
+        changeFrequency: "yearly" as const,
+        priority: 0.2,
+      }));
+  });
 
   // dizinDisi yazılar sitemap'e girmez (noindex ile tutarlı — bkz. lib/types.ts).
   const blogSayfalari: MetadataRoute.Sitemap = getAllBlogPosts()
@@ -93,6 +125,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...mahalleSayfalari,
     ...siteSayfalari,
     ...etapSayfalari,
+    ...adaSayfalari,
     ...blogSayfalari,
   ];
 }
