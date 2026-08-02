@@ -101,7 +101,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
       : eryamanda
         ? isimBirdenCokMahallede(site.isim)
-          ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalleKisaIsim(mahalle)} Eryaman`
+          ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
+            // Eryaman" olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet,
+            // Çiğdem sitelerinin Eryaman Mahallesi kayıtları).
+            `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
+              mahalleKisaIsim(mahalle) === "Eryaman"
+                ? "Eryaman Mahallesi"
+                : `${mahalleKisaIsim(mahalle)} Eryaman`
+            }`
           : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman`
         : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
