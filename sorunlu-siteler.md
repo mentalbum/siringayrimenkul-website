@@ -1221,3 +1221,55 @@ Villaları (Güzelkent), Soyak Sitesi (ŞOA).
 girmişti, 8'i ilk sayfaya, 4'ü doğrudan 1. sıraya. Dizine girenler
 lib/tarama-oncelikli.ts'ten çıkarılacak.
 
+
+## 🔧 ADA SAYFASI KANONİKLEŞTİRMESİ (2026-08-02)
+
+**Sorun (298 sitelik canlı SERP ölçümü):** 51 sitede, site adı arandığında Google
+site sayfası yerine o sitenin ADA sayfasını gösteriyordu. Şeyh Şamil'de oran %45.
+
+**Kök neden:** 28 Temmuz'da ada sayfaları noindex + sitemap dışı yapılmıştı; bu
+ters etki doğurdu. Google noindex'i ancak sayfayı yeniden tarayınca görebilir,
+sitemap dışında kalınca o tarama hiç gelmedi. Sayfalar dizinde kaldı.
+
+**Uygulanan çözüm (yönlendirme DEĞİL):**
+- Tek siteli ada sayfalarının canonical'ı → site sayfası
+- noindex kaldırıldı (noindex+canonical çelişkili sinyal)
+- Tek siteli ada sayfaları sitemap'e alındı, priority 0.2 (797 → 1.544 URL)
+- Paylaşımlı parseller değişmedi (kendi canonical'ı + noindex + sitemap dışı)
+- 747 ada URL'i IndexNow'a bildirildi
+
+**Neden yönlendirme değil:** Özgün'ün kararı ada sayfalarının KALMASI yönündeydi
+(başlıkları site adıyla açılacak şekilde düzeltilmişti). Kanonikleştirme sayfayı
+yerinde bırakır ama arama motoruna asıl sürümün site sayfası olduğunu söyler.
+
+**GEÇİCİ — TAKİP GEREKİYOR:** GSC'de ada sayfaları "alternatif sayfa, uygun
+kanonik etiketi var" durumuna geçince app/sitemap.ts'teki adaSayfalari bloğu
+tekrar kapatılmalı, yoksa tarama bütçesi boşuna orada kalır.
+
+## 📊 SIRA KARNESİ — 9 MAHALLE TARANDI (2026-08-02)
+
+Yöntem: "<site adı> emlakçı" (bölge eki YOK — Özgün'ün düzeltmesi), canlı SERP.
+
+| Mahalle | Ölçüm | Doğru sayfayla 1. sıra | Oran |
+|---|---|---|---|
+| Susuz | 46 | 34 | %73 |
+| Devlet | 33 | 18 | %55 |
+| Yeşilova | 22 | 12 | %55 |
+| Şeker | 16 | 7 | %44 |
+| Eryaman | 40 | 17 | %43 |
+| Şehit Osman Avcı | 69 | 27 | %39 |
+| Tunahan | 26 | 4 | %15 |
+| Altay | 26 | 4 | %15 |
+| Şeyh Şamil (kısmi 20) | 20 | 2 | %10 |
+| **TOPLAM** | **298** | **126** | **%42** |
+
+**Örüntü:** Markalı/benzersiz adlı mahalleler (Susuz: Alya Park, Lake Life, Sky
+Göksu…) %73; jenerik ve birbirine benzeyen adlı mahalleler (Tunahan/Altay:
+Age/Aktürk/Klima/Sutek/Soyak — hepsi hem "Sitesi" hem "Blokları" varyantıyla iki
+mahallede) %15. Bu, alias çakışması teşhisini doğruluyor.
+
+**Sorun dağılımı (298 ölçüm):** ada sayfası 51 · yanlış site sayfası 14 ·
+mahalle sayfası 7 · hiç çıkmıyor 9. Yani %27'sinde yanlış sayfa gösteriliyor.
+
+**KALAN TARAMA:** Ata 86, Güzelkent 79, Cumhuriyet 69, Göksu 68, Yavuz Selim 57,
+Şeyh Şamil 34. Veri: scratchpad/mahalle-turu/BIRLESIK-KARNE.json + mahalle bazlı.
