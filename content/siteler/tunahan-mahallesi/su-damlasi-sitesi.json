@@ -7,7 +7,7 @@
     "lng": 32.613057
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/su-damlasi-sitesi-boundary.geojson",
-  "aciklama": "Su Damlası Sitesi, Tunahan Mahallesi'nde — mahallenin bu kesiminde —, Gökdemir Premium ile aynı büyük yerleşim adasını paylaşan çok bloklu bir konut sitesidir. Yerel emlak kayıtlarında site \"Damlasu Sitesi\" adıyla da geçer; iki yazım da aynı yerleşimi tarif eder. TKGM kayıtlarına göre 37.340 m²'lik kat mülkiyetli parsel üzerine kurulu; tapu niteliği kademeli bir yapılaşmayı anlatıyor: 15 katlı dört blok, 13 katlı iki blok, 11 katlı iki blok ve 8 katlı iki blok olmak üzere toplam on blok. Farklı kat yükseklikleri sayesinde manzara ve fiyat yelpazesi geniştir. Saha kayıtlarında bloklar \"6\" serisiyle, 6/1'den 6/16'ya uzanan numaralarla kodlanır; 6/5 bloğu ayrıca \"Kar Çiçeği Apartmanı\" adıyla anılır, dolayısıyla aynı yapı ilanlarda iki farklı adla karşınıza çıkabilir. Aynı kayıtlara göre site kademeli tamamlanmış: örneklenen bloklardan biri 2006, diğerleri 2008 yapımı. Ağırlıklı daire tipi 3+1 ve konut alanı 117 m² olarak kayıtlı; blok başına daire sayısı 51 ile 55 arasında değişiyor. Isıtma doğalgaz kombidir — yani ısınma gideri daireye bağlıdır; bu, siteyi bölgenin merkezi sistemle ısınan kooperatif sitelerinden ayıran teknik farktır. Blok künyelerinde asansör, bahçe, otopark, oyun parkı, kapıcı, hidrofor, jeneratör, su deposu, yangın merdiveni ve kablo TV-uydu sayılıyor; güvenlik görevlisi de kayıtlı, metro durağı, okul ve otobüs durağı yakın çevrede. Yerleşim, yerel kayıtlarda \"Türkonut Metro Bölgesi\" olarak anılan metro aksı içinde tanımlanıyor; Güzelkent Mahallesi ile Sutek Blokları'na komşudur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Su Damlası Sitesi, Tunahan Mahallesi'nde — mahallenin bu kesiminde —, Gökdemir Premium ile aynı büyük yerleşim adasını paylaşan çok bloklu bir konut sitesidir. Yerel emlak kayıtlarında site \"Damlasu Sitesi\" adıyla da geçer; iki yazım da aynı yerleşimi tarif eder. TKGM kayıtlarına göre 37.340 m²'lik kat mülkiyetli parsel üzerine kurulu; tapu niteliği kademeli bir yapılaşmayı anlatıyor: 15 katlı dört blok, 13 katlı iki blok, 11 katlı iki blok ve 8 katlı iki blok olmak üzere toplam on blok. Farklı kat yükseklikleri sayesinde manzara ve fiyat yelpazesi geniştir. Saha kayıtlarında bloklar \"6\" serisiyle, 6/1'den 6/16'ya uzanan numaralarla kodlanır; 6/5 bloğu ayrıca \"Kar Çiçeği Apartmanı\" adıyla anılır, dolayısıyla aynı yapı ilanlarda iki farklı adla karşınıza çıkabilir. Kodlama tek aile değil: aynı kayıtlarda bloklar \"2\" serisiyle de anılır — 2E ve 2F blokları da bu sitenin yapılarıdır ve ada listesinde bir blok \"6/13 2F\" biçiminde çift kodla geçer, yani tek yapı iki ayrı kodla dolaşır. İlanda yalnız bir kod yazıldığında daire, diğer kodla arayanın karşısına çıkmaz; iki adı birlikte kullanmak bu yüzden önemlidir. Aynı kayıtlara göre site kademeli tamamlanmış: örneklenen bloklardan biri 2006, diğerleri 2007 yapımı. Ağırlıklı daire tipi 3+1 ve konut alanı 117 m² olarak kayıtlı — bu tespit beş ayrı blok künyesinde birebir aynı çıkıyor, yani site büyük ölçüde tek tip planlıdır. Daire sayısı ise blok blok ciddi biçimde ayrışır: 8 katlı bloklarda 14, 11 katlı bloklarda 20, 13 katlı Kar Çiçeği bloğunda 51 daire kayıtlı. Ev sahibi için asıl ayrım buradadır — 14 daireli sakin bir blokla 51 daireli bloğun emsali aynı olmaz; komşu sayısı, ortak gider yükü ve satışta rekabet ettiğiniz daire sayısı da farklı işler. (Yerel künyelerde kat sayıları tapudakinden birer eksik görünür; dizin zemin katı saymaz, iki kaynak çelişmez.) Isıtma doğalgaz kombidir — yani ısınma gideri daireye bağlıdır; bu, siteyi bölgenin merkezi sistemle ısınan kooperatif sitelerinden ayıran teknik farktır. Blok künyelerinde asansör, bahçe, otopark, oyun parkı, kapıcı, hidrofor, jeneratör, su deposu, yangın merdiveni ve kablo TV-uydu sayılıyor; güvenlik görevlisi de kayıtlı, metro durağı, okul ve otobüs durağı yakın çevrede. Yerleşim, yerel kayıtlarda \"Türkonut Metro Bölgesi\" olarak anılan metro aksı içinde tanımlanıyor; Güzelkent Mahallesi ile Sutek Blokları'na komşudur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46512",
@@ -22,15 +22,17 @@
     "Gökdemir Premium ile komşu parselde",
     "\"Damlasu Sitesi\" adıyla da kayıtlı (yerel kayıt)",
     "Bloklar \"6\" serisi kodlu (6/1–6/16); 6/5 = Kar Çiçeği Apartmanı",
-    "2006 ve 2008 yapım — kademeli tamamlanma (yerel kayıt)",
-    "Ağırlıklı tip 3+1, 117 m² (yerel kayıt)",
-    "Blok başına daire sayısı 51 ile 55 arasında (yerel kayıt)",
+    "Ayrıca \"2\" serisi kodlu bloklar (2E, 2F); bir blok çift kodlu: 6/13 2F (yerel kayıt)",
+    "2006-2007 yapım — kademeli tamamlanma (yerel kayıt)",
+    "Ağırlıklı tip 3+1, 117 m² — beş blok künyesinde aynı (yerel kayıt)",
+    "Daire sayısı bloğa göre: 8 katlıda 14, 11 katlıda 20, 13 katlı Kar Çiçeği'nde 51 (yerel kayıt)",
     "Doğalgaz kombi ısıtma — daire başına bağımsız",
     "Asansör, otopark, oyun parkı, kapıcı, jeneratör, hidrofor, su deposu",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "zenginlestirildi": "2026-08-02",
   "alternatifAdlar": [
-    "Damlasu Sitesi"
+    "Damlasu Sitesi",
+    "Sudamlası Sitesi"
   ]
 }

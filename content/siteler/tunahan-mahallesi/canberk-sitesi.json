@@ -7,7 +7,7 @@
     "lng": 32.634518
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/canberk-sitesi-boundary.geojson",
-  "aciklama": "Canberk Sitesi — yerel emlak kayıtlarında \"Canberk Heyet Sitesi\" olarak da geçer — Tunahan Mahallesi'nde yer alır. TKGM kayıtlarına göre site, 50.423 m²'lik tek parsel üzerine kurulu 10 bloktan oluşuyor — Tunahan'ın en büyük tek parselli yerleşimlerinden biri; bloklar yerel kayıtlarda 3, 3A'dan 3H'ye ve 3K olarak sıralanıyor ve parsel kat mülkiyetli. Geniş parseli ve yeşil alanlarıyla Tunahan'ın büyük ölçekli yerleşimlerinden biridir. Yerel emlak kayıtlarına göre site 2006 yapımıdır; yani mahallenin 1990'lı yıllardan kalma kooperatif kuşağının içinde duran, ondan yaklaşık on yıl sonra tamamlanmış bir yerleşimdir ve bu fark yapıda da görünür. Aynı kayıtlara göre bloklar 11 ile 14 kat arasında değişir, kat başına dört daire düzeniyle blok başına 44 ile 56 arasında daire barındırır; site, çevresindeki alçak kooperatif bloklarının yanında yüksek katlı yapılardan oluşur. Daire dokusu tek tiptir: kayıtlara giren blokların tamamında daireler 3+1 ve 117 m² olarak görünür — bölgede sık rastlanmayan bu tekdüzelik, emsal karşılaştırmasını belirgin biçimde kolaylaştırır: karşılaştırmada daire tipi değişken olmaktan çıkar, geriye kat, cephe ve iç durum kalır. Isıtma bireysel doğalgaz kombidir; bu, çevredeki 1990'lı yıllarda yapılmış merkezi sistemli kooperatiflerden ayrışan en somut farktır ve hem ısınma giderinin daire bazında yönetilmesi hem de kiracı profili tarafında karşılık bulur. Blok künyelerinde güvenlik, kapıcı, asansör, jeneratör, hidrofor, su deposu, yangın merdiveni, otopark, oyun parkı ve bahçe ortak tesis olarak sayılır; okul ve otobüs durağı ise yakın çevre işareti olarak geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Canberk Sitesi — yerel emlak kayıtlarında \"Canberk Heyet Sitesi\" olarak da geçer — Tunahan Mahallesi'nde yer alır. TKGM kayıtlarına göre site, 50.423 m²'lik tek parsel üzerine kurulu 10 bloktan oluşuyor — Tunahan'ın en büyük tek parselli yerleşimlerinden biri; bloklar yerel kayıtlarda 3, 3A'dan 3H'ye ve 3K olarak sıralanıyor ve parsel kat mülkiyetli. Geniş parseli ve yeşil alanlarıyla Tunahan'ın büyük ölçekli yerleşimlerinden biridir. Yerel emlak kayıtlarına göre site 2006 yapımıdır; yani mahallenin 1990'lı yıllardan kalma kooperatif kuşağının içinde duran, ondan yaklaşık on yıl sonra tamamlanmış bir yerleşimdir ve bu fark yapıda da görünür. Aynı kayıtlara göre bloklar 11 ile 14 kat arasında değişir, kat başına dört daire düzeniyle blok başına 44 ile 56 arasında daire barındırır; site, çevresindeki alçak kooperatif bloklarının yanında yüksek katlı yapılardan oluşur. Daire dokusu tek tiptir: kayıtlara giren blokların tamamında daireler 3+1 ve 117 m² olarak görünür — bölgede sık rastlanmayan bu tekdüzelik, emsal karşılaştırmasını belirgin biçimde kolaylaştırır: karşılaştırmada daire tipi değişken olmaktan çıkar, geriye kat, cephe ve iç durum kalır. Isıtma bireysel doğalgaz kombidir; bu, çevredeki 1990'lı yıllarda yapılmış merkezi sistemli kooperatiflerden ayrışan en somut farktır ve hem ısınma giderinin daire bazında yönetilmesi hem de kiracı profili tarafında karşılık bulur. Blok künyelerinde güvenlik, kapıcı, asansör, jeneratör, hidrofor, su deposu, yangın merdiveni, otopark, oyun parkı ve bahçe ortak tesis olarak sayılır; okul ve otobüs durağı ise yakın çevre işareti olarak geçer. Yerel adres kayıtlarına göre site yönetiminin adresi TBMM Caddesi üzerinde, 06793 posta koduyla geçer; blok kodları da aynı dizinlerde tek tek kayıtlı olduğu için ilanda cadde adıyla blok kodunu birlikte yazmak adresi tarif etmenin en kısa yoludur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "50.423 m² tek parsel (TKGM)",
     "10 blok (3, 3A–3H, 3K)",
@@ -19,6 +19,7 @@
     "Tek tip daire dokusu — tamamı 3+1, 117 m² (yerel kayıt)",
     "Bireysel doğalgaz kombi ısıtma (yerel kayıt)",
     "Güvenlik, kapıcı, jeneratör, hidrofor, su deposu, otopark, oyun parkı (yerel kayıt)",
+    "TBMM Caddesi, posta kodu 06793 (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "adalar": [
@@ -28,8 +29,9 @@
       "etap": "5"
     }
   ],
+  "adres": "Tunahan Mahallesi TBMM Caddesi, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Canberk Heyet Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

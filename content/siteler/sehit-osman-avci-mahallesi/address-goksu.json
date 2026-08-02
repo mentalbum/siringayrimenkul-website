@@ -7,7 +7,7 @@
     "lng": 32.6533366
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/address-goksu-boundary.geojson",
-  "aciklama": "Address Göksu, Eryaman Şehit Osman Avcı Mahallesi'nde 1. TBMM Caddesi üzerinde, ALR İnşaat tarafından geliştirilmiş bir konut projesidir. Göksu Parkı ve gölet manzarasına bakan konumu projenin ana değeri; ilanlarda özellikle göl cepheli büyük tip 4+1 daireler (~151 m²) öne çıkıyor. Modern mimarisi, site içi sosyal alanları ve otoparkıyla mahallenin yeni nesil projelerinden; hem doğaya hem İstanbul Yolu aksının ulaşım imkanlarına yakın. Geliştiricinin tanıtımına göre projede 102 konut ve 44 adet cadde dükkânı yer alır; daireler 3+1 ve 4+1 tiplerindedir ve imalat 2023'te başlamıştır. Konut ile cadde ticaretini bir arada barındıran bu karma kurgu, hem oturum hem işletme tarafında ayrı bir talep tabanı oluşturur. Tapu kaydına göre yapı, yaklaşık 9.863 m²'lik parselde on sekizer katlı A ve B blokları ile sekiz katlı C bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı projelerde fiyatı cephe (göl/park yönü) ve kat ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Address Göksu, Eryaman Şehit Osman Avcı Mahallesi'nde 1. TBMM Caddesi üzerinde, ALR İnşaat tarafından geliştirilmiş bir konut projesidir. Göksu Parkı ve gölet manzarasına bakan konumu projenin ana değeri; ilanlarda özellikle göl cepheli büyük tip 4+1 daireler (~151 m²) öne çıkıyor. Modern mimarisi, site içi sosyal alanları ve otoparkıyla mahallenin yeni nesil projelerinden; hem doğaya hem İstanbul Yolu aksının ulaşım imkanlarına yakın. Geliştiricinin tanıtımına göre projede 102 konut ve 44 adet cadde dükkânı yer alır; daireler 3+1 ve 4+1 tiplerindedir, imalat 2023'te başlamış ve oturumun 2024 sonunda başlaması planlanmıştır. Aynı tanıtımda daire künyeleri de veriliyor: 3+1 daireler brüt 111 m² ve net 100 m²; 4+1 ise tek tip değil, brüt 167,50 m² ve 151,15 m² olmak üzere iki ayrı büyüklükte tasarlanmış. Aynı oda sayısında iki farklı büyüklük bulunması emsal karşılaştırmasında doğrudan ayrıştırıcıdır — ilanda yalnızca \"4+1\" yazmak, büyük tipteki bir daireyi olduğundan küçük gösterebilir. Site donatıları tanıtımlarda açık yüzme havuzu, çocuk havuzu, fitness merkezi, sauna, Türk hamamı, basketbol sahası, tenis kortu, yürüyüş yolları ve çocuk oyun alanları olarak sayılıyor; resepsiyon, kapalı otopark, güvenlik ve 24 saat kamera izleme de listeleniyor. Konut ile cadde ticaretini bir arada barındıran bu karma kurgu, hem oturum hem işletme tarafında ayrı bir talep tabanı oluşturur. Tapu kaydına göre yapı, yaklaşık 9.863 m²'lik parselde on sekizer katlı A ve B blokları ile sekiz katlı C bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Manzaralı projelerde fiyatı cephe (göl/park yönü) ve kat ciddi biçimde değiştirir — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46620",
@@ -20,16 +20,21 @@
     "ALR İnşaat — modern mimari",
     "102 konut + 44 cadde dükkânı (geliştirici tanıtımı)",
     "3+1 ve 4+1 daire tipleri",
+    "3+1 daireler brüt 111 m² / net 100 m² (geliştirici tanıtımı)",
+    "4+1 iki ayrı tipte: brüt ~167,5 m² ve ~151 m² (geliştirici tanıtımı)",
     "İmalat 2023'te başladı (geliştirici tanıtımı)",
+    "Oturum 2024 sonunda planlandı (geliştirici tanıtımı)",
     "Göksu Parkı ve gölet manzarası",
     "Büyük tip 4+1 (~151 m²) öne çıkıyor",
     "Kat mülkiyetli parsel (TKGM)",
-    "Site içi sosyal alanlar, otopark",
+    "Havuz, çocuk havuzu, fitness, sauna, Türk hamamı (geliştirici tanıtımı)",
+    "Tenis kortu, basketbol sahası, yürüyüş yolları, oyun alanları (geliştirici tanıtımı)",
+    "Resepsiyon, kapalı otopark, güvenlik, 24 saat kamera (geliştirici tanıtımı)",
     "1. TBMM Caddesi — Şehit Osman Avcı Mahallesi"
   ],
   "adres": "1. TBMM Caddesi, Şehit Osman Avcı, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Address Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

@@ -7,7 +7,7 @@
     "lng": 32.6488146
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/cicek-sitesi-boundary.geojson",
-  "aciklama": "Çiçek Sitesi, Şehit Osman Avcı Mahallesi'nde beş apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Adet Betonarme Apartman' niteliğiyle kayıtlı 6.751 m²'lik kat mülkiyetli parsel üzerine kuruludur. Beş bloğun oturmuş komşuluk düzeni ve mahallenin yerleşik dokusundaki konumuyla bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çiçek Sitesi, Şehit Osman Avcı Mahallesi'nde tek bir ada üzerinde kurulu, beş apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Adet Betonarme Apartman' niteliğiyle kayıtlı 6.751 m²'lik kat mülkiyetli tek parselin tamamını kaplar. Sitenin kimliğini belirleyen ayrıntı bu bütünlüktür: ortak alanı, otoparkı ve yönetimi tek ada sınırları içinde kalan beş blok — mahalledeki çok adalı kooperatif kümelerinin aksine, Çiçek Sitesi'nin adresi ve site sınırı birebir örtüşür. Beş bloğun oturmuş komşuluk düzeni ve mahallenin yerleşik dokusundaki konumuyla bilinen bir adrestir. (Aynı mahalledeki İntes Sitesi ayrı bir yerleşimdir; Çiçek Sitesi ondan bağımsız, kendi parseli olan bir kooperatiftir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17471",
@@ -19,7 +19,12 @@
     "5 betonarme apartman (TKGM)",
     "~6.751 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Tek ada — tek parsel, beş blok",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Eryaman Çiçek Sitesi",
+    "Şehit Osman Avcı Çiçek Sitesi"
   ],
   "zenginlestirildi": "2026-07-15"
 }

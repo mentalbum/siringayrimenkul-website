@@ -7,7 +7,7 @@
     "lng": 32.657782
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/tureli-residence-boundary.geojson",
-  "aciklama": "Türeli Residence, Şehit Osman Avcı Mahallesi'nde 10 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 3.838 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Tek blok ölçeği yönetimi yalın tutar; kompakt daire arayan ve kiralama tarafında hızlı dönüş isteyen profillerin adresidir. Yüklenici proje kayıtlarına göre yapının elektrik ve mekanik taahhüt işleri 2015-2017 döneminde tamamlanmıştır; aynı kayıtlar binada ofisler ve bir sosyal tesis bulunduğunu, analog adresli yangın algılama sistemi, IP güvenlik kameraları ve görüntülü diafon sisteminin kurulu olduğunu belirtir. Bu teknik altyapı, tapudaki ofis-işyeri niteliğiyle örtüşen somut bir ayrıntıdır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Türeli Residence, Şehit Osman Avcı Mahallesi'nde elektrik ve mekanik taahhüt işleri yüklenici proje kayıtlarına göre 2015-2017 döneminde tamamlanmış, 10 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 3.838 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kiralama süreçlerinde bu ayrımın bilinmesi gerekir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Aynı proje kayıtları binada ofisler ve bir sosyal tesis bulunduğunu, analog adresli yangın algılama sistemi, IP güvenlik kameraları ve görüntülü diafon sisteminin kurulu olduğunu belirtir; bu teknik altyapı, tapudaki ofis-işyeri niteliğiyle örtüşen somut bir ayrıntıdır. Tek blok ölçeği yönetimi yalın tutar: ortak alan düzeni ve yönetim tek yapının içinde kalır. (Aynı mahalledeki Güngörler Tower ayrı bir yapıdır; 12 katlı ve tapuda konut nitelikli olan o blokla Türeli Residence'ın ilgisi yoktur.) Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46643",
@@ -27,6 +27,8 @@
   "zenginlestirildi": "2026-08-01",
   "alternatifAdlar": [
     "Türeli Rezidans",
-    "Türeli Sitesi"
+    "Türeli Sitesi",
+    "Eryaman Türeli Residence",
+    "Şehit Osman Avcı Türeli Residence"
   ]
 }

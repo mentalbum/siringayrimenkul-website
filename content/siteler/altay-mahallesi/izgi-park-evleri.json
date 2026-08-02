@@ -2,7 +2,7 @@
   "isim": "İzgi Park Evleri",
   "slug": "izgi-park-evleri",
   "mahalleSlug": "altay-mahallesi",
-  "aciklama": "İzgi Park Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alan bir konut sitesidir; adasını Doktorlar Sitesi'nin blokları, Palmiye Evleri ve Pembe Rüya Evleri ile paylaşır — yerel kayıtlarda bu paylaşımlı ada yaklaşık 12,4 dönüm olarak ölçülür. Sitenin adresi 2663. Cadde üzerinde geçer; yapı adası, 2663. Cadde ile Osman Bey Caddesi arasına oturur ve site adını hemen yakınındaki İzgi Parkı'ndan alır — park, harita kayıtlarında gün boyu açık, çocuk dostu bir yeşil alan olarak listelenir. Yerel yapı rehberi kayıtlarına göre site 3A ve 3B adlı iki bloktan oluşur; her iki blok da 2008 yapımı ve sekiz katlıdır, blok başına 32 daire, yani iki blokta toplam 64 konut kayıtlıdır ve daireler 3+1, 135 m² planlıdır. Aynı kayıtlar ısınmayı bireysel doğalgaz kombi olarak gösterir; asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı, ısı ve ses yalıtımı ile yangın merdiveni donatı listesinde yer alır, kreş, okul ve otobüs durağı yakınlığı da aynı listede işaretlidir. TKGM'de site, yaklaşık 3.860 m²'lik kat mülkiyetli parseli üzerinde kargir apartman niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İzgi Park Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında yer alan bir konut sitesidir; adasını Doktorlar Sitesi'nin blokları, Palmiye Evleri ve Pembe Rüya Evleri ile paylaşır — yerel kayıtlarda bu paylaşımlı ada yaklaşık 12,4 dönüm olarak ölçülür. Adres kayıtlarında sitenin adresi 2663. Sokak (posta kodu 06820) olarak geçer; yapı adası, 2663. Sokak ile Osman Bey Caddesi arasına oturur. Aynı adres kayıtlarına göre Altay Mahallesi Muhtarlığı yaklaşık 0,6 kilometre, Eryaman 2 Nolu Aile Sağlığı Merkezi ise yaklaşık 1 kilometre uzaklıkta — ilanınıza yazabileceğiniz somut konum işaretleri. Yerel yapı rehberi kayıtlarına göre site 3A ve 3B adlı iki bloktan oluşur; her iki blok da 2008 yapımı ve sekiz katlıdır, blok başına 32 daire, yani iki blokta toplam 64 konut kayıtlıdır ve daireler 3+1, 135 m² planlıdır. Aynı kayıtlar ısınmayı bireysel doğalgaz kombi olarak gösterir; asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı, ısı ve ses yalıtımı ile yangın merdiveni donatı listesinde yer alır, kreş, okul ve otobüs durağı yakınlığı da aynı listede işaretlidir. TKGM'de site, yaklaşık 3.860 m²'lik kat mülkiyetli parseli üzerinde kargir apartman niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusunun parçasıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.971683,
     "lng": 32.648448
@@ -21,12 +21,13 @@
     "Asansör, jeneratör, kapıcı, otopark, oyun parkı (yerel kayıt)",
     "Yaklaşık 3,9 dönümlük kat mülkiyetli parsel (TKGM)",
     "Paylaşımlı ada yaklaşık 12,4 dönüm (yerel kayıt)",
-    "2663. Cadde ile Osman Bey Caddesi arasında; komşusu İzgi Parkı",
+    "Adres kaydında 2663. Sokak, posta kodu 06820; Osman Bey Caddesi yakını",
+    "Altay Muhtarlığı ~0,6 km, aile sağlığı merkezi ~1 km (adres kaydı)",
     "Komşular: Doktorlar, Palmiye, Pembe Rüya",
     "Altay — Eryaman Evleri kuşağı"
   ],
   "alternatifAdlar": [
     "İzgi Park Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

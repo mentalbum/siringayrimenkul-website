@@ -7,26 +7,44 @@
     "lng": 32.641891
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/sutek-bloklari-boundary.geojson",
-  "aciklama": "Sutek Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Ana parselinde tapu, yaklaşık 5.660 m²'lik alanda dört kargir apartman kaydeder; bu dört yapı yerel kayıtlarda Kutluca, Pınarlar, Gonca ve Andıçlı adlarıyla anılır. Komşu adadaki beş apartman ise Akyürek, Gelincik, Işıklı, Kuyucak ve Oymapınar adını taşır — yani küme tek bir avlu değil, adalar arasına yayılmış bir yerleşimdir; yerel ölçümlere göre beş adanın toplamı yaklaşık 46,7 dönümü bulur. Yerleşim Osman Bey Caddesi ile Kasımpatı Sokak çevresindedir. Yayımlanan ilanlarda kümenin ağırlıklı daire tipi brüt 110 m² dolayında 3+1 olarak görünür. Age, Aktürk ve Mesa kümeleriyle aynı kuşaktadır; bölgenin oturmuş, yeşil dokulu çevresini paylaşır. (Tunahan'daki Sutek Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Sutek Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan bir konut kümesidir; yerel kayıtlarda beş adalık bir bölge olarak gösterilir. Ana parselinde tapu, yaklaşık 5.660 m²'lik alanda dört kargir apartman kaydeder; bu dört yapı yerel kayıtlarda Kutluca, Pınarlar, Gonca ve Andıçlı adlarıyla anılır. Komşu adadaki beş apartman ise Akyürek, Gelincik, Işıklı, Kuyucak ve Oymapınar adını taşır — yani küme tek bir avlu değil, adalar arasına yayılmış bir yerleşimdir; yerel ölçümlere göre beş adanın toplamı yaklaşık 46,7 dönümü bulur. Kümenin geri kalan adaları da apartman adlarıyla kayıtlıdır: birinde Anayurt, Gözaydın, Hürriyet, Kurtuluş ve Zafer; birinde Kuşluca, Pınarcık, Gökmen ve Aras; birinde Köşker, Reşadiye, Gemlik ve Alkan apartmanları bulunur — küme genelinde yirmi iki apartman sayılır. Apartman adının yanında geçen sayı adadan adaya farklı işler: kimi adada birden başlayan bir sıra izler — Kutluca 1, Pınarlar 2, Gonca 3, Andıçlı 4 gibi — kimi adada ise 20'den 28'e uzanan çift rakamlı bir kapı numarası serisi kullanılmıştır. Yani bu sayı kat ya da daire numarası değildir; kaydın blok koduna aittir. İlanda apartman adını bu sayıyla birlikte yazmak doğru bloğu tarif etmenin en kısa yoludur. Yerleşim Osman Bey Caddesi ile Kasımpatı Sokak çevresindedir. Yerel kayıtlarda künyesi yayımlanan bloklar birbirinin aynıdır: 1989 yapımı, 10 katlı, 20 daireli ve dairelerin tamamı 3+1 — kümenin tek elden çıkma bir kooperatif üretimi olduğunu gösteren bir tekdüzelik. Künyelerde konut alanı 100 m² olarak geçer; yayımlanan ilanlarda ise aynı daireler brüt 110 m² dolayında görünür. İkisi çelişmez, brütle net arasındaki farka işaret eder — ilan hazırlarken hangi ölçünün yazıldığını belirtmek yanlış anlaşılmayı baştan keser. Isıtma merkezi sistemdir. Blok künyelerinde asansör, bahçe, kapıcı, jeneratör, hidrofor, su deposu, otopark, oyun parkı, kablo TV-uydu ve yangın merdiveni sayılır; okul ve otobüs durağı yakın çevrededir. Age, Aktürk ve Mesa kümeleriyle aynı kuşaktadır; bölgenin oturmuş, yeşil dokulu çevresini paylaşır. (Tunahan'daki Sutek Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17541",
       "parsel": "1",
       "etap": "1"
+    },
+    {
+      "no": "17539"
+    },
+    {
+      "no": "17540"
+    },
+    {
+      "no": "17542"
+    },
+    {
+      "no": "17543"
     }
   ],
   "ozellikler": [
     "Yerel kayıtlarda 5 adalık küme — ana parselde 4 apartman (tapu)",
     "Beş adanın toplamı yaklaşık 46,7 dönüm (yerel ölçüm)",
+    "Küme genelinde 22 apartman, beş adaya yayılı (yerel kayıt)",
     "Ana adadaki bloklar: Kutluca, Pınarlar, Gonca, Andıçlı (yerel kayıt)",
     "Komşu adadaki bloklar: Akyürek, Gelincik, Işıklı, Kuyucak, Oymapınar (yerel kayıt)",
-    "Ağırlıklı daire tipi 3+1, brüt 110 m² dolayında (ilan kayıtları)",
+    "Diğer adalarda Anayurt, Gözaydın, Hürriyet, Kurtuluş, Zafer; Kuşluca, Pınarcık, Gökmen, Aras; Köşker, Reşadiye, Gemlik, Alkan (yerel kayıt)",
+    "Apartman adının yanındaki sayı blok koduna aittir — adaya göre sıra ya da kapı numarası (yerel kayıt)",
+    "Örneklenen bloklar 1989 yapımı, 10 katlı, 20 daireli (yerel kayıt)",
+    "Daireler 3+1 — künyede 100 m², ilanlarda brüt 110 m² dolayında",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Asansör, kapıcı, jeneratör, hidrofor, otopark, oyun parkı, yangın merdiveni (yerel kayıt)",
     "Osman Bey Caddesi - Kasımpatı Sokak çevresi (yerel kayıt)",
     "Age, Aktürk ve Mesa kümelerine komşu",
     "Kat mülkiyetli parsel (TKGM)",
     "Tunahan'daki Sutek Sitesi'nden ayrı yerleşim — Altay"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "zenginlestirildi": "2026-08-02",
   "alternatifAdlar": [
     "Altay Sutek Blokları",
     "Sutek Blokları Altay"

@@ -7,7 +7,7 @@
     "lng": 32.6568349
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/gungorler-tower-boundary.geojson",
-  "aciklama": "Güngörler Tower, Şehit Osman Avcı Mahallesi'nde yer alan yüksek katlı bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.636 m²'lik parselde kat mülkiyeti kurulu ve tapu kaydı yapıyı '12 Katlı Betonarme Apartman ve Arsası' olarak tanımlar — yani yaklaşık iki buçuk dönümlük parseli tek bir blok kullanır; bu da siteyi apartman rahatlığında, yönetimi yalın bir yerleşim yapar. Kadastroda parsel Şeker kaydıyla izlenir; satış ve kiralama platformlarında ise 'Güngörler Tower' adı yerleşiktir. 12 katlı kademelenme, aynı yapı içinde farklı kat ve cephe alternatifleri anlamına gelir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Güngörler Tower, Şehit Osman Avcı Mahallesi'nde tapuda '12 Katlı Betonarme Apartman ve Arsası' niteliğiyle kayıtlı, konut nitelikli tek bloklu bir yapıdır. TKGM kayıtlarına göre yaklaşık 2.636 m²'lik parselde kat mülkiyeti kuruludur; yani yaklaşık iki buçuk dönümlük parseli tek bir blok kullanır ve bu da siteyi apartman rahatlığında, yönetimi yalın bir yerleşim yapar. Kadastroda parsel Şeker kaydıyla izlenir; satış ve kiralama platformlarında ise 'Güngörler Tower' adı yerleşiktir. 12 katlı kademelenme, aynı yapı içinde farklı kat ve cephe alternatifleri anlamına gelir. (Aynı mahalledeki Türeli Residence ayrı bir yapıdır; 10 katlı ve tapuda ofis-işyeri nitelikli olan o rezidansla Güngörler Tower'ın ilgisi yoktur.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46643",
@@ -18,10 +18,14 @@
     "~2.636 m² parsel (TKGM)",
     "12 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Konut nitelikli tek blok (tapu kaydı)",
+    "Kadastroda Şeker kaydı",
     "Şehit Osman Avcı Mahallesi"
   ],
   "alternatifAdlar": [
-    "Güngörler Sitesi"
+    "Güngörler Sitesi",
+    "Güngörler Apartmanı",
+    "Şehit Osman Avcı Güngörler Tower"
   ],
   "zenginlestirildi": "2026-07-17"
 }

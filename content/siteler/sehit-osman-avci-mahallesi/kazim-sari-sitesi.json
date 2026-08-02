@@ -7,7 +7,7 @@
     "lng": 32.6506785
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/kazim-sari-sitesi-boundary.geojson",
-  "aciklama": "Kazım Sarı Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre parselde 4 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 8.097 m². Yerel kayıtlarda komşu İçtaş ile birlikte 'İçtaş, Kazım Sarı Blokları' kümesi içinde anılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kazım Sarı Sitesi, Şehit Osman Avcı Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre parselde 4 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 8.097 m². Yerel kayıtlar bu dört bloğu kapı numarası ile harf birleşiminden oluşan kodlarla adlandırıyor: 52D, 54C, 56B ve 58A. İlanlarda daire bu kodlarla tarif edildiği için ev sahibinin ilanına yazması gereken doğru ad da budur. Dört bloğun her birinde 16 daire bulunur; blok başına daire sayısı istisnasız aynıdır ve sitenin tamamı 64 konuttan oluşur. Daire dokusu da tek tiptir: 64 dairenin tamamı 4+1 ve 160 m². Bu tekdüzelik emsal karşılaştırmasını belirgin biçimde sadeleştirir — daire tipi değişken olmaktan çıkar, geriye kat, cephe ve iç durum kalır. Dört bloğun tamamı 1998 yapımı ve 8 katlıdır; her kata iki daire düştüğü için kat başına yoğunluk düşüktür. Isıtma tarafında kayıtlar tam örtüşmüyor: blokların büyük bölümü doğalgaz kombi, biri merkezi sistem olarak görünüyor — bloktan bloğa değişebileceği için ısıtma sistemini ilan öncesi yerinde teyit ederiz. Dört bloğun künyesinde asansör, bahçe, hidrofor, jeneratör, kablo TV-uydu, kapıcı, otopark, oyun parkı, su deposu ve yangın merdiveni ortak olarak sayılıyor; metro durağı, okul ve otobüs durağı ise yakın çevre işareti olarak geçiyor. Yerel kayıtlarda site, komşu İçtaş ile birlikte 'İçtaş, Kazım Sarı Blokları' kümesi içinde anılır; kümenin toplam alanı yaklaşık 61.794 m² olup Kazım Sarı Sitesi bu kümenin içinde kendi parseli üzerinde duran ayrı bir yerleşimdir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17483",
@@ -19,7 +19,16 @@
     "4 kârgir apartman (TKGM)",
     "~8.097 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Bloklar 52D, 54C, 56B ve 58A kodlu (yerel kayıt)",
+    "Blok başına 16 daire — sitenin tamamı 64 konut (yerel kayıt)",
+    "Dairelerin tamamı 4+1 ve 160 m² — tek tip site (yerel kayıt)",
+    "1998 yapımı, 8 katlı bloklar; kat başına 2 daire (yerel kayıt)",
+    "Dört blokta da asansör kayıtlı (yerel kayıt)",
+    "Blokların büyük bölümünde doğalgaz kombi — yerinde teyit edilir (yerel kayıt)",
+    "Bahçe, hidrofor, jeneratör, kapıcı, otopark, oyun parkı, su deposu, yangın merdiveni (yerel kayıt)",
+    "Metro durağı, okul ve otobüs durağı yakın çevrede (yerel kayıt)",
+    "'İçtaş, Kazım Sarı Blokları' kümesi ~61.794 m² (yerel kayıt)",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-02"
 }

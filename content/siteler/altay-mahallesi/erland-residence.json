@@ -7,7 +7,7 @@
     "lng": 32.641473
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/erland-residence-boundary.geojson",
-  "aciklama": "Erland Residence, Altay Mahallesi'nde Söğüt Caddesi üzerinde yükselen 14 katlı bir rezidans yapısıdır. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Yüksek katlı kurgusuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Proje tanıtımlarına ve dönemin yerel haberlerine göre yapı, Hasan Turan Emtisi Grup A.Ş. tarafından geliştirilmiş; teslimler 2016 yılının Şubat ayında yapılmış ve yapı toplam 251 konut barındıracak şekilde tasarlanmıştır. Aynı tanıtımlar daire kurgusunu 58 m² 1+1, 78 m² 2+1 ve 109 m² 2+1 dubleks planlar olarak verir, toplam inşaat alanını da 32.000 m² olarak anar. Yine proje tanıtımına göre site donatıları arasında kapalı ve açık yüzme havuzu, çocuk havuzu, fitness merkezi, sauna, hamam, kafe, lobi, çocuk oyun alanları, kapalı ve açık otopark, 24 saat kameralı güvenlik, jeneratör ile su deposu bulunur; ısıtma ısı sayaçlı merkezi sistemdir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Erland Residence, Altay Mahallesi'nde Söğüt Caddesi üzerinde yükselen 14 katlı bir rezidans yapısıdır; yerel kayıtlarda adresi Söğüt Caddesi No 12 olarak geçer. TKGM kayıtlarına göre yaklaşık 10.259 m²'lik parselde tapu niteliği 'Ofis-İşyeri'dir — rezidans tipi yapı; alım-satım ve kredi süreçlerinde bu ayrım önemlidir, farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Yüksek katlı kurgusuyla bölgenin yeni nesil stoğunda kompakt birim ve yatırım arayan profile hitap eder. Proje tanıtımlarına ve dönemin yerel haberlerine göre yapı, Hasan Turan Emtisi Grup A.Ş. tarafından geliştirilmiş; teslimler 2016 yılının Şubat ayında yapılmış ve yapı toplam 251 konut barındıracak şekilde tasarlanmıştır. Proje kayıtlarına göre bu 251 konutun tamamı tek blokta yer alır — yani site birden çok bloğa yayılmaz, ortak alanlar da tek yapı üzerinden kurgulanmıştır. Yerel künye kaydı yapım yılını 2016, ısınma tipini merkezi sistem ve arsa alanını 10.268 m² olarak vererek tapu ve tanıtım verilerini bağımsız biçimde doğruluyor. Aynı tanıtımlar daire kurgusunu 58 m² 1+1, 78 m² 2+1 ve 109 m² 2+1 dubleks planlar olarak verir, toplam inşaat alanını da 32.000 m² olarak anar. Yine proje tanıtımına göre site donatıları arasında kapalı ve açık yüzme havuzu, çocuk havuzu, fitness merkezi, sauna, hamam, kafe, lobi, çocuk oyun alanları, kapalı ve açık otopark, 24 saat kameralı güvenlik, jeneratör ile su deposu bulunur; aynı listelerde tenis kortu, restoran ve düzenlenmiş yeşil alan da sayılıyor. Isıtma ısı sayaçlı merkezi sistemdir. Yine proje kayıtlarına göre daireler ankastre beyaz eşyayla — buzdolabı, çamaşır makinesi ve bulaşık makinesi dahil — teslim edilmiştir; kiralamada bu ayrıntı doğrudan sunum unsurudur, ilanda ayrıca belirtilmesi yerinde olur. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45899",
@@ -18,19 +18,21 @@
   "ozellikler": [
     "~10.259 m² parsel (TKGM)",
     "14 katlı yapı (tapu kaydı)",
-    "Toplam 251 konut (proje tanıtımları)",
+    "Tek blokta toplam 251 konut (proje tanıtımları)",
     "1+1 58 m², 2+1 78 m², 2+1 dubleks 109 m² (proje tanıtımı)",
     "32.000 m² inşaat alanı (proje tanıtımı)",
     "Kapalı ve açık havuz, fitness, sauna, hamam (proje tanıtımı)",
+    "Tenis kortu, restoran, kafe ve yeşil alan (proje tanıtımı)",
+    "Daireler ankastre beyaz eşyayla teslim edilmiş (proje tanıtımı)",
     "24 saat kameralı güvenlik, jeneratör, kapalı otopark (proje tanıtımı)",
     "Isı sayaçlı merkezi ısıtma (proje tanıtımı)",
     "Şubat 2016 teslim (yerel kaynaklar)",
     "Tapuda kat irtifakı kayıtlı (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
-    "Söğüt Caddesi üzerinde — Altay Mahallesi"
+    "Söğüt Caddesi No 12 — Altay Mahallesi"
   ],
   "alternatifAdlar": [
     "Erland Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

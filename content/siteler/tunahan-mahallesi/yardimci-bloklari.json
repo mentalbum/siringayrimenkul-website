@@ -7,7 +7,7 @@
     "lng": 32.630275
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/yardimci-bloklari-boundary.geojson",
-  "aciklama": "Yardımcı Blokları, Tunahan Mahallesi'nde altı ayrı adaya yayılmış, apartman sayısıyla bölgenin en yoğun kümelerinden biridir. TKGM kayıtlarına göre altı adanın biri beş, beşi altışar apartman barındırır — toplam 35 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 32.614 m². Bölgenin toplu yapı yönetiminin ada ada tablosuna göre bu bloklarda toplam 496 konut bulunur ve bunların 200'ü asansörlü bloklardadır. Yerel emlak kayıtlarındaki blok künyeleri kümenin tipoloji imzasını da veriyor: 1998 yapımı, beş katlı bloklar, merkezi sistem ısıtma ve ağırlıklı olarak 3+1 daireler; konut alanları 71-88 m² bandında görünüyor. Aynı kayıtlarda ortak donatı olarak asansör, hidrofor, jeneratör, su deposu, kapıcı, otopark ve oyun parkı sayılıyor. Bu yoğunluğun ev sahibine somut bir getirisi vardır: kümede her dönem el değiştiren daire olur, emsal verisi bol ve tazedir — ve burada emsal demek, çoğunlukla beş katlı blokta 3+1 daire demektir; doğru fiyat aralığını yakalamak, bu veriyi gün gün izleyenler için kolaylaşır. Bloklar ada ada tek ve çift sayı dizileriyle numaralanmıştır, bir bölümü ise apartman adıyla anılır: yerel kayıtlarda Çiğdem, Kardelen, Gül ve Lale apartmanları bu kümenin içindedir; beş bloktan oluşan bir grup da 'Ardınç Sitesi' adıyla geçer. İlan ararken ya da verirken bu adların da kullanıldığını bilmek işinizi kolaylaştırır. 4. Etap Çarşısı, PTT şubesi ve aile sağlığı merkezi mahallenin bu kesimindedir; küme, STFA ve Yüksel bloklarıyla komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yardımcı Blokları, Tunahan Mahallesi'nde altı ayrı adaya yayılmış, apartman sayısıyla bölgenin en yoğun kümelerinden biridir. TKGM kayıtlarına göre altı adanın biri beş, beşi altışar apartman barındırır — toplam 35 kârgir apartman; parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 32.614 m². Bölgenin toplu yapı yönetiminin ada ada tablosuna göre kümede yaklaşık 496 konut bulunur; künyesi yayımlanan 29 bloğun konut toplamı ise 384'tür — kalan blokların künyesi yayımlanmadığı için toplam rakamı yaklaşık kabul etmek doğru olur. Yerel emlak kayıtlarındaki blok künyeleri kümenin asıl imzasını veriyor: yapım yılı istisnasız 1998, ısıtma istisnasız merkezi sistem — ama tipoloji tek değil, üç ayrı kalıp var. Birincisi beş katlı, 20 daireli bloklar: 18 adet 3+1 ile 2 adet 2+1, 71-88 m² bandında. İkincisi dört katlı, 8 daireli bloklar; bunların tamamı 2+1 ve 76 m². Üçüncüsü dört katlı, 16 daireli bloklar; bunların tamamı 1+1 ve 45-47 m². Bunların dışında yedi katlı, 28 daireli tek bir blok da var; künyesinde 26 adet 3+1 ile 2 adet 2+1 kayıtlı. Yani küme yalnızca 3+1 ağırlıklı bir kooperatif dokusu değil: 45 m²'lik tek yatak odalı birimden 88 m²'lik aile dairesine uzanan üç ayrı emsal çizgisi taşıyor. Ev sahibi için sonuç nettir — burada \"Yardımcı Blokları'nda daire\" diye tek bir fiyat yoktur, dairenin hangi kalıba düştüğünü blok belirler ve fiyatı da o kalıbın emsali kurar. Künyesi yayımlanan blokların tamamında asansör kayıtlı; dört katlı, sekiz daireli küçük bloklarda bile. Ortak donatı olarak ayrıca hidrofor, jeneratör, su deposu, kapıcı, otopark ve oyun parkı sayılıyor. Bu yoğunluğun ev sahibine somut bir getirisi vardır: kümede her dönem el değiştiren daire olur, emsal verisi bol ve tazedir; doğru fiyat aralığını yakalamak, bu veriyi gün gün izleyenler için kolaylaşır. Bloklar ada ada tek ve çift sayı dizileriyle numaralanmıştır, bir bölümü ise apartman adıyla anılır: yerel kayıtlarda Çiğdem, Kardelen, Gül ve Lale apartmanları bu kümenin içindedir; beş bloktan oluşan bir grup da 'Ardınç Sitesi' adıyla geçer. İlan ararken ya da verirken bu adların da kullanıldığını bilmek işinizi kolaylaştırır. 4. Etap Çarşısı, PTT şubesi ve aile sağlığı merkezi mahallenin bu kesimindedir; küme, STFA ve Yüksel bloklarıyla komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17688",
@@ -45,16 +45,18 @@
     "Toplam ~32.614 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Ada başına 5-6 apartman — bölgenin en yoğun kümesi (TKGM)",
-    "Toplam 496 konut, 200'ü asansörlü blokta (yerel yönetim kaydı)",
-    "1998 yapımı, beş katlı bloklar (yerel kayıt)",
-    "Ağırlıklı 3+1, 71-88 m² daireler (yerel kayıt)",
-    "Merkezi sistem ısıtma (yerel kayıt)",
-    "Asansör, jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı (yerel kayıt)",
+    "Yaklaşık 496 konut (yerel yönetim kaydı); künyeli 29 blokta 384 konut (yerel kayıt)",
+    "1998 yapım — merkezi sistem ısıtma (yerel kayıt)",
+    "Üç tipoloji: 5 katlı 20 daireli, 4 katlı 8 daireli, 4 katlı 16 daireli (yerel kayıt)",
+    "Daire tipleri: 3+1 71-88 m², 2+1 76 m², 1+1 45-47 m² (yerel kayıt)",
+    "Ayrıca 7 katlı, 28 daireli tek blok (yerel kayıt)",
+    "Künyeli blokların tamamında asansör kayıtlı (yerel kayıt)",
+    "Jeneratör, hidrofor, su deposu, kapıcı, otopark, oyun parkı (yerel kayıt)",
     "Çiğdem, Kardelen, Gül ve Lale apartmanları küme içinde (yerel kayıt)",
     "Tunahan — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Yardımcı Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

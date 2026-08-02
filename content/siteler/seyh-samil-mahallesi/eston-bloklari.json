@@ -7,7 +7,7 @@
     "lng": 32.623379
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/eston-bloklari-boundary.geojson",
-  "aciklama": "Eston Blokları (Eston 2), Şeyh Şamil Mahallesi'nde dört komşu adaya yayılan bir konut kümesidir; bloklar yerel kayıtlarda A6/A7, B3/B4, BK ve C4 kodlu adlarla listelenir. TKGM kayıtlarına göre dört parsel de kat mülkiyetlidir; tapular parselleri sırasıyla 6, 5, 5 ve 3 adet kârgir apartman olarak tanımlar (toplam yaklaşık 22.780 m²). Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eston Blokları, Şeyh Şamil Mahallesi'nin kooperatif kuşağında yerel kayıtlarda 'Eston 2' adıyla anılan blok kümesidir; blokları isimle değil A6/A7, B3/B4, BK ve C4 gibi harf-rakam kodlarıyla anılır ve yapılar tapuda kârgir apartman niteliğindedir. TKGM kayıtlarına göre kümeyi oluşturan dört komşu parselin dördü de kat mülkiyetlidir; tapular parselleri sırasıyla 6, 5, 5 ve 3 adet kârgir apartman olarak tanımlar (toplam yaklaşık 22.780 m²). (Şehit Osman Avcı Mahallesi'ndeki Eston Sitesi ayrı bir yerleşimdir; apartmanları isimle anılan o site buradaki Eston Blokları'ndan bağımsızdır.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17338",
@@ -33,11 +33,14 @@
   "ozellikler": [
     "Dört komşu adada apartman kümesi (6+5+5+3 blok, tapu)",
     "Dört parsel toplamı ~22.780 m² (TKGM)",
-    "Kat mülkiyetli parseller (TKGM)"
+    "Kat mülkiyetli parseller (TKGM)",
+    "Bloklar harf-rakam kodlu: A6/A7, B3/B4, BK, C4",
+    "Şeyh Şamil Mahallesi"
   ],
   "alternatifAdlar": [
     "Eston 2 Blokları",
-    "Eston 2 Sitesi"
+    "Eston 2 Sitesi",
+    "Şeyh Şamil Eston Blokları"
   ],
   "zenginlestirildi": "2026-07-17"
 }

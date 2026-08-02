@@ -7,7 +7,7 @@
     "lng": 32.612365
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/gokdemir-premium-boundary.geojson",
-  "aciklama": "Gökdemir Premium, Tunahan Mahallesi'nde, Gökdemir Grup tarafından geliştirilen premium segment bir konut projesidir. Müteahhidin resmî verilerine göre 14.580 m²'lik arsa (müteahhit parsel beyanı TKGM kaydımızla birebir uyumlu) üzerinde üç blok ve toplam 165 adet 4+1 daireden oluşuyor; projenin mimarı Lütfü Burak Usta. Aynı künyeye göre yapım Aralık 2023'te başladı, teslim tarihi Şubat 2026 olarak ilan edildi. Tek tip geniş daire planı, siteyi net biçimde geniş aile ve konfor arayan profile konumlandırıyor; ilan verilerine göre bloklar 13 katlı, daireler 165 m² brüt ve 150 m² net ölçüde. Geliştiricinin donatı listesi bölgenin yerleşik kooperatif dokusundan belirgin biçimde ayrışıyor: her daireye bir kapalı ve bir açık otopark, her blokta üçer asansör (biri sedye asansörü), jeneratör, basketbol, voleybol ve mini futbol sahaları, tenis kortu, çocuk oyun parkı, süs havuzları, kamelyalar ve yürüyüş parkuru. Daire içi standartlar tanıtımda ayrıntılı veriliyor: 2,80 m tavan yüksekliği, merkezi ısıtma, otomatik panjur sistemi, daireler arası özel ses yalıtımı, quartz mutfak tezgâhı, özel tasarım çelik kapı ve akıllı ev sistemi altyapısı. Proje Tunahan Mahallesi 230. Sokak üzerindedir; müteahhit beyanına göre Metromall AVM 300 metre, metro durağı 850 metre, stadyum 900 metre uzaklıktadır — Eryaman'ın okul-çarşı hattına yakınlık günlük yaşamı pratikleştiriyor. Aynı yerleşim adasını paylaştığı Su Damlası Sitesi'nin kademeli çok bloklu dokusuyla yan yana durması, mahallenin bu kesiminde iki farklı yapı kuşağını aynı anda görmeyi mümkün kılıyor: bir yanda yerleşik çok bloklu düzen, diğer yanda tek tip yeni yapı. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip projelerde fiyat farkını kat, cephe ve iç durum belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Gökdemir Premium, Tunahan Mahallesi'nde, tam ticari unvanıyla Gökdemir Grup A.Ş. tarafından geliştirilen premium segment bir konut projesidir. Müteahhidin resmî verilerine göre 14.580 m²'lik arsa (müteahhit parsel beyanı TKGM kaydımızla birebir uyumlu) üzerinde üç blok ve toplam 165 adet 4+1 daireden oluşuyor; projenin mimarı Lütfü Burak Usta. Aynı künyeye göre yapım Aralık 2023'te başladı, teslim tarihi Şubat 2026 olarak ilan edildi. Tek tip geniş daire planı, siteyi net biçimde geniş aile ve konfor arayan profile konumlandırıyor; ilan verilerine göre bloklar 13 katlı, daireler 165 m² brüt ve 150 m² net ölçüde. Kat sayısında iki kaynak ayrışıyor: tapu kaydı A, B ve C bloklarını 15 katlı betonarme mesken olarak tanımlıyor, ilan verilerinde ise 13 kat geçiyor — ilan hazırlarken bloğun kat sayısını yerinde teyit ederiz. Geliştiricinin donatı listesi bölgenin yerleşik kooperatif dokusundan belirgin biçimde ayrışıyor: her daireye bir kapalı ve bir açık otopark, her blokta üçer asansör (biri sedye asansörü), jeneratör, basketbol, voleybol ve mini futbol sahaları, tenis kortu, çocuk oyun parkı, süs havuzları, kamelyalar ve yürüyüş parkuru. Daire içi standartlar tanıtımda ayrıntılı veriliyor: 2,80 m tavan yüksekliği, merkezi ısıtma, otomatik panjur sistemi, daireler arası özel ses yalıtımı, quartz mutfak tezgâhı, özel tasarım çelik kapı ve akıllı ev sistemi altyapısı. Proje Tunahan Mahallesi 230. Sokak üzerindedir; müteahhit beyanına göre Metromall AVM 300 metre, metro durağı 850 metre, stadyum 900 metre uzaklıktadır — Eryaman'ın okul-çarşı hattına yakınlık günlük yaşamı pratikleştiriyor. Aynı yerleşim adasını paylaştığı Su Damlası Sitesi'nin kademeli çok bloklu dokusuyla yan yana durması, mahallenin bu kesiminde iki farklı yapı kuşağını aynı anda görmeyi mümkün kılıyor: bir yanda yerleşik çok bloklu düzen, diğer yanda tek tip yeni yapı. Bu sitede satılık veya kiralık daireniz mi var? Tek-tip projelerde fiyat farkını kat, cephe ve iç durum belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46512",
@@ -16,7 +16,8 @@
     }
   ],
   "ozellikler": [
-    "3 blok, toplam 165 adet 4+1 daire (Gökdemir Grup)",
+    "3 blok, toplam 165 adet 4+1 daire (geliştirici tanıtımı)",
+    "Geliştirici: Gökdemir Grup A.Ş. (geliştirici tanıtımı)",
     "14.580 m² arsa (resmî beyan + TKGM uyumlu)",
     "Mimar: Lütfü Burak Usta",
     "Kat mülkiyetli parsel (TKGM)",
@@ -25,11 +26,12 @@
     "Tenis kortu, basketbol-voleybol-mini futbol sahası, yürüyüş parkuru (geliştirici tanıtımı)",
     "2,80 m tavan yüksekliği, merkezi ısıtma, akıllı ev altyapısı (geliştirici tanıtımı)",
     "13 katlı bloklar, 165 m² brüt / 150 m² net daireler (ilan verisi)",
+    "Tapuda A, B, C blokları 15 katlı betonarme mesken — ilan verisiyle kat farkı var (TKGM)",
     "Metromall AVM 300 m, metro durağı 850 m (geliştirici tanıtımı)",
     "Tunahan Mahallesi 230. Sokak — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Gökdemir Premium Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-02"
 }

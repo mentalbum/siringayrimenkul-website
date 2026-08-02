@@ -7,7 +7,7 @@
     "lng": 32.652267
   },
   "sinirGeoJSON": "siteler/seker-mahallesi/bahcen-eryaman-konutlari-boundary.geojson",
-  "aciklama": "Bahçe-N Eryaman Konutları, Şeker Mahallesi'nde, Eryaman silüetinin en tanınmış modern yerleşimlerinden biridir. TKGM kayıtlarına göre 48.358 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A'dan E'ye beş blok 20'şer katlı, F bloğu 18, G-H-I blokları 16'şar katlı ve J bloğu tek katlı — toplam on blok. Kat yelpazesinin bu genişliği, aynı site içinde farklı manzara ve fiyat katmanları demektir: üst katlarda Eryaman'a hâkim görüş, alt katlarda bahçe kotuna yakın aile yaşamı. Bu ölçek, satış ve kiralamada blok-kat ayrımını doğru okumayı özellikle önemli kılar. Geliştiricinin tanıtımına göre Köroğlu İnşaat ve MNT İnşaat ortaklığıyla yapılan projede 120.000 m²'lik inşaat alanında toplam 618 konut üretilmiş, teslimler 2012 Eylül'ünde yapılmıştır; daireler ağırlıklı olarak 170 m² 4+1 tipindedir. Blokları ağaç adlarıyla anılır — Ihlamur, Köknar, Çınar, Sedir, Erguvan, Ladin, Akça, Meşe ve Defne — ve site içinde 3.000 ağaçlık botanik park, organik meyve-sebze bahçeleri, açık yüzme havuzu, fitness, spor sahaları, çocuk oyun alanı ve 2.600 m²'lik bir ticaret alanı yer alır; giriş 7/24 güvenliklidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bahçe-N Eryaman Konutları, Şeker Mahallesi'nde, Eryaman silüetinin en tanınmış modern yerleşimlerinden biridir. TKGM kayıtlarına göre 48.358 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A'dan E'ye beş blok 20'şer katlı, F bloğu 18, G-H-I blokları 16'şar katlı ve J bloğu tek katlı — toplam on blok. Kat yelpazesinin bu genişliği, aynı site içinde farklı manzara ve fiyat katmanları demektir: üst katlarda Eryaman'a hâkim görüş, alt katlarda bahçe kotuna yakın aile yaşamı. Bu ölçek, satış ve kiralamada blok-kat ayrımını doğru okumayı özellikle önemli kılar. Geliştiricinin tanıtımına göre Köroğlu İnşaat ve MNT İnşaat ortaklığıyla yapılan projede 120.000 m²'lik inşaat alanında toplam 618 konut üretilmiş, teslimler 2012 Eylül'ünde yapılmıştır; daireler ağırlıklı olarak 170 m² 4+1 tipindedir. Blokları ağaç adlarıyla anılır ve yerel kayıtlar hangi adın hangi harfe denk geldiğini de veriyor: Ihlamur A, Köknar B, Çınar C, Sedir D, Erguvan E, Ladin F, Akça G, Meşe H ve Defne I bloğudur. Bu eşleme tapudaki kat kaydıyla birleşince ev sahibi kendi bloğunun kaç katlı olduğunu doğrudan okuyabilir: Ihlamur, Köknar, Çınar, Sedir ve Erguvan 20 katlı, Ladin 18 katlı, Akça, Meşe ve Defne 16 katlıdır. Site yönetim planı blok başına mesken sayısını da tek tek verir — Ihlamur 76, Köknar 72, Çınar 72, Sedir 76, Erguvan 76, Ladin 68, Akça 60, Meşe 59 ve Defne 59 mesken; toplamı 618, yani tanıtımda geçen konut sayısıyla birebir aynı. J bloğunda yedi adet asma katlı dükkan bulunur ve sitedeki bağımsız bölüm sayısı böylece 625'e çıkar. Aynı plana göre ısıtma merkezi sistemdir; yakıt gideri kalorimetreyle, her dairenin kullandığı oranda paylaştırılır — merkezi sistemde en çok sorulan konu budur ve burada gider daire bazında ölçülmektedir. Otopark düzeni de plana bağlanmıştır: her mesken bloğu için açık otopark alanı ayrılmıştır. Site içinde 3.000 ağaçlık botanik park, organik meyve-sebze bahçeleri, açık yüzme havuzu, fitness, spor sahaları, çocuk oyun alanı ve 2.600 m²'lik bir ticaret alanı yer alır; giriş 7/24 güvenliklidir. Site yönetiminin kayıtlı adresi Şeker Mahallesi Şehit Mehmet Çavuş Caddesi No: 4'tür. Geliştiricinin tanıtımına göre Ayaş yolu 300 metre, metro durağı ve Şeker-Etimesgut kavşağı 1 kilometre, Optimum AVM, Göksu Göleti ve KC Alışveriş Merkezi ise 1,5 kilometre mesafededir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46360",
@@ -21,11 +21,18 @@
     "Köroğlu + MNT İnşaat — Eylül 2012 teslim (geliştirici tanıtımı)",
     "618 konut, ağırlıklı 170 m² 4+1",
     "Ağaç adlı bloklar: Ihlamur, Köknar, Çınar, Sedir, Erguvan, Ladin, Akça, Meşe, Defne",
+    "Blok harfi eşlemesi: Ihlamur A, Köknar B, Çınar C, Sedir D, Erguvan E, Ladin F, Akça G, Meşe H, Defne I (yerel kayıt)",
+    "Blok başına 59-76 mesken — toplam 618 konut (yönetim kaydı)",
+    "J blokta 7 asma katlı dükkan — toplam 625 bağımsız bölüm (yönetim kaydı)",
+    "Merkezi ısıtma — yakıt gideri kalorimetreyle paylaştırılır (yönetim kaydı)",
+    "Her mesken bloğu için açık otopark alanı (yönetim kaydı)",
     "3.000 ağaçlık botanik park + 2.600 m² ticaret alanı",
     "Açık yüzme havuzu, fitness, spor sahaları, 7/24 güvenlik",
-    "Şeker Mahallesi"
+    "Ayaş yoluna 300 m, metro durağına 1 km (geliştirici tanıtımı)",
+    "Şehit Mehmet Çavuş Caddesi No: 4 — Şeker Mahallesi"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "adres": "Şeker Mahallesi Şehit Mehmet Çavuş Caddesi No: 4, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-08-02",
   "alternatifAdlar": [
     "Bahçen Konutları",
     "Bahçe-N Eryaman",

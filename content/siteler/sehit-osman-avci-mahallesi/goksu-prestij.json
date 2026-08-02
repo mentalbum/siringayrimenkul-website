@@ -7,7 +7,8 @@
     "lng": 32.6543317
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/goksu-prestij-boundary.geojson",
-  "aciklama": "Göksu Prestij, Göksu bölgesinde Optimum AVM karşısında, Fırat Life Style (Çys İnşaat) tarafından geliştirilip 2019 sonunda teslim edilen bir konut projesi: 5 blokta toplam 192 konut. Blokların dördü konuta ayrılırken beşinci blok farklı kullanıma tahsis edilmiş; konutların tamamı 4+1 geniş aile planında (bazı bloklarda 1+1 seçenekleri de görülüyor). Modern mimarisi, manzaralı üst katları ve Optimum AVM ile metro aksına yürüme mesafesindeki konumuyla proje hem oturum hem yatırım tarafında talep görüyor. Bu sitede satılık veya kiralık daireniz mi var? Geniş daire ağırlıklı projelerde kat ve manzara farkı fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin. Tapu kaydı blok yapısını doğrular: 5 katlı A blok ile 17'şer katlı B, C, D ve E bloklarından oluşur; yerel kayıtlarda site 'Fırat Life Style Göksu' adıyla da anılır.",
+  "adres": "Şehit Osman Avcı Mahallesi Malazgirt Caddesi No: 55, Etimesgut/Ankara",
+  "aciklama": "Göksu Prestij, Şehit Osman Avcı Mahallesi Malazgirt Caddesi No: 55'te — Göksu Gölü ile Optimum AVM aksında — Fırat Life Style (Çys İnşaat) tarafından geliştirilip 2019 sonunda teslim edilen bir konut projesi: 5 blokta toplam 192 konut. Blokların dördü konuta ayrılırken beşinci blok ticari kullanıma tahsis edilmiş; proje künyelerine göre bu bölümde 30 m² ile 1.000 m² arasında değişen 89 ticari ünite bulunuyor. Konutların tamamı 4+1 planında ve 160 m² brüt, yaklaşık 150 m² kullanım alanlıdır — projede tek bir konut tipi olması, ev sahibi için emsal çizgisini kendiliğinden netleştirir: karşılaştırılacak daire hep aynı tiptir, fark kat, cephe ve iç durumdan gelir. Yapının yüklenici firması SF Yıldız İnşaat'tır; firma kendi referans kaydında inşaat süresini Aralık 2017 - Haziran 2019 olarak verir. Proje tanıtımlarında donatı olarak 24 saat güvenlik, otopark, peyzaj alanları, çocuk oyun alanı, spor alanları ve sosyal ortak alanlar sayılıyor. Tapu kaydı blok yapısını doğrular: 5 katlı A blok ile 17'şer katlı B, C, D ve E bloklarından oluşur. Aynı kayıtta parselin niteliği 'Ofis, İşyeri ve Arsası' olarak geçer — rezidans tipi yapılarda sık görülen bu durum, bağımsız bölüm tapularında konut yerine ofis/işyeri niteliği çıkabileceği anlamına gelir; farkı sözlüğümüzdeki rezidans tapusu maddesinde anlattık, işlem öncesi güncel kaydı birlikte kontrol ederiz. Yerel kayıtlarda site 'Fırat Life Style Göksu' adıyla da anılır. Modern mimarisi, manzaralı üst katları ve Optimum AVM ile metro aksına yürüme mesafesindeki konumuyla proje hem oturum hem yatırım tarafında talep görüyor. Bu sitede satılık veya kiralık daireniz mi var? Geniş daire ağırlıklı projelerde kat ve manzara farkı fiyatı belirler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46620",
@@ -16,13 +17,18 @@
   ],
   "ozellikler": [
     "5 blokta 192 konut (Fırat Life Style / Çys İnşaat)",
-    "Ağırlıklı 4+1 geniş daireler",
+    "Konutların tamamı 4+1, 160 m² brüt (proje künyesi)",
+    "Ticari blokta 89 ünite, 30-1.000 m² (proje künyesi)",
+    "Yüklenici: SF Yıldız İnşaat — yapım Aralık 2017-Haziran 2019 (geliştirici tanıtımı)",
     "Teslim: Aralık 2019",
+    "24 saat güvenlik, otopark, çocuk oyun alanı, spor alanları, peyzaj (geliştirici tanıtımı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Tapu niteliği ofis-işyeri — rezidans tipi kayıt (TKGM)",
     "~15.523 m² parsel (TKGM)",
-    "Optimum AVM karşısı, metro aksına yürüme mesafesi"
+    "Malazgirt Caddesi No: 55 — Göksu Gölü ve Optimum AVM aksı (yerel kayıt)",
+    "Şehit Osman Avcı Mahallesi / Eryaman"
   ],
-  "zenginlestirildi": "2026-07-30",
+  "zenginlestirildi": "2026-08-02",
   "alternatifAdlar": [
     "Fırat Life Style Göksu",
     "Fırat Life Style Göksu Prestij",

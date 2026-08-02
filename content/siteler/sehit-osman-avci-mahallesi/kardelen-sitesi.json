@@ -2,7 +2,7 @@
   "isim": "Kardelen Sitesi",
   "slug": "kardelen-sitesi",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
-  "aciklama": "Kardelen Sitesi, Şehit Osman Avcı Mahallesi'nde üç bloklu bir konut sitesidir; 'Kardelen Konutları' adıyla da bilinir. Tapu kaydı da bu yapıyı doğrular: yaklaşık 5.560 m²'lik kat mülkiyetli parsel üzerinde '3 blok betonarme apartman' — üç blok için 5,6 dönümlük alan, bahçeli bir yerleşim payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kardelen Sitesi, Şehit Osman Avcı Mahallesi'nde üç bloklu bir konut sitesidir; 'Kardelen Konutları' adıyla da bilinir. Tapu kaydı da bu yapıyı doğrular: yaklaşık 5.560 m²'lik kat mülkiyetli parsel üzerinde '3 blok betonarme apartman' — üç blok için 5,6 dönümlük alan, bahçeli bir yerleşim payı bırakır. Yerel kayıtlarda bloklar 11-A, 11-B ve 11-C kodlarıyla anılır; ilan metinlerinde daire bu kodla tarif edildiği için blok harfini başlığa yazmak, siteyi bilen alıcının aradığı cepheyi ilk bakışta anlamasını sağlar. Aynı kayıtlar üç bloğu da 2009 yapımı ve yedi katlı gösteriyor. Sitenin ölçeği küçük, tip yelpazesi ise dardır: her blokta on altı daire bulunur, bunların on dördü 3+1, ikisi 5+1 — üç blok toplamı kırk sekiz daire eder. Daire büyüklükleri yerel kayıtlarda 160 ile 250 m² arasında veriliyor; yedi kata on altı daire, yani kat başına iki ile üç daire düşmesi bu genişliği doğruluyor. Mahallenin genelinden belirgin biçimde geniş metrekareli bir site olmak, ev sahibi için emsal sorusunu kolaylaştırır: karşılaştırılacak daire sayısı sınırlıdır ve daireler birbirine yakın niteliktedir, bu yüzden fiyatı ayıran değişken oda sayısı değil kat, cephe ve iç durumdur. Isıtma, bölgedeki kooperatif sitelerinin çoğundan farklı olarak merkezi sistem değil doğalgaz kombidir; ısınma giderinin daire bazında kontrol edilebilmesi hem kiracıya anlatması kolay hem de satışta ayırt edici bir özelliktir. Blok künyelerinde asansör, bahçe, hidrofor, ısı yalıtımı, jeneratör, kablo TV-uydu, güvenlik, otopark, oyun parkı ve yangın merdiveni ortak donatı olarak sayılıyor; metro durağı, otobüs durağı ve okul yakın çevre işareti olarak işaretli. Yerel kayıtlara göre site, Polsan 2 Yeşil Göl Sitesi ile bitişik komşudur — adres tarifinde bu yerleşim iyi bir yön referansıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "alternatifAdlar": [
     "Kardelen Konutları"
   ],
@@ -20,8 +20,17 @@
   "ozellikler": [
     "3 blok — tapu nitelik kaydıyla uyumlu",
     "Yaklaşık 5,6 dönümlük kat mülkiyetli parsel (TKGM)",
+    "Bloklar 11-A, 11-B, 11-C (yerel kayıt)",
+    "2009 yapımı, yedi katlı bloklar (yerel kayıt)",
+    "Blok başına 16 daire — üç blok toplamı 48 (yerel kayıt)",
+    "Daire tipleri: 42 adet 3+1, 6 adet 5+1 (yerel kayıt)",
+    "Daireler 160-250 m² — mahalle genelinden geniş (yerel kayıt)",
+    "Doğalgaz kombi ısıtma, merkezi sistem değil (yerel kayıt)",
+    "Asansör, güvenlik, jeneratör, hidrofor, bahçe, otopark, oyun parkı (yerel kayıt)",
+    "Metro ve otobüs durağı ile okul yakın çevrede (yerel kayıt)",
+    "Polsan 2 Yeşil Göl Sitesi'ne bitişik (yerel kayıt)",
     "'Kardelen Konutları' adıyla da bilinir",
     "Şehit Osman Avcı — kadastroda Şeker kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-02"
 }
