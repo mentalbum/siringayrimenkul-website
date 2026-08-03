@@ -1273,3 +1273,47 @@ mahalle sayfası 7 · hiç çıkmıyor 9. Yani %27'sinde yanlış sayfa gösteri
 
 **KALAN TARAMA:** Ata 86, Güzelkent 79, Cumhuriyet 69, Göksu 68, Yavuz Selim 57,
 Şeyh Şamil 34. Veri: scratchpad/mahalle-turu/BIRLESIK-KARNE.json + mahalle bazlı.
+
+## 📈 DÜN→BUGÜN KARŞILAŞTIRMASI (2026-08-02)
+
+**SİTELER — aynı ölçütle (siringayrimenkul.com 1. sırada mı):**
+| | 1 Ağustos | 2 Ağustos |
+|---|---|---|
+| 1. sıra | 243/699 = %35 | 157/348 = **%45** (+10 puan) |
+| İlk sayfa | %95 | %96 |
+
+Yeni ve daha katı ölçüt (DOĞRU sayfayla 1. sıra): 145/348 = %41. Aradaki 4 puan,
+1. sırada olup yanlış sayfamızın göründüğü kayıtlar.
+
+Dünkü not ("243 dip ölçümdür, Google korpusu yeniden değerlendiriyor") doğrulandı —
+toparlanma başlamış.
+
+**MAHALLELER (14 sorgu) — skor 3/14 → 3/14, ama iç hareket var:**
+| Mahalle | 1 Ağu | 2 Ağu |
+|---|---|---|
+| Ata | ilk sayfada yok | **1. sıra** 🚀 |
+| Devlet | 1. | 1. sıra |
+| Eryaman | 1. | 1. sıra (ama ANASAYFA çıkıyor, mahalle sayfası değil) |
+| Şeyh Şamil | ilk sayfada yok | 2. sıra |
+| Altay | 3. | 2. sıra |
+| Yavuz Selim | 1. | 2. sıra |
+| Güzelkent | 9. | 9. (ve orada YEŞİMKENT SİTE SAYFASI çıkıyor) |
+| Yeşilova | ilk sayfada yok | 10. |
+| Şeker | 1. | çıkmıyor |
+| Tunahan | 4. | çıkmıyor |
+| Cumhuriyet · Göksu · ŞOA · Susuz | ilk sayfada yok | çıkmıyor |
+
+**MAHALLE SAYFASI TEŞHİSİ:** içerik hacmi tek başına açıklamıyor — Tunahan 1.069
+karakterle çıkmıyor, Devlet 1.077 karakterle 1. sırada. Ata (1. sıra) en uzun metne
+sahip (1.545 krk, 5 paragraf). Hipotez: mahalle adının Türkiye genelinde yaygınlığı
+(Göksu, Cumhuriyet, Şeker, Susuz her ilde var) + metinde il/ilçe belirsizliği.
+8 zayıf mahalle için teşhis + zenginleştirme workflow'u başlatıldı.
+
+**TKGM:** 720 kaydın tamamı denetlendi. Adası olmayan tek kayıt Kurtuluş Sitesi;
+koordinatı TKGM'ye göre "Tarla" nitelikli boş parsele düşüyordu, silindi ve sayfaya
+"tapu kaydı henüz eşleştirilemedi" notu kondu. 18480-18493 aralığının tamamı başka
+sitelere ait; boşta kalan 18497/1 ("Kargir Apartman", 4.761 m²) hiçbir kayda bağlı
+değil — Özgün'e soruldu.
+
+**GSC:** günlük indeksleme kotası dolu ("yarın tekrar deneyin"). Panelde tıklama
+1.132 → 1.243. Kuyrukta 12 sayfa.
