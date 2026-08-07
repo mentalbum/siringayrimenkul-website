@@ -104,3 +104,22 @@ akasya-sitesi (106/8,2), vizyon-baspinar (105/8,4). (Tam liste JSON'da.)
 GSC ortalama konumu gerçek kullanıcı gösterimlerinin ortalaması (yerel/mobil
 ağırlıklı) — pws=0 laboratuvar ölçümünden farklı bir mercek; ikisi birlikte
 okunmalı. Canlı tarama soğuma bitince (≈11:40) kalan sorgular için sürecek.
+
+### ALTIN ÖLÇÜM (Özgün, 07.08 10:35, başka telefon + gizli sekme, mobil)
+"eryaman emlakçı" organik: **13-14. sıra.** Önümüzdekiler (sırayla, harita
+kutusu hariç): sahibinden (emlak ofisi sayfası), hepsiemlak,
+eryamanemlakci.com (birebir alan adı!), agantagayrimenkul.com,
+premiumeryamanemlak.com, beyazemlak.com.tr, Yandex Maps kaydı (Tekinşahlar),
+Endeksa, Facebook profili (Emlakcı Çetin), sonra BİZ, sonra Instagram profili.
+
+İkinci bulgu: Google anasayfamızı hâlâ ESKİ/yeniden yazılmış künyeyle
+gösteriyor — SERP'te "Şirin Gayrimenkul: Eryaman Emlakçısı" + değerleme
+metninden devşirme açıklama. Canlı sayfa (curl doğrulandı):
+"Eryaman Emlakçı | Şirin Gayrimenkul — Evinizi Satalım, Kiraya Verelim" +
+"Eryaman emlakçı arıyorsanız:" açıklaması. Yani dünkü anasayfa değişikliği
+dizine girmedi; GSC kotası açılır açılmaz İLK istek anasayfaya gidecek
+(Konuta Özlem 2.'ye düştü).
+
+Rakip seti dersi: baş sorguda önümüzdekiler çoğunlukla birebir-eşleşen alan
+adları ve sosyal profiller — alan otoritesi/bağlantı cephesi (dijital PR)
+artık ana kaldıraç; sayfa içi iş büyük ölçüde bitti.
