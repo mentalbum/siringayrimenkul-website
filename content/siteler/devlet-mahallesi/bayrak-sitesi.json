@@ -7,7 +7,7 @@
     "lng": 32.622149
   },
   "sinirGeoJSON": "siteler/devlet-mahallesi/bayrak-sitesi-boundary.geojson",
-  "aciklama": "Bayrak Sitesi, Eryaman Devlet Mahallesi'nde yer alan ve blokları eski kooperatif adlarını yaşatan bir sitedir: Yakarkent, Yeni İlkyaz (üç blok), Yeni Sedef ve Yeşil Gündoğan — her bloğun adı, sitenin birleştiği kooperatiflerin hatırasıdır. Tapu kaydına göre site, yaklaşık 25.338 m² — 25 dönümlük — tek parsel üzerinde yedi apartmanla kayıtlıdır; bu ölçek, bloklar arasına geniş bahçe payı bırakan ferah bir yerleşim demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bayrak Sitesi, Eryaman Devlet Mahallesi'nde yer alan ve blokları eski kooperatif adlarını yaşatan bir sitedir: Yakarkent, Yeni İlkyaz (üç blok), Yeni Sedef, Zigana ve Yeşil Gündoğan — her bloğun adı, sitenin birleştiği kooperatiflerin hatırasıdır. Tapu kaydına göre site, yaklaşık 25.338 m² — 25 dönümlük — tek parsel üzerinde yedi apartmanla kayıtlıdır; yerel konut rehberi de bu yedi bloğu 15, 15A ve 15B (Yeni İlkyaz), 17 (Yeni Sedef), 19 (Zigana), 21 (Yeşil Gündoğan) ve 23 (Yakarkent) kapı numaralarıyla listeler — rehber kaydı ile tapudaki yedi apartman birebir örtüşür. Bu ölçek, bloklar arasına geniş bahçe payı bırakan ferah bir yerleşim demektir. Harita ve rehber kayıtlarında sitenin adı 'Türkkonut Bayrak Sitesi' olarak da geçer: Devlet Mahallesi'nin bu kesimi, Eryaman'ın kooperatifler eliyle üretilen Türkonut kuşağıdır ve bu miras çevredeki okul adlarına kadar işlemiştir. Aile profili için okul zinciri tamdır: Türkkonut Emel Önal İlkokulu ile birer anaokulu ve iki ortaokul siteye birkaç yüz metrelik yürüme mesafesindedir — daireleri kiraya verirken aile kiracı profilini besleyen bir etken. Ulaşımda sitenin en güçlü kozu metrodur: site, Ankara metrosunun Eryaman'dan geçen hattında iki istasyonun arasında kalır — doğusunda Eryaman 5, batısında Devlet Mahallesi/1910 Ankaragücü istasyonu. Yakın olan Eryaman 5'e kuş uçuşu mesafe yarım kilometrenin altındadır; Amasya Beyannamesi ve Samsun 19 Mayıs caddeleri de siteyi mahallenin ana akslarına bağlar. Ad benzerliği taşıyan Mavi Bayrak Sitesi ise Yenimahalle Ata Mahallesi'ndeki ayrı bir yerleşimdir — bu sayfa Devlet Mahallesi'ndeki Bayrak Sitesi'ne aittir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46517",
@@ -15,10 +15,12 @@
     }
   ],
   "ozellikler": [
-    "Bloklar eski kooperatif adlarıyla: Yakarkent, Yeni İlkyaz, Yeni Sedef, Yeşil Gündoğan",
+    "Bloklar eski kooperatif adlarıyla: Yakarkent, Yeni İlkyaz, Yeni Sedef, Zigana, Yeşil Gündoğan",
     "Tapuda 7 apartman — yaklaşık 25 dönümlük tek parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Devlet Mahallesi'nin yerleşik sitelerinden"
+    "Eryaman 5 ile Devlet Mahallesi/1910 Ankaragücü metro istasyonları arasında",
+    "İlkokul, ortaokul ve anaokulu yürüme mesafesinde",
+    "Türkonut Metro bölgesi — Devlet Mahallesi'nin yerleşik sitelerinden"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-07"
 }

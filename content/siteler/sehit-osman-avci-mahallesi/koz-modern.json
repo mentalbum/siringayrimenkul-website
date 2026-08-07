@@ -7,7 +7,7 @@
     "lng": 32.6585147
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/koz-modern-boundary.geojson",
-  "aciklama": "Koz Modern, Eryaman Şehit Osman Avcı Mahallesi'nde yer alan bir konut sitesidir. İlan kaynaklarına göre proje ağırlıklı olarak 1+1 (net ~50 m²) kompakt daire tiplerinden oluşuyor; 7 katlı bloklarda merkezi sistem ısıtmaya sahip — yatırımlık ve kompakt oturum arayan profile uygun bir yapı. Kat mülkiyetli yapısıyla özellikle yatırımcıların ilgisini çeken proje, İstanbul Yolu aksına ve toplu ulaşıma yakın konumda. Tapu kaydına göre proje, yaklaşık 10.000 m²'lik parselde on dörder katlı A, B, C blokları ile iki katlı D bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Koz Modern, Eryaman Şehit Osman Avcı Mahallesi'nde, Kozlar İnşaat imzasıyla 2010'ların ikinci yarısında tamamlanan bir konut projesidir; yapımcı firma projeyi 'Şeker Mahallesi, Eryaman' başlığıyla tanıtır ve 300'ü aşkın daire ile zemin katlardaki 14 dükkândan oluşan bir yaşam alanı olarak tarif eder. İlan kaynaklarına göre ağırlık 1+1 (net ~50 m²) kompakt dairelerdedir; proje tanıtımında 2+1 (~102 m²) ve 2+1 dubleks seçenekleri de sayılır, bloklar merkezi sistem ısıtmalıdır. Kompakt ağırlıklı bu karma, siteyi Eryaman'ın kiralama tarafı hareketli adreslerinden biri yapar; kat mülkiyetli yapısıyla yatırımcı ilgisi de süreklidir. Konum tarafında site Fatih Sultan Mehmet Bulvarı ile Ankara-Ayaş Yolu'na ve Optimum Outlet'e yakın durur; İstanbul Yolu aksı ve toplu ulaşım bağlantıları da güçlüdür. Proje tanıtımında kapalı otopark, 24 saat güvenlik, açık yüzme havuzu, fitness salonu, çocuk oyun alanı ve yürüyüş alanları yer alır; blok altlarındaki ticari birimler günlük ihtiyaçları site içinde karşılamak üzere tasarlanmıştır. Tapu kaydına göre proje, yaklaşık 10.000 m²'lik parselde on dörder katlı A, B, C blokları ile iki katlı D bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46658",
@@ -17,13 +17,15 @@
   "ozellikler": [
     "Tapu: 14'er katlı A-B-C + 2 katlı D blok — ofis-işyeri niteliği",
     "Yaklaşık 10 dönümlük parsel (TKGM)",
-    "Ağırlıklı 1+1 (net ~50 m²) kompakt daireler",
-    "7 katlı, merkezi sistem ısıtma",
+    "Kozlar İnşaat projesi — 300'ü aşkın daire + 14 dükkan",
+    "Ağırlıklı 1+1 (net ~50 m²); 2+1 ve dubleks seçenekleri",
+    "Merkezi sistem ısıtma",
     "Kat mülkiyetli parsel (TKGM)",
-    "Şehit Osman Avcı / İstanbul Yolu aksı"
+    "Proje tanıtımında: kapalı otopark, açık havuz, fitness, 24 saat güvenlik",
+    "FSM Bulvarı / Ayaş Yolu / İstanbul Yolu aksı — Optimum Outlet yakını"
   ],
   "alternatifAdlar": [
     "Koz Modern Sitesi"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-07"
 }

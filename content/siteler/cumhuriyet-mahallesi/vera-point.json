@@ -7,7 +7,7 @@
     "lng": 32.6601397
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/vera-point-boundary.geojson",
-  "aciklama": "Vera Point, Yeni Batı'da Veysel Karani Bulvarı çevresinde (5400–5401. Sokak) Çelikoğlu İnşaat tarafından tamamlanmış bir konut projesidir. Vera serisinin geniş aile dairelerine odaklı projelerinin (Vera West/Vista) aksine, Vera Point'te 1+1 ve 2+1 kompakt daire tipleri öne çıkıyor — yatırımlık ve küçük hane profiline uygun bir yapı. Asansör, otopark ve güvenlik gibi site içi donatılara sahip proje, İstanbul Yolu aksındaki konumuyla ulaşım avantajı sunuyor. Tapu kaydına göre proje, yaklaşık 10.492 m²'lik parselde üç katlı A blok ile on yedişer katlı B ve C bloklardan oluşur. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Vera Point, Yeni Batı'da (Cumhuriyet Mahallesi) Veysel Karani Bulvarı çevresinde (5400–5401. Sokak) Çelikoğlu İnşaat (Çelikoğlu Grup) tarafından tamamlanmış bir konut projesidir. Firmanın Yeni Batı–Eryaman hattında art arda geliştirdiği Vera serisinin (Vera West, Vera Vista, Vera City) halkalarından biri olan proje, serinin geniş aile dairelerine odaklı üyelerinin aksine kompakt daire tiplerine yaslanıyor: proje kaynaklarına göre sitede 62 adet 1+1 ve 157 adet 2+1 olmak üzere toplam 219 daire ile 9 ticari birim bulunuyor — yatırımlık ve küçük hane profiline uygun, kiralama hareketliliği yüksek bir yapı. Yaklaşık 26.000 m² inşaat alanıyla mahallesinin büyük ölçekli sitelerinden olan projede asansör, otopark ve güvenlik gibi site içi donatılar mevcut; İstanbul Yolu aksına ve Eryaman–Batıkent yoluna komşu konumu günlük ulaşımda avantaj sağlıyor. Tapu kaydına göre proje, yaklaşık 10.492 m²'lik kat mülkiyetli parselde üç katlı A blok ile on yedişer katlı B ve C bloklarından oluşur. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde fiyatı kat, cephe ve iç durum belirler; kiralamada ise doğru fiyatlama boş kalma süresini kısaltır — doğru rakamı, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62656",
@@ -17,8 +17,10 @@
   "ozellikler": [
     "Tapu: 17'şer katlı B-C blokları + 3 katlı A blok",
     "Yaklaşık 10,5 dönümlük parsel (TKGM)",
-    "Çelikoğlu İnşaat — tamamlanmış proje",
-    "1+1 ve 2+1 kompakt daire tipleri",
+    "Çelikoğlu İnşaat (Çelikoğlu Grup) — tamamlanmış proje",
+    "219 daire: 62 × 1+1, 157 × 2+1 (proje kaynağı)",
+    "9 ticari birim",
+    "Yaklaşık 26.000 m² inşaat alanı (proje duyurusu)",
     "Asansör, otopark, güvenlik",
     "Kat mülkiyetli parsel (TKGM)",
     "Veysel Karani Bulvarı / 5400–5401. Sokak"
@@ -26,5 +28,5 @@
   "alternatifAdlar": [
     "Vera Point Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-07"
 }

@@ -1335,3 +1335,15 @@ oran 10/10'du ve 5 sayfa doğrudan 1. sıraya çıktı.
 
 NOT: dizine girenler lib/tarama-oncelikli.ts listesinden ÇIKARILMALI —
 kontrol turu bir sonraki oturumda yapılacak.
+
+### Hittown (Cumhuriyet) — teslim yılı düzeltildi (2026-08-07)
+
+Kayıtta "2016 teslim" yazıyordu (kaynak: hityapi.com/projeler/hittown "2016
+yılında yaşam başladı" cümlesi). Ancak tarihli kanıt bunu çürütüyor: Emlakkulisi
+25.12.2017 haberi "inşaat hızla sürüyor, örnek daire hazır" diyor; lansman dönemi
+kaynakları (yeniemlak, guncelprojebilgileri, yeniprojeler) etaplı anahtar teslimi
+30.5.2019 (küçük tipler) / 30.5.2020 (3,5+1 ve 4,5+1) olarak veriyor. 2016'da
+yaşam başlamış olması fiilen imkânsız → metin "lansman takvimine göre 2019-2020
+etaplı" ifadesine çevrildi; geliştirici sayfasındaki cümle hatalı kabul edildi.
+AYRICA: portallar "17 kat" diyor, tapu 19'ar kat — tapu esas alındı
+(zemin/bodrum sayım farkı olası), metne 17 yazılmadı.

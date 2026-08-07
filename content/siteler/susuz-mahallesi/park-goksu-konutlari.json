@@ -7,7 +7,7 @@
     "lng": 32.6423684
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/park-goksu-konutlari-boundary.geojson",
-  "aciklama": "Park Göksu Konutları, Susuz'un Göksu kentsel gelişim bölgesinde üç yüksek bloklu, çok geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '15 Katlı A Blok ile 16 Katlı B ve C Blok Betonarme Mesken' niteliğiyle kayıtlı 23.419 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 23 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan bırakır. Geliştirici Yazanlar İnşaat'ın tanıtımına göre üç blokta toplam 173 daire bulunur ve dairelerin tamamı 4+1 plandadır; bu da siteye geniş aile dairelerine odaklı, homojen bir profil kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Park Göksu Konutları, Susuz'un Göksu kentsel gelişim bölgesinde üç yüksek bloklu, çok geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '15 Katlı A Blok ile 16 Katlı B ve C Blok Betonarme Mesken' niteliğiyle kayıtlı 23.419 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık 23 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan bırakır.\n\nProjeyi geliştiren Yazanlar İnşaat, siteyi 'Park Göksu Evleri' adıyla tanıtır; geliştirici tanıtımına göre üç blokta toplam 173 daire bulunur ve dairelerin tamamı 4+1 plandadır. Yine geliştirici tanıtımında açık ve kapalı otopark, çocuk oyun alanları ve geniş peyzaj alanları sayılır — bu, sahadaki ferah yerleşimle örtüşen bir vaziyet planı anlamına gelir. Tek tip daire stoğunun ev sahibine somut bir yararı var: emsal karşılaştırması aynı plan tipi içinde yapıldığından, dairenizin değeri kat, cephe ve iç durum üzerinden çok daha net okunur.\n\nKonum tarafında site, Susuz'un son yıllarda yükselen yeni yapı kuşağının içinde, İstanbul Yolu aksına bağlanan gelişim bölgesindedir; çevresinde benzer dönemde yükselen yüksek katlı siteler yer alır ve bölge geniş aile dairesi stoğuyla öne çıkar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "64527",
@@ -19,10 +19,12 @@
     "15-16 katlı bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu kentsel gelişim bölgesi",
-    "173 daire, tamamı 4+1 (geliştirici tanıtımı)"
+    "173 daire, tamamı 4+1 (geliştirici tanıtımı)",
+    "Açık ve kapalı otopark (geliştirici tanıtımı)",
+    "Çocuk oyun alanları ve peyzaj alanları (geliştirici tanıtımı)"
   ],
   "alternatifAdlar": [
     "Park Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-07"
 }

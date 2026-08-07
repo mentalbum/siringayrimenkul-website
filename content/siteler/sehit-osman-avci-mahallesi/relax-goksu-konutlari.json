@@ -7,7 +7,7 @@
     "lng": 32.6543784
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/relax-goksu-konutlari-boundary.geojson",
-  "aciklama": "Relax Göksu Konutları, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi üzerinde, Fırat Life Style (Dema ve İnvest Yapı ortaklığıyla) tarafından geliştirilen ve 2016 sonunda teslim edilen, 1.209 konutluk dev bir yerleşim — Eryaman'ın en büyük rezidans tipi projelerinden biri. Daireler 30–55 m² aralığında stüdyo (1+0) ve 1+1 tiplerinden oluşuyor; bu kompakt yapı siteyi özellikle kiralama pazarında bölgenin en hareketli adreslerinden biri yapıyor. Bünyesindeki çarşı/alışveriş alanı, 7/24 güvenliği ve ilanlarda öne çıkan havuz, sauna, hamam gibi olanaklarıyla kendi kendine yeten bir kompleks. Konum olarak Göksu Parkı'na ve göl hattına komşu, Eryaman metro-çarşı aksına araçla birkaç dakika mesafede. TKGM kaydında site tek parsel üzerinde yer alıyor. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde doğru fiyatlama, dolu kalma süresini doğrudan etkiler — fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Relax Göksu Konutları, Şehit Osman Avcı Mahallesi'nde Malazgirt 1071. Caddesi üzerinde, Fırat Life Style (Dema ve İnvest Yapı ortaklığıyla) tarafından geliştirilen ve 2016 sonunda teslim edilen, 1.209 konutluk dev bir yerleşim — Eryaman'ın en büyük rezidans tipi projelerinden biri. Proje tanıtımlarına göre yerleşim beş bloktan oluşur: dördü 12'şer katlı yüksek bloklar, biri ise yatay düzende tasarlanmış alçak bir bloktur; TKGM kaydında sitenin tamamı tek parsel üzerinde yer alıyor. Daireler 30 m² stüdyo (1+0) ve 55 m² 1+1 tiplerinden oluşuyor; bu kompakt stok, siteyi özellikle kiralama pazarında bölgenin en hareketli adreslerinden biri yapıyor. Site içi yaşam kendi kendine yetecek şekilde kurgulanmış: bünyesindeki çarşı/alışveriş alanının yanı sıra kapalı yüzme havuzu, sauna, hamam, fitness alanı, çocuk oyun alanları, açık ve kapalı otopark ile 7/24 kameralı güvenlik, proje tanıtımlarında ve ilanlarda öne çıkan olanaklar. Konum tarafında Göksu Parkı'na ve göl hattına komşuluk sitenin adını hakkıyla taşımasını sağlıyor; Eryaman metro-çarşı aksına araçla birkaç dakika mesafede. Ev sahipleri açısından bu ölçeğin iki yüzü var: stüdyo ve 1+1 stoğunun bolluğu, ilanınızın her dönem benzer onlarca ilanla yan yana düşmesi demek; öte yandan kompakt dairelere talep istikrarlı. Bu tabloda farkı blok, kat, cephe ve iç durum yaratır. Bu sitede satılık veya kiralık daireniz mi var? Kompakt dairelerde doğru fiyatlama, dolu kalma süresini doğrudan etkiler — fiyatı, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46622",
@@ -17,14 +17,16 @@
   "adres": "Malazgirt 1071. Cd. No:51, Şehit Osman Avcı, Etimesgut/Ankara",
   "ozellikler": [
     "1.209 konut (Fırat Life Style, teslim 2016)",
+    "Beş blok: dördü 12 katlı, biri yatay düzende (proje tanıtımı)",
     "30–55 m² stüdyo (1+0) ve 1+1 daire tipleri",
     "Bünyesinde çarşı/alışveriş alanı",
     "7/24 güvenlik; havuz, sauna ve hamam",
+    "Fitness alanı, çocuk oyun alanları, açık-kapalı otopark",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Parkı ve göl hattına komşu"
   ],
   "alternatifAdlar": [
     "Relax Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-07"
 }

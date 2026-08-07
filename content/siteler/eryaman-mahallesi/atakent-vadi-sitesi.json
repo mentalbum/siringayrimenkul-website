@@ -2,12 +2,13 @@
   "isim": "Atakent Vadi Sitesi",
   "slug": "atakent-vadi-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
+  "adres": "Eryaman Mahallesi 2. Meşrutiyet Caddesi, Etimesgut/Ankara",
   "koordinat": {
     "lat": 39.975631,
     "lng": 32.632693
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/atakent-vadi-sitesi-boundary.geojson",
-  "aciklama": "Atakent Vadi Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 37.587 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok Kargir Apartman\". Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Atakent Vadi Sitesi, Eryaman Mahallesi'nde 2. Meşrutiyet Caddesi üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 37.587 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"9 Blok Kargir Apartman\" — dokuz bloğa karşılık 37 dönümü aşan parsel, bloklar arasında geniş açıklıklar bırakan ferah bir yerleşim demektir. Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. OYAK'ın kurumsal tarihçesine göre Eryaman Atakent toplu konut projesi OYAK-TOKİ işbirliğiyle geliştirilmiş; konutlar 2003'ten itibaren üyelere tahsis edilmiş, teslimler 2006'da yapılmıştır. Bu köken, bölgeyi planlı ve tek elden üretilmiş bir toplu konut dokusu yapar. Tapudaki dokuz blok sahada B, C ve D serisi kodlarla anılır; kapı numarası blok koduyla birlikte yazılır (B21-43, C24-55 gibi) ve D serisi bloklar A-B girişlidir. Ulaşımda sitenin en yakın toplu taşıma noktası Atakent-2 durağıdır (yaklaşık 500 m); metronun Eryaman 5 istasyonu yaklaşık 1,2 km mesafededir. Yakın çevrede liseler ve Eryaman Sosyal Tesisleri bulunur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46535",
@@ -18,9 +19,13 @@
   "ozellikler": [
     "~37.587 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "9 blok kârgir apartman (tapu kaydı)",
+    "OYAK-TOKİ işbirliğiyle geliştirilen Atakent bölgesi",
+    "B, C ve D serisi bloklar (B21-43, C24-55 gibi kodlar)",
+    "Atakent-2 durağı ~500 m; metroda Eryaman 5 ~1,2 km",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-07",
   "alternatifAdlar": [
     "Oyak Atakent 1 Vadi Sitesi"
   ]

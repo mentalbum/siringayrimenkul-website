@@ -7,7 +7,7 @@
     "lng": 32.614013
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/armoni-life-boundary.geojson",
-  "aciklama": "Armoni Life, Ata Mahallesi'nde ikiz yüksek bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 13.365 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '14 Katlı A Blok ve 16 Katlı B Bloklardan Oluşan Betonarme Apartman' olarak tanımlar. İki bloklu yalın düzen yönetimi sade tutarken, 14 ve 16 katlı blokların üst katları Ata ve Eryaman yönüne açık görüş sunar; mahallenin modern konut kuşağının bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Armoni Life, Ata Mahallesi'nde ikiz yüksek bloklu modern bir konut sitesidir. TKGM kayıtlarına göre 13.365 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '14 Katlı A Blok ve 16 Katlı B Bloklardan Oluşan Betonarme Apartman' olarak tanımlar. Site, yapımcı firma Tercih Yapı'nın tamamlanmış projeleri arasındadır; firmanın proje künyesi aynı 13.365 m²'lik arsada toplam 19.680 m² yapı alanını iki blokla karşılar ve her katı manzaraya yönelmiş dört daire olarak planlar. 13 dönümü aşan parsele yalnızca iki blok yerleştiği için yapılar arasında geniş bir açık alan payı kalır; iki bloklu yalın düzen site yönetimini de sade tutar. Proje künyesinde her blokta fitness salonu ve sauna, açık alanda basketbol ve voleybol sahaları, çocuk oyun alanları ile süs havuzları sayılır; jeneratör, su deposu ve hidrofor desteği, kapalı devre kamera sistemi ve sedye-yük tipini de içeren asansörler ortak altyapıyı tamamlar, her daireye otopark alanı ayrılmıştır. Daireler ankastre mutfak standardıyla teslim edilmiştir; bugünkü iç durum elbette daireden daireye değişir. Konum olarak site 3498. Cadde üzerindedir; 14 ve 16 katlı blokların üst katları Ata ve Eryaman yönüne açık görüş sunar ve mahallenin modern konut kuşağının bilinen adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46417",
@@ -18,10 +18,16 @@
     "~13.365 m² parsel (TKGM)",
     "14-16 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Ata Mahallesi"
+    "Ata Mahallesi",
+    "Tercih Yapı projesi",
+    "Toplam ~19.680 m² yapı alanı (proje künyesi)",
+    "Her katta manzaraya yönelmiş 4 daire",
+    "Her blokta fitness salonu ve sauna",
+    "Basketbol-voleybol sahası, çocuk oyun alanı ve süs havuzları",
+    "Jeneratör, hidrofor ve kapalı devre kamera altyapısı"
   ],
   "alternatifAdlar": [
     "Armoni Life Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-07"
 }

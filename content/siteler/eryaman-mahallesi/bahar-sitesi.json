@@ -2,7 +2,7 @@
   "isim": "Bahar Sitesi",
   "slug": "bahar-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
-  "aciklama": "Bahar Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM'de site, yaklaşık 3.520 m²'lik kat mülkiyetli parseli üzerinde betonarme apartman niteliğiyle kayıtlıdır — derli toplu, tek parsellik bir yerleşimdir. Eryaman Mahallesi'nin ilk etap kooperatif dokusunun sakin örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bahar Sitesi, Eryaman Mahallesi'nde, mahalle içi 2603. Sokak üzerinde yer alan tek bloklu bir konut sitesidir. TKGM'de site, yaklaşık 3.520 m²'lik kat mülkiyetli parseli üzerinde betonarme apartman niteliğiyle kayıtlıdır — tek bloğa karşılık yaklaşık 3,5 dönümlük parsel, yapının çevresinde bahçeye, otoparka ve oyun parkına yer bırakan derli toplu bir yerleşim demektir. Yerel emlak kayıtlarına göre yapı 2004 yapımı ve 7 katlıdır; 39 dairenin tamamı 3+1 planlıdır ve 130-135 m² aralığındadır, ısınma dairelerde doğalgaz (kombi) ile çözülmüştür. Aynı kayıtlar sitede asansör, hidrofor, jeneratör, su deposu ve kapıcı hizmetini listeler. Mahallenin kooperatif kökenli dokusu içinde görece genç kalan bu yapıda daire stoğunun tek plan tipinde toplanması, ev sahibi için işi netleştirir: emsaller birebir karşılaştırılabilir, aynı plandaki iki daire arasındaki değer farkını kat, cephe ve bakım durumu yaratır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 39.97132,
     "lng": 32.620683
@@ -17,7 +17,12 @@
   "ozellikler": [
     "Yaklaşık 3,5 dönümlük kat mülkiyetli parsel (TKGM)",
     "Derli toplu tek parsel yerleşim",
+    "Tek blok — 7 katlı, 2004 yapımı (yerel kayıt)",
+    "39 daire, tamamı 3+1 — 130-135 m² (yerel kayıt)",
+    "Doğalgaz (kombi) ısınma (yerel kayıt)",
+    "Asansör, hidrofor, jeneratör, su deposu (yerel kayıt)",
+    "Kapıcı ve oyun parkı (yerel kayıt)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-07"
 }
