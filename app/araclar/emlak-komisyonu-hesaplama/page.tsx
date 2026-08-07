@@ -92,17 +92,10 @@ export default function KomisyonPage() {
           katbekat üzerindedir. Sitenizi blok blok tanıyan bir emlakçı; gerçekçi fiyatı,
           nitelikli alıcıyı ve güvenli tapu sürecini birlikte getirir. Sürecin tamamı için{" "}
           <Link
-            href="/blog/emlakci-komisyonu-nasil-isler"
+            href="/blog/eryamanda-ev-satis-sureci"
             className="font-semibold text-gold-dark hover:underline"
           >
-            komisyon rehberimize
-          </Link>
-          , satışa hazırlıksa{" "}
-          <Link
-            href="/blog/evinizi-satisa-hazirlamak"
-            className="font-semibold text-gold-dark hover:underline"
-          >
-            satışa hazırlık rehberimize
+            Eryaman satış rehberimize
           </Link>{" "}
           bakın; tapu tarafı için{" "}
           <Link

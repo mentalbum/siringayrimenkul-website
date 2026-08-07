@@ -61,7 +61,7 @@ export default async function BlogPostPage({ params }: Props) {
   const ilgiliMahalle = post.ilgiliMahalle ? getMahalleBySlug(post.ilgiliMahalle) : undefined;
 
   const tumYazilar = getAllBlogPosts().filter((p) => p.slug !== post.slug);
-  // Önce aynı mahalle, sonra aynı konu (satış/kira/miras-tapu/mahalle),
+  // Önce aynı mahalle, sonra aynı konu (satış/kira/mahalle),
   // en son geri kalanlar — okur kendi derdinin devamını görsün.
   const buKonu = getBlogKonu(post.slug);
   const ilgiliYazilar = [
@@ -253,13 +253,6 @@ export default async function BlogPostPage({ params }: Props) {
               "Doğru kira bedeli, doğrulanmış kiracı ve sağlam sözleşme — süreci sizin adınıza biz yönetelim.",
             birincil: { href: "/eryamanda-ev-kiraya-vermek", etiket: "Kiraya Verme Sürecimiz" },
             ikincil: { href: "/araclar/kira-artisi-hesaplama", etiket: "Kira Artışı Hesaplayın" },
-          },
-          "miras-tapu": {
-            baslik: "Tapu ve Miras İşlerinde Yol Arkadaşınız Olalım",
-            aciklama:
-              "Kat mülkiyeti, hisse ve miras satışı teknik işlerdir — durumunuzu dinleyelim, gerçekçi bir yol haritası çıkaralım.",
-            birincil: { href: "/iletisim", etiket: "Bize Ulaşın" },
-            ikincil: { href: "/araclar/tapu-harci-hesaplama", etiket: "Tapu Harcı Hesaplayın" },
           },
           mahalle: {
             baslik: "Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım",

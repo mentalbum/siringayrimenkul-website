@@ -156,11 +156,8 @@ export default function EvSatmakPage() {
                 <Link href="/araclar/emlak-komisyonu-hesaplama" className="font-semibold text-gold hover:underline">
                   komisyon hesaplayıcı
                 </Link>{" "}
-                elinizin altında; vergilerin tamamı{" "}
-                <Link href="/blog/ev-satarken-odenecek-vergiler" className="font-semibold text-gold hover:underline">
-                  vergi rehberimizde
-                </Link>
-                .
+                elinizin altında; tapu harcı ve vergi kalemlerini de görüşmede tek tek
+                netleştiririz.
               </p>
               <CtaButton href="/ev-degerleme" variant="primary" className="mt-4">
                 Değerlemeyle Başlayın
@@ -176,28 +173,14 @@ export default function EvSatmakPage() {
           <p className="mt-4 text-base leading-relaxed text-body">
             Tayin, iş, yurt dışı ya da miras — Eryaman&apos;daki evinizi uzaktan da satabilirsiniz:
             değerleme görüşmesi telefonla veya görüntülü yapılır, gösterimleri biz yönetiriz,
-            tapu günü için{" "}
-            <Link
-              href="/blog/emlakciya-vekalet-verme-rehberi"
-              className="font-semibold text-gold-dark hover:underline"
-            >
-              kapsamı dar tutulmuş bir vekâlet
-            </Link>{" "}
-            yeterlidir. Ayrıntılar{" "}
+            tapu günü için kapsamı dar tutulmuş bir vekâlet yeterlidir. Ayrıntılar{" "}
             <Link
               href="/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama"
               className="font-semibold text-gold-dark hover:underline"
             >
               uzaktan satış rehberimizde
             </Link>
-            ; ev miras kaldıysa{" "}
-            <Link
-              href="/blog/miras-kalan-ev-nasil-satilir"
-              className="font-semibold text-gold-dark hover:underline"
-            >
-              miras rehberimiz
-            </Link>{" "}
-            adım adım yol gösterir.
+            ; ev miras kaldıysa intikalden satışa kadar olan adımları da birlikte planlarız.
           </p>
         </Reveal>
       </section>
@@ -211,11 +194,7 @@ export default function EvSatmakPage() {
             &quot;pazarlıklı ev&quot; izlenimi verir. Emsal satışlara dayanan gerçekçi bir fiyat,
             derli toplu bir sunum ve ciddi alıcının hızla ayrıştırılması — Eryaman&apos;da
             satışları hızlandıran üç şey budur. Eviniz bir süredir satılmıyorsa da başlangıç
-            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek —{" "}
-            <Link href="/blog/eviniz-satilmiyor-mu" className="font-semibold text-gold-dark hover:underline">
-              en sık 7 nedeni bu rehberde
-            </Link>{" "}
-            topladık.
+            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek.
           </p>
         </Reveal>
       </section>
@@ -228,16 +207,12 @@ export default function EvSatmakPage() {
             envanterini tapu kayıtlarına dayanarak tek tek tutuyoruz. Bu, dairenize fiyat
             konuşurken &quot;mahalle ortalaması&quot;yla değil, kendi sitenizin gerçek
             hareketliliğiyle konuşmamız demek. Satış rehberlerimizi de aynı dürüstlükle yazdık:{" "}
-            <Link href="/blog/emlakcisiz-ev-satilir-mi" className="font-semibold text-gold-dark hover:underline">
-              emlakçısız satış mümkün mü
-            </Link>
-            ,{" "}
-            <Link href="/blog/kiracili-ev-satilir-mi" className="font-semibold text-gold-dark hover:underline">
-              kiracılı ev nasıl satılır
-            </Link>
-            ,{" "}
-            <Link href="/blog/ev-satarken-gerekli-evraklar" className="font-semibold text-gold-dark hover:underline">
-              hangi evraklar gerekir
+            <Link href="/blog/eryamanda-ev-satis-sureci" className="font-semibold text-gold-dark hover:underline">
+              satış süreci adım adım
+            </Link>{" "}
+            ve{" "}
+            <Link href="/blog/eryamanda-ev-fiyatlarini-ne-belirler" className="font-semibold text-gold-dark hover:underline">
+              fiyatı ne belirler
             </Link>{" "}
             — hepsi açık. Bilgi bizde saklı değil; farkımız, bu bilgiyi sizin eviniz için
             uygulamak.
@@ -260,15 +235,8 @@ export default function EvSatmakPage() {
             </strong>{" "}
             ilanda bizim numaramız yer alır, gün boyu gelen &quot;fiyat düşer mi&quot; aramalarını
             ve portföy toplayan aracıları biz karşılarız; siz yalnızca ciddi alıcı çıktığında
-            aranırsınız. Yetkinin kapsamı ve süresi konusunda ne imzaladığınızı merak
-            ediyorsanız{" "}
-            <Link
-              href="/blog/emlakci-yetki-sozlesmesi-rehberi"
-              className="font-semibold text-gold-dark hover:underline"
-            >
-              yetki sözleşmesi rehberimiz
-            </Link>{" "}
-            her maddeyi açıkça anlatır.
+            aranırsınız. Yetkinin kapsamını ve süresini de ilk görüşmede madde madde anlatırız —
+            ne imzaladığınızı bilmeden hiçbir adım atılmaz.
           </p>
         </Reveal>
       </section>

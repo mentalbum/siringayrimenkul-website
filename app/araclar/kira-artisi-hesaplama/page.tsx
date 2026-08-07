@@ -107,14 +107,15 @@ export default function KiraArtisiPage() {
           <Link href="/sozluk#kira-tespit-davasi" className="font-semibold text-gold-dark hover:underline">
             kira tespit davası
           </Link>{" "}
-          ile piyasa düzeyine çıkma hakkınız vardır. Ayrıntılar için{" "}
+          ile piyasa düzeyine çıkma hakkınız vardır. Doğru kira bedelinin emsallerden nasıl
+          okunduğunu{" "}
           <Link
-            href="/blog/kira-artisi-nasil-hesaplanir"
+            href="/blog/eryamanda-kira-tespiti-dogru-kira-belirleme"
             className="font-semibold text-gold-dark hover:underline"
           >
-            kira artışı rehberimize
+            kira tespiti rehberimizde
           </Link>{" "}
-          göz atın.
+          anlattık.
         </p>
       </Reveal>
       </section>

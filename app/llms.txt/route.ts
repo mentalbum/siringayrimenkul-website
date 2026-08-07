@@ -2,19 +2,13 @@ import { getAllMahalleler, getBlogPostBySlug, getSitelerByMahalle } from "@/lib/
 
 // AI asistanlarının en sık alıntılayabileceği rehber seçkisi (slug, kısa cevap-açıklaması).
 // Silinen slug sessizce atlanır — build kırılmaz.
+// 2026-08-07: Türkiye geneli genel rehberler siteden kaldırıldı (Özgün kararı:
+// blog sadece Eryaman) — seçki kalan Eryaman yazılarından oluşur.
 const SSS_REHBERLERI: [string, string][] = [
-  ["kira-artisi-nasil-hesaplanir", "TÜFE oranı, yasal sınır ve adım adım örnek hesap"],
-  ["kiracili-ev-satilir-mi", "kiracısı oturan evin satış süreci ve tarafların hakları"],
-  ["kiraci-tahliye-sureci", "yasal tahliye yolları, süreler ve dikkat edilecekler"],
-  ["miras-kalan-ev-nasil-satilir", "veraset, intikal, hisse çözümü ve satış adımları"],
-  ["ev-satarken-odenecek-vergiler", "tapu harcı ve değer artışı kazancı vergisi rehberi"],
-  ["ev-satarken-gerekli-evraklar", "satış öncesi hazırlanacak belge listesi"],
   ["eryamanda-ev-satis-sureci", "bölgeye özgü adım adım satış rehberi"],
+  ["eryamanda-kira-tespiti-dogru-kira-belirleme", "doğru kira bedelinin emsallerden tespiti"],
   ["eryamanda-etap-sistemi-nedir", "etapların hangi mahallelere denk geldiği"],
   ["eryamanda-hangi-mahalle", "mahalle seçimi için karşılaştırmalı rehber"],
-  ["tapu-ada-parsel-nasil-okunur", "tapu bilgilerini okuma rehberi"],
-  ["kat-irtifakindan-kat-mulkiyetine-gecis", "iskân şartı, süreç ve masraf kalemleri"],
-  ["emlakciya-vekalet-verme-rehberi", "uzaktan satış ve kiralama için vekâlet süreci"],
   ["eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama", "şehir dışından sürecin yönetimi"],
   ["eryamanda-ev-fiyatlarini-ne-belirler", "etap, site, kat ve tapu durumunun fiyata etkisi"],
 ];
@@ -55,7 +49,7 @@ export function GET() {
     `- [Ev sahibi hesap araçları](${siteConfig.url}/araclar): kira artışı (TÜFE), tapu harcı, yasal komisyon, boş kalma maliyeti hesaplayıcıları`,
     `- [Yenimahalle siteleri](${siteConfig.url}/siteler/yenimahalle): Ata, Cumhuriyet ve Susuz mahallelerindeki sitelerin ayrı dizini`,
     `- [Emlak terimleri sözlüğü](${siteConfig.url}/sozluk): kat mülkiyeti, kat irtifakı, ada/parsel gibi terimlerin sade tanımları`,
-    `- [Blog](${siteConfig.url}/blog): 40+ rehber — kira, satış süreci, tapu, miras ve mahalle yazıları`,
+    `- [Blog](${siteConfig.url}/blog): Eryaman odaklı rehberler — satış süreci, kira tespiti ve mahalle yazıları`,
     "",
     "## Sık Sorulan Sorulara Cevap Veren Rehberler",
     ...SSS_REHBERLERI.map(([slug, aciklama]) => {

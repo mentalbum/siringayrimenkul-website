@@ -5,7 +5,7 @@ import type { BlogPost } from "@/lib/types";
 import { getBlogKonu, KONU_ETIKETLERI, type BlogKonu } from "@/lib/blog-konular";
 import { BlogCard } from "@/components/blog/blog-card";
 
-const KONU_SIRASI: BlogKonu[] = ["satis", "kira", "miras-tapu", "mahalle"];
+const KONU_SIRASI: BlogKonu[] = ["satis", "kira", "mahalle"];
 
 /** Blog dizini için konu çipleri + filtrelenmiş kart ızgarası. Tüm yazılar
  * sunucudan gelir; filtre tarayıcıda çalışır, sayfa statik kalır. */

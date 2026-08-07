@@ -229,22 +229,12 @@ export default function KirayaVermekPage() {
               komisyon hesaplayıcı
             </Link>{" "}
             yasal hizmet bedelini gösterir. Süreç bilgisi için{" "}
-            <Link href="/blog/dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler" className="font-semibold text-gold-dark hover:underline">
-              kiraya verme rehberimiz
-            </Link>{" "}
-            ve{" "}
             <Link href="/blog/eryamanda-kira-tespiti-dogru-kira-belirleme" className="font-semibold text-gold-dark hover:underline">
               kira tespiti rehberimiz
             </Link>{" "}
-            açık; anahtar tesliminden sonrası —{" "}
-            <Link href="/blog/evinizi-kiraya-verdikten-sonra" className="font-semibold text-gold-dark hover:underline">
-              beyan, vergi ve bildirimler
-            </Link>{" "}
-            — da düşünülmüş durumda. İleride yollar ayrılırsa{" "}
-            <Link href="/blog/kiraci-tahliye-sureci" className="font-semibold text-gold-dark hover:underline">
-              tahliye rehberimiz
-            </Link>{" "}
-            de dürüst bir çerçeve sunar.
+            açık; sözleşmeden anahtar teslimine, beyan ve bildirimlerden ileride yollar
+            ayrılırsa tahliye sürecine kadar geri kalan her adımı da görüşmede açıkça
+            konuşuruz.
           </p>
         </Reveal>
       </section>

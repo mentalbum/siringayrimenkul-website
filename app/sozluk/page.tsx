@@ -31,11 +31,7 @@ const terimler: Terim[] = [
       <>
         Kadastroda her arazi parçasının kimliği: <strong>ada</strong>, çevresi yollarla sınırlı
         arazi bloğunu; <strong>parsel</strong>, o blok içindeki tek mülkiyet birimini gösterir.
-        Sitelerimizin sayfalarında gördüğünüz &quot;18468/1&quot; gibi ifadeler budur. Ayrıntı için{" "}
-        <Link href="/blog/tapu-ada-parsel-nasil-okunur" className={linkClass}>
-          tapuda ada/parsel nasıl okunur
-        </Link>{" "}
-        rehberimize bakın.
+        Sitelerimizin sayfalarında gördüğünüz &quot;18468/1&quot; gibi ifadeler budur.
       </>
     ),
   },
@@ -202,15 +198,11 @@ const terimler: Terim[] = [
     tanim: (
       <>
         TÜİK&apos;in aylık açıkladığı tüketici fiyat endeksi. Konut kira artışının yasal tavanı,
-        TÜFE&apos;nin on iki aylık ortalamalara göre değişim oranıdır — ayrıntı{" "}
-        <Link href="/blog/kira-artisi-nasil-hesaplanir" className={linkClass}>
-          kira artışı rehberimizde
-        </Link>
-        , hesap{" "}
+        TÜFE&apos;nin on iki aylık ortalamalara göre değişim oranıdır — hesabı{" "}
         <Link href="/araclar" className={linkClass}>
           araçlar sayfamızda
-        </Link>
-        .
+        </Link>{" "}
+        yapabilirsiniz.
       </>
     ),
   },
@@ -397,11 +389,7 @@ const terimler: Terim[] = [
     tanim: (
       <>
         Kimlerin, hangi payla mirasçı olduğunu gösteren resmî belge. Çoğu durumda noterden aynı
-        gün alınır; miras kalan evin intikali ve satışı için ilk adımdır. Sürecin tamamı için{" "}
-        <Link href="/blog/miras-kalan-ev-nasil-satilir" className="font-semibold text-gold-dark hover:underline">
-          miras rehberimize
-        </Link>{" "}
-        bakın.
+        gün alınır; miras kalan evin intikali ve satışı için ilk adımdır.
       </>
     ),
   },
@@ -451,11 +439,7 @@ const terimler: Terim[] = [
     tanim: (
       <>
         Kiracının kirayı ödememesi durumu. Ev sahibi yazılı ihtarla en az 30 günlük ödeme süresi
-        verir; süre sonunda ödeme yapılmazsa sözleşmeyi feshedip tahliye isteyebilir. Yollar için{" "}
-        <Link href="/blog/kiraci-tahliye-sureci" className="font-semibold text-gold-dark hover:underline">
-          tahliye rehberimize
-        </Link>{" "}
-        bakın.
+        verir; süre sonunda ödeme yapılmazsa sözleşmeyi feshedip tahliye isteyebilir.
       </>
     ),
   },

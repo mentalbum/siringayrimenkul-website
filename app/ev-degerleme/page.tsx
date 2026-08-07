@@ -167,14 +167,7 @@ export default function EvDegerlemePage() {
         <p className="mt-3 text-sm leading-relaxed text-body">
           Satmak mı kiraya vermek mi konusunda henüz karar vermediyseniz sorun değil — iki işi de
           yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; görüşmede iki rakamı da
-          konuşabiliriz.{" "}
-          <Link
-            href="/blog/evimi-satmak-mi-kiraya-vermek-mi"
-            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
-          >
-            Kararı belirleyen başlıkları
-          </Link>{" "}
-          tarafsızca sıraladığımız yazı da elinizin altında.
+          konuşabilir, kararı belirleyen başlıkları birlikte tarafsızca sıralayabiliriz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-body">
           Karar aşamasındaysanız{" "}

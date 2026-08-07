@@ -247,22 +247,17 @@ export default async function SitePage({ params }: Props) {
   ][varyant % 4];
 
   // İç bağ ölçümü (2026-07-29): 720 site sayfasından rehberlere 0 link vardı.
-  // Havuzdan slug'a göre DETERMİNİSTİK seçim — her rehber ~150-250 sayfadan
-  // doğal dağılımla link alır, her build aynı sonucu üretir.
+  // Havuzdan slug'a göre DETERMİNİSTİK seçim — her build aynı sonucu üretir.
+  // 2026-08-07: genel konulu rehberler siteden kaldırıldı (blog sadece Eryaman);
+  // havuzlar kalan Eryaman yazılarıyla dolduruldu. Havuz asla boş bırakılmamalı
+  // (boş havuzda `% 0` NaN üretir).
   const SATIS_HAVUZU = [
     "eryamanda-ev-satis-sureci",
-    "emlakcisiz-ev-satilir-mi",
-    "ev-satarken-odenecek-vergiler",
-    "kiracili-ev-satilir-mi",
-    "evinizi-satisa-hazirlamak",
-    "evinizin-degerini-nasil-ogrenebilirsiniz",
+    "eryamanda-ev-fiyatlarini-ne-belirler",
+    "eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama",
   ];
   const KIRA_HAVUZU = [
-    "kiraci-tahliye-sureci",
-    "kira-artisi-nasil-hesaplanir",
-    "dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler",
-    "kira-sozlesmesinde-dikkat-edilmesi-gerekenler",
-    "evinizi-kiraya-verdikten-sonra",
+    "eryamanda-kira-tespiti-dogru-kira-belirleme",
   ];
   const rehberler = [
     getBlogPostBySlug(SATIS_HAVUZU[varyant % SATIS_HAVUZU.length]),
