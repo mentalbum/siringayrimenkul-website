@@ -41,3 +41,59 @@ acar, acat, agacli-gol, aknergiz, altay-guzelkent, arzutas, atadostlar, atakent-
 
 **İLK SAYFADA YOK (37)**
 ahikent, ak-kent, akasya-cumhuriyet, arikovani, atakoy, ayyildiz, basak-life, baskent-sitesi, bayer, borankent, bordo-loca, cag-life, cagkent, dogapark, eczacilar, eryaman-evleri, goksu-evleri, goksu-sitesi, goldekent, gozde-evler, gungorler, hava-destek, hekimler, kucuk-ankara, kucukevlerimiz, meydan-eryaman, mia-concept, mizan, mood-goksu, natural, referans-ankara, safir-rezidans, sarmasiklikosk, sitekonut, soyak, starlife, toki
+
+---
+
+## 2026-08-07 — GSC dizin isteği kuyruğu (kota dolu, yenilenince işlenecek)
+
+Kota denemesi 07.08 sabah: "Kota Aşıldı — yarın deneyin" (dünkü 11 istek 24 saatlik
+pencereyi doldurmuş). Yenilenince sırayla:
+
+1. /mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi — Özgün'ün tespiti: SERP'te
+   ESKİ URL (guzelkent › konut...) eski "Satılık ve Kiralık Daireler" başlığıyla 1.
+   sırada; YENİ URL Google'ca hiç taranmamış ("URL Google'da yok", son tarama: Yok).
+   Eski→yeni 308 çalışıyor (curl doğrulandı). Canlı başlık doğru:
+   "Konuta Özlem Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman".
+2. /mahalleler/sehit-osman-avci-mahallesi/soyak-sitesi (ŞOA — dünkü kuyruktan kalan)
+3. Bugünkü pws=0 taramasından çıkacak "1. sırada ama eski URL/başlık" vakaları
+   (öncelik: en çok aranan siteler).
+
+Not: pws=0 tam tarama (734 sorgu) uygulama içi tarayıcıda koşuyor —
+scratchpad/pws0/sonuclar.jsonl + karne.mjs. Özgün'ün Chrome'u google.com/search'ten
+403'lü (fetch fırtınası dersi — memory'de), GSC paneli etkilenmiyor.
+
+---
+
+## 2026-08-07 — GSC 28 günlük gerçek pozisyon karnesi (Google'ın kendi ölçümü)
+
+Canlı SERP taraması Google hız sınırına takılınca (403/CAPTCHA, iki kanal da)
+pozisyon verisi GSC Performans tablosundan çekildi: 1.000 sorgu satırı
+(28 gün, gösterim+tıklama+ortalama konum), 720 site kaydıyla eşleştirildi.
+Veri: scratchpad/pws0/gsc-karne.json (+ gsc-eslestir.mjs).
+
+### Ana bulgular
+- **399/720 sitenin GSC izi var**; 305 site 28 günde 0 gösterim (talep yok ya da
+  hiç görünmüyoruz). Zenginleştirme önceliği artık alfabetik değil GÖSTERİME göre.
+- **Ağırlıklı ortalama konumda ≤3,5 hiç yok**; 363 site ilk sayfa (4-10 bandı),
+  36 site arka sayfalar. "En iyi konum" değerleri çok daha iyi (4-6 bandı) —
+  fark, yüksek hacimli yalın ad + satılık/kiralık sorgularından geliyor.
+- **Stratejik içgörü:** "X emlakçı" sorgu sınıfında sık sık 1.'yiz (pws=0 canlı
+  ölçüm: 42'de 11) ama o sınıfın hacmi küçük. Gerçek hacim "X", "X satılık",
+  "X kiralık" biçimlerinde ve orada 5-10. sıradayız (portal duvarı).
+- "eryaman emlakçı" 28g ort. 4,3 → son 7g 1,3'e iyileşmiş (dünkü düzeltmeler).
+
+### Yeni zenginleştirme öncelik sırası (gösterim≥100 + ort.poz≥8)
+relax-goksu (348/9,3), hittown (345/8,6), buse-konutlari (236/8,4),
+atasehir-eryaman (223/10), vera-point (218/8), bahar-sitesi (210/9,1),
+natura-goksu (195/8,8), park-goksu (193/9,1), atakent-vadi (191/9,5),
+koz-modern (189/8,7), bayrak-sitesi (180/8,4), armoni-life (179/9,8),
+panorama-garden (178/8,1), efsane-evleri (173/8,8), manzara-evleri (168/9),
+astim-metrolife (164/9,2), mutlu-sitesi (160/10,1), zirve-park (160/8,7),
+aker-mucevher (141/8), karma-modern (141/8,1), elit-yasam-evleri (137/9,4),
+meva-sehir (136/8,7), kasmir-gol-evleri (116/12,3!), mavi-bayrak (110/8,6),
+akasya-sitesi (106/8,2), vizyon-baspinar (105/8,4). (Tam liste JSON'da.)
+
+### Yöntem notu
+GSC ortalama konumu gerçek kullanıcı gösterimlerinin ortalaması (yerel/mobil
+ağırlıklı) — pws=0 laboratuvar ölçümünden farklı bir mercek; ikisi birlikte
+okunmalı. Canlı tarama soğuma bitince (≈11:40) kalan sorgular için sürecek.
