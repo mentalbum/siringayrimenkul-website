@@ -55,18 +55,14 @@ export const metadata: Metadata = {
   // the root layout would be inherited by every page, so shared links (e.g.
   // a site page on WhatsApp) would all preview with the same generic text.
   // Left unset, Next fills them from each page's own resolved title/description.
+  // images bilerek yok: dosya-tabanlı app/opengraph-image.tsx her koşulda bu
+  // konfigi eziyordu (canlıda doğrulandı, 2026-08-08) — buradaki ofis fotoğrafı
+  // hiç servis edilmeyen ölü ayardı. Kart görselini değiştirmek isteyen
+  // app/opengraph-image.tsx'i düzenlemeli.
   openGraph: {
     type: "website",
     locale: "tr_TR",
     siteName: siteConfig.name,
-    images: [
-      {
-        url: "/images/ofis-ic-mekan.jpg",
-        width: 1284,
-        height: 936,
-        alt: "Şirin Gayrimenkul ofisi — Eryaman Etimesgut",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",

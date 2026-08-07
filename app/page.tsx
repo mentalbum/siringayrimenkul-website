@@ -62,6 +62,45 @@ const ozellikler = [
   },
 ];
 
+/* Süreç şeridi (2026-08-08): "eryaman emlakçı" SERP teşhisinde öndeki dört
+   yerel rakibin hiçbirinde yapılandırılmış süreç anlatımı yoktu; sorgu
+   niyetinin "emlakçı ne yapar" kısmını ana sayfada karşılayan blok bu.
+   "alıcı" kelimesi bilinçli kullanılmıyor (dil kuralı: hedef kitle ev sahibi);
+   dört adım dört hizmet sayfasına bağlamsal link taşıyor. */
+const surecAdimlari = [
+  {
+    baslik: "Değerleme Görüşmesi",
+    /* "yerinde görüyoruz" koşulsuz yazılmaz: /ev-degerleme ve uzaktan satış
+       rehberi yerinde incelemeyi isteğe bağlı anlatıyor (diff incelemesi
+       bulgusu, 2026-08-08) — vaat varış sayfasıyla çelişmemeli. */
+    aciklama:
+      "Satışın da kiraya vermenin de ilk adımı: sitenizdeki gerçekleşen satış ve kiralamalardan emsal çıkarıyoruz; dilerseniz evinizi yerinde de görüyoruz.",
+    href: "/ev-degerleme",
+    linkYazisi: "Değerleme talebi bırakın",
+  },
+  {
+    baslik: "Fiyat Kararı",
+    aciklama:
+      "Fiyatı birlikte belirliyoruz. Tapu harcı, komisyon ve kira artışı gibi rakamları hesap araçlarımızla baştan netleştiriyoruz.",
+    href: "/araclar",
+    linkYazisi: "Hesap araçlarına bakın",
+  },
+  {
+    baslik: "Tanıtım ve Görüşmeler",
+    aciklama:
+      "İlanınız sahibinden.com mağazamızda yayınlanır; gelen talepleri biz eleriz, görüşmeleri biz yürütürüz. Siz yalnızca kararları verirsiniz.",
+    href: "/eryamanda-ev-satmak",
+    linkYazisi: "Satış sürecinin tamamı",
+  },
+  {
+    baslik: "Sözleşme, Tapu ve Teslim",
+    aciklama:
+      "Tapu randevusundan anahtar teslimine kadar evrak işlerini takip ediyoruz; kiraya vermede sözleşme ve teslim de aynı titizlikle ilerler.",
+    href: "/eryamanda-ev-kiraya-vermek",
+    linkYazisi: "Kiraya verme rehberi",
+  },
+];
+
 export default function HomePage() {
   const mahalleler = getAllMahalleler();
   const oneCikanMahalleler = [
@@ -202,8 +241,18 @@ export default function HomePage() {
             Ofisimiz
           </p>
           <h2 className="mt-2 text-2xl sm:text-3xl">Eryaman&apos;da Yerel Emlak Ofisiniz</h2>
+          {/* Kurucu + danışman adları görünür metinde bilinçli (2026-08-08):
+              içi uydurma rakip vitrinlere karşı taklit edilemeyen tek sinyal
+              gerçek kimlik; adlar o güne dek yalnız JSON-LD'deydi. "Eryaman
+              emlak ofisi" ve "gayrimenkul danışmanı" yalın dizileri de ilk kez
+              burada — ikisi de sorgu ailesinde var, sayfada geçmiyordu. */}
           <p className="mt-4 text-base leading-relaxed text-body">
-            Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da. Eryaman&apos;da{" "}
+            Ofisimiz Tunahan Mahallesi&apos;nde, 4. Etap Çarşı&apos;da; kurucumuz Hamza Şirin
+            ve gayrimenkul danışmanımız Özgün Şirin ile çalışıyoruz —{" "}
+            <Link href="/hakkimizda" className="font-semibold text-gold-dark hover:underline">
+              ekibimizi tanıyın
+            </Link>
+            . Eryaman emlak ofisi olarak{" "}
             <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
               ev satış
             </Link>{" "}
@@ -298,6 +347,44 @@ export default function HomePage() {
 
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
         <Reveal>
+          <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+            Süreç
+          </p>
+          {/* H2'de "Eryaman emlakçınızla": baş sorgu dizisinin doğal çekimli
+              hâli — H2 katmanında sorgu ekosu rakiplere göre zayıftı (2026-08-08
+              teşhisi), yalnız bu başlıkta artırıldı, stuffing yok. */}
+          <h2 className="mt-2 text-2xl sm:text-3xl">
+            Eryaman Emlakçınızla Süreç Nasıl İşler?
+          </h2>
+        </Reveal>
+        <div className="mt-7 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {surecAdimlari.map((adim, i) => (
+            <Reveal key={adim.baslik} delay={i * 70} className="h-full">
+              <div className="flex h-full flex-col rounded-2xl border border-border bg-surface p-5">
+                <span
+                  aria-hidden="true"
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-gold/15 text-sm font-bold tabular-nums text-gold-dark"
+                >
+                  {i + 1}
+                </span>
+                <h3 className="mt-4 text-base">{adim.baslik}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-body">{adim.aciklama}</p>
+                <p className="mt-auto pt-4">
+                  <Link
+                    href={adim.href}
+                    className="text-sm font-semibold text-gold-dark hover:underline"
+                  >
+                    {adim.linkYazisi} →
+                  </Link>
+                </p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
+        <Reveal>
           <div className="flex flex-wrap items-end justify-between gap-4">
             <div>
               <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
@@ -356,6 +443,15 @@ export default function HomePage() {
               soru: "Eryaman'da hangi emlak hizmetlerini veriyorsunuz?",
               cevap:
                 "Satılık ve kiralık konut danışmanlığı, satış öncesi ev değerleme ve talep eden müşterilerimiz için 3D sanal tur çekimi sunuyoruz. Güncel ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır; süreç boyunca doğrudan bizimle çalışırsınız.",
+            },
+            {
+              /* Soru kalıbında yalın "emlakçı" bilinçli (2026-08-08): ana sayfa
+                 SSS'sinin hiçbir sorusunda kelime geçmiyordu; cevap aynı zamanda
+                 adressiz/belgesiz vitrin sitelere karşı örtük konumlanma —
+                 yorum SAYISI yazılmaz (kural), 5,0 puan serbest. */
+              soru: "Eryaman'da güvenilir emlakçı nasıl bulunur?",
+              cevap:
+                "Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir ofis adresi ve işletme profili. Türkiye'de emlak aracılığı yetki belgesine bağlıdır; bizim belge numaramız 0603771. Ofisimiz Tunahan Mahallesi'nde 4. Etap Çarşı'da — arayıp randevu alabileceğiniz, kapısından girebileceğiniz bir yer. Google'daki işletme profilimiz 5,0 puanlıdır. Adres ve belge bilgisi paylaşmayan emlak sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.",
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",

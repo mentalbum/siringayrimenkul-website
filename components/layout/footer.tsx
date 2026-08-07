@@ -19,22 +19,40 @@ export function Footer() {
     <footer className="bg-navy text-white">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-12 sm:px-6 md:grid-cols-3">
         <div>
-          <Image
-            src="/brand/sirin-logo-on-dark.png"
-            alt={siteConfig.name}
-            width={480}
-            height={233}
-            className="h-12 w-auto"
-          />
+          <Link href="/" aria-label="Şirin Gayrimenkul anasayfa">
+            <Image
+              src="/brand/sirin-logo-on-dark.png"
+              alt={siteConfig.name}
+              width={480}
+              height={233}
+              className="h-12 w-auto"
+            />
+          </Link>
+          {/* siteConfig.description'ın elle kurulmuş hâli: iç link denetimi
+              (2026-08-08) ana sayfaya giden tek çapanın "Anasayfa" olduğunu
+              gösterdi — buradaki cümle site genelinde "/"ye tematik çapa taşıyan
+              tek yer. Metin description ile eş anlamlı tutulmalı. */}
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
-            {siteConfig.description}
+            <Link href="/" className="font-medium text-white/90 hover:text-gold">
+              Eryaman emlakçısı Şirin Gayrimenkul
+            </Link>{" "}
+            — 700&apos;den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek
+            yerel rehber. Evinizi satarken ya da kiraya verirken fiyatı birlikte
+            belirleyelim.
           </p>
         </div>
 
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">
+          {/* p + role="heading", h2 değil: footer başlıkları her sayfaya 4 jenerik
+              H2 ekleyip sayfanın kendi başlık hiyerarşisini sulandırıyordu;
+              ARIA rolü ekran okuyucunun başlık gezinmesini koruyor (2026-08-08). */}
+          <p
+            role="heading"
+            aria-level={2}
+            className="text-sm font-semibold uppercase tracking-wide text-gold"
+          >
             Hızlı Bağlantılar
-          </h2>
+          </p>
           <ul className="mt-4 space-y-2.5">
             {hizmetNav.map((item) => (
               <li key={item.href}>
@@ -57,7 +75,13 @@ export function Footer() {
         </div>
 
         <div>
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">İletişim</h2>
+          <p
+            role="heading"
+            aria-level={2}
+            className="text-sm font-semibold uppercase tracking-wide text-gold"
+          >
+            İletişim
+          </p>
           <ul className="mt-4 space-y-3 text-sm text-white/80">
             <li className="flex items-start gap-2">
               <MapPinIcon className="mt-0.5 h-4 w-4 shrink-0 text-gold" />
@@ -141,9 +165,13 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-          <h2 className="text-sm font-semibold uppercase tracking-wide text-gold">
+          <p
+            role="heading"
+            aria-level={2}
+            className="text-sm font-semibold uppercase tracking-wide text-gold"
+          >
             Eryaman Mahalleleri
-          </h2>
+          </p>
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
             {mahalleler
               .filter((mahalle) => mahalle.ilce === "Etimesgut")
@@ -158,9 +186,13 @@ export function Footer() {
                 </li>
               ))}
           </ul>
-          <h2 className="mt-6 text-sm font-semibold uppercase tracking-wide text-gold">
+          <p
+            role="heading"
+            aria-level={2}
+            className="mt-6 text-sm font-semibold uppercase tracking-wide text-gold"
+          >
             Yenimahalle Mahalleleri
-          </h2>
+          </p>
           <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
             {mahalleler
               .filter((mahalle) => mahalle.ilce === "Yenimahalle")

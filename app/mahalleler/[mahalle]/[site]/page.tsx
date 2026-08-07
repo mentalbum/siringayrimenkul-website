@@ -559,7 +559,27 @@ export default async function SitePage({ params }: Props) {
           </Link>
           {/* "emlakçılar" çoğulu bilinçli ve birebir ("<site> emlakçılar" sorgu
               ailesi; kelime sitede hiç geçmiyordu — 2026-08-07). */}
-          {` elinizin altında. Bölgedeki emlakçılar içinde bu sayfayı ayıran şey ilan değil arşiv olması: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda. Karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+          {` elinizin altında. `}
+          {/* Eryaman kolunda "/"ye bağlamsal çapa (2026-08-08 iç link denetimi:
+              ana sayfaya giden tek çapa "Anasayfa" idi). Çapa slug'a göre üç
+              varyantta döner ve üçte biri bilinçli LİNKSİZ kalır: 520 Eryaman
+              sayfasına birebir aynı çapayı basmak ölçekli-içerik ayak izi olurdu
+              (diff incelemesi bulgusu — semaDisi kararıyla aynı gerekçe,
+              lib/faq.ts). "emlak ofisleri" varyantı "eryaman emlak ofisleri"
+              sorgu ailesini de kapsar. Yenimahalle kolunda konum iddiası
+              doğmasın diye her zaman düz metin (lib/bolge.ts kuralı). */}
+          {eryamanda && varyant % 3 === 0 ? (
+            <Link href="/" className="font-semibold text-gold-dark hover:underline">
+              Eryaman&apos;daki emlakçılar
+            </Link>
+          ) : eryamanda && varyant % 3 === 2 ? (
+            <Link href="/" className="font-semibold text-gold-dark hover:underline">
+              Eryaman&apos;daki emlak ofisleri
+            </Link>
+          ) : (
+            "Bölgedeki emlakçılar"
+          )}
+          {` içinde bu sayfayı ayıran şey ilan değil arşiv olması: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda. Karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
         <CtaButton
           href={siteConfig.sahibindenUrl}

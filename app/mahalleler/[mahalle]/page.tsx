@@ -462,15 +462,27 @@ export default async function MahallePage({ params }: Props) {
             ("göksu mahallesi emlakçı") — "Arayanlara" ile Türkçesi doğal. */}
         <h2 className="text-xl">{mahalle.isim} Emlakçı Arayanlara: Şirin Gayrimenkul</h2>
         <p className="mt-3 text-base leading-relaxed text-body">
+          {/* "/"ye bağlamsal çapa (2026-08-08): iç link denetimi ana sayfaya
+              giden tek çapanın "Anasayfa" olduğunu gösterdi; mahalle sayfaları
+              en yüksek tematik akrabalıklı orta katman. Yenimahalle kolunda
+              çapa "komşudaki Eryaman'da" — "Eryaman X" yasağına takılmaz. */}
           {eryamandaMi(mahalle) ? (
             <>
-              Ofisimiz Eryaman&apos;da; {bulunmaHali(mahalle.isim)} — Etimesgut, Ankara —
-              satılık ve kiralık daire süreçlerini yerinde yürütüyoruz.
+              Ofisimiz Eryaman&apos;da;{" "}
+              <Link href="/" className="font-semibold text-gold-dark hover:underline">
+                Eryaman emlakçısı olarak
+              </Link>{" "}
+              {bulunmaHali(mahalle.isim)} — Etimesgut, Ankara — satılık ve kiralık daire
+              süreçlerini yerinde yürütüyoruz.
             </>
           ) : (
             <>
-              Ofisimiz hemen komşudaki Eryaman&apos;da; {bulunmaHali(mahalle.isim)} —
-              Yenimahalle, Ankara — satılık ve kiralık daire süreçlerini yerinde yürütüyoruz.
+              Ofisimiz hemen{" "}
+              <Link href="/" className="font-semibold text-gold-dark hover:underline">
+                komşudaki Eryaman&apos;da
+              </Link>
+              ; {bulunmaHali(mahalle.isim)} — Yenimahalle, Ankara — satılık ve kiralık
+              daire süreçlerini yerinde yürütüyoruz.
             </>
           )}{" "}
           {/* "emlakçılar" ÇOĞUL biçimi bilinçli ve birebir: "<mahalle> emlakçılar /
