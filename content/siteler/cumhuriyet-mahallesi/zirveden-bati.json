@@ -7,7 +7,7 @@
     "lng": 32.663056
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/zirveden-bati-boundary.geojson",
-  "aciklama": "Zirveden Batı, Yeni Batı'da (Cumhuriyet Mahallesi) Zirve Beton tarafından geliştirilen ve Eylül 2022'de teslim edilen bir konut projesidir. Yüklenici kaynağına göre 6 blokta 168 konut ve 6 dükkândan oluşuyor; daireler tamamı geniş 5+1 tipinde (net ~175 m²) — ferah aile evi arayanlara odaklı ender projelerden. Göksu Parkı'na, Göksu AVM'ye ve metro duraklarına yakın konumdadır. Tamamı geniş daire tiplerinden oluşan yapısı, Yeni Batı'da aile boyu oturum arayanların kısa listesine girmesini sağlar; zemindeki dükkânlar günlük yaşamı pratikleştirir. Tapu kaydı ölçeği gösterir: yaklaşık 19.960 m² — 20 dönüme yakın — parselde on beşer katlı A ve B blokları, on altı katlı C blok ve iki katlı D blok. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Zirveden Batı, Yeni Batı'da (Cumhuriyet Mahallesi) Zirve Beton tarafından geliştirilen ve Eylül 2022'de teslim edilen bir konut projesidir. Yüklenici kaynağına göre 6 blokta 168 konut ve 6 dükkândan oluşuyor; daireler tamamı geniş 5+1 tipinde (net ~175 m²). Sitenin en belirleyici özelliği tek daire tipi üzerine kurulmuş olmasıdır: burada bir daireniz varsa talep, geniş metrekareyi özellikle arayan dar ama kararlı bir kesimden gelir — bu da fiyatı benzer metrekaredeki genel emsalden çok blok, kat, cephe ve iç durum ayrıntısına bağlar. Proje tanıtımına göre daire planları giyinme odası, iki banyo, kış bahçesi ve ayrı çalışma alanı içerir; bu ayrıntıların ilan metninde tek tek yazılması, geniş metrekarenin neden geniş olduğunu anlatır ve daireyi salt bir rakam olmaktan çıkarır. Ortak alanlarda basketbol sahası, halı saha, çocuk oyun alanları, yürüyüş ve koşu parkuru ile açık ve kapalı otopark yer alır; site güvenliklidir. Göksu Parkı'na, Göksu AVM'ye ve metro duraklarına yakın konumu, dairenizi kiraya verirken en çok sorulan ulaşım sorusunun cevabını hazır tutar; zemindeki dükkânlar günlük ihtiyaçları site içinde çözer. Tapu kaydı ölçeği gösterir: yaklaşık 19.960 m² — 20 dönüme yakın — parselde on beşer katlı A ve B blokları, on altı katlı C blok ve iki katlı D blok. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "63261",
@@ -19,6 +19,9 @@
     "Yaklaşık 20 dönümlük parsel (TKGM)",
     "6 blok — 168 konut + 6 dükkân (yüklenici verisi)",
     "Tamamı 5+1 (net ~175 m²)",
+    "Planlarda giyinme odası, iki banyo, kış bahçesi",
+    "Basketbol, halı saha, yürüyüş ve koşu parkuru",
+    "Açık ve kapalı otopark, güvenlikli site",
     "Eylül 2022 teslim — Zirve Beton",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Parkı, AVM ve metroya yakın"
@@ -27,5 +30,5 @@
   "alternatifAdlar": [
     "Zirveden Batı Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-07"
 }

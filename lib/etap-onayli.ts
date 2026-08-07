@@ -17,6 +17,12 @@ type OnayliEtap = {
   /** Listenin alındığı resmî kaynak — denetlenebilir olsun diye kayıtta. */
   kaynak: string;
   adalar: ReadonlySet<string>;
+  /**
+   * Resmî listenin TAM ada sayısı. `adalar` bilinçli bir alt kümeyse (ihtilaflı
+   * adalar yayım dışı bırakıldıysa) sayfa metni yine doğru toplamı söylesin diye
+   * ayrıca tutulur. Boşsa `adalar.size` geçerlidir.
+   */
+  resmiToplam?: number;
 };
 
 const ETAP_4_ADALARI = [
@@ -37,7 +43,83 @@ const ETAP_5_ADALARI = [
   "46499", "46500", "46501", "46503", "46506", "46507",
 ];
 
+/*
+ * 1. Etap — tapuya tescilli "Eryaman Toplu Yapı Yönetim Planı", Bölüm XV
+ * "Eryaman Toplu Konut Alanı Ada Listesi". Belge "Toplam 70 adadır" der ama
+ * basılı listede sıra 34/35/44 atlanmış ve 17538 iki kez basılmış: fiilen 67
+ * satır, parsel ekleri (17315/1-2 vb.) tekilleştirilince 63 farklı ada. Eksik
+ * 3-4 kayıt UYDURULMADI (aday boşluk 17525-33; gerekirse TKGM ile kapatılır).
+ *
+ * YAYIM DIŞI TUTULAN 15 ada: 17480-17482 ve 17487-17498 (Eston, İçtaş/Kazım
+ * Sarı, Kutlutaş devam blokları/Cumhuriyet şeridi, bugünkü ŞOA sınırında).
+ * KARAR KALICI (2026-08-07, üç-kollu araştırma — sorunlu-siteler.md):
+ * tapu/yönetim bağı bu planda (eryaman1.com'un kendi ada ve blok yönetimi
+ * listeleri bloğu içeriyor) AMA ilan dili, yapımcı İçtaş'ın kurumsal sayfası
+ * ve coğrafi doku ("2. Etap aksının güney devamı") tamamı "2. Etap" diyor;
+ * "1. Etap" kullanan tek kaynak yok. Etiket iki listeye de giremez: buraya
+ * girse müşteriyi yanıltır, II. Etap listesine girse resmî planla çelişir.
+ * Çözüm: 2. Etap SAYFASINDA "birlikte anılan komşu şerit" bölümü (iddiasız
+ * tespit). `resmiToplam: 63` sayfa metninin gerçek resmî toplamı söylemesini
+ * sağlıyor.
+ */
+const ETAP_1_ADALARI = [
+  "16859", "16868",
+  "17312", "17313", "17314", "17315", "17316",
+  "17317", "17318", "17319",
+  "17499", "17500", "17501", "17502", "17503",
+  "17504", "17505", "17506", "17507", "17508",
+  "17509", "17510", "17511",
+  "17516", "17517", "17518", "17519", "17520",
+  "17521", "17522", "17523", "17524",
+  "17534", "17535", "17536", "17537", "17538",
+  "17539", "17540", "17541", "17542", "17543",
+  "17546", "17547",
+  "17555", "17556", "17557", "17558",
+];
+
+// Yönetim planı kapsamı "(14+3=) on yedi ada": 14 konut adası (17460-17472 ve
+// 17477; 60 blok, 2109 konut) + 3 konut dışı ada — 17476 yönetim binası,
+// 17478 iş merkezi, 17479 okul. 17473-17475 etapta YOK.
+const ETAP_2_ADALARI = [
+  "17460", "17461", "17462", "17463", "17464",
+  "17465", "17466", "17467", "17468", "17469",
+  "17470", "17471", "17472", "17476", "17477",
+  "17478", "17479",
+];
+
+// 17321-17354 aralığında 17355-57 yok; yönetimin kendi haritası da atlıyor.
+const ETAP_3_ADALARI = [
+  "17321", "17322", "17323", "17324", "17325",
+  "17326", "17327", "17328", "17329", "17330",
+  "17331", "17332", "17333", "17334", "17335",
+  "17336", "17337", "17338", "17339", "17340",
+  "17341", "17342", "17343", "17344", "17345",
+  "17346", "17347", "17348", "17349", "17350",
+  "17351", "17352", "17353", "17354", "17358",
+  "17359", "17360", "17361", "17362", "17363",
+  "17364", "17365", "17366", "17367", "17368",
+];
+
 const ONAYLI: readonly OnayliEtap[] = [
+  {
+    no: "1",
+    kaynak:
+      "Eryaman Toplu Yapı Yönetim Planı (tapuya tescilli) — eryaman1.com/mevzuat → wp-content/uploads/2020/01/eryaman-toplu-yapi-yonetim-plani.pdf, Bölüm XV ada listesi (2026-08-07 alındı; 15 ihtilaflı ada yayım dışı, üstteki nota bakın)",
+    adalar: new Set(ETAP_1_ADALARI),
+    resmiToplam: 63,
+  },
+  {
+    no: "2",
+    kaynak:
+      "Kara Eryaman II. Etap Toplu Yapı Yönetim Planı — eryaman2.com (canlı site düşmüş; Wayback arşivi: web.archive.org/web/20090904165148/http://www.eryaman2.com/Hakkımızda/YönetimPlanı.aspx; eryaman.biz 2. Etap sayfası aynı 17 adayı verir)",
+    adalar: new Set(ETAP_2_ADALARI),
+  },
+  {
+    no: "3",
+    kaynak:
+      "Eryaman 3 Toplu Yapı Yönetimi — eryaman3.com/Ada-Bilgileri (ada haritası, 45 ada; 2026-08-07 alındı)",
+    adalar: new Set(ETAP_3_ADALARI),
+  },
   {
     no: "4",
     kaynak: "Eryaman 4. Etap Toplu Yapı Yönetimi — eryaman4.com (Adalar sayfası)",
@@ -60,6 +142,15 @@ export function onayliEtap(adalar: AdaBilgi[] | undefined): string | null {
     if (adalar.some((ada) => etap.adalar.has(ada.no))) return etap.no;
   }
   return null;
+}
+
+/**
+ * Resmî listedeki toplam ada sayısı. Kayıtlarımız her adayı kapsamayabilir;
+ * etap sayfası "N adanın M tanesi arşivimizde" diyebilsin diye ayrıca verilir.
+ */
+export function onayliEtapToplamAda(no: string): number | null {
+  const etap = ONAYLI.find((item) => item.no === no);
+  return etap ? (etap.resmiToplam ?? etap.adalar.size) : null;
 }
 
 /** Tek bir ada numarası için doğrulanmış etap. */

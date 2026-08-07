@@ -7,7 +7,7 @@
     "lng": 32.628107
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/ilke-sitesi-boundary.geojson",
-  "aciklama": "İlke Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin yedi bloklu büyük sitelerindendir. TKGM kayıtlarına göre site, tapuda '7 Blok Kargir Apartman' niteliğiyle kayıtlı 27.963 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğa karşılık 28 dönümlük parsel, Atakent kuşağının ferah yerleşim anlayışını taşır; bölge kısaca 'Atakent' diye geçer. OYAK'ın kurumsal kayıtlarına göre Eryaman Atakent konutları OYAK ile TOKİ işbirliğinde geliştirilmiş ve 2000'li yılların ilk yarısında üyelere tahsis edilmiştir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "İlke Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin yedi bloklu büyük sitelerindendir; yerel kayıtlarda 'Oyak Atakent 2 İlke Sitesi' olarak da geçer ve Atakent'in ikinci kısım olarak anılan kesiminde Başak ve Cumhuriyet siteleriyle aynı kuşağı paylaşır. TKGM kayıtlarına göre site, tapuda '7 Blok Kargir Apartman' niteliğiyle kayıtlı 27.963 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — yedi bloğa karşılık 28 dönümlük parsel, Atakent kuşağının ferah yerleşim anlayışını taşır; bölge kısaca 'Atakent' diye geçer. Bloklar, kuşağa özgü harf-sayı tip kodlarıyla (F1-2K, H5-2D gibi) anılır. OYAK'ın kurumsal tarihçesine göre Eryaman Atakent konutları OYAK ile TOKİ işbirliğinde geliştirilmiş; konutlar 2003 ve 2004'te üyelere tahsise sunulmuş, teslimler 2006'yı bulmuştur. Aynı dönemde sitenin bulunduğu kesimde TOKİ eliyle yapılan Cahit Zarifoğlu İlkokulu 2006'da eğitime açılmıştır; Cenk Yakın Ortaokulu da Atakent içindedir. Raylı ulaşımda metronun Eryaman-5 istasyonu kullanılır. Yaklaşık yirmi yıllık yerleşik dokusu, oturmuş çevre düzeni ve okul-ulaşım donatısıyla İlke Sitesi, Atakent kuşağının aranan adreslerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46529",
@@ -17,11 +17,13 @@
   ],
   "ozellikler": [
     "~27.963 m² parsel (TKGM)",
-    "Atakent bölgesi: OYAK-TOKİ işbirliği (OYAK kurumsal kayıtları)",
+    "OYAK-TOKİ işbirliği; tahsis 2003-2004, teslimler 2006 (OYAK kurumsal tarihçesi)",
+    "F ve H tip kodlu bloklar (F1-2K, H5-2D gibi)",
+    "Metroda Eryaman-5 istasyonu",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "zenginlestirildi": "2026-08-07",
   "alternatifAdlar": [
     "Oyak Atakent 2 İlke Sitesi"
   ]

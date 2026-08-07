@@ -7,7 +7,7 @@
     "lng": 32.648485
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/lenora-goksu-boundary.geojson",
-  "aciklama": "Lenora Göksu, Susuz'un Göksu kentsel gelişim bölgesinde, Majör Göksu ile aynı yerleşim adasında konumlanan yeni nesil bir konut projesidir; bölgenin modern, az bloklu dokusunun parçasıdır. (Lenora markasının 'Nefes' projesi ayrı bir yerleşimdir.) Göksu gelişim bölgesinin az bloklu, yeni yapı stoğu bu hatta toplanır; emsal fiyatlar burada bir arada okunur ve canlı bir pazar oluşur. Tapu kaydına göre proje, yaklaşık 4.296 m²'lik parselde on sekiz katlı A blok (konut) ile iki katlı B bloktan (ofis-işyeri) oluşur. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Lenora Göksu, Susuz'un Göksu kentsel gelişim bölgesinde, Akıncılar Caddesi hattında yer alan yeni nesil bir konut projesidir; Majör Göksu ile aynı yerleşim adasında konumlanır ve bölgenin az bloklu, yeni yapı dokusunun parçasıdır. Yapımcının kendi proje arşivinde 2023 yılı işleri arasında görünen yerleşim Cengiz Doğan İnşaat imzasını taşır; Lenora markasının tanıtım sayfası yapımı Demirler Yapı ile ortaklaşa yürütülen bir iş olarak anlatır. (Aynı markanın Yeni Batı'daki 'Nefes' projesi ayrı bir yerleşimdir.) Satış ve kiralama kayıtlarında öne çıkan daire tipi 4+1'dir. Tapu kaydına göre yerleşim, yaklaşık 4.296 m²'lik parselde on sekiz katlı A konut bloğu ile iki katlı ticari B bloktan oluşur; parsel kat mülkiyetine geçmiştir. Konut daireleri A blokta toplandığı için değeri belirleyen ana değişkenler kat, cephe ve iç durumdur; aynı planın alt ve üst katı arasında belirgin fark oluşur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, projeyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63377",
@@ -15,16 +15,18 @@
     }
   ],
   "ozellikler": [
+    "Yapım: Cengiz Doğan İnşaat — 2023 yılı projesi",
+    "Lenora markası (Demirler Yapı ortaklığı)",
     "Tapu: 18 katlı konut bloğu + 2 katlı ticari blok",
+    "Ticari B blok tapuda işyeri niteliğinde",
     "Yaklaşık 4,3 dönümlük parsel (TKGM)",
-    "Majör Göksu ile aynı adada",
-    "Yeni nesil, az bloklu doku",
-    "Lenora ailesinin Göksu projesi",
     "Kat mülkiyetli parsel (TKGM)",
+    "Öne çıkan daire tipi: 4+1",
+    "Akıncılar Caddesi hattı — Majör Göksu ile aynı ada",
     "Susuz — Göksu kentsel gelişim bölgesi"
   ],
   "alternatifAdlar": [
     "Lenora Göksu Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-07"
 }

@@ -8,6 +8,7 @@ import {
   getAllMahalleler,
   getEtapByNo,
   getMahalleBySlug,
+  getSiteBySlug,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -51,6 +52,20 @@ export default async function EtapPage({ params }: Props) {
   if (!mahalle || !etap) notFound();
 
   const digerEtaplar = getAllEtaplar(mahalleSlug).filter((item) => item.no !== etap.no);
+  // Resmî ada listesi kayıtlarımızdan genişse bunu açıkça söylüyoruz; "22 ada
+  // bulunuyor" demek 45 adalık etapta yanlış sayı iddiası olurdu.
+  const tamKapsama = etap.adalar.length === etap.resmiAdaSayisi;
+
+  // 2. Etap'ın güneyindeki Eston/İçtaş/Cumhuriyet şeridi resmî listede YOK
+  // (tapudaki toplu yapı bağı Eryaman/1. Etap planına) ama ilan dilinde ve
+  // gündelik kullanımda 2. Etap'la anılıyor (2026-08-07 üç-kollu araştırma,
+  // ayrıntı sorunlu-siteler.md). Etap İDDİASI değil "birlikte anılır" tespiti.
+  const komsuSeritSiteleri =
+    etap.no === "2"
+      ? ["eston-sitesi", "ictas", "cumhuriyet-sitesi"].flatMap(
+          (slug) => getSiteBySlug(mahalle.slug, slug) ?? []
+        )
+      : [];
 
   const etapJsonLd = {
     "@context": "https://schema.org",
@@ -81,10 +96,23 @@ export default async function EtapPage({ params }: Props) {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman {etap.no}. Etap</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman {etap.no}. Etap bölgesi {mahalle.isim} içinde yer alıyor; bu bölgede{" "}
-          {etap.siteler.length} site/rezidans ve {etap.adalar.length} ada bulunuyor.
+          {tamKapsama
+            ? `Eryaman ${etap.no}. Etap bölgesi ${mahalle.isim} içinde yer alıyor; bu bölgede ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`
+            : `Eryaman ${etap.no}. Etap bölgesi ${mahalle.isim} içinde yer alıyor; etabın resmî ada listesi ${etap.resmiAdaSayisi} adayı kapsıyor, bu adalardan ${etap.adalar.length} tanesi ve üzerlerindeki ${etap.siteler.length} site/rezidans arşivimizde kayıtlı.`}
+          {/* 1. Etap cümlesinin kaynağı eryaman1.com/hakkimizda (yönetimin kendi tanıtımı). */}
+          {etap.no === "1" &&
+            " Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olan bu etap 1990'da yerleşime açıldı; 457 apartmandaki 6.371 konut tek merkezden ısıtılıyor."}
+          {etap.no === "3" &&
+            " Etabın toplu yapı yönetimi, etap içindeki Özar İş Merkezi'nde hizmet veriyor."}
           {etap.no === "5" &&
             " Bölge, adını verdiği Eryaman 5 metro istasyonuna ev sahipliği yapıyor; Ankaray ve metro hattına yürüme mesafesinde ulaşım sağlıyor."}
+        </p>
+        {/* "emlakçı" kelimesi bilinçli ve birebir: "eryaman N. etap emlakçı"
+            sorgu ailesi başlıkta vardı ama gövde metninde hiç geçmiyordu. */}
+        <p className="mt-3 text-base leading-relaxed text-body">
+          Eryaman {etap.no}. Etap&apos;ta emlakçı arayan ev sahipleri için bu sayfa bir ilan
+          panosu değil etap arşivi: adaların tapu kimliğini ve sitelerin blok-konut yapısını
+          tek tek tutuyor, satışta ve kiralamada fiyatı bu kayıtlarla belirliyoruz.
         </p>
       </header>
 
@@ -112,6 +140,24 @@ export default async function EtapPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {komsuSeritSiteleri.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl">2. Etap&apos;la Birlikte Anılan Komşu Şerit</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
+            Resmî 2. Etap ada listesi yukarıdaki adalarla sınırlı; etabın hemen
+            güneyindeki bu şerit ise ilan dilinde ve gündelik kullanımda 2.
+            Etap&apos;la birlikte anılıyor. Tapu kaydında şeridin toplu yapı bağı
+            Eryaman (1. Etap) yönetim planına işli — dairenizi satarken veya
+            kiraya verirken bu ayrımın doğru anlatılmasını biz üstleniyoruz.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {komsuSeritSiteleri.map((site) => (
+              <SiteCard key={site.slug} site={site} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <FaqSection
         title={`Eryaman ${etap.no}. Etap Hakkında Sık Sorulan Sorular`}

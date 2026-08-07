@@ -7,7 +7,7 @@
     "lng": 32.690421
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/akasya-sitesi-boundary.geojson",
-  "aciklama": "Akasya Sitesi, Cumhuriyet Mahallesi'nde (Yeni Batı aksı) yer alan bir konut sitesidir; adasını Öz Uğur Sitesi ve Botanik Park Evleri ile paylaşır. TKGM'de site, yaklaşık 10.072 m² — 10 dönümlük — kat mülkiyetli parseli üzerinde apartman niteliğiyle kayıtlıdır; bu genişlik, sitenin bahçeli ve ferah yerleşiminin kaynağıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Akasya Sitesi, Yenimahalle'ye bağlı Cumhuriyet Mahallesi'nde (Yeni Batı aksı), güney cephesi 2421. Sokak'a bakan ve doğu ucu Şehit Kaymakam Muhammed Fatih Safitürk Bulvarı'na açılan bir konut sitesidir. TKGM'de site, yaklaşık 10.072 m²'lik kat mülkiyetli parseli üzerinde apartman niteliğiyle kayıtlıdır; aynı yüzölçümü ve nitelik, Yenimahalle Belediyesi kent bilgi sisteminde de birebir görünür. On dönüme yakın bu genişlik, sitenin bahçeli ve ferah yerleşiminin kaynağıdır. Site, aynı kadastro adası üzerindeki Öz Uğur Sitesi, Botanik Park Evleri ve Huzur Park Sitesi ile yan yana durur; her biri kendi tapu parseli üzerinde, kendi yönetimiyle yaşayan ayrı sitelerdir. Bu yüzden ilanlarda site adlarının karışması sık görülür — dairenizin hangi sitede ve hangi blokta olduğunun net yazılması, doğru emsalle eşleşmesi açısından belirleyicidir. Botanik metro istasyonu (M3 hattı) ve bulvar üzerindeki otobüs durakları yürüme mesafesindedir; park, market, eczane ve okul da aynı yakınlıktadır — bu ulaşım kolaylığı, sitede kiracı hareketliliğini ayakta tutan başlıca etkendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "43254",
@@ -16,8 +16,12 @@
   ],
   "ozellikler": [
     "Yaklaşık 10 dönümlük kat mülkiyetli parsel (TKGM)",
-    "Komşular: Öz Uğur, Botanik Park Evleri (aynı ada)",
+    "Tapuda apartman-beton niteliği (TKGM ve belediye kaydı aynı)",
+    "2421. Sokak cephesi — Şehit Kaymakam Muhammed Fatih Safitürk Bulvarı hattı",
+    "Botanik metro istasyonu (M3) yürüme mesafesinde",
+    "Aynı ada üzerindeki siteler: Öz Uğur, Botanik Park Evleri, Huzur Park (her biri ayrı parsel)",
+    "Çevrede park, market, eczane ve okul",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-07"
 }

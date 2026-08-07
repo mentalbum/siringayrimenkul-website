@@ -123,3 +123,93 @@ dizine girmedi; GSC kotası açılır açılmaz İLK istek anasayfaya gidecek
 Rakip seti dersi: baş sorguda önümüzdekiler çoğunlukla birebir-eşleşen alan
 adları ve sosyal profiller — alan otoritesi/bağlantı cephesi (dijital PR)
 artık ana kaldıraç; sayfa içi iş büyük ölçüde bitti.
+
+---
+
+## 2026-08-07 AKŞAM — pws=0 tarama 2. deneme + erken karşılaştırma
+
+Kanal: uygulama içi tarayıcı ~18:05'te açıktı (CAPTCHA yok, gerçek SERP);
+11 mahalle sorgusu ölçüldü, 12.'de yeniden robot doğrulama sayfası → durduruldu.
+Toplam ölçüm 364/1481. Kalan 1103 sorgu ÖNCELİKLİ kuyrukta (sıra: mahalleler →
+1 Ağu zayıfları → GSC 100+ gösterim → 3./2./1. sıra → yeniler). Dosyalar bu
+oturumun scratchpad'inde: pws0/{kuyruk-oncelikli.json, sonuclar.jsonl,
+baseline-map.json, karne.mjs}. Günlük toplam ~370 sorgu sonrası kanal çok
+hassas — tam tur TEK GÜNDE BİTMEZ; gerçekçi plan gecelik 150-200'lük dilim.
+
+ÖNEMLİ ÖLÇÜM NOTU: Google num=20'yi artık dikkate almıyor (n≈10 dönüyor) —
+"yok" artık "ilk ~10'da yok" demek; 1 Ağu karnesi ilk 20'ye bakıyordu,
+karşılaştırmada payda farkını hesaba kat.
+
+### Mahalle sorguları akşam tablosu (1 Ağu → bugün)
+- Ata: yok → **4** ✅ | Şeyh Şamil: yok → **7** ✅ (ama ESKİ URL /mahalleler/seyh-samil)
+- ŞOA: yok → **10** ✅ (ESKİ URL /mahalleler/sehit-osman-avci)
+- Eryaman: 1 → 7 ❌ | Devlet: 1 → 9 ❌ | Şeker: 1 → yok ❌
+- Altay: 3 → yok ❌ | Güzelkent: 9 → yok ❌
+- Cumhuriyet, Göksu, Susuz: yok → yok (Yeni Batı/portal duvarı)
+(Yavuz Selim + Tunahan ve komşu-mahalle sorguları engel yüzünden ölçülemedi.)
+
+### Erken site karşılaştırması (353 sabah ölçümü; alfabetik önyargılı örneklem)
+1.'liğini koruyan 41/102; 1.'den gerileyen 61 (19→2, 15→3, 13→4-10, 14→yok);
+yükselen: 2→1 on bir site, yok→1 iki site. Ölçülen 362 sorguda 1. sıra payı
+%18,5 (1 Ağu: %35). İki okuma birlikte geçerli: (a) 1 Ağu ölçümü 720 sayfalık
+toplu güncellemenin hemen ertesiydi, sıralar zaten "geçici oynak" notuyla
+alınmıştı; (b) num=20→10 payda farkı "yok" kategorisini şişiriyor.
+
+### 21 "1. sırada ama yanlış/eski URL" vakası (asıl iş listesi)
+Baskın kalıp: 26 Tem URL taşınmasının ESKİ yolları hâlâ dizinde
+(/mahalleler/ata/… biçimi; 15 vaka) + 2 ada sayfası (noindex kararına rağmen
+gösteriliyor: havuz-kent→adalar/46409-1, asm-prestij→adalar/45923-1) +
+address-eryaman→anasayfa, akdam & bati-sistemciler→mahalle sayfası.
+→ GSC dizin kuyruğu genişletildi (aşağıda). Ada sayfası vakaları, yeni site
+sayfası dizine girince kendiliğinden düşmeli; 1 hafta sonra tekrar ölç.
+
+### GSC dizin isteği kuyruğu (kota açılınca, günde ~10-12)
+GÜNCELLEME (07.08 akşam, Özgün'ün Altay ekran görüntüsüyle teyit): mahalle
+sayfalarının ESKİ başlığı ("X Satılık ve Kiralık Daire - Şirin Gayrimenkul")
+Google'da hâlâ duruyor; canlı başlık ("X Emlakçı | Evinizi Satalım…") doğru.
+Yani sorun TÜM mahalle sayfalarında — kuyruk buna göre yeniden sıralandı.
+Anasayfa sitemap girdisine lastModified eklendi (2026-08-06 künye değişimi).
+1. ANASAYFA (altın ölçüm bulgusu — eski künye)
+2. 14 mahalle sayfası — sıra: altay (SERP kanıtı), eryaman, devlet, seker
+   (üçü 1.'likten düştü), sehit-osman-avci + seyh-samil (eski URL'le
+   sıralanıyor), guzelkent, tunahan, ata, cumhuriyet, goksu, susuz,
+   yavuz-selim, yesilova
+3. konuta-ozlem (Güzelkent) + soyak (ŞOA)
+4. Eski-URL 15 site vakasının YENİ URL'leri — GSC gösterimi yüksek olandan
+   başla (beloren-manzara, panorama-plus, trend-life, billur, dogasu-evleri,
+   selvi-evleri, ankalux, arissa-botanik, cakirpark, guzel-belde, mavikent,
+   oz-gimat, akduzen, goksu-aura, kafdagi, mercan-smart)
+Not: GSC Sitemaps bölümünden sitemap.xml'i "yeniden gönder"mek kota YEMEZ —
+yarın ilk iş o, sonra URL istekleri.
+
+### Zenginleştirme durumu + veri notu
+3. parti commit'lendi (12 site, e8fd4a2). Bu oturum ek olarak: Panorama Garden
+(TKGM canlı sorgu: tapu 'A-F 6 blok', 16.526 m² — dönem tanıtımıyla tutarlı;
+2+1/3+1 tipler, 2014 sonu teslim planı, donatılar) ve ŞOA Akasya (TKGM canlı:
+nitelik ARSA — kayıttaki 'kat irtifaklı parsel' iddiası doğrulanamadı,
+düzeltildi; komşuluk: Bossphorus/Vera City/Mia Concept). goksu-sitesi (129
+gösterim) BİLEREK atlandı: gsc-eslestir.mjs jenerik "* göksu sitesi"
+sorgularını (başkent/park/admira/relax göksu) bu kayda saymış — GERÇEK talebi
+şüpheli. DERS: matcher jenerik adlarda taşıyor; goksu-sitesi, akasya-sitesi
+gibi jenerik adların GSC rakamlarına tek başına güvenme.
+
+# ETAP SORGULARI — 7 Ağustos 2026 gece taban çizgisi (pws=0&gl=tr&hl=tr, Chrome)
+
+Etap sayfaları bu akşam açıldı (1/2/3 yeni, 81cda7d+18a5cec); bu ölçüm YAYIN ÖNCESİ
+taban çizgisi sayılır — yeni sayfalar henüz dizinde değil ("Keşfedildi" durumunda,
+dizin talebi kotası yarına kaldı). Harita kutusu ayrı raporlanır (kural).
+
+| Sorgu | Harita kutusu | Organik (siringayrimenkul) | Organik rakip lideri |
+|---|---|---|---|
+| eryaman 1. etap emlakçı | **Şirin 1.** (Ozanım, Efor) | ilk sayfada yok (sayfa yeni) | Koçak sahibinden mağazası |
+| eryaman 2. etap emlakçı | Empa "2.Etap Temsilciliği" 1., **Şirin 2.** | ilk sayfada yok (sayfa yeni) | Empa sahibinden mağazası |
+| eryaman 3. etap emlakçı | site GBP'si 1., Efor 2., **Şirin 3.** | mağaza (sahibinden) 1. | Evinbizden/hepsiemlak |
+| eryaman 4. etap emlakçı | **Şirin 1.** (Efor, Zafer) | mağaza 1. + ANASAYFA 2. + /etaplar/4 5. | — (domine) |
+| eryaman 5. etap emlakçı | **Şirin 1.** (Efor, Zafer) | mağaza 1. + /etaplar/5 2. | beyazemlak 3. |
+
+Notlar: (1) 4/5'te tablo zaten bizim; 1/2/3'te organik boşluğu yeni sayfalar dolduracak —
+2-3 hafta sonra yeniden ölç. (2) Empa'nın "Eryaman 2.Etap Temsilciliği" adlı ayrı GBP'si var
+(4,2/23) — etap adıyla kurulmuş tek rakip profil; 2. Etap haritasında bizi geçiyor.
+(3) "Kullanıcıların diğer aramaları"nda "Eryaman 2 ETAP ESTON Blokları Satılık Daire"
+görüldü — Eston'un 2. Etap sayfasındaki komşu-şerit bölümü doğru hamle. (4) 3. etap
+haritasında 1. sıra emlakçı değil, sitenin kendi GBP'si ("Eryaman 3. Etap", güvenlikli site).

@@ -3,7 +3,7 @@ import path from "path";
 import matter from "gray-matter";
 import type { AdaBilgi, BlogPost, Mahalle, Site } from "@/lib/types";
 import { haversineDistanceKm } from "@/lib/geo";
-import { adaOnayliEtap } from "@/lib/etap-onayli";
+import { adaOnayliEtap, onayliEtapToplamAda } from "@/lib/etap-onayli";
 
 export interface AdaEntry extends AdaBilgi {
   site: Site;
@@ -159,6 +159,8 @@ export interface EtapEntry {
   no: string;
   adalar: AdaEntry[];
   siteler: Site[];
+  /** Resmî listedeki toplam ada sayısı — kayıtlı `adalar` bunun alt kümesi olabilir. */
+  resmiAdaSayisi: number;
 }
 
 export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
@@ -186,6 +188,7 @@ export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
       no,
       adalar: etapAdalar,
       siteler: Array.from(siteMap.values()).sort((a, b) => a.isim.localeCompare(b.isim, "tr")),
+      resmiAdaSayisi: onayliEtapToplamAda(no) ?? etapAdalar.length,
     }))
     .sort((a, b) => Number(a.no) - Number(b.no));
 }
