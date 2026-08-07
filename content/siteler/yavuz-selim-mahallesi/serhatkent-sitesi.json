@@ -7,7 +7,8 @@
     "lng": 32.618758
   },
   "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/serhatkent-sitesi-boundary.geojson",
-  "aciklama": "Serhatkent Sitesi, Yavuz Selim Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 12.843 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A Blok 11 Katlı, B Blok 12 Katlı, C Blok 11 Katlı Betonarme Apartman' olarak tanımlar. Üç yüksek bloğun sade düzeni; kalabalık olmayan, yönetimi yalın bir site yaşamı sunar ve üst katlarda çevreye açık görüş vardır. Yavuz Selim'in Güzelkent ve Ata mahalleleriyle komşu dokusunda, yerleşik bir konumdadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adres": "Yavuz Selim Mahallesi 572. Sokak, Etimesgut/Ankara",
+  "aciklama": "Serhatkent Sitesi, Yavuz Selim Mahallesi 572. Sokak'ta yer alan üç bloklu bir konut sitesidir; site yönetiminin resmi künyesi kuruluş yılını 2010 olarak verir. TKGM kayıtlarına göre 12.843 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'A Blok 11 Katlı, B Blok 12 Katlı, C Blok 11 Katlı Betonarme Apartman' olarak tanımlar. Site yönetiminin kendi künyesine göre bu üç blokta toplam 124 konut bulunur; yerel emlak kayıtlarının blok başına verdiği 41-42 daire, üç blok toplandığında aynı rakama çıkar. Daire kurgusu blok genelinde 3+1 üzerine kuruludur — birbirine yakın tipteki dairelerden oluşan bir sitede değeri ayıran şey oda sayısı değil, dairenin hangi blokta, hangi katta ve hangi cephede olduğudur. Site kapalı bir yönetim düzeniyle işletilir. Yönetimin künyesinde 7/24 güvenlik görevlisi ve 32 kameralı izleme, site girişinde araç tanıma sistemi, dairelerle güvenlik arasında görüntülü diafon ve merkezi TV sistemi, ortak alanlar için jeneratör, blokların altında spor salonu, çocuk oyun alanı ile basketbol ve voleybol sahası, kamelya ve süs havuzlarıyla düzenlenmiş yaklaşık 3.000 m² yeşil alan sayılır. Su altyapısı da künyede ayrıntılı verilir: bahçe sulaması için derin su kuyusu, 60 tonluk ana su deposu ve her blokun altında 20'şer tonluk ek depolar; hidrofor bunları tamamlar. Isıtma merkezi sistemdir ve daire başına ön ödemeli ısı pay ölçerle ölçülür; otoparkta her daire için bir araçlık yer ayrılmıştır. Yerel kayıtlar da merkezi ısıtmayı, jeneratörü, hidrofor ve su deposunu, asansörü, otoparkı ve oyun alanını aynı şekilde listeler. Bunlar, dairenizi pazarlarken somut olarak öne çıkarılabilecek özelliklerdir; bakımlı ortak alan ve düzenli işletme, ilan metninde ve yerinde gösterimde karşılık bulur. Konum olarak site, Yavuz Selim'in Güzelkent ve Ata mahalleleriyle komşu, yerleşik dokusundadır; yönetimin kendi anlatımıyla site trafik gürültüsünden içeride kalır ve yeşili, birkaç yüz metre mesafedeki Kemal Sonunur Parkı'nın yeşil alanıyla birleşir. Toplu taşıma durakları ile market, okul ve cami yürüme mesafesindedir. On bir-on iki kata çıkan bloklarda üst katlar çevreye açık görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46233",
@@ -15,10 +16,23 @@
     }
   ],
   "ozellikler": [
+    "Kuruluş yılı 2010 (site yönetimi künyesi)",
     "~12.843 m² parsel (TKGM)",
-    "11–12 katlı bloklar (tapu)",
+    "Tapuda A Blok 11, B Blok 12, C Blok 11 katlı betonarme apartman",
+    "3 blokta toplam 124 konut (site yönetimi)",
+    "Blok başına 41-42 daire (yerel kayıt)",
+    "Daireler blok genelinde 3+1 (yerel kayıt)",
+    "Merkezi sistem ısıtma + ön ödemeli ısı pay ölçer",
+    "7/24 güvenlik görevlisi, 32 kamera ve girişte araç tanıma sistemi",
+    "Görüntülü diafon ve merkezi TV sistemi",
+    "Her daire için 1 araçlık otopark",
+    "Blok altlarında spor salonu; çocuk oyun alanı, basketbol ve voleybol sahası",
+    "Jeneratör, hidrofor ve asansör",
+    "Derin su kuyusu; 60 tonluk ana + blok altlarında 20'şer tonluk su depoları (site yönetimi)",
+    "~3.000 m² yeşil alan; kamelya ve süs havuzları (site yönetimi)",
+    "Kemal Sonunur Parkı birkaç yüz metre mesafede",
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-07"
 }
