@@ -1,0 +1,40 @@
+{
+  "isim": "Sutek Blokları",
+  "slug": "sutek-bloklari",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.994538,
+    "lng": 32.626388
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/sutek-bloklari-boundary.geojson",
+  "aciklama": "Sutek Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın güney kesiminde üç yerleşim adasından oluşan konut kümesidir. TKGM kayıtlarına göre adalarda toplam 14 kârgir apartman bulunuyor; 3. Etap Toplu Yapı Yönetimi'nin ada kayıtları da aynı 14 bloğu ve toplam 224 daireyi gösterir. Parsellerin tümü kat mülkiyetli, toplam alanları yaklaşık 16.628 m². İçtaş kümesinin güney komşusudur. Eryaman'da aynı adı taşıyan iki ayrı yerleşim daha vardır: Altay Mahallesi'ndeki 1. Etap Sutek Blokları ile Tunahan Mahallesi'ndeki 5. Etap Sutek Sitesi buradan bağımsızdır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17352",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17353",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17354",
+      "parsel": "1",
+      "etap": "3"
+    }
+  ],
+  "ozellikler": [
+    "3 ada — 14 kârgir apartman (TKGM; etap yönetimi kaydıyla birebir)",
+    "Toplam 224 daire (3. Etap Toplu Yapı Yönetimi ada kayıtları)",
+    "Toplam ~16.628 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "1. Etap (Altay) ve 5. Etap (Tunahan) Sutek yerleşimlerinden ayrı"
+  ],
+  "alternatifAdlar": [
+    "Sütek Blokları",
+    "3. Etap Sutek Blokları"
+  ],
+  "zenginlestirildi": "2026-08-07"
+}

@@ -1,0 +1,49 @@
+{
+  "isim": "Eston 1 Blokları",
+  "slug": "eston-1-bloklari",
+  "mahalleSlug": "seyh-samil-mahallesi",
+  "koordinat": {
+    "lat": 39.996765,
+    "lng": 32.629467
+  },
+  "sinirGeoJSON": "siteler/seyh-samil-mahallesi/eston-1-bloklari-boundary.geojson",
+  "aciklama": "Eston 1 Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın kuzeydoğu kesiminde beş yerleşim adasına yayılmış konut kümesidir. TKGM kayıtlarına göre adalarda toplam 28 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 28.756 m². Bloklar isimle değil, resmî bina kayıtlarında 'Eston1' önekiyle A6/A7, B2/B3/B4, BK ve C3/C4 gibi harf-rakam kodlarıyla anılır; ilan dilinde küme çoğunlukla numarasız 'Eston Blokları' adıyla geçer. Aynı etabın güneybatısındaki Eston 2 kümesi ve Şehit Osman Avcı Mahallesi'ndeki Eston Sitesi ayrı yerleşimlerdir. Alarko kümesine komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17328",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17329",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17330",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17331",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17332",
+      "parsel": "1",
+      "etap": "3"
+    }
+  ],
+  "ozellikler": [
+    "5 ayrı ada — toplam 28 kârgir apartman (TKGM)",
+    "Toplam ~28.756 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Bloklar 'Eston1' önekli harf-rakam kodlu (A6/A7, B2-B4, BK, C3/C4)",
+    "3. Etap'ın kuzeydoğu kümesi; Alarko'ya komşu"
+  ],
+  "alternatifAdlar": [
+    "Eston 1 Sitesi"
+  ],
+  "zenginlestirildi": "2026-08-07"
+}

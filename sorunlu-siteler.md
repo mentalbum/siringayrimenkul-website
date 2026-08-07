@@ -1396,6 +1396,17 @@ Kalan açık işler:
   etiketsiz kaldılar (5. Etap'taki 17 site / 11 ada durumunun benzeri).
 - **1. Etap planındaki 3-4 eksik satır:** belge "70 ada" der, 67 satır basılmış (17538 çift);
   aday boşluk 17525-33 — gerekirse TKGM nokta sorgusuyla kapatılır, UYDURULMADI.
-- **3. Etap kapsama boşluğu:** resmî 45 adadan 23'ü repoda kayıtsız (Eston 1 17328-32,
-  Yardımcı 17321/17343-45/17358, Sutek 17352-54 dahil — yukarıdaki "3. ETAP KUYRUĞU"
-  başlığıyla birleşir); 2. Etap'ta 17476/78/79 (yönetim binası/iş merkezi/okul, konut dışı) kayıtsız.
+- ~~**3. Etap kapsama boşluğu**~~ → **KAPANDI (2026-08-07 gece):** 23 kayıtsız adanın 20'si
+  kayda bağlandı, sayfa 22/45'ten 42/45 adaya çıktı. Yeni kayıtlar (TKGM 23/23 parsel hasadı +
+  bilgiemlak küme sayfaları + eryaman3.com AdaYonetimBilgisi?AdaId=X ucu; üç kaynak çapraz tuttu):
+  eston-1-bloklari (17328-32, 28 apartman, ~28.756 m²), yardimci-bloklari SŞ (17321+17343-45+17358,
+  27 apartman; Tunahan 4. Etap Yardımcı'dan ayrı), sutek-bloklari SŞ (17352-54; TKGM 14 apartman =
+  resmî yönetim 14 blok/224 daire BİREBİR; Altay ve Tunahan Sutek'lerinden ayrı). alarko-bloklari
+  1 adadan 8 adaya tamamlandı (17361-68; yönetim: 28 blok/515 daire; bozuk açıklama cümlesi de
+  onarıldı). Eski "3. ETAP KUYRUĞU" (satır ~522) ve "Eston 1/Yardımcı/Sutek repo'da karşılık yok —
+  Özgün'e sor" (satır ~535) maddeleri BU kayıtla kapandı. AÇIK KALAN 3 ada konut dışı:
+  17351 = Kargir Belediye Hizmet Binası, 17359 = Kargir İş Yeri Binası (yönetim API'sinde 2 blok/21
+  daire görünüyor — çelişki, site kaydı açılmadı), 17360 = Kargir Anaokulu (hepsi TKGM nitelik).
+  YAN BULGU: bilgiemlak 3. Etap düğümü altında Klima(6) 17624-25/17644-48 ve Öztaş 17652-61 (4. Etap
+  176xx adaları!) da listeleniyor — be bölge başlığı yine güvenilmez çıktı, bu adalar resmî 3. Etap
+  listesi DIŞI, dokunulmadı. 2. Etap'ta 17476/78/79 (yönetim binası/iş merkezi/okul, konut dışı) kayıtsız kalır.

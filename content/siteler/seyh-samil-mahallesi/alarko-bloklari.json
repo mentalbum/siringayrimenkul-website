@@ -3,27 +3,63 @@
   "slug": "alarko-bloklari",
   "mahalleSlug": "seyh-samil-mahallesi",
   "koordinat": {
-    "lat": 39.9957459,
-    "lng": 32.6300946
+    "lat": 39.99539,
+    "lng": 32.630123
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/alarko-bloklari-boundary.geojson",
-  "aciklama": "Alarko Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. TKGM kayıtlarına göre haritaladığımız parselde 3 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 5.440 m². Etap kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda sekiz adalık bir küme olarak gösterilir — bölgenin en geniş blok kümelerinden biri. Tekser ve Eston kümeleriyle komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Alarko Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın doğu kesiminde sekiz yerleşim adasına yayılmış, bölgenin en geniş blok kümelerinden biridir. TKGM kayıtlarına göre adalarda toplam 21 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 44.414 m². 3. Etap Toplu Yapı Yönetimi'nin ada kayıtları kümede 28 blok ve 515 daire gösterir; bloklar C serisi harf-rakam kodlarıyla anılır. Eston 1 ve Sutek kümelerine komşudur. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
+      "no": "17361",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17362",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17363",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17364",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
       "no": "17365",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17366",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17367",
+      "parsel": "1",
+      "etap": "3"
+    },
+    {
+      "no": "17368",
       "parsel": "1",
       "etap": "3"
     }
   ],
   "ozellikler": [
-    "3 kârgir apartman, ~5.440 m² (TKGM, haritalı parsel)",
-    "Kat mülkiyetli parsel (TKGM)",
-    "Yerel kayıtlarda 8 adalık küme — bölgenin en genişlerinden",
-    "Tekser ve Eston kümelerine komşu",
-    "Şeyh Şamil — kadastroda Eryaman kaydı"
+    "8 ayrı ada — toplam 21 kârgir apartman (TKGM)",
+    "28 blok, 515 daire (3. Etap Toplu Yapı Yönetimi ada kayıtları)",
+    "Toplam ~44.414 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Eston 1 ve Sutek kümelerine komşu"
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-07",
   "alternatifAdlar": [
-    "Alarko Sitesi"
+    "Alarko Sitesi",
+    "3. Etap Alarko Blokları"
   ]
 }
