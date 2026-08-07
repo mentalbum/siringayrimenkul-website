@@ -50,13 +50,17 @@ const ETAP_5_ADALARI = [
  * satır, parsel ekleri (17315/1-2 vb.) tekilleştirilince 63 farklı ada. Eksik
  * 3-4 kayıt UYDURULMADI (aday boşluk 17525-33; gerekirse TKGM ile kapatılır).
  *
- * YAYIM DIŞI TUTULAN 15 ada: 17480-17482 ve 17487-17498. Planda varlar ama
- * bugünkü Şehit Osman Avcı sınırına düşüyorlar; repo + Özgün'ün defter notu
- * (sorunlu-siteler.md: "SOA/eston-sitesi 17487-90 — o 2. Etap Eston'u")
- * bunları 2. Etap sayıyor. Yayımlansalar Eston/İçtaş sayfaları "1. Etap"
- * etiketi alır, ŞOA altında Altay'la yarışan ikinci bir 1. Etap sayfası
- * doğardı. Özgün karar verene dek etiketsiz kalıyorlar; `resmiToplam: 63`
- * sayfa metninin gerçek resmî toplamı söylemesini sağlıyor.
+ * YAYIM DIŞI TUTULAN 15 ada: 17480-17482 ve 17487-17498 (Eston, İçtaş/Kazım
+ * Sarı, Kutlutaş devam blokları/Cumhuriyet şeridi, bugünkü ŞOA sınırında).
+ * KARAR KALICI (2026-08-07, üç-kollu araştırma — sorunlu-siteler.md):
+ * tapu/yönetim bağı bu planda (eryaman1.com'un kendi ada ve blok yönetimi
+ * listeleri bloğu içeriyor) AMA ilan dili, yapımcı İçtaş'ın kurumsal sayfası
+ * ve coğrafi doku ("2. Etap aksının güney devamı") tamamı "2. Etap" diyor;
+ * "1. Etap" kullanan tek kaynak yok. Etiket iki listeye de giremez: buraya
+ * girse müşteriyi yanıltır, II. Etap listesine girse resmî planla çelişir.
+ * Çözüm: 2. Etap SAYFASINDA "birlikte anılan komşu şerit" bölümü (iddiasız
+ * tespit). `resmiToplam: 63` sayfa metninin gerçek resmî toplamı söylemesini
+ * sağlıyor.
  */
 const ETAP_1_ADALARI = [
   "16859", "16868",

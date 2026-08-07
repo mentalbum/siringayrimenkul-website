@@ -1374,13 +1374,20 @@ eklenmedi (2026-08-07 zenginleştirme turu bu kaydı bilinçli atladı).
 "N. etap emlakçı" sorgu ailesi için 1., 2., 3. Etap sayfaları resmî ada listeleriyle açıldı
 (kaynaklar lib/etap-onayli.ts'te). Beş etabın listeleri ikili kesişimlerde tamamen ayrık.
 Kalan açık işler:
-- **ÖZGÜN'E — 1. Etap'ın ŞOA'ya taşan bloğu (15 ada yayım dışı):** Tapuya tescilli Eryaman
-  TYY Yönetim Planı ada listesinde 17480-82 ve 17487-98 de VAR; ama bunlar bugünkü ŞOA
-  sınırında ve defter kaydı Eston 17487-90'ı "2. Etap Eston'u" sayıyor (İçtaş 17498, Cumhuriyet
-  Sitesi 17491 de aynı blokta). Soru: sahada bu siteler kaçıncı etap sayılıyor? "1. Etap" dersen
-  ETAP_1_ADALARI'na eklenir (Eston/İçtaş/Cumhuriyet "1. Etap" etiketi alır ve ŞOA altında ikinci
-  bir 1. Etap sayfası doğar — o zaman etap sayfasını mahalleden bağımsızlaştırmak gerekebilir);
-  "2. Etap" dersen resmî plana rağmen dışarıda kalırlar, mevcut durum korunur.
+- **ÇÖZÜLDÜ (2026-08-07, Özgün "kendin araştır" dedi → üç-kollu araştırma) — 1. Etap'ın ŞOA'ya
+  taşan bloğu (17480-82, 17487-98) KALICI yayım dışı:** (a) İlan/halk dili: emlakjet+hepsiemlak
+  ilanları, MSG Gayrimenkul videoları, EryamannEtimesgut topluluk sayfası ve BİZZAT yapımcı
+  İçtaş'ın kurumsal proje sayfası ("Eryaman 2.Etap Toplu Konutları") → hepsi 2. Etap; "1. Etap"
+  diyen tek kaynak YOK. (b) Yönetim kanıtı: eryaman1.com'un 2007 ada listesi + 2016 blok
+  yönetimleri tablosu ("ESTON 17487-88", "KUTLUTAŞ 2 17491-95", "İÇTAŞ 17480-82/17498") →
+  idari bağ Eryaman TYY (1. Etap) planında; blok, 2. Etap'ın eryaman174XX.com tarzı bağımsız
+  ada-sitesi kalıbına hiç girmemiş. (c) Coğrafya: blok 2. Etap aksının güney devamı olan ayrı
+  şerit (İçtaş→İntes 337 m; 1. Etap dokusuyla hiç iç içe değil, arada 350-500 m boşluk).
+  KARAR: etiket iki resmî listeye de giremez; 2. Etap sayfasına "birlikte anılan komşu şerit"
+  bölümü + FAQ eklendi (iddiasız tespit). İki yan bulgu: be + eryaman1 tablosu 17491'i
+  "Kutlutaş (2)" adıyla biliyor (bizim kayıt "Cumhuriyet Sitesi"; MSG videosu da "2. Etap
+  Cumhuriyet Sitesi" diyor — ad çelişkisi değil, çift ad olabilir; gerekirse Özgün'e sor).
+  Şeyh Şamil'de AYRI bir "3. Etap Eston Blokları" var — benzer-ad tuzağı, karıştırma.
 - **ŞOA'daki gevşek etap:"2" işaretleri (iç veri, görünür etkisi yok):** 17483 (hiçbir resmî
   listede yok), 17487-90/17498 (yukarıdaki blok) ve 46638/39/41/44/45/46 (yeni ŞOA blokları,
   resmî listede yok) — resmî 2. Etap sayfasında zaten görünmüyorlar; işaretler Özgün teyidi

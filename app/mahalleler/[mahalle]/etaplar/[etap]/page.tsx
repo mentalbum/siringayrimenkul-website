@@ -8,6 +8,7 @@ import {
   getAllMahalleler,
   getEtapByNo,
   getMahalleBySlug,
+  getSiteBySlug,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
@@ -54,6 +55,17 @@ export default async function EtapPage({ params }: Props) {
   // Resmî ada listesi kayıtlarımızdan genişse bunu açıkça söylüyoruz; "22 ada
   // bulunuyor" demek 45 adalık etapta yanlış sayı iddiası olurdu.
   const tamKapsama = etap.adalar.length === etap.resmiAdaSayisi;
+
+  // 2. Etap'ın güneyindeki Eston/İçtaş/Cumhuriyet şeridi resmî listede YOK
+  // (tapudaki toplu yapı bağı Eryaman/1. Etap planına) ama ilan dilinde ve
+  // gündelik kullanımda 2. Etap'la anılıyor (2026-08-07 üç-kollu araştırma,
+  // ayrıntı sorunlu-siteler.md). Etap İDDİASI değil "birlikte anılır" tespiti.
+  const komsuSeritSiteleri =
+    etap.no === "2"
+      ? ["eston-sitesi", "ictas", "cumhuriyet-sitesi"].flatMap(
+          (slug) => getSiteBySlug(mahalle.slug, slug) ?? []
+        )
+      : [];
 
   const etapJsonLd = {
     "@context": "https://schema.org",
@@ -128,6 +140,24 @@ export default async function EtapPage({ params }: Props) {
           ))}
         </div>
       </section>
+
+      {komsuSeritSiteleri.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl">2. Etap&apos;la Birlikte Anılan Komşu Şerit</h2>
+          <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
+            Resmî 2. Etap ada listesi yukarıdaki adalarla sınırlı; etabın hemen
+            güneyindeki bu şerit ise ilan dilinde ve gündelik kullanımda 2.
+            Etap&apos;la birlikte anılıyor. Tapu kaydında şeridin toplu yapı bağı
+            Eryaman (1. Etap) yönetim planına işli — dairenizi satarken veya
+            kiraya verirken bu ayrımın doğru anlatılmasını biz üstleniyoruz.
+          </p>
+          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {komsuSeritSiteleri.map((site) => (
+              <SiteCard key={site.slug} site={site} />
+            ))}
+          </div>
+        </section>
+      )}
 
       <FaqSection
         title={`Eryaman ${etap.no}. Etap Hakkında Sık Sorulan Sorular`}

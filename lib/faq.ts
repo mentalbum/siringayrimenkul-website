@@ -192,6 +192,17 @@ export function getEtapFaq(etap: EtapEntry, mahalle: Mahalle): FaqItem[] {
           ? `Eryaman ${etap.no}. Etap'ta ${siteConfig.name} olarak tanıdığımız ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`
           : `Eryaman ${etap.no}. Etap'ın resmî ada listesi ${etap.resmiAdaSayisi} adayı kapsıyor; ${siteConfig.name} olarak bu adalardan ${etap.adalar.length} tanesini ve üzerlerindeki ${etap.siteler.length} site/rezidansı tek tek tanıyoruz.`,
     },
+    // "eston hangi etap" tipi gerçek soru; cevap iddiasız tespit (2026-08-07
+    // araştırması: resmî listeler + ilan dili + tapulu plan, sorunlu-siteler.md).
+    ...(etap.no === "2"
+      ? [
+          {
+            soru: "Eston Blokları, İçtaş ve Cumhuriyet Sitesi 2. Etap'ta mı?",
+            cevap:
+              "Resmî 2. Etap toplu yapı listesi 17 ada ile sınırlıdır ve bu siteleri kapsamaz; tapu kaydında bu şeridin toplu yapı bağı Eryaman (1. Etap) yönetim planınadır. Gündelik kullanımda ve ilan dilinde ise şerit 2. Etap'la birlikte anılır. Her üç sitenin kendi sayfasında tapu kimliği ayrıca kayıtlıdır.",
+          },
+        ]
+      : []),
     {
       soru: `Eryaman ${etap.no}. Etap'ta evimi satmak veya kiraya vermek istiyorum, nasıl başvurabilirim?`,
       cevap: `${siteConfig.name} olarak evini satmayı veya kiraya vermeyi düşünen ev sahipleri için değerleme ve yol haritası çıkarıyoruz; bizi ${siteConfig.phoneDisplay} numarasından arayabilir veya WhatsApp ile yazabilirsiniz.`,
