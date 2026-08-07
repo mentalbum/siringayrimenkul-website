@@ -4,8 +4,10 @@ export const siteConfig = {
   // sınırlı tek rehber + 5,0 profil), eylem çağrısı sona. Rakip snippet'ler
   // jenerik ("N yıllık tecrübe") — ölçülen TO %2,2'yi yukarı çekmek için USP
   // görünür olmalı. Yorum SAYISI bilerek yok (rakip sabotajı kuralı), puan var.
+  // Açılış "Eryaman emlakçı" — baş sorgunun yalın biçimi (kişiselleştirmesiz
+  // ölçüm 2026-08-02; iyelikli "emlakçısı" insanların yazdığı biçim değil).
   description:
-    "Eryaman emlakçısı Şirin Gayrimenkul — 700'den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
+    "Eryaman emlakçı arıyorsanız: Şirin Gayrimenkul — 700'den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   // Taşınmaz Ticareti Yetki Belgesi — meta description güven öğesi ve görünür
   // künyelerde tek kaynak (footer/yazar kartındaki eski hardcode'larla aynı no).

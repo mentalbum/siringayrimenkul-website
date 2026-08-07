@@ -28,8 +28,15 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    // Keyword-first for the homepage: the head query is "eryaman emlakçı".
-    default: `Eryaman Emlakçısı | ${siteConfig.name}`,
+    // TAM EŞLEŞME önde: baş sorgu "eryaman emlakçı" (yalın, iyeliksiz).
+    // Kişiselleştirmesiz ölçüm (2026-08-02, pws=0): organikte 8. sıradayız ve
+    // önümüzdeki üç yerel sitenin üçü de başlığına yalın "Eryaman Emlakçı"
+    // dizisini koymuş (eryamanemlakci.com 3., premiumeryamanemlak.com 4.).
+    // Eski başlık iyelik ekliydi ("Emlakçısı") — insanların yazdığı biçim değil.
+    // Harita kutusunda zaten 1.'yiz (5,0 / 379 yorum); bu değişiklik organik
+    // listedeki açığı hedefliyor. Site geneli sayfa başlıkları da aynı yalın
+    // biçimi kullanıyor (Özgün'ün hedef biçimi, 2026-07-31).
+    default: `Eryaman Emlakçı | ${siteConfig.name} — Evinizi Satalım, Kiraya Verelim`,
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

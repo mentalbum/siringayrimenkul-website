@@ -126,8 +126,13 @@ export default function HomePage() {
             <p className="animate-fade-up text-sm font-semibold uppercase tracking-wide text-gold">
               Şirin Gayrimenkul · Etimesgut
             </p>
+            {/* TAM EŞLEŞME: baş sorgu yalın "Eryaman Emlakçı" — kişiselleştirmesiz
+                ölçümde (2026-08-02) organikte önümüzdeki yerel sitelerin hepsi bu
+                yalın diziyi kullanıyordu; iyelikli "Eryaman'ın Emlakçısı" biçimi
+                aranan dizinin birebir geçmesini engelliyordu. Site geneli sayfa
+                başlıklarıyla da tutarlı (yalın "Emlakçı", Özgün'ün hedef biçimi). */}
             <h1 className="animate-fade-up mt-3 text-4xl leading-tight text-white [animation-delay:0.07s] sm:text-5xl">
-              Eryaman&apos;ın Emlakçısı
+              Eryaman Emlakçı — Şirin Gayrimenkul
             </h1>
             <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
               Satmak veya kiraya vermek istediğiniz eviniz mi var? Fiyatı, {mahalleSayisi}{" "}
