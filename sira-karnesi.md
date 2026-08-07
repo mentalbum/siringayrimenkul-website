@@ -80,7 +80,14 @@ Veri: scratchpad/pws0/gsc-karne.json (+ gsc-eslestir.mjs).
 - **Stratejik içgörü:** "X emlakçı" sorgu sınıfında sık sık 1.'yiz (pws=0 canlı
   ölçüm: 42'de 11) ama o sınıfın hacmi küçük. Gerçek hacim "X", "X satılık",
   "X kiralık" biçimlerinde ve orada 5-10. sıradayız (portal duvarı).
-- "eryaman emlakçı" 28g ort. 4,3 → son 7g 1,3'e iyileşmiş (dünkü düzeltmeler).
+- ~~"eryaman emlakçı" 28g ort. 4,3 → son 7g 1,3'e iyileşmiş~~ **YANLIŞ YORUM
+  (Özgün düzeltti, 07.08):** 7 günlük 1,3 bizim kendi otomatik taramalarımızın
+  eseri — kendi aramalarımızda üstte çıkıyoruz ve her tarama GSC'ye gösterim
+  yazıyor; 42 gösterimlik havuzda ortalamayı biz çektik. Başka telefonlardan
+  gerçek kontrol: organik **6-7. sıra** (harita kutusu ayrı, orada 1.'yiz).
+  DERS: az gösterimli sorgularda GSC konumu, tarama yaptığımız günlerde
+  kirlenir; site sorgularının çoğu az hacimli olduğundan bu karnedeki konumlar
+  da hafif iyimser olabilir (her sorguyu 1-3 kez tarattık).
 
 ### Yeni zenginleştirme öncelik sırası (gösterim≥100 + ort.poz≥8)
 relax-goksu (348/9,3), hittown (345/8,6), buse-konutlari (236/8,4),
