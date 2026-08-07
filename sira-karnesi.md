@@ -192,3 +192,24 @@ gösterim) BİLEREK atlandı: gsc-eslestir.mjs jenerik "* göksu sitesi"
 sorgularını (başkent/park/admira/relax göksu) bu kayda saymış — GERÇEK talebi
 şüpheli. DERS: matcher jenerik adlarda taşıyor; goksu-sitesi, akasya-sitesi
 gibi jenerik adların GSC rakamlarına tek başına güvenme.
+
+# ETAP SORGULARI — 7 Ağustos 2026 gece taban çizgisi (pws=0&gl=tr&hl=tr, Chrome)
+
+Etap sayfaları bu akşam açıldı (1/2/3 yeni, 81cda7d+18a5cec); bu ölçüm YAYIN ÖNCESİ
+taban çizgisi sayılır — yeni sayfalar henüz dizinde değil ("Keşfedildi" durumunda,
+dizin talebi kotası yarına kaldı). Harita kutusu ayrı raporlanır (kural).
+
+| Sorgu | Harita kutusu | Organik (siringayrimenkul) | Organik rakip lideri |
+|---|---|---|---|
+| eryaman 1. etap emlakçı | **Şirin 1.** (Ozanım, Efor) | ilk sayfada yok (sayfa yeni) | Koçak sahibinden mağazası |
+| eryaman 2. etap emlakçı | Empa "2.Etap Temsilciliği" 1., **Şirin 2.** | ilk sayfada yok (sayfa yeni) | Empa sahibinden mağazası |
+| eryaman 3. etap emlakçı | site GBP'si 1., Efor 2., **Şirin 3.** | mağaza (sahibinden) 1. | Evinbizden/hepsiemlak |
+| eryaman 4. etap emlakçı | **Şirin 1.** (Efor, Zafer) | mağaza 1. + ANASAYFA 2. + /etaplar/4 5. | — (domine) |
+| eryaman 5. etap emlakçı | **Şirin 1.** (Efor, Zafer) | mağaza 1. + /etaplar/5 2. | beyazemlak 3. |
+
+Notlar: (1) 4/5'te tablo zaten bizim; 1/2/3'te organik boşluğu yeni sayfalar dolduracak —
+2-3 hafta sonra yeniden ölç. (2) Empa'nın "Eryaman 2.Etap Temsilciliği" adlı ayrı GBP'si var
+(4,2/23) — etap adıyla kurulmuş tek rakip profil; 2. Etap haritasında bizi geçiyor.
+(3) "Kullanıcıların diğer aramaları"nda "Eryaman 2 ETAP ESTON Blokları Satılık Daire"
+görüldü — Eston'un 2. Etap sayfasındaki komşu-şerit bölümü doğru hamle. (4) 3. etap
+haritasında 1. sıra emlakçı değil, sitenin kendi GBP'si ("Eryaman 3. Etap", güvenlikli site).
