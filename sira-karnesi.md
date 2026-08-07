@@ -218,3 +218,33 @@ Notlar: (1) 4/5'te tablo zaten bizim; 1/2/3'te organik boşluğu yeni sayfalar d
 (3) "Kullanıcıların diğer aramaları"nda "Eryaman 2 ETAP ESTON Blokları Satılık Daire"
 görüldü — Eston'un 2. Etap sayfasındaki komşu-şerit bölümü doğru hamle. (4) 3. etap
 haritasında 1. sıra emlakçı değil, sitenin kendi GBP'si ("Eryaman 3. Etap", güvenlikli site).
+
+---
+
+## 2026-08-07 GECE — teşhis paketi (kanallar kapalıyken eldeki veriden)
+
+### Rakip paneli (karne.mjs --rakip; 230 sorguda "önümüzdeki ilk 2 alan" verisi)
+- **Portal duvarı 147/230 (%64):** önümüzde SADECE portal/sosyal var (sahibinden
+  214, hepsiemlak 55, remax 7, emlakjet 6, instagram 12). Bunlar sorgu sınıfının
+  doğası; tek tek geçilmez, otorite+dizinle sıra kazanılır.
+- **Tek tekrarlayan gerçek organik rakip: eryaman.bilgiemlak.com.tr (52 sorgu).**
+  Yerel ofis siteleri marjinal (1-2'şer kez, çoğu sahibinden mağaza profili).
+  SONUÇ: "X emlakçı" sınıfında hedef net — bilgiemlak'ın site sayfalarını geçmek.
+- yandex.com.tr 7 kez (Yandex Maps kayıtları).
+
+### "Yok" 70 site — sağlık taraması
+70/70 sayfa canlıda 200 dönüyor; teknik sorun SIFIR. "Yok"un açıklaması aşağıda.
+
+### GSC dizin dağılımı (Sayfalar raporu, 643 dizin dışı)
+- **563 "Keşfedildi — şu anda dizine eklenmiş değil" → ANA DARBOĞAZ.** Google
+  yeni URL'leri biliyor ama tarama sırasına koymuş; 26 Tem taşınma + içerik
+  dalgası kuyruğu şişirdi. İçerik sorunu DEĞİL, tarama sırası sorunu.
+- 43 "Tarandı — eklenmedi" (kalite/önem değerlendirmesi — izlenecek grup bu),
+  22 "doğru canonical'lı alternatif" (ada→site katlaması ÇALIŞIYOR),
+  7 "404" BAYAT VERİ (son tarama Temmuz; hepsi şimdi doğru hedefe 308 dönüyor
+  — kontrol edildi, aksiyon gerekmez), 5 yönlendirme, 3 noindex (tasarım gereği).
+
+### Yarın sabah planı
+1. GSC kota açılınca: dizin istekleri kuyruğu (anasayfa → 14 mahalle → …).
+2. Gece taraması sonuçlarını karneye işle (karne.mjs --ozet --fark --sorun).
+3. Zenginleştirme yeni eşik: gösterim ≥50 & poz ≥8 adayları çıkar (parti 4).
