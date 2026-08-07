@@ -1317,3 +1317,21 @@ değil — Özgün'e soruldu.
 
 **GSC:** günlük indeksleme kotası dolu ("yarın tekrar deneyin"). Panelde tıklama
 1.132 → 1.243. Kuyrukta 12 sayfa.
+
+### ✅ İNDEKSLEME KUYRUĞU KAPANDI (2026-08-07)
+
+Kota yenilenmişti; 11 istek daha gönderildi ve hepsi "Dizine eklenmesi istendi"
+onayı aldı: Arıkovanı, Gözde Evler, Mizan, Sarmaşıklıköşk (Ata), Göksu Sitesi
+(Yavuz Selim), Hava Destek (Göksu), TOKİ Konutları (Eryaman), Akasya (Cumhuriyet),
+Borankent (Şeyh Şamil), Eczacılar + Küçük Ankara Villaları (Güzelkent).
+
+12. denemede (Soyak Sitesi ŞOA) "Kota Aşıldı" — günlük sınır 11'de doldu.
+KUYRUKTA KALAN TEK SAYFA: sehit-osman-avci-mahallesi/soyak-sitesi (yarın).
+
+Böylece 21 sayfalık dizinsiz listenin 20'sine istek gönderilmiş oldu
+(dün 10 + bugün 11'in 10'u listeden, 1'i tekrar). Panel: tıklama 1.532
+(önceki ölçüm 1.243). Beklenti: 24-48 saatte dizine giriş; geçen partilerde
+oran 10/10'du ve 5 sayfa doğrudan 1. sıraya çıktı.
+
+NOT: dizine girenler lib/tarama-oncelikli.ts listesinden ÇIKARILMALI —
+kontrol turu bir sonraki oturumda yapılacak.
