@@ -30,14 +30,15 @@ herkese açık.
 
 *(≈600 karakter — sınırın altında)*
 
-## 2. Instagram bio (150 karakter sınırı)
-> Kullanıcı adında/adda "Eryaman" geçmesi aramada belirleyici — profil adını
-> "Şirin Gayrimenkul | Eryaman Emlakçısı" yapın (kullanıcı adı değişmez).
+## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
+> BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
+> gösterim, "emlakçısı" 0. Etiket/bio/ad alanlarında yalın biçim kullanılır.
+> UYARI: bio'ya TELEFON YAZILMAZ — 7 Ağu'da "dolandırıcılık şüphesi"
+> kısıtlaması tetikledi (itirazla kalktı). İletişim Ara/Mesaj düğmelerinde.
 
-Eryaman Emlakçısı 🏠 720+ sitenin tapu ve blok hafızası
+Eryaman Emlakçı 🏠 720+ sitenin tapu ve blok hafızası
 Evinizi satalım, kiraya verelim
-📞 0 532 363 96 60
-⬇ Site arşivi
+Tunahan 4. Etap Çarşı — Yetki No: 0603771
 
 *(Bio bağlantısı: https://www.siringayrimenkul.com)*
 
@@ -51,8 +52,8 @@ hafızası. Evini satmak veya kiraya vermek isteyen ev sahiplerine, siteyi blok
 blok tanıyan yerel emlakçı desteği. Taşınmaz Ticareti Yetki Belgesi No:
 0603771. Tel/WhatsApp: 0 (532) 363 96 60 · siringayrimenkul.com
 
-## 4. TikTok bio (80 karakter sınırı)
-Eryaman Emlakçısı · 720+ sitenin konut hafızası · 0 532 363 96 60
+## 4. TikTok bio (80 karakter sınırı) — MEVCUT HÂLİ ZATEN DOĞRU (dokunma)
+Şirin Gayrimenkul / Eryaman Emlakçı
 
 ## 5. bulurum.com + sektortanitim.com açıklaması
 > Kategori: Emlak / Emlakçılar — Etimesgut, Ankara
