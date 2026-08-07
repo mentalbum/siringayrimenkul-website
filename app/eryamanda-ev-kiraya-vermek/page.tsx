@@ -49,6 +49,11 @@ const faqItems: FaqItem[] = [
       "Rakam, sitenize ve dairenizin durumuna göre değişir; ilanlardaki eski rakamlar bu dönemde hızla güncelliğini yitiriyor. Kirayı sitenizdeki gerçekleşen kiralamalara göre birlikte belirliyoruz — görüşme sonunda elinizde gerçekçi bir kira aralığı olur.",
   },
   {
+    soru: "Emlakçıya evimi kiraya vermek için ne yapmam gerekir?",
+    cevap:
+      "Tek adım yeter: bize ulaşıp dairenin bilgilerini (site, kat, oda sayısı, eşya durumu) paylaşın. Kira tespitini birlikte yaparız; fotoğraf, ilan ve aday trafiğini biz üstleniriz. Anahtar bizde kalabilir, dilerseniz gösterimlerde siz de bulunursunuz — kiracı seçiminde son söz her zaman sizindir.",
+  },
+  {
     soru: "Kiracıyı nasıl buluyor ve eliyorsunuz?",
     cevap:
       "İlan trafiğini biz karşılıyoruz; adaylarla ödeme gücü, iş ve referans düzeyinde ön görüşme yapıyor, evinize yalnızca elenmiş adayları getiriyoruz. Nihai kiracı seçimi her zaman ev sahibinindir.",
@@ -61,7 +66,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Kiraya mı versem, satsam mı — hâlâ karar veremedim.",
     cevap:
-      "Bu soruda kararsız kalmak normaldir ve acele edilmesi gereken bir durum da değildir. Belirleyen dört şey var: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol, dairenizin bugünkü satış ve kira değerini yan yana görmektir.",
+      "Bu soruda kararsız kalmak normaldir ve acele edilmesi gereken bir durum da değildir. Belirleyen dört şey var: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. Bu başlıkları görüşmede tarafsızca birlikte değerlendiririz. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol, dairenizin bugünkü satış ve kira değerini yan yana görmektir.",
   },
   {
     soru: "Evim boş kaldıkça ne kaybederim?",

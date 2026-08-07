@@ -1,0 +1,20 @@
+{
+  "not": "EV SAHİBİ SORGU AİLESİ — bir SONRAKİ ölçüm turu için aday liste (2026-08-07). Mevcut kuyruk (kuyruk-oncelikli.json) tam tur bitene kadar SABİT, protokol gereği dokunulmadı. Tur bitince bu sorgular kuyruğa eklenebilir; karne.mjs'in beklenenYol() fonksiyonuna '__hizmet__' işaretçisi eklemek gerekir (s alanı doğrudan yol taşır).",
+  "sorgular": [
+    { "q": "eryamanda ev satmak", "m": "__hizmet__", "s": "/eryamanda-ev-satmak" },
+    { "q": "eryaman ev satmak", "m": "__hizmet__", "s": "/eryamanda-ev-satmak" },
+    { "q": "eryaman evimi satmak istiyorum", "m": "__hizmet__", "s": "/eryamanda-ev-satmak" },
+    { "q": "eryaman ev değerleme", "m": "__hizmet__", "s": "/ev-degerleme" },
+    { "q": "eryaman emlak değerleme", "m": "__hizmet__", "s": "/ev-degerleme" },
+    { "q": "eryamanda evimi kiraya vermek", "m": "__hizmet__", "s": "/eryamanda-ev-kiraya-vermek" },
+    { "q": "eryaman kiraya verme", "m": "__hizmet__", "s": "/eryamanda-ev-kiraya-vermek" },
+    { "q": "eryaman emlakçıya ev verme", "m": "__hizmet__", "s": "/eryamanda-ev-kiraya-vermek" },
+    { "q": "eryaman kiracı bulma", "m": "__hizmet__", "s": "/eryamanda-ev-kiraya-vermek" },
+    { "q": "emlakçı olmadan ev satılır mı", "m": "__hizmet__", "s": "/eryamanda-ev-satmak" },
+    { "q": "ev satarken emlakçı zorunlu mu", "m": "__hizmet__", "s": "/eryamanda-ev-satmak" },
+    { "q": "emlakçıya vekalet verme", "m": "__hizmet__", "s": "/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama" },
+    { "q": "eryaman emlakçı", "m": "__hizmet__", "s": "/" },
+    { "q": "eryaman emlak", "m": "__hizmet__", "s": "/" },
+    { "q": "şirin gayrimenkul", "m": "__hizmet__", "s": "/" }
+  ]
+}
