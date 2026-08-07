@@ -7,7 +7,7 @@
     "lng": 32.632622
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/goksu-hisar-evleri-boundary.geojson",
-  "aciklama": "Göksu Hisar Evleri, Susuz'un Göksu kentsel gelişim bölgesinde kademeli ikiz bloklu, geniş parselli modern bir konut sitesidir. TKGM kayıtlarına göre 14.750 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı A Blok ve 16 Katlı B Blok Betonarme' olarak tanımlar — iki bloğa karşılık yaklaşık 15 dönümlük parsel, açık alan payını cömert tutar. Üst katlar gelişim aksına ve göl yönüne çok geniş görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Göksu Hisar Evleri, Yenimahalle'nin Susuz Mahallesi'nde, Göksu kentsel gelişim bölgesinin yeni konut kuşağında yer alan kademeli ikiz bloklu, geniş parselli modern bir konut sitesidir; Eryaman'a komşu bu aks, bölgede yeni yapılaşmanın yoğunlaştığı gelişim hattıdır. Tapu kaydı yapıyı '17 Katlı A Blok ve 16 Katlı B Bloktan Oluşan Betonarme Apartman' olarak tanımlar; iki yüksek katlı bloğa karşılık yaklaşık 15 dönümlük (14.750 m²) tek parsel, blok aralarını ve açık alan payını cömert tutar. Parsel kat mülkiyetlidir (TKGM). Kademeli ikiz blok düzeninde değeri belirleyen ana değişkenler kat, cephe ve iç durumdur: aynı planın alt katı ile üst katı arasında belirgin fark oluşur; üst katlar gelişim aksına ve göl yönüne çok geniş görüş sunar, A ile B blok arasındaki bir katlık kademe de en üst katlarda görüş farkı yaratır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63929",
@@ -15,13 +15,13 @@
     }
   ],
   "ozellikler": [
-    "~14.750 m² parsel (TKGM)",
-    "16-17 kat aralığında bloklar (tapu kaydı)",
+    "~14.750 m² tek parsel (TKGM)",
+    "17 katlı A Blok + 16 katlı B Blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu kentsel gelişim bölgesi"
   ],
   "alternatifAdlar": [
     "Göksu Hisar Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-08"
 }

@@ -7,7 +7,7 @@
     "lng": 32.615073
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/gold-stone-evleri-boundary.geojson",
-  "aciklama": "Gold Stone Evleri, Ata Mahallesi'nde beş bloktan oluşan bir konut sitesidir; bloklarda ikişer asansör bulunur. TKGM kayıtlarına göre sitenin parseli yaklaşık 23.540 m² — yani 23,5 dönümlük — geniş bir alana karşılık gelir; beş blok için bu ölçek, bloklar arasına geniş bahçe ve donatı payı bırakan ferah bir yerleşim demektir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Gold Stone Evleri, Yenimahalle'nin Ata Mahallesi'nde beş bloktan oluşan bir konut sitesidir; bloklarda ikişer asansör bulunur. İnşaatına 2007'de başlanan site, Ankara Büyükşehir Belediyesi arsası üzerinde kat karşılığı usulüyle geliştirilmiş; belediye hissesine düşen 82 bağımsız bölüm 2016'da ihaleyle satışa çıkarılmıştır. Beş blokta toplam 250 civarında daire yer alır; plan tipleri ağırlıklı olarak 3+1'dir, az sayıda 6+1 dubleks daire de bulunur. TKGM kayıtlarına göre sitenin parseli yaklaşık 23.540 m² — yani 23,5 dönümlük — geniş bir alana karşılık gelir; beş blok için bu ölçek, bloklar arasına geniş bahçe ve donatı payı bırakan ferah bir yerleşim demektir. Parsel tapuda kat irtifakı aşamasındadır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46411",
@@ -16,6 +16,8 @@
   ],
   "ozellikler": [
     "5 blok — bloklarda ikişer asansör",
+    "Toplamda 250 civarında daire; ağırlıklı 3+1, az sayıda 6+1 dubleks",
+    "İnşaatına 2007'de başlanan kat karşılığı proje (belediye arsası)",
     "Yaklaşık 23,5 dönümlük geniş parsel (TKGM)",
     "Kat irtifaklı parsel (TKGM)",
     "Ata Mahallesi — Eryaman'ın yanı başı"
@@ -23,5 +25,5 @@
   "alternatifAdlar": [
     "Gold Stone Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

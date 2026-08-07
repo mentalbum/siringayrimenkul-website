@@ -7,7 +7,7 @@
     "lng": 32.6595167
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/bordo-platinum-residence-boundary.geojson",
-  "aciklama": "Bordo Platinum Residence, Eryaman Şehit Osman Avcı Mahallesi'nde Bordokent İnşaat tarafından geliştirilmiş, konut ve ticareti bir arada sunan bir rezidans projesidir. Proje kaynaklarına göre 2 blokta toplam 236 daire ile 14 adet dükkan yer alıyor; daireler 1+1, 2+1 ve 3+1 tiplerinde planlanmış. Kardeş projesi Bordo Life ile aynı bölgede, İstanbul Yolu aksına ve metroya yakın konumda; site içi otopark ve güvenlik donatıları bulunuyor. Tapu kaydına göre yapı, yaklaşık 8.918 m²'lik parselde on beşer katlı A, B ve C bloklardan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Bordo Platinum Residence, Eryaman Şehit Osman Avcı Mahallesi'nde Malazgirt Caddesi aksında, Bordokent İnşaat (Bordo markası) tarafından geliştirilmiş, konut ve ticareti bir arada sunan bir rezidans projesidir. Aralık 2015 teslim hedefiyle duyurulan projede yaşam, proje kayıtlarına göre 2016'dan bu yana sürüyor. Proje kaynaklarına göre toplam 236 daire ile zemin düzeyinde dükkanlar yer alıyor; daireler 1+1 (yaklaşık 73 m²), 2+1 (110-123 m²) ve 3+1 (yaklaşık 164 m²) tiplerinde planlanmış. Proje tanıtımında kapalı yüzme havuzu, fitness salonu, sauna, tenis kortu ve yürüyüş yolları sayılmış, parselin yaklaşık 6.700 m²'sinin peyzaj ve yeşil alana ayrıldığı belirtilmişti — bu donatı paketi rezidansı çevresindeki standart apartman stoğundan ayırır ve özellikle kiralama tarafında dairenizin elini güçlendirir. Kardeş projesi Bordo Life ile aynı kuşakta yer alan yapı; Göksu Park'a, Optimum başta olmak üzere alışveriş merkezlerine, İstanbul Yolu aksına ve metroya yakın konumdadır. Tapu kaydına göre yapı, yaklaşık 8.918 m²'lik parselde on beşer katlı A, B ve C bloklardan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu rezidansta satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, binayı yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "46654",
@@ -17,14 +17,17 @@
   "ozellikler": [
     "Tapu: 3 blok (A-C), 15'er katlı — ofis-işyeri niteliği",
     "Yaklaşık 8,9 dönümlük parsel (TKGM)",
-    "Bordokent İnşaat — 2 blok, 236 daire",
-    "14 adet dükkan (karma kullanım)",
-    "1+1, 2+1 ve 3+1 tipleri",
+    "Bordokent İnşaat — 236 daire (proje kaydı)",
+    "Zemin düzeyinde dükkanlar (karma kullanım)",
+    "1+1 ~73, 2+1 110-123, 3+1 ~164 m² (proje kaydı)",
+    "Kapalı havuz, fitness, sauna, tenis kortu (proje tanıtımı)",
+    "2016'dan bu yana oturumda",
     "Kat mülkiyetli parsel (TKGM)",
-    "İstanbul Yolu aksı, metroya yakın"
+    "Göksu Park ve AVM yakını; İstanbul Yolu aksı, metroya yakın"
   ],
+  "adres": "Malazgirt Caddesi 1404. Sokak No:6A, Şehit Osman Avcı, Eryaman/Ankara",
   "alternatifAdlar": [
     "Bordo Platinum Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

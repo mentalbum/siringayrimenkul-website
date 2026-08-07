@@ -7,7 +7,7 @@
     "lng": 32.613868
   },
   "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/yurt-prestij-konutlari-boundary.geojson",
-  "aciklama": "Yurt Prestij Konutları, Yavuz Selim Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '12 Katlı A ve C Bloklar ile 11 Katlı B Blok' niteliğiyle kayıtlı 12.267 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun 12 dönümü aşan parsele düzenli yerleşimi ferah bir site yaşamı sunar; mahallenin yerleşik dokusunda bilinen bir adrestir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yurt Prestij Konutları, Etimesgut'un Yavuz Selim Mahallesi'nde, Eryaman'ın yerleşik konut dokusu içinde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '12 Katlı A ve C Bloklar ile 11 Katlı B Blok' niteliğiyle kayıtlı 12.267 m²'lik kat mülkiyetli parsel üzerine kuruludur; üç bloğun 12 dönümü aşan parsele düzenli yerleşimi ferah bir site yaşamı sunar. Yerel emlak kayıtları yapım yılını 2015 olarak verir; bu da siteyi mahallenin görece genç yapı kuşağına yerleştirir. Aynı kayıtlar her blokta 40 daire sayar — üç blok toplandığında yaklaşık 120 konut eder — ve daire kurgusunu blok genelinde ebeveyn banyolu, yaklaşık 178 m² konut alanlı 4+1 plan olarak tanımlar. Bu denli tek tipe yakın bir kurguda dairenizin değerini ayıran şey oda sayısı değil; hangi blokta, hangi katta ve hangi cephede olduğu ile iç durumudur. Yerel kayıtlar sitede merkezi sistem ısıtmayı, asansörü, jeneratörü, hidrofor ve su deposunu, güvenlik ve kapıcı düzenini, dış cephe mantolaması ile ısı ve ses yalıtımını, otoparkı — A blok için kapalı garajı — ve çocuk oyun parkını listeler; 2018 tarihli bir yerel uygulama kaydı da dairelerin cam balkonlu olduğunu gösterir. Bunlar, dairenizi pazarlarken ilan metninde ve yerinde gösterimde somut karşılık bulan özelliklerdir. Konum olarak site, yerel kayıtlarda okul ve otobüs durağının yakın çevresinde sayıldığı, mahallenin bilinen bir adresidir; on bir-on iki kata çıkan bloklarda üst katlar çevreye açık görüş sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46433",
@@ -16,12 +16,22 @@
   ],
   "ozellikler": [
     "~12.267 m² parsel (TKGM)",
-    "11–12 katlı bloklar (tapu)",
+    "Tapuda 12 katlı A ve C bloklar ile 11 katlı B blok",
     "Kat mülkiyetli parsel (TKGM)",
+    "Yapım yılı 2015 (yerel kayıt)",
+    "Her blokta 40 daire — üç blokta toplam ~120 konut (yerel kayıt)",
+    "Daireler blok genelinde 4+1, ~178 m² (yerel kayıt)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Asansör, jeneratör, hidrofor ve su deposu (yerel kayıt)",
+    "Güvenlik ve kapıcı düzeni (yerel kayıt)",
+    "Dış cephe mantolama, ısı ve ses yalıtımı (yerel kayıt)",
+    "Otopark; A blokta kapalı garaj (yerel kayıt)",
+    "Çocuk oyun parkı (yerel kayıt)",
+    "Cam balkonlu daireler (yerel servis kaydı)",
     "Yavuz Selim Mahallesi — kadastroda Ata kaydı"
   ],
   "alternatifAdlar": [
     "Yurt Prestij Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }

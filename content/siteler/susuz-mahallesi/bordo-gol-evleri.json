@@ -7,7 +7,7 @@
     "lng": 32.6470914
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/bordo-gol-evleri-boundary.geojson",
-  "aciklama": "Bordo Göl Evleri, Göksu göl bölgesine komşu konumda yer alan modern bir konut sitesidir. TKGM kayıtlarına göre sitenin parseli yaklaşık 10.907 m² — yani 11 dönüme yakın — bir alana karşılık gelir; göl bölgesinin yeni gelişim dokusunda bu ölçek, bahçeli ve ferah site planlamasının göstergesidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bordo Göl Evleri, Göksu göl bölgesine komşu konumda, Bordo 145 Yapı imzasıyla geliştirilen modern bir konut sitesidir. Site iki bloktan oluşur ve toplam 87 daire barındırır; yapımcının tanıtımına göre dairelerin tamamı yaklaşık 190 m² büyüklüğünde 4+1 plana sahiptir. Bu tek tip plan siteyi bölgede geniş aile dairesinin bilinen adreslerinden biri yapar; satış veya kiralama aşamasında emsal karşılaştırmasını da kolaylaştırır — aynı plandaki dairelerin farkını kat, cephe ve iç durum belirler. TKGM kayıtlarına göre sitenin parseli yaklaşık 10.907 m² — yani 11 dönüme yakın — bir alana karşılık gelir; iki blok için bu ölçek, yeşil alanlara, spor sahasına ve çocuk parkına yer açan ferah bir yerleşimin göstergesidir. Açık ve kapalı otopark ile site güvenliği günlük yaşamı tamamlar. Daire teslimleri yapılmış, sitede oturum sağlanmıştır; parsel tapuda kat irtifakı aşamasındadır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63376",
@@ -15,6 +15,10 @@
     }
   ],
   "ozellikler": [
+    "2 blok, toplam 87 daire (yapımcı verisi)",
+    "Tek tip 4+1 plan, yaklaşık 190 m² daireler",
+    "Yeşil alan, spor sahası ve çocuk parkı",
+    "Açık ve kapalı otopark, site güvenliği",
     "Yaklaşık 11 dönümlük parsel (TKGM)",
     "Göl bölgesi komşuluğu",
     "Kat irtifaklı parsel (TKGM)",
@@ -23,5 +27,5 @@
   "alternatifAdlar": [
     "Bordo Göl Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

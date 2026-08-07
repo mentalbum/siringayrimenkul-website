@@ -7,7 +7,7 @@
     "lng": 32.6603711
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/vera-city-boundary.geojson",
-  "aciklama": "Vera City, Eryaman Şehit Osman Avcı Mahallesi'nde, İstanbul Yolu (Fatih Sultan Mehmet Bulvarı) aksında Çelikoğlu İnşaat tarafından hayata geçirilmiş; konut ve ticareti bir arada sunan bir projedir. Geliştiricinin verilerine göre projede 110 adet 2+1 daire, 14 adet cadde dükkânı ve 1.700 m²'lik showroom alanı yer alıyor; daireler oturuma hazır ve hemen tapu devri yapılabiliyor. Cadde cepheli dükkânlar ve site içi peyzajlı yaşam alanları projenin öne çıkan özellikleri arasında. Bulvar aksındaki konum, alt kattaki ticari birimlerle birleşince günlük yaşamı pratikleştirir; ana ulaşım hattına cepheli siteler kiralama tarafında istikrarlı talep görür. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve konum (peyzaj mı, cadde mi) belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Vera City, Eryaman Şehit Osman Avcı Mahallesi'nde, İstanbul Yolu (Fatih Sultan Mehmet Bulvarı) aksında Çelikoğlu İnşaat tarafından hayata geçirilmiş; konut ve ticareti bir arada sunan bir projedir. Site tek blokta yükselen 10 katlı bir yapıdan oluşur; 110 dairenin tamamı 2+1 plan tipindedir ve daireler güney-kuzey cepheli olarak konumlandırılmıştır. Proje tanıtımında iki plan büyüklüğü 93 ve 95 m² olarak, net alanlar ise 70 ve 80 m² olarak duyurulmuştu; ayrı mutfak, ankastre ocak-fırın-davlumbaz seti, laminat parke, çelik kapı ve açık balkon standart donanım olarak sayılır. Bina tarafında merkezi ısıtma, taş yünü ısı yalıtımı, hidrofor sistemi, 7/24 güvenlik ve açık otopark anlatılır. Zemin hattında 14 adet cadde dükkânı ve 1.700 m²'lik showroom alanı yer alır; teslimler 2024 başında duyurulan takvimle yapılmış olup daireler oturuma hazırdır ve tapu devri hemen yapılabilir. Bulvar aksındaki konum, alt kattaki ticari birimlerle birleşince günlük yaşamı pratikleştirir; ana ulaşım hattına cepheli siteler kiralama tarafında istikrarlı talep görür. Stokun tamamının 2+1 olması ayrıca emsal takibini kolaylaştırır — aynı plan tipinde kapanan her işlem, sizin dairenizin değeri için doğrudan referanstır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe (güney mi, kuzey mi) ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46653",
@@ -16,8 +16,11 @@
   ],
   "ozellikler": [
     "Çelikoğlu İnşaat — konut + ticari",
-    "110 adet 2+1 daire",
+    "Tek blok, 10 kat — güney/kuzey cepheli",
+    "110 adet 2+1 daire (93 ve 95 m² plan)",
     "14 cadde dükkânı + 1.700 m² showroom",
+    "Merkezi ısıtma, taş yünü ısı yalıtımı",
+    "7/24 güvenlik, açık otopark",
     "Oturuma hazır, hemen tapu",
     "Kat mülkiyetli parsel (TKGM)",
     "İstanbul Yolu / Fatih Sultan Mehmet Bulvarı"
@@ -26,5 +29,5 @@
   "alternatifAdlar": [
     "Vera City Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

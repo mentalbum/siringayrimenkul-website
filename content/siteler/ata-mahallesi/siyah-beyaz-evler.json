@@ -7,7 +7,7 @@
     "lng": 32.594245
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/siyah-beyaz-evler-boundary.geojson",
-  "aciklama": "Siyah Beyaz Evler, Ata Mahallesi'nde, akılda kalıcı adıyla bölgenin en tanınmış sitelerinden biridir. TKGM kayıtlarına göre 13.953 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"14'er Katlı A, B ve C Bloktan Oluşan Betonarme Apartman\" olarak tanımlar. Üç eş yükseklikteki bloğun düzenli yerleşimi ve yüksek katların Ata-Eryaman yönüne açık görüşüyle site, mahallenin modern konut kuşağının bilinen adreslerindendir; Eryaman'la iç içe yaşayan Ata dokusunda günlük yaşam akslarına yakındır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Siyah Beyaz Evler, Ata Mahallesi'nde, akılda kalıcı adıyla bölgenin en tanınmış sitelerinden biridir. TKGM kayıtlarına göre 13.953 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"14'er Katlı A, B ve C Bloktan Oluşan Betonarme Apartman\" olarak tanımlar. Yaklaşık 14 dönümlük tek parselin yalnızca üç bloğa karşılık gelmesi, blok aralarında ferah bir yerleşim ve yüksek bir açık alan payı demektir; üç bloğun eş yükseklikte olması ise siteye hem dışarıdan okunan düzenli bir siluet, hem de içeride tek tip işleyen bir emsal düzeni kazandırır. On dört katlı blokların üst katları Ata–Eryaman yönüne açık görüş sunar — aynı planlı iki daire arasında bile kat ve cephe farkı belirgin bir değer katmanı yaratır.\n\nDaire dokusu, siteyi mahalledeki pek çok yerleşimden ayırır: satış platformlarındaki ilan kayıtlarında 4+1 ve 4,5+1 gibi geniş aile planları öne çıkar; 4,5+1 dairelerde 180 m² çevresinde brüt alanlar görülür. Bu profil, Ata Mahallesi'nde geniş plan arayan aile talebinin doğrudan adreslerinden biri olmak demektir — dairenizi pazara çıkardığınızda karşınızdaki talep kitlesi baştan bellidir. Aynı ilan kayıtlarında site güvenliği, kamera sistemi, otopark ve daire depoları öne çıkan başlıklar arasındadır; bu tür donatılar özellikle kiralama tarafında ilanın elini güçlendirir.\n\nKonum, siteyi Ata Mahallesi'nin site düzeniyle kurulmuş konut cebine yerleştirir: en yakın komşuları Söğüt Bahçe Konutları ile Mercankent ve Belören Manzara Evleri'dir; birkaç yüz metre ötede Panorama kuşağının blok yerleşimleri başlar. Ata idari olarak Yenimahalle'ye bağlıdır, günlük yaşamı ve emlak piyasası ise hemen güneyindeki Eryaman'la iç içe işler. Ulaşımda tablo nettir: mahalle sınırları içinde metro istasyonu yok, M3 hattına otobüs ya da kısa bir araç bağlantısıyla ulaşılıyor; alışveriş ve günlük hizmetler Eryaman aksı üzerinden yürüyor. Bu soruların dürüst cevabını ilana önden koymak, görüşmeyi ciddiye alınan taraftan başlatır.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44781",
@@ -15,13 +15,15 @@
     }
   ],
   "ozellikler": [
+    "Üç blok: A-B-C, 14'er katlı (tapu kaydı)",
     "~13.953 m² parsel (TKGM)",
-    "14 katlı bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "4+1 ve 4,5+1 ağırlıklı geniş daire dokusu (ilan kayıtları)",
+    "Güvenlik, kamera ve otopark düzeni (ilan kayıtları)",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
     "Siyah Beyaz Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-08"
 }
