@@ -488,7 +488,12 @@ export default function HomePage() {
             },
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",
-              cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerlendirme görüşmesi için ek bir ücret almıyoruz; evinizin bulunduğu mahalle ve site hakkında size doğrudan bilgi veriyoruz.`,
+              cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerleme görüşmesi satış ya da kiralama sürecinin ilk adımıdır: evinizin bulunduğu site ve mahalledeki gerçek hareketlilik üzerinden konuşuruz, görüşme sonunda elinizde gerçekçi bir aralık olur.`,
+            },
+            {
+              soru: "Eryaman emlakçı ararken neye bakmalıyım?",
+              cevap:
+                "Üç şeye bakın: işletmenin Taşınmaz Ticareti Yetki Belgesi olup olmadığına (bizimki: 0603771), Google profilindeki gerçek müşteri yorumlarına ve bölgeyi gerçekten tanıyıp tanımadığına. Biz Eryaman'ı ada-parsel düzeyinde çalışıyoruz; bu sitedeki 700'den fazla site kaydının her biri tapu verisiyle doğrulanarak hazırlandı.",
             },
             {
               soru: "Evimi satsam mı, kiraya mı versem?",

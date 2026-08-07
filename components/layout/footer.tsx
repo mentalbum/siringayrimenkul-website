@@ -44,6 +44,14 @@ export function Footer() {
             yerel rehber. Evinizi satarken ya da kiraya verirken fiyatı birlikte
             belirleyelim.
           </p>
+          {/* Site geneli tam-eşleşme çapası: baş sorgu "eryaman emlakçı" için
+              her sayfadan ana sayfaya tek metin köprüsü (logo alt'ı marka adı
+              taşıyor, ifadeyi taşıyan görünür bağ yoktu — 2026-08-07). */}
+          <p className="mt-3 text-sm">
+            <Link href="/" className="font-semibold text-gold hover:underline">
+              Eryaman Emlakçı — Şirin Gayrimenkul
+            </Link>
+          </p>
         </div>
 
         <div>
