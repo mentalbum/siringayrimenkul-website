@@ -164,14 +164,23 @@ address-eryaman→anasayfa, akdam & bati-sistemciler→mahalle sayfası.
 sayfası dizine girince kendiliğinden düşmeli; 1 hafta sonra tekrar ölç.
 
 ### GSC dizin isteği kuyruğu (kota açılınca, günde ~10-12)
+GÜNCELLEME (07.08 akşam, Özgün'ün Altay ekran görüntüsüyle teyit): mahalle
+sayfalarının ESKİ başlığı ("X Satılık ve Kiralık Daire - Şirin Gayrimenkul")
+Google'da hâlâ duruyor; canlı başlık ("X Emlakçı | Evinizi Satalım…") doğru.
+Yani sorun TÜM mahalle sayfalarında — kuyruk buna göre yeniden sıralandı.
+Anasayfa sitemap girdisine lastModified eklendi (2026-08-06 künye değişimi).
 1. ANASAYFA (altın ölçüm bulgusu — eski künye)
-2. konuta-ozlem (Güzelkent) 3. soyak (ŞOA)
-4. /mahalleler/sehit-osman-avci-mahallesi + /mahalleler/seyh-samil-mahallesi
-   (ikisi de eski URL'le sıralanıyor)
-5. Eski-URL 15 site vakasının YENİ URL'leri — GSC gösterimi yüksek olandan
+2. 14 mahalle sayfası — sıra: altay (SERP kanıtı), eryaman, devlet, seker
+   (üçü 1.'likten düştü), sehit-osman-avci + seyh-samil (eski URL'le
+   sıralanıyor), guzelkent, tunahan, ata, cumhuriyet, goksu, susuz,
+   yavuz-selim, yesilova
+3. konuta-ozlem (Güzelkent) + soyak (ŞOA)
+4. Eski-URL 15 site vakasının YENİ URL'leri — GSC gösterimi yüksek olandan
    başla (beloren-manzara, panorama-plus, trend-life, billur, dogasu-evleri,
    selvi-evleri, ankalux, arissa-botanik, cakirpark, guzel-belde, mavikent,
    oz-gimat, akduzen, goksu-aura, kafdagi, mercan-smart)
+Not: GSC Sitemaps bölümünden sitemap.xml'i "yeniden gönder"mek kota YEMEZ —
+yarın ilk iş o, sonra URL istekleri.
 
 ### Zenginleştirme durumu + veri notu
 3. parti commit'lendi (12 site, e8fd4a2). Bu oturum ek olarak: Panorama Garden

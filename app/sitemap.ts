@@ -17,7 +17,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const yayindaMahalleler = getYayindaMahalleler();
 
   const statikSayfalar: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/`, changeFrequency: "weekly", priority: 1 },
+    // Anasayfa künyesi (title/description) 2026-08-06'da ev sahibi diline
+    // çevrildi; Google hâlâ eski künyeyi gösteriyor. Tarih, yeniden taramayı
+    // tetiklemek için; künye bir daha değişirse güncellenmeli.
+    { url: `${baseUrl}/`, lastModified: new Date("2026-08-06"), changeFrequency: "weekly", priority: 1 },
     { url: `${baseUrl}/mahalleler`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${baseUrl}/siteler`, changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/siteler/yenimahalle`, changeFrequency: "weekly", priority: 0.7 },
