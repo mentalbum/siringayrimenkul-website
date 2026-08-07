@@ -7,7 +7,7 @@
     "lng": 32.60523
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/efsane-evleri-boundary.geojson",
-  "aciklama": "Efsane Evleri, Ata Mahallesi'nde yedi bloklu, büyük ölçekli bir konut sitesidir. TKGM kayıtlarına göre 22.607 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A, B, C ve G blokları 10'ar katlı, D, E ve F blokları 11'er katlı — toplam yedi betonarme blok. Yedi bloğun 22 dönümü aşan tek parsele yayılması, site içi açık alan ve otopark payını yüksek tutar; blok ve kat çeşitliliği, aynı sitede farklı cephe ve fiyat katmanları demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Efsane Evleri, Ata Mahallesi'nde yedi bloklu, büyük ölçekli bir konut sitesidir. TKGM kayıtlarına göre 22.607 m²'lik kat mülkiyetli parselde tapu, yapıyı blok blok sayar: A, B, C ve G blokları 10'ar katlı, D, E ve F blokları 11'er katlı — toplam yedi betonarme blok. Aynı A'dan G'ye blok düzeni yerel semt rehberlerinde de tek tek kayıtlıdır; sitenin yedi bloklu şeması tapuda ve sahada birbirini tutar.\n\nKonumu, siteyi iki idari sınırın kesiştiği canlı bir kuşağa yerleştirir: Ata Mahallesi idari olarak Yenimahalle'ye bağlıdır, ancak yerleşim dokusu Etimesgut'taki Eryaman ile iç içe geçer; site de Eryaman'ın Yavuz Selim Mahallesi tarafına komşu hatta yer alır. Ulaşım da bu komşuluk üzerinden işler — mahalleye EGO otobüsleri Eryaman 1-2 metro istasyonundan kalkar; metro ve Eryaman çarşı aksı günlük kullanım mesafesindedir. Dairenizi satışa veya kiraya çıkardığınızda karşı tarafın ilk sorduğu ulaşım sorusunun cevabı bu yüzden nettir.\n\nYedi bloğun 22 dönümü aşan tek parsele yayılması, site içi açık alan ve otopark payını yüksek tutar; 10 ve 11 katlı blokların bir arada olması, aynı sitede farklı cephe ve fiyat katmanları demektir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44758",
@@ -16,6 +16,7 @@
   ],
   "ozellikler": [
     "~22.607 m² parsel (TKGM)",
+    "Yedi blok: A'dan G'ye (tapu kaydı)",
     "10-11 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
@@ -23,5 +24,5 @@
   "alternatifAdlar": [
     "Efsane Sitesi"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-07"
 }

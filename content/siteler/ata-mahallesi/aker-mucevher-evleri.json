@@ -7,7 +7,7 @@
     "lng": 32.611468
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/aker-mucevher-evleri-boundary.geojson",
-  "aciklama": "Aker Mücevher Evleri, Ata Mahallesi'nde yaklaşık 10.205 m²'lik kat mülkiyetli parselde (TKGM) kurulu bir konut sitesidir. Tapu kaydı yapıyı \"13 Katlı A Ve B Bloklardan Oluşan Betonarme Apartman\" olarak tanımlar; on dönümü aşan arazide yalnızca iki eş blok yükseldiği için yerleşim, blok başına geniş bir açık alan payı bırakır. Sınır verilerimize göre doğusunda Vizyon Başpınar Sitesi, kuzeydoğusunda Havuz Kent ile aynı konut hattını paylaşır; yerel emlak kayıtları yakın çevrede Parkyaman Evleri ve Şirin Güneşkent gibi siteleri de sayar. Site adı ilanlarda zaman zaman 'Aker Mücevher Sitesi' biçiminde de geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Aker Mücevher Evleri, Yenimahalle'nin Ata Mahallesi'nde, Eryaman'ın hemen yanı başındaki konut kuşağında, yaklaşık 10.205 m²'lik kat mülkiyetli parselde (TKGM) kurulu bir konut sitesidir. Tapu kaydı yapıyı \"13 Katlı A Ve B Bloklardan Oluşan Betonarme Apartman\" olarak tanımlar; on dönümü aşan arazide yalnızca iki eş blok yükseldiği için yerleşim, blok başına geniş bir açık alan payı bırakır — harita ve dizin kayıtları da site içinde yeşil alan, yürüyüş yolları, çocuk oyun alanı ve açık otoparka işaret eder. Yerel emlak dizini kayıtları blokların yapım yılını 2013 olarak aktarır; ilanlarda daireler ağırlıklı olarak 3+1 planlıdır ve 150 m² civarında alanlarla listelenir. Sınır verilerimize göre doğusunda Vizyon Başpınar Sitesi, kuzeydoğusunda Havuz Kent ile aynı konut hattını paylaşır; yerel emlak kayıtları yakın çevrede Parkyaman Evleri ve Şirin Güneşkent gibi siteleri de sayar. Site adı ilanlarda zaman zaman 'Aker Mücevher Sitesi' biçiminde de geçer; piyasa ilanları siteyi çoğunlukla Eryaman başlığı altında, kimi eski dizin kayıtları ise komşu Susuz Mahallesi adıyla listeler — site Ata Mahallesi sınırları içinde yer alır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46408",
@@ -17,10 +17,13 @@
   "ozellikler": [
     "~10.205 m² parsel (TKGM)",
     "13 katlı bloklar (tapu kaydı)",
+    "A ve B olmak üzere iki blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "2013 yapımı (yerel emlak dizini kaydı)",
+    "Ağırlıklı 3+1 daire planı (ilan kayıtları)",
     "Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16",
+  "zenginlestirildi": "2026-08-07",
   "alternatifAdlar": [
     "Aker Mücevher Sitesi"
   ]

@@ -7,7 +7,7 @@
     "lng": 32.6602506
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/karma-modern-boundary.geojson",
-  "aciklama": "Karma Modern, Eryaman Şehit Osman Avcı Mahallesi'nde (1419. Cadde) yer alan, konut ve ticareti bir arada barındıran bir sitedir. Proje kaynaklarına göre yaklaşık 9.000 m²'lik alan üzerinde 92 konut ve 17 ticari ünite bulunuyor; daireler 2+1, 3+1 ve 4+1 tiplerinde planlanmış (2+1'ler net ~113 m²). Nispeten yeni yapısı, kapalı otoparkı ve site içi donatılarıyla hem oturum hem yatırım için tercih edilen bir proje; İstanbul Yolu aksına ve toplu ulaşıma yakın konumda. Tapu kaydına göre proje, yaklaşık 8.954 m²'lik parselde on iki katlı A blok ile üç katlı B bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Karma Modern, Eryaman Şehit Osman Avcı Mahallesi'nde (1419. Cadde) konut ve ticareti bir arada barındıran, Yazıcı İnşaat imzalı bir karma yaşam projesidir; mimari ve iç mimari tasarımı Ankara merkezli Topuzoğlu Mimarlık'ın portföyünde yer alır. İnşaatı 2016'da süren ve dönem tanıtımına göre daire teslimleri Ocak 2017 için planlanan proje, yaklaşık 9.000 m²'lik alanda 92 konut ile blok altında konumlanan 17 ticari üniteyi buluşturur. Daireler 2+1, 3+1 ve 4+1 tiplerinde planlanmıştır; proje kaynaklarına göre 2+1'ler net ~113 m² (brüt ~126), 3+1'ler net ~138 m² (brüt ~156), 4+1'ler net ~166 m² (brüt ~183) — üç tipin de aile ölçeğinde tutulması, site içindeki dairelere gelen talebi geniş bir kitleye açar. Dönem tanıtımında her daireye bir açık ve bir kapalı otopark alanı ayrıldığı belirtilir; 7/24 güvenlik, spor salonu, çocuk oyun alanı ve futbol-basketbol sahası site donatıları arasında sayılır, hidrofor ve su deposu gibi teknik altyapı da bunlara eşlik eder. Konum tarafında aynı tanıtım İstanbul Yolu'nu ve hastaneyi yaklaşık 500 metre, metroyu 1 kilometre, Optimum AVM'yi 3 kilometre ile ölçer — mahallenin ulaşım aksına bu yakınlık, daireniz boşaldığında talebin hızlı toplanmasını sağlayan etkenlerin başında gelir. Tapu kaydına göre proje, yaklaşık 8.954 m²'lik parselde on iki katlı A blok ile üç katlı B bloktan oluşur ve ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46657",
@@ -16,14 +16,16 @@
   ],
   "ozellikler": [
     "~9.000 m² alan — 92 konut + 17 ticari",
-    "2+1 (net ~113 m²), 3+1, 4+1",
-    "Kapalı otopark, site içi donatı",
+    "Yazıcı İnşaat projesi; teslim planı Ocak 2017",
+    "2+1 net ~113, 3+1 net ~138, 4+1 net ~166 m²",
+    "Her daireye açık + kapalı otopark (proje tanıtımı)",
+    "7/24 güvenlik, spor salonu, çocuk oyun alanı",
     "1419. Cadde / Şehit Osman Avcı",
-    "İstanbul Yolu aksı, toplu ulaşıma yakın"
+    "İstanbul Yolu'na ~500 m, metroya ~1 km"
   ],
   "adres": "1419. Cadde No:4, Şehit Osman Avcı, Eryaman/Ankara",
   "alternatifAdlar": [
     "Karma Modern Sitesi"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-08-07"
 }

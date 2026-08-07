@@ -7,14 +7,17 @@
     "lng": 32.645009
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/kasmir-gol-evleri-boundary.geojson",
-  "aciklama": "Kaşmir Göl Evleri, Göksu Mahallesi'nde Susuz Gölü ve Göksu Parkı'na komşu konumda, Kaşmir Yapı A.Ş. imzasıyla 2014'te teslim edilen ve Eryaman'ın en prestijli konut projeleri arasında sayılan bir yaşam kompleksi. TKGM kayıtlarına göre yaklaşık 120.000 m²'lik tek parsel üzerine kurulu site, 14 blokta toplam 1.438 konuttan oluşuyor. Site içinde ticaret meydanı, kafe ve restoranlar, yüzme havuzu, su yolları ve süs havuzları, spor sahaları ve çocuk oyun alanları bulunuyor; 740 m²'lik kreş ile 670 m²'lik market siteye hizmet veren ticari alanlardan. Sitede açık ve kapalı otopark ile 7/24 güvenlik bulunuyor; tapular kat mülkiyetli ve bloklar B sınıfı Enerji Kimlik Belgeli. Konum olarak metroya ve İstanbul Yolu'na yaklaşık 1 km, Göksu AVM'ye 500 m mesafede. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyin; süreci uçtan uca biz yönetelim.",
+  "aciklama": "Kaşmir Göl Evleri, Göksu Mahallesi'nde 2. İnönü Caddesi üzerinde, Susuz Gölü ve Göksu Parkı'na komşu konumda yükselen ve Eryaman'ın en prestijli konut projeleri arasında sayılan bir yaşam kompleksi. Projeyi Kaşmir Yapı A.Ş. geliştirdi; Kaşmir markasını bölgede Gülsan Holding, Köroğlu İnşaat ve MNT İnşaat ortaklığı yürütüyor — Kaşmir Center ve Kaşmir Mavi Orkide ile aynı imza. İnşaat 2012'de başladı, yüklenici kayıtlarına göre yaklaşık 24 ayda tamamlanarak 2014'te teslim edildi ve dönemin Ankara'daki en büyük özel sektör konut yatırımlarından biri olarak anıldı. TKGM kayıtlarına göre yaklaşık 120.000 m²'lik — 120 dönümü aşan — kat mülkiyetli tek parsel üzerine kurulu site, 14 blokta toplam 1.438 konuttan oluşuyor; proje kayıtlarında daireler ağırlıklı 2+1, 3+1 ve 4+1 planlarda, yaklaşık 129-252 m² aralığında. Sosyal donatı Eryaman ölçeğinde zengin: kapalı ve açık yüzme havuzları, sauna ve spor salonu, tenis, basketbol, voleybol ve futbol sahaları, gölet çevresinde yürüyüş parkurları, su yolları ve süs havuzları ile çocuk oyun alanları; site içi ticaret meydanında kafe ve restoranlar, 740 m²'lik kreş ile 670 m²'lik market gündelik ihtiyacı site içinde karşılıyor. Açık ve kapalı otopark ile 7/24 güvenlik mevcut; bloklar B sınıfı Enerji Kimlik Belgeli. Konum olarak metroya ve İstanbul Yolu'na yaklaşık 1 km, Göksu AVM'ye 500 m mesafede. Bu sitede satılık veya kiralık daireniz mi var? Bu ölçekte bir sitede doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "14 blok, 1.438 konut",
     "~120.000 m² tek parsel (TKGM)",
-    "Yüzme havuzu, su yolları ve süs havuzları",
+    "Daire planları ağırlıklı 2+1, 3+1 ve 4+1 (yaklaşık 129-252 m²)",
+    "Kapalı ve açık yüzme havuzları, sauna ve spor salonu",
+    "Su yolları, süs havuzları ve gölet çevresinde yürüyüş parkurları",
+    "Tenis, basketbol, voleybol ve futbol sahaları",
     "Site içi ticaret meydanı, kreş (740 m²) ve market (670 m²)",
     "Göksu Parkı ve Susuz Gölü'ne komşu",
-    "Teslim: 2014 — Kaşmir Yapı A.Ş.",
+    "Teslim: 2014 — Kaşmir Yapı A.Ş. (Gülsan Holding, Köroğlu İnşaat ve MNT İnşaat ortaklığı)",
     "Açık ve kapalı otopark",
     "7/24 güvenlik",
     "Kat mülkiyeti tapulu",
@@ -29,5 +32,5 @@
   "alternatifAdlar": [
     "Kaşmir Göl Sitesi"
   ],
-  "zenginlestirildi": "2026-07-09"
+  "zenginlestirildi": "2026-08-07"
 }

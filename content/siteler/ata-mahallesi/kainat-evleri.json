@@ -2,7 +2,7 @@
   "isim": "Kainat Evleri",
   "slug": "kainat-evleri",
   "mahalleSlug": "ata-mahallesi",
-  "aciklama": "Kainat Evleri, Ata Mahallesi'nde 10 katlı A bloğu ile 12'şer katlı B ve C bloklarından oluşan bir konut sitesidir; parseldeki tek katlı D blok ticari (ofis/işyeri) birimdir. TKGM kayıtlarına göre yaklaşık 15.971 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"10 Katli A Blok,12 Katli B Ve C Blok,Betonarme Apartman Ve 1 Katli D Blok Betonarme Ofis-Işyeri\". Konut bloklarının kat farkı aynı sitede farklı manzara katmanları oluştururken, tek katlı ticari birim günlük ihtiyacı site sınırında karşılar; Kainat Evler 2 ile birlikte bölgede bilinen bir site ailesidir. Yüklenici firmanın kendi proje kayıtlarına göre yapım işini Leda Grup (Leda Yapı ve Proje Taahhüt) üstlenmiş, 150 konutluk proje 2013-2014 döneminde tamamlanmıştır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kainat Evleri, Yenimahalle'nin Eryaman'a komşu Ata Mahallesi'nde; 10 katlı A bloğu ile 12'şer katlı B ve C bloklarından oluşan 150 konutluk bir sitedir. TKGM kayıtlarına göre yaklaşık 15.971 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı \"10 Katli A Blok,12 Katli B Ve C Blok,Betonarme Apartman Ve 1 Katli D Blok Betonarme Ofis-Işyeri\" olarak tanımlar; parseldeki tek katlı D blok ticari (ofis-işyeri) birimdir. Konut bloklarının kat farkı aynı site içinde farklı manzara katmanları oluştururken, tek katlı ticari birim günlük ihtiyacı site sınırında karşılar.\n\nYapım işini 2005'te Ankara'da kurulan, konut sitelerinden okul ve kampüs yapılarına uzanan taahhüt portföyüyle bilinen Leda Grup (Leda Yapı ve Proje Taahhüt) üstlenmiştir. Firmanın künyesinde iş \"Kainat Evleri 150 Adet Konut Projesi\" adıyla ve 27.500 m²'lik proje alanıyla listelenir; inşaata 2013'te başlanmış, 2014'te tamamlanarak teslim edilmiştir. Künye projeyi Eryaman başlığıyla ansa da site idari olarak Yenimahalle'ye bağlı Ata Mahallesi sınırları içindedir; Eryaman kuşağına komşu bu konum, doğru fiyatlama için iki tarafın emsallerini birlikte izlemeyi gerektirir.\n\nBölge konut rehberi kaydında site için asansör, hidrofor, jeneratör, su deposu, kapıcı, otopark ve çocuk oyun parkı notları yer alır; 12 katlı bloklarda jeneratör ve asansör gibi kalemler, dairenizi kiraya verirken ilk sorulan konfor başlıklarındandır. Aynı mahallede, ayrı bir parselde yükselen 15-16 katlı ikiz bloklu Kainat Evler 2 ile birlikte bölgede bilinen bir site ailesi oluşturur; iki site, her biri kendi parselinde ayrı birer yerleşimdir.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "koordinat": {
     "lat": 40.009323,
     "lng": 32.615804
@@ -19,12 +19,16 @@
     "Tek katlı ticari D blok (tapu)",
     "Yüklenici: Leda Grup (proje kaydı)",
     "150 konutluk proje, 2013-2014 (proje kaydı)",
+    "27.500 m² proje alanı (yüklenici künyesi)",
     "~15.971 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Asansör, jeneratör, hidrofor, su deposu (bölge konut rehberi)",
+    "Otopark ve çocuk oyun parkı (bölge konut rehberi)",
+    "Kainat Evler 2 ile site ailesi",
     "Ata Mahallesi"
   ],
   "alternatifAdlar": [
     "Kainat Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-07"
 }

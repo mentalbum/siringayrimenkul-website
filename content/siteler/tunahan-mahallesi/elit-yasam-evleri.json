@@ -7,7 +7,7 @@
     "lng": 32.62105
   },
   "sinirGeoJSON": "siteler/tunahan-mahallesi/elit-yasam-evleri-boundary.geojson",
-  "aciklama": "Elit Yaşam Evleri, Tunahan Mahallesi'nde, büyük bir yerleşim adasının içinde kendi parseline sahip tek bloklu butik bir yapıdır. TKGM kayıtlarına göre 3.971 m²'lik kat mülkiyetli parselde betonarme apartman olarak kayıtlıdır; yerel kayıtlarda adanın \"6. Blok\"u olarak geçer. Dev kooperatif kümelerinin arasında tek apartmanlık bu ölçek, az daireli ve sakin bir apartman yaşamı arayanların profilidir: komşu sayısı az, ortak gider ve yönetim yalındır. Bulunduğu kesim, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksına komşudur; banka ATM'leri ve eczanesiyle Okyanus Plaza'nın çarşı işlevi de yürüme mesafesindedir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Elit Yaşam Evleri, Tunahan Mahallesi'nde 2130. Sokak üzerinde, büyük bir yerleşim adasının içinde kendi parseline sahip bir yapıdır. TKGM kayıtlarına göre 3.971 m²'lik kat mülkiyetli parselde betonarme apartman olarak kayıtlıdır ve parselinde tek blok halinde yükselir; yerel kayıtlarda adanın \"6. Blok\"u olarak, yapı ölçeğinde ise 15 katlı olarak geçer. Yapı, Arıkan Yapı Teknolojileri imzalı Elit Yaşam Evleri projesinin parçasıdır: 2010-2011 döneminde inşa edilen proje 2011'de teslim edilmiştir ve yapımcının tanıtımında, zemin kesiminde dükkânlara yer veren, 1+1 ve 2+1 planlı 120 konutluk bir bütün olarak tarif edilir. Dev kooperatif kümelerinin hâkim olduğu bu kesimde, kompakt planlı ve dükkânlı bu karma doku ile ayrışır. Kompakt 1+1 ve 2+1 planların kiraya veren ev sahibi için pratik bir anlamı vardır: bu daire tipleri Eryaman kiralama pazarında geniş bir kiracı havuzuna seslenir ve metro aksına komşu konum bu talebi besler. Zemin kesimindeki dükkânlar günlük ihtiyacın bir bölümünü yapı çeperinde karşılarken, banka ATM'leri ve eczanesiyle Okyanus Plaza'nın çarşı işlevi de yürüme mesafesindedir; bulunduğu kesim, yerel kayıtlarda 'Türkonut Metro Bölgesi' olarak anılan metro aksına komşudur, okul ve otobüs durağı yakınlığı günlük kullanımı kolaylaştırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46505",
@@ -19,10 +19,13 @@
     "3.971 m² kendi parseli (TKGM)",
     "Tek blok — butik yapı",
     "Kat mülkiyetli parsel (TKGM)",
-    "Tunahan — kadastroda Eryaman kaydı"
+    "Tunahan — kadastroda Eryaman kaydı",
+    "Arıkan Yapı Teknolojileri projesi — 2011 teslimi",
+    "1+1 ve 2+1 planlı daireler (proje tanıtımı)",
+    "Zemin kesiminde dükkânlar (proje tanıtımı)"
   ],
   "alternatifAdlar": [
     "Elit Yaşam Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-07"
 }

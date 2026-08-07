@@ -1347,3 +1347,25 @@ yaşam başlamış olması fiilen imkânsız → metin "lansman takvimine göre 
 etaplı" ifadesine çevrildi; geliştirici sayfasındaki cümle hatalı kabul edildi.
 AYRICA: portallar "17 kat" diyor, tapu 19'ar kat — tapu esas alındı
 (zemin/bodrum sayım farkı olası), metne 17 yazılmadı.
+
+### Manzara Evleri ↔ Gülkent Konutları ↔ Dostlar Birikim — ÜÇ kayıt aynı parselde 44776/3 (2026-08-07)
+
+Manzara Evleri zenginleştirme araştırmasında yakalandı. Parsel 44776/3 (9.331 m²,
+tapu "11 Katlı A Blok ve 10 Katlı B Blok Betonarme Mesken") şu ÜÇ kayıtta birden:
+- ata/manzara-evleri (koord. 39.998939/32.59819 — 2026-07-23 gece kartı bu kaydı
+  "kendi parseli var" diye kapatmıştı)
+- ata/gulkent-konutlari (koord. 39.998842/32.597603; be parti-17 notundaki
+  "aynı adada Gülkent de listeleniyor" adayından açılmış görünüyor)
+- susuz-mahallesi/dostlar-birikim-sitesi (koord. 39.998816/32.59769 — eski kart:
+  "TAPU ATA, dosya susuz'da, taşınmalı mı → Özgün"; be pini 39.998718/32.597599 uyumlu)
+KBS dökümüne göre 44776 adasında yalnız /2 (Akdam, 9.933) ve /3 (9.331) var; /2'de
+ayrıca Turuncu sorusu açık. Yani 2 parsele 5 site adı düşüyor — adanın tamamı
+tabela sorusu. Gülkent+Dostlar koordinatları birbirine ~15 m (parselin batısı),
+Manzara ~50 m doğuda; blok bazlı paylaşım da olabilir, dupe de.
+Web taraması ayrıştıramadı: "Manzara" adlı be kayıtları başka adalarda (Bilge Türk
+44784, Mercan Kent 44780); Yandex "Belören Manzara Evleri" pini 40.001192/32.596484 =
+Mercan Kent konumu (44780), bizim beloren kaydıyla tutarlı, bu parselle İLGİSİZ.
+ÖZGÜN'E: 44776/3'teki iki bloğun (11+10 kat) tabelasında ne yazıyor — Manzara mı,
+Gülkent mi, Dostlar Birikim mi? (Çözüme göre kalan ikisi dupe/redirect.)
+Üç metin de tapu verisini zaten taşıyor; çelişki çözülene dek üçüne de yeni iddia
+eklenmedi (2026-08-07 zenginleştirme turu bu kaydı bilinçli atladı).
