@@ -179,8 +179,13 @@ Anasayfa sitemap girdisine lastModified eklendi (2026-08-06 künye değişimi).
    başla (beloren-manzara, panorama-plus, trend-life, billur, dogasu-evleri,
    selvi-evleri, ankalux, arissa-botanik, cakirpark, guzel-belde, mavikent,
    oz-gimat, akduzen, goksu-aura, kafdagi, mercan-smart)
-Not: GSC Sitemaps bölümünden sitemap.xml'i "yeniden gönder"mek kota YEMEZ —
-yarın ilk iş o, sonra URL istekleri.
+Not: GSC Sitemaps bölümünden sitemap.xml'i "yeniden gönder"mek kota YEMEZ.
+DURUM (07.08 ~21:00, Chrome+GSC canlı): sitemap yeniden GÖNDERİLDİ ("başarıyla
+gönderildi"; tablo: 1.523 keşfedilen sayfa, son okuma 7 Ağu). Anasayfa için
+dizin isteği DENENDİ → "Kota Aşıldı — yarın tekrar deneyin" (kota takvim
+günü değil, dünkü isteklerin 24 saatlik penceresi; yarın sabah dene).
+GSC Genel Bakış notu: tıklama eğrisi son haftalarda ~110/güne çıktı
+(dönem toplamı 1.644); dizin: 1.070 eklendi / 643 dışarıda.
 
 ### Zenginleştirme durumu + veri notu
 3. parti commit'lendi (12 site, e8fd4a2). Bu oturum ek olarak: Panorama Garden
