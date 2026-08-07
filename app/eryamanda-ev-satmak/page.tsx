@@ -135,7 +135,14 @@ export default function EvSatmakPage() {
       </header>
 
       <section className="mt-12">
-        <h2 className="text-2xl">Satış Süreci Adım Adım</h2>
+        <h2 className="text-2xl">Eryaman&apos;da Ev Satış Süreci Nasıl İşler?</h2>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-body">
+          Eryaman&apos;da ev satışı beş adımda ilerler: sitenizdeki gerçekleşen satışlara dayalı
+          değerleme, fotoğraf ve ilanla hazırlık-tanıtım, alıcı eleme ve gösterim, pazarlık ve
+          tapu-teslim. Şirin Gayrimenkul olarak bu adımların tamamını ev sahibi adına
+          yürütüyoruz: telefonlara biz bakarız, gösterimleri biz planlarız, tapu gününü biz
+          koordine ederiz — son karar her adımda sizde kalır.
+        </p>
         <div className="mt-6 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {adimlar.map((adim, i) => (
             <Reveal key={adim.baslik} delay={(i % 3) * 70} className="h-full">
@@ -169,11 +176,16 @@ export default function EvSatmakPage() {
 
       <section className="mt-12 max-w-3xl">
         <Reveal>
-          <h2 className="text-2xl">Eryaman&apos;da Değilseniz</h2>
+          <h2 className="text-2xl">Eryaman&apos;daki Evimi Uzaktan Satabilir miyim?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Tayin, iş, yurt dışı ya da miras — Eryaman&apos;daki evinizi uzaktan da satabilirsiniz:
-            değerleme görüşmesi telefonla veya görüntülü yapılır, gösterimleri biz yönetiriz,
-            tapu günü için kapsamı dar tutulmuş bir vekâlet yeterlidir. Ayrıntılar{" "}
+            Evet — Eryaman&apos;daki evinizi şehir dışından, hatta yurt dışından da
+            satabilirsiniz. Değerleme görüşmesi telefonla veya görüntülü yapılır, gösterimleri
+            biz yönetiriz; tapu günü için kapsamı dar tutulmuş bir vekâlet yeterlidir. Tayin,
+            iş ya da miras — hangi sebeple uzakta olursanız olun sürecin Eryaman ayağını biz
+            üstleniriz.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Ayrıntılar{" "}
             <Link
               href="/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama"
               className="font-semibold text-gold-dark hover:underline"
@@ -187,14 +199,17 @@ export default function EvSatmakPage() {
 
       <section className="mt-12 max-w-3xl">
         <Reveal>
-          <h2 className="text-2xl">Evinizi Hızlı Satmanın Yolu</h2>
+          <h2 className="text-2xl">Eryaman&apos;da Evimi Hızlı Satmak İçin Ne Yapmalıyım?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Hızlı ev satmanın sırrı ilan çokluğu değil, <strong>doğru fiyatla çıkmaktır</strong>:
-            piyasanın üzerinde başlayan ilan aylarca bekler, sonra art arda indirimlerle
-            &quot;pazarlıklı ev&quot; izlenimi verir. Emsal satışlara dayanan gerçekçi bir fiyat,
-            derli toplu bir sunum ve ciddi alıcının hızla ayrıştırılması — Eryaman&apos;da
-            satışları hızlandıran üç şey budur. Eviniz bir süredir satılmıyorsa da başlangıç
-            noktası aynıdır: fiyatı ve sunumu birlikte gözden geçirmek.
+            Eryaman&apos;da evi hızlı satmanın yolu ilan çokluğu değil,{" "}
+            <strong>doğru fiyatla çıkmaktır</strong>: emsal satışlara dayanan gerçekçi bir
+            fiyat, derli toplu bir sunum ve ciddi alıcının hızla ayrıştırılması — satışları
+            hızlandıran üç şey budur. Piyasanın üzerinde başlayan ilan aylarca bekler, sonra
+            art arda indirimlerle &quot;pazarlıklı ev&quot; izlenimi verir.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Eviniz bir süredir satılmıyorsa da başlangıç noktası aynıdır: fiyatı ve sunumu
+            birlikte gözden geçirmek.
           </p>
         </Reveal>
       </section>
@@ -203,10 +218,14 @@ export default function EvSatmakPage() {
         <Reveal>
           <h2 className="text-2xl">Neden Şirin Gayrimenkul?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Genel bir portal değil, Eryaman&apos;a gömülü bir ofisiz: 11 mahallenin her sitesinin
-            envanterini tapu kayıtlarına dayanarak tek tek tutuyoruz. Bu, dairenize fiyat
-            konuşurken &quot;mahalle ortalaması&quot;yla değil, kendi sitenizin gerçek
-            hareketliliğiyle konuşmamız demek. Satış rehberlerimizi de aynı dürüstlükle yazdık:{" "}
+            Şirin Gayrimenkul, Eryaman&apos;da genel bir portal değil, bölgeye gömülü bir yerel
+            ofistir: 11 mahallenin her sitesinin envanterini tapu kayıtlarına dayanarak tek tek
+            tutuyoruz. Bu, dairenize fiyat konuşurken &quot;mahalle ortalaması&quot;yla değil,
+            kendi sitenizin gerçek hareketliliğiyle konuşmamız; satışı da ilan verip beklemeden,
+            süreci adım adım yöneterek yürütmemiz demektir.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Satış rehberlerimizi de aynı dürüstlükle yazdık:{" "}
             <Link href="/blog/eryamanda-ev-satis-sureci" className="font-semibold text-gold-dark hover:underline">
               satış süreci adım adım
             </Link>{" "}
@@ -224,19 +243,21 @@ export default function EvSatmakPage() {
         <Reveal>
           <h2 className="text-2xl">İlk Görüşme Neye Benzer?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Aramakta tereddüt edilmesinin sebebi genelde belirsizliktir. İlk görüşme bir satış
-            konuşması değil, bir durum tespitidir: dairenin sitesi, katı, durumu ve tapu tipi
-            üzerinden konuşuruz; sonunda elinizde gerçekçi bir fiyat aralığı ve &quot;bu evi
-            satmak için önce şunu yapmalı&quot; diyebileceğimiz kısa bir yol haritası olur. Devam
-            etmeye karar vermeseniz de o bilgi sizde kalır — evinizi bize emanet etme
-            zorunluluğunuz yoktur, yetki sözleşmesi ayrı ve sonraki bir adımdır.{" "}
+            Eryaman&apos;da satış için ilk görüşme bir satış konuşması değil, bir durum
+            tespitidir: dairenin sitesi, katı, durumu ve tapu tipi üzerinden konuşuruz; sonunda
+            elinizde gerçekçi bir fiyat aralığı ve &quot;bu evi satmak için önce şunu
+            yapmalı&quot; diyebileceğimiz kısa bir yol haritası olur. Devam etmeye karar
+            vermeseniz de o bilgi sizde kalır — yetki sözleşmesi ayrı ve sonraki bir adımdır.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Evinizi bize emanet etme zorunluluğunuz yoktur; yetkinin kapsamını ve süresini ilk
+            görüşmede madde madde anlatırız — ne imzaladığınızı bilmeden hiçbir adım atılmaz.{" "}
             <strong className="font-semibold text-navy">
               Süreci bize bıraktığınızda telefonunuz da susar:
             </strong>{" "}
             ilanda bizim numaramız yer alır, gün boyu gelen &quot;fiyat düşer mi&quot; aramalarını
             ve portföy toplayan aracıları biz karşılarız; siz yalnızca ciddi alıcı çıktığında
-            aranırsınız. Yetkinin kapsamını ve süresini de ilk görüşmede madde madde anlatırız —
-            ne imzaladığınızı bilmeden hiçbir adım atılmaz.
+            aranırsınız.
           </p>
         </Reveal>
       </section>

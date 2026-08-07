@@ -105,13 +105,15 @@ llms.txt + dateModified). Kalanlar sırayla:
 - **#7 Site künyesi paketi:** kunye alanları (blok/konut/parsel m²/tapu tipi — %61-97 regex'le
   çekilebilir, ölçüldü) + görünür künye tablosu + numberOfAccommodationUnits + "kaç blok?" SSS.
   Yarı-otomatik çıkarım + parça parça onay.
-- **#8 Ev sahibi içerik kümesi:** kira sözleşmesi yenileme (~25 autocomplete boşluğu),
-  ev sahibinin hakları (çatı), depozito rehberi (TBK 342/347, ihtiyatlı dil).
+- ~~**#8 Ev sahibi içerik kümesi**~~ KAPATILDI (2026-08-07 Özgün): jenerik konu — "belirlediğimiz
+  mahallelerin kralı olmak dışında bir şey yapmayacağız, gereksiz tıklanma almak istemiyoruz."
+  Alakasız şehirden gelen tıklama istenmeyen sinyal; yeniden önerme.
 - **#9 Değerleme formu progresif:** Adım 1 = site autocomplete + sat/kirala; Unbounce verisi
   3 alan %10,1 vs 9 alan %3,6.
 - **#11 Mahalle site listesi filtresi** + komşu mahalle karşılaştırma tablosu (fiyatsız).
-- **#12 4. araç:** Değer Artışı Kazancı (satış vergisi) hesaplayıcı — Yİ-ÜFE endeksleme,
-  istisna/tarife sabitleri tek config'de.
+- ~~**#12 4. araç: Değer Artışı Kazancı hesaplayıcı**~~ KAPATILDI (2026-08-07 Özgün): aynı karar —
+  jenerik hesaplayıcı ülke çapından alakasız tıklama çeker; yeni jenerik araç/rehber sayfası
+  AÇILMAZ (mevcut 4 araç yerinde kalır). GMSİ/tahliye/miras fikirleri de bu kapsamda kapalı.
 - **Özgün'ün sahası:** emlakclick/bilgiemlak-firmalar/ilaneryaman dizin kayıtları; geçmiş işlem
   vitrini verisi (fiyatsız); GBP yorumlarından 2-3 alıntı seçimi; TR mobil SERP'te AI Overview
   manuel kontrolü; fotoğraf + backlink.

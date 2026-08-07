@@ -127,13 +127,6 @@ export default function KirayaVermekPage() {
           </CtaButton>
         </div>
         <OfisDurumu className="mt-3" />
-        {/* Niyet denetimi (2026-07-29): hero'da tıklanabilir CTA yoktu; hizmet
-            niyetli ziyaretçi ilk ekranda eylem yolu görmeli. */}
-        <div className="mt-6">
-          <CtaButton href="/ev-degerleme" variant="primary" className="px-8">
-            Kira Değerlendirmesi İsteyin
-          </CtaButton>
-        </div>
       </header>
 
       <section className="mt-10 max-w-3xl rounded-2xl border border-gold/40 bg-gold/10 p-6">
@@ -145,7 +138,8 @@ export default function KirayaVermekPage() {
             orada bulur. Kutunun konusu artık ev sahibinin 1 numaralı korkusu. */}
         <h2 className="text-xl">Asıl Risk Kira Değil, Kiracıdır</h2>
         <p className="mt-3 text-base leading-relaxed text-body">
-          Yanlış kira evinizi birkaç ay boş bekletir; <strong className="font-semibold text-navy">
+          Eryaman&apos;da kiraya vermenin asıl riski kira değil, kiracıdır: yanlış kira evinizi
+          birkaç ay boş bekletir; <strong className="font-semibold text-navy">
           yanlış kiracı yıllarca uğraştırır</strong>. Bu yüzden işin en çok emek verdiğimiz kısmı
           ilan vermek değil, adayı elemektir: çalışma düzeni, ödeme gücü ve referanslar görüşme
           aşamasında sorgulanır; evinize yalnızca uygun bulduğumuz adaylar gelir. İlan trafiğini
@@ -158,7 +152,14 @@ export default function KirayaVermekPage() {
       </section>
 
       <section className="mt-12">
-        <h2 className="text-2xl">Kiralama Süreci Adım Adım</h2>
+        <h2 className="text-2xl">Eryaman&apos;da Ev Kiraya Verme Süreci Nasıl İşler?</h2>
+        <p className="mt-4 max-w-3xl text-base leading-relaxed text-body">
+          Eryaman&apos;da evinizi kiraya verme süreci dört adımda ilerler: sitenizdeki
+          gerçekleşen kiralamalara dayalı kira tespiti, doğru fotoğraflarla tanıtım ve ilan,
+          adayların ödeme gücü ve referans düzeyinde elenmesi, son olarak sözleşme ve teslim
+          tutanağı. Aramaları biz karşılarız, evinize yalnızca elenmiş adaylar gelir; kiracı
+          kararı her zaman sizindir.
+        </p>
         <div className="mt-6 grid gap-5 sm:grid-cols-2">
           {adimlar.map((adim, i) => (
             <Reveal key={adim.baslik} delay={(i % 2) * 70} className="h-full">
@@ -175,11 +176,11 @@ export default function KirayaVermekPage() {
         <Reveal>
           <h2 className="text-2xl">Bize Ulaştıktan Sonra Ne Oluyor?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Aramakta tereddüt edilmesinin sebebi genelde belirsizliktir: &quot;bir arasam sonra ne
-            olacak?&quot; İlk görüşme bir pazarlama konuşması değil, birkaç dakikalık bir durum
-            tespitidir: dairenin sitesi, katı, oda sayısı ve ne zaman boşalacağı. Sonunda elinizde
-            gerçekçi bir kira aralığı olur — devam etmeye karar vermeseniz de o bilgi sizde kalır,
-            evinizi bize emanet etme zorunluluğunuz yoktur.
+            Eryaman&apos;da evini kiraya verecek bir ev sahibi bize ulaştığında ilk görüşme bir
+            pazarlama konuşması değil, birkaç dakikalık bir durum tespitidir: dairenin sitesi,
+            katı, oda sayısı ve ne zaman boşalacağı konuşulur. Sonunda elinizde gerçekçi bir
+            kira aralığı olur; devam etmeye karar vermeseniz de o bilgi sizde kalır, evinizi
+            bize emanet etme zorunluluğunuz yoktur.
           </p>
           <p className="mt-4 rounded-2xl border border-border bg-surface-muted p-5 text-base leading-relaxed text-body">
             <strong className="font-semibold text-navy">Sonrasında telefonunuz susar.</strong>{" "}
@@ -193,14 +194,17 @@ export default function KirayaVermekPage() {
 
       <section className="mt-12 max-w-3xl">
         <Reveal>
-          <h2 className="text-2xl">Eryaman&apos;da Değilseniz: Uzaktan Kiraya Verme</h2>
+          <h2 className="text-2xl">Eryaman&apos;daki Evimi Uzaktan Kiraya Verebilir miyim?</h2>
           <p className="mt-4 text-base leading-relaxed text-body">
-            Tayin, iş ya da yurt dışı — Eryaman&apos;daki evinizi burada olmadan da kiraya
-            verebilirsiniz. Anahtar bizde durur, gösterimleri biz yaparız; kiracı adayını
-            çalışma ve ödeme düzeni üzerinden ön elemeden geçirir, size yalnızca uygun bulduğumuz
-            adayları iletiriz. Sözleşme ve teslim aşamasında evin durumunu fotoğraflı tutanakla
-            kayda alır, demirbaş listesini ve sayaç değerlerini yazılı hâle getiririz; süreç
-            boyunca muhatabınız tek kişi olur. Ayrıntılar için{" "}
+            Evet — Eryaman&apos;daki evinizi burada olmadan da kiraya verebilirsiniz: anahtar
+            bizde durur, gösterimleri biz yaparız; kiracı adayları çalışma ve ödeme düzeni
+            üzerinden ön elemeden geçer, size yalnızca uygun bulduğumuz adaylar iletilir.
+            Tayin, iş ya da yurt dışı — hangi sebeple uzakta olursanız olun süreç boyunca
+            muhatabınız tek kişi olur.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-body">
+            Sözleşme ve teslim aşamasında evin durumunu fotoğraflı tutanakla kayda alır,
+            demirbaş listesini ve sayaç değerlerini yazılı hâle getiririz. Ayrıntılar için{" "}
             <Link
               href="/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama"
               className="font-semibold text-gold-dark hover:underline"

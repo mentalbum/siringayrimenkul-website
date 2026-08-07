@@ -135,6 +135,28 @@ export default function KiraArtisiPage() {
         </CtaButton>
       </CtaBanner>
 
+      <div className="mt-8 max-w-3xl text-xs leading-relaxed text-body">
+        <p>
+          Kaynak: Hesaplama, TÜİK&apos;in her ay yayımladığı{" "}
+          <strong>12 aylık ortalamalara göre TÜFE değişim oranını</strong> esas alır. Güncel
+          orana{" "}
+          <a
+            href="https://data.tuik.gov.tr/Kategori/GetKategori?p=enflasyon-ve-fiyat-106"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-gold-dark underline-offset-2 hover:underline"
+          >
+            TÜİK&apos;in resmî TÜFE istatistik sayfasından (data.tuik.gov.tr)
+          </a>{" "}
+          ulaşabilirsiniz.
+        </p>
+        <p className="mt-2">
+          Not: Bu araç bilgilendirme amaçlıdır; bağlayıcı hukuki veya mali danışmanlık yerine
+          geçmez. Sözleşmenize uygulayacağınız oranı, yenileme ayınızdaki TÜİK duyurusundan
+          teyit etmenizi öneririz.
+        </p>
+      </div>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
