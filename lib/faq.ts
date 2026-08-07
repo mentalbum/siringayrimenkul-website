@@ -186,7 +186,11 @@ export function getEtapFaq(etap: EtapEntry, mahalle: Mahalle): FaqItem[] {
     },
     {
       soru: `Eryaman ${etap.no}. Etap'ta kaç site veya ada var?`,
-      cevap: `Eryaman ${etap.no}. Etap'ta ${siteConfig.name} olarak tanıdığımız ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`,
+      // Kayıtlarımız resmî listenin alt kümesiyse sayıyı etap toplamı gibi sunma.
+      cevap:
+        etap.adalar.length === etap.resmiAdaSayisi
+          ? `Eryaman ${etap.no}. Etap'ta ${siteConfig.name} olarak tanıdığımız ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`
+          : `Eryaman ${etap.no}. Etap'ın resmî ada listesi ${etap.resmiAdaSayisi} adayı kapsıyor; ${siteConfig.name} olarak bu adalardan ${etap.adalar.length} tanesini ve üzerlerindeki ${etap.siteler.length} site/rezidansı tek tek tanıyoruz.`,
     },
     {
       soru: `Eryaman ${etap.no}. Etap'ta evimi satmak veya kiraya vermek istiyorum, nasıl başvurabilirim?`,

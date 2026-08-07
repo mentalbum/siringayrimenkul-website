@@ -821,7 +821,7 @@ Yandex geo kaydı (geo/nover_west_life/3392152215) 32.663/39.9877 gösteriyor �
 
 ## Sorgu-evreni operasyonu (2026-07-23) — kalan büyük işler
 805 gerçek autocomplete sorgusu tarandı; 9 yeni rehber + 8 sayfa güçlendirmesi yayınlandı. Özgün'le konuşulacak / sonraki tur adayları:
-- **Eryaman 1./2./3. Etap sayfaları**: şablon hazır ama etap verisi yalnız Tunahan kayıtlarında; Altay (1. Etap), ŞOA (2. Etap), Şeyh Şamil (3. Etap) ada kayıtlarına doğrulanmış etap alanı işlenirse 3 yeni etap sayfası açılır ("eryaman 3 etap emlakçılar" gerçek arama). Kroki kaynakları: eryaman4/5.com benzeri; blok adları autocomplete'te (2. Etap: Demirer/Eston/İçtaş; 4: Öztaş/Yüksel/Yardımcı/Klima/Soyak).
+- ~~**Eryaman 1./2./3. Etap sayfaları**~~ → **KAPANDI (2026-08-07): üç sayfa da açıldı**, resmî ada listeleriyle (lib/etap-onayli.ts kaynak satırları): 1. Etap = tapuya tescilli Eryaman TYY Yönetim Planı Bölüm XV (eryaman1.com/mevzuat PDF'i), 2. Etap = Kara Eryaman II. Etap TYY Yönetim Planı (canlı eryaman2.com ele geçirilmiş; Wayback 20090904165148 snapshot'ı), 3. Etap = eryaman3.com/Ada-Bilgileri JS ada haritası (45 ada). Kalan açık işler aşağıda ayrı başlıkta.
 - **Kira sözleşmesi örneği sayfası** (14 sorgu): indirilebilir PDF/Word şablonu hukuki sorumluluk taşır — Özgün kararı. Alternatif: "madde madde açıklamalı örnek" rehberi (şablonsuz) yazılabilir.
 - **Kira artışı aracına aylık TÜFE bloğu** (ay-bazlı sorgular): aylık el bakımı ister — Özgün'ün "aylık yayın sistemi istemem" çizgisine takılabilir; TÜİK verisi otomatik çekilebilirse değerlendirilir.
 - Rakip-marka ve dua sorguları bilinçli atlandı; alıcı-ağırlıklı 276 sorgu mevcut mahalle/site sayfalarınca karşılanıyor.
@@ -1369,3 +1369,26 @@ Mercan Kent konumu (44780), bizim beloren kaydıyla tutarlı, bu parselle İLGİ
 Gülkent mi, Dostlar Birikim mi? (Çözüme göre kalan ikisi dupe/redirect.)
 Üç metin de tapu verisini zaten taşıyor; çelişki çözülene dek üçüne de yeni iddia
 eklenmedi (2026-08-07 zenginleştirme turu bu kaydı bilinçli atladı).
+
+## Etap sayfaları operasyonu (2026-08-07) — 1/2/3 açıldı, kalan sorular
+"N. etap emlakçı" sorgu ailesi için 1., 2., 3. Etap sayfaları resmî ada listeleriyle açıldı
+(kaynaklar lib/etap-onayli.ts'te). Beş etabın listeleri ikili kesişimlerde tamamen ayrık.
+Kalan açık işler:
+- **ÖZGÜN'E — 1. Etap'ın ŞOA'ya taşan bloğu (15 ada yayım dışı):** Tapuya tescilli Eryaman
+  TYY Yönetim Planı ada listesinde 17480-82 ve 17487-98 de VAR; ama bunlar bugünkü ŞOA
+  sınırında ve defter kaydı Eston 17487-90'ı "2. Etap Eston'u" sayıyor (İçtaş 17498, Cumhuriyet
+  Sitesi 17491 de aynı blokta). Soru: sahada bu siteler kaçıncı etap sayılıyor? "1. Etap" dersen
+  ETAP_1_ADALARI'na eklenir (Eston/İçtaş/Cumhuriyet "1. Etap" etiketi alır ve ŞOA altında ikinci
+  bir 1. Etap sayfası doğar — o zaman etap sayfasını mahalleden bağımsızlaştırmak gerekebilir);
+  "2. Etap" dersen resmî plana rağmen dışarıda kalırlar, mevcut durum korunur.
+- **ŞOA'daki gevşek etap:"2" işaretleri (iç veri, görünür etkisi yok):** 17483 (hiçbir resmî
+  listede yok), 17487-90/17498 (yukarıdaki blok) ve 46638/39/41/44/45/46 (yeni ŞOA blokları,
+  resmî listede yok) — resmî 2. Etap sayfasında zaten görünmüyorlar; işaretler Özgün teyidi
+  olmadan silinmedi.
+- **Altay'daki gevşek etap:"1" işaretleri:** 17527, 45889/90, 45898/99, 46404 planda yok →
+  etiketsiz kaldılar (5. Etap'taki 17 site / 11 ada durumunun benzeri).
+- **1. Etap planındaki 3-4 eksik satır:** belge "70 ada" der, 67 satır basılmış (17538 çift);
+  aday boşluk 17525-33 — gerekirse TKGM nokta sorgusuyla kapatılır, UYDURULMADI.
+- **3. Etap kapsama boşluğu:** resmî 45 adadan 23'ü repoda kayıtsız (Eston 1 17328-32,
+  Yardımcı 17321/17343-45/17358, Sutek 17352-54 dahil — yukarıdaki "3. ETAP KUYRUĞU"
+  başlığıyla birleşir); 2. Etap'ta 17476/78/79 (yönetim binası/iş merkezi/okul, konut dışı) kayıtsız.

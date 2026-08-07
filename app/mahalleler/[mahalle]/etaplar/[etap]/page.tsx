@@ -51,6 +51,9 @@ export default async function EtapPage({ params }: Props) {
   if (!mahalle || !etap) notFound();
 
   const digerEtaplar = getAllEtaplar(mahalleSlug).filter((item) => item.no !== etap.no);
+  // Resmî ada listesi kayıtlarımızdan genişse bunu açıkça söylüyoruz; "22 ada
+  // bulunuyor" demek 45 adalık etapta yanlış sayı iddiası olurdu.
+  const tamKapsama = etap.adalar.length === etap.resmiAdaSayisi;
 
   const etapJsonLd = {
     "@context": "https://schema.org",
@@ -81,10 +84,23 @@ export default async function EtapPage({ params }: Props) {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman {etap.no}. Etap</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman {etap.no}. Etap bölgesi {mahalle.isim} içinde yer alıyor; bu bölgede{" "}
-          {etap.siteler.length} site/rezidans ve {etap.adalar.length} ada bulunuyor.
+          {tamKapsama
+            ? `Eryaman ${etap.no}. Etap bölgesi ${mahalle.isim} içinde yer alıyor; bu bölgede ${etap.siteler.length} site/rezidans ve ${etap.adalar.length} ada bulunuyor.`
+            : `Eryaman ${etap.no}. Etap bölgesi ${mahalle.isim} içinde yer alıyor; etabın resmî ada listesi ${etap.resmiAdaSayisi} adayı kapsıyor, bu adalardan ${etap.adalar.length} tanesi ve üzerlerindeki ${etap.siteler.length} site/rezidans arşivimizde kayıtlı.`}
+          {/* 1. Etap cümlesinin kaynağı eryaman1.com/hakkimizda (yönetimin kendi tanıtımı). */}
+          {etap.no === "1" &&
+            " Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olan bu etap 1990'da yerleşime açıldı; 457 apartmandaki 6.371 konut tek merkezden ısıtılıyor."}
+          {etap.no === "3" &&
+            " Etabın toplu yapı yönetimi, etap içindeki Özar İş Merkezi'nde hizmet veriyor."}
           {etap.no === "5" &&
             " Bölge, adını verdiği Eryaman 5 metro istasyonuna ev sahipliği yapıyor; Ankaray ve metro hattına yürüme mesafesinde ulaşım sağlıyor."}
+        </p>
+        {/* "emlakçı" kelimesi bilinçli ve birebir: "eryaman N. etap emlakçı"
+            sorgu ailesi başlıkta vardı ama gövde metninde hiç geçmiyordu. */}
+        <p className="mt-3 text-base leading-relaxed text-body">
+          Eryaman {etap.no}. Etap&apos;ta emlakçı arayan ev sahipleri için bu sayfa bir ilan
+          panosu değil etap arşivi: adaların tapu kimliğini ve sitelerin blok-konut yapısını
+          tek tek tutuyor, satışta ve kiralamada fiyatı bu kayıtlarla belirliyoruz.
         </p>
       </header>
 
