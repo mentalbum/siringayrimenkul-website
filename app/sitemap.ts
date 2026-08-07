@@ -44,10 +44,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
+  // Site sayfalarının ŞABLONU bu tarihte değişti: başlıklar/SSS/bağ metinleri
+  // alıcı dilinden ev sahibi diline çevrildi ve marka eki başlıktan kalktı.
+  // lastModified içerik dosyasının değişim tarihinden geliyor; şablon değişince
+  // içerik dosyası değişmiyor ama SAYFA değişiyor — Google eski taramada kalıp
+  // SERP'te bayat "Satılık Daire ve Kiralık Daire" başlıklarını göstermeye devam
+  // ediyordu. Taban tarihi, tüm site sayfalarının yeniden taranmasını tetikler.
+  // Şablon bir daha topluca değişirse bu tarih güncellenmeli.
+  const SABLON_DEGISIMI = new Date("2026-08-07");
   const siteSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getSitelerByMahalle(mahalle.slug).map((site) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/${site.slug}`,
-      lastModified: getSiteLastModified(mahalle.slug, site.slug),
+      lastModified: (() => {
+        const icerik = getSiteLastModified(mahalle.slug, site.slug);
+        return icerik > SABLON_DEGISIMI ? icerik : SABLON_DEGISIMI;
+      })(),
       changeFrequency: "monthly" as const,
       priority: 0.7,
       // Sayfada görsel /_next/image?url=... proxy'si üzerinden servis ediliyor

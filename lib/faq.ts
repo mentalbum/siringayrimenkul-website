@@ -85,13 +85,18 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
       semaDisi: true,
       soru: `${site.isim} emlakçısı kimdir?`,
       cevap: tipi
-        ? `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitedeki satılık/kiralık seçenekler hakkında bilgi vermekten mutluluk duyarız.`
-        : `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor ve bu sitedeki satılık/kiralık seçenekler hakkında bilgi verebiliyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
+        ? `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor; ${site.isim} ${dahiBaglaci(site.isim)} yakından tanıdığımız ${tipi} bir yerleşim. Bu sitede evi olan sahiplerin satış ve kiralama sürecini uçtan uca yönetiyoruz.`
+        : `${siteConfig.name}, ${hizmetBolgesi(mahalle)} emlak danışmanlığı yapıyor ve bu sitede evi olan sahiplerin satış ve kiralama sürecini uçtan uca yönetiyor. Detaylar için bizimle iletişime geçebilirsiniz.`,
     },
     {
+      // EV SAHİBİ dilinde (2026-08-07): eski soru "satılık veya kiralık daire
+      // var mı?" idi — telefon eden müşteriler birebir bu soruyu soruyordu ve
+      // Google başlık türetirken sayfadaki bu kalıbı kullanıyordu. Soru artık
+      // hedef kitlenin sorusu; alıcıyı mağazaya yönlendiren cümle cevabın
+      // içinde duruyor (filtre işlevi korunuyor).
       semaDisi: true,
-      soru: `${bulunmaHali(site.isim)} satılık veya kiralık daire var mı?`,
-      cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yayınlanır. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın; ${bulunmaHali(site.isim)} portföyümüze eklenen daireleri size ilk biz haber verelim.`,
+      soru: `${bulunmaHali(site.isim)} dairesi olanlara hangi hizmetleri veriyorsunuz?`,
+      cevap: `${bulunmaHali(site.isim)} evi olan sahipler için üç işi üstleniyoruz: emsallere dayalı değerleme, satış temsili (tanıtım, alıcı görüşmeleri, tapu) ve kiralama yönetimi (kira tespiti, kiracı doğrulama, sözleşme). Daire arayanlar içinse güncel ilanlarımız sahibinden.com mağazamızda yayınlanır. Bize ${siteConfig.phoneDisplay} numarasından ulaşabilirsiniz.`,
     },
   ];
 
@@ -119,7 +124,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   items.push({
     semaDisi: true,
     soru: `${bulunmaHaliKi(site.isim)} daire fiyatları ne durumda?`,
-    cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, ${bulunmaHaliKi(site.isim)} gerçekleşen satış ve kiralamalardan okunur. Dairenizin veya almak istediğiniz dairenin güncel değerini öğrenmek için bizi ${siteConfig.phoneDisplay} numarasından arayın — siteyi blok blok tanıyoruz.`,
+    cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, ${bulunmaHaliKi(site.isim)} gerçekleşen satış ve kiralamalardan okunur. Dairenizin güncel değerini öğrenmek için bizi ${siteConfig.phoneDisplay} numarasından arayın — siteyi blok blok tanıyoruz.`,
   },
   {
     semaDisi: true,
@@ -203,17 +208,21 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
   const dogrulanmisEtap = adaOnayliEtap(ada.no);
   const etapNot = dogrulanmisEtap ? ` ve Eryaman ${dogrulanmisEtap}. Etap sınırları içindedir` : "";
   return [
+    // EV SAHİBİ dilinde (2026-08-07): eski iki soru "satılık/kiralık daire var
+    // mı?" idi — alıcı sorusu. Telefonla arayanlar birebir bunu soruyordu ve
+    // Google, sayfa başlıklarını türetirken bu kalıpları kullanıyordu. Sorular
+    // artık evi olan sahibin sorusu; alıcı yönlendirmesi cevap içinde sürüyor.
     {
-      soru: `${label} Ada'da satılık daire var mı?`,
-      cevap: `Portföyümüz sürekli değişiyor; ${label} Ada'daki (${siteIsimleri}) güncel satılık ilanlarımıza sahibinden.com mağazamızdan ulaşabilirsiniz. Aradığınız daire şu anda listede yoksa bizi ${siteConfig.phoneDisplay} numarasından arayın — bu adada portföyümüze eklenen daireleri size ilk biz haber verelim.`,
+      soru: `${label} Ada'daki dairemi satmak istiyorum, nasıl ilerliyoruz?`,
+      cevap: `İlk adım doğru fiyat: ${label} Ada'daki (${siteIsimleri}) dairenizi bu adadaki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz; ardından tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın. (Daire arayanlar için güncel ilanlarımız sahibinden.com mağazamızdadır.)`,
     },
     {
-      soru: `${label} Ada'da kiralık daire var mı?`,
-      cevap: `Kiralık portföyü satılıktan da hızlı döner; ${label} Ada için güncel kiralık seçeneklerini sahibinden.com mağazamızdan takip edebilir veya bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz. Kiraya vermek isteyen ev sahipleri için de doğru kira tespitini birlikte yapıyoruz.`,
+      soru: `${label} Ada'daki dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
+      cevap: `Doğru kira, bu adadaki emsal dairelerin gerçekleşen kiralarından okunur; ilan sitelerindeki rakamlar çoğu zaman yanıltıcıdır. Kiralamayı bize emanet ettiğinizde dairenize özel kira tespitini biz yapıyoruz; kiracı doğrulama, sözleşme ve teslim tutanağı dahil süreci üstleniyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayabilirsiniz.`,
     },
     {
       soru: `${label} Ada'daki daire fiyatları ne durumda?`,
-      cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, bu adadaki ve ${tekSite ? bulunmaHaliKi(siteAdi) : "çevresindeki sitelerde"} gerçekleşen satış ve kiralamalardan okunur. Dairenizin veya almak istediğiniz dairenin güncel değeri için bizi ${siteConfig.phoneDisplay} numarasından arayın.`,
+      cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, bu adadaki ve ${tekSite ? bulunmaHaliKi(siteAdi) : "çevresindeki sitelerde"} gerçekleşen satış ve kiralamalardan okunur. Dairenizin güncel değeri için bizi ${siteConfig.phoneDisplay} numarasından arayın.`,
     },
     {
       soru: `${label} Ada hangi sitede yer alıyor?`,

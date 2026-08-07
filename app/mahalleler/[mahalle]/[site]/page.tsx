@@ -40,9 +40,15 @@ import { bulunmaHali, tamlayanHali } from "@/lib/turkce";
 // bağlantı çalışması — anchor çeşitliliği trafikle korele; 1. sıra araştırması
 // A2, defter 2026-07-31). Kalıp seçimi sayfa slug'ına göre kayar ki aynı komşu
 // her sayfadan aynı kalıbı almasın.
+// Kalıplar EV SAHİBİ niyetinde (2026-08-07): eski "satılık daire" / "kiralık
+// daire" bağ metinleri ALICI dilindeydi ve Google başlık türetirken bunları da
+// kullanıyor — kişiselleştirmesiz SERP'te site sayfalarının başlığı "X Satılık
+// Daire ve Kiralık Daire" biçiminde yeniden yazılmış görünüyordu; telefon eden
+// müşteriler de "sitede satılık var mı" diye soruyordu. Gelen bağ metni artık
+// hedef kitlenin (evini satacak/kiraya verecek sahip) diliyle örtüşüyor.
 const ANCHOR_KALIPLARI: ((ad: string) => string)[] = [
-  (ad) => `${bulunmaHali(ad)} satılık daire`,
-  (ad) => `${bulunmaHali(ad)} kiralık daire`,
+  (ad) => `${bulunmaHali(ad)} ev satmak`,
+  (ad) => `${bulunmaHali(ad)} evinizi kiraya vermek`,
   (ad) => `${ad} emlakçısı`,
   (ad) => `${bulunmaHali(ad)} emlak danışmanlığı`,
   (ad) => `${bulunmaHali(ad)} daire değerleme`,
@@ -98,20 +104,30 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // istiyorum eryaman emlakçı", "eryaman emlakçı") zaten 1. sıradayız.
     // Rakiplerin hiçbiri ev sahibine seslenmiyor — bu başlık tek başına
     // farklılaştırıyor. Yeni başlık eskisinden de kısa (80 → 68 karakter).
-    title: isimdeEryamanVar
-      ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
-      : eryamanda
-        ? isimBirdenCokMahallede(site.isim)
-          ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
-            // Eryaman" olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet,
-            // Çiğdem sitelerinin Eryaman Mahallesi kayıtları).
-            `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
-              mahalleKisaIsim(mahalle) === "Eryaman"
-                ? "Eryaman Mahallesi"
-                : `${mahalleKisaIsim(mahalle)} Eryaman`
-            }`
-          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman`
-        : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
+    // ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki site sayfalarında
+    // eklenmez (2026-08-07). Ekle birlikte başlık 85-95 karaktere çıkıyordu ve
+    // Google uzun başlıkları YENİDEN YAZIYOR — kişiselleştirmesiz SERP'te site
+    // sayfaları "Eryaman X Sitesi Satılık Daire ve Kiralık Daire — Emlakçısı"
+    // gibi ALICI dilinde uydurma başlıklarla görünüyordu (Özgün'ün müşteri
+    // gözlemiyle birebir: arayanlar "sitede satılık var mı" diye soruyor).
+    // Marka görünümde kaybolmuyor: WebSite şeması sayesinde Google, site adını
+    // başlığın üstünde ayrıca gösteriyor.
+    title: {
+      absolute: isimdeEryamanVar
+        ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
+        : eryamanda
+          ? isimBirdenCokMahallede(site.isim)
+            ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
+              // Eryaman" olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet,
+              // Çiğdem sitelerinin Eryaman Mahallesi kayıtları).
+              `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
+                mahalleKisaIsim(mahalle) === "Eryaman"
+                  ? "Eryaman Mahallesi"
+                  : `${mahalleKisaIsim(mahalle)} Eryaman`
+              }`
+            : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman`
+          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
+    },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
     // (1. sıra araştırması A1, defter 2026-07-31).
