@@ -473,8 +473,12 @@ export default async function MahallePage({ params }: Props) {
               Yenimahalle, Ankara — satılık ve kiralık daire süreçlerini yerinde yürütüyoruz.
             </>
           )}{" "}
-          Mahalledeki {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}{" "}
-          tapu yapısını, bloklarını ve emsallerini kayıt altında tutuyor; değerlemeyi ilan
+          {/* "emlakçılar" ÇOĞUL biçimi bilinçli ve birebir: "<mahalle> emlakçılar /
+              emlakçılar listesi" sorgu ailesi GSC'de görünüyor ama kelime sitede
+              hiç geçmiyordu (2026-08-07 tespiti). Doğal cümle içinde tutulmalı. */}
+          Bölgedeki emlakçılar arasında bizi ayıran şey kayıt tutma biçimimiz: mahalledeki{" "}
+          {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"} tapu
+          yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
           fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. Google&apos;da 5,0
           puanlı işletme profilimiz ve 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
           çalışıyoruz. {bulunmaHali(kisaIsim)} eviniz varsa{" "}

@@ -557,7 +557,9 @@ export default async function SitePage({ params }: Props) {
           <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
             ev sahibi hesap araçlarımız
           </Link>
-          {` elinizin altında. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Bu sayfada ilan yayınlamıyoruz — güncel ilanlarımız sahibinden.com mağazamızda. Bu sayfanın işi başka: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada; karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
+          {/* "emlakçılar" çoğulu bilinçli ve birebir ("<site> emlakçılar" sorgu
+              ailesi; kelime sitede hiç geçmiyordu — 2026-08-07). */}
+          {` elinizin altında. Bölgedeki emlakçılar içinde bu sayfayı ayıran şey ilan değil arşiv olması: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda. Karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
         <CtaButton
           href={siteConfig.sahibindenUrl}

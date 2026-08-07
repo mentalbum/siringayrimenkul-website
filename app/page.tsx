@@ -139,10 +139,12 @@ export default function HomePage() {
                 iddiası ise kanıtlı — 720 sayfanın tapu ve blok verisi bu sitede.
                 Rakip başlıklarının hiçbirinde benzer bir iddia yok. */}
             <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
+              {/* "emlakçılar" çoğulu bilinçli: "eryaman emlakçılar (listesi)"
+                  sorgu ailesi GSC'de var, kelime sitede geçmiyordu (2026-08-07). */}
               {mahalleSayisi} mahallede 720&apos;den fazla sitenin tapu ve blok bilgisini
-              tutuyoruz — Eryaman&apos;ın konut hafızasıyız. Satmak veya kiraya vermek
-              istediğiniz eviniz mi var? Fiyatı, sitenizi blok blok tanıyan yerel
-              emlakçınızla birlikte belirleyin.
+              tutuyoruz — Eryaman&apos;daki emlakçılar arasında ilçenin konut hafızasını
+              tutan ofis biziz. Satmak veya kiraya vermek istediğiniz eviniz mi var?
+              Fiyatı, sitenizi blok blok tanıyan yerel emlakçınızla birlikte belirleyin.
             </p>
 
             <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">
