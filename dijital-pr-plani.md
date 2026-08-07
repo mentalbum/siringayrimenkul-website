@@ -40,6 +40,13 @@
 
 ---
 
+> **KAPALI (Özgün kararı, 2026-08-07):** Basın/röportaj/bülten hattı (Öncelik 2,
+> 3 ve 4'ün tamamı: EmlakNews, Emlakkulisi, Emlaktasondakika, Ticari Hayat, NNC,
+> Anayurt, basinbultenleri.com, B2Press, Faselis) TAMAMEN kapatıldı — "işimize
+> etkisi olmaz, zaman kaybı." Bülten taslağı silindi. Bu hat YENİDEN ÖNERİLMEZ.
+> Planın yürürlükte kalan kısmı: Öncelik 1 (Bing, Apple, bulurum, sektortanitim),
+> Öncelik 5-6 (ATEM ziyareti, TTBS görünürlüğü ✓, DonanımHaber — düşük öncelik).
+
 ## ÖNCELİK 2 — Sektör basını PR: "Eryaman'ın konut hafızası: 720 sitenin tapu haritası"
 
 **Haber değeri değerlendirmesi: EVET, taşır.** Veri gazeteciliği açısı güçlü: tek bir yerel ofisin ~720 siteyi TKGM tapu verisiyle haritalandırması sektörde emsalsiz. Güncel kanca: EİDS (Elektronik İlan Doğrulama) Şubat 2026'da zorunlu oldu → "emlakta veri/dijitalleşme" gündemiyle birebir örtüşüyor. Bülten çerçevesi: "İlan değil, arşiv: Bir Eryaman emlakçısı ilçenin 30 yıllık kooperatif hafızasını dijitalleştirdi." (Fiyat rakamı YOK — hafıza/veri hikayesi.)
