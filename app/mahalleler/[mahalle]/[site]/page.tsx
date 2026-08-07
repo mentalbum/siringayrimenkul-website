@@ -500,16 +500,23 @@ export default async function SitePage({ params }: Props) {
             </div>
           )}
           {dogrulamaTarihi && (
-            // Tazelik + sorumluluk sinyali — koordinatı olmayan sayfalar da
-            // taşısın diye harita sütunundan buraya alındı (niyet denetimi).
-            <p className="text-xs text-muted">
-              Site bilgileri son doğrulama: {dogrulamaTarihi} · Derleyen:{" "}
+            // Veri kaynağı künyesi (ChatGPT istişaresi, 2026-08-07): "biz
+            // biliyoruz" demek yerine kanıt göster — sayfadaki bilginin HANGİ
+            // kaynaktan geldiğini açıkça söyleyen kutu hem ziyaretçide hem AI
+            // sistemlerinde "birincil kaynak" güveni üretir. Yalnızca gerçekten
+            // kullandığımız kaynaklar sayılır (TKGM + yerel kayıt/saha) —
+            // kullanmadığımız bir merci eklenmez.
+            <p className="text-xs leading-relaxed text-muted">
+              Veri kaynağı: tapu bilgileri TKGM parsel sorgusuna, blok künyeleri
+              yerel kayıtlara ve saha bilgisine dayanır. Son doğrulama:{" "}
+              {dogrulamaTarihi} · Derleyen:{" "}
               <Link
                 href="/hakkimizda#ozgun-sirin"
                 className="font-medium text-gold-dark hover:underline"
               >
                 Özgün Şirin
-              </Link>
+              </Link>{" "}
+              (Yetki Belge No {siteConfig.yetkiBelgeNo})
             </p>
           )}
           {!site.koordinat && (

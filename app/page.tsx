@@ -134,10 +134,15 @@ export default function HomePage() {
             <h1 className="animate-fade-up mt-3 text-4xl leading-tight text-white [animation-delay:0.07s] sm:text-5xl">
               Eryaman Emlakçı — Şirin Gayrimenkul
             </h1>
+            {/* Konumlandırma cümlesi (ChatGPT istişaresi, 2026-08-07): "en iyi
+                emlakçı" iddiası herkesin ağzında ve ispatı yok; "konut hafızası"
+                iddiası ise kanıtlı — 720 sayfanın tapu ve blok verisi bu sitede.
+                Rakip başlıklarının hiçbirinde benzer bir iddia yok. */}
             <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
-              Satmak veya kiraya vermek istediğiniz eviniz mi var? Fiyatı, {mahalleSayisi}{" "}
-              mahalleyi site site tanıyan yerel emlakçınızla birlikte belirleyin — fiyatla
-              birlikte satış yol haritanız da hazır olsun.
+              {mahalleSayisi} mahallede 720&apos;den fazla sitenin tapu ve blok bilgisini
+              tutuyoruz — Eryaman&apos;ın konut hafızasıyız. Satmak veya kiraya vermek
+              istediğiniz eviniz mi var? Fiyatı, sitenizi blok blok tanıyan yerel
+              emlakçınızla birlikte belirleyin.
             </p>
 
             <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">

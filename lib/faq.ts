@@ -124,7 +124,7 @@ export function getSiteFaq(site: Site, mahalle: Mahalle): FaqItem[] {
   items.push({
     semaDisi: true,
     soru: `${bulunmaHaliKi(site.isim)} daire fiyatları ne durumda?`,
-    cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, ${bulunmaHaliKi(site.isim)} gerçekleşen satış ve kiralamalardan okunur. Dairenizin güncel değerini öğrenmek için bizi ${siteConfig.phoneDisplay} numarasından arayın — siteyi blok blok tanıyoruz.`,
+    cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, ${bulunmaHaliKi(site.isim)} gerçekleşen satış ve kiralamalardan okunur. Tam da bu yüzden sitemizde sabit fiyat rakamı yayınlamıyoruz: birkaç ay önce yazılmış bir rakam sizi yanıltır. Dairenizi güncel arz-talep koşullarına göre değerlendiriyoruz — bizi ${siteConfig.phoneDisplay} numarasından arayın, siteyi blok blok tanıyoruz.`,
   },
   {
     semaDisi: true,
