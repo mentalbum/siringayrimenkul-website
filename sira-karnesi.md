@@ -248,3 +248,47 @@ haritasında 1. sıra emlakçı değil, sitenin kendi GBP'si ("Eryaman 3. Etap",
 1. GSC kota açılınca: dizin istekleri kuyruğu (anasayfa → 14 mahalle → …).
 2. Gece taraması sonuçlarını karneye işle (karne.mjs --ozet --fark --sorun).
 3. Zenginleştirme yeni eşik: gösterim ≥50 & poz ≥8 adayları çıkar (parti 4).
+
+---
+
+## 2026-08-08 ÖĞLEDEN SONRA — dizin sıçraması + tarama israfı teşhisi
+
+### DİZİN SIÇRAMASI (GSC Genel Bakış, 08.08 15:30)
+**Dizindeki sayfa 1.070 → 2.039** (bir günde ~2 kat). 07.08 akşamı yapılanlar
+tuttu: sitemap yeniden gönderimi + lastmod tazelik onarımı + IndexNow.
+Tıklama eğrisi de yukarıda: dönem toplamı 1.644 → 1.742, günlük ~110 bandı.
+Dizin dışı 643 → 728 (aşağıdaki dağılıma bakılmadan okunmamalı — büyük kısmı
+bilinçli/teknik, içerik reddi değil).
+
+### DİZİN DIŞI 728'İN GERÇEK DAĞILIMI (drilldown + JS ile sayıldı)
+| Grup | Adet | Yorum |
+|---|---|---|
+| Keşfedildi - taranmadı | 510 | **297'si ada sayfası** (canonical görülsün diye bilerek sitemap'te), **212'si gerçek site sayfası** + 1 blog → asıl bekleyen bu |
+| Tarandı - eklenmedi | 63 | **57'si `/opengraph-image` ucu**, 5'i ada, 1'i eski URL → içerik reddi YOK |
+| noindex | 63 | tasarım gereği (paylaşımlı parsel ada sayfaları) |
+| Yönlendirmeli | 44 | 26 Tem taşınmasının eski URL'leri sindiriliyor — beklenen |
+| Doğru canonical'lı alternatif | 33 | ada→site katlaması ilerliyor (dün 22) |
+| 404 | 9 | bayat kayıt; canlıda hepsi 308 |
+| Kopya, farklı canonical | 6 | izle |
+
+**Ana ders:** "Google sayfalarımızı beğenmiyor" senaryosu ÇÜRÜDÜ. Tarandığı
+hâlde dizine alınmayan gerçek sayfa sayısı 1 (bir). Kalan iş sadece SIRA:
+212 site sayfası tarama kuyruğunda bekliyor.
+
+### YAPILAN DÜZELTME — OG görsel uçları Googlebot'a kapatıldı
+`app/robots.ts`: `User-Agent: Googlebot / Disallow: /*opengraph-image`.
+Gerekçe: 15 OG şablonunun 5'i dinamik → 1500+ taranabilir adres; Googlebot
+bunları sayfa sanıp tarıyor (kanıt: 57/63). Hiçbiri dizine girmiyor,
+girmesi de istenmiyor. Kural yalnız Googlebot'a çünkü og:image'in asıl
+tüketicisi sosyal robotlar (facebookexternalhit/Twitterbot) ve genel bir
+Disallow WhatsApp/Facebook önizlemelerini öldürürdü.
+BEKLENTİ: tarama bütçesi 212 bekleyen site sayfasına kayar.
+
+### GSC dizin isteği kotası
+08.08 15:30'da yine "Kota Aşıldı" — paralel oturum bugünkü isteklerini
+harcamış. Kuyruk duruyor; yarın sabah ilk iş.
+
+### Künye (citation) hattı
+Öncelik 1 metinleri `platform-profil-metinleri.md`'de HAZIR (Bing Places,
+Apple Business Connect, bulurum, sektortanitim). Bu adım hesap açma/parola
+gerektirdiği için Özgün'ün elinde — bende yasak. Malzeme bekliyor.
