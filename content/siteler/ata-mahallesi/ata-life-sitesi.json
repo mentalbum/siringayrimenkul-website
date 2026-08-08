@@ -8,18 +8,24 @@
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/ata-life-sitesi-boundary.geojson",
   "adres": "3768. Sokak, Ata Mahallesi, Yenimahalle/Ankara",
-  "aciklama": "Ata Life Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, 3768. Sokak üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre sitenin bulunduğu parsel yaklaşık 12.748 m² — 12,7 dönümlük — bir alana karşılık gelir; bu genişlik, blok aralarına ferah bir ortak alan bırakır. Çağlayan Sitesi ve Ata Mahallesi pazar yeri çevresindeki oturmuş konut aksının parçasıdır. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ata Life Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, 3768. Sokak üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre site tek parsel üzerinde kuruludur ve bu parsel yaklaşık 12.748 m² — yani 12,7 dönümlük — bir alana karşılık gelir; blok aralarına bahçe, otopark ve yürüyüş payı bırakan ferah bir yerleşim düzeni için elverişli bir ölçektir. Aynı kayıtta parselin niteliği arsa olarak görünür; zemin durumu ise tapuda kat irtifakı aşamasındadır; farkı sözlüğümüzdeki kat irtifakı maddesinde anlattık. Bu, satışı ya da kiralamayı engelleyen bir durum değildir, ancak görüşmede baştan açıklanması gereken bir başlıktır — tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Sitenin en somut üstünlüğü günlük yaşam yarıçapıdır: Ata Mahallesi semt pazarı sitenin hemen yanı başında kurulur, Şehit Mahmut Uslu İlkokulu ve Gelincik Parkı birkaç dakikalık yürüme mesafesindedir; toplu taşımada en yakın duraklar Çağlayan Sitesi ve Allıturna Caddesi durakları, biraz ötede Şehit Haydar Çetin Anadolu Lisesi bulunur. Site, komşu Çağlayan Sitesi ile birlikte mahallenin oturmuş konut aksının parçasıdır; mahalle Etimesgut sınırındaki Yavuz Selim Mahallesi ile sırt sırta olduğu için Eryaman tarafının günlük hizmetleri de yakın kalır. Bu üçlü — pazara yürüme mesafesi, kısa okul yolu ve durak yakınlığı — kiracı adayının ve aile taşınmalarının ilk sorduğu başlıklardır; daireniz için ilan metni kurarken bunları öne almak dönüş süresini kısaltır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "3768. Sokak — Ata Mahallesi",
-    "Yaklaşık 12,7 dönümlük parsel (TKGM)",
+    "Yaklaşık 12,7 dönümlük tek parsel (TKGM)",
     "Kat irtifaklı parsel (TKGM)",
-    "Çağlayan Sitesi ve pazar yeri çevresi"
+    "Ata Mahallesi semt pazarı hemen yanı başında",
+    "Şehit Mahmut Uslu İlkokulu ve Gelincik Parkı yürüme mesafesinde",
+    "Çağlayan Sitesi ve Allıturna Caddesi otobüs durakları yakınında",
+    "Komşu Çağlayan Sitesi ile oturmuş konut aksı",
+    "Etimesgut sınırı — Yavuz Selim Mahallesi komşuluğu"
   ],
   "adalar": [
     {
       "no": "44774",
-      "parsel": "3"
+      "parsel": "3",
+      "alanM2": 12748,
+      "nitelik": "Arsa"
     }
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

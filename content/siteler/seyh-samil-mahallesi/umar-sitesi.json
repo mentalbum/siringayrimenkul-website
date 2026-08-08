@@ -8,7 +8,7 @@
     "lng": 32.634083
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/umar-sitesi-boundary.geojson",
-  "aciklama": "Umar Sitesi — aramalarda 'Umar Siteleri' olarak da geçer — Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda yer alan bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 15.071 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — üç bloğun bu genişlikte bir parsele yerleşmesi, apartman başına düşen bahçe ve açık alan payını mahalle ortalamasının üzerine taşır. Çevresi Şeyh Şamil'in tanıdık kooperatif siteleriyle sarılıdır; mahallenin okul ve çarşı aksına yakın, sakin bir konumdadır; 586. Sokak hattında yer alır. Harita ve dizin kayıtlarına göre site, yeşil alanları, çocuk oyun parkları ve güvenlik hizmetiyle öne çıkar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Umar Sitesi — aramalarda 'Umar Siteleri' olarak da geçer — Şeyh Şamil Mahallesi'nin yerleşik kooperatif dokusunda, 586. Sokak hattında yer alan üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 15.071 m²'lik kat mülkiyetli tek parsel üzerine kuruludur — üç bloğa karşılık 15 dönümü aşan bir parsel, apartman başına düşen bahçe ve açık alan payını mahalle ortalamasının üzerine taşır. Bloklar yerel emlak dizini kayıtlarında 1., 3. ve 5. blok olarak numaralanır; üçü de 10 katlıdır ve her blokta 44 daire bulunur — üç blokta toplam 132 daire. Aynı kayıtlara göre daire programı tek tiptir: tamamı 3+1 ve yaklaşık 135 m². Isıtma doğalgaz kombiyle bireyseldir; asansör, jeneratör, hidrofor ve su deposu, kapıcı, otopark, bahçe, çocuk oyun parkı ve yangın merdiveni sayılan ortak donatılar arasındadır. Üç bloğun aynı programla kurulmuş olması, aynı sitedeki daireleri birbiriyle karşılaştırırken metrekare tartışmasını büyük ölçüde kapatır — bu dokuda değeri asıl ayıran şey blok, kat, cephe ve iç durumdur. Çevresi Şeyh Şamil'in tanıdık kooperatif siteleriyle sarılıdır; mahallenin okul ve çarşı aksına yakın, sakin bir konumdadır — okul ve otobüs durağı, blok kayıtlarında yakın çevre olanakları arasında sayılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46272",
@@ -17,13 +17,15 @@
   ],
   "ozellikler": [
     "~15.071 m² parsel (TKGM)",
-    "3 blok (tapu)",
-    "Yeşil alan ve çocuk oyun parkları",
-    "Güvenlik hizmeti",
+    "3 blok (tapu) — 1., 3. ve 5. blok olarak numaralı",
+    "Üçü de 10 katlı; toplam 132 daire (blok başına 44 — yerel dizin)",
+    "Tamamı 3+1, yaklaşık 135 m² daireler",
+    "Doğalgaz kombi, asansör, jeneratör, hidrofor ve su deposu",
+    "Kapıcı, otopark, bahçe ve çocuk oyun parkı",
     "Kat mülkiyetli parsel (TKGM)",
     "Şeyh Şamil Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "zenginlestirildi": "2026-08-08",
   "alternatifAdlar": [
     "Umar Siteleri"
   ]

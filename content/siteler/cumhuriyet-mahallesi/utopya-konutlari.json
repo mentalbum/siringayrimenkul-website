@@ -7,21 +7,32 @@
     "lng": 32.658841
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/utopya-konutlari-boundary.geojson",
-  "aciklama": "Ütopya Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli ikiz bloklu modern bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.650 m²'lik parselde tapu kaydı yapıyı '14 Katlı A Blok ve 15 Katlı B Blok Beton Apartman' olarak tanımlar; tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. İki bloğun 10 dönümü aşan parsele yerleşimi açık alan payını geniş tutar; üst katlarda Yeni Batı'ya açık görüş vardır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Ütopya Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında, 5419. Cadde üzerinde kurulu kademeli ikiz bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 10.650 m²'lik parselde tapu kaydı yapıyı '14 Katlı A Blok ve 15 Katlı B Blok Beton Apartman' olarak tanımlar; site yönetiminin kendi duyuruları da blokları A ve B olarak anar. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. On dönümü aşan parsele yalnızca iki bloğun yerleşmiş olması açık alan payını geniş tutar; üst katlarda Yeni Batı'ya açık görüş vardır. Proje kaynaklarına göre iki blokta toplam 104 konut yer alıyor ve yapım 2012-2014 arasında tamamlanmış; ilanlarda beyan edilen bina yaşı da bu dönemi doğruluyor. Sitenin ayırt edici tarafı sosyal tesisidir: hem site yönetiminin havuz çalışma esasları duyurusu hem de ilan kaynakları kapalı yüzme havuzunu doğrular; ilanlarda ayrıca sauna, buhar odası, fitness salonu ve 7/24 güvenlik geçer. Bu, dairenizi satarken ya da kiraya verirken metrekare dışında anlatacak somut bir şeyiniz olması demektir — 'havuzlu site' bölgede kendi başına bir arama kalemidir ve havuzun kapalı olduğunu ilan metninde belirtmek, mevsimden bağımsız kullanım anlamına geldiği için fark yaratır. Daire ölçeği de siteyi konumlandırır: ilan kaynaklarında öne çıkan tip 4+1'dir, portallarda görülen örneklerde brüt 185 m² / net 165 m² dolayında planlar vardır. Geniş metrekare talebi dar ama kararlı bir kesime bağlar; bu yüzden burada fiyat, benzer metrekaredeki genel emsalden çok blok, kat, cephe ve iç durum ayrıntısına duyarlıdır. Ulaşım tarafında İstanbul Yolu metro istasyonu yürüme mesafesindedir ve sitenin kendi adını taşıyan bir otobüs durağı vardır — kiracı adaylarının ilk sorduğu ulaşım sorusunun cevabı hazırdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62676",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 10650,
+      "nitelik": "A Blok 14 Katlı- B Blok 15 Katlı Beton-Apartman-Arsa"
     }
   ],
   "ozellikler": [
-    "~10.650 m² parsel (TKGM)",
-    "14-15 kat aralığında bloklar (tapu kaydı)",
+    "~10.650 m² parsel (TKGM) — üzerinde yalnızca iki blok",
+    "Tapu: 14 katlı A Blok + 15 katlı B Blok",
+    "Toplam 104 konut (proje kaynaklarına göre)",
+    "Yapım 2012-2014 (proje kaynağı + ilanlardaki bina yaşı)",
+    "Kapalı yüzme havuzu (site yönetimi duyuruları + ilanlar)",
+    "Sauna, buhar odası ve fitness salonu (ilan kaynakları)",
+    "7/24 güvenlik",
+    "İlanlarda öne çıkan tip 4+1 (brüt ~185 m² / net ~165 m²)",
+    "İstanbul Yolu metro istasyonu yürüme mesafesinde",
+    "Sitenin adını taşıyan otobüs durağı",
     "Kat mülkiyetli parsel (TKGM)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
+  "adres": "5419. Cadde No:1, Yeni Batı, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Ütopya Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }

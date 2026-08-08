@@ -7,23 +7,28 @@
     "lng": 32.664983
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/natural-konutlari-boundary.geojson",
-  "aciklama": "Natural Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında kademeli üç bloklu modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A ve C Blok ile 15 Katlı B Blok Betonarme' niteliğiyle kayıtlı 11.162 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun 11 dönümlük parsele düzenli yerleşimi açık alan payını korur; üst katlarda Yeni Batı'ya geniş görüş vardır. Proje kayıtlarına göre site Karaca İnşaat imzasını taşır ve daireler 3+1 ile 4+1 tiplerinde geçer. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Natural Konutları, Cumhuriyet Mahallesi'nin Yeni Batı aksında, 5403. Sokak üzerinde A-B-C girişleriyle yerleşen kademeli üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '14 Katlı A ve C Blok ile 15 Katlı B Blok Betonarme' niteliğiyle kayıtlı 11.162 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğa karşılık 11 dönümlük parsel, bloklar arasındaki açıklığı ve ortak açık alan payını koruyan ferah bir yerleşim demektir; üst katlarda Yeni Batı'ya geniş görüş vardır. Kat kademesi de daireden daireye fark yaratır: B bloğun A ve C'ye göre bir kat fazlası, en üst kat cephelerinde manzara ve ışık farkına dönüşür. Firma kayıtlarına göre site, 1963'te kurulan ve 2009'dan bu yana Ankara'da konut üreten Karaca İnşaat imzasını taşır; daireler 3+1 ve 4+1 tiplerinde geçer. Geniş tipli bu karma, siteyi aile kullanımına dönük bir stok yapar — böyle dairelerde talep kitlesi kompakt tiplere göre daha dar olduğu için, emsal seçimi ve süreç yönetimi en az fiyat kadar belirleyicidir. Adres kayıtlarında sitenin hâlâ Yeni Batı Mahallesi olarak görülmesi olağandır: Cumhuriyet Mahallesi 2024 sonunda Yeni Batı'dan ayrılarak kurulmuştur, iki ad da aynı yeri işaret eder; bölge Eryaman'ın çarşı ve metro hattına komşudur. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "62660",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 11162,
+      "nitelik": "A Blok 14 Katlı, B Blok 15 Katlı ,C Blok 14 Katlı Betonarme Mesken Ve Arsası"
     }
   ],
   "ozellikler": [
+    "3 blok — A, B ve C girişleri",
     "~11.162 m² parsel (TKGM)",
-    "14-15 kat aralığında bloklar (tapu kaydı)",
+    "14-15 kat aralığında bloklar (tapu kaydı: A ve C 14, B 15 katlı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Karaca İnşaat projesi (firma kaydı)",
     "3+1 ve 4+1 daireler",
+    "5403. Sokak üzerinde (adres kayıtları)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
   "alternatifAdlar": [
     "Natural Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "adres": "5403. Sokak No:2/A-B-C, Cumhuriyet (Yeni Batı) Mahallesi, Yenimahalle/Ankara",
+  "zenginlestirildi": "2026-08-08"
 }

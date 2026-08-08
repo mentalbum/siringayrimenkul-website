@@ -7,7 +7,7 @@
     "lng": 32.645985
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/mercan-smart-house-boundary.geojson",
-  "aciklama": "Mercan Smart House, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim bölgesinde Mercan Grup İnşaat imzasıyla yükselen bir projedir. TKGM kayıtlarına göre yaklaşık yedi dönümlük parseli kat mülkiyetlidir; tapu yapıyı on beş katlı betonarme A ve B bloklardan oluşan apartman olarak tescil eder. Projeye adını veren akıllı ev altyapısı, müteahhit tanıtımında aydınlatmadan perdelere ve çelik kapıya kadar telefon uygulamasıyla yönetilen daireler olarak anlatılır; kış bahçeli, üç cepheli 4+1 planlar ve Göksu Parkı manzarası projenin diğer vaatleridir. Yaklaşık yirmi beş dönümlük yerleşim adasını kuzey komşusu Göksu Park Vadi Konutları ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Mercan Smart House, Susuz Gölü'nün kuzeyindeki Göksu kentsel gelişim bölgesinde Mercan Grup İnşaat (Mercan 1 İnşaat) imzasıyla yükselen bir projedir; proje tanıtımlarında adres Göksu Mahallesi, Akıncılar Caddesi olarak verilir. TKGM kayıtlarına göre yaklaşık yedi dönümlük parseli kat mülkiyetlidir; tapu yapıyı on beş katlı betonarme A ve B bloklardan oluşan apartman olarak tescil eder. Müteahhit verilerine göre bu iki blokta toplam 54 daire yer alır ve dairelerin tamamı 4+1'dir; yaklaşık 7.000 m² arsa üzerinde 17.000 m² inşaat alanı açıklanmıştır. Tanıtımda anlatılan katta iki daireli düzen, blok başına yaklaşık yirmi yedi daireye karşılık gelen bu toplamla da tutarlıdır — kat sahanlığında az komşulu bir yerleşimdir.\n\nSitenin en belirleyici yanı tek tip daire planıdır: bütün konutlar 4+1 ve tanıtımda 277,67 m² olarak verilen aynı büyüklüktedir. Ev sahibi açısından bunun iki pratik sonucu var. Birincisi, emsal karşılaştırması burada alışılmadık ölçüde nettir — metrekare farkı denklemden çıkar, değer farkını blok, kat, cephe, manzara ve iç durum yaratır; bu berraklık fiyatlamayı kolaylaştırır. İkincisi, bu ölçekteki bir plan muhatap kitleyi doğal olarak geniş yaşam alanı arayan ailelere yöneltir; ilan metnini, fotoğraf sırasını ve sunumu bu kitleye göre kurmak gerekir. Elli dört daireli bir yerleşimde aynı dönemde ilana çıkan daire sayısı da sınırlı kalır, bu da doğru sunumla öne çıkmayı kolaylaştırır.\n\nProjeye adını veren akıllı ev altyapısı, müteahhit tanıtımında aydınlatmadan perdelere, elektrik ve su tesisatından çelik kapıya kadar telefon uygulamasıyla yönetilen daireler olarak anlatılır. Plan tarafında 26,5 m²'lik kış bahçesi, üç cephe ile üç balkon ve misafir odasına ait ayrı banyo-balkon sayılan başlıklardır; daireler Göksu Parkı ve vadi tarafına bakar. Ortak alanlarda çocuk parkı, yürüyüş alanı, spor alanları ile hem açık hem kapalı otopark tanıtımda yer alır. Bunlar görüşmede sorulduğunda peşin cevabı olması gereken maddelerdir — özellikle kapalı otopark hakkı ve akıllı ev sisteminin dairenizde hâlâ kurulu ve çalışır durumda olup olmadığı, sunumda doğrudan fark yaratır.\n\nYaklaşık yirmi beş dönümlük yerleşim adasını kuzey komşusu Göksu Park Vadi Konutları ile paylaşır; Göksu'nun bu kesimi, Susuz Gölü ile Göksu Parkı arasında kurulan yeni yerleşim kuşağıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63404",
@@ -15,6 +15,15 @@
     }
   ],
   "ozellikler": [
+    "Mercan Grup İnşaat — 2 blok, 54 daire",
+    "Tamamı 4+1 (tanıtımda ~277,67 m²)",
+    "~17.000 m² inşaat alanı (proje tanıtımı)",
+    "Katta iki daireli düzen (proje tanıtımı)",
+    "26,5 m² kış bahçesi, üç cephe ve üç balkon (proje tanıtımı)",
+    "Akıllı ev altyapısı — telefon uygulamasıyla kontrol (proje tanıtımı)",
+    "Çocuk parkı, yürüyüş ve spor alanları (proje tanıtımı)",
+    "Açık ve kapalı otopark (proje tanıtımı)",
+    "Göksu Parkı ve vadi cephesi",
     "~6.820 m² parsel (TKGM)",
     "15 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
@@ -23,5 +32,5 @@
   "alternatifAdlar": [
     "Mercan Smart House Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }

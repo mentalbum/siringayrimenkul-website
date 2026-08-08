@@ -7,23 +7,29 @@
     "lng": 32.645987
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/white-dream-sitesi-boundary.geojson",
-  "aciklama": "White Dream Sitesi, Susuz'da 2. İnönü Caddesi üzerinde Ünsal imzalı, yüksek katlı güvenlikli bir konut sitesidir. İlanlarda geniş 4,5+1 daireleri (net ~185 m²) öne çıkar. Tapu kaydı siteyi net tarif eder: yaklaşık 18.222 m²'lik parselde on altışar katlı A ve B bloklar ile on iki katlı C blok — 18 dönümlük alan, yüksek bloklara geniş peyzaj payı bırakır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "White Dream Sitesi, Susuz'da 2. İnönü Caddesi üzerinde yükselen, yüksek katlı bloklardan oluşan güvenlikli bir konut sitesidir; yerel ilanlarda ve harita kayıtlarında çoğunlukla \"Ünsal White Dream\" adıyla anılır. Tapu kaydı yerleşimi net tarif eder: yaklaşık 18.222 m²'lik kat mülkiyetli parselde on altışar katlı A ve B bloklar ile on iki katlı C blok yer alır — 18 dönümlük alan, üç yüksek bloğun arasına geniş açık alan payı bırakır. Daire stoğunun belirleyici özelliği geniş tiplerden kurulu olmasıdır: ilanlarda 4+1 ve 4,5+1 daireler öne çıkar, net kullanım 185 m² dolayındadır. Ev sahibi açısından bu benzeşme iki taraflı çalışır — emsaller metrekare olarak birbirine yakın olduğu ve bloklar aynı dönemde tamamlandığı için bina yaşı da ayrıştırıcı olmaz; değeri asıl ayıran şey blok, kat, cephe ve iç durum olur, bu ayrımı doğru okumak da fiyatın belirleyicisidir. Ortak kullanımda ilan ve harita kayıtlarında tekrar eden başlıklar güvenlik, açık otopark ve çocuk oyun alanıdır; bloklar asansörlüdür. Sakin yorumlarında ve ilanlarda görece genç bir yapı olarak geçer — hızla gelişen çevresiyle birlikte anılır. Konum olarak yerleşim, Göksu'nun kentsel gelişim bandında, İstanbul yolu aksına yakın bir noktadadır; Eryaman'a komşu bu bant son yıllarda yüksek katlı yeni nesil projelerle doldu, cadde üzerindeki durak ağı da toplu ulaşımı pratik kılar. Tapu niteliği konut bloklarının yanında işyerini de kaydeder; bu karma kayıt, bağımsız bölümün tipine göre değerleme ve kullanım açısından fark yaratabilir — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63331",
-      "parsel": "4"
+      "parsel": "4",
+      "alanM2": 18222,
+      "nitelik": "A Ve B Blok 16 Katlı Betonarme Apartman C Blok 12 Katlı Betonarme Apartman Işyeri Ve Arsası"
     }
   ],
   "ozellikler": [
     "3 blok: 16'şar katlı A-B + 12 katlı C — tapu nitelik kaydı",
     "Yaklaşık 18 dönümlük parsel (TKGM)",
-    "Ünsal — güvenlikli site, geniş 4,5+1 daireler",
+    "Güvenlikli site — ilanlarda 4+1 ve 4,5+1 geniş tipler",
+    "Net kullanım 185 m² dolayında daireler (ilan verisi)",
+    "Ortak kullanım: güvenlik, açık otopark, çocuk oyun alanı, asansör",
+    "Tapuda konut + işyeri karma nitelik (TKGM)",
+    "Yerel ilanlarda \"Ünsal White Dream\" adıyla anılır",
     "Kat mülkiyetli parsel (TKGM)",
-    "2. İnönü Caddesi — Göksu kentsel gelişim bölgesi"
+    "2. İnönü Caddesi — Göksu kentsel gelişim bölgesi, İstanbul yolu aksına yakın"
   ],
   "adres": "2. İnönü Caddesi, Susuz, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Ünsal White Dream"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

@@ -7,7 +7,7 @@
     "lng": 32.616662
   },
   "sinirGeoJSON": "siteler/devlet-mahallesi/ornek-ari-sitesi-boundary.geojson",
-  "aciklama": "Örnek Arı Sitesi, Devlet Mahallesi'nde Cevizlidere Sitesi ile aynı büyük yerleşim adasını paylaşır ve apartmanları kadın adları taşır: Hülya, Olgun ve Gönen apartmanları — üç blok. TKGM kayıtlarına göre ada 24.693 m²'lik kat mülkiyetli tek parseldir. Devlet Mahallesi'nin adalar hâlinde ilerleyen kooperatif dokusunda bu paylaşımlı düzen yaygındır; site, mahallenin sakin iç sokaklarında yerleşik bir komşuluk çevresine sahiptir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Örnek Arı Sitesi, Devlet Mahallesi'nde üç apartmandan oluşan bir kooperatif yerleşimidir; blokları Hülya, Olgun ve Gönen adlarını taşır. Site, Cevizlidere Sitesi ile aynı büyük yerleşim adasını paylaşır: TKGM kayıtlarına göre bu ada 24.693 m²'lik — yaklaşık 25 dönümlük — kat mülkiyetli tek parseldir ve tapu, parseldeki yapıları numaralandırılmış altı apartmandan oluşan kargir yapı olarak tarif eder. Yerel konut rehberi de aynı altılıyı doğruluyor: Örnek Arı'nın blokları 2, 4 ve 6, komşu Cevizlidere'ninkiler 8, 10 ve 12 numaralarıyla listeleniyor. Ev sahibi açısından bu paylaşımlı düzenin anlamı açıktır — 25 dönümlük parselde altı apartman, yapılar arasına geniş bahçe ve otopark payı bırakan ferah bir yerleşim demektir. Yerel kayıtlara göre bloklar 2007 yapımıdır; bu haliyle site, Devlet Mahallesi'nin 1990'lar kooperatif dokusuna göre görece genç bir kuşağa aittir. Aynı kayıtlar kat ve daire dağılımını da veriyor: Hülya 10 katlı ve 30 daireli, Olgun ile Gönen ise 12'şer katlı ve 48'er dairelidir — üç blokta toplam 126 daire. Örneklenen daireler 3+1 ve yaklaşık 134 m², ısıtma doğalgaz kombidir. Donatı listesinde asansör, bahçe, ısı yalıtımı, jeneratör, hidrofor ve su deposu, kapıcı, otopark, oyun parkı ile yangın merdiveni yer alıyor; kreş, okul ve otobüs durağı yakın çevrede. Daire tipinin blok blok tekrarlanması, elinizdeki daireyi değerlendirirken emsal bulmayı kolaylaştırır: fark çoğu zaman bloktan, kattan, cepheden ve iç yenileme durumundan çıkar. Konum tarafında sitenin en güçlü kozu metrodur — Devlet Mahallesi/1910 Ankaragücü istasyonu kuş uçuşu yarım kilometrenin altındadır ve toplu taşımayla işe giden kiracı profili için doğrudan bir çekim yaratır. Mahalle 2021'de Eryaman Mahallesi'nin bölünmesiyle kurulduğu için kadastro ve pek çok rehber kaydı adresi hâlâ Eryaman Mahallesi olarak gösterir; ilan metninde her iki adlandırmayı da anmak, siteyi adıyla arayanların karşısına çıkmanızı kolaylaştırır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46521",
@@ -16,9 +16,15 @@
   ],
   "ozellikler": [
     "3 apartman: Hülya, Olgun, Gönen",
-    "Ada parseli ~24.693 m² (TKGM)",
+    "2007 yapım (yerel kayıtlar)",
+    "Hülya 10 katlı/30 daire; Olgun ve Gönen 12'şer katlı/48'er daire",
+    "Örneklenen daireler 3+1, yaklaşık 134 m²",
+    "Doğalgaz kombi, asansör, jeneratör, otopark, oyun parkı",
+    "Ada parseli ~24.693 m² — tapuda altı apartman (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Cevizlidere ile paylaşımlı ada"
+    "Cevizlidere Sitesi ile paylaşımlı ada",
+    "Devlet Mahallesi/1910 Ankaragücü metro istasyonu yürüme mesafesinde",
+    "Türkonut Metro bölgesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-08"
 }
