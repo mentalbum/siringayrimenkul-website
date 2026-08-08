@@ -34,9 +34,11 @@ function readJson<T>(filePath: string): T {
  * eski tarihiyle kalır (zararsız ama tazelik sinyali gitmez) — asla build
  * damgasına geri dönmez. */
 const LASTMOD_PATH = path.join(CONTENT_DIR, "lastmod.json");
-const lastmod: { uretildi: string; dosyalar: Record<string, string> } = fs.existsSync(
-  LASTMOD_PATH
-)
+const lastmod: {
+  uretildi: string;
+  dosyalar: Record<string, string>;
+  klasorler?: Record<string, string>;
+} = fs.existsSync(LASTMOD_PATH)
   ? readJson(LASTMOD_PATH)
   : { uretildi: "", dosyalar: {} };
 
@@ -54,6 +56,27 @@ function icerikTarihi(...goreliYollar: string[]): Date {
     if (fs.existsSync(tam)) return fs.statSync(tam).mtime;
   }
   return new Date(`${lastmod.uretildi || "2026-08-08"}T00:00:00Z`);
+}
+
+/** Bir içerik KLASÖRÜNÜN en yeni değişim tarihi — hub/liste sayfaları için.
+ *
+ * /siteler 723 kaydı, /blog tüm yazıları listeler; bu sayfalar tek bir dosyaya
+ * bağlı değil, o yüzden icerikTarihi() onlara cevap veremez. JSX'in git tarihi
+ * de yanlış: 08.08 ölçümünde sitemap /blog için 2026-07-24 diyordu, oysa 07.08'de
+ * 24 yazı silinmişti (43 → 19) — Google'a açıkça "değişmedi" deniyordu.
+ *
+ * Kaynak, manifestin `klasorler` bölümü: git geçmişinde o klasörde görülen HER
+ * yolun tarihi, artık diskte olmayanlar dahil. Sadece duran dosyalara bakmak
+ * yetmez — klasördeki tek değişiklik bir SİLME ise kalan dosyaların tarihi
+ * oynamaz ve sinyal kaybolur (bkz. scripts/lastmod-uret.mjs). */
+export function icerikKlasoruTarihi(...klasorler: string[]): Date {
+  const gunler = klasorler
+    .map((klasor) => lastmod.klasorler?.[klasor])
+    .filter(Boolean)
+    .map((gun) => new Date(`${gun}T00:00:00Z`).getTime());
+  return gunler.length
+    ? new Date(Math.max(...gunler))
+    : new Date(`${lastmod.uretildi || "2026-08-08"}T00:00:00Z`);
 }
 
 export function getMahalleLastModified(mahalleSlug: string): Date {

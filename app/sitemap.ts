@@ -9,7 +9,9 @@ import {
   getSiteLastModified,
   getYayindaMahalleler,
   getSitelerByMahalle,
+  icerikKlasoruTarihi,
 } from "@/lib/content";
+import { eryamandaMi } from "@/lib/bolge";
 import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,13 +41,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statikSayfalar: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
-    { url: `${baseUrl}/mahalleler`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/mahalleler`, lastModified: icerikKlasoruTarihi("mahalleler"), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
     { url: `${baseUrl}/etaplar`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/siteler`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/siteler/yenimahalle`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.7 },
+    /* HUB'LAR ELLE TARİHLENMEZ — aşağıdaki dördü içerik klasöründen beslenir.
+     * Elle yazılan tarih bir sonraki içerik değişikliğinde sessizce bayatlıyor:
+     * 08.08 ölçümünde /blog 2026-07-24 diyordu ama 07.08'de 24 yazı silinmişti,
+     * /siteler 2026-08-02 diyordu ama o gün 14 kayıt yeniden yazılmıştı. */
+    { url: `${baseUrl}/siteler`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "weekly", priority: 0.8 },
+    {
+      url: `${baseUrl}/siteler/yenimahalle`,
+      // Grup `ilce` alanından türer (lib/bolge.ts) — sabit mahalle listesi
+      // yazılmaz, yeni mahalle eklenince sessizce yanlış olur.
+      lastModified: icerikKlasoruTarihi(
+        ...yayindaMahalleler.filter((m) => !eryamandaMi(m)).map((m) => `siteler/${m.slug}`)
+      ),
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
     { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
@@ -54,10 +69,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-07-23"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-07-30"), changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/blog`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-07-29"), changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, lastModified: g("2026-07-25"), changeFrequency: "yearly", priority: 0.4 },
   ];
