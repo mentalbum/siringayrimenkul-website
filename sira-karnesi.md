@@ -407,3 +407,47 @@ Bir-iki sıra kazanç bunları ilk üçe taşır; öncelik burası olmalı.
 (106/10,2) gerçek ve Eryaman'a özel bir talep — ama içerik kararı Özgün'ün.
 TTBS/yetki belgesi sorguları (toplam ~520 gösterim) BİLEREK boş: TTBS yazısı
 31 Tem'de Özgün kararıyla silindi, yeniden önerilmez.
+
+### 2026-08-08 17:55 — BAŞLIK DÜZELTMESİ UYGULANDI ✅
+Devir listesindeki 1 numaralı madde tamamlandı (paralel oturum dosyaları
+bırakınca devralındı). `app/mahalleler/[mahalle]/[site]/page.tsx` +
+`app/mahalleler/[mahalle]/page.tsx`: lokasyon üçüncü bölümden İKİNCİ bölüme
+alındı. Canlı doğrulama:
+- "Panorama Garden Emlakçı | **Ata Mahallesi** | Evinizi Satalım, K…" (73 kr)
+- "Admira Göksu Konutları Emlakçı | **Eryaman** | Evinizi Satalım, …" (74 kr)
+- "Altay Mahallesi Emlakçı | **Eryaman** | Evinizi Satalım, Kiraya …" (67 kr)
+- "Susuz Mahallesi Emlakçı | **Yenimahalle Ankara** | Evinizi Satal…" (78 kr)
+Yenimahalle kolu ayrımı korundu; ticari mesaj duruyor, yalnız sıra değişti.
+Ayrıca generateMetadata'daki ölü `kisaIsim` değişkeni kaldırıldı.
+Fırsat listesindeki 26 site + 14 mahalle sayfası IndexNow'a bildirildi (200).
+ÖLÇÜM: 2-3 hafta sonra GSC'de bu sayfaların ortalama konumunu ve başlık
+gösterimini yeniden bak; karşılaştırma tabanı gsc-28gun-2026-08-08.json.
+
+### 2026-08-08 18:15 — Şema tamamlandı + zayıf halka turu
+**Şema (a9968c7):** ApartmentComplex'e `numberOfAccommodationUnits` ve
+`amenityFeature` eklendi, WebPage'e `mainEntity` ile @id üzerinden bağlandı.
+Yeni veri toplanmadı — ikisi de cikarKunye()'nin metinden türettiği, sayfada
+zaten görünen bilgiler. Canlı doğrulama (Panorama Garden): 192 konut +
+6 donatı + @id zinciri çalışıyor.
+
+**KÜNYE TABLOSU FİKRİ ELENDİ.** Sayfa okunduğunda görüldü ki künye verisi
+ZATEN iki yerde sunuluyor: açılış cümlesi (`kunyeCumlesi`, AEO "önce cevap"
+kalıbı) ve `ozellikler` iki sütunlu listesi. Üçüncü bir tablo 720 sayfada
+mükerrer içerik olurdu. Rakiple farkımız veri değil etiketleme; kazanç
+marjinal, risk gerçek — açılmadı.
+
+**Zayıf halka turu (fırsat listesindeki 20 kayıt denetlendi):**
+Çoğu zaten derin (150-370 kelime, 5-10 özellik, koordinat, ada). Üç istisna
+düzeltildi:
+- **Selvi Evleri (908cd05)** — en büyük fırsat (205 gösterim / 8,2) ama en zayıf
+  kayıt (82 kelime, 16 Tem'den kalma). VERİ HATASI BULUNDU: tapudaki yedi blok
+  (A-G, 11'er katlı, 24.099 m²) parseli PAYLAŞAN iki sitenin toplamı, ama hem
+  Selvi hem Etikent kaydı bunu kendine mal ediyordu. İkisi de düzeltildi;
+  Selvi 264 kelimeye çıkarıldı (harita/rehber kayıtlarında Selvi adıyla geçen
+  bloklar: A, C, F; Karlıdağ Sokak; ilanlarda 3+1 / ~135 m²; ulaşım; komşuluk).
+- **Maviler İpek (2ce9f39)** — 63 gösterim / 6,2 (eşik bandı). İki web
+  aramasında KAYNAK BULUNAMADI; uydurma yerine yalnız doğrulanmış veriyle
+  (TKGM canlı: hâlâ arsa nitelikli + kendi sınır verimizden komşuluk)
+  ölçülü genişletildi ve `sorunlu-siteler.md`'ye kart açıldı — blok/kat/tip
+  bilgisi Özgün'den gelmeden metin uzatılmayacak.
+Üçü de IndexNow'a bildirildi.

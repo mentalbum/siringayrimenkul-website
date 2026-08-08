@@ -78,6 +78,13 @@ export function SiteKarsilastirma({ veri }: { veri: KunyeSatiri[] }) {
     // "Bağımsız bölüm" DENMEZ: karma sitelerde dükkânlar da bağımsız bölümdür;
     // kayıtlı sayı daire sayısıdır.
     ["Daire sayısı (kayıtlı)", (s) => s.konut ?? "—"],
+    // Etiket "Daire tipleri" DEĞİL "kayıtta yazılı": boş hücre o tipin
+    // yokluğunu değil, kayıtta not düşülmediğini gösterir (aracın SSS'inde
+    // ilan edilmiş "yokluğu kanıt saymayız" kuralı).
+    [
+      "Daire tipleri (kayıtta yazılı)",
+      (s) => (s.odaTipleri.length ? s.odaTipleri.join(", ") : "—"),
+    ],
     ["Yapı tipi", (s) => s.tip],
     [
       "Kayıtta geçen donatılar",

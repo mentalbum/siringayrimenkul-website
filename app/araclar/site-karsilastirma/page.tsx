@@ -39,6 +39,11 @@ const faqItems: FaqItem[] = [
       "Hayır. Donatı satırı yalnızca kayıt metnimizde adı geçen imkânları listeler; kayıtta geçmiyorsa \"—\" görünür. Sitede bulunup kayda girmemiş donatılar olabilir — bu yüzden yokluğu kanıt saymayız.",
   },
   {
+    soru: "Daire tipi satırı boşsa sitede o tip yok mu demek?",
+    cevap:
+      "Hayır. Daire tipi tapu kaydında yer almaz; bu satır yalnızca kayıt metnimizde yazılı tipleri listeler ve yazılı değilse \"—\" görünür. Bir sitenin kaydında 3+1 geçiyorsa o sitede 3+1 daire bulunduğunu biliriz; geçmiyorsa bilmiyoruz — yok demiyoruz.",
+  },
+  {
     soru: "Karşılaştırdığım sitede dairem var; değeri nasıl öğrenirim?",
     cevap:
       "Yapısal veriler çerçeveyi çizer; kesin değer, sitenizdeki ve komşu sitelerdeki gerçekleşen satış ve kiralama emsalleriyle netleşir. Değerleme görüşmesinde dairenizin blok, kat ve cephesine göre gerçekçi bir aralık çıkarırız.",

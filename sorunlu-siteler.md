@@ -4,6 +4,31 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+
+### "rezidansıntapu" — 19 mahalle sayfasında CANLI, iki kez kapatıldı sanıldı (2026-08-08)
+`app/mahalleler/[mahalle]/page.tsx` (commit'li 525 / açık ağaçta 529). Mahalle
+sayfalarının ana tanıtım cümlesi canlıda şöyle okunuyor:
+`"...mahalledeki 68 site ve rezidansıntapu yapısını, bloklarını..."`.
+
+Tarayıcı `innerText` ile güncel yayında ölçüldü (yeni başlık kalıbı canlı olduğu
+için build taze) — kusur duruyor. **İki kez "düzeltildi" diye kapatıldı**; her
+ikisinde de eklenen `{" "}` ifadenin ÖNÜNE kondu (`mahalledeki{" "}`), oysa
+bitişiklik ifadenin SONRASINDA. İki ayrı yer, biri diğerinin yerine geçmiyor.
+
+```jsx
+// ŞU AN:
+{siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"} tapu
+yapısını, bloklarını ve emsallerini tek tek arşivliyor;
+
+// OLMASI GEREKEN:
+{siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}{" "}
+tapu yapısını, bloklarını ve emsallerini tek tek arşivliyor;
+```
+
+DERS: kaynakta boşluk görünmesi yeterli değil — JSX derlemesi ifadeden sonraki
+tek boşluğu yiyor. "Düzeltildi" demeden önce canlı/dev `innerText` ile bak.
+Ayrıntı: `denetim-2026-08-08.md`.
+
 ### TKGM künye turu denetim bulguları (2026-08-08)
 Veri denetimi 316 tek-parselli kaydın alanM2'sini sitenin kendi sınır poligonuyla karşılaştırdı:
 **314'ü %6 içinde uyuştu** — uydurma alan yok. Sapan ve çelişen kalemler:
@@ -25,11 +50,13 @@ Veri denetimi 316 tek-parselli kaydın alanM2'sini sitenin kendi sınır poligon
   düzyazısına uygulanıyor, `ozellikler` maddelerine uygulanmıyor — komşunun kat sayısı sitenin
   künyesine sızabiliyor; (2) `tum.includes("kat mülkiyet")` "634 sayılı Kat Mülkiyeti Kanunu"
   ibaresine takılıp tapuda "Arsa" olan siteye "kısmen kat mülkiyetli parsellerde" yazdırıyor.
-- **scripts/tkgm-tapu-uygula.py — sayı biçimi tuzağı:** cbsapi 2026-07-30'dan sonra US biçimi
-  ("15,523.00") döndürüyor, öncesi TR ("9.939,00"). Scriptin `alan_metni`'i yalnız US'i çözüyor;
-  TR biçimli değerleri 9,9 m² okuyup <300 filtresine takıldığı için SESSİZCE atlıyor (~90 parsel
-  boşa gitti). Yanlış veri yazmamış. scripts/tkgm-kunye-uygula.py'deki `alan_coz` ikisini de
-  ayırt ediyor — o mantık buraya taşınmalı.
+- ~~**scripts/tkgm-tapu-uygula.py — sayı biçimi tuzağı**~~ (2026-08-08 kapandı): çözümleyici
+  `scripts/tkgm_ortak.py:alan_coz`'a taşındı, iki script de oradan çağırıyor. Teşhis düzeltildi:
+  biçim TARİHE ya da uca göre değişmiyor, İSTEKTEN İSTEĞE değişiyor — 07-30 04:00 turunda
+  04:00:35 US, 04:00:38 TR, 04:00:42 yine US geldi. Gerçek kayıp ~90 değil 2 parsel
+  (uzuner-konutlari 6.592 m², yeniceri-kule 8.505 m²); 180 "yalnız TR" parselin geri kalanı
+  künye kolundan (`alan_coz` zaten doğruydu) girmişti. Asıl risk ileriyeydi: 08-08 tarihli 153
+  yanıtın 153'ü TR — düzeltilmeseydi sonraki tapu turu alanların tamamını kaybederdi.
 - **Adres biçimi ev kuralı gerekiyor:** aynı mahallede 3 ayrı kalıp var. Ayrıca 19 ESKİ kayıt
   adreste ilçe yerine "Eryaman/Ankara" yazıyor (Eryaman ilçe değil) — temizlik adayı; yeni
   eklenen 40 adresin hiçbirinde bu hata yok.
@@ -1483,3 +1510,56 @@ eryaman1.com'un Wayback'teki "APARTMAN YÖNETİMLERİ" tablosu (Bölge Adı | Ad
 - **YAN KAZANIM (ileride kullanılır):** Aynı tablo, yayım dışı bıraktığımız ŞOA şeridinin blok
   adlarını da veriyor (17480-82 İÇTAŞ; 17487-90 ESTON; 17491-98 KUTLUTAŞ 2) — 2026-08-07'deki
   "şerit 1. Etap yönetimine bağlı" bulgusunu bağımsız olarak doğruluyor.
+---
+
+## Maviler İpek — kamuya açık kaynak YOK (2026-08-08)
+
+Zenginleştirme turunda araştırıldı: iki ayrı web aramasında proje/geliştirici
+kaydı, tanıtım sayfası ya da yönetim künyesi BULUNAMADI. Aynı adı taşıyan
+"Maviler Sitesi" (Ostim-Serhat) ve "Maviler Mehmet Çiftçi Sitesi" (Serhat,
+5500. Cadde) FARKLI yerleşimler — karıştırılmamalı (benzer adlı proje tuzağı).
+
+Kayda yalnız doğrulanmış veri yazıldı: TKGM 63275/1, 21.572 m², nitelik hâlâ
+**Arsa** (canlı sorgu 08.08) + kendi sınır verimizden komşuluk (Mabeyn
+Başpınar, Batımahal Başpınar, Zirveden Batı). GSC'de 63 gösterim / 6,2. sıra —
+eşik bandında, yani derinleşirse kazanç var.
+
+**Özgün'den gereken:** blok sayısı, kat adedi, daire tipleri, yapım/teslim yılı,
+geliştirici adı. Bunlar gelmeden metin uzatılmayacak (uydurma yasağı).
+
+## 1. Etap blok adları veri katmanına işlendi (2026-08-08)
+Yönetimin blok tablosundaki apartman ADLARI beş kayda girdi: Mesa 7, Sutek 22, Betontaş 66,
+AGE 67, Kutlutaş 103 — toplam 265 blok adı, `adalar[].bloklar` alanında (yeni alan, types.ts'te
+tanımlı). Aktürk'ünkiler 07-08.08'de açıklama metnine örnek olarak girmişti.
+- **Görünür metne yalnız birer örnek cümle eklendi** (4-5 ad); tam liste şu an SAYFADA BASILMIYOR.
+  Sebep: listeyi basmak site/ada şablonuna dokunmayı gerektiriyor, o dosyalar paralel oturumun
+  açık PR'ında (#4). PR'lar birleşince ada sayfasına "Bu adadaki bloklar" bölümü eklenebilir —
+  ada sayfaları artık canonical'lı ve sitemap'te olduğu için değeri var.
+- **Türkçe harf tuzağı (yeni ders):** Python'un `.title()`/`.lower()`'ı İ/I ayrımını bozuyor
+  ("EMİRDAĞ" → "Emi̇rdağ", "BEŞPINAR" → "Beşpinar", "KIZILIRMAK" → "Kizilirmak"). İlk turda
+  265 adın tamamı bozuk üretildi, yakalandı ve elle eşleme yazıldı. JS tarafındaki `\b` sorununun
+  (lib/kunye.ts baş yorumu) Python karşılığı — toplu ad üretiminde her zaman kontrol et.
+## Etap künye denetimi (2026-08-08) — yönetim kayıtları 7 siteye işlendi
+İki resmî uç toplu olarak hasat edildi ve repo künyeleriyle karşılaştırıldı:
+- **1. Etap:** eryaman1.com'un Wayback'teki blok tablosu 63 adayı bölgeye bağlıyor. Repo
+  kayıtlarıyla karşılaştırma: Mesa (17312/17524/17527), Betontaş (17516-23), Kutlutaş 1
+  (17499-511), AGE (17538/17544-47/17555-58), Sutek (17539-43) **birebir uyumlu** — düzeltme
+  gerekmedi. Tek fark Aktürk'te: tablo 8 ada sayıyor (17313, 17314, 17315, 17533-17537).
+  **17533 yeni bulundu** (TKGM: 8 Adet Kargir Apartman, 6.111 m², kat mülkiyetli) — kaydın
+  "sekiz adalık küme" ifadesi böylece kaynağına oturdu.
+- **Basılı planın atlanan sıraları kapandı:** 17527 (MESA), 17533 (AKTÜRK), 17544 + 17545 (AGE)
+  basılı ada listesinde yok ama yönetimin blok tablosunda var → ETAP_1_ADALARI'na eklendi,
+  doğrulanmış toplam 63'ten **67**'ye çıktı. Belgenin iddia ettiği 70'e kalan fark için ikinci
+  kaynak yok, o adalar uydurulmadı.
+- **3. Etap:** `eryaman3.com/Home/AdaYonetimBilgisi?AdaId=<ada>` ucu 42 ada için blok + daire
+  sayısı veriyor. 7 kayda işlendi: Tekser 34 blok/436 daire, Tepe 24/380, İçtaş 32/412,
+  Eston 1 29/404, Yardımcı 27/420, Çamlıca 6/84, Eston 2 (yönetim kaydı olan 3 adada) 14/240.
+  TKGM apartman sayılarıyla karşılaştırma: Tekser/Tepe/Yardımcı/Çamlıca **birebir**, İçtaş 33↔32
+  ve Eston 1 28↔29 birer fark — metinde iki kaynak da ayrı ayrı belirtildi, sayı zorlanmadı.
+- **Onarım:** camlica-sitesi açıklamasındaki bozuk cümle ("Eryaman 3. TKGM kayıtlarına göre…")
+  düzeltildi; alarko-bloklari'ndaki aynı hata 07.08'de onarılmıştı — bu kalıp başka kayıtlarda
+  da olabilir, süpürme adayı.
+- **Henüz kullanılmayan veri:** aynı blok tablosu 1. Etap'ın TÜM bloklarının ADLARINI da veriyor
+  (Kutlutaş'ta Bayındır/Çayeli/Gebze, İçtaş'ta Fulya/Gökkuşağı gibi). Bloklar isimle anıldığı
+  için bu, ilan ve adres dilinde karşılığı olan bir arşiv — Aktürk kaydında örnek olarak
+  kullanıldı, diğer 1. Etap kayıtlarına da işlenebilir.

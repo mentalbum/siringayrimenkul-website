@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
-import { getAllMahalleler } from "@/lib/content";
+import { getAllEtaplar, getAllMahalleler, getYayindaMahalleler } from "@/lib/content";
 import { CtaButton } from "@/components/ui/button";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import {
@@ -12,8 +12,37 @@ import {
   TiktokIcon,
 } from "@/components/ui/icons";
 
+/* ETAP BAĞLARI — modül düzeyinde BİR KEZ hesaplanır.
+ *
+ * Neden önbellek: footer her sayfada render ediliyor ve getAllEtaplar() mahalle
+ * başına o mahallenin TÜM site JSON'larını okuyor. Ölçtüm (2026-08-08): 723
+ * kaydın tam taraması 146 ms; sitedeki 1594 sayfayla çarpınca derlemeye ~4
+ * dakika ekliyordu. Etap listesi derleme boyunca değişmediği için tek seferlik
+ * hesap yeterli.
+ *
+ * Neden footer'da: etap sayfaları sitenin en zayıf bağlanan ailesiydi — menüde
+ * ve footer'da hiç bağ yoktu, gelen iç bağların %57-77'si ise ada
+ * sayfalarındandı (canonical'ı site sayfasını gösteren, priority 0.2'li
+ * sayfalar). Tarama bütçesi darboğazında elde kalan kotasız kaldıraç iç bağ
+ * yoğunluğu (bkz. lib/tarama-oncelikli.ts'teki aynı teşhis).
+ *
+ * Neden /etaplar hub'ına DEĞİL doğrudan etap sayfalarına: hub (app/etaplar)
+ * henüz commit'lenmedi, canlıda yok — ona bağ vermek her sayfaya 404 bağı
+ * koymak olurdu. Hub yayına girince buraya bir de hub bağı eklenebilir. */
+let etapBaglariCache: { no: string; mahalleSlug: string }[] | null = null;
+
+function etapBaglari() {
+  etapBaglariCache ??= getYayindaMahalleler()
+    .flatMap((mahalle) =>
+      getAllEtaplar(mahalle.slug).map((etap) => ({ no: etap.no, mahalleSlug: mahalle.slug }))
+    )
+    .sort((a, b) => Number(a.no) - Number(b.no));
+  return etapBaglariCache;
+}
+
 export function Footer() {
   const mahalleler = getAllMahalleler();
+  const etaplar = etapBaglari();
 
   return (
     <footer className="bg-navy text-white">
@@ -213,6 +242,29 @@ export function Footer() {
                 </li>
               ))}
           </ul>
+          {etaplar.length > 0 && (
+            <>
+              <p
+                role="heading"
+                aria-level={2}
+                className="mt-6 font-heading text-sm font-semibold uppercase tracking-wide text-gold"
+              >
+                Eryaman Etapları
+              </p>
+              <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
+                {etaplar.map((etap) => (
+                  <li key={etap.no}>
+                    <Link
+                      href={`/mahalleler/${etap.mahalleSlug}/etaplar/${etap.no}`}
+                      className="text-sm text-white/70 hover:text-gold"
+                    >
+                      {etap.no}. Etap
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </>
+          )}
         </div>
       </div>
 

@@ -90,15 +90,54 @@ const yurdu = (dizin) => {
 yurdu(path.join(KOK, "content"));
 
 const sirali = Object.fromEntries(Object.keys(dosyalar).sort().map((k) => [k, dosyalar[k]]));
+
+/* KLASÖR TARİHLERİ — hub/liste sayfaları için (/blog, /siteler, /siteler/yenimahalle,
+ * /eryaman-site-dokusu). Bu sayfalar tek bir içerik dosyasına bağlı değil; JSX'inin
+ * git tarihi de yanlış cevap verir (08.08 ölçümü: sitemap'te /blog 07-24 yazıyordu,
+ * oysa 07.08'de 24 yazı silinmişti — Google'a açıkça "değişmedi" deniyordu).
+ *
+ * Diskteki dosyaların maksimumu YETMEZ: klasördeki tek değişiklik bir SİLME ise
+ * (d4c9d76: 43 yazı -> 19) geriye kalan dosyaların hiçbirinin tarihi oynamaz ve
+ * silme sinyali kaybolur. Bu yüzden kaynak, `tarihler` haritasının tamamı: git
+ * geçmişinde görülen HER yol, artık diskte olmayanlar dahil. */
+const klasorler = {};
+const klasoreIsle = (gitYolu, gun) => {
+  if (!gitYolu.startsWith("content/") || HARIC.has(gitYolu)) return;
+  const parcalar = gitYolu.slice("content/".length).split("/");
+  parcalar.pop();
+  for (let i = 1; i <= parcalar.length; i++) {
+    const anahtar = parcalar.slice(0, i).join("/");
+    if (!klasorler[anahtar] || gun > klasorler[anahtar]) klasorler[anahtar] = gun;
+  }
+};
+for (const [gitYolu, gun] of tarihler) klasoreIsle(gitYolu, gun);
+// Commit'lenmemiş dosyalar da klasörü tazeler (--yalniz-gecmis'te `kirli` boş).
+for (const gitYolu of kirli) klasoreIsle(gitYolu, bugun);
+
+/* Artık DİSKTE OLMAYAN klasörler elenir: 26.07 URL taşımasından kalan eski
+ * slug'lar (`siteler/altay` → `siteler/altay-mahallesi`) geçmişte duruyor ama
+ * hiçbir sayfa onları sormaz. Silinen DOSYALARIN tarihi elenmez — o dosyalar
+ * hâlâ var olan klasörün tarihine katkı verir, silme sinyalinin kaynağı bu. */
+const klasorSirali = Object.fromEntries(
+  Object.keys(klasorler)
+    .filter((k) => fs.existsSync(path.join(KOK, "content", k)))
+    .sort()
+    .map((k) => [k, klasorler[k]])
+);
+
 fs.writeFileSync(
   CIKTI,
-  `${JSON.stringify({ uretildi: bugun, dosyalar: sirali }, null, 0)}\n`
+  `${JSON.stringify({ uretildi: bugun, dosyalar: sirali, klasorler: klasorSirali }, null, 0)}\n`
 );
 
 const dagilim = new Map();
 for (const tarih of Object.values(sirali)) dagilim.set(tarih, (dagilim.get(tarih) ?? 0) + 1);
 const enYeni = [...dagilim].sort((a, b) => b[0].localeCompare(a[0])).slice(0, 5);
-console.log(`${Object.keys(sirali).length} dosya → content/lastmod.json`);
+console.log(
+  `${Object.keys(sirali).length} dosya + ${Object.keys(klasorSirali).length} klasör → content/lastmod.json`
+);
 console.log(`Farklı tarih sayısı: ${dagilim.size} (mtime ile 1 olurdu)`);
 console.log("En yeni 5 tarih:");
 for (const [tarih, adet] of enYeni) console.log(`  ${tarih}  ${adet} dosya`);
+console.log("Hub klasörleri:");
+for (const k of ["blog", "siteler", "mahalleler"]) console.log(`  ${k}: ${klasorSirali[k]}`);

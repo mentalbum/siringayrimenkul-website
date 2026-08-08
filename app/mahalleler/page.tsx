@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { getAllMahalleler, getMahalleBoundary } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
+import { CtaButton } from "@/components/ui/button";
 import { MahalleCard } from "@/components/mahalle/mahalle-card";
 import { Reveal } from "@/components/ui/reveal";
 import { RegionMapLoader } from "@/components/maps/region-map-loader";
@@ -50,8 +51,8 @@ export default function MahallelerPage() {
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
           Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
-          metrosuna bağlı bir semt. 11 mahallenin tamamını ve içlerindeki 700&apos;den fazla
-          site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
+          metrosuna bağlı bir semt. 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den
+          fazla site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
@@ -94,6 +95,21 @@ export default function MahallelerPage() {
           </div>
         </section>
       )}
+
+      <section className="mt-16">
+        <h2 className="text-xl">Etap Etap Eryaman</h2>
+        <p className="mt-3 max-w-3xl text-base leading-relaxed text-body">
+          Eryaman&apos;ın çekirdeği mahallelerden önce etaplarla anılır: dairesinin
+          adresini &ldquo;3. Etap&rdquo; diye söyleyen bir ev sahibi, mahalle adını hiç
+          kullanmıyor olabilir. Resmî ada listesi elimizde olan beş etabı haritada
+          topladık.
+        </p>
+        <div className="mt-5">
+          <CtaButton href="/etaplar" variant="outline">
+            Eryaman Etap Haritası
+          </CtaButton>
+        </div>
+      </section>
 
       <script
         type="application/ld+json"
