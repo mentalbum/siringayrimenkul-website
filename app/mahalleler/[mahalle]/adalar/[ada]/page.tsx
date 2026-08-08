@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import {
   adaDisplayLabel,
   adaRouteKey,
@@ -98,7 +98,29 @@ export default async function AdaPage({ params }: Props) {
   const { mahalle: mahalleSlug, ada: adaKey } = await params;
   const mahalle = getMahalleBySlug(mahalleSlug);
   const entries = getAdaEntriesByRouteKey(mahalleSlug, adaKey);
-  if (!mahalle || entries.length === 0) notFound();
+  if (!mahalle) notFound();
+  if (entries.length === 0) {
+    // PARSELSİZ ESKİ ADRES KURTARMA (2026-08-08).
+    // Rota anahtarı 01.07'de "<ada>" iken "<ada>-<parsel>" oldu; öncesinde
+    // yayınlanmış ~658 adres o günden beri 404 veriyor ve GSC her turda yeni
+    // bir "Bulunamadı" partisi raporluyordu. Bugüne dek yalnız 3'ü elle
+    // yamanmıştı (next.config.ts) — bu hızla açık hiç kapanmaz.
+    // Kural: aynı mahallede o ada numarasına TEK site karşılık geliyorsa o
+    // sitenin sayfasına, birden çok site varsa mahalle sayfasına kalıcı
+    // yönlendir. Hedef ada sayfası DEĞİL site sayfası: ada sayfasının
+    // kanonik'i zaten site sayfasını gösteriyor, araya bir hop koymanın
+    // anlamı yok.
+    const ayniNumarali = getAllAdalar(mahalleSlug).filter((item) => item.no === adaKey);
+    if (ayniNumarali.length > 0) {
+      const siteSluglari = new Set(ayniNumarali.map((item) => item.site.slug));
+      permanentRedirect(
+        siteSluglari.size === 1
+          ? `/mahalleler/${mahalleSlug}/${ayniNumarali[0].site.slug}`
+          : `/mahalleler/${mahalleSlug}`
+      );
+    }
+    notFound();
+  }
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
@@ -113,17 +135,31 @@ export default async function AdaPage({ params }: Props) {
       .map((item) => [adaRouteKey(item), item] as const)
   );
   const buNo = Number.parseInt(ada.no, 10);
-  // 4 komşu ada yeter: bu sayfalar noindex, ada→ada bağları PageRank'i noindex
-  // kümesinin içinde döndürüyordu (12 bağla kenar ağırlığının %22'si, PR
-  // kütlesinin %15,6'sı burada park ediyordu — grafta ölçüldü). Bağ sayısı
-  // düşünce sayfanın çıkış ağırlığı site/mahalle bağlarına kayar, değer
-  // dizindeki sayfalara geri akar. Ziyaretçi yine en yakın numaralı 4 adayı
-  // görür; kayıp yok.
+  // 4 komşu yeter (bağ sayısı 12'den 4'e indirilmişti: kenar ağırlığının %22'si
+  // burada park ediyordu — grafta ölçüldü).
+  //
+  // 2026-08-08: bu bağların HEDEFİ de değişti. Eskiden komşu ADA sayfasına
+  // gidiyorlardı; 812 ada × 4 = 3.248 bağ, iç bağ kütlesinin %73'ü, kanonik'i
+  // BAŞKA sayfayı gösteren bir kümenin içinde dönüyordu — ada kümesinden
+  // dizine giren sayfalara çıkan bağ oranı 4'te 0'dı. Artık komşunun SİTE
+  // sayfasına gidiyorlar: aynı komşuluk bilgisi, ama değer dizindeki sayfalara
+  // akıyor. (Not: ada sayfaları ARTIK noindex değil — ce068bd'den beri
+  // index + site sayfasına canonical; eski yorumdaki noindex varsayımı bayattı.)
+  //
+  // Aynı siteye ait birden çok ada komşu çıkabildiği için site slug'ına göre
+  // tekilleştiriliyor, sayfanın kendi sitesi de listeden düşüyor — yoksa
+  // "diğer siteler" listesinde kendini gösteren kart oluşuyordu.
+  const gorulenSite = new Set<string>([ada.site.slug]);
   const ayniEtaptakiler = Array.from(ayniEtapMap.values())
     .sort(
       (a, b) =>
         Math.abs(Number.parseInt(a.no, 10) - buNo) - Math.abs(Number.parseInt(b.no, 10) - buNo)
     )
+    .filter((item) => {
+      if (gorulenSite.has(item.site.slug)) return false;
+      gorulenSite.add(item.site.slug);
+      return true;
+    })
     .slice(0, 4);
 
   const adaJsonLd = {
@@ -326,22 +362,26 @@ export default async function AdaPage({ params }: Props) {
                 >
                   Eryaman {ada.etap}. Etap
                 </Link>
-                &apos;taki Diğer Adalar
+                &apos;taki Komşu Siteler
               </>
             ) : (
-              `${bulunmaHaliKi(mahalle.isim)} Diğer Adalar`
+              `${bulunmaHaliKi(mahalle.isim)} Komşu Siteler`
             )}
           </h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {ayniEtaptakiler.map((item) => (
               <Link
                 key={adaRouteKey(item)}
-                href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(item)}`}
+                href={`/mahalleler/${mahalle.slug}/${item.site.slug}`}
                 className="group flex cursor-pointer items-center justify-between gap-2 rounded-2xl border border-border bg-surface p-4 transition-colors hover:border-gold"
               >
+                {/* Site adı ÖNDE, ada numarası altta: kart artık site sayfasına
+                    gidiyor, başlık da gidilen yeri söylemeli (bağ hedefi
+                    değişirken etiket eskisi gibi kalırsa ziyaretçi "ada
+                    sayfası" bekleyip site sayfasına düşer). */}
                 <div>
-                  <p className="text-sm font-semibold text-navy">{adaDisplayLabel(item)} Ada</p>
-                  <p className="text-xs text-muted">{item.site.isim}</p>
+                  <p className="text-sm font-semibold text-navy">{item.site.isim}</p>
+                  <p className="text-xs text-muted">{adaDisplayLabel(item)} Ada</p>
                 </div>
                 <ArrowRightIcon className="h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-gold-dark" />
               </Link>
