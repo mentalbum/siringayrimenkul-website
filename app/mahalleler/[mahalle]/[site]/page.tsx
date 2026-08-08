@@ -336,12 +336,23 @@ export default async function SitePage({ params }: Props) {
         // yapılandırılmış cevabı. OZGUN_ID, hakkımızdaki Person düğümüne bağlanır.
         author: { "@id": OZGUN_ID },
         reviewedBy: { "@id": OZGUN_ID },
+        // Sayfanın ASIL konusu aşağıdaki ApartmentComplex düğümü; bağ
+        // kurulmadığında dateModified/author'ın neyi nitelediği belirsizdi.
+        mainEntity: { "@id": `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}#site` },
       }
     : null;
 
   const siteJsonLd = {
     "@context": "https://schema.org",
     "@type": "ApartmentComplex",
+    // @id: aşağıdaki WebPage düğümü mainEntity ile buraya bağlanır. İkisi
+    // bağlanmadığında sayfanın tazelik (dateModified) ve yazar sinyalinin
+    // HANGİ varlığa ait olduğu makine tarafında belirsiz kalıyordu; sitenin
+    // geri kalanındaki @id disiplininin (ORG_ID/WEBSITE_ID/OZGUN_ID) bu
+    // sayfada yarım kalmış hâliydi. Zengin sonuç kazancı yok — ApartmentComplex
+    // Google'ın zengin sonuç galerisinde değil; kazanç varlık anlama ve yapay
+    // zekâ asistanlarının doğru alıntılaması tarafında (2026-08-08).
+    "@id": `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}#site`,
     name: site.isim,
     ...(site.alternatifAdlar?.length && { alternateName: site.alternatifAdlar }),
     description: site.aciklama,
@@ -389,6 +400,19 @@ export default async function SitePage({ params }: Props) {
           : `${mahalle.ilce}, Ankara`,
       },
     },
+    // Künyeden gelen iki alan (2026-08-08). Yeni veri toplanmadı: ikisi de
+    // cikarKunye()'nin kayıt metninden deterministik olarak çıkardığı,
+    // sayfada zaten görünen bilgiler. Metinde geçmiyorsa undefined kalır ve
+    // alan hiç basılmaz — uydurma yok (bkz. lib/kunye.ts başlığı).
+    // FİYAT/offers alanı BİLEREK YOK: sitede güncel piyasa fiyatı yazılmıyor.
+    ...(kunye.konutSayisi && { numberOfAccommodationUnits: kunye.konutSayisi }),
+    ...(kunye.donatilar.length && {
+      amenityFeature: kunye.donatilar.map((d) => ({
+        "@type": "LocationFeatureSpecification",
+        name: d,
+        value: true,
+      })),
+    }),
   };
 
   return (
