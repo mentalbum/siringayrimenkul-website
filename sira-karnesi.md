@@ -355,3 +355,55 @@ GSC'de başlık gösterimini ölç. Ana sayfada aynı gerekçe 08.08'de uyguland
   alınabilecek zengin sonuç (Breadcrumb, Image metadata) zaten alınmış.
 - Toplu saha fotoğrafı çekimi (721 site) AÇILMADI: GBP kanal önceliği ölçümü
   görsel bütçenin GBP'ye gitmesini destekliyor. Fotoğraf fırsatçı biriktirilir.
+
+---
+
+## 2026-08-08 17:10 — GSC TAZE KARNE: "emlakçı" sınıfı hacmin %2'siymiş
+
+Veri: `scratchpad-karne/pws0/gsc-28gun-2026-08-08.json` (1000 sorgu, 28 gün,
+Search Console Performans tablosundan tarayıcı içi JS ile; yöntem dosyanın
+başında yazılı). Toplam 25.545 gösterim / 471 tıklama / ağırlıklı ort. konum 8,67.
+
+### SORGU SINIFI HACİMLERİ — çalışmanın yönünü değiştiren tablo
+| Sınıf | Sorgu | Gösterim | Pay | Tıklama | Ort. konum |
+|---|---|---|---|---|---|
+| **Yalın site adı** ("selvi evleri") | 575 | 16.298 | **%64** | 173 | 9,1 |
+| satılık | 243 | 5.085 | %20 | 190 | 7,2 |
+| kiralık | 148 | 3.035 | %12 | 80 | 7,7 |
+| tapu/ada/TTBS | 16 | 606 | %2 | 8 | 13,7 |
+| **emlakçı** | **18** | **521** | **%2** | 20 | 8,6 |
+
+**DERS (önemli):** 1481 sorguluk pws=0 tarama kuyruğumuz tamamen "<site adı>
+emlakçı" biçiminde — yani gerçek talebin **%2'sini** ölçüyor. Kuyruk 6-7 gecede
+bitse bile öğreneceğimiz şey hacmin %2'si hakkında olacak. Gerçek hacim YALIN
+SİTE ADINDA (%64) ve orada ortalama 9,1'deyiz. Tarama kuyruğu yeniden
+kurulacaksa yalın ad + satılık biçimleriyle kurulmalı.
+NOT: "emlakçı" sınıfının küçüklüğü sayfa başlıklarındaki "Emlakçı" ibaresini
+otomatik olarak yanlışlamaz (ne olduğumuzu söyleyen ibare + ev sahibi dili
+kararı ayrı bir tercih) — ama başlık tartışılırken bu rakam masada olmalı.
+
+### İYİ HABER: baş sorgu düzeliyor
+"eryaman emlakçı" 28 günlük ort. konum **4,3 → 3,6** (155 gösterim, 14 tıklama,
+TO %9). "eryaman emlak" 2,3; "şirin gayrimenkul" 2,5. Bugünkü pws=0 canlı
+ölçümde de organik **3. sıra** görüldü (7 Ağustos altın ölçümünde 13-14'tü).
+
+### EN BÜYÜK FIRSAT LİSTESİ (gösterim ≥60 ve konum ≥8)
+selvi evleri (205/8,2), atakent vadi sitesi (154/10,7), hittown satılık (151/8,2),
+koz modern sitesi (148/9,7), efsane evleri (141/10,2), natura göksu satılık
+(114/8,2), armoni life sitesi (114/9,6), endora plus (114/9), mavi bayrak sitesi
+(112/8,7), aker mücevher evleri (97/8,8), alkon sitesi (93/8,5), hittown kiralık
+(92/9,4), kıratlı rezidans (88/8,4), örnek arı sitesi (87/8), umar sitesi (82/8,2).
+Bunların çoğu ZATEN zenginleştirilmiş kayıtlar — demek ki metin derinliği tek
+başına yetmiyor, sıçrama dizin+otorite tarafından gelecek.
+
+### EŞİKTEKİLER (4-7 bandı, ≥40 gösterim) — en ucuz kazanç
+bordo göl evleri (108/6,5), endora plus sitesi (107/6,9), çağlayan sitesi eryaman
+(94/5,4), prestij park konutları (92/5,9), white dream sitesi (85/5,8), vera city
+(81/5,7), sarıtaş seyir evleri (65/5,2), maviler ipek (63/6,2).
+Bir-iki sıra kazanç bunları ilk üçe taşır; öncelik burası olmalı.
+
+### DOKUNULMAYACAK
+"eryaman nereye bağlı" (267 gösterim, 10. sıra) ve "eryaman hangi ilçeye bağlı"
+(106/10,2) gerçek ve Eryaman'a özel bir talep — ama içerik kararı Özgün'ün.
+TTBS/yetki belgesi sorguları (toplam ~520 gösterim) BİLEREK boş: TTBS yazısı
+31 Tem'de Özgün kararıyla silindi, yeniden önerilmez.

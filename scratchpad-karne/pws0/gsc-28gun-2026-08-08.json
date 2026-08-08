@@ -1,0 +1,39 @@
+{
+  "aciklama": "GSC 28 günlük sorgu karnesi, 2026-08-08 17:10'da Search Console Performans tablosundan (1000 satır) tarayıcı içi JS ile çıkarıldı. Yöntem: Performans > 28 gün > Ortalama konum işaretli > satır/sayfa 500 > ikinci tbody'den okuma (DOM'da eski aralığın satırları da duruyor, SON tbody tazedir; doğrulama: 'eryaman emlakçı' değeri ekrandaki değerle birebir tutmalı).",
+  "toplam": { "sorgu": 1000, "gosterim": 25545, "tiklama": 471, "agirlikliOrtKonum": 8.67, "poz1_5alti": 3, "poz3_5alti": 17, "poz10_5alti": 861 },
+  "sorguSiniflari": {
+    "_not": "gos = 28 günlük gösterim, ortP = gösterimle ağırlıklı ortalama konum",
+    "yalinAd": { "sorgu": 575, "gos": 16298, "tik": 173, "ortP": 9.1, "pay": "%64" },
+    "satilik": { "sorgu": 243, "gos": 5085, "tik": 190, "ortP": 7.2, "pay": "%20" },
+    "kiralik": { "sorgu": 148, "gos": 3035, "tik": 80, "ortP": 7.7, "pay": "%12" },
+    "tapuTtbs": { "sorgu": 16, "gos": 606, "tik": 8, "ortP": 13.7, "pay": "%2" },
+    "emlakci": { "sorgu": 18, "gos": 521, "tik": 20, "ortP": 8.6, "pay": "%2" }
+  },
+  "yuksekHacimKotuSira": [
+    ["eryaman nereye bağlı", 0, 267, 10], ["selvi evleri", 2, 205, 8.2],
+    ["ttbs sorgulama", 6, 180, 10.4], ["atakent vadi sitesi", 1, 154, 10.7],
+    ["hittown satılık", 0, 151, 8.2], ["koz modern sitesi", 0, 148, 9.7],
+    ["efsane evleri", 0, 141, 10.2], ["ttbs yetki belgesi sorgulama", 0, 120, 8.7],
+    ["natura göksu satılık", 4, 114, 8.2], ["armoni life sitesi", 2, 114, 9.6],
+    ["endora plus", 0, 114, 9], ["mavi bayrak sitesi", 1, 112, 8.7],
+    ["eryaman hangi ilçeye bağlı", 0, 106, 10.2], ["emlak yetki belgesi sorgulama", 0, 105, 8.3],
+    ["aker mücevher evleri", 0, 97, 8.8], ["alkon sitesi", 0, 93, 8.5],
+    ["hittown kiralık", 0, 92, 9.4], ["kıratlı rezidans", 0, 88, 8.4],
+    ["örnek arı sitesi", 2, 87, 8], ["umar sitesi", 0, 82, 8.2]
+  ],
+  "esikte_4_7_bandi": [
+    ["bordo göl evleri", 0, 108, 6.5], ["endora plus sitesi", 2, 107, 6.9],
+    ["çağlayan sitesi eryaman", 0, 94, 5.4], ["prestij park konutları", 0, 92, 5.9],
+    ["white dream sitesi", 0, 85, 5.8], ["vera city", 0, 81, 5.7],
+    ["konum eryaman satılık", 3, 66, 6.8], ["sarıtaş seyir evleri", 1, 65, 5.2],
+    ["maviler ipek", 4, 63, 6.2]
+  ],
+  "emlakciSinifiTamListe": [
+    ["eryaman emlakçı", 14, 155, 3.6], ["emlakçı yetki belgesi sorgulama", 2, 118, 7],
+    ["etimesgut emlakçılar", 0, 41, 3.6], ["emlakçı komisyonu hesaplama", 1, 40, 32.3],
+    ["emlakçı olmadan ev satılır mı", 0, 26, 6.3], ["eryaman emlakçılar listesi", 0, 24, 1.3],
+    ["emlakçı", 1, 18, 1.5], ["emlakçı sorgulama", 1, 18, 8.8],
+    ["emlakçı belgesi sorgulama", 0, 15, 8.5], ["emlakçılık belgesi sorgulama", 0, 10, 10],
+    ["emlakçı komisyonu", 0, 10, 44.5], ["eryaman emlakçılar", 0, 9, 1.3]
+  ]
+}
