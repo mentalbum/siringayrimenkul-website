@@ -22,9 +22,13 @@ export const siteConfig = {
   // ALT ALAN ADI DEĞİŞTİRİLMEYECEK: eryamanemlakcisiringayrimenkul zaten buraya
   // yönleniyor ve Google'da 0 indeksli sayfası var; adres değişimi "eryaman
   // 3./4./5. etap emlakçı" sorgularındaki üç organik 1. sırayı riske atar.
-  sahibindenUrl:
-    process.env.NEXT_PUBLIC_SAHIBINDEN_URL ??
-    "https://eryamansiringayrimenkul.sahibinden.com/",
+  //
+  // ENV OKUMASI KALDIRILDI (2026-08-08): bu değer NEXT_PUBLIC_SAHIBINDEN_URL
+  // ile ezilebiliyordu ve Vercel'deki değişken bayat kalmıştı — kod varsayılanı
+  // mağaza köküne çevrildikten sonra yayın yapıldı, canlıda link YİNE
+  // /one-cikanlar çıktı (doğrulandı). Ortama göre değişmesi gereken bir değer
+  // değil; tek kaynak burası. Vercel'deki değişken artık işlevsiz, silinebilir.
+  sahibindenUrl: "https://eryamansiringayrimenkul.sahibinden.com/",
   serviceArea: "Eryaman, Etimesgut / Ankara",
   officeAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı, 06824 Etimesgut/Ankara",
   officeAddressParts: {
