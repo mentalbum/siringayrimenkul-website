@@ -35,6 +35,11 @@ export interface AdaBilgi {
    * Betonarme Mesken …"). Görünür metne olduğu gibi basılmaz; künye çıkarımı
    * metinden kat bilgisi bulamazsa yedek kaynak olarak buradan okur. */
   nitelik?: string;
+  /** Adadaki apartmanların ADLARI — Eryaman 1. Etap'ta bloklar kodla değil
+   * isimle anılıyor ("Bayındır", "Gebze"), adres ve ilan dilinde karşılığı olan
+   * bir arşiv. Kaynak: etap yönetiminin blok listesi (Wayback: eryaman1.com/
+   * blok_yonetimi.php). Şu an yalnız veri katmanı — henüz sayfada basılmıyor. */
+  bloklar?: string[];
 }
 
 export interface Site {

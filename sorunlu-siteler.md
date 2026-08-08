@@ -1505,6 +1505,18 @@ eşik bandında, yani derinleşirse kazanç var.
 **Özgün'den gereken:** blok sayısı, kat adedi, daire tipleri, yapım/teslim yılı,
 geliştirici adı. Bunlar gelmeden metin uzatılmayacak (uydurma yasağı).
 
+## 1. Etap blok adları veri katmanına işlendi (2026-08-08)
+Yönetimin blok tablosundaki apartman ADLARI beş kayda girdi: Mesa 7, Sutek 22, Betontaş 66,
+AGE 67, Kutlutaş 103 — toplam 265 blok adı, `adalar[].bloklar` alanında (yeni alan, types.ts'te
+tanımlı). Aktürk'ünkiler 07-08.08'de açıklama metnine örnek olarak girmişti.
+- **Görünür metne yalnız birer örnek cümle eklendi** (4-5 ad); tam liste şu an SAYFADA BASILMIYOR.
+  Sebep: listeyi basmak site/ada şablonuna dokunmayı gerektiriyor, o dosyalar paralel oturumun
+  açık PR'ında (#4). PR'lar birleşince ada sayfasına "Bu adadaki bloklar" bölümü eklenebilir —
+  ada sayfaları artık canonical'lı ve sitemap'te olduğu için değeri var.
+- **Türkçe harf tuzağı (yeni ders):** Python'un `.title()`/`.lower()`'ı İ/I ayrımını bozuyor
+  ("EMİRDAĞ" → "Emi̇rdağ", "BEŞPINAR" → "Beşpinar", "KIZILIRMAK" → "Kizilirmak"). İlk turda
+  265 adın tamamı bozuk üretildi, yakalandı ve elle eşleme yazıldı. JS tarafındaki `\b` sorununun
+  (lib/kunye.ts baş yorumu) Python karşılığı — toplu ad üretiminde her zaman kontrol et.
 ## Etap künye denetimi (2026-08-08) — yönetim kayıtları 7 siteye işlendi
 İki resmî uç toplu olarak hasat edildi ve repo künyeleriyle karşılaştırıldı:
 - **1. Etap:** eryaman1.com'un Wayback'teki blok tablosu 63 adayı bölgeye bağlıyor. Repo
