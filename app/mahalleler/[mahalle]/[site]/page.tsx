@@ -649,16 +649,23 @@ export default async function SitePage({ params }: Props) {
               varyantta döner ve üçte biri bilinçli LİNKSİZ kalır: 520 Eryaman
               sayfasına birebir aynı çapayı basmak ölçekli-içerik ayak izi olurdu
               (diff incelemesi bulgusu — semaDisi kararıyla aynı gerekçe,
-              lib/faq.ts). "emlak ofisleri" varyantı "eryaman emlak ofisleri"
-              sorgu ailesini de kapsar. Yenimahalle kolunda konum iddiası
-              doğmasın diye her zaman düz metin (lib/bolge.ts kuralı). */}
+              lib/faq.ts). Yenimahalle kolunda konum iddiası doğmasın diye her
+              zaman düz metin (lib/bolge.ts kuralı).
+              ÜÇÜNCÜ VARYANT DÜZELTİLDİ (2026-08-08): eskiden yalnız "emlak
+              ofisleri" yazıyordu ve bd80c99'un bilerek eklediği "emlakçılar"
+              çoğulunu ~240 site sayfasında (Eryaman kolunun üçte biri) tamamen
+              düşürüyordu — gece diff denetimi canlıda yakaladı. Artık iki terim
+              de aynı çapada geçiyor: "emlak ofisleri" sorgu ailesi korunuyor,
+              çoğul kapsaması geri geliyor ve çapa metni 0. varyanttan yine
+              farklı (ölçekli-içerik ayak izi oluşmuyor). Bu üç dalın HER BİRİ
+              "emlakçılar" kelimesini içermeli — yeni varyant eklerken koru. */}
           {eryamanda && varyant % 3 === 0 ? (
             <Link href="/" className="font-semibold text-gold-dark hover:underline">
               Eryaman&apos;daki emlakçılar
             </Link>
           ) : eryamanda && varyant % 3 === 2 ? (
             <Link href="/" className="font-semibold text-gold-dark hover:underline">
-              Eryaman&apos;daki emlak ofisleri
+              Eryaman&apos;daki emlakçılar ve emlak ofisleri
             </Link>
           ) : (
             "Bölgedeki emlakçılar"
