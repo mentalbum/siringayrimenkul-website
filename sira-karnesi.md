@@ -292,3 +292,66 @@ harcamış. Kuyruk duruyor; yarın sabah ilk iş.
 Öncelik 1 metinleri `platform-profil-metinleri.md`'de HAZIR (Bing Places,
 Apple Business Connect, bulurum, sektortanitim). Bu adım hesap açma/parola
 gerektirdiği için Özgün'ün elinde — bende yasak. Malzeme bekliyor.
+
+---
+
+## 2026-08-08 — RAKİP + ZENGİN SONUÇ ANALİZİ (4 ajanlı tarama, 25 madde → 17)
+
+### En önemli bulgu: rakip bizden İYİ DEĞİL, sadece GÖRÜNÜR
+eryaman.bilgiemlak.com.tr (52 sorguda önümüzde) sayfa düzeyinde bizden çok geride:
+13 KB HTML, ~50-100 kelime, meta description YOK, canonical YOK, og etiketi YOK,
+schema.org YOK, sitemap.xml 404, hâlâ ga.js. Bizde 900+ kelime kaynaklı metin,
+ApartmentComplex/BreadcrumbList şeması, TKGM sınır poligonu, tazelik ve yazar
+künyesi var. **Öne geçmelerinin sayfa düzeyindeki tek somut sebebi başlık:**
+onlarınki 44 karakter ve "Eryaman" HER SERP'te görünüyor; bizimki 73-74 karakter
+ve lokasyon tam da Google'ın kestiği yerde kalıyor. Yani sorun içerik değil,
+içeriğin SERP yüzeyine yansımaması.
+
+### BUGÜN UYGULANDI ✅
+1. **Self-serving aggregateRating kaldırıldı** (app/layout.tsx, ce22cc0).
+   Google kuralı: kendi yorumlarını denetleyen işletmenin LocalBusiness/
+   Organization sayfaları yıldız özelliği için UYGUN DEĞİL — yani 720+ sayfaya
+   basılan bu işaretleme hiçbir koşulda yıldız üretemiyordu, karşılığında
+   politika riski taşıyordu. Görünür yorum kutusu ve GBP puanı etkilenmedi.
+2. **OG görsel uçları Googlebot'a kapatıldı** (app/robots.ts, c36e67b) — yukarıdaki
+   tarama israfı bölümüne bakınız.
+3. **Blog paylaşım kartı yazıya özel oldu** (app/blog/[slug]/page.tsx, d508b90).
+   Her yazı aynı ofis fotoğrafıyla paylaşılıyordu; üstelik beyan edilen boyut
+   yanlıştı (1284x936 yazıyordu, dosya 1200x874). opengraph-image.tsx zaten
+   yazıya özel 1200x630 kart üretiyormuş ama o satır tarafından eziliyormuş.
+
+### DEVİR — SIRADAKİ EN DEĞERLİ İŞ (dosya paralel oturumda açıktı, dokunulmadı)
+**Başlıkta lokasyonu kırpılmayan yere taşı.** İki dosya:
+`app/mahalleler/[mahalle]/[site]/page.tsx:115-129` ve
+`app/mahalleler/[mahalle]/page.tsx:83-87`. 2. ve 3. bölüm yer değiştirir:
+`${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`.
+Mevcut üç dallı mantık (isimdeEryamanVar / isimBirdenCokMahallede / eryamanda)
+ve lib/bolge.ts ayrımı AYNEN korunur — Ata/Susuz/Cumhuriyet'te "Eryaman" yerine
+mahalle adı basılmaya devam eder. Rakibin "(44758 Ada)" biçimi KOPYALANMAZ
+(çıplak ada numarası yasağı). Yayından sonra IndexNow'a bildir, 2-3 hafta sonra
+GSC'de başlık gösterimini ölç. Ana sayfada aynı gerekçe 08.08'de uygulandı
+(69→48 karakter) — bu, onun site/mahalle sayfalarına yansımamış hali.
+
+### KALAN SIRA (etki/emek)
+4. [yük/düş] Ada sayfalarının sitemap penceresini GSC'den ÖLÇ ve kapat (sitemap'teki
+   1546 URL'nin ~767'si ada sayfası; pencere app/sitemap.ts'te "geçici" diye yazılı).
+5. [yük/orta] H1 altına künye tablosu — YENİ VERİ GEREKMİYOR, hepsi lib/kunye.ts'te
+   türetilmiş halde (blok, kat aralığı, konut sayısı, tapu niteliği, parsel m²,
+   donatılar). Rakipte kullanıcı önce künye görüyor, bizde önce satış metni.
+   SINIR: ısınma türü/yapım yılı alanı YOK (uydurma yasak), etap satırı girmez.
+6. [orta/düş] ApartmentComplex'e numberOfAccommodationUnits + amenityFeature ekle
+   (kunye.konutSayisi / kunye.donatilar hazır; address ve image ZATEN var).
+7. [orta/düş] FAQ sorularını h3'e al, cevabın ilk cümlesini doğrudan cevap yap (PAA).
+8. [orta/orta] `adres` alanını doldurmaya devam et (115/723 dolu; sayfa+şema hazır).
+9. [orta/orta] Marka ailesi (Dimaş Panorama) / alt bölge (Etikent) hub sayfaları —
+   ÖNCE GSC'de gösterim ölç, körlemesine sayfa açma.
+
+### ÖLÜ YATIRIM UYARILARI (yeni emek harcama)
+- **FAQPage zengin sonucu 7 Mayıs 2026'da tamamen kaldırıldı** (2023 daraltmasından
+  sonra tümden). ~730 sayfadaki işaretleme artık hiçbir SERP unsuru üretmiyor.
+  SİLME (zararsız, AI motorları için değerli) ama yeni FAQ yatırımı yapma.
+- **Sitelinks arama kutusu 21 Kasım 2024'te küresel olarak kaldırıldı.**
+- **ApartmentComplex Google'ın zengin sonuç galerisinde YOK** — o sayfalarda
+  alınabilecek zengin sonuç (Breadcrumb, Image metadata) zaten alınmış.
+- Toplu saha fotoğrafı çekimi (721 site) AÇILMADI: GBP kanal önceliği ölçümü
+  görsel bütçenin GBP'ye gitmesini destekliyor. Fotoğraf fırsatçı biriktirilir.
