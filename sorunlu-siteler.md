@@ -4,6 +4,31 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+
+### "rezidansıntapu" — 19 mahalle sayfasında CANLI, iki kez kapatıldı sanıldı (2026-08-08)
+`app/mahalleler/[mahalle]/page.tsx` (commit'li 525 / açık ağaçta 529). Mahalle
+sayfalarının ana tanıtım cümlesi canlıda şöyle okunuyor:
+`"...mahalledeki 68 site ve rezidansıntapu yapısını, bloklarını..."`.
+
+Tarayıcı `innerText` ile güncel yayında ölçüldü (yeni başlık kalıbı canlı olduğu
+için build taze) — kusur duruyor. **İki kez "düzeltildi" diye kapatıldı**; her
+ikisinde de eklenen `{" "}` ifadenin ÖNÜNE kondu (`mahalledeki{" "}`), oysa
+bitişiklik ifadenin SONRASINDA. İki ayrı yer, biri diğerinin yerine geçmiyor.
+
+```jsx
+// ŞU AN:
+{siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"} tapu
+yapısını, bloklarını ve emsallerini tek tek arşivliyor;
+
+// OLMASI GEREKEN:
+{siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}{" "}
+tapu yapısını, bloklarını ve emsallerini tek tek arşivliyor;
+```
+
+DERS: kaynakta boşluk görünmesi yeterli değil — JSX derlemesi ifadeden sonraki
+tek boşluğu yiyor. "Düzeltildi" demeden önce canlı/dev `innerText` ile bak.
+Ayrıntı: `denetim-2026-08-08.md`.
+
 ### TKGM künye turu denetim bulguları (2026-08-08)
 Veri denetimi 316 tek-parselli kaydın alanM2'sini sitenin kendi sınır poligonuyla karşılaştırdı:
 **314'ü %6 içinde uyuştu** — uydurma alan yok. Sapan ve çelişen kalemler:
