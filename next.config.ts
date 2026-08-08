@@ -62,13 +62,21 @@ const nextConfig: NextConfig = {
       { source: "/blog/kiracili-ev-satilir-mi", destination: "/blog", permanent: true },
       { source: "/blog/miras-kalan-ev-nasil-satilir", destination: "/blog", permanent: true },
       { source: "/blog/tapu-ada-parsel-nasil-okunur", destination: "/blog", permanent: true },
-      // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
-      // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
-      // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.
-      // İlgili etabın toplu yapı yönetiminden resmî ada listesi gelirse geri açılır.
-      { source: "/mahalleler/altay/etaplar/1", destination: "/mahalleler/altay-mahallesi", permanent: true },
-      { source: "/mahalleler/sehit-osman-avci/etaplar/2", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
-      { source: "/mahalleler/seyh-samil/etaplar/3", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+      // 1/2/3. Etap yönlendirmeleri BİLEREK KALDIRILDI (2026-08-08).
+      //
+      // Bu üç kural, o etapların sayfaları doğrulanmamış gruplamadan beslendiği
+      // için kapatıldığında eklenmişti ve eski adresi MAHALLE sayfasına
+      // gönderiyordu. 81cda7d (2026-08-07) ile üç etap da resmî ada listeleriyle
+      // yeniden açıldı; kurallar ise kaldı. Sonuç: /mahalleler/altay/etaplar/1
+      // yeniden açılan etap sayfasına değil mahalle sayfasına 301'leniyordu —
+      // yani eski adresin taşıdığı sinyal etap sayfasından KAÇIRILIYORDU.
+      // (4. ve 5. Etap'ta böyle bir kural olmadığı için onlar hep doğru gidiyordu.)
+      //
+      // Silindiler; aşağıdaki MAHALLE SLUG TAŞIMASI bloğundaki genel kural
+      // (`/mahalleler/altay/:path*`) eski adresi doğru hedefe taşıyor:
+      //   /mahalleler/altay/etaplar/1 → /mahalleler/altay-mahallesi/etaplar/1
+      // Bir etap sayfası ileride tekrar kapanırsa buraya yeniden kural eklemek
+      // yerine önce lib/etap-onayli.ts'ten çıkarılır (sayfa zaten üretilmez).
 
       // Silinen/birleştirilen/taşınan site kayıtlarının eski URL'leri —
       // 404 yerine yaşayan varislerine kalıcı yönlendirme (SEO değeri taşınır).

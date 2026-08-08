@@ -13,6 +13,21 @@ Amaç: `kuyruk-oncelikli.json`'daki kalan sorguları her gece ≤180'lik dilimle
 > yaz" kuralı 2 ölçümü çöpe attı — artık **her ölçümden sonra** yazılır.
 > Oturum her an kesilebilir: diskte olmayan ölçüm yok sayılır.
 
+> **ETAP TABANI — kuyruğun BAŞINDAKİ 14 sorgu (`s` öneki `etap::`).**
+> 2026-08-08'de kuyruğun önüne bilerek alındı; sıraları değiştirilmemeli.
+> Bunlar bir **taban ölçümü**: aynı gün etap sayfalarına iki müdahale yapıldı —
+> (a) 1/2/3. Etap'ın bayat 301'leri kaldırıldı (eski adresler mahalle sayfasına
+> gidiyordu), (b) footer'a etap bloğu eklenip 1594 sayfanın tamamı beş etap
+> sayfasına bağlanır oldu. Öncesinde etap sayfalarının 4'ü "Keşfedildi – dizine
+> eklenmedi" durumundaydı ve 999 sorgulu GSC karnesinde etap geçen tek sorgu
+> vardı (6 gösterim, 0 tıklama).
+> **Soru:** iç bağ, tarama bütçesi darboğazını açar mı?
+> **Okuma zamanı: 2026-09-19 civarı** (müdahaleden ~6 hafta sonra). O tarihte bu
+> 14 sorgu YENİDEN ölçülüp bu tabanla karşılaştırılır. Sayfalar dizine girmediyse
+> etap sayfalarına içerik yatırımı yapılmaz — teşhis iç bağ değil demektir
+> (kanibalizasyon ihtimali için mahalle sayfasının aynı sorgularda çıkıp
+> çıkmadığına bakılır).
+
 ## Adımlar
 
 1. **Dilimi çıkar** — şu komutu OLDUĞU GİBİ çalıştır, keşif yapma:
