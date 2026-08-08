@@ -198,6 +198,17 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yesilova/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova-mahallesi/etaplar/undefined", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
 
+      // GSC 404 raporunun 2026-08-08 turunda kalan iki kayıt. İkisi de
+      // "yönlendirme var ama vardığı yer yok" durumundaydı: mahalle slug'ı
+      // <slug>-mahallesi'ne çevriliyor, sonra hedef 404 veriyordu — düz 404'ten
+      // kötü, çünkü tarama bütçesini iki istekte harcıyor.
+      // 46495: parselsiz eski ada biçimi; gerçek rota anahtarı "<ada>-<parsel>".
+      // cevilidere: eski link "z" harfi eksik yazılmış (doğrusu cevizlidere).
+      { source: "/mahalleler/tunahan/adalar/46495", destination: "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada", permanent: true },
+      { source: "/mahalleler/tunahan-mahallesi/adalar/46495", destination: "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada", permanent: true },
+      { source: "/mahalleler/devlet/cevilidere-sitesi", destination: "/mahalleler/devlet-mahallesi/cevizlidere-sitesi", permanent: true },
+      { source: "/mahalleler/devlet-mahallesi/cevilidere-sitesi", destination: "/mahalleler/devlet-mahallesi/cevizlidere-sitesi", permanent: true },
+
       // Özgün kararı (2026-07-28): kanat-yapi-evleri ve ela-concept-evleri silindi.
       // Kanat Yapı: sahibinden'in Ata Mahallesi site listesinden gelmişti ama Google,
       // Yandex, OSM, bilgiemlak ve ticaret sicilinin hiçbirinde iz yok. Ela Concept:
