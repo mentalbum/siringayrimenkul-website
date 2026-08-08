@@ -12,7 +12,9 @@
     {
       "no": "17536",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "alanM2": 6131,
+      "nitelik": "8 Ader Kargir Apartman"
     }
   ],
   "ozellikler": [
@@ -28,6 +30,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Altay Mahallesi"
   ],
+  "adres": "Sümbül Caddesi, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Altay Aktürk Blokları"
   ],

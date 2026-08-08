@@ -245,6 +245,19 @@ export default function KirayaVermekPage() {
 
       <FaqSection title="Evini Kiraya Verecekler İçin Sık Sorulanlar" items={faqItems} />
 
+      {/* Kardeş hizmet sayfasına bağlamsal bağ (2026-08-08 iç link denetimi):
+          iki hizmet sayfası birbirine yalnız footer'dan bağlıydı, oysa ev
+          sahibi çoğu zaman "satsam mı kiraya mı versem" ikilemiyle geliyor —
+          soru yukarıdaki SSS'te de var ve SSS cevapları düz metin (link
+          alamıyor, bkz. FaqItem.cevap). */}
+      <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted">
+        Kiraya vermekle satmak arasında kararsızsanız satış tarafının nasıl işlediğini{" "}
+        <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
+          Eryaman&apos;da ev satmak
+        </Link>{" "}
+        sayfasında anlattık; iki işi de yaptığımız için sizi bir yöne itmiyoruz.
+      </p>
+
 
 
       {/* Tam mahalle adlarıyla hizmet bölgesi köprüleri: "X mahallesi emlakçı"

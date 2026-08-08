@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "63271",
-      "parsel": "4"
+      "parsel": "4",
+      "alanM2": 34758,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -27,6 +29,7 @@
     "Çocuk oyun alanları ve yürüyüş parkuru",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
   ],
+  "adres": "Yeni Batı Mahallesi 5607. Sokak, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Mood Göksu Sitesi"
   ],

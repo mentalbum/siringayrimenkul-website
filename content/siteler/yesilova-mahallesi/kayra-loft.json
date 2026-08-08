@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "47529",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 5760,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -21,6 +23,7 @@
     "Kapalı ve açık otopark, jeneratör, sığınak (ilan arşivleri)",
     "4014. Cadde — Yeşilova Mahallesi"
   ],
+  "adres": "4014. Cadde, Yeşilova, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Kayra Loft Sitesi"
   ],

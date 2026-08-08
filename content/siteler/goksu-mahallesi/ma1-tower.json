@@ -10,6 +10,7 @@
     "Majör Göksu ile aynı müteahhit",
     "Göksu-Susuz gelişim aksı"
   ],
+  "adres": "Hisar Caddesi, Göksu, Etimesgut/Ankara",
   "zenginlestirildi": "2026-07-24",
   "koordinat": {
     "lat": 40.007739,
@@ -23,7 +24,9 @@
   "adalar": [
     {
       "no": "64517",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 5534,
+      "nitelik": "Arsa"
     }
   ],
   "sinirGeoJSON": "siteler/goksu-mahallesi/ma1-tower-boundary.geojson"

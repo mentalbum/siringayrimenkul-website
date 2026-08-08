@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "45898",
-      "parsel": "4"
+      "parsel": "4",
+      "alanM2": 5459,
+      "nitelik": "13 Katli Betonarme Ofis,Işyeri Ve Arsasi"
     }
   ],
   "ozellikler": [
@@ -30,6 +32,7 @@
     "Otobüs durağı ~265 m, Eryaman 1-2 ~2 km (yerel kayıt)",
     "Altay — Eryaman Evleri kuşağı"
   ],
+  "adres": "1408. Cadde, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Arya Nüans Sitesi",
     "Arya Nüans Rezidans"

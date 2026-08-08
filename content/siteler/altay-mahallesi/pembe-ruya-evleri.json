@@ -12,7 +12,9 @@
     {
       "no": "45889",
       "parsel": "3",
-      "etap": "1"
+      "etap": "1",
+      "alanM2": 3000,
+      "nitelik": "Beton Apartman"
     }
   ],
   "ozellikler": [
@@ -29,6 +31,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "2663. Cadde — Altay, Eryaman Evleri kuşağı"
   ],
+  "adres": "2663. Cadde, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Pembe Rüya Sitesi",
     "Pembe Rüya Evleri 6 Blok"

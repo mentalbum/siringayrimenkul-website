@@ -6,7 +6,9 @@
   "adalar": [
     {
       "no": "63404",
-      "parsel": "3"
+      "parsel": "3",
+      "alanM2": 10498,
+      "nitelik": "Arsa"
     }
   ],
   "sinirGeoJSON": "siteler/goksu-mahallesi/goksu-park-vadi-konutlari-boundary.geojson",

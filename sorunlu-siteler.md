@@ -4,6 +4,43 @@ Zenginleştirme sırasında yakalanan, çözümü sonraya bırakılan haritalama
 Çözülen kayıt buradan silinir; çözüm commit'i not düşülür.
 
 ## Bekleyenler
+### TKGM künye turu denetim bulguları (2026-08-08)
+Veri denetimi 316 tek-parselli kaydın alanM2'sini sitenin kendi sınır poligonuyla karşılaştırdı:
+**314'ü %6 içinde uyuştu** — uydurma alan yok. Sapan ve çelişen kalemler:
+- **Lale Kent (ŞOA) — ALAN/NİTELİK GERİ ALINDI.** 46665/3 → 1.000 m² + "3 Katlı Ofis İşyeri"
+  yazılmıştı; kayıt "iki bloklu konut sitesi" diyor, komşu parseller 4.400-8.000 m². Kaynak
+  nokta-SERP sorgusu = Sky Göksu hata sınıfı. Sayfa "2 blokta 3 katlı" yayınlayacaktı, alanlar
+  silindi. **Kota açılınca TKGM'ye KOORDİNATLA yeniden sorulmalı.** Sınır poligonu (995 m²) da
+  aynı şüpheli parselde — parsel doğrulanınca harita da gözden geçirilmeli.
+- **Nitelik ⟷ metin çelişkisi (4 kayıt, veri duruyor, şu an künyeye çıkmıyor ama kunye.ts'in
+  canlı yedek kaynağı):** kasmir-mavi-orkide (tapu "5 katlı ofis" ⟷ metin "zemin+27 kat, 525
+  daire" — alan poligonla uyuşuyor, yani parsel doğru, tapu niteliği muhtemelen sadece AVM'yi
+  tarif ediyor ve bayat); relax-goksu (tapu 4 blok 11/13/14/15 ⟷ metin 5 blok, dördü 12'şer);
+  vera-city (tapu A 12 + B 3 kat ⟷ metin tek blok 10 kat); ruyakent (tapu A-F 11'er/G 10 kat ⟷
+  ozellikler satırı hâlâ "10 katlı bloklar (tapu kaydı)" diyor — atıf artık yanlış).
+- **İki boundary.geojson yanlış parsel üzerinde** (yeni parsel verisi ortaya çıkardı):
+  yavuz-selim/guzel-ev-sitesi alanM2 3.900 ⟷ poligon 11.173 (= komşu ozharitacilar'ın parseli);
+  yavuz-selim/ozharitacilar alanM2 11.111 ⟷ poligon 21.741 (= kendi parseli + gulvatan'ınki).
+- **lib/kunye.ts'te iki kalıcı açık:** (1) komşu koruması (KOMSU_IZI) yalnız `aciklama`
+  düzyazısına uygulanıyor, `ozellikler` maddelerine uygulanmıyor — komşunun kat sayısı sitenin
+  künyesine sızabiliyor; (2) `tum.includes("kat mülkiyet")` "634 sayılı Kat Mülkiyeti Kanunu"
+  ibaresine takılıp tapuda "Arsa" olan siteye "kısmen kat mülkiyetli parsellerde" yazdırıyor.
+- **scripts/tkgm-tapu-uygula.py — sayı biçimi tuzağı:** cbsapi 2026-07-30'dan sonra US biçimi
+  ("15,523.00") döndürüyor, öncesi TR ("9.939,00"). Scriptin `alan_metni`'i yalnız US'i çözüyor;
+  TR biçimli değerleri 9,9 m² okuyup <300 filtresine takıldığı için SESSİZCE atlıyor (~90 parsel
+  boşa gitti). Yanlış veri yazmamış. scripts/tkgm-kunye-uygula.py'deki `alan_coz` ikisini de
+  ayırt ediyor — o mantık buraya taşınmalı.
+- **Adres biçimi ev kuralı gerekiyor:** aynı mahallede 3 ayrı kalıp var. Ayrıca 19 ESKİ kayıt
+  adreste ilçe yerine "Eryaman/Ankara" yazıyor (Eryaman ilçe değil) — temizlik adayı; yeni
+  eklenen 40 adresin hiçbirinde bu hata yok.
+- **Kalan TKGM kuyruğu:** 422 benzersiz parsel, 305'i öncelik-0. Kota açılınca
+  `python3 scripts/tkgm-eksik-parsel.py 200` → `python3 scripts/tkgm-kunye-uygula.py <rapor> --yaz`.
+- **104 kayıtta TKGM niteliği kat bilgisi içermiyor** ("8 Blok Kargir Apartman", "Arsa") — bu
+  kayıtların katı TKGM'den hiç gelmeyecek, başka kaynak gerekir.
+- **Kurtuluş Sitesi hâlâ çözülemedi** ve tahmin yazılmadı: nokta ada numarasız kadastro
+  parseline ("Tarla") düşüyor, yani yazılacak ada/parsel yok. Ritim Eryaman'da olduğu gibi
+  Özgün'ün yerel bilgisi gerekiyor (hangi parsel/hangi sokak cephesi).
+
 ### Niyet-düzeni turu (2026-07-29 — 4 kollu denetim, tüm şablonlar yeniden sıralandı)
 Kullanıcı niyeti modeliyle 4 şablon denetlendi ve uygulandı:
 - **Site (720):** sahibinden yönlendirmesi ilk ekrana çıktı ("Daire mi arıyorsunuz?" — ev sahibi

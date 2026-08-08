@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46403",
-      "parsel": "5"
+      "parsel": "5",
+      "alanM2": 21906,
+      "nitelik": "1 Katlı A Blok,17 Katlı B,C,D,E Ve F Bloklardan Oluşan Betonarme Ofis,İşyeri Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -26,6 +28,7 @@
     "Konut + ticari karma kullanım (tapu kaydı)",
     "2668. Cadde üzerinde — Altay Mahallesi"
   ],
+  "adres": "2668. Cadde, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Fırat Life Style Botanik Sitesi"
   ],

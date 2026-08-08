@@ -12,7 +12,9 @@
     {
       "no": "46512",
       "parsel": "7",
-      "etap": "5"
+      "etap": "5",
+      "alanM2": 14580,
+      "nitelik": "A,B,C Bloklardan Oluşan 15 Katli Betonarme Mesken Ve Arsasi"
     }
   ],
   "ozellikler": [
@@ -30,6 +32,7 @@
     "Metromall AVM 300 m, metro durağı 850 m (geliştirici tanıtımı)",
     "Tunahan Mahallesi 230. Sokak — kadastroda Eryaman kaydı"
   ],
+  "adres": "Tunahan Mahallesi 230. Sokak, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Gökdemir Premium Sitesi"
   ],

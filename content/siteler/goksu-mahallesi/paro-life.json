@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "63406",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 7066,
+      "nitelik": "16 Katlı Betonarme Mesken"
     }
   ],
   "ozellikler": [
@@ -21,6 +23,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu kentsel gelişim ve dönüşüm bölgesi"
   ],
+  "adres": "2. İnönü Caddesi, Göksu, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Eryaman Paro Life Konutları",
     "Paro Life Sitesi"

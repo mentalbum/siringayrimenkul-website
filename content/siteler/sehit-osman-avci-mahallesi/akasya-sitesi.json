@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46653",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 5400,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -21,5 +23,6 @@
     "Komşuları: Bossphorus, Vera City, Mia Concept (sınır verilerimiz)",
     "Gelişen konut hattı — bahçeli site ölçeği"
   ],
+  "adres": "2651. Cadde, Şehit Osman Avcı, Etimesgut/Ankara",
   "zenginlestirildi": "2026-08-07"
 }

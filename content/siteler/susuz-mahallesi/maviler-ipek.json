@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "63275",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 21572,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -19,6 +21,7 @@
     "Yaklaşık 21,5 dönümlük geniş parsel (TKGM)",
     "Susuz'un yeni gelişen konut kesimi"
   ],
+  "adres": "5611. Sokak, Susuz, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Maviler İpek Sitesi"
   ],

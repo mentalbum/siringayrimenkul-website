@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "43254",
-      "parsel": "4"
+      "parsel": "4",
+      "alanM2": 10072,
+      "nitelik": "Apartman-Beton"
     }
   ],
   "ozellikler": [

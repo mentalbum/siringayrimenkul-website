@@ -33,7 +33,7 @@ import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
 import { taramaOncelikliSlugs } from "@/lib/tarama-oncelikli";
-import { bulunmaHali, tamlayanHali } from "@/lib/turkce";
+import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
 
 // Komşu sayfalara ÇEŞİTLENMİŞ anchor kalıpları: hedef sayfa her yerden aynı
 // "site adı" metniyle değil, farklı arama kalıplarıyla bağ alsın (Zyppy 23M iç
@@ -263,10 +263,41 @@ export default async function SitePage({ params }: Props) {
     getBlogPostBySlug(SATIS_HAVUZU[varyant % SATIS_HAVUZU.length]),
     getBlogPostBySlug(KIRA_HAVUZU[(varyant + 2) % KIRA_HAVUZU.length]),
   ].filter((r): r is NonNullable<typeof r> => Boolean(r));
-  const hizmetLinki =
-    varyant % 2 === 0
-      ? { href: "/eryamanda-ev-satmak", etiket: "Eryaman'da Ev Satmak — Hizmet Sayfamız" }
-      : { href: "/eryamanda-ev-kiraya-vermek", etiket: "Eryaman'da Ev Kiraya Vermek — Hizmet Sayfamız" };
+  // Hizmet sayfalarının İKİSİ de bağ alır (2026-08-08): önceki kurguda slug'a
+  // göre yalnız biri listeleniyordu, yani her site sayfası iki hizmet
+  // sayfasından birini dışarıda bırakıyordu — oysa bu sitede evi olan kişinin
+  // hangi niyette olduğunu bilmiyoruz. Sıra ve çapa metni slug'a göre kayar:
+  // 720 sayfada birebir aynı iki satır "ölçeklendirilmiş içerik" ayak izi
+  // bırakır (aynı gerekçe: ANCHOR_KALIPLARI, lib/faq.ts semaDisi).
+  // Yenimahalle kolunda (Ata/Susuz/Cumhuriyet) çapada "Eryaman" geçmez —
+  // sitenin Eryaman'da olduğu izlenimi veren bir konum iddiası doğurur
+  // (lib/bolge.ts).
+  // Sıra ile çapa seçimi AYRI bitlerden okunur; ikisi de `varyant % 2` olsaydı
+  // dört kombinasyon yerine iki kombinasyon üretilirdi.
+  const hizmetCapa = Math.floor(varyant / 2) % 2;
+  const satisBagi = {
+    href: "/eryamanda-ev-satmak",
+    etiket: eryamanda
+      ? ["Eryaman'da ev satmak: süreç ve hizmetimiz", "Eryaman'da evinizi nasıl satıyoruz?"][
+          hizmetCapa
+        ]
+      : ["Ev satış sürecimiz nasıl işliyor?", "Evinizi satarken neleri üstleniyoruz?"][hizmetCapa],
+  };
+  const kiraBagi = {
+    href: "/eryamanda-ev-kiraya-vermek",
+    etiket: eryamanda
+      ? ["Eryaman'da evinizi kiraya vermek", "Eryaman'da kiraya verme sürecimiz"][hizmetCapa]
+      : ["Evinizi kiraya verme sürecimiz", "Kiracı bulma ve eleme sürecimiz"][hizmetCapa],
+  };
+  const hizmetBaglari = varyant % 2 === 0 ? [satisBagi, kiraBagi] : [kiraBagi, satisBagi];
+  // Mahalle sayfasına gövdeden bağ yoktu: breadcrumb dışındaki tek bağ,
+  // koordinatsız sitelerde çıkan "haritayı görüntüle" düğmesiydi. Çapa üç
+  // varyantta döner; ilki "<mahalle> emlakçı" sorgu ailesiyle örtüşür.
+  const mahalleBagi = [
+    `${mahalle.isim} emlakçı rehberimiz`,
+    `${tamlayanHali(mahalle.isim)} diğer siteleri`,
+    `${bulunmaHaliKi(mahalle.isim)} site ve rezidanslar`,
+  ][varyant % 3];
 
   // "2026-07-28" -> "Temmuz 2026". Gecersiz/eksik tarihte hic gosterilmez.
   const dogrulamaTarihi = (() => {
@@ -634,29 +665,39 @@ export default async function SitePage({ params }: Props) {
       {/* İç bağ katmanı: siteden ev-sahibi rehberlerine köprü. Ölçüm (2026-07-29):
           720 site sayfasından rehber/hizmet sayfalarına 0 link vardı — Google
           rehberlerin önemini site katmanından okuyamıyordu. Seçim deterministik,
-          bkz. yukarıdaki havuzlar. */}
-      {rehberler.length > 0 && (
-        <section className="mt-12 rounded-2xl border border-border bg-surface-muted px-6 py-6">
-          <h2 className="text-base font-semibold text-navy">Ev Sahipleri İçin Rehberler</h2>
-          <ul className="mt-3 space-y-2 text-sm">
-            {rehberler.map((rehber) => (
-              <li key={rehber.slug}>
-                <Link
-                  href={`/blog/${rehber.slug}`}
-                  className="font-semibold text-gold-dark hover:underline"
-                >
-                  {rehber.baslik}
-                </Link>
-              </li>
-            ))}
-            <li>
-              <Link href={hizmetLinki.href} className="font-semibold text-gold-dark hover:underline">
-                {hizmetLinki.etiket}
+          bkz. yukarıdaki havuzlar. 2026-08-08: blok "ilgili sayfalar" hâline
+          getirildi — mahalle sayfası ve iki hizmet sayfası da buraya alındı,
+          gerekçeleri yukarıdaki mahalleBagi/hizmetBaglari tanımlarında. */}
+      <section className="mt-12 rounded-2xl border border-border bg-surface-muted px-6 py-6">
+        <h2 className="text-base font-semibold text-navy">Ev Sahipleri İçin İlgili Sayfalar</h2>
+        <ul className="mt-3 grid gap-x-8 gap-y-2 text-sm sm:grid-cols-2">
+          <li>
+            <Link
+              href={`/mahalleler/${mahalle.slug}`}
+              className="font-semibold text-gold-dark hover:underline"
+            >
+              {mahalleBagi}
+            </Link>
+          </li>
+          {hizmetBaglari.map((bag) => (
+            <li key={bag.href}>
+              <Link href={bag.href} className="font-semibold text-gold-dark hover:underline">
+                {bag.etiket}
               </Link>
             </li>
-          </ul>
-        </section>
-      )}
+          ))}
+          {rehberler.map((rehber) => (
+            <li key={rehber.slug}>
+              <Link
+                href={`/blog/${rehber.slug}`}
+                className="font-semibold text-gold-dark hover:underline"
+              >
+                {rehber.baslik}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
       {digerSiteler.length > 0 && (
         <section className="mt-14">
           <h2 className="text-xl">

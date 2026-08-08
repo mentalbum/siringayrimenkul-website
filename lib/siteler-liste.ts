@@ -9,18 +9,22 @@ function ozetle(s: string): string {
   return s.length <= OZET_UZUNLUK ? s : s.slice(0, OZET_UZUNLUK).replace(/\s+\S*$/, "") + "…";
 }
 
+export function inceltSiteler(siteler: Site[]): SiteOzet[] {
+  return siteler.map((site) => ({
+    isim: site.isim,
+    slug: site.slug,
+    mahalleSlug: site.mahalleSlug,
+    aciklama: ozetle(site.aciklama),
+    alternatifAdlar: site.alternatifAdlar,
+  }));
+}
+
 export function inceltGruplar(
   gruplar: { mahalle: Mahalle; siteler: Site[] }[]
 ): { mahalle: { slug: string; isim: string }; siteler: SiteOzet[] }[] {
   return gruplar.map(({ mahalle, siteler }) => ({
     mahalle: { slug: mahalle.slug, isim: mahalle.isim },
-    siteler: siteler.map((site) => ({
-      isim: site.isim,
-      slug: site.slug,
-      mahalleSlug: site.mahalleSlug,
-      aciklama: ozetle(site.aciklama),
-      alternatifAdlar: site.alternatifAdlar,
-    })),
+    siteler: inceltSiteler(siteler),
   }));
 }
 

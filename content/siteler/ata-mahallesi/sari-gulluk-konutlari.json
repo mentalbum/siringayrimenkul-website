@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46430",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 9755,
+      "nitelik": "A,B,C,D Bloklardan Oluşan Betonarme Apartman"
     }
   ],
   "ozellikler": [

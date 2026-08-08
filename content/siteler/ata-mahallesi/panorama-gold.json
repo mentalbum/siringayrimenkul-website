@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "44765",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 15027,
+      "nitelik": "A Blok 19 Katlı Betonarme Mesken B Blok 19 Katlı Betonarme Mesken C Blok 19 Katlı Betonarme Mesken D Blok 19 Katlı Betonarme Mesken E Blok 2 Katlı Betonarme Ofis İşyeri,Mesken Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -22,6 +24,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
+  "adres": "Mavi Yıldız Caddesi, Ata Mahallesi, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Panorama Gold Sitesi"
   ],

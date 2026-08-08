@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46407",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 11614,
+      "nitelik": "13 Katlı A Ve B Blok Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -22,6 +24,7 @@
     "Iğdır Sokak (geliştirici proje künyesi)",
     "Ata Mahallesi"
   ],
+  "adres": "Iğdır Sokak, Ata Mahallesi, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Liva Life Yaşam Sitesi"
   ],

@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46423",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 20812,
+      "nitelik": "11 Katlı A Ve B İla 12 Katlı C Ve D Bloklardan Oluşan Betonarma Apartman"
     }
   ],
   "ozellikler": [
@@ -23,6 +25,7 @@
     "Ser Grup yapımı — Elit Yaşam serisinin üçüncü projesi",
     "Ata Mahallesi"
   ],
+  "adres": "Susuz 12. Caddesi, Ata Mahallesi, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Elit Yaşam 3 Sitesi"
   ],

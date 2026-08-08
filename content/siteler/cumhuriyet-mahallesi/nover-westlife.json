@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "62661",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 6439,
+      "nitelik": "A Blok 18 Katlı B Blok 3 Katlı Betonarme Mesken Ve Arsası"
     }
   ],
   "alternatifAdlar": [
@@ -25,5 +27,6 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Necip Fazıl Caddesi — Cumhuriyet (Yeni Batı)"
   ],
+  "adres": "Necip Fazıl Caddesi, Yeni Batı, Yenimahalle/Ankara",
   "zenginlestirildi": "2026-07-30"
 }

@@ -27,6 +27,14 @@ export interface AdaBilgi {
   parsel?: string;
   etap?: string;
   blok?: string;
+  /** TKGM parsel sorgusundan okunan yüzölçümü (m²) — properties.alan.
+   * scripts/tkgm-kunye-uygula.py yazar; birden çok siteye atanmış parselde
+   * bilinçli olarak BOŞ kalır (ortak parselin alanı tek siteye mal edilemez). */
+  alanM2?: number;
+  /** TKGM tapu niteliğinin ham metni — properties.nitelik ("A Blok 16 Katlı
+   * Betonarme Mesken …"). Görünür metne olduğu gibi basılmaz; künye çıkarımı
+   * metinden kat bilgisi bulamazsa yedek kaynak olarak buradan okur. */
+  nitelik?: string;
 }
 
 export interface Site {

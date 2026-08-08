@@ -97,7 +97,9 @@ function sayiCoz(ham: string): number {
  * karma bloğu ve "on dört katlı A2 bloktan oluşur ve ofis-işyeri niteliğiyle
  * kayıtlıdır" gibi tüm-yapı tanımları konut katıdır; onları atmak gerçek
  * konut bloklarını yok sayıyordu. */
-const KONUT_DISI = /çarşı|dükk|mağaza|ofis|işyeri|iş yeri|ticari|otopark|garaj|trafo|depo|yönetim|sosyal tesis|kreş/;
+// "al[ıi]şveriş": TKGM nitelik metinleri i/ı ayrımını tutarsız yazıyor
+// ("2 Katli 5. Blok Alişveriş Merkezi") — iki yazım da yakalanmalı.
+const KONUT_DISI = /çarşı|dükk|mağaza|al[ıi]şveriş|ofis|işyeri|iş yeri|ticari|otopark|garaj|trafo|depo|yönetim|sosyal tesis|kreş/;
 const KONUT_ISTISNA = /mesken|konut|apartman|daire|niteli/;
 
 /** Komşu siteleri anan cümlelerdeki sayılar BU siteye ait değildir
@@ -157,6 +159,65 @@ function katlariCikar(metin: string, komsuKorumasi: boolean): KatSonuc {
     }
   }
   return { katlar, filtrelendi };
+}
+
+/** TKGM nitelik metni (adalar[].nitelik) serbest düzyazı DEĞİL, dar bir tapu
+ * grameridir: "A Blok 16 Katlı Betonarme Mesken B Blok 13 Katlı … D Blok 2
+ * Katlı Betonarme Ofis". Bu yüzden ayrı çözümlenir:
+ *  - kat sayısı iki sırada gelir: "N Katlı" ve "Blok N" ("A Blok 14, B Blok13").
+ *  - Ticari/yardımcı blok ayıklaması YALNIZ metinde konut ifadesi de varsa
+ *    uygulanır. Eryaman'da tüm yapının ofis-işyeri tapulu olması yaygındır
+ *    ("14 Katlı Betonarme Ofis İşyeri Ve Arsası" = 14 katlı yapının kendisi);
+ *    orada ayıklama yapmak parselin tek kat bilgisini yok ederdi. */
+const NITELIK_KONUT_IZI = /mesken|apartman|konut|daire|dubleks|bina|\bev\b/;
+
+function niteliktenKatlar(nitelik: string): KatSonuc {
+  const metin = normalize(nitelik);
+  const tumYapiTicari = !NITELIK_KONUT_IZI.test(metin);
+  const katlar: number[] = [];
+  let filtrelendi = false;
+  const ekle = (ham: string, son: number) => {
+    const deger = Number.parseInt(ham, 10);
+    if (!(deger >= 1 && deger <= 40)) return;
+    const kuyruk = metin.slice(son, son + 45);
+    if (!tumYapiTicari && KONUT_DISI.test(kuyruk) && !KONUT_ISTISNA.test(kuyruk)) {
+      filtrelendi = true;
+      return;
+    }
+    katlar.push(deger);
+  };
+  for (const m of metin.matchAll(/(\d+)\s*(?:'?[şsç]?[ea]?r)?\s*kat'?l?[ıi]?(?![\p{L}\d])/gu)) {
+    ekle(m[1], m.index! + m[0].length);
+  }
+  // "Blok" SONRASI rakam kat sayısıdır ("A Blok 14, B Blok13, C Blok 14 Katlı");
+  // blok ADINDAKİ rakam ("B1 25 Katlı") bu kalıba girmez çünkü rakam blok
+  // sözcüğünden önce gelir.
+  for (const m of metin.matchAll(/blo[kğ]\s*-?\s*(\d+)(?![\p{L}\d])/gu)) {
+    ekle(m[1], m.index! + m[0].length);
+  }
+  return { katlar, filtrelendi };
+}
+
+/** TKGM niteliğinden blok sayısı — yalnız RAKAMLA yazılmış, TEK anlamlı değer
+ * kabul edilir ("8 Blok Kargir Apartman", "7 Adet Kargir Apartman"). Birden
+ * çok farklı sayı varsa ("7 Adet Kargir Apartman 8 Adet Dublks Konut") hangisi
+ * blok toplamıdır belirsizdir → yazılmaz. Harf dizilerinden sayım
+ * ("A-B-C Bloktan Oluşan") bilinçli olarak YOK: "A1,A2,B,C1,C2,D Ve E2 Blok"
+ * gibi kayıtlarda kaç blok olduğu harflerden güvenle sayılamaz. */
+function niteliktenBlok(nitelik: string): number | undefined {
+  const metin = normalize(nitelik);
+  const adaylar = new Set<number>();
+  const desenler = [
+    /(?<![-\p{L}\d])(\d+)\s*(?:adet\s+)?blo[kğ]/gu,
+    /(?<![-\p{L}\d])(\d+)\s*adet\s+(?:\p{L}+\s+)*?(?:apartman|mesken|bina)/gu,
+  ];
+  for (const desen of desenler) {
+    for (const m of metin.matchAll(desen)) {
+      const deger = Number.parseInt(m[1], 10);
+      if (deger >= 1 && deger <= 60) adaylar.add(deger);
+    }
+  }
+  return adaylar.size === 1 ? [...adaylar][0] : undefined;
 }
 
 function blokDegerleri(metin: string, komsuKorumasi: boolean): number[] {
@@ -237,6 +298,26 @@ export function cikarKunye(site: Site): Kunye {
       parselAlaniM2 = digerAlan[0];
     }
   }
+  // Metinde alan yoksa TKGM verisine düşülür (adalar[].alanM2 = doğrudan
+  // parsel sorgusu yanıtı). Kaydın TÜM parsellerinde alan olmalı: eksik
+  // parselli toplam siteyi olduğundan küçük gösterir.
+  // Buradaki değer PARSEL kapsamlıdır, metindeki m² gibi ortak adanın toplamı
+  // olamaz; üstelik birden çok site kaydına atanmış parsellerde alan hiç
+  // işlenmez (scripts/tkgm-kunye-uygula.py). Bu yüzden "paylaş" metin
+  // korumasının dışındadır — o koruma "çevresini paylaşır" gibi parselle
+  // ilgisi olmayan cümlelerde de kapanıyor ve gerçek parsel alanını yutuyordu.
+  if (parselAlaniM2 === undefined) {
+    const parseller = new Map<string, number>();
+    for (const a of site.adalar ?? []) {
+      if (typeof a.alanM2 !== "number") {
+        parseller.clear();
+        break;
+      }
+      parseller.set(`${a.no}/${a.parsel ?? "1"}`, a.alanM2);
+    }
+    const toplam = [...parseller.values()].reduce((t, v) => t + v, 0);
+    if (toplam >= 500) parselAlaniM2 = toplam;
+  }
 
   // --- tapu niteliği
   const km = tum.includes("kat mülkiyet");
@@ -254,13 +335,30 @@ export function cikarKunye(site: Site): Kunye {
       ? Math.max(...blokAdaylari)
       : undefined;
   if (!toplamBlok && (site.adalar?.length ?? 0) > 1) blokSayisi = undefined;
+  // Metin blok sayısı vermiyorsa TKGM niteliğine düşülür. Yalnız TEK parselli
+  // kayıtta: çok parselli sitede her parselin niteliği kendi bloklarını sayar,
+  // toplamı kurmak parsellerden birinin niteliği eksikse yanlış olur.
+  if (blokSayisi === undefined && site.adalar?.length === 1 && site.adalar[0].nitelik) {
+    blokSayisi = niteliktenBlok(site.adalar[0].nitelik);
+  }
 
   const ozKat = katlariCikar(oz, false);
   const acKat = katlariCikar(ac, true);
   const katlar = [...ozKat.katlar, ...acKat.katlar];
+  let katFiltrelendi = ozKat.filtrelendi || acKat.filtrelendi;
+  // Metin kat bilgisi vermiyorsa TKGM tapu niteliğine düşülür (adalar[].nitelik).
+  // Yalnız YEDEK: metinden gelen değerlerle karıştırmak, tapuda henüz
+  // güncellenmemiş blokla yazılı metni çelişkili bir aralığa sokar.
+  if (katlar.length === 0) {
+    for (const a of site.adalar ?? []) {
+      if (!a.nitelik) continue;
+      const nk = niteliktenKatlar(a.nitelik);
+      katlar.push(...nk.katlar);
+      katFiltrelendi ||= nk.filtrelendi;
+    }
+  }
   const katMin = katlar.length ? Math.min(...katlar) : undefined;
   const katMax = katlar.length ? Math.max(...katlar) : undefined;
-  const katFiltrelendi = ozKat.filtrelendi || acKat.filtrelendi;
 
   const ozKonut = konutCikar(oz, false);
   const acKonut = konutCikar(ac, true);

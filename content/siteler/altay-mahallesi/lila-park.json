@@ -12,7 +12,9 @@
     {
       "no": "46404",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "alanM2": 5067,
+      "nitelik": "A Blok 11 Katlı Ofis Ve İşyeri B Blok 3 Katlı Ofis Ve İşyeri Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -23,6 +25,7 @@
     "2668. Cadde üzerinde (adres kayıtları)",
     "Altay Mahallesi"
   ],
+  "adres": "2668. Cadde, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Lila Park Sitesi"
   ],

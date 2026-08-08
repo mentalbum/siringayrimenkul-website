@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46417",
-      "parsel": "3"
+      "parsel": "3",
+      "alanM2": 13365,
+      "nitelik": "14 Katlı A Blok Ve 16 Katlı B Bloklardan Oluşan Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -26,6 +28,7 @@
     "Basketbol-voleybol sahası, çocuk oyun alanı ve süs havuzları",
     "Jeneratör, hidrofor ve kapalı devre kamera altyapısı"
   ],
+  "adres": "3498. Cadde, Ata Mahallesi, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Armoni Life Sitesi"
   ],

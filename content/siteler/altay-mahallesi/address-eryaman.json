@@ -25,10 +25,13 @@
     "2019 teslim (geliştirici tanıtımı)",
     "Altay Mahallesi — Söğüt Caddesi aksı"
   ],
+  "adres": "Söğüt Caddesi No:8, Altay, Etimesgut/Ankara",
   "adalar": [
     {
       "no": "45900",
-      "parsel": "9"
+      "parsel": "9",
+      "alanM2": 14556,
+      "nitelik": "16 Katli A,B Ve C Bloklardan Oluşan Betonarme Ofis Işyeri Ve Arsasi"
     }
   ],
   "alternatifAdlar": [

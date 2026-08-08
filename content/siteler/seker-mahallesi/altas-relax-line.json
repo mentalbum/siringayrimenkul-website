@@ -23,7 +23,9 @@
   "adalar": [
     {
       "no": "46361",
-      "parsel": "5"
+      "parsel": "5",
+      "alanM2": 6685,
+      "nitelik": "8 Katli A Blok 10 Katli B Blok Ve 3 Katli C Bloktan Oluşan Betonarma Ofis Işyeri Ve Arsasi"
     }
   ],
   "sinirGeoJSON": "siteler/seker-mahallesi/altas-relax-line-boundary.geojson"

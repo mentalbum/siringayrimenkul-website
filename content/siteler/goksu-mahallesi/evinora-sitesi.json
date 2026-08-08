@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "63379",
-      "parsel": "5"
+      "parsel": "5",
+      "alanM2": 7186,
+      "nitelik": "15 Katlı A Blok Ve 16 Katlı B Bloktan Oluşan Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -20,6 +22,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu Mahallesi"
   ],
+  "adres": "Akıncılar Caddesi, Göksu, Etimesgut/Ankara",
   "zenginlestirildi": "2026-07-17",
   "alternatifAdlar": [
     "Evinora 1 Sitesi",

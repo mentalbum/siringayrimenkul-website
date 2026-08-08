@@ -12,7 +12,9 @@
     {
       "no": "45899",
       "parsel": "3",
-      "etap": "1"
+      "etap": "1",
+      "alanM2": 7591,
+      "nitelik": "2 Katlı A Blok Ve 16 Katlı B Bloklardan Oluşan Betonarme Ofis,İşyeri Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -33,6 +35,7 @@
     "Şeker'deki Oasis Rezidans'tan ayrı yerleşim",
     "Söğüt Caddesi 14B — Altay Mahallesi"
   ],
+  "adres": "Söğüt Caddesi No:14B, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Oasis Tower Rezidans",
     "Oasis Tower Residence Business Center",

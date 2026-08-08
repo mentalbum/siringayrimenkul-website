@@ -21,8 +21,8 @@ import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { FaqSection } from "@/components/ui/faq-section";
 import { MahalleMapLoader } from "@/components/maps/mahalle-map-loader";
 import { ResourceHints } from "@/components/seo/resource-hints";
-import { SiteCard } from "@/components/site/site-card";
-import { Reveal } from "@/components/ui/reveal";
+import { MahalleSitelerBrowser } from "@/components/site/mahalle-siteler-browser";
+import { inceltSiteler } from "@/lib/siteler-liste";
 import { getMahalleFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
@@ -369,7 +369,18 @@ export default async function MahallePage({ params }: Props) {
               {siteler.length > 0
                 ? `Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim — mahalledeki ${siteler.length} site ve rezidansın her birini tanıyoruz. `
                 : "Evinizi satmayı düşünüyorsanız fiyatı mahalle ortalamasından değil, sitenizin gerçeğinden yola çıkarak birlikte belirleyelim. "}
-              Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen eski rakamlar yanıltabilir; güncel değeri emsallerden okuyoruz. Satış kararının ilk adımı doğru fiyat:{" "}
+              Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen eski rakamlar yanıltabilir; güncel değeri emsallerden okuyoruz. Hazırlıktan alıcı elemeye, pazarlıktan tapuya kadar adımları{" "}
+              {/* Mahalle katmanından hizmet sayfalarına gövde bağı yoktu — bu iki
+                  kart tam da o iki hizmeti anlatıyor ama yalnız footer'dan bağ
+                  gidiyordu (2026-08-08 iç link denetimi). Yenimahalle kolunda
+                  çapada "Eryaman" geçmez (lib/bolge.ts). */}
+              <Link
+                href="/eryamanda-ev-satmak"
+                className="font-semibold text-gold-dark hover:underline"
+              >
+                {eryamandaMi(mahalle) ? "Eryaman'da ev satmak" : "ev satış hizmetimiz"}
+              </Link>
+              {" sayfamızda anlattık. Satış kararının ilk adımı doğru fiyat: "}
               <Link
                 href={`/ev-degerleme?mahalle=${mahalle.slug}`}
                 className="font-semibold text-gold-dark hover:underline"
@@ -385,8 +396,17 @@ export default async function MahallePage({ params }: Props) {
             </h3>
             <p className="mt-2 text-sm leading-relaxed text-body">
               Boş dairenizi kiraya mı vereceksiniz? Doğru kira bedeli, sağlam sözleşme ve
-              doğrulanmış kiracıyla süreci sizin adınıza yönetiyoruz. Kira artışı ve boş kalma
-              maliyeti için{" "}
+              doğrulanmış kiracıyla süreci sizin adınıza yönetiyoruz. Kira tespitinden kiracı
+              elemeye kadar nasıl çalıştığımızı{" "}
+              <Link
+                href="/eryamanda-ev-kiraya-vermek"
+                className="font-semibold text-gold-dark hover:underline"
+              >
+                {eryamandaMi(mahalle)
+                  ? "Eryaman'da evinizi kiraya vermek"
+                  : "kiralama hizmetimiz"}
+              </Link>
+              {" sayfamızda anlattık. Kira artışı ve boş kalma maliyeti için "}
               <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
                 ev sahibi hesap araçlarımız
               </Link>{" "}
@@ -438,18 +458,26 @@ export default async function MahallePage({ params }: Props) {
       </section>
       <section className="mt-14">
         <h2 className="text-xl">{mahalle.isim}&apos;ndeki Siteler ve Rezidanslar</h2>
-        <p className="mt-2 text-sm text-muted">
-          {siteler.length > 0
-            ? `${siteler.length} site/rezidans listelendi.`
-            : "Bu mahalledeki siteler yakında eklenecek."}
-        </p>
-        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {siteler.map((site, i) => (
-            <Reveal key={site.slug} delay={(i % 3) * 60} className="h-full">
-              <SiteCard site={site} />
-            </Reveal>
-          ))}
-        </div>
+        {siteler.length > 0 ? (
+          /* Kartlara TAM açıklama değil kısaltılmış özet gider (kartta zaten üç
+             satır görünüyor): 87 kayıtlık mahallede tam metin sayfayı gereksiz
+             ağırlaştırıyordu — /siteler aynı inceltmeyi kullanıyor. */
+          <div className="mt-4">
+            <MahalleSitelerBrowser
+              siteler={inceltSiteler(siteler)}
+              arsiv={
+                eryamandaMi(mahalle)
+                  ? { etiket: "Eryaman", href: "/siteler" }
+                  : {
+                      etiket: "Yenimahalle (Ata, Susuz, Cumhuriyet)",
+                      href: "/siteler/yenimahalle",
+                    }
+              }
+            />
+          </div>
+        ) : (
+          <p className="mt-2 text-sm text-muted">Bu mahalledeki siteler yakında eklenecek.</p>
+        )}
       </section>
 
 

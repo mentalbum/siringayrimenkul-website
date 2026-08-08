@@ -12,7 +12,9 @@
     {
       "no": "45899",
       "parsel": "2",
-      "etap": "1"
+      "etap": "1",
+      "alanM2": 10259,
+      "nitelik": "14 Katlı A Ve B Bloklardan Oluşan Betonarme Ofis İşyeri Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -31,6 +33,7 @@
     "Konut + ticari karma kullanım (tapu kaydı)",
     "Söğüt Caddesi No 12 — Altay Mahallesi"
   ],
+  "adres": "Söğüt Caddesi No:12, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Erland Sitesi"
   ],

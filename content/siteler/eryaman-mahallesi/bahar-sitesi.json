@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46380",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 3520,
+      "nitelik": "Betanarme Apartman"
     }
   ],
   "ozellikler": [
@@ -24,5 +26,6 @@
     "Kapıcı ve oyun parkı (yerel kayıt)",
     "Eryaman Mahallesi"
   ],
+  "adres": "Eryaman Mahallesi 2603. Sokak, Etimesgut/Ankara",
   "zenginlestirildi": "2026-08-07"
 }

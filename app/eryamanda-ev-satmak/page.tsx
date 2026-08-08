@@ -264,6 +264,22 @@ export default function EvSatmakPage() {
 
       <FaqSection title="Eryaman'da Ev Satmak Hakkında Sık Sorulanlar" items={faqItems} />
 
+      {/* Kardeş hizmet sayfasına bağlamsal bağ (2026-08-08 iç link denetimi):
+          iki hizmet sayfası birbirine yalnız footer'dan bağlıydı, oysa ev
+          sahibi çoğu zaman "satsam mı kiraya mı versem" ikilemiyle geliyor —
+          soru yukarıdaki SSS'te de var ve SSS cevapları düz metin (link
+          alamıyor, bkz. FaqItem.cevap). */}
+      <p className="mt-6 max-w-3xl text-sm leading-relaxed text-muted">
+        Satmakla kiraya vermek arasında kararsızsanız sürecin diğer tarafını{" "}
+        <Link
+          href="/eryamanda-ev-kiraya-vermek"
+          className="font-semibold text-gold-dark hover:underline"
+        >
+          Eryaman&apos;da evinizi kiraya vermek
+        </Link>{" "}
+        sayfasında anlattık; iki işi de yaptığımız için sizi bir yöne itmiyoruz.
+      </p>
+
 
 
       {/* Tam mahalle adlarıyla hizmet bölgesi köprüleri: "X mahallesi emlakçı"

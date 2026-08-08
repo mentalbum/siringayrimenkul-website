@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "45898",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 5364,
+      "nitelik": "14 Katlı A Blok Ve 4 Katlı B Bloktan Oluşan Betonarme Ofis, İşyeri Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -21,6 +23,7 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Altay Mahallesi — Söğüt Caddesi üzerinde"
   ],
+  "adres": "Söğüt Caddesi, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Mood Street Sitesi"
   ],

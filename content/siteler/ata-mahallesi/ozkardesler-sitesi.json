@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46212",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 20000,
+      "nitelik": "4 Blok Kargir Apartman"
     }
   ],
   "ozellikler": [

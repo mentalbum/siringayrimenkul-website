@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "47549",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 2500,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [

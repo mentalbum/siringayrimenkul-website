@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46216",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 20134,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -20,5 +22,6 @@
     "Kat irtifaklı parsel (TKGM)",
     "Şeyh Şamil Mahallesi"
   ],
+  "adres": "Gülüm Caddesi, Şeyh Şamil, Etimesgut/Ankara",
   "zenginlestirildi": "2026-07-30"
 }

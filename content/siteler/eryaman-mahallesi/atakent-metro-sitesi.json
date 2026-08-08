@@ -11,7 +11,9 @@
     {
       "no": "46524",
       "parsel": "1",
-      "etap": ""
+      "etap": "",
+      "alanM2": 13908,
+      "nitelik": "3 Blok Kargir Apartman Ve Arsası"
     }
   ],
   "sinirGeoJSON": "siteler/eryaman-mahallesi/atakent-metro-sitesi-boundary.geojson",

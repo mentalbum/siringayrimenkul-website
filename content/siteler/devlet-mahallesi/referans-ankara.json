@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "48507",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 49233,
+      "nitelik": "A,B,C,D,E Blok Blok 33 Katlı F,G,H Blok 31 I Blok 29 Katlı Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -27,6 +29,7 @@
     "Eryaman silüetinin en büyük projelerinden",
     "Devlet Mahallesi"
   ],
+  "adres": "Devlet Mahallesi Şapka Devrimi Caddesi, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Referans Ankara Sitesi"
   ],

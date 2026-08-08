@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "43252",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 10919,
+      "nitelik": "A,B,C,D,E Blok Apartman Beton"
     }
   ],
   "ozellikler": [

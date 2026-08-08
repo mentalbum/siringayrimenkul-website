@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "47538",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 4076,
+      "nitelik": "Arsa"
     }
   ],
   "ozellikler": [
@@ -20,6 +22,7 @@
     "Yaklaşık 4,1 dönümlük parsel (TKGM)",
     "4017. Sokak — Yeşilova Mahallesi"
   ],
+  "adres": "Yeşilova Mahallesi 4017. Sokak, Etimesgut/Ankara",
   "alternatifAdlar": [
     "May Sitesi"
   ],

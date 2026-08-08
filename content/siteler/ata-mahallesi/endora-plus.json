@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "46426",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 19430,
+      "nitelik": "A Blok 12 Katlı ,B Blok 12 Katlı ,C Blok 12 Katlı Betonarme Apartman Ve Arsası"
     }
   ],
   "ozellikler": [
@@ -24,6 +26,7 @@
     "Gökay Caddesi üzeri, durağa yakın",
     "Ata Mahallesi"
   ],
+  "adres": "Gökay Caddesi, Ata Mahallesi, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Endora Plus Sitesi"
   ],

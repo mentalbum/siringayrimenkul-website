@@ -11,7 +11,9 @@
   "adalar": [
     {
       "no": "45889",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 3860,
+      "nitelik": "-Apartman--Kargir-"
     }
   ],
   "ozellikler": [
@@ -26,6 +28,7 @@
     "Komşular: Doktorlar, Palmiye, Pembe Rüya",
     "Altay — Eryaman Evleri kuşağı"
   ],
+  "adres": "2663. Sokak, Altay, 06820 Etimesgut/Ankara",
   "alternatifAdlar": [
     "İzgi Park Sitesi"
   ],
