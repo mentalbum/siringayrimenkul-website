@@ -112,6 +112,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // gözlemiyle birebir: arayanlar "sitede satılık var mı" diye soruyor).
     // Marka görünümde kaybolmuyor: WebSite şeması sayesinde Google, site adını
     // başlığın üstünde ayrıca gösteriyor.
+    // LOKASYON İKİNCİ BÖLÜMDE (2026-08-08). Önceki sıralamada lokasyon
+    // ÜÇÜNCÜ bölümdeydi ve tam da kesilen yere düşüyordu: ölçülen başlıklar
+    // "Panorama Garden Emlakçı | Evinizi Satalım, Kiraya Verelim | Ata
+    // Mahallesi" = 73, "Admira Göksu Konutları … | Eryaman" = 74 karakter,
+    // Google ise ~60 karakterde kesiyor. Yani coğrafi nitelik hiçbir SERP'te
+    // görünmüyordu. Rakip eryaman.bilgiemlak'ın başlığı 44 karakter ve
+    // "Eryaman" HER sonuçta görünüyor — sayfa düzeyinde tespit edilen tek
+    // üstünlüğü buydu (2026-08-08 rakip analizi; onlarda meta description,
+    // canonical, og etiketi, schema, sitemap yok).
+    // Aynı gerekçe ana sayfada 08.08'de zaten uygulanmıştı (69→48 karakter).
+    // Ticari mesaj korunuyor, yalnızca sıra değişiyor: uzun adlarda kesilen
+    // kısım artık lokasyon değil boilerplate oluyor.
+    // Bölge ayrımı AYNEN duruyor: Ata/Susuz/Cumhuriyet'te "Eryaman" değil
+    // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
       absolute: isimdeEryamanVar
         ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
@@ -120,13 +134,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
               // Eryaman" olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet,
               // Çiğdem sitelerinin Eryaman Mahallesi kayıtları).
-              `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
+              `${site.isim} Emlakçı | ${
                 mahalleKisaIsim(mahalle) === "Eryaman"
                   ? "Eryaman Mahallesi"
                   : `${mahalleKisaIsim(mahalle)} Eryaman`
-              }`
-            : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | Eryaman`
-          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
+              } | Evinizi Satalım, Kiraya Verelim`
+            : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
+          : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`,
     },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil

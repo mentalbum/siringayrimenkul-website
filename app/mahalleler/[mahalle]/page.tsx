@@ -43,7 +43,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const mahalle = getMahalleBySlug(slug);
   if (!mahalle) return {};
 
-  const kisaIsim = mahalleKisaIsim(mahalle);
   const alias = mahalle.alternatifAdlar?.[0];
   // Başlıkta TAM ad kullanılıyor ("Tunahan Mahallesi"), kısaltılmışı değil.
   // Sebebi: mahalle adlarının çoğu tek başına belirsiz — "Tunahan" başka
@@ -80,10 +79,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // başında birebir geçer; iyelikli "Emlakçısı" biçimi gövdede zaten var.
     // Ticari mesaj ev sahibine seslenir — gerekçe site sayfası şablonunda
     // (app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata).
+    // LOKASYON İKİNCİ BÖLÜMDE (2026-08-08) — gerekçe site sayfası şablonunda
+    // (app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata): üçüncü
+    // bölümdeyken coğrafi nitelik Google'ın ~60 karakterlik kesme sınırının
+    // ötesinde kalıyordu. Yukarıdaki "görünümde kesilse bile sıralama sinyali
+    // başlıkta durur" notu geçerliliğini koruyor; bu değişiklik sinyali
+    // korurken niteliği GÖRÜNÜR de kılıyor.
     title: {
-      absolute: `${baslikIsim} Emlakçı | Evinizi Satalım, Kiraya Verelim | ${
+      absolute: `${baslikIsim} Emlakçı | ${
         eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
-      }`,
+      } | Evinizi Satalım, Kiraya Verelim`,
     },
     description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
