@@ -370,3 +370,27 @@
 {"s":"seker-mahallesi","sira":0,"u":null,"on":[],"n":10,"q":"Şeker Mahallesi emlakçı"}
 {"s":"seyh-samil-mahallesi","sira":7,"u":"/mahalleler/seyh-samil","on":["sahibinden.com","hepsiemlak.com"],"n":10,"q":"Şeyh Şamil Mahallesi emlakçı"}
 {"s":"susuz-mahallesi","sira":0,"u":null,"on":[],"n":10,"q":"Susuz Mahallesi emlakçı"}
+{"s":"tunahan-mahallesi","sira":0,"u":null,"on":[],"n":10,"q":"Tunahan Mahallesi emlakçı"}
+{"s":"yavuz-selim-mahallesi","sira":4,"u":"/mahalleler/yavuz-selim-mahallesi","on":["hepsiemlak.com","sahibinden.com"],"n":10,"q":"Yavuz Selim Mahallesi emlakçı"}
+{"s":"yesilova-mahallesi","sira":0,"u":null,"on":[],"n":10,"q":"Yeşilova Mahallesi emlakçı"}
+{"s":"altay-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Altay Mahallesi emlakçılar"}
+{"s":"altay-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":9,"q":"Altay emlakçı"}
+{"s":"altay-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Altay emlakçılar"}
+{"s":"ata-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Ata Mahallesi emlakçılar"}
+{"s":"ata-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":10,"q":"Ata emlakçı"}
+{"s":"ata-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Ata emlakçılar"}
+{"s":"cumhuriyet-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Cumhuriyet Mahallesi emlakçılar"}
+{"s":"cumhuriyet-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":10,"q":"Cumhuriyet emlakçı"}
+{"s":"cumhuriyet-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":11,"q":"Cumhuriyet emlakçılar"}
+{"s":"devlet-mahallesi__tam-cogul","sira":7,"u":"/mahalleler/devlet/tes-is-bloklari","on":["sahibinden.com","emlakjet.com"],"n":11,"q":"Devlet Mahallesi emlakçılar"}
+{"s":"devlet-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":9,"q":"Devlet emlakçı"}
+{"s":"devlet-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":11,"q":"Devlet emlakçılar"}
+{"s":"eryaman-mahallesi__tam-cogul","sira":4,"u":"/","on":["hepsiemlak.com","sahibinden.com"],"n":10,"q":"Eryaman Mahallesi emlakçılar"}
+{"s":"eryaman-mahallesi__kisa-tekil","sira":3,"u":"/","on":["sahibinden.com","hepsiemlak.com"],"n":9,"q":"Eryaman emlakçı"}
+{"s":"eryaman-mahallesi__kisa-cogul","sira":3,"u":"/","on":["hepsiemlak.com","sahibinden.com"],"n":10,"q":"Eryaman emlakçılar"}
+{"s":"goksu-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Göksu Mahallesi emlakçılar"}
+{"s":"goksu-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":10,"q":"Göksu emlakçı"}
+{"s":"goksu-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Göksu emlakçılar"}
+{"s":"guzelkent-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent Mahallesi emlakçılar"}
+{"s":"guzelkent-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent emlakçı"}
+{"s":"guzelkent-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent emlakçılar"}

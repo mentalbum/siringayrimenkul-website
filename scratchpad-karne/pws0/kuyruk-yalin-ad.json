@@ -1,0 +1,590 @@
+[
+{
+"q": "selvi evleri",
+"s": "yalin::selvi-evleri"
+},
+{
+"q": "göksu hisar evleri",
+"s": "yalin::göksu-hisar-evleri"
+},
+{
+"q": "atakent vadi sitesi",
+"s": "yalin::atakent-vadi-sitesi"
+},
+{
+"q": "koz modern sitesi",
+"s": "yalin::koz-modern-sitesi"
+},
+{
+"q": "çimtaş göksu",
+"s": "yalin::çimtaş-göksu"
+},
+{
+"q": "efsane evleri",
+"s": "yalin::efsane-evleri"
+},
+{
+"q": "armoni life sitesi",
+"s": "yalin::armoni-life-sitesi"
+},
+{
+"q": "endora plus",
+"s": "yalin::endora-plus"
+},
+{
+"q": "mavi bayrak sitesi",
+"s": "yalin::mavi-bayrak-sitesi"
+},
+{
+"q": "bordo göl evleri",
+"s": "yalin::bordo-göl-evleri"
+},
+{
+"q": "endora plus sitesi",
+"s": "yalin::endora-plus-sitesi"
+},
+{
+"q": "bordo platinum residence",
+"s": "yalin::bordo-platinum-residence"
+},
+{
+"q": "aker mücevher evleri",
+"s": "yalin::aker-mücevher-evleri"
+},
+{
+"q": "anadolu vizyon konutları",
+"s": "yalin::anadolu-vizyon-konutları"
+},
+{
+"q": "çağlayan sitesi eryaman",
+"s": "yalin::çağlayan-sitesi-eryaman"
+},
+{
+"q": "alkon sitesi",
+"s": "yalin::alkon-sitesi"
+},
+{
+"q": "prestij park konutları",
+"s": "yalin::prestij-park-konutları"
+},
+{
+"q": "siyah beyaz evler",
+"s": "yalin::siyah-beyaz-evler"
+},
+{
+"q": "kıratlı rezidans",
+"s": "yalin::kıratlı-rezidans"
+},
+{
+"q": "örnek arı sitesi",
+"s": "yalin::örnek-arı-sitesi"
+},
+{
+"q": "white dream sitesi",
+"s": "yalin::white-dream-sitesi"
+},
+{
+"q": "eser yapı evleri",
+"s": "yalin::eser-yapı-evleri"
+},
+{
+"q": "gold stone evleri",
+"s": "yalin::gold-stone-evleri"
+},
+{
+"q": "umar sitesi",
+"s": "yalin::umar-sitesi"
+},
+{
+"q": "lenora göksu",
+"s": "yalin::lenora-göksu"
+},
+{
+"q": "vera city",
+"s": "yalin::vera-city"
+},
+{
+"q": "ataşehir eryaman",
+"s": "yalin::ataşehir-eryaman"
+},
+{
+"q": "natural konutları",
+"s": "yalin::natural-konutları"
+},
+{
+"q": "vizyon başpınar sitesi",
+"s": "yalin::vizyon-başpınar-sitesi"
+},
+{
+"q": "öniz nirvana",
+"s": "yalin::öniz-nirvana"
+},
+{
+"q": "elit yaşam konutları 3",
+"s": "yalin::elit-yaşam-konutları-3"
+},
+{
+"q": "yurt prestij konutları",
+"s": "yalin::yurt-prestij-konutları"
+},
+{
+"q": "ütopya konutları",
+"s": "yalin::ütopya-konutları"
+},
+{
+"q": "serhatkent sitesi",
+"s": "yalin::serhatkent-sitesi"
+},
+{
+"q": "relax göksu",
+"s": "yalin::relax-göksu"
+},
+{
+"q": "tekirdağ park evleri",
+"s": "yalin::tekirdağ-park-evleri"
+},
+{
+"q": "botanik park evleri",
+"s": "yalin::botanik-park-evleri"
+},
+{
+"q": "palas eryaman",
+"s": "yalin::palas-eryaman"
+},
+{
+"q": "vera point sitesi",
+"s": "yalin::vera-point-sitesi"
+},
+{
+"q": "mia concept",
+"s": "yalin::mia-concept"
+},
+{
+"q": "ap green tower",
+"s": "yalin::ap-green-tower"
+},
+{
+"q": "astim metrolife",
+"s": "yalin::astim-metrolife"
+},
+{
+"q": "hittown sitesi",
+"s": "yalin::hittown-sitesi"
+},
+{
+"q": "admira göksu",
+"s": "yalin::admira-göksu"
+},
+{
+"q": "mahal çağ sitesi",
+"s": "yalin::mahal-çağ-sitesi"
+},
+{
+"q": "inci life rezidans eryaman",
+"s": "yalin::inci-life-rezidans-eryaman"
+},
+{
+"q": "sarıtaş seyir evleri",
+"s": "yalin::sarıtaş-seyir-evleri"
+},
+{
+"q": "mercan smart house",
+"s": "yalin::mercan-smart-house"
+},
+{
+"q": "zen park göksu",
+"s": "yalin::zen-park-göksu"
+},
+{
+"q": "bordo platinum",
+"s": "yalin::bordo-platinum"
+},
+{
+"q": "maviler ipek",
+"s": "yalin::maviler-ipek"
+},
+{
+"q": "bilgi sevgi hoşgörü sitesi",
+"s": "yalin::bilgi-sevgi-hoşgörü-sitesi"
+},
+{
+"q": "konar manzara evleri",
+"s": "yalin::konar-manzara-evleri"
+},
+{
+"q": "park göksu sitesi",
+"s": "yalin::park-göksu-sitesi"
+},
+{
+"q": "ata life sitesi",
+"s": "yalin::ata-life-sitesi"
+},
+{
+"q": "polaris evleri",
+"s": "yalin::polaris-evleri"
+},
+{
+"q": "demirel park evleri",
+"s": "yalin::demirel-park-evleri"
+},
+{
+"q": "karma modern sitesi",
+"s": "yalin::karma-modern-sitesi"
+},
+{
+"q": "çimtaş göksu konutları",
+"s": "yalin::çimtaş-göksu-konutları"
+},
+{
+"q": "kur sitesi",
+"s": "yalin::kur-sitesi"
+},
+{
+"q": "göksu manzara evleri",
+"s": "yalin::göksu-manzara-evleri"
+},
+{
+"q": "gülbaran rezidans",
+"s": "yalin::gülbaran-rezidans"
+},
+{
+"q": "belören manzara evleri",
+"s": "yalin::belören-manzara-evleri"
+},
+{
+"q": "yeniçeri kule",
+"s": "yalin::yeniçeri-kule"
+},
+{
+"q": "dalgıç rezidans",
+"s": "yalin::dalgıç-rezidans"
+},
+{
+"q": "kainat evleri",
+"s": "yalin::kainat-evleri"
+},
+{
+"q": "vera west",
+"s": "yalin::vera-west"
+},
+{
+"q": "doğasu sitesi",
+"s": "yalin::doğasu-sitesi"
+},
+{
+"q": "karma modern",
+"s": "yalin::karma-modern"
+},
+{
+"q": "zirve park konutları",
+"s": "yalin::zirve-park-konutları"
+},
+{
+"q": "ahsen sitesi",
+"s": "yalin::ahsen-sitesi"
+},
+{
+"q": "happy life residence",
+"s": "yalin::happy-life-residence"
+},
+{
+"q": "özkardeşler sitesi",
+"s": "yalin::özkardeşler-sitesi"
+},
+{
+"q": "nil my home",
+"s": "yalin::nil-my-home"
+},
+{
+"q": "akasya sitesi eryaman",
+"s": "yalin::akasya-sitesi-eryaman"
+},
+{
+"q": "alpak & neva armonia residence",
+"s": "yalin::alpak-&-neva-armonia-residence"
+},
+{
+"q": "vera vista",
+"s": "yalin::vera-vista"
+},
+{
+"q": "dilara sitesi",
+"s": "yalin::dilara-sitesi"
+},
+{
+"q": "ataşehir eryaman konutlari",
+"s": "yalin::ataşehir-eryaman-konutlari"
+},
+{
+"q": "akın garden sitesi",
+"s": "yalin::akın-garden-sitesi"
+},
+{
+"q": "gsv spor sitesi",
+"s": "yalin::gsv-spor-sitesi"
+},
+{
+"q": "mutlu sitesi eryaman",
+"s": "yalin::mutlu-sitesi-eryaman"
+},
+{
+"q": "alpak neva armonia",
+"s": "yalin::alpak-neva-armonia"
+},
+{
+"q": "meydan ada sitesi",
+"s": "yalin::meydan-ada-sitesi"
+},
+{
+"q": "altıntepe sitesi",
+"s": "yalin::altıntepe-sitesi"
+},
+{
+"q": "türeli rezidans",
+"s": "yalin::türeli-rezidans"
+},
+{
+"q": "demirer sitesi",
+"s": "yalin::demirer-sitesi"
+},
+{
+"q": "havuzlu evler sitesi",
+"s": "yalin::havuzlu-evler-sitesi"
+},
+{
+"q": "armina park evleri",
+"s": "yalin::armina-park-evleri"
+},
+{
+"q": "yenigüç sitesi eryaman",
+"s": "yalin::yenigüç-sitesi-eryaman"
+},
+{
+"q": "duru life konutları",
+"s": "yalin::duru-life-konutları"
+},
+{
+"q": "polsan 1 bahar sitesi",
+"s": "yalin::polsan-1-bahar-sitesi"
+},
+{
+"q": "ende yaşam sitesi",
+"s": "yalin::ende-yaşam-sitesi"
+},
+{
+"q": "atadostlar sitesi",
+"s": "yalin::atadostlar-sitesi"
+},
+{
+"q": "westlife sitesi",
+"s": "yalin::westlife-sitesi"
+},
+{
+"q": "güldede sitesi",
+"s": "yalin::güldede-sitesi"
+},
+{
+"q": "zirve park sitesi",
+"s": "yalin::zirve-park-sitesi"
+},
+{
+"q": "sümeyra 2 sitesi",
+"s": "yalin::sümeyra-2-sitesi"
+},
+{
+"q": "motto göksu",
+"s": "yalin::motto-göksu"
+},
+{
+"q": "paradise göksu",
+"s": "yalin::paradise-göksu"
+},
+{
+"q": "royal city eryaman",
+"s": "yalin::royal-city-eryaman"
+},
+{
+"q": "koruçam sitesi",
+"s": "yalin::koruçam-sitesi"
+},
+{
+"q": "çamdalı sitesi",
+"s": "yalin::çamdalı-sitesi"
+},
+{
+"q": "sermina life",
+"s": "yalin::sermina-life"
+},
+{
+"q": "utku sitesi",
+"s": "yalin::utku-sitesi"
+},
+{
+"q": "öz gimat sitesi",
+"s": "yalin::öz-gimat-sitesi"
+},
+{
+"q": "akın garden",
+"s": "yalin::akın-garden"
+},
+{
+"q": "park göksu konutları",
+"s": "yalin::park-göksu-konutları"
+},
+{
+"q": "ilke sitesi",
+"s": "yalin::ilke-sitesi"
+},
+{
+"q": "ankapark konutları",
+"s": "yalin::ankapark-konutları"
+},
+{
+"q": "dostlar birikim sitesi",
+"s": "yalin::dostlar-birikim-sitesi"
+},
+{
+"q": "terasevler eryaman",
+"s": "yalin::terasevler-eryaman"
+},
+{
+"q": "mercan life buse konutları",
+"s": "yalin::mercan-life-buse-konutları"
+},
+{
+"q": "gülbaran sitesi",
+"s": "yalin::gülbaran-sitesi"
+},
+{
+"q": "siyah beyaz evler sitesi",
+"s": "yalin::siyah-beyaz-evler-sitesi"
+},
+{
+"q": "volga rezidans",
+"s": "yalin::volga-rezidans"
+},
+{
+"q": "ataşehir eryaman konutları",
+"s": "yalin::ataşehir-eryaman-konutları"
+},
+{
+"q": "panorama garden eryaman",
+"s": "yalin::panorama-garden-eryaman"
+},
+{
+"q": "eser yapi evleri",
+"s": "yalin::eser-yapi-evleri"
+},
+{
+"q": "rüyakent sitesi eryaman",
+"s": "yalin::rüyakent-sitesi-eryaman"
+},
+{
+"q": "haznedaroğlu blokları",
+"s": "yalin::haznedaroğlu-blokları"
+},
+{
+"q": "genç efes sitesi",
+"s": "yalin::genç-efes-sitesi"
+},
+{
+"q": "billur sitesi",
+"s": "yalin::billur-sitesi"
+},
+{
+"q": "akonur sitesi",
+"s": "yalin::akonur-sitesi"
+},
+{
+"q": "kardeşkent sitesi",
+"s": "yalin::kardeşkent-sitesi"
+},
+{
+"q": "mira göksu konutları",
+"s": "yalin::mira-göksu-konutları"
+},
+{
+"q": "tez konak sitesi",
+"s": "yalin::tez-konak-sitesi"
+},
+{
+"q": "bayrak sitesi eryaman",
+"s": "yalin::bayrak-sitesi-eryaman"
+},
+{
+"q": "bulut kule",
+"s": "yalin::bulut-kule"
+},
+{
+"q": "oasis korupark",
+"s": "yalin::oasis-korupark"
+},
+{
+"q": "çağ life sitesi",
+"s": "yalin::çağ-life-sitesi"
+},
+{
+"q": "armoni life",
+"s": "yalin::armoni-life"
+},
+{
+"q": "metrokent sitesi eryaman",
+"s": "yalin::metrokent-sitesi-eryaman"
+},
+{
+"q": "başkent göksu sitesi",
+"s": "yalin::başkent-göksu-sitesi"
+},
+{
+"q": "kayra loft",
+"s": "yalin::kayra-loft"
+},
+{
+"q": "perla life sitesi",
+"s": "yalin::perla-life-sitesi"
+},
+{
+"q": "havuz kent sitesi",
+"s": "yalin::havuz-kent-sitesi"
+},
+{
+"q": "çiğdem sitesi",
+"s": "yalin::çiğdem-sitesi"
+},
+{
+"q": "yeni kaynak sitesi",
+"s": "yalin::yeni-kaynak-sitesi"
+},
+{
+"q": "uzunali göksu 2",
+"s": "yalin::uzunali-göksu-2"
+},
+{
+"q": "yeniceri kule",
+"s": "yalin::yeniceri-kule"
+},
+{
+"q": "panorama garden",
+"s": "yalin::panorama-garden"
+},
+{
+"q": "şenser sitesi",
+"s": "yalin::şenser-sitesi"
+},
+{
+"q": "yaylakent evleri",
+"s": "yalin::yaylakent-evleri"
+},
+{
+"q": "eryaman bordo platinum",
+"s": "yalin::eryaman-bordo-platinum"
+},
+{
+"q": "kozlar towers",
+"s": "yalin::kozlar-towers"
+},
+{
+"q": "bordo platinum resıdence",
+"s": "yalin::bordo-platinum-resıdence"
+}
+]

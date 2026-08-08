@@ -78,3 +78,20 @@ Amaç: `kuyruk-oncelikli.json`'daki kalan sorguları her gece ≤180'lik dilimle
 - CAPTCHA/robot doğrulamasını aşmaya çalışmak YASAK — görünce dur.
 - fetch/curl ile google.com/search çekmek YASAK (403 fırtınası dersi).
 - `sorgular.json`/`kuyruk-oncelikli.json`'u yeniden üretmek yasak — kuyruk sabit.
+
+---
+
+## 2026-08-08 — KUYRUK DEĞİŞTİ: artık yalın ad taranıyor
+
+GSC 28 günlük karnesi (gsc-28gun-2026-08-08.json) "emlakçı" sorgu sınıfının
+toplam gösterimin yalnızca **%2'si** olduğunu gösterdi; hacmin %64'ü YALIN SİTE
+ADINDA. Bu yüzden:
+
+- **YENİ kuyruk:** `kuyruk-yalin-ad.json` (147 sorgu — GSC'de en çok gösterim
+  alan yalın adlar, marka/alan-adı sorguları elendi).
+- **YENİ sonuç dosyası:** `sonuclar-yalin.jsonl`.
+- **ESKİ kuyruk** (`kuyruk-oncelikli.json` / `sonuclar.jsonl`, 396/1481 ölçüldü)
+  DONDURULDU — tarihsel karşılaştırma için duruyor, yeni tarama yapılmaz.
+- **Amaç değişti:** sıra zaten GSC'den geliyor; bu taramanın ürünü RAKİP SETİ.
+  Bu yüzden `on` alanı ilk 2 değil **ilk 5** alan adını kaydeder.
+- Tempo, mola ve engel kuralları AYNEN geçerli (yukarısı).
