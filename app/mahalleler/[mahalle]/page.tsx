@@ -24,6 +24,7 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { MahalleSitelerBrowser } from "@/components/site/mahalle-siteler-browser";
 import { inceltSiteler } from "@/lib/siteler-liste";
 import { getMahalleFaq } from "@/lib/faq";
+import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
@@ -52,8 +53,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // tek yer başlıktı.
   const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
-  const sitelerParcasi =
-    siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
     // "Fiyatları" kelimesi bilerek yok: sayfada fiyat rakamı vermiyoruz (proje
@@ -90,7 +89,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
       } | Evinizi Satalım, Kiraya Verelim`,
     },
-    description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    // 155 KARAKTERE SIĞACAK BİÇİMDE KISALTILDI (2026-08-08). Eski metin 14
+    // mahallenin 14'ünde de 236–272 karakterdi ve Google'ın kestiği kuyruk her
+    // seferinde AYNI yerdi: ev sahibine seslenen eylem cümlesi. Yani kazanılabilir
+    // olduğu ölçülen tek sorgu sınıfında (mahalle + emlakçı) snippet çağrısız
+    // kalıyordu. Uzun ad + alias birleşiminde yine de taşarsa truncateForMeta
+    // ağı tutuyor; kesilecek kısım artık kuyruk değil, tanıtım cümlesi.
+    description: truncateForMeta(
+      `${baslikIsim} emlakçı: ${siteSayisi > 0 ? `${siteSayisi} site ve rezidansı` : "buradaki siteleri"} tanıyoruz. Satış ve kiralamada fiyatı birlikte belirleyelim. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+    ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },

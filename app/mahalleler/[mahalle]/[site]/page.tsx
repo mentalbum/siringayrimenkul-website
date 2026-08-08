@@ -128,7 +128,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
       absolute: isimdeEryamanVar
-        ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
+        ? // Mahalle adı ARAYA giriyor, sona değil (2026-08-08). Adı "…Eryaman"
+          // ile biten 27 sitede eski biçim ("Address Eryaman Emlakçı | Evinizi
+          // Satalım, Kiraya Verelim") ana sayfa başlığını ("Eryaman Emlakçı |
+          // Evinizi Satalım, Kiraya Verelim") BİREBİR ALT DİZİ olarak
+          // içeriyordu; Google iki başlıktan güçlü olanı seçtiği için site
+          // sorgusunda ana sayfa çıkıyordu (372 pws=0 ölçümünde yakalanan tek
+          // "ana sayfa ikamesi": "Address Eryaman emlakçı"). Sona ek yapmak
+          // yetmez — üst küme olmayı sürdürür; dizi ortadan kırılmalı.
+          `${site.isim} Emlakçı | ${
+            mahalleKisaIsim(mahalle) === "Eryaman"
+              ? "Eryaman Mahallesi"
+              : mahalleKisaIsim(mahalle)
+          } | Evinizi Satalım, Kiraya Verelim`
         : eryamanda
           ? isimBirdenCokMahallede(site.isim)
             ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
@@ -142,11 +154,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
           : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`,
     },
-    // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
-    // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
-    // (1. sıra araştırması A1, defter 2026-07-31).
+    // TTBS NUMARASI SNIPPET'TEN ÇIKARILDI (2026-08-08). Buradaki sabit kuyruk
+    // 155 karakter sınırını aşıyordu: üretimden alınan 20 sayfalık örneklemde
+    // 16'sı "…" ile kesiliyordu ve KESİLEN KISIM HER SEFERİNDE TELEFON
+    // NUMARASIYDI (16/16). Yani güven öğesi uğruna, snippet'teki tek eylem
+    // çağrısı kayboluyordu. Yetki belge no görünürlüğünü kaybetmiyor: footer
+    // künyesinde, yazar kartında, JSON-LD'de ve sayfa gövdesinde duruyor.
     description: truncateForMeta(
-      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin (TTBS No ${siteConfig.yetkiBelgeNo}). Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {

@@ -64,13 +64,16 @@ const nextConfig: NextConfig = {
       { source: "/blog/kiracili-ev-satilir-mi", destination: "/eryamanda-ev-satmak", permanent: true },
       { source: "/blog/miras-kalan-ev-nasil-satilir", destination: "/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama", permanent: true },
       { source: "/blog/tapu-ada-parsel-nasil-okunur", destination: "/blog/eryamanda-etap-sistemi-nedir", permanent: true },
-      // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
-      // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
-      // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.
-      // İlgili etabın toplu yapı yönetiminden resmî ada listesi gelirse geri açılır.
-      { source: "/mahalleler/altay/etaplar/1", destination: "/mahalleler/altay-mahallesi", permanent: true },
-      { source: "/mahalleler/sehit-osman-avci/etaplar/2", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
-      { source: "/mahalleler/seyh-samil/etaplar/3", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+      // 1./2./3. Etap yönlendirmeleri KALDIRILDI (2026-08-08). Bu üç kural,
+      // etap sayfaları doğrulanmamış gruplamadan beslendiği için konmuştu; ama
+      // 07.08'de (81cda7d, 18a5cec) üç etabın da RESMÎ ada listesi geldi ve
+      // sayfalar lib/etap-onayli.ts üzerinden yeniden üretiliyor (canlıda 200).
+      // Kurallar yerinde kaldıkça Google'ın aylardır tanıdığı eski adres
+      // (/mahalleler/altay/etaplar/1) yeni etap sayfasını ATLAYIP mahalle
+      // köküne 308 veriyordu. Silindiler; aşağıdaki mahalle slug taşıma joker
+      // kuralı (/mahalleler/altay/:path*) eski adresi doğru etap sayfasına
+      // taşıyor — yani üç etap sayfası "yeni keşif" olmaktan çıkıp geçmiş
+      // sinyali olan adreslerin varisi oluyor.
 
       // Silinen/birleştirilen/taşınan site kayıtlarının eski URL'leri —
       // 404 yerine yaşayan varislerine kalıcı yönlendirme (SEO değeri taşınır).

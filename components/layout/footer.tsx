@@ -212,6 +212,19 @@ export function Footer() {
                   </Link>
                 </li>
               ))}
+            {/* Yenimahalle site arşivi (2026-08-08): iç bağ denetiminde bu hub'a
+                giden bağ sayısı 4 çıktı ve arkasındaki 203 site sayfası sitenin
+                en zayıf PageRank grubuydu. Site geneli tek satır, simülasyonda
+                hub'ın payını +%22 artırıyor. Etimesgut arşivi (/siteler) zaten
+                menüde ve ana sayfada linkli. */}
+            <li>
+              <Link
+                href="/siteler/yenimahalle"
+                className="text-sm font-medium text-white/90 hover:text-gold"
+              >
+                Yenimahalle site arşivi →
+              </Link>
+            </li>
           </ul>
         </div>
       </div>
