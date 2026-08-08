@@ -25,11 +25,13 @@ Veri denetimi 316 tek-parselli kaydın alanM2'sini sitenin kendi sınır poligon
   düzyazısına uygulanıyor, `ozellikler` maddelerine uygulanmıyor — komşunun kat sayısı sitenin
   künyesine sızabiliyor; (2) `tum.includes("kat mülkiyet")` "634 sayılı Kat Mülkiyeti Kanunu"
   ibaresine takılıp tapuda "Arsa" olan siteye "kısmen kat mülkiyetli parsellerde" yazdırıyor.
-- **scripts/tkgm-tapu-uygula.py — sayı biçimi tuzağı:** cbsapi 2026-07-30'dan sonra US biçimi
-  ("15,523.00") döndürüyor, öncesi TR ("9.939,00"). Scriptin `alan_metni`'i yalnız US'i çözüyor;
-  TR biçimli değerleri 9,9 m² okuyup <300 filtresine takıldığı için SESSİZCE atlıyor (~90 parsel
-  boşa gitti). Yanlış veri yazmamış. scripts/tkgm-kunye-uygula.py'deki `alan_coz` ikisini de
-  ayırt ediyor — o mantık buraya taşınmalı.
+- ~~**scripts/tkgm-tapu-uygula.py — sayı biçimi tuzağı**~~ (2026-08-08 kapandı): çözümleyici
+  `scripts/tkgm_ortak.py:alan_coz`'a taşındı, iki script de oradan çağırıyor. Teşhis düzeltildi:
+  biçim TARİHE ya da uca göre değişmiyor, İSTEKTEN İSTEĞE değişiyor — 07-30 04:00 turunda
+  04:00:35 US, 04:00:38 TR, 04:00:42 yine US geldi. Gerçek kayıp ~90 değil 2 parsel
+  (uzuner-konutlari 6.592 m², yeniceri-kule 8.505 m²); 180 "yalnız TR" parselin geri kalanı
+  künye kolundan (`alan_coz` zaten doğruydu) girmişti. Asıl risk ileriyeydi: 08-08 tarihli 153
+  yanıtın 153'ü TR — düzeltilmeseydi sonraki tapu turu alanların tamamını kaybederdi.
 - **Adres biçimi ev kuralı gerekiyor:** aynı mahallede 3 ayrı kalıp var. Ayrıca 19 ESKİ kayıt
   adreste ilçe yerine "Eryaman/Ankara" yazıyor (Eryaman ilçe değil) — temizlik adayı; yeni
   eklenen 40 adresin hiçbirinde bu hata yok.
@@ -1460,3 +1462,20 @@ Kalan açık işler:
   YAN BULGU: bilgiemlak 3. Etap düğümü altında Klima(6) 17624-25/17644-48 ve Öztaş 17652-61 (4. Etap
   176xx adaları!) da listeleniyor — be bölge başlığı yine güvenilmez çıktı, bu adalar resmî 3. Etap
   listesi DIŞI, dokunulmadı. 2. Etap'ta 17476/78/79 (yönetim binası/iş merkezi/okul, konut dışı) kayıtsız kalır.
+
+---
+
+## Maviler İpek — kamuya açık kaynak YOK (2026-08-08)
+
+Zenginleştirme turunda araştırıldı: iki ayrı web aramasında proje/geliştirici
+kaydı, tanıtım sayfası ya da yönetim künyesi BULUNAMADI. Aynı adı taşıyan
+"Maviler Sitesi" (Ostim-Serhat) ve "Maviler Mehmet Çiftçi Sitesi" (Serhat,
+5500. Cadde) FARKLI yerleşimler — karıştırılmamalı (benzer adlı proje tuzağı).
+
+Kayda yalnız doğrulanmış veri yazıldı: TKGM 63275/1, 21.572 m², nitelik hâlâ
+**Arsa** (canlı sorgu 08.08) + kendi sınır verimizden komşuluk (Mabeyn
+Başpınar, Batımahal Başpınar, Zirveden Batı). GSC'de 63 gösterim / 6,2. sıra —
+eşik bandında, yani derinleşirse kazanç var.
+
+**Özgün'den gereken:** blok sayısı, kat adedi, daire tipleri, yapım/teslim yılı,
+geliştirici adı. Bunlar gelmeden metin uzatılmayacak (uydurma yasağı).

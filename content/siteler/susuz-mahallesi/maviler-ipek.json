@@ -7,7 +7,7 @@
     "lng": 32.6623193
   },
   "sinirGeoJSON": "siteler/susuz-mahallesi/maviler-ipek-boundary.geojson",
-  "aciklama": "Maviler İpek, Susuz Mahallesi'nde 5611. Sokak üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yerleşimin oturduğu parsel yaklaşık 21.572 m² — yani 21,5 dönümün üzerinde — geniş bir alana karşılık gelir; bu ölçek, Susuz'un yeni gelişen konut dokusundaki ferah yerleşim planının göstergesidir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Maviler İpek, Yenimahalle'ye bağlı Susuz Mahallesi'nde 5611. Sokak üzerinde yer alan bir konut sitesidir. TKGM kayıtlarına göre yerleşimin oturduğu parsel yaklaşık 21.572 m² — yani 21,5 dönümün üzerinde — geniş bir alana karşılık gelir; bu ölçek, Susuz'un yeni gelişen konut dokusundaki ferah yerleşim planının göstergesidir ve çevredeki parsellerin çoğundan belirgin biçimde büyüktür.\n\nSınır verilerimize göre site, Başpınar İnşaat imzalı iki yerleşimin — Mabeyn Başpınar ve Batımahal Başpınar — hemen yanında, Zirveden Batı ile de aynı konut hattında yer alır. Yani çevre tek tek apartmanlardan değil, yakın dönemde planlanmış site düzeninden oluşuyor; bir daire pazara çıktığında karşılaştırıldığı emsaller de bu yeni yapı kuşağından geliyor. Susuz idari olarak Yenimahalle'ye bağlıdır, konut piyasası ise Göksu gelişim aksı ve komşu Eryaman ile birlikte okunur.\n\nTapu tarafında dikkat edilmesi gereken bir nokta var: parsel TKGM'de halen arsa niteliğiyle görünür. Bu, dairenizin satış ya da kiralama sürecinde tapu aşamasının işlem öncesinde teyit edilmesini gerektirir — güncel kaydı birlikte kontrol ederiz.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63275",
@@ -19,11 +19,13 @@
   "ozellikler": [
     "5611. Sokak — Susuz Mahallesi",
     "Yaklaşık 21,5 dönümlük geniş parsel (TKGM)",
-    "Susuz'un yeni gelişen konut kesimi"
+    "Tapuda arsa nitelikli parsel (TKGM) — işlem öncesi güncel kayıt kontrolü",
+    "Komşuları: Mabeyn Başpınar, Batımahal Başpınar, Zirveden Batı (sınır verilerimiz)",
+    "Susuz'un yeni gelişen konut kesimi — Göksu gelişim aksı"
   ],
   "adres": "5611. Sokak, Susuz, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Maviler İpek Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }
