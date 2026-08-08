@@ -7,53 +7,136 @@
     "lng": 32.6443
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/betontas-bloklari-boundary.geojson",
-  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesinde, yaklaşık 50.800 m²'lik (51 dönüm) parsel bütününe yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. Yerel konut kayıtlarında sekiz adanın yüzölçüm toplamı 56.462 m² olarak ölçülür; tapu parsellerinin toplamıyla arasındaki fark, blokların arasını dolduran yol ve ortak yeşil alanlardır. Aynı kayıtlara göre blokların tamamı 1989 yapımı ve ısıtma merkezi sistemle sağlanıyor. Ne var ki Betontaş tek tip bir doku değil; blok künyeleri iki ayrı yapı tipinin bir arada durduğunu gösteriyor. Birinci tip dört katlı, sekiz daireli ve asansörsüz bloklardır — Söğüt ve Aydınlar apartmanları bu tipte; dairelerin dördü 3+1, dördü 1+1 olarak kayıtlı ve alanlar 52-100 m² arasında değişiyor. İkinci tip on katlı, yirmi daireli ve asansörlü bloklardır — Manolya ve Şenyuva apartmanları bu tipte; bu bloklarda dairelerin tamamı 3+1 ve 100 m². Ev sahibi açısından değerlemeyi belirleyen ilk ayrım tam da budur: aynı metrekare, asansörlü bir blokla asansörsüz bir blokta aynı çizgide işlem görmez. Sitede 1+1 stok bulunması da önemli bir ayrıntı — kompakt daireye yönelen kiralama ve satış talebi bu bloklarda karşılık buluyor. Blok künyelerinde sayılan ortak donatılar arasında bahçe, kapıcı, otopark, oyun parkı, kreş, jeneratör, hidrofor, su deposu, yangın merdiveni ile ısı ve ses yalıtımı yer alıyor; adalardan birinin künyesinde tenis kortu geçiyor, ilan metinleri de site içinde çocuk parkı ve basketbol sahası bulunduğunu belirtiyor. Kreşin künyelerde donatı olarak sayılması, kümenin aile oturumu ağırlıklı karakterini destekleyen somut bir ayrıntı. Blok adları Anadolu yer adları ve doğa sözcüklerinden seçilmiş ve yerel konut kayıtlarında altmış altı bloğun tamamı adıyla listeli: Akdağ, Alakuş, Aşkale, Aydınlar, Azimli, Aziz, Bağlar, Bahçeli, Bahtiyar, Balkaya, Balova, Başdere, Beyazıt, Çınar, Doğan, Emirler, Esenkaya, Eymir, Fethiye, Gelibolu, Gökçe, Gökova, Gülyüzü, Güroluk, Harmancık, Irmak, Işıklar, İnal, İnci, İncesu, İpek, Kabataş, Kadirli, Kale, Kirazlı, Kıvançlı, Kızılırmak, Kocadağ, Kocatepe, Konak, Konuksever, Konur, Köşeyeri, Manolya, Menekşe, Mine, Söğüt, Şahinler, Şanlı, Şenlik, Şenocak, Şenyuva, Şerefli, Tanyeli, Taşkent, Tunçbilek, Uluçay, Üçtepe, Yağmur, Yakarsu, Yuva, Yücebaş, Yüceler, Yürekli, Zeyrek ve Zeytinlik apartmanları. Bu liste tapu kaydındaki altmış altı blokla birebir örtüşüyor; ilanda hem site adını hem blok adını birlikte yazmak, dairenin her iki aramada da görünmesini sağlar. Küme Söğüt Caddesi'ne cephelidir, Şehit Ahmet Taner Ekici Caddesi de yakın aksıdır; çevrede Betontaş adını taşıyan bir iş merkezi, bir park ve bir spor tesisi bulunur — yerleşimin adı çevrenin yön tarifine yerleşmiş durumda. Bölgenin oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Betontaş Blokları, Altay Mahallesi'nde Eryaman'ın ilk yapılaşma bölgesinde, yaklaşık 50.800 m²'lik (51 dönüm) parsel bütününe yayılan köklü bir konut dokusu. TKGM kayıtlarına göre 8 ayrı ada üzerinde toplam 66 kargir apartman bloğundan oluşuyor — yani tek bir site kapısından çok, mahalle içinde mahalle ölçeğinde bir yerleşim. Yerel konut kayıtlarında sekiz adanın yüzölçüm toplamı 56.462 m² olarak ölçülür; tapu parsellerinin toplamıyla arasındaki fark, blokların arasını dolduran yol ve ortak yeşil alanlardır. Aynı kayıtlara göre blokların tamamı 1989 yapımı ve ısıtma merkezi sistemle sağlanıyor. Ne var ki Betontaş tek tip bir doku değil; blok künyeleri iki ayrı yapı tipinin bir arada durduğunu gösteriyor. Birinci tip dört katlı, sekiz daireli ve asansörsüz bloklardır — Söğüt ve Aydınlar apartmanları bu tipte; dairelerin dördü 3+1, dördü 1+1 olarak kayıtlı ve alanlar 52-100 m² arasında değişiyor. İkinci tip on katlı, yirmi daireli ve asansörlü bloklardır — Manolya ve Şenyuva apartmanları bu tipte; bu bloklarda dairelerin tamamı 3+1 ve 100 m². Ev sahibi açısından değerlemeyi belirleyen ilk ayrım tam da budur: aynı metrekare, asansörlü bir blokla asansörsüz bir blokta aynı çizgide işlem görmez. Sitede 1+1 stok bulunması da önemli bir ayrıntı — kompakt daireye yönelen kiralama ve satış talebi bu bloklarda karşılık buluyor. Blok künyelerinde sayılan ortak donatılar arasında bahçe, kapıcı, otopark, oyun parkı, kreş, jeneratör, hidrofor, su deposu, yangın merdiveni ile ısı ve ses yalıtımı yer alıyor; adalardan birinin künyesinde tenis kortu geçiyor, ilan metinleri de site içinde çocuk parkı ve basketbol sahası bulunduğunu belirtiyor. Kreşin künyelerde donatı olarak sayılması, kümenin aile oturumu ağırlıklı karakterini destekleyen somut bir ayrıntı. Blok adları Anadolu yer adları ve doğa sözcüklerinden seçilmiş ve yerel konut kayıtlarında altmış altı bloğun tamamı adıyla listeli: Akdağ, Alakuş, Aşkale, Aydınlar, Azimli, Aziz, Bağlar, Bahçeli, Bahtiyar, Balkaya, Balova, Başdere, Beyazıt, Çınar, Doğan, Emirler, Esenkaya, Eymir, Fethiye, Gelibolu, Gökçe, Gökova, Gülyüzü, Güroluk, Harmancık, Irmak, Işıklar, İnal, İnci, İncesu, İpek, Kabataş, Kadirli, Kale, Kirazlı, Kıvançlı, Kızılırmak, Kocadağ, Kocatepe, Konak, Konuksever, Konur, Köşeyeri, Manolya, Menekşe, Mine, Söğüt, Şahinler, Şanlı, Şenlik, Şenocak, Şenyuva, Şerefli, Tanyeli, Taşkent, Tunçbilek, Uluçay, Üçtepe, Yağmur, Yakarsu, Yuva, Yücebaş, Yüceler, Yürekli, Zeyrek ve Zeytinlik apartmanları. Bu liste tapu kaydındaki altmış altı blokla birebir örtüşüyor; ilanda hem site adını hem blok adını birlikte yazmak, dairenin her iki aramada da görünmesini sağlar. Küme Söğüt Caddesi'ne cephelidir, Şehit Ahmet Taner Ekici Caddesi de yakın aksıdır; çevrede Betontaş adını taşıyan bir iş merkezi, bir park ve bir spor tesisi bulunur — yerleşimin adı çevrenin yön tarifine yerleşmiş durumda. Bölgenin oturmuş yeşil dokusu, okul ve çarşı yakınlığı ile özellikle aile oturumu tarafında istikrarlı talep görür; blok ve cephe farkları fiyatı belirgin şekilde etkiler. Etap yönetiminin blok listesinde apartmanlar kod yerine isimle geçer — Aydınlar, Eymir, Söğüt ve Yuva gibi. Bu bloklarda satılık veya kiralık daireniz mi var? Ada ve blok bazında emsalleri ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17516",
       "parsel": "1",
       "etap": "1",
       "alanM2": 6695,
-      "nitelik": "8 Blok Kargir Apartman"
+      "nitelik": "8 Blok Kargir Apartman",
+      "bloklar": [
+        "Aydınlar",
+        "Eymir",
+        "Gelibolu",
+        "Irmak",
+        "Kabataş",
+        "Kıvançlı",
+        "Söğüt",
+        "Yuva"
+      ]
     },
     {
       "no": "17517",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Azimli",
+        "Doğan",
+        "Esenkaya",
+        "Fethiye",
+        "Gökçe",
+        "Işıklar",
+        "Kızılırmak",
+        "Yücebaş",
+        "Şahinler"
+      ]
     },
     {
       "no": "17518",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Aziz",
+        "Aşkale",
+        "Başdere",
+        "Gülyüzü",
+        "Güroluk",
+        "Kirazlı",
+        "Yüceler",
+        "İnal",
+        "Şanlı"
+      ]
     },
     {
       "no": "17519",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Akdağ",
+        "Balova",
+        "Bağlar",
+        "Harmancık",
+        "Kocadağ",
+        "Taşkent",
+        "Yürekli",
+        "İncesu",
+        "Şenlik"
+      ]
     },
     {
       "no": "17520",
       "parsel": "2",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Bahçeli",
+        "Kocatepe",
+        "Köşeyeri",
+        "Tunçbilek",
+        "Uluçay",
+        "Yağmur",
+        "Zeyrek",
+        "İnci",
+        "Şenocak"
+      ]
     },
     {
       "no": "17521",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Bahtiyar",
+        "Konak",
+        "Menekşe",
+        "Yakarsu",
+        "Zeytinlik",
+        "İpek",
+        "Şenyuva"
+      ]
     },
     {
       "no": "17522",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Alakuş",
+        "Balkaya",
+        "Kadirli",
+        "Konuksever",
+        "Manolya",
+        "Çınar",
+        "Şerefli"
+      ]
     },
     {
       "no": "17523",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Beyazıt",
+        "Emirler",
+        "Gökova",
+        "Kale",
+        "Konur",
+        "Mine",
+        "Tanyeli",
+        "Üçtepe"
+      ]
     }
   ],
   "ozellikler": [
     "8 ada, toplam 66 kargir apartman bloğu (TKGM)",
+    "Bloklar isimle anılır (etap yönetimi blok listesi)",
     "8 adanın parsel toplamı ~50.800 m² (51 dönüm, TKGM)",
     "Bölgenin ilk yapılaşma dokusu",
     "Kat mülkiyetli parsel (TKGM)",
@@ -73,5 +156,5 @@
   "alternatifAdlar": [
     "Betontaş Sitesi"
   ],
-  "zenginlestirildi": "2026-08-02"
+  "zenginlestirildi": "2026-08-08"
 }

@@ -7,78 +7,208 @@
     "lng": 32.6458
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/kutlutas-sitesi-boundary.geojson",
-  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde 27. Cadde aksında, yaklaşık 87.500 m²'lik (87,5 dönüm) parsel bütününe yayılan, bölgenin en büyük toplu konut yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve bunlara eşlik eden dubleks konutlardan oluşuyor; adalardan biri tümüyle 23 dublekslik bir konut grubudur. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Kümenin adını taşıyan Kutlutaş İş Merkezi de bu yerleşimin içinde yer alır ve bölgenin toplu yapı yönetimi kendi resmi adresini bu iş merkezine göre tarif eder — yani yerleşim, çevrenin yön tarifine yerleşmiş bir referans noktasıdır. Bloklar, yönetimin tanıtımına göre 1990'da yerleşime açılan ve Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olarak anılan geniş bir toplu yapının parçası; bu bütün, 457 apartmanda 6.371 bağımsız bölüm, yaklaşık 25.000 nüfus ve 1 milyon m²'si yeşil alan olmak üzere toplam 1.500.000 m²'lik bir alan demek. Aynı kaynak kuşağın ortak donatılarını 2 sağlık ocağı, 2 kreş, 2 cami, 3 ilköğretim okulu, bir gençlik merkezi, bir ısı merkezi, 126 işyerinden oluşan 3 iş merkezi, çocuk parkları ve toplam 4.000 araç kapasiteli 64 otopark olarak sayıyor — bunlar tek bir kümenin değil, kuşağın tamamının envanteri; Kutlutaş bu ortak donatı ağının içinde konumlanır. Yerleşim, Şehit Osman Avcı Mahallesi sınırına komşudur. Yerel kayıtlar, kümedeki yapıların yalnızca blok numarasıyla değil kendi adlarıyla anıldığını gösteriyor: adalardan birinde Çamlıtepe, Güzelyurt, Konuk, Seyran, Arısu, Ceyhan ve Başköy apartmanları sıralanır, aynı adada bunlara tek sayılı kapı numaralarıyla dizilen bir villa grubu eşlik eder. Kapı numaraları ada içinde ardışıktır — apartmanlar 51 ile 57, villalar 61 ile 73 arasında numaralanmıştır. Ev sahibi için bunun karşılığı doğrudandır: adres tarifinde apartman adı ile iki haneli kapı numarası birlikte kullanılır, ilanda yalnızca 'Kutlutaş' yazmak adresi daraltmaz. Ad benzerliği de dikkat gerektirir; yerel kayıtlar Kutlutaş adını komşu Şehit Osman Avcı Mahallesi'ndeki ayrı blok gruplarında da kullanır, bu yüzden ilan başlığında mahallenin ve apartman adının birlikte yazılması aramada karışıklığı önler. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kutlutaş Blokları, Altay Mahallesi'nde 27. Cadde aksında, yaklaşık 87.500 m²'lik (87,5 dönüm) parsel bütününe yayılan, bölgenin en büyük toplu konut yerleşimlerinden biri. TKGM kayıtlarına göre 13 ayrı ada üzerinde, ada başına 5 ile 10 arasında değişen kargir/betonarme apartman bloklarından ve bunlara eşlik eden dubleks konutlardan oluşuyor; adalardan biri tümüyle 23 dublekslik bir konut grubudur. Bu ölçek, Kutlutaş'ı tek bir site değil, kendi sokak dokusu olan bir mahalle parçası yapar; adalar arasında yaş, blok tipi ve cephe farkları fiyatlara doğrudan yansır. Kümenin adını taşıyan Kutlutaş İş Merkezi de bu yerleşimin içinde yer alır ve bölgenin toplu yapı yönetimi kendi resmi adresini bu iş merkezine göre tarif eder — yani yerleşim, çevrenin yön tarifine yerleşmiş bir referans noktasıdır. Bloklar, yönetimin tanıtımına göre 1990'da yerleşime açılan ve Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olarak anılan geniş bir toplu yapının parçası; bu bütün, 457 apartmanda 6.371 bağımsız bölüm, yaklaşık 25.000 nüfus ve 1 milyon m²'si yeşil alan olmak üzere toplam 1.500.000 m²'lik bir alan demek. Aynı kaynak kuşağın ortak donatılarını 2 sağlık ocağı, 2 kreş, 2 cami, 3 ilköğretim okulu, bir gençlik merkezi, bir ısı merkezi, 126 işyerinden oluşan 3 iş merkezi, çocuk parkları ve toplam 4.000 araç kapasiteli 64 otopark olarak sayıyor — bunlar tek bir kümenin değil, kuşağın tamamının envanteri; Kutlutaş bu ortak donatı ağının içinde konumlanır. Yerleşim, Şehit Osman Avcı Mahallesi sınırına komşudur. Yerel kayıtlar, kümedeki yapıların yalnızca blok numarasıyla değil kendi adlarıyla anıldığını gösteriyor: adalardan birinde Çamlıtepe, Güzelyurt, Konuk, Seyran, Arısu, Ceyhan ve Başköy apartmanları sıralanır, aynı adada bunlara tek sayılı kapı numaralarıyla dizilen bir villa grubu eşlik eder. Kapı numaraları ada içinde ardışıktır — apartmanlar 51 ile 57, villalar 61 ile 73 arasında numaralanmıştır. Ev sahibi için bunun karşılığı doğrudandır: adres tarifinde apartman adı ile iki haneli kapı numarası birlikte kullanılır, ilanda yalnızca 'Kutlutaş' yazmak adresi daraltmaz. Ad benzerliği de dikkat gerektirir; yerel kayıtlar Kutlutaş adını komşu Şehit Osman Avcı Mahallesi'ndeki ayrı blok gruplarında da kullanır, bu yüzden ilan başlığında mahallenin ve apartman adının birlikte yazılması aramada karışıklığı önler. Etap yönetiminin blok listesinde apartmanlar kod yerine isimle geçer — Beşpınar, Göztepe, Kalecik ve Lale gibi. Bu bloklarda satılık veya kiralık daireniz mi var? 13 adanın emsallerini ayrı ayrı takip ediyoruz — fiyatı, bölgeyi ada/parsel düzeyinde tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17499",
       "parsel": "1",
       "etap": "1",
       "alanM2": 7485,
-      "nitelik": "7 Adet Kargir Apartman 8 Adet Dublks Konut"
+      "nitelik": "7 Adet Kargir Apartman 8 Adet Dublks Konut",
+      "bloklar": [
+        "Beşpınar",
+        "Göztepe",
+        "Kalecik",
+        "Koru",
+        "Lale",
+        "Reyhanlı",
+        "Saray",
+        "Villa"
+      ]
     },
     {
       "no": "17500",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Bostancı",
+        "Güdül",
+        "Kozlu",
+        "Leylak",
+        "Maden",
+        "Pelit",
+        "Sakarya",
+        "Sütlüce",
+        "Taşlıca",
+        "Yuvalı"
+      ]
     },
     {
       "no": "17501",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Aksoy",
+        "Begonya",
+        "Güldalı",
+        "Köknar",
+        "Ladik",
+        "Meşelik",
+        "Nergis",
+        "Sancak",
+        "İdil",
+        "Şengül"
+      ]
     },
     {
       "no": "17502",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Villa"
+      ]
     },
     {
       "no": "17503",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Adatepe",
+        "Gülderen",
+        "Köşk",
+        "Nilüfer",
+        "Sarıpınar",
+        "Türkeli",
+        "Yalım",
+        "Çağlayan",
+        "Üçkonak"
+      ]
     },
     {
       "no": "17504",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Akyar",
+        "Bozova",
+        "Gülistan",
+        "Kozağacı",
+        "Köyceğiz",
+        "Sarmaşık",
+        "Yasemin",
+        "Çamlıbel",
+        "Çandarlı"
+      ]
     },
     {
       "no": "17505",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Alaca",
+        "Avşar",
+        "Aydost",
+        "Güllük",
+        "Hoşdere",
+        "Kula",
+        "Seyhan",
+        "Seçkin",
+        "Tanyeri",
+        "Villa",
+        "Çankaya"
+      ]
     },
     {
       "no": "17506",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Alıç",
+        "Ereğli",
+        "Esen",
+        "Gülveren",
+        "Karadağ",
+        "Kumburgaz",
+        "Sergen",
+        "Tavas",
+        "Çamlıca"
+      ]
     },
     {
       "no": "17507",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Aydoğdu",
+        "Beldibi",
+        "Gümüşdere",
+        "Kumluca",
+        "Servi",
+        "Villa",
+        "Çiğdemli"
+      ]
     },
     {
       "no": "17508",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Ayyıldız",
+        "Damla",
+        "Gürçay",
+        "Kumru",
+        "Sevinç",
+        "Villa"
+      ]
     },
     {
       "no": "17509",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Atalar",
+        "Bafra",
+        "Dicle",
+        "Kazancı",
+        "Kurşunlu",
+        "Orkide",
+        "Seymen",
+        "Villa"
+      ]
     },
     {
       "no": "17510",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Arısu",
+        "Başköy",
+        "Ceyhan",
+        "Güzelyurt",
+        "Konuk",
+        "Seyran",
+        "Villa",
+        "Çamlıdere"
+      ]
     },
     {
       "no": "17511",
       "parsel": "1",
-      "etap": "1"
+      "etap": "1",
+      "bloklar": [
+        "Bengisu",
+        "Hisar",
+        "Kurtkale",
+        "Sipahi",
+        "Uludere",
+        "Villa",
+        "Çimenli"
+      ]
     }
   ],
   "ozellikler": [
     "13 ada, ada başına 5–10 blok (TKGM)",
+    "Bloklar isimle anılır (etap yönetimi blok listesi)",
     "Bloklara eşlik eden dubleks konutlar; bir ada tümüyle 23 dublekslik grup (TKGM)",
     "13 adanın parsel toplamı ~87.500 m² (87,5 dönüm, TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
@@ -95,5 +225,5 @@
   "alternatifAdlar": [
     "Kutlutaş Sitesi"
   ],
-  "zenginlestirildi": "2026-08-02"
+  "zenginlestirildi": "2026-08-08"
 }
