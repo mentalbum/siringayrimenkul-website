@@ -15,9 +15,16 @@ export const siteConfig = {
   phoneDisplay: process.env.NEXT_PUBLIC_PHONE_DISPLAY ?? "0532 363 96 60",
   phoneTel: process.env.NEXT_PUBLIC_PHONE_TEL ?? "+905323639660",
   whatsappUrl: process.env.NEXT_PUBLIC_WHATSAPP_URL ?? "https://wa.me/905323639660",
+  // MAĞAZA KÖKÜ, alt sekme değil (2026-08-08). Emsal ölçümünde ("batıkent
+  // emlakçı", "sincan emlakçı") organik 1. sıraya çıkan sayfa mağazanın kökü;
+  // /one-cikanlar alt sekmesi arama sonuçlarında görünmüyor. Sitedeki ~1000
+  // sayfadan çıkan mağaza linkinin tamamı buradan besleniyor.
+  // ALT ALAN ADI DEĞİŞTİRİLMEYECEK: eryamanemlakcisiringayrimenkul zaten buraya
+  // yönleniyor ve Google'da 0 indeksli sayfası var; adres değişimi "eryaman
+  // 3./4./5. etap emlakçı" sorgularındaki üç organik 1. sırayı riske atar.
   sahibindenUrl:
     process.env.NEXT_PUBLIC_SAHIBINDEN_URL ??
-    "https://eryamansiringayrimenkul.sahibinden.com/one-cikanlar",
+    "https://eryamansiringayrimenkul.sahibinden.com/",
   serviceArea: "Eryaman, Etimesgut / Ankara",
   officeAddress: "Tunahan Mah. 208. Sokak No:4/59, 4. Etap Çarşı, 06824 Etimesgut/Ankara",
   officeAddressParts: {

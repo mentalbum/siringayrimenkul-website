@@ -33,8 +33,12 @@ export function Footer() {
               gösterdi — buradaki cümle site genelinde "/"ye tematik çapa taşıyan
               tek yer. Metin description ile eş anlamlı tutulmalı. */}
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/70">
+            {/* Çapa iyeliksiz kuruldu (2026-08-08): "emlakçısı" biçimi aranan
+                tam diziyi ("eryaman emlakçı") kırıyordu. Beklenti düşük — site
+                geneli footer linkleri ağır iskonto edilir — bu bir tutarlılık
+                düzeltmesi, sıralama kaldıracı değil. */}
             <Link href="/" className="font-medium text-white/90 hover:text-gold">
-              Eryaman emlakçısı Şirin Gayrimenkul
+              Eryaman emlakçı arayanlar için Şirin Gayrimenkul
             </Link>{" "}
             — 700&apos;den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek
             yerel rehber. Evinizi satarken ya da kiraya verirken fiyatı birlikte

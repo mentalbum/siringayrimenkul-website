@@ -7,6 +7,7 @@ import {
   getYayindaMahalleler,
 } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
+import { eryamandaMi } from "@/lib/bolge";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { ReviewBadge } from "@/components/ui/review-badge";
@@ -103,9 +104,17 @@ const surecAdimlari = [
 
 export default function HomePage() {
   const mahalleler = getAllMahalleler();
+  /* Vitrin ETİMESGUT ÖNCELİKLİ (2026-08-08). getAllMahalleler alfabetik sıralıyor;
+     ilk üç kutu bu yüzden Altay, Ata, Cumhuriyet ile açılıyordu — Ata ve Cumhuriyet
+     Yenimahalle'de. "Eryaman Emlakçı" başlıklı sayfanın vitrininde Eryaman dışı iki
+     mahalle olması hem sorgu niyetiyle hem "Yenimahalle'ye Eryaman deme" kuralıyla
+     çelişiyordu (bkz. lib/bolge.ts). Hiçbir mahalle listeden çıkmıyor; yalnızca
+     Etimesgut mahalleleri öne alınıyor, alfabetik sıra kendi içinde korunuyor. */
+  const vitrinSirasi = (a: (typeof mahalleler)[number], b: (typeof mahalleler)[number]) =>
+    Number(eryamandaMi(b)) - Number(eryamandaMi(a));
   const oneCikanMahalleler = [
-    ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda"),
-    ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda"),
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda").sort(vitrinSirasi),
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda").sort(vitrinSirasi),
   ].slice(0, 3);
   const sonYazilar = getAllBlogPosts().slice(0, 3);
 
@@ -162,8 +171,10 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-14 sm:pt-28">
           <div className="max-w-2xl">
+            {/* "Eryaman" ilk ekranda, H1'in üstünde: sayfanın hangi bölgeye ait
+                olduğunu ilçe adından önce söylüyor (2026-08-08). */}
             <p className="animate-fade-up text-sm font-semibold uppercase tracking-wide text-gold">
-              Şirin Gayrimenkul · Etimesgut
+              Şirin Gayrimenkul · Eryaman, Etimesgut
             </p>
             {/* TAM EŞLEŞME: baş sorgu yalın "Eryaman Emlakçı" — kişiselleştirmesiz
                 ölçümde (2026-08-02) organikte önümüzdeki yerel sitelerin hepsi bu
@@ -207,8 +218,15 @@ export default function HomePage() {
                 Sitenizi mi merak ediyorsunuz?
               </p>
               <HeroSearch />
+              {/* "{toplamSite}+ site/rezidans" 2026-08-08'e kadar düz metindi:
+                  iç link denetimi ana sayfanın <main> gövdesinden /siteler
+                  arşivine TEK bir link bile çıkmadığını gösterdi (yalnız menü
+                  ve footer). 730 sayfalık en büyük varlığımıza giden yol. */}
               <p className="mt-3 text-xs text-white/55">
-                {toplamSite}+ site/rezidans · {mahalleSayisi} mahalle arasından bulun · veya{" "}
+                <Link href="/siteler" className="font-semibold text-gold hover:underline">
+                  {toplamSite}+ site/rezidans
+                </Link>{" "}
+                · {mahalleSayisi} mahalle arasından bulun · veya{" "}
                 <Link href="/mahalleler" className="font-semibold text-gold hover:underline">
                   tüm mahalleleri keşfedin →
                 </Link>
@@ -252,7 +270,14 @@ export default function HomePage() {
             <Link href="/hakkimizda" className="font-semibold text-gold-dark hover:underline">
               ekibimizi tanıyın
             </Link>
-            . Eryaman emlak ofisi olarak{" "}
+            {/* "Eryaman emlakçı" tam dizisi gövde metninde de geçsin — denetimde
+                (2026-08-08) dizi yalnızca başlık/H1/footer çapasında vardı, hiçbir
+                paragrafta yoktu. TEK geçiş, doldurma değil: 6. sıradaki rakip bu
+                ifadeyi sayfasında hiç kullanmadan önümüzde — yoğunluk sıralama
+                faktörü değil. Cümle iyelik ekiyle kurulmuyor ("emlakçısı olarak"
+                doğru Türkçe ama tam dizi kırılır); "arayan ev sahipleri için"
+                kalıbı hem doğru Türkçe hem diziyi bozmadan taşıyor. */}
+            . Eryaman emlakçı arayan ev sahipleri için{" "}
             <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
               ev satış
             </Link>{" "}
@@ -293,7 +318,11 @@ export default function HomePage() {
                 {index < mahalleler.length - 2 ? ", " : index === mahalleler.length - 2 ? " ve " : ""}
               </span>
             ))}
-            . Bu mahallelerdeki {toplamSite}&apos;den fazla site ve rezidansı tek tek tanıyoruz.
+            .{" "}
+            <Link href="/siteler" className="font-medium text-navy hover:text-gold-dark hover:underline">
+              Bu mahallelerdeki {toplamSite}&apos;den fazla site ve rezidansı
+            </Link>{" "}
+            tek tek tanıyoruz.
           </p>
         </Reveal>
       </section>

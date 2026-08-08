@@ -16,28 +16,45 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = siteConfig.url;
   const yayindaMahalleler = getYayindaMahalleler();
 
+  /* STATİK SAYFA TARİHLERİ — elle bakımlı, kaynağı git geçmişi (2026-08-08).
+   *
+   * Neden elle: bu sayfalar JSX'te yaşıyor, içerik dosyasından türemiyor.
+   * mtime KULLANILAMAZ — her yayında sıfırlanıyor ve sitemap'teki 1500+ adresin
+   * neredeyse tamamına aynı build damgasını basıyor; Google bu gürültüyü
+   * yok sayıyor. Tarihi olmayan sayfa da "değişmedi" gibi okunuyordu: bu blok
+   * 08.08'e kadar `/` dışında hiçbir tarih taşımıyordu, dolayısıyla bir gün önce
+   * baştan yazılan /eryamanda-ev-satmak ve /eryamanda-ev-kiraya-vermek için bile
+   * Google'a hiçbir tazelik sinyali gitmiyordu.
+   *
+   * GÜNCELLEME: bir sayfayı elden geçirince buradaki tarihi de elle güncelle.
+   * Toplu tazeleme için:
+   *   git log -1 --format=%ad --date=short -- app/<yol>/page.tsx
+   *
+   * ANASAYFA ayrıca app/page.tsx VE app/layout.tsx'e bağlı — künye ya da gövde
+   * değişince tarihi mutlaka güncellenmeli (07.08'de unutuldu, sonuç: canlı
+   * ölçümde 08.08'de Google hâlâ 02.08 öncesi başlığı gösteriyordu ve
+   * `"Evinizi Satalım, Kiraya Verelim" site:siringayrimenkul.com` sorgusunda
+   * anasayfa hiç çıkmıyordu). */
+  const g = (tarih: string) => new Date(tarih);
   const statikSayfalar: MetadataRoute.Sitemap = [
-    // Anasayfa künyesi (title/description) 2026-08-06'da ev sahibi diline
-    // çevrildi; Google hâlâ eski künyeyi gösteriyor. Tarih, yeniden taramayı
-    // tetiklemek için; künye bir daha değişirse güncellenmeli.
-    { url: `${baseUrl}/`, lastModified: new Date("2026-08-06"), changeFrequency: "weekly", priority: 1 },
-    { url: `${baseUrl}/mahalleler`, changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/siteler`, changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/siteler/yenimahalle`, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/ev-degerleme`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-satmak`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/araclar`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/site-karsilastirma`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/eryaman-site-dokusu`, changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/sozluk`, changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/gizlilik`, changeFrequency: "yearly", priority: 0.3 },
-    { url: `${baseUrl}/blog`, changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/hakkimizda`, changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/mahalleler`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/siteler`, lastModified: g("2026-08-02"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/siteler/yenimahalle`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/araclar`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-07-23"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-07-30"), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/blog`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.7 },
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-07-29"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-07-25"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   const mahalleSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.map((mahalle) => ({

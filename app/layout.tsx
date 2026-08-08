@@ -33,10 +33,24 @@ export const metadata: Metadata = {
     // önümüzdeki üç yerel sitenin üçü de başlığına yalın "Eryaman Emlakçı"
     // dizisini koymuş (eryamanemlakci.com 3., premiumeryamanemlak.com 4.).
     // Eski başlık iyelik ekliydi ("Emlakçısı") — insanların yazdığı biçim değil.
-    // Harita kutusunda zaten 1.'yiz (5,0 / 379 yorum); bu değişiklik organik
+    // Harita kutusunda zaten 1.'yiz (5,0 / 380 yorum); bu değişiklik organik
     // listedeki açığı hedefliyor. Site geneli sayfa başlıkları da aynı yalın
     // biçimi kullanıyor (Özgün'ün hedef biçimi, 2026-07-31).
-    default: `Eryaman Emlakçı | ${siteConfig.name} — Evinizi Satalım, Kiraya Verelim`,
+    //
+    // MARKA ADI ÇIKARILDI (2026-08-08, Özgün'ün talebi). Üç gerekçe:
+    // (1) 07.08 sürümü ("Eryaman Emlakçı | Şirin Gayrimenkul — Evinizi Satalım,
+    //     Kiraya Verelim", 69 karakter) Google'a HİÇ girmedi — canlı ölçümde
+    //     SERP hâlâ 02.08 öncesi başlığı gösteriyor ve `"Evinizi Satalım,
+    //     Kiraya Verelim" site:siringayrimenkul.com` sorgusunda ana sayfa yok.
+    //     Yani bu düzenleme üst üste ikinci değişiklik değil, tek geçiş.
+    // (2) 69 karakter SERP'te kesiliyordu ve kesilen kısım tam da ticari mesajdı;
+    //     marka ortadan çıkınca 48 karaktere iniyor ve tamamı görünüyor
+    //     (mahalle sayfalarında ölçülen davranış — bkz. Yavuz Selim SERP'i).
+    // (3) Marka kaybı yok: H1 ("Eryaman Emlakçı — Şirin Gayrimenkul"), alan adı,
+    //     WebSite/Organization JSON-LD ve og:site_name marka adını taşıyor.
+    // Biçim kasıtlı olarak mahalle/site sayfalarıyla birebir aynı:
+    // "<varlık> Emlakçı | Evinizi Satalım, Kiraya Verelim".
+    default: "Eryaman Emlakçı | Evinizi Satalım, Kiraya Verelim",
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,

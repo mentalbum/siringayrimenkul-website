@@ -15,7 +15,14 @@ export function HeroSearch() {
   }
 
   return (
+    /* action/method/name JS'siz de çalışan gerçek bir GET formu kuruyor:
+       onSubmit preventDefault ettiği için tarayıcıda davranış değişmiyor, ama
+       JS çalıştırmadan bakan tarama botları artık kutunun /siteler arşivine
+       açıldığını görüyor (denetim 2026-08-08: ana sayfadan arşive giden tek yol
+       menüydü). */
     <form
+      action="/siteler"
+      method="get"
       onSubmit={submit}
       role="search"
       className="flex items-center gap-2 rounded-2xl bg-white p-2 shadow-lg shadow-black/20 ring-1 ring-black/5"
@@ -23,6 +30,7 @@ export function HeroSearch() {
       <SearchIcon className="pointer-events-none ml-2 h-5 w-5 shrink-0 text-muted" />
       <input
         type="search"
+        name="ara"
         value={sorgu}
         onChange={(event) => setSorgu(event.target.value)}
         placeholder="Sitenizi veya mahallenizi arayın…"
