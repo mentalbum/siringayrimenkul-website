@@ -43,8 +43,9 @@ Tunahan 4. Etap Çarşı — Yetki No: 0603771
 *(Bio bağlantısı: https://www.siringayrimenkul.com)*
 
 ## 3. Facebook sayfası — Hakkında metni
-> Sayfa adı önerisi: "Şirin Gayrimenkul — Eryaman Emlakçısı" (aramada ad
-> belirleyici). Kategori: Emlak Acentesi.
+> Sayfa adı önerisi: "Şirin Gayrimenkul — Eryaman Emlakçı" (aramada ad
+> belirleyici; biçim kararı gereği "emlakçısı" değil **emlakçı**).
+> Kategori: Emlak Acentesi.
 
 Eryaman emlakçısı Şirin Gayrimenkul. 14 mahallede 720'den fazla site ve
 rezidansın tapu ve blok bilgisini kayıt altında tutuyoruz — Eryaman'ın konut
@@ -68,12 +69,37 @@ uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 > Bing: bingplaces.com → "Google Business Profile'dan içe aktar" (tek tık).
 > Apple: businessconnect.apple.com → yeni işletme → telefon doğrulaması.
 > Açıklama alanına 1 no'lu GBP metnini yapıştırın.
+>
+> **Neden öncelikli (2026 araştırması):** ChatGPT'nin web araması Bing endeksi
+> üzerinden çalışıyor — doğrulanmış Bing Places kaydı, AI asistanlarında
+> görünmenin en kısa yolu. Apple tarafı Nisan 2026'da tek "Apple Business"
+> çatısında birleşti ve Siri/Spotlight cevaplarını besliyor.
+
+## 7. Foursquare — ChatGPT'nin yerel veri kaynağı
+> **Neden:** Foursquare Places, OpenAI'ın yerel veri ortağı; ChatGPT'nin
+> "Eryaman'da emlakçı" tipi sorulara verdiği işletme adlarının önemli kısmı
+> bu veri tabanından geliyor. Kayıt ücretsiz.
+> **Nasıl:** foursquare.com/venue/claim → işletmeyi ada+konuma göre ara →
+> yoksa yeni kayıt aç → telefon doğrulaması (aramayla). Ücretli hızlı
+> doğrulama seçeneği var, GEREKMEZ — normal doğrulamayı bekleyin.
+> **Kategori:** Real Estate / Real Estate Agency (Türkçe karşılığı çıkarsa Emlak).
+> Ad alanı: **Şirin Gayrimenkul** (rehber kaydı ama Foursquare adı harita
+> uygulamalarına yayılıyor — burada şirket adı yalın kalsın, bölge bilgisi
+> zaten adreste). NAP birebir ortak standarttaki gibi.
+
+Eryaman emlakçısı Şirin Gayrimenkul. Etimesgut ve Yenimahalle'nin 14
+mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok kaydını
+tutan yerel ofis. Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan
+uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
 ---
 
 ## Uygulama notları
-- Profil adlarında "Eryaman" kelimesi aramada en güçlü sinyal — mümkün olan
-  her platformda görünen ada ekleyin ("Şirin Gayrimenkul | Eryaman Emlakçısı").
+- Profil adlarında "Eryaman" kelimesi aramada en güçlü sinyal — REHBER/DİZİN
+  kayıtlarında görünen ada eklenir ("Şirin Gayrimenkul | Eryaman Emlakçı").
+- **İSTİSNA — ticari vitrinler (Özgün, 2026-08-08):** sahibinden mağaza adı ve
+  GBP adı DEĞİŞTİRİLMEZ; oralarda şirket adı yalın kalır. Ada kelime dizmenin
+  kazancı birkaç tık, riski 374 yorumluk tanınırlığın bağlı olduğu tek isim.
 - Yorum sayısı/puanı hiçbir bio'ya yazılmaz (rakip sabotaj riski — proje kuralı).
 - Sosyal profillerde İLAN paylaşımı yok; 3D tur gibi "bu bir ilan değil"
   çerçeveli içerikler serbest (onaylı şablon defterde).
