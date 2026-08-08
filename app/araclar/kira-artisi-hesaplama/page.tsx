@@ -141,12 +141,14 @@ export default function KiraArtisiPage() {
           <strong>12 aylık ortalamalara göre TÜFE değişim oranını</strong> esas alır. Güncel
           orana{" "}
           <a
-            href="https://data.tuik.gov.tr/Kategori/GetKategori?p=enflasyon-ve-fiyat-106"
+            /* data.tuik.gov.tr 302 ile buraya yönlendiriyor; TÜİK taşınmayı bitirince
+               eski konak kapanacağı için doğrudan nihai adres yazılı (2026-08-08). */
+            href="https://veriportali.tuik.gov.tr/Kategori/GetKategori?p=enflasyon-ve-fiyat-106"
             target="_blank"
             rel="noopener noreferrer"
             className="font-semibold text-gold-dark underline-offset-2 hover:underline"
           >
-            TÜİK&apos;in resmî TÜFE istatistik sayfasından (data.tuik.gov.tr)
+            TÜİK&apos;in resmî TÜFE istatistik sayfasından (veriportali.tuik.gov.tr)
           </a>{" "}
           ulaşabilirsiniz.
         </p>

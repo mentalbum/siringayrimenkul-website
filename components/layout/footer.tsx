@@ -49,11 +49,13 @@ export function Footer() {
         <div>
           {/* p + role="heading", h2 değil: footer başlıkları her sayfaya 4 jenerik
               H2 ekleyip sayfanın kendi başlık hiyerarşisini sulandırıyordu;
-              ARIA rolü ekran okuyucunun başlık gezinmesini koruyor (2026-08-08). */}
+              ARIA rolü ekran okuyucunun başlık gezinmesini koruyor (2026-08-08).
+              font-heading ELLE gerekli: globals.css marka fontunu yalnız h1..h6'ya
+              veriyor, p'ye vermiyor — sınıf düşerse başlıklar gövde fontuna kayar. */}
           <p
             role="heading"
             aria-level={2}
-            className="text-sm font-semibold uppercase tracking-wide text-gold"
+            className="font-heading text-sm font-semibold uppercase tracking-wide text-gold"
           >
             Hızlı Bağlantılar
           </p>
@@ -82,7 +84,7 @@ export function Footer() {
           <p
             role="heading"
             aria-level={2}
-            className="text-sm font-semibold uppercase tracking-wide text-gold"
+            className="font-heading text-sm font-semibold uppercase tracking-wide text-gold"
           >
             İletişim
           </p>
@@ -172,7 +174,7 @@ export function Footer() {
           <p
             role="heading"
             aria-level={2}
-            className="text-sm font-semibold uppercase tracking-wide text-gold"
+            className="font-heading text-sm font-semibold uppercase tracking-wide text-gold"
           >
             Eryaman Mahalleleri
           </p>
@@ -193,7 +195,7 @@ export function Footer() {
           <p
             role="heading"
             aria-level={2}
-            className="mt-6 text-sm font-semibold uppercase tracking-wide text-gold"
+            className="mt-6 font-heading text-sm font-semibold uppercase tracking-wide text-gold"
           >
             Yenimahalle Mahalleleri
           </p>

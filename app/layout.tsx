@@ -68,10 +68,13 @@ export const metadata: Metadata = {
   // the root layout would be inherited by every page, so shared links (e.g.
   // a site page on WhatsApp) would all preview with the same generic text.
   // Left unset, Next fills them from each page's own resolved title/description.
-  // images bilerek yok: dosya-tabanlı app/opengraph-image.tsx her koşulda bu
-  // konfigi eziyordu (canlıda doğrulandı, 2026-08-08) — buradaki ofis fotoğrafı
-  // hiç servis edilmeyen ölü ayardı. Kart görselini değiştirmek isteyen
-  // app/opengraph-image.tsx'i düzenlemeli.
+  // images bilerek yok. Next'in kuralı (resolve-metadata.js, mergeStaticMetadata):
+  // dosya-tabanlı opengraph-image YALNIZCA o segmentin metadata'sında
+  // openGraph.images YOKSA devreye girer. Yani burada images tanımlıysa kök
+  // segmentte O kazanır ve kendi opengraph-image.tsx'i olmayan tüm sayfalara
+  // (örn. /hakkimizda, /iletisim) miras kalırdı — ölü ayar değil, aktif ayardı.
+  // Kaldırıldığı için artık her sayfa kendi kartını üretiyor (2026-08-08).
+  // Kart görselini değiştirmek isteyen app/opengraph-image.tsx'i düzenlemeli.
   openGraph: {
     type: "website",
     locale: "tr_TR",
