@@ -240,6 +240,112 @@ export function getEtapByNo(mahalleSlug: string, etapNo: string): EtapEntry | un
   return getAllEtaplar(mahalleSlug).find((etap) => etap.no === etapNo);
 }
 
+export interface EtapOzet extends EtapEntry {
+  /** Etabın adalarını taşıyan mahalle — etap sayfasının URL'i buradan kurulur. */
+  mahalle: Mahalle;
+  /** Sınırı kadastro verisinden çizilebilen ada sayısı (≤ adalar.length). */
+  sinirliAdaSayisi: number;
+}
+
+/** Bütün yayında mahalleleri tarayıp onaylı etapları tek listede toplar.
+ *
+ * Etap sayfaları mahalle altında yaşıyor (`/mahalleler/<mahalle>/etaplar/<no>`)
+ * ama arama tarafında etap mahalleden bağımsız aranıyor ("eryaman 3. etap",
+ * "eryaman etapları", "eryaman etap haritası" — 2026-08-08 ölçümü,
+ * scratchpad-karne/arama-talebi). /etaplar hub'ı bu listeden kurulur.
+ *
+ * Ölçüldü (2026-08-08): her onaylı etabın adaları tek bir mahalleye düşüyor,
+ * yani bir etap iki URL üretmiyor. Yine de veri değişirse ilk mahalle kazanır
+ * ve daha fazla adası olan mahalle tercih edilir — sessiz bölünme olmasın. */
+export function getAllEtapOzetleri(): EtapOzet[] {
+  const enIyi = new Map<string, EtapOzet>();
+
+  for (const mahalle of getYayindaMahalleler()) {
+    for (const etap of getAllEtaplar(mahalle.slug)) {
+      const mevcut = enIyi.get(etap.no);
+      if (mevcut && mevcut.adalar.length >= etap.adalar.length) continue;
+      enIyi.set(etap.no, {
+        ...etap,
+        mahalle,
+        sinirliAdaSayisi: etapAdaHalkalari(etap.no).length,
+      });
+    }
+  }
+
+  return Array.from(enIyi.values()).sort((a, b) => Number(a.no) - Number(b.no));
+}
+
+interface AdaHalkasi {
+  /** "46518/1" — site sınır dosyasındaki ada/parsel etiketi. */
+  adaParsel: string;
+  ring: GeoJSON.Position[];
+}
+
+/** Bir etabın adalarına ait kadastro halkaları.
+ *
+ * Etabın "sınırı" diye tek bir poligon UYDURULMUYOR: adaların dış çeperini
+ * birleştirmek aradaki cadde, park ve okul parsellerini de etabın içine
+ * katardı. Onun yerine etap, kendi adalarının gerçek parsel poligonları
+ * kümesi olarak çiziliyor (kaynak: TKGM CBS, site sınır dosyaları).
+ *
+ * Aynı ada/parsel birden çok siteye ait olabilir (eski kooperatif payları) —
+ * bu yüzden halka listesi ada/parsel anahtarıyla tekilleştirilir. */
+function etapAdaHalkalari(etapNo: string): AdaHalkasi[] {
+  const gorulen = new Map<string, AdaHalkasi>();
+
+  for (const mahalle of getAllMahalleler()) {
+    for (const site of getSitelerByMahalle(mahalle.slug)) {
+      const boundary = getSiteBoundary(site);
+      if (!boundary) continue;
+      const adalar = (boundary.properties?.adalar as string[] | undefined) ?? [];
+      // Halka sırası properties.adalar ile hizalı — mahalle-map.tsx ile aynı kalıp.
+      const halkalar = geoJsonRings(boundary);
+      halkalar.forEach((ring, index) => {
+        const adaParsel = adalar[index];
+        if (!adaParsel) return;
+        const adaNo = adaParsel.split("/")[0];
+        if (adaOnayliEtap(adaNo) !== etapNo) return;
+        const key = `${mahalle.slug}:${adaParsel}`;
+        if (!gorulen.has(key)) gorulen.set(key, { adaParsel, ring });
+      });
+    }
+  }
+
+  return Array.from(gorulen.values());
+}
+
+/** GeoJSON Polygon/MultiPolygon → düz halka listesi (ham [lng,lat] hâliyle).
+ * lib/geo.ts'teki geoJsonPolygonToPaths ile aynı düzleştirme sırası; burada
+ * Koordinat nesnesine çevrilmiyor çünkü çıktı yeniden GeoJSON'a yazılıyor. */
+function geoJsonRings(feature: GeoJSON.Feature): GeoJSON.Position[][] {
+  const geometry = feature.geometry;
+  if (geometry.type === "Polygon") return geometry.coordinates;
+  if (geometry.type === "MultiPolygon") return geometry.coordinates.flat();
+  return [];
+}
+
+/** Etabın kadastro poligonları — haritaya verilecek MultiPolygon.
+ * Sınırı çizilebilen adası yoksa undefined döner (harita o etabı hiç
+ * göstermez; uydurma çerçeve çizilmez). */
+export function getEtapBoundary(etapNo: string): GeoJSON.Feature | undefined {
+  const halkalar = etapAdaHalkalari(etapNo);
+  if (halkalar.length === 0) return undefined;
+
+  return {
+    type: "Feature",
+    properties: {
+      etap: etapNo,
+      adalar: halkalar.map((halka) => halka.adaParsel),
+      kaynak:
+        "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+    },
+    geometry: {
+      type: "MultiPolygon",
+      coordinates: halkalar.map((halka) => [halka.ring]),
+    },
+  };
+}
+
 export function getAllBlogPosts(): BlogPost[] {
   if (!fs.existsSync(BLOG_DIR)) return [];
   const files = fs.readdirSync(BLOG_DIR).filter((file) => file.endsWith(".mdx"));

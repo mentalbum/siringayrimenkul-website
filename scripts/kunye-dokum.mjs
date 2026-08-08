@@ -23,6 +23,12 @@ for (const mahalle of readdirSync(KOK)) {
     if (k.blokSayisi !== undefined) say("blok");
     if (k.katMax !== undefined) say("kat");
     if (k.konutSayisi !== undefined) say("konut");
+    if (k.odaTipleri.length > 0) {
+      say("odaTipi");
+      // Tip başına kayıt sayısı: /eryaman-site-dokusu'ndaki görünür sayılar
+      // buradan doğrulanır, elle yazılmaz.
+      for (const t of k.odaTipleri) say(`odaTipi:${t}`);
+    }
     if (cumle) say("cumle");
     say("toplam");
     satirlar.push({ mahalle, slug: site.slug, ...k, cumle });

@@ -68,6 +68,21 @@ export default function SiteDokusuPage() {
     .filter((m) => m.adet > 0)
     .sort((a, b) => b.adet - a.adet);
 
+  /* Daire tipi dokusu. Raporun geri kalanı TAPU verisine dayanır; daire tipi
+   * dayanmaz — tapu kaydı daire tipi taşımaz. Bu yüzden aşağıdaki bölüm kendi
+   * kaynak uyarısını taşır ve tapu bölümleriyle aynı kesinlikte sunulmaz.
+   * Sayılar elle yazılmaz; hepsi kunye çıkarımından hesaplanır. */
+  const odaTipliKayitlar = kayitlar.filter((k) => k.kunye.odaTipleri.length > 0);
+  const odaTipSayaci = new Map<string, number>();
+  for (const k of odaTipliKayitlar) {
+    for (const tip of k.kunye.odaTipleri) odaTipSayaci.set(tip, (odaTipSayaci.get(tip) ?? 0) + 1);
+  }
+  const odaTipSatirlari = [...odaTipSayaci.entries()].sort((a, b) => b[1] - a[1]);
+  // Kaydında tek daire tipi anılan siteler: bölgenin "tek tipli blok" dokusunu
+  // gösterir. "O sitede yalnız bu tip var" İDDİASI DEĞİL — kayıtta tek tip
+  // anılmış demektir; ayrım cümlede açıkça yazılı.
+  const tekTipAnilan = odaTipliKayitlar.filter((k) => k.kunye.odaTipleri.length === 1).length;
+
   const datasetJsonLd = {
     "@context": "https://schema.org",
     "@type": "Dataset",
@@ -140,6 +155,59 @@ export default function SiteDokusuPage() {
           })}
         </div>
       </section>
+
+      {odaTipSatirlari.length > 0 && (
+        <section className="mt-10">
+          <h2 className="text-xl">Daire tipi dokusu</h2>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
+            <strong>Daire tipi tapu kaydında yer almaz.</strong> Bu bölümdeki sayılar ilan
+            kayıtları, yerel künyeler ve geliştirici tanıtımlarından derlenmiştir; resmî bir
+            envanter değildir ve raporun tapu bölümleriyle aynı kesinlikte okunmamalıdır.
+          </p>
+          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
+            {S.format(toplam)} kaydın <strong>{S.format(odaTipliKayitlar.length)} tanesinde</strong>{" "}
+            daire tipi yazılı; kalan kayıtlarda bu bilgi hiç geçmiyor. Kural tek cümleyle şu: bir
+            sitenin kaydında 3+1 geçiyorsa o sitede 3+1 daire bulunduğunu biliyoruz; geçmiyorsa
+            bilmiyoruz — yok demiyoruz. Daire tipi yazılı kayıtların{" "}
+            {S.format(tekTipAnilan)} tanesinde tek bir tip anılıyor (bu, o sitede yalnız o tipin
+            bulunduğu anlamına gelmez; kayıtta tek tip anıldığını gösterir).
+          </p>
+          <div className="mt-4 overflow-x-auto rounded-2xl border border-border">
+            <table className="w-full min-w-[420px] border-collapse bg-surface text-sm">
+              <thead>
+                <tr className="border-b border-border bg-surface-muted text-left">
+                  <th className="px-4 py-3 font-semibold text-muted">Daire tipi</th>
+                  <th className="px-4 py-3 text-right font-semibold text-muted">
+                    Kayıtta anıldığı site
+                  </th>
+                  <th className="px-4 py-3 text-right font-semibold text-muted">
+                    Daire tipi yazılı kayıtların payı
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {odaTipSatirlari.map(([tip, adet]) => (
+                  <tr key={tip} className="border-b border-border last:border-b-0">
+                    <td className="px-4 py-2.5 font-semibold text-navy">{tip}</td>
+                    <td className="px-4 py-2.5 text-right text-body">{S.format(adet)}</td>
+                    <td className="px-4 py-2.5 text-right text-body">
+                      %{S.format((adet / odaTipliKayitlar.length) * 100)}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="mt-3 max-w-3xl text-xs leading-relaxed text-muted">
+            Bir kayıt birden çok daire tipi anabildiği için yüzdeler toplamı 100&apos;ü aşar.
+            &ldquo;1+1&apos;den 5+1&apos;e uzanan&rdquo; gibi aralık ifadelerinde ara tipler
+            metinde yazılı olmadığı için sayıma girmez — aralıktan tip türetmiyoruz.{" "}
+            <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
+              Site listesinde daire tipine göre süzebilirsiniz.
+            </Link>
+          </p>
+        </section>
+      )}
 
       <section className="mt-10">
         <h2 className="text-xl">Mahalle dağılımı</h2>

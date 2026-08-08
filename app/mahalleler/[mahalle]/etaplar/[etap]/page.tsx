@@ -5,6 +5,7 @@ import {
   adaDisplayLabel,
   adaRouteKey,
   getAllEtaplar,
+  getAllEtapOzetleri,
   getAllMahalleler,
   getEtapByNo,
   getMahalleBySlug,
@@ -51,7 +52,12 @@ export default async function EtapPage({ params }: Props) {
   const etap = getEtapByNo(mahalleSlug, etapNo);
   if (!mahalle || !etap) notFound();
 
-  const digerEtaplar = getAllEtaplar(mahalleSlug).filter((item) => item.no !== etap.no);
+  // Etaplar arası bağ MAHALLE sınırında kesilmemeli: her onaylı etap tek bir
+  // mahalleye düştüğü için mahalle içi liste 1., 2. ve 3. Etap sayfalarında
+  // tamamen boş kalıyordu (yalnız 4. ve 5. Etap aynı mahallede). Beş etabın
+  // tamamını listelemek hem kullanıcının aradığı şey ("eryaman etapları")
+  // hem de bu sayfaların taranmasına yardım eden iç bağ.
+  const digerEtaplar = getAllEtapOzetleri().filter((item) => item.no !== etap.no);
   // Resmî ada listesi kayıtlarımızdan genişse bunu açıkça söylüyoruz; "22 ada
   // bulunuyor" demek 45 adalık etapta yanlış sayı iddiası olurdu.
   const tamKapsama = etap.adalar.length === etap.resmiAdaSayisi;
@@ -176,17 +182,24 @@ export default async function EtapPage({ params }: Props) {
 
       {digerEtaplar.length > 0 && (
         <section className="mt-14">
-          <h2 className="text-xl">{mahalle.isim}&apos;ndeki Diğer Etaplar</h2>
+          <h2 className="text-xl">Eryaman&apos;ın Diğer Etapları</h2>
           <div className="mt-5 flex flex-wrap gap-3">
             {digerEtaplar.map((item) => (
               <Link
                 key={item.no}
-                href={`/mahalleler/${mahalle.slug}/etaplar/${item.no}`}
+                href={`/mahalleler/${item.mahalle.slug}/etaplar/${item.no}`}
+                title={item.mahalle.isim}
                 className="cursor-pointer rounded-2xl border border-border bg-surface px-5 py-3 text-sm font-semibold text-navy transition-colors hover:border-gold hover:text-gold-dark"
               >
                 {item.no}. Etap
               </Link>
             ))}
+            <Link
+              href="/etaplar"
+              className="cursor-pointer rounded-2xl border border-gold bg-surface px-5 py-3 text-sm font-semibold text-gold-dark transition-colors hover:bg-gold/10"
+            >
+              Etap haritası →
+            </Link>
           </div>
         </section>
       )}

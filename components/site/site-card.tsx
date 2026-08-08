@@ -8,6 +8,8 @@ interface SiteKartVerisi {
   slug: string;
   mahalleSlug: string;
   aciklama: string;
+  /** Kayıt metninde yazılı daire tipleri; yoksa rozet hiç çizilmez. */
+  odaTipleri?: string[];
 }
 
 export function SiteCard({ site }: { site: SiteKartVerisi }) {
@@ -21,6 +23,12 @@ export function SiteCard({ site }: { site: SiteKartVerisi }) {
         <h3 className="text-base leading-snug">{site.isim}</h3>
       </div>
       <p className="line-clamp-3 text-sm leading-relaxed text-body">{site.aciklama}</p>
+      {site.odaTipleri && site.odaTipleri.length > 0 && (
+        // "Kayıtta:" öneki düşürülemez: çıplak "2+1" doğrulanmış bir öznitelik
+        // gibi okunur, oysa liste açık küme — kayıtta yazan tipleri gösterir,
+        // sitenin tüm tiplerini değil.
+        <span className="text-xs text-muted">Kayıtta: {site.odaTipleri.join(", ")}</span>
+      )}
       <span className="mt-1 inline-flex items-center gap-1 text-sm font-semibold text-navy transition-colors duration-200 group-hover:text-gold-dark">
         Detayları Gör
         <ArrowRightIcon className="h-4 w-4 transition-transform duration-300 ease-out group-hover:translate-x-1" />

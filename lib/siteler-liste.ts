@@ -1,5 +1,6 @@
 import type { Mahalle, Site } from "@/lib/types";
 import type { SiteOzet } from "@/components/site/siteler-browser";
+import { cikarKunye } from "@/lib/kunye";
 
 const OZET_UZUNLUK = 170;
 
@@ -10,13 +11,22 @@ function ozetle(s: string): string {
 }
 
 export function inceltSiteler(siteler: Site[]): SiteOzet[] {
-  return siteler.map((site) => ({
-    isim: site.isim,
-    slug: site.slug,
-    mahalleSlug: site.mahalleSlug,
-    aciklama: ozetle(site.aciklama),
-    alternatifAdlar: site.alternatifAdlar,
-  }));
+  return siteler.map((site) => {
+    // Daire tipi kayıt metninden TÜRETİLİR, JSON'da alan olarak durmaz: 227
+    // içerik dosyasına alan yazmak `npm run lastmod`'u o dosyalara bugünün
+    // damgasını basmaya zorlar ve AGENTS.md'nin uyardığı "topluca tazelenmiş
+    // lastmod" durumunu, tazelik sinyali yeni onarılmışken geri getirir.
+    const odaTipleri = cikarKunye(site).odaTipleri;
+    return {
+      isim: site.isim,
+      slug: site.slug,
+      mahalleSlug: site.mahalleSlug,
+      aciklama: ozetle(site.aciklama),
+      alternatifAdlar: site.alternatifAdlar,
+      // Boşsa hiç taşınmaz — payload'a 723 boş dizi eklemek anlamsız.
+      ...(odaTipleri.length > 0 ? { odaTipleri } : {}),
+    };
+  });
 }
 
 export function inceltGruplar(

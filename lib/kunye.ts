@@ -46,6 +46,18 @@ export interface Kunye {
   yapiTipi: "villa/dubleks" | "rezidans" | "apartman/blok";
   /** Metinde adı geçen donatılar (yalnızca whitelist; yokluk kanıt değildir). */
   donatilar: string[];
+  /** Kayıt metninde YAZILI daire tipleri ("2+1", "1+0", "2,5+1"), küçükten
+   * büyüğe. HER ZAMAN dizi — boş dizi "bu sitede o tip yok" DEĞİL, "kayıtta
+   * daire tipi yazmıyor" demektir. 723 kaydın 227'sinde bu bilgi var.
+   *
+   * Liste AÇIK kümedir: "3+1 geçiyorsa 3+1 var" bilinir, geçmiyorsa
+   * bilinmez — yok denmez. Bu yüzden görünür yüzeyde çıplak "2+1" yazılmaz,
+   * "Kayıtta: 2+1" önekiyle sunulur (bkz. site-card.tsx rozeti).
+   *
+   * Kasıtlı yanlış negatif: "1+1'den 5+1'e uzanan" gibi ARALIK ifadesi geçen
+   * 11 kayıtta ara tipler metinde yazılı olmadığı için türetilmez — aralıktan
+   * tip sentezlemek "hiçbir alan tahmin edilmez" kuralını bozardı. */
+  odaTipleri: string[];
 }
 
 /** "on birer katlı", "ikişer" gibi üleştirme ve yazı sayıları rakama çevirmek
@@ -106,6 +118,63 @@ const KONUT_ISTISNA = /mesken|konut|apartman|daire|niteli/;
  * ("birlikte 25 bloğa ulaşan İlkiz kümesi" = iki sitenin toplamı). */
 const KOMSU_IZI = /komşu|paylaş|bitişiğ|yanındaki|karşısındaki|yanı başındaki|birlikte|küme/;
 
+/** KOMSU_IZI'nin DARALTILMIŞ biçimi: "birlikte" ve "küme" kolları düşürülür.
+ * Bu iki sözcük düzyazıda komşu toplamına işaret eder ama madde satırlarında
+ * masum bağlaçtır ("toplamı 362 daire, 2 etap birlikte"; "ikisi birlikte 54
+ * daire eder. Aynı kayıtlar daireleri 3+1 ... olarak tarif eder" —
+ * vatan-sitesi). Oda tipi taramasında ve ozellikler[] maddelerinde kullanılır;
+ * oda tipinde bu desenle düşen tek kayıt gerçekten komşunun verisini taşıyor
+ * ("aynı adayı ... ağırlıklı 1+1 planlı Koz Modern ile paylaşır" —
+ * garden-zirve). */
+const KOMSU_IZI_DAR = /komşu|paylaş|bitişiğ|yanındaki|karşısındaki|yanı başındaki/;
+
+/** "3 komşu adada 12 blok" komşunun verisi DEĞİL, sitenin kendi yayılımıdır —
+ * bulunma hâli (-da/-de) bunu ayırt eder. Araç hâli ("8 blok — komşu adayla
+ * birlikte", ata/dilara-sitesi) komşuyu sayıya KATAR; o bastırılır. */
+const KENDI_YAYILIMI = /komşu (?:ada|parsel)(?:ler)?(?:d[ae]|sind[ae])/;
+
+/** Metin kipi — komşu korumasının hangi biçimde uygulanacağını seçer.
+ * "duzyazi": aciklama · "madde": ozellikler satırları.
+ *
+ * Maddelerde koruma ŞART: satırlar öz-yazımlı olsa da komşuyu anabiliyor
+ * ("Yerleşim adasını 18 katlı komşu Lilyum Sitesi ile paylaşır" — Palas
+ * Eryaman bu yüzden "18-23 katlı" yayınlamıştı). */
+type Kip = "duzyazi" | "madde";
+
+/** Madde ("|" ile ayrılmış ozellikler satırı) sınırında kırpılmış pencere.
+ * Ölçüm (2026-08-08, 723 kayıt): kırpma olmadan komşu koruması 22 kayıtta
+ * KENDİ verisini düşürüyordu — komşu sözcüğü YAN maddede duruyor ("7 blok
+ * (tapu) | Polsan 1 kümesi", "4 blok (1, 1a, 1b, 1c) | paylaşımlı büyük ada"). */
+function maddePenceresi(metin: string, bas: number, son: number, gen = 45): string {
+  const sagBar = metin.indexOf("|", son);
+  return metin.slice(
+    Math.max(0, bas - gen, metin.lastIndexOf("|", bas) + 1),
+    Math.min(metin.length, son + gen, sagBar === -1 ? metin.length : sagBar)
+  );
+}
+
+function komsuIzliMi(metin: string, bas: number, son: number, kip: Kip): boolean {
+  if (kip === "duzyazi") return KOMSU_IZI.test(pencere(metin, bas, son));
+  const madde = maddePenceresi(metin, bas, son);
+  return KOMSU_IZI_DAR.test(madde) && !KENDI_YAYILIMI.test(madde);
+}
+
+/* Daire tipi ("2+1", "1+0", "2,5+1"). Ölçüm (2026-08-08, 723 kayıt): ayırıcı
+ * HER YERDE ASCII '+', ondalık ayırıcı VİRGÜL; boşluklu "2 + 1", tam genişlikli
+ * "2＋1" ve nokta ondalıklı "2.5+1" biçimleri hiç yok. Bu yüzden tek desen yeter.
+ *
+ * İkinci terimin [01] ile sınırlanması blok/parsel sayımı yanlış pozitiflerini
+ * kendiliğinden eliyor ("6+5+5+3 blok", "iki parselde 6+6"): ölçüldü, ayrıca bir
+ * "\d\+\d blok" negatif filtresi yazmak GEREKMİYOR — üstelik o filtre
+ * tunahan/klima-bloklari.json'daki meşru "3+1 blokları" kaydını düşürüyordu. */
+const ODA_TIPI = /(?<![\d,])(\d)(,5)?\+([01])(?![\d])/g;
+
+/** "2,5+1" → 2.5 · "1+0" → 1 — daire tiplerini küçükten büyüğe dizmek için. */
+function odaTipiSira(tip: string): number {
+  const [oda, salon] = tip.split("+");
+  return Number.parseFloat(oda.replace(",", ".")) * 10 + Number.parseInt(salon, 10);
+}
+
 const DONATI_KALIPLARI: Array<[RegExp, string]> = [
   [/kapalı otopark/, "kapalı otopark"],
   [/açık otopark|\botopark\b/, "otopark"],
@@ -131,7 +200,7 @@ interface KatSonuc {
   filtrelendi: boolean;
 }
 
-function katlariCikar(metin: string, komsuKorumasi: boolean): KatSonuc {
+function katlariCikar(metin: string, kip: Kip): KatSonuc {
   const katlar: number[] = [];
   let filtrelendi = false;
   // "22-25 kat arası" / "22 ile 25 kat arasında" kalıpları.
@@ -151,7 +220,7 @@ function katlariCikar(metin: string, komsuKorumasi: boolean): KatSonuc {
       filtrelendi = true;
       continue;
     }
-    if (komsuKorumasi && KOMSU_IZI.test(pencere(metin, m.index!, son))) continue;
+    if (komsuIzliMi(metin, m.index!, son, kip)) continue;
     for (const grup of [m[1], m[2]]) {
       if (!grup) continue;
       const deger = Number.parseInt(grup, 10);
@@ -220,19 +289,19 @@ function niteliktenBlok(nitelik: string): number | undefined {
   return adaylar.size === 1 ? [...adaylar][0] : undefined;
 }
 
-function blokDegerleri(metin: string, komsuKorumasi: boolean): number[] {
+function blokDegerleri(metin: string, kip: Kip): number[] {
   const degerler: number[] = [];
   // Lookbehind: "B-5A ve C-5 blokları" gibi blok ADLARINDAKİ rakamlar blok
   // sayısı değildir (çürütme turu: Çağlar Sitesi 3 blokken 5 sayılmıştı).
   for (const m of metin.matchAll(/(?<![-\p{L}\d])(\d+)\s*(?:konut\s+)?blo[kğ]/gu)) {
-    if (komsuKorumasi && KOMSU_IZI.test(pencere(metin, m.index!, m.index! + m[0].length))) continue;
+    if (komsuIzliMi(metin, m.index!, m.index! + m[0].length, kip)) continue;
     const deger = Number.parseInt(m[1], 10);
     if (deger >= 1 && deger <= 60) degerler.push(deger);
   }
   return degerler;
 }
 
-function konutCikar(metin: string, komsuKorumasi: boolean): number | undefined {
+function konutCikar(metin: string, kip: Kip): number | undefined {
   let konutSayisi: number | undefined;
   for (const m of metin.matchAll(/([\d.]+)\s*(?:daire|konut|bağımsız bölüm|mesken|dubleks|villa)/g)) {
     const onek = metin.slice(Math.max(0, m.index! - 60), m.index!);
@@ -244,7 +313,7 @@ function konutCikar(metin: string, komsuKorumasi: boolean): number | undefined {
     const kuyruk = metin.slice(m.index! + m[0].length, m.index! + m[0].length + 24);
     if (/^\s*blo[kğ]/.test(kuyruk)) continue;
     if (/kapasite|planlan|tasarlan|hedeflen|etap/.test(kuyruk)) continue;
-    if (komsuKorumasi && KOMSU_IZI.test(pencere(metin, m.index!, m.index! + m[0].length))) continue;
+    if (komsuIzliMi(metin, m.index!, m.index! + m[0].length, kip)) continue;
     const deger = sayiCoz(m[1]);
     if (!Number.isFinite(deger) || deger < 4 || deger > 3000) continue;
     if (konutSayisi === undefined || deger > konutSayisi) konutSayisi = deger;
@@ -319,16 +388,30 @@ export function cikarKunye(site: Site): Kunye {
     if (toplam >= 500) parselAlaniM2 = toplam;
   }
 
-  // --- tapu niteliği
-  const km = tum.includes("kat mülkiyet");
-  const ki = tum.includes("kat irtifak");
+  // --- tapu niteliği. İbarenin geçmesi PARSELİN durumunu anlatmaya yetmez;
+  // iki bağlam tespit sayılmaz ve tarama öncesi metinden düşürülür:
+  //  - kanun adı ("634 sayılı Kat Mülkiyeti Kanunu'nun toplu yapı rejimi")
+  //    yönetim planından söz eder. Gerçek vaka: tapuda "Arsa" yazan tek
+  //    parselli Tekirdağ Park Evleri "kısmen kat mülkiyetli parsellerde"
+  //    yayınlanıyordu — yasa adından tapu durumu üretiliyordu.
+  //  - sözlük çapası ("kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı
+  //    maddesinde anlattık") tanıma bağlantıdır; iki kat irtifaklı kayıt
+  //    (sumeyra, altintepe) bu yüzden "kısmen kat mülkiyetli" görünüyordu.
+  // Daraltma bundan öteye GİTMEZ: kalan her geçiş tapu ifadesi sayılır, aksi
+  // hâlde 528 "Kat mülkiyetli parsel (TKGM)" satırı riske girer.
+  const tapuMetni = tum
+    .replace(/kat mülkiyeti (?:kanun|yasas)\p{L}*/gu, " ")
+    .replace(/kat mülkiyetinden fark\p{L}*/gu, " ")
+    .replace(/kat irtifakı maddesin\p{L}*/gu, " ");
+  const km = tapuMetni.includes("kat mülkiyet");
+  const ki = tapuMetni.includes("kat irtifak");
   const tapuNiteligi = km && ki ? ("kat mülkiyeti + kat irtifakı" as const) : km ? ("kat mülkiyeti" as const) : ki ? ("kat irtifakı" as const) : undefined;
 
   // --- blok: iki metinden en büyük değer (tapu toplamı pazarlama alt
   // kümesinden büyüktür). Çok adalı sitede tek adanın sayısı bütün sanılmasın:
   // "toplam N blok" yoksa ve site 2+ adaya yayılıyorsa blok yazılmaz.
   const toplamBlok = tum.match(/toplam (\d+) blo[kğ]/);
-  const blokAdaylari = [...blokDegerleri(oz, false), ...blokDegerleri(ac, true)];
+  const blokAdaylari = [...blokDegerleri(oz, "madde"), ...blokDegerleri(ac, "duzyazi")];
   let blokSayisi: number | undefined = toplamBlok
     ? Number.parseInt(toplamBlok[1], 10)
     : blokAdaylari.length
@@ -342,8 +425,8 @@ export function cikarKunye(site: Site): Kunye {
     blokSayisi = niteliktenBlok(site.adalar[0].nitelik);
   }
 
-  const ozKat = katlariCikar(oz, false);
-  const acKat = katlariCikar(ac, true);
+  const ozKat = katlariCikar(oz, "madde");
+  const acKat = katlariCikar(ac, "duzyazi");
   const katlar = [...ozKat.katlar, ...acKat.katlar];
   let katFiltrelendi = ozKat.filtrelendi || acKat.filtrelendi;
   // Metin kat bilgisi vermiyorsa TKGM tapu niteliğine düşülür (adalar[].nitelik).
@@ -360,8 +443,8 @@ export function cikarKunye(site: Site): Kunye {
   const katMin = katlar.length ? Math.min(...katlar) : undefined;
   const katMax = katlar.length ? Math.max(...katlar) : undefined;
 
-  const ozKonut = konutCikar(oz, false);
-  const acKonut = konutCikar(ac, true);
+  const ozKonut = konutCikar(oz, "madde");
+  const acKonut = konutCikar(ac, "duzyazi");
   const konutSayisi =
     ozKonut !== undefined && acKonut !== undefined
       ? Math.max(ozKonut, acKonut)
@@ -394,7 +477,17 @@ export function cikarKunye(site: Site): Kunye {
     if (kalip.test(tum) && !donatilar.includes(ad)) donatilar.push(ad);
   }
 
-  return { parselAlaniM2, tapuNiteligi, blokSayisi, katMin, katMax, katFiltrelendi, konutSayisi, yapiTipi, donatilar };
+  // --- daire tipleri. Komşu penceresi parsel alanındakiyle aynı genişlikte
+  // (±60) ama daraltılmış desenle; bir tip yalnız komşu izli bağlamda geçiyorsa
+  // hiç yazılmaz (o tip komşu sitenin verisidir).
+  const odaTipiSet = new Set<string>();
+  for (const m of tum.matchAll(ODA_TIPI)) {
+    if (KOMSU_IZI_DAR.test(pencere(tum, m.index!, m.index! + m[0].length, 60))) continue;
+    odaTipiSet.add(`${m[1]}${m[2] ?? ""}+${m[3]}`);
+  }
+  const odaTipleri = [...odaTipiSet].sort((a, b) => odaTipiSira(a) - odaTipiSira(b));
+
+  return { parselAlaniM2, tapuNiteligi, blokSayisi, katMin, katMax, katFiltrelendi, konutSayisi, yapiTipi, donatilar, odaTipleri };
 }
 
 /** Kat gösterimi. Düşük alt değerler çoğunlukla ticari/yardımcı bloktur
@@ -481,6 +574,8 @@ export interface KunyeSatiri {
   konut?: number;
   tip: Kunye["yapiTipi"];
   donatilar: string[];
+  /** Boş dizi = kayıtta daire tipi yazmıyor (o tipin yokluğu DEĞİL). */
+  odaTipleri: string[];
 }
 
 export function kunyeSatiri(site: Site, mahalleIsim: string): KunyeSatiri {
@@ -499,5 +594,6 @@ export function kunyeSatiri(site: Site, mahalleIsim: string): KunyeSatiri {
     konut: k.konutSayisi,
     tip: k.yapiTipi,
     donatilar: k.donatilar,
+    odaTipleri: k.odaTipleri,
   };
 }

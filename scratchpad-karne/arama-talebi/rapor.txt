@@ -1,0 +1,414 @@
+# 2510 kök sorgu tarandı → 3783 tekil Eryaman/çevre sorgusu
+
+# Tohum köklerden gelen saf öneri: 556
+
+==========================================================================================
+A) SAF SIRA — Google'ın tohum sorgularda en üste koyduğu aramalar
+   (poz=0 → Google'ın o kök için 1. önerisi; en güvenilir popülerlik sinyali)
+==========================================================================================
+  #   skor  poz   rel  sorgu
+  1   5.89    0  1252  eryaman kiralık daire 2+1
+  2   5.88    0  1250  eryaman satılık daire sahibinden
+  3   5.85    0   601  eryaman emlakçılar listesi
+  4   4.39    0   601  eryaman emlakçı listesi
+  5   4.39    0   601  eryaman ev fiyatı
+  6   3.93    0  1256  eryaman kiralık daire
+  7   3.93    0  1252  etimesgut emlakçılar
+  8   3.92    0  1250  eryaman emlakçı gayrimenkul kılıç gayrimenkul yorumlar
+  9   3.92    0  1251  eryaman satılık ev ankara
+ 10   3.92    0  1250  eryaman satılık villa arsası
+ 11    3.0    0   650  ankara eryaman satılık dükkan
+ 12   2.94    1  1250  eryaman kiralık daire 3+1
+ 13   2.92    0   601  eryaman ev satın al
+ 14   2.92    0   601  eryamandan ev alınır mı
+ 15   2.31    1   700  eryaman satılık daire fiyatları
+ 16   1.97    0  1256  eryaman evleri satılık
+ 17   1.97    0  1264  eryaman en iyi devlet ortaokulları
+ 18   1.97    0  1257  eryaman 4. etap çarşı
+ 19   1.97    0  1256  eryaman siteleri
+ 20   1.97    0  1255  yeni batı satılık daire
+ 21   1.96    0  1251  eryaman emlakçı
+ 22   1.96    0  1254  eryaman satılık daire
+ 23   1.96    1  1254  eryaman kiralık ev
+ 24   1.96    1  1250  eryaman satılık ev fiyatları
+ 25   1.96    0  1250  eryaman kiralık ev ankara
+ 26   1.96    0  1250  eryaman daire fiyatları
+ 27   1.96    0  1252  eryaman rezidans kiralık
+ 28   1.96    0  1254  eryaman etap taksi
+ 29   1.96    0  1251  eryaman 1. etap satılık daire
+ 30   1.96    0  1252  eryaman 2. etap sahibinden kiralık daire
+ 31   1.96    0  1254  eryaman 3. etap taksi
+ 32   1.96    0  1253  eryaman 5. etap kiralık daire
+ 33   1.96    0  1252  eryaman konut taksi
+ 34   1.96    0  1254  etimesgut emlak vergisi
+ 35   1.96    0  1250  etimesgut kiralık daire sahibinden
+ 36   1.96    0  1254  yeni batı kiralık daire
+ 37   1.96    0  1252  ankara eryaman satılık daire
+ 38   1.96    0  1250  ankara eryaman kiralık daire
+ 39   1.96    0  1253  susuz mahallesi satılık daire
+ 40   1.92    1  1200  ankara eryaman kiralık dükkan
+ 41   1.58    2   750  eryaman kiralık daire 1+1
+ 42   1.46    1   600  eryaman da emlakçılar
+ 43   1.46    1   600  eryaman emlakçılar
+ 44   1.46    0   601  eryaman gayrimenkul şikayet
+ 45   1.46    1   601  eryaman kiralık ev fiyatları
+ 46   1.46    0   601  eryaman ev fiyatları kiralık
+ 47   1.46    0   601  eryaman kiralık daire fiyatları
+ 48   1.46    0   601  eryaman kiralık dükkan sahibinden
+ 49   1.46    0   601  eryaman susuz satılık arsa
+ 50   1.46    0   601  eryaman kiralik is yeri
+ 51   1.46    0   601  eryaman oturma planı
+ 52   1.46    0   601  eryamanda yaşamak
+ 53   1.46    0   601  eryaman susuz nasıl bir yer
+ 54   1.46    0   601  eryaman 5 etap hangi mahalle
+ 55   1.46    0   601  eryaman 6 etap satılık daireler
+ 56   1.46    0   601  eryaman 7 etap fotoğraflar
+ 57   1.46    0   601  ankara eryaman siteleri
+ 58   1.46    0   601  eryaman kaç metrekare
+ 59   1.46    0   601  eryaman dere
+ 60   1.46    0   601  eryaman tapu müdürlüğü
+ 61   1.46    0   601  eryaman 1 etap kentsel dönüşüm
+ 62   1.46    0   601  etimesgut satılık daire 30 ağustos
+ 63   1.46    0   601  yeni batı emlakçı
+ 64   1.46    0   601  eryaman ankara ev fiyatları
+ 65   1.46    0   601  eryaman evleri emlak ofisi
+ 66   1.46    0   601  eryaman emlak iş ilanları
+ 67   1.46    0   601  eryaman korniş
+ 68   1.31    2  1253  eryaman kiralık dükkan
+ 69   1.31    2  1254  eryaman evleri satılık daire
+ 70   1.31    2  1252  eryaman etap haritası
+
+
+==========================================================================================
+A2) ELİT — Google relevance >= 1250 VE ilk 3 öneride (en yüksek güven)
+==========================================================================================
+   219 sorgu
+
+  ## EMLAKÇI / OFİS arayan  (6)
+     poz0 rel1252  etimesgut emlakçılar
+     poz0 rel1251  eryaman en iyi emlakçı
+     poz0 rel1251  eryaman emlakçı
+     poz0 rel1251  etimesgut emlak ofisi
+     poz0 rel1250  eryaman emlak ofisleri
+     poz0 rel1250  eryaman emlakçı gayrimenkul kılıç gayrimenkul yorumlar
+
+  ## SATILIK mülk arayan  (74)
+     poz0 rel1256  eryaman evleri satılık
+     poz0 rel1255  yeni batı satılık daire
+     poz0 rel1255  eryaman 4. etap yardımcı blokları satılık daire
+     poz0 rel1254  yeni batı satılık villa
+     poz0 rel1254  eryaman satılık daire
+     poz0 rel1253  susuz mahallesi satılık daire
+     poz0 rel1253  eryaman satılık ev
+     poz0 rel1253  eryaman 3. etap satılık daire
+     poz0 rel1252  susuz mahallesi satılık ev
+     poz0 rel1252  yeni batı satılık ev
+     poz0 rel1252  eryaman satılık villa
+     poz0 rel1252  eryaman 4. etap öztaş bloklari satılık daire
+     poz0 rel1252  ankara eryaman satılık daire
+     poz0 rel1251  eryaman satılık arsa
+     poz0 rel1251  eryaman satılık ev ankara
+     poz0 rel1251  susuz mahallesi satılık villa
+     poz0 rel1251  eryaman satılık daire sahibinden
+     poz0 rel1251  ankara eryaman satılık ev
+     poz0 rel1251  eryaman rezidans satılık daire
+     poz0 rel1251  yeni batı satılık arsa
+     poz0 rel1251  eryaman satılık müstakil ev
+     poz0 rel1251  eryaman satılık daire 3+1
+     poz0 rel1251  eryaman satılık 1+1
+     poz0 rel1251  eryaman satılık 2+1
+     poz0 rel1251  eryaman 1. etap satılık daire
+
+  ## KİRALIK mülk arayan  (65)
+     poz0 rel1256  eryaman kiralık daire
+     poz0 rel1254  eryaman kiralık ev
+     poz0 rel1254  yeni batı kiralık daire
+     poz0 rel1254  eryaman 4. etap kiralık daire
+     poz0 rel1253  eryaman 5. etap kiralık daire
+     poz0 rel1252  eryaman kiralık daire 2+1
+     poz0 rel1252  yeni batı kiralık villa
+     poz0 rel1252  eryaman rezidans kiralık
+     poz0 rel1252  eryaman 2. etap sahibinden kiralık daire
+     poz0 rel1251  eryaman kiralık daire ankara
+     poz0 rel1251  eryaman kiralık daire 3+1
+     poz0 rel1251  eryaman kiralık daire 1+1
+     poz0 rel1251  eryaman kiralık villa
+     poz0 rel1251  eryaman kiralık 1+1
+     poz0 rel1251  eryaman kiralık araç
+     poz0 rel1251  eryaman kiralık bina
+     poz0 rel1251  eryaman 3. etap kiralık daire
+     poz0 rel1251  eryaman 3. etap şeyh şamil kiralık daire
+     poz0 rel1251  ankara eryaman kiralık daire
+     poz0 rel1250  eryaman kiralık işyeri
+     poz0 rel1250  eryaman kiralık ev ankara
+     poz0 rel1250  etimesgut kiralık daire eşyalı
+     poz0 rel1250  yeni batı kiralık ev
+     poz0 rel1250  eryaman kiralık daire eşyalı
+     poz0 rel1250  ankara eryaman kiralık evler
+
+  ## FİYAT / piyasa araştırması  (2)
+     poz0 rel1250  eryaman daire fiyatları
+     poz0 rel1250  eryaman ev fiyatları
+
+  ## SİTE / proje / etap adı  (22)
+     poz0 rel1257  eryaman 4. etap çarşı
+     poz0 rel1256  eryaman siteleri
+     poz0 rel1256  eryaman 4. etap sağlık ocağı
+     poz0 rel1254  eryaman etap taksi
+     poz0 rel1254  eryaman 3. etap taksi
+     poz0 rel1253  eryaman 4. etap taksi
+     poz0 rel1252  eryaman etap haritası
+     poz0 rel1252  eryaman 3. etap pazar yeri
+     poz0 rel1252  eryaman 5. etap taksi
+     poz0 rel1251  eryaman 2. etap noter
+     poz0 rel1251  eryaman 3. etap yol tarifi
+     poz0 rel1251  eryaman 3. etap çarşı
+     poz0 rel1251  eryaman 4. etap neresi
+     poz0 rel1251  eryaman 5. etap metro
+     poz0 rel1250  eryaman 1. etap pazarı
+     poz0 rel1250  eryaman 4. etap parkı
+     poz0 rel1250  eryaman 5. etap yönetim
+     poz1 rel1255  eryaman sitesi
+     poz1 rel1251  eryaman etap taksi - 3. 4. 5. etap fotoğraflar
+     poz1 rel1250  eryaman etap 3
+     poz1 rel1250  eryaman 3. etap yönetim
+     poz1 rel1250  eryaman 3. etap çilingir
+
+  ## SEMT / yaşam araştırması  (6)
+     poz0 rel1264  eryaman en iyi devlet ortaokulları
+     poz0 rel1258  eryaman en iyi ortaokul
+     poz0 rel1255  eryaman en iyi özel okul
+     poz0 rel1250  eryaman en iyi ilkokul
+     poz1 rel1251  eryaman en iyi ortaokulları
+     poz1 rel1250  eryaman en iyi anaokulu
+
+  ## EMLAK VERGİSİ / resmi işlem  (6)
+     poz0 rel1254  etimesgut emlak vergisi
+     poz0 rel1251  etimesgut emlak beyanı
+     poz0 rel1250  eryaman emlak vergisi
+     poz1 rel1253  etimesgut emlak vergisi ödeme
+     poz1 rel1250  etimesgut emlak beyannamesi
+     poz2 rel1250  etimesgut emlak vergisi sorgulama
+
+  ## Diğer (38)
+     poz0 rel1263  eryaman en iyi kebapçı
+     poz0 rel1262  eryaman en iyi mahallesi
+     poz0 rel1259  eryaman en iyi hamburger
+     poz0 rel1254  eryaman site isimleri
+     poz0 rel1253  eryaman etapları
+     poz0 rel1253  eryaman site yönetimi
+     poz0 rel1253  eryaman en iyi yemek yerleri
+     poz0 rel1252  eryaman konut projeleri
+     poz0 rel1252  eryaman ev yemekleri
+     poz0 rel1252  eryaman konut taksi
+     poz0 rel1251  eryaman konut projeleri 2026
+     poz0 rel1251  eryaman en iyi lahmacun
+
+
+==========================================================================================
+B) NİYET KIRILIMI (tüm evren)
+==========================================================================================
+
+### EMLAKÇI / OFİS arayan  —  63 sorgu (%1.7)
+      8.973  eryaman emlak ofisleri
+      7.555  eryaman en iyi emlakçı
+      7.544  eryaman emlakçılar listesi
+      6.806  eryaman emlakçılar
+      6.719  eryaman emlakçı listesi
+      6.082  eryaman da emlakçılar
+      5.778  eryaman gayrimenkul şikayet
+       5.43  eryaman evleri emlak ofisi
+      5.316  etimesgut emlakçılar
+      5.113  etimesgut emlak ofisleri
+      4.924  eryaman emlak ofisi
+      4.874  eryaman emlakçı gayrimenkul kılıç gayrimenkul yorumlar
+       4.82  yeni batı emlakçı
+      4.227  etimesgut emlakçıları
+      3.751  eryaman emlakçı ayyıldız gayrimenkul yorumlar
+      3.634  eryaman gayrimenkul yatirim danişmanliği
+      3.516  eryaman emlakçı
+      3.041  eryaman 3 etap emlakçılar
+      2.846  eryaman emlakçi gayrimenkul kiliç gayrimenkul
+       2.62  ankara eryaman bilgi emlak ofisi
+
+### SATILIK mülk arayan  —  1360 sorgu (%36.0)
+      8.416  eryaman satılık villa arsası
+      7.902  susuz mahallesi satılık ev
+      7.899  eryaman satılık arsa
+      7.083  eryaman ev satılık
+      7.029  etimesgut satılık daire fiyatları
+      6.859  eryaman satılık ev fiyatları
+      6.736  etimesgut satılık daire sahibinden
+      6.467  eryaman satılık ev ankara
+      6.465  eryaman satılık ev sahibinden
+      6.408  eryaman ev satın al
+      5.938  eryaman satılık dükkanlar
+      5.879  susuz mahallesi satılık villa
+       5.86  susuz mahallesi satılık
+      5.778  eryaman satılık daire sahibinden
+      5.776  susuz mahallesi satılık dükkan
+      5.721  eryaman satılık arazi
+       5.56  ankara eryaman satılık ev
+      5.557  eryaman site satılık daire
+        5.5  susuz mahallesi satilik daire
+      5.445  susuz mahallesi satılık daire
+
+### KİRALIK mülk arayan  —  1021 sorgu (%27.0)
+      8.443  eryaman kiralık işyeri
+      7.998  eryaman kiralık ev ankara
+      6.389  eryaman kiralık ev fiyatları
+      6.234  etimesgut kiralık daire eşyalı
+      6.234  yeni batı kiralık ev
+      6.082  eryaman kiralık işyeri villa
+      5.886  eryaman kiralık dükkan sahibinden
+      5.886  eryaman kiralık dükkanlar
+      5.876  eryaman kiralık daire eşyalı
+      5.876  ankara eryaman kiralık evler
+      5.833  eryaman kira fiyatları
+      5.661  eryaman kiralık ev 3 1
+      5.534  eryaman kiralık ev 4 1
+      5.439  eryaman kiralık ofis
+       5.43  eryaman kiralik is yeri
+      5.357  etimesgut kiralık daire 4 1
+      5.357  yeni batı kiralık daireler
+      5.312  ankara eryaman kiralık apart
+       5.28  eryaman kiralık daire fiyatları
+       5.24  eryaman kiralık ev 2 1
+
+### FİYAT / piyasa araştırması  —  41 sorgu (%1.1)
+      6.792  eryaman ev fiyatı
+       5.86  eryaman arsa fiyatları
+      5.439  eryaman daire fiyatları
+       5.28  eryaman arsa m2 fiyatları
+      4.924  eryaman kaç m2
+      4.381  eryaman 2 1 ev fiyatları
+      4.227  eryaman kaç metrekare
+      4.143  eryaman konut fiyatları
+       3.96  eryaman 3 etap ev fiyatları
+      3.751  eryaman ev fiyatlari
+      3.506  eryaman ev temizliği fiyatları
+      3.199  etimesgut emlak vergisi ne kadar
+      2.719  eryaman ev fiyatları
+       2.62  eryaman 1+1 ev fiyatları
+      2.353  eryaman ankara ev fiyatları
+      2.353  ankara eryaman ev fiyatları
+      2.353  eryaman 1 1 ev fiyatları
+      2.027  ankara eryaman da ev fiyatları
+      1.683  eryaman ev fiyat
+      1.607  eryaman da ev fiyatları
+
+### SİTE / proje / etap adı  —  595 sorgu (%15.7)
+      7.384  eryaman etap haritası
+      5.963  eryaman 1 etap kentsel dönüşüm
+      5.661  eryaman 4 etap fotoğraflar
+      5.567  eryaman 5. etap
+        5.5  eryaman rezidans isimleri
+        5.5  eryaman 2 etap resimleri
+      5.394  eryaman rezidans evleri
+      5.394  eryaman 5 etap neresi
+      5.319  eryaman 4 etap resimleri
+       5.28  eryaman 1 etap resimleri
+       5.24  eryaman 2 etap hangi mahallede
+      5.199  eryaman 2 etap fotoğraflar
+      5.113  eryaman 1 etap nerede
+      5.113  eryaman 1 etap neresi
+      5.022  eryaman 3 etap fotoğraflar
+      4.974  eryaman 7 etap
+      4.974  eryaman 3 etap hangi mahalle
+      4.974  eryaman 1 etap hangi mahalle
+      4.924  eryaman 7 etap resimleri
+      4.924  eryaman 3 etap resimleri
+
+### SEMT / yaşam araştırması  —  47 sorgu (%1.2)
+      4.707  eryaman nasıl bir yer
+      2.846  eryamanda yaşamak
+      2.734  eryaman en iyi devlet ortaokulları
+      2.725  eryaman en iyi özel okul
+      2.719  eryaman en iyi ilkokul
+      2.162  eryaman en iyi ortaokul
+      2.112  eryaman nasil bir yer
+      2.027  eryaman ata mahallesi nasıl bir yer
+      2.027  eryaman şeker mahallesi nasıl bir yer
+      1.758  eryaman en iyi ortaokulları
+      1.607  eryaman susuz nasıl bir yer
+      1.607  eryaman güzelkent nasıl bir yer
+      1.607  eryaman yeşilova nasıl bir yer
+      1.607  ankara eryaman nasıl bir yer
+      1.422  eryamanda nerede oturulur
+      1.176  eryaman yavuz selim mahallesi nasıl bir yer
+      1.014  eryaman metro gayrimenkul
+      1.014  etimesgut metropol emlak
+      1.014  eryaman ankara nın neresinde
+      1.014  susuz mahallesi hangi ilçe
+
+### TİCARİ (dükkan / iş yeri / arsa)  —  6 sorgu (%0.2)
+      1.763  eryaman dükkan kiraları
+      0.658  eryaman imarlı arsa
+      0.522  eryaman villa arsası
+      0.507  eryaman devren işyeri
+      0.247  eryaman kat karşılığı arsa
+      0.197  eryaman arsa
+
+### EMLAK VERGİSİ / resmi işlem  —  63 sorgu (%1.7)
+      3.515  eryaman emlak vergisi
+      2.724  etimesgut emlak vergisi
+      2.156  etimesgut emlak beyanı
+      2.027  eryaman emlak vergisi ödeme
+      1.607  etimesgut belediyesi emlak iletişim
+      1.607  etimesgut belediyesi emlak vergisi hangi banka
+      1.607  etimesgut belediyesi emlak beyanı nasıl yapılır
+      1.607  etimesgut 2026 emlak vergisi
+      1.361  etimesgut emlak vergisi ödeme
+      1.077  etimesgut emlak beyannamesi
+      1.014  etimesgut emlak vergisi nereye ödenir
+      1.013  eryaman belediyesi emlak vergisi ödeme
+      1.013  etimesgut emlak vergisi e devlet
+      0.906  etimesgut emlak vergisi sorgulama
+      0.803  etimesgut belediyesi emlak rayiç bedeli
+      0.803  etimesgut belediyesi emlak vergisi iletişim
+      0.803  etimesgut belediyesi emlak vergisi nasıl ödenir
+       0.66  etimesgut belediyesi emlak servisi iletişim
+      0.536  etimesgut belediyesi emlak vergisi
+      0.523  etimesgut belediyesi emlak vergisi telefon numarası
+
+### Diğer — 587 sorgu
+      6.925  eryaman etapları
+      6.874  eryamandan ev alınır mı
+      6.234  eryaman ev projeleri
+      6.234  eryaman konut projesi
+      6.073  eryaman site isimleri
+      6.059  eryaman emlak iş ilanları
+      6.035  eryaman ev sahibinden
+      5.886  eryaman kentsel dönüşüm
+        5.5  eryaman oturma planı
+      5.443  eryaman konut projeleri
+      5.199  eryaman güven emlak
+      5.157  eryaman oturulacak yerler
+      5.068  eryaman emlak ankara
+      5.031  eryaman ev dekorasyon
+      4.873  eryaman ev kiralama
+
+
+==========================================================================================
+C) SIK GEÇEN NİTELEYİCİLER
+==========================================================================================
+    1373 daire                  1308 satılık                 965 kiralık               
+     759 etap                    260 emlak                   244 sahibinden            
+     218 yeni                    202 batı                    169 sitesi                
+     167 daireler                 95 iyi                      93 rezidans              
+      89 evleri                   74 günlük                   71 villa                 
+      70 dükkan                   62 göksu                    58 fiyatları             
+      56 blokları                 55 gayrimenkul              51 satilik               
+      50 eşyalı                   49 susuz                    49 konut                 
+      47 kiralik                  46 site                     45 life                  
+      44 belediyesi               43 vergisi                  41 taksi                 
+      40 metro                    33 yorumlar                 33 konutları             
+      28 evler                    28 toki                     28 oyak                  
+      27 güzelkent                26 arsa                     26 hangi                 
+      26 yönetimi                 26 yakını                   24 müstakil              
+      24 ata                      23 projeleri                23 fotoğraflar           
+      22 mahallesinde             22 yapı                     22 meydan                
+      21 dubleks                  21 devlet                   21 fırat                 
+      21 yorumları                21 atakent                  21 park                  
+      20 resimleri                20 relax                    20 kaşmir                
+      19 kaç                      19 batıkent                 19 çarşı                 

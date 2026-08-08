@@ -38,9 +38,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const g = (tarih: string) => new Date(tarih);
   const statikSayfalar: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 1 },
-    { url: `${baseUrl}/mahalleler`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.9 },
-    { url: `${baseUrl}/siteler`, lastModified: g("2026-08-02"), changeFrequency: "weekly", priority: 0.8 },
-    { url: `${baseUrl}/siteler/yenimahalle`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.7 },
+    // 08.08: etap hub'ına giden bölüm eklendi.
+    { url: `${baseUrl}/mahalleler`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.9 },
+    // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
+    // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
+    // "Keşfedildi – dizine eklenmedi" kuyruğunda).
+    { url: `${baseUrl}/etaplar`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/siteler`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.8 },
+    { url: `${baseUrl}/siteler/yenimahalle`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
@@ -48,8 +53,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-07-23"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-07-30"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: g("2026-07-24"), changeFrequency: "weekly", priority: 0.7 },
@@ -73,8 +78,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 07.08: alıcı dili tamamen söküldü, marka eki başlıktan kalktı (77153e2).
     site: new Date("2026-08-08"),
     mahalle: new Date("2026-08-08"),
+    // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
-    etap: new Date("2026-08-07"),
+    etap: new Date("2026-08-08"),
     // 03.08: ada sayfalarının canonical'ı site sayfasına çevrildi (ce068bd).
     // Bu sayfaların sitemap'te olmasının TEK amacı Google'ın o canonical'ı
     // bir kez görmesi — bkz. aşağıdaki uzun not.
