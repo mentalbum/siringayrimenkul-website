@@ -8,7 +8,12 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi" },
   description:
     "Eryaman'ın 11 mahallesini, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin. Ek hizmet bölgemiz Yenimahalle'de Ata, Susuz ve Cumhuriyet de rehberde.",
   alternates: { canonical: "/mahalleler" },

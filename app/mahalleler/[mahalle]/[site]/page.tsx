@@ -27,7 +27,7 @@ import { getSiteFaq } from "@/lib/faq";
 import { getBlogPostBySlug } from "@/lib/content";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { OZGUN_ID } from "@/lib/structured-data";
+import { OZGUN_ID, organizationRef } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
@@ -128,7 +128,19 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
       absolute: isimdeEryamanVar
-        ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
+        ? // Mahalle adı ARAYA giriyor, sona değil (2026-08-08). Adı "…Eryaman"
+          // ile biten 27 sitede eski biçim ("Address Eryaman Emlakçı | Evinizi
+          // Satalım, Kiraya Verelim") ana sayfa başlığını ("Eryaman Emlakçı |
+          // Evinizi Satalım, Kiraya Verelim") BİREBİR ALT DİZİ olarak
+          // içeriyordu; Google iki başlıktan güçlü olanı seçtiği için site
+          // sorgusunda ana sayfa çıkıyordu (372 pws=0 ölçümünde yakalanan tek
+          // "ana sayfa ikamesi": "Address Eryaman emlakçı"). Sona ek yapmak
+          // yetmez — üst küme olmayı sürdürür; dizi ortadan kırılmalı.
+          `${site.isim} Emlakçı | ${
+            mahalleKisaIsim(mahalle) === "Eryaman"
+              ? "Eryaman Mahallesi"
+              : mahalleKisaIsim(mahalle)
+          } | Evinizi Satalım, Kiraya Verelim`
         : eryamanda
           ? isimBirdenCokMahallede(site.isim)
             ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
@@ -142,11 +154,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
           : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`,
     },
-    // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
-    // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
-    // (1. sıra araştırması A1, defter 2026-07-31).
+    // TTBS NUMARASI SNIPPET'TEN ÇIKARILDI (2026-08-08). Buradaki sabit kuyruk
+    // 155 karakter sınırını aşıyordu: üretimden alınan 20 sayfalık örneklemde
+    // 16'sı "…" ile kesiliyordu ve KESİLEN KISIM HER SEFERİNDE TELEFON
+    // NUMARASIYDI (16/16). Yani güven öğesi uğruna, snippet'teki tek eylem
+    // çağrısı kayboluyordu. Yetki belge no görünürlüğünü kaybetmiyor: footer
+    // künyesinde, yazar kartında, JSON-LD'de ve sayfa gövdesinde duruyor.
     description: truncateForMeta(
-      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin (TTBS No ${siteConfig.yetkiBelgeNo}). Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
@@ -368,7 +383,11 @@ export default async function SitePage({ params }: Props) {
         url: `${siteConfig.url}${site.gorsel}`,
         contentUrl: `${siteConfig.url}${site.gorsel}`,
         caption: `${site.isim} — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`,
-        creator: { "@type": "Organization", name: siteConfig.name },
+        // @id'li referans (2026-08-08): burada serbest bir Organization düğümü
+        // vardı; Google onu kök layout'taki RealEstateAgent ile aynı varlık
+        // sayamıyor, iki ayrı işletme görüyordu. organizationRef kararlı @id
+        // taşıyor — görsel kredisi de asıl işletme düğümüne bağlanıyor.
+        creator: organizationRef,
         creditText: siteConfig.name,
         copyrightNotice: `© ${siteConfig.name}`,
       },
@@ -634,16 +653,23 @@ export default async function SitePage({ params }: Props) {
               varyantta döner ve üçte biri bilinçli LİNKSİZ kalır: 520 Eryaman
               sayfasına birebir aynı çapayı basmak ölçekli-içerik ayak izi olurdu
               (diff incelemesi bulgusu — semaDisi kararıyla aynı gerekçe,
-              lib/faq.ts). "emlak ofisleri" varyantı "eryaman emlak ofisleri"
-              sorgu ailesini de kapsar. Yenimahalle kolunda konum iddiası
-              doğmasın diye her zaman düz metin (lib/bolge.ts kuralı). */}
+              lib/faq.ts). Yenimahalle kolunda konum iddiası doğmasın diye her
+              zaman düz metin (lib/bolge.ts kuralı).
+              ÜÇÜNCÜ VARYANT DÜZELTİLDİ (2026-08-08): eskiden yalnız "emlak
+              ofisleri" yazıyordu ve bd80c99'un bilerek eklediği "emlakçılar"
+              çoğulunu ~240 site sayfasında (Eryaman kolunun üçte biri) tamamen
+              düşürüyordu — gece diff denetimi canlıda yakaladı. Artık iki terim
+              de aynı çapada geçiyor: "emlak ofisleri" sorgu ailesi korunuyor,
+              çoğul kapsaması geri geliyor ve çapa metni 0. varyanttan yine
+              farklı (ölçekli-içerik ayak izi oluşmuyor). Bu üç dalın HER BİRİ
+              "emlakçılar" kelimesini içermeli — yeni varyant eklerken koru. */}
           {eryamanda && varyant % 3 === 0 ? (
             <Link href="/" className="font-semibold text-gold-dark hover:underline">
               Eryaman&apos;daki emlakçılar
             </Link>
           ) : eryamanda && varyant % 3 === 2 ? (
             <Link href="/" className="font-semibold text-gold-dark hover:underline">
-              Eryaman&apos;daki emlak ofisleri
+              Eryaman&apos;daki emlakçılar ve emlak ofisleri
             </Link>
           ) : (
             "Bölgedeki emlakçılar"

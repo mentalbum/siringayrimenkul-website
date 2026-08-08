@@ -13,7 +13,12 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Evinizi Kiraya Vermek — Doğru Kiracı, Doğru Kira",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman'da Evinizi Kiraya Vermek — Doğru Kiracı, Doğru Kira" },
   description:
     "Eryaman'da evinizi kiraya mı vereceksiniz? Kira tespiti, kiracı eleme, sözleşme ve teslim — süreci sizin adınıza yürüten yerel emlakçınız. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-kiraya-vermek" },
@@ -49,6 +54,11 @@ const faqItems: FaqItem[] = [
       "Rakam, sitenize ve dairenizin durumuna göre değişir; ilanlardaki eski rakamlar bu dönemde hızla güncelliğini yitiriyor. Kirayı sitenizdeki gerçekleşen kiralamalara göre birlikte belirliyoruz — görüşme sonunda elinizde gerçekçi bir kira aralığı olur.",
   },
   {
+    soru: "Emlakçıya evimi kiraya vermek için ne yapmam gerekir?",
+    cevap:
+      "Tek adım yeter: bize ulaşıp dairenin bilgilerini (site, kat, oda sayısı, eşya durumu) paylaşın. Kira tespitini birlikte yaparız; fotoğraf, ilan ve aday trafiğini biz üstleniriz. Anahtar bizde kalabilir, dilerseniz gösterimlerde siz de bulunursunuz — kiracı seçiminde son söz her zaman sizindir.",
+  },
+  {
     soru: "Kiracıyı nasıl buluyor ve eliyorsunuz?",
     cevap:
       "İlan trafiğini biz karşılıyoruz; adaylarla ödeme gücü, iş ve referans düzeyinde ön görüşme yapıyor, evinize yalnızca elenmiş adayları getiriyoruz. Nihai kiracı seçimi her zaman ev sahibinindir.",
@@ -61,7 +71,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Kiraya mı versem, satsam mı — hâlâ karar veremedim.",
     cevap:
-      "Bu soruda kararsız kalmak normaldir ve acele edilmesi gereken bir durum da değildir. Belirleyen dört şey var: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol, dairenizin bugünkü satış ve kira değerini yan yana görmektir.",
+      "Bu soruda kararsız kalmak normaldir ve acele edilmesi gereken bir durum da değildir. Belirleyen dört şey var: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. Bu başlıkları görüşmede tarafsızca birlikte değerlendiririz. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol, dairenizin bugünkü satış ve kira değerini yan yana görmektir.",
   },
   {
     soru: "Evim boş kaldıkça ne kaybederim?",

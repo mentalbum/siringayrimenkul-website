@@ -3,6 +3,7 @@ import { getAllBlogPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { BlogFiltre } from "@/components/blog/blog-filtre";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "Eryaman Emlak Rehberi",
@@ -20,7 +21,9 @@ export default function BlogPage() {
     name: "Eryaman Emlak Rehberi",
     description: "Eryaman mahalle rehberleri, site/rezidans tanıtımları ve ev satış-kiralama tavsiyeleri.",
     url: `${siteConfig.url}/blog`,
-    publisher: { "@type": "Organization", name: siteConfig.name, url: siteConfig.url },
+    // @id'li referans (2026-08-08): serbest Organization düğümü, kök
+    // layout'taki RealEstateAgent ile aynı varlık sayılmıyordu.
+    publisher: organizationRef,
     hasPart: posts.map((post) => ({
       "@type": "Article",
       headline: post.baslik,

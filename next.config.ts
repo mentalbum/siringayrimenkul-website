@@ -36,39 +36,44 @@ const nextConfig: NextConfig = {
       // GENEL KONULU BLOG TEMİZLİĞİ (2026-08-07, Özgün'ün kesin kararı):
       // blog SADECE Eryaman'la ilgili olacak. Türkiye geneli sorgularda çıkıp
       // alakasız okur çeken 24 genel bilgi yazısı siteden tamamen kaldırıldı.
-      // Konuya birebir karşılık gelen Eryaman yazısı olmadığından hepsi blog
-      // dizinine gider. YENİDEN AÇMA — aynı gerekçeyle TTBS yazısı da silinmişti.
-      { source: "/blog/dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler", destination: "/blog", permanent: true },
-      { source: "/blog/emlakci-komisyonu-nasil-isler", destination: "/blog", permanent: true },
-      { source: "/blog/emlakci-yetki-sozlesmesi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/emlakcisiz-ev-satilir-mi", destination: "/blog", permanent: true },
-      { source: "/blog/emlakciya-vekalet-verme-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/ev-satarken-gerekli-evraklar", destination: "/blog", permanent: true },
-      { source: "/blog/ev-satarken-odenecek-vergiler", destination: "/blog", permanent: true },
-      { source: "/blog/evimi-satmak-mi-kiraya-vermek-mi", destination: "/blog", permanent: true },
-      { source: "/blog/eviniz-satilmiyor-mu", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-kiraya-verdikten-sonra", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-satarken-dogru-emlakci-secimi", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-satisa-hazirlamak", destination: "/blog", permanent: true },
-      { source: "/blog/evinizin-degerini-nasil-ogrenebilirsiniz", destination: "/blog", permanent: true },
-      { source: "/blog/hisseli-ipotekli-ev-satisi", destination: "/blog", permanent: true },
-      { source: "/blog/kat-irtifakindan-kat-mulkiyetine-gecis", destination: "/blog", permanent: true },
-      { source: "/blog/kira-artisi-nasil-hesaplanir", destination: "/blog", permanent: true },
-      { source: "/blog/kira-sozlesmesinde-dikkat-edilmesi-gerekenler", destination: "/blog", permanent: true },
-      { source: "/blog/kira-tespit-davasi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-evi-gostermiyor-ne-yapmaliyim", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-tahliye-sureci", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-tahliye-taahhutnamesi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/kiracili-ev-satilir-mi", destination: "/blog", permanent: true },
-      { source: "/blog/miras-kalan-ev-nasil-satilir", destination: "/blog", permanent: true },
-      { source: "/blog/tapu-ada-parsel-nasil-okunur", destination: "/blog", permanent: true },
-      // Etap sayfaları artık yalnız RESMÎ ada listesi olan etaplarda üretiliyor
-      // (lib/etap-onayli.ts): 4. ve 5. Etap. 1/2/3. Etap sayfaları doğrulanmamış
-      // gruplamadan besleniyordu — kaldırıldı, mahalle sayfalarına yönlendirildi.
-      // İlgili etabın toplu yapı yönetiminden resmî ada listesi gelirse geri açılır.
-      { source: "/mahalleler/altay/etaplar/1", destination: "/mahalleler/altay-mahallesi", permanent: true },
-      { source: "/mahalleler/sehit-osman-avci/etaplar/2", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
-      { source: "/mahalleler/seyh-samil/etaplar/3", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+      // YENİDEN AÇMA — aynı gerekçeyle TTBS yazısı da silinmişti.
+      // 2026-08-07 (akşam): hedefler /blog yerine konuya en yakın YAŞAYAN
+      // sayfaya çevrildi — eski URL'lerin bakiye sıralaması/ziyaretçisi blog
+      // dizini yerine işe yarayan sayfaya insin diye. Yazılar geri AÇILMADI.
+      { source: "/blog/dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler", destination: "/eryamanda-ev-kiraya-vermek", permanent: true },
+      { source: "/blog/emlakci-komisyonu-nasil-isler", destination: "/araclar/emlak-komisyonu-hesaplama", permanent: true },
+      { source: "/blog/emlakci-yetki-sozlesmesi-rehberi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/emlakcisiz-ev-satilir-mi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/emlakciya-vekalet-verme-rehberi", destination: "/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama", permanent: true },
+      { source: "/blog/ev-satarken-gerekli-evraklar", destination: "/blog/eryamanda-ev-satis-sureci", permanent: true },
+      { source: "/blog/ev-satarken-odenecek-vergiler", destination: "/araclar/tapu-harci-hesaplama", permanent: true },
+      { source: "/blog/evimi-satmak-mi-kiraya-vermek-mi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/eviniz-satilmiyor-mu", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/evinizi-kiraya-verdikten-sonra", destination: "/eryamanda-ev-kiraya-vermek", permanent: true },
+      { source: "/blog/evinizi-satarken-dogru-emlakci-secimi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/evinizi-satisa-hazirlamak", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/evinizin-degerini-nasil-ogrenebilirsiniz", destination: "/ev-degerleme", permanent: true },
+      { source: "/blog/hisseli-ipotekli-ev-satisi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/kat-irtifakindan-kat-mulkiyetine-gecis", destination: "/sozluk#kat-mulkiyeti", permanent: true },
+      { source: "/blog/kira-artisi-nasil-hesaplanir", destination: "/araclar/kira-artisi-hesaplama", permanent: true },
+      { source: "/blog/kira-sozlesmesinde-dikkat-edilmesi-gerekenler", destination: "/eryamanda-ev-kiraya-vermek", permanent: true },
+      { source: "/blog/kira-tespit-davasi-rehberi", destination: "/blog/eryamanda-kira-tespiti-dogru-kira-belirleme", permanent: true },
+      { source: "/blog/kiraci-evi-gostermiyor-ne-yapmaliyim", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/kiraci-tahliye-sureci", destination: "/eryamanda-ev-kiraya-vermek", permanent: true },
+      { source: "/blog/kiraci-tahliye-taahhutnamesi-rehberi", destination: "/eryamanda-ev-kiraya-vermek", permanent: true },
+      { source: "/blog/kiracili-ev-satilir-mi", destination: "/eryamanda-ev-satmak", permanent: true },
+      { source: "/blog/miras-kalan-ev-nasil-satilir", destination: "/blog/eryaman-disinda-yasayanlar-icin-ev-satisi-kiralama", permanent: true },
+      { source: "/blog/tapu-ada-parsel-nasil-okunur", destination: "/blog/eryamanda-etap-sistemi-nedir", permanent: true },
+      // 1./2./3. Etap yönlendirmeleri KALDIRILDI (2026-08-08). Bu üç kural,
+      // etap sayfaları doğrulanmamış gruplamadan beslendiği için konmuştu; ama
+      // 07.08'de (81cda7d, 18a5cec) üç etabın da RESMÎ ada listesi geldi ve
+      // sayfalar lib/etap-onayli.ts üzerinden yeniden üretiliyor (canlıda 200).
+      // Kurallar yerinde kaldıkça Google'ın aylardır tanıdığı eski adres
+      // (/mahalleler/altay/etaplar/1) yeni etap sayfasını ATLAYIP mahalle
+      // köküne 308 veriyordu. Silindiler; aşağıdaki mahalle slug taşıma joker
+      // kuralı (/mahalleler/altay/:path*) eski adresi doğru etap sayfasına
+      // taşıyor — yani üç etap sayfası "yeni keşif" olmaktan çıkıp geçmiş
+      // sinyali olan adreslerin varisi oluyor.
 
       // Silinen/birleştirilen/taşınan site kayıtlarının eski URL'leri —
       // 404 yerine yaşayan varislerine kalıcı yönlendirme (SEO değeri taşınır).

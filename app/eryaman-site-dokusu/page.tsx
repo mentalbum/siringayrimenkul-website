@@ -18,7 +18,9 @@ import { OZGUN_ID, organizationRef } from "@/lib/structured-data";
 const VERI_KESITI = "Temmuz 2026";
 
 export const metadata: Metadata = {
-  title: "Eryaman Site Dokusu Raporu — 700+ Sitenin Tapu Verisiyle Analizi",
+  // absolute: marka eki kaldırıldı, başlık 60 karakterin altında (bkz.
+  // app/siteler/page.tsx'teki gerekçe — 2026-08-08 başlık uzunluğu turu).
+  title: { absolute: "Eryaman Site Dokusu Raporu — Tapu Verisiyle Analiz" },
   description:
     "Eryaman ve çevresindeki 700'den fazla konut sitesinin tapu tabanlı yapı analizi: kat mülkiyeti oranı, kat yükseklikleri, parsel büyüklükleri ve mahalle dağılımı. TKGM kayıtlarına dayalı, fiyatsız referans rapor.",
   alternates: { canonical: "/eryaman-site-dokusu" },

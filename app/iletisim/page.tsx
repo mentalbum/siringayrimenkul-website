@@ -10,7 +10,9 @@ import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/
 import { OfisDurumu } from "@/components/ui/ofis-durumu";
 
 export const metadata: Metadata = {
-  title: "İletişim — Eryaman Emlakçınız, Tunahan 4. Etap Çarşı",
+  // absolute ama MARKA BAŞLIKTA KALIYOR (bkz. app/hakkimizda/page.tsx gerekçesi):
+  // marka niyetli arayan telefon/adres için bu sayfaya da geliyor.
+  title: { absolute: "İletişim — Eryaman Emlakçınız Şirin Gayrimenkul" },
   description: `Eryaman/Etimesgut'ta evinizi satmak veya kiraya vermek için ${siteConfig.name}'a ulaşın: ${siteConfig.phoneDisplay} — Tunahan Mahallesi, 4. Etap Çarşı. WhatsApp ve değerleme formu da açık.`,
   alternates: { canonical: "/iletisim" },
 };

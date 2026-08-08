@@ -24,11 +24,12 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { MahalleSitelerBrowser } from "@/components/site/mahalle-siteler-browser";
 import { inceltSiteler } from "@/lib/siteler-liste";
 import { getMahalleFaq } from "@/lib/faq";
+import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
 import { eryamandaMi } from "@/lib/bolge";
-import { etapSayfasiVarMi } from "@/lib/etap-onayli";
+import { adaOnayliEtap, etapSayfasiVarMi } from "@/lib/etap-onayli";
 
 type Props = {
   params: Promise<{ mahalle: string }>;
@@ -52,8 +53,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // tek yer başlıktı.
   const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
-  const sitelerParcasi =
-    siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
     // "Fiyatları" kelimesi bilerek yok: sayfada fiyat rakamı vermiyoruz (proje
@@ -90,7 +89,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
       } | Evinizi Satalım, Kiraya Verelim`,
     },
-    description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    // 155 KARAKTERE SIĞACAK BİÇİMDE KISALTILDI (2026-08-08). Eski metin 14
+    // mahallenin 14'ünde de 236–272 karakterdi ve Google'ın kestiği kuyruk her
+    // seferinde AYNI yerdi: ev sahibine seslenen eylem cümlesi. Yani kazanılabilir
+    // olduğu ölçülen tek sorgu sınıfında (mahalle + emlakçı) snippet çağrısız
+    // kalıyordu. Uzun ad + alias birleşiminde yine de taşarsa truncateForMeta
+    // ağı tutuyor; kesilecek kısım artık kuyruk değil, tanıtım cümlesi.
+    description: truncateForMeta(
+      `${baslikIsim} emlakçı: ${siteSayisi > 0 ? `${siteSayisi} site ve rezidansı` : "buradaki siteleri"} tanıyoruz. Satış ve kiralamada fiyatı birlikte belirleyelim. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+    ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -522,8 +529,13 @@ export default async function MahallePage({ params }: Props) {
               emlakçılar listesi" sorgu ailesi GSC'de görünüyor ama kelime sitede
               hiç geçmiyordu (2026-08-07 tespiti). Doğal cümle içinde tutulmalı. */}
           Bölgedeki emlakçılar arasında bizi ayıran şey kayıt tutma biçimimiz: mahalledeki{" "}
-          {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"} tapu
-          yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
+          {/* {" "} ŞART: ifadeden sonra satır sonu gelince JSX, sonraki satırın
+              baştaki boşluğunu siliyor ve React araya <!-- --> işaretçisi koyuyor —
+              canlıda 19 mahalle sayfasında "rezidansıntapu" yazıyordu (gece diff
+              denetimi, 08.08). Bu paragraf her mahalle sayfasının ana tanıtım
+              cümlesi; benzer kalıplarda da açık boşluk kullan. */}
+          {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}{" "}
+          tapu yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
           fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. Google&apos;da 5,0
           puanlı işletme profilimiz ve 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
           çalışıyoruz. {bulunmaHali(kisaIsim)} eviniz varsa{" "}
@@ -568,20 +580,51 @@ export default async function MahallePage({ params }: Props) {
                     {etap}. Etap
                   </Link>
                 </h3>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {adalar
-                    .filter((ada) => ada.etap === etap)
-                    .map((ada) => (
-                      <Link
-                        key={adaRouteKey(ada)}
-                        href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
-                        title={ada.site.isim}
-                        className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
-                      >
-                        {adaDisplayLabel(ada)}
-                      </Link>
-                    ))}
-                </div>
+                {/* ÇİPLER DARALTILDI (2026-08-08). Bu blok, adaları kayıtların
+                    DOĞRULANMAMIŞ `adalar[].etap` alanına göre gruplar; etap
+                    sayfası ise RESMÎ ada listesinden beslenir. İki küme
+                    çakışınca aynı ada hem burada çip hem etap sayfasında
+                    listeleniyordu: 173 çipin 144'ü mükerrerdi.
+                    Mahalle sayfası, ölçülen tek kazanılabilir sorgu sınıfının
+                    ("<mahalle> emlakçı") hedef sayfası; çıkış bağlarını
+                    kanonik'i başka sayfayı gösteren 70 ada adresine dağıtmak
+                    yerine siteler ve etap sayfalarında yoğunlaştırıyoruz.
+                    Resmî listede OLMAYAN adalar çip olarak kalır (29 ada;
+                    onları listeleyen başka sayfa yok — filtreyi kaldırırsak
+                    mahalle kolundan tamamen kopuyorlar). */}
+                {(() => {
+                  const resmiListedeOlmayan = adalar.filter(
+                    (ada) => ada.etap === etap && adaOnayliEtap(ada.no) === null
+                  );
+                  if (resmiListedeOlmayan.length === 0) {
+                    return (
+                      <p className="mt-2 text-sm text-muted">
+                        Bu etabın resmî ada listesi{" "}
+                        <Link
+                          href={`/mahalleler/${mahalle.slug}/etaplar/${etap}`}
+                          className="cursor-pointer font-medium text-gold-dark hover:underline"
+                        >
+                          {etap}. Etap sayfasında
+                        </Link>
+                        .
+                      </p>
+                    );
+                  }
+                  return (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {resmiListedeOlmayan.map((ada) => (
+                        <Link
+                          key={adaRouteKey(ada)}
+                          href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
+                          title={ada.site.isim}
+                          className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                        >
+                          {adaDisplayLabel(ada)}
+                        </Link>
+                      ))}
+                    </div>
+                  );
+                })()}
               </div>
             ))}
           </div>

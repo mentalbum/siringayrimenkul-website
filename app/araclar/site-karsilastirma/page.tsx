@@ -16,7 +16,12 @@ import { organizationRef } from "@/lib/structured-data";
  * kayıt metinlerinden deterministik çıkarılır (lib/kunye.ts). */
 
 export const metadata: Metadata = {
-  title: "Eryaman Site Karşılaştırma Aracı — Tapu Verisiyle Yan Yana",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman Site Karşılaştırma Aracı — Tapu Verisiyle Yan Yana" },
   description:
     "Eryaman ve çevresindeki 700'den fazla siteyi tapu verisiyle karşılaştırın: tapu niteliği, parsel alanı, blok ve kat yapısı. Fiyat değil, bayatlamayan yapısal veriler — TKGM kayıtlarına dayalı.",
   alternates: { canonical: "/araclar/site-karsilastirma" },

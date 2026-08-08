@@ -13,7 +13,12 @@ import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons";
 
 export const metadata: Metadata = {
-  title: "Eryaman Ev Değerleme — Evinizi Doğru Fiyatla Satın veya Kiraya Verin",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman Ev Değerleme — Satış ve Kira Değeriniz" },
   description:
     "Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim. Mahallenizi ve sitenizi yakından tanıyan Şirin Gayrimenkul'den gerçekçi fiyat analizi ve satış yol haritası.",
   alternates: { canonical: "/ev-degerleme" },

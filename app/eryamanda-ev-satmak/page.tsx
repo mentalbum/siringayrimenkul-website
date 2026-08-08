@@ -12,7 +12,12 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Ev Satmak — Satış Sürecini Sizin Adınıza Yönetiyoruz",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman'da Ev Satmak — Süreci Sizin Adınıza Yönetiyoruz" },
   description:
     "Eryaman'da evinizi satmayı mı düşünüyorsunuz? Değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-satmak" },
@@ -55,7 +60,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Satış için hangi belgeler gerekir?",
     cevap:
-      "Kimlik, DASK poliçesi, belediyeden rayiç bedel yazısı ve emlak vergisi borcunun kapatılmış olması temel gereksinimlerdir; miras, ipotek ve vekâlet durumlarında ek belgeler devreye girer. Tam listeyi 'Ev satarken gerekli evraklar' rehberimizde bulabilirsiniz — süreci bizimle yürütürseniz takibini biz yaparız.",
+      "Kimlik, DASK poliçesi, belediyeden rayiç bedel yazısı ve emlak vergisi borcunun kapatılmış olması temel gereksinimlerdir; miras, ipotek ve vekâlet durumlarında ek belgeler devreye girer. Tam listeyi ilk görüşmede durumunuza göre birlikte çıkarırız — süreci bizimle yürütürseniz takibini de biz yaparız.",
   },
   {
     soru: "Satışta hangi masraflar çıkar?",
@@ -65,22 +70,27 @@ const faqItems: FaqItem[] = [
   {
     soru: "İçinde kiracı olan evimi satabilir miyim?",
     cevap:
-      "Evet — satış kira sözleşmesini sona erdirmez, yeni malik sözleşmenin tarafı olur. Kiracılı satışın gösterim düzeni ve alıcı profili farklı işler; ayrıntılar 'Kiracılı ev satılır mı?' rehberimizde. Bu süreci sık yönetiyoruz.",
+      "Evet — satış kira sözleşmesini sona erdirmez, yeni malik sözleşmenin tarafı olur. Kiracılı satışın gösterim düzeni ve alıcı profili farklı işler: gösterim pencerelerini kiracıyla biz kurar, dosyayı kirayı hazır bulmak isteyen yatırımcı alıcılara da sunarız. Bu süreci sık yönetiyoruz.",
   },
   {
     soru: "Kiracım evi göstermiyor, ne yapabilirim?",
     cevap:
-      "Kiracının gösterime katlanma yükümlülüğü kanunda yazılıdır (Türk Borçlar Kanunu m. 319) ve emlak danışmanınızla getirdiği alıcı adayını da kapsar; buna karşılık ev sahibi gösterimi önceden bildirmek ve kiracının yararlarını gözetmekle yükümlüdür. Dosyaların çoğu mahkemeye gitmeden, gösterimleri belirli gün ve saat pencerelerinde toplayarak çözülür — bu düzeni kiracıyla biz kurarız, siz karşı karşıya gelmezsiniz. Gerçekten tıkanan dosyalarda yol kiralananın gösterilmesine izin davasıdır; 'Kiracı evi göstermiyor' rehberimizde adım adım anlattık. Not: gösterime engel olmak tek başına bir tahliye sebebi değildir, iki süreç ayrıdır.",
+      "Kiracının gösterime katlanma yükümlülüğü kanunda yazılıdır (Türk Borçlar Kanunu m. 319) ve emlak danışmanınızla getirdiği alıcı adayını da kapsar; buna karşılık ev sahibi gösterimi önceden bildirmek ve kiracının yararlarını gözetmekle yükümlüdür. Dosyaların çoğu mahkemeye gitmeden, gösterimleri belirli gün ve saat pencerelerinde toplayarak çözülür — bu düzeni kiracıyla biz kurarız, siz karşı karşıya gelmezsiniz. Gerçekten tıkanan dosyalarda yol kiralananın gösterilmesine izin davasıdır — o noktaya gelmeden çözmek için süreci biz yönetiriz. Not: gösterime engel olmak tek başına bir tahliye sebebi değildir, iki süreç ayrıdır.",
   },
   {
     soru: "Satmak mı doğru, kiraya vermek mi?",
     cevap:
-      "Cevap evin değil, sizin durumunuzun içindedir: paraya belirli bir tarihte ihtiyacınız varsa ve evi elde tutmanın bir amacı yoksa satış öne çıkar; nakit ihtiyacınız yoksa, evi ileride kullanma ihtimaliniz varsa ya da değer artışı kazancı vergisi açısından beş yılı doldurmanıza az kaldıysa kiraya vermek mantıklı olabilir. Karar başlıklarını 'evimi satmak mı kiraya vermek mi' yazımızda tarafsızca sıraladık — iki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok.",
+      "Cevap evin değil, sizin durumunuzun içindedir: paraya belirli bir tarihte ihtiyacınız varsa ve evi elde tutmanın bir amacı yoksa satış öne çıkar; nakit ihtiyacınız yoksa, evi ileride kullanma ihtimaliniz varsa ya da değer artışı kazancı vergisi açısından beş yılı doldurmanıza az kaldıysa kiraya vermek mantıklı olabilir. Bu başlıkları görüşmede tarafsızca birlikte değerlendiririz — iki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok.",
   },
   {
     soru: "Neden bir emlakçıyla çalışayım? Kendim satamaz mıyım?",
     cevap:
-      "Satabilirsiniz — yasal engel yok, bunu açıkça yazdığımız bir rehberimiz bile var. Emlakçının karşılığı somuttur: gerçekleşen satışlara dayalı fiyat, alıcı eleme, pazarlık tamponu ve güvenli tapu süreci. Yanlış fiyatın maliyeti çoğu zaman komisyonun birkaç katıdır.",
+      "Satabilirsiniz — yasal engel yok, bunu size açıkça söylüyoruz. Emlakçının karşılığı somuttur: gerçekleşen satışlara dayalı fiyat, alıcı eleme, pazarlık tamponu ve güvenli tapu süreci. Yanlış fiyatın maliyeti çoğu zaman komisyonun birkaç katıdır.",
+  },
+  {
+    soru: "Tapuya gelemeyeceğim; vekâletle satış yapılır mı?",
+    cevap:
+      "Evet. Noterden düzenlenecek, satış yetkisini açıkça içeren bir vekâletname ile tapu işlemi sizin adınıza tamamlanır; güvenli olan, kapsamı dar tutulmuş bir vekâlettir. Şehir dışında ya da yurt dışındaysanız süreç değişmez — adımları uzaktan satış rehberimizde anlattık; metni notere gitmeden önce birlikte netleştiririz.",
   },
 ];
 
