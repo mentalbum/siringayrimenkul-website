@@ -111,6 +111,17 @@ llms.txt + dateModified). Kalanlar sırayla:
 - **#9 Değerleme formu progresif:** Adım 1 = site autocomplete + sat/kirala; Unbounce verisi
   3 alan %10,1 vs 9 alan %3,6.
 - **#11 Mahalle site listesi filtresi** + komşu mahalle karşılaştırma tablosu (fiyatsız).
+- **#13 Site sayıları elle yazılı — derlemeden türet.** 2026-08-08 nüfus turunda ortaya çıktı:
+  site/rezidans sayısı 11 blog yazısı + 3 mahalle JSON'unda SABİT rakam olarak duruyor ve
+  kayıt eklendikçe hepsi bayatlıyor (bu tur tam olarak bundan gerekti: blog "85 site" derken
+  Göksu'da 68 kayıt vardı). Kalıcı çözüm: sayıyı `content/siteler/<mahalle>/` sayımından
+  derleme anında bas (MDX'e bileşen geçirmek için app/blog/[slug]/page.tsx'teki MDXRemote'a
+  `components` verilebilir). Nüfus rakamı ayrı konu — o yılda bir değişiyor, elle kalabilir.
+- **#14 app/mahalleler/page.tsx:53 yanlış toplam:** "11 mahallenin tamamını ve İÇLERİNDEKİ
+  700'den fazla site" — 11 mahallenin toplamı 520; 700+ ancak Ata/Susuz/Cumhuriyet dahil doğru.
+  Blog ayağı "Eryaman'ın 11 mahallesi ve ÇEVRESİNDEKİ 700'den fazla" kalıbına çekildi
+  (Yenimahalle sitelerine "Eryaman sitesi" dememe kuralıyla da uyumlu); app/ ayağı paralel
+  oturum orada çalıştığı için ertelendi.
 - ~~**#12 4. araç: Değer Artışı Kazancı hesaplayıcı**~~ KAPATILDI (2026-08-07 Özgün): aynı karar —
   jenerik hesaplayıcı ülke çapından alakasız tıklama çeker; yeni jenerik araç/rehber sayfası
   AÇILMAZ (mevcut 4 araç yerinde kalır). GMSİ/tahliye/miras fikirleri de bu kapsamda kapalı.
