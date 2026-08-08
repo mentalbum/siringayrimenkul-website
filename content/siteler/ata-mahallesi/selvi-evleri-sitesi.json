@@ -7,7 +7,7 @@
     "lng": 32.6027998
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/selvi-evleri-sitesi-boundary.geojson",
-  "aciklama": "Selvi Evleri Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 24.099 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 11 Katlı F Blok 11 Katlı B Blok 11 Katlı C Blok 11 Katlı D Blok 11 Katlı E Blok 11 Katlı G Blok 11 Katlı Apartman-Beton\". Parselini Etikent Sitesi ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Selvi Evleri Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, Karlıdağ Sokak hattında yer alan çok bloklu bir konut sitesidir. TKGM kayıtlarına göre yerleşim 24.099 m²'lik — yaklaşık 24 dönümlük — kat mülkiyetli tek parselde kuruludur; tapu bu parseldeki yapıyı A'dan G'ye yedi blok olarak ve her birini 11 katlı sayar.\n\nBurada okunması gereken bir ayrım var: bu yedi blok tek başına Selvi Evleri'nin değildir. Parsel komşu Etikent Sitesi ile paylaşılır — eski Eryaman kuşağının bilinen kooperatif düzenidir — ve tapudaki blok listesi iki yerleşimin toplamını tanımlar. Harita ve semt rehberi kayıtlarında Selvi Evleri adıyla A, C ve F blokları tek tek geçer. Daire sahibi açısından pratik karşılığı şudur: ortak alan ve yönetim düzeni komşu yerleşimle iç içedir, emsal karşılaştırması da bu yüzden site geneli değil blok bazında yapılmalıdır.\n\nKonum tarafında Ata Mahallesi idari olarak Yenimahalle'ye bağlıdır, ancak gündelik yaşamı ve konut piyasası hemen güneyindeki Eryaman'la iç içe işler. Mahalle sınırları içinde metro istasyonu yoktur; EGO otobüsleri Eryaman 1-2 metro istasyonundan kalkar ve sitenin bulunduğu hattan birden çok otobüs hattı geçer. Yakın komşuları arasında Belmi Kent, Çağlayan Sitesi, Rüyakent ve Prestij Park Konutları bulunur — çevre tek tek apartmanlardan değil, site düzeninden oluşur.\n\nİlan kayıtlarında öne çıkan plan 3+1'dir ve kullanım alanları 135 m² çevresinde listelenir. On bir katlı bloklarda üst kat ile alt kat arasındaki manzara ve ışık farkı, aynı metrekaredeki iki daireyi bile ayrı emsal çizgisine taşır; dairenizin hangi katmanda olduğunu bilerek pazara çıkmak pazarlıkta konumunuzu baştan güçlendirir.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44770",
@@ -16,10 +16,16 @@
   ],
   "ozellikler": [
     "~24.099 m² parsel (TKGM)",
-    "11 katlı bloklar (tapu kaydı)",
+    "Parselde A'dan G'ye yedi blok, her biri 11 katlı (tapu kaydı)",
+    "Parselini Etikent Sitesi ile paylaşır — blok listesi iki yerleşimin toplamı",
+    "Selvi Evleri adıyla kayıtlı bloklar: A, C, F (harita ve semt rehberi kayıtları)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Ata Mahallesi",
-    "Paylaşımlı parsel — komşu sitelerle"
+    "Karlıdağ Sokak hattı — Ata Mahallesi",
+    "İlan kayıtlarında 3+1 planlar, 135 m² çevresinde",
+    "Mahallede metro yok — EGO otobüsleri Eryaman 1-2'den kalkar"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "alternatifAdlar": [
+    "Selvi Evleri"
+  ],
+  "zenginlestirildi": "2026-08-08"
 }

@@ -7,7 +7,7 @@
     "lng": 32.603141
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/etikent-sitesi-boundary.geojson",
-  "aciklama": "Etikent Sitesi, Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 24.099 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"A Blok 11 Katlı F Blok 11 Katlı B Blok 11 Katlı C Blok 11 Katlı D Blok 11 Katlı E Blok 11 Katlı G Blok 11 Katlı Apartman-Beton\". Parselini Selvi Evleri Sitesi ile paylaşır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Etikent Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yerleşim 24.099 m²'lik — yaklaşık 24 dönümlük — kat mülkiyetli tek parselde kuruludur; tapu bu parseldeki yapıyı A'dan G'ye yedi blok olarak ve her birini 11 katlı sayar.\n\nBlok listesi okunurken bir ayrım gerekir: parsel komşu Selvi Evleri Sitesi ile paylaşılır ve tapudaki yedi blok iki yerleşimin toplamını tanımlar; yedisi birden Etikent'e ait değildir. Bu, eski Eryaman kuşağının bilinen kooperatif düzenidir ve tek bir tapu kaydının birden çok site adını taşıması bölgede olağandır. Daire sahibi açısından pratik karşılığı şudur: ortak alan ve yönetim düzeni komşu yerleşimle iç içedir, emsal karşılaştırması da site geneli yerine blok bazında yapılmalıdır.\n\nAta Mahallesi idari olarak Yenimahalle'ye bağlıdır, gündelik yaşamı ve konut piyasası ise hemen güneyindeki Eryaman'la iç içe işler. Mahalle sınırları içinde metro istasyonu yoktur; EGO otobüsleri Eryaman 1-2 metro istasyonundan kalkar. Yakın komşuları arasında Selvi Evleri, Belmi Kent ve Çağlayan Sitesi bulunur.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "44770",
@@ -16,10 +16,11 @@
   ],
   "ozellikler": [
     "~24.099 m² parsel (TKGM)",
-    "11 katlı bloklar (tapu kaydı)",
+    "Parselde A'dan G'ye yedi blok, her biri 11 katlı (tapu kaydı)",
+    "Parselini Selvi Evleri Sitesi ile paylaşır — blok listesi iki yerleşimin toplamı",
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi",
-    "Paylaşımlı parsel — komşu sitelerle"
+    "Mahallede metro yok — EGO otobüsleri Eryaman 1-2'den kalkar"
   ],
-  "zenginlestirildi": "2026-07-16"
+  "zenginlestirildi": "2026-08-08"
 }
