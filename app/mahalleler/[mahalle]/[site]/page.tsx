@@ -27,7 +27,7 @@ import { getSiteFaq } from "@/lib/faq";
 import { getBlogPostBySlug } from "@/lib/content";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { OZGUN_ID } from "@/lib/structured-data";
+import { OZGUN_ID, organizationRef } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
@@ -383,7 +383,11 @@ export default async function SitePage({ params }: Props) {
         url: `${siteConfig.url}${site.gorsel}`,
         contentUrl: `${siteConfig.url}${site.gorsel}`,
         caption: `${site.isim} — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`,
-        creator: { "@type": "Organization", name: siteConfig.name },
+        // @id'li referans (2026-08-08): burada serbest bir Organization düğümü
+        // vardı; Google onu kök layout'taki RealEstateAgent ile aynı varlık
+        // sayamıyor, iki ayrı işletme görüyordu. organizationRef kararlı @id
+        // taşıyor — görsel kredisi de asıl işletme düğümüne bağlanıyor.
+        creator: organizationRef,
         creditText: siteConfig.name,
         copyrightNotice: `© ${siteConfig.name}`,
       },
