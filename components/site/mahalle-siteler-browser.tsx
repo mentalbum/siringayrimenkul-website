@@ -107,7 +107,7 @@ export function MahalleSitelerBrowser({ siteler, arsiv }: MahalleSitelerBrowserP
               setHarf(null);
             }}
             placeholder="Sitenizin adını yazın…"
-            aria-label="Bu mahalledeki siteler içinde ada göre arayın"
+            aria-label="Bu mahalledeki siteleri adına göre arayın"
             className="w-full rounded-xl border border-border bg-surface px-4 py-3 pl-11 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
           />
         </form>
@@ -115,7 +115,7 @@ export function MahalleSitelerBrowser({ siteler, arsiv }: MahalleSitelerBrowserP
 
       {harfSeridiVar && !sorgu.trim() && (
         <div
-          className="mt-4 flex flex-wrap gap-2"
+          className="-mx-4 mt-4 flex snap-x gap-2 overflow-x-auto px-4 pb-2 sm:mx-0 sm:flex-wrap sm:overflow-visible sm:px-0 sm:pb-0"
           role="group"
           aria-label="Site adının baş harfine göre süzün"
         >
@@ -123,7 +123,7 @@ export function MahalleSitelerBrowser({ siteler, arsiv }: MahalleSitelerBrowserP
             type="button"
             onClick={() => setHarf(null)}
             aria-pressed={harf === null}
-            className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
+            className={`shrink-0 snap-start cursor-pointer rounded-full border px-3 py-2 text-xs font-medium transition-colors sm:py-1.5 ${
               harf === null
                 ? "border-gold bg-gold/10 text-gold-dark"
                 : "border-border bg-surface text-body hover:border-gold hover:text-gold-dark"
@@ -137,7 +137,7 @@ export function MahalleSitelerBrowser({ siteler, arsiv }: MahalleSitelerBrowserP
               type="button"
               onClick={() => setHarf(harf === h ? null : h)}
               aria-pressed={harf === h}
-              className={`cursor-pointer rounded-full border px-3 py-1.5 text-xs font-medium transition-colors ${
+              className={`shrink-0 snap-start cursor-pointer rounded-full border px-3 py-2 text-xs font-medium transition-colors sm:py-1.5 ${
                 harf === h
                   ? "border-gold bg-gold/10 text-gold-dark"
                   : "border-border bg-surface text-body hover:border-gold hover:text-gold-dark"
