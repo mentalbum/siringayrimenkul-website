@@ -407,3 +407,18 @@ Bir-iki sıra kazanç bunları ilk üçe taşır; öncelik burası olmalı.
 (106/10,2) gerçek ve Eryaman'a özel bir talep — ama içerik kararı Özgün'ün.
 TTBS/yetki belgesi sorguları (toplam ~520 gösterim) BİLEREK boş: TTBS yazısı
 31 Tem'de Özgün kararıyla silindi, yeniden önerilmez.
+
+### 2026-08-08 17:55 — BAŞLIK DÜZELTMESİ UYGULANDI ✅
+Devir listesindeki 1 numaralı madde tamamlandı (paralel oturum dosyaları
+bırakınca devralındı). `app/mahalleler/[mahalle]/[site]/page.tsx` +
+`app/mahalleler/[mahalle]/page.tsx`: lokasyon üçüncü bölümden İKİNCİ bölüme
+alındı. Canlı doğrulama:
+- "Panorama Garden Emlakçı | **Ata Mahallesi** | Evinizi Satalım, K…" (73 kr)
+- "Admira Göksu Konutları Emlakçı | **Eryaman** | Evinizi Satalım, …" (74 kr)
+- "Altay Mahallesi Emlakçı | **Eryaman** | Evinizi Satalım, Kiraya …" (67 kr)
+- "Susuz Mahallesi Emlakçı | **Yenimahalle Ankara** | Evinizi Satal…" (78 kr)
+Yenimahalle kolu ayrımı korundu; ticari mesaj duruyor, yalnız sıra değişti.
+Ayrıca generateMetadata'daki ölü `kisaIsim` değişkeni kaldırıldı.
+Fırsat listesindeki 26 site + 14 mahalle sayfası IndexNow'a bildirildi (200).
+ÖLÇÜM: 2-3 hafta sonra GSC'de bu sayfaların ortalama konumunu ve başlık
+gösterimini yeniden bak; karşılaştırma tabanı gsc-28gun-2026-08-08.json.
