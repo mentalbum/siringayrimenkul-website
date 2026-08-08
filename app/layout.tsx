@@ -8,7 +8,6 @@ import { Analytics } from "@vercel/analytics/next";
 import { GaYukleyici } from "@/components/analytics/ga-yukleyici";
 import { siteConfig } from "@/lib/site-config";
 import { getAllMahalleler } from "@/lib/content";
-import { getGoogleReviewSummary } from "@/lib/google-reviews";
 import { ORG_ID, OZGUN_ID, organizationLogo, websiteJsonLd } from "@/lib/structured-data";
 
 // Only weight 600 is ever used (globals.css sets all headings to 600; the map
@@ -94,8 +93,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const reviewSummary = await getGoogleReviewSummary();
-
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
@@ -200,13 +197,24 @@ export default async function RootLayout({
         closes: "17:00",
       },
     ],
-    ...(reviewSummary && {
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: reviewSummary.rating,
-        reviewCount: reviewSummary.userRatingCount,
-      },
-    }),
+    /* aggregateRating BİLEREK YOK (2026-08-08).
+     *
+     * Google'ın yorum snippet'i kuralı: "İncelenen kuruluş kendisi hakkındaki
+     * yorumları denetliyorsa, LocalBusiness veya herhangi bir Organization
+     * yapılandırılmış verisi kullanan sayfaları yıldız özelliği için uygun
+     * değildir." RealEstateAgent bir LocalBusiness alt tipi ve puan kendi
+     * sitemizde kendi işletmemiz için basılıyordu — yani bu işaretleme
+     * hiçbir koşulda yıldız üretemezdi; karşılığında yapılandırılmış veri
+     * politikası tarafında gereksiz risk taşıyordu. Kök layout'ta olduğu
+     * için 720'yi aşkın sayfanın hepsine basılıyordu.
+     *
+     * lib/google-reviews.ts aynı kuralı Review düğümü için zaten doğru
+     * uyguluyordu; bu, o kuralın AggregateRating'de kalmış açığıydı.
+     *
+     * GÖRÜNÜR yorum kutusu KALIYOR (components/ui/review-badge.tsx kendi
+     * verisini ayrıca çekiyor): kuralın yasakladığı şey işaretleme, ekranda
+     * gösterim değil. Harita kutusundaki 5,0 puan da GBP'den gelir,
+     * bu değişiklikten etkilenmez. */
   };
 
   return (
