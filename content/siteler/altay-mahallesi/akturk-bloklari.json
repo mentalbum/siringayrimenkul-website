@@ -3,36 +3,79 @@
   "slug": "akturk-bloklari",
   "mahalleSlug": "altay-mahallesi",
   "koordinat": {
-    "lat": 39.972518,
-    "lng": 32.640444
+    "lat": 39.972533,
+    "lng": 32.638909
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/akturk-bloklari-boundary.geojson",
-  "aciklama": "Aktürk Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yer alan büyük bir konut bölgesidir; yerel kayıtlarda sekiz adalık bir küme olarak gösterilir. Ana parselinde tapu, yaklaşık 6.131 m²'lik alanda sekiz kargir apartman kaydeder. Kümenin bütününü müteahhit Aktürk İnşaat kendi tanıtımında yaklaşık 90.000 m²'lik alanda, 5 ve 10 katlı bloklarda toplam 728 daire olarak tarif eder; bağımsız bir yerel ölçüm de kümenin kapladığı alanı 89 dönüm dolayında gösterdiği için bu ölçek dış kaynaklarla tutarlıdır. Yapıların tünel kalıp ve açık prefabrikasyon elemanlarla inşa edildiği kayıtlıdır. Yerleşim Sümbül Caddesi üzerindedir ve bölgenin toplu yapı yönetimine bağlıdır; yönetimin kendi kayıtlarına göre bu toplu yapı 1990 yılında yerleşime açılmış olup bünyesinde sağlık ocakları, kreşler, ilköğretim okulları, camiler, bir gençlik merkezi, çok sayıda çocuk parkı ve otopark bulunur. Age, Mesa ve Sutek kümeleriyle aynı kuşaktadır; bölgenin oturmuş, yeşil dokulu çevresini paylaşır. (Tunahan Mahallesi'ndeki Aktürk Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Aktürk Blokları, Altay Mahallesi'nde Eryaman'ın kooperatif kuşağında yedi komşu adaya yayılmış büyük bir konut bölgesidir. TKGM kayıtlarına göre bu yedi parselde toplam 65 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 52.219 m². Etabın toplu yapı yönetiminin blok listesi de aynı yedi adayı Aktürk bölgesi olarak sayar ve buradaki apartmanlar kod yerine isimle anılır — Abant, Toros, Maçka, Akgül ve Aktepe bunlardan birkaçıdır. Kümenin bütününü müteahhit Aktürk İnşaat kendi tanıtımında yaklaşık 90.000 m²'lik alanda, 5 ve 10 katlı bloklarda toplam 728 daire olarak tarif eder; yapıların tünel kalıp ve açık prefabrikasyon elemanlarla inşa edildiği kayıtlıdır. Yerleşim Sümbül Caddesi üzerindedir ve 1990'da yerleşime açılan toplu yapı yönetimine bağlıdır; bünyesinde sağlık ocakları, kreşler, ilköğretim okulları, camiler, bir gençlik merkezi, çok sayıda çocuk parkı ve otopark bulunur. Age, Mesa ve Sutek kümeleriyle aynı kuşaktadır; bölgenin oturmuş, yeşil dokulu çevresini paylaşır. (Tunahan Mahallesi'ndeki Aktürk Sitesi ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
+    {
+      "no": "17314",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 10480,
+      "nitelik": "12 Adet Kargir Apartman"
+    },
+    {
+      "no": "17315",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 12256,
+      "nitelik": "15 Adet Kargir Apartman"
+    },
+    {
+      "no": "17533",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 6111,
+      "nitelik": "8 Adet Kargir Apartman"
+    },
+    {
+      "no": "17534",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 5795,
+      "nitelik": "8 Adet Kargir Apartman"
+    },
+    {
+      "no": "17535",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 5862,
+      "nitelik": "8 Adet Kargir Apartman"
+    },
     {
       "no": "17536",
       "parsel": "1",
       "etap": "1",
       "alanM2": 6131,
       "nitelik": "8 Ader Kargir Apartman"
+    },
+    {
+      "no": "17537",
+      "parsel": "1",
+      "etap": "1",
+      "alanM2": 5584,
+      "nitelik": "6 Adet Kargir Apartman"
     }
   ],
   "ozellikler": [
-    "Yerel kayıtlarda 8 adalık küme — ana parselde 8 apartman (tapu)",
+    "7 komşu ada — toplam 65 kârgir apartman (TKGM)",
+    "Toplam ~52.219 m² parsel alanı (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Apartmanlar kod yerine isimle anılır (etap yönetimi blok listesi)",
     "Toplam 728 daire (müteahhit tanıtımı)",
     "5 ve 10 katlı bloklar (müteahhit tanıtımı)",
-    "Yaklaşık 90.000 m² yerleşim alanı (müteahhit tanıtımı)",
     "Müteahhit: Aktürk İnşaat (müteahhit tanıtımı)",
     "Tünel kalıp ve açık prefabrikasyon yapım tekniği (yerel kayıt)",
     "Sümbül Caddesi üzerinde (yerel kayıt)",
     "Age, Mesa ve Sutek kümelerine komşu",
     "Tunahan'daki Aktürk Sitesi'nden ayrı yerleşim",
-    "Kat mülkiyetli parsel (TKGM)",
     "Altay Mahallesi"
   ],
   "adres": "Sümbül Caddesi, Altay, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Altay Aktürk Blokları"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-08"
 }
