@@ -46,7 +46,11 @@ export const siteConfig = {
   ],
   googleMapsApiKey: process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ?? "",
   gaMeasurementId: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID ?? "",
-  yandexMapsUrl: "https://yandex.com.tr/maps/org/eryaman_sirin_gayrimenkul/40827902036/",
+  // Slug'sız (yalnız oid) biçim bilerek kullanılıyor: Yandex, işletme adı
+  // değişince slug'ı da yeniden üretiyor (ad "Eryaman Emlakçı Şirin Gayrimenkul"
+  // olunca slug "eryaman_emlakci_sirin_gayrimenkul" olacak). oid sabit kaldığı
+  // için bu adres ad değişikliklerinden etkilenmez — 08.08'de canlı doğrulandı.
+  yandexMapsUrl: "https://yandex.com.tr/maps/org/40827902036/",
   tiktokUrl: "https://www.tiktok.com/@siringayrimenkul",
   instagramUrl: "https://www.instagram.com/eryamansiringayrimenkul/",
   facebookUrl: "https://www.facebook.com/profile.php?id=61585267540417",
