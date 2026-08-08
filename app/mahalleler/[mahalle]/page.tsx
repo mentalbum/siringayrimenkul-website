@@ -29,7 +29,7 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
 import { eryamandaMi } from "@/lib/bolge";
-import { etapSayfasiVarMi } from "@/lib/etap-onayli";
+import { adaOnayliEtap, etapSayfasiVarMi } from "@/lib/etap-onayli";
 
 type Props = {
   params: Promise<{ mahalle: string }>;
@@ -610,20 +610,51 @@ export default async function MahallePage({ params }: Props) {
                     {etap}. Etap
                   </Link>
                 </h3>
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {adalar
-                    .filter((ada) => ada.etap === etap)
-                    .map((ada) => (
-                      <Link
-                        key={adaRouteKey(ada)}
-                        href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
-                        title={ada.site.isim}
-                        className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
-                      >
-                        {adaDisplayLabel(ada)}
-                      </Link>
-                    ))}
-                </div>
+                {/* ÇİPLER DARALTILDI (2026-08-08). Bu blok, adaları kayıtların
+                    DOĞRULANMAMIŞ `adalar[].etap` alanına göre gruplar; etap
+                    sayfası ise RESMÎ ada listesinden beslenir. İki küme
+                    çakışınca aynı ada hem burada çip hem etap sayfasında
+                    listeleniyordu: 173 çipin 144'ü mükerrerdi.
+                    Mahalle sayfası, ölçülen tek kazanılabilir sorgu sınıfının
+                    ("<mahalle> emlakçı") hedef sayfası; çıkış bağlarını
+                    kanonik'i başka sayfayı gösteren 70 ada adresine dağıtmak
+                    yerine siteler ve etap sayfalarında yoğunlaştırıyoruz.
+                    Resmî listede OLMAYAN adalar çip olarak kalır (29 ada;
+                    onları listeleyen başka sayfa yok — filtreyi kaldırırsak
+                    mahalle kolundan tamamen kopuyorlar). */}
+                {(() => {
+                  const resmiListedeOlmayan = adalar.filter(
+                    (ada) => ada.etap === etap && adaOnayliEtap(ada.no) === null
+                  );
+                  if (resmiListedeOlmayan.length === 0) {
+                    return (
+                      <p className="mt-2 text-sm text-muted">
+                        Bu etabın resmî ada listesi{" "}
+                        <Link
+                          href={`/mahalleler/${mahalle.slug}/etaplar/${etap}`}
+                          className="cursor-pointer font-medium text-gold-dark hover:underline"
+                        >
+                          {etap}. Etap sayfasında
+                        </Link>
+                        .
+                      </p>
+                    );
+                  }
+                  return (
+                    <div className="mt-3 flex flex-wrap gap-2">
+                      {resmiListedeOlmayan.map((ada) => (
+                        <Link
+                          key={adaRouteKey(ada)}
+                          href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(ada)}`}
+                          title={ada.site.isim}
+                          className="cursor-pointer rounded-full border border-border bg-surface px-3 py-1.5 text-sm text-navy transition-colors hover:border-gold hover:text-gold-dark"
+                        >
+                          {adaDisplayLabel(ada)}
+                        </Link>
+                      ))}
+                    </div>
+                  );
+                })()}
               </div>
             ))}
           </div>
