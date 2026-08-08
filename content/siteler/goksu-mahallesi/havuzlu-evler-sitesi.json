@@ -7,7 +7,7 @@
     "lng": 32.643594
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/havuzlu-evler-sitesi-boundary.geojson",
-  "aciklama": "Havuzlu Evler Sitesi, Göksu'nun adını da verdiği 'Havuzluevler' kuşağının merkezinde yer alan üç bloklu bir konut sitesidir. TKGM kayıtlarına göre 19.282 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '3 Bloktan Oluşan Betonarme Apartman' olarak tanımlar. Üç bloklu ferah yerleşimi ve havuzlu site geleneğiyle, komşuları Sude Konutları ve Havuzlu Bahçe Konutları ile birlikte Göksu'nun bu kesimine karakterini veren yerleşimlerdendir. (Ata Mahallesi'ndeki Havuz Kent ayrı bir yerleşimdir.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Havuzlu Evler Sitesi, Göksu'nun yerel kayıtlarda 'Havuzluevler' diye anılan kuşağının merkezinde yer alan üç bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 19.282 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '3 Bloktan Oluşan Betonarme Apartman' olarak tanımlar. Kadastro sınırındaki yerleşim adası kabaca 205 × 165 metrelik derli toplu bir dörtgendir; 19 dönümü aşan bu alanda yalnızca üç blok bulunması, blokların arasına geniş ortak alan bırakan seyrek yerleşim düzenini anlatır. Kuşağa adını veren havuzlu site geleneği de bu düzenin parçasıdır.\n\nYerleşim adası göl ve park kuşağının tam ortasında oturur. Kuzeyinde, aradan geçen cadde dışında komşusu Kaşmir Mavi Orkide'dir; o projenin bünyesindeki alışveriş merkezi günlük ihtiyaç için yürüme mesafesinde kalır. Batı-kuzeybatı yönünde Havuzlu Bahçe Konutları, güney tarafında Yeşil Göl Sitesi ile Göksu Parkı'na doğrudan açılan Göksupark Konutları yer alır — yani Göksu Parkı, göleti ve Eryaman 1-2 metro istasyonu bu adadan yürüyerek ulaşılabilir mesafededir. Sınır kayıtlarımıza göre komşu adalarla arada yalnızca cadde genişliği kadar mesafe vardır; site, çevresi tamamen yerleşmiş bir dokunun içindedir.\n\nEv sahibi açısından üç bloklu ölçeğin iki pratik sonucu var. Birincisi daire stoğu sınırlıdır: aynı dönemde ilana çıkan daire sayısı az olduğundan doğru sunumla öne çıkmak kolaydır, ama site içinden emsal bulmak her zaman mümkün olmaz — fiyat çoğu kez aynı kuşaktaki komşu sitelerin verisiyle birlikte okunur. İkincisi ad karışıklığıdır: hemen batıdaki Havuzlu Bahçe Konutları ayrı bir sitedir, Ata Mahallesi'ndeki Havuz Kent ise bambaşka bir yerleşimdir. Bu kuşakta arama yapılırken ilanınızın doğru site adı ve doğru blokla yayımlanması bu yüzden önemlidir. İlan pazarında site ağırlıklı olarak geniş 4+1 dairelerle temsil ediliyor; bu profil, sunumun ve emsal seçiminin geniş yaşam alanı ölçeğine göre kurulmasını gerektirir.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "48146",
@@ -18,9 +18,12 @@
     "~19.282 m² parsel (TKGM)",
     "3 blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Göksu Parkı ve göletine yürüme mesafesi",
+    "Kaşmir Mavi Orkide ve alışveriş merkezi karşı adada",
+    "İlan pazarında geniş 4+1 daireler",
     "Göksu Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-17",
+  "zenginlestirildi": "2026-08-08",
   "alternatifAdlar": [
     "Göksu Havuzluevler",
     "Göksu Havuzlu Evler Sitesi"

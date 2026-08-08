@@ -7,7 +7,7 @@
     "lng": 32.607608
   },
   "sinirGeoJSON": "siteler/devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi-boundary.geojson",
-  "aciklama": "Bilgi Sevgi Hoşgörü Sitesi, Eryaman Devlet Mahallesi'nde yer alan büyük ölçekli bir konut sitesidir — adı da mahallenin en ilgi çekici site adlarından. TKGM kayıtlarına göre site, tapuda \"6 Adet Kârgir Apartman\" niteliğiyle kayıtlı 13.854 m²'lik kat mülkiyetli tek parselin üzerine kurulu. Yerel emlak kayıtlarında bloklar 3'ten 25'e yalnızca tek sayılarla numaralanmış: toplam on iki blok. Bu ölçekte bir sitede emsal çoktur ama her dairenin hikâyesi farklıdır — satmayı ya da kiraya vermeyi düşünüyorsanız, doğru fiyatı site içi emsalleri yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Bilgi Sevgi Hoşgörü Sitesi, Eryaman Devlet Mahallesi'nde yer alan büyük ölçekli bir konut sitesidir — adı da mahallenin en ilgi çekici site adlarından. TKGM kayıtlarına göre site, tapuda \"6 Adet Kârgir Apartman\" niteliğiyle kayıtlı 13.854 m²'lik kat mülkiyetli tek parselin üzerine kurulu; parsel doğuda Şapka Devrimi Caddesi'ne cephelidir, kuzey sınırını 341. Cadde çizer. Yerel emlak kayıtlarında bloklar 3'ten 25'e yalnızca tek sayılarla numaralanmış: toplam on iki blok. Aynı kayıtlar on iki bloğun tamamını 1998 yapım yılıyla tarihler; her blok beşer katlı ve blok başına on daireli olduğundan sitede toplam 120 konut bulunur, dairelerin tamamı 3+1 ve yaklaşık 120 m² olarak geçer. Tek tip plan, site içinde emsal karşılaştırmasını kolaylaştıran bir avantajdır — burada farkı daire değil, blok, kat, cephe ve iç durum yaratır. Isınma bloktan bloğa değişir: kayıtlarda blokların çoğu merkezi sistemle, 5. ve 23. bloklar bireysel doğalgaz (kombi) ile görünür; daireniz hangi grupta ise bunu ilan metninde ayrıca belirtmek gerekir, çünkü aidat ve kullanım beklentisini doğrudan etkiler. Blok künyelerinde kapıcı, otopark, çocuk oyun parkı, jeneratör, hidrofor ve su deposu sayılıyor; bir bölüm blokta asansör, ısı yalıtımı ve yangın merdiveni de kayıtlı — bu donatı farkları da aynı sitede iki dairenin değerini ayırabilir. Yaklaşık on dört dönümlük parseli on iki alçak bloğun paylaşması, blok aralarına geniş bahçe ve otopark payı bırakır. Çevrede Şeker Parkı ve Ayşegül Tuna İlkokulu birkaç yüz metre içinde kalır; Devlet Mahallesi metro istasyonu yaklaşık bir kilometre uzaklıktadır. Tapu kaydındaki altı bina ile sahada kullanılan on iki blok numarası arasındaki farkı, bağımsız bölüm kaydına bakarak netleştiririz — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Bu ölçekte emsal çoktur ama her dairenin hikâyesi farklıdır: doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18709",
@@ -19,9 +19,17 @@
   "ozellikler": [
     "13.854 m² tek parsel (TKGM)",
     "12 blok (3–25, tek sayılı seri)",
+    "1998 yapımı, beşer katlı bloklar",
+    "Blok başına 10 daire — sitede toplam 120 konut",
+    "Daireler 3+1, yaklaşık 120 m² (tek tip plan)",
+    "Isınma: çoğu blokta merkezi sistem, bir bölümünde kombi",
+    "Kapıcı, otopark, çocuk oyun parkı, jeneratör, su deposu",
+    "Şapka Devrimi Caddesi cephesi — 341. Cadde köşesi",
+    "Şeker Parkı ve ilkokul yürüme mesafesinde",
     "Devlet Mahallesi'nin büyük ölçekli sitelerinden",
     "Kat mülkiyetli parsel (TKGM)",
     "Devlet Mahallesi — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "adres": "Devlet Mahallesi Şapka Devrimi Caddesi, Etimesgut/Ankara",
+  "zenginlestirildi": "2026-08-08"
 }

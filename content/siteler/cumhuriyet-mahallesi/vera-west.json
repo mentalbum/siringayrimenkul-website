@@ -7,7 +7,7 @@
     "lng": 32.664496
   },
   "sinirGeoJSON": "siteler/cumhuriyet-mahallesi/vera-west-boundary.geojson",
-  "aciklama": "Vera West, Yeni Batı (Cumhuriyet Mahallesi) bölgesinde Çelikoğlu İnşaat (Çelikoğlu Grup) tarafından geliştirilmiş bir konut projesidir. Proje kaynaklarına göre iki blokta toplam 135 daire (82 adet 2,5+1 ve 53 adet 3,5+1) ile 12 ticari üniteden oluşuyor — geniş aile dairelerine odaklı bir yapı. Atatürk Orman Çiftliği (AOÇ) yönüne bakan cephesi projenin öne çıkan özelliği; asansör, kapalı otopark, çocuk oyun alanları, güvenlik ve fitness gibi site içi donatılar bulunuyor. Tapu kaydına göre proje, yaklaşık 10.927 m²'lik parselde on beşer katlı A ve B blokları ile ikişer katlı C ve D bloklarından oluşur. Bu sitede satılık veya kiralık daireniz mi var? Geniş dairelerde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Vera West, Yeni Batı'da (Cumhuriyet Mahallesi) Sezai Karakoç Caddesi üzerinde Çelikoğlu İnşaat (Çelikoğlu Grup) tarafından geliştirilmiş bir konut projesidir. Firmanın aynı bölgede art arda hayata geçirdiği Vera serisinin (Vera Point, Vera Vista, Vera City) geniş daireli halkalarından biri: proje kaynaklarına göre iki blokta toplam 135 daire — 82 adet 2,5+1 (yaklaşık 136 m² brüt / 116 m² net) ve 53 adet 3,5+1 (yaklaşık 166 m² brüt / 142 m² net) — ile 12 ticari ünite yer alıyor. Daire içlerinde ebeveyn banyosu, giyinme odası ve balkon gibi geniş oturuma dönük çözümler öne çıkarılmış; bu ayrıntılar, benzer metrekaredeki dairelerin ayrıştığı noktalardır. Atatürk Orman Çiftliği (AOÇ) yönüne bakan cephesi projenin öne çıkan özelliği; site içinde 135 araçlık kapalı otopark, fitness salonu, sauna, basketbol ve futbol sahası, kapalı çocuk oyun alanı, botanik peyzajlı yürüyüş parkuru, jeneratör ile kameralı özel güvenlik bulunuyor. Tapu kaydına göre proje, yaklaşık 10.927 m²'lik kat mülkiyetli parselde on beşer katlı A ve B blokları ile ikişer katlı C ve D bloklarından oluşur; yani iki yüksek katlı konut bloğuna alçak yapılar eşlik eder ve parselin büyük bölümü bahçeye kalır. Bu sitede satılık veya kiralık daireniz mi var? Geniş dairelerde fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "62659",
@@ -19,14 +19,22 @@
   "ozellikler": [
     "Tapu: 15'er katlı A-B + 2'şer katlı C-D blokları",
     "Yaklaşık 10,9 dönümlük parsel (TKGM)",
-    "Çelikoğlu İnşaat — 2 blok, 135 daire",
-    "82 × 2,5+1, 53 × 3,5+1",
-    "12 ticari ünite",
+    "Çelikoğlu İnşaat (Çelikoğlu Grup) — Vera serisi",
+    "2 blok, 135 daire + 12 ticari ünite",
+    "82 × 2,5+1 (~136 m² brüt / 116 m² net)",
+    "53 × 3,5+1 (~166 m² brüt / 142 m² net)",
+    "Ebeveyn banyosu, giyinme odası, balkon (proje kaynağı)",
+    "135 araçlık kapalı otopark",
+    "Fitness salonu, sauna, basketbol ve futbol sahası",
+    "Kapalı çocuk oyun alanı, botanik peyzaj ve yürüyüş parkuru",
+    "Jeneratör, kameralı özel güvenlik",
     "Kat mülkiyetli parsel (TKGM)",
-    "Atatürk Orman Çiftliği (AOÇ) manzaralı cephe"
+    "Atatürk Orman Çiftliği (AOÇ) manzaralı cephe",
+    "Sezai Karakoç Caddesi, Yeni Batı"
   ],
+  "adres": "Sezai Karakoç Caddesi, Yeni Batı, Yenimahalle/Ankara",
   "alternatifAdlar": [
     "Vera West Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

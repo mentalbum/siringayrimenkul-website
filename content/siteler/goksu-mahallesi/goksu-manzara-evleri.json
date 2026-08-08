@@ -7,7 +7,7 @@
     "lng": 32.646971
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/goksu-manzara-evleri-boundary.geojson",
-  "aciklama": "Göksu Manzara Evleri, Göksu Mahallesi'nde 14 katlı tek bloklu bir konut yapısıdır. TKGM kayıtlarına göre 4.709 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '14 Katlı Betonarme Mesken' olarak tanımlar. Adının vurguladığı gibi üst katların açık görüşü öne çıkar; tek blok ölçeği az komşulu, yönetimi yalın bir yaşam sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Göksu Manzara Evleri, Göksu Mahallesi'nde 5328. Cadde hattında yükselen 14 katlı tek bloklu bir konut yapısıdır. TKGM kayıtlarına göre 4.709 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '14 Katlı Betonarme Mesken' olarak tanımlar; tek yapıya ayrılmış bu ölçek, blok çevresinde rahat bir açık alan ve otopark payı bırakır. Harita servislerinde site 'konut blokları' kategorisiyle kayıtlıdır, ilan portallarında ise kendi adıyla ayrı bir site etiketi taşır — dairenizi tanıtırken site adını başlıkta anmak, sizi doğrudan bu etiketi arayan talebin karşısına çıkarır.\n\nYapı adasını batı yönündeki komşuları Koru Eryaman ve Evinora ile paylaşır; adanın kuzey ucu Susuz sınırına dayanır ve orada Lake Life yer alır. Bu sıra, Susuz Gölü ile Göksu Parkı arasında kurulan yeni yerleşim kuşağının cadde cephesini oluşturur: yakın çevredeki blokların çoğu son dönem yapı stoğundandır ve tapu kayıtlarına göre 15-18 kat aralığında yükselir.\n\nAdındaki 'manzara' vurgusunun ev sahibi açısından pratik karşılığı buradan çıkar. Çevresi kendisiyle aynı ya da daha yüksek bloklardan oluşan bir sırada görüş, kata ve cepheye göre belirgin biçimde değişir; yani dairenizin değerini ayıran ana değişken metrekare değil, bulunduğunuz kat ile pencerelerin baktığı yöndür. Sunumu hazırlarken cepheyi ve o kattan gerçekten görüneni açıkça anlatmak — vadi tarafı mı, cadde tarafı mı, hangi kattan sonra ufuk açılıyor — ilanın en güçlü kısmı olur. İlan kayıtlarında sitede teraslı 4+1 planların bulunduğu görülür; teras kullanımı olan bir daireniz varsa bu, aynı kuşaktaki standart planlara karşı tek başına ayrıştırıcı bir başlıktır.\n\nTek bloklu düzenin ikinci sonucu ölçektir: ortak alan yükü ve yönetim yalın kalır, az komşulu bir yerleşim olduğu için aynı dönemde ilana çıkan daire sayısı da sınırlı olur. Bu, doğru fotoğraf ve doğru başlıkla öne çıkmayı kolaylaştırır; buna karşılık emsal ararken blok içi örnek az kalabildiğinden çevredeki benzer yaştaki ve benzer kat yüksekliğindeki yapıları da hesaba katmak gerekir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63379",
@@ -18,12 +18,16 @@
   ],
   "ozellikler": [
     "~4.709 m² parsel (TKGM)",
-    "14 katlı yapı (tapu kaydı)",
+    "14 katlı tek blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Yapı adasını Koru Eryaman ve Evinora ile paylaşır",
+    "5328. Cadde hattı — Susuz Gölü ile Göksu Parkı arasındaki yeni yapı kuşağı",
+    "İlan kayıtlarında teraslı 4+1 planlar görülür",
     "Göksu Mahallesi"
   ],
+  "adres": "5328. Cadde No:5, Göksu, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Göksu Manzara Sitesi"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }

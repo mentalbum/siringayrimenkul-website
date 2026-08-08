@@ -7,7 +7,7 @@
     "lng": 32.653086
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/yeniceri-kule-boundary.geojson",
-  "aciklama": "Yeniçeri Kule, Göksu'da İhlas Caddesi üzerinde, Göksu Parkı'nın bitişiğinde Yeniçeri Grup tarafından inşa edilen 26 katlı (zemin+25) bir yapıdır — tamamlandığı dönemde Eryaman'ın en yüksek yapısı olarak duyurulmuştu. Dairelerin tamamı geniş 4+1 tipinde (brüt 196 m²) ve akıllı ev donanımlıdır; park bitişiği konumu üst katlara kesintisiz göl-park manzarası kazandırır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Yeniçeri Kule, Göksu Mahallesi'nde İhlas Caddesi üzerinde, Göksu Parkı'nın hemen yanında Yeniçeri Kule İnşaat imzasıyla yükselen tek bloklu bir konut yapısıdır. Proje kayıtlarına göre yapı zemin+25 kat olarak kurgulanmış ve blokta 102 daire yer almıştır; dairelerin tamamı brüt 196 m² ve 4+1 tipindedir — yani binada ara tip yoktur, baştan sona geniş daire arayan aile profiline göre planlanmıştır. Aynı kayıtlar donatı listesini akıllı ev sistemi, peyzajlı yeşil alan, yürüyüş yolu ve süs havuzu, açık ve kapalı çocuk oyun alanları, kreş, basketbol sahası, fitness salonu, kadınlar ve erkekler için ayrı sauna, açık ve kapalı otopark, market ile 7/24 kameralı güvenlik olarak verir; saunaları yapan firma da işi kendi referansları arasında gösterir, dairelerdeki ankastre uygulaması ise tedarikçinin proje listesinde 102 daireyle kayıtlıdır. Teslim takvimi tanıtımda 2018 yılının sonu olarak duyurulmuştu. Park bitişiği konum ile yüksek kat kurgusu bir araya gelince üst katlarda park ve göl yönüne engelsiz bir görüş kalır; bu da aynı binada kat ile cephe farkının değere doğrudan yansıdığı anlamına gelir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "16828",
@@ -15,15 +15,21 @@
     }
   ],
   "ozellikler": [
-    "Yeniçeri Grup — 26 katlı yapı",
-    "Tamamı 4+1 (brüt 196 m²), akıllı daireler",
-    "Göksu Parkı bitişiği — park/göl manzarası",
+    "Tek blok, zemin+25 kat — 102 daire (proje kayıtları)",
+    "Tüm daireler 4+1, brüt 196 m² — ara tip yok",
+    "Akıllı ev sistemi ve ankastre donanım",
+    "Fitness salonu, kadınlar ve erkekler için ayrı sauna",
+    "Kreş, açık ve kapalı çocuk oyun alanları, basketbol sahası",
+    "Peyzajlı yeşil alan, yürüyüş yolu, süs havuzu",
+    "Market, açık ve kapalı otopark, 7/24 kameralı güvenlik",
+    "Göksu Parkı bitişiği — üst katlarda park ve göl yönü açık",
+    "Yeniçeri Kule İnşaat imzalı (proje kayıtları)",
     "Kat mülkiyetli parsel (TKGM)",
-    "İhlas Caddesi / Göksu"
+    "İhlas Caddesi / Göksu Mahallesi"
   ],
-  "adres": "İhlas Caddesi, Göksu, Etimesgut/Ankara",
+  "adres": "İhlas Caddesi, Göksu Mahallesi, Etimesgut/Ankara",
   "alternatifAdlar": [
     "Yeniçeri Kule Sitesi"
   ],
-  "zenginlestirildi": "2026-07-30"
+  "zenginlestirildi": "2026-08-08"
 }

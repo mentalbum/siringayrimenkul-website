@@ -7,7 +7,7 @@
     "lng": 32.622355
   },
   "sinirGeoJSON": "siteler/ata-mahallesi/dilara-sitesi-boundary.geojson",
-  "aciklama": "Dilara Sitesi, Ata Mahallesi'nde üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 14.839 m²'lik kat mülkiyetli parsel üzerine kuruludur. Üç bloğun yaklaşık 15 dönümlük parsele seyrek yerleşimi, blok aralarını ve yeşil payını geniş tutar; Ata'nın villa ve bahçeli site kuşağına komşu bu kesim, sakin bir yerleşim dokusu sunar. Yerel emlak kayıtlarında Dilara Sitesi adı, hemen bitişikteki komşu adada yer alan bloklarla birlikte kullanılır; bu geniş anlamıyla site toplam sekiz bloğu kapsar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Dilara Sitesi, Yenimahalle'ye bağlı Ata Mahallesi'nde, 3499. Sokak hattında yer alan üç bloklu bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '3 Blok Kargir Apartman' niteliğiyle kayıtlı 14.839 m²'lik kat mülkiyetli parsel üzerine kuruludur. Yaklaşık 15 dönümlük bir parselin yalnızca üç bloğa karşılık gelmesi, blok aralarını ferah bırakan, açık alan ve otopark payı yüksek bir yerleşim demektir; üç bloğun tek parselde tek kat mülkiyeti düzeninde toplanması ise yönetimin ve ortak giderlerin tek site çatısı altında yürümesi anlamına gelir.\n\nSitenin adı okunurken bir ayrım gerekir. Yerel semt rehberi kayıtlarında 'Dilara Sitesi' adı yalnız bu üç bloğu değil, hemen bitişikteki komşu adayla birlikte oluşan daha geniş konut adasını işaret eder; aynı kayıtta A, B ve C harfleriyle ayrılan üçer blok ile Mizan ve Şelale adlarıyla anılan iki blok, toplam sekiz yapı sayılır ve bu geniş tanımın alanı yaklaşık 37 dönüm olarak verilir. Tapuda ise bu yapılar ayrı parsellerde durur: Dilara'nın kendi kaydı üç bloklu tek parseldir, Mizan Sitesi ile Şelale Sitesi kendi parselleriyle birer komşudur. Bölgenin kooperatif kökenli yerleşim düzeninde bu iç içelik olağandır. Ev sahibi açısından pratik karşılığı nettir: ilan platformlarında aynı site adıyla listelenen daireler zaman zaman komşu bloklardan gelir, bu yüzden emsal karşılaştırması site geneli yerine blok bazında okunmalıdır. Kendi bloğunuzun hangi kayıtta durduğunu bilerek pazara çıkmak, pazarlıkta elinizi baştan güçlendirir.\n\nKonum tarafında Ata Mahallesi idari olarak Yenimahalle'ye bağlıdır, gündelik yaşamı ve konut piyasası ise hemen güneyindeki Eryaman'la iç içe işler. Site, mahallenin site düzeniyle kurulmuş konut cebinde yer alır; sınır verilerimize göre en yakın komşuları Mizan ve Şelale siteleri, birkaç yüz metre çevresinde ise Akonur, Tekirdağ Park Evleri, Güzel Akyüzüm ve Özkardeşler siteleri bulunur — çevre tek tek apartmanlardan değil, geniş parselli site düzeninden oluşur. Ulaşımda tablo açıktır: mahalle sınırları içinde metro istasyonu yoktur, M3 hattına otobüs ya da kısa bir araç aktarmasıyla bağlanılır. Buna karşılık sitenin bağlandığı 3499. Sokak üzerinde otobüs durağı bulunur; Musa Efendi Camii ve Kıbrıs Şehitleri Parkı durakları da yürüme mesafesindedir. Yenimahalle Belediyesi'nin yürüyüş parkuru, basketbol ve futbol sahaları ile çocuk oyun alanları bulunan Kıbrıs Şehitleri Parkı sitenin kısa bir yürüyüş kuzeyindedir; Şehit Cumali Akman Caddesi ile Ağrı Dağı Caddesi yakın çevredeki ana bağlantılardır. Dairenizi satışa ya da kiraya çıkardığınızda ulaşım sorusu mutlaka gelir — cevabı savuşturmak yerine önden vermek, ilanı ciddiye alınan tarafa taşır.\n\nBu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46197",
@@ -18,9 +18,12 @@
   ],
   "ozellikler": [
     "~14.839 m² parsel (TKGM)",
+    "Tapuda 3 blok kargir apartman (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
-    "Geniş anlamıyla 8 blok (komşu adayla birlikte)",
-    "Ata Mahallesi"
+    "Yerel rehberde 8 bloklu geniş tanım (komşu adayla birlikte)",
+    "3499. Sokak hattı — sokak üzerinde otobüs durağı",
+    "Mahallede metro yok — M3 hattına aktarmalı ulaşım",
+    "Ata Mahallesi — Eryaman'ın yanı başı"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-08"
 }

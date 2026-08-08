@@ -7,7 +7,7 @@
     "lng": 32.6254625
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/demirel-park-evleri-boundary.geojson",
-  "aciklama": "Demirel Park Evleri, Şeyh Şamil Mahallesi'nde 10'ar katlı üç bloklu, çok geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '10 Katlı A, B ve C Blok' niteliğiyle kayıtlı 19.523 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 20 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan payı bırakır. Yerel kaynaklara göre site 2007 yılında inşa edilmiştir; aynı kayıtlarda daireler 3+1 planlı ve yaklaşık 120 m² büyüklüğünde görünür. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Demirel Park Evleri, Şeyh Şamil Mahallesi'nde 10'ar katlı üç bloklu, çok geniş parselli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '10 Katlı A, B ve C Blok' niteliğiyle kayıtlı 19.523 m²'lik kat mülkiyetli parsel üzerine kuruludur — üç bloğa karşılık yaklaşık 20 dönümlük parsel, adındaki park vurgusunu karşılayan cömert bir açık alan payı bırakır. Site, harita ve adres kayıtlarında mahallenin 607. Sokak hattında görünür; toplu taşıma kayıtlarında ise kendi adını taşıyan bir otobüs durağı vardır. Bir sitenin adının durak levhasına geçmesi küçük bir ayrıntı gibi durur ama işe yarar bir işarettir: mahalle içinde tarif noktası sayılan, adres olarak bilinen bir yerleşimdir. Yerel kaynaklara göre site 2007 yılında inşa edilmiştir; ilan kayıtlarında daireler ağırlıkla 3+1 plan tipinde ve bireysel kombi ısıtmalı görünür. Metrekare bilgisi kayıttan kayda değiştiği için daireyi tanıtırken bu rakamı belge üzerinden teyit etmek gerekir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "46261",
@@ -20,10 +20,13 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Şeyh Şamil Mahallesi",
     "2007 yapımı (yerel kayıtlar)",
-    "3+1, yaklaşık 120 m² daireler (yerel kayıtlar)"
+    "3+1 planlı daireler (ilan kayıtları)",
+    "Bireysel kombi ısıtma (ilan kayıtları)",
+    "607. Sokak hattı",
+    "Adını taşıyan otobüs durağı"
   ],
   "alternatifAdlar": [
     "Demirel Park Sitesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-08"
 }
