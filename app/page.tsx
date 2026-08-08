@@ -480,7 +480,7 @@ export default function HomePage() {
                  yorum SAYISI yazılmaz (kural), 5,0 puan serbest. */
               soru: "Eryaman'da güvenilir emlakçı nasıl bulunur?",
               cevap:
-                "Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir ofis adresi ve işletme profili. Türkiye'de emlak aracılığı yetki belgesine bağlıdır; bizim belge numaramız 0603771. Ofisimiz Tunahan Mahallesi'nde 4. Etap Çarşı'da — arayıp randevu alabileceğiniz, kapısından girebileceğiniz bir yer. Google'daki işletme profilimiz 5,0 puanlıdır. Adres ve belge bilgisi paylaşmayan emlak sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.",
+                "Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir ofis adresi ve işletme profili. Türkiye'de emlak aracılığı yetki belgesine bağlıdır; bizim belge numaramız 0603771. Ofisimiz Tunahan Mahallesi'nde 4. Etap Çarşı'da — arayıp randevu alabileceğiniz, kapısından girebileceğiniz bir yer. Google'daki işletme profilimiz 5,0 puanlıdır. Adres ve belge bilgisi paylaşmayan emlak sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın. Dördüncü bir test daha var: karşınızdakine kendi sitenizin adını sorun. Bölgeyi gerçekten çalışan bir ofis siteyi tanır — bizim buradaki 700'den fazla site kaydının her biri tapu verisiyle doğrulanarak hazırlandı.",
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
@@ -489,11 +489,6 @@ export default function HomePage() {
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",
               cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerleme görüşmesi satış ya da kiralama sürecinin ilk adımıdır: evinizin bulunduğu site ve mahalledeki gerçek hareketlilik üzerinden konuşuruz, görüşme sonunda elinizde gerçekçi bir aralık olur.`,
-            },
-            {
-              soru: "Eryaman emlakçı ararken neye bakmalıyım?",
-              cevap:
-                "Üç şeye bakın: işletmenin Taşınmaz Ticareti Yetki Belgesi olup olmadığına (bizimki: 0603771), Google profilindeki gerçek müşteri yorumlarına ve bölgeyi gerçekten tanıyıp tanımadığına. Biz Eryaman'ı ada-parsel düzeyinde çalışıyoruz; bu sitedeki 700'den fazla site kaydının her biri tapu verisiyle doğrulanarak hazırlandı.",
             },
             {
               soru: "Evimi satsam mı, kiraya mı versem?",
