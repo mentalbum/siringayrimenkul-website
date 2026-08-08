@@ -7,7 +7,7 @@
     "lng": 32.623209
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/yardimci-bloklari-boundary.geojson",
-  "aciklama": "Yardımcı Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın batı kuşağında beş yerleşim adasına yayılmış konut kümesidir. TKGM kayıtlarına göre adalarda toplam 27 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 29.496 m². Küme, Tekser ile Eston 2 blokları arasındaki bandı doldurur; Tunahan Mahallesi'ndeki 4. Etap Yardımcı Blokları aynı adı taşıyan ayrı bir yerleşimdir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yardımcı Blokları, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın batı kuşağında beş yerleşim adasına yayılmış konut kümesidir. TKGM kayıtlarına göre adalarda toplam 27 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 29.496 m². Etabın toplu yapı yönetiminin ada kayıtları da aynı 27 bloğu ve toplam 420 daireyi gösteriyor. Küme, Tekser ile Eston 2 blokları arasındaki bandı doldurur; Tunahan Mahallesi'ndeki 4. Etap Yardımcı Blokları aynı adı taşıyan ayrı bir yerleşimdir. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17321",
@@ -37,6 +37,7 @@
   ],
   "ozellikler": [
     "5 ayrı ada — toplam 27 kârgir apartman (TKGM)",
+    "27 blok, 420 daire (3. Etap Toplu Yapı Yönetimi ada kayıtları)",
     "Toplam ~29.496 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "Tekser ile Eston 2 kümeleri arasındaki batı bandı",
@@ -46,5 +47,5 @@
     "3. Etap Yardımcı Blokları",
     "Yardımcı Sitesi"
   ],
-  "zenginlestirildi": "2026-08-07"
+  "zenginlestirildi": "2026-08-08"
 }

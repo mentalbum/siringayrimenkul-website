@@ -1504,3 +1504,28 @@ eşik bandında, yani derinleşirse kazanç var.
 
 **Özgün'den gereken:** blok sayısı, kat adedi, daire tipleri, yapım/teslim yılı,
 geliştirici adı. Bunlar gelmeden metin uzatılmayacak (uydurma yasağı).
+
+## Etap künye denetimi (2026-08-08) — yönetim kayıtları 7 siteye işlendi
+İki resmî uç toplu olarak hasat edildi ve repo künyeleriyle karşılaştırıldı:
+- **1. Etap:** eryaman1.com'un Wayback'teki blok tablosu 63 adayı bölgeye bağlıyor. Repo
+  kayıtlarıyla karşılaştırma: Mesa (17312/17524/17527), Betontaş (17516-23), Kutlutaş 1
+  (17499-511), AGE (17538/17544-47/17555-58), Sutek (17539-43) **birebir uyumlu** — düzeltme
+  gerekmedi. Tek fark Aktürk'te: tablo 8 ada sayıyor (17313, 17314, 17315, 17533-17537).
+  **17533 yeni bulundu** (TKGM: 8 Adet Kargir Apartman, 6.111 m², kat mülkiyetli) — kaydın
+  "sekiz adalık küme" ifadesi böylece kaynağına oturdu.
+- **Basılı planın atlanan sıraları kapandı:** 17527 (MESA), 17533 (AKTÜRK), 17544 + 17545 (AGE)
+  basılı ada listesinde yok ama yönetimin blok tablosunda var → ETAP_1_ADALARI'na eklendi,
+  doğrulanmış toplam 63'ten **67**'ye çıktı. Belgenin iddia ettiği 70'e kalan fark için ikinci
+  kaynak yok, o adalar uydurulmadı.
+- **3. Etap:** `eryaman3.com/Home/AdaYonetimBilgisi?AdaId=<ada>` ucu 42 ada için blok + daire
+  sayısı veriyor. 7 kayda işlendi: Tekser 34 blok/436 daire, Tepe 24/380, İçtaş 32/412,
+  Eston 1 29/404, Yardımcı 27/420, Çamlıca 6/84, Eston 2 (yönetim kaydı olan 3 adada) 14/240.
+  TKGM apartman sayılarıyla karşılaştırma: Tekser/Tepe/Yardımcı/Çamlıca **birebir**, İçtaş 33↔32
+  ve Eston 1 28↔29 birer fark — metinde iki kaynak da ayrı ayrı belirtildi, sayı zorlanmadı.
+- **Onarım:** camlica-sitesi açıklamasındaki bozuk cümle ("Eryaman 3. TKGM kayıtlarına göre…")
+  düzeltildi; alarko-bloklari'ndaki aynı hata 07.08'de onarılmıştı — bu kalıp başka kayıtlarda
+  da olabilir, süpürme adayı.
+- **Henüz kullanılmayan veri:** aynı blok tablosu 1. Etap'ın TÜM bloklarının ADLARINI da veriyor
+  (Kutlutaş'ta Bayındır/Çayeli/Gebze, İçtaş'ta Fulya/Gökkuşağı gibi). Bloklar isimle anıldığı
+  için bu, ilan ve adres dilinde karşılığı olan bir arşiv — Aktürk kaydında örnek olarak
+  kullanıldı, diğer 1. Etap kayıtlarına da işlenebilir.
