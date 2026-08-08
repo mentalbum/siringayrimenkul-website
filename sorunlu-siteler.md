@@ -1460,3 +1460,26 @@ Kalan açık işler:
   YAN BULGU: bilgiemlak 3. Etap düğümü altında Klima(6) 17624-25/17644-48 ve Öztaş 17652-61 (4. Etap
   176xx adaları!) da listeleniyor — be bölge başlığı yine güvenilmez çıktı, bu adalar resmî 3. Etap
   listesi DIŞI, dokunulmadı. 2. Etap'ta 17476/78/79 (yönetim binası/iş merkezi/okul, konut dışı) kayıtsız kalır.
+
+## 1. Etap kapsama turu (2026-08-08) — Aktürk 6 adaya çıktı, 17313 sorusu Özgün'de
+Planın 11 kayıtsız adası TKGM'den tek tek sorgulandı (11/11 yanıt) ve üç kaynakla eşlendi:
+eryaman1.com'un Wayback'teki "APARTMAN YÖNETİMLERİ" tablosu (Bölge Adı | Ada No | Blok Adı;
+2010 + 2016 + Kadromuz sayfası = 3 snapshot), bilgiemlak 1. Etap kümeleri, repo komşuluk analizi.
+- **KAPANDI:** 17314 (12 apartman), 17315 (15), 17534 (8), 17535 (8), 17537 (6) → hepsi **AKTÜRK**.
+  TKGM blok sayıları yönetim tablosundaki blok adı sayılarıyla BİREBİR tuttu (12/15/8/8/6).
+  akturk-bloklari kaydı 1 adadan 6 adaya çıkarıldı (57 apartman, ~46.108 m²); blokların isimle
+  anıldığı (Abant, Toros, Maçka, Akgül, Aktepe…) yönetim listesinden doğrulandı.
+- **ÖZGÜN'E — 17313 çelişkisi:** Repoda bu ada "Atatürk Sitesi" adıyla ayrı kayıt (12 apartman,
+  12.573 m²). Ama 1. Etap yönetiminin blok tablosu 17313'ü **AKTÜRK** bölgesinde gösteriyor ve
+  12 blok adı sayıyor (ADIVAR, AVCILAR, BAĞLICA, ERCİYES, ERENKÖY, GÜL, İVEDİK, KARŞIYAKA,
+  MALTEPE, NARİN, TÜRKÖZÜ, YEŞİLOVA) — apartman sayısı da birebir 12. Aktürk/Atatürk adları
+  tehlikeli biçimde benzer. Soru: sahada "Atatürk Sitesi" diye bilinen ayrı bir yerleşim var mı,
+  yoksa ad karışması mı? Kayda DOKUNULMADI (sayfa çekilmez kuralı + benzer-ad tuzağı dersi);
+  cevaba göre ya birleşir ya olduğu gibi kalır.
+- **Kayıt açılmayan 6 ada (TKGM niteliği konut dışı):** 16859 = 3 katlı iş yeri + kafeterya
+  (18.208 m², etabın çarşısı), 16868 = lokanta + kafeterya binası (8.393 + 3.200 m²),
+  17316/17319 = arsa (13.695 + 11.993 m², yönetim arşivinde de geçmiyor),
+  17317 = arsa ama tabloda "BETONTAŞ İŞ MERKEZİ", 17318 = arsa ama "KUTLUTAŞ İŞ MERKEZİ".
+- **YAN KAZANIM (ileride kullanılır):** Aynı tablo, yayım dışı bıraktığımız ŞOA şeridinin blok
+  adlarını da veriyor (17480-82 İÇTAŞ; 17487-90 ESTON; 17491-98 KUTLUTAŞ 2) — 2026-08-07'deki
+  "şerit 1. Etap yönetimine bağlı" bulgusunu bağımsız olarak doğruluyor.
