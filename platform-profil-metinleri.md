@@ -70,18 +70,33 @@ uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 > Apple: businessconnect.apple.com → yeni işletme → telefon doğrulaması.
 > Açıklama alanına 1 no'lu GBP metnini yapıştırın.
 >
-> **Neden öncelikli (2026 araştırması):** ChatGPT'nin web araması Bing endeksi
-> üzerinden çalışıyor — doğrulanmış Bing Places kaydı, AI asistanlarında
-> görünmenin en kısa yolu. Apple tarafı Nisan 2026'da tek "Apple Business"
-> çatısında birleşti ve Siri/Spotlight cevaplarını besliyor.
+> **DÜZELTME (2026-08-08 kaynak denetimi):** Buradaki eski "Bing Places =
+> ChatGPT'de görünmenin kısa yolu" gerekçesi **ÇÜRÜTÜLDÜ.** İki ayrı şey
+> karıştırılmış: Bing'in *web endeksi* (OpenAI'ın sağlayıcılarından biri) ile
+> Bing'in *işletme kaydı ürünü* Bing Places. Microsoft'un kendi duyurusu
+> (blogs.bing.com, 3 Eki 2025) Bing Places verisinin yalnızca Bing arama +
+> Bing Haritalar'a gittiğini söylüyor; ChatGPT'yi saymıyor. OpenAI'ın bot
+> dokümanı (developers.openai.com/api/docs/bots) da Bing'den hiç söz etmiyor.
+> Bing Places bu yüzden **düşük öncelik**; Türkiye desteği de doğrulanamadı.
+> Aynı emek **Bing Webmaster Tools + IndexNow**'a giderse doğru yere gider
+> (web endeksi gerçekten OpenAI sağlayıcısı — o zaten kurulu ve çalışıyor).
+> Apple tarafı ayrı konu: Siri/Spotlight'ı besliyor, orta öncelik.
 
-## 7. Foursquare — ChatGPT'nin yerel veri kaynağı
-> **Neden:** Foursquare Places, OpenAI'ın yerel veri ortağı; ChatGPT'nin
-> "Eryaman'da emlakçı" tipi sorulara verdiği işletme adlarının önemli kısmı
-> bu veri tabanından geliyor. Kayıt ücretsiz.
+## 7. Foursquare — ChatGPT'nin yerel veri kaynağı (orta öncelik, tek seferlik iş)
+> **Neden (doğrulandı):** Foursquare'in kendi duyurusu (16 Ara 2024) OpenAI ile
+> ChatGPT search ortaklığını teyit ediyor; bağımsız JSON incelemeleri ChatGPT'nin
+> yerel yanıtlarında `provider: "foursquare"` ve `provider: "serp"` (Google
+> Haritalar) olmak üzere İKİ sağlayıcı görüyor — Bing Places yok.
+> **ÇEKİNCELER (abartma):** "%60-70 Foursquare" rakamı tek bir İspanya
+> çalışmasına (2025, 50 prompt) dayanıyor, onlarca blog aynı kaynağı
+> yankılıyor — bağımsız teyit değil. Türkiye/Türkçe için hiç ölçüm yok.
+> Foursquare'in 2026 ürün sayfasında OpenAI müşteri olarak listelenmiyor.
+> Ayrıca üstte çıkma sebebi otorite değil **yanıt gecikmesi** (~200ms) —
+> yani "Foursquare'de olmak öne geçirir" değil, "olmazsan sıraya giremezsin".
+> **Sonuç:** ucuz sigorta olarak yapılır, kanal olarak sayılmaz. Kayıt ~20 USD
+> tek seferlik ücret isteyebiliyor (ücretsiz değil — eski not yanlıştı).
 > **Nasıl:** foursquare.com/venue/claim → işletmeyi ada+konuma göre ara →
-> yoksa yeni kayıt aç → telefon doğrulaması (aramayla). Ücretli hızlı
-> doğrulama seçeneği var, GEREKMEZ — normal doğrulamayı bekleyin.
+> yoksa yeni kayıt aç → telefon doğrulaması (aramayla).
 > **Kategori:** Real Estate / Real Estate Agency (Türkçe karşılığı çıkarsa Emlak).
 > Ad alanı: **Şirin Gayrimenkul** (rehber kaydı ama Foursquare adı harita
 > uygulamalarına yayılıyor — burada şirket adı yalın kalsın, bölge bilgisi
@@ -104,3 +119,17 @@ uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 - Sosyal profillerde İLAN paylaşımı yok; 3D tur gibi "bu bir ilan değil"
   çerçeveli içerikler serbest (onaylı şablon defterde).
 - Tüm platformlarda aynı logo/profil fotoğrafı kullanılmalı (tanınırlık).
+
+---
+
+## AI asistanlarında görünürlük — gerçekte ne işe yarıyor (2026-08-08 denetimi)
+
+1. **OAI-SearchBot erişimi — TEK birinci-elden belgelenmiş kaldıraç, ZATEN AÇIK.**
+   OpenAI dokümanı net: bu bota kapalı siteler ChatGPT arama yanıtlarında
+   gösterilmiyor. `app/robots.ts` denetlendi — `userAgent: "*"` kuralı
+   `allow: "/"` olduğu için OAI-SearchBot serbest. Yapılacak bir şey yok.
+2. **GBP'yi güçlendirmek AYNI ZAMANDA bir AI görünürlüğü yatırımı.** ChatGPT'nin
+   yerel boru hattındaki ikinci sağlayıcı `serp` = Google Haritalar verisi.
+   Yani ayrı bir "AI SEO" işi açmaya gerek yok; mevcut GBP önceliği
+   ([[project-kanal-onceligi-gbp]]) zaten doğru kanal.
+3. Bing Places / Foursquare bu önceliği **değiştirmez** — yukarıdaki çekincelere bak.
