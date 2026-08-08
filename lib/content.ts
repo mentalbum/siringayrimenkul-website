@@ -18,16 +18,59 @@ function readJson<T>(filePath: string): T {
   return JSON.parse(fs.readFileSync(filePath, "utf-8")) as T;
 }
 
-export function getMahalleLastModified(mahalleSlug: string): Date {
-  return fs.statSync(path.join(MAHALLELER_DIR, `${mahalleSlug}.json`)).mtime;
+/* İÇERİK DEĞİŞİM TARİHLERİ — kaynağı git geçmişi, üreteci scripts/lastmod-uret.mjs.
+ *
+ * mtime KULLANILMIYOR, çünkü yayında yalan söylüyor: Vercel her build'de repoyu
+ * sıfırdan çekiyor, bütün içerik dosyalarının mtime'ı build anına eşitleniyor ve
+ * sitemap'teki 1500+ adres aynı damgayı taşıyor. Google, her yayında topluca
+ * "bugün değişti" diyen bir lastmod'u güvenilmez sayıp tümden yok sayıyor.
+ * Ölçülen sonuç (08.08): 02.08'de ev sahibi diline çevrilen site başlıkları
+ * SERP'te hâlâ eski hâliyle duruyordu; arya-evleri sayfasının snippet'i 31.07
+ * öncesi açıklamayı gösteriyordu. Bu, sitemap tazelik onarımının (08.08, statik
+ * sayfalar) içerikten türeyen 1400+ sayfaya uzatılmış hâli.
+ *
+ * BAKIM: içerik dosyalarını değiştirdikten sonra, commit'ten ÖNCE `npm run lastmod`
+ * çalıştır ve content/lastmod.json'u aynı commit'e ekle. Unutulursa sayfa
+ * eski tarihiyle kalır (zararsız ama tazelik sinyali gitmez) — asla build
+ * damgasına geri dönmez. */
+const LASTMOD_PATH = path.join(CONTENT_DIR, "lastmod.json");
+const lastmod: { uretildi: string; dosyalar: Record<string, string> } = fs.existsSync(
+  LASTMOD_PATH
+)
+  ? readJson(LASTMOD_PATH)
+  : { uretildi: "", dosyalar: {} };
+
+/** content/ köküne göreli yolların en yenisi. Manifestte olmayan yol (yeni
+ * eklenmiş, `npm run lastmod` henüz koşmamış) mtime'a düşer — yerel geliştirmede
+ * doğru, yayında da eskisinden kötü değil. */
+function icerikTarihi(...goreliYollar: string[]): Date {
+  const bulunanlar = goreliYollar
+    .map((yol) => lastmod.dosyalar[yol])
+    .filter(Boolean)
+    .map((gun) => new Date(`${gun}T00:00:00Z`).getTime());
+  if (bulunanlar.length) return new Date(Math.max(...bulunanlar));
+  for (const yol of goreliYollar) {
+    const tam = path.join(CONTENT_DIR, yol);
+    if (fs.existsSync(tam)) return fs.statSync(tam).mtime;
+  }
+  return new Date(`${lastmod.uretildi || "2026-08-08"}T00:00:00Z`);
 }
 
+export function getMahalleLastModified(mahalleSlug: string): Date {
+  return icerikTarihi(`mahalleler/${mahalleSlug}.json`);
+}
+
+/** Site sayfası hem künye JSON'una hem çizilen sınıra bağlı — sınır yeniden
+ * çizilince sayfadaki harita değişiyor, JSON değişmiyor. */
 export function getSiteLastModified(mahalleSlug: string, siteSlug: string): Date {
-  return fs.statSync(path.join(SITELER_DIR, mahalleSlug, `${siteSlug}.json`)).mtime;
+  return icerikTarihi(
+    `siteler/${mahalleSlug}/${siteSlug}.json`,
+    `siteler/${mahalleSlug}/${siteSlug}-boundary.geojson`
+  );
 }
 
 export function getBlogPostLastModified(slug: string): Date {
-  return fs.statSync(path.join(BLOG_DIR, `${slug}.mdx`)).mtime;
+  return icerikTarihi(`blog/${slug}.mdx`);
 }
 
 export function getAllMahalleler(): Mahalle[] {

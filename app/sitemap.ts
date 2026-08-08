@@ -57,28 +57,43 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/iletisim`, lastModified: g("2026-07-25"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
+  /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
+   * tarihi ile ŞABLONUN son değişim tarihinin büyüğüdür.
+   *
+   * Neden taban gerekiyor: künye/SSS/bağ metinleri JSX şablonunda yaşıyor.
+   * Şablon değişince 723 site sayfasının tamamı değişiyor ama içerik JSON'ları
+   * değişmiyor — taban olmadan Google'a "bu sayfalar değişmedi" denmiş oluyor.
+   * 02.08'de başlıklar ev sahibi diline çevrildiğinde tam bu oldu: 08.08'de
+   * canlı SERP hâlâ eski başlığı gösteriyordu.
+   *
+   * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
+   *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
+  const SABLON = {
+    // 08.08: iç bağ çapaları rotasyonlu hâle geldi (15ad273).
+    // 07.08: alıcı dili tamamen söküldü, marka eki başlıktan kalktı (77153e2).
+    site: new Date("2026-08-08"),
+    mahalle: new Date("2026-08-08"),
+    // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
+    etap: new Date("2026-08-07"),
+    // 03.08: ada sayfalarının canonical'ı site sayfasına çevrildi (ce068bd).
+    // Bu sayfaların sitemap'te olmasının TEK amacı Google'ın o canonical'ı
+    // bir kez görmesi — bkz. aşağıdaki uzun not.
+    ada: new Date("2026-08-03"),
+  };
+  const enYeni = (icerik: Date | undefined, taban: Date) =>
+    icerik && icerik > taban ? icerik : taban;
+
   const mahalleSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.map((mahalle) => ({
     url: `${baseUrl}/mahalleler/${mahalle.slug}`,
-    lastModified: getMahalleLastModified(mahalle.slug),
+    lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.mahalle),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
 
-  // Site sayfalarının ŞABLONU bu tarihte değişti: başlıklar/SSS/bağ metinleri
-  // alıcı dilinden ev sahibi diline çevrildi ve marka eki başlıktan kalktı.
-  // lastModified içerik dosyasının değişim tarihinden geliyor; şablon değişince
-  // içerik dosyası değişmiyor ama SAYFA değişiyor — Google eski taramada kalıp
-  // SERP'te bayat "Satılık Daire ve Kiralık Daire" başlıklarını göstermeye devam
-  // ediyordu. Taban tarihi, tüm site sayfalarının yeniden taranmasını tetikler.
-  // Şablon bir daha topluca değişirse bu tarih güncellenmeli.
-  const SABLON_DEGISIMI = new Date("2026-08-07");
   const siteSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getSitelerByMahalle(mahalle.slug).map((site) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/${site.slug}`,
-      lastModified: (() => {
-        const icerik = getSiteLastModified(mahalle.slug, site.slug);
-        return icerik > SABLON_DEGISIMI ? icerik : SABLON_DEGISIMI;
-      })(),
+      lastModified: enYeni(getSiteLastModified(mahalle.slug, site.slug), SABLON.site),
       changeFrequency: "monthly" as const,
       priority: 0.7,
       // Sayfada görsel /_next/image?url=... proxy'si üzerinden servis ediliyor
@@ -90,9 +105,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const etapSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) =>
     getAllEtaplar(mahalle.slug).map((etap) => ({
       url: `${baseUrl}/mahalleler/${mahalle.slug}/etaplar/${etap.no}`,
-      lastModified: etap.siteler
-        .map((site) => getSiteLastModified(mahalle.slug, site.slug))
-        .sort((a, b) => b.getTime() - a.getTime())[0],
+      lastModified: enYeni(
+        etap.siteler
+          .map((site) => getSiteLastModified(mahalle.slug, site.slug))
+          .sort((a, b) => b.getTime() - a.getTime())[0],
+        SABLON.etap
+      ),
       changeFrequency: "monthly" as const,
       priority: 0.7,
     }))
@@ -130,7 +148,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       .filter(([, adet]) => adet === 1)
       .map(([key]) => ({
         url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
-        lastModified: getMahalleLastModified(mahalle.slug),
+        lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.ada),
         changeFrequency: "yearly" as const,
         priority: 0.2,
       }));
