@@ -2,9 +2,10 @@
   "isim": "İçtaş Blokları",
   "slug": "ictas-bloklari",
   "mahalleSlug": "seyh-samil-mahallesi",
-  "aciklama": "İçtaş Blokları, Şeyh Şamil Mahallesi'nde Eryaman'ın kooperatif kuşağında beş ayrı yerleşim adasına yayılmış olarak yer alır. TKGM kayıtlarına göre adalarda toplam 33 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 30.829 m². (Şehit Osman Avcı'daki İçtaş adası ayrı bir yerleşimdir.) Tekser ve Yardımcı kümeleriyle aynı kuşaktadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "İçtaş Blokları, Şeyh Şamil Mahallesi'nde Eryaman'ın kooperatif kuşağında beş ayrı yerleşim adasına yayılmış olarak yer alır. TKGM kayıtlarına göre adalarda toplam 33 kârgir apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 30.829 m². Etabın toplu yapı yönetiminin ada kayıtları kümede 32 blok ve toplam 412 daire sayar. (Şehit Osman Avcı'daki İçtaş adası ayrı bir yerleşimdir.) Tekser ve Yardımcı kümeleriyle aynı kuşaktadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "ozellikler": [
     "5 ayrı ada — toplam 33 kârgir apartman (TKGM)",
+    "32 blok, 412 daire (3. Etap Toplu Yapı Yönetimi ada kayıtları)",
     "Toplam ~30.829 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
     "SOA'daki İçtaş'tan ayrı yerleşim",
@@ -13,7 +14,7 @@
   "alternatifAdlar": [
     "İçtaş Sitesi"
   ],
-  "zenginlestirildi": "2026-07-15",
+  "zenginlestirildi": "2026-08-08",
   "adalar": [
     {
       "no": "17346",

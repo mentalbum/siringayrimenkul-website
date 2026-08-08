@@ -47,8 +47,15 @@ const ETAP_5_ADALARI = [
  * 1. Etap — tapuya tescilli "Eryaman Toplu Yapı Yönetim Planı", Bölüm XV
  * "Eryaman Toplu Konut Alanı Ada Listesi". Belge "Toplam 70 adadır" der ama
  * basılı listede sıra 34/35/44 atlanmış ve 17538 iki kez basılmış: fiilen 67
- * satır, parsel ekleri (17315/1-2 vb.) tekilleştirilince 63 farklı ada. Eksik
- * 3-4 kayıt UYDURULMADI (aday boşluk 17525-33; gerekirse TKGM ile kapatılır).
+ * satır, parsel ekleri (17315/1-2 vb.) tekilleştirilince 63 farklı ada.
+ *
+ * ATLANAN SIRALAR KAPATILDI (2026-08-08): basılı listede olmayan 17527, 17533,
+ * 17544 ve 17545, yönetimin KENDİ blok tablosunda (Wayback: eryaman1.com/
+ * blok_yonetimi.php, 2010 + 2016 + "Kadromuz" sayfası) sırasıyla MESA, AKTÜRK,
+ * AGE, AGE bölgesinde listeleniyor — yani ikinci bir resmî kaynak bunları 1.
+ * Etap içinde sayıyor ve dördü de repo kayıtlarında zaten bu kümelere bağlı.
+ * Doğrulanmış toplam bu yüzden 63 değil 67; belgenin iddia ettiği 70'e kalan
+ * fark için ikinci bir kaynak yok, o adalar UYDURULMADI.
  *
  * YAYIM DIŞI TUTULAN 15 ada: 17480-17482 ve 17487-17498 (Eston, İçtaş/Kazım
  * Sarı, Kutlutaş devam blokları/Cumhuriyet şeridi, bugünkü ŞOA sınırında).
@@ -59,7 +66,7 @@ const ETAP_5_ADALARI = [
  * "1. Etap" kullanan tek kaynak yok. Etiket iki listeye de giremez: buraya
  * girse müşteriyi yanıltır, II. Etap listesine girse resmî planla çelişir.
  * Çözüm: 2. Etap SAYFASINDA "birlikte anılan komşu şerit" bölümü (iddiasız
- * tespit). `resmiToplam: 63` sayfa metninin gerçek resmî toplamı söylemesini
+ * tespit). `resmiToplam: 67` sayfa metninin gerçek resmî toplamı söylemesini
  * sağlıyor.
  */
 const ETAP_1_ADALARI = [
@@ -70,10 +77,10 @@ const ETAP_1_ADALARI = [
   "17504", "17505", "17506", "17507", "17508",
   "17509", "17510", "17511",
   "17516", "17517", "17518", "17519", "17520",
-  "17521", "17522", "17523", "17524",
-  "17534", "17535", "17536", "17537", "17538",
-  "17539", "17540", "17541", "17542", "17543",
-  "17546", "17547",
+  "17521", "17522", "17523", "17524", "17527",
+  "17533", "17534", "17535", "17536", "17537",
+  "17538", "17539", "17540", "17541", "17542",
+  "17543", "17544", "17545", "17546", "17547",
   "17555", "17556", "17557", "17558",
 ];
 
@@ -106,7 +113,7 @@ const ONAYLI: readonly OnayliEtap[] = [
     kaynak:
       "Eryaman Toplu Yapı Yönetim Planı (tapuya tescilli) — eryaman1.com/mevzuat → wp-content/uploads/2020/01/eryaman-toplu-yapi-yonetim-plani.pdf, Bölüm XV ada listesi (2026-08-07 alındı; 15 ihtilaflı ada yayım dışı, üstteki nota bakın)",
     adalar: new Set(ETAP_1_ADALARI),
-    resmiToplam: 63,
+    resmiToplam: 67,
   },
   {
     no: "2",

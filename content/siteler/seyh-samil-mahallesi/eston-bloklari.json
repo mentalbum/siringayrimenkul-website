@@ -7,7 +7,7 @@
     "lng": 32.623379
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/eston-bloklari-boundary.geojson",
-  "aciklama": "Eston Blokları, Şeyh Şamil Mahallesi'nin kooperatif kuşağında yerel kayıtlarda 'Eston 2' adıyla anılan blok kümesidir; blokları isimle değil A6/A7, B3/B4, BK ve C4 gibi harf-rakam kodlarıyla anılır ve yapılar tapuda kârgir apartman niteliğindedir. TKGM kayıtlarına göre kümeyi oluşturan dört komşu parselin dördü de kat mülkiyetlidir; tapular parselleri sırasıyla 6, 5, 5 ve 3 adet kârgir apartman olarak tanımlar (toplam yaklaşık 22.780 m²). (Şehit Osman Avcı Mahallesi'ndeki Eston Sitesi ayrı bir yerleşimdir; apartmanları isimle anılan o site buradaki Eston Blokları'ndan bağımsızdır.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Eston Blokları, Şeyh Şamil Mahallesi'nin kooperatif kuşağında yerel kayıtlarda 'Eston 2' adıyla anılan blok kümesidir; blokları isimle değil A6/A7, B3/B4, BK ve C4 gibi harf-rakam kodlarıyla anılır ve yapılar tapuda kârgir apartman niteliğindedir. TKGM kayıtlarına göre kümeyi oluşturan dört komşu parselin dördü de kat mülkiyetlidir; tapular parselleri sırasıyla 6, 5, 5 ve 3 adet kârgir apartman olarak tanımlar (toplam yaklaşık 22.780 m²). Etabın toplu yapı yönetiminin kayıt tuttuğu üç adada 14 blok ve toplam 240 daire görünüyor; dördüncü adanın yönetim kaydı listede yok. (Şehit Osman Avcı Mahallesi'ndeki Eston Sitesi ayrı bir yerleşimdir; apartmanları isimle anılan o site buradaki Eston Blokları'ndan bağımsızdır.) Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17338",
@@ -33,6 +33,7 @@
   "ozellikler": [
     "Dört komşu adada apartman kümesi (6+5+5+3 blok, tapu)",
     "Dört parsel toplamı ~22.780 m² (TKGM)",
+    "Üç adada 14 blok, 240 daire (3. Etap Toplu Yapı Yönetimi ada kayıtları)",
     "Kat mülkiyetli parseller (TKGM)",
     "Bloklar harf-rakam kodlu: A6/A7, B3/B4, BK, C4",
     "Şeyh Şamil Mahallesi"
@@ -42,5 +43,5 @@
     "Eston 2 Sitesi",
     "Şeyh Şamil Eston Blokları"
   ],
-  "zenginlestirildi": "2026-07-17"
+  "zenginlestirildi": "2026-08-08"
 }
