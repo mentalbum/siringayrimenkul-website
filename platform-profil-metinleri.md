@@ -18,9 +18,12 @@
 
 ## 1. Google Business Profile — işletme açıklaması (kopyala-yapıştır)
 > Konum: GBP paneli → Profili düzenle → Açıklama (750 karakter sınırı)
+> BİÇİM (2026-08-08): açılış cümlesi YALIN diziyi ("eryaman emlakçı") birebir
+> taşıyacak biçimde kuruldu. "Eryaman emlakçısı ..." dilbilgisel olarak doğru
+> ama aranan diziyi kırıyor; sitede footer çapası da aynı çözümü kullanıyor.
 
-Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut ve Yenimahalle'nin 14
-mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok
+Eryaman emlakçı arayanlar için Şirin Gayrimenkul: Etimesgut ve Yenimahalle'nin
+14 mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok
 bilgisini kayıt altında tutuyoruz — Eryaman'ın konut hafızası. Evinizi
 satarken veya kiraya verirken fiyatı ilanlardan değil, sitenizi blok blok
 tanıyan yerel emlakçınızla gerçekleşen satışlardan okuyun. Taşınmaz Ticareti
@@ -47,7 +50,7 @@ Tunahan 4. Etap Çarşı — Yetki No: 0603771
 > belirleyici; biçim kararı gereği "emlakçısı" değil **emlakçı**).
 > Kategori: Emlak Acentesi.
 
-Eryaman emlakçısı Şirin Gayrimenkul. 14 mahallede 720'den fazla site ve
+Eryaman emlakçı arayanlar için Şirin Gayrimenkul. 14 mahallede 720'den fazla site ve
 rezidansın tapu ve blok bilgisini kayıt altında tutuyoruz — Eryaman'ın konut
 hafızası. Evini satmak veya kiraya vermek isteyen ev sahiplerine, siteyi blok
 blok tanıyan yerel emlakçı desteği. Taşınmaz Ticareti Yetki Belgesi No:
@@ -59,8 +62,8 @@ blok tanıyan yerel emlakçı desteği. Taşınmaz Ticareti Yetki Belgesi No:
 ## 5. bulurum.com + sektortanitim.com açıklaması
 > Kategori: Emlak / Emlakçılar — Etimesgut, Ankara
 
-Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut Eryaman bölgesinde satılık ve
-kiralık konut danışmanlığı. 720'den fazla site ve rezidansın tapu, ada-parsel
+Eryaman emlakçı arayanlar için Şirin Gayrimenkul: Etimesgut Eryaman bölgesinde
+satılık ve kiralık konut danışmanlığı. 720'den fazla site ve rezidansın tapu, ada-parsel
 ve blok kaydını tutan yerel ofis. Ev sahiplerine satış ve kiralama sürecinde
 uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
@@ -102,9 +105,9 @@ uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 > uygulamalarına yayılıyor — burada şirket adı yalın kalsın, bölge bilgisi
 > zaten adreste). NAP birebir ortak standarttaki gibi.
 
-Eryaman emlakçısı Şirin Gayrimenkul. Etimesgut ve Yenimahalle'nin 14
-mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok kaydını
-tutan yerel ofis. Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan
+Eryaman emlakçı arayanlar için Şirin Gayrimenkul. Etimesgut ve Yenimahalle'nin
+14 mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok
+kaydını tutan yerel ofis. Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan
 uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
 ---
@@ -112,6 +115,8 @@ uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 ## Uygulama notları
 - Profil adlarında "Eryaman" kelimesi aramada en güçlü sinyal — REHBER/DİZİN
   kayıtlarında görünen ada eklenir ("Şirin Gayrimenkul | Eryaman Emlakçı").
+  Biçim YALIN ("Emlakçı"), iyelikli değil: GSC'de "eryaman emlakçı" 149
+  gösterim, "eryaman emlakçısı" 0.
 - **İSTİSNA — ticari vitrinler (Özgün, 2026-08-08):** sahibinden mağaza adı ve
   GBP adı DEĞİŞTİRİLMEZ; oralarda şirket adı yalın kalır. Ada kelime dizmenin
   kazancı birkaç tık, riski 374 yorumluk tanınırlığın bağlı olduğu tek isim.
