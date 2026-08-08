@@ -6,7 +6,9 @@ import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Emlak Terimleri Sözlüğü — Kat Mülkiyeti, Kârgir, İskân, Emsal Nedir?",
+  // absolute: marka eki kaldırıldı, başlık 60 karakterin altında (bkz.
+  // app/siteler/page.tsx'teki gerekçe — 2026-08-08 başlık uzunluğu turu).
+  title: { absolute: "Emlak Terimleri Sözlüğü — Kat Mülkiyeti, İskân, Emsal" },
   description:
     "Kat mülkiyeti ile kat irtifakı farkı, kârgir ne demek, iskân neden önemli, emsal nasıl okunur? Ev satan ve kiraya veren ev sahipleri için temel emlak ve tapu terimlerinin sade açıklaması.",
   alternates: { canonical: "/sozluk" },

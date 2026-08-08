@@ -13,7 +13,12 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Evinizi Kiraya Vermek — Doğru Kiracı, Doğru Kira",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman'da Evinizi Kiraya Vermek — Doğru Kiracı, Doğru Kira" },
   description:
     "Eryaman'da evinizi kiraya mı vereceksiniz? Kira tespiti, kiracı eleme, sözleşme ve teslim — süreci sizin adınıza yürüten yerel emlakçınız. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-kiraya-vermek" },

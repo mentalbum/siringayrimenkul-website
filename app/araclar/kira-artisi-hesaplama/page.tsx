@@ -10,7 +10,12 @@ import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Kira Artışı Hesaplama — TÜFE'ye Göre Yasal Kira Zammı Hesaplayıcı",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Kira Artışı Hesaplama — TÜFE'ye Göre Yasal Kira Zammı" },
   description:
     "Kira artışı nasıl hesaplanır? Mevcut kiranızı ve TÜİK'in açıkladığı 12 aylık TÜFE ortalamasını girin, yasal tavana göre yeni kirayı anında görün. Ev sahipleri için ücretsiz kira zammı hesaplayıcı.",
   alternates: { canonical: "/araclar/kira-artisi-hesaplama" },

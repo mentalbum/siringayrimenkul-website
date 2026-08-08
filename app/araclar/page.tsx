@@ -10,7 +10,9 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Ev Sahibi Hesap Araçları — Kira Artışı, Tapu Harcı, Komisyon",
+  // absolute: marka eki kaldırıldı, başlık 60 karakterin altında (bkz.
+  // app/siteler/page.tsx'teki gerekçe — 2026-08-08 başlık uzunluğu turu).
+  title: { absolute: "Ev Sahibi Hesap Araçları — Kira Artışı, Tapu Harcı" },
   description:
     "Evini kiraya verecek veya satacak ev sahipleri için hesap araçları: TÜFE'ye göre kira artışı, tapu harcı, yasal emlak komisyonu ve boş kalma maliyeti hesaplayıcı. Eryaman'da fiyatı birlikte netleştirelim.",
   alternates: { canonical: "/araclar" },

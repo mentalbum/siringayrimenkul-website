@@ -12,7 +12,12 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Ev Satmak — Satış Sürecini Sizin Adınıza Yönetiyoruz",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Eryaman'da Ev Satmak — Süreci Sizin Adınıza Yönetiyoruz" },
   description:
     "Eryaman'da evinizi satmayı mı düşünüyorsunuz? Değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-satmak" },

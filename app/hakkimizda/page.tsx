@@ -22,7 +22,11 @@ import { ReviewBadge } from "@/components/ui/review-badge";
 const YETKI_BELGESI_NO = "0603771";
 
 export const metadata: Metadata = {
-  title: "Hakkımızda — Eryaman'ın Yerel Emlak Ofisi",
+  // absolute ama MARKA BAŞLIKTA KALIYOR: bu sayfa marka niyetli sorgunun
+  // ("şirin gayrimenkul", GSC'de ort. konum 2,6) ikinci hedefi; diğer hub
+  // sayfalarından farklı olarak marka adını başlıktan çıkarmak zarar olurdu.
+  // Kök şablonun eki yerine adı cümlenin içine aldık — 60 karakterin altında.
+  title: { absolute: "Hakkımızda — Şirin Gayrimenkul, Eryaman Emlak Ofisi" },
   description: `${siteConfig.name} — Etimesgut Eryaman'da satılık ve kiralık konutta uzman yerel emlak ofisi. 700'den fazla siteyi tek tek tanıyoruz; evinizi doğru fiyatla satmanız veya kiraya vermeniz için yanınızdayız.`,
   alternates: { canonical: "/hakkimizda" },
 };

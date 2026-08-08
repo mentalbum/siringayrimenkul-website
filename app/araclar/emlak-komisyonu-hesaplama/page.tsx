@@ -10,7 +10,12 @@ import type { FaqItem } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
-  title: "Emlakçı Komisyonu Hesaplama — Satış ve Kiralamada Yasal Hizmet Bedeli",
+  // absolute: kök şablonun " | Şirin Gayrimenkul" eki (19 karakter) başlığı
+  // 60 karakterin üstüne çıkarıyordu; Google orada kesiyor ve uzun başlıkları
+  // yeniden yazıyor. Site/mahalle şablonlarında bu ek zaten kaldırılmıştı
+  // (2026-08-07/08); dönüşüm ve araç sayfaları atlanmıştı. Marka alan adında,
+  // og:site_name ve JSON-LD'de duruyor. Baş terim başta kalacak biçimde kısaltıldı.
+  title: { absolute: "Emlakçı Komisyonu Hesaplama — Yasal Oran ve Hizmet Bedeli" },
   description:
     "Emlakçı komisyonu ne kadar, kim öder? Satışta azami %4 + KDV (alıcı-satıcı %2+%2), kiralamada bir aylık kira + KDV. Bedeli girin, yasal üst sınırı anında görün — ücretsiz hesaplayıcı.",
   alternates: { canonical: "/araclar/emlak-komisyonu-hesaplama" },
