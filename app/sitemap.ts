@@ -61,20 +61,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
-    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.8 },
+    /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
+     * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
+     * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/araclar`, lastModified: g("2026-07-30"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-07-23"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-07"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-07-30"), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-07-29"), changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-07-25"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
@@ -96,10 +99,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
     etap: new Date("2026-08-08"),
+    // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
+    //        değişti (5996267, 288167c).
     // 03.08: ada sayfalarının canonical'ı site sayfasına çevrildi (ce068bd).
     // Bu sayfaların sitemap'te olmasının TEK amacı Google'ın o canonical'ı
-    // bir kez görmesi — bkz. aşağıdaki uzun not.
-    ada: new Date("2026-08-03"),
+    // bir kez görmesi — bkz. aşağıdaki uzun not. Tazelik damgası burada tam da
+    // bunun için değerli: sayfa yeniden taranmazsa canonical hiç görülmüyor.
+    ada: new Date("2026-08-08"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
