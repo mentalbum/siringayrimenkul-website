@@ -48,7 +48,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: post.baslik,
       description: truncateForMeta(post.ozet),
       publishedTime: post.tarih,
-      images: [{ url: "/images/ofis-ic-mekan.jpg", width: 1284, height: 936 }],
+      // YAZIYA ÖZEL KART (2026-08-08). Buraya kadar her yazı aynı ofis
+      // fotoğrafıyla paylaşılıyordu ve beyan edilen boyut da yanlıştı
+      // (1284x936 yazıyordu, dosya 1200x874) — yanlış boyut sosyal
+      // önizlemeyi bozabiliyor. Oysa opengraph-image.tsx bu segmentte
+      // zaten yazının başlığını basan 1200x630'luk bir kart üretiyordu;
+      // bu satır onu eziyor, yani kart üretilip hiç kullanılmıyordu.
+      // Yol AÇIKÇA yazılıyor: dosya kuralının devralmasına güvenmek yerine
+      // (üstteki nota göre iç içe openGraph kök layout'u toptan eziyor)
+      // adres ve boyut burada sabitleniyor.
+      images: [{ url: `${siteConfig.url}/blog/${post.slug}/opengraph-image`, width: 1200, height: 630 }],
     },
   };
 }
