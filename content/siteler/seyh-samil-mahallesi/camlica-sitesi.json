@@ -7,7 +7,7 @@
     "lng": 32.6225129
   },
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/camlica-sitesi-boundary.geojson",
-  "aciklama": "Çamlıca Sitesi, Şeyh Şamil Mahallesi'nde Eryaman 3. TKGM kayıtlarına göre haritaladığımız parselde 6 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 5.455 m². Etap kooperatif kuşağında, yerel kayıtlarda 'Eston 2' olarak anılan blok kümesinin içindeki kendi adasında yer alır. Yerleşik, sakin bir kooperatif dokusundadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çamlıca Sitesi, Şeyh Şamil Mahallesi'nde Eryaman 3. Etap'ın kooperatif kuşağında, yerel kayıtlarda 'Eston 2' olarak anılan blok kümesinin içindeki kendi adasında yer alır. TKGM kayıtlarına göre haritaladığımız parselde 6 kârgir apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 5.455 m². Etabın toplu yapı yönetiminin ada kaydı da aynı 6 bloğu ve toplam 84 daireyi gösteriyor. Yerleşik, sakin bir kooperatif dokusundadır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17341",
@@ -17,9 +17,10 @@
   ],
   "ozellikler": [
     "6 kârgir apartman, ~5.455 m² (TKGM, haritalı parsel)",
+    "6 blok, 84 daire (3. Etap Toplu Yapı Yönetimi ada kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "'Eston 2' kümesi içinde kendi adası",
     "Şeyh Şamil — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-08"
 }

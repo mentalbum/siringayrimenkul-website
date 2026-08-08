@@ -288,6 +288,42 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/yavuz-selim/:path*", destination: "/mahalleler/yavuz-selim-mahallesi/:path*", permanent: true },
       { source: "/mahalleler/yesilova", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
       { source: "/mahalleler/yesilova/:path*", destination: "/mahalleler/yesilova-mahallesi/:path*", permanent: true },
+
+      // KÖK DİZİN ŞEMASI (mahalleler/ öneki gelmeden önceki en eski adresler):
+      // /tunahan/etaplar/4, /altay/kutlutas-sitesi gibi. Yukarıdaki blok yalnız
+      // /mahalleler/<eskiSlug> ailesini kurtarıyordu; bu aile 404 dönüyordu ve
+      // en az biri hâlâ Google'ın dizininde: "site:siringayrimenkul.com" taraması
+      // /tunahan/etaplar sayfasını ESKİ içerikle (49 ada) listeliyor (08.08.2026).
+      // Kök segmentler mahalle adlarıyla sınırlı — gerçek üst düzey rotalarla
+      // (/blog, /araclar, /eryamanda-ev-satmak…) çakışmaz.
+      { source: "/altay", destination: "/mahalleler/altay-mahallesi", permanent: true },
+      { source: "/altay/:path*", destination: "/mahalleler/altay-mahallesi/:path*", permanent: true },
+      { source: "/ata", destination: "/mahalleler/ata-mahallesi", permanent: true },
+      { source: "/ata/:path*", destination: "/mahalleler/ata-mahallesi/:path*", permanent: true },
+      { source: "/cumhuriyet", destination: "/mahalleler/cumhuriyet-mahallesi", permanent: true },
+      { source: "/cumhuriyet/:path*", destination: "/mahalleler/cumhuriyet-mahallesi/:path*", permanent: true },
+      { source: "/devlet", destination: "/mahalleler/devlet-mahallesi", permanent: true },
+      { source: "/devlet/:path*", destination: "/mahalleler/devlet-mahallesi/:path*", permanent: true },
+      { source: "/eryaman", destination: "/mahalleler/eryaman-mahallesi", permanent: true },
+      { source: "/eryaman/:path*", destination: "/mahalleler/eryaman-mahallesi/:path*", permanent: true },
+      { source: "/goksu", destination: "/mahalleler/goksu-mahallesi", permanent: true },
+      { source: "/goksu/:path*", destination: "/mahalleler/goksu-mahallesi/:path*", permanent: true },
+      { source: "/guzelkent", destination: "/mahalleler/guzelkent-mahallesi", permanent: true },
+      { source: "/guzelkent/:path*", destination: "/mahalleler/guzelkent-mahallesi/:path*", permanent: true },
+      { source: "/sehit-osman-avci", destination: "/mahalleler/sehit-osman-avci-mahallesi", permanent: true },
+      { source: "/sehit-osman-avci/:path*", destination: "/mahalleler/sehit-osman-avci-mahallesi/:path*", permanent: true },
+      { source: "/seker", destination: "/mahalleler/seker-mahallesi", permanent: true },
+      { source: "/seker/:path*", destination: "/mahalleler/seker-mahallesi/:path*", permanent: true },
+      { source: "/seyh-samil", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
+      { source: "/seyh-samil/:path*", destination: "/mahalleler/seyh-samil-mahallesi/:path*", permanent: true },
+      { source: "/susuz", destination: "/mahalleler/susuz-mahallesi", permanent: true },
+      { source: "/susuz/:path*", destination: "/mahalleler/susuz-mahallesi/:path*", permanent: true },
+      { source: "/tunahan", destination: "/mahalleler/tunahan-mahallesi", permanent: true },
+      { source: "/tunahan/:path*", destination: "/mahalleler/tunahan-mahallesi/:path*", permanent: true },
+      { source: "/yavuz-selim", destination: "/mahalleler/yavuz-selim-mahallesi", permanent: true },
+      { source: "/yavuz-selim/:path*", destination: "/mahalleler/yavuz-selim-mahallesi/:path*", permanent: true },
+      { source: "/yesilova", destination: "/mahalleler/yesilova-mahallesi", permanent: true },
+      { source: "/yesilova/:path*", destination: "/mahalleler/yesilova-mahallesi/:path*", permanent: true },
     ];
   },
 };
