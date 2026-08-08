@@ -26,9 +26,11 @@ import {
  * sayfalar). Tarama bütçesi darboğazında elde kalan kotasız kaldıraç iç bağ
  * yoğunluğu (bkz. lib/tarama-oncelikli.ts'teki aynı teşhis).
  *
- * Neden /etaplar hub'ına DEĞİL doğrudan etap sayfalarına: hub (app/etaplar)
- * henüz commit'lenmedi, canlıda yok — ona bağ vermek her sayfaya 404 bağı
- * koymak olurdu. Hub yayına girince buraya bir de hub bağı eklenebilir. */
+ * Hub (/etaplar) 71553a8 ile yayına girdi ve listeye eklendi: mahalleden
+ * bağımsız "eryaman etapları" / "eryaman etap haritası" aramalarının hedefi o
+ * sayfa ve tek iç bağı /mahalleler'den geliyordu. Çocuk etap sayfalarına
+ * DOĞRUDAN bağ veriliyor, hub üzerinden değil — tarama bütçesi darboğazında
+ * beş sayfayı hub'ın arkasına saklamak keşfi bir adım geciktirirdi. */
 let etapBaglariCache: { no: string; mahalleSlug: string }[] | null = null;
 
 function etapBaglari() {
@@ -262,6 +264,11 @@ export function Footer() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <Link href="/etaplar" className="text-sm text-gold/90 hover:text-gold">
+                    Etap Haritası
+                  </Link>
+                </li>
               </ul>
             </>
           )}
