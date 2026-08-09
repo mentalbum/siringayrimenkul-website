@@ -519,3 +519,30 @@ tek ofisle local pack'in mesafe ağırlığı aşılmaz, mağaza adı oynaması 
 Şeyh Şamil sorgusunda Google hâlâ **eski URL**'i (`/mahalleler/seyh-samil`) sıralıyor —
 26 Temmuz taşınması bu sayfada hâlâ sindirilmemiş (8 Ağu'da ŞOA'da da aynısı görülmüştü).
 GSC dizin isteği kuyruğuna alınmalı.
+
+### 2026-08-09 EK — "neden düştük" teşhisi
+
+**3. Etap harita kutusu (7 Ağu 3. → bugün kutuda yok).** Local finder (`&tbm=lcl`)
+ile 22 işletmelik tam liste okundu: **6. sıradayız** ama 1. sıra ÜCRETLİ REKLAM
+(Çiğdem Şahinkaya, 5,0/15). Organik yerel sıra: Polat Live Emlak (Batıkent, 5,0/285) →
+Eryaman 3. Etap (sitenin kendi GBP'si, 4,2/491) → Eryaman Beyaz Gayrimenkul (4,8/18) →
+Efor (4,9/376) → **biz (5,0/380)**. 7 Ağustos'a göre araya Polat Live ve Beyaz
+Gayrimenkul girmiş. UYARI: 7 Ağu ölçümü Özgün'ün Chrome'undan (konum: Eryaman),
+bugünkü uygulama içi tarayıcıdan alındı — local pack mesafe ağırlıklı olduğu için
+bu iki ölçüm tam elmayla elma değil. Yorum sayısında zaten öndeyiz (380 > 376 > 18);
+kaldıraç yorum değil, sorguya konum yakınlığı.
+
+**Ata + ŞOA organik düşüşü GERÇEK** (iki kez ölçüldü, aynı sonuç). İkisinde de tam
+portal duvarı; ŞOA'da ayrıca iki yerel rakip sitesi bizi geçmiş
+(premiumeryamanemlak.com 5., erkan-yuksel.com 9.) — ikisi de mahalle sayfası yapmış.
+
+**ASIL BULGU — eski URL kanibalizasyonu.** 8 Ağustos karnesi bu gözle yeniden okununca:
+**48 sorguda Google 26 Temmuz öncesi ESKİ URL'imizi sıralıyor, 16'sı 1. sırada.**
+site: sorgusuyla doğrulandı, eski ve yeni adres dizinde AYNI ANDA duruyor
+(/mahalleler/ata/selvi-evleri-sitesi + /mahalleler/ata-mahallesi/selvi-evleri-sitesi).
+308'ler doğru; müşteri kaybı yok ama sinyal iki adrese bölünmüş ve tarama bütçesi
+iki kat harcanıyor. **28 günde 2.145 gösterim (toplamın %8,4'ü) eski URL üzerinden.**
+Aksiyon: `dizin-istegi-kuyrugu.md`'ye gösterime göre sıralı 45 ESKİ URL eklendi
+(GSC'de eski adrese "dizine ekleme iste" → Google taratır → 308'i görür → konsolide eder).
+Bing/Yandex tarafı IndexNow ile bildirildi (45 URL, 200 OK); Google IndexNow kullanmaz,
+oradaki iş GSC'de elle yapılacak.
