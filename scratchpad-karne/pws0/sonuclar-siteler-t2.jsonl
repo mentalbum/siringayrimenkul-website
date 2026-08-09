@@ -93,7 +93,7 @@
 {"d":"2026-08-09","s":"atakent-metro-sitesi","q":"Atakent Metro Sitesi emlakçı","sira":5,"u":"/mahalleler/eryaman-mahallesi","on":["sahibinden.com","eryaman.bilgiemlak.com.tr","hepsiemlak.com"],"n":10,"not":"mahalle sayfası gölgeliyor"}
 {"d":"2026-08-09","s":"atakent-vadi-sitesi","q":"Atakent Vadi Sitesi emlakçı","sira":3,"u":"/mahalleler/eryaman/adalar/46535-2","on":["sahibinden.com","eryaman.bilgiemlak.com.tr"],"n":9,"not":"ESKİ URL + ada sayfası gölgeliyor (191 gösterim)"}
 {"d":"2026-08-09","s":"ataturk-sitesi","q":"Atatürk Sitesi emlakçı","sira":5,"u":"/mahalleler/altay-mahallesi/ataturk-sitesi","on":["hepsiemlak.com","sahibinden.com","vetaemlak.com"],"n":10}
-{"d":"2026-08-09","s":"barla-sitesi","q":"Barla Sitesi emlakçı","sira":2,"u":"/mahalleler/yesilova/barla-konutlari","on":["yandex.com.tr"],"n":9,"not":"ESKİ URL"}
+{"d":"2026-08-09","s":"barla-konutlari","q":"Barla Sitesi emlakçı","sira":2,"u":"/mahalleler/yesilova/barla-konutlari","on":["yandex.com.tr"],"n":9,"not":"ESKİ URL"}
 {"d":"2026-08-09","s":"bulut-kule","q":"Bulut Kule emlakçı","sira":4,"u":"/mahalleler/susuz-mahallesi/adalar/63384-1","on":["sahibinden.com","yandex.com.tr","instagram.com"],"n":9,"not":"ada sayfası gölgeliyor"}
 {"d":"2026-08-09","s":"concept-eryaman","q":"Concept Eryaman emlakçı","sira":5,"u":"/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari","on":["demirhanemlakeryaman.sahibinden.com","sahibinden.com","hepsiemlak.com"],"n":10,"not":"yanlış sayfa: Mia Concept çıkıyor"}
 {"d":"2026-08-09","s":"eryaman-port","q":"Eryaman Port emlakçı","sira":1,"u":"/mahalleler/yesilova-mahallesi/eryaman-port","on":[],"n":9}
@@ -171,14 +171,15 @@
 {"d":"2026-08-09","s":"mavera-sitesi","q":"Mavera Sitesi emlakçı","sira":2,"u":"/mahalleler/seyh-samil-mahallesi/mavera-sitesi","on":["sahibinden.com"],"n":10}
 {"d":"2026-08-09","s":"umar-sitesi","q":"Umar Sitesi emlakçı","sira":4,"u":"/mahalleler/seyh-samil-mahallesi/umar-sitesi","on":["sahibinden.com","hepsiemlak.com","eryaman.bilgiemlak.com.tr"],"n":10}
 {"d":"2026-08-09","s":"yayginkent-sitesi","q":"Yayginkent Sitesi emlakçı","sira":1,"u":"/mahalleler/seyh-samil-mahallesi/yayginkent-sitesi","on":[],"n":10}
-{"d":"2026-08-09","s":"ozluce-guzelevim-sitesi","q":"Özlüce Güzelevim Sitesi emlakçı","sira":9,"u":"/mahalleler/seyh-samil-mahallesi/adalar/46486-2","on":["sahibinden.com","hepsiemlak.com","emlakjet.com"],"n":10,"not":"ada sayfası gölgeliyor"}
+{"d":"2026-08-09","s":"ozluce-guzelevim","q":"Özlüce Güzelevim Sitesi emlakçı","sira":9,"u":"/mahalleler/seyh-samil-mahallesi/adalar/46486-2","on":["sahibinden.com","hepsiemlak.com","emlakjet.com"],"n":10,"not":"ada sayfası gölgeliyor"}
 {"d":"2026-08-09","s":"liderkent","q":"Liderkent Sitesi emlakçı","sira":7,"u":"/mahalleler/seyh-samil/liderkent","on":["sahibinden.com","hepsiemlak.com"],"n":10,"not":"ESKİ URL"}
-{"d":"2026-08-09","s":"turkkonut-uyum-sitesi","q":"Türkkonut Uyum Sitesi emlakçı","sira":0,"u":null,"on":[],"n":10}
 {"d":"2026-08-09","s":"ilke-sitesi","q":"İlke Sitesi emlakçı","sira":0,"u":null,"on":[],"n":10}
 {"d":"2026-08-09","s":"kackar-sitesi","q":"Kaçkar Sitesi emlakçı","sira":0,"u":null,"on":[],"n":9}
-{"d":"2026-08-09","s":"turkkonut-sinem-sitesi-2","q":"Türkkonut Sinem Sitesi 2 emlakçı","sira":0,"u":null,"on":[],"n":10}
 {"d":"2026-08-09","s":"ilkiz-2-sitesi","q":"Türkkonut İlkiz 2 Sitesi emlakçı","sira":1,"u":"/mahalleler/yavuz-selim-mahallesi/ilkiz-2-sitesi","on":[],"n":10}
 {"d":"2026-08-09","s":"beyaz-residence","q":"Beyaz Residence emlakçı","sira":2,"u":"/mahalleler/eryaman-mahallesi/beyaz-residence","on":["beyazemlak.com.tr"],"n":9}
 {"d":"2026-08-09","s":"caglar-sitesi","q":"Çağlar Sitesi emlakçı","sira":0,"u":null,"on":[],"n":9}
 {"d":"2026-08-09","s":"cigdem-sitesi","q":"Çiğdem Sitesi emlakçı","sira":8,"u":"/mahalleler/eryaman-mahallesi/cigdem-sitesi","on":["sahibinden.com","hepsiemlak.com","emlakjet.com"],"n":10}
 {"d":"2026-08-09","s":"cumhuriyet-sitesi","q":"Cumhuriyet Sitesi emlakçı","sira":0,"u":null,"on":[],"n":11}
+{"d":"2026-08-09","s":"ende-yasam","q":"Ende Yaşam Sitesi emlakçı","sira":3,"u":"/mahalleler/susuz-mahallesi/ende-yasam","on":["sahibinden.com","ankalife.com.tr"],"n":10}
+{"d":"2026-08-09","s":"isikkent-sitesi","q":"Işıkkent Sitesi emlakçı","sira":1,"u":"/mahalleler/eryaman-mahallesi/isikkent-sitesi","on":[],"n":9}
+{"d":"2026-08-09","s":"eston-sitesi","q":"Eston Sitesi emlakçı","sira":2,"u":"/mahalleler/sehit-osman-avci/eston-sitesi","on":["sahibinden.com"],"n":10,"not":"ESKİ URL"}
