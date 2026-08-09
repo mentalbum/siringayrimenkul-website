@@ -110,3 +110,33 @@ ADINDA. Bu yüzden:
 - **Amaç değişti:** sıra zaten GSC'den geliyor; bu taramanın ürünü RAKİP SETİ.
   Bu yüzden `on` alanı ilk 2 değil **ilk 5** alan adını kaydeder.
 - Tempo, mola ve engel kuralları AYNEN geçerli (yukarısı).
+
+---
+
+## 2026-08-09 — KUYRUK YİNE DEĞİŞTİ: 2. TUR, TÜM SİTELER "X emlakçı"
+
+Özgün'ün talimatı (09.08): 723 site sayfasının tamamı `<site adı> emlakçı`
+biçiminde YENİDEN ölçülecek, Tunahan'dan başlayarak. Amaç: 1. sırada olmayanları
+ve eksikleri tespit edip sonra güçlendirmek.
+
+- **Kuyruk:** `kuyruk-t2.json` (720 sorgu, mahalle sırası: tunahan → devlet →
+  eryaman → altay → yavuz-selim → seyh-samil → guzelkent → seker → yesilova →
+  sehit-osman-avci → goksu → susuz → ata → cumhuriyet)
+- **Sonuç dosyası:** `sonuclar-siteler-t2.jsonl`
+- **Kalan dilim komutu:** `python3 parti.py 12` (ölçülenleri atlar, sıradakileri yazar)
+- Eski kuyruklar (`kuyruk-oncelikli.json`, `kuyruk-yalin-ad.json`) DONDURULDU.
+
+### 09.08 DERSİ — TOPLU ÖLÇÜM DENEMESİ KANALI KAPATTI
+Turu hızlandırmak için aynı sayfada 4-10 gizli `<iframe>` açıp SERP'leri paralel
+okumak denendi. İlk tek iframe çalıştı, çoklu denemeler boş döndü ve kısa süre
+sonra **reCAPTCHA** geldi ("sıra dışı trafik", 05:22Z, 29 ölçümden sonra).
+**KURAL: iframe/paralel SERP okuma YASAK.** Tek sekmede, sırayla, ölçüm başına
+tek istek — protokolün üst kısmındaki tempo ve mola kuralları neden var, bu.
+
+### Çalışan hızlı düzen (turu yarıya indirir, tek istek korunur)
+Ölçümü yapan JS, sonucu döndürmeden hemen önce bir sonraki sorguya gider:
+`... setTimeout(()=>{location.href='https://www.google.com/search?q='+encodeURIComponent(SONRAKI)+'&pws=0&gl=tr&hl=tr'},400); return JSON.stringify(r)`
+Böylece navigate + ölçüm tek turda olur; kaydı yapan Bash çağrısı aynı yanıtta
+paralel gönderilir. UYARI: sayfanın yüklenmesi için turlar arası doğal gecikme
+şart — `t` alanı sorgu başlığını taşımıyorsa (URL görünüyorsa) ölçüm geçersiz,
+o sorgu tekrar edilmeli.
