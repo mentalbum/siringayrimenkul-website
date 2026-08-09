@@ -220,3 +220,54 @@ Sıra gösterime göre (28 günlük GSC), kota günde ~10-12:
       0 gösterim / 0 tıklama — SERP'te 1. sırada (Ankalüx Residence emlakçı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata/dogasu-evleri
       0 gösterim / 0 tıklama — SERP'te 1. sırada (Doğasu Evleri emlakçı)
+
+
+### 2026-08-09 EK — 2. tur ölçümünden çıkan GÖLGELEYEN ADA SAYFALARI
+
+Ada sayfalarının canonical'ı 2026-08-02'de site sayfasına çevrildi ve canlıda
+DOĞRU çalışıyor (curl ile üç örnekte doğrulandı). Ama Google o sayfaları o
+tarihten beri yeniden taramadığı için hâlâ eski hâlleriyle sıralıyorlar.
+Yani bu da eski URL sorunuyla AYNI kök nedene bağlı: tarama gecikmesi.
+Dizin isteği bu adreslere gönderilince Google canonical'ı görür ve sinyali
+site sayfasına aktarır.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46495-2
+      Kur Sitesi 46495 Ada emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1
+      STFA Blokları emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18675-1
+      Sergah Evleri emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45926-4
+      Gençler Sitesi emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45919-4
+      Lâçin Eryaman Sitesi emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18708-1
+      Çamdalı Sitesi emlakçı sorgusunda 3. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/46535-2
+      Atakent Vadi Sitesi emlakçı sorgusunda 3. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9
+      Su Damlası Sitesi emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/46519-1
+      Türkkonut Sinem Sitesi emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/46391-1
+      Ankapark Konutları emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/adalar/63384-1
+      Bulut Kule emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/45878-2
+      Neopolitan Eryaman emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17652-1
+      Öztaş Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18673-1
+      Çağkent Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18701-1
+      Oray Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/adalar/47603-1
+      Uyum 90 Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46502-1
+      Okyanus Plaza emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1
+      Yüksel Blokları emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18690-1
+      Yeşilöz Sitesi emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2
+      Ilgazlar Sitesi emlakçı sorgusunda 7. sırada — site sayfasının yerine çıkıyor
