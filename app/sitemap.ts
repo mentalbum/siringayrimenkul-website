@@ -104,11 +104,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     etap: new Date("2026-08-08"),
     // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
     //        değişti (5996267, 288167c).
+    // 09.08: başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")
+    //        kaldırıldı; ada sayfası 32 vakada site sayfasının yerine
+    //        sıralanıyordu (pws=0 ölçümü, 187 site).
     // 03.08: ada sayfalarının canonical'ı site sayfasına çevrildi (ce068bd).
     // Bu sayfaların sitemap'te olmasının TEK amacı Google'ın o canonical'ı
     // bir kez görmesi — bkz. aşağıdaki uzun not. Tazelik damgası burada tam da
     // bunun için değerli: sayfa yeniden taranmazsa canonical hiç görülmüyor.
-    ada: new Date("2026-08-08"),
+    ada: new Date("2026-08-09"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
