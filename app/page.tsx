@@ -8,6 +8,7 @@ import {
 } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { eryamandaMi } from "@/lib/bolge";
+import { yaziTokenlariniAc } from "@/lib/icerik-token";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { ReviewBadge } from "@/components/ui/review-badge";
@@ -116,7 +117,8 @@ export default function HomePage() {
     ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda").sort(vitrinSirasi),
     ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda").sort(vitrinSirasi),
   ].slice(0, 3);
-  const sonYazilar = getAllBlogPosts().slice(0, 3);
+  // BlogCard istemci ağacına da giriyor; özetteki yer tutucular burada açılır.
+  const sonYazilar = getAllBlogPosts().slice(0, 3).map(yaziTokenlariniAc);
 
   const siteGruplari = getYayindaMahalleler()
     .map((mahalle) => ({ mahalle, siteler: getSitelerByMahalle(mahalle.slug) }))

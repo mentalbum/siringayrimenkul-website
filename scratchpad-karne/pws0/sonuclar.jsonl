@@ -394,3 +394,5 @@
 {"s":"guzelkent-mahallesi__tam-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent Mahallesi emlakçılar"}
 {"s":"guzelkent-mahallesi__kisa-tekil","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent emlakçı"}
 {"s":"guzelkent-mahallesi__kisa-cogul","sira":0,"u":null,"on":[],"n":10,"q":"Güzelkent emlakçılar"}
+{"s":"tunahan-mahallesi","sira":0,"u":null,"on":[],"n":10,"q":"Tunahan Mahallesi emlakçı"}
+{"s":"yavuz-selim-mahallesi","sira":4,"u":"/mahalleler/yavuz-selim-mahallesi","on":["hepsiemlak.com","sahibinden.com"],"n":10,"q":"Yavuz Selim Mahallesi emlakçı"}

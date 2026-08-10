@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { getAllBlogPosts } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { BlogFiltre } from "@/components/blog/blog-filtre";
+import { yaziTokenlariniAc } from "@/lib/icerik-token";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -12,7 +13,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const posts = getAllBlogPosts();
+  // BlogFiltre istemci tarafında çalışır; yer tutucular sunucuda açılmalı.
+  const posts = getAllBlogPosts().map(yaziTokenlariniAc);
 
   const collectionJsonLd = {
     "@context": "https://schema.org",

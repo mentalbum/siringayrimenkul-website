@@ -140,3 +140,76 @@ Böylece navigate + ölçüm tek turda olur; kaydı yapan Bash çağrısı aynı
 paralel gönderilir. UYARI: sayfanın yüklenmesi için turlar arası doğal gecikme
 şart — `t` alanı sorgu başlığını taşımıyorsa (URL görünüyorsa) ölçüm geçersiz,
 o sorgu tekrar edilmeli.
+
+---
+
+## 2026-08-10 — ⚠ DEĞİŞKEN KAYDI + İKİNCİ SAYFA ÖLÇÜMÜ
+
+### A) BAŞLIK DONDURMASI — 2026-09-07'ye kadar `<title>`'a DOKUNMA
+
+10.08'de **mahalle başlıkları değişti** (PR #9): alternatif ad parantezi ve
+bölge eki çıkarıldı, başlıklar 67-95 karakterden 55-68'e indi. Aynı gün etap
+şablonuna da Service+ItemList işaretlemesi girdi (PR #8).
+
+**Kritik:** 14 mahalle sorgusunun taban ölçümü **09.08'de, ESKİ başlıkla**
+alındı (`sonuclar-emlakci.jsonl`). Yani elimizdeki taban artık canlıdaki
+sayfayı temsil etmiyor. Üstüne ikinci bir şablon müdahalesi binerse hiçbir etki
+ayrıştırılamaz — **07.09'a kadar başlık/H1 deneyi YAPILMAZ.**
+
+### B) İKİNCİ SAYFA ÖLÇÜMÜ — 14 sorgunun 10'unda ilerleme GÖRÜNMÜYOR
+
+`num=20` ölü, SERP'ten ~10 organik geliyor. Bu yüzden 10 mahallede `sira:0`
+yazıyor ve **30. sıradan 12.'ye çıkmak da `sira:0` görünüyor.** Ölçemediğimiz
+şeyi iyileştiremeyiz.
+
+**Bundan sonra:** sıramız çıkmadıysa (`sira:0`) aynı sorgu `&start=10` ile
+tekrar açılıp 2. sayfa da taranır; kayda `s2sira` (2. sayfa içi sıra, 1-10)
+eklenir. Çıkmazsa `s2sira:0`.
+
+### C) RAKİBİN TAM ADRESİ KAYDEDİLİR
+
+Şu an yalnız alan adı tutuluyor (`ilk3`), oysa hepsiemlak'ın sıralayan sayfası
+`/tunahan` mı `/tunahan-satilik-emlakcidan/daire` mi bilinmiyor — ikisi iki
+ayrı plan demek. Snippet'e eklenecek alan:
+
+```
+ilk3u: T.slice(0,3).map(x=>x.d+x.p)
+```
+
+**`ilk3` ve `on` alanları AYNEN KALIR** — silinirse `karne.mjs` ve
+`rakip-yalin.mjs` kırılır.
+
+### D) TABAN TEK ÖLÇÜM DEĞİL, ÜÇ ÖLÇÜMÜN MEDYANI
+
+2. Etap 10.08'de 9 saat içinde 2. sıradan ilk 10 dışına düştü. Bu sorgu ailesi
+oynak; 14 mahalle sorgusu T, T+3, T+7 diye üç kez ölçülüp **medyan** taban
+alınır. Tek ölçümle "kazandık/kaybettik" yazılmaz.
+
+---
+
+## 2026-08-09 — ÖLÇÜME HARİTA KUTUSU (LOCAL PACK) EKLENDİ
+
+Özgün'ün 09.08 sorusu: "her mahalle/etap/site 'X emlakçı' arandığında harita
+kutusunda biz çıkabilir miyiz?" Bugüne kadarki tüm taramalar **yalnızca organik**
+sırayı kaydediyordu; harita kutusu hiç ölçülmedi. Oysa mobilde ilk görünen o.
+
+**Bundan sonra her ölçüm harita kutusunu da kaydeder.** Aynı SERP zaten yüklü —
+ek istek YOK, ek engel riski YOK. Ölçüm JS'i (organik + harita, tek satır):
+
+```
+(()=>{const R=(()=>{const E=[...document.querySelectorAll('.dbg0pd')];const N=E.map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname});}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');return{hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,n:T.length,t:document.title.slice(0,45)}})();setTimeout(()=>{location.href='https://www.google.com/search?pws=0&gl=tr&hl=tr&q='+encodeURIComponent(SONRAKI)},500);return JSON.stringify(R)})()
+```
+
+Yeni alanlar (eskileri aynen duruyor, geriye dönük uyumlu):
+- `hp` — harita kutusu (local pack) çıktı mı (true/false)
+- `hs` — kutudaki sıramız; **0 = kutu var ama biz yokuz**
+- `hl` — kutudaki işletme adları, sırasıyla (ilk 6)
+
+`.dbg0pd` Google'ın yerel paket başlık sınıfı. Sınıf değişirse yedek seçici:
+`div[role="heading"][aria-level="3"]`.
+
+**08:41Z ENGEL DERSİ:** 11 ölçümden sonra `google.com/sorry` geldi. Sebep tempo
+değil, GÜNLÜK TOPLAM: aynı gün paralel bir oturum zaten ~172 T2 ölçümü yapmıştı
+ve 05:22Z'de bir reCAPTCHA daha yenmişti. **Kural: güne başlarken önce
+`sonuclar-*.jsonl` dosyalarının bugünkü satır sayısını topla.** Toplam 200'ü
+geçtiyse o gün yeni tarama açma — kanal paylaşımlı.
