@@ -118,7 +118,7 @@ const ONAYLI: readonly OnayliEtap[] = [
   {
     no: "2",
     kaynak:
-      "Kara Eryaman II. Etap Toplu Yapı Yönetim Planı — eryaman2.com (canlı site düşmüş; Wayback arşivi: web.archive.org/web/20090904165148/http://www.eryaman2.com/Hakkımızda/YönetimPlanı.aspx; eryaman.biz 2. Etap sayfası aynı 17 adayı verir)",
+      "Kara Eryaman II. Etap Toplu Yapı Yönetim Planı — yönetimin CANLI sitesi eryaman2.com.tr (2026-08-10'da doğrulandı: aynı 17 adayı birebir veriyor). Not: eski eryaman2.com adresi düşmüş, site .com.tr'ye taşınmış; Wayback kaydı web.archive.org/web/20090904165148/http://www.eryaman2.com/Hakkımızda/YönetimPlanı.aspx hâlâ yedek kaynak.",
     adalar: new Set(ETAP_2_ADALARI),
   },
   {
