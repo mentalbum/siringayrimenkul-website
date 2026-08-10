@@ -42,3 +42,6 @@ next-env.d.ts
 
 # Portala (sahibinden.com) giden filigransiz kopyalar — siteye girmez
 portal-fotograflari/
+
+# scripts/ python araçları ortak modül import ediyor (tkgm_ortak)
+scripts/__pycache__/

@@ -5,6 +5,16 @@ Dünkü sürüm 07.08 21:21'de üretilmişti; gece 4. parti zenginleştirme (14 
 Kapsam: 9774bc1..main arası içeriği değişen 80 site sayfası + anasayfa + 5 etap sayfası.
 Kota günde ~10-12; sırayla git, kaldığın yerden devam et.
 
+> **09.08 GÜNCELLEME — ETAP SATIRLARI ARTIK GEÇERSİZ.** GSC URL denetiminden
+> tek tek bakıldı: **1., 2. ve 3. Etap sayfalarının üçü de "URL Google'da
+> mevcut / Sayfa dizine eklendi"** diyor. Aşağıdaki "YENİ sayfa — hiç dizinde
+> değil" notları 08.08 tarihli ve BAYAT; o tarihten beri dizine girmişler.
+> Etap sayfaları için dizin isteği göndermeye gerek yok.
+>
+> Sonuç: "eryaman N. etap emlakçı" sorgularında 2. ve 3. Etap'ta görünmüyor
+> oluşumuz **dizin sorunu değil, sıralama sorunu**. Teşhisi buna göre kur.
+> Ölçüm: `sonuclar-emlakci.jsonl` (etap-1..5).
+
 ## Gün 1 — önce bunlar (6 sabit + en yüksek gösterimli 6)
 
 - [ ] https://www.siringayrimenkul.com/

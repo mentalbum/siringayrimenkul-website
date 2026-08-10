@@ -1,0 +1,37 @@
+# YENİDEN TARAMA KUYRUĞU — GSC URL denetimi
+# Amaç: 07-09.08'de değiştirilen başlıklar Google'da hâlâ ESKİ hâliyle görünüyor.
+# Bkz. tiklama-bandi-analizi.md (Bulgu 3). Gösterime göre sıralı (3 aylık GSC).
+#
+# YÖNTEM (2026-08-10'da öğrenildi): GSC arama çubuğu peş peşe gönderimi kabul
+# etmiyor. Her URL için: Performans sayfasına git → çubuğa tıkla → URL yapıştır
+# + Enter → 10 sn bekle → "DİZİNE EKLENMESİNİ İSTE" → 10 sn → satırda
+# "Dizine eklenmesi istendi" yazdığını GÖR. Yazmıyorsa tıklama düşmüştür, tekrarla.
+# Günlük kota ~10-12.
+
+## GÖNDERİLDİ (2026-08-10, doğrulandı)
+[x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/selvi-evleri-sitesi
+[x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/goksu-hisar-evleri
+[x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/koz-modern
+[x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/hittown
+[x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/efsane-evleri
+
+## SIRADA (gösterime göre)
+[ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi
+[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/cimtas-goksu-konutlari
+[ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari
+[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/armoni-life
+[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/aker-mucevher-evleri
+[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/natura-goksu
+[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/endora-plus
+[ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence
+[ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi
+[ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ornek-ari-sitesi
+[ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/vera-city
+[ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bordo-gol-evleri
+[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mavi-bayrak-sitesi
+[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/alkon-sitesi
+[ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi
+
+## ÖLÇÜM
+3 hafta sonra (≈31.08) GSC Performans > 3 ay kesitini yeniden çek; 8-11
+bandının TO'su %1,0'dan değişmiş mi bak. Tek ölçümle karar verme.

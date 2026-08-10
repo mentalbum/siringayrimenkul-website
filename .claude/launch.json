@@ -9,6 +9,10 @@
       "autoPort": true
     },
     {
+      "name": "sirin-gayrimenkul-calisan",
+      "url": "http://localhost:3000"
+    },
+    {
       "name": "sanal-drone-deneme",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["-m", "http.server", "4190", "-d", "/Users/ozgun/sanal-drone-deneme"],

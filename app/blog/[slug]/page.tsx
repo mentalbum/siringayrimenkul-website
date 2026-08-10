@@ -13,6 +13,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { FaqSection } from "@/components/ui/faq-section";
 import { YazarKarti } from "@/components/blog/yazar-karti";
 import { getBlogKonu } from "@/lib/blog-konular";
+import { yaziTokenlariniAc } from "@/lib/icerik-token";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { truncateForMeta } from "@/lib/seo";
@@ -29,8 +30,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
-  if (!post) return {};
+  const hamPost = getBlogPostBySlug(slug);
+  if (!hamPost) return {};
+  // Meta açıklama düz string; sayı yer tutucusu burada da açılmalı, yoksa
+  // arama sonucunda ham {{...}} görünür (bkz. lib/icerik-token.ts).
+  const post = yaziTokenlariniAc(hamPost);
 
   return {
     title: post.baslik,
@@ -64,12 +68,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function BlogPostPage({ params }: Props) {
   const { slug } = await params;
-  const post = getBlogPostBySlug(slug);
-  if (!post) notFound();
+  const hamPost = getBlogPostBySlug(slug);
+  if (!hamPost) notFound();
+  const post = yaziTokenlariniAc(hamPost);
 
   const ilgiliMahalle = post.ilgiliMahalle ? getMahalleBySlug(post.ilgiliMahalle) : undefined;
 
-  const tumYazilar = getAllBlogPosts().filter((p) => p.slug !== post.slug);
+  const tumYazilar = getAllBlogPosts()
+    .filter((p) => p.slug !== post.slug)
+    .map(yaziTokenlariniAc);
   // Önce aynı mahalle, sonra aynı konu (satış/kira/mahalle),
   // en son geri kalanlar — okur kendi derdinin devamını görsün.
   const buKonu = getBlogKonu(post.slug);

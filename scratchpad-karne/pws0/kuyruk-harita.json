@@ -1,0 +1,35 @@
+[
+  { "tip": "site-organik1", "q": "Yaygınkent Sitesi emlakçı" },
+  { "tip": "site-organik1", "q": "Yardımcı Blokları emlakçı" },
+  { "tip": "site-organik1", "q": "Demirkent Sitesi emlakçı" },
+  { "tip": "site-organik1", "q": "Eryaman Royal City emlakçı" },
+  { "tip": "site-organik1", "q": "Öz Gimat Sitesi emlakçı" },
+  { "tip": "site-organik1", "q": "Çayılkay Sitesi emlakçı" },
+
+  { "tip": "site-organikyok", "q": "Tunahan Sitesi emlakçı" },
+  { "tip": "site-organikyok", "q": "Alis Sitesi emlakçı" },
+  { "tip": "site-organikyok", "q": "Vatan Sitesi emlakçı" },
+  { "tip": "site-organikyok", "q": "Referans Ankara emlakçı" },
+  { "tip": "site-organikyok-uzak", "q": "Ata Life Sitesi emlakçı" },
+  { "tip": "site-organikyok-uzak", "q": "Panorama Gold emlakçı" },
+  { "tip": "site-organikyok-uzak", "q": "Başak Sitesi emlakçı" },
+
+  { "tip": "mahalle", "q": "Tunahan Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Devlet Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Altay Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Güzelkent Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Şeker Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Yeşilova Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Göksu Mahallesi emlakçı" },
+  { "tip": "mahalle", "q": "Şehit Osman Avcı Mahallesi emlakçı" },
+  { "tip": "mahalle-uzak", "q": "Ata Mahallesi emlakçı" },
+
+  { "tip": "etap", "q": "Eryaman 1. Etap emlakçı" },
+  { "tip": "etap", "q": "Eryaman 2. Etap emlakçı" },
+  { "tip": "etap", "q": "Eryaman 3. Etap emlakçı" },
+  { "tip": "etap", "q": "Eryaman 4. Etap emlakçı" },
+  { "tip": "etap", "q": "Eryaman 5. Etap emlakçı" },
+
+  { "tip": "kontrol", "q": "Eryaman emlakçı" },
+  { "tip": "kontrol", "q": "Etimesgut emlakçı" }
+]

@@ -15,13 +15,15 @@ ATLAMA KURALLARI (her biri gerçek bir hata sınıfına karşılık gelir):
   - Konut dışı nitelik (okul, spor tesisi, park, trafo…) → yazılmaz, çelişki
     listesine düşer (Sky Göksu dersi: yanlış varlığı dört kaynak doğrulayabilir).
 
-ALAN BİÇİMİ TUZAĞI: cbsapi iki biçim döndürüyor — eski yanıtlar "9.939,00"
-(TR), 2026-07-30 sonrası "15,523.00" (US). Tek biçim varsayan çözümleyici
-9.939 m²'yi 9,9 m² okur; alan_coz her ikisini de ayırt eder.
+ALAN BİÇİMİ TUZAĞI: cbsapi hem "9.939,00" (TR) hem "15,523.00" (US) biçimini
+döndürüyor, hangisinin geleceği kestirilemiyor. Tek biçim varsayan çözümleyici
+9.939 m²'yi 9,9 m² okur; ayırt etme işi tkgm_ortak.alan_coz'da.
 
 Kullanım: python3 scripts/tkgm-kunye-uygula.py <rapor.json> [--yaz]
 """
 import json, os, re, sys, glob, collections
+
+from tkgm_ortak import alan_coz
 
 CACHE = os.path.expanduser("~/.cache/tkgm-eryaman")
 KOK = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
@@ -36,28 +38,10 @@ KONUT_DISI_NITELIK = re.compile(
 # Kreş") — konut dışı sayılmaz, yalnız hiç konut ifadesi olmayanlar elenir.
 KONUT_IZI = re.compile(r"apartman|mesken|konut|daire|dubleks|\bev\b|bina|blok", re.I)
 
-TR_BICIM = re.compile(r"^\d{1,3}(?:\.\d{3})*,\d{1,2}$")
-US_BICIM = re.compile(r"^\d{1,3}(?:,\d{3})*\.\d{1,2}$")
 
-
-def alan_coz(ham):
-    """'9.939,00' (TR) ve '15,523.00' (US) biçimlerini m² tam sayısına çevirir."""
-    s = str(ham or "").strip()
-    if TR_BICIM.match(s):
-        s = s.replace(".", "").replace(",", ".")
-    elif US_BICIM.match(s):
-        s = s.replace(",", "")
-    elif re.match(r"^\d+(?:\.\d{1,2})?$", s):
-        pass
-    else:
-        return None
-    try:
-        deger = float(s)
-    except ValueError:
-        return None
-    if deger < 100 or deger > 500000:
-        return None
-    return int(round(deger))
+def parsel_alani(ham):
+    # Eryaman'da 100 m² altı / 50 hektar üstü parsel bir siteye ait olamaz.
+    return alan_coz(ham, en_az=100, en_cok=500000)
 
 
 def cache_indeksi():
@@ -77,7 +61,7 @@ def cache_indeksi():
         if not ada or not parsel:
             continue
         idx[f"{ada}/{parsel}"] = {
-            "alan": alan_coz(pr.get("alan")),
+            "alan": parsel_alani(pr.get("alan")),
             "nitelik": " ".join((pr.get("nitelik") or "").split()),
             "durum": str(pr.get("durum") or ""),
         }
@@ -87,7 +71,7 @@ def cache_indeksi():
         for k, v in json.load(open(hm)).items():
             if k in idx:
                 continue
-            idx[k] = {"alan": alan_coz(v[1]), "nitelik": " ".join((v[0] or "").split()), "durum": ""}
+            idx[k] = {"alan": parsel_alani(v[1]), "nitelik": " ".join((v[0] or "").split()), "durum": ""}
     return idx
 
 

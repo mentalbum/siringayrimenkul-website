@@ -15,6 +15,8 @@ Kullanım: python3 scripts/tkgm-tapu-uygula.py <sonuclar.json> <rapor.json> [--y
 """
 import json, re, sys
 
+from tkgm_ortak import alan_coz
+
 KONUT_DISI_NITELIK = re.compile(
     r"okul|park[ıi]?$|yol|trafo|cami|yurt|hastane|sağlık|karakol|belediye|ibadet|mezarlık|dere|kanal",
     re.I,
@@ -22,14 +24,11 @@ KONUT_DISI_NITELIK = re.compile(
 
 
 def alan_metni(ham):
-    # "7,895.00" (TKGM Amerikan biçimi) → "7.895"
-    try:
-        deger = float(str(ham).replace(",", ""))
-    except ValueError:
+    # 300 m² altı parsel bir siteye ait olamaz; ölçüsüz/yanlış kayıt sayılır.
+    deger = alan_coz(ham, en_az=300)
+    if deger is None:
         return None
-    if deger < 300:
-        return None
-    return f"{int(round(deger)):,}".replace(",", ".")
+    return f"{deger:,}".replace(",", ".")
 
 
 def main():

@@ -18,6 +18,7 @@ import { FaqSection } from "@/components/ui/faq-section";
 import { SiteCard } from "@/components/site/site-card";
 import { getEtapFaq } from "@/lib/faq";
 import { siteConfig } from "@/lib/site-config";
+import { organizationRef } from "@/lib/structured-data";
 
 type Props = {
   params: Promise<{ mahalle: string; etap: string }>;
@@ -92,6 +93,55 @@ export default async function EtapPage({ params }: Props) {
     },
   };
 
+  /* Etap sayfaları bugüne dek YALNIZ Place basıyordu; mahalle sayfasında olan
+   * iki düğüm burada yoktu (app/mahalleler/[mahalle]/page.tsx:192 ve :213).
+   * Aşağıdaki ikisi o farkı kapatıyor.
+   *
+   * "Bu etaba hizmet veren emlakçı" ilişkisinin makine-okunur hâli. provider
+   * organizationRef ile kök layout'taki RealEstateAgent düğümüne (@id) bağlanır.
+   * UYARI — geo: etabın KENDİ koordinatı elimizde yok ve uydurulmaz; konum
+   * bilgisi yalnız kapsayan mahallenin doğrulanmış merkezinden veriliyor. */
+  const hizmetJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Emlak danışmanlığı — satış ve kiralama",
+    name: `Eryaman ${etap.no}. Etap Emlakçı — ${siteConfig.name}`,
+    provider: organizationRef,
+    url: `${siteConfig.url}/mahalleler/${mahalle.slug}/etaplar/${etap.no}`,
+    areaServed: {
+      "@type": "Place",
+      name: `Eryaman ${etap.no}. Etap, ${mahalle.isim}, ${mahalle.ilce}, Ankara`,
+      containedInPlace: {
+        "@type": "Place",
+        name: `${mahalle.isim}, ${mahalle.ilce}, Ankara`,
+        geo: {
+          "@type": "GeoCoordinates",
+          latitude: mahalle.merkezKoordinat.lat,
+          longitude: mahalle.merkezKoordinat.lng,
+        },
+      },
+    },
+  };
+
+  /* Sayfada görünen site kartlarının makine-okur karşılığı — mahalle
+   * sayfasındaki siteListJsonLd'nin etap karşılığı. Görünen listeyle birebir:
+   * yalnız resmî ada listesindeki siteler, komşu şerit BURAYA GİRMEZ. */
+  const siteListJsonLd =
+    etap.siteler.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          name: `Eryaman ${etap.no}. Etap'taki Siteler ve Rezidanslar`,
+          numberOfItems: etap.siteler.length,
+          itemListElement: etap.siteler.map((site, i) => ({
+            "@type": "ListItem",
+            position: i + 1,
+            name: site.isim,
+            url: `${siteConfig.url}/mahalleler/${mahalle.slug}/${site.slug}`,
+          })),
+        }
+      : null;
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
       <Breadcrumbs
@@ -115,6 +165,12 @@ export default async function EtapPage({ params }: Props) {
           {/* 1. Etap cümlesinin kaynağı eryaman1.com/hakkimizda (yönetimin kendi tanıtımı). */}
           {etap.no === "1" &&
             " Toplu Konut İdaresi'nin Türkiye'deki ilk sosyal konut uygulaması olan bu etap 1990'da yerleşime açıldı; 457 apartmandaki 6.371 konut tek merkezden ısıtılıyor."}
+          {/* 2. Etap cümlesinin kaynağı yönetimin kendi sitesi eryaman2.com.tr
+              (2026-08-10). Isıtma düzeni 1. Etap'tan AYRIŞIYOR: 1. Etap tek
+              merkezden ısınırken burada her adanın kendi tesisi var — ev sahibi
+              için aidat/işletme farkı demek, o yüzden sayfada duruyor. */}
+          {etap.no === "2" &&
+            " Etapta ısıtma tek merkezden değil, her adanın kendi merkezi ısıtma tesisinden sağlanıyor; ortak kullanım alanları ve sosyal tesisler de ada yönetimleri üzerinden işletiliyor."}
           {etap.no === "3" &&
             " Etabın toplu yapı yönetimi, etap içindeki Özar İş Merkezi'nde hizmet veriyor."}
           {etap.no === "5" &&
@@ -215,6 +271,16 @@ export default async function EtapPage({ params }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(etapJsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(hizmetJsonLd) }}
+      />
+      {siteListJsonLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteListJsonLd) }}
+        />
+      )}
     </div>
   );
 }
