@@ -73,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-10"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.4 },
