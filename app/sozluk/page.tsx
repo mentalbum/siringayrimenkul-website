@@ -235,12 +235,15 @@ const terimler: Terim[] = [
   {
     id: "yetki-belgesi",
     ad: "Taşınmaz Ticareti Yetki Belgesi",
+    // "sorgulama" kelimesi bilerek çıkarıldı (2026-08-10): TTBS yazısını tam da
+    // "ttbs sorgulama" gibi Türkiye geneli sorgular yüzünden kapattık, aynı
+    // kancayı sözlükte bırakmanın anlamı yok. Güven mesajı aynen duruyor.
     tanimDuz:
-      "Emlak işletmelerinin faaliyet için almak zorunda olduğu resmî belge. Çalıştığınız ofisin yetki belgesini sorgulamak, güvenli işlem için ilk adımdır.",
+      "Emlak işletmelerinin faaliyet için almak zorunda olduğu resmî belge. Çalıştığınız ofisin bu belgeye sahip olduğundan emin olun; güvenli işlemin ilk adımı budur.",
     tanim: (
       <>
-        Emlak işletmelerinin faaliyet için almak zorunda olduğu resmî belge. Çalıştığınız ofisin
-        belgesini sorgulamak güvenli işlemin ilk adımıdır — bizim belge numaramız{" "}
+        Emlak işletmelerinin faaliyet için almak zorunda olduğu resmî belge. Çalıştığınız ofisin bu
+        belgeye sahip olduğundan emin olun; güvenli işlemin ilk adımı budur — bizim belge numaramız{" "}
         <Link href="/hakkimizda" className={linkClass}>
           Hakkımızda
         </Link>{" "}

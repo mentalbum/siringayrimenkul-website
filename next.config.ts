@@ -22,46 +22,19 @@ const nextConfig: NextConfig = {
         destination: "https://g.page/r/CYTc7nWjtnEoEBM/review",
         permanent: false,
       },
-      // TTBS/yetki belgesi yazısı tamamen silindi (2026-07-31, Özgün kararı):
-      // Türkiye genelinden alakasız trafik çekiyordu, müşteri değeri yoktu.
-      // Eski varisi (evinizi-satarken-dogru-emlakci-secimi) 2026-08-07
-      // temizliğinde o da silindi — zincir yönlendirme olmasın diye hedef
-      // doğrudan blog dizinine alındı.
-      {
-        source: "/blog/emlakci-yetki-belgesi-sorgulama",
-        destination: "/blog",
-        permanent: true,
-      },
-
-      // GENEL KONULU BLOG TEMİZLİĞİ (2026-08-07, Özgün'ün kesin kararı):
-      // blog SADECE Eryaman'la ilgili olacak. Türkiye geneli sorgularda çıkıp
-      // alakasız okur çeken 24 genel bilgi yazısı siteden tamamen kaldırıldı.
-      // Konuya birebir karşılık gelen Eryaman yazısı olmadığından hepsi blog
-      // dizinine gider. YENİDEN AÇMA — aynı gerekçeyle TTBS yazısı da silinmişti.
-      { source: "/blog/dairenizi-kiraya-verirken-dikkat-edilmesi-gerekenler", destination: "/blog", permanent: true },
-      { source: "/blog/emlakci-komisyonu-nasil-isler", destination: "/blog", permanent: true },
-      { source: "/blog/emlakci-yetki-sozlesmesi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/emlakcisiz-ev-satilir-mi", destination: "/blog", permanent: true },
-      { source: "/blog/emlakciya-vekalet-verme-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/ev-satarken-gerekli-evraklar", destination: "/blog", permanent: true },
-      { source: "/blog/ev-satarken-odenecek-vergiler", destination: "/blog", permanent: true },
-      { source: "/blog/evimi-satmak-mi-kiraya-vermek-mi", destination: "/blog", permanent: true },
-      { source: "/blog/eviniz-satilmiyor-mu", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-kiraya-verdikten-sonra", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-satarken-dogru-emlakci-secimi", destination: "/blog", permanent: true },
-      { source: "/blog/evinizi-satisa-hazirlamak", destination: "/blog", permanent: true },
-      { source: "/blog/evinizin-degerini-nasil-ogrenebilirsiniz", destination: "/blog", permanent: true },
-      { source: "/blog/hisseli-ipotekli-ev-satisi", destination: "/blog", permanent: true },
-      { source: "/blog/kat-irtifakindan-kat-mulkiyetine-gecis", destination: "/blog", permanent: true },
-      { source: "/blog/kira-artisi-nasil-hesaplanir", destination: "/blog", permanent: true },
-      { source: "/blog/kira-sozlesmesinde-dikkat-edilmesi-gerekenler", destination: "/blog", permanent: true },
-      { source: "/blog/kira-tespit-davasi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-evi-gostermiyor-ne-yapmaliyim", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-tahliye-sureci", destination: "/blog", permanent: true },
-      { source: "/blog/kiraci-tahliye-taahhutnamesi-rehberi", destination: "/blog", permanent: true },
-      { source: "/blog/kiracili-ev-satilir-mi", destination: "/blog", permanent: true },
-      { source: "/blog/miras-kalan-ev-nasil-satilir", destination: "/blog", permanent: true },
-      { source: "/blog/tapu-ada-parsel-nasil-okunur", destination: "/blog", permanent: true },
+      // KALDIRILAN BLOG YAZILARININ 301'LERİ BURADAN ÇIKARILDI (2026-08-10).
+      //
+      // 25 yazı (TTBS yazısı + 2026-08-07'deki 24 genel konulu yazı) tam da
+      // "Türkiye geneli alakasız trafik" gerekçesiyle silinmişti, ama hepsi
+      // /blog'a 301'leniyordu. TTBS'te sonucu ölçtük: silinmesinden on gün
+      // sonra GSC hâlâ o adrese günde ~90 gösterim yazıyordu. Yönlendirme
+      // adresi Google'ın gözünde canlı tutuyor ve "ttbs sorgulama" gibi
+      // sorguların sinyalini /blog'a taşıyor — yani gereksiz trafik ölmüyor,
+      // adres değiştiriyor. (Silinen içeriğin konusuyla ilgisiz bir hedefe
+      // yapılan 301'i Google zaten yumuşak 404 sayıyor.)
+      //
+      // Hepsi artık proxy.ts'teki tek listeden 410 Gone dönüyor. Yeni bir
+      // yazı kapatılırsa kural buraya değil o listeye eklenir.
       // 1/2/3. Etap yönlendirmeleri BİLEREK KALDIRILDI (2026-08-08).
       //
       // Bu üç kural, o etapların sayfaları doğrulanmamış gruplamadan beslendiği
