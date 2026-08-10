@@ -22,16 +22,19 @@ const nextConfig: NextConfig = {
         destination: "https://g.page/r/CYTc7nWjtnEoEBM/review",
         permanent: false,
       },
-      // TTBS/yetki belgesi yazısı tamamen silindi (2026-07-31, Özgün kararı):
-      // Türkiye genelinden alakasız trafik çekiyordu, müşteri değeri yoktu.
-      // Eski varisi (evinizi-satarken-dogru-emlakci-secimi) 2026-08-07
-      // temizliğinde o da silindi — zincir yönlendirme olmasın diye hedef
-      // doğrudan blog dizinine alındı.
-      {
-        source: "/blog/emlakci-yetki-belgesi-sorgulama",
-        destination: "/blog",
-        permanent: true,
-      },
+      // TTBS/yetki belgesi yazısının 301'i BİLEREK KALDIRILDI (2026-08-10).
+      //
+      // Yazı 2026-07-31'de silinmişti ama adres /blog'a 308'leniyordu. On gün
+      // sonra GSC hâlâ o adrese günde ~90 gösterim yazıyordu: yönlendirme,
+      // adresi Google'ın gözünde canlı tutuyor ve "ttbs sorgulama" gibi
+      // Türkiye geneli sorguların sinyalini /blog'a taşıyor — yani gereksiz
+      // trafik ölmüyor, adres değiştiriyor. Silinen içeriğin konusuyla
+      // ilgisiz bir hedefe yapılan 301 zaten Google tarafından yumuşak 404
+      // sayılıyor. Adres artık app/blog/emlakci-yetki-belgesi-sorgulama/
+      // route.ts ile 410 Gone dönüyor: 404'ten kesin, Google adresi daha
+      // hızlı düşürüyor ve tekrar tekrar taramıyor (tarama bütçesi bizim
+      // darboğazımız). robots.txt'e ASLA eklenmesin — engellenen adresin
+      // 410'u görülemez, adres dizinde asılı kalır.
 
       // GENEL KONULU BLOG TEMİZLİĞİ (2026-08-07, Özgün'ün kesin kararı):
       // blog SADECE Eryaman'la ilgili olacak. Türkiye geneli sorgularda çıkıp
