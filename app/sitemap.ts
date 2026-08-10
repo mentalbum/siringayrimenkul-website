@@ -102,9 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     mahalle: new Date("2026-08-09"),
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
     //        site kartları tam açıklama yerine 220 karakterlik özet basıyor.
+    // 10.08: Service+provider ve ItemList işaretlemesi eklendi (mahalle şablonuyla
+    //        eşitlendi); 2. Etap'a yönetimin kendi sitesinden doğrulanmış ısıtma
+    //        cümlesi girdi; mükerrer ada rozetleri tekillendi (ada sayısı düzeldi).
     // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
-    etap: new Date("2026-08-09"),
+    etap: new Date("2026-08-10"),
     // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
     //        değişti (5996267, 288167c).
     // 09.08: başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")

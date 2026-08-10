@@ -254,7 +254,10 @@ export interface EtapEntry {
 
 export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
   const adalar = getAllAdalar(mahalleSlug);
-  const etapMap = new Map<string, { adalar: AdaEntry[]; siteMap: Map<string, Site> }>();
+  const etapMap = new Map<
+    string,
+    { adalar: AdaEntry[]; adaKeys: Set<string>; siteMap: Map<string, Site> }
+  >();
 
   for (const ada of adalar) {
     // Etap sayfaları da yalnız DOĞRULANMIŞ etaplardan kurulur (lib/etap-onayli.ts).
@@ -265,10 +268,19 @@ export function getAllEtaplar(mahalleSlug: string): EtapEntry[] {
     const etapNo = adaOnayliEtap(ada.no);
     if (!etapNo) continue;
     if (!etapMap.has(etapNo)) {
-      etapMap.set(etapNo, { adalar: [], siteMap: new Map() });
+      etapMap.set(etapNo, { adalar: [], adaKeys: new Set(), siteMap: new Map() });
     }
     const entry = etapMap.get(etapNo)!;
-    entry.adalar.push(ada);
+    // Aynı ada/parsel üzerinde birden çok site oturabiliyor (canlı örnek: 2.
+    // Etap'ta 17462-1). getAllAdalar her SİTE-ada çifti için ayrı satır
+    // döndürdüğü için ada listesi mükerrer doluyordu; sonuç React'te "aynı key"
+    // hatası, ekranda çift ada rozeti ve şişmiş "N ada arşivimizde" sayısı.
+    // Siteler zaten siteMap ile tekilleniyordu, adalar tekillenmiyordu.
+    const adaKey = adaRouteKey(ada);
+    if (!entry.adaKeys.has(adaKey)) {
+      entry.adaKeys.add(adaKey);
+      entry.adalar.push(ada);
+    }
     entry.siteMap.set(ada.site.slug, ada.site);
   }
 
