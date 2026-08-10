@@ -451,3 +451,98 @@ düzeltildi:
   ölçülü genişletildi ve `sorunlu-siteler.md`'ye kart açıldı — blok/kat/tip
   bilgisi Özgün'den gelmeden metin uzatılmayacak.
 Üçü de IndexNow'a bildirildi.
+
+---
+
+## 2026-08-09 — MAHALLE + ETAP "EMLAKÇI" KARNESİ (pws=0&gl=tr&hl=tr, uygulama içi tarayıcı)
+
+Ölçüm: 23 sorgu, tek oturum, kişiselleştirmesiz. Organik sıra ve harita kutusu
+(Yerel Sonuçlar) AYRI kaydedildi. Ham veri: `scratchpad-karne/pws0/sonuclar-emlakci.jsonl`.
+
+### 14 mahalle — "X Mahallesi emlakçı"
+
+| Mahalle | 1 Ağu (Chrome, kişiselleştirilmiş) | 8 Ağu (pws=0) | **9 Ağu organik** | **9 Ağu harita** |
+|---|---|---|---|---|
+| Devlet | 1 | 9 | **5** | yok |
+| Eryaman | 1 | 7 | **4** (anasayfa) | **1** |
+| Şeyh Şamil | yok | 7 | **3** (ESKİ URL) | yok |
+| Yavuz Selim | 1 | 4 | **4** | yok |
+| Tunahan | 4 | yok | yok | **1** |
+| Ata | yok | 4 | yok | yok |
+| Şehit Osman Avcı | yok | 10 | yok | yok |
+| Altay | 3 | yok | yok | yok |
+| Güzelkent | 9 | yok | yok | yok |
+| Şeker | 1 | yok | yok | yok |
+| Cumhuriyet / Göksu / Susuz / Yeşilova | yok | yok | yok | yok |
+
+**1 Ağustos sütunu ile karşılaştırma yapılmamalı:** o ölçüm Özgün'ün kişiselleştirilmiş
+Chrome'undan alındı (memory kuralı: ölçüm pws=0 olmadan geçerli değil). Elmayla elma
+karşılaştırması 8 Ağu ↔ 9 Ağu: 3 yükseliş (Devlet 9→5, Eryaman 7→4, Şeyh Şamil 7→3),
+1 sabit (Yavuz Selim 4), 2 düşüş (Ata 4→yok, ŞOA 10→yok), 8 değişmeden "yok".
+Tek günde bu oynaklık = tek ölçüm gürültülüdür, eğilim için haftalık tekrar gerekir.
+
+### 5 etap — "eryaman N. etap emlakçı" (7 Ağu tabanına göre)
+
+| Sorgu | 7 Ağu organik | **9 Ağu organik** | 7 Ağu harita | **9 Ağu harita** |
+|---|---|---|---|---|
+| 1. etap | yok | **1** (anasayfa) | 1 | **1** |
+| 2. etap | yok | yok | 2 | **2** |
+| 3. etap | mağaza 1. | mağaza 2., site yok | 3 | **yok** |
+| 4. etap | mağaza 1 + anasayfa 2 | **2** (anasayfa; mağaza 1.) | 1 | **1** |
+| 5. etap | mağaza 1 + /etaplar/5 2. | **2** (/mahalleler/tunahan-mahallesi/etaplar/5) | 1 | **1** |
+
+1. Etap'ta iki günde "ilk sayfada yok" → **organik 1.** Etap sayfaları + footer iç bağı
+çalışmış görünüyor. 3. Etap tek gerileme: harita kutusundan düştük (7 Ağu 3. → yok).
+
+### Çatı sorgular (asıl hacim burada)
+
+| Sorgu | Organik | Harita | Önümüzdekiler |
+|---|---|---|---|
+| eryaman emlakçı | **3** | **1** | sahibinden, hepsiemlak |
+| eryaman emlak | 9 | 2 | sahibinden, hepsiemlak, Eryaman Gayrimenkul mağazası |
+| eryaman gayrimenkul | yok | 2 | rakip MARKA sorgusu (Eryaman Gayrimenkul Yat. Dan.) |
+| etimesgut emlakçı | yok | yok | bulurum, sahibinden, endeksa |
+
+"eryaman emlakçı" 7 Ağu'da Özgün'ün telefonundan 13-14. sıradaydı; pws=0 laboratuvar
+ölçümünde bugün **3.** ve harita kutusunda **1.** Aradaki fark kişiselleştirme + mobil/konum.
+
+### Harita kutusu teşhisi — mahalle sorgularında neden yokuz
+Çıkanların çoğu ADINDA o mahalleyi taşıyor: Göksu → "GÖKSU İMAJ EMLAK / Göksu doğa emlak /
+GÖKSUPARK GAYRİMENKUL"; Şeker → "Şeker Emlak"; Cumhuriyet → "Cumhuriyet Gayrimenkul /
+SR Emlak Cumhuriyet Şube"; Susuz → "Alaçatı Gayrimenkul Susuz-Göksu". İkinci faktör mesafe:
+ofis 4. Etap Çarşı'da olduğu için Tunahan/Eryaman/1-4-5. Etap sorgularında 1.'yiz, uzak
+mahallelerde (Göksu, Susuz, Ata, Cumhuriyet, Yeşilova) hiç yokuz. **Bu yapısal** —
+tek ofisle local pack'in mesafe ağırlığı aşılmaz, mağaza adı oynaması da yasak
+(memory: mağaza adı = ticari vitrin kuralı).
+
+### Ölçülen ama düzeltilmesi gereken teknik bulgu
+Şeyh Şamil sorgusunda Google hâlâ **eski URL**'i (`/mahalleler/seyh-samil`) sıralıyor —
+26 Temmuz taşınması bu sayfada hâlâ sindirilmemiş (8 Ağu'da ŞOA'da da aynısı görülmüştü).
+GSC dizin isteği kuyruğuna alınmalı.
+
+### 2026-08-09 EK — "neden düştük" teşhisi
+
+**3. Etap harita kutusu (7 Ağu 3. → bugün kutuda yok).** Local finder (`&tbm=lcl`)
+ile 22 işletmelik tam liste okundu: **6. sıradayız** ama 1. sıra ÜCRETLİ REKLAM
+(Çiğdem Şahinkaya, 5,0/15). Organik yerel sıra: Polat Live Emlak (Batıkent, 5,0/285) →
+Eryaman 3. Etap (sitenin kendi GBP'si, 4,2/491) → Eryaman Beyaz Gayrimenkul (4,8/18) →
+Efor (4,9/376) → **biz (5,0/380)**. 7 Ağustos'a göre araya Polat Live ve Beyaz
+Gayrimenkul girmiş. UYARI: 7 Ağu ölçümü Özgün'ün Chrome'undan (konum: Eryaman),
+bugünkü uygulama içi tarayıcıdan alındı — local pack mesafe ağırlıklı olduğu için
+bu iki ölçüm tam elmayla elma değil. Yorum sayısında zaten öndeyiz (380 > 376 > 18);
+kaldıraç yorum değil, sorguya konum yakınlığı.
+
+**Ata + ŞOA organik düşüşü GERÇEK** (iki kez ölçüldü, aynı sonuç). İkisinde de tam
+portal duvarı; ŞOA'da ayrıca iki yerel rakip sitesi bizi geçmiş
+(premiumeryamanemlak.com 5., erkan-yuksel.com 9.) — ikisi de mahalle sayfası yapmış.
+
+**ASIL BULGU — eski URL kanibalizasyonu.** 8 Ağustos karnesi bu gözle yeniden okununca:
+**48 sorguda Google 26 Temmuz öncesi ESKİ URL'imizi sıralıyor, 16'sı 1. sırada.**
+site: sorgusuyla doğrulandı, eski ve yeni adres dizinde AYNI ANDA duruyor
+(/mahalleler/ata/selvi-evleri-sitesi + /mahalleler/ata-mahallesi/selvi-evleri-sitesi).
+308'ler doğru; müşteri kaybı yok ama sinyal iki adrese bölünmüş ve tarama bütçesi
+iki kat harcanıyor. **28 günde 2.145 gösterim (toplamın %8,4'ü) eski URL üzerinden.**
+Aksiyon: `dizin-istegi-kuyrugu.md`'ye gösterime göre sıralı 45 ESKİ URL eklendi
+(GSC'de eski adrese "dizine ekleme iste" → Google taratır → 308'i görür → konsolide eder).
+Bing/Yandex tarafı IndexNow ile bildirildi (45 URL, 200 OK); Google IndexNow kullanmaz,
+oradaki iş GSC'de elle yapılacak.

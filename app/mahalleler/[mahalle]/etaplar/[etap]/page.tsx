@@ -40,7 +40,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     // Ticari mesaj ev sahibine seslenir — gerekçe site sayfası şablonunda.
-    title: `Eryaman ${etap.no}. Etap Emlakçı | Evinizi Satalım, Kiraya Verelim | ${mahalle.isim}`,
+    // ABSOLUTE + LOKASYON İKİNCİ BÖLÜMDE (2026-08-09). Site sayfalarında
+    // 07.08'de kaldırılan "| Şirin Gayrimenkul" eki burada duruyordu ve başlık
+    // 96 karaktere çıkıyordu; Google ~60'ta kesiyor, yani hem marka eki hem
+    // mahalle adı hiçbir SERP'te görünmüyordu. Sıra site şablonuyla aynı
+    // düzene alındı: kesilen kısım artık lokasyon değil boilerplate.
+    title: {
+      absolute: `Eryaman ${etap.no}. Etap Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`,
+    },
     description: `Eryaman ${etap.no}. Etap'ta eviniz mi var? ${etap.siteler.length} site ve ${etap.adalar.length} adayı tek tek tanıyoruz; satış ve kira değerini yerel emlakçınızla netleştirin: ${siteConfig.phoneDisplay}.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}/etaplar/${etap.no}` },
   };

@@ -112,3 +112,162 @@ betontas-bloklari, oasis-tower, astim-platinium, mood-goksu, akin-688-konutlari,
 
 
 (Site sayfası olmayan 4 dosya kapsam dışı: boundary/geojson.)
+
+---
+
+## 2026-08-09 — YENİ ÖNCELİK: eski URL kanibalizasyonu (ölçümle bulundu)
+
+9 Ağustos pws=0 taraması + 8 Ağustos karnesi birlikte okununca çıktı: **48 sorguda
+Google bizim ESKİ (26 Temmuz öncesi) URL'imizi sıralıyor**, 16'sı 1. sırada.
+site: sorgusuyla doğrulandı — eski ve yeni URL dizinde AYNI ANDA duruyor
+(örnek: /mahalleler/ata/selvi-evleri-sitesi + /mahalleler/ata-mahallesi/selvi-evleri-sitesi).
+308'ler doğru çalışıyor, müşteri kaybı yok; sorun sinyal bölünmesi ve tarama israfı.
+**28 günde 2.145 gösterim (toplamın %8,4'ü) eski URL üzerinden geliyor.**
+
+YÖNTEM: GSC URL denetimine **ESKİ URL** girilir → 'Dizine ekleme iste'. Amaç dizine
+sokmak değil, Google'ı o adresi yeniden taratıp 308'i gördürmek ve yeni adrese
+konsolide ettirmek. Yeni URL'ler zaten dizinde, onlara istek göndermek kota israfı.
+
+Sıra gösterime göre (28 günlük GSC), kota günde ~10-12:
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi
+      329 gösterim / 7 tıklama — SERP'te 1. sırada (Selvi Evleri Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/46535-2
+      191 gösterim / 4 tıklama — SERP'te 4. sırada (Atakent Vadi Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/astim-metrolife
+      164 gösterim / 0 tıklama — SERP'te 3. sırada (Astim Metrolife emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri
+      148 gösterim / 4 tıklama — SERP'te 2. sırada (Mes Polaris Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/adalar/46418-1
+      129 gösterim / 1 tıklama — SERP'te 2. sırada (Kainat Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/vera-west
+      124 gösterim / 1 tıklama — SERP'te 5. sırada (Vera West emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/panorama-plus
+      121 gösterim / 1 tıklama — SERP'te 1. sırada (Panorama Plus emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/prestij-park-konutlari
+      112 gösterim / 0 tıklama — SERP'te 2. sırada (Prestij Park Konutları emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/angora-goksu-evleri
+      90 gösterim / 2 tıklama — SERP'te 2. sırada (Angora Göksu Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/mercan-smart-house
+      77 gösterim / 4 tıklama — SERP'te 1. sırada (Mercan Smart House emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/konar-manzara-evleri
+      65 gösterim / 2 tıklama — SERP'te 2. sırada (Konar Manzara Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/beloren-manzara-evleri
+      52 gösterim / 0 tıklama — SERP'te 1. sırada (Belören Manzara Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/adalar/63379-7
+      51 gösterim / 0 tıklama — SERP'te 2. sırada (Göksu Manzara Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/ozkardesler-sitesi
+      49 gösterim / 2 tıklama — SERP'te 5. sırada (Özkardeşler Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/billur-sitesi
+      48 gösterim / 0 tıklama — SERP'te 1. sırada (Billur Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/armina-park-evleri
+      42 gösterim / 0 tıklama — SERP'te 3. sırada (Armina Park Evleri emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/ruyakent-sitesi
+      40 gösterim / 0 tıklama — SERP'te 2. sırada (Rüyakent Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet/oz-gimat-sitesi
+      36 gösterim / 0 tıklama — SERP'te 1. sırada (Öz Gimat Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/guzel-belde-sitesi
+      33 gösterim / 1 tıklama — SERP'te 1. sırada (Güzel Belde Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/oasis-korupark
+      33 gösterim / 0 tıklama — SERP'te 5. sırada (Oasis Korupark emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/trend-life-sitesi
+      26 gösterim / 0 tıklama — SERP'te 1. sırada (Trend Life Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45926-4
+      25 gösterim / 0 tıklama — SERP'te 2. sırada (Gençler Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/buyuk-ankara-sitesi
+      24 gösterim / 0 tıklama — SERP'te 3. sırada (Büyük Ankara Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45928-1
+      24 gösterim / 0 tıklama — SERP'te 2. sırada (Platin 2 Konutları emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/aydinkent-sitesi
+      23 gösterim / 0 tıklama — SERP'te 2. sırada (Aydınkent Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/hityasam
+      22 gösterim / 1 tıklama — SERP'te 3. sırada (Hityaşam emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/arissa-botanik
+      21 gösterim / 0 tıklama — SERP'te 1. sırada (Arissa Botanik emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/durtas-91-sitesi
+      11 gösterim / 0 tıklama — SERP'te 6. sırada (Doğuş 91 Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet/oray-sitesi
+      7 gösterim / 0 tıklama — SERP'te 2. sırada (Oray Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay/adalar/46404-1
+      7 gösterim / 0 tıklama — SERP'te 2. sırada (Lila Park emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay/vatan-sitesi
+      0 gösterim / 0 tıklama — SERP'te 9. sırada (Altay Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/akkonak-sitesi
+      0 gösterim / 0 tıklama — SERP'te 5. sırada (Akkonak Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18644-1
+      0 gösterim / 0 tıklama — SERP'te 5. sırada (Arzutaş Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/maybak-konutlari
+      0 gösterim / 0 tıklama — SERP'te 2. sırada (Maybak Konutları emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45919-4
+      0 gösterim / 0 tıklama — SERP'te 2. sırada (Laçin Eryaman Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet/arslanlar-sitesi
+      0 gösterim / 0 tıklama — SERP'te 2. sırada (Arslanlar Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/gulbaran-residence
+      0 gösterim / 0 tıklama — SERP'te 2. sırada (Gülbaran Residence emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/belmi-kent
+      0 gösterim / 0 tıklama — SERP'te 2. sırada (Belmi Kent emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/kafdagi-sitesi
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Kafdağı Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-aura-sitesi
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Göksu Aura Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/akduzen-sitesi
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Akdüzen Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet/mavikent-sitesi
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Mavikent Sitesi emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/cakirpark
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Çakırpark emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/ankalux-residence
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Ankalüx Residence emlakçı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/dogasu-evleri
+      0 gösterim / 0 tıklama — SERP'te 1. sırada (Doğasu Evleri emlakçı)
+
+
+### 2026-08-09 EK — 2. tur ölçümünden çıkan GÖLGELEYEN ADA SAYFALARI
+
+Ada sayfalarının canonical'ı 2026-08-02'de site sayfasına çevrildi ve canlıda
+DOĞRU çalışıyor (curl ile üç örnekte doğrulandı). Ama Google o sayfaları o
+tarihten beri yeniden taramadığı için hâlâ eski hâlleriyle sıralıyorlar.
+Yani bu da eski URL sorunuyla AYNI kök nedene bağlı: tarama gecikmesi.
+Dizin isteği bu adreslere gönderilince Google canonical'ı görür ve sinyali
+site sayfasına aktarır.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46495-2
+      Kur Sitesi 46495 Ada emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1
+      STFA Blokları emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18675-1
+      Sergah Evleri emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45926-4
+      Gençler Sitesi emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/45919-4
+      Lâçin Eryaman Sitesi emlakçı sorgusunda 2. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18708-1
+      Çamdalı Sitesi emlakçı sorgusunda 3. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/46535-2
+      Atakent Vadi Sitesi emlakçı sorgusunda 3. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9
+      Su Damlası Sitesi emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/46519-1
+      Türkkonut Sinem Sitesi emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman/adalar/46391-1
+      Ankapark Konutları emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/adalar/63384-1
+      Bulut Kule emlakçı sorgusunda 4. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/45878-2
+      Neopolitan Eryaman emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17652-1
+      Öztaş Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18673-1
+      Çağkent Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18701-1
+      Oray Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/adalar/47603-1
+      Uyum 90 Sitesi emlakçı sorgusunda 5. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46502-1
+      Okyanus Plaza emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1
+      Yüksel Blokları emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18690-1
+      Yeşilöz Sitesi emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2
+      Ilgazlar Sitesi emlakçı sorgusunda 7. sırada — site sayfasının yerine çıkıyor

@@ -158,26 +158,49 @@ export function getSiteBySlug(mahalleSlug: string, slug: string): Site | undefin
   return readJson<Site>(filePath);
 }
 
-// Birden fazla mahallede birebir aynı adla kayıtlı site isimleri (tr küçük
-// harf). Aynı ad özdeş <title>/description üretince Google benzer sayfaları
-// tek sonuca katlıyor ve diğer kayıt SERP'te hiç görünmüyordu (canlı tarama,
-// 2026-07-31: Kardelen 4 kayıt, Çınar/Bahar/Doktorlar… 9 grup / 19 sayfa).
-// Bu adlarda başlık soneki mahalle adıyla açılır.
+// Site adının "çekirdeği": sondaki jenerik yerleşim tipi atılır.
+// "Aktürk Sitesi" ve "Aktürk Blokları" aynı çekirdeğe iner ("aktürk").
+const YERLESIM_TIPI_EKI =
+  /\s+(sitesi|site|blokları|bloklar|evleri|evler|konutları|konakları|villaları|apartmanı|rezidansı|rezidans|residence)$/i;
+function cekirdekAd(isim: string): string {
+  return isim.toLocaleLowerCase("tr").replace(YERLESIM_TIPI_EKI, "").trim();
+}
+
+// Başlık soneki mahalle adıyla açılacak site isimleri.
+//
+// İlk sürüm (2026-07-31) yalnızca BİREBİR aynı adı sayıyordu: aynı ad özdeş
+// <title>/description üretince Google benzer sayfaları tek sonuca katlıyor ve
+// diğer kayıt SERP'te hiç görünmüyordu (Kardelen 4 kayıt, Çınar/Bahar/
+// Doktorlar… 9 grup / 19 sayfa).
+//
+// 2026-08-09 ölçümü boşluğu gösterdi: katlama birebir aynı adla sınırlı değil,
+// yalnızca YERLEŞİM TİPİ farkıyla ayrılan adlarda da oluyor. 151 sitelik
+// pws=0 taramasında 13 vakada Google, aranan sitenin yerine benzer adlı BAŞKA
+// kaydımızı gösterdi — "Aktürk Sitesi emlakçı" araması Altay'daki Aktürk
+// Blokları sayfasına, "Sutek Sitesi" Altay'daki Sutek Blokları'na düşüyordu.
+// Ziyaretçi yanlış siteye varıyor. Karşılaştırma bu yüzden çekirdek ad
+// üzerinden yapılır: Age/Aktürk/Akasya/Eser Yapı/Eston/İçtaş/Maybak/Mesa/
+// Paşa/Safir/Soyak/Sutek aileleri (13 grup) artık kapsanıyor.
+//
+// Koşul "birden çok MAHALLE" olarak kalır: aynı mahalledeki iki kayıt (Eylül
+// Sitesi / Eylül Evleri, ikisi de Yavuz Selim) mahalle ekiyle ayrışmaz, orada
+// ayrım zaten tam adın kendisindedir.
 let cokMahalleliIsimler: Set<string> | undefined;
 export function isimBirdenCokMahallede(isim: string): boolean {
   if (!cokMahalleliIsimler) {
-    const sayilar = new Map<string, number>();
+    const mahalleler = new Map<string, Set<string>>();
     for (const mahalle of getAllMahalleler()) {
       for (const site of getSitelerByMahalle(mahalle.slug)) {
-        const anahtar = site.isim.toLocaleLowerCase("tr");
-        sayilar.set(anahtar, (sayilar.get(anahtar) ?? 0) + 1);
+        const anahtar = cekirdekAd(site.isim);
+        if (!mahalleler.has(anahtar)) mahalleler.set(anahtar, new Set());
+        mahalleler.get(anahtar)!.add(mahalle.slug);
       }
     }
     cokMahalleliIsimler = new Set(
-      [...sayilar].filter(([, adet]) => adet > 1).map(([anahtar]) => anahtar)
+      [...mahalleler].filter(([, m]) => m.size > 1).map(([anahtar]) => anahtar)
     );
   }
-  return cokMahalleliIsimler.has(isim.toLocaleLowerCase("tr"));
+  return cokMahalleliIsimler.has(cekirdekAd(isim));
 }
 
 export function getSiteBoundary(site: Site): GeoJSON.Feature | undefined {

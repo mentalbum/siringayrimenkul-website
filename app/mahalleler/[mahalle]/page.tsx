@@ -24,6 +24,7 @@ import { ResourceHints } from "@/components/seo/resource-hints";
 import { MahalleSitelerBrowser } from "@/components/site/mahalle-siteler-browser";
 import { inceltSiteler } from "@/lib/siteler-liste";
 import { getMahalleFaq } from "@/lib/faq";
+import { mahalleTokenlariniAc, yaziTokenlariniAc } from "@/lib/icerik-token";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
@@ -50,7 +51,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // sorgu da "tunahan mahallesi satılık daire" biçiminde geliyor. Sayfanın
   // H1'i, breadcrumb'ı ve gövdesi zaten tam adı kullanıyordu; eksik olan
   // tek yer başlıktı.
-  const baslikIsim = alias ? `${mahalle.isim} (${alias})` : mahalle.isim;
+  /* 10.08: alternatif ad ARTIK BAŞLIKTA DEĞİL. Ölçüldü — 14 mahalle başlığının
+   * 14'ünde de ticari mesaj ("Evinizi Satalım, Kiraya Verelim") Google'ın ~60
+   * karakterlik kesme sınırının ötesinde kalıyordu; başlıklar 67-95 karakterdi.
+   * Alias ve bölge eki o bütçeyi yiyordu. Alias aşağıda description'da DURUYOR
+   * ("(Yeni Batı bölgesi)"), yani Cumhuriyet/Yeni Batı hedefi kaybolmuyor. */
+  const baslikIsim = mahalle.isim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
   const sitelerParcasi =
     siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
@@ -85,10 +91,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // ötesinde kalıyordu. Yukarıdaki "görünümde kesilse bile sıralama sinyali
     // başlıkta durur" notu geçerliliğini koruyor; bu değişiklik sinyali
     // korurken niteliği GÖRÜNÜR de kılıyor.
+    /* 10.08 — BÖLGE EKİ DE ÇIKTI. Yukarıdaki 08.08 notu "kesilse bile sinyal
+     * durur" diyordu; ölçüm bunun bedelini gösterdi: bölge eki + alias yüzünden
+     * başlıklar 67-95 karaktere çıkıyor ve 14 mahallenin 14'ünde de ticari
+     * mesaj SERP'te hiç görünmüyordu. Yeni biçim 55-68 karakter, hepsi görünür.
+     * Mahalle adı zaten "… Mahallesi" ile tam yazılıyor; şehir/bölge bilgisi
+     * description'da, H1 üstündeki "MAHALLE · İLÇE" şeridinde ve
+     * AdministrativeArea işaretlemesinde duruyor.
+     * NOT: Ata/Susuz/Cumhuriyet için "Yenimahalle Ankara" eki de kalktı — bu
+     * onlara "Eryaman" DEMEK DEĞİL (kural ihlali yok), yalnız ek kaldırıldı. */
     title: {
-      absolute: `${baslikIsim} Emlakçı | ${
-        eryamandaMi(mahalle) ? "Eryaman" : "Yenimahalle Ankara"
-      } | Evinizi Satalım, Kiraya Verelim`,
+      absolute: `${baslikIsim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
     description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
@@ -99,8 +112,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function MahallePage({ params }: Props) {
   const { mahalle: slug } = await params;
-  const mahalle = getMahalleBySlug(slug);
-  if (!mahalle) notFound();
+  const hamMahalle = getMahalleBySlug(slug);
+  if (!hamMahalle) notFound();
+  // Sayı yer tutucuları burada tek seferde açılır; aşağıdaki her tüketici
+  // (uzunAciklama paragrafları, getMahalleFaq) genişletilmiş kaydı görür.
+  const mahalle = mahalleTokenlariniAc(hamMahalle);
 
   if (mahalle.durum === "yakinda") {
     const yakindakiler = getNearbyMahalleler(mahalle, 4);
@@ -162,7 +178,7 @@ export default async function MahallePage({ params }: Props) {
   const haritaliSayisi = siteMapEntries.filter((entry) => entry.boundary).length;
   const adalar = getAllAdalar(mahalle.slug);
   const yakindakiler = getNearbyMahalleler(mahalle, 4);
-  const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug);
+  const ilgiliYazilar = getBlogPostsByMahalle(mahalle.slug).map(yaziTokenlariniAc);
   // SADECE sayfası olan etaplar listelenir. Kayıtlardaki adalar[].etap alanı
   // doğrulanmamış etapları da taşıyor; filtre olmadan mahalle sayfası olmayan
   // sayfaya link basıyordu (canlı ölçümde yakalandı: Şehit Osman Avcı →

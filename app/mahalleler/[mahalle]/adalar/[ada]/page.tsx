@@ -54,14 +54,37 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // tersine çevrildi, sayfa ilk bakışta tanınsın. Ada numarası başlıkta
   // kalır: "17666 ada satılık daire" tipi aramalar da karşılansın.
   return {
-    title:
-      entries.length > 1
-        ? `${mahalle.isim} ${label} Ada Emlakçı | Evinizi Satalım, Kiraya Verelim | ${ustBolgeEtiketi(mahalle)}`
-        : `${ada.site.isim} ${label} Ada Emlakçı | Evinizi Satalım, Kiraya Verelim | ${ustBolgeEtiketi(mahalle)}`,
+    // TİCARİ KALIP KALDIRILDI (2026-08-09) — ada sayfası site sayfasını yiyordu.
+    //
+    // Ölçüm (pws=0, 187 site): 32 vakada Google, "<site adı> emlakçı"
+    // aramasında site sayfasının yerine BU ada sayfasını gösterdi. Sebep
+    // başlıkta çıplak gözle görülüyordu — iki sayfa aynı kalıbı taşıyordu:
+    //   ada  : "STFA Blokları 17673/1 Ada Emlakçı | Evinizi Satalım, Kiraya…"
+    //   site : "STFA Blokları Emlakçı | Eryaman | Evinizi Satalım, Kiraya…"
+    // Aranan dizi ("STFA Blokları … emlakçı") ikisinde de tam eşleşiyor,
+    // Google da zaman zaman ada sayfasını seçiyordu. Ziyaretçi site sayfası
+    // yerine ada listesine düşüyor.
+    //
+    // Artık başlık sayfanın GERÇEK işlevini söylüyor (tapu niteliği + blok
+    // künyesi — sayfanın içeriği zaten bu). Site adı korunuyor: kimse
+    // "17673 ada" diye aramaz, tanınırlık site adından gelir. Ada numarası da
+    // duruyor, "17666 ada satılık daire" tipi aramalar karşılansın.
+    // Bu, canonical'a EK bir katman: canonical Google'ın sayfayı yeniden
+    // taramasını bekler, başlık ise tarandığı an ayrımı netleştirir.
+    //
+    // ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki burada da eklenmez —
+    // site sayfalarında 2026-08-07'de kaldırılmıştı, ada sayfaları atlanmış ve
+    // başlık 96 karaktere çıkıyordu (Google ~60'ta kesiyor).
+    title: {
+      absolute:
+        entries.length > 1
+          ? `${mahalle.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`
+          : `${ada.site.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`,
+    },
     description:
       entries.length > 1
-        ? `${label} Ada'da daireniz mi var? Satış ve kira değerini bu adayı ve siteyi yakından tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
-        : `${ada.site.isim} ${label} Ada'da daireniz mi var? Satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin. Aynı gün dönüş: ${siteConfig.phoneDisplay}.`,
+        ? `${label} Ada'nın tapu niteliği, üzerindeki yapılar ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`
+        : `${ada.site.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
     // ASIL SAYFA = SİTE SAYFASI (2026-08-02).
     //
     // Ölçüm: 298 sitelik canlı SERP taramasında 51 sitede Google, site adı

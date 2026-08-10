@@ -1447,6 +1447,22 @@ Gülkent mi, Dostlar Birikim mi? (Çözüme göre kalan ikisi dupe/redirect.)
 Üç metin de tapu verisini zaten taşıyor; çelişki çözülene dek üçüne de yeni iddia
 eklenmedi (2026-08-07 zenginleştirme turu bu kaydı bilinçli atladı).
 
+## 44780/2 — Belören Manzara ↔ Mercankent Manzara AYNI PARSEL (2026-08-08, doğrulandı)
+Eski "dupe/karışım şüphesi" (bkz. Ata ARSA-nitelikli parseller kartı) artık şüphe değil,
+ölçülmüş olgu: iki kaydın boundary geometrisi aynı parseli çiziyor (ikisi de ~7.965 m²
+hesaplanan alan, aynı başlangıç köşesi), koordinatları birbirine **12 m**, ada/parsel
+ikisinde de 44780/2 ve İKİSİ DE "2 blok" diyor. Yani iki kayıt tek siteyi iki adla
+gösteriyor. Kaynaklar: bilgiemlak "Etikent Mercan Kent Manzara Evleri (44780 Ada)",
+Yandex "Belören Manzara Evleri" pini 40.001192/32.596484 → aynı parsel; Yenimahalle KBS
+7.955 m² tapu yüzölçümü. (Not: bir web özeti Mercan Kent için 11.806 m² dedi — kaynaksız
+ve KBS/TKGM ile çelişiyor, ALINMADI. bilgiemlak sayfası mahalleyi "Susuz" diyor, bu da
+bizim Ata teyidimizle çelişiyor — bilgiemlak bölge başlıkları eskiyebilir, dikkate alınmadı.)
+ÖZGÜN'E: 44780/2'deki iki bloğun tabelasında ne yazıyor — "Belören Manzara Evleri" mi,
+"Mercankent/Mercan Kent Manzara Evleri" mi? Kazanan kayıt kalır, diğeri silinip
+redirect'lenir (next.config.ts). İki kayıt ayrı bloklarsa da tek sayfada birleşmeli.
+Bu tur (2026-08-08) beloren kaydına YENİ olgusal iddia eklemedi; yalnız üslup cilası +
+Kİ/arsa ihtiyat cümlesi + aynı parseldeki kardeş kayıtla tutarlı "Etikent kesimi" etiketi.
+
 ## Etap sayfaları operasyonu (2026-08-07) — 1/2/3 açıldı, kalan sorular
 "N. etap emlakçı" sorgu ailesi için 1., 2., 3. Etap sayfaları resmî ada listeleriyle açıldı
 (kaynaklar lib/etap-onayli.ts'te). Beş etabın listeleri ikili kesişimlerde tamamen ayrık.
@@ -1563,3 +1579,38 @@ tanımlı). Aktürk'ünkiler 07-08.08'de açıklama metnine örnek olarak girmi�
   (Kutlutaş'ta Bayındır/Çayeli/Gebze, İçtaş'ta Fulya/Gökkuşağı gibi). Bloklar isimle anıldığı
   için bu, ilan ve adres dilinde karşılığı olan bir arşiv — Aktürk kaydında örnek olarak
   kullanıldı, diğer 1. Etap kayıtlarına da işlenebilir.
+
+---
+
+## Yeniçeri Kule ↔ Hekimler ve Sağlıkçılar — AYNI parsel 16828/4 (2026-08-08)
+
+`goksu-mahallesi/yeniceri-kule.json` ve `goksu-mahallesi/hekimler-ve-saglikcilar-sitesi.json`
+aynı ada/parseli taşıyor ve **iki boundary.geojson'un geometrisi baytı baytına aynı**
+(diff temiz). İki kaydın koordinatı da aynı poligonun içine düşüyor.
+
+TKGM canlı sorgu (08.08, `124128/16828/4`): **"28 Katlı Betonarme Apartman Ve Arsası",
+8.505 m²** — nitelik TEKİL, yani parselde tek bina var. Aynı adada /3 = "Yeşil Alan Ve Yol"
+(2.663 m²), /1 = "Iş Yeri" (24.604 m², kadastro mahallesi Eryaman 124123 — /3 ve /4 ise
+Şeker 124128). /2, /5, /6, /7 iki kadastroda da 404.
+
+**Kanıt Yeniçeri Kule'yi gösteriyor:** Yandex suggest-geo "Yeniçerikule Sitesi, Göksu Mah.,
+Etimesgut" toponimini 39.99898 / 32.65279'a koyuyor — poligonun içi (nokta-poligon testi
+yapıldı). Ayrıca proje kaydı (emlakdream, 31.05.2018) adresi "Göksu mahallesi İhlas caddesi,
+Eryaman Göksu Parkı yanı" olarak veriyor ve yapıyı zemin+25 tek blok / 102 daire diye
+tanımlıyor; kurumsal tedarikçi referansı da "Yeniçeri Kule Konutları-Ankara-102 Daire" diyor.
+zemin+25 = 26 kat, tapudaki 28 kat ile bodrum/teknik katlar eklenince örtüşebilir.
+
+**Hekimler ve Sağlıkçılar tarafında bağımsız kaynak YOK:** iki web aramasında yalnız kendi
+sayfamız ve alakasız aile sağlığı merkezleri çıktı. Kaydın metnindeki tek "olgu"lar zaten
+tapudan türetilmiş (28 kat, 8.505 m²) — döngüsel. Ad, kooperatif etiketi deseni
+("bilgiemlak etiketi ≠ site adı" dersi) ile birebir uyuyor.
+
+**Özgün'e:** Göksu'da İhlas Caddesi'nde Göksu Parkı bitişiğindeki bu yüksek yapının
+tabelasında ne yazıyor — "Yeniçeri Kule" mi, "Hekimler ve Sağlıkçılar Sitesi" mi? Ayrı iki
+yerleşim mi? Hekimler adı bu binanın kurucu kooperatifi ise kayıt birleştirilip redirect
+verilir; ayrı bir yerleşimse Hekimler'in parseli/koordinatı yanlış, yeniden haritalanmalı.
+
+**Bu tur ne yapıldı:** Yeniçeri Kule metni kaynaklı biçimde derinleştirildi ama TARTIŞMALI
+tapu ayrıntısı (8.505 m² / 28 kat) metne YAZILMADI; kayıttaki "Kat mülkiyetli parsel (TKGM)"
+maddesi olduğu gibi bırakıldı. `adalar`, `koordinat`, `sinirGeoJSON` alanlarına dokunulmadı.
+Hekimler kaydına hiç dokunulmadı.

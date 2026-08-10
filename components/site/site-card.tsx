@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowRightIcon, BuildingIcon } from "@/components/ui/icons";
+import { truncateForMeta } from "@/lib/seo";
 
 /** Kartın gerçekten kullandığı alanlar — tam Site da, liste için inceltilmiş
  * özet de bu şekle uyar (structural typing). */
@@ -22,7 +23,19 @@ export function SiteCard({ site }: { site: SiteKartVerisi }) {
         <BuildingIcon className="h-5 w-5 shrink-0 text-gold-dark" />
         <h3 className="text-base leading-snug">{site.isim}</h3>
       </div>
-      <p className="line-clamp-3 text-sm leading-relaxed text-body">{site.aciklama}</p>
+      {/* KART METNİ KIRPILIR (2026-08-09). line-clamp-3 yalnızca GÖRSEL bir
+          kırpma: metnin tamamı DOM'a basılıyordu. Site açıklamaları ortalama
+          885 karakter (ortanca 669, en uzunu 4.203) ama kart üç satır — yani
+          her kartta ~665 karakter görünmeyen kopya metin duruyordu. Bu kart
+          etap, mahalle ve /siteler listelerinde tekrarlandığı için site
+          sayfasının kendi metni başka sayfalarda birebir çoğalıyordu.
+          Ölçülen sonucu (pws=0, 09.08): "Klima Blokları emlakçı" ve "Camlı
+          Klima Blokları emlakçı" aramalarında Google site sayfasını değil
+          4. Etap sayfasını gösteriyordu. Görünüm değişmez — kesme sınırı
+          zaten üç satırın gösterdiği yerde. */}
+      <p className="line-clamp-3 text-sm leading-relaxed text-body">
+        {truncateForMeta(site.aciklama, 220)}
+      </p>
       {site.odaTipleri && site.odaTipleri.length > 0 && (
         // "Kayıtta:" öneki düşürülemez: çıplak "2+1" doğrulanmış bir öznitelik
         // gibi okunur, oysa liste açık küme — kayıtta yazan tipleri gösterir,
