@@ -16,7 +16,7 @@ göre mahalle mahalle site sayfaları.
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/angora-sitesi ← 11.08 ~23:45 gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bahar-sitesi ← 11.08 ~23:55 gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/eceser-sitesi ← 12.08 ~00:05 gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← KOTA BURADA DOLDU (12.08 ~00:30), yarın buradan devam
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-bilge-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi
