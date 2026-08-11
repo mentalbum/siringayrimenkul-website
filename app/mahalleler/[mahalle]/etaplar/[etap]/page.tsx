@@ -173,6 +173,14 @@ export default async function EtapPage({ params }: Props) {
             " Etapta ısıtma tek merkezden değil, her adanın kendi merkezi ısıtma tesisinden sağlanıyor; ortak kullanım alanları ve sosyal tesisler de ada yönetimleri üzerinden işletiliyor."}
           {etap.no === "3" &&
             " Etabın toplu yapı yönetimi, etap içindeki Özar İş Merkezi'nde hizmet veriyor."}
+          {/* 4. Etap cümlesinin kaynağı yönetimin kendi sitesi eryaman4.com
+              (2026-08-11 doğrulandı): 50 adalık etabın tamamı; yönetim,
+              temsilciler ve denetim kurullarından oluşan TEK toplu yapı
+              yönetimince yönetiliyor. 2. Etap'taki ada bazlı düzenden ayrışır —
+              ev sahibi için ortak karar/aidat muhatabının tek olması demek.
+              4, bu satıra kadar özgün tanıtım cümlesi olmayan tek etaptı. */}
+          {etap.no === "4" &&
+            " Etabın tamamı; yönetim, temsilciler ve denetim kurullarından oluşan tek bir toplu yapı yönetimi çatısı altında yönetiliyor — ortak alan ve etap geneli kararlarda muhatap ada ada değil, tek merkez."}
           {etap.no === "5" &&
             " Bölge, adını verdiği Eryaman 5 metro istasyonuna ev sahipliği yapıyor; Ankaray ve metro hattına yürüme mesafesinde ulaşım sağlıyor."}
         </p>
