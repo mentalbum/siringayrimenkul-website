@@ -10,8 +10,12 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi",
+  // İlk cümle "eryaman nereye/hangi ilçeye bağlı" sorgu ailesinin (28g ~670
+  // gösterim, 0 tık) düz cevabı — sıfır-tık SERP olsa da snippet'te doğru
+  // cevabı biz verelim (2026-08-12 analizi; yeni sayfa açılmaz kararı gereği
+  // cevap bu mevcut sayfanın description'ında).
   description:
-    "Eryaman'ın 11 mahallesini, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin. Ek hizmet bölgemiz Yenimahalle'de Ata, Susuz ve Cumhuriyet de rehberde.",
+    "Eryaman, Ankara'nın Etimesgut ilçesine bağlıdır. 11 mahallesini, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin; Yenimahalle'de Ata, Susuz ve Cumhuriyet de rehberde.",
   alternates: { canonical: "/mahalleler" },
 };
 
