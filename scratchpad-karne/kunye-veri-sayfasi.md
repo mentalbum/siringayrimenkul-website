@@ -27,10 +27,13 @@ YAZILMAZ; güncel fiyat rakamı YAZILMAZ.)
 
 - **Google Business Profile:** ✅ var (374+ yorum) — dokunma.
 - **Yandex Business:** ✅ var — yandex.com.tr/maps/org/40827902036/
-- **Bing Places:** ❌ YOK — EN ÖNCELİKLİ. bingplaces.com → "Oturum aç"
-  (Microsoft hesabı gerekir; hesap yoksa outlook.com'dan aç). Girişten sonra
-  "Google My Business'tan içe aktar" seçeneği profili GBP'den aynen kopyalar.
-  Oturumu ÖZGÜN açar (parola işlemi), gerisini Claude sürdürebilir.
+- **Bing Places:** ✅ VAR (2026-08-12'de teyit edildi) — ~7 Ağustos'ta GBP
+  importuyla açılmış: ad/adres/telefon/site GBP ile birebir, DOĞRULAMA TAMAM,
+  "7-12 gün içinde yayımlanacak" durumunda, Google senkronu aktif.
+  bizid: cabfc4da-ac00-4cfc-83ba-a0a3d9b6500b
+  GİRİŞ: "Google ile devam et" → 1hamza.sirin@gmail.com (GBP'nin sahibi).
+  DİKKAT: ozgundeniss@gmail.com ile İKİNCİ kayıt AÇMA — "hesap zaten başka
+  kullanıcıya bağlı" hatası alınır ve mükerrer risk doğar (2026-08-12 dersi).
 - **Apple Business Connect:** ❌ YOK — businessconnect.apple.com, Apple ID ile
   (ozgundenizsirin1105@icloud.com mevcut). Oturumu Özgün açar.
 - **bulurum.com (11880):** ❌ kayıt yok (arandı, Etimesgut'ta çıkmıyor).
