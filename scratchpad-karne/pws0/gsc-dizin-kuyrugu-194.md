@@ -10,7 +10,7 @@ Sıralama: önce Cumhuriyet mahalle sayfası (dizin dışı çıkan 2 mahalleden
 istek gönderilmemiş olanı; Tunahan 11.08'de gönderildi), sonra talep sırasına
 göre mahalle mahalle site sayfaları.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi ← 11.08 ~23:15 gönderildi (öncelikli tarama sırasına alındı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/agacli-gol-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/akduzen-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/angora-sitesi
