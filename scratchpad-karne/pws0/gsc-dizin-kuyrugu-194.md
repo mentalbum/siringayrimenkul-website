@@ -204,3 +204,11 @@ göre mahalle mahalle site sayfaları.
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri
+
+## OTOMASYON KURALI (Özgün, 2026-08-11 23:20)
+
+Kota her dolduğunda **3 saat sonra** yeniden denenir. Akış: tek seferlik cron →
+istek kabul edilirse 10dk'lık damla döngüsü yeniden kurulur → kota dolunca
+döngü kendini durdurur ve 3 saat sonrasına yeni tek seferlik cron kurar.
+İlk yeniden deneme: 12.08 02:23 (görev 68120708). NOT: cron'lar oturuma
+bağlı — Claude oturumu kapanırsa zincir durur, "devam" ile elden sürdürülür.
