@@ -114,3 +114,54 @@ olduğu yere mi gitsin — 2026-08-10'da soruldu.
 4. **Harita kutusu ayrı savaş:** kutuya girmeyi GBP kaydının adı/adresi
    belirliyor (34 ölçüm, p=0,000028) — sayfa işiyle çözülmez.
    Bkz. [[project-harita-kutusu-ad-eslesmesi]].
+
+---
+
+## 2026-08-11 — 19 hedef sorgunun tam turu (pws=0, gl=tr, hl=tr)
+
+Uygulama içi tarayıcı, tek sekme, nötr Ankara konumu. 19/19 ölçüldü, engel yok.
+Ham veri: `sonuclar-emlakci.jsonl` (`d:"2026-08-11"`). Kuyruk: `kuyruk-emlakci-0811.json`.
+
+**ÖNEMLİ ZAMANLAMA UYARISI:** PR #9'un kısalttığı mahalle başlıkları 10 Ağustos
+21:43'te merge edildi ama Vercel yayını KIRIKTI (eksik `lib/icerik-token.ts`);
+başlıklar canlıya ancak 10 Ağustos ~23:20'de çıktı. Yani bu tur, yeni başlıkların
+etkisini DEĞİL, öncesini ölçüyor. Başlık etkisi için ~2 hafta sonra tekrar tur.
+
+| Sorgu | Organik | 09.08 | Harita | Sıralayan sayfa |
+|---|---|---|---|---|
+| 1. Etap | **2** | 1 | **3** | `/` (sahibinden mağazamız organik 1.) |
+| 2. Etap | yok | yok | **3** | — |
+| 3. Etap | 9 | yok | yok | `/` |
+| 4. Etap | **2** | 2 | **1** | `/` (sahibinden mağazamız organik 1.) |
+| 5. Etap | **2** | 2 | **1** | `/mahalleler/tunahan-mahallesi/etaplar/5` |
+| Altay | 9 | yok | yok | `/mahalleler/altay-mahallesi` |
+| Devlet | 4 | 5 | yok | `/mahalleler/devlet-mahallesi` |
+| Eryaman | 4 | 4 | **1** | `/` |
+| Göksu | yok | yok | yok | — |
+| Güzelkent | yok | yok | yok | — |
+| Ş. Osman Avcı | yok | yok | yok | — |
+| Şeker | yok | yok | yok | — |
+| Şeyh Şamil | **3** | 3 | yok | `/mahalleler/seyh-samil` ← **ESKİ URL** |
+| Tunahan | yok | yok | **1** | — |
+| Yavuz Selim | 4 | 4 | yok | `/mahalleler/yavuz-selim-mahallesi` |
+| Yeşilova | 10 | yok | yok | `/mahalleler/yesilova-mahallesi` |
+| Ata | 6 | — | yok | `/mahalleler/ata-mahallesi` |
+| Cumhuriyet | yok | — | yok | — |
+| Susuz | yok | — | yok | — |
+
+Ata/Cumhuriyet/Susuz 09.08'de "Ankara" öneki OLMADAN ölçülmüştü — o üçü için
+karşılaştırma geçersiz, bugünkü değerler yeni taban.
+
+**Özet:** organik ilk 3'te 4 sorgu (1./4./5. Etap + Şeyh Şamil). İlk 10'da 11.
+Harita kutusunda ilk 3'te 6, birinci 4 (4./5. Etap, Eryaman, Tunahan).
+
+### Bu turun çıkardığı iki iş
+
+1. **`/mahalleler/seyh-samil` hâlâ dizinde.** Mahalle URL şeması 2026-07-26'da
+   `-mahallesi` ekli hâle taşındı; Google iki buçuk haftadır ESKİ adresi
+   sıralıyor (301'i izliyor ama kanonik adresi güncellememiş). Sıra 3, yani
+   kayıp yok — ama hedef ilk 3'ün korunması için yeni adresin dizine girmesi
+   gerek. GSC'den yeni adrese dizin isteği + iç bağların kontrolü.
+2. **Tunahan çelişkisi:** harita kutusunda 1., organikte ilk 10'da yok.
+   Mahalle sayfası "Tunahan mahallesi emlakçı" sorgusunda hiç görünmüyor;
+   oysa aynı sayfa 5. Etap sorgusunda 2. sırada. Kanibalizasyon şüphesi.
