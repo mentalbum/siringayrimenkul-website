@@ -181,3 +181,37 @@ TTBS vakasıyla aynı sınıf: bu sitede 301'ler geç işleniyor (tarama bütçe
 **Tunahan bulgusu en somut iş:** harita kutusunda 1. sıradayız ama mahalle
 sayfası organikte hiç yok VE kendi site: sorgusunda kök sayfa çıkmıyor. Diğer
 13 mahallede kök sayfa dizinde. Önce GSC URL denetimi ile durum doğrulanmalı.
+
+### 2026-08-11 — MAHALLE KÖK SAYFALARININ DİZİN TEŞHİSİ (kesin)
+
+Yöntem: sayfaya özgü bir cümleyi tırnak içinde aratmak. **Cümlenin YAŞI kritik:**
+ilk denemede Tunahan'ı 08.08'de eklenmiş bir cümleyle test ettim, "sonuç yok"
+çıktı ve "dizinde değil" sandım — yanlıştı. 26.07'den beri değişmemiş bir
+cümleyle tekrarlayınca sayfa çıktı. Kontrol grubu şart.
+
+| Mahalle | Durum | Kanıt |
+|---|---|---|
+| Tunahan | **ESKİ adres dizinde** (`/mahalleler/tunahan`), içerik de bayat (08.08 güncellemesi yok) | 26.07 cümlesi → eski URL; 08.08 cümlesi → sonuç yok |
+| Şeyh Şamil | **ESKİ adres sıralıyor** (`/mahalleler/seyh-samil`, organik 3.), yeni adres de dizinde | ölçüm + `site:` |
+| Güzelkent | **HİÇ dizinde değil** — ne eski ne yeni adres | 26.07 cümlesi → "sonuç bulunamadı" |
+| Ş. Osman Avcı | kök sayfa `site:` ilk 10'da yok (Güzelkent'le aynı desen, cümle testi yapılmadı) | `site:` |
+| Göksu | yeni adres dizinde, kök 1. sırada | `site:` + 26.07 cümlesi → doğru URL |
+| Şeker | yeni adres dizinde, kök 1. sırada | `site:` |
+| Altay, Devlet, Eryaman, Yavuz Selim, Yeşilova, Ata | yeni adres dizinde | organik ölçümde yeni URL sıralıyor |
+
+**Sonuç: organikte görünmediğimiz 8 sorgunun 3'ü (Tunahan, Güzelkent, Ş. Osman
+Avcı) dizin sorunu.** Göksu ve Şeker dizinde ama sıralamıyor — o ayrı bir dert.
+2. Etap de dizinde (09.08 GSC denetimi), yani sıralama sorunu.
+
+Teknik taraf temiz — bu üç sayfa Göksu ile birebir aynı: HTTP 200, kendine
+kanonik, `index, follow`, sitemap'te, aynı lastmod, ana sayfa + `/mahalleler` +
+`/siteler`'den bağlı, kendi site sayfalarından 3'er bağ alıyor. Yani sorun
+sayfada değil: Google 26.07 taşımasını hâlâ sindirmemiş (tarama bütçesi).
+
+**Yapılacak:** aşağıdaki 4 adres GSC "URL denetimi → dizine eklenmesini iste"ye
+girer. Kota günde ~10-12, hepsi tek seferde sığar.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi
