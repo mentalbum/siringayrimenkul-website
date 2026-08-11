@@ -257,3 +257,50 @@ Genel tablo: **dizine eklenmeyen 744 sayfa / eklenen 2.037** (GSC Genel Bakış)
 
 Diğer 16 sorgu aynı gün saat ~01:00'de ölçülmüştü (yukarıdaki tablo); saatler
 içinde SERP değişmeyeceği ve kanal riski yüzünden tekrarlanmadı.
+
+### 2026-08-11 — RAKİP ANALİZİ SONUÇLARI + UYGULANAN PAKET (6 ajanlı tarama)
+
+Tam sentez: oturum kaydında; ham ajan çıktıları workflow journal'da. Ana bulgular:
+
+1. **İçerik farkı kazanan/kaybeden ayrımını AÇIKLAMIYOR** (ölçüldü): uzunluk,
+   envanter, kelime geçişleri örtüşüyor; sıfır metinli beyazemlak.com.tr
+   (HTTPS'siz!) ve şablon remax sayfaları sıralanırken en uzun içerikli
+   sayfamız (Tunahan) sıralanmıyordu. → "metin ekle/uzat" işi AÇILMAZ.
+2. **Asıl ayrıştırıcı bağ yaşı + tarama gecikmesi.** Sıralanan tek etap
+   sayfası 5'in tekil farkı: ona işaret eden en eski derin bağlar (blog
+   etap-sistemi yazısı YALNIZ 4-5'e bağ veriyordu; 24.06'dan beri). GSC son
+   tarama tarihleri: Göksu 27 TEMMUZ (15 gün bayat — "Emlakçı Arayanlara"
+   bölümünü, iç bağ katmanını, yeni başlığı Google hiç görmedi), Şeker 7
+   Ağustos. Kaybedenlerin ortak sorunu bu.
+3. **Ad-eşleşmeli sahibinden mağazaları kapatılamaz rakip:** "Eryaman 2. Etap
+   emlakçı"da empaeryaman2, "Şeker mahallesi emlakçı"da nafisekeremlak
+   organik 1. Mağaza adına anahtar kelime bizde kapalı karar → bu iki
+   sorguda gerçekçi hedef organik 1 DEĞİL, ilk 5-10.
+4. **Cumhuriyet öneksiz: kazanılamaz VE yanlış hedef** (kazanılsa Batıkent/
+   Keçiören tıkı gelir). Doğru ölçüt "yeni batı emlakçı" — kuyruğa eklendi.
+5. Yenimahalle üçlüsünde eski başlıkta "Yenimahalle Ankara" eki VARKEN de
+   kaybedilmişti → sorun sayfa sinyali değil, varlık belirsizliği.
+
+**Uygulanan paket (PR #13):** blog etap-sistemi yazısına 1./2./3. Etap bağları
+(5'in avantajının kopyası) + Şeyh Şamil yaşam yazısına etap-3 bağı + 4. Etap'a
+eryaman4.com'dan doğrulanmış tek-yönetim cümlesi + mahalle Place JSON-LD'ye
+alternateName ("Yeni Batı" artık yapısal veride) ve PostalAddress.
+**"Yakındaki Mahalleler" bloğu 08.08'de zaten eklenmiş** — ajan önerdi, teyitte
+mevcut çıktı, iş açılmadı.
+
+### YARIN (2026-08-12) — GSC kotası dolunca kalanlar
+
+Bugün 4 dizin isteği gönderildi (tunahan, guzelkent, sehit-osman-avci,
+seyh-samil), 5.'de (goksu) "Kota Aşıldı" geldi. Yarın sırayla:
+
+- [ ] goksu-mahallesi → dizine eklenmesini iste (kopya 27 Tem'den, EN BAYAT)
+- [ ] seker-mahallesi → dizine eklenmesini iste (kopya 7 Ağu'dan)
+- [ ] Not: Şeker denetiminde "Site Haritaları: Geçici işleme hatası" görüldü —
+      tekrarlanırsa Site Haritaları raporuna bakılmalı.
+
+### Gecelik tur için: sıradaki ölçümlerde ilk3u kullan
+
+PROTOKOL-gece.md:176'daki `ilk3u` (rakibin TAM URL'i) alanı bu turda
+kullanılmadı; "hangi portal SAYFASI / beyazemlak hangi URL ile sıralanıyor"
+sorusu bu yüzden açık kaldı. Sonraki turda ölçüm JS'ine eklenecek.
+"yeni batı emlakçı" sorgusu da tura dahil edilecek (Cumhuriyet'in gerçek ölçütü).
