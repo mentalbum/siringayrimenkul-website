@@ -165,3 +165,19 @@ Harita kutusunda ilk 3'te 6, birinci 4 (4./5. Etap, Eryaman, Tunahan).
 2. **Tunahan çelişkisi:** harita kutusunda 1., organikte ilk 10'da yok.
    Mahalle sayfası "Tunahan mahallesi emlakçı" sorgusunda hiç görünmüyor;
    oysa aynı sayfa 5. Etap sorgusunda 2. sırada. Kanibalizasyon şüphesi.
+
+### Aynı turda yapılan dizin teşhisi (site: sorguları)
+
+| Kontrol | Sonuç |
+|---|---|
+| `site:.../mahalleler/goksu-mahallesi` | kök sayfa **1. sırada**, ~77 sayfa dizinde → dizin sorunu YOK, sıralama sorunu |
+| `site:.../mahalleler/tunahan-mahallesi` | kök sayfa ilk 10'da **YOK**, ~70 alt sayfa dizinde → **kök sayfa dizin dışı ya da ağır bastırılmış** |
+| `site:.../mahalleler/seyh-samil-mahallesi` | yeni adres **1. sırada**, ~80 sayfa dizinde → yeni adres dizinde, ama Google sıralamada hâlâ eskiyi gösteriyor |
+
+Eski mahalle adresleri (`/mahalleler/seyh-samil`, `/goksu`, `/tunahan`, `/altay`)
+308 ile doğru hedefe gidiyor — yönlendirme sağlam, Google birleştirmeyi yapmamış.
+TTBS vakasıyla aynı sınıf: bu sitede 301'ler geç işleniyor (tarama bütçesi).
+
+**Tunahan bulgusu en somut iş:** harita kutusunda 1. sıradayız ama mahalle
+sayfası organikte hiç yok VE kendi site: sorgusunda kök sayfa çıkmıyor. Diğer
+13 mahallede kök sayfa dizinde. Önce GSC URL denetimi ile durum doğrulanmalı.
