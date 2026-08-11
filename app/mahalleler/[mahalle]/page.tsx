@@ -242,12 +242,25 @@ export default async function MahallePage({ params }: Props) {
     "@context": "https://schema.org",
     "@type": "Place",
     name: mahalle.isim,
+    // alternateName: site şablonu ([site]/page.tsx) alternatif adları zaten
+    // basıyordu, mahalle şablonu basmıyordu — asıl alias mekanizması burada
+    // yaşadığı hâlde ("Yeni Batı" → Cumhuriyet). Tutarlılık düzeltmesi (2026-08-11).
+    ...(mahalle.alternatifAdlar?.length ? { alternateName: mahalle.alternatifAdlar } : {}),
     description: mahalle.kisaAciklama,
     url: `${siteConfig.url}/mahalleler/${mahalle.slug}`,
     geo: {
       "@type": "GeoCoordinates",
       latitude: mahalle.merkezKoordinat.lat,
       longitude: mahalle.merkezKoordinat.lng,
+    },
+    // PostalAddress: adı Türkiye çapında yaygın mahallelerde (Göksu, Şeker,
+    // Cumhuriyet...) il/ilçe ayrıştırmasının yapısal karşılığı. Sokak adresi
+    // YOK ve uydurulmaz; mahalle düzeyinde il+ilçe gerçek veridir.
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: mahalle.ilce,
+      addressRegion: "Ankara",
+      addressCountry: "TR",
     },
     containedInPlace: {
       "@type": "AdministrativeArea",
