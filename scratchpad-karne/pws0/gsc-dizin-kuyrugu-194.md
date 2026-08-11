@@ -14,7 +14,7 @@ göre mahalle mahalle site sayfaları.
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/agacli-gol-sitesi ← 11.08 ~23:25 gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/akduzen-sitesi ← 11.08 ~23:35 gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/angora-sitesi ← 11.08 ~23:45 gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bahar-sitesi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bahar-sitesi ← 11.08 ~23:55 gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/eceser-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
