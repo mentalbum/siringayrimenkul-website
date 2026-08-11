@@ -244,3 +244,16 @@ algılanmadı" ve "hiç yönlendiren sayfa algılanmadı" diyor — oysa adres
 sitemap.xml'de VAR ve ana sayfa + /mahalleler + /siteler + kendi site
 sayfalarından bağlı. Yani Google sitemap'i bu adres için hiç işlememiş.
 Genel tablo: **dizine eklenmeyen 744 sayfa / eklenen 2.037** (GSC Genel Bakış).
+
+### 2026-08-11 (2. tur, aynı gün) — öneksiz komşu üçlüsü
+
+Özgün'ün listesi bu kez "Ankara" öneksiz biçimi istedi; üçü ölçüldü:
+
+| Sorgu | Organik | Harita | İlk 3 | Not |
+|---|---|---|---|---|
+| Ata mahallesi emlakçı | yok | yok | sahibinden, remaxalimsatimkiralama.com, emlakjet | önekli biçimde 6.'yız; öneksizde ilk 10 dışı |
+| Cumhuriyet mahallesi emlakçı | yok | yok | sahibinden, hepsiemlak | SERP Batıkent/Keçiören'e bölünüyor |
+| susuz mahallesi emlakçı | yok | yok | sahibinden, hepsiemlak, yandex | erkan-yuksel.com (yerel ofis) 7. |
+
+Diğer 16 sorgu aynı gün saat ~01:00'de ölçülmüştü (yukarıdaki tablo); saatler
+içinde SERP değişmeyeceği ve kanal riski yüzünden tekrarlanmadı.
