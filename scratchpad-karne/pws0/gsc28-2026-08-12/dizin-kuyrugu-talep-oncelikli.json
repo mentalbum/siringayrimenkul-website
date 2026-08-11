@@ -1,0 +1,1175 @@
+{
+ "aciklama": "GSC 28g (2026-08-12) talep kanıtlı ama sayfası taranmamış 80 site — dizin isteği kuyruğu için talep sıralı öncelik. Tek-aile eşleşme (ad-örtüşme artefaktı ayıklanmış). Kaynak: kapsama boşluğu analizi 12.08.",
+ "liste": [
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri",
+   "gosterim": 147,
+   "tik": 4,
+   "sorgular": [
+    {
+     "q": "mes polaris satılık",
+     "g": 49,
+     "p": 4.63
+    },
+    {
+     "q": "mes polaris evleri satılık",
+     "g": 42,
+     "p": 3.43
+    },
+    {
+     "q": "mes polaris evleri",
+     "g": 30,
+     "p": 8.43
+    },
+    {
+     "q": "mes polaris kiralık",
+     "g": 15,
+     "p": 2.87
+    },
+    {
+     "q": "mes polaris",
+     "g": 11,
+     "p": 8.18
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/astim-metrolife",
+   "gosterim": 129,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "astim metrolife",
+     "g": 57,
+     "p": 9.3
+    },
+    {
+     "q": "astim metrolife satılık",
+     "g": 41,
+     "p": 9.44
+    },
+    {
+     "q": "astim metrolife kiralık",
+     "g": 23,
+     "p": 8.3
+    },
+    {
+     "q": "astim metrolife kiralık daire",
+     "g": 8,
+     "p": 10.12
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/kainat-evleri",
+   "gosterim": 124,
+   "tik": 2,
+   "sorgular": [
+    {
+     "q": "kainat evleri",
+     "g": 56,
+     "p": 9.96
+    },
+    {
+     "q": "kainat evleri eryaman",
+     "g": 19,
+     "p": 9.05
+    },
+    {
+     "q": "kainat evleri satılık",
+     "g": 18,
+     "p": 5.83
+    },
+    {
+     "q": "kainat evleri satılık daire",
+     "g": 18,
+     "p": 6.28
+    },
+    {
+     "q": "kainat evleri 2",
+     "g": 13,
+     "p": 5.08
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari",
+   "gosterim": 112,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "anadolu vizyon konutları",
+     "g": 103,
+     "p": 7.35
+    },
+    {
+     "q": "anadolu vizyon konutları kiralık",
+     "g": 9,
+     "p": 3.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/zirveden-bati",
+   "gosterim": 93,
+   "tik": 2,
+   "sorgular": [
+    {
+     "q": "zirveden batı kiralık",
+     "g": 72,
+     "p": 8.72
+    },
+    {
+     "q": "zirveden batı kiralık daire",
+     "g": 16,
+     "p": 9.19
+    },
+    {
+     "q": "zirveden batı satılık",
+     "g": 5,
+     "p": 9.8
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/motto-goksu",
+   "gosterim": 87,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "motto göksu",
+     "g": 47,
+     "p": 11.09
+    },
+    {
+     "q": "motto göksu kiralık",
+     "g": 40,
+     "p": 6.95
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/gold-stone-evleri",
+   "gosterim": 85,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "gold stone evleri",
+     "g": 85,
+     "p": 7.19
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari",
+   "gosterim": 82,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "yurt prestij konutları",
+     "g": 82,
+     "p": 10.24
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/ata-life-sitesi",
+   "gosterim": 80,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "ata life sitesi",
+     "g": 61,
+     "p": 6.34
+    },
+    {
+     "q": "ata life sitesi satılık",
+     "g": 19,
+     "p": 5.74
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/eryaman-mahallesi/ilke-sitesi",
+   "gosterim": 79,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "ilke sitesi",
+     "g": 29,
+     "p": 9.66
+    },
+    {
+     "q": "ilke sitesi eryaman",
+     "g": 18,
+     "p": 10.78
+    },
+    {
+     "q": "eryaman ilke sitesi satılık daire",
+     "g": 15,
+     "p": 8.07
+    },
+    {
+     "q": "eryaman ilke sitesi kiralık daire",
+     "g": 9,
+     "p": 8.33
+    },
+    {
+     "q": "ilke sitesi satılık daire",
+     "g": 8,
+     "p": 9.5
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/mercan-smart-house",
+   "gosterim": 77,
+   "tik": 3,
+   "sorgular": [
+    {
+     "q": "mercan smart house",
+     "g": 61,
+     "p": 8.3
+    },
+    {
+     "q": "mercan smart house satılık",
+     "g": 16,
+     "p": 5.19
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/tekirdag-park-evleri",
+   "gosterim": 73,
+   "tik": 2,
+   "sorgular": [
+    {
+     "q": "tekirdağ park evleri",
+     "g": 71,
+     "p": 7.21
+    },
+    {
+     "q": "tekirdağ park evleri satılık daire",
+     "g": 2,
+     "p": 5.5
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi",
+   "gosterim": 65,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "özahikent satılık",
+     "g": 29,
+     "p": 7.38
+    },
+    {
+     "q": "özahikent sitesi eryaman",
+     "g": 14,
+     "p": 9.5
+    },
+    {
+     "q": "özahikent kiralık",
+     "g": 12,
+     "p": 7.75
+    },
+    {
+     "q": "özahikent sitesi",
+     "g": 10,
+     "p": 9.9
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/havuz-kent",
+   "gosterim": 64,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "havuz kent sitesi",
+     "g": 42,
+     "p": 8.69
+    },
+    {
+     "q": "havuz kent sitesi satılık",
+     "g": 22,
+     "p": 6.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/tunahan-mahallesi/neopolitan-eryaman",
+   "gosterim": 55,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "neopolitan eryaman satılık",
+     "g": 32,
+     "p": 8.31
+    },
+    {
+     "q": "neopolitan eryaman kiralık",
+     "g": 23,
+     "p": 8.7
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri",
+   "gosterim": 54,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "botanik park evleri",
+     "g": 54,
+     "p": 9.74
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/vera-vista",
+   "gosterim": 53,
+   "tik": 2,
+   "sorgular": [
+    {
+     "q": "vera vista",
+     "g": 36,
+     "p": 8.81
+    },
+    {
+     "q": "vera vista satılık",
+     "g": 17,
+     "p": 4.06
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/camdali-sitesi",
+   "gosterim": 53,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "çamdalı sitesi",
+     "g": 53,
+     "p": 9.06
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari",
+   "gosterim": 53,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "bahçen eryaman kiralık",
+     "g": 53,
+     "p": 10.74
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/oz-gimat-sitesi",
+   "gosterim": 51,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "öz gimat sitesi",
+     "g": 51,
+     "p": 5.51
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/cigdem-sitesi",
+   "gosterim": 51,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "çiğdem sitesi",
+     "g": 51,
+     "p": 8.8
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/sumeyra-2-sitesi",
+   "gosterim": 50,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "sümeyra 2 sitesi",
+     "g": 40,
+     "p": 8.3
+    },
+    {
+     "q": "sümeyra 2 sitesi satılık",
+     "g": 10,
+     "p": 6.2
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi",
+   "gosterim": 47,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "göksu metrokent sitesi",
+     "g": 26,
+     "p": 6.42
+    },
+    {
+     "q": "göksu metrokent",
+     "g": 12,
+     "p": 9.25
+    },
+    {
+     "q": "göksu metrokent sitesi satılık",
+     "g": 9,
+     "p": 5.78
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/eryaman-mahallesi/armina-park-evleri",
+   "gosterim": 45,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "armina park evleri",
+     "g": 45,
+     "p": 6.98
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi",
+   "gosterim": 45,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "yeşil vadim sitesi eryaman",
+     "g": 31,
+     "p": 7.84
+    },
+    {
+     "q": "yeşil vadim sitesi",
+     "g": 14,
+     "p": 8.36
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
+   "gosterim": 44,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "altıntepe sitesi",
+     "g": 44,
+     "p": 6.32
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri",
+   "gosterim": 43,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "kc lale evleri kiralık",
+     "g": 43,
+     "p": 7.6
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/guldede-sitesi",
+   "gosterim": 42,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "güldede sitesi",
+     "g": 42,
+     "p": 8.52
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/eryaman-mahallesi/dogakent-konutlari",
+   "gosterim": 41,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "doğakent konutları",
+     "g": 41,
+     "p": 7.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/susuz-mahallesi/bulut-kule",
+   "gosterim": 40,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "bulut kule",
+     "g": 40,
+     "p": 7.97
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari",
+   "gosterim": 39,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "ata yıldız batı konutları kiralık",
+     "g": 22,
+     "p": 7.41
+    },
+    {
+     "q": "ata yıldız batı konutları",
+     "g": 17,
+     "p": 8.65
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi",
+   "gosterim": 38,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "yıldız tatil sitesi",
+     "g": 38,
+     "p": 7.53
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/trend-life-sitesi",
+   "gosterim": 38,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "trend life sitesi",
+     "g": 30,
+     "p": 6.87
+    },
+    {
+     "q": "trend life satılık daire",
+     "g": 8,
+     "p": 7.88
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi",
+   "gosterim": 36,
+   "tik": 2,
+   "sorgular": [
+    {
+     "q": "eryaman cumhuriyet sitesi satılık daire",
+     "g": 28,
+     "p": 8.46
+    },
+    {
+     "q": "eryaman cumhuriyet sitesi kiralık daire",
+     "g": 8,
+     "p": 7.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/sirin-91-sitesi",
+   "gosterim": 36,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "şirin 91 sitesi",
+     "g": 36,
+     "p": 8.14
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/yesil-gol-sitesi",
+   "gosterim": 35,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "yeşil göl sitesi",
+     "g": 35,
+     "p": 9.09
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/wind-goksu",
+   "gosterim": 33,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "wind göksu satılık",
+     "g": 19,
+     "p": 7.37
+    },
+    {
+     "q": "wind göksu kiralık",
+     "g": 8,
+     "p": 8.75
+    },
+    {
+     "q": "wind göksu",
+     "g": 6,
+     "p": 10.33
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi",
+   "gosterim": 31,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "grup dayanışma sitesi",
+     "g": 31,
+     "p": 11.16
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri",
+   "gosterim": 30,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "lider yaşam evleri",
+     "g": 30,
+     "p": 4.83
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/gozde-2-sitesi",
+   "gosterim": 29,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "gözde 2 sitesi",
+     "g": 29,
+     "p": 7.93
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/address-goksu",
+   "gosterim": 28,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "address göksu kiralık",
+     "g": 28,
+     "p": 9.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi",
+   "gosterim": 28,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "uyum 90 sitesi",
+     "g": 28,
+     "p": 11.29
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/paro-life",
+   "gosterim": 28,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "paro life konutları",
+     "g": 20,
+     "p": 10.0
+    },
+    {
+     "q": "paro life",
+     "g": 8,
+     "p": 8.5
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari",
+   "gosterim": 28,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "bulvar 312 kiralık daire",
+     "g": 19,
+     "p": 9.26
+    },
+    {
+     "q": "bulvar 312 satılık daire",
+     "g": 9,
+     "p": 7.89
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+   "gosterim": 28,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "bulvar 1071 sitesi",
+     "g": 15,
+     "p": 8.93
+    },
+    {
+     "q": "bulvar 1071",
+     "g": 13,
+     "p": 7.92
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/sirin-guneskent-sitesi",
+   "gosterim": 27,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "şirin güneşkent sitesi",
+     "g": 27,
+     "p": 9.52
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi",
+   "gosterim": 27,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "büyük ankara sitesi",
+     "g": 27,
+     "p": 6.33
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/liva-life-yasam-konutlari",
+   "gosterim": 26,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "liva life yaşam konutları",
+     "g": 26,
+     "p": 7.27
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari",
+   "gosterim": 25,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "neva panora",
+     "g": 25,
+     "p": 9.6
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/ak-91-sitesi",
+   "gosterim": 24,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "ak 91 sitesi",
+     "g": 24,
+     "p": 10.38
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri",
+   "gosterim": 24,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "astim flora",
+     "g": 24,
+     "p": 10.71
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/gul-sitesi",
+   "gosterim": 23,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "gül sitesi eryaman",
+     "g": 23,
+     "p": 6.04
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/caglar-belde-sitesi",
+   "gosterim": 23,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "çağlar belde sitesi",
+     "g": 23,
+     "p": 6.35
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seker-mahallesi/akdal-residence",
+   "gosterim": 23,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "akdal residence",
+     "g": 23,
+     "p": 7.17
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
+   "gosterim": 23,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "bp residence eryaman",
+     "g": 23,
+     "p": 9.09
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/susuz-mahallesi/mavera-goksu",
+   "gosterim": 22,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "mavera göksu",
+     "g": 22,
+     "p": 8.95
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/yesilova-mahallesi/gokdemir-tower",
+   "gosterim": 21,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "gökdemir tower kiralık",
+     "g": 16,
+     "p": 9.44
+    },
+    {
+     "q": "gökdemir tower kiralık daire",
+     "g": 5,
+     "p": 9.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+   "gosterim": 20,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "çizgi ötesi residence satılık",
+     "g": 11,
+     "p": 7.55
+    },
+    {
+     "q": "çizgi ötesi rezidans",
+     "g": 9,
+     "p": 11.67
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/yesiloz-sitesi",
+   "gosterim": 17,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "yeşilöz sitesi",
+     "g": 17,
+     "p": 6.29
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/panorama-gold",
+   "gosterim": 17,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "panorama gold satılık",
+     "g": 17,
+     "p": 8.65
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/dogus-91-sitesi",
+   "gosterim": 17,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "doğuş 91 sitesi",
+     "g": 17,
+     "p": 9.06
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
+   "gosterim": 16,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "erkaraca sitesi",
+     "g": 16,
+     "p": 9.69
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seker-mahallesi/altas-rezidans",
+   "gosterim": 16,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "altaş rezidans",
+     "g": 16,
+     "p": 9.88
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/endora-goksu",
+   "gosterim": 15,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "endora göksu kiralık",
+     "g": 15,
+     "p": 9.73
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/denizim-sitesi",
+   "gosterim": 14,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "denizim sitesi",
+     "g": 14,
+     "p": 10.86
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/metropark-concept",
+   "gosterim": 13,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "metropark concept",
+     "g": 13,
+     "p": 10.85
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi",
+   "gosterim": 12,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "laçin eryaman sitesi",
+     "g": 12,
+     "p": 9.5
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/sergah-evleri",
+   "gosterim": 12,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "sergah evleri",
+     "g": 12,
+     "p": 10.33
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/goksu-bilge-sitesi",
+   "gosterim": 11,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "göksu bilge sitesi",
+     "g": 11,
+     "p": 6.82
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi",
+   "gosterim": 11,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "köşk birlik sitesi",
+     "g": 11,
+     "p": 7.82
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari",
+   "gosterim": 11,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "göksu park vadi konutları",
+     "g": 11,
+     "p": 10.27
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/devlet-mahallesi/dastarli-sitesi",
+   "gosterim": 10,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "dastarlı sitesi",
+     "g": 10,
+     "p": 8.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/susuz-mahallesi/serline-konutlari",
+   "gosterim": 9,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "serline konutları",
+     "g": 9,
+     "p": 7.22
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/altay-mahallesi/eryaman-park-evleri",
+   "gosterim": 9,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "eryaman park prestij satılık daireler",
+     "g": 9,
+     "p": 8.22
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/seyh-samil-mahallesi/kuryap-sitesi",
+   "gosterim": 9,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "kuryap sitesi",
+     "g": 9,
+     "p": 8.89
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/goksu-mahallesi/angora-sitesi",
+   "gosterim": 9,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "angora sitesi eryaman",
+     "g": 9,
+     "p": 10.78
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
+   "gosterim": 8,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "şehit ferhat koç sitesi",
+     "g": 8,
+     "p": 4.62
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/ata-mahallesi/rusen-park-evleri",
+   "gosterim": 8,
+   "tik": 0,
+   "sorgular": [
+    {
+     "q": "ruşen park evleri satılık",
+     "g": 8,
+     "p": 9.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/tunahan-mahallesi/akturk-sitesi",
+   "gosterim": 2,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "aktürk sitesi",
+     "g": 2,
+     "p": 10.0
+    }
+   ]
+  },
+  {
+   "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij",
+   "gosterim": 2,
+   "tik": 1,
+   "sorgular": [
+    {
+     "q": "göksu prestij",
+     "g": 2,
+     "p": 18.5
+    }
+   ]
+  }
+ ]
+}

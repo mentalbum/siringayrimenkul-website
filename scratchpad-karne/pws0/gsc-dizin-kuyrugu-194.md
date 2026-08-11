@@ -1,73 +1,129 @@
-# GSC dizin isteği kuyruğu — TARANMAMIŞ 194 gerçek sayfa (2026-08-11)
+# GSC dizin isteği kuyruğu — TALEP SIRALI (2026-08-12 gece analiziyle yeniden dizildi)
 
-Kaynak: GSC "Keşfedildi - şu anda dizine eklenmiş değil" raporu (487 sayfanın
-ada/blog dışı kalanı). Bu sayfalar Google'da HİÇ yok — gösterim hedefinin
-(günlük 10K) en büyük kaldıracı. Kota günde ~10-12 istek; her oturumda
-sıradaki işaretsizleri gönder, işaretle. IndexNow (Bing/Yandex) 11.08'de
-194'ü için gönderildi (200 OK).
+Sıralama anahtarı: GSC 28g sorgu-gösterim kanıtı (dizin-kuyrugu-talep-oncelikli.json,
+80 sayfa, 3.105 göst) + kanibalizasyon mağdurları; alfabetik sıra İPTAL. Günlük
+~6-12 kota HEP tepeden. IndexNow tüm listeye 12.08'de yeniden basıldı.
 
-Sıralama: önce Cumhuriyet mahalle sayfası (dizin dışı çıkan 2 mahalleden
-istek gönderilmemiş olanı; Tunahan 11.08'de gönderildi), sonra talep sırasına
-göre mahalle mahalle site sayfaları.
+Gönderilmişler (11-12.08): cumhuriyet-mahallesi (kök), agacli-gol-sitesi,
+akduzen-sitesi, angora-sitesi, bahar-sitesi, eceser-sitesi + tunahan kök,
+guzelkent kök, sehit-osman-avci kök, seyh-samil kök (10-11.08 turu), goksu kök,
+seker kök.
 
-- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi ← 11.08 ~23:15 gönderildi (öncelikli tarama sırasına alındı)
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/agacli-gol-sitesi ← 11.08 ~23:25 gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/akduzen-sitesi ← 11.08 ~23:35 gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/angora-sitesi ← 11.08 ~23:45 gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bahar-sitesi ← 11.08 ~23:55 gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/eceser-sitesi ← 12.08 ~00:05 gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← KOTA BURADA DOLDU (12.08 ~00:30), yarın buradan devam
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-bilge-sitesi
+## OTOMASYON KURALI (Özgün, 2026-08-11 23:20)
+Kota her dolduğunda 3 saat sonra yeniden dene; kabulde 10dk damla, dolunca dur.
+Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/camdali-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oz-gimat-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/dogus-91-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-concept
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-bilge-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utku-kent-2-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gode-yasam-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-concept
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/soyak-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/tureli-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/altay-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ankolular-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/dogus-91-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gordogu-sen-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-1-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi
@@ -78,137 +134,70 @@ göre mahalle mahalle site sayfaları.
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/mesa-calisanlari-kooperatifi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/renk-villalari
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/selale-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/seniz-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yukselay-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/acar-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/duskent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ictas-bloklari
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kackar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-metro-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ra-da-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/camdali-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oz-gimat-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/uzuner-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/concept-eryaman
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/may-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cagdas-onur-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/demirkent-on-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/manzara-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yeni-botanik-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri
-
-## OTOMASYON KURALI (Özgün, 2026-08-11 23:20)
-
-Kota her dolduğunda **3 saat sonra** yeniden denenir. Akış: tek seferlik cron →
-istek kabul edilirse 10dk'lık damla döngüsü yeniden kurulur → kota dolunca
-döngü kendini durdurur ve 3 saat sonrasına yeni tek seferlik cron kurar.
-İlk yeniden deneme: 12.08 02:23 (görev 68120708). NOT: cron'lar oturuma
-bağlı — Claude oturumu kapanırsa zincir durur, "devam" ile elden sürdürülür.
