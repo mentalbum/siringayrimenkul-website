@@ -1,0 +1,3564 @@
+[
+{
+"q": "Address Eryaman emlakçı",
+"s": "altay-mahallesi/address-eryaman",
+"es": []
+},
+{
+"q": "Age Blokları emlakçı",
+"s": "altay-mahallesi/age-bloklari",
+"es": []
+},
+{
+"q": "Aktürk Blokları emlakçı",
+"s": "altay-mahallesi/akturk-bloklari",
+"es": []
+},
+{
+"q": "Arya Nüans Residence emlakçı",
+"s": "altay-mahallesi/arya-nuans-residence",
+"es": []
+},
+{
+"q": "Atatürk Sitesi emlakçı",
+"s": "altay-mahallesi/ataturk-sitesi",
+"es": []
+},
+{
+"q": "Betontaş Blokları emlakçı",
+"s": "altay-mahallesi/betontas-bloklari",
+"es": []
+},
+{
+"q": "Cabadağ Blokları emlakçı",
+"s": "altay-mahallesi/cabadag-bloklari",
+"es": []
+},
+{
+"q": "Doktorlar Sitesi emlakçı",
+"s": "altay-mahallesi/doktorlar-sitesi",
+"es": [
+"yavuz-selim-mahallesi/doktorlar-sitesi"
+]
+},
+{
+"q": "Erland Residence emlakçı",
+"s": "altay-mahallesi/erland-residence",
+"es": []
+},
+{
+"q": "Eryaman Park Evleri emlakçı",
+"s": "altay-mahallesi/eryaman-park-evleri",
+"es": []
+},
+{
+"q": "Fırat Life Style Botanik emlakçı",
+"s": "altay-mahallesi/firat-life-style-botanik",
+"es": []
+},
+{
+"q": "Frekans Eryaman emlakçı",
+"s": "altay-mahallesi/frekans-eryaman",
+"es": []
+},
+{
+"q": "İlbeyi Sitesi emlakçı",
+"s": "altay-mahallesi/ilbeyi-sitesi",
+"es": []
+},
+{
+"q": "İzgi Park Evleri emlakçı",
+"s": "altay-mahallesi/izgi-park-evleri",
+"es": []
+},
+{
+"q": "Kutlutaş Blokları emlakçı",
+"s": "altay-mahallesi/kutlutas-sitesi",
+"es": []
+},
+{
+"q": "Lila Park emlakçı",
+"s": "altay-mahallesi/lila-park",
+"es": []
+},
+{
+"q": "Mesa Blokları emlakçı",
+"s": "altay-mahallesi/mesa-bloklari",
+"es": []
+},
+{
+"q": "Mood Street emlakçı",
+"s": "altay-mahallesi/mood-street",
+"es": []
+},
+{
+"q": "Motto Butik emlakçı",
+"s": "altay-mahallesi/motto-butik",
+"es": []
+},
+{
+"q": "Oasis Tower emlakçı",
+"s": "altay-mahallesi/oasis-tower",
+"es": []
+},
+{
+"q": "Palmiye Evleri emlakçı",
+"s": "altay-mahallesi/palmiye-evleri",
+"es": [
+"ata-mahallesi/palmiye-evleri"
+]
+},
+{
+"q": "Pembe Rüya Evleri emlakçı",
+"s": "altay-mahallesi/pembe-ruya-evleri",
+"es": []
+},
+{
+"q": "Sutek Blokları emlakçı",
+"s": "altay-mahallesi/sutek-bloklari",
+"es": [
+"seyh-samil-mahallesi/sutek-bloklari"
+]
+},
+{
+"q": "Uzuner Konutları emlakçı",
+"s": "altay-mahallesi/uzuner-konutlari",
+"es": []
+},
+{
+"q": "Vatan Sitesi emlakçı",
+"s": "altay-mahallesi/vatan-sitesi",
+"es": [
+"devlet-mahallesi/vatan-sitesi"
+]
+},
+{
+"q": "Vizyon Prestige emlakçı",
+"s": "altay-mahallesi/vizyon-prestige",
+"es": []
+},
+{
+"q": "4. Devlet Mahallesi Sitesi emlakçı",
+"s": "devlet-mahallesi/4-devlet-mahallesi-sitesi",
+"es": []
+},
+{
+"q": "Alis Sitesi emlakçı",
+"s": "devlet-mahallesi/alis-sitesi",
+"es": []
+},
+{
+"q": "Arslanlar Sitesi emlakçı",
+"s": "devlet-mahallesi/arslanlar-sitesi",
+"es": []
+},
+{
+"q": "Aşiyan Sitesi emlakçı",
+"s": "devlet-mahallesi/asiyan-sitesi",
+"es": []
+},
+{
+"q": "Bayrak Sitesi emlakçı",
+"s": "devlet-mahallesi/bayrak-sitesi",
+"es": []
+},
+{
+"q": "Betim Sitesi emlakçı",
+"s": "devlet-mahallesi/betim-sitesi",
+"es": []
+},
+{
+"q": "Bilgi Sevgi Hoşgörü Sitesi emlakçı",
+"s": "devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi",
+"es": []
+},
+{
+"q": "Çağkent Sitesi emlakçı",
+"s": "devlet-mahallesi/cagkent-sitesi",
+"es": []
+},
+{
+"q": "Çamdalı Sitesi emlakçı",
+"s": "devlet-mahallesi/camdali-sitesi",
+"es": []
+},
+{
+"q": "Çayılkay Sitesi emlakçı",
+"s": "devlet-mahallesi/cayilkay-sitesi",
+"es": []
+},
+{
+"q": "Cevizlidere Sitesi emlakçı",
+"s": "devlet-mahallesi/cevizlidere-sitesi",
+"es": []
+},
+{
+"q": "Çınar Sitesi emlakçı",
+"s": "devlet-mahallesi/cinar-sitesi",
+"es": [
+"sehit-osman-avci-mahallesi/cinar-sitesi"
+]
+},
+{
+"q": "Dastarlı Sitesi emlakçı",
+"s": "devlet-mahallesi/dastarli-sitesi",
+"es": []
+},
+{
+"q": "Demirkent Sitesi emlakçı",
+"s": "devlet-mahallesi/demirkent-sitesi",
+"es": []
+},
+{
+"q": "Denizim Sitesi emlakçı",
+"s": "devlet-mahallesi/denizim-sitesi",
+"es": []
+},
+{
+"q": "Eryaman Royal City emlakçı",
+"s": "devlet-mahallesi/eryaman-royal-city",
+"es": []
+},
+{
+"q": "Gülhayat Sitesi emlakçı",
+"s": "devlet-mahallesi/gulhayat-sitesi",
+"es": []
+},
+{
+"q": "Güneyce Sitesi emlakçı",
+"s": "devlet-mahallesi/guneyce-sitesi",
+"es": []
+},
+{
+"q": "Hotki Meydan emlakçı",
+"s": "devlet-mahallesi/hotki-meydan",
+"es": []
+},
+{
+"q": "İkizler Sitesi emlakçı",
+"s": "devlet-mahallesi/ikizler-sitesi",
+"es": []
+},
+{
+"q": "İlk Bahar Sitesi emlakçı",
+"s": "devlet-mahallesi/ilk-bahar-sitesi",
+"es": []
+},
+{
+"q": "Mavi Köy Sitesi emlakçı",
+"s": "devlet-mahallesi/mavi-koy-sitesi",
+"es": []
+},
+{
+"q": "Mavikent Sitesi emlakçı",
+"s": "devlet-mahallesi/mavikent-sitesi",
+"es": []
+},
+{
+"q": "Mil - Kooperatifi Sitesi emlakçı",
+"s": "devlet-mahallesi/mil-kooperatifi-sitesi",
+"es": []
+},
+{
+"q": "Oray Sitesi emlakçı",
+"s": "devlet-mahallesi/oray-sitesi",
+"es": []
+},
+{
+"q": "Örnek Arı Sitesi emlakçı",
+"s": "devlet-mahallesi/ornek-ari-sitesi",
+"es": []
+},
+{
+"q": "Öz Gimat Sitesi emlakçı",
+"s": "devlet-mahallesi/oz-gimat-sitesi",
+"es": []
+},
+{
+"q": "Özarda Göktürk Sitesi emlakçı",
+"s": "devlet-mahallesi/ozarda-gokturk-sitesi",
+"es": []
+},
+{
+"q": "Özdenizyıldızı Sitesi emlakçı",
+"s": "devlet-mahallesi/ozdenizyildizi-sitesi",
+"es": []
+},
+{
+"q": "Referans Ankara emlakçı",
+"s": "devlet-mahallesi/referans-ankara",
+"es": []
+},
+{
+"q": "Sahil Sitesi emlakçı",
+"s": "devlet-mahallesi/sahil-sitesi",
+"es": []
+},
+{
+"q": "Sarı Çınar Sitesi emlakçı",
+"s": "devlet-mahallesi/sari-cinar-sitesi",
+"es": []
+},
+{
+"q": "Sedirkent Sitesi emlakçı",
+"s": "devlet-mahallesi/sedirkent-sitesi",
+"es": []
+},
+{
+"q": "Selçuklu Sitesi emlakçı",
+"s": "devlet-mahallesi/selcuklu-sitesi",
+"es": []
+},
+{
+"q": "Sergah Evleri emlakçı",
+"s": "devlet-mahallesi/sergah-evleri",
+"es": []
+},
+{
+"q": "Sözova Sitesi emlakçı",
+"s": "devlet-mahallesi/sozova-sitesi",
+"es": []
+},
+{
+"q": "Tes-İş Blokları emlakçı",
+"s": "devlet-mahallesi/tes-is-bloklari",
+"es": []
+},
+{
+"q": "Turgut Aslan Sitesi emlakçı",
+"s": "devlet-mahallesi/turgut-aslan-sitesi",
+"es": []
+},
+{
+"q": "Türkkonut İstaş Sitesi emlakçı",
+"s": "devlet-mahallesi/turkkonut-istas-sitesi",
+"es": []
+},
+{
+"q": "Türkkonut Sinem Sitesi emlakçı",
+"s": "devlet-mahallesi/turkkonut-sinem-sitesi",
+"es": []
+},
+{
+"q": "Yeni Huzur Bahçesi Sitesi emlakçı",
+"s": "devlet-mahallesi/yeni-huzur-bahcesi-sitesi",
+"es": []
+},
+{
+"q": "Yeşilöz Sitesi emlakçı",
+"s": "devlet-mahallesi/yesiloz-sitesi",
+"es": []
+},
+{
+"q": "Yıldız Tatil Sitesi emlakçı",
+"s": "devlet-mahallesi/yildiz-tatil-sitesi",
+"es": []
+},
+{
+"q": "Yüceyurt Sitesi emlakçı",
+"s": "devlet-mahallesi/yuceyurt-sitesi",
+"es": []
+},
+{
+"q": "Akasya Evleri emlakçı",
+"s": "eryaman-mahallesi/akasya-evleri",
+"es": []
+},
+{
+"q": "Akkonaklar Sitesi emlakçı",
+"s": "eryaman-mahallesi/akkonaklar-sitesi",
+"es": []
+},
+{
+"q": "Ankapark Konutları emlakçı",
+"s": "eryaman-mahallesi/ankapark-konutlari",
+"es": []
+},
+{
+"q": "Armina Park Evleri emlakçı",
+"s": "eryaman-mahallesi/armina-park-evleri",
+"es": []
+},
+{
+"q": "Arya Evleri emlakçı",
+"s": "eryaman-mahallesi/arya-evleri",
+"es": []
+},
+{
+"q": "ASM Gold Konutları (Urhal Sitesi) emlakçı",
+"s": "eryaman-mahallesi/asm-golt-sitesi",
+"es": []
+},
+{
+"q": "ASM Prestij Konutları (Urhal Sitesi) emlakçı",
+"s": "eryaman-mahallesi/asm-prestij-konutlari",
+"es": []
+},
+{
+"q": "Atakent 1 Aşiyan Sitesi emlakçı",
+"s": "eryaman-mahallesi/atakent-1-asiyan-sitesi",
+"es": []
+},
+{
+"q": "Atakent 2 Cumhuriyet Sitesi emlakçı",
+"s": "eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
+"es": []
+},
+{
+"q": "Atakent Metro Sitesi emlakçı",
+"s": "eryaman-mahallesi/atakent-metro-sitesi",
+"es": []
+},
+{
+"q": "Atakent Sitesi emlakçı",
+"s": "eryaman-mahallesi/atakent-sitesi",
+"es": []
+},
+{
+"q": "Atakent Vadi Sitesi emlakçı",
+"s": "eryaman-mahallesi/atakent-vadi-sitesi",
+"es": []
+},
+{
+"q": "Ay Sitesi emlakçı",
+"s": "eryaman-mahallesi/ay-sitesi",
+"es": []
+},
+{
+"q": "Ayka Park Sitesi emlakçı",
+"s": "eryaman-mahallesi/ayka-park-sitesi",
+"es": []
+},
+{
+"q": "Bahar Sitesi emlakçı",
+"s": "eryaman-mahallesi/bahar-sitesi",
+"es": [
+"goksu-mahallesi/bahar-sitesi"
+]
+},
+{
+"q": "Başak Sitesi emlakçı",
+"s": "eryaman-mahallesi/basak-sitesi",
+"es": []
+},
+{
+"q": "Beyaz Residence emlakçı",
+"s": "eryaman-mahallesi/beyaz-residence",
+"es": []
+},
+{
+"q": "Çağlar Sitesi emlakçı",
+"s": "eryaman-mahallesi/caglar-sitesi",
+"es": []
+},
+{
+"q": "Cumhuriyet Sitesi emlakçı",
+"s": "eryaman-mahallesi/cumhuriyet-sitesi",
+"es": [
+"sehit-osman-avci-mahallesi/cumhuriyet-sitesi"
+]
+},
+{
+"q": "Doğakent Konutları emlakçı",
+"s": "eryaman-mahallesi/dogakent-konutlari",
+"es": []
+},
+{
+"q": "Doğankaya Sitesi emlakçı",
+"s": "eryaman-mahallesi/dogankaya-sitesi",
+"es": []
+},
+{
+"q": "Elif Elvan Sitesi emlakçı",
+"s": "eryaman-mahallesi/elif-elvan-sitesi",
+"es": []
+},
+{
+"q": "Elif Özgen Sitesi emlakçı",
+"s": "eryaman-mahallesi/elif-ozgen-sitesi",
+"es": []
+},
+{
+"q": "Endora Park emlakçı",
+"s": "eryaman-mahallesi/endora-park",
+"es": []
+},
+{
+"q": "Eryaman Evleri emlakçı",
+"s": "eryaman-mahallesi/eryaman-evleri",
+"es": []
+},
+{
+"q": "Gençler Sitesi emlakçı",
+"s": "eryaman-mahallesi/gencler-sitesi",
+"es": []
+},
+{
+"q": "Günötesi Sitesi emlakçı",
+"s": "eryaman-mahallesi/gunotesi-sitesi",
+"es": []
+},
+{
+"q": "Güzel Ankara Evleri Sitesi emlakçı",
+"s": "eryaman-mahallesi/guzel-ankara-evleri-sitesi",
+"es": []
+},
+{
+"q": "Hassas Çizgi Sitesi emlakçı",
+"s": "eryaman-mahallesi/hassas-cizgi-sitesi",
+"es": []
+},
+{
+"q": "İlke Sitesi emlakçı",
+"s": "eryaman-mahallesi/ilke-sitesi",
+"es": []
+},
+{
+"q": "İntes Doğakent Konutları emlakçı",
+"s": "eryaman-mahallesi/intes-dogakent-konutlari",
+"es": []
+},
+{
+"q": "Işıkkent Sitesi emlakçı",
+"s": "eryaman-mahallesi/isikkent-sitesi",
+"es": []
+},
+{
+"q": "Kayaevleri Sitesi emlakçı",
+"s": "eryaman-mahallesi/kayaevleri-sitesi",
+"es": []
+},
+{
+"q": "Kent Konakları Sitesi emlakçı",
+"s": "eryaman-mahallesi/kent-konaklari-sitesi",
+"es": []
+},
+{
+"q": "Laçin Eryaman Sitesi emlakçı",
+"s": "eryaman-mahallesi/lacin-eryaman-sitesi",
+"es": []
+},
+{
+"q": "Lapis Garden emlakçı",
+"s": "eryaman-mahallesi/lapis-garden",
+"es": []
+},
+{
+"q": "Maximum Konutları emlakçı",
+"s": "eryaman-mahallesi/maximum-konutlari",
+"es": []
+},
+{
+"q": "Oyak 555 Konut Sitesi emlakçı",
+"s": "eryaman-mahallesi/oyak-555-konut-sitesi",
+"es": []
+},
+{
+"q": "Oyak Sitesi emlakçı",
+"s": "eryaman-mahallesi/oyak-sitesi",
+"es": []
+},
+{
+"q": "Özgün İpek Sitesi emlakçı",
+"s": "eryaman-mahallesi/ozgun-ipek-sitesi",
+"es": []
+},
+{
+"q": "Paşa Konakları emlakçı",
+"s": "eryaman-mahallesi/pasa-konaklari",
+"es": []
+},
+{
+"q": "Pınar Sitesi emlakçı",
+"s": "eryaman-mahallesi/pinar-sitesi",
+"es": []
+},
+{
+"q": "Platin 2 Konutları emlakçı",
+"s": "eryaman-mahallesi/platin-2-konutlari",
+"es": []
+},
+{
+"q": "Platin Konutları emlakçı",
+"s": "eryaman-mahallesi/platin-konutlari",
+"es": []
+},
+{
+"q": "Ra-Da Life emlakçı",
+"s": "eryaman-mahallesi/ra-da-life",
+"es": []
+},
+{
+"q": "TOKİ Konutları emlakçı",
+"s": "eryaman-mahallesi/toki-konutlari",
+"es": []
+},
+{
+"q": "Türk Konut Çalışanlar Sitesi emlakçı",
+"s": "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+"es": []
+},
+{
+"q": "Yeni Portakal Çiçeği Sitesi emlakçı",
+"s": "eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+"es": []
+},
+{
+"q": "Yeni Yayıklı Sitesi emlakçı",
+"s": "eryaman-mahallesi/yeni-yayikli-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Manolya Sitesi emlakçı",
+"s": "eryaman-mahallesi/yesil-manolya-sitesi",
+"es": []
+},
+{
+"q": "Admira Göksu Konutları emlakçı",
+"s": "goksu-mahallesi/admira-goksu-konutlari",
+"es": []
+},
+{
+"q": "Ağaçlı Göl Sitesi emlakçı",
+"s": "goksu-mahallesi/agacli-gol-sitesi",
+"es": []
+},
+{
+"q": "Akdüzen Sitesi emlakçı",
+"s": "goksu-mahallesi/akduzen-sitesi",
+"es": []
+},
+{
+"q": "Akşafak Sitesi emlakçı",
+"s": "goksu-mahallesi/aksafak-sitesi",
+"es": []
+},
+{
+"q": "Alina Konutları emlakçı",
+"s": "goksu-mahallesi/alina-konutlari",
+"es": []
+},
+{
+"q": "Angora Sitesi emlakçı",
+"s": "goksu-mahallesi/angora-sitesi",
+"es": [
+"guzelkent-mahallesi/angora-sitesi"
+]
+},
+{
+"q": "Arissa Göksu emlakçı",
+"s": "goksu-mahallesi/arissa-goksu",
+"es": []
+},
+{
+"q": "Bordo Loca emlakçı",
+"s": "goksu-mahallesi/bordo-loca",
+"es": []
+},
+{
+"q": "Buse Konutları emlakçı",
+"s": "goksu-mahallesi/buse-konutlari",
+"es": []
+},
+{
+"q": "Doğa Konutları emlakçı",
+"s": "goksu-mahallesi/doga-konutlari",
+"es": []
+},
+{
+"q": "Eceser Sitesi emlakçı",
+"s": "goksu-mahallesi/eceser-sitesi",
+"es": []
+},
+{
+"q": "Enday Sitesi emlakçı",
+"s": "goksu-mahallesi/enday-sitesi",
+"es": []
+},
+{
+"q": "Endora Göksu emlakçı",
+"s": "goksu-mahallesi/endora-goksu",
+"es": []
+},
+{
+"q": "Evinora Sitesi emlakçı",
+"s": "goksu-mahallesi/evinora-sitesi",
+"es": []
+},
+{
+"q": "Finest Blokları emlakçı",
+"s": "goksu-mahallesi/finest-bloklari",
+"es": []
+},
+{
+"q": "Göksu Arma emlakçı",
+"s": "goksu-mahallesi/goksu-arma",
+"es": []
+},
+{
+"q": "Göksu Aura Sitesi emlakçı",
+"s": "goksu-mahallesi/goksu-aura-sitesi",
+"es": []
+},
+{
+"q": "Göksu Bilge Sitesi emlakçı",
+"s": "goksu-mahallesi/goksu-bilge-sitesi",
+"es": []
+},
+{
+"q": "Göksu Evleri Sitesi emlakçı",
+"s": "goksu-mahallesi/goksu-evleri-sitesi",
+"es": []
+},
+{
+"q": "Göksu Manzara Evleri emlakçı",
+"s": "goksu-mahallesi/goksu-manzara-evleri",
+"es": []
+},
+{
+"q": "Göksu Metrokent Sitesi emlakçı",
+"s": "goksu-mahallesi/goksu-metrokent-sitesi",
+"es": []
+},
+{
+"q": "Göksu Park Vadi Konutları emlakçı",
+"s": "goksu-mahallesi/goksu-park-vadi-konutlari",
+"es": []
+},
+{
+"q": "Göksu Vadi Konutları emlakçı",
+"s": "goksu-mahallesi/goksu-vadi-konutlari",
+"es": []
+},
+{
+"q": "Göksupark Konutları emlakçı",
+"s": "goksu-mahallesi/goksupark-konutlari",
+"es": []
+},
+{
+"q": "Gölkent 1 Sitesi emlakçı",
+"s": "goksu-mahallesi/golkent-1-sitesi",
+"es": []
+},
+{
+"q": "Gölkent Sitesi emlakçı",
+"s": "goksu-mahallesi/golkent-sitesi",
+"es": []
+},
+{
+"q": "Gsv Spor Sitesi emlakçı",
+"s": "goksu-mahallesi/gsv-spor-sitesi",
+"es": []
+},
+{
+"q": "Hava Destek Sitesi emlakçı",
+"s": "goksu-mahallesi/hava-destek-sitesi",
+"es": []
+},
+{
+"q": "Havacılar Sitesi emlakçı",
+"s": "goksu-mahallesi/havacilar-sitesi",
+"es": []
+},
+{
+"q": "Havuzlu Bahçe Konutları emlakçı",
+"s": "goksu-mahallesi/havuzlu-bahce-konutlari",
+"es": []
+},
+{
+"q": "Havuzlu Evler Sitesi emlakçı",
+"s": "goksu-mahallesi/havuzlu-evler-sitesi",
+"es": []
+},
+{
+"q": "Hekimler Ve Sağlıkçılar Sitesi emlakçı",
+"s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+"es": []
+},
+{
+"q": "Ilgaz Life emlakçı",
+"s": "goksu-mahallesi/ilgaz-life",
+"es": []
+},
+{
+"q": "İrem Konutları emlakçı",
+"s": "goksu-mahallesi/irem-konutlari",
+"es": []
+},
+{
+"q": "Kafdağı Sitesi emlakçı",
+"s": "goksu-mahallesi/kafdagi-sitesi",
+"es": []
+},
+{
+"q": "Kaşmir Göl Evleri emlakçı",
+"s": "goksu-mahallesi/kasmir-gol-evleri",
+"es": []
+},
+{
+"q": "Kaşmir Mavi Orkide Sitesi emlakçı",
+"s": "goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+"es": []
+},
+{
+"q": "Konum Eryaman emlakçı",
+"s": "goksu-mahallesi/konum-eryaman",
+"es": []
+},
+{
+"q": "Koru Eryaman emlakçı",
+"s": "goksu-mahallesi/koru-eryaman",
+"es": []
+},
+{
+"q": "MA1 Tower emlakçı",
+"s": "goksu-mahallesi/ma1-tower",
+"es": []
+},
+{
+"q": "Maybak Konutları emlakçı",
+"s": "goksu-mahallesi/maybak-konutlari",
+"es": []
+},
+{
+"q": "Mercan Smart House emlakçı",
+"s": "goksu-mahallesi/mercan-smart-house",
+"es": []
+},
+{
+"q": "Merkez Sitesi emlakçı",
+"s": "goksu-mahallesi/merkez-sitesi",
+"es": []
+},
+{
+"q": "Meydan Eryaman emlakçı",
+"s": "goksu-mahallesi/meydan-eryaman",
+"es": []
+},
+{
+"q": "Oyak Göksupark emlakçı",
+"s": "goksu-mahallesi/oyak-goksupark",
+"es": []
+},
+{
+"q": "Park Evo Konutları emlakçı",
+"s": "goksu-mahallesi/park-evo-konutlari",
+"es": []
+},
+{
+"q": "Park İnci Konutları emlakçı",
+"s": "goksu-mahallesi/park-inci-konutlari",
+"es": []
+},
+{
+"q": "Park Mira Evleri emlakçı",
+"s": "goksu-mahallesi/park-mira-evleri",
+"es": []
+},
+{
+"q": "Paro Life emlakçı",
+"s": "goksu-mahallesi/paro-life",
+"es": []
+},
+{
+"q": "Polsan 1 Bahar Sitesi emlakçı",
+"s": "goksu-mahallesi/polsan-1-bahar-sitesi",
+"es": []
+},
+{
+"q": "Polsan 1 Gözde Sitesi emlakçı",
+"s": "goksu-mahallesi/polsan-1-gozde-sitesi",
+"es": []
+},
+{
+"q": "Polsan1 Ayışığı Sitesi emlakçı",
+"s": "goksu-mahallesi/polsan1-ayisigi-sitesi",
+"es": []
+},
+{
+"q": "Şelale Evleri Sitesi emlakçı",
+"s": "goksu-mahallesi/selale-evleri-sitesi",
+"es": []
+},
+{
+"q": "SERGöksu Konutları emlakçı",
+"s": "goksu-mahallesi/sergoksu-konutlari",
+"es": []
+},
+{
+"q": "Seyirtepe Başpınar emlakçı",
+"s": "goksu-mahallesi/seyirtepe-baspinar",
+"es": []
+},
+{
+"q": "Sude Konutları emlakçı",
+"s": "goksu-mahallesi/sude-konutlari",
+"es": []
+},
+{
+"q": "Tulip Life emlakçı",
+"s": "goksu-mahallesi/tulip-life",
+"es": []
+},
+{
+"q": "Utkan Sitesi emlakçı",
+"s": "goksu-mahallesi/utkan-sitesi",
+"es": []
+},
+{
+"q": "Utku Kent 2 Sitesi emlakçı",
+"s": "goksu-mahallesi/utku-kent-2-sitesi",
+"es": []
+},
+{
+"q": "Uzunali Göksu Konutları 2 emlakçı",
+"s": "goksu-mahallesi/uzunali-goksu-konutlari-2",
+"es": []
+},
+{
+"q": "Uzunali Göksu Konutları emlakçı",
+"s": "goksu-mahallesi/uzunali-goksu-konutlari",
+"es": []
+},
+{
+"q": "Vaditepe Başpınar emlakçı",
+"s": "goksu-mahallesi/vaditepe-baspinar",
+"es": []
+},
+{
+"q": "Yeniçeri Kule emlakçı",
+"s": "goksu-mahallesi/yeniceri-kule",
+"es": []
+},
+{
+"q": "Yenigüç Sitesi Eryaman emlakçı",
+"s": "goksu-mahallesi/yeniguc-sitesi-eryaman",
+"es": []
+},
+{
+"q": "Yeşil Göl Sitesi emlakçı",
+"s": "goksu-mahallesi/yesil-gol-sitesi",
+"es": []
+},
+{
+"q": "Zirveden Göksu emlakçı",
+"s": "goksu-mahallesi/zirveden-goksu",
+"es": []
+},
+{
+"q": "1. Portakal Çiçeği Sitesi emlakçı",
+"s": "guzelkent-mahallesi/1-portakal-cicegi-sitesi",
+"es": []
+},
+{
+"q": "Ak 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ak-91-sitesi",
+"es": []
+},
+{
+"q": "Akkonak Sitesi emlakçı",
+"s": "guzelkent-mahallesi/akkonak-sitesi",
+"es": []
+},
+{
+"q": "Aknergiz Sitesi emlakçı",
+"s": "guzelkent-mahallesi/aknergiz-sitesi",
+"es": []
+},
+{
+"q": "Aksu Sitesi emlakçı",
+"s": "guzelkent-mahallesi/aksu-sitesi",
+"es": []
+},
+{
+"q": "Altay Sitesi emlakçı",
+"s": "guzelkent-mahallesi/altay-sitesi",
+"es": []
+},
+{
+"q": "Anadolu Sitesi emlakçı",
+"s": "guzelkent-mahallesi/anadolu-sitesi",
+"es": []
+},
+{
+"q": "Anka - 2001 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/anka-2001-sitesi",
+"es": []
+},
+{
+"q": "Ankolular Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ankolular-sitesi",
+"es": []
+},
+{
+"q": "Arzutaş Sitesi emlakçı",
+"s": "guzelkent-mahallesi/arzutas-sitesi",
+"es": []
+},
+{
+"q": "Asilkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/asilkent-sitesi",
+"es": []
+},
+{
+"q": "Boyut Sitesi emlakçı",
+"s": "guzelkent-mahallesi/boyut-sitesi",
+"es": []
+},
+{
+"q": "Büyük Ankara Sitesi emlakçı",
+"s": "guzelkent-mahallesi/buyuk-ankara-sitesi",
+"es": []
+},
+{
+"q": "Çağdaş - 95 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/cagdas-95-sitesi",
+"es": []
+},
+{
+"q": "Çağdaş Sistem Sitesi emlakçı",
+"s": "guzelkent-mahallesi/cagdas-sistem-sitesi",
+"es": []
+},
+{
+"q": "Çankaya Vefa Sitesi emlakçı",
+"s": "guzelkent-mahallesi/cankaya-vefa-sitesi",
+"es": []
+},
+{
+"q": "Çözüm Kent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/cozum-kent-sitesi",
+"es": []
+},
+{
+"q": "Didem Sitesi emlakçı",
+"s": "guzelkent-mahallesi/didem-sitesi",
+"es": []
+},
+{
+"q": "Doğuş 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/dogus-91-sitesi",
+"es": []
+},
+{
+"q": "Durtaş 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/durtas-91-sitesi",
+"es": []
+},
+{
+"q": "Eczacılar Sitesi emlakçı",
+"s": "guzelkent-mahallesi/eczacilar-sitesi",
+"es": []
+},
+{
+"q": "Ekin Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ekin-sitesi",
+"es": []
+},
+{
+"q": "Elele Sitesi emlakçı",
+"s": "guzelkent-mahallesi/elele-sitesi",
+"es": []
+},
+{
+"q": "Er - Ay 3 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/er-ay-3-sitesi",
+"es": []
+},
+{
+"q": "Erenköy Sitesi emlakçı",
+"s": "guzelkent-mahallesi/erenkoy-sitesi",
+"es": []
+},
+{
+"q": "Erkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/erkent-sitesi",
+"es": []
+},
+{
+"q": "Eryapı Sitesi emlakçı",
+"s": "guzelkent-mahallesi/eryapi-sitesi",
+"es": []
+},
+{
+"q": "Evrimkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/evrimkent-sitesi",
+"es": []
+},
+{
+"q": "Gardenya Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gardenya-sitesi",
+"es": []
+},
+{
+"q": "Gerçek - 92 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gercek-92-sitesi",
+"es": []
+},
+{
+"q": "Gökkuşağı Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gokkusagi-sitesi",
+"es": []
+},
+{
+"q": "Gördoğu Şen Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gordogu-sen-sitesi",
+"es": []
+},
+{
+"q": "Gözde 1 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gozde-1-sitesi",
+"es": []
+},
+{
+"q": "Gözde 2 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gozde-2-sitesi",
+"es": []
+},
+{
+"q": "Gözde 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gozde-91-sitesi",
+"es": []
+},
+{
+"q": "Gülenkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gulenkent-sitesi",
+"es": []
+},
+{
+"q": "Gülşah - 95 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/gulsah-95-sitesi",
+"es": []
+},
+{
+"q": "Güzel Ankara Sitesi emlakçı",
+"s": "guzelkent-mahallesi/guzel-ankara-sitesi",
+"es": []
+},
+{
+"q": "İpek Yapı Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ipek-yapi-sitesi",
+"es": []
+},
+{
+"q": "Isı Kent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/isi-kent-sitesi",
+"es": []
+},
+{
+"q": "Karaşimşek Sitesi emlakçı",
+"s": "guzelkent-mahallesi/karasimsek-sitesi",
+"es": []
+},
+{
+"q": "Kardelen Sitesi emlakçı",
+"s": "guzelkent-mahallesi/kardelen-sitesi",
+"es": [
+"sehit-osman-avci-mahallesi/kardelen-sitesi",
+"yavuz-selim-mahallesi/kardelen-sitesi",
+"yesilova-mahallesi/kardelen-sitesi"
+]
+},
+{
+"q": "Konuta Özlem Sitesi emlakçı",
+"s": "guzelkent-mahallesi/konuta-ozlem-sitesi",
+"es": []
+},
+{
+"q": "Korukent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/korukent-sitesi",
+"es": [
+"yavuz-selim-mahallesi/korukent-sitesi"
+]
+},
+{
+"q": "Köşk Sitesi emlakçı",
+"s": "guzelkent-mahallesi/kosk-sitesi",
+"es": []
+},
+{
+"q": "Küçük Ankara Villaları emlakçı",
+"s": "guzelkent-mahallesi/kucuk-ankara-villalari",
+"es": []
+},
+{
+"q": "Kurtuluş Sitesi emlakçı",
+"s": "guzelkent-mahallesi/kurtulus-sitesi",
+"es": []
+},
+{
+"q": "Kuşburnu Sitesi emlakçı",
+"s": "guzelkent-mahallesi/kusburnu-sitesi",
+"es": []
+},
+{
+"q": "Master Kent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/master-kent-sitesi",
+"es": []
+},
+{
+"q": "Meltem Sitesi emlakçı",
+"s": "guzelkent-mahallesi/meltem-sitesi",
+"es": []
+},
+{
+"q": "Mesa Çalışanları Kooperatifi emlakçı",
+"s": "guzelkent-mahallesi/mesa-calisanlari-kooperatifi",
+"es": []
+},
+{
+"q": "Mesa Sitesi emlakçı",
+"s": "guzelkent-mahallesi/mesa-sitesi",
+"es": []
+},
+{
+"q": "Metro Yaşam Sitesi emlakçı",
+"s": "guzelkent-mahallesi/metro-yasam-sitesi",
+"es": []
+},
+{
+"q": "Nazlıdeniz Sitesi emlakçı",
+"s": "guzelkent-mahallesi/nazlideniz-sitesi",
+"es": []
+},
+{
+"q": "Öz Muhtar Sitesi emlakçı",
+"s": "guzelkent-mahallesi/oz-muhtar-sitesi",
+"es": []
+},
+{
+"q": "Özle İletişim Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ozle-iletisim-sitesi",
+"es": []
+},
+{
+"q": "Özügüzelkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ozuguzelkent-sitesi",
+"es": []
+},
+{
+"q": "Pınarkent 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/pinarkent-91-sitesi",
+"es": []
+},
+{
+"q": "Portakal Çiçeği 2. Sitesi emlakçı",
+"s": "guzelkent-mahallesi/portakal-cicegi-2-sitesi",
+"es": []
+},
+{
+"q": "Portakal Çiçeği emlakçı",
+"s": "guzelkent-mahallesi/portakal-cicegi",
+"es": []
+},
+{
+"q": "Postakent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/postakent-sitesi",
+"es": []
+},
+{
+"q": "Renk Villaları emlakçı",
+"s": "guzelkent-mahallesi/renk-villalari",
+"es": []
+},
+{
+"q": "Ritim Eryaman emlakçı",
+"s": "guzelkent-mahallesi/ritim-eryaman",
+"es": []
+},
+{
+"q": "Safi Apak Sitesi emlakçı",
+"s": "guzelkent-mahallesi/safi-apak-sitesi",
+"es": []
+},
+{
+"q": "Şahinbey Sitesi emlakçı",
+"s": "guzelkent-mahallesi/sahinbey-sitesi",
+"es": []
+},
+{
+"q": "Şehit Ferhat Koç Sitesi emlakçı",
+"s": "guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
+"es": []
+},
+{
+"q": "Şeniz Sitesi emlakçı",
+"s": "guzelkent-mahallesi/seniz-sitesi",
+"es": []
+},
+{
+"q": "Şirin 91 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/sirin-91-sitesi",
+"es": []
+},
+{
+"q": "Tez Konak Sitesi emlakçı",
+"s": "guzelkent-mahallesi/tez-konak-sitesi",
+"es": []
+},
+{
+"q": "Ulaş Sitesi emlakçı",
+"s": "guzelkent-mahallesi/ulas-sitesi",
+"es": []
+},
+{
+"q": "Yayıklı 2 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yayikli-2-sitesi",
+"es": []
+},
+{
+"q": "Yayıklı 4 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yayikli-4-sitesi",
+"es": []
+},
+{
+"q": "Yeni Isıkent Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yeni-isikent-sitesi",
+"es": []
+},
+{
+"q": "Yenigün Işığı Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yenigun-isigi-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Güven Kent emlakçı",
+"s": "guzelkent-mahallesi/yesil-guven-kent",
+"es": []
+},
+{
+"q": "Yeşim Kent2 Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yesim-kent2-sitesi",
+"es": []
+},
+{
+"q": "Yeşimkent emlakçı",
+"s": "guzelkent-mahallesi/yesimkent",
+"es": []
+},
+{
+"q": "Yükselay Sitesi emlakçı",
+"s": "guzelkent-mahallesi/yukselay-sitesi",
+"es": []
+},
+{
+"q": "75. Yıl Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/75-yil-sitesi",
+"es": []
+},
+{
+"q": "Address Göksu emlakçı",
+"s": "sehit-osman-avci-mahallesi/address-goksu",
+"es": []
+},
+{
+"q": "Ahikent Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/ahikent-sitesi",
+"es": []
+},
+{
+"q": "Akın 688 Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/akin-688-konutlari",
+"es": []
+},
+{
+"q": "Alpak & Neve Armonia Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+"es": []
+},
+{
+"q": "Ardıç Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/ardic-sitesi",
+"es": []
+},
+{
+"q": "Arkadya Göksu Evleri emlakçı",
+"s": "sehit-osman-avci-mahallesi/arkadya-goksu-evleri",
+"es": []
+},
+{
+"q": "Atalay Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/atalay-sitesi",
+"es": []
+},
+{
+"q": "Bordo Life Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/bordo-life-residence",
+"es": []
+},
+{
+"q": "Bordo Platinum Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/bordo-platinum-residence",
+"es": []
+},
+{
+"q": "Bossphorus Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/bossphorus-konutlari",
+"es": []
+},
+{
+"q": "BP Residence Eryaman emlakçı",
+"s": "sehit-osman-avci-mahallesi/bp-residence-eryaman",
+"es": []
+},
+{
+"q": "Bulvar 1071 Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+"es": []
+},
+{
+"q": "Bulvar 312 Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/bulvar-312-konutlari",
+"es": []
+},
+{
+"q": "Çamlık Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/camlik-sitesi",
+"es": []
+},
+{
+"q": "Çiçek Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/cicek-sitesi",
+"es": []
+},
+{
+"q": "Çizgi Ötesi Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+"es": []
+},
+{
+"q": "Daldikenler Yasemin Evleri Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/daldikenler-yasemin-evleri-sitesi",
+"es": []
+},
+{
+"q": "Dalgıç Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/dalgic-residence",
+"es": []
+},
+{
+"q": "Demirer Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/demirer-sitesi",
+"es": []
+},
+{
+"q": "Elit Yaşam Konutları 1 emlakçı",
+"s": "sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+"es": []
+},
+{
+"q": "Elit Yaşam Konutları 2 emlakçı",
+"s": "sehit-osman-avci-mahallesi/elit-yasam-konutlari-2",
+"es": []
+},
+{
+"q": "Eston Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/eston-sitesi",
+"es": []
+},
+{
+"q": "Garden Zirve emlakçı",
+"s": "sehit-osman-avci-mahallesi/garden-zirve",
+"es": []
+},
+{
+"q": "Göde Yaşam Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/gode-yasam-konutlari",
+"es": []
+},
+{
+"q": "Gökdemirler Suit emlakçı",
+"s": "sehit-osman-avci-mahallesi/gokdemirler-suit",
+"es": []
+},
+{
+"q": "Göksu Prestij emlakçı",
+"s": "sehit-osman-avci-mahallesi/goksu-prestij",
+"es": []
+},
+{
+"q": "Göksukent Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/goksukent-sitesi",
+"es": []
+},
+{
+"q": "Göldekent Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/goldekent-sitesi",
+"es": []
+},
+{
+"q": "Güngörler Tower emlakçı",
+"s": "sehit-osman-avci-mahallesi/gungorler-tower",
+"es": []
+},
+{
+"q": "Happy Life Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/happy-life-residence",
+"es": []
+},
+{
+"q": "Hill Tower Göksu emlakçı",
+"s": "sehit-osman-avci-mahallesi/hill-tower-goksu",
+"es": []
+},
+{
+"q": "İçtaş emlakçı",
+"s": "sehit-osman-avci-mahallesi/ictas",
+"es": []
+},
+{
+"q": "İnci Life Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/inci-life-residence",
+"es": []
+},
+{
+"q": "İnci Park Evleri Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/inci-park-evleri-sitesi",
+"es": []
+},
+{
+"q": "İntes Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/intes-sitesi",
+"es": []
+},
+{
+"q": "İzo-Ser Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/izo-ser-residence",
+"es": []
+},
+{
+"q": "Karma Modern emlakçı",
+"s": "sehit-osman-avci-mahallesi/karma-modern",
+"es": []
+},
+{
+"q": "Kazım Sarı Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/kazim-sari-sitesi",
+"es": []
+},
+{
+"q": "KC Lale Evleri emlakçı",
+"s": "sehit-osman-avci-mahallesi/kc-lale-evleri",
+"es": []
+},
+{
+"q": "Kıratlı Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/kiratli-residence",
+"es": []
+},
+{
+"q": "Koz Modern emlakçı",
+"s": "sehit-osman-avci-mahallesi/koz-modern",
+"es": []
+},
+{
+"q": "Lale Kent Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/lale-kent-sitesi",
+"es": []
+},
+{
+"q": "Maybak Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/maybak-sitesi",
+"es": []
+},
+{
+"q": "Metropark Concept emlakçı",
+"s": "sehit-osman-avci-mahallesi/metropark-concept",
+"es": []
+},
+{
+"q": "Metropark Plus emlakçı",
+"s": "sehit-osman-avci-mahallesi/metropark-plus",
+"es": []
+},
+{
+"q": "Mia Concept Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/mia-concept-konutlari",
+"es": []
+},
+{
+"q": "Nefeskent Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/nefeskent-sitesi",
+"es": []
+},
+{
+"q": "Neva Butik Home emlakçı",
+"s": "sehit-osman-avci-mahallesi/neva-butik-home",
+"es": []
+},
+{
+"q": "Neva Panora Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/neva-panora-konutlari",
+"es": []
+},
+{
+"q": "Neva Prestij Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+"es": []
+},
+{
+"q": "Ödevci Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/odevci-sitesi",
+"es": []
+},
+{
+"q": "Relax Eryaman Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/relax-eryaman-konutlari",
+"es": []
+},
+{
+"q": "Relax Göksu Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+"es": []
+},
+{
+"q": "Safir Rezidans emlakçı",
+"s": "sehit-osman-avci-mahallesi/safir-rezidans",
+"es": []
+},
+{
+"q": "Soyak Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/soyak-sitesi",
+"es": []
+},
+{
+"q": "Tan Yıldızı Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/tan-yildizi-sitesi",
+"es": []
+},
+{
+"q": "Türeli Residence emlakçı",
+"s": "sehit-osman-avci-mahallesi/tureli-residence",
+"es": []
+},
+{
+"q": "Üçyıldız Sitesi emlakçı",
+"s": "sehit-osman-avci-mahallesi/ucyildiz-sitesi",
+"es": []
+},
+{
+"q": "Vera City emlakçı",
+"s": "sehit-osman-avci-mahallesi/vera-city",
+"es": []
+},
+{
+"q": "Yazıcı Modern emlakçı",
+"s": "sehit-osman-avci-mahallesi/yazici-modern",
+"es": []
+},
+{
+"q": "Yıldız Eryaman emlakçı",
+"s": "sehit-osman-avci-mahallesi/yildiz-eryaman",
+"es": []
+},
+{
+"q": "Z. Yayla Konutları emlakçı",
+"s": "sehit-osman-avci-mahallesi/z-yayla-konutlari",
+"es": []
+},
+{
+"q": "Zekioğlu Rezidans emlakçı",
+"s": "sehit-osman-avci-mahallesi/zekioglu-rezidans",
+"es": []
+},
+{
+"q": "Address Enda emlakçı",
+"s": "seker-mahallesi/address-enda",
+"es": []
+},
+{
+"q": "Akdal Residence emlakçı",
+"s": "seker-mahallesi/akdal-residence",
+"es": []
+},
+{
+"q": "Altaş Relax Line emlakçı",
+"s": "seker-mahallesi/altas-relax-line",
+"es": []
+},
+{
+"q": "Altaş Rezidans emlakçı",
+"s": "seker-mahallesi/altas-rezidans",
+"es": []
+},
+{
+"q": "Bahçen Eryaman Konutları emlakçı",
+"s": "seker-mahallesi/bahcen-eryaman-konutlari",
+"es": []
+},
+{
+"q": "Diamond Residence emlakçı",
+"s": "seker-mahallesi/diamond-residence",
+"es": []
+},
+{
+"q": "Dört Mevsim Eryaman Konutları emlakçı",
+"s": "seker-mahallesi/dort-mevsim-eryaman-konutlari",
+"es": []
+},
+{
+"q": "Golden Life Residence emlakçı",
+"s": "seker-mahallesi/golden-life-residence",
+"es": []
+},
+{
+"q": "Hill Tower emlakçı",
+"s": "seker-mahallesi/hill-tower",
+"es": []
+},
+{
+"q": "İzoser Residence emlakçı",
+"s": "seker-mahallesi/izoser-residence",
+"es": []
+},
+{
+"q": "Meydan Ada Sitesi emlakçı",
+"s": "seker-mahallesi/meydan-ada-sitesi",
+"es": []
+},
+{
+"q": "Meydan Cadde emlakçı",
+"s": "seker-mahallesi/meydan-cadde",
+"es": []
+},
+{
+"q": "Oasis Rezidans emlakçı",
+"s": "seker-mahallesi/oasis-rezidans",
+"es": []
+},
+{
+"q": "Rainbow Sitesi emlakçı",
+"s": "seker-mahallesi/rainbow-sitesi",
+"es": []
+},
+{
+"q": "Volga Residence emlakçı",
+"s": "seker-mahallesi/volga-residence",
+"es": []
+},
+{
+"q": "Zirve Loft emlakçı",
+"s": "seker-mahallesi/zirve-loft",
+"es": []
+},
+{
+"q": "Acar Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/acar-sitesi",
+"es": []
+},
+{
+"q": "Ak Kent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/ak-kent-sitesi",
+"es": []
+},
+{
+"q": "Alarko Blokları emlakçı",
+"s": "seyh-samil-mahallesi/alarko-bloklari",
+"es": []
+},
+{
+"q": "Atayıldız Yaşam Konutları emlakçı",
+"s": "seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+"es": []
+},
+{
+"q": "Barış Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/baris-sitesi",
+"es": []
+},
+{
+"q": "Bizim Alperenler Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/bizim-alperenler-sitesi",
+"es": []
+},
+{
+"q": "Borankent emlakçı",
+"s": "seyh-samil-mahallesi/borankent",
+"es": []
+},
+{
+"q": "Çağlar Emin Evleri emlakçı",
+"s": "seyh-samil-mahallesi/caglar-emin-evleri",
+"es": []
+},
+{
+"q": "Çamlıca Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/camlica-sitesi",
+"es": []
+},
+{
+"q": "Demirel Park Evleri emlakçı",
+"s": "seyh-samil-mahallesi/demirel-park-evleri",
+"es": []
+},
+{
+"q": "Düşkent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/duskent-sitesi",
+"es": []
+},
+{
+"q": "Eston 1 Blokları emlakçı",
+"s": "seyh-samil-mahallesi/eston-1-bloklari",
+"es": []
+},
+{
+"q": "Eston Blokları emlakçı",
+"s": "seyh-samil-mahallesi/eston-bloklari",
+"es": []
+},
+{
+"q": "Genç Efes Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/genc-efes-sitesi",
+"es": []
+},
+{
+"q": "Gül Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/gul-sitesi",
+"es": []
+},
+{
+"q": "İçtaş Blokları emlakçı",
+"s": "seyh-samil-mahallesi/ictas-bloklari",
+"es": []
+},
+{
+"q": "İlk Umut Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/ilk-umut-sitesi",
+"es": []
+},
+{
+"q": "İlkdoğuş Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/ilkdogus-sitesi",
+"es": []
+},
+{
+"q": "İlksebat Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/ilksebat-sitesi",
+"es": []
+},
+{
+"q": "İlona Konutları emlakçı",
+"s": "seyh-samil-mahallesi/ilona-konutlari",
+"es": []
+},
+{
+"q": "İnci Park Evleri emlakçı",
+"s": "seyh-samil-mahallesi/inci-park-evleri",
+"es": []
+},
+{
+"q": "Kaçkar Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/kackar-sitesi",
+"es": []
+},
+{
+"q": "Köşk Birlik Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/kosk-birlik-sitesi",
+"es": []
+},
+{
+"q": "Kuryap Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/kuryap-sitesi",
+"es": []
+},
+{
+"q": "Lider Yaşam Evleri emlakçı",
+"s": "seyh-samil-mahallesi/lider-yasam-evleri",
+"es": []
+},
+{
+"q": "Liderkent emlakçı",
+"s": "seyh-samil-mahallesi/liderkent",
+"es": []
+},
+{
+"q": "Mavera Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/mavera-sitesi",
+"es": []
+},
+{
+"q": "Melis Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/melis-sitesi",
+"es": []
+},
+{
+"q": "Nisan Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/nisan-sitesi",
+"es": []
+},
+{
+"q": "Onur Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/onur-sitesi",
+"es": []
+},
+{
+"q": "Övgü İletişim Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+"es": []
+},
+{
+"q": "Öz Çözüm Kent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+"es": []
+},
+{
+"q": "Öz Tamer Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/oz-tamer-sitesi",
+"es": []
+},
+{
+"q": "Özahikent emlakçı",
+"s": "seyh-samil-mahallesi/ozahikent-sitesi",
+"es": []
+},
+{
+"q": "Özanadolu emlakçı",
+"s": "seyh-samil-mahallesi/ozanadolu",
+"es": []
+},
+{
+"q": "Özlüce Güzelevim emlakçı",
+"s": "seyh-samil-mahallesi/ozluce-guzelevim",
+"es": []
+},
+{
+"q": "Selinkent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/selinkent-sitesi",
+"es": []
+},
+{
+"q": "Serender Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/serender-sitesi",
+"es": []
+},
+{
+"q": "Sitekonut Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/sitekonut-sitesi",
+"es": []
+},
+{
+"q": "Sümeyra Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/sumeyra-sitesi",
+"es": []
+},
+{
+"q": "Tanışkent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/taniskent-sitesi",
+"es": []
+},
+{
+"q": "Tekser Blokları emlakçı",
+"s": "seyh-samil-mahallesi/tekser-bloklari",
+"es": []
+},
+{
+"q": "Tepe Blokları emlakçı",
+"s": "seyh-samil-mahallesi/tepe-bloklari",
+"es": []
+},
+{
+"q": "Tuğçe Kent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/tugce-kent-sitesi",
+"es": []
+},
+{
+"q": "Turkuaz Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/turkuaz-sitesi",
+"es": []
+},
+{
+"q": "Umar Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/umar-sitesi",
+"es": []
+},
+{
+"q": "Umut Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/umut-sitesi",
+"es": []
+},
+{
+"q": "Ünsal Rezidans emlakçı",
+"s": "seyh-samil-mahallesi/unsal-rezidans",
+"es": []
+},
+{
+"q": "Uzunbey Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/uzunbey-sitesi",
+"es": []
+},
+{
+"q": "Yağan Kent emlakçı",
+"s": "seyh-samil-mahallesi/yagan-kent",
+"es": []
+},
+{
+"q": "Yardımcı Blokları emlakçı",
+"s": "seyh-samil-mahallesi/yardimci-bloklari",
+"es": [
+"tunahan-mahallesi/yardimci-bloklari"
+]
+},
+{
+"q": "Yaygınkent Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/yayginkent-sitesi",
+"es": []
+},
+{
+"q": "Yeni Burak Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/yeni-burak-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Aşiyan Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/yesil-asiyan-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Vadim Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/yesil-vadim-sitesi",
+"es": []
+},
+{
+"q": "Yunus Emre Çağdaş Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+"es": []
+},
+{
+"q": "Zadegan Sitesi emlakçı",
+"s": "seyh-samil-mahallesi/zadegan-sitesi",
+"es": []
+},
+{
+"q": "Age Sitesi emlakçı",
+"s": "tunahan-mahallesi/age-sitesi",
+"es": []
+},
+{
+"q": "Aktürk Sitesi emlakçı",
+"s": "tunahan-mahallesi/akturk-sitesi",
+"es": []
+},
+{
+"q": "Camlı Klima Blokları emlakçı",
+"s": "tunahan-mahallesi/camli-klima-bloklari",
+"es": []
+},
+{
+"q": "Canberk Sitesi emlakçı",
+"s": "tunahan-mahallesi/canberk-sitesi",
+"es": []
+},
+{
+"q": "Dema Park emlakçı",
+"s": "tunahan-mahallesi/dema-park",
+"es": []
+},
+{
+"q": "Elit Yaşam Evleri emlakçı",
+"s": "tunahan-mahallesi/elit-yasam-evleri",
+"es": []
+},
+{
+"q": "Gökdemir Premium emlakçı",
+"s": "tunahan-mahallesi/gokdemir-premium",
+"es": []
+},
+{
+"q": "Haznedaroğlu Blokları emlakçı",
+"s": "tunahan-mahallesi/haznedaroglu-bloklari",
+"es": []
+},
+{
+"q": "Ilgazlar Sitesi emlakçı",
+"s": "tunahan-mahallesi/ilgazlar-sitesi",
+"es": []
+},
+{
+"q": "Klima Blokları emlakçı",
+"s": "tunahan-mahallesi/klima-bloklari",
+"es": []
+},
+{
+"q": "Kur Sitesi 46495 Ada emlakçı",
+"s": "tunahan-mahallesi/kur-sitesi-46495-ada",
+"es": []
+},
+{
+"q": "Kur Sitesi 46496 Ada emlakçı",
+"s": "tunahan-mahallesi/kur-sitesi-46496-ada",
+"es": []
+},
+{
+"q": "Maviçam Sitesi emlakçı",
+"s": "tunahan-mahallesi/mavicam-sitesi",
+"es": []
+},
+{
+"q": "Metromall Sitesi emlakçı",
+"s": "tunahan-mahallesi/metromall-sitesi",
+"es": []
+},
+{
+"q": "Neopolitan Eryaman emlakçı",
+"s": "tunahan-mahallesi/neopolitan-eryaman",
+"es": []
+},
+{
+"q": "Okyanus Plaza emlakçı",
+"s": "tunahan-mahallesi/okyanus-plaza",
+"es": []
+},
+{
+"q": "Özar Sitesi emlakçı",
+"s": "tunahan-mahallesi/ozar-sitesi",
+"es": []
+},
+{
+"q": "Öztaş Sitesi emlakçı",
+"s": "tunahan-mahallesi/oztas-sitesi",
+"es": []
+},
+{
+"q": "Sarıgül Sitesi emlakçı",
+"s": "tunahan-mahallesi/sarigul-sitesi",
+"es": []
+},
+{
+"q": "Soyak Blokları emlakçı",
+"s": "tunahan-mahallesi/soyak-sitesi",
+"es": []
+},
+{
+"q": "STFA Blokları emlakçı",
+"s": "tunahan-mahallesi/stfa-bloklari",
+"es": []
+},
+{
+"q": "Su Damlası Sitesi emlakçı",
+"s": "tunahan-mahallesi/su-damlasi-sitesi",
+"es": []
+},
+{
+"q": "Sutek Sitesi emlakçı",
+"s": "tunahan-mahallesi/sutek-sitesi",
+"es": []
+},
+{
+"q": "Tunahan Sitesi emlakçı",
+"s": "tunahan-mahallesi/tunahan-sitesi",
+"es": []
+},
+{
+"q": "Yüksel Blokları emlakçı",
+"s": "tunahan-mahallesi/yuksel-bloklari",
+"es": []
+},
+{
+"q": "Acat Konutları emlakçı",
+"s": "yavuz-selim-mahallesi/acat-konutlari",
+"es": []
+},
+{
+"q": "Akçakent 87 Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/akcakent-87-sitesi",
+"es": []
+},
+{
+"q": "Altıntepe Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/altintepe-sitesi",
+"es": []
+},
+{
+"q": "Atadostlar Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/atadostlar-sitesi",
+"es": []
+},
+{
+"q": "Ayata Kent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/ayata-kent-sitesi",
+"es": []
+},
+{
+"q": "Başkent Sular Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/baskent-sular-sitesi",
+"es": []
+},
+{
+"q": "Bizim Şirinköy Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+"es": []
+},
+{
+"q": "Concept Eryaman emlakçı",
+"s": "yavuz-selim-mahallesi/concept-eryaman",
+"es": []
+},
+{
+"q": "Doğakent Çamlık Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/dogakent-camlik-sitesi",
+"es": []
+},
+{
+"q": "Doğapark Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/dogapark-sitesi",
+"es": []
+},
+{
+"q": "Elit Nar Çiçeği emlakçı",
+"s": "yavuz-selim-mahallesi/elit-nar-cicegi",
+"es": []
+},
+{
+"q": "Endora Eryaman emlakçı",
+"s": "yavuz-selim-mahallesi/endora-eryaman",
+"es": []
+},
+{
+"q": "Erkaraca Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/erkaraca-sitesi",
+"es": []
+},
+{
+"q": "Esenkent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/esenkent-sitesi",
+"es": []
+},
+{
+"q": "Eylül Evleri emlakçı",
+"s": "yavuz-selim-mahallesi/eylul-evleri",
+"es": []
+},
+{
+"q": "Eylül Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/eylul-sitesi",
+"es": []
+},
+{
+"q": "Genç Avrasya Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/genc-avrasya-sitesi",
+"es": []
+},
+{
+"q": "Göksu Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/goksu-sitesi",
+"es": []
+},
+{
+"q": "Gülvatan Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/gulvatan-sitesi",
+"es": []
+},
+{
+"q": "Güz - Göl Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/guz-gol-sitesi",
+"es": []
+},
+{
+"q": "Güzel Ev Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/guzel-ev-sitesi",
+"es": []
+},
+{
+"q": "Havayolları Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/havayollari-sitesi",
+"es": []
+},
+{
+"q": "İlkiz 2 Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/ilkiz-2-sitesi",
+"es": []
+},
+{
+"q": "İlkiz Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/ilkiz-sitesi",
+"es": []
+},
+{
+"q": "Kardeşkent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/kardeskent-sitesi",
+"es": []
+},
+{
+"q": "Karköy Villaları emlakçı",
+"s": "yavuz-selim-mahallesi/karkoy-villalari",
+"es": []
+},
+{
+"q": "Keyfim Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/keyfim-sitesi",
+"es": []
+},
+{
+"q": "Kırkayak Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/kirkayak-sitesi",
+"es": []
+},
+{
+"q": "Konut Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/konut-sitesi",
+"es": []
+},
+{
+"q": "Küçükevlerimiz Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
+"es": []
+},
+{
+"q": "Metrokent Villaları emlakçı",
+"s": "yavuz-selim-mahallesi/metrokent-villalari",
+"es": []
+},
+{
+"q": "Özenkent 2 Villaları emlakçı",
+"s": "yavuz-selim-mahallesi/ozenkent-2-villalari",
+"es": []
+},
+{
+"q": "Özenkent Villaları emlakçı",
+"s": "yavuz-selim-mahallesi/ozenkent-villalari",
+"es": []
+},
+{
+"q": "Özharitacılar Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/ozharitacilar-sitesi",
+"es": []
+},
+{
+"q": "Pasaj Eryaman emlakçı",
+"s": "yavuz-selim-mahallesi/pasaj-eryaman",
+"es": []
+},
+{
+"q": "Saçak 91 Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/sacak-91-sitesi",
+"es": []
+},
+{
+"q": "Safir Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/safir-sitesi",
+"es": []
+},
+{
+"q": "Sahibin Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/sahibin-sitesi",
+"es": []
+},
+{
+"q": "Sahil Kent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/sahil-kent-sitesi",
+"es": []
+},
+{
+"q": "Seda Terasevler emlakçı",
+"s": "yavuz-selim-mahallesi/seda-terasevler",
+"es": []
+},
+{
+"q": "Serenköy Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/serenkoy-sitesi",
+"es": []
+},
+{
+"q": "Serhatkent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/serhatkent-sitesi",
+"es": []
+},
+{
+"q": "Serpil Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/serpil-sitesi",
+"es": []
+},
+{
+"q": "Taşkent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/taskent-sitesi",
+"es": []
+},
+{
+"q": "Terasevler Eryaman emlakçı",
+"s": "yavuz-selim-mahallesi/terasevler-eryaman",
+"es": []
+},
+{
+"q": "Turaykent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/turaykent-sitesi",
+"es": []
+},
+{
+"q": "Utku Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/utku-sitesi",
+"es": []
+},
+{
+"q": "Uyum 90 Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/uyum-90-sitesi",
+"es": []
+},
+{
+"q": "Yavuz Selim Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yavuz-selim-sitesi",
+"es": []
+},
+{
+"q": "Yeni İlkay Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+"es": []
+},
+{
+"q": "Yeni Kaynak Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Göksu Konutyapı Kooperatifi emlakçı",
+"s": "yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi",
+"es": []
+},
+{
+"q": "Yüksel Kent 91 Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yuksel-kent-91-sitesi",
+"es": []
+},
+{
+"q": "Yükselen Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yukselen-sitesi",
+"es": []
+},
+{
+"q": "Yunuskent Sitesi emlakçı",
+"s": "yavuz-selim-mahallesi/yunuskent-sitesi",
+"es": []
+},
+{
+"q": "Yurt Prestij Konutları emlakçı",
+"s": "yavuz-selim-mahallesi/yurt-prestij-konutlari",
+"es": []
+},
+{
+"q": "Address Yeşilova emlakçı",
+"s": "yesilova-mahallesi/address-yesilova",
+"es": []
+},
+{
+"q": "Alpar Sitesi emlakçı",
+"s": "yesilova-mahallesi/alpar-sitesi",
+"es": []
+},
+{
+"q": "Anka Vega emlakçı",
+"s": "yesilova-mahallesi/anka-vega",
+"es": []
+},
+{
+"q": "Barla Konutları emlakçı",
+"s": "yesilova-mahallesi/barla-konutlari",
+"es": []
+},
+{
+"q": "Doğan City emlakçı",
+"s": "yesilova-mahallesi/dogan-city",
+"es": []
+},
+{
+"q": "Doğan Life emlakçı",
+"s": "yesilova-mahallesi/dogan-life",
+"es": []
+},
+{
+"q": "Eryaman Port emlakçı",
+"s": "yesilova-mahallesi/eryaman-port",
+"es": []
+},
+{
+"q": "Gökdemir Tower emlakçı",
+"s": "yesilova-mahallesi/gokdemir-tower",
+"es": []
+},
+{
+"q": "Green Hill emlakçı",
+"s": "yesilova-mahallesi/green-hill",
+"es": []
+},
+{
+"q": "Green Place Residence emlakçı",
+"s": "yesilova-mahallesi/green-place-residence",
+"es": []
+},
+{
+"q": "Hotki Ritm emlakçı",
+"s": "yesilova-mahallesi/hotki-ritm",
+"es": []
+},
+{
+"q": "Kayra Loft emlakçı",
+"s": "yesilova-mahallesi/kayra-loft",
+"es": []
+},
+{
+"q": "Koçaklar Tower emlakçı",
+"s": "yesilova-mahallesi/kocaklar-tower",
+"es": []
+},
+{
+"q": "Lokasyon Eryaman emlakçı",
+"s": "yesilova-mahallesi/lokasyon-eryaman",
+"es": []
+},
+{
+"q": "Lowland Business emlakçı",
+"s": "yesilova-mahallesi/lowland-business",
+"es": []
+},
+{
+"q": "May Tower emlakçı",
+"s": "yesilova-mahallesi/may-tower",
+"es": []
+},
+{
+"q": "Meva Şehir emlakçı",
+"s": "yesilova-mahallesi/meva-sehir",
+"es": []
+},
+{
+"q": "Penta 5 emlakçı",
+"s": "yesilova-mahallesi/penta-5",
+"es": []
+},
+{
+"q": "Pozitif Life emlakçı",
+"s": "yesilova-mahallesi/pozitif-life",
+"es": []
+},
+{
+"q": "Rema Delux emlakçı",
+"s": "yesilova-mahallesi/rema-delux",
+"es": []
+},
+{
+"q": "Sakalar Tower emlakçı",
+"s": "yesilova-mahallesi/sakalar-tower",
+"es": []
+},
+{
+"q": "Sertower Busidence emlakçı",
+"s": "yesilova-mahallesi/sertower-busidence",
+"es": []
+},
+{
+"q": "Ada Loft Eryaman emlakçı",
+"s": "ata-mahallesi/ada-loft-eryaman",
+"es": []
+},
+{
+"q": "Akdam Sitesi emlakçı",
+"s": "ata-mahallesi/akdam-sitesi",
+"es": []
+},
+{
+"q": "Aker Mücevher Evleri emlakçı",
+"s": "ata-mahallesi/aker-mucevher-evleri",
+"es": []
+},
+{
+"q": "Akonur Sitesi emlakçı",
+"s": "ata-mahallesi/akonur-sitesi",
+"es": []
+},
+{
+"q": "Alkon Sitesi emlakçı",
+"s": "ata-mahallesi/alkon-sitesi",
+"es": []
+},
+{
+"q": "Anemon Sitesi emlakçı",
+"s": "ata-mahallesi/anemon-sitesi",
+"es": []
+},
+{
+"q": "Arıkovanı Sitesi emlakçı",
+"s": "ata-mahallesi/arikovani-sitesi",
+"es": []
+},
+{
+"q": "Armoni Life emlakçı",
+"s": "ata-mahallesi/armoni-life",
+"es": []
+},
+{
+"q": "Ata Life Sitesi emlakçı",
+"s": "ata-mahallesi/ata-life-sitesi",
+"es": []
+},
+{
+"q": "Atasayanlar Sitesi emlakçı",
+"s": "ata-mahallesi/atasayanlar-sitesi",
+"es": []
+},
+{
+"q": "Ataşehir Eryaman Konutları emlakçı",
+"s": "ata-mahallesi/atasehir-eryaman-konutlari",
+"es": []
+},
+{
+"q": "Aydınkent Sitesi emlakçı",
+"s": "ata-mahallesi/aydinkent-sitesi",
+"es": []
+},
+{
+"q": "Ayyıldız Sitesi emlakçı",
+"s": "ata-mahallesi/ayyildiz-sitesi",
+"es": []
+},
+{
+"q": "Başkent Sitesi emlakçı",
+"s": "ata-mahallesi/baskent-sitesi",
+"es": []
+},
+{
+"q": "Batı Sistemciler Sitesi emlakçı",
+"s": "ata-mahallesi/bati-sistemciler-sitesi",
+"es": []
+},
+{
+"q": "Bayer Sitesi emlakçı",
+"s": "ata-mahallesi/bayer-sitesi",
+"es": []
+},
+{
+"q": "Belmi Kent emlakçı",
+"s": "ata-mahallesi/belmi-kent",
+"es": []
+},
+{
+"q": "Belören Manzara Evleri emlakçı",
+"s": "ata-mahallesi/beloren-manzara-evleri",
+"es": []
+},
+{
+"q": "Billur Sitesi emlakçı",
+"s": "ata-mahallesi/billur-sitesi",
+"es": []
+},
+{
+"q": "Çağdaş Onur Sitesi emlakçı",
+"s": "ata-mahallesi/cagdas-onur-sitesi",
+"es": []
+},
+{
+"q": "Çağlar Belde Sitesi emlakçı",
+"s": "ata-mahallesi/caglar-belde-sitesi",
+"es": []
+},
+{
+"q": "Çağlayan Sitesi emlakçı",
+"s": "ata-mahallesi/caglayan-sitesi",
+"es": []
+},
+{
+"q": "Çiğdem Sitesi emlakçı",
+"s": "ata-mahallesi/cigdem-sitesi",
+"es": [
+"eryaman-mahallesi/cigdem-sitesi"
+]
+},
+{
+"q": "Demirkent On Sitesi emlakçı",
+"s": "ata-mahallesi/demirkent-on-sitesi",
+"es": []
+},
+{
+"q": "Dilara Sitesi emlakçı",
+"s": "ata-mahallesi/dilara-sitesi",
+"es": []
+},
+{
+"q": "Doğasu Elmaslar Evleri emlakçı",
+"s": "ata-mahallesi/dogasu-elmaslar-evleri",
+"es": []
+},
+{
+"q": "Doğasu Evleri emlakçı",
+"s": "ata-mahallesi/dogasu-evleri",
+"es": []
+},
+{
+"q": "Efsane Evleri emlakçı",
+"s": "ata-mahallesi/efsane-evleri",
+"es": []
+},
+{
+"q": "Elit Yaşam Konutları 3 emlakçı",
+"s": "ata-mahallesi/elit-yasam-konutlari-3",
+"es": []
+},
+{
+"q": "Emin Güven Sitesi emlakçı",
+"s": "ata-mahallesi/emin-guven-sitesi",
+"es": []
+},
+{
+"q": "Endora Plus emlakçı",
+"s": "ata-mahallesi/endora-plus",
+"es": []
+},
+{
+"q": "Eser Yapı Evleri emlakçı",
+"s": "ata-mahallesi/eser-yapi-evleri",
+"es": []
+},
+{
+"q": "Etikent Sitesi emlakçı",
+"s": "ata-mahallesi/etikent-sitesi",
+"es": []
+},
+{
+"q": "Genova emlakçı",
+"s": "ata-mahallesi/genova",
+"es": []
+},
+{
+"q": "Gold Life Konutları emlakçı",
+"s": "ata-mahallesi/gold-life-konutlari",
+"es": []
+},
+{
+"q": "Gold Stone Evleri emlakçı",
+"s": "ata-mahallesi/gold-stone-evleri",
+"es": []
+},
+{
+"q": "Gözde Evler Sitesi emlakçı",
+"s": "ata-mahallesi/gozde-evler-sitesi",
+"es": []
+},
+{
+"q": "Güldede Sitesi emlakçı",
+"s": "ata-mahallesi/guldede-sitesi",
+"es": []
+},
+{
+"q": "Gülkent Konutları emlakçı",
+"s": "ata-mahallesi/gulkent-konutlari",
+"es": []
+},
+{
+"q": "Güzel Akyüzüm Sitesi emlakçı",
+"s": "ata-mahallesi/guzel-akyuzum-sitesi",
+"es": []
+},
+{
+"q": "Hansa Sitesi emlakçı",
+"s": "ata-mahallesi/hansa-sitesi",
+"es": []
+},
+{
+"q": "Havuz Kent emlakçı",
+"s": "ata-mahallesi/havuz-kent",
+"es": []
+},
+{
+"q": "Kainat Evler 2 emlakçı",
+"s": "ata-mahallesi/kainat-evler-2",
+"es": []
+},
+{
+"q": "Kainat Evleri emlakçı",
+"s": "ata-mahallesi/kainat-evleri",
+"es": []
+},
+{
+"q": "Kozlar Towers emlakçı",
+"s": "ata-mahallesi/kozlar-towers",
+"es": []
+},
+{
+"q": "Liva Life Yaşam Konutları emlakçı",
+"s": "ata-mahallesi/liva-life-yasam-konutlari",
+"es": []
+},
+{
+"q": "Manzara Evleri emlakçı",
+"s": "ata-mahallesi/manzara-evleri",
+"es": []
+},
+{
+"q": "Mavi Bayrak Sitesi emlakçı",
+"s": "ata-mahallesi/mavi-bayrak-sitesi",
+"es": []
+},
+{
+"q": "Mavi Ladin Konut emlakçı",
+"s": "ata-mahallesi/mavi-ladin-konut",
+"es": []
+},
+{
+"q": "Mercan Life Buse Konutları emlakçı",
+"s": "ata-mahallesi/mercan-life-buse-konutlari",
+"es": []
+},
+{
+"q": "Mercankent Manzara Evleri emlakçı",
+"s": "ata-mahallesi/mercankent-manzara-evleri",
+"es": []
+},
+{
+"q": "Mizan Sitesi emlakçı",
+"s": "ata-mahallesi/mizan-sitesi",
+"es": []
+},
+{
+"q": "Mutlu Sitesi emlakçı",
+"s": "ata-mahallesi/mutlu-sitesi",
+"es": [
+"goksu-mahallesi/mutlu-sitesi"
+]
+},
+{
+"q": "Özkardeşler Sitesi emlakçı",
+"s": "ata-mahallesi/ozkardesler-sitesi",
+"es": []
+},
+{
+"q": "Panorama Garden emlakçı",
+"s": "ata-mahallesi/panorama-garden",
+"es": []
+},
+{
+"q": "Panorama Gold emlakçı",
+"s": "ata-mahallesi/panorama-gold",
+"es": []
+},
+{
+"q": "Panorama Life emlakçı",
+"s": "ata-mahallesi/panorama-life",
+"es": []
+},
+{
+"q": "Panorama Plus emlakçı",
+"s": "ata-mahallesi/panorama-plus",
+"es": []
+},
+{
+"q": "Panorama Prestij emlakçı",
+"s": "ata-mahallesi/panorama-prestij",
+"es": []
+},
+{
+"q": "Parkyaman Evleri emlakçı",
+"s": "ata-mahallesi/parkyaman-evleri",
+"es": []
+},
+{
+"q": "Paşa Evleri emlakçı",
+"s": "ata-mahallesi/pasa-evleri",
+"es": []
+},
+{
+"q": "Prestij Park Konutları emlakçı",
+"s": "ata-mahallesi/prestij-park-konutlari",
+"es": []
+},
+{
+"q": "Raylı Sistemciler Sitesi emlakçı",
+"s": "ata-mahallesi/rayli-sistemciler-sitesi",
+"es": []
+},
+{
+"q": "Ruşen Park Evleri emlakçı",
+"s": "ata-mahallesi/rusen-park-evleri",
+"es": []
+},
+{
+"q": "Rüyakent Sitesi emlakçı",
+"s": "ata-mahallesi/ruyakent-sitesi",
+"es": []
+},
+{
+"q": "Sarı Güllük Konutları emlakçı",
+"s": "ata-mahallesi/sari-gulluk-konutlari",
+"es": []
+},
+{
+"q": "Sarmaşıklıköşk Sitesi emlakçı",
+"s": "ata-mahallesi/sarmasiklikosk-sitesi",
+"es": []
+},
+{
+"q": "Seçkin Atasaylar Sitesi emlakçı",
+"s": "ata-mahallesi/seckin-atasaylar-sitesi",
+"es": []
+},
+{
+"q": "Şelale Sitesi emlakçı",
+"s": "ata-mahallesi/selale-sitesi",
+"es": [
+"guzelkent-mahallesi/selale-sitesi"
+]
+},
+{
+"q": "Selvi Evleri Sitesi emlakçı",
+"s": "ata-mahallesi/selvi-evleri-sitesi",
+"es": []
+},
+{
+"q": "Şenser Sitesi emlakçı",
+"s": "ata-mahallesi/senser-sitesi",
+"es": []
+},
+{
+"q": "Sermina Life emlakçı",
+"s": "ata-mahallesi/sermina-life",
+"es": []
+},
+{
+"q": "Şirin Güneşkent Sitesi emlakçı",
+"s": "ata-mahallesi/sirin-guneskent-sitesi",
+"es": []
+},
+{
+"q": "Siyah Beyaz Evler emlakçı",
+"s": "ata-mahallesi/siyah-beyaz-evler",
+"es": []
+},
+{
+"q": "Söğüt Bahçe Konutları emlakçı",
+"s": "ata-mahallesi/sogut-bahce-konutlari",
+"es": []
+},
+{
+"q": "Sümeyra 2 Sitesi emlakçı",
+"s": "ata-mahallesi/sumeyra-2-sitesi",
+"es": []
+},
+{
+"q": "Taflan Sitesi emlakçı",
+"s": "ata-mahallesi/taflan-sitesi",
+"es": []
+},
+{
+"q": "Tekirdağ Park Evleri emlakçı",
+"s": "ata-mahallesi/tekirdag-park-evleri",
+"es": []
+},
+{
+"q": "Trend Life Sitesi emlakçı",
+"s": "ata-mahallesi/trend-life-sitesi",
+"es": []
+},
+{
+"q": "Tuana Evleri emlakçı",
+"s": "ata-mahallesi/tuana-evleri",
+"es": []
+},
+{
+"q": "Turuncu Site emlakçı",
+"s": "ata-mahallesi/turuncu-site",
+"es": []
+},
+{
+"q": "Twin Towers Eryaman emlakçı",
+"s": "ata-mahallesi/twin-towers-eryaman",
+"es": []
+},
+{
+"q": "Umut Yapı Sitesi emlakçı",
+"s": "ata-mahallesi/umut-yapi-sitesi",
+"es": []
+},
+{
+"q": "Vizyon Başpınar Sitesi emlakçı",
+"s": "ata-mahallesi/vizyon-baspinar-sitesi",
+"es": []
+},
+{
+"q": "Yaylakent Sitesi emlakçı",
+"s": "ata-mahallesi/yaylakent-sitesi",
+"es": []
+},
+{
+"q": "Zirve Park Konutları emlakçı",
+"s": "ata-mahallesi/zirve-park-konutlari",
+"es": []
+},
+{
+"q": "10. Botanik Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/10-botanik-evleri",
+"es": []
+},
+{
+"q": "Ahsen Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/ahsen-sitesi",
+"es": []
+},
+{
+"q": "Akasya Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/akasya-sitesi",
+"es": [
+"sehit-osman-avci-mahallesi/akasya-sitesi"
+]
+},
+{
+"q": "Akın Garden Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/akin-garden-sitesi",
+"es": []
+},
+{
+"q": "Altın Başak Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/altin-basak-konutlari",
+"es": []
+},
+{
+"q": "Anadolu Vizyon Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/anadolu-vizyon-konutlari",
+"es": []
+},
+{
+"q": "Angora Göksu Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/angora-goksu-evleri",
+"es": []
+},
+{
+"q": "Ankalüx Residence emlakçı",
+"s": "cumhuriyet-mahallesi/ankalux-residence",
+"es": []
+},
+{
+"q": "AP Green Tower emlakçı",
+"s": "cumhuriyet-mahallesi/ap-green-tower",
+"es": []
+},
+{
+"q": "Ap İst Port emlakçı",
+"s": "cumhuriyet-mahallesi/ap-ist-port",
+"es": []
+},
+{
+"q": "AP İstGate emlakçı",
+"s": "cumhuriyet-mahallesi/ap-istgate",
+"es": []
+},
+{
+"q": "AP İstWay emlakçı",
+"s": "cumhuriyet-mahallesi/ap-istway",
+"es": []
+},
+{
+"q": "Arissa Botanik emlakçı",
+"s": "cumhuriyet-mahallesi/arissa-botanik",
+"es": []
+},
+{
+"q": "Astim Flora Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/astim-flora-evleri",
+"es": []
+},
+{
+"q": "Astim Metrolife emlakçı",
+"s": "cumhuriyet-mahallesi/astim-metrolife",
+"es": []
+},
+{
+"q": "Astim Platinium emlakçı",
+"s": "cumhuriyet-mahallesi/astim-platinium",
+"es": []
+},
+{
+"q": "Astim Skypark emlakçı",
+"s": "cumhuriyet-mahallesi/astim-skypark",
+"es": []
+},
+{
+"q": "Ata Yıldız Batı Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/ata-yildiz-bati-konutlari",
+"es": []
+},
+{
+"q": "Ataköy Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/atakoy-konutlari",
+"es": []
+},
+{
+"q": "Başakşehir Ankara Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/basaksehir-ankara-konutlari",
+"es": []
+},
+{
+"q": "Batı Life Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/bati-life-evleri",
+"es": []
+},
+{
+"q": "Batıhan Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/batihan-konutlari",
+"es": []
+},
+{
+"q": "Botanik Park Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/botanik-park-evleri",
+"es": []
+},
+{
+"q": "Botanik Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/botanik-sitesi",
+"es": []
+},
+{
+"q": "Bulvar Yaşam Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/bulvar-yasam-konutlari",
+"es": []
+},
+{
+"q": "Çakırpark emlakçı",
+"s": "cumhuriyet-mahallesi/cakirpark",
+"es": []
+},
+{
+"q": "Çimtaş Göksu Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/cimtas-goksu-konutlari",
+"es": []
+},
+{
+"q": "City Life emlakçı",
+"s": "cumhuriyet-mahallesi/city-life",
+"es": []
+},
+{
+"q": "Diamond Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/diamond-goksu",
+"es": []
+},
+{
+"q": "Ender Doğuş Konut Yapı emlakçı",
+"s": "cumhuriyet-mahallesi/ender-dogus-konut-yapi",
+"es": []
+},
+{
+"q": "Endora Batı emlakçı",
+"s": "cumhuriyet-mahallesi/endora-bati",
+"es": []
+},
+{
+"q": "Gölde Lüxe Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/golde-luxe-konutlari",
+"es": []
+},
+{
+"q": "GreenPark Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/greenpark-evleri",
+"es": []
+},
+{
+"q": "Grup Dayanışma Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/grup-dayanisma-sitesi",
+"es": []
+},
+{
+"q": "Gülbaran Residence emlakçı",
+"s": "cumhuriyet-mahallesi/gulbaran-residence",
+"es": []
+},
+{
+"q": "Günebakan Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/gunebakan-sitesi",
+"es": []
+},
+{
+"q": "Güney Park Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/guney-park-evleri",
+"es": []
+},
+{
+"q": "Güzel Belde Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/guzel-belde-sitesi",
+"es": []
+},
+{
+"q": "Hittown emlakçı",
+"s": "cumhuriyet-mahallesi/hittown",
+"es": []
+},
+{
+"q": "Hityaşam emlakçı",
+"s": "cumhuriyet-mahallesi/hityasam",
+"es": []
+},
+{
+"q": "Hityenibatı Haktanır Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/hityenibati-haktanir-konutlari",
+"es": []
+},
+{
+"q": "Hotki Bulvar emlakçı",
+"s": "cumhuriyet-mahallesi/hotki-bulvar",
+"es": []
+},
+{
+"q": "Huzur Park Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/huzur-park-sitesi",
+"es": []
+},
+{
+"q": "Kaşmir Yonca emlakçı",
+"s": "cumhuriyet-mahallesi/kasmir-yonca",
+"es": []
+},
+{
+"q": "Konar Manzara Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/konar-manzara-evleri",
+"es": []
+},
+{
+"q": "Mes Polaris Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/mes-polaris-evleri",
+"es": []
+},
+{
+"q": "Mood Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/mood-goksu",
+"es": []
+},
+{
+"q": "Motto Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/motto-goksu",
+"es": []
+},
+{
+"q": "Nar Gülü 1 Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/nar-gulu-1-sitesi",
+"es": []
+},
+{
+"q": "Natura Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/natura-goksu",
+"es": []
+},
+{
+"q": "Natural Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/natural-konutlari",
+"es": []
+},
+{
+"q": "Nisanur Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/nisanur-sitesi",
+"es": []
+},
+{
+"q": "Nover WestLife emlakçı",
+"s": "cumhuriyet-mahallesi/nover-westlife",
+"es": []
+},
+{
+"q": "Oasis Korupark emlakçı",
+"s": "cumhuriyet-mahallesi/oasis-korupark",
+"es": []
+},
+{
+"q": "Öz Uğur Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/oz-ugur-sitesi",
+"es": []
+},
+{
+"q": "Park Sera Evleri emlakçı",
+"s": "cumhuriyet-mahallesi/park-sera-evleri",
+"es": []
+},
+{
+"q": "Paryap West Life emlakçı",
+"s": "cumhuriyet-mahallesi/paryap-west-life",
+"es": []
+},
+{
+"q": "Plus Life Ankara emlakçı",
+"s": "cumhuriyet-mahallesi/plus-life-ankara",
+"es": []
+},
+{
+"q": "Türkü Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/turku-sitesi",
+"es": []
+},
+{
+"q": "Ütopya Konutları emlakçı",
+"s": "cumhuriyet-mahallesi/utopya-konutlari",
+"es": []
+},
+{
+"q": "Vera Point emlakçı",
+"s": "cumhuriyet-mahallesi/vera-point",
+"es": []
+},
+{
+"q": "Vera Vista emlakçı",
+"s": "cumhuriyet-mahallesi/vera-vista",
+"es": []
+},
+{
+"q": "Vera West emlakçı",
+"s": "cumhuriyet-mahallesi/vera-west",
+"es": []
+},
+{
+"q": "Vizyon Tower emlakçı",
+"s": "cumhuriyet-mahallesi/vizyon-tower",
+"es": []
+},
+{
+"q": "Wind Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/wind-goksu",
+"es": []
+},
+{
+"q": "Yeni Botanik Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/yeni-botanik-sitesi",
+"es": []
+},
+{
+"q": "Yeşil Koru Sitesi emlakçı",
+"s": "cumhuriyet-mahallesi/yesil-koru-sitesi",
+"es": []
+},
+{
+"q": "Zen Park Göksu emlakçı",
+"s": "cumhuriyet-mahallesi/zen-park-goksu",
+"es": []
+},
+{
+"q": "Zen Park Plus emlakçı",
+"s": "cumhuriyet-mahallesi/zen-park-plus",
+"es": []
+},
+{
+"q": "Zirveden Batı emlakçı",
+"s": "cumhuriyet-mahallesi/zirveden-bati",
+"es": []
+},
+{
+"q": "Alya Park emlakçı",
+"s": "susuz-mahallesi/alya-park",
+"es": []
+},
+{
+"q": "Ap Forest Gate emlakçı",
+"s": "susuz-mahallesi/ap-forest-gate",
+"es": []
+},
+{
+"q": "Başak Life emlakçı",
+"s": "susuz-mahallesi/basak-life",
+"es": []
+},
+{
+"q": "Başkent Göksu emlakçı",
+"s": "susuz-mahallesi/baskent-goksu",
+"es": []
+},
+{
+"q": "Batımahal Başpınar emlakçı",
+"s": "susuz-mahallesi/batimahal-baspinar",
+"es": []
+},
+{
+"q": "Bella Garden emlakçı",
+"s": "susuz-mahallesi/bella-garden",
+"es": []
+},
+{
+"q": "Bordo Göl Evleri emlakçı",
+"s": "susuz-mahallesi/bordo-gol-evleri",
+"es": []
+},
+{
+"q": "Bulut Kule emlakçı",
+"s": "susuz-mahallesi/bulut-kule",
+"es": []
+},
+{
+"q": "Çağ Life Sitesi emlakçı",
+"s": "susuz-mahallesi/cag-life-sitesi",
+"es": []
+},
+{
+"q": "Dostlar Birikim Sitesi emlakçı",
+"s": "susuz-mahallesi/dostlar-birikim-sitesi",
+"es": []
+},
+{
+"q": "Duru Life Konutları emlakçı",
+"s": "susuz-mahallesi/duru-life-konutlari",
+"es": []
+},
+{
+"q": "Ende Yaşam emlakçı",
+"s": "susuz-mahallesi/ende-yasam",
+"es": []
+},
+{
+"q": "Eser Yapı Sitesi emlakçı",
+"s": "susuz-mahallesi/eser-yapi-sitesi",
+"es": []
+},
+{
+"q": "Göksu Hisar Evleri emlakçı",
+"s": "susuz-mahallesi/goksu-hisar-evleri",
+"es": []
+},
+{
+"q": "Göksu Marina emlakçı",
+"s": "susuz-mahallesi/goksu-marina",
+"es": []
+},
+{
+"q": "Green Life Göksu Konutları emlakçı",
+"s": "susuz-mahallesi/green-life-goksu-konutlari",
+"es": []
+},
+{
+"q": "Koruçam Sitesi emlakçı",
+"s": "susuz-mahallesi/korucam-sitesi",
+"es": []
+},
+{
+"q": "Lake Life emlakçı",
+"s": "susuz-mahallesi/lake-life",
+"es": []
+},
+{
+"q": "Lenora Göksu emlakçı",
+"s": "susuz-mahallesi/lenora-goksu",
+"es": []
+},
+{
+"q": "Lilyum Sitesi emlakçı",
+"s": "susuz-mahallesi/lilyum-sitesi",
+"es": []
+},
+{
+"q": "Liva Göksu emlakçı",
+"s": "susuz-mahallesi/liva-goksu",
+"es": []
+},
+{
+"q": "Mabeyn Başpınar emlakçı",
+"s": "susuz-mahallesi/mabeyn-baspinar",
+"es": []
+},
+{
+"q": "Mahal Çağ Sitesi emlakçı",
+"s": "susuz-mahallesi/mahal-cag-sitesi",
+"es": []
+},
+{
+"q": "Majör Göksu emlakçı",
+"s": "susuz-mahallesi/major-goksu",
+"es": []
+},
+{
+"q": "Mavera Göksu emlakçı",
+"s": "susuz-mahallesi/mavera-goksu",
+"es": []
+},
+{
+"q": "Maviler İpek emlakçı",
+"s": "susuz-mahallesi/maviler-ipek",
+"es": []
+},
+{
+"q": "Merdin Sitesi emlakçı",
+"s": "susuz-mahallesi/merdin-sitesi",
+"es": []
+},
+{
+"q": "Mira Göksu Konutları emlakçı",
+"s": "susuz-mahallesi/mira-goksu-konutlari",
+"es": []
+},
+{
+"q": "Mood Altınok emlakçı",
+"s": "susuz-mahallesi/mood-altinok",
+"es": []
+},
+{
+"q": "Neovadi Konutları emlakçı",
+"s": "susuz-mahallesi/neovadi-konutlari",
+"es": []
+},
+{
+"q": "Neva Palas emlakçı",
+"s": "susuz-mahallesi/neva-palas",
+"es": []
+},
+{
+"q": "Nil My Home emlakçı",
+"s": "susuz-mahallesi/nil-my-home",
+"es": []
+},
+{
+"q": "Öniz Nirvana emlakçı",
+"s": "susuz-mahallesi/oniz-nirvana",
+"es": []
+},
+{
+"q": "Palas Eryaman emlakçı",
+"s": "susuz-mahallesi/palas-eryaman",
+"es": []
+},
+{
+"q": "Paradise Göksu emlakçı",
+"s": "susuz-mahallesi/paradise-goksu",
+"es": []
+},
+{
+"q": "Park Göksu Konutları emlakçı",
+"s": "susuz-mahallesi/park-goksu-konutlari",
+"es": []
+},
+{
+"q": "Perla Life emlakçı",
+"s": "susuz-mahallesi/perla-life",
+"es": []
+},
+{
+"q": "Sarıtaş Seyir Evleri emlakçı",
+"s": "susuz-mahallesi/saritas-seyir-evleri",
+"es": []
+},
+{
+"q": "Serline Konutları emlakçı",
+"s": "susuz-mahallesi/serline-konutlari",
+"es": []
+},
+{
+"q": "Şirin Ana Villaları emlakçı",
+"s": "susuz-mahallesi/sirin-ana-villalari",
+"es": []
+},
+{
+"q": "Sky Göksu emlakçı",
+"s": "susuz-mahallesi/sky-goksu",
+"es": []
+},
+{
+"q": "Starlife emlakçı",
+"s": "susuz-mahallesi/starlife",
+"es": []
+},
+{
+"q": "Tatlı Yamaç Palmiye Evleri emlakçı",
+"s": "susuz-mahallesi/tatli-yamac-palmiye-evleri",
+"es": []
+},
+{
+"q": "Vera Life Göksu emlakçı",
+"s": "susuz-mahallesi/vera-life-goksu",
+"es": []
+},
+{
+"q": "White Dream Sitesi emlakçı",
+"s": "susuz-mahallesi/white-dream-sitesi",
+"es": []
+},
+{
+"q": "Yıldız Life emlakçı",
+"s": "susuz-mahallesi/yildiz-life",
+"es": []
+}
+]

@@ -213,3 +213,42 @@ değil, GÜNLÜK TOPLAM: aynı gün paralel bir oturum zaten ~172 T2 ölçümü 
 ve 05:22Z'de bir reCAPTCHA daha yenmişti. **Kural: güne başlarken önce
 `sonuclar-*.jsonl` dosyalarının bugünkü satır sayısını topla.** Toplam 200'ü
 geçtiyse o gün yeni tarama açma — kanal paylaşımlı.
+
+---
+
+## 2026-08-11 22:30 — YENİ AKTİF KUYRUK: kuyruk-site-emlakci.json (ÖNCELİK 1)
+
+Özgün'ün açık isteği: /siteler'deki TÜM kayıtlar için "«site adı» emlakçı"
+sorgusunda sıramız ölçülecek, İLK 3'TE OLMAYANLAR not edilecek, ayrıca
+"Evinizi Satalım, Kiraya Verelim" ekinin SERP'te görünürlüğü izlenecek.
+
+- Kuyruk: `kuyruk-site-emlakci.json` (706 tekil sorgu; Eryaman önce, sonra
+  Yenimahalle üçlüsü; `es` alanı aynı adı paylaşan ikinci kaydı taşır).
+- Sonuç: `sonuclar-site-emlakci.jsonl` (2026-08-11 gecesi ilk 42 ölçüldü).
+- Karne: `python3 karne-site-emlakci.py --md` → `ilk3-disi-siteler.md`
+  (Özgün'e gösterilecek not bu dosya; her dilimden sonra tazele).
+- Adım 1 (kalanı bul): `python3 -c "..."` yerine hazır komut:
+  `python3 sirada-emlakci.py` (ilk 3 kalan sorgu + URL basar).
+- Ölçüm JS'i (ESKİSİNDEN FARKLI — `bas` bizim SERP başlığımızı, `ilk3u` rakip
+  tam URL'lerini, `h` harita kutusu sıramızı da alır; kayıtta `d` tarihi ŞART):
+
+```
+(()=>{const R=(()=>{const E=[...document.querySelectorAll('.dbg0pd')];const B=E.map(e=>e.innerText.trim()).findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText});}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');return{sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,h:B+1,ilk3u:T.slice(0,3).map(x=>x.d+x.p),n:T.length,tt:document.title.slice(0,40)}})();setTimeout(()=>{location.href='https://www.google.com/search?pws=0&gl=tr&hl=tr&q='+encodeURIComponent(SONRAKI)},500);return JSON.stringify(R)})()
+```
+
+- Kayıt biçimi: `{"d":"<tarih>","s":"<mahalle/slug>","q":"...","sira":N,"u":...,"bas":...,"h":N,"n":N,"not":"..."}`
+- `not` alanına şu sınıfları düş: "eski başlık" (bas'ta Evinizi Satalım yok),
+  "ada sayfası" (u /adalar/ içeriyor), "eski slug", "ad belirsizliği" (SERP
+  başka şehre gidiyor), "ad-eşleşmeli mağaza/ofis 1." (rakip adı sorguyla aynı).
+- Tempo/engel/commit kuralları yukarıdaki protokolle AYNI (20'de bir 2 dk mola,
+  CAPTCHA'da dur, her ölçüm ANINDA diske, commit sadece scratchpad-karne).
+- Diğer kuyruklar (t2 vb.) bu kuyruk BİTENE KADAR bekler.
+
+İlk 42 ölçümün öğrettiği (dilim analizinde şaşırma):
+- İlk 3'te olmadığımız sorguların büyük kısmı iki sınıfa düşüyor:
+  (a) AD BELİRSİZLİĞİ — Yıldız/Doğa/Ege/Kardelen gibi adlar Türkiye'nin başka
+  site/mahallelerine gidiyor; (b) AD-EŞLEŞMELİ RAKİP — Miray/Umut/Huzur/Öykü
+  gibi adlar aynı adlı emlak OFİSLERİNİN sorgusu. İkisi de içerikle çözülmez.
+- SERP'te görünen sonuçlarımızın ~%80'i BAYAT BAŞLIK taşıyor (07.08 öncesi
+  "Satılık Daire ve Kiralık Daire" biçimleri) — şablonda "Evinizi Satalım,
+  Kiraya Verelim" 31.07'den beri var, Google eski kopyaları basıyor.
