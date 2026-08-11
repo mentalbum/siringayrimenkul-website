@@ -51,6 +51,18 @@ const nextConfig: NextConfig = {
       // Bir etap sayfası ileride tekrar kapanırsa buraya yeniden kural eklemek
       // yerine önce lib/etap-onayli.ts'ten çıkarılır (sayfa zaten üretilmez).
 
+      // ÖLÜ ADA URL'LERİ (2026-08-12 gece analizi): kadastro düzeltmeleriyle
+      // sahipsiz kalan ama dizinde/SERP'te hâlâ yaşayan 3 ada adresi. Varisler
+      // git geçmişinden doğrulandı (90b7f70/07bd9f8/8e6950d). Hem eski hem
+      // yeni slug biçimi yazıldı ki genel taşıma kuralına düşüp zincir olmasın.
+      // 46432-1 ayrıca "yönlendirme var, varış 404" tuzağındaydı.
+      { source: "/mahalleler/goksu/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
+      { source: "/mahalleler/goksu-mahallesi/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim-mahallesi/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci/adalar/46656-5", destination: "/mahalleler/sehit-osman-avci-mahallesi/karma-modern", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/adalar/46656-5", destination: "/mahalleler/sehit-osman-avci-mahallesi/karma-modern", permanent: true },
+
       // Silinen/birleştirilen/taşınan site kayıtlarının eski URL'leri —
       // 404 yerine yaşayan varislerine kalıcı yönlendirme (SEO değeri taşınır).
       { source: "/mahalleler/altay/ege-bloklari", destination: "/mahalleler/altay-mahallesi/age-bloklari", permanent: true },
