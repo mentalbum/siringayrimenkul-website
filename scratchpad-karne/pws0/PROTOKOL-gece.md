@@ -252,3 +252,15 @@ sorgusunda sıramız ölçülecek, İLK 3'TE OLMAYANLAR not edilecek, ayrıca
 - SERP'te görünen sonuçlarımızın ~%80'i BAYAT BAŞLIK taşıyor (07.08 öncesi
   "Satılık Daire ve Kiralık Daire" biçimleri) — şablonda "Evinizi Satalım,
   Kiraya Verelim" 31.07'den beri var, Google eski kopyaları basıyor.
+
+### ENGEL KAYDI — 2026-08-11 ~22:58 TR (18:58Z)
+
+"İlbeyi Sitesi emlakçı" sorgusunda reCAPTCHA geldi (IP 31.223.72.196).
+Protokol gereği çözülmedi, tur durduruldu. O geçersiz ölçüm diske YAZILMADI —
+İlbeyi kuyruğun başında duruyor, sıradaki dilim ondan başlar.
+
+Bugünkü toplam: sabah ~35 (hedef sorgular + site: testleri) + akşam 42 site
+ölçümü + 1 engellenen ≈ 78 sorgu. Engel eşiği bu kez ~370'in çok altında
+geldi — muhtemel sebep aynı gün içinde İKİ ayrı yoğun oturum. Gece görevi
+(02:34) başlamadan önce sayfanın düzeldiğini tek sorguyla teyit etsin;
+CAPTCHA sürüyorsa o geceyi atlasın.
