@@ -215,3 +215,32 @@ girer. Kota günde ~10-12, hepsi tek seferde sığar.
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi
+
+### GSC URL DENETİMİ — kesin durum (2026-08-11, 4 sayfa tek tek bakıldı)
+
+Cümle testiyle çıkardığım tablo KISMEN YANLIŞTI. GSC'nin kendi raporu:
+
+| Sayfa | GSC durumu | İstek |
+|---|---|---|
+| `/mahalleler/tunahan-mahallesi` | **"URL Google'da yok — URL Google tarafından bilinmiyor"**, Son tarama: **Yok**, "Yönlendiren site haritası algılanmadı", "Hiç yönlendiren sayfa algılanmadı" | dizine ekleme istendi ✓ |
+| `/mahalleler/guzelkent-mahallesi` | URL Google'da **mevcut**, sayfa dizine eklendi | yeniden tarama istendi ✓ |
+| `/mahalleler/sehit-osman-avci-mahallesi` | URL Google'da **mevcut**, sayfa dizine eklendi | yeniden tarama istendi ✓ |
+| `/mahalleler/seyh-samil-mahallesi` | URL Google'da **mevcut**, sayfa dizine eklendi | yeniden tarama istendi ✓ |
+
+**Düzeltme:** Güzelkent'in "hiç dizinde değil" teşhisi yanlıştı. Sayfaya özgü
+cümle aramanın "sonuç yok" demesi sayfanın dizin dışı olduğunu KANITLAMAZ —
+Google eski bir kopyayı tutuyor ya da tam cümle eşleşmesi çalışmıyor olabilir.
+**Dizin durumu için tek geçerli kaynak GSC URL denetimi.** Cümle testi ancak
+"hangi URL ile dizinde" sorusuna cevap verir (Tunahan'ın eski adresini böyle
+bulduk, o kısım geçerli).
+
+**Gerçek tablo:** organikte görünmediğimiz 8 sorgunun sadece **1'i** (Tunahan)
+dizin sorunu. Güzelkent, Ş. Osman Avcı, Göksu, Şeker, 2. Etap dizinde ama
+sıralamıyor — hepsi sıralama sorunu. Cumhuriyet'te ayrıca SERP Keçiören'deki
+aynı adlı mahalleyle karışıyor.
+
+**Tunahan'ın ayrıntısı dikkat çekici:** GSC "yönlendiren site haritası
+algılanmadı" ve "hiç yönlendiren sayfa algılanmadı" diyor — oysa adres
+sitemap.xml'de VAR ve ana sayfa + /mahalleler + /siteler + kendi site
+sayfalarından bağlı. Yani Google sitemap'i bu adres için hiç işlememiş.
+Genel tablo: **dizine eklenmeyen 744 sayfa / eklenen 2.037** (GSC Genel Bakış).
