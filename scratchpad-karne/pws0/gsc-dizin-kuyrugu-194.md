@@ -201,3 +201,5 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri
+
+> KOTA DENEMESİ 12.08 02:26 — mes-polaris-evleri denendi, 'Kota Aşıldı' (kota hâlâ dolu, hiçbir şey işaretlenmedi). Sıradaki deneme 05:26'ya kuruldu (cron f3ce690c).
