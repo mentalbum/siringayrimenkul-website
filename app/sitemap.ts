@@ -92,12 +92,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
    *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
   const SABLON = {
+    // 12.08: description'a site-özel olgu cümlesi girdi (lib/site-olgulari.json;
+    //        çıkarma+denetim ajan turu, kayıt metinlerinden — TO açığı işi) ve
+    //        satış+kiralama niyeti birlikte anılır oldu.
     // 09.08: benzer adlı site çiftlerinde başlık soneki mahalleyle açılır oldu
     //        (54 sayfa; ölçümde Google "Aktürk Sitesi" aramasında Altay'daki
     //        Aktürk Blokları sayfasını gösteriyordu).
     // 08.08: iç bağ çapaları rotasyonlu hâle geldi (15ad273).
     // 07.08: alıcı dili tamamen söküldü, marka eki başlıktan kalktı (77153e2).
-    site: new Date("2026-08-09"),
+    site: new Date("2026-08-12"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin
