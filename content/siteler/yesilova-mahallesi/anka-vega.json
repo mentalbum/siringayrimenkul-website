@@ -3,20 +3,22 @@
   "slug": "anka-vega",
   "mahalleSlug": "yesilova-mahallesi",
   "koordinat": {
-    "lat": 39.9647743,
-    "lng": 32.6108601
+    "lat": 39.9652006,
+    "lng": 32.6115923
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/anka-vega-boundary.geojson",
-  "aciklama": "Anka Vega Konutları, Yeşilova Mahallesi'nde 4016. Cadde üzerinde yer alan, üç bloklu bir konut sitesidir. Tapu kaydına göre yaklaşık 9.387 m²'lik parselde 11 katlı A blok, 15 katlı B blok ve 4 katlı C bloktan oluşur — kademeli blok düzeni, site içinde farklı daire tipi ve manzara seçeneği anlamına gelir. İlanlarda kompakt 2+1 daireleri (~82 m²) görülür; Meva Şehir komşuluğundaki genç konut dokusunun parçasıdır. Geliştiricinin tanıtımına göre proje, İK Grup Yapı İnşaat imzasıyla toplam 21.000 m² inşaat alanı üzerinde 93 konut ve 9 mağaza olarak hayata geçirilmiş olup firmanın proje listesinde 2015 yılıyla anılır. Aynı tanıtımda 3+1 ve 4+1 plan tiplerinden de söz edilmesi, sitede kompakt dairelerin yanında daha geniş tiplerin de bulunabileceğini düşündürür. Bu sitede satılık veya kiralık daireniz mi var? Blokların kat yükseklikleri farklı olduğu için fiyatı blok, kat, cephe ve manzara birlikte belirler — değeri, siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
+  "aciklama": "Anka Vega Konutları, Yeşilova Mahallesi'nde 4016. Cadde üzerinde yer alan rezidans tipi bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir komşuluğundaki genç konut dokusunun parçasıdır. Geliştiricinin tanıtımına göre proje, İK Grup Yapı İnşaat imzasıyla toplam 21.000 m² inşaat alanı üzerinde 93 konut ve 9 mağaza olarak hayata geçirilmiş olup firmanın proje listesinde 2015 yılıyla anılır. Aynı tanıtımda 3+1 ve 4+1 plan tiplerinden de söz edilmesi, sitede kompakt dairelerin yanında daha geniş tiplerin de bulunabileceğini düşündürür. Tapu kaydına göre yapı, yaklaşık 4.640 m²'lik kat mülkiyetli parselde on dört katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
-      "no": "47544",
-      "parsel": "2"
+      "no": "47542",
+      "parsel": "5",
+      "alanM2": 4640,
+      "nitelik": "Ondört Katlı Betonarme Ofis Ve İşyeri Ve Arsa"
     }
   ],
   "ozellikler": [
-    "Üç blok: 11 katlı A, 15 katlı B, 4 katlı C",
-    "Yaklaşık 9.387 m²'lik parsel (TKGM)",
+    "14 katlı — tapuda ofis-işyeri niteliği",
+    "Yaklaşık 4.640 m²'lik parsel (TKGM)",
     "4016. Cadde — Yeşilova",
     "Kat mülkiyetli parsel (TKGM)",
     "İlanlarda kompakt 2+1 (~82 m²) daireler",
@@ -24,7 +26,8 @@
   ],
   "alternatifAdlar": [
     "Anka Vega Konutları",
-    "Anka Vega Sitesi"
+    "Anka Vega Sitesi",
+    "Anka Vega Rezidans"
   ],
   "zenginlestirildi": "2026-08-01",
   "adres": "4016. Cadde No:17, Yeşilova, Etimesgut/Ankara"

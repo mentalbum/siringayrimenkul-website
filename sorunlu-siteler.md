@@ -483,9 +483,16 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 + ayyildiz-sitesi (44759 Şenser/Selsen çakışması) yine atlandı.
 + genova tapuda 9 katlı OFİS-İŞYERİ çıktı (konut değil) — metne öyle yazıldı.
 
-### yesilova/dogan-city + anka-vega — AYNI parsel 47544/2 (2026-07-16)
-- İki kayıt da 47544/2'de haritalı; farklı isimli iki site (paylaşım?) ya da biri komşuya
-  kaymış pin. Doğan City adresi 4016.Cd No:10 net → TKGM günü parsel/blok kontrolü.
+### ✅ ÇÖZÜLDÜ — yesilova/dogan-city + anka-vega 47544/2 çakışması (2026-08-12)
+- **Karar: 47544/2 (9.387 m², 11A+15B+4C, ofis-işyeri) = DOĞAN CITY; Anka Vega = 47542/5**
+  (4.640 m², "Ondört Katlı Betonarme Ofis Ve İşyeri", caddenin KUZEY tarafı). Anka Vega
+  kaydı+sınırı 47542/5'e taşındı; Doğan City olduğu gibi kaldı.
+- Kanıt: Etimesgut KEOS resmî numarataj zinciri (kapı→parsel): 4016.Cd **No:10→47544/2**
+  (30 kapı harfi = çarşılı büyük kompleks), **No:17→47542/5**, No:15→47542/6 (=Address
+  Yeşilova, tutarlı). TKGM doğrudan sorgu her iki parseli de teyit etti (12 Ağu, 2 istek).
+- Ders: 28 Tem'de Anka Vega'yı 47544/2'ye taşıyan "çözüm" SERP pinine dayanıyordu; Google/
+  Yandex pinleri bu şeritte caddenin yanlış tarafına kümeleniyor. 25 Tem'deki "kendi konumu
+  4016. Cadde'nin kuzeyinde" tespiti doğruydu. Pin çelişkisinde hakem = KEOS numarataj.
 
 ### Susuz turu notları (2026-07-16)
 - **MA1 Tower (goksu/ma1-tower) ipucu: müteahhidi büyük olasılıkla MA1 YAPI** (Majör Göksu'nun
