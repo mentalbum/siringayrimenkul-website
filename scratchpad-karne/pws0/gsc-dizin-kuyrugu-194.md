@@ -206,3 +206,5 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > KOTA DENEMESİ 12.08 05:28 — hâlâ 'Kota Aşıldı'. Sıradaki deneme 08:28'e kuruldu (cron b88ce237). Google günlük kotası henüz sıfırlanmadı.
 > KOTA DENEMESİ 12.08 09:10 — hâlâ 'Kota Aşıldı'. Sıradaki deneme 12:07 (cron 1c8996f6). Gözlem: kota takvim günü değil, kayan 24 saatlik pencere gibi davranıyor — dünkü istekler öğleden sonraya dek pencereyi dolduruyor olabilir.
 > 12.08 12:25 — Yurt Prestij kabul edildikten hemen sonra kota TEKRAR doldu (UI'daki mükerrer test de kota yedi — DERS: 'Dizine eklenmesi istendi' onayı görülen sayfada butona bir daha basma). İlke Sitesi'ne istek GİTMEDİ, işaretsiz duruyor. Damla durduruldu; sıradaki deneme 15:25 (ab7b267b). Bugünkü net kazanım: 1 istek.
+
+> 12.08 ~13:00 — ELLE MODA GEÇİLDİ (Özgün kararı): kota otomasyon zinciri tamamen durduruldu, tüm cron'lar silindi. Dizin isteklerini Özgün kendi temposuyla DIZINE-EKLENECEKLER.md üzerinden gönderecek. Claude yeniden otomasyon KURMASIN; Özgün isterse kendisi söyler.
