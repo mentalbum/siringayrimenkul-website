@@ -7,7 +7,7 @@
     "lng": 32.6115923
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/anka-vega-boundary.geojson",
-  "aciklama": "Anka Vega Konutları, Yeşilova Mahallesi'nde 4016. Cadde üzerinde yer alan rezidans tipi bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Meva Şehir komşuluğundaki genç konut dokusunun parçasıdır. Geliştiricinin tanıtımına göre proje, İK Grup Yapı İnşaat imzasıyla toplam 21.000 m² inşaat alanı üzerinde 93 konut ve 9 mağaza olarak hayata geçirilmiş olup firmanın proje listesinde 2015 yılıyla anılır. Aynı tanıtımda 3+1 ve 4+1 plan tiplerinden de söz edilmesi, sitede kompakt dairelerin yanında daha geniş tiplerin de bulunabileceğini düşündürür. Tapu kaydına göre yapı, yaklaşık 4.640 m²'lik kat mülkiyetli parselde on dört katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
+  "aciklama": "Anka Vega Konutları, Yeşilova Mahallesi'nde 4016. Cadde üzerinde yer alan rezidans tipi bir konut sitesidir; ilanlarda kompakt 2+1 daireleri (~82 m²) görülür ve Address Yeşilova ile Doğan City'nin yürüme mesafesindeki genç konut dokusunun parçasıdır. Geliştiricinin tanıtımına göre proje, İK Grup Yapı İnşaat imzasıyla toplam 21.000 m² inşaat alanı üzerinde 93 konut ve 9 mağaza olarak hayata geçirilmiş olup firmanın proje listesinde 2015 yılıyla anılır. Aynı tanıtımda 3+1 ve 4+1 plan tiplerinden de söz edilmesi, sitede kompakt dairelerin yanında daha geniş tiplerin de bulunabileceğini düşündürür. Tapu kaydına göre yapı, yaklaşık 4.640 m²'lik kat mülkiyetli parselde on dört katlı, ofis-işyeri niteliğiyle kayıtlıdır; rezidans dairelerinde bu tapu tipi değerleme ve kullanım açısından fark yaratır — işlem öncesi güncel kaydı birlikte kontrol ederiz; bu tapu tipinin ne anlama geldiğini sözlüğümüzdeki rezidans tapusu maddesinde de anlattık. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, siteyi yakından tanıyan emlakçınızla birlikte netleştirin.",
   "adalar": [
     {
       "no": "47542",
@@ -29,6 +29,6 @@
     "Anka Vega Sitesi",
     "Anka Vega Rezidans"
   ],
-  "zenginlestirildi": "2026-08-01",
+  "zenginlestirildi": "2026-08-12",
   "adres": "4016. Cadde No:17, Yeşilova, Etimesgut/Ankara"
 }
