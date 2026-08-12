@@ -13,7 +13,7 @@ seker kök.
 Kota her dolduğunda 3 saat sonra yeniden dene; kabulde 10dk damla, dolunca dur.
 Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari ← 12.08 12:10 gönderildi (KOTA AÇILDI)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi
