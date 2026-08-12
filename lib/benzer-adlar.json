@@ -1,0 +1,15 @@
+{
+  "aciklama": "Aynı/çok benzer adı taşıyan FARKLI yerleşimler (2026-08-12 kanibalizasyon analizi, d2 sınıfı — SERP ölçümlerinde birbirinin yerine sıralandıkları belgelendi). Site sayfası şablonu bu gruplardan 'Benzer adlı yerleşim' çapraz bağını üretir: yanlış kayda düşen ziyaretçi tek tıkla doğrusuna geçer, Google'a iki varlığın ayrı olduğu sinyali gider. Yeni çift keşfedilirse buraya eklenir; ad benzerliği zayıfsa (Concept Eryaman vs Mia Concept) EKLENMEZ.",
+  "gruplar": [
+    [{"m": "tunahan-mahallesi", "s": "akturk-sitesi"}, {"m": "altay-mahallesi", "s": "akturk-bloklari"}],
+    [{"m": "tunahan-mahallesi", "s": "sutek-sitesi"}, {"m": "altay-mahallesi", "s": "sutek-bloklari"}, {"m": "seyh-samil-mahallesi", "s": "sutek-bloklari"}],
+    [{"m": "altay-mahallesi", "s": "doktorlar-sitesi"}, {"m": "yavuz-selim-mahallesi", "s": "doktorlar-sitesi"}],
+    [{"m": "tunahan-mahallesi", "s": "soyak-sitesi"}, {"m": "sehit-osman-avci-mahallesi", "s": "soyak-sitesi"}],
+    [{"m": "devlet-mahallesi", "s": "demirkent-sitesi"}, {"m": "ata-mahallesi", "s": "demirkent-on-sitesi"}],
+    [{"m": "ata-mahallesi", "s": "eser-yapi-evleri"}, {"m": "susuz-mahallesi", "s": "eser-yapi-sitesi"}],
+    [{"m": "eryaman-mahallesi", "s": "akkonaklar-sitesi"}, {"m": "guzelkent-mahallesi", "s": "akkonak-sitesi"}],
+    [{"m": "sehit-osman-avci-mahallesi", "s": "akasya-sitesi"}, {"m": "cumhuriyet-mahallesi", "s": "akasya-sitesi"}],
+    [{"m": "ata-mahallesi", "s": "palmiye-evleri"}, {"m": "altay-mahallesi", "s": "palmiye-evleri"}],
+    [{"m": "yesilova-mahallesi", "s": "kardelen-sitesi"}, {"m": "guzelkent-mahallesi", "s": "kardelen-sitesi"}, {"m": "sehit-osman-avci-mahallesi", "s": "kardelen-sitesi"}, {"m": "yavuz-selim-mahallesi", "s": "kardelen-sitesi"}]
+  ]
+}
