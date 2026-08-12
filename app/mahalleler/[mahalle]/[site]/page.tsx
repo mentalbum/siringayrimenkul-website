@@ -33,6 +33,7 @@ import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
 import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
 import { taramaOncelikliSlugs } from "@/lib/tarama-oncelikli";
+import siteOlgulari from "@/lib/site-olgulari.json";
 import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
 
 // Komşu sayfalara ÇEŞİTLENMİŞ anchor kalıpları: hedef sayfa her yerden aynı
@@ -80,6 +81,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Asıl hedef kitle bu sitede EVİ OLANLAR: "{site} satılık daire",
   // "{site} daire fiyatları", "evimi satmak/kiraya vermek" niyetli aramalar.
   const isimdeEryamanVar = /eryaman/i.test(site.isim);
+  // Kaydın kendi metinlerinden çıkarılmış description olgu cümlesi (varsa).
+  const siteOlgu = (siteOlgulari as Record<string, string>)[`${mahalle.slug}/${site.slug}`];
   // Ata/Susuz/Cumhuriyet Yenimahalle'dedir — Eryaman'da DEĞİL. O mahallelerdeki
   // sitelere "Eryaman <site adı>" demek yanlış konum iddiasıdır (lib/bolge.ts).
   const eryamanda = eryamandaMi(mahalle);
@@ -145,8 +148,18 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
     // (1. sıra araştırması A1, defter 2026-07-31).
+    // SİTE-ÖZEL OLGU CÜMLESİ (2026-08-12): jenerik kalıbın önüne, kaydın kendi
+    // metinlerinden çıkarılmış tek olgu cümlesi girer (lib/site-olgulari.json;
+    // çıkarma+denetim iki aşamalı ajan turuyla yapıldı, uydurma yok). Amaç
+    // 12.08 analizindeki TO açığı: sıfır-tık yüksek-gösterim kayıtların ortak
+    // kökü jenerik snippet'ti. Satış VE kiralama niyeti birlikte anılır
+    // (Özgün 12.08: kiraya verecek ev sahibi de hedef). Olgu yoksa eski kalıp.
+    // Telefon TTBS'den ÖNCE: 155 karakterlik kesme kuyruğu düşürürse önce
+    // rozet gitsin, ulaşım kanalı (Özgün'ün 12.08 hedefi) hep görünür kalsın.
     description: truncateForMeta(
-      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Değerini siteyi blok blok tanıyan yetki belgeli emlakçınızla netleştirin (TTBS No ${siteConfig.yetkiBelgeNo}). Aynı gün dönüş: ${siteConfig.phoneDisplay}.`
+      siteOlgu
+        ? `${siteOlgu} ${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Satışı ve kiralaması için: ${siteConfig.phoneDisplay} (TTBS No ${siteConfig.yetkiBelgeNo}).`
+        : `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} eviniz mi var? Satışını da kiralamasını da siteyi blok blok tanıyan yetki belgeli emlakçınız yürütsün: ${siteConfig.phoneDisplay} (TTBS No ${siteConfig.yetkiBelgeNo}).`
     ),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
