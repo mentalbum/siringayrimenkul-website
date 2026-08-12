@@ -34,6 +34,7 @@ import { inferSiteTipi } from "@/lib/site-tipi";
 import { onayliEtap } from "@/lib/etap-onayli";
 import { taramaOncelikliSlugs } from "@/lib/tarama-oncelikli";
 import siteOlgulari from "@/lib/site-olgulari.json";
+import benzerAdlar from "@/lib/benzer-adlar.json";
 import { bulunmaHali, bulunmaHaliKi, tamlayanHali } from "@/lib/turkce";
 
 // Komşu sayfalara ÇEŞİTLENMİŞ anchor kalıpları: hedef sayfa her yerden aynı
@@ -258,6 +259,21 @@ export default async function SitePage({ params }: Props) {
   // demek yanlış konum iddiası olur (lib/bolge.ts).
   const eryamanda = eryamandaMi(mahalle);
 
+  // Benzer adlı FARKLI yerleşimler (lib/benzer-adlar.json — elle doğrulanmış
+  // 10 grup). Bu sayfayla aynı gruptaki diğer kayıtlar başlık altında bağlanır.
+  const benzerGrup = (benzerAdlar.gruplar as { m: string; s: string }[][]).find((g) =>
+    g.some((x) => x.m === mahalle.slug && x.s === site.slug)
+  );
+  const benzerler = (benzerGrup ?? [])
+    .filter((x) => !(x.m === mahalle.slug && x.s === site.slug))
+    .flatMap((x) => {
+      const bMahalle = getMahalleBySlug(x.m);
+      const bSite = getSiteBySlug(x.m, x.s);
+      return bMahalle && bSite
+        ? [{ mahalleSlug: x.m, slug: x.s, isim: bSite.isim, mahalleIsim: bMahalle.isim }]
+        : [];
+    });
+
   // 720 sayfada birebir aynı kalıp "ölçeklendirilmiş içerik" görünümü veriyordu
   // (E-E-A-T denetimi, 2026-07-29). Varyant seçimi DETERMİNİSTİK (slug'dan) —
   // her build'de aynı sayfa aynı metni alır, yapay tazelenme olmaz.
@@ -465,6 +481,28 @@ export default async function SitePage({ params }: Props) {
           </span>
         )}
         {site.adres && <p className="mt-2 text-sm text-muted">{site.adres}</p>}
+        {/* BENZER ADLI YERLEŞİM çapraz bağı (2026-08-12): SERP ölçümlerinde bu
+            adlar birbirinin yerine sıralanıyor (ör. "Doktorlar Sitesi" sorgusu
+            Altay yerine Yavuz Selim kaydını getiriyordu). Yanlış kayda düşen
+            ziyaretçi tek tıkla doğrusuna geçsin; Google'a da iki varlığın ayrı
+            olduğu sinyali gitsin. Gruplar lib/benzer-adlar.json'da elle
+            doğrulanmış; ad benzerliği zayıfsa eklenmez. */}
+        {benzerler.length > 0 && (
+          <p className="mt-3 text-sm text-muted">
+            Benzer adlı yerleşim{benzerler.length > 1 ? "ler" : ""}:{" "}
+            {benzerler.map((b, i) => (
+              <span key={`${b.mahalleSlug}/${b.slug}`}>
+                {i > 0 && ", "}
+                <Link
+                  href={`/mahalleler/${b.mahalleSlug}/${b.slug}`}
+                  className="font-medium text-gold-dark underline-offset-2 hover:underline"
+                >
+                  {b.isim} — {b.mahalleIsim}
+                </Link>
+              </span>
+            ))}
+          </p>
+        )}
       </header>
 
       <div className={`mt-6 grid gap-8 sm:mt-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>

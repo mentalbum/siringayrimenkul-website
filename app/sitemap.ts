@@ -92,6 +92,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
    *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
   const SABLON = {
+    // 12.08(b): benzer adlı yerleşim çapraz bağı (lib/benzer-adlar.json, 23 sayfa).
     // 12.08: description'a site-özel olgu cümlesi girdi (lib/site-olgulari.json;
     //        çıkarma+denetim ajan turu, kayıt metinlerinden — TO açığı işi) ve
     //        satış+kiralama niyeti birlikte anılır oldu.
