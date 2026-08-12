@@ -203,3 +203,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri
 
 > KOTA DENEMESİ 12.08 02:26 — mes-polaris-evleri denendi, 'Kota Aşıldı' (kota hâlâ dolu, hiçbir şey işaretlenmedi). Sıradaki deneme 05:26'ya kuruldu (cron f3ce690c).
+> KOTA DENEMESİ 12.08 05:28 — hâlâ 'Kota Aşıldı'. Sıradaki deneme 08:28'e kuruldu (cron b88ce237). Google günlük kotası henüz sıfırlanmadı.
