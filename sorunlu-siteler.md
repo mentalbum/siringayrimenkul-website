@@ -198,11 +198,14 @@ llms.txt + dateModified). Kalanlar sırayla:
 
 ### Açık soru turu (2026-07-28) — 5 karar sorusu + sınırsız kayıtlar
 
-✅ **ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL.** Aynı adada komşu iki parsel:
+⚠️ **BU KART SONRADAN ÇÜRÜTÜLDÜ — 2026-08-12'de düzeltildi, aşağıdaki eski metni UYGULAMA.**
+(Doğru hâli bu dosyada "yesilova/dogan-city + anka-vega" başlığında. Özet: Anka Vega
+**47542/5**, 47544/2 ise Doğan City'nin. Pozitif Life = 47544/4 kısmı doğru.)
+~~ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL. Aynı adada komşu iki parsel:
 Anka Vega 47544/2 (9.387 m², "11 katlı A + 15 katlı B + 4 katlı C blok", 4016. Cad. No:17,
 Google'da 37 yorum), Pozitif Life 47544/4 (7.268 m², "14 katlı A1+A2, ofis-işyeri", 4022. Sk).
 Anka Vega kaydına yanlışlıkla Pozitif Life'ın tapu verisi yazılmıştı; düzeltildi, sınırı da
-47544/4'ten 47544/2'ye taşındı. İkisi de haritalı.
+47544/4'ten 47544/2'ye taşındı.~~ — Hatanın kökü: bu karttaki taşıma SERP pinine dayanıyordu.
 
 ✅ **ÇÖZÜLDÜ — Botanik Sitesi hayaletti ama yerine GERÇEK bir kayıt kondu.** Cumhuriyet'te
 düz "Botanik Sitesi" adlı yerleşim yok (ad Botanik metrosundan türeyen kısaltma; birebir
@@ -483,9 +486,16 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 + ayyildiz-sitesi (44759 Şenser/Selsen çakışması) yine atlandı.
 + genova tapuda 9 katlı OFİS-İŞYERİ çıktı (konut değil) — metne öyle yazıldı.
 
-### yesilova/dogan-city + anka-vega — AYNI parsel 47544/2 (2026-07-16)
-- İki kayıt da 47544/2'de haritalı; farklı isimli iki site (paylaşım?) ya da biri komşuya
-  kaymış pin. Doğan City adresi 4016.Cd No:10 net → TKGM günü parsel/blok kontrolü.
+### ✅ ÇÖZÜLDÜ — yesilova/dogan-city + anka-vega 47544/2 çakışması (2026-08-12)
+- **Karar: 47544/2 (9.387 m², 11A+15B+4C, ofis-işyeri) = DOĞAN CITY; Anka Vega = 47542/5**
+  (4.640 m², "Ondört Katlı Betonarme Ofis Ve İşyeri", caddenin KUZEY tarafı). Anka Vega
+  kaydı+sınırı 47542/5'e taşındı; Doğan City olduğu gibi kaldı.
+- Kanıt: Etimesgut KEOS resmî numarataj zinciri (kapı→parsel): 4016.Cd **No:10→47544/2**
+  (30 kapı harfi = çarşılı büyük kompleks), **No:17→47542/5**, No:15→47542/6 (=Address
+  Yeşilova, tutarlı). TKGM doğrudan sorgu her iki parseli de teyit etti (12 Ağu, 2 istek).
+- Ders: 28 Tem'de Anka Vega'yı 47544/2'ye taşıyan "çözüm" SERP pinine dayanıyordu; Google/
+  Yandex pinleri bu şeritte caddenin yanlış tarafına kümeleniyor. 25 Tem'deki "kendi konumu
+  4016. Cadde'nin kuzeyinde" tespiti doğruydu. Pin çelişkisinde hakem = KEOS numarataj.
 
 ### Susuz turu notları (2026-07-16)
 - **MA1 Tower (goksu/ma1-tower) ipucu: müteahhidi büyük olasılıkla MA1 YAPI** (Majör Göksu'nun
@@ -1614,3 +1624,85 @@ verilir; ayrı bir yerleşimse Hekimler'in parseli/koordinatı yanlış, yeniden
 tapu ayrıntısı (8.505 m² / 28 kat) metne YAZILMADI; kayıttaki "Kat mülkiyetli parsel (TKGM)"
 maddesi olduğu gibi bırakıldı. `adalar`, `koordinat`, `sinirGeoJSON` alanlarına dokunulmadı.
 Hekimler kaydına hiç dokunulmadı.
+
+## ÇAKIŞMA SÜPÜRMESİ — repo geneli (2026-08-12, Doğan City/Anka Vega turunun devamı)
+
+Anka Vega hatası düzeltildikten sonra "aynı desenden başka kurban var mı?" diye 723 kayıt +
+721 sınır dosyası python ile tarandı (ajan turu; TKGM'ye istek atılmadı). **Hiçbiri
+düzeltilmedi — hepsi Özgün kararı / ayrı oturum işi.**
+
+### Önce iki ARAÇ KUSURU (bunlar bilinmeden yapılan denetim yanıltır)
+1. **map-qa.py'de "bilinen-meşru paylaşım" beyaz listesi YOK.** (113 satır okundu; script
+   çakışmaları süzmeden döküyor, meşruluk bilgisi yalnız bu defterin kapatılmış kartlarında.)
+2. **map-qa.py çakışmayı site JSON'undan değil, boundary.geojson'un `properties.adalar`
+   alanından okuyor** — bu alan 7 kayıtta BAYAT. Sonuç: hem hayalet çakışma üretiyor
+   (19501/1, 19502/1) hem gerçeğini kaçırıyor (17462/1; 75-yil-sitesi'nin sınır dosyası yok).
+
+### KRİTİK — künye JSON'u düzeltilmiş, sınır dosyası eski parselde kalmış (harita yalan söylüyor)
+- **Karma Modern** (ŞOA): JSON 46657/5, geojson **46656/5** (14.887 m² = 2026-07-25'te
+  REDDEDİLEN "Yönetim ve Hizmet Binası" parseli). Pin de o yanlış poligonun içinde.
+  next.config.ts:63-64'te hâlâ /adalar/46656-5 → karma-modern yönlendirmesi var. Üstelik
+  açıklamadaki tapu cümlesi (8.954 m², 12 katlı A + 3 katlı B) üçüncü bir rakam — repoda
+  dayanağı yok. Anka Vega vakasının birebir aynısı.
+- **Güzel Ev Sitesi** (Yavuz Selim): JSON 19501/2 (3.900 m²), geojson **19501/1** — çizilen
+  poligon komşu Özharitacılar'ın 11 dönümlük parseli (halkalar baytı baytına aynı). Sayfa
+  "kendi parselinde bağımsızdır" derken harita komşuyu gösteriyor.
+- **Özharitacılar** (Yavuz Selim): geojson kendi parseline ek olarak **Gülvatan'ın 19502/1**
+  parselini de taşıyor (21.589 m² ≈ 11.111 + 10.538). Gülvatan'ın sayfası "adanın tek
+  sahibidir" diyor — iki yayın birbirini yalanlıyor.
+- Aynı kök neden, eksik yönde: **Concept Eryaman** (+46446/1), **Yeşil Göksu** (+45819/1),
+  **Göksu Metrokent** (46480/1) — 2026-07-25'te künyeye eklenen ikinci parseller sınır
+  dosyalarına hiç işlenmemiş; ada sayfaları sitenin BAŞKA parselinin poligonunu çiziyor.
+
+### KRİTİK — aynı parselde iki kayıt, defterde HİÇ kayıtlı olmayanlar
+- **19504/1 — iki ayrı "Kardelen Sitesi"** (guzelkent + yavuz-selim), koordinatları BİREBİR
+  aynı (0 m) ama metinleri iki farklı tapu tarif ediyor (3 blok apartman 5.560 m² ⟷ 16 dubleks
+  5.347 m²). Doğan City/Anka Vega vakasının aynısı; defterde hiç yok.
+- **44752/1 — ÜÇ kayıt:** ata/eser-yapi-evleri ve susuz/eser-yapi-sitesi sınır geometrileri
+  BAYT AYNI (tek sitenin iki mahalleye düşmüş çift kaydı) + bayer-sitesi aynı tapuyu kopyalamış.
+- **46512/9 — çapraz mahalle:** eryaman/turk-konut-calisanlar ⟷ tunahan/su-damlasi, aynı 10
+  bloklu tapu iki kayıtta.
+- **63368/6** susuz/mahal-cag ⟷ nil-my-home (geometri bayt aynı; tapu 2 konut + 1 ticari blok
+  sayıyor, iki yerleşime yer yok) · **62658/2** cumhuriyet/city-life ⟷ diamond-goksu (kat
+  sayıları çelişiyor) · **18645/1** guzelkent/er-ay-3 ⟷ sehit-ferhat-koc (pinler 1 m; defter
+  zaten "Er-Ay 3 = eski ad" demiş, kayıt silinmemiş).
+
+### Doğrulanmamış paylaşım iddiaları (metinler paylaşımı ikrar ediyor, defterde kart yok)
+46215/5 (onur ⟷ tugce-kent) · 44770/1 (etikent ⟷ selvi-evleri) · 45835/1 (arikovani ⟷
+atasayanlar ⟷ cigdem) · 46265/4 (bizim-alperenler ⟷ caglar-emin) · 46439/1 (acat ⟷ ayata-kent;
+Acat tapudaki 3 bloğun TAMAMINI sahiplenirken aynı cümlede paylaşımı söylüyor — iç çelişki).
+
+### Diğer
+- **Toplam 47 ada/parsel çifti** birden fazla kayıtta; 141 kayıt etkileniyor. Bunların 15'i
+  eski Eryaman kooperatif MEGA-PARSEL deseni (kasıtlı, dupe değil), 4'ü defterde MEŞRU diye
+  kapatılmış — kalanı yukarıda.
+- Defterde ZATEN açık 17 çakışma hâlâ ağaçta; 3'ü "KESİN DUPE" ve Özgün'ün silme onayını
+  bekliyor (46481/1 bahar ⟷ polsan-1-bahar · 44769/1 belmi-kent ⟷ prestij-park · 44784/1
+  palmiye-evleri ⟷ tatli-yamac-palmiye).
+- **Özahikent'in pini komşu Sümeyra'nın parselinin tam içinde** (kendi 12 parselinin hiçbirinde
+  değil) — repo genelinde "başka sitenin poligonuna düşen" tek pin.
+- **kurtulus-sitesi.json'da `adalar` BOŞ** — 723 kaydın tek istisnası; hiçbir denetim aracı
+  bu kaydı görmüyor (sınır dosyası da yok).
+- **Eryaman Port'ta blok sayısı yanlış:** metin "10 blok" diyor, tapu niteliğinde 11 blok harfi
+  var (A + B,C,D,H + F + E,G + J,K,L).
+- **Address Yeşilova'da kanıtsız tapu iddiası:** özellikte "Ticari nitelik: ofis/işyeri (tapu)"
+  yazıyor ama aynı kaydın tapu alıntısında ofis/işyeri geçmiyor.
+- 20 kayıtta açıklama çok paragraflı ama sayfa tek `<p>` basıyor (`whitespace-pre` yok) —
+  paragraf kırılımları HTML'de kayboluyor.
+
+## Doğan Life — adres/parsel uyuşmazlığı + blok sayısı çelişkisi (YENİ KART, 2026-08-12)
+Yeşilova'nın 7 adresli kaydı resmî KEOS numaratajına karşı sınandı: **6'sı birebir tuttu**
+(anka-vega 47542/5, dogan-city 47544/2, hotki-ritm 47549/1, penta-5 47549/2, pozitif-life
+47544/4, sertower 46395/1). Tutmayan tek kayıt **Doğan Life**:
+- Kayıt: 4014. Cadde **No:4**, ada 47550/**3**. KEOS: No:4 → 47550/**2**, No:6 → 47550/3.
+- Pin ve sınır dosyası 47550/3'ün içinde/üstünde (tutarlı), yani parsel tarafı sağlam görünüyor;
+  uyuşmayan şey adres kapı numarası.
+- 47550/2 ve /3 İKİZ: ikisi de 2.500 m², ikisi de "7 Katlı Betonarme Ofis İşyeri", kat mülkiyeti.
+- **Blok sayısı çelişkisi:** kaydımız "2 blokta 112 daire" diyor; iki bağımsız web kaynağı
+  (emlakdream, zingat özetleri) "**3 blok**, 5 katlı, 112 daire + 12 iki katlı dükkân, tipler
+  2+1 90 m² / 3+1 117 m² / 4+1 dubleks 270 m²" diyor. 5 konut katı + 2 ticari kat = tapudaki
+  "7 katlı" ile uyumlu.
+- "3 blok = 47550/2+3+4 (kapı 4-6-8)" hipotezi **ÇÜRÜDÜ**: 47550/4 TKGM'de "**Ondokuz** Katlı
+  Betonarme Ofis İşyeri" (2.990 m²) — ikiz değil, ayrı bir yapı. 47550/1 ise benzin istasyonu.
+- **Karar: hiçbir şey değiştirilmedi** (çelişkili kaynak = ekleme yok). Özgün'e soru: Doğan
+  Life 2 blok mu 3 mü, ve 47550/2 de Doğan Life'ın mı yoksa ayrı bir yapı mı?

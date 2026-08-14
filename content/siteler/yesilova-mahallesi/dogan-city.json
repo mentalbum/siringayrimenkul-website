@@ -7,11 +7,13 @@
     "lng": 32.6109751
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/dogan-city-boundary.geojson",
-  "aciklama": "Doğan City, Yeşilova'da Şehit Ferhat Koç Caddesi'nde (4016. Cadde No:10) Doğan Grup tarafından geliştirilen bir konut sitesidir; ilanlarda şehir manzaralı 3+1 daireleri öne çıkar. Doğan Grup'un Yeşilova'daki ikinci projesi olan Doğan Life'ın yakın komşusudur. Geliştiricinin tanıtımına göre 1988'de Ankara'da kurulan firma projeyi kendine yeten bir yerleşim olarak kurgulamış: daireler panoramik cam konseptiyle tasarlanmış 3+1 tiplerdir, alan içinde okul ve spor salonu, cadde katında ise çarşı, marketler, kafe ve restoranlar yer alır. Aynı tanıtım konumun İstanbul yolu ve çevre yolu gibi ana arterlere, hızlı tren istasyonuna, Optimum AVM'ye, devlet hastanesine ve Ankara Batı Adliyesi'ne yakınlığını öne çıkarır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim. TKGM kayıtlarına göre yaklaşık 9.387 m²'lik kat mülkiyetli parselde yapı, 11 katlı A, 15 katlı B ve 4 katlı C bloklardan oluşur (tapu niteliği ofis/işyeri — rezidans tipi).",
+  "aciklama": "Doğan City, Yeşilova'da Şehit Ferhat Koç Caddesi'nde (4016. Cadde No:10) Doğan Grup tarafından geliştirilen bir konut sitesidir; ilanlarda şehir manzaralı 3+1 daireleri öne çıkar. Doğan Grup'un Yeşilova'daki ikinci projesi olan Doğan Life'ın yakın komşusudur. Geliştiricinin tanıtımına göre 1988'de Ankara'da kurulan firma projeyi kendine yeten bir yerleşim olarak kurgulamış: daireler panoramik cam konseptiyle tasarlanmış 3+1 tiplerdir, alan içinde okul ve spor salonu, cadde katında ise çarşı, marketler, kafe ve restoranlar yer alır. Aynı tanıtım konumun İstanbul yolu ve çevre yolu gibi ana arterlere, hızlı tren istasyonuna, Optimum AVM'ye, devlet hastanesine ve Ankara Batı Adliyesi'ne yakınlığını öne çıkarır. TKGM kayıtlarına göre yaklaşık 9.387 m²'lik kat mülkiyetli parselde yapı, 11 katlı A, 15 katlı B ve 4 katlı C bloklardan oluşur (tapu niteliği ofis/işyeri — rezidans tipi); bu tapu tipinin ne anlama geldiğini sözlüğümüzdeki rezidans tapusu maddesinde de anlattık. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve daire tipi belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "47544",
-      "parsel": "2"
+      "parsel": "2",
+      "alanM2": 9387,
+      "nitelik": "11 Katlı A Blok 15 Katlı B Blok 4 Katlı C Bloktan Oluşan Betonarme Ofis İşyeri Ve Arsası"
     }
   ],
   "ozellikler": [
