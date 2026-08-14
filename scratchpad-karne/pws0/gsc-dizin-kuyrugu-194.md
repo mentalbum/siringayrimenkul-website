@@ -25,10 +25,10 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 14.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri ← 14.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari ← 14.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi ← 14.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi ← 14.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri
