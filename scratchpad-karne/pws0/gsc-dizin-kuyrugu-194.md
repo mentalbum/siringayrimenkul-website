@@ -29,8 +29,8 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari ← 14.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi ← 14.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi ← 14.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi ← 14.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi ← 14.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
