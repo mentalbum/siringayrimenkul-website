@@ -14,17 +14,17 @@ Kota her dolduğunda 3 saat sonra yeniden dene; kabulde 10dk damla, dolunca dur.
 Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari ← 12.08 12:10 gönderildi (KOTA AÇILDI)
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/camdali-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oz-gimat-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi ← 14.08 DİZİNDE (kendiliğinden girmiş, istek gerekmedi)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman ← 14.08 03:15 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/camdali-sitesi ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oz-gimat-sitesi ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi ← 14.08 DİZİNDE (kendiliğinden)
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 14.08 DİZİNDE (kendiliğinden)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi
@@ -208,3 +208,5 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 12.08 12:25 — Yurt Prestij kabul edildikten hemen sonra kota TEKRAR doldu (UI'daki mükerrer test de kota yedi — DERS: 'Dizine eklenmesi istendi' onayı görülen sayfada butona bir daha basma). İlke Sitesi'ne istek GİTMEDİ, işaretsiz duruyor. Damla durduruldu; sıradaki deneme 15:25 (ab7b267b). Bugünkü net kazanım: 1 istek.
 
 > 12.08 ~13:00 — ELLE MODA GEÇİLDİ (Özgün kararı): kota otomasyon zinciri tamamen durduruldu, tüm cron'lar silindi. Dizin isteklerini Özgün kendi temposuyla DIZINE-EKLENECEKLER.md üzerinden gönderecek. Claude yeniden otomasyon KURMASIN; Özgün isterse kendisi söyler.
+
+> 14.08 DALGA NOTU — 03:00-03:30 arası kuyruğun tepesinden 10 sayfa tek tek denetlendi: 9'u KENDİLİĞİNDEN DİZİNE GİRMİŞ (İlke, Mercan Smart, Özahikent, Çamdalı, Bahçen, Öz Gimat, Göksu Metrokent, Armina, Yeşil Vadim, Altıntepe), 1'ine istek gönderildi (Neopolitan, kabul). 12.08 sitemap yenileme + IndexNow + açıklama dalgası işlemiş görünüyor. GSC dizin raporu (son güncelleme 7.08) tazelenince kalan ~177 topluca sınıflanacak — tek tek elle denetim verimsiz artık.
