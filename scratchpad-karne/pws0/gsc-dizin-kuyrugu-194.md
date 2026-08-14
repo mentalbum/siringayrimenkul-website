@@ -114,23 +114,23 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/duskent-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ictas-bloklari ← 15.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kackar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-metro-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ra-da-life
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kackar-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-metro-sitesi ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ra-da-life ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
@@ -213,3 +213,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 
 > 14.08 ~17:00 — KOTA DOLDU: bugünkü 7. istek (Lider Yaşam Evleri) kabul edildikten sonra Gözde 2 Sitesi'nde 'Kota Aşıldı' geldi. Gözde 2 DİZİN DIŞI teyitli (Keşfedildi) ama isteği GİTMEDİ, işaretsiz duruyor — kota açılınca ilk sıra onda. Bugünkü net kazanım: 7 istek (Alba Life, Omaks Yaşam, KC Lale, Doğakent, Yıldız Tatil, Cumhuriyet Sitesi... + Şirin 91, Yeşil Göl, Lider Yaşam). Sonraki denemede sıra: gozde-2-sitesi, address-goksu, uyum-90-sitesi.
 > 14.08 23:50 — Özgün 'devam' dedi, Gözde 2 yeniden denetlendi (hâlâ dizin dışı) ve istek denendi: 'Kota Aşıldı' sürüyor. Pencere kayan 24 saat; bugünkü 7 istek sindirilene dek kapalı. Hiçbir şey işaretlenmedi.
+> 15.08 gece toplu denetim — Özgün 'tüm sayfaları kontrol et' dedi; GSC dizin raporu hâlâ 7.08'de donuk olduğundan 169 işaretsiz kayıt tek tek URL denetiminden geçirilmeye başlandı. 99/169 bitti: 95 dizin dışı teyit, 4 kendiliğinden dizinde (Türeli Residence, İçtaş Blokları, Atakent Metro, Ra-Da Life). ~99. denetimde Chrome'a klavye/fare olayı ulaşmaz oldu (muhtemelen ekran kilidi) — kalan 70 sonraki turda. Denetim tekniği: arama kutusuna yaz+Enter, hükmü sayfa metninden oku; DİKKAT: kutu bazen 'son denetimler' önerisini seçip AYNI sayfayı yeniden denetliyor — hüküm okurken sayfadaki URL'yi de doğrula (mavi-koy vakası). DIZINE-EKLENECEKLER.md yeniden üretildi (teyitli 95 + denetlenmemiş 70).
