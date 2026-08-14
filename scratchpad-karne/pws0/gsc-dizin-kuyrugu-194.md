@@ -31,7 +31,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi ← 14.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi ← 14.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi ← 14.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri ← 14.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi
@@ -210,3 +210,5 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 12.08 ~13:00 — ELLE MODA GEÇİLDİ (Özgün kararı): kota otomasyon zinciri tamamen durduruldu, tüm cron'lar silindi. Dizin isteklerini Özgün kendi temposuyla DIZINE-EKLENECEKLER.md üzerinden gönderecek. Claude yeniden otomasyon KURMASIN; Özgün isterse kendisi söyler.
 
 > 14.08 DALGA NOTU — 03:00-03:30 arası kuyruğun tepesinden 10 sayfa tek tek denetlendi: 9'u KENDİLİĞİNDEN DİZİNE GİRMİŞ (İlke, Mercan Smart, Özahikent, Çamdalı, Bahçen, Öz Gimat, Göksu Metrokent, Armina, Yeşil Vadim, Altıntepe), 1'ine istek gönderildi (Neopolitan, kabul). 12.08 sitemap yenileme + IndexNow + açıklama dalgası işlemiş görünüyor. GSC dizin raporu (son güncelleme 7.08) tazelenince kalan ~177 topluca sınıflanacak — tek tek elle denetim verimsiz artık.
+
+> 14.08 ~17:00 — KOTA DOLDU: bugünkü 7. istek (Lider Yaşam Evleri) kabul edildikten sonra Gözde 2 Sitesi'nde 'Kota Aşıldı' geldi. Gözde 2 DİZİN DIŞI teyitli (Keşfedildi) ama isteği GİTMEDİ, işaretsiz duruyor — kota açılınca ilk sıra onda. Bugünkü net kazanım: 7 istek (Alba Life, Omaks Yaşam, KC Lale, Doğakent, Yıldız Tatil, Cumhuriyet Sitesi... + Şirin 91, Yeşil Göl, Lider Yaşam). Sonraki denemede sıra: gozde-2-sitesi, address-goksu, uyum-90-sitesi.
