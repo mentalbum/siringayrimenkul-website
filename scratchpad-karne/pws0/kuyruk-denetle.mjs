@@ -67,7 +67,9 @@ metin = satirlar.map((s) => {
   const v = sonuc[url];
   if (!v || v === "HATA") { if (m[1] === " ") atlanan++; return s; }
   if (v === "MEVCUT") {
-    if (isaret === " " || !s.includes("DİZİNDE")) { dizinde++; return `- [x] ${url} ← ${DAMGA} DİZİNDE (kendiliğinden)`; }
+    if (isaret === " ") { dizinde++; return `- [x] ${url} ← ${DAMGA} DİZİNDE (kendiliğinden)`; }
+    // işaretli satırın notunu (ör. "istek gönderildi") SİLME — sonuna ekle
+    if (!s.includes("DİZİNDE")) { dizinde++; return `${s} → ${DAMGA} DİZİNDE`; }
     return s;
   }
   // YOK: istek gönderilmiş satırın işaretine dokunma (istek defteri bozulmasın)

@@ -13,11 +13,11 @@ seker kök.
 Kota her dolduğunda 3 saat sonra yeniden dene; kabulde 10dk damla, dolunca dur.
 Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 
-- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari ← 12.08 12:10 gönderildi (KOTA AÇILDI)
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari ← 15.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi ← 14.08 DİZİNDE (kendiliğinden girmiş, istek gerekmedi)
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi ← 14.08 DİZİNDE (kendiliğinden)
-- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman ← 14.08 03:15 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman ← 14.08 03:15 istek gönderildi → 15.08 DİZİNDE
 - [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/camdali-sitesi ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oz-gimat-sitesi ← 14.08 DİZİNDE (kendiliğinden)
@@ -25,13 +25,13 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/armina-park-evleri ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi ← 14.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 14.08 DİZİNDE (kendiliğinden)
-- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi ← 14.08 istek gönderildi
-- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri ← 14.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/dogakent-konutlari ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi ← 14.08 istek gönderildi → 15.08 DİZİNDE
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri ← 14.08 istek gönderildi → 15.08 DİZİNDE
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi ← 15.08 dizin dışı teyit
@@ -131,76 +131,76 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ra-da-life ← 15.08 DİZİNDE (kendiliğinden)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/uzuner-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/concept-eryaman
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/may-tower
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cagdas-onur-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/demirkent-on-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/manzara-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yeni-botanik-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/uzuner-konutlari ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/concept-eryaman ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/may-tower ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cagdas-onur-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/demirkent-on-sitesi ← 15.08 DİZİNDE (kendiliğinden)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/manzara-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yeni-botanik-sitesi ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu ← 15.08 dizin dışı teyit
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri ← 15.08 dizin dışı teyit
 
 > KOTA DENEMESİ 12.08 02:26 — mes-polaris-evleri denendi, 'Kota Aşıldı' (kota hâlâ dolu, hiçbir şey işaretlenmedi). Sıradaki deneme 05:26'ya kuruldu (cron f3ce690c).
 > KOTA DENEMESİ 12.08 05:28 — hâlâ 'Kota Aşıldı'. Sıradaki deneme 08:28'e kuruldu (cron b88ce237). Google günlük kotası henüz sıfırlanmadı.
@@ -214,3 +214,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 14.08 ~17:00 — KOTA DOLDU: bugünkü 7. istek (Lider Yaşam Evleri) kabul edildikten sonra Gözde 2 Sitesi'nde 'Kota Aşıldı' geldi. Gözde 2 DİZİN DIŞI teyitli (Keşfedildi) ama isteği GİTMEDİ, işaretsiz duruyor — kota açılınca ilk sıra onda. Bugünkü net kazanım: 7 istek (Alba Life, Omaks Yaşam, KC Lale, Doğakent, Yıldız Tatil, Cumhuriyet Sitesi... + Şirin 91, Yeşil Göl, Lider Yaşam). Sonraki denemede sıra: gozde-2-sitesi, address-goksu, uyum-90-sitesi.
 > 14.08 23:50 — Özgün 'devam' dedi, Gözde 2 yeniden denetlendi (hâlâ dizin dışı) ve istek denendi: 'Kota Aşıldı' sürüyor. Pencere kayan 24 saat; bugünkü 7 istek sindirilene dek kapalı. Hiçbir şey işaretlenmedi.
 > 15.08 gece toplu denetim — Özgün 'tüm sayfaları kontrol et' dedi; GSC dizin raporu hâlâ 7.08'de donuk olduğundan 169 işaretsiz kayıt tek tek URL denetiminden geçirilmeye başlandı. 99/169 bitti: 95 dizin dışı teyit, 4 kendiliğinden dizinde (Türeli Residence, İçtaş Blokları, Atakent Metro, Ra-Da Life). ~99. denetimde Chrome'a klavye/fare olayı ulaşmaz oldu (muhtemelen ekran kilidi) — kalan 70 sonraki turda. Denetim tekniği: arama kutusuna yaz+Enter, hükmü sayfa metninden oku; DİKKAT: kutu bazen 'son denetimler' önerisini seçip AYNI sayfayı yeniden denetliyor — hüküm okurken sayfadaki URL'yi de doğrula (mavi-koy vakası). DIZINE-EKLENECEKLER.md yeniden üretildi (teyitli 95 + denetlenmemiş 70).
+> 15.08 09:03 — API KANALI AÇILDI (servis hesabı + kota istisnası, Özgün onayıyla). 188 sayfa API'den denetlendi: 28 dizinde / 160 dizin dışı teyit. 14.08'de istek gönderilen 8 sayfanın 8'i de DİZİNE GİRDİ (%100, <24 saat). Kuyruğun geri kalanına artık `node kuyruk-denetle.mjs` yeter; istekler UI'den sürecek.
