@@ -186,17 +186,24 @@ export default function HomePage() {
             <h1 className="animate-fade-up mt-3 text-4xl leading-tight text-white [animation-delay:0.07s] sm:text-5xl">
               Eryaman Emlakçı — Şirin Gayrimenkul
             </h1>
-            {/* Konumlandırma cümlesi (ChatGPT istişaresi, 2026-08-07): "en iyi
-                emlakçı" iddiası herkesin ağzında ve ispatı yok; "konut hafızası"
-                iddiası ise kanıtlı — 720 sayfanın tapu ve blok verisi bu sitede.
-                Rakip başlıklarının hiçbirinde benzer bir iddia yok. */}
+            {/* 15.08 — Özgün onayıyla yeniden yazıldı. Eski metin ("720'den fazla
+                sitenin tapu ve blok bilgisini tutuyoruz", "ilçenin konut hafızasını
+                tutan ofis biziz", "blok blok tanıyan", "fiyatı birlikte belirleyin")
+                aynı gün konan DÖRT kuralı birden çiğniyordu:
+                  1) ispatı istenebilecek üstünlük iddiası yazılmaz,
+                  2) "700'den fazla site" övünmesi kullanılmaz,
+                  3) "blok blok" ifadesi ev sahibine bir şey anlatmıyor,
+                  4) ev sahibi fiyatı zaten tahmin ediyor; aradığı şey süreci
+                     güvenle yürütecek bir ofis (Özgün'ün saha tespiti).
+                Ayrıca iki görünür hata taşıyordu: "14mahallede" bitişikti ve
+                sabit "720" ile hemen altındaki {toplamSite} sayacı çelişiyordu —
+                yeni metinde sayı hiç geçmiyor, çelişme kaynağı ortadan kalktı.
+                Metin site sayfalarının giriş cümlesiyle aynı dili konuşuyor. */}
             <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
-              {/* "emlakçılar" çoğulu bilinçli: "eryaman emlakçılar (listesi)"
-                  sorgu ailesi GSC'de var, kelime sitede geçmiyordu (2026-08-07). */}
-              {mahalleSayisi} mahallede 720&apos;den fazla sitenin tapu ve blok bilgisini
-              tutuyoruz — Eryaman&apos;daki emlakçılar arasında ilçenin konut hafızasını
-              tutan ofis biziz. Satmak veya kiraya vermek istediğiniz eviniz mi var?
-              Fiyatı, sitenizi blok blok tanıyan yerel emlakçınızla birlikte belirleyin.
+              Eryaman&apos;da evinizi kiraya vermek ya da satmak istiyorsanız, güvenle
+              emanet edebileceğiniz bir emlakçı arıyorsunuz demektir. Nerede olursanız
+              olun, karşınıza doğru kiracıyı ya da alıcıyı çıkarır, süreci baştan sona
+              biz yürütürüz.
             </p>
 
             <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">
