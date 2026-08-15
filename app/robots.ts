@@ -35,6 +35,18 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: `${siteConfig.url}/sitemap.xml`,
+    /* GEÇİCİ İKİNCİ SİTE HARİTASI (2026-08-16): sitemap-eski-adresler.xml.
+     * 26.07 mahalle slug taşımasından kalan 242 eski adres 308 ile yeni
+     * adreslerine yönleniyor, ama Google eski adresi YENİDEN TARAMADAN
+     * yönlendirmeyi göremiyor — ölçümde (16.08, GSC API) 967 sorguda kendi
+     * sayfalarımız yarışıyor ve bu yarışın %26'sı (7.527 gösterim) eski
+     * adreslerde sıkışmış. Google'ın adres değişikliği rehberi bu durumda
+     * eski adresleri geçici bir site haritasıyla bildirmeyi öneriyor.
+     * KALDIRMA KOŞULU: adresler GSC'de "Yönlendirmeli sayfa" kovasına
+     * geçince ya da en geç 2026-10-15'te bu satır ve dosya SİLİNECEK. */
+    sitemap: [
+      `${siteConfig.url}/sitemap.xml`,
+      `${siteConfig.url}/sitemap-eski-adresler.xml`,
+    ],
   };
 }
