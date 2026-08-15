@@ -110,7 +110,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        14'ünde de ticari mesaj Google'ın kesme sınırının ötesindeydi
     //        (67-95 karakter). Yeni biçim 55-68, hepsi görünür.
     // 09.08: site kartları tam açıklama yerine 220 karakterlik özet basıyor.
-    mahalle: new Date("2026-08-11"),
+    // 15.08: Eryaman kolunda ana sayfaya "Eryaman emlakçı" çıpalı bağ eklendi.
+    mahalle: new Date("2026-08-15"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
@@ -120,7 +121,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        cümlesi girdi; mükerrer ada rozetleri tekillendi (ada sayısı düzeldi).
     // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
-    etap: new Date("2026-08-11"),
+    // 15.08: ana sayfaya "Eryaman emlakçı" çıpalı bağ eklendi.
+    etap: new Date("2026-08-15"),
     // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
     //        değişti (5996267, 288167c).
     // 09.08: başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")

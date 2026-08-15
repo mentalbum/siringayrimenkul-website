@@ -241,6 +241,17 @@ export default async function EtapPage({ params }: Props) {
         items={getEtapFaq(etap, mahalle)}
       />
 
+      {/* Ana sayfaya tek exact çıpa (ChatGPT istişaresi + Özgün onayı, 15.08):
+          yalnız 5 etap + 11 Eryaman mahalle sayfasından — dozu artırma. */}
+      <p className="mt-8 max-w-3xl text-sm leading-relaxed text-muted">
+        Etap fark etmeksizin tüm Eryaman&apos;da aynı ilkelerle çalışıyoruz;
+        ofisimizi ve çalışma biçimimizi{" "}
+        <Link href="/" className="font-semibold text-gold-dark hover:underline">
+          Eryaman emlakçı
+        </Link>{" "}
+        sayfamızdan tanıyabilirsiniz.
+      </p>
+
       <CtaBanner
         className="mt-14"
         baslik={`Eryaman ${etap.no}. Etap'ta Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}

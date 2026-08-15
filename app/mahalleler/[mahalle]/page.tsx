@@ -450,6 +450,19 @@ export default async function MahallePage({ params }: Props) {
             </p>
           </div>
         </div>
+        {/* Ana sayfaya tek exact çıpa (ChatGPT istişaresi + Özgün onayı, 15.08):
+            yalnız 11 Eryaman mahallesi + 5 etap sayfasından; site sayfalarından
+            ve Yenimahalle kolundan BİLEREK verilmez (aşırısı spam sinyali). */}
+        {eryamandaMi(mahalle) && (
+          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted">
+            Mahalle fark etmeksizin tüm Eryaman&apos;da aynı ilkelerle çalışıyoruz;
+            ofisimizi ve çalışma biçimimizi{" "}
+            <Link href="/" className="font-semibold text-gold-dark hover:underline">
+              Eryaman emlakçı
+            </Link>{" "}
+            sayfamızdan tanıyabilirsiniz.
+          </p>
+        )}
         <div className="mt-5 flex flex-wrap gap-3">
           <TrackedCtaLink
             href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
