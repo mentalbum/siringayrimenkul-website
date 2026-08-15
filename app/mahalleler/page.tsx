@@ -10,12 +10,11 @@ import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "Eryaman Mahalleleri — Etimesgut Emlak Rehberi",
-  // İlk cümle "eryaman nereye/hangi ilçeye bağlı" sorgu ailesinin (28g ~670
-  // gösterim, 0 tık) düz cevabı — sıfır-tık SERP olsa da snippet'te doğru
-  // cevabı biz verelim (2026-08-12 analizi; yeni sayfa açılmaz kararı gereği
-  // cevap bu mevcut sayfanın description'ında).
+  // 15.08 Özgün kararı: "eryaman nereye bağlı" bilgi ailesinde GÖRÜNMEK
+  // İSTEMİYORUZ (ev sahibi getirmiyor) — 12.08'de eklenen cevap cümlesi
+  // çıkarıldı, description ev sahibine döndü. Bu aileye yeniden oynama.
   description:
-    "Eryaman, Ankara'nın Etimesgut ilçesine bağlıdır. 11 mahallesini, site/rezidanslarını ve emlak piyasasını tek sayfada keşfedin; Yenimahalle'de Ata, Susuz ve Cumhuriyet de rehberde.",
+    "Eryaman'ın 11 mahallesini, site ve rezidanslarını tek sayfada keşfedin. Evini satacak veya kiraya verecek ev sahiplerine mahalle mahalle rehber; Yenimahalle'de Ata, Susuz ve Cumhuriyet de içinde.",
   alternates: { canonical: "/mahalleler" },
 };
 
@@ -53,14 +52,13 @@ export default function MahallelerPage() {
           Eryaman Bölgesi
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
-        {/* "Eryaman nereye/hangi ilçeye bağlı" ailesi 28 günde 1.300+ gösterim
-            alıyor ama cevap cümle ortasına gömülüydü (15.08, sayfa-konum karnesi).
-            Öne çıkan sonuç şansı için ilk cümle sorunun birebir cevabı olmalı. */}
+        {/* 15.08 Özgün kararı: "nereye bağlı" bilgi sorgusuna OYNAMIYORUZ —
+            aynı gün eklenen soru-cevap kalıbı geri alındı; ilçe bilgisi ticari
+            bağlam için cümle içinde kalır, öne çıkan sonuç hedeflenmez. */}
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman, Ankara&apos;nın <strong>Etimesgut ilçesine</strong> bağlıdır; planlı
-          etap yapılaşmasıyla tanınan, metro bağlantılı semt <strong>11 mahalleden</strong>{" "}
-          oluşur. Bu 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den fazla site
-          ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
+          Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
+          metrosuna bağlı bir semt. 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den
+          fazla site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
