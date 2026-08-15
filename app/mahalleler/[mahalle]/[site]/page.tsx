@@ -289,6 +289,25 @@ export default async function SitePage({ params }: Props) {
     `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, emlakçınız olarak ilk görüşmeden tapuya kadar yanınızdayız.`,
   ][varyant % 4];
 
+  // 15.08 pazarlama-önce deneyi (Özgün kararı, ChatGPT istişaresi): 8 sayfalık
+  // kohortta giriş sırası ters çevrilir. 25.08 ölçümüne dek liste SABİT.
+  const PAZARLAMA_ONCE_KOHORT = new Set([
+    "sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+    "ata-mahallesi/efsane-evleri",
+    "sehit-osman-avci-mahallesi/mia-concept-konutlari",
+    "tunahan-mahallesi/mavicam-sitesi",
+    "sehit-osman-avci-mahallesi/koz-modern",
+    "cumhuriyet-mahallesi/hittown",
+    "sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+    "tunahan-mahallesi/age-sitesi",
+  ]);
+  const pazarlamaOnce = PAZARLAMA_ONCE_KOHORT.has(`${mahalle.slug}/${site.slug}`);
+  const kunyeMetni =
+    kunyeCumlesi(site, kunye, mahalle.isim, eryamanda) ??
+    `${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
+      tipi ? `${tipi} ` : ""
+    }bir yerleşimdir.`;
+
   // İç bağ ölçümü (2026-07-29): 720 site sayfasından rehberlere 0 link vardı.
   // Havuzdan slug'a göre DETERMİNİSTİK seçim — her build aynı sonucu üretir.
   // 2026-08-07: genel konulu rehberler siteden kaldırıldı (blog sadece Eryaman);
@@ -529,15 +548,25 @@ export default async function SitePage({ params }: Props) {
               müşteriye telefonda verilecek cevap gibi — blok/kat/tapu önde.
               Uzmanlık kanıtı ev sahibine güven verir; yapay zekâ asistanları da
               "X sitesi nasıl?" cevabında ilk cümleyi alıntılar. Künye metinden
-              çıkarılamadıysa eski genel kalıp aynen kalır. */}
-          <p className="text-base font-medium text-navy">
-            {`${
-              kunyeCumlesi(site, kunye, mahalle.isim, eryamanda) ??
-              `${site.isim}, ${eryamanda ? "Eryaman'da " : ""}${mahalle.isim} sınırları içinde yer alan ${
-                tipi ? `${tipi} ` : ""
-              }bir yerleşimdir.`
-            } ${girisVaadi}`}
-          </p>
+              çıkarılamadıysa eski genel kalıp aynen kalır.
+              15.08 DENEYİ (Özgün kararı): PAZARLAMA_ONCE_KOHORT'taki 8 sayfada
+              sıra ters — pazarlama cümlesi başta, künye ikinci. 25.08 ölçümü
+              olumluysa genele yayılacak; o güne dek listeye ekleme/çıkarma yapma. */}
+          {pazarlamaOnce ? (
+            <p className="text-base font-medium text-navy">
+              {`${bulunmaHali(site.isim)} evinizi `}
+              <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
+                satmak
+              </Link>
+              {" veya "}
+              <Link href="/eryamanda-ev-kiraya-vermek" className="font-semibold text-gold-dark hover:underline">
+                kiraya vermek
+              </Link>
+              {` istiyorsanız, siteyi ve bölgeyi blok blok tanıyan yerel ofis olarak süreci sizin adınıza yürütüyoruz; aynı gün dönüş alırsınız. ${kunyeMetni}`}
+            </p>
+          ) : (
+            <p className="text-base font-medium text-navy">{`${kunyeMetni} ${girisVaadi}`}</p>
+          )}
           {/* Sayfadaki İLK tıklanabilir öğe ev sahibinin kapısı olsun. Daha önce
               burada sahibinden.com kutusu vardı ve ziyaretçiyi 0,4. ekranda
               siteden dışarı çıkarıyordu; ev sahibi CTA'sı ise 3. ekrandaydı.
