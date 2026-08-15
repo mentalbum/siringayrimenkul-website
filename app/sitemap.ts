@@ -96,6 +96,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
    *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
   const SABLON = {
+    // 15.08(b): description ev sahibi diline geçti (olgu cümlesi çıktı; eski
+    //        kalıbın %86'sı 155 karakterlik kesme sınırını aşıyordu).
     // 15.08: harita sütunu sabit boy + yapışkan oldu (fotoğraflı sayfalarda
     //        sol sütunla birlikte 1000px+ uzuyordu).
     // 12.08(b): benzer adlı yerleşim çapraz bağı (lib/benzer-adlar.json, 23 sayfa).
