@@ -9,7 +9,10 @@ const SERT_UNSUZLER = "fstkçşhp";
 // Site adlarında iyelikli bitişler: "Sitesi", "Konutları", "Evleri",
 // "Blokları", "Villaları", "Konakları" vb. → bulunma hâlinde kaynaştırma
 // n'si alır (Sitesi'nde), yalın ünlüyle bitenler almaz (Genova'da).
-const IYELIK_SONU = /(s[ıiuü]|lar[ıi]|ler[ıi])$/;
+// "ğ" + dar ünlü, iyelik ekinin yumuşattığı k'nin kanıtıdır: çiçek → Çiçeği →
+// "Çiçeği'nde" (2026-08-15 denetimi; önce "Çiçeği'de" üretiyordu). "Kooperatifi"
+// yumuşama izi bırakmadığı için adıyla listelendi.
+const IYELIK_SONU = /(s[ıiuü]|lar[ıi]|ler[ıi]|ğ[ıiuü]|kooperatifi)$/;
 // "su" ile biten BİRLEŞİK coğrafi adlar iyelikli değildir: "Göksu'da" doğru,
 // "Göksu'nda" değil (kural denetimi, 2026-07-31). Gerekirse listeye ekle.
 const IYELIK_DEGIL = /^(göksu|karasu|aksu|incesu)$/;
@@ -32,7 +35,49 @@ const OKUNUS_ISTISNALARI: Array<[RegExp, { unlu: string; ses: string }]> = [
   [/business$/i, { unlu: "i", ses: "s" }],
 ];
 
+// Sonu rakamla biten adlar okunuşa göre ek alır: "Konutları 3" → "üç" → 3'te.
+// Harf süzgeci rakamları atıp bir önceki kelimeye bakıyordu ve "3'da" üretiyordu
+// (2026-08-15 denetimi). Ek, sayının SÖYLENİŞİNİN son sesine bağlıdır; birler
+// basamağı 0 ise onlar/yüzler basamağı okunur.
+const RAKAM_OKUNUSU: Record<string, { unlu: string; ses: string }> = {
+  "0": { unlu: "ı", ses: "r" }, // sıfır
+  "1": { unlu: "i", ses: "r" }, // bir
+  "2": { unlu: "i", ses: "i" }, // iki
+  "3": { unlu: "ü", ses: "ç" }, // üç
+  "4": { unlu: "ö", ses: "t" }, // dört
+  "5": { unlu: "e", ses: "ş" }, // beş
+  "6": { unlu: "ı", ses: "ı" }, // altı
+  "7": { unlu: "i", ses: "i" }, // yedi
+  "8": { unlu: "i", ses: "z" }, // sekiz
+  "9": { unlu: "u", ses: "z" }, // dokuz
+};
+const YUVARLAK_OKUNUSU: Record<string, { unlu: string; ses: string }> = {
+  "10": { unlu: "o", ses: "n" }, // on
+  "20": { unlu: "i", ses: "i" }, // yirmi
+  "30": { unlu: "u", ses: "z" }, // otuz
+  "40": { unlu: "ı", ses: "k" }, // kırk
+  "50": { unlu: "i", ses: "i" }, // elli
+  "60": { unlu: "ı", ses: "ş" }, // altmış
+  "70": { unlu: "i", ses: "ş" }, // yetmiş
+  "80": { unlu: "e", ses: "n" }, // seksen
+  "90": { unlu: "a", ses: "n" }, // doksan
+  "00": { unlu: "ü", ses: "z" }, // yüz (100, 200… sonu iki sıfır)
+  "000": { unlu: "i", ses: "n" }, // bin
+};
+
+function rakamOkunusu(isim: string): { unlu: string; ses: string } | undefined {
+  const rakamlar = isim.trim().match(/(\d+)$/)?.[1];
+  if (!rakamlar) return undefined;
+  if (rakamlar.endsWith("000")) return YUVARLAK_OKUNUSU["000"];
+  if (rakamlar.endsWith("00")) return YUVARLAK_OKUNUSU["00"];
+  const birler = rakamlar.slice(-1);
+  if (birler !== "0") return RAKAM_OKUNUSU[birler];
+  return YUVARLAK_OKUNUSU[rakamlar.slice(-2)] ?? RAKAM_OKUNUSU["0"];
+}
+
 function okunus(isim: string): { unlu: string; ses: string } | undefined {
+  const rakam = rakamOkunusu(isim);
+  if (rakam) return rakam;
   const kelime = sonKelime(isim);
   for (const [desen, ses] of OKUNUS_ISTISNALARI) {
     if (desen.test(kelime)) return ses;
