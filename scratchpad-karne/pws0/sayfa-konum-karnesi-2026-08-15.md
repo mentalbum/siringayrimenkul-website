@@ -1,8 +1,9 @@
-# Sayfa-konum karnesi — 2026-08-15 (28g, göst≥80, GSC API)
+# Sayfa-konum karnesi — 2026-08-15 (28g, göst≥80, GSC API) — r2
 
-Özgün talebi: sayfa sayfa konum; önce ortalaması 5'in altındakiler (1'e itilecekler), sonra 5-10 bandı.
+r2 düzeltmesi: 410'lanmış (bilerek silinmiş) blog sayfaları listeden çıkarıldı — onlar fırsat DEĞİL, sönen yankı.
+Özgün kuralı (15.08): bilgi trafiği (nereye bağlı / vekalet vb.) İSTENMİYOR; ölçüt müşteri değeri.
 
-## A) Konumu 5'in altında — 1. sıraya itme adayları
+## A) Konumu 5'in altında — 1'e itme adayları
 
 | Göst | Tık | Poz | Sayfa |
 |---|---|---|---|
@@ -14,19 +15,15 @@
 | Göst | Tık | Poz | Sayfa |
 |---|---|---|---|
 | 1358 | 2 | 9.3 | /mahalleler |
-| 928 | 11 | 10.0 | /blog/kat-irtifakindan-kat-mulkiyetine-gecis |
 | 875 | 6 | 8.4 | /mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari |
-| 673 | 13 | 6.4 | /blog/emlakciya-vekalet-verme-rehberi |
 | 667 | 6 | 8.9 | /mahalleler/yesilova-mahallesi/meva-sehir |
 | 626 | 4 | 8.7 | /mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence |
 | 524 | 9 | 8.1 | /mahalleler/sehit-osman-avci-mahallesi/koz-modern |
 | 524 | 4 | 8.1 | /mahalleler/cumhuriyet-mahallesi/hittown |
-| 518 | 18 | 6.7 | /blog/emlakci-yetki-sozlesmesi-rehberi |
 | 518 | 8 | 8.3 | /mahalleler/altay-mahallesi/firat-life-style-botanik |
 | 482 | 36 | 5.8 | /mahalleler/ata-mahallesi/endora-plus |
 | 477 | 16 | 7.8 | /mahalleler/tunahan-mahallesi/mavicam-sitesi |
 | 455 | 5 | 7.9 | /mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence |
-| 437 | 5 | 8.2 | /blog/hisseli-ipotekli-ev-satisi |
 | 430 | 11 | 7.0 | /blog/eryamanda-hangi-mahalle |
 | 425 | 4 | 9.0 | /mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi |
 | 384 | 13 | 7.3 | /mahalleler/tunahan-mahallesi/age-sitesi |
@@ -40,19 +37,21 @@
 | 315 | 4 | 7.3 | /mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi |
 | 313 | 2 | 8.5 | /mahalleler/goksu-mahallesi/buse-konutlari |
 | 311 | 8 | 7.1 | /mahalleler/ata-mahallesi/selvi-evleri-sitesi |
-| 309 | 9 | 6.3 | /blog/emlakcisiz-ev-satilir-mi |
 | 305 | 21 | 7.2 | /mahalleler/ata-mahallesi/panorama-garden |
 | 291 | 6 | 9.1 | /mahalleler/seyh-samil |
+| 286 | 13 | 7.9 | /mahalleler/ata-mahallesi/armoni-life |
+| 284 | 5 | 9.0 | /mahalleler/ata-mahallesi/zirve-park-konutlari |
+| 280 | 1 | 7.9 | /mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari |
+| 277 | 3 | 8.4 | /mahalleler/tunahan-mahallesi/canberk-sitesi |
+| 275 | 5 | 7.6 | /mahalleler/ata-mahallesi/vizyon-baspinar-sitesi |
 
-## Eski adresler (301 sindirimi bekleniyor — iş YAPILMAZ, kendiliğinden düzelir)
+## Sönen yankılar (410'lu, iş YAPILMAZ)
 
-- /mahalleler/cumhuriyet/mes-polaris-evleri (göst 523, poz 6.0)
-- /mahalleler/ata/selvi-evleri-sitesi (göst 518, poz 7.0)
-- /mahalleler/goksu/goksu-metrokent-sitesi (göst 409, poz 6.8)
-- /mahalleler/ata/prestij-park-konutlari (göst 318, poz 7.0)
-- /mahalleler/goksu/kasmir-gol-evleri (göst 317, poz 10.5)
-- /mahalleler/cumhuriyet/natura-goksu (göst 297, poz 8.3)
-- /mahalleler/cumhuriyet/gulbaran-residence (göst 291, poz 8.2)
-- /mahalleler/ata/siyah-beyaz-evler (göst 284, poz 7.0)
-- /mahalleler/eryaman/adalar/46535-2 (göst 224, poz 10.2)
-- /mahalleler/ata/endora-plus (göst 223, poz 8.2)
+- /blog/emlakci-yetki-belgesi-sorgulama (göst 1689)
+- /blog/kat-irtifakindan-kat-mulkiyetine-gecis (göst 928)
+- /blog/emlakciya-vekalet-verme-rehberi (göst 673)
+- /blog/emlakci-yetki-sozlesmesi-rehberi (göst 518)
+- /blog/hisseli-ipotekli-ev-satisi (göst 437)
+- /blog/emlakcisiz-ev-satilir-mi (göst 309)
+- /blog/evimi-satmak-mi-kiraya-vermek-mi (göst 190)
+- /blog/kiraci-evi-gostermiyor-ne-yapmaliyim (göst 171)
