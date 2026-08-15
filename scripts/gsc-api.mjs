@@ -1,0 +1,147 @@
+#!/usr/bin/env node
+/**
+ * GSC API istemcisi (sıfır bağımlılık) — servis hesabı anahtarıyla çalışır.
+ *
+ * Kurulum (bir kere): .claude/skills/gsc-dizin/references/api-kurulum.md
+ * Anahtar yolu: ~/.config/gsc-servis-anahtari.json (veya GSC_KEY ortam değişkeni)
+ *
+ * Kullanım:
+ *   node scripts/gsc-api.mjs denetle <url> [url...]      # URL denetimi (günde 2000)
+ *   node scripts/gsc-api.mjs denetle-dosya <dosya> [çıktı.tsv]
+ *   node scripts/gsc-api.mjs sorgular [gün=28]           # performans: en çok gösterim alan sorgular
+ *   node scripts/gsc-api.mjs sitemap-gonder              # sitemap.xml'i yeniden gönder
+ *
+ * NOT: Dizine ekleme İSTEĞİ bu API'den gönderilemez (Indexing API sadece iş
+ * ilanları içindir, başka kullanım kural ihlali). İstekler her zaman GSC UI'den.
+ */
+import { createSign } from "node:crypto";
+import { readFileSync, writeFileSync, existsSync } from "node:fs";
+import { homedir } from "node:os";
+import { join } from "node:path";
+
+const MULK = "https://www.siringayrimenkul.com/";
+const ANAHTAR_YOLU = process.env.GSC_KEY || join(homedir(), ".config", "gsc-servis-anahtari.json");
+
+function anahtar() {
+  if (!existsSync(ANAHTAR_YOLU)) {
+    console.error(
+      `Servis hesabı anahtarı yok: ${ANAHTAR_YOLU}\n` +
+      `Kurulum adımları: .claude/skills/gsc-dizin/references/api-kurulum.md\n` +
+      `(Google Cloud'da servis hesabı açıp JSON anahtarı bu yola koymak ve\n` +
+      ` hesabın e-postasını GSC mülküne kullanıcı olarak eklemek gerekiyor.)`
+    );
+    process.exit(2);
+  }
+  return JSON.parse(readFileSync(ANAHTAR_YOLU, "utf8"));
+}
+
+const b64u = (s) => Buffer.from(s).toString("base64url");
+
+async function erisimJetonu() {
+  const k = anahtar();
+  const simdi = Math.floor(Date.now() / 1000);
+  const govde =
+    b64u(JSON.stringify({ alg: "RS256", typ: "JWT" })) + "." +
+    b64u(JSON.stringify({
+      iss: k.client_email,
+      scope: "https://www.googleapis.com/auth/webmasters",
+      aud: "https://oauth2.googleapis.com/token",
+      iat: simdi,
+      exp: simdi + 3600,
+    }));
+  const imza = createSign("RSA-SHA256").update(govde).sign(k.private_key, "base64url");
+  const r = await fetch("https://oauth2.googleapis.com/token", {
+    method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      grant_type: "urn:ietf:params:oauth:grant-type:jwt-bearer",
+      assertion: `${govde}.${imza}`,
+    }),
+  });
+  const j = await r.json();
+  if (!j.access_token) {
+    console.error("Jeton alınamadı:", JSON.stringify(j));
+    console.error("Sık sebep: servis hesabı e-postası GSC mülküne kullanıcı olarak eklenmemiş (kurulum adım 6).");
+    process.exit(3);
+  }
+  return j.access_token;
+}
+
+async function api(jeton, url, govde, metod = "POST") {
+  const r = await fetch(url, {
+    method: metod,
+    headers: { authorization: `Bearer ${jeton}`, "content-type": "application/json" },
+    body: govde ? JSON.stringify(govde) : undefined,
+  });
+  if (r.status === 204) return {};
+  const j = await r.json().catch(() => ({}));
+  if (!r.ok) throw new Error(`${r.status}: ${JSON.stringify(j).slice(0, 300)}`);
+  return j;
+}
+
+async function denetle(jeton, url) {
+  const j = await api(jeton, "https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {
+    inspectionUrl: url,
+    siteUrl: MULK,
+  });
+  const s = j.inspectionResult?.indexStatusResult || {};
+  return {
+    url,
+    hukum: s.verdict || "?",              // PASS = dizinde
+    kapsam: s.coverageState || "?",       // ör. "Keşfedildi - şu anda dizine eklenmiş değil"
+    sonTarama: s.lastCrawlTime || "-",
+    canonical: s.googleCanonical || "-",
+  };
+}
+
+const [, , komut, ...arg] = process.argv;
+
+if (komut === "denetle") {
+  if (!arg.length) { console.error("URL ver."); process.exit(1); }
+  const jeton = await erisimJetonu();
+  for (const u of arg) {
+    const s = await denetle(jeton, u);
+    console.log(`${s.hukum === "PASS" ? "DİZİNDE" : "DIŞARIDA"}\t${s.kapsam}\t${s.url}\tson tarama: ${s.sonTarama}`);
+  }
+} else if (komut === "denetle-dosya") {
+  const [dosya, cikti] = arg;
+  const urller = readFileSync(dosya, "utf8").split("\n").map(x => x.trim()).filter(x => x.startsWith("http"));
+  const jeton = await erisimJetonu();
+  const satirlar = [];
+  for (let i = 0; i < urller.length; i++) {
+    try {
+      const s = await denetle(jeton, urller[i]);
+      satirlar.push(`${s.url}\t${s.hukum === "PASS" ? "MEVCUT" : "YOK"}\t${s.kapsam}`);
+      console.error(`${i + 1}/${urller.length} ${s.hukum} ${s.url}`);
+    } catch (e) {
+      satirlar.push(`${urller[i]}\tHATA\t${e.message}`);
+      console.error(`${i + 1}/${urller.length} HATA ${e.message}`);
+      if (String(e).includes("429")) { console.error("Kota/hız sınırı — duruldu."); break; }
+    }
+    await new Promise(r => setTimeout(r, 300)); // dakikalık hız sınırına takılma
+  }
+  const hedef = cikti || "denetim-api.tsv";
+  writeFileSync(hedef, satirlar.join("\n") + "\n");
+  console.log(`yazıldı: ${hedef} (${satirlar.length} satır)`);
+} else if (komut === "sorgular") {
+  const gun = parseInt(arg[0] || "28", 10);
+  const bitis = new Date(); bitis.setDate(bitis.getDate() - 2); // GSC ~2 gün geriden gelir
+  const baslangic = new Date(bitis); baslangic.setDate(baslangic.getDate() - gun);
+  const f = (d) => d.toISOString().slice(0, 10);
+  const jeton = await erisimJetonu();
+  const j = await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/searchAnalytics/query`, {
+    startDate: f(baslangic), endDate: f(bitis), dimensions: ["query"], rowLimit: 1000,
+  });
+  for (const r of j.rows || []) {
+    console.log(`${r.impressions}\t${r.clicks}\t${r.position.toFixed(1)}\t${r.keys[0]}`);
+  }
+  console.error(`(${(j.rows || []).length} sorgu; sütunlar: gösterim, tık, pozisyon, sorgu)`);
+} else if (komut === "sitemap-gonder") {
+  const jeton = await erisimJetonu();
+  const sm = `${MULK}sitemap.xml`;
+  await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/sitemaps/${encodeURIComponent(sm)}`, null, "PUT");
+  console.log(`gönderildi: ${sm}`);
+} else {
+  console.error("Komutlar: denetle | denetle-dosya | sorgular | sitemap-gonder (üstteki yorum bloğuna bak)");
+  process.exit(1);
+}
