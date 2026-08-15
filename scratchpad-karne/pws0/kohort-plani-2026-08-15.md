@@ -26,3 +26,12 @@
 
 ## 5 Eylül title aday listesi (ChatGPT; O GÜN sorgu→sayfa çiftine göre tek tek tasarlanacak, toplu kalıp YOK)
 Relax Göksu, Efsane, Mia Concept, Maviçam, Koz Modern, Hittown, Alpak, AGE, Bordo Platinum, Meva Şehir
+
+## UYGULAMA DURUMU (15.08 akşam, PR #23 birleşti)
+- ✅ Pazarlama-önce giriş 8 sayfada CANLI (Özgün kararı: "başlangıçlar bu tarzda olsun");
+  şablonda PAZARLAMA_ONCE_KOHORT seti — 25.08 ölçümüne dek liste SABİT.
+- ✅ Girişe bağlamsal köprüler: satmak→/eryamanda-ev-satmak, kiraya vermek→/eryamanda-ev-kiraya-vermek.
+- ✅ Varyantlar: Göksu Relax Konutları, Kozmodern, Mia Konsept, AGE Blokları (Alpak TKGM bekliyor).
+- ✅ Description'lara DOKUNULMADI (12.08 deneyi sürüyor); Google başlığı zaten "X Emlakçı | ..." (07-08.08'den beri).
+- ⏳ AÇIK KARAR (Özgün'de): sayfa içi H1'e "Emlakçı" eki — şimdi 8 sayfada mı, 5 Eylül'de mi, hiç mi.
+- Sıradaki: kota açılınca kohort sitelerinin yarışan ada sayfalarına yeniden tarama isteği (Relax 46622/1 önce).
