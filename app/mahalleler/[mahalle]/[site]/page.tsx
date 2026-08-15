@@ -641,9 +641,12 @@ export default async function SitePage({ params }: Props) {
           )}
         </div>
         {site.koordinat && (
-          <div className="flex flex-col gap-2">
+          // self-start + sticky: sütun, soldaki içerik uzadıkça haritayı GERMEZ
+          // (fotoğraflı sayfalarda harita 1000px+ oluyordu — 15.08 Özgün bildirimi);
+          // sabit boy + yapışkan kutu, kaydırırken haritayı görünürde tutar.
+          <div className="flex flex-col gap-2 lg:sticky lg:top-24 lg:self-start">
             <ResourceHints />
-            <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-full">
+            <div className="h-[320px] overflow-hidden rounded-2xl border border-border lg:h-[520px]">
               <MahalleMapLoader
                 center={site.koordinat}
                 siteler={[{ site, boundary: sinir }]}
