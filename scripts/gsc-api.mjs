@@ -9,7 +9,7 @@
  *   node scripts/gsc-api.mjs denetle <url> [url...]      # URL denetimi (günde 2000)
  *   node scripts/gsc-api.mjs denetle-dosya <dosya> [çıktı.tsv]
  *   node scripts/gsc-api.mjs sorgular [gün=28]           # performans: en çok gösterim alan sorgular
- *   node scripts/gsc-api.mjs sitemap-gonder              # sitemap.xml'i yeniden gönder
+ *   node scripts/gsc-api.mjs sitemap-gonder [yol...]     # sitemap yeniden gönder (varsayılan sitemap.xml)
  *
  * NOT: Dizine ekleme İSTEĞİ bu API'den gönderilemez (Indexing API sadece iş
  * ilanları içindir, başka kullanım kural ihlali). İstekler her zaman GSC UI'den.
@@ -137,10 +137,14 @@ if (komut === "denetle") {
   }
   console.error(`(${(j.rows || []).length} sorgu; sütunlar: gösterim, tık, pozisyon, sorgu)`);
 } else if (komut === "sitemap-gonder") {
+  // Argüman verilmezse ana sitemap; verilirse o yol (ör. sitemap-eski-adresler.xml).
   const jeton = await erisimJetonu();
-  const sm = `${MULK}sitemap.xml`;
-  await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/sitemaps/${encodeURIComponent(sm)}`, null, "PUT");
-  console.log(`gönderildi: ${sm}`);
+  const yollar = arg.length ? arg : ["sitemap.xml"];
+  for (const y of yollar) {
+    const sm = `${MULK}${y.replace(/^\//, "")}`;
+    await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/sitemaps/${encodeURIComponent(sm)}`, null, "PUT");
+    console.log(`gönderildi: ${sm}`);
+  }
 } else {
   console.error("Komutlar: denetle | denetle-dosya | sorgular | sitemap-gonder (üstteki yorum bloğuna bak)");
   process.exit(1);
