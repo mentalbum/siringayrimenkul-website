@@ -53,10 +53,14 @@ export default function MahallelerPage() {
           Eryaman Bölgesi
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
+        {/* "Eryaman nereye/hangi ilçeye bağlı" ailesi 28 günde 1.300+ gösterim
+            alıyor ama cevap cümle ortasına gömülüydü (15.08, sayfa-konum karnesi).
+            Öne çıkan sonuç şansı için ilk cümle sorunun birebir cevabı olmalı. */}
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
-          metrosuna bağlı bir semt. 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den
-          fazla site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
+          Eryaman, Ankara&apos;nın <strong>Etimesgut ilçesine</strong> bağlıdır; planlı
+          etap yapılaşmasıyla tanınan, metro bağlantılı semt <strong>11 mahalleden</strong>{" "}
+          oluşur. Bu 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den fazla site
+          ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki

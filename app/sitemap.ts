@@ -41,7 +41,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const statikSayfalar: MetadataRoute.Sitemap = [
     { url: `${baseUrl}/`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
-    { url: `${baseUrl}/mahalleler`, lastModified: icerikKlasoruTarihi("mahalleler"), changeFrequency: "weekly", priority: 0.9 },
+    // 15.08: başlık altına "Eryaman nereye bağlı" görünür cevabı girdi (şablon değişikliği).
+    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-15")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
