@@ -13,9 +13,9 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Evinizi Kiraya Vermek — Doğru Kiracı, Doğru Kira",
+  title: "Eryaman'da Evimi Kiraya Vermek İstiyorum Diyorsanız — Doğru Kiracı, Doğru Kira",
   description:
-    "Eryaman'da evinizi kiraya mı vereceksiniz? Kira tespiti, kiracı eleme, sözleşme ve teslim — süreci sizin adınıza yürüten yerel emlakçınız. Aynı gün dönüş: 0532 363 96 60.",
+    "'Eryaman'da evimi kiraya vermek istiyorum' diyorsanız doğru yerdesiniz. Kira tespiti, kiracı eleme, sözleşme ve teslim — süreci sizin adınıza yürüten yerel emlakçınız. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-kiraya-vermek" },
 };
 
@@ -43,6 +43,11 @@ const adimlar = [
 ];
 
 const faqItems: FaqItem[] = [
+  {
+    soru: "Eryaman'da evimi kiraya vermek istiyorum, nereden başlamalıyım?",
+    cevap:
+      "Önce doğru kira bedelini netleştirmek gerekir; sitenizdeki gerçekleşen kiralamalara bakarak birlikte belirliyoruz. Sonrasında ilan, kiracı adaylarını eleme, sözleşme ve teslim adımlarını sizin adınıza biz yürütüyoruz. Şehir dışında ya da yurt dışında yaşıyorsanız süreç uzaktan da yönetilebilir.",
+  },
   {
     soru: "Eryaman'da evimin kirası ne olmalı?",
     cevap:
@@ -107,7 +112,8 @@ export default function KirayaVermekPage() {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;da Evinizi Kiraya Vermek</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Kiraya vermenin iki büyük riski vardır: yanlış kira ve yanlış kiracı. İlki evinizi
+          &quot;Eryaman&apos;da evimi kiraya vermek istiyorum ama uğraşacak vaktim
+          yok&quot; diyorsanız doğru yerdesiniz. Kiraya vermenin iki büyük riski vardır: yanlış kira ve yanlış kiracı. İlki evinizi
           aylarca boş bekletir, ikincisi yıllarca uğraştırır. Eryaman&apos;ın{" "}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
             700&apos;den fazla sitesini
