@@ -322,10 +322,45 @@ export default function HomePage() {
             ))}
             .{" "}
             <Link href="/siteler" className="font-medium text-navy hover:text-gold-dark hover:underline">
-              Bu mahallelerdeki {toplamSite}&apos;den fazla site ve rezidansı
+              Eryaman&apos;daki {toplamSite}&apos;den fazla site ve rezidansı
             </Link>{" "}
             tek tek tanıyoruz.
           </p>
+          {/* 15.08 — "kim" bloğu. Ölçüm: Google, 229 karakterlik meta
+              description'ımızı reddedip SSS'teki bu pasajı SERP'te basıyordu;
+              yani sorgunun cevabı olarak seçtiği metin buydu ama sayfanın
+              %64 derinliğinde, kapalı bir <details> içindeydi. Pasaj görünür
+              metne çıkarıldı (SSS'te de duruyor — orası cevabın yeri).
+              "-çı" bir fail ekidir: "emlakçı" arayan envanter değil MUHATAP
+              arıyor; bu blok o soruya doğrudan cevap veriyor. */}
+          <div className="mt-8 rounded-2xl border border-border bg-surface-muted p-6 sm:p-7">
+            <h3 className="text-lg font-semibold text-navy">
+              Eryaman&apos;da Güvenilir Emlakçı Nasıl Bulunur?
+            </h3>
+            <p className="mt-3 text-base leading-relaxed text-body">
+              Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir
+              ofis adresi ve işletme profili. Türkiye&apos;de emlak aracılığı yetki belgesine
+              bağlıdır; bizim belge numaramız {siteConfig.yetkiBelgeNo}. Ofisimiz Tunahan
+              Mahallesi&apos;nde 4. Etap Çarşı&apos;da — arayıp randevu alabileceğiniz,
+              kapısından girebileceğiniz bir yer. Adres ve belge bilgisi paylaşmayan emlak
+              sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.
+            </p>
+            <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
+              <a
+                href={`tel:${siteConfig.phoneTel}`}
+                className="inline-flex items-center gap-2 text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+              >
+                <PhoneIcon className="h-4 w-4" />
+                {siteConfig.phoneDisplay}
+              </a>
+              <Link
+                href="/hakkimizda#ozgun-sirin"
+                className="text-sm font-semibold text-gold-dark hover:underline"
+              >
+                Danışmanınızı tanıyın →
+              </Link>
+            </div>
+          </div>
         </Reveal>
       </section>
 
@@ -437,33 +472,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {sonYazilar.length > 0 && (
-        <section className="py-16 sm:py-20">
-          <div className="mx-auto max-w-6xl px-4 sm:px-6">
-            <Reveal>
-              <div className="flex flex-wrap items-end justify-between gap-4">
-                <div>
-                  <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-                    Blog
-                  </p>
-                  <h2 className="mt-2 text-2xl sm:text-3xl">Son Yazılar</h2>
-                </div>
-                <CtaButton href="/blog" variant="ghost" className="px-0">
-                  Tüm Yazılar →
-                </CtaButton>
-              </div>
-            </Reveal>
-            <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {sonYazilar.map((post, i) => (
-                <Reveal key={post.slug} delay={i * 70} className="h-full">
-                  <BlogCard post={post} />
-                </Reveal>
-              ))}
-            </div>
-          </div>
-        </section>
-      )}
-
       <section className="mx-auto max-w-3xl px-4 pb-4 pt-8 sm:px-6">
         <Reveal>
           <FaqSection
@@ -498,8 +506,12 @@ export default function HomePage() {
                 "Bu sorunun cevabı evin değil, sizin durumunuzun içindedir: paraya ne zaman ihtiyacınız olduğu, evi ileride kullanma ihtimaliniz, verginin durumu (konutu edinmenizden bu yana beş yıl geçti mi) ve bakım yükünü taşıyıp taşıyamayacağınız. İki işi de yaptığımız için sizi bir yöne itmek gibi bir çıkarımız yok; en pratik yol iki rakamı da öğrenmektir — dairenizin bugünkü satış değeri ve bugünkü kira değeri yan yana geldiğinde karar çoğu zaman kendiliğinden netleşir.",
             },
             {
-              soru: "Bu sitede ilan var mı?",
-              cevap: `Güncel satılık ve kiralık ilanlarımız sahibinden.com üzerindeki mağazamızda yer alıyor. Bu web sitesi ilan platformu değil; mahalle rehberi ve iletişim kanalı olarak tasarlandı. Mahallenizi veya sitenizi seçerek bize ulaşabilirsiniz.`,
+              /* 15.08: cevap pozitif kuruldu. Eski metin "bu web sitesi ilan
+                 platformu değil" diyordu ve bu cümle FAQPage JSON-LD'ye
+                 giriyordu — üstümüzdeki iki portalın verdiği şeyin bizde
+                 OLMADIĞINI makine-okunur biçimde beyan ediyorduk. */
+              soru: "Güncel ilanlarınızı nereden görebilirim?",
+              cevap: `Satılık ve kiralık portföyümüzün tamamı sahibinden.com üzerindeki mağazamızda yayınlanıyor. Evinizi satmak veya kiraya vermek istiyorsanız mahallenizi ya da sitenizi seçerek doğrudan bize ulaşabilir, süreci baştan sona bize bırakabilirsiniz.`,
             },
             {
               soru: "Eryaman'da hangi siteleri tanıyorsunuz?",
@@ -510,12 +522,40 @@ export default function HomePage() {
         </Reveal>
       </section>
 
+      {sonYazilar.length > 0 && (
+        <section className="py-16 sm:py-20">
+          <div className="mx-auto max-w-6xl px-4 sm:px-6">
+            <Reveal>
+              <div className="flex flex-wrap items-end justify-between gap-4">
+                <div>
+                  <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
+                    Blog
+                  </p>
+                  <h2 className="mt-2 text-2xl sm:text-3xl">Son Yazılar</h2>
+                </div>
+                <CtaButton href="/blog" variant="ghost" className="px-0">
+                  Tüm Yazılar →
+                </CtaButton>
+              </div>
+            </Reveal>
+            <div className="mt-7 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {sonYazilar.map((post, i) => (
+                <Reveal key={post.slug} delay={i * 70} className="h-full">
+                  <BlogCard post={post} />
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <Reveal>
           <CtaBanner
             size="large"
             baslik="Eryaman'da Bir Sonraki Adımınızı Birlikte Atalım"
-            aciklama="Ev arıyor olun ya da evinizi değerlendirmek isteyin, doğrudan bize ulaşın."
+            aciklama="Evinizi satmak ya da kiraya vermek istiyorsanız doğrudan bize ulaşın; süreci baştan sona biz yürütürüz."
           >
             <CtaButton href="/iletisim" variant="primary">
               Bize Ulaşın
