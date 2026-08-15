@@ -1,13 +1,14 @@
 export const siteConfig = {
   name: "Şirin Gayrimenkul",
-  // İlk ~160 karakter SERP snippet'i: ayırt edici iddia öne (720 site + tapu
-  // sınırlı tek rehber + 5,0 profil), eylem çağrısı sona. Rakip snippet'ler
-  // jenerik ("N yıllık tecrübe") — ölçülen TO %2,2'yi yukarı çekmek için USP
-  // görünür olmalı. Yorum SAYISI bilerek yok (rakip sabotajı kuralı), puan var.
-  // Açılış "Eryaman emlakçı" — baş sorgunun yalın biçimi (kişiselleştirmesiz
-  // ölçüm 2026-08-02; iyelikli "emlakçısı" insanların yazdığı biçim değil).
+  // 15.08: 229 karakterdi ve Google kullanmıyordu — gövdedeki bir SSS pasajını
+  // seçip basıyordu; yani açıklama sorgu niyetini karşılamıyordu. Yeni sürüm
+  // 155 sınırının altında, tek cümlede ne yaptığımızı söylüyor ve numara
+  // görünür kalıyor (hedef tıklama değil, telefonun çalması).
+  // "700'den fazla site" övünmesi Özgün kararıyla ÇIKARILDI (15.08): ispatı
+  // istenebilecek üstünlük iddiaları açıklamalarda kullanılmaz.
+  // Açılış "Eryaman" — baş sorgunun yalın biçimi (kişiselleştirmesiz ölçüm).
   description:
-    "Eryaman emlakçı arıyorsanız: Şirin Gayrimenkul — 700'den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek yerel rehber. 5,0 puanlı Google profili. Evinizi satarken ya da kiraya verirken fiyatı birlikte belirleyelim.",
+    "Eryaman'da evinizi satarken ya da kiraya verirken karşınıza doğru alıcıyı, doğru kiracıyı biz çıkarırız: 0532 363 96 60",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.siringayrimenkul.com",
   // Taşınmaz Ticareti Yetki Belgesi — meta description güven öğesi ve görünür
   // künyelerde tek kaynak (footer/yazar kartındaki eski hardcode'larla aynı no).
