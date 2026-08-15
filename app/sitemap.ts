@@ -65,8 +65,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
     { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-15"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-15"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/araclar`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },

@@ -12,9 +12,9 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
-  title: "Eryaman'da Ev Satmak — Satış Sürecini Sizin Adınıza Yönetiyoruz",
+  title: "Eryaman'da Evimi Satmak İstiyorum Diyorsanız — Süreci Biz Yönetelim",
   description:
-    "Eryaman'da evinizi satmayı mı düşünüyorsunuz? Değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
+    "'Eryaman'da evimi satmak istiyorum' diyorsanız doğru yerdesiniz: değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-satmak" },
 };
 
@@ -47,6 +47,11 @@ const adimlar = [
 ];
 
 const faqItems: FaqItem[] = [
+  {
+    soru: "Eryaman'da evimi satmak istiyorum, ilk adım ne olmalı?",
+    cevap:
+      "İlan vermek değil, doğru fiyatı bulmak. Sitenizdeki ve mahallenizdeki gerçekleşen satışlara bakarak birlikte bir değerleme yapıyoruz; fiyat netleşince ilan, tanıtım, alıcı eleme ve tapu adımlarını sizin adınıza biz yürütüyoruz. Şehir dışında ya da yurt dışında olsanız bile süreç vekâletle tamamen uzaktan yönetilebilir.",
+  },
   {
     soru: "Eryaman'da ev satmak ne kadar sürer?",
     cevap:
@@ -116,7 +121,8 @@ export default function EvSatmakPage() {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman&apos;da Evinizi Satmak</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Ev satmak bir ilan verme işi değil, bir süreç yönetimi işidir: doğru fiyat, doğru
+          &quot;Eryaman&apos;da evimi satmak istiyorum ama nereden başlayacağımı
+          bilmiyorum&quot; diyorsanız doğru yerdesiniz. Ev satmak bir ilan verme işi değil, bir süreç yönetimi işidir: doğru fiyat, doğru
           alıcı, güvenli tapu. Eryaman&apos;ın {""}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
             700&apos;den fazla sitesini
