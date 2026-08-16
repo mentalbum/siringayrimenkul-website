@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import {
   adaDisplayLabel,
   adaRouteKey,
@@ -8,6 +8,7 @@ import {
   getAllAdalar,
   getAllMahalleler,
   getMahalleBySlug,
+  mahalleKisaIsim,
   getSiteBoundary,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -47,44 +48,50 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
-  // Başlıkta ÖNCE site adı, sonra ada numarası (Özgün kararı, 2026-08-01):
-  // "46512/9 Ada — Su Damlası Sitesi" biçiminde arama sonucunda çıkan sayfa,
-  // hangi yerleşimden söz ettiğini ancak satırın sonunda söylüyordu. Ada
-  // numarasını kimse ezbere bilmez, site adını herkes bilir — sıralama
-  // tersine çevrildi, sayfa ilk bakışta tanınsın. Ada numarası başlıkta
-  // kalır: "17666 ada satılık daire" tipi aramalar da karşılansın.
   return {
-    // TİCARİ KALIP KALDIRILDI (2026-08-09) — ada sayfası site sayfasını yiyordu.
+    // BAŞLIĞIN GEÇMİŞİ (üç tur, her biri ölçümle):
+    //   01.08 — Başlık site adıyla açacak şekilde çevrildi ("46512/9 Ada — Su
+    //           Damlası Sitesi" -> "Su Damlası Sitesi 46512/9 Ada"): sayfa
+    //           hangi yerleşimden söz ettiğini ancak satırın sonunda
+    //           söylüyordu, ilk bakışta tanınsın istendi.
+    //   09.08 — Ticari kalıp ("… Ada Emlakçı | Evinizi Satalım, Kiraya…")
+    //           söküldü: ada ve site sayfası AYNI kalıbı taşıyordu ve pws=0
+    //           ölçümünde 32 vakada Google ada sayfasını seçiyordu. Başlık
+    //           sayfanın gerçek işlevini söyler oldu (tapu + blok künyesi).
+    //   16.08 — SİTE ADI da çıkarıldı (aşağıdaki not).
     //
-    // Ölçüm (pws=0, 187 site): 32 vakada Google, "<site adı> emlakçı"
-    // aramasında site sayfasının yerine BU ada sayfasını gösterdi. Sebep
-    // başlıkta çıplak gözle görülüyordu — iki sayfa aynı kalıbı taşıyordu:
-    //   ada  : "STFA Blokları 17673/1 Ada Emlakçı | Evinizi Satalım, Kiraya…"
-    //   site : "STFA Blokları Emlakçı | Eryaman | Evinizi Satalım, Kiraya…"
-    // Aranan dizi ("STFA Blokları … emlakçı") ikisinde de tam eşleşiyor,
-    // Google da zaman zaman ada sayfasını seçiyordu. Ziyaretçi site sayfası
-    // yerine ada listesine düşüyor.
+    // SİTE ADI BAŞLIKTAN ÇIKARILDI (2026-08-16, Özgün kararı) — ada sayfası site
+    // sayfasını yiyordu ve canonical bu işi çözemiyor.
     //
-    // Artık başlık sayfanın GERÇEK işlevini söylüyor (tapu niteliği + blok
-    // künyesi — sayfanın içeriği zaten bu). Site adı korunuyor: kimse
-    // "17673 ada" diye aramaz, tanınırlık site adından gelir. Ada numarası da
-    // duruyor, "17666 ada satılık daire" tipi aramalar karşılansın.
-    // Bu, canonical'a EK bir katman: canonical Google'ın sayfayı yeniden
-    // taramasını bekler, başlık ise tarandığı an ayrımı netleştirir.
+    // 09.08'de başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")
+    // sökülmüştü ama site adı kalmıştı; "STFA Blokları 17673/1 Ada" başlığı
+    // "stfa blokları emlakçı" sorgusuyla hâlâ eşleşiyordu. 16.08 pws=0
+    // ölçümünde Tunahan'ın 25 sitesinin 7'sinde ada sayfası site sayfasının
+    // ÖNÜNDE çıktı; 5'inde site sayfası ilk 10'da hiç yoktu.
     //
-    // ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki burada da eklenmez —
-    // site sayfalarında 2026-08-07'de kaldırılmıştı, ada sayfaları atlanmış ve
-    // başlık 96 karaktere çıkıyordu (Google ~60'ta kesiyor).
+    // Neden canonical yetmedi: 200 ada sayfalık GSC denetiminde, yeni etiketi
+    // görmüş 34 sayfanın 32'sinde Google canonical'ı REDDETTİ (kabul %6).
+    // Canonical yalnız birbirinin KOPYASI sayfalar arasında dinlenir; bu sayfa
+    // site sayfasının kopyası değil. Ayrıntı: ada-canonical-olcumu-2026-08-16.md.
+    //
+    // Tanınırlık NEREDE KALIYOR: site adı H1'de, giriş cümlesinde (site
+    // sayfasına bağla) ve JSON-LD'de duruyor — 01.08'de "sayfa ilk bakışta
+    // tanınsın" diye alınan karar sayfa içinde korunuyor. Değişen yalnız arama
+    // sonucundaki satır: orada artık mahalle adı var, çünkü site adı orada
+    // dururken Google iki sayfamızı aynı sorguda yarıştırıyor.
+    //
+    // Ada numarası başlıkta kalır: "17666 ada satılık daire" tipi aramalar da
+    // karşılansın. ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki eklenmez
+    // (başlık 96 karaktere çıkıyordu, Google ~60'ta kesiyor).
+    //
+    // UZUNLUK: mahalle adı "Mahallesi" ekiyle yazılınca ve "Bilgileri"
+    // kullanılınca en uzun mahallede 73 karaktere çıkıyordu — 10.08'de mahalle
+    // başlıklarında düzeltilen hatanın aynısı. Kısa ad + "Künyesi" ile bant
+    // 51-60'a indi, hepsi Google'ın kesme sınırının içinde.
     title: {
-      absolute:
-        entries.length > 1
-          ? `${mahalle.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`
-          : `${ada.site.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`,
+      absolute: `${mahalleKisaIsim(mahalle)} ${label} Ada — Tapu ve Blok Künyesi | ${ustBolgeEtiketi(mahalle)}`,
     },
-    description:
-      entries.length > 1
-        ? `${label} Ada'nın tapu niteliği, üzerindeki yapılar ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`
-        : `${ada.site.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
+    description: `${mahalle.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
     // ASIL SAYFA = SİTE SAYFASI (2026-08-02).
     //
     // Ölçüm: 298 sitelik canlı SERP taramasında 51 sitede Google, site adı
@@ -105,6 +112,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // (nitekim bugüne kadar öyle oldu: noindex'e rağmen 51 vakada sayfa SERP'te
     // duruyordu, çünkü Google onu yeniden tarayıp etiketi görmemişti).
     //
+    // 16.08 ÖLÇÜMÜ — BU CANONICAL ÇALIŞMIYOR, GÜVENME:
+    // 200 tek siteli ada sayfası GSC URL Inspection ile denetlendi. 03.08
+    // sonrası taranmış 34 sayfanın hepsinde bizim canonical'ımız doğru okunmuş,
+    // ama Google 32'sinde REDDETMİŞ (kendi adresini kanonik seçmiş, "Submitted
+    // and indexed"); kabul oranı %6. Sebep: canonical yalnız birbirinin KOPYASI
+    // sayfalar arasında dinlenir, bu sayfa site sayfasının kopyası değil.
+    // Etiket kalıyor (maliyeti yok, 2 sayfada işe yarıyor) ama kanibalizasyon
+    // çözümü olarak SAYILMAZ. Ayrıntı: ada-canonical-olcumu-2026-08-16.md.
+    //
     // Paylaşımlı parselde (bir adada birden çok site) tek bir doğru hedef
     // olmadığı için sayfa kendi kanonik sürümü olarak kalır ve noindex sürer.
     alternates: {
@@ -121,7 +137,29 @@ export default async function AdaPage({ params }: Props) {
   const { mahalle: mahalleSlug, ada: adaKey } = await params;
   const mahalle = getMahalleBySlug(mahalleSlug);
   const entries = getAdaEntriesByRouteKey(mahalleSlug, adaKey);
-  if (!mahalle || entries.length === 0) notFound();
+  if (!mahalle) notFound();
+  if (entries.length === 0) {
+    // PARSELSİZ ESKİ ADRES KURTARMA (2026-08-08).
+    // Rota anahtarı 01.07'de "<ada>" iken "<ada>-<parsel>" oldu; öncesinde
+    // yayınlanmış ~658 adres o günden beri 404 veriyor ve GSC her turda yeni
+    // bir "Bulunamadı" partisi raporluyordu. Bugüne dek yalnız 3'ü elle
+    // yamanmıştı (next.config.ts) — bu hızla açık hiç kapanmaz.
+    // Kural: aynı mahallede o ada numarasına TEK site karşılık geliyorsa o
+    // sitenin sayfasına, birden çok site varsa mahalle sayfasına kalıcı
+    // yönlendir. Hedef ada sayfası DEĞİL site sayfası: ada sayfasının
+    // kanonik'i zaten site sayfasını gösteriyor, araya bir hop koymanın
+    // anlamı yok.
+    const ayniNumarali = getAllAdalar(mahalleSlug).filter((item) => item.no === adaKey);
+    if (ayniNumarali.length > 0) {
+      const siteSluglari = new Set(ayniNumarali.map((item) => item.site.slug));
+      permanentRedirect(
+        siteSluglari.size === 1
+          ? `/mahalleler/${mahalleSlug}/${ayniNumarali[0].site.slug}`
+          : `/mahalleler/${mahalleSlug}`
+      );
+    }
+    notFound();
+  }
   const ada = entries[0];
 
   const label = adaDisplayLabel(ada);
@@ -136,26 +174,46 @@ export default async function AdaPage({ params }: Props) {
       .map((item) => [adaRouteKey(item), item] as const)
   );
   const buNo = Number.parseInt(ada.no, 10);
-  // 4 komşu ada yeter: bu sayfalar noindex, ada→ada bağları PageRank'i noindex
-  // kümesinin içinde döndürüyordu (12 bağla kenar ağırlığının %22'si, PR
-  // kütlesinin %15,6'sı burada park ediyordu — grafta ölçüldü). Bağ sayısı
-  // düşünce sayfanın çıkış ağırlığı site/mahalle bağlarına kayar, değer
-  // dizindeki sayfalara geri akar. Ziyaretçi yine en yakın numaralı 4 adayı
-  // görür; kayıp yok.
+  // 4 komşu yeter (bağ sayısı 12'den 4'e indirilmişti: kenar ağırlığının %22'si,
+  // PR kütlesinin %15,6'sı burada park ediyordu — grafta ölçüldü).
+  //
+  // 2026-08-08: bu bağların HEDEFİ de değişti. Eskiden komşu ADA sayfasına
+  // gidiyorlardı; 812 ada × 4 = 3.248 bağ, iç bağ kütlesinin %73'ü, kanonik'i
+  // BAŞKA sayfayı gösteren bir kümenin içinde dönüyordu — ada kümesinden
+  // dizine giren sayfalara çıkan bağ oranı 4'te 0'dı. Artık komşunun SİTE
+  // sayfasına gidiyorlar: aynı komşuluk bilgisi, ama değer dizindeki sayfalara
+  // akıyor.
+  //
+  // 16.08 ÖLÇÜMÜ bu kararı güçlendirdi: eski yorumların dayandığı "bu sayfalar
+  // noindex" varsayımı iki kez bayatlamıştı (noindex 03.08'de kalktı) ve
+  // yerine gelen canonical de çalışmıyor (200 sayfalık GSC denetiminde kabul
+  // %6). Gerçek durum: 200 ada sayfasının 115'i KENDİ BAŞINA DİZİNDE ve site
+  // sayfasıyla yarışıyor — ada→ada bağı doğrudan o rakibi besliyordu.
+  //
+  // Aynı siteye ait birden çok ada komşu çıkabildiği için site slug'ına göre
+  // tekilleştiriliyor, sayfanın kendi sitesi de listeden düşüyor — yoksa
+  // "diğer siteler" listesinde kendini gösteren kart oluşuyordu.
+  const gorulenSite = new Set<string>([ada.site.slug]);
   const ayniEtaptakiler = Array.from(ayniEtapMap.values())
     .sort(
       (a, b) =>
         Math.abs(Number.parseInt(a.no, 10) - buNo) - Math.abs(Number.parseInt(b.no, 10) - buNo)
     )
+    .filter((item) => {
+      if (gorulenSite.has(item.site.slug)) return false;
+      gorulenSite.add(item.site.slug);
+      return true;
+    })
     .slice(0, 4);
 
   const adaJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
-    name:
-      entries.length > 1
-        ? `${label} Ada — ${mahalle.isim}`
-        : `${label} Ada — ${ada.site.isim}`,
+    // Site adı çıkarıldı (16.08) — bkz. H1 notundaki gerekçe. Sayfadaki hangi
+    // site(ler)in bu parselde olduğu bilgisi kaybolmuyor: aşağıdaki description
+    // alanında ve görünür giriş cümlesinde site adı geçiyor ve site sayfasına
+    // bağ veriyor.
+    name: `${label} Ada — ${mahalle.isim}`,
     description: `${label} Ada, ${mahalle.isim} içinde yer alır (${entries
       .map((entry) => entry.site.isim)
       .join(", ")}).`,
@@ -202,9 +260,24 @@ export default async function AdaPage({ params }: Props) {
             </>
           )}
         </p>
-        {/* Sayfa başlığı da site adıyla açılır — ziyaretçi hangi yerleşime
-            baktığını ilk satırda görsün (bkz. generateMetadata notu). */}
-        <h1 className="mt-2 text-3xl sm:text-4xl">{adaEtiketi}</h1>
+        {/* H1'DEN SİTE ADI ÇIKARILDI (2026-08-16, Özgün kararı: "isim
+            aratmalarında ada sayfaları görünmesin; ada aratmasında görünebilir").
+            H1 sayfadaki en güçlü tek sinyaldi ve "STFA Blokları 17673/1 Ada"
+            biçimi site adı sorgusuyla tam eşleşiyordu.
+
+            NEDEN KAYIPSIZ: 90 günlük GSC sorgu dökümünde (1000 sorgu) ada
+            numarasıyla yapılmış ARAMA YOK — "1ada" (2 gösterim, poz. 24) dışında
+            hiçbiri; "ada" geçen sorguların tamamı site adının içindeki hece
+            ("meydan ada sitesi", "ada loft", "cabadağ blokları"). Yani site adı
+            burada dururken hiçbir arama kazandırmıyordu, sadece site sayfasıyla
+            yarışıyordu.
+
+            ZİYARETÇİ NE GÖRÜYOR: hemen üstteki mahalle/etap satırı ve hemen
+            alttaki giriş cümlesi ("… Ada, X Mahallesi içinde yer alan Y
+            Sitesi'nin bir parçasıdır") site adını söylüyor ve site sayfasına
+            bağ veriyor — o bağ artık bu sayfanın topladığı değeri site
+            sayfasına akıtan asıl kanal. */}
+        <h1 className="mt-2 text-3xl sm:text-4xl">{label} Ada</h1>
       </header>
 
       <div className={`mt-8 grid gap-8 ${ada.site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
@@ -302,7 +375,12 @@ export default async function AdaPage({ params }: Props) {
 
       <CtaBanner
         className="mt-12"
-        baslik={`${adaEtiketi}'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
+        /* Site adı BU başlıktan çıkarıldı (16.08): sayfadaki en güçlü ikinci
+           eşleşme buydu — site adı + ticari niyet ("satmak/kiraya vermek") aynı
+           başlıkta buluşunca "<site adı> emlakçı" sorgusuna site sayfası kadar
+           iyi cevap veriyordu. Ada numarası yeterli bağlam: hemen üstteki H1
+           zaten site adını söylüyor. */
+        baslik={`${label} Ada'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton
@@ -349,22 +427,26 @@ export default async function AdaPage({ params }: Props) {
                 >
                   Eryaman {ada.etap}. Etap
                 </Link>
-                &apos;taki Diğer Adalar
+                &apos;taki Komşu Siteler
               </>
             ) : (
-              `${bulunmaHaliKi(mahalle.isim)} Diğer Adalar`
+              `${bulunmaHaliKi(mahalle.isim)} Komşu Siteler`
             )}
           </h2>
           <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {ayniEtaptakiler.map((item) => (
               <Link
                 key={adaRouteKey(item)}
-                href={`/mahalleler/${mahalle.slug}/adalar/${adaRouteKey(item)}`}
+                href={`/mahalleler/${mahalle.slug}/${item.site.slug}`}
                 className="group flex cursor-pointer items-center justify-between gap-2 rounded-2xl border border-border bg-surface p-4 transition-colors hover:border-gold"
               >
+                {/* Site adı ÖNDE, ada numarası altta: kart artık site sayfasına
+                    gidiyor, başlık da gidilen yeri söylemeli (bağ hedefi
+                    değişirken etiket eskisi gibi kalırsa ziyaretçi "ada
+                    sayfası" bekleyip site sayfasına düşer). */}
                 <div>
-                  <p className="text-sm font-semibold text-navy">{adaDisplayLabel(item)} Ada</p>
-                  <p className="text-xs text-muted">{item.site.isim}</p>
+                  <p className="text-sm font-semibold text-navy">{item.site.isim}</p>
+                  <p className="text-xs text-muted">{adaDisplayLabel(item)} Ada</p>
                 </div>
                 <ArrowRightIcon className="h-4 w-4 shrink-0 text-muted transition-transform group-hover:translate-x-0.5 group-hover:text-gold-dark" />
               </Link>
@@ -374,7 +456,9 @@ export default async function AdaPage({ params }: Props) {
       )}
 
       <FaqSection
-        title={`${adaEtiketi} Hakkında Sık Sorulan Sorular`}
+        /* Site adı çıkarıldı (16.08) — bkz. CTA başlığındaki not. Sorular zaten
+           ada numarasıyla kuruluyor (lib/faq.ts getAdaFaq). */
+        title={`${label} Ada Hakkında Sık Sorulan Sorular`}
         items={getAdaFaq(label, entries, mahalle)}
       />
     </div>

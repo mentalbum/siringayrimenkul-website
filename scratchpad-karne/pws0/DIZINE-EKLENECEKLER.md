@@ -3,6 +3,27 @@
 Kuyruktaki bekleyen 160 sayfanın tamamı dizin dışı TEYİTLİ (GSC API).
 Kota açıldıkça bu sırayla istek gönderilir. Akış ve tuzaklar: gsc-dizin becerisi.
 
+## ÖNCELİK — 16.08 pws=0 + GSC ölçümüyle doğrulanmış Tunahan açıkları
+
+Bu dördü kuyruğun başına alındı (16.08). Gerekçe ölçüm:
+- **ilgazlar-sitesi** — GSC: "URL is unknown to Google". SERP'te "ilgazlar sitesi
+  emlakçı" 7. sırada ve çıkan sayfa ESKİ adresli bir ADA sayfası. Site sayfası yok.
+- **okyanus-plaza** — GSC: "Discovered - currently not indexed". SERP'te sorguya
+  Dema Park sayfamız çıkıyor (6.), Okyanus Plaza ilk 10'da yok.
+- **camli-klima-bloklari** — GSC: "Discovered - currently not indexed". SERP'te
+  ESKİ adres 3. sırada; yeni adresi Google bilmiyor.
+- **akturk-sitesi** — SERP'te Altay'daki ad ikizi (Aktürk Blokları) çıkıyor.
+
+Bu üç sayfa dizine girmeden ada sayfalarını susturmak zarar verir: orada ada
+sayfası bizim TEK görünen sayfamız (ada-canonical-olcumu-2026-08-16.md).
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza
+
+## Kuyruğun geri kalanı
+
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi
@@ -33,7 +54,6 @@ Kota açıldıkça bu sırayla istek gönderilir. Akış ve tuzaklar: gsc-dizin 
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari
@@ -101,9 +121,6 @@ Kota açıldıkça bu sırayla istek gönderilir. Akış ve tuzaklar: gsc-dizin 
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi
