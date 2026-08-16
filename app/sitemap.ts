@@ -109,7 +109,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        Aktürk Blokları sayfasını gösteriyordu).
     // 08.08: iç bağ çapaları rotasyonlu hâle geldi (15ad273).
     // 07.08: alıcı dili tamamen söküldü, marka eki başlıktan kalktı (77153e2).
-    site: new Date("2026-08-15"),
+    // 16.08: ad ikizi kapsamı 10 gruptan 18'e çıktı (çapraz bağ, 41 sayfa) ve
+    //        çekirdek ad karşılaştırması sıra numarasını da söküyor — "Elit
+    //        Yaşam Konutları 1/2/3" ailesi artık başlıkta mahalleyle ayrışıyor.
+    //        Seçim ölçüme dayanıyor: GSC sorgu×sayfa çakışması + pws=0 taraması.
+    site: new Date("2026-08-16"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin

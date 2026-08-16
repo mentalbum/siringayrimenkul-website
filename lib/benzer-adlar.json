@@ -1,15 +1,206 @@
 {
-  "aciklama": "Aynı/çok benzer adı taşıyan FARKLI yerleşimler (2026-08-12 kanibalizasyon analizi, d2 sınıfı — SERP ölçümlerinde birbirinin yerine sıralandıkları belgelendi). Site sayfası şablonu bu gruplardan 'Benzer adlı yerleşim' çapraz bağını üretir: yanlış kayda düşen ziyaretçi tek tıkla doğrusuna geçer, Google'a iki varlığın ayrı olduğu sinyali gider. Yeni çift keşfedilirse buraya eklenir; ad benzerliği zayıfsa (Concept Eryaman vs Mia Concept) EKLENMEZ.",
+  "aciklama": "Aynı/çok benzer adı taşıyan FARKLI yerleşimler (2026-08-12 kanibalizasyon analizi + 2026-08-16 GSC sorgu×sayfa çakışma taraması — SERP ölçümlerinde birbirinin yerine sıralandıkları belgelendi). Site sayfası şablonu bu gruplardan 'Benzer adlı yerleşim' çapraz bağını üretir: yanlış kayda düşen ziyaretçi tek tıkla doğrusuna geçer, Google'a iki varlığın ayrı olduğu sinyali gider. Yeni çift keşfedilirse buraya eklenir; ad benzerliği zayıfsa (Concept Eryaman vs Mia Concept) EKLENMEZ.",
+  "nasilSecilir": "Bir çift buraya YALNIZCA belgelenmişse girer: ya GSC'de aynı sorguda iki kaydımız birden görünüyordur (sorgu x sayfa boyutuyla ölçülür), ya da kisisellestirilmemis SERP taramasinda (pws=0) aranan sitenin yerine digeri cikmistir. 16.08 taramasinda 723 site adindan mekanik olarak 34 cok-mahalleli benzerlik cikti; bunlarin yalnizca GSC'de fiilen carpisan 7'si + SERP'te olculen Yardimci cifti eklendi. Kalan 18 aday (Bahar, Cigdem, Cumhuriyet, Eston, Goksu, Gozde, Guzel Ankara, Ictas, Inci Park, Korukent, Mutlu, Pasa, Sahil, Selale, Sumeyra, Umut, Utku, Vatan) izleme listesinde: ad benziyor ama Google bugune kadar karistirmadi, capraz bag eklemek gereksiz gurultu olur.",
   "gruplar": [
-    [{"m": "tunahan-mahallesi", "s": "akturk-sitesi"}, {"m": "altay-mahallesi", "s": "akturk-bloklari"}],
-    [{"m": "tunahan-mahallesi", "s": "sutek-sitesi"}, {"m": "altay-mahallesi", "s": "sutek-bloklari"}, {"m": "seyh-samil-mahallesi", "s": "sutek-bloklari"}],
-    [{"m": "altay-mahallesi", "s": "doktorlar-sitesi"}, {"m": "yavuz-selim-mahallesi", "s": "doktorlar-sitesi"}],
-    [{"m": "tunahan-mahallesi", "s": "soyak-sitesi"}, {"m": "sehit-osman-avci-mahallesi", "s": "soyak-sitesi"}],
-    [{"m": "devlet-mahallesi", "s": "demirkent-sitesi"}, {"m": "ata-mahallesi", "s": "demirkent-on-sitesi"}],
-    [{"m": "ata-mahallesi", "s": "eser-yapi-evleri"}, {"m": "susuz-mahallesi", "s": "eser-yapi-sitesi"}],
-    [{"m": "eryaman-mahallesi", "s": "akkonaklar-sitesi"}, {"m": "guzelkent-mahallesi", "s": "akkonak-sitesi"}],
-    [{"m": "sehit-osman-avci-mahallesi", "s": "akasya-sitesi"}, {"m": "cumhuriyet-mahallesi", "s": "akasya-sitesi"}],
-    [{"m": "ata-mahallesi", "s": "palmiye-evleri"}, {"m": "altay-mahallesi", "s": "palmiye-evleri"}],
-    [{"m": "yesilova-mahallesi", "s": "kardelen-sitesi"}, {"m": "guzelkent-mahallesi", "s": "kardelen-sitesi"}, {"m": "sehit-osman-avci-mahallesi", "s": "kardelen-sitesi"}, {"m": "yavuz-selim-mahallesi", "s": "kardelen-sitesi"}]
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "akturk-sitesi"
+      },
+      {
+        "m": "altay-mahallesi",
+        "s": "akturk-bloklari"
+      }
+    ],
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "sutek-sitesi"
+      },
+      {
+        "m": "altay-mahallesi",
+        "s": "sutek-bloklari"
+      },
+      {
+        "m": "seyh-samil-mahallesi",
+        "s": "sutek-bloklari"
+      }
+    ],
+    [
+      {
+        "m": "altay-mahallesi",
+        "s": "doktorlar-sitesi"
+      },
+      {
+        "m": "yavuz-selim-mahallesi",
+        "s": "doktorlar-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "soyak-sitesi"
+      },
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "soyak-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "devlet-mahallesi",
+        "s": "demirkent-sitesi"
+      },
+      {
+        "m": "ata-mahallesi",
+        "s": "demirkent-on-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "ata-mahallesi",
+        "s": "eser-yapi-evleri"
+      },
+      {
+        "m": "susuz-mahallesi",
+        "s": "eser-yapi-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "eryaman-mahallesi",
+        "s": "akkonaklar-sitesi"
+      },
+      {
+        "m": "guzelkent-mahallesi",
+        "s": "akkonak-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "akasya-sitesi"
+      },
+      {
+        "m": "cumhuriyet-mahallesi",
+        "s": "akasya-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "ata-mahallesi",
+        "s": "palmiye-evleri"
+      },
+      {
+        "m": "altay-mahallesi",
+        "s": "palmiye-evleri"
+      }
+    ],
+    [
+      {
+        "m": "yesilova-mahallesi",
+        "s": "kardelen-sitesi"
+      },
+      {
+        "m": "guzelkent-mahallesi",
+        "s": "kardelen-sitesi"
+      },
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "kardelen-sitesi"
+      },
+      {
+        "m": "yavuz-selim-mahallesi",
+        "s": "kardelen-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "age-sitesi"
+      },
+      {
+        "m": "altay-mahallesi",
+        "s": "age-bloklari"
+      }
+    ],
+    [
+      {
+        "m": "devlet-mahallesi",
+        "s": "cinar-sitesi"
+      },
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "cinar-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "maybak-sitesi"
+      },
+      {
+        "m": "goksu-mahallesi",
+        "s": "maybak-konutlari"
+      }
+    ],
+    [
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "safir-rezidans"
+      },
+      {
+        "m": "yavuz-selim-mahallesi",
+        "s": "safir-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "elit-yasam-evleri"
+      },
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "elit-yasam-konutlari-1"
+      },
+      {
+        "m": "sehit-osman-avci-mahallesi",
+        "s": "elit-yasam-konutlari-2"
+      },
+      {
+        "m": "ata-mahallesi",
+        "s": "elit-yasam-konutlari-3"
+      }
+    ],
+    [
+      {
+        "m": "guzelkent-mahallesi",
+        "s": "angora-sitesi"
+      },
+      {
+        "m": "goksu-mahallesi",
+        "s": "angora-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "altay-mahallesi",
+        "s": "mesa-bloklari"
+      },
+      {
+        "m": "guzelkent-mahallesi",
+        "s": "mesa-sitesi"
+      }
+    ],
+    [
+      {
+        "m": "tunahan-mahallesi",
+        "s": "yardimci-bloklari"
+      },
+      {
+        "m": "seyh-samil-mahallesi",
+        "s": "yardimci-bloklari"
+      }
+    ]
   ]
 }
