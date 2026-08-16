@@ -245,9 +245,9 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
         ? `${label} Ada, ${mahalle.isim} sınırları içindedir; ${tamlayanHali(siteAdi)} bir parçasıdır${etapNot}.`
         : `${label} Ada, ${mahalle.isim} sınırları içindedir${etapNot}; bu parselde ${entries.length} ayrı site bulunur: ${siteIsimleri}.`,
     },
-    {
-      soru: `Bu adadaki evimi satmak istiyorum — süreç nasıl işler?`,
-      cevap: `İlk adım doğru fiyat: dairenizi ilan sitelerindeki 'istenen' rakamlardan değil, adanızdaki ve sitenizdeki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz. Ardından tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın veya değerleme formunu doldurun; aynı gün dönüş yapalım.`,
-    },
   ];
+  // 5. SORU SİLİNDİ (16.08): "Bu adadaki evimi satmak istiyorum — süreç nasıl
+  // işler?" 1. sorunun birebir tekrarıydı (aynı cevap, aynı üç adım). Aynı
+  // sayfada iki kez sorulan aynı soru hem ziyaretçiye hem FAQPage işaretlemesine
+  // tekrar olarak gidiyordu.
 }

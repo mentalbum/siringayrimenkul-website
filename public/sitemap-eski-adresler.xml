@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- GEÇİCİ SİTE HARİTASI — 2026-08-16, mahalle slug taşımasının (26.07) sindirimi için.
-     Buradaki 242 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
+     Buradaki 244 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
      YENİDEN TARAMADAN yönlendirmeyi göremiyor; ölçüm (16.08, GSC API): 967 sorguda
      kendi sayfalarımız yarışıyor ve bu yarışın %26'sı (7.527 gösterim) bu eski
      adreslerde sıkışmış durumda. Google'ın adres değişikliği rehberi bu durumda eski
@@ -250,4 +250,15 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/utkan-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/susuz/major-goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/tureli-residence</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <!-- 16.08 pws=0 SERP ölçümünde FİİLEN eski adresiyle sıralanırken bulundu, ama
+       listede yoktu (242 adres GSC gösterim verisinden türetilmişti; bu ikisinin
+       gösterimi eşiğin altında kalmış). İkisinin de 308'i canlıda doğrulandı.
+       - camli-klima-bloklari: "camlı klima blokları emlakçı" 3. sıra, ESKİ adres.
+         Yeni adres GSC'de "Discovered - currently not indexed".
+       - akasya-evleri: "Akasya Evleri emlakçı" 1. sıra, ESKİ adres.
+       Eski ADA adresleri (/tunahan/adalar/17635-1, /adalar/46493-2) bilerek
+       EKLENMEDİ: varış noktaları site sayfasıyla yarışan ada sayfaları; onları
+       tazelemek kanibalizasyonu besler (bkz. ada-canonical-olcumu-2026-08-16.md). -->
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/camli-klima-bloklari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman/akasya-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
 </urlset>

@@ -105,6 +105,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // (nitekim bugüne kadar öyle oldu: noindex'e rağmen 51 vakada sayfa SERP'te
     // duruyordu, çünkü Google onu yeniden tarayıp etiketi görmemişti).
     //
+    // 16.08 ÖLÇÜMÜ — BU CANONICAL ÇALIŞMIYOR, GÜVENME:
+    // 200 tek siteli ada sayfası GSC URL Inspection ile denetlendi. 03.08
+    // sonrası taranmış 34 sayfanın hepsinde bizim canonical'ımız doğru okunmuş,
+    // ama Google 32'sinde REDDETMİŞ (kendi adresini kanonik seçmiş, "Submitted
+    // and indexed"); kabul oranı %6. Sebep: canonical yalnız birbirinin KOPYASI
+    // sayfalar arasında dinlenir, bu sayfa site sayfasının kopyası değil.
+    // Etiket kalıyor (maliyeti yok, 2 sayfada işe yarıyor) ama kanibalizasyon
+    // çözümü olarak SAYILMAZ. Ayrıntı: ada-canonical-olcumu-2026-08-16.md.
+    //
     // Paylaşımlı parselde (bir adada birden çok site) tek bir doğru hedef
     // olmadığı için sayfa kendi kanonik sürümü olarak kalır ve noindex sürer.
     alternates: {
@@ -136,12 +145,16 @@ export default async function AdaPage({ params }: Props) {
       .map((item) => [adaRouteKey(item), item] as const)
   );
   const buNo = Number.parseInt(ada.no, 10);
-  // 4 komşu ada yeter: bu sayfalar noindex, ada→ada bağları PageRank'i noindex
-  // kümesinin içinde döndürüyordu (12 bağla kenar ağırlığının %22'si, PR
-  // kütlesinin %15,6'sı burada park ediyordu — grafta ölçüldü). Bağ sayısı
-  // düşünce sayfanın çıkış ağırlığı site/mahalle bağlarına kayar, değer
-  // dizindeki sayfalara geri akar. Ziyaretçi yine en yakın numaralı 4 adayı
-  // görür; kayıp yok.
+  // 4 komşu ada yeter: ada→ada bağları değeri ada kümesinin içinde döndürüyordu
+  // (12 bağla kenar ağırlığının %22'si, PR kütlesinin %15,6'sı burada park
+  // ediyordu — grafta ölçüldü). Bağ sayısı düşünce sayfanın çıkış ağırlığı
+  // site/mahalle bağlarına kayar, değer site sayfalarına geri akar. Ziyaretçi
+  // yine en yakın numaralı 4 adayı görür; kayıp yok.
+  // DÜZELTME (16.08): bu notun eski hâli gerekçeyi "bu sayfalar noindex" diye
+  // yazıyordu — noindex 03.08'de kaldırıldı, yani o hesap geçersiz. Bağ sayısını
+  // 4'te tutma kararı yine de geçerli, ama sebebi noindex değil: 16.08 GSC
+  // denetiminde 200 ada sayfasının 115'i KENDİ BAŞINA DİZİNDE ve site sayfasıyla
+  // yarışıyor; ada→ada bağı o rakibi besliyor.
   const ayniEtaptakiler = Array.from(ayniEtapMap.values())
     .sort(
       (a, b) =>

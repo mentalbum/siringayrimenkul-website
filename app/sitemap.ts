@@ -138,7 +138,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Bu sayfaların sitemap'te olmasının TEK amacı Google'ın o canonical'ı
     // bir kez görmesi — bkz. aşağıdaki uzun not. Tazelik damgası burada tam da
     // bunun için değerli: sayfa yeniden taranmazsa canonical hiç görülmüyor.
-    ada: new Date("2026-08-09"),
+    // 16.08: sayfadaki 5. SSS silindi (1. sorunun birebir tekrarıydı) — 818 ada
+    //        sayfasının görünen içeriği ve FAQPage işaretlemesi değişti, o yüzden
+    //        taban ilerletildi. Tarih SALT tarama zorlamak için ilerletilmez:
+    //        16.08 ölçümünde 200 ada sayfasının 166'sı 03.08'den beri hiç
+    //        taranmamıştı ve sahte tazelik damgası bu sorunu çözmez, Google
+    //        toplu damgayı yok sayar (bkz. AGENTS.md).
+    ada: new Date("2026-08-16"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
@@ -185,19 +191,32 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // yeniden tarayıp etiketi görmedi. 298 sitelik canlı SERP taramasında 51
   // sitede, site adı arandığında site sayfası yerine ada sayfası çıkıyordu.
   //
-  // Yeni çözüm: ada sayfasının canonical'ı artık site sayfasını gösteriyor
-  // (app/mahalleler/[mahalle]/adalar/[ada]/page.tsx). Ama canonical'ın işe
-  // yaraması için Google'ın sayfayı BİR KEZ taraması şart — sitemap dışında
-  // kaldığı sürece o tarama hiç gelmiyor. Bu yüzden tek siteli ada sayfaları
-  // düşük öncelikle sitemap'e alındı: Google tarayıp canonical'ı görsün,
-  // sayfayı site sayfasına katlasın.
+  // 02.08'deki çözüm: ada sayfasının canonical'ı site sayfasını göstersin, Google
+  // sayfayı bir kez tarayıp ikisini birleştirsin. Sitemap'e alınmalarının TEK
+  // gerekçesi o taramanın gelmesiydi.
+  //
+  // BU GEREKÇE 16.08'DE ÖLÇÜLDÜ VE ÇÜRÜDÜ (200 ada sayfası, GSC URL Inspection —
+  // scratchpad-karne/pws0/ada-canonical-olcumu-2026-08-16.md):
+  //   03.08 sonrası taranmış (yani yeni canonical'ı GÖRMÜŞ) : 34
+  //   Google canonical'ı KABUL etti                          :  2  (%6)
+  //   Google canonical'ı REDDETTİ, kendi adresini seçti      : 32
+  // Sebep teknik değil mantıksal: canonical yalnız birbirinin KOPYASI sayfalar
+  // arasında dinlenir. Ada sayfası (tapu niteliği, blok künyesi, komşu adalar,
+  // harita) site sayfasının kopyası değil; Google iki ayrı sayfa görüp ipucunu
+  // eliyor. Yani ada sayfası canonical yoluyla susturulamaz.
+  //
+  // Sayfalar YİNE DE sitemap'te kalıyor, ama artık başka bir gerekçeyle: 200
+  // sayfanın 166'sı 03.08'den beri hiç taranmamış (72'si HİÇ). 09.08'de başlıktan
+  // ticari kalıp söküldü ve o düzeltme de ancak taranırsa görünür. 28.07'de tam
+  // tersi denenmişti (sitemap'ten çıkarma) ve ters teptiği için geri alındı:
+  // sayfalar dizinde kaldı, düzeltmeyi taşıyan tarama hiç gelmedi.
   //
   // Paylaşımlı parseller (bir adada birden çok site) HARİÇ: onların kanonik
   // sürümü kendileri ve noindex sürüyor, sitemap'e girmezler.
   //
-  // BU GEÇİCİDİR: canonical'lar işlendikten sonra (Search Console'da ada
-  // sayfaları "alternatif sayfa, uygun kanonik etiketi var" durumuna geçince)
-  // burası tekrar kapatılmalı ki tarama bütçesi site sayfalarına kalsın.
+  // NOT: aşağıdaki priority/changeFrequency değerlerini Google resmen yok
+  // sayıyor (yalnız lastmod'a bakıyor) — burada bırakılmalarının sebebi Bing ve
+  // Yandex; tarama sırasına dair bir vaat değiller.
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) => {
     const gruplar = new Map<string, number>();
     for (const ada of getAllAdalar(mahalle.slug)) {
