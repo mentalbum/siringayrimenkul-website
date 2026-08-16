@@ -54,7 +54,15 @@ export const siteConfig = {
   yandexMapsUrl: "https://yandex.com.tr/maps/org/40827902036/",
   tiktokUrl: "https://www.tiktok.com/@siringayrimenkul",
   instagramUrl: "https://www.instagram.com/eryamansiringayrimenkul/",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61585267540417",
+  // Kullanıcı adı (vanity URL) artık verilmiş: sayfanın canlı `og:url` ve
+  // `canonical` değeri bu adres. Eski `profile.php?id=61585267540417` biçimi
+  // yalnızca **302 (geçici)** yönlendiriyor; Google geçici yönlendirmeyi
+  // kanonikleştirme sinyali saymadığı için hâlâ eski, sorgu parametreli adresi
+  // dizinde tutuyor. 16.08 ölçümü: `eryaman emlakçı site:facebook.com` içinde
+  // sayfamız 10. ve üstündeki 9 sonucun tamamında temiz kullanıcı adı var —
+  // tek yapısal kusurumuz URL biçimiydi. Buradan çıkan değer footer bağına ve
+  // `sameAs` dizisine gidiyor, yani ~1500 sayfa artık temiz adrese oy veriyor.
+  facebookUrl: "https://www.facebook.com/eryamanemlakci",
 } as const;
 
 export const mainNav = [
