@@ -158,12 +158,29 @@ export function getSiteBySlug(mahalleSlug: string, slug: string): Site | undefin
   return readJson<Site>(filePath);
 }
 
-// Site adının "çekirdeği": sondaki jenerik yerleşim tipi atılır.
+// Site adının "çekirdeği": sıra numarası ve sondaki jenerik yerleşim tipi atılır.
 // "Aktürk Sitesi" ve "Aktürk Blokları" aynı çekirdeğe iner ("aktürk").
 const YERLESIM_TIPI_EKI =
   /\s+(sitesi|site|blokları|bloklar|evleri|evler|konutları|konakları|villaları|apartmanı|rezidansı|rezidans|residence)$/i;
+// SIRA NUMARASI (2026-08-16): "Elit Yaşam Konutları 1" yerleşim tipi ekiyle
+// BİTMEDİĞİ için hiç eşleşmiyor, çekirdeği "elit yaşam konutları 1" kalıyordu —
+// yani Tunahan'daki "Elit Yaşam Evleri" ile aynı aileye inmiyor ve ikisi de
+// mahalle eki almıyordu. Ölçüm (16.08): GSC'de "elit yaşam evleri eryaman"
+// sorgusunda ÜÇ kaydımız birden yarışıyor (Tunahan poz 8,8 / ŞOA poz 10,3 /
+// Ata poz 7,0) ve aynı gün pws=0 taramasında "elit yaşam evleri emlakçı"
+// aramasında Tunahan'ın sayfası yerine ŞOA'nın "Elit Yaşam Konutları 1"
+// sayfası çıktı.
+// Etki alanı ölçüldü: yalnız 2 aile / 6 sayfa yeni kapsama giriyor
+// (Elit Yaşam ×4, Sümeyra ×2) — ikisi de gerçek ad ikizi.
+const SIRA_NUMARASI = /\s+\d+\b/g;
 function cekirdekAd(isim: string): string {
-  return isim.toLocaleLowerCase("tr").replace(YERLESIM_TIPI_EKI, "").trim();
+  return isim
+    .toLocaleLowerCase("tr")
+    .replace(SIRA_NUMARASI, " ")
+    .replace(/\s+/g, " ")
+    .trim()
+    .replace(YERLESIM_TIPI_EKI, "")
+    .trim();
 }
 
 // Başlık soneki mahalle adıyla açılacak site isimleri.
