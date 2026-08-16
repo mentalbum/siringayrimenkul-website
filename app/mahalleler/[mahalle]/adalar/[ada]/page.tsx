@@ -75,16 +75,33 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki burada da eklenmez —
     // site sayfalarında 2026-08-07'de kaldırılmıştı, ada sayfaları atlanmış ve
     // başlık 96 karaktere çıkıyordu (Google ~60'ta kesiyor).
+    // SİTE ADI BAŞLIKTAN ÇIKARILDI (2026-08-16, Özgün kararı) — ada sayfası site
+    // sayfasını yiyordu ve canonical bu işi çözemiyor.
+    //
+    // 09.08'de başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")
+    // sökülmüştü ama site adı kalmıştı; "STFA Blokları 17673/1 Ada" başlığı
+    // "stfa blokları emlakçı" sorgusuyla hâlâ eşleşiyordu. 16.08 pws=0
+    // ölçümünde Tunahan'ın 25 sitesinin 7'sinde ada sayfası site sayfasının
+    // ÖNÜNDE çıktı; 5'inde site sayfası ilk 10'da hiç yoktu.
+    //
+    // Neden canonical yetmedi: 200 ada sayfalık GSC denetiminde, yeni etiketi
+    // görmüş 34 sayfanın 32'sinde Google canonical'ı REDDETTİ (kabul %6).
+    // Canonical yalnız birbirinin KOPYASI sayfalar arasında dinlenir; bu sayfa
+    // site sayfasının kopyası değil. Ayrıntı: ada-canonical-olcumu-2026-08-16.md.
+    //
+    // Tanınırlık NEREDE KALIYOR: site adı H1'de, giriş cümlesinde (site
+    // sayfasına bağla) ve JSON-LD'de duruyor — 01.08'de "sayfa ilk bakışta
+    // tanınsın" diye alınan karar sayfa içinde korunuyor. Değişen yalnız arama
+    // sonucundaki satır: orada artık mahalle adı var, çünkü site adı orada
+    // dururken Google iki sayfamızı aynı sorguda yarıştırıyor.
+    //
+    // Ada numarası başlıkta kalır: "17666 ada satılık daire" tipi aramalar da
+    // karşılansın. ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki eklenmez
+    // (başlık 96 karaktere çıkıyordu, Google ~60'ta kesiyor).
     title: {
-      absolute:
-        entries.length > 1
-          ? `${mahalle.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`
-          : `${ada.site.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`,
+      absolute: `${mahalle.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`,
     },
-    description:
-      entries.length > 1
-        ? `${label} Ada'nın tapu niteliği, üzerindeki yapılar ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`
-        : `${ada.site.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
+    description: `${mahalle.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
     // ASIL SAYFA = SİTE SAYFASI (2026-08-02).
     //
     // Ölçüm: 298 sitelik canlı SERP taramasında 51 sitede Google, site adı
@@ -315,7 +332,12 @@ export default async function AdaPage({ params }: Props) {
 
       <CtaBanner
         className="mt-12"
-        baslik={`${adaEtiketi}'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
+        /* Site adı BU başlıktan çıkarıldı (16.08): sayfadaki en güçlü ikinci
+           eşleşme buydu — site adı + ticari niyet ("satmak/kiraya vermek") aynı
+           başlıkta buluşunca "<site adı> emlakçı" sorgusuna site sayfası kadar
+           iyi cevap veriyordu. Ada numarası yeterli bağlam: hemen üstteki H1
+           zaten site adını söylüyor. */
+        baslik={`${label} Ada'da Satmak veya Kiraya Vermek İstediğiniz Bir Eviniz mi Var?`}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <CtaButton
@@ -387,7 +409,9 @@ export default async function AdaPage({ params }: Props) {
       )}
 
       <FaqSection
-        title={`${adaEtiketi} Hakkında Sık Sorulan Sorular`}
+        /* Site adı çıkarıldı (16.08) — bkz. CTA başlığındaki not. Sorular zaten
+           ada numarasıyla kuruluyor (lib/faq.ts getAdaFaq). */
+        title={`${label} Ada Hakkında Sık Sorulan Sorular`}
         items={getAdaFaq(label, entries, mahalle)}
       />
     </div>
