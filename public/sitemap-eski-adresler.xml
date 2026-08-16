@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- GEÇİCİ SİTE HARİTASI — 2026-08-16, mahalle slug taşımasının (26.07) sindirimi için.
-     Buradaki 244 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
+     Buradaki 254 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
      YENİDEN TARAMADAN yönlendirmeyi göremiyor; ölçüm (16.08, GSC API): 967 sorguda
      kendi sayfalarımız yarışıyor ve bu yarışın %26'sı (7.527 gösterim) bu eski
      adreslerde sıkışmış durumda. Google'ın adres değişikliği rehberi bu durumda eski
@@ -261,4 +261,29 @@
        tazelemek kanibalizasyonu besler (bkz. ada-canonical-olcumu-2026-08-16.md). -->
   <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/camli-klima-bloklari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman/akasya-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <!-- MAHALLE KÖKLERİ (16.08 eklendi) — bu 10 adres listeye HİÇ girmemişti.
+       242 adres GSC gösterim verisinden türetilmişti ve mahalle kökleri o kesitte
+       görünmüyordu; oysa ölçüm bunların asıl sıkışma noktası olduğunu gösterdi:
+       90 günde mahalle sayfası gösteriminin %65'i (365'e 199) hâlâ ESKİ adreste.
+       GSC URL denetimi (16.08) sebebi tek tek doğruladı — Google'ın elindeki kopya
+       26.07 taşımasından ÖNCEden kalma:
+         /mahalleler/tunahan          "Submitted and indexed", son tarama 20.07
+         /mahalleler/seyh-samil       "Submitted and indexed", son tarama 16.07
+         /mahalleler/goksu            "Submitted and indexed", son tarama 28.06
+         /mahalleler/devlet|guzelkent|yesilova  "Excluded by noindex", son tarama 24-25.06
+       MEKANİZMANIN ÇALIŞTIĞI KANITLANDI: 05.08 sonrası yeniden taranan üç mahalle
+       (şeker 15.08, eryaman 05.08, ata 10.08) artık "Page with redirect" — yani
+       tarama gelince Google 308'i görüp yeni adrese katlıyor. Eksik olan tek şey
+       taramaydı, bu satırlar onu tetikliyor.
+       (susuz: "URL is unknown to Google" — eklenmedi, ortada sıkışmış sinyal yok.) -->
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/altay</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yesilova</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
 </urlset>
