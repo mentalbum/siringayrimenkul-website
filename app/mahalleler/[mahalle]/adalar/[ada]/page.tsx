@@ -8,6 +8,7 @@ import {
   getAllAdalar,
   getAllMahalleler,
   getMahalleBySlug,
+  mahalleKisaIsim,
   getSiteBoundary,
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -82,8 +83,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Ada numarası başlıkta kalır: "17666 ada satılık daire" tipi aramalar da
     // karşılansın. ABSOLUTE: kök şablonun "| Şirin Gayrimenkul" eki eklenmez
     // (başlık 96 karaktere çıkıyordu, Google ~60'ta kesiyor).
+    //
+    // UZUNLUK: mahalle adı "Mahallesi" ekiyle yazılınca ve "Bilgileri"
+    // kullanılınca en uzun mahallede 73 karaktere çıkıyordu — 10.08'de mahalle
+    // başlıklarında düzeltilen hatanın aynısı. Kısa ad + "Künyesi" ile bant
+    // 51-60'a indi, hepsi Google'ın kesme sınırının içinde.
     title: {
-      absolute: `${mahalle.isim} ${label} Ada — Tapu ve Blok Bilgileri | ${ustBolgeEtiketi(mahalle)}`,
+      absolute: `${mahalleKisaIsim(mahalle)} ${label} Ada — Tapu ve Blok Künyesi | ${ustBolgeEtiketi(mahalle)}`,
     },
     description: `${mahalle.isim} ${label} Ada'nın tapu niteliği, blok künyesi ve konum bilgileri. Bu adada daireniz varsa değerini konuşalım: ${siteConfig.phoneDisplay}.`,
     // ASIL SAYFA = SİTE SAYFASI (2026-08-02).

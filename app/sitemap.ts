@@ -117,7 +117,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        (67-95 karakter). Yeni biçim 55-68, hepsi görünür.
     // 09.08: site kartları tam açıklama yerine 220 karakterlik özet basıyor.
     // 15.08: Eryaman kolunda ana sayfaya "Eryaman emlakçı" çıpalı bağ eklendi.
-    mahalle: new Date("2026-08-15"),
+    // 16.08: mükerrer ada çipleri daraldı (173 → 29) — resmî etap listesinde
+    //        zaten görünen adalar tekrar edilmiyor, grubun tamamı listedeyse
+    //        yerine etap sayfasına giden tek satırlık not basılıyor.
+    mahalle: new Date("2026-08-16"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
