@@ -209,10 +209,11 @@ export default async function AdaPage({ params }: Props) {
   const adaJsonLd = {
     "@context": "https://schema.org",
     "@type": "Place",
-    name:
-      entries.length > 1
-        ? `${label} Ada — ${mahalle.isim}`
-        : `${label} Ada — ${ada.site.isim}`,
+    // Site adı çıkarıldı (16.08) — bkz. H1 notundaki gerekçe. Sayfadaki hangi
+    // site(ler)in bu parselde olduğu bilgisi kaybolmuyor: aşağıdaki description
+    // alanında ve görünür giriş cümlesinde site adı geçiyor ve site sayfasına
+    // bağ veriyor.
+    name: `${label} Ada — ${mahalle.isim}`,
     description: `${label} Ada, ${mahalle.isim} içinde yer alır (${entries
       .map((entry) => entry.site.isim)
       .join(", ")}).`,
@@ -259,9 +260,24 @@ export default async function AdaPage({ params }: Props) {
             </>
           )}
         </p>
-        {/* Sayfa başlığı da site adıyla açılır — ziyaretçi hangi yerleşime
-            baktığını ilk satırda görsün (bkz. generateMetadata notu). */}
-        <h1 className="mt-2 text-3xl sm:text-4xl">{adaEtiketi}</h1>
+        {/* H1'DEN SİTE ADI ÇIKARILDI (2026-08-16, Özgün kararı: "isim
+            aratmalarında ada sayfaları görünmesin; ada aratmasında görünebilir").
+            H1 sayfadaki en güçlü tek sinyaldi ve "STFA Blokları 17673/1 Ada"
+            biçimi site adı sorgusuyla tam eşleşiyordu.
+
+            NEDEN KAYIPSIZ: 90 günlük GSC sorgu dökümünde (1000 sorgu) ada
+            numarasıyla yapılmış ARAMA YOK — "1ada" (2 gösterim, poz. 24) dışında
+            hiçbiri; "ada" geçen sorguların tamamı site adının içindeki hece
+            ("meydan ada sitesi", "ada loft", "cabadağ blokları"). Yani site adı
+            burada dururken hiçbir arama kazandırmıyordu, sadece site sayfasıyla
+            yarışıyordu.
+
+            ZİYARETÇİ NE GÖRÜYOR: hemen üstteki mahalle/etap satırı ve hemen
+            alttaki giriş cümlesi ("… Ada, X Mahallesi içinde yer alan Y
+            Sitesi'nin bir parçasıdır") site adını söylüyor ve site sayfasına
+            bağ veriyor — o bağ artık bu sayfanın topladığı değeri site
+            sayfasına akıtan asıl kanal. */}
+        <h1 className="mt-2 text-3xl sm:text-4xl">{label} Ada</h1>
       </header>
 
       <div className={`mt-8 grid gap-8 ${ada.site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>

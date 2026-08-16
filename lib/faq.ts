@@ -219,6 +219,12 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
   const tekSite = entries.length === 1;
   const siteAdi = ada.site.isim;
   const siteIsimleri = entries.map((entry) => entry.site.isim).join(", ");
+  // SİTE ADI TEKRARLARI SEYRELTİLDİ (16.08, Özgün kararı: "isim aratmalarında
+  // ada sayfaları görünmesin"). Site adı bu blokta ÜÇ kez geçiyordu; ikisi
+  // ("… Ada'daki (X Sitesi) dairenizi", "bu adadaki ve X Sitesi'nde gerçekleşen")
+  // hiçbir bilgi eklemiyor, yalnız site adı + ticari niyet eşleşmesini
+  // güçlendiriyordu. Site adı yalnız "hangi sitede yer alıyor?" sorusunda
+  // kalıyor — orada sorunun cevabı zaten o.
   // Etap notu yalnız resmî listeyle doğrulanmışsa eklenir (lib/etap-onayli.ts).
   const dogrulanmisEtap = adaOnayliEtap(ada.no);
   const etapNot = dogrulanmisEtap ? ` ve Eryaman ${dogrulanmisEtap}. Etap sınırları içindedir` : "";
@@ -229,7 +235,7 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
     // artık evi olan sahibin sorusu; alıcı yönlendirmesi cevap içinde sürüyor.
     {
       soru: `${label} Ada'daki dairemi satmak istiyorum, nasıl ilerliyoruz?`,
-      cevap: `İlk adım doğru fiyat: ${label} Ada'daki (${siteIsimleri}) dairenizi bu adadaki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz; ardından tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın. (Daire arayanlar için güncel ilanlarımız sahibinden.com mağazamızdadır.)`,
+      cevap: `İlk adım doğru fiyat: ${label} Ada'daki dairenizi bu adadaki gerçek satış hareketliliğinden yola çıkarak birlikte değerliyoruz; ardından tanıtım, alıcı görüşmeleri ve tapu sürecini sizin adınıza biz yönetiyoruz. Bizi ${siteConfig.phoneDisplay} numarasından arayın. (Daire arayanlar için güncel ilanlarımız sahibinden.com mağazamızdadır.)`,
     },
     {
       soru: `${label} Ada'daki dairemi kiraya vermek istiyorum, kira bedeli ne olmalı?`,
@@ -237,7 +243,7 @@ export function getAdaFaq(label: string, entries: AdaEntry[], mahalle: Mahalle):
     },
     {
       soru: `${label} Ada'daki daire fiyatları ne durumda?`,
-      cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, bu adadaki ve ${tekSite ? bulunmaHaliKi(siteAdi) : "çevresindeki sitelerde"} gerçekleşen satış ve kiralamalardan okunur. Dairenizin güncel değeri için bizi ${siteConfig.phoneDisplay} numarasından arayın.`,
+      cevap: `Fiyatlar bu dönemde hızla değiştiği için ilanlarda görülen rakamlar çoğu zaman güncelliğini yitiriyor; sağlıklı fiyat, bu adadaki ve çevresindeki sitelerde gerçekleşen satış ve kiralamalardan okunur. Dairenizin güncel değeri için bizi ${siteConfig.phoneDisplay} numarasından arayın.`,
     },
     {
       soru: `${label} Ada hangi sitede yer alıyor?`,
