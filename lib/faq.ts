@@ -17,13 +17,16 @@ export interface FaqItem {
   semaDisi?: boolean;
 }
 
+/* "HANGİ İLÇEDE" SORUSU SİLİNDİ (2026-08-17, Özgün kararı — /mahalleler
+ * hub'ındaki aynı kalıpla birlikte). Bu soru bilgi arayanı çekiyordu, ev
+ * sahibini değil: 90 günlük ölçümde bu aileden gelen 1.129 gösterimin TIKI
+ * SIFIRDI. Ayrıca FAQPage işaretlemesinde durduğu için Google'ın "öne çıkan
+ * cevap" adayıydı — istemediğimiz görünürlük tam olarak orası.
+ * Coğrafi bağlam sayfada duruyor: mahalle kaydının uzunAciklama alanı ilçeyi
+ * söylüyor, başlık ve breadcrumb da öyle. Kaybolan tek şey bilgi sorgusuna
+ * verilen doğrudan cevap. */
 export function getMahalleFaq(mahalle: Mahalle, siteSayisi: number): FaqItem[] {
-  const items: FaqItem[] = [
-    {
-      soru: `${mahalle.isim} hangi ilçede yer alıyor?`,
-      cevap: `${mahalle.isim}, Ankara'nın ${mahalle.ilce} ilçesine bağlıdır.`,
-    },
-  ];
+  const items: FaqItem[] = [];
 
   if (siteSayisi > 0) {
     items.push({

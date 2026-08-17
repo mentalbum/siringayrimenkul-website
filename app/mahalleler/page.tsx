@@ -52,13 +52,24 @@ export default function MahallelerPage() {
           Eryaman Bölgesi
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Mahalleleri</h1>
-        {/* 15.08 Özgün kararı: "nereye bağlı" bilgi sorgusuna OYNAMIYORUZ —
-            aynı gün eklenen soru-cevap kalıbı geri alındı; ilçe bilgisi ticari
-            bağlam için cümle içinde kalır, öne çıkan sonuç hedeflenmez. */}
+        {/* "NEREYE BAĞLI" CÜMLESİ SÖKÜLDÜ (2026-08-17, Özgün kararı: "eryaman
+            nereye bağlı ve eryaman hangi ilçeye bağlı aratmasında görüntülenme
+            almayalım").
+            15.08'de bu sorguya oynayan soru-cevap kalıbı geri alınmıştı ama
+            giriş cümlesi ("Eryaman; Etimesgut ilçesine bağlı…") kalmıştı ve
+            sorunun BİREBİR cevabıydı. Ölçüm (90 gün, GSC sorgu×sayfa):
+              eryaman nereye bağlı           758 gösterim  0 tık  poz 9,3
+              eryaman hangi ilçeye bağlı     262 gösterim  0 tık  poz 9,8
+              + yazım varyantları            ~99 gösterim  0 tık
+            Toplam 1.119 gösterimin TAMAMI bu sayfaya geliyordu ve TEK TIK
+            getirmedi. Ev sahibi değil, bilgi arayan geliyor.
+            Yeni metinde "bağlı", "ilçe" ve "nereye" sözcükleri bilerek YOK.
+            Coğrafi bağlam kaybolmuyor: "Etimesgut" başlıkta duruyor ve mahalle
+            kayıtlarının uzunAciklama alanlarında geçiyor. */}
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman; Etimesgut ilçesine bağlı, planlı etap yapılaşmasıyla tanınan ve Ankara
-          metrosuna bağlı bir semt. 11 mahallenin tamamını ve çevresiyle birlikte 700&apos;den
-          fazla site ile rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz.
+          Eryaman&apos;ın 11 mahallesini ve çevresiyle birlikte 700&apos;den fazla site ile
+          rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz. Planlı etap düzeni ve
+          metro hattıyla Ankara&apos;nın en oturmuş yerleşim bölgelerinden biri.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">
           Evinizi satmak veya kiraya vermek istiyorsanız, mahallenizi seçerek o bölgedeki
