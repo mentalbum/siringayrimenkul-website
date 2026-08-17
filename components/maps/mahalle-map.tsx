@@ -112,6 +112,9 @@ function buildShapes(
   }
 
   const groupList = Object.values(groups);
+  // Tek site gösteriliyorsa harita bir SİTE SAYFASININ haritasıdır (mahalle ve
+  // etap haritaları çok sayıda site alır) — hedef seçimi buna göre değişir.
+  const tekSite = entries.length === 1;
   return Object.entries(groups).map(([key, g]) => {
     const paylasimli = g.siteler.length > 1;
     const isimler = g.siteler.map((s) => s.isim);
@@ -127,8 +130,21 @@ function buildShapes(
           ? `${isimler[0]} ${g.adaNo} Ada`
           : isimler[0],
       labelWidthMeters: ringWidthMeters(g.ring),
+      /* HEDEF SEÇİMİ:
+       *  - Paylaşımlı parsel (bir adada birden çok site): tek bir doğru site
+       *    yok, ortak ada sayfasına gider.
+       *  - SİTE SAYFASINDAYKEN çok parselli site: her parsel KENDİ ada
+       *    sayfasına gider. Eskiden hepsi site sayfasına gidiyordu, yani
+       *    ziyaretçi zaten üzerinde olduğu sayfaya tıklıyordu — hiçbir şey
+       *    olmuyordu (Özgün bildirimi, 17.08: "küçük haritada sayfaya
+       *    tıklayınca kendi adalara yönlendirmiyor"). Etiket zaten
+       *    "Aktürk Sitesi 46499 Ada" yazıyordu; bağ artık etiketle tutarlı.
+       *  - MAHALLE/ETAP haritasında (birden çok site gösterilirken) hedef
+       *    SİTE sayfası kalır. Oradaki ziyaretçi siteyi arıyor, parseli değil;
+       *    ayrıca trafiği ada sayfalarına dağıtmak istemiyoruz — ada sayfaları
+       *    site sayfalarıyla yarışıyordu (16.08 kanibalizasyon ölçümü). */
       href:
-        paylasimli && g.routeKey
+        (paylasimli || (tekSite && cokParselli)) && g.routeKey
           ? `/mahalleler/${g.mahalleSlug}/adalar/${g.routeKey}`
           : `/mahalleler/${g.siteler[0].mahalleSlug}/${g.siteler[0].slug}`,
     };
