@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound, permanentRedirect } from "next/navigation";
 import {
@@ -372,6 +373,46 @@ export default async function AdaPage({ params }: Props) {
           </div>
         )}
       </div>
+
+      {/* ADANIN İÇİNDEN SAHA FOTOĞRAFLARI (2026-08-17, Özgün kararı:
+          "fotoğrafların hepsini 46499 adanın içine yükleyelim, 46499'u açınca
+          uyumlu olsun").
+
+          Fotoğraf ADA düzeyinde tutuluyor (adalar[].gorseller), site düzeyinde
+          değil: bir site birden çok adaya yayılabiliyor (Aktürk Sitesi =
+          46499/2 + 46501/2) ve 46499'un bahçesini 46501 sayfasında göstermek
+          yanlış olur. Paylaşımlı parselde (entries.length > 1) galeri BASILMAZ:
+          orada hangi sitenin fotoğrafı olduğu belirsiz kalır.
+
+          İlk görsel öncelikli yüklenir (sayfanın en büyük görsel öğesi), geri
+          kalanı tembel. Filigran ve telif akışı: scripts/filigran.mjs. */}
+      {entries.length === 1 && (ada.gorseller?.length ?? 0) > 0 && (
+        <section className="mt-12">
+          <h2 className="text-xl">{`${label} Ada'nın İçinden`}</h2>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-muted">
+            {`${ada.site.isim} ${label} adasında kendi çektiğimiz fotoğraflar.`}
+          </p>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {ada.gorseller!.map((yol, i) => (
+              <div
+                key={yol}
+                className="overflow-hidden rounded-2xl border border-border bg-surface-muted"
+              >
+                <Image
+                  src={yol}
+                  alt={`${ada.site.isim} ${label} ada — saha fotoğrafı ${i + 1}`}
+                  width={1440}
+                  height={1080}
+                  sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 100vw"
+                  priority={i === 0}
+                  loading={i === 0 ? undefined : "lazy"}
+                  className="h-auto w-full object-cover"
+                />
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       <CtaBanner
         className="mt-12"

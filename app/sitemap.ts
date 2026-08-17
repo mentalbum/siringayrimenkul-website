@@ -151,6 +151,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        16.08 ölçümünde 200 ada sayfasının 166'sı 03.08'den beri hiç
     //        taranmamıştı ve sahte tazelik damgası bu sorunu çözmez, Google
     //        toplu damgayı yok sayar (bkz. AGENTS.md).
+    // 17.08: adalar[].gorseller dolu olan adalarda saha fotoğrafı galerisi
+    //        basılmaya başladı ve o görseller sitemap'te bildirilir oldu.
+    //        Şablon tabanı ilerletilmedi: değişiklik yalnızca görseli OLAN
+    //        adalarda görünür (bugün tek ada) ve o adanın tazeliği zaten kendi
+    //        içerik dosyasından geliyor — 818 sayfaya toplu damga basmak
+    //        AGENTS.md'nin uyardığı sahte tazelik olurdu.
     ada: new Date("2026-08-16"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
@@ -230,14 +236,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
       const key = adaRouteKey(ada);
       gruplar.set(key, (gruplar.get(key) ?? 0) + 1);
     }
+    // Ada sayfasındaki saha fotoğrafları (adalar[].gorseller) burada bildirilir.
+    // Sayfada Next'in /_next/image proxy'si üzerinden servis ediliyorlar ve
+    // Google o adresleri indekslemiyor — özgün yolu sitemap'ten vermek şart
+    // (site sayfalarında da aynı gerekçeyle yapılıyor, bkz. siteSayfalari).
+    const gorselMap = new Map<string, string[]>();
+    for (const ada of getAllAdalar(mahalle.slug)) {
+      if (ada.gorseller?.length) gorselMap.set(adaRouteKey(ada), ada.gorseller);
+    }
     return [...gruplar]
       .filter(([, adet]) => adet === 1)
-      .map(([key]) => ({
-        url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
-        lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.ada),
-        changeFrequency: "yearly" as const,
-        priority: 0.2,
-      }));
+      .map(([key]) => {
+        const gorseller = gorselMap.get(key);
+        return {
+          url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
+          lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.ada),
+          changeFrequency: "yearly" as const,
+          priority: 0.2,
+          ...(gorseller && { images: gorseller.map((y) => `${baseUrl}${y}`) }),
+        };
+      });
   });
 
   // dizinDisi yazılar sitemap'e girmez (noindex ile tutarlı — bkz. lib/types.ts).

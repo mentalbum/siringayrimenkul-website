@@ -22,6 +22,11 @@
  *   --temiz       hiçbir işaret basma — sahibinden.com ilan görseli için
  *                 (ilan kurallarına göre ilan fotoğrafında logo/web adresi yasak;
  *                 vitrin fotoğrafı doğrudan reddediliyor)
+ *   --sira 2      aynı yerleşimin ÇOK FOTOĞRAFLI galerisi için sıra numarası;
+ *                 dosya adı "<slug>-eryaman-2.jpg" olur. Numarasız çağrı
+ *                 "<slug>-eryaman.jpg" üretmeye devam eder (sayfa kartlarında
+ *                 ve og:image'de kullanılan ANA görsel odur — mevcut kayıtların
+ *                 yolu bozulmasın diye numarasız biçim korunuyor).
  */
 import sharp from "sharp";
 import path from "node:path";
@@ -56,7 +61,9 @@ const LOGO_YOLU = path.join(process.cwd(), "public", "brand", "sirin-logo-on-dar
 const OUT_DIR = TEMIZ
   ? path.join(process.cwd(), "portal-fotograflari")
   : path.join(process.cwd(), "public", "images", "siteler");
-const OUT = path.join(OUT_DIR, `${SLUG}-eryaman${TEMIZ ? "-temiz" : ""}.jpg`);
+const SIRA = arg("sira");
+const SIRA_EKI = SIRA ? `-${String(SIRA).replace(/[^0-9]/g, "")}` : "";
+const OUT = path.join(OUT_DIR, `${SLUG}-eryaman${SIRA_EKI}${TEMIZ ? "-temiz" : ""}.jpg`);
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
 const base = sharp(IN).rotate().resize(1440, 1080, { fit: "cover", withoutEnlargement: true });

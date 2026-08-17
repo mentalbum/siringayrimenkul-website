@@ -29,7 +29,15 @@
     {
       "no": "46499",
       "etap": "5",
-      "parsel": "2"
+      "parsel": "2",
+      "gorseller": [
+        "/images/siteler/akturk-sitesi-eryaman.jpg",
+        "/images/siteler/akturk-sitesi-eryaman-2.jpg",
+        "/images/siteler/akturk-sitesi-eryaman-3.jpg",
+        "/images/siteler/akturk-sitesi-eryaman-4.jpg",
+        "/images/siteler/akturk-sitesi-eryaman-5.jpg",
+        "/images/siteler/akturk-sitesi-eryaman-6.jpg"
+      ]
     },
     {
       "no": "46501",
@@ -40,5 +48,6 @@
   "zenginlestirildi": "2026-08-02",
   "alternatifAdlar": [
     "Tunahan Aktürk Blokları"
-  ]
+  ],
+  "gorsel": "/images/siteler/akturk-sitesi-eryaman.jpg"
 }
