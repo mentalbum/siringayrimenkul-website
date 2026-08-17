@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- GEÇİCİ SİTE HARİTASI — 2026-08-16, mahalle slug taşımasının (26.07) sindirimi için.
-     Buradaki 254 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
+     Buradaki 340 adres 308 ile yeni adreslerine yönleniyor. Google eski adresi
      YENİDEN TARAMADAN yönlendirmeyi göremiyor; ölçüm (16.08, GSC API): 967 sorguda
      kendi sayfalarımız yarışıyor ve bu yarışın %26'sı (7.527 gösterim) bu eski
      adreslerde sıkışmış durumda. Google'ın adres değişikliği rehberi bu durumda eski
@@ -286,4 +286,103 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/yesilova</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.3</priority></url>
+  <!-- 89 EKSİK SİTE ADRESİ (16.08). Liste ilk kurulduğunda GSC'nin sorgu×sayfa
+       dökümünden türetilmişti; o döküm gerçek talebin yalnız %41'ini gösteriyor
+       (Google gösterimlerin %59'unun sorgusunu gizliyor). SAYFA boyutuyla
+       yeniden sayınca 89 adres daha çıktı: 3.629 gösterim, 60 tık, TO %1,65 —
+       site geneli %2,28. Hepsi 26.07 taşımasının parçası ve 308 ile yeni site
+       sayfasına gidiyor; listedeki 254 adresle aynı cinsten, yarısını bildirip
+       yarısını bildirmemenin gerekçesi yoktu.
+       326 eski ADA adresi BİLEREK EKLENMEDİ (9.453 gösterim, 109 tık, TO %1,15):
+       tarama bütçesi belgelenmiş darboğaz (512 site sayfasının 128'i dizin dışı)
+       ve o gösterimlerin çoğu SİTE ADI aramalarından geliyor — oysa 16.08'de ada
+       sayfalarından site adı söküldü, yani Google'ı oraya götürsek aradığı adı
+       bulamayacak. 30.08'de haritanın işe yarayıp yaramadığı ölçüldükten sonra
+       yeniden değerlendirilecek. Liste: scratchpad/eksik-eski-ada.txt -->
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/beloren-manzara-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/tekirdag-park-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/serhatkent-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/camdali-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-life-residence</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/mia-concept-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yesilova/kayra-loft</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seker/zirve-loft</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/gul-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/susuz/maviler-ipek</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/maybak-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/ardic-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/metropark-concept</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/ciglik-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/metropark-plus</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yesilova/penta-5</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/yesiloz-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/dogakent-camlik-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/golde-luxe-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/sude-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/kazim-sari-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/susuz/serline-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/sahinbey-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/altay/mood-street</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/metromall-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/ilgaz-life</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/hill-tower-goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/address-goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/yuksel-bloklari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seker/address-enda</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/alina-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/okyanus-plaza</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/sehit-ferhat-koc-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman/ay-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman/beyaz-residence</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/tunahan/elit-yasam-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/relax-eryaman-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/guney-park-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/turkkonut-istas-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mood-goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/tuna-park-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/anadolu-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/aker-mucevher-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/susuz/bella-garden</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/altay/palmiye-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/park-sera-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seker/rainbow-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/tulip-life</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/ak-91-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/boyut-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman/dogakent-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/green-life-goksu-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/liderkent</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/mercankent-manzara-evleri</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/renk-villalari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/tugce-kent-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/akdam-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/basaksehir-ankara-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/arissa-goksu</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/belmi-kent</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/elele-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/mavi-ladin-konut</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/eston-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/golde-luxe-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/metro-yasam-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/neovadi-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yesilova/sertower-busidence</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/yeni-huzur-bahcesi-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/ozluce-guzelevim</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/ozuguzelkent-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu-maharmesi/admira-goksu-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seker/relax-line</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/akkonak-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/bati-sistemciler-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/atasayanlar-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/altin-basak-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/bilgi-sevgi-hosgoru-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/gulkent-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/erkent-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/akin-688-konutlari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/ma1-tower</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/tes-is-bloklari</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/altay/vatan-sitesi</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/unsal-rezidans</loc><lastmod>2026-08-16</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
 </urlset>
