@@ -547,6 +547,57 @@ export default async function SitePage({ params }: Props) {
               </figcaption>
             </figure>
           )}
+          {/* ADA ADA KÜÇÜK GALERİ (2026-08-17, Özgün: "5-6 fotoğraf atmıştım,
+              onları 46499 ada Aktürk başlığıyla bir kenarda tut, bu ekranda
+              görünsünler").
+
+              Fotoğraflar ADA kaydında duruyor (adalar[].gorseller) çünkü bir
+              site birden çok adaya yayılabiliyor — Aktürk Sitesi 46499/2 ve
+              46501/2. Burada da ada ada gruplanır: her grubun başlığı hangi
+              adadan çekildiğini söyler ve o adanın sayfasına bağlar. İkinci
+              ada çekildiğinde kendi başlığıyla ALTINA eklenir, karışmaz.
+
+              Küçük tutuluyor: büyük görsel zaten üstteki hero. Bunlar
+              "içeriden birkaç kare" hissi verir, sayfayı uzatmaz. */}
+          {site.adalar?.some((a) => a.gorseller?.length) && (
+            <div className="space-y-3">
+              {site.adalar
+                .filter((a) => a.gorseller?.length)
+                .map((a) => {
+                  const rota = a.parsel ? `${a.no}-${a.parsel}` : a.no;
+                  const etiket = a.parsel ? `${a.no}/${a.parsel}` : a.no;
+                  return (
+                    <div key={rota}>
+                      <Link
+                        href={`/mahalleler/${mahalle.slug}/adalar/${rota}`}
+                        className="text-xs font-semibold uppercase tracking-wide text-gold-dark hover:underline"
+                      >
+                        {`${etiket} Ada — ${site.isim}`}
+                      </Link>
+                      <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
+                        {a.gorseller!.map((yol, i) => (
+                          <Link
+                            key={yol}
+                            href={`/mahalleler/${mahalle.slug}/adalar/${rota}`}
+                            className="overflow-hidden rounded-lg border border-border transition-colors hover:border-gold"
+                          >
+                            <Image
+                              src={yol}
+                              alt={`${site.isim} ${etiket} ada — saha fotoğrafı ${i + 1}`}
+                              width={1440}
+                              height={1080}
+                              sizes="(min-width: 640px) 92px, 30vw"
+                              loading="lazy"
+                              className="h-auto w-full object-cover"
+                            />
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+            </div>
+          )}
           {/* AEO "önce cevap" kalıbı (Özgün onayı, 2026-07-29): ilk cümle
               müşteriye telefonda verilecek cevap gibi — blok/kat/tapu önde.
               Uzmanlık kanıtı ev sahibine güven verir; yapay zekâ asistanları da

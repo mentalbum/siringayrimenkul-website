@@ -45,7 +45,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/`, lastModified: g("2026-08-15"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
-    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-15")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
+    // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
+    //        bilgi sorgusuna oynamıyoruz (Özgün kararı; 1.119 gösterim / 0 tık).
+    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-17")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
@@ -124,7 +126,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 16.08: mükerrer ada çipleri daraldı (173 → 29) — resmî etap listesinde
     //        zaten görünen adalar tekrar edilmiyor, grubun tamamı listedeyse
     //        yerine etap sayfasına giden tek satırlık not basılıyor.
-    mahalle: new Date("2026-08-16"),
+    // 17.08: mahalle SSS'sinden "hangi ilçede yer alıyor?" sorusu silindi —
+    //        FAQPage işaretlemesinde duruyordu ve bilgi arayanı çekiyordu.
+    mahalle: new Date("2026-08-17"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
