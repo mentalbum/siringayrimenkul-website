@@ -40,6 +40,18 @@ export interface AdaBilgi {
    * bir arşiv. Kaynak: etap yönetiminin blok listesi (Wayback: eryaman1.com/
    * blok_yonetimi.php). Şu an yalnız veri katmanı — henüz sayfada basılmıyor. */
   bloklar?: string[];
+  /** BU ADANIN İÇİNDEN çekilmiş saha fotoğrafları, public/ altına göre yol.
+   *
+   * Neden site değil ADA düzeyinde: bir site birden çok adaya yayılabiliyor
+   * (Aktürk Sitesi = 46499/2 + 46501/2) ve fotoğraf hangi adanın içinden
+   * çekildiyse oraya aittir — 46499'un bahçesini 46501 sayfasında göstermek
+   * yanlış olur. Özgün kararı (2026-08-17): "fotoğrafların hepsini 46499
+   * adanın içine yükleyelim, 46499'u açınca uyumlu olsun."
+   *
+   * İlk görsel Site.gorsel ile AYNI dosya olmalı: o, kartlarda ve og:image'de
+   * kullanılan ana görsel. Filigran ve telif işleme akışı:
+   * scripts/filigran.mjs (--sira ile numaralı galeri üretir). */
+  gorseller?: string[];
 }
 
 export interface Site {
