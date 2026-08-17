@@ -24,16 +24,42 @@ yarisi hic aranmayan sayfalara gidiyordu; onlar artik listenin sonunda.
 NOT: talep SAYFA boyutundan okunur, sorgu x sayfa boyutundan DEGIL — Google
 gosterimlerin %59'unun sorgusunu gizliyor, o dosya gercek talebin %41'ini gosterir.
 
+
+## TUNAHAN — YENİDEN TARATILACAK (17.08, Özgün'ün görünüm kararları)
+
+Bunlar dizinde VAR ama Google'ın kopyası **26-29 Temmuz**'dan kalma — yani
+07.08'de alıcı dilinden ev sahibi diline çevirdiğimiz başlığı hiç görmemişler.
+SERP'te hâlâ "Eryaman X Sitesi Satılık Daire ve Kiralık Daire" çıkıyor.
+Özgün 25 Tunahan sayfasının tamamına "DEĞİŞSİN" dedi; ölçüm gösterdi ki sorun
+metin değil TARAMA. Dizin isteği zaten dizinde olan sayfada da yeniden taramayı
+tetikler — bu liste onun için.
+
+Sıra talebe göre. Biçim: <90 günlük gösterim> · son tarama
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sutek-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/klima-bloklari
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/metromall-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/kur-sitesi-46496-ada
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/elit-yasam-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/yardimci-bloklari
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/tunahan-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/soyak-sitesi
+
+AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
+ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
+bu sorun Tunahan'a özgü değil, korpus geneli.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri  <!-- 619 gos / 19 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  <!-- 219 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri  <!-- 218 gos / 4 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi  <!-- 200 gos / 2 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri  <!-- 181 gos / 6 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate  <!-- 165 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi  <!-- 148 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari  <!-- 148 gos / 5 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi  <!-- 139 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri  <!-- 137 gos / 6 tik -->
