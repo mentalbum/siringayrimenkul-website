@@ -34,7 +34,14 @@ interface MahalleMapProps {
 function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
   const map = useMap();
   const pathsRef = useRef(paths);
-  pathsRef.current = paths;
+  // Ref render sırasında değil efektte tazeleniyor (react-hooks/refs kuralı).
+  // Amaç aynı: `paths` her render'da yeni bir dizi olduğu için aşağıdaki
+  // efektin bağımlılığı olamıyor, ama efekt en güncel halkaları okuyabiliyor.
+  // Efektler bildirim sırasına göre çalıştığı için bu, fitBounds efektinden
+  // önce güncellenir.
+  useEffect(() => {
+    pathsRef.current = paths;
+  }, [paths]);
 
   useEffect(() => {
     const halkalar = pathsRef.current;
@@ -49,11 +56,17 @@ function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
     // Canlıda ölçüldü (2026-07-28): 18 bulanık, iki kademe altı net ve parsel
     // hâlâ baskın. Büyük parseller zaten 17'nin altında kaldığı için bu tavan
     // yalnız küçükleri sınırlar.
-    const dinleyici = google.maps.event.addListenerOnce(map, "idle", () => {
-      const z = map.getZoom();
-      if (typeof z === "number" && z > 17) map.setZoom(17);
-    });
-    return () => google.maps.event.removeListener(dinleyici);
+    const dinleyici: google.maps.MapsEventListener | undefined =
+      google.maps.event.addListenerOnce(map, "idle", () => {
+        const z = map.getZoom();
+        if (typeof z === "number" && z > 17) map.setZoom(17);
+      });
+    // Temizlik savunmacı: Maps yetkilendirmeyi reddettiğinde dinleyici
+    // undefined dönüyor ve sökülmede fırlayan hata sayfanın tamamını
+    // düşürüyor (aynı gerekçe: map-labels.tsx).
+    return () => {
+      if (dinleyici) google.maps.event.removeListener(dinleyici);
+    };
   }, [map]);
 
   return null;
