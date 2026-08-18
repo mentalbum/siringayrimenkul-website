@@ -25,6 +25,36 @@ NOT: talep SAYFA boyutundan okunur, sorgu x sayfa boyutundan DEGIL — Google
 gosterimlerin %59'unun sorgusunu gizliyor, o dosya gercek talebin %41'ini gosterir.
 
 
+
+## TUNAHAN — BAYAT ADA SAYFALARI (18.08) — site sayfasını bunlar yiyor
+
+Özgün 18.08'de "yüksel blokları emlakçı" aramasında şunu gördü ve sordu:
+"güncel halimiz bu muydu?"
+  SERP'te : "17662/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul"
+  CANLIDA : "Tunahan 17662/1 Ada — Tapu ve Blok Künyesi | Eryaman"
+Hayır — Google'ın kopyası 26 TEMMUZ'dan. Yani 09.08'de ada başlığından sökülen
+ticari kalıbı ve 16.08'de sökülen site adını HİÇ görmemiş.
+
+Kanibalizasyonun mekanizması tam burada: ada sayfası site sayfasını yeniyorsa,
+Google'ın elindeki ada kopyası HÂLÂ ticari başlıklı demektir. 16.08 ölçümünde
+site sayfasının önüne geçen 5 ada sayfası denetlendi:
+  17662-1 (Yüksel)      26.07  BAYAT  <- Özgün'ün gördüğü
+  17673-1 (STFA)        27.07  BAYAT
+  46512-9 (Su Damlası)  26.07  BAYAT
+  17659-1 (Öztaş)       26.07  BAYAT
+  46497-2 (Sarıgül)     11.08  güncel — yeni başlığı gösteriyor
+  17635-1 (Haznedaroğlu)16.08  güncel
+Yani BAYAT olan dördü site sayfasını yiyor, güncel olan ikisi zaten düzelmiş.
+İlgili site sayfaları (ör. yuksel-bloklari 16.08'de tarandı) GÜNCEL — sorun
+onlarda değil.
+
+Bunlar dizin isteği listesine site sayfalarıyla BİRLİKTE gönderilmeli.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17659-1
+
 ## TUNAHAN — YENİDEN TARATILACAK (17.08, Özgün'ün görünüm kararları)
 
 Bunlar dizinde VAR ama Google'ın kopyası **26-29 Temmuz**'dan kalma — yani
