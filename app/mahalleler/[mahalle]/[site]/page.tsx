@@ -529,75 +529,100 @@ export default async function SitePage({ params }: Props) {
 
       <div className={`mt-6 grid gap-8 sm:mt-8 ${site.koordinat ? "lg:grid-cols-[1.1fr_1fr]" : ""}`}>
         <div className="space-y-4">
-          {site.gorsel && (
-            <figure className="overflow-hidden rounded-2xl border border-border">
-              <Image
-                src={site.gorsel}
-                alt={`${site.isim} dış cephesi — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`}
-                width={1440}
-                height={1080}
-                preload
-                className="h-auto w-full object-cover"
-                sizes="(min-width: 1024px) 590px, 100vw"
-              />
-              <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
-                {`${site.isim} — ${mahalle.isim}${eryamanda ? ", Eryaman" : ""}${
-                  dogrulanmisEtap ? ` ${dogrulanmisEtap}. Etap` : ""
-                }`}
-              </figcaption>
-            </figure>
-          )}
-          {/* ADA ADA KÜÇÜK GALERİ (2026-08-17, Özgün: "5-6 fotoğraf atmıştım,
-              onları 46499 ada Aktürk başlığıyla bir kenarda tut, bu ekranda
-              görünsünler").
+          {/* ADA ADA ÇERÇEVELER (2026-08-18, Özgün kararı).
 
-              Fotoğraflar ADA kaydında duruyor (adalar[].gorseller) çünkü bir
-              site birden çok adaya yayılabiliyor — Aktürk Sitesi 46499/2 ve
-              46501/2. Burada da ada ada gruplanır: her grubun başlığı hangi
-              adadan çekildiğini söyler ve o adanın sayfasına bağlar. İkinci
-              ada çekildiğinde kendi başlığıyla ALTINA eklenir, karışmaz.
+              SORUN: Aktürk Sitesi İKİ adadan oluşuyor (46499/2 ve 46501/2) ama
+              yalnız 46499'un fotoğrafı vardı ve o tek kare sayfanın en büyük
+              öğesi olarak duruyordu. Özgün'ün bildirimi birebir: "burada 2 adet
+              Aktürk sitesi var, birini bu kadar büyük koyarsan diğeri yok
+              sanarlar."
 
-              Küçük tutuluyor: büyük görsel zaten üstteki hero. Bunlar
-              "içeriden birkaç kare" hissi verir, sayfayı uzatmaz. */}
-          {site.adalar?.some((a) => a.gorseller?.length) && (
-            <div className="space-y-3">
-              {site.adalar
-                .filter((a) => a.gorseller?.length)
-                .map((a) => {
+              ÇÖZÜM: sitenin ada fotoğrafı varsa BÜYÜK HERO BASILMAZ; onun
+              yerine her ada kendi küçük çerçevesini alır. Fotoğrafı olmayan ada
+              da çerçevesini alır — boş ama görünür, böylece ziyaretçi sitenin
+              kaç parçadan oluştuğunu görür ve eksik olanı "yok" sanmaz.
+
+              Boş çerçeve yalnız 2-3 adalı sitelerde basılır: yedi parselli bir
+              sitede yedi boş kutu göstermek bilgi değil gürültü olur, orada
+              sadece fotoğrafı olan adalar görünür.
+
+              Ada fotoğrafı OLMAYAN sitelerde hiçbir şey değişmez — eski büyük
+              hero aynen basılır (bugün 722 sayfa öyle). site.gorsel alanı da
+              yerinde kalıyor: og:image, JSON-LD ImageObject ve site kartları
+              onu kullanıyor. */}
+          {(() => {
+            const adalar = site.adalar ?? [];
+            const fotografliVar = adalar.some((a) => a.gorseller?.length);
+            if (!fotografliVar) {
+              return site.gorsel ? (
+                <figure className="overflow-hidden rounded-2xl border border-border">
+                  <Image
+                    src={site.gorsel}
+                    alt={`${site.isim} dış cephesi — ${yerEtiketi(mahalle)}${eryamanda ? ` ${mahalle.isim}` : ""}`}
+                    width={1440}
+                    height={1080}
+                    preload
+                    className="h-auto w-full object-cover"
+                    sizes="(min-width: 1024px) 590px, 100vw"
+                  />
+                  <figcaption className="border-t border-border bg-surface-muted px-4 py-2 text-xs text-muted">
+                    {`${site.isim} — ${mahalle.isim}${eryamanda ? ", Eryaman" : ""}${
+                      dogrulanmisEtap ? ` ${dogrulanmisEtap}. Etap` : ""
+                    }`}
+                  </figcaption>
+                </figure>
+              ) : null;
+            }
+            const bosDaGoster = adalar.length <= 3;
+            const gosterilecek = bosDaGoster ? adalar : adalar.filter((a) => a.gorseller?.length);
+            return (
+              <div className="grid gap-3 sm:grid-cols-2">
+                {gosterilecek.map((a) => {
                   const rota = a.parsel ? `${a.no}-${a.parsel}` : a.no;
                   const etiket = a.parsel ? `${a.no}/${a.parsel}` : a.no;
+                  const kareler = a.gorseller ?? [];
                   return (
-                    <div key={rota}>
+                    <section
+                      key={rota}
+                      className="overflow-hidden rounded-2xl border border-border bg-surface"
+                    >
                       <Link
                         href={`/mahalleler/${mahalle.slug}/adalar/${rota}`}
-                        className="text-xs font-semibold uppercase tracking-wide text-gold-dark hover:underline"
+                        className="block border-b border-border bg-surface-muted px-3 py-2 text-xs font-semibold uppercase tracking-wide text-gold-dark hover:underline"
                       >
                         {`${etiket} Ada — ${site.isim}`}
                       </Link>
-                      <div className="mt-2 grid grid-cols-3 gap-2 sm:grid-cols-6">
-                        {a.gorseller!.map((yol, i) => (
-                          <Link
-                            key={yol}
-                            href={`/mahalleler/${mahalle.slug}/adalar/${rota}`}
-                            className="overflow-hidden rounded-lg border border-border transition-colors hover:border-gold"
-                          >
-                            <Image
-                              src={yol}
-                              alt={`${site.isim} ${etiket} ada — saha fotoğrafı ${i + 1}`}
-                              width={1440}
-                              height={1080}
-                              sizes="(min-width: 640px) 92px, 30vw"
-                              loading="lazy"
-                              className="h-auto w-full object-cover"
-                            />
-                          </Link>
-                        ))}
-                      </div>
-                    </div>
+                      {kareler.length > 0 ? (
+                        <div className="grid grid-cols-3 gap-1.5 p-2">
+                          {kareler.map((yol, i) => (
+                            <Link
+                              key={yol}
+                              href={`/mahalleler/${mahalle.slug}/adalar/${rota}`}
+                              className="overflow-hidden rounded-md border border-border transition-colors hover:border-gold"
+                            >
+                              <Image
+                                src={yol}
+                                alt={`${site.isim} ${etiket} ada — saha fotoğrafı ${i + 1}`}
+                                width={1440}
+                                height={1080}
+                                sizes="(min-width: 640px) 92px, 30vw"
+                                loading="lazy"
+                                className="h-auto w-full object-cover"
+                              />
+                            </Link>
+                          ))}
+                        </div>
+                      ) : (
+                        <p className="px-3 py-6 text-center text-xs leading-relaxed text-muted">
+                          Bu adanın fotoğrafları hazırlanıyor.
+                        </p>
+                      )}
+                    </section>
                   );
                 })}
-            </div>
-          )}
+              </div>
+            );
+          })()}
           {/* AEO "önce cevap" kalıbı (Özgün onayı, 2026-07-29): ilk cümle
               müşteriye telefonda verilecek cevap gibi — blok/kat/tapu önde.
               Uzmanlık kanıtı ev sahibine güven verir; yapay zekâ asistanları da
