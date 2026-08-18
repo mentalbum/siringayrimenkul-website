@@ -31,12 +31,30 @@
  * gereksiz yere orada kalır. Ölçüm yolu (`site:` sorgusu değil — o yanıltıyor):
  *   node scripts/gsc-api.mjs denetle-dosya <url-listesi.txt>
  *
- * AÇIK İŞ: kota nedeniyle ölçülemeyen 211 sayfa (şeker'in kalanı, şeyh şamil,
- * susuz, tunahan, yavuz selim, yeşilova) bir sonraki kota penceresinde
- * denetlenip bu liste tamamlanmalı.
+ * TAMAMLANDI (2026-08-18): kalan 211 sayfa da denetlendi, 29'u daha dizin dışı
+ * çıktı. Artık 723 site sayfasının 722'si ölçülü (1 sayfa kotaya takıldı) ve bu
+ * liste TAHMİN İÇERMİYOR — her kayıt GSC URL Inspection ile tek tek doğrulandı.
+ *
+ * KORPUS ÖZETİ:
+ *   722 ölçülen · 567 dizinde · 155 DİZİN DIŞI (%21)
+ *   en açık mahalleler: Güzelkent 28, Şehit Osman Avcı 23, Ata 20, Cumhuriyet 20
+ *
+ * TAZELİK UYARISI: 16.08 taraması bir gün eskidi ve 17-18.08 nokta kontrolünde
+ * iki sayfa (mes-polaris-evleri, ata-life-sitesi) kendiliğinden dizine girmiş
+ * çıktı — listeden çıkarıldılar. Yani liste her gün biraz bayatlar; dizin
+ * isteği GÖNDERMEDEN ÖNCE o sayfayı tek tek doğrula, kota boşa gitmesin.
+ *
+ * ÖZEL VAKA — goksu-mahallesi/gsv-spor-sitesi bu listede DEĞİL: dizin sorunu
+ * değil, adres sorunu. GSC "Duplicate, Google chose different canonical" diyor
+ * ve seçtiği kanonik ESKİ adres (/mahalleler/goksu/gsv-spor-sitesi, 25.07'de
+ * taranmış). Eski adres zaten sitemap-eski-adresler.xml'de; çözüm iç bağ değil,
+ * o adresin yeniden taranması.
+ *
+ * SONRAKİ TAZELEME: bu liste kendiliğinden bayatlar — sayfa dizine girince
+ * çıkarılmalı. Ölçüm komutu (tahmin etme, ölç):
+ *   node scripts/gsc-api.mjs denetle-dosya <url-listesi.txt>
  */
 const DIZINSIZ: Record<string, readonly string[]> = {
-  // ---- 16.08 GSC URL Inspection ile ÖLÇÜLDÜ (512 site sayfası denetlendi) ----
   "altay-mahallesi": [
     "betontas-bloklari",
     "eryaman-park-evleri",
@@ -44,7 +62,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "vatan-sitesi",
   ],
   "ata-mahallesi": [
-    "ata-life-sitesi",
     "cagdas-onur-sitesi",
     "caglar-belde-sitesi",
     "cigdem-sitesi",
@@ -79,7 +96,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "botanik-park-evleri",
     "grup-dayanisma-sitesi",
     "konar-manzara-evleri",
-    "mes-polaris-evleri",
     "motto-goksu",
     "park-sera-evleri",
     "vera-vista",
@@ -183,26 +199,44 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "izoser-residence",
   ],
   "seyh-samil-mahallesi": [
+    "acar-sitesi",
+    "camlica-sitesi",
+    "gul-sitesi",
+    "kosk-birlik-sitesi",
+    "kuryap-sitesi",
     "liderkent",
+    "onur-sitesi",
+    "ozanadolu",
+    "ozluce-guzelevim",
+    "sumeyra-sitesi",
+    "yagan-kent",
+    "yesil-asiyan-sitesi",
+    "zadegan-sitesi",
   ],
-  // ---- ÖLÇÜLEMEDİ: 16.08 turunda günlük kota şeker-mahallesi hizasında bitti.
-  //      Aşağıdakiler 01.08 tahminidir; ölçülen mahallelerde bu tahminlerin
-  //      16'sının 14'ü YANLIŞ çıktı, o yüzden bunlara güvenilmemeli.
-  //      Tunahan istisna: bu üç sayfa 16.08'de tek tek denetlendi.
   "susuz-mahallesi": [
-    "basak-life",
-    "starlife",
-    "baskent-goksu",
-  ],
-  "yavuz-selim-mahallesi": [
-    "dogapark-sitesi",
-    "goksu-sitesi",
+    "lake-life",
+    "major-goksu",
+    "mavera-goksu",
+    "tatli-yamac-palmiye-evleri",
   ],
   "tunahan-mahallesi": [
+    "akturk-sitesi",
+    "camli-klima-bloklari",
     "ilgazlar-sitesi",
     "okyanus-plaza",
-    "camli-klima-bloklari",
-    "akturk-sitesi",
+  ],
+  "yavuz-selim-mahallesi": [
+    "acat-konutlari",
+    "erkaraca-sitesi",
+    "ozenkent-2-villalari",
+    "sahibin-sitesi",
+    "uyum-90-sitesi",
+    "yesil-goksu-konutyapi-kooperatifi",
+    "yunuskent-sitesi",
+  ],
+  "yesilova-mahallesi": [
+    "gokdemir-tower",
+    "lokasyon-eryaman",
   ],
 };
 
