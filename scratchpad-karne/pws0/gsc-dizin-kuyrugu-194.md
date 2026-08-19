@@ -226,3 +226,15 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 3. istekte (goksu/goksu-metrokent-sitesi) klavye olayları sayfaya ulaşmaz oldu
 > (Özgün Chrome'u aktif kullanıyor olabilir) — beceri kuralı gereği zarif durdum.
 > Kota: 2 kullanıldı, tahminen ~8 hak duruyor. Kalan 8 adres kuyruğun başında.
+> 19.08 (2. parti, "tekrar dene") — klavye ulaşmayınca akış tamamen JS'e
+> çevrildi: value setter + input event + sentetik Enter (keydown/press/up) ve
+> normalize edilmiş düğme metni (Türkçe İ tuzağı: "DİZİNE EKLENMESİNİ İSTE"
+> büyük harfli varyantı /i bayrağıyla eşleşmiyor). Bu akış kutuya odak
+> GEREKTİRMİYOR — bundan sonra hep bunu kullan.
+> Kabul edilen 9 istek daha: goksu-metrokent, bordo-platinum, kasmir-gol,
+> gulbaran, seyh-samil (kök), bahcen-eryaman, yavuz-selim (kök) + Tunahan bayat
+> ada 17662-1 (Yüksel) ve 17673-1 (STFA). natura-goksu eski adresi denetimde
+> "URL Google'da yok" çıktı — kendiliğinden düşmüş, kota harcanmadı.
+> GÜN TOPLAMI 11 kabul (kota ~10 tahmininden fazla çıktı). 12. istekte
+> (adalar/46512-9 Su Damlası) "Kota aşıldı" — İŞLENMEDİ, işaretsiz duruyor.
+> Yarının ilk işi: 46512-9 + 17659-1 (Öztaş adası) + kalan eski adresler.

@@ -47,14 +47,14 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri  <!-- 619 gos · 2026-07-10 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi  <!-- 553 gos · 2026-07-12 · 19.08 istek gönderildi -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-metrokent-sitesi  <!-- 415 gos · 2026-07-15 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/gulbaran-residence  <!-- 324 gos · 2026-07-09 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil  <!-- 301 gos · 2026-07-16 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker/bahcen-eryaman-konutlari  <!-- 287 gos · 2026-07-02 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim  <!-- 265 gos · 2026-07-21 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-metrokent-sitesi  <!-- 415 gos · 2026-07-15 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/gulbaran-residence  <!-- 324 gos · 2026-07-09 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil  <!-- 301 gos · 2026-07-16 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seker/bahcen-eryaman-konutlari  <!-- 287 gos · 2026-07-02 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim  <!-- 265 gos · 2026-07-21 · 19.08 istek gönderildi -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata/gold-life-konutlari  <!-- 264 gos · 2026-07-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata/mercan-life-buse-konutlari  <!-- 236 gos · 2026-07-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz/bordo-gol-evleri  <!-- 234 gos · 2026-07-10 -->
@@ -113,8 +113,8 @@ onlarda değil.
 
 Bunlar dizin isteği listesine site sayfalarıyla BİRLİKTE gönderilmeli.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1  <!-- 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1  <!-- 19.08 istek gönderildi -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17659-1
 
