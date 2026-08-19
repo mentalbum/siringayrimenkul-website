@@ -45,8 +45,8 @@ gösterim, ada sayfalarındakinden (5.230) daha büyük.
 
 Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri  <!-- 619 gos · 2026-07-10 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi  <!-- 553 gos · 2026-07-12 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri  <!-- 619 gos · 2026-07-10 · 19.08 istek gönderildi -->
+- [x] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi  <!-- 553 gos · 2026-07-12 · 19.08 istek gönderildi -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-metrokent-sitesi  <!-- 415 gos · 2026-07-15 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 -->
