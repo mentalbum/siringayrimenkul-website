@@ -219,3 +219,10 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 16.08 00:09 — ANA SAYFA dizin isteği KABUL EDİLDİ ('Dizine eklenmesi istendi', öncelikli tarama sırasına alındı). Denetim: 'URL Google'da mevcut / Sayfa dizine eklendi'. Ölçüm (pws=0): harita kutusu 1., organik 3. (sahibinden, Hepsiemlak önde) — dünkü ölçümle AYNI, düşüş yok; ancak SERP'te gösterilen açıklama hâlâ ESKİ metin, yani 15.08 değişiklikleri henüz taranmadı. Sıradaki: kuyruktaki 160 sayfa (günün kalan kotasıyla).
 > 16.08 00:46 — KENDİLİĞİNDEN GİRME ÖLÇÜMÜ: bekleyen 160 sayfa API'den yeniden denetlendi, **160'ının 160'ı hâlâ DIŞARIDA** (24 saatte tek sayfa girmemiş). Yani 12.08 dalgasının etkisi bitmiş; bu kuyruk kendiliğinden erimiyor. Buna karşılık sitenin toplam dizini 2.037'de sabit. Özgün'ün "elle yapmasak olmaz mı" sorusunun dürüst cevabı: bu 160 için OLMUYOR — ama bu sayfalar talebin en düşük olduğu siteler; öncelik onlar değil, kanibalizasyon ve 6-15 bandı.
 > 16.08 — KANİBALİZASYON TEMİZLİĞİ (PR #27): 967 sorguda kendi sayfalarımız yarışıyor (28.313 gösterim). %26'sı (7.527) 26.07 taşımasından kalan 242 eski adreste; yönlendirmeler 308 ile çalışıyor ama Google yeniden taramamış. Geçici site haritası (public/sitemap-eski-adresler.xml) yayına alındı ve GSC'ye bildirildi. KALDIRMA: adresler "Yönlendirmeli sayfa" kovasına geçince ya da en geç 15.10.2026.
+> 19.08 — ESKİ ADRES BİRLEŞTİRME turu başladı (amaç dizine girme değil, 308'in
+> görülüp gösterimin yeni adrese katlanması). 2 istek kabul: cumhuriyet/
+> mes-polaris-evleri (619 gös) ve ata/selvi-evleri-sitesi (553 gös) — ikisi de
+> "URL Google'da mevcut" hükmünden sonra "Dizine eklenmesi istendi" onayı alındı.
+> 3. istekte (goksu/goksu-metrokent-sitesi) klavye olayları sayfaya ulaşmaz oldu
+> (Özgün Chrome'u aktif kullanıyor olabilir) — beceri kuralı gereği zarif durdum.
+> Kota: 2 kullanıldı, tahminen ~8 hak duruyor. Kalan 8 adres kuyruğun başında.
