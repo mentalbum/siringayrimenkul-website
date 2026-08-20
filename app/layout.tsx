@@ -88,6 +88,11 @@ export const metadata: Metadata = {
   },
   verification: {
     google: "k1TcGp1CMeFpPUlbp91mnEqvCaHu1y1-si6t0F6xjOA",
+    // Yandex Webmaster doğrulaması (2026-08-20, Özgün'ün Yandex hesabıyla).
+    // Amaç: site-kayıt bağını resmileştirip bölge ayarını (Ankara/Etimesgut)
+    // açmak — Yandex'in resmî yerel sıralama tavsiyesi. SERP'te 7. sıradaki
+    // Yandex Maps satırımızı besler (sosyal SERP araştırması, İş 8).
+    yandex: "2cc35b6ab01f7026",
   },
 };
 
