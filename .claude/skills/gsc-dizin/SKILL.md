@@ -30,8 +30,12 @@ Google dizinine sokmak. Tek geçerli dizin-durumu kaynağı **GSC URL denetimi**
 - "Kota Aşıldı" gelen istek İŞLENMEMİŞTİR: işaretleme, deftere not düş, commit'le, dur.
 - Onay ("Dizine eklenmesi istendi") görülen sayfada butona İKİNCİ kez basmak da
   kota yakar (12.08 İlke Sitesi dersi). Onayı gördüysen o sayfa bitti.
-- Cron/otomasyon KURMA — Özgün 12.08'de elle-tetikli düzeni seçti. Oturum içinde
-  "devam" dedikçe sürdür.
+- GÜNLÜK OTOMATİK DAMLA (21.08, Özgün talimatı — 12.08'deki elle-tetikli karar
+  KALDIRILDI): her gün 22:47'de otomatik tur (CronCreate, oturum içi). Kural:
+  her adayı göndermeden ÖNCE API ile doğrula (kendiliğinden girenlere kota
+  harcanmaz); "Kota aşıldı"nda dur, ertesi gün devam; kuyruk tamamen bitince
+  Özgün'e haber verilir ve görev silinir. Sıra: Eryaman mahalleleri önce,
+  Yenimahalle grubu (ata/susuz/cumhuriyet) en sona; mahalle içi talep sıralı.
 
 ## Denetim akışı (tarayıcı)
 
