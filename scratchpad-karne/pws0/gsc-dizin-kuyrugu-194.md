@@ -260,3 +260,11 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > Kalan gerçek dizin dışı: 137. Ayrıca bugünkü 4 Tunahan isteği AYNI AKŞAM
 > dizine girdi (tarama 21:4x) — Tunahan açığı teyitli sıfır.
 
+> 21.08 — ERYAMAN PARTİSİ HAZIR, KOTA KAPALI. Özgün kararı: sıra dizin açığı
+> olan Eryaman mahallelerinde (Yenimahalle grubu Ata/Susuz/Cumhuriyet sona).
+> Eryaman grubunda işaretsiz dizin dışı 99 sayfa; talebe göre ilk 14:
+> polsan1-ayisigi-sitesi, cizgi-otesi-residence, bulvar-1071-sitesi, utkan-sitesi, gul-sitesi, yesiloz-sitesi, liderkent,
+> altas-relax-line, relax-eryaman-konutlari, gercek-92-sitesi, metropark-concept, arslanlar-sitesi, sehit-ferhat-koc-sitesi, elele-sitesi.
+> İlk denemede (polsan1-ayisigi, 221 gös, "URL Google'da yok" taze teyitli)
+> "Kota aşıldı" — dünkü 11'lik Tunahan turu ~21-22'de gönderilmişti, pencere
+> bu akşama kadar dolu. İstek İŞLENMEDİ, işaret yok. Akşam bu listeden devam.
