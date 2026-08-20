@@ -104,7 +104,14 @@ export default async function RootLayout({
     // İnsanlar bizi "Eryaman Şirin Gayrimenkul" diye de arıyor (Yandex kaydımız
     // da bu adla); ayrıca başka illerde aynı adlı firmalar var — alternateName
     // marka aramasında doğru işletmeyi ayırt etmeye yardım eder.
-    alternateName: ["Eryaman Şirin Gayrimenkul", "Şirin Gayrimenkul Eryaman"],
+    // "Eryaman Emlakçı" 20.08'de eklendi: sosyal profillerimizin görünen adı bu
+    // biçimde (2026-08 profil metinleri kararı) ve araştırma raporu genç domain'i
+    // GBP kimliğiyle birleştirmek için alternateName'i öneriyor. Yıldız/puan YOK.
+    alternateName: [
+      "Eryaman Şirin Gayrimenkul",
+      "Şirin Gayrimenkul Eryaman",
+      "Eryaman Emlakçı Şirin Gayrimenkul",
+    ],
     description: siteConfig.description,
     image: `${siteConfig.url}/images/ofis-ic-mekan.jpg`,
     logo: organizationLogo,
