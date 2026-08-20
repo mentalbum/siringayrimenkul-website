@@ -42,7 +42,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 15.08: ana sayfa "kim" bloğuyla yeniden düzenlendi (güvenilir emlakçı
     //        pasajı SSS'ten görünür metne çıktı, blog SSS altına indi, meta
     //        description 229→119 karakter, alıcı hitabı kalktı).
-    { url: `${baseUrl}/`, lastModified: g("2026-08-15"), changeFrequency: "weekly", priority: 1 },
+    // 20.08: "Ofisimiz" paragrafı kısa/tam cümlelere bölündü — SERP kesitindeki
+    //        özne uyumsuzluğu ("yapıyor" + "veriyoruz") giderildi (Özgün bildirimi).
+    { url: `${baseUrl}/`, lastModified: g("2026-08-20"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —

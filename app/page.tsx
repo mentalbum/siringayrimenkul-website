@@ -286,6 +286,13 @@ export default function HomePage() {
                 faktörü değil. Cümle iyelik ekiyle kurulmuyor ("emlakçısı olarak"
                 doğru Türkçe ama tam dizi kırılır); "arayan ev sahipleri için"
                 kalıbı hem doğru Türkçe hem diziyi bozmadan taşıyor. */}
+            {/* CÜMLE BÜTÜNLÜĞÜ (2026-08-20, Özgün bildirimi): eski kuruluş
+                "danışmanlığı yapıyor, ... hizmeti sunuyoruz" idi — Google, SERP
+                kesitini bu paragraftan derleyip telefon ve başlıkla birleştirince
+                özne uyumsuzluğu ("yapıyor" + "veriyoruz") çirkin görünüyordu.
+                Artık KISA ve TAM cümleler: Google hangi kesiti alırsa alsın
+                tek başına bütün okunur. "Eryaman emlakçı arayan ev sahipleri
+                için" tam dizisi aynen korunuyor (2026-08-08 kararı). */}
             . Eryaman emlakçı arayan ev sahipleri için{" "}
             <Link href="/eryamanda-ev-satmak" className="font-semibold text-gold-dark hover:underline">
               ev satış
@@ -294,9 +301,9 @@ export default function HomePage() {
             <Link href="/eryamanda-ev-kiraya-vermek" className="font-semibold text-gold-dark hover:underline">
               kiralama danışmanlığı
             </Link>{" "}
-            yapıyor,{" "}
+            yapıyoruz.{" "}
             <Link href="/ev-degerleme" className="font-semibold text-gold-dark hover:underline">
-              satış öncesi ev değerleme
+              Satış öncesi ev değerleme
             </Link>{" "}
             hizmeti sunuyoruz; talep eden müşterilerimiz için 3D sanal tur da çekiyoruz. Güncel
             ilanlarımız{" "}
