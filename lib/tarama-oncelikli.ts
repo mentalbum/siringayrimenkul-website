@@ -39,6 +39,18 @@
  *   722 ölçülen · 567 dizinde · 155 DİZİN DIŞI (%21)
  *   en açık mahalleler: Güzelkent 28, Şehit Osman Avcı 23, Ata 20, Cumhuriyet 20
  *
+ * OTOPSİ BULGUSU (2026-08-20) — BAĞ POMPASI DİZİNE SOKMUYOR, BEKLENTİYİ DÜZELT:
+ * 723 sayfanın gelen iç bağı build çıktısından sayıldı ve dizin durumuyla
+ * çakıştırıldı. Sonuç TERS: dizin dışı sayfalar ortalamanın ÜSTÜNDE bağ alıyor
+ * (26,8'e 18,2; 30+ bağ alanların %69'u dizin dışı) — çünkü bu mekanizma onlara
+ * zaten ekstra bağ pompalıyor. İçerik zenginliği farkı SIFIR (açıklama 887'ye
+ * 883 kr, özellik 5,9'a 5,9, koordinat/sınır ~%100 her iki kümede). Tek gerçek
+ * ayırıcı SORGU TALEBİ: dizindekilerin 90 günlük medyan gösterimi 79, dizin
+ * dışıların 3. Yani Google aranmayan sayfayı erteliyor (Illyes: tarama talebi).
+ * DERS: bu listeye daha fazla bağ eklemek dizine sokmaz; dosya yine de kalıyor
+ * çünkü tarama sıklığını destekliyor ve zararı yok. Dizine sokan kanıtlı araç
+ * dizin isteği damlası (14.08: 8/8 <24 saat) + sayfanın aranır olması.
+ *
  * TAZELİK UYARISI: 16.08 taraması bir gün eskidi ve 17-18.08 nokta kontrolünde
  * iki sayfa (mes-polaris-evleri, ata-life-sitesi) kendiliğinden dizine girmiş
  * çıktı — listeden çıkarıldılar. Yani liste her gün biraz bayatlar; dizin
