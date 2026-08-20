@@ -62,7 +62,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi ← 20.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari ← 15.08 dizin dışı teyit
@@ -135,9 +135,9 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi ← 15.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari ← 20.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi ← 20.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza ← 20.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/uzuner-konutlari ← 15.08 DİZİNDE (kendiliğinden)
@@ -238,3 +238,20 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > GÜN TOPLAMI 11 kabul (kota ~10 tahmininden fazla çıktı). 12. istekte
 > (adalar/46512-9 Su Damlası) "Kota aşıldı" — İŞLENMEDİ, işaretsiz duruyor.
 > Yarının ilk işi: 46512-9 + 17659-1 (Öztaş adası) + kalan eski adresler.
+> 20.08 ~21:40-22:15 — TUNAHAN TURU (Özgün: "dizine eklenmesi gerekenleri
+> tunahan'dan başla hallet"). Önce API'den doğrulandı: 4 Tunahan site sayfası
+> hâlâ dizin dışı (akturk "URL is unknown to Google", diğer üçü "Discovered");
+> dünden devir 2 bayat ada (46512-9, 17659-1) ise DİZİNDE ama kopya 26.07'den —
+> onlara istek yeniden-tarama amaçlı gitti. GÜN TOPLAMI 11 KABUL:
+> [dizin dışı 4] akturk-sitesi, camli-klima-bloklari, ilgazlar-sitesi,
+> okyanus-plaza; [bayat ada 2] adalar/46512-9, adalar/17659-1; [yeniden-taratma
+> listesinden 5] mavicam-sitesi, sutek-sitesi, klima-bloklari, metromall-sitesi,
+> kur-sitesi-46496-ada. 12. istekte (su-damlasi-sitesi) "Kota aşıldı" —
+> İŞLENMEDİ, işaretsiz; yarın ilk sıra onda, sonra elit-yasam-evleri,
+> haznedaroglu-bloklari, yardimci-bloklari, tunahan-sitesi, soyak-sitesi.
+> Teknik not: GSC kutusuna sentetik Enter İŞLEMİYOR; çalışan akış = kutuya
+> GERÇEK tıklama (kutu boşalır, açılır çıkar) + gerçek type + gerçek Enter;
+> hüküm/istek JS ile okunup tıklanıyor (çift tıklama deseni hâlâ gerekli).
+> Bugünle birlikte TUNAHAN'IN DİZİN AÇIĞI SIFIRLANDI: kuyruktaki 160'lık dizin
+> dışı listede Tunahan kalmadı.
+

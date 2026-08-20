@@ -115,8 +115,8 @@ Bunlar dizin isteği listesine site sayfalarıyla BİRLİKTE gönderilmeli.
 
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17662-1  <!-- 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1  <!-- 19.08 istek gönderildi -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17659-1
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17659-1  <!-- 20.08 istek gönderildi (yeniden tarama) -->
 
 ## TUNAHAN — YENİDEN TARATILACAK (17.08, Özgün'ün görünüm kararları)
 
@@ -129,11 +129,11 @@ tetikler — bu liste onun için.
 
 Sıra talebe göre. Biçim: <90 günlük gösterim> · son tarama
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sutek-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/klima-bloklari
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/metromall-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/kur-sitesi-46496-ada
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sutek-sitesi  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/klima-bloklari  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/metromall-sitesi  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/kur-sitesi-46496-ada  <!-- 20.08 istek gönderildi (yeniden tarama) -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/elit-yasam-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari
