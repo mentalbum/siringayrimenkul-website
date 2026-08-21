@@ -35,3 +35,11 @@
 ## ÖLÇÜM
 3 hafta sonra (≈31.08) GSC Performans > 3 ay kesitini yeniden çek; 8-11
 bandının TO'su %1,0'dan değişmiş mi bak. Tek ölçümle karar verme.
+
+## 21.08 EKİ — SERP'te yanlış sayfa çıkaran BAYAT site sayfaları (4'ü de dizinde, son tarama 26-27.07)
+# Kanıt: pws=0 ölçümünde site sorgusu mahalle/adaş sayfaya gidiyor; GSC API "Submitted and indexed"
+# ama tarama tarihi 26-27 Temmuz = Google'daki kopya hâlâ eski başlıklı. Dizin isteği = yeniden tarama tetiği.
+https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence
+https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower
+https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence
+https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari
