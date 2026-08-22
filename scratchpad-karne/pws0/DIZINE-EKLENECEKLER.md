@@ -360,3 +360,17 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
+
+## ADA-TARAMA SIRALAMA KURALI (22.08 gece — İHLAL ETME)
+
+18 sorguda dizinsiz SİTE sayfasının vitrinini şu an ADA sayfamız tutuyor
+(arzutas 18644-1, cozum-kent 18480-1, elele 18454-1, gozde-2 18652-1, ipek-yapi
+18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
+portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
+yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
+uyum-90 47603-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
+KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
+sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
+düşer; erken tazelersek vitrin tamamen boşalır). Site dizine girince ada
+tazelenir → kanibalizasyon temiz kapanır (Yüksel/Sarıgül deseni).
