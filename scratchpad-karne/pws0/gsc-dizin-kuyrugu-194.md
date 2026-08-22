@@ -296,3 +296,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > grubu (anadolu-vizyon, ap-istway, ata-yildiz-bati, basaksehir-ankara, batihan, botanik-park, konar-manzara,
 > motto-goksu, park-sera). Tarama tamamlanınca tam liste netleşir; akşam 22:47 damlası kotayı yarın sürdürür.
 > 22.08 — Tunahan SERP turu teşhisi: su-damlasi-sitesi son tarama 29.07 (bayat, SERP'te eski ticari başlık, #4→#5) → akşam damlasında İLK SIRA (caglar-belde'den sonra). yuksel-bloklari dün (21.08) tarandı, istek GEREKMEZ, yansıma bekleniyor.
+> 22.08 ~15:00 — su-damlasi yeniden-tarama isteği DENENDİ → "Kota Aşıldı" (öğle turunun 11 isteği pencereyi doldurdu), işlenmedi. 22:47 damlası + yarın sırası: 1) caglar-belde (dünkü söz) 2) su-damlasi-sitesi 3) tunahan-sitesi (en bayat, 26.07) 4) adalar/17662-1 (bayat ada, Yüksel'i yiyor). Hepsi Tunahan ilk-3-dışı kampanyası; "mevcut" hükmü İSTEĞİ ENGELLEMEZ, amaç yeniden tarama.
