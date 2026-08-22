@@ -63,3 +63,6 @@ https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/nil-my-home
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/dalgic-residence
 https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
 https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri
+https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza
+https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi
+https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/yuksel-bloklari

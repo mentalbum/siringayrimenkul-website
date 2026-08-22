@@ -295,3 +295,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > Kalan unknown adayları (dizin-tarama-2026-08-22.tsv): caglar-belde, mizan, rayli-sistemciler + Cumhuriyet
 > grubu (anadolu-vizyon, ap-istway, ata-yildiz-bati, basaksehir-ankara, batihan, botanik-park, konar-manzara,
 > motto-goksu, park-sera). Tarama tamamlanınca tam liste netleşir; akşam 22:47 damlası kotayı yarın sürdürür.
+> 22.08 — Tunahan SERP turu teşhisi: su-damlasi-sitesi son tarama 29.07 (bayat, SERP'te eski ticari başlık, #4→#5) → akşam damlasında İLK SIRA (caglar-belde'den sonra). yuksel-bloklari dün (21.08) tarandı, istek GEREKMEZ, yansıma bekleniyor.
