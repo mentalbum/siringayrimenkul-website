@@ -204,6 +204,30 @@ AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
 bu sorun Tunahan'a özgü değil, korpus geneli.
 
+## ŞEYH ŞAMİL — DİZİNDE AMA BAYAT SİTE SAYFALARI (22.08 gece SERP turu)
+
+GSC API teyitli: dizindeler ama kopya 26.07–03.08 dönemi (eski şablon). İlk 10
+dışılar; ilaç metin değil YENİDEN TARAMA (Sarıgül 7→2 kanıtı). Kota açılınca
+dizin-dışılardan artan hak bunlara:
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ak-kent-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/baris-sitesi ← 03.08
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/eston-bloklari ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/mavera-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/melis-sitesi ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/nisan-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi ← 28.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/selinkent-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi ← 26.07 (ad yapısal zor: 'Site Konut' jenerik)
+
+DOKUNMA notları: sumeyra #2'de bayat kopyayla — tazeleme İSTENMEZ (bayat başlık
+sorguyla eşleşiyor). serender 18.08 taze taranmış ama sıralamıyor — tarama işi
+değil, izlemeye alındı. duskent #2 / kackar #1 sıralıyor; dizin isteği zararsız
+ama acele değil.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -351,6 +375,10 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kackar-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi
@@ -377,7 +405,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
