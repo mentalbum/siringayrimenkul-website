@@ -2,26 +2,22 @@
   "isim": "Kardelen Sitesi",
   "slug": "kardelen-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
-  "aciklama": "Kardelen Sitesi, Güzelkent Mahallesi'nde aynı adı taşıyan iki ayrı yerleşkeden oluşur. Villa dokusundaki bölüm, TKGM kayıtlarına göre tapuda '16 Blok Kargir Dubleks Ev' niteliğiyle kayıtlı 5.347 m²'lik parselde; Kemal Sonnur Parkı'na komşu apartman bölümü ise tapuda '6 Blok Kargir Apartman' niteliğiyle kayıtlı 5.708 m²'lik parselde yer alır — iki parsel de kat mülkiyetlidir. Yerel emlak kayıtlarında apartman blokları 'Kardelen 2' adıyla da anılır. Bu sitede satılık veya kiralık daireniz mi var? Dubleks ile apartman dairesinin alıcı ve kiracı profili birbirinden farklıdır; doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen yerel emlakçınızla birlikte belirleyin.",
+  "aciklama": "Kardelen Sitesi, Güzelkent Mahallesi'nde Kemal Sonnur Parkı'na komşu konumda yer alan bir apartman sitesidir. TKGM kayıtlarına göre site, tapuda '6 Blok Kargir Apartman' niteliğiyle kayıtlı 5.708 m²'lik kat mülkiyetli parselde yer alır. Yerel emlak kayıtlarında 'Kardelen 2' adıyla da anılır; Yavuz Selim Mahallesi'nin villa bölgesindeki Kardelen Sitesi ise ayrı bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen yerel emlakçınızla birlikte belirleyin.",
   "koordinat": {
-    "lat": 39.997726,
-    "lng": 32.610049
+    "lat": 39.997102,
+    "lng": 32.620143
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/kardelen-sitesi-boundary.geojson",
   "adalar": [
-    {
-      "no": "19504",
-      "parsel": "1"
-    },
     {
       "no": "18453",
       "parsel": "1"
     }
   ],
   "ozellikler": [
-    "16 dubleks ev + 6 apartman bloğu (tapu)",
-    "İki mevki, iki parsel: 5.347 m² + 5.708 m² (TKGM)",
-    "Kat mülkiyetli parseller (TKGM)",
+    "6 apartman bloğu (tapu)",
+    "Parsel ~5.708 m², kat mülkiyetli (TKGM)",
+    "Kemal Sonnur Parkı'na komşu",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
   "zenginlestirildi": "2026-08-22",
