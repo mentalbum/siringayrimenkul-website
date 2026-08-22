@@ -1614,3 +1614,59 @@ verilir; ayrı bir yerleşimse Hekimler'in parseli/koordinatı yanlış, yeniden
 tapu ayrıntısı (8.505 m² / 28 kat) metne YAZILMADI; kayıttaki "Kat mülkiyetli parsel (TKGM)"
 maddesi olduğu gibi bırakıldı. `adalar`, `koordinat`, `sinirGeoJSON` alanlarına dokunulmadı.
 Hekimler kaydına hiç dokunulmadı.
+
+## Er-Ay 3 = Şehit Ferhat Koç mükerrerlik DOĞRULAMASI (2026-08-22 gece — karar Özgün'de)
+
+**Soru:** `guzelkent-mahallesi/er-ay-3-sitesi` ile `guzelkent-mahallesi/sehit-ferhat-koc-sitesi`
+aynı fiziksel site mi? (22.08 hakem bulgusunun sahada doğrulanması.)
+
+**Kadastro kanıtı (TKGM canlı, 22.08):** Nokta sorgusu (39.985368/32.603035) → **18645/1,
+"6 Katlı A,B,C,D,E,F Bloklardan Oluşan Betonarme Apartman Ve Arsası", 4.880 m², Kat Mülkiyet,
+durum=1 (açık), halef zinciri YOK**; doğrudan sorgu (124123/18645/1) aynı sonucu verdi.
+Tek parsel, tek tapu varlığı. İki kaydın koordinatları ~0,7 m arayla bu parselin içinde;
+iki boundary.geojson'un halka koordinatları köşe köşe AYNI (er-ay-3 MultiPolygon sarmalı,
+ŞFK düz Polygon — içerik özdeş, aynı TKGM izinden).
+
+**KEOS numarataj denemesi:** Parsel KEOS'ta tek nesne (OBJECTID 14900, geometri bizimkiyle
+birebir). Güzelkent'in en yakın 13 sokağının kapı kayıtları tarandı (~220 kapı; hem PARSEL_ID
+eşlemesi hem "ada 0" numarataj parsellerinin geometrik testi): **18645/1'e bağlı kapı kaydı
+hiç girilmemiş** — komşu 18643/18644'te 6'şar kapı var, 18645 boş. Numarataj katmanında veri
+boşluğu; hakemlik edemedi ama gerek de yoktu (Doğan City/Anka Vega'daki "hangi parsel kimin"
+sorusu burada yok — iki kayıt zaten aynı parseli, aynı sınırı, aynı 6 bloğu yazıyor).
+
+**Ad senaryosu DOĞRULANDI (Eray-3 → Şehit Ferhat Koç yeniden adlandırma):**
+- Yandex toponimi tam parselin üstünde (41 m): "Şehit Ferhat Koç Sitesi, Güzelkent Mah.".
+- Yandex'te Eray ailesi: Eray 1 + Eray 2 (Topçu), **Eray 4 (Güzelkent, 444 m — bizim
+  eray-4 = 18658/1)**, Eray 5 (Ertuğrulgazi/Sincan) VAR; **"Eray 3" hiçbir yerde YOK** —
+  numaralı ailede 3'ün deliği tam ŞFK'nın oturduğu parselde. Klasik yeniden-adlandırma deseni.
+- Ferhat Koç gerçek Etimesgut şehidi (kaymakamlık anma sayfası; ilçede adına ilkokul + park).
+- bilgiemlak hâlâ ESKİ adla taşıyor: "Eray-3 Sitesi (18645 Ada)" + 8-A..8-F blok sayfaları
+  (er-ay-3 kaydındaki "8-A'dan 8-F'ye" blok adlandırmasının kaynağı da bu dizin).
+- GSC 28g: "şehit ferhat koç sitesi" sorgusu 8 gösterim/poz 4,6 — halk YENİ adı arıyor;
+  "eray 3" ailesinden hiçbir sorgu üst listeye girmemiş.
+
+**GSC dizin + gösterim fotoğrafı (canlı API denetimi 22.08 gece):**
+- ŞFK yeni slug (`guzelkent-mahallesi/…`): **Discovered - currently NOT indexed, hiç taranmamış** (!)
+- ŞFK eski slug (`guzelkent/…`): dizinde (bayat, 17.07) — 32 gos / 1 tık / poz 4,5 (12.08 dökümü)
+- er-ay-3 yeni slug: dizinde (26.07) — 33 gos / 1 tık / poz 7,2
+- er-ay-3 eski slug: dizinde (bayat, 17.07) — 55 gos / 0 tık / poz 7,9
+Sitenin ~120 gösterimlik sinyali üç bayat URL'ye bölünmüş durumda; güncel adı taşıyan tek
+sayfa (ŞFK yeni slug) dizinde bile değil.
+
+**ÖNERİ (uygulanMADI — birleştirme/silme kararı Özgün'de, gösterimler-düşmesin kuralı):**
+1. Yaşayan kayıt: **sehit-ferhat-koc-sitesi** (sahadaki güncel ad; şehit adı taşıyan sayfa
+   varyant sayfasına 301'lenmez, tersi olur).
+2. er-ay-3-sitesi.json + boundary silinir; ŞFK `alternatifAdlar`'a "Er - Ay 3 Sitesi" ve
+   "Eray 3 Sitesi" eklenir ("Eray-3 Sitesi" zaten var). er-ay-3'ün özgün olguları ŞFK metnine
+   taşınır: 8-A–8-F yerel blok adlandırması + Arzutaş/Gördoğu-Şen ardışık ada komşuluğu.
+3. next.config.ts "birleştirilen kayıtlar" bölümüne iki kural:
+   `/mahalleler/guzelkent/er-ay-3-sitesi` ve `/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi`
+   → `/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi` (kalıcı).
+4. SIRALAMA ŞARTI: önce ŞFK yeni slug dizine girsin (kuyrukta zaten kayıtlı; istek sırasında
+   öne alınmalı) — dizinsiz hedefe 301 açıp sıralanan er-ay-3 sayfalarını (SERP #3-4)
+   boşluğa göndermeyelim. 301'ler dizin onayından SONRA canlıya.
+5. İçerik değişikliğinde `npm run lastmod -- --yalniz-gecmis` + aynı commit'e lastmod.json.
+
+**Özgün'e soru:** Sahada tabela/yönetim bugün ne diyor — "Şehit Ferhat Koç Sitesi" mi?
+"Eray 3" adı sakinlerce hâlâ aktif kullanılıyor mu? (Evet/evet ise kurgu yukarıdaki gibi;
+onay gelince 2-3-5 tek PR'da, 4'teki dizin isteği önce.)
