@@ -60,3 +60,6 @@ https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman
 https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam
 https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari
 https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/nil-my-home
+https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/dalgic-residence
+https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
+https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri

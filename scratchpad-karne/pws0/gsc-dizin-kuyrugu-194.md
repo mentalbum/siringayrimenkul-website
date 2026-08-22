@@ -274,3 +274,6 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > dizin isteği gönderilsin. Ayrıca polsan1-ayisigi-sitesi "Discovered - not indexed" teyit edildi (22.08).
 > 22.08 — İKİNCİ "URL unknown" vakası: /mahalleler/ata-mahallesi/trend-life-sitesi (canlı, sitemap'te,
 > Google hiç görmemiş). Gold Stone ile birlikte akşam damlasında ÖNCELİKLİ istek.
+> 22.08 — ÜÇÜNCÜ "URL unknown": /mahalleler/altay-mahallesi/ilbeyi-sitesi. DESEN OLUŞTU (Gold Stone,
+> Trend Life, İlbeyi): GSC kapsam raporunda hiç görünmeyen keşfedilmemiş küme — 137 "Discovered"
+> listesinin DIŞINDA. Fırsat olunca 723 sayfanın tamamı API'den taranıp "unknown" sayımı yapılmalı.
