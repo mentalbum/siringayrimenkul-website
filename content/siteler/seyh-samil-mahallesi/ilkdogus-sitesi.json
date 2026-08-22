@@ -1,5 +1,8 @@
 {
   "isim": "İlkdoğuş Sitesi",
+  "alternatifAdlar": [
+    "İlk Doğuş Sitesi"
+  ],
   "slug": "ilkdogus-sitesi",
   "mahalleSlug": "seyh-samil-mahallesi",
   "koordinat": {
