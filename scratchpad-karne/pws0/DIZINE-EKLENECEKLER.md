@@ -48,6 +48,7 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri  <!-- 619 gos · 2026-07-10 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi  <!-- 553 gos · 2026-07-12 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-metrokent-sitesi  <!-- 415 gos · 2026-07-15 · 19.08 istek gönderildi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2  <!-- 22.08: 16.08 SERP'inde sıralanan URL buydu; 308→yeni slug birleşsin (dizin-istegi-kuyrugu.md:282'den taşındı) -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
@@ -117,6 +118,7 @@ Bunlar dizin isteği listesine site sayfalarıyla BİRLİKTE gönderilmeli.
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17673-1  <!-- 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46512-9  <!-- 20.08 istek gönderildi (yeniden tarama) -->
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/17659-1  <!-- 20.08 istek gönderildi (yeniden tarama) -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/adalar/46493-2  <!-- 22.08 teşhis: Ilgazlar sorgusunda bayat kopya #9, site sayfası #4'te; 16.08 denetiminden atlanmıştı -->
 
 ## TUNAHAN — YENİDEN TARATILACAK (17.08, Özgün'ün görünüm kararları)
 

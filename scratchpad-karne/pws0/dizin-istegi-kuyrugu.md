@@ -279,5 +279,5 @@ site sayfasına aktarır.
       Yüksel Blokları emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/adalar/18690-1
       Yeşilöz Sitesi emlakçı sorgusunda 6. sırada — site sayfasının yerine çıkıyor
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2
+- [>] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2  <!-- 22.08 DIZINE-EKLENECEKLER.md'ye taşındı (eski-adres bölümü), burada işlem yapma -->
       Ilgazlar Sitesi emlakçı sorgusunda 7. sırada — site sayfasının yerine çıkıyor
