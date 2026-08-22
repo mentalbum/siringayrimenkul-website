@@ -245,6 +245,13 @@ DOKUNMA notları: demirkent 14.08 TAZE taranmış ama sıralamıyor (Sincan OSB 
 adaşları) — tarama işi değil. oray 05.08 + referans 05.08: adaş baskınlığı yapısal
 (Kadıköy Oray; Referans Gayrimenkul ofis markası) — tarama düşük öncelik.
 
+## YEŞİLOVA — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
+
+GSC API teyitli; ilk 10 dışılar, kopya 26.07:
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega ← 26.07 (Vega Emlak ofis adaşı da baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-city ← 26.07 (müteahhit IG baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life ← 26.07 (müteahhit sitesi baskın)
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -416,6 +423,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
