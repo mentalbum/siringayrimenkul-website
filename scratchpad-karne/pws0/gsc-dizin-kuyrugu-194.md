@@ -277,3 +277,21 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 22.08 — ÜÇÜNCÜ "URL unknown": /mahalleler/altay-mahallesi/ilbeyi-sitesi. DESEN OLUŞTU (Gold Stone,
 > Trend Life, İlbeyi): GSC kapsam raporunda hiç görünmeyen keşfedilmemiş küme — 137 "Discovered"
 > listesinin DIŞINDA. Fırsat olunca 723 sayfanın tamamı API'den taranıp "unknown" sayımı yapılmalı.
+
+## 22.08 ÖĞLE TURU — 11 istek KABUL (kota 12.'de doldu; pencere beklenenden erken açıldı)
+- [x] /mahalleler/guzelkent-mahallesi/goksu-sitesi ← 22.08 istek gönderildi (YENİ sayfa, bugün canlıya çıktı)
+- [x] /mahalleler/ata-mahallesi/gold-stone-evleri ← 22.08 istek gönderildi (unknown→sitemap'ten keşfedilmişti)
+- [x] /mahalleler/ata-mahallesi/trend-life-sitesi ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/altay-mahallesi/ilbeyi-sitesi ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/mercan-life-buse-konutlari ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/altay-mahallesi/betontas-bloklari ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/panorama-gold ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/guldede-sitesi ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/rusen-park-evleri ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/manzara-evleri ← 22.08 istek gönderildi (unknown)
+- [x] /mahalleler/ata-mahallesi/cagdas-onur-sitesi ← 22.08 istek gönderildi (unknown)
+- [ ] /mahalleler/ata-mahallesi/caglar-belde-sitesi ← 22.08 KOTA AŞILDI, işlenmedi — yarın ilk sıra
+> Not: kardelen-sitesi denetlendi → "URL Google'da mevcut" (kota harcanmadı; güncel içerik lastmod'la taranacak).
+> Kalan unknown adayları (dizin-tarama-2026-08-22.tsv): caglar-belde, mizan, rayli-sistemciler + Cumhuriyet
+> grubu (anadolu-vizyon, ap-istway, ata-yildiz-bati, basaksehir-ankara, batihan, botanik-park, konar-manzara,
+> motto-goksu, park-sera). Tarama tamamlanınca tam liste netleşir; akşam 22:47 damlası kotayı yarın sürdürür.
