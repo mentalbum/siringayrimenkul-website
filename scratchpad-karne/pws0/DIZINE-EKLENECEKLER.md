@@ -57,6 +57,9 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/postakent-sitesi  <!-- 22.08 SERP #4'te eski slug (#1 yeni); 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18652-1  <!-- 22.08 Gözde 2 sorgusunda #2 eski slug ada -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18450-1  <!-- 22.08 Portakal Çiçeği 2 sorgusunda #4 eski slug ada -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/elit-nar-cicegi  <!-- 22.08 SERP #4'te eski slug (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/metrokent-villalari  <!-- 22.08 SERP #3-5 çift kopya; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/turaykent-sitesi  <!-- 22.08 SERP #2'de eski slug (#1 yeni); 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
@@ -170,6 +173,23 @@ sıralı listede zaten bekliyor; oradaki sıra bozulmasın).
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi  <!-- 22.08: bayat 25.07; SERP ilk 10 dışı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi  <!-- 22.08: SERP #2 ama başlık çok eski 'Emlakçısı' + eski description; yeniden tarama -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/akkonak-sitesi  <!-- 22.08: SERP #2 ama kopya Temmuz'dan ('ücretsiz değerlendirme'li eski description) -->
+
+## YAVUZ SELİM — DİZİNDE AMA BAYAT SİTE SAYFALARI (22.08 SERP turu teşhisi)
+
+SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-29.07'den. Yeniden tarama isteği.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/eylul-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozharitacilar-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/safir-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/taskent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman  <!-- 4-10 arası (#6), bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4, bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/konut-sitesi  <!-- bayat ama sorgu yapısal jenerik; düşük öncelik -->
 
 AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
