@@ -143,6 +143,17 @@ Sıra talebe göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/tunahan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/soyak-sitesi
 
+## GÜZELKENT — DİZİNDE AMA BAYAT SİTE SAYFALARI (22.08 SERP turu teşhisi)
+
+SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-27.07'den (eski ticari başlık).
+Yeniden tarama isteği gönderilecek (dizinsiz Güzelkent sayfaları yukarıdaki talep
+sıralı listede zaten bekliyor; oradaki sıra bozulmasın).
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/aksu-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/erenkoy-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulenkent-sitesi
+
 AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
 bu sorun Tunahan'a özgü değil, korpus geneli.
