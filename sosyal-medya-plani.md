@@ -45,7 +45,8 @@ bandında ya da hesabı yok (Aganta ~214, FB sayfaları 117-460 beğeni; Premium
 Beyaz'ın IG'si bulunamadı). Tek büyük hesap franchise gücüyle RE/MAX Note (~8.955,
 150+ danışman). **TikTok'ta doğrulanmış tek bir Eryaman ofis hesabı yok — alan boş
 ve biz zaten içerideyiz.** Bölgenin etkileşim devi emlak dışı: @eryamancanli
-(~36K, haber hesabı) — işbirliği/tanıtım hedefi olarak not.
+(~36K, haber hesabı) — yalnız bölge nabzını izlemek için bilinir; işbirliği hattı
+KAPALI (aşağıdaki karar).
 
 ## EYLEM PLANI
 
@@ -137,6 +138,10 @@ aynı zamanda içerik anı — müşterinin YAZILI izniyle "hayırlı olsun" kar
   kullanılmaz; bio'lara yorum sayısı/puan yazılmaz; IG bio'suna telefon yazılmaz
   (07.08 kısıtlama dersi).
 - Basın/PR hattı kapalı (07.08 Özgün kararı) — bu plan o hattı yeniden açmaz.
+- **Hiç kimseyle iş birliği/sponsorlu tanıtım yapılmaz (Özgün kararı, 2026-08-22:
+  "kimseyle iş birliği yapmayacağız")** — @eryamancanli dahil; influencer/hesap
+  işbirliği hattı TAMAMEN kapalı, yeniden önerilmez. Büyüme yalnız kendi
+  içeriğimizle organik yürür.
 - Takipçi/etkileşim SATIN ALINMAZ; sıralamaya etkisi sıfır, hesaba risk gerçek.
 - Site `<title>`'ları 07.09'a kadar donuk — bu plan zaten site şablonlarına dokunmuyor.
 - Sosyal medya "SEO'yu doğrudan yükseltir" diye anlatılmaz — mekanizma SERP
@@ -148,8 +153,7 @@ aynı zamanda içerik anı — müşterinin YAZILI izniyle "hayırlı olsun" kar
    "ilan yasağı" kuralından (07-08.08) önce yüklenmiş. Öneri: SİLME (Nisan videosu
    dizindeki en güçlü içeriğimiz); bundan sonrası kural-uyumlu formatlarla.
    Karar Özgün'ün.
-2. **@eryamancanli işbirliği:** ~36K'lık yerel haber hesabında tanıtım ÜCRETLİ
-   iştir; "Eryaman'ın konut hafızası" açısıyla tek seferlik deneme düşünülebilir.
-   Bütçe kararı Özgün'ün.
+2. ~~@eryamancanli işbirliği~~ — **KARARA BAĞLANDI (2026-08-22): kimseyle iş
+   birliği yapılmayacak.** Yapılmayacaklar listesine taşındı.
 3. **Video çekim düzeni:** haftada 2 video ritmi telefon + basit gimbal ile
    sürdürülebilir; dış çekim hizmeti alınacaksa ayrı bütçe kararı.
