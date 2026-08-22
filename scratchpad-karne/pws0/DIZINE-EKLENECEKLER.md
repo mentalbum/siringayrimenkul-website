@@ -49,6 +49,14 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [x] https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi  <!-- 553 gos · 2026-07-12 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/goksu-metrokent-sitesi  <!-- 415 gos · 2026-07-15 · 19.08 istek gönderildi -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/adalar/46493-2  <!-- 22.08: 16.08 SERP'inde sıralanan URL buydu; 308→yeni slug birleşsin (dizin-istegi-kuyrugu.md:282'den taşındı) -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/er-ay-3-sitesi  <!-- 22.08 SERP #3'te eski slug, yeni sayfa #4'ün ÖNÜNDE; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/gozde-91-sitesi  <!-- 22.08 SERP #5'te eski kopya; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/ulas-sitesi  <!-- 22.08 SERP #3-4 çift kopya; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/yenigun-isigi-sitesi  <!-- 22.08 SERP #2-3 çift kopya; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari  <!-- 22.08 SERP #4'te eski slug (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/postakent-sitesi  <!-- 22.08 SERP #4'te eski slug (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18652-1  <!-- 22.08 Gözde 2 sorgusunda #2 eski slug ada -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18450-1  <!-- 22.08 Portakal Çiçeği 2 sorgusunda #4 eski slug ada -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
