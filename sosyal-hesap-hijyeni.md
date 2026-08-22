@@ -44,6 +44,19 @@
 
 ## C. Facebook doğrulaması **[SEN, ~2 dk]** → sonucu Claude'a bildir
 
+> **DURUM (2026-08-22, ekran görüntüsüyle teyit):** Sayfa adı "Eryaman Emlakçı
+> Şirin Gayrimenkul" yapıldı, kullanıcı adı **eryamanemlakci** alındı, bio'da
+> NAP + yetki belgesi var. `lib/site-config.ts` yeni vanity adrese çevrildi.
+> KALAN üç kontrol: (1) `facebook.com/siringayrimenkull` hâlâ açılıyor mu? —
+> açılıyorsa AYRI bir sayfa demektir (aşağıdaki C3 uygulanır: bizimse
+> birleştir/kapat, değilse taklit bildir); yönlendiriyor/404 veriyorsa eski
+> kullanıcı adıydı, konu kapandı. (2) `profile.php?id=61585267540417` yeni
+> sayfaya mı gidiyor? — gitmiyorsa ortada eski bir mükerrer sayfa var,
+> birleştir/sil. (3) Kategori "Emlak Danışmanı" görünüyor → planlanan
+> **"Emlak Acentesi"** (ofis kategorisi; GBP ile tutarlı). Ayrıca C2'deki
+> vitrin işleri (Hakkında'ya §3 metni + site linki, WhatsApp/Ara butonları,
+> saatler) hâlâ yapılacaklar listesinde.
+
 1. Tarayıcıda `facebook.com/profile.php?id=61585267540417` aç (sayfa yöneticisi hesabıyla ya da çıkış yapılmış tarayıcıdan):
    - Adres çubuğu kendiliğinden **`/siringayrimenkull/`**'a dönüyorsa → **AYNI SAYFA**, kayıp sayfa yok. C2'ye geç.
    - Dönmüyorsa: sayfa paneli → **Ayarlar → Kullanıcı adı** alanına bak. Kullanıcı adı boşsa ve `siringayrimenkull` başka bir sayfaysa → C3'e geç.

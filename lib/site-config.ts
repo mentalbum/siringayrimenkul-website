@@ -54,7 +54,11 @@ export const siteConfig = {
   yandexMapsUrl: "https://yandex.com.tr/maps/org/40827902036/",
   tiktokUrl: "https://www.tiktok.com/@siringayrimenkul",
   instagramUrl: "https://www.instagram.com/eryamansiringayrimenkul/",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61585267540417",
+  // Vanity URL'ye geçildi (2026-08-22): sayfa adı "Eryaman Emlakçı Şirin
+  // Gayrimenkul", kullanıcı adı eryamanemlakci (Özgün panelden aldı, ekran
+  // görüntüsüyle teyitli). Eski profile.php?id=61585267540417 biçimi Google'da
+  // hiç indekslenmiyordu — kullanıcı adlı kanonik adres indekslenir.
+  facebookUrl: "https://www.facebook.com/eryamanemlakci/",
 } as const;
 
 export const mainNav = [
