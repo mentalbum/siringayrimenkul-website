@@ -153,6 +153,15 @@ sıralı listede zaten bekliyor; oradaki sıra bozulmasın).
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/erenkoy-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulenkent-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kardelen-sitesi  <!-- 22.08: bayat 27.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/mesa-sitesi  <!-- 22.08: bayat 26.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi  <!-- 22.08: bayat 26.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/portakal-cicegi  <!-- 22.08: bayat 29.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/safi-apak-sitesi  <!-- 22.08: bayat 27.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sahinbey-sitesi  <!-- 22.08: bayat 26.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi  <!-- 22.08: bayat 25.07; SERP ilk 10 dışı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi  <!-- 22.08: SERP #2 ama başlık çok eski 'Emlakçısı' + eski description; yeniden tarama -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/akkonak-sitesi  <!-- 22.08: SERP #2 ama kopya Temmuz'dan ('ücretsiz değerlendirme'li eski description) -->
 
 AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
