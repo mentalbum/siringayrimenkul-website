@@ -78,6 +78,15 @@ KAPALI (aşağıdaki karar).
 **Tek çekim → üç platform:** her video IG Reels + TikTok + FB Reels'e aynı anda.
 Ek üretim maliyeti yok; üç profilin de "aktif hesap" sinyali beslenir.
 
+> **AKTARIM YOLU (Özgün'ün mevcut akışı, 22.08 düzeltmesi):** TikTok → IG →
+> (otomatik) FB zinciri doğru; tek risk TikTok'tan İNDİRİLMİŞ videoyu IG'ye
+> yüklemek. TikTok indirmesi logo+kullanıcı adı filigranı taşır ve Instagram
+> filigranlı Reels'in erişimini resmen düşürür (2021'den beri açık politika).
+> Kural: ham dosya telefonda kalır, TikTok'a da IG'ye de AYNI HAM DOSYA
+> yüklenir; indirme kullanılmaz. IG→FB otomatik paylaşım aynen kalır (işletme
+> SAYFASINA gittiği bir kez kontrol edilir). FB açıklamayı IG'den kopyaladığı
+> için arama-cümlesi kalıbı IG'ye yazılınca FB'ye de taşınır.
+
 **Format sütunları (ilan yasağı kuralıyla uyumlu):**
 
 1. **Mahalle/etap rehberi videoları** — 19 blog yazısı hazır senaryo deposu
