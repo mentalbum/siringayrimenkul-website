@@ -1,5 +1,8 @@
 {
   "isim": "Kuryap Sitesi",
+  "alternatifAdlar": [
+    "Kur-Yap Sitesi"
+  ],
   "slug": "kuryap-sitesi",
   "mahalleSlug": "seyh-samil-mahallesi",
   "koordinat": {

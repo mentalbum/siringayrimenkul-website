@@ -1,5 +1,8 @@
 {
   "isim": "Öz Çözüm Kent Sitesi",
+  "alternatifAdlar": [
+    "Özçözümkent Sitesi"
+  ],
   "slug": "oz-cozum-kent-sitesi",
   "mahalleSlug": "seyh-samil-mahallesi",
   "koordinat": {
