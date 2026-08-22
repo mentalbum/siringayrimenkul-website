@@ -1,0 +1,28 @@
+{
+  "isim": "Göksu Sitesi",
+  "slug": "goksu-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.993092,
+    "lng": 32.61513
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/goksu-sitesi-boundary.geojson",
+  "aciklama": "Göksu Sitesi, Etimesgut Güzelkent Mahallesi'nde, mahalle muhtarlığının hemen yanında, Üç Şehitler Caddesi'ne cepheli bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '6 Blok Kargir Apartman' niteliğiyle kayıtlı 4.997 m²'lik kat mülkiyetli tek parsel üzerine kuruludur. Çarşı dokusuna ve günlük ihtiyaç noktalarına yürüme mesafesindeki konumu, oturan için de kiracı için de pratik bir yaşam sunar. Göksu Sitesi'nde satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen yerel emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18478",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "6 blok (tapu)",
+    "4.997 m² tek parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Muhtarlık ve çarşı dokusuna komşu konum",
+    "Güzelkent — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Göksu Sitesi Güzelkent"
+  ],
+  "zenginlestirildi": "2026-08-22"
+}
