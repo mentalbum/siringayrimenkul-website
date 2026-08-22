@@ -256,6 +256,24 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07:
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life ← 26.07 (müteahhit sitesi baskın)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence ← 26.07 (46395-1 ada sayfamız #3 vitrini tutuyor)
 
+## ERYAMAN — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
+
+GSC API teyitli; ilk 10 dışılar, kopya 26.07–01.08:
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/akkonaklar-sitesi ← 01.08 (İÇ ADAŞ: Güzelkent Akkonak eski-slug'u #1'de — birleşme sonrası netleşir)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/bahar-sitesi ← 27.07 (Göksu bahar kardeşleri sorguyu alıyor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi ← 30.07 (Başak Emlak ofis adaşı baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/elif-ozgen-sitesi ← 26.07 (48297-1 ada #6 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park ← 26.07 (kardeş Endora sayfaları temsil ediyor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/eryaman-evleri ← 26.07 (ad = ofis adı, yapısal zor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/gunotesi-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/isikkent-sitesi ← 26.07 (İzmir Işıkkent adaşı baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/maximum-konutlari ← 27.07 (Maximum Gayrimenkul ofis adaşları baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi ← 27.07 (Çankaya Türkkonut baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← 27.07 (kardeş platin-2 #4'te)
+
+DOKUNMA notları: ankapark 17.08 + atakent-sitesi 17.08 TAZE taranmış ama sıralamıyor
+(portal/ofis adaşları) — tarama işi değil.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -412,6 +430,8 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
@@ -440,7 +460,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
