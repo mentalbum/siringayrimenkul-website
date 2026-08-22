@@ -191,6 +191,15 @@ SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-29.07'den. Yeniden tarama is
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4, bayat 26.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/konut-sitesi  <!-- bayat ama sorgu yapısal jenerik; düşük öncelik -->
 
+## ALTAY + ŞEKER — DİZİNDE AMA BAYAT (22.08 gece SERP turu)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ataturk-sitesi  <!-- 16.08 #3 → ilk 10 dışı; bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/cabadag-bloklari  <!-- 16.08 #1 → ilk 10 dışı; bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- ilk 10 dışı; bayat 29.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence  <!-- #5, ara-dönem başlıklı bayat kopya -->
+<!-- NOT: altay/betontas-bloklari BUGÜN (22.08) tarandı, istek GEREKMEZ — yansıma izlenir (Yüksel deseni).
+     altay/eryaman-park-evleri DİZİNDEN DÜŞMÜŞ (Discovered) — talep sıralı listede önceliklendirildi. -->
+
 AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
 bu sorun Tunahan'a özgü değil, korpus geneli.
