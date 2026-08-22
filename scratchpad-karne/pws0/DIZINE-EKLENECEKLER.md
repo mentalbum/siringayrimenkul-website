@@ -62,6 +62,9 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/yeni-burak-sitesi  <!-- 22.08 SERP #1'de eski slug (yeni #4); 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/zadegan-sitesi  <!-- 22.08 SERP #2'de eski slug; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/ozluce-guzelevim  <!-- 22.08 SERP #3'te eski slug; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova/alpar-sitesi  <!-- 23.08 SERP #1'de eski slug (yeni #3); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova/eryaman-port  <!-- 23.08 SERP #1'de eski slug; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova/kocaklar-tower  <!-- 23.08 SERP #2'de eski slug (yeni #3, çift); 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/metrokent-villalari  <!-- 22.08 SERP #3-5 çift kopya; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/turaykent-sitesi  <!-- 22.08 SERP #2'de eski slug (#1 yeni); 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
