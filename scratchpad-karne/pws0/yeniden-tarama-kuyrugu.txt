@@ -54,3 +54,5 @@ https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/aker-mucevher-evleri
 https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark
 https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-plus
 https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi
+https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari
+https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu
