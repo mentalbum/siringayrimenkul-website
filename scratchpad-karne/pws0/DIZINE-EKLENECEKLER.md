@@ -58,6 +58,10 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18652-1  <!-- 22.08 Gözde 2 sorgusunda #2 eski slug ada -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18450-1  <!-- 22.08 Portakal Çiçeği 2 sorgusunda #4 eski slug ada -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/elit-nar-cicegi  <!-- 22.08 SERP #4'te eski slug (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/tugce-kent-sitesi  <!-- 22.08 SERP #2'de eski slug (yeni sayfa #6'nın ÖNÜNDE); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/yeni-burak-sitesi  <!-- 22.08 SERP #1'de eski slug (yeni #4); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/zadegan-sitesi  <!-- 22.08 SERP #2'de eski slug; 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/ozluce-guzelevim  <!-- 22.08 SERP #3'te eski slug; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/metrokent-villalari  <!-- 22.08 SERP #3-5 çift kopya; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/turaykent-sitesi  <!-- 22.08 SERP #2'de eski slug (#1 yeni); 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
@@ -379,6 +383,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi
