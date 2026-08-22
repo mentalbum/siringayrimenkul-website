@@ -232,6 +232,19 @@ sorguyla eşleşiyor). serender 18.08 taze taranmış ama sıralamıyor — tara
 değil, izlemeye alındı. duskent #2 / kackar #1 sıralıyor; dizin isteği zararsız
 ama acele değil.
 
+## DEVLET — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
+
+GSC API teyitli; ilk 10 dışılar, kopya 25.07–30.07:
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sahil-sitesi ← 27.07 (YS Sahil Kent adaşı da karışıyor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 25.07 ('Sarıçınar' bitişik varyant adayı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yuceyurt-sitesi ← 30.07 (Sivas Yüceyurt Mah. adaşı baskın)
+
+DOKUNMA notları: demirkent 14.08 TAZE taranmış ama sıralamıyor (Sincan OSB + Gölbaşı
+adaşları) — tarama işi değil. oray 05.08 + referans 05.08: adaş baskınlığı yapısal
+(Kadıköy Oray; Referans Gayrimenkul ofis markası) — tarama düşük öncelik.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -391,6 +404,11 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari
