@@ -272,3 +272,5 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 22.08 — SERP turunda yakalandı: /mahalleler/ata-mahallesi/gold-stone-evleri "URL is unknown to Google"
 > (canlı 200, sitemap'te var, hiç keşfedilmemiş — 137 kümesinden de geride). Akşam damlasında ÖNCELİKLİ
 > dizin isteği gönderilsin. Ayrıca polsan1-ayisigi-sitesi "Discovered - not indexed" teyit edildi (22.08).
+> 22.08 — İKİNCİ "URL unknown" vakası: /mahalleler/ata-mahallesi/trend-life-sitesi (canlı, sitemap'te,
+> Google hiç görmemiş). Gold Stone ile birlikte akşam damlasında ÖNCELİKLİ istek.
