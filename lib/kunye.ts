@@ -29,6 +29,10 @@ import type { Site } from "./types";
  *    taramasından site adı silinir; "kapasiteli/ilk etabında" sayıları alınmaz.
  *  - Çok adalı sitede tek adanın blok sayısı bütünmüş gibi görünüyordu →
  *    "toplam N blok" yoksa ve site birden çok adaya yayılıyorsa blok yazılmaz.
+ *  - Blok-başına daire sayısı ("örneklenen bloklarda 36 daire", "10 kat,
+ *    20 daire" künye satırı) site toplamı sanılıyordu (2026-08-22 turu) →
+ *    konutCikar blok-başına öneklerini atlar; "toplam" öneki ve tek bloklu
+ *    siteler istisnadır.
  *
  * Kullanım yerleri: site sayfası açılış cümlesi (AEO "önce cevap" kalıbı),
  * /araclar/site-karsilastirma ve /eryaman-site-dokusu raporu. */
@@ -301,7 +305,7 @@ function blokDegerleri(metin: string, kip: Kip): number[] {
   return degerler;
 }
 
-function konutCikar(metin: string, kip: Kip): number | undefined {
+function konutCikar(metin: string, kip: Kip, tekBlok = false): number | undefined {
   let konutSayisi: number | undefined;
   for (const m of metin.matchAll(/([\d.]+)\s*(?:daire|konut|bağımsız bölüm|mesken|dubleks|villa)/g)) {
     const onek = metin.slice(Math.max(0, m.index! - 60), m.index!);
@@ -310,6 +314,40 @@ function konutCikar(metin: string, kip: Kip): number | undefined {
     // site TOPLAMI değildir — alınmaz.
     if (/katta|katında|kat başına|zeminde|her kat|etap|etab|ilk parsel|1\. parsel/.test(onek))
       continue;
+    // Blok-BAŞINA sayılar da site toplamı DEĞİLDİR: "örneklenen bloklarda 36
+    // daire", "blok başına 36 daire", "10 kat, 20 daire" blok künye satırı
+    // (2026-08-22 turu: Soyak/Umut açılışına yanlış "toplam N daireli" bastı).
+    // Pencere "|" (özellik satırı sınırı) aşmaz. İki istisna:
+    //  - tek bloklu sitede bloğun sayısı sitenin sayısıdır, koruma uygulanmaz;
+    //  - sayının hemen önündeki dar pencerede "toplam(da)" geçiyorsa ifade
+    //    zaten site toplamıdır ve KORUNUR ("bu 24 blokta toplam 558 konut",
+    //    "üç blokta toplam ~120 konut").
+    if (!tekBlok) {
+      const satirOnek = onek.slice(onek.lastIndexOf("|") + 1);
+      // "<sayı> blokta N daire" dağılımlı TOPLAMDIR ("2 blokta 104 daire",
+      // "2 blokta 150 daire + 100 dükkan") — blok-başına sayılmaz. Blok
+      // ADLARINDAKİ rakam ("6-1 blokta") lookbehind ile dışarıda kalır.
+      const dagilimliToplam = /(?<![-\p{L}\d])\d+\s*blokta(?!\p{L})/u.test(satirOnek);
+      if (!/toplam/.test(satirOnek.slice(-15))) {
+        const yakinOnek = satirOnek.slice(-24);
+        if (
+          // (?!\p{L}): yalın bulunma hâli aranır — "bloklardan oluşan yapı"
+          // ablatifi blok-başına değildir (altas-relax-line 65 konut TOPLAM).
+          (!dagilimliToplam &&
+            /(blokta|bloklarda|bloğunda|bloklarında)(?!\p{L})/u.test(satirOnek)) ||
+          /blo[kğ]\p{L}*\s+başına/u.test(satirOnek) ||
+          /(katlı|örneklenen)\s+blo[kğ]\p{L}*\s*$/u.test(yakinOnek) ||
+          /\d+\s*kat,\s*$/.test(yakinOnek) ||
+          // "14 daireli sakin bir blokla", "36 daireli bloklar": sayı bloğu
+          // NİTELİYORSA blok-başınadır (su-damlası). normalize "bir"i "1"
+          // yaptığı için ara kelimeler rakam da olabilir.
+          /^(?:li|lik)?\s*(?:[\p{L}\d]+\s+){0,2}blo[kğ]/u.test(
+            metin.slice(m.index! + m[0].length, m.index! + m[0].length + 40)
+          )
+        )
+          continue;
+      }
+    }
     const kuyruk = metin.slice(m.index! + m[0].length, m.index! + m[0].length + 24);
     if (/^\s*blo[kğ]/.test(kuyruk)) continue;
     if (/kapasite|planlan|tasarlan|hedeflen|etap/.test(kuyruk)) continue;
@@ -443,8 +481,10 @@ export function cikarKunye(site: Site): Kunye {
   const katMin = katlar.length ? Math.min(...katlar) : undefined;
   const katMax = katlar.length ? Math.max(...katlar) : undefined;
 
-  const ozKonut = konutCikar(oz, "madde");
-  const acKonut = konutCikar(ac, "duzyazi");
+  // Tek bloklu sitede (blokSayisi=1; normalize "tek blok"u "1 blok" yapar,
+  // o sinyal de buradan geçer) blok-başına koruması kapalı çağrılır.
+  const ozKonut = konutCikar(oz, "madde", blokSayisi === 1);
+  const acKonut = konutCikar(ac, "duzyazi", blokSayisi === 1);
   const konutSayisi =
     ozKonut !== undefined && acKonut !== undefined
       ? Math.max(ozKonut, acKonut)
