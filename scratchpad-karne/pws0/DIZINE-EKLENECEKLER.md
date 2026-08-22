@@ -191,6 +191,15 @@ SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-29.07'den. Yeniden tarama is
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4, bayat 26.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/konut-sitesi  <!-- bayat ama sorgu yapısal jenerik; düşük öncelik -->
 
+## ALTAY + ŞEKER — DİZİNDE AMA BAYAT (22.08 gece SERP turu)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ataturk-sitesi  <!-- 16.08 #3 → ilk 10 dışı; bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/cabadag-bloklari  <!-- 16.08 #1 → ilk 10 dışı; bayat 26.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- ilk 10 dışı; bayat 29.07 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence  <!-- #5, ara-dönem başlıklı bayat kopya -->
+<!-- NOT: altay/betontas-bloklari BUGÜN (22.08) tarandı, istek GEREKMEZ — yansıma izlenir (Yüksel deseni).
+     altay/eryaman-park-evleri DİZİNDEN DÜŞMÜŞ (Discovered) — talep sıralı listede önceliklendirildi. -->
+
 AÇIK İŞ: aynı bayat-kopya taraması 723 sayfanın tamamına yapılmalı. 16.08
 ölçümünde 512 site sayfasının 267'si Temmuz'da, 338'i hiç taranmamıştı — yani
 bu sorun Tunahan'a özgü değil, korpus geneli.
@@ -360,3 +369,17 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
+
+## ADA-TARAMA SIRALAMA KURALI (22.08 gece — İHLAL ETME)
+
+18 sorguda dizinsiz SİTE sayfasının vitrinini şu an ADA sayfamız tutuyor
+(arzutas 18644-1, cozum-kent 18480-1, elele 18454-1, gozde-2 18652-1, ipek-yapi
+18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
+portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
+yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
+uyum-90 47603-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
+KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
+sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
+düşer; erken tazelersek vitrin tamamen boşalır). Site dizine girince ada
+tazelenir → kanibalizasyon temiz kapanır (Yüksel/Sarıgül deseni).

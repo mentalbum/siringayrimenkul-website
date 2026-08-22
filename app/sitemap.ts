@@ -117,7 +117,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        çekirdek ad karşılaştırması sıra numarasını da söküyor — "Elit
     //        Yaşam Konutları 1/2/3" ailesi artık başlıkta mahalleyle ayrışıyor.
     //        Seçim ölçüme dayanıyor: GSC sorgu×sayfa çakışması + pws=0 taraması.
-    site: new Date("2026-08-16"),
+    // 22.08: konut türetmesi blok-başına sayıları toplam sanmayı bıraktı
+    //        (lib/kunye.ts konutCikar) — 12 sayfada açılış cümlesi ve
+    //        ApartmentComplex numberOfAccommodationUnits değişti.
+    site: new Date("2026-08-22"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin
