@@ -268,3 +268,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > İlk denemede (polsan1-ayisigi, 221 gös, "URL Google'da yok" taze teyitli)
 > "Kota aşıldı" — dünkü 11'lik Tunahan turu ~21-22'de gönderilmişti, pencere
 > bu akşama kadar dolu. İstek İŞLENMEDİ, işaret yok. Akşam bu listeden devam.
+
+> 22.08 — SERP turunda yakalandı: /mahalleler/ata-mahallesi/gold-stone-evleri "URL is unknown to Google"
+> (canlı 200, sitemap'te var, hiç keşfedilmemiş — 137 kümesinden de geride). Akşam damlasında ÖNCELİKLİ
+> dizin isteği gönderilsin. Ayrıca polsan1-ayisigi-sitesi "Discovered - not indexed" teyit edildi (22.08).
