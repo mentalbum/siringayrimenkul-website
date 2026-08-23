@@ -355,23 +355,27 @@ BAYAT (yeniden tarama):
 DOKUNMA: natural 14.08 + oasis 15.08 + ender-dogus 02.08 taze taranmış (adaş/vitrin
 temsili sürüyor) — tarama işi değil.
 
-## SUSUZ — 23.08 SERP turu teşhisi (kısmi — tur sürüyor)
+## SUSUZ — 23.08 SERP turu teşhisi (TUR BİTTİ — 46 sorgu)
 
 BAYAT (yeniden tarama; kopya 26.07):
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/batimahal-baspinar ← 26.07 (müteahhit kanalları baskın; 'Batı Mahal' ayrık yazım varyant adayı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi ← 26.07 ('Eser Yapı Evleri' Ata Mah. etiketli gürültü)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/dostlar-birikim-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/merdin-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/starlife ← 02.08 ('Star Life Gayrimenkul' ofis-marka adaşı SERP'i tutuyor — beklenti düşük)
 
 DİZİNSİZ (istek kuyruğuna):
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life ← 23.08 dizin dışı teyit (Discovered; 63379-1 ada #2 vitrin)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu ← 23.08 dizin dışı teyit (Discovered; 63377-5 ada #3 vitrin)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 23.08 UNKNOWN (Google hiç görmemiş; 63356-1 ada #4 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri ← 15.08 dizin dışı teyit (44784-1 ada #3 vitrin; 'Tatlıyamaç' bitişik varyant adayı)
 
 DOKUNMA (taze taranmış, sıralamıyor — tarama işi değil): cag-life 19.08 (tüm
 portallar 'Yakacık Çağ Life' diyor, panel Susuz — mahalle çelişkisi KEOS'la
-çözülecek), goksu-marina 17.08 (portallar 'Göksu Mh. Etimesgut' etiketli; Arus
-Göksu Marina 2 gürültüsü).
+çözülecek — 23.08 TKGM teyidi: kayıt doğru, Yakacık Çağ Life 6 katlı DIŞ ADAŞ),
+goksu-marina 17.08 (portallar 'Göksu Mh. Etimesgut' etiketli; Arus Göksu Marina 2
+gürültüsü), serline 20.08 (müteahhit SERGrup kanalları baskın), sky-goksu 18.08
+(Yukarıyurtçu Sky-B projesi adı tutuyor — bilinen benzer-ad vakası, yapısal).
 
 ## Talebi olanlar (83 sayfa) — once bunlar
 
@@ -587,7 +591,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1, rayli-sistemciler 44774-2, lake-life 63379-1, major-goksu 63377-5, mavera-goksu 63356-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1, rayli-sistemciler 44774-2, lake-life 63379-1, major-goksu 63377-5, mavera-goksu 63356-1, tatli-yamac 44784-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan

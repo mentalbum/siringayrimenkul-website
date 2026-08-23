@@ -1,6 +1,6 @@
-# İlk 3'te OLMAYAN site-emlakçı sorguları — 624/706 ölçüldü
+# İlk 3'te OLMAYAN site-emlakçı sorguları — 651/706 ölçüldü
 
-- İlk 3'te: **372** | 4-10 arası: **252** | ilk 10'da yok: **0** | ölçülmedi: 82
+- İlk 3'te: **391** | 4-10 arası: **260** | ilk 10'da yok: **0** | ölçülmedi: 55
 - SERP'te görünen 40 sonucumuzun **10** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 30 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
@@ -217,7 +217,14 @@
 | 0 | Yeni Botanik Sitesi emlakçı |  | ilk 10'da yokuz; Botanik Emlak ofisi + Botanik metro gürültüsü baskın; harita kutusunda Yeni Botanik Sitesi apartman kaydı var (biz yokuz) |
 | 0 | Yeşil Koru Sitesi emlakçı |  | ilk 10'da yokuz; İstanbul Sancaktepe Yeşilkoru + Çankaya Koru Mah. adaş gürültüsü baskın; harita kutusunda Yenimahalle 'yeşil koru sitesi' apartman kaydı ilk sırada |
 | 0 | Zirveden Batı emlakçı |  | ilk 10'da yokuz; bilgi paneli inşaat firmasının; ilan portalları+RE/MAX+IG dolduruyor; sayfa talep listesinde (105 gos/1 tik) — dizin isteği öncelikli |
+| 0 | Batımahal Başpınar emlakçı |  | ilk 10'da yokuz; SERP'i müteahhit (Başpınar İnşaat) kanalları dolduruyor; yaygın yazım 'Batı Mahal Başpınar' (ayrık) — varyant kontrol |
+| 0 | Çağ Life Sitesi emlakçı |  | ilk 10'da yokuz; DİKKAT: tüm organikler 'Yakacık Mah. Çağ Life' diyor, bilgi paneli ise Susuz 06105 gösteriyor — mahalle çelişkisi (pin değil numarataj kuralı: KEOS kontrolü yarına); portal gürültüsü tamamen Yakacık etiketli |
 | 0 | Ende Yaşam emlakçı | None | İLK 10'DA YOKUZ — GSC denetimi |
+| 0 | Eser Yapı Sitesi emlakçı |  | ilk 10'da yokuz; yaygın ad 'Eser Yapı Evleri' (panel+sahibinden+EmlakGO, Ata Mah. etiketli) — varyant adayı; Eser Emlak/Eser Gayrimenkul ofis adaşları gürültüde |
+| 0 | Göksu Marina emlakçı |  | ilk 10'da yokuz; portallar 'Göksu Mh. Etimesgut' etiketli (adaş/sınır karışıklığı), Arus Grup'un Göksu Marina 2 projesi gürültüde; harita kutusunda Yenimahalle 'Göksu Marina' konut sitesi (bizim taraf) var |
+| 0 | Serline Konutları emlakçı |  | ilk 10'da yokuz; sayfa 20.08'de kendiliğinden dizine girdi (TAZE) ama sıralamıyor — müteahhit SERGrup kanalları + portallar baskın, tarama işi değil (DOKUNMA); engel ~50 dk sürdü (bugünkü 4.) |
+| 0 | Sky Göksu emlakçı |  | ilk 10'da yokuz; 'Sky Göksu' adını SERP'te tamamen Yukarıyurtçu'daki Sky-B projesi tutuyor (bilinen benzer-ad tuzağı vakası) — bizim site sahada 'Göksu Sky Rezidans' (harita kutusunda Yenimahalle kaydı var, alternatifAdlar'da kayıtlı); yapısal adaş, tarama işi değil |
+| 0 | Starlife emlakçı |  | ilk 10'da yokuz; SERP'i tamamen 'Star Life Gayrimenkul' EMLAK OFİSİ adaşları tutuyor (Yenimahalle+Aydın+Diyarbakır) — sorgu 'emlakçı' ekiyle ofis markasına kilitleniyor, yapısal adaş |
 | 0 | Yıldız Life emlakçı | None | İLK 10'DA YOKUZ — ad belirsizliği: Çakırlar Yıldız Life projesi + Yıldız adlı ofisler domine |
 | 4 | Address Eryaman emlakçı | /mahalleler/altay-mahallesi/address-eryaman | #4 (16.08 #4 sabit) — YENİ başlık canlı; Adres Gayrimenkul ofis adaşı önde; harita kutusunda Şirin Gayrimenkul 1. |
 | 4 | İzgi Park Evleri emlakçı | /mahalleler/altay-mahallesi/frekans-eryaman | YANLIŞ SAYFA: komşu Frekans #4 + Kutlutaş #6 + ada 45898/2 #7; site sayfası ilk 10'da yok — GSC denetimi |
@@ -240,6 +247,7 @@
 | 4 | Mavi Bayrak Sitesi emlakçı | /mahalleler/ata-mahallesi | YANLIŞ SAYFA: mahalle #4, ada 44773/3 #9; site sayfası ilk 10'da yok — GSC denetimi |
 | 4 | Panorama Gold emlakçı | /mahalleler/ata-mahallesi/panorama-gold | #4 (taze kopya); Gold Emlak ofis adaşları gürültüde; GBP 'Panorama gold sitesi' |
 | 4 | Park Sera Evleri emlakçı | /mahalleler/cumhuriyet-mahallesi/park-sera-evleri | #4 43264-7 ada sayfamız temsil ediyor (site sayfası görünmüyor — vitrin deseni, GSC denetimi gerek); Yaşamkent Park Sera adaşı baskın |
+| 4 | Mavera Göksu emlakçı | /mahalleler/susuz-mahallesi/adalar/63356-1 | #4 63356-1 ADA sayfamız; #6'da mahalle sayfamız da var (Mavera teaser snippet'iyle); site sayfası ilk 10'da YOK; müteahhit (Mavera Grup) kanalları güçlü |
 | 5 | Arya Nüans Residence emlakçı | /mahalleler/altay-mahallesi/arya-nuans-residence | #5 (16.08 #6'dan bir yukarı); başlık ara-dönem 'Satılık ve Kiralık Daire' (bayat kopya, tarama adayı) |
 | 5 | Yeni Portakal Çiçeği Sitesi emlakçı | /mahalleler/eryaman-mahallesi/adalar/46540-1 | YANLIŞ SAYFA: ada #5; site sayfası ilk 10'da yok — GSC denetimi |
 | 5 | Alpak & Neve Armonia Residence emlakçı | /mahalleler/sehit-osman-avci-mahallesi | YANLIŞ SAYFA: mahalle sayfası #5, ada sayfası 46651/6 #9; site sayfası ilk 10'da yok (dizin şüphesi) |
@@ -430,13 +438,23 @@
 | 1 | Plus Life Ankara emlakçı |
 | 1 | Türkü Sitesi emlakçı |
 | 1 | Ütopya Konutları emlakçı |
+| 1 | Alya Park emlakçı |
+| 1 | Ap Forest Gate emlakçı |
+| 1 | Başkent Göksu emlakçı |
+| 1 | Bella Garden emlakçı |
 | 1 | Bordo Göl Evleri emlakçı |
+| 1 | Bulut Kule emlakçı |
+| 1 | Green Life Göksu Konutları emlakçı |
 | 1 | Lenora Göksu emlakçı |
+| 1 | Liva Göksu emlakçı |
 | 1 | Maviler İpek emlakçı |
 | 1 | Mira Göksu Konutları emlakçı |
+| 1 | Neva Palas emlakçı |
 | 1 | Öniz Nirvana emlakçı |
 | 1 | Paradise Göksu emlakçı |
+| 1 | Perla Life emlakçı |
 | 1 | Sarıtaş Seyir Evleri emlakçı |
+| 1 | Şirin Ana Villaları emlakçı |
 | 1 | Vera Life Göksu emlakçı |
 | 1 | White Dream Sitesi emlakçı |
 | 2 | Age Blokları emlakçı |
@@ -572,9 +590,15 @@
 | 2 | Öz Uğur Sitesi emlakçı |
 | 2 | Vera Vista emlakçı |
 | 2 | Vera West emlakçı |
+| 2 | Başak Life emlakçı |
+| 2 | Dostlar Birikim Sitesi emlakçı |
 | 2 | Duru Life Konutları emlakçı |
 | 2 | Göksu Hisar Evleri emlakçı |
+| 2 | Koruçam Sitesi emlakçı |
+| 2 | Lake Life emlakçı |
+| 2 | Merdin Sitesi emlakçı |
 | 2 | Mood Altınok emlakçı |
+| 2 | Neovadi Konutları emlakçı |
 | 2 | Nil My Home emlakçı |
 | 2 | Palas Eryaman emlakçı |
 | 2 | Park Göksu Konutları emlakçı |
@@ -641,4 +665,7 @@
 | 3 | Hittown emlakçı |
 | 3 | Konar Manzara Evleri emlakçı |
 | 3 | Vizyon Tower emlakçı |
+| 3 | Lilyum Sitesi emlakçı |
 | 3 | Mabeyn Başpınar emlakçı |
+| 3 | Majör Göksu emlakçı |
+| 3 | Tatlı Yamaç Palmiye Evleri emlakçı |
