@@ -26,6 +26,7 @@ Bu beceri sadece kritik kuralların özeti ve dosya haritasıdır.
 | Site-emlakçı turu (706 sorgu) | `kuyruk-site-emlakci.json` | `sonuclar-site-emlakci.jsonl` | `karne-site-emlakci.py` (`--md` → `ilk3-disi-siteler.md`) |
 | Yalın site adı | `kuyruk-yalin-ad.json` | `sonuclar-yalin.jsonl` | `karne.mjs` |
 | Harita kutusu | `kuyruk-harita.json` | `sonuclar-harita.jsonl` | `harita-kutusu-bulgular.md` |
+| Bölge turu (uule, 7 nokta × 2 sorgu) | `bolge-tur.mjs --listele` | `sonuclar-bolge.jsonl` | `karne-bolge.py` (talimat: `BOLGE-TURU.md`) |
 
 Gecelik tur cron'u 02:34'te çalışır; öncelik sırası PROTOKOL-gece.md'de.
 
