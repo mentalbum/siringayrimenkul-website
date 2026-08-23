@@ -73,12 +73,16 @@
  * kaydının isim alanı — slug karışması). 23.08 istek damlasında gönderilen
  * 8 Güzelkent + caglar-belde LİSTEDE BIRAKILDI: dizine girişleri GSC'de
  * teyit edilince çıkarılacak (24-48 saat).
+ *
+ * EK 2026-08-23 (akşam): altay/metropol-bloklari eklendi — "URL is unknown to
+ * Google" API teyitli; SERP'te yerine Güzelkent Metro Yaşam adaşımız çıkıyor.
  */
 const DIZINSIZ: Record<string, readonly string[]> = {
   "altay-mahallesi": [
     "betontas-bloklari",
     "eryaman-park-evleri",
     "ilbeyi-sitesi",
+    "metropol-bloklari",
     "vatan-sitesi",
   ],
   "ata-mahallesi": [
