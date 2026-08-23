@@ -247,6 +247,7 @@ ama acele değil.
 ## DEVLET — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
 
 GSC API teyitli; ilk 10 dışılar, kopya 25.07–30.07:
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/guneyce-sitesi ← 26.07 (23.08 API teyidi; SERP #4 eski başlıkla — Güneyce ofis/Güdül adaşı da var)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sahil-sitesi ← 27.07 (YS Sahil Kent adaşı da karışıyor)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 25.07 ('Sarıçınar' bitişik varyant adayı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi ← 26.07
