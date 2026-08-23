@@ -1670,3 +1670,13 @@ sayfa (ŞFK yeni slug) dizinde bile değil.
 **Özgün'e soru:** Sahada tabela/yönetim bugün ne diyor — "Şehit Ferhat Koç Sitesi" mi?
 "Eray 3" adı sakinlerce hâlâ aktif kullanılıyor mu? (Evet/evet ise kurgu yukarıdaki gibi;
 onay gelince 2-3-5 tek PR'da, 4'teki dizin isteği önce.)
+
+**23.08 EK — ŞFK tabela kanıtı (Street View; karar sonrası arşive):** Özgün birleştirmeyi
+onaylayıp PR #68 (varyant adımı) canlıya çıktıktan sonra saha görüntüsü de geldi: Google
+Street View (Haz 2024 çekimi, pano vQIohBWAogJUjPvZhGy_zA) sitenin cadde çitindeki tabelayı
+net gösteriyor — ay-yıldız armalı lacivert levhada **"ŞEHİT FERHAT KOÇ SİTESİ"**, altında
+**"NO:8"** plakası. Yani karar sahadan da doğrulandı. YENİ VERİ: resmî adres **Şehit Haydar
+Yolcu Cd. No:8** — bilgiemlak'taki "8-A…8-F" blok adlarının kaynağı bu kapı numarası
+(kapı 8 + blok harfi); KEOS'un kapı katmanında 18645/1'e kayıt görünmemesi belediye
+verisindeki boşluk, sahada numarataj mevcut. Görsel Özgün'e iletildi
+(sfk-tabela-streetview.jpg). Kalan iş zaten yolda: ŞFK yeni slug dizin isteği → 301 PR'ı.
