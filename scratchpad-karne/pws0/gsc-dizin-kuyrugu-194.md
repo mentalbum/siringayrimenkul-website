@@ -299,3 +299,14 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 22.08 ~15:00 — su-damlasi yeniden-tarama isteği DENENDİ → "Kota Aşıldı" (öğle turunun 11 isteği pencereyi doldurdu), işlenmedi. 22:47 damlası + yarın sırası: 1) caglar-belde (dünkü söz) 2) su-damlasi-sitesi 3) tunahan-sitesi (en bayat, 26.07) 4) adalar/17662-1 (bayat ada, Yüksel'i yiyor). Hepsi Tunahan ilk-3-dışı kampanyası; "mevcut" hükmü İSTEĞİ ENGELLEMEZ, amaç yeniden tarama.
 > 22.08 (rev) — Yarın sırası REVİZE: 1) caglar-belde 2) su-damlasi-sitesi 3) tunahan-sitesi 4) adalar/46493-2 (Ilgazlar bayat adası, yeni slug) 5) eski-slug /mahalleler/tunahan/adalar/46493-2 (birleştirme). 17662-1 SIRADAN ÇIKTI: istek 19.08'de zaten gönderilmiş, Google taramayı işlemedi — ikinci istek mükerrer kota olur, bekle.
 > 22.08 İZLEME EŞİKLERİ (10 ajanlık teşhis turu, hakem onaylı): (a) YÜKSEL: 17662-1'in GSC son taraması 26.07'den ileri gidince "Yüksel Blokları emlakçı" yeniden ölç; tarama teyitli + arası ≥3 gün İKİ ardışık ölçümde site sayfası hâlâ ilk 10 dışıysa teşhis çöker → konu H1-eki (karar Özgün'de) / 05.09 title serbestisi gündemine, YENİ içerik işi önerilmez. (b) SUTEK: PR #53 canlıya girip Tunahan sayfası değişiklik-SONRASI ilk kez tarandıktan +7/+14 gün sonra üç Sutek sayfasının (Tunahan/Altay/Şeyh Şamil) sırası AYRI AYRI ölçülür; Altay #1 kalırsa kayıp SAYILMAZ, yeni müdahale üretilmez. (c) hasMap önerisi hakem tarafından REDDEDİLDİ (harita-organik bağımsızlığı 34 ölçümle sabit) — yeniden önerme.
+> 23.08 — ÖZGÜN TALEBİ (öncelikli YENİDEN-TARAMA): /mahalleler hub'ı "eryaman nereye bağlı"
+> ailesinde hâlâ görünüyor (GSC 3 ay: 1.279 gösterim / 0 tık / poz 9,3; 1.276'sı hub'dan).
+> Özgün'ün SERP ekran görüntüsü KANIT: snippet, 17.08'de SÖKÜLEN "Eryaman; Etimesgut ilçesine
+> bağlı…" cümlesini hâlâ basıyor = Google bayat kopyayı tutuyor. Sayfa içi iş 15-17.08'de
+> bitmişti (bağlı/ilçe/nereye kelimeleri metinden çıkarıldı); kalan TEK iş yeniden tarama.
+> Bugünkü damla sırası REVİZE: 1) caglar-belde (dünkü söz) 2) /mahalleler (bu vaka)
+> 3) su-damlasi-sitesi 4) tunahan-sitesi 5) adalar/46493-2 6) eski-slug 46493-2.
+> "Mevcut" hükmü isteği ENGELLEMEZ (su-damlasi emsali; amaç yeniden tarama).
+> Yansıma ölçümü: tarama işlendikten +7 gün sonra "nereye bağlı" ailesinin günlük gösterimi
+> çökmeli. Sıfıra inmezse kalan sıralama sinyali başlıktaki "Etimesgut" — o durumda YENİ
+> müdahale önerilmez (title 07.09'a kadar donuk; kelime sökümü zaten tamam, kalıntı kabul edilir).

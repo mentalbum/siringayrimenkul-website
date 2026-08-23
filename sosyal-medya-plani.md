@@ -101,9 +101,11 @@ Ek üretim maliyeti yok; üç profilin de "aktif hesap" sinyali beslenir.
    kural gereği fiyat rakamı ve çıplak ada numarası kullanılmaz. Sitedeki sayfaya
    yönlendirir ("sitenizin tapu kimliği sitemizde herkese açık").
 3. **Bilgi/eğitim** — blogdan: satış süreci adımları, kira tespiti, kat mülkiyeti/
-   kat irtifakı farkı, "Eryaman nereye bağlı?" (GSC'de 267 gösterimlik GERÇEK soru).
-   TikTok'ta seslendirme + ekran üstü metinde anahtar kelimenin geçmesi arama
-   sinyali — ikisine de yaz/söyle.
+   kat irtifakı farkı. TikTok'ta seslendirme + ekran üstü metinde anahtar
+   kelimenin geçmesi arama sinyali — ikisine de yaz/söyle.
+   *("Eryaman nereye bağlı?" konusu ÇIKARILDI, 23.08: bu bilgi ailesine
+   oynanmaz — 15.08 Özgün kararı "ev sahibi getirmiyor", app/mahalleler/page.tsx
+   notu; 1.119 gösterim / 0 tık ölçümüyle sabit. Yeniden önerilmez.)*
 4. **3D/sanal tur** — "bu bir ilan değil" çerçeveli, defterdeki onaylı şablonla.
    Nisan 2025 sanal tur videosu Google'ın en güçlü gördüğümüz içeriği — format
    kanıtlanmış, devamı gelmeli.
