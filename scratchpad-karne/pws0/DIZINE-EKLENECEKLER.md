@@ -323,6 +323,9 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08:
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/etikent-sitesi ← 27.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/genova ← 02.08 (iş merkezi/YS kaydı gürültüsü)
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi ← 26.07 (Kışlalı Taflan adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/turuncu-site ← 26.07 (44785-2 ada #4 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/selale-sitesi ← 27.07 (46196-4 ada #1 vitrin)
 
 DOKUNMA notu: cagdas-onur 22.08 taranmış (DÜN) ama sıralamıyor — yansıma bekleniyor, izleme.
 
@@ -454,6 +457,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
