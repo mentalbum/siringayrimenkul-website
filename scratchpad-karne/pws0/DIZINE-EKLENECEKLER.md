@@ -417,8 +417,14 @@ tarama → 23.08 #1).
 ADA TAZELEME — GÜVENLİ KOŞUL SAĞLANDI (24.08, kuralın ilk uygulaması):
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/adalar/46424-1 ← 27.07 kopya (site adlı ESKİ başlık) Anemon Sitesi sorgusunda #4'te, KENDİ site sayfamız #6'da. Site sayfası dizinde (17.08) VE sıralıyor → ada tazelenebilir: taze kopyada site adı başlıktan düşer (95f4aef), ada geri çekilir, site sayfası öne geçer. Vitrin riski YOK çünkü site zaten görünüyor.
 
-DOKUNMA — TAZE TARANMIŞ AMA 4-10'DA (24.08 workflow dökümü; tarama işi DEĞİL,
-rekabet/adaş işi): address-eryaman 23.08, anemon 17.08 (adası tazelenecek),
+DOKUNMA — TAZE TARANMIŞ AMA 4-10'DA (24.08 workflow dökümü). DİKKAT, İKİ ALT
+SINIF VAR (24.08 ozkardesler dersi): tarama tarihi taze olsa bile Google'ın
+SERVİS ETTİĞİ kopya eski olabilir — ozkardesler 23.08 taranmış ama SERP hâlâ
+eski başlığı basıyor. Yani "son tarama" tazeliği yansımanın GARANTİSİ değil;
+yansıma 2-5 gün sürüyor (Serender 18.08 tarama → 23.08 #1). Bu yüzden:
+ · 19-24.08 taranmışlar = YANSIMA BEKLİYOR (dokunma, tekrar ölç)
+ · 07-18.08 taranmış ama hâlâ eski başlıkla 4-10'da = yapısal (adaş/rekabet)
+Liste: address-eryaman 23.08, anemon 17.08 (adası tazelenecek),
 arikovani 07.08, ozkardesler 23.08, panorama-gold 22.08, cevizlidere 11.08,
 goldekent 20.08, relax-goksu 17.08, yardimci-bloklari 19.08 (ikiz-ad listesinde),
 ilgazlar 20.08 (16.08 #7 → #4 yükseliyor), sutek 20.08 (3 slot bizde),
