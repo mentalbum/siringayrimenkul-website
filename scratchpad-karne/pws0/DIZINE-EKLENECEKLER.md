@@ -378,6 +378,37 @@ goksu-marina 17.08 (portallar 'Göksu Mh. Etimesgut' etiketli; Arus Göksu Marin
 gürültüsü), serline 20.08 (müteahhit SERGrup kanalları baskın), sky-goksu 18.08
 (Yukarıyurtçu Sky-B projesi adı tutuyor — bilinen benzer-ad vakası, yapısal).
 
+## 4-10 KUŞAĞI — DİZİNDE AMA BAYAT (23.08 akşam dökümü; en yakın ilk-3 adayları)
+
+Bu sorgularda İLK 10'DAYIZ ama yanlış sayfayla (mahalle/ada/komşu) veya bayat
+başlıkla — site sayfasının Google kopyası 26.07-02.08. İlaç yeniden TARAMA;
+tarama gelince doğru sayfa doğru başlıkla yarışır (Serender kanıtı: 18.08
+tarama → 23.08 #1).
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari ← 26.07 (#4'te Ata adaşımız çıkıyor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence ← 27.07 (#4 mahalle sayfası)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari ← 26.07 (#4 kardeş Havuzlu Evler)
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi ← 26.07 (#4 mahalle sayfası; ad=mahalle adı, yapısal zorluk da var)
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri ← 02.08 (#4-7 komşular+ada)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← 27.07 (#4 kardeş platin-2)
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence ← 26.07 (#5 mahalle)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi ← 26.07 (#5 komşu Liva)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi ← 26.07 (#5 ada)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-plus ← 26.07 (#5 ada; adaş mağaza #1)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower ← 27.07 (#6 mahalle)
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence ← 26.07 (#6-10 komşular)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu ← 26.07 (#6 kardeşin adası)
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/meydan-ada-sitesi ← DOKUNMA: 21.08 taranmış, yansıma bekle
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman ← 26.07 (#6 kardeş Endora Plus; 4'lü aile)
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari ← 26.07 (#7 ada)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/konum-eryaman ← 26.07 (#9 ana sayfa; 'konum' jenerik)
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence ← 31.07 (#5 ara-dönem başlık)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/arissa-goksu ← 26.07 (#4 bayat başlık)
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi ← DİZİNDE ama SERP kopyası ESKİ ticari başlık (#5); bugün 'kendiliğinden dizinde' diye istek atlanmıştı — YENİDEN TARAMA İSTEĞİ gerekli (mevcut hükmü isteği engellemez)
+
+DOKUNMA: mavi-bayrak 17.08, meydan-ada 21.08 taranmış (yansıma bekleniyor).
+UNKNOWN: altay/metropol-bloklari — istek kuyruğu + bağ pompasına eklendi (23.08).
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
