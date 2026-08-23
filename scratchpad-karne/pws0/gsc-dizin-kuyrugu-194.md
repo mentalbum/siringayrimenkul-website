@@ -47,7 +47,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/dogus-91-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/dogus-91-sitesi ← 23.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← 15.08 dizin dışı teyit
@@ -88,10 +88,10 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/altay-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/altay-sitesi ← 23.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ankolular-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi ← 23.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi ← 23.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gordogu-sen-sitesi ← 15.08 dizin dışı teyit
@@ -177,7 +177,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi ← 23.08 istek gönderildi (3. denemede kota açıktı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari ← 20.08 DİZİNDE (kendiliğinden; API taraması)
@@ -337,3 +337,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 23.08 (10) — Çağ Life mahalle çelişkisi ÇÖZÜLDÜ (TKGM koordinat sorgusu): kayıt koordinatı 63387/2'ye düşüyor (kayıtla birebir; nitelik '17 katlı betonarme apartman'). Portallardaki 'Yakacık Çağ Life' 6 KATLI ayrı bir yapı = DIŞ ADAŞ. Bizim veri sağlam, KEOS zincirine gerek kalmadı; cag-life DOKUNMA sınıfında kalıyor (adaş baskın, tarama işi değil).
 > 23.08 (11) — Dünkü notlar kapandı: (1) Angora iç-adaşı SAĞLAM — Güzelkent kaydı VAR (19516/5 dubleks, bilgiemlak'ın 19516'sıyla uyumlu), Göksu kaydı TKGM koordinat teyitli (46456/1); iki ayrı site iki ayrı kayıtta, iş yok. (2) kainat-evler-2 + kainat-evleri eski slugları 308 teyitli; ata/kainat-evler-2 eski adresi 'Kainat Evleri' SERP'inde #2'yi tutuyor → birleştirme listesine eklendi. (3) rusen-park + bp-residence teyitleri (9) numaralı notta.
 > 23.08 (12) — SUSUZ TURU BİTTİ (46 ölçüm, ilk3 35 = %76 — Tunahan'dan sonra en iyi) ve 14 MAHALLENİN TAMAMI ÖLÇÜLMÜŞ OLDU. Susuz ilk3'leri: alya-park #1, ap-forest-gate #1 (+eski kopya #4), baskent-goksu #1, bella-garden #1 (+63385-3 ada #7), bulut-kule #1 (+63384-1 ada #7), green-life #1 (+eski slug #3), liva-goksu #1 (+63368-3 ada #8), neva-palas #1 (+64515-2 ada #3), perla-life #1 (+63380-3 ada #6), sirin-ana #1 (46186-1 #2 + 46185-1 #3 — ilk üç tamamen bizde), basak-life #2, dostlar-birikim #2 (bayat başlık), korucam #2, merdin #2 (bayat başlık), lake-life #2 (ada vitrini), neovadi #2 (eski slug), lilyum #3, major-goksu #3 (ada vitrini), tatli-yamac #3 (ada vitrini). Dışarıda 9: batimahal+eser-yapi+starlife (bayat), cag-life+goksu-marina+serline+sky-goksu (taze-DOKUNMA/yapısal adaş), lake/major/mavera site sayfaları dizinsiz (adaları vitrinde), yeni-botanik/zirveden tipi YOK — Susuz'da UNKNOWN salgını yok (tek UNKNOWN mavera-goksu). sky-goksu 18.08 + starlife 02.08 denetlendi. GENEL KARNE: 723 ölçüm, ilk3 429 (%59), 4-10 arası 50, dışarıda 244.
+> 23.08 (13) — KOTA AÇILDI, istek damlası: 1) caglar-belde İSTEK OK 2) su-damlasi KENDİLİĞİNDEN DİZİNDE (istek gerekmedi) 3) tunahan-sitesi KENDİLİĞİNDEN DİZİNDE 4) tunahan-mahallesi/adalar/46493-2 İSTEK OK — KRİTİK BULGU: 30.07 kopyasında 'robots noindex' algılanmış, canlıda index,follow (sonradan düzelmiş şablon) → taze tarama tam ilaç; ada sayfalarının eski noindex dönemi 'ada canonical çürümesinin' olası kök nedeni, yarın 2-3 ada daha denetlenip doğrulanacak 5) ESKİ slug tunahan/adalar/46493-2 dizinde sıkışıktı → BİRLEŞTİRME İSTEĞİ OK 6) guzelkent/altay İSTEK OK 7) arzutas İSTEK OK 8) dogus-91 İSTEK OK 9) ekin İSTEK OK. Toplam 7 istek kabul, 2 kendiliğinden dizinde. Devam: gordogu-sen, meltem, seniz, yukselay, er-ay-3 eski slug, ŞŞ üçlüsü.
