@@ -1,5 +1,8 @@
 {
   "isim": "Günötesi Sitesi",
+  "alternatifAdlar": [
+    "Gün Ötesi Sitesi"
+  ],
   "slug": "gunotesi-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
   "koordinat": {

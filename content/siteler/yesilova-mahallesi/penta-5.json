@@ -1,5 +1,10 @@
 {
   "isim": "Penta 5",
+  "alternatifAdlar": [
+    "Penta 5 Residence",
+    "Penta 5 Sitesi",
+    "Penta 5 Rezidans"
+  ],
   "slug": "penta-5",
   "mahalleSlug": "yesilova-mahallesi",
   "koordinat": {
@@ -24,9 +29,5 @@
     "4014. Cadde rezidans koridoru — Yeşilova"
   ],
   "adres": "4014. Cadde No:14, Yeşilova, Etimesgut/Ankara",
-  "alternatifAdlar": [
-    "Penta 5 Residence",
-    "Penta 5 Sitesi"
-  ],
   "zenginlestirildi": "2026-07-30"
 }

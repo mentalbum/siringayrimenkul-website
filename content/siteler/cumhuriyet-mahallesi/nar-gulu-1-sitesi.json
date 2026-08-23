@@ -1,5 +1,8 @@
 {
   "isim": "Nar Gülü 1 Sitesi",
+  "alternatifAdlar": [
+    "Nargülü 1 Sitesi"
+  ],
   "slug": "nar-gulu-1-sitesi",
   "mahalleSlug": "cumhuriyet-mahallesi",
   "koordinat": {

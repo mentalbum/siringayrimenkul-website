@@ -1,5 +1,8 @@
 {
   "isim": "Kayaevleri Sitesi",
+  "alternatifAdlar": [
+    "Kaya Evleri Sitesi"
+  ],
   "slug": "kayaevleri-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
   "koordinat": {

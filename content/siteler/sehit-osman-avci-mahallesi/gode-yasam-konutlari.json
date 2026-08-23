@@ -1,5 +1,9 @@
 {
   "isim": "Göde Yaşam Konutları",
+  "alternatifAdlar": [
+    "Göde Yaşam Sitesi",
+    "Gölde Yaşam Sitesi"
+  ],
   "slug": "gode-yasam-konutlari",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
@@ -20,9 +24,6 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
     "Şehit Osman Avcı Mahallesi"
-  ],
-  "alternatifAdlar": [
-    "Göde Yaşam Sitesi"
   ],
   "zenginlestirildi": "2026-07-17"
 }

@@ -1,5 +1,8 @@
 {
   "isim": "Göksu Aura Sitesi",
+  "alternatifAdlar": [
+    "Göksu Aura Evleri"
+  ],
   "slug": "goksu-aura-sitesi",
   "mahalleSlug": "goksu-mahallesi",
   "koordinat": {

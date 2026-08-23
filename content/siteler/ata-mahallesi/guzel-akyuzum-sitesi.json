@@ -1,5 +1,8 @@
 {
   "isim": "Güzel Akyüzüm Sitesi",
+  "alternatifAdlar": [
+    "Güzel Aküzüm Sitesi"
+  ],
   "slug": "guzel-akyuzum-sitesi",
   "mahalleSlug": "ata-mahallesi",
   "koordinat": {

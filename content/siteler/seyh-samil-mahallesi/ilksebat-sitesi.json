@@ -1,5 +1,8 @@
 {
   "isim": "İlksebat Sitesi",
+  "alternatifAdlar": [
+    "İlk Sebat Sitesi"
+  ],
   "slug": "ilksebat-sitesi",
   "mahalleSlug": "seyh-samil-mahallesi",
   "sinirGeoJSON": "siteler/seyh-samil-mahallesi/ilksebat-sitesi-boundary.geojson",

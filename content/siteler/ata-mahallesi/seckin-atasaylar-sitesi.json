@@ -1,5 +1,8 @@
 {
   "isim": "Seçkin Atasaylar Sitesi",
+  "alternatifAdlar": [
+    "Seçkin Atasayanlar Sitesi"
+  ],
   "slug": "seckin-atasaylar-sitesi",
   "mahalleSlug": "ata-mahallesi",
   "koordinat": {

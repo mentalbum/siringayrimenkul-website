@@ -1,5 +1,11 @@
 {
   "isim": "Güngörler Tower",
+  "alternatifAdlar": [
+    "Güngörler Sitesi",
+    "Güngörler Apartmanı",
+    "Şehit Osman Avcı Güngörler Tower",
+    "Güngör Towers"
+  ],
   "slug": "gungorler-tower",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
@@ -21,11 +27,6 @@
     "Konut nitelikli tek blok (tapu kaydı)",
     "Kadastroda Şeker kaydı",
     "Şehit Osman Avcı Mahallesi"
-  ],
-  "alternatifAdlar": [
-    "Güngörler Sitesi",
-    "Güngörler Apartmanı",
-    "Şehit Osman Avcı Güngörler Tower"
   ],
   "zenginlestirildi": "2026-07-17"
 }
