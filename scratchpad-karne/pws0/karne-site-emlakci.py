@@ -28,7 +28,11 @@ if os.path.exists(SONUC):
                                 # kuyruk q'suyla eşleşmez; s-anahtarı yakalar (23.08)
 
 def bul(x):
-    return rows.get(x["q"]) or rows_s.get(x["s"])
+    # s-anahtarı ÖNCE (sayfanın kimliği); q sonra. Ters sırayla misattribution
+    # oluyordu: Devlet turunda ölçülen "Umut Sitesi emlakçı" (sayfası olmayan
+    # site, sıra 0) aynı sorgu metniyle Şeyh Şamil'in Umut Sitesi #1 ölçümünü
+    # eziyordu (24.08 bulgusu; Kardelen'de de aynı çakışma vardı).
+    return rows_s.get(x["s"]) or rows.get(x["q"])
 
 olculen = [x for x in kuyruk if bul(x)]
 kalan = [x for x in kuyruk if not bul(x)]

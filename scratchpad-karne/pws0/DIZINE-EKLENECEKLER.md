@@ -407,7 +407,8 @@ tarama → 23.08 #1).
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi ← DİZİNDE ama SERP kopyası ESKİ ticari başlık (#5); bugün 'kendiliğinden dizinde' diye istek atlanmıştı — YENİDEN TARAMA İSTEĞİ gerekli (mevcut hükmü isteği engellemez)
 
 DOKUNMA: mavi-bayrak 17.08, meydan-ada 21.08 taranmış (yansıma bekleniyor).
-UNKNOWN: altay/metropol-bloklari — istek kuyruğu + bağ pompasına eklendi (23.08).
+DÜZELTME 24.08: altay/metropol-bloklari İSTEK KUYRUĞUNDAN ÇIKARILDI — o sayfa
+YOK (canlı 404, içerik kaydı yok); 'UNKNOWN' hükmü bundandı. Kota harcanmasın.
 
 ## Talebi olanlar (83 sayfa) — once bunlar
 
