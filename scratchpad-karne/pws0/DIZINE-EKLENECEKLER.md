@@ -27,6 +27,26 @@ gosterimlerin %59'unun sorgusunu gizliyor, o dosya gercek talebin %41'ini goster
 
 
 
+## KOTA SIRASI — TALEP ÖNCELİKLİ (24.08 ölçümü, ARTIK BU GEÇERLİ)
+
+`node scripts/gsc-api.mjs sayfalar 90` ile ölçüldü: gösterimin %36'sı eski
+adreslerde sıkışmış. Kota günde ~10 istek; sıra TALEBE göre ve ÖNCE ESKİ ADRESE:
+
+1. eski `goksu/polsan1-ayisigi-sitesi`      <!-- 223 gos, poz 7,6; yeni sayfa UNKNOWN -->
+2. eski `ata/sumeyra-2-sitesi`              <!-- 141 gos, poz 6,2 -->
+3. eski `ata/liva-life-yasam-konutlari`     <!-- 124 gos, poz 6,6 -->
+4. eski `cumhuriyet/anadolu-vizyon-konutlari` <!-- 120 gos, poz 5,8 -->
+5. eski `cumhuriyet/botanik-park-evleri`    <!-- 106 gos, poz 9,5 -->
+6. eski `cumhuriyet/zirveden-bati`          <!-- 105 gos, poz 8,6 -->
+7. guzelkent/sehit-ferhat-koc-sitesi (YENİ slug) — ŞFK/Er-Ay 3 birleştirmesinin 1. şartı
+8. tunahan/su-damlasi-sitesi yeniden tarama <!-- SERP'te eski ticari başlık -->
+9. 4-10 bayat kuşağı (#4'lüler önce: buse, kiratli, havuzlu-bahce, arissa-goksu, camlik, oyak-555)
+10. ada tazeleme: ata/adalar/46424-1 (anemon — güvenli koşul sağlandı)
+
+NOT: "yeni sayfa UNKNOWN" hükmü bu vakalarda YANILTICI — sayfa görünmüyor çünkü
+talep eski adreste karşılanıyor. Eski adres taranıp 308 görülünce yeni adres
+kendiliğinden dizine giriyor (Serender/meydan-ada/caglar-belde deseni).
+
 ## ESKİ ADRESLER — BİRLEŞTİRME İSTEĞİ (19.08)
 
 Bunlar dizine GİRSİN diye değil, BİRLEŞSİN diye gönderilir. Hepsi 308 ile yeni
