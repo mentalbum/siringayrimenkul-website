@@ -1,5 +1,9 @@
 {
   "isim": "Neovadi Konutları",
+  "alternatifAdlar": [
+    "Neovadi Sitesi",
+    "Neo Vadi Konutları"
+  ],
   "slug": "neovadi-konutlari",
   "mahalleSlug": "susuz-mahallesi",
   "koordinat": {
@@ -19,9 +23,6 @@
     "17 katlı yapı (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu kentsel gelişim bölgesi"
-  ],
-  "alternatifAdlar": [
-    "Neovadi Sitesi"
   ],
   "zenginlestirildi": "2026-07-16"
 }
