@@ -406,7 +406,23 @@ tarama → 23.08 #1).
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/arissa-goksu ← 26.07 (#4 bayat başlık)
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi ← DİZİNDE ama SERP kopyası ESKİ ticari başlık (#5); bugün 'kendiliğinden dizinde' diye istek atlanmıştı — YENİDEN TARAMA İSTEĞİ gerekli (mevcut hükmü isteği engellemez)
 
-DOKUNMA: mavi-bayrak 17.08, meydan-ada 21.08 taranmış (yansıma bekleniyor).
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-ist-port ← 30.07 (#5; müteahhit AP kanalları)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mood-goksu ← 31.07 (#5; müteahhit Dinamik Life)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi ← 27.07 (#4 mahalle sayfası)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi ← 26.07 (#8 bayat başlık; AI Bakışı'nda anılıyoruz)
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi ← 26.07 (#4; Güzelkent Doğakent Çamlık iç adaşı #2)
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi ← 26.07 (#5 bayat başlık; ada #9)
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi ← 27.07 (#4; DİKKAT: slug '-sitesi' ekli, kısaltılmış anahtarla 404 denetlenmişti)
+
+ADA TAZELEME — GÜVENLİ KOŞUL SAĞLANDI (24.08, kuralın ilk uygulaması):
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/adalar/46424-1 ← 27.07 kopya (site adlı ESKİ başlık) Anemon Sitesi sorgusunda #4'te, KENDİ site sayfamız #6'da. Site sayfası dizinde (17.08) VE sıralıyor → ada tazelenebilir: taze kopyada site adı başlıktan düşer (95f4aef), ada geri çekilir, site sayfası öne geçer. Vitrin riski YOK çünkü site zaten görünüyor.
+
+DOKUNMA — TAZE TARANMIŞ AMA 4-10'DA (24.08 workflow dökümü; tarama işi DEĞİL,
+rekabet/adaş işi): address-eryaman 23.08, anemon 17.08 (adası tazelenecek),
+arikovani 07.08, ozkardesler 23.08, panorama-gold 22.08, cevizlidere 11.08,
+goldekent 20.08, relax-goksu 17.08, yardimci-bloklari 19.08 (ikiz-ad listesinde),
+ilgazlar 20.08 (16.08 #7 → #4 yükseliyor), sutek 20.08 (3 slot bizde),
+sakalar-tower 20.08, mavi-bayrak 17.08, meydan-ada 21.08 → 24.08'de #2 OLDU.
 DÜZELTME 24.08: altay/metropol-bloklari İSTEK KUYRUĞUNDAN ÇIKARILDI — o sayfa
 YOK (canlı 404, içerik kaydı yok); 'UNKNOWN' hükmü bundandı. Kota harcanmasın.
 
