@@ -65,6 +65,14 @@
  * SONRAKİ TAZELEME: bu liste kendiliğinden bayatlar — sayfa dizine girince
  * çıkarılmalı. Ölçüm komutu (tahmin etme, ölç):
  *   node scripts/gsc-api.mjs denetle-dosya <url-listesi.txt>
+ *
+ * BAKIM 2026-08-23 (GSC API teyitli): rusen-park-evleri (tarama 22.08) ve
+ * bp-residence-eryaman (17.08) kendiliğinden DİZİNE GİRDİ → çıkarıldı.
+ * cumhuriyet/botanik-sitesi eklendi: "URL is unknown to Google" teyitli ama
+ * listede hiç yoktu (dökümdeki 'botanik-evleri' adı botanik-sitesi.json
+ * kaydının isim alanı — slug karışması). 23.08 istek damlasında gönderilen
+ * 8 Güzelkent + caglar-belde LİSTEDE BIRAKILDI: dizine girişleri GSC'de
+ * teyit edilince çıkarılacak (24-48 saat).
  */
 const DIZINSIZ: Record<string, readonly string[]> = {
   "altay-mahallesi": [
@@ -88,7 +96,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "mizan-sitesi",
     "panorama-gold",
     "rayli-sistemciler-sitesi",
-    "rusen-park-evleri",
     "sirin-guneskent-sitesi",
     "sumeyra-2-sitesi",
     "tekirdag-park-evleri",
@@ -106,6 +113,7 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "basaksehir-ankara-konutlari",
     "batihan-konutlari",
     "botanik-park-evleri",
+    "botanik-sitesi",
     "grup-dayanisma-sitesi",
     "konar-manzara-evleri",
     "motto-goksu",
@@ -183,7 +191,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "akin-688-konutlari",
     "arkadya-goksu-evleri",
     "bossphorus-konutlari",
-    "bp-residence-eryaman",
     "bulvar-1071-sitesi",
     "bulvar-312-konutlari",
     "cicek-sitesi",
