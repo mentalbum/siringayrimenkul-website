@@ -1,5 +1,8 @@
 {
   "isim": "Merdin Sitesi",
+  "alternatifAdlar": [
+    "Merdin Vadi Konutları"
+  ],
   "slug": "merdin-sitesi",
   "mahalleSlug": "susuz-mahallesi",
   "koordinat": {

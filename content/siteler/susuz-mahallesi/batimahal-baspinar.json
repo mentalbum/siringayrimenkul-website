@@ -1,5 +1,9 @@
 {
   "isim": "Batımahal Başpınar",
+  "alternatifAdlar": [
+    "Batımahal Başpınar Sitesi",
+    "Batı Mahal Başpınar"
+  ],
   "slug": "batimahal-baspinar",
   "mahalleSlug": "susuz-mahallesi",
   "koordinat": {
@@ -19,9 +23,6 @@
     "2-16 kat aralığında bloklar (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Göksu kentsel gelişim bölgesi"
-  ],
-  "alternatifAdlar": [
-    "Batımahal Başpınar Sitesi"
   ],
   "zenginlestirildi": "2026-07-16"
 }
