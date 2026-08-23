@@ -1,8 +1,8 @@
 # İlk 3'te OLMAYAN site-emlakçı sorguları — 706/706 ölçüldü
 
-- İlk 3'te: **425** | 4-10 arası: **49** | ilk 10'da yok: **232** | ölçülmedi: 0
-- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 54 sorgu hariç): **%65** (425/652)
-- SERP'te görünen 41 sonucumuzun **11** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 30 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
+- İlk 3'te: **426** | 4-10 arası: **49** | ilk 10'da yok: **231** | ölçülmedi: 0
+- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 54 sorgu hariç): **%65** (426/652)
+- SERP'te görünen 42 sonucumuzun **11** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 31 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
 ## İlk 10'da hiç yokuz
@@ -200,7 +200,6 @@
 | Bayer Sitesi emlakçı | ata-mahallesi/bayer-sitesi | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; Bayer Emlak ofis adaşları baskın; GSC denetimi gerek |
 | Belmi Kent emlakçı | ata-mahallesi/belmi-kent | İLK 10'DA YOK — Belmi EMLAK ofisi (aynı mahallede) sorguyu tamamen kaplamış (site adı = ofis markası, yapısal zor); GSC denetimi gerek |
 | Çağdaş Onur Sitesi emlakçı | ata-mahallesi/cagdas-onur-sitesi | Kendi sayfası İLK 10'DA YOK; atasayanlar sayfamız #7 komşu-site metniyle temsil ediyor (dizinsizlik deseni); bilgiemlak 45834; GSC denetimi gerek |
-| Çağlar Belde Sitesi emlakçı | ata-mahallesi/caglar-belde-sitesi | Kendi sayfası İLK 10'DA YOK (kota kuyruğu 1. sırası — dizin dışı teyitli, istek bekliyor); mahalle sayfamız #4 temsil ediyor |
 | Çağlayan Sitesi emlakçı | ata-mahallesi/caglayan-sitesi | İLK 10'DA YOKUZ — ad belirsizliği: Topçu/Elvankent, Ümit Mh., Sincan, Mamak Çağlayan'ları SERP'i bölüyor |
 | Doğasu Evleri emlakçı | ata-mahallesi/dogasu-evleri | Kendi sayfası İLK 10'DA YOK; sorguyu Elmaslar kardeşi alıyor (bizim elmaslar sayfamız #2, mahalle #4 — iç kardeş kapsaması); GSC denetimi gerek |
 | Emin Güven Sitesi emlakçı | ata-mahallesi/emin-guven-sitesi | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; Güven'li emlak ofisi adaşları gürültüde; GSC denetimi gerek |
@@ -603,6 +602,7 @@
 | 2 | Koçaklar Tower emlakçı |
 | 2 | Akdam Sitesi emlakçı |
 | 2 | Ata Life Sitesi emlakçı |
+| 2 | Çağlar Belde Sitesi emlakçı |
 | 2 | Demirkent On Sitesi emlakçı |
 | 2 | Eser Yapı Evleri emlakçı |
 | 2 | Gold Life Konutları emlakçı |
