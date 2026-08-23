@@ -329,6 +329,24 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08:
 
 DOKUNMA notu: cagdas-onur 22.08 taranmış (DÜN) ama sıralamıyor — yansıma bekleniyor, izleme.
 
+## CUMHURİYET — DİZİNDE AMA BAYAT (23.08 SERP turu teşhisi)
+
+DİKKAT: Cumhuriyet'te 8 sayfa UNKNOWN çıktı (10-botanik, ap-istgate, ap-istway,
+arissa, batihan, botanik-evleri, konar-manzara, park-sera) — Google bu URL'leri
+HİÇ görmemiş; mahallenin ada-vitrin sayfaları siteyi taşıyor. Keşif sorunu
+sistemsel olabilir; sitemap taze mi kontrol edilecek.
+
+BAYAT (yeniden tarama):
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/altin-basak-konutlari ← 27.07 ('Altınbaşak' bitişik varyant adayı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/city-life ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/huzur-park-sitesi ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/nisanur-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/guney-park-evleri ← 28.07 (Çankaya Güneypark adaşı baskın)
+
+DOKUNMA: natural 14.08 + oasis 15.08 + ender-dogus 02.08 taze taranmış (adaş/vitrin
+temsili sürüyor) — tarama işi değil.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -458,6 +476,19 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
