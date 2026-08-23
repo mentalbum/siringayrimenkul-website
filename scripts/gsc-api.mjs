@@ -9,6 +9,7 @@
  *   node scripts/gsc-api.mjs denetle <url> [url...]      # URL denetimi (günde 2000)
  *   node scripts/gsc-api.mjs denetle-dosya <dosya> [çıktı.tsv]
  *   node scripts/gsc-api.mjs sorgular [gün=28]           # performans: en çok gösterim alan sorgular
+ *   node scripts/gsc-api.mjs sayfalar [gün=90]           # performans: sayfa başına gösterim/tık/pozisyon
  *   node scripts/gsc-api.mjs sitemap-gonder [yol...]     # sitemap yeniden gönder (varsayılan sitemap.xml)
  *
  * NOT: Dizine ekleme İSTEĞİ bu API'den gönderilemez (Indexing API sadece iş
@@ -136,6 +137,31 @@ if (komut === "denetle") {
     console.log(`${r.impressions}\t${r.clicks}\t${r.position.toFixed(1)}\t${r.keys[0]}`);
   }
   console.error(`(${(j.rows || []).length} sorgu; sütunlar: gösterim, tık, pozisyon, sorgu)`);
+} else if (komut === "sayfalar") {
+  // Sayfa boyutunda talep dökümü. Kullanımı: hangi sayfa gerçekten ARANIYOR?
+  // 2026-08-20 otopsisi: dizine girmenin tek gerçek ayırıcısı sorgu talebiydi
+  // (dizindekilerin medyan gösterimi 79, dizin dışıların 3). Dizin isteği kotası
+  // günde ~10 ile sınırlı olduğundan sıra TALEBE göre kurulur — bu komut o
+  // sıralamayı üretir (24.08).
+  const gun = parseInt(arg[0] || "90", 10);
+  const bitis = new Date(); bitis.setDate(bitis.getDate() - 2); // GSC ~2 gün geriden gelir
+  const baslangic = new Date(bitis); baslangic.setDate(baslangic.getDate() - gun);
+  const f = (d) => d.toISOString().slice(0, 10);
+  const jeton = await erisimJetonu();
+  const satirlar = [];
+  // API sayfa başına 25.000 satır sınırı koyar; 1000'lik dilimlerle tara.
+  for (let bas = 0; ; bas += 1000) {
+    const j = await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/searchAnalytics/query`, {
+      startDate: f(baslangic), endDate: f(bitis), dimensions: ["page"], rowLimit: 1000, startRow: bas,
+    });
+    const r = j.rows || [];
+    satirlar.push(...r);
+    if (r.length < 1000) break;
+  }
+  for (const r of satirlar) {
+    console.log(`${r.impressions}\t${r.clicks}\t${r.position.toFixed(1)}\t${r.keys[0]}`);
+  }
+  console.error(`(${satirlar.length} sayfa, son ${gun} gün; sütunlar: gösterim, tık, pozisyon, url)`);
 } else if (komut === "sitemap-gonder") {
   // Argüman verilmezse ana sitemap; verilirse o yol (ör. sitemap-eski-adresler.xml).
   const jeton = await erisimJetonu();
@@ -146,6 +172,6 @@ if (komut === "denetle") {
     console.log(`gönderildi: ${sm}`);
   }
 } else {
-  console.error("Komutlar: denetle | denetle-dosya | sorgular | sitemap-gonder (üstteki yorum bloğuna bak)");
+  console.error("Komutlar: denetle | denetle-dosya | sorgular | sayfalar | sitemap-gonder (üstteki yorum bloğuna bak)");
   process.exit(1);
 }
