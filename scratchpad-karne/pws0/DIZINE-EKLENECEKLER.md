@@ -274,6 +274,31 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–01.08:
 DOKUNMA notları: ankapark 17.08 + atakent-sitesi 17.08 TAZE taranmış ama sıralamıyor
 (portal/ofis adaşları) — tarama işi değil.
 
+## GÖKSU — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
+
+GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08 (18 sayfa):
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari ← 27.07 (neovadi #5 temsil)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bordo-loca ← 31.07 (Denizli Bordo Loca ofis adaşı baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari ← 28.07 (63381-1 ada #5 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/enday-sitesi ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-aura-sitesi ← 27.07 (46453-1 ada #4 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-evleri-sitesi ← 26.07 (ŞOA arkadya adaşı karışıyor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-vadi-konutlari ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari ← 27.07 (üçlü adaş karmaşası)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/golkent-1-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/golkent-sitesi ← 26.07 (Gölbaşı adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi ← 02.08 (İslamhaneleri adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/merkez-sitesi ← 26.07 (jenerik ad, yapısal zor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari ← 27.07 (ŞŞ İnci Park adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi ← 26.07 (Şelale Emlak adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar ← 27.07 (müteahhit baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari ← 27.07 (48056-1 ada #3 vitrin)
+
+DOKUNMA notu: evinora 09.08 taranmış ama sıralamıyor (Kayseri/Keçiören adaşları) — tarama işi değil.
+zirveden-goksu denetimi API hatasıyla kaldı — yarın tamamlanacak.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -388,6 +413,10 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utku-kent-2-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
@@ -460,7 +489,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
