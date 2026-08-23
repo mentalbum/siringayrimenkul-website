@@ -1,8 +1,8 @@
-# İlk 3'te OLMAYAN site-emlakçı sorguları — 703/706 ölçüldü
+# İlk 3'te OLMAYAN site-emlakçı sorguları — 706/706 ölçüldü
 
-- İlk 3'te: **424** | 4-10 arası: **49** | ilk 10'da yok: **230** | ölçülmedi: 3
-- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 53 sorgu hariç): **%65** (424/650)
-- SERP'te görünen 40 sonucumuzun **10** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 30 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
+- İlk 3'te: **425** | 4-10 arası: **49** | ilk 10'da yok: **232** | ölçülmedi: 0
+- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 54 sorgu hariç): **%65** (425/652)
+- SERP'te görünen 41 sonucumuzun **11** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 30 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
 ## İlk 10'da hiç yokuz
@@ -159,6 +159,7 @@
 | Özanadolu emlakçı | seyh-samil-mahallesi/ozanadolu | Site sayfası İLK 10'DA YOK ama #1 BİZİM 46268-4 ada sayfamız — ada siteyi #1'de temsil ediyor; Anadolu Emlak adaş gürültüsü; GSC denetimi gerek |
 | Selinkent Sitesi emlakçı | seyh-samil-mahallesi/selinkent-sitesi | İlk 10'da YOK; bilgiemlak 46486 ada sayfası #2; bizim uzunbey+taniskent sayfalarımız yanlış sorguda çıkıyor (selinkent sayfası görünmüyor) — dizin/tarama şüphesi, GSC denetimi gerek; Konya+Ereğli adaş gürültüsü |
 | Sitekonut Sitesi emlakçı | seyh-samil-mahallesi/sitekonut-sitesi | İlk 10'da YOK; Google sorguyu 'Site Konut Sitesi'ne çevirip jenerik konut-sitesi sonuçları basıyor — yapısal zor küme (Konut Sitesi tipi ad); harita kutusunda Şirin #2 |
+| Turkuaz Sitesi emlakçı | seyh-samil-mahallesi/turkuaz-sitesi | ilk 10'da yokuz; SERP'i Etimesgut TURKUAZ MAHALLESİ + Turkuaz Gayrimenkul ofisleri + Etimesgut Turkuaz Konutları domine ediyor — yapısal ad belirsizliği |
 | Umut Sitesi emlakçı | seyh-samil-mahallesi/umut-sitesi | Umut adlı ofisler domine |
 | Yağan Kent emlakçı | seyh-samil-mahallesi/yagan-kent | Kendi sayfası İLK 10'DA YOK; bilgiemlak 46489 ada #1; bizim turk-konut #2 + borankent #4 yanlış sayfalarla temsil (dizinsizlik deseni); GSC denetimi gerek |
 | Yeşil Aşiyan Sitesi emlakçı | seyh-samil-mahallesi/yesil-asiyan-sitesi | Kendi sayfası İLK 10'DA YOK (kuyrukta zaten dizin-dışı); mahalle sayfamız #5, Devlet Mah. ADAŞ Aşiyan Sitesi eski slug'ı #9 (ayrı site, karışma riski); EPA ofisi bu sitede oturuyor |
@@ -219,6 +220,7 @@
 | Astim Flora Evleri emlakçı | cumhuriyet-mahallesi/astim-flora-evleri | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; portallar + müteahhit Astim İnşaat baskın; GSC denetimi gerek |
 | Ata Yıldız Batı Konutları emlakçı | cumhuriyet-mahallesi/ata-yildiz-bati-konutlari | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; 'ATAYILDIZ' bitişik yazım baskın (varyant adayı, kayıt kontrol); GSC denetimi gerek |
 | Botanik Park Evleri emlakçı | cumhuriyet-mahallesi/botanik-park-evleri | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; Bağlıca Botanik Park adaşı baskın; GSC denetimi gerek |
+| Botanik Evleri emlakçı | cumhuriyet-mahallesi/botanik-sitesi | ilk 10'da yokuz; sayfa UNKNOWN (bağ pompasına 23.08'de eklendi, istek kuyruğunda); Botanik Emlak ofisi + Çankaya/Bağlıca botanik adaşları baskın; harita kutusunda Kentpark Botanik var |
 | City Life emlakçı | cumhuriyet-mahallesi/city-life | İLK 10'DA YOK, hiçbir sayfamız görünmüyor (Yeni Batı'lı sorguda bile); portallar baskın; GSC denetimi gerek |
 | GreenPark Evleri emlakçı | cumhuriyet-mahallesi/greenpark-evleri | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; Serhat/Bağlıca/Çankaya Green Park adaşları baskın; GSC denetimi gerek |
 | Güney Park Evleri emlakçı | cumhuriyet-mahallesi/guney-park-evleri | İLK 10'DA YOK — Çankaya İlkbahar Güneypark adaşları SERP'i kaplamış; Eryaman sonucu hiç yok; GSC + Yeni Batı'lı yeniden ölçüm gerek |
@@ -394,6 +396,7 @@
 | 1 | Kaçkar Sitesi emlakçı |
 | 1 | Lider Yaşam Evleri emlakçı |
 | 1 | Öz Tamer Sitesi emlakçı |
+| 1 | Serender Sitesi emlakçı |
 | 1 | Tekser Blokları emlakçı |
 | 1 | Ünsal Rezidans emlakçı |
 | 1 | Uzunbey Sitesi emlakçı |
