@@ -302,6 +302,16 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08 (18 sayfa):
 DOKUNMA notu: evinora 09.08 taranmış ama sıralamıyor (Kayseri/Keçiören adaşları) — tarama işi değil.
 zirveden-goksu denetimi API hatasıyla kaldı — yarın tamamlanacak.
 
+## ŞOA — DİZİNDE AMA BAYAT / ADAŞ-BASKIN (23.08 SERP turu teşhisi)
+
+BAYAT (yeniden tarama):
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1 ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit ← 26.07
+
+DOKUNMA (taze taranmış, adaş baskın — tarama işi değil): ahikent 02.08 (Eyüpsultan
+Ahikent), bossphorus 17.08 ('Bosphorus' tek-s resmi yazım), elit-yasam-2 17.08,
+eston 04.08 (ŞŞ eston kardeşleri).
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -420,6 +430,12 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
