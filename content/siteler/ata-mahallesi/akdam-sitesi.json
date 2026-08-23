@@ -1,5 +1,9 @@
 {
   "isim": "Akdam Sitesi",
+  "alternatifAdlar": [
+    "Yeni Akdam",
+    "Yeni Akdam Sitesi"
+  ],
   "slug": "akdam-sitesi",
   "mahalleSlug": "ata-mahallesi",
   "koordinat": {
@@ -20,8 +24,5 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Ata Mahallesi"
   ],
-  "zenginlestirildi": "2026-07-16",
-  "alternatifAdlar": [
-    "Yeni Akdam"
-  ]
+  "zenginlestirildi": "2026-07-16"
 }

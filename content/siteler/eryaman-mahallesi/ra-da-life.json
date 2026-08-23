@@ -1,5 +1,9 @@
 {
   "isim": "Ra-Da Life",
+  "alternatifAdlar": [
+    "Ra-Da Life Sitesi",
+    "Rada Life"
+  ],
   "slug": "ra-da-life",
   "mahalleSlug": "eryaman-mahallesi",
   "koordinat": {
@@ -25,9 +29,6 @@
     "Daire başına birer araçlık kapalı otopark",
     "Kat mülkiyetli parsel (TKGM)",
     "Eryaman Mahallesi"
-  ],
-  "alternatifAdlar": [
-    "Ra-Da Life Sitesi"
   ],
   "zenginlestirildi": "2026-08-01"
 }

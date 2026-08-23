@@ -1,5 +1,8 @@
 {
   "isim": "Havacılar Sitesi",
+  "alternatifAdlar": [
+    "Türkkonut Havacılar Sitesi"
+  ],
   "slug": "havacilar-sitesi",
   "mahalleSlug": "goksu-mahallesi",
   "koordinat": {

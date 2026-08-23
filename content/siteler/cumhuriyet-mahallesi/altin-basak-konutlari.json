@@ -1,5 +1,9 @@
 {
   "isim": "Altın Başak Konutları",
+  "alternatifAdlar": [
+    "Altın Başak Sitesi",
+    "Altınbaşak Konutları"
+  ],
   "slug": "altin-basak-konutlari",
   "mahalleSlug": "cumhuriyet-mahallesi",
   "koordinat": {
@@ -23,9 +27,6 @@
     "Yaklaşık 68 daire (proje tanıtımı)",
     "2016 teslim (proje tanıtımı)",
     "Cumhuriyet Mahallesi (Yeni Batı aksı)"
-  ],
-  "alternatifAdlar": [
-    "Altın Başak Sitesi"
   ],
   "zenginlestirildi": "2026-08-01"
 }

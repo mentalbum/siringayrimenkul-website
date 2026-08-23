@@ -1,5 +1,9 @@
 {
   "isim": "Zekioğlu Rezidans",
+  "alternatifAdlar": [
+    "Zekioğlu Sitesi",
+    "Zekioğlu Residence"
+  ],
   "slug": "zekioglu-rezidans",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
@@ -23,9 +27,6 @@
     "Zekioğlu İnşaat yapımı (firma tanıtımı)",
     "Tamamlanma yılı 2013 (firma tanıtımı)",
     "Şehit Osman Avcı Mahallesi"
-  ],
-  "alternatifAdlar": [
-    "Zekioğlu Sitesi"
   ],
   "zenginlestirildi": "2026-08-01"
 }

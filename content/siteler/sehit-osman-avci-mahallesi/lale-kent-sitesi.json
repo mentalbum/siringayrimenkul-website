@@ -1,5 +1,8 @@
 {
   "isim": "Lale Kent Sitesi",
+  "alternatifAdlar": [
+    "Lalekent Sitesi"
+  ],
   "slug": "lale-kent-sitesi",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {

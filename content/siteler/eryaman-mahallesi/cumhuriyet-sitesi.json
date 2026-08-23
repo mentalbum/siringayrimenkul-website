@@ -1,5 +1,8 @@
 {
   "isim": "Cumhuriyet Sitesi",
+  "alternatifAdlar": [
+    "Atakent 2 Cumhuriyet Sitesi"
+  ],
   "slug": "cumhuriyet-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
   "koordinat": {

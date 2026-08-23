@@ -1,5 +1,9 @@
 {
   "isim": "Garden Zirve",
+  "alternatifAdlar": [
+    "Garden Zirve Sitesi",
+    "Zirve Garden"
+  ],
   "slug": "garden-zirve",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
@@ -20,9 +24,6 @@
     "Kat mülkiyetli parsel (TKGM)",
     "Konut + ticari karma kullanım (tapu kaydı)",
     "Şehit Osman Avcı Mahallesi"
-  ],
-  "alternatifAdlar": [
-    "Garden Zirve Sitesi"
   ],
   "zenginlestirildi": "2026-07-17"
 }

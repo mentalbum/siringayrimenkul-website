@@ -1,5 +1,9 @@
 {
   "isim": "Bossphorus Konutları",
+  "alternatifAdlar": [
+    "Bossphorus Sitesi",
+    "Bosphorus Ankara Konutları"
+  ],
   "slug": "bossphorus-konutlari",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
@@ -23,9 +27,6 @@
     "Etaplarda toplam 37 mağazalı çarşı dokusu",
     "Kat irtifaklı parsel (TKGM)",
     "Göksu Parkı'nın yanı başında"
-  ],
-  "alternatifAdlar": [
-    "Bossphorus Sitesi"
   ],
   "zenginlestirildi": "2026-07-30"
 }
