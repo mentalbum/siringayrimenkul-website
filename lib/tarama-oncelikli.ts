@@ -73,9 +73,12 @@
  * kaydının isim alanı — slug karışması). 23.08 istek damlasında gönderilen
  * 8 Güzelkent + caglar-belde LİSTEDE BIRAKILDI: dizine girişleri GSC'de
  * teyit edilince çıkarılacak (24-48 saat).
- *
- * EK 2026-08-23 (akşam): altay/metropol-bloklari eklendi — "URL is unknown to
- * Google" API teyitli; SERP'te yerine Güzelkent Metro Yaşam adaşımız çıkıyor.
+
+ * GERİ ALINDI 2026-08-24: altay/metropol-bloklari 23.08'de eklenmişti ama O
+ * SAYFA YOK (canlı 404, içerik kaydı da yok) — GSC'nin "unknown" demesi bu
+ * yüzden. Ders: bu listeye eklemeden önce content/siteler/<mahalle>/<slug>.json
+ * dosyasının VARLIĞINI doğrula; ölçüm defterindeki anahtar sayfa var demek
+ * değil (bazı turlarda sayfası olmayan siteler de ölçülmüş).
  *
  * EK 2026-08-24: caglar-belde-sitesi çıkarıldı — 23.08 istek → 35 dk'da
  * tarandı, DİZİNDE (API teyitli). Dünkü Güzelkent 8'lisinin 5'i UNKNOWN'dan
@@ -86,7 +89,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
     "betontas-bloklari",
     "eryaman-park-evleri",
     "ilbeyi-sitesi",
-    "metropol-bloklari",
     "vatan-sitesi",
   ],
   "ata-mahallesi": [
