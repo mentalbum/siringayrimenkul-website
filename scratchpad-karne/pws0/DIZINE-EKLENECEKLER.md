@@ -312,6 +312,20 @@ DOKUNMA (taze taranmış, adaş baskın — tarama işi değil): ahikent 02.08 (
 Ahikent), bossphorus 17.08 ('Bosphorus' tek-s resmi yazım), elit-yasam-2 17.08,
 eston 04.08 (ŞŞ eston kardeşleri).
 
+## ATA — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
+
+GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08:
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ada-loft-eryaman ← 30.07 (müteahhit kanalları baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/atasayanlar-sitesi ← 26.07 (Alacaatlı/İncek adaşları baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/bayer-sitesi ← 26.07 (Bayer Emlak adaşı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/belmi-kent ← 26.07 (Belmi Emlak ofis adaşı, yapısal zor)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/emin-guven-sitesi ← 26.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/etikent-sitesi ← 27.07
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/genova ← 02.08 (iş merkezi/YS kaydı gürültüsü)
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri ← 26.07
+
+DOKUNMA notu: cagdas-onur 22.08 taranmış (DÜN) ama sıralamıyor — yansıma bekleniyor, izleme.
+
 ## Talebi olanlar (83 sayfa) — once bunlar
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
@@ -436,6 +450,10 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
@@ -508,7 +526,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1, rayli-sistemciler 44774-2 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
