@@ -1,6 +1,6 @@
-# İlk 3'te OLMAYAN site-emlakçı sorguları — 504/706 ölçüldü
+# İlk 3'te OLMAYAN site-emlakçı sorguları — 539/706 ölçüldü
 
-- İlk 3'te: **303** | 4-10 arası: **201** | ilk 10'da yok: **0** | ölçülmedi: 202
+- İlk 3'te: **326** | 4-10 arası: **213** | ilk 10'da yok: **0** | ölçülmedi: 167
 - SERP'te görünen 40 sonucumuzun **10** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 30 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
@@ -111,6 +111,17 @@
 | 0 | Yayıklı 4 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/yayikli-4-sitesi | Kendi sayfası İLK 10'DA YOK; #4'te 18520-1 ada sayfamız + #9 yeni-yayikli (Eryaman Mah. adaşı) temsil ediyor; GSC denetimi gerek |
 | 0 | Yeşim Kent2 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi | Kendi sayfası İLK 10'DA YOK ama #1 BİZİM mahalle sayfamız; Cumhuriyet Mah. Yeşim Kent + Beylikdüzü adaşları gürültüde; GSC denetimi gerek |
 | 0 | Yükselay Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/yukselay-sitesi | Kendi sayfası İLK 10'DA YOK; #3-4 komşu ada sayfalarımız + #9 özle-iletişim (Yükselay snippet'iyle) temsil ediyor; GSC denetimi gerek |
+| 0 | Address Göksu emlakçı | /mahalleler/sehit-osman-avci-mahallesi/address-goksu | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; müteahhit ALR/Address kanalları baskın; GSC denetimi gerek |
+| 0 | Ahikent Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi | İLK 10'DA YOK — Eyüpsultan Ahikent villaları adaşı SERP'i kaplamış; Eryaman sonucu hiç yok; GSC + Eryaman'lı yeniden ölçüm gerek |
+| 0 | Bossphorus Konutları emlakçı | /mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; 'Bosphorus Ankara Konutları' resmi/yaygın yazım (tek s — varyant adayı, kayıt kontrol); GSC denetimi gerek |
+| 0 | Bulvar 1071 Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi | Kendi YENİ sayfası ilk 10'da yok; mahalle #3 + ESKİ slug 'Satılık, Kiralık, Değerleme' kopyası #8 (birleşme adayı); 'Bulvar 1071 Konutları' yazımı sahada; GSC denetimi gerek |
+| 0 | Bulvar 312 Konutları emlakçı | /mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari | Kendi sayfası İLK 10'DA YOK (kuyrukta zaten dizinsiz); 46652-1 ada sayfamız #4 temsil ediyor (vitrin adayı); BULVAR 312 emlak ofisi adaşı GBP'de |
+| 0 | Gökdemirler Suit emlakçı | /mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit | Kendi sayfası İLK 10'DA YOK; mahalle sayfamız #7 temsil ediyor; müteahhit 'Gökdemir Suit' resmi yazımı (kayıtta var mı kontrol); GSC denetimi gerek |
+| 0 | Göksu Prestij emlakçı | /mahalleler/sehit-osman-avci-mahallesi/goksu-prestij | İLK 10'DA YOK, hiçbir sayfamız görünmüyor (kuyrukta zaten dizinsiz); SG Prestij ofis adaşı + proje siteleri baskın; 'Göksu Prestij Konutları' yazımı sahada |
+| 0 | İçtaş emlakçı | /mahalleler/sehit-osman-avci-mahallesi/ictas | İLK 10'DA YOK — IC İçtaş İnşaat holding SERP'i kaplamış (kurumsal dev adaş, yapısal zor); ŞŞ ictas-bloklari kardeşi ayrı; GSC + Eryaman'lı yeniden ölçüm gerek |
+| 0 | Neva Panora Konutları emlakçı | /mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari | İLK 10'DA YOK, hiçbir sayfamız görünmüyor (kuyrukta zaten dizinsiz); 'Neva Panora' yalın + 'Recidance' yazımları sahada |
+| 0 | Relax Eryaman Konutları emlakçı | /mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari | İLK 10'DA YOK — 'Relax Göksu Fatih Başer' emlak ofisi adaşı SERP'i kaplamış (ofis sitede oturuyor); hiçbir sayfamız görünmüyor; GSC denetimi gerek |
+| 0 | Üçyıldız Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; Çankaya Osman Temiz Üçyıldiz + Akyurt/B.Çekmece adaşları baskın; GSC denetimi gerek |
 | 0 | Akdal Residence emlakçı | /mahalleler/seker-mahallesi/akdal-residence | Kendi sayfası İLK 10'DA YOK; #2'de 46361-7 ada sayfamız temsil ediyor (dizinsizlik deseni); 'Akdal Rezidans' yazımı sahada yaygın (varyant adayı, kayıt kontrol edilmeli); GSC denetimi gerek |
 | 0 | Diamond Residence emlakçı | /mahalleler/seker-mahallesi/diamond-residence | İLK 10'DA YOK (ilk ölçüm); Öveçler/Şişli Diamond adaşları + Diamond Prime ofisi gürültüsü (yaygın-ad deseni); GSC denetimi gerek |
 | 0 | İzoser Residence emlakçı | /mahalleler/seker-mahallesi/izoser-residence | Kendi sayfası İLK 10'DA YOK; #4 mahalle sayfamız + #8 45064-16 ada sayfamız temsil ediyor (dizinsizlik deseni); 'İzoser Rezidans' ve 'İzo-Ser' yazımları sahada yaygın (varyant adayları); GSC denetimi gerek |
@@ -125,6 +136,7 @@
 | 0 | Eston Blokları emlakçı | /mahalleler/seyh-samil-mahallesi/eston-bloklari | Kendi sayfası İLK 10'DA YOK; kardeş eston-1-bloklari #4 + ŞOA eston-sitesi #8 = domain 2 slot (adaş bölünmesi); GSC denetimi gerek |
 | 0 | Gül Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/gul-sitesi | İLK 10'DA YOK (ilk ölçüm); Gül Emlak ofisleri (Keçiören/Altındağ/Mamak) tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
 | 0 | İlkdoğuş Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi | İLK 10'DA YOK (ilk ölçüm); Google 'İlk Doğuş' ayrı yazımına düzeltiyor (varyant adayı — kayıt kontrol); Doğuş Emlak ofis adaşı gürültüsü; GSC denetimi gerek |
+| 0 | İnci Park Evleri emlakçı | /mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi | Kendi (ŞOA) sayfası İLK 10'DA YOK; ŞŞ inci-park-evleri ADAŞ sayfamız #1 + eski slug #4 (iç adaş — sorguyu ŞŞ kardeşi kazanıyor); Ahi Mesut İnci Park da var (üçlü adaş); GSC denetimi gerek |
 | 0 | Köşk Birlik Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi | Kendi sayfası İLK 10'DA YOK; #6'da 46266-1 ada sayfamız + #9 Güzelkent kosk-sitesi adaşı temsil ediyor (dizinsizlik deseni); Birlik Köşk Emlak ofis adaşı gürültüde; GSC denetimi gerek |
 | 0 | Kuryap Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/kuryap-sitesi | İLK 10'DA YOK (ilk ölçüm); hiçbir sayfamız görünmüyor; bilgiemlak 'Kur-Yap Sitesi' tireli yazımı (varyant adayı); GSC denetimi gerek |
 | 0 | Liderkent emlakçı | /mahalleler/seyh-samil-mahallesi/liderkent | İLK 10'DA YOK (ilk ölçüm); Mamak Zirvekent Liderkent Sitesi adaşı + Lider Emlak ofisleri tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
@@ -281,10 +293,19 @@
 | 1 | Yeşil Güven Kent emlakçı |
 | 1 | Yeşimkent emlakçı |
 | 1 | Ardıç Sitesi emlakçı |
+| 1 | Garden Zirve emlakçı |
+| 1 | Güngörler Tower emlakçı |
 | 1 | Happy Life Residence emlakçı |
+| 1 | Hill Tower Göksu emlakçı |
+| 1 | İzo-Ser Residence emlakçı |
 | 1 | Karma Modern emlakçı |
+| 1 | Metropark Concept emlakçı |
+| 1 | Metropark Plus emlakçı |
 | 1 | Mia Concept Konutları emlakçı |
+| 1 | Nefeskent Sitesi emlakçı |
 | 1 | Safir Rezidans emlakçı |
+| 1 | Tan Yıldızı Sitesi emlakçı |
+| 1 | Türeli Residence emlakçı |
 | 1 | Address Enda emlakçı |
 | 1 | Altaş Relax Line emlakçı |
 | 1 | Hill Tower emlakçı |
@@ -293,7 +314,6 @@
 | 1 | İçtaş Blokları emlakçı |
 | 1 | İlk Umut Sitesi emlakçı |
 | 1 | İlksebat Sitesi emlakçı |
-| 1 | İnci Park Evleri emlakçı |
 | 1 | Kaçkar Sitesi emlakçı |
 | 1 | Lider Yaşam Evleri emlakçı |
 | 1 | Öz Tamer Sitesi emlakçı |
@@ -412,11 +432,20 @@
 | 2 | Tez Konak Sitesi emlakçı |
 | 2 | Yayıklı 2 Sitesi emlakçı |
 | 2 | Yenigün Işığı Sitesi emlakçı |
+| 2 | Akın 688 Konutları emlakçı |
+| 2 | Arkadya Göksu Evleri emlakçı |
 | 2 | Bordo Life Residence emlakçı |
 | 2 | Bordo Platinum Residence emlakçı |
+| 2 | BP Residence Eryaman emlakçı |
+| 2 | Çizgi Ötesi Residence emlakçı |
 | 2 | Demirer Sitesi emlakçı |
 | 2 | Göksukent Sitesi emlakçı |
+| 2 | İntes Sitesi emlakçı |
 | 2 | Koz Modern emlakçı |
+| 2 | Maybak Sitesi emlakçı |
+| 2 | Neva Butik Home emlakçı |
+| 2 | Neva Prestij Konutları emlakçı |
+| 2 | Yazıcı Modern emlakçı |
 | 2 | Bahçen Eryaman Konutları emlakçı |
 | 2 | Oasis Rezidans emlakçı |
 | 2 | Zirve Loft emlakçı |
@@ -493,7 +522,13 @@
 | 3 | Gözde 91 Sitesi emlakçı |
 | 3 | Ulaş Sitesi emlakçı |
 | 3 | Dalgıç Residence emlakçı |
+| 3 | Göde Yaşam Konutları emlakçı |
+| 3 | Kazım Sarı Sitesi emlakçı |
+| 3 | KC Lale Evleri emlakçı |
+| 3 | Ödevci Sitesi emlakçı |
 | 3 | Vera City emlakçı |
+| 3 | Z. Yayla Konutları emlakçı |
+| 3 | Zekioğlu Rezidans emlakçı |
 | 3 | Altaş Rezidans emlakçı |
 | 3 | Golden Life Residence emlakçı |
 | 3 | Çağlar Emin Evleri emlakçı |
