@@ -75,6 +75,7 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz/ap-forest-gate  <!-- 23.08 SERP #4'te eski kopya (#1 yeni); 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz/green-life-goksu  <!-- 23.08 SERP #3'te eski slug ('ücretsiz değerlendirme' devri metniyle; #1 yeni); 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz/neovadi-konutlari  <!-- 23.08 SERP #2+#5 İKİ eski kopya (yeni sayfa #8'in önünde); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/kainat-evler-2  <!-- 23.08 'Kainat Evleri' sorgusunda #2'de eski slug kardeş kaydı (kainat-evleri yeni sayfası #3'ün önünde); kendi yeni sayfası #1'de sağlam; 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
