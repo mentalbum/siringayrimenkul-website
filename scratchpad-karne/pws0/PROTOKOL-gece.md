@@ -264,3 +264,25 @@ Bugünkü toplam: sabah ~35 (hedef sorgular + site: testleri) + akşam 42 site
 geldi — muhtemel sebep aynı gün içinde İKİ ayrı yoğun oturum. Gece görevi
 (02:34) başlamadan önce sayfanın düzeldiğini tek sorguyla teyit etsin;
 CAPTCHA sürüyorsa o geceyi atlasın.
+
+---
+
+## 2026-08-23 — BÖLGE TURU: gece dilimine 14 sorgu ÖNCE eklendi
+
+Özgün'ün 23.08 açık isteği: "eryaman emlakçı" ve "emlakçı"da bölgeye göre
+sıramız Local Falcon usulü, ücretsiz ölçülsün. Talimat: `BOLGE-TURU.md`.
+
+- Gece görevi site-emlakçı dilimine başlamadan ÖNCE bölge turunu koşar:
+  `node bolge-tur.mjs --listele` → çıkan 14 URL sırayla ölçülür (~7 dk),
+  sonuç `sonuclar-bolge.jsonl`'e. Sonra site-emlakçı dilimi normal devam
+  eder (23.08 itibarıyla 88 sorgu kaldı; ikisi bir gecede rahat biter).
+  14 sorgu için öncelik kuralının esnetilmesi Özgün'ün isteğine dayanır.
+- URL'leri listeden değil, `--listele`yi O GECE çalıştırarak al — uule zaman
+  damgalı, bayat liste kullanılmaz.
+- Her kayıtta `loc` beklenen semti/Ankara'yı göstermeli; göstermiyorsa uule
+  tutmamış demektir: bölge turunu durdur, YAZMA, BOLGE-TURU.md'ye not düş,
+  site-emlakçı dilimine geç.
+- Uzak/konteyner oturumundan koşma denemesi 23.08'de yapıldı: çıkış politikası
+  google.com'a 403 veriyor. Bu tur YALNIZ ev kanalından koşulur.
+- Tur tamamlanınca `python3 karne-bolge.py` çıktısı gece-log'a eklenir ve bu
+  madde "TAMAMLANDI <tarih>" diye işaretlenir — tekrarı ancak Özgün isterse.
