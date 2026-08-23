@@ -76,6 +76,10 @@
  *
  * EK 2026-08-23 (akşam): altay/metropol-bloklari eklendi — "URL is unknown to
  * Google" API teyitli; SERP'te yerine Güzelkent Metro Yaşam adaşımız çıkıyor.
+ *
+ * EK 2026-08-24: caglar-belde-sitesi çıkarıldı — 23.08 istek → 35 dk'da
+ * tarandı, DİZİNDE (API teyitli). Dünkü Güzelkent 8'lisinin 5'i UNKNOWN'dan
+ * "Discovered"a ilerledi (istek işleniyor); dizine girince çıkarılacaklar.
  */
 const DIZINSIZ: Record<string, readonly string[]> = {
   "altay-mahallesi": [
@@ -87,7 +91,6 @@ const DIZINSIZ: Record<string, readonly string[]> = {
   ],
   "ata-mahallesi": [
     "cagdas-onur-sitesi",
-    "caglar-belde-sitesi",
     "cigdem-sitesi",
     "dogasu-evleri",
     "gold-stone-evleri",
