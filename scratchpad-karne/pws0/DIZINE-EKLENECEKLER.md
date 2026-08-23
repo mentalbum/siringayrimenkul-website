@@ -597,3 +597,16 @@ KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine gir
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
 düşer; erken tazelersek vitrin tamamen boşalır). Site dizine girince ada
 tazelenir → kanibalizasyon temiz kapanır (Yüksel/Sarıgül deseni).
+
+EK (23.08 — noindex bulgusu): Şablon bugün PAYLAŞIMLI adalara (aynı adada 2+
+site kaydı) robots noindex basıyor (tek-siteli adalar index,follow). Sonuç:
+paylaşımlı bir ada taze taranırsa dizinden DÜŞER — bu, site sayfası dizine
+girdikten sonra istenen temiz kapanışla aynı, ama siteden ÖNCE yapılırsa vitrin
+kalıcı gider. Vitrin listesindeki paylaşımlı adalar (öncelik sırası aynı, ekstra
+dikkat): goksu-aura/utkan ortak vitrini 46453-1 + 46457-1 (5'er site!) ve
+dastarli 46519-1 (3 site — Alis + Türkkonut Sinem ile ortak). Geri kalan vitrin
+adaları tek-siteli, taze tarama başlık tazeler ama site adını başlıktan
+düşürür (95f4aef) — kural değişmez: ÖNCE SİTE, SONRA ADA.
+Tarih penceresi kanıtı: 28.07–03.08 arası taranan adalar noindex kopyasında
+sıkıştı (46493-2 vakası, istek gönderildi); 26–28.07 taramalılar dizinde kaldı
+(17662-1, 46196-4, 63379-1 API teyitli).
