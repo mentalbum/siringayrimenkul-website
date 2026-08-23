@@ -70,6 +70,12 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/uzunali-goksu-konutlari  <!-- 23.08 SERP #3'te eski slug; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/metrokent-villalari  <!-- 22.08 SERP #3-5 çift kopya; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/turaykent-sitesi  <!-- 22.08 SERP #2'de eski slug (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/diamond-goksu  <!-- 23.08 "Wind Göksu emlakçı" SERP #8'de eski slug + eski başlık (snippet wind-goksu metni — Google iki kaydı karıştırıyor); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/wind-goksu  <!-- 23.08 wind-goksu yeni sayfası kendi sorgusunda ilk 10'da yok; eski slug 308 doğrulandı, birleşince temsil düzelir -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/ap-forest-gate  <!-- 23.08 SERP #4'te eski kopya (#1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/green-life-goksu  <!-- 23.08 SERP #3'te eski slug ('ücretsiz değerlendirme' devri metniyle; #1 yeni); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/neovadi-konutlari  <!-- 23.08 SERP #2+#5 İKİ eski kopya (yeni sayfa #8'in önünde); 308 doğrulandı -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata/kainat-evler-2  <!-- 23.08 'Kainat Evleri' sorgusunda #2'de eski slug kardeş kaydı (kainat-evleri yeni sayfası #3'ün önünde); kendi yeni sayfası #1'de sağlam; 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
@@ -299,8 +305,9 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08 (18 sayfa):
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar ← 27.07 (müteahhit baskın)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari ← 27.07 (48056-1 ada #3 vitrin)
 
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/zirveden-goksu ← 31.07 (23.08 API teyidi — dünkü hata kapandı)
+
 DOKUNMA notu: evinora 09.08 taranmış ama sıralamıyor (Kayseri/Keçiören adaşları) — tarama işi değil.
-zirveden-goksu denetimi API hatasıyla kaldı — yarın tamamlanacak.
 
 ## ŞOA — DİZİNDE AMA BAYAT / ADAŞ-BASKIN (23.08 SERP turu teşhisi)
 
@@ -343,9 +350,28 @@ BAYAT (yeniden tarama):
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/huzur-park-sitesi ← 27.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/nisanur-sitesi ← 26.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/guney-park-evleri ← 28.07 (Çankaya Güneypark adaşı baskın)
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yesil-koru-sitesi ← 26.07 (İstanbul Yeşilkoru adaşları baskın; 23.08 teşhis)
 
 DOKUNMA: natural 14.08 + oasis 15.08 + ender-dogus 02.08 taze taranmış (adaş/vitrin
 temsili sürüyor) — tarama işi değil.
+
+## SUSUZ — 23.08 SERP turu teşhisi (kısmi — tur sürüyor)
+
+BAYAT (yeniden tarama; kopya 26.07):
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/batimahal-baspinar ← 26.07 (müteahhit kanalları baskın; 'Batı Mahal' ayrık yazım varyant adayı)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi ← 26.07 ('Eser Yapı Evleri' Ata Mah. etiketli gürültü)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/dostlar-birikim-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/merdin-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
+
+DİZİNSİZ (istek kuyruğuna):
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life ← 23.08 dizin dışı teyit (Discovered; 63379-1 ada #2 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu ← 23.08 dizin dışı teyit (Discovered; 63377-5 ada #3 vitrin)
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 23.08 UNKNOWN (Google hiç görmemiş; 63356-1 ada #4 vitrin)
+
+DOKUNMA (taze taranmış, sıralamıyor — tarama işi değil): cag-life 19.08 (tüm
+portallar 'Yakacık Çağ Life' diyor, panel Susuz — mahalle çelişkisi KEOS'la
+çözülecek), goksu-marina 17.08 (portallar 'Göksu Mh. Etimesgut' etiketli; Arus
+Göksu Marina 2 gürültüsü).
 
 ## Talebi olanlar (83 sayfa) — once bunlar
 
@@ -443,7 +469,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman  <!-- 23.08 DİZİNDE (kendiliğinden, tarama 17.08, SERP #2) -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/dogus-91-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi
@@ -551,7 +577,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri
+- [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri  <!-- 23.08 DİZİNDE (kendiliğinden, tarama 22.08, SERP #2) -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
 
 ## ADA-TARAMA SIRALAMA KURALI (22.08 gece — İHLAL ETME)
@@ -561,7 +587,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 18476-1, konuta-ozlem 18468-1, mesa-calisanlari 18506-1, nazlideniz 18490-1,
 portakal-cicegi-2 18450-1, renk 19516-2, sehit-ferhat-koc 18641-1, seniz 18516-1,
 yayikli-4 18520-1, eylul 46234-1, gulvatan 19502-1, ozenkent-2 19531-1,
-uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1, rayli-sistemciler 44774-2 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
+uyum-90 47603-1, ozanadolu 46268-4, dastarli 46519-1, sergah 18675-1, sertower 46395-1, elif-ozgen 48297-1, doga-konutlari 63381-1, goksu-aura 46453-1, sude 48056-1, paro-life 63406-1, utkan 46457-1, rayli-sistemciler 44774-2, lake-life 63379-1, major-goksu 63377-5, mavera-goksu 63356-1 + yukselay komşu adaları). Bu ada sayfalarının Google kopyaları
 ESKİ (site adlı) olduğu için sorguda çıkabiliyorlar — şimdilik İYİ Kİ ÇIKIYORLAR.
 KURAL: Bu adalara yeniden-tarama isteği, ANCAK ilgili SİTE sayfası dizine girip
 sorguda göründükten SONRA gönderilir (taze ada kopyası site-adsızdır, sorgudan
