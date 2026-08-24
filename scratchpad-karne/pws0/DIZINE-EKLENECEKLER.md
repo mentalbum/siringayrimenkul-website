@@ -43,11 +43,11 @@ caglar-belde 0→#2. Dizinsizlerde ise istek→dizin dönüşümü belirsiz.
 Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıralı.
 (Tam liste: bayat-talep-sirasi.json)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/meva-sehir  <!-- 680 gos · kopya 2026-08-02 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-point  <!-- 400 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/yildiz-life  <!-- 297 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/mesa-bloklari  <!-- 262 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark  <!-- 245 gos · kopya 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/meva-sehir  <!-- 680 gos · kopya 2026-08-02 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-point  <!-- 400 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/yildiz-life  <!-- 297 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/mesa-bloklari  <!-- 262 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark  <!-- 245 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi  <!-- 233 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi  <!-- 228 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/pasa-evleri  <!-- 222 gos · kopya 2026-07-26 -->
