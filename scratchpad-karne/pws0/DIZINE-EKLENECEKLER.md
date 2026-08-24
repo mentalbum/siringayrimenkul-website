@@ -48,12 +48,12 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/yildiz-life  <!-- 297 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/mesa-bloklari  <!-- 262 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark  <!-- 245 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi  <!-- 233 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi  <!-- 228 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/pasa-evleri  <!-- 222 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam  <!-- 187 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri  <!-- 186 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi  <!-- 233 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi  <!-- 228 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/pasa-evleri  <!-- 222 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam  <!-- 187 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri  <!-- 186 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi  <!-- 176 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 -->
