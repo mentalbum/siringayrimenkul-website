@@ -1,0 +1,577 @@
+[
+ {
+  "gos": 680,
+  "tarama": "2026-08-02",
+  "s": "yesilova-mahallesi/meva-sehir"
+ },
+ {
+  "gos": 400,
+  "tarama": "2026-07-27",
+  "s": "cumhuriyet-mahallesi/vera-point"
+ },
+ {
+  "gos": 297,
+  "tarama": "2026-07-26",
+  "s": "susuz-mahallesi/yildiz-life"
+ },
+ {
+  "gos": 262,
+  "tarama": "2026-07-27",
+  "s": "altay-mahallesi/mesa-bloklari"
+ },
+ {
+  "gos": 245,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/oyak-goksupark"
+ },
+ {
+  "gos": 233,
+  "tarama": "2026-07-26",
+  "s": "eryaman-mahallesi/oyak-sitesi"
+ },
+ {
+  "gos": 228,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/utku-sitesi"
+ },
+ {
+  "gos": 222,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/pasa-evleri"
+ },
+ {
+  "gos": 187,
+  "tarama": "2026-07-26",
+  "s": "susuz-mahallesi/ende-yasam"
+ },
+ {
+  "gos": 186,
+  "tarama": "2026-07-27",
+  "s": "cumhuriyet-mahallesi/greenpark-evleri"
+ },
+ {
+  "gos": 185,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/parkyaman-evleri"
+ },
+ {
+  "gos": 184,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/atayildiz-yasam-konutlari"
+ },
+ {
+  "gos": 176,
+  "tarama": "2026-07-26",
+  "s": "susuz-mahallesi/eser-yapi-sitesi"
+ },
+ {
+  "gos": 166,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/sude-konutlari"
+ },
+ {
+  "gos": 160,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/goksupark-konutlari"
+ },
+ {
+  "gos": 160,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/aksafak-sitesi"
+ },
+ {
+  "gos": 155,
+  "tarama": "2026-07-31",
+  "s": "goksu-mahallesi/bordo-loca"
+ },
+ {
+  "gos": 149,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/atadostlar-sitesi"
+ },
+ {
+  "gos": 147,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/selale-evleri-sitesi"
+ },
+ {
+  "gos": 142,
+  "tarama": "2026-07-26",
+  "s": "yesilova-mahallesi/sertower-busidence"
+ },
+ {
+  "gos": 141,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/taflan-sitesi"
+ },
+ {
+  "gos": 136,
+  "tarama": "2026-07-25",
+  "s": "devlet-mahallesi/sari-cinar-sitesi"
+ },
+ {
+  "gos": 127,
+  "tarama": "2026-07-30",
+  "s": "eryaman-mahallesi/basak-sitesi"
+ },
+ {
+  "gos": 120,
+  "tarama": "2026-07-26",
+  "s": "eryaman-mahallesi/endora-park"
+ },
+ {
+  "gos": 114,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/park-inci-konutlari"
+ },
+ {
+  "gos": 114,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/eston-bloklari"
+ },
+ {
+  "gos": 114,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/bizim-alperenler-sitesi"
+ },
+ {
+  "gos": 110,
+  "tarama": "2026-07-27",
+  "s": "seyh-samil-mahallesi/melis-sitesi"
+ },
+ {
+  "gos": 106,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/safir-sitesi"
+ },
+ {
+  "gos": 103,
+  "tarama": "2026-07-31",
+  "s": "goksu-mahallesi/zirveden-goksu"
+ },
+ {
+  "gos": 103,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/golkent-1-sitesi"
+ },
+ {
+  "gos": 95,
+  "tarama": "2026-07-26",
+  "s": "sehit-osman-avci-mahallesi/gokdemirler-suit"
+ },
+ {
+  "gos": 93,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/admira-goksu-konutlari"
+ },
+ {
+  "gos": 93,
+  "tarama": "2026-07-26",
+  "s": "yesilova-mahallesi/anka-vega"
+ },
+ {
+  "gos": 93,
+  "tarama": "2026-07-26",
+  "s": "cumhuriyet-mahallesi/nisanur-sitesi"
+ },
+ {
+  "gos": 92,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/turuncu-site"
+ },
+ {
+  "gos": 90,
+  "tarama": "2026-08-02",
+  "s": "susuz-mahallesi/starlife"
+ },
+ {
+  "gos": 88,
+  "tarama": "2026-07-27",
+  "s": "eryaman-mahallesi/bahar-sitesi"
+ },
+ {
+  "gos": 87,
+  "tarama": "2026-08-09",
+  "s": "goksu-mahallesi/evinora-sitesi"
+ },
+ {
+  "gos": 86,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/seyirtepe-baspinar"
+ },
+ {
+  "gos": 86,
+  "tarama": "2026-07-26",
+  "s": "cumhuriyet-mahallesi/city-life"
+ },
+ {
+  "gos": 86,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/emin-guven-sitesi"
+ },
+ {
+  "gos": 83,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/taskent-sitesi"
+ },
+ {
+  "gos": 80,
+  "tarama": "2026-07-26",
+  "s": "altay-mahallesi/doktorlar-sitesi"
+ },
+ {
+  "gos": 75,
+  "tarama": "2026-07-27",
+  "s": "guzelkent-mahallesi/safi-apak-sitesi"
+ },
+ {
+  "gos": 75,
+  "tarama": "2026-07-29",
+  "s": "yavuz-selim-mahallesi/esenkent-sitesi"
+ },
+ {
+  "gos": 74,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/sahinbey-sitesi"
+ },
+ {
+  "gos": 72,
+  "tarama": "2026-07-26",
+  "s": "yesilova-mahallesi/dogan-life"
+ },
+ {
+  "gos": 72,
+  "tarama": "2026-07-26",
+  "s": "cumhuriyet-mahallesi/yesil-koru-sitesi"
+ },
+ {
+  "gos": 71,
+  "tarama": "2026-07-29",
+  "s": "seker-mahallesi/rainbow-sitesi"
+ },
+ {
+  "gos": 70,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/nazlideniz-sitesi"
+ },
+ {
+  "gos": 70,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/cozum-kent-sitesi"
+ },
+ {
+  "gos": 67,
+  "tarama": "2026-08-05",
+  "s": "devlet-mahallesi/oray-sitesi"
+ },
+ {
+  "gos": 66,
+  "tarama": "2026-07-28",
+  "s": "goksu-mahallesi/doga-konutlari"
+ },
+ {
+  "gos": 65,
+  "tarama": "2026-07-30",
+  "s": "ata-mahallesi/ada-loft-eryaman"
+ },
+ {
+  "gos": 64,
+  "tarama": "2026-07-27",
+  "s": "sehit-osman-avci-mahallesi/elit-yasam-konutlari-1"
+ },
+ {
+  "gos": 61,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/goksu-vadi-konutlari"
+ },
+ {
+  "gos": 58,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/goksu-aura-sitesi"
+ },
+ {
+  "gos": 56,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/belmi-kent"
+ },
+ {
+  "gos": 53,
+  "tarama": "2026-08-02",
+  "s": "sehit-osman-avci-mahallesi/ahikent-sitesi"
+ },
+ {
+  "gos": 53,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/nisan-sitesi"
+ },
+ {
+  "gos": 51,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/eylul-evleri"
+ },
+ {
+  "gos": 51,
+  "tarama": "2026-08-04",
+  "s": "sehit-osman-avci-mahallesi/eston-sitesi"
+ },
+ {
+  "gos": 51,
+  "tarama": "2026-07-26",
+  "s": "tunahan-mahallesi/tunahan-sitesi"
+ },
+ {
+  "gos": 47,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/atasayanlar-sitesi"
+ },
+ {
+  "gos": 46,
+  "tarama": "2026-07-27",
+  "s": "cumhuriyet-mahallesi/altin-basak-konutlari"
+ },
+ {
+  "gos": 44,
+  "tarama": "2026-07-27",
+  "s": "yavuz-selim-mahallesi/gulvatan-sitesi"
+ },
+ {
+  "gos": 44,
+  "tarama": "2026-07-26",
+  "s": "altay-mahallesi/cabadag-bloklari"
+ },
+ {
+  "gos": 43,
+  "tarama": "2026-07-27",
+  "s": "goksu-mahallesi/enday-sitesi"
+ },
+ {
+  "gos": 42,
+  "tarama": "2026-07-27",
+  "s": "cumhuriyet-mahallesi/huzur-park-sitesi"
+ },
+ {
+  "gos": 35,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/turkuaz-sitesi"
+ },
+ {
+  "gos": 34,
+  "tarama": "2026-07-26",
+  "s": "devlet-mahallesi/sozova-sitesi"
+ },
+ {
+  "gos": 34,
+  "tarama": "2026-07-27",
+  "s": "eryaman-mahallesi/maximum-konutlari"
+ },
+ {
+  "gos": 33,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/golkent-sitesi"
+ },
+ {
+  "gos": 31,
+  "tarama": "2026-07-26",
+  "s": "devlet-mahallesi/yeni-huzur-bahcesi-sitesi"
+ },
+ {
+  "gos": 31,
+  "tarama": "2026-07-28",
+  "s": "cumhuriyet-mahallesi/guney-park-evleri"
+ },
+ {
+  "gos": 31,
+  "tarama": "2026-07-26",
+  "s": "eryaman-mahallesi/eryaman-evleri"
+ },
+ {
+  "gos": 30,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/merkez-sitesi"
+ },
+ {
+  "gos": 30,
+  "tarama": "2026-07-26",
+  "s": "eryaman-mahallesi/gunotesi-sitesi"
+ },
+ {
+  "gos": 30,
+  "tarama": "2026-08-02",
+  "s": "ata-mahallesi/genova"
+ },
+ {
+  "gos": 28,
+  "tarama": "2026-08-01",
+  "s": "eryaman-mahallesi/akkonaklar-sitesi"
+ },
+ {
+  "gos": 28,
+  "tarama": "2026-07-29",
+  "s": "guzelkent-mahallesi/portakal-cicegi"
+ },
+ {
+  "gos": 27,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/mavera-sitesi"
+ },
+ {
+  "gos": 26,
+  "tarama": "2026-07-26",
+  "s": "yesilova-mahallesi/dogan-city"
+ },
+ {
+  "gos": 26,
+  "tarama": "2026-07-27",
+  "s": "ata-mahallesi/etikent-sitesi"
+ },
+ {
+  "gos": 25,
+  "tarama": "2026-08-05",
+  "s": "devlet-mahallesi/referans-ankara"
+ },
+ {
+  "gos": 24,
+  "tarama": "2026-08-03",
+  "s": "seyh-samil-mahallesi/baris-sitesi"
+ },
+ {
+  "gos": 24,
+  "tarama": "2026-07-26",
+  "s": "altay-mahallesi/ataturk-sitesi"
+ },
+ {
+  "gos": 23,
+  "tarama": "2026-07-30",
+  "s": "devlet-mahallesi/yuceyurt-sitesi"
+ },
+ {
+  "gos": 23,
+  "tarama": "2026-07-28",
+  "s": "seyh-samil-mahallesi/ovgu-iletisim-sitesi"
+ },
+ {
+  "gos": 23,
+  "tarama": "2026-07-27",
+  "s": "eryaman-mahallesi/turk-konut-calisanlar-sitesi"
+ },
+ {
+  "gos": 23,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/oz-cozum-kent-sitesi"
+ },
+ {
+  "gos": 23,
+  "tarama": "2026-07-26",
+  "s": "eryaman-mahallesi/isikkent-sitesi"
+ },
+ {
+  "gos": 22,
+  "tarama": "2026-07-27",
+  "s": "guzelkent-mahallesi/erenkoy-sitesi"
+ },
+ {
+  "gos": 21,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/goksu-evleri-sitesi"
+ },
+ {
+  "gos": 20,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/pasaj-eryaman"
+ },
+ {
+  "gos": 19,
+  "tarama": "2026-08-03",
+  "s": "yavuz-selim-mahallesi/kucukevlerimiz-sitesi"
+ },
+ {
+  "gos": 18,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/gulenkent-sitesi"
+ },
+ {
+  "gos": 17,
+  "tarama": "2026-07-27",
+  "s": "devlet-mahallesi/sahil-sitesi"
+ },
+ {
+  "gos": 16,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/ilkdogus-sitesi"
+ },
+ {
+  "gos": 14,
+  "tarama": "2026-08-02",
+  "s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi"
+ },
+ {
+  "gos": 14,
+  "tarama": "2026-07-25",
+  "s": "guzelkent-mahallesi/yayikli-4-sitesi"
+ },
+ {
+  "gos": 12,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/konut-sitesi"
+ },
+ {
+  "gos": 12,
+  "tarama": "2026-07-27",
+  "s": "guzelkent-mahallesi/kardelen-sitesi"
+ },
+ {
+  "gos": 11,
+  "tarama": "2026-08-07",
+  "s": "yavuz-selim-mahallesi/goksu-sitesi"
+ },
+ {
+  "gos": 10,
+  "tarama": "2026-07-26",
+  "s": "susuz-mahallesi/batimahal-baspinar"
+ },
+ {
+  "gos": 10,
+  "tarama": "2026-07-26",
+  "s": "ata-mahallesi/bayer-sitesi"
+ },
+ {
+  "gos": 9,
+  "tarama": "2026-07-26",
+  "s": "goksu-mahallesi/havacilar-sitesi"
+ },
+ {
+  "gos": 8,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/ak-kent-sitesi"
+ },
+ {
+  "gos": 7,
+  "tarama": "2026-07-26",
+  "s": "yavuz-selim-mahallesi/ozharitacilar-sitesi"
+ },
+ {
+  "gos": 7,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/mesa-sitesi"
+ },
+ {
+  "gos": 7,
+  "tarama": "2026-07-26",
+  "s": "guzelkent-mahallesi/aksu-sitesi"
+ },
+ {
+  "gos": 6,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/selinkent-sitesi"
+ },
+ {
+  "gos": 5,
+  "tarama": "2026-07-26",
+  "s": "seyh-samil-mahallesi/sitekonut-sitesi"
+ },
+ {
+  "gos": 1,
+  "tarama": "2026-08-03",
+  "s": "yavuz-selim-mahallesi/guzel-ev-sitesi"
+ }
+]

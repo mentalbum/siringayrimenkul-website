@@ -27,7 +27,88 @@ gosterimlerin %59'unun sorgusunu gizliyor, o dosya gercek talebin %41'ini goster
 
 
 
-## KOTA SIRASI — TALEP ÖNCELİKLİ (24.08 ölçümü, ARTIK BU GEÇERLİ)
+## KOTA SIRASI — 115 BAYAT SAYFA, TALEP SIRALI (24.08 tam döküm; EN İYİ HEDEF)
+
+24.08'de ilk-10-dışı 227 sorgunun tamamı kök nedene bağlandı:
+  94  DİZİNSİZ (dizine girmesi lazım — belirsiz, uzun sürüyor)
+ 115  DİZİNDE AMA BAYAT (kopya <10.08, çoğu 26-27.07) ← EN İYİ HEDEF
+  15  orta tazelik (10-18.08)
+   4  taze (>=19.08, yansıma bekliyor)
+
+Neden en iyi hedef: sayfa ZATEN dizinde, tek eksik taze kopya. Tarama gelince
+yeni başlık/description devreye giriyor ve 1-5 günde ilk 3'e oynuyor —
+24.08'de dört kanıt: trend-life 0→#2 (200 gos), gul 0→#1, meydan-ada #6→#2,
+caglar-belde 0→#2. Dizinsizlerde ise istek→dizin dönüşümü belirsiz.
+
+Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıralı.
+(Tam liste: bayat-talep-sirasi.json)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/meva-sehir  <!-- 680 gos · kopya 2026-08-02 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-point  <!-- 400 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/yildiz-life  <!-- 297 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/mesa-bloklari  <!-- 262 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark  <!-- 245 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi  <!-- 233 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi  <!-- 228 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/pasa-evleri  <!-- 222 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam  <!-- 187 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri  <!-- 186 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi  <!-- 176 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari  <!-- 160 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bordo-loca  <!-- 155 gos · kopya 2026-07-31 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi  <!-- 147 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi  <!-- 141 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi  <!-- 127 gos · kopya 2026-07-30 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari  <!-- 114 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/eston-bloklari  <!-- 114 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- 114 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/melis-sitesi  <!-- 110 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/safir-sitesi  <!-- 106 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/zirveden-goksu  <!-- 103 gos · kopya 2026-07-31 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/golkent-1-sitesi  <!-- 103 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit  <!-- 95 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- 93 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega  <!-- 93 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/nisanur-sitesi  <!-- 93 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/turuncu-site  <!-- 92 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/starlife  <!-- 90 gos · kopya 2026-08-02 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/bahar-sitesi  <!-- 88 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/evinora-sitesi  <!-- 87 gos · kopya 2026-08-09 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar  <!-- 86 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/city-life  <!-- 86 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/emin-guven-sitesi  <!-- 86 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/taskent-sitesi  <!-- 83 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/doktorlar-sitesi  <!-- 80 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/safi-apak-sitesi  <!-- 75 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi  <!-- 75 gos · kopya 2026-07-29 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sahinbey-sitesi  <!-- 74 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life  <!-- 72 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yesil-koru-sitesi  <!-- 72 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- 71 gos · kopya 2026-07-29 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oray-sitesi  <!-- 67 gos · kopya 2026-08-05 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari  <!-- 66 gos · kopya 2026-07-28 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ada-loft-eryaman  <!-- 65 gos · kopya 2026-07-30 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1  <!-- 64 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-vadi-konutlari  <!-- 61 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-aura-sitesi  <!-- 58 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/belmi-kent  <!-- 56 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi  <!-- 53 gos · kopya 2026-08-02 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/nisan-sitesi  <!-- 53 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/eylul-evleri  <!-- 51 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi  <!-- 51 gos · kopya 2026-08-04 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/tunahan-sitesi  <!-- 51 gos · kopya 2026-07-26 -->
+
+## KOTA SIRASI — TALEP ÖNCELİKLİ (24.08 ölçümü, ESKİ — yukarıdaki liste geçerli)
 
 `node scripts/gsc-api.mjs sayfalar 90` ile ölçüldü: gösterimin %36'sı eski
 adreslerde sıkışmış. Kota günde ~10 istek; sıra TALEBE göre ve ÖNCE ESKİ ADRESE:
