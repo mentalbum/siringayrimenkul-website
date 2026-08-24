@@ -20,7 +20,7 @@ const OUT = path.join(DIR, 'sonuclar-bolge.jsonl');
 const BUGUN = new Date().toISOString().slice(0, 10);
 const MAX = Number(process.env.MAX || Infinity);
 
-const NOKTALAR = [
+const TUM_NOKTALAR = [
   { n: 'eryaman',   lat: 39.9779, lng: 32.6382 }, // Eryaman merkez (metro civarı)
   { n: 'etimesgut', lat: 39.9587, lng: 32.6866 },
   { n: 'sincan',    lat: 39.9666, lng: 32.5786 },
@@ -29,7 +29,17 @@ const NOKTALAR = [
   { n: 'kecioren',  lat: 39.9871, lng: 32.8639 },
   { n: 'mamak',     lat: 39.9382, lng: 32.9126 },
 ];
-const SORGULAR = ['eryaman emlakçı', 'emlakçı'];
+const NOKTA_SUZ = process.env.BOLGE_NOKTALAR
+  ? new Set(process.env.BOLGE_NOKTALAR.split(',').map((s) => s.trim()))
+  : null;
+const NOKTALAR = NOKTA_SUZ ? TUM_NOKTALAR.filter((n) => NOKTA_SUZ.has(n.n)) : TUM_NOKTALAR;
+// Varsayılan tur: Özgün'ün 23.08 isteği. Başka bir sorgu kümesini aynı uule
+// altyapısıyla ölçmek için (24.08): BOLGE_SORGULAR="a|b|c" ve istenirse
+// BOLGE_NOKTALAR="eryaman,kizilay". Mahalle sorguları ulusal ölçekte belirsiz
+// (Cumhuriyet/Göksu/Susuz her ilde var) — yerel görünüm ayrı ölçülmeli.
+const SORGULAR = process.env.BOLGE_SORGULAR
+  ? process.env.BOLGE_SORGULAR.split('|').map((s) => s.trim()).filter(Boolean)
+  : ['eryaman emlakçı', 'emlakçı'];
 
 function uule(lat, lng) {
   const metin = [
