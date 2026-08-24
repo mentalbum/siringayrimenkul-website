@@ -27,7 +27,45 @@ gosterimlerin %59'unun sorgusunu gizliyor, o dosya gercek talebin %41'ini goster
 
 
 
-## KOTA SIRASI — 115 BAYAT SAYFA, TALEP SIRALI (24.08 tam döküm; EN İYİ HEDEF)
+## KOTA SIRASI v2 — TALEP × KAZANILABİLİRLİK (25.08; BU GEÇERLİ)
+
+25.08 dersi: bugün gönderilen 11 isteğin hepsi talep sıralıydı ama SERP'lerinin
+tamamı ADAŞ baskısı altında (Mesa Mesken, OYAK kurumsal, Paşa Emlak, Çakırlar
+Yıldız Life...). Taze başlık yine iyi ama o sorgularda ilk 3 zor. Bu yüzden sıra
+artık iki boyutlu: TALEP × KAZANILABİLİRLİK.
+
+Aşağıdaki 25 sayfa hem BAYAT hem de ADAŞ BASKISI YOK — yani tarama
+gelince doğrudan ilk 3'e oynar (bugüne kadarki 4/4 dönüşüm tam bu profildendi:
+trend-life, gul, meydan-ada, caglar-belde). Kalan 89 bayat sayfa (7.486 gos)
+adaş baskılı; onlar bu liste bitince sıraya girer.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- 114 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- 93 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/safi-apak-sitesi  <!-- 75 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- 71 gos · kopya 2026-07-29 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-vadi-konutlari  <!-- 61 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-aura-sitesi  <!-- 58 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi  <!-- 51 gos · kopya 2026-08-04 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/tunahan-sitesi  <!-- 51 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi  <!-- 44 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/cabadag-bloklari  <!-- 44 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi  <!-- 34 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/gunotesi-sitesi  <!-- 30 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/etikent-sitesi  <!-- 26 gos · kopya 2026-07-27 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi  <!-- 23 gos · kopya 2026-07-28 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi  <!-- 23 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulenkent-sitesi  <!-- 18 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/konut-sitesi  <!-- 12 gos · kopya 2026-07-26 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi  <!-- 9 gos · kopya 2026-07-26 -->
+
+## KOTA SIRASI — 115 BAYAT SAYFA, TALEP SIRALI (24.08 tam döküm; v1 — talep sıralı, arşiv)
 
 24.08'de ilk-10-dışı 227 sorgunun tamamı kök nedene bağlandı:
   94  DİZİNSİZ (dizine girmesi lazım — belirsiz, uzun sürüyor)
