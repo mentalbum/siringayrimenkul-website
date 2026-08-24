@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { sendGAEvent } from "@/lib/ga";
 import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
-import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 
@@ -90,9 +90,20 @@ export function Header() {
             <PhoneIcon className="h-4 w-4" />
             {siteConfig.phoneDisplay}
           </a>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="primary">
+          {/* TABAN ÖLÇÜM (24.08): bu, sitenin her sayfasında duran TEK kalıcı
+              birincil butonu ve ziyaretçiyi alıcı vitrinine (sahibinden) çıkarıyor —
+              oysa hedef kitle ev sahibi. Butonu ev sahibine çevirmeden ÖNCE kaç
+              kişinin buradan çıktığını bilmemiz gerekiyor; değişiklik yapılırsa
+              "karşılığında ne kazandık" sorusunun cevabı bu sayaçtan gelecek.
+              Şimdilik SADECE ölçüm — buton, hedefi ve rütbesi bilerek aynı. */}
+          <TrackedCtaLink
+            href={siteConfig.sahibindenUrl}
+            gaEvent="sahibinden_click"
+            variant="primary"
+            openInNewTab
+          >
             İlanlarımız
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
 
         <button
@@ -161,14 +172,18 @@ export function Header() {
               <PhoneIcon className="h-5 w-5" />
               {siteConfig.phoneDisplay}
             </a>
-            <CtaButton
+            {/* Mobil menünün TEK butonu — masaüstündekiyle aynı taban ölçüm
+                gerekçesi (bkz. yukarısı). Olay adı da aynı: iki yüzey tek
+                sayaçta toplanıyor. */}
+            <TrackedCtaLink
               href={siteConfig.sahibindenUrl}
-              external
+              gaEvent="sahibinden_click"
               variant="primary"
               className="w-full"
+              openInNewTab
             >
               İlanlarımız
-            </CtaButton>
+            </TrackedCtaLink>
           </div>
         </div>
       )}

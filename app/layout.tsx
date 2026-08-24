@@ -237,9 +237,11 @@ export default async function RootLayout({
       {/* pb-* : mobildeki sabit iletişim çubuğu sayfanın son satırını kapatmasın
           (bkz. components/ui/floating-whatsapp-button.tsx). */}
       <body className="flex min-h-full flex-col pb-[max(4.5rem,calc(3.5rem+env(safe-area-inset-bottom)))] antialiased lg:pb-0">
-        {/* Scroll-reveal no-JS güvenliği: JS çalışmazsa .reveal içerik görünür kalır. */}
+        {/* Scroll-reveal no-JS güvenliği: JS çalışmazsa .reveal'ın 16px'lik giriş
+            kayması üstünde kalmasın. İçerik artık JS'siz de GÖRÜNÜR (globals.css'te
+            opacity kaldırıldı, 24.08); bu stil yalnızca kaymayı sıfırlıyor. */}
         <noscript>
-          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+          <style>{`.reveal{transform:none !important}`}</style>
         </noscript>
         <Header />
         <main className="flex-1">{children}</main>

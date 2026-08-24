@@ -9,10 +9,16 @@ interface RevealProps {
   className?: string;
 }
 
-/** Scroll-reveal sarmalayıcısı: içerik görünüme ~40px kala yumuşak fade-up ile
- * girer (bir kez). Saf CSS geçişi kullanır (bkz. globals.css `.reveal`);
- * prefers-reduced-motion CSS tarafında zaten kapatır, no-JS durumunu
- * layout'taki <noscript> stili kurtarır. IO desteklenmiyorsa anında görünür. */
+/** Scroll-reveal sarmalayıcısı: içerik görünüme ~40px kala yumuşak bir yukarı
+ * kaymayla yerine oturur (bir kez). Saf CSS geçişi kullanır (bkz. globals.css
+ * `.reveal`); prefers-reduced-motion CSS tarafında zaten kapatır, no-JS
+ * durumunda kaymayı layout'taki <noscript> stili sıfırlar. IO desteklenmiyorsa
+ * anında yerine oturur.
+ *
+ * DİKKAT: bu sarmalayıcı içeriği GİZLEMEZ. `.reveal` yalnızca transform taşır —
+ * `opacity: 0` bilerek kaldırıldı (24.08), çünkü görünürlük hidrasyona bağlı
+ * olduğu için yavaş bağlantıda sayfanın hero altındaki tamamı boş kalıyordu.
+ * Buraya opacity geri eklenirse o kusur geri gelir. */
 export function Reveal({ children, delay = 0, className = "" }: RevealProps) {
   const ref = useRef<HTMLDivElement | null>(null);
   const [visible, setVisible] = useState(false);

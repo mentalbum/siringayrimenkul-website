@@ -136,18 +136,26 @@
 }
 
 /* Scroll-reveal — components/ui/reveal.tsx görünür olunca .reveal-visible ekler.
- * no-JS güvenliği: app/layout.tsx'teki <noscript> stili .reveal'ı görünür kılar. */
+ *
+ * SADECE TRANSFORM, opacity YOK (24.08). Eskiden `opacity: 0` ile başlıyordu ve
+ * görünürlüğü veren .reveal-visible yalnız hidrasyondan sonra ekleniyor (Reveal
+ * bir client bileşen + IntersectionObserver). CSS <head>'de bloklayıcı geldiği
+ * için hero'nun ALTINDAKİ HER ŞEY — ofis adresi, yetki belge no, süreç şeridi,
+ * SSS, kapanış CTA'sı — JS gelene kadar görünmezdi; tarayıcı ölçümünde sayfa
+ * hero dışında bembeyaz çıkıyordu. layout.tsx'teki <noscript> yalnız JS KAPALI
+ * durumu kurtarıyor, YAVAŞ JS'i kurtarmıyordu.
+ *
+ * Aynı karar hero için zaten verilmişti (bkz. yukarıdaki fade-up: "opacity:0
+ * başlangıcı LCP boyamasını geciktiriyordu, PSI: FCP -845 ms"); burada
+ * uygulanmamıştı. Kayma hissi duruyor, metin ilk kareden okunur. Transform
+ * olduğu için layout shift doğmaz. */
 .reveal {
-  opacity: 0;
   transform: translateY(16px);
-  transition:
-    opacity 0.55s cubic-bezier(0.22, 0.61, 0.36, 1),
-    transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
+  transition: transform 0.55s cubic-bezier(0.22, 0.61, 0.36, 1);
   transition-delay: var(--reveal-delay, 0ms);
 }
 
 .reveal-visible {
-  opacity: 1;
   transform: none;
 }
 
@@ -158,7 +166,6 @@ details[open] > .faq-cevap {
 
 @media (prefers-reduced-motion: reduce) {
   .reveal {
-    opacity: 1;
     transform: none;
     transition: none;
   }

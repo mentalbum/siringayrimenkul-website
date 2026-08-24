@@ -10,6 +10,8 @@ import { siteConfig } from "@/lib/site-config";
 import { eryamandaMi } from "@/lib/bolge";
 import { yaziTokenlariniAc } from "@/lib/icerik-token";
 import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { ReviewBadge } from "@/components/ui/review-badge";
 import { HeroSearch } from "@/components/home/hero-search";
@@ -42,7 +44,7 @@ const ozellikler = [
     baslik: "Evinizi Değerlendirin",
     aciklama:
       "Satmadan ya da kiraya vermeden önce evinizin gerçek değerini öğrenin: sitenizdeki emsallere dayanan değerlendirme ve net bir yol haritası — aynı gün dönüş.",
-    href: "/ev-degerleme",
+    href: "/ev-degerleme#degerleme-formu",
     linkYazisi: "Değerleme talebi bırakın",
   },
   {
@@ -77,7 +79,7 @@ const surecAdimlari = [
        bulgusu, 2026-08-08) — vaat varış sayfasıyla çelişmemeli. */
     aciklama:
       "Satışın da kiraya vermenin de ilk adımı: sitenizdeki gerçekleşen satış ve kiralamalardan emsal çıkarıyoruz; dilerseniz evinizi yerinde de görüyoruz.",
-    href: "/ev-degerleme",
+    href: "/ev-degerleme#degerleme-formu",
     linkYazisi: "Değerleme talebi bırakın",
   },
   {
@@ -171,7 +173,14 @@ export default function HomePage() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/90 to-navy/55" />
 
-        <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-20 sm:px-6 sm:pb-14 sm:pt-28">
+        {/* pt-10 (mobil): 360x640'ta ölçüldü (24.08) — pt-20'nin 80px'lik boş
+            laciverdi, 3 satırlık H1 ve 6 satırlık paragrafla birleşince birincil
+            CTA'yı sabit iletişim çubuğunun ALTINA itiyordu (buton 540-584, çubuk
+            üstü 575: 9px örtüşme; hero telefonu tamamen çubuğun arkasında).
+            40px kazanç CTA'yı çubuğun 31px üstüne çıkarıyor. 390x844 ve üstünde
+            sm:pt-28 ile eski hâl korunuyor. Hero'ya SATIR EKLEYEN her değişiklik
+            bu ölçümü yeniden yapmayı gerektirir. */}
+        <div className="relative mx-auto max-w-6xl px-4 pb-12 pt-10 sm:px-6 sm:pb-14 sm:pt-28">
           <div className="max-w-2xl">
             {/* "Eryaman" ilk ekranda, H1'in üstünde: sayfanın hangi bölgeye ait
                 olduğunu ilçe adından önce söylüyor (2026-08-08). */}
@@ -206,17 +215,38 @@ export default function HomePage() {
               biz yürütürüz.
             </p>
 
+            {/* ÖLÇÜM (24.08): anasayfada TEK BİR GA olayı yoktu — sitedeki en çok
+                görüntülenen sayfanın dönüşümü kör noktaydı, oysa aynı desen altı
+                sayfada canlı (bkz. app/araclar/page.tsx:119). Hero CTA'sı ve
+                telefon artık sayılıyor; olay adı /araclar, /sozluk,
+                /eryaman-site-dokusu kalıbıyla aynı: "<sayfa>_degerleme_cta".
+
+                ÇAPA: hedef "#degerleme-formu" — /ev-degerleme'nin kendi butonu da
+                oraya gidiyor (app/ev-degerleme/page.tsx:102) ve çapa hazır (:149).
+                Mobilde form, başlık + paragraf + rozet + CTA + üç güven kutusundan
+                SONRA başlıyor; niyetini beyan etmiş ev sahibini ikinci kez ikna
+                sırasına sokmanın gereği yok (aynı gerekçe :98-100'de kabul edilmiş).
+                Google hash'i yok sayar — SEO riski yok. */}
             <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">
-              <CtaButton href="/ev-degerleme" variant="primary" className="px-8 text-base">
+              <TrackedCtaLink
+                href="/ev-degerleme#degerleme-formu"
+                gaEvent="anasayfa_degerleme_cta"
+                variant="primary"
+                className="px-8 text-base"
+              >
                 Evinizi Değerlendirelim
-              </CtaButton>
-              <a
+              </TrackedCtaLink>
+              {/* min-h-11: dokunma hedefi 20px'ti (ölçüm 24.08). Görünüm aynı —
+                  yalnız tıklanabilir alan büyüyor, CtaButton'ın kendi min-h-11'i
+                  ile de tutarlı. */}
+              <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors duration-200 hover:text-gold"
+                gaEvent="phone_click"
+                className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-white transition-colors duration-200 hover:text-gold"
               >
                 <PhoneIcon className="h-4 w-4" />
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
             </div>
             <div className="animate-fade-up mt-5 [animation-delay:0.28s]">
               <ReviewBadge variant="dark" />
@@ -360,13 +390,14 @@ export default function HomePage() {
               sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-              <a
+              <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
-                className="inline-flex items-center gap-2 text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
+                gaEvent="phone_click"
+                className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
               >
                 <PhoneIcon className="h-4 w-4" />
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
               <Link
                 href="/hakkimizda#ozgun-sirin"
                 className="text-sm font-semibold text-gold-dark hover:underline"

@@ -44,7 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        description 229→119 karakter, alıcı hitabı kalktı).
     // 20.08: "Ofisimiz" paragrafı kısa/tam cümlelere bölündü — SERP kesitindeki
     //        özne uyumsuzluğu ("yapıyor" + "veriyoruz") giderildi (Özgün bildirimi).
-    { url: `${baseUrl}/`, lastModified: g("2026-08-20"), changeFrequency: "weekly", priority: 1 },
+    // 24.08: hero'nun altındaki tüm bölümler ilk boyamada görünür hâle geldi
+    //        (.reveal'dan opacity kaldırıldı) — Google'ın JS'siz ilk geçişinde
+    //        gövde artık dolu. Ayrıca hero CTA'sı forma çapalandı, mobil üst
+    //        boşluk kısaldı. Görünür metin değişmedi.
+    { url: `${baseUrl}/`, lastModified: g("2026-08-24"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
@@ -98,7 +102,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * canlı SERP hâlâ eski başlığı gösteriyordu.
    *
    * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
-   *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
+   *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx"
+   *
+   * 24.08 — TABANLAR BİLEREK İLERLETİLMEDİ: globals.css (.reveal'dan opacity
+   * kaldırıldı), layout.tsx (noscript) ve header.tsx (GA olayı) o gün değişti;
+   * üçü de site geneli. Ama hiçbirinde GÖRÜNÜR METİN değişmedi — değişen,
+   * içeriğin ilk boyamada çizilip çizilmediği. Google zaten JS çalıştırıp o
+   * metni görüyordu. 1500+ adrese aynı damgayı basmak `ada` tabanında
+   * (aşağıda) verilen kararla aynı gerekçeyle sahte tazelik olurdu. */
   const SABLON = {
     // 15.08(b): description ev sahibi diline geçti (olgu cümlesi çıktı; eski
     //        kalıbın %86'sı 155 karakterlik kesme sınırını aşıyordu).
