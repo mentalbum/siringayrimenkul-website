@@ -42,6 +42,8 @@ KULLANIM
   python3 scripts/fon-portfoy-takip.py aday  TLY [--pencere 30] [--ilk 15]
   python3 scripts/fon-portfoy-takip.py anlik TLY --ay 2026-07 --dosya temmuz.csv
   python3 scripts/fon-portfoy-takip.py fark  TLY
+  python3 scripts/fon-portfoy-takip.py kap   TLY [--ay 2026-07]   # sonda, doğrulanmadı
+  python3 scripts/fon-portfoy-takip.py dagilim TLY                # sonda, doğrulanmadı
 
 Ağ: bu betik dış uçlara çıkar (tefas.gov.tr, isyatirim.com.tr). Kapalı ağda
 çalışmaz; önbellek ~/.cache/fon-takip altında tutulur, bir kez çekilen seri
@@ -510,6 +512,83 @@ def komut_aday(argv):
     print("  Önce `teshis` çalıştır: getiri hisseden gelmiyorsa bu tablo anlamsızdır.")
 
 
+# --- Aşağıdaki iki uç bu oturumda DOĞRULANAMADI (egress politikası ilgili
+# hostları kapatıyor). Şema varsaymak yerine "sonda" olarak yazıldılar: isteği
+# ve ham yanıt yapısını basarlar. Şema tutmazsa betik sessizce yanlış veri
+# üretmez, ne aldığını gösterir ve sen ayarlarsın.
+
+def _sonda(ad, url, govde):
+    print(f"  → {ad}: POST {url}")
+    print(f"    gövde: {json.dumps(govde, ensure_ascii=False)}")
+    try:
+        ham = _iste(url, govde)
+    except RuntimeError as e:
+        print(f"    BAŞARISIZ: {e}")
+        return None
+    if isinstance(ham, dict):
+        print(f"    yanıt: sözlük, anahtarlar = {list(ham)[:12]}")
+        for a in ("resultList", "data", "result", "value", "list"):
+            if isinstance(ham.get(a), list):
+                print(f"    '{a}' listesinde {len(ham[a])} kayıt")
+                return ham[a]
+        return ham
+    if isinstance(ham, list):
+        print(f"    yanıt: {len(ham)} kayıtlı liste")
+        return ham
+    print(f"    yanıt: {type(ham).__name__}")
+    return ham
+
+
+def komut_kap(argv):
+    """KAP'tan aylık 'Portföy Dağılım Raporu' bildirimlerini arar (DOĞRULANMADI)."""
+    fon = (argv[0] if argv else "TLY").upper()
+    ay = _bayrak(argv, "--ay", None)
+    if ay:
+        yil, a = (int(x) for x in ay.split("-"))
+        bas = date(yil, a, 1)
+        bit = (date(yil + (a == 12), (a % 12) + 1, 1) - timedelta(days=1))
+    else:
+        bit = date.today(); bas = bit - timedelta(days=75)
+    kayitlar = _sonda("KAP fon bildirimleri",
+                      "https://www.kap.org.tr/tr/api/disclosure/funds/byCriteria",
+                      {"fromDate": bas.strftime("%d.%m.%Y"),
+                       "toDate": bit.strftime("%d.%m.%Y")})
+    if not isinstance(kayitlar, list) or not kayitlar:
+        print("\n  Kayıt alınamadı. Uç adı/gövdesi değişmiş olabilir; yukarıdaki")
+        print("  isteği tarayıcının ağ sekmesiyle karşılaştır.")
+        return
+    print(f"\n  örnek kaydın alanları: {list(kayitlar[0])[:16]}\n")
+    metin = lambda k: json.dumps(k, ensure_ascii=False).upper()
+    esles = [k for k in kayitlar if fon in metin(k) and "DAĞILIM" in metin(k)]
+    print(f"  {fon} + 'dağılım' geçen {len(esles)} kayıt:")
+    for k in esles[:15]:
+        print("   ", json.dumps(k, ensure_ascii=False)[:220])
+    if not esles:
+        print("    (yok — filtreyi gevşetmek için ham kayıtlara bak)")
+        print("   ", json.dumps(kayitlar[0], ensure_ascii=False)[:300])
+
+
+def komut_dagilim(argv):
+    """TEFAS varlık SINIFI dağılımı — hisse bazında değil (DOĞRULANMADI)."""
+    fon = (argv[0] if argv else "TLY").upper()
+    gun = int(_bayrak(argv, "--gun", 120))
+    bit = date.today(); bas = bit - timedelta(days=gun)
+    kayitlar = _sonda("TEFAS portföy dağılımı",
+                      "https://www.tefas.gov.tr/api/funds/dagilimSiraliGetirT",
+                      {"fonKodu": fon, "dil": "TR",
+                       "basTarih": bas.strftime("%Y%m%d"),
+                       "bitTarih": bit.strftime("%Y%m%d")})
+    if not isinstance(kayitlar, list) or not kayitlar:
+        print("\n  Alınamadı. Bu uç tefas-crawler 0.6.0'da YOK; varlığı arama")
+        print("  sonuçlarından geldi ve teyit edilmedi. Çalışmazsa hisse ağırlığı")
+        print("  sinyali için `teshis` (fiyattan çıkarım) tek yol.")
+        return
+    print(f"\n  {len(kayitlar)} kayıt; ilk kaydın alanları:")
+    print("   ", json.dumps(kayitlar[0], ensure_ascii=False)[:400])
+    print("\n  NOT: bu VARLIK SINIFI kırılımıdır (hisse %X, ters repo %Y).")
+    print("  Hisse bazında döküm vermez; onun için aylık rapor gerekir.")
+
+
 def komut_anlik(argv):
     """Elle indirilen aylık dökümü içe al: CSV (kod,ad,yuzde[,tl]) ya da JSON."""
     fon = (argv[0] if argv else "TLY").upper()
@@ -587,7 +666,8 @@ def _bayrak(argv, ad, varsayilan):
 
 KOMUTLAR = {"fiyat": komut_fiyat, "hisse": komut_hisse, "evren": komut_evren,
             "teshis": komut_teshis, "aday": komut_aday,
-            "anlik": komut_anlik, "fark": komut_fark}
+            "anlik": komut_anlik, "fark": komut_fark,
+            "kap": komut_kap, "dagilim": komut_dagilim}
 
 
 def main():
