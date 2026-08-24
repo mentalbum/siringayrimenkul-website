@@ -14,6 +14,9 @@
      gösterim tümden ölür; (2) sitesi henüz dizinsiz olan adaların eski adresleri
      DIŞARIDA (96 adres, 2.121 gos) — o adresler şu an VİTRİN, site dizine girmeden
      birleştirilemez (ada-tarama sıralama kuralı, DIZINE-EKLENECEKLER.md).
+     EK 2026-08-24 (b): 3 eski MAHALLE adresi de eklendi (seker 291, eryaman 191,
+     ata 136 gösterim). Mahalle sayfalarının talebinin %44'ü (2.110 gösterim)
+     eski adreslerdeydi; 7'si listede vardı, bu 3'ü atlanmıştı.
      KALDIRMA KOŞULU: GSC Sayfa raporunda bu adresler "Yönlendirmeli sayfa" kovasına
      geçtiğinde (ya da en geç 2026-10-15) bu dosya ve robots.txt satırı SİLİNECEK.
      LASTMOD = YÖNLENDİRMENİN BAŞLADIĞI TARİH (2026-07-26, slug taşıma günü) —
@@ -981,4 +984,7 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/adalar/46234-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/adalar/46263-2</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/adalar/46443-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/seker</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/ata</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
 </urlset>
