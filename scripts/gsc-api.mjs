@@ -112,7 +112,9 @@ if (komut === "denetle") {
   for (let i = 0; i < urller.length; i++) {
     try {
       const s = await denetle(jeton, urller[i]);
-      satirlar.push(`${s.url}\t${s.hukum === "PASS" ? "MEVCUT" : "YOK"}\t${s.kapsam}`);
+      // sonTarama sütunu 24.08'de eklendi: "dizinde ama BAYAT" ile "dizinde ve
+      // taze" ayrımı ilk-3 teşhisinin belkemiği; tek-URL komutunda vardı, burada yoktu.
+      satirlar.push(`${s.url}\t${s.hukum === "PASS" ? "MEVCUT" : "YOK"}\t${s.kapsam}\t${s.sonTarama}`);
       console.error(`${i + 1}/${urller.length} ${s.hukum} ${s.url}`);
     } catch (e) {
       satirlar.push(`${urller[i]}\tHATA\t${e.message}`);
