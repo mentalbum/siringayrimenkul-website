@@ -1,8 +1,8 @@
 # İlk 3'te OLMAYAN site-emlakçı sorguları — 706/706 ölçüldü
 
-- İlk 3'te: **431** | 4-10 arası: **48** | ilk 10'da yok: **227** | ölçülmedi: 0
-- Ham ilk-3 oranı: **%61** | kazanılabilir kümede (yapısal-adaş 54 sorgu hariç): **%66** (430/652)
-- SERP'te görünen 47 sonucumuzun **15** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 32 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
+- İlk 3'te: **432** | 4-10 arası: **48** | ilk 10'da yok: **226** | ölçülmedi: 0
+- Ham ilk-3 oranı: **%61** | kazanılabilir kümede (yapısal-adaş 54 sorgu hariç): **%66** (431/652)
+- SERP'te görünen 49 sonucumuzun **15** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 34 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
 ## İlk 10'da hiç yokuz
@@ -167,11 +167,10 @@
 | Erkaraca Sitesi emlakçı | yavuz-selim-mahallesi/erkaraca-sitesi | Kendi sayfası İLK 10'DA YOK; #9'da ANA SAYFAMIZ çıkıyor (site sayfası yerine) — dizinsizlik deseni; GSC denetimi gerek |
 | Esenkent Sitesi emlakçı | yavuz-selim-mahallesi/esenkent-sitesi | İLK 10'DA YOK (ilk ölçüm); Çiğdem Yeni Esenkent + Esenyurt/Maltepe Esenkent adaş gürültüsü tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
 | Eylül Evleri emlakçı | yavuz-selim-mahallesi/eylul-evleri | İLK 10'DA YOK (ilk ölçüm); Eylül Gayrimenkul ofis adaşları SERP'i tamamen kaplamış (yaygın-ad deseni); GSC denetimi gerek |
-| Eylül Sitesi emlakçı | yavuz-selim-mahallesi/eylul-sitesi | Kendi sayfası İLK 10'DA YOK; #3'te 46234-1 ada sayfamız (YENİ 'Ada Emlakçı' şablonuyla) temsil ediyor; GSC denetimi gerek |
 | Göksu Sitesi emlakçı | yavuz-selim-mahallesi/goksu-sitesi | Aynı sorgu bugün Güzelkent turunda ölçüldü (SERP ortak): iki Göksu sayfamızın hiçbiri ilk 10'da yok; SERP Göksu Mah. + Göksu Emlak ofis adaşlarıyla dolu |
 | Gülvatan Sitesi emlakçı | yavuz-selim-mahallesi/gulvatan-sitesi | Kendi sayfası İLK 10'DA YOK; #3'te 19502-1 ada sayfamız + #7 mahalle sayfamız temsil ediyor (dizinsizlik deseni); GSC denetimi gerek |
 | Güzel Ev Sitesi emlakçı | yavuz-selim-mahallesi/guzel-ev-sitesi | Kendi sayfası İLK 10'DA YOK; #2'de adaş guzel-ankara sayfamız çıkıyor; 'güzel ev' jenerik kelime gürültüsü çok yüksek; GSC denetimi gerek |
-| Kardeşkent Sitesi emlakçı | yavuz-selim-mahallesi/kardeskent-sitesi | İLK 10'DA YOK (ilk ölçüm); Konutkent/Esenyurt Kardeşkent adaşları SERP'i kaplamış (yaygın-ad deseni); GSC denetimi gerek |
+| Kardeşkent Sitesi emlakçı | yavuz-selim-mahallesi/kardeskent-sitesi | ilk 10'da yokuz; 21.08 taranmış ama sıralamıyor — #1 Çankaya Çayyolu Konutkent'teki ADAŞ Kardeşkent Sitesi; yapısal adaş (119 gos talep var ama sorgu bölünüyor) |
 | Konut Sitesi emlakçı | yavuz-selim-mahallesi/konut-sitesi | İLK 10'DA YOK; site adı tamamen JENERİK ('konut sitesi') — SERP Ankara emlak geneli, yapısal kurtarılamaz sorgu (Tunahan Sitesi/Gülenkent sınıfı) |
 | Küçükevlerimiz Sitesi emlakçı | yavuz-selim-mahallesi/kucukevlerimiz-sitesi | Kendi sayfası İLK 10'DA YOK; #9'da adaş kucuk-ankara-villalari sayfamız çıkıyor; Google 'Küçük Evlerimiz' ayrı yazımına düzeltiyor; GSC denetimi gerek |
 | Özenkent 2 Villaları emlakçı | yavuz-selim-mahallesi/ozenkent-2-villalari | Kendi sayfası İLK 10'DA YOK; #3'te kardeş ozenkent-villalari sayfamız + #9'da 19531-1 ada sayfamız temsil ediyor; GSC denetimi gerek |
@@ -264,7 +263,6 @@
 | 4 | Çağdaş Onur Sitesi emlakçı | /mahalleler/ata-mahallesi/adalar/45836-1 | #4 45836-1 ADA sayfamız (dün hiçbir sayfamız yoktu — 22.08 taramasının kısmi yansıması); site sayfası hâlâ ilk 10'da yok; bilgiemlak bu siteyi 45834 ada diyor — ada eşleşmesi kontrol edilebilir |
 | 4 | Mavi Bayrak Sitesi emlakçı | /mahalleler/ata-mahallesi | YANLIŞ SAYFA: mahalle #4, ada 44773/3 #9; site sayfası ilk 10'da yok — GSC denetimi |
 | 4 | Özkardeşler Sitesi emlakçı | /mahalleler/ata-mahallesi/ozkardesler-sitesi | #4 (dün #5) — 23.08 taraması hafif itti; SERP'i 'Özkardeşler Emlak Ofisi' marka adaşı domine ediyor (yapısal); bilgiemlak 'Öz Kardeşler' ayrık yazımı dizin etiketi, varyant DEĞİL |
-| 4 | Panorama Gold emlakçı | /mahalleler/ata-mahallesi/panorama-gold | #4 (taze kopya); Gold Emlak ofis adaşları gürültüde; GBP 'Panorama gold sitesi' |
 | 4 | Park Sera Evleri emlakçı | /mahalleler/cumhuriyet-mahallesi/park-sera-evleri | #4 43264-7 ada sayfamız temsil ediyor (site sayfası görünmüyor — vitrin deseni, GSC denetimi gerek); Yaşamkent Park Sera adaşı baskın |
 | 4 | Mavera Göksu emlakçı | /mahalleler/susuz-mahallesi/adalar/63356-1 | #4 63356-1 ADA sayfamız; #6'da mahalle sayfamız da var (Mavera teaser snippet'iyle); site sayfası ilk 10'da YOK; müteahhit (Mavera Grup) kanalları güçlü |
 | 5 | Arya Nüans Residence emlakçı | /mahalleler/altay-mahallesi/arya-nuans-residence | #5 (16.08 #6'dan bir yukarı); başlık ara-dönem 'Satılık ve Kiralık Daire' (bayat kopya, tarama adayı) |
@@ -273,6 +271,7 @@
 | 5 | Umar Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/umar-sitesi | #5 (bayat başlıkla); ada 46272/1 #9 |
 | 5 | Yardımcı Blokları emlakçı | /mahalleler/seyh-samil-mahallesi/yardimci-bloklari | Şeyh Şamil sayfamız #5; #1 de BİZİM Tunahan Yardımcı Blokları sayfası (iki mahallede adaş yerleşke, sorguyu Tunahan kazanıyor) — kanibalizasyon değil kardeş-kapsama; bilgiemlak 17704+17688 ada sayfaları arada |
 | 5 | Su Damlası Sitesi emlakçı | /mahalleler/tunahan-mahallesi/su-damlasi-sitesi | #5 (16.08 #4 → bir düştü); SERP başlığı ESKİ ticari kopya 'Satılık Daire ve Kiralık Daire' = bayat, tarama şart; mahalle sayfamız da #9'da |
+| 5 | Panorama Gold emlakçı | /mahalleler/ata-mahallesi/panorama-gold | #5 (dün #4 — bir gerileme); 22.08 taranmış, taze başlık canlı; önümüzdekiler 'Gold Emlak' ADAŞ OFİS kanalları (sahibinden mağaza + Yandex + IG) = yapısal adaş |
 | 5 | Ap İst Port emlakçı | /mahalleler/cumhuriyet-mahallesi/ap-ist-port | #5 (taze kopya); müteahhit AP kanalları + portal proje sayfaları baskın |
 | 5 | Mood Göksu emlakçı | /mahalleler/cumhuriyet-mahallesi/mood-goksu | #5 (taze kopya); müteahhit Dinamik Life kanalları + proje sitesi baskın (yeni proje pazarlaması) |
 | 5 | Zen Park Plus emlakçı | /mahalleler/cumhuriyet-mahallesi/adalar/62669-3 | YANLIŞ SAYFA: ada #5; site sayfası ilk 10'da yok — GSC denetimi; adaş mağaza zenparkplus.sahibinden.com #1 |
@@ -693,6 +692,7 @@
 | 3 | Maviçam Sitesi emlakçı |
 | 3 | Neopolitan Eryaman emlakçı |
 | 3 | Soyak Blokları emlakçı |
+| 3 | Eylül Sitesi emlakçı |
 | 3 | Genç Avrasya Sitesi emlakçı |
 | 3 | İlkiz 2 Sitesi emlakçı |
 | 3 | Metrokent Villaları emlakçı |
