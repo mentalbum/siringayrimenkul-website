@@ -42,6 +42,7 @@ KULLANIM
   python3 scripts/fon-portfoy-takip.py aday  TLY [--pencere 30] [--ilk 15]
   python3 scripts/fon-portfoy-takip.py anlik TLY --ay 2026-07 --dosya temmuz.csv
   python3 scripts/fon-portfoy-takip.py fark  TLY
+  python3 scripts/fon-portfoy-takip.py buyukluk --dosya tly-portfoy-2026-07.csv
   python3 scripts/fon-portfoy-takip.py kap   TLY [--ay 2026-07]   # sonda, doğrulanmadı
   python3 scripts/fon-portfoy-takip.py dagilim TLY                # sonda, doğrulanmadı
 
@@ -589,6 +590,102 @@ def komut_dagilim(argv):
     print("  Hisse bazında döküm vermez; onun için aylık rapor gerekir.")
 
 
+def _hisse_ham(kod, gun=20):
+    """HisseTekil'in ham son kaydı — piyasa değeri alanı buradan okunur."""
+    bit = date.today(); bas = bit - timedelta(days=gun)
+    url = (f"{ISY_HISSE}?hisse={kod.upper()}"
+           f"&startdate={bas.strftime('%d-%m-%Y')}&enddate={bit.strftime('%d-%m-%Y')}")
+    try:
+        ham = _iste(url)
+    except RuntimeError:
+        return None
+    satirlar = [s for s in (ham.get("value") or []) if isinstance(s, dict)]
+    return satirlar[-1] if satirlar else None
+
+
+def _pd_oku(satir):
+    """Piyasa değeri alanını bul. Ad sürümden sürüme oynadığı için sırayla
+    denenir; hiçbiri tutmazsa None döner ve çağıran alan adlarını basar."""
+    for a in ("HGDG_PD", "PD", "HGDG_PIYASA_DEGERI", "PIYASA_DEGERI"):
+        d = satir.get(a)
+        if isinstance(d, (int, float)) and d > 0:
+            return float(d), a
+    return None, None
+
+
+def komut_buyukluk(argv):
+    """Verilen hisseleri PİYASA DEĞERİNE göre küçükten büyüğe sıralar.
+
+    Fiyat piyasa değeri DEĞİLDİR: 4.462 TL'lik bir hisse, az sayıda pay
+    dolaşımdaysa 20 TL'lik bir hisseden küçük şirket olabilir. Bu yüzden
+    "küçük şirket" kararı fiyattan değil buradan verilir.
+
+    --fon-buyuklugu verilirse fonun o şirketteki pozisyonunun şirketin piyasa
+    değerine oranı da hesaplanır. Asıl sınır bu: fon şirketin %5'ini tutuyorsa
+    o pozisyonun arkasından gitmek, çıkarken karşında alıcı bulamamak demektir.
+    """
+    yol = _bayrak(argv, "--dosya", None)
+    fon_buyukluk = _bayrak(argv, "--fon-buyuklugu", None)
+    fon_buyukluk = float(fon_buyukluk) if fon_buyukluk else None
+    agirlik = {}
+    if yol:
+        with open(yol, encoding="utf-8-sig") as f:
+            for s in csv.DictReader(l for l in f if not l.startswith("#")):
+                kod = (s.get("tam_kod") or "").strip().upper()
+                if not kod:
+                    continue
+                agirlik[kod] = (float(s.get("yuzde") or 0),
+                                float(s.get("degisim_puan") or 0))
+        kodlar = list(agirlik)
+    else:
+        kodlar = [k.strip().upper() for k in (argv[0] if argv else "").split(",") if k.strip()]
+    if not kodlar:
+        sys.exit("kullanım: buyukluk KOD1,KOD2  |  buyukluk --dosya portfoy.csv\n"
+                 "  (CSV'de 'tam_kod' sütunu dolu olmalı — kırpık kodlar sorgulanamaz)")
+
+    sonuc, alansiz = [], None
+    for k in kodlar:
+        satir = _hisse_ham(k)
+        time.sleep(BEKLE)
+        if not satir:
+            sonuc.append((k, None)); continue
+        pd, alan = _pd_oku(satir)
+        if pd is None and alansiz is None:
+            alansiz = sorted(satir)
+        sonuc.append((k, pd))
+
+    if alansiz:
+        print("  Piyasa değeri alanı tanınmadı. Yanıttaki alan adları:")
+        print("   ", ", ".join(alansiz))
+        print("  Doğru alanı _pd_oku() içindeki listeye ekle.\n")
+
+    bilinen = sorted([(k, v) for k, v in sonuc if v], key=lambda t: t[1])
+    bilinmez = [k for k, v in sonuc if not v]
+
+    print(f"\nPiyasa değerine göre küçükten büyüğe ({len(bilinen)} hisse)\n")
+    bas = f"  {'kod':8s} {'piyasa değeri':>18s}"
+    if agirlik:
+        bas += f" {'fon ağ.':>8s} {'değişim':>9s}"
+    if fon_buyukluk:
+        bas += f" {'fonun payı':>11s}"
+    print(bas)
+    for k, pd in bilinen:
+        satir = f"  {k:8s} {pd:18,.0f}"
+        if agirlik:
+            y, d = agirlik.get(k, (0, 0))
+            satir += f" {y:7.2f}% {d:+8.2f}p"
+        if fon_buyukluk and agirlik:
+            y, _ = agirlik.get(k, (0, 0))
+            oran = (fon_buyukluk * y / 100.0) / pd * 100.0
+            satir += f" {oran:10.2f}%" + ("  ← ŞİRKETİN BÜYÜK KISMI" if oran > 5 else "")
+        print(satir)
+    if bilinmez:
+        print(f"\n  veri alınamayan: {', '.join(bilinmez)}")
+    if bilinen and not fon_buyukluk:
+        print("\n  İpucu: --fon-buyuklugu <TL> ver, fonun her şirkette kaçta kaçını")
+        print("  tuttuğu da hesaplansın. Peşinden gidilebilirliği asıl o belirler.")
+
+
 def komut_anlik(argv):
     """Elle indirilen aylık dökümü içe al: CSV (kod,ad,yuzde[,tl]) ya da JSON."""
     fon = (argv[0] if argv else "TLY").upper()
@@ -667,7 +764,8 @@ def _bayrak(argv, ad, varsayilan):
 KOMUTLAR = {"fiyat": komut_fiyat, "hisse": komut_hisse, "evren": komut_evren,
             "teshis": komut_teshis, "aday": komut_aday,
             "anlik": komut_anlik, "fark": komut_fark,
-            "kap": komut_kap, "dagilim": komut_dagilim}
+            "kap": komut_kap, "dagilim": komut_dagilim,
+            "buyukluk": komut_buyukluk}
 
 
 def main():
