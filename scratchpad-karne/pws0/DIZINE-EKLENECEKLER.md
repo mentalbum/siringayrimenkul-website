@@ -39,14 +39,14 @@ Toplam talep 4.038 gösterim.
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi  <!-- #4 · 773 gos · kopya 27.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence  <!-- #5 · 633 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence  <!-- #6 · 359 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower  <!-- #6 · 348 gos · kopya 27.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari  <!-- #7 · 288 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi  <!-- #8 · 248 gos · kopya 26.07 · AI Bakışı'nda anılıyoruz -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi  <!-- #5 · 216 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence  <!-- #4 · 203 gos · kopya 27.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4 · 194 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi  <!-- #5 · 171 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi  <!-- #5 · 155 gos · kopya 26.07 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower  <!-- #6 · 348 gos · kopya 27.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari  <!-- #7 · 288 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi  <!-- #8 · 248 gos · kopya 26.07 · AI Bakışı'nda anılıyoruz · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi  <!-- #5 · 216 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence  <!-- #4 · 203 gos · kopya 27.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4 · 194 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi  <!-- #5 · 171 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi  <!-- #5 · 155 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi  <!-- #5 · 122 gos · kopya 29.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence  <!-- #5 · 111 gos · kopya 31.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu  <!-- #6 · 105 gos · kopya 26.07 -->
