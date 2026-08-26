@@ -36,9 +36,9 @@ En yüksek dönüşüm olasılığı burada. Bu 16 sayfa ÜÇ koşulu birden sa�
 Yani tek eksikleri taze başlık; tarama gelince ilk 3'e oynamaları en olası.
 Toplam talep 4.038 gösterim.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi  <!-- #4 · 773 gos · kopya 27.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence  <!-- #5 · 633 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence  <!-- #6 · 359 gos · kopya 26.07 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi  <!-- #4 · 773 gos · kopya 27.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence  <!-- #5 · 633 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence  <!-- #6 · 359 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower  <!-- #6 · 348 gos · kopya 27.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari  <!-- #7 · 288 gos · kopya 26.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi  <!-- #8 · 248 gos · kopya 26.07 · AI Bakışı'nda anılıyoruz -->
