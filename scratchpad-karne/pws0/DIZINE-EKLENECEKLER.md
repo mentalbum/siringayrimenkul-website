@@ -47,11 +47,11 @@ Toplam talep 4.038 gösterim.
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4 · 194 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi  <!-- #5 · 171 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi  <!-- #5 · 155 gos · kopya 26.07 · 25.08 akşam İSTEK GÖNDERİLDİ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi  <!-- #5 · 122 gos · kopya 29.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence  <!-- #5 · 111 gos · kopya 31.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu  <!-- #6 · 105 gos · kopya 26.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari  <!-- #4 · 92 gos · kopya 27.07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri  <!-- #4 · 28 gos · kopya 02.08 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi  <!-- #5 · 122 gos · kopya 29.07 · 27.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence  <!-- #5 · 111 gos · kopya 31.07 · 27.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu  <!-- #6 · 105 gos · kopya 26.07 · 27.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari  <!-- #4 · 92 gos · kopya 27.07 · 27.08 İSTEK GÖNDERİLDİ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri  <!-- #4 · 28 gos · kopya 02.08 · 27.08 İSTEK GÖNDERİLDİ -->
 
 ## KOTA SIRASI v2 — TALEP × KAZANILABİLİRLİK (25.08; v2 — sıra-0 bayatlar, v3 bitince)
 
