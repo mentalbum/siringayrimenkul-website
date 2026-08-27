@@ -338,3 +338,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > Eski adresler 410 dönüyor (proxy.ts); sitemap-eski-adresler'deki 307 grup
 > adresi botun 410'u hızla görmesi için bilerek tutuldu. Bu mahallelere bir
 > daha dizin isteği GÖNDERİLMEZ.
+> 27.08 (c) — Akşam penceresi DENENDİ, KAPALI: Endora Park (120) denetlendi ("mevcut", bayat), istek "Kota Aşıldı" ile reddedildi — işaretsiz, sıradaki damlanın ilk adayı. Sabahki 11 istek kayan 24 saatte hâlâ doluluk yaratıyor; 25.08'in çift-pencere deseni bugün tekrarlamadı. Sonraki deneme: 28.08.
