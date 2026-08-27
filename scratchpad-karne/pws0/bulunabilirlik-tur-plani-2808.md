@@ -122,3 +122,48 @@ Talep sıralı: polsan1-ayisigi (219 — önce eski-adres yolu araştırılsın)
 mavi-koy, sedirkent, lacin-eryaman, bulvar-1071 (eski slug birleşme yolu),
 relax-eryaman, kusburnu, gulsah-95, konuta-ozlem. Adaşsız + kendi sayfaları
 SERP'te temsilcili "dizinsizlik deseni" vakaları — onay gelirse sıra bu.
+
+## I. ARAŞTIRMA BULGULARI VE UYGULAMALARI (28.08 gece — 4 kollu araştırma)
+
+### Kutu kaldıraçları (kanıt dereceli; kaynak: Whitespark 2026 + Sterling Sky deneyleri)
+ETKİLİ (kanıtlı): birincil kategori tam uygunluğu (#1 faktör) · ek kategoriler
+(10'a kadar, sunulan hizmetlerle sınırlı) · arama anında AÇIK olmak (üç bağımsız
+kaynak; ~2,4 poz etki) · metinli yorumun düzenli AKIŞI (patlama değil tempo) ·
+landing page NAP eşleşmesi (kontrol edildi 28.08: site=GBP birebir, 06824 dahil ✓)
+ETKİSİZ (kanıtlı — kimse zaman harcamasın): service area ekleme (storefront'ta
+yarıçapı değiştirmez) · foto geotag · Google Posts (sıra için) · Q&A · Products.
+KALİBRASYON: yorum İÇİNDE mahalle adı SIRALAMAYI değiştirmiyor (Sterling Sky
+kontrollü deney); değeri "review justification" (kutu içi alıntı+tıklama).
+Mahalle-yorum kampanyası DEVAM ama kutuya giriş beklentisi olmadan.
+NOT: Devlet'in kutu girişini yorum kampanyasına bağlayan hipotez bu kanıtla
+ZAYIFLADI — neden büyük olasılıkla başka (izlemeye devam).
+
+### ÖZGÜN PANEL LİSTESİ (tek oturum ~20 dk, en yüksek getirili sıra işi)
+1. Birincil kategori kontrolü ("Emlak Ofisi/Acentesi" mi?) — #1 faktör
+2. Ek kategoriler: gerçekten sunulan hizmetlerin uygun kategorileri
+3. Çalışma saatleri: telefona GERÇEKTEN bakılan en geniş saatler (şu an 19:00
+   kapanış; akşam/hafta sonu bakılıyorsa genişlet — sahte saat YOK)
+4. Hizmetler alanı: Google'ın önceden tanımlı emlak hizmetlerinden uygunlar
+   (satış VE kiralama eşit işaretlenir)
+5. GBP Insights ilk kayıt: arama görünümü/çağrı/yol tarifi sayıları
+
+### Künye kararları (kanıt: citation ağırlığı ~%7 ve düşüşte)
+Apple Business Connect: YAP (Google'a etkisi yok ama ücretsiz, Siri/Apple Maps
+gerçek) · Foursquare: DÜŞÜK (ChatGPT yerel verisi; ~20$) · bulurum: DÜŞÜK
+(ücretsizse 10 dk NAP işi) · sektortanitim: YAPMA (düşük kalite dizin riski)
+
+### Bölge turu revizyonu (geo-grid araştırması)
+- Bugünkü koşu: BOLGE_NOKTALAR=eryaman,sehit-osman-avci,seker,goksu,altay,yesilova,guzelkent,etimesgut,sincan,batikent (10 nokta × 2 sorgu = 20; kizilay/kecioren/mamak ÇIKTI — uzakta pack'e girmemek beklenen sonuç, bilgi üretmiyor)
+- "eryaman emlakçı" (açık) ile "emlakçı" (örtük) AYRI raporlanır — örtük sorgu
+  daha dar yarıçaplı davranır, uule'de güvenilirliği de daha düşük (~%80).
+- Kompozit metrik: nokta başına sıra yerine "ilk-3'te görünen nokta yüzdesi"
+  (SoLV benzeri) — karne-bolge.py'ye eklenecek.
+- Sıklık: kampanya sürerken HAFTALIK grid turu.
+- uule şerhi: yönsel doğru kabul; Özgün'ün telefonundan gerçek konumlu kontrol
+  araması ile ayda bir kalibrasyon (ayrı raporlanan kişisel kanal).
+- EK: bugünkü tura +2 sorgu: "etimesgut emlakçı" + "etimesgut emlak" (uule'siz
+  pws=0) — Google bizden hangi sayfayı seçiyor teşhisi (Eylül title Adım 0).
+
+### Eylül title penceresi taslağı (uygulama ~05.09 sonrası)
+Katman 1 (düşük risk): /hakkimizda title'ına "Etimesgut" eklenmesi; Katman 2
+Adım 0 ölçümüne göre. Ana sayfa title'ına dokunulmaz (eryaman emlakçı 2. sıra).
