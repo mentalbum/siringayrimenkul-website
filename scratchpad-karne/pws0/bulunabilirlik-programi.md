@@ -55,7 +55,23 @@ Dış/orta halka rakamları VARSAYIMLI (arayan konumuna göre kutu bileşimi
    temas oranının gerçek ölçeri; ilk kayıt Özgün'ün panelinden alınacak.
 5. **5 Eylül sonrası**: "eryaman emlakçı" organik 2→1 title denemesi
    (başlıklar o tarihe kadar donuk, 08.08 kararı).
-6. **İlçe katmanı** (%13 pay, "etimesgut emlakçı" ilk 10 dışı): mahalle
-   programı bitince ayrı değerlendirilir.
+6. **İlçe katmanı AKTİF** (27.08 akşam, Özgün'ün %90 hedefi bunu zorunlu
+   kıldı — "sona bırakılır" kararı İPTAL): %13'lük "etimesgut/ankara emlakçı"
+   dilimi olmadan bulabilme tavanı ~%83'te kalır. İlk adım teşhis: "etimesgut
+   emlakçı" SERP dökümü + hangi MEVCUT sayfayla girilir (yeni sayfa AÇILMAZ —
+   içerik-sadece-Eryaman kuralı; aday: ana sayfa/iletisim ikincil hedeflemesi,
+   Eylül title penceresiyle birlikte değerlendirilecek).
 
-3 aylık hedef: Tunahan temas 15–20 → 25–30; dış halka bulabilme %60 → %75+.
+## HEDEFLER (Özgün, 27.08 akşam: "hepsini %90 üzerine taşımak istiyorum")
+
+- **Bulabilme %90+ (tüm mahalleler)** — KABUL, yıldız hedef. Matematik tavanı
+  ~%90-92: 0,87×0,95 (eryaman yolu, dış halka dahil kusursuz) + 0,13×0,60
+  (ilçe yolu). Yani üç kol birden şart: dış halka kutusu (adım 1-2), site-adı
+  kanalı her mahallede ilk3 ≥%80 (adım 3), ilçe katmanı (adım 6).
+  Kademe: 3 ayda iç halka %85+ → 6 ayda tümü %90+ (bölge ölçümüyle revize).
+- **Temas %90 MÜMKÜN DEĞİL** — 100 arayanın ~60-70'i HERHANGİ bir ofisle
+  temas kuruyor; %90 temas "hiç aramayacak olanın bile bizi araması" demek.
+  Özgün'e 27.08'de açıkça söylendi; hiçbir oturum temas için %90 vaadi vermesin.
+  Şampiyonluk hedefi: **temas kuranların ≥%50'si biz** = 100 arayandan 30-35
+  temas (bugün Tunahan 15-20 → yaklaşık iki katı). Ölçer: GBP Insights
+  çağrı+yol tarifi aylık serisi (adım 4).
