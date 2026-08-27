@@ -1,0 +1,1914 @@
+[
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/meva-sehir",
+  "slug": "yesilova-mahallesi/meva-sehir",
+  "tarama": "2026-08-02",
+  "gos": 680,
+  "adas": true,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+  "slug": "sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+  "tarama": "2026-07-26",
+  "gos": 633,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari",
+  "slug": "sehit-osman-avci-mahallesi/mia-concept-konutlari",
+  "tarama": "2026-08-08",
+  "gos": 563,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/buse-konutlari",
+  "slug": "goksu-mahallesi/buse-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 460,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi",
+  "slug": "goksu-mahallesi/polsan-1-gozde-sitesi",
+  "tarama": "2026-07-28",
+  "gos": 431,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence",
+  "slug": "sehit-osman-avci-mahallesi/inci-life-residence",
+  "tarama": "2026-07-26",
+  "gos": 359,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman",
+  "slug": "yavuz-selim-mahallesi/terasevler-eryaman",
+  "tarama": "2026-07-26",
+  "gos": 347,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi",
+  "slug": "yavuz-selim-mahallesi/dogapark-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 325,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/erland-residence",
+  "slug": "altay-mahallesi/erland-residence",
+  "tarama": "2026-08-08",
+  "gos": 320,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/platin-2-konutlari",
+  "slug": "eryaman-mahallesi/platin-2-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 309,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/ozar-sitesi",
+  "slug": "tunahan-mahallesi/ozar-sitesi",
+  "tarama": "2026-08-09",
+  "gos": 307,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/demirel-park-evleri",
+  "slug": "seyh-samil-mahallesi/demirel-park-evleri",
+  "tarama": "2026-08-08",
+  "gos": 304,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/demirer-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 302,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/hill-tower",
+  "slug": "seker-mahallesi/hill-tower",
+  "tarama": "2026-07-31",
+  "gos": 295,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari",
+  "slug": "seker-mahallesi/dort-mevsim-eryaman-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 288,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/karma-modern",
+  "slug": "sehit-osman-avci-mahallesi/karma-modern",
+  "tarama": "2026-08-09",
+  "gos": 274,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/mesa-bloklari",
+  "slug": "altay-mahallesi/mesa-bloklari",
+  "tarama": "2026-07-27",
+  "gos": 262,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/konum-eryaman",
+  "slug": "goksu-mahallesi/konum-eryaman",
+  "tarama": "2026-07-26",
+  "gos": 262,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans",
+  "slug": "sehit-osman-avci-mahallesi/safir-rezidans",
+  "tarama": "2026-08-02",
+  "gos": 260,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari",
+  "slug": "goksu-mahallesi/havuzlu-bahce-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 248,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+  "slug": "goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 248,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/oyak-goksupark",
+  "slug": "goksu-mahallesi/oyak-goksupark",
+  "tarama": "2026-07-27",
+  "gos": 245,
+  "adas": true,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
+  "slug": "eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 241,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/siteler",
+  "slug": "/siteler",
+  "tarama": "2026-07-02",
+  "gos": 237,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/vera-city",
+  "slug": "sehit-osman-avci-mahallesi/vera-city",
+  "tarama": "2026-07-27",
+  "gos": 236,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/oyak-sitesi",
+  "slug": "eryaman-mahallesi/oyak-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 233,
+  "adas": true,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/arissa-goksu",
+  "slug": "goksu-mahallesi/arissa-goksu",
+  "tarama": "2026-07-26",
+  "gos": 232,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/mil-kooperatifi-sitesi",
+  "slug": "devlet-mahallesi/mil-kooperatifi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 229,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/araclar/tapu-harci-hesaplama",
+  "slug": "/araclar/tapu-harci-hesaplama",
+  "tarama": "2026-07-19",
+  "gos": 228,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/oasis-rezidans",
+  "slug": "seker-mahallesi/oasis-rezidans",
+  "tarama": "2026-07-31",
+  "gos": 224,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/ozdenizyildizi-sitesi",
+  "slug": "devlet-mahallesi/ozdenizyildizi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 217,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/umar-sitesi",
+  "slug": "seyh-samil-mahallesi/umar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 216,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/endora-eryaman",
+  "slug": "yavuz-selim-mahallesi/endora-eryaman",
+  "tarama": "2026-07-26",
+  "gos": 196,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi",
+  "slug": "yavuz-selim-mahallesi/yavuz-selim-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 194,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/pozitif-life",
+  "slug": "yesilova-mahallesi/pozitif-life",
+  "tarama": "2026-07-30",
+  "gos": 194,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/yeniceri-kule",
+  "slug": "goksu-mahallesi/yeniceri-kule",
+  "tarama": "2026-07-27",
+  "gos": 192,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+  "slug": "seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 184,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
+  "slug": "goksu-mahallesi/vaditepe-baspinar",
+  "tarama": "2026-07-27",
+  "gos": 176,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/oasis-tower",
+  "slug": "altay-mahallesi/oasis-tower",
+  "tarama": "2026-08-08",
+  "gos": 173,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/vizyon-prestige",
+  "slug": "altay-mahallesi/vizyon-prestige",
+  "tarama": "2026-07-26",
+  "gos": 173,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+  "slug": "sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 171,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/aksafak-sitesi",
+  "slug": "goksu-mahallesi/aksafak-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 160,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksupark-konutlari",
+  "slug": "goksu-mahallesi/goksupark-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 160,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/araclar/emlak-komisyonu-hesaplama",
+  "slug": "/araclar/emlak-komisyonu-hesaplama",
+  "tarama": "2026-07-20",
+  "gos": 158,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+  "slug": "eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 155,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/bordo-loca",
+  "slug": "goksu-mahallesi/bordo-loca",
+  "tarama": "2026-07-31",
+  "gos": 155,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/araclar/kira-artisi-hesaplama",
+  "slug": "/araclar/kira-artisi-hesaplama",
+  "tarama": "2026-07-20",
+  "gos": 151,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/finest-bloklari",
+  "slug": "goksu-mahallesi/finest-bloklari",
+  "tarama": "2026-07-26",
+  "gos": 151,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/selale-evleri-sitesi",
+  "slug": "goksu-mahallesi/selale-evleri-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 147,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/metropark-plus",
+  "slug": "sehit-osman-avci-mahallesi/metropark-plus",
+  "tarama": "2026-08-05",
+  "gos": 145,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/erkent-sitesi",
+  "slug": "guzelkent-mahallesi/erkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 142,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+  "slug": "yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 142,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/basak-sitesi",
+  "slug": "eryaman-mahallesi/basak-sitesi",
+  "tarama": "2026-07-30",
+  "gos": 127,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/su-damlasi-sitesi",
+  "slug": "tunahan-mahallesi/su-damlasi-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 122,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/maybak-konutlari",
+  "slug": "goksu-mahallesi/maybak-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 121,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/etaplar",
+  "slug": "/etaplar",
+  "tarama": "2026-08-09",
+  "gos": 120,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/endora-park",
+  "slug": "eryaman-mahallesi/endora-park",
+  "tarama": "2026-07-26",
+  "gos": 120,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/gulhayat-sitesi",
+  "slug": "devlet-mahallesi/gulhayat-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 116,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
+  "slug": "tunahan-mahallesi/kur-sitesi-46495-ada",
+  "tarama": "2026-08-09",
+  "gos": 115,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/cinar-sitesi",
+  "slug": "devlet-mahallesi/cinar-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 114,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/cigdem-sitesi",
+  "slug": "eryaman-mahallesi/cigdem-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 114,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/park-inci-konutlari",
+  "slug": "goksu-mahallesi/park-inci-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 114,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi",
+  "slug": "seyh-samil-mahallesi/bizim-alperenler-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 114,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/intes-dogakent-konutlari",
+  "slug": "eryaman-mahallesi/intes-dogakent-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 113,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/cinar-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/cinar-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 112,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/arya-nuans-residence",
+  "slug": "altay-mahallesi/arya-nuans-residence",
+  "tarama": "2026-07-31",
+  "gos": 111,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/melis-sitesi",
+  "slug": "seyh-samil-mahallesi/melis-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 110,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/yazici-modern",
+  "slug": "sehit-osman-avci-mahallesi/yazici-modern",
+  "tarama": "2026-07-26",
+  "gos": 108,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/safir-sitesi",
+  "slug": "yavuz-selim-mahallesi/safir-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 106,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/golkent-1-sitesi",
+  "slug": "goksu-mahallesi/golkent-1-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 103,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/zirveden-goksu",
+  "slug": "goksu-mahallesi/zirveden-goksu",
+  "tarama": "2026-07-31",
+  "gos": 103,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
+  "slug": "guzelkent-mahallesi/isi-kent-sitesi",
+  "tarama": "2026-08-09",
+  "gos": 103,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/frekans-eryaman",
+  "slug": "altay-mahallesi/frekans-eryaman",
+  "tarama": "2026-07-31",
+  "gos": 97,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/green-hill",
+  "slug": "yesilova-mahallesi/green-hill",
+  "tarama": "2026-08-07",
+  "gos": 97,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/neva-butik-home",
+  "slug": "sehit-osman-avci-mahallesi/neva-butik-home",
+  "tarama": "2026-08-02",
+  "gos": 96,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/zekioglu-rezidans",
+  "slug": "sehit-osman-avci-mahallesi/zekioglu-rezidans",
+  "tarama": "2026-07-27",
+  "gos": 96,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/cagkent-sitesi",
+  "slug": "devlet-mahallesi/cagkent-sitesi",
+  "tarama": "2026-08-09",
+  "gos": 93,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/admira-goksu-konutlari",
+  "slug": "goksu-mahallesi/admira-goksu-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 93,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit",
+  "slug": "sehit-osman-avci-mahallesi/gokdemirler-suit",
+  "tarama": "2026-07-26",
+  "gos": 93,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/anka-vega",
+  "slug": "yesilova-mahallesi/anka-vega",
+  "tarama": "2026-07-26",
+  "gos": 93,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/green-place-residence",
+  "slug": "yesilova-mahallesi/green-place-residence",
+  "tarama": "2026-07-26",
+  "gos": 93,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/platin-konutlari",
+  "slug": "eryaman-mahallesi/platin-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 92,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/tugce-kent-sitesi",
+  "slug": "seyh-samil-mahallesi/tugce-kent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 91,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+  "slug": "yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 89,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/turgut-aslan-sitesi",
+  "slug": "devlet-mahallesi/turgut-aslan-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 88,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/bahar-sitesi",
+  "slug": "eryaman-mahallesi/bahar-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 88,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/caglar-emin-evleri",
+  "slug": "seyh-samil-mahallesi/caglar-emin-evleri",
+  "tarama": "2026-07-26",
+  "gos": 88,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/sacak-91-sitesi",
+  "slug": "yavuz-selim-mahallesi/sacak-91-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 87,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
+  "slug": "goksu-mahallesi/seyirtepe-baspinar",
+  "tarama": "2026-07-27",
+  "gos": 86,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
+  "slug": "yavuz-selim-mahallesi/elit-nar-cicegi",
+  "tarama": "2026-07-27",
+  "gos": 84,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/intes-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/intes-sitesi",
+  "tarama": "2026-07-28",
+  "gos": 82,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
+  "slug": "yavuz-selim-mahallesi/utku-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 82,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gozde-91-sitesi",
+  "slug": "guzelkent-mahallesi/gozde-91-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 81,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/kirkayak-sitesi",
+  "slug": "yavuz-selim-mahallesi/kirkayak-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 80,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/4-devlet-mahallesi-sitesi",
+  "slug": "devlet-mahallesi/4-devlet-mahallesi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 79,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/anka-2001-sitesi",
+  "slug": "guzelkent-mahallesi/anka-2001-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 79,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/metro-yasam-sitesi",
+  "slug": "guzelkent-mahallesi/metro-yasam-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 79,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
+  "slug": "guzelkent-mahallesi/akkonak-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 78,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/genc-avrasya-sitesi",
+  "slug": "yavuz-selim-mahallesi/genc-avrasya-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 78,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/safi-apak-sitesi",
+  "slug": "guzelkent-mahallesi/safi-apak-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 75,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/ilkiz-2-sitesi",
+  "slug": "yavuz-selim-mahallesi/ilkiz-2-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 74,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/kayaevleri-sitesi",
+  "slug": "eryaman-mahallesi/kayaevleri-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 73,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi",
+  "slug": "guzelkent-mahallesi/cozum-kent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 70,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/eryapi-sitesi",
+  "slug": "guzelkent-mahallesi/eryapi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 70,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi",
+  "slug": "guzelkent-mahallesi/nazlideniz-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 70,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/evrimkent-sitesi",
+  "slug": "guzelkent-mahallesi/evrimkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 69,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
+  "slug": "yavuz-selim-mahallesi/taskent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 69,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/address-yesilova",
+  "slug": "yesilova-mahallesi/address-yesilova",
+  "tarama": "2026-07-26",
+  "gos": 68,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/doga-konutlari",
+  "slug": "goksu-mahallesi/doga-konutlari",
+  "tarama": "2026-07-28",
+  "gos": 66,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/betim-sitesi",
+  "slug": "devlet-mahallesi/betim-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 65,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+  "slug": "sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+  "tarama": "2026-07-27",
+  "gos": 64,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/koru-eryaman",
+  "slug": "goksu-mahallesi/koru-eryaman",
+  "tarama": "2026-07-27",
+  "gos": 63,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/lapis-garden",
+  "slug": "eryaman-mahallesi/lapis-garden",
+  "tarama": "2026-08-09",
+  "gos": 62,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/asilkent-sitesi",
+  "slug": "guzelkent-mahallesi/asilkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 62,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-vadi-konutlari",
+  "slug": "goksu-mahallesi/goksu-vadi-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 61,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/garden-zirve",
+  "slug": "sehit-osman-avci-mahallesi/garden-zirve",
+  "tarama": "2026-07-26",
+  "gos": 61,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/beyaz-residence",
+  "slug": "eryaman-mahallesi/beyaz-residence",
+  "tarama": "2026-07-27",
+  "gos": 60,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/pasa-konaklari",
+  "slug": "eryaman-mahallesi/pasa-konaklari",
+  "tarama": "2026-07-26",
+  "gos": 60,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/keyfim-sitesi",
+  "slug": "yavuz-selim-mahallesi/keyfim-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 60,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/hassas-cizgi-sitesi",
+  "slug": "eryaman-mahallesi/hassas-cizgi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 56,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-manzara-evleri",
+  "slug": "goksu-mahallesi/goksu-manzara-evleri",
+  "tarama": "2026-07-27",
+  "gos": 55,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/dogankaya-sitesi",
+  "slug": "eryaman-mahallesi/dogankaya-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 54,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/kent-konaklari-sitesi",
+  "slug": "eryaman-mahallesi/kent-konaklari-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 54,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/ahikent-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 53,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/nisan-sitesi",
+  "slug": "seyh-samil-mahallesi/nisan-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 53,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/kazim-sari-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/kazim-sari-sitesi",
+  "tarama": "2026-08-08",
+  "gos": 51,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+  "slug": "yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 51,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/eylul-evleri",
+  "slug": "yavuz-selim-mahallesi/eylul-evleri",
+  "tarama": "2026-07-26",
+  "gos": 51,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/etaplar/1",
+  "slug": "altay-mahallesi/etaplar/1",
+  "tarama": "2026-08-08",
+  "gos": 49,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/sergoksu-konutlari",
+  "slug": "goksu-mahallesi/sergoksu-konutlari",
+  "tarama": "2026-08-02",
+  "gos": 48,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/metrokent-villalari",
+  "slug": "yavuz-selim-mahallesi/metrokent-villalari",
+  "tarama": "2026-07-26",
+  "gos": 47,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/motto-butik",
+  "slug": "altay-mahallesi/motto-butik",
+  "tarama": "2026-07-26",
+  "gos": 46,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/mavikent-sitesi",
+  "slug": "devlet-mahallesi/mavikent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 46,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/turkkonut-istas-sitesi",
+  "slug": "devlet-mahallesi/turkkonut-istas-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 46,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
+  "slug": "guzelkent-mahallesi/ozle-iletisim-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 46,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/cabadag-bloklari",
+  "slug": "altay-mahallesi/cabadag-bloklari",
+  "tarama": "2026-07-26",
+  "gos": 44,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi",
+  "slug": "yavuz-selim-mahallesi/gulvatan-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 44,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/dogan-life",
+  "slug": "yesilova-mahallesi/dogan-life",
+  "tarama": "2026-07-26",
+  "gos": 44,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/doktorlar-sitesi",
+  "slug": "altay-mahallesi/doktorlar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 43,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/ozgun-ipek-sitesi",
+  "slug": "eryaman-mahallesi/ozgun-ipek-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 43,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/enday-sitesi",
+  "slug": "goksu-mahallesi/enday-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 43,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/eston-sitesi",
+  "tarama": "2026-08-04",
+  "gos": 43,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/etaplar/3",
+  "slug": "seyh-samil-mahallesi/etaplar/3",
+  "tarama": "2026-08-08",
+  "gos": 43,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/anadolu-sitesi",
+  "slug": "guzelkent-mahallesi/anadolu-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 42,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
+  "slug": "guzelkent-mahallesi/er-ay-3-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 42,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/atalay-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/atalay-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 42,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/kardelen-sitesi",
+  "slug": "yavuz-selim-mahallesi/kardelen-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 42,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/eryaman-port",
+  "slug": "yesilova-mahallesi/eryaman-port",
+  "tarama": "2026-08-06",
+  "gos": 42,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
+  "slug": "yavuz-selim-mahallesi/guz-gol-sitesi",
+  "tarama": "2026-07-30",
+  "gos": 41,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/taniskent-sitesi",
+  "slug": "seyh-samil-mahallesi/taniskent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 40,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/doktorlar-sitesi",
+  "slug": "yavuz-selim-mahallesi/doktorlar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 39,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-aura-sitesi",
+  "slug": "goksu-mahallesi/goksu-aura-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 37,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/eczacilar-sitesi",
+  "slug": "guzelkent-mahallesi/eczacilar-sitesi",
+  "tarama": "2026-08-07",
+  "gos": 37,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/etaplar/2",
+  "slug": "sehit-osman-avci-mahallesi/etaplar/2",
+  "tarama": "2026-08-08",
+  "gos": 36,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/dalgic-residence",
+  "slug": "sehit-osman-avci-mahallesi/dalgic-residence",
+  "tarama": "2026-07-26",
+  "gos": 35,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/gungorler-tower",
+  "slug": "sehit-osman-avci-mahallesi/gungorler-tower",
+  "tarama": "2026-08-02",
+  "gos": 35,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/turkuaz-sitesi",
+  "slug": "seyh-samil-mahallesi/turkuaz-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 35,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/rema-delux",
+  "slug": "yesilova-mahallesi/rema-delux",
+  "tarama": "2026-07-26",
+  "gos": 35,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/sozova-sitesi",
+  "slug": "devlet-mahallesi/sozova-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 34,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/z-yayla-konutlari",
+  "slug": "sehit-osman-avci-mahallesi/z-yayla-konutlari",
+  "tarama": "2026-07-26",
+  "gos": 34,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
+  "slug": "yesilova-mahallesi/kocaklar-tower",
+  "tarama": "2026-08-07",
+  "gos": 34,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/golkent-sitesi",
+  "slug": "goksu-mahallesi/golkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 33,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cagdas-sistem-sitesi",
+  "slug": "guzelkent-mahallesi/cagdas-sistem-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 33,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/ritim-eryaman",
+  "slug": "guzelkent-mahallesi/ritim-eryaman",
+  "tarama": "2026-07-29",
+  "gos": 33,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/nefeskent-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/nefeskent-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 32,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yuksel-kent-91-sitesi",
+  "slug": "yavuz-selim-mahallesi/yuksel-kent-91-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 32,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/durtas-91-sitesi",
+  "slug": "guzelkent-mahallesi/durtas-91-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 31,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yesimkent",
+  "slug": "guzelkent-mahallesi/yesimkent",
+  "tarama": "2026-07-26",
+  "gos": 31,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/guneyce-sitesi",
+  "slug": "devlet-mahallesi/guneyce-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 30,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/oray-sitesi",
+  "slug": "devlet-mahallesi/oray-sitesi",
+  "tarama": "2026-08-05",
+  "gos": 30,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/gunotesi-sitesi",
+  "slug": "eryaman-mahallesi/gunotesi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 30,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/merkez-sitesi",
+  "slug": "goksu-mahallesi/merkez-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 30,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/kucuk-ankara-villalari",
+  "slug": "guzelkent-mahallesi/kucuk-ankara-villalari",
+  "tarama": "2026-08-07",
+  "gos": 30,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi",
+  "slug": "yavuz-selim-mahallesi/atadostlar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 30,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/izgi-park-evleri",
+  "slug": "altay-mahallesi/izgi-park-evleri",
+  "tarama": "2026-08-02",
+  "gos": 28,
+  "adas": false,
+  "gitti": true
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/akkonaklar-sitesi",
+  "slug": "eryaman-mahallesi/akkonaklar-sitesi",
+  "tarama": "2026-08-01",
+  "gos": 28,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
+  "slug": "guzelkent-mahallesi/portakal-cicegi",
+  "tarama": "2026-07-29",
+  "gos": 28,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yayikli-2-sitesi",
+  "slug": "guzelkent-mahallesi/yayikli-2-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 27,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/mavera-sitesi",
+  "slug": "seyh-samil-mahallesi/mavera-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 27,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/ozarda-gokturk-sitesi",
+  "slug": "devlet-mahallesi/ozarda-gokturk-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 26,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/dogan-city",
+  "slug": "yesilova-mahallesi/dogan-city",
+  "tarama": "2026-07-26",
+  "gos": 26,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/hotki-meydan",
+  "slug": "devlet-mahallesi/hotki-meydan",
+  "tarama": "2026-08-01",
+  "gos": 25,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/referans-ankara",
+  "slug": "devlet-mahallesi/referans-ankara",
+  "tarama": "2026-08-05",
+  "gos": 25,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/maximum-konutlari",
+  "slug": "eryaman-mahallesi/maximum-konutlari",
+  "tarama": "2026-07-27",
+  "gos": 25,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/hava-destek-sitesi",
+  "slug": "goksu-mahallesi/hava-destek-sitesi",
+  "tarama": "2026-08-07",
+  "gos": 25,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/ataturk-sitesi",
+  "slug": "altay-mahallesi/ataturk-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 24,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi",
+  "slug": "devlet-mahallesi/yeni-huzur-bahcesi-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 24,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/tan-yildizi-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/tan-yildizi-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 24,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/baris-sitesi",
+  "slug": "seyh-samil-mahallesi/baris-sitesi",
+  "tarama": "2026-08-03",
+  "gos": 24,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/yuceyurt-sitesi",
+  "slug": "devlet-mahallesi/yuceyurt-sitesi",
+  "tarama": "2026-07-30",
+  "gos": 23,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/isikkent-sitesi",
+  "slug": "eryaman-mahallesi/isikkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 23,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+  "slug": "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 23,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+  "slug": "seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+  "tarama": "2026-07-28",
+  "gos": 23,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+  "slug": "seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 23,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/eryaman-evleri",
+  "slug": "eryaman-mahallesi/eryaman-evleri",
+  "tarama": "2026-07-26",
+  "gos": 22,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
+  "slug": "guzelkent-mahallesi/cagdas-95-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 22,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/camlik-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 22,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-evleri-sitesi",
+  "slug": "goksu-mahallesi/goksu-evleri-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 21,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/lale-kent-sitesi",
+  "slug": "sehit-osman-avci-mahallesi/lale-kent-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 21,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
+  "slug": "devlet-mahallesi/ilk-bahar-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 20,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/sahinbey-sitesi",
+  "slug": "guzelkent-mahallesi/sahinbey-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 20,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
+  "slug": "yavuz-selim-mahallesi/baskent-sular-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 20,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/angora-sitesi",
+  "slug": "guzelkent-mahallesi/angora-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 19,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/lowland-business",
+  "slug": "yesilova-mahallesi/lowland-business",
+  "tarama": "2026-07-26",
+  "gos": 19,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gulenkent-sitesi",
+  "slug": "guzelkent-mahallesi/gulenkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 18,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/pinarkent-91-sitesi",
+  "slug": "guzelkent-mahallesi/pinarkent-91-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 18,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
+  "slug": "yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
+  "tarama": "2026-08-03",
+  "gos": 18,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/sahil-sitesi",
+  "slug": "devlet-mahallesi/sahil-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 17,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/selcuklu-sitesi",
+  "slug": "devlet-mahallesi/selcuklu-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 16,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
+  "slug": "seyh-samil-mahallesi/ilkdogus-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 16,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+  "slug": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 14,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi",
+  "slug": "guzelkent-mahallesi/yayikli-4-sitesi",
+  "tarama": "2026-07-25",
+  "gos": 14,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/cayilkay-sitesi",
+  "slug": "devlet-mahallesi/cayilkay-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 13,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/uzunbey-sitesi",
+  "slug": "seyh-samil-mahallesi/uzunbey-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 13,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi",
+  "slug": "yavuz-selim-mahallesi/esenkent-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 13,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/konut-sitesi",
+  "slug": "yavuz-selim-mahallesi/konut-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 12,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
+  "slug": "yavuz-selim-mahallesi/goksu-sitesi",
+  "tarama": "2026-08-07",
+  "gos": 11,
+  "adas": true,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/ma1-tower",
+  "slug": "goksu-mahallesi/ma1-tower",
+  "tarama": "2026-07-27",
+  "gos": 10,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/aknergiz-sitesi",
+  "slug": "guzelkent-mahallesi/aknergiz-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 10,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/rainbow-sitesi",
+  "slug": "seker-mahallesi/rainbow-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 10,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/tunahan-sitesi",
+  "slug": "tunahan-mahallesi/tunahan-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 10,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/havacilar-sitesi",
+  "slug": "goksu-mahallesi/havacilar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 9,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+  "slug": "seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+  "tarama": "2026-07-27",
+  "gos": 9,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ak-kent-sitesi",
+  "slug": "seyh-samil-mahallesi/ak-kent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 8,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/aksu-sitesi",
+  "slug": "guzelkent-mahallesi/aksu-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 7,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/mesa-sitesi",
+  "slug": "guzelkent-mahallesi/mesa-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 7,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/ozharitacilar-sitesi",
+  "slug": "yavuz-selim-mahallesi/ozharitacilar-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 7,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/toki-konutlari",
+  "slug": "eryaman-mahallesi/toki-konutlari",
+  "tarama": "2026-08-07",
+  "gos": 6,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ilksebat-sitesi",
+  "slug": "seyh-samil-mahallesi/ilksebat-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 6,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/selinkent-sitesi",
+  "slug": "seyh-samil-mahallesi/selinkent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 6,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/sozluk",
+  "slug": "/sozluk",
+  "tarama": "2026-07-14",
+  "gos": 5,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/alis-sitesi",
+  "slug": "devlet-mahallesi/alis-sitesi",
+  "tarama": "2026-07-29",
+  "gos": 5,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/meydan-eryaman",
+  "slug": "goksu-mahallesi/meydan-eryaman",
+  "tarama": "2026-08-02",
+  "gos": 4,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/mutlu-sitesi",
+  "slug": "goksu-mahallesi/mutlu-sitesi",
+  "tarama": "2026-08-02",
+  "gos": 4,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi",
+  "slug": "seyh-samil-mahallesi/sitekonut-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 4,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/eryamanda-ev-satmak",
+  "slug": "/eryamanda-ev-satmak",
+  "tarama": "2026-07-20",
+  "gos": 1,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/korukent-sitesi",
+  "slug": "yavuz-selim-mahallesi/korukent-sitesi",
+  "tarama": "2026-07-26",
+  "gos": 1,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/araclar/site-karsilastirma",
+  "slug": "/araclar/site-karsilastirma",
+  "tarama": "2026-07-30",
+  "gos": 0,
+  "adas": false,
+  "gitti": false
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/guzel-ev-sitesi",
+  "slug": "yavuz-selim-mahallesi/guzel-ev-sitesi",
+  "tarama": "2026-08-03",
+  "gos": 0,
+  "adas": false,
+  "gitti": false
+ }
+]
