@@ -91,3 +91,34 @@ denizim, sergah, yesiloz, utku, yavuz-selim-sitesi (2), endora-eryaman (3→1).
 Spell-correction → düş/dibe: sitekonut, ilkdogus (aday), ozharitacilar,
 kucukevlerimiz, gulenkent (tur 1). "İstek işe yaramaz" sınıfı → düş: guzel-ev,
 goksu-sitesi (Güzelkent çift ölçüm şüphesi, askıya).
+
+## F. TUR 3 SONUÇLARI (27.08 gece — ŞOA + Eryaman + Altay/Yeşilova/Şeker)
+### 11 MAHALLENİN TAMAMI ANALİZ EDİLDİ ✅
+
+YENİ KURAL (Eryaman dersi): bugün yeniden ölçülen 11 eski "sıfır"ın 9'u
+KENDİLİĞİNDEN ilk 10'a dönmüş (ankapark #1, ay #1, bahar #1, elif-özgen #1...).
+22-23.08 tarihli tek kanıtı "sıfır" olan vakalara KOTA HARCAMADAN ÖNCE 28.08
+yeniden ölçümü şart. (İkinci neden: 23.08 turu yalnız hedef sayfayı saydı,
+27.08 turu herhangi bir siringayrimenkul URL'sini sayıyor — kural farkı.)
+
+- ŞOA: Elit Yaşam mükerrerliği çözüldü (17→16 gerçek); hayalet yok.
+- Eryaman: dışarıda 17→9 (bugünkü ölçümlerle); tek temiz damla adayı gunotesi.
+- Küçükler: 1 hayalet (altay/yildiz-bloklari — karneden düş); ataturk-sitesi
+  adas=false HATALI → [ADAŞ] etiketi (organik 0 ama harita kutusu #3'üz).
+
+## G. 28.08 ANA DAMLA SIRASI (tazele + eski-adres; kota ~10-12)
+1. sehit-ferhat-koc (Güzelkent — Özgün'ün 23.08 kararı, İLK SIRA)
+2. liderkent + yagan-kent ESKİ-ADRES birleştirme doğrulaması (ŞŞ; protokol
+   sınıfı en üst: eski adres > bayat > dizinsiz)
+3. endora-eryaman (YS, 196 gos — v4 öne çek + 3 mükerrer kaydı teke indir)
+4. atayildiz (ŞŞ, 184) | 5. elit-yasam-1 (ŞOA, 122) | 6. bizim-alperenler (114)
+7. melis (110) | 8. gokdemirler-suit (95) | 9. anka-vega (Yeşilova, 93)
+10. dogan-life (72) | 11. rainbow (Şeker, 71) | 12. cozum-kent (Güzelkent, 70)
+Yedek: selcuklu, guneyce, gulvatan, gunotesi, portakal-cicegi, sahinbey.
+safi-apak + nazlideniz v2 bandından gelince aynı damlada sayılır.
+
+## H. ÖZGÜN ONAYI BEKLEYEN DİZİNSİZ İSTİSNALAR (v4 "dizinsize kota harcanmaz")
+Talep sıralı: polsan1-ayisigi (219 — önce eski-adres yolu araştırılsın),
+mavi-koy, sedirkent, lacin-eryaman, bulvar-1071 (eski slug birleşme yolu),
+relax-eryaman, kusburnu, gulsah-95, konuta-ozlem. Adaşsız + kendi sayfaları
+SERP'te temsilcili "dizinsizlik deseni" vakaları — onay gelirse sıra bu.
