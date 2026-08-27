@@ -296,3 +296,7 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > 27.08 (2. duvar): Devlet 28/45'te ikinci reCAPTCHA (günlük 85. ölçüm). Kalan 17 Devlet
 > sorgusu (tur-devlet-2708.json[28:]) + 7 mahalle 28.08'e. Bugün ölçülen: Tunahan 28 TAM,
 > Altay 28 TAM, Devlet 28 yarım.
+> 27.08 (3): Sekme-yenileme taktiği (Özgün önerisi) 3. duvardan sonra +46 ölçüm kazandırdı
+> (Devlet 45/45 TAMAMLANDI + Eryaman 25/51). 4. duvar kalıcılaştı: yeni sekme + 30sn mola
+> sadece 1 sorgu geçiriyor, sonraki anında CAPTCHA. Günlük toplam ~131 ölçüm — kanal bitti.
+> 28.08: Eryaman 25'ten (Gençler Sitesi) devam → Göksu → Güzelkent → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
