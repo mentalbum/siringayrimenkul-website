@@ -18,7 +18,7 @@ import { organizationRef } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Eryaman Site Karşılaştırma Aracı — Tapu Verisiyle Yan Yana",
   description:
-    "Eryaman ve çevresindeki 700'den fazla siteyi tapu verisiyle karşılaştırın: tapu niteliği, parsel alanı, blok ve kat yapısı. Fiyat değil, bayatlamayan yapısal veriler — TKGM kayıtlarına dayalı.",
+    "Eryaman'daki 500'den fazla siteyi tapu verisiyle karşılaştırın: tapu niteliği, parsel alanı, blok ve kat yapısı. Fiyat değil, bayatlamayan yapısal veriler — TKGM kayıtlarına dayalı.",
   alternates: { canonical: "/araclar/site-karsilastirma" },
 };
 
@@ -90,7 +90,7 @@ export default function SiteKarsilastirmaPage() {
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">Eryaman Site Karşılaştırma Aracı</h1>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman ve çevresindeki 700&apos;den fazla siteyi tek tek dolaşıp tapu kayıtlarıyla
+          Eryaman&apos;daki 500&apos;den fazla siteyi tek tek dolaşıp tapu kayıtlarıyla
           eşleştirdik. Bu araç o birikimi yan yana koyar: tapu niteliği, parsel alanı, blok ve kat
           yapısı — yani zamanla bayatlamayan, karar değiştiren veriler. İlan sitelerinde
           bulamayacağınız bir karşılaştırma.
