@@ -69,7 +69,7 @@ adaş baskılı; onlar bu liste bitince sıraya girer.
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- 114 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- 93 gos · kopya 2026-07-27 -->
@@ -128,7 +128,7 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi  <!-- 147 gos · kopya 2026-07-26 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi  <!-- 141 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi  <!-- 127 gos · kopya 2026-07-30 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari  <!-- 114 gos · kopya 2026-07-27 -->
@@ -414,7 +414,7 @@ ama acele değil.
 GSC API teyitli; ilk 10 dışılar, kopya 25.07–30.07:
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/guneyce-sitesi ← 26.07 (23.08 API teyidi; SERP #4 eski başlıkla — Güneyce ofis/Güdül adaşı da var)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sahil-sitesi ← 27.07 (YS Sahil Kent adaşı da karışıyor)
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 25.07 ('Sarıçınar' bitişik varyant adayı)
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 27.08 istek gönderildi ← 25.07 ('Sarıçınar' bitişik varyant adayı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi ← 26.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi ← 26.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yuceyurt-sitesi ← 30.07 (Sivas Yüceyurt Mah. adaşı baskın)
