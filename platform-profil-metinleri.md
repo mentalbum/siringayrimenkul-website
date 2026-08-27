@@ -29,20 +29,24 @@
 > politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
 > kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Şirin Gayrimenkul, Eryaman'da yerleşik bir gayrimenkul ofisidir; satılık ve
-kiralık konutta çalışırız ve buradaki siteleri blok blok tanırız. Kimseyi
-aceleye getirmez, gerçekçi olmayan vaatlerde bulunmayız. İşe evi yerinde
-görerek başlar, değerini birlikte netleştiririz. Tapu ya da kira sözleşmesi
-tamamlanana kadar düzenli olarak bilgi veririz. Ev arayanlara da aynı özenle
-yardımcı oluruz. Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'da; bekleriz.
+Doğru ev, doğru insanını bulur; biz bu buluşmayı emekle hazırlarız. Şirin
+Gayrimenkul, Eryaman'da yerleşik bir gayrimenkul ofisidir. Buradaki siteleri
+blok blok tanırız; bir evde geçen yılların kıymetini de biliriz. Satılık ve
+kiralık konutta çalışırız; evinizi yerinde görür, değerini birlikte buluruz.
+Size zaman tanırız; sözümüz neyse odur. Tapu ya da kira sözleşmesi
+tamamlanana dek her gelişmeyi sizinle paylaşırız. Ev arayanlara da aynı
+özenle eşlik ederiz. Ofisimiz Tunahan 4. Etap Çarşı'da; kapıdan girdiğinizde
+Eryaman'ı iyi tanıyan biriyle konuşursunuz.
 
-*(478 karakter — sınırın altında; "aceleye getirmez, gerçekçi olmayan
-vaatlerde bulunmayız" güven cümlesi ilk 250 karakterlik arama önizlemesinin
-içinde. TON KARARI, Özgün 2026-08-27 — İKİ UÇ DA REDDEDİLDİ: bilgi/süreç
-yığan profesyonellik de ("çok detaylı, rahatlatmıyor"), "esnafıyız/çayımızı
-için" samimiyeti de ("daha profesyonel yazalım"). Hedef kayıt: köklü ofisin
-ölçülü ciddiyeti — süreç adımı sayma, aforizma, jargon yok; samimiyet
-işareti de yok; güven mesajı profesyonel kelimelerle ve metnin başında)*
+*(612 karakter — sınırın altında; lirik açılış + "tanırız/biliriz" paralel
+cümlesi ilk 250 karakterlik arama önizlemesinin içinde (231'de bitiyor).
+TON GEÇMİŞİ, Özgün 2026-08-27, dört tur: (1) bilgi/süreç yığan
+profesyonellik RED ("çok detaylı, rahatlatmıyor"), (2) "esnafıyız/çay"
+samimiyeti RED ("daha profesyonel yazalım"), (3) ölçülü-kurumsal taban
+TAMAM ama kuru bulundu, (4) NİHAİ: aynı ciddiyet zeminine güzellik —
+"daha güzel yazalım, çekim yasasına güveniyorum, okuyan mest olsun":
+olumlama dili (yasak/olumsuzlama cümlesi yok), tek lirik açılış, kitsch
+kalıpları yok, profesyonel zemin korunur)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
