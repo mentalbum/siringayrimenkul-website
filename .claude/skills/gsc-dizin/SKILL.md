@@ -12,7 +12,7 @@ Google dizinine sokmak. Tek geçerli dizin-durumu kaynağı **GSC URL denetimi**
 ## Dosyalar ve işaret düzeni
 
 - Ana kuyruk: `scratchpad-karne/pws0/gsc-dizin-kuyrugu-194.md` — talep sıralı
-  (Eryaman grubu önce, Yenimahalle grubu sonra). Olay notları dosyanın sonuna
+  (talep sıralı; Yenimahalle grubu 27.08'de siteden kaldırıldı, kuyrukta yok). Olay notları dosyanın sonuna
   `> tarih — not` biçiminde eklenir.
 - Özgün'e verilen çalışma kopyası: `scratchpad-karne/pws0/DIZINE-EKLENECEKLER.md`
   (kuyruktan yeniden üretilir; elle senkron etme, üret).
@@ -34,8 +34,9 @@ Google dizinine sokmak. Tek geçerli dizin-durumu kaynağı **GSC URL denetimi**
   KALDIRILDI): her gün 22:47'de otomatik tur (CronCreate, oturum içi). Kural:
   her adayı göndermeden ÖNCE API ile doğrula (kendiliğinden girenlere kota
   harcanmaz); "Kota aşıldı"nda dur, ertesi gün devam; kuyruk tamamen bitince
-  Özgün'e haber verilir ve görev silinir. Sıra: Eryaman mahalleleri önce,
-  Yenimahalle grubu (ata/susuz/cumhuriyet) en sona; mahalle içi talep sıralı.
+  Özgün'e haber verilir ve görev silinir. Sıra: mahalle içi talep sıralı.
+  (27.08: Yenimahalle grubu ata/susuz/cumhuriyet SİTEDEN KALDIRILDI — bu üç
+  mahalleye asla istek gönderme; adresleri 410 dönüyor.)
 
 ## Denetim akışı (tarayıcı)
 

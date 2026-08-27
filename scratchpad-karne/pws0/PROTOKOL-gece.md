@@ -222,8 +222,9 @@ geçtiyse o gün yeni tarama açma — kanal paylaşımlı.
 sorgusunda sıramız ölçülecek, İLK 3'TE OLMAYANLAR not edilecek, ayrıca
 "Evinizi Satalım, Kiraya Verelim" ekinin SERP'te görünürlüğü izlenecek.
 
-- Kuyruk: `kuyruk-site-emlakci.json` (706 tekil sorgu; Eryaman önce, sonra
-  Yenimahalle üçlüsü; `es` alanı aynı adı paylaşan ikinci kaydı taşır).
+- Kuyruk: `kuyruk-site-emlakci.json` (504 tekil sorgu; 27.08'de Yenimahalle
+  üçlüsünün 202 sorgusu siteyle birlikte kaldırıldı; `es` alanı aynı adı
+  paylaşan ikinci kaydı taşır).
 - Sonuç: `sonuclar-site-emlakci.jsonl` (2026-08-11 gecesi ilk 42 ölçüldü).
 - Karne: `python3 karne-site-emlakci.py --md` → `ilk3-disi-siteler.md`
   (Özgün'e gösterilecek not bu dosya; her dilimden sonra tazele).

@@ -17,19 +17,11 @@
 
 ## SIRADA (gösterime göre)
 [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi
-[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/cimtas-goksu-konutlari
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/armoni-life
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/aker-mucevher-evleri
-[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/natura-goksu
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/endora-plus
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence
 [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ornek-ari-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/vera-city
-[ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bordo-gol-evleri
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mavi-bayrak-sitesi
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/alkon-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi
 
 ## ÖLÇÜM

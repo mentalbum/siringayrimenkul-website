@@ -1,11 +1,6 @@
 {
  "temiz": [
   {
-   "gos": 187,
-   "tarama": "2026-07-26",
-   "s": "susuz-mahallesi/ende-yasam"
-  },
-  {
    "gos": 166,
    "tarama": "2026-07-27",
    "s": "goksu-mahallesi/sude-konutlari"
@@ -101,11 +96,6 @@
    "s": "eryaman-mahallesi/gunotesi-sitesi"
   },
   {
-   "gos": 26,
-   "tarama": "2026-07-27",
-   "s": "ata-mahallesi/etikent-sitesi"
-  },
-  {
    "gos": 23,
    "tarama": "2026-07-28",
    "s": "seyh-samil-mahallesi/ovgu-iletisim-sitesi"
@@ -138,16 +128,6 @@
    "s": "yesilova-mahallesi/meva-sehir"
   },
   {
-   "gos": 400,
-   "tarama": "2026-07-27",
-   "s": "cumhuriyet-mahallesi/vera-point"
-  },
-  {
-   "gos": 297,
-   "tarama": "2026-07-26",
-   "s": "susuz-mahallesi/yildiz-life"
-  },
-  {
    "gos": 262,
    "tarama": "2026-07-27",
    "s": "altay-mahallesi/mesa-bloklari"
@@ -168,29 +148,9 @@
    "s": "yavuz-selim-mahallesi/utku-sitesi"
   },
   {
-   "gos": 222,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/pasa-evleri"
-  },
-  {
-   "gos": 186,
-   "tarama": "2026-07-27",
-   "s": "cumhuriyet-mahallesi/greenpark-evleri"
-  },
-  {
-   "gos": 185,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/parkyaman-evleri"
-  },
-  {
    "gos": 184,
    "tarama": "2026-07-26",
    "s": "seyh-samil-mahallesi/atayildiz-yasam-konutlari"
-  },
-  {
-   "gos": 176,
-   "tarama": "2026-07-26",
-   "s": "susuz-mahallesi/eser-yapi-sitesi"
   },
   {
    "gos": 160,
@@ -206,11 +166,6 @@
    "gos": 147,
    "tarama": "2026-07-26",
    "s": "goksu-mahallesi/selale-evleri-sitesi"
-  },
-  {
-   "gos": 141,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/taflan-sitesi"
   },
   {
    "gos": 127,
@@ -258,21 +213,6 @@
    "s": "yesilova-mahallesi/anka-vega"
   },
   {
-   "gos": 93,
-   "tarama": "2026-07-26",
-   "s": "cumhuriyet-mahallesi/nisanur-sitesi"
-  },
-  {
-   "gos": 92,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/turuncu-site"
-  },
-  {
-   "gos": 90,
-   "tarama": "2026-08-02",
-   "s": "susuz-mahallesi/starlife"
-  },
-  {
    "gos": 88,
    "tarama": "2026-07-27",
    "s": "eryaman-mahallesi/bahar-sitesi"
@@ -286,16 +226,6 @@
    "gos": 86,
    "tarama": "2026-07-27",
    "s": "goksu-mahallesi/seyirtepe-baspinar"
-  },
-  {
-   "gos": 86,
-   "tarama": "2026-07-26",
-   "s": "cumhuriyet-mahallesi/city-life"
-  },
-  {
-   "gos": 86,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/emin-guven-sitesi"
   },
   {
    "gos": 83,
@@ -323,11 +253,6 @@
    "s": "yesilova-mahallesi/dogan-life"
   },
   {
-   "gos": 72,
-   "tarama": "2026-07-26",
-   "s": "cumhuriyet-mahallesi/yesil-koru-sitesi"
-  },
-  {
    "gos": 70,
    "tarama": "2026-07-26",
    "s": "guzelkent-mahallesi/cozum-kent-sitesi"
@@ -343,19 +268,9 @@
    "s": "goksu-mahallesi/doga-konutlari"
   },
   {
-   "gos": 65,
-   "tarama": "2026-07-30",
-   "s": "ata-mahallesi/ada-loft-eryaman"
-  },
-  {
    "gos": 64,
    "tarama": "2026-07-27",
    "s": "sehit-osman-avci-mahallesi/elit-yasam-konutlari-1"
-  },
-  {
-   "gos": 56,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/belmi-kent"
   },
   {
    "gos": 53,
@@ -373,24 +288,9 @@
    "s": "yavuz-selim-mahallesi/eylul-evleri"
   },
   {
-   "gos": 47,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/atasayanlar-sitesi"
-  },
-  {
-   "gos": 46,
-   "tarama": "2026-07-27",
-   "s": "cumhuriyet-mahallesi/altin-basak-konutlari"
-  },
-  {
    "gos": 43,
    "tarama": "2026-07-27",
    "s": "goksu-mahallesi/enday-sitesi"
-  },
-  {
-   "gos": 42,
-   "tarama": "2026-07-27",
-   "s": "cumhuriyet-mahallesi/huzur-park-sitesi"
   },
   {
    "gos": 35,
@@ -409,11 +309,6 @@
   },
   {
    "gos": 31,
-   "tarama": "2026-07-28",
-   "s": "cumhuriyet-mahallesi/guney-park-evleri"
-  },
-  {
-   "gos": 31,
    "tarama": "2026-07-26",
    "s": "eryaman-mahallesi/eryaman-evleri"
   },
@@ -421,11 +316,6 @@
    "gos": 31,
    "tarama": "2026-07-26",
    "s": "devlet-mahallesi/yeni-huzur-bahcesi-sitesi"
-  },
-  {
-   "gos": 30,
-   "tarama": "2026-08-02",
-   "s": "ata-mahallesi/genova"
   },
   {
    "gos": 30,
@@ -531,16 +421,6 @@
    "gos": 11,
    "tarama": "2026-08-07",
    "s": "yavuz-selim-mahallesi/goksu-sitesi"
-  },
-  {
-   "gos": 10,
-   "tarama": "2026-07-26",
-   "s": "susuz-mahallesi/batimahal-baspinar"
-  },
-  {
-   "gos": 10,
-   "tarama": "2026-07-26",
-   "s": "ata-mahallesi/bayer-sitesi"
   },
   {
    "gos": 8,

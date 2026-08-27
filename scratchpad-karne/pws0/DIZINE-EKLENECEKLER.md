@@ -84,7 +84,6 @@ adaş baskılı; onlar bu liste bitince sıraya girer.
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/cabadag-bloklari  <!-- 44 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi  <!-- 34 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/gunotesi-sitesi  <!-- 30 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/etikent-sitesi  <!-- 26 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi  <!-- 23 gos · kopya 2026-07-28 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi  <!-- 23 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulenkent-sitesi  <!-- 18 gos · kopya 2026-07-26 -->
@@ -119,7 +118,6 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri  <!-- 186 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi  <!-- 176 gos · kopya 2026-07-26 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari  <!-- 160 gos · kopya 2026-07-27 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
@@ -127,7 +125,6 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi  <!-- 147 gos · kopya 2026-07-26 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi  <!-- 141 gos · kopya 2026-07-26 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi  <!-- 127 gos · kopya 2026-07-30 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
@@ -141,31 +138,23 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit  <!-- 95 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- 93 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega  <!-- 93 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/nisanur-sitesi  <!-- 93 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/turuncu-site  <!-- 92 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/starlife  <!-- 90 gos · kopya 2026-08-02 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/bahar-sitesi  <!-- 88 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/evinora-sitesi  <!-- 87 gos · kopya 2026-08-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar  <!-- 86 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/city-life  <!-- 86 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/emin-guven-sitesi  <!-- 86 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/taskent-sitesi  <!-- 83 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/doktorlar-sitesi  <!-- 80 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/safi-apak-sitesi  <!-- 75 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi  <!-- 75 gos · kopya 2026-07-29 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sahinbey-sitesi  <!-- 74 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life  <!-- 72 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yesil-koru-sitesi  <!-- 72 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- 71 gos · kopya 2026-07-29 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oray-sitesi  <!-- 67 gos · kopya 2026-08-05 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari  <!-- 66 gos · kopya 2026-07-28 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ada-loft-eryaman  <!-- 65 gos · kopya 2026-07-30 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1  <!-- 64 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-vadi-konutlari  <!-- 61 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-aura-sitesi  <!-- 58 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/belmi-kent  <!-- 56 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi  <!-- 53 gos · kopya 2026-08-02 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/nisan-sitesi  <!-- 53 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/eylul-evleri  <!-- 51 gos · kopya 2026-07-26 -->
@@ -235,12 +224,6 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/uzunali-goksu-konutlari  <!-- 23.08 SERP #3'te eski slug; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/metrokent-villalari  <!-- 22.08 SERP #3-5 çift kopya; 308 doğrulandı -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim/turaykent-sitesi  <!-- 22.08 SERP #2'de eski slug (#1 yeni); 308 doğrulandı -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/diamond-goksu  <!-- 23.08 "Wind Göksu emlakçı" SERP #8'de eski slug + eski başlık (snippet wind-goksu metni — Google iki kaydı karıştırıyor); 308 doğrulandı -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/wind-goksu  <!-- 23.08 wind-goksu yeni sayfası kendi sorgusunda ilk 10'da yok; eski slug 308 doğrulandı, birleşince temsil düzelir -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/ap-forest-gate  <!-- 23.08 SERP #4'te eski kopya (#1 yeni); 308 doğrulandı -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/green-life-goksu  <!-- 23.08 SERP #3'te eski slug ('ücretsiz değerlendirme' devri metniyle; #1 yeni); 308 doğrulandı -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/neovadi-konutlari  <!-- 23.08 SERP #2+#5 İKİ eski kopya (yeni sayfa #8'in önünde); 308 doğrulandı -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/kainat-evler-2  <!-- 23.08 'Kainat Evleri' sorgusunda #2'de eski slug kardeş kaydı (kainat-evleri yeni sayfası #3'ün önünde); kendi yeni sayfası #1'de sağlam; 308 doğrulandı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bordo-platinum-residence  <!-- 359 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/natura-goksu  <!-- 334 gos · 2026-07-11 · 19.08 DÜŞMÜŞ — eski adres dizinden çıkmış, birleşme kendiliğinden; kota harcanmadı -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu/kasmir-gol-evleri  <!-- 326 gos · 2026-07-14 · 19.08 istek gönderildi -->
@@ -248,36 +231,18 @@ Sıra gösterime göre. Biçim: <90 günlük gösterim> · son tarama
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil  <!-- 301 gos · 2026-07-16 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/seker/bahcen-eryaman-konutlari  <!-- 287 gos · 2026-07-02 · 19.08 istek gönderildi -->
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim  <!-- 265 gos · 2026-07-21 · 19.08 istek gönderildi -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/gold-life-konutlari  <!-- 264 gos · 2026-07-09 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/mercan-life-buse-konutlari  <!-- 236 gos · 2026-07-09 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/bordo-gol-evleri  <!-- 234 gos · 2026-07-10 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/yeniceri-kule  <!-- 224 gos · 2026-07-21 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/vera-point  <!-- 221 gos · 2026-07-07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/polsan1-ayisigi-sitesi  <!-- 219 gos · 2026-07-18 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/gold-stone-evleri  <!-- 218 gos · 2026-07-14 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/alarko-bloklari  <!-- 215 gos · 2026-07-15 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/relax-goksu-konutlari  <!-- 215 gos · 2026-07-15 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/kainat-evler-2  <!-- 214 gos · 2026-07-11 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet/oz-gimat-sitesi  <!-- 213 gos · 2026-07-16 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/angora-goksu-evleri  <!-- 211 gos · 2026-07-10 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/vera-west  <!-- 204 gos · 2026-07-17 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/kiratli-residence  <!-- 203 gos · 2026-07-15 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/trend-life-sitesi  <!-- 200 gos · 2026-07-17 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan  <!-- 195 gos · 2026-07-20 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/hittown  <!-- 194 gos · 2026-07-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan/kur-sitesi-46495-ada  <!-- 193 gos · 2026-07-17 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/beloren-manzara-evleri  <!-- 193 gos · 2026-07-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/inci-park-evleri  <!-- 189 gos · 2026-07-16 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay  <!-- 189 gos · 2026-07-24 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu/gsv-spor-sitesi  <!-- 184 gos · 2026-07-25 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil/ozahikent-sitesi  <!-- 183 gos · 2026-07-20 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/tekirdag-park-evleri  <!-- 181 gos · 2026-07-10 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/mavi-bayrak-sitesi  <!-- 180 gos · 2026-07-09 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/elit-yasam-konutlari-3  <!-- 176 gos · 2026-07-07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/vizyon-baspinar-sitesi  <!-- 174 gos · 2026-07-19 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata/efsane-evleri  <!-- 174 gos · 2026-07-07 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz/goksu-hisar-evleri  <!-- 166 gos · 2026-07-10 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet/ap-istgate  <!-- 165 gos · 2026-07-09 -->
 
 (Kalan 83 sıkışık adres: scratchpad/sikisik.txt — bunlar site
 haritasının kendi hızıyla birleşecek, kota harcanmaz.)
@@ -487,61 +452,15 @@ eston 04.08 (ŞŞ eston kardeşleri).
 
 ## ATA — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
 
-GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08:
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ada-loft-eryaman ← 30.07 (müteahhit kanalları baskın)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/atasayanlar-sitesi ← 26.07 (Alacaatlı/İncek adaşları baskın)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/bayer-sitesi ← 26.07 (Bayer Emlak adaşı)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/belmi-kent ← 26.07 (Belmi Emlak ofis adaşı, yapısal zor)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/emin-guven-sitesi ← 26.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/etikent-sitesi ← 27.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/genova ← 02.08 (iş merkezi/YS kaydı gürültüsü)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri ← 26.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi ← 26.07 (Kışlalı Taflan adaşı)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/turuncu-site ← 26.07 (44785-2 ada #4 vitrin)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/selale-sitesi ← 27.07 (46196-4 ada #1 vitrin)
-
-DOKUNMA notu: cagdas-onur 22.08 taranmış (DÜN) ama sıralamıyor — yansıma bekleniyor, izleme.
+Bölüm 27.08'de kapatıldı: mahalle siteden kaldırıldı (Özgün kararı), bekleyen istekler kuyruktan düşürüldü.
 
 ## CUMHURİYET — DİZİNDE AMA BAYAT (23.08 SERP turu teşhisi)
 
-DİKKAT: Cumhuriyet'te 8 sayfa UNKNOWN çıktı (10-botanik, ap-istgate, ap-istway,
-arissa, batihan, botanik-evleri, konar-manzara, park-sera) — Google bu URL'leri
-HİÇ görmemiş; mahallenin ada-vitrin sayfaları siteyi taşıyor. Keşif sorunu
-sistemsel olabilir; sitemap taze mi kontrol edilecek.
-
-BAYAT (yeniden tarama):
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/altin-basak-konutlari ← 27.07 ('Altınbaşak' bitişik varyant adayı)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/city-life ← 26.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri ← 27.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/huzur-park-sitesi ← 27.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/nisanur-sitesi ← 26.07
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/guney-park-evleri ← 28.07 (Çankaya Güneypark adaşı baskın)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yesil-koru-sitesi ← 26.07 (İstanbul Yeşilkoru adaşları baskın; 23.08 teşhis)
-
-DOKUNMA: natural 14.08 + oasis 15.08 + ender-dogus 02.08 taze taranmış (adaş/vitrin
-temsili sürüyor) — tarama işi değil.
+Bölüm 27.08'de kapatıldı: mahalle siteden kaldırıldı (Özgün kararı), bekleyen istekler kuyruktan düşürüldü.
 
 ## SUSUZ — 23.08 SERP turu teşhisi (TUR BİTTİ — 46 sorgu)
 
-BAYAT (yeniden tarama; kopya 26.07):
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/batimahal-baspinar ← 26.07 (müteahhit kanalları baskın; 'Batı Mahal' ayrık yazım varyant adayı)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi ← 26.07 ('Eser Yapı Evleri' Ata Mah. etiketli gürültü)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/dostlar-birikim-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/merdin-sitesi ← 26.07 (SERP #2 ama eski başlıkla)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/starlife ← 02.08 ('Star Life Gayrimenkul' ofis-marka adaşı SERP'i tutuyor — beklenti düşük)
-
-DİZİNSİZ (istek kuyruğuna):
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life ← 23.08 dizin dışı teyit (Discovered; 63379-1 ada #2 vitrin)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu ← 23.08 dizin dışı teyit (Discovered; 63377-5 ada #3 vitrin)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 23.08 UNKNOWN (Google hiç görmemiş; 63356-1 ada #4 vitrin)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri ← 15.08 dizin dışı teyit (44784-1 ada #3 vitrin; 'Tatlıyamaç' bitişik varyant adayı)
-
-DOKUNMA (taze taranmış, sıralamıyor — tarama işi değil): cag-life 19.08 (tüm
-portallar 'Yakacık Çağ Life' diyor, panel Susuz — mahalle çelişkisi KEOS'la
-çözülecek — 23.08 TKGM teyidi: kayıt doğru, Yakacık Çağ Life 6 katlı DIŞ ADAŞ),
-goksu-marina 17.08 (portallar 'Göksu Mh. Etimesgut' etiketli; Arus Göksu Marina 2
-gürültüsü), serline 20.08 (müteahhit SERGrup kanalları baskın), sky-goksu 18.08
-(Yukarıyurtçu Sky-B projesi adı tutuyor — bilinen benzer-ad vakası, yapısal).
+Bölüm 27.08'de kapatıldı: mahalle siteden kaldırıldı (Özgün kararı), bekleyen istekler kuyruktan düşürüldü.
 
 ## 4-10 KUŞAĞI — DİZİNDE AMA BAYAT (23.08 akşam dökümü; en yakın ilk-3 adayları)
 
@@ -557,12 +476,8 @@ tarama → 23.08 #1).
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri ← 02.08 (#4-7 komşular+ada)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← 27.07 (#4 kardeş platin-2)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence ← 26.07 (#5 mahalle)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi ← 26.07 (#5 komşu Liva)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi ← 26.07 (#5 ada)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-plus ← 26.07 (#5 ada; adaş mağaza #1)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower ← 27.07 (#6 mahalle)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence ← 26.07 (#6-10 komşular)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu ← 26.07 (#6 kardeşin adası)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/meydan-ada-sitesi ← DOKUNMA: 21.08 taranmış, yansıma bekle
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman ← 26.07 (#6 kardeş Endora Plus; 4'lü aile)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari ← 26.07 (#7 ada)
@@ -571,8 +486,6 @@ tarama → 23.08 #1).
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/arissa-goksu ← 26.07 (#4 bayat başlık)
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/su-damlasi-sitesi ← DİZİNDE ama SERP kopyası ESKİ ticari başlık (#5); bugün 'kendiliğinden dizinde' diye istek atlanmıştı — YENİDEN TARAMA İSTEĞİ gerekli (mevcut hükmü isteği engellemez)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-ist-port ← 30.07 (#5; müteahhit AP kanalları)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mood-goksu ← 31.07 (#5; müteahhit Dinamik Life)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi ← 27.07 (#4 mahalle sayfası)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi ← 26.07 (#8 bayat başlık; AI Bakışı'nda anılıyoruz)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi ← 26.07 (#4; Güzelkent Doğakent Çamlık iç adaşı #2)
@@ -580,7 +493,6 @@ tarama → 23.08 #1).
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi ← 27.07 (#4; DİKKAT: slug '-sitesi' ekli, kısaltılmış anahtarla 404 denetlenmişti)
 
 ADA TAZELEME — GÜVENLİ KOŞUL SAĞLANDI (24.08, kuralın ilk uygulaması):
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/adalar/46424-1 ← 27.07 kopya (site adlı ESKİ başlık) Anemon Sitesi sorgusunda #4'te, KENDİ site sayfamız #6'da. Site sayfası dizinde (17.08) VE sıralıyor → ada tazelenebilir: taze kopyada site adı başlıktan düşer (95f4aef), ada geri çekilir, site sayfası öne geçer. Vitrin riski YOK çünkü site zaten görünüyor.
 
 DOKUNMA — TAZE TARANMIŞ AMA 4-10'DA (24.08 workflow dökümü). DİKKAT, İKİ ALT
 SINIF VAR (24.08 ozkardesler dersi): tarama tarihi taze olsa bile Google'ın
@@ -599,73 +511,35 @@ YOK (canlı 404, içerik kaydı yok); 'UNKNOWN' hükmü bundandı. Kota harcanma
 
 ## Talebi olanlar (83 sayfa) — once bunlar
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari  <!-- 236 gos / 7 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  <!-- 219 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri  <!-- 218 gos / 4 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi  <!-- 200 gos / 2 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri  <!-- 181 gos / 6 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate  <!-- 165 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari  <!-- 148 gos / 5 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi  <!-- 139 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri  <!-- 137 gos / 6 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari  <!-- 124 gos / 3 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence  <!-- 121 gos / 3 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari  <!-- 120 gos / 4 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri  <!-- 117 gos / 3 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri  <!-- 112 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri  <!-- 106 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati  <!-- 105 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife  <!-- 92 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi  <!-- 89 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista  <!-- 88 gos / 4 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent  <!-- 86 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule  <!-- 78 gos / 6 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi  <!-- 77 gos / 2 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik  <!-- 74 gos / 2 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi  <!-- 73 gos / 5 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi  <!-- 73 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi  <!-- 68 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda  <!-- 63 gos / 3 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi  <!-- 62 gos / 2 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu  <!-- 62 gos / 2 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold  <!-- 61 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi  <!-- 59 gos / 2 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent  <!-- 58 gos / 4 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line  <!-- 58 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari  <!-- 57 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway  <!-- 57 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari  <!-- 55 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari  <!-- 54 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi  <!-- 53 gos / 4 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi  <!-- 51 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri  <!-- 48 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari  <!-- 47 gos / 2 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi  <!-- 47 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-concept  <!-- 42 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri  <!-- 38 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi  <!-- 34 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu  <!-- 34 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu  <!-- 33 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi  <!-- 32 gos / 1 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cagdas-onur-sitesi  <!-- 31 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi  <!-- 29 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent  <!-- 27 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi  <!-- 27 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari  <!-- 25 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza  <!-- 24 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu  <!-- 23 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yeni-botanik-sitesi  <!-- 22 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  <!-- 20 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi  <!-- 18 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi  <!-- 17 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri  <!-- 17 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu  <!-- 16 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari  <!-- 15 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi  <!-- 14 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life  <!-- 13 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi  <!-- 12 gos / 2 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri  <!-- 12 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu  <!-- 12 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi  <!-- 11 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi  <!-- 10 gos / 2 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi  <!-- 10 gos / 0 tik -->
@@ -676,9 +550,6 @@ YOK (canlı 404, içerik kaydı yok); 'UNKNOWN' hükmü bundandı. Kota harcanma
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  <!-- 5 gos / 1 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/renk-villalari  <!-- 5 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi  <!-- 3 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/manzara-evleri  <!-- 3 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi  <!-- 3 gos / 0 tik -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari  <!-- 3 gos / 0 tik -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri  <!-- 1 gos / 0 tik -->
 
 ## 90 gunde hic gosterim almamis (77 sayfa) — en sona
@@ -721,24 +592,6 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi
@@ -800,9 +653,7 @@ Talebi olan sayfalar bitmeden buraya kota ayrilmamali.
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri  <!-- 23.08 DİZİNDE (kendiliğinden, tarama 22.08, SERP #2) -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life
 
 ## ADA-TARAMA SIRALAMA KURALI (22.08 gece — İHLAL ETME)
 
