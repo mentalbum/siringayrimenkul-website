@@ -32,7 +32,7 @@ const ozellikler = [
     icon: MapPinIcon,
     baslik: "Mahalle Mahalle Keşfedin",
     aciklama:
-      "Eryaman'ın her mahallesi ve 700'den fazla sitesi için tek tek hazırlanmış rehberler: bloklar, adalar, ulaşım ve yaşam. Bölgenizi tapu kayıtlarına dayanan haritalarla inceleyin.",
+      "Eryaman'ın her mahallesi ve 500'den fazla sitesi için tek tek hazırlanmış rehberler: bloklar, adalar, ulaşım ve yaşam. Bölgenizi tapu kayıtlarına dayanan haritalarla inceleyin.",
     href: "/mahalleler",
     linkYazisi: "Mahalle rehberlerine git",
   },
@@ -519,7 +519,7 @@ export default function HomePage() {
             },
             {
               soru: "Eryaman'da hangi siteleri tanıyorsunuz?",
-              cevap: `Eryaman genelinde 700'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
+              cevap: `Eryaman genelinde 500'den fazla site ve rezidansı kayıt altında tutuyoruz. Web sitemizdeki "Siteler" bölümünden tüm listeyi mahalle mahalle görebilir, arama kutusunu kullanarak aradığınız siteye kolayca ulaşabilirsiniz.`,
             },
           ]}
           />

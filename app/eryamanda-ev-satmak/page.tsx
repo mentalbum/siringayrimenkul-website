@@ -14,7 +14,7 @@ import { organizationRef } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Eryaman'da Evimi Satmak İstiyorum Diyorsanız — Süreci Biz Yönetelim",
   description:
-    "'Eryaman'da evimi satmak istiyorum' diyorsanız doğru yerdesiniz: değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 700'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
+    "'Eryaman'da evimi satmak istiyorum' diyorsanız doğru yerdesiniz: değerlemeden tapuya satışın her adımını yürüten yerel emlakçınız. 500'den fazla siteyi blok blok tanıyoruz. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-satmak" },
 };
 
@@ -125,7 +125,7 @@ export default function EvSatmakPage() {
           bilmiyorum&quot; diyorsanız doğru yerdesiniz. Ev satmak bir ilan verme işi değil, bir süreç yönetimi işidir: doğru fiyat, doğru
           alıcı, güvenli tapu. Eryaman&apos;ın {""}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
-            700&apos;den fazla sitesini
+            500&apos;den fazla sitesini
           </Link>{" "}
           blok blok tanıyan yerel ofis olarak bu sürecin tamamını sizin adınıza yürütüyoruz —
           siz kararları verirsiniz, koşturmayı biz üstleniriz. (Taşınmaz Ticareti Yetki Belgesi

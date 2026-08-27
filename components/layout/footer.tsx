@@ -71,9 +71,9 @@ export function Footer() {
             <Link href="/" className="font-medium text-white/90 hover:text-gold">
               Eryaman emlakçı arayanlar için Şirin Gayrimenkul
             </Link>{" "}
-            — 700&apos;den fazla site ve rezidansı tapu sınırlarıyla haritalayan tek
-            yerel rehber. Evinizi satarken ya da kiraya verirken fiyatı birlikte
-            belirleyelim.
+            — Eryaman&apos;daki 500&apos;den fazla site ve rezidansı tapu sınırlarıyla
+            haritalayan yerel rehberiniz. Evinizi satarken ya da kiraya verirken
+            fiyatı birlikte belirleyelim.
           </p>
         </div>
 
