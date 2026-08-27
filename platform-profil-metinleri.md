@@ -29,20 +29,18 @@
 > politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
 > kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Eryaman'da ev satmanın ya da kiraya vermenin ilk adımı, sitenizi zaten
-tanıyan biriyle konuşmak. Eryaman genelinde 500'den fazla site ve rezidansı
-blok blok, tapu ve ada-parsel düzeyinde kayıt altında tutuyoruz; fiyatı
-bölgede gerçekleşen satış ve kiralamalardan okuyoruz: ilan fiyatı beklentiyi,
-işlem fiyatı gerçeği gösterir. Değerleme görüşmesiyle başlarız; fotoğraf ve
-ilan hazırlığı, alıcı ve kiracı görüşmeleri, tapu veya kira sözleşmesi
-bizde — her adımda düzenli haber veririz. Dileyene 3D sanal tur da
-hazırlarız. Ev arayanları da aynı kayıtlarla doğru siteye yönlendiriyoruz.
-Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'da; uğrayın, evinizi konuşalım.
+Eryaman esnafıyız, ofisimiz Tunahan 4. Etap Çarşı'da. Buradaki siteleri
+blok blok tanırız. Sizi aceleye getirmeyiz, olmayacak söz vermeyiz. Evinizi
+satmak ya da kiraya vermek isterseniz önce gelir evinizi görürüz, değerini
+birlikte konuşuruz; tapuda da sözleşmede de yanınızda oluruz. Ev arayanlara
+da yardımcı oluruz. Yolunuz düşerse uğrayın, bir çayımızı için, evinizi
+konuşalım.
 
-*(716 karakter — sınırın altında; ilk ~250 karakterlik arama önizlemesine
-kanca + "500'den fazla site" kanıtı sığıyor. 5 aday × 3 jüri turundan
-sentez: insan sesli iskelet + "ilan fiyatı beklentiyi, işlem fiyatı gerçeği
-gösterir" aforizması + "sitenizi zaten tanıyan" ikinci-tekil kancası)*
+*(412 karakter — sınırın altında; "aceleye getirmeyiz, olmayacak söz
+vermeyiz" güven cümlesi ilk 250 karakterlik arama önizlemesinin içinde.
+TON KARARI, Özgün 2026-08-27: yoğun profesyonellik/detay RAHATSIZ EDİYOR —
+vitrin metinlerinde sade komşu/esnaf sesi; süreç adımı sayma, aforizma ve
+"ada-parsel" tarzı jargon yok, sayı iddiası gerekmedikçe yok)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
