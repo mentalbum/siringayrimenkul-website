@@ -1,0 +1,3444 @@
+{
+ "_statik": {
+  "dizinsiz": [],
+  "bayat": [
+   [
+    "/etaplar",
+    "2026-08-09",
+    120,
+    "Submitted and indexed"
+   ],
+   [
+    "/siteler",
+    "2026-07-02",
+    237,
+    "Submitted and indexed"
+   ],
+   [
+    "/eryamanda-ev-satmak",
+    "2026-07-20",
+    1,
+    "Submitted and indexed"
+   ],
+   [
+    "/araclar/kira-artisi-hesaplama",
+    "2026-07-20",
+    151,
+    "Submitted and indexed"
+   ],
+   [
+    "/araclar/tapu-harci-hesaplama",
+    "2026-07-19",
+    228,
+    "Submitted and indexed"
+   ],
+   [
+    "/araclar/emlak-komisyonu-hesaplama",
+    "2026-07-20",
+    158,
+    "Submitted and indexed"
+   ],
+   [
+    "/araclar/site-karsilastirma",
+    "2026-07-30",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/sozluk",
+    "2026-07-14",
+    5,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/ev-degerleme",
+    "2026-08-16",
+    264,
+    "Submitted and indexed"
+   ],
+   [
+    "/eryamanda-ev-kiraya-vermek",
+    "2026-08-17",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/araclar",
+    "2026-08-13",
+    20,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/",
+    "2026-08-23",
+    3581,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler",
+    "2026-08-26",
+    2559,
+    "Submitted and indexed"
+   ],
+   [
+    "/eryaman-site-dokusu",
+    "2026-08-23",
+    3,
+    "Submitted and indexed"
+   ],
+   [
+    "/gizlilik",
+    "2026-08-25",
+    12,
+    "Submitted and indexed"
+   ],
+   [
+    "/hakkimizda",
+    "2026-08-26",
+    90,
+    "Submitted and indexed"
+   ],
+   [
+    "/iletisim",
+    "2026-08-21",
+    239,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "altay-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/altay-mahallesi/eryaman-park-evleri",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/vatan-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/altay-mahallesi/arya-nuans-residence",
+    "2026-07-31",
+    111,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/ataturk-sitesi",
+    "2026-07-26",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/cabadag-bloklari",
+    "2026-07-26",
+    44,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/doktorlar-sitesi",
+    "2026-07-26",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/erland-residence",
+    "2026-08-08",
+    320,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/frekans-eryaman",
+    "2026-07-31",
+    97,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/izgi-park-evleri",
+    "2026-08-02",
+    28,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/mesa-bloklari",
+    "2026-07-27",
+    262,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/motto-butik",
+    "2026-07-26",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/oasis-tower",
+    "2026-08-08",
+    173,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/vizyon-prestige",
+    "2026-07-26",
+    173,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/etaplar/1",
+    "2026-08-08",
+    49,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/altay-mahallesi/akturk-bloklari",
+    "2026-08-16",
+    150,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/palmiye-evleri",
+    "2026-08-14",
+    28,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/uzuner-konutlari",
+    "2026-08-11",
+    24,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/altay-mahallesi",
+    "2026-08-23",
+    145,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/address-eryaman",
+    "2026-08-23",
+    695,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/age-bloklari",
+    "2026-08-25",
+    145,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/betontas-bloklari",
+    "2026-08-22",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/firat-life-style-botanik",
+    "2026-08-25",
+    671,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/ilbeyi-sitesi",
+    "2026-08-22",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/kutlutas-sitesi",
+    "2026-08-26",
+    261,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/lila-park",
+    "2026-08-20",
+    11,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/mood-street",
+    "2026-08-21",
+    112,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/pembe-ruya-evleri",
+    "2026-08-19",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/altay-mahallesi/sutek-bloklari",
+    "2026-08-19",
+    181,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "devlet-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/devlet-mahallesi/arslanlar-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/dastarli-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/denizim-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/mavi-koy-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/sedirkent-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/sergah-evleri",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/vatan-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/yesiloz-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/devlet-mahallesi/4-devlet-mahallesi-sitesi",
+    "2026-07-26",
+    79,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/alis-sitesi",
+    "2026-07-29",
+    5,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/betim-sitesi",
+    "2026-07-26",
+    65,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/cagkent-sitesi",
+    "2026-08-09",
+    93,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/cayilkay-sitesi",
+    "2026-07-26",
+    13,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/cinar-sitesi",
+    "2026-07-29",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/gulhayat-sitesi",
+    "2026-07-27",
+    116,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/guneyce-sitesi",
+    "2026-07-26",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/hotki-meydan",
+    "2026-08-01",
+    25,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
+    "2026-07-29",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/mavikent-sitesi",
+    "2026-07-26",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/mil-kooperatifi-sitesi",
+    "2026-07-26",
+    229,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/oray-sitesi",
+    "2026-08-05",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/ozarda-gokturk-sitesi",
+    "2026-07-27",
+    26,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/ozdenizyildizi-sitesi",
+    "2026-07-26",
+    217,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/referans-ankara",
+    "2026-08-05",
+    25,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/sahil-sitesi",
+    "2026-07-27",
+    17,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/selcuklu-sitesi",
+    "2026-07-29",
+    16,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/sozova-sitesi",
+    "2026-07-26",
+    34,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/turgut-aslan-sitesi",
+    "2026-07-26",
+    88,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/turkkonut-istas-sitesi",
+    "2026-07-26",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi",
+    "2026-07-26",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/yuceyurt-sitesi",
+    "2026-07-30",
+    23,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/devlet-mahallesi/cevizlidere-sitesi",
+    "2026-08-11",
+    63,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/camdali-sitesi",
+    "2026-08-12",
+    48,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/demirkent-sitesi",
+    "2026-08-14",
+    72,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/ornek-ari-sitesi",
+    "2026-08-18",
+    320,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/oz-gimat-sitesi",
+    "2026-08-12",
+    33,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi",
+    "2026-08-14",
+    32,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/devlet-mahallesi",
+    "2026-08-23",
+    187,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/asiyan-sitesi",
+    "2026-08-26",
+    134,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/bayrak-sitesi",
+    "2026-08-21",
+    84,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi",
+    "2026-08-26",
+    163,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/eryaman-royal-city",
+    "2026-08-25",
+    228,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/ikizler-sitesi",
+    "2026-08-19",
+    189,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/sari-cinar-sitesi",
+    "2026-08-26",
+    136,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/tes-is-bloklari",
+    "2026-08-27",
+    96,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi",
+    "2026-08-27",
+    0,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "eryaman-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/eryaman-mahallesi/akkonaklar-sitesi",
+    "2026-08-01",
+    28,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
+    "2026-07-26",
+    241,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/bahar-sitesi",
+    "2026-07-27",
+    88,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/basak-sitesi",
+    "2026-07-30",
+    127,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/beyaz-residence",
+    "2026-07-27",
+    60,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/cigdem-sitesi",
+    "2026-07-27",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/dogankaya-sitesi",
+    "2026-07-27",
+    54,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/endora-park",
+    "2026-07-26",
+    120,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/eryaman-evleri",
+    "2026-07-26",
+    22,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/gunotesi-sitesi",
+    "2026-07-26",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/hassas-cizgi-sitesi",
+    "2026-07-26",
+    56,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/isikkent-sitesi",
+    "2026-07-26",
+    23,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/intes-dogakent-konutlari",
+    "2026-07-26",
+    113,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/kayaevleri-sitesi",
+    "2026-07-26",
+    73,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/kent-konaklari-sitesi",
+    "2026-07-27",
+    54,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/lapis-garden",
+    "2026-08-09",
+    62,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/maximum-konutlari",
+    "2026-07-27",
+    25,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/oyak-sitesi",
+    "2026-07-26",
+    233,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/ozgun-ipek-sitesi",
+    "2026-07-26",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/pasa-konaklari",
+    "2026-07-26",
+    60,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/platin-2-konutlari",
+    "2026-07-27",
+    309,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/platin-konutlari",
+    "2026-07-27",
+    92,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/toki-konutlari",
+    "2026-08-07",
+    6,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+    "2026-07-27",
+    23,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+    "2026-07-26",
+    155,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/eryaman-mahallesi/ankapark-konutlari",
+    "2026-08-17",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/armina-park-evleri",
+    "2026-08-12",
+    19,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/arya-evleri",
+    "2026-08-17",
+    52,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/asm-golt-sitesi",
+    "2026-08-11",
+    111,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/atakent-metro-sitesi",
+    "2026-08-11",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/atakent-sitesi",
+    "2026-08-17",
+    190,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi",
+    "2026-08-18",
+    222,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/ayka-park-sitesi",
+    "2026-08-11",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi",
+    "2026-08-14",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/caglar-sitesi",
+    "2026-08-17",
+    31,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/dogakent-konutlari",
+    "2026-08-14",
+    29,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/elif-elvan-sitesi",
+    "2026-08-15",
+    47,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/gencler-sitesi",
+    "2026-08-16",
+    58,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/ilke-sitesi",
+    "2026-08-12",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/pinar-sitesi",
+    "2026-08-17",
+    5,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/ra-da-life",
+    "2026-08-12",
+    49,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/yesil-manolya-sitesi",
+    "2026-08-16",
+    58,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/eryaman-mahallesi",
+    "2026-08-21",
+    351,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/akasya-evleri",
+    "2026-08-24",
+    107,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/asm-prestij-konutlari",
+    "2026-08-24",
+    74,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/ay-sitesi",
+    "2026-08-24",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/elif-ozgen-sitesi",
+    "2026-08-23",
+    39,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi",
+    "2026-08-26",
+    773,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/eryaman-mahallesi/yeni-yayikli-sitesi",
+    "2026-08-19",
+    46,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "goksu-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/goksu-mahallesi/endora-goksu",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-arma",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-bilge-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/gsv-spor-sitesi",
+    "2026-07-27",
+    0,
+    "Duplicate, Google chose different canonical than user"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/irem-konutlari",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/kafdagi-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/paro-life",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/utkan-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/utku-kent-2-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/goksu-mahallesi/admira-goksu-konutlari",
+    "2026-07-27",
+    93,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/aksafak-sitesi",
+    "2026-07-27",
+    160,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/arissa-goksu",
+    "2026-07-26",
+    232,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/bordo-loca",
+    "2026-07-31",
+    155,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/buse-konutlari",
+    "2026-07-26",
+    460,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/doga-konutlari",
+    "2026-07-28",
+    66,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/enday-sitesi",
+    "2026-07-27",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/finest-bloklari",
+    "2026-07-26",
+    151,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-aura-sitesi",
+    "2026-07-27",
+    37,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-evleri-sitesi",
+    "2026-07-26",
+    21,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-manzara-evleri",
+    "2026-07-27",
+    55,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-vadi-konutlari",
+    "2026-07-27",
+    61,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksupark-konutlari",
+    "2026-07-27",
+    160,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/golkent-1-sitesi",
+    "2026-07-26",
+    103,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/golkent-sitesi",
+    "2026-07-26",
+    33,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/hava-destek-sitesi",
+    "2026-08-07",
+    25,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/havacilar-sitesi",
+    "2026-07-26",
+    9,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari",
+    "2026-07-26",
+    248,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+    "2026-08-02",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+    "2026-07-26",
+    248,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/konum-eryaman",
+    "2026-07-26",
+    262,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/koru-eryaman",
+    "2026-07-27",
+    63,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/ma1-tower",
+    "2026-07-27",
+    10,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/maybak-konutlari",
+    "2026-07-27",
+    121,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/merkez-sitesi",
+    "2026-07-26",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/meydan-eryaman",
+    "2026-08-02",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/mutlu-sitesi",
+    "2026-08-02",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/oyak-goksupark",
+    "2026-07-27",
+    245,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/park-inci-konutlari",
+    "2026-07-27",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi",
+    "2026-07-28",
+    431,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/sergoksu-konutlari",
+    "2026-08-02",
+    48,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
+    "2026-07-27",
+    86,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/selale-evleri-sitesi",
+    "2026-07-26",
+    147,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
+    "2026-07-27",
+    176,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/yeniceri-kule",
+    "2026-07-27",
+    192,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/zirveden-goksu",
+    "2026-07-31",
+    103,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/goksu-mahallesi",
+    "2026-08-17",
+    173,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/agacli-gol-sitesi",
+    "2026-08-11",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/akduzen-sitesi",
+    "2026-08-11",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/angora-sitesi",
+    "2026-08-11",
+    41,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/bahar-sitesi",
+    "2026-08-17",
+    65,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/eceser-sitesi",
+    "2026-08-11",
+    1,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi",
+    "2026-08-18",
+    111,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/havuzlu-evler-sitesi",
+    "2026-08-13",
+    226,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/ilgaz-life",
+    "2026-08-18",
+    149,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/park-evo-konutlari",
+    "2026-08-11",
+    144,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/park-mira-evleri",
+    "2026-08-17",
+    233,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/polsan-1-bahar-sitesi",
+    "2026-08-13",
+    312,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/uzunali-goksu-konutlari-2",
+    "2026-08-16",
+    115,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/yesil-gol-sitesi",
+    "2026-08-14",
+    180,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/goksu-mahallesi/alina-konutlari",
+    "2026-08-20",
+    147,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/evinora-sitesi",
+    "2026-08-26",
+    87,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/kasmir-gol-evleri",
+    "2026-08-19",
+    87,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/mercan-smart-house",
+    "2026-08-19",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/sude-konutlari",
+    "2026-08-24",
+    125,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/tulip-life",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/uzunali-goksu-konutlari",
+    "2026-08-25",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/goksu-mahallesi/yeniguc-sitesi-eryaman",
+    "2026-08-21",
+    84,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "guzelkent-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/guzelkent-mahallesi/ak-91-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/altay-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/arzutas-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/dogus-91-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ekin-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/elele-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gercek-92-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gordogu-sen-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gozde-2-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/kurtulus-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/kusburnu-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/master-kent-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/meltem-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/mesa-calisanlari-kooperatifi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/selale-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/seniz-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yukselay-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
+    "2026-07-26",
+    78,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/aknergiz-sitesi",
+    "2026-07-29",
+    10,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/aksu-sitesi",
+    "2026-07-26",
+    7,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/anadolu-sitesi",
+    "2026-07-27",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/angora-sitesi",
+    "2026-07-27",
+    19,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/anka-2001-sitesi",
+    "2026-07-26",
+    79,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/asilkent-sitesi",
+    "2026-07-26",
+    62,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
+    "2026-07-27",
+    22,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/cagdas-sistem-sitesi",
+    "2026-07-26",
+    33,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi",
+    "2026-07-26",
+    70,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/durtas-91-sitesi",
+    "2026-07-26",
+    31,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/eczacilar-sitesi",
+    "2026-08-07",
+    37,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
+    "2026-07-26",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/erkent-sitesi",
+    "2026-07-26",
+    142,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/eryapi-sitesi",
+    "2026-07-26",
+    70,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/evrimkent-sitesi",
+    "2026-07-26",
+    69,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gozde-91-sitesi",
+    "2026-07-26",
+    81,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gulenkent-sitesi",
+    "2026-07-26",
+    18,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
+    "2026-08-09",
+    103,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/kucuk-ankara-villalari",
+    "2026-08-07",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/mesa-sitesi",
+    "2026-07-26",
+    7,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/metro-yasam-sitesi",
+    "2026-07-27",
+    79,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi",
+    "2026-07-26",
+    70,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
+    "2026-07-26",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/pinarkent-91-sitesi",
+    "2026-07-26",
+    18,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
+    "2026-07-29",
+    28,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ritim-eryaman",
+    "2026-07-29",
+    33,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/safi-apak-sitesi",
+    "2026-07-27",
+    75,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/sahinbey-sitesi",
+    "2026-07-26",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yayikli-2-sitesi",
+    "2026-07-26",
+    27,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi",
+    "2026-07-25",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yesimkent",
+    "2026-07-26",
+    31,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/guzelkent-mahallesi/ankolular-sitesi",
+    "2026-08-17",
+    2,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/boyut-sitesi",
+    "2026-08-17",
+    61,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi",
+    "2026-08-16",
+    13,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gardenya-sitesi",
+    "2026-08-17",
+    123,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gokkusagi-sitesi",
+    "2026-08-15",
+    56,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
+    "2026-08-17",
+    95,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/korukent-sitesi",
+    "2026-08-17",
+    29,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/portakal-cicegi-2-sitesi",
+    "2026-08-17",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/postakent-sitesi",
+    "2026-08-16",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/sirin-91-sitesi",
+    "2026-08-14",
+    28,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/tez-konak-sitesi",
+    "2026-08-17",
+    67,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/guzelkent-mahallesi",
+    "2026-08-25",
+    127,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/cankaya-vefa-sitesi",
+    "2026-08-20",
+    77,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/didem-sitesi",
+    "2026-08-19",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/erenkoy-sitesi",
+    "2026-08-25",
+    16,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/goksu-sitesi",
+    "2026-08-22",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/gozde-1-sitesi",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/karasimsek-sitesi",
+    "2026-08-24",
+    55,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/kardelen-sitesi",
+    "2026-08-26",
+    9,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/kosk-sitesi",
+    "2026-08-19",
+    55,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
+    "2026-08-26",
+    82,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/renk-villalari",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/ulas-sitesi",
+    "2026-08-25",
+    41,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yeni-isikent-sitesi",
+    "2026-08-19",
+    58,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yenigun-isigi-sitesi",
+    "2026-08-25",
+    64,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/guzelkent-mahallesi/yesil-guven-kent",
+    "2026-08-21",
+    60,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "sehit-osman-avci-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/address-goksu",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/gode-yasam-konutlari",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/ictas",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi",
+    "2026-08-02",
+    53,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+    "2026-07-26",
+    633,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/atalay-sitesi",
+    "2026-07-27",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi",
+    "2026-07-26",
+    22,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/cinar-sitesi",
+    "2026-07-27",
+    112,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/dalgic-residence",
+    "2026-07-26",
+    35,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi",
+    "2026-07-27",
+    302,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+    "2026-07-27",
+    64,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi",
+    "2026-08-04",
+    43,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/garden-zirve",
+    "2026-07-26",
+    61,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit",
+    "2026-07-26",
+    93,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/gungorler-tower",
+    "2026-08-02",
+    35,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence",
+    "2026-07-26",
+    359,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/intes-sitesi",
+    "2026-07-28",
+    82,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/karma-modern",
+    "2026-08-09",
+    274,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/kazim-sari-sitesi",
+    "2026-08-08",
+    51,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/lale-kent-sitesi",
+    "2026-07-29",
+    21,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/metropark-plus",
+    "2026-08-05",
+    145,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari",
+    "2026-08-08",
+    563,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/nefeskent-sitesi",
+    "2026-08-02",
+    32,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/neva-butik-home",
+    "2026-08-02",
+    96,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+    "2026-07-26",
+    171,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans",
+    "2026-08-02",
+    260,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/tan-yildizi-sitesi",
+    "2026-07-27",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/vera-city",
+    "2026-07-27",
+    236,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/yazici-modern",
+    "2026-07-26",
+    108,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/z-yayla-konutlari",
+    "2026-07-26",
+    34,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/zekioglu-rezidans",
+    "2026-07-27",
+    96,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/etaplar/2",
+    "2026-08-08",
+    36,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bordo-life-residence",
+    "2026-08-17",
+    302,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari",
+    "2026-08-17",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
+    "2026-08-17",
+    65,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-2",
+    "2026-08-17",
+    58,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/goksukent-sitesi",
+    "2026-08-13",
+    230,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/happy-life-residence",
+    "2026-08-13",
+    163,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/izo-ser-residence",
+    "2026-08-11",
+    22,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi",
+    "2026-08-17",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri",
+    "2026-08-14",
+    170,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/koz-modern",
+    "2026-08-18",
+    770,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+    "2026-08-17",
+    1206,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/soyak-sitesi",
+    "2026-08-17",
+    7,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/tureli-residence",
+    "2026-08-11",
+    107,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi",
+    "2026-08-26",
+    401,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/75-yil-sitesi",
+    "2026-08-25",
+    31,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari",
+    "2026-08-21",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi",
+    "2026-08-26",
+    176,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri",
+    "2026-08-24",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence",
+    "2026-08-21",
+    457,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/daldikenler-yasemin-evleri-sitesi",
+    "2026-08-21",
+    152,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/goldekent-sitesi",
+    "2026-08-20",
+    360,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence",
+    "2026-08-27",
+    203,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi",
+    "2026-08-25",
+    153,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/metropark-concept",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/sehit-osman-avci-mahallesi/odevci-sitesi",
+    "2026-08-25",
+    31,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "seker-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/seker-mahallesi/akdal-residence",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/altas-relax-line",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/diamond-residence",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/izoser-residence",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari",
+    "2026-07-26",
+    288,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/hill-tower",
+    "2026-07-31",
+    295,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/oasis-rezidans",
+    "2026-07-31",
+    224,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/rainbow-sitesi",
+    "2026-07-29",
+    10,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/seker-mahallesi",
+    "2026-08-15",
+    62,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/address-enda",
+    "2026-08-18",
+    10,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/altas-rezidans",
+    "2026-08-17",
+    46,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari",
+    "2026-08-17",
+    374,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/golden-life-residence",
+    "2026-08-17",
+    60,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/volga-residence",
+    "2026-08-11",
+    156,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/seker-mahallesi/meydan-ada-sitesi",
+    "2026-08-22",
+    204,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/meydan-cadde",
+    "2026-08-21",
+    71,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seker-mahallesi/zirve-loft",
+    "2026-08-24",
+    316,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "seyh-samil-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/seyh-samil-mahallesi/camlica-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/kuryap-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/liderkent",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/onur-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ozanadolu",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yagan-kent",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/zadegan-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/seyh-samil-mahallesi/ak-kent-sitesi",
+    "2026-07-26",
+    8,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+    "2026-07-26",
+    184,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/baris-sitesi",
+    "2026-08-03",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi",
+    "2026-07-26",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/caglar-emin-evleri",
+    "2026-07-26",
+    88,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/demirel-park-evleri",
+    "2026-08-08",
+    304,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
+    "2026-07-26",
+    16,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ilksebat-sitesi",
+    "2026-07-26",
+    6,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/mavera-sitesi",
+    "2026-07-26",
+    27,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/melis-sitesi",
+    "2026-07-27",
+    110,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/nisan-sitesi",
+    "2026-07-26",
+    53,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+    "2026-07-28",
+    23,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+    "2026-07-26",
+    23,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/selinkent-sitesi",
+    "2026-07-26",
+    6,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi",
+    "2026-07-26",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/taniskent-sitesi",
+    "2026-07-26",
+    40,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/tugce-kent-sitesi",
+    "2026-07-26",
+    91,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/turkuaz-sitesi",
+    "2026-07-26",
+    35,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/umar-sitesi",
+    "2026-07-26",
+    216,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/uzunbey-sitesi",
+    "2026-07-27",
+    13,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+    "2026-07-27",
+    9,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/etaplar/3",
+    "2026-08-08",
+    43,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/seyh-samil-mahallesi",
+    "2026-08-11",
+    101,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/borankent",
+    "2026-08-16",
+    8,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/duskent-sitesi",
+    "2026-08-17",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/genc-efes-sitesi",
+    "2026-08-17",
+    48,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ictas-bloklari",
+    "2026-08-14",
+    21,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ilk-umut-sitesi",
+    "2026-08-12",
+    27,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ilona-konutlari",
+    "2026-08-17",
+    131,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/kackar-sitesi",
+    "2026-08-17",
+    1,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/lider-yasam-evleri",
+    "2026-08-14",
+    50,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/oz-tamer-sitesi",
+    "2026-08-18",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/ozahikent-sitesi",
+    "2026-08-12",
+    22,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/sutek-bloklari",
+    "2026-08-10",
+    61,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/tekser-bloklari",
+    "2026-08-18",
+    141,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/tepe-bloklari",
+    "2026-08-11",
+    25,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/umut-sitesi",
+    "2026-08-11",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yayginkent-sitesi",
+    "2026-08-14",
+    10,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/seyh-samil-mahallesi/acar-sitesi",
+    "2026-08-26",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/alarko-bloklari",
+    "2026-08-24",
+    276,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/eston-1-bloklari",
+    "2026-08-19",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/eston-bloklari",
+    "2026-08-25",
+    114,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/gul-sitesi",
+    "2026-08-23",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/inci-park-evleri",
+    "2026-08-23",
+    86,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/serender-sitesi",
+    "2026-08-26",
+    10,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi",
+    "2026-08-24",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/unsal-rezidans",
+    "2026-08-26",
+    86,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yardimci-bloklari",
+    "2026-08-19",
+    26,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yeni-burak-sitesi",
+    "2026-08-26",
+    49,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi",
+    "2026-08-23",
+    59,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "tunahan-mahallesi": {
+  "dizinsiz": [],
+  "bayat": [
+   [
+    "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
+    "2026-08-09",
+    115,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/ozar-sitesi",
+    "2026-08-09",
+    307,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/su-damlasi-sitesi",
+    "2026-07-29",
+    122,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/tunahan-sitesi",
+    "2026-07-26",
+    10,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/tunahan-mahallesi",
+    "2026-08-17",
+    44,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/dema-park",
+    "2026-08-15",
+    230,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/neopolitan-eryaman",
+    "2026-08-14",
+    66,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/sarigul-sitesi",
+    "2026-08-18",
+    315,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/tunahan-mahallesi/age-sitesi",
+    "2026-08-21",
+    436,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/akturk-sitesi",
+    "2026-08-20",
+    12,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/camli-klima-bloklari",
+    "2026-08-23",
+    4,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/canberk-sitesi",
+    "2026-08-20",
+    579,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/elit-yasam-evleri",
+    "2026-08-21",
+    89,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/gokdemir-premium",
+    "2026-08-21",
+    277,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari",
+    "2026-08-26",
+    94,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/ilgazlar-sitesi",
+    "2026-08-20",
+    2,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/klima-bloklari",
+    "2026-08-23",
+    100,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/kur-sitesi-46496-ada",
+    "2026-08-20",
+    65,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/mavicam-sitesi",
+    "2026-08-20",
+    664,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/metromall-sitesi",
+    "2026-08-21",
+    182,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/okyanus-plaza",
+    "2026-08-20",
+    2,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/oztas-sitesi",
+    "2026-08-26",
+    62,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/soyak-sitesi",
+    "2026-08-21",
+    60,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/stfa-bloklari",
+    "2026-08-22",
+    56,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/sutek-sitesi",
+    "2026-08-20",
+    227,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/yardimci-bloklari",
+    "2026-08-24",
+    66,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/yuksel-bloklari",
+    "2026-08-23",
+    18,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/etaplar/4",
+    "2026-08-22",
+    103,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/tunahan-mahallesi/etaplar/5",
+    "2026-08-20",
+    186,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "yavuz-selim-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/yavuz-selim-mahallesi/acat-konutlari",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi",
+    "2026-07-26",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
+    "2026-07-27",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+    "2026-07-26",
+    51,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi",
+    "2026-08-02",
+    325,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/doktorlar-sitesi",
+    "2026-07-26",
+    39,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
+    "2026-07-27",
+    84,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/endora-eryaman",
+    "2026-07-26",
+    196,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi",
+    "2026-07-29",
+    13,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/eylul-evleri",
+    "2026-07-26",
+    51,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/genc-avrasya-sitesi",
+    "2026-07-26",
+    78,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
+    "2026-08-07",
+    11,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi",
+    "2026-07-27",
+    44,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
+    "2026-07-30",
+    41,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/guzel-ev-sitesi",
+    "2026-08-03",
+    0,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ilkiz-2-sitesi",
+    "2026-07-26",
+    74,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/kardelen-sitesi",
+    "2026-07-26",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/keyfim-sitesi",
+    "2026-07-26",
+    60,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/kirkayak-sitesi",
+    "2026-07-26",
+    80,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/konut-sitesi",
+    "2026-07-26",
+    12,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/korukent-sitesi",
+    "2026-07-26",
+    1,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
+    "2026-08-03",
+    18,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/metrokent-villalari",
+    "2026-07-26",
+    47,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ozharitacilar-sitesi",
+    "2026-07-26",
+    7,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/sacak-91-sitesi",
+    "2026-08-02",
+    87,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/safir-sitesi",
+    "2026-07-26",
+    106,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
+    "2026-07-26",
+    69,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman",
+    "2026-07-26",
+    347,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
+    "2026-07-26",
+    82,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi",
+    "2026-07-26",
+    194,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+    "2026-07-26",
+    89,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+    "2026-07-26",
+    142,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yuksel-kent-91-sitesi",
+    "2026-07-26",
+    32,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/yavuz-selim-mahallesi",
+    "2026-08-17",
+    183,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/akcakent-87-sitesi",
+    "2026-08-18",
+    68,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
+    "2026-08-12",
+    24,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ayata-kent-sitesi",
+    "2026-08-17",
+    103,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/concept-eryaman",
+    "2026-08-11",
+    44,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/dogakent-camlik-sitesi",
+    "2026-08-17",
+    21,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
+    "2026-08-17",
+    141,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/havayollari-sitesi",
+    "2026-08-10",
+    116,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ilkiz-sitesi",
+    "2026-08-17",
+    32,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/karkoy-villalari",
+    "2026-08-17",
+    88,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/sahil-kent-sitesi",
+    "2026-08-17",
+    115,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/seda-terasevler",
+    "2026-08-16",
+    94,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/serpil-sitesi",
+    "2026-08-18",
+    186,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/turaykent-sitesi",
+    "2026-08-17",
+    14,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari",
+    "2026-08-12",
+    152,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/yukselen-sitesi",
+    "2026-08-11",
+    50,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/yavuz-selim-mahallesi/kardeskent-sitesi",
+    "2026-08-21",
+    119,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/ozenkent-villalari",
+    "2026-08-23",
+    33,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
+    "2026-08-26",
+    20,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/serenkoy-sitesi",
+    "2026-08-20",
+    59,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi",
+    "2026-08-25",
+    343,
+    "Submitted and indexed"
+   ]
+  ]
+ },
+ "yesilova-mahallesi": {
+  "dizinsiz": [
+   [
+    "/mahalleler/yesilova-mahallesi/gokdemir-tower",
+    "-",
+    0,
+    "URL is unknown to Google"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/lokasyon-eryaman",
+    "-",
+    0,
+    "Discovered - currently not indexed"
+   ]
+  ],
+  "bayat": [
+   [
+    "/mahalleler/yesilova-mahallesi/address-yesilova",
+    "2026-07-26",
+    68,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/anka-vega",
+    "2026-07-26",
+    93,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/dogan-city",
+    "2026-07-26",
+    26,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/dogan-life",
+    "2026-07-26",
+    44,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/eryaman-port",
+    "2026-08-06",
+    42,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/green-hill",
+    "2026-08-07",
+    97,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/green-place-residence",
+    "2026-07-26",
+    93,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/kocaklar-tower",
+    "2026-08-07",
+    34,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/lowland-business",
+    "2026-07-26",
+    19,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/meva-sehir",
+    "2026-08-02",
+    680,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/pozitif-life",
+    "2026-07-30",
+    194,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/rema-delux",
+    "2026-07-26",
+    35,
+    "Submitted and indexed"
+   ]
+  ],
+  "orta": [
+   [
+    "/mahalleler/yesilova-mahallesi/barla-konutlari",
+    "2026-08-14",
+    11,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/hotki-ritm",
+    "2026-08-18",
+    59,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/kardelen-sitesi",
+    "2026-08-18",
+    23,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/kayra-loft",
+    "2026-08-15",
+    98,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/may-tower",
+    "2026-08-12",
+    30,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/penta-5",
+    "2026-08-18",
+    138,
+    "Submitted and indexed"
+   ]
+  ],
+  "taze": [
+   [
+    "/mahalleler/yesilova-mahallesi",
+    "2026-08-23",
+    113,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/alpar-sitesi",
+    "2026-08-22",
+    17,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/sakalar-tower",
+    "2026-08-20",
+    241,
+    "Submitted and indexed"
+   ],
+   [
+    "/mahalleler/yesilova-mahallesi/sertower-busidence",
+    "2026-08-26",
+    122,
+    "Submitted and indexed"
+   ]
+  ]
+ }
+}
