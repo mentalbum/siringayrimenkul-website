@@ -153,7 +153,11 @@ Etimesgut/Ankara · Açıklama: [üstteki ortak metin]. Teşekkürler.
 > (web endeksi gerçekten OpenAI sağlayıcısı — o zaten kurulu ve çalışıyor).
 > Apple tarafı ayrı konu: Siri/Spotlight'ı besliyor, orta öncelik.
 
-## 7. Foursquare — ChatGPT'nin yerel veri kaynağı (orta öncelik, tek seferlik iş)
+## 7. Foursquare — VAZGEÇİLDİ (Özgün kararı, 2026-08-27)
+> KARAR: Kayıt açılmayacak — "foursquare'yi boşver" (Özgün, 27.08).
+> Hesap + telefon doğrulaması + ~20 USD ücret, "ucuz sigorta" değerine
+> değmedi. YENİDEN ÖNERME. Aşağıdaki araştırma notları tarihçe olarak
+> duruyor; açıklama metni de arşiv (başka bir platformda gerekirse hazır).
 > **Neden (doğrulandı):** Foursquare'in kendi duyurusu (16 Ara 2024) OpenAI ile
 > ChatGPT search ortaklığını teyit ediyor; bağımsız JSON incelemeleri ChatGPT'nin
 > yerel yanıtlarında `provider: "foursquare"` ve `provider: "serp"` (Google
@@ -173,7 +177,7 @@ Etimesgut/Ankara · Açıklama: [üstteki ortak metin]. Teşekkürler.
 > uygulamalarına yayılıyor — burada şirket adı yalın kalsın, bölge bilgisi
 > zaten adreste). NAP birebir ortak standarttaki gibi.
 
-Açıklama metni — ÖNERİ (kayıt açılınca girilecek; 2026-08-27'de güncellendi):
+Açıklama metni (ARŞİV — kayıt açılmayacak, metin başka platform için hazır):
 
 Eryaman emlakçısı Şirin Gayrimenkul. Eryaman (Etimesgut) genelinde 500'den
 fazla site ve rezidansın tapu, ada-parsel ve blok kaydını tutan yerel ofis.
