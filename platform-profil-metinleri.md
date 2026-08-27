@@ -85,15 +85,55 @@ siteyi blok blok tanıyan yerel destek. Yetki Belgesi No: 0603771 ·
 ## 4. TikTok bio (80 karakter sınırı) — MEVCUT HÂLİ ZATEN DOĞRU (dokunma)
 Şirin Gayrimenkul / Eryaman Emlakçı
 
-## 5. bulurum.com + sektortanitim.com açıklaması — ÖNERİ (kayıtlar bekliyor)
+## 5. bulurum.com + sektortanitim.com açıklaması
 > Kategori: Emlak / Emlakçılar — Etimesgut, Ankara
-> Metin 2026-08-27'de güncellendi (720 → 500'den fazla). Kayıt açılınca
-> başlığı UYGULANDI (tarih) yap.
+> Metin 2026-08-27'de güncellendi (720 → 500'den fazla).
+>
+> SAHA BULGULARI (2026-08-27 kayıt denemesi):
+> - **sektortanitim.com — BLOKE:** firma-ekle formu (üyeliksiz, CAPTCHA'sız)
+>   baştan sona dolduruldu; sunucu "bu telefon/e-posta/web ile daha önce
+>   kayıt yapılmış" diye reddetti ("Ticari ve Endüstriyel Hizmetler"
+>   kategorisinde eski bir kayıt var — sitede yayında DEĞİL, aramada
+>   çıkmıyor; muhtemelen onaysız/uykuda). Çözüm: bilgi@sektortanitim.com /
+>   0850 302 2009'a mevcut kaydı güncelletme talebi (taslak aşağıda).
+>   Formu farklı telefon/e-postayla tekrar doldurup mükerrer kayıt AÇMA.
+> - **bulurum.com — öz-servis kayıt YOK:** sitede "firma ekle" akışı
+>   bulunmuyor (11880/BN Telekom rehberi); iletişim formu reCAPTCHA'lı.
+>   Kanal: info@bulurum.com (taslak aşağıda) veya 212 411 70 00.
+>   Aramada kayıtlı değiliz (tek sonuç alakasız "Hanım Emlak", Çankaya).
+
+Rehber açıklama metni (iki dizin için ortak):
 
 Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut Eryaman bölgesinde satılık ve
 kiralık konut danışmanlığı. 500'den fazla site ve rezidansın tapu, ada-parsel
 ve blok kaydını tutan yerel ofis. Ev sahiplerine satış ve kiralama sürecinde
 uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
+
+**E-POSTA TASLAĞI 1 — bilgi@sektortanitim.com (Özgün gönderecek):**
+
+Konu: Mevcut firma kaydı güncelleme ve yayına alma talebi — Şirin Gayrimenkul
+
+Merhaba, sektortanitim.com/firma-ekle üzerinden firmamızı eklemek istedik;
+form, telefon/e-posta/web bilgilerimizle daha önce kayıt yapıldığı uyarısını
+veriyor ("Ticari ve Endüstriyel Hizmetler" kategorisinde görünüyor) ancak bu
+kayıt sitenizde yayında değil. Eski kaydın aşağıdaki güncel bilgilerle
+güncellenip yayına alınmasını rica ederiz:
+Firma: Şirin Gayrimenkul | Eryaman Emlakçı · Yetkili: Özgün Şirin ·
+Tel: 0532 363 96 60 · Web: www.siringayrimenkul.com · Adres: Tunahan Mah.
+208. Sokak No: 4/59, 4. Etap Çarşı, 06824 Etimesgut/Ankara · Sektör:
+İnşaat - Emlak - Mühendislik → Emlak Danışmanı · Tanıtım: [üstteki ortak
+metin]. Teşekkürler.
+
+**E-POSTA TASLAĞI 2 — info@bulurum.com (Özgün gönderecek):**
+
+Konu: Ücretsiz firma kaydı talebi — Şirin Gayrimenkul (Etimesgut/Ankara)
+
+Merhaba, bulurum.com'da firmamız için ücretsiz giriş kartı oluşturmak
+istiyoruz. Bilgiler: Firma: Şirin Gayrimenkul · Kategori: Emlakçılar /
+Emlak Danışmanlığı · Tel: 0532 363 96 60 · Web: www.siringayrimenkul.com ·
+Adres: Tunahan Mah. 208. Sokak No: 4/59, 4. Etap Çarşı, 06824
+Etimesgut/Ankara · Açıklama: [üstteki ortak metin]. Teşekkürler.
+Özgün Şirin — Şirin Gayrimenkul
 
 ## 6. Bing Places + Apple Business Connect
 > İkisi de GBP bilgileriyle birebir aynı doldurulmalı (NAP tutarlılığı).
