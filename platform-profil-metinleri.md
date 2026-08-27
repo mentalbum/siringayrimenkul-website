@@ -18,17 +18,28 @@
 
 ## 1. Google Business Profile — işletme açıklaması (kopyala-yapıştır)
 > Konum: GBP paneli → Profili düzenle → Açıklama (750 karakter sınırı)
+> DURUM (2026-08-27): Panele girilen açıklama Google tarafından
+> "Onaylanmayan" (politika ihlali) olarak REDDEDİLDİ. Muhtemel tetikleyiciler:
+> "ücretsiz ev değerleme" (açıklamada promosyon/teklif odağı yasak,
+> support.google.com/business/answer/3038177) ve 13 mahalle adının art arda
+> listelenmesi (anahtar kelime yığma). Aşağıdaki temiz metin bu redde göre
+> hazırlandı; GBP'ye girildiğinde bu notu "UYGULANDI (tarih)" yap.
+> ESKİ TASLAKLARI KULLANMA: "720'den fazla", "14 mahalle", "konut hafızası",
+> telefon numarası ve "ücretsiz değerleme" içeren önceki metinler hem Google
+> politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
+> kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut ve Yenimahalle'nin 14
-mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok
-bilgisini kayıt altında tutuyoruz — Eryaman'ın konut hafızası. Evinizi
-satarken veya kiraya verirken fiyatı ilanlardan değil, sitenizi blok blok
-tanıyan yerel emlakçınızla gerçekleşen satışlardan okuyun. Taşınmaz Ticareti
-Yetki Belgesi No: 0603771. Değerleme görüşmesi için telefon veya WhatsApp:
-0 (532) 363 96 60. Web sitemizde her sitenin tapu kimliği ve harita sınırı
-herkese açık.
+Şirin Gayrimenkul, Ankara Eryaman'da (Etimesgut) satılık ve kiralık konut
+işlemlerinde ev sahiplerinin yanında olan yerel bir gayrimenkul ofisidir.
+Evinizi satmayı ya da kiraya vermeyi düşünüyorsanız süreci bir değerleme
+görüşmesiyle başlatıyoruz; pazarlama, alıcı ve kiracı görüşmeleri ile tapu
+veya sözleşme aşamalarını düzenli bilgilendirmeyle yürütüyoruz. Eryaman
+genelinde 500'den fazla site ve rezidansı kayıt altında tutan bölge
+bilgimizle hizmet veriyoruz. Ev arayanlar da güncel portföy için ofisimize
+başvurabilir. Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'dadır.
 
-*(≈600 karakter — sınırın altında)*
+*(618 karakter — sınırın altında; ilk ~250 karakter arama önizlemesinde
+görünür, ana mesaj başta)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
