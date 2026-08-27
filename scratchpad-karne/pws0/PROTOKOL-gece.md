@@ -287,3 +287,9 @@ sıramız Local Falcon usulü, ücretsiz ölçülsün. Talimat: `BOLGE-TURU.md`.
   google.com'a 403 veriyor. Bu tur YALNIZ ev kanalından koşulur.
 - Tur tamamlanınca `python3 karne-bolge.py` çıktısı gece-log'a eklenir ve bu
   madde "TAMAMLANDI <tarih>" diye işaretlenir — tekrarı ancak Özgün isterse.
+
+## 2026-08-27 — Mahalle-mahalle tur (Özgün isteği): Tunahan TAM, Altay YARIM
+Tunahan 28/28 ölçüldü (ilk3 22, örn. Gökdemir+Özar organik 1; tunahan-sitesi ilk 10 dışı).
+Altay 12/28'de reCAPTCHA duvarı (40. günlük ölçümde — eşik yine düşük seyretti).
+Kalan 16 Altay sorgusu + 9 mahalle YARIN kaldığı yerden (tur-altay-2708.json[12:]).
+Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeker → Şeyh Şamil → YS → Yeşilova.
