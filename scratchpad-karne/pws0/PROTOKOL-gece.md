@@ -287,3 +287,16 @@ sıramız Local Falcon usulü, ücretsiz ölçülsün. Talimat: `BOLGE-TURU.md`.
   google.com'a 403 veriyor. Bu tur YALNIZ ev kanalından koşulur.
 - Tur tamamlanınca `python3 karne-bolge.py` çıktısı gece-log'a eklenir ve bu
   madde "TAMAMLANDI <tarih>" diye işaretlenir — tekrarı ancak Özgün isterse.
+
+## 2026-08-27 — Mahalle-mahalle tur (Özgün isteği): Tunahan TAM, Altay YARIM
+Tunahan 28/28 ölçüldü (ilk3 22, örn. Gökdemir+Özar organik 1; tunahan-sitesi ilk 10 dışı).
+Altay 12/28'de reCAPTCHA duvarı (40. günlük ölçümde — eşik yine düşük seyretti).
+Kalan 16 Altay sorgusu + 9 mahalle YARIN kaldığı yerden (tur-altay-2708.json[12:]).
+Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeker → Şeyh Şamil → YS → Yeşilova.
+> 27.08 (2. duvar): Devlet 28/45'te ikinci reCAPTCHA (günlük 85. ölçüm). Kalan 17 Devlet
+> sorgusu (tur-devlet-2708.json[28:]) + 7 mahalle 28.08'e. Bugün ölçülen: Tunahan 28 TAM,
+> Altay 28 TAM, Devlet 28 yarım.
+> 27.08 (3): Sekme-yenileme taktiği (Özgün önerisi) 3. duvardan sonra +46 ölçüm kazandırdı
+> (Devlet 45/45 TAMAMLANDI + Eryaman 25/51). 4. duvar kalıcılaştı: yeni sekme + 30sn mola
+> sadece 1 sorgu geçiriyor, sonraki anında CAPTCHA. Günlük toplam ~131 ölçüm — kanal bitti.
+> 28.08: Eryaman 25'ten (Gençler Sitesi) devam → Göksu → Güzelkent → ŞOA → Şeker → ŞŞ → YS → Yeşilova.

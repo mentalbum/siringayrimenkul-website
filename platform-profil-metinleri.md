@@ -18,17 +18,35 @@
 
 ## 1. Google Business Profile — işletme açıklaması (kopyala-yapıştır)
 > Konum: GBP paneli → Profili düzenle → Açıklama (750 karakter sınırı)
+> DURUM (2026-08-27): Panele girilen açıklama Google tarafından
+> "Onaylanmayan" (politika ihlali) olarak REDDEDİLDİ. Muhtemel tetikleyiciler:
+> "ücretsiz ev değerleme" (açıklamada promosyon/teklif odağı yasak,
+> support.google.com/business/answer/3038177) ve 13 mahalle adının art arda
+> listelenmesi (anahtar kelime yığma). Aşağıdaki temiz metin bu redde göre
+> hazırlandı; GBP'ye girildiğinde bu notu "UYGULANDI (tarih)" yap.
+> ESKİ TASLAKLARI KULLANMA: "720'den fazla", "14 mahalle", "konut hafızası",
+> telefon numarası ve "ücretsiz değerleme" içeren önceki metinler hem Google
+> politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
+> kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut ve Yenimahalle'nin 14
-mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok
-bilgisini kayıt altında tutuyoruz — Eryaman'ın konut hafızası. Evinizi
-satarken veya kiraya verirken fiyatı ilanlardan değil, sitenizi blok blok
-tanıyan yerel emlakçınızla gerçekleşen satışlardan okuyun. Taşınmaz Ticareti
-Yetki Belgesi No: 0603771. Değerleme görüşmesi için telefon veya WhatsApp:
-0 (532) 363 96 60. Web sitemizde her sitenin tapu kimliği ve harita sınırı
-herkese açık.
+Doğru ev, doğru insanını bulur; biz bu buluşmayı emekle hazırlarız. Şirin
+Gayrimenkul, Eryaman'da yerleşik bir gayrimenkul ofisidir. Buradaki siteleri
+blok blok tanırız; bir evde geçen yılların kıymetini de biliriz. Satılık ve
+kiralık konutta çalışırız; evinizi yerinde görür, değerini birlikte buluruz.
+Size zaman tanırız; sözümüz neyse odur. Tapu ya da kira sözleşmesi
+tamamlanana dek her gelişmeyi sizinle paylaşırız. Ev arayanlara da aynı
+özenle eşlik ederiz. Ofisimiz Tunahan 4. Etap Çarşı'da; kapıdan girdiğinizde
+Eryaman'ı iyi tanıyan biriyle konuşursunuz.
 
-*(≈600 karakter — sınırın altında)*
+*(612 karakter — sınırın altında; lirik açılış + "tanırız/biliriz" paralel
+cümlesi ilk 250 karakterlik arama önizlemesinin içinde (231'de bitiyor).
+TON GEÇMİŞİ, Özgün 2026-08-27, dört tur: (1) bilgi/süreç yığan
+profesyonellik RED ("çok detaylı, rahatlatmıyor"), (2) "esnafıyız/çay"
+samimiyeti RED ("daha profesyonel yazalım"), (3) ölçülü-kurumsal taban
+TAMAM ama kuru bulundu, (4) NİHAİ: aynı ciddiyet zeminine güzellik —
+"daha güzel yazalım, çekim yasasına güveniyorum, okuyan mest olsun":
+olumlama dili (yasak/olumsuzlama cümlesi yok), tek lirik açılış, kitsch
+kalıpları yok, profesyonel zemin korunur)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149

@@ -339,3 +339,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > adresi botun 410'u hızla görmesi için bilerek tutuldu. Bu mahallelere bir
 > daha dizin isteği GÖNDERİLMEZ.
 > 27.08 (c) — Akşam penceresi DENENDİ, KAPALI: Endora Park (120) denetlendi ("mevcut", bayat), istek "Kota Aşıldı" ile reddedildi — işaretsiz, sıradaki damlanın ilk adayı. Sabahki 11 istek kayan 24 saatte hâlâ doluluk yaratıyor; 25.08'in çift-pencere deseni bugün tekrarlamadı. Sonraki deneme: 28.08.
+> 27.08 (d) — v4 kuyruğu kuruldu (554 sayfalık tam envanter): 239 bayat, 221'i bekliyor, tepe mia-concept 563 gos. Kota üçüncü kez denendi (mia-concept), yine "Kota Aşıldı" — bugün toplam 11 kabul + 3 ret. 28.08 planı: (1) kota açılınca v4 sırasından damla, (2) Altay'ın kalan 16 SERP sorgusu + Devlet turu.
