@@ -38,42 +38,49 @@ herkese açık.
 
 *(≈600 karakter — sınırın altında)*
 
-## 2. Instagram bio (150 karakter sınırı) — PLATFORMDA ESKİ SÜRÜM YAŞIYOR
+## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-27)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
 > gösterim, "emlakçısı" 0. Etiket/bio/ad alanlarında yalın biçim kullanılır.
 > UYARI: bio'ya TELEFON YAZILMAZ — 7 Ağu'da "dolandırıcılık şüphesi"
 > kısıtlaması tetikledi (itirazla kalktı). İletişim Ara/Mesaj düğmelerinde.
+>
+> DEFTER DÜZELTMESİ (2026-08-27 panel kontrolü): 27.08 öncesi platformda
+> yaşayan bio defterdeki "720+ sitenin tapu ve blok hafızası" kaydı DEĞİLDİ;
+> gerçek eski bio şuydu: "Eryaman emlakçı 🏠 Evinizi satalım, kiraya verelim /
+> Tunahan 4. Etap Çarşı — Etimesgut/Ankara / Yetki Belgesi No: 0603771".
+> Yani bayat sayı/hafıza iddiası canlıda yoktu; defter kaydı gerçeği
+> yansıtmıyormuş.
 
-**Platformda yaşayan metin (UYGULANDI 2026-08-07 — BAYAT: "720+" ve
-"hafıza" iddiası güncel kurallara aykırı):**
-
-Eryaman Emlakçı 🏠 720+ sitenin tapu ve blok hafızası
-Evinizi satalım, kiraya verelim
-Tunahan 4. Etap Çarşı — Yetki No: 0603771
-
-**Yeni metin — ÖNERİ (2026-08-27; Instagram'a girilince üstteki eski kaydı
-sil ve bunu UYGULANDI olarak işaretle):**
+Platformda yaşayan metin (girildi 2026-08-27, "Profil kaydedildi" onayı +
+herkese açık profilde doğrulandı; 143/150):
 
 Eryaman Emlakçı 🏠 Evinizi satalım, kiraya verelim
 500'den fazla site ve rezidans kaydıyla yerel ofis
 Tunahan 4. Etap Çarşı — Yetki No: 0603771
 
-*(≈143 karakter — sınırın altında. Bio bağlantısı:
-https://www.siringayrimenkul.com)*
+*(Bio bağlantısı: https://www.siringayrimenkul.com)*
 
-## 3. Facebook sayfası — Hakkında metni — ÖNERİ (uygulanınca işaretle)
-> Sayfa adı önerisi: "Şirin Gayrimenkul — Eryaman Emlakçı" (aramada ad
-> belirleyici; biçim kararı gereği "emlakçısı" değil **emlakçı**).
-> Kategori: Emlak Acentesi.
-> Metin 2026-08-27'de yeniden yazıldı (eskisi "14 mahalle / 720+ / konut
-> hafızası" diyordu). Facebook'a girilince başlığı UYGULANDI (tarih) yap.
+## 3. Facebook sayfası — Hakkında metni — UYGULANDI (2026-08-27)
+> SAHA GERÇEKLERİ (2026-08-27 panel kontrolü):
+> - Sayfa adı ZATEN "Eryaman Emlakçı Şirin Gayrimenkul"
+>   (facebook.com/eryamanemlakci) — ad önerisi karşılanmış, değişiklik yok.
+>   Kategori: Gayrimenkul Şirketi.
+> - Yeni sayfa arayüzünde uzun "Hakkında/Ek bilgiler" alanı YOK; tek alan
+>   Hakkında → Künye → **Biyografi, 255 karakter sınırlı**. Defterdeki ~390
+>   karakterlik taslak sığmadı; aşağıdaki 241 karakterlik sürüm girildi.
+> - Eski canlı bio da defterden farklıydı (bayat iddia yoktu): "Eryaman
+>   emlakçı Şirin Gayrimenkul. Evinizi satarken ya da kiraya verirken
+>   karşınıza doğru alıcıyı, doğru kiracıyı biz çıkarırız. Yetki Belgesi No:
+>   0603771 · 0 (532) 363 96 60".
+> - "Puan ve değerlendirmeler: Kapalı" duruyor — yorum/puan gizleme
+>   kuralıyla uyumlu, açtırma.
 
-Eryaman emlakçısı Şirin Gayrimenkul. Eryaman genelinde 500'den fazla site ve
-rezidansın tapu, ada-parsel ve blok bilgisini kayıt altında tutuyoruz. Evini
-satmak veya kiraya vermek isteyen ev sahiplerine, siteyi blok blok tanıyan
-yerel emlakçı desteği; süreç bir değerleme görüşmesiyle başlar. Taşınmaz
-Ticareti Yetki Belgesi No: 0603771. Tel/WhatsApp: 0 (532) 363 96 60 ·
-siringayrimenkul.com
+Platformda yaşayan metin (girildi 2026-08-27; 241/255):
+
+Eryaman emlakçısı Şirin Gayrimenkul. 500'den fazla site ve rezidansın tapu ve
+blok kaydını tutuyoruz. Evini satmak veya kiraya vermek isteyen ev sahiplerine
+siteyi blok blok tanıyan yerel destek. Yetki Belgesi No: 0603771 ·
+0 (532) 363 96 60
 
 ## 4. TikTok bio (80 karakter sınırı) — MEVCUT HÂLİ ZATEN DOĞRU (dokunma)
 Şirin Gayrimenkul / Eryaman Emlakçı
