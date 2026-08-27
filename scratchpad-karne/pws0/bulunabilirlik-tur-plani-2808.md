@@ -56,3 +56,38 @@ ZATEN GİTTİ — kota harcama, yansıma ölç.
 - Devlet cross-ref (iç halkanın en kötüsü: site-adı ilk3 %46, 24 dışarıda)
 - Şeyh Şamil (23 dışarıda) + Yavuz Selim (22 dışarıda) cross-ref
 - Etimesgut katmanı teşhis dosyası (SERP dökümü kanal açılınca 1-2 sorgu)
+
+## E. TUR 2 SONUÇLARI (27.08 gece — Devlet + Şeyh Şamil + Yavuz Selim)
+
+### KARNE DÜZELTMESİ (önemli)
+- DEVLET: 24 "ilk-10-dışı"nın 12'si HAYALET (11.08 eski tohum listesi,
+  sayfa hiç olmamış: atk-vadi, doga, ege, emlak-bankasi, huzur, kardelen,
+  miray, oyku, turk-ocagi, umut, denizati, park-vera). Gerçek tablo:
+  44 sorguda ilk3 %59 (%46 değil). Karne betiğine hayalet süzgeci eklenmeli.
+- İlk Bahar Sitesi: yalın sorguyu Google "İlkbahar"a düzeltiyor; Eryaman'lı
+  biçimde 23.08'de #1'iz. Ölçüm kuyruğunda varyant düzeltilmeli, istek İŞE YARAMAZ.
+
+### DEVLET damla listesi (6): selcuklu > alis > guneyce > yeni-huzur-bahcesi
+(tazele; sarı-çınar emsali: 27.08 istek → aynı gün #2) + mavi-koy, sedirkent
+(dizin-ekle; adaşsız GÜÇLÜ aday ama "dizinsize kota harcanmaz" kararına
+istisna gerekir — Özgün onayına not düş, o gelene kadar tazele sınıfı önde).
+
+### ŞEYH ŞAMİL damla listesi (talep sıralı): atayildiz (184) > bizim-alperenler
+(114) > melis (110) > ovgu (23) > oz-cozum-kent (23) > selinkent (6) [tazele].
+ÖZEL VAKA: liderkent (59 gos) + yagan-kent (27) — talep tamamen ESKİ slugda,
+ikisi ESKİ ADRESLER birleştirme listesinde YOK; 308/301 doğrulanıp eski-adres
+isteği olarak eklenmeli (protokolde eski adres en üst sırada).
+
+### YAVUZ SELİM: gulvatan (44, tek temiz aday). utku + atadostlar istekleri
+ZATEN GİTTİ (25/27.08) — çift istek atma. EN KRİTİK: endora-eryaman (196 gos)
+— vitrini tutan ata-mahallesi/endora-plus 27.08'de 410 oldu, kendi sayfası
+dışarıda; v4'te ÖNE çekilmeli, üç mükerrer kaydı teke indirilmeli.
+
+### KUYRUK TEMİZLİĞİ (gsc-dizin becerisiyle uygulanacak — 25 kalem)
+Kendiliğinden dizine girmiş/tazelenmiş → DÜŞ: turkkonut-sinem (3 kayıt),
+acar, gul (çift), sumeyra, duskent, kackar, eston (2 kayıt), pasaj (yeniden ölç).
+Çift kayıt → teke indir: dastarli (+ eski slug organik #1, birleştirme takip),
+denizim, sergah, yesiloz, utku, yavuz-selim-sitesi (2), endora-eryaman (3→1).
+Spell-correction → düş/dibe: sitekonut, ilkdogus (aday), ozharitacilar,
+kucukevlerimiz, gulenkent (tur 1). "İstek işe yaramaz" sınıfı → düş: guzel-ev,
+goksu-sitesi (Güzelkent çift ölçüm şüphesi, askıya).
