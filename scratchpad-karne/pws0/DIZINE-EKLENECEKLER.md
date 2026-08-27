@@ -65,10 +65,10 @@ gelince doğrudan ilk 3'e oynar (bugüne kadarki 4/4 dönüşüm tam bu profilde
 trend-life, gul, meydan-ada, caglar-belde). Kalan 89 bayat sayfa (7.486 gos)
 adaş baskılı; onlar bu liste bitince sıraya girer.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- 120 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- 114 gos · kopya 2026-07-26 -->
@@ -120,13 +120,13 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/eser-yapi-sitesi  <!-- 176 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari  <!-- 160 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bordo-loca  <!-- 155 gos · kopya 2026-07-31 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi  <!-- 149 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi  <!-- 147 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence  <!-- 142 gos · kopya 2026-07-26 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/taflan-sitesi  <!-- 141 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi  <!-- 136 gos · kopya 2026-07-25 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi  <!-- 127 gos · kopya 2026-07-30 -->
@@ -359,7 +359,7 @@ sıralı listede zaten bekliyor; oradaki sıra bozulmasın).
 
 SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-29.07'den. Yeniden tarama isteği.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/eylul-evleri
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi
@@ -429,7 +429,7 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07:
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega ← 26.07 (Vega Emlak ofis adaşı da baskın)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-city ← 26.07 (müteahhit IG baskın)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life ← 26.07 (müteahhit sitesi baskın)
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence ← 26.07 (46395-1 ada sayfamız #3 vitrini tutuyor)
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence ← 26.07 (46395-1 ada sayfamız #3 vitrini tutuyor) · 27.08 istek gönderildi
 
 ## ERYAMAN — DİZİNDE AMA BAYAT SİTE SAYFALARI (23.08 SERP turu teşhisi)
 
@@ -453,7 +453,7 @@ DOKUNMA notları: ankapark 17.08 + atakent-sitesi 17.08 TAZE taranmış ama sır
 
 GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08 (18 sayfa):
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari ← 27.07 (neovadi #5 temsil)
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi ← 27.07
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi ← 27.07 · 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/bordo-loca ← 31.07 (Denizli Bordo Loca ofis adaşı baskın)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari ← 28.07 (63381-1 ada #5 vitrin)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/enday-sitesi ← 27.07
@@ -469,7 +469,7 @@ GSC API teyitli; ilk 10 dışılar, kopya 26.07–02.08 (18 sayfa):
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari ← 27.07 (ŞŞ İnci Park adaşı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/selale-evleri-sitesi ← 26.07 (Şelale Emlak adaşı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar ← 27.07 (müteahhit baskın)
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari ← 27.07 (48056-1 ada #3 vitrin)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari ← 27.07 (48056-1 ada #3 vitrin) · 27.08 istek gönderildi
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/zirveden-goksu ← 31.07 (23.08 API teyidi — dünkü hata kapandı)
 
