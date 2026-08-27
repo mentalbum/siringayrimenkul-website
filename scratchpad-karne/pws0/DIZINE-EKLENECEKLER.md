@@ -8,6 +8,12 @@ talep sıralı. [ADAŞ] = yapısal ad-belirsizliği (kazanılabilirlik düşük 
 de tazelik getirir — atlanmaz, sadece beklenti düşük tutulur). Dizinsiz 85 sayfaya
 kota HARCANMAZ (Özgün kararı: doğal sıra). İlk 40 aşağıda; tamamı JSON'da.
 
+SERP-KANITLI EK ÖNCELİK (27.08 turu): talep düşük ama SERP'te ADAŞSIZ olduğu
+hâlde hiç görünmeyen 3 sayfa — dönüşüm potansiyeli yüksek, listede sırası
+gelince ATLANMASIN: devlet/mavi-koy-sitesi, devlet/sedirkent-sitesi,
+devlet/selcuklu-sitesi. Ada-gölgeli taze sayfalar (dema-park, elif-elvan,
+dogankaya, sergah, demirkent) İKİNCİL — bayat listesi bitmeden istek harcanmaz.
+
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari  <!-- 563 gos · tarama 2026-08-08 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari  <!-- 460 gos · tarama 2026-07-26 · ADAŞ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi  <!-- 431 gos · tarama 2026-07-28 -->
