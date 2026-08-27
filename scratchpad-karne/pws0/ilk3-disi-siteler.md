@@ -1,7 +1,7 @@
 # İlk 3'te OLMAYAN site-emlakçı sorguları — 504/504 ölçüldü
 
 - İlk 3'te: **302** | 4-10 arası: **37** | ilk 10'da yok: **165** | ölçülmedi: 0
-- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 33 sorgu hariç): **%63** (297/471)
+- Ham ilk-3 oranı: **%60** | kazanılabilir kümede (yapısal-adaş 36 sorgu hariç): **%63** (297/468)
 - SERP'te görünen 141 sonucumuzun **64** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 77 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
