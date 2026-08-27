@@ -414,7 +414,7 @@ ama acele değil.
 GSC API teyitli; ilk 10 dışılar, kopya 25.07–30.07:
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/guneyce-sitesi ← 26.07 (23.08 API teyidi; SERP #4 eski başlıkla — Güneyce ofis/Güdül adaşı da var)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sahil-sitesi ← 27.07 (YS Sahil Kent adaşı da karışıyor)
-- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 27.08 istek gönderildi ← 25.07 ('Sarıçınar' bitişik varyant adayı)
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sari-cinar-sitesi ← 25.07 ('Sarıçınar' bitişik varyant adayı) · 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sozova-sitesi ← 26.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yeni-huzur-bahcesi-sitesi ← 26.07
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yuceyurt-sitesi ← 30.07 (Sivas Yüceyurt Mah. adaşı baskın)
