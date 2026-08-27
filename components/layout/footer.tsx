@@ -223,27 +223,6 @@ export function Footer() {
                 </li>
               ))}
           </ul>
-          <p
-            role="heading"
-            aria-level={2}
-            className="mt-6 font-heading text-sm font-semibold uppercase tracking-wide text-gold"
-          >
-            Yenimahalle Mahalleleri
-          </p>
-          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2.5">
-            {mahalleler
-              .filter((mahalle) => mahalle.ilce === "Yenimahalle")
-              .map((mahalle) => (
-                <li key={mahalle.slug}>
-                  <Link
-                    href={`/mahalleler/${mahalle.slug}`}
-                    className="text-sm text-white/70 hover:text-gold"
-                  >
-                    {mahalle.isim.replace(/\s*Mahallesi$/, "")}
-                  </Link>
-                </li>
-              ))}
-          </ul>
           {etaplar.length > 0 && (
             <>
               <p

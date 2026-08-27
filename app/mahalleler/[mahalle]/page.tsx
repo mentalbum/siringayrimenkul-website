@@ -28,7 +28,6 @@ import { mahalleTokenlariniAc, yaziTokenlariniAc } from "@/lib/icerik-token";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { bulunmaHali } from "@/lib/turkce";
-import { eryamandaMi } from "@/lib/bolge";
 import { adaOnayliEtap, etapSayfasiVarMi } from "@/lib/etap-onayli";
 
 type Props = {
@@ -103,7 +102,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: {
       absolute: `${baslikIsim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
-    description: `${mahalle.isim} emlakçı arayanlara ${eryamandaMi(mahalle) ? "Eryaman'ın" : "komşu Eryaman'ın"} yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    description: `${mahalle.isim} emlakçı arayanlara Eryaman'ın yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
@@ -283,7 +282,7 @@ export default async function MahallePage({ params }: Props) {
         {/* Bölge etiketi coğrafi ayrıştırma sinyali: "Göksu" Türkiye'de çok
             yerde var; Eryaman/Yenimahalle bağlamı hero'da açıkça durmalı. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          {eryamandaMi(mahalle) ? "Eryaman · Etimesgut · Ankara" : "Yenimahalle · Ankara"}
+          "Eryaman · Etimesgut · Ankara"
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
         <p className="mt-3 text-base leading-relaxed text-body">
@@ -307,19 +306,6 @@ export default async function MahallePage({ params }: Props) {
               </strong>{" "}
               olarak da biliniyor; {mahalle.alternatifAdlar[0]} emlakçısı arıyorsanız da doğru
               yerdesiniz.
-            </>
-          )}
-          {mahalle.ilce === "Yenimahalle" && (
-            <>
-              {" "}
-              {kisaIsim} dahil Yenimahalle tarafındaki tüm siteleri{" "}
-              <Link
-                href="/siteler/yenimahalle"
-                className="font-semibold text-gold-dark hover:underline"
-              >
-                Yenimahalle siteleri listemizde
-              </Link>{" "}
-              bulabilirsiniz.
             </>
           )}
         </p>
@@ -412,7 +398,7 @@ export default async function MahallePage({ params }: Props) {
                 href="/eryamanda-ev-satmak"
                 className="font-semibold text-gold-dark hover:underline"
               >
-                {eryamandaMi(mahalle) ? "Eryaman'da ev satmak" : "ev satış hizmetimiz"}
+                Eryaman&apos;da ev satmak
               </Link>
               {" sayfamızda anlattık. Satış kararının ilk adımı doğru fiyat: "}
               <Link
@@ -436,9 +422,7 @@ export default async function MahallePage({ params }: Props) {
                 href="/eryamanda-ev-kiraya-vermek"
                 className="font-semibold text-gold-dark hover:underline"
               >
-                {eryamandaMi(mahalle)
-                  ? "Eryaman'da evinizi kiraya vermek"
-                  : "kiralama hizmetimiz"}
+                Eryaman&apos;da evinizi kiraya vermek
               </Link>
               {" sayfamızda anlattık. Kira artışı ve boş kalma maliyeti için "}
               <Link href="/araclar" className="font-semibold text-gold-dark hover:underline">
@@ -452,8 +436,8 @@ export default async function MahallePage({ params }: Props) {
         </div>
         {/* Ana sayfaya tek exact çıpa (ChatGPT istişaresi + Özgün onayı, 15.08):
             yalnız 11 Eryaman mahallesi + 5 etap sayfasından; site sayfalarından
-            ve Yenimahalle kolundan BİLEREK verilmez (aşırısı spam sinyali). */}
-        {eryamandaMi(mahalle) && (
+            BİLEREK verilmez (aşırısı spam sinyali). */}
+        {(
           <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted">
             Mahalle fark etmeksizin tüm Eryaman&apos;da aynı ilkelerle çalışıyoruz;
             ofisimizi ve çalışma biçimimizi{" "}
@@ -512,14 +496,7 @@ export default async function MahallePage({ params }: Props) {
           <div className="mt-4">
             <MahalleSitelerBrowser
               siteler={inceltSiteler(siteler)}
-              arsiv={
-                eryamandaMi(mahalle)
-                  ? { etiket: "Eryaman", href: "/siteler" }
-                  : {
-                      etiket: "Yenimahalle (Ata, Susuz, Cumhuriyet)",
-                      href: "/siteler/yenimahalle",
-                    }
-              }
+              arsiv={{ etiket: "Eryaman", href: "/siteler" }}
             />
           </div>
         ) : (
@@ -539,27 +516,13 @@ export default async function MahallePage({ params }: Props) {
         <p className="mt-3 text-base leading-relaxed text-body">
           {/* "/"ye bağlamsal çapa (2026-08-08): iç link denetimi ana sayfaya
               giden tek çapanın "Anasayfa" olduğunu gösterdi; mahalle sayfaları
-              en yüksek tematik akrabalıklı orta katman. Yenimahalle kolunda
-              çapa "komşudaki Eryaman'da" — "Eryaman X" yasağına takılmaz. */}
-          {eryamandaMi(mahalle) ? (
-            <>
-              Ofisimiz Eryaman&apos;da;{" "}
-              <Link href="/" className="font-semibold text-gold-dark hover:underline">
-                Eryaman emlakçısı olarak
-              </Link>{" "}
-              {bulunmaHali(mahalle.isim)} — Etimesgut, Ankara — satılık ve kiralık daire
-              süreçlerini yerinde yürütüyoruz.
-            </>
-          ) : (
-            <>
-              Ofisimiz hemen{" "}
-              <Link href="/" className="font-semibold text-gold-dark hover:underline">
-                komşudaki Eryaman&apos;da
-              </Link>
-              ; {bulunmaHali(mahalle.isim)} — Yenimahalle, Ankara — satılık ve kiralık
-              daire süreçlerini yerinde yürütüyoruz.
-            </>
-          )}{" "}
+              en yüksek tematik akrabalıklı orta katman. */}
+          Ofisimiz Eryaman&apos;da;{" "}
+          <Link href="/" className="font-semibold text-gold-dark hover:underline">
+            Eryaman emlakçısı olarak
+          </Link>{" "}
+          {bulunmaHali(mahalle.isim)} — Etimesgut, Ankara — satılık ve kiralık daire
+          süreçlerini yerinde yürütüyoruz.{" "}
           {/* "emlakçılar" ÇOĞUL biçimi bilinçli ve birebir: "<mahalle> emlakçılar /
               emlakçılar listesi" sorgu ailesi GSC'de görünüyor ama kelime sitede
               hiç geçmiyordu (2026-08-07 tespiti). Doğal cümle içinde tutulmalı. */}

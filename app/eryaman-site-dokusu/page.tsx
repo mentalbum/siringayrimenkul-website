@@ -88,7 +88,7 @@ export default function SiteDokusuPage() {
     "@type": "Dataset",
     name: "Eryaman ve Çevresi Site Dokusu Verisi",
     description:
-      "Eryaman (Etimesgut) ve komşu Yenimahalle mahallelerindeki 700'den fazla konut sitesinin tapu tabanlı yapı verisi: tapu niteliği, kat yapısı, parsel alanı, mahalle dağılımı.",
+      "Eryaman'daki (Etimesgut) 500'den fazla konut sitesinin tapu tabanlı yapı verisi: tapu niteliği, kat yapısı, parsel alanı, mahalle dağılımı.",
     url: `${siteConfig.url}/eryaman-site-dokusu`,
     creator: organizationRef,
     maintainer: { "@id": OZGUN_ID },

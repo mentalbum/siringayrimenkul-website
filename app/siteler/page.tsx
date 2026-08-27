@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import { getSitelerByMahalle, getYayindaMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { SitelerBrowser } from "@/components/site/siteler-browser";
-import { inceltGruplar, sekmeAdlari } from "@/lib/siteler-liste";
-import { SitelerTabs } from "@/components/site/siteler-tabs";
+import { inceltGruplar } from "@/lib/siteler-liste";
 import { siteConfig } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -17,10 +16,7 @@ export const metadata: Metadata = {
 };
 
 export default function SitelerPage() {
-  // Bu sayfa yalnızca Eryaman'ı (Etimesgut) listeler; Yenimahalle tarafındaki
-  // siteler kendi sekmesinde yaşar — Özgün'ün net isteği: iki bölge karışmaz.
   const mahalleler = getYayindaMahalleler()
-    .filter((mahalle) => mahalle.ilce === "Etimesgut")
     .map((mahalle) => ({ mahalle, siteler: getSitelerByMahalle(mahalle.slug) }))
     .filter((entry) => entry.siteler.length > 0);
 
@@ -74,21 +70,8 @@ export default function SitelerPage() {
         </p>
       </header>
 
-      <SitelerTabs aktif="/siteler" />
-
       <div className="mt-8">
-        <SitelerBrowser
-          gruplar={inceltGruplar(mahalleler)}
-          digerSekme={{
-            etiket: "Yenimahalle (Ata, Susuz, Cumhuriyet)",
-            href: "/siteler/yenimahalle",
-            adlar: sekmeAdlari(
-              getYayindaMahalleler()
-                .filter((mahalle) => mahalle.ilce === "Yenimahalle")
-                .map((mahalle) => ({ siteler: getSitelerByMahalle(mahalle.slug) }))
-            ),
-          }}
-        />
+        <SitelerBrowser gruplar={inceltGruplar(mahalleler)} />
       </div>
 
       <script

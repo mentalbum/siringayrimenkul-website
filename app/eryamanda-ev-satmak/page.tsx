@@ -308,20 +308,6 @@ export default function EvSatmakPage() {
                 {i < dizi.length - 2 ? ", " : i === dizi.length - 2 ? " ve " : ""}
               </span>
             ))}
-          ; komşu Yenimahalle tarafında{" "}
-          {getYayindaMahalleler()
-            .filter((m) => m.ilce === "Yenimahalle")
-            .map((m, i, dizi) => (
-              <span key={m.slug}>
-                <Link
-                  href={`/mahalleler/${m.slug}`}
-                  className="font-medium text-navy hover:text-gold-dark hover:underline"
-                >
-                  {m.isim}
-                </Link>
-                {i < dizi.length - 2 ? ", " : i === dizi.length - 2 ? " ve " : ""}
-              </span>
-            ))}
           {" "}için mahalle emlakçınız olarak çalışıyoruz — her mahallenin site envanteri kendi
           rehber sayfasında.
         </p>

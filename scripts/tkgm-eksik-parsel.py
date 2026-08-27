@@ -34,9 +34,6 @@ ADAY_KADASTRO = {
     "sehit-osman-avci-mahallesi": [124128, 124123],
     "seker-mahallesi": [124128, 124123],
     "yavuz-selim-mahallesi": [124123, 205665],
-    "ata-mahallesi": [205665, 124123],
-    "susuz-mahallesi": [123431, 123432, 205665],
-    "cumhuriyet-mahallesi": [123403, 123431, 123432],
 }
 VARSAYILAN_KADASTRO = [124123]
 
