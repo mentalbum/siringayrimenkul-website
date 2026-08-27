@@ -28,6 +28,15 @@ const TUM_NOKTALAR = [
   { n: 'kizilay',   lat: 39.9208, lng: 32.8541 },
   { n: 'kecioren',  lat: 39.9871, lng: 32.8639 },
   { n: 'mamak',     lat: 39.9382, lng: 32.9126 },
+  // Bulunabilirlik programı (27.08): Eryaman İÇİ mahalle noktaları — dış/orta
+  // halkadan arayanın gördüğü harita kutusunu ölçmek için. Koordinatlar
+  // content'teki site kayıtlarının mahalle başına ortalaması.
+  { n: 'sehit-osman-avci', lat: 39.9772, lng: 32.6551 }, // 68 kayıt ort.
+  { n: 'seker',            lat: 39.9667, lng: 32.6557 }, // 16 kayıt ort.
+  { n: 'goksu',            lat: 39.9940, lng: 32.6431 }, // 68 kayıt ort.
+  { n: 'altay',            lat: 39.9690, lng: 32.6437 }, // 26 kayıt ort.
+  { n: 'yesilova',         lat: 39.9650, lng: 32.6102 }, // 23 kayıt ort.
+  { n: 'guzelkent',        lat: 39.9902, lng: 32.6105 }, // 80 kayıt ort. (1 koordinatsız hariç)
 ];
 const NOKTA_SUZ = process.env.BOLGE_NOKTALAR
   ? new Set(process.env.BOLGE_NOKTALAR.split(',').map((s) => s.trim()))
