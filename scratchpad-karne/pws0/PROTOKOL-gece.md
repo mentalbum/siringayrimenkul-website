@@ -293,3 +293,6 @@ Tunahan 28/28 ölçüldü (ilk3 22, örn. Gökdemir+Özar organik 1; tunahan-sit
 Altay 12/28'de reCAPTCHA duvarı (40. günlük ölçümde — eşik yine düşük seyretti).
 Kalan 16 Altay sorgusu + 9 mahalle YARIN kaldığı yerden (tur-altay-2708.json[12:]).
 Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeker → Şeyh Şamil → YS → Yeşilova.
+> 27.08 (2. duvar): Devlet 28/45'te ikinci reCAPTCHA (günlük 85. ölçüm). Kalan 17 Devlet
+> sorgusu (tur-devlet-2708.json[28:]) + 7 mahalle 28.08'e. Bugün ölçülen: Tunahan 28 TAM,
+> Altay 28 TAM, Devlet 28 yarım.
