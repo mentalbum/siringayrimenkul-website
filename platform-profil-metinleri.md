@@ -29,18 +29,20 @@
 > politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
 > kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Eryaman esnafıyız, ofisimiz Tunahan 4. Etap Çarşı'da. Buradaki siteleri
-blok blok tanırız. Sizi aceleye getirmeyiz, olmayacak söz vermeyiz. Evinizi
-satmak ya da kiraya vermek isterseniz önce gelir evinizi görürüz, değerini
-birlikte konuşuruz; tapuda da sözleşmede de yanınızda oluruz. Ev arayanlara
-da yardımcı oluruz. Yolunuz düşerse uğrayın, bir çayımızı için, evinizi
-konuşalım.
+Şirin Gayrimenkul, Eryaman'da yerleşik bir gayrimenkul ofisidir; satılık ve
+kiralık konutta çalışırız ve buradaki siteleri blok blok tanırız. Kimseyi
+aceleye getirmez, gerçekçi olmayan vaatlerde bulunmayız. İşe evi yerinde
+görerek başlar, değerini birlikte netleştiririz. Tapu ya da kira sözleşmesi
+tamamlanana kadar düzenli olarak bilgi veririz. Ev arayanlara da aynı özenle
+yardımcı oluruz. Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'da; bekleriz.
 
-*(412 karakter — sınırın altında; "aceleye getirmeyiz, olmayacak söz
-vermeyiz" güven cümlesi ilk 250 karakterlik arama önizlemesinin içinde.
-TON KARARI, Özgün 2026-08-27: yoğun profesyonellik/detay RAHATSIZ EDİYOR —
-vitrin metinlerinde sade komşu/esnaf sesi; süreç adımı sayma, aforizma ve
-"ada-parsel" tarzı jargon yok, sayı iddiası gerekmedikçe yok)*
+*(478 karakter — sınırın altında; "aceleye getirmez, gerçekçi olmayan
+vaatlerde bulunmayız" güven cümlesi ilk 250 karakterlik arama önizlemesinin
+içinde. TON KARARI, Özgün 2026-08-27 — İKİ UÇ DA REDDEDİLDİ: bilgi/süreç
+yığan profesyonellik de ("çok detaylı, rahatlatmıyor"), "esnafıyız/çayımızı
+için" samimiyeti de ("daha profesyonel yazalım"). Hedef kayıt: köklü ofisin
+ölçülü ciddiyeti — süreç adımı sayma, aforizma, jargon yok; samimiyet
+işareti de yok; güven mesajı profesyonel kelimelerle ve metnin başında)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
