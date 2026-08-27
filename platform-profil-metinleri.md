@@ -29,17 +29,20 @@
 > politikasına hem güncel yazım kurallarımıza (500+ düzeltmesi, 11 mahalle
 > kapsamı) aykırı. Açıklamaya telefon/URL/mahalle listesi YAZILMAZ.
 
-Şirin Gayrimenkul, Ankara Eryaman'da (Etimesgut) satılık ve kiralık konut
-işlemlerinde ev sahiplerinin yanında olan yerel bir gayrimenkul ofisidir.
-Evinizi satmayı ya da kiraya vermeyi düşünüyorsanız süreci bir değerleme
-görüşmesiyle başlatıyoruz; pazarlama, alıcı ve kiracı görüşmeleri ile tapu
-veya sözleşme aşamalarını düzenli bilgilendirmeyle yürütüyoruz. Eryaman
-genelinde 500'den fazla site ve rezidansı kayıt altında tutan bölge
-bilgimizle hizmet veriyoruz. Ev arayanlar da güncel portföy için ofisimize
-başvurabilir. Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'dadır.
+Eryaman'da ev satmanın ya da kiraya vermenin ilk adımı, sitenizi zaten
+tanıyan biriyle konuşmak. Eryaman genelinde 500'den fazla site ve rezidansı
+blok blok, tapu ve ada-parsel düzeyinde kayıt altında tutuyoruz; fiyatı
+bölgede gerçekleşen satış ve kiralamalardan okuyoruz: ilan fiyatı beklentiyi,
+işlem fiyatı gerçeği gösterir. Değerleme görüşmesiyle başlarız; fotoğraf ve
+ilan hazırlığı, alıcı ve kiracı görüşmeleri, tapu veya kira sözleşmesi
+bizde — her adımda düzenli haber veririz. Dileyene 3D sanal tur da
+hazırlarız. Ev arayanları da aynı kayıtlarla doğru siteye yönlendiriyoruz.
+Ofisimiz Tunahan Mahallesi 4. Etap Çarşı'da; uğrayın, evinizi konuşalım.
 
-*(618 karakter — sınırın altında; ilk ~250 karakter arama önizlemesinde
-görünür, ana mesaj başta)*
+*(716 karakter — sınırın altında; ilk ~250 karakterlik arama önizlemesine
+kanca + "500'den fazla site" kanıtı sığıyor. 5 aday × 3 jüri turundan
+sentez: insan sesli iskelet + "ilan fiyatı beklentiyi, işlem fiyatı gerçeği
+gösterir" aforizması + "sitenizi zaten tanıyan" ikinci-tekil kancası)*
 
 ## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
