@@ -1,6 +1,6 @@
 # HEDEF SORGU LİSTESİ — Özgün'ün 2026-08-10 talimatı
 
-**Hedef: 19 sorgunun HEPSİNDE organik 1. sıra.** Her sorgunun kendine ait bir
+**Hedef: 16 sorgunun HEPSİNDE organik 1. sıra (27.08: 19→16).** Her sorgunun kendine ait bir
 sayfası olacak (hepsinin var, aşağıda karşılıkları yazılı — YENİ SAYFA AÇILMAZ,
 ikinci sayfa kendi sayfamızla rekabet eder).
 
@@ -17,9 +17,9 @@ Bkz. [[feedback-olcum-kisisellestirmesiz]] ve `PROTOKOL-gece.md`.
 | Eryaman 4. Etap emlakçı | /mahalleler/tunahan-mahallesi/etaplar/4 |
 | Eryaman 5. Etap emlakçı | /mahalleler/tunahan-mahallesi/etaplar/5 |
 
-## Mahalle ailesi (14)
+## Mahalle ailesi (11) <!-- 27.08: Yenimahalle üçlüsü düştü -->
 
-Eryaman'ın 11 mahallesi + Yenimahalle grubunun 3'ü. **UYARI:** Ata, Cumhuriyet
+Eryaman'ın 11 mahallesi (27.08'e dek + Yenimahalle grubunun 3'ü). **UYARI:** Ata, Cumhuriyet
 ve Susuz Eryaman DEĞİL, Yenimahalle'dir — başlıkta "Eryaman" yazılmaz
 (bkz. [[feedback-yenimahalleye-eryaman-deme]], lib/bolge.ts). Özgün'ün
 listesinde de bunlar "Ankara …" önekiyle yazılmış, tutarlı.

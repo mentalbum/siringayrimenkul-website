@@ -22,8 +22,9 @@
      410 (Gone) dönüyor (proxy.ts) ve botun 410'u hızla görüp dizinden düşürmesi
      için yeniden taranmaları gerekiyor — dosyanın varlık amacı zaten bu. GSC bu
      adresleri "bulunamadı" diye raporlayacak; bu beklenen ve İSTENEN sonuç.
-     Başka mahalleden bu üçüne 301'le akan 7 tekil adres ise listeden çıkarıldı
-     (kuralları silindi, 404 dönüyorlar; toplam 905→898).
+     Başka mahalleden bu üçüne 301'le akan tekil adreslerin kuralları da bilerek
+     tutuldu (next.config.ts çapraz-kaynak bloğu): o adresler 301→410 zinciriyle
+     düşüyor ve listede duruyorlar. Toplam 908 (değişmedi).
      KALDIRMA KOŞULU: GSC Sayfa raporunda bu adresler "Yönlendirmeli sayfa" kovasına
      geçtiğinde (ya da en geç 2026-10-15) bu dosya ve robots.txt satırı SİLİNECEK.
      LASTMOD = YÖNLENDİRMENİN BAŞLADIĞI TARİH (2026-07-26, slug taşıma günü) —
@@ -987,4 +988,11 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/seker</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/eryaman</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/ata</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/aker-mucevher-evleri</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/green-life-goksu-konutlari</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/golde-luxe-konutlari</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/neovadi-konutlari</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/green-life-goksu</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/lake-life</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/yavuz-selim/adalar/46432-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
 </urlset>

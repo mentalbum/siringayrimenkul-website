@@ -280,9 +280,9 @@ export default async function MahallePage({ params }: Props) {
 
       <header className="mt-4 max-w-3xl">
         {/* Bölge etiketi coğrafi ayrıştırma sinyali: "Göksu" Türkiye'de çok
-            yerde var; Eryaman/Yenimahalle bağlamı hero'da açıkça durmalı. */}
+            yerde var; Eryaman bağlamı hero'da açıkça durmalı. */}
         <p className="text-sm font-semibold uppercase tracking-wide text-gold-dark">
-          "Eryaman · Etimesgut · Ankara"
+          Eryaman · Etimesgut · Ankara
         </p>
         <h1 className="mt-2 text-3xl sm:text-4xl">{mahalle.isim}</h1>
         <p className="mt-3 text-base leading-relaxed text-body">
@@ -437,16 +437,14 @@ export default async function MahallePage({ params }: Props) {
         {/* Ana sayfaya tek exact çıpa (ChatGPT istişaresi + Özgün onayı, 15.08):
             yalnız 11 Eryaman mahallesi + 5 etap sayfasından; site sayfalarından
             BİLEREK verilmez (aşırısı spam sinyali). */}
-        {(
-          <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted">
+        <p className="mt-4 max-w-3xl text-sm leading-relaxed text-muted">
             Mahalle fark etmeksizin tüm Eryaman&apos;da aynı ilkelerle çalışıyoruz;
             ofisimizi ve çalışma biçimimizi{" "}
             <Link href="/" className="font-semibold text-gold-dark hover:underline">
               Eryaman emlakçı
             </Link>{" "}
             sayfamızdan tanıyabilirsiniz.
-          </p>
-        )}
+        </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <TrackedCtaLink
             href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(

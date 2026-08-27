@@ -8,9 +8,45 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     // 27.08: Yenimahalle grubu (ata/susuz/cumhuriyet mahalleleri) siteden
-    // kaldırıldı — bu üç mahalleye giden 71 kural silindi. Eski adresleri
-    // proxy.ts 410 (Gone) ile kapatıyor; buraya o mahallelere kural EKLEME.
+    // kaldırıldı. Eski adresleri proxy.ts 410 (Gone) ile kapatıyor; buraya o
+    // mahallelere YENİ kural ekleme. TEK İSTİSNA aşağıdaki ÇAPRAZ-KAYNAK bloğu:
+    // kaynağı YAŞAYAN bir mahallenin eski slug'ı olan bu kurallar bilerek
+    // duruyor — silinselerdi kaynak adres genel slug-taşıma kuralına düşüp
+    // 301→404 zinciri üretirdi; şimdi 301→410 (proxy hedefi yakalıyor), Google
+    // adresi kesin sinyalle düşürüyor.
     return [
+      { source: "/mahalleler/yavuz-selim/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim-mahallesi/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
+      { source: "/mahalleler/goksu/alya-park", destination: "/mahalleler/susuz-mahallesi/alya-park", permanent: true },
+      { source: "/mahalleler/goksu/bella-garden", destination: "/mahalleler/susuz-mahallesi/bella-garden", permanent: true },
+      { source: "/mahalleler/goksu/bordo-gol-evleri", destination: "/mahalleler/susuz-mahallesi/bordo-gol-evleri", permanent: true },
+      { source: "/mahalleler/goksu/goksu-marina", destination: "/mahalleler/susuz-mahallesi/goksu-marina", permanent: true },
+      { source: "/mahalleler/goksu/green-life-goksu", destination: "/mahalleler/susuz-mahallesi/green-life-goksu-konutlari", permanent: true },
+      { source: "/mahalleler/goksu/green-life-goksu-konutlari", destination: "/mahalleler/susuz-mahallesi/green-life-goksu-konutlari", permanent: true },
+      { source: "/mahalleler/goksu/korucam-sitesi", destination: "/mahalleler/susuz-mahallesi/korucam-sitesi", permanent: true },
+      { source: "/mahalleler/goksu/lake-life", destination: "/mahalleler/susuz-mahallesi/lake-life", permanent: true },
+      { source: "/mahalleler/goksu/lilyum-sitesi", destination: "/mahalleler/susuz-mahallesi/lilyum-sitesi", permanent: true },
+      { source: "/mahalleler/goksu/liva-goksu", destination: "/mahalleler/susuz-mahallesi/liva-goksu", permanent: true },
+      { source: "/mahalleler/goksu/merdin-sitesi", destination: "/mahalleler/susuz-mahallesi/merdin-sitesi", permanent: true },
+      { source: "/mahalleler/goksu/neovadi-konutlari", destination: "/mahalleler/susuz-mahallesi/neovadi-konutlari", permanent: true },
+      { source: "/mahalleler/goksu/neva-palas", destination: "/mahalleler/susuz-mahallesi/neva-palas", permanent: true },
+      { source: "/mahalleler/goksu/nil-my-home", destination: "/mahalleler/susuz-mahallesi/nil-my-home", permanent: true },
+      { source: "/mahalleler/goksu/perla-life", destination: "/mahalleler/susuz-mahallesi/perla-life", permanent: true },
+      { source: "/mahalleler/goksu/serline-konutlari", destination: "/mahalleler/susuz-mahallesi/serline-konutlari", permanent: true },
+      { source: "/mahalleler/goksu/vera-life-goksu", destination: "/mahalleler/susuz-mahallesi/vera-life-goksu", permanent: true },
+      { source: "/mahalleler/goksu/white-dream-sitesi", destination: "/mahalleler/susuz-mahallesi/white-dream-sitesi", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci/golde-luxe-konutlari", destination: "/mahalleler/cumhuriyet-mahallesi/golde-luxe-konutlari", permanent: true },
+      { source: "/mahalleler/seyh-samil/alkon-sitesi", destination: "/mahalleler/ata-mahallesi/alkon-sitesi", permanent: true },
+      { source: "/mahalleler/seyh-samil/dilara-sitesi", destination: "/mahalleler/ata-mahallesi/dilara-sitesi", permanent: true },
+      { source: "/mahalleler/seyh-samil/rusen-park-sitesi", destination: "/mahalleler/ata-mahallesi/rusen-park-evleri", permanent: true },
+      { source: "/mahalleler/seyh-samil/vizyon-baspinar", destination: "/mahalleler/ata-mahallesi/vizyon-baspinar-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim/aker-mucevher-evleri", destination: "/mahalleler/ata-mahallesi/aker-mucevher-evleri", permanent: true },
+      { source: "/mahalleler/yavuz-selim/genova", destination: "/mahalleler/ata-mahallesi/genova", permanent: true },
+      { source: "/mahalleler/yavuz-selim/gold-life-konutlari", destination: "/mahalleler/ata-mahallesi/gold-life-konutlari", permanent: true },
+      { source: "/mahalleler/yavuz-selim/mavi-bayrak-sitesi", destination: "/mahalleler/ata-mahallesi/mavi-bayrak-sitesi", permanent: true },
+      { source: "/mahalleler/yavuz-selim/panorama-plus", destination: "/mahalleler/ata-mahallesi/panorama-plus", permanent: true },
+      { source: "/mahalleler/yavuz-selim/prestige-park-konutlari", destination: "/mahalleler/ata-mahallesi/prestij-park-konutlari", permanent: true },
+      { source: "/mahalleler/yavuz-selim/selvi-evleri", destination: "/mahalleler/ata-mahallesi/selvi-evleri-sitesi", permanent: true },
       {
         source: "/index.html",
         destination: "/",

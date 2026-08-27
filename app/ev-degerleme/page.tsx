@@ -89,7 +89,7 @@ export default function EvDegerlemePage() {
           &quot;Evim ne kadar eder?&quot; sorusunun cevabı, ilan sitelerindeki fiyatlardan değil;
           mahallenizi, sitenizi ve güncel emsalleri yakından takip eden yerel bir gözden geçer.
           Eryaman&apos;ın 11 mahallesindeki{" "}
-          {toplamSite}+ site/rezidansı — tek tek
+          {toplamSite}+ site/rezidansı tek tek
           tanıyoruz. Değerlemeyi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için
           yapıyoruz: görüşmenin sonunda elinizde gerçekçi bir fiyat aralığıyla birlikte satış ya
           da kiralama yol haritanız da olur.
