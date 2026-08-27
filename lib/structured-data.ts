@@ -39,7 +39,7 @@ export const ozgunPersonJsonLd = {
     "Eryaman emlak piyasası",
     "Eryaman satılık ve kiralık konut",
     "Ev değerleme",
-    "Etimesgut ve Yenimahalle site/rezidans yerleşimleri",
+    "Eryaman (Etimesgut) site/rezidans yerleşimleri",
   ],
 } as const;
 

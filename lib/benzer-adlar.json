@@ -48,52 +48,12 @@
     ],
     [
       {
-        "m": "devlet-mahallesi",
-        "s": "demirkent-sitesi"
-      },
-      {
-        "m": "ata-mahallesi",
-        "s": "demirkent-on-sitesi"
-      }
-    ],
-    [
-      {
-        "m": "ata-mahallesi",
-        "s": "eser-yapi-evleri"
-      },
-      {
-        "m": "susuz-mahallesi",
-        "s": "eser-yapi-sitesi"
-      }
-    ],
-    [
-      {
         "m": "eryaman-mahallesi",
         "s": "akkonaklar-sitesi"
       },
       {
         "m": "guzelkent-mahallesi",
         "s": "akkonak-sitesi"
-      }
-    ],
-    [
-      {
-        "m": "sehit-osman-avci-mahallesi",
-        "s": "akasya-sitesi"
-      },
-      {
-        "m": "cumhuriyet-mahallesi",
-        "s": "akasya-sitesi"
-      }
-    ],
-    [
-      {
-        "m": "ata-mahallesi",
-        "s": "palmiye-evleri"
-      },
-      {
-        "m": "altay-mahallesi",
-        "s": "palmiye-evleri"
       }
     ],
     [
@@ -166,10 +126,6 @@
       {
         "m": "sehit-osman-avci-mahallesi",
         "s": "elit-yasam-konutlari-2"
-      },
-      {
-        "m": "ata-mahallesi",
-        "s": "elit-yasam-konutlari-3"
       }
     ],
     [

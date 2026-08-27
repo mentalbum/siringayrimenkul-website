@@ -37,10 +37,3 @@ export function inceltGruplar(
     siteler: inceltSiteler(siteler),
   }));
 }
-
-/** Karşı sekmenin arama önerisi için yalnız ad listesi (isim + alternatif adlar). */
-export function sekmeAdlari(gruplar: { siteler: Site[] }[]): string[] {
-  return gruplar.flatMap(({ siteler }) =>
-    siteler.flatMap((site) => [site.isim, ...(site.alternatifAdlar ?? [])])
-  );
-}

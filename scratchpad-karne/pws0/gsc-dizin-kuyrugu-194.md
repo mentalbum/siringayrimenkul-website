@@ -155,52 +155,16 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-metrolife ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/kainat-evleri ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/anadolu-vizyon-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zirveden-bati ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/motto-goksu ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/gold-stone-evleri ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/ata-life-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/tekirdag-park-evleri ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/havuz-kent ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/botanik-park-evleri ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/vera-vista ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cigdem-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sumeyra-2-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/guldede-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bulut-kule ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ata-yildiz-bati-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/trend-life-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/wind-goksu ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/grup-dayanisma-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/sirin-guneskent-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/liva-life-yasam-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/astim-flora-evleri ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/caglar-belde-sitesi ← 24.08 DİZİNDE (23.08 isteği 35 dk'da taramaya döndü)
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mavera-goksu ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/panorama-gold ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/serline-konutlari ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rusen-park-evleri ← 23.08 DİZİNDE (kendiliğinden; 22.08 istek sonrası, tarama 22.08, SERP #2)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/cagdas-onur-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/demirkent-on-sitesi ← 15.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/dogasu-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/manzara-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mercan-life-buse-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mizan-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/rayli-sistemciler-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/10-botanik-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istgate ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-istway ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/arissa-botanik ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/basaksehir-ankara-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/batihan-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/konar-manzara-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/park-sera-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/yeni-botanik-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/lake-life ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/major-goksu ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri ← 15.08 dizin dışı teyit
 
 > KOTA DENEMESİ 12.08 02:26 — mes-polaris-evleri denendi, 'Kota Aşıldı' (kota hâlâ dolu, hiçbir şey işaretlenmedi). Sıradaki deneme 05:26'ya kuruldu (cron f3ce690c).
 > KOTA DENEMESİ 12.08 05:28 — hâlâ 'Kota Aşıldı'. Sıradaki deneme 08:28'e kuruldu (cron b88ce237). Google günlük kotası henüz sıfırlanmadı.
@@ -290,7 +254,6 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] /mahalleler/ata-mahallesi/rusen-park-evleri ← 22.08 istek gönderildi (unknown)
 - [x] /mahalleler/ata-mahallesi/manzara-evleri ← 22.08 istek gönderildi (unknown)
 - [x] /mahalleler/ata-mahallesi/cagdas-onur-sitesi ← 22.08 istek gönderildi (unknown)
-- [ ] /mahalleler/ata-mahallesi/caglar-belde-sitesi ← 22.08 KOTA AŞILDI, işlenmedi — yarın ilk sıra
 > Not: kardelen-sitesi denetlendi → "URL Google'da mevcut" (kota harcanmadı; güncel içerik lastmod'la taranacak).
 > Kalan unknown adayları (dizin-tarama-2026-08-22.tsv): caglar-belde, mizan, rayli-sistemciler + Cumhuriyet
 > grubu (anadolu-vizyon, ap-istway, ata-yildiz-bati, basaksehir-ankara, batihan, botanik-park, konar-manzara,
@@ -369,3 +332,9 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 25.08 (9) — AKŞAM DAMLASI KAPANDI, GÜNLÜK REKOR: sabah 11 + akşam 11 = 22 İSTEK KABUL (önceki rekor 11'di; kayan pencere zannedilenden geniş — belki günlük sayaç ve akşam sıfırlanıyor). Akşam kabul edilenler kuyruk v3'ten (4-10 bandı, adaşsız bayat): oyak-555 #4/773gos, alpak-neve #5/633, inci-life #6/359, ap-green-tower #6/348, dort-mevsim #7/288, kasmir-mavi-orkide #8/248, umar #5/216, kiratli #4/203, yavuz-selim-sitesi #4/194, mahal-cag #5/171, yeni-portakal #5/155 — toplam 3.780 gösterimlik, HEPSİ zaten ilk 10'da olan sayfalar. 23. istekte (su-damlasi 122) kota doldu, işaretlenmedi — yarının ilk adayı. Kalan v3: su-damlasi, arya-nuans 111, zen-park-goksu 105, platin 92, izgi-park 28. Günün büyük toplamı: sabah 11'i sıra-0 talep-sıralı (3.305 gos) + akşam 11'i 4-10 bandı (3.780 gos) = 7.085 gösterimlik talep yeniden taramada.
 > 27.08 — v2 damlası sürüyor: sude (166), aksafak (160), atadostlar (149, yavuz-selim), sertower (142) kabul. DERS: atadostlar'a önce yanlış yoldan (goksu/... 404) istek gitti — 1 istek boşa yandı; URL her zaman kuyruk dosyasından kopyalanacak, mahalle ezberden yazılmayacak.
 > 27.08 KAPANIŞ — günün damlası: 11 istek kabul (rekor eşiği), 10'u geçerli sayfa. v3 kuyruğu TAMAMLANDI (su-damlasi 122, arya-nuans 111, zen-park 105, platin 92, izgi-park 28) + v2'den 5 sayfa (sude 166, aksafak 160, atadostlar 149, sertower 142, sari-cinar 136). Geçerli toplam ~1.211 gösterimlik talep. Kota "Endora Park"ta (120) kapandı — işaretsiz, sıradaki damlanın ilk adayı. Akşam ikinci pencere denenebilir (25.08 deseni: sabah 11 + akşam 11).
+> 27.08 (b) — KAPSAM DEĞİŞİKLİĞİ (Özgün kararı): Ata/Susuz/Cumhuriyet SİTEDEN
+> KALDIRILDI (287 URL, 26.380 gos/90g). Bekleyen 37 grup satırı bu kuyruktan,
+> 130 satır çalışma kopyasından düşürüldü; [x] tarihçeler arşiv olarak duruyor.
+> Eski adresler 410 dönüyor (proxy.ts); sitemap-eski-adresler'deki 307 grup
+> adresi botun 410'u hızla görmesi için bilerek tutuldu. Bu mahallelere bir
+> daha dizin isteği GÖNDERİLMEZ.

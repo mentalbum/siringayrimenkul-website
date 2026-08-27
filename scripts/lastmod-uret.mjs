@@ -91,7 +91,7 @@ yurdu(path.join(KOK, "content"));
 
 const sirali = Object.fromEntries(Object.keys(dosyalar).sort().map((k) => [k, dosyalar[k]]));
 
-/* KLASÖR TARİHLERİ — hub/liste sayfaları için (/blog, /siteler, /siteler/yenimahalle,
+/* KLASÖR TARİHLERİ — hub/liste sayfaları için (/blog, /siteler,
  * /eryaman-site-dokusu). Bu sayfalar tek bir içerik dosyasına bağlı değil; JSX'inin
  * git tarihi de yanlış cevap verir (08.08 ölçümü: sitemap'te /blog 07-24 yazıyordu,
  * oysa 07.08'de 24 yazı silinmişti — Google'a açıkça "değişmedi" deniyordu).

@@ -292,15 +292,14 @@ export default async function SitePage({ params }: Props) {
     `${site.isim} içindeki daireniz için satış veya kiralama düşünüyorsanız, emlakçınız olarak ilk görüşmeden tapuya kadar yanınızdayız.`,
   ][varyant % 4];
 
-  // 15.08 pazarlama-önce deneyi (Özgün kararı, ChatGPT istişaresi): 8 sayfalık
-  // kohortta giriş sırası ters çevrilir. 25.08 ölçümüne dek liste SABİT.
+  // 15.08 pazarlama-önce deneyi (Özgün kararı, ChatGPT istişaresi): kohortta
+  // giriş sırası ters çevrilir. 27.08: Yenimahalle kaldırmasıyla ata/efsane-evleri
+  // ve cumhuriyet/hittown düştü — kohort 8→6 sayfa, ölçüm karşılaştırması buna göre.
   const PAZARLAMA_ONCE_KOHORT = new Set([
     "sehit-osman-avci-mahallesi/relax-goksu-konutlari",
-    "ata-mahallesi/efsane-evleri",
     "sehit-osman-avci-mahallesi/mia-concept-konutlari",
     "tunahan-mahallesi/mavicam-sitesi",
     "sehit-osman-avci-mahallesi/koz-modern",
-    "cumhuriyet-mahallesi/hittown",
     "sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
     "tunahan-mahallesi/age-sitesi",
   ]);

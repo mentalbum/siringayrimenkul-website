@@ -14,14 +14,13 @@ export const metadata: Metadata = {
   // İSTEMİYORUZ (ev sahibi getirmiyor) — 12.08'de eklenen cevap cümlesi
   // çıkarıldı, description ev sahibine döndü. Bu aileye yeniden oynama.
   description:
-    "Eryaman'ın 11 mahallesini, site ve rezidanslarını tek sayfada keşfedin. Evini satacak veya kiraya verecek ev sahiplerine mahalle mahalle rehber; Yenimahalle'de Ata, Susuz ve Cumhuriyet de içinde.",
+    "Eryaman'ın 11 mahallesini, site ve rezidanslarını tek sayfada keşfedin. Evini satacak veya kiraya verecek ev sahiplerine mahalle mahalle rehber.",
   alternates: { canonical: "/mahalleler" },
 };
 
 export default function MahallelerPage() {
   const mahalleler = getAllMahalleler();
   const eryamanMahalleleri = mahalleler.filter((m) => m.ilce === "Etimesgut");
-  const yenimahalleMahalleleri = mahalleler.filter((m) => m.ilce === "Yenimahalle");
   const mapItems = mahalleler.map((mahalle) => ({
     mahalle,
     boundary: getMahalleBoundary(mahalle),
@@ -91,27 +90,6 @@ export default function MahallelerPage() {
           ))}
         </div>
       </section>
-
-      {yenimahalleMahalleleri.length > 0 && (
-        <section className="mt-16 rounded-3xl border border-[#8FA3BF]/40 bg-[#8FA3BF]/[0.06] p-6 sm:p-8">
-          <p className="text-sm font-semibold uppercase tracking-wide text-[#5f7699]">
-            Ek Hizmet Bölgemiz
-          </p>
-          <h2 className="mt-2 text-xl">Yenimahalle: Ata, Susuz ve Cumhuriyet</h2>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-body">
-            Önceliğimiz Eryaman — ama günlük yaşamı Eryaman&apos;la iç içe olan bu üç komşu
-            mahalleye de aynı yakınlıkla hizmet veriyoruz. Haritada mavi-gri çerçeveyle
-            gördüğünüz bölge burasıdır.
-          </p>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {yenimahalleMahalleleri.map((mahalle, i) => (
-              <Reveal key={mahalle.slug} delay={(i % 3) * 70} className="h-full">
-                <MahalleCard mahalle={mahalle} />
-              </Reveal>
-            ))}
-          </div>
-        </section>
-      )}
 
       <section className="mt-16">
         <h2 className="text-xl">Etap Etap Eryaman</h2>

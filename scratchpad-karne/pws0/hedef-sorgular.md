@@ -1,6 +1,6 @@
 # HEDEF SORGU LİSTESİ — Özgün'ün 2026-08-10 talimatı
 
-**Hedef: 19 sorgunun HEPSİNDE organik 1. sıra.** Her sorgunun kendine ait bir
+**Hedef: 16 sorgunun HEPSİNDE organik 1. sıra (27.08: 19→16).** Her sorgunun kendine ait bir
 sayfası olacak (hepsinin var, aşağıda karşılıkları yazılı — YENİ SAYFA AÇILMAZ,
 ikinci sayfa kendi sayfamızla rekabet eder).
 
@@ -17,9 +17,9 @@ Bkz. [[feedback-olcum-kisisellestirmesiz]] ve `PROTOKOL-gece.md`.
 | Eryaman 4. Etap emlakçı | /mahalleler/tunahan-mahallesi/etaplar/4 |
 | Eryaman 5. Etap emlakçı | /mahalleler/tunahan-mahallesi/etaplar/5 |
 
-## Mahalle ailesi (14)
+## Mahalle ailesi (11) <!-- 27.08: Yenimahalle üçlüsü düştü -->
 
-Eryaman'ın 11 mahallesi + Yenimahalle grubunun 3'ü. **UYARI:** Ata, Cumhuriyet
+Eryaman'ın 11 mahallesi (27.08'e dek + Yenimahalle grubunun 3'ü). **UYARI:** Ata, Cumhuriyet
 ve Susuz Eryaman DEĞİL, Yenimahalle'dir — başlıkta "Eryaman" yazılmaz
 (bkz. [[feedback-yenimahalleye-eryaman-deme]], lib/bolge.ts). Özgün'ün
 listesinde de bunlar "Ankara …" önekiyle yazılmış, tutarlı.
@@ -37,11 +37,12 @@ listesinde de bunlar "Ankara …" önekiyle yazılmış, tutarlı.
 | Tunahan mahallesi emlakçı | /mahalleler/tunahan-mahallesi |
 | Yavuz Selim mahallesi emlakçı | /mahalleler/yavuz-selim-mahallesi |
 | Yeşilova mahallesi emlakçı | /mahalleler/yesilova-mahallesi |
-| Ankara Ata mahallesi emlakçı | /mahalleler/ata-mahallesi |
-| Ankara Cumhuriyet mahallesi emlakçı | /mahalleler/cumhuriyet-mahallesi |
-| Ankara Susuz mahallesi emlakçı | /mahalleler/susuz-mahallesi |
 
-14 mahallenin 14'ü de `durum: yayinda` (2026-08-10'da doğrulandı) — noindex olan yok.
+> 27.08 KAPSAM DEĞİŞİKLİĞİ (Özgün kararı): Ata/Susuz/Cumhuriyet SİTEDEN
+> KALDIRILDI — üç hedef sorgu listeden düşürüldü (19→16); "yeni batı emlakçı"
+> planı da iptal. Aşağıdaki tarihçe bölümlerindeki grup satırları arşivdir.
+
+Kalan 11 Eryaman mahallesi `durum: yayinda` — noindex olan yok.
 
 ## BAŞLANGIÇ DURUMU (etap: 2026-08-10 02:47 · mahalle: 2026-08-09 07:14)
 
@@ -303,4 +304,4 @@ seyh-samil), 5.'de (goksu) "Kota Aşıldı" geldi. Yarın sırayla:
 PROTOKOL-gece.md:176'daki `ilk3u` (rakibin TAM URL'i) alanı bu turda
 kullanılmadı; "hangi portal SAYFASI / beyazemlak hangi URL ile sıralanıyor"
 sorusu bu yüzden açık kaldı. Sonraki turda ölçüm JS'ine eklenecek.
-"yeni batı emlakçı" sorgusu da tura dahil edilecek (Cumhuriyet'in gerçek ölçütü).
+~~"yeni batı emlakçı" sorgusu da tura dahil edilecek~~ (27.08: Cumhuriyet siteden kaldırıldı, iptal).

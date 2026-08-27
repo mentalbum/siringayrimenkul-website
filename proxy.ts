@@ -53,6 +53,36 @@ const KALDIRILAN_YAZILAR = new Set([
   "/blog/tapu-ada-parsel-nasil-okunur",
 ]);
 
+/**
+ * KALDIRILAN BÖLGE ADRESLERİ — 410 Gone (2026-08-27, Özgün kararı).
+ *
+ * Ata, Susuz ve Cumhuriyet mahalleleri (Yenimahalle grubu) siteden tamamen
+ * kaldırıldı: 3 mahalle sayfası + 203 site sayfası + ada/etap altları ve
+ * /siteler/yenimahalle dizini. Eski slug biçimleri (/mahalleler/ata/...,
+ * /ata/...) de burada 410'a düşer — next.config.ts'teki 71 yönlendirme
+ * kuralı aynı gün silindi (301→404 zinciri yumuşak 404 üretiyordu).
+ * Kural blog listesiyle aynı: robots.txt'e EKLEME, yaşayan varise taşınan
+ * olursa 301 olarak next.config.ts'e yazılır.
+ */
+const KALDIRILAN_BOLGE_ONEKLERI = [
+  "/mahalleler/ata-mahallesi",
+  "/mahalleler/ata",
+  "/mahalleler/susuz-mahallesi",
+  "/mahalleler/susuz",
+  "/mahalleler/cumhuriyet-mahallesi",
+  "/mahalleler/cumhuriyet",
+  "/ata",
+  "/susuz",
+  "/cumhuriyet",
+  "/siteler/yenimahalle",
+];
+
+function kaldirilanBolgede(pathname: string): boolean {
+  return KALDIRILAN_BOLGE_ONEKLERI.some(
+    (onek) => pathname === onek || pathname.startsWith(onek + "/")
+  );
+}
+
 /** Eski bir bağlantıdan gelen insan boş ekran değil yol tarifi görsün. */
 const GOVDE = `<!doctype html>
 <html lang="tr">
@@ -76,10 +106,10 @@ const GOVDE = `<!doctype html>
 <body>
 <main>
   <h1>Bu sayfa kaldırıldı</h1>
-  <p>Aradığınız yazı yayından tamamen kaldırıldı. Biz Eryaman ve çevresindeki
-     konutlarla ilgileniyoruz; bölgeye dair yazılarımıza ve site rehberimize
+  <p>Aradığınız sayfa yayından tamamen kaldırıldı. Biz Eryaman ve çevresindeki
+     konutlarla ilgileniyoruz; site rehberimize ve bölgeye dair yazılarımıza
      aşağıdan ulaşabilirsiniz.</p>
-  <a href="/blog">Eryaman Blog</a>
+  <a href="/siteler">Eryaman Siteleri</a>
   <a class="ikincil" href="/">Anasayfa</a>
 </main>
 </body>
@@ -89,7 +119,8 @@ export function proxy(request: NextRequest) {
   // Sondaki eğik çizgiyi burada temizlemeye gerek yok: Next, proxy'den ÖNCE
   // "/adres/" biçimini 308 ile "/adres"e normalleştiriyor, o da buraya düşüp
   // 410 dönüyor (ölçüldü).
-  if (KALDIRILAN_YAZILAR.has(request.nextUrl.pathname)) {
+  const { pathname } = request.nextUrl;
+  if (KALDIRILAN_YAZILAR.has(pathname) || kaldirilanBolgede(pathname)) {
     return new NextResponse(GOVDE, {
       status: 410,
       headers: {
@@ -104,9 +135,31 @@ export function proxy(request: NextRequest) {
   return NextResponse.next();
 }
 
-// Yalnızca blog adresleri: yaşayan yazılar da bu eşikten geçiyor ama iş bir
-// Set aramasından ibaret. Sitenin geri kalanı (mahalle/site/ada sayfaları,
-// statik dosyalar) proxy'ye hiç uğramıyor.
+// Yalnızca kaldırılan adres aileleri: yaşayan blog yazıları da bu eşikten
+// geçiyor ama iş bir Set/önek aramasından ibaret. Sitenin geri kalanı
+// (yaşayan mahalle/site/ada sayfaları, statik dosyalar) proxy'ye hiç uğramıyor.
 export const config = {
-  matcher: "/blog/:path*",
+  matcher: [
+    "/blog/:path*",
+    "/mahalleler/ata/:path*",
+    "/mahalleler/ata-mahallesi/:path*",
+    "/mahalleler/ata",
+    "/mahalleler/ata-mahallesi",
+    "/mahalleler/susuz/:path*",
+    "/mahalleler/susuz-mahallesi/:path*",
+    "/mahalleler/susuz",
+    "/mahalleler/susuz-mahallesi",
+    "/mahalleler/cumhuriyet/:path*",
+    "/mahalleler/cumhuriyet-mahallesi/:path*",
+    "/mahalleler/cumhuriyet",
+    "/mahalleler/cumhuriyet-mahallesi",
+    "/ata/:path*",
+    "/ata",
+    "/susuz/:path*",
+    "/susuz",
+    "/cumhuriyet/:path*",
+    "/cumhuriyet",
+    "/siteler/yenimahalle/:path*",
+    "/siteler/yenimahalle",
+  ],
 };

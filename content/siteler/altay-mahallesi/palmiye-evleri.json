@@ -7,7 +7,7 @@
     "lng": 32.648352
   },
   "sinirGeoJSON": "siteler/altay-mahallesi/palmiye-evleri-boundary.geojson",
-  "aciklama": "Palmiye Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında butik ölçekli bir sitedir; adasını Doktorlar Sitesi'nin blokları, İzgi Park Evleri ve Pembe Rüya Evleri ile paylaşır. TKGM'de sitenin parseli, yaklaşık 2.744 m²'lik alanı üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusu içinde küçük ve sakin bir yerleşimdir. Ata Mahallesi'nde de aynı adı taşıyan, beş bloklu ve yaklaşık 20 dönümlük parseli olan ayrı bir Palmiye Evleri bulunur; bu sayfadaki site Altay Mahallesi'ndeki iki bloklu yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Palmiye Evleri, Altay Mahallesi'nin Eryaman Evleri kuşağında butik ölçekli bir sitedir; adasını Doktorlar Sitesi'nin blokları, İzgi Park Evleri ve Pembe Rüya Evleri ile paylaşır. TKGM'de sitenin parseli, yaklaşık 2.744 m²'lik alanı üzerinde '2 blok kargir apartman' niteliğiyle kayıtlıdır — paylaşımlı adanın bahçeli, oturmuş dokusu içinde küçük ve sakin bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45889",
@@ -20,7 +20,6 @@
     "Tapu parselinde 2 blok kargir apartman (TKGM)",
     "Yaklaşık 2,7 dönümlük parsel",
     "Komşular: Doktorlar, İzgi Park, Pembe Rüya",
-    "Ata Mahallesi'ndeki Palmiye Evleri'nden ayrı yerleşim",
     "Kat mülkiyetli parsel (TKGM)",
     "Altay — Eryaman Evleri kuşağı"
   ],

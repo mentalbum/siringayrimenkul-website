@@ -7,7 +7,6 @@ import {
   getYayindaMahalleler,
 } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
-import { eryamandaMi } from "@/lib/bolge";
 import { yaziTokenlariniAc } from "@/lib/icerik-token";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
@@ -105,17 +104,9 @@ const surecAdimlari = [
 
 export default function HomePage() {
   const mahalleler = getAllMahalleler();
-  /* Vitrin ETİMESGUT ÖNCELİKLİ (2026-08-08). getAllMahalleler alfabetik sıralıyor;
-     ilk üç kutu bu yüzden Altay, Ata, Cumhuriyet ile açılıyordu — Ata ve Cumhuriyet
-     Yenimahalle'de. "Eryaman Emlakçı" başlıklı sayfanın vitrininde Eryaman dışı iki
-     mahalle olması hem sorgu niyetiyle hem "Yenimahalle'ye Eryaman deme" kuralıyla
-     çelişiyordu (bkz. lib/bolge.ts). Hiçbir mahalle listeden çıkmıyor; yalnızca
-     Etimesgut mahalleleri öne alınıyor, alfabetik sıra kendi içinde korunuyor. */
-  const vitrinSirasi = (a: (typeof mahalleler)[number], b: (typeof mahalleler)[number]) =>
-    Number(eryamandaMi(b)) - Number(eryamandaMi(a));
   const oneCikanMahalleler = [
-    ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda").sort(vitrinSirasi),
-    ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda").sort(vitrinSirasi),
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yayinda"),
+    ...mahalleler.filter((mahalle) => mahalle.durum === "yakinda"),
   ].slice(0, 3);
   // BlogCard istemci ağacına da giriyor; özetteki yer tutucular burada açılır.
   const sonYazilar = getAllBlogPosts().slice(0, 3).map(yaziTokenlariniAc);
@@ -319,10 +310,9 @@ export default function HomePage() {
           </p>
           {/* Tam mahalle adları bilinçli ("Göksu Mahallesi", kırpılmış "Göksu"
               değil): "X mahallesi emlakçı" sorgularında anasayfadan tam-eşleşme
-              çapa sinyali (2026-07-31 SERP taraması). "Eryaman'ın tamamı" +
-              Yenimahalle listesi tek şemsiyede sunulmaz — kural. */}
+              çapa sinyali (2026-07-31 SERP taraması). */}
           <p className="mt-4 text-base leading-relaxed text-body">
-            Hizmet bölgemiz Eryaman&apos;ın tamamı ve komşu Yenimahalle mahalleleri:{" "}
+            Hizmet bölgemiz Eryaman&apos;ın tamamı:{" "}
             {mahalleler.map((mahalle, index) => (
               <span key={mahalle.slug}>
                 <Link
@@ -508,7 +498,7 @@ export default function HomePage() {
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",
-              cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz. Ayrıca bölgeyle iç içe yaşayan komşu Yenimahalle mahallelerinde — Ata, Susuz ve Cumhuriyet — de hizmet veriyoruz.`,
+              cevap: `Eryaman bölgesindeki 11 mahallenin tamamında hizmet veriyoruz: Altay, Tunahan, Göksu, Şehit Osman Avcı, Güzelkent ve diğer Eryaman mahallelerindeki site ve rezidansları yakından tanıyoruz.`,
             },
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",

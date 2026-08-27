@@ -17,19 +17,11 @@
 
 ## SIRADA (gösterime göre)
 [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi
-[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/cimtas-goksu-konutlari
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/armoni-life
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/aker-mucevher-evleri
-[ ] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/natura-goksu
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/endora-plus
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence
 [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ornek-ari-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/vera-city
-[ ] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/bordo-gol-evleri
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/mavi-bayrak-sitesi
-[ ] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/alkon-sitesi
 [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi
 
 ## ÖLÇÜM
@@ -40,26 +32,19 @@ bandının TO'su %1,0'dan değişmiş mi bak. Tek ölçümle karar verme.
 # Kanıt: pws=0 ölçümünde site sorgusu mahalle/adaş sayfaya gidiyor; GSC API "Submitted and indexed"
 # ama tarama tarihi 26-27 Temmuz = Google'daki kopya hâlâ eski başlıklı. Dizin isteği = yeniden tarama tetiği.
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence
-https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/ap-green-tower
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence
 https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari
 https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/eryaman-royal-city
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/vera-city
-https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/mahal-cag-sitesi
 https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari
 https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/konum-eryaman
 https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi
-https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/aker-mucevher-evleri
 https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/oyak-goksupark
-https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-plus
 https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi
 https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari
-https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/zen-park-goksu
 https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman
-https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam
 https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari
-https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/nil-my-home
 https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/dalgic-residence
 https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi
 https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/izgi-park-evleri

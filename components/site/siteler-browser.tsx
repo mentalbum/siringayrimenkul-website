@@ -21,10 +21,6 @@ export interface SiteOzet {
 
 interface SitelerBrowserProps {
   gruplar: { mahalle: { slug: string; isim: string }; siteler: SiteOzet[] }[];
-  /** Diğer sekmede (Eryaman ↔ Yenimahalle) arama eşleşmesi önermek için:
-   * yalnız ad listesi taşınır — iki bölge listede karışmaz (Özgün'ün kuralı),
-   * ama kaybolan arama diğer sekmeye yönlendirilir. */
-  digerSekme?: { etiket: string; href: string; adlar: string[] };
 }
 
 const normalize = (s: string) => s.toLocaleLowerCase("tr");
@@ -36,7 +32,7 @@ const odaTipiSira = (tip: string) => {
 // Bitişik yazımlar da eşleşsin ("eryamanevleri" → "Eryaman Evleri").
 const duz = (s: string) => normalize(s).replace(/\s+/g, "");
 
-export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
+export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
   const [sorgu, setSorgu] = useState("");
   const [odaTipi, setOdaTipi] = useState<string | null>(null);
 
@@ -167,11 +163,6 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
     return { tipler: siralanmis, notluSite, toplamSite };
   }, [gruplar]);
 
-  const digerSekmeEslesme = useMemo(() => {
-    if (!digerSekme || !sorguNormalized || toplamEslesme > 0) return 0;
-    return digerSekme.adlar.filter((ad) => normalize(ad).includes(sorguNormalized) || duz(ad).includes(sorguDuz)).length;
-  }, [digerSekme, sorguNormalized, sorguDuz, toplamEslesme]);
-
   return (
     <div>
       <div className="relative max-w-md">
@@ -263,17 +254,6 @@ export function SitelerBrowser({ gruplar, digerSekme }: SitelerBrowserProps) {
         <p className="mt-3 text-sm text-muted">
           {toplamEslesme > 0 ? (
             `${toplamEslesme} sonuç bulundu.`
-          ) : digerSekmeEslesme > 0 && digerSekme ? (
-            <>
-              Bu listede sonuç yok; ancak {digerSekme.etiket} tarafında {digerSekmeEslesme}{" "}
-              eşleşme var:{" "}
-              <Link
-                href={`${digerSekme.href}?ara=${encodeURIComponent(sorgu.trim())}`}
-                className="font-semibold text-gold-dark hover:underline"
-              >
-                {digerSekme.etiket} listesine geçin →
-              </Link>
-            </>
           ) : (
             <>
               Sonuç bulunamadı. Farklı bir isim deneyin veya{" "}

@@ -272,24 +272,8 @@ export default function KirayaVermekPage() {
       <section className="mt-14 max-w-3xl">
         <h2 className="text-xl">Hangi Mahallelerde Çalışıyoruz?</h2>
         <p className="mt-3 text-base leading-relaxed text-body">
-          Eryaman tarafında{" "}
-          {getYayindaMahalleler()
-            .filter((m) => m.ilce === "Etimesgut")
-            .map((m, i, dizi) => (
-              <span key={m.slug}>
-                <Link
-                  href={`/mahalleler/${m.slug}`}
-                  className="font-medium text-navy hover:text-gold-dark hover:underline"
-                >
-                  {m.isim}
-                </Link>
-                {i < dizi.length - 2 ? ", " : i === dizi.length - 2 ? " ve " : ""}
-              </span>
-            ))}
-          ; komşu Yenimahalle tarafında{" "}
-          {getYayindaMahalleler()
-            .filter((m) => m.ilce === "Yenimahalle")
-            .map((m, i, dizi) => (
+          Eryaman&apos;da{" "}
+          {getYayindaMahalleler().map((m, i, dizi) => (
               <span key={m.slug}>
                 <Link
                   href={`/mahalleler/${m.slug}`}

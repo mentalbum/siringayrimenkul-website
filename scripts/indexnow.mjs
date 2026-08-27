@@ -3,7 +3,7 @@
 // dizinini ETKİLEMEZ; Bing/Yandex tarafı içindir.
 //
 // Kullanım:
-//   node scripts/indexnow.mjs /mahalleler/ata-mahallesi/panorama-garden [...yol]
+//   node scripts/indexnow.mjs /mahalleler/tunahan-mahallesi/dema-park [...yol]
 //   node scripts/indexnow.mjs --son-commit          (son commit'te değişen site sayfaları)
 //   node scripts/indexnow.mjs --son-commit=3        (son 3 commit)
 //

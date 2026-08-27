@@ -11,7 +11,6 @@ import {
   getSitelerByMahalle,
   icerikKlasoruTarihi,
 } from "@/lib/content";
-import { eryamandaMi } from "@/lib/bolge";
 import { siteConfig } from "@/lib/site-config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -39,53 +38,47 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * anasayfa hiç çıkmıyordu). */
   const g = (tarih: string) => new Date(tarih);
   const statikSayfalar: MetadataRoute.Sitemap = [
+    // 27.08: Yenimahalle grubu (Ata/Susuz/Cumhuriyet) siteden kaldırıldı —
+    //        footer KÜRESEL şablonundan bölüm silindi, ana sayfa/mahalleler/
+    //        ev-satmak/ev-kiraya/ev-degerleme metinleri değişti; tüm sabit
+    //        tarihler AGENTS.md kuralı gereği elle ilerletildi.
     // 15.08: ana sayfa "kim" bloğuyla yeniden düzenlendi (güvenilir emlakçı
     //        pasajı SSS'ten görünür metne çıktı, blog SSS altına indi, meta
     //        description 229→119 karakter, alıcı hitabı kalktı).
     // 20.08: "Ofisimiz" paragrafı kısa/tam cümlelere bölündü — SERP kesitindeki
     //        özne uyumsuzluğu ("yapıyor" + "veriyoruz") giderildi (Özgün bildirimi).
-    { url: `${baseUrl}/`, lastModified: g("2026-08-20"), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/`, lastModified: g("2026-08-27"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
     //        bilgi sorgusuna oynamıyoruz (Özgün kararı; 1.119 gösterim / 0 tık).
-    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-17")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-27")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
-    { url: `${baseUrl}/etaplar`, lastModified: g("2026-08-08"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/etaplar`, lastModified: g("2026-08-27"), changeFrequency: "weekly", priority: 0.9 },
     /* HUB'LAR ELLE TARİHLENMEZ — aşağıdaki dördü içerik klasöründen beslenir.
      * Elle yazılan tarih bir sonraki içerik değişikliğinde sessizce bayatlıyor:
      * 08.08 ölçümünde /blog 2026-07-24 diyordu ama 07.08'de 24 yazı silinmişti,
      * /siteler 2026-08-02 diyordu ama o gün 14 kayıt yeniden yazılmıştı. */
     { url: `${baseUrl}/siteler`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "weekly", priority: 0.8 },
-    {
-      url: `${baseUrl}/siteler/yenimahalle`,
-      // Grup `ilce` alanından türer (lib/bolge.ts) — sabit mahalle listesi
-      // yazılmaz, yeni mahalle eklenince sessizce yanlış olur.
-      lastModified: icerikKlasoruTarihi(
-        ...yayindaMahalleler.filter((m) => !eryamandaMi(m)).map((m) => `siteler/${m.slug}`)
-      ),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
-    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-15"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-15"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/araclar`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-08"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/araclar`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-10"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-08"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
@@ -120,7 +113,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 22.08: konut türetmesi blok-başına sayıları toplam sanmayı bıraktı
     //        (lib/kunye.ts konutCikar) — 12 sayfada açılış cümlesi ve
     //        ApartmentComplex numberOfAccommodationUnits değişti.
-    site: new Date("2026-08-22"),
+    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
+    site: new Date("2026-08-27"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin
@@ -133,7 +127,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        yerine etap sayfasına giden tek satırlık not basılıyor.
     // 17.08: mahalle SSS'sinden "hangi ilçede yer alıyor?" sorusu silindi —
     //        FAQPage işaretlemesinde duruyordu ve bilgi arayanı çekiyordu.
-    mahalle: new Date("2026-08-17"),
+    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
+    mahalle: new Date("2026-08-27"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
@@ -144,7 +139,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
     // 15.08: ana sayfaya "Eryaman emlakçı" çıpalı bağ eklendi.
-    etap: new Date("2026-08-15"),
+    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
+    etap: new Date("2026-08-27"),
     // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
     //        değişti (5996267, 288167c).
     // 09.08: başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")
@@ -166,7 +162,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        adalarda görünür (bugün tek ada) ve o adanın tazeliği zaten kendi
     //        içerik dosyasından geliyor — 818 sayfaya toplu damga basmak
     //        AGENTS.md'nin uyardığı sahte tazelik olurdu.
-    ada: new Date("2026-08-16"),
+    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
+    ada: new Date("2026-08-27"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
