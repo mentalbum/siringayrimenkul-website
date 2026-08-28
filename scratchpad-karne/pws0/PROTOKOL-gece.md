@@ -317,3 +317,12 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > Bulvar 1071'de duvar; taktik ikinci denemede de CAPTCHA → tur kapandı.
 > Kalan: ŞOA 13. sorgudan (Bulvar 1071, tur-sehit-osman-avci-2908.json[12:],
 > sona 'Eryaman 2. Etap emlakçı' + mahalle sorgusu eklendi) → Şeker → ŞŞ → YS → Yeşilova.
+> 28.08 (akşam, Özgün 'devam+dizin+karne'): YENİ KANAL — Chrome eklentisi koptu,
+> tur uygulama-içi tarayıcıdan (Claude Browser pane) sürdürüldü. İki kontrol sorgusu
+> (Şirin 91 #2, Atalay 0) Chrome'la BİREBİR tuttu → kanal karşılaştırılabilir.
+> DOM farkı: href'ler şifreli (goto), alan adı CITE'tan okunur; kayıtlarda "kanal":"app"
+> ve u alanında "cite:" öneki. ŞOA 41/66'ya geldi (12 Chrome + 29 app). Relax Göksu'da
+> duvar; taktik ikinci denemede de CAPTCHA → tur kapandı. Kalan: ŞOA 54. sorgudan
+> (Relax Göksu, tur-sehit-osman-avci-2908.json[53:], 13 sorgu) → Şeker → ŞŞ → YS → Yeşilova.
+> Ayrıca: bulunabilirlik karnesi HTML üretici (karne-html.py) kuruldu, Artifact yayında;
+> yanlış 29.08 tarih damgaları 28.08 yapıldı; DIZINE-EKLENECEKLER'e 28.08 işaretleri girildi.

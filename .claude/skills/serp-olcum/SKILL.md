@@ -36,3 +36,16 @@ Karneyi betikle üret, elle sayma. Özgün'e özet verirken: ilk 3'te olan /
 4-10 arası / ilk 10 dışı sayıları + "Evinizi Satalım, Kiraya Verelim" ekinin
 kaç sonuçta göründüğü. Başlık değişikliği önerme — title'lar 5 Eylül'e kadar
 donuk (08.08 kararı).
+
+## Yedek kanal: uygulama-içi tarayıcı (28.08 doğrulandı)
+
+Chrome eklentisi koptuğunda veya Chrome duvara çarptığında tur uygulama-içi
+tarayıcıdan (Claude Browser pane, `mcp__Claude_Browser__*`) sürdürülebilir:
+- İki kontrol sorgusu Chrome'la birebir tuttu (Şirin 91 #2, Atalay 0) — sıralar karşılaştırılabilir.
+- DİKKAT: bu tarayıcıya Google şifreli `goto?url=` href'leri servis ediyor; alan adı
+  `cite` öğesinden okunur (h3'ün en yakın atasındaki ilk cite). Görünüm dar açılır —
+  önce `resize_window` 1280×900 yap, yoksa MOBİL SERP ölçersin (karşılaştırılamaz).
+- Kayıtlara `"kanal":"app"` alanı ve `u` yerine `"cite:..."` öneki yazılır.
+- Harita kutusu (.dbg0pd) bu DOM'da her zaman görünmüyor — mahalle sorgularını
+  Chrome'dan ölç veya h değerine güvenme.
+- Duvar IP bazlı: iki kanal aynı günlük sınırı paylaşır, kanal değiştirmek kotayı katlamaz.

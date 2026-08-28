@@ -84,7 +84,14 @@ for r in hrows:
 def hedef(q):
     return hson.get(q.lower())
 
-ETAPLAR = [hedef(f"Eryaman {i}. Etap emlakçı") for i in range(1, 6)]
+def etap_son(i):
+    """iki kaynaktan (hedef dosyası + tur dosyasındaki */etaplar/N kayıtları) en tazesi"""
+    adaylar = [hedef(f"Eryaman {i}. Etap emlakçı")]
+    adaylar += [r for r in rows if r["s"].endswith(f"/etaplar/{i}") and r.get("q", "").startswith("Eryaman")]
+    adaylar = [a for a in adaylar if a]
+    return max(adaylar, key=lambda r: r["d"]) if adaylar else None
+
+ETAPLAR = [etap_son(i) for i in range(1, 6)]
 ANA = hedef("eryaman emlakçı")
 
 TOPLAM_N = sum(v["n"] for v in OLCULEN.values())
@@ -95,7 +102,20 @@ DTOPLAM = sum(DTOT.values())
 
 # kuyruktan bekleyen istekler
 dk = open("DIZINE-EKLENECEKLER.md").read()
-BEKLEYEN_ISTEK = len(re.findall(r"← 2\d\.08 istek gönderildi", dk))
+try:
+    dk2 = open("gsc-dizin-kuyrugu-194.md").read()
+except FileNotFoundError:
+    dk2 = ""
+# yalnız son dalganın istekleri "tarama bekliyor" sayılır (10 günden eski işaretler
+# ya çoktan tarandı ya da düştü — 194'lük tarihi defterin tamamını sayma)
+_bugun = datetime.date.today()
+_istekli = set()
+for metin in (dk, dk2):
+    for m in re.finditer(r"(https://www\.siringayrimenkul\.com/\S+?)\s.*?←\s*(\d\d)\.(\d\d) istek gönderildi", metin):
+        t = datetime.date(_bugun.year, int(m.group(3)), int(m.group(2)))
+        if 0 <= (_bugun - t).days <= 10:
+            _istekli.add(m.group(1).rstrip(">"))
+BEKLEYEN_ISTEK = len(_istekli)
 SIRADAKI = re.findall(r"- \[ \] https://www\.siringayrimenkul\.com(/\S+)\s+<!-- (\d+) gos", dk)[:5]
 
 def yuzde(a, b):
@@ -119,7 +139,7 @@ BULGULAR = {
     "devlet": "12 sorguda ilk 10'da yokuz (adaşsız görünmezler: Mavi Köy, Sedirkent, Selçuklu — istek sırada).",
     "eryaman": "Organikte en dengeli mahalle; mahalle sorgusunda #4'ü ana sayfa karşılıyor (bilinen yamyamlık).",
     "goksu": "En zayıf karne + EN BÜYÜK bayat yığın (36 sayfa, 4.410 gösterim talebi). Harita kutusunda YOKUZ.",
-    "guzelkent": "23 dizinsiz sayfayla en büyük dizinsiz yığın; 8 sorguda ada, 8'inde komşu site bizi temsil ediyor. Mahalle sorgusunda çift kayıp: ne organikte ne kutuda.",
+    "guzelkent": "23 dizinsiz sayfayla en büyük dizinsiz yığın; 8 sorguda ada, 9'unda komşu site bizi temsil ediyor. Mahalle sorgusunda çift kayıp: ne organikte ne kutuda.",
 }
 
 # ---------------- html ----------------
@@ -348,7 +368,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano zayif">
       <h3>Zayıf halkalar</h3>
       <ul>
-        <li><strong>Mahalle sorgularının organiği.</strong> 6 mahallenin 4′ünde “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz; bizi harita kutusu taşıyor.</li>
+        <li><strong>Mahalle sorgularının organiği.</strong> 6 mahallenin 3′ünde (Altay, Devlet, Güzelkent) “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz; bizi harita kutusu taşıyor.</li>
         <li><strong>Göksu + Güzelkent harita kutusu.</strong> Bu iki mahallede kutuda da yokuz — yorum kampanyasında mahalle adı geçirme önceliği bu ikisine kaydı.</li>
         <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083) en büyük iki tazeleme borcu.</li>
         <li><strong>Eski adres kalıntıları.</strong> 13+ sorguda hâlâ eski sayfa adresi listeleniyor (taşınma sindirimi sürüyor).</li>
@@ -357,7 +377,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano">
       <h3>Dizin damlası — sıradaki 5</h3>
       <ul>{siradaki_html}</ul>
-      <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; {BEKLEYEN_ISTEK} istek gönderildi, tarama bekliyor.
+      <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; son 10 günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.
       Sayfa envanteri: {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
     </div>
   </div>

@@ -37,10 +37,10 @@ dogankaya, sergah, demirkent) İKİNCİL — bayat listesi bitmeden istek harcan
 - [ ] https://www.siringayrimenkul.com/araclar/tapu-harci-hesaplama  <!-- 228 gos · tarama 2026-07-19 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/oasis-rezidans  <!-- 224 gos · tarama 2026-07-31 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ozdenizyildizi-sitesi  <!-- 217 gos · tarama 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman  <!-- 196 gos · tarama 2026-07-26 · ADAŞ -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman  <!-- 196 gos · tarama 2026-07-26 · ADAŞ --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/pozitif-life  <!-- 194 gos · tarama 2026-07-30 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yeniceri-kule  <!-- 192 gos · tarama 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · tarama 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · tarama 2026-07-26 --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/vaditepe-baspinar  <!-- 176 gos · tarama 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/oasis-tower  <!-- 173 gos · tarama 2026-08-08 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vizyon-prestige  <!-- 173 gos · tarama 2026-07-26 -->
@@ -196,7 +196,7 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [x] https://www.siringayrimenkul.com/mahalleler/susuz-mahallesi/ende-yasam  <!-- 187 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/cumhuriyet-mahallesi/greenpark-evleri  <!-- 186 gos · kopya 2026-07-27 · 25.08 İSTEK GÖNDERİLDİ -->
 - [x] https://www.siringayrimenkul.com/mahalleler/ata-mahallesi/parkyaman-evleri  <!-- 185 gos · kopya 2026-07-26 · 25.08 İSTEK GÖNDERİLDİ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari  <!-- 184 gos · kopya 2026-07-26 --> ← 28.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/sude-konutlari  <!-- 166 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari  <!-- 160 gos · kopya 2026-07-27 -->
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi  <!-- 160 gos · kopya 2026-07-27 --> ← 27.08 istek gönderildi
@@ -210,13 +210,13 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari  <!-- 114 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/eston-bloklari  <!-- 114 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- 114 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/melis-sitesi  <!-- 110 gos · kopya 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/melis-sitesi  <!-- 110 gos · kopya 2026-07-27 --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/safir-sitesi  <!-- 106 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/zirveden-goksu  <!-- 103 gos · kopya 2026-07-31 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/golkent-1-sitesi  <!-- 103 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit  <!-- 95 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- 93 gos · kopya 2026-07-27 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega  <!-- 93 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/anka-vega  <!-- 93 gos · kopya 2026-07-26 --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/bahar-sitesi  <!-- 88 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/evinora-sitesi  <!-- 87 gos · kopya 2026-08-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/seyirtepe-baspinar  <!-- 86 gos · kopya 2026-07-27 -->
@@ -225,7 +225,7 @@ Toplam talep: 9.453 gösterim. Aşağıda >=50 gösterimli 64 sayfa, talep sıra
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/safi-apak-sitesi  <!-- 75 gos · kopya 2026-07-27 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi  <!-- 75 gos · kopya 2026-07-29 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sahinbey-sitesi  <!-- 74 gos · kopya 2026-07-26 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life  <!-- 72 gos · kopya 2026-07-26 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/dogan-life  <!-- 72 gos · kopya 2026-07-26 --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi  <!-- 71 gos · kopya 2026-07-29 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi  <!-- 70 gos · kopya 2026-07-26 -->
@@ -412,7 +412,7 @@ SERP'te ilk 10'a giremiyorlar; Google kopyaları 26-29.07'den. Yeniden tarama is
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/safir-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/taskent-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman  <!-- 4-10 arası (#6), bayat 26.07 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman  <!-- 4-10 arası (#6), bayat 26.07 --> ← 28.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi  <!-- #4, bayat 26.07 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/konut-sitesi  <!-- bayat ama sorgu yapısal jenerik; düşük öncelik -->
 
