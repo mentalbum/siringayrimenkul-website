@@ -363,3 +363,13 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > ADAYLARI (v4 'dizinsize kota harcanmaz' — Özgün onayı bekliyor): mavi-koy,
 > sedirkent, lacin, kusburnu, gulsah-95, konuta-ozlem, bulvar-1071, relax.
 > Kaynak: bulunabilirlik-tur-plani-2808.md bölüm C/E/F/G/H.
+> 28.08 (öğleden sonra, otonom döngü) — Eylül Adım-0 teşhisi ölçüldü:
+> "etimesgut emlakçı" İLK 10 DIŞI→9 (ana sayfa temsil; SERP dizin/portal
+> ağırlıklı, /hakkimizda title dokunuşuyla ilk 5 gerçekçi); "etimesgut emlak"
+> hâlâ dışarıda (tam portal SERP'i, hedeflenmez). GÖKSU TAZELEME SINIFI
+> KAPANDI: 13 damla adayının 13'ü bugünkü turlarda yeniden ölçüldü, 12'si ilk
+> 10'da (seyirtepe #2, utkan #2, golkent/admira/kafdagi/aksafak/sude #3...) —
+> bunlara KOTA HARCANMAZ; tek istisna oyak-goksupark (sıra 0 ama istek 25.08
+> gitti, yansıma beklenir). Damla önceliği fiilen: endora-eryaman > ŞŞ bayatları
+> (atayildiz 184, bizim-alperenler 114, melis 110 — ŞŞ henüz yeniden ölçülmedi)
+> > eski-adres sınıfı (liderkent/yagan-kent/polsan1) > Devlet tazele dörtlüsü.
