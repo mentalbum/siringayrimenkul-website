@@ -373,3 +373,11 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > gitti, yansıma beklenir). Damla önceliği fiilen: endora-eryaman > ŞŞ bayatları
 > (atayildiz 184, bizim-alperenler 114, melis 110 — ŞŞ henüz yeniden ölçülmedi)
 > > eski-adres sınıfı (liderkent/yagan-kent/polsan1) > Devlet tazele dörtlüsü.
+> 28.08 (14:30, otonom döngü) — ŞŞ damla-öncesi yeniden ölçüm (6 sorgu):
+> bizim-alperenler 0→3, ovgu 0→3, oz-cozum-kent 0→5, selinkent 0→3
+> KENDİLİĞİNDEN kurtuldu — damladan DÜŞ. Geçerli kalanlar: atayildiz (184,
+> hâlâ 0) + melis (110, hâlâ 0). GÜNCEL NET DAMLA SIRASI: sehit-ferhat-koc
+> (Özgün kararı) > endora-eryaman (196) > atayildiz (184) > elit-yasam-1
+> (ŞOA 122) > melis (110) > gokdemirler-suit (95) > anka-vega (93) >
+> dogan-life (72) > rainbow (71) > Devlet dörtlüsü (selcuklu/alis/guneyce/
+> yeni-huzur) + eski-adres sınıfı (liderkent/yagan-kent/polsan1).
