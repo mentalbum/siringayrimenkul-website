@@ -88,3 +88,32 @@ SERP'ten güçlü istek adayları: isikkent-sitesi (İzmir adaşına rağmen #1 
 platin-konutlari (istek 27.08'de gitti, yansıma bekleniyor). Ada-gölgeli (İKİNCİL): intes-dogakent,
 elif-elvan, lacin-eryaman, kent-konaklari, dogankaya. Yapısal adaş: atakent, beyaz, maximum,
 oyak-sitesi, toki, turk-konut-calisanlar.
+
+## 4. GÖKSU MAHALLESİ — TAMAMLANDI ✅ (dizin + 67 SERP ölçümü, 28.08)
+
+Dizin: 11 dizinsiz · 36 bayat (EN BÜYÜK YIĞIN, 4410 gos) · 8 taze.
+SERP: ~35/67 ilk 3 (%52 — en zayıf mahalle, beklendiği gibi) · organik 1: 14
+(agacli-gol, akduzen, alina, eceser, evinora, finest, hava-destek, mercan-smart,
+park-evo, park-mira, sergoksu, tulip, uzunali-2 ×2 sorgu).
+KRİTİK BULGU: 'Göksu mahallesi emlakçı'da organik #7 + HARİTA KUTUSUNDA YOKUZ
+(Göksu Doğa/Buğra/Alaçatı) — tek mahalle kutusuzuz; yorum kampanyasına Göksu eklenmeli.
+DESEN: 12+ sorguda site yerine ada/mahalle/komşu sayfa çıkıyor (admira, enday, arma,
+aura, bilge, vadi, buse→silinmiş-Ata-adresi, sude→finest, gsv/utkan/utku→vitrin adaları,
+kafdagi/ma1/paro/selale/zirveden/vaditepe→adalar) — bayat yığınının SERP'teki yüzü.
+
+Dizine eklenecek (talep sıralı ilk 12):
+- [ ] buse-konutlari — 460 gos, tarama 2026-07-26
+- [ ] polsan-1-gozde-sitesi — 431 gos, tarama 2026-07-28
+- [ ] konum-eryaman — 262 gos, tarama 2026-07-26
+- [ ] havuzlu-bahce-konutlari — 248 gos, tarama 2026-07-26
+- [ ] kasmir-mavi-orkide-sitesi — 248 gos, tarama 2026-07-26
+- [ ] oyak-goksupark — 245 gos, tarama 2026-07-27
+- [ ] arissa-goksu — 232 gos, tarama 2026-07-26
+- [ ] yeniceri-kule — 192 gos, tarama 2026-07-27
+- [ ] vaditepe-baspinar — 176 gos, tarama 2026-07-27
+- [ ] aksafak-sitesi — 160 gos, tarama 2026-07-27
+- [ ] goksupark-konutlari — 160 gos, tarama 2026-07-27
+- [ ] bordo-loca — 155 gos, tarama 2026-07-31
+
+Dizinsiz istek adayları (SERP kanıtlı): arissa-goksu, irem-konutlari, kasmir-mavi-orkide,
+oyak-goksupark, goksu-evleri (hepsi ilk 10 dışı + SERP Eryaman odaklı).
