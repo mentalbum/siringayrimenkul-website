@@ -303,3 +303,6 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > 28.08 (gece 02:23 cron): Eryaman TAMAMLANDI 51/51 + Göksu 16/67'de duvar (sekme-yenile
 > taktiği denendi, ikinci sorgu da CAPTCHA → tur kapandı; gecelik 43 ölçüm). Kalan: Göksu 17.
 > sorgudan (Göksu Aura, tur-goksu-2808.json[16:]) → Güzelkent → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
+> 28.08 (gündüz): Göksu TAMAMLANDI 67/67 + Güzelkent 24/79'da duvar (taktik ikinci denemede
+> de CAPTCHA → tur kapandı; günlük 117 ölçüm). Kalan: Güzelkent 25. sorgudan (Erenköy,
+> tur-guzelkent-2808.json[24:]) → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
