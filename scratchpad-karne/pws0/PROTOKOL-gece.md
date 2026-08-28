@@ -310,3 +310,10 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > 67/79). Şirin 91'de duvar; taktik (sekme kapat+yeni+30sn) ikinci denemede de CAPTCHA →
 > tur kapandı. Kalan: Güzelkent 68. sorgudan (Şirin 91, tur-guzelkent-2808.json[67:],
 > 12 sorgu — sonuncusu mahalle sorgusu) → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
+> 29.08 (devam, Özgün 'devam'): duvar ~5 dk'da açıldı, Güzelkent 79/79 TAMAMLANDI.
+> Karneye Devlet (5.) + Güzelkent (6.) bölümleri eklendi. Sıradaki: ŞOA
+> (tur-sehit-osman-avci-2908.json + 'Eryaman 2. Etap emlakçı') → Şeker → ŞŞ → YS → Yeşilova.
+> 29.08 (gece devamı): ŞOA turu başladı, 12/66 ölçüldü (75-yil→bp-residence).
+> Bulvar 1071'de duvar; taktik ikinci denemede de CAPTCHA → tur kapandı.
+> Kalan: ŞOA 13. sorgudan (Bulvar 1071, tur-sehit-osman-avci-2908.json[12:],
+> sona 'Eryaman 2. Etap emlakçı' + mahalle sorgusu eklendi) → Şeker → ŞŞ → YS → Yeşilova.
