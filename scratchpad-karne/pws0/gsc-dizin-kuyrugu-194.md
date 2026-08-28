@@ -381,3 +381,17 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > (ŞOA 122) > melis (110) > gokdemirler-suit (95) > anka-vega (93) >
 > dogan-life (72) > rainbow (71) > Devlet dörtlüsü (selcuklu/alis/guneyce/
 > yeni-huzur) + eski-adres sınıfı (liderkent/yagan-kent/polsan1).
+
+> 28.08 (15:35-16:05, otonom döngü) — DAMLA KOŞULDU (10:26 cron'u kota
+> kapalıyken es geçmişti; öğleden sonra penceresi tuttu): 9 İSTEK, 9 KABUL,
+> SIFIR KOTA REDDİ. Sıra (net damla listesinden): (1) sehit-ferhat-koc
+> [dizinsiz — Özgün'ün 23.08 kararı yerine geldi; ŞFK/Er-Ay 3 birleştirme
+> 301 PR'ının ön şartı sağlandı], (2) endora-eryaman, (3) atayildiz,
+> (4) elit-yasam-1, (5) melis, (6) gokdemirler-suit, (7) anka-vega,
+> (8) dogan-life, (9) rainbow — hepsi Temmuz kopyalı bayat tazeleme.
+> API ön-doğrulaması 2 kota kurtardı: cozum-kent bugün 10:28 kendiliğinden
+> taranmış (düştü); ŞŞ dörtlüsü zaten SERP'te kurtulmuştu. Kota payı bilinçli
+> bırakıldı (9'da duruldu). Kalan sıra: selcuklu/alis/guneyce/yeni-huzur
+> (Devlet) + gunotesi + eski-adres sınıfı (liderkent/yagan-kent/polsan1).
+> Yarın yansıma ölçümü: sarı-çınar emsali aynı-gün #2 vermişti — 9 sayfanın
+> SERP'i 29.08 turunda yeniden ölçülmeli.
