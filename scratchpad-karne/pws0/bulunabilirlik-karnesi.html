@@ -1,0 +1,238 @@
+<title>Bulunabilirlik Karnesi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
+<style>
+:root {
+  --zemin:#f4f6f9; --yuzey:#ffffff; --cizgi:#dfe4ec; --murekkep:#18212f; --m2:#4d5a6e; --m3:#7b8798;
+  --lacivert:#1d3f77; --lacivert-2:#7d9cc9; --lacivert-3:#d7dfec; --altin:#9a742a;
+  --iyi:#1f6b3d; --iyi-z:#e3efe7; --kotu:#a3352d; --kotu-z:#f6e7e5; --orta-r:#8a6410; --orta-z:#f3ecdc;
+  --d1:#1d3f77; --d2:#5c7cb2; --d3:#a9bdd9; --d4:#e7ebf1; --d4c:#9aa5b4;
+}
+:root:not([data-theme="light"]) { }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --zemin:#0d1420; --yuzey:#16202f; --cizgi:#2a3648; --murekkep:#e7ecf4; --m2:#a9b4c4; --m3:#7f8b9c;
+    --lacivert:#83a7de; --lacivert-2:#48699e; --lacivert-3:#243350; --altin:#d3a54e;
+    --iyi:#5cb684; --iyi-z:#17301f; --kotu:#e08078; --kotu-z:#3a1f1c; --orta-r:#d3a54e; --orta-z:#33290f;
+    --d1:#83a7de; --d2:#48699e; --d3:#2e4160; --d4:#1b2536; --d4c:#556278;
+  }
+}
+:root[data-theme="dark"] {
+  --zemin:#0d1420; --yuzey:#16202f; --cizgi:#2a3648; --murekkep:#e7ecf4; --m2:#a9b4c4; --m3:#7f8b9c;
+  --lacivert:#83a7de; --lacivert-2:#48699e; --lacivert-3:#243350; --altin:#d3a54e;
+  --iyi:#5cb684; --iyi-z:#17301f; --kotu:#e08078; --kotu-z:#3a1f1c; --orta-r:#d3a54e; --orta-z:#33290f;
+  --d1:#83a7de; --d2:#48699e; --d3:#2e4160; --d4:#1b2536; --d4c:#556278;
+}
+* { box-sizing:border-box }
+body { background:var(--zemin); color:var(--murekkep); margin:0;
+  font:16px/1.55 "Source Sans 3", "Segoe UI", system-ui, sans-serif; }
+.sarici { max-width:1020px; margin:0 auto; padding:32px 20px 64px }
+h1,h2,h3,summary strong { font-family:Archivo, "Source Sans 3", sans-serif; letter-spacing:-.01em }
+h1 { font-size:clamp(26px,4vw,36px); font-weight:800; margin:0; text-wrap:balance }
+h2 { font-size:19px; font-weight:700; margin:40px 0 12px }
+.ust { display:flex; flex-wrap:wrap; gap:8px 24px; align-items:baseline; border-bottom:3px solid var(--lacivert); padding-bottom:14px }
+.ust .kim { color:var(--m2); font-weight:600 }
+.ust .tarih { margin-left:auto; color:var(--m3); font-size:14px }
+.not { color:var(--m3); font-size:13.5px; margin-top:8px }
+.kartlar { display:grid; grid-template-columns:repeat(auto-fit,minmax(170px,1fr)); gap:12px; margin-top:20px }
+.kart { background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; padding:14px 16px }
+.kart .buyuk { font-family:Archivo,sans-serif; font-size:30px; font-weight:800; font-variant-numeric:tabular-nums; line-height:1.1 }
+.kart .buyuk small { font-size:16px; font-weight:600; color:var(--m2) }
+.kart .etiket { font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; color:var(--m3); margin-top:4px }
+.kart.vurgu { border-top:3px solid var(--altin) }
+.tablo-kabuk { overflow-x:auto; background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px }
+table { border-collapse:collapse; width:100%; min-width:720px; font-variant-numeric:tabular-nums }
+th { text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3);
+  padding:12px 14px 8px; border-bottom:1px solid var(--cizgi); font-weight:600 }
+td { padding:12px 14px; border-bottom:1px solid var(--cizgi); vertical-align:middle }
+tr:last-child td { border-bottom:none }
+td.mah .alt { display:block }
+.alt { color:var(--m3); font-size:13px }
+td.num { font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }
+.meter { display:flex; gap:2px; height:22px; min-width:170px; border-radius:4px; overflow:hidden }
+.meter span { display:flex; align-items:center; justify-content:center; min-width:14px }
+.meter i { font-style:normal; font-size:11.5px; font-weight:700 }
+.m1 { background:var(--lacivert) } .m1 i { color:var(--yuzey) }
+.m2 { background:var(--lacivert-2) } .m2 i { color:var(--yuzey) }
+.m3 { background:var(--lacivert-3) } .m3 i { color:var(--m2) }
+.d1 { background:var(--d1) } .d1 i { color:var(--yuzey) }
+.d2 { background:var(--d2) } .d2 i { color:var(--yuzey) }
+.d3 { background:var(--d3) } .d3 i { color:#18212f }
+:root[data-theme="dark"] .d3 i { color:var(--murekkep) }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .d3 i { color:var(--murekkep) } }
+.d4 { background:var(--d4); outline:1px dashed var(--d4c); outline-offset:-1px } .d4 i { color:var(--d4c) }
+.pct { display:block; font-size:12.5px; color:var(--m2); margin-top:3px }
+.chip { display:inline-block; padding:2px 9px; border-radius:99px; font-size:13px; font-weight:600; white-space:nowrap }
+.chip.iyi { background:var(--iyi-z); color:var(--iyi) }
+.chip.kotu { background:var(--kotu-z); color:var(--kotu) }
+.chip.orta { background:var(--orta-z); color:var(--orta-r) }
+.chip.nul { background:transparent; color:var(--m3); border:1px dashed var(--cizgi) }
+.lejant { display:flex; flex-wrap:wrap; gap:14px; font-size:13px; color:var(--m2); margin:10px 2px 0 }
+.lejant span { display:inline-flex; align-items:center; gap:6px }
+.lejant b { width:12px; height:12px; border-radius:3px; display:inline-block }
+.bekler { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:10px; margin-top:12px }
+.bek { background:var(--yuzey); border:1px dashed var(--cizgi); border-radius:8px; padding:10px 14px; display:flex; flex-direction:column; gap:2px }
+.bek > span:first-of-type { color:var(--altin); font-weight:600; font-size:13.5px }
+.iki { display:grid; grid-template-columns:1fr 1fr; gap:16px }
+@media (max-width:760px) { .iki { grid-template-columns:1fr } }
+.pano { background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; padding:16px 18px }
+.pano h3 { margin:0 0 10px; font-size:16px }
+.pano ul { margin:0; padding:0; list-style:none }
+.pano li { display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid var(--cizgi); font-size:14.5px }
+.pano li:last-child { border-bottom:none }
+.zayif li { display:block }
+.zayif li strong { color:var(--kotu) }
+details { background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; margin-bottom:10px; padding:0 18px }
+summary { cursor:pointer; padding:13px 0; font-size:15.5px }
+summary:focus-visible { outline:2px solid var(--lacivert); outline-offset:2px; border-radius:4px }
+details[open] summary { border-bottom:1px solid var(--cizgi) }
+.bulgu { font-size:14.5px; color:var(--m2); margin:12px 0 }
+.etk { font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3); margin:14px 0 6px; font-weight:600 }
+.tags { margin:0 0 14px; line-height:2 }
+.tag { display:inline-block; padding:2px 9px; border-radius:5px; font-size:13px; margin-right:4px }
+.t1 { background:var(--lacivert-3); color:var(--lacivert) }
+:root[data-theme="dark"] .t1, .t3 { font-weight:600 }
+.t3 { background:var(--kotu-z); color:var(--kotu) }
+.dip { margin-top:40px; padding-top:14px; border-top:1px solid var(--cizgi); color:var(--m3); font-size:13px }
+@media (prefers-reduced-motion:no-preference) { details { transition:border-color .15s } }
+</style>
+<div class="sarici" lang="tr">
+  <header class="ust">
+    <h1>Bulunabilirlik Karnesi</h1>
+    <span class="kim">Şirin Gayrimenkul · Eryaman</span>
+    <span class="tarih">Güncelleme: 28.08.2026</span>
+  </header>
+  <p class="not">Tüm ölçümler kişiselleştirmesiz Google aramasıyla yapılır (pws=0, Türkiye).
+  Google ilk ~10 sonucu gösterir; “görünmez” = ilk 10′da yok demektir. Harita kutusu organikten ayrı sayılır.</p>
+
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">292</div><div class="etiket">site sorgusu ölçüldü · 6/11 mahalle</div></div>
+    <div class="kart"><div class="buyuk">%66</div><div class="etiket">sorguların ilk 3′te olduğu oran</div></div>
+    <div class="kart"><div class="buyuk">73</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
+    <div class="kart vurgu"><div class="buyuk">2<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita 1.) · 17.08</div></div>
+  </div>
+
+  <h2>Mahalle karnesi</h2>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Mahalle</th><th>Site sorgularında sıra dağılımı</th><th>Organik 1</th><th>“… mahallesi emlakçı”</th><th>Sayfa tazeliği (dizin)</th></tr></thead>
+    <tbody>
+    <tr>
+      <td class="mah"><strong>Tunahan</strong><span class="alt">27 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="23 ilk üçte, 3 dört-on arası, 1 ilk onda yok"><span class="m1" style="flex:23"><i>23</i></span><span class="m2" style="flex:3"><i>3</i></span><span class="m3" style="flex:1"><i>1</i></span></div><span class="pct">%85 ilk 3</span></td>
+      <td class="num">2</td>
+      <td class="chips"><span class="chip orta">9.</span> <span class="chip iyi">kutu 1.</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="21 taze, 4 orta, 4 bayat, 0 dizinsiz"><span class="d1" style="flex:21"><i>21</i></span><span class="d2" style="flex:4"><i>4</i></span><span class="d3" style="flex:4"><i>4</i></span></div></td>
+    </tr>
+    <tr>
+      <td class="mah"><strong>Altay</strong><span class="alt">27 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="21 ilk üçte, 4 dört-on arası, 2 ilk onda yok"><span class="m1" style="flex:21"><i>21</i></span><span class="m2" style="flex:4"><i>4</i></span><span class="m3" style="flex:2"><i>2</i></span></div><span class="pct">%78 ilk 3</span></td>
+      <td class="num">11</td>
+      <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip iyi">kutu 1.</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="11 taze, 3 orta, 12 bayat, 2 dizinsiz"><span class="d1" style="flex:11"><i>11</i></span><span class="d2" style="flex:3"><i>3</i></span><span class="d3" style="flex:12"><i>12</i></span><span class="d4" style="flex:2"><i>2</i></span></div></td>
+    </tr>
+    <tr>
+      <td class="mah"><strong>Devlet</strong><span class="alt">44 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="26 ilk üçte, 6 dört-on arası, 12 ilk onda yok"><span class="m1" style="flex:26"><i>26</i></span><span class="m2" style="flex:6"><i>6</i></span><span class="m3" style="flex:12"><i>12</i></span></div><span class="pct">%59 ilk 3</span></td>
+      <td class="num">11</td>
+      <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip iyi">kutu 1.</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="9 taze, 6 orta, 23 bayat, 8 dizinsiz"><span class="d1" style="flex:9"><i>9</i></span><span class="d2" style="flex:6"><i>6</i></span><span class="d3" style="flex:23"><i>23</i></span><span class="d4" style="flex:8"><i>8</i></span></div></td>
+    </tr>
+    <tr>
+      <td class="mah"><strong>Eryaman</strong><span class="alt">50 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="38 ilk üçte, 4 dört-on arası, 8 ilk onda yok"><span class="m1" style="flex:38"><i>38</i></span><span class="m2" style="flex:4"><i>4</i></span><span class="m3" style="flex:8"><i>8</i></span></div><span class="pct">%76 ilk 3</span></td>
+      <td class="num">17</td>
+      <td class="chips"><span class="chip orta">4.</span> <span class="chip iyi">kutu 1.</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="7 taze, 17 orta, 25 bayat, 3 dizinsiz"><span class="d1" style="flex:7"><i>7</i></span><span class="d2" style="flex:17"><i>17</i></span><span class="d3" style="flex:25"><i>25</i></span><span class="d4" style="flex:3"><i>3</i></span></div></td>
+    </tr>
+    <tr>
+      <td class="mah"><strong>Göksu</strong><span class="alt">66 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="37 ilk üçte, 16 dört-on arası, 13 ilk onda yok"><span class="m1" style="flex:37"><i>37</i></span><span class="m2" style="flex:16"><i>16</i></span><span class="m3" style="flex:13"><i>13</i></span></div><span class="pct">%56 ilk 3</span></td>
+      <td class="num">15</td>
+      <td class="chips"><span class="chip orta">7.</span> <span class="chip kotu">kutuda yok</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="8 taze, 14 orta, 36 bayat, 11 dizinsiz"><span class="d1" style="flex:8"><i>8</i></span><span class="d2" style="flex:14"><i>14</i></span><span class="d3" style="flex:36"><i>36</i></span><span class="d4" style="flex:11"><i>11</i></span></div></td>
+    </tr>
+    <tr>
+      <td class="mah"><strong>Güzelkent</strong><span class="alt">78 site sorgusu</span></td>
+      <td class="met"><div class="meter" role="img" aria-label="48 ilk üçte, 20 dört-on arası, 10 ilk onda yok"><span class="m1" style="flex:48"><i>48</i></span><span class="m2" style="flex:20"><i>20</i></span><span class="m3" style="flex:10"><i>10</i></span></div><span class="pct">%62 ilk 3</span></td>
+      <td class="num">17</td>
+      <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip kotu">kutuda yok</span></td>
+      <td class="met"><div class="meter dm" role="img" aria-label="16 taze, 11 orta, 32 bayat, 23 dizinsiz"><span class="d1" style="flex:16"><i>16</i></span><span class="d2" style="flex:11"><i>11</i></span><span class="d3" style="flex:32"><i>32</i></span><span class="d4" style="flex:23"><i>23</i></span></div></td>
+    </tr></tbody>
+  </table></div>
+  <div class="lejant">
+    <span><b style="background:var(--lacivert)"></b> ilk 3</span>
+    <span><b style="background:var(--lacivert-2)"></b> 4–10</span>
+    <span><b style="background:var(--lacivert-3)"></b> ilk 10′da yok</span>
+    <span style="margin-left:14px"><b style="background:var(--d1)"></b> taze</span>
+    <span><b style="background:var(--d2)"></b> orta</span>
+    <span><b style="background:var(--d3)"></b> bayat</span>
+    <span><b style="background:var(--d4);outline:1px dashed var(--d4c)"></b> dizinsiz</span>
+  </div>
+
+  <div class="bekler"><div class="bek"><strong>Şehit Osman Avcı</strong><span>sürüyor — 31/66 ölçüldü</span><span class="alt">29 bayat · 15 dizinsiz</span></div><div class="bek"><strong>Şeker</strong><span>sırada</span><span class="alt">4 bayat · 4 dizinsiz</span></div><div class="bek"><strong>Şeyh Şamil</strong><span>sırada</span><span class="alt">22 bayat · 10 dizinsiz</span></div><div class="bek"><strong>Yavuz Selim</strong><span>sırada</span><span class="alt">32 bayat · 7 dizinsiz</span></div><div class="bek"><strong>Yeşilova</strong><span>sırada</span><span class="alt">12 bayat · 2 dizinsiz</span></div></div>
+
+  <h2>Etap sorguları</h2>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Sorgu</th><th>Organik</th><th>Harita</th><th>Son ölçüm</th></tr></thead>
+    <tbody><tr><td>Eryaman 1. Etap emlakçı</td>
+    <td><span class="chip iyi">2.</span></td><td><span class="chip iyi">kutu 2.</span></td><td class="alt">21.08</td></tr><tr><td>Eryaman 2. Etap emlakçı</td>
+    <td><span class="chip orta">7.</span></td><td><span class="chip kotu">kutuda yok</span></td><td class="alt">21.08</td></tr><tr><td>Eryaman 3. Etap emlakçı</td>
+    <td><span class="chip orta">6.</span></td><td><span class="chip kotu">kutuda yok</span></td><td class="alt">21.08</td></tr><tr><td>Eryaman 4. Etap emlakçı</td>
+    <td><span class="chip iyi">2.</span></td><td><span class="chip iyi">kutu 1.</span></td><td class="alt">21.08</td></tr><tr><td>Eryaman 5. Etap emlakçı</td>
+    <td><span class="chip iyi">2.</span></td><td><span class="chip iyi">kutu 1.</span></td><td class="alt">21.08</td></tr></tbody>
+  </table></div>
+
+  <div class="iki" style="margin-top:24px">
+    <div class="pano zayif">
+      <h3>Zayıf halkalar</h3>
+      <ul>
+        <li><strong>Mahalle sorgularının organiği.</strong> 6 mahallenin 4′ünde “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz; bizi harita kutusu taşıyor.</li>
+        <li><strong>Göksu + Güzelkent harita kutusu.</strong> Bu iki mahallede kutuda da yokuz — yorum kampanyasında mahalle adı geçirme önceliği bu ikisine kaydı.</li>
+        <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083) en büyük iki tazeleme borcu.</li>
+        <li><strong>Eski adres kalıntıları.</strong> 13+ sorguda hâlâ eski sayfa adresi listeleniyor (taşınma sindirimi sürüyor).</li>
+      </ul>
+    </div>
+    <div class="pano">
+      <h3>Dizin damlası — sıradaki 5</h3>
+      <ul><li><span>mia-concept-konutlari</span><span class="alt">Şehit Osman Avcı · 563 gösterim talebi</span></li><li><span>buse-konutlari</span><span class="alt">Göksu · 460 gösterim talebi</span></li><li><span>polsan-1-gozde</span><span class="alt">Göksu · 431 gösterim talebi</span></li><li><span>terasevler-eryaman</span><span class="alt">Yavuz Selim · 347 gösterim talebi</span></li><li><span>dogapark</span><span class="alt">Yavuz Selim · 325 gösterim talebi</span></li></ul>
+      <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; 11 istek gönderildi, tarama bekliyor.
+      Sayfa envanteri: 115 taze · 115 orta · 239 bayat · 85 dizinsiz (toplam 554).</p>
+    </div>
+  </div>
+
+  <h2>Mahalle ayrıntıları</h2>
+  
+    <details><summary><strong>Tunahan</strong><span class="alt"> — %85 ilk 3 · 2 organik 1 · 1 görünmez</span></summary>
+      <p class="bulgu">En güçlü mahalle; 21 sayfası taze. Mahalle sorgusunda organik 9 ama harita kutusu 1.</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">gokdemir-premium</span> <span class="tag t1">ozar</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">tunahan</span></p>
+    </details>
+    <details><summary><strong>Altay</strong><span class="alt"> — %78 ilk 3 · 11 organik 1 · 2 görünmez</span></summary>
+      <p class="bulgu">Site sorgularında güçlü; mahalle sorgusunda organikte yokuz, kutu 1. taşıyor.</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">akturk-bloklari</span> <span class="tag t1">cabadag-bloklari</span> <span class="tag t1">ilbeyi</span> <span class="tag t1">kutlutas</span> <span class="tag t1">lila-park</span> <span class="tag t1">mood-street</span> <span class="tag t1">motto-butik</span> <span class="tag t1">oasis-tower</span> <span class="tag t1">palmiye-evleri</span> <span class="tag t1">pembe-ruya-evleri</span> <span class="tag t1">sutek-bloklari</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">ataturk</span> <span class="tag t3">vatan</span></p>
+    </details>
+    <details><summary><strong>Devlet</strong><span class="alt"> — %59 ilk 3 · 11 organik 1 · 12 görünmez</span></summary>
+      <p class="bulgu">12 sorguda ilk 10&#x27;da yokuz (adaşsız görünmezler: Mavi Köy, Sedirkent, Selçuklu — istek sırada).</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">bayrak</span> <span class="tag t1">cagkent</span> <span class="tag t1">cayilkay</span> <span class="tag t1">dastarli</span> <span class="tag t1">eryaman-royal-city</span> <span class="tag t1">mil-kooperatifi</span> <span class="tag t1">oray</span> <span class="tag t1">ornek-ari</span> <span class="tag t1">oz-gimat</span> <span class="tag t1">tes-is-bloklari</span> <span class="tag t1">turkkonut-istas</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">alis</span> <span class="tag t3">asiyan</span> <span class="tag t3">denizim</span> <span class="tag t3">guneyce</span> <span class="tag t3">ilk-bahar</span> <span class="tag t3">mavi-koy</span> <span class="tag t3">referans-ankara</span> <span class="tag t3">sedirkent</span> <span class="tag t3">selcuklu</span> <span class="tag t3">yeni-huzur-bahcesi</span> <span class="tag t3">yesiloz</span> <span class="tag t3">yuceyurt</span></p>
+    </details>
+    <details><summary><strong>Eryaman</strong><span class="alt"> — %76 ilk 3 · 17 organik 1 · 8 görünmez</span></summary>
+      <p class="bulgu">Organikte en dengeli mahalle; mahalle sorgusunda #4&#x27;ü ana sayfa karşılıyor (bilinen yamyamlık).</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">ankapark-konutlari</span> <span class="tag t1">arya-evleri</span> <span class="tag t1">asm-golt</span> <span class="tag t1">asm-prestij-konutlari</span> <span class="tag t1">ay</span> <span class="tag t1">ayka-park</span> <span class="tag t1">bahar</span> <span class="tag t1">caglar</span> <span class="tag t1">elif-elvan</span> <span class="tag t1">elif-ozgen</span> <span class="tag t1">gencler</span> <span class="tag t1">intes-dogakent-konutlari</span> <span class="tag t1">kayaevleri</span> <span class="tag t1">lapis-garden</span> <span class="tag t1">pinar</span> <span class="tag t1">ra-da-life</span> <span class="tag t1">yesil-manolya</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">atakent</span> <span class="tag t3">beyaz-residence</span> <span class="tag t3">isikkent</span> <span class="tag t3">maximum-konutlari</span> <span class="tag t3">oyak</span> <span class="tag t3">platin-konutlari</span> <span class="tag t3">toki-konutlari</span> <span class="tag t3">turk-konut-calisanlar</span></p>
+    </details>
+    <details><summary><strong>Göksu</strong><span class="alt"> — %56 ilk 3 · 15 organik 1 · 13 görünmez</span></summary>
+      <p class="bulgu">En zayıf karne + EN BÜYÜK bayat yığın (36 sayfa, 4.410 gösterim talebi). Harita kutusunda YOKUZ.</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">agacli-gol</span> <span class="tag t1">akduzen</span> <span class="tag t1">alina-konutlari</span> <span class="tag t1">eceser</span> <span class="tag t1">enday</span> <span class="tag t1">evinora</span> <span class="tag t1">finest-bloklari</span> <span class="tag t1">hava-destek</span> <span class="tag t1">mercan-smart-house</span> <span class="tag t1">park-evo-konutlari</span> <span class="tag t1">park-mira-evleri</span> <span class="tag t1">sergoksu-konutlari</span> <span class="tag t1">tulip-life</span> <span class="tag t1">uzunali-goksu-konutlari</span> <span class="tag t1">uzunali-goksu-konutlari-2</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">angora</span> <span class="tag t3">arissa-goksu</span> <span class="tag t3">bordo-loca</span> <span class="tag t3">doga-konutlari</span> <span class="tag t3">goksu-evleri</span> <span class="tag t3">goksu-park-vadi-konutlari</span> <span class="tag t3">goksupark-konutlari</span> <span class="tag t3">havacilar</span> <span class="tag t3">hekimler-ve-saglikcilar</span> <span class="tag t3">irem-konutlari</span> <span class="tag t3">kasmir-mavi-orkide</span> <span class="tag t3">merkez</span> <span class="tag t3">oyak-goksupark</span></p>
+    </details>
+    <details><summary><strong>Güzelkent</strong><span class="alt"> — %62 ilk 3 · 17 organik 1 · 10 görünmez</span></summary>
+      <p class="bulgu">23 dizinsiz sayfayla en büyük dizinsiz yığın; 8 sorguda ada, 8&#x27;inde komşu site bizi temsil ediyor. Mahalle sorgusunda çift kayıp: ne organikte ne kutuda.</p>
+      <p class="etk">Organik 1 olduklarımız</p><p class="tags"><span class="tag t1">akkonak</span> <span class="tag t1">boyut</span> <span class="tag t1">buyuk-ankara</span> <span class="tag t1">cozum-kent</span> <span class="tag t1">didem</span> <span class="tag t1">eczacilar</span> <span class="tag t1">isi-kent</span> <span class="tag t1">kosk</span> <span class="tag t1">kucuk-ankara-villalari</span> <span class="tag t1">nazlideniz</span> <span class="tag t1">postakent</span> <span class="tag t1">renk-villalari</span> <span class="tag t1">ritim-eryaman</span> <span class="tag t1">yeni-isikent</span> <span class="tag t1">yenigun-isigi</span> <span class="tag t1">yesil-guven-kent</span> <span class="tag t1">yesimkent</span></p>
+      <p class="etk">İlk 10′da görünmediklerimiz</p><p class="tags"><span class="tag t3">aksu</span> <span class="tag t3">asilkent</span> <span class="tag t3">ekin</span> <span class="tag t3">erenkoy</span> <span class="tag t3">gokkusagi</span> <span class="tag t3">kurtulus</span> <span class="tag t3">master-kent</span> <span class="tag t3">meltem</span> <span class="tag t3">mesa</span> <span class="tag t3">oz-muhtar</span></p>
+    </details>
+
+  <p class="dip">Kaynak: site-emlakçı turu ölçümleri (sonuclar-site-emlakci.jsonl), hedef sorgu ölçümleri,
+  GSC dizin envanteri (554 sayfa, API denetimi). Karne her turdan sonra bu sayfaya yeniden yayınlanır.</p>
+</div>

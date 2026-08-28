@@ -141,7 +141,7 @@ sedirkent, selcuklu, yeni-huzur-bahcesi, yesiloz, yuceyurt.
 SERP-kanıtlı istek adayları (dizinsiz + görünmez): mavi-koy, sedirkent + bayat selcuklu
 (DIZINE-EKLENECEKLER v4'e işlendi).
 
-## 6. GÜZELKENT — TAMAMLANDI ✅ (dizin + 79 SERP ölçümü, 28-29.08)
+## 6. GÜZELKENT — TAMAMLANDI ✅ (dizin + 79 SERP ölçümü, 28.08)
 
 Dizin: 23 dizinsiz (EN ÇOK dizinsiz burada) · 32 bayat (1493 gos) · 11 orta · 16 taze.
 SERP: 48/78 ilk 3 (%62) · organik 1: 17 (akkonak, boyut, buyuk-ankara, cozum-kent,
