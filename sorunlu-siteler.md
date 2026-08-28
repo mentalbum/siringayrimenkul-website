@@ -561,8 +561,9 @@ KALAN ŞÜPHELİLER (Yandex'te de yok / çözümsüz):
 - eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.
 - seyh-samil/acar-sitesi (46267): be 'Gülistan Apt.4-A' gösteriyor (Acar A-C-D bekleniyordu).
 - ✅ SOA/cumhuriyet-sitesi (17491) kimliği ÇÖZÜLDÜ 2026-08-28 (Özgün TKGM ekranıyla talimat verdi):
-  17491+17492+17493 = "Kutlutaş 2 Blokları" (be: "2. Etap Kutlutaş (2) Blokları"); yeni kayıt
-  kutlutas-2-bloklari açıldı, cumhuriyet-sitesi çift ad olarak KALDI (ayrıntı aşağıda, 28.08 bölümü).
+  17491+17492+17493 = "Kutlutaş 2 Blokları" (be: "2. Etap Kutlutaş (2) Blokları"); Özgün'ün ikinci
+  talimatıyla ("benim dediğim gibi yap") cumhuriyet-sitesi kaydı Kutlutaş 2'ye BİRLEŞTİRİLDİ:
+  dosya+boundary silindi, 301 açıldı, ad alternatifAdlar'da (ayrıntı aşağıda, 28.08 bölümü).
 - SOA/ahikent-sitesi (46644): be 46644'ü LALEEVLERİ gösteriyor → Ahikent mapping'i YANLIŞ şüphesi güçlendi.
 - SOA/tan-yildizi (46662), yazici-modern (46664): be listelerinde yok.
 
@@ -1683,11 +1684,12 @@ ismi Kutlutaş 2 Blokları" talimatı verdi. Üç kaynak çapraz doğrulandı:
   (9+8+8; adlar ilçe adları, ada içinde alfabetik; kapı kodları C 23–C 47 ardışık).
 - **eryaman1 yönetim tablosu (defterde):** şerit "KUTLUTAŞ 2" bölgesi.
 YAPILAN: `sehit-osman-avci-mahallesi/kutlutas-2-bloklari` kaydı + 3 parselli boundary açıldı
-(bloklar[] dolu); cumhuriyet-sitesi (17491) ÇİFT AD olarak korundu (gösterimler düşmesin) —
-iki kayda karşılıklı çapraz referans cümlesi + cumhuriyet'e bloklar[] ve "2. Etap Cumhuriyet
-Sitesi" altAdı eklendi. 17491 map-qa'da bilinçli paylaşımlı parsel (çift ad, İKİ kayıt).
-- **ÖZGÜN'E (açık soru):** cumhuriyet-sitesi ayrı sayfa olarak kalsın mı, Kutlutaş 2'ye
-  birleştirilsin mi? (Birleşirse 301 + dizin sırası kuralı uygulanır; şimdilik ikisi de yayında.)
+(bloklar[] dolu). İlk kurguda cumhuriyet-sitesi çift ad olarak korunmuştu; Özgün ikinci mesajla
+("benim dediğim gibi yap") BİRLEŞTİRME kararı verdi → cumhuriyet-sitesi.json + boundary silindi,
+özgün olguları (donatı listesi, yakıt gideri notu, ad-karışıklığı uyarısı, 17491 alan/nitelik)
+Kutlutaş 2 metnine taşındı; "Cumhuriyet Sitesi" + "2. Etap Cumhuriyet Sitesi" alternatifAdlar'da.
+next.config.ts'ye iki 301 (eski+yeni mahalle slug biçimi → kutlutas-2-bloklari). Dizin notu:
+eski adres dizindeyse 301 sinyali için deploy sonrası kutlutas-2-bloklari dizin kuyruğuna girmeli.
 - **HAZIR BEKLEYEN — "Kutlutaş (1) Blokları" (17494-97):** be `/yer/kutlutas-1-bloklari-93`
   bu dört adayı ayrı küme gösteriyor; TKGM 28.08'de dördü de çekildi (9+9+9+9 apartman;
   6.273+7.252+6.506+6.370 m², hepsi Kat Mülkiyet; ham JSON'lar scratchpad'de). Kayıt AÇILMADI:

@@ -130,6 +130,11 @@ const nextConfig: NextConfig = {
       // ve adres 404 veriyordu — kural yalnızca eski kısa mahalle adına yazılmıştı.
       { source: "/mahalleler/sehit-osman-avci-mahallesi/akin-689-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/armonia-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence", permanent: true },
+      // Cumhuriyet Sitesi (17491) = Kutlutaş 2 Blokları'nın ilk adası; Özgün'ün
+      // 28.08 kararıyla tek kayda birleştirildi (üç ada tek site). Eski ad
+      // alternatifAdlar'da yaşıyor, sayfa varisine yönlenir.
+      { source: "/mahalleler/sehit-osman-avci/cumhuriyet-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/firat-life-style-goksu-sitesi", destination: "/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/hill-tower-cadde", destination: "/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/koroglu-goldekent-evleri", destination: "/mahalleler/sehit-osman-avci-mahallesi/goldekent-sitesi", permanent: true },
