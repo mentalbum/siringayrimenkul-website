@@ -7,54 +7,95 @@
     "lng": 32.650928
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/demirer-sitesi-boundary.geojson",
-  "aciklama": "Demirer Sitesi (Demirer Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman'ın kooperatif kuşağında, yerel kayıtlarda \"Demirer 1\" ve \"Demirer 2\" olarak anılan iki küme hâlinde toplam yedi adaya yayılmış büyük bir yerleşimdir. TKGM kayıtlarına göre adalarda toplam 24 betonarme apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 49.525 m². Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "Demirer Sitesi (Demirer Blokları), Şehit Osman Avcı Mahallesi'nde Eryaman'ın kooperatif kuşağında, yerel kayıtlarda \"Demirer 1\" ve \"Demirer 2\" olarak anılan iki küme hâlinde toplam yedi adaya yayılmış büyük bir yerleşimdir. TKGM kayıtlarına göre adalarda toplam 24 betonarme apartman bulunuyor; parsellerin tümü kat mülkiyetli ve toplam alanları yaklaşık 49.525 m². Yerel kayıtlar iki kümeyi 'Demirer (1) Blokları' ve 'Demirer (2) Blokları' başlıklarıyla ayrı listeler: üç adalık ilk küme ile dört adalık ikinci küme. Blokların bir bölümü kodun yanında ad da taşır — ilk kümede Mimoza, Menekşe, Papatya ve Çınar; ikincisinde Gül, Açelya, Kardelen ile Örnek, İletişim ve Deniz apartmanları geçer (yerel kayıt). İlan başlığında blok kodu ile apartman adını birlikte yazmak, dairenizin her iki aramada da görünmesini sağlar. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17460",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A3-1 (6)",
+        "A3-2 (3)"
+      ]
     },
     {
       "no": "17461",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1-2 (4) Mimoza",
+        "A1-3 (8) Menekşe",
+        "B1 (2) Papatya",
+        "B2 (6) Çınar"
+      ]
     },
     {
       "no": "17464",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A2-1 (3) Gül",
+        "A2-2 (5) Açelya",
+        "B3 (18) Kardelen"
+      ]
     },
     {
       "no": "17465",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A3-3 (2)",
+        "A3-4 (10)",
+        "A3-5 (8)",
+        "D2 (4)",
+        "D3 (6)"
+      ]
     },
     {
       "no": "17466",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A2-3 (2)",
+        "B4 (8) Örnek",
+        "D4 (6) İletişim",
+        "D5 (4) Deniz"
+      ]
     },
     {
       "no": "17467",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1-4 (1)",
+        "B5 (7)",
+        "D6 (5)",
+        "D7 (3)"
+      ]
     },
     {
       "no": "17472",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1-1 (2)",
+        "D1-3 (4)"
+      ]
     }
   ],
   "ozellikler": [
     "7 ayrı ada, iki küme (Demirer 1 ve 2) — toplam 24 apartman (TKGM)",
     "Toplam ~49.525 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
+    "Adlı bloklar: Mimoza, Menekşe, Papatya, Çınar, Gül, Açelya, Kardelen, Örnek, İletişim, Deniz (yerel kayıt)",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "Demirer Blokları",
     "Demirer 1",
-    "Demirer 2"
+    "Demirer 2",
+    "Demirer (1) Blokları",
+    "Demirer (2) Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-28"
 }

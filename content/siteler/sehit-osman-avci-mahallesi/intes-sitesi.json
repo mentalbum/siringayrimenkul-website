@@ -7,27 +7,42 @@
     "lng": 32.649197
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/intes-sitesi-boundary.geojson",
-  "aciklama": "İntes Sitesi (İntes Blokları), Şehit Osman Avcı Mahallesi'nde iki adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre her adada beşer olmak üzere toplam 10 betonarme apartman bulunuyor; parseller kat mülkiyetli ve toplam alanları yaklaşık 15.692 m². İntes Sitesi'ni mahalledeki tek parselli kooperatiflerden ayıran şey bu iki adalı düzendir: bloklar iki komşu ada arasında beşer beşer bölünmüştür ve ilan başlıklarında çoğunlukla 'İntes Blokları' adıyla geçer. (Aynı mahalledeki Çiçek Sitesi ayrı bir yerleşimdir; kendi tek parseli üzerinde kurulu, İntes Blokları'na dahil olmayan bağımsız bir kooperatiftir.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "İntes Sitesi (İntes Blokları), Şehit Osman Avcı Mahallesi'nde iki adaya yayılmış yerleşik bir konut kümesidir. TKGM kayıtlarına göre her adada beşer olmak üzere toplam 10 betonarme apartman bulunuyor; parseller kat mülkiyetli ve toplam alanları yaklaşık 15.692 m². İntes Sitesi'ni mahalledeki tek parselli kooperatiflerden ayıran şey bu iki adalı düzendir: bloklar iki komşu ada arasında beşer beşer bölünmüştür ve ilan başlıklarında çoğunlukla 'İntes Blokları' adıyla geçer. Yerel kayıtlarda bir adanın apartmanları Simge, Rüya, Ezgi, Tuğçe ve Melodi adlarını taşır; diğer adanın blokları kod ve kapı numarasıyla listelenir (yerel kayıt). (Aynı mahalledeki Çamlık ve Çiçek siteleri ayrı yerleşimlerdir: kimi yerel kaynak bu iki komşu adayı da 'İntes Blokları' başlığı altında listeler, ancak tapu kayıtları ve blokların kendi adları — ağaç adlı Çamlık, çiçek adlı Çiçek blokları — iki sitenin bağımsız kimliğini doğrular.) Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17468",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1 (10) Simge",
+        "A2 (2) Rüya",
+        "C1 (4) Ezgi",
+        "C1 (6) Tuğçe",
+        "C1 (8) Melodi"
+      ]
     },
     {
       "no": "17469",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "1 (C-3)",
+        "3 (C-2)",
+        "5 (C-1)",
+        "7-B",
+        "9-A"
+      ]
     }
   ],
   "ozellikler": [
     "2 ada — toplam 10 apartman (her adada 5, TKGM)",
     "Toplam ~15.692 m² (TKGM)",
     "Kat mülkiyetli parseller (TKGM)",
+    "Apartmanlar ad taşır: Simge, Rüya, Ezgi, Tuğçe, Melodi (yerel kayıt)",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
     "İntes Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-28"
 }

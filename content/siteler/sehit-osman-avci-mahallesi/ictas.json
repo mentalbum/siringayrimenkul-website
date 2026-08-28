@@ -3,26 +3,87 @@
   "slug": "ictas",
   "mahalleSlug": "sehit-osman-avci-mahallesi",
   "koordinat": {
-    "lat": 39.9791019,
-    "lng": 32.6497771
+    "lat": 39.979604,
+    "lng": 32.650702
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/ictas-boundary.geojson",
-  "aciklama": "İçtaş, Şehit Osman Avcı Mahallesi'nde yer alan yerleşik bir konut adasıdır. TKGM kayıtlarına göre parselde 6 betonarme apartman bulunuyor; parsel kat mülkiyetli ve yaklaşık 6.578 m². Yerel kayıtlarda komşu Kazım Sarı Sitesi ile birlikte 'İçtaş, Kazım Sarı Blokları' kümesi içinde anılır. Bu bloklarda satılık veya kiralık daireniz mi var? Yerleşik kooperatif dokusunda doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "aciklama": "İçtaş, Şehit Osman Avcı Mahallesi'nde dört adaya yayılmış yerleşik bir kooperatif kümesidir; yerel kayıtlarda komşu Kazım Sarı Sitesi ile birlikte 'İçtaş, Kazım Sarı Blokları' başlığı altında anılır. TKGM kayıtlarına göre dört parsel de kat mülkiyetlidir ve toplamda 28 betonarme apartman taşır — parsel toplamı yaklaşık 31.194 m². Apartmanların çoğu blok kodu ve kapı numarasının yanında ad da taşır: bir adada Yağmur, Sıla, İlkyaz, Kardelen, Uğur, Fulya ve Gökkuşağı; en kalabalık adada Aydın, Efes, Sıla, Akçay, Ece, Onur, Gül, Gözde ve Florya; bir diğerinde Doğa, Doruk, Çınar, Akdeniz, Nil ve Mavi Çam; dördüncüsünde Sevgi, Bahar, Ekin, Berrak, Sergah ve Ege apartmanları sıralanır (yerel kayıt). Ev sahibi için bunun karşılığı doğrudandır: ilan ve adres tarifinde apartman adı ile blok kodunu birlikte yazmak, dairenizin her iki aramada da bulunmasını sağlar. Bu bloklarda satılık veya kiralık daireniz mi var? Dört adanın emsalleri apartman apartman ayrışır — doğru fiyat blok, kat, cephe ve iç durumla netleşir; değeri, bölgeyi ada ada tanıyan emlakçınızla birlikte belirleyin.",
   "adalar": [
+    {
+      "no": "17480",
+      "parsel": "1",
+      "etap": "2",
+      "bloklar": [
+        "B (13) Gökkuşağı",
+        "C1 (1) Yağmur",
+        "C1 (3) Sıla",
+        "C2A (5) İlkyaz",
+        "C2B (7) Kardelen",
+        "C3A (9) Uğur",
+        "C3B (11) Fulya"
+      ],
+      "alanM2": 7681,
+      "nitelik": "7 Adet Betonarme Apartman"
+    },
+    {
+      "no": "17481",
+      "parsel": "1",
+      "etap": "2",
+      "bloklar": [
+        "A3 (31) Florya",
+        "C (19) Sıla",
+        "C (21) Akçay",
+        "C (23) Ece",
+        "C (25) Onur",
+        "C (27) Gül",
+        "C (29) Gözde",
+        "C1 (15) Aydın",
+        "C1 (17) Efes"
+      ],
+      "alanM2": 8087,
+      "nitelik": "9 Adet Betonarme Apartman"
+    },
+    {
+      "no": "17482",
+      "parsel": "1",
+      "etap": "2",
+      "bloklar": [
+        "A2 (12) Doğa",
+        "B2 (10) Doruk",
+        "C1A (8) Çınar",
+        "C1B (6) Akdeniz",
+        "C2A (4) Nil",
+        "C2B (2) Mavi Çam"
+      ],
+      "alanM2": 8848,
+      "nitelik": "6 Adet Betonarme Apartman"
+    },
     {
       "no": "17498",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1 (11) Sevgi",
+        "C1A (1) Bahar",
+        "C1B (3) Ekin",
+        "C2A (5) Berrak",
+        "C2B (7) Sergah",
+        "C2C Ege"
+      ]
     }
   ],
   "ozellikler": [
-    "6 betonarme apartman (TKGM)",
-    "~6.578 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
+    "4 ayrı ada — toplam 28 betonarme apartman (TKGM)",
+    "Parsel toplamı ~31.194 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Apartmanlar ad taşır: Yağmur, Sıla, Aydın, Efes, Doğa, Bahar… (yerel kayıt)",
+    "Kazım Sarı Sitesi ile birlikte 'İçtaş, Kazım Sarı Blokları' olarak anılır (yerel kayıt)",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
   "alternatifAdlar": [
-    "İçtaş Sitesi"
+    "İçtaş Sitesi",
+    "İçtaş Blokları",
+    "İçtaş, Kazım Sarı Blokları"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-28"
 }

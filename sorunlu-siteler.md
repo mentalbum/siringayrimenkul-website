@@ -1695,3 +1695,27 @@ eski adres dizindeyse 301 sinyali için deploy sonrası kutlutas-2-bloklari dizi
   6.273+7.252+6.506+6.370 m², hepsi Kat Mülkiyet; ham JSON'lar scratchpad'de). Kayıt AÇILMADI:
   ad "Kutlutaş 1", Altay'daki büyük "Kutlutaş Blokları" (17499-511) ile karışır (benzer-ad
   tuzağı) — Özgün'den sahada kullanılan adı sorup öyle aç.
+
+## 2. Etap ŞOA şeridi: bilgiemlak küme taraması işlendi (2026-08-28, Özgün talimatı)
+
+Özgün be'nin `/yer/2-etap-48` sayfasındaki 8 konut kümesini gösterip "içine gir, ada
+parselleri al, TKGM'den bul, başlıklarıyla ekle" dedi. 26 ada sayfası + 7 küme sayfası
+kazındı, 5 yeni TKGM sorgusu yapıldı (bugün toplam 11). Sonuçlar:
+- **YENİ KAYIT: kutlutas-1-bloklari (17494-97).** TKGM 4×9 kargir apartman, ~26.401 m²,
+  hepsi Kat Mülkiyet; be blok sayıları birebir. Bloklar ilçe adlı + alfabetik, kapı kodları
+  C 48–C 83 (Kutlutaş 2'nin C 23–C 47 serisinin devamı). Künye kalıbı iki örnekle doğrulandı
+  (Akyazı C 56, Niksar C 75): 1993 / 4 kat / 16×3+1 / 96 m² / merkezi — Kutlutaş 2 ile aynı.
+- **İçtaş 1 adadan 4 adaya çıktı:** 17480 (7 apt/7.681), 17481 (9/8.087), 17482 (6/8.848)
+  TKGM'den eklendi; eryaman1 2007 listesi ("İÇTAŞ 17480-82/17498") bağımsız teyit. be blok
+  sayıları TKGM ile birebir (7+9+6+6=28). Koordinat 4 parselin merkezinden yeniden hesaplandı.
+- **be etiket tuzağı BİR KEZ DAHA (İntes):** be "İntes Blokları" kümesi 17468-71 gösteriyor
+  ama 17470 = bizim Çamlık (blokları AĞAÇ adlı: Selvi, Ladin, Çınar, Akasya, Sedir),
+  17471 = bizim Çiçek (blokları ÇİÇEK adlı: Lale, Gül, Kardelen, Nergis, Menekşe) — be'nin
+  kendi blok verisi kendi başlığını çürütüyor, TKGM alanları da kayıtlarımızla birebir.
+  İki ada İntes'e TAŞINMADI; çelişki İntes metnine iddiasız tespit olarak yazıldı.
+- **bloklar[] süpürmesi:** Demirer 7 ada, Soyak 3, Eston 4, İntes 2, İçtaş 4, Çamlık 1,
+  Çiçek 1, Kutlutaş 1 4 ada — şeritte toplam 26 adanın blok kod+adları veri katmanında.
+  Sayı çapraz kontrolü: Soyak be 16 = TKGM 16 ✓, Demirer be 24 = TKGM 24 ✓, Eston 18 ✓.
+- **Başlıklar alternatifAdlar'a girdi:** "Demirer (1)/(2) Blokları", "Eston Blokları",
+  "Soyak Blokları", "İçtaş, Kazım Sarı Blokları". Kazım Sarı (17483) kaydına dokunulmadı
+  (be kümesinde 17483 yok; ada hiçbir resmî listede de yok — eski not geçerli).
