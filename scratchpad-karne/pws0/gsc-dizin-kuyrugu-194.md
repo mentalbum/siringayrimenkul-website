@@ -76,7 +76,9 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi ← 28.08 KAPANDI: kayıt Kutlutaş 2'ye birleştirildi (PR #85), adres 301 → kutlutas-2-bloklari — istek GÖNDERİLMEZ
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari ← 28.08 dizin dışı teyit (API; YENİ sayfa, Cumhuriyet'in varisi — eski adres 301 buraya)
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari ← 28.08 dizin dışı teyit (API; YENİ sayfa)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gode-yasam-konutlari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas ← 15.08 dizin dışı teyit
@@ -340,3 +342,4 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > daha dizin isteği GÖNDERİLMEZ.
 > 27.08 (c) — Akşam penceresi DENENDİ, KAPALI: Endora Park (120) denetlendi ("mevcut", bayat), istek "Kota Aşıldı" ile reddedildi — işaretsiz, sıradaki damlanın ilk adayı. Sabahki 11 istek kayan 24 saatte hâlâ doluluk yaratıyor; 25.08'in çift-pencere deseni bugün tekrarlamadı. Sonraki deneme: 28.08.
 > 27.08 (d) — v4 kuyruğu kuruldu (554 sayfalık tam envanter): 239 bayat, 221'i bekliyor, tepe mia-concept 563 gos. Kota üçüncü kez denendi (mia-concept), yine "Kota Aşıldı" — bugün toplam 11 kabul + 3 ret. 28.08 planı: (1) kota açılınca v4 sırasından damla, (2) Altay'ın kalan 16 SERP sorgusu + Devlet turu.
+> 28.08 (merge) — PR #85 birleşti, canlı doğrulandı: kutlutas-2-bloklari + kutlutas-1-bloklari 200, eski cumhuriyet-sitesi 308→kutlutas-2 (sitemap'ten düştü, kuyruk satırı kapatıldı). İki yeni URL API'yle denetlendi: "URL is unknown" (dakikalar önce yayınlandı, normal). Kota bu tura HARCANMADI — yeni sayfalar talepsiz sınıfında, damla sırası v4 kuralına göre işler; 'kutlutaş' yalın-ad talebi belirirse öncelik yükseltilebilir. IndexNow'la 10 URL (2 yeni + 301'li eski adres + 7 güncellenen şerit sayfası) Bing/Yandex'e bildirildi (200).
