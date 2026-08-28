@@ -1,0 +1,102 @@
+{
+  "isim": "Kutlutaş 1 Blokları",
+  "slug": "kutlutas-1-bloklari",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.976984,
+    "lng": 32.649689
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari-boundary.geojson",
+  "aciklama": "Kutlutaş 1 Blokları, Şehit Osman Avcı Mahallesi'nde art arda sıralanan dört adaya yayılmış, yerleşik bir kooperatif kümesidir; yerel kayıtlarda '2. Etap Kutlutaş (1) Blokları' başlığıyla geçer. TKGM kayıtlarına göre dört parsel de kat mülkiyetlidir ve her adada dokuzar olmak üzere toplam 36 kargir apartman taşır — parsel toplamı yaklaşık 26.401 m². Apartmanlar blok koduyla değil ilçe adlarıyla anılır: bir adada Akyazı, Bilecik, Demirci, Ergani, Genç, Hereke, Kelkit, Kemer ve Kestel; komşusunda Alaçalı, Bayburt, Dikili, Espiye, Germenci, Hınıs, Kilimli, Kozan ve Kozlu; üçüncüsünde Akhisar, Bartın, Ceyhan, Foça, Gebze, Hopa, Kuyucak, Lapseki ve Manyas; dördüncüsünde Aşkale, Bulancak, Çorlu, Fındıklı, Gürdes, Gürpınar, Milas, Mucur ve Niksar apartmanları sıralanır (yerel kayıt). Adlar her adada alfabetik dizilir; kapı kodları C 48'den C 83'e ardışık ilerler ve güneydeki Kutlutaş 2 Blokları'nın C 23 – C 47 dizisini kesintisiz sürdürür — iki küme aynı adlandırma düzeninin parçasıdır ama ayrı yerleşimler olarak anılır. İlan ve adres tarifinde apartman adı ile kapı kodunu birlikte yazmak gerekir; yalnızca 'Kutlutaş' yazmak adresi daraltmaz, komşu Altay Mahallesi'ndeki 13 adalık büyük Kutlutaş Blokları da ayrı bir yerleşimdir. Adalardan bakılan apartman künyeleri tek ve aynı kalıbı verir: 1993 yapımı, dört katlı bloklar; blok başına 16 daire, dairelerin tamamı 3+1 ve konut alanı 96 m²; ısıtma merkezi sistemdir (yerel kayıt). Bu tekdüzelik ev sahibi için avantajdır — emsal çizgisi nettir, aynı kümede farklı tip aramaya gerek kalmaz; fiyat farkını blok, kat, cephe ve iç durum belirler. Bu bloklarda satılık veya kiralık daireniz mi var? Dört adanın emsalleri apartman apartman ayrışır — doğru fiyat blok, kat, cephe ve iç durumla netleşir; değeri, şeridi ada ada tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "17494",
+      "parsel": "1",
+      "etap": "2",
+      "alanM2": 6273,
+      "nitelik": "9 Adet Kargir Apartman",
+      "bloklar": [
+        "Akyazı",
+        "Bilecik",
+        "Demirci",
+        "Ergani",
+        "Genç",
+        "Hereke",
+        "Kelkit",
+        "Kemer",
+        "Kestel"
+      ]
+    },
+    {
+      "no": "17495",
+      "parsel": "1",
+      "etap": "2",
+      "alanM2": 7252,
+      "nitelik": "9 Adet Kargir Apartman",
+      "bloklar": [
+        "Alaçalı",
+        "Bayburt",
+        "Dikili",
+        "Espiye",
+        "Germenci",
+        "Hınıs",
+        "Kilimli",
+        "Kozan",
+        "Kozlu"
+      ]
+    },
+    {
+      "no": "17496",
+      "parsel": "1",
+      "etap": "2",
+      "alanM2": 6506,
+      "nitelik": "9 Adet Kargir Apartman",
+      "bloklar": [
+        "Akhisar",
+        "Bartın",
+        "Ceyhan",
+        "Foça",
+        "Gebze",
+        "Hopa",
+        "Kuyucak",
+        "Lapseki",
+        "Manyas"
+      ]
+    },
+    {
+      "no": "17497",
+      "parsel": "1",
+      "etap": "2",
+      "alanM2": 6370,
+      "nitelik": "9 Adet Kargir Apartman",
+      "bloklar": [
+        "Aşkale",
+        "Bulancak",
+        "Çorlu",
+        "Fındıklı",
+        "Gürdes",
+        "Gürpınar",
+        "Milas",
+        "Mucur",
+        "Niksar"
+      ]
+    }
+  ],
+  "ozellikler": [
+    "4 ayrı ada — her adada 9, toplam 36 kargir apartman (TKGM)",
+    "Parsel toplamı ~26.401 m² (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Apartmanlar ilçe adlarıyla anılır: Akyazı, Bayburt, Ceyhan, Fındıklı… (yerel kayıt)",
+    "Kapı kodları C 48 – C 83 aralığında ardışık (yerel kayıt)",
+    "1993 yapım, dört katlı bloklar (yerel künye örnekleri)",
+    "Blok başına 16 daire — tamamı 3+1, 96 m² (yerel künye örnekleri)",
+    "Merkezi sistem ısıtma (yerel kayıt)",
+    "Kutlutaş 2 Blokları ile aynı adlandırma düzeni — ilanda mahalleyi ve apartman adını belirtin",
+    "Şehit Osman Avcı — kadastroda Eryaman kaydı"
+  ],
+  "alternatifAdlar": [
+    "Kutlutaş (1) Blokları",
+    "2. Etap Kutlutaş (1) Blokları"
+  ],
+  "zenginlestirildi": "2026-08-28"
+}

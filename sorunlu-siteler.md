@@ -560,8 +560,10 @@ KALAN ŞÜPHELİLER (Yandex'te de yok / çözümsüz):
 ✅ elif-elvan ÇÖZÜLDÜ 2026-07-17 (Özgün: 'Seyitoğulları ile aynı site'): 46383/1'de kaldı, tapu quote + altAd yazıldı. (Elif Özgen 46384 AYRI — yeni aday.)
 - eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.
 - seyh-samil/acar-sitesi (46267): be 'Gülistan Apt.4-A' gösteriyor (Acar A-C-D bekleniyordu).
-- SOA/cumhuriyet-sitesi (17491): be adayı Kutlutaş-2 kümesinde, apartmanlar İLÇE adlı
-  (Çayeli, Gebze, Havran, Kaman...) — kayıt kimliği belirsiz.
+- ✅ SOA/cumhuriyet-sitesi (17491) kimliği ÇÖZÜLDÜ 2026-08-28 (Özgün TKGM ekranıyla talimat verdi):
+  17491+17492+17493 = "Kutlutaş 2 Blokları" (be: "2. Etap Kutlutaş (2) Blokları"); Özgün'ün ikinci
+  talimatıyla ("benim dediğim gibi yap") cumhuriyet-sitesi kaydı Kutlutaş 2'ye BİRLEŞTİRİLDİ:
+  dosya+boundary silindi, 301 açıldı, ad alternatifAdlar'da (ayrıntı aşağıda, 28.08 bölümü).
 - SOA/ahikent-sitesi (46644): be 46644'ü LALEEVLERİ gösteriyor → Ahikent mapping'i YANLIŞ şüphesi güçlendi.
 - SOA/tan-yildizi (46662), yazici-modern (46664): be listelerinde yok.
 
@@ -1670,3 +1672,50 @@ sayfa (ŞFK yeni slug) dizinde bile değil.
 **Özgün'e soru:** Sahada tabela/yönetim bugün ne diyor — "Şehit Ferhat Koç Sitesi" mi?
 "Eray 3" adı sakinlerce hâlâ aktif kullanılıyor mu? (Evet/evet ise kurgu yukarıdaki gibi;
 onay gelince 2-3-5 tek PR'da, 4'teki dizin isteği önce.)
+
+## Kutlutaş 2 Blokları açıldı — ŞOA şeridi Kutlutaş kimliği çözüldü (2026-08-28)
+
+Özgün, TKGM Parsel Sorgu ekranında 17491/1+17492/1+17493/1'i işaretleyip "bunları ekle,
+ismi Kutlutaş 2 Blokları" talimatı verdi. Üç kaynak çapraz doğrulandı:
+- **TKGM canlı (28.08):** 17491=9 Adet Kargir Apartman/6.176 m² (eldeki kayıt), 17492=8/5.716,
+  17493=8/5.893 — üçü de Kat Mülkiyet, kadastro Eryaman 124123. Toplam 25 apartman, ~17.785 m².
+- **bilgiemlak:** `/yer/kutlutas-2-bloklari-94` = "2. Etap Kutlutaş (2) Blokları", ada listesi
+  BİREBİR 17491-93. Ada sayfalarındaki apartman adı SAYILARI TKGM apartman sayılarıyla birebir
+  (9+8+8; adlar ilçe adları, ada içinde alfabetik; kapı kodları C 23–C 47 ardışık).
+- **eryaman1 yönetim tablosu (defterde):** şerit "KUTLUTAŞ 2" bölgesi.
+YAPILAN: `sehit-osman-avci-mahallesi/kutlutas-2-bloklari` kaydı + 3 parselli boundary açıldı
+(bloklar[] dolu). İlk kurguda cumhuriyet-sitesi çift ad olarak korunmuştu; Özgün ikinci mesajla
+("benim dediğim gibi yap") BİRLEŞTİRME kararı verdi → cumhuriyet-sitesi.json + boundary silindi,
+özgün olguları (donatı listesi, yakıt gideri notu, ad-karışıklığı uyarısı, 17491 alan/nitelik)
+Kutlutaş 2 metnine taşındı; "Cumhuriyet Sitesi" + "2. Etap Cumhuriyet Sitesi" alternatifAdlar'da.
+next.config.ts'ye iki 301 (eski+yeni mahalle slug biçimi → kutlutas-2-bloklari). Dizin notu:
+eski adres dizindeyse 301 sinyali için deploy sonrası kutlutas-2-bloklari dizin kuyruğuna girmeli.
+- **HAZIR BEKLEYEN — "Kutlutaş (1) Blokları" (17494-97):** be `/yer/kutlutas-1-bloklari-93`
+  bu dört adayı ayrı küme gösteriyor; TKGM 28.08'de dördü de çekildi (9+9+9+9 apartman;
+  6.273+7.252+6.506+6.370 m², hepsi Kat Mülkiyet; ham JSON'lar scratchpad'de). Kayıt AÇILMADI:
+  ad "Kutlutaş 1", Altay'daki büyük "Kutlutaş Blokları" (17499-511) ile karışır (benzer-ad
+  tuzağı) — Özgün'den sahada kullanılan adı sorup öyle aç.
+
+## 2. Etap ŞOA şeridi: bilgiemlak küme taraması işlendi (2026-08-28, Özgün talimatı)
+
+Özgün be'nin `/yer/2-etap-48` sayfasındaki 8 konut kümesini gösterip "içine gir, ada
+parselleri al, TKGM'den bul, başlıklarıyla ekle" dedi. 26 ada sayfası + 7 küme sayfası
+kazındı, 5 yeni TKGM sorgusu yapıldı (bugün toplam 11). Sonuçlar:
+- **YENİ KAYIT: kutlutas-1-bloklari (17494-97).** TKGM 4×9 kargir apartman, ~26.401 m²,
+  hepsi Kat Mülkiyet; be blok sayıları birebir. Bloklar ilçe adlı + alfabetik, kapı kodları
+  C 48–C 83 (Kutlutaş 2'nin C 23–C 47 serisinin devamı). Künye kalıbı iki örnekle doğrulandı
+  (Akyazı C 56, Niksar C 75): 1993 / 4 kat / 16×3+1 / 96 m² / merkezi — Kutlutaş 2 ile aynı.
+- **İçtaş 1 adadan 4 adaya çıktı:** 17480 (7 apt/7.681), 17481 (9/8.087), 17482 (6/8.848)
+  TKGM'den eklendi; eryaman1 2007 listesi ("İÇTAŞ 17480-82/17498") bağımsız teyit. be blok
+  sayıları TKGM ile birebir (7+9+6+6=28). Koordinat 4 parselin merkezinden yeniden hesaplandı.
+- **be etiket tuzağı BİR KEZ DAHA (İntes):** be "İntes Blokları" kümesi 17468-71 gösteriyor
+  ama 17470 = bizim Çamlık (blokları AĞAÇ adlı: Selvi, Ladin, Çınar, Akasya, Sedir),
+  17471 = bizim Çiçek (blokları ÇİÇEK adlı: Lale, Gül, Kardelen, Nergis, Menekşe) — be'nin
+  kendi blok verisi kendi başlığını çürütüyor, TKGM alanları da kayıtlarımızla birebir.
+  İki ada İntes'e TAŞINMADI; çelişki İntes metnine iddiasız tespit olarak yazıldı.
+- **bloklar[] süpürmesi:** Demirer 7 ada, Soyak 3, Eston 4, İntes 2, İçtaş 4, Çamlık 1,
+  Çiçek 1, Kutlutaş 1 4 ada — şeritte toplam 26 adanın blok kod+adları veri katmanında.
+  Sayı çapraz kontrolü: Soyak be 16 = TKGM 16 ✓, Demirer be 24 = TKGM 24 ✓, Eston 18 ✓.
+- **Başlıklar alternatifAdlar'a girdi:** "Demirer (1)/(2) Blokları", "Eston Blokları",
+  "Soyak Blokları", "İçtaş, Kazım Sarı Blokları". Kazım Sarı (17483) kaydına dokunulmadı
+  (be kümesinde 17483 yok; ada hiçbir resmî listede de yok — eski not geçerli).

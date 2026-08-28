@@ -7,19 +7,29 @@
     "lng": 32.648837
   },
   "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/camlik-sitesi-boundary.geojson",
-  "aciklama": "Çamlık Sitesi, Şehit Osman Avcı Mahallesi'nde beş apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Adet Betonarme Apartman' niteliğiyle kayıtlı 6.276 m²'lik kat mülkiyetli parsel üzerine kuruludur. Adının çağrıştırdığı yeşil doku, blok aralarındaki oturmuş peyzajda karşılığını bulur; yerleşik bir komşuluk çevresi sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Çamlık Sitesi, Şehit Osman Avcı Mahallesi'nde beş apartmanlık bir kooperatif sitesidir. TKGM kayıtlarına göre site, tapuda '5 Adet Betonarme Apartman' niteliğiyle kayıtlı 6.276 m²'lik kat mülkiyetli parsel üzerine kuruludur. Yerel kayıtlarda beş blok, site adıyla uyumlu biçimde ağaç adları taşır: Selvi, Ladin, Çınar, Akasya ve Sedir (yerel kayıt). Adının çağrıştırdığı yeşil doku, blok aralarındaki oturmuş peyzajda karşılığını bulur; yerleşik bir komşuluk çevresi sunar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "17470",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A3 (2) Selvi",
+        "C1A (6) Ladin",
+        "C1B (4) Çınar",
+        "C2A (10) Akasya",
+        "C2B (8) Sedir"
+      ],
+      "alanM2": 6276,
+      "nitelik": "5 Adet Betonarme Apartman"
     }
   ],
   "ozellikler": [
     "5 betonarme apartman (TKGM)",
     "~6.276 m² parsel (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
+    "Bloklar ağaç adları taşır: Selvi, Ladin, Çınar, Akasya, Sedir (yerel kayıt)",
     "Şehit Osman Avcı — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-15"
+  "zenginlestirildi": "2026-08-28"
 }

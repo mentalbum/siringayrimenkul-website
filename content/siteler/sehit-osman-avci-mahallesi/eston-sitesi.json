@@ -12,22 +12,48 @@
     {
       "no": "17487",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1 (17) Dostlar",
+        "A2 (18) Güven",
+        "D5 (3) Ada Güllü",
+        "D6 (1) Emek"
+      ]
     },
     {
       "no": "17488",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A1 (14) Cumhuriyet",
+        "A3 (13) Ata",
+        "D (11) Çiçek",
+        "D (12) İstiklal"
+      ]
     },
     {
       "no": "17489",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A4 (10) Selvi",
+        "D3 (6) Çınar",
+        "D6 (2) Sedef",
+        "D7 (4) Kardelen",
+        "D9 (8)"
+      ]
     },
     {
       "no": "17490",
       "parsel": "1",
-      "etap": "2"
+      "etap": "2",
+      "bloklar": [
+        "A3-5 (10) Deniz",
+        "D2 (2) Güneş",
+        "D2 (4) Günay",
+        "D3 (6) Meşe",
+        "D4 (8) Yıldız"
+      ]
     }
   ],
   "ozellikler": [
@@ -41,7 +67,8 @@
   ],
   "alternatifAdlar": [
     "Eryaman Eston Sitesi",
-    "Şehit Osman Avcı Eston Sitesi"
+    "Şehit Osman Avcı Eston Sitesi",
+    "Eston Blokları"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-08-28"
 }
