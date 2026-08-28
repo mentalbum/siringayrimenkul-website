@@ -64,3 +64,27 @@ Dizine eklenecek / yeniden taranacak (talep sıralı):
 - [ ] DİZİNSİZ (doğal sıra beklenir, Özgün kararı): eryaman-park-evleri, vatan-sitesi
 
 Kalan 16 SERP sorgusu 28.08'e kaldı (tur-altay-2708.json[12:]).
+
+## 3. ERYAMAN MAHALLESİ — TAMAMLANDI ✅ (dizin + 51 SERP ölçümü, 27-28.08)
+
+Dizin: 3 dizinsiz · 25 bayat (en yüksek talep: platin-2-konutlari 309 gos) · 7 taze.
+SERP: 37/51 ilk 3 (%73) · organik 1: 16 (ankapark, arya, asm-gold, asm-prestij, ay, ayka,
+caglar, elif-ozgen, gencler, kayaevleri, lapis, pinar, ra-da, yesil-manolya + 2 ada-temsili).
+Harita kutusu: mahalle sorgusunda 1.; organikte #4 ANA SAYFA temsil ediyor (bilinen yamyamlık).
+
+Dizine eklenecek / yeniden taranacak (talep sıralı ilk 10):
+- [ ] platin-2-konutlari — 309 gos, tarama 2026-07-27
+- [ ] atakent-2-cumhuriyet-sitesi — 241 gos, tarama 2026-07-26
+- [ ] oyak-sitesi — 233 gos, tarama 2026-07-26
+- [ ] yeni-portakal-cicegi-sitesi — 155 gos, tarama 2026-07-26
+- [ ] basak-sitesi — 127 gos, tarama 2026-07-30
+- [ ] endora-park — 120 gos, tarama 2026-07-26
+- [ ] cigdem-sitesi — 114 gos, tarama 2026-07-27
+- [ ] intes-dogakent-konutlari — 113 gos, tarama 2026-07-26
+- [ ] platin-konutlari — 92 gos, tarama 2026-07-27
+- [ ] bahar-sitesi — 88 gos, tarama 2026-07-27
+
+SERP'ten güçlü istek adayları: isikkent-sitesi (İzmir adaşına rağmen #1 sahibinden Eryaman),
+platin-konutlari (istek 27.08'de gitti, yansıma bekleniyor). Ada-gölgeli (İKİNCİL): intes-dogakent,
+elif-elvan, lacin-eryaman, kent-konaklari, dogankaya. Yapısal adaş: atakent, beyaz, maximum,
+oyak-sitesi, toki, turk-konut-calisanlar.
