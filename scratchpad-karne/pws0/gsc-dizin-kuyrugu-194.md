@@ -41,7 +41,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi ← 23.08 DİZİNDE (kendiliğinden; 28.08 bulunabilirlik temizliği)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower ← 15.08 dizin dışı teyit
@@ -112,7 +112,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/seniz-sitesi ← 23.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yukselay-sitesi ← 23.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/acar-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/acar-sitesi ← 26.08 DİZİNDE (kendiliğinden; 28.08 temizliği — SERP sorunu adaş, dizin değil)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/duskent-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ictas-bloklari ← 15.08 DİZİNDE (kendiliğinden)
@@ -121,7 +121,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi ← 24.08 DİZİNDE (kendiliğinden; DOKUNMA notu 22.08de zaten vardı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi ← 15.08 dizin dışı teyit
@@ -134,7 +134,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi ← 27.08 DİZİNDE (kendiliğinden, "Submitted and indexed"; 28.08 temizliği)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi ← 15.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari ← 20.08 istek gönderildi → AYNI AKŞAM DİZİNDE (API teyidi 22:2x, tarama 21:4x)
@@ -343,3 +343,23 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 27.08 (c) — Akşam penceresi DENENDİ, KAPALI: Endora Park (120) denetlendi ("mevcut", bayat), istek "Kota Aşıldı" ile reddedildi — işaretsiz, sıradaki damlanın ilk adayı. Sabahki 11 istek kayan 24 saatte hâlâ doluluk yaratıyor; 25.08'in çift-pencere deseni bugün tekrarlamadı. Sonraki deneme: 28.08.
 > 27.08 (d) — v4 kuyruğu kuruldu (554 sayfalık tam envanter): 239 bayat, 221'i bekliyor, tepe mia-concept 563 gos. Kota üçüncü kez denendi (mia-concept), yine "Kota Aşıldı" — bugün toplam 11 kabul + 3 ret. 28.08 planı: (1) kota açılınca v4 sırasından damla, (2) Altay'ın kalan 16 SERP sorgusu + Devlet turu.
 > 28.08 (merge) — PR #85 birleşti, canlı doğrulandı: kutlutas-2-bloklari + kutlutas-1-bloklari 200, eski cumhuriyet-sitesi 308→kutlutas-2 (sitemap'ten düştü, kuyruk satırı kapatıldı). İki yeni URL API'yle denetlendi: "URL is unknown" (dakikalar önce yayınlandı, normal). Kota bu tura HARCANMADI — yeni sayfalar talepsiz sınıfında, damla sırası v4 kuralına göre işler; 'kutlutaş' yalın-ad talebi belirirse öncelik yükseltilebilir. IndexNow'la 10 URL (2 yeni + 301'li eski adres + 7 güncellenen şerit sayfası) Bing/Yandex'e bildirildi (200).
+
+> 28.08 (bulunabilirlik temizliği, otonom döngü) — Tur 1-3 çapraz analizi +
+> 28.08 yeniden ölçümleriyle kuyruk temizliği. KENDİLİĞİNDEN DİZİNDE işaretlendi
+> (yukarıda [x]): gul, acar, sumeyra, turkkonut-sinem. İSTEK GEREKSİZLEŞENLER:
+> pasaj-eryaman (28.08 SERP #4, kendi sayfası taze başlıkla — kuyruktan düş),
+> eston (25.08 kendiliğinden tarandı; kalan sorun kardeş-sayfa slot bölünmesi).
+> YAPISAL — KOTA HARCANMAZ (dizin/tarama işi kurtarmaz): erenkoy (28.08 teyit:
+> İstanbul kaplaması, taze taramaya rağmen dışarıda), gulenkent + sitekonut +
+> ilkdogus + ozharitacilar + kucukevlerimiz (spell-correction), korukent, aksu,
+> mesa-sitesi (Güzelkent), asiyan (26.08 taze taramayla bile düştü), referans-
+> ankara, yuceyurt, yesiloz, ilk-bahar (yalın biçim; Eryaman'lı biçimde #1),
+> guzel-ev, goksu-sitesi (çift ölçüm şüphesi, askıda). ÖNCELİK DEĞİŞİKLİĞİ:
+> endora-eryaman ÖNE (196 gos — vitrini tutan ata/endora-plus 410 oldu, sorgu
+> sahipsiz; DIZINE'deki 3 mükerrer kaydı bu satır tekilleştirir). ESKİ-ADRES
+> SINIFI (protokolde en üst): liderkent (59) + yagan-kent (27) — talep eski
+> slugda, birleştirme listesine eklenmeli; polsan1-ayisigi (219) aynı desen
+> (24.08 stratejisiyle uyumlu: istek ÖNCE eski adrese). DİZİNSİZ İSTİSNA
+> ADAYLARI (v4 'dizinsize kota harcanmaz' — Özgün onayı bekliyor): mavi-koy,
+> sedirkent, lacin, kusburnu, gulsah-95, konuta-ozlem, bulvar-1071, relax.
+> Kaynak: bulunabilirlik-tur-plani-2808.md bölüm C/E/F/G/H.
