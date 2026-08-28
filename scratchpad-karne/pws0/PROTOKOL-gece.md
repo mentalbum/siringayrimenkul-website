@@ -300,3 +300,6 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > (Devlet 45/45 TAMAMLANDI + Eryaman 25/51). 4. duvar kalıcılaştı: yeni sekme + 30sn mola
 > sadece 1 sorgu geçiriyor, sonraki anında CAPTCHA. Günlük toplam ~131 ölçüm — kanal bitti.
 > 28.08: Eryaman 25'ten (Gençler Sitesi) devam → Göksu → Güzelkent → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
+> 28.08 (gece 02:23 cron): Eryaman TAMAMLANDI 51/51 + Göksu 16/67'de duvar (sekme-yenile
+> taktiği denendi, ikinci sorgu da CAPTCHA → tur kapandı; gecelik 43 ölçüm). Kalan: Göksu 17.
+> sorgudan (Göksu Aura, tur-goksu-2808.json[16:]) → Güzelkent → ŞOA → Şeker → ŞŞ → YS → Yeşilova.
