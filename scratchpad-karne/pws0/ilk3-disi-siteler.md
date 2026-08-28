@@ -1,8 +1,8 @@
 # İlk 3'te OLMAYAN site-emlakçı sorguları — 504/504 ölçüldü
 
-- İlk 3'te: **309** | 4-10 arası: **57** | ilk 10'da yok: **138** | ölçülmedi: 0
-- Ham ilk-3 oranı: **%61** | kazanılabilir kümede (yapısal-adaş 36 sorgu hariç): **%65** (302/468)
-- SERP'te görünen 236 sonucumuzun **107** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 129 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
+- İlk 3'te: **318** | 4-10 arası: **67** | ilk 10'da yok: **119** | ölçülmedi: 0
+- Ham ilk-3 oranı: **%63** | kazanılabilir kümede (yapısal-adaş 36 sorgu hariç): **%66** (311/468)
+- SERP'te görünen 282 sonucumuzun **128** tanesinde "Evinizi Satalım, Kiraya Verelim" eki görünüyor; kalan 154 sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).
 
 
 ## İlk 10'da hiç yokuz
@@ -47,32 +47,13 @@
 | Aksu Sitesi emlakçı | guzelkent-mahallesi/aksu-sitesi | İLK 10'DA YOK — SERP tamamen Eryaman-aksu odaklı ama sayfamız görünmüyor: GÜÇLÜ İSTEK ADAYI |
 | Asilkent Sitesi emlakçı | guzelkent-mahallesi/asilkent-sitesi | İLK 10'DA YOK — SERP Eryaman odaklı: İSTEK ADAYI |
 | Ekin Sitesi emlakçı | guzelkent-mahallesi/ekin-sitesi | İLK 10'DA YOK — SERP Eryaman odaklı: İSTEK ADAYI |
-| Erenköy Sitesi emlakçı | guzelkent-mahallesi/erenkoy-sitesi | 09:12 yeniden ölçüm (25.08 kendiliğinden tazelenme SONRASI): hâlâ ilk 10 dışı — İstanbul Erenköy kaplaması, YAPISAL KESİNLEŞTİ; kutu 'Erenköy Bölgesindeki Öne Çıkan Emlak Ofisleri' başlıklı, dizin kuyruğundan düş |
-| Gördoğu Şen Sitesi emlakçı | guzelkent-mahallesi/gordogu-sen-sitesi | Kendi sayfası İLK 10'DA YOK; Google sorguyu 'Gürdoğu Şen' olarak düzeltiyor (yazım varyantı!); #5 mahalle sayfamız, #6 sahibinden mağazamız; alternatifAdlar'da 'Gürdoğuşen' var mı bakılmalı |
-| Gözde 2 Sitesi emlakçı | guzelkent-mahallesi/gozde-2-sitesi | Kendi sayfası İLK 10'DA YOK; 18652-1 ada sayfamız İKİ slug'la #2 (eski adres) + #4 (yeni) çıkıyor = eski-adres birleşmemiş + ada siteyi temsil ediyor; GSC denetimi gerek |
-| Gülenkent Sitesi emlakçı | guzelkent-mahallesi/gulenkent-sitesi | İLK 10'DA YOK; Google sorguyu 'Güzelkent Sitesi'ne DÜZELTİYOR (adı tanımıyor) — SERP tamamen mahalle-genel; yapısal spell-correction vakası |
-| Gülşah - 95 Sitesi emlakçı | guzelkent-mahallesi/gulsah-95-sitesi | Kendi sayfası İLK 10'DA YOK; #6'da mahalle sayfamız temsil ediyor; GSC denetimi gerek |
-| İpek Yapı Sitesi emlakçı | guzelkent-mahallesi/ipek-yapi-sitesi | Kendi sayfası İLK 10'DA YOK; #3'te 18476-1 ada sayfamız temsil ediyor; İpek Emlak/İnşaat ofis adaş gürültüsü yoğun; GSC denetimi gerek |
-| Konuta Özlem Sitesi emlakçı | guzelkent-mahallesi/konuta-ozlem-sitesi | Kendi sayfası İLK 10'DA YOK; #6'da 18468-1 ada sayfamız temsil ediyor (dizinsizlik deseni); GSC denetimi gerek |
-| Korukent Sitesi emlakçı | guzelkent-mahallesi/korukent-sitesi | İLK 10'DA YOK (ilk ölçüm); Çankaya Korukent semti + Konya/Levazım adaşları SERP'i kaplamış (yaygın-ad deseni); GSC denetimi gerek |
-| Kurtuluş Sitesi emlakçı | guzelkent-mahallesi/kurtulus-sitesi | İLK 10'DA YOK (ilk ölçüm); 'Kurtuluş' semt+emlak ofisi adaş gürültüsü tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
-| Kuşburnu Sitesi emlakçı | guzelkent-mahallesi/kusburnu-sitesi | Kendi sayfası İLK 10'DA YOK; #7 mahalle sayfamız + #8 yeni-isikent sayfamız (komşu) temsil ediyor — dizinsizlik deseni; GSC denetimi gerek |
-| Master Kent Sitesi emlakçı | guzelkent-mahallesi/master-kent-sitesi | İLK 10'DA YOK (ilk ölçüm); hiçbir sayfamız görünmüyor, SERP tamamen portal/rakip; GSC denetimi gerek |
-| Meltem Sitesi emlakçı | guzelkent-mahallesi/meltem-sitesi | İLK 10'DA YOK (ilk ölçüm); Antalya Meltem Mah. + Meltem Emlak adaş gürültüsü tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
-| Mesa Çalışanları Kooperatifi emlakçı | guzelkent-mahallesi/mesa-calisanlari-kooperatifi | Site sayfası İLK 10'DA YOK ama #1 BİZİM 18506-1 ada sayfamız (+#10 18519-1) — ada siteyi #1'de temsil ediyor; site sayfası muhtemelen dizinsiz, GSC denetimi gerek |
-| Mesa Sitesi emlakçı | guzelkent-mahallesi/mesa-sitesi | İLK 10'DA YOK (ilk ölçüm); Mesa Gayrimenkul ofisleri + Mesa Koru/Oran adaşları tam kaplama (yaygın-ad deseni); GSC denetimi gerek |
-| Nazlıdeniz Sitesi emlakçı | guzelkent-mahallesi/nazlideniz-sitesi | Kendi sayfası İLK 10'DA YOK; #2'de 18490-1 ada sayfamız temsil ediyor; Google 'Nazlı Deniz' ayrı yazımına düzeltiyor; GSC denetimi gerek |
-| Öz Muhtar Sitesi emlakçı | guzelkent-mahallesi/oz-muhtar-sitesi | İLK 10'DA YOK (ilk ölçüm); hiçbir sayfamız görünmüyor; sahada 'Öz Muhtarlar' çoğul yazımı baskın (varyant adayı, kayıt kontrol edilmeli); GSC denetimi gerek |
-| Portakal Çiçeği 2. Sitesi emlakçı | guzelkent-mahallesi/portakal-cicegi-2-sitesi | Kendi sayfası İLK 10'DA YOK; #4'te 18450-1 ada sayfamız (eski slug) temsil ediyor; GSC denetimi gerek |
-| Portakal Çiçeği emlakçı | guzelkent-mahallesi/portakal-cicegi | Kendi sayfası İLK 10'DA YOK; #8'de kardeş 1-portakal-cicegi sayfamız; SERP Çankaya Portakal Çiçeği Residence/Vadisi gürültüsünde; GSC denetimi gerek |
-| Renk Villaları emlakçı | guzelkent-mahallesi/renk-villalari | Kendi sayfası İLK 10'DA YOK; #6'da 19516-2 ada sayfamız temsil ediyor; Alacaatlı Başkent Park (Renk) Villaları + Renk Gayrimenkul adaş gürültüsü; GSC denetimi gerek |
-| Safi Apak Sitesi emlakçı | guzelkent-mahallesi/safi-apak-sitesi | Kendi sayfası İLK 10'DA YOK; #6 ve #9'da komşu ada sayfalarımız (18519-1, 18506-1) çıkıyor ama Safi Apak'ın kendi adası değiller; GSC denetimi gerek |
-| Şahinbey Sitesi emlakçı | guzelkent-mahallesi/sahinbey-sitesi | Kendi sayfası İLK 10'DA YOK; #10'da komşu isi-kent sayfamız çıkıyor; Gaziantep Şahinbey + Şahinbey Emlak adaş gürültüsü; GSC denetimi gerek |
-| Şehit Ferhat Koç Sitesi emlakçı | guzelkent-mahallesi/sehit-ferhat-koc-sitesi | Kendi sayfası İLK 10'DA YOK; #4 mahalle sayfamız + #10 18641-1 ada sayfamız temsil ediyor (dizinsizlik deseni); GSC denetimi gerek |
-| Şeniz Sitesi emlakçı | guzelkent-mahallesi/seniz-sitesi | Kendi sayfası İLK 10'DA YOK; #5'te 18516-1 ada sayfamız temsil ediyor (dizinsizlik deseni); GSC denetimi gerek |
-| Yayıklı 4 Sitesi emlakçı | guzelkent-mahallesi/yayikli-4-sitesi | Kendi sayfası İLK 10'DA YOK; #4'te 18520-1 ada sayfamız + #9 yeni-yayikli (Eryaman Mah. adaşı) temsil ediyor; GSC denetimi gerek |
-| Yeşim Kent2 Sitesi emlakçı | guzelkent-mahallesi/yesim-kent2-sitesi | Kendi sayfası İLK 10'DA YOK ama #1 BİZİM mahalle sayfamız; Cumhuriyet Mah. Yeşim Kent + Beylikdüzü adaşları gürültüde; GSC denetimi gerek |
-| Yükselay Sitesi emlakçı | guzelkent-mahallesi/yukselay-sitesi | Kendi sayfası İLK 10'DA YOK; #3-4 komşu ada sayfalarımız + #9 özle-iletişim (Yükselay snippet'iyle) temsil ediyor; GSC denetimi gerek |
+| Erenköy Sitesi emlakçı | guzelkent-mahallesi/erenkoy-sitesi | İLK 10'DA YOK — Kadıköy Erenköy adaşı; #1 sahibinden Eryaman: istek adayı |
+| Gökkuşağı Sitesi emlakçı | guzelkent-mahallesi/gokkusagi-sitesi | İLK 10'DA YOK — Tunahan/Çankaya adaşları (yapısal) |
+| Kurtuluş Sitesi emlakçı | guzelkent-mahallesi/kurtulus-sitesi | İLK 10'DA YOK — Kurtuluş semti/ofis adaşları; #1 sahibinden Eryaman: istek adayı |
+| Master Kent Sitesi emlakçı | guzelkent-mahallesi/master-kent-sitesi | İLK 10'DA YOK — SERP Eryaman odaklı: İSTEK ADAYI |
+| Meltem Sitesi emlakçı | guzelkent-mahallesi/meltem-sitesi | İLK 10'DA YOK — Batıkent adaşı + #1 sahibinden Eryaman: istek adayı |
+| Mesa Sitesi emlakçı | guzelkent-mahallesi/mesa-sitesi | İLK 10'DA YOK — Mesa Gayrimenkul ofis + Mesa Koru adaşları (yapısal) |
+| Öz Muhtar Sitesi emlakçı | guzelkent-mahallesi/oz-muhtar-sitesi | İLK 10'DA YOK — SERP Eryaman odaklı: istek adayı |
 | Address Göksu emlakçı | sehit-osman-avci-mahallesi/address-goksu | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; müteahhit ALR/Address kanalları baskın; GSC denetimi gerek |
 | Ahikent Sitesi emlakçı | sehit-osman-avci-mahallesi/ahikent-sitesi | İLK 10'DA YOK — Eyüpsultan Ahikent villaları adaşı SERP'i kaplamış; Eryaman sonucu hiç yok; GSC + Eryaman'lı yeniden ölçüm gerek |
 | Bossphorus Konutları emlakçı | sehit-osman-avci-mahallesi/bossphorus-konutlari | İLK 10'DA YOK, hiçbir sayfamız görünmüyor; 'Bosphorus Ankara Konutları' resmi/yaygın yazım (tek s — varyant adayı, kayıt kontrol); GSC denetimi gerek |
@@ -169,6 +150,9 @@
 | 4 | Doğuş 91 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi | KOMŞU kayıt (ozle-iletisim) #4 temsil — dogus-91 kendi sayfası görünmüyor, dizinsiz/bayat kontrol |
 | 4 | Durtaş 91 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi | KOMŞU kayıt (guzel-ankara) #4 temsil — durtas-91 görünmüyor |
 | 4 | Elele Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/adalar/18454-1 | ada sayfası #4 temsil — site sayfası dizinsizdi (21.08 istek), taranmalı |
+| 4 | Konuta Özlem Sitesi emlakçı | /mahalleler/guzelkent/konuta-ozlem-sitesi | ESKİ SLUG #4 — 301 sindirilmemiş |
+| 4 | Portakal Çiçeği emlakçı | /mahalleler/guzelkent/1-portakal-cicegi-sitesi | ESKİ SLUG #4 — müteahhit adaşı önde |
+| 4 | Şehit Ferhat Koç Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/adalar/18652-1 | ada #4 temsil — SFK dizinsizdi (21.08 istek), hâlâ görünmüyor; er-ay-3 birleştirme kararıyla ilişkili |
 | 4 | Çamlık Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi | #4 (taze kopya); Güzelkent Doğakent Çamlık ADAŞ sayfamız #2 (farklı site, iç adaş); GBP kutusunda Şirin #3 |
 | 4 | Göldekent Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/goldekent-sitesi | #4 yeni kopyayla |
 | 4 | Kıratlı Residence emlakçı | /mahalleler/sehit-osman-avci-mahallesi | YANLIŞ SAYFA: mahalle sayfası #4, ada 46659/6 #8; site sayfası ilk 10'da yok (dizin şüphesi) |
@@ -187,6 +171,9 @@
 | 5 | Meydan Eryaman emlakçı | /mahalleler/seker-mahallesi/meydan-cadde | Şeker'deki Meydan Cadde adaşı #5 temsil — Göksu meydan-eryaman görünmüyor, bayat kontrol |
 | 5 | Şelale Evleri Sitesi emlakçı | /mahalleler/goksu-mahallesi/adalar/46466-1 | ada sayfası #5 temsil — site bayat (26.07, Şelale Emlak adaşı) |
 | 5 | Arzutaş Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/gozde-91-sitesi | KOMŞU kayıt (gozde-91) #5 temsil — arzutas kendi sayfası görünmüyor, bayat kontrol |
+| 5 | Gördoğu Şen Sitesi emlakçı | /mahalleler/guzelkent-mahallesi | MAHALLE sayfası #5 temsil — site sayfası dizinsiz/bayat; harita 3 |
+| 5 | Şeniz Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/adalar/18516-1 | ada #5 temsil — site sayfası taranmalı |
+| 5 | Yayıklı 4 Sitesi emlakçı | /mahalleler/guzelkent/ulas-sitesi | ÇİFT ANOMALİ: ESKİ SLUG (/guzelkent/) + KOMŞU (ulas) temsil — kendi sayfası görünmüyor, güçlü istek adayı |
 | 5 | Alpak & Neve Armonia Residence emlakçı | /mahalleler/sehit-osman-avci-mahallesi | YANLIŞ SAYFA: mahalle sayfası #5, ada sayfası 46651/6 #9; site sayfası ilk 10'da yok (dizin şüphesi) |
 | 5 | Umar Sitesi emlakçı | /mahalleler/seyh-samil-mahallesi/umar-sitesi | #5 (bayat başlıkla); ada 46272/1 #9 |
 | 5 | Yardımcı Blokları emlakçı | /mahalleler/seyh-samil-mahallesi/yardimci-bloklari | Şeyh Şamil sayfamız #5; #1 de BİZİM Tunahan Yardımcı Blokları sayfası (iki mahallede adaş yerleşke, sorguyu Tunahan kazanıyor) — kanibalizasyon değil kardeş-kapsama; bilgiemlak 17704+17688 ada sayfaları arada |
@@ -195,6 +182,7 @@
 | 6 | Gölkent Sitesi emlakçı | /mahalleler/goksu-mahallesi/golkent-1-sitesi | KARDEŞ kayıt (golkent-1) #6 temsil — golkent-sitesi bayat (26.07, Gölbaşı adaşı) |
 | 6 | Park İnci Konutları emlakçı | /mahalleler/seyh-samil-mahallesi/inci-park-evleri | ŞŞ İnci Park adaşı #6 temsil — Göksu kaydı bayat (27.07), v4'te |
 | 6 | Polsan1 Ayışığı Sitesi emlakçı | /mahalleler/goksu-mahallesi/polsan-1-bahar-sitesi | KARDEŞ kayıt (bahar) #6 temsil — ayisigi kendi sayfası dizinsizdi (21.08 istek gitmişti), hâlâ görünmüyor |
+| 6 | Safi Apak Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/adalar/18519-1 | ada #6 temsil — safi-apak v2'de sıradaydı (75 gos), taranmalı |
 | 6 | İnci Life Residence emlakçı | /mahalleler/sehit-osman-avci-mahallesi/zekioglu-rezidans | YANLIŞ SAYFA: komşu Zekioğlu #6 + Garden Zirve #10 çıkıyor; site sayfası ilk 10'da yok — GSC denetimi gerek |
 | 6 | Su Damlası Sitesi emlakçı | /mahalleler/tunahan-mahallesi/su-damlasi-sitesi | ESKİ BAŞLIK — 27.08 sabah dizin isteği gönderildi, tarama yansıması bekleniyor (v3 kuyruğu) |
 | 6 | Endora Eryaman emlakçı | /mahalleler/ata-mahallesi/endora-plus | YANLIŞ SAYFA: adaş kardeş Endora Plus #6; hedef sayfa ilk 10'da yok (Endora ailesi 4 site) — GSC denetimi |
@@ -202,13 +190,16 @@
 | 7 | Göksu Vadi Konutları emlakçı | /mahalleler/goksu-mahallesi | MAHALLE sayfası #7 temsil — site sayfası bayat (27.07, 61 gos), v4'te |
 | 7 | Zirveden Göksu emlakçı | /mahalleler/goksu-mahallesi/adalar/63388-2 | ada sayfası #7 temsil — site bayat (31.07) |
 | 7 | Anka - 2001 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/adalar/18666-1 | ada sayfası #7 temsil — site sayfası taranmalı |
+| 7 | Gülenkent Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi | KOMŞU (guzel-ankara) #7 temsil — gulenkent bayat (26.07, 18 gos), v4'te |
 | 7 | Dört Mevsim Eryaman Konutları emlakçı | /mahalleler/seker-mahallesi/adalar/48305-6 | YANLIŞ SAYFA: ada 48305/6 #7; site sayfası ilk 10'da yok — GSC denetimi |
 | 8 | Atakent 1 Aşiyan Sitesi emlakçı | /mahalleler/devlet/asiyan-sitesi | #8'de DEVLET'teki Aşiyan ESKİ SLUG'u temsil ediyor — kendi sayfası görünmüyor; iki Aşiyan kaydı da bayat kokuyor |
+| 8 | Gülşah - 95 Sitesi emlakçı | /mahalleler/guzelkent-mahallesi | MAHALLE #8 temsil — site sayfası görünmüyor |
+| 8 | Kuşburnu Sitesi emlakçı | /mahalleler/guzelkent-mahallesi/yeni-isikent-sitesi | KOMŞU (yeni-isikent) #8 temsil — kusburnu kendi sayfası görünmüyor |
 | 9 | Endora Göksu emlakçı | /mahalleler/goksu-mahallesi/adalar/63388-3 | ada sayfası #9 temsil — site sayfası görünmüyor; müteahhit sitesi #3 |
 | 9 | Vaditepe Başpınar emlakçı | /mahalleler/goksu-mahallesi/adalar/63380-1 | ada sayfası #9 temsil — müteahhit baskın |
+| 9 | Kardelen Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi | ŞOA Kardelen adaşı #9 temsil — yaygın ad (yapısal); Güzelkent kaydı görünmüyor |
 | 10 | 4. Devlet Mahallesi Sitesi emlakçı | /mahalleler/devlet-mahallesi/cinar-sitesi | #10'da BAŞKA kaydımız (Çınar Sitesi, eski başlık) — kendi sayfası görünmüyor; harita 2 |
 | 10 | Eryaman Evleri emlakçı | / | #10'da ANA SAYFA temsil; 'Eryaman Evleri Emlak Ofisi' adaşı #2 — site sayfası görünmüyor (bayat/adaş karışımı); harita kutusu 1 |
-| 10 | Kardelen Sitesi emlakçı | /mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi | 09:13 yeniden ölçüm: 0→10 İYİLEŞME ama temsilci İÇ ADAŞ (ŞOA Kardelen sayfası, 26.08 taze kopya); Güzelkent kardelen hâlâ görünmüyor — dizin isteği yine de düşük öncelik (Batıkent/dış adaş baskısı sürüyor) |
 
 ## İlk 3'teyiz (koru)
 
@@ -274,17 +265,15 @@
 | 1 | Çözüm Kent Sitesi emlakçı |
 | 1 | Didem Sitesi emlakçı |
 | 1 | Eczacılar Sitesi emlakçı |
-| 1 | Evrimkent Sitesi emlakçı |
-| 1 | Gardenya Sitesi emlakçı |
-| 1 | Gökkuşağı Sitesi emlakçı |
-| 1 | Gözde 1 Sitesi emlakçı |
 | 1 | Isı Kent Sitesi emlakçı |
+| 1 | Köşk Sitesi emlakçı |
 | 1 | Küçük Ankara Villaları emlakçı |
-| 1 | Özügüzelkent Sitesi emlakçı |
+| 1 | Nazlıdeniz Sitesi emlakçı |
 | 1 | Postakent Sitesi emlakçı |
+| 1 | Renk Villaları emlakçı |
 | 1 | Ritim Eryaman emlakçı |
-| 1 | Şirin 91 Sitesi emlakçı |
 | 1 | Yeni Isıkent Sitesi emlakçı |
+| 1 | Yenigün Işığı Sitesi emlakçı |
 | 1 | Yeşil Güven Kent emlakçı |
 | 1 | Yeşimkent emlakçı |
 | 1 | 75. Yıl Sitesi emlakçı |
@@ -394,15 +383,20 @@
 | 2 | Ankolular Sitesi emlakçı |
 | 2 | Çağdaş - 95 Sitesi emlakçı |
 | 2 | Eryapı Sitesi emlakçı |
+| 2 | Gardenya Sitesi emlakçı |
+| 2 | Gözde 1 Sitesi emlakçı |
+| 2 | Gözde 2 Sitesi emlakçı |
 | 2 | Güzel Ankara Sitesi emlakçı |
 | 2 | Karaşimşek Sitesi emlakçı |
-| 2 | Köşk Sitesi emlakçı |
 | 2 | Metro Yaşam Sitesi emlakçı |
-| 2 | Özle İletişim Sitesi emlakçı |
+| 2 | Özügüzelkent Sitesi emlakçı |
 | 2 | Pınarkent 91 Sitesi emlakçı |
+| 2 | Portakal Çiçeği 2. Sitesi emlakçı |
+| 2 | Şirin 91 Sitesi emlakçı |
 | 2 | Tez Konak Sitesi emlakçı |
+| 2 | Ulaş Sitesi emlakçı |
 | 2 | Yayıklı 2 Sitesi emlakçı |
-| 2 | Yenigün Işığı Sitesi emlakçı |
+| 2 | Yeşim Kent2 Sitesi emlakçı |
 | 2 | Akın 688 Konutları emlakçı |
 | 2 | Arkadya Göksu Evleri emlakçı |
 | 2 | Bordo Life Residence emlakçı |
@@ -486,9 +480,15 @@
 | 3 | Çankaya Vefa Sitesi emlakçı |
 | 3 | Er - Ay 3 Sitesi emlakçı |
 | 3 | Erkent Sitesi emlakçı |
+| 3 | Evrimkent Sitesi emlakçı |
 | 3 | Gerçek - 92 Sitesi emlakçı |
 | 3 | Gözde 91 Sitesi emlakçı |
-| 3 | Ulaş Sitesi emlakçı |
+| 3 | İpek Yapı Sitesi emlakçı |
+| 3 | Korukent Sitesi emlakçı |
+| 3 | Mesa Çalışanları Kooperatifi emlakçı |
+| 3 | Özle İletişim Sitesi emlakçı |
+| 3 | Şahinbey Sitesi emlakçı |
+| 3 | Yükselay Sitesi emlakçı |
 | 3 | Atalay Sitesi emlakçı |
 | 3 | Daldikenler Yasemin Evleri Sitesi emlakçı |
 | 3 | Dalgıç Residence emlakçı |

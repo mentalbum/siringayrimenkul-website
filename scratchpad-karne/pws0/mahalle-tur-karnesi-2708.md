@@ -117,3 +117,58 @@ Dizine eklenecek (talep sıralı ilk 12):
 
 Dizinsiz istek adayları (SERP kanıtlı): arissa-goksu, irem-konutlari, kasmir-mavi-orkide,
 oyak-goksupark, goksu-evleri (hepsi ilk 10 dışı + SERP Eryaman odaklı).
+
+## 5. DEVLET MAHALLESİ — TAMAMLANDI ✅ (dizin + 45 SERP ölçümü, 27.08)
+
+Dizin: 8 dizinsiz · 23 bayat (1381 gos) · 6 orta · 9 taze.
+SERP: 26/44 ilk 3 (%59) · organik 1: 11 (bayrak, cagkent, cayilkay, dastarli,
+eryaman-royal-city, mil-kooperatifi, oray, ornek-ari, oz-gimat, tes-is-bloklari,
+turkkonut-istas).
+'Devlet mahallesi emlakçı': organik ilk 10'da YOK ama HARİTA KUTUSU 1. (Şirin en üstte).
+
+Dizine eklenecek / yeniden taranacak (talep sıralı ilk 8):
+- [ ] mil-kooperatifi-sitesi — 229 gos, tarama 2026-07-26 (SERP 1 ama eski başlıkla)
+- [ ] ozdenizyildizi-sitesi — 217 gos, tarama 2026-07-26
+- [ ] gulhayat-sitesi — 116 gos, tarama 2026-07-27
+- [ ] cinar-sitesi — 114 gos, tarama 2026-07-29
+- [ ] cagkent-sitesi — 93 gos, tarama 2026-08-09
+- [ ] turgut-aslan-sitesi — 88 gos, tarama 2026-07-26
+- [ ] 4-devlet-mahallesi-sitesi — 79 gos, tarama 2026-07-26
+- [ ] betim-sitesi — 65 gos, tarama 2026-07-26
+
+İlk 10 dışı (12): alis, asiyan, denizim, guneyce, ilk-bahar, mavi-koy, referans-ankara,
+sedirkent, selcuklu, yeni-huzur-bahcesi, yesiloz, yuceyurt.
+SERP-kanıtlı istek adayları (dizinsiz + görünmez): mavi-koy, sedirkent + bayat selcuklu
+(DIZINE-EKLENECEKLER v4'e işlendi).
+
+## 6. GÜZELKENT — TAMAMLANDI ✅ (dizin + 79 SERP ölçümü, 28-29.08)
+
+Dizin: 23 dizinsiz (EN ÇOK dizinsiz burada) · 32 bayat (1493 gos) · 11 orta · 16 taze.
+SERP: 48/78 ilk 3 (%62) · organik 1: 17 (akkonak, boyut, buyuk-ankara, cozum-kent,
+didem, eczacilar, isi-kent, kosk, kucuk-ankara-villalari, nazlideniz, postakent,
+renk-villalari, ritim-eryaman, yeni-isikent, yenigun-isigi, yesil-guven-kent, yesimkent).
+KRİTİK BULGU: 'Güzelkent mahallesi emlakçı'da organik ilk 10'da YOK + HARİTA KUTUSUNDA
+YOK (ADA Gayrimenkul/Mega/Efor) — Göksu'dan sonra ikinci çift-kayıp mahalle;
+yorum kampanyası önceliğine Güzelkent de eklenmeli.
+DESEN: 8 sorguda ada sayfası, 8 sorguda komşu site, 13 sorguda eski slug temsil ediyor —
+dizinsiz yığın (23) SERP'te ada/komşu gölgesi olarak görünüyor. Çift anomali: yayikli-4
+sorgusunda ESKİ SLUG + KOMŞU (ulas) birlikte.
+
+Dizine eklenecek / yeniden taranacak (talep sıralı ilk 12):
+- [ ] erkent-sitesi — 142 gos, tarama 2026-07-26
+- [ ] isi-kent-sitesi — 103 gos, tarama 2026-08-09 (SERP 1, taze başlık — düşük öncelik)
+- [ ] gozde-91-sitesi — 81 gos, tarama 2026-07-26 (SERP eski-slug temsil)
+- [ ] anka-2001-sitesi — 79 gos, tarama 2026-07-26 (SERP ada temsil)
+- [ ] metro-yasam-sitesi — 79 gos, tarama 2026-07-27
+- [ ] akkonak-sitesi — 78 gos, tarama 2026-07-26 (SERP 1 eski slug)
+- [ ] safi-apak-sitesi — 75 gos, tarama 2026-07-27 (SERP ada temsil)
+- [ ] cozum-kent-sitesi — 70 gos, tarama 2026-07-26
+- [ ] eryapi-sitesi — 70 gos, tarama 2026-07-26
+- [ ] nazlideniz-sitesi — 70 gos, tarama 2026-07-26 (SERP 1, taze — düşük öncelik)
+- [ ] evrimkent-sitesi — 69 gos, tarama 2026-07-26
+- [ ] asilkent-sitesi — 62 gos, tarama 2026-07-26 (SERP ilk 10 dışı — yüksek öncelik)
+
+İlk 10 dışı (10): aksu, asilkent, ekin, erenkoy, gokkusagi, kurtulus, master-kent,
+meltem, mesa, oz-muhtar (kurtulus/master-kent/meltem/oz-muhtar/ekin DİZİNSİZ —
+doğal tarama bekleniyor, kota harcanmaz; bayat olanlardan asilkent/aksu/erenkoy/
+gokkusagi/mesa istek adayı).
