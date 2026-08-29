@@ -395,3 +395,41 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > (Devlet) + gunotesi + eski-adres sınıfı (liderkent/yagan-kent/polsan1).
 > Yarın yansıma ölçümü: sarı-çınar emsali aynı-gün #2 vermişti — 9 sayfanın
 > SERP'i 29.08 turunda yeniden ölçülmeli.
+
+> 29.08 (16:30, Özgün "dizine eklenmesi gerekenleri kontrol et ekle") — YANSIMA
+> ÖLÇÜMÜ + YENİ DAMLA HAZIR, GÖNDERİM CHROME'A TAKILI.
+> (a) YANSIMA: 28.08'in 9 isteğinden 7'si İSTEK ANINDA yeniden TARANDI
+> (endora 12:35, atayildiz 12:40, elit-yasam-1 12:41, melis 12:44,
+> gokdemirler-suit 12:45, dogan-life 12:49 UTC = istek saatleri; anka-vega
+> ayrıca 29.08 07:32'de tekrar tarandı). Kalan 2'si (sehit-ferhat-koc,
+> rainbow) hâlâ "unknown" — dizinsizlerin yerleşmesi uzun sürüyor, normal.
+> ÖLÇÜLEN GERÇEK: istek = aynı-dakika tarama; bayat başlık sorunu istekle
+> gerçekten çözülüyor (gokdemirler-suit bugün SERP'te #1 çıktı).
+> (b) API ÖN-DOĞRULAMA (35 sayfa denetlendi, kota harcanmadan elendi):
+>   - SERP'te kurtulmuş → DÜŞ: erland #2, ozar #1, hill-tower #1,
+>     terasevler #1, dogapark #2, demirel-park #2 (hepsi taze başlıkla)
+>   - Taze taranmış → DÜŞ: relax-eryaman (27.08), alpak-neve (28.08),
+>     asiyan (26.08)
+>   - DİZİNSİZ (Özgün kararı: kota harcanmaz) → DÜŞ: gode-yasam, bulvar-312,
+>     neva-panora; eski-adres sınıfı liderkent/yagan-kent/polsan1-ayisigi
+>     yeni slugda "unknown" — bunlar 301 birleştirme işi, damla işi değil
+> (c) BUGÜNKÜ NET DAMLA SIRASI (10 aday, kota ~6-10):
+>   1. sehit-osman-avci/mia-concept-konutlari  — 563 gos, SERP #2 ESKİ kısa başlık
+>   2. goksu/buse-konutlari                    — 460 gos, SERP'te SİLİNMİŞ Ata adresi çıkıyor
+>   3. goksu/polsan-1-gozde-sitesi             — 431 gos, SERP #4 eski başlık
+>   4. eryaman/platin-2-konutlari              — 309 gos, SERP #3 eski başlık
+>   5. sehit-osman-avci/demirer-sitesi         — 302 gos, SERP #2 eski başlık
+>   6. sehit-osman-avci/safir-rezidans         — 260 gos, tarama 02.08
+>   7. devlet/selcuklu-sitesi                  — SERP 0 (adaşsız görünmez)
+>   8. sehit-osman-avci/atalay-sitesi          — SERP 0, #1 bilgiemlak
+>   9. devlet/alis-sitesi                      — SERP 0
+>  10. sehit-osman-avci/lale-kent-sitesi       — SERP 0 (Milas adaşı gürültüde)
+>   Yedek: devlet/guneyce, devlet/yeni-huzur, devlet/ilk-bahar, devlet/yuceyurt,
+>   soa/intes, soa/neva-prestij, soa/garden-zirve, soa/nefeskent, soa/dalgic,
+>   soa/inci-life (hepsi bayat + SERP kaybı doğrulandı)
+> (d) IndexNow: 10 adayın tamamı Bing/Yandex'e bildirildi (200). Google
+>     IndexNow kullanmıyor — Google isteği GSC ekranından gitmeli.
+> (e) ENGEL: Chrome eklentisi kopuk; GSC hamza hesabının oturumunu istiyor,
+>     uygulama-içi tarayıcı Google'a giriş yapmamış (şifre giremem). Chrome
+>     açılınca liste yukarıdan sırayla gönderilecek — kota ~24 saat doldu
+>     (28.08 15:35-16:05 penceresi kapandı).
