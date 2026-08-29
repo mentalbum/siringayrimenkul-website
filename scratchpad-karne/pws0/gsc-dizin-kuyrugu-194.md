@@ -433,3 +433,18 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 >     uygulama-içi tarayıcı Google'a giriş yapmamış (şifre giremem). Chrome
 >     açılınca liste yukarıdan sırayla gönderilecek — kota ~24 saat doldu
 >     (28.08 15:35-16:05 penceresi kapandı).
+
+> 29.08 (16:40-17:10) — DAMLA KOŞULDU, KOTA SONUNA KADAR KULLANILDI: 10 istek,
+> 9'u ONAY GÖRÜLDÜ, 10. istekte "Kota Aşıldı" → durduldu.
+> Kabul (sırayla): buse-konutlari, polsan-1-gozde, platin-2-konutlari,
+> demirer, safir-rezidans, selcuklu (Devlet), atalay (ŞOA), alis (Devlet),
+> lale-kent (ŞOA).
+> mia-concept-konutlari BELİRSİZ: ilk denemede test modalı sonuna kadar koştu
+> ama onay yakalanamadı; yeniden denendiğinde "Kota Aşıldı" geldi. Kota
+> matematiği (9 onay + 1 = 10) ilk denemenin İŞLENDİĞİNİ söylüyor. TEYİT:
+> 30.08'de API'den son tarama tarihine bak — 29.08 olmuşsa istek geçmiş,
+> 08.08'de kalmışsa listenin başına geri konacak.
+> UI DERSİ (protokole eklendi): onay balonu ~30 sn'de çıkıyor ve "Kapat"
+> ile kapatılmazsa sonraki URL yutuluyor; ayrıca onay rozeti sayfa yeniden
+> denetlenince KAYBOLUYOR — "istek gitti mi" sorusu UI'den değil, ertesi gün
+> API tarama tarihinden doğrulanır.

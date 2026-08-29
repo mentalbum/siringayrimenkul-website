@@ -15,19 +15,19 @@ devlet/selcuklu-sitesi. Ada-gölgeli taze sayfalar (dema-park, elif-elvan,
 dogankaya, sergah, demirkent) İKİNCİL — bayat listesi bitmeden istek harcanmaz.
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari  <!-- 563 gos · tarama 2026-08-08 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari  <!-- 460 gos · tarama 2026-07-26 · ADAŞ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi  <!-- 431 gos · tarama 2026-07-28 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari  <!-- 460 gos · tarama 2026-07-26 · ADAŞ --> ← 29.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi  <!-- 431 gos · tarama 2026-07-28 --> ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman  <!-- 347 gos · tarama 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi  <!-- 325 gos · tarama 2026-08-02 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/erland-residence  <!-- 320 gos · tarama 2026-08-08 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-2-konutlari  <!-- 309 gos · tarama 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-2-konutlari  <!-- 309 gos · tarama 2026-07-27 --> ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ozar-sitesi  <!-- 307 gos · tarama 2026-08-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/demirel-park-evleri  <!-- 304 gos · tarama 2026-08-08 -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi  <!-- 302 gos · tarama 2026-07-27 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi  <!-- 302 gos · tarama 2026-07-27 --> ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/hill-tower  <!-- 295 gos · tarama 2026-07-31 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/karma-modern  <!-- 274 gos · tarama 2026-08-09 -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/konum-eryaman  <!-- 262 gos · tarama 2026-07-26 · ADAŞ -->
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans  <!-- 260 gos · tarama 2026-08-02 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans  <!-- 260 gos · tarama 2026-08-02 --> ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari  <!-- 248 gos · tarama 2026-07-26 · ADAŞ -->
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi  <!-- 241 gos · tarama 2026-07-26 -->
 - [ ] https://www.siringayrimenkul.com/siteler  <!-- 237 gos · tarama 2026-07-02 -->
@@ -548,7 +548,7 @@ başlıkla — site sayfasının Google kopyası 26.07-02.08. İlaç yeniden TAR
 tarama gelince doğru sayfa doğru başlıkla yarışır (Serender kanıtı: 18.08
 tarama → 23.08 #1).
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari ← 26.07 (#4'te Ata adaşımız çıkıyor)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari ← 26.07 (#4'te Ata adaşımız çıkıyor) ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence ← 27.07 (#4 mahalle sayfası)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari ← 26.07 (#4 kardeş Havuzlu Evler)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi ← 26.07 (#4 mahalle sayfası; ad=mahalle adı, yapısal zorluk da var)
@@ -760,3 +760,16 @@ düşürür (95f4aef) — kural değişmez: ÖNCE SİTE, SONRA ADA.
 Tarih penceresi kanıtı: 28.07–03.08 arası taranan adalar noindex kopyasında
 sıkıştı (46493-2 vakası, istek gönderildi); 26–28.07 taramalılar dizinde kaldı
 (17662-1, 46196-4, 63379-1 API teyitli).
+
+## 29.08 — SERP-KANITLI EK İSTEKLER (v4 listesinde değil, tur bulgusundan)
+
+Talep düşük ama SERP'te sıra 0 (görünmez) olduğu ölçülen bayat sayfalar:
+
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/selcuklu-sitesi  <!-- SERP 0 · tarama 2026-07-29 --> ← 29.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/alis-sitesi  <!-- SERP 0 · tarama 2026-07-29 --> ← 29.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/atalay-sitesi  <!-- SERP 0 · tarama 2026-07-27 --> ← 29.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/lale-kent-sitesi  <!-- SERP 0 · tarama 2026-07-29 --> ← 29.08 istek gönderildi
+
+Sıradaki yedekler (aynı sınıf, kota açılınca): devlet/guneyce, devlet/yeni-huzur-bahcesi,
+devlet/ilk-bahar, devlet/yuceyurt, soa/intes, soa/neva-prestij, soa/garden-zirve,
+soa/nefeskent, soa/dalgic-residence, soa/inci-life-residence.
