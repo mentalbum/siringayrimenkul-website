@@ -27,13 +27,13 @@ TURLAR = [
     ("eryaman", "Eryaman", "tur-eryaman-2708.json"),
     ("goksu", "Göksu", "tur-goksu-2808.json"),
     ("guzelkent", "Güzelkent", "tur-guzelkent-2808.json"),
+    ("sehit-osman-avci", "Şehit Osman Avcı", "tur-sehit-osman-avci-2908.json"),
+    ("seker", "Şeker", "tur-seker-2908.json"),
+    ("yesilova", "Yeşilova", "tur-yesilova-2908.json"),
 ]
 BEKLEYEN = [
-    ("sehit-osman-avci", "Şehit Osman Avcı", "tur-sehit-osman-avci-2908.json"),
-    ("seker", "Şeker", None),
-    ("seyh-samil", "Şeyh Şamil", None),
-    ("yavuz-selim", "Yavuz Selim", None),
-    ("yesilova", "Yeşilova", None),
+    ("seyh-samil", "Şeyh Şamil", "tur-seyh-samil-2908.json"),
+    ("yavuz-selim", "Yavuz Selim", "tur-yavuz-selim-2908.json"),
 ]
 DA = json.load(open("dizin-analiz-2708.json"))
 DKEY = {  # tur anahtarı -> dizin-analiz anahtarı
@@ -49,7 +49,7 @@ def mah_stats(dosya):
     kf = json.load(open(dosya))
     gs = [k["s"] for k in kf]
     g = [son[s] for s in gs if s in son]
-    site = [r for r in g if "/" in r["s"]]
+    site = [r for r in g if "/" in r["s"] and "/etaplar/" not in r["s"]]
     mahq = [r for r in g if "/" not in r["s"]]
     ilk3 = [r for r in site if 1 <= r["sira"] <= 3]
     yok = [r for r in site if r["sira"] == 0]
@@ -118,6 +118,11 @@ for metin in (dk, dk2):
 BEKLEYEN_ISTEK = len(_istekli)
 SIRADAKI = re.findall(r"- \[ \] https://www\.siringayrimenkul\.com(/\S+)\s+<!-- (\d+) gos", dk)[:5]
 
+try:
+    ADAYLAR = json.load(open("dizin-adaylari.json"))
+except FileNotFoundError:
+    ADAYLAR = []
+
 def yuzde(a, b):
     return round(100 * a / b) if b else 0
 
@@ -134,6 +139,9 @@ def tr_tarih(iso):
 
 # küratörlü mahalle bulguları (tur karnesinden)
 BULGULAR = {
+    "sehit-osman-avci": "Eryaman'ın en büyük ikinci bayat yığını (29 sayfa, 4.083 gösterim). 11 sorguda görünmez — çoğu güçlü adaş (İçtaş Holding, Soyak GYO, Çamlık/Çiçek ofisleri).",
+    "seker": "Küçük ama derli toplu mahalle; en büyük kayıp Zirve Loft ve İzoser (ikisi de adaşsız görünmez). Mahalle sorgusunda organikte yokuz, kutuda 3.",
+    "yesilova": "EN GÜÇLÜ MAHALLE: 22 sorgunun 20'si ilk 3'te, ilk 10 dışı hiç yok. Zayıflık eski slug kalıntıları (may-tower, green-place, koçaklar). Mahalle sorgusunda ne organik ne kutu var.",
     "tunahan": "En güçlü mahalle; 21 sayfası taze. Mahalle sorgusunda organik 9 ama harita kutusu 1.",
     "altay": "Site sorgularında güçlü; mahalle sorgusunda organikte yokuz, kutu 1. taşıyor.",
     "devlet": "12 sorguda ilk 10'da yokuz (adaşsız görünmezler: Mavi Köy, Sedirkent, Selçuklu — istek sırada).",
@@ -195,9 +203,7 @@ for key, ad, dosya in TURLAR:
 
 bekleyen_html = ""
 for key, ad, dosya in BEKLEYEN:
-    durum = "sırada"
-    if key == "sehit-osman-avci":
-        durum = f"sürüyor — {SOA_OLCULEN}/{SOA_KUYRUK} ölçüldü"
+    durum = "sırada — gece turunda"
     v = DA.get(DKEY[key])
     doz = f"{len(v['bayat'])} bayat · {len(v['dizinsiz'])} dizinsiz" if v else ""
     bekleyen_html += f'<div class="bek"><strong>{ad}</strong><span>{durum}</span><span class="alt">{doz}</span></div>'
@@ -206,6 +212,18 @@ etap_html = ""
 for i, r in enumerate(ETAPLAR, 1):
     etap_html += f"""<tr><td>Eryaman {i}. Etap emlakçı</td>
     <td>{chip_org(r)}</td><td>{chip_har(r)}</td><td class="alt">{tr_tarih(r['d']) if r else ''}</td></tr>"""
+
+SERP_DURUM_RENK = {"GÖRÜNMEZ": "kotu", "ada temsil": "orta", "komşu sayfa temsil": "orta",
+                   "mahalle sayfası temsil": "orta", "eski slug": "orta", "eski başlık": "nul"}
+aday_satirlari = ""
+for i, a in enumerate(ADAYLAR[:20], 1):
+    sira = "yok" if a["sira"] == 0 else f"{a['sira']}."
+    renk = SERP_DURUM_RENK.get(a["tur"], "nul")
+    aday_satirlari += (f"<tr><td class=\"num\" style=\"font-size:15px\">{i}</td>"
+        f"<td><strong>{esc(a['site'])}</strong></td><td class=\"alt\">{esc(MAH_AD.get(a['mah'], a['mah']))}</td>"
+        f"<td><span class=\"chip {renk}\">{esc(a['tur'])}</span></td>"
+        f"<td>{sira}</td><td>{a['gos']}</td><td class=\"alt\">{tr_tarih(a['tarama'])}</td></tr>")
+aday_sayisi = len(ADAYLAR)
 
 detaylar = ""
 for key, ad, dosya in TURLAR:
@@ -335,7 +353,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   Google ilk ~10 sonucu gösterir; “görünmez” = ilk 10′da yok demektir. Harita kutusu organikten ayrı sayılır.</p>
 
   <div class="kartlar">
-    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · 6/11 mahalle</div></div>
+    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · {len(TURLAR)}/11 mahalle</div></div>
     <div class="kart"><div class="buyuk">%{yuzde(TOPLAM_I3, TOPLAM_N)}</div><div class="etiket">sorguların ilk 3′te olduğu oran</div></div>
     <div class="kart"><div class="buyuk">{TOPLAM_BIR}</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
     <div class="kart vurgu"><div class="buyuk">{ana_org}<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita {ana_har}.) · {ana_d}</div></div>
@@ -368,10 +386,16 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano zayif">
       <h3>Zayıf halkalar</h3>
       <ul>
-        <li><strong>Mahalle sorgularının organiği.</strong> 6 mahallenin 3′ünde (Altay, Devlet, Güzelkent) “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz; bizi harita kutusu taşıyor.</li>
-        <li><strong>Göksu + Güzelkent harita kutusu.</strong> Bu iki mahallede kutuda da yokuz — yorum kampanyasında mahalle adı geçirme önceliği bu ikisine kaydı.</li>
-        <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083) en büyük iki tazeleme borcu.</li>
-        <li><strong>Eski adres kalıntıları.</strong> 13+ sorguda hâlâ eski sayfa adresi listeleniyor (taşınma sindirimi sürüyor).</li>
+        <li><strong>Mahalle sorgularının organiği.</strong> Ölçülen 9 mahallenin 6′sında “… mahallesi emlakçı”
+        aramasında ilk 10′a giremiyoruz (Altay, Devlet, Güzelkent, Şeker, Yeşilova ve kısmen Göksu);
+        bu sorgularda bizi çoğunlukla harita kutusu taşıyor.</li>
+        <li><strong>Üç mahallede harita kutusu da yok.</strong> Göksu, Güzelkent ve Yeşilova′da ne organikte ne kutudayız —
+        yorum kampanyasında mahalle adı geçirme önceliği bu üçü.</li>
+        <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083)
+        en büyük iki tazeleme borcu; ikisi de damla sırasının başında.</li>
+        <li><strong>Eski adres kalıntıları.</strong> 20′den fazla sorguda hâlâ taşınmadan önceki sayfa adresi listeleniyor
+        (Yeşilova′da may-tower, green-place, koçaklar; Şeker′de relax-line; ŞOA′da address-göksu, ardıç).</li>
+      </ul>
       </ul>
     </div>
     <div class="pano">
@@ -381,6 +405,18 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       Sayfa envanteri: {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
     </div>
   </div>
+
+  <h2>Dizine eklenecekler</h2>
+  <p class="not">SERP turlarında <strong>kayıp</strong> ölçülen sayfalar (görünmez ya da yerine ada/komşu/mahalle
+  sayfası çıkan) dizin envanteriyle çaprazlandı. İstek kotası günde ~10, o yüzden sıra önemli:
+  önce hiç görünmeyenler, sonra başka sayfanın temsil ettikleri, en sonda yalnız başlığı bayat olanlar.
+  Dizinsiz sayfalara kota harcanmıyor (doğal tarama bekleniyor).</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Sıra</th><th>Sayfa</th><th>Mahalle</th><th>SERP durumu</th><th>Google′daki sıra</th><th>Gösterim talebi</th><th>Son tarama</th></tr></thead>
+    <tbody>{aday_satirlari}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">Tam liste ({aday_sayisi} sayfa) ve dizinsiz sınıfı:
+  <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
 
   <h2>Mahalle ayrıntıları</h2>
   {detaylar}
