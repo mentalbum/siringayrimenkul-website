@@ -82,3 +82,17 @@ zaman UI'den gider.
 Tur bitince Özgün'e Türkçe, sade özet: kaç istek kabul, kaç kendiliğinden
 dizinde, kota durumu, sıradaki adım. Rakamları kuyruk dosyasındaki işaretlerden
 say, ezberden yazma.
+
+## Onay balonu mekaniği (29.08 ölçüldü)
+
+- İstek butonuna basınca önce **canlı test** modalı açılır (~30 sn), ardından
+  yeşil "Dizine eklenmesi istendi" balonu gelir. 4-10 sn'de bakarsan test
+  sürüyordur, 60 sn'de bakarsan balon kapanmış olabilir → **~30 sn** en isabetli an.
+- Balon açıkken arama kutusuna yazılan URL YUTULUR ve eski sayfa ekranda kalır.
+  Her istekten sonra "Kapat"ı DOM'dan bul (`Kapat` metinli görünür öğe), tıkla,
+  `dialogAcik:false` doğrula, sonra sıradakine geç.
+- Aynı sayfa yeniden denetlenince "Dizine eklenmesi istendi / TEKRAR İSTEK
+  GÖNDER" rozeti **kaybolur** — bu rozetin yokluğu "istek gitmedi" demek DEĞİLDİR.
+  Şüpheye düşersen tekrar basma; ertesi gün `gsc-api.mjs denetle` ile son tarama
+  tarihine bak (istek kabul edilmişse tarama damgası istek dakikasına düşer).
+- Kota bitince aynı akış "Kota Aşıldı" ile döner; o istek işlenmemiştir.
