@@ -203,7 +203,12 @@ for key, ad, dosya in TURLAR:
 
 bekleyen_html = ""
 for key, ad, dosya in BEKLEYEN:
-    durum = "sırada — gece turunda"
+    if dosya:
+        _k = json.load(open(dosya))
+        _o = sum(1 for x in _k if x["s"] in son and son[x["s"]]["d"] >= "2026-08-29")
+        durum = f"{_o}/{len(_k)} ölçüldü — gece turunda sürecek" if _o else "sırada — gece turunda"
+    else:
+        durum = "sırada — gece turunda"
     v = DA.get(DKEY[key])
     doz = f"{len(v['bayat'])} bayat · {len(v['dizinsiz'])} dizinsiz" if v else ""
     bekleyen_html += f'<div class="bek"><strong>{ad}</strong><span>{durum}</span><span class="alt">{doz}</span></div>'

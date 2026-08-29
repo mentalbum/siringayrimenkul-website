@@ -326,3 +326,12 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > (Relax Göksu, tur-sehit-osman-avci-2908.json[53:], 13 sorgu) → Şeker → ŞŞ → YS → Yeşilova.
 > Ayrıca: bulunabilirlik karnesi HTML üretici (karne-html.py) kuruldu, Artifact yayında;
 > yanlış 29.08 tarih damgaları 28.08 yapıldı; DIZINE-EKLENECEKLER'e 28.08 işaretleri girildi.
+> 29.08 (öğleden sonra, Özgün "tüm mahalleler + dizin notu"): Şeker 17/17 ve
+> Yeşilova 23/23 TAMAMLANDI, Yavuz Selim 21/57'de duvar (taktik ikinci denemede
+> de CAPTCHA → kapandı). ŞOA gece devrinde 66/66 bitmişti. Toplam 9/11 mahalle.
+> Kalan: YS 22. sorgudan (Havayolları, tur-yavuz-selim-2908.json[21:]) + ŞŞ 59
+> sorgu (tur-seyh-samil-2908.json, içinde "Eryaman 3. Etap" + mahalle sorgusu).
+> YENİ ARAÇ: dizin-adaylari-uret.py — SERP kaybı (görünmez/ada/komşu/mahalle
+> temsili/eski slug/eski başlık) x dizin envanteri çaprazı; çıktı dizin-adaylari.md
+> (185 aday, 29 istek bekliyor, 70 dizinsiz kota-dışı). Yenimahalle grubu filtreli.
+> Karne artık dizin adaylarının ilk 20'sini de gösteriyor.
