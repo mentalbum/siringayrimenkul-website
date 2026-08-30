@@ -358,3 +358,15 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > oyak-goksupark 0→7) İSTEK GÖNDERİLMEDEN kendiliğinden kurtulmuş →
 > "görünmez" adaylar gönderilmeden önce MUTLAKA yeniden ölçülmeli (2 kota kurtuldu).
 > Bugün 112 ölçüm; yeniden ölçülenlerde 35 yükselen / 22 düşen.
+> 31.08 (gizli pencere, ilk tam tur): 16 HEDEF SORGU yeniden ölçüldü.
+> MAHALLE (11): organikte ilk10'da 5/11, haritada 5/11. Değişimler:
+>   Tunahan 9→10, Eryaman 4→6, Göksu 7→0 (GERİLEME), Yavuz Selim 4→5,
+>   Şeker harita 3→0 (KUTUDAN DÜŞTÜK), ŞOA 3 ve ŞŞ 4 korundu,
+>   Altay/Devlet organik yok + harita 1 (istikrarlı), Güzelkent/Yeşilova çift kayıp.
+> ETAP (5): 1.Etap 3→2 (+harita 1), 2.Etap 3→4 (harita 2), 3.Etap 4→5 (harita 2),
+>   4.Etap 2 (+harita 1), 5.Etap 2→5 GERİLEME (harita 1).
+> ANA SORGU: "eryaman emlakçı" organik 3 (17.08'de 2), harita 1.
+> YENİ YAPISAL BULGU: 6 sorguda organik #1'i KENDİ sahibinden mağazamız
+> (eryamansiringayrimenkul.sahibinden.com / empaeryaman2 vb.) tutuyor —
+> yani "rakip" sandığımız ilk sıra bizim ikinci kanalımız. Etap sorgularında
+> ana sayfa + mağaza birlikte listeleniyor, site sayfası geride kalıyor.

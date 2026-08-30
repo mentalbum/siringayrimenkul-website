@@ -1,6 +1,6 @@
 # DİZİN İSTEĞİ ADAYLARI — SERP turlarından üretildi
 
-Üretim: 30.08.2026 · `python3 dizin-adaylari-uret.py`  
+Üretim: 31.08.2026 · `python3 dizin-adaylari-uret.py`  
 Ölçüt: sayfa SERP'te kayıp + dizinde bayat. Dizinsizlere kota harcanmaz
 (Özgün kararı) — ayrı bölümde. İstek gönderilmişler düşüldü.  
 Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıldı, 410.  
