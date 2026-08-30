@@ -87,3 +87,19 @@ Sonuç: `pws=0&gl=tr&hl=tr` zaten sapma üretmiyordu; gizli pencere ek güvence.
 **PENCERE TUZAĞI:** MCP sekme grubu tek pencerede yaşar. Gizli penceredeyken
 GSC işleri (dizin damlası) YAPILAMAZ — oturum yok. Damla zamanı geldiğinde
 normal pencere öne alınmalı ve sekme grubu yeniden kurulmalıdır.
+
+## İŞGAL ÖLÇÜTÜ (Özgün, 31.08 — ÖNCELİKLİ)
+
+"Kendi sayfalarımız kendi sayfalarımızdan önde olabilir, önemli değil; amaç
+1. arama sayfasını işgal etmek." Yani **"en iyi sıramız" tek ölçüt değildir**;
+her sorguda ilk sayfada BİZE AİT kaç sonuç olduğu da ölçülür ve raporlanır.
+Kendi kanallarımızın birbirini geçmesi RAPORDA SORUN OLARAK ANILMAZ.
+
+Bize ait varlıklar (ölçüm koduna gömülü):
+```js
+const BIZ=[/siringayrimenkul\.com/,/eryamansiringayrimenkul\.sahibinden/,
+ /instagram\.com\/eryamansiringayrimenkul/,/tiktok\.com\/@siringayrimenkul/,
+ /facebook\.com.*61585267540417/];
+```
+Sonuç `isgal-GGAA.json`'a yazılır, karnede "1. sayfa işgali" tablosunda görünür.
+İlk ölçüm (31.08, 9 sorgu): 86 organik sıranın 12'si bizim (%14).

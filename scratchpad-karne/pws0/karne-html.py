@@ -144,6 +144,11 @@ DUSEN = sorted([d for d in DEGISIM.values() if d["fark"] < 0], key=lambda d: d["
 SABIT = [d for d in DEGISIM.values() if d["fark"] == 0]
 
 try:
+    ISGAL = json.load(open("isgal-3108.json"))
+except FileNotFoundError:
+    ISGAL = None
+
+try:
     ADAYLAR = json.load(open("dizin-adaylari.json"))
 except FileNotFoundError:
     ADAYLAR = []
@@ -260,6 +265,23 @@ etap_html = ""
 for i, r in enumerate(ETAPLAR, 1):
     etap_html += f"""<tr><td>Eryaman {i}. Etap emlakçı</td>
     <td>{chip_org(r)}</td><td>{chip_har(r)}</td><td class="alt">{tr_tarih(r['d']) if r else ''}</td></tr>"""
+
+isgal_satirlari = ""
+isgal_ozet = ""
+if ISGAL:
+    _o = ISGAL["olcumler"]
+    _top = sum(x["isgal"] for x in _o); _n = sum(x["n"] for x in _o)
+    for x in _o:
+        oran = x["isgal"] / x["n"] if x["n"] else 0
+        cls = "iyi" if oran >= 0.2 else ("orta" if x["isgal"] else "kotu")
+        sir = ", ".join(f"{i}." for i in x["siralar"]) or "—"
+        har = f'<span class="chip iyi">kutu {x["harita"]}.</span>' if x["harita"] else '<span class="chip kotu">kutuda yok</span>'
+        isgal_satirlari += (f'<tr><td><strong>{esc(x["q"])}</strong></td>'
+            f'<td><span class="chip {cls}">{x["isgal"]} / {x["n"]}</span></td>'
+            f'<td>{sir}</td><td>{har}</td></tr>')
+    isgal_ozet = (f'Ölçülen {len(_o)} sorguda ilk sayfadaki {_n} organik sıranın '
+                  f'<strong>{_top}′i bize ait (%{round(100*_top/_n)})</strong> · '
+                  f'ölçüm {ISGAL["tarih"][8:10]}.{ISGAL["tarih"][5:7]}, gizli pencere.')
 
 def _sira_yazi(p):
     return "yok" if p >= 99 else f"{p}."
@@ -471,6 +493,17 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       Sayfa envanteri: {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
     </div>
   </div>
+
+  <h2>1. sayfa işgali</h2>
+  <p class="not">Amaç tek bir sayfayı 1. sıraya çıkarmak değil, arama sonuçlarının ilk sayfasını
+  Şirin Gayrimenkul′e ait sonuçlarla doldurmak. Bu tabloda site, sahibinden mağazası ve sosyal
+  hesaplarımızın <strong>tuttuğu sıra sayısı</strong> var — hangisinin önde olduğu önemsiz.
+  Harita kutusu ayrı sayılır.</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Sorgu</th><th>İşgal</th><th>Tuttuğumuz sıralar</th><th>Harita kutusu</th></tr></thead>
+    <tbody>{isgal_satirlari}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">{isgal_ozet}</p>
 
   <h2>Son ölçümde ne değişti</h2>
   <p class="not">Her sorgu yeniden ölçüldükçe önceki sıra ile karşılaştırılıyor.
