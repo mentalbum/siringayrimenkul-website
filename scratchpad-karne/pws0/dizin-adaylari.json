@@ -173,7 +173,7 @@
   "gos": 53,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-22"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/eylul-evleri",
@@ -206,7 +206,7 @@
   "gos": 35,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-23"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/guneyce-sitesi",
@@ -239,7 +239,7 @@
   "gos": 27,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-22"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/referans-ankara",
@@ -374,15 +374,15 @@
   "olcum": "2026-08-30"
  },
  {
-  "yol": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
+  "yol": "/mahalleler/seyh-samil-mahallesi/umut-sitesi",
   "mah": "seyh-samil-mahallesi",
-  "site": "ilkdogus-sitesi",
+  "site": "umut-sitesi",
   "tur": "GÖRÜNMEZ",
   "sira": 0,
-  "gos": 16,
-  "tarama": "2026-07-26",
-  "durum": "bayat",
-  "olcum": "2026-08-22"
+  "gos": 14,
+  "tarama": "2026-08-11",
+  "durum": "orta",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
@@ -506,6 +506,17 @@
   "olcum": "2026-08-29"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ilksebat-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "ilksebat-sitesi",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 6,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/eryaman-mahallesi/toki-konutlari",
   "mah": "eryaman-mahallesi",
   "site": "toki-konutlari",
@@ -525,7 +536,18 @@
   "gos": 4,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-22"
+  "olcum": "2026-08-30"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/kervan-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "kervan-sitesi",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 0,
+  "tarama": "-",
+  "durum": "?",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/sehit-osman-avci-mahallesi/koz-modern",
@@ -614,6 +636,17 @@
   "tarama": "2026-08-13",
   "durum": "orta",
   "olcum": "2026-08-28"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/umar-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "umar-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 6,
+  "gos": 216,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi",
@@ -737,6 +770,17 @@
   "olcum": "2026-08-27"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "bizim-alperenler-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 114,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/goksu-mahallesi/park-inci-konutlari",
   "mah": "goksu-mahallesi",
   "site": "park-inci-konutlari",
@@ -811,6 +855,17 @@
   "gos": 88,
   "tarama": "2026-08-17",
   "durum": "orta",
+  "olcum": "2026-08-30"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/caglar-emin-evleri",
+  "mah": "seyh-samil-mahallesi",
+  "site": "caglar-emin-evleri",
+  "tur": "mahalle sayfası temsil",
+  "sira": 4,
+  "gos": 88,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
   "olcum": "2026-08-30"
  },
  {
@@ -1045,6 +1100,17 @@
   "olcum": "2026-08-28"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/taniskent-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "taniskent-sitesi",
+  "tur": "komşu sayfa temsil",
+  "sira": 5,
+  "gos": 40,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/goksu-mahallesi/goksu-aura-sitesi",
   "mah": "goksu-mahallesi",
   "site": "goksu-aura-sitesi",
@@ -1166,6 +1232,28 @@
   "olcum": "2026-08-27"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "ovgu-iletisim-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 23,
+  "tarama": "2026-07-28",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "oz-cozum-kent-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 4,
+  "gos": 23,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/eryaman-mahallesi/eryaman-evleri",
   "mah": "eryaman-mahallesi",
   "site": "eryaman-evleri",
@@ -1232,6 +1320,17 @@
   "olcum": "2026-08-27"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "ilkdogus-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 16,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "yayikli-4-sitesi",
@@ -1243,6 +1342,17 @@
   "olcum": "2026-08-28"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/uzunbey-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "uzunbey-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 13,
+  "tarama": "2026-07-27",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/goksu-mahallesi/ma1-tower",
   "mah": "goksu-mahallesi",
   "site": "ma1-tower",
@@ -1252,6 +1362,28 @@
   "tarama": "2026-07-27",
   "durum": "bayat",
   "olcum": "2026-08-28"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "yunus-emre-cagdas-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 9,
+  "tarama": "2026-07-27",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/selinkent-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "selinkent-sitesi",
+  "tur": "mahalle sayfası temsil",
+  "sira": 3,
+  "gos": 6,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/meydan-eryaman",
@@ -1727,6 +1859,17 @@
   "olcum": "2026-08-27"
  },
  {
+  "yol": "/mahalleler/seyh-samil-mahallesi/tugce-kent-sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "site": "tugce-kent-sitesi",
+  "tur": "eski başlık",
+  "sira": 2,
+  "gos": 91,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
   "yol": "/mahalleler/yavuz-selim-mahallesi/yeni-ilkay-sitesi",
   "mah": "yavuz-selim-mahallesi",
   "site": "yeni-ilkay-sitesi",
@@ -2055,6 +2198,17 @@
   "tarama": "2026-07-27",
   "durum": "bayat",
   "olcum": "2026-08-27"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ictas-bloklari",
+  "mah": "seyh-samil-mahallesi",
+  "site": "ictas-bloklari",
+  "tur": "eski başlık",
+  "sira": 2,
+  "gos": 21,
+  "tarama": "2026-08-14",
+  "durum": "orta",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",

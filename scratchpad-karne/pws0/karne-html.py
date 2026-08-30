@@ -31,10 +31,9 @@ TURLAR = [
     ("seker", "Şeker", "tur-seker-2908.json"),
     ("yesilova", "Yeşilova", "tur-yesilova-2908.json"),
     ("yavuz-selim", "Yavuz Selim", "tur-yavuz-selim-2908.json"),
-]
-BEKLEYEN = [
     ("seyh-samil", "Şeyh Şamil", "tur-seyh-samil-2908.json"),
 ]
+BEKLEYEN = []
 DA = json.load(open("dizin-analiz-2708.json"))
 DKEY = {  # tur anahtarı -> dizin-analiz anahtarı
     "tunahan": "tunahan-mahallesi", "altay": "altay-mahallesi",
@@ -139,6 +138,7 @@ def tr_tarih(iso):
 
 # küratörlü mahalle bulguları (tur karnesinden)
 BULGULAR = {
+    "seyh-samil": "Mahalle sayfası kanibalizasyonunun merkezi: 9 sorguda site yerine mahalle sayfamız çıkıyor. Yapısal adaş yoğunluğu da en yüksek burada (Umut 19 Emlak, Onur Emlak, Nisan Emlak, Turkuaz Mahallesi). 3. Etap sorgusu 6→4 iyileşti ve harita kutusuna girdi.",
     "yavuz-selim": "Ada sayfası kanibalizasyonunun merkezi: 7 sorguda site yerine ada sayfamız çıkıyor (Erkaraca, Genç Avrasya, Keyfim, Utku, Uyum 90, Yunuskent, Yükselen). Mahalle sorgusunda organik 4 + kutu 2 ile ölçülen en iyi mahalle sorgularından.",
     "sehit-osman-avci": "Eryaman'ın en büyük ikinci bayat yığını (29 sayfa, 4.083 gösterim). 11 sorguda görünmez — çoğu güçlü adaş (İçtaş Holding, Soyak GYO, Çamlık/Çiçek ofisleri).",
     "seker": "Küçük ama derli toplu mahalle; en büyük kayıp Zirve Loft ve İzoser (ikisi de adaşsız görünmez). Mahalle sorgusunda organikte yokuz, kutuda 3.",
@@ -359,7 +359,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   Google ilk ~10 sonucu gösterir; “görünmez” = ilk 10′da yok demektir. Harita kutusu organikten ayrı sayılır.</p>
 
   <div class="kartlar">
-    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · {len(TURLAR)}/11 mahalle</div></div>
+    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · 11/11 mahalle TAMAM</div></div>
     <div class="kart"><div class="buyuk">%{yuzde(TOPLAM_I3, TOPLAM_N)}</div><div class="etiket">sorguların ilk 3′te olduğu oran</div></div>
     <div class="kart"><div class="buyuk">{TOPLAM_BIR}</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
     <div class="kart vurgu"><div class="buyuk">{ana_org}<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita {ana_har}.) · {ana_d}</div></div>
@@ -392,15 +392,16 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano zayif">
       <h3>Zayıf halkalar</h3>
       <ul>
-        <li><strong>Mahalle sorgularının organiği.</strong> Ölçülen 10 mahallenin 5′inde “… mahallesi emlakçı”
+        <li><strong>Mahalle sorgularının organiği.</strong> 11 mahallenin 5′inde “… mahallesi emlakçı”
         aramasında ilk 10′a giremiyoruz (Altay, Devlet, Güzelkent, Şeker, Yeşilova);
-        bu sorgularda bizi harita kutusu taşıyor. En iyisi Yavuz Selim: organik 4 + kutu 2.</li>
+        bu sorgularda bizi harita kutusu taşıyor. En iyileri Yavuz Selim (organik 4 + kutu 2) ve Şeyh Şamil (organik 4).</li>
         <li><strong>Üç mahallede harita kutusu da yok.</strong> Göksu, Güzelkent ve Yeşilova′da ne organikte ne kutudayız —
         yorum kampanyasında mahalle adı geçirme önceliği bu üçü.</li>
         <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083)
         en büyük iki tazeleme borcu; ikisi de damla sırasının başında.</li>
-        <li><strong>Ada sayfası kanibalizasyonu.</strong> 25 sorguda site sayfası yerine ada sayfamız listeleniyor —
-        en yoğunu Yavuz Selim (7 sorgu). Ada sayfası sıra tutuyor ama site adını arayan kişiye yanlış sayfayı açıyor.</li>
+        <li><strong>Kendi sayfalarımız birbirinin önüne geçiyor.</strong> 25 sorguda site yerine ada sayfamız
+        (en yoğunu Yavuz Selim: 7), 20 sorguda mahalle sayfamız (en yoğunu Şeyh Şamil: 9) listeleniyor.
+        Sıra tutuluyor ama site adını arayan kişiye yanlış sayfa açılıyor.</li>
         <li><strong>Eski adres kalıntıları.</strong> 20′den fazla sorguda hâlâ taşınmadan önceki sayfa adresi listeleniyor
         (Yeşilova′da may-tower, green-place, koçaklar; Şeker′de relax-line; ŞOA′da address-göksu, ardıç).</li>
       </ul>

@@ -341,3 +341,11 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > YS BULGUSU: ada kanibalizasyonunun merkezi — 7 sorguda site yerine ada sayfası.
 > Mahalle sorgusu organik 4 + kutu 2 (ölçülen en iyilerden).
 > DÜNKÜ DAMLA: 10/10 istek aynı dakika tarandı; kota bugün ~16:40'ta açılır.
+> 30.08 (13:00-13:45): ŞEYH ŞAMİL TAMAMLANDI (59/59) → 11/11 MAHALLE BİTTİ.
+> 504 site sorgusu, %67 ilk 3, 117 organik 1. Duvar iki kez geldi ama taktikle
+> aşıldı (ilkinde 6 dk, ikincisinde ~10 dk sonra kanal açıldı).
+> ŞŞ BULGUSU: mahalle sayfası kanibalizasyonunun merkezi (9 sorgu) + en yoğun
+> yapısal adaş (Umut 19/Onur/Nisan Emlak, Turkuaz Mahallesi).
+> 3. ETAP: organik 6→4 + HARİTA KUTUSUNA GİRDİ (21.08'de kutuda yoktuk).
+> SIRADAKİ İŞ: tur artık "yeniden ölçüm" moduna geçiyor — 28-30.08 isteklerinin
+> dönüşümü + aday listesindeki 207 sayfanın SERP teyidi.
