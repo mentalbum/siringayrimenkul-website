@@ -773,3 +773,12 @@ Talep düşük ama SERP'te sıra 0 (görünmez) olduğu ölçülen bayat sayfala
 Sıradaki yedekler (aynı sınıf, kota açılınca): devlet/guneyce, devlet/yeni-huzur-bahcesi,
 devlet/ilk-bahar, devlet/yuceyurt, soa/intes, soa/neva-prestij, soa/garden-zirve,
 soa/nefeskent, soa/dalgic-residence, soa/inci-life-residence.
+
+## 30.08 — YENİDEN ÖLÇÜM SONRASI DAMLA (SERP'te teyitli görünmezler)
+
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi  <!-- 233 gos · 30.08 SERP 0 --> ← 30.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/arissa-goksu  <!-- 232 gos · 30.08 SERP 0 --> ← 30.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksupark-konutlari  <!-- 160 gos · 30.08 SERP 0 --> ← 30.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi  <!-- 30.08 SERP 0, harita 1 --> ← 30.08 istek gönderildi
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/mavera-sitesi  <!-- 30.08 SERP 0, adaşsız --> ← 30.08 istek gönderildi
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi  <!-- 30.08 SERP 0, harita 1; API tarama 26.07 --> SIRADA (6. istek, klavye odağı gitmedi)

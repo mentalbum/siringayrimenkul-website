@@ -503,3 +503,14 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 >  10. eryaman/platin-konutlari      92 gos · bayat
 > DERS: "görünmez" adaylar gönderilmeden ÖNCE yeniden ölçülmeli — bugün 2 aday
 > kendiliğinden kurtulmuş çıktı, 2 kota kurtarıldı.
+
+> 30.08 (17:00, cron) — DAMLA KOŞTU: 5 İSTEK, 5 KABUL, kota AÇIKTI.
+> Kabul: oyak-sitesi, arissa-goksu, goksupark-konutlari, kucukevlerimiz, mavera.
+> 6. istek (sitekonut) GÖNDERİLEMEDİ: GSC denetim kutusuna klavye odağı ulaşmadı
+> (activeElement BODY kaldı, çift tıklama da çözmedi — Özgün Chrome'u aktif
+> kullanıyor olabilir). Protokol gereği zarif durundu, işaretlenmedi.
+> ÖN-DOĞRULAMA KAZANCI: ak-kent BUGÜN 07:59'da kendiliğinden taranmış → düştü;
+> izoser-residence DİZİNSİZ → kota harcanmadı (Özgün kararı).
+> 31.08 TEYİDİ: 5 sayfanın API "son tarama" damgası bugün ~17:00'ye düşmeli.
+> SIRADAKİ: sitekonut + platin-konutlari + zirve-loft (API denetimi yarıda kaldı,
+> yeniden bakılacak) + seker/izoser (dizinsiz, doğal tarama beklenir).
