@@ -1,0 +1,849 @@
+[
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi",
+  "gos": 773,
+  "sira": 3,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence",
+  "gos": 457,
+  "sira": 1,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/age-sitesi",
+  "gos": 436,
+  "sira": 2,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari",
+  "gos": 374,
+  "sira": 2,
+  "tarama": "2026-08-17",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman",
+  "gos": 347,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/hill-tower",
+  "gos": 295,
+  "sira": 1,
+  "tarama": "2026-07-31",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/mesa-bloklari",
+  "gos": 262,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/konum-eryaman",
+  "gos": 262,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+  "gos": 248,
+  "sira": 5,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/oyak-goksupark",
+  "gos": 245,
+  "sira": 7,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
+  "gos": 241,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/park-mira-evleri",
+  "gos": 233,
+  "sira": 1,
+  "tarama": "2026-08-17",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/mil-kooperatifi-sitesi",
+  "gos": 229,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/oasis-rezidans",
+  "gos": 224,
+  "sira": 2,
+  "tarama": "2026-07-31",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/ozdenizyildizi-sitesi",
+  "gos": 217,
+  "sira": 5,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence",
+  "gos": 203,
+  "sira": 2,
+  "tarama": "2026-08-27",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/yeniceri-kule",
+  "gos": 192,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/sutek-bloklari",
+  "gos": 181,
+  "sira": 1,
+  "tarama": "2026-08-19",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi",
+  "gos": 176,
+  "sira": 1,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+  "gos": 171,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi",
+  "gos": 163,
+  "sira": 2,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+  "gos": 155,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi",
+  "gos": 153,
+  "sira": 4,
+  "tarama": "2026-08-25",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/daldikenler-yasemin-evleri-sitesi",
+  "gos": 152,
+  "sira": 3,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/finest-bloklari",
+  "gos": 151,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/age-bloklari",
+  "gos": 145,
+  "sira": 3,
+  "tarama": "2026-08-25",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/erkent-sitesi",
+  "gos": 142,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+  "gos": 142,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/asiyan-sitesi",
+  "gos": 134,
+  "sira": 2,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/basak-sitesi",
+  "gos": 127,
+  "sira": 3,
+  "tarama": "2026-07-30",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/su-damlasi-sitesi",
+  "gos": 122,
+  "sira": 6,
+  "tarama": "2026-07-29",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/maybak-konutlari",
+  "gos": 121,
+  "sira": 3,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/gulhayat-sitesi",
+  "gos": 116,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
+  "gos": 115,
+  "sira": 2,
+  "tarama": "2026-08-09",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/uzunali-goksu-konutlari-2",
+  "gos": 115,
+  "sira": 1,
+  "tarama": "2026-08-16",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/cinar-sitesi",
+  "gos": 114,
+  "sira": 4,
+  "tarama": "2026-07-29",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/eston-bloklari",
+  "gos": 114,
+  "sira": 4,
+  "tarama": "2026-08-25",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/arya-nuans-residence",
+  "gos": 111,
+  "sira": 6,
+  "tarama": "2026-07-31",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/asm-golt-sitesi",
+  "gos": 111,
+  "sira": 1,
+  "tarama": "2026-08-11",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/akasya-evleri",
+  "gos": 107,
+  "sira": 2,
+  "tarama": "2026-08-24",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/golkent-1-sitesi",
+  "gos": 103,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/frekans-eryaman",
+  "gos": 97,
+  "sira": 2,
+  "tarama": "2026-07-31",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit",
+  "gos": 93,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/green-place-residence",
+  "gos": 93,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/tugce-kent-sitesi",
+  "gos": 91,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/elit-yasam-evleri",
+  "gos": 89,
+  "sira": 2,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+  "gos": 89,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/turgut-aslan-sitesi",
+  "gos": 88,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/kasmir-gol-evleri",
+  "gos": 87,
+  "sira": 2,
+  "tarama": "2026-08-19",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/sacak-91-sitesi",
+  "gos": 87,
+  "sira": 1,
+  "tarama": "2026-08-02",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
+  "gos": 86,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/yeniguc-sitesi-eryaman",
+  "gos": 84,
+  "sira": 2,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
+  "gos": 84,
+  "sira": 1,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/intes-sitesi",
+  "gos": 82,
+  "sira": 2,
+  "tarama": "2026-07-28",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gozde-91-sitesi",
+  "gos": 81,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/kirkayak-sitesi",
+  "gos": 80,
+  "sira": 6,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/4-devlet-mahallesi-sitesi",
+  "gos": 79,
+  "sira": 10,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/metro-yasam-sitesi",
+  "gos": 79,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
+  "gos": 78,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/asm-prestij-konutlari",
+  "gos": 74,
+  "sira": 1,
+  "tarama": "2026-08-24",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/kayaevleri-sitesi",
+  "gos": 73,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi",
+  "gos": 70,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi",
+  "gos": 70,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/evrimkent-sitesi",
+  "gos": 69,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
+  "gos": 69,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/yardimci-bloklari",
+  "gos": 66,
+  "sira": 1,
+  "tarama": "2026-08-24",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/betim-sitesi",
+  "gos": 65,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/soyak-sitesi",
+  "gos": 60,
+  "sira": 3,
+  "tarama": "2026-08-21",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/pasa-konaklari",
+  "gos": 60,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/hassas-cizgi-sitesi",
+  "gos": 56,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-manzara-evleri",
+  "gos": 55,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+  "gos": 51,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/yeni-burak-sitesi",
+  "gos": 49,
+  "sira": 3,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/motto-butik",
+  "gos": 46,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/mavikent-sitesi",
+  "gos": 46,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/turkkonut-istas-sitesi",
+  "gos": 46,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/yeni-yayikli-sitesi",
+  "gos": 46,
+  "sira": 2,
+  "tarama": "2026-08-19",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
+  "gos": 46,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/cabadag-bloklari",
+  "gos": 44,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi",
+  "gos": 44,
+  "sira": 1,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/doktorlar-sitesi",
+  "gos": 43,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/ozgun-ipek-sitesi",
+  "gos": 43,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/uzunali-goksu-konutlari",
+  "gos": 43,
+  "sira": 1,
+  "tarama": "2026-08-25",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/eston-sitesi",
+  "gos": 43,
+  "sira": 5,
+  "tarama": "2026-08-04",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/anadolu-sitesi",
+  "gos": 42,
+  "sira": 4,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
+  "gos": 42,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
+  "gos": 41,
+  "sira": 1,
+  "tarama": "2026-07-30",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/sozova-sitesi",
+  "gos": 34,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
+  "gos": 34,
+  "sira": 2,
+  "tarama": "2026-08-07",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/golkent-sitesi",
+  "gos": 33,
+  "sira": 6,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cagdas-sistem-sitesi",
+  "gos": 33,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/ritim-eryaman",
+  "gos": 33,
+  "sira": 1,
+  "tarama": "2026-07-29",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yuksel-kent-91-sitesi",
+  "gos": 32,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yesimkent",
+  "gos": 31,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/odevci-sitesi",
+  "gos": 31,
+  "sira": 3,
+  "tarama": "2026-08-25",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/guneyce-sitesi",
+  "gos": 30,
+  "sira": 4,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/gunotesi-sitesi",
+  "gos": 30,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/korukent-sitesi",
+  "gos": 29,
+  "sira": 3,
+  "tarama": "2026-08-17",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/izgi-park-evleri",
+  "gos": 28,
+  "sira": 4,
+  "tarama": "2026-08-02",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/palmiye-evleri",
+  "gos": 28,
+  "sira": 1,
+  "tarama": "2026-08-14",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/akkonaklar-sitesi",
+  "gos": 28,
+  "sira": 3,
+  "tarama": "2026-08-01",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
+  "gos": 28,
+  "sira": 4,
+  "tarama": "2026-07-29",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yayikli-2-sitesi",
+  "gos": 27,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/ozarda-gokturk-sitesi",
+  "gos": 26,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/ataturk-sitesi",
+  "gos": 24,
+  "sira": 3,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
+  "gos": 22,
+  "sira": 2,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ictas-bloklari",
+  "gos": 21,
+  "sira": 2,
+  "tarama": "2026-08-14",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
+  "gos": 20,
+  "sira": 1,
+  "tarama": "2026-07-27",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/armina-park-evleri",
+  "gos": 19,
+  "sira": 2,
+  "tarama": "2026-08-12",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/pinarkent-91-sitesi",
+  "gos": 18,
+  "sira": 2,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi",
+  "gos": 14,
+  "sira": 5,
+  "tarama": "2026-07-25",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/cayilkay-sitesi",
+  "gos": 13,
+  "sira": 1,
+  "tarama": "2026-07-26",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/aknergiz-sitesi",
+  "gos": 10,
+  "sira": 3,
+  "tarama": "2026-07-29",
+  "durum": "bayat"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/address-enda",
+  "gos": 10,
+  "sira": 1,
+  "tarama": "2026-08-18",
+  "durum": "orta"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/kardelen-sitesi",
+  "gos": 9,
+  "sira": 9,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/eston-1-bloklari",
+  "gos": 4,
+  "sira": 2,
+  "tarama": "2026-08-19",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/metropol-bloklari",
+  "gos": 0,
+  "sira": 7,
+  "tarama": "-",
+  "durum": "?"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gozde-1-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu",
+  "gos": 0,
+  "sira": 1,
+  "tarama": "2026-08-26",
+  "durum": "taze"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/relax-line",
+  "gos": 0,
+  "sira": 1,
+  "tarama": "-",
+  "durum": "?"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "tarama": "2026-08-24",
+  "durum": "taze"
+ }
+]

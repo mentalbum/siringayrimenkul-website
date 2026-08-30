@@ -382,3 +382,40 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 >     SERP'te rakibimiz değil; savaş portallarla.
 > KOTA NOTU: 30.08 istekleri 17:00'de gitti, pencere 31.08 ~17:00'de açılır;
 > 16:47 cron'u yakalayacak. Gece 00:30'da deneme yapılmadı (kesin ret).
+
+## 31.08 BAŞLIK ARAŞTIRMASI (730 ölçüm üzerinden, yeni sorgu harcanmadı)
+
+SORU: Yeni başlık şablonu ("X Emlakçı | <mahalle> Eryaman | Evinizi Satalım,
+Kiraya Verelim") gerçekten işe yarıyor mu?
+
+1) SINIF KARŞILAŞTIRMASI (görünen sayfalar)
+   YENİ şablon  n=244  ort.sıra 2.38  ilk3 %85  #1 %37
+   ara-dönem    n= 50  ort.sıra 2.46  ilk3 %86  #1 %30
+   ESKİ şablon  n= 47  ort.sıra 2.74  ilk3 %77  #1 %23
+   ADA sayfası  n= 54  ort.sıra 4.00  ilk3 %46  #1 % 4   ← ada temsili ZAYIF temsil
+
+2) ÖNCE/SONRA (aynı sayfa, başlık ESKİ→YENİ değişti, iki ölçüm de var) n=22
+   13 yükseldi · 0 DÜŞTÜ · 9 aynı · ortalama 3.64 → 2.27 (-1.36 basamak)
+   KONTROL (başlık değişmedi, YENİ→YENİ) n=13: 1 yükseldi · 5 düştü · +0.31
+   → Yükseliş genel dalga değil, başlığa özgü. En güçlü nedensel kanıtımız.
+
+3) BAŞLIK KODDA ZATEN YENİ. Canlı doğrulama (curl):
+   age-sitesi/soyak/hill-tower → hepsi yeni şablonu basıyor.
+   Yani SERP'te eski başlık = GOOGLE'IN KENDİ YENİDEN YAZIMI, bizim hatamız değil.
+   Google'ın kurduğu başlık = H1 + breadcrumb + marka:
+     bizim:   "Age Sitesi Emlakçı | Tunahan Eryaman | Evinizi Satalım, Kiraya Verelim"
+     Google:  "Age Sitesi - Eryaman · Tunahan Mahallesi - Şirin Gayrimenkul"
+
+4) YENİDEN YAZMA NEDENİ — ELENEN HİPOTEZLER
+   - UZUNLUK DEĞİL: tutulan 76.8 krk, yeniden yazılan 77.6 krk (fark yok).
+   - TARAMA TAZELİĞİ zayıf ilişkili: taze taranmışlarda bizim başlık %69,
+     bayatlarda %62 (7 puan). Tek başına açıklamıyor.
+   → Neden HENÜZ BİLİNMİYOR. Uydurma açıklama yazma; ölçmeye devam.
+
+5) SAYILAR: son ölçümde 242 sayfada bizim başlık, 146 sayfada Google'ınki.
+   Bizim başlığın göründüğü sayfalar ort. 2.37, Google'ınkiler 2.70 sırada.
+
+PRATİK SONUÇ: Başlık metnini yeniden yazmak İŞ DEĞİL (kod zaten doğru).
+Elimizdeki tek kaldıraç TARAMA — ve dizin damlası tam bunu yapıyor.
+eski-baslik-adaylari.json: 121 sayfa (12.227 gösterim talebi) hem eski başlık
+gösteriyor hem isteği gitmemiş — damla sırasına ikinci ölçüt olarak eklenmeli.
