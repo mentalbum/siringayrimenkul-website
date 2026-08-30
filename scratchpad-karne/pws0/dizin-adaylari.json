@@ -1,27 +1,5 @@
 [
  {
-  "yol": "/mahalleler/eryaman-mahallesi/oyak-sitesi",
-  "mah": "eryaman-mahallesi",
-  "site": "oyak-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 233,
-  "tarama": "2026-07-26",
-  "durum": "bayat",
-  "olcum": "2026-08-30"
- },
- {
-  "yol": "/mahalleler/goksu-mahallesi/arissa-goksu",
-  "mah": "goksu-mahallesi",
-  "site": "arissa-goksu",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 232,
-  "tarama": "2026-07-26",
-  "durum": "bayat",
-  "olcum": "2026-08-30"
- },
- {
   "yol": "/mahalleler/eryaman-mahallesi/atakent-sitesi",
   "mah": "eryaman-mahallesi",
   "site": "atakent-sitesi",
@@ -30,17 +8,6 @@
   "gos": 190,
   "tarama": "2026-08-17",
   "durum": "orta",
-  "olcum": "2026-08-27"
- },
- {
-  "yol": "/mahalleler/goksu-mahallesi/goksupark-konutlari",
-  "mah": "goksu-mahallesi",
-  "site": "goksupark-konutlari",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 160,
-  "tarama": "2026-07-27",
-  "durum": "bayat",
   "olcum": "2026-08-30"
  },
  {
@@ -52,7 +19,7 @@
   "gos": 155,
   "tarama": "2026-07-31",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
@@ -74,7 +41,7 @@
   "gos": 108,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-29"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/safir-sitesi",
@@ -88,17 +55,6 @@
   "olcum": "2026-08-30"
  },
  {
-  "yol": "/mahalleler/eryaman-mahallesi/platin-konutlari",
-  "mah": "eryaman-mahallesi",
-  "site": "platin-konutlari",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 92,
-  "tarama": "2026-07-27",
-  "durum": "bayat",
-  "olcum": "2026-08-28"
- },
- {
   "yol": "/mahalleler/goksu-mahallesi/doga-konutlari",
   "mah": "goksu-mahallesi",
   "site": "doga-konutlari",
@@ -107,7 +63,7 @@
   "gos": 66,
   "tarama": "2026-07-28",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/asilkent-sitesi",
@@ -118,7 +74,7 @@
   "gos": 62,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/beyaz-residence",
@@ -129,7 +85,7 @@
   "gos": 60,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-08-27"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/gokkusagi-sitesi",
@@ -207,17 +163,6 @@
   "tarama": "2026-07-26",
   "durum": "bayat",
   "olcum": "2026-08-28"
- },
- {
-  "yol": "/mahalleler/seyh-samil-mahallesi/mavera-sitesi",
-  "mah": "seyh-samil-mahallesi",
-  "site": "mavera-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 27,
-  "tarama": "2026-07-26",
-  "durum": "bayat",
-  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/referans-ankara",
@@ -339,17 +284,6 @@
   "tarama": "2026-07-29",
   "durum": "bayat",
   "olcum": "2026-08-27"
- },
- {
-  "yol": "/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
-  "mah": "yavuz-selim-mahallesi",
-  "site": "kucukevlerimiz-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 18,
-  "tarama": "2026-08-03",
-  "durum": "bayat",
-  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/umut-sitesi",
@@ -823,6 +757,17 @@
   "tarama": "2026-07-26",
   "durum": "bayat",
   "olcum": "2026-08-28"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/platin-konutlari",
+  "mah": "eryaman-mahallesi",
+  "site": "platin-konutlari",
+  "tur": "komşu sayfa temsil",
+  "sira": 2,
+  "gos": 92,
+  "tarama": "2026-07-27",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/karkoy-villalari",
