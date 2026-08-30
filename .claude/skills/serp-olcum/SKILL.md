@@ -49,3 +49,41 @@ tarayıcıdan (Claude Browser pane, `mcp__Claude_Browser__*`) sürdürülebilir:
 - Harita kutusu (.dbg0pd) bu DOM'da her zaman görünmüyor — mahalle sorgularını
   Chrome'dan ölç veya h değerine güvenme.
 - Duvar IP bazlı: iki kanal aynı günlük sınırı paylaşır, kanal değiştirmek kotayı katlamaz.
+
+## GİZLİ PENCERE KANALI (30.08 kuruldu — ARTIK VARSAYILAN)
+
+Özgün eklentiye "Gizli modda çalışmasına izin ver" iznini verdi. Gizli pencere
+Google oturumu taşımadığı için kişiselleştirme riski tümüyle kalkar.
+
+**Kurulum:** Gizli pencereyi ÖZGÜN açar (Cmd+Shift+N) — eklentinin sekme açma
+aracında gizli seçeneği yok. Gizli pencere ÖNDEYKEN `tabs_context_mcp
+{createIfEmpty:true}` çağrılırsa yeni sekme O pencerede açılır.
+
+**Gizli mi normal mi?** GSC adresine git; `accounts.google.com`'a düşüyorsa
+gizlidir. (Google aramada "Oturum açın" görünmesi de aynı işareti verir.)
+
+**DİKKAT — DOM FARKLI:** oturumsuz Google `h3`'ü bağlantının içine koymaz ve
+href'leri şifreler. Standart ölçüm JS'i n:0 döndürür. Gizli/oturumsuz kanalda
+alan adı CITE'tan okunur:
+
+```js
+(()=>{const T=[],G=new Set();
+for(const h of document.querySelectorAll('#rso h3')){
+  let c=null,p=h;for(let i=0;i<7&&p;i++){const f=p.querySelector&&p.querySelector('cite');if(f){c=f.innerText;break}p=p.parentElement}
+  if(!c||G.has(c))continue;G.add(c);
+  const d=c.replace(/^https?:\/\//,'').split(' › ')[0].replace('www.','').trim();
+  T.push({d,c,t:h.innerText});}
+const i=T.findIndex(x=>x.d==='siringayrimenkul.com');
+return JSON.stringify({sira:i+1,cite:i>=0?T[i].c:null,bas:i>=0?T[i].t:null,
+  ilk3u:T.slice(0,3).map(x=>x.d),n:T.length});})()
+```
+
+**Kalibrasyon (30.08):** Atalay Sitesi — oturumlu Chrome 3., gizli pencere 3.
+(aynı gün, birebir). Daha önce uygulama-içi tarayıcıyla da iki kontrol tutmuştu.
+Sonuç: `pws=0&gl=tr&hl=tr` zaten sapma üretmiyordu; gizli pencere ek güvence.
+
+**Kayıtlara** `"kanal":"gizli"` alanı yazılır, `u` yerine `cite:` öneki kullanılır.
+
+**PENCERE TUZAĞI:** MCP sekme grubu tek pencerede yaşar. Gizli penceredeyken
+GSC işleri (dizin damlası) YAPILAMAZ — oturum yok. Damla zamanı geldiğinde
+normal pencere öne alınmalı ve sekme grubu yeniden kurulmalıdır.
