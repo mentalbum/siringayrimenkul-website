@@ -370,3 +370,15 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > (eryamansiringayrimenkul.sahibinden.com / empaeryaman2 vb.) tutuyor —
 > yani "rakip" sandığımız ilk sıra bizim ikinci kanalımız. Etap sorgularında
 > ana sayfa + mağaza birlikte listeleniyor, site sayfası geride kalıyor.
+> 31.08 (00:30) — KARNE İKİ YENİ BÖLÜMLE BÜYÜDÜ:
+> (1) "1. sayfa işgali" — Özgün'ün 31.08 ölçüt düzeltmesi: kendi kanallarımızın
+>     birbirini geçmesi sorun değil, ölçüt ilk sayfada tuttuğumuz sıra sayısı.
+>     9 sorguda 86 organik sıranın 12'si bizim (%14). 1. ve 4. Etap'ta ilk İKİ
+>     sıra + harita 1 bizim. Göksu ve Yeşilova mahalle sorgularında SIFIR varlık.
+> (2) "Kimlerle yarışıyoruz" — 510 ölçümden rakip haritası (yeni ölçüm gerekmedi):
+>     1. sırayı %59 PORTAL, %25 BİZ, %7 bilgiemlak, %7 yerel ofis tutuyor.
+>     sahibinden 274 kez #1, bilgiemlak 37, hepsiemlak 23. Yerel rakiplerin
+>     en sıkı olan konutkentemlak yalnız 3 kez #1 — yani mahalledeki emlakçılar
+>     SERP'te rakibimiz değil; savaş portallarla.
+> KOTA NOTU: 30.08 istekleri 17:00'de gitti, pencere 31.08 ~17:00'de açılır;
+> 16:47 cron'u yakalayacak. Gece 00:30'da deneme yapılmadı (kesin ret).

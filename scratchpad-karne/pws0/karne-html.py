@@ -117,6 +117,40 @@ for metin in (dk, dk2):
 BEKLEYEN_ISTEK = len(_istekli)
 SIRADAKI = re.findall(r"- \[ \] https://www\.siringayrimenkul\.com(/\S+)\s+<!-- (\d+) gos", dk)[:5]
 
+# ---------------- rakip haritası ----------------
+from collections import Counter as _C
+PORTAL = {"sahibinden.com", "hepsiemlak.com", "emlakjet.com", "remax.com.tr",
+          "cb.com.tr", "bulurum.com", "com.com.tr", "tapu.com"}
+DIZIN_D = {"eryaman.bilgiemlak.com.tr", "bilgiemlak.com.tr"}
+SOSYAL_D = {"instagram.com", "facebook.com", "yandex.com.tr", "youtube.com"}
+
+def _rakip_hesapla(son_olcumler):
+    say = _C(); bir = _C(); sinif = _C(); yerel = _C()
+    for r in son_olcumler:
+        u = r.get("ilk3u") or []
+        for i, x in enumerate(u):
+            d = x.split("/")[0].replace("www.", "")
+            if "siringayrimenkul" in d:
+                continue
+            say[d] += 1
+            if i == 0:
+                bir[d] += 1
+        if not u:
+            continue
+        d0 = u[0].split("/")[0].replace("www.", "")
+        if "siringayrimenkul" in d0:
+            sinif["biz"] += 1
+        elif d0 in PORTAL:
+            sinif["portal"] += 1
+        elif d0 in DIZIN_D:
+            sinif["dizin"] += 1
+        elif d0 in SOSYAL_D or d0.startswith("("):
+            sinif["sosyal"] += 1
+        else:
+            sinif["yerel"] += 1
+            yerel[d0] += 1
+    return say, bir, sinif, yerel
+
 # ---------------- değişim (yeniden ölçüm) ----------------
 from collections import defaultdict
 _gecmis = defaultdict(list)
@@ -138,6 +172,10 @@ for s_, v in _gecmis.items():
                        fark=_sira_puan(onceki) - _sira_puan(simdi),
                        o_tarih=onceki["d"], y_tarih=simdi["d"],
                        s=s_, bas=simdi.get("bas"), not_=simdi.get("not", ""))
+
+_tur_olcumleri = [r for s_, r in son.items() if r["d"] >= "2026-08-21"]
+RAKIP_SAY, RAKIP_BIR, RAKIP_SINIF, RAKIP_YEREL = _rakip_hesapla(_tur_olcumleri)
+RAKIP_TOPLAM = sum(RAKIP_SINIF.values())
 
 YUKSELEN = sorted([d for d in DEGISIM.values() if d["fark"] > 0], key=lambda d: -d["fark"])
 DUSEN = sorted([d for d in DEGISIM.values() if d["fark"] < 0], key=lambda d: d["fark"])
@@ -265,6 +303,28 @@ etap_html = ""
 for i, r in enumerate(ETAPLAR, 1):
     etap_html += f"""<tr><td>Eryaman {i}. Etap emlakçı</td>
     <td>{chip_org(r)}</td><td>{chip_har(r)}</td><td class="alt">{tr_tarih(r['d']) if r else ''}</td></tr>"""
+
+_SINIF_AD = {"biz": "Şirin Gayrimenkul", "portal": "İlan portalları",
+             "dizin": "bilgiemlak dizini", "yerel": "Yerel emlak ofisleri",
+             "sosyal": "Sosyal / harita"}
+rakip_toplam = RAKIP_TOPLAM
+birinci_html = ""
+for k in ("biz", "portal", "dizin", "yerel", "sosyal"):
+    n = RAKIP_SINIF.get(k, 0)
+    if not n:
+        continue
+    p = round(100 * n / RAKIP_TOPLAM) if RAKIP_TOPLAM else 0
+    cls = "iyi" if k == "biz" else ("kotu" if k == "portal" else "orta")
+    birinci_html += (f'<li><span>{_SINIF_AD[k]}</span>'
+                     f'<span><span class="chip {cls}">{n} sorgu · %{p}</span></span></li>')
+
+rakip_html = ""
+for d, n in RAKIP_SAY.most_common(8):
+    if d.startswith("("):
+        continue
+    b = RAKIP_BIR.get(d, 0)
+    rakip_html += (f'<li><span>{esc(d)}</span>'
+                   f'<span class="alt">{n} kez ilk 3′te · {b} kez 1.</span></li>')
 
 isgal_satirlari = ""
 isgal_ozet = ""
@@ -504,6 +564,20 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <tbody>{isgal_satirlari}</tbody>
   </table></div>
   <p class="alt" style="margin-top:8px">{isgal_ozet}</p>
+
+  <h2>Kimlerle yarışıyoruz</h2>
+  <p class="not">Bu tur ölçülen {rakip_toplam} sorguda birinci sırayı kimin tuttuğu.
+  Sonuç net: rakibimiz mahalledeki emlak ofisleri değil, <strong>ilan portalları</strong>.</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>1. sırayı kim tutuyor</h3>
+      <ul>{birinci_html}</ul>
+    </div>
+    <div class="pano">
+      <h3>İlk 3′te en sık görülenler</h3>
+      <ul>{rakip_html}</ul>
+    </div>
+  </div>
 
   <h2>Son ölçümde ne değişti</h2>
   <p class="not">Her sorgu yeniden ölçüldükçe önceki sıra ile karşılaştırılıyor.
