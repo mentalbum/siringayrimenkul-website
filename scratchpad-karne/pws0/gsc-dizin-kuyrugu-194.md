@@ -439,7 +439,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > Kabul (sırayla): buse-konutlari, polsan-1-gozde, platin-2-konutlari,
 > demirer, safir-rezidans, selcuklu (Devlet), atalay (ŞOA), alis (Devlet),
 > lale-kent (ŞOA).
-> mia-concept-konutlari BELİRSİZ: ilk denemede test modalı sonuna kadar koştu
+> mia-concept-konutlari (30.08 TEYİT: İŞLENMİŞ, 13:39 tarandı) — ilk denemede test modalı sonuna kadar koştu
 > ama onay yakalanamadı; yeniden denendiğinde "Kota Aşıldı" geldi. Kota
 > matematiği (9 onay + 1 = 10) ilk denemenin İŞLENDİĞİNİ söylüyor. TEYİT:
 > 30.08'de API'den son tarama tarihine bak — 29.08 olmuşsa istek geçmiş,
@@ -448,3 +448,11 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > ile kapatılmazsa sonraki URL yutuluyor; ayrıca onay rozeti sayfa yeniden
 > denetlenince KAYBOLUYOR — "istek gitti mi" sorusu UI'den değil, ertesi gün
 > API tarama tarihinden doğrulanır.
+
+> 30.08 (12:35) — DÜNKÜ DAMLANIN YANSIMASI: 10/10 İSTEK AYNI DAKİKA TARANDI.
+> mia-concept 13:39, buse+polsan 13:43, platin-2 13:45, demirer 13:47,
+> safir+selcuklu 13:49, atalay+alis 13:52, lale-kent 13:53 (UTC).
+> BELİRSİZLİK ÇÖZÜLDÜ: mia-concept'in ilk denemesi İŞLENMİŞ — "onay rozeti
+> kaybolur" tuzağı doğrulandı, kota matematiği doğru okumuş.
+> KÜMÜLATİF KANIT: 28.08'de 7/9, 29.08'de 10/10 → istek = aynı-dakika tarama.
+> Kota penceresi: dün 16:39-16:53 TR arası kullanıldı, bugün ~16:40'tan sonra açılır.

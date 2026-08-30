@@ -335,3 +335,9 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > temsili/eski slug/eski başlık) x dizin envanteri çaprazı; çıktı dizin-adaylari.md
 > (185 aday, 29 istek bekliyor, 70 dizinsiz kota-dışı). Yenimahalle grubu filtreli.
 > Karne artık dizin adaylarının ilk 20'sini de gösteriyor.
+> 30.08 (12:30-13:00): YAVUZ SELİM TAMAMLANDI (57/57) + ŞŞ 5/59'da duvar
+> (taktik ikinci denemede de CAPTCHA). 10/11 mahalle bitti — kalan yalnız
+> Şeyh Şamil (tur-seyh-samil-2908.json[5:], 54 sorgu; içinde 3. Etap + mahalle).
+> YS BULGUSU: ada kanibalizasyonunun merkezi — 7 sorguda site yerine ada sayfası.
+> Mahalle sorgusu organik 4 + kutu 2 (ölçülen en iyilerden).
+> DÜNKÜ DAMLA: 10/10 istek aynı dakika tarandı; kota bugün ~16:40'ta açılır.

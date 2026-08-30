@@ -14,7 +14,7 @@ gelince ATLANMASIN: devlet/mavi-koy-sitesi, devlet/sedirkent-sitesi,
 devlet/selcuklu-sitesi. Ada-gölgeli taze sayfalar (dema-park, elif-elvan,
 dogankaya, sergah, demirkent) İKİNCİL — bayat listesi bitmeden istek harcanmaz.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari  <!-- 563 gos · tarama 2026-08-08 -->
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari  <!-- 563 gos · tarama 2026-08-08 --> ← 29.08 istek gönderildi (30.08 teyit: tarandı)
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/buse-konutlari  <!-- 460 gos · tarama 2026-07-26 · ADAŞ --> ← 29.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi  <!-- 431 gos · tarama 2026-07-28 --> ← 29.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman  <!-- 347 gos · tarama 2026-07-26 -->
