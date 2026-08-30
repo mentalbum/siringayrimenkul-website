@@ -456,3 +456,25 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > kaybolur" tuzağı doğrulandı, kota matematiği doğru okumuş.
 > KÜMÜLATİF KANIT: 28.08'de 7/9, 29.08'de 10/10 → istek = aynı-dakika tarama.
 > Kota penceresi: dün 16:39-16:53 TR arası kullanıldı, bugün ~16:40'tan sonra açılır.
+
+> 30.08 (13:00) — YARIN/BUGÜN 16:40 İÇİN ÖN-DOĞRULANMIŞ DAMLA (18 aday API'den
+> denetlendi, 4'ü kendiliğinden tazelenmiş → kota kurtarıldı):
+> DÜŞENLER: yazici-modern (BUGÜN 08:34 tarandı), asilkent (29.08 21:38),
+> bordo-loca (28.08 08:06), angora (28.08 15:00) — dördü de damla listesinden çıktı.
+> YARI-TAZE (ikincil, sıra gelirse): atakent 17.08, eylul-sitesi 17.08, gokkusagi 15.08.
+> GÖNDERİLECEK SIRA (hepsi Temmuz kopyalı + SERP'te görünmez):
+>   1. goksu/kasmir-mavi-orkide-sitesi   248 gos · 26.07
+>   2. goksu/oyak-goksupark              245 gos · 27.07
+>   3. eryaman/oyak-sitesi               233 gos · 26.07
+>   4. goksu/arissa-goksu                232 gos · 26.07
+>   5. goksu/goksupark-konutlari         160 gos · 27.07
+>   6. yavuz-selim/safir-sitesi          106 gos · 26.07 (30.08 SERP: hâlâ 0)
+>   7. eryaman/platin-konutlari           92 gos · 27.07
+>   8. goksu/doga-konutlari                66 gos · 28.07
+>   9. eryaman/beyaz-residence             60 gos · 27.07
+>  10. seyh-samil/nisan-sitesi             53 gos · 26.07
+>   Yedek: yavuz-selim/kucukevlerimiz (30.08 SERP 0, harita 1 — adaşsız),
+>   yavuz-selim/ozharitacilar, seyh-samil/ak-kent (30.08 SERP 0, adaşsız),
+>   seker/zirve-loft, seker/izoser-residence.
+> NOT: eylul-evleri ve yavuz-selim/esenkent yapısal adaş (Eylül Gayrimenkul /
+> Karapürçek Esenkent) — bayat olsalar da dönüşüm beklentisi düşük, sona bırakıldı.
