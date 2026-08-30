@@ -1408,28 +1408,6 @@
   "olcum": "2026-08-29"
  },
  {
-  "yol": "/mahalleler/sehit-osman-avci-mahallesi/etap-2-kontrol",
-  "mah": "sehit-osman-avci-mahallesi",
-  "site": "etap-2-kontrol",
-  "tur": "komşu sayfa temsil",
-  "sira": 3,
-  "gos": 0,
-  "tarama": "-",
-  "durum": "?",
-  "olcum": "2026-08-29"
- },
- {
-  "yol": "/mahalleler/sehit-osman-avci-mahallesi/mahalle-kontrol",
-  "mah": "sehit-osman-avci-mahallesi",
-  "site": "mahalle-kontrol",
-  "tur": "mahalle sayfası temsil",
-  "sira": 3,
-  "gos": 0,
-  "tarama": "-",
-  "durum": "?",
-  "olcum": "2026-08-29"
- },
- {
   "yol": "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
   "mah": "tunahan-mahallesi",
   "site": "kur-sitesi-46495-ada",

@@ -56,7 +56,7 @@ def mah_stats(dosya):
     bir = [r for r in site if r["sira"] == 1]
     return dict(site=site, mahq=mahq[0] if mahq else None,
                 n=len(site), i3=len(ilk3), o=len(orta), y=len(yok), bir=bir,
-                olculen=len(g), kuyruk=len(gs))
+                olculen=len(g), kuyruk=len(gs), s_listesi=[r["s"] for r in site])
 
 OLCULEN = {k: mah_stats(f) for k, ad, f in TURLAR}
 # ŞOA ilerlemesi: yalnız BU turda (28.08 ve sonrası) ölçülenler sayılır —
@@ -116,6 +116,32 @@ for metin in (dk, dk2):
             _istekli.add(m.group(1).rstrip(">"))
 BEKLEYEN_ISTEK = len(_istekli)
 SIRADAKI = re.findall(r"- \[ \] https://www\.siringayrimenkul\.com(/\S+)\s+<!-- (\d+) gos", dk)[:5]
+
+# ---------------- değişim (yeniden ölçüm) ----------------
+from collections import defaultdict
+_gecmis = defaultdict(list)
+for r in rows:
+    if r["d"] >= "2026-08-21":          # bu tur döneminin ölçümleri
+        _gecmis[r["s"]].append(r)
+
+def _sira_puan(r):
+    """0 (ilk 10 dışı) en kötü sayılsın diye 99'a çevrilir"""
+    return r["sira"] if r["sira"] else 99
+
+DEGISIM = {}   # s -> dict(onceki, simdi, fark, o_tarih, y_tarih)
+for s_, v in _gecmis.items():
+    v = sorted(v, key=lambda r: r["d"])
+    if len(v) < 2 or v[-1]["d"] == v[-2]["d"]:
+        continue
+    onceki, simdi = v[-2], v[-1]
+    DEGISIM[s_] = dict(onceki=_sira_puan(onceki), simdi=_sira_puan(simdi),
+                       fark=_sira_puan(onceki) - _sira_puan(simdi),
+                       o_tarih=onceki["d"], y_tarih=simdi["d"],
+                       s=s_, bas=simdi.get("bas"), not_=simdi.get("not", ""))
+
+YUKSELEN = sorted([d for d in DEGISIM.values() if d["fark"] > 0], key=lambda d: -d["fark"])
+DUSEN = sorted([d for d in DEGISIM.values() if d["fark"] < 0], key=lambda d: d["fark"])
+SABIT = [d for d in DEGISIM.values() if d["fark"] == 0]
 
 try:
     ADAYLAR = json.load(open("dizin-adaylari.json"))
@@ -190,6 +216,21 @@ def chip_har(r):
         return '<span class="chip kotu">kutuda yok</span>'
     return f'<span class="chip iyi">kutu {h}.</span>'
 
+def mah_degisim(v):
+    iy = ko = 0
+    for s_ in v["s_listesi"]:
+        d = DEGISIM.get(s_)
+        if not d:
+            continue
+        if d["fark"] > 0: iy += 1
+        elif d["fark"] < 0: ko += 1
+    if not iy and not ko:
+        return '<span class="alt">—</span>'
+    p = []
+    if iy: p.append(f'<span class="chip iyi">▲ {iy}</span>')
+    if ko: p.append(f'<span class="chip kotu">▼ {ko}</span>')
+    return " ".join(p)
+
 satirlar = ""
 for key, ad, dosya in TURLAR:
     v = OLCULEN[key]
@@ -199,6 +240,7 @@ for key, ad, dosya in TURLAR:
       <td class="met">{meter(v['i3'], v['o'], v['y'], v['n'])}<span class="pct">%{yuzde(v['i3'], v['n'])} ilk 3</span></td>
       <td class="num">{len(v['bir'])}</td>
       <td class="chips">{chip_org(v['mahq'])} {chip_har(v['mahq'])}</td>
+      <td class="dgs">{mah_degisim(v)}</td>
       <td class="met">{dmini(key)}</td>
     </tr>"""
 
@@ -218,6 +260,21 @@ etap_html = ""
 for i, r in enumerate(ETAPLAR, 1):
     etap_html += f"""<tr><td>Eryaman {i}. Etap emlakçı</td>
     <td>{chip_org(r)}</td><td>{chip_har(r)}</td><td class="alt">{tr_tarih(r['d']) if r else ''}</td></tr>"""
+
+def _sira_yazi(p):
+    return "yok" if p >= 99 else f"{p}."
+
+def _degisim_satir(d):
+    ok = "▲" if d["fark"] > 0 else "▼"
+    cls = "iyi" if d["fark"] > 0 else "kotu"
+    return (f'<li><span><strong>{esc(site_adi(d["s"]))}</strong> '
+            f'<span class="alt">{esc(MAH_AD.get(d["s"].split("/")[0], ""))}</span></span>'
+            f'<span class="chip {cls}">{ok} {_sira_yazi(d["onceki"])} → {_sira_yazi(d["simdi"])}</span></li>')
+
+yukselen_html = "".join(_degisim_satir(d) for d in YUKSELEN[:10]) or '<li class="alt">Henüz yükselen yok</li>'
+dusen_html = "".join(_degisim_satir(d) for d in DUSEN[:10]) or '<li class="alt">Düşen yok</li>'
+degisim_ozet = (f"Yeniden ölçülen {len(DEGISIM)} sorgunun <strong>{len(YUKSELEN)}′i yükseldi</strong>, "
+                f"{len(DUSEN)}′i düştü, {len(SABIT)}′i aynı kaldı.")
 
 SERP_DURUM_RENK = {"GÖRÜNMEZ": "kotu", "ada temsil": "orta", "komşu sayfa temsil": "orta",
                    "mahalle sayfası temsil": "orta", "eski slug": "orta", "eski başlık": "nul"}
@@ -367,7 +424,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
 
   <h2>Mahalle karnesi</h2>
   <div class="tablo-kabuk"><table>
-    <thead><tr><th>Mahalle</th><th>Site sorgularında sıra dağılımı</th><th>Organik 1</th><th>“… mahallesi emlakçı”</th><th>Sayfa tazeliği (dizin)</th></tr></thead>
+    <thead><tr><th>Mahalle</th><th>Site sorgularında sıra dağılımı</th><th>Organik 1</th><th>“… mahallesi emlakçı”</th><th>Son ölçümde değişim</th><th>Sayfa tazeliği (dizin)</th></tr></thead>
     <tbody>{satirlar}</tbody>
   </table></div>
   <div class="lejant">
@@ -412,6 +469,21 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       <ul>{siradaki_html}</ul>
       <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; son 10 günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.
       Sayfa envanteri: {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
+    </div>
+  </div>
+
+  <h2>Son ölçümde ne değişti</h2>
+  <p class="not">Her sorgu yeniden ölçüldükçe önceki sıra ile karşılaştırılıyor.
+  “İlk 10′da yok” en kötü konum sayılır; oradan ilk 10′a girmek en büyük kazanç.
+  {degisim_ozet}</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>Yükselenler</h3>
+      <ul>{yukselen_html}</ul>
+    </div>
+    <div class="pano">
+      <h3>Düşenler</h3>
+      <ul>{dusen_html}</ul>
     </div>
   </div>
 
