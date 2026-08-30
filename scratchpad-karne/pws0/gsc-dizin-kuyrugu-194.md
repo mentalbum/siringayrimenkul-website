@@ -478,3 +478,6 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 >   seker/zirve-loft, seker/izoser-residence.
 > NOT: eylul-evleri ve yavuz-selim/esenkent yapısal adaş (Eylül Gayrimenkul /
 > Karapürçek Esenkent) — bayat olsalar da dönüşüm beklentisi düşük, sona bırakıldı.
+> 30.08 (13:50) — DAMLA DENEMESİ: kasmir-mavi-orkide'de "Kota Aşıldı" → istek
+> İŞLENMEDİ, işaretlenmedi. Pencere dün 16:39-16:53'te kullanıldı, bugün ~16:40'ta
+> açılıyor. Liste hazır bekliyor (yukarıdaki 10'luk ön-doğrulanmış sıra).
