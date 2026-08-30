@@ -2,16 +2,116 @@
  "tarih": "2026-08-31",
  "kanal": "gizli",
  "aciklama": "1. arama sayfasında bize ait sonuç sayısı (site + sahibinden mağaza + sosyal). Harita kutusu ayrı.",
- "varliklar": ["siringayrimenkul.com","eryamansiringayrimenkul.sahibinden.com","instagram.com/eryamansiringayrimenkul","tiktok.com/@siringayrimenkul","facebook.com/61585267540417"],
+ "varliklar": [
+  "siringayrimenkul.com",
+  "eryamansiringayrimenkul.sahibinden.com",
+  "instagram.com/eryamansiringayrimenkul",
+  "tiktok.com/@siringayrimenkul",
+  "facebook.com/61585267540417"
+ ],
  "olcumler": [
-  {"q":"eryaman emlakçı","n":10,"isgal":2,"siralar":[2,7],"harita":1},
-  {"q":"Eryaman 1. Etap emlakçı","n":10,"isgal":2,"siralar":[1,2],"harita":1},
-  {"q":"Eryaman 2. Etap emlakçı","n":10,"isgal":2,"siralar":[3,4],"harita":2},
-  {"q":"Eryaman 3. Etap emlakçı","n":9,"isgal":1,"siralar":[5],"harita":2},
-  {"q":"Eryaman 4. Etap emlakçı","n":10,"isgal":2,"siralar":[1,2],"harita":1},
-  {"q":"Eryaman 5. Etap emlakçı","n":10,"isgal":2,"siralar":[1,6],"harita":1},
-  {"q":"Şehit Osman Avcı mahallesi emlakçı","n":9,"isgal":1,"siralar":[4],"harita":0},
-  {"q":"Göksu mahallesi emlakçı","n":9,"isgal":0,"siralar":[],"harita":0},
-  {"q":"Yeşilova mahallesi emlakçı","n":9,"isgal":0,"siralar":[],"harita":0}
+  {
+   "q": "eryaman emlakçı",
+   "n": 10,
+   "isgal": 2,
+   "siralar": [
+    2,
+    7
+   ],
+   "harita": 1
+  },
+  {
+   "q": "Eryaman 1. Etap emlakçı",
+   "n": 10,
+   "isgal": 2,
+   "siralar": [
+    1,
+    2
+   ],
+   "harita": 1
+  },
+  {
+   "q": "Eryaman 2. Etap emlakçı",
+   "n": 10,
+   "isgal": 2,
+   "siralar": [
+    3,
+    4
+   ],
+   "harita": 2
+  },
+  {
+   "q": "Eryaman 3. Etap emlakçı",
+   "n": 9,
+   "isgal": 1,
+   "siralar": [
+    5
+   ],
+   "harita": 2
+  },
+  {
+   "q": "Eryaman 4. Etap emlakçı",
+   "n": 10,
+   "isgal": 2,
+   "siralar": [
+    1,
+    2
+   ],
+   "harita": 1
+  },
+  {
+   "q": "Eryaman 5. Etap emlakçı",
+   "n": 10,
+   "isgal": 2,
+   "siralar": [
+    1,
+    6
+   ],
+   "harita": 1
+  },
+  {
+   "q": "Şehit Osman Avcı mahallesi emlakçı",
+   "n": 9,
+   "isgal": 1,
+   "siralar": [
+    4
+   ],
+   "harita": 0
+  },
+  {
+   "q": "Göksu mahallesi emlakçı",
+   "n": 9,
+   "isgal": 0,
+   "siralar": [],
+   "harita": 0
+  },
+  {
+   "q": "Yeşilova mahallesi emlakçı",
+   "n": 9,
+   "isgal": 0,
+   "siralar": [],
+   "harita": 0
+  },
+  {
+   "q": "Altay mahallesi emlakçı",
+   "n": 10,
+   "isgal": 0,
+   "siralar": [],
+   "harita": 1
+  },
+  {
+   "q": "Devlet mahallesi emlakçı",
+   "n": 9,
+   "isgal": 0,
+   "siralar": [],
+   "harita": 1
+  },
+  {
+   "q": "Güzelkent mahallesi emlakçı",
+   "n": 9,
+   "isgal": 0,
+   "siralar": [],
+   "harita": 0
+  }
  ]
 }
