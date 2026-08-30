@@ -481,3 +481,25 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 30.08 (13:50) — DAMLA DENEMESİ: kasmir-mavi-orkide'de "Kota Aşıldı" → istek
 > İŞLENMEDİ, işaretlenmedi. Pencere dün 16:39-16:53'te kullanıldı, bugün ~16:40'ta
 > açılıyor. Liste hazır bekliyor (yukarıdaki 10'luk ön-doğrulanmış sıra).
+
+> 30.08 (14:15) — YENİDEN ÖLÇÜM TURU: 29.08 İSTEKLERİNİN DÖNÜŞÜMÜ 10/10.
+> GÖRÜNMEZLİKTEN ÇIKANLAR: alis 0→ORGANİK 1 (+harita 1), lale-kent 0→1,
+> atalay 0→3, selcuklu 0→9. SIRA YÜKSELENLER: platin-2 3→1, polsan-1-gozde 4→2.
+> BAŞLIK TAZELENENLER (sıra aynı): mia-concept #2, demirer #2 — ikisi de eski
+> başlıktan yeni şablona geçti. buse: silinmiş Ata adresi yerine artık Göksu
+> kaydımız #4'te. safir-rezidans 1→2 (dalgalanma).
+> DAMLA LİSTESİ GÜNCELLENDİ — kendiliğinden kurtulanlar DÜŞTÜ:
+>   kasmir-mavi-orkide 0→5 (listenin 1 numarasıydı), oyak-goksupark 0→7 (2 numara).
+> TEYİTLİ GÖRÜNMEZLER (yarınki damlanın yeni başı):
+>   1. eryaman/oyak-sitesi          233 gos · 30.08 SERP 0
+>   2. goksu/arissa-goksu           232 gos · 30.08 SERP 0
+>   3. goksu/goksupark-konutlari    160 gos · 30.08 SERP 0
+>   4. yavuz-selim/kucukevlerimiz   30.08 SERP 0 ama HARİTA 1 (adaşsız)
+>   5. seyh-samil/mavera-sitesi     30.08 SERP 0 (adaşsız)
+>   6. seyh-samil/ak-kent-sitesi    30.08 SERP 0 (adaşsız)
+>   7. seker/zirve-loft             29.08 SERP 0 (adaşsız)
+>   8. seker/izoser-residence       29.08 SERP 0
+>   9. seyh-samil/sitekonut-sitesi  30.08 SERP 0 ama HARİTA 1
+>  10. eryaman/platin-konutlari      92 gos · bayat
+> DERS: "görünmez" adaylar gönderilmeden ÖNCE yeniden ölçülmeli — bugün 2 aday
+> kendiliğinden kurtulmuş çıktı, 2 kota kurtarıldı.

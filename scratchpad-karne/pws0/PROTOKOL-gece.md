@@ -349,3 +349,12 @@ Sıra: Altay → Devlet → Eryaman → Göksu → Güzelkent → ŞOA → Şeke
 > 3. ETAP: organik 6→4 + HARİTA KUTUSUNA GİRDİ (21.08'de kutuda yoktuk).
 > SIRADAKİ İŞ: tur artık "yeniden ölçüm" moduna geçiyor — 28-30.08 isteklerinin
 > dönüşümü + aday listesindeki 207 sayfanın SERP teyidi.
+> 30.08 (14:15) — YENİDEN ÖLÇÜM MODU BAŞLADI. Karneye DEĞİŞİM katmanı eklendi
+> (yükselen/düşen panosu + mahalle bazlı ▲▼). 29.08 isteklerinin 10/10'u ölçüldü:
+> 4 sayfa görünmezlikten çıktı (alis 0→1+harita1, lale-kent 0→1, atalay 0→3,
+> selcuklu 0→9), 2 sayfa sıra yükseltti (platin-2 3→1, polsan 4→2), 2 sayfa
+> başlık tazeledi (mia-concept, demirer), buse silinmiş Ata adresinden kurtuldu.
+> KRİTİK DERS: aday listesinin 1. ve 2. sırası (kasmir-mavi-orkide 0→5,
+> oyak-goksupark 0→7) İSTEK GÖNDERİLMEDEN kendiliğinden kurtulmuş →
+> "görünmez" adaylar gönderilmeden önce MUTLAKA yeniden ölçülmeli (2 kota kurtuldu).
+> Bugün 112 ölçüm; yeniden ölçülenlerde 35 yükselen / 22 düşen.

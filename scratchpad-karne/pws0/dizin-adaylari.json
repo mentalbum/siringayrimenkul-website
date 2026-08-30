@@ -1,27 +1,5 @@
 [
  {
-  "yol": "/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi",
-  "mah": "goksu-mahallesi",
-  "site": "kasmir-mavi-orkide-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 248,
-  "tarama": "2026-07-26",
-  "durum": "bayat",
-  "olcum": "2026-08-28"
- },
- {
-  "yol": "/mahalleler/goksu-mahallesi/oyak-goksupark",
-  "mah": "goksu-mahallesi",
-  "site": "oyak-goksupark",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 245,
-  "tarama": "2026-07-27",
-  "durum": "bayat",
-  "olcum": "2026-08-28"
- },
- {
   "yol": "/mahalleler/eryaman-mahallesi/oyak-sitesi",
   "mah": "eryaman-mahallesi",
   "site": "oyak-sitesi",
@@ -30,7 +8,7 @@
   "gos": 233,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/arissa-goksu",
@@ -41,7 +19,7 @@
   "gos": 232,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/atakent-sitesi",
@@ -63,7 +41,7 @@
   "gos": 160,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-08-28"
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/bordo-loca",
@@ -1637,6 +1615,28 @@
   "tarama": "2026-07-27",
   "durum": "bayat",
   "olcum": "2026-08-27"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+  "mah": "goksu-mahallesi",
+  "site": "kasmir-mavi-orkide-sitesi",
+  "tur": "eski başlık",
+  "sira": 5,
+  "gos": 248,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/oyak-goksupark",
+  "mah": "goksu-mahallesi",
+  "site": "oyak-goksupark",
+  "tur": "eski başlık",
+  "sira": 7,
+  "gos": 245,
+  "tarama": "2026-07-27",
+  "durum": "bayat",
+  "olcum": "2026-08-30"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
