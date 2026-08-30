@@ -151,3 +151,48 @@ uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
    Yani ayrı bir "AI SEO" işi açmaya gerek yok; mevcut GBP önceliği
    ([[project-kanal-onceligi-gbp]]) zaten doğru kanal.
 3. Bing Places / Foursquare bu önceliği **değiştirmez** — yukarıdaki çekincelere bak.
+
+---
+
+## Instagram'ı "eryaman emlakçı" SERP'ine sokma — 31.08.2026 TEŞHİSİ (KAPANDI)
+
+**Özgün'ün isteği:** "IG sayfamız 2. sayfanın 1. sırasında, ilk sayfaya çıkaralım."
+
+**DÜZELTME — o hesap bizim değil.** pws=0 ölçümü (31.08): 11. sıradaki Instagram
+sonucu RAKİP `@ankaemlakeryaman` (6.256 takipçi). Bizim `@eryamansiringayrimenkul`
+nötr sonuçlarda **ilk 30'da yok**. Özgün'ün tarayıcısında görünüyorsa
+kişiselleştirmedir (kendi hesabını sık ziyaret ediyor).
+
+**Kazandığımız kısım:** `eryaman emlakçı site:instagram.com` testinde **1. sırayız**
+(16.08'de ilk 10'da yoktuk) — 16.08 ad alanı değişikliği işe yaramış. Metin alakası
+bizde: bizim başlıkta "Eryaman Emlakçı" var, rakibin bio'sunda "emlakçı" HİÇ geçmiyor.
+
+**Neden hedefe ULAŞILAMAZ (üç katmanlı):**
+1. **Slot 11'de duruyor.** Google'ın site diversity sistemi (resmi Ranking Systems
+   belgesi) instagram.com'a ~1-2 slot veriyor ve bu SERP'te o slot 11. sırada.
+   Rakibi slottan atsak bile ~11'e otururuz — yine 2. sayfa. İlk 10'da HİÇBİR
+   Instagram profili yok; ilk 10 portal + ofis siteleri.
+2. **site: testi açık SERP sırasını göstermez.** Google Search Central: site:
+   operatörü tanı aracı değil, sonuçları tam sıralamaz. "Instagram içinde 1."
+   ile "web'de 1." farklı büyüklükler.
+3. **Kaldıraç satın alınamıyor.** Takipçi sayısı doğrudan sıralama sinyali DEĞİL
+   (Cutts 2014, Mueller 2015-2021 yinelenmiş beyan). Dolaylı zincir tıklama
+   geçmişi (NavBoost, DOJ davası + 2024 sızıntısı) ve penceresi ~13 ay.
+
+**Fırsat maliyeti (en ağır gerekçe):** Aynı SERP'te web sitemiz 3., sahibinden
+mağazamız 6. — ilk 10'da ZATEN 2 slotumuz var. 11. sıradaki bir IG slotunun
+getirisi, 3. sırayı 1-2'ye taşımanın çok altında.
+
+**RAKİP İSTİHBARATI (işe yarar, ayrı değer):** @ankaemlakeryaman işletme hesabı
+bile değil (is_business_account=false); dış linki POLATLI mağazasına gidiyor
+(Eryaman/Etimesgut kayıtlı sahibinden mağazası YOK); 12 okunabilir gönderisinin
+sadece 2'si Eryaman (kalanı Sincan/Keçiören/Yenimahalle/Bağlıca); handle'ına
+dışarıdan link SIFIR; 6.253 takipçi / 15 gönderi / 1 takip oranı organik büyümeye
+uymuyor. GBP'si 5,0/8 yorum — bizimki 5,0/398.
+
+**Dizinleme kontrolü GEREKMİYOR:** profil site: testinde çıktığına göre arama
+motoru dizinlemesi zaten AÇIK.
+
+**KARAR: Bu hedef için kaynak ayrılmaz.** Instagram sıra hedefi olarak kapatıldı;
+profil künye hijyeni (mevcut footer linki + JSON-LD sameAs zaten var) sürer.
+Bu fikri yeniden açan oturum önce bu bölümü okusun.
