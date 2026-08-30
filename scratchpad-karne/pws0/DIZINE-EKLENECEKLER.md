@@ -782,3 +782,65 @@ soa/nefeskent, soa/dalgic-residence, soa/inci-life-residence.
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi  <!-- 30.08 SERP 0, harita 1 --> ← 30.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/mavera-sitesi  <!-- 30.08 SERP 0, adaşsız --> ← 30.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi  <!-- 30.08 SERP 0, harita 1; API tarama 26.07 --> SIRADA (6. istek, klavye odağı gitmedi)
+
+## 31.08 — A SINIFI: SLOT KAZANILMIŞ, URL YANLIŞ (yeni öncelik)
+
+Ölçülen mekanizma: site sayfası son 7 günde taranmışsa sorgunun %87'sinde O çıkıyor;
+hiç taranmamışsa %31'e düşüyor ve yerini ada/mahalle/eski-slug alıyor. Tunahan doğal
+deneyi: içerik değişmeden, sadece yeniden taranarak 7/7 vaka ada→site sayfasına döndü.
+
+Aşağıdaki sayfalarda İLK 3 SIRA ZATEN BİZİM — ama yanlış URL ile. Tek eksik tarama.
+(69 sayfa · 2415 gösterim talebi · Yenimahalle hariç)
+
+| # | Sayfa | Sıra | Şu an çıkan | Durum |
+|---|---|---|---|---|
+| 1 | `dema-park` | 3. | `46498-7` | orta |
+| 2 | `volga-residence` | 2. | `46368-10` | orta |
+| 3 | `maybak-konutlari` | 3. | `maybak-sitesi` | bayat |
+| 4 | `endora-park` | 2. | `endora-plus` | bayat |
+| 5 | `kur-sitesi-46495-ada` | 2. | `kur-sitesi-46495-ada` | bayat |
+| 6 | `bizim-alperenler-sitesi` | 3. | `seyh-samil-mahallesi` | bayat |
+| 7 | `intes-dogakent-konutlari` | 1. | `16418-1` | bayat |
+| 8 | `green-place-residence` | 2. | `green-place-residence` | bayat |
+| 9 | `admira-goksu-konutlari` | 3. | `goksu-mahallesi` | bayat |
+| 10 | `bahar-sitesi` | 1. | `bahar-sitesi` | bayat |
+| 11 | `elit-nar-cicegi` | 1. | `elit-nar-cicegi` | bayat |
+| 12 | `gozde-91-sitesi` | 3. | `gozde-91-sitesi` | bayat |
+| 13 | `akkonak-sitesi` | 1. | `akkonak-sitesi` | bayat |
+| 14 | `genc-avrasya-sitesi` | 3. | `46239-1` | bayat |
+| 15 | `ilkiz-2-sitesi` | 1. | `ilkiz-sitesi` | bayat |
+| 16 | `demirkent-sitesi` | 2. | `18676-1` | orta |
+| 17 | `keyfim-sitesi` | 3. | `19507-1` | bayat |
+| 18 | `bizim-sirinkoy-sitesi` | 2. | `bizim-sirinkoy-sitesi` | bayat |
+| 19 | `elif-elvan-sitesi` | 1. | `46383-1` | orta |
+| 20 | `motto-butik` | 1. | `motto-butik` | bayat |
+| 21 | `doktorlar-sitesi` | 3. | `doktorlar-sitesi` | bayat |
+| 22 | `enday-sitesi` | 1. | `goksu-mahallesi` | bayat |
+| 23 | `er-ay-3-sitesi` | 3. | `er-ay-3-sitesi` | bayat |
+| 24 | `guz-gol-sitesi` | 1. | `guz-gol-sitesi` | bayat |
+| 25 | `sozova-sitesi` | 2. | `hotki-meydan` | bayat |
+| 26 | `kocaklar-tower` | 2. | `kocaklar-tower` | bayat |
+| 27 | `yesimkent` | 1. | `yesimkent` | bayat |
+| 28 | `may-tower` | 1. | `may-tower` | orta |
+| 29 | `hotki-meydan` | 2. | `hotki-ritm` | bayat |
+| 30 | `ovgu-iletisim-sitesi` | 3. | `seyh-samil-mahallesi` | bayat |
+
+Gönderim sırası (ilk 12, kota günde ~10):
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/dema-park  <!-- A · 230 gos · sıra 3 · şu an: /mahalleler/tunahan-mahallesi/adalar/46498-7 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/volga-residence  <!-- A · 156 gos · sıra 2 · şu an: /mahalleler/seker-mahallesi/adalar/46368-10 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/maybak-konutlari  <!-- A · 121 gos · sıra 3 · şu an: /mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/endora-park  <!-- A · 120 gos · sıra 2 · şu an: /mahalleler/ata-mahallesi/endora-plus -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada  <!-- A · 115 gos · sıra 2 · şu an: /mahalleler/tunahan/kur-sitesi-46495-ada -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi  <!-- A · 114 gos · sıra 3 · şu an: /mahalleler/seyh-samil-mahallesi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/intes-dogakent-konutlari  <!-- A · 113 gos · sıra 1 · şu an: /mahalleler/eryaman-mahallesi/adalar/16418-1 -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/green-place-residence  <!-- A · 93 gos · sıra 2 · şu an: /mahalleler/yesilova/green-place-residence -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/admira-goksu-konutlari  <!-- A · 93 gos · sıra 3 · şu an: /mahalleler/goksu-mahallesi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/bahar-sitesi  <!-- A · 88 gos · sıra 1 · şu an: /mahalleler/goksu-mahallesi/bahar-sitesi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi  <!-- A · 84 gos · sıra 1 · şu an: /mahalleler/yavuz-selim/elit-nar-cicegi -->
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-91-sitesi  <!-- A · 81 gos · sıra 3 · şu an: /mahalleler/guzelkent/gozde-91-sitesi -->
+
+Tam liste: `damla-A-sinifi.json`. B sınıfı (eski adresin kendisine istek) PİLOT
+gerektiriyor: 308 dönen adrese 'dizine ekle' isteğinin kabul edilip edilmediği hiç
+denenmedi — 3 istekle sınanacak, onay balonu gelmezse sınıf iptal.
+

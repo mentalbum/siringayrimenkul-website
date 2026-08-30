@@ -419,3 +419,31 @@ PRATİK SONUÇ: Başlık metnini yeniden yazmak İŞ DEĞİL (kod zaten doğru).
 Elimizdeki tek kaldıraç TARAMA — ve dizin damlası tam bunu yapıyor.
 eski-baslik-adaylari.json: 121 sayfa (12.227 gösterim talebi) hem eski başlık
 gösteriyor hem isteği gitmemiş — damla sırasına ikinci ölçüt olarak eklenmeli.
+
+## 31.08 WORKFLOW SENTEZİ — DARBOĞAZ: TARAMA TAHSİSİ
+
+5 paralel teşhis ajanı (1'i API hatasıyla düştü) + sentez. Üç bağımsız rapor
+AYNI mekanizmayı ölçtü:
+  Site sayfası son 7 günde taranmışsa sorgunun %87'sinde O çıkıyor.
+  Hiç taranmamışsa %31 — yerini ada/mahalle/eski-slug alıyor. (n=507)
+  TUNAHAN DOĞAL DENEYİ: içerik hiç değişmeden, sadece yeniden tarandıkları için
+  7/7 vaka ada→site sayfasına döndü (16.08→22.08).
+→ Yani "içerik yaz" değil, "taranmasını sağla". Damla tam da bu.
+
+BUGÜN UYGULANANLAR:
+1. PR #86 — kırık eski adresler. 908 adresin tamamı canlı tarandı; 7 kırık:
+   - /mahalleler/seker/relax-line 404 iken "Altaş Relax Line emlakçı"da 1. SIRADAYDI
+   - 3 eski ada adresi yanlış mahalleye yazılmış (hedefler içerikten doğrulandı)
+   - 3 hayalet adres sitemap'ten silindi (908→905), yönlendirme UYDURULMADI
+2. Damla sırası A SINIFI ile yeniden kuruldu (DIZINE-EKLENECEKLER.md):
+   69 sayfa · 2.415 gösterim talebi. Ölçüt: ilk 3 sıra ZATEN bizim ama yanlış
+   URL ile (ada/mahalle/eski-slug temsil ediyor) + doğru sayfa bayat/dizinsiz.
+   Slot kazanılmış, tek eksik tarama → en yüksek dönüşüm beklentisi.
+
+SIRADA (uygulanmadı, gerekçeleriyle):
+- app/sitemap.ts SABLON tabanlarını geri alma: AGENTS.md kuralıyla ÇELİŞİYOR,
+  aynı commit'te kural da güncellenmezse sonraki oturum geri alır. Özgün'e sorulacak.
+- sitemap-eski-adresler 905→~250 daraltma: %83'ü ada+Yenimahalle. "Gösterimler
+  düşmesin" kuralı gereği tek seferde değil, ölçerek yapılmalı.
+- Karneye tıklama/CTR şeridi: GSC'de gösterim ikiye katlanırken TIK 685→604
+  gerilemiş — karne bunu göremiyor. En değerli karne geliştirmesi bu.

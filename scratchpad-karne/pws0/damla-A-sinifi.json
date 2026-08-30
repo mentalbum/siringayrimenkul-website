@@ -1,0 +1,618 @@
+[
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/dema-park",
+  "gos": 230,
+  "sira": 3,
+  "cikan": "/mahalleler/tunahan-mahallesi/adalar/46498-7",
+  "durum": "orta",
+  "tarama": "2026-08-15"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/volga-residence",
+  "gos": 156,
+  "sira": 2,
+  "cikan": "/mahalleler/seker-mahallesi/adalar/46368-10",
+  "durum": "orta",
+  "tarama": "2026-08-11"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/maybak-konutlari",
+  "gos": 121,
+  "sira": 3,
+  "cikan": "/mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/endora-park",
+  "gos": 120,
+  "sira": 2,
+  "cikan": "/mahalleler/ata-mahallesi/endora-plus",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
+  "gos": 115,
+  "sira": 2,
+  "cikan": "/mahalleler/tunahan/kur-sitesi-46495-ada",
+  "durum": "bayat",
+  "tarama": "2026-08-09"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/bizim-alperenler-sitesi",
+  "gos": 114,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/intes-dogakent-konutlari",
+  "gos": 113,
+  "sira": 1,
+  "cikan": "/mahalleler/eryaman-mahallesi/adalar/16418-1",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/green-place-residence",
+  "gos": 93,
+  "sira": 2,
+  "cikan": "/mahalleler/yesilova/green-place-residence",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/admira-goksu-konutlari",
+  "gos": 93,
+  "sira": 3,
+  "cikan": "/mahalleler/goksu-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/bahar-sitesi",
+  "gos": 88,
+  "sira": 1,
+  "cikan": "/mahalleler/goksu-mahallesi/bahar-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
+  "gos": 84,
+  "sira": 1,
+  "cikan": "/mahalleler/yavuz-selim/elit-nar-cicegi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gozde-91-sitesi",
+  "gos": 81,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent/gozde-91-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
+  "gos": 78,
+  "sira": 1,
+  "cikan": "/mahalleler/guzelkent/akkonak-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/genc-avrasya-sitesi",
+  "gos": 78,
+  "sira": 3,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/adalar/46239-1",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/ilkiz-2-sitesi",
+  "gos": 74,
+  "sira": 1,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/ilkiz-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/demirkent-sitesi",
+  "gos": 72,
+  "sira": 2,
+  "cikan": "/mahalleler/devlet-mahallesi/adalar/18676-1",
+  "durum": "orta",
+  "tarama": "2026-08-14"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/keyfim-sitesi",
+  "gos": 60,
+  "sira": 3,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/adalar/19507-1",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi",
+  "gos": 51,
+  "sira": 2,
+  "cikan": "/mahalleler/yavuz-selim/bizim-sirinkoy-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/elif-elvan-sitesi",
+  "gos": 47,
+  "sira": 1,
+  "cikan": "/mahalleler/eryaman-mahallesi/adalar/46383-1",
+  "durum": "orta",
+  "tarama": "2026-08-15"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/motto-butik",
+  "gos": 46,
+  "sira": 1,
+  "cikan": "/mahalleler/altay/motto-butik",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/doktorlar-sitesi",
+  "gos": 43,
+  "sira": 3,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/doktorlar-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/enday-sitesi",
+  "gos": 43,
+  "sira": 1,
+  "cikan": "/mahalleler/goksu-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
+  "gos": 42,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent/er-ay-3-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
+  "gos": 41,
+  "sira": 1,
+  "cikan": "/mahalleler/yavuz-selim/guz-gol-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-30"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/sozova-sitesi",
+  "gos": 34,
+  "sira": 2,
+  "cikan": "/mahalleler/devlet-mahallesi/hotki-meydan",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
+  "gos": 34,
+  "sira": 2,
+  "cikan": "/mahalleler/yesilova/kocaklar-tower",
+  "durum": "bayat",
+  "tarama": "2026-08-07"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yesimkent",
+  "gos": 31,
+  "sira": 1,
+  "cikan": "/mahalleler/guzelkent/yesimkent",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/may-tower",
+  "gos": 30,
+  "sira": 1,
+  "cikan": "/mahalleler/yesilova/may-tower",
+  "durum": "orta",
+  "tarama": "2026-08-12"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/hotki-meydan",
+  "gos": 25,
+  "sira": 2,
+  "cikan": "/mahalleler/yesilova-mahallesi/hotki-ritm",
+  "durum": "bayat",
+  "tarama": "2026-08-01"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ovgu-iletisim-sitesi",
+  "gos": 23,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-28"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
+  "gos": 22,
+  "sira": 2,
+  "cikan": "/mahalleler/guzelkent/cagdas-95-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/sahinbey-sitesi",
+  "gos": 20,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
+  "gos": 20,
+  "sira": 1,
+  "cikan": "/mahalleler/guzelkent-mahallesi/baskent-sular-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/atakent-metro-sitesi",
+  "gos": 20,
+  "sira": 3,
+  "cikan": "/mahalleler/eryaman/atakent-metro-sitesi",
+  "durum": "orta",
+  "tarama": "2026-08-11"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/lowland-business",
+  "gos": 19,
+  "sira": 3,
+  "cikan": "/mahalleler/yesilova-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
+  "gos": 16,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/uzunbey-sitesi",
+  "gos": 13,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/ma1-tower",
+  "gos": 10,
+  "sira": 2,
+  "cikan": "/mahalleler/goksu-mahallesi/adalar/64517-1",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/yunus-emre-cagdas-sitesi",
+  "gos": 9,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/selinkent-sitesi",
+  "gos": 6,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "bayat",
+  "tarama": "2026-07-26"
+ },
+ {
+  "yol": "/mahalleler/cumhuriyet-mahallesi/mes-polaris-evleri",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/cumhuriyet/mes-polaris-evleri",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/ata-mahallesi/aker-mucevher-evleri",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/ata-mahallesi",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/gsv-spor-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/goksu/adalar/46465-1",
+  "durum": "dizinsiz",
+  "tarama": "2026-07-27"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/nil-my-home",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/susuz-mahallesi/liva-goksu",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gercek-92-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent/gercek-92-sitesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/gozde-2-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/guzelkent/adalar/18652-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent-mahallesi/adalar/18476-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/mesa-calisanlari-kooperatifi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent-mahallesi/adalar/18506-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/guzelkent-mahallesi/yesimkent",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/guzel-ev-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
+  "durum": "bayat",
+  "tarama": "2026-08-03"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/ozenkent-villalari",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/yavuz-selim-mahallesi/adalar/19514-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/akdal-residence",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/seker-mahallesi/adalar/46361-7",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/altay-mahallesi/eryaman-park-evleri",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/altay-mahallesi/adalar/45891-6",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/liderkent",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/seyh-samil/liderkent",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ozanadolu",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/seyh-samil/ozanadolu",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil/ozluce-guzelevim",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seyh-samil-mahallesi/yagan-kent",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/seyh-samil-mahallesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/dastarli-sitesi",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/devlet/dastarli-sitesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/sergah-evleri",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/devlet-mahallesi/adalar/18675-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/gokdemir-tower",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/eryaman-mahallesi/adalar/16418-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/goksu-bilge-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/goksu-mahallesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/kafdagi-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/goksu-mahallesi/adalar/46456-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/paro-life",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/goksu-mahallesi/adalar/63406-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/utkan-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/goksu-mahallesi/adalar/46457-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/goksu-mahallesi/utku-kent-2-sitesi",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/goksu-mahallesi/adalar/46453-1",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/sehit-osman-avci-mahallesi/address-goksu",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/sehit-osman-avci/address-goksu",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/green-life-goksu-konutlari",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/susuz-mahallesi/green-life-goksu",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/lake-life",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/susuz-mahallesi/adalar/63379-1",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/major-goksu",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/susuz-mahallesi/adalar/63377-5",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/neovadi-konutlari",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/susuz/neovadi-konutlari (ESKİ SLUG)",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/susuz-mahallesi/tatli-yamac-palmiye-evleri",
+  "gos": 0,
+  "sira": 3,
+  "cikan": "/mahalleler/susuz-mahallesi/adalar/44784-1",
+  "durum": "?",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/devlet-mahallesi/arslanlar-sitesi",
+  "gos": 0,
+  "sira": 2,
+  "cikan": "/mahalleler/devlet/arslanlar-sitesi",
+  "durum": "dizinsiz",
+  "tarama": "-"
+ },
+ {
+  "yol": "/mahalleler/seker-mahallesi/relax-line",
+  "gos": 0,
+  "sira": 1,
+  "cikan": "/mahalleler/seker/relax-line",
+  "durum": "?",
+  "tarama": "-"
+ }
+]
