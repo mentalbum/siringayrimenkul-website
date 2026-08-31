@@ -121,3 +121,115 @@ Google API 500 döndü, sayfanın durumu hakkında bilgi DEĞİL.
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi
+
+
+---
+
+# İKİNCİ PARTİ — eski kuyruğun denetlenmemiş kalanı (37 sayfa)
+
+Eski kuyruktaki 65 kayıt daha API'ye soruldu: **28'i zaten dizindeymiş**
+(işaretlendi, kota harcanmadı), 37'si gerçekten dizin dışı çıktı.
+Böylece bugün toplam 35 sayfalık boşa istek önlendi.
+
+Bu parti birinci partiden SONRA çekilir.
+
+## guzelkent-mahallesi (8)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi  
+      _keşfedildi, dizine alınmadı_
+
+## sehit-osman-avci-mahallesi (6)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari  
+      _hiç bilinmiyor_
+
+## yavuz-selim-mahallesi (5)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi  
+      _hiç bilinmiyor_
+
+## devlet-mahallesi (4)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi  
+      _keşfedildi, dizine alınmadı_
+
+## goksu-mahallesi (4)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi  
+      _keşfedildi, dizine alınmadı_
+
+## seyh-samil-mahallesi (4)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent  
+      _keşfedildi, dizine alınmadı_
+
+## seker-mahallesi (3)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence  
+      _keşfedildi, dizine alınmadı_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence  
+      _hiç bilinmiyor_
+
+## eryaman-mahallesi (2)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi  
+      _hiç bilinmiyor_
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi  
+      _keşfedildi, dizine alınmadı_
+
+## yesilova-mahallesi (1)
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower  
+      _hiç bilinmiyor_
