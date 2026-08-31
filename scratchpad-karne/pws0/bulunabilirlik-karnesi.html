@@ -75,6 +75,9 @@ td.num { font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }
 .hf i { font-style:normal; font-size:11px; color:var(--iyi); font-variant-numeric:tabular-nums;
          transform:translateY(-15px); white-space:nowrap }
 .gurultu-not { font-size:11px; color:var(--m3); font-style:italic }
+.bar { background:var(--cizgi); border-radius:3px; height:8px; min-width:60px }
+.bar i { display:block; height:100%; background:var(--iyi); border-radius:3px }
+tr.vurgu td { background:var(--yuzey) }
 .chip.orta { background:var(--orta-z); color:var(--orta-r) }
 .chip.nul { background:transparent; color:var(--m3); border:1px dashed var(--cizgi) }
 .lejant { display:flex; flex-wrap:wrap; gap:14px; font-size:13px; color:var(--m2); margin:10px 2px 0 }
@@ -345,6 +348,12 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
     <div class="pano">
       <h3>İlk 10′a girenler <span class="krozet">110</span></h3>
       <ul><li><span><strong>cabadag-bloklari</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>dastarli</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>oray</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>ankapark-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>elif-ozgen</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>enday</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>evinora</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>cozum-kent</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>nazlideniz</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>renk-villalari</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li></ul>
+      <p class="alt" style="margin:10px 0 0"><strong>İhtiyatla oku.</strong> Bu girişlerin
+      %95′i (104 tanesi) 22-23 Ağustos turuyla
+      kıyaslanıyor ve o turda “ilk 10′da yok” oranı %33-41′ti;
+      sonraki turlarda %17-22. Farkın ne kadarı gerçek
+      iyileşme, ne kadarı o turun ölçüm koşulu ayırt edilemedi — o tur 21.08 turuyla ortak sayfa
+      içermiyor, karşılaştırılacak taban yok.</p>
     </div>
     <div class="pano">
       <h3>İlk 10′dan çıkanlar <span class="krozet">2</span></h3>
@@ -403,6 +412,18 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
     istek göndermek kotayı yakar, hiçbir şey kazandırmaz. En çok gösterim alanlar:</p>
     <ul><li><span><strong>koz-modern</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">770 gösterim</span></li><li><span><strong>alpak-neve-armonia-residence</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">633 gösterim</span></li><li><span><strong>bahcen-eryaman-konutlari</strong> <span class="alt">Şeker</span></span><span class="chip">374 gösterim</span></li><li><span><strong>inci-life-residence</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">359 gösterim</span></li><li><span><strong>terasevler-eryaman</strong> <span class="alt">Yavuz Selim</span></span><span class="chip">347 gösterim</span></li><li><span><strong>hill-tower</strong> <span class="alt">Şeker</span></span><span class="chip">295 gösterim</span></li><li><span><strong>dort-mevsim-eryaman-konutlari</strong> <span class="alt">Şeker</span></span><span class="chip">288 gösterim</span></li><li><span><strong>karma-modern</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">274 gösterim</span></li></ul>
   </div>
+
+
+  <h2>Hangi sayfa ailesi trafiği taşıyor</h2>
+  <p class="not">Son 28 gün, Search Console. Kaldırılan Yenimahalle sayfaları hariç.
+  Sütunlardan en önemlisi <strong>adres başına tık</strong> — toplam sayı çok adresli
+  aileleri olduğundan büyük gösterir.</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Aile</th><th class="num">Adres</th><th class="num">Gösterim</th>
+    <th class="num">Tık</th><th class="num">Adres başına tık</th><th>&nbsp;</th></tr></thead>
+    <tbody><tr class="vurgu"><td><strong>Site sayfaları</strong></td><td class="num">659</td><td class="num">54.946</td><td class="num">1.321</td><td class="num">2,00</td><td><div class="bar"><i style="width:35%"></i></div></td></tr><tr><td><strong>Yazılar</strong></td><td class="num">42</td><td class="num">7.218</td><td class="num">123</td><td class="num">2,93</td><td><div class="bar"><i style="width:51%"></i></div></td></tr><tr><td><strong>Diğer (ana sayfa, araçlar)</strong></td><td class="num">18</td><td class="num">7.322</td><td class="num">104</td><td class="num">5,78</td><td><div class="bar"><i style="width:100%"></i></div></td></tr><tr class="vurgu"><td><strong>Ada sayfaları</strong></td><td class="num">663</td><td class="num">11.207</td><td class="num">102</td><td class="num">0,15</td><td><div class="bar"><i style="width:3%"></i></div></td></tr><tr><td><strong>Mahalle sayfaları</strong></td><td class="num">22</td><td class="num">3.472</td><td class="num">41</td><td class="num">1,86</td><td><div class="bar"><i style="width:32%"></i></div></td></tr><tr><td><strong>Etap sayfaları</strong></td><td class="num">7</td><td class="num">491</td><td class="num">10</td><td class="num">1,43</td><td><div class="bar"><i style="width:25%"></i></div></td></tr></tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">Ada sayfaları adres sayısı olarak site sayfalarıyla neredeyse eşit (663′e 659) ama sayfa başına <strong>13 kat</strong> az tık getiriyor (0,15′e 2,00). Yine de sitemap′te kalıyorlar: 31.08 ölçümünde tarama bütçesi yemedikleri görüldü (son 7 günde site 10/30, ada 4/30 tarandı) ve çıkarmanın ölçülmüş bir kazancı yok.</p>
 
 
   <h2>Verinin sağlığı</h2>

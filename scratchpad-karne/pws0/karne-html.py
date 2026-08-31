@@ -235,6 +235,32 @@ IC_YUKSELEN = sorted([d for d in _DEG if _IC(d) and d["fark"] >= 2], key=lambda 
 IC_DUSEN = sorted([d for d in _DEG if _IC(d) and d["fark"] <= -2], key=lambda d: d["fark"])
 IC_GURULTU = [d for d in _DEG if _IC(d) and 0 < abs(d["fark"]) <= 1]
 
+# GİRİŞ SAYISININ İHTİYAT NOTU (31.08). "İlk 10'a girenler" en gösterişli
+# rakam ama tabanı tek bir tura yaslanıyor: girişlerin %94'ü 22-23.08 turuyla
+# kıyaslanıyor ve O TURDA "ilk 10 dışı" oranı %33-40'tı, sonraki turlarda
+# %13-22. Aradaki farkın ne kadarı gerçek iyileşme, ne kadarı o turun ölçüm
+# koşulu BİLİNMİYOR — 21.08 turuyla ortak sayfa olmadığı için ayırt edilemedi.
+# Rakam basılır ama tek başına başarı diye okunmasın diye uyarı da basılır.
+_gt = _C(d["o_tarih"] for d in GIRENLER)
+_eski_taban = sum(v for k, v in _gt.items() if k <= "2026-08-23")
+_sifir_oran = {}
+for r in rows:
+    if not r.get("s") or r["s"].count("/") != 1:
+        continue
+    g = _sifir_oran.setdefault(r["d"], [0, 0])
+    g[0] += 1
+    if not r.get("sira"):
+        g[1] += 1
+def _oran(d):
+    v = _sifir_oran.get(d)
+    return round(v[1] * 100 / v[0]) if v and v[0] else None
+GIRIS_IHTIYAT = {
+    "toplam": len(GIRENLER), "eski_taban": _eski_taban,
+    "yuzde": round(_eski_taban * 100 / len(GIRENLER)) if GIRENLER else 0,
+    "o22": _oran("2026-08-22"), "o23": _oran("2026-08-23"),
+    "o28": _oran("2026-08-28"), "o30": _oran("2026-08-30"),
+}
+
 # TAVAN ETKİSİ — karnenin en yanıltıcı yeriydi, 31.08'de ölçülüp ayrıldı.
 # İlk 10'da hem önce hem sonra ölçülen 293 sayfanın ortalaması 2,04'ten 2,36'ya
 # "kötüleşiyor" görünüyordu. Ama o sayfaların %41'i zaten 1. SIRADAYDI: yapısal
@@ -670,6 +696,54 @@ ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
 
+# --- sayfa türü verimi (31.08) --------------------------------------------
+# Karne sayfaları tek tek ölçüyordu ama hangi AİLENİN emeğe değdiğini
+# göstermiyordu. Ayrım kararı değiştiriyor: ada sayfaları adres sayısı olarak
+# site sayfaları kadar ama sayfa başına tıkları on üçte biri.
+try:
+    _TV = json.load(open("sayfa-turu-verimi.json"))["satirlar"]
+except Exception:
+    _TV = None
+if _TV:
+    _en = max(r["tik_sayfa"] for r in _TV) or 1
+    _tv_satir = ""
+    for r in _TV:
+        _pay = max(2, round(100 * r["tik_sayfa"] / _en))
+        _vurgu = ' class="vurgu"' if r["tur"] in ("site", "ada") else ""
+        _tv_satir += (
+            f'<tr{_vurgu}><td><strong>{esc(r["ad"])}</strong></td>'
+            f'<td class="num">{tr_sayi(r["sayfa"])}</td>'
+            f'<td class="num">{tr_sayi(r["gos"])}</td>'
+            f'<td class="num">{tr_sayi(r["tik"])}</td>'
+            f'<td class="num">{tr_sayi(r["tik_sayfa"], 2)}</td>'
+            f'<td><div class="bar"><i style="width:{_pay}%"></i></div></td></tr>')
+    _site = next((r for r in _TV if r["tur"] == "site"), None)
+    _ada = next((r for r in _TV if r["tur"] == "ada"), None)
+    _tv_not = ""
+    if _site and _ada and _ada["tik_sayfa"]:
+        _kat = round(_site["tik_sayfa"] / _ada["tik_sayfa"])
+        _tv_not = (f"Ada sayfaları adres sayısı olarak site sayfalarıyla neredeyse eşit "
+                   f"({tr_sayi(_ada['sayfa'])}′e {tr_sayi(_site['sayfa'])}) ama sayfa başına "
+                   f"<strong>{_kat} kat</strong> az tık getiriyor "
+                   f"({tr_sayi(_ada['tik_sayfa'], 2)}′e {tr_sayi(_site['tik_sayfa'], 2)}). "
+                   f"Yine de sitemap′te kalıyorlar: 31.08 ölçümünde tarama bütçesi yemedikleri "
+                   f"görüldü (son 7 günde site 10/30, ada 4/30 tarandı) ve çıkarmanın ölçülmüş "
+                   f"bir kazancı yok.")
+    turverim_html = f"""
+  <h2>Hangi sayfa ailesi trafiği taşıyor</h2>
+  <p class="not">Son 28 gün, Search Console. Kaldırılan Yenimahalle sayfaları hariç.
+  Sütunlardan en önemlisi <strong>adres başına tık</strong> — toplam sayı çok adresli
+  aileleri olduğundan büyük gösterir.</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Aile</th><th class="num">Adres</th><th class="num">Gösterim</th>
+    <th class="num">Tık</th><th class="num">Adres başına tık</th><th>&nbsp;</th></tr></thead>
+    <tbody>{_tv_satir}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">{_tv_not}</p>
+"""
+else:
+    turverim_html = ""
+
 # --- veri sağlığı (31.08) -------------------------------------------------
 # Tek günde ÜÇ sessiz veri hatası çıktı (hayalet kayıtlar, Türkçe İ, büyük harf
 # duyarlı filtre) ve üçü de karneyi yanlış gösterdi. Sağlık denetimi her üretimde
@@ -893,6 +967,9 @@ td.num {{ font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }}
 .hf i {{ font-style:normal; font-size:11px; color:var(--iyi); font-variant-numeric:tabular-nums;
          transform:translateY(-15px); white-space:nowrap }}
 .gurultu-not {{ font-size:11px; color:var(--m3); font-style:italic }}
+.bar {{ background:var(--cizgi); border-radius:3px; height:8px; min-width:60px }}
+.bar i {{ display:block; height:100%; background:var(--iyi); border-radius:3px }}
+tr.vurgu td {{ background:var(--yuzey) }}
 .chip.orta {{ background:var(--orta-z); color:var(--orta-r) }}
 .chip.nul {{ background:transparent; color:var(--m3); border:1px dashed var(--cizgi) }}
 .lejant {{ display:flex; flex-wrap:wrap; gap:14px; font-size:13px; color:var(--m2); margin:10px 2px 0 }}
@@ -1045,6 +1122,12 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano">
       <h3>İlk 10′a girenler <span class="krozet">{len(GIRENLER)}</span></h3>
       <ul>{girenler_html}</ul>
+      <p class="alt" style="margin:10px 0 0"><strong>İhtiyatla oku.</strong> Bu girişlerin
+      %{GIRIS_IHTIYAT['yuzde']}′i ({GIRIS_IHTIYAT['eski_taban']} tanesi) 22-23 Ağustos turuyla
+      kıyaslanıyor ve o turda “ilk 10′da yok” oranı %{GIRIS_IHTIYAT['o22']}-{GIRIS_IHTIYAT['o23']}′ti;
+      sonraki turlarda %{GIRIS_IHTIYAT['o28']}-{GIRIS_IHTIYAT['o30']}. Farkın ne kadarı gerçek
+      iyileşme, ne kadarı o turun ölçüm koşulu ayırt edilemedi — o tur 21.08 turuyla ortak sayfa
+      içermiyor, karşılaştırılacak taban yok.</p>
     </div>
     <div class="pano">
       <h3>İlk 10′dan çıkanlar <span class="krozet">{len(CIKANLAR)}</span></h3>
@@ -1104,6 +1187,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <ul>{sira_sorun_html}</ul>
   </div>
 
+{turverim_html}
 {saglik_html}
 {teshis_html}
   <h2>Sıra nasıl iyileşir</h2>
