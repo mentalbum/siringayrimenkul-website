@@ -28,8 +28,8 @@
    ]
   ]
  },
- "olculen": 504,
- "kuyruk": 504,
+ "olculen": 505,
+ "kuyruk": 511,
  "kayit": 1385,
  "yas": [
   [
@@ -38,7 +38,7 @@
   ],
   [
    "8-14 gün",
-   2
+   3
   ],
   [
    "15-30 gün",
@@ -100,11 +100,24 @@
    "temiz": true
   },
   {
-   "ad": "Hiç ölçülmemiş sayfa",
-   "adet": 0,
-   "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa. Karnedeki oranların paydasında yoklar — yani karne bilmediğini iyi sanabilir.",
-   "ornek": [],
+   "ad": "Kuyrukta olup ölçülmemiş",
+   "adet": 6,
+   "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa.",
+   "ornek": [
+    "eryaman-mahallesi/cigdem-sitesi",
+    "goksu-mahallesi/mutlu-sitesi",
+    "guzelkent-mahallesi/selale-sitesi",
+    "sehit-osman-avci-mahallesi/akasya-sitesi"
+   ],
    "agir": false,
+   "temiz": false
+  },
+  {
+   "ad": "Envanterde var, kuyrukta YOK",
+   "adet": 0,
+   "aciklama": "Sitede sayfası olan ama ölçüm kuyruğunda hiç yer almayan kayıt — adaş paylaşımı da hesaba katıldı. Bu sayfaların sırası hiç bilinmiyor, yani karnenin kapsama iddiası olduğundan iyi görünüyor.",
+   "ornek": [],
+   "agir": true,
    "temiz": true
   },
   {
@@ -116,6 +129,19 @@
     "sehit-osman-avci-mahallesi/kiratli-residence (2026-08-28)",
     "sehit-osman-avci-mahallesi/inci-life-residence (2026-08-28)",
     "sehit-osman-avci-mahallesi/goldekent-sitesi (2026-08-28)"
+   ],
+   "agir": false,
+   "temiz": false
+  },
+  {
+   "ad": "Karne metninde elle yazılmış rakam",
+   "adet": 36,
+   "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
+   "ornek": [
+    "satır 389: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
+    "satır 390: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
+    "satır 567: kart_uyari = (f'<p class=\"alt\" style=\"margin:10px 0 0\">Yüzde rozetleri",
+    "satır 582: <p class=\"alt\" style=\"margin:10px 0 0\">{hafta_notu}</p>"
    ],
    "agir": false,
    "temiz": false

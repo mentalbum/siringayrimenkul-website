@@ -378,18 +378,25 @@ def tr_tarih(iso):
     return f"{iso[8:10]}.{iso[5:7]}" if iso and len(iso) >= 10 else ""
 
 # küratörlü mahalle bulguları (tur karnesinden)
+# 31.08 — BU SÖZLÜKTEKİ RAKAMLAR SİLİNDİ. Denetimde 10'u tabloyla çelişik
+# çıktı (tunahan "organik 9" → 10; seker "kutuda 3" → kutuda yok; devlet
+# "12 sorguda görünmez" → 9; seyh-samil "9 sorguda mahalle sayfamız" → 13 …)
+# ve iki mahalle birden "en güçlü" ilan edilmişti. Sayılar aynı satırda tablo
+# tarafından CANLI basılıyor; metinde ikinci kez yazılmaları yalnız çelişki
+# üretiyordu. Burada artık sadece ölçüyle değişmeyen YORUM durur — hangi
+# mahallede hangi yapısal sorun var. Sayı gerekiyorsa f-string ile basılır.
 BULGULAR = {
-    "seyh-samil": "Mahalle sayfası kanibalizasyonunun merkezi: 9 sorguda site yerine mahalle sayfamız çıkıyor. Yapısal adaş yoğunluğu da en yüksek burada (Umut 19 Emlak, Onur Emlak, Nisan Emlak, Turkuaz Mahallesi). 3. Etap sorgusu 6→4 iyileşti ve harita kutusuna girdi.",
-    "yavuz-selim": "Ada sayfası kanibalizasyonunun merkezi: 7 sorguda site yerine ada sayfamız çıkıyor (Erkaraca, Genç Avrasya, Keyfim, Utku, Uyum 90, Yunuskent, Yükselen). Mahalle sorgusunda organik 4 + kutu 2 ile ölçülen en iyi mahalle sorgularından.",
-    "sehit-osman-avci": "Eryaman'ın en büyük ikinci bayat yığını (29 sayfa, 4.083 gösterim). 11 sorguda görünmez — çoğu güçlü adaş (İçtaş Holding, Soyak GYO, Çamlık/Çiçek ofisleri).",
-    "seker": "Küçük ama derli toplu mahalle; en büyük kayıp Zirve Loft ve İzoser (ikisi de adaşsız görünmez). Mahalle sorgusunda organikte yokuz, kutuda 3.",
-    "yesilova": "EN GÜÇLÜ MAHALLE: 22 sorgunun 20'si ilk 3'te, ilk 10 dışı hiç yok. Zayıflık eski slug kalıntıları (may-tower, green-place, koçaklar). Mahalle sorgusunda ne organik ne kutu var.",
-    "tunahan": "En güçlü mahalle; 21 sayfası taze. Mahalle sorgusunda organik 9 ama harita kutusu 1.",
-    "altay": "Site sorgularında güçlü; mahalle sorgusunda organikte yokuz, kutu 1. taşıyor.",
-    "devlet": "12 sorguda ilk 10'da yokuz (adaşsız görünmezler: Mavi Köy, Sedirkent, Selçuklu — istek sırada).",
-    "eryaman": "Organikte en dengeli mahalle; mahalle sorgusunda #4'ü ana sayfa karşılıyor (bilinen yamyamlık).",
-    "goksu": "En zayıf karne + EN BÜYÜK bayat yığın (36 sayfa, 4.410 gösterim talebi). Harita kutusunda YOKUZ.",
-    "guzelkent": "23 dizinsiz sayfayla en büyük dizinsiz yığın; 8 sorguda ada, 9'unda komşu site bizi temsil ediyor. Mahalle sorgusunda çift kayıp: ne organikte ne kutuda.",
+    "seyh-samil": "Mahalle sayfası kanibalizasyonunun merkezi: site adı aranınca sık sık mahalle sayfamız çıkıyor. Yapısal adaş yoğunluğu da en yüksek burada (Umut 19 Emlak, Onur Emlak, Nisan Emlak, Turkuaz Mahallesi).",
+    "yavuz-selim": "Ada sayfası kanibalizasyonunun ikinci merkezi (Erkaraca, Genç Avrasya, Keyfim, Utku, Uyum 90, Yunuskent, Yükselen, Karköy Villaları). Mahalle sorgusunda hem organikte hem harita kutusunda varız.",
+    "sehit-osman-avci": "Büyük bir bayat yığını var; görünmeyenlerin çoğu güçlü adaş taşıyor (İçtaş Holding, Soyak GYO, Çamlık/Çiçek ofisleri). Mahalle sorgusunda organikte en iyi sıramız burada ama harita kutusunda yokuz.",
+    "seker": "Küçük ama derli toplu mahalle; en büyük kayıp Zirve Loft ve İzoser (ikisi de adaşsız görünmez). Mahalle sorgusunda ne organikte ne kutudayız — kutu çıkıyor ama içinde rakipler var.",
+    "yesilova": "Site sorgularında en yüksek ilk-3 oranı. Zayıflığı eski slug kalıntıları (may-tower, green-place, koçaklar). Mahalle sorgusunda harita kutusu HİÇ çıkmıyor, o yüzden yorum emeği burada karşılık bulmaz.",
+    "tunahan": "Dizinsiz sayfası olmayan tek mahalle ve sayfalarının çoğu taze taranmış. Mahalle sorgusunda organikte sondayız ama harita kutusundayız.",
+    "altay": "Site sorgularında güçlü; mahalle sorgusunda organikte yokuz, bizi harita kutusu taşıyor.",
+    "devlet": "Görünmeyenlerin çoğu adaşsız (Mavi Köy, Sedirkent, Selçuklu) — yani sorun rekabet değil dizin/tarama. Mahalle sorgusunda organikte yokuz, kutu taşıyor.",
+    "eryaman": "Organikte en dengeli mahalle; mahalle sorgusunda sırayı ana sayfa karşılıyor (bilinen yamyamlık).",
+    "goksu": "En zayıf karne, en büyük bayat yığın ve ada kanibalizasyonunun merkezi. Mahalle sorgusunda ne organikte ne kutuda varız.",
+    "guzelkent": "En büyük dizinsiz yığın burada; site adı aranınca sık sık ada ya da komşu site sayfamız çıkıyor. Eski adres kalıntısı da en çok bu mahallede. Mahalle sorgusunda çift kayıp.",
 }
 
 # ---------------- html ----------------
@@ -480,12 +487,28 @@ _SINIF_AD = {"biz": "Şirin Gayrimenkul", "portal": "İlan portalları",
              "dizin": "bilgiemlak dizini", "yerel": "Yerel emlak ofisleri",
              "sosyal": "Sosyal / harita"}
 rakip_toplam = RAKIP_TOPLAM
+# 31.08: her sınıf bağımsız round() ediliyordu ve yüzdeler %101'e topluyordu
+# (26+59+8+7+1). En büyük artık yöntemi: taban paylar aşağı yuvarlanır, artan
+# puan en büyük ondalık artığı olanlara verilir — toplam her zaman 100.
+def _yuzde_dagit(sayilar, toplam):
+    if not toplam:
+        return {k: 0 for k in sayilar}
+    ham = {k: 100 * v / toplam for k, v in sayilar.items()}
+    pay = {k: int(v) for k, v in ham.items()}
+    kalan = 100 - sum(pay.values())
+    for k in sorted(ham, key=lambda x: -(ham[x] - int(ham[x])))[:max(0, kalan)]:
+        pay[k] += 1
+    return pay
+
+_RAKIP_PAY = _yuzde_dagit({k: RAKIP_SINIF.get(k, 0)
+                           for k in ("biz", "portal", "dizin", "yerel", "sosyal")},
+                          RAKIP_TOPLAM)
 birinci_html = ""
 for k in ("biz", "portal", "dizin", "yerel", "sosyal"):
     n = RAKIP_SINIF.get(k, 0)
     if not n:
         continue
-    p = round(100 * n / RAKIP_TOPLAM) if RAKIP_TOPLAM else 0
+    p = _RAKIP_PAY.get(k, 0)
     cls = "iyi" if k == "biz" else ("kotu" if k == "portal" else "orta")
     birinci_html += (f'<li><span>{_SINIF_AD[k]}</span>'
                      f'<span><span class="chip {cls}">{n} sorgu · %{p}</span></span></li>')
@@ -671,9 +694,36 @@ for key, ad, dosya in TURLAR:
 
 # 31.08: bu rakamlar ELLE yazılıydı ("25 sorguda ada, 20 sorguda mahalle") ve
 # ölçümle tutmuyordu — betiğin kendi kuralı "elle rakam girilmez" diyor.
-_ada_v = [r for r in son.values() if "/adalar/" in (r.get("u") or "")]
-_mah_v = [r for r in son.values()
-          if _re.fullmatch(r"/mahalleler/[^/]+/?", (r.get("u") or "") or "x") is not None]
+#
+# İKİNCİ DÜZELTME (aynı gün, denetim turu buldu): ilk sürüm son.values()
+# üzerinden sayıyordu, yani ölçüm TARİHÇESİNİN tamamı — içinde 27.08'de
+# siteden kaldırılan Yenimahalle sayfaları da vardı (9 ada + 3 mahalle) ve
+# Eryaman anlatısının içinde duruyorlardı. Ayrıca "u" alanı cite: kırıntısı
+# olan kayıtlar hiçbir süzgece takılmıyordu. İkisi de düzeltildi: evren
+# güncel kuyruk (504), cite: kayıtları da sınıflanıyor.
+_KUYRUK_S = {r["s"] for r in json.load(open("kuyruk-site-emlakci.json"))}
+_evren = [r for r in son.values() if r["s"] in _KUYRUK_S]
+
+def _u_ada(u):
+    return "/adalar/" in u or "› adalar" in u
+
+def _u_mahalle(u):
+    if _re.fullmatch(r"/mahalleler/[^/]+/?", u):
+        return True
+    # cite: kırıntısı — "siringayrimenkul.com › mahalleler › goksu-mahallesi".
+    # DİKKAT: kesik kayıtlar da üç parçalı görünür ("… › mahalleler › elit-y...")
+    # ama aslında SİTE sayfasını gösterirler; kesikse sayılmaz. Ayrıca son
+    # parça gerçekten bir mahalle adı olmalı.
+    if u.startswith("cite:") and "› adalar" not in u:
+        if u.rstrip().endswith("...") or "…" in u:
+            return False
+        _p = [x.strip() for x in u.split("›")]
+        return (len(_p) == 3 and _p[1].lower().startswith("mahalleler")
+                and _p[2].lower().replace(" ", "-") in MAH_AD)
+    return False
+
+_ada_v = [r for r in _evren if _u_ada(r.get("u") or "")]
+_mah_v = [r for r in _evren if _u_mahalle(r.get("u") or "")]
 _ada_m = _C(r["s"].split("/")[0] for r in _ada_v)
 _mah_m = _C(r["s"].split("/")[0] for r in _mah_v)
 def _enyogun(c):
@@ -685,6 +735,43 @@ yamyam_cumle = (
     f"{len(_ada_v)} sorguda site yerine ada sayfamız (en yoğunu {_enyogun(_ada_m)}), "
     f"{len(_mah_v)} sorguda mahalle sayfamız (en yoğunu {_enyogun(_mah_m)}) listeleniyor. "
     f"Sıra tutuluyor ama site adını arayan kişiye yanlış sayfa açılıyor.")
+
+# --- ZAYIF HALKALAR: elle yazılıydı, dört iddiası da tabloyla çelişiyordu ----
+# 31.08 denetimi: "5 mahallede ilk 10'a giremiyoruz" gerçekte 6 (Göksu eksikti,
+# 28.08'de 7.'ydi, 31.08'de düştü); "bu sorgularda bizi harita kutusu taşıyor"
+# 6'nın yalnız 2'sinde doğru; "üç mahallede kutu da yok" gerçekte 6.
+# Bu blok GBP yorum kampanyasında hangi mahallenin adının geçeceğini
+# belirliyor — yanlış olması doğrudan iş kaybı, o yüzden artık veriden üretilir.
+_mq = {k: (v.get("mahq") or {}) for k, v in OLCULEN.items()}
+_ORG_YOK = sorted(k for k, m in _mq.items() if not m.get("sira"))
+_KUTU_YOK = sorted(k for k, m in _mq.items() if not m.get("h"))
+_CIFT_KAYIP = sorted(set(_ORG_YOK) & set(_KUTU_YOK))
+# Kutu HİÇ çıkmayan sorgu (hl boş) ile kutu var ama biz içinde değiliz farkı
+# kritik: birincisinde yorum emeği karşılık bulmaz, kutu zaten render edilmiyor.
+_KUTU_HIC = sorted(k for k in _CIFT_KAYIP if not (_mq[k].get("hl") or []))
+_KUTU_RAKIP = [k for k in _CIFT_KAYIP if k not in _KUTU_HIC]
+# OLCULEN kısa anahtar ("goksu"), MAH_AD uzun anahtar ("goksu-mahallesi") kullanıyor;
+# doğrudan arama slug basıyordu.
+_ADI = lambda k: MAH_AD.get(f"{k}-mahallesi", MAH_AD.get(k, k))
+_ad = lambda ks: ", ".join(_ADI(k) for k in ks)
+_ORG_VAR = sorted((k for k, m in _mq.items() if m.get("sira")), key=lambda k: _mq[k]["sira"])
+# ESKİ ADRES KALINTILARI — "20'den fazla" elle yazılıydı, gerçekte iki katı.
+# İki sınıf ayrılır: sayfanın KENDİ taşınma öncesi adresi (301 sindirme işi
+# bunları çözer) ve başka bir sayfamızın kısa adresi (onlara 301 bir şey
+# kazandırmaz). Karışık sayılırsa işin boyutu yanlış tahmin edilir.
+_eski_kendi, _eski_baska = [], []
+for r in _evren:
+    u = r.get("u") or ""
+    m = _re.match(r"/mahalleler/([^/]+)/(.+)$", u)
+    if not m or m.group(1).endswith("-mahallesi"):
+        continue
+    (_eski_kendi if m.group(2).rstrip("/") == r["s"].split("/")[1] else _eski_baska).append(r)
+_eski_mah = _C(r["s"].split("/")[0] for r in _eski_kendi)
+_eski_ilk = ", ".join(f"{_ADI(k.replace('-mahallesi',''))} {v}" for k, v in _eski_mah.most_common(3))
+
+_eniyi = ", ".join(
+    f"{_ADI(k)} ({_mq[k]['sira']}." + (" + harita kutusu" if _mq[k].get("h") else "") + ")"
+    for k in _ORG_VAR[:2])
 
 siradaki_html = "".join(
     f'<li><span><strong>{esc(a["site"])}</strong> '
@@ -1142,16 +1229,21 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="pano zayif">
       <h3>Zayıf halkalar</h3>
       <ul>
-        <li><strong>Mahalle sorgularının organiği.</strong> 11 mahallenin 5′inde “… mahallesi emlakçı”
-        aramasında ilk 10′a giremiyoruz (Altay, Devlet, Güzelkent, Şeker, Yeşilova);
-        bu sorgularda bizi harita kutusu taşıyor. En iyileri Yavuz Selim (organik 4 + kutu 2) ve Şeyh Şamil (organik 4).</li>
-        <li><strong>Üç mahallede harita kutusu da yok.</strong> Göksu, Güzelkent ve Yeşilova′da ne organikte ne kutudayız —
-        yorum kampanyasında mahalle adı geçirme önceliği bu üçü.</li>
+        <li><strong>Mahalle sorgularının organiği.</strong> {len(OLCULEN)} mahallenin
+        {len(_ORG_YOK)}′inde “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz
+        ({_ad(_ORG_YOK)}). Bunların yalnız {len(set(_ORG_YOK) - set(_KUTU_YOK))}′inde harita
+        kutusu bizi taşıyor. En iyiler: {_eniyi}.</li>
+        <li><strong>Ne organikte ne kutuda: {len(_CIFT_KAYIP)} mahalle.</strong> {_ad(_CIFT_KAYIP)}.
+        Yorum kampanyasında mahalle adı geçirme önceliği bunlar — <strong>ama
+        {_ad(_KUTU_HIC)}</strong> hariç: o sorguda harita kutusu hiç çıkmıyor, yorum emeği
+        karşılık bulmaz. Kutu var ama biz içinde değiliz: {_ad(_KUTU_RAKIP)}.</li>
         <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083)
         en büyük iki tazeleme borcu; ikisi de damla sırasının başında.</li>
         <li><strong>Kendi sayfalarımız birbirinin önüne geçiyor.</strong> {yamyam_cumle}</li>
-        <li><strong>Eski adres kalıntıları.</strong> 20′den fazla sorguda hâlâ taşınmadan önceki sayfa adresi listeleniyor
-        (Yeşilova′da may-tower, green-place, koçaklar; Şeker′de relax-line; ŞOA′da address-göksu, ardıç).</li>
+        <li><strong>Eski adres kalıntıları.</strong> {len(_eski_kendi)} sorguda sayfanın
+        kendi taşınma öncesi adresi listeleniyor — 301 sindirme işi tam olarak bunları çözer.
+        En yoğun: {_eski_ilk}. Ayrıca {len(_eski_baska)} sorguda başka bir sayfamızın kısa
+        adresi çıkıyor; onlara 301 bir şey kazandırmaz, ayrı iş.</li>
       </ul>
     </div>
     <div class="pano">
@@ -1174,7 +1266,8 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="alt" style="margin-top:8px">{isgal_ozet}</p>
 
   <h2>Kimlerle yarışıyoruz</h2>
-  <p class="not">Bu tur ölçülen {rakip_toplam} sorguda birinci sırayı kimin tuttuğu.
+  <p class="not">İlk 3 kaydı tutulan {rakip_toplam} ölçümde birinci sırayı kimin tuttuğu
+  (her ölçümde ilk 3 alan adı kaydedilmiyor; bu yüzden sayı toplam ölçümden azdır).
   Sonuç net: rakibimiz mahalledeki emlak ofisleri değil, <strong>ilan portalları</strong>.</p>
   <div class="iki">
     <div class="pano">

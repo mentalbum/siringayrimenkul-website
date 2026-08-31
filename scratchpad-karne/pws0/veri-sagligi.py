@@ -96,10 +96,37 @@ def denetle():
             if not onceki or r.get("d", "") >= onceki:
                 son[r["s"]] = r.get("d", "")
     hic = sorted(kuyruk - set(son))
-    ekle("Hiç ölçülmemiş sayfa", len(hic),
-         "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa. Karnedeki "
-         "oranların paydasında yoklar — yani karne bilmediğini iyi sanabilir.",
+    ekle("Kuyrukta olup ölçülmemiş", len(hic),
+         "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa.",
          hic[:4])
+
+    # 31.08 — DENETİMİN KÖR NOKTASI: yukarıdaki kontrolün paydası kuyruğun
+    # KENDİSİ olduğu için envanteri hiç göremiyordu ve hep "temiz" diyordu.
+    # Oysa content/siteler'de 522 kayıt var, kuyrukta 504. Farkın bir kısmı
+    # meşru (adaşlar kuyruğun "es" alanında aynı sorguyu paylaşıyor), kalanı
+    # gerçek boşluk: o sayfaların sırası HİÇ bilinmiyor ama karne %100 kapsama
+    # iddia ediyor. Kök neden iki desen: (1) Yenimahalle kaldırılınca birincil
+    # sorgusu giden Eryaman ikizleri öksüz kaldı, (2) kuyruk donduktan sonra
+    # eklenen sayfalar. Mahalle çıkarılırken "es" ikizleri birincile terfi etmeli.
+    envanter = set()
+    for dp, _dn, fn in os.walk(ICERIK):
+        for f in fn:
+            if f.endswith(".json"):
+                envanter.add(f"{os.path.basename(dp)}/{f[:-5]}")
+    es_kapsam = set()
+    try:
+        for r in json.load(open(os.path.join(KOK, "kuyruk-site-emlakci.json"))):
+            for e in (r.get("es") or []):
+                es_kapsam.add(e)
+    except Exception:
+        pass
+    disarida = sorted(envanter - kuyruk - es_kapsam
+                      - {s_ for s_ in envanter if s_.split("/")[0] in YM})
+    ekle("Envanterde var, kuyrukta YOK", len(disarida),
+         "Sitede sayfası olan ama ölçüm kuyruğunda hiç yer almayan kayıt — adaş "
+         "paylaşımı da hesaba katıldı. Bu sayfaların sırası hiç bilinmiyor, yani "
+         "karnenin kapsama iddiası olduğundan iyi görünüyor.",
+         disarida[:5], agir=True)
 
     yas = collections.Counter()
     bugun_d = datetime.date.fromisoformat(BUGUN)
@@ -129,6 +156,35 @@ def denetle():
          "hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, "
          "bu yüzden daha küçüktür.",
          [f"{r['s']} ({r['d']})" for r in kirinti[:4]])
+
+    # 6c) KARNE METNİNDE ÇIPLAK RAKAM. karne-html.py'nin kendi docstring'i
+    # "elle rakam girilmez" diyor, karne de kendi hakkında "her rakam ölçüm
+    # dosyalarından üretiliyor" yazıyor. 31.08 denetimi bu iddiayı yalanlayan
+    # 14 rakam buldu (zayıf halkalar + BULGULAR sözlüğü) ve hepsi tabloyla
+    # çelişiyordu. Bu denetim olmadan aynı çelişki bir sonraki turda geri gelir.
+    import re as _re2
+    kh = os.path.join(KOK, "karne-html.py")
+    ciplak = []
+    if os.path.exists(kh):
+        icinde_bulgular = False
+        for no, satir in enumerate(open(kh), 1):
+            if satir.startswith("BULGULAR"):
+                icinde_bulgular = True
+            elif icinde_bulgular and satir.startswith("}"):
+                icinde_bulgular = False
+            if not (icinde_bulgular or "<li>" in satir or "<p class" in satir):
+                continue
+            if satir.lstrip().startswith("#"):
+                continue
+            # f-string ifadesi olmayan, metnin içinde duran sayı
+            metin = _re2.sub(r"\{[^}]*\}", "", satir)
+            if _re2.search(r"(?<![\w#-])\d{1,4}(?:\.\d{3})*(?![\w%.-])", metin):
+                ciplak.append(f"satır {no}: {satir.strip()[:70]}")
+    ekle("Karne metninde elle yazılmış rakam", len(ciplak),
+         "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor "
+         "ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam "
+         "31.08'de tam olarak böyle oluşmuştu.",
+         ciplak[:4])
 
     # 7) GÜRÜLTÜ TABANI — bir sıra değişimi ne zaman anlamlı?
     # Karne "yükselen/düşen" gösteriyor ama her hareket gerçek değil. Kısa aralıkla

@@ -450,6 +450,11 @@
   "es": []
  },
  {
+  "q": "Çiğdem Sitesi emlakçı",
+  "s": "eryaman-mahallesi/cigdem-sitesi",
+  "es": []
+ },
+ {
   "q": "Cumhuriyet Sitesi emlakçı",
   "s": "eryaman-mahallesi/cumhuriyet-sitesi",
   "es": [
@@ -834,6 +839,11 @@
   "es": []
  },
  {
+  "q": "Mutlu Sitesi emlakçı",
+  "s": "goksu-mahallesi/mutlu-sitesi",
+  "es": []
+ },
+ {
   "q": "Oyak Göksupark emlakçı",
   "s": "goksu-mahallesi/oyak-goksupark",
   "es": []
@@ -909,13 +919,13 @@
   "es": []
  },
  {
-  "q": "Uzunali Göksu Konutları 2 emlakçı",
-  "s": "goksu-mahallesi/uzunali-goksu-konutlari-2",
+  "q": "Uzunali Göksu Konutları emlakçı",
+  "s": "goksu-mahallesi/uzunali-goksu-konutlari",
   "es": []
  },
  {
-  "q": "Uzunali Göksu Konutları emlakçı",
-  "s": "goksu-mahallesi/uzunali-goksu-konutlari",
+  "q": "Uzunali Göksu Konutları 2 emlakçı",
+  "s": "goksu-mahallesi/uzunali-goksu-konutlari-2",
   "es": []
  },
  {
@@ -1099,6 +1109,11 @@
   "es": []
  },
  {
+  "q": "Göksu Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/goksu-sitesi",
+  "es": []
+ },
+ {
   "q": "Gördoğu Şen Sitesi emlakçı",
   "s": "guzelkent-mahallesi/gordogu-sen-sitesi",
   "es": []
@@ -1240,13 +1255,13 @@
   "es": []
  },
  {
-  "q": "Portakal Çiçeği 2. Sitesi emlakçı",
-  "s": "guzelkent-mahallesi/portakal-cicegi-2-sitesi",
+  "q": "Portakal Çiçeği emlakçı",
+  "s": "guzelkent-mahallesi/portakal-cicegi",
   "es": []
  },
  {
-  "q": "Portakal Çiçeği emlakçı",
-  "s": "guzelkent-mahallesi/portakal-cicegi",
+  "q": "Portakal Çiçeği 2. Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/portakal-cicegi-2-sitesi",
   "es": []
  },
  {
@@ -1277,6 +1292,11 @@
  {
   "q": "Şehit Ferhat Koç Sitesi emlakçı",
   "s": "guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
+  "es": []
+ },
+ {
+  "q": "Şelale Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/selale-sitesi",
   "es": []
  },
  {
@@ -1352,6 +1372,11 @@
  {
   "q": "Ahikent Sitesi emlakçı",
   "s": "sehit-osman-avci-mahallesi/ahikent-sitesi",
+  "es": []
+ },
+ {
+  "q": "Akasya Sitesi emlakçı",
+  "s": "sehit-osman-avci-mahallesi/akasya-sitesi",
   "es": []
  },
  {
@@ -1547,6 +1572,16 @@
  {
   "q": "Koz Modern emlakçı",
   "s": "sehit-osman-avci-mahallesi/koz-modern",
+  "es": []
+ },
+ {
+  "q": "Kutlutaş 1 Blokları emlakçı",
+  "s": "sehit-osman-avci-mahallesi/kutlutas-1-bloklari",
+  "es": []
+ },
+ {
+  "q": "Kutlutaş 2 Blokları emlakçı",
+  "s": "sehit-osman-avci-mahallesi/kutlutas-2-bloklari",
   "es": []
  },
  {
