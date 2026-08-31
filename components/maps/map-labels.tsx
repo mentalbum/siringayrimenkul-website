@@ -92,11 +92,26 @@ export function MapLabels({ labels }: { labels: MapLabelDef[] }) {
     };
 
     applyZoom();
-    const listener = map.addListener("zoom_changed", applyZoom);
+    // Maps kimlik doğrulaması başarısız olduğunda (yetkisiz referrer, kota,
+    // fatura) API'nin nesneleri sağlam dinleyici döndürmüyor: addListener
+    // undefined dönebiliyor. Tür bunu söylemediği için burada elle daraltıyoruz.
+    const listener: google.maps.MapsEventListener | undefined = map.addListener(
+      "zoom_changed",
+      applyZoom
+    );
 
     return () => {
-      listener.remove();
-      entries.forEach(({ marker }) => marker.setMap(null));
+      // Temizlik hiçbir koşulda patlamamalı. Sökülme sırasında fırlayan hata
+      // en yakın hata sınırına değil kök hata ekranına kadar çıkabiliyor —
+      // yani bozuk bir harita sayfanın tamamını götürüyor (18.08, yerelde
+      // RefererNotAllowedMapError ile ölçüldü: "Cannot read properties of
+      // undefined (reading 'remove')" site sayfasını komple düşürdü).
+      try {
+        listener?.remove();
+        for (const { marker } of entries) marker.setMap(null);
+      } catch (hata) {
+        console.warn("Harita etiketleri temizlenemedi", hata);
+      }
     };
   }, [map, labels]);
 
