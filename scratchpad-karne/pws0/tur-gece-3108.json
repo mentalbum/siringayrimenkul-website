@@ -1,0 +1,148 @@
+[
+ {
+  "q": "Sarı Çınar Sitesi emlakçı",
+  "s": "tunahan-mahallesi/sari-cinar-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Sar%C4%B1%20%C3%87%C4%B1nar%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "istek-yansıma"
+ },
+ {
+  "q": "Eylül Sitesi emlakçı",
+  "s": "yavuz-selim-mahallesi/eylul-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Eyl%C3%BCl%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 141
+ },
+ {
+  "q": "Gökkuşağı Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/gokkusagi-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6kku%C5%9Fa%C4%9F%C4%B1%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 56
+ },
+ {
+  "q": "Eylül Evleri emlakçı",
+  "s": "yavuz-selim-mahallesi/eylul-evleri",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Eyl%C3%BCl%20Evleri%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 51
+ },
+ {
+  "q": "Angora Sitesi emlakçı",
+  "s": "goksu-mahallesi/angora-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Angora%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 41
+ },
+ {
+  "q": "Güneyce Sitesi emlakçı",
+  "s": "devlet-mahallesi/guneyce-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%BCneyce%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 30
+ },
+ {
+  "q": "Merkez Sitesi emlakçı",
+  "s": "goksu-mahallesi/merkez-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Merkez%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 30
+ },
+ {
+  "q": "Referans Ankara emlakçı",
+  "s": "devlet-mahallesi/referans-ankara",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Referans%20Ankara%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 25
+ },
+ {
+  "q": "Maximum Konutları emlakçı",
+  "s": "eryaman-mahallesi/maximum-konutlari",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Maximum%20Konutlar%C4%B1%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 25
+ },
+ {
+  "q": "Atatürk Sitesi emlakçı",
+  "s": "altay-mahallesi/ataturk-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Atat%C3%BCrk%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 24
+ },
+ {
+  "q": "Yeni Huzur Bahçesi Sitesi emlakçı",
+  "s": "devlet-mahallesi/yeni-huzur-bahcesi-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Yeni%20Huzur%20Bah%C3%A7esi%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 24
+ },
+ {
+  "q": "Yüceyurt Sitesi emlakçı",
+  "s": "devlet-mahallesi/yuceyurt-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Y%C3%BCceyurt%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 23
+ },
+ {
+  "q": "Işıkkent Sitesi emlakçı",
+  "s": "eryaman-mahallesi/isikkent-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=I%C5%9F%C4%B1kkent%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 23
+ },
+ {
+  "q": "Türk Konut Çalışanlar Sitesi emlakçı",
+  "s": "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=T%C3%BCrk%20Konut%20%C3%87al%C4%B1%C5%9Fanlar%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 23
+ },
+ {
+  "q": "Çamlık Sitesi emlakçı",
+  "s": "sehit-osman-avci-mahallesi/camlik-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=%C3%87aml%C4%B1k%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 22
+ },
+ {
+  "q": "Göksu Evleri Sitesi emlakçı",
+  "s": "goksu-mahallesi/goksu-evleri-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6ksu%20Evleri%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 21
+ },
+ {
+  "q": "İlk Bahar Sitesi emlakçı",
+  "s": "devlet-mahallesi/ilk-bahar-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=%C4%B0lk%20Bahar%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 20
+ },
+ {
+  "q": "Hekimler Ve Sağlıkçılar Sitesi emlakçı",
+  "s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Hekimler%20Ve%20Sa%C4%9Fl%C4%B1k%C3%A7%C4%B1lar%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 14
+ },
+ {
+  "q": "Esenkent Sitesi emlakçı",
+  "s": "yavuz-selim-mahallesi/esenkent-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Esenkent%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 13
+ },
+ {
+  "q": "Göksu Sitesi emlakçı",
+  "s": "yavuz-selim-mahallesi/goksu-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6ksu%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 11
+ },
+ {
+  "q": "Tunahan Sitesi emlakçı",
+  "s": "tunahan-mahallesi/tunahan-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Tunahan%20Sitesi%20emlak%C3%A7%C4%B1",
+  "tip": "görünmez-teyit",
+  "gos": 10
+ }
+]

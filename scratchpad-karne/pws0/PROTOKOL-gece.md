@@ -447,3 +447,15 @@ SIRADA (uygulanmadı, gerekçeleriyle):
   düşmesin" kuralı gereği tek seferde değil, ölçerek yapılmalı.
 - Karneye tıklama/CTR şeridi: GSC'de gösterim ikiye katlanırken TIK 685→604
   gerilemiş — karne bunu göremiyor. En değerli karne geliştirmesi bu.
+
+> 31.08 (gece turu, 02:23 cron): 17 yeniden ölçüm, gizli pencere, 0 CAPTCHA.
+> 1) İSTEK YANSIMASI: son 7 günün 26 isteğinden 25'i gün içinde zaten ölçülmüştü;
+>    kalan sari-cinar #2'de korunuyor (27.08 isteği, taze başlık, işgal 2).
+> 2) GÖRÜNMEZ TEYİDİ (16 sorgu): 2'si görünmezlikten ÇIKTI ama YANLIŞ URL ile —
+>    eylul-evleri 0→7 (ada 19528/1 temsil), yeni-huzur-bahcesi 0→3 (ada 18677/1,
+>    işgal 2). İkisi de A SINIFINA geçti: slot kazanılmış, doğru sayfa lazım.
+>    14'ü hâlâ görünmez; bunların çoğu YAPISAL adaş (Atatürk/Merkez/Referans
+>    Ankara/Maximum/Türkkonut/Işıkkent = ülke geneli yaygın adlar) → damla
+>    listesinden düşürülmeli, kota beklentisi düşük.
+> KANAL NOTU: gizli pencere sekmesi oturum kapanınca yenilendi; birleşik
+> çıkarıcı (cite → href yedeği) yazıldı, iki kanalda da çalışıyor.

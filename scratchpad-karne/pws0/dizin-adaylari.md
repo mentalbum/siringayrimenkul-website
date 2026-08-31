@@ -7,7 +7,7 @@ Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıld
 **Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve
 SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
-**200 aday · 26 istek gönderilmiş bekliyor · 71 dizinsiz (kota dışı)**
+**203 aday · 26 istek gönderilmiş bekliyor · 71 dizinsiz (kota dışı)**
 
 ## Öncelik sırası (görünmez → temsil edilen → eski slug → eski başlık)
 
@@ -23,38 +23,38 @@ SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 | 8 | `beyaz-residence` | Eryaman | GÖRÜNMEZ | yok | 60 | 2026-07-27 |
 | 9 | `gokkusagi-sitesi` | Güzelkent | GÖRÜNMEZ | yok | 56 | 2026-08-15 |
 | 10 | `nisan-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 53 | 2026-07-26 |
-| 11 | `eylul-evleri` | Yavuz Selim | GÖRÜNMEZ | yok | 51 | 2026-07-26 |
-| 12 | `angora-sitesi` | Göksu | GÖRÜNMEZ | yok | 41 | 2026-08-11 |
-| 13 | `turkuaz-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 35 | 2026-07-26 |
-| 14 | `guneyce-sitesi` | Devlet | GÖRÜNMEZ | yok | 30 | 2026-07-26 |
-| 15 | `merkez-sitesi` | Göksu | GÖRÜNMEZ | yok | 30 | 2026-07-26 |
-| 16 | `referans-ankara` | Devlet | GÖRÜNMEZ | yok | 25 | 2026-08-05 |
-| 17 | `maximum-konutlari` | Eryaman | GÖRÜNMEZ | yok | 25 | 2026-07-27 |
-| 18 | `ataturk-sitesi` | Altay | GÖRÜNMEZ | yok | 24 | 2026-07-26 |
-| 19 | `baris-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 24 | 2026-08-03 |
-| 20 | `yeni-huzur-bahcesi-sitesi` | Devlet | GÖRÜNMEZ | yok | 24 | 2026-07-26 |
-| 21 | `yuceyurt-sitesi` | Devlet | GÖRÜNMEZ | yok | 23 | 2026-07-30 |
-| 22 | `isikkent-sitesi` | Eryaman | GÖRÜNMEZ | yok | 23 | 2026-07-26 |
-| 23 | `turk-konut-calisanlar-sitesi` | Eryaman | GÖRÜNMEZ | yok | 23 | 2026-07-27 |
-| 24 | `camlik-sitesi` | Şehit Osman Avcı | GÖRÜNMEZ | yok | 22 | 2026-07-26 |
-| 25 | `goksu-evleri-sitesi` | Göksu | GÖRÜNMEZ | yok | 21 | 2026-07-26 |
-| 26 | `ilk-bahar-sitesi` | Devlet | GÖRÜNMEZ | yok | 20 | 2026-07-29 |
-| 27 | `umut-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 14 | 2026-08-11 |
-| 28 | `hekimler-ve-saglikcilar-sitesi` | Göksu | GÖRÜNMEZ | yok | 14 | 2026-08-02 |
-| 29 | `esenkent-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 13 | 2026-07-29 |
-| 30 | `konut-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 12 | 2026-07-26 |
-| 31 | `goksu-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 11 | 2026-08-07 |
-| 32 | `tunahan-sitesi` | Tunahan | GÖRÜNMEZ | yok | 10 | 2026-07-26 |
-| 33 | `havacilar-sitesi` | Göksu | GÖRÜNMEZ | yok | 9 | 2026-07-26 |
-| 34 | `ak-kent-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 8 | 2026-07-26 |
-| 35 | `aksu-sitesi` | Güzelkent | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
-| 36 | `mesa-sitesi` | Güzelkent | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
-| 37 | `ozharitacilar-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
-| 38 | `soyak-sitesi` | Şehit Osman Avcı | GÖRÜNMEZ | yok | 7 | 2026-08-17 |
-| 39 | `ilksebat-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 6 | 2026-07-26 |
-| 40 | `toki-konutlari` | Eryaman | GÖRÜNMEZ | yok | 6 | 2026-08-07 |
-| 41 | `sitekonut-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 4 | 2026-07-26 |
-| 42 | `kervan-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 0 | - |
+| 11 | `angora-sitesi` | Göksu | GÖRÜNMEZ | yok | 41 | 2026-08-11 |
+| 12 | `turkuaz-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 35 | 2026-07-26 |
+| 13 | `guneyce-sitesi` | Devlet | GÖRÜNMEZ | yok | 30 | 2026-07-26 |
+| 14 | `merkez-sitesi` | Göksu | GÖRÜNMEZ | yok | 30 | 2026-07-26 |
+| 15 | `referans-ankara` | Devlet | GÖRÜNMEZ | yok | 25 | 2026-08-05 |
+| 16 | `maximum-konutlari` | Eryaman | GÖRÜNMEZ | yok | 25 | 2026-07-27 |
+| 17 | `ataturk-sitesi` | Altay | GÖRÜNMEZ | yok | 24 | 2026-07-26 |
+| 18 | `baris-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 24 | 2026-08-03 |
+| 19 | `yuceyurt-sitesi` | Devlet | GÖRÜNMEZ | yok | 23 | 2026-07-30 |
+| 20 | `isikkent-sitesi` | Eryaman | GÖRÜNMEZ | yok | 23 | 2026-07-26 |
+| 21 | `turk-konut-calisanlar-sitesi` | Eryaman | GÖRÜNMEZ | yok | 23 | 2026-07-27 |
+| 22 | `camlik-sitesi` | Şehit Osman Avcı | GÖRÜNMEZ | yok | 22 | 2026-07-26 |
+| 23 | `goksu-evleri-sitesi` | Göksu | GÖRÜNMEZ | yok | 21 | 2026-07-26 |
+| 24 | `ilk-bahar-sitesi` | Devlet | GÖRÜNMEZ | yok | 20 | 2026-07-29 |
+| 25 | `umut-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 14 | 2026-08-11 |
+| 26 | `hekimler-ve-saglikcilar-sitesi` | Göksu | GÖRÜNMEZ | yok | 14 | 2026-08-02 |
+| 27 | `esenkent-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 13 | 2026-07-29 |
+| 28 | `konut-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 12 | 2026-07-26 |
+| 29 | `goksu-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 11 | 2026-08-07 |
+| 30 | `tunahan-sitesi` | Tunahan | GÖRÜNMEZ | yok | 10 | 2026-07-26 |
+| 31 | `havacilar-sitesi` | Göksu | GÖRÜNMEZ | yok | 9 | 2026-07-26 |
+| 32 | `ak-kent-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 8 | 2026-07-26 |
+| 33 | `aksu-sitesi` | Güzelkent | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
+| 34 | `mesa-sitesi` | Güzelkent | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
+| 35 | `ozharitacilar-sitesi` | Yavuz Selim | GÖRÜNMEZ | yok | 7 | 2026-07-26 |
+| 36 | `soyak-sitesi` | Şehit Osman Avcı | GÖRÜNMEZ | yok | 7 | 2026-08-17 |
+| 37 | `ilksebat-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 6 | 2026-07-26 |
+| 38 | `toki-konutlari` | Eryaman | GÖRÜNMEZ | yok | 6 | 2026-08-07 |
+| 39 | `sitekonut-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 4 | 2026-07-26 |
+| 40 | `kervan-sitesi` | Şeyh Şamil | GÖRÜNMEZ | yok | 0 | - |
+| 41 | `merkez-sitesi` | Altay | GÖRÜNMEZ | yok | 0 | - |
+| 42 | `goksu-evleri` | Göksu | GÖRÜNMEZ | yok | 0 | - |
 | 43 | `koz-modern` | Şehit Osman Avcı | komşu sayfa temsil | 3. | 770 | 2026-08-18 |
 | 44 | `alpak-neve-armonia-residence` | Şehit Osman Avcı | ada temsil | 5. | 633 | 2026-07-26 |
 | 45 | `inci-life-residence` | Şehit Osman Avcı | komşu sayfa temsil | 7. | 359 | 2026-07-26 |
@@ -101,124 +101,127 @@ SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 | 86 | `elit-yasam-konutlari-2` | Şehit Osman Avcı | komşu sayfa temsil | 1. | 58 | 2026-08-17 |
 | 87 | `dogankaya-sitesi` | Eryaman | ada temsil | 5. | 54 | 2026-07-27 |
 | 88 | `kent-konaklari-sitesi` | Eryaman | ada temsil | 4. | 54 | 2026-07-27 |
-| 89 | `kazim-sari-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 3. | 51 | 2026-08-08 |
-| 90 | `yukselen-sitesi` | Yavuz Selim | ada temsil | 4. | 50 | 2026-08-11 |
-| 91 | `elif-elvan-sitesi` | Eryaman | ada temsil | 1. | 47 | 2026-08-15 |
-| 92 | `enday-sitesi` | Göksu | mahalle sayfası temsil | 1. | 43 | 2026-07-27 |
-| 93 | `eston-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 5. | 43 | 2026-08-04 |
-| 94 | `taniskent-sitesi` | Şeyh Şamil | komşu sayfa temsil | 5. | 40 | 2026-07-26 |
-| 95 | `goksu-aura-sitesi` | Göksu | mahalle sayfası temsil | 7. | 37 | 2026-07-27 |
-| 96 | `dalgic-residence` | Şehit Osman Avcı | komşu sayfa temsil | 4. | 35 | 2026-07-26 |
-| 97 | `gungorler-tower` | Şehit Osman Avcı | komşu sayfa temsil | 1. | 35 | 2026-08-02 |
-| 98 | `sozova-sitesi` | Devlet | komşu sayfa temsil | 2. | 34 | 2026-07-26 |
-| 99 | `golkent-sitesi` | Göksu | komşu sayfa temsil | 6. | 33 | 2026-07-26 |
-| 100 | `nefeskent-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 3. | 32 | 2026-08-02 |
-| 101 | `durtas-91-sitesi` | Güzelkent | komşu sayfa temsil | 4. | 31 | 2026-07-26 |
-| 102 | `izgi-park-evleri` | Altay | komşu sayfa temsil | 4. | 28 | 2026-08-02 |
-| 103 | `portakal-cicegi` | Güzelkent | komşu sayfa temsil | 4. | 28 | 2026-07-29 |
-| 104 | `dogan-city` | Yeşilova | mahalle sayfası temsil | 6. | 26 | 2026-07-26 |
-| 105 | `hotki-meydan` | Devlet | komşu sayfa temsil | 2. | 25 | 2026-08-01 |
-| 106 | `ovgu-iletisim-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 23 | 2026-07-28 |
-| 107 | `oz-cozum-kent-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 4. | 23 | 2026-07-26 |
-| 108 | `eryaman-evleri` | Eryaman | komşu sayfa temsil | 10. | 22 | 2026-07-26 |
-| 109 | `izo-ser-residence` | Şehit Osman Avcı | komşu sayfa temsil | 1. | 22 | 2026-08-11 |
-| 110 | `sahinbey-sitesi` | Güzelkent | komşu sayfa temsil | 3. | 20 | 2026-07-26 |
-| 111 | `lowland-business` | Yeşilova | mahalle sayfası temsil | 3. | 19 | 2026-07-26 |
-| 112 | `gulenkent-sitesi` | Güzelkent | komşu sayfa temsil | 7. | 18 | 2026-07-26 |
-| 113 | `sahil-sitesi` | Devlet | komşu sayfa temsil | 5. | 17 | 2026-07-27 |
-| 114 | `ilkdogus-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 16 | 2026-07-26 |
-| 115 | `yayikli-4-sitesi` | Güzelkent | komşu sayfa temsil | 5. | 14 | 2026-07-25 |
-| 116 | `uzunbey-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 13 | 2026-07-27 |
-| 117 | `ma1-tower` | Göksu | ada temsil | 2. | 10 | 2026-07-27 |
-| 118 | `yunus-emre-cagdas-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 9 | 2026-07-27 |
-| 119 | `selinkent-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 6 | 2026-07-26 |
-| 120 | `meydan-eryaman` | Göksu | komşu sayfa temsil | 5. | 4 | 2026-08-02 |
-| 121 | `guzel-ev-sitesi` | Yavuz Selim | komşu sayfa temsil | 2. | 0 | 2026-08-03 |
-| 122 | `kur-sitesi-46495-ada` | Tunahan | eski slug | 2. | 115 | 2026-08-09 |
-| 123 | `green-place-residence` | Yeşilova | eski slug | 2. | 93 | 2026-07-26 |
-| 124 | `elit-nar-cicegi` | Yavuz Selim | eski slug | 1. | 84 | 2026-07-27 |
-| 125 | `gozde-91-sitesi` | Güzelkent | eski slug | 3. | 81 | 2026-07-26 |
-| 126 | `akkonak-sitesi` | Güzelkent | eski slug | 1. | 78 | 2026-07-26 |
-| 127 | `bizim-sirinkoy-sitesi` | Yavuz Selim | eski slug | 2. | 51 | 2026-07-26 |
-| 128 | `motto-butik` | Altay | eski slug | 1. | 46 | 2026-07-26 |
-| 129 | `anadolu-sitesi` | Güzelkent | eski slug | 4. | 42 | 2026-07-27 |
-| 130 | `er-ay-3-sitesi` | Güzelkent | eski slug | 3. | 42 | 2026-07-26 |
-| 131 | `guz-gol-sitesi` | Yavuz Selim | eski slug | 1. | 41 | 2026-07-30 |
-| 132 | `kocaklar-tower` | Yeşilova | eski slug | 2. | 34 | 2026-08-07 |
-| 133 | `yesimkent` | Güzelkent | eski slug | 1. | 31 | 2026-07-26 |
-| 134 | `may-tower` | Yeşilova | eski slug | 1. | 30 | 2026-08-12 |
-| 135 | `cagdas-95-sitesi` | Güzelkent | eski slug | 2. | 22 | 2026-07-27 |
-| 136 | `atakent-metro-sitesi` | Eryaman | eski slug | 3. | 20 | 2026-08-11 |
-| 137 | `relax-line` | Şeker | eski slug | 1. | 0 | - |
-| 138 | `bahcen-eryaman-konutlari` | Şeker | eski başlık | 2. | 374 | 2026-08-17 |
-| 139 | `terasevler-eryaman` | Yavuz Selim | eski başlık | 1. | 347 | 2026-07-26 |
-| 140 | `hill-tower` | Şeker | eski başlık | 1. | 295 | 2026-07-31 |
-| 141 | `konum-eryaman` | Göksu | eski başlık | 4. | 262 | 2026-07-26 |
-| 142 | `mesa-bloklari` | Altay | eski başlık | 2. | 262 | 2026-07-27 |
-| 143 | `kasmir-mavi-orkide-sitesi` | Göksu | eski başlık | 5. | 248 | 2026-07-26 |
-| 144 | `oyak-goksupark` | Göksu | eski başlık | 7. | 245 | 2026-07-27 |
-| 145 | `atakent-2-cumhuriyet-sitesi` | Eryaman | eski başlık | 2. | 241 | 2026-07-26 |
-| 146 | `park-mira-evleri` | Göksu | eski başlık | 1. | 233 | 2026-08-17 |
-| 147 | `mil-kooperatifi-sitesi` | Devlet | eski başlık | 1. | 229 | 2026-07-26 |
-| 148 | `oasis-rezidans` | Şeker | eski başlık | 2. | 224 | 2026-07-31 |
-| 149 | `ozdenizyildizi-sitesi` | Devlet | eski başlık | 5. | 217 | 2026-07-26 |
-| 150 | `yeniceri-kule` | Göksu | eski başlık | 2. | 192 | 2026-07-27 |
-| 151 | `yeni-portakal-cicegi-sitesi` | Eryaman | eski başlık | 3. | 155 | 2026-07-26 |
-| 152 | `finest-bloklari` | Göksu | eski başlık | 1. | 151 | 2026-07-26 |
-| 153 | `erkent-sitesi` | Güzelkent | eski başlık | 3. | 142 | 2026-07-26 |
-| 154 | `basak-sitesi` | Eryaman | eski başlık | 3. | 127 | 2026-07-30 |
-| 155 | `su-damlasi-sitesi` | Tunahan | eski başlık | 6. | 122 | 2026-07-29 |
-| 156 | `gulhayat-sitesi` | Devlet | eski başlık | 2. | 116 | 2026-07-27 |
-| 157 | `uzunali-goksu-konutlari-2` | Göksu | eski başlık | 1. | 115 | 2026-08-16 |
-| 158 | `cinar-sitesi` | Devlet | eski başlık | 4. | 114 | 2026-07-29 |
-| 159 | `arya-nuans-residence` | Altay | eski başlık | 6. | 111 | 2026-07-31 |
-| 160 | `asm-golt-sitesi` | Eryaman | eski başlık | 1. | 111 | 2026-08-11 |
-| 161 | `golkent-1-sitesi` | Göksu | eski başlık | 3. | 103 | 2026-07-26 |
-| 162 | `frekans-eryaman` | Altay | eski başlık | 2. | 97 | 2026-07-31 |
-| 163 | `tugce-kent-sitesi` | Şeyh Şamil | eski başlık | 2. | 91 | 2026-07-26 |
-| 164 | `yeni-ilkay-sitesi` | Yavuz Selim | eski başlık | 4. | 89 | 2026-07-26 |
-| 165 | `turgut-aslan-sitesi` | Devlet | eski başlık | 2. | 88 | 2026-07-26 |
-| 166 | `sacak-91-sitesi` | Yavuz Selim | eski başlık | 1. | 87 | 2026-08-02 |
-| 167 | `seyirtepe-baspinar` | Göksu | eski başlık | 2. | 86 | 2026-07-27 |
-| 168 | `metro-yasam-sitesi` | Güzelkent | eski başlık | 2. | 79 | 2026-07-27 |
-| 169 | `kayaevleri-sitesi` | Eryaman | eski başlık | 1. | 73 | 2026-07-26 |
-| 170 | `cozum-kent-sitesi` | Güzelkent | eski başlık | 1. | 70 | 2026-07-26 |
-| 171 | `nazlideniz-sitesi` | Güzelkent | eski başlık | 1. | 70 | 2026-07-26 |
-| 172 | `evrimkent-sitesi` | Güzelkent | eski başlık | 3. | 69 | 2026-07-26 |
-| 173 | `taskent-sitesi` | Yavuz Selim | eski başlık | 2. | 69 | 2026-07-26 |
-| 174 | `betim-sitesi` | Devlet | eski başlık | 3. | 65 | 2026-07-26 |
-| 175 | `pasa-konaklari` | Eryaman | eski başlık | 2. | 60 | 2026-07-26 |
-| 176 | `hassas-cizgi-sitesi` | Eryaman | eski başlık | 3. | 56 | 2026-07-26 |
-| 177 | `goksu-manzara-evleri` | Göksu | eski başlık | 2. | 55 | 2026-07-27 |
-| 178 | `ozle-iletisim-sitesi` | Güzelkent | eski başlık | 3. | 46 | 2026-07-26 |
-| 179 | `mavikent-sitesi` | Devlet | eski başlık | 4. | 46 | 2026-07-26 |
-| 180 | `turkkonut-istas-sitesi` | Devlet | eski başlık | 1. | 46 | 2026-07-26 |
-| 181 | `cabadag-bloklari` | Altay | eski başlık | 1. | 44 | 2026-07-26 |
-| 182 | `gulvatan-sitesi` | Yavuz Selim | eski başlık | 1. | 44 | 2026-07-27 |
-| 183 | `doktorlar-sitesi` | Altay | eski başlık | 3. | 43 | 2026-07-26 |
-| 184 | `ozgun-ipek-sitesi` | Eryaman | eski başlık | 3. | 43 | 2026-07-26 |
-| 185 | `cagdas-sistem-sitesi` | Güzelkent | eski başlık | 4. | 33 | 2026-07-26 |
-| 186 | `ritim-eryaman` | Güzelkent | eski başlık | 1. | 33 | 2026-07-29 |
-| 187 | `yuksel-kent-91-sitesi` | Yavuz Selim | eski başlık | 1. | 32 | 2026-07-26 |
-| 188 | `gunotesi-sitesi` | Eryaman | eski başlık | 2. | 30 | 2026-07-26 |
-| 189 | `korukent-sitesi` | Güzelkent | eski başlık | 3. | 29 | 2026-08-17 |
-| 190 | `palmiye-evleri` | Altay | eski başlık | 1. | 28 | 2026-08-14 |
-| 191 | `akkonaklar-sitesi` | Eryaman | eski başlık | 3. | 28 | 2026-08-01 |
-| 192 | `yayikli-2-sitesi` | Güzelkent | eski başlık | 2. | 27 | 2026-07-26 |
-| 193 | `ozarda-gokturk-sitesi` | Devlet | eski başlık | 2. | 26 | 2026-07-27 |
-| 194 | `ictas-bloklari` | Şeyh Şamil | eski başlık | 2. | 21 | 2026-08-14 |
-| 195 | `baskent-sular-sitesi` | Yavuz Selim | eski başlık | 1. | 20 | 2026-07-27 |
-| 196 | `armina-park-evleri` | Eryaman | eski başlık | 2. | 19 | 2026-08-12 |
-| 197 | `pinarkent-91-sitesi` | Güzelkent | eski başlık | 2. | 18 | 2026-07-26 |
-| 198 | `cayilkay-sitesi` | Devlet | eski başlık | 1. | 13 | 2026-07-26 |
-| 199 | `aknergiz-sitesi` | Güzelkent | eski başlık | 3. | 10 | 2026-07-29 |
-| 200 | `address-enda` | Şeker | eski başlık | 1. | 10 | 2026-08-18 |
+| 89 | `eylul-evleri` | Yavuz Selim | komşu sayfa temsil | 7. | 51 | 2026-07-26 |
+| 90 | `kazim-sari-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 3. | 51 | 2026-08-08 |
+| 91 | `yukselen-sitesi` | Yavuz Selim | ada temsil | 4. | 50 | 2026-08-11 |
+| 92 | `elif-elvan-sitesi` | Eryaman | ada temsil | 1. | 47 | 2026-08-15 |
+| 93 | `enday-sitesi` | Göksu | mahalle sayfası temsil | 1. | 43 | 2026-07-27 |
+| 94 | `eston-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 5. | 43 | 2026-08-04 |
+| 95 | `taniskent-sitesi` | Şeyh Şamil | komşu sayfa temsil | 5. | 40 | 2026-07-26 |
+| 96 | `goksu-aura-sitesi` | Göksu | mahalle sayfası temsil | 7. | 37 | 2026-07-27 |
+| 97 | `dalgic-residence` | Şehit Osman Avcı | komşu sayfa temsil | 4. | 35 | 2026-07-26 |
+| 98 | `gungorler-tower` | Şehit Osman Avcı | komşu sayfa temsil | 1. | 35 | 2026-08-02 |
+| 99 | `sozova-sitesi` | Devlet | komşu sayfa temsil | 2. | 34 | 2026-07-26 |
+| 100 | `golkent-sitesi` | Göksu | komşu sayfa temsil | 6. | 33 | 2026-07-26 |
+| 101 | `nefeskent-sitesi` | Şehit Osman Avcı | komşu sayfa temsil | 3. | 32 | 2026-08-02 |
+| 102 | `durtas-91-sitesi` | Güzelkent | komşu sayfa temsil | 4. | 31 | 2026-07-26 |
+| 103 | `izgi-park-evleri` | Altay | komşu sayfa temsil | 4. | 28 | 2026-08-02 |
+| 104 | `portakal-cicegi` | Güzelkent | komşu sayfa temsil | 4. | 28 | 2026-07-29 |
+| 105 | `dogan-city` | Yeşilova | mahalle sayfası temsil | 6. | 26 | 2026-07-26 |
+| 106 | `hotki-meydan` | Devlet | komşu sayfa temsil | 2. | 25 | 2026-08-01 |
+| 107 | `yeni-huzur-bahcesi-sitesi` | Devlet | komşu sayfa temsil | 3. | 24 | 2026-07-26 |
+| 108 | `ovgu-iletisim-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 23 | 2026-07-28 |
+| 109 | `oz-cozum-kent-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 4. | 23 | 2026-07-26 |
+| 110 | `eryaman-evleri` | Eryaman | komşu sayfa temsil | 10. | 22 | 2026-07-26 |
+| 111 | `izo-ser-residence` | Şehit Osman Avcı | komşu sayfa temsil | 1. | 22 | 2026-08-11 |
+| 112 | `sahinbey-sitesi` | Güzelkent | komşu sayfa temsil | 3. | 20 | 2026-07-26 |
+| 113 | `lowland-business` | Yeşilova | mahalle sayfası temsil | 3. | 19 | 2026-07-26 |
+| 114 | `gulenkent-sitesi` | Güzelkent | komşu sayfa temsil | 7. | 18 | 2026-07-26 |
+| 115 | `sahil-sitesi` | Devlet | komşu sayfa temsil | 5. | 17 | 2026-07-27 |
+| 116 | `ilkdogus-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 16 | 2026-07-26 |
+| 117 | `yayikli-4-sitesi` | Güzelkent | komşu sayfa temsil | 5. | 14 | 2026-07-25 |
+| 118 | `uzunbey-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 13 | 2026-07-27 |
+| 119 | `ma1-tower` | Göksu | ada temsil | 2. | 10 | 2026-07-27 |
+| 120 | `yunus-emre-cagdas-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 9 | 2026-07-27 |
+| 121 | `selinkent-sitesi` | Şeyh Şamil | mahalle sayfası temsil | 3. | 6 | 2026-07-26 |
+| 122 | `meydan-eryaman` | Göksu | komşu sayfa temsil | 5. | 4 | 2026-08-02 |
+| 123 | `guzel-ev-sitesi` | Yavuz Selim | komşu sayfa temsil | 2. | 0 | 2026-08-03 |
+| 124 | `sari-cinar-sitesi` | Tunahan | komşu sayfa temsil | 2. | 0 | - |
+| 125 | `kur-sitesi-46495-ada` | Tunahan | eski slug | 2. | 115 | 2026-08-09 |
+| 126 | `green-place-residence` | Yeşilova | eski slug | 2. | 93 | 2026-07-26 |
+| 127 | `elit-nar-cicegi` | Yavuz Selim | eski slug | 1. | 84 | 2026-07-27 |
+| 128 | `gozde-91-sitesi` | Güzelkent | eski slug | 3. | 81 | 2026-07-26 |
+| 129 | `akkonak-sitesi` | Güzelkent | eski slug | 1. | 78 | 2026-07-26 |
+| 130 | `bizim-sirinkoy-sitesi` | Yavuz Selim | eski slug | 2. | 51 | 2026-07-26 |
+| 131 | `motto-butik` | Altay | eski slug | 1. | 46 | 2026-07-26 |
+| 132 | `anadolu-sitesi` | Güzelkent | eski slug | 4. | 42 | 2026-07-27 |
+| 133 | `er-ay-3-sitesi` | Güzelkent | eski slug | 3. | 42 | 2026-07-26 |
+| 134 | `guz-gol-sitesi` | Yavuz Selim | eski slug | 1. | 41 | 2026-07-30 |
+| 135 | `kocaklar-tower` | Yeşilova | eski slug | 2. | 34 | 2026-08-07 |
+| 136 | `yesimkent` | Güzelkent | eski slug | 1. | 31 | 2026-07-26 |
+| 137 | `may-tower` | Yeşilova | eski slug | 1. | 30 | 2026-08-12 |
+| 138 | `cagdas-95-sitesi` | Güzelkent | eski slug | 2. | 22 | 2026-07-27 |
+| 139 | `atakent-metro-sitesi` | Eryaman | eski slug | 3. | 20 | 2026-08-11 |
+| 140 | `relax-line` | Şeker | eski slug | 1. | 0 | - |
+| 141 | `bahcen-eryaman-konutlari` | Şeker | eski başlık | 2. | 374 | 2026-08-17 |
+| 142 | `terasevler-eryaman` | Yavuz Selim | eski başlık | 1. | 347 | 2026-07-26 |
+| 143 | `hill-tower` | Şeker | eski başlık | 1. | 295 | 2026-07-31 |
+| 144 | `konum-eryaman` | Göksu | eski başlık | 4. | 262 | 2026-07-26 |
+| 145 | `mesa-bloklari` | Altay | eski başlık | 2. | 262 | 2026-07-27 |
+| 146 | `kasmir-mavi-orkide-sitesi` | Göksu | eski başlık | 5. | 248 | 2026-07-26 |
+| 147 | `oyak-goksupark` | Göksu | eski başlık | 7. | 245 | 2026-07-27 |
+| 148 | `atakent-2-cumhuriyet-sitesi` | Eryaman | eski başlık | 2. | 241 | 2026-07-26 |
+| 149 | `park-mira-evleri` | Göksu | eski başlık | 1. | 233 | 2026-08-17 |
+| 150 | `mil-kooperatifi-sitesi` | Devlet | eski başlık | 1. | 229 | 2026-07-26 |
+| 151 | `oasis-rezidans` | Şeker | eski başlık | 2. | 224 | 2026-07-31 |
+| 152 | `ozdenizyildizi-sitesi` | Devlet | eski başlık | 5. | 217 | 2026-07-26 |
+| 153 | `yeniceri-kule` | Göksu | eski başlık | 2. | 192 | 2026-07-27 |
+| 154 | `yeni-portakal-cicegi-sitesi` | Eryaman | eski başlık | 3. | 155 | 2026-07-26 |
+| 155 | `finest-bloklari` | Göksu | eski başlık | 1. | 151 | 2026-07-26 |
+| 156 | `erkent-sitesi` | Güzelkent | eski başlık | 3. | 142 | 2026-07-26 |
+| 157 | `basak-sitesi` | Eryaman | eski başlık | 3. | 127 | 2026-07-30 |
+| 158 | `su-damlasi-sitesi` | Tunahan | eski başlık | 6. | 122 | 2026-07-29 |
+| 159 | `gulhayat-sitesi` | Devlet | eski başlık | 2. | 116 | 2026-07-27 |
+| 160 | `uzunali-goksu-konutlari-2` | Göksu | eski başlık | 1. | 115 | 2026-08-16 |
+| 161 | `cinar-sitesi` | Devlet | eski başlık | 4. | 114 | 2026-07-29 |
+| 162 | `arya-nuans-residence` | Altay | eski başlık | 6. | 111 | 2026-07-31 |
+| 163 | `asm-golt-sitesi` | Eryaman | eski başlık | 1. | 111 | 2026-08-11 |
+| 164 | `golkent-1-sitesi` | Göksu | eski başlık | 3. | 103 | 2026-07-26 |
+| 165 | `frekans-eryaman` | Altay | eski başlık | 2. | 97 | 2026-07-31 |
+| 166 | `tugce-kent-sitesi` | Şeyh Şamil | eski başlık | 2. | 91 | 2026-07-26 |
+| 167 | `yeni-ilkay-sitesi` | Yavuz Selim | eski başlık | 4. | 89 | 2026-07-26 |
+| 168 | `turgut-aslan-sitesi` | Devlet | eski başlık | 2. | 88 | 2026-07-26 |
+| 169 | `sacak-91-sitesi` | Yavuz Selim | eski başlık | 1. | 87 | 2026-08-02 |
+| 170 | `seyirtepe-baspinar` | Göksu | eski başlık | 2. | 86 | 2026-07-27 |
+| 171 | `metro-yasam-sitesi` | Güzelkent | eski başlık | 2. | 79 | 2026-07-27 |
+| 172 | `kayaevleri-sitesi` | Eryaman | eski başlık | 1. | 73 | 2026-07-26 |
+| 173 | `cozum-kent-sitesi` | Güzelkent | eski başlık | 1. | 70 | 2026-07-26 |
+| 174 | `nazlideniz-sitesi` | Güzelkent | eski başlık | 1. | 70 | 2026-07-26 |
+| 175 | `evrimkent-sitesi` | Güzelkent | eski başlık | 3. | 69 | 2026-07-26 |
+| 176 | `taskent-sitesi` | Yavuz Selim | eski başlık | 2. | 69 | 2026-07-26 |
+| 177 | `betim-sitesi` | Devlet | eski başlık | 3. | 65 | 2026-07-26 |
+| 178 | `pasa-konaklari` | Eryaman | eski başlık | 2. | 60 | 2026-07-26 |
+| 179 | `hassas-cizgi-sitesi` | Eryaman | eski başlık | 3. | 56 | 2026-07-26 |
+| 180 | `goksu-manzara-evleri` | Göksu | eski başlık | 2. | 55 | 2026-07-27 |
+| 181 | `ozle-iletisim-sitesi` | Güzelkent | eski başlık | 3. | 46 | 2026-07-26 |
+| 182 | `mavikent-sitesi` | Devlet | eski başlık | 4. | 46 | 2026-07-26 |
+| 183 | `turkkonut-istas-sitesi` | Devlet | eski başlık | 1. | 46 | 2026-07-26 |
+| 184 | `cabadag-bloklari` | Altay | eski başlık | 1. | 44 | 2026-07-26 |
+| 185 | `gulvatan-sitesi` | Yavuz Selim | eski başlık | 1. | 44 | 2026-07-27 |
+| 186 | `doktorlar-sitesi` | Altay | eski başlık | 3. | 43 | 2026-07-26 |
+| 187 | `ozgun-ipek-sitesi` | Eryaman | eski başlık | 3. | 43 | 2026-07-26 |
+| 188 | `cagdas-sistem-sitesi` | Güzelkent | eski başlık | 4. | 33 | 2026-07-26 |
+| 189 | `ritim-eryaman` | Güzelkent | eski başlık | 1. | 33 | 2026-07-29 |
+| 190 | `yuksel-kent-91-sitesi` | Yavuz Selim | eski başlık | 1. | 32 | 2026-07-26 |
+| 191 | `gunotesi-sitesi` | Eryaman | eski başlık | 2. | 30 | 2026-07-26 |
+| 192 | `korukent-sitesi` | Güzelkent | eski başlık | 3. | 29 | 2026-08-17 |
+| 193 | `palmiye-evleri` | Altay | eski başlık | 1. | 28 | 2026-08-14 |
+| 194 | `akkonaklar-sitesi` | Eryaman | eski başlık | 3. | 28 | 2026-08-01 |
+| 195 | `yayikli-2-sitesi` | Güzelkent | eski başlık | 2. | 27 | 2026-07-26 |
+| 196 | `ozarda-gokturk-sitesi` | Devlet | eski başlık | 2. | 26 | 2026-07-27 |
+| 197 | `ictas-bloklari` | Şeyh Şamil | eski başlık | 2. | 21 | 2026-08-14 |
+| 198 | `baskent-sular-sitesi` | Yavuz Selim | eski başlık | 1. | 20 | 2026-07-27 |
+| 199 | `armina-park-evleri` | Eryaman | eski başlık | 2. | 19 | 2026-08-12 |
+| 200 | `pinarkent-91-sitesi` | Güzelkent | eski başlık | 2. | 18 | 2026-07-26 |
+| 201 | `cayilkay-sitesi` | Devlet | eski başlık | 1. | 13 | 2026-07-26 |
+| 202 | `aknergiz-sitesi` | Güzelkent | eski başlık | 3. | 10 | 2026-07-29 |
+| 203 | `address-enda` | Şeker | eski başlık | 1. | 10 | 2026-08-18 |
 
 ## İstek gönderildi, tarama bekliyor
 
 - `safir-rezidans` (Şehit Osman Avcı) — eski başlık, sıra 2., 260 gösterim
 - `oyak-sitesi` (Eryaman) — GÖRÜNMEZ, sıra yok, 233 gösterim
-- `arissa-goksu` (Göksu) — GÖRÜNMEZ, sıra yok, 232 gösterim
+- `arissa-goksu` (Göksu) — komşu sayfa temsil, sıra 1., 232 gösterim
 - `sutek-sitesi` (Tunahan) — komşu sayfa temsil, sıra 3., 227 gösterim
 - `kc-lale-evleri` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 4., 170 gösterim
 - `aksafak-sitesi` (Göksu) — eski başlık, sıra 3., 160 gösterim
