@@ -215,6 +215,25 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/seyh-samil/turk-konut", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
       { source: "/mahalleler/seyh-samil-mahallesi/turk-konut", destination: "/mahalleler/seyh-samil-mahallesi", permanent: true },
 
+      // KIRIK ZİNCİR DÜZELTMESİ (2026-08-31): Google'ın dizinindeki eski adres
+      // /mahalleler/seker/relax-line, aşağıdaki genel kuralla
+      // /mahalleler/seker-mahallesi/relax-line'a gidiyordu — ama içerik kaydının
+      // slug'ı "altas-relax-line". Sonuç: 308 → 404. Bu adres "Altaş Relax Line
+      // emlakçı" sorgusunda 1. SIRADAYDI (29.08 ölçümü), yani Google en üst
+      // sonuçtan kullanıcıyı boş sayfaya yolluyordu. İki kural da gerekli:
+      // biri eski mahalle slug'ından, biri yeni mahalle slug'ından gelen için.
+      { source: "/mahalleler/seker/relax-line", destination: "/mahalleler/seker-mahallesi/altas-relax-line", permanent: true },
+      { source: "/mahalleler/seker-mahallesi/relax-line", destination: "/mahalleler/seker-mahallesi/altas-relax-line", permanent: true },
+
+      // YANLIŞ MAHALLEYE YAZILMIŞ ESKİ ADA ADRESLERİ (2026-08-31 taraması).
+      // sitemap-eski-adresler.xml'deki 908 adresin tamamı canlı denendi; bu üçü
+      // 404 dönüyordu çünkü ada başka mahallenin altında. Hedefler İÇERİKTEN
+      // doğrulandı (content/siteler/*/*.json → adalar[].no/parsel) ve üç yeni
+      // adresin de 200 döndüğü teyit edildi — tahmin değil, eşleşme.
+      { source: "/mahalleler/guzelkent/adalar/19504-1", destination: "/mahalleler/yavuz-selim-mahallesi/adalar/19504-1", permanent: true },
+      { source: "/mahalleler/yavuz-selim/adalar/46263-2", destination: "/mahalleler/seyh-samil-mahallesi/adalar/46263-2", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci/adalar/46362-3", destination: "/mahalleler/seker-mahallesi/adalar/46362-3", permanent: true },
+
       // MAHALLE SLUG TAŞIMASI (2026-07-26): /mahalleler/tunahan ->
       // /mahalleler/tunahan-mahallesi. Eski adreslerin TAMAMI (mahalle sayfası,
       // altındaki site/ada/etap sayfaları) kalıcı olarak yenisine taşınıyor.

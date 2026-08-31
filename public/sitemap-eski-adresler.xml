@@ -54,7 +54,12 @@
      YAZIM HATASI DÜZELTİLDİ (31.08): /mahalleler/goksu-maharmesi/admira-goksu-
      konutlari diye var olmayan bir adres listedeydi ve 404 veriyordu (Google
      17.08'de taramış). Doğrusu /mahalleler/goksu/admira-goksu-konutlari — 308
-     ile goksu-mahallesi'ne yönleniyor. -->
+     ile goksu-mahallesi'ne yönleniyor ve hedef 200 dönüyor, yani gerçek bir
+     eski adres; SİLİNMEZ, düzeltilir. PR #86 aynı kaydı hayalet sanıp silmişti;
+     birleştirmede düzeltilmiş hâli korundu. #86'nın sildiği diğer iki adres
+     (goksu/adalar/46479-2, guzelkent/adalar/18493-1) haklı olarak gitti:
+     yönlendirme çalışıyor ama HEDEF 404 — ayrımı `curl -sL` ile yap, ilk
+     adımın 308 dönmesi adresin sağlam olduğu anlamına gelmiyor. Liste 906. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
@@ -763,7 +768,6 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/adalar/46425-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/adalar/62689-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/adalar/62690-2</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
-  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/adalar/46479-2</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/adalar/63400-2</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18487-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46654-5</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
@@ -987,7 +991,6 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/adalar/63400-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/adalar/63407-2</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18488-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
-  <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18493-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46473-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46640-5</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46646-1</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
