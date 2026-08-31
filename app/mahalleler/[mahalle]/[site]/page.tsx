@@ -161,10 +161,25 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     //
     // TTBS rozeti bilerek çıkarıldı: yer açtı ve ev sahibine bir şey anlatmıyor
     // (belge no sayfa gövdesinde ve "güvenilir emlakçı" bloğunda duruyor).
-    // Telefon SONDA ama kesilme olmadığı için her sayfada görünür.
-    description: truncateForMeta(
-      `${isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : ""}${bulunmaHali(site.isim)} evinizi kiraya vermek ya da satmak istiyorsanız, emlakçınız olarak süreci baştan sona biz yürütürüz: ${siteConfig.phoneDisplay}`
-    ),
+    //
+    // TELEFON SONDA — ve 31.08'de dört sayfada KESİLİYORDU. Üstteki 15.08
+    // ölçümü ("en uzunu 155, hiçbiri kesilmiyor") 16.08'de ad ikizi kapsamı
+    // 10 gruptan 18'e çıkarılınca bayatladı: "Şehit Osman Avcı " öneki alan
+    // Elit Yaşam Konutları 1-2 ve Kutlutaş 1-2 Blokları 161 karaktere çıktı ve
+    // truncateForMeta numarayı ortasından kesti ("…0532 363…"). Numara bu
+    // cümlenin tek eylem çağrısı, kesilmesi cümleyi işlevsiz bırakıyor.
+    //
+    // Çözüm 522 sayfayı birden değiştirmiyor: cümle sınırı aşarsa "baştan
+    // sona" düşüyor (12 karakter) ve numara tam giriyor. Bugün yalnız o dört
+    // sayfayı etkiliyor, kalan 518'i harfi harfine aynı. SABLON.site tabanı
+    // bu yüzden İLERLETİLMEDİ — bkz. AGENTS.md, 17.08 ada emsali.
+    description: (() => {
+      const on = isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : "";
+      const govde = `${on}${bulunmaHali(site.isim)} evinizi kiraya vermek ya da satmak istiyorsanız, emlakçınız olarak süreci`;
+      const kuyruk = ` biz yürütürüz: ${siteConfig.phoneDisplay}`;
+      const tam = `${govde} baştan sona${kuyruk}`;
+      return tam.length <= 155 ? tam : `${govde}${kuyruk}`;
+    })(),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
     ...(site.alternatifAdlar?.length && {
       keywords: [
