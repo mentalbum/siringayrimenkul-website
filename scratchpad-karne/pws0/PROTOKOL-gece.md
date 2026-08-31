@@ -529,3 +529,29 @@ site sayfasına 2,5 kat fazla tarama ayırıyor. Ada sayfalarını sitemap'ten
 Sağlam kalan tek şey: ada sayfası SERP'te site sayfasının yerine çıktığında
 sıra 2,30 → 4,05'e düşüyor (n=557 vs n=59). Bunun ilacı başlık tarafında
 ama title'lar 5 Eylül'e kadar donuk (08.08 kararı) — 5 Eylül'de bak.
+
+## 31.08 — TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)
+
+| grup | n | dizinde | son 7g taranan | hiç taranmamış | bir ay+ eski |
+|---|---|---|---|---|---|
+| ilk 3 | 60 | 58 (%97) | 25 (%42) | 2 (%3) | 9 (%15) |
+| 4-10 bandı | 68 | 56 (%82) | 20 (%29) | 12 (%18) | 30 (%44) |
+
+Hiç taranmamış olma oranı 4-10 bandında 6 kat, bayat tarama 3 kat fazla.
+
+UYARI — bu bir İLİŞKİ ölçümü, ters nedensellik açık: Google zaten iyi sıradaki
+sayfayı daha sık tarar. Karşı kanıt damla turlarının müdahale sonuçları
+(istek → tarama → sıra: Alış 0→1, Selçuklu 0→9, Atalay 0→3). İkisi aynı yönü
+gösteriyor ama tek başına ilişki ölçümü nedensellik iddiası için yetmez;
+sitemap düzeltmesinin (PR #87) sonucu 1-2 hafta izlenip yeniden bakılacak.
+
+## 31.08 — GÖRÜNMEZLERİN GERÇEK TEŞHİSİ
+
+96 görünmez sayfa API'ye soruldu:
+- 57 "Submitted and indexed" → SIRA sorunu. 28g 2.584 gösterim, 75 tık, ort poz 7,4.
+  26'sı son 7 günde taranmış. Dizin isteği bunlara ÇARE DEĞİL, kota yakar.
+- 33 dizin dışı → 28g SIFIR gösterim. Kotanın tamamı buraya. 14'ü Devlet.
+- 6 sayfada Google API 500 döndü, yeniden sorulacak.
+
+Yeni kuyruk: DIZIN-DAMLASI-31-08.md. Eski kuyrukta 7 sayfa kendiliğinden
+dizine girmiş, işaretlendi.
