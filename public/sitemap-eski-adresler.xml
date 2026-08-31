@@ -36,7 +36,25 @@
      ikili güven modeli gereği tarih GERÇEK olmalı — bu yüzden tek doğru damga
      taşıma günü. (Kaynaklar: developers.google.com/search/docs/crawling-indexing/
      site-move-with-url-changes; lastmod güveni: searchenginejournal.com
-     googles-gary-illyes-lastmod-signal-is-binary.) -->
+     googles-gary-illyes-lastmod-signal-is-binary.) 
+     ÖLÇÜM VE KARAR 2026-08-31 — 307 ADRESİ SİLME REFLEKSİNE KAPILMA.
+     Listedeki 908 adresin 307'si (ata 121, cumhuriyet 113, susuz 73) artık
+     410 dönüyor; Yenimahalle 27.08'de siteden kaldırıldı. "Sitemap'te 410
+     olmaz" diye temizlemek CAZİP AMA YANLIŞ, üç ölçüm sebebiyle:
+       1. 410 sayfası ölü uç değil, HUNİ: "Bu sayfa kaldırıldı" diyip Eryaman
+          Siteleri'ne ve ana sayfaya yönlendiriyor. Son 28 günde 873 tıklama
+          oradan geçti.
+       2. Bu adreslerin çoğu HÂLÂ DİZİNDE ve Temmuz'dan beri taranmamış
+          (12 örneklemin 9'u "Submitted and indexed", son tarama 07-19 Temmuz).
+          Sitemap'ten çıkarmak yeniden taramayı YAVAŞLATIR, hızlandırmaz.
+       3. Tarama kıtlığı ölçülüp çürütüldü: aynı gün site sayfası 10/30, ada
+          sayfası 4/30 taranmıştı — bu 307 adres kimsenin tarama payını yemiyor.
+     Yani silmek yalnız 873 tıklamayı erken kaybettirir, karşılığında ölçülmüş
+     bir kazanç vermez. Google 410'ları kendi temposunda düşürecek.
+     YAZIM HATASI DÜZELTİLDİ (31.08): /mahalleler/goksu-maharmesi/admira-goksu-
+     konutlari diye var olmayan bir adres listedeydi ve 404 veriyordu (Google
+     17.08'de taramış). Doğrusu /mahalleler/goksu/admira-goksu-konutlari — 308
+     ile goksu-mahallesi'ne yönleniyor. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/selvi-evleri-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/cumhuriyet/mes-polaris-evleri</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.1</priority></url>
@@ -397,7 +415,7 @@
   <url><loc>https://www.siringayrimenkul.com/mahalleler/devlet/yeni-huzur-bahcesi-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/seyh-samil/ozluce-guzelevim</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/ozuguzelkent-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
-  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu-maharmesi/admira-goksu-konutlari</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
+  <url><loc>https://www.siringayrimenkul.com/mahalleler/goksu/admira-goksu-konutlari</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/seker/relax-line</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/guzelkent/akkonak-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
   <url><loc>https://www.siringayrimenkul.com/mahalleler/ata/bati-sistemciler-sitesi</loc><lastmod>2026-07-26</lastmod><changefreq>monthly</changefreq><priority>0.2</priority></url>
