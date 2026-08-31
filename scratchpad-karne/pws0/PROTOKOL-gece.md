@@ -555,3 +555,23 @@ sitemap düzeltmesinin (PR #87) sonucu 1-2 hafta izlenip yeniden bakılacak.
 
 Yeni kuyruk: DIZIN-DAMLASI-31-08.md. Eski kuyrukta 7 sayfa kendiliğinden
 dizine girmiş, işaretlendi.
+
+## 31.08 — SITEMAP DÜZELTMESİNİN ÇIKTISI BENZETİLDİ (PR #87)
+
+Canlı sitemap'in 1.141 mahalle/site/ada/etap adresi için lastModified yeniden
+hesaplandı (içerik tarihi ile taban tarihin büyüğü):
+
+| | eski (dört taban da 27.08) | yeni (gerçek tabanlar) |
+|---|---|---|
+| en kalabalık tek tarihin payı | %99 | %53 |
+| farklı tarih sayısı | 2 | 7 |
+
+Dağılım aileye göre ayrışıyor: 603 ada 16.08, 486 site 22.08, 22 site 23.08,
+11 mahalle 17.08. Yani Google site sayfalarını ada sayfalarından 6 gün TAZE
+görecek — ada sayfası site sayfasının yerine çıktığında sıra 2,30'dan 4,05'e
+düştüğü için istediğimiz sıra tam da bu.
+
+İLK BENZETİM YANLIŞTI: içerik dosyalarını saymış ve ada sayfalarını site
+tabanına bağlamıştı; %99 → %94 gibi cılız bir sonuç vermişti. Ada sayfaları
+mahalle içerik tarihinden besleniyor (app/sitemap.ts:259), site tabanından
+değil. Doğrusu yukarıdaki.
