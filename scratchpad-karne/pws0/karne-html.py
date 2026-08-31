@@ -10,6 +10,7 @@ Veriden okur, elle rakam girilmez:
 Çıktı: bulunabilirlik-karnesi.html  →  Artifact olarak aynı adrese yayınlanır.
 Kullanım: python3 karne-html.py
 """
+import tranahtar
 import json, html, datetime, re
 
 BUGUN = datetime.date.today().strftime("%d.%m.%Y")
@@ -76,17 +77,26 @@ MAH_AD = {
 
 # hedef sorgular (etaplar + ana sorgu) — q bazında son ölçüm
 hrows = [json.loads(l) for l in open("sonuclar-emlakci.jsonl") if l.strip()]
+# 31.08: anahtar .lower() ile kuruluyordu ve Türkçe İ'de bozuluyordu —
+# 'İ'.lower() iki karakter üretir (i + birleşik nokta), böylece aynı sorgunun
+# iki yazımı ayrı satır sayılıyordu (İlgazlar vakası). tranahtar.anahtar()
+# hepsini tek kovaya indirger. Kayıtlar dosya sırasına göre okunduğu için
+# sonuncusu geçerli olur — dosya append-only.
 hson = {}
 for r in hrows:
-    hson[r["q"].strip().lower()] = r
+    hson[tranahtar.anahtar(r["q"])] = r
 
 def hedef(q):
-    return hson.get(q.lower())
+    return hson.get(tranahtar.anahtar(q))
 
 def etap_son(i):
     """iki kaynaktan (hedef dosyası + tur dosyasındaki */etaplar/N kayıtları) en tazesi"""
     adaylar = [hedef(f"Eryaman {i}. Etap emlakçı")]
-    adaylar += [r for r in rows if r["s"].endswith(f"/etaplar/{i}") and r.get("q", "").startswith("Eryaman")]
+    # 31.08: filtre startswith("Eryaman") ile büyük harfe duyarlıydı; veride
+    # aynı sorgunun küçük harfli yazımı da var ("eryaman 2. etap emlakçı") ve
+    # öyle bir kayıt sessizce DÜŞERDİ. Normalize edilmiş eşleştirme.
+    adaylar += [r for r in rows if r["s"].endswith(f"/etaplar/{i}")
+                and tranahtar.anahtar(r.get("q", "")).startswith("eryaman")]
     adaylar = [a for a in adaylar if a]
     return max(adaylar, key=lambda r: r["d"]) if adaylar else None
 
