@@ -696,6 +696,83 @@ ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
 
+# --- YARIN NE YAPILACAK (31.08) -------------------------------------------
+# Karnede üç ayrı "sıradaki iş" listesi vardı ve hiçbiri kesişmiyordu: dizin
+# damlası paneli, dizin adayları tablosu ve zayıf halkalar. Okuyucu hangisinin
+# yapılacağını bilemiyordu — üstelik ikisi kotayı zaten dizinde olan sayfalara
+# harcatıyordu. Tek liste, tek sıralama, satır başına tek eylem.
+EYLEM = []
+# 1) hedef sorgu sayfası olan bayat mahalleler — en değerli kota
+for a_ in KUYRUK_OLU:
+    if a_["tur"] == "bayat taranmış":
+        EYLEM.append({"is": "Dizin isteği gönder", "hedef": a_["site"],
+                      "mah": a_["mah"], "neden": "hedef sorgu sayfası, bayat taranmış",
+                      "oncelik": 0})
+# 2) API ile ölü doğrulanmış site sayfaları
+for a_ in KUYRUK_OLU:
+    if a_["tur"] != "bayat taranmış":
+        EYLEM.append({"is": "Dizin isteği gönder", "hedef": a_["site"],
+                      "mah": a_["mah"], "neden": "Google′da yok, 28 günde sıfır gösterim",
+                      "oncelik": 1})
+EYLEM.sort(key=lambda x: x["oncelik"])
+_gun = 10
+eylem_html = "".join(
+    f'<li><span><strong>{esc(e["hedef"])}</strong> '
+    f'<span class="alt">{esc(MAH_AD.get(e["mah"], e["mah"]))} — {esc(e["neden"])}</span></span>'
+    f'<span class="chip {"kotu" if e["oncelik"] == 0 else "orta"}">{esc(e["is"])}</span></li>'
+    for e in EYLEM[:12]) or '<li class="alt">Kuyruk boş</li>'
+eylem_sayi = len(EYLEM)
+eylem_gun = -(-eylem_sayi // _gun) if eylem_sayi else 0
+
+# --- sırayı KİM tutuyor (31.08) -------------------------------------------
+# Karnenin baş rakamı "%68'i ilk 3'te" idi ve tek başına yanıltıcıydı: o
+# sıraların üçte biri YANLIŞ sayfamızla kazanılmış. Site adını arayan kişi ada
+# sayfasına, mahalle sayfasına ya da taşınmadan önceki adrese düşüyor — sıra
+# tutuluyor ama ziyaretçi aradığını bulamıyor. İkisi ayrı ölçülür.
+try:
+    _DS = json.load(open("dogru-sayfa.json"))
+except Exception:
+    _DS = None
+if _DS:
+    _RENK = {"dogru": "iyi", "eski": "kotu", "ada": "orta", "mahalle": "orta",
+             "baska_site": "orta", "belirsiz": "nul", "dis": "kotu", "yok": "kotu"}
+    _ds_satir = "".join(
+        f'<li><span>{esc(x["ad"])}</span>'
+        f'<span class="chip {_RENK.get(x["k"], "nul")}">{x["n"]}</span></li>'
+        for x in _DS["hepsi"])
+    _i3 = _DS["ilk3_toplam"]
+    _i3d = _DS["ilk3_dogru"]
+    _i3y = _i3 - _i3d
+    _pay = round(_i3d * 100 / _i3) if _i3 else 0
+    _yanlis_mah = ", ".join(f"{MAH_AD.get(m, m)} {n}" for m, n in _DS["yanlis_mahalle"][:5])
+    _belirsiz = next((x["n"] for x in _DS["hepsi"] if x["k"] == "belirsiz"), 0)
+    dogrusayfa_html = f"""
+  <h2>Sırayı hangi sayfamız tutuyor</h2>
+  <p class="not">“İlk 3′teyiz” demek “doğru sayfa çıkıyor” demek değil. Site adını arayan
+  kişi ada sayfasına, mahalle sayfasına ya da taşınmadan önceki adrese düşebiliyor: sıra
+  tutuluyor, ziyaretçi aradığını bulamıyor. Bu ikisi ayrı sayılmalı.</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>İlk 3′teki {_i3} sıranın kimliği</h3>
+      <p class="alt" style="margin:0 0 10px">Bunların <strong>{_i3d}′i doğru site sayfasıyla</strong>
+      kazanılmış (%{_pay}); kalan <strong>{_i3y}′inde</strong> sıra bizde ama açılan sayfa
+      aranan site değil.</p>
+      <div class="bar" style="height:14px"><i style="width:{_pay}%"></i></div>
+      <p class="alt" style="margin:10px 0 0">Yanlış sayfanın en yoğun olduğu mahalleler:
+      {_yanlis_mah}.</p>
+    </div>
+    <div class="pano">
+      <h3>504 sorgunun tamamı</h3>
+      <ul>{_ds_satir}</ul>
+      <p class="alt" style="margin:10px 0 0">“Ölçüm kırıntısı” ({_belirsiz}): o kayıtta hangi
+      sayfanın sıralandığı okunamamış — sonuç adresi kesik kaydedilmiş. Bunlar hiçbir sınıfa
+      sayılmaz, yeniden ölçülmeleri gerekir.</p>
+    </div>
+  </div>
+"""
+else:
+    dogrusayfa_html = ""
+
 # --- sayfa türü verimi (31.08) --------------------------------------------
 # Karne sayfaları tek tek ölçüyordu ama hangi AİLENİN emeğe değdiğini
 # göstermiyordu. Ayrım kararı değiştiriyor: ada sayfaları adres sayısı olarak
@@ -1187,6 +1264,16 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <ul>{sira_sorun_html}</ul>
   </div>
 
+  <h2>Yarın ne yapılacak</h2>
+  <p class="not">Karnede üç ayrı “sıradaki iş” listesi vardı ve hiçbiri kesişmiyordu;
+  ikisi de kotayı zaten Google′da olan sayfalara harcatıyordu. Tek liste bu:
+  <strong>{eylem_sayi} iş</strong>, günlük ~10 istek kotasıyla yaklaşık {eylem_gun} gün.
+  Her satır Search Console′a tek tek sorulup doğrulandı.</p>
+  <div class="pano"><ul>{eylem_html}</ul>
+  <p class="alt" style="margin:10px 0 0">Tam liste:
+  <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code></p></div>
+
+{dogrusayfa_html}
 {turverim_html}
 {saglik_html}
 {teshis_html}

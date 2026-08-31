@@ -46,9 +46,11 @@ def denetle():
     hayalet = sorted(s for s in sayfa_anahtarlari
                      if s.split("/")[0] not in YM
                      and not os.path.exists(f"{ICERIK}/{s}.json"))
-    ekle("Karşılığı olmayan sayfa kaydı", len(hayalet),
+    ekle("Karşılığı olmayan sayfa kaydı (tüm tarihçe)", len(hayalet),
          "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda "
-         "404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar.",
+         "404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar. NOT: karnenin "
+         "teşhis bölümünde geçen daha küçük sayı yalnız O TURUN görünmez listesinden "
+         "çıkarılanları sayar; burası tarihçenin tamamı.",
          hayalet[:4], agir=True)
 
     # 2) Gelecek tarihli ya da imkânsız kayıt
@@ -107,6 +109,26 @@ def denetle():
         except ValueError:
             continue
         yas["0-7 gün" if g <= 7 else "8-14 gün" if g <= 14 else "15-30 gün" if g <= 30 else "30+ gün"] += 1
+
+    # 6b) "u" alanı URL DEĞİL, SERP kırıntısı. Gizli sekme kanalında Google
+    # sonucun adresini <cite> içinde "siringayrimenkul.com › mahalleler › ..."
+    # biçiminde veriyor ve uzun olanı "..." ile kesiyor. O kayıtlarda hangi
+    # sayfanın sıralandığı BİLİNMİYOR; sınıflandırıcı bunları "komşu sayfa"
+    # sanarsa yanlış teşhis üretir (31.08'de tam olarak bu oldu).
+    son_kayit = {}
+    for r in ham:
+        if r.get("s"):
+            son_kayit[r["s"]] = r
+    kirinti = [r for r in son_kayit.values()
+               if r.get("sira") and (str(r.get("u") or "").startswith("cite:")
+                                     or "…" in str(r.get("u") or "")
+                                     or "..." in str(r.get("u") or ""))]
+    ekle("Adresi okunamayan ölçüm (tüm tarihçe)", len(kirinti),
+         "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik "
+         "ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı "
+         "hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, "
+         "bu yüzden daha küçüktür.",
+         [f"{r['s']} ({r['d']})" for r in kirinti[:4]])
 
     # 7) GÜRÜLTÜ TABANI — bir sıra değişimi ne zaman anlamlı?
     # Karne "yükselen/düşen" gösteriyor ama her hareket gerçek değil. Kısa aralıkla

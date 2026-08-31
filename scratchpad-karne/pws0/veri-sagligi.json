@@ -51,9 +51,9 @@
  ],
  "bulgular": [
   {
-   "ad": "Karşılığı olmayan sayfa kaydı",
+   "ad": "Karşılığı olmayan sayfa kaydı (tüm tarihçe)",
    "adet": 19,
-   "aciklama": "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda 404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar.",
+   "aciklama": "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda 404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar. NOT: karnenin teşhis bölümünde geçen daha küçük sayı yalnız O TURUN görünmez listesinden çıkarılanları sayar; burası tarihçenin tamamı.",
    "ornek": [
     "altay-mahallesi/merkez-sitesi",
     "altay-mahallesi/metropol-bloklari",
@@ -106,6 +106,19 @@
    "ornek": [],
    "agir": false,
    "temiz": true
+  },
+  {
+   "ad": "Adresi okunamayan ölçüm (tüm tarihçe)",
+   "adet": 49,
+   "aciklama": "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, bu yüzden daha küçüktür.",
+   "ornek": [
+    "sehit-osman-avci-mahallesi/koz-modern (2026-08-28)",
+    "sehit-osman-avci-mahallesi/kiratli-residence (2026-08-28)",
+    "sehit-osman-avci-mahallesi/inci-life-residence (2026-08-28)",
+    "sehit-osman-avci-mahallesi/goldekent-sitesi (2026-08-28)"
+   ],
+   "agir": false,
+   "temiz": false
   }
  ],
  "temiz_mi": false
