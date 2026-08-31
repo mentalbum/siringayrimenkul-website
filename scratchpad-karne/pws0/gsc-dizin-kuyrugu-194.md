@@ -36,7 +36,7 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-312-konutlari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/buyuk-ankara-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari ← 15.08 dizin dışı teyit
@@ -52,44 +52,44 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-concept ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-concept ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-bilge-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-bilge-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/eryaman-park-evleri ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi ← 20.08 istek gönderildi → AYNI AKŞAM DİZİNDE (API teyidi 22:2x, tarama 21:4x)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-arma ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/tulip-life ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utku-kent-2-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utku-kent-2-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cumhuriyet-sitesi ← 28.08 KAPANDI: kayıt Kutlutaş 2'ye birleştirildi (PR #85), adres 301 → kutlutas-2-bloklari — istek GÖNDERİLMEZ
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari ← 28.08 dizin dışı teyit (API; YENİ sayfa, Cumhuriyet'in varisi — eski adres 301 buraya)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari ← 28.08 dizin dışı teyit (API; YENİ sayfa)
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gode-yasam-konutlari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gode-yasam-konutlari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/inci-park-evleri-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-eryaman-konutlari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/soyak-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/tureli-residence ← 15.08 DİZİNDE (kendiliğinden)
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/altay-sitesi ← 23.08 istek gönderildi
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ankolular-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi ← 23.08 istek gönderildi
@@ -97,18 +97,18 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gordogu-sen-sitesi ← 23.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-1-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-1-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/master-kent-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/master-kent-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi ← 23.08 istek gönderildi
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/mesa-calisanlari-kooperatifi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/mesa-calisanlari-kooperatifi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/renk-villalari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/selale-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/renk-villalari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/selale-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/seniz-sitesi ← 23.08 istek gönderildi
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yukselay-sitesi ← 23.08 istek gönderildi
@@ -119,38 +119,38 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kackar-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozanadolu ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/sumeyra-sitesi ← 24.08 DİZİNDE (kendiliğinden; DOKUNMA notu 22.08de zaten vardı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yesil-asiyan-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/zadegan-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-metro-sitesi ← 15.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/caglar-sitesi ← 20.08 DİZİNDE (kendiliğinden; API taraması)
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ra-da-life ← 15.08 DİZİNDE (kendiliğinden)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mavi-koy-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sedirkent-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turkkonut-sinem-sitesi ← 27.08 DİZİNDE (kendiliğinden, "Submitted and indexed"; 28.08 temizliği)
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi ← 15.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/camli-klima-bloklari ← 20.08 istek gönderildi → AYNI AKŞAM DİZİNDE (API teyidi 22:2x, tarama 21:4x)
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ilgazlar-sitesi ← 20.08 istek gönderildi → AYNI AKŞAM DİZİNDE (API teyidi 22:2x, tarama 21:4x)
 - [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/okyanus-plaza ← 20.08 istek gönderildi → AYNI AKŞAM DİZİNDE (API teyidi 22:2x, tarama 21:4x)
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/betontas-bloklari ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/ilbeyi-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/uzuner-konutlari ← 15.08 DİZİNDE (kendiliğinden)
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/vatan-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari ← 15.08 dizin dışı teyit
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/concept-eryaman ← 15.08 DİZİNDE (kendiliğinden)
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi ← 15.08 dizin dışı teyit
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi ← 15.08 dizin dışı teyit
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman ← 15.08 dizin dışı teyit
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/lokasyon-eryaman ← 31.08 DİZİNDE (API denetimi; istek gerekmedi, kota harcanmadı)
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/may-tower ← 15.08 DİZİNDE (kendiliğinden)
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda ← 20.08 DİZİNDE (kendiliğinden; API taraması)
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line ← 15.08 dizin dışı teyit

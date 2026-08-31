@@ -488,3 +488,142 @@ NİYET KIRILIMI (ilk 1000 sorgu, 28 gün):
   → "eryaman emlakçı" 28 günde 470 gösterim / 19 tık. Ev sahibi sorguları
     NADİR ama TO'su yüksek ve pozisyonu en iyi (5,1). Alıcı sorguları hacmi
     taşıyor. Üç grup da önceki döneme göre büyümüş (+19% / +172% / +87%).
+
+## 31.08 — İÇERİK HİPOTEZİ ÖLDÜ (site-emlakçı sorguları için de)
+
+522 site kaydı, SERP grubuna göre (Yenimahalle hariç, medyan):
+
+| grup | n | açıklama uzunluğu | özellik sayısı | ada |
+|---|---|---|---|---|
+| ilk 3 | 357 | 677 | 5 | 1 |
+| 4-10 | 101 | 727 | 5 | 1 |
+| görünmez | 80 | 620 | 5 | 1 |
+
+İlk 3'teki sayfa ile hiç görünmeyen sayfa arasında ölçülebilir içerik farkı
+YOK — hatta 4-10 grubu ilk 3'ten daha UZUN. Bu, memory'deki "yalın ad içerik
+çıkmazı" bulgusunu genişletiyor: içerik eklemek "<site adı> emlakçı"
+sorgularını da kurtarmıyor.
+
+(Uyarı: ilk denemede `gorseller` alanı ölçülmüştü — site JSON'unda böyle bir
+alan YOK, foto adalarda duruyor. O sütun geçersizdi, atıldı.)
+
+## 31.08 — ADA CANONICAL'I REDDEDİLDİ (17/17)
+
+30 ada sayfası API denetimi (`gsc-api denetle-dosya`, canonical sütunu bugün
+eklendi):
+
+- 17 dizinde → Google'ın seçtiği canonical **17'sinde de ada sayfasının
+  KENDİSİ**. 03.08'de kurulan "canonical site sayfasına" düzeneği dört
+  haftadır tek vakada bile yutulmamış.
+- 13 dizin dışı (unknown / discovered-not-indexed).
+
+`app/sitemap.ts`'teki "bu sayfaların sitemap'te olmasının TEK amacı Google'ın
+o canonical'ı bir kez görmesi" gerekçesi böylece geçersiz.
+
+## 31.08 — "ADA SAYFALARI TARAMA BÜTÇESİ YİYOR" HİPOTEZİ DE ÖLDÜ
+
+Son 7 günde taranan: site sayfası 10/30, ada sayfası 4/30. Google zaten
+site sayfasına 2,5 kat fazla tarama ayırıyor. Ada sayfalarını sitemap'ten
+çıkarma gerekçesi düştü — ÖNERME.
+
+Sağlam kalan tek şey: ada sayfası SERP'te site sayfasının yerine çıktığında
+sıra 2,30 → 4,05'e düşüyor (n=557 vs n=59). Bunun ilacı başlık tarafında
+ama title'lar 5 Eylül'e kadar donuk (08.08 kararı) — 5 Eylül'de bak.
+
+## 31.08 — TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)
+
+| grup | n | dizinde | son 7g taranan | hiç taranmamış | bir ay+ eski |
+|---|---|---|---|---|---|
+| ilk 3 | 60 | 58 (%97) | 25 (%42) | 2 (%3) | 9 (%15) |
+| 4-10 bandı | 68 | 56 (%82) | 20 (%29) | 12 (%18) | 30 (%44) |
+
+Hiç taranmamış olma oranı 4-10 bandında 6 kat, bayat tarama 3 kat fazla.
+
+UYARI — bu bir İLİŞKİ ölçümü, ters nedensellik açık: Google zaten iyi sıradaki
+sayfayı daha sık tarar. Karşı kanıt damla turlarının müdahale sonuçları
+(istek → tarama → sıra: Alış 0→1, Selçuklu 0→9, Atalay 0→3). İkisi aynı yönü
+gösteriyor ama tek başına ilişki ölçümü nedensellik iddiası için yetmez;
+sitemap düzeltmesinin (PR #87) sonucu 1-2 hafta izlenip yeniden bakılacak.
+
+## 31.08 — GÖRÜNMEZLERİN GERÇEK TEŞHİSİ
+
+96 görünmez sayfa API'ye soruldu:
+- 57 "Submitted and indexed" → SIRA sorunu. 28g 2.584 gösterim, 75 tık, ort poz 7,4.
+  26'sı son 7 günde taranmış. Dizin isteği bunlara ÇARE DEĞİL, kota yakar.
+- 33 dizin dışı → 28g SIFIR gösterim. Kotanın tamamı buraya. 14'ü Devlet.
+- 6 sayfada Google API 500 döndü, yeniden sorulacak.
+
+Yeni kuyruk: DIZIN-DAMLASI-31-08.md. Eski kuyrukta 7 sayfa kendiliğinden
+dizine girmiş, işaretlendi.
+
+## 31.08 — SITEMAP DÜZELTMESİNİN ÇIKTISI BENZETİLDİ (PR #87)
+
+Canlı sitemap'in 1.141 mahalle/site/ada/etap adresi için lastModified yeniden
+hesaplandı (içerik tarihi ile taban tarihin büyüğü):
+
+| | eski (dört taban da 27.08) | yeni (gerçek tabanlar) |
+|---|---|---|
+| en kalabalık tek tarihin payı | %99 | %53 |
+| farklı tarih sayısı | 2 | 7 |
+
+Dağılım aileye göre ayrışıyor: 603 ada 16.08, 486 site 22.08, 22 site 23.08,
+11 mahalle 17.08. Yani Google site sayfalarını ada sayfalarından 6 gün TAZE
+görecek — ada sayfası site sayfasının yerine çıktığında sıra 2,30'dan 4,05'e
+düştüğü için istediğimiz sıra tam da bu.
+
+İLK BENZETİM YANLIŞTI: içerik dosyalarını saymış ve ada sayfalarını site
+tabanına bağlamıştı; %99 → %94 gibi cılız bir sonuç vermişti. Ada sayfaları
+mahalle içerik tarihinden besleniyor (app/sitemap.ts:259), site tabanından
+değil. Doğrusu yukarıdaki.
+
+## 31.08 — MAHALLE SAYFALARINDA TEK YÖNLÜ DÜŞÜŞ
+
+Gece turu 35 sayfayı yeniden ölçtü. Tür bazında ayrıldığında:
+
+| tür | yükseldi | düştü | aynı |
+|---|---|---|---|
+| site | 3 | 0 | 16 |
+| mahalle | 0 | 4 | 7 |
+| etap | 1 | 3 | 1 |
+
+Site sayfaları sağlam; hareket mahalle ve etap sayfalarında ve tamamı aşağı.
+
+Düşen dört mahallenin dördü de 21.08 ve öncesinde taranmış (Göksu 17.08,
+Tunahan 17.08, Yavuz Selim 17.08, Eryaman 21.08). 23.08 sonrası taranan
+7 sayfanın hiçbiri düşmemiş.
+
+DÜRÜST OKUMA: bu "4/4'e 0/7" görünüyor ama taze grubun 7'sinden 5'i zaten
+10+ (zeminde, düşemezdi). Düşmeye yeri olanlarla gerçek oran 4/4'e 0/2 —
+n=6, rastlantı ihtimali ~%7. İŞARET, KANIT DEĞİL. Yine de dört sayfa da
+hedef sorgu sayfası olduğu için damla kuyruğunda ÖNCELİK 0'a alındı;
+istek → aynı gün tarama mekanizması kanıtlı, en kötü ihtimalle tazelik döner.
+
+Doğrulama yolu: 1-2 gün sonra bu dördünü yeniden ölç. Tarama tazelenip sıra
+da toparlarsa ilişki güçlenir; tarama tazelenip sıra toparlamazsa hipotez
+çürür ve kaldıraç defterine "çürük" yazılır.
+
+## 31.08 — KENDİ HATAM: GÖRÜNMEZ LİSTESİ 16 HAYALET İÇERİYORDU
+
+Teşhis turu yakaladı, doğruladım: bugün kurduğum 75 hedefli damla kuyruğunun
+16'sı canlıda 404 veriyordu. Sebep bende — görünmez listesini güncel ölçüm
+kuyruğundan (504 kayıt) değil, ölçüm TARİHÇESİNDEN (745 anahtar) türetmiştim.
+Tarihçede eski slug'lar ve yanlış mahalleye yazılmış üç kayıt duruyor.
+
+Üçü gerçekte BAŞKA mahallede kayıtlı:
+  devlet-mahallesi/kardelen-sitesi → guzelkent-mahallesi/kardelen-sitesi
+  devlet-mahallesi/umut-sitesi     → seyh-samil-mahallesi/umut-sitesi
+  altay-mahallesi/merkez-sitesi    → goksu-mahallesi/merkez-sitesi
+Kalan 13'ün hiçbir mahallede içerik dosyası yok.
+
+DÜZELTİLEN RAKAMLAR (bugün Özgün'e verilen 33 rakamı YANLIŞTI):
+  gerçek görünmez        80 sayfa (96 değil)
+  sıra sorunu (dizinde)  57  — değişmedi
+  dizin sorunu (ölü)     17  — 33 değil
+  hayalet                16  — kuyruktan çıkarıldı
+"Devlet mahallesi en kötü" okuması da yanlıştı: 14 ölünün 12'si hayaletmiş.
+
+gorunmez-teshis-uret.py artık içerik dosyasıyla süzüyor; kuyrukta kalan 59
+hedefin 59'u da 200 döndüğü doğrulandı.
+
+DERS: SERP ölçüm tarihçesi bir ENVANTER DEĞİL. Sayfa listesi gerektiren her
+türetme content/siteler ile kesişmeli.

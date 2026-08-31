@@ -76,6 +76,22 @@ td.num { font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }
 .iki { display:grid; grid-template-columns:1fr 1fr; gap:16px }
 @media (max-width:760px) { .iki { grid-template-columns:1fr } }
 .pano { background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; padding:16px 18px }
+.kgrup { font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3);
+          margin:22px 0 10px; font-weight:600 }
+.kaldiraclar { display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) }
+.kaldirac { background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px;
+             padding:14px 16px; border-left:3px solid var(--m3) }
+.kaldirac.iyi { border-left-color:var(--iyi) }
+.kaldirac.kotu { border-left-color:var(--kotu) }
+.kaldirac.orta { border-left-color:var(--orta-r) }
+.kaldirac p { font-size:13.5px; margin:8px 0 0; line-height:1.55 }
+.kbas { display:flex; align-items:baseline; justify-content:space-between; gap:10px }
+.krozet { font-size:11.5px; padding:2px 8px; border-radius:20px; white-space:nowrap;
+           background:var(--orta-z); color:var(--orta-r) }
+.kaldirac.iyi .krozet { background:var(--iyi-z); color:var(--iyi) }
+.kaldirac.kotu .krozet { background:var(--kotu-z); color:var(--kotu) }
+.kkaynak { font-size:11.5px !important; color:var(--m3); margin-top:10px !important;
+            font-variant-numeric:tabular-nums }
 .pano h3 { margin:0 0 10px; font-size:16px }
 .pano ul { margin:0; padding:0; list-style:none }
 .pano li { display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid var(--cizgi); font-size:14.5px }
@@ -336,6 +352,53 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   </table></div>
   <p class="alt" style="margin-top:8px">Tam liste (203 sayfa) ve dizinsiz sınıfı:
   <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
+
+
+  <h2>Görünmeyen sayfalar — iki ayrı sorun</h2>
+  <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen 74 sayfa
+  Search Console′a tek tek soruldu. Çıkan sonuç karnenin eski varsayımını çevirdi:
+  <strong>görünmemek her zaman dizin sorunu değil.</strong> İkisinin ilacı farklı, o yüzden
+  ayrı sayılıyorlar. <strong>16 kayıt listeden çıkarıldı:</strong> ölçüm tarihçesinde duran ama sitede karşılığı olmayan eski adreslerdi (canlıda 404). Onlar dizin dışı değil, YOK — kota harcanmayacak. <span class="alt">6 sayfada Google API hata döndürdü, yeniden soruldu.</span></p>
+  <div class="iki">
+    <div class="pano">
+      <h3>Sıra sorunu — 57 sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>var</strong>, başka sorgularda
+      çalışıyor; yalnız kendi site adı sorgusunda ilk 10 dışında.</p>
+      <ul>
+        <li>Son 28 günde <strong>2.584</strong> gösterim, <strong>75</strong> tık
+            aldılar — ortalama pozisyon 7,4.</li>
+        <li>26′i son 7 gün içinde tarandı; yani taze, dizinde ve
+            yine de görünmüyor — yeniden taratmak çare değil.</li>
+        <li>Yoğunlaştığı mahalleler: Devlet 9, Seyh Samil 9, Eryaman 8, Sehit Osman Avci 8.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Dizin isteği bunlara boşa gider.</strong>
+      Kotayı yakar, sıra kazandırmaz.</p>
+    </div>
+    <div class="pano">
+      <h3>Dizin sorunu — 17 sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>yok</strong>: ya hiç bilinmiyor
+      ya keşfedilip dizine alınmamış.</p>
+      <ul>
+        <li>Son 28 günde <strong>sıfır</strong> gösterim, <strong>sıfır</strong> tık.
+            Tam ölü — tek ilaçları dizine girmek.</li>
+        <li>Yoğunlaştığı mahalleler: Sehit Osman Avci 5, Guzelkent 4, Devlet 2, Goksu 2.</li>
+        <li>Kanıt: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa istek sonrası aynı gün tarandı.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Günlük kotanın tamamı buraya.</strong>
+      ~10/gün ile 3-4 günde biter.</p>
+    </div>
+  </div>
+
+  <h2>Sıra nasıl iyileşir</h2>
+  <p class="not">Karne nerede geride olduğumuzu gösteriyor; bu bölüm <strong>ne yapmanın işe
+  yaradığını</strong> gösteriyor. Her satır bir ölçüme dayanıyor — çürüyenler de duruyor,
+  çünkü asıl maliyet aynı işi ikinci kez denemek. Toplam 10 kaldıraç izleniyor.</p>
+  <h3 class="kgrup">İşe yaradığı ölçüldü</h3>
+  <div class="kaldiraclar"><div class="kaldirac iyi"><div class="kbas"><strong>Dizin isteği damlası</strong><span class="krozet">işe yarıyor</span></div><p>14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. Dönüşümler: Alış 0→1 (+harita 1), Lale Kent 0→1, Atalay 0→3, Selçuklu 0→9, Arissa Göksu 0→1, Platin 2 3→1.</p><p class="alt" style="margin:6px 0 0">Kota günde ~10, kayan 24 saat. İstek yalnız GSC arayüzünden gider.</p><p class="kkaynak">gsc-dizin-kuyrugu-194.md + sonuclar-site-emlakci.jsonl</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Ev sahibi dilli başlık şablonu</strong><span class="krozet">işe yarıyor</span></div><p>Aynı sayfaların öncesi/sonrası (n=22): 13 yükseldi, 0 düştü, ortalama 3,64 → 2,27. Başlığı değişmeyen kontrol grubu aynı dönemde +0,31 kaydı ve 5 düşüş verdi.</p><p class="alt" style="margin:6px 0 0">Title′lar 5 Eylül′e kadar donuk (08.08 kararı).</p><p class="kkaynak">07-09.08 şablon değişikliği + pws=0 turları</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Tarama tazeliği (sıra ile ilişkisi)</strong><span class="krozet">işe yarıyor</span></div><p>128 sayfa API ile denetlendi. İlk 3′te olanların %3′ü hiç taranmamış, %15′i bir aydan eski taranmış. 4-10 bandındakilerde bu oranlar %18 ve %44 — yani hiç taranmamış olma 6 kat, bayat tarama 3 kat fazla. Dizinde olma oranı da farklı: %97′ye %82.</p><p class="alt" style="margin:6px 0 0">Bu bir İLİŞKİ ölçümü; ters nedensellik mümkün (Google zaten iyi sıradaki sayfayı daha sık tarar). Ama damla turları müdahale kanıtı veriyor: istek → tarama → sıra (Alış 0→1, Selçuklu 0→9). İkisi aynı yönü gösteriyor.</p><p class="kkaynak">31.08 API denetimi (ilk3 n=60, 4-10 n=68)</p></div></div>
+  <h3 class="kgrup">Açık sorular</h3>
+  <div class="kaldiraclar"><div class="kaldirac orta"><div class="kbas"><strong>Sitemap tazelik sinyali</strong><span class="krozet">açık soru</span></div><p>31.08: canlı sitemap′teki 1.178 adresin 1.146′sı aynı damgayı taşıyordu (27.08 footer değişikliği dört tabanı birden itmişti). Tabanlar gerçek tarihlere döndü.</p><p class="alt" style="margin:6px 0 0">Sonuç henüz ölçülmedi; tarama dağılımı 1-2 hafta izlenecek.</p><p class="kkaynak">31.08 düzeltmesi — PR #87</p></div><div class="kaldirac orta"><div class="kbas"><strong>Google′ın başlığımızı yeniden yazması</strong><span class="krozet">açık soru</span></div><p>Sayfaların ~%38′inde Google kendi başlığını kuruyor. İki hipotez elendi: uzunluk (76,8′e 77,6 karakter — fark yok) ve bayat dizin kopyası (canlı sayfa yeni şablonu basıyor).</p><p class="alt" style="margin:6px 0 0">Sebep HENÜZ BİLİNMİYOR. Uydurma açıklama yazılmaz; ölçüme devam.</p><p class="kkaynak">29-30.08 ölçümleri</p></div></div>
+  <h3 class="kgrup">Ölçüldü, çürüdü — tekrar denenmeyecek</h3>
+  <div class="kaldiraclar"><div class="kaldirac kotu"><div class="kbas"><strong>Sayfaya içerik/metin eklemek</strong><span class="krozet">çürütüldü</span></div><p>522 site kaydı SERP grubuna göre bölündü (medyan): ilk 3′te açıklama 677 karakter, 4-10 bandında 727, hiç görünmeyende 620. Yani 4-10 bandı ilk 3′ten DAHA uzun. Özellik sayısı üç grupta da 5.</p><p class="alt" style="margin:6px 0 0">Bu, &#x27;yalın ad içerik çıkmazı&#x27; bulgusunu emlakçı sorgularına da genişletiyor.</p><p class="kkaynak">31.08 ölçümü — PROTOKOL-gece.md</p></div><div class="kaldirac kotu"><div class="kbas"><strong>İç bağ pompalamak</strong><span class="krozet">çürütüldü</span></div><p>723 sayfanın gelen iç bağı build çıktısından sayıldı: dizin DIŞI sayfalar ortalamanın üstünde bağ alıyor (26,8′e 18,2); 30+ bağ alanların %69′u dizin dışı. Tek gerçek ayırıcı sorgu talebi — dizindekilerin 90 günlük medyan gösterimi 79, dizin dışıların 3.</p><p class="alt" style="margin:6px 0 0">Dosya yine de duruyor: tarama sıklığını destekliyor, zararı yok.</p><p class="kkaynak">20.08 otopsisi — lib/tarama-oncelikli.ts</p></div><div class="kaldirac kotu"><div class="kbas"><strong>Ada sayfalarını sitemap′ten çıkarmak</strong><span class="krozet">çürütüldü</span></div><p>Son 7 günde taranan: site sayfası 10/30, ada sayfası 4/30. Google zaten site sayfasına 2,5 kat fazla tarama ayırıyor — ada sayfaları tarama bütçesi yemiyor.</p><p class="alt" style="margin:6px 0 0">Gerekçe düştü, önerme.</p><p class="kkaynak">31.08 API denetimi (60 sayfa örneklem)</p></div><div class="kaldirac kotu"><div class="kbas"><strong>Ada sayfasının canonical′ı site sayfasına</strong><span class="krozet">çürütüldü</span></div><p>30 ada sayfası denetlendi: 17′si dizinde ve 17′sinin de 17′sinde Google canonical olarak ADA SAYFASININ KENDİSİNİ seçmiş. 03.08′de kurulan düzenek dört haftada tek vakada bile yutulmadı.</p><p class="alt" style="margin:6px 0 0">Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 5 Eylül′de bakılacak.</p><p class="kkaynak">31.08 API denetimi, googleCanonical sütunu</p></div><div class="kaldirac kotu"><div class="kbas"><strong>Hız / Core Web Vitals çalışması</strong><span class="krozet">çürütüldü</span></div><p>GSC &#x27;yeterli kullanım verisi yok&#x27; diyor — CrUX′ta ölçüm yok, dolayısıyla sıralamaya girdi olamıyor.</p><p class="alt" style="margin:6px 0 0">Trafik büyüyünce yeniden bak.</p><p class="kkaynak">memory: hız çalışması şu an anlamsız</p></div></div>
 
   <h2>Mahalle ayrıntıları</h2>
   

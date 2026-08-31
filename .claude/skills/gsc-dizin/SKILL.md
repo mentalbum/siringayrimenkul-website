@@ -11,9 +11,12 @@ Google dizinine sokmak. Tek geçerli dizin-durumu kaynağı **GSC URL denetimi**
 
 ## Dosyalar ve işaret düzeni
 
-- Ana kuyruk: `scratchpad-karne/pws0/gsc-dizin-kuyrugu-194.md` — talep sıralı
-  (talep sıralı; Yenimahalle grubu 27.08'de siteden kaldırıldı, kuyrukta yok). Olay notları dosyanın sonuna
-  `> tarih — not` biçiminde eklenir.
+- **Ana kuyruk (31.08'den beri): `scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md`.**
+  Bu dosyadaki HER kayıt API ile dizin dışı doğrulandı; 28 günde sıfır gösterim
+  almışlar. Sıra mahalle kümesine göre — aynı dalı arka arkaya taratmak için.
+- Eski kuyruk `gsc-dizin-kuyrugu-194.md` yalnız tarihçe için duruyor, oradan
+  istek ÇEKME: 31.08'de tamamı denetlendi ve **35 kaydın zaten dizinde** olduğu
+  çıktı. Olay notları kuyruk dosyasının sonuna `> tarih — not` biçiminde eklenir.
 - Özgün'e verilen çalışma kopyası: `scratchpad-karne/pws0/DIZINE-EKLENECEKLER.md`
   (kuyruktan yeniden üretilir; elle senkron etme, üret).
 - İşaretler:
@@ -22,6 +25,17 @@ Google dizinine sokmak. Tek geçerli dizin-durumu kaynağı **GSC URL denetimi**
   - `- [ ] URL ← GG.AA dizin dışı teyit` — dizin dışı ama istek HENÜZ gitmedi
 - Her anlamlı parça sonunda hedefli `git add` + commit + push (paralel oturumlar
   var; asla `git add -A` yapma, sadece dokunduğun dosyaları ekle).
+
+## GÖRÜNMEMEK ≠ DİZİN DIŞI (31.08 dersi)
+
+SERP'te görünmeyen sayfayı doğrudan dizin adayı sayma. 96 görünmez sayfa API'ye
+soruldu: **57'si zaten dizindeydi** — 28 günde 2.584 gösterim, 75 tık, ortalama
+pozisyon 7,4 alıyorlardı. Onların derdi sıra, dizin değil; istek göndermek
+kotayı yakar ve hiçbir şey kazandırmaz. Gerçekten dizin dışı olan 33 sayfa ise
+28 günde SIFIR gösterim almıştı.
+
+Kural: her adayı göndermeden önce `denetle` ile sor. "Submitted and indexed"
+çıkarsa `- [x] … DİZİNDE` diye işaretle ve geç.
 
 ## Kota gerçekleri (ölçülmüş)
 
