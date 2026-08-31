@@ -1,0 +1,112 @@
+{
+ "guncelleme": "2026-08-31",
+ "gurultu": {
+  "cift": 43,
+  "sessiz": 37,
+  "oran": 86,
+  "giris_cikis": 47,
+  "dagilim": [
+   [
+    0,
+    27
+   ],
+   [
+    1,
+    10
+   ],
+   [
+    2,
+    4
+   ],
+   [
+    3,
+    1
+   ],
+   [
+    4,
+    1
+   ]
+  ]
+ },
+ "olculen": 504,
+ "kuyruk": 504,
+ "kayit": 1385,
+ "yas": [
+  [
+   "0-7 gün",
+   502
+  ],
+  [
+   "8-14 gün",
+   2
+  ],
+  [
+   "15-30 gün",
+   0
+  ],
+  [
+   "30+ gün",
+   0
+  ]
+ ],
+ "bulgular": [
+  {
+   "ad": "Karşılığı olmayan sayfa kaydı",
+   "adet": 19,
+   "aciklama": "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda 404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar.",
+   "ornek": [
+    "altay-mahallesi/merkez-sitesi",
+    "altay-mahallesi/metropol-bloklari",
+    "altay-mahallesi/yildiz-bloklari",
+    "devlet-mahallesi/ahmet-taner-kislali-vadi-evleri"
+   ],
+   "agir": true,
+   "temiz": false
+  },
+  {
+   "ad": "Tarihi bozuk kayıt",
+   "adet": 0,
+   "aciklama": "Gelecek tarihli ya da alanı boş kayıt. Değişim hesabı tarih sırasına dayandığı için tek bir bozuk tarih yükselen/düşen tablosunu ters çevirebilir.",
+   "ornek": [],
+   "agir": true,
+   "temiz": true
+  },
+  {
+   "ad": "Sıra değeri aralık dışı",
+   "adet": 0,
+   "aciklama": "Ölçüm ilk 10 sonucu görüyor; 1-10 dışındaki değer ya ölçüm hatası ya eski num=20 kalıntısıdır.",
+   "ornek": [],
+   "agir": false,
+   "temiz": true
+  },
+  {
+   "ad": "Aynı gün iki kez ölçülmüş sayfa",
+   "adet": 3,
+   "aciklama": "Gün içinde yeniden ölçülüp farklı sıra çıkmış. Hata değil, Google gün içinde oynuyor — ama hangi ölçümün geçerli sayıldığı dosya sırasına kalıyor.",
+   "ornek": [
+    "guzelkent-mahallesi/kardelen-sitesi (2026-08-28)",
+    "sehit-osman-avci-mahallesi/bulvar-1071-sitesi (2026-08-28)",
+    "sehit-osman-avci-mahallesi/garden-zirve (2026-08-28)"
+   ],
+   "agir": false,
+   "temiz": false
+  },
+  {
+   "ad": "Kaldırılan mahalleye yeni ölçüm",
+   "adet": 0,
+   "aciklama": "Ata/Susuz/Cumhuriyet 27.08'de siteden kaldırıldı ve 410 dönüyor. Onlara harcanan ölçüm, kanalın günlük sorgu bütçesinden gider.",
+   "ornek": [],
+   "agir": false,
+   "temiz": true
+  },
+  {
+   "ad": "Hiç ölçülmemiş sayfa",
+   "adet": 0,
+   "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa. Karnedeki oranların paydasında yoklar — yani karne bilmediğini iyi sanabilir.",
+   "ornek": [],
+   "agir": false,
+   "temiz": true
+  }
+ ],
+ "temiz_mi": false
+}

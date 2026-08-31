@@ -187,6 +187,52 @@ _tur_olcumleri = [r for s_, r in son.items() if r["d"] >= "2026-08-21"]
 RAKIP_SAY, RAKIP_BIR, RAKIP_SINIF, RAKIP_YEREL = _rakip_hesapla(_tur_olcumleri)
 RAKIP_TOPLAM = sum(RAKIP_SINIF.values())
 
+# 31.08: değişim iki BAMBAŞKA olayı tek listede topluyordu ve büyük olanlar
+# küçükleri eziyordu. "İlk 10'a girmek" 99→1 diye kaydediliyor, yani fark 98;
+# panel en büyük 10'u gösterdiği için ekranda YALNIZ giriş/çıkış olayları
+# kalıyordu. Sonuç: ilk 10 İÇİNDE gerçek yükseliş yapan 49 sayfanın hiçbiri
+# Özgün'e görünmüyordu. Artık üçe ayrılıyor:
+#   giriş/çıkış  — sayfanın ilk 10'da olup olmaması (en büyük olay)
+#   ilk 10 içi   — sıra hareketi; ±1 gürültü sayılır (veri-sagligi.py, %86)
+# Kaldırılan Yenimahalle sayfaları (27.08) hepsinden süzülür.
+_YM_MAH = {"ata-mahallesi", "susuz-mahallesi", "cumhuriyet-mahallesi"}
+_DIS = lambda d: (d.get("onceki") or 99) >= 99
+_IC = lambda d: (d.get("onceki") or 99) < 99 and (d.get("simdi") or 99) < 99
+_DEG = [d for d in DEGISIM.values() if d["s"].split("/")[0] not in _YM_MAH]
+
+GIRENLER = sorted([d for d in _DEG if _DIS(d) and (d.get("simdi") or 99) < 99],
+                  key=lambda d: (d["simdi"], d["s"]))
+CIKANLAR = sorted([d for d in _DEG if not _DIS(d) and (d.get("simdi") or 99) >= 99],
+                  key=lambda d: (d["onceki"], d["s"]))
+IC_YUKSELEN = sorted([d for d in _DEG if _IC(d) and d["fark"] >= 2], key=lambda d: -d["fark"])
+IC_DUSEN = sorted([d for d in _DEG if _IC(d) and d["fark"] <= -2], key=lambda d: d["fark"])
+IC_GURULTU = [d for d in _DEG if _IC(d) and 0 < abs(d["fark"]) <= 1]
+
+# TAVAN ETKİSİ — karnenin en yanıltıcı yeriydi, 31.08'de ölçülüp ayrıldı.
+# İlk 10'da hem önce hem sonra ölçülen 293 sayfanın ortalaması 2,04'ten 2,36'ya
+# "kötüleşiyor" görünüyordu. Ama o sayfaların %41'i zaten 1. SIRADAYDI: yapısal
+# olarak yükselemez, yalnız düşebilirler. Yükselecek yeri olanlara (3. sıra ve
+# gerisi) bakınca yön TERSİNE dönüyor: 3,69 → 3,38 ve ≥2 yükselen 16'ya karşı
+# ≥2 düşen 5. Ortalama tek başına yanlış karar verdirir; ikisi birlikte basılır.
+_IC_HEPSI = [d for d in _DEG if _IC(d)]
+_IC_YERI_VAR = [d for d in _IC_HEPSI if d["onceki"] >= 3]
+
+
+def _ort(v, alan):
+    return round(sum(d[alan] for d in v) / len(v), 2) if v else None
+
+
+TAVAN = {
+    "hepsi_n": len(_IC_HEPSI),
+    "hepsi_once": _ort(_IC_HEPSI, "onceki"), "hepsi_sonra": _ort(_IC_HEPSI, "simdi"),
+    "birinci": sum(1 for d in _IC_HEPSI if d["onceki"] == 1),
+    "yeri_var_n": len(_IC_YERI_VAR),
+    "yeri_var_once": _ort(_IC_YERI_VAR, "onceki"), "yeri_var_sonra": _ort(_IC_YERI_VAR, "simdi"),
+    "yeri_var_yuk": sum(1 for d in _IC_YERI_VAR if d["fark"] >= 2),
+    "yeri_var_dus": sum(1 for d in _IC_YERI_VAR if d["fark"] <= -2),
+}
+
+# eski adlar geriye dönük kalsın (başka bölümler kullanıyor olabilir)
 YUKSELEN = sorted([d for d in DEGISIM.values() if d["fark"] > 0], key=lambda d: -d["fark"])
 DUSEN = sorted([d for d in DEGISIM.values() if d["fark"] < 0], key=lambda d: d["fark"])
 SABIT = [d for d in DEGISIM.values() if d["fark"] == 0]
@@ -405,12 +451,35 @@ def _sira_yazi(p):
     return "yok" if p >= 99 else f"{p}."
 
 def _degisim_satir(d):
+    # 31.08: her hareket gerçek değil. Kısa aralıkla yeniden ölçülen ve iki
+    # ölçümde de ilk 10'da olan çiftlerin %86'sı ≤1 sıra oynuyor (veri-sagligi.py,
+    # n=43). Yani ±1 ölçümün kendi oynaklığı — "gürültü" diye işaretlenir ki
+    # peşine düşülmesin. İlk 10'a giriş/çıkış bu kurala GİRMEZ, o gerçek olay.
     ok = "▲" if d["fark"] > 0 else "▼"
     cls = "iyi" if d["fark"] > 0 else "kotu"
+    # DİKKAT: "ilk 10 dışı" bu sözlükte 99 ile temsil ediliyor ve bool(99) True.
+    # İlk yazımda bool() ile kontrol edilmiş ve giriş/çıkış olayları da "ikisi de
+    # ilk 10'da" sayılmıştı; sayısal karşılaştırma şart.
+    ikisi_de_ilk10 = (d.get("onceki") or 99) < 99 and (d.get("simdi") or 99) < 99
+    gurultu = ikisi_de_ilk10 and abs(d["fark"]) <= 1
+    if gurultu:
+        cls = "gurultu"
+    etiket = ' <span class="gurultu-not">gürültü sınırında</span>' if gurultu else ""
     return (f'<li><span><strong>{esc(site_adi(d["s"]))}</strong> '
-            f'<span class="alt">{esc(MAH_AD.get(d["s"].split("/")[0], ""))}</span></span>'
+            f'<span class="alt">{esc(MAH_AD.get(d["s"].split("/")[0], ""))}</span>{etiket}</span>'
             f'<span class="chip {cls}">{ok} {_sira_yazi(d["onceki"])} → {_sira_yazi(d["simdi"])}</span></li>')
 
+girenler_html = "".join(_degisim_satir(d) for d in GIRENLER[:10]) or '<li class="alt">Yok</li>'
+cikanlar_html = "".join(_degisim_satir(d) for d in CIKANLAR[:10]) or '<li class="alt">Yok</li>'
+ic_yukselen_html = "".join(_degisim_satir(d) for d in IC_YUKSELEN[:10]) or '<li class="alt">Yok</li>'
+ic_dusen_html = "".join(_degisim_satir(d) for d in IC_DUSEN[:10]) or '<li class="alt">Yok</li>'
+
+
+def _v(x):
+    return str(x).replace(".", ",")
+
+
+tavan_yon = "iyileşme" if TAVAN["yeri_var_sonra"] < TAVAN["yeri_var_once"] else "gerileme"
 yukselen_html = "".join(_degisim_satir(d) for d in YUKSELEN[:10]) or '<li class="alt">Henüz yükselen yok</li>'
 dusen_html = "".join(_degisim_satir(d) for d in DUSEN[:10]) or '<li class="alt">Düşen yok</li>'
 degisim_ozet = (f"Yeniden ölçülen {len(DEGISIM)} sorgunun <strong>{len(YUKSELEN)}′i yükseldi</strong>, "
@@ -447,6 +516,67 @@ siradaki_html = "".join(
 ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
+
+# --- veri sağlığı (31.08) -------------------------------------------------
+# Tek günde ÜÇ sessiz veri hatası çıktı (hayalet kayıtlar, Türkçe İ, büyük harf
+# duyarlı filtre) ve üçü de karneyi yanlış gösterdi. Sağlık denetimi her üretimde
+# çalışır; geçmeyen rakama güvenilmez. Üreteci: veri-sagligi.py
+try:
+    _VS = json.load(open("veri-sagligi.json"))
+except Exception:
+    _VS = None
+if _VS:
+    _agir = [b for b in _VS["bulgular"] if b["agir"] and not b["temiz"]]
+    _uyari = [b for b in _VS["bulgular"] if not b["agir"] and not b["temiz"]]
+    _temiz = [b for b in _VS["bulgular"] if b["temiz"]]
+
+    def _vs_satir(b):
+        sinif = "kotu" if b["agir"] else "orta"
+        orn = ""
+        if b.get("ornek"):
+            orn = ('<span class="alt" style="display:block;margin-top:4px">'
+                   + esc(" · ".join(b["ornek"][:3])) + "</span>")
+        return (f'<li><span><strong>{esc(b["ad"])}</strong>'
+                f'<span class="alt" style="display:block">{esc(b["aciklama"])}</span>{orn}</span>'
+                f'<span class="chip {sinif}">{b["adet"]}</span></li>')
+
+    _vs_sorun = "".join(_vs_satir(b) for b in _agir + _uyari) or \
+        '<li class="alt">Denetimlerin hepsi temiz.</li>'
+    _vs_temiz = ", ".join(esc(b["ad"].lower()) for b in _temiz) or "—"
+    _yas = {k: v for k, v in _VS["yas"]}
+    _gu = _VS.get("gurultu") or {}
+    _vs_gurultu = ""
+    if _gu.get("oran") is not None:
+        _vs_gurultu = (f'Kısa aralıklı {_gu["cift"]} yeniden ölçümün '
+                       f'<strong>%{_gu["oran"]}′i ≤1 sıra oynuyor</strong> — bu yüzden bir sıralık '
+                       f'hareket gürültü sayılıyor. Ayrıca {_gu["giris_cikis"]} giriş/çıkış olayı var, '
+                       f'onlar gerçek.')
+    saglik_html = f"""
+  <h2>Verinin sağlığı</h2>
+  <p class="not">Karnedeki her rakam ölçüm dosyalarından üretiliyor; o dosyalar
+  bozulursa karne çalışmaya devam eder ama <strong>yanlış söyler</strong>. 31.08′de tek
+  günde üç sessiz hata çıktı, bu yüzden her üretimde şu denetimler koşuyor.</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>Kapsama</h3>
+      <ul>
+        <li><span>Ölçüm kuyruğundaki sayfa</span><span class="chip">{_VS["kuyruk"]}</span></li>
+        <li><span>En az bir kez ölçülmüş</span><span class="chip iyi">{_VS["olculen"]}</span></li>
+        <li><span>Son 7 gün içinde ölçülmüş</span><span class="chip iyi">{_yas.get("0-7 gün", 0)}</span></li>
+        <li><span>8-14 gündür ölçülmemiş</span><span class="chip">{_yas.get("8-14 gün", 0)}</span></li>
+        <li><span>15 günden eski</span><span class="chip">{_yas.get("15-30 gün", 0) + _yas.get("30+ gün", 0)}</span></li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0">{_vs_gurultu}</p>
+    </div>
+    <div class="pano">
+      <h3>Bulunan sorunlar</h3>
+      <ul>{_vs_sorun}</ul>
+      <p class="alt" style="margin:10px 0 0">Temiz çıkan denetimler: {_vs_temiz}.</p>
+    </div>
+  </div>
+"""
+else:
+    saglik_html = ""
 
 # --- görünmezlerin gerçek teşhisi (31.08) ---------------------------------
 # Karne 31.08'e kadar "görünmüyor → dizine ekle" varsayıyordu. API denetimi
@@ -600,6 +730,8 @@ td.num {{ font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }}
 .chip {{ display:inline-block; padding:2px 9px; border-radius:99px; font-size:13px; font-weight:600; white-space:nowrap }}
 .chip.iyi {{ background:var(--iyi-z); color:var(--iyi) }}
 .chip.kotu {{ background:var(--kotu-z); color:var(--kotu) }}
+.chip.gurultu {{ background:var(--zemin2,transparent); color:var(--m3); border:1px solid var(--cizgi) }}
+.gurultu-not {{ font-size:11px; color:var(--m3); font-style:italic }}
 .chip.orta {{ background:var(--orta-z); color:var(--orta-r) }}
 .chip.nul {{ background:transparent; color:var(--m3); border:1px dashed var(--cizgi) }}
 .lejant {{ display:flex; flex-wrap:wrap; gap:14px; font-size:13px; color:var(--m2); margin:10px 2px 0 }}
@@ -744,18 +876,53 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   </div>
 
   <h2>Son ölçümde ne değişti</h2>
-  <p class="not">Her sorgu yeniden ölçüldükçe önceki sıra ile karşılaştırılıyor.
-  “İlk 10′da yok” en kötü konum sayılır; oradan ilk 10′a girmek en büyük kazanç.
+  <p class="not">Burada iki bambaşka olay var ve bir arada gösterilince büyük olan
+  küçüğü eziyordu: bir sayfanın <strong>ilk 10′a girmesi</strong> ile <strong>ilk 10
+  içinde sıra değiştirmesi</strong>. Birincisi 99′dan 1′e atlamak gibi kaydedildiği
+  için listeyi tek başına dolduruyor, ikincisi hiç görünmüyordu. Artık ayrı.
   {degisim_ozet}</p>
+
+  <h3 class="kgrup">İlk 10′a giriş ve çıkış — en büyük olay</h3>
   <div class="iki">
     <div class="pano">
-      <h3>Yükselenler</h3>
-      <ul>{yukselen_html}</ul>
+      <h3>İlk 10′a girenler <span class="krozet">{len(GIRENLER)}</span></h3>
+      <ul>{girenler_html}</ul>
     </div>
     <div class="pano">
-      <h3>Düşenler</h3>
-      <ul>{dusen_html}</ul>
+      <h3>İlk 10′dan çıkanlar <span class="krozet">{len(CIKANLAR)}</span></h3>
+      <ul>{cikanlar_html}</ul>
     </div>
+  </div>
+
+  <h3 class="kgrup">İlk 10 içinde hareket — ±1 gürültü sayılır</h3>
+  <p class="not" style="margin-bottom:12px">Kısa aralıkla yeniden ölçülen ve iki
+  ölçümde de ilk 10′da olan sayfaların <strong>%86′sı ≤1 sıra oynuyor</strong>; yani
+  bir sıralık hareket ölçümün kendi dalgalanması, peşine düşülmez. Bu turda
+  {len(IC_GURULTU)} sayfa o aralıkta kaldı ve listeye alınmadı.</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>İçeride yükselenler <span class="krozet">{len(IC_YUKSELEN)}</span></h3>
+      <ul>{ic_yukselen_html}</ul>
+    </div>
+    <div class="pano">
+      <h3>İçeride düşenler <span class="krozet">{len(IC_DUSEN)}</span></h3>
+      <ul>{ic_dusen_html}</ul>
+    </div>
+  </div>
+
+  <div class="pano" style="margin-top:14px">
+    <h3>Ortalama neden kötüleşmiş görünüyor — tavan etkisi</h3>
+    <p class="alt" style="margin:8px 0 0">İlk 10′da hem önce hem sonra ölçülen
+    <strong>{TAVAN['hepsi_n']}</strong> sayfanın ortalama sırası
+    {_v(TAVAN['hepsi_once'])} → {_v(TAVAN['hepsi_sonra'])}, yani kâğıt üzerinde kötüleşmiş.
+    Ama bu sayfaların <strong>{TAVAN['birinci']}′i zaten 1. sıradaydı</strong> —
+    yükselecek yerleri yoktu, yalnız düşebilirlerdi.</p>
+    <p class="alt" style="margin:10px 0 0">Yükselecek yeri olanlara (3. sıra ve
+    gerisinden başlayan {TAVAN['yeri_var_n']} sayfa) bakınca yön tersine dönüyor:
+    ortalama <strong>{_v(TAVAN['yeri_var_once'])} → {_v(TAVAN['yeri_var_sonra'])}</strong>,
+    ≥2 sıra yükselen {TAVAN['yeri_var_yuk']}′e karşı düşen {TAVAN['yeri_var_dus']}.
+    Yani gerçek yön {tavan_yon}. Tek başına ortalamaya bakmak burada yanlış karar
+    verdirirdi.</p>
   </div>
 
   <h2>Dizine eklenecekler</h2>
@@ -770,6 +937,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="alt" style="margin-top:8px">Tam liste ({aday_sayisi} sayfa) ve dizinsiz sınıfı:
   <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
 
+{saglik_html}
 {teshis_html}
   <h2>Sıra nasıl iyileşir</h2>
   <p class="not">Karne nerede geride olduğumuzu gösteriyor; bu bölüm <strong>ne yapmanın işe
