@@ -111,17 +111,18 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi  
       _hiç bilinmiyor_
 
-## Denetimi başarısız — yeniden sorulacak (6)
+## Yeniden denetlendi (6) — 31.08
 
-Google API 500 döndü, sayfanın durumu hakkında bilgi DEĞİL.
+Google API ilk turda 500 döndürmüştü. Yeniden soruldu:
+**5'i zaten dizinde** (istek gerekmiyor), 1'i dizin dışı.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi
-
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari  
+      _hiç bilinmiyor_
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi ← 31.08 DİZİNDE (yeniden denetim)
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi ← 31.08 DİZİNDE (yeniden denetim)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari ← 31.08 DİZİNDE (yeniden denetim)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi ← 31.08 DİZİNDE (yeniden denetim)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi ← 31.08 DİZİNDE (yeniden denetim)
 
 ---
 
