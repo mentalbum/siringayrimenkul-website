@@ -26,7 +26,19 @@ for L in open(f"{S}/sayfalar28.tsv"):
     try: gost[p[3].rstrip("/")] = (int(p[0]), int(p[1]), float(p[2]))
     except ValueError: pass
 
-diz, olu, hatali = [], [], []
+# 31.08 (ikinci düzeltme): görünmez listesi ölçüm TARİHÇESİNDEN türetiliyordu
+# ve tarihçede içerik dosyası artık olmayan 16 anahtar duruyordu (eski slug'lar +
+# yanlış mahalleye yazılmış üç kayıt). Onlar canlıda 404 veriyor — "dizin dışı"
+# değil, YOK. Kota harcanmasın diye içerik dosyasıyla süzülüyor.
+KOK = "/Users/ozgun/websitem/content/siteler"
+
+def _gercek(u):
+    if "/mahalleler/" not in u: return True          # mahalle kökü vb.
+    yol = u.split("/mahalleler/")[1].rstrip("/")
+    if yol.count("/") != 1: return True
+    return os.path.exists(f"{KOK}/{yol}.json")
+
+diz, olu, hatali, hayalet = [], [], [], []
 for L in open(f"{S}/gorunmez-denetim.tsv"):
     p = L.rstrip("\n").split("\t")
     if len(p) < 3: continue
@@ -34,6 +46,8 @@ for L in open(f"{S}/gorunmez-denetim.tsv"):
         hatali.append({"u": p[0], "kapsam": p[2]}); continue
     if len(p) < 4: continue
     u = p[0].rstrip("/")
+    if not _gercek(u):
+        hayalet.append(u); continue
     kayit = {"u": u, "kapsam": p[2], "tarama": p[3],
              "gost": gost.get(u, (0, 0, 0))[0], "tik": gost.get(u, (0, 0, 0))[1],
              "poz": gost.get(u, (0, 0, 0))[2],
@@ -47,9 +61,9 @@ def topla(v):
 
 cikti = {"guncelleme": "2026-08-31",
          "sira_sorunu": topla(diz), "dizin_sorunu": topla(olu),
-         "denetlenemedi": len(hatali),
+         "denetlenemedi": len(hatali), "hayalet": len(hayalet),
          "taze_ama_gorunmez": sum(1 for x in diz if x["tarama"] >= "2026-08-24"),
          "olu_liste": sorted((x["u"] for x in olu))}
 json.dump(cikti, open("gorunmez-teshis.json", "w"), ensure_ascii=False, indent=1)
 print(f"sıra sorunu {cikti['sira_sorunu']['n']} · dizin sorunu {cikti['dizin_sorunu']['n']} "
-      f"· denetlenemedi {cikti['denetlenemedi']}")
+      f"· denetlenemedi {cikti['denetlenemedi']} · hayalet (içerik dosyası yok) {cikti['hayalet']}")

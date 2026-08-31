@@ -462,14 +462,19 @@ if _GT:
                         for m, n in _sr["mah"][:4])
     _mah_dz = ", ".join(f"{m.replace('-mahallesi','').replace('-',' ').title()} {n}"
                         for m, n in _dz["mah"][:4])
+    _hayalet = _GT.get("hayalet", 0)
+    _hayalet_not = (f' <strong>{_hayalet} kayıt listeden çıkarıldı:</strong> ölçüm '
+                    f'tarihçesinde duran ama sitede karşılığı olmayan eski adreslerdi '
+                    f'(canlıda 404). Onlar dizin dışı değil, YOK — kota harcanmayacak.'
+                    if _hayalet else "")
     _hata_not = (f' <span class="alt">{_GT["denetlenemedi"]} sayfada Google API hata '
-                 f'döndürdü, yeniden sorulacak.</span>' if _GT["denetlenemedi"] else "")
+                 f'döndürdü, yeniden soruldu.</span>' if _GT["denetlenemedi"] else "")
     teshis_html = f"""
   <h2>Görünmeyen sayfalar — iki ayrı sorun</h2>
   <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen {_sr['n'] + _dz['n']} sayfa
   Search Console′a tek tek soruldu. Çıkan sonuç karnenin eski varsayımını çevirdi:
   <strong>görünmemek her zaman dizin sorunu değil.</strong> İkisinin ilacı farklı, o yüzden
-  ayrı sayılıyorlar.{_hata_not}</p>
+  ayrı sayılıyorlar.{_hayalet_not}{_hata_not}</p>
   <div class="iki">
     <div class="pano">
       <h3>Sıra sorunu — {_sr['n']} sayfa</h3>

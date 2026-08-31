@@ -601,3 +601,29 @@ istek → aynı gün tarama mekanizması kanıtlı, en kötü ihtimalle tazelik 
 Doğrulama yolu: 1-2 gün sonra bu dördünü yeniden ölç. Tarama tazelenip sıra
 da toparlarsa ilişki güçlenir; tarama tazelenip sıra toparlamazsa hipotez
 çürür ve kaldıraç defterine "çürük" yazılır.
+
+## 31.08 — KENDİ HATAM: GÖRÜNMEZ LİSTESİ 16 HAYALET İÇERİYORDU
+
+Teşhis turu yakaladı, doğruladım: bugün kurduğum 75 hedefli damla kuyruğunun
+16'sı canlıda 404 veriyordu. Sebep bende — görünmez listesini güncel ölçüm
+kuyruğundan (504 kayıt) değil, ölçüm TARİHÇESİNDEN (745 anahtar) türetmiştim.
+Tarihçede eski slug'lar ve yanlış mahalleye yazılmış üç kayıt duruyor.
+
+Üçü gerçekte BAŞKA mahallede kayıtlı:
+  devlet-mahallesi/kardelen-sitesi → guzelkent-mahallesi/kardelen-sitesi
+  devlet-mahallesi/umut-sitesi     → seyh-samil-mahallesi/umut-sitesi
+  altay-mahallesi/merkez-sitesi    → goksu-mahallesi/merkez-sitesi
+Kalan 13'ün hiçbir mahallede içerik dosyası yok.
+
+DÜZELTİLEN RAKAMLAR (bugün Özgün'e verilen 33 rakamı YANLIŞTI):
+  gerçek görünmez        80 sayfa (96 değil)
+  sıra sorunu (dizinde)  57  — değişmedi
+  dizin sorunu (ölü)     17  — 33 değil
+  hayalet                16  — kuyruktan çıkarıldı
+"Devlet mahallesi en kötü" okuması da yanlıştı: 14 ölünün 12'si hayaletmiş.
+
+gorunmez-teshis-uret.py artık içerik dosyasıyla süzüyor; kuyrukta kalan 59
+hedefin 59'u da 200 döndüğü doğrulandı.
+
+DERS: SERP ölçüm tarihçesi bir ENVANTER DEĞİL. Sayfa listesi gerektiren her
+türetme content/siteler ile kesişmeli.

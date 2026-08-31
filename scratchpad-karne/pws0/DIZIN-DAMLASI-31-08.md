@@ -60,31 +60,19 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 ## devlet-mahallesi (14)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ahmet-taner-kislali-vadi-evleri  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizati-sitesi  
       _hiç bilinmiyor_
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/doga-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ege-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/emlak-bankasi-konutlari  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/huzur-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/kardelen-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/miray-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oyku-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/park-vera-konutlari  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turk-ocagi-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/umut-sitesi  
       _hiç bilinmiyor_
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi  
       _keşfedildi, dizine alınmadı_
@@ -115,7 +103,6 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 ## goksu-mahallesi (3)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-evleri  
       _hiç bilinmiyor_
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari  
       _keşfedildi, dizine alınmadı_
@@ -126,16 +113,13 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kervan-sitesi  
       _hiç bilinmiyor_
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi  
       _keşfedildi, dizine alınmadı_
 
 ## altay-mahallesi (2)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/merkez-sitesi  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/yildiz-bloklari  
       _hiç bilinmiyor_
 
 ## seker-mahallesi (1)

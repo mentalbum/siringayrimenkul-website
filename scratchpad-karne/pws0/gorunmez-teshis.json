@@ -49,15 +49,11 @@
   ]
  },
  "dizin_sorunu": {
-  "n": 33,
+  "n": 17,
   "gost": 0,
   "tik": 0,
   "poz": 0.0,
   "mah": [
-   [
-    "devlet-mahallesi",
-    14
-   ],
    [
     "sehit-osman-avci-mahallesi",
     5
@@ -67,15 +63,15 @@
     4
    ],
    [
+    "devlet-mahallesi",
+    2
+   ],
+   [
     "goksu-mahallesi",
-    3
+    2
    ],
    [
     "seyh-samil-mahallesi",
-    3
-   ],
-   [
-    "altay-mahallesi",
     2
    ],
    [
@@ -89,25 +85,11 @@
   ]
  },
  "denetlenemedi": 6,
+ "hayalet": 16,
  "taze_ama_gorunmez": 26,
  "olu_liste": [
-  "https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/merkez-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/yildiz-bloklari",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ahmet-taner-kislali-vadi-evleri",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizati-sitesi",
   "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/doga-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ege-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/emlak-bankasi-konutlari",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/huzur-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/kardelen-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/miray-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/oyku-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/park-vera-konutlari",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/turk-ocagi-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/umut-sitesi",
   "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-evleri",
   "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari",
   "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
   "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi",
@@ -121,7 +103,6 @@
   "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman",
   "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence",
   "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kervan-sitesi",
   "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi",
   "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi"
  ]
