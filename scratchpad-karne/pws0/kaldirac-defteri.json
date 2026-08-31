@@ -5,9 +5,9 @@
   {
    "durum": "kanitli",
    "ad": "Dizin isteği damlası",
-   "olcum": "14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. Dönüşümler: Alış 0→1 (+harita 1), Lale Kent 0→1, Atalay 0→3, Selçuklu 0→9, Arissa Göksu 0→1, Platin 2 3→1.",
-   "kaynak": "gsc-dizin-kuyrugu-194.md + sonuclar-site-emlakci.jsonl",
-   "kisit": "Kota günde ~10, kayan 24 saat. İstek yalnız GSC arayüzünden gider."
+   "olcum": "İSTEK → TARAMA bağı sağlam: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. İSTEK → SIRA bağı ise ZAYIF. 31.08'de altı 'dönüşüm' iddiası tam geçmişiyle sınandı: Arissa Göksu 4→1 ve Platin 2 3→1 gerçek kazanç, Alış 3→1 gerçek; ama Lale Kent 1→(kayıp)→1 ve Atalay 3→(kayıp)→3 hiç kazanç değil, eski yerlerine döndüler; Selçuklu 2→(kayıp)→9 ise GERİLEME. Yani altıda üç.",
+   "kaynak": "14.08 ve 29.08 damla turları + 31.08 tam-geçmiş denetimi",
+   "kisit": "Kota günde ~10, kayan 24 saat; istek yalnız GSC arayüzünden gider. ÖNCEKİ SÜRÜM YANILTICIYDI: dönüşümler tek adımlık '0→N' olarak yazılmıştı ve sayfanın o kayıptan ÖNCEKİ sırasını gizliyordu. Bir sayfanın ölçümde geçici kaybolup geri gelmesi olağan (11 vaka, günlük ölçümlerin ~%1'i); kaybolmadan önceki sıra bilinmeden 'kazanç' denemez."
   },
   {
    "durum": "kanitli",

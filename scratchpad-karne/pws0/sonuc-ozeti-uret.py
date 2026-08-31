@@ -44,6 +44,40 @@ ozet["ayrim"] = {
     "eryaman": {"simdi": e28, "onceki": onceki(e56, e28)},
     "yenimahalle": {"simdi": y28, "onceki": onceki(y56, y28)},
 }
+
+# HAFTALIK AYRIM — 31.08'de iki hata birden bulundu ve ikisi de bu veriyle çözülüyor:
+#
+# 1) "Toplam +%130 büyüme" rozetleri yanıltıcıydı. GSC mülkünün verisi 25.06'da
+#    BAŞLIYOR (ilk hafta 1 tık); "önceki 28 gün" tabanı mülkün ilk ayına denk
+#    geliyor, yani rozet büyümeyi değil mülkün rampasını ölçüyordu.
+# 2) "Son üç hafta düşüyor — sebebi Yenimahalle kaldırması" cümlesi de yanlıştı.
+#    Haftalık ayrım gösteriyor ki düşüş HER İKİ grupta da var ve 27.08'den
+#    ÖNCE başlamış. Yenimahalle'nin kalkması ayrıca gelecek bir kayıp, ama
+#    şimdiki düşüşün sebebi değil.
+haftalik = []
+pencereler = [7, 14, 21, 28, 35, 42]
+kumulatif = {g: bol(sayfa(g)) for g in pencereler}
+onceki_g = None
+for g in pencereler:
+    e, y = kumulatif[g]
+    if onceki_g is None:
+        haftalik.append({"gecmis_hafta": 1, "eryaman": e["tik"], "yenimahalle": y["tik"]})
+    else:
+        # DİKKAT: pencereler KÜMÜLATİF (son 14 gün, son 21 gün...). Bir haftalık
+        # dilim = BÜYÜK pencere eksi küçük pencere. İlk yazımda ters çıkarılmış
+        # ve bütün haftalar eksi değer vermişti.
+        pe, py = kumulatif[onceki_g]
+        haftalik.append({"gecmis_hafta": g // 7,
+                         "eryaman": e["tik"] - pe["tik"],
+                         "yenimahalle": y["tik"] - py["tik"]})
+    onceki_g = g
+ozet["haftalik_ayrim"] = list(reversed(haftalik))   # eskiden yeniye
+
+# MÜLKÜN İLK VERİSİ. 28 günlük çağrının serisi yalnız son 4 haftayı verir ve
+# başlangıcı 01.08 sanır; gerçek başlangıç için geniş pencere sorulur.
+_uzun = json.loads(calistir("ozet", "180")).get("haftalar") or []
+ozet["mulk_baslangic"] = _uzun[0]["bas"] if _uzun else None
+ozet["mulk_haftalari"] = len(_uzun)
 ozet["uretim"] = datetime.date.today().isoformat()
 p = f"{KOK}/scratchpad-karne/pws0/sonuc-ozeti.json"
 json.dump(ozet, open(p, "w"), ensure_ascii=False, indent=1)

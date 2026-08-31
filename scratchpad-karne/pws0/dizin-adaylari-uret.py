@@ -82,9 +82,44 @@ for s, r in son.items():
     elif d in ("bayat", "orta", "?"):
         adaylar.append(kayit)
 
+# 31.08 — EN AĞIR KUSUR BURADAYDI. Adaylar yalnız SERP KAYBINA göre seçiliyordu;
+# sayfanın Google'da olup olmadığına hiç bakılmıyordu. Ölçüldü: 203 adayın
+# 203'ü de aslında DİZİNDE. Yani tablo, karnenin kendi teşhis bölümünün
+# "dizin isteği bunlara boşa gider, kotayı yakar" dediği gruptan öneri
+# yapıyordu. Artık gorunmez-teshis.json'daki API doğrulaması bağlanıyor:
+#   dizin dışı  → istek gönderilir (gerçek aday)
+#   dizinde     → SIRA sorunu; ayrı listeye alınır, kota harcanmaz
+# Doğrulanmış ölü sayfa kümesi İKİ kaynaktan birleşir:
+#   gorunmez-teshis.json  → SERP'te görünmeyenlerin API denetimi (17 sayfa)
+#   DIZIN-DAMLASI-31-08.md → damla kuyruğunun açık maddeleri; hepsi API ile
+#     dizin dışı doğrulandı (71 sayfa). Tek başına ilkini kullanmak listeyi
+#     eksik bırakıyordu.
+import re as _re
+_OLU = set()
+try:
+    _t = json.load(open("gorunmez-teshis.json"))
+    _OLU |= {u.rstrip("/") for u in _t.get("olu_liste", [])}
+except Exception:
+    pass
+try:
+    _kuyruk = open("DIZIN-DAMLASI-31-08.md").read()
+    _OLU |= {m.rstrip("/") for m in _re.findall(r"^- \[ \] (https://\S+)", _kuyruk, _re.M)}
+except Exception:
+    pass
+if not _OLU:
+    _OLU = None
+
+_SITE = "https://www.siringayrimenkul.com"
+sira_sorunlulari = []
+if _OLU is not None:
+    _gercek = [a for a in adaylar if f"{_SITE}{a['yol']}" in _OLU]
+    sira_sorunlulari = [a for a in adaylar if f"{_SITE}{a['yol']}" not in _OLU]
+    adaylar = _gercek
+
 ONCELIK = {"GÖRÜNMEZ": 0, "ada temsil": 1, "komşu sayfa temsil": 1,
            "mahalle sayfası temsil": 1, "eski slug": 2, "eski başlık": 3}
 adaylar.sort(key=lambda x: (ONCELIK.get(x["tur"], 9), -x["gos"]))
+sira_sorunlulari.sort(key=lambda x: -x["gos"])
 
 MAH_AD = {"tunahan-mahallesi": "Tunahan", "altay-mahallesi": "Altay",
           "devlet-mahallesi": "Devlet", "eryaman-mahallesi": "Eryaman",
@@ -101,8 +136,12 @@ sat = ["# DİZİN İSTEĞİ ADAYLARI — SERP turlarından üretildi",
        "Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıldı, 410.  ",
        "**Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve",
        "SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.\n",
-       f"**{len(adaylar)} aday · {len(beklemede)} istek gönderilmiş bekliyor · "
-       f"{len(dizinsizler)} dizinsiz (kota dışı)**\n",
+       f"**{len(adaylar)} aday · {len(sira_sorunlulari)} SIRA sorunu (kota harcanmaz) · "
+       f"{len(beklemede)} istek gönderilmiş bekliyor · {len(dizinsizler)} dizinsiz**\n",
+       "> **Aday olmak için SERP'te kayıp olmak yetmez, Google'da OLMAMAK gerekir.**",
+       "> 31.08'de ölçüldü: SERP kaybına göre seçilen 203 sayfanın 203'ü de zaten",
+       "> dizindeydi. Onlara istek göndermek kotayı yakar, sıra kazandırmaz —",
+       "> dertleri dizin değil sıra. Bu liste artık GSC denetimiyle süzülüyor.\n",
        "## Öncelik sırası (görünmez → temsil edilen → eski slug → eski başlık)\n",
        "| # | Sayfa | Mahalle | SERP durumu | Sıra | Gösterim | Son tarama |",
        "|---|---|---|---|---|---|---|"]
@@ -110,6 +149,16 @@ for i, a in enumerate(adaylar, 1):
     sira = "yok" if a["sira"] == 0 else str(a["sira"]) + "."
     sat.append(f"| {i} | `{a['site']}` | {MAH_AD.get(a['mah'], a['mah'])} | {a['tur']} | "
                f"{sira} | {a['gos']} | {a['tarama']} |")
+
+sat.append("\n## SERP'te kayıp AMA dizinde — kota harcanmaz, sıra sorunu\n")
+sat.append("Bu sayfalar Google'da var; SERP'te kaybolmalarının sebebi dizin değil.")
+sat.append("Dizin isteği göndermek kotayı boşa yakar.\n")
+for a in sira_sorunlulari[:40]:
+    sira = "yok" if a["sira"] == 0 else str(a["sira"]) + "."
+    sat.append(f"- `{a['site']}` ({MAH_AD.get(a['mah'], a['mah'])}) — {a['tur']}, "
+               f"sıra {sira}, {a['gos']} gösterim")
+if len(sira_sorunlulari) > 40:
+    sat.append(f"- … ve {len(sira_sorunlulari) - 40} sayfa daha")
 
 sat.append("\n## İstek gönderildi, tarama bekliyor\n")
 for a in sorted(beklemede, key=lambda x: -x["gos"]):
@@ -121,5 +170,8 @@ for a in sorted(dizinsizler, key=lambda x: (x["mah"], x["site"])):
     sat.append(f"- `{a['site']}` ({MAH_AD.get(a['mah'], a['mah'])}) — {a['tur']}")
 
 open("dizin-adaylari.md", "w").write("\n".join(sat) + "\n")
-print(f"yazıldı: dizin-adaylari.md — {len(adaylar)} aday, {len(beklemede)} bekleyen, {len(dizinsizler)} dizinsiz")
+print(f"yazıldı: dizin-adaylari.md — {len(adaylar)} GERÇEK aday, "
+      f"{len(sira_sorunlulari)} sıra sorunu (kota harcanmaz), "
+      f"{len(beklemede)} bekleyen, {len(dizinsizler)} dizinsiz")
 json.dump(adaylar, open("dizin-adaylari.json", "w"), ensure_ascii=False, indent=1)
+json.dump(sira_sorunlulari, open("sira-sorunlulari.json", "w"), ensure_ascii=False, indent=1)

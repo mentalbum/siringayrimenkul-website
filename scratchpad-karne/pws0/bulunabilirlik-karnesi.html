@@ -66,6 +66,14 @@ td.num { font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }
 .chip.iyi { background:var(--iyi-z); color:var(--iyi) }
 .chip.kotu { background:var(--kotu-z); color:var(--kotu) }
 .chip.gurultu { background:var(--zemin2,transparent); color:var(--m3); border:1px solid var(--cizgi) }
+/* 31.08: .hafta/.hf sınıfları basılıyordu ama CSS'leri HİÇ YOKTU — grafik
+   ekranda "697698598538" diye bitişik rakam yığını olarak görünüyordu. */
+.hafta { display:flex; align-items:flex-end; gap:10px; height:64px; margin-top:6px }
+.hf { flex:1; display:flex; align-items:flex-start; justify-content:center;
+       background:var(--iyi-z); border:1px solid var(--iyi); border-bottom:none;
+       border-radius:4px 4px 0 0; min-width:0 }
+.hf i { font-style:normal; font-size:11px; color:var(--iyi); font-variant-numeric:tabular-nums;
+         transform:translateY(-15px); white-space:nowrap }
 .gurultu-not { font-size:11px; color:var(--m3); font-style:italic }
 .chip.orta { background:var(--orta-z); color:var(--orta-r) }
 .chip.nul { background:transparent; color:var(--m3); border:1px dashed var(--cizgi) }
@@ -134,17 +142,17 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   <p class="not">Sıra tek başına yanıltıcı: yukarıdaki sıralar iyileşirken tıklama başka yöne gidebilir.
   Bu bölüm Google Search Console′un gerçek rakamlarını gösterir (son 28 gün, bir önceki 28 günle karşılaştırmalı).</p>
   <div class="kartlar">
-    <div class="kart"><div class="buyuk">2,531</div><div class="etiket">tıklama · 28 gün <span class="chip iyi">+130%</span></div></div>
-    <div class="kart"><div class="buyuk">105,951</div><div class="etiket">gösterim <span class="chip iyi">+124%</span></div></div>
-    <div class="kart"><div class="buyuk">%2.39</div><div class="etiket">tıklanma oranı (önce %2.33)</div></div>
-    <div class="kart"><div class="buyuk">7.7</div><div class="etiket">ortalama pozisyon (önce 8.2)</div></div>
+    <div class="kart"><div class="buyuk">2.531</div><div class="etiket">tıklama · 28 gün <span class="chip iyi">+130%</span></div></div>
+    <div class="kart"><div class="buyuk">105.951</div><div class="etiket">gösterim <span class="chip iyi">+124%</span></div></div>
+    <div class="kart"><div class="buyuk">%2,39</div><div class="etiket">tıklanma oranı (önce %2,33)</div></div>
+    <div class="kart"><div class="buyuk">7,7</div><div class="etiket">ortalama pozisyon (önce 8,2)</div></div>
   </div>
+  <p class="alt" style="margin:10px 0 0">Yüzde rozetleri dikkatli okunmalı: Search Console bu siteyi <strong>25.06</strong> tarihinden beri ölçüyor, yani “önceki 28 gün” dönemi sitenin daha yeni tanındığı ilk aya denk geliyor. Rozet büyümeyi olduğundan büyük gösterir.</p>
   <div class="iki" style="margin-top:16px">
     <div class="pano">
       <h3>Haftalık tıklama</h3>
       <div class="hafta"><span class="hf" style="height:46px" title="2026-08-01 · 697 tık"><i>697</i></span><span class="hf" style="height:46px" title="2026-08-08 · 698 tık"><i>698</i></span><span class="hf" style="height:39px" title="2026-08-15 · 598 tık"><i>598</i></span><span class="hf" style="height:35px" title="2026-08-22 · 538 tık"><i>538</i></span></div>
-      <p class="alt" style="margin:10px 0 0">Soldan sağa son 4 hafta. Toplam yukarı ama son üç hafta düşüyor —
-      sebebi aşağıdaki ayrımda.</p>
+      <p class="alt" style="margin:10px 0 0">Soldan sağa son 4 hafta. Düşüş gerçek ama <strong>sebebi Yenimahalle′nin kaldırılması değil</strong>: aynı dönemde Eryaman sayfaları da zirveden %21 geriledi (473 → 372 tık/hafta), Yenimahalle %31. İki grup birlikte düşüyor ve düşüş 27.08′deki kaldırmadan önce başladı.</p>
     </div>
     <div class="pano">
       <h3>Bu trafik nereden geliyor</h3>
@@ -169,7 +177,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="21 ilk üçte, 3 dört-on arası, 1 ilk onda yok"><span class="m1" style="flex:21"><i>21</i></span><span class="m2" style="flex:3"><i>3</i></span><span class="m3" style="flex:1"><i>1</i></span></div><span class="pct">%84 ilk 3</span></td>
       <td class="num">2</td>
       <td class="chips"><span class="chip orta">10.</span> <span class="chip iyi">kutu 1.</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 4</span> <span class="chip kotu">▼ 12</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 4</span> <span class="chip kotu">▼ 11</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="21 taze, 4 orta, 4 bayat, 0 dizinsiz"><span class="d1" style="flex:21"><i>21</i></span><span class="d2" style="flex:4"><i>4</i></span><span class="d3" style="flex:4"><i>4</i></span></div></td>
     </tr>
     <tr>
@@ -185,7 +193,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="28 ilk üçte, 7 dört-on arası, 9 ilk onda yok"><span class="m1" style="flex:28"><i>28</i></span><span class="m2" style="flex:7"><i>7</i></span><span class="m3" style="flex:9"><i>9</i></span></div><span class="pct">%64 ilk 3</span></td>
       <td class="num">12</td>
       <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip iyi">kutu 1.</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 12</span> <span class="chip kotu">▼ 7</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 9</span> <span class="chip kotu">▼ 5</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="9 taze, 6 orta, 23 bayat, 8 dizinsiz"><span class="d1" style="flex:9"><i>9</i></span><span class="d2" style="flex:6"><i>6</i></span><span class="d3" style="flex:23"><i>23</i></span><span class="d4" style="flex:8"><i>8</i></span></div></td>
     </tr>
     <tr>
@@ -193,7 +201,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="39 ilk üçte, 4 dört-on arası, 7 ilk onda yok"><span class="m1" style="flex:39"><i>39</i></span><span class="m2" style="flex:4"><i>4</i></span><span class="m3" style="flex:7"><i>7</i></span></div><span class="pct">%78 ilk 3</span></td>
       <td class="num">18</td>
       <td class="chips"><span class="chip orta">6.</span> <span class="chip iyi">kutu 1.</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 21</span> <span class="chip kotu">▼ 7</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 15</span> <span class="chip kotu">▼ 5</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="7 taze, 17 orta, 25 bayat, 3 dizinsiz"><span class="d1" style="flex:7"><i>7</i></span><span class="d2" style="flex:17"><i>17</i></span><span class="d3" style="flex:25"><i>25</i></span><span class="d4" style="flex:3"><i>3</i></span></div></td>
     </tr>
     <tr>
@@ -201,7 +209,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="39 ilk üçte, 17 dört-on arası, 10 ilk onda yok"><span class="m1" style="flex:39"><i>39</i></span><span class="m2" style="flex:17"><i>17</i></span><span class="m3" style="flex:10"><i>10</i></span></div><span class="pct">%59 ilk 3</span></td>
       <td class="num">16</td>
       <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip kotu">kutuda yok</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 29</span> <span class="chip kotu">▼ 9</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 27</span> <span class="chip kotu">▼ 9</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="8 taze, 14 orta, 36 bayat, 11 dizinsiz"><span class="d1" style="flex:8"><i>8</i></span><span class="d2" style="flex:14"><i>14</i></span><span class="d3" style="flex:36"><i>36</i></span><span class="d4" style="flex:11"><i>11</i></span></div></td>
     </tr>
     <tr>
@@ -217,7 +225,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="43 ilk üçte, 12 dört-on arası, 9 ilk onda yok"><span class="m1" style="flex:43"><i>43</i></span><span class="m2" style="flex:12"><i>12</i></span><span class="m3" style="flex:9"><i>9</i></span></div><span class="pct">%67 ilk 3</span></td>
       <td class="num">17</td>
       <td class="chips"><span class="chip iyi">3.</span> <span class="chip kotu">kutuda yok</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 9</span> <span class="chip kotu">▼ 11</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 5</span> <span class="chip kotu">▼ 4</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="13 taze, 13 orta, 29 bayat, 15 dizinsiz"><span class="d1" style="flex:13"><i>13</i></span><span class="d2" style="flex:13"><i>13</i></span><span class="d3" style="flex:29"><i>29</i></span><span class="d4" style="flex:15"><i>15</i></span></div></td>
     </tr>
     <tr>
@@ -233,7 +241,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="20 ilk üçte, 2 dört-on arası, 0 ilk onda yok"><span class="m1" style="flex:20"><i>20</i></span><span class="m2" style="flex:2"><i>2</i></span></div><span class="pct">%91 ilk 3</span></td>
       <td class="num">7</td>
       <td class="chips"><span class="chip kotu">ilk 10′da yok</span> <span class="chip kotu">kutuda yok</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 10</span> <span class="chip kotu">▼ 2</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 10</span> <span class="chip kotu">▼ 1</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="4 taze, 6 orta, 12 bayat, 2 dizinsiz"><span class="d1" style="flex:4"><i>4</i></span><span class="d2" style="flex:6"><i>6</i></span><span class="d3" style="flex:12"><i>12</i></span><span class="d4" style="flex:2"><i>2</i></span></div></td>
     </tr>
     <tr>
@@ -241,7 +249,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="35 ilk üçte, 13 dört-on arası, 8 ilk onda yok"><span class="m1" style="flex:35"><i>35</i></span><span class="m2" style="flex:13"><i>13</i></span><span class="m3" style="flex:8"><i>8</i></span></div><span class="pct">%62 ilk 3</span></td>
       <td class="num">16</td>
       <td class="chips"><span class="chip orta">5.</span> <span class="chip iyi">kutu 2.</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 19</span> <span class="chip kotu">▼ 8</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 18</span> <span class="chip kotu">▼ 8</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="5 taze, 16 orta, 32 bayat, 7 dizinsiz"><span class="d1" style="flex:5"><i>5</i></span><span class="d2" style="flex:16"><i>16</i></span><span class="d3" style="flex:32"><i>32</i></span><span class="d4" style="flex:7"><i>7</i></span></div></td>
     </tr>
     <tr>
@@ -249,7 +257,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
       <td class="met"><div class="meter" role="img" aria-label="38 ilk üçte, 9 dört-on arası, 10 ilk onda yok"><span class="m1" style="flex:38"><i>38</i></span><span class="m2" style="flex:9"><i>9</i></span><span class="m3" style="flex:10"><i>10</i></span></div><span class="pct">%67 ilk 3</span></td>
       <td class="num">9</td>
       <td class="chips"><span class="chip orta">4.</span> <span class="chip kotu">kutuda yok</span></td>
-      <td class="dgs"><span class="chip iyi">▲ 15</span> <span class="chip kotu">▼ 14</span></td>
+      <td class="dgs"><span class="chip iyi">▲ 15</span> <span class="chip kotu">▼ 11</span></td>
       <td class="met"><div class="meter dm" role="img" aria-label="12 taze, 16 orta, 22 bayat, 10 dizinsiz"><span class="d1" style="flex:12"><i>12</i></span><span class="d2" style="flex:16"><i>16</i></span><span class="d3" style="flex:22"><i>22</i></span><span class="d4" style="flex:10"><i>10</i></span></div></td>
     </tr></tbody>
   </table></div>
@@ -287,17 +295,14 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
         yorum kampanyasında mahalle adı geçirme önceliği bu üçü.</li>
         <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083)
         en büyük iki tazeleme borcu; ikisi de damla sırasının başında.</li>
-        <li><strong>Kendi sayfalarımız birbirinin önüne geçiyor.</strong> 25 sorguda site yerine ada sayfamız
-        (en yoğunu Yavuz Selim: 7), 20 sorguda mahalle sayfamız (en yoğunu Şeyh Şamil: 9) listeleniyor.
-        Sıra tutuluyor ama site adını arayan kişiye yanlış sayfa açılıyor.</li>
+        <li><strong>Kendi sayfalarımız birbirinin önüne geçiyor.</strong> 51 sorguda site yerine ada sayfamız (en yoğunu Göksu: 11), 28 sorguda mahalle sayfamız (en yoğunu Şeyh Şamil: 13) listeleniyor. Sıra tutuluyor ama site adını arayan kişiye yanlış sayfa açılıyor.</li>
         <li><strong>Eski adres kalıntıları.</strong> 20′den fazla sorguda hâlâ taşınmadan önceki sayfa adresi listeleniyor
         (Yeşilova′da may-tower, green-place, koçaklar; Şeker′de relax-line; ŞOA′da address-göksu, ardıç).</li>
-      </ul>
       </ul>
     </div>
     <div class="pano">
       <h3>Dizin damlası — sıradaki 5</h3>
-      <ul><li><span>terasevler-eryaman</span><span class="alt">Yavuz Selim · 347 gösterim talebi</span></li><li><span>dogapark</span><span class="alt">Yavuz Selim · 325 gösterim talebi</span></li><li><span>erland-residence</span><span class="alt">Altay · 320 gösterim talebi</span></li><li><span>ozar</span><span class="alt">Tunahan · 307 gösterim talebi</span></li><li><span>demirel-park-evleri</span><span class="alt">Şeyh Şamil · 304 gösterim talebi</span></li></ul>
+      <ul><li><span><strong>Göksu (mahalle sayfası)</strong> <span class="alt">Göksu</span></span><span class="chip orta">bayat taranmış</span></li><li><span><strong>Tunahan (mahalle sayfası)</strong> <span class="alt">Tunahan</span></span><span class="chip orta">bayat taranmış</span></li><li><span><strong>Yavuz Selim (mahalle sayfası)</strong> <span class="alt">Yavuz Selim</span></span><span class="chip orta">bayat taranmış</span></li><li><span><strong>Eryaman (mahalle sayfası)</strong> <span class="alt">Eryaman</span></span><span class="chip orta">bayat taranmış</span></li><li><span><strong>denizim-sitesi</strong> <span class="alt">Devlet</span></span><span class="chip kotu">Google′da yok</span></li></ul>
       <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; son 10 günde 34 sayfaya istek gönderildi.
       Sayfa envanteri: 115 taze · 115 orta · 239 bayat · 85 dizinsiz (toplam 554).</p>
     </div>
@@ -333,17 +338,17 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   küçüğü eziyordu: bir sayfanın <strong>ilk 10′a girmesi</strong> ile <strong>ilk 10
   içinde sıra değiştirmesi</strong>. Birincisi 99′dan 1′e atlamak gibi kaydedildiği
   için listeyi tek başına dolduruyor, ikincisi hiç görünmüyordu. Artık ayrı.
-  Yeniden ölçülen 490 sorgunun <strong>166′i yükseldi</strong>, 97′i düştü, 227′i aynı kaldı.</p>
+  Bu turda <strong>390 sorgu</strong> yeniden ölçüldü: 110′i ilk 10′a girdi, 2′i çıktı; ilk 10 içinde 15′i yükseldi, 25′i düştü, 66′i ±1 sınırında kaldı (gürültü), 141′i hiç kıpırdamadı. Ayrıca <strong>95 ölçüm kıyaslama dışı</strong> bırakıldı: 31′inde sorgu metni turlar arasında değişmiş, 64′inde ölçüm başka bir pencereden yapılmış — ikisi de farklı şeyleri karşılaştırmak olurdu.</p>
 
   <h3 class="kgrup">İlk 10′a giriş ve çıkış — en büyük olay</h3>
   <div class="iki">
     <div class="pano">
-      <h3>İlk 10′a girenler <span class="krozet">123</span></h3>
-      <ul><li><span><strong>cabadag-bloklari</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>alis</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>dastarli</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>oray</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>ankapark-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>ay</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>bahar</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>elif-ozgen</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>arissa-goksu</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>enday</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li></ul>
+      <h3>İlk 10′a girenler <span class="krozet">110</span></h3>
+      <ul><li><span><strong>cabadag-bloklari</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>dastarli</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>oray</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>ankapark-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>elif-ozgen</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>enday</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>evinora</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>cozum-kent</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>nazlideniz</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li><li><span><strong>renk-villalari</strong> <span class="alt">Güzelkent</span></span><span class="chip iyi">▲ yok → 1.</span></li></ul>
     </div>
     <div class="pano">
-      <h3>İlk 10′dan çıkanlar <span class="krozet">6</span></h3>
-      <ul><li><span><strong>ilksebat</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip kotu">▼ 1. → yok</span></li><li><span><strong>umut</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip kotu">▼ 1. → yok</span></li><li><span><strong>soyak</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip kotu">▼ 2. → yok</span></li><li><span><strong>zirve-loft</strong> <span class="alt">Şeker</span></span><span class="chip kotu">▼ 2. → yok</span></li><li><span><strong>toki-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip kotu">▼ 3. → yok</span></li><li><span><strong>goksu-mahallesi</strong> <span class="alt">Göksu</span></span><span class="chip kotu">▼ 7. → yok</span></li></ul>
+      <h3>İlk 10′dan çıkanlar <span class="krozet">2</span></h3>
+      <ul><li><span><strong>ilksebat</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip kotu">▼ 1. → yok</span></li><li><span><strong>zirve-loft</strong> <span class="alt">Şeker</span></span><span class="chip kotu">▼ 2. → yok</span></li></ul>
     </div>
   </div>
 
@@ -351,44 +356,53 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   <p class="not" style="margin-bottom:12px">Kısa aralıkla yeniden ölçülen ve iki
   ölçümde de ilk 10′da olan sayfaların <strong>%86′sı ≤1 sıra oynuyor</strong>; yani
   bir sıralık hareket ölçümün kendi dalgalanması, peşine düşülmez. Bu turda
-  81 sayfa o aralıkta kaldı ve listeye alınmadı.</p>
+  66 sayfa o aralıkta kaldı ve listeye alınmadı.</p>
   <div class="iki">
     <div class="pano">
-      <h3>İçeride yükselenler <span class="krozet">16</span></h3>
-      <ul><li><span><strong>konum-eryaman</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ 9. → 4.</span></li><li><span><strong>endora-eryaman</strong> <span class="alt">Yavuz Selim</span></span><span class="chip iyi">▲ 6. → 2.</span></li><li><span><strong>yardimci-bloklari</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip iyi">▲ 5. → 2.</span></li><li><span><strong>kiratli-residence</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip iyi">▲ 4. → 2.</span></li><li><span><strong>polsan-1-gozde</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ 4. → 2.</span></li><li><span><strong>eryaman-royal-city</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>vera-city</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>platin-2-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>yeni-portakal-cicegi</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ 5. → 3.</span></li><li><span><strong>ilbeyi</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ 3. → 1.</span></li></ul>
+      <h3>İçeride yükselenler <span class="krozet">15</span></h3>
+      <ul><li><span><strong>konum-eryaman</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ 9. → 4.</span></li><li><span><strong>endora-eryaman</strong> <span class="alt">Yavuz Selim</span></span><span class="chip iyi">▲ 6. → 2.</span></li><li><span><strong>yardimci-bloklari</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip iyi">▲ 5. → 2.</span></li><li><span><strong>polsan-1-gozde</strong> <span class="alt">Göksu</span></span><span class="chip iyi">▲ 4. → 2.</span></li><li><span><strong>eryaman-royal-city</strong> <span class="alt">Devlet</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>vera-city</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>platin-2-konutlari</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>yeni-portakal-cicegi</strong> <span class="alt">Eryaman</span></span><span class="chip iyi">▲ 5. → 3.</span></li><li><span><strong>ilbeyi</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ 3. → 1.</span></li><li><span><strong>sutek-bloklari</strong> <span class="alt">Altay</span></span><span class="chip iyi">▲ 3. → 1.</span></li></ul>
     </div>
     <div class="pano">
-      <h3>İçeride düşenler <span class="krozet">32</span></h3>
-      <ul><li><span><strong>4-devlet-mahallesi</strong> <span class="alt">Devlet</span></span><span class="chip kotu">▼ 2. → 10.</span></li><li><span><strong>vaditepe-baspinar</strong> <span class="alt">Göksu</span></span><span class="chip kotu">▼ 2. → 9.</span></li><li><span><strong>anka-2001</strong> <span class="alt">Güzelkent</span></span><span class="chip kotu">▼ 2. → 7.</span></li><li><span><strong>karkoy-villalari</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 1. → 6.</span></li><li><span><strong>kirkayak</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 2. → 6.</span></li><li><span><strong>tepe-bloklari</strong> <span class="alt">Şeyh Şamil</span></span><span class="chip kotu">▼ 2. → 6.</span></li><li><span><strong>dogankaya</strong> <span class="alt">Eryaman</span></span><span class="chip kotu">▼ 1. → 5.</span></li><li><span><strong>koru-eryaman</strong> <span class="alt">Göksu</span></span><span class="chip kotu">▼ 1. → 5.</span></li><li><span><strong>ozdenizyildizi</strong> <span class="alt">Devlet</span></span><span class="chip kotu">▼ 2. → 5.</span></li><li><span><strong>yavuz-selim</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 4. → 7.</span></li></ul>
+      <h3>İçeride düşenler <span class="krozet">25</span></h3>
+      <ul><li><span><strong>4-devlet-mahallesi</strong> <span class="alt">Devlet</span></span><span class="chip kotu">▼ 2. → 10.</span></li><li><span><strong>vaditepe-baspinar</strong> <span class="alt">Göksu</span></span><span class="chip kotu">▼ 2. → 9.</span></li><li><span><strong>anka-2001</strong> <span class="alt">Güzelkent</span></span><span class="chip kotu">▼ 2. → 7.</span></li><li><span><strong>karkoy-villalari</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 1. → 6.</span></li><li><span><strong>kirkayak</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 2. → 6.</span></li><li><span><strong>dogankaya</strong> <span class="alt">Eryaman</span></span><span class="chip kotu">▼ 1. → 5.</span></li><li><span><strong>koru-eryaman</strong> <span class="alt">Göksu</span></span><span class="chip kotu">▼ 1. → 5.</span></li><li><span><strong>ozdenizyildizi</strong> <span class="alt">Devlet</span></span><span class="chip kotu">▼ 2. → 5.</span></li><li><span><strong>yavuz-selim</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 4. → 7.</span></li><li><span><strong>yeni-ilkay</strong> <span class="alt">Yavuz Selim</span></span><span class="chip kotu">▼ 1. → 4.</span></li></ul>
     </div>
   </div>
 
   <div class="pano" style="margin-top:14px">
     <h3>Ortalama neden kötüleşmiş görünüyor — tavan etkisi</h3>
     <p class="alt" style="margin:8px 0 0">İlk 10′da hem önce hem sonra ölçülen
-    <strong>293</strong> sayfanın ortalama sırası
-    2,04 → 2,36, yani kâğıt üzerinde kötüleşmiş.
-    Ama bu sayfaların <strong>119′i zaten 1. sıradaydı</strong> —
+    <strong>247</strong> sayfanın ortalama sırası
+    2,01 → 2,28, yani kâğıt üzerinde kötüleşmiş.
+    Ama bu sayfaların <strong>101′i zaten 1. sıradaydı</strong> —
     yükselecek yerleri yoktu, yalnız düşebilirlerdi.</p>
     <p class="alt" style="margin:10px 0 0">Yükselecek yeri olanlara (3. sıra ve
-    gerisinden başlayan 78 sayfa) bakınca yön tersine dönüyor:
-    ortalama <strong>3,69 → 3,38</strong>,
-    ≥2 sıra yükselen 16′e karşı düşen 5.
+    gerisinden başlayan 63 sayfa) bakınca yön tersine dönüyor:
+    ortalama <strong>3,63 → 3,17</strong>,
+    ≥2 sıra yükselen 15′e karşı düşen 4.
     Yani gerçek yön iyileşme. Tek başına ortalamaya bakmak burada yanlış karar
     verdirirdi.</p>
   </div>
 
   <h2>Dizine eklenecekler</h2>
-  <p class="not">SERP turlarında <strong>kayıp</strong> ölçülen sayfalar (görünmez ya da yerine ada/komşu/mahalle
-  sayfası çıkan) dizin envanteriyle çaprazlandı. İstek kotası günde ~10, o yüzden sıra önemli:
-  önce hiç görünmeyenler, sonra başka sayfanın temsil ettikleri, en sonda yalnız başlığı bayat olanlar.
-  Dizinsiz sayfalara kota harcanmıyor (doğal tarama bekleniyor).</p>
+  <p class="not">Bu tablo <strong>yalnız Google′da gerçekten olmayan</strong> sayfaları
+  gösterir; her satır Search Console′a tek tek sorulup doğrulanmıştır. Günlük istek kotası
+  ~10 olduğu için sıra önemli: önce hedef sorgu sayfası olan bayat mahalleler, sonra
+  mahalle kümesine göre ölü site sayfaları.</p>
   <div class="tablo-kabuk"><table>
-    <thead><tr><th>Sıra</th><th>Sayfa</th><th>Mahalle</th><th>SERP durumu</th><th>Google′daki sıra</th><th>Gösterim talebi</th><th>Son tarama</th></tr></thead>
-    <tbody><tr><td class="num" style="font-size:15px">1</td><td><strong>atakent-sitesi</strong></td><td class="alt">Eryaman</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>190</td><td class="alt">17.08</td></tr><tr><td class="num" style="font-size:15px">2</td><td><strong>bordo-loca</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>155</td><td class="alt">31.07</td></tr><tr><td class="num" style="font-size:15px">3</td><td><strong>eylul-sitesi</strong></td><td class="alt">Yavuz Selim</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>141</td><td class="alt">17.08</td></tr><tr><td class="num" style="font-size:15px">4</td><td><strong>yazici-modern</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>108</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">5</td><td><strong>safir-sitesi</strong></td><td class="alt">Yavuz Selim</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>106</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">6</td><td><strong>doga-konutlari</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>66</td><td class="alt">28.07</td></tr><tr><td class="num" style="font-size:15px">7</td><td><strong>asilkent-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>62</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">8</td><td><strong>beyaz-residence</strong></td><td class="alt">Eryaman</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>60</td><td class="alt">27.07</td></tr><tr><td class="num" style="font-size:15px">9</td><td><strong>gokkusagi-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>56</td><td class="alt">15.08</td></tr><tr><td class="num" style="font-size:15px">10</td><td><strong>nisan-sitesi</strong></td><td class="alt">Şeyh Şamil</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>53</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">11</td><td><strong>angora-sitesi</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>41</td><td class="alt">11.08</td></tr><tr><td class="num" style="font-size:15px">12</td><td><strong>turkuaz-sitesi</strong></td><td class="alt">Şeyh Şamil</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>35</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">13</td><td><strong>guneyce-sitesi</strong></td><td class="alt">Devlet</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>30</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">14</td><td><strong>merkez-sitesi</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>30</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">15</td><td><strong>referans-ankara</strong></td><td class="alt">Devlet</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>25</td><td class="alt">05.08</td></tr><tr><td class="num" style="font-size:15px">16</td><td><strong>maximum-konutlari</strong></td><td class="alt">Eryaman</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>25</td><td class="alt">27.07</td></tr><tr><td class="num" style="font-size:15px">17</td><td><strong>ataturk-sitesi</strong></td><td class="alt">Altay</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>24</td><td class="alt">26.07</td></tr><tr><td class="num" style="font-size:15px">18</td><td><strong>baris-sitesi</strong></td><td class="alt">Şeyh Şamil</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>24</td><td class="alt">03.08</td></tr><tr><td class="num" style="font-size:15px">19</td><td><strong>yuceyurt-sitesi</strong></td><td class="alt">Devlet</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>23</td><td class="alt">30.07</td></tr><tr><td class="num" style="font-size:15px">20</td><td><strong>isikkent-sitesi</strong></td><td class="alt">Eryaman</td><td><span class="chip kotu">GÖRÜNMEZ</span></td><td>yok</td><td>23</td><td class="alt">26.07</td></tr></tbody>
+    <thead><tr><th>Sıra</th><th>Sayfa</th><th>Mahalle</th><th>Durum</th></tr></thead>
+    <tbody><tr><td class="num" style="font-size:15px">1</td><td><strong>Göksu (mahalle sayfası)</strong></td><td class="alt">Göksu</td><td><span class="chip orta">bayat taranmış</span></td></tr><tr><td class="num" style="font-size:15px">2</td><td><strong>Tunahan (mahalle sayfası)</strong></td><td class="alt">Tunahan</td><td><span class="chip orta">bayat taranmış</span></td></tr><tr><td class="num" style="font-size:15px">3</td><td><strong>Yavuz Selim (mahalle sayfası)</strong></td><td class="alt">Yavuz Selim</td><td><span class="chip orta">bayat taranmış</span></td></tr><tr><td class="num" style="font-size:15px">4</td><td><strong>Eryaman (mahalle sayfası)</strong></td><td class="alt">Eryaman</td><td><span class="chip orta">bayat taranmış</span></td></tr><tr><td class="num" style="font-size:15px">5</td><td><strong>denizim-sitesi</strong></td><td class="alt">Devlet</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">6</td><td><strong>yesiloz-sitesi</strong></td><td class="alt">Devlet</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">7</td><td><strong>cicek-sitesi</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">8</td><td><strong>goksu-prestij</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">9</td><td><strong>ictas</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">10</td><td><strong>ucyildiz-sitesi</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">11</td><td><strong>yildiz-eryaman</strong></td><td class="alt">Şehit Osman Avcı</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">12</td><td><strong>ekin-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">13</td><td><strong>kurtulus-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">14</td><td><strong>meltem-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">15</td><td><strong>oz-muhtar-sitesi</strong></td><td class="alt">Güzelkent</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">16</td><td><strong>irem-konutlari</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">17</td><td><strong>polsan1-ayisigi-sitesi</strong></td><td class="alt">Göksu</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">18</td><td><strong>camlica-sitesi</strong></td><td class="alt">Şeyh Şamil</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">19</td><td><strong>onur-sitesi</strong></td><td class="alt">Şeyh Şamil</td><td><span class="chip kotu">Google′da yok</span></td></tr><tr><td class="num" style="font-size:15px">20</td><td><strong>izoser-residence</strong></td><td class="alt">Şeker</td><td><span class="chip kotu">Google′da yok</span></td></tr></tbody>
   </table></div>
-  <p class="alt" style="margin-top:8px">Tam liste (203 sayfa) ve dizinsiz sınıfı:
-  <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
+  <p class="alt" style="margin-top:8px">Tam kuyruk (59 sayfa):
+  <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code></p>
+
+  <div class="pano" style="margin-top:16px">
+    <h3>Bunlara istek GÖNDERİLMEZ — 203 sayfa</h3>
+    <p class="alt" style="margin:8px 0 10px">31.08′e kadar bu tabloda bu sayfalar vardı ve
+    yanlıştı. SERP′te kayıp oldukları için aday sayılıyorlardı, ama Search Console′a
+    sorulunca <strong>203′ünün 203′ü de dizinde çıktı</strong>. Dertleri dizin değil sıra;
+    istek göndermek kotayı yakar, hiçbir şey kazandırmaz. En çok gösterim alanlar:</p>
+    <ul><li><span><strong>koz-modern</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">770 gösterim</span></li><li><span><strong>alpak-neve-armonia-residence</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">633 gösterim</span></li><li><span><strong>bahcen-eryaman-konutlari</strong> <span class="alt">Şeker</span></span><span class="chip">374 gösterim</span></li><li><span><strong>inci-life-residence</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">359 gösterim</span></li><li><span><strong>terasevler-eryaman</strong> <span class="alt">Yavuz Selim</span></span><span class="chip">347 gösterim</span></li><li><span><strong>hill-tower</strong> <span class="alt">Şeker</span></span><span class="chip">295 gösterim</span></li><li><span><strong>dort-mevsim-eryaman-konutlari</strong> <span class="alt">Şeker</span></span><span class="chip">288 gösterim</span></li><li><span><strong>karma-modern</strong> <span class="alt">Şehit Osman Avcı</span></span><span class="chip">274 gösterim</span></li></ul>
+  </div>
 
 
   <h2>Verinin sağlığı</h2>
@@ -455,7 +469,7 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   yaradığını</strong> gösteriyor. Her satır bir ölçüme dayanıyor — çürüyenler de duruyor,
   çünkü asıl maliyet aynı işi ikinci kez denemek. Toplam 10 kaldıraç izleniyor.</p>
   <h3 class="kgrup">İşe yaradığı ölçüldü</h3>
-  <div class="kaldiraclar"><div class="kaldirac iyi"><div class="kbas"><strong>Dizin isteği damlası</strong><span class="krozet">işe yarıyor</span></div><p>14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. Dönüşümler: Alış 0→1 (+harita 1), Lale Kent 0→1, Atalay 0→3, Selçuklu 0→9, Arissa Göksu 0→1, Platin 2 3→1.</p><p class="alt" style="margin:6px 0 0">Kota günde ~10, kayan 24 saat. İstek yalnız GSC arayüzünden gider.</p><p class="kkaynak">gsc-dizin-kuyrugu-194.md + sonuclar-site-emlakci.jsonl</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Ev sahibi dilli başlık şablonu</strong><span class="krozet">işe yarıyor</span></div><p>Aynı sayfaların öncesi/sonrası (n=22): 13 yükseldi, 0 düştü, ortalama 3,64 → 2,27. Başlığı değişmeyen kontrol grubu aynı dönemde +0,31 kaydı ve 5 düşüş verdi.</p><p class="alt" style="margin:6px 0 0">Title′lar 5 Eylül′e kadar donuk (08.08 kararı).</p><p class="kkaynak">07-09.08 şablon değişikliği + pws=0 turları</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Tarama tazeliği (sıra ile ilişkisi)</strong><span class="krozet">işe yarıyor</span></div><p>128 sayfa API ile denetlendi. İlk 3′te olanların %3′ü hiç taranmamış, %15′i bir aydan eski taranmış. 4-10 bandındakilerde bu oranlar %18 ve %44 — yani hiç taranmamış olma 6 kat, bayat tarama 3 kat fazla. Dizinde olma oranı da farklı: %97′ye %82.</p><p class="alt" style="margin:6px 0 0">Bu bir İLİŞKİ ölçümü; ters nedensellik mümkün (Google zaten iyi sıradaki sayfayı daha sık tarar). Ama damla turları müdahale kanıtı veriyor: istek → tarama → sıra (Alış 0→1, Selçuklu 0→9). İkisi aynı yönü gösteriyor.</p><p class="kkaynak">31.08 API denetimi (ilk3 n=60, 4-10 n=68)</p></div></div>
+  <div class="kaldiraclar"><div class="kaldirac iyi"><div class="kbas"><strong>Dizin isteği damlası</strong><span class="krozet">işe yarıyor</span></div><p>İSTEK → TARAMA bağı sağlam: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. İSTEK → SIRA bağı ise ZAYIF. 31.08&#x27;de altı &#x27;dönüşüm&#x27; iddiası tam geçmişiyle sınandı: Arissa Göksu 4→1 ve Platin 2 3→1 gerçek kazanç, Alış 3→1 gerçek; ama Lale Kent 1→(kayıp)→1 ve Atalay 3→(kayıp)→3 hiç kazanç değil, eski yerlerine döndüler; Selçuklu 2→(kayıp)→9 ise GERİLEME. Yani altıda üç.</p><p class="alt" style="margin:6px 0 0">Kota günde ~10, kayan 24 saat; istek yalnız GSC arayüzünden gider. ÖNCEKİ SÜRÜM YANILTICIYDI: dönüşümler tek adımlık &#x27;0→N&#x27; olarak yazılmıştı ve sayfanın o kayıptan ÖNCEKİ sırasını gizliyordu. Bir sayfanın ölçümde geçici kaybolup geri gelmesi olağan (11 vaka, günlük ölçümlerin ~%1&#x27;i); kaybolmadan önceki sıra bilinmeden &#x27;kazanç&#x27; denemez.</p><p class="kkaynak">14.08 ve 29.08 damla turları + 31.08 tam-geçmiş denetimi</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Ev sahibi dilli başlık şablonu</strong><span class="krozet">işe yarıyor</span></div><p>Aynı sayfaların öncesi/sonrası (n=22): 13 yükseldi, 0 düştü, ortalama 3,64 → 2,27. Başlığı değişmeyen kontrol grubu aynı dönemde +0,31 kaydı ve 5 düşüş verdi.</p><p class="alt" style="margin:6px 0 0">Title′lar 5 Eylül′e kadar donuk (08.08 kararı).</p><p class="kkaynak">07-09.08 şablon değişikliği + pws=0 turları</p></div><div class="kaldirac iyi"><div class="kbas"><strong>Tarama tazeliği (sıra ile ilişkisi)</strong><span class="krozet">işe yarıyor</span></div><p>128 sayfa API ile denetlendi. İlk 3′te olanların %3′ü hiç taranmamış, %15′i bir aydan eski taranmış. 4-10 bandındakilerde bu oranlar %18 ve %44 — yani hiç taranmamış olma 6 kat, bayat tarama 3 kat fazla. Dizinde olma oranı da farklı: %97′ye %82.</p><p class="alt" style="margin:6px 0 0">Bu bir İLİŞKİ ölçümü; ters nedensellik mümkün (Google zaten iyi sıradaki sayfayı daha sık tarar). Ama damla turları müdahale kanıtı veriyor: istek → tarama → sıra (Alış 0→1, Selçuklu 0→9). İkisi aynı yönü gösteriyor.</p><p class="kkaynak">31.08 API denetimi (ilk3 n=60, 4-10 n=68)</p></div></div>
   <h3 class="kgrup">Açık sorular</h3>
   <div class="kaldiraclar"><div class="kaldirac orta"><div class="kbas"><strong>Sitemap tazelik sinyali</strong><span class="krozet">açık soru</span></div><p>31.08: canlı sitemap′teki 1.178 adresin 1.146′sı aynı damgayı taşıyordu (27.08 footer değişikliği dört tabanı birden itmişti). Tabanlar gerçek tarihlere döndü.</p><p class="alt" style="margin:6px 0 0">Sonuç henüz ölçülmedi; tarama dağılımı 1-2 hafta izlenecek.</p><p class="kkaynak">31.08 düzeltmesi — PR #87</p></div><div class="kaldirac orta"><div class="kbas"><strong>Google′ın başlığımızı yeniden yazması</strong><span class="krozet">açık soru</span></div><p>Sayfaların ~%38′inde Google kendi başlığını kuruyor. İki hipotez elendi: uzunluk (76,8′e 77,6 karakter — fark yok) ve bayat dizin kopyası (canlı sayfa yeni şablonu basıyor).</p><p class="alt" style="margin:6px 0 0">Sebep HENÜZ BİLİNMİYOR. Uydurma açıklama yazılmaz; ölçüme devam.</p><p class="kkaynak">29-30.08 ölçümleri</p></div></div>
   <h3 class="kgrup">Ölçüldü, çürüdü — tekrar denenmeyecek</h3>

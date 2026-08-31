@@ -68,5 +68,39 @@
    }
   }
  },
+ "haftalik_ayrim": [
+  {
+   "gecmis_hafta": 6,
+   "eryaman": 108,
+   "yenimahalle": 168
+  },
+  {
+   "gecmis_hafta": 5,
+   "eryaman": 300,
+   "yenimahalle": 220
+  },
+  {
+   "gecmis_hafta": 4,
+   "eryaman": 451,
+   "yenimahalle": 258
+  },
+  {
+   "gecmis_hafta": 3,
+   "eryaman": 473,
+   "yenimahalle": 233
+  },
+  {
+   "gecmis_hafta": 2,
+   "eryaman": 405,
+   "yenimahalle": 205
+  },
+  {
+   "gecmis_hafta": 1,
+   "eryaman": 372,
+   "yenimahalle": 177
+  }
+ ],
+ "mulk_baslangic": "2026-06-25",
+ "mulk_haftalari": 10,
  "uretim": "2026-08-31"
 }
