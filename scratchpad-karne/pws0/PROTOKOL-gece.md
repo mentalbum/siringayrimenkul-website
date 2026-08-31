@@ -575,3 +575,29 @@ düştüğü için istediğimiz sıra tam da bu.
 tabanına bağlamıştı; %99 → %94 gibi cılız bir sonuç vermişti. Ada sayfaları
 mahalle içerik tarihinden besleniyor (app/sitemap.ts:259), site tabanından
 değil. Doğrusu yukarıdaki.
+
+## 31.08 — MAHALLE SAYFALARINDA TEK YÖNLÜ DÜŞÜŞ
+
+Gece turu 35 sayfayı yeniden ölçtü. Tür bazında ayrıldığında:
+
+| tür | yükseldi | düştü | aynı |
+|---|---|---|---|
+| site | 3 | 0 | 16 |
+| mahalle | 0 | 4 | 7 |
+| etap | 1 | 3 | 1 |
+
+Site sayfaları sağlam; hareket mahalle ve etap sayfalarında ve tamamı aşağı.
+
+Düşen dört mahallenin dördü de 21.08 ve öncesinde taranmış (Göksu 17.08,
+Tunahan 17.08, Yavuz Selim 17.08, Eryaman 21.08). 23.08 sonrası taranan
+7 sayfanın hiçbiri düşmemiş.
+
+DÜRÜST OKUMA: bu "4/4'e 0/7" görünüyor ama taze grubun 7'sinden 5'i zaten
+10+ (zeminde, düşemezdi). Düşmeye yeri olanlarla gerçek oran 4/4'e 0/2 —
+n=6, rastlantı ihtimali ~%7. İŞARET, KANIT DEĞİL. Yine de dört sayfa da
+hedef sorgu sayfası olduğu için damla kuyruğunda ÖNCELİK 0'a alındı;
+istek → aynı gün tarama mekanizması kanıtlı, en kötü ihtimalle tazelik döner.
+
+Doğrulama yolu: 1-2 gün sonra bu dördünü yeniden ölç. Tarama tazelenip sıra
+da toparlarsa ilişki güçlenir; tarama tazelenip sıra toparlamazsa hipotez
+çürür ve kaldıraç defterine "çürük" yazılır.

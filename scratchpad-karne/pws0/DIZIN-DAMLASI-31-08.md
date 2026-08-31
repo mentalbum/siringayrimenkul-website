@@ -18,6 +18,43 @@ girmek. Kanıt: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı
 Sıra kümeye göre: en kalabalık mahalle önce (aynı mahallenin sayfaları arka
 arkaya taranınca Google o dalı bir arada geziyor).
 
+## ÖNCELİK 0 — bayat taranmış MAHALLE sayfaları (4)
+
+Bunlar dizin dışı DEĞİL, hepsi dizinde. Buraya konmalarının sebebi farklı:
+**hedef sorgularımızda sıra kaybediyorlar ve dördü de bayat taranmış.**
+
+31.08 gece turunda 11 mahalle sayfası yeniden ölçüldü. Hareketin tamamı aşağı
+yönlüydü (0 yükselen, 4 düşen) ve düşenlerin dördü de 21.08 ve öncesinde
+taranmış olanlardı:
+
+| mahalle | önce | 31.08 | son tarama |
+|---|---|---|---|
+| Göksu | 7 | 10+ | 17.08 |
+| Tunahan | 9 | 10 | 17.08 |
+| Yavuz Selim | 4 | 5 | 17.08 |
+| Eryaman | 4 | 6 | 21.08 |
+
+DÜRÜST OKUMA — ham tablo "bayatların 4/4'ü düştü, tazelerin 0/7'si düştü"
+diyor ama bu YANILTICI: taze grubun 7 sayfasından 5'i zaten 10+, yani zeminde
+ve daha fazla düşemezdi. Düşmeye yeri olanlarla gerçek karşılaştırma 4/4'e
+0/2. Bu bir işaret, kanıt değil.
+
+Yine de kota buraya harcanmalı, iki sebeple: (1) bu dört sayfa "<mahalle>
+emlakçı" hedef sorgularımızın sayfaları — dizin dışı bir site sayfasından çok
+daha değerliler; (2) istek → aynı gün tarama mekanizması kanıtlı (14.08 8/8,
+29.08 10/10), yani en kötü ihtimalle tazelik geri gelir.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi  
+      _dizinde ama 17.08'den beri taranmamış; 7 → 10+_
+- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi  
+      _dizinde ama 17.08'den beri taranmamış; 9 → 10_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi  
+      _dizinde ama 17.08'den beri taranmamış; 4 → 5_
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi  
+      _dizinde ama 21.08'den beri taranmamış; 4 → 6_
+
+---
+
 Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 
