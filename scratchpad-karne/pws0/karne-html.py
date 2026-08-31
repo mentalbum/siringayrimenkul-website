@@ -182,6 +182,11 @@ DUSEN = sorted([d for d in DEGISIM.values() if d["fark"] < 0], key=lambda d: d["
 SABIT = [d for d in DEGISIM.values() if d["fark"] == 0]
 
 try:
+    SONUC = json.load(open("sonuc-ozeti.json"))
+except FileNotFoundError:
+    SONUC = None
+
+try:
     ISGAL = json.load(open("isgal-3108.json"))
 except FileNotFoundError:
     ISGAL = None
@@ -325,6 +330,49 @@ for d, n in RAKIP_SAY.most_common(8):
     b = RAKIP_BIR.get(d, 0)
     rakip_html += (f'<li><span>{esc(d)}</span>'
                    f'<span class="alt">{n} kez ilk 3′te · {b} kez 1.</span></li>')
+
+def _yuzde_rozet(simdi, onceki):
+    if not onceki:
+        return '<span class="chip nul">—</span>'
+    d = round(100 * (simdi - onceki) / onceki)
+    cls = "iyi" if d > 0 else ("kotu" if d < 0 else "nul")
+    return f'<span class="chip {cls}">{d:+}%</span>'
+
+sonuc_html = ""
+if SONUC:
+    sm, on = SONUC["simdi"], SONUC["onceki"]
+    e = SONUC["ayrim"]["eryaman"]; y = SONUC["ayrim"]["yenimahalle"]
+    hafta = SONUC.get("haftalar") or []
+    en = max([h["tik"] for h in hafta] or [1])
+    cubuk = "".join(
+        f'<span class="hf" style="height:{max(6, round(46*h["tik"]/en))}px" '
+        f'title="{h["bas"]} · {h["tik"]} tık"><i>{h["tik"]}</i></span>' for h in hafta)
+    sonuc_html = f'''<div class="kartlar">
+    <div class="kart"><div class="buyuk">{sm["tik"]:,}</div><div class="etiket">tıklama · 28 gün {_yuzde_rozet(sm["tik"], on["tik"])}</div></div>
+    <div class="kart"><div class="buyuk">{sm["gos"]:,}</div><div class="etiket">gösterim {_yuzde_rozet(sm["gos"], on["gos"])}</div></div>
+    <div class="kart"><div class="buyuk">%{sm["to"]}</div><div class="etiket">tıklanma oranı (önce %{on["to"]})</div></div>
+    <div class="kart"><div class="buyuk">{sm["poz"]}</div><div class="etiket">ortalama pozisyon (önce {on["poz"]})</div></div>
+  </div>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Haftalık tıklama</h3>
+      <div class="hafta">{cubuk}</div>
+      <p class="alt" style="margin:10px 0 0">Soldan sağa son 4 hafta. Toplam yukarı ama son üç hafta düşüyor —
+      sebebi aşağıdaki ayrımda.</p>
+    </div>
+    <div class="pano">
+      <h3>Bu trafik nereden geliyor</h3>
+      <ul>
+        <li><span><strong>Eryaman</strong> <span class="alt">(sitede kalan)</span></span>
+            <span><span class="chip iyi">{e["simdi"]["tik"]} tık {_yuzde_rozet(e["simdi"]["tik"], e["onceki"]["tik"])}</span></span></li>
+        <li><span><strong>Yenimahalle</strong> <span class="alt">27.08′de siteden kaldırıldı</span></span>
+            <span><span class="chip kotu">{y["simdi"]["tik"]} tık</span></span></li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0">Son 28 günün tıklamasının <strong>%{round(100*y["simdi"]["tik"]/sm["tik"])}′i</strong>
+      artık sitede olmayan Yenimahalle sayfalarından geldi. Bu trafik önümüzdeki haftalarda sıfırlanacak —
+      beklenen ve kararlaştırılmış bir düşüş. Asıl performans Eryaman satırı: {e["onceki"]["tik"]} → {e["simdi"]["tik"]} tık.</p>
+    </div>
+  </div>'''
 
 isgal_satirlari = ""
 isgal_ozet = ""
@@ -503,6 +551,11 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <div class="kart"><div class="buyuk">{TOPLAM_BIR}</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
     <div class="kart vurgu"><div class="buyuk">{ana_org}<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita {ana_har}.) · {ana_d}</div></div>
   </div>
+
+  <h2>Gerçek sonuç — tıklama</h2>
+  <p class="not">Sıra tek başına yanıltıcı: yukarıdaki sıralar iyileşirken tıklama başka yöne gidebilir.
+  Bu bölüm Google Search Console′un gerçek rakamlarını gösterir (son 28 gün, bir önceki 28 günle karşılaştırmalı).</p>
+  {sonuc_html}
 
   <h2>Mahalle karnesi</h2>
   <div class="tablo-kabuk"><table>

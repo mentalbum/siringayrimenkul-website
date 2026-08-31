@@ -164,6 +164,55 @@ if (komut === "denetle") {
     console.log(`${r.impressions}\t${r.clicks}\t${r.position.toFixed(1)}\t${r.keys[0]}`);
   }
   console.error(`(${satirlar.length} sayfa, son ${gun} gün; sütunlar: gösterim, tık, pozisyon, url)`);
+} else if (komut === "ozet") {
+  /* SONUÇ ÖLÇÜMÜ (31.08 eklendi). Karne bugüne dek yalnız SIRA ölçüyordu; bu
+   * komut GERÇEK sonucu getirir: tık, gösterim, TO, ortalama pozisyon — hem
+   * dönem toplamı hem haftalık seri hem de bir önceki eş dönemle kıyas.
+   * Neden gerekli: 31.08 teşhisinde gösterim ikiye katlanırken TIKLAMANIN
+   * gerilediği görüldü; sıra karnesi bu ayrışmayı göremiyor.
+   * Kullanım: node scripts/gsc-api.mjs ozet [gün]   (varsayılan 28) */
+  const gun = parseInt(arg[0] || "28", 10);
+  const bitis = new Date(); bitis.setDate(bitis.getDate() - 2); // GSC ~2 gün geriden gelir
+  const baslangic = new Date(bitis); baslangic.setDate(baslangic.getDate() - gun);
+  const oncekiBitis = new Date(baslangic); oncekiBitis.setDate(oncekiBitis.getDate() - 1);
+  const oncekiBas = new Date(oncekiBitis); oncekiBas.setDate(oncekiBitis.getDate() - gun);
+  const f = (d) => d.toISOString().slice(0, 10);
+  const jeton = await erisimJetonu();
+  const cek = async (b, s2) => {
+    const j = await api(jeton, `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(MULK)}/searchAnalytics/query`, {
+      startDate: f(b), endDate: f(s2), dimensions: ["date"], rowLimit: 500,
+    });
+    return j.rows || [];
+  };
+  const simdi = await cek(baslangic, bitis);
+  const onceki = await cek(oncekiBas, oncekiBitis);
+  const topla = (rows) => rows.reduce((a, r) => ({
+    tik: a.tik + r.clicks, gos: a.gos + r.impressions,
+    poz: a.poz + r.position * r.impressions,
+  }), { tik: 0, gos: 0, poz: 0 });
+  const t1 = topla(simdi), t0 = topla(onceki);
+  // Haftalık seri: günleri 7'şerli kovala (en yeni hafta sonda).
+  const haftalar = [];
+  for (let i = simdi.length; i > 0; i -= 7) {
+    const dilim = simdi.slice(Math.max(0, i - 7), i);
+    if (!dilim.length) continue;
+    const t = topla(dilim);
+    haftalar.unshift({ bas: dilim[0].keys[0], tik: t.tik, gos: t.gos,
+      poz: t.gos ? +(t.poz / t.gos).toFixed(1) : null });
+  }
+  const cikti = {
+    donem: { bas: f(baslangic), bit: f(bitis), gun },
+    simdi: { tik: t1.tik, gos: t1.gos, to: t1.gos ? +(100 * t1.tik / t1.gos).toFixed(2) : 0,
+             poz: t1.gos ? +(t1.poz / t1.gos).toFixed(1) : null },
+    onceki: { tik: t0.tik, gos: t0.gos, to: t0.gos ? +(100 * t0.tik / t0.gos).toFixed(2) : 0,
+              poz: t0.gos ? +(t0.poz / t0.gos).toFixed(1) : null },
+    haftalar,
+  };
+  cikti.degisim = {
+    tik: t0.tik ? +(100 * (t1.tik - t0.tik) / t0.tik).toFixed(1) : null,
+    gos: t0.gos ? +(100 * (t1.gos - t0.gos) / t0.gos).toFixed(1) : null,
+  };
+  console.log(JSON.stringify(cikti, null, 1));
 } else if (komut === "sitemap-gonder") {
   // Argüman verilmezse ana sitemap; verilirse o yol (ör. sitemap-eski-adresler.xml).
   const jeton = await erisimJetonu();

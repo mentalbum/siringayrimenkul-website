@@ -459,3 +459,32 @@ SIRADA (uygulanmadı, gerekçeleriyle):
 >    listesinden düşürülmeli, kota beklentisi düşük.
 > KANAL NOTU: gizli pencere sekmesi oturum kapanınca yenilendi; birleşik
 > çıkarıcı (cite → href yedeği) yazıldı, iki kanalda da çalışıyor.
+
+## 31.08 SONUÇ ÖLÇÜMÜ — KARNE ARTIK TIKLAMAYI DA GÖRÜYOR
+
+scripts/gsc-api.mjs'e `ozet [gün]` komutu eklendi (tık/gösterim/TO/pozisyon +
+haftalık seri + önceki dönem kıyası). scratchpad-karne/pws0/sonuc-ozeti-uret.py
+bunu sayfa kırılımıyla birleştirip karnenin okuduğu sonuc-ozeti.json'u üretir.
+
+SON 28 GÜN (01-29.08): 2.531 tık · 105.951 gösterim · TO %2,39 · poz 7,7
+ÖNCEKİ 28 GÜN:         1.102 tık ·  47.321 gösterim · TO %2,33 · poz 8,2
+→ tık +%130, gösterim +%124. Büyük resim güçlü.
+
+AMA HAFTALIK SERİ DÜŞÜYOR: 697 → 698 → 598 → 538 (son üç hafta -%23)
+Pozisyon aynı anda İYİLEŞİYOR (7,9 → 7,6). Yani sıra karnesi bunu göremezdi.
+
+SEBEP BULUNDU — YENİMAHALLE: son 28 günün 2.531 tıkının 873'ü (%34,5) ve
+105.951 gösteriminin 32.941'i (%31) ata/susuz/cumhuriyet sayfalarından geldi.
+Bu sayfalar 27.08'de Özgün kararıyla siteden kaldırıldı (410). Yani bu trafik
+önümüzdeki haftalarda SIFIRLANACAK — beklenen ve kararlaştırılmış bir düşüş.
+
+ASIL PERFORMANS ERYAMAN SATIRI: 543 → 1.701 tık (+%213). Karne artık ikisini
+ayrı gösteriyor; aksi hâlde iki hafta sonraki düşüş "çöküş" gibi okunacaktı.
+
+NİYET KIRILIMI (ilk 1000 sorgu, 28 gün):
+  ev sahibi niyetli  55 sorgu ·  1.250 gös ·  44 tık · TO %3,52 · poz 5,1
+  alıcı niyetli     359 sorgu ·  8.459 gös · 425 tık · TO %5,02 · poz 6,8
+  diğer (site adı)  586 sorgu · 14.089 gös · 238 tık · TO %1,69 · poz 8,3
+  → "eryaman emlakçı" 28 günde 470 gösterim / 19 tık. Ev sahibi sorguları
+    NADİR ama TO'su yüksek ve pozisyonu en iyi (5,1). Alıcı sorguları hacmi
+    taşıyor. Üç grup da önceki döneme göre büyümüş (+19% / +172% / +87%).
