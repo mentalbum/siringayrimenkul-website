@@ -353,6 +353,42 @@ details[open] summary { border-bottom:1px solid var(--cizgi) }
   <p class="alt" style="margin-top:8px">Tam liste (203 sayfa) ve dizinsiz sınıfı:
   <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
 
+
+  <h2>Görünmeyen sayfalar — iki ayrı sorun</h2>
+  <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen 90 sayfa
+  Search Console′a tek tek soruldu. Çıkan sonuç karnenin eski varsayımını çevirdi:
+  <strong>görünmemek her zaman dizin sorunu değil.</strong> İkisinin ilacı farklı, o yüzden
+  ayrı sayılıyorlar. <span class="alt">6 sayfada Google API hata döndürdü, yeniden sorulacak.</span></p>
+  <div class="iki">
+    <div class="pano">
+      <h3>Sıra sorunu — 57 sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>var</strong>, başka sorgularda
+      çalışıyor; yalnız kendi site adı sorgusunda ilk 10 dışında.</p>
+      <ul>
+        <li>Son 28 günde <strong>2.584</strong> gösterim, <strong>75</strong> tık
+            aldılar — ortalama pozisyon 7,4.</li>
+        <li>26′i son 7 gün içinde tarandı; yani taze, dizinde ve
+            yine de görünmüyor — yeniden taratmak çare değil.</li>
+        <li>Yoğunlaştığı mahalleler: Devlet 9, Seyh Samil 9, Eryaman 8, Sehit Osman Avci 8.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Dizin isteği bunlara boşa gider.</strong>
+      Kotayı yakar, sıra kazandırmaz.</p>
+    </div>
+    <div class="pano">
+      <h3>Dizin sorunu — 33 sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>yok</strong>: ya hiç bilinmiyor
+      ya keşfedilip dizine alınmamış.</p>
+      <ul>
+        <li>Son 28 günde <strong>sıfır</strong> gösterim, <strong>sıfır</strong> tık.
+            Tam ölü — tek ilaçları dizine girmek.</li>
+        <li>Yoğunlaştığı mahalleler: Devlet 14, Sehit Osman Avci 5, Guzelkent 4, Goksu 3.</li>
+        <li>Kanıt: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa istek sonrası aynı gün tarandı.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Günlük kotanın tamamı buraya.</strong>
+      ~10/gün ile 3-4 günde biter.</p>
+    </div>
+  </div>
+
   <h2>Sıra nasıl iyileşir</h2>
   <p class="not">Karne nerede geride olduğumuzu gösteriyor; bu bölüm <strong>ne yapmanın işe
   yaradığını</strong> gösteriyor. Her satır bir ölçüme dayanıyor — çürüyenler de duruyor,

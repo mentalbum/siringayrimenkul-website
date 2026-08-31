@@ -438,6 +438,61 @@ ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
 
+# --- görünmezlerin gerçek teşhisi (31.08) ---------------------------------
+# Karne 31.08'e kadar "görünmüyor → dizine ekle" varsayıyordu. API denetimi
+# bunu çürüttü: görünmeyen 96 sayfanın 57'si zaten dizinde. İki bambaşka sorun
+# tek kutuda toplanmıştı; ayrıştırılmadan kota doğru yere gitmiyor.
+try:
+    _GT = json.load(open("gorunmez-teshis.json"))
+except Exception:
+    _GT = None
+if _GT:
+    _sr, _dz = _GT["sira_sorunu"], _GT["dizin_sorunu"]
+    _mah_sr = ", ".join(f"{m.replace('-mahallesi','').replace('-',' ').title()} {n}"
+                        for m, n in _sr["mah"][:4])
+    _mah_dz = ", ".join(f"{m.replace('-mahallesi','').replace('-',' ').title()} {n}"
+                        for m, n in _dz["mah"][:4])
+    _hata_not = (f' <span class="alt">{_GT["denetlenemedi"]} sayfada Google API hata '
+                 f'döndürdü, yeniden sorulacak.</span>' if _GT["denetlenemedi"] else "")
+    teshis_html = f"""
+  <h2>Görünmeyen sayfalar — iki ayrı sorun</h2>
+  <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen {_sr['n'] + _dz['n']} sayfa
+  Search Console′a tek tek soruldu. Çıkan sonuç karnenin eski varsayımını çevirdi:
+  <strong>görünmemek her zaman dizin sorunu değil.</strong> İkisinin ilacı farklı, o yüzden
+  ayrı sayılıyorlar.{_hata_not}</p>
+  <div class="iki">
+    <div class="pano">
+      <h3>Sıra sorunu — {_sr['n']} sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>var</strong>, başka sorgularda
+      çalışıyor; yalnız kendi site adı sorgusunda ilk 10 dışında.</p>
+      <ul>
+        <li>Son 28 günde <strong>{format(_sr['gost'], ',').replace(',', '.')}</strong> gösterim, <strong>{_sr['tik']}</strong> tık
+            aldılar — ortalama pozisyon {str(_sr['poz']).replace('.', ',')}.</li>
+        <li>{_GT['taze_ama_gorunmez']}′i son 7 gün içinde tarandı; yani taze, dizinde ve
+            yine de görünmüyor — yeniden taratmak çare değil.</li>
+        <li>Yoğunlaştığı mahalleler: {_mah_sr}.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Dizin isteği bunlara boşa gider.</strong>
+      Kotayı yakar, sıra kazandırmaz.</p>
+    </div>
+    <div class="pano">
+      <h3>Dizin sorunu — {_dz['n']} sayfa</h3>
+      <p class="alt" style="margin:0 0 10px">Google′da <strong>yok</strong>: ya hiç bilinmiyor
+      ya keşfedilip dizine alınmamış.</p>
+      <ul>
+        <li>Son 28 günde <strong>sıfır</strong> gösterim, <strong>sıfır</strong> tık.
+            Tam ölü — tek ilaçları dizine girmek.</li>
+        <li>Yoğunlaştığı mahalleler: {_mah_dz}.</li>
+        <li>Kanıt: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa istek sonrası aynı gün tarandı.</li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Günlük kotanın tamamı buraya.</strong>
+      ~10/gün ile 3-4 günde biter.</p>
+    </div>
+  </div>
+"""
+else:
+    teshis_html = ""
+
 # --- kaldıraç defteri: hangi yol ölçüldü, hangisi elendi -------------------
 # 31.08: karne "nerede geriyiz"i gösteriyordu ama "ne işe yarar"ı göstermiyordu.
 # Bu bölüm her kaldıracı ÖLÇÜMÜYLE birlikte basar; çürüğü de basar ki aynı iş
@@ -700,6 +755,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="alt" style="margin-top:8px">Tam liste ({aday_sayisi} sayfa) ve dizinsiz sınıfı:
   <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
 
+{teshis_html}
   <h2>Sıra nasıl iyileşir</h2>
   <p class="not">Karne nerede geride olduğumuzu gösteriyor; bu bölüm <strong>ne yapmanın işe
   yaradığını</strong> gösteriyor. Her satır bir ölçüme dayanıyor — çürüyenler de duruyor,
