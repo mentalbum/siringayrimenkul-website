@@ -438,6 +438,31 @@ ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
 
+# --- kaldıraç defteri: hangi yol ölçüldü, hangisi elendi -------------------
+# 31.08: karne "nerede geriyiz"i gösteriyordu ama "ne işe yarar"ı göstermiyordu.
+# Bu bölüm her kaldıracı ÖLÇÜMÜYLE birlikte basar; çürüğü de basar ki aynı iş
+# ikinci kez denenmesin (içerik ekleme ve iç bağ pompası ikisi de öyle elendi).
+try:
+    _KD = json.load(open("kaldirac-defteri.json"))["kaldiraclar"]
+except Exception:
+    _KD = []
+_ROZET = {"kanitli": ("işe yarıyor", "iyi"), "curuk": ("çürütüldü", "kotu"),
+          "acik": ("açık soru", "orta")}
+def _kaldirac_kart(k):
+    yazi, sinif = _ROZET.get(k["durum"], ("?", "orta"))
+    kisit = f'<p class="alt" style="margin:6px 0 0">{esc(k["kisit"])}</p>' if k.get("kisit") else ""
+    return (f'<div class="kaldirac {sinif}"><div class="kbas">'
+            f'<strong>{esc(k["ad"])}</strong><span class="krozet">{yazi}</span></div>'
+            f'<p>{esc(k["olcum"])}</p>{kisit}'
+            f'<p class="kkaynak">{esc(k.get("kaynak",""))}</p></div>')
+def _kaldirac_grup(durum):
+    v = [k for k in _KD if k["durum"] == durum]
+    return "".join(_kaldirac_kart(k) for k in v) or '<p class="alt">kayıt yok</p>'
+kaldirac_kanitli = _kaldirac_grup("kanitli")
+kaldirac_curuk = _kaldirac_grup("curuk")
+kaldirac_acik = _kaldirac_grup("acik")
+kaldirac_say = len(_KD)
+
 HTML = f"""<title>Bulunabilirlik Karnesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -516,6 +541,22 @@ td.num {{ font-family:Archivo,sans-serif; font-size:20px; font-weight:700 }}
 .iki {{ display:grid; grid-template-columns:1fr 1fr; gap:16px }}
 @media (max-width:760px) {{ .iki {{ grid-template-columns:1fr }} }}
 .pano {{ background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; padding:16px 18px }}
+.kgrup {{ font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3);
+          margin:22px 0 10px; font-weight:600 }}
+.kaldiraclar {{ display:grid; gap:12px; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)) }}
+.kaldirac {{ background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px;
+             padding:14px 16px; border-left:3px solid var(--m3) }}
+.kaldirac.iyi {{ border-left-color:var(--iyi) }}
+.kaldirac.kotu {{ border-left-color:var(--kotu) }}
+.kaldirac.orta {{ border-left-color:var(--orta-r) }}
+.kaldirac p {{ font-size:13.5px; margin:8px 0 0; line-height:1.55 }}
+.kbas {{ display:flex; align-items:baseline; justify-content:space-between; gap:10px }}
+.krozet {{ font-size:11.5px; padding:2px 8px; border-radius:20px; white-space:nowrap;
+           background:var(--orta-z); color:var(--orta-r) }}
+.kaldirac.iyi .krozet {{ background:var(--iyi-z); color:var(--iyi) }}
+.kaldirac.kotu .krozet {{ background:var(--kotu-z); color:var(--kotu) }}
+.kkaynak {{ font-size:11.5px !important; color:var(--m3); margin-top:10px !important;
+            font-variant-numeric:tabular-nums }}
 .pano h3 {{ margin:0 0 10px; font-size:16px }}
 .pano ul {{ margin:0; padding:0; list-style:none }}
 .pano li {{ display:flex; justify-content:space-between; gap:12px; padding:7px 0; border-bottom:1px solid var(--cizgi); font-size:14.5px }}
@@ -658,6 +699,17 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   </table></div>
   <p class="alt" style="margin-top:8px">Tam liste ({aday_sayisi} sayfa) ve dizinsiz sınıfı:
   <code>scratchpad-karne/pws0/dizin-adaylari.md</code> — her tur sonrası yeniden üretilir.</p>
+
+  <h2>Sıra nasıl iyileşir</h2>
+  <p class="not">Karne nerede geride olduğumuzu gösteriyor; bu bölüm <strong>ne yapmanın işe
+  yaradığını</strong> gösteriyor. Her satır bir ölçüme dayanıyor — çürüyenler de duruyor,
+  çünkü asıl maliyet aynı işi ikinci kez denemek. Toplam {kaldirac_say} kaldıraç izleniyor.</p>
+  <h3 class="kgrup">İşe yaradığı ölçüldü</h3>
+  <div class="kaldiraclar">{kaldirac_kanitli}</div>
+  <h3 class="kgrup">Açık sorular</h3>
+  <div class="kaldiraclar">{kaldirac_acik}</div>
+  <h3 class="kgrup">Ölçüldü, çürüdü — tekrar denenmeyecek</h3>
+  <div class="kaldiraclar">{kaldirac_curuk}</div>
 
   <h2>Mahalle ayrıntıları</h2>
   {detaylar}

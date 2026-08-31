@@ -488,3 +488,44 @@ NİYET KIRILIMI (ilk 1000 sorgu, 28 gün):
   → "eryaman emlakçı" 28 günde 470 gösterim / 19 tık. Ev sahibi sorguları
     NADİR ama TO'su yüksek ve pozisyonu en iyi (5,1). Alıcı sorguları hacmi
     taşıyor. Üç grup da önceki döneme göre büyümüş (+19% / +172% / +87%).
+
+## 31.08 — İÇERİK HİPOTEZİ ÖLDÜ (site-emlakçı sorguları için de)
+
+522 site kaydı, SERP grubuna göre (Yenimahalle hariç, medyan):
+
+| grup | n | açıklama uzunluğu | özellik sayısı | ada |
+|---|---|---|---|---|
+| ilk 3 | 357 | 677 | 5 | 1 |
+| 4-10 | 101 | 727 | 5 | 1 |
+| görünmez | 80 | 620 | 5 | 1 |
+
+İlk 3'teki sayfa ile hiç görünmeyen sayfa arasında ölçülebilir içerik farkı
+YOK — hatta 4-10 grubu ilk 3'ten daha UZUN. Bu, memory'deki "yalın ad içerik
+çıkmazı" bulgusunu genişletiyor: içerik eklemek "<site adı> emlakçı"
+sorgularını da kurtarmıyor.
+
+(Uyarı: ilk denemede `gorseller` alanı ölçülmüştü — site JSON'unda böyle bir
+alan YOK, foto adalarda duruyor. O sütun geçersizdi, atıldı.)
+
+## 31.08 — ADA CANONICAL'I REDDEDİLDİ (17/17)
+
+30 ada sayfası API denetimi (`gsc-api denetle-dosya`, canonical sütunu bugün
+eklendi):
+
+- 17 dizinde → Google'ın seçtiği canonical **17'sinde de ada sayfasının
+  KENDİSİ**. 03.08'de kurulan "canonical site sayfasına" düzeneği dört
+  haftadır tek vakada bile yutulmamış.
+- 13 dizin dışı (unknown / discovered-not-indexed).
+
+`app/sitemap.ts`'teki "bu sayfaların sitemap'te olmasının TEK amacı Google'ın
+o canonical'ı bir kez görmesi" gerekçesi böylece geçersiz.
+
+## 31.08 — "ADA SAYFALARI TARAMA BÜTÇESİ YİYOR" HİPOTEZİ DE ÖLDÜ
+
+Son 7 günde taranan: site sayfası 10/30, ada sayfası 4/30. Google zaten
+site sayfasına 2,5 kat fazla tarama ayırıyor. Ada sayfalarını sitemap'ten
+çıkarma gerekçesi düştü — ÖNERME.
+
+Sağlam kalan tek şey: ada sayfası SERP'te site sayfasının yerine çıktığında
+sıra 2,30 → 4,05'e düşüyor (n=557 vs n=59). Bunun ilacı başlık tarafında
+ama title'lar 5 Eylül'e kadar donuk (08.08 kararı) — 5 Eylül'de bak.
