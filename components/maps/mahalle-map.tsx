@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { APIProvider, Map, Polygon, useMap } from "@vis.gl/react-google-maps";
 import { siteConfig } from "@/lib/site-config";
@@ -33,14 +33,33 @@ interface MahalleMapProps {
  * harita kutusu responsive — tek bir zoom değeri hepsinde doğru olmuyor. */
 function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
   const map = useMap();
-  const pathsRef = useRef(paths);
-  pathsRef.current = paths;
+  // Halkaları render sırasında tek bir sınır kutusuna indiriyoruz. `paths` her
+  // renderda yeni bir dizi olduğu için effect'e doğrudan bağımlılık olarak
+  // verilemez — her renderda yeniden çerçeveleme demek olurdu. Bu dört sayı
+  // ise aynı parselde birebir aynı kalıyor, dolayısıyla effect yalnız gerçekten
+  // başka bir parsel geldiğinde yeniden çalışır. Çerçevenin kendisi değişmez:
+  // fitBounds zaten tüm noktaları bu kutuya indiriyordu.
+  let guney = Infinity;
+  let bati = Infinity;
+  let kuzey = -Infinity;
+  let dogu = -Infinity;
+  for (const halka of paths) {
+    for (const nokta of halka) {
+      if (nokta.lat < guney) guney = nokta.lat;
+      if (nokta.lat > kuzey) kuzey = nokta.lat;
+      if (nokta.lng < bati) bati = nokta.lng;
+      if (nokta.lng > dogu) dogu = nokta.lng;
+    }
+  }
 
   useEffect(() => {
-    const halkalar = pathsRef.current;
-    if (!map || halkalar.length === 0) return;
-    const bounds = new google.maps.LatLngBounds();
-    for (const halka of halkalar) for (const nokta of halka) bounds.extend(nokta);
+    // Halkasız/noktasız gelirse sayılar Infinity kalır — çerçeveleyecek bir şey
+    // yok demektir.
+    if (!map || !Number.isFinite(guney)) return;
+    const bounds = new google.maps.LatLngBounds(
+      { lat: guney, lng: bati },
+      { lat: kuzey, lng: dogu }
+    );
     // Kenar payı: parsel kutuya yapışık durmasın, çevresi de bir miktar görünsün.
     map.fitBounds(bounds, 44);
     // Tavan neden 17: küçük parsellerde (örn. BP Residence, 4.116 m²) fitBounds
@@ -54,7 +73,7 @@ function ParseleOdakla({ paths }: { paths: Koordinat[][] }) {
       if (typeof z === "number" && z > 17) map.setZoom(17);
     });
     return () => google.maps.event.removeListener(dinleyici);
-  }, [map]);
+  }, [map, guney, bati, kuzey, dogu]);
 
   return null;
 }
