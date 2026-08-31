@@ -114,7 +114,11 @@ if (komut === "denetle") {
       const s = await denetle(jeton, urller[i]);
       // sonTarama sütunu 24.08'de eklendi: "dizinde ama BAYAT" ile "dizinde ve
       // taze" ayrımı ilk-3 teşhisinin belkemiği; tek-URL komutunda vardı, burada yoktu.
-      satirlar.push(`${s.url}\t${s.hukum === "PASS" ? "MEVCUT" : "YOK"}\t${s.kapsam}\t${s.sonTarama}`);
+      // canonical sütunu 31.08'de eklendi: denetle() bu alanı hep çekiyordu ama
+      // hiçbir çıktı basmıyordu. Ada sayfası kararının dayanağı tam da bu —
+      // Google'ın SEÇTİĞİ canonical site sayfası mı, yoksa ada sayfasının
+      // kendisi mi (yani 03.08 canonical'ı yutuldu mu)?
+      satirlar.push(`${s.url}\t${s.hukum === "PASS" ? "MEVCUT" : "YOK"}\t${s.kapsam}\t${s.sonTarama}\t${s.canonical}`);
       console.error(`${i + 1}/${urller.length} ${s.hukum} ${s.url}`);
     } catch (e) {
       satirlar.push(`${urller[i]}\tHATA\t${e.message}`);

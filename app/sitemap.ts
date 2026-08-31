@@ -93,6 +93,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * GÜNCELLEME: ilgili şablon topluca değişince buradaki tarihi de güncelle.
    *   git log -1 --format=%ad --date=short -- "app/mahalleler/[mahalle]/[site]/page.tsx" */
   const SABLON = {
+    /* 31.08 DÜZELTMESİ — KÜRESEL BOILERPLATE TABANI İLERLETMEZ.
+     * Ölçülen sorun: 27.08'de Yenimahalle kaldırılırken footer (her sayfada
+     * duran küresel blok) değişti ve dört taban birden 27.08'e çekildi.
+     * Sonuç: canlı sitemap'teki 1.178 adresin 1.146'sı AYNI damgayı taşır
+     * hâle geldi (31.08 ölçümü) — yani tazelik sinyali tümüyle düzleşti ve
+     * Google'a "hangi sayfa gerçekten değişti" bilgisi vermiyor.
+     * Bu, dosyanın kendi kuralına da aykırıydı: aşağıdaki 16.08/17.08
+     * notları "Tarih SALT tarama zorlamak için ilerletilmez, Google toplu
+     * damgayı yok sayar" diyor ve 17.08'de tek sayfalık görsel değişikliği
+     * için taban bilerek ilerletilmemişti.
+     * Tabanlar her ailenin son ESASLI şablon değişikliğine geri alındı:
+     *   site 22.08 (konut türetmesi, 12 sayfada görünür metin)
+     *   mahalle 17.08 (SSS'ten "hangi ilçede" sorusu silindi)
+     *   etap 15.08 (ana sayfaya çıpalı bağ)
+     *   ada 16.08 (5. SSS silindi, 818 sayfanın görünen içeriği)
+     * Beklenti dürüst kurulsun: bu, aileleri KENDİ İÇİNDE açmaz (653 site
+     * kaydı 26.07'den beri değişmedi). Kazanç aileler ARASI sıradır —
+     * Google'a ilk kez "site sayfaları ada sayfalarından taze" denir.
+     * Bu tam da istediğimiz sıra: ölçümde ada sayfası site sayfasının yerine
+     * çıktığında ortalama sıra 2,38'den 4,00'a düşüyor. */
     // 15.08(b): description ev sahibi diline geçti (olgu cümlesi çıktı; eski
     //        kalıbın %86'sı 155 karakterlik kesme sınırını aşıyordu).
     // 15.08: harita sütunu sabit boy + yapışkan oldu (fotoğraflı sayfalarda
@@ -113,8 +133,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 22.08: konut türetmesi blok-başına sayıları toplam sanmayı bıraktı
     //        (lib/kunye.ts konutCikar) — 12 sayfada açılış cümlesi ve
     //        ApartmentComplex numberOfAccommodationUnits değişti.
-    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
-    site: new Date("2026-08-27"),
+    // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
+    //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
+    site: new Date("2026-08-22"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin
@@ -127,8 +148,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        yerine etap sayfasına giden tek satırlık not basılıyor.
     // 17.08: mahalle SSS'sinden "hangi ilçede yer alıyor?" sorusu silindi —
     //        FAQPage işaretlemesinde duruyordu ve bilgi arayanı çekiyordu.
-    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
-    mahalle: new Date("2026-08-27"),
+    // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
+    //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
+    mahalle: new Date("2026-08-17"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);
@@ -139,8 +161,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 08.08: etaplar arası bağ mahalle sınırından çıkarıldı, /etaplar hub bağı eklendi.
     // 07.08: 1./2./3. Etap sayfaları resmî ada listeleriyle açıldı (81cda7d, 18a5cec).
     // 15.08: ana sayfaya "Eryaman emlakçı" çıpalı bağ eklendi.
-    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
-    etap: new Date("2026-08-27"),
+    // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
+    //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
+    etap: new Date("2026-08-15"),
     // 08.08: footer'a etap bloğu eklendi — küresel şablon, 767 ada sayfası da
     //        değişti (5996267, 288167c).
     // 09.08: başlıktan ticari kalıp ("… Ada Emlakçı | Evinizi Satalım…")
@@ -162,8 +185,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        adalarda görünür (bugün tek ada) ve o adanın tazeliği zaten kendi
     //        içerik dosyasından geliyor — 818 sayfaya toplu damga basmak
     //        AGENTS.md'nin uyardığı sahte tazelik olurdu.
-    // 27.08: Yenimahalle kaldırması — footer (küresel) değişti.
-    ada: new Date("2026-08-27"),
+    // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
+    //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
+    ada: new Date("2026-08-16"),
   };
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
