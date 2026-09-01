@@ -627,3 +627,27 @@ hedefin 59'u da 200 döndüğü doğrulandı.
 
 DERS: SERP ölçüm tarihçesi bir ENVANTER DEĞİL. Sayfa listesi gerektiren her
 türetme content/siteler ile kesişmeli.
+
+## 01.09 — DAMLA ELDEN: 9 kabul, 2 kendiliğinden tarandı, 10.'da sınır
+
+Cron silindiği için Özgün'ün Chrome'unda elden yürütüldü. Önce API doğrulaması
+(14 aday): Göksu mahalle sayfası 01.09'da, Yavuz Selim 31.08'de kendiliğinden
+yeniden taranmış — sitemap düzeltmesi (PR #87) yayına gireli bir gün; ikisine
+kota harcanmadı. Tunahan (17.08) ve Eryaman (21.08) hâlâ bayattı, yeniden
+tarama isteği gönderildi. Ardından 7 ölü site sayfası: hepsi "URL Google'da
+yok", hepsi kabul.
+
+10. istek (Ekin) "Hata! Bir sorun oluştu — Dizine ekleme isteğiniz
+gönderilirken sorun oldu. Lütfen daha sonra tekrar deneyin." balonu verdi.
+Bu, günlük sınırın "Kota Aşıldı" dışındaki ikinci görünümü; istek işlenmedi,
+tekrar basılmadı (çift basma da kota yakar).
+
+YÖNTEM (çalışan reçete, gsc-dizin becerisine de yazıldı): GSC kutusuna gerçek
+klavye olayı ULAŞMIYOR (cmd+a/type/Return hiçbiri denetimi başlatmadı) ve
+inspect?id=<url> deep-link 404 veriyor. İşleyen: kutuya value-setter ile yaz +
+input olayı + keydown/keypress/keyup Enter'ı üçünü birden gönder (keyCode ve
+which=13). İstek butonu için "dizine eklenmesini iste" metnini taşıyan EN İÇ
+düğümü bul (Türkçe İ normalize), closest('button').click(). Balon ~30 sn'de
+geliyor; Kapat'ı aynı yöntemle bul.
+
+Yarın Ekin'den devam; kalan açık hedef 48 (~5 gün).

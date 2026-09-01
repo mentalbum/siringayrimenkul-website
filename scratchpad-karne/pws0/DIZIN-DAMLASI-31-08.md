@@ -92,7 +92,7 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 ## guzelkent-mahallesi (4)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi  
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi ← 01.09 dizin dışı teyit; istek 'Hata! Bir sorun oluştu' ile döndü (günlük sınır), GÖNDERİLMEDİ — yarın ilk sırada  
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi  
       _keşfedildi, dizine alınmadı_
@@ -255,3 +255,10 @@ Bu parti birinci partiden SONRA çekilir.
 
 - [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower  
       _hiç bilinmiyor_
+
+> 01.09 — Elden tur (cron silindi). API doğrulaması: Göksu ve Yavuz Selim mahalle
+> sayfaları kendiliğinden yeniden taranmış (01.09 / 31.08), kota harcanmadı.
+> 9 istek kabul (Tunahan, Eryaman mahalle; Denizim, Yeşilöz, Çiçek, Göksu Prestij,
+> İçtaş, Üçyıldız, Yıldız Eryaman). 10.'da (Ekin) 'Hata! Bir sorun oluştu — daha
+> sonra tekrar deneyin' balonu: bu, 'Kota Aşıldı'nın başka yüzü, istek işlenmedi.
+> Kalan açık hedef: 48. Yarın Ekin'den devam.

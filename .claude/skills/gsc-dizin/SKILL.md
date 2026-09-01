@@ -97,6 +97,29 @@ Tur bitince Özgün'e Türkçe, sade özet: kaç istek kabul, kaç kendiliğinde
 dizinde, kota durumu, sıradaki adım. Rakamları kuyruk dosyasındaki işaretlerden
 say, ezberden yazma.
 
+## Günlük sınırın ikinci yüzü (01.09 ölçüldü)
+
+"Kota Aşıldı" dışında şu balon da sınır demektir: **"Hata! Bir sorun oluştu —
+Dizine ekleme isteğiniz gönderilirken sorun oldu. Lütfen daha sonra tekrar
+deneyin."** 01.09'da 9 kabulden sonra 10.'da geldi. İstek İŞLENMEMİŞTİR;
+işaretleme, tekrar basma, deftere not düş, dur.
+
+## Klavyesiz çalışan reçete (01.09 doğrulandı, Özgün'ün Chrome'u)
+
+Kutuya gerçek klavye olayı ulaşmıyor (click + cmd+a + type + Return denetimi
+başlatmadı) ve `inspect?…&id=<url>` deep-link 404 veriyor. İşleyen sıra:
+
+1. `inspect?resource_id=…` sayfasına git, 5 sn bekle.
+2. Görünür `input`lardan aria-label'ında "URL" geçeni seç; `focus()`,
+   `click()`, `HTMLInputElement.prototype.value` setter'ıyla yaz, `input`
+   olayı, sonra **keydown + keypress + keyup** Enter (keyCode ve which = 13).
+3. 16 sn bekle, hükmü oku ("URL Google'da mevcut / yok").
+4. İstek: "dizine eklenmesini iste" metnini taşıyan **en iç** düğümü bul
+   (Türkçe İ normalize: İ→i, I→ı, lower), `closest('button').click()`.
+   Sarmalayıcı div'e tıklamak butonu tetiklemiyor.
+5. 30 sn bekle, "Dizine eklenmesi istendi" var mı bak. Sonra "kapat" metinli
+   en iç düğümü aynı yöntemle tıkla, 2 sn bekle.
+
 ## Onay balonu mekaniği (29.08 ölçüldü)
 
 - İstek butonuna basınca önce **canlı test** modalı açılır (~30 sn), ardından
