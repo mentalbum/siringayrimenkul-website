@@ -55,11 +55,19 @@ def mah_stats(dosya):
     yok = [r for r in site if r["sira"] == 0]
     orta = [r for r in site if r["sira"] >= 4]
     bir = [r for r in site if r["sira"] == 1]
+    # kuyruktaki SİTE sorgusu sayısı (mahalle sorgusu ve etap kayıtları hariç) —
+    # "mahalle TAMAM" ölçütü: bunların hepsi en az bir kez ölçülmüş mü
+    site_kuyruk = [s for s in gs if "/" in s and "/etaplar/" not in s]
     return dict(site=site, mahq=mahq[0] if mahq else None,
                 n=len(site), i3=len(ilk3), o=len(orta), y=len(yok), bir=bir,
-                olculen=len(g), kuyruk=len(gs), s_listesi=[r["s"] for r in site])
+                olculen=len(g), kuyruk=len(gs), site_kuyruk=len(site_kuyruk),
+                s_listesi=[r["s"] for r in site])
 
 OLCULEN = {k: mah_stats(f) for k, ad, f in TURLAR}
+# 01.09: başlık kartındaki "11/11 mahalle TAMAM" elle yazılıydı; bir tur düşse
+# sessizce yanlışa düşerdi. TAMAM = turun kuyruğundaki her site sorgusu ölçülmüş.
+MAH_TAMAM = sum(1 for v in OLCULEN.values() if v["n"] == v["site_kuyruk"])
+MAH_TOPLAM = len(TURLAR)
 # ŞOA ilerlemesi: yalnız BU turda (28.08 ve sonrası) ölçülenler sayılır —
 # eski turlardan kalan ölçümler kuyruğu "ölçülmüş" göstermesin
 _soa_k = json.load(open("tur-sehit-osman-avci-2908.json"))
@@ -108,6 +116,13 @@ TOPLAM_I3 = sum(v["i3"] for v in OLCULEN.values())
 TOPLAM_BIR = sum(len(v["bir"]) for v in OLCULEN.values())
 DTOT = {k: sum(len(v[k]) for m, v in DA.items() if isinstance(v, dict)) for k in ("dizinsiz", "bayat", "orta", "taze")}
 DTOPLAM = sum(DTOT.values())
+# Bayat yığınlar: mahalle başına bayat sayfa sayısı + gösterim talebi toplamı,
+# talebe göre büyükten küçüğe ('_statik' mahalle değil, dışarıda). Bayat elemanı
+# [yol, tarama_tarihi, gösterim, durum].
+_BAYAT_SIRA = sorted(
+    ((k, len(v["bayat"]), sum(x[2] for x in v["bayat"]))
+     for k, v in DA.items() if k != "_statik" and isinstance(v, dict) and "bayat" in v),
+    key=lambda x: x[2], reverse=True)
 
 # kuyruktan bekleyen istekler
 dk = open("DIZINE-EKLENECEKLER.md").read()
@@ -118,11 +133,12 @@ except FileNotFoundError:
 # yalnız son dalganın istekleri "tarama bekliyor" sayılır (10 günden eski işaretler
 # ya çoktan tarandı ya da düştü — 194'lük tarihi defterin tamamını sayma)
 _bugun = datetime.date.today()
+_ISTEK_PENCERE = 10  # gün; hem sayımda hem karne metninde aynı eşik
 _istekli = set()
 for metin in (dk, dk2):
     for m in re.finditer(r"(https://www\.siringayrimenkul\.com/\S+?)\s.*?←\s*(\d\d)\.(\d\d) istek gönderildi", metin):
         t = datetime.date(_bugun.year, int(m.group(3)), int(m.group(2)))
-        if 0 <= (_bugun - t).days <= 10:
+        if 0 <= (_bugun - t).days <= _ISTEK_PENCERE:
             _istekli.add(m.group(1).rstrip(">"))
 BEKLEYEN_ISTEK = len(_istekli)
 # 31.08 — panel kotayı ZATEN 1. SIRADAKİ sayfalara harcatıyordu. SIRADAKI eski
@@ -529,8 +545,13 @@ def _yuzde_rozet(simdi, onceki):
     return f'<span class="chip {cls}">{d:+}%</span>'
 
 sonuc_html = ""
+donem_notu = "son dönem, bir önceki dönemle karşılaştırmalı"
+# GSC penceresi, cümle içi kullanım ("… son 28 günde …"); SONUC yoksa rakamsız
+DONEM_GUNDE = f"son {SONUC['donem']['gun']} günde" if SONUC else "son dönemde"
 if SONUC:
     sm, on = SONUC["simdi"], SONUC["onceki"]
+    _gun = SONUC["donem"]["gun"]  # sonuc-ozeti.json → donem.gun
+    donem_notu = f"son {_gun} gün, bir önceki {_gun} günle karşılaştırmalı"
     e = SONUC["ayrim"]["eryaman"]; y = SONUC["ayrim"]["yenimahalle"]
     hafta = SONUC.get("haftalar") or []
     en = max([h["tik"] for h in hafta] or [1])
@@ -566,10 +587,10 @@ if SONUC:
     if _mb:
         kart_uyari = (f'<p class="alt" style="margin:10px 0 0">Yüzde rozetleri dikkatli okunmalı: '
                       f'Search Console bu siteyi <strong>{tr_tarih(_mb)}</strong> tarihinden beri '
-                      f'ölçüyor, yani “önceki 28 gün” dönemi sitenin daha yeni tanındığı ilk aya '
+                      f'ölçüyor, yani “önceki {_gun} gün” dönemi sitenin daha yeni tanındığı ilk aya '
                       f'denk geliyor. Rozet büyümeyi olduğundan büyük gösterir.</p>')
     sonuc_html = f'''<div class="kartlar">
-    <div class="kart"><div class="buyuk">{tr_sayi(sm["tik"])}</div><div class="etiket">tıklama · 28 gün {_yuzde_rozet(sm["tik"], on["tik"])}</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(sm["tik"])}</div><div class="etiket">tıklama · {_gun} gün {_yuzde_rozet(sm["tik"], on["tik"])}</div></div>
     <div class="kart"><div class="buyuk">{tr_sayi(sm["gos"])}</div><div class="etiket">gösterim {_yuzde_rozet(sm["gos"], on["gos"])}</div></div>
     <div class="kart"><div class="buyuk">%{tr_sayi(sm["to"], 2)}</div><div class="etiket">tıklanma oranı (önce %{tr_sayi(on["to"], 2)})</div></div>
     <div class="kart"><div class="buyuk">{tr_sayi(sm["poz"], 1)}</div><div class="etiket">ortalama pozisyon (önce {tr_sayi(on["poz"], 1)})</div></div>
@@ -589,7 +610,7 @@ if SONUC:
         <li><span><strong>Yenimahalle</strong> <span class="alt">27.08′de siteden kaldırıldı</span></span>
             <span><span class="chip kotu">{y["simdi"]["tik"]} tık</span></span></li>
       </ul>
-      <p class="alt" style="margin:10px 0 0">Son 28 günün tıklamasının <strong>%{round(100*y["simdi"]["tik"]/sm["tik"])}′i</strong>
+      <p class="alt" style="margin:10px 0 0">Son {_gun} gündeki tıklamanın <strong>%{round(100*y["simdi"]["tik"]/sm["tik"])} kadarı</strong>
       artık sitede olmayan Yenimahalle sayfalarından geldi. Bu trafik önümüzdeki haftalarda sıfırlanacak —
       beklenen ve kararlaştırılmış bir düşüş. Asıl performans Eryaman satırı: {e["onceki"]["tik"]} → {e["simdi"]["tik"]} tık.</p>
     </div>
@@ -609,7 +630,7 @@ if ISGAL:
             f'<td><span class="chip {cls}">{x["isgal"]} / {x["n"]}</span></td>'
             f'<td>{sir}</td><td>{har}</td></tr>')
     isgal_ozet = (f'Ölçülen {len(_o)} sorguda ilk sayfadaki {_n} organik sıranın '
-                  f'<strong>{_top}′i bize ait (%{round(100*_top/_n)})</strong> · '
+                  f'<strong>{_top} tanesi bize ait (%{round(100*_top/_n)})</strong> · '
                   f'ölçüm {ISGAL["tarih"][8:10]}.{ISGAL["tarih"][5:7]}, gizli pencere.')
 
 def _sira_yazi(p):
@@ -654,12 +675,12 @@ _sabit_ic = len([d for d in _DEG if _IC(d) and d["fark"] == 0])
 _kiy = KIYASLANMADI["sorgu"] + KIYASLANMADI["kanal"]
 degisim_ozet = (
     f"Bu turda <strong>{len(_DEG)} sorgu</strong> yeniden ölçüldü: "
-    f"{len(GIRENLER)}′i ilk 10′a girdi, {len(CIKANLAR)}′i çıktı; ilk 10 içinde "
-    f"{len(IC_YUKSELEN)}′i yükseldi, {len(IC_DUSEN)}′i düştü, {len(IC_GURULTU)}′i ±1 "
-    f"sınırında kaldı (gürültü), {_sabit_ic}′i hiç kıpırdamadı. "
+    f"{len(GIRENLER)} tanesi ilk 10′a girdi, {len(CIKANLAR)} tanesi çıktı; ilk 10 içinde "
+    f"{len(IC_YUKSELEN)} tanesi yükseldi, {len(IC_DUSEN)} tanesi düştü, {len(IC_GURULTU)} tanesi ±1 "
+    f"sınırında kaldı (gürültü), {_sabit_ic} tanesi hiç kıpırdamadı. "
     f"Ayrıca <strong>{_kiy} ölçüm kıyaslama dışı</strong> bırakıldı: "
-    f"{KIYASLANMADI['sorgu']}′inde sorgu metni turlar arasında değişmiş, "
-    f"{KIYASLANMADI['kanal']}′inde ölçüm başka bir pencereden yapılmış — "
+    f"{KIYASLANMADI['sorgu']} tanesinde sorgu metni turlar arasında değişmiş, "
+    f"{KIYASLANMADI['kanal']} tanesinde ölçüm başka bir pencereden yapılmış — "
     f"ikisi de farklı şeyleri karşılaştırmak olurdu.")
 
 SERP_DURUM_RENK = {"GÖRÜNMEZ": "kotu", "ada temsil": "orta", "komşu sayfa temsil": "orta",
@@ -779,6 +800,16 @@ siradaki_html = "".join(
     f'<span class="chip {a["renk"]}">{esc(a["tur"])}</span></li>'
     for a in KUYRUK_OLU[:5]) or '<li class="alt">Kuyruk boş</li>'
 
+# Bayat yığınlar cümlesi: ilk ikisi DA'dan; "damla sırasının başında" ibaresi
+# yalnız ikisi de KUYRUK_OLU'nun ilk 5'inde mahalle olarak geçiyorsa basılır.
+_bayat_ilk2 = " ve ".join(
+    f"{MAH_AD.get(k, k)} ({n} sayfa · {tr_sayi(g)} gösterim talebi)" if i == 0
+    else f"{MAH_AD.get(k, k)} ({n} · {tr_sayi(g)})"
+    for i, (k, n, g) in enumerate(_BAYAT_SIRA[:2]))
+_damla_mah = {a["mah"] for a in KUYRUK_OLU[:5]}
+_bayat_damla = ("; ikisi de damla sırasının başında"
+                if all(k in _damla_mah for k, _, _ in _BAYAT_SIRA[:2]) else "")
+
 ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
@@ -799,17 +830,20 @@ for a_ in KUYRUK_OLU:
 for a_ in KUYRUK_OLU:
     if a_["tur"] != "bayat taranmış":
         EYLEM.append({"is": "Dizin isteği gönder", "hedef": a_["site"],
-                      "mah": a_["mah"], "neden": "Google′da yok, 28 günde sıfır gösterim",
+                      "mah": a_["mah"], "neden": f"Google′da yok, {DONEM_GUNDE} sıfır gösterim",
                       "oncelik": 1})
 EYLEM.sort(key=lambda x: x["oncelik"])
-_gun = 10
+# günlük dizin isteği kotası (betik parametresi, ölçüm değil). Adı bilerek
+# _gun değil: _gun yukarıda GSC dönemi (donem.gun) — ikisi karışınca
+# "28/gün ile biter" gibi sessiz bir yanlış çıkar.
+_kota_gun = 10
 eylem_html = "".join(
     f'<li><span><strong>{esc(e["hedef"])}</strong> '
     f'<span class="alt">{esc(MAH_AD.get(e["mah"], e["mah"]))} — {esc(e["neden"])}</span></span>'
     f'<span class="chip {"kotu" if e["oncelik"] == 0 else "orta"}">{esc(e["is"])}</span></li>'
     for e in EYLEM[:12]) or '<li class="alt">Kuyruk boş</li>'
 eylem_sayi = len(EYLEM)
-eylem_gun = -(-eylem_sayi // _gun) if eylem_sayi else 0
+eylem_gun = -(-eylem_sayi // _kota_gun) if eylem_sayi else 0
 
 # --- sırayı KİM tutuyor (31.08) -------------------------------------------
 # Karnenin baş rakamı "%68'i ilk 3'te" idi ve tek başına yanıltıcıydı: o
@@ -828,6 +862,7 @@ if _DS:
         f'<span class="chip {_RENK.get(x["k"], "nul")}">{x["n"]}</span></li>'
         for x in _DS["hepsi"])
     _i3 = _DS["ilk3_toplam"]
+    _ds_toplam = _DS.get("toplam") or sum(x["n"] for x in _DS["hepsi"])  # dogru-sayfa.json → toplam
     _i3d = _DS["ilk3_dogru"]
     _i3y = _i3 - _i3d
     _pay = round(_i3d * 100 / _i3) if _i3 else 0
@@ -841,15 +876,15 @@ if _DS:
   <div class="iki">
     <div class="pano">
       <h3>İlk 3′teki {_i3} sıranın kimliği</h3>
-      <p class="alt" style="margin:0 0 10px">Bunların <strong>{_i3d}′i doğru site sayfasıyla</strong>
-      kazanılmış (%{_pay}); kalan <strong>{_i3y}′inde</strong> sıra bizde ama açılan sayfa
+      <p class="alt" style="margin:0 0 10px">Bunların <strong>{_i3d} tanesi doğru site sayfasıyla</strong>
+      kazanılmış (%{_pay}); kalan <strong>{_i3y} tanesinde</strong> sıra bizde ama açılan sayfa
       aranan site değil.</p>
       <div class="bar" style="height:14px"><i style="width:{_pay}%"></i></div>
       <p class="alt" style="margin:10px 0 0">Yanlış sayfanın en yoğun olduğu mahalleler:
       {_yanlis_mah}.</p>
     </div>
     <div class="pano">
-      <h3>504 sorgunun tamamı</h3>
+      <h3>{_ds_toplam} sorgunun tamamı</h3>
       <ul>{_ds_satir}</ul>
       <p class="alt" style="margin:10px 0 0">“Ölçüm kırıntısı” ({_belirsiz}): o kayıtta hangi
       sayfanın sıralandığı okunamamış — sonuç adresi kesik kaydedilmiş. Bunlar hiçbir sınıfa
@@ -887,15 +922,18 @@ if _TV:
     if _site and _ada and _ada["tik_sayfa"]:
         _kat = round(_site["tik_sayfa"] / _ada["tik_sayfa"])
         _tv_not = (f"Ada sayfaları adres sayısı olarak site sayfalarıyla neredeyse eşit "
-                   f"({tr_sayi(_ada['sayfa'])}′e {tr_sayi(_site['sayfa'])}) ama sayfa başına "
+                   f"(ada {tr_sayi(_ada['sayfa'])}, site {tr_sayi(_site['sayfa'])}) ama sayfa başına "
                    f"<strong>{_kat} kat</strong> az tık getiriyor "
-                   f"({tr_sayi(_ada['tik_sayfa'], 2)}′e {tr_sayi(_site['tik_sayfa'], 2)}). "
+                   f"(ada {tr_sayi(_ada['tik_sayfa'], 2)}, site {tr_sayi(_site['tik_sayfa'], 2)}). "
                    f"Yine de sitemap′te kalıyorlar: 31.08 ölçümünde tarama bütçesi yemedikleri "
-                   f"görüldü (son 7 günde site 10/30, ada 4/30 tarandı) ve çıkarmanın ölçülmüş "
-                   f"bir kazancı yok.")
+                   f"görüldü (bkz. Sıra nasıl iyileşir → Ada sayfalarını sitemap′ten çıkarmak) "
+                   f"ve çıkarmanın ölçülmüş bir kazancı yok.")
+    # Dönem: sayfalar28.tsv sonuc-ozeti ile aynı GSC penceresi → donem.gun
+    _tv_donem = (f"Son {SONUC['donem']['gun']} gün, Search Console."
+                 if SONUC else "Search Console, son dönem.")
     turverim_html = f"""
   <h2>Hangi sayfa ailesi trafiği taşıyor</h2>
-  <p class="not">Son 28 gün, Search Console. Kaldırılan Yenimahalle sayfaları hariç.
+  <p class="not">{_tv_donem} Kaldırılan Yenimahalle sayfaları hariç.
   Sütunlardan en önemlisi <strong>adres başına tık</strong> — toplam sayı çok adresli
   aileleri olduğundan büyük gösterir.</p>
   <div class="tablo-kabuk"><table>
@@ -935,11 +973,33 @@ if _VS:
         '<li class="alt">Denetimlerin hepsi temiz.</li>'
     _vs_temiz = ", ".join(esc(b["ad"].lower()) for b in _temiz) or "—"
     _yas = {k: v for k, v in _VS["yas"]}
+    # Ölçüm yaşı kovaları veri-sagligi.py'de sabit sırayla yazılır (en taze
+    # kova önce, açık uçlu "N+ gün" en sonda). Satır etiketleri kova adından
+    # türetilir; eşik orada değişirse karne kendiliğinden uyar, elle rakam yok.
+    _yas_kova = [k for k, _ in _VS["yas"]]
+
+    def _kova_sinir(k):
+        # "0-7 gün" -> (0, 7); "30+ gün" -> (30, None)
+        s = k.split()[0]
+        if s.endswith("+"):
+            return int(s[:-1]), None
+        a, b = s.split("-")
+        return int(a), int(b)
+
+    _yas_ilk, _yas_orta, _yas_eski = _yas_kova[0], _yas_kova[1], _yas_kova[2:]
+    _yas_satirlar = (
+        f'<li><span>Son {_kova_sinir(_yas_ilk)[1]} gün içinde ölçülmüş</span>'
+        f'<span class="chip iyi">{_yas.get(_yas_ilk, 0)}</span></li>'
+        f'<li><span>{_kova_sinir(_yas_orta)[0]}-{_kova_sinir(_yas_orta)[1]} gündür ölçülmemiş</span>'
+        f'<span class="chip">{_yas.get(_yas_orta, 0)}</span></li>'
+        f'<li><span>{_kova_sinir(_yas_eski[0])[0]} günden eski</span>'
+        f'<span class="chip">{sum(_yas.get(k, 0) for k in _yas_eski)}</span></li>'
+    )
     _gu = _VS.get("gurultu") or {}
     _vs_gurultu = ""
     if _gu.get("oran") is not None:
-        _vs_gurultu = (f'Kısa aralıklı {_gu["cift"]} yeniden ölçümün '
-                       f'<strong>%{_gu["oran"]}′i ≤1 sıra oynuyor</strong> — bu yüzden bir sıralık '
+        _vs_gurultu = (f'Kısa aralıklı {_gu["cift"]} yeniden ölçüm içinde '
+                       f'<strong>≤1 sıra oynayanların payı %{_gu["oran"]}</strong> — bu yüzden bir sıralık '
                        f'hareket gürültü sayılıyor. Ayrıca {_gu["giris_cikis"]} giriş/çıkış olayı var, '
                        f'onlar gerçek.')
     saglik_html = f"""
@@ -953,9 +1013,7 @@ if _VS:
       <ul>
         <li><span>Ölçüm kuyruğundaki sayfa</span><span class="chip">{_VS["kuyruk"]}</span></li>
         <li><span>En az bir kez ölçülmüş</span><span class="chip iyi">{_VS["olculen"]}</span></li>
-        <li><span>Son 7 gün içinde ölçülmüş</span><span class="chip iyi">{_yas.get("0-7 gün", 0)}</span></li>
-        <li><span>8-14 gündür ölçülmemiş</span><span class="chip">{_yas.get("8-14 gün", 0)}</span></li>
-        <li><span>15 günden eski</span><span class="chip">{_yas.get("15-30 gün", 0) + _yas.get("30+ gün", 0)}</span></li>
+        {_yas_satirlar}
       </ul>
       <p class="alt" style="margin:10px 0 0">{_vs_gurultu}</p>
     </div>
@@ -968,6 +1026,13 @@ if _VS:
 """
 else:
     saglik_html = ""
+
+# "Son ölçümde ne değişti" bölümündeki gürültü cümlesi de aynı orandan beslenir;
+# veri-sagligi.json yoksa rakamsız kurulur (elle rakam yazılmaz).
+_gurultu_oran = (_VS.get("gurultu") or {}).get("oran") if _VS else None
+GURULTU_ORAN_METNI = (f"<strong>≤1 sıra oynayanların payı %{_gurultu_oran}</strong>"
+                      if _gurultu_oran is not None
+                      else "<strong>büyük çoğunluk ≤1 sıra oynuyor</strong>")
 
 # --- görünmezlerin gerçek teşhisi (31.08) ---------------------------------
 # Karne 31.08'e kadar "görünmüyor → dizine ekle" varsayıyordu. API denetimi
@@ -990,6 +1055,11 @@ if _GT:
                     if _hayalet else "")
     _hata_not = (f' <span class="alt">{_GT["denetlenemedi"]} sayfada Google API hata '
                  f'döndürdü, yeniden soruldu.</span>' if _GT["denetlenemedi"] else "")
+    # Dönem uzunluğu: gorunmez-teshis.json'un girdisi sayfalar28.tsv, sonuc-ozeti.json
+    # ile aynı GSC penceresi → gün sayısı oradan okunur (donem.gun); SONUC yoksa rakamsız.
+    _son_donem = f"Son {SONUC['donem']['gun']} günde" if SONUC else "Son dönemde"
+    # günlük dizin isteği kotası: eylem_gun ile aynı değişken ve formül
+    _dz_gun = -(-_dz['n'] // _kota_gun) if _dz['n'] else 0
     teshis_html = f"""
   <h2>Görünmeyen sayfalar — iki ayrı sorun</h2>
   <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen {_sr['n'] + _dz['n']} sayfa
@@ -1002,9 +1072,9 @@ if _GT:
       <p class="alt" style="margin:0 0 10px">Google′da <strong>var</strong>, başka sorgularda
       çalışıyor; yalnız kendi site adı sorgusunda ilk 10 dışında.</p>
       <ul>
-        <li>Son 28 günde <strong>{format(_sr['gost'], ',').replace(',', '.')}</strong> gösterim, <strong>{_sr['tik']}</strong> tık
+        <li>{_son_donem} <strong>{tr_sayi(_sr['gost'])}</strong> gösterim, <strong>{tr_sayi(_sr['tik'])}</strong> tık
             aldılar — ortalama pozisyon {str(_sr['poz']).replace('.', ',')}.</li>
-        <li>{_GT['taze_ama_gorunmez']}′i son 7 gün içinde tarandı; yani taze, dizinde ve
+        <li>{_GT['taze_ama_gorunmez']} tanesi yakın tarihte tarandı; yani taze, dizinde ve
             yine de görünmüyor — yeniden taratmak çare değil.</li>
         <li>Yoğunlaştığı mahalleler: {_mah_sr}.</li>
       </ul>
@@ -1016,13 +1086,14 @@ if _GT:
       <p class="alt" style="margin:0 0 10px">Google′da <strong>yok</strong>: ya hiç bilinmiyor
       ya keşfedilip dizine alınmamış.</p>
       <ul>
-        <li>Son 28 günde <strong>sıfır</strong> gösterim, <strong>sıfır</strong> tık.
+        <li>{_son_donem} <strong>{tr_sayi(_dz['gost'])}</strong> gösterim, <strong>{tr_sayi(_dz['tik'])}</strong> tık.
             Tam ölü — tek ilaçları dizine girmek.</li>
         <li>Yoğunlaştığı mahalleler: {_mah_dz}.</li>
-        <li>Kanıt: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa istek sonrası aynı gün tarandı.</li>
+        <li>Kanıt: damla turlarında istek gönderilen sayfaların tamamı aynı gün tarandı
+            (bkz. Sıra nasıl iyileşir → Dizin isteği damlası).</li>
       </ul>
       <p class="alt" style="margin:10px 0 0"><strong>Günlük kotanın tamamı buraya.</strong>
-      ~10/gün ile 3-4 günde biter.</p>
+      ~{_kota_gun}/gün ile {_dz_gun} günde biter.</p>
     </div>
   </div>
 """
@@ -1191,7 +1262,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   Google ilk ~10 sonucu gösterir; “görünmez” = ilk 10′da yok demektir. Harita kutusu organikten ayrı sayılır.</p>
 
   <div class="kartlar">
-    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · 11/11 mahalle TAMAM</div></div>
+    <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · {MAH_TAMAM}/{MAH_TOPLAM} mahalle {'TAMAM' if MAH_TAMAM == MAH_TOPLAM else 'tamam'}</div></div>
     <div class="kart"><div class="buyuk">%{yuzde(TOPLAM_I3, TOPLAM_N)}</div><div class="etiket">sorguların ilk 3′te olduğu oran</div></div>
     <div class="kart"><div class="buyuk">{TOPLAM_BIR}</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
     <div class="kart vurgu"><div class="buyuk">{ana_org}<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita {ana_har}.) · {ana_d}</div></div>
@@ -1199,7 +1270,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
 
   <h2>Gerçek sonuç — tıklama</h2>
   <p class="not">Sıra tek başına yanıltıcı: yukarıdaki sıralar iyileşirken tıklama başka yöne gidebilir.
-  Bu bölüm Google Search Console′un gerçek rakamlarını gösterir (son 28 gün, bir önceki 28 günle karşılaştırmalı).</p>
+  Bu bölüm Google Search Console′un gerçek rakamlarını gösterir ({donem_notu}).</p>
   {sonuc_html}
 
   <h2>Mahalle karnesi</h2>
@@ -1230,15 +1301,15 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       <h3>Zayıf halkalar</h3>
       <ul>
         <li><strong>Mahalle sorgularının organiği.</strong> {len(OLCULEN)} mahallenin
-        {len(_ORG_YOK)}′inde “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz
-        ({_ad(_ORG_YOK)}). Bunların yalnız {len(set(_ORG_YOK) - set(_KUTU_YOK))}′inde harita
+        {len(_ORG_YOK)} tanesinde “… mahallesi emlakçı” aramasında ilk 10′a giremiyoruz
+        ({_ad(_ORG_YOK)}). Bunların yalnız {len(set(_ORG_YOK) - set(_KUTU_YOK))} tanesinde harita
         kutusu bizi taşıyor. En iyiler: {_eniyi}.</li>
         <li><strong>Ne organikte ne kutuda: {len(_CIFT_KAYIP)} mahalle.</strong> {_ad(_CIFT_KAYIP)}.
         Yorum kampanyasında mahalle adı geçirme önceliği bunlar — <strong>ama
         {_ad(_KUTU_HIC)}</strong> hariç: o sorguda harita kutusu hiç çıkmıyor, yorum emeği
         karşılık bulmaz. Kutu var ama biz içinde değiliz: {_ad(_KUTU_RAKIP)}.</li>
-        <li><strong>Bayat yığınlar.</strong> Göksu (36 sayfa · 4.410 gösterim talebi) ve Şehit Osman Avcı (29 · 4.083)
-        en büyük iki tazeleme borcu; ikisi de damla sırasının başında.</li>
+        <li><strong>Bayat yığınlar.</strong> {_bayat_ilk2}
+        en büyük iki tazeleme borcu{_bayat_damla}.</li>
         <li><strong>Kendi sayfalarımız birbirinin önüne geçiyor.</strong> {yamyam_cumle}</li>
         <li><strong>Eski adres kalıntıları.</strong> {len(_eski_kendi)} sorguda sayfanın
         kendi taşınma öncesi adresi listeleniyor — 301 sindirme işi tam olarak bunları çözer.
@@ -1247,9 +1318,9 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       </ul>
     </div>
     <div class="pano">
-      <h3>Dizin damlası — sıradaki 5</h3>
+      <h3>Dizin damlası — sıradaki {len(KUYRUK_OLU[:5])}</h3>
       <ul>{siradaki_html}</ul>
-      <p class="alt" style="margin:10px 0 0">Kota: günde ~6-10 istek; son 10 günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.
+      <p class="alt" style="margin:10px 0 0">Kota: günde ~{_kota_gun} istek; son {_ISTEK_PENCERE} günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.
       Sayfa envanteri: {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
     </div>
   </div>
@@ -1293,8 +1364,8 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
       <h3>İlk 10′a girenler <span class="krozet">{len(GIRENLER)}</span></h3>
       <ul>{girenler_html}</ul>
       <p class="alt" style="margin:10px 0 0"><strong>İhtiyatla oku.</strong> Bu girişlerin
-      %{GIRIS_IHTIYAT['yuzde']}′i ({GIRIS_IHTIYAT['eski_taban']} tanesi) 22-23 Ağustos turuyla
-      kıyaslanıyor ve o turda “ilk 10′da yok” oranı %{GIRIS_IHTIYAT['o22']}-{GIRIS_IHTIYAT['o23']}′ti;
+      %{GIRIS_IHTIYAT['yuzde']} kadarı ({GIRIS_IHTIYAT['eski_taban']} tanesi) 22-23 Ağustos turuyla
+      kıyaslanıyor ve o turda “ilk 10′da yok” oranı %{GIRIS_IHTIYAT['o22']}-{GIRIS_IHTIYAT['o23']} düzeyindeydi;
       sonraki turlarda %{GIRIS_IHTIYAT['o28']}-{GIRIS_IHTIYAT['o30']}. Farkın ne kadarı gerçek
       iyileşme, ne kadarı o turun ölçüm koşulu ayırt edilemedi — o tur 21.08 turuyla ortak sayfa
       içermiyor, karşılaştırılacak taban yok.</p>
@@ -1307,7 +1378,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
 
   <h3 class="kgrup">İlk 10 içinde hareket — ±1 gürültü sayılır</h3>
   <p class="not" style="margin-bottom:12px">Kısa aralıkla yeniden ölçülen ve iki
-  ölçümde de ilk 10′da olan sayfaların <strong>%86′sı ≤1 sıra oynuyor</strong>; yani
+  ölçümde de ilk 10′da olan sayfalar arasında {GURULTU_ORAN_METNI}; yani
   bir sıralık hareket ölçümün kendi dalgalanması, peşine düşülmez. Bu turda
   {len(IC_GURULTU)} sayfa o aralıkta kaldı ve listeye alınmadı.</p>
   <div class="iki">
@@ -1326,12 +1397,12 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <p class="alt" style="margin:8px 0 0">İlk 10′da hem önce hem sonra ölçülen
     <strong>{TAVAN['hepsi_n']}</strong> sayfanın ortalama sırası
     {_v(TAVAN['hepsi_once'])} → {_v(TAVAN['hepsi_sonra'])}, yani kâğıt üzerinde kötüleşmiş.
-    Ama bu sayfaların <strong>{TAVAN['birinci']}′i zaten 1. sıradaydı</strong> —
+    Ama bu sayfaların <strong>{TAVAN['birinci']} tanesi zaten 1. sıradaydı</strong> —
     yükselecek yerleri yoktu, yalnız düşebilirlerdi.</p>
     <p class="alt" style="margin:10px 0 0">Yükselecek yeri olanlara (3. sıra ve
     gerisinden başlayan {TAVAN['yeri_var_n']} sayfa) bakınca yön tersine dönüyor:
     ortalama <strong>{_v(TAVAN['yeri_var_once'])} → {_v(TAVAN['yeri_var_sonra'])}</strong>,
-    ≥2 sıra yükselen {TAVAN['yeri_var_yuk']}′e karşı düşen {TAVAN['yeri_var_dus']}.
+    ≥2 sıra yükselen {TAVAN['yeri_var_yuk']}, düşen {TAVAN['yeri_var_dus']}.
     Yani gerçek yön {tavan_yon}. Tek başına ortalamaya bakmak burada yanlış karar
     verdirirdi.</p>
   </div>
@@ -1339,7 +1410,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <h2>Dizine eklenecekler</h2>
   <p class="not">Bu tablo <strong>yalnız Google′da gerçekten olmayan</strong> sayfaları
   gösterir; her satır Search Console′a tek tek sorulup doğrulanmıştır. Günlük istek kotası
-  ~10 olduğu için sıra önemli: önce hedef sorgu sayfası olan bayat mahalleler, sonra
+  ~{_kota_gun} olduğu için sıra önemli: önce hedef sorgu sayfası olan bayat mahalleler, sonra
   mahalle kümesine göre ölü site sayfaları.</p>
   <div class="tablo-kabuk"><table>
     <thead><tr><th>Sıra</th><th>Sayfa</th><th>Mahalle</th><th>Durum</th></tr></thead>
@@ -1352,7 +1423,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <h3>Bunlara istek GÖNDERİLMEZ — {sira_sorun_sayi} sayfa</h3>
     <p class="alt" style="margin:8px 0 10px">31.08′e kadar bu tabloda bu sayfalar vardı ve
     yanlıştı. SERP′te kayıp oldukları için aday sayılıyorlardı, ama Search Console′a
-    sorulunca <strong>203′ünün 203′ü de dizinde çıktı</strong>. Dertleri dizin değil sıra;
+    sorulunca <strong>{sira_sorun_sayi} sayfanın tamamı dizinde çıktı</strong>. Dertleri dizin değil sıra;
     istek göndermek kotayı yakar, hiçbir şey kazandırmaz. En çok gösterim alanlar:</p>
     <ul>{sira_sorun_html}</ul>
   </div>
@@ -1360,7 +1431,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <h2>Yarın ne yapılacak</h2>
   <p class="not">Karnede üç ayrı “sıradaki iş” listesi vardı ve hiçbiri kesişmiyordu;
   ikisi de kotayı zaten Google′da olan sayfalara harcatıyordu. Tek liste bu:
-  <strong>{eylem_sayi} iş</strong>, günlük ~10 istek kotasıyla yaklaşık {eylem_gun} gün.
+  <strong>{eylem_sayi} iş</strong>, günlük ~{_kota_gun} istek kotasıyla yaklaşık {eylem_gun} gün.
   Her satır Search Console′a tek tek sorulup doğrulandı.</p>
   <div class="pano"><ul>{eylem_html}</ul>
   <p class="alt" style="margin:10px 0 0">Tam liste:

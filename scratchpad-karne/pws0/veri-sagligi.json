@@ -135,13 +135,13 @@
   },
   {
    "ad": "Karne metninde elle yazılmış rakam",
-   "adet": 35,
+   "adet": 11,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
    "ornek": [
     "satır 405: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
     "satır 406: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
-    "satır 586: kart_uyari = (f'<p class=\"alt\" style=\"margin:10px 0 0\">Yüzde rozetleri",
-    "satır 601: <p class=\"alt\" style=\"margin:10px 0 0\">{hafta_notu}</p>"
+    "satır 610: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
+    "satır 712: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
    ],
    "agir": false,
    "temiz": false

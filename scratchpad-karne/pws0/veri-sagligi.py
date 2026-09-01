@@ -178,6 +178,8 @@ def denetle():
                 continue
             # f-string ifadesi olmayan, metnin içinde duran sayı
             metin = _re2.sub(r"\{[^}]*\}", "", satir)
+            # style="margin:10px 0 0" gibi CSS değerleri karne metni değil
+            metin = _re2.sub(r'style="[^"]*"', "", metin)
             if _re2.search(r"(?<![\w#-])\d{1,4}(?:\.\d{3})*(?![\w%.-])", metin):
                 ciplak.append(f"satır {no}: {satir.strip()[:70]}")
     ekle("Karne metninde elle yazılmış rakam", len(ciplak),
