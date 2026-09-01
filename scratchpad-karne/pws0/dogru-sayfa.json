@@ -1,41 +1,36 @@
 {
- "guncelleme": "2026-08-31",
- "toplam": 504,
+ "guncelleme": "2026-09-01",
+ "toplam": 505,
  "hepsi": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 250
+   "n": 275
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 68
+   "n": 70
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 42
-  },
-  {
-   "k": "baska_site",
-   "ad": "Başka bir site sayfamız",
-   "n": 41
+   "n": 44
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 39
+   "n": 44
   },
   {
-   "k": "belirsiz",
-   "ad": "Ölçüm kırıntısı (okunamadı)",
-   "n": 38
+   "k": "baska_site",
+   "ad": "Başka bir site sayfamız",
+   "n": 43
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 25
+   "n": 28
   },
   {
    "k": "dis",
@@ -43,40 +38,35 @@
    "n": 1
   }
  ],
- "ilk3_toplam": 343,
+ "ilk3_toplam": 347,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 229
+   "n": 252
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 30
-  },
-  {
-   "k": "belirsiz",
-   "ad": "Ölçüm kırıntısı (okunamadı)",
-   "n": 29
+   "n": 35
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 23
+   "n": 25
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 21
+   "n": 22
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 11
+   "n": 13
   }
  ],
- "ilk3_dogru": 229,
+ "ilk3_dogru": 252,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
@@ -88,7 +78,7 @@
   ],
   [
    "yavuz-selim-mahallesi",
-   21
+   22
   ],
   [
    "seyh-samil-mahallesi",
@@ -96,11 +86,15 @@
   ],
   [
    "eryaman-mahallesi",
+   13
+  ],
+  [
+   "sehit-osman-avci-mahallesi",
    12
   ],
   [
    "devlet-mahallesi",
-   9
+   10
   ],
   [
    "altay-mahallesi",
@@ -117,10 +111,6 @@
   [
    "seker-mahallesi",
    4
-  ],
-  [
-   "sehit-osman-avci-mahallesi",
-   3
   ]
  ]
 }

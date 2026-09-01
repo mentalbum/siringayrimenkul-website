@@ -1,18 +1,18 @@
 {
- "guncelleme": "2026-08-31",
+ "guncelleme": "2026-09-01",
  "gurultu": {
-  "cift": 43,
-  "sessiz": 37,
-  "oran": 86,
+  "cift": 48,
+  "sessiz": 41,
+  "oran": 85,
   "giris_cikis": 47,
   "dagilim": [
    [
     0,
-    27
+    30
    ],
    [
     1,
-    10
+    11
    ],
    [
     2,
@@ -24,13 +24,13 @@
    ],
    [
     4,
-    1
+    2
    ]
   ]
  },
  "olculen": 505,
  "kuyruk": 511,
- "kayit": 1385,
+ "kayit": 1423,
  "yas": [
   [
    "0-7 gün",
@@ -122,26 +122,26 @@
   },
   {
    "ad": "Adresi okunamayan ölçüm (tüm tarihçe)",
-   "adet": 49,
+   "adet": 11,
    "aciklama": "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, bu yüzden daha küçüktür.",
    "ornek": [
-    "sehit-osman-avci-mahallesi/koz-modern (2026-08-28)",
-    "sehit-osman-avci-mahallesi/kiratli-residence (2026-08-28)",
-    "sehit-osman-avci-mahallesi/inci-life-residence (2026-08-28)",
-    "sehit-osman-avci-mahallesi/goldekent-sitesi (2026-08-28)"
+    "tunahan-mahallesi (2026-08-31)",
+    "tunahan-mahallesi/etaplar/4 (2026-08-31)",
+    "tunahan-mahallesi/etaplar/5 (2026-08-31)",
+    "altay-mahallesi/etaplar/1 (2026-08-31)"
    ],
    "agir": false,
    "temiz": false
   },
   {
    "ad": "Karne metninde elle yazılmış rakam",
-   "adet": 36,
+   "adet": 35,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
    "ornek": [
-    "satır 389: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
-    "satır 390: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
-    "satır 567: kart_uyari = (f'<p class=\"alt\" style=\"margin:10px 0 0\">Yüzde rozetleri",
-    "satır 582: <p class=\"alt\" style=\"margin:10px 0 0\">{hafta_notu}</p>"
+    "satır 405: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
+    "satır 406: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
+    "satır 586: kart_uyari = (f'<p class=\"alt\" style=\"margin:10px 0 0\">Yüzde rozetleri",
+    "satır 601: <p class=\"alt\" style=\"margin:10px 0 0\">{hafta_notu}</p>"
    ],
    "agir": false,
    "temiz": false

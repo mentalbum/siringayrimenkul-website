@@ -651,3 +651,30 @@ düğümü bul (Türkçe İ normalize), closest('button').click(). Balon ~30 sn'
 geliyor; Kapat'ı aynı yöntemle bul.
 
 Yarın Ekin'den devam; kalan açık hedef 48 (~5 gün).
+
+## 01.09 — 38 KIRINTI KAYDI YENİDEN ÖLÇÜLDÜ (Özgün'ün Chrome'u, pws=0)
+
+28.08 turunun `u` alanı "cite:…" kırıntısı olan 38 kaydı (34'ü ŞOA) gerçek
+adresle yeniden ölçüldü. Uygulama içi tarayıcıya google.com izni yok;
+oturumlu Chrome'da pws=0&gl=tr&hl=tr kullanıldı (30.08 kalibrasyonu: gizli
+pencereyle birebir). Oturumlu DOM'da h3 bağlantı içinde ve href açık —
+tam yol okunuyor, kırıntı sorunu bu kanalda yok.
+
+| sırayı tutan | 38 sorguda |
+|---|---|
+| doğru site sayfası | 25 |
+| taşınmadan önceki adres (Google kopyası bayat) | 5 — Bulvar 1071, Çizgi Ötesi, Hill Tower, Kıratlı, Ödevci |
+| mahalle sayfası | 3 — Dalgıç, Nefeskent, Neva Panora |
+| ada sayfası | 2 — Yeni Huzur Bahçesi (18677/1), İnci Life (46659/4) |
+| başka site sayfamız | 2 — Platin→Platin 2, Eylül Evleri→Eylül Sitesi |
+| ilk 10 dışı | 1 — Göldekent |
+
+İlk 3'te 33/38; ortalama işgal 1,8. Google 8 sayfada başlığı yeniden yazmış,
+ikisi ALICI diliyle ("Satılık Daire ve Kiralık Daire — Emlakçısı": Garden
+Zirve, İntes). Rakip emlakçı mağazaları 1.-2. sırada: dalgicyapi (Dalgıç 1.),
+yildizgayrimenkuleryaman (Koz Modern 1.), miverahome, hosgorler, platingrup06,
+eylulgayrimenkuldikmen.
+
+Kırıntıların düzelmesiyle "doğru sayfa" payı ilk 3'te %67 → %73 (252/347).
+Adresi okunamayan kayıt 49 → 11 (kalanlar 30-31.08 gizli kanal kayıtları,
+kuyruk dışı ya da sıralı olmayanlar).
