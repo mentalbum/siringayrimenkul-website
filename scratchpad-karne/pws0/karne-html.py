@@ -845,6 +845,59 @@ eylem_html = "".join(
 eylem_sayi = len(EYLEM)
 eylem_gun = -(-eylem_sayi // _kota_gun) if eylem_sayi else 0
 
+# --- sorgu sınıfına göre TO (01.09) ----------------------------------------
+# Özgün'ün gönderdiği GSC raporu "TO %2" diyor. Tek rakam hangi sınıfın gösterim
+# alıp tık ALMADIĞINI gizler. Yalın site adı sorguları en büyük havuz ve en
+# düşük TO — burada bir puanlık iyileşme toplam tıkı en çok oynatır.
+try:
+    _ST = json.load(open("sorgu-sinifi-to.json"))
+except Exception:
+    _ST = None
+if _ST:
+    _en = max((x["to"] for x in _ST["siniflar"]), default=1) or 1
+    _st_satir = ""
+    for x in _ST["siniflar"]:
+        _pay = max(2, round(100 * x["to"] / _en))
+        _st_satir += (f'<tr><td><strong>{esc(x["ad"])}</strong></td><td class="num">{x["sorgu"]}</td>'
+                      f'<td class="num">{tr_sayi(x["gos"])}</td><td class="num">{tr_sayi(x["tik"])}</td>'
+                      f'<td class="num">%{tr_sayi(x["to"], 1)}</td><td class="num">{tr_sayi(x["poz"], 1)}</td>'
+                      f'<td><div class="bar"><i style="width:{_pay}%"></i></div></td></tr>')
+    _mk = "".join(
+        f'<li><span><strong>{esc(m["q"])}</strong> <span class="alt">konum {tr_sayi(m["poz"], 1)}</span></span>'
+        f'<span class="chip kotu">{m["gos"]} göst · {m["tik"]} tık</span></li>' for m in _ST["makas"]) \
+        or '<li class="alt">Yok</li>'
+    _yalin = next((x for x in _ST["siniflar"] if x["k"] == "yalin"), None)
+    _alici = next((x for x in _ST["siniflar"] if x["k"] == "alici"), None)
+    _st_not = ""
+    if _yalin and _alici:
+        _st_not = (f"En büyük havuz yalın site adı: {tr_sayi(_yalin['gos'])} gösterim, %{tr_sayi(_yalin['to'], 1)} "
+                   f"tıklanma. Alıcı niyetli sorgular {tr_sayi(_alici['gos'])} gösterimle %{tr_sayi(_alici['to'], 1)} "
+                   f"tıklanıyor. Yalın adda bir puanlık iyileşme ≈ {round(_yalin['gos'] / 100)} tık/ay demek — "
+                   f"toplam tıkın hangi kolda kazanılacağını bu söylüyor. Sınıflama sorgu metninden, kural "
+                   f"tabanlı; sınır vakaları var, oranlar büyüklük sırası için güvenilir.")
+    sorgusinif_html = f"""
+  <h2>Hangi sorgu sınıfı tıklanıyor</h2>
+  <p class="not">Search Console′daki tek “tıklanma oranı” rakamı hangi sorguların gösterim alıp
+  tık <strong>almadığını</strong> gizler. Son {_ST['gun']} günün ilk 1000 sorgusu niyetine göre
+  ayrıldı; toplam {tr_sayi(_ST['toplam_gos'])} gösterim, {tr_sayi(_ST['toplam_tik'])} tık,
+  %{tr_sayi(_ST['to'], 2)}.</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Sorgu sınıfı</th><th class="num">Sorgu</th><th class="num">Gösterim</th>
+    <th class="num">Tık</th><th class="num">TO</th><th class="num">Konum</th><th>&nbsp;</th></tr></thead>
+    <tbody>{_st_satir}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">{_st_not}</p>
+  <div class="pano" style="margin-top:14px">
+    <h3>Snippet makası — ilk 5′te ama tıklanmıyor</h3>
+    <p class="alt" style="margin:8px 0 10px">Konumu 5 ve üstü, 40+ gösterim, TO %2′nin altında.
+    Sıra sorunu değil, sonuçta görünen başlık/açıklama sorunu: bunlar title donukluğu
+    (5 Eylül) kalkınca ilk bakılacak sorgular.</p>
+    <ul>{_mk}</ul>
+  </div>
+"""
+else:
+    sorgusinif_html = ""
+
 # --- sırayı KİM tutuyor (31.08) -------------------------------------------
 # Karnenin baş rakamı "%68'i ilk 3'te" idi ve tek başına yanıltıcıydı: o
 # sıraların üçte biri YANLIŞ sayfamızla kazanılmış. Site adını arayan kişi ada
@@ -1437,6 +1490,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="alt" style="margin:10px 0 0">Tam liste:
   <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code></p></div>
 
+{sorgusinif_html}
 {dogrusayfa_html}
 {turverim_html}
 {saglik_html}
