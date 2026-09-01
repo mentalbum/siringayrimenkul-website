@@ -50,6 +50,19 @@ tarayıcıdan (Claude Browser pane, `mcp__Claude_Browser__*`) sürdürülebilir:
   Chrome'dan ölç veya h değerine güvenme.
 - Duvar IP bazlı: iki kanal aynı günlük sınırı paylaşır, kanal değiştirmek kotayı katlamaz.
 
+## KANAL GERÇEĞİ (01.09 ölçüldü)
+
+- Uygulama içi tarayıcıya (Claude Browser pane) **google.com izni yok** —
+  `navigate` reddediliyor. Bu kanal SERP için kullanılamaz.
+- Gizli pencereyi yalnız Özgün açabilir; açık değilse tur **oturumlu Chrome'da
+  pws=0&gl=tr&hl=tr** ile yürür (30.08 kalibrasyonu: gizli pencereyle birebir).
+  Kayıtlara `"kanal":"normal"` yazılır.
+- Oturumlu DOM'da h3 bağlantı içinde ve href açık: `h.closest('a').href` tam
+  yolu verir, `cite:` kırıntısı sorunu bu kanalda YOK. 01.09'da 28.08'in 38
+  kırıntı kaydı bu kanalla yeniden ölçüldü; dördü ada/mahalle sayfası, beşi
+  taşınma öncesi adres çıktı — kırıntı bunları "komşu sayfa" sanmıştı.
+- Tempo: 4 sorgu/tur, sorgular arası 4 sn + 5 sn yükleme; 38 sorguda CAPTCHA yok.
+
 ## GİZLİ PENCERE KANALI (30.08 kuruldu — ARTIK VARSAYILAN)
 
 Özgün eklentiye "Gizli modda çalışmasına izin ver" iznini verdi. Gizli pencere
