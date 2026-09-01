@@ -44,13 +44,13 @@ emlakçı" hedef sorgularımızın sayfaları — dizin dışı bir site sayfas�
 daha değerliler; (2) istek → aynı gün tarama mekanizması kanıtlı (14.08 8/8,
 29.08 10/10), yani en kötü ihtimalle tazelik geri gelir.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi ← 01.09 KENDİLİĞİNDEN TARANDI (API; istek gerekmedi)  
       _dizinde ama 17.08'den beri taranmamış; 7 → 10+_
-- [ ] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi ← 01.09 istek gönderildi (yeniden tarama; onay balonu görüldü)  
       _dizinde ama 17.08'den beri taranmamış; 9 → 10_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi ← 31.08 KENDİLİĞİNDEN TARANDI (API; istek gerekmedi)  
       _dizinde ama 17.08'den beri taranmamış; 4 → 5_
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi ← 01.09 istek gönderildi (yeniden tarama; onay balonu görüldü)  
       _dizinde ama 21.08'den beri taranmamış; 4 → 6_
 
 ---
@@ -62,7 +62,7 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
       _hiç bilinmiyor_
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi ← 01.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
       _hiç bilinmiyor_
       _hiç bilinmiyor_
@@ -74,20 +74,20 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
       _hiç bilinmiyor_
       _hiç bilinmiyor_
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi ← 01.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
 
 ## sehit-osman-avci-mahallesi (5)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi ← 01.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij ← 01.09 istek gönderildi (onay balonu görüldü)  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas ← 01.09 istek gönderildi (onay balonu görüldü)  
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi ← 01.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman ← 01.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
 
 ## guzelkent-mahallesi (4)
