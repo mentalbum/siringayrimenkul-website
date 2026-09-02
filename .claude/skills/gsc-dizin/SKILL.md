@@ -97,6 +97,14 @@ Tur bitince Özgün'e Türkçe, sade özet: kaç istek kabul, kaç kendiliğinde
 dizinde, kota durumu, sıradaki adım. Rakamları kuyruk dosyasındaki işaretlerden
 say, ezberden yazma.
 
+## Sınır göründüğünde AYNI GÜN tekrar deneme (02.09 dersi)
+
+02.09'da sabah 08:50 ve akşam 17:20 denemeleri de "sorun oluştu" verdi; pencere
+dünkü 9 + bugünkü 2 kabulle doluydu ve başarısız denemeler de sayılıyor olabilir.
+Kural: sınır balonu gelince o gün DUR. Ertesi gün 09:00 sonrası TEK deneme;
+sınırsa öğleden sonra tek deneme daha, o kadar. Her deneme kuyruk dosyasına
+`> tarih saat — not` olarak yazılır ki sayılabilsin.
+
 ## Canlı test süresi değişken (02.09 ölçüldü)
 
 İstek butonuna basınca açılan "Yayınlanmış URL'nin dizine eklenebilir olup
