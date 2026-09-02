@@ -268,3 +268,5 @@ Bu parti birinci partiden SONRA çekilir.
 > test 2,5 dk sürdü — balonu 3 dakikaya kadar bekle). 3. istek (Meltem) sınıra
 > takıldı: dünkü 9 istek kayan 24 saatlik pencerede; pencere öğleden sonra açılır.
 > Kalan açık hedef 44. Yarın Meltem'den devam.
+
+> 02.09 08:50 — Meltem ikinci deneme yine "sorun oluştu": pencere hâlâ kapalı (dünkü istekler 08:00-08:45+). Öğleden sonra ya da yarın sabah Meltem'den devam; bugün başka deneme yapılmadı.

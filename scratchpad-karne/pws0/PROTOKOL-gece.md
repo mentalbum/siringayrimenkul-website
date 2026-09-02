@@ -713,3 +713,18 @@ HÂLÂ aynı tarihte. Ölü sayfalarda istek aynı gün tarama getiriyordu (8/8,
 (31.08) ise istek OLMADAN kendiliğinden tarandı. Yani: dizindeki sayfa için
 istek zayıf bir kaldıraç; tarama tazeliğini taşıyan şey sitemap/doğal tarama.
 04-05.09'da yeniden bak; hâlâ bayatsa kaldıraç defterine yazılır.
+
+## 02.09 08:35 — BAYAT MAHALLE HİPOTEZİ: İLK KONTROL DESTEKLEMİYOR
+
+| mahalle | tarama | 31.08 | 02.09 | kutu |
+|---|---|---|---|---|
+| Göksu | 01.09 kendiliğinden | 10+ | 10+ | var, biz YOK |
+| Yavuz Selim | 31.08 kendiliğinden | 5 | 5 | biz 2. |
+| Tunahan | taranmadı (17.08) | 10 | 10+ | biz 1. |
+| Eryaman | taranmadı (21.08) | 6 | 5 (ANA SAYFA) | biz 1. |
+
+Yeniden taranan iki sayfada sıra değişmedi; taranmayan Tunahan düştü. "Tarama
+tazelenince sıra toparlar" hipotezi bu örneklemde DESTEK BULMADI (n=2, taranan).
+Tunahan/Eryaman gerçekten yeniden taranınca (istek 01.09, henüz değil) yeniden
+bakılır; o zaman da düzelmezse kaldıraç defterinde "istek→sıra" zayıf kalır.
+Yeni gözlem: "Eryaman Mahallesi emlakçı"da mahalle sayfası değil ANA SAYFA çıkıyor.
