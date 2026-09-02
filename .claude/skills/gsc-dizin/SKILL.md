@@ -97,6 +97,15 @@ Tur bitince Özgün'e Türkçe, sade özet: kaç istek kabul, kaç kendiliğinde
 dizinde, kota durumu, sıradaki adım. Rakamları kuyruk dosyasındaki işaretlerden
 say, ezberden yazma.
 
+## Canlı test süresi değişken (02.09 ölçüldü)
+
+İstek butonuna basınca açılan "Yayınlanmış URL'nin dizine eklenebilir olup
+olmadığını test etme — bir iki dakika sürebilir" diyaloğu 30 sn'de bitmeyebilir;
+Kurtuluş'ta **2,5 dakika** sürdü. Diyalog açıkken balon gelmemiş olması "istek
+gitmedi" demek DEĞİLDİR: 3 dakikaya kadar 20-30 sn'de bir yeniden oku, tekrar
+BASMA. Kayan pencere hatırlatması: dün sabah 9 istek gittiyse bugün sabah 3.
+istekte sınır gelir; pencere öğleden sonra açılır.
+
 ## Günlük sınırın ikinci yüzü (01.09 ölçüldü)
 
 "Kota Aşıldı" dışında şu balon da sınır demektir: **"Hata! Bir sorun oluştu —
