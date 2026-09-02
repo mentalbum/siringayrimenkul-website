@@ -946,9 +946,10 @@ if _ST:
     if _yalin and _alici:
         _st_not = (f"En büyük havuz yalın site adı: {tr_sayi(_yalin['gos'])} gösterim, %{tr_sayi(_yalin['to'], 1)} "
                    f"tıklanma. Alıcı niyetli sorgular {tr_sayi(_alici['gos'])} gösterimle %{tr_sayi(_alici['to'], 1)} "
-                   f"tıklanıyor. Yalın adda bir puanlık iyileşme ≈ {round(_yalin['gos'] / 100)} tık/ay demek — "
-                   f"toplam tıkın hangi kolda kazanılacağını bu söylüyor. Sınıflama sorgu metninden, kural "
-                   f"tabanlı; sınır vakaları var, oranlar büyüklük sırası için güvenilir.")
+                   f"tıklanıyor. Dikkat: yalın sınıfta düşük oranın sebebi snippet değil KONUM — bu "
+                   f"sorgularda ortalama {tr_sayi(_yalin['poz'], 1)}. sıradayız; kaldıraç tarama/damla. "
+                   f"Bu tablo ilk 1000 sorguyu kapsar (gösterimin yaklaşık beşte biri, tıkın dörtte biri); "
+                   f"sınıflama sorgu metninden, kural tabanlı; oranlar büyüklük sırası için güvenilir.")
     sorgusinif_html = f"""
   <h2>Hangi sorgu sınıfı tıklanıyor</h2>
   <p class="not">Search Console′daki tek “tıklanma oranı” rakamı hangi sorguların gösterim alıp

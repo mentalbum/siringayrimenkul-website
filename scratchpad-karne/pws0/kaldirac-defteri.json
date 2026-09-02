@@ -5,7 +5,7 @@
   {
    "durum": "kanitli",
    "ad": "Dizin isteği damlası",
-   "olcum": "İSTEK → TARAMA bağı sağlam: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. İSTEK → SIRA bağı ise ZAYIF. 31.08'de altı 'dönüşüm' iddiası tam geçmişiyle sınandı: Arissa Göksu 4→1 ve Platin 2 3→1 gerçek kazanç, Alış 3→1 gerçek; ama Lale Kent 1→(kayıp)→1 ve Atalay 3→(kayıp)→3 hiç kazanç değil, eski yerlerine döndüler; Selçuklu 2→(kayıp)→9 ise GERİLEME. Yani altıda üç.",
+   "olcum": "İSTEK → TARAMA bağı sağlam: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. İSTEK → SIRA bağı ise ZAYIF. 31.08'de altı 'dönüşüm' iddiası tam geçmişiyle sınandı: Arissa Göksu 4→1 ve Platin 2 3→1 gerçek kazanç, Alış 3→1 gerçek; ama Lale Kent 1→(kayıp)→1 ve Atalay 3→(kayıp)→3 hiç kazanç değil, eski yerlerine döndüler; Selçuklu 2→(kayıp)→9 ise GERİLEME. Yani altıda üç. 02.09 EK: dizinde OLAN sayfaya istek (Tunahan, Eryaman mahalle) aynı gün tarama getirmedi; ölü sayfada getiriyordu. Yani istek → tarama bağı yalnız dizin dışı sayfada sağlam.",
    "kaynak": "14.08 ve 29.08 damla turları + 31.08 tam-geçmiş denetimi",
    "kisit": "Kota günde ~10, kayan 24 saat; istek yalnız GSC arayüzünden gider. ÖNCEKİ SÜRÜM YANILTICIYDI: dönüşümler tek adımlık '0→N' olarak yazılmıştı ve sayfanın o kayıptan ÖNCEKİ sırasını gizliyordu. Bir sayfanın ölçümde geçici kaybolup geri gelmesi olağan (11 vaka, günlük ölçümlerin ~%1'i); kaybolmadan önceki sıra bilinmeden 'kazanç' denemez."
   },
@@ -21,7 +21,7 @@
    "ad": "Tarama tazeliği (sıra ile ilişkisi)",
    "olcum": "128 sayfa API ile denetlendi. İlk 3′te olanların %3′ü hiç taranmamış, %15′i bir aydan eski taranmış. 4-10 bandındakilerde bu oranlar %18 ve %44 — yani hiç taranmamış olma 6 kat, bayat tarama 3 kat fazla. Dizinde olma oranı da farklı: %97′ye %82.",
    "kaynak": "31.08 API denetimi (ilk3 n=60, 4-10 n=68)",
-   "kisit": "Bu bir İLİŞKİ ölçümü; ters nedensellik mümkün (Google zaten iyi sıradaki sayfayı daha sık tarar). Ama damla turları müdahale kanıtı veriyor: istek → tarama → sıra (Alış 0→1, Selçuklu 0→9). İkisi aynı yönü gösteriyor."
+   "kisit": "Bu bir İLİŞKİ ölçümü; ters nedensellik mümkün (Google zaten iyi sıradaki sayfayı daha sık tarar). Ama damla turları müdahale kanıtı veriyor: istek → tarama → sıra (Alış 0→1, Selçuklu 0→9). İkisi aynı yönü gösteriyor. 02.09 ilk kontrol: kendiliğinden yeniden taranan Göksu (10+→10+) ve Yavuz Selim (5→5) sıra değiştirmedi — 'tazelenince toparlar' bu örneklemde (n=2) desteklenmedi."
   },
   {
    "durum": "curuk",
