@@ -738,3 +738,10 @@ Yeni gözlem: "Eryaman Mahallesi emlakçı"da mahalle sayfası değil ANA SAYFA 
 Şeyh Şamil 4; ikisinde de kutuda yokuz. Sarı Çınar sorgusunda Devlet'teki adaş
 sayfa çıkıyor (Tunahan'daki değil). Bu 8 ölçüm 31.08'in cite kırıntılarının yerine
 geçti; hedef sorgu paneli artık gerçek adreslerle.
+
+## 02.09 17:20 — Damla: üçüncü deneme de sınırda
+
+Sabah 08:50 ve akşam 17:20 denemeleri "sorun oluştu" verdi; dünkü 9 + bugünkü 2 kabul
++ 3 başarısız deneme. Ders: sınır göründüğünde aynı gün TEKRAR DENEME — başarısız
+denemeler de pencereyi doldurabilir. Yarın 09:00 sonrası tek deneme; sınırsa öğleden
+sonra tek deneme daha, o kadar.

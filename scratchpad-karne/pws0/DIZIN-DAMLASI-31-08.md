@@ -270,3 +270,5 @@ Bu parti birinci partiden SONRA çekilir.
 > Kalan açık hedef 44. Yarın Meltem'den devam.
 
 > 02.09 08:50 — Meltem ikinci deneme yine "sorun oluştu": pencere hâlâ kapalı (dünkü istekler 08:00-08:45+). Öğleden sonra ya da yarın sabah Meltem'den devam; bugün başka deneme yapılmadı.
+
+> 02.09 17:20 — Meltem üçüncü deneme yine "sorun oluştu". Bugün başka deneme YAPILMAYACAK (başarısız denemeler de sayılıyor olabilir). Yarın 03.09 sabah 09:00 sonrası Meltem'den devam.
