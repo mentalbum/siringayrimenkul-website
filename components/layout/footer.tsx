@@ -135,7 +135,7 @@ export function Footer() {
               <PhoneIcon className="h-4 w-4 shrink-0 text-gold" />
               <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
-                gaEvent="phone_click"
+                gaEvent="phone_click" gaParams={{ konum: "footer" }}
                 className="hover:text-gold"
               >
                 {siteConfig.phoneDisplay}

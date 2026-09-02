@@ -315,7 +315,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
         ) : (
           <a
             href={`tel:${siteConfig.phoneTel}`}
-            onClick={() => olay("telefon")}
+            onClick={() => { olay("telefon"); sendGAEvent("event", "phone_click", { konum: "iletisim_formu" }); }}
             className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:border-gold hover:text-gold-dark sm:w-auto"
           >
             {siteConfig.phoneDisplay}
@@ -328,6 +328,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
         basmayı unutmayın. WhatsApp da SMS de kullanmak istemiyorsanız doğrudan arayın:{" "}
         <a
           href={`tel:${siteConfig.phoneTel}`}
+          onClick={() => sendGAEvent("event", "phone_click", { konum: "iletisim_formu_alt" })}
           className="font-semibold text-gold-dark hover:underline"
         >
           {siteConfig.phoneDisplay}

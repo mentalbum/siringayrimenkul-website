@@ -63,7 +63,7 @@ export function FloatingWhatsAppButton() {
       <div className="fixed inset-x-0 bottom-0 z-40 flex gap-2 border-t border-border bg-surface/95 px-3 pt-2 backdrop-blur-sm pb-[max(0.5rem,env(safe-area-inset-bottom))] lg:hidden">
         <a
           href={`tel:${siteConfig.phoneTel}`}
-          onClick={() => sendGAEvent("event", "phone_click", { page_path: pathname, konum: "mobil_cubuk" })}
+          onClick={() => sendGAEvent("event", "phone_click", { konum: "mobil_cubuk" })}
           className="flex min-h-12 flex-1 cursor-pointer items-center justify-center gap-2 rounded-full bg-gold text-sm font-semibold text-navy transition-colors active:bg-gold-dark"
         >
           <PhoneIcon className="h-4 w-4" />
@@ -73,7 +73,7 @@ export function FloatingWhatsAppButton() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={() => sendGAEvent("event", "whatsapp_click", { page_path: pathname, konum: "mobil_cubuk" })}
+          onClick={() => sendGAEvent("event", "whatsapp_click", { konum: "mobil_cubuk" })}
           className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
         >
           <WhatsAppIcon className="h-5 w-5" />
@@ -86,7 +86,7 @@ export function FloatingWhatsAppButton() {
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        onClick={() => sendGAEvent("event", "whatsapp_click", { page_path: pathname, konum: "yuzen" })}
+        onClick={() => sendGAEvent("event", "whatsapp_click", { konum: "yuzen" })}
         aria-label="WhatsApp ile yazın"
         className="fixed bottom-5 right-5 z-40 hidden h-14 w-14 cursor-pointer items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition-transform hover:scale-105 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#25D366] lg:flex"
       >

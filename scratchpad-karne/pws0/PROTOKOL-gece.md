@@ -528,7 +528,7 @@ site sayfasına 2,5 kat fazla tarama ayırıyor. Ada sayfalarını sitemap'ten
 
 Sağlam kalan tek şey: ada sayfası SERP'te site sayfasının yerine çıktığında
 sıra 2,30 → 4,05'e düşüyor (n=557 vs n=59). Bunun ilacı başlık tarafında
-ama title'lar 5 Eylül'e kadar donuk (08.08 kararı) — 5 Eylül'de bak.
+ama title'lar 07.09'a kadar donuk (10.08 kararı, satır 157 esas; 31.08 notundaki '5 Eylül' yanlıştı) — 07.09'da bak.
 
 ## 31.08 — TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)
 
@@ -678,3 +678,19 @@ eylulgayrimenkuldikmen.
 Kırıntıların düzelmesiyle "doğru sayfa" payı ilk 3'te %67 → %73 (252/347).
 Adresi okunamayan kayıt 49 → 11 (kalanlar 30-31.08 gizli kanal kayıtları,
 kuyruk dışı ya da sıralı olmayanlar).
+
+## 02.09 — GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88
+
+- Özgün Analytics Data API'yi etkinleştirdi; servis hesabı GA4 mülkü 543052025'e
+  Görüntüleyici olarak eklendi (Özgün'ün isteğiyle, Chrome'unda). `scripts/ga4-api.mjs`
+  çalışıyor; karneye "Tıktan sonra" bölümü girdi.
+- İlk 28g okuma: 2.393 oturum, 81 sn, hemen çıkma %63; phone_click 11, whatsapp_click 7,
+  site_ust_sahibinden 17 (site sayfasından mağazaya geçiş telefondan fazla — gözlem).
+- PR #88: 26 tel: bağının 10'u izlenmiyordu, 4'ü başka adla; hepsi phone_click + konum.
+  Yayınla birlikte phone_click TABANI SIFIRLANIR — öncesiyle kıyaslama yapılmaz.
+- GA4 yönetici ayarları (Özgün'ün "sen yap" talimatıyla): `konum` olay kapsamlı özel
+  boyut oluşturuldu (parametre konum); phone_click ve whatsapp_click ANAHTAR ETKİNLİK
+  olarak işaretlendi. Özel boyut geriye dönük çalışmaz; ilk anlamlı okuma ~14 gün sonra.
+- "eryaman emlakçı" TO'su süzgeçli çekimle doğrulandı: %5,5 → %9,2 → %2,0 (16.08–01.09),
+  konum sabit 1,2–1,4. 15.08 ana sayfa açıklama kısaltması (229→119) baş şüpheli;
+  title/H1 donması 07.09'a kadar — o gün ilk iş.

@@ -321,7 +321,7 @@ export default function SiteDokusuPage() {
         </TrackedCtaLink>
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="doku_tel_cta"
+          gaEvent="phone_click" gaParams={{ konum: "site_dokusu" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}

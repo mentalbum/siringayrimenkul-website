@@ -136,7 +136,7 @@ export default function SiteKarsilastirmaPage() {
         </TrackedCtaLink>
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="karsilastirma_tel_cta"
+          gaEvent="phone_click" gaParams={{ konum: "karsilastirma" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}

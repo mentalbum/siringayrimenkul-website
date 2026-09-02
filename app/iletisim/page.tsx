@@ -56,7 +56,7 @@ export default function IletisimPage() {
               <p className="text-sm font-semibold text-navy">Telefon</p>
               <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
-                gaEvent="phone_click"
+                gaEvent="phone_click" gaParams={{ konum: "iletisim" }}
                 className="text-sm text-body hover:text-gold-dark"
               >
                 {siteConfig.phoneDisplay}

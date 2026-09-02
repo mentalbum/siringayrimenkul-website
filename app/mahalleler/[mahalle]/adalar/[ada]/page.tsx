@@ -437,7 +437,7 @@ export default async function AdaPage({ params }: Props) {
           href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
             `Merhaba! ${adaEtiketi} (${mahalle.isim}) — buradaki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
           )}`}
-          gaEvent="ada_whatsapp_cta"
+          gaEvent="whatsapp_click" gaParams={{ konum: "ada" }}
           variant="outline-light"
           openInNewTab
         >
@@ -445,7 +445,7 @@ export default async function AdaPage({ params }: Props) {
         </TrackedCtaLink>
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="phone_click"
+          gaEvent="phone_click" gaParams={{ konum: "ada" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}

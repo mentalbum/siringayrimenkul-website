@@ -845,6 +845,61 @@ eylem_html = "".join(
 eylem_sayi = len(EYLEM)
 eylem_gun = -(-eylem_sayi // _kota_gun) if eylem_sayi else 0
 
+# --- tıktan sonra (02.09, GA4 Data API) ------------------------------------
+# Karne sıra + GSC tık/TO gösteriyordu; gelenin sayfada ne yaptığı yoktu.
+# GA4 API 02.09'da açıldı. Ev sahibi için asıl sonuç TEMAS (telefon/WhatsApp/
+# form); karne artık onu sayıyor. Üretici: tik-sonrasi-uret.py
+try:
+    _TS = json.load(open("tik-sonrasi.json"))
+except Exception:
+    _TS = None
+if _TS:
+    _o = _TS["ozet"]; _t = _TS["temas"]; _t100 = _TS["temas_100"]
+    _ts_satir = ""
+    for a in _TS["aileler"]:
+        _ts_satir += (f'<tr><td><strong>{esc(a["ad"])}</strong></td><td class="num">{tr_sayi(a["oturum"])}</td>'
+                      f'<td class="num">{tr_sayi(a["goruntuleme"])}</td><td class="num">{a["ort_sure_sn"]} sn</td>'
+                      f'<td class="num">%{tr_sayi(a["hemen_cikma"], 1)}</td></tr>')
+    _temas_toplam = _t["phone_click"] + _t["whatsapp_click"] + _t["contact_form_submit"]
+    tiksonrasi_html = f"""
+  <h2>Tıktan sonra — gelen ne yapıyor</h2>
+  <p class="not">Search Console tıkı sayar; Analytics tıktan sonrasını. Ev sahibi için asıl
+  sonuç <strong>temas</strong>: telefon, WhatsApp ya da form. Son {_TS['gun']} gün.</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{tr_sayi(_o['oturum'])}</div><div class="etiket">oturum · {tr_sayi(_o['kullanici'])} kullanıcı</div></div>
+    <div class="kart"><div class="buyuk">{_o['ort_sure_sn']} sn</div><div class="etiket">ortalama oturum süresi</div></div>
+    <div class="kart"><div class="buyuk">%{tr_sayi(_o['hemen_cikma'], 1)}</div><div class="etiket">hemen çıkma (10 sn altı, tek sayfa)</div></div>
+    <div class="kart"><div class="buyuk">{_temas_toplam}</div><div class="etiket">temas: {_t['phone_click']} telefon · {_t['whatsapp_click']} WhatsApp · {_t['contact_form_submit']} form</div></div>
+  </div>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Sayfa ailesine göre</h3>
+      <div class="tablo-kabuk"><table>
+        <thead><tr><th>Aile</th><th class="num">Oturum</th><th class="num">Görüntüleme</th><th class="num">Süre</th><th class="num">Hemen çıkma</th></tr></thead>
+        <tbody>{_ts_satir}</tbody>
+      </table></div>
+    </div>
+    <div class="pano">
+      <h3>100 oturumda kaç temas</h3>
+      <ul>
+        <li><span>Telefon tıklaması</span><span class="chip {'iyi' if _t100['phone_click'] >= 1 else 'kotu'}">{tr_sayi(_t100['phone_click'], 2)}</span></li>
+        <li><span>WhatsApp</span><span class="chip">{tr_sayi(_t100['whatsapp_click'], 2)}</span></li>
+        <li><span>Form başlatma</span><span class="chip">{tr_sayi(_t100['form_start'], 2)}</span></li>
+        <li><span>Site sayfasından sahibinden mağazasına geçiş</span><span class="chip orta">{tr_sayi(_t100['site_ust_sahibinden'], 2)}</span></li>
+      </ul>
+      <p class="alt" style="margin:10px 0 0">Sahibinden geçişi ({_t['site_ust_sahibinden']}) telefon tıklamasından
+      ({_t['phone_click']}) fazla: site sayfasına gelen, aramak yerine ilanlara gidiyor. Bu bir gözlem,
+      henüz karar değil — {_TS['gun']} gün daha izlenecek.</p>
+    </div>
+  </div>
+  <p class="alt" style="margin-top:10px"><strong>İki ölçüm uyarısı.</strong> (1) Analytics kodu sayfa hızı
+  için boşta (≤3 sn) yüklenir; 3 saniyeden kısa ziyaretler hiç sayılmaz, süreler birkaç saniye
+  eksik okunur. (2) 26 telefon bağının 10′u PR #88′e kadar izlenmiyordu — telefon sayısı bir
+  <strong>taban</strong>, gerçek sayı daha yüksek. PR yayına girince kıyas tabanı sıfırlanır.</p>
+"""
+else:
+    tiksonrasi_html = ""
+
 # --- sorgu sınıfına göre TO (01.09) ----------------------------------------
 # Özgün'ün gönderdiği GSC raporu "TO %2" diyor. Tek rakam hangi sınıfın gösterim
 # alıp tık ALMADIĞINI gizler. Yalın site adı sorguları en büyük havuz ve en
@@ -1490,6 +1545,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="alt" style="margin:10px 0 0">Tam liste:
   <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code></p></div>
 
+{tiksonrasi_html}
 {sorgusinif_html}
 {dogrusayfa_html}
 {turverim_html}

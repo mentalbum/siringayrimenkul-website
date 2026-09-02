@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaBanner } from "@/components/ui/cta-banner";
@@ -320,9 +321,9 @@ export default function EvSatmakPage() {
         <CtaButton href="/ev-degerleme" variant="primary">
           Evinizi Değerlendirelim
         </CtaButton>
-        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
+        <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "satmak_banner" }} variant="outline-light">
           {siteConfig.phoneDisplay}
-        </CtaButton>
+        </TrackedCtaLink>
       </CtaBanner>
 
       {/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun

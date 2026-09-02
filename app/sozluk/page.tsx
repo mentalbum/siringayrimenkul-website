@@ -543,7 +543,7 @@ export default function SozlukPage() {
         </TrackedCtaLink>
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="sozluk_tel_cta"
+          gaEvent="phone_click" gaParams={{ konum: "sozluk" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}
