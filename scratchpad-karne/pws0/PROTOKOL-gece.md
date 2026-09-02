@@ -728,3 +728,13 @@ tazelenince sıra toparlar" hipotezi bu örneklemde DESTEK BULMADI (n=2, taranan
 Tunahan/Eryaman gerçekten yeniden taranınca (istek 01.09, henüz değil) yeniden
 bakılır; o zaman da düzelmezse kaldıraç defterinde "istek→sıra" zayıf kalır.
 Yeni gözlem: "Eryaman Mahallesi emlakçı"da mahalle sayfası değil ANA SAYFA çıkıyor.
+
+## 02.09 — HEDEF SORGULARDA SIRAYI KİM TUTUYOR: ETAP SAYFALARI DEĞİL, ANA SAYFA
+
+5 etap sorgusunun 5'inde de etap sayfası görünmüyor; sırayı tutan ANA SAYFA
+(1. Etap 1., 4. Etap 1., 3. Etap 6., 5. Etap 6.) ya da hiçbir sayfamız
+(2. Etap: ilk 10 dışı, 1. sıra rakip mağaza empaeryaman2). Harita kutusu: 1., 4.,
+5. Etap'ta biz 1.; 2. ve 3. Etap'ta kutu var, biz yokuz. Mahalle: ŞOA 5 (31.08'de 3),
+Şeyh Şamil 4; ikisinde de kutuda yokuz. Sarı Çınar sorgusunda Devlet'teki adaş
+sayfa çıkıyor (Tunahan'daki değil). Bu 8 ölçüm 31.08'in cite kırıntılarının yerine
+geçti; hedef sorgu paneli artık gerçek adreslerle.
