@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaBanner } from "@/components/ui/cta-banner";
@@ -128,9 +129,9 @@ export default function KirayaVermekPage() {
           <CtaButton href="/ev-degerleme" variant="primary">
             Kira Değerlendirmesi İsteyin
           </CtaButton>
-          <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline">
+          <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "kiraya_ust" }} variant="outline">
             {siteConfig.phoneDisplay}
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
         <OfisDurumu className="mt-3" />
       </header>
@@ -298,9 +299,9 @@ export default function KirayaVermekPage() {
         <CtaButton href="/ev-degerleme" variant="primary">
           Kira Değerlendirmesi İsteyin
         </CtaButton>
-        <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline-light">
+        <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "kiraya_banner" }} variant="outline-light">
           {siteConfig.phoneDisplay}
-        </CtaButton>
+        </TrackedCtaLink>
       </CtaBanner>
 
       {/* Hub-spoke tamamlama (iç bağ ölçümü 2026-07-29): bu sayfa konunun

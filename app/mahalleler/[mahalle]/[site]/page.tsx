@@ -671,9 +671,9 @@ export default async function SitePage({ params }: Props) {
             >
               Evinizi Değerlendirelim
             </CtaButton>
-            <CtaButton href={`tel:${siteConfig.phoneTel}`} variant="outline">
+            <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "site_ust" }} variant="outline">
               {siteConfig.phoneDisplay}
-            </CtaButton>
+            </TrackedCtaLink>
           </div>
           {/* Niyet ayrımı (2026-07-29 denetimi): "satılık daire" sorgusuyla gelen
               İKİ niyet taşır — ev sahibi (birincil, CTA yukarıda ve DOM'da önce)
@@ -855,7 +855,7 @@ export default async function SitePage({ params }: Props) {
           href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
             `Merhaba! ${site.isim} (${mahalle.isim}) — bu sitedeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
           )}`}
-          gaEvent="site_whatsapp_cta"
+          gaEvent="whatsapp_click" gaParams={{ konum: "site" }}
           variant="outline-light"
           openInNewTab
         >
@@ -867,7 +867,7 @@ export default async function SitePage({ params }: Props) {
             zorunda kalıyor. */}
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="phone_click"
+          gaEvent="phone_click" gaParams={{ konum: "site_banner" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}

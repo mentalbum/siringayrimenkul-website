@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import { PhoneIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
 
@@ -32,13 +33,15 @@ export function YazarKarti() {
             </Link>
           </p>
           <p className="mt-2 text-sm">
-            <a
+            <TrackedLink
               href={`tel:${siteConfig.phoneTel}`}
+              gaEvent="phone_click"
+              gaParams={{ konum: "yazar_karti" }}
               className="inline-flex items-center gap-1.5 font-semibold text-gold-dark hover:underline"
             >
               <PhoneIcon className="h-3.5 w-3.5" />
               {siteConfig.phoneDisplay}
-            </a>
+            </TrackedLink>
           </p>
         </div>
       </div>

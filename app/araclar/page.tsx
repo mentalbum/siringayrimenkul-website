@@ -121,7 +121,7 @@ export default function AraclarPage() {
         </TrackedCtaLink>
         <TrackedCtaLink
           href={`tel:${siteConfig.phoneTel}`}
-          gaEvent="araclar_tel_cta"
+          gaEvent="phone_click" gaParams={{ konum: "araclar" }}
           variant="outline-light"
         >
           {siteConfig.phoneDisplay}

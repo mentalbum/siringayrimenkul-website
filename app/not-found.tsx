@@ -47,7 +47,7 @@ export default function NotFound() {
         <CtaButton href="/" variant="outline">
           Anasayfa
         </CtaButton>
-        <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" variant="outline">
+        <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "404" }} variant="outline">
           Bizi Arayın
         </TrackedCtaLink>
       </div>

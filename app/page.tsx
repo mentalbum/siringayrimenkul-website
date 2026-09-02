@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import Link from "next/link";
 import {
   getAllBlogPosts,
@@ -201,13 +202,15 @@ export default function HomePage() {
               <CtaButton href="/ev-degerleme" variant="primary" className="px-8 text-base">
                 Evinizi Değerlendirelim
               </CtaButton>
-              <a
+              <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
+                gaEvent="phone_click"
+                gaParams={{ konum: "anasayfa_hero" }}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors duration-200 hover:text-gold"
               >
                 <PhoneIcon className="h-4 w-4" />
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
             </div>
             <div className="animate-fade-up mt-5 [animation-delay:0.28s]">
               <ReviewBadge variant="dark" />
@@ -350,13 +353,15 @@ export default function HomePage() {
               sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.
             </p>
             <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3">
-              <a
+              <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
+                gaEvent="phone_click"
+                gaParams={{ konum: "anasayfa_ofis" }}
                 className="inline-flex items-center gap-2 text-sm font-semibold text-gold-dark transition-colors hover:text-navy"
               >
                 <PhoneIcon className="h-4 w-4" />
                 {siteConfig.phoneDisplay}
-              </a>
+              </TrackedLink>
               <Link
                 href="/hakkimizda#ozgun-sirin"
                 className="text-sm font-semibold text-gold-dark hover:underline"

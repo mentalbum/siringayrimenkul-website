@@ -136,7 +136,7 @@ export default function EvDegerlemePage() {
             Formu doldurmak yerine doğrudan görüşmek isterseniz:{" "}
             <TrackedCtaLink
               href={`tel:${siteConfig.phoneTel}`}
-              gaEvent="phone_click"
+              gaEvent="phone_click" gaParams={{ konum: "ev_degerleme" }}
               variant="ghost"
               className="px-0 text-gold-dark"
             >

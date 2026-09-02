@@ -82,7 +82,7 @@ export function Header() {
         <div className="hidden items-center gap-5 lg:flex">
           <a
             href={`tel:${siteConfig.phoneTel}`}
-            onClick={() => sendGAEvent("event", "phone_click")}
+            onClick={() => sendGAEvent("event", "phone_click", { konum: "header" })}
             className={`flex items-center gap-1.5 text-sm font-semibold transition-colors ${
               scrolled ? "text-white hover:text-gold" : "text-navy hover:text-gold-dark"
             }`}
@@ -153,7 +153,7 @@ export function Header() {
           >
             <a
               href={`tel:${siteConfig.phoneTel}`}
-              onClick={() => sendGAEvent("event", "phone_click")}
+              onClick={() => sendGAEvent("event", "phone_click", { konum: "header_mobil_menu" })}
               className={`flex items-center gap-2 px-3 text-base font-semibold ${
                 scrolled ? "text-white" : "text-navy"
               }`}

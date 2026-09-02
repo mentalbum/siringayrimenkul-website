@@ -134,7 +134,7 @@ export default async function MahallePage({ params }: Props) {
           <CtaButton href="/mahalleler" variant="outline">
             Tüm Mahalleler
           </CtaButton>
-          <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" variant="primary">
+          <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "mahalle" }} variant="primary">
             Bizi Arayın
           </TrackedCtaLink>
         </div>
@@ -450,7 +450,7 @@ export default async function MahallePage({ params }: Props) {
             href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
               `Merhaba! ${mahalle.isim} — bu mahalledeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
             )}`}
-            gaEvent="mahalle_whatsapp_cta"
+            gaEvent="whatsapp_click" gaParams={{ konum: "mahalle" }}
             variant="primary"
             openInNewTab
           >

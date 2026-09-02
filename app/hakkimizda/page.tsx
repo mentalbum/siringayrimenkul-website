@@ -149,7 +149,7 @@ export default function HakkimizdaPage() {
                 <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
                   <TrackedCtaLink
                     href={`tel:${siteConfig.phoneTel}`}
-                    gaEvent="phone_click"
+                    gaEvent="phone_click" gaParams={{ konum: "hakkimizda" }}
                     variant="ghost"
                     className="px-0 text-gold-dark"
                   >

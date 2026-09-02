@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { siteConfig } from "@/lib/site-config";
@@ -34,9 +35,9 @@ export default function GizlilikPage() {
           <h2 className="text-xl text-navy">Veri Sorumlusu</h2>
           <p className="mt-3">
             {siteConfig.name} — {siteConfig.officeAddress}. Telefon:{" "}
-            <a href={`tel:${siteConfig.phoneTel}`} className="font-semibold text-gold-dark">
+            <TrackedLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "gizlilik" }} className="font-semibold text-gold-dark">
               {siteConfig.phoneDisplay}
-            </a>
+            </TrackedLink>
             . Taşınmaz Ticareti Yetki Belgesi No: 0603771.
           </p>
         </section>
@@ -131,9 +132,9 @@ export default function GizlilikPage() {
             Kişisel verilerinizin işlenip işlenmediğini öğrenme, düzeltilmesini veya silinmesini
             isteme, itiraz etme dahil KVKK m. 11&apos;deki tüm haklara sahipsiniz. Başvurunuzu
             ofis adresimize yazılı olarak iletebilir ya da{" "}
-            <a href={`tel:${siteConfig.phoneTel}`} className="font-semibold text-gold-dark">
+            <TrackedLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "gizlilik" }} className="font-semibold text-gold-dark">
               {siteConfig.phoneDisplay}
-            </a>{" "}
+            </TrackedLink>{" "}
             numarasından bize ulaşabilirsiniz.
           </p>
         </section>
