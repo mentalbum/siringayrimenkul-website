@@ -1,13 +1,13 @@
 # DİZİN İSTEĞİ ADAYLARI — SERP turlarından üretildi
 
-Üretim: 31.08.2026 · `python3 dizin-adaylari-uret.py`  
+Üretim: 02.09.2026 · `python3 dizin-adaylari-uret.py`  
 Ölçüt: sayfa SERP'te kayıp + dizinde bayat. Dizinsizlere kota harcanmaz
 (Özgün kararı) — ayrı bölümde. İstek gönderilmişler düşüldü.  
 Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıldı, 410.  
 **Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve
 SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
-**0 aday · 203 SIRA sorunu (kota harcanmaz) · 26 istek gönderilmiş bekliyor · 71 dizinsiz**
+**0 aday · 188 SIRA sorunu (kota harcanmaz) · 23 istek gönderilmiş bekliyor · 68 dizinsiz**
 
 > **Aday olmak için SERP'te kayıp olmak yetmez, Google'da OLMAMAK gerekir.**
 > 31.08'de ölçüldü: SERP kaybına göre seçilen 203 sayfanın 203'ü de zaten
@@ -24,14 +24,12 @@ SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 Bu sayfalar Google'da var; SERP'te kaybolmalarının sebebi dizin değil.
 Dizin isteği göndermek kotayı boşa yakar.
 
-- `koz-modern` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 3., 770 gösterim
 - `alpak-neve-armonia-residence` (Şehit Osman Avcı) — ada temsil, sıra 5., 633 gösterim
 - `bahcen-eryaman-konutlari` (Şeker) — eski başlık, sıra 2., 374 gösterim
-- `inci-life-residence` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 7., 359 gösterim
+- `inci-life-residence` (Şehit Osman Avcı) — ada temsil, sıra 6., 359 gösterim
 - `terasevler-eryaman` (Yavuz Selim) — eski başlık, sıra 1., 347 gösterim
 - `hill-tower` (Şeker) — eski başlık, sıra 1., 295 gösterim
 - `dort-mevsim-eryaman-konutlari` (Şeker) — ada temsil, sıra 9., 288 gösterim
-- `karma-modern` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 1., 274 gösterim
 - `konum-eryaman` (Göksu) — eski başlık, sıra 4., 262 gösterim
 - `mesa-bloklari` (Altay) — eski başlık, sıra 2., 262 gösterim
 - `kasmir-mavi-orkide-sitesi` (Göksu) — eski başlık, sıra 5., 248 gösterim
@@ -40,7 +38,6 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `atakent-2-cumhuriyet-sitesi` (Eryaman) — eski başlık, sıra 2., 241 gösterim
 - `park-mira-evleri` (Göksu) — eski başlık, sıra 1., 233 gösterim
 - `dema-park` (Tunahan) — ada temsil, sıra 3., 230 gösterim
-- `goksukent-sitesi` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 2., 230 gösterim
 - `mil-kooperatifi-sitesi` (Devlet) — eski başlık, sıra 1., 229 gösterim
 - `oasis-rezidans` (Şeker) — eski başlık, sıra 2., 224 gösterim
 - `ozdenizyildizi-sitesi` (Devlet) — eski başlık, sıra 5., 217 gösterim
@@ -50,29 +47,30 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `atakent-sitesi` (Eryaman) — GÖRÜNMEZ, sıra yok, 190 gösterim
 - `vaditepe-baspinar` (Göksu) — ada temsil, sıra 9., 176 gösterim
 - `vizyon-prestige` (Altay) — ada temsil, sıra 4., 173 gösterim
-- `neva-prestij-konutlari` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 2., 171 gösterim
-- `happy-life-residence` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 1., 163 gösterim
 - `volga-residence` (Şeker) — ada temsil, sıra 2., 156 gösterim
 - `yeni-portakal-cicegi-sitesi` (Eryaman) — eski başlık, sıra 3., 155 gösterim
 - `bordo-loca` (Göksu) — GÖRÜNMEZ, sıra yok, 155 gösterim
 - `finest-bloklari` (Göksu) — eski başlık, sıra 1., 151 gösterim
 - `selale-evleri-sitesi` (Göksu) — ada temsil, sıra 5., 147 gösterim
-- `metropark-plus` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 1., 145 gösterim
 - `erkent-sitesi` (Güzelkent) — eski başlık, sıra 3., 142 gösterim
 - `yeni-kaynak-sitesi` (Yavuz Selim) — komşu sayfa temsil, sıra 4., 142 gösterim
 - `eylul-sitesi` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 141 gösterim
 - `basak-sitesi` (Eryaman) — eski başlık, sıra 3., 127 gösterim
 - `su-damlasi-sitesi` (Tunahan) — eski başlık, sıra 6., 122 gösterim
 - `maybak-konutlari` (Göksu) — komşu sayfa temsil, sıra 3., 121 gösterim
-- … ve 163 sayfa daha
+- `endora-park` (Eryaman) — komşu sayfa temsil, sıra 2., 120 gösterim
+- `gulhayat-sitesi` (Devlet) — eski başlık, sıra 2., 116 gösterim
+- `kur-sitesi-46495-ada` (Tunahan) — eski slug, sıra 2., 115 gösterim
+- `uzunali-goksu-konutlari-2` (Göksu) — eski başlık, sıra 1., 115 gösterim
+- `bizim-alperenler-sitesi` (Şeyh Şamil) — mahalle sayfası temsil, sıra 3., 114 gösterim
+- `cinar-sitesi` (Devlet) — eski başlık, sıra 4., 114 gösterim
+- … ve 148 sayfa daha
 
 ## İstek gönderildi, tarama bekliyor
 
 - `safir-rezidans` (Şehit Osman Avcı) — eski başlık, sıra 2., 260 gösterim
 - `oyak-sitesi` (Eryaman) — GÖRÜNMEZ, sıra yok, 233 gösterim
-- `arissa-goksu` (Göksu) — komşu sayfa temsil, sıra 1., 232 gösterim
 - `sutek-sitesi` (Tunahan) — komşu sayfa temsil, sıra 3., 227 gösterim
-- `kc-lale-evleri` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 4., 170 gösterim
 - `aksafak-sitesi` (Göksu) — eski başlık, sıra 3., 160 gösterim
 - `goksupark-konutlari` (Göksu) — GÖRÜNMEZ, sıra yok, 160 gösterim
 - `sude-konutlari` (Göksu) — komşu sayfa temsil, sıra 3., 125 gösterim
@@ -80,7 +78,6 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `neopolitan-eryaman` (Tunahan) — eski slug, sıra 2., 66 gösterim
 - `kur-sitesi-46496-ada` (Tunahan) — eski slug, sıra 2., 65 gösterim
 - `cumhuriyet-sitesi` (Eryaman) — komşu sayfa temsil, sıra 3., 46 gösterim
-- `atalay-sitesi` (Şehit Osman Avcı) — komşu sayfa temsil, sıra 3., 42 gösterim
 - `atadostlar-sitesi` (Yavuz Selim) — komşu sayfa temsil, sıra 9., 30 gösterim
 - `mavera-sitesi` (Şeyh Şamil) — GÖRÜNMEZ, sıra yok, 27 gösterim
 - `kucukevlerimiz-sitesi` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 18 gösterim
@@ -135,15 +132,12 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `sehit-ferhat-koc-sitesi` (Güzelkent) — ada temsil
 - `yesim-kent2-sitesi` (Güzelkent) — komşu sayfa temsil
 - `address-goksu` (Şehit Osman Avcı) — eski slug
-- `bulvar-1071-sitesi` (Şehit Osman Avcı) — komşu sayfa temsil
-- `bulvar-312-konutlari` (Şehit Osman Avcı) — komşu sayfa temsil
+- `bulvar-1071-sitesi` (Şehit Osman Avcı) — eski slug
 - `cicek-sitesi` (Şehit Osman Avcı) — GÖRÜNMEZ
-- `cizgi-otesi-residence` (Şehit Osman Avcı) — komşu sayfa temsil
-- `gode-yasam-konutlari` (Şehit Osman Avcı) — komşu sayfa temsil
+- `cizgi-otesi-residence` (Şehit Osman Avcı) — eski slug
 - `goksu-prestij` (Şehit Osman Avcı) — GÖRÜNMEZ
 - `ictas` (Şehit Osman Avcı) — GÖRÜNMEZ
-- `inci-park-evleri-sitesi` (Şehit Osman Avcı) — komşu sayfa temsil
-- `neva-panora-konutlari` (Şehit Osman Avcı) — komşu sayfa temsil
+- `neva-panora-konutlari` (Şehit Osman Avcı) — mahalle sayfası temsil
 - `relax-eryaman-konutlari` (Şehit Osman Avcı) — GÖRÜNMEZ
 - `ucyildiz-sitesi` (Şehit Osman Avcı) — GÖRÜNMEZ
 - `yildiz-eryaman` (Şehit Osman Avcı) — GÖRÜNMEZ

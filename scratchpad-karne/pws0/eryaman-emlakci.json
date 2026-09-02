@@ -3,12 +3,17 @@
  "sorgu": "eryaman emlakçı",
  "kaynak": "api",
  "baslangic": "2026-07-27",
- "son_veri_gunu": "2026-08-30",
- "gun": 35,
+ "son_veri_gunu": "2026-08-31",
+ "gun": 36,
+ "pencere": {
+  "bas": "2026-07-27",
+  "bit": "2026-08-31",
+  "gun": 36
+ },
  "toplam": {
-  "gos": 521,
-  "tik": 22,
-  "to": 4.2,
+  "gos": 532,
+  "tik": 23,
+  "to": 4.3,
   "konum": 1.35
  },
  "haftalar": [
@@ -66,6 +71,17 @@
    "tik": 2,
    "to": 1.8,
    "konum": 1.36
+  },
+  {
+   "bas": "2026-08-31",
+   "bit": "2026-09-06",
+   "etiket": "31.08–06.09",
+   "gun": 1,
+   "kismi": true,
+   "gos": 11,
+   "tik": 1,
+   "to": 9.1,
+   "konum": 1.55
   }
  ],
  "donemler": [
@@ -161,26 +177,26 @@
   {
    "k": "d3",
    "ad": "Kısaltma sonrası",
-   "etiket": "16.08–30.08",
+   "etiket": "16.08–31.08",
    "bas": "2026-08-16",
-   "bit": "2026-08-30",
-   "gun": 15,
-   "gos": 256,
-   "tik": 5,
-   "to": 2.0,
-   "konum": 1.43,
+   "bit": "2026-08-31",
+   "gun": 16,
+   "gos": 267,
+   "tik": 6,
+   "to": 2.2,
+   "konum": 1.44,
    "kucuk_ornek": false,
    "sayfalar": [
     {
      "u": "/",
      "ad": "Ana sayfa",
-     "gos": 255,
-     "tik": 4,
-     "to": 1.6,
+     "gos": 266,
+     "tik": 5,
+     "to": 1.9,
      "konum": 1.38,
-     "gun": 15,
+     "gun": 16,
      "ilk": "2026-08-16",
-     "son": "2026-08-30"
+     "son": "2026-08-31"
     },
     {
      "u": "/mahalleler/eryaman-mahallesi",
@@ -202,13 +218,13 @@
   {
    "u": "/",
    "ad": "Ana sayfa",
-   "gos": 491,
-   "tik": 20,
-   "to": 4.1,
-   "konum": 2.92,
-   "gun": 35,
+   "gos": 502,
+   "tik": 21,
+   "to": 4.2,
+   "konum": 2.89,
+   "gun": 36,
    "ilk": "2026-07-27",
-   "son": "2026-08-30"
+   "son": "2026-08-31"
   },
   {
    "u": "/?utm_source=google&utm_medium=gbp",
@@ -516,15 +532,21 @@
    "gos": 9,
    "tik": 0,
    "konum": 1.0
+  },
+  {
+   "d": "2026-08-31",
+   "gos": 11,
+   "tik": 1,
+   "konum": 1.55
   }
  ],
  "notlar": [
-  "TO üç dönemde %5,5 → %9,2 → %2,0 (27.07–11.08 / 12.08–15.08 / 16.08–30.08); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
+  "TO üç dönemde %5,5 → %9,2 → %2,2 (27.07–11.08 / 12.08–15.08 / 16.08–31.08); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
   "GSC “konum”u mülk düzeyinde en iyi adresimizin konumudur. 27.07–11.08 arasında bu adres harita kutusundaki GBP bağıydı (utm'li adres, konum 1,2, 199 gösterim / 1 tık); ana sayfa “/” aynı günlerde konum 5,8. utm'li adres 11.08 sonrası GSC'de yok (URL denetimi: DIŞARIDA — URL is unknown to Google) ve “/” konumu 1,4 oldu — harita bağının gösterimi artık “/” adresine yazılıyor. Yani sabit görünen 1,2–1,4 harita kutusunun konumudur; organik sırayı GSC değil pws=0 SERP ölçümü verir.",
   "pws=0 SERP ölçümlerinde organik sıra: 3 (09.08), 3 (15.08), 2 (17.08), 3 (30.08); harita kutusunda 1. sıra 4/4 ölçümde. Organik sıra sabit, harita sabit, TO düştü → sorun sırada değil, snippet/başlıkta.",
-  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–30.08 döneminde 4 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
+  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–31.08 döneminde 5 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
   "Baş şüpheli: 2026-08-15 ana sayfa meta description kısaltması (commit 3f58e7f: “ana sayfa 'kim' düzeni: güvenilir emlakçı pasajı SSS'ten görünür metne, blog SSS altına, meta description 229→119, alıcı hitabı kalktı, SSS #6 pozitif kuruldu (#24)”). TO düşüşü bu tarihten sonraki dönemde görülüyor; nedensellik ölçülmedi, tek şüpheli değil (aynı günlerde harita bağı da “/” adresine geçti).",
   "Title/H1 donuk, serbest kalma tarihi 07.09 (08.08 değişikliğinin 4 haftalık bekleme süresi); o tarihe kadar müdahale yalnızca meta description olabilir."
  ],
- "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 14,9/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 30.08 — GSC 2-3 gün geriden gelir."
+ "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 14,8/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 31.08 — GSC 2-3 gün geriden gelir."
 }

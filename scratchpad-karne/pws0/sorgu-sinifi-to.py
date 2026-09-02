@@ -8,14 +8,20 @@ konum basar. Sınıflama sorgu metninden, kural tabanlı; sınır vakaları vard
 oranlar büyüklük sırası için güvenilirdir, ondalığı için değil.
 
 Girdi : <scratchpad>/sorgular28.tsv  (node scripts/gsc-api.mjs sorgular 28)
-Çıktı : sorgu-sinifi-to.json — karne-html.py okur.
+        İlk satırı "# pencere" başlığı: bas/bit/gün oradan okunur (pencere.py).
+        Aynı pencereden çekilmiş sayfa-sorgu28.tsv (ada-beklenti-uret.py) varsa baskın sayfa için okunur.
+Çıktı : sorgu-sinifi-to.json — karne-html.py okur; "pencere": {bas, bit, gun} taşır.
 """
 import json, os, re, sys, collections, datetime
+from pencere import pencere_zorunlu
 
 S = os.environ.get("KARNE_SCRATCH", "")
 KOK = os.path.dirname(os.path.abspath(__file__))
 if not S or not os.path.exists(f"{S}/sorgular28.tsv"):
     sys.exit("KARNE_SCRATCH ayarla; içinde sorgular28.tsv olmalı")
+# 02.09 denetimi: "gun": 28 elle yazılıydı; dosya 29 veri günü taşıyordu (02.08–30.08).
+# Pencere artık dosyanın kendi başlığından okunur, yoksa betik durur.
+PENCERE = pencere_zorunlu(f"{S}/sorgular28.tsv")
 
 SINIF_AD = {
     "yalin": "Yalın site adı (ör. “X Sitesi”)",
@@ -98,10 +104,12 @@ for k, o in t.items():
 satir.sort(key=lambda x: -x["gos"])
 makas.sort(key=lambda x: -x["gos"])
 toplam_g = sum(x["gos"] for x in satir); toplam_t = sum(x["tik"] for x in satir)
-cikti = {"guncelleme": datetime.date.today().isoformat(), "gun": 28, "toplam_gos": toplam_g, "toplam_tik": toplam_t,
+cikti = {"guncelleme": datetime.date.today().isoformat(), "pencere": PENCERE, "gun": PENCERE["gun"],
+         "toplam_gos": toplam_g, "toplam_tik": toplam_t,
          "to": round(toplam_t * 100 / toplam_g, 2) if toplam_g else 0, "siniflar": satir, "makas": makas[:12],
          "makas_ym": [{"q": m["q"], "gos": m["gos"]} for m in ym_dusen]}
 json.dump(cikti, open(f"{KOK}/sorgu-sinifi-to.json", "w"), ensure_ascii=False, indent=1)
+print(f"pencere {PENCERE['bas']} → {PENCERE['bit']} ({PENCERE['gun']} veri günü)")
 print(f"{'sınıf':46} {'sorgu':>6} {'gösterim':>9} {'tık':>5} {'TO':>6} {'konum':>6}")
 for x in satir:
     print(f"{x['ad']:46} {x['sorgu']:6} {x['gos']:9} {x['tik']:5} {x['to']:5}% {x['poz']:6}")

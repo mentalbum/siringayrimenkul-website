@@ -133,10 +133,10 @@
    "adet": 15,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
    "ornek": [
-    "satır 441: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
-    "satır 442: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
-    "satır 665: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
-    "satır 767: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
+    "satır 519: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
+    "satır 520: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
+    "satır 754: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
+    "satır 856: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
    ],
    "agir": false,
    "temiz": false

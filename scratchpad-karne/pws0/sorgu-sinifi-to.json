@@ -1,54 +1,59 @@
 {
  "guncelleme": "2026-09-02",
+ "pencere": {
+  "bas": "2026-08-04",
+  "bit": "2026-08-31",
+  "gun": 28
+ },
  "gun": 28,
- "toplam_gos": 24255,
- "toplam_tik": 721,
- "to": 2.97,
+ "toplam_gos": 23699,
+ "toplam_tik": 701,
+ "to": 2.96,
  "siniflar": [
   {
    "k": "yalin",
    "ad": "Yalın site adı (ör. “X Sitesi”)",
-   "sorgu": 546,
-   "gos": 13969,
-   "tik": 237,
+   "sorgu": 551,
+   "gos": 13801,
+   "tik": 240,
    "to": 1.7,
    "poz": 8.3
   },
   {
    "k": "alici",
    "ad": "Alıcı niyeti (satılık / kiralık / daire)",
-   "sorgu": 369,
-   "gos": 8554,
-   "tik": 430,
-   "to": 5.0,
+   "sorgu": 366,
+   "gos": 8259,
+   "tik": 408,
+   "to": 4.9,
    "poz": 6.8
   },
   {
    "k": "bolge_emlakci",
    "ad": "“Eryaman / mahalle emlakçı”",
-   "sorgu": 17,
-   "gos": 1039,
+   "sorgu": 18,
+   "gos": 1046,
    "tik": 30,
    "to": 2.9,
-   "poz": 3.4
+   "poz": 3.5
   },
   {
    "k": "site_emlakci",
    "ad": "“<site> emlakçı”",
-   "sorgu": 58,
-   "gos": 477,
-   "tik": 9,
-   "to": 1.9,
+   "sorgu": 55,
+   "gos": 392,
+   "tik": 7,
+   "to": 1.8,
    "poz": 9.2
   },
   {
    "k": "marka",
    "ad": "Marka (Şirin Gayrimenkul)",
    "sorgu": 5,
-   "gos": 187,
-   "tik": 13,
-   "to": 7.0,
-   "poz": 3.1
+   "gos": 172,
+   "tik": 14,
+   "to": 8.1,
+   "poz": 3.3
   },
   {
    "k": "sahip",
@@ -62,6 +67,24 @@
  ],
  "makas": [
   {
+   "q": "relax göksu kiralık",
+   "gos": 201,
+   "tik": 3,
+   "to": 1.5,
+   "poz": 4.9,
+   "sinif": "alici",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari"
+  },
+  {
+   "q": "canberk sitesi kiralık daire",
+   "gos": 97,
+   "tik": 1,
+   "to": 1.0,
+   "poz": 5.0,
+   "sinif": "alici",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/canberk-sitesi"
+  },
+  {
    "q": "emlak",
    "gos": 60,
    "tik": 0,
@@ -72,9 +95,9 @@
   },
   {
    "q": "alina konutları",
-   "gos": 52,
+   "gos": 51,
    "tik": 1,
-   "to": 1.9,
+   "to": 2.0,
    "poz": 4.5,
    "sinif": "yalin",
    "sayfa": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/alina-konutlari"
@@ -91,7 +114,7 @@
   },
   {
    "q": "sarıtaş seyir evleri",
-   "gos": 66
+   "gos": 67
   }
  ]
 }

@@ -1,10 +1,15 @@
 {
  "guncelleme": "2026-08-31",
+ "pencere": {
+  "bas": "2026-08-04",
+  "bit": "2026-08-31",
+  "gun": 28
+ },
  "sira_sorunu": {
   "n": 57,
-  "gost": 2584,
-  "tik": 75,
-  "poz": 7.4,
+  "gost": 2545,
+  "tik": 72,
+  "poz": 7.5,
   "mah": [
    [
     "devlet-mahallesi",
@@ -50,9 +55,9 @@
  },
  "dizin_sorunu": {
   "n": 17,
-  "gost": 0,
+  "gost": 1,
   "tik": 0,
-  "poz": 0.0,
+  "poz": 5.0,
   "mah": [
    [
     "sehit-osman-avci-mahallesi",

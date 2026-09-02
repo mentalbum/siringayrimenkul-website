@@ -6,6 +6,11 @@ tıklamanın üçte biri 27.08'de siteden kaldırılan Yenimahalle sayfalarında
 geliyor — bu trafik önümüzdeki haftalarda düşecek ve sıra karnesi bunu
 "başarısızlık" gibi gösterecekti. Ayrım şart.
 
+Pencere (02.09 denetimi): gsc-api.mjs artık bitişi GSC'nin gerçek son veri gününden
+alır ve N VERİ günü ister; "ozet" çıktısı pencere/onceki_pencere/son_veri_gunu taşır,
+bu JSON'a olduğu gibi geçer. Kümülatif 7/14/…/42 günlük "sayfalar" çekimleri de aynı
+son veri gününde biter, yani haftalık dilimler tam 7 veri günüdür.
+
 Kullanım: python3 sonuc-ozeti-uret.py     (GSC API çağrısı yapar, ~1 dk)
 """
 import json, re, subprocess, datetime, os
@@ -25,7 +30,10 @@ def sayfa(gun):
         a = l.split("\t")
         if len(a) < 4:
             continue
-        d[a[3]] = (int(a[0]), int(a[1]))
+        try:
+            d[a[3]] = (int(a[0]), int(a[1]))
+        except ValueError:      # ilk satır "# pencere" başlığı (gsc-api.mjs 02.09)
+            continue
     return d
 
 s28, s56 = sayfa(28), sayfa(56)
@@ -79,10 +87,13 @@ _uzun = json.loads(calistir("ozet", "180")).get("haftalar") or []
 ozet["mulk_baslangic"] = _uzun[0]["bas"] if _uzun else None
 ozet["mulk_haftalari"] = len(_uzun)
 ozet["uretim"] = datetime.date.today().isoformat()
+if "pencere" not in ozet:
+    raise SystemExit("gsc-api.mjs ozet çıktısında 'pencere' yok — scripts/gsc-api.mjs güncel değil")
 p = f"{KOK}/scratchpad-karne/pws0/sonuc-ozeti.json"
 json.dump(ozet, open(p, "w"), ensure_ascii=False, indent=1)
 e, y = ozet["ayrim"]["eryaman"], ozet["ayrim"]["yenimahalle"]
-print(f"yazıldı: sonuc-ozeti.json")
+print(f"yazıldı: sonuc-ozeti.json · pencere {ozet['pencere']['bas']} → {ozet['pencere']['bit']} "
+      f"({ozet['pencere']['gun']} veri günü, GSC son veri günü {ozet['son_veri_gunu']})")
 print(f"  toplam  {ozet['simdi']['tik']} tık · {ozet['simdi']['gos']} gösterim · TO %{ozet['simdi']['to']}")
 print(f"  Eryaman {e['simdi']['tik']} tık (önceki {e['onceki']['tik']})")
 print(f"  Yenimahalle {y['simdi']['tik']} tık — 27.08'de kaldırıldı, bu trafik düşecek")

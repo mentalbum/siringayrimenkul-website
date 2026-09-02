@@ -89,15 +89,34 @@ def to(tik, gos, ondalik=2):
 
 
 # --- 1. veri çek --------------------------------------------------------------
-def cek(dims, hedef):
-    bitis = datetime.date.today() - datetime.timedelta(days=2)   # GSC ~2 gün geriden gelir
-    baslangic = bitis - datetime.timedelta(days=GUN)              # gsc-api.mjs ile aynı pencere
-    r = subprocess.run(["node", f"{S}/gsc-q.mjs", baslangic.isoformat(), bitis.isoformat(), dims],
+# PENCERE KURALI (02.09 denetimi; pencere.py ve gsc-api.mjs ile aynı): önce date
+# boyutu sorulur, satırı olan günlerin sonuncusu son veri günüdür, pencere oradan
+# geriye GUN veri günüdür. Eski kod bugün−2'de biten 29 takvim günü istiyor, sonra
+# veri günlerini sayıp düzeltiyordu; şimdi istenen = gerçek, düzeltme gerekmiyor.
+def veri_gunleri(kac):
+    bugun = datetime.date.today()
+    r = subprocess.run(["node", f"{S}/gsc-q.mjs", (bugun - datetime.timedelta(days=kac)).isoformat(),
+                        bugun.isoformat(), "date"], capture_output=True, text=True)
+    if r.returncode != 0:
+        sys.exit(f"gsc-q.mjs date başarısız: {r.stderr.strip()[:400]}")
+    return sorted(L.split("\t")[3] for L in r.stdout.splitlines() if L.count("\t") >= 3)
+
+
+def pencere_kur():
+    gunler = veri_gunleri(GUN + 14)            # GUN veri günü + GSC gecikmesi (2-3 gün) + pay
+    if not gunler:
+        sys.exit("GSC hiç veri günü döndürmedi; pencere kurulamadı")
+    dilim = gunler[-GUN:]
+    # "veri_gun" anahtarı karne-html.py'nin okuduğu ad (02.09 sabahı eklendi); gun ile aynı.
+    return {"bas": dilim[0], "bit": dilim[-1], "gun": len(dilim), "veri_gun": len(dilim)}
+
+
+def cek(dims, hedef, donem):
+    r = subprocess.run(["node", f"{S}/gsc-q.mjs", donem["bas"], donem["bit"], dims],
                        capture_output=True, text=True)
     if r.returncode != 0:
         sys.exit(f"gsc-q.mjs {dims} başarısız: {r.stderr.strip()[:400]}")
     open(hedef, "w").write(r.stdout)
-    return {"bas": baslangic.isoformat(), "bit": bitis.isoformat(), "gun": GUN}
 
 
 if YEREL:
@@ -106,17 +125,9 @@ if YEREL:
             sys.exit(f"--yerel istendi ama {f} yok")
     donem = json.load(open(DONEM_DOSYA)) if os.path.exists(DONEM_DOSYA) else None
 else:
-    donem = cek("page,query", DOKUM)
-    cek("page", TOPLAM)
-    # İstenen pencere bugün−2'de biter ama GSC 2-3 gün geriden gelir: son günler boş
-    # olabilir. Veri olan günleri say ki karne "03.08–31.08, 28 gün" gibi kendi içinde
-    # çelişen bir pencere basmasın (02.09 denetimi: 29 takvim günü, 28 veri günü).
-    _g = subprocess.run(["node", f"{S}/gsc-q.mjs", donem["bas"], donem["bit"], "date"],
-                        capture_output=True, text=True)
-    _gunler = sorted(L.split("\t")[3] for L in _g.stdout.splitlines() if L.count("\t") >= 3) if _g.returncode == 0 else []
-    if _gunler:
-        donem.update({"istenen_bas": donem["bas"], "istenen_bit": donem["bit"],
-                      "bas": _gunler[0], "bit": _gunler[-1], "veri_gun": len(_gunler)})
+    donem = pencere_kur()
+    cek("page,query", DOKUM, donem)
+    cek("page", TOPLAM, donem)
     json.dump(donem, open(DONEM_DOSYA, "w"))
 
 
@@ -361,6 +372,8 @@ DIPNOTLAR = [
 ]
 cikti = {
     "guncelleme": bugun, "donem": donem, "gun": GUN,
+    # pencere: bütün üreticilerde aynı ad/biçim (pencere.py); donem eski ad, karne onu da okuyor.
+    "pencere": {"bas": donem["bas"], "bit": donem["bit"], "gun": donem.get("veri_gun") or donem["gun"]} if donem else None,
     "kesik": kesik, "dokum_satir": ham_satir, "yenimahalle_dusulen": ym_satir, "kullanilan_satir": len(satirlar),
     "bantlar": BANTLAR,
     "egri": egri, "egri_site": egri_site,

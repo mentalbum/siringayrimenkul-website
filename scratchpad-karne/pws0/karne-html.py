@@ -12,7 +12,8 @@ Doğrudan okunan ölçüm dosyaları (bu klasör):
   tur-*.json                   (mahalle kuyrukları — hangi s hangi mahallede)
   kuyruk-site-emlakci.json, dizin-analiz-2708.json (554 sayfalık dizin envanteri),
   isgal-3108.json, kaldirac-defteri.json, DIZINE-EKLENECEKLER.md,
-  gsc-dizin-kuyrugu-194.md, DIZIN-DAMLASI-31-08.md
+  gsc-dizin-kuyrugu-194.md, DIZIN-DAMLASI-31-08.md,
+  karne-gecmis.jsonl (yalnız hangi günün "anlik" satırı var — sparkline nokta rengi)
 
 Üretici sırası — hepsi bu klasörden koşar. KARNE_SCRATCH = oturum scratchpad'i
 (içinde gsc-q.mjs durur; GSC/GA4 ham çekimleri oraya TSV/JSON olarak bırakılır):
@@ -41,7 +42,23 @@ Doğrudan okunan ölçüm dosyaları (bu klasör):
   python3 eryaman-emlakci-uret.py → eryaman-emlakci.json   (GSC API'yi kendisi çağırır; ham
                                     çekimi KARNE_SCRATCH'e yazar, API düşerse oradan okur)
   python3 cihaz-uret.py           → cihaz.json             (gsc-q.mjs, mülk düzeyi device)
+  --- bütün üreticilerden SONRA (JSON'larını okurlar), karne-html.py'den ÖNCE ---
+  python3 anlik-goruntu-uret.py   → karne-gecmis.jsonl + karne-gecmis-ozet.json
+                                    (günlük zaman serisi; gsc-q.mjs/ga4-q.mjs ile geri doldurma;
+                                     --yerel API'ye gitmez, --yalniz-anlik geri doldurmaz.
+                                     karne-gecmis-ozet.json'un TEK sahibi bu betik.)
+  python3 yonetici-ozeti-uret.py  → yonetici-ozeti.json    (tepe 6 rakam + yapılan/beklenen;
+                                    7 günlük farkı karne-gecmis-ozet.json'dan OKUR → anlıktan sonra)
+  python3 is-takvimi-uret.py      → is-takvimi.json        (tarihli iş listesi: damla kuyruğu,
+                                    hedef-sorgular, kaldıraç defteri, git log)
   python3 karne-html.py           → bulunabilirlik-karnesi.html (KARNE_SCRATCH gerekmez)
+
+Pencere (02.09): scripts/gsc-api.mjs sorgular/sayfalar TSV'nin ilk satırına
+"# pencere<TAB>bas<TAB>bit<TAB>gün" yazar; her GSC üreticisi JSON'una
+pencere{bas,bit,gun} girer (pencere.py). Karne her GSC/GA4 bölümünün notuna
+"pencere: bas–bit, N veri günü" satırını O BÖLÜMÜN JSON'undan basar; başka
+bölümden ödünç almaz (üç üretici üç ayrı pencerede çıkmıştı, karne hepsine
+"son 28 gün" diyordu). Alan yoksa "ölçülmedi".
 
 Çıktı: bulunabilirlik-karnesi.html  →  Artifact olarak aynı adrese yayınlanır.
 Yayın öncesi denetim: "{…}" kalıntısı, etiket dengesi, Türkçe ek, İngiliz sayı biçimi.
@@ -400,6 +417,43 @@ try:
 except FileNotFoundError:
     SIRA_SORUNLULARI = []
 
+# --- 02.09: üç yeni üretici -------------------------------------------------
+# yonetici-ozeti.json  → tepe 6 rakam + bu hafta yapılan/beklenen (yonetici-ozeti-uret.py)
+# karne-gecmis-ozet.json → metrik başına 8 günlük seri + 7 günlük fark (anlik-goruntu-uret.py)
+# is-takvimi.json      → tarihli iş listesi (is-takvimi-uret.py); "Yarın ne yapılacak"ın yerini aldı
+try:
+    _YO = json.load(open("yonetici-ozeti.json"))
+except Exception:
+    _YO = None
+try:
+    _GO = json.load(open("karne-gecmis-ozet.json"))
+    if not isinstance(_GO.get("metrikler"), dict):
+        _GO = None  # eski şema ({"kayitlar":…}, 02.09 öncesi yonetici-ozeti çıktısı) — seri değil
+except Exception:
+    _GO = None
+try:
+    _IT = json.load(open("is-takvimi.json"))
+except Exception:
+    _IT = None
+# Sparkline nokta rengi: o gün karnede BASILMIŞ değer ("anlik" satırı) koyu, ham
+# veriden sonradan hesaplanan ("geri_doldurma") açık. Özet JSON nokta başına
+# kaynağı taşımıyor; jsonl'deki kaynak alanından okunur. Rakam okunmaz, yalnız gün.
+try:
+    _ANLIK_GUNLER = {r["tarih"] for r in (json.loads(l) for l in open("karne-gecmis.jsonl") if l.strip())
+                     if r.get("kaynak") == "anlik"}
+except Exception:
+    _ANLIK_GUNLER = set()
+try:
+    _SON_ANLIK = max((json.loads(l) for l in open("karne-gecmis.jsonl") if l.strip() and '"anlik"' in l),
+                     key=lambda r: r["tarih"], default=None)
+except Exception:
+    _SON_ANLIK = None
+# Title/H1 donmasının bitiş günü: eryaman-emlakci.json title_donuk (elle tarih yazılmaz)
+try:
+    _TITLE_DONUK = json.load(open("eryaman-emlakci.json")).get("title_donuk")
+except Exception:
+    _TITLE_DONUK = None
+
 def tr_sayi(n, ondalik=0):
     """Türkçe biçim: binlik nokta, ondalık virgül.
 
@@ -428,6 +482,30 @@ def site_adi(s):
 
 def tr_tarih(iso):
     return f"{iso[8:10]}.{iso[5:7]}" if iso and len(iso) >= 10 else ""
+
+def pencere_satir(p, etiket="", birim="veri günü"):
+    """Her GSC/GA4 bölümünün notuna tek biçimli satır: "pencere: 03.08–30.08, 28 veri günü".
+
+    02.09 denetimi: üç üretici üç ayrı pencerede çıkmış (sorgular28 02.08–30.08,
+    sayfalar28 01.08–28.08, sayfa-toplam28 03.08–30.08), karne hepsine "son 28 gün"
+    demişti. Artık her JSON kendi pencere{bas,bit,gun} alanını taşır ve karne ONU
+    basar; başka bölümden ödünç alınmaz. Alan yoksa "ölçülmedi" — 28 varsayılmaz.
+    """
+    if not p or not p.get("bas") or not p.get("bit"):
+        return f'<span class="pencere">pencere{etiket}: ölçülmedi</span>'
+    return (f'<span class="pencere">pencere{etiket}: {tr_tarih(p["bas"])}–{tr_tarih(p["bit"])}, '
+            f'{p["gun"]} {birim}</span>')
+
+def _ondalik(*degerler):
+    """Basılacak ondalık basamak: değerin kendisinde kaç basamak varsa o (en çok 2).
+    Zaman serisi karışık büyüklükte (TO 2,35 · tık 2.471 · pay 68,7); tek sabit
+    ya keser ya boş sıfır ekler."""
+    en = 0
+    for v in degerler:
+        if isinstance(v, float) and not v.is_integer():
+            kesir = f"{v:.2f}".rstrip("0").split(".")
+            en = max(en, len(kesir[1]) if len(kesir) > 1 else 0)
+    return min(en, 2)
 
 # küratörlü mahalle bulguları (tur karnesinden)
 # 31.08 — BU SÖZLÜKTEKİ RAKAMLAR SİLİNDİ. Denetimde 10'u tabloyla çelişik
@@ -582,11 +660,22 @@ def _yuzde_rozet(simdi, onceki):
 
 sonuc_html = ""
 donem_notu = "son dönem, bir önceki dönemle karşılaştırmalı"
-# GSC penceresi, cümle içi kullanım ("… son 28 günde …"); SONUC yoksa rakamsız
-DONEM_GUNDE = f"son {SONUC['donem']['gun']} günde" if SONUC else "son dönemde"
+# GSC penceresi, cümle içi kullanım ("… son 28 günde …"); SONUC yoksa rakamsız.
+# 02.09: sonuc-ozeti.json artık pencere{bas,bit,gun} taşıyor (eski ad donem aynı değer).
+_SONUC_P = (SONUC.get("pencere") or SONUC.get("donem")) if SONUC else None
+DONEM_GUNDE = f"son {_SONUC_P['gun']} günde" if _SONUC_P else "son dönemde"
+sonuc_pencere = ""
+if SONUC:
+    _op = SONUC.get("onceki_pencere")
+    sonuc_pencere = pencere_satir(_SONUC_P)
+    if _op:
+        sonuc_pencere += (f' <span class="pencere">önceki pencere: {tr_tarih(_op["bas"])}–{tr_tarih(_op["bit"])}, '
+                          f'{_op["gun"]} veri günü</span>')
+    if SONUC.get("son_veri_gunu"):
+        sonuc_pencere += f' <span class="alt">Search Console son veri günü {tr_tarih(SONUC["son_veri_gunu"])}.</span>'
 if SONUC:
     sm, on = SONUC["simdi"], SONUC["onceki"]
-    _gun = SONUC["donem"]["gun"]  # sonuc-ozeti.json → donem.gun
+    _gun = _SONUC_P["gun"]  # sonuc-ozeti.json → pencere.gun
     donem_notu = f"son {_gun} gün, bir önceki {_gun} günle karşılaştırmalı"
     e = SONUC["ayrim"]["eryaman"]; y = SONUC["ayrim"]["yenimahalle"]
     hafta = SONUC.get("haftalar") or []
@@ -645,8 +734,8 @@ if SONUC:
     <h3>Önümüzdeki haftalarda BEKLENEN düşüşler — panik yok</h3>
     <p class="alt" style="margin:8px 0 0">Üç düşüş bilinçli kararların sonucu ve karnede ayrı sayılıyor;
     Search Console′un toplam çizgisi bunlarla inecek. (1) <strong>Yenimahalle</strong>: 27.08′de siteden
-    kaldırıldı, önceki dönemde tıkın {ym_pay}′ü oradan geliyordu; sayfalar 410 döndükçe sıfırlanır.
-    (2) <strong>Yazılar</strong>: 24 genel yazı 07.08′de kapatıldı; son 28 günde yazı ailesi
+    kaldırıldı, önceki dönemde tıkın {ym_pay} kadarı oradan geliyordu; sayfalar 410 döndükçe sıfırlanır.
+    (2) <strong>Yazılar</strong>: 24 genel yazı 07.08′de kapatıldı; son {_gun} günde yazı ailesi
     {yazi_gos} gösterim / {yazi_tik} tık taşıyordu, o da eriyecek. (3) Eryaman dışı “nereye bağlı”
     sorguları için mahalle sayfalarındaki bilgi kutusu 17.08′de söküldü. Karnenin
     <strong>Eryaman satırı</strong> bu üçünden etkilenmez — ölçüt o.</p>
@@ -869,36 +958,13 @@ ana_org = ANA["sira"] if ANA else "?"
 ana_har = ANA.get("h", "?") if ANA else "?"
 ana_d = tr_tarih(ANA["d"]) if ANA else ""
 
-# --- YARIN NE YAPILACAK (31.08) -------------------------------------------
-# Karnede üç ayrı "sıradaki iş" listesi vardı ve hiçbiri kesişmiyordu: dizin
-# damlası paneli, dizin adayları tablosu ve zayıf halkalar. Okuyucu hangisinin
-# yapılacağını bilemiyordu — üstelik ikisi kotayı zaten dizinde olan sayfalara
-# harcatıyordu. Tek liste, tek sıralama, satır başına tek eylem.
-EYLEM = []
-# 1) hedef sorgu sayfası olan bayat mahalleler — en değerli kota
-for a_ in KUYRUK_OLU:
-    if a_["tur"] == "bayat taranmış":
-        EYLEM.append({"is": "Dizin isteği gönder", "hedef": a_["site"],
-                      "mah": a_["mah"], "neden": "hedef sorgu sayfası, bayat taranmış",
-                      "oncelik": 0})
-# 2) API ile ölü doğrulanmış site sayfaları
-for a_ in KUYRUK_OLU:
-    if a_["tur"] != "bayat taranmış":
-        EYLEM.append({"is": "Dizin isteği gönder", "hedef": a_["site"],
-                      "mah": a_["mah"], "neden": f"Google′da yok, {DONEM_GUNDE} sıfır gösterim",
-                      "oncelik": 1})
-EYLEM.sort(key=lambda x: x["oncelik"])
 # günlük dizin isteği kotası (betik parametresi, ölçüm değil). Adı bilerek
-# _gun değil: _gun yukarıda GSC dönemi (donem.gun) — ikisi karışınca
-# "28/gün ile biter" gibi sessiz bir yanlış çıkar.
-_kota_gun = 10
-eylem_html = "".join(
-    f'<li><span><strong>{esc(e["hedef"])}</strong> '
-    f'<span class="alt">{esc(MAH_AD.get(e["mah"], e["mah"]))} — {esc(e["neden"])}</span></span>'
-    f'<span class="chip {"kotu" if e["oncelik"] == 0 else "orta"}">{esc(e["is"])}</span></li>'
-    for e in EYLEM[:12]) or '<li class="alt">Kuyruk boş</li>'
-eylem_sayi = len(EYLEM)
-eylem_gun = -(-eylem_sayi // _kota_gun) if eylem_sayi else 0
+# _gun değil: _gun yukarıda GSC dönemi (pencere.gun) — ikisi karışınca
+# "28/gün ile biter" gibi sessiz bir yanlış çıkar. 02.09: is-takvimi.json da
+# aynı kotayla damla günlerini kuruyor; takvim varsa sayı ORADAN okunur ki iki
+# yerde ayrışmasın. ("Yarın ne yapılacak" listesi is-takvimi'ne taşındı — EYLEM
+# bloğu kaldırıldı; damla kuyruğu takvimin damla günlerinde adres adres duruyor.)
+_kota_gun = ((_IT or {}).get("damla") or {}).get("kota_gun") or 10
 
 # --- tıktan sonra (02.09, GA4 Data API) ------------------------------------
 # Karne sıra + GSC tık/TO gösteriyordu; gelenin sayfada ne yaptığı yoktu.
@@ -919,7 +985,10 @@ if _TS:
     tiksonrasi_html = f"""
   <h2>Tıktan sonra — gelen ne yapıyor</h2>
   <p class="not">Search Console tıkı sayar; Analytics tıktan sonrasını. Ev sahibi için asıl
-  sonuç <strong>temas</strong>: telefon, WhatsApp ya da form. Son {_TS['gun']} gün.</p>
+  sonuç <strong>temas</strong>: telefon, WhatsApp ya da form. Son {_TS['gun']} gün.
+  {pencere_satir(_TS.get('pencere'), ' (Analytics, dün dahil)', 'gün')}
+  <span class="alt">Analytics penceresi Search Console′unkiyle bilerek aynı değil: Analytics dünü verir,
+  Search Console 2-3 gün geriden gelir.</span></p>
   <div class="kartlar">
     <div class="kart"><div class="buyuk">{tr_sayi(_o['oturum'])}</div><div class="etiket">oturum · {tr_sayi(_o['kullanici'])} kullanıcı</div></div>
     <div class="kart"><div class="buyuk">{_o['ort_sure_sn']} sn</div><div class="etiket">ortalama oturum süresi</div></div>
@@ -991,7 +1060,7 @@ if _ST:
   <p class="not">Search Console′daki tek “tıklanma oranı” rakamı hangi sorguların gösterim alıp
   tık <strong>almadığını</strong> gizler. Son {_ST['gun']} günün ilk 1000 sorgusu niyetine göre
   ayrıldı; toplam {tr_sayi(_ST['toplam_gos'])} gösterim, {tr_sayi(_ST['toplam_tik'])} tık,
-  %{tr_sayi(_ST['to'], 2)}.</p>
+  %{tr_sayi(_ST['to'], 2)}. {pencere_satir(_ST.get('pencere'))}</p>
   <div class="tablo-kabuk"><table>
     <thead><tr><th>Sorgu sınıfı</th><th class="num">Sorgu</th><th class="num">Gösterim</th>
     <th class="num">Tık</th><th class="num">TO</th><th class="num">Konum</th><th>&nbsp;</th></tr></thead>
@@ -1002,7 +1071,7 @@ if _ST:
     <h3>Snippet makası — ilk 5′te ama tıklanmıyor</h3>
     <p class="alt" style="margin:8px 0 10px">Konumu 5 ve üstü, 40+ gösterim, TO %2′nin altında.
     Sıra sorunu değil, sonuçta görünen başlık/açıklama sorunu: bunlar title donukluğu
-    (5 Eylül) kalkınca ilk bakılacak sorgular.</p>
+    ({tr_tarih(_TITLE_DONUK) if _TITLE_DONUK else 'bitince'}) kalkınca ilk bakılacak sorgular.</p>
     <ul>{_mk}</ul>
   </div>
 """
@@ -1064,9 +1133,10 @@ else:
 # göstermiyordu. Ayrım kararı değiştiriyor: ada sayfaları adres sayısı olarak
 # site sayfaları kadar ama sayfa başına tıkları on üçte biri.
 try:
-    _TV = json.load(open("sayfa-turu-verimi.json"))["satirlar"]
+    _TVJ = json.load(open("sayfa-turu-verimi.json"))
+    _TV = _TVJ["satirlar"]
 except Exception:
-    _TV = None
+    _TVJ, _TV = None, None
 if _TV:
     _en = max(r["tik_sayfa"] for r in _TV) or 1
     _tv_satir = ""
@@ -1092,14 +1162,17 @@ if _TV:
                    f"Yine de sitemap′te kalıyorlar: 31.08 ölçümünde tarama bütçesi yemedikleri "
                    f"görüldü (bkz. Sıra nasıl iyileşir → Ada sayfalarını sitemap′ten çıkarmak) "
                    f"ve çıkarmanın ölçülmüş bir kazancı yok.")
-    # Dönem: sayfalar28.tsv sonuc-ozeti ile aynı GSC penceresi → donem.gun
-    _tv_donem = (f"Son {SONUC['donem']['gun']} gün, Search Console."
-                 if SONUC else "Search Console, son dönem.")
+    # Pencere: sayfa-turu-verimi.json kendi pencere'sini taşır (sayfalar28.tsv başlığı).
+    # 02.09'a kadar sonuc-ozeti'den ödünç alınıyordu ve iki dosya farklı pencerede
+    # çıkmıştı (sayfalar28 01.08–28.08, sonuc-ozeti 01.08–29.08) — ödünç yok.
+    _tv_p = _TVJ.get("pencere")
+    _tv_donem = (f"Son {_tv_p['gun']} gün, Search Console." if _tv_p
+                 else "Search Console; pencere ölçülmedi.")
     turverim_html = f"""
   <h2>Hangi sayfa ailesi trafiği taşıyor</h2>
   <p class="not">{_tv_donem} Kaldırılan Yenimahalle sayfaları hariç.
   Sütunlardan en önemlisi <strong>adres başına tık</strong> — toplam sayı çok adresli
-  aileleri olduğundan büyük gösterir.</p>
+  aileleri olduğundan büyük gösterir. {pencere_satir(_tv_p)}</p>
   <div class="tablo-kabuk"><table>
     <thead><tr><th>Aile</th><th class="num">Adres</th><th class="num">Gösterim</th>
     <th class="num">Tık</th><th class="num">Adres başına tık</th><th>&nbsp;</th></tr></thead>
@@ -1219,9 +1292,21 @@ if _GT:
                     if _hayalet else "")
     _hata_not = (f' <span class="alt">{_GT["denetlenemedi"]} sayfada Google API hata '
                  f'döndürdü, yeniden soruldu.</span>' if _GT["denetlenemedi"] else "")
-    # Dönem uzunluğu: gorunmez-teshis.json'un girdisi sayfalar28.tsv, sonuc-ozeti.json
-    # ile aynı GSC penceresi → gün sayısı oradan okunur (donem.gun); SONUC yoksa rakamsız.
-    _son_donem = f"Son {SONUC['donem']['gun']} günde" if SONUC else "Son dönemde"
+    # Pencere: gorunmez-teshis.json kendi pencere'sini yazar (üretici 02.09'da bunu
+    # öğrendi; bir sonraki koşuda alan dolar). Yoksa sonuc-ozeti'den ÖDÜNÇ ALINMAZ —
+    # 31.08 çekimi başka pencereydi (sayfalar28 01.08–28.08), "son 28 gün" yanlış olurdu.
+    _gt_p = _GT.get("pencere")
+    _son_donem = f"Son {_gt_p['gun']} günde" if _gt_p else "Ölçüm penceresinde"
+    _gt_pencere = pencere_satir(_gt_p)
+    # Gösterim/tık penceresi güncel çekimden (sayfalar28.tsv); dizin DURUMU (var/yok) ise
+    # API denetiminin yapıldığı günden. İki ayrı tarih, ikisi de basılır — 02.09 denetimi:
+    # pencere alanı dolunca denetim tarihi kayboluyordu, okuyucu "bugün soruldu" sanırdı.
+    if _GT.get("guncelleme"):
+        _gt_pencere += (f' <span class="alt">Dizin durumu (var/yok) {tr_tarih(_GT["guncelleme"])} tarihli '
+                        f'API denetiminden; gösterim ve tık güncel pencereden.</span>')
+    if not _gt_p:
+        _gt_pencere += (f' <span class="alt">gorunmez-teshis.json {tr_tarih(_GT.get("guncelleme"))} tarihli '
+                        f'denetimden; pencere alanı bir sonraki koşuda yazılır.</span>')
     # günlük dizin isteği kotası: eylem_gun ile aynı değişken ve formül
     _dz_gun = -(-_dz['n'] // _kota_gun) if _dz['n'] else 0
     teshis_html = f"""
@@ -1229,7 +1314,7 @@ if _GT:
   <p class="not">SERP turunda kendi adıyla ilk 10′a giremeyen {_sr['n'] + _dz['n']} sayfa
   Search Console′a tek tek soruldu. Çıkan sonuç karnenin eski varsayımını çevirdi:
   <strong>görünmemek her zaman dizin sorunu değil.</strong> İkisinin ilacı farklı, o yüzden
-  ayrı sayılıyorlar.{_hayalet_not}{_hata_not}</p>
+  ayrı sayılıyorlar.{_hayalet_not}{_hata_not} {_gt_pencere}</p>
   <div class="iki">
     <div class="pano">
       <h3>Sıra sorunu — {_sr['n']} sayfa</h3>
@@ -1518,9 +1603,10 @@ if _EE:
   <h2>“eryaman emlakçı” — gösterim, tık ve sırayı kim tutuyor</h2>
   <p class="not">Çatı sorgu. Yukarıdaki kart SERP sırasını söyler; bu bölüm Search Console′un
   aynı sorguda <strong>ne gösterip ne tıklattığını</strong> söyler.
-  {tr_tarih(_EE['baslangic'])}–{tr_tarih(_EE['son_veri_gunu'])}, {_EE['gun']} gün. Dikkat: Search
+  Bu bölümün penceresi öteki Search Console bölümlerinden <strong>bilerek uzun</strong> ({_EE['gun']} gün):
+  üç dönem yan yana okunuyor, karnenin standart penceresi ilk dönemi dışarıda bırakırdı. Dikkat: Search
   Console′un “konum”u burada harita kutusundaki işletme bağının konumudur, organik sıra
-  değil — organik sıra aşağıdaki pws=0 ölçümlerinden okunur.</p>
+  değil — organik sıra aşağıdaki pws=0 ölçümlerinden okunur. {pencere_satir(_EE.get('pencere'))}</p>
   <div class="kartlar">
     <div class="kart"><div class="buyuk">{tr_sayi(_et['gos'])}</div><div class="etiket">gösterim · {_EE['gun']} gün</div></div>
     <div class="kart"><div class="buyuk">{tr_sayi(_et['tik'])}</div><div class="etiket">tık</div></div>
@@ -1649,7 +1735,8 @@ if _AB:
   için mi?</strong> Bu bölüm ada hariç sayfalardan konum bandı başına bir tıklanma eğrisi kurar ve
   ada sayfalarının kendi bandında ne kadar tık getirmesi gerektiğini hesaplar.
   {tr_tarih(_ab_d['bas'])}–{tr_tarih(_ab_d['bit'])}, {_ab_d.get('veri_gun') or _ab_d['gun']} gün; Yenimahalle hariç
-  ({tr_sayi(_AB['yenimahalle_dusulen'])} satır düşüldü, {tr_sayi(_AB['kullanilan_satir'])} satır kullanıldı). {_kesik}</p>
+  ({tr_sayi(_AB['yenimahalle_dusulen'])} satır düşüldü, {tr_sayi(_AB['kullanilan_satir'])} satır kullanıldı). {_kesik}
+  {pencere_satir(_AB.get('pencere') or _ab_d)}</p>
   <div class="kartlar">
     <div class="kart"><div class="buyuk">{tr_sayi(_a['gos'])}</div><div class="etiket">ada gösterimi (sayfa×sorgu dökümü)</div></div>
     <div class="kart"><div class="buyuk">{tr_sayi(_a['tik'])}</div><div class="etiket">gerçek tık · beklenen {tr_sayi(_a['beklenen'], 1)}</div></div>
@@ -1799,6 +1886,12 @@ if _CZ:
                         f"<strong>%{tr_sayi(_ym['eryaman_telefon_gos_pay'], 1)}</strong> — {_ym_hukum}.")
     else:
         _cz_ym_cumle = "Yenimahalle hariç cihaz payı ölçülmedi."
+    _cz_p = _CZ.get("pencere") or _CZ.get("donem")
+    _cz_op = _CZ.get("onceki_pencere") or _CZ.get("onceki_donem")
+    _cz_pencere = pencere_satir(_cz_p)
+    if _cz_op and _cz_op.get("bas"):
+        _cz_pencere += (f' <span class="pencere">önceki pencere: {tr_tarih(_cz_op["bas"])}–{tr_tarih(_cz_op["bit"])}'
+                        f'{", " + str(_cz_op["gun"]) + " veri günü" if _cz_op.get("gun") else ""}</span>')
     cihaz_html = f"""
   <h2>Telefon mu, masaüstü mü</h2>
   <p class="not">Ev sahibi telefondan arıyor: son {_CZ['gun']} günde gösterimin
@@ -1806,7 +1899,7 @@ if _CZ:
   Başlık ve açıklama işi telefon ekranında görünene göre değerlendirilmeli. {_to_fark_cumle}
   Dönem {tr_tarih(_CZ['donem']['bas'])}–{tr_tarih(_CZ['donem']['bit'])}, Search Console son veri günü
   {tr_tarih(_CZ['son_veri_gunu'])}; mülk düzeyi, sayfa süzgeci yok — 27.08′de kaldırılan Yenimahalle
-  sayfalarının kalıntı gösterimi toplamın içinde. {_cz_ym_cumle}</p>
+  sayfalarının kalıntı gösterimi toplamın içinde. {_cz_ym_cumle} {_cz_pencere}</p>
   <div class="kartlar">
     <div class="kart"><div class="buyuk">%{tr_sayi(_mp['gos'], 1)}</div><div class="etiket">gösterimin telefon payı · önceki dönem %{tr_sayi(_mp['onceki_gos'], 1)}</div></div>
     <div class="kart"><div class="buyuk">%{tr_sayi(_mp['tik'], 1)}</div><div class="etiket">tıkın telefon payı · önceki dönem %{tr_sayi(_mp['onceki_tik'], 1)}</div></div>
@@ -1830,6 +1923,290 @@ if _CZ:
 else:
     cihaz_html = ""
 
+
+# =============================================================================
+# 02.09 — ÜÇ YENİ BÖLÜM: yönetici özeti, zaman içinde, iş takvimi
+# Ortak kural: rakam üreticinin JSON'undan; fark yoksa "7 gün önce ölçülmedi".
+# =============================================================================
+_BIRIM_FARK = {"%": "puan", "adet": "", "sorgu": "sorgu", "sn": "sn", "sıra": "sıra", "oran": "", "tık": "tık",
+               "temas": "temas", "sayfa": "sayfa", "puan": "puan"}
+
+def _fark_chip(f):
+    """7 günlük fark oku: ▲/▼ + fark + birim. Renk üreticinin yön hükmünden (iyi/kötü/nötr).
+    "Ölçüm yöntemi değişti" işaretliyse renk basılmaz — rakam gerçek hareket değil
+    (SERP serisinde 27.08 öncesi nokta başka ölçüm rejiminden)."""
+    if not f or f.get("deger") is None:
+        return '<span class="chip nul">7 gün önce ölçülmedi</span>'
+    d = f["deger"]
+    ok = "▲" if d > 0 else ("▼" if d < 0 else "▬")
+    cls = {"iyi": "iyi", "kötü": "kotu"}.get(f.get("yon"), "nul")
+    isaret = "+" if d > 0 else ("−" if d < 0 else "")
+    birim = _BIRIM_FARK.get(f.get("birim") or "", f.get("birim") or "")
+    yontem = " · yöntem değişti" if f.get("olcum_yontemi_degisti") else ""
+    return (f'<span class="chip {cls}" title="{esc(f.get("not") or "")}">{ok} {isaret}'
+            f'{tr_sayi(abs(d), _ondalik(d))}{(" " + birim) if birim else ""}{yontem}</span>')
+
+# --- YÖNETİCİ ÖZETİ ---------------------------------------------------------
+# Karne 14 bölüm; Özgün'ün ilk 10 saniyede görmesi gereken altı rakam en üstte.
+# Üretici: yonetici-ozeti-uret.py (6 rakam, "ne demek" cümlesi, kaynak, 7 günlük
+# fark); fark karne-gecmis-ozet.json'dan gelir. Yapılan/beklenen iki sütun.
+def _baslik_duzelt(t):
+    """PROTOKOL başlıkları çoğunlukla BÜYÜK HARF; listede bağırmasın.
+    str.lower() Türkçe İ'yi iki karaktere bozar (tranahtar vakası) — İ→i, I→ı elle.
+    Yalnız harflerinin ≥%70'i büyük olan başlık çevrilir (karışık olan olduğu gibi
+    kalır), kısaltmalar korunur, ilk harf yeniden büyütülür."""
+    harf = [c for c in t if c.isalpha()]
+    if not harf or sum(c.isupper() for c in harf) / len(harf) < 0.7:
+        return t
+    kucuk = t.replace("İ", "i").replace("I", "ı").lower()
+    # I→ı kuralı İngilizce sözcükleri bozar (CANONICAL → canonıcal, API → apı, SITEMAP →
+    # sıtemap): kısaltma ve Latin sözcük listesi ı'sız biçimiyle eşleştirilir.
+    KISALTMA = {"ga4", "pr", "api", "gsc", "serp", "seo", "url", "h1", "tsv", "json", "gbp",
+                "cwv", "psi", "utm", "to", "keos", "tkgm", "ga", "id", "dmca", "spk"}
+    LATIN = {"canonical", "sitemap", "workflow", "snippet", "title", "description", "indexnow",
+             "search", "console", "analytics", "meta", "chrome", "google", "matterport", "yandex",
+             "bing", "instagram", "facebook", "whatsapp", "commit", "merge", "cron", "script",
+             "sitelinks", "residence", "tower", "city", "park", "loft"}
+    def _tok(m):
+        tok = m.group(0); norm = tok.replace("ı", "i")
+        return norm.upper() if norm in KISALTMA else (norm if norm in LATIN else tok)
+    kucuk = re.sub(r"[a-zçğıöşü0-9]+", _tok, kucuk)
+    for i, c in enumerate(kucuk):
+        if c.isalpha():
+            bas = "İ" if c == "i" else ("I" if c == "ı" else c.upper())
+            return kucuk[:i] + bas + kucuk[i + 1:]
+    return kucuk
+
+yonetici_html = ""
+if _YO:
+    _yo_kart = ""
+    for r in _YO["rakamlar"]:
+        f = r.get("fark_7g")
+        _kiyas = (f' <span class="alt">{tr_tarih(f["kiyas_tarihi"])} tarihine göre</span>' if f else "")
+        _yo_kart += (f'<div class="kart yo"><div class="buyuk">{esc(r["gosterim"])}</div>'
+                     f'<div class="etiket">{esc(r["baslik"])}</div>'
+                     f'<div class="fark">{_fark_chip(f)}{_kiyas}</div>'
+                     f'<p class="alt">{esc(r["ne_demek"])}</p></div>')
+    _yo_yapilan = ""
+    for g in _YO.get("bu_hafta_yapilan") or []:
+        _liste = "".join(f'<li>{esc(_baslik_duzelt(b))}</li>' for b in g["basliklar"])
+        _yo_yapilan += (f'<li><span><strong>{esc(g["tarih"])}</strong> '
+                        f'<span class="alt">{g["baslik_sayisi"]} başlık</span><ul class="ic">{_liste}</ul></span></li>')
+    _yo_yapilan = _yo_yapilan or '<li class="alt">Son 7 günde defterde tarihli başlık yok.</li>'
+    _yo_beklenen = ""
+    for b in _YO.get("bu_hafta_beklenen") or []:
+        m = b["metin"]
+        if b.get("tarih") and m.startswith(b["tarih"]):
+            m = m[len(b["tarih"]):].lstrip(" —–-")  # tarih zaten kalın basılıyor, iki kez yazılmasın
+        _yo_beklenen += (f'<li><span><strong>{esc(b["tarih"] or "Süregelen")}</strong> — {esc(m)}'
+                         f'<span class="kkaynak" style="display:block">{esc(b.get("kaynak") or "")}</span></span></li>')
+    _yo_beklenen = _yo_beklenen or '<li class="alt">Beklenen madde yok.</li>'
+    _yo_uyari = "".join(f'<li><span>{esc(u)}</span></li>' for u in _YO.get("uyarilar") or [])
+    _yo_g = _YO.get("gecmis") or {}
+    _yo_seri = (f'Fark {_yo_g.get("kayit")} günlük seriden ({(_GO or {}).get("seri_bas") and tr_tarih(_GO["seri_bas"])}'
+                f'–{(_GO or {}).get("seri_bit") and tr_tarih(_GO["seri_bit"])}).' if _GO and _yo_g.get("kayit") else
+                "Zaman serisi henüz yok; fark okları seri birikince dolar.")
+    yonetici_html = f"""
+  <h2 class="ilk">Yönetici özeti</h2>
+  <p class="not">Karnenin altı ana rakamı. Oklar yedi gün önceki değere göre değişimi gösterir;
+  yeşil iyi, kırmızı kötü, gri ya ölçülmedi ya da ölçüm yöntemi değişti. {_yo_seri}
+  {pencere_satir(_SONUC_P, ' (Search Console)')}
+  {pencere_satir((_TS or {}).get('pencere'), ' (Analytics, dün dahil)', 'gün')}</p>
+  <div class="kartlar yo">{_yo_kart}</div>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Bu hafta yapıldı</h3>
+      <ul>{_yo_yapilan}</ul>
+      <p class="alt" style="margin:10px 0 0">{esc(_YO.get("bu_hafta_yapilan_kurali") or "")}</p>
+    </div>
+    <div class="pano">
+      <h3>Bekleniyor</h3>
+      <ul>{_yo_beklenen}</ul>
+    </div>
+  </div>
+  <details style="margin-top:12px"><summary><strong>Veri uyarıları</strong> <span class="alt">({len(_YO.get("uyarilar") or [])})</span></summary>
+    <ul class="duz">{_yo_uyari or '<li class="alt">Uyarı yok.</li>'}</ul>
+  </details>
+"""
+
+# --- ZAMAN İÇİNDE ------------------------------------------------------------
+# Karne anlık görüntüydü; üreticiler JSON'larının üstüne yazdığı için dünkü değer
+# kayboluyordu. Üretici: anlik-goruntu-uret.py → karne-gecmis-ozet.json (metrik
+# başına son 8 gün, tam D-7 kıyası). Sparkline tek renk, son nokta vurgulu;
+# o gün karnede basılmamış (ham veriden sonradan hesaplanan) noktalar açık renk.
+_ZAMAN_GRUP = [
+    ("SERP turu (pws=0)", ("ilk3_pay", "dogru_sayfa_pay", "ilk10_disi", "hedef_ilk3", "hedef_kutuda", "hedef_disi")),
+    ("Search Console, 28 veri günü", ("gsc_tik_28", "gsc_gos_28", "gsc_to_28", "gsc_konum_28", "eryaman_tik_28")),
+    ("Analytics, 28 gün", ("ga4_oturum_28", "ga4_sure", "ga4_hemen", "phone_click_28", "whatsapp_click_28")),
+    ("İş durumu", ("ada_beklenti_orani", "damla_acik", "dizin_disi_sayisi", "veri_saglik_agir")),
+]
+
+def _sparkline(degerler, tarihler):
+    W, H, P = 132, 34, 5
+    pts = [(i, v) for i, v in enumerate(degerler) if v is not None]
+    if not pts:
+        return '<span class="alt">seri yok</span>'
+    vs = [v for _, v in pts]
+    lo, hi = min(vs), max(vs)
+    span = (hi - lo) or 1
+    n = max(len(degerler) - 1, 1)
+
+    def xy(i, v):
+        return (P + i * (W - 2 * P) / n, H - P - (v - lo) * (H - 2 * P) / span)
+
+    # ardışık günleri birleştir; boş gün çizgiyi kırar (uydurma ara değer yok)
+    parcalar, seg, onceki_i = [], [], None
+    for i, v in pts:
+        if onceki_i is not None and i != onceki_i + 1:
+            parcalar.append(seg); seg = []
+        seg.append(xy(i, v)); onceki_i = i
+    parcalar.append(seg)
+    cizgi = "".join('<polyline points="' + " ".join(f"{x:.1f},{y:.1f}" for x, y in sg) + '"/>'
+                    for sg in parcalar if len(sg) >= 2)
+    son_i = pts[-1][0]
+    nokta = ""
+    for i, v in pts:
+        x, y = xy(i, v)
+        t = tarihler[i] if i < len(tarihler) else ""
+        cls = "son" if i == son_i else ("anlik" if t in _ANLIK_GUNLER else "geri")
+        nokta += (f'<circle class="{cls}" cx="{x:.1f}" cy="{y:.1f}" r="{3.8 if i == son_i else 2.3}">'
+                  f'<title>{tr_tarih(t)}: {tr_sayi(v, _ondalik(v))}</title></circle>')
+    return (f'<svg class="spark" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
+            f'aria-label="son {len(degerler)} gün">{cizgi}{nokta}</svg>')
+
+def _deger_yaz(v, birim, nd):
+    if v is None:
+        return "—"
+    t = tr_sayi(v, nd)
+    return {"%": f"%{t}", "sn": f"{t} sn", "oran": f"×{t}"}.get(birim, t)
+
+zaman_html = ""
+if _GO:
+    _M = _GO["metrikler"]
+    _z_satir = ""
+    _UST = "¹²³⁴⁵⁶⁷⁸⁹"
+    for grup, anahtarlar in _ZAMAN_GRUP:
+        _z_satir += f'<tr class="grup"><td colspan="5">{esc(grup)}</td></tr>'
+        # Aynı not (ör. "iki uç farklı kaynaktan…") gruptaki her satırda yineleniyordu;
+        # grup içinde bir kez dipnot olarak basılır, satırda yalnız üst simge durur.
+        _dipnot = []
+        for k in anahtarlar:
+            m = _M.get(k)
+            if not m:
+                continue
+            nd = _ondalik(m.get("son"), m.get("onceki"))
+            # rejim işareti: SERP serisinde önceki nokta 27.08 öncesi turdan mı (bölge turu payı)
+            # Rejim hükmü üreticiden (olcum_yontemi_degisti: SERP'te bölge turu payı, hedef
+            # sorgularda kanal etiketi payı ≥50 puan ayrışınca). Eski özet JSON'da alan yoksa
+            # SERP kuralı burada yinelenir.
+            rejim = m.get("olcum_yontemi_degisti")
+            if rejim is None:
+                rejim = (m.get("onceki_bolge_turu_pay") is not None and m.get("son_bolge_turu_pay") is not None
+                         and abs(m["son_bolge_turu_pay"] - m["onceki_bolge_turu_pay"]) >= 50)
+            f = ({"deger": m["fark"], "yon": "nötr" if rejim else m.get("yon"), "birim": m.get("birim"),
+                  "olcum_yontemi_degisti": rejim, "not": m.get("not")} if m.get("fark") is not None else None)
+            _not = ""
+            if m.get("not"):
+                if m["not"] not in _dipnot:
+                    _dipnot.append(m["not"])
+                _not = f'<sup title="{esc(m["not"])}">{_UST[_dipnot.index(m["not"]) % len(_UST)]}</sup>'
+            _onc = (f'{_deger_yaz(m["onceki"], m.get("birim"), nd)}<small>{tr_tarih(m.get("onceki_tarih"))}</small>'
+                    if m.get("onceki") is not None else '<span class="alt">—</span>')
+            _z_satir += (f'<tr><td><strong>{esc(m["ad"])}</strong>{_not}</td>'
+                         f'<td>{_sparkline(m.get("sparkline") or [], m.get("sparkline_tarihler") or [])}</td>'
+                         f'<td class="num">{_deger_yaz(m["son"], m.get("birim"), nd)}</td>'
+                         f'<td class="num">{_onc}</td><td>{_fark_chip(f)}</td></tr>')
+        if _dipnot:
+            _z_satir += ('<tr class="dipnot"><td colspan="5">' + " ".join(
+                f'<span>{_UST[j % len(_UST)]} {esc(n)}</span>' for j, n in enumerate(_dipnot)) + '</td></tr>')
+    _pn = _GO.get("pencere_notu") or {}
+    _z_notlar = "".join(f'<li><span><strong>{esc(k.upper() if k in ("gsc", "ga4") else k)}</strong>: {esc(v)}</span></li>'
+                        for k, v in _pn.items())
+    _sa = _SON_ANLIK or {}
+    _z_tarihler = (_M.get("gsc_tik_28") or {}).get("sparkline_tarihler") or []
+    _z_aralik = f"{tr_tarih(_z_tarihler[0])}–{tr_tarih(_z_tarihler[-1])}" if _z_tarihler else ""
+    _ss = _GO.get("satir_sayisi") or {}
+    zaman_html = f"""
+  <h2>Zaman içinde</h2>
+  <p class="not">Her metrik için son {len(_z_tarihler) or 8} gün ({_z_aralik}); seri {tr_tarih(_GO.get("seri_bas"))} tarihinden
+  beri birikiyor ({_ss.get("anlik", 0)} gün karnede basılan değer, {_ss.get("geri_doldurma", 0)} gün ham veriden sonradan
+  hesaplanan). Çizgideki <strong>koyu nokta</strong> o gün karnede basılan değer, <strong>açık nokta</strong> sonradan
+  hesaplanan; büyük nokta bugün. Boş gün çizgiyi kırar, ara değer uydurulmaz.
+  {pencere_satir(_sa.get('gsc_pencere'), ' (Search Console)')}
+  {pencere_satir(_sa.get('ga4_pencere'), ' (Analytics, dün dahil)', 'gün')}</p>
+  <div class="tablo-kabuk zaman"><table>
+    <thead><tr><th>Metrik</th><th>Son 8 gün</th><th class="num">Bugün</th><th class="num">7 gün önce</th><th>Fark</th></tr></thead>
+    <tbody>{_z_satir}</tbody>
+  </table></div>
+  <details style="margin-top:12px"><summary><strong>Pencere ve yöntem notları</strong> <span class="alt">(üreticiden)</span></summary>
+    <ul class="duz">{_z_notlar}</ul>
+  </details>
+"""
+
+# --- İŞ TAKVİMİ — "Yarın ne yapılacak"ın yerine ------------------------------
+# Eski bölüm yalnız damla kuyruğunu listeliyordu; tarihe bağlı öbür işler (title
+# donmasının bitişi, PR etkisi ölçümleri, GA4 ilk okuma, beklenen düşüş sınaması)
+# defterde dağınık duruyor ve unutuluyordu. Üretici: is-takvimi-uret.py — tarihler
+# veriden/git'ten türetilir. Damla günlerinin adres listesi satırın içinde kalır.
+takvim_html = ""
+if _IT:
+    _org = lambda v: f"{v}." if isinstance(v, int) else str(v)
+    _it_satir, _onceki_tarih = "", None
+    for i in _IT["isler"]:
+        ayr, ek = i.get("ayrinti"), ""
+        if isinstance(ayr, list) and ayr and "url" in ayr[0]:
+            ek = (f'<details class="ic"><summary>{len(ayr)} adres — sırayla</summary><ul>'
+                  + "".join(f'<li><code>{esc(a["url"].split("/mahalleler/")[-1])}</code> '
+                            f'<span class="alt">{esc(a.get("durum") or "")}</span></li>' for a in ayr)
+                  + '</ul></details>')
+        elif isinstance(ayr, list) and ayr and "sorgu" in ayr[0]:
+            ek = (f'<details class="ic"><summary>{len(ayr)} sorgu — kutu durumu</summary><ul>'
+                  + "".join(f'<li><strong>{esc(a["sorgu"])}</strong> <span class="alt">{esc(a.get("kutu_yon") or "")} · '
+                            f'organik {esc(_org(a.get("organik_sira")))} · ölçüm {tr_tarih(a.get("olcum"))}</span></li>' for a in ayr)
+                  + '</ul></details>')
+        elif isinstance(ayr, str) and ayr:
+            ek = f'<span class="alt" style="display:block;margin-top:4px">{esc(ayr)}</span>'
+        tarih_h = "" if i["tarih_tr"] == _onceki_tarih else f'<strong>{esc(i["tarih_tr"])}</strong>'
+        _onceki_tarih = i["tarih_tr"]
+        kim_cls = "claude" if i.get("kim") == "Claude" else "ozgun"
+        _it_satir += (f'<tr><td class="tarih">{tarih_h}</td>'
+                      f'<td>{esc(i["is"])}{ek}</td>'
+                      f'<td class="alt">{esc(i["neden"])}<span class="kkaynak" style="display:block">{esc(i.get("kaynak") or "")}</span></td>'
+                      f'<td><span class="kim {kim_cls}">{esc(i.get("kim") or "?")}</span></td></tr>')
+    _d = _IT.get("damla") or {}
+    _it_uyari = "".join(f'<li><span>{esc(u)}</span></li>' for u in _IT.get("uyarilar") or [])
+    _isler = _IT["isler"]
+    _kim_say = {}
+    for i in _isler:
+        _kim_say[i.get("kim")] = _kim_say.get(i.get("kim"), 0) + 1
+    _kim_cumle = " · ".join(f"{k} {n}" for k, n in _kim_say.items())
+    _damla_cumle = ""
+    if _d.get("acik") is not None:
+        _damla_cumle = (f' Damla kuyruğunda {tr_sayi(_d["acik"])} açık sayfa: günde ~{_d.get("kota_gun")} istekle '
+                        f'{tr_tarih(_d.get("bitis_kota"))} biter; gözlenen tempo günde {tr_sayi(_d.get("ortalama_istek"), 1)} istek, '
+                        f'o tempoyla {tr_tarih(_d.get("bitis_gozlenen"))}. Bitmiş {tr_sayi(_d.get("bitmis"))} kayıt: '
+                        f'{tr_sayi(_d.get("kendiliginden_dizine_giren"))} tanesi istek olmadan dizine girdi, '
+                        f'{tr_sayi(_d.get("yeniden_denetimde_dizinde"))} tanesi yeniden denetimde zaten dizindeydi.')
+    takvim_html = f"""
+  <h2>İş takvimi</h2>
+  <p class="not">Tarihe bağlı her iş tek listede: <strong>{len(_isler)} iş</strong>,
+  {esc(_isler[0]["tarih_tr"]) if _isler else ""} – {esc(_isler[-1]["tarih_tr"]) if _isler else ""} ({_kim_cumle}).
+  Damla günlerinin adres listesi satırın içinde.{_damla_cumle}</p>
+  <div class="tablo-kabuk takvim"><table>
+    <thead><tr><th>Tarih</th><th>İş</th><th>Neden</th><th>Kim</th></tr></thead>
+    <tbody>{_it_satir}</tbody>
+  </table></div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Takvim uyarıları</h3>
+    <ul>{_it_uyari or '<li class="alt">Uyarı yok.</li>'}</ul>
+    <p class="alt" style="margin:10px 0 0">Tam kuyruk: <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code> ·
+    takvim üreticisi <code>is-takvimi-uret.py</code>, {tr_tarih(_IT.get("guncelleme"))}.</p>
+  </div>
+"""
+
+# 02.09 denetimi: başlık kartlarındaki "sorguların ilk 3′te olduğu oran" kartı kaldırıldı —
+# aynı rakam (%{ilk3}) yönetici özetinin 1. kartında aynı hesapla (504 tabanı) basılıyor;
+# iki kez görünmesi okuyucuya iki ayrı ölçüm gibi geliyordu. TOPLAM_I3 hesabı duruyor.
 HTML = f"""<title>Bulunabilirlik Karnesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -1955,6 +2332,39 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
 :root[data-theme="dark"] .t1, .t3 {{ font-weight:600 }}
 .t3 {{ background:var(--kotu-z); color:var(--kotu) }}
 .dip {{ margin-top:40px; padding-top:14px; border-top:1px solid var(--cizgi); color:var(--m3); font-size:13px }}
+/* 02.09: yönetici özeti, zaman içinde, iş takvimi, pencere satırı */
+h2.ilk {{ margin-top:26px }}
+.pencere {{ display:inline-block; margin-top:4px; font-size:12.5px; color:var(--m2); font-variant-numeric:tabular-nums;
+            border:1px solid var(--cizgi); border-radius:4px; padding:1px 8px; background:var(--yuzey) }}
+.kartlar.yo {{ grid-template-columns:repeat(auto-fit,minmax(290px,1fr)) }}
+.kart.yo .fark {{ margin-top:8px; display:flex; flex-wrap:wrap; gap:6px; align-items:center }}
+.kart.yo p.alt {{ margin:8px 0 0; font-size:13px; line-height:1.45 }}
+.pano li ul.ic {{ list-style:disc; padding-left:18px; margin:4px 0 0; font-size:13.5px; color:var(--m2) }}
+.pano li ul.ic li {{ display:list-item; border:0; padding:2px 0 }}
+ul.duz {{ margin:0; padding:10px 0 12px 18px; font-size:13.5px; color:var(--m2) }}
+ul.duz li {{ padding:3px 0 }}
+.spark {{ display:block }}
+.spark polyline {{ fill:none; stroke:var(--lacivert); stroke-width:1.6; stroke-linejoin:round; stroke-linecap:round }}
+.spark circle.anlik {{ fill:var(--lacivert) }}
+.spark circle.geri {{ fill:var(--lacivert-2); opacity:.55 }}
+.spark circle.son {{ fill:var(--lacivert); stroke:var(--yuzey); stroke-width:1.5 }}
+tr.grup td {{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3); font-weight:600;
+              background:var(--zemin); padding:8px 14px }}
+.zaman td.num {{ font-size:17px }}
+.zaman sup {{ color:var(--m3); font-size:11px; margin-left:3px; cursor:help }}
+.zaman tr.dipnot td {{ font-size:12.5px; color:var(--m3); padding:6px 14px 10px; line-height:1.5 }}
+.zaman tr.dipnot td span {{ display:block }}
+.zaman td.num small {{ font-family:"Source Sans 3",sans-serif; font-size:12px; font-weight:400; color:var(--m3); display:block }}
+.kim {{ display:inline-block; padding:2px 10px; border-radius:99px; font-size:12.5px; font-weight:700; letter-spacing:.02em; white-space:nowrap }}
+.kim.claude {{ background:var(--lacivert-3); color:var(--lacivert) }}
+.kim.ozgun {{ background:var(--orta-z); color:var(--orta-r); border:1px solid var(--orta-r) }}
+.takvim table {{ min-width:860px }}
+.takvim td {{ vertical-align:top; font-size:14.5px }}
+.takvim td.tarih {{ white-space:nowrap; font-variant-numeric:tabular-nums }}
+.takvim details.ic {{ margin:6px 0 0; padding:0 10px; background:var(--zemin) }}
+.takvim details.ic summary {{ padding:6px 0; font-size:13px }}
+.takvim details.ic ul {{ margin:0; padding:6px 0 8px 16px; font-size:13px }}
+.takvim code, .pano code {{ font-size:12.5px }}
 @media (prefers-reduced-motion:no-preference) {{ details {{ transition:border-color .15s }} }}
 </style>
 <div class="sarici" lang="tr">
@@ -1965,17 +2375,20 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   </header>
   <p class="not">Tüm ölçümler kişiselleştirmesiz Google aramasıyla yapılır (pws=0, Türkiye).
   Google ilk ~10 sonucu gösterir; “görünmez” = ilk 10′da yok demektir. Harita kutusu organikten ayrı sayılır.</p>
+{yonetici_html}
+{zaman_html}
 
+  <h2>Sıra ölçümü — başlık kartları</h2>
   <div class="kartlar">
     <div class="kart"><div class="buyuk">{TOPLAM_N}</div><div class="etiket">site sorgusu ölçüldü · {MAH_TAMAM}/{MAH_TOPLAM} mahalle {'TAMAM' if MAH_TAMAM == MAH_TOPLAM else 'tamam'}</div></div>
-    <div class="kart"><div class="buyuk">%{yuzde(TOPLAM_I3, TOPLAM_N)}</div><div class="etiket">sorguların ilk 3′te olduğu oran</div></div>
     <div class="kart"><div class="buyuk">{TOPLAM_BIR}</div><div class="etiket">sorguda organik 1. sıradayız</div></div>
     <div class="kart vurgu"><div class="buyuk">{ana_org}<small>. sıra</small></div><div class="etiket">“eryaman emlakçı” organik (harita {ana_har}.) · {ana_d}</div></div>
   </div>
 
   <h2>Gerçek sonuç — tıklama</h2>
   <p class="not">Sıra tek başına yanıltıcı: yukarıdaki sıralar iyileşirken tıklama başka yöne gidebilir.
-  Bu bölüm Google Search Console′un gerçek rakamlarını gösterir ({donem_notu}).</p>
+  Bu bölüm Google Search Console′un gerçek rakamlarını gösterir ({donem_notu}).
+  {sonuc_pencere}</p>
   {sonuc_html}
 {hedefsorgu_html}
 {eryamanemlakci_html}
@@ -2135,14 +2548,7 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
     <ul>{sira_sorun_html}</ul>
   </div>
 
-  <h2>Yarın ne yapılacak</h2>
-  <p class="not">Karnede üç ayrı “sıradaki iş” listesi vardı ve hiçbiri kesişmiyordu;
-  ikisi de kotayı zaten Google′da olan sayfalara harcatıyordu. Tek liste bu:
-  <strong>{eylem_sayi} iş</strong>, günlük ~{_kota_gun} istek kotasıyla yaklaşık {eylem_gun} gün.
-  Her satır Search Console′a tek tek sorulup doğrulandı.</p>
-  <div class="pano"><ul>{eylem_html}</ul>
-  <p class="alt" style="margin:10px 0 0">Tam liste:
-  <code>scratchpad-karne/pws0/DIZIN-DAMLASI-31-08.md</code></p></div>
+{takvim_html}
 
 {tiksonrasi_html}
 {sorgusinif_html}

@@ -118,17 +118,24 @@ def fark(simdi, once):
     }
 
 
-# --- 1) GSC'nin son veri günü ---------------------------------------------
+# --- 1) GSC'nin son veri günü ve pencere -------------------------------------
+# PENCERE KURALI (02.09; pencere.py / gsc-api.mjs ile aynı): son veri günü date
+# boyutundan; pencere geriye GUN VERİ günü (takvim günü değil — mülk düzeyinde her
+# günün satırı var, ikisi şimdilik aynı, ama kural tek olsun diye veri günü sayılır).
 bugun = dt.date.today()
-gunler = gsc(bugun - dt.timedelta(days=10), bugun, "date")
+gunler = sorted(dt.date.fromisoformat(r[3][0]) for r in gsc(bugun - dt.timedelta(days=2 * GUN + 14), bugun, "date"))
 if not gunler:
-    sys.exit("GSC son 10 günde hiç satır döndürmedi; pencere kurulamadı")
-SON_VERI = max(dt.date.fromisoformat(r[3][0]) for r in gunler)
+    sys.exit("GSC hiç satır döndürmedi; pencere kurulamadı")
+SON_VERI = gunler[-1]
 
-bit = SON_VERI
-bas = bit - dt.timedelta(days=GUN - 1)
-o_bit = bas - dt.timedelta(days=1)
-o_bas = o_bit - dt.timedelta(days=GUN - 1)
+dilim = gunler[-GUN:]
+bit, bas = dilim[-1], dilim[0]
+o_dilim = gunler[:-GUN][-GUN:]
+if o_dilim:
+    o_bit, o_bas = o_dilim[-1], o_dilim[0]
+else:   # mülk henüz iki pencere dolusu veri biriktirmedi: önceki dönem yok, rakam uydurulmaz
+    o_bit = bas - dt.timedelta(days=1)
+    o_bas = o_bit
 
 # GSC mülkünün verisi 25.06'da başlıyor (karne 31.08 düzeltmesi): önceki pencere
 # mülkün ilk ayına değiyorsa dönem farkı büyümeyi değil rampayı ölçer.
@@ -234,6 +241,9 @@ cikti = {
     "kaynak": "GSC Search Analytics API, mülk düzeyi, boyut=device (gsc-q.mjs)",
     "son_veri_gunu": SON_VERI.isoformat(),
     "gun": GUN,
+    # pencere: bütün üreticilerde aynı ad/biçim (pencere.py); donem eski ad, karne onu okuyor.
+    "pencere": {"bas": bas.isoformat(), "bit": bit.isoformat(), "gun": len(dilim)},
+    "onceki_pencere": {"bas": o_bas.isoformat(), "bit": o_bit.isoformat(), "gun": len(o_dilim)},
     "donem": {"bas": bas.isoformat(), "bit": bit.isoformat()},
     "onceki_donem": {"bas": o_bas.isoformat(), "bit": o_bit.isoformat(), "rampa": rampa},
     "cihazlar": cihazlar,

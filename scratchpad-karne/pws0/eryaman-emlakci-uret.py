@@ -328,6 +328,9 @@ uyari = (f"Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür;
 cikti = {
     "guncelleme": BUGUN.isoformat(), "sorgu": SORGU, "kaynak": kaynak,
     "baslangic": BASLANGIC.isoformat(), "son_veri_gunu": SON.isoformat(), "gun": len(seri),
+    # pencere: bütün üreticilerde aynı ad/biçim (pencere.py). Bu seri 28 günlük pencere DEĞİL,
+    # 27.07'den GSC'nin son veri gününe kadar her gün; gun = serideki gün sayısı.
+    "pencere": {"bas": BASLANGIC.isoformat(), "bit": SON.isoformat(), "gun": len(seri)},
     "toplam": toplam, "haftalar": haftalar, "donemler": donemler, "sayfalar": sayfalar,
     "utm": utm, "serp": serp, "aciklama_commit": aciklama_commit, "title_donuk": TITLE_DONUK.isoformat(),
     "gunluk": seri, "notlar": notlar, "uyari": uyari,

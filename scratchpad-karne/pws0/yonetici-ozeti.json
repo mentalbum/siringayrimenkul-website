@@ -1,0 +1,249 @@
+{
+ "guncelleme": "2026-09-02",
+ "rakamlar": [
+  {
+   "k": "ilk3_pay",
+   "baslik": "Site sorgularında ilk 3",
+   "deger": 69,
+   "birim": "%",
+   "gosterim": "%69",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 347. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
+   "ayrinti": {
+    "sorgu": 504,
+    "ilk3": 347
+   },
+   "fark_7g": {
+    "deger": 10.9,
+    "onceki": 57.8,
+    "son": 68.7,
+    "kiyas_tarihi": "2026-08-26",
+    "gun": 7,
+    "birim": "puan",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": true,
+    "seri": [
+     "ilk3_pay"
+    ],
+    "not": "ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil"
+   }
+  },
+  {
+   "k": "dogru_sayfa_pay",
+   "baslik": "İlk 3 içinde doğru sayfa",
+   "deger": 73,
+   "birim": "%",
+   "gosterim": "%73",
+   "ne_demek": "İlk 3 sırada olduğumuz 347 sorgunun 252 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "kaynak": "dogru-sayfa.json",
+   "ayrinti": {
+    "ilk3_dogru": 252,
+    "ilk3_toplam": 347,
+    "guncelleme": "2026-09-02"
+   },
+   "fark_7g": {
+    "deger": -23.3,
+    "onceki": 95.9,
+    "son": 72.6,
+    "kiyas_tarihi": "2026-08-26",
+    "gun": 7,
+    "birim": "puan",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": true,
+    "seri": [
+     "dogru_sayfa_pay"
+    ],
+    "not": "ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil"
+   }
+  },
+  {
+   "k": "gsc_eryaman_tik",
+   "baslik": "Google′dan gelen tık (Eryaman)",
+   "deger": 1645,
+   "birim": "tık",
+   "gosterim": "1.645",
+   "ne_demek": "Son 28 günde (04.08–31.08) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 83.526 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
+   "kaynak": "sonuc-ozeti.json (ayrim.eryaman.simdi)",
+   "ayrinti": {
+    "gos": 83526,
+    "donem": {
+     "bas": "2026-08-04",
+     "bit": "2026-08-31",
+     "gun": 28
+    },
+    "uretim": "2026-09-02",
+    "toplam_tik": 2446
+   },
+   "fark_7g": {
+    "deger": -67,
+    "onceki": 1712,
+    "son": 1645,
+    "kiyas_tarihi": "2026-08-26",
+    "gun": 7,
+    "birim": "tık",
+    "yon": "kötü",
+    "olcum_yontemi_degisti": false,
+    "seri": [
+     "eryaman_tik_28"
+    ],
+    "not": null
+   }
+  },
+  {
+   "k": "ga4_temas",
+   "baslik": "Siteden gelen temas",
+   "deger": 18,
+   "birim": "temas",
+   "gosterim": "18",
+   "ne_demek": "Son 28 günde ziyaretçinin bizimle kurduğu temas: 11 telefon, 7 WhatsApp, 0 form (GA4; 2.396 oturum içinden).",
+   "kaynak": "tik-sonrasi.json (temas)",
+   "ayrinti": {
+    "telefon": 11,
+    "whatsapp": 7,
+    "form": 0,
+    "oturum": 2396,
+    "guncelleme": "2026-09-02"
+   },
+   "fark_7g": {
+    "deger": 1,
+    "onceki": 17,
+    "son": 18,
+    "kiyas_tarihi": "2026-08-26",
+    "gun": 7,
+    "birim": "temas",
+    "yon": "iyi",
+    "olcum_yontemi_degisti": false,
+    "seri": [
+     "phone_click_28",
+     "whatsapp_click_28"
+    ],
+    "not": "form hariç (seride telefon + WhatsApp var, contact_form_submit yok); PR #88 (02.09) telefon bağı izlemesini genişletti, taban değişti — ihtiyatla oku"
+   }
+  },
+  {
+   "k": "hedef_kutuda",
+   "baslik": "Hedef sorgularda harita kutusu",
+   "deger": 9,
+   "birim": "sorgu",
+   "gosterim": "9/17",
+   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 8 tanesinde kutuda 1. sıradayız; 7 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 3 sorgu.)",
+   "kaynak": "hedef-sorgular.json (ozet.kutuda)",
+   "ayrinti": {
+    "hedef": 17,
+    "kutuda_birinci": 8,
+    "kutu_var_biz_yok": 7,
+    "organik_ilk3": 3,
+    "organik_birinci": 2,
+    "guncelleme": "2026-09-02"
+   },
+   "fark_7g": null
+  },
+  {
+   "k": "damla_kalan",
+   "baslik": "Damla kuyruğunda kalan",
+   "deger": 44,
+   "birim": "sayfa",
+   "gosterim": "44",
+   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 44; 20 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
+   "ayrinti": {
+    "bitmis": 20,
+    "toplam": 64
+   },
+   "fark_7g": null
+  }
+ ],
+ "bu_hafta_yapilan": [
+  {
+   "tarih": "02.09",
+   "iso": "2026-09-02",
+   "baslik_sayisi": 6,
+   "basliklar": [
+    "GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88",
+    "DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır",
+    "DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ",
+    "BAYAT MAHALLE HİPOTEZİ: İLK KONTROL DESTEKLEMİYOR",
+    "HEDEF SORGULARDA SIRAYI KİM TUTUYOR: ETAP SAYFALARI DEĞİL, ANA SAYFA",
+    "Damla: üçüncü deneme de sınırda"
+   ],
+   "metin": "02.09 — GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88 · DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır · DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ (+3 başlık daha)"
+  },
+  {
+   "tarih": "01.09",
+   "iso": "2026-09-01",
+   "baslik_sayisi": 2,
+   "basliklar": [
+    "DAMLA ELDEN: 9 kabul, 2 kendiliğinden tarandı, 10.'da sınır",
+    "38 KIRINTI KAYDI YENİDEN ÖLÇÜLDÜ (Özgün'ün Chrome'u, pws=0)"
+   ],
+   "metin": "01.09 — DAMLA ELDEN: 9 kabul, 2 kendiliğinden tarandı, 10.'da sınır · 38 KIRINTI KAYDI YENİDEN ÖLÇÜLDÜ (Özgün'ün Chrome'u, pws=0)"
+  },
+  {
+   "tarih": "31.08",
+   "iso": "2026-08-31",
+   "baslik_sayisi": 11,
+   "basliklar": [
+    "BAŞLIK ARAŞTIRMASI (730 ölçüm üzerinden, yeni sorgu harcanmadı)",
+    "WORKFLOW SENTEZİ — DARBOĞAZ: TARAMA TAHSİSİ",
+    "SONUÇ ÖLÇÜMÜ — KARNE ARTIK TIKLAMAYI DA GÖRÜYOR",
+    "İÇERİK HİPOTEZİ ÖLDÜ (site-emlakçı sorguları için de)",
+    "ADA CANONICAL'I REDDEDİLDİ (17/17)",
+    "\"ADA SAYFALARI TARAMA BÜTÇESİ YİYOR\" HİPOTEZİ DE ÖLDÜ",
+    "TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)",
+    "GÖRÜNMEZLERİN GERÇEK TEŞHİSİ",
+    "SITEMAP DÜZELTMESİNİN ÇIKTISI BENZETİLDİ (PR #87)",
+    "MAHALLE SAYFALARINDA TEK YÖNLÜ DÜŞÜŞ",
+    "KENDİ HATAM: GÖRÜNMEZ LİSTESİ 16 HAYALET İÇERİYORDU"
+   ],
+   "metin": "31.08 — BAŞLIK ARAŞTIRMASI (730 ölçüm üzerinden, yeni sorgu harcanmadı) · WORKFLOW SENTEZİ — DARBOĞAZ: TARAMA TAHSİSİ · SONUÇ ÖLÇÜMÜ — KARNE ARTIK TIKLAMAYI DA GÖRÜYOR (+8 başlık daha)"
+  }
+ ],
+ "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",
+ "bu_hafta_beklenen": [
+  {
+   "tarih": null,
+   "iso": null,
+   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 2.446 tıkın %34 kadarı (841) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 6.717 gösterim / 113 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (1.645 tık).",
+   "kaynak": "sonuc-ozeti.json (ayrim) + sayfa-turu-verimi.json (blog)",
+   "ayrinti": {
+    "yenimahalle_tik": 841,
+    "toplam_tik": 2446,
+    "pay": 34,
+    "yazi_gos": 6717,
+    "yazi_tik": 113
+   }
+  },
+  {
+   "tarih": "07.09",
+   "iso": "2026-09-07",
+   "metin": "07.09 — Başlık/H1 dondurması biter (başlık şablonu değişikliğinden sonraki bekleme süresi). O gün ilk iş ana sayfanın başlığı ve snippet′i: \"eryaman emlakçı\" sorgusunda organik sıra yerinde, tıklanma oranı düştü (%5,5 → %2,2; 27.07–11.08 ile 16.08–31.08 dönemleri). O tarihe kadar başlığa dokunulmaz.",
+   "kaynak": "eryaman-emlakci.json (title_donuk, donemler)",
+   "ayrinti": {
+    "to_ilk": 5.5,
+    "to_son": 2.2
+   }
+  },
+  {
+   "tarih": "14.09",
+   "iso": "2026-09-14",
+   "metin": "14.09 — Sitemap tazelik düzeltmesinin (31.08 düzeltmesi — PR #87) izleme süresi dolar: tarama dağılımı 1-2 hafta izleniyor. Sonuç henüz ölçülmedi; o güne kadar Google site sayfalarını ada sayfalarından taze görmeye başlamadıysa kaldıraç yeniden değerlendirilir. Kaldıraç defterindeki durumu: açık, sonuç bekleniyor.",
+   "kaynak": "kaldirac-defteri.json (Sitemap tazelik sinyali: kaynak tarihi + kisit haftası)",
+   "ayrinti": {
+    "baslangic": "2026-08-31",
+    "hafta": 2,
+    "durum": "acik"
+   }
+  }
+ ],
+ "gecmis": {
+  "dosya": "karne-gecmis-ozet.json",
+  "sahip": "anlik-goruntu-uret.py",
+  "kayit": 13,
+  "kiyas_tarihi": "2026-08-26"
+ },
+ "uyarilar": [
+  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 505 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
+  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor.",
+  "Ölçüm yöntemi değişti, fark iyi/kötü diye okunmaz: Site sorgularında ilk 3, İlk 3 içinde doğru sayfa (önceki nokta 27.08 öncesi turdan)."
+ ]
+}

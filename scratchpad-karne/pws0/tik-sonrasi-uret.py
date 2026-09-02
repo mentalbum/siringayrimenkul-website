@@ -18,6 +18,7 @@ Girdi : <scratchpad>/ga4-ozet28.json, ga4-aile28.json, ga4-olaylar28.tsv
 Çıktı : tik-sonrasi.json
 """
 import json, os, sys, datetime
+from pencere import ga4_pencere
 
 S = os.environ.get("KARNE_SCRATCH", "")
 KOK = os.path.dirname(os.path.abspath(__file__))
@@ -42,6 +43,8 @@ temas = {"phone_click": olay.get("phone_click", 0), "whatsapp_click": olay.get("
          "site_ust_sahibinden": olay.get("site_ust_sahibinden", 0)}
 cikti = {
     "guncelleme": datetime.date.today().isoformat(), "gun": ozet["gun"],
+    # GA4'ün penceresi GSC'ninkinden farklı biter (dün / bugün−3); pencere.py'de gerekçesi.
+    "pencere": ga4_pencere(ozet["gun"]),
     "ozet": ozet,
     "temas": temas,
     "temas_100": {k: round(v * 100 / oturum, 2) for k, v in temas.items()},

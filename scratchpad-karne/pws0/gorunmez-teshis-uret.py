@@ -14,11 +14,14 @@ Girdi: <scratchpad>/gorunmez-denetim.tsv (gsc-api denetle-dosya çıktısı)
 Çıktı: gorunmez-teshis.json — karne-html.py okur.
 """
 import json, os, sys, collections
+from pencere import pencere_zorunlu
 
 S = os.environ.get("KARNE_SCRATCH", "")
 if not S or not os.path.isdir(S):
     sys.exit("KARNE_SCRATCH ayarla (denetim tsv'lerinin durduğu klasör)")
 
+# Gösterim/tık sütunlarının penceresi sayfalar28.tsv'nin başlığından (pencere.py, 02.09).
+PENCERE = pencere_zorunlu(f"{S}/sayfalar28.tsv")
 gost = {}
 for L in open(f"{S}/sayfalar28.tsv"):
     p = L.rstrip("\n").split("\t")
@@ -59,7 +62,7 @@ def topla(v):
             "poz": round(sum(x["poz"] for x in v if x["gost"]) / max(1, sum(1 for x in v if x["gost"])), 1),
             "mah": collections.Counter(x["mah"] for x in v).most_common()}
 
-cikti = {"guncelleme": "2026-08-31",
+cikti = {"guncelleme": "2026-08-31", "pencere": PENCERE,
          "sira_sorunu": topla(diz), "dizin_sorunu": topla(olu),
          "denetlenemedi": len(hatali), "hayalet": len(hayalet),
          "taze_ama_gorunmez": sum(1 for x in diz if x["tarama"] >= "2026-08-24"),
