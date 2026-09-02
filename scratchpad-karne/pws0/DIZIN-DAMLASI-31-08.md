@@ -92,11 +92,11 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 
 ## guzelkent-mahallesi (4)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi ← 01.09 dizin dışı teyit; istek 'Hata! Bir sorun oluştu' ile döndü (günlük sınır), GÖNDERİLMEDİ — yarın ilk sırada  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi ← 02.09 istek gönderildi (onay balonu görüldü)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi ← 02.09 istek gönderildi (onay balonu görüldü, test ~2,5 dk sürdü)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi  
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi ← 02.09 dizin dışı teyit; istek 'sorun oluştu' (kayan 24 sa sınırı), GÖNDERİLMEDİ — yarın ilk  
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi  
       _hiç bilinmiyor_
@@ -104,7 +104,7 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 ## goksu-mahallesi (3)
 
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari ← 02.09 DİZİNDE (kendiliğinden, 31.08 taranmış; kota harcanmadı)  
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  
       _keşfedildi, dizine alınmadı_
@@ -114,7 +114,7 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi  
       _hiç bilinmiyor_
       _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi ← 02.09 DİZİNDE (kendiliğinden, 31.08 taranmış; kota harcanmadı)  
       _keşfedildi, dizine alınmadı_
 
 ## altay-mahallesi (2)
@@ -262,3 +262,9 @@ Bu parti birinci partiden SONRA çekilir.
 > İçtaş, Üçyıldız, Yıldız Eryaman). 10.'da (Ekin) 'Hata! Bir sorun oluştu — daha
 > sonra tekrar deneyin' balonu: bu, 'Kota Aşıldı'nın başka yüzü, istek işlenmedi.
 > Kalan açık hedef: 48. Yarın Ekin'den devam.
+
+> 02.09 — Elden tur. API: 12 adaydan İrem Konutları ve Onur Sitesi kendiliğinden
+> dizine girmiş (31.08 taranmış), kota harcanmadı. Kabul: Ekin, Kurtuluş (canlı
+> test 2,5 dk sürdü — balonu 3 dakikaya kadar bekle). 3. istek (Meltem) sınıra
+> takıldı: dünkü 9 istek kayan 24 saatlik pencerede; pencere öğleden sonra açılır.
+> Kalan açık hedef 44. Yarın Meltem'den devam.

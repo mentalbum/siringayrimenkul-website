@@ -694,3 +694,12 @@ kuyruk dışı ya da sıralı olmayanlar).
 - "eryaman emlakçı" TO'su süzgeçli çekimle doğrulandı: %5,5 → %9,2 → %2,0 (16.08–01.09),
   konum sabit 1,2–1,4. 15.08 ana sayfa açıklama kısaltması (229→119) baş şüpheli;
   title/H1 donması 07.09'a kadar — o gün ilk iş.
+
+## 02.09 — DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır
+
+Ekin ve Kurtuluş kabul; İrem Konutları ve Onur Sitesi API'de "dizinde" çıktı
+(31.08 taranmış — kota harcanmadı). Meltem'de "sorun oluştu" balonu: dünkü 9
+istek (01.09 sabahı) kayan 24 saatlik pencerede hâlâ sayılıyor. DERS: pencere
+takvim günü değil; dün sabah dolduysa bugün öğleden sonra açılır. Canlı test
+süresi değişken — Kurtuluş'ta 2,5 dk; balon için 3 dakikaya kadar beklenir,
+tekrar basılmaz. Kalan 44.
