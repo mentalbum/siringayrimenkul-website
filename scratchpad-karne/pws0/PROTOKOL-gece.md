@@ -703,3 +703,13 @@ istek (01.09 sabahı) kayan 24 saatlik pencerede hâlâ sayılıyor. DERS: pence
 takvim günü değil; dün sabah dolduysa bugün öğleden sonra açılır. Canlı test
 süresi değişken — Kurtuluş'ta 2,5 dk; balon için 3 dakikaya kadar beklenir,
 tekrar basılmaz. Kalan 44.
+
+## 02.09 08:28 — DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ
+
+01.09 sabahı Tunahan ve Eryaman mahalle sayfaları için "dizine eklenmesini
+iste" gönderildi (bayat tarama: 17.08 / 21.08). 02.09 08:28 API: ikisi de
+HÂLÂ aynı tarihte. Ölü sayfalarda istek aynı gün tarama getiriyordu (8/8,
+10/10); dizinde olan sayfada getirmedi. Göksu (01.09 01:30) ve Yavuz Selim
+(31.08) ise istek OLMADAN kendiliğinden tarandı. Yani: dizindeki sayfa için
+istek zayıf bir kaldıraç; tarama tazeliğini taşıyan şey sitemap/doğal tarama.
+04-05.09'da yeniden bak; hâlâ bayatsa kaldıraç defterine yazılır.

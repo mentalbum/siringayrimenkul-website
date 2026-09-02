@@ -589,6 +589,15 @@ if SONUC:
                       f'Search Console bu siteyi <strong>{tr_tarih(_mb)}</strong> tarihinden beri '
                       f'ölçüyor, yani “önceki {_gun} gün” dönemi sitenin daha yeni tanındığı ilk aya '
                       f'denk geliyor. Rozet büyümeyi olduğundan büyük gösterir.</p>')
+    # Pay GÜNCEL dönemden: Yenimahalle tıkı / toplam tık (31.08 ölçümü 873/2.531 = %34,5).
+    # İlk yazımda "önceki dönem" alanları alınmış ve %51 basılmıştı — yanlış payda.
+    _ym_simdi = (y.get("simdi") or {}).get("tik", 0); _top_simdi = (sm or {}).get("tik", 0) or 1
+    ym_pay = f"%{round(_ym_simdi * 100 / _top_simdi)}" if _ym_simdi else "bir kısmı"
+    try:
+        _tv_y = next(r for r in json.load(open("sayfa-turu-verimi.json"))["satirlar"] if r["tur"] == "blog")
+        yazi_gos, yazi_tik = tr_sayi(_tv_y["gos"]), tr_sayi(_tv_y["tik"])
+    except Exception:
+        yazi_gos, yazi_tik = "—", "—"
     sonuc_html = f'''<div class="kartlar">
     <div class="kart"><div class="buyuk">{tr_sayi(sm["tik"])}</div><div class="etiket">tıklama · {_gun} gün {_yuzde_rozet(sm["tik"], on["tik"])}</div></div>
     <div class="kart"><div class="buyuk">{tr_sayi(sm["gos"])}</div><div class="etiket">gösterim {_yuzde_rozet(sm["gos"], on["gos"])}</div></div>
@@ -596,6 +605,16 @@ if SONUC:
     <div class="kart"><div class="buyuk">{tr_sayi(sm["poz"], 1)}</div><div class="etiket">ortalama pozisyon (önce {tr_sayi(on["poz"], 1)})</div></div>
   </div>
   {kart_uyari}
+  <div class="pano" style="margin-top:14px">
+    <h3>Önümüzdeki haftalarda BEKLENEN düşüşler — panik yok</h3>
+    <p class="alt" style="margin:8px 0 0">Üç düşüş bilinçli kararların sonucu ve karnede ayrı sayılıyor;
+    Search Console′un toplam çizgisi bunlarla inecek. (1) <strong>Yenimahalle</strong>: 27.08′de siteden
+    kaldırıldı, önceki dönemde tıkın {ym_pay}′ü oradan geliyordu; sayfalar 410 döndükçe sıfırlanır.
+    (2) <strong>Yazılar</strong>: 24 genel yazı 07.08′de kapatıldı; son 28 günde yazı ailesi
+    {yazi_gos} gösterim / {yazi_tik} tık taşıyordu, o da eriyecek. (3) Eryaman dışı “nereye bağlı”
+    sorguları için mahalle sayfalarındaki bilgi kutusu 17.08′de söküldü. Karnenin
+    <strong>Eryaman satırı</strong> bu üçünden etkilenmez — ölçüt o.</p>
+  </div>
   <div class="iki" style="margin-top:16px">
     <div class="pano">
       <h3>Haftalık tıklama</h3>
