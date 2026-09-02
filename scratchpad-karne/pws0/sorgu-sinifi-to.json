@@ -62,28 +62,13 @@
  ],
  "makas": [
   {
-   "q": "sarıtaş seyir evleri",
-   "gos": 66,
-   "tik": 1,
-   "to": 1.5,
-   "poz": 4.9,
-   "sinif": "yalin"
-  },
-  {
-   "q": "mes polaris satılık",
-   "gos": 60,
-   "tik": 1,
-   "to": 1.7,
-   "poz": 3.8,
-   "sinif": "alici"
-  },
-  {
    "q": "emlak",
    "gos": 60,
    "tik": 0,
    "to": 0.0,
    "poz": 3.5,
-   "sinif": "bolge_emlakci"
+   "sinif": "bolge_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
    "q": "alina konutları",
@@ -91,15 +76,22 @@
    "tik": 1,
    "to": 1.9,
    "poz": 4.5,
-   "sinif": "yalin"
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/alina-konutlari"
+  }
+ ],
+ "makas_ym": [
+  {
+   "q": "mes polaris satılık",
+   "gos": 60
   },
   {
    "q": "nargülü 1 sitesi",
-   "gos": 51,
-   "tik": 1,
-   "to": 2.0,
-   "poz": 4.3,
-   "sinif": "yalin"
+   "gos": 51
+  },
+  {
+   "q": "sarıtaş seyir evleri",
+   "gos": 66
   }
  ]
 }

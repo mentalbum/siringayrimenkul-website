@@ -528,7 +528,7 @@ site sayfasına 2,5 kat fazla tarama ayırıyor. Ada sayfalarını sitemap'ten
 
 Sağlam kalan tek şey: ada sayfası SERP'te site sayfasının yerine çıktığında
 sıra 2,30 → 4,05'e düşüyor (n=557 vs n=59). Bunun ilacı başlık tarafında
-ama title'lar 5 Eylül'e kadar donuk (08.08 kararı) — 5 Eylül'de bak.
+ama title'lar 07.09'a kadar donuk (10.08 kararı, satır 157 esas; 31.08 notundaki '5 Eylül' yanlıştı) — 07.09'da bak.
 
 ## 31.08 — TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)
 

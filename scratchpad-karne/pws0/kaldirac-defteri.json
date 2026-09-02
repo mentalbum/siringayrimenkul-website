@@ -14,7 +14,7 @@
    "ad": "Ev sahibi dilli başlık şablonu",
    "olcum": "Aynı sayfaların öncesi/sonrası (n=22): 13 yükseldi, 0 düştü, ortalama 3,64 → 2,27. Başlığı değişmeyen kontrol grubu aynı dönemde +0,31 kaydı ve 5 düşüş verdi.",
    "kaynak": "07-09.08 şablon değişikliği + pws=0 turları",
-   "kisit": "Title′lar 5 Eylül′e kadar donuk (08.08 kararı)."
+   "kisit": "Title′lar 07.09′e kadar donuk (08.08 kararı)."
   },
   {
    "durum": "kanitli",
@@ -49,7 +49,7 @@
    "ad": "Ada sayfasının canonical′ı site sayfasına",
    "olcum": "30 ada sayfası denetlendi: 17′si dizinde ve 17′sinin de 17′sinde Google canonical olarak ADA SAYFASININ KENDİSİNİ seçmiş. 03.08′de kurulan düzenek dört haftada tek vakada bile yutulmadı.",
    "kaynak": "31.08 API denetimi, googleCanonical sütunu",
-   "kisit": "Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 5 Eylül′de bakılacak."
+   "kisit": "Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 07.09′de bakılacak."
   },
   {
    "durum": "curuk",

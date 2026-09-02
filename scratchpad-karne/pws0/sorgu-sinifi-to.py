@@ -46,8 +46,31 @@ def sinif(q):
     return "yalin"
 
 
+# 02.09 — snippet makası listesindeki 5 sorgunun 3'ü 27.08'de siteden kaldırılan
+# Yenimahalle sayfalarına gidiyormuş (Sarıtaş Seyir → susuz, Mes Polaris ve
+# Nargülü → cumhuriyet): o sayfalar 410, TO'ları düşük olması normal ve düzeltilemez.
+# Sorgunun BASKIN sayfası sayfa×sorgu dökümünden bulunur; Yenimahalle'ye
+# gidiyorsa listeye girmez. Sınıf toplamları sorgu düzeyinde kalır (sayfa×sorgu
+# toplamı şişer: sorguların %40'ı ≥2 sayfamızda görünüyor).
+YM = re.compile(r"/mahalleler/(ata|susuz|cumhuriyet)(-mahallesi)?/")
+baskin = {}
+if os.path.exists(f"{S}/sayfa-sorgu28.tsv"):
+    _en = {}
+    for L in open(f"{S}/sayfa-sorgu28.tsv"):
+        p = L.rstrip("\n").split("\t")
+        if len(p) < 5:
+            continue
+        try:
+            g = int(p[0])
+        except ValueError:
+            continue
+        q = p[4].lower()
+        if g > _en.get(q, -1):
+            _en[q] = g; baskin[q] = p[3]
+
 t = collections.defaultdict(lambda: {"sorgu": 0, "gos": 0, "tik": 0, "pozxg": 0.0})
 makas = []
+ym_dusen = []
 for L in open(f"{S}/sorgular28.tsv"):
     p = L.rstrip("\n").split("\t")
     if len(p) < 4:
@@ -60,7 +83,12 @@ for L in open(f"{S}/sorgular28.tsv"):
     o = t[k]
     o["sorgu"] += 1; o["gos"] += g; o["tik"] += c; o["pozxg"] += poz * g
     if g >= 40 and c * 100 / g < 2.0 and poz <= 5:
-        makas.append({"q": p[3], "gos": g, "tik": c, "to": round(c * 100 / g, 1), "poz": poz, "sinif": k})
+        kayit = {"q": p[3], "gos": g, "tik": c, "to": round(c * 100 / g, 1), "poz": poz, "sinif": k,
+                 "sayfa": baskin.get(p[3].lower(), "")}
+        if YM.search(kayit["sayfa"]):
+            ym_dusen.append(kayit)
+        else:
+            makas.append(kayit)
 
 satir = []
 for k, o in t.items():
@@ -71,11 +99,12 @@ satir.sort(key=lambda x: -x["gos"])
 makas.sort(key=lambda x: -x["gos"])
 toplam_g = sum(x["gos"] for x in satir); toplam_t = sum(x["tik"] for x in satir)
 cikti = {"guncelleme": datetime.date.today().isoformat(), "gun": 28, "toplam_gos": toplam_g, "toplam_tik": toplam_t,
-         "to": round(toplam_t * 100 / toplam_g, 2) if toplam_g else 0, "siniflar": satir, "makas": makas[:12]}
+         "to": round(toplam_t * 100 / toplam_g, 2) if toplam_g else 0, "siniflar": satir, "makas": makas[:12],
+         "makas_ym": [{"q": m["q"], "gos": m["gos"]} for m in ym_dusen]}
 json.dump(cikti, open(f"{KOK}/sorgu-sinifi-to.json", "w"), ensure_ascii=False, indent=1)
 print(f"{'sınıf':46} {'sorgu':>6} {'gösterim':>9} {'tık':>5} {'TO':>6} {'konum':>6}")
 for x in satir:
     print(f"{x['ad']:46} {x['sorgu']:6} {x['gos']:9} {x['tik']:5} {x['to']:5}% {x['poz']:6}")
-print(f"\nkonum ≤5, gösterim ≥40, TO <%2 olan (snippet makası): {len(makas)}")
+print(f"\nkonum ≤5, gösterim ≥40, TO <%2 olan (snippet makası): {len(makas)}  · Yenimahalle'ye giden ve düşülen: {len(ym_dusen)}")
 for m in makas[:6]:
     print(f"   {m['gos']:4} göst · {m['tik']:2} tık · konum {m['poz']:>4} · {m['q']}")
