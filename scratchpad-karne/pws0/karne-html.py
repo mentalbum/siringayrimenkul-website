@@ -1,14 +1,50 @@
 # -*- coding: utf-8 -*-
 """Bulunabilirlik Karnesi — HTML üretici.
 
-Veriden okur, elle rakam girilmez:
+Veriden okur, elle rakam girilmez. Her rakam ya bir ölçüm dosyasından ya da bir
+ÜRETİCİ betiğin yazdığı JSON'dan gelir; üreticiler tek seferlik değildir, her
+turda karneden ÖNCE yeniden koşar. Eksik JSON'da karne o bölümü boş bırakır,
+uydurmaz.
+
+Doğrudan okunan ölçüm dosyaları (bu klasör):
   sonuclar-site-emlakci.jsonl  (site-emlakçı turu; s bazında SON ölçüm geçerli)
-  tur-*.json                   (mahalle kuyrukları — hangi s hangi mahallede)
   sonuclar-emlakci.jsonl       (hedef sorgular; q bazında SON ölçüm)
-  dizin-analiz-2708.json       (554 sayfalık dizin envanteri)
+  tur-*.json                   (mahalle kuyrukları — hangi s hangi mahallede)
+  kuyruk-site-emlakci.json, dizin-analiz-2708.json (554 sayfalık dizin envanteri),
+  isgal-3108.json, kaldirac-defteri.json, DIZINE-EKLENECEKLER.md,
+  gsc-dizin-kuyrugu-194.md, DIZIN-DAMLASI-31-08.md
+
+Üretici sırası — hepsi bu klasörden koşar. KARNE_SCRATCH = oturum scratchpad'i
+(içinde gsc-q.mjs durur; GSC/GA4 ham çekimleri oraya TSV/JSON olarak bırakılır):
+
+  export KARNE_SCRATCH=/…/scratchpad
+  node ../../scripts/gsc-api.mjs sorgular 28 > $KARNE_SCRATCH/sorgular28.tsv
+  node ../../scripts/gsc-api.mjs sayfalar 28 > $KARNE_SCRATCH/sayfalar28.tsv
+  node ../../scripts/ga4-api.mjs ozet 28     > $KARNE_SCRATCH/ga4-ozet28.json
+  node ../../scripts/ga4-api.mjs aile 28     > $KARNE_SCRATCH/ga4-aile28.json
+  node ../../scripts/ga4-api.mjs olaylar 28  > $KARNE_SCRATCH/ga4-olaylar28.tsv
+  python3 sonuc-ozeti-uret.py     → sonuc-ozeti.json       (gsc-api'yi kendisi çağırır)
+  python3 dogru-sayfa.py          → dogru-sayfa.json
+  python3 sayfa-turu-verimi.py    → sayfa-turu-verimi.json (sayfalar28.tsv)
+  python3 ada-beklenti-uret.py    → ada-beklenti.json + ada-beklenti-gecmis.jsonl
+                                    (gsc-q.mjs ile sayfa-sorgu28.tsv / sayfa-toplam28.tsv çeker;
+                                     --yerel: çekmez, mevcut TSV'leri okur)
+  python3 sorgu-sinifi-to.py      → sorgu-sinifi-to.json   (sorgular28.tsv; sayfa-sorgu28.tsv
+                                    varsa onu da okur → ada-beklenti'den SONRA koş)
+  python3 tik-sonrasi-uret.py     → tik-sonrasi.json       (ga4-ozet28 / ga4-aile28 / ga4-olaylar28)
+  python3 veri-sagligi.py         → veri-sagligi.json      (ölçüm dosyaları + content/siteler)
+  python3 gorunmez-teshis-uret.py → gorunmez-teshis.json   (gorunmez-denetim.tsv: gsc-api
+                                    denetle-dosya çıktısı, KOTA YAKAR — gsc-dizin becerisi; + sayfalar28.tsv)
+  python3 dizin-adaylari-uret.py  → dizin-adaylari.json + sira-sorunlulari.json
+                                    (gorunmez-teshis.json'u okur → ondan SONRA koş)
+  python3 hedef-sorgular-uret.py  → hedef-sorgular.json    (jsonl'ler + isgal-*.json)
+  python3 eryaman-emlakci-uret.py → eryaman-emlakci.json   (GSC API'yi kendisi çağırır; ham
+                                    çekimi KARNE_SCRATCH'e yazar, API düşerse oradan okur)
+  python3 cihaz-uret.py           → cihaz.json             (gsc-q.mjs, mülk düzeyi device)
+  python3 karne-html.py           → bulunabilirlik-karnesi.html (KARNE_SCRATCH gerekmez)
 
 Çıktı: bulunabilirlik-karnesi.html  →  Artifact olarak aynı adrese yayınlanır.
-Kullanım: python3 karne-html.py
+Yayın öncesi denetim: "{…}" kalıntısı, etiket dengesi, Türkçe ek, İngiliz sayı biçimi.
 """
 import tranahtar
 import json, html, datetime, re
@@ -1253,6 +1289,547 @@ kaldirac_curuk = _kaldirac_grup("curuk")
 kaldirac_acik = _kaldirac_grup("acik")
 kaldirac_say = len(_KD)
 
+# --- hedef sorgular (02.09) -----------------------------------------------
+# Karnenin baş rakamı 504 site sorgusunun ilk-3 oranıydı; asıl hedef olan 17
+# sorgu (5 etap + 11 mahalle + çatı "eryaman emlakçı") karnede dağınık
+# duruyordu — etap tablosu ayrı, mahalle sütunu ayrı, çatı kartta. Tek tablo,
+# tek üretici: hedef-sorgular-uret.py. "Sıra" ile "sırayı hangi sayfa tutuyor"
+# ayrı sütun: etap sorgularında sırayı ANA SAYFA tutuyor, birleşik okunursa
+# "1. sıradayız" etap sayfası görünüyor sanılır.
+try:
+    _HS = json.load(open("hedef-sorgular.json"))
+except Exception:
+    _HS = None
+if _HS:
+    _ho = _HS["ozet"]
+    _YON_RENK = {"yükseldi": "iyi", "geriledi": "kotu", "aynı": "nul",
+                 "ilk 10'a girdi": "iyi", "ilk 10'dan çıktı": "kotu", "dışarıda kaldı": "kotu"}
+
+    def _hs_org(r):
+        if not r.get("olculdu"):
+            return '<span class="chip nul">ölçülmedi</span>'
+        s = r.get("sira") or 0
+        if s == 0:
+            return '<span class="chip kotu">ilk 10′da yok</span>'
+        return f'<span class="chip {"iyi" if s <= 3 else "orta"}">{s}.</span>'
+
+    def _hs_sayfa(r):
+        if not r.get("olculdu") or not r.get("sira"):
+            return '<span class="alt">—</span>'
+        tur = r.get("sayfa_turu") or "okunamadı"
+        if r.get("dogru_sayfa") is True:
+            return f'<span class="chip iyi">{esc(tur)}</span>'
+        if r.get("dogru_sayfa") is False:
+            return f'<span class="chip orta">{esc(tur)}</span>'
+        return f'<span class="chip nul">{esc(tur)}</span>'
+
+    def _hs_kutu(r):
+        if r.get("kutu_var") is None:
+            return '<span class="chip nul">ölçülmedi</span>'
+        if r.get("kutu_var") is False:
+            return '<span class="chip kotu">kutu çıkmıyor</span>'
+        k = r.get("kutuda")
+        if k is None:
+            return '<span class="chip nul">kutu var, sıramız okunamadı</span>'
+        if k == 0:
+            return '<span class="chip kotu">kutuda yok</span>'
+        return f'<span class="chip iyi">kutu {k}.</span>'
+
+    def _hs_isgal(r):
+        if r.get("isgal") is None:
+            t = r.get("isgal_dosyasinda_daha_taze")
+            if t and t.get("isgal") is not None:
+                return (f'<strong>{t["isgal"]}</strong> <span class="alt">'
+                        f'({tr_tarih(t["tarih"])}, işgal dosyası)</span>')
+            return '<span class="alt">ölçülmedi</span>'
+        return f'<strong>{r["isgal"]}</strong>'
+
+    def _hs_s(x):
+        return "yok" if not x else f"{x}."
+
+    def _hs_degisim(r):
+        o = r.get("onceki")
+        if not o:
+            return '<span class="chip nul">önceki ölçüm yok</span>'
+        yon = r.get("yon") or "—"
+        ka = r.get("kanal_ayni")
+        # † kanal değişti (gizli → normal); ‡ önceki ölçümün kanal kaydı yok (belirsiz)
+        kanal = "" if ka else (" †" if ka is False else " ‡")
+        return (f'<span class="chip {_YON_RENK.get(yon, "nul")}">{esc(yon).replace(chr(39), "′")}</span>'
+                f'<span class="alt" style="display:block">{_hs_s(o.get("sira"))} → {_hs_s(r.get("sira"))}'
+                f' · önceki {tr_tarih(o.get("tarih"))}{kanal}</span>')
+
+    _hs_satir = ""
+    for r in _HS["satirlar"]:
+        _kanal = r.get("kanal") or "kanal belirsiz"
+        _hs_satir += (
+            f'<tr><td><strong>{esc(r["sorgu"])}</strong>'
+            f'<span class="alt" style="display:block">{esc(r["aile_ad"])}</span></td>'
+            f'<td>{_hs_org(r)}</td><td>{_hs_sayfa(r)}</td><td>{_hs_kutu(r)}</td>'
+            f'<td>{_hs_isgal(r)}</td><td>{_hs_degisim(r)}</td>'
+            f'<td class="alt">{tr_tarih(r.get("tarih"))}<br>{esc(_kanal)}</td></tr>')
+
+    _hs_aile = ""
+    for k in ("cati", "etap", "mahalle"):
+        a = (_ho.get("aileler") or {}).get(k)
+        if not a:
+            continue
+        _hs_aile += (f'<tr><td><strong>{esc(a["ad"])}</strong></td><td class="num">{a["toplam"]}</td>'
+                     f'<td class="num">{a["birinci"]}</td><td class="num">{a["ilk3"]}</td>'
+                     f'<td class="num">{a["ilk4_10"]}</td><td class="num">{a["disarida"]}</td>'
+                     f'<td class="num">{a["kutuda"]}</td></tr>')
+
+    _yon_parca = [f"{n} {ad.replace(chr(39), '′')}" for ad, n in (_ho.get("yon") or {}).items() if n]
+    _yon_cumle = ", ".join(_yon_parca) if _yon_parca else "kıyaslanacak önceki ölçüm yok"
+    _ilk10 = _ho["ilk3"] + _ho["ilk4_10"]
+    _belirsiz = _ho.get("ilk10_sayfa_belirsiz") or 0
+    _belirsiz_cumle = f", {_belirsiz} tanesinde sayfa okunamadı (kırıntı)" if _belirsiz else ""
+    _eb = _ho.get("en_bayat") or {}
+    _hs_uyari = "".join(f'<li><span>{esc(u)}</span></li>' for u in _HS.get("uyarilar") or [])
+    # 16 hedef = 5 etap + 11 mahalle (hedef-sorgular.md); çatı sorgu ayrı satır. Sayılar
+    # üreticinin aile toplamlarından — "5 etap, 11 mahalle" elle yazılıydı (02.09 denetimi).
+    _ha = _ho.get("aileler") or {}
+    _n_etap = (_ha.get("etap") or {}).get("toplam") or 0
+    _n_mah = (_ha.get("mahalle") or {}).get("toplam") or 0
+    _n_hedef = _n_etap + _n_mah
+    _kb = _ho.get("kanal_belirsiz_kiyas")
+    _kb_s = "ölçülmedi" if _kb is None else str(_kb)
+    hedefsorgu_html = f"""
+  <h2>Hedef sorgular — {_n_hedef} hedef + çatı sorguda neredeyiz</h2>
+  <p class="not">Bütün sıra çalışmasının hedefi bu {_n_hedef} sorgu: {_n_etap} etap, {_n_mah} Eryaman
+  mahallesi; çatı sorgu “eryaman emlakçı” ayrıca izlenir (tabloda {_ho['hedef_sayisi']} satır).
+  Her satırda organik sıra ile <strong>sırayı hangi sayfamızın tuttuğu</strong> ayrı okunur —
+  etap sorgularında sırayı çoğunlukla ana sayfa tutuyor, yani sıra var ama etap sayfası görünmüyor.
+  Harita kutusu organikten ayrı sayılır.
+  {_ho['olculen']} sorgu ölçüldü, {_ho['olculmeyen']} sorgu ölçülmedi; {tr_sayi(_HS['kayit_sayisi'])} ölçüm kaydı tarandı.</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{_ho['birinci']}</div><div class="etiket">sorguda organik 1. sıra</div></div>
+    <div class="kart"><div class="buyuk">{_ho['ilk3']}</div><div class="etiket">sorguda ilk 3 (1. sıra dahil)</div></div>
+    <div class="kart"><div class="buyuk">{_ho['ilk4_10']}</div><div class="etiket">sorguda 4–10 arası</div></div>
+    <div class="kart"><div class="buyuk">{_ho['disarida']}</div><div class="etiket">sorguda ilk 10′da yok</div></div>
+    <div class="kart vurgu"><div class="buyuk">{_ho['kutuda']}</div><div class="etiket">sorguda harita kutusundayız · {_ho['kutuda_birinci']} tanesinde 1.</div></div>
+  </div>
+  <div class="tablo-kabuk" style="margin-top:16px"><table>
+    <thead><tr><th>Sorgu</th><th>Organik</th><th>Sırayı tutan sayfa</th><th>Harita kutusu</th>
+    <th>İşgal</th><th>Önceki ölçüme göre</th><th>Ölçüm</th></tr></thead>
+    <tbody>{_hs_satir}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">“Sırayı tutan sayfa” yeşilse hedef sayfa çıkıyor, sarıysa
+  başka sayfamız (çoğunlukla ana sayfa) sırayı karşılıyor. † iki ölçüm farklı pencereden
+  (gizli → normal); {_ho['kanal_degisen_kiyas']} kıyas böyle, ±1 sıralık fark gürültü sayılır.
+  ‡ önceki ölçümün penceresi kayıtta yok (oturumlu Chrome dönemi); {_kb_s} kıyas böyle, aynı ihtiyatla okunur.
+  İşgal = 1. sayfada bize ait sonuç sayısı (site + mağaza + sosyal), {_ho['isgal_olculen']} sorguda ölçüldü,
+  toplam {_ho['isgal_toplam']} sıra.</p>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Aileye göre</h3>
+      <div class="tablo-kabuk"><table style="min-width:0">
+        <thead><tr><th>Aile</th><th class="num">Hedef</th><th class="num">1.</th><th class="num">İlk 3</th>
+        <th class="num">4–10</th><th class="num">Dışarıda</th><th class="num">Kutuda</th></tr></thead>
+        <tbody>{_hs_aile}</tbody>
+      </table></div>
+      <p class="alt" style="margin:10px 0 0">İlk 10′daki {_ilk10} sıranın <strong>{_ho['ilk10_dogru_sayfa']} tanesini
+      hedef sayfa</strong> tutuyor; {_ho['ilk10_ana_sayfa_temsil']} tanesinde sırayı ana sayfa karşılıyor{_belirsiz_cumle}.
+      Harita: {_ho['kutuda']} sorguda kutudayız, {_ho['kutu_var_biz_yok']} sorguda kutu var ama biz yokuz,
+      {_ho['kutu_yok']} sorguda kutu hiç çıkmıyor.</p>
+    </div>
+    <div class="pano">
+      <h3>Önceki ölçüme göre yön</h3>
+      <p class="alt" style="margin:0 0 10px">{_yon_cumle}. Tek ölçüm karar verdirmez; yön için üç günün
+      eğilimine bakılır.</p>
+      <ul>
+        <li><span>Ölçümlerin ortalama yaşı</span><span class="chip">{tr_sayi(_ho['yas_ortalama_gun'], 1)} gün</span></li>
+        <li><span>En bayat: “{esc(_eb.get('sorgu', '—'))}”</span><span class="chip {'orta' if (_eb.get('yas_gun') or 0) >= 3 else 'nul'}">{tr_tarih(_eb.get('tarih'))} · {_eb.get('yas_gun', '—')} gün</span></li>
+        <li><span>7 günden eski ölçüm</span><span class="chip {'kotu' if _ho['bayat_7gun'] else 'iyi'}">{_ho['bayat_7gun']}</span></li>
+        <li><span>Önceki ölçümü olmayan</span><span class="chip">{_ho['onceki_yok']}</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Ölçüm uyarıları</h3>
+    <ul>{_hs_uyari}</ul>
+  </div>
+"""
+else:
+    hedefsorgu_html = ""
+
+# --- "eryaman emlakçı" — tık serisi (02.09) --------------------------------
+# Çatı sorgu. Karne yalnız SERP sırasını basıyordu; Search Console bu sorguda
+# ne gösterip ne tıklattığını değil. Üretici (eryaman-emlakci-uret.py) GSC'yi
+# doğrudan çeker. Kritik bulgu üreticiden geliyor: GSC "konum"u burada harita
+# kutusundaki GBP bağının konumu — organik sıra değil. İkisi ayrı okunur.
+try:
+    _EE = json.load(open("eryaman-emlakci.json"))
+except Exception:
+    _EE = None
+if _EE:
+    _et = _EE["toplam"]
+
+    def _ee_to(x, nd=1):
+        return "ölçülmedi" if x is None else f"%{tr_sayi(x, nd)}"
+
+    def _ee_kn(x):
+        return "ölçülmedi" if x is None else tr_sayi(x, 1)
+
+    _hmax = max((h.get("to") or 0) for h in _EE["haftalar"]) or 1
+    _ee_hafta = ""
+    for h in _EE["haftalar"]:
+        _pay = max(2, round(100 * (h.get("to") or 0) / _hmax))
+        _kismi = ' <span class="alt">(kısmi hafta)</span>' if h.get("kismi") else ""
+        _ee_hafta += (f'<tr><td><strong>{esc(h["etiket"])}</strong>{_kismi}</td>'
+                      f'<td class="num">{tr_sayi(h["gos"])}</td><td class="num">{tr_sayi(h["tik"])}</td>'
+                      f'<td class="num">{_ee_to(h.get("to"))}</td><td class="num">{_ee_kn(h.get("konum"))}</td>'
+                      f'<td><div class="bar"><i style="width:{_pay}%"></i></div></td></tr>')
+    _ee_donem = ""
+    for d in _EE["donemler"]:
+        _ko = ' <span class="chip nul">küçük örnek</span>' if d.get("kucuk_ornek") else ""
+        _ee_donem += (f'<tr><td><strong>{esc(d["ad"])}</strong>{_ko}'
+                      f'<span class="alt" style="display:block">{esc(d["etiket"])} · {d["gun"]} gün</span></td>'
+                      f'<td class="num">{tr_sayi(d["gos"])}</td><td class="num">{tr_sayi(d["tik"])}</td>'
+                      f'<td class="num">{_ee_to(d.get("to"))}</td><td class="num">{_ee_kn(d.get("konum"))}</td>'
+                      f'<td>{esc(d.get("sira_tutan_ad") or "—")}</td></tr>')
+    _ee_sayfa = ""
+    for s in _EE["sayfalar"]:
+        _u_alt = "" if s["ad"] == s["u"] else f'<span class="alt" style="display:block">{esc(s["u"])}</span>'
+        _ee_sayfa += (f'<tr><td><strong>{esc(s["ad"])}</strong>{_u_alt}</td>'
+                      f'<td class="num">{tr_sayi(s["gos"])}</td><td class="num">{tr_sayi(s["tik"])}</td>'
+                      f'<td class="num">{_ee_to(s.get("to"))}</td><td class="num">{_ee_kn(s.get("konum"))}</td>'
+                      f'<td class="alt">{s["gun"]} gün · {tr_tarih(s["ilk"])}–{tr_tarih(s["son"])}</td></tr>')
+
+    def _ee_serp_satir(x):
+        s = x.get("sira")
+        cls = "iyi" if s and s <= 3 else ("orta" if s else "kotu")
+        org = f"organik {s}." if s else "organik ilk 10′da yok"
+        har = ('<span class="chip iyi">harita 1.</span>' if x.get("harita")
+               else '<span class="chip kotu">harita 1. değil</span>')
+        return (f'<li><span>{tr_tarih(x["d"])} <span class="alt">{esc(x.get("kanal") or "")}</span></span>'
+                f'<span><span class="chip {cls}">{org}</span> {har}</span></li>')
+
+    _ee_serp = "".join(_ee_serp_satir(x) for x in _EE["serp"]) or '<li class="alt">Ölçüm yok</li>'
+    _u = _EE["utm"]
+    _ee_not = "".join(f'<li><span>{esc(n)}</span></li>' for n in _EE.get("notlar") or [])
+    _ac = _EE.get("aciklama_commit")
+    _kaynak = _EE.get("kaynak") or "ölçülmedi"
+    _kaynak_ad = ("Search Console API, canlı çekim" if _kaynak == "api"
+                  else esc(_kaynak).replace("önbellek", "önbellek (API düştü, tarihli TSV)"))
+    _ac_cumle = (f'Baş şüpheli değişiklik: {tr_tarih(_ac["d"])}, commit {esc(_ac["h"])} — “{esc(_ac["konu"])}”.'
+                 if _ac else "Açıklama değişikliğinin commit kaydı okunamadı.")
+    eryamanemlakci_html = f"""
+  <h2>“eryaman emlakçı” — gösterim, tık ve sırayı kim tutuyor</h2>
+  <p class="not">Çatı sorgu. Yukarıdaki kart SERP sırasını söyler; bu bölüm Search Console′un
+  aynı sorguda <strong>ne gösterip ne tıklattığını</strong> söyler.
+  {tr_tarih(_EE['baslangic'])}–{tr_tarih(_EE['son_veri_gunu'])}, {_EE['gun']} gün. Dikkat: Search
+  Console′un “konum”u burada harita kutusundaki işletme bağının konumudur, organik sıra
+  değil — organik sıra aşağıdaki pws=0 ölçümlerinden okunur.</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{tr_sayi(_et['gos'])}</div><div class="etiket">gösterim · {_EE['gun']} gün</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_et['tik'])}</div><div class="etiket">tık</div></div>
+    <div class="kart"><div class="buyuk">{_ee_to(_et.get('to'))}</div><div class="etiket">tıklanma oranı</div></div>
+    <div class="kart"><div class="buyuk">{_ee_kn(_et.get('konum'))}</div><div class="etiket">Search Console konumu (harita bağı dahil)</div></div>
+  </div>
+  <div class="tablo-kabuk" style="margin-top:16px"><table>
+    <thead><tr><th>Dönem</th><th class="num">Gösterim</th><th class="num">Tık</th><th class="num">TO</th>
+    <th class="num">Konum</th><th>Sırayı tutan adres</th></tr></thead>
+    <tbody>{_ee_donem}</tbody>
+  </table></div>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Haftalık tıklanma oranı</h3>
+      <div class="tablo-kabuk"><table style="min-width:0">
+        <thead><tr><th>Hafta</th><th class="num">Göst.</th><th class="num">Tık</th><th class="num">TO</th><th class="num">Konum</th><th>&nbsp;</th></tr></thead>
+        <tbody>{_ee_hafta}</tbody>
+      </table></div>
+    </div>
+    <div class="pano">
+      <h3>Organik sıra — pws=0 ölçümleri</h3>
+      <ul>{_ee_serp}</ul>
+      <p class="alt" style="margin:10px 0 0"><strong>Harita bağının adresi.</strong> İşletme profilindeki
+      site bağı <code>{esc(_u['adres'])}</code> adresine gidiyordu; Search Console bu adresi
+      {tr_tarih(_u['ilk'])}–{tr_tarih(_u['son'])} arasında ayrı saydı: {tr_sayi(_u['ozet']['gos'])} gösterim,
+      {_u['ozet']['tik']} tık, konum {_ee_kn(_u['ozet'].get('konum'))}. O günlerde ana sayfanın konumu
+      {_ee_kn(_u.get('ana_konum_utm_varken'))}, sonrasında {_ee_kn(_u.get('ana_konum_utm_sonrasi'))}.
+      URL denetimi: {esc(_u.get('denetim') or 'ölçülmedi')}.</p>
+    </div>
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Sorguya çıkan adreslerimiz</h3>
+    <div class="tablo-kabuk"><table>
+      <thead><tr><th>Adres</th><th class="num">Gösterim</th><th class="num">Tık</th><th class="num">TO</th><th class="num">Konum</th><th>Görüldüğü günler</th></tr></thead>
+      <tbody>{_ee_sayfa}</tbody>
+    </table></div>
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Okuma</h3>
+    <ul>{_ee_not}</ul>
+    <p class="alt" style="margin:10px 0 0">{_ac_cumle} Title/H1 serbest kalma tarihi:
+    {tr_tarih(_EE.get('title_donuk'))}.</p>
+  </div>
+  <p class="alt" style="margin-top:8px"><strong>Ölçüm uyarısı.</strong> {esc(_EE.get('uyari') or '')}
+  Veri kaynağı: {_kaynak_ad}.</p>
+"""
+else:
+    eryamanemlakci_html = ""
+
+# --- ada sayfaları: beklenen tık (02.09) ----------------------------------
+# "Hangi sayfa ailesi trafiği taşıyor" ada sayfalarının sayfa başına az tık
+# getirdiğini söylüyor ama NEDENİNİ ayırmıyor: düşük sırada oldukları için mi,
+# yoksa aynı sırada bile tıklanmadıkları için mi? Üretici (ada-beklenti-uret.py)
+# ada HARİÇ sayfalardan konum bandı başına TO eğrisi kurar ve ada sayfalarının
+# kendi bandında ne kadar tık getirmesi gerektiğini hesaplar.
+try:
+    _AB = json.load(open("ada-beklenti.json"))
+except Exception:
+    _AB = None
+if _AB:
+    _a = _AB["ada"]; _sd = _AB["sayfa_duzeyi"]["ada"]; _ok = _AB["ortak"]
+    _ab_d = _AB["donem"]
+
+    def _ab_fark(f, nd=1):
+        if f is None:
+            return '<span class="chip nul">ölçülmedi</span>'
+        cls = "kotu" if f < 0 else ("iyi" if f > 0 else "nul")
+        isaret = "+" if f > 0 else ("−" if f < 0 else "")
+        return f'<span class="chip {cls}">{isaret}{tr_sayi(abs(f), nd)}</span>'
+
+    _ab_bant = ""
+    for b in _a["bantlar"]:
+        _ab_bant += (f'<tr><td><strong>{esc(b["bant"])}</strong><span class="alt" style="display:block">{tr_sayi(b["satir"])} satır</span></td>'
+                     f'<td class="num">{tr_sayi(b["gos"])}</td><td class="num">{tr_sayi(b["tik"])}</td>'
+                     f'<td class="num">%{tr_sayi(b["to"], 2)}</td><td class="num">%{tr_sayi(b["egri_to"], 2)}</td>'
+                     f'<td class="num">{tr_sayi(b["beklenen"], 1)}</td><td>{_ab_fark(b["fark"])}</td></tr>')
+    _kucuk = min(_a["bantlar"], key=lambda b: b["gos"]) if _a["bantlar"] else None
+    _kucuk_cumle = (f' En küçük bant ({esc(_kucuk["bant"])}) {_kucuk["gos"]} gösterim / {_kucuk["tik"]} tık:'
+                    f' tek tık, oran değil — okunmaz.' if _kucuk else "")
+    _ab_aile = ""
+    for a in _AB["aileler"]:
+        bp = a.get("bant_pay") or {}
+        _ab_aile += (f'<tr><td><strong>{esc(a["ad"])}</strong><span class="alt" style="display:block">{tr_sayi(a["satir"])} satır</span></td>'
+                     f'<td class="num">{tr_sayi(a["gos"])}</td><td class="num">{tr_sayi(a["tik"])}</td>'
+                     f'<td class="num">%{tr_sayi(a["to"], 2)}</td><td class="num">{tr_sayi(a["poz"], 1)}</td>'
+                     + "".join(f'<td class="num" style="font-size:15px">%{tr_sayi(bp.get(bn), 1)}</td>' for bn in _AB["bantlar"])
+                     + '</tr>')
+    _ab_ornek = ""
+    for o in _ok.get("ornekler") or []:
+        _ab_ornek += (f'<tr><td><strong>{esc(o["q"])}</strong></td>'
+                      f'<td class="num">{tr_sayi(o["ada_gos"])}</td><td class="num">{tr_sayi(o["ada_tik"])}</td>'
+                      f'<td class="num">{tr_sayi(o["ada_poz"], 1)}</td>'
+                      f'<td class="num">{tr_sayi(o["site_gos"])}</td><td class="num">{tr_sayi(o["site_tik"])}</td>'
+                      f'<td class="num">{tr_sayi(o["site_poz"], 1)}</td></tr>')
+    _kp = _AB.get("kapsam") or {}
+    _kp_ada = (_kp.get("ada") or {}).get("tik_pay")
+    _kp_site = (_kp.get("site") or {}).get("tik_pay")
+    _tb = _AB.get("taban") or {}
+    _ky = _AB.get("kiyas") or []
+    if _ky:
+        _ab_kiyas = ('<div class="tablo-kabuk"><table><thead><tr><th>Tarih</th><th class="num">Ada payı (puan)</th>'
+                     '<th class="num">Ada tık farkı</th><th class="num">Ortak sorgu farkı</th><th class="num">Ada önde farkı</th>'
+                     '<th class="num">Ada oran farkı</th><th class="num">Sayfa düzeyi ada tık farkı</th></tr></thead><tbody>'
+                     + "".join(
+                         f'<tr><td><strong>{tr_tarih(k.get("tarih"))}</strong></td>'
+                         f'<td>{_ab_fark(k.get("ada_pay_puan"))}</td><td>{_ab_fark(k.get("ada_tik_fark"), 0)}</td>'
+                         f'<td>{_ab_fark(k.get("ortak_sorgu_fark"), 0)}</td><td>{_ab_fark(k.get("ada_onde_fark"), 0)}</td>'
+                         f'<td>{_ab_fark(k.get("ada_oran_fark"), 2)}</td><td>{_ab_fark(k.get("sayfa_ada_tik_fark"), 0)}</td></tr>'
+                         for k in _ky)
+                     + '</tbody></table></div>')
+    else:
+        _ab_kiyas = ('<p class="alt" style="margin:0">Henüz kıyas yok: bu ilk kayıt taban. Sonraki çalıştırmalar '
+                     'ada payı, ada tıkı, ortak sorgu sayısı ve “ada önde” sayısını bu tabanla karşılaştırır.</p>')
+    _tb_cumle = (f'Taban: {esc(_tb.get("etiket") or "")} — pencere '
+                 f'{tr_tarih((_tb.get("donem") or {}).get("bas"))}–{tr_tarih((_tb.get("donem") or {}).get("bit"))}, '
+                 f'ada {tr_sayi(_tb.get("ada_gos"))} gösterim / {tr_sayi(_tb.get("ada_tik"))} tık, oran {tr_sayi(_tb.get("ada_oran"), 2)}, '
+                 f'ortak sorgu {tr_sayi(_tb.get("ortak_sorgu"))}, ada payı %{tr_sayi(_tb.get("ortak_ada_pay"), 1)}, '
+                 f'ada önde {tr_sayi(_tb.get("ortak_ada_onde_sorgu"))}.' if _tb else "Taban kaydı yok.")
+    _ab_dip = "".join(f'<li><span>{esc(n)}</span></li>' for n in _AB.get("dipnotlar") or [])
+    _kesik = ('<span class="chip kotu">döküm 5.000 satır sınırına çarptı — rakamlar eksik</span>'
+              if _AB.get("kesik") else "")
+    adabeklenti_html = f"""
+  <h2>Ada sayfaları beklenenin ne kadarını getiriyor</h2>
+  <p class="not">Yukarıdaki tablo ada sayfalarının sayfa başına az tık getirdiğini söylüyor ama
+  nedenini ayırmıyor: <strong>düşük sırada oldukları için mi, aynı sırada bile tıklanmadıkları
+  için mi?</strong> Bu bölüm ada hariç sayfalardan konum bandı başına bir tıklanma eğrisi kurar ve
+  ada sayfalarının kendi bandında ne kadar tık getirmesi gerektiğini hesaplar.
+  {tr_tarih(_ab_d['bas'])}–{tr_tarih(_ab_d['bit'])}, {_ab_d.get('veri_gun') or _ab_d['gun']} gün; Yenimahalle hariç
+  ({tr_sayi(_AB['yenimahalle_dusulen'])} satır düşüldü, {tr_sayi(_AB['kullanilan_satir'])} satır kullanıldı). {_kesik}</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{tr_sayi(_a['gos'])}</div><div class="etiket">ada gösterimi (sayfa×sorgu dökümü)</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_a['tik'])}</div><div class="etiket">gerçek tık · beklenen {tr_sayi(_a['beklenen'], 1)}</div></div>
+    <div class="kart vurgu"><div class="buyuk">×{tr_sayi(_a['oran'], 2)}</div><div class="etiket">beklenenin katı (yalnız site eğrisiyle ×{tr_sayi(_AB['ada_site_egrisi']['oran'], 2)})</div></div>
+    <div class="kart"><div class="buyuk">×{tr_sayi(_sd['oran'], 2)}</div><div class="etiket">tam kapsamlı ikinci bakış · {tr_sayi(_sd['sayfa'])} ada sayfası, {tr_sayi(_sd['tik'])} tık / beklenen {tr_sayi(_sd['beklenen'], 1)}</div></div>
+  </div>
+  <div class="tablo-kabuk" style="margin-top:16px"><table>
+    <thead><tr><th>Konum bandı</th><th class="num">Ada gösterim</th><th class="num">Ada tık</th><th class="num">Ada TO</th>
+    <th class="num">Eğri TO</th><th class="num">Beklenen tık</th><th>Fark</th></tr></thead>
+    <tbody>{_ab_bant}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">Eğri TO = aynı bandda ada olmayan sayfaların tıklanma oranı.
+  Beklenen = ada gösterimi × eğri TO. Fark eksi ise ada sayfası aynı sırada daha az tıklanıyor.{_kucuk_cumle}</p>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Ada ve site sayfası aynı sorguda</h3>
+      <p class="alt" style="margin:0 0 10px">Ada sayfası görünen {tr_sayi(_ok['ada_gorunen_sorgu'])} sorgunun
+      <strong>{tr_sayi(_ok['sorgu'])} tanesinde</strong> site sayfamız da çıkıyor ({tr_sayi(_ok['ada_yalniz_sorgu'])}
+      sorguda yalnız ada). Bu sorgularda ada gösterim payı %{tr_sayi(_ok['ada_pay_ada_site'], 1)}
+      (ada {tr_sayi(_ok['ada_gos'])} / site {tr_sayi(_ok['site_gos'])}).</p>
+      <ul>
+        <li><span>Ada sayfası tık · konum</span><span><span class="chip kotu">{tr_sayi(_ok['ada_tik'])} tık</span> <span class="chip">{tr_sayi(_ok['ada_poz'], 1)}</span></span></li>
+        <li><span>Site sayfası tık · konum</span><span><span class="chip iyi">{tr_sayi(_ok['site_tik'])} tık</span> <span class="chip">{tr_sayi(_ok['site_poz'], 1)}</span></span></li>
+        <li><span>Ada TO · site TO</span><span><span class="chip">%{tr_sayi(_ok['ada_to'], 2)}</span> <span class="chip">%{tr_sayi(_ok['site_to'], 2)}</span></span></li>
+        <li><span>Ada sayfası site sayfasının önünde</span><span class="chip orta">{tr_sayi(_ok['ada_onde_sorgu'])} sorgu · {tr_sayi(_ok['ada_onde_gos'])} göst · {tr_sayi(_ok['ada_onde_tik'])} tık</span></li>
+      </ul>
+    </div>
+    <div class="pano">
+      <h3>Aileye göre konum bandı dağılımı</h3>
+      <div class="tablo-kabuk"><table style="min-width:0">
+        <thead><tr><th>Aile</th><th class="num">Göst.</th><th class="num">Tık</th><th class="num">TO</th><th class="num">Konum</th>
+        {"".join(f'<th class="num">{esc(bn)}</th>' for bn in _AB["bantlar"])}</tr></thead>
+        <tbody>{_ab_aile}</tbody>
+      </table></div>
+      <p class="alt" style="margin:10px 0 0">Son {len(_AB['bantlar'])} sütun gösterimin konum bantlarına yüzde dağılımı.</p>
+    </div>
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Örnek ortak sorgular — gösterime göre ilk {len(_ok.get('ornekler') or [])}</h3>
+    <div class="tablo-kabuk"><table>
+      <thead><tr><th>Sorgu</th><th class="num">Ada göst.</th><th class="num">Ada tık</th><th class="num">Ada konum</th>
+      <th class="num">Site göst.</th><th class="num">Site tık</th><th class="num">Site konum</th></tr></thead>
+      <tbody>{_ab_ornek}</tbody>
+    </table></div>
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Taban ve kıyas</h3>
+    <p class="alt" style="margin:0 0 10px">{_tb_cumle}</p>
+    {_ab_kiyas}
+  </div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Ölçüm notları</h3>
+    <ul>{_ab_dip}</ul>
+    <p class="alt" style="margin:10px 0 0">Kapsam: sayfa×sorgu dökümü ada tıklarının %{tr_sayi(_kp_ada)} kadarını,
+    site tıklarının %{tr_sayi(_kp_site)} kadarını görüyor (Google′ın gizlediği sorgular dökümde yok);
+    sayfa düzeyi ikinci bakış tam kapsamlı ama konumu kaba. İki bakış aynı yönü gösteriyor
+    (×{tr_sayi(_a['oran'], 2)} ve ×{tr_sayi(_sd['oran'], 2)}); ondalığına güvenilmez.</p>
+  </div>
+"""
+else:
+    adabeklenti_html = ""
+
+# --- cihaz kırılımı (02.09) -----------------------------------------------
+# Ev sahibi telefondan arıyor; snippet/başlık işi telefon ekranında görünene
+# göre değerlendirilmeli. Üretici (cihaz-uret.py) her turda GSC'den canlı çeker;
+# önceki dönem mülkün rampasına denk geldiği için büyüme rozeti BASILMAZ.
+try:
+    _CZ = json.load(open("cihaz.json"))
+except Exception:
+    _CZ = None
+if _CZ:
+    _ct = _CZ["toplam"]; _cot = _CZ.get("onceki_toplam") or {}; _mp = _CZ["mobil_pay"]
+    _tel = next((c for c in _CZ["cihazlar"] if c["k"] == "MOBILE"), None)
+    _mas = next((c for c in _CZ["cihazlar"] if c["k"] == "DESKTOP"), None)
+
+    def _cz_to_puan(p, on=""):
+        if p is None:
+            return f'<span class="chip nul">{on}ölçülmedi</span>'
+        if p == 0:
+            return f'<span class="chip nul">{on}aynı</span>'
+        cls = "iyi" if p > 0 else "kotu"
+        return f'<span class="chip {cls}">{on}{"+" if p > 0 else "−"}{tr_sayi(abs(p), 2)} puan</span>'
+
+    def _cz_poz(p, on=""):
+        # konum farkı: eksi = iyileşme
+        if p is None:
+            return f'<span class="chip nul">{on}ölçülmedi</span>'
+        if p == 0:
+            return f'<span class="chip nul">{on}aynı</span>'
+        cls = "iyi" if p < 0 else "kotu"
+        return f'<span class="chip {cls}">{on}{tr_sayi(abs(p), 2)} {"iyileşti" if p < 0 else "geriledi"}</span>'
+
+    _cz_satir = ""
+    for c in _CZ["cihazlar"]:
+        o = c.get("onceki") or {}; f = c.get("fark") or {}
+        _cz_satir += (f'<tr><td><strong>{esc(c["ad"])}</strong></td>'
+                      f'<td class="num">{tr_sayi(c["gos"])}</td><td class="num" style="font-size:15px">%{tr_sayi(c["gos_pay"], 1)}</td>'
+                      f'<td class="num">{tr_sayi(c["tik"])}</td><td class="num" style="font-size:15px">%{tr_sayi(c["tik_pay"], 1)}</td>'
+                      f'<td class="num">%{tr_sayi(c["to"], 2)}</td><td class="num">{tr_sayi(c["poz"], 2)}</td>'
+                      f'<td class="alt">%{tr_sayi(o.get("to"), 2)} · {tr_sayi(o.get("poz"), 2)}</td>'
+                      f'<td>{_cz_to_puan(f.get("to_puan"), "TO ")} {_cz_poz(f.get("poz"), "konum ")}</td></tr>')
+    _cz_satir += (f'<tr><td><strong>Toplam</strong></td>'
+                  f'<td class="num">{tr_sayi(_ct["gos"])}</td><td class="num" style="font-size:15px">%100</td>'
+                  f'<td class="num">{tr_sayi(_ct["tik"])}</td><td class="num" style="font-size:15px">%100</td>'
+                  f'<td class="num">%{tr_sayi(_ct["to"], 2)}</td><td class="num">{tr_sayi(_ct["poz"], 2)}</td>'
+                  f'<td class="alt">%{tr_sayi(_cot.get("to"), 2)} · {tr_sayi(_cot.get("poz"), 2)}</td>'
+                  f'<td>{_cz_to_puan((_CZ.get("toplam_fark") or {}).get("to_puan"), "TO ")} {_cz_poz((_CZ.get("toplam_fark") or {}).get("poz"), "konum ")}</td></tr>')
+    _to_fark = (None if not (_tel and _mas) else round(_mas["to"] - _tel["to"], 2))
+    _to_fark_cumle = (f"Masaüstü tıklanma oranı telefonun {tr_sayi(abs(_to_fark), 2)} puan "
+                      f"{'üstünde' if _to_fark > 0 else 'altında'}." if _to_fark else "")
+    _bg = _CZ.get("baslik_gozlem")
+    _cz_bg = ""
+    if _bg:
+        _bo, _bs = _bg["oncesi"], _bg["sonrasi"]
+        _bg_satir = ""
+        for c in list(_bg.get("cihazlar") or []) + [{"ad": "Toplam", "oncesi": _bo["toplam"], "sonrasi": _bs["toplam"], "fark": _bg.get("toplam_fark") or {}}]:
+            o, s, f = c["oncesi"], c["sonrasi"], c.get("fark") or {}
+            _bg_satir += (f'<tr><td><strong>{esc(c["ad"])}</strong></td>'
+                          f'<td class="num">%{tr_sayi(o["to"], 2)} → %{tr_sayi(s["to"], 2)}</td><td>{_cz_to_puan(f.get("to_puan"))}</td>'
+                          f'<td class="num" style="font-size:15px">{tr_sayi(o["gos_gun"], 0)} → {tr_sayi(s["gos_gun"], 0)}</td>'
+                          f'<td class="num" style="font-size:15px">{tr_sayi(o["tik_gun"], 1)} → {tr_sayi(s["tik_gun"], 1)}</td>'
+                          f'<td class="num" style="font-size:15px">{tr_sayi(o["poz"], 2)} → {tr_sayi(s["poz"], 2)}</td><td>{_cz_poz(f.get("poz"))}</td></tr>')
+        _bg_uyari = "".join(f'<li><span>{esc(u)}</span></li>' for u in _bg.get("uyari") or [])
+        _cz_bg = f"""
+  <div class="pano" style="margin-top:14px">
+    <h3>{tr_tarih(_bg['degisiklik'])} başlık değişikliği — öncesi ve sonrası, cihaza göre</h3>
+    <p class="alt" style="margin:0 0 10px">Öncesi {tr_tarih(_bo['bas'])}–{tr_tarih(_bo['bit'])} ({_bo['gun']} gün),
+    sonrası {tr_tarih(_bs['bas'])}–{tr_tarih(_bs['bit'])} ({_bs['gun']} gün). Pencereler eşit değil,
+    gösterim ve tık <strong>gün başına</strong> kıyaslanır. Gözlem satırıdır, nedensellik iddiası değil.</p>
+    <div class="tablo-kabuk"><table>
+      <thead><tr><th>Cihaz</th><th class="num">TO</th><th>Fark</th><th class="num">Gösterim/gün</th>
+      <th class="num">Tık/gün</th><th class="num">Konum</th><th>Konum farkı</th></tr></thead>
+      <tbody>{_bg_satir}</tbody>
+    </table></div>
+    <ul style="margin-top:10px">{_bg_uyari}</ul>
+  </div>"""
+    _cz_uyari = "".join(f'<li><span>{esc(u)}</span></li>' for u in _CZ.get("uyarilar") or [])
+    # Yenimahalle kalıntısı: üretici sayfa×cihaz alt kümesinden kapsamı ve Yenimahalle
+    # HARİÇ telefon payını ölçer (02.09). Alan yoksa "ölçülmedi" — rakam uydurulmaz.
+    _ym = _CZ.get("yenimahalle") or {}; _ckp = _CZ.get("kapsam") or {}
+    if _ym.get("eryaman_telefon_gos_pay") is not None and _ckp.get("gos_pay") is not None:
+        _ym_fark = abs(_ym["eryaman_telefon_gos_pay"] - _mp["gos"])
+        _ym_hukum = ("tam sayımla aynı resim" if _ym_fark <= 3
+                     else f"tam sayımdan {tr_sayi(_ym_fark, 1)} puan ayrışıyor")
+        _cz_ym_cumle = (f"Sayfa süzgeçli alt kümede (gösterimin %{tr_sayi(_ckp['gos_pay'])} kadarını kapsar) "
+                        f"Yenimahalle payı %{tr_sayi(_ym.get('kapsam_ici_gos_pay'), 1)}; Yenimahalle hariç telefon payı "
+                        f"<strong>%{tr_sayi(_ym['eryaman_telefon_gos_pay'], 1)}</strong> — {_ym_hukum}.")
+    else:
+        _cz_ym_cumle = "Yenimahalle hariç cihaz payı ölçülmedi."
+    cihaz_html = f"""
+  <h2>Telefon mu, masaüstü mü</h2>
+  <p class="not">Ev sahibi telefondan arıyor: son {_CZ['gun']} günde gösterimin
+  <strong>%{tr_sayi(_mp['gos'], 1)} kadarı</strong>, tıkın %{tr_sayi(_mp['tik'], 1)} kadarı telefondan.
+  Başlık ve açıklama işi telefon ekranında görünene göre değerlendirilmeli. {_to_fark_cumle}
+  Dönem {tr_tarih(_CZ['donem']['bas'])}–{tr_tarih(_CZ['donem']['bit'])}, Search Console son veri günü
+  {tr_tarih(_CZ['son_veri_gunu'])}; mülk düzeyi, sayfa süzgeci yok — 27.08′de kaldırılan Yenimahalle
+  sayfalarının kalıntı gösterimi toplamın içinde. {_cz_ym_cumle}</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">%{tr_sayi(_mp['gos'], 1)}</div><div class="etiket">gösterimin telefon payı · önceki dönem %{tr_sayi(_mp['onceki_gos'], 1)}</div></div>
+    <div class="kart"><div class="buyuk">%{tr_sayi(_mp['tik'], 1)}</div><div class="etiket">tıkın telefon payı · önceki dönem %{tr_sayi(_mp['onceki_tik'], 1)}</div></div>
+    <div class="kart"><div class="buyuk">%{tr_sayi(_tel['to'], 2) if _tel else '—'}</div><div class="etiket">telefon TO · masaüstü %{tr_sayi(_mas['to'], 2) if _mas else '—'}</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_tel['poz'], 2) if _tel else '—'}</div><div class="etiket">telefon konumu · masaüstü {tr_sayi(_mas['poz'], 2) if _mas else '—'}</div></div>
+  </div>
+  <div class="tablo-kabuk" style="margin-top:16px"><table>
+    <thead><tr><th>Cihaz</th><th class="num">Gösterim</th><th class="num">Pay</th><th class="num">Tık</th><th class="num">Pay</th>
+    <th class="num">TO</th><th class="num">Konum</th><th>Önceki dönem TO · konum</th><th>Değişim</th></tr></thead>
+    <tbody>{_cz_satir}</tbody>
+  </table></div>
+  <p class="alt" style="margin-top:8px">Önceki dönem {tr_tarih(_CZ['onceki_donem']['bas'])}–{tr_tarih(_CZ['onceki_donem']['bit'])}.
+  Gösterim ve tık artışı bilerek rozetlenmedi: önceki pencere Search Console′un bu siteyi tanıdığı ilk aya
+  denk geliyor, fark büyümeyi değil rampayı ölçer. Konum farkında eksi iyileşmedir.</p>
+  {_cz_bg}
+  <div class="pano" style="margin-top:14px">
+    <h3>Ölçüm uyarıları</h3>
+    <ul>{_cz_uyari}</ul>
+  </div>
+"""
+else:
+    cihaz_html = ""
+
 HTML = f"""<title>Bulunabilirlik Karnesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -1400,6 +1977,8 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
   <p class="not">Sıra tek başına yanıltıcı: yukarıdaki sıralar iyileşirken tıklama başka yöne gidebilir.
   Bu bölüm Google Search Console′un gerçek rakamlarını gösterir ({donem_notu}).</p>
   {sonuc_html}
+{hedefsorgu_html}
+{eryamanemlakci_html}
 
   <h2>Mahalle karnesi</h2>
   <div class="tablo-kabuk"><table>
@@ -1569,6 +2148,8 @@ details[open] summary {{ border-bottom:1px solid var(--cizgi) }}
 {sorgusinif_html}
 {dogrusayfa_html}
 {turverim_html}
+{adabeklenti_html}
+{cihaz_html}
 {saglik_html}
 {teshis_html}
   <h2>Sıra nasıl iyileşir</h2>
