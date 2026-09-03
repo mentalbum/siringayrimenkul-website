@@ -1,0 +1,411 @@
+{
+ "kurulum": "2026-09-03",
+ "okuma1": "2026-09-07",
+ "okuma2": "2026-09-11",
+ "deney": [
+  {
+   "s": "seyh-samil-mahallesi/etaplar/3",
+   "sira": 6,
+   "st": "2026-08-08",
+   "yas": 26,
+   "sinif": "F",
+   "sorgu": "Eryaman 3. Etap emlakçı",
+   "tutan": "ana_sayfa"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/nefeskent-sitesi",
+   "sira": 4,
+   "st": "2026-08-02",
+   "yas": 32,
+   "sinif": "F",
+   "sorgu": "Nefeskent Sitesi emlakçı",
+   "tutan": "mahalle"
+  },
+  {
+   "s": "goksu-mahallesi/zirveden-goksu",
+   "sira": 7,
+   "st": "2026-07-31",
+   "yas": 34,
+   "sinif": "F",
+   "sorgu": "Zirveden Göksu emlakçı",
+   "tutan": "ada"
+  },
+  {
+   "s": "guzelkent-mahallesi/portakal-cicegi",
+   "sira": 4,
+   "st": "2026-07-29",
+   "yas": 36,
+   "sinif": "F",
+   "sorgu": "Portakal Çiçeği emlakçı",
+   "tutan": "eski"
+  },
+  {
+   "s": "eryaman-mahallesi/kent-konaklari-sitesi",
+   "sira": 4,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Kent Konakları Sitesi emlakçı",
+   "tutan": "ada"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/zekioglu-rezidans",
+   "sira": 4,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "C",
+   "sorgu": "Zekioğlu Rezidans emlakçı",
+   "tutan": "dogru"
+  },
+  {
+   "s": "eryaman-mahallesi/dogankaya-sitesi",
+   "sira": 5,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Doğankaya Sitesi emlakçı",
+   "tutan": "ada"
+  },
+  {
+   "s": "goksu-mahallesi/park-inci-konutlari",
+   "sira": 6,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Park İnci Konutları emlakçı",
+   "tutan": "baska_site"
+  },
+  {
+   "s": "goksu-mahallesi/goksu-aura-sitesi",
+   "sira": 7,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Göksu Aura Sitesi emlakçı",
+   "tutan": "mahalle"
+  },
+  {
+   "s": "goksu-mahallesi/oyak-goksupark",
+   "sira": 7,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "C",
+   "sorgu": "Oyak Göksupark emlakçı",
+   "tutan": "dogru"
+  }
+ ],
+ "kontrol": [
+  {
+   "s": "altay-mahallesi/izgi-park-evleri",
+   "sira": 4,
+   "st": "2026-08-02",
+   "yas": 32,
+   "sinif": "F",
+   "sorgu": "İzgi Park Evleri emlakçı",
+   "tutan": "baska_site"
+  },
+  {
+   "s": "altay-mahallesi/arya-nuans-residence",
+   "sira": 6,
+   "st": "2026-07-31",
+   "yas": 34,
+   "sinif": "C",
+   "sorgu": "Arya Nüans Residence emlakçı",
+   "tutan": "dogru"
+  },
+  {
+   "s": "devlet-mahallesi/cinar-sitesi",
+   "sira": 4,
+   "st": "2026-07-29",
+   "yas": 36,
+   "sinif": "C",
+   "sorgu": "Çınar Sitesi emlakçı",
+   "tutan": "dogru"
+  },
+  {
+   "s": "tunahan-mahallesi/su-damlasi-sitesi",
+   "sira": 6,
+   "st": "2026-07-29",
+   "yas": 36,
+   "sinif": "C",
+   "sorgu": "Su Damlası Sitesi emlakçı",
+   "tutan": "dogru"
+  },
+  {
+   "s": "guzelkent-mahallesi/anadolu-sitesi",
+   "sira": 4,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Anadolu Sitesi emlakçı",
+   "tutan": "eski"
+  },
+  {
+   "s": "devlet-mahallesi/sahil-sitesi",
+   "sira": 5,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Sahil Sitesi emlakçı",
+   "tutan": "baska_site"
+  },
+  {
+   "s": "goksu-mahallesi/koru-eryaman",
+   "sira": 5,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Koru Eryaman emlakçı",
+   "tutan": "ada"
+  },
+  {
+   "s": "guzelkent-mahallesi/safi-apak-sitesi",
+   "sira": 6,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Safi Apak Sitesi emlakçı",
+   "tutan": "ada"
+  },
+  {
+   "s": "goksu-mahallesi/goksu-vadi-konutlari",
+   "sira": 7,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Göksu Vadi Konutları emlakçı",
+   "tutan": "mahalle"
+  },
+  {
+   "s": "goksu-mahallesi/vaditepe-baspinar",
+   "sira": 9,
+   "st": "2026-07-27",
+   "yas": 38,
+   "sinif": "F",
+   "sorgu": "Vaditepe Başpınar emlakçı",
+   "tutan": "ada"
+  }
+ ],
+ "havuz_kalan": [
+  {
+   "deney": {
+    "s": "altay-mahallesi/vizyon-prestige",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Vizyon Prestige emlakçı",
+    "tutan": "ada"
+   },
+   "kontrol": {
+    "s": "devlet-mahallesi/mavikent-sitesi",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "C",
+    "sorgu": "Mavikent Sitesi emlakçı",
+    "tutan": "dogru"
+   }
+  },
+  {
+   "deney": {
+    "s": "goksu-mahallesi/havuzlu-bahce-konutlari",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Havuzlu Bahçe Konutları emlakçı",
+    "tutan": "baska_site"
+   },
+   "kontrol": {
+    "s": "guzelkent-mahallesi/durtas-91-sitesi",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Durtaş 91 Sitesi emlakçı",
+    "tutan": "baska_site"
+   }
+  },
+  {
+   "deney": {
+    "s": "seyh-samil-mahallesi/oz-cozum-kent-sitesi",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Öz Çözüm Kent Sitesi emlakçı",
+    "tutan": "mahalle"
+   },
+   "kontrol": {
+    "s": "yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "C",
+    "sorgu": "Yeni İlkay Sitesi emlakçı",
+    "tutan": "dogru"
+   }
+  },
+  {
+   "deney": {
+    "s": "yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+    "sira": 4,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Yeni Kaynak Sitesi emlakçı",
+    "tutan": "eski"
+   },
+   "kontrol": {
+    "s": "goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+    "sira": 5,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "C",
+    "sorgu": "Kaşmir Mavi Orkide Sitesi emlakçı",
+    "tutan": "dogru"
+   }
+  },
+  {
+   "deney": {
+    "s": "goksu-mahallesi/selale-evleri-sitesi",
+    "sira": 5,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Şelale Evleri Sitesi emlakçı",
+    "tutan": "ada"
+   },
+   "kontrol": {
+    "s": "sehit-osman-avci-mahallesi/z-yayla-konutlari",
+    "sira": 5,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "C",
+    "sorgu": "Z. Yayla Konutları emlakçı",
+    "tutan": "dogru"
+   }
+  },
+  {
+   "deney": {
+    "s": "seyh-samil-mahallesi/taniskent-sitesi",
+    "sira": 5,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Tanışkent Sitesi emlakçı",
+    "tutan": "baska_site"
+   },
+   "kontrol": {
+    "s": "goksu-mahallesi/golkent-sitesi",
+    "sira": 6,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Gölkent Sitesi emlakçı",
+    "tutan": "baska_site"
+   }
+  },
+  {
+   "deney": {
+    "s": "sehit-osman-avci-mahallesi/inci-life-residence",
+    "sira": 6,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "İnci Life Residence emlakçı",
+    "tutan": "ada"
+   },
+   "kontrol": {
+    "s": "seyh-samil-mahallesi/umar-sitesi",
+    "sira": 6,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Umar Sitesi emlakçı",
+    "tutan": "mahalle"
+   }
+  },
+  {
+   "deney": {
+    "s": "yesilova-mahallesi/dogan-city",
+    "sira": 6,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Doğan City emlakçı",
+    "tutan": "mahalle"
+   },
+   "kontrol": {
+    "s": "guzelkent-mahallesi/anka-2001-sitesi",
+    "sira": 7,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Anka - 2001 Sitesi emlakçı",
+    "tutan": "ada"
+   }
+  },
+  {
+   "deney": {
+    "s": "guzelkent-mahallesi/gulenkent-sitesi",
+    "sira": 7,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Gülenkent Sitesi emlakçı",
+    "tutan": "baska_site"
+   },
+   "kontrol": {
+    "s": "yavuz-selim-mahallesi/utku-sitesi",
+    "sira": 7,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Utku Sitesi emlakçı",
+    "tutan": "ada"
+   }
+  },
+  {
+   "deney": {
+    "s": "yavuz-selim-mahallesi/yavuz-selim-sitesi",
+    "sira": 7,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Yavuz Selim Sitesi emlakçı",
+    "tutan": "mahalle"
+   },
+   "kontrol": {
+    "s": "seker-mahallesi/dort-mevsim-eryaman-konutlari",
+    "sira": 9,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Dört Mevsim Eryaman Konutları emlakçı",
+    "tutan": "ada"
+   }
+  },
+  {
+   "deney": {
+    "s": "yavuz-selim-mahallesi/atadostlar-sitesi",
+    "sira": 9,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Atadostlar Sitesi emlakçı",
+    "tutan": "eski"
+   },
+   "kontrol": {
+    "s": "eryaman-mahallesi/eryaman-evleri",
+    "sira": 10,
+    "st": "2026-07-26",
+    "yas": 39,
+    "sinif": "F",
+    "sorgu": "Eryaman Evleri emlakçı",
+    "tutan": "ana_sayfa"
+   }
+  }
+ ]
+}
