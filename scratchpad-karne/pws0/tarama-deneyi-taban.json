@@ -1,0 +1,407 @@
+{
+ "tarih": "2026-09-03",
+ "amac": "Sitemap yeniden gönderimi (03.09) ve dizin isteği deneyinin tabanı",
+ "bc_toplam": 90,
+ "bayat": [
+  {
+   "s": "altay-mahallesi/arya-nuans-residence",
+   "sinif": "C",
+   "sira": 6,
+   "son_tarama": "2026-07-31",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "altay-mahallesi/ataturk-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/cinar-sitesi",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-07-29",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/guneyce-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/ilk-bahar-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-29",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/mavikent-sitesi",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/referans-ankara",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-05",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi/yuceyurt-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-30",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/atakent-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-17",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/beyaz-residence",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-27",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/isikkent-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/maximum-konutlari",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-27",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/toki-konutlari",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-07",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-27",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/goksu-evleri-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/havacilar-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-02",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/kasmir-mavi-orkide-sitesi",
+   "sinif": "C",
+   "sira": 5,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/merkez-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "goksu-mahallesi/oyak-goksupark",
+   "sinif": "C",
+   "sira": 7,
+   "son_tarama": "2026-07-27",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "guzelkent-mahallesi/aksu-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "guzelkent-mahallesi/gokkusagi-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-15",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "guzelkent-mahallesi/goksu-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-22",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/camlik-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/kc-lale-evleri",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-08-14",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/maybak-sitesi",
+   "sinif": "C",
+   "sira": 5,
+   "son_tarama": "2026-08-25",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-08-17",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/soyak-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-17",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/z-yayla-konutlari",
+   "sinif": "C",
+   "sira": 5,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/zekioglu-rezidans",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-07-27",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/baris-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-03",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/eston-bloklari",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-08-25",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/ilksebat-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/nisan-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/sitekonut-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "seyh-samil-mahallesi/umut-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-11",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "tunahan-mahallesi/ilgazlar-sitesi",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-08-20",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "tunahan-mahallesi/klima-bloklari",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-08-23",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "tunahan-mahallesi/su-damlasi-sitesi",
+   "sinif": "C",
+   "sira": 6,
+   "son_tarama": "2026-07-29",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "tunahan-mahallesi/tunahan-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yavuz-selim-mahallesi/goksu-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-07",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yavuz-selim-mahallesi/konut-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yavuz-selim-mahallesi/ozharitacilar-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yavuz-selim-mahallesi/safir-sitesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yavuz-selim-mahallesi/yeni-ilkay-sitesi",
+   "sinif": "C",
+   "sira": 4,
+   "son_tarama": "2026-07-26",
+   "kova": "30+ gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/etaplar/2",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-08",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "tunahan-mahallesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-17",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "altay-mahallesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-23",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "devlet-mahallesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-23",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  },
+  {
+   "s": "yesilova-mahallesi",
+   "sinif": "B",
+   "sira": 0,
+   "son_tarama": "2026-08-23",
+   "kova": "8-30 gün",
+   "dizin": "MEVCUT"
+  }
+ ]
+}

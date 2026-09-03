@@ -813,3 +813,39 @@ taranıp dizine girdi. Ölü sayfada istek → tarama bağı artık n=8 ile de s
 DÜRÜST SINIR: bu bir gözlem defteri, kontrollü deney değil. Aynı gün istek
 GÖNDERİLMEDEN kendiliğinden dizine giren 4 sayfa da vardı; "istek işe yaradı"
 ile "zaten girecekti" bu veriyle ayrılamaz. Karnede bu uyarı basılı.
+
+## 03.09 — SIRA İÇİN GERÇEK DURUM: KALDIRAÇLAR İNCE, DARBOĞAZ TARAMA
+
+Özgün'ün düzeltmesi: "karneyi geliştir" = raporu değil SIRALARI iyileştir.
+Rapor ölçüm aracı; asıl iş sıra. Bugünkü dürüst tablo:
+
+İLK 3'TE OLMAYAN 265 SORGUNUN KALDIRAÇ DURUMU
+- A (15, dizin dışı): damla ÇALIŞIYOR — 35/37 istek dizine girdi (%95),
+  bugün 8/8 aynı gün. Kota günde ~10; kuyrukta 33 kaldı.
+- D+F'de doğru sayfası dizin dışı olan 38: aynı kaldıraç, en değerli grup
+  (slot zaten bizim). Bugün 8'i gönderildi.
+- B (63) + C (27) = 90 sorgu: ÖLÇÜLMÜŞ KALDIRAÇ YOK. Bunların 50'si bir
+  haftadan uzun süredir taranmamış (29'u 30+ gün, en eskiler 26.07).
+- D-eski (35): Google eski adresi canonical tutuyor, 30'u 26.07'den beri
+  taranmamış.
+
+YENİ BULGU — 07.09 BAŞLIK İŞİ B+C'NİN ÇOĞUNU KURTARMAZ. B+C'de SERP başlığı
+görünen 27 sayfadan 13'ü eski/farklı başlık gösteriyor ama çoğu 26-31.07'de
+taranmış: yani bizim başlığımız güncel, GOOGLE'IN KOPYASI bayat. Başlık
+düzenlemek Google o sayfayı yeniden taramadıkça hiçbir şey değiştirmez.
+Darboğaz başlık değil TARAMA.
+
+BUGÜN YAPILAN (kotasız): sitemap.xml ve sitemap-eski-adresler.xml GSC'ye
+yeniden gönderildi (API, 03.09). Amaç: bayat 50 B/C sayfasının ve sindirilmemiş
+eski adreslerin taranmasını tetiklemek. Taban tarama-deneyi-taban.json'a
+kaydedildi; 10.09'da aynı sayfalar yeniden denetlenip kaç tanesinin tarandığı
+ölçülecek. Beklenti dürüst kurulsun: sitemap yeniden gönderimi taramayı
+GARANTİ ETMEZ, 31.08 PR #87 ölçümünde lastmod'un tarama sırasını belirlemediği
+görülmüştü (%50'ye %59 taban).
+
+YARIN (04.09) DENEY — "dizindeki bayat sayfaya istek işe yaramaz" kuralını
+n=6 ile sına: mevcut kural n=2'ye dayanıyor (iki mahalle sayfası) ve 50
+sayfalık bir kaldıracı kapatıyor; bu kadar ince kanıtla kapatılmamalı.
+Adaylar (hepsi dizinde, hepsi 26.07'den beri taranmamış):
+Atatürk, Güneyce, Mavikent, Işıkkent, Göksu Evleri, Havacılar.
+Ölçüt: 24 saat içinde son tarama tarihi değişti mi. Kalan kota ölü sayfalara.
