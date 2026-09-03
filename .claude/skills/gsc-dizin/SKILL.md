@@ -97,6 +97,28 @@ Tur bitince Özgün'e Türkçe, sade özet: kaç istek kabul, kaç kendiliğinde
 dizinde, kota durumu, sıradaki adım. Rakamları kuyruk dosyasındaki işaretlerden
 say, ezberden yazma.
 
+## İSTEK ÖNCESİ API KONTROLÜ ZORUNLU (02.09 dersi, kota yakıyor)
+
+Arayüzün "URL Google'da yok" demesi yeterli DEĞİL: dizin kararı taramayı geriden
+izliyor. 02.09'da Ekin ve Kurtuluş istekten ÖNCE (00:24Z/00:28Z) kendiliğinden
+taranmıştı, arayüz hâlâ "yok" diyordu; iki kota boşa gitti.
+
+Kural — istek yalnız şu ikisi birden doğruysa gönderilir:
+1. Arayüz "URL Google'da yok" diyor, VE
+2. `node scripts/gsc-api.mjs denetle <url>` son taramayı "-" ya da 7 günden eski
+   gösteriyor. Son 24 saatte tarama görünüyorsa BEKLE (tarandı, karar bekleniyor).
+
+Ayrıca DİZİNDEKİ sayfaya istek göndermeyin: ölü sayfada aynı gün tarama 7/7,
+dizindeki sayfada 0/2 (01.09 istekleri, 34 saat sonra hâlâ bayat). Bayat ama
+dizinde olan sayfa için kaldıraç dizin isteği değil, doğal yeniden tarama.
+
+## Sıra: önce "slot bizim, sayfa dizinde değil" (02.09)
+
+Kuyruğun başındaki ÖNCELİK 1 bloğu (35 sayfa) diğerlerinden farklı: bu sorgularda
+arama sonucunda zaten bir sayfamız çıkıyor (ada / mahalle / eski adres / komşu site)
+ama doğru site sayfası Google'da hiç yok. Talep ÖLÇÜLÜ, kuyruğun geri kalanında
+talep bilinmiyor. Kota önce buraya.
+
 ## Sınır göründüğünde AYNI GÜN tekrar deneme (02.09 dersi)
 
 02.09'da sabah 08:50 ve akşam 17:20 denemeleri de "sorun oluştu" verdi; pencere

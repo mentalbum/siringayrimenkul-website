@@ -745,3 +745,33 @@ Sabah 08:50 ve akşam 17:20 denemeleri "sorun oluştu" verdi; dünkü 9 + bugün
 + 3 başarısız deneme. Ders: sınır göründüğünde aynı gün TEKRAR DENEME — başarısız
 denemeler de pencereyi doldurabilir. Yarın 09:00 sonrası tek deneme; sınırsa öğleden
 sonra tek deneme daha, o kadar.
+
+## 02.09 — İLK 3'E TAŞIMA: SINIFLANDIRMA VE ÖNCELİK
+
+528 sorgu (511 site + 17 hedef) ilk-3 hedefine göre sınıflandı (ilk3-hedef.json):
+
+| sınıf | n | ne demek |
+|---|---|---|
+| E | 257 | ilk 3'te DOĞRU sayfa — hedefte |
+| D | 93 | ilk 3'te ama YANLIŞ sayfamız (eski 35, ada 22, komşu 21, mahalle 13, ana sayfa 2) |
+| F | 67 | 4-10'da yanlış sayfamız |
+| B | 63 | dizinde ama ilk 10 dışı |
+| C | 27 | 4-10'da doğru sayfa (4-5: 21, 6-10: 6) |
+| A | 15 | dizin dışı |
+
+EN DEĞERLİ GRUP — D/F'de doğru sayfası DİZİN DIŞI olan 38 sorgu: arama sonucunda
+zaten bir sayfamız çıkıyor (slot bizim) ama doğru site sayfası Google'da hiç yok.
+Talep ÖLÇÜLÜ (sayfa bir sıra tutuyor), kuyruğun geri kalanında talep bilinmiyor.
+34'ü kuyrukta açıktı → ÖNCELİK 1 bloğuna alındı, mükerrer 34 kayıt tekilleştirildi.
+Arzutaş eklendi (hiç taranmamış). Gördoğu Şen (02.09 taranmış) ve Yükselay (30.08)
+API'de DİZİNDE çıktı — kota harcanmayacak. GSV Spor ayrı sorun: Google canonical
+olarak ESKİ slug'ı seçmiş, istek çözmez.
+
+İÇ BAĞ → SIRALAMA: İLİŞKİ YOK. 275 sorguda (doğru sayfa, ilk 10'da) Spearman
+rho +0,075 p=0,22; ilk 3'te bağ medyanı 13, 4-10'da 13. Çeyrek ilk-3 oranları
+%95/%89/%88/%93. İç bağ dizine sokmuyordu (20.08), sıralamaya da etkisi yok.
+Not: ana sayfadan site sayfalarına SIFIR bağ var — ölçüm bunu da kapsıyor.
+
+SERP GÜRÜLTÜSÜ: 1-6 gün arayla 268 çiftte aynı sıra %55, ±1 içinde %84, sd 1,44;
+4-5'ten başlayanların %42'si sonraki ölçümde "ilk 3'e geçmiş" görünüyor. Yani
+4-5 bandında tek ölçümlük "ilk 3'e çıktı" iddiası GÜÇSÜZ — üç ölçümün medyanı şart.

@@ -7,7 +7,7 @@
    "ad": "Dizin isteği damlası",
    "olcum": "İSTEK → TARAMA bağı sağlam: 14.08 turunda 8/8, 29.08 turunda 10/10 sayfa aynı gün tarandı. İSTEK → SIRA bağı ise ZAYIF. 31.08'de altı 'dönüşüm' iddiası tam geçmişiyle sınandı: Arissa Göksu 4→1 ve Platin 2 3→1 gerçek kazanç, Alış 3→1 gerçek; ama Lale Kent 1→(kayıp)→1 ve Atalay 3→(kayıp)→3 hiç kazanç değil, eski yerlerine döndüler; Selçuklu 2→(kayıp)→9 ise GERİLEME. Yani altıda üç. 02.09 EK: dizinde OLAN sayfaya istek (Tunahan, Eryaman mahalle) aynı gün tarama getirmedi; ölü sayfada getiriyordu. Yani istek → tarama bağı yalnız dizin dışı sayfada sağlam.",
    "kaynak": "14.08 ve 29.08 damla turları + 31.08 tam-geçmiş denetimi",
-   "kisit": "Kota günde ~10, kayan 24 saat; istek yalnız GSC arayüzünden gider. ÖNCEKİ SÜRÜM YANILTICIYDI: dönüşümler tek adımlık '0→N' olarak yazılmıştı ve sayfanın o kayıptan ÖNCEKİ sırasını gizliyordu. Bir sayfanın ölçümde geçici kaybolup geri gelmesi olağan (11 vaka, günlük ölçümlerin ~%1'i); kaybolmadan önceki sıra bilinmeden 'kazanç' denemez."
+   "kisit": "Kota günde ~10, kayan 24 saat; istek yalnız GSC arayüzünden gider. ÖNCEKİ SÜRÜM YANILTICIYDI: dönüşümler tek adımlık '0→N' olarak yazılmıştı ve sayfanın o kayıptan ÖNCEKİ sırasını gizliyordu. Bir sayfanın ölçümde geçici kaybolup geri gelmesi olağan (11 vaka, günlük ölçümlerin ~%1'i); kaybolmadan önceki sıra bilinmeden 'kazanç' denemez. 02.09 EK: Ekin ve Kurtuluş istekten ÖNCE kendiliğinden taranmıştı (00:24Z/00:28Z) ama arayüz hâlâ 'Google'da yok' diyordu — dizin kararı taramayı geriden izliyor, kota boşa gitti. Kural: istekten önce API'de son taramaya bak; son 24 saatte tarama varsa BEKLE."
   },
   {
    "durum": "kanitli",
@@ -71,6 +71,13 @@
    "olcum": "Sayfaların ~%38′inde Google kendi başlığını kuruyor. İki hipotez elendi: uzunluk (76,8′e 77,6 karakter — fark yok) ve bayat dizin kopyası (canlı sayfa yeni şablonu basıyor).",
    "kaynak": "29-30.08 ölçümleri",
    "kisit": "Sebep HENÜZ BİLİNMİYOR. Uydurma açıklama yazılmaz; ölçüme devam."
+  },
+  {
+   "durum": "curuk",
+   "ad": "İç bağ (SIRALAMA etkisi)",
+   "olcum": "02.09: doğru sayfayla ilk 10'da sıralanan 275 sorguda gelen iç bağ ile sıra arasında ilişki YOK — Spearman rho +0,075 (p=0,22, 5.000 permütasyon); ilk 3'te bağ medyanı 13, 4-10 bandında da 13; bağ çeyreklerinde ilk-3 oranı %95/%89/%88/%93. Bağ envanteri build çıktısından sayıldı (522 sayfa, medyan 13, aralık 5-59).",
+   "kaynak": "02.09 analizi (build HTML'lerinden bağ sayımı + sonuclar-site-emlakci.jsonl)",
+   "kisit": "20.08'de iç bağın DİZİNE sokmadığı ölçülmüştü; şimdi SIRALAMAYA da etkisi olmadığı ölçüldü. İki soru da kapandı — site sayfalarına çapraz bağ eklemek bir kaldıraç değil. (Ana sayfadan site sayfalarına sıfır bağ olması da bu ölçümün içinde.)"
   }
  ]
 }

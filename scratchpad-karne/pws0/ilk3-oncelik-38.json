@@ -1,0 +1,306 @@
+[
+ {
+  "s": "devlet-mahallesi/arslanlar-sitesi",
+  "sayfa": "/mahalleler/devlet-mahallesi/arslanlar-sitesi",
+  "sorgu": "Arslanlar Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "devlet-mahallesi/dastarli-sitesi",
+  "sayfa": "/mahalleler/devlet-mahallesi/dastarli-sitesi",
+  "sorgu": "Dastarlı Sitesi emlakçı",
+  "sira": 1,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "devlet-mahallesi/sergah-evleri",
+  "sayfa": "/mahalleler/devlet-mahallesi/sergah-evleri",
+  "sorgu": "Sergah Evleri emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "eryaman-mahallesi/atakent-1-asiyan-sitesi",
+  "sayfa": "/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi",
+  "sorgu": "Atakent 1 Aşiyan Sitesi emlakçı",
+  "sira": 8,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "eryaman-mahallesi/lacin-eryaman-sitesi",
+  "sayfa": "/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi",
+  "sorgu": "Laçin Eryaman Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/endora-goksu",
+  "sayfa": "/mahalleler/goksu-mahallesi/endora-goksu",
+  "sorgu": "Endora Göksu emlakçı",
+  "sira": 9,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/gsv-spor-sitesi",
+  "sayfa": "/mahalleler/goksu-mahallesi/gsv-spor-sitesi",
+  "sorgu": "Gsv Spor Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/kafdagi-sitesi",
+  "sayfa": "/mahalleler/goksu-mahallesi/kafdagi-sitesi",
+  "sorgu": "Kafdağı Sitesi emlakçı",
+  "sira": 3,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/paro-life",
+  "sayfa": "/mahalleler/goksu-mahallesi/paro-life",
+  "sorgu": "Paro Life emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/polsan1-ayisigi-sitesi",
+  "sayfa": "/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
+  "sorgu": "Polsan1 Ayışığı Sitesi emlakçı",
+  "sira": 6,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "goksu-mahallesi/utkan-sitesi",
+  "sayfa": "/mahalleler/goksu-mahallesi/utkan-sitesi",
+  "sorgu": "Utkan Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/ak-91-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/ak-91-sitesi",
+  "sorgu": "Ak 91 Sitesi emlakçı",
+  "sira": 4,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/arzutas-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/arzutas-sitesi",
+  "sorgu": "Arzutaş Sitesi emlakçı",
+  "sira": 5,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/elele-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/elele-sitesi",
+  "sorgu": "Elele Sitesi emlakçı",
+  "sira": 4,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/gercek-92-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/gercek-92-sitesi",
+  "sorgu": "Gerçek - 92 Sitesi emlakçı",
+  "sira": 3,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/gordogu-sen-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/gordogu-sen-sitesi",
+  "sorgu": "Gördoğu Şen Sitesi emlakçı",
+  "sira": 5,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/gozde-2-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/gozde-2-sitesi",
+  "sorgu": "Gözde 2 Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/gulsah-95-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi",
+  "sorgu": "Gülşah - 95 Sitesi emlakçı",
+  "sira": 8,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/konuta-ozlem-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi",
+  "sorgu": "Konuta Özlem Sitesi emlakçı",
+  "sira": 4,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/kusburnu-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/kusburnu-sitesi",
+  "sorgu": "Kuşburnu Sitesi emlakçı",
+  "sira": 8,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/yesim-kent2-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
+  "sorgu": "Yeşim Kent2 Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "guzelkent-mahallesi/yukselay-sitesi",
+  "sayfa": "/mahalleler/guzelkent-mahallesi/yukselay-sitesi",
+  "sorgu": "Yükselay Sitesi emlakçı",
+  "sira": 3,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/address-goksu",
+  "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/address-goksu",
+  "sorgu": "Address Göksu emlakçı",
+  "sira": 3,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+  "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+  "sorgu": "Bulvar 1071 Sitesi emlakçı",
+  "sira": 2,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+  "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+  "sorgu": "Çizgi Ötesi Residence emlakçı",
+  "sira": 2,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/neva-panora-konutlari",
+  "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari",
+  "sorgu": "Neva Panora Konutları emlakçı",
+  "sira": 3,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "seker-mahallesi/akdal-residence",
+  "sayfa": "/mahalleler/seker-mahallesi/akdal-residence",
+  "sorgu": "Akdal Residence emlakçı",
+  "sira": 2,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "seker-mahallesi/diamond-residence",
+  "sayfa": "/mahalleler/seker-mahallesi/diamond-residence",
+  "sorgu": "Diamond Residence emlakçı",
+  "sira": 10,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "seyh-samil-mahallesi/kuryap-sitesi",
+  "sayfa": "/mahalleler/seyh-samil-mahallesi/kuryap-sitesi",
+  "sorgu": "Kuryap Sitesi emlakçı",
+  "sira": 5,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "seyh-samil-mahallesi/liderkent",
+  "sayfa": "/mahalleler/seyh-samil-mahallesi/liderkent",
+  "sorgu": "Liderkent emlakçı",
+  "sira": 2,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "seyh-samil-mahallesi/ozluce-guzelevim",
+  "sayfa": "/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim",
+  "sorgu": "Özlüce Güzelevim emlakçı",
+  "sira": 3,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "seyh-samil-mahallesi/yagan-kent",
+  "sayfa": "/mahalleler/seyh-samil-mahallesi/yagan-kent",
+  "sorgu": "Yağan Kent emlakçı",
+  "sira": 3,
+  "tutan": "mahalle",
+  "gost": null
+ },
+ {
+  "s": "yavuz-selim-mahallesi/acat-konutlari",
+  "sayfa": "/mahalleler/yavuz-selim-mahallesi/acat-konutlari",
+  "sorgu": "Acat Konutları emlakçı",
+  "sira": 4,
+  "tutan": "eski",
+  "gost": null
+ },
+ {
+  "s": "yavuz-selim-mahallesi/erkaraca-sitesi",
+  "sayfa": "/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
+  "sorgu": "Erkaraca Sitesi emlakçı",
+  "sira": 4,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "yavuz-selim-mahallesi/ozenkent-2-villalari",
+  "sayfa": "/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari",
+  "sorgu": "Özenkent 2 Villaları emlakçı",
+  "sira": 2,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "yavuz-selim-mahallesi/uyum-90-sitesi",
+  "sayfa": "/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi",
+  "sorgu": "Uyum 90 Sitesi emlakçı",
+  "sira": 5,
+  "tutan": "ada",
+  "gost": null
+ },
+ {
+  "s": "yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi",
+  "sayfa": "/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi",
+  "sorgu": "Yeşil Göksu Konutyapı Kooperatifi emlakçı",
+  "sira": 1,
+  "tutan": "baska_site",
+  "gost": null
+ },
+ {
+  "s": "yesilova-mahallesi/gokdemir-tower",
+  "sayfa": "/mahalleler/yesilova-mahallesi/gokdemir-tower",
+  "sorgu": "Gökdemir Tower emlakçı",
+  "sira": 3,
+  "tutan": "baska_site",
+  "gost": null
+ }
+]

@@ -55,7 +55,100 @@ daha değerliler; (2) istek → aynı gün tarama mekanizması kanıtlı (14.08 
 
 ---
 
-Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
+## ÖNCELİK 1 — SLOT ZATEN BİZİM, SAYFA DİZİNDE DEĞİL (35 sayfa)
+
+02.09 sınıflandırması (ilk3-hedef.json): bu sorgularda arama sonucunda ilk 3'te ya da
+4-10'da BİZİM bir sayfamız çıkıyor — ama yanlış sayfa (ada, mahalle, eski adres ya da
+komşu site). Doğru site sayfası ise Google'da HİÇ YOK. Yani rekabeti kazanmışız, sadece
+doğru sayfa dizinde değil: dizine girdiği anda aynı sorguda daha iyi eşleşme olarak
+öne geçme şansı en yüksek grup bu.
+
+Kuyruğun geri kalanından farkı: burada sorgunun talebi ÖLÇÜLÜ (sayfa zaten bir sıra
+tutuyor), diğerlerinde talep bilinmiyor.
+
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi  
+      _"Dastarlı Sitesi emlakçı" sorgusunda 1. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi  
+      _"Yeşil Göksu Konutyapı Kooperatifi emlakçı" sorgusunda 1. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi  
+      _"Arslanlar Sitesi emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri  
+      _"Sergah Evleri emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi  
+      _"Laçin Eryaman Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life  
+      _"Paro Life emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi  
+      _"Utkan Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi  
+      _"Gözde 2 Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi  
+      _"Yeşim Kent2 Sitesi emlakçı" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi  
+      _"Bulvar 1071 Sitesi emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence  
+      _"Çizgi Ötesi Residence emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence  
+      _"Akdal Residence emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent  
+      _"Liderkent emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari  
+      _"Özenkent 2 Villaları emlakçı" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi  
+      _"Kafdağı Sitesi emlakçı" sorgusunda 3. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi  
+      _"Gerçek - 92 Sitesi emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu  
+      _"Address Göksu emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari  
+      _"Neva Panora Konutları emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  
+      _"Özlüce Güzelevim emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent  
+      _"Yağan Kent emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower  
+      _"Gökdemir Tower emlakçı" sorgusunda 3. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi  
+      _"Ak 91 Sitesi emlakçı" sorgusunda 4. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi  
+      _"Elele Sitesi emlakçı" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  
+      _"Konuta Özlem Sitesi emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari  
+      _"Acat Konutları emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi  
+      _"Erkaraca Sitesi emlakçı" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi  
+      _"Kuryap Sitesi emlakçı" sorgusunda 5. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi  
+      _"Uyum 90 Sitesi emlakçı" sorgusunda 5. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  
+      _"Polsan1 Ayışığı Sitesi emlakçı" sorgusunda 6. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi  
+      _"Atakent 1 Aşiyan Sitesi emlakçı" sorgusunda 8. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi  
+      _"Gülşah - 95 Sitesi emlakçı" sorgusunda 8. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi  
+      _"Kuşburnu Sitesi emlakçı" sorgusunda 8. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu  
+      _"Endora Göksu emlakçı" sorgusunda 9. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence  
+      _"Diamond Residence emlakçı" sorgusunda 10. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi  
+      _"Arzutaş Sitesi emlakçı" 5. sırada komşu site sayfamız; doğru sayfa hiç taranmamış (02.09 API)_
+
+
+> AYRI SORUN — İSTEK GÖNDERME: goksu-mahallesi/gsv-spor-sitesi. API 02.09: "Duplicate,
+> Google chose different canonical" — Google canonical olarak ESKİ slug'ı
+> (/mahalleler/goksu/gsv-spor-sitesi) seçmiş. Dizin isteği bunu çözmez; eski adresin
+> sindirilmesi gerekir (eski adres haritasında duruyor). 14.09 ölçümünde ayrı izlenecek.
+> guzelkent/gordogu-sen (02.09 taranmış) ve guzelkent/yukselay (30.08) API'de DİZİNDE
+> çıktı — kuyruğa alınmadı, kota harcanmayacak.
+
+---
+
+
+Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 (slot bizim, sayfa dizinde değil) → mahalle kümeleri.
 
 
 ## devlet-mahallesi (14)
@@ -106,8 +199,6 @@ Toplam: **33 sayfa** — günde ~10 kotayla 3-4 gün.
       _hiç bilinmiyor_
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari ← 02.09 DİZİNDE (kendiliğinden, 31.08 taranmış; kota harcanmadı)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  
-      _keşfedildi, dizine alınmadı_
 
 ## seyh-samil-mahallesi (3)
 
@@ -157,104 +248,38 @@ Bu parti birinci partiden SONRA çekilir.
 
 ## guzelkent-mahallesi (8)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi  
-      _keşfedildi, dizine alınmadı_
 
 ## sehit-osman-avci-mahallesi (6)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence  
-      _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari  
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari  
-      _hiç bilinmiyor_
 
 ## yavuz-selim-mahallesi (5)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi  
-      _hiç bilinmiyor_
 
 ## devlet-mahallesi (4)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri  
-      _hiç bilinmiyor_
 - [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi  
       _keşfedildi, dizine alınmadı_
 
 ## goksu-mahallesi (4)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi  
-      _keşfedildi, dizine alınmadı_
 
 ## seyh-samil-mahallesi (4)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent  
-      _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent  
-      _keşfedildi, dizine alınmadı_
 
 ## seker-mahallesi (3)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence  
-      _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence  
       _hiç bilinmiyor_
 
 ## eryaman-mahallesi (2)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi  
-      _hiç bilinmiyor_
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi  
-      _keşfedildi, dizine alınmadı_
 
 ## yesilova-mahallesi (1)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower  
-      _hiç bilinmiyor_
 
 > 01.09 — Elden tur (cron silindi). API doğrulaması: Göksu ve Yavuz Selim mahalle
 > sayfaları kendiliğinden yeniden taranmış (01.09 / 31.08), kota harcanmadı.
