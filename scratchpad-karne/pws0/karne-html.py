@@ -909,9 +909,35 @@ yamyam_cumle = (
 # 6'nın yalnız 2'sinde doğru; "üç mahallede kutu da yok" gerçekte 6.
 # Bu blok GBP yorum kampanyasında hangi mahallenin adının geçeceğini
 # belirliyor — yanlış olması doğrudan iş kaybı, o yüzden artık veriden üretilir.
+
+# --- HARİTA KUTUSU ÜYELİĞİ — 03.09 düzeltmesi -------------------------------
+# `h` alanının anlamı partiler arasında kaymış: eski turlarda "kutudaki
+# sıramız", 01-02.09 partisinde "kutu var mı" (hep 1). Ölçüldü: 02.09'da altı
+# kayıtta h=1 iken işletme listesinde ya 2.'yiz ya hiç yokuz (Göksu, 2. Etap,
+# 3. Etap, ŞOA, Şeyh Şamil kutuda DEĞİLİZ). Karne bu yüzden "kutuda 1.'yiz"
+# diye yanlış rapor ediyordu. Tek doğru kaynak işletme adı listesi (hl/hp);
+# `h` yalnız liste hiç yoksa, eski kayıtlar için yedek.
+def kutu_sira(m):
+    """Harita kutusundaki sıramız: 1.. / 0 = kutu var ama biz yokuz / None = kutu yok."""
+    L = m.get("hl") or m.get("hp")
+    if isinstance(L, list) and L:
+        for i, ad in enumerate(L, 1):
+            if isinstance(ad, str) and "şirin" in ad.lower():
+                return i
+        return 0
+    h = m.get("h")
+    try:
+        return int(h) or None
+    except (TypeError, ValueError):
+        return None
+
+
+def kutuda(m):
+    return bool(kutu_sira(m))
+
 _mq = {k: (v.get("mahq") or {}) for k, v in OLCULEN.items()}
 _ORG_YOK = sorted(k for k, m in _mq.items() if not m.get("sira"))
-_KUTU_YOK = sorted(k for k, m in _mq.items() if not m.get("h"))
+_KUTU_YOK = sorted(k for k, m in _mq.items() if not kutuda(m))
 _CIFT_KAYIP = sorted(set(_ORG_YOK) & set(_KUTU_YOK))
 # Kutu HİÇ çıkmayan sorgu (hl boş) ile kutu var ama biz içinde değiliz farkı
 # kritik: birincisinde yorum emeği karşılık bulmaz, kutu zaten render edilmiyor.
@@ -937,7 +963,7 @@ _eski_mah = _C(r["s"].split("/")[0] for r in _eski_kendi)
 _eski_ilk = ", ".join(f"{_ADI(k.replace('-mahallesi',''))} {v}" for k, v in _eski_mah.most_common(3))
 
 _eniyi = ", ".join(
-    f"{_ADI(k)} ({_mq[k]['sira']}." + (" + harita kutusu" if _mq[k].get("h") else "") + ")"
+    f"{_ADI(k)} ({_mq[k]['sira']}." + (" + harita kutusu" if kutuda(_mq[k]) else "") + ")"
     for k in _ORG_VAR[:2])
 
 siradaki_html = "".join(

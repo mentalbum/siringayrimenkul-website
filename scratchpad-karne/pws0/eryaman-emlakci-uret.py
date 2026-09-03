@@ -65,6 +65,21 @@ for (const row of j.rows || []) console.log([row.impressions, row.clicks, row.po
 """
 
 
+def _kutuda(r):
+    """Harita kutusunda mıyız — İŞLETME LİSTESİNDEN (hl/hp).
+
+    03.09 düzeltmesi: `h` alanının anlamı partiler arasında kaymış. Eski
+    turlarda "kutudaki sıramız", 01-02.09 partisinde "kutu var mı" (hep 1).
+    Ölçüldü: 02.09'da altı kayıtta h=1 iken işletme listesinde ya 2.'yiz ya
+    hiç yokuz (Göksu, 2. Etap, 3. Etap, ŞOA, Şeyh Şamil'de kutuda DEĞİLİZ).
+    Liste varsa tek doğru kaynak odur; `h` yalnız listesiz eski kayıtlar için.
+    """
+    L = r.get("hl") or r.get("hp")
+    if isinstance(L, list) and L:
+        return any(isinstance(a, str) and "şirin" in a.lower() for a in L)
+    return str(r.get("h")) == "1"
+
+
 def tr_sayi(n, ondalik=0):
     """Türkçe biçim: binlik nokta, ondalık virgül (karne-html.py ile aynı)."""
     if n is None:
@@ -250,7 +265,7 @@ if os.path.exists(yol):
         except (TypeError, ValueError):
             sira = None
         serp[r["d"]] = {"d": r["d"], "sira": sira, "u": (r.get("u") or "")[:60],
-                        "harita": str(r.get("h")) == "1", "kanal": r.get("kanal") or "oturumlu/belirsiz"}
+                        "harita": _kutuda(r), "kanal": r.get("kanal") or "oturumlu/belirsiz"}
 serp = [serp[d] for d in sorted(serp) if d >= BASLANGIC.isoformat()]
 
 # ── 8. 15.08 açıklama kısaltması — commit konusu git'ten (rakam elle yazılmaz) ─
