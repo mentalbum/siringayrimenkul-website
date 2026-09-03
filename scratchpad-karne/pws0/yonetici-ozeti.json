@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-02",
+ "guncelleme": "2026-09-03",
  "rakamlar": [
   {
    "k": "ilk3_pay",
@@ -18,7 +18,7 @@
     "onceki": 57.8,
     "son": 68.7,
     "kiyas_tarihi": "2026-08-26",
-    "gun": 7,
+    "gun": 8,
     "birim": "puan",
     "yon": "nötr",
     "olcum_yontemi_degisti": true,
@@ -46,7 +46,7 @@
     "onceki": 95.9,
     "son": 72.6,
     "kiyas_tarihi": "2026-08-26",
-    "gun": 7,
+    "gun": 8,
     "birim": "puan",
     "yon": "nötr",
     "olcum_yontemi_degisti": true,
@@ -79,7 +79,7 @@
     "onceki": 1712,
     "son": 1645,
     "kiyas_tarihi": "2026-08-26",
-    "gun": 7,
+    "gun": 8,
     "birim": "tık",
     "yon": "kötü",
     "olcum_yontemi_degisti": false,
@@ -109,7 +109,7 @@
     "onceki": 17,
     "son": 18,
     "kiyas_tarihi": "2026-08-26",
-    "gun": 7,
+    "gun": 8,
     "birim": "temas",
     "yon": "iyi",
     "olcum_yontemi_degisti": false,
@@ -141,32 +141,42 @@
   {
    "k": "damla_kalan",
    "baslik": "Damla kuyruğunda kalan",
-   "deger": 44,
+   "deger": 33,
    "birim": "sayfa",
-   "gosterim": "44",
-   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 44; 20 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "gosterim": "33",
+   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 33; 32 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
    "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
    "ayrinti": {
-    "bitmis": 20,
-    "toplam": 64
+    "bitmis": 32,
+    "toplam": 65
    },
    "fark_7g": null
   }
  ],
  "bu_hafta_yapilan": [
   {
+   "tarih": "03.09",
+   "iso": "2026-09-03",
+   "baslik_sayisi": 1,
+   "basliklar": [
+    "DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE"
+   ],
+   "metin": "03.09 — DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE"
+  },
+  {
    "tarih": "02.09",
    "iso": "2026-09-02",
-   "baslik_sayisi": 6,
+   "baslik_sayisi": 7,
    "basliklar": [
     "GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88",
     "DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır",
     "DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ",
     "BAYAT MAHALLE HİPOTEZİ: İLK KONTROL DESTEKLEMİYOR",
     "HEDEF SORGULARDA SIRAYI KİM TUTUYOR: ETAP SAYFALARI DEĞİL, ANA SAYFA",
-    "Damla: üçüncü deneme de sınırda"
+    "Damla: üçüncü deneme de sınırda",
+    "İLK 3'E TAŞIMA: SINIFLANDIRMA VE ÖNCELİK"
    ],
-   "metin": "02.09 — GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88 · DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır · DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ (+3 başlık daha)"
+   "metin": "02.09 — GA4 AÇILDI, TEMAS ÖLÇÜLÜYOR, PR #88 · DAMLA: 2 kabul, 2 kendiliğinden, 3.'de kayan sınır · DİZİNDEKİ SAYFAYA İSTEK, AYNI GÜN TARAMA GETİRMEDİ (+4 başlık daha)"
   },
   {
    "tarih": "01.09",
@@ -177,25 +187,6 @@
     "38 KIRINTI KAYDI YENİDEN ÖLÇÜLDÜ (Özgün'ün Chrome'u, pws=0)"
    ],
    "metin": "01.09 — DAMLA ELDEN: 9 kabul, 2 kendiliğinden tarandı, 10.'da sınır · 38 KIRINTI KAYDI YENİDEN ÖLÇÜLDÜ (Özgün'ün Chrome'u, pws=0)"
-  },
-  {
-   "tarih": "31.08",
-   "iso": "2026-08-31",
-   "baslik_sayisi": 11,
-   "basliklar": [
-    "BAŞLIK ARAŞTIRMASI (730 ölçüm üzerinden, yeni sorgu harcanmadı)",
-    "WORKFLOW SENTEZİ — DARBOĞAZ: TARAMA TAHSİSİ",
-    "SONUÇ ÖLÇÜMÜ — KARNE ARTIK TIKLAMAYI DA GÖRÜYOR",
-    "İÇERİK HİPOTEZİ ÖLDÜ (site-emlakçı sorguları için de)",
-    "ADA CANONICAL'I REDDEDİLDİ (17/17)",
-    "\"ADA SAYFALARI TARAMA BÜTÇESİ YİYOR\" HİPOTEZİ DE ÖLDÜ",
-    "TARAMA TAZELİĞİ SIRAYI AYIRIYOR (n=128, API denetimi)",
-    "GÖRÜNMEZLERİN GERÇEK TEŞHİSİ",
-    "SITEMAP DÜZELTMESİNİN ÇIKTISI BENZETİLDİ (PR #87)",
-    "MAHALLE SAYFALARINDA TEK YÖNLÜ DÜŞÜŞ",
-    "KENDİ HATAM: GÖRÜNMEZ LİSTESİ 16 HAYALET İÇERİYORDU"
-   ],
-   "metin": "31.08 — BAŞLIK ARAŞTIRMASI (730 ölçüm üzerinden, yeni sorgu harcanmadı) · WORKFLOW SENTEZİ — DARBOĞAZ: TARAMA TAHSİSİ · SONUÇ ÖLÇÜMÜ — KARNE ARTIK TIKLAMAYI DA GÖRÜYOR (+8 başlık daha)"
   }
  ],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",
@@ -243,6 +234,7 @@
  },
  "uyarilar": [
   "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 505 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
+  "sonuc-ozeti.json en son 02.09 tarihinde üretildi (dönem 04.08–31.08); GSC 2-3 gün geriden gelir.",
   "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor.",
   "Ölçüm yöntemi değişti, fark iyi/kötü diye okunmaz: Site sorgularında ilk 3, İlk 3 içinde doğru sayfa (önceki nokta 27.08 öncesi turdan)."
  ]
