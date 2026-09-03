@@ -266,12 +266,30 @@ def dizin_bak(p, denetim, envanter, damla, olu_liste):
             yas = (datetime.date.fromisoformat(k["denetim_tarihi"]) - datetime.date.fromisoformat(k["son_tarama"])).days
         except ValueError:
             yas = None
+    # Denetim okumasının KENDİ yaşı. 03.09 dersi: bu alan olmadan tarama_kovasi
+    # "bugün itibarıyla" sanılıyor ve karışık tarihli kaynaklar (27.08 envanteri,
+    # 31.08 turu, 02.09 partisi) tek tabloda toplanınca yanlış sonuç çıkıyor.
+    # O gün 94 C+F sayfası taze denetlendi: türetilmiş dağılım ≤7g 26 / 30+g 39
+    # diyordu, GERÇEĞİ ≤7g 48 / 30+g 27'ydi. Bir deneyin kolları bu yüzden
+    # yanlış kurulmuştu (deney kolunun 4/10'u aslında tazeydi).
+    dy = None
+    if k.get("denetim_tarihi"):
+        try:
+            dy = (BUGUN - datetime.date.fromisoformat(k["denetim_tarihi"])).days
+        except ValueError:
+            dy = None
     return {"durum": k["durum"], "kapsam": k["kapsam"], "son_tarama": k["son_tarama"],
-            "kaynak": k["kaynak"], "tarama_yasi_gun": yas, "canonical": k.get("canonical")}
+            "kaynak": k["kaynak"], "tarama_yasi_gun": yas, "canonical": k.get("canonical"),
+            "denetim_tarihi": k.get("denetim_tarihi"), "denetim_yasi_gun": dy,
+            "kova_guvenilir": (dy is not None and dy <= 3)}
 
 
 def tarama_kovasi(d):
-    """Analiz ekseni için: denetim günü itibarıyla tarama yaşı kovası."""
+    """Denetim günü itibarıyla tarama yaşı kovası — BUGÜN itibarıyla DEĞİL.
+
+    Denetim okuması 3 günden eskiyse kovaya "(bayat okuma)" eklenir: o satır
+    üzerinden bugünkü tazelik hakkında karar VERİLEMEZ, önce yeniden denetlenir.
+    """
     if d.get("durum") is None:
         return "denetlenmedi"
     if d.get("son_tarama") is None:
@@ -279,11 +297,8 @@ def tarama_kovasi(d):
     y = d.get("tarama_yasi_gun")
     if y is None:
         return "?"
-    if y <= 7:
-        return "≤7 gün"
-    if y <= 30:
-        return "8-30 gün"
-    return "30+ gün"
+    kova = "≤7 gün" if y <= 7 else ("8-30 gün" if y <= 30 else "30+ gün")
+    return kova if d.get("kova_guvenilir") else kova + " (bayat okuma)"
 
 
 # ---------------------------------------------------------------- GSC
