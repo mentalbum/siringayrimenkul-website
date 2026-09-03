@@ -34,8 +34,9 @@ Gecelik tur cron'u 02:34'te çalışır; öncelik sırası PROTOKOL-gece.md'de.
 
 Karneyi betikle üret, elle sayma. Özgün'e özet verirken: ilk 3'te olan /
 4-10 arası / ilk 10 dışı sayıları + "Evinizi Satalım, Kiraya Verelim" ekinin
-kaç sonuçta göründüğü. Başlık değişikliği önerme — title'lar 5 Eylül'e kadar
-donuk (08.08 kararı).
+kaç sonuçta göründüğü. Başlık değişikliği önerme — title'lar **7 Eylül**'e
+kadar donuk (10.08 kararı; PROTOKOL-gece.md satır 157 esas — 31.08 notundaki
+'5 Eylül' yanlıştı, satır 531'de düzeltilmiş).
 
 ## Yedek kanal: uygulama-içi tarayıcı (28.08 doğrulandı)
 
