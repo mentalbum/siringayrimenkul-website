@@ -1078,6 +1078,61 @@ if _ST:
 else:
     sorgusinif_html = ""
 
+# --- ilk 3 hedefi: sınıf tablosu (02.09) -----------------------------------
+# Özgün'ün isteği: "bizi aratmalarda ilk 3'e taşı, ilk 3'te çıkmayanlarda."
+# Karne "kaçıncı sıradayız"ı gösteriyordu; hangi sorgunun NEDEN ilk 3'te
+# olmadığını göstermiyordu. Sebep sınıfı belli olmadan kaldıraç seçilemez:
+# dizin dışı sayfaya damla, yanlış sayfa çıkanına başka iş gerekir.
+try:
+    _I3 = json.load(open("ilk3-hedef.json"))
+except Exception:
+    _I3 = None
+if _I3:
+    _si = _I3["siniflar"]; _oz = _I3["ozet"]
+    _SIRA = ["E", "D", "F", "B", "C", "A"]
+    _RENK = {"E": "iyi", "D": "orta", "F": "orta", "B": "kotu", "C": "orta", "A": "kotu"}
+    _KALD = {
+        "E": "hedefte — korunacak",
+        "D": "slot bizim; doğru sayfa dizindeyse başlık hizası (07.09 sonrası), değilse damla",
+        "F": "aynı: önce doğru sayfayı dizine sok",
+        "B": "dizinde ama görünmüyor — dizin isteği çare değil, doğal yeniden tarama",
+        "C": "bir-iki sıra uzakta; ölçülmüş kaldıraç yok, gürültü sınırı yüksek",
+        "A": "damla (kanıtlı: ölü sayfada istek aynı gün tarama getiriyor)",
+    }
+    _i3_satir = ""
+    for k in _SIRA:
+        v = _si.get(k) or {}
+        if not v.get("n"):
+            continue
+        _alt = ", ".join(f"{a_} {n_}" for a_, n_ in (v.get("alt") or [])[:5]) or "—"
+        _i3_satir += (f'<tr><td><span class="chip {_RENK.get(k, "nul")}">{k}</span> '
+                      f'<strong>{esc(v.get("ad") or _I3["siniflar"][k].get("ad", k))}</strong></td>'
+                      f'<td class="num">{tr_sayi(v["n"])}</td><td class="alt">{esc(_alt)}</td>'
+                      f'<td class="alt">{esc(_KALD.get(k, ""))}</td></tr>')
+    _slot = _oz.get("slot_bizim_sayfa_dizinsiz")
+    if _slot is None:
+        _slot = sum(1 for r in _I3["satirlar"] if r.get("sinif") in ("D", "F") and r.get("dogru_sayfa_dizin_disi"))
+    ilk3hedef_html = f"""
+  <h2>İlk 3′te olmayan sorgular — neden?</h2>
+  <p class="not">“Kaçıncı sıradayız” tek başına ne yapılacağını söylemiyor. {tr_sayi(_oz["sorgu_toplam"])}
+  sorgu, ilk 3′te <strong>doğru sayfamızın</strong> olup olmamasına göre sınıflandı; her sınıfın
+  ilacı farklı. Sınıflar ölçümden üretiliyor, elle yazılmıyor.</p>
+  <div class="tablo-kabuk"><table>
+    <thead><tr><th>Sınıf</th><th class="num">Sorgu</th><th>Kırılım</th><th>Ölçülmüş kaldıraç</th></tr></thead>
+    <tbody>{_i3_satir}</tbody>
+  </table></div>
+  <div class="pano" style="margin-top:14px">
+    <h3>Kotanın gideceği yer: {tr_sayi(_slot)} sorgu</h3>
+    <p class="alt" style="margin:8px 0 0">Bu sorgularda arama sonucunda <strong>zaten bir
+    sayfamız çıkıyor</strong> — ama yanlış sayfa (ada, mahalle, eski adres ya da komşu site).
+    Doğru site sayfası ise Google′da hiç yok. Yani rekabeti kazanmışız, yalnız doğru sayfa
+    dizinde değil. Kuyruğun geri kalanından farkı: burada sorgunun talebi <strong>ölçülü</strong>
+    (sayfa bir sıra tutuyor), diğerlerinde talep bilinmiyor. Damla kuyruğunda ÖNCELİK 1.</p>
+  </div>
+"""
+else:
+    ilk3hedef_html = ""
+
 # --- sırayı KİM tutuyor (31.08) -------------------------------------------
 # Karnenin baş rakamı "%68'i ilk 3'te" idi ve tek başına yanıltıcıydı: o
 # sıraların üçte biri YANLIŞ sayfamızla kazanılmış. Site adını arayan kişi ada
@@ -2550,6 +2605,7 @@ tr.grup td {{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; co
 
 {takvim_html}
 
+{ilk3hedef_html}
 {tiksonrasi_html}
 {sorgusinif_html}
 {dogrusayfa_html}
