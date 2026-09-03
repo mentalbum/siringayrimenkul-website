@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-08-31",
+ "guncelleme": "2026-09-03",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -78,6 +78,15 @@
    "olcum": "02.09: doğru sayfayla ilk 10'da sıralanan 275 sorguda gelen iç bağ ile sıra arasında ilişki YOK — Spearman rho +0,075 (p=0,22, 5.000 permütasyon); ilk 3'te bağ medyanı 13, 4-10 bandında da 13; bağ çeyreklerinde ilk-3 oranı %95/%89/%88/%93. Bağ envanteri build çıktısından sayıldı (522 sayfa, medyan 13, aralık 5-59).",
    "kaynak": "02.09 analizi (build HTML'lerinden bağ sayımı + sonuclar-site-emlakci.jsonl)",
    "kisit": "20.08'de iç bağın DİZİNE sokmadığı ölçülmüştü; şimdi SIRALAMAYA da etkisi olmadığı ölçüldü. İki soru da kapandı — site sayfalarına çapraz bağ eklemek bir kaldıraç değil. (Ana sayfadan site sayfalarına sıfır bağ olması da bu ölçümün içinde.)"
+  },
+  {
+   "durum": "olu",
+   "ad": "Eski adresi yeniden taratma (yönlendirme birleştirme)",
+   "olcum": "İlk 3'e giremeyen 9 sorguda sırayı, 26.07 taşımasından kalan ESKİ adres tutuyor (ör. 'Anadolu Sitesi emlakçı' #4 → /mahalleler/guzelkent/anadolu-sitesi). Hipotez: eski adres yeniden taranırsa Google 308'i görür, birleştirir, slot doğru sayfaya geçer. ÖLÇÜM 03.09: dokuzunun DOKUZUNDA da SERP ölçümü, Google'ın o adresi son taramasından SONRA yapılmış — yani Google taze kopyasıyla bile eski adresi göstermeyi sürdürüyor. Üçünde (Atakent 1 Aşiyan, Portakal Çiçeği, Yayıklı 4) Google 'Page with redirect' damgasını 25-27.08'de basmış, 27-28.08 ölçümünde eski adres HÂLÂ sıradaydı.",
+   "sonuc": "Eski adrese dizin isteği göndermek slotu kısa vadede serbest bırakmıyor; kota oraya harcanmaz. Sınır: 'Page with redirect' damgası ile ölçüm arası yalnız 1-3 gün — birleştirme daha uzun sürüyor olabilir, 'hiç olmaz' değil 'günler içinde olmaz' denir.",
+   "tarih": "2026-09-03",
+   "n": 9,
+   "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı."
   }
  ]
 }
