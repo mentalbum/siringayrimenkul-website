@@ -775,3 +775,21 @@ Not: ana sayfadan site sayfalarına SIFIR bağ var — ölçüm bunu da kapsıyo
 SERP GÜRÜLTÜSÜ: 1-6 gün arayla 268 çiftte aynı sıra %55, ±1 içinde %84, sd 1,44;
 4-5'ten başlayanların %42'si sonraki ölçümde "ilk 3'e geçmiş" görünüyor. Yani
 4-5 bandında tek ölçümlük "ilk 3'e çıktı" iddiası GÜÇSÜZ — üç ölçümün medyanı şart.
+
+## 03.09 — DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE
+
+İlk kez "slot bizim ama sayfa dizinde değil" listesinden gidildi. 12 aday API ile
+denetlendi (beceri kuralı: istek öncesi API şart):
+- 4'ü kendiliğinden dizine girmiş — Yeşil Göksu ve Akdal Residence AYNI GÜN (03.09)
+  taranmış, Paro Life 02.09, Arslanlar 31.08. Kota harcanmadı. Bu, 02.09'daki
+  "arayüz 'yok' derken sayfa çoktan taranmış olabiliyor" dersini üçüncü kez doğruladı.
+- 8'inin 8'i de kabul: Daştarlı, Şergah, Laçin, Utkan, Gözde 2, Yeşim Kent 2,
+  Bulvar 1071, Çizgi Ötesi. Sınır balonu görülmedi.
+
+Canlı test süresi yine değişken: Bulvar 1071'de onay 80 saniyede geldi (30 sn'de
+"istendi" yoktu). Tekrar basılmadı — beceri kuralı doğru çalıştı.
+
+Bu 8 sayfanın hepsi ÖNCELİK 1'den: her birinin sorgusunda SERP'te zaten bir
+sayfamız var (ada/mahalle/eski adres/komşu site) ama doğru sayfa dizinde değildi.
+Dizine girip girmedikleri 04-05.09'da API ile bakılacak; girerse aynı sorguda
+sıra değişimi 06.09 ölçümünde görülür. Kalan açık hedef 34.

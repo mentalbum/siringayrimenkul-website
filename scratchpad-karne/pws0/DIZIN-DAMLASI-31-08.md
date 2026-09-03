@@ -66,29 +66,29 @@ doğru sayfa dizinde değil: dizine girdiği anda aynı sorguda daha iyi eşleş
 Kuyruğun geri kalanından farkı: burada sorgunun talebi ÖLÇÜLÜ (sayfa zaten bir sıra
 tutuyor), diğerlerinde talep bilinmiyor.
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/dastarli-sitesi ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Dastarlı Sitesi emlakçı" sorgusunda 1. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi  
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi ← 03.09 DİZİNDE (kendiliğinden, son tarama 2026-09-03; kota harcanmadı)
       _"Yeşil Göksu Konutyapı Kooperatifi emlakçı" sorgusunda 1. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/arslanlar-sitesi ← 03.09 DİZİNDE (kendiliğinden, son tarama 2026-08-31; kota harcanmadı)
       _"Arslanlar Sitesi emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri  
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/sergah-evleri ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Sergah Evleri emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/lacin-eryaman-sitesi ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Laçin Eryaman Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/paro-life ← 03.09 DİZİNDE (kendiliğinden, son tarama 2026-09-02; kota harcanmadı)
       _"Paro Life emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/utkan-sitesi ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Utkan Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gozde-2-sitesi ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Gözde 2 Sitesi emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Yeşim Kent2 Sitesi emlakçı" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi ← 03.09 istek gönderildi (onay balonu 80 sn'de geldi)
       _"Bulvar 1071 Sitesi emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence ← 03.09 istek gönderildi (onay balonu görüldü)
       _"Çizgi Ötesi Residence emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence  
+- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence ← 03.09 DİZİNDE (kendiliğinden, son tarama 2026-09-03; kota harcanmadı)
       _"Akdal Residence emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent  
       _"Liderkent emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
@@ -297,3 +297,9 @@ Bu parti birinci partiden SONRA çekilir.
 > 02.09 08:50 — Meltem ikinci deneme yine "sorun oluştu": pencere hâlâ kapalı (dünkü istekler 08:00-08:45+). Öğleden sonra ya da yarın sabah Meltem'den devam; bugün başka deneme yapılmadı.
 
 > 02.09 17:20 — Meltem üçüncü deneme yine "sorun oluştu". Bugün başka deneme YAPILMAYACAK (başarısız denemeler de sayılıyor olabilir). Yarın 03.09 sabah 09:00 sonrası Meltem'den devam.
+
+> 03.09 13:50-14:20 — Elden tur. API ile 12 aday denetlendi: 4'ü kendiliğinden
+> dizine girmiş (Yeşil Göksu ve Akdal AYNI GÜN taranmış, Paro Life 02.09,
+> Arslanlar 31.08) — kota harcanmadı. Kalan 8'in 8'i de KABUL: Daştarlı, Şergah,
+> Laçin, Utkan, Gözde 2, Yeşim Kent 2, Bulvar 1071, Çizgi Ötesi. Sınır balonu
+> gelmedi; 8'de durduruldu (dünkü kabuller kayan pencerede). Kalan açık 34.
