@@ -179,14 +179,30 @@ if (komut === "denetle") {
   const jeton = await erisimJetonu();
   const p = pencere(await veriGunleri(jeton, gun + PAY), gun);
   if (!p) { console.error("GSC hiç veri günü döndürmedi; pencere kurulamadı"); process.exit(4); }
-  const j = await api(jeton, SA, { startDate: p.bas, endDate: p.bit, dimensions: ["query"], rowLimit: 1000 });
+  // 03.09 düzeltmesi — SAYFALAMA YOKTU ve talebin yarısı görünmüyordu.
+  // Tek istek rowLimit:1000 gönderiyordu; GSC önce tıklı satırları, sonra tıksızları
+  // ALFABETİK sırada döndürdüğü için döküm "erland kiralık"ta kesiliyordu — f'den
+  // z'ye tek satır yok. Bedeli: 2.618 sorgu / 44.683 gösterim yerine 1.000 / 23.555
+  // görünüyordu (%47 eksik) ve "mahalle sorguları talebin %1'i" gibi sınıf payları
+  // saf alfabe artefaktıydı (göksu, güzelkent, tunahan, yavuz selim, şeyh şamil,
+  // şehit osman avcı, yeşilova — hepsi "e"den sonra geliyor).
+  // Alttaki `sayfalar` dalında döngü zaten vardı; aynısı buraya kopyalandı.
+  const satirlar = [];
+  for (let bas = 0; ; bas += 1000) {
+    const j = await api(jeton, SA, {
+      startDate: p.bas, endDate: p.bit, dimensions: ["query"], rowLimit: 1000, startRow: bas,
+    });
+    const r = j.rows || [];
+    satirlar.push(...r);
+    if (r.length < 1000) break;
+  }
   // İlk satır pencere başlığı: pencere veriyle aynı dosyada gezsin diye. Tüketiciler
   // (sorgu-sinifi-to.py vb.) ilk sütunu int()'e çeviremeyince satırı zaten atlar.
   console.log(`# pencere\t${p.bas}\t${p.bit}\t${p.gun}`);
-  for (const r of j.rows || []) {
+  for (const r of satirlar) {
     console.log(`${r.impressions}\t${r.clicks}\t${r.position.toFixed(1)}\t${r.keys[0]}`);
   }
-  console.error(`(${(j.rows || []).length} sorgu; pencere ${p.bas}–${p.bit}, ${p.gun} veri günü; sütunlar: gösterim, tık, pozisyon, sorgu)`);
+  console.error(`(${satirlar.length} sorgu; pencere ${p.bas}–${p.bit}, ${p.gun} veri günü; sütunlar: gösterim, tık, pozisyon, sorgu)`);
 } else if (komut === "sayfalar") {
   // Sayfa boyutunda talep dökümü. Kullanımı: hangi sayfa gerçekten ARANIYOR?
   // 2026-08-20 otopsisi: dizine girmenin tek gerçek ayırıcısı sorgu talebiydi
