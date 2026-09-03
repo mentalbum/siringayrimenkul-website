@@ -88,3 +88,34 @@ değiştirir" anlamına gelir ve ayrıca not edilir.
   ise kanıtlanmamış 68 sorgunun kapısı — bir günlük gecikme buna değer.
 - **Gösterim kaybı**: sayfalar zaten dizinde; istek dizinden çıkarma değil,
   yeniden tarama talebidir. "Gösterimler düşmesin" kuralıyla çelişmiyor.
+
+---
+
+## 03.09 akşamı — KOLLAR YENİDEN KURULUYOR (yakalanan hata)
+
+Yukarıdaki 10 çift, `ilk3-hedef.json`'daki `son_tarama` alanından türetildi. O alan
+karışık tarihli denetim dosyalarından besleniyor (27.08 envanteri, 31.08 turları,
+02.09 partileri) — yani "36 gündür taranmamış" etiketi 27.08'de doğruydu, bugün
+değil.
+
+Kolları kurduktan sonra 20 sayfanın TABAN denetimi alındı (`deney-taban-0309.tsv`)
+ve beşinin aslında taze olduğu görüldü:
+
+| sayfa | kol | türetilen yaş | GERÇEK son tarama |
+|---|---|---|---|
+| eryaman-mahallesi/kent-konaklari-sitesi | deney | 38 gün | **03.09** (bugün) |
+| sehit-osman-avci-mahallesi/zekioglu-rezidans | deney | 38 gün | **03.09** (bugün) |
+| goksu-mahallesi/park-inci-konutlari | deney | 35 gün | **02.09** |
+| eryaman-mahallesi/dogankaya-sitesi | deney | — | **01.09** |
+| goksu-mahallesi/vaditepe-baspinar | kontrol | — | **03.09** (bugün) |
+
+Deney kolunun 4/10'u zaten taze olsaydı "istekten sonra tarandı" ölçütü anlamsız
+çıkardı — istek gitmeden önce zaten taranmışlardı.
+
+**Alınan ders (yönteme yazıldı):** kol ataması, atamadan hemen önce alınmış TEK
+BİR denetim turuna dayanmalı. Türetilmiş tarama yaşı deney tasarımı için
+kullanılamaz; yalnız kaba önceliklendirme için kullanılır.
+
+Kollar, 94 C+F sayfasının tamamının 03.09 denetimiyle yeniden kurulacak
+(`cf-taze-denetim.tsv`). Taban okuması artık aynı gün alınmış olacak.
+
