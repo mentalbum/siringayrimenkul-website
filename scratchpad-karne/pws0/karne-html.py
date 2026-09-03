@@ -43,6 +43,8 @@ Doğrudan okunan ölçüm dosyaları (bu klasör):
                                     çekimi KARNE_SCRATCH'e yazar, API düşerse oradan okur)
   python3 cihaz-uret.py           → cihaz.json             (gsc-q.mjs, mülk düzeyi device)
   --- bütün üreticilerden SONRA (JSON'larını okurlar), karne-html.py'den ÖNCE ---
+  python3 mudahale-defteri-uret.py → mudahale-defteri.json (istek→dizin→sıra döngüsü;
+        önce: gsc-api denetle-dosya <istek gönderilen URL'ler> <scratchpad>/istek-sonuc.tsv)
   python3 anlik-goruntu-uret.py   → karne-gecmis.jsonl + karne-gecmis-ozet.json
                                     (günlük zaman serisi; gsc-q.mjs/ga4-q.mjs ile geri doldurma;
                                      --yerel API'ye gitmez, --yalniz-anlik geri doldurmaz.
@@ -1077,6 +1079,70 @@ if _ST:
 """
 else:
     sorgusinif_html = ""
+
+# --- müdahale defteri (03.09) ----------------------------------------------
+# Karne 24 bölüme çıkmıştı ama hiçbiri "yaptığımız iş işe yaradı mı" diye
+# sormuyordu: 14.08'den beri onlarca dizin isteği gönderildi, sonucuna kimse
+# bakmadı. Bu bölüm döngüyü kapatır — istek → tarama → dizin → sıra.
+# Üretici: mudahale-defteri-uret.py (kuyruk işaretleri + GSC denetimi + SERP)
+try:
+    _MD = json.load(open("mudahale-defteri.json"))
+except Exception:
+    _MD = None
+if _MD and _MD.get("olgun"):
+    _md_satir = ""
+    for t in _MD["tarihe_gore"]:
+        _bek = t["istek"] - t["olgun"]
+        _not = f'{_bek} tanesi henüz erken' if _bek else "—"
+        _oran = f'%{round(t["girdi"] * 100 / t["olgun"])}' if t["olgun"] else "—"
+        _md_satir += (f'<tr><td><strong>{esc(t["tarih"])}</strong></td>'
+                      f'<td class="num">{t["istek"]}</td>'
+                      f'<td class="num">{t["girdi"]}</td>'
+                      f'<td class="num">{_oran}</td>'
+                      f'<td class="alt">{esc(_not)}</td></tr>')
+    _girmeyen = [x for x in _MD["satirlar"]
+                 if x["gun_gecti"] >= 3 and not x["dizinde"]][:8]
+    _gm = "".join(
+        f'<li><span><strong>{esc(x["sayfa"])}</strong> '
+        f'<span class="alt">{esc(x["istek_tarihi"])} · {x["gun_gecti"]} gün önce'
+        + (f' · {esc(x["kapsam"])}' if x.get("kapsam") else "") + '</span></span>'
+        f'<span class="chip kotu">girmedi</span></li>' for x in _girmeyen) \
+        or '<li class="alt">Yok — olgun isteklerin hepsi dizine girdi.</li>'
+    mudahale_html = f"""
+  <h2>Yaptığımız iş işe yaradı mı</h2>
+  <p class="not">Karne “ne durumdayız”ı gösteriyor; bu bölüm <strong>“yaptığımız iş sonuç
+  verdi mi”</strong>yi gösteriyor. Gönderilen her dizin isteği burada izleniyor: sayfa
+  tarandı mı, dizine girdi mi, sırası ne oldu. İsteğin üzerinden 3 gün geçmeden sonuç
+  okunmaz — o satırlar “henüz erken” sayılır.</p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{tr_sayi(_MD["toplam_istek"])}</div><div class="etiket">14.08′den beri gönderilen istek</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_MD["hepsi_girdi"])}</div><div class="etiket">şu an dizinde — %{tr_sayi(_MD["hepsi_donusum"])} dönüşüm</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_MD["ayni_gun_tarandi"])}</div><div class="etiket">istek GÜNÜ taranan sayfa</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_MD["girenlerden_ilk3"])}</div><div class="etiket">girenlerden ilk 3′te (sırası ölçülen {_MD["girenlerden_olculdu"]})</div></div>
+  </div>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Tur tur sonuç</h3>
+      <div class="tablo-kabuk"><table>
+        <thead><tr><th>Tur</th><th class="num">İstek</th><th class="num">Dizine girdi</th><th class="num">Oran</th><th>Not</th></tr></thead>
+        <tbody>{_md_satir}</tbody>
+      </table></div>
+      <p class="alt" style="margin:10px 0 0">Sıra okumak için isteğin üzerinden 3 gün
+      geçmesi beklenir ({_MD["olgun"]} istek olgun, {_MD["dizine_girdi"]}′i dizinde =
+      %{tr_sayi(_MD["donusum"])}); ama DİZİNE giriş çok daha hızlı olabiliyor —
+      03.09′da gönderilen 8 isteğin 8′i aynı gün taranıp dizine girdi.</p>
+    </div>
+    <div class="pano">
+      <h3>İstek gitti ama girmedi</h3>
+      <ul>{_gm}</ul>
+      <p class="alt" style="margin:10px 0 0">Bunlara ikinci kez istek göndermek kotayı
+      yakar; sayfanın kendisinde ya da talebinde bir sorun var demektir.</p>
+    </div>
+  </div>
+  <p class="alt" style="margin-top:10px"><strong>Dürüst okuma.</strong> {esc(_MD["uyari"])}</p>
+"""
+else:
+    mudahale_html = ""
 
 # --- ilk 3 hedefi: sınıf tablosu (02.09) -----------------------------------
 # Özgün'ün isteği: "bizi aratmalarda ilk 3'e taşı, ilk 3'te çıkmayanlarda."
@@ -2605,6 +2671,7 @@ tr.grup td {{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; co
 
 {takvim_html}
 
+{mudahale_html}
 {ilk3hedef_html}
 {tiksonrasi_html}
 {sorgusinif_html}

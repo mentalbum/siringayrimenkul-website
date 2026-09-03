@@ -793,3 +793,23 @@ Bu 8 sayfanın hepsi ÖNCELİK 1'den: her birinin sorgusunda SERP'te zaten bir
 sayfamız var (ada/mahalle/eski adres/komşu site) ama doğru sayfa dizinde değildi.
 Dizine girip girmedikleri 04-05.09'da API ile bakılacak; girerse aynı sorguda
 sıra değişimi 06.09 ölçümünde görülür. Kalan açık hedef 34.
+
+## 03.09 — MÜDAHALE DEFTERİ: İSTEK → DİZİN DÖNÜŞÜMÜ %95
+
+Karne 24 bölüme çıkmıştı ama hiçbiri "yaptığımız iş işe yaradı mı" diye
+sormuyordu. mudahale-defteri-uret.py döngüyü kapatıyor: kuyruk işaretleri +
+GSC denetimi + SERP tarihçesi.
+
+14.08'den bu yana 37 sayfaya istek gönderilmiş:
+- 35'i ŞU AN dizinde (%95)
+- 21'i istek GÜNÜ taranmış
+- Olgun (3+ gün) 18 isteğin 16'sı dizinde (%89), 16'sı istekten sonra taranmış
+- Girenlerin sırası ölçülen 16 sayfadan 10'u ilk 3'te
+- Girmeyen 2: 23.08 turundan
+
+BUGÜNKÜ REKOR: 03.09'da gönderilen 8 isteğin 8'i de istekten ~1 saat sonra
+taranıp dizine girdi. Ölü sayfada istek → tarama bağı artık n=8 ile de sağlam.
+
+DÜRÜST SINIR: bu bir gözlem defteri, kontrollü deney değil. Aynı gün istek
+GÖNDERİLMEDEN kendiliğinden dizine giren 4 sayfa da vardı; "istek işe yaradı"
+ile "zaten girecekti" bu veriyle ayrılamaz. Karnede bu uyarı basılı.
