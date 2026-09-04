@@ -87,3 +87,52 @@ denendi ve **17/17 reddedildi** — bu yönde iş yapılmaz.
 `s` alanını sorgu adından türetmişim, kuyruktaki gerçek değerden değil).
 Kuyruğun 511 hedefinin tamamı kontrol edildi, hepsinin içerik dosyası var.
 Kayıtlar kuyrukla hizalandı; doğru sayı **32**.
+
+---
+
+## Teşhis kesinleşti: tarama değil, AYIRT EDİCİLİK
+
+32 vakadaki doğru sayfaların tamamı 04.09'da API ile denetlendi:
+
+| | n |
+|---|---:|
+| dizinde | **29 / 31** |
+| son 7 gün içinde taranmış | **19** |
+| 8-30 gün | 7 |
+| 30+ gün | 3 |
+| dizin dışı | 2 (ikisi de benim kayıt hatamdan çıkan hayalet slug) |
+
+Yani Google bu sayfaları **biliyor**, çoğunun kopyası **taze**, ve yine de
+başka bir sayfamızı seçiyor. Ne dizin sorunu, ne tarama sorunu. Google iki
+benzer sayfamız arasında seçim yapamıyor ve yanlış olanı seçiyor.
+
+Ayırt edicilik için elimizdeki tek kanıtlı kaldıraç **başlık** (07-09.08,
+n=22: 13 yükseldi, 0 düştü, ort 3,64→2,27). 07.09'da donma bitiyor.
+
+### 07.09 iş listesi — ayırt edici başlık (öncelik sırası)
+
+Kopyası TAZE olanlar önce; değişiklik Google'a hemen ulaşır.
+
+**A. Bir kelime farkla ayrışan çiftler (başlıkta farkı öne çıkar):**
+1. `altay-mahallesi/age-bloklari` ← "Age **Sitesi**" ile karışıyor (≤7g)
+2. `tunahan-mahallesi/camli-klima-bloklari` ← "Klima Blokları" ile (≤7g)
+3. `eryaman-mahallesi/guzel-ankara-evleri-sitesi` ← "Güzel Ankara Sitesi" ile (≤7g)
+4. `eryaman-mahallesi/endora-park` ← "Endora Eryaman" ile (≤7g)
+5. `eryaman-mahallesi/bahar-sitesi` ← Göksu'daki adaşıyla (≤7g)
+6. `altay-mahallesi/uzuner-konutlari` ← "Uzuner Sitesi" eski adresiyle (≤7g)
+7. `altay-mahallesi/sutek-bloklari` ← Şeyh Şamil'deki adaşıyla (8-30g)
+8. `devlet-mahallesi/hotki-meydan` ← "Hotki Ritm" ile (30+g — önce tarama)
+
+**B. Ortak kelimesi olmayan, doğru sayfa zayıf (ayrı teşhis gerek):**
+9. `tunahan-mahallesi/dema-park` ← Age Sitesi çıkıyor (≤7g, taze ama seçilmiyor)
+10. `altay-mahallesi/erland-residence` ← Address Eryaman çıkıyor (8-30g)
+11. `altay-mahallesi/izgi-park-evleri` ← Palmiye Evleri çıkıyor (30+g)
+12. `devlet-mahallesi/yeni-huzur-bahcesi-sitesi` ← Cevizlidere çıkıyor (≤7g)
+
+B grubu daha zor: Google hiç ortak kelimesi olmayan bir sayfayı seçiyor.
+Bu, doğru sayfanın o sorgu için çok zayıf olduğu anlamına gelir; başlık tek
+başına yetmeyebilir. Ölçüm 21.09'da A ve B ayrı raporlanır.
+
+**Dokunulmayacak:** ada sayfası vakaları (canonical 17/17 reddedildi),
+eski adres kopyaları (kaldıraç yok, 01.10'da yeniden ölçülecek),
+ana sayfa vakaları (15.08 dersi: ana sayfaya dokunmak TO'yu düşürdü).
