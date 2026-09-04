@@ -18,8 +18,29 @@
 
 ## 1. Google Business Profile — işletme açıklaması (kopyala-yapıştır)
 > Konum: GBP paneli → Profili düzenle → Açıklama (750 karakter sınırı)
-> DURUM (2026-08-27): Panele girilen açıklama Google tarafından
-> "Onaylanmayan" (politika ihlali) olarak REDDEDİLDİ. Muhtemel tetikleyiciler:
+>
+> ⚠️ **DURUM DÜZELTMESİ (04.09.2026 — panelden okundu, authuser=2).** Aşağıdaki
+> "hazırlanan temiz metin" GBP'ye **HİÇ GİRİLMEDİ ve girilmesine gerek yok.**
+> Açıklama alanında şu an 27.08'de yazılan metin duruyor ve kurallara UYGUN
+> (720 yok, "konut hafızası" yok, 11 mahalle):
+> *"Eryaman emlakçısı Şirin Gayrimenkul. Evinizi satarken veya kiraya verirken
+> fiyatı ilanlardaki eski rakamlardan değil, sitenizi blok blok tanıyan yerel
+> emlakçınızla gerçekleşen satışlardan belirleyin. Hizmet bölgemiz Eryaman'ın 11
+> mahallesi: Tunahan, Şeyh Şamil, Yavuz Selim, Göksu, Yeşilova, Şeker, Şehit
+> Osman Avcı, Güzelkent, Altay, Devlet ve Eryaman. Sitelerin tapu, ada-parsel ve
+> blok bilgilerini kayıt altında tutuyor, değerlemeyi satışın ve kiralamanın ilk
+> adımı olarak yapıyoruz. Taşınmaz Ticareti Yetki Belgesi No: 0603771. Değerleme
+> görüşmesi için telefon veya WhatsApp: 0 532 363 96 60. Her…"*
+> **BU ALANI DEĞİŞTİRME** — altındaki lirik metin bir taslaktır, çalışan
+> açıklamanın üstüne yazılırsa onay süreci sıfırlanır.
+> Ölçülemeyen tek şey onay rozeti: modal shadow DOM'da, `read_page`/`javascript`
+> göremiyor ve 560px daraltma hilesi bu sefer de işe yaramadı. Kamuya açık
+> Haritalar kartında açıklama hiç gösterilmiyor — ama bu tek başına ret kanıtı
+> DEĞİL, Google birçok işletmede açıklamayı zaten yayınlamıyor.
+>
+> ESKİ DURUM NOTU (2026-08-27, artık geçersiz): Panele girilen açıklama Google
+> tarafından "Onaylanmayan" (politika ihlali) olarak REDDEDİLDİ. Muhtemel
+> tetikleyiciler:
 > "ücretsiz ev değerleme" (açıklamada promosyon/teklif odağı yasak,
 > support.google.com/business/answer/3038177) ve 13 mahalle adının art arda
 > listelenmesi (anahtar kelime yığma). Aşağıdaki temiz metin bu redde göre
