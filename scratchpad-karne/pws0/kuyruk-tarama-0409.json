@@ -1,0 +1,1186 @@
+[
+ {
+  "s": "yalin::tunahan-mahallesi/canberk-sitesi",
+  "q": "canberk sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/canberk-sitesi",
+  "gost": 138,
+  "gsc_poz": 10.5
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/gokdemir-premium",
+  "q": "gökdemir premium",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/gokdemir-premium",
+  "gost": 131,
+  "gsc_poz": 11.3
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/sarigul-sitesi",
+  "q": "sarıgül sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/sarigul-sitesi",
+  "gost": 101,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/mavicam-sitesi",
+  "q": "maviçam sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/mavicam-sitesi",
+  "gost": 93,
+  "gsc_poz": 10.0
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/ozar-sitesi",
+  "q": "özar sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/ozar-sitesi",
+  "gost": 79,
+  "gsc_poz": 8.3
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/dema-park",
+  "q": "dema park",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/dema-park",
+  "gost": 75,
+  "gsc_poz": 5.7
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/metromall-sitesi",
+  "q": "metromall konutları",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/metromall-sitesi",
+  "gost": 63,
+  "gsc_poz": 10.6
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/sutek-sitesi",
+  "q": "sutek sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/sutek-sitesi",
+  "gost": 58,
+  "gsc_poz": 7.8
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/stfa-bloklari",
+  "q": "stfa blokları",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/stfa-bloklari",
+  "gost": 48,
+  "gsc_poz": 8.0
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/kur-sitesi-46495-ada",
+  "q": "kur sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/kur-sitesi-46495-ada",
+  "gost": 45,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/haznedaroglu-bloklari",
+  "q": "haznedaroğlu blokları",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari",
+  "gost": 43,
+  "gsc_poz": 9.4
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/canberk-sitesi",
+  "q": "eryaman canberk sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/canberk-sitesi",
+  "gost": 35,
+  "gsc_poz": 8.2
+ },
+ {
+  "s": "yalin::tunahan-mahallesi/su-damlasi-sitesi",
+  "q": "su damlası sitesi",
+  "mah": "tunahan-mahallesi",
+  "hedef": "/mahalleler/tunahan-mahallesi/su-damlasi-sitesi",
+  "gost": 30,
+  "gsc_poz": 12.7
+ },
+ {
+  "s": "yalin::altay-mahallesi/address-eryaman",
+  "q": "address eryaman",
+  "mah": "altay-mahallesi",
+  "hedef": "/mahalleler/altay-mahallesi/address-eryaman",
+  "gost": 136,
+  "gsc_poz": 9.5
+ },
+ {
+  "s": "yalin::altay-mahallesi/oasis-tower",
+  "q": "oasis tower",
+  "mah": "altay-mahallesi",
+  "hedef": "/mahalleler/altay-mahallesi/oasis-tower",
+  "gost": 60,
+  "gsc_poz": 9.7
+ },
+ {
+  "s": "yalin::altay-mahallesi/erland-residence",
+  "q": "erland residence",
+  "mah": "altay-mahallesi",
+  "hedef": "/mahalleler/altay-mahallesi/erland-residence",
+  "gost": 37,
+  "gsc_poz": 8.4
+ },
+ {
+  "s": "yalin::altay-mahallesi/vizyon-prestige",
+  "q": "vizyon prestige",
+  "mah": "altay-mahallesi",
+  "hedef": "/mahalleler/altay-mahallesi/vizyon-prestige",
+  "gost": 31,
+  "gsc_poz": 7.6
+ },
+ {
+  "s": "yalin::altay-mahallesi/address-eryaman",
+  "q": "address eryaman yol tarifi",
+  "mah": "altay-mahallesi",
+  "hedef": "/mahalleler/altay-mahallesi/address-eryaman",
+  "gost": 30,
+  "gsc_poz": 8.3
+ },
+ {
+  "s": "yalin::devlet-mahallesi/demirkent-sitesi",
+  "q": "demirkent sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/demirkent-sitesi",
+  "gost": 122,
+  "gsc_poz": 8.8
+ },
+ {
+  "s": "yalin::devlet-mahallesi/ornek-ari-sitesi",
+  "q": "örnek arı sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/ornek-ari-sitesi",
+  "gost": 88,
+  "gsc_poz": 6.5
+ },
+ {
+  "s": "yalin::devlet-mahallesi/oz-gimat-sitesi",
+  "q": "öz gimat sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/oz-gimat-sitesi",
+  "gost": 79,
+  "gsc_poz": 6.2
+ },
+ {
+  "s": "yalin::devlet-mahallesi/camdali-sitesi",
+  "q": "çamdalı sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/camdali-sitesi",
+  "gost": 78,
+  "gsc_poz": 8.3
+ },
+ {
+  "s": "yalin::devlet-mahallesi/cagkent-sitesi",
+  "q": "çağkent sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/cagkent-sitesi",
+  "gost": 65,
+  "gsc_poz": 8.8
+ },
+ {
+  "s": "yalin::devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi",
+  "q": "bilgi sevgi hoşgörü sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi",
+  "gost": 63,
+  "gsc_poz": 8.6
+ },
+ {
+  "s": "yalin::devlet-mahallesi/bayrak-sitesi",
+  "q": "mavi bayrak sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/bayrak-sitesi",
+  "gost": 61,
+  "gsc_poz": 6.0
+ },
+ {
+  "s": "yalin::devlet-mahallesi/eryaman-royal-city",
+  "q": "eryaman royal city",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/eryaman-royal-city",
+  "gost": 60,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::devlet-mahallesi/mavikent-sitesi",
+  "q": "mavikent sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/mavikent-sitesi",
+  "gost": 59,
+  "gsc_poz": 9.2
+ },
+ {
+  "s": "yalin::devlet-mahallesi/gulhayat-sitesi",
+  "q": "gülhayat sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/gulhayat-sitesi",
+  "gost": 56,
+  "gsc_poz": 6.8
+ },
+ {
+  "s": "yalin::devlet-mahallesi/denizim-sitesi",
+  "q": "denizim sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/denizim-sitesi",
+  "gost": 54,
+  "gsc_poz": 10.0
+ },
+ {
+  "s": "yalin::devlet-mahallesi/ikizler-sitesi",
+  "q": "ikizler sitesi eryaman",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/ikizler-sitesi",
+  "gost": 48,
+  "gsc_poz": 5.6
+ },
+ {
+  "s": "yalin::devlet-mahallesi/ikizler-sitesi",
+  "q": "ikizler sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/ikizler-sitesi",
+  "gost": 44,
+  "gsc_poz": 8.9
+ },
+ {
+  "s": "yalin::devlet-mahallesi/turgut-aslan-sitesi",
+  "q": "turgut aslan sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/turgut-aslan-sitesi",
+  "gost": 38,
+  "gsc_poz": 6.7
+ },
+ {
+  "s": "yalin::devlet-mahallesi/yildiz-tatil-sitesi",
+  "q": "yıldız tatil sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/yildiz-tatil-sitesi",
+  "gost": 34,
+  "gsc_poz": 5.6
+ },
+ {
+  "s": "yalin::devlet-mahallesi/sari-cinar-sitesi",
+  "q": "sarı çınar sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/sari-cinar-sitesi",
+  "gost": 32,
+  "gsc_poz": 6.7
+ },
+ {
+  "s": "yalin::devlet-mahallesi/bayrak-sitesi",
+  "q": "bayrak sitesi eryaman",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/bayrak-sitesi",
+  "gost": 31,
+  "gsc_poz": 9.8
+ },
+ {
+  "s": "yalin::devlet-mahallesi/betim-sitesi",
+  "q": "betim sitesi",
+  "mah": "devlet-mahallesi",
+  "hedef": "/mahalleler/devlet-mahallesi/betim-sitesi",
+  "gost": 30,
+  "gsc_poz": 9.2
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/atakent-vadi-sitesi",
+  "q": "atakent vadi sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi",
+  "gost": 200,
+  "gsc_poz": 9.6
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/cigdem-sitesi",
+  "q": "çiğdem sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/cigdem-sitesi",
+  "gost": 92,
+  "gsc_poz": 7.2
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/platin-2-konutlari",
+  "q": "urhal sitesi platin 2 konutları",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/platin-2-konutlari",
+  "gost": 86,
+  "gsc_poz": 10.4
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/oyak-555-konut-sitesi",
+  "q": "oyak 555",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi",
+  "gost": 59,
+  "gsc_poz": 10.4
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/ankapark-konutlari",
+  "q": "ankapark konutları",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/ankapark-konutlari",
+  "gost": 58,
+  "gsc_poz": 10.6
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/caglar-sitesi",
+  "q": "çağlar sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/caglar-sitesi",
+  "gost": 50,
+  "gsc_poz": 10.2
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+  "q": "yeni portakal çiçeği sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi",
+  "gost": 49,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/oyak-555-konut-sitesi",
+  "q": "oyak 555 konut sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi",
+  "gost": 46,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/atakent-sitesi",
+  "q": "ayatakent sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/atakent-sitesi",
+  "gost": 44,
+  "gsc_poz": 9.0
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/cumhuriyet-sitesi",
+  "q": "cumhuriyet sitesi eryaman",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/cumhuriyet-sitesi",
+  "gost": 42,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/dogakent-konutlari",
+  "q": "doğakent konutları",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/dogakent-konutlari",
+  "gost": 42,
+  "gsc_poz": 7.4
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/pinar-sitesi",
+  "q": "vizyon başpınar sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/pinar-sitesi",
+  "gost": 41,
+  "gsc_poz": 9.3
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/basak-sitesi",
+  "q": "başak sitesi etimesgut",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/basak-sitesi",
+  "gost": 40,
+  "gsc_poz": 10.9
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/guzel-ankara-evleri-sitesi",
+  "q": "güzel ankara evleri sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/guzel-ankara-evleri-sitesi",
+  "gost": 40,
+  "gsc_poz": 9.8
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/ilke-sitesi",
+  "q": "ilke sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/ilke-sitesi",
+  "gost": 37,
+  "gsc_poz": 7.5
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/pasa-konaklari",
+  "q": "paşa konakları sitesi",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/pasa-konaklari",
+  "gost": 35,
+  "gsc_poz": 6.3
+ },
+ {
+  "s": "yalin::eryaman-mahallesi/oyak-sitesi",
+  "q": "soyak sitesi eryaman",
+  "mah": "eryaman-mahallesi",
+  "hedef": "/mahalleler/eryaman-mahallesi/oyak-sitesi",
+  "gost": 33,
+  "gsc_poz": 6.1
+ },
+ {
+  "s": "yalin::goksu-mahallesi/havuzlu-evler-sitesi",
+  "q": "havuzlu evler sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/havuzlu-evler-sitesi",
+  "gost": 102,
+  "gsc_poz": 8.3
+ },
+ {
+  "s": "yalin::goksu-mahallesi/park-evo-konutlari",
+  "q": "park evo",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/park-evo-konutlari",
+  "gost": 82,
+  "gsc_poz": 5.6
+ },
+ {
+  "s": "yalin::goksu-mahallesi/yeniceri-kule",
+  "q": "yeniçeri kule",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/yeniceri-kule",
+  "gost": 81,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::goksu-mahallesi/polsan-1-bahar-sitesi",
+  "q": "polsan 1 bahar sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/polsan-1-bahar-sitesi",
+  "gost": 74,
+  "gsc_poz": 7.8
+ },
+ {
+  "s": "yalin::goksu-mahallesi/park-mira-evleri",
+  "q": "park mira evleri",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/park-mira-evleri",
+  "gost": 70,
+  "gsc_poz": 8.5
+ },
+ {
+  "s": "yalin::goksu-mahallesi/buse-konutlari",
+  "q": "mercan life buse konutları",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/buse-konutlari",
+  "gost": 65,
+  "gsc_poz": 9.1
+ },
+ {
+  "s": "yalin::goksu-mahallesi/goksu-manzara-evleri",
+  "q": "göksu manzara evleri",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/goksu-manzara-evleri",
+  "gost": 62,
+  "gsc_poz": 9.6
+ },
+ {
+  "s": "yalin::goksu-mahallesi/yesil-gol-sitesi",
+  "q": "yeşil göl sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/yesil-gol-sitesi",
+  "gost": 59,
+  "gsc_poz": 7.7
+ },
+ {
+  "s": "yalin::goksu-mahallesi/alina-konutlari",
+  "q": "alina konutları",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/alina-konutlari",
+  "gost": 52,
+  "gsc_poz": 4.4
+ },
+ {
+  "s": "yalin::goksu-mahallesi/vaditepe-baspinar",
+  "q": "vaditepe başpınar",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
+  "gost": 50,
+  "gsc_poz": 10.5
+ },
+ {
+  "s": "yalin::goksu-mahallesi/yeniguc-sitesi-eryaman",
+  "q": "yenigüç sitesi eryaman",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/yeniguc-sitesi-eryaman",
+  "gost": 47,
+  "gsc_poz": 7.2
+ },
+ {
+  "s": "yalin::goksu-mahallesi/mercan-smart-house",
+  "q": "mercan smart house",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/mercan-smart-house",
+  "gost": 46,
+  "gsc_poz": 6.6
+ },
+ {
+  "s": "yalin::goksu-mahallesi/mutlu-sitesi",
+  "q": "mutlu sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/mutlu-sitesi",
+  "gost": 45,
+  "gsc_poz": 10.4
+ },
+ {
+  "s": "yalin::goksu-mahallesi/ilgaz-life",
+  "q": "ılgaz life",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/ilgaz-life",
+  "gost": 44,
+  "gsc_poz": 5.7
+ },
+ {
+  "s": "yalin::goksu-mahallesi/mutlu-sitesi",
+  "q": "mutlu sitesi eryaman",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/mutlu-sitesi",
+  "gost": 43,
+  "gsc_poz": 9.4
+ },
+ {
+  "s": "yalin::goksu-mahallesi/buse-konutlari",
+  "q": "buse konutları",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/buse-konutlari",
+  "gost": 42,
+  "gsc_poz": 11.2
+ },
+ {
+  "s": "yalin::goksu-mahallesi/aksafak-sitesi",
+  "q": "akşafak sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/aksafak-sitesi",
+  "gost": 42,
+  "gsc_poz": 9.1
+ },
+ {
+  "s": "yalin::goksu-mahallesi/seyirtepe-baspinar",
+  "q": "seyirtepe başpınar",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
+  "gost": 41,
+  "gsc_poz": 11.7
+ },
+ {
+  "s": "yalin::goksu-mahallesi/goksu-metrokent-sitesi",
+  "q": "göksu metrokent sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi",
+  "gost": 35,
+  "gsc_poz": 6.3
+ },
+ {
+  "s": "yalin::goksu-mahallesi/park-mira-evleri",
+  "q": "park mira evleri etimesgut",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/park-mira-evleri",
+  "gost": 32,
+  "gsc_poz": 5.8
+ },
+ {
+  "s": "yalin::goksu-mahallesi/golkent-1-sitesi",
+  "q": "gölkent 1 sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/golkent-1-sitesi",
+  "gost": 30,
+  "gsc_poz": 9.5
+ },
+ {
+  "s": "yalin::goksu-mahallesi/bahar-sitesi",
+  "q": "polsan bahar sitesi",
+  "mah": "goksu-mahallesi",
+  "hedef": "/mahalleler/goksu-mahallesi/bahar-sitesi",
+  "gost": 30,
+  "gsc_poz": 8.2
+ },
+ {
+  "s": "yalin::guzelkent-mahallesi/cankaya-vefa-sitesi",
+  "q": "çankaya vefa sitesi",
+  "mah": "guzelkent-mahallesi",
+  "hedef": "/mahalleler/guzelkent-mahallesi/cankaya-vefa-sitesi",
+  "gost": 57,
+  "gsc_poz": 8.8
+ },
+ {
+  "s": "yalin::guzelkent-mahallesi/sirin-91-sitesi",
+  "q": "şirin 91 sitesi",
+  "mah": "guzelkent-mahallesi",
+  "hedef": "/mahalleler/guzelkent-mahallesi/sirin-91-sitesi",
+  "gost": 49,
+  "gsc_poz": 8.9
+ },
+ {
+  "s": "yalin::guzelkent-mahallesi/erkent-sitesi",
+  "q": "erkent sitesi",
+  "mah": "guzelkent-mahallesi",
+  "hedef": "/mahalleler/guzelkent-mahallesi/erkent-sitesi",
+  "gost": 40,
+  "gsc_poz": 7.3
+ },
+ {
+  "s": "yalin::seker-mahallesi/meydan-ada-sitesi",
+  "q": "meydan ada sitesi",
+  "mah": "seker-mahallesi",
+  "hedef": "/mahalleler/seker-mahallesi/meydan-ada-sitesi",
+  "gost": 126,
+  "gsc_poz": 5.4
+ },
+ {
+  "s": "yalin::seker-mahallesi/oasis-rezidans",
+  "q": "oasis rezidans",
+  "mah": "seker-mahallesi",
+  "hedef": "/mahalleler/seker-mahallesi/oasis-rezidans",
+  "gost": 87,
+  "gsc_poz": 9.5
+ },
+ {
+  "s": "yalin::seker-mahallesi/dort-mevsim-eryaman-konutlari",
+  "q": "dört mevsim eryaman konutları",
+  "mah": "seker-mahallesi",
+  "hedef": "/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari",
+  "gost": 47,
+  "gsc_poz": 7.4
+ },
+ {
+  "s": "yalin::seker-mahallesi/altas-rezidans",
+  "q": "altaş rezidans",
+  "mah": "seker-mahallesi",
+  "hedef": "/mahalleler/seker-mahallesi/altas-rezidans",
+  "gost": 46,
+  "gsc_poz": 6.9
+ },
+ {
+  "s": "yalin::seker-mahallesi/zirve-loft",
+  "q": "zirve loft",
+  "mah": "seker-mahallesi",
+  "hedef": "/mahalleler/seker-mahallesi/zirve-loft",
+  "gost": 39,
+  "gsc_poz": 9.3
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+  "q": "relax göksu",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+  "gost": 449,
+  "gsc_poz": 11.1
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/mia-concept-konutlari",
+  "q": "mia concept",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari",
+  "gost": 317,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/koz-modern",
+  "q": "koz modern sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/koz-modern",
+  "gost": 224,
+  "gsc_poz": 9.4
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+  "q": "neva prestij konutları",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/neva-prestij-konutlari",
+  "gost": 99,
+  "gsc_poz": 9.6
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/goksukent-sitesi",
+  "q": "göksukent sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/goksukent-sitesi",
+  "gost": 99,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/demirer-sitesi",
+  "q": "demirer sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi",
+  "gost": 84,
+  "gsc_poz": 8.9
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/safir-rezidans",
+  "q": "safir rezidans",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans",
+  "gost": 84,
+  "gsc_poz": 8.2
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/bordo-life-residence",
+  "q": "bordo life residence",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/bordo-life-residence",
+  "gost": 82,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/karma-modern",
+  "q": "karma modern sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/karma-modern",
+  "gost": 73,
+  "gsc_poz": 3.5
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/bordo-life-residence",
+  "q": "bordo life",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/bordo-life-residence",
+  "gost": 72,
+  "gsc_poz": 9.2
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/maybak-sitesi",
+  "q": "maybak sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi",
+  "gost": 68,
+  "gsc_poz": 7.5
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/safir-rezidans",
+  "q": "safir rezidans eryaman",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans",
+  "gost": 67,
+  "gsc_poz": 6.4
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/happy-life-residence",
+  "q": "happy life residence",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/happy-life-residence",
+  "gost": 65,
+  "gsc_poz": 4.9
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/akasya-sitesi",
+  "q": "akasya sitesi eryaman",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi",
+  "gost": 62,
+  "gsc_poz": 8.1
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+  "q": "elit yaşam konutları",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-1",
+  "gost": 55,
+  "gsc_poz": 10.0
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/karma-modern",
+  "q": "karma modern",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/karma-modern",
+  "gost": 51,
+  "gsc_poz": 5.6
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/goldekent-sitesi",
+  "q": "göldekent sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/goldekent-sitesi",
+  "gost": 48,
+  "gsc_poz": 10.9
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/cinar-sitesi",
+  "q": "çınar sitesi eryaman",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/cinar-sitesi",
+  "gost": 44,
+  "gsc_poz": 7.2
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/neva-butik-home",
+  "q": "neva butik home",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/neva-butik-home",
+  "gost": 42,
+  "gsc_poz": 10.3
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/vera-city",
+  "q": "vera city",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/vera-city",
+  "gost": 40,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/hill-tower-goksu",
+  "q": "hill tower göksu",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu",
+  "gost": 38,
+  "gsc_poz": 8.4
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/bordo-platinum-residence",
+  "q": "bordo platinum residence",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence",
+  "gost": 37,
+  "gsc_poz": 10.9
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/ahikent-sitesi",
+  "q": "ahikent sitesi",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi",
+  "gost": 33,
+  "gsc_poz": 7.8
+ },
+ {
+  "s": "yalin::sehit-osman-avci-mahallesi/bp-residence-eryaman",
+  "q": "bp residence eryaman",
+  "mah": "sehit-osman-avci-mahallesi",
+  "hedef": "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
+  "gost": 30,
+  "gsc_poz": 4.7
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/umar-sitesi",
+  "q": "umar sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/umar-sitesi",
+  "gost": 91,
+  "gsc_poz": 7.6
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/demirel-park-evleri",
+  "q": "demirel park evleri",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/demirel-park-evleri",
+  "gost": 74,
+  "gsc_poz": 6.2
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/onur-sitesi",
+  "q": "akonur sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/onur-sitesi",
+  "gost": 71,
+  "gsc_poz": 8.9
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/gul-sitesi",
+  "q": "sarıgül sitesi eryaman",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/gul-sitesi",
+  "gost": 52,
+  "gsc_poz": 6.5
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/yesil-vadim-sitesi",
+  "q": "yeşil vadim sitesi eryaman",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi",
+  "gost": 50,
+  "gsc_poz": 5.9
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/genc-efes-sitesi",
+  "q": "genç efes sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/genc-efes-sitesi",
+  "gost": 46,
+  "gsc_poz": 7.7
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/tekser-bloklari",
+  "q": "tekser blokları",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/tekser-bloklari",
+  "gost": 42,
+  "gsc_poz": 8.7
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/yesil-vadim-sitesi",
+  "q": "yeşil vadim sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/yesil-vadim-sitesi",
+  "gost": 40,
+  "gsc_poz": 7.3
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/nisan-sitesi",
+  "q": "nisan sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/nisan-sitesi",
+  "gost": 32,
+  "gsc_poz": 5.1
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/caglar-emin-evleri",
+  "q": "çağlar emin evleri",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/caglar-emin-evleri",
+  "gost": 32,
+  "gsc_poz": 9.8
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+  "q": "atayıldız yaşam konutları",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari",
+  "gost": 31,
+  "gsc_poz": 10.5
+ },
+ {
+  "s": "yalin::seyh-samil-mahallesi/kosk-birlik-sitesi",
+  "q": "köşk birlik sitesi",
+  "mah": "seyh-samil-mahallesi",
+  "hedef": "/mahalleler/seyh-samil-mahallesi/kosk-birlik-sitesi",
+  "gost": 31,
+  "gsc_poz": 7.9
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/yavuz-selim-sitesi",
+  "q": "yavuz selim sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/yavuz-selim-sitesi",
+  "gost": 182,
+  "gsc_poz": 7.5
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/yurt-prestij-konutlari",
+  "q": "yurt prestij konutları",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari",
+  "gost": 164,
+  "gsc_poz": 6.8
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/serhatkent-sitesi",
+  "q": "serhatkent sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi",
+  "gost": 136,
+  "gsc_poz": 8.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/dogapark-sitesi",
+  "q": "doğapark sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi",
+  "gost": 109,
+  "gsc_poz": 8.6
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/terasevler-eryaman",
+  "q": "terasevler eryaman",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman",
+  "gost": 106,
+  "gsc_poz": 9.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/elit-nar-cicegi",
+  "q": "elit nar çiçeği sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
+  "gost": 69,
+  "gsc_poz": 6.3
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/serpil-sitesi",
+  "q": "serpil sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/serpil-sitesi",
+  "gost": 66,
+  "gsc_poz": 8.1
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/dogapark-sitesi",
+  "q": "doğapark sitesi eryaman",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi",
+  "gost": 61,
+  "gsc_poz": 5.5
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/utku-sitesi",
+  "q": "utku sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
+  "gost": 54,
+  "gsc_poz": 10.8
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/altintepe-sitesi",
+  "q": "altıntepe sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
+  "gost": 53,
+  "gsc_poz": 7.4
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/eylul-sitesi",
+  "q": "eylül sitesi eryaman",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
+  "gost": 51,
+  "gsc_poz": 8.3
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/goksu-sitesi",
+  "q": "park göksu sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
+  "gost": 51,
+  "gsc_poz": 10.9
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/sahil-kent-sitesi",
+  "q": "sahil kent sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/sahil-kent-sitesi",
+  "gost": 51,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/goksu-sitesi",
+  "q": "relax göksu sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
+  "gost": 49,
+  "gsc_poz": 10.1
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/kardeskent-sitesi",
+  "q": "kardeşkent sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/kardeskent-sitesi",
+  "gost": 48,
+  "gsc_poz": 9.3
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/goksu-sitesi",
+  "q": "başkent göksu sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
+  "gost": 47,
+  "gsc_poz": 5.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+  "q": "yeni kaynak sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/yeni-kaynak-sitesi",
+  "gost": 43,
+  "gsc_poz": 8.2
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/eylul-sitesi",
+  "q": "eylül sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
+  "gost": 42,
+  "gsc_poz": 11.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/safir-sitesi",
+  "q": "safir sitesi eryaman",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/safir-sitesi",
+  "gost": 42,
+  "gsc_poz": 8.5
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/yunuskent-sitesi",
+  "q": "yunuskent sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/yunuskent-sitesi",
+  "gost": 41,
+  "gsc_poz": 9.1
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/gulvatan-sitesi",
+  "q": "gülvatan sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi",
+  "gost": 40,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/seda-terasevler",
+  "q": "seda terasevler",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/seda-terasevler",
+  "gost": 36,
+  "gsc_poz": 6.9
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/havayollari-sitesi",
+  "q": "havayolları sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/havayollari-sitesi",
+  "gost": 35,
+  "gsc_poz": 7.0
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/concept-eryaman",
+  "q": "mia concept eryaman",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/concept-eryaman",
+  "gost": 34,
+  "gsc_poz": 6.7
+ },
+ {
+  "s": "yalin::yavuz-selim-mahallesi/karkoy-villalari",
+  "q": "karköy villaları",
+  "mah": "yavuz-selim-mahallesi",
+  "hedef": "/mahalleler/yavuz-selim-mahallesi/karkoy-villalari",
+  "gost": 33,
+  "gsc_poz": 9.8
+ },
+ {
+  "s": "yalin::yesilova-mahallesi/kayra-loft",
+  "q": "kayra loft",
+  "mah": "yesilova-mahallesi",
+  "hedef": "/mahalleler/yesilova-mahallesi/kayra-loft",
+  "gost": 67,
+  "gsc_poz": 6.3
+ },
+ {
+  "s": "yalin::yesilova-mahallesi/kocaklar-tower",
+  "q": "koçaklar tower",
+  "mah": "yesilova-mahallesi",
+  "hedef": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
+  "gost": 42,
+  "gsc_poz": 5.4
+ },
+ {
+  "s": "yalin::yesilova-mahallesi/may-tower",
+  "q": "may tower",
+  "mah": "yesilova-mahallesi",
+  "hedef": "/mahalleler/yesilova-mahallesi/may-tower",
+  "gost": 39,
+  "gsc_poz": 7.3
+ },
+ {
+  "s": "yalin::yesilova-mahallesi/pozitif-life",
+  "q": "pozitif life yeşilova rezidans",
+  "mah": "yesilova-mahallesi",
+  "hedef": "/mahalleler/yesilova-mahallesi/pozitif-life",
+  "gost": 37,
+  "gsc_poz": 8.8
+ }
+]
