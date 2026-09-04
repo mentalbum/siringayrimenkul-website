@@ -48,28 +48,42 @@ TAMAM ama kuru bulundu, (4) NİHAİ: aynı ciddiyet zeminine güzellik —
 olumlama dili (yasak/olumsuzlama cümlesi yok), tek lirik açılış, kitsch
 kalıpları yok, profesyonel zemin korunur)*
 
-## 2. Instagram bio (150 karakter sınırı) — UYGULANDI (2026-08-07)
+## 2. Instagram bio (150 karakter sınırı) — GÜNCEL METİN (04.09.2026)
 > BİÇİM KARARI (Özgün, 2026-08-07): "Eryaman Emlakçı" — GSC'de "emlakçı" 149
 > gösterim, "emlakçısı" 0. Etiket/bio/ad alanlarında yalın biçim kullanılır.
 > UYARI: bio'ya TELEFON YAZILMAZ — 7 Ağu'da "dolandırıcılık şüphesi"
 > kısıtlaması tetikledi (itirazla kalktı). İletişim Ara/Mesaj düğmelerinde.
+> 04.09 ÖLÇÜMÜ: canlı bio'da "500'den fazla site ve rezidans kaydıyla yerel
+> ofis" satırı duruyordu — sayıyı küçültmek kuralı karşılamıyor, SAYI İDDİASI
+> tümden çıkar (bkz. Uygulama notları / sayı iddiası yasağı).
 
-Eryaman Emlakçı 🏠 720+ sitenin tapu ve blok hafızası
-Evinizi satalım, kiraya verelim
+Eryaman Emlakçı 🏠 Evinizi satalım, kiraya verelim
+Sitenizi blok blok tanıyan yerel ofisiniz
 Tunahan 4. Etap Çarşı — Yetki No: 0603771
+
+*(133/150 karakter)*
 
 *(Bio bağlantısı: https://www.siringayrimenkul.com)*
 
-## 3. Facebook sayfası — Hakkında metni
-> Sayfa adı önerisi: "Şirin Gayrimenkul — Eryaman Emlakçı" (aramada ad
-> belirleyici; biçim kararı gereği "emlakçısı" değil **emlakçı**).
-> Kategori: Emlak Acentesi.
+## 3. Facebook sayfası — Künye/Biyografi (255 karakter sınırı)
+> Sayfa adı ZATEN DOĞRU: "Eryaman Emlakçı Şirin Gayrimenkul"
+> (facebook.com/eryamanemlakci). Kategori: Gayrimenkul Şirketi.
+> Yol: sayfa → Düzenle → Hakkında → Künye → Biyografi kalemi.
+> **İLK CÜMLE SAYFA ADINI TEKRAR ETMEZ:** Facebook `og:description`'ı
+> "{Sayfa Adı}, {Şehir}. " önekiyle üretip ~195 karakterde kesiyor; önek 43
+> karakter yiyor, yani Google'da açıklamanın yalnızca ilk ~150 karakteri
+> görünüyor. Aşağıdaki metinde o pencere ikinci cümlenin sonunda bitiyor.
 
-Eryaman emlakçısı Şirin Gayrimenkul. 14 mahallede 720'den fazla site ve
-rezidansın tapu ve blok bilgisini kayıt altında tutuyoruz — Eryaman'ın konut
-hafızası. Evini satmak veya kiraya vermek isteyen ev sahiplerine, siteyi blok
-blok tanıyan yerel emlakçı desteği. Taşınmaz Ticareti Yetki Belgesi No:
-0603771. Tel/WhatsApp: 0 (532) 363 96 60 · siringayrimenkul.com
+Evinizi satarken ya da kiraya verirken karşınıza doğru alıcıyı, doğru kiracıyı
+biz çıkarırız. Eryaman'da sitenizi blok blok tanıyan yerel emlakçınız. Tunahan
+4. Etap Çarşı — Etimesgut/Ankara. Yetki Belgesi No: 0603771 · 0 (532) 363 96 60
+
+*(237/255 karakter. 04.09 ÖLÇÜMÜ: canlıdaki metin "Eryaman emlakçısı Şirin
+Gayrimenkul. 500'den fazla site ve rezidansın tapu ve blok kaydını tutuyoruz…"
+idi — Google'ın gösterdiği "14 mahallede 720'den fazla … konut hafızası"
+snippet'i BAYAT önbellekti, ama canlı metin de sayı iddiası yasağını
+çiğniyordu. Ayrıca ilk cümle sayfa adını tekrar ederek görünen pencerenin
+yarısını harcıyordu.)*
 
 ## 4. TikTok bio (80 karakter sınırı) — MEVCUT HÂLİ ZATEN DOĞRU (dokunma)
 Şirin Gayrimenkul / Eryaman Emlakçı
@@ -78,9 +92,9 @@ blok tanıyan yerel emlakçı desteği. Taşınmaz Ticareti Yetki Belgesi No:
 > Kategori: Emlak / Emlakçılar — Etimesgut, Ankara
 
 Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut Eryaman bölgesinde satılık ve
-kiralık konut danışmanlığı. 720'den fazla site ve rezidansın tapu, ada-parsel
-ve blok kaydını tutan yerel ofis. Ev sahiplerine satış ve kiralama sürecinde
-uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
+kiralık konut danışmanlığı. Evini satmak veya kiraya vermek isteyen ev
+sahiplerine, sitesini blok blok tanıyan yerel ofisten satış ve kiralama
+sürecinde uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
 ## 6. Bing Places + Apple Business Connect
 > İkisi de GBP bilgileriyle birebir aynı doldurulmalı (NAP tutarlılığı).
@@ -120,10 +134,10 @@ uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 > uygulamalarına yayılıyor — burada şirket adı yalın kalsın, bölge bilgisi
 > zaten adreste). NAP birebir ortak standarttaki gibi.
 
-Eryaman emlakçısı Şirin Gayrimenkul. Etimesgut ve Yenimahalle'nin 14
-mahallesinde 720'den fazla site ve rezidansın tapu, ada-parsel ve blok kaydını
-tutan yerel ofis. Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan
-uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
+Eryaman emlakçısı Şirin Gayrimenkul. Etimesgut Eryaman'da yerleşik emlak
+ofisi; buradaki siteleri blok blok tanır. Evini satmak veya kiraya vermek
+isteyen ev sahiplerine uçtan uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi
+No: 0603771.
 
 ---
 
@@ -134,6 +148,13 @@ uca danışmanlık. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
   GBP adı DEĞİŞTİRİLMEZ; oralarda şirket adı yalın kalır. Ada kelime dizmenin
   kazancı birkaç tık, riski 374 yorumluk tanınırlığın bağlı olduğu tek isim.
 - Yorum sayısı/puanı hiçbir bio'ya yazılmaz (rakip sabotaj riski — proje kuralı).
+- **SAYI İDDİASI YASAĞI (Özgün, 17.08.2026 — 04.09'da yeniden uygulandı):**
+  "N site ve rezidansın tapu/blok kaydını tutuyoruz" kalıbı hiçbir künyede
+  kullanılmaz; N'i 720'den 500'e çekmek kuralı KARŞILAMAZ, çünkü itiraz sayıya
+  değil kalıba: ispatı istenebilecek üstünlük iddiası ve ev sahibine hizmet
+  vaat etmiyor (ne biriktirdiğimizi anlatıyor, ne yaptığımızı değil). Aynı
+  gerekçeyle "Eryaman'ın konut hafızası" da yazılmaz. Kalıbın yerine hizmetin
+  kendisi yazılır: "sitenizi blok blok tanıyan yerel emlakçınız".
 - Sosyal profillerde İLAN paylaşımı yok; 3D tur gibi "bu bir ilan değil"
   çerçeveli içerikler serbest (onaylı şablon defterde).
 - Tüm platformlarda aynı logo/profil fotoğrafı kullanılmalı (tanınırlık).
