@@ -65,20 +65,26 @@ Tunahan 4. Etap Çarşı — Yetki No: 0603771
 
 *(Bio bağlantısı: https://www.siringayrimenkul.com)*
 
-## 3. Facebook sayfası — Künye/Biyografi (255 karakter sınırı)
+## 3. Facebook sayfası — Künye/Biyografi (255 karakter sınırı) — UYGULANDI (04.09.2026)
 > Sayfa adı ZATEN DOĞRU: "Eryaman Emlakçı Şirin Gayrimenkul"
 > (facebook.com/eryamanemlakci). Kategori: Gayrimenkul Şirketi.
-> Yol: sayfa → Düzenle → Hakkında → Künye → Biyografi kalemi.
+> **Yol (04.09'da yürüdü):** sayfaya git → üstteki uyarı bandında "Şimdi Geçiş
+> Yap" ile SAYFA kimliğine geç (kişisel profildeyken kalem menüsü ziyaretçi
+> menüsünü açıyor, düzenleme çıkmıyor) → Düzenle → Hakkında → Künye →
+> Biyografi kalemi → alana tıkla, cmd+a, yaz → Kaydet.
 > **İLK CÜMLE SAYFA ADINI TEKRAR ETMEZ:** Facebook `og:description`'ı
-> "{Sayfa Adı}, {Şehir}. " önekiyle üretip ~195 karakterde kesiyor; önek 43
-> karakter yiyor, yani Google'da açıklamanın yalnızca ilk ~150 karakteri
-> görünüyor. Aşağıdaki metinde o pencere ikinci cümlenin sonunda bitiyor.
+> "{Sayfa Adı}, {Şehir}. {N} kişi bunun hakkında konuşuyor. " önekiyle üretip
+> ~200 karakterde kesiyor. **04.09 ölçümü: önek 76 karakter** (eski nottaki 43
+> rakamı eksikti — "N kişi bunun hakkında konuşuyor" cümlesi sayılmamış), yani
+> künyenin yalnızca ilk ~126 karakteri Google'da görünüyor. Aşağıdaki metinde o
+> pencere birinci cümleyi tam alıyor, ikincinin ortasında kesiliyor.
 
 Evinizi satarken ya da kiraya verirken karşınıza doğru alıcıyı, doğru kiracıyı
 biz çıkarırız. Eryaman'da sitenizi blok blok tanıyan yerel emlakçınız. Tunahan
 4. Etap Çarşı — Etimesgut/Ankara. Yetki Belgesi No: 0603771 · 0 (532) 363 96 60
 
-*(237/255 karakter. 04.09 ÖLÇÜMÜ: canlıdaki metin "Eryaman emlakçısı Şirin
+*(237/255 karakter — 04.09.2026'da girildi ve `og:description` üzerinden
+doğrulandı. 04.09 ÖLÇÜMÜ: canlıdaki metin "Eryaman emlakçısı Şirin
 Gayrimenkul. 500'den fazla site ve rezidansın tapu ve blok kaydını tutuyoruz…"
 idi — Google'ın gösterdiği "14 mahallede 720'den fazla … konut hafızası"
 snippet'i BAYAT önbellekti, ama canlı metin de sayı iddiası yasağını
