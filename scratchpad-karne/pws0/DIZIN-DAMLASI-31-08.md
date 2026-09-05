@@ -122,7 +122,7 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Kuryap Sitesi emlakçı" sorgusunda 5. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi ← 04.09 DİZİNDE (kendiliğinden)  
       _"Uyum 90 Sitesi emlakçı" sorgusunda 5. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi ← 05.09 istek gönderildi  
       _"Polsan1 Ayışığı Sitesi emlakçı" sorgusunda 6. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi ← 05.09 istek gönderildi  
       _"Atakent 1 Aşiyan Sitesi emlakçı" sorgusunda 8. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
@@ -189,7 +189,7 @@ Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 
       _keşfedildi, dizine alınmadı_
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi ← 02.09 istek gönderildi (onay balonu görüldü, test ~2,5 dk sürdü)  
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi ← 02.09 dizin dışı teyit; istek 'sorun oluştu' (kayan 24 sa sınırı), GÖNDERİLMEDİ — yarın ilk  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi ← 05.09 DİZİNDE (kendiliğinden) ← 02.09 dizin dışı teyit; istek 'sorun oluştu' (kayan 24 sa sınırı), GÖNDERİLMEDİ — yarın ilk  
       _keşfedildi, dizine alınmadı_
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi ← 05.09 istek gönderildi  
       _hiç bilinmiyor_
@@ -220,7 +220,7 @@ Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 
 
 ## yavuz-selim-mahallesi (1)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi ← 05.09 DİZİNDE (kendiliğinden)  
       _hiç bilinmiyor_
 
 ## Yeniden denetlendi (6) — 31.08
@@ -354,3 +354,15 @@ Bu parti birinci partiden SONRA çekilir.
 > istek gönderildi, 04:22'de tarandı ve aynı gün SERP'te **2. sırada** ölçüldü.
 > Bu, damlanın istek→tarama→dizin→SIRA zincirini aynı gün tamamladığı ilk
 > temiz vaka (önceki dönüşüm kayıtlarında sıra ölçümü günler sonraydı).
+
+> 05.09 ikinci tur (öğleden sonra) — 10 açık hedef yeniden denetlendi: 2'si
+> kendiliğinden girmiş (Meltem, Sahibin), 8'i dışarıda. **Polsan1 Ayışığı**
+> gönderildi (11. istek; SERP'te ada sayfası 6. çıkıyordu, site sayfası
+> dizinde yoktu). Sıradaki Konuta Özlem'de Özgün Chrome'u kullanmaya başladı,
+> tur zarifçe durduruldu. Kalan 7: ozenkent-2, ozluce-guzelevim, yagan-kent,
+> konuta-ozlem, kutlutas-1, kutlutas-2, altas-relax-line.
+>
+> Taramada ilk 10'a giremediğimiz 33 site sayfasının HEPSİ dizinde (API, 05.09):
+> ≤7g 12 / 8-30g 6 / 30+g 15. Orada dizin sorunu yok — 15'i bayat kopya, kalanı
+> yapısal adaş. Damla için yeni aday çıkmadı.
+
