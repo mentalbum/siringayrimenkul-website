@@ -366,3 +366,5 @@ Bu parti birinci partiden SONRA çekilir.
 > ≤7g 12 / 8-30g 6 / 30+g 15. Orada dizin sorunu yok — 15'i bayat kopya, kalanı
 > yapısal adaş. Damla için yeni aday çıkmadı.
 
+> 05.09 gece — Konuta Özlem'de **Kota Aşıldı**, istek İŞLENMEDİ, işaretlenmedi.
+> Günün toplamı 11 istek (sabah 10 + Polsan1 Ayışığı). Kalan 7 yarına.
