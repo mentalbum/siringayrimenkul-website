@@ -1,23 +1,23 @@
 {
- "guncelleme": "2026-09-05",
+ "guncelleme": "2026-09-06",
  "rakamlar": [
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 71,
+   "deger": 72,
    "birim": "%",
-   "gosterim": "%71",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 358. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%72",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 363. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 358
+    "ilk3": 363
    },
    "fark_7g": {
-    "deger": 5.3,
-    "onceki": 65.5,
-    "son": 70.8,
-    "kiyas_tarihi": "2026-08-29",
+    "deger": 4.3,
+    "onceki": 67.5,
+    "son": 71.8,
+    "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
     "yon": "iyi",
@@ -31,21 +31,21 @@
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 75,
+   "deger": 76,
    "birim": "%",
-   "gosterim": "%75",
-   "ne_demek": "İlk 3 sırada olduğumuz 359 sorgunun 271 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%76",
+   "ne_demek": "İlk 3 sırada olduğumuz 364 sorgunun 275 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 271,
-    "ilk3_toplam": 359,
-    "guncelleme": "2026-09-05"
+    "ilk3_dogru": 275,
+    "ilk3_toplam": 364,
+    "guncelleme": "2026-09-06"
    },
    "fark_7g": {
-    "deger": 4.5,
-    "onceki": 71.0,
+    "deger": 8.3,
+    "onceki": 67.2,
     "son": 75.5,
-    "kiyas_tarihi": "2026-08-29",
+    "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
     "yon": "iyi",
@@ -71,14 +71,14 @@
      "bit": "2026-09-03",
      "gun": 28
     },
-    "uretim": "2026-09-05",
+    "uretim": "2026-09-06",
     "toplam_tik": 2324
    },
    "fark_7g": {
-    "deger": -131,
-    "onceki": 1694,
+    "deger": -138,
+    "onceki": 1701,
     "son": 1563,
-    "kiyas_tarihi": "2026-08-29",
+    "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "tık",
     "yon": "kötü",
@@ -108,7 +108,7 @@
     "deger": 5,
     "onceki": 17,
     "son": 22,
-    "kiyas_tarihi": "2026-08-29",
+    "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "temas",
     "yon": "iyi",
@@ -134,7 +134,7 @@
     "kutu_var_biz_yok": 8,
     "organik_ilk3": 3,
     "organik_birinci": 1,
-    "guncelleme": "2026-09-05"
+    "guncelleme": "2026-09-06"
    },
    "fark_7g": null
   },
@@ -231,8 +231,8 @@
  "gecmis": {
   "dosya": "karne-gecmis-ozet.json",
   "sahip": "anlik-goruntu-uret.py",
-  "kayit": 16,
-  "kiyas_tarihi": "2026-08-29"
+  "kayit": 17,
+  "kiyas_tarihi": "2026-08-30"
  },
  "uyarilar": [
   "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 507 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",

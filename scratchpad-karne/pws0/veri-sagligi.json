@@ -1,14 +1,14 @@
 {
- "guncelleme": "2026-09-05",
+ "guncelleme": "2026-09-06",
  "gurultu": {
-  "cift": 62,
-  "sessiz": 54,
+  "cift": 63,
+  "sessiz": 55,
   "oran": 87,
   "giris_cikis": 61,
   "dagilim": [
    [
     0,
-    36
+    37
    ],
    [
     1,
@@ -30,19 +30,19 @@
  },
  "olculen": 507,
  "kuyruk": 511,
- "kayit": 1688,
+ "kayit": 1724,
  "yas": [
   [
    "0-7 gün",
-   435
+   404
   ],
   [
    "8-14 gün",
-   72
+   101
   ],
   [
    "15-30 gün",
-   0
+   2
   ],
   [
    "30+ gün",
