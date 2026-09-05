@@ -1,85 +1,85 @@
 {
- "guncelleme": "2026-09-03",
+ "guncelleme": "2026-09-05",
  "rakamlar": [
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 69,
+   "deger": 71,
    "birim": "%",
-   "gosterim": "%69",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 347. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%71",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 358. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 347
+    "ilk3": 358
    },
    "fark_7g": {
-    "deger": 10.9,
-    "onceki": 57.8,
-    "son": 68.7,
-    "kiyas_tarihi": "2026-08-26",
-    "gun": 8,
+    "deger": 5.3,
+    "onceki": 65.5,
+    "son": 70.8,
+    "kiyas_tarihi": "2026-08-29",
+    "gun": 7,
     "birim": "puan",
-    "yon": "nötr",
-    "olcum_yontemi_degisti": true,
+    "yon": "iyi",
+    "olcum_yontemi_degisti": false,
     "seri": [
      "ilk3_pay"
     ],
-    "not": "ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil"
+    "not": null
    }
   },
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 73,
+   "deger": 75,
    "birim": "%",
-   "gosterim": "%73",
-   "ne_demek": "İlk 3 sırada olduğumuz 347 sorgunun 252 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%75",
+   "ne_demek": "İlk 3 sırada olduğumuz 359 sorgunun 271 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 252,
-    "ilk3_toplam": 347,
-    "guncelleme": "2026-09-02"
+    "ilk3_dogru": 271,
+    "ilk3_toplam": 359,
+    "guncelleme": "2026-09-05"
    },
    "fark_7g": {
-    "deger": -23.3,
-    "onceki": 95.9,
-    "son": 72.6,
-    "kiyas_tarihi": "2026-08-26",
-    "gun": 8,
+    "deger": 4.5,
+    "onceki": 71.0,
+    "son": 75.5,
+    "kiyas_tarihi": "2026-08-29",
+    "gun": 7,
     "birim": "puan",
-    "yon": "nötr",
-    "olcum_yontemi_degisti": true,
+    "yon": "iyi",
+    "olcum_yontemi_degisti": false,
     "seri": [
      "dogru_sayfa_pay"
     ],
-    "not": "ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil"
+    "not": null
    }
   },
   {
    "k": "gsc_eryaman_tik",
    "baslik": "Google′dan gelen tık (Eryaman)",
-   "deger": 1645,
+   "deger": 1563,
    "birim": "tık",
-   "gosterim": "1.645",
-   "ne_demek": "Son 28 günde (04.08–31.08) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 83.526 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
+   "gosterim": "1.563",
+   "ne_demek": "Son 28 günde (07.08–03.09) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 82.784 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
    "kaynak": "sonuc-ozeti.json (ayrim.eryaman.simdi)",
    "ayrinti": {
-    "gos": 83526,
+    "gos": 82784,
     "donem": {
-     "bas": "2026-08-04",
-     "bit": "2026-08-31",
+     "bas": "2026-08-07",
+     "bit": "2026-09-03",
      "gun": 28
     },
-    "uretim": "2026-09-02",
-    "toplam_tik": 2446
+    "uretim": "2026-09-05",
+    "toplam_tik": 2324
    },
    "fark_7g": {
-    "deger": -67,
-    "onceki": 1712,
-    "son": 1645,
-    "kiyas_tarihi": "2026-08-26",
-    "gun": 8,
+    "deger": -131,
+    "onceki": 1694,
+    "son": 1563,
+    "kiyas_tarihi": "2026-08-29",
+    "gun": 7,
     "birim": "tık",
     "yon": "kötü",
     "olcum_yontemi_degisti": false,
@@ -92,24 +92,24 @@
   {
    "k": "ga4_temas",
    "baslik": "Siteden gelen temas",
-   "deger": 18,
+   "deger": 22,
    "birim": "temas",
-   "gosterim": "18",
-   "ne_demek": "Son 28 günde ziyaretçinin bizimle kurduğu temas: 11 telefon, 7 WhatsApp, 0 form (GA4; 2.396 oturum içinden).",
+   "gosterim": "22",
+   "ne_demek": "Son 28 günde ziyaretçinin bizimle kurduğu temas: 13 telefon, 9 WhatsApp, 0 form (GA4; 2.278 oturum içinden).",
    "kaynak": "tik-sonrasi.json (temas)",
    "ayrinti": {
-    "telefon": 11,
-    "whatsapp": 7,
+    "telefon": 13,
+    "whatsapp": 9,
     "form": 0,
-    "oturum": 2396,
-    "guncelleme": "2026-09-02"
+    "oturum": 2278,
+    "guncelleme": "2026-09-05"
    },
    "fark_7g": {
-    "deger": 1,
+    "deger": 5,
     "onceki": 17,
-    "son": 18,
-    "kiyas_tarihi": "2026-08-26",
-    "gun": 8,
+    "son": 22,
+    "kiyas_tarihi": "2026-08-29",
+    "gun": 7,
     "birim": "temas",
     "yon": "iyi",
     "olcum_yontemi_degisti": false,
@@ -123,31 +123,31 @@
   {
    "k": "hedef_kutuda",
    "baslik": "Hedef sorgularda harita kutusu",
-   "deger": 9,
+   "deger": 7,
    "birim": "sorgu",
-   "gosterim": "9/17",
-   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 8 tanesinde kutuda 1. sıradayız; 7 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 3 sorgu.)",
+   "gosterim": "7/17",
+   "ne_demek": "17 hedef sorgunun 7 tanesinde harita kutusunda görünüyoruz, 5 tanesinde kutuda 1. sıradayız; 8 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 3 sorgu.)",
    "kaynak": "hedef-sorgular.json (ozet.kutuda)",
    "ayrinti": {
     "hedef": 17,
-    "kutuda_birinci": 8,
-    "kutu_var_biz_yok": 7,
+    "kutuda_birinci": 5,
+    "kutu_var_biz_yok": 8,
     "organik_ilk3": 3,
-    "organik_birinci": 2,
-    "guncelleme": "2026-09-02"
+    "organik_birinci": 1,
+    "guncelleme": "2026-09-05"
    },
    "fark_7g": null
   },
   {
    "k": "damla_kalan",
    "baslik": "Damla kuyruğunda kalan",
-   "deger": 33,
+   "deger": 7,
    "birim": "sayfa",
-   "gosterim": "33",
-   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 33; 32 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "gosterim": "7",
+   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 7; 58 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
    "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
    "ayrinti": {
-    "bitmis": 32,
+    "bitmis": 58,
     "toplam": 65
    },
    "fark_7g": null
@@ -157,11 +157,13 @@
   {
    "tarih": "03.09",
    "iso": "2026-09-03",
-   "baslik_sayisi": 1,
+   "baslik_sayisi": 3,
    "basliklar": [
-    "DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE"
+    "DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE",
+    "MÜDAHALE DEFTERİ: İSTEK → DİZİN DÖNÜŞÜMÜ %95",
+    "SIRA İÇİN GERÇEK DURUM: KALDIRAÇLAR İNCE, DARBOĞAZ TARAMA"
    ],
-   "metin": "03.09 — DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE"
+   "metin": "03.09 — DAMLA: ÖNCELİK 1'DEN 8 KABUL, 4 KENDİLİĞİNDEN DİZİNDE · MÜDAHALE DEFTERİ: İSTEK → DİZİN DÖNÜŞÜMÜ %95 · SIRA İÇİN GERÇEK DURUM: KALDIRAÇLAR İNCE, DARBOĞAZ TARAMA"
   },
   {
    "tarih": "02.09",
@@ -194,24 +196,24 @@
   {
    "tarih": null,
    "iso": null,
-   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 2.446 tıkın %34 kadarı (841) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 6.717 gösterim / 113 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (1.645 tık).",
+   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 2.324 tıkın %34 kadarı (796) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 5.853 gösterim / 101 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (1.563 tık).",
    "kaynak": "sonuc-ozeti.json (ayrim) + sayfa-turu-verimi.json (blog)",
    "ayrinti": {
-    "yenimahalle_tik": 841,
-    "toplam_tik": 2446,
+    "yenimahalle_tik": 796,
+    "toplam_tik": 2324,
     "pay": 34,
-    "yazi_gos": 6717,
-    "yazi_tik": 113
+    "yazi_gos": 5853,
+    "yazi_tik": 101
    }
   },
   {
    "tarih": "07.09",
    "iso": "2026-09-07",
-   "metin": "07.09 — Başlık/H1 dondurması biter (başlık şablonu değişikliğinden sonraki bekleme süresi). O gün ilk iş ana sayfanın başlığı ve snippet′i: \"eryaman emlakçı\" sorgusunda organik sıra yerinde, tıklanma oranı düştü (%5,5 → %2,2; 27.07–11.08 ile 16.08–31.08 dönemleri). O tarihe kadar başlığa dokunulmaz.",
+   "metin": "07.09 — Başlık/H1 dondurması biter (başlık şablonu değişikliğinden sonraki bekleme süresi). O gün ilk iş ana sayfanın başlığı ve snippet′i: \"eryaman emlakçı\" sorgusunda organik sıra yerinde, tıklanma oranı düştü (%5,5 → %2,0; 27.07–11.08 ile 16.08–03.09 dönemleri). O tarihe kadar başlığa dokunulmaz.",
    "kaynak": "eryaman-emlakci.json (title_donuk, donemler)",
    "ayrinti": {
     "to_ilk": 5.5,
-    "to_son": 2.2
+    "to_son": 2.0
    }
   },
   {
@@ -229,13 +231,11 @@
  "gecmis": {
   "dosya": "karne-gecmis-ozet.json",
   "sahip": "anlik-goruntu-uret.py",
-  "kayit": 13,
-  "kiyas_tarihi": "2026-08-26"
+  "kayit": 16,
+  "kiyas_tarihi": "2026-08-29"
  },
  "uyarilar": [
-  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 505 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
-  "sonuc-ozeti.json en son 02.09 tarihinde üretildi (dönem 04.08–31.08); GSC 2-3 gün geriden gelir.",
-  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor.",
-  "Ölçüm yöntemi değişti, fark iyi/kötü diye okunmaz: Site sorgularında ilk 3, İlk 3 içinde doğru sayfa (önceki nokta 27.08 öncesi turdan)."
+  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 507 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
+  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor."
  ]
 }

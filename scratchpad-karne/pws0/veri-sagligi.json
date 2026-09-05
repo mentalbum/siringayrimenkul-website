@@ -1,18 +1,18 @@
 {
- "guncelleme": "2026-09-02",
+ "guncelleme": "2026-09-05",
  "gurultu": {
-  "cift": 57,
-  "sessiz": 49,
-  "oran": 86,
-  "giris_cikis": 50,
+  "cift": 62,
+  "sessiz": 54,
+  "oran": 87,
+  "giris_cikis": 61,
   "dagilim": [
    [
     0,
-    33
+    36
    ],
    [
     1,
-    16
+    18
    ],
    [
     2,
@@ -28,17 +28,17 @@
    ]
   ]
  },
- "olculen": 505,
+ "olculen": 507,
  "kuyruk": 511,
- "kayit": 1435,
+ "kayit": 1688,
  "yas": [
   [
    "0-7 gün",
-   502
+   435
   ],
   [
    "8-14 gün",
-   3
+   72
   ],
   [
    "15-30 gün",
@@ -101,13 +101,13 @@
   },
   {
    "ad": "Kuyrukta olup ölçülmemiş",
-   "adet": 6,
+   "adet": 4,
    "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa.",
    "ornek": [
-    "eryaman-mahallesi/cigdem-sitesi",
-    "goksu-mahallesi/mutlu-sitesi",
     "guzelkent-mahallesi/selale-sitesi",
-    "sehit-osman-avci-mahallesi/akasya-sitesi"
+    "sehit-osman-avci-mahallesi/akasya-sitesi",
+    "sehit-osman-avci-mahallesi/kutlutas-1-bloklari",
+    "sehit-osman-avci-mahallesi/kutlutas-2-bloklari"
    ],
    "agir": false,
    "temiz": false
@@ -130,13 +130,13 @@
   },
   {
    "ad": "Karne metninde elle yazılmış rakam",
-   "adet": 15,
+   "adet": 16,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
    "ornek": [
-    "satır 519: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
-    "satır 520: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
-    "satır 754: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
-    "satır 856: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
+    "satır 521: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
+    "satır 522: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
+    "satır 756: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
+    "satır 858: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
    ],
    "agir": false,
    "temiz": false

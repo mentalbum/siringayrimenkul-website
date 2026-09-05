@@ -1,50 +1,34 @@
 {
  "guncelleme": "2026-08-31",
  "pencere": {
-  "bas": "2026-08-04",
-  "bit": "2026-08-31",
+  "bas": "2026-08-07",
+  "bit": "2026-09-03",
   "gun": 28
  },
  "sira_sorunu": {
-  "n": 57,
-  "gost": 2545,
-  "tik": 72,
-  "poz": 7.5,
+  "n": 33,
+  "gost": 1679,
+  "tik": 34,
+  "poz": 7.7,
   "mah": [
    [
     "devlet-mahallesi",
-    9
-   ],
-   [
-    "seyh-samil-mahallesi",
-    9
-   ],
-   [
-    "eryaman-mahallesi",
-    8
-   ],
-   [
-    "sehit-osman-avci-mahallesi",
-    8
-   ],
-   [
-    "guzelkent-mahallesi",
-    7
-   ],
-   [
-    "yavuz-selim-mahallesi",
-    7
+    10
    ],
    [
     "goksu-mahallesi",
-    5
+    10
+   ],
+   [
+    "eryaman-mahallesi",
+    7
+   ],
+   [
+    "guzelkent-mahallesi",
+    4
    ],
    [
     "altay-mahallesi",
-    2
-   ],
-   [
-    "seker-mahallesi",
     1
    ],
    [
@@ -54,61 +38,14 @@
   ]
  },
  "dizin_sorunu": {
-  "n": 17,
-  "gost": 1,
+  "n": 0,
+  "gost": 0,
   "tik": 0,
-  "poz": 5.0,
-  "mah": [
-   [
-    "sehit-osman-avci-mahallesi",
-    5
-   ],
-   [
-    "guzelkent-mahallesi",
-    4
-   ],
-   [
-    "devlet-mahallesi",
-    2
-   ],
-   [
-    "goksu-mahallesi",
-    2
-   ],
-   [
-    "seyh-samil-mahallesi",
-    2
-   ],
-   [
-    "seker-mahallesi",
-    1
-   ],
-   [
-    "yavuz-selim-mahallesi",
-    1
-   ]
-  ]
+  "poz": 0.0,
+  "mah": []
  },
- "denetlenemedi": 6,
- "hayalet": 16,
- "taze_ama_gorunmez": 26,
- "olu_liste": [
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/denizim-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/yesiloz-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari",
-  "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ekin-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kurtulus-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cicek-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/goksu-prestij",
-  "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ictas",
-  "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/yildiz-eryaman",
-  "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence",
-  "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/onur-sitesi",
-  "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi"
- ]
+ "denetlenemedi": 0,
+ "hayalet": 0,
+ "taze_ama_gorunmez": 16,
+ "olu_liste": []
 }

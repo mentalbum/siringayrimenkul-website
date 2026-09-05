@@ -1,117 +1,117 @@
 {
- "son_veri_gunu": "2026-08-31",
+ "son_veri_gunu": "2026-09-03",
  "pencere": {
-  "bas": "2026-08-04",
-  "bit": "2026-08-31",
+  "bas": "2026-08-07",
+  "bit": "2026-09-03",
   "gun": 28
  },
  "onceki_pencere": {
-  "bas": "2026-07-07",
-  "bit": "2026-08-03",
+  "bas": "2026-07-10",
+  "bit": "2026-08-06",
   "gun": 28
  },
  "donem": {
-  "bas": "2026-08-04",
-  "bit": "2026-08-31",
+  "bas": "2026-08-07",
+  "bit": "2026-09-03",
   "gun": 28
  },
  "simdi": {
-  "tik": 2446,
-  "gos": 104876,
-  "to": 2.33,
+  "tik": 2324,
+  "gos": 103466,
+  "to": 2.25,
   "poz": 7.7
  },
  "onceki": {
-  "tik": 1346,
-  "gos": 57317,
-  "to": 2.35,
-  "poz": 8.2
+  "tik": 1622,
+  "gos": 66261,
+  "to": 2.45,
+  "poz": 8.1
  },
  "haftalar": [
   {
-   "bas": "2026-08-04",
-   "tik": 718,
-   "gos": 27203,
+   "bas": "2026-08-07",
+   "tik": 696,
+   "gos": 28271,
    "poz": 7.8
   },
   {
-   "bas": "2026-08-11",
-   "tik": 652,
-   "gos": 26592,
-   "poz": 7.7
+   "bas": "2026-08-14",
+   "tik": 625,
+   "gos": 26630,
+   "poz": 7.4
   },
   {
-   "bas": "2026-08-18",
-   "tik": 571,
-   "gos": 26854,
+   "bas": "2026-08-21",
+   "tik": 514,
+   "gos": 25228,
    "poz": 7.5
   },
   {
-   "bas": "2026-08-25",
-   "tik": 505,
-   "gos": 24227,
-   "poz": 7.7
+   "bas": "2026-08-28",
+   "tik": 489,
+   "gos": 23337,
+   "poz": 8
   }
  ],
  "degisim": {
-  "tik": 81.7,
-  "gos": 83
+  "tik": 43.3,
+  "gos": 56.1
  },
  "ayrim": {
   "eryaman": {
    "simdi": {
-    "gos": 83526,
-    "tik": 1645
+    "gos": 82784,
+    "tik": 1563
    },
    "onceki": {
-    "gos": 36897,
-    "tik": 701
+    "gos": 44096,
+    "tik": 880
    }
   },
   "yenimahalle": {
    "simdi": {
-    "gos": 32264,
-    "tik": 841
+    "gos": 31444,
+    "tik": 796
    },
    "onceki": {
-    "gos": 25997,
-    "tik": 666
+    "gos": 28678,
+    "tik": 769
    }
   }
  },
  "haftalik_ayrim": [
   {
    "gecmis_hafta": 6,
-   "eryaman": 152,
-   "yenimahalle": 155
+   "eryaman": 261,
+   "yenimahalle": 190
   },
   {
    "gecmis_hafta": 5,
-   "eryaman": 411,
-   "yenimahalle": 255
+   "eryaman": 456,
+   "yenimahalle": 275
   },
   {
    "gecmis_hafta": 4,
-   "eryaman": 473,
-   "yenimahalle": 256
+   "eryaman": 464,
+   "yenimahalle": 240
   },
   {
    "gecmis_hafta": 3,
-   "eryaman": 424,
-   "yenimahalle": 239
+   "eryaman": 417,
+   "yenimahalle": 220
   },
   {
    "gecmis_hafta": 2,
-   "eryaman": 404,
-   "yenimahalle": 176
+   "eryaman": 357,
+   "yenimahalle": 167
   },
   {
    "gecmis_hafta": 1,
-   "eryaman": 344,
-   "yenimahalle": 170
+   "eryaman": 325,
+   "yenimahalle": 169
   }
  ],
  "mulk_baslangic": "2026-06-25",
- "mulk_haftalari": 10,
- "uretim": "2026-09-02"
+ "mulk_haftalari": 11,
+ "uretim": "2026-09-05"
 }

@@ -1,92 +1,83 @@
 {
- "guncelleme": "2026-09-02",
+ "guncelleme": "2026-09-05",
  "pencere": {
-  "bas": "2026-08-04",
-  "bit": "2026-08-31",
+  "bas": "2026-08-07",
+  "bit": "2026-09-03",
   "gun": 28
  },
  "gun": 28,
- "toplam_gos": 23699,
- "toplam_tik": 701,
- "to": 2.96,
+ "toplam_gos": 44108,
+ "toplam_tik": 655,
+ "to": 1.48,
  "siniflar": [
   {
    "k": "yalin",
    "ad": "Yalın site adı (ör. “X Sitesi”)",
-   "sorgu": 551,
-   "gos": 13801,
-   "tik": 240,
-   "to": 1.7,
-   "poz": 8.3
+   "sorgu": 1689,
+   "gos": 30128,
+   "tik": 235,
+   "to": 0.8,
+   "poz": 9.5
   },
   {
    "k": "alici",
    "ad": "Alıcı niyeti (satılık / kiralık / daire)",
-   "sorgu": 366,
-   "gos": 8259,
-   "tik": 408,
-   "to": 4.9,
-   "poz": 6.8
+   "sorgu": 809,
+   "gos": 12041,
+   "tik": 371,
+   "to": 3.1,
+   "poz": 7.1
   },
   {
    "k": "bolge_emlakci",
    "ad": "“Eryaman / mahalle emlakçı”",
-   "sorgu": 18,
-   "gos": 1046,
-   "tik": 30,
-   "to": 2.9,
-   "poz": 3.5
+   "sorgu": 26,
+   "gos": 1241,
+   "tik": 28,
+   "to": 2.3,
+   "poz": 3.6
   },
   {
    "k": "site_emlakci",
    "ad": "“<site> emlakçı”",
-   "sorgu": 55,
-   "gos": 392,
-   "tik": 7,
-   "to": 1.8,
-   "poz": 9.2
+   "sorgu": 79,
+   "gos": 371,
+   "tik": 6,
+   "to": 1.6,
+   "poz": 8.3
   },
   {
    "k": "marka",
    "ad": "Marka (Şirin Gayrimenkul)",
-   "sorgu": 5,
-   "gos": 172,
-   "tik": 14,
-   "to": 8.1,
-   "poz": 3.3
+   "sorgu": 9,
+   "gos": 263,
+   "tik": 13,
+   "to": 4.9,
+   "poz": 5.0
   },
   {
    "k": "sahip",
    "ad": "Ev sahibi niyeti (satmak / kiraya vermek / değerleme)",
-   "sorgu": 5,
-   "gos": 29,
+   "sorgu": 15,
+   "gos": 64,
    "tik": 2,
-   "to": 6.9,
-   "poz": 9.9
+   "to": 3.1,
+   "poz": 9.6
   }
  ],
  "makas": [
   {
-   "q": "relax göksu kiralık",
-   "gos": 201,
-   "tik": 3,
-   "to": 1.5,
-   "poz": 4.9,
-   "sinif": "alici",
-   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari"
-  },
-  {
-   "q": "canberk sitesi kiralık daire",
-   "gos": 97,
-   "tik": 1,
-   "to": 1.0,
-   "poz": 5.0,
-   "sinif": "alici",
-   "sayfa": "https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/canberk-sitesi"
+   "q": "etimesgut emlakçılar",
+   "gos": 126,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 2.6,
+   "sinif": "bolge_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
    "q": "emlak",
-   "gos": 60,
+   "gos": 57,
    "tik": 0,
    "to": 0.0,
    "poz": 3.5,
@@ -94,27 +85,23 @@
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
-   "q": "alina konutları",
-   "gos": 51,
-   "tik": 1,
-   "to": 2.0,
-   "poz": 4.5,
-   "sinif": "yalin",
-   "sayfa": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/alina-konutlari"
+   "q": "şirin emlak",
+   "gos": 40,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.6,
+   "sinif": "marka",
+   "sayfa": "https://www.siringayrimenkul.com/"
   }
  ],
  "makas_ym": [
   {
-   "q": "mes polaris satılık",
-   "gos": 60
-  },
-  {
-   "q": "nargülü 1 sitesi",
+   "q": "başkent göksu sitesi",
    "gos": 51
   },
   {
-   "q": "sarıtaş seyir evleri",
-   "gos": 67
+   "q": "mes polaris satılık",
+   "gos": 63
   }
  ]
 }

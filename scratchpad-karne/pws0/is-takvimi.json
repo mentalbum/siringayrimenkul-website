@@ -1,26 +1,29 @@
 {
- "guncelleme": "2026-09-03",
+ "guncelleme": "2026-09-05",
  "uretim": "is-takvimi-uret.py",
  "damla": {
-  "acik": 33,
+  "acik": 7,
   "kota_gun": 10,
-  "baslangic": "2026-09-04",
-  "bitis_kota": "2026-09-07",
-  "gun_sayisi": 4,
+  "baslangic": "2026-09-06",
+  "bitis_kota": "2026-09-06",
+  "gun_sayisi": 1,
   "istek_gunluk": {
    "01.09": 9,
    "03.09": 8,
+   "05.09": 11,
+   "04.09": 3,
    "02.09": 2
   },
-  "ortalama_istek": 6.3,
-  "bitis_gozlenen": "2026-09-09",
-  "kendiliginden_dizine_giren": 8,
+  "ortalama_istek": 6.6,
+  "bitis_gozlenen": "2026-09-07",
+  "kendiliginden_dizine_giren": 20,
   "yeniden_denetimde_dizinde": 5,
-  "bitmis": 32,
+  "bitmis": 58,
   "adressiz_satir": 16
  },
  "gbp_kutu": {
   "mahalle": [
+   "Devlet",
    "Göksu",
    "Güzelkent",
    "Şehit Osman Avcı",
@@ -39,13 +42,11 @@
    "Eryaman 1. Etap",
    "Eryaman 4. Etap",
    "Eryaman 5. Etap",
-   "Eryaman (mahalle)",
    "Tunahan",
    "Altay",
-   "Devlet",
    "Yavuz Selim"
   ],
-  "sorgu_sayisi": 7
+  "sorgu_sayisi": 8
  },
  "turetilen_tarihler": {
   "title_donuk": "2026-09-07",
@@ -56,41 +57,37 @@
  },
  "uyarilar": [
   "DIZIN-DAMLASI-31-08.md içinde 16 açıklama satırının üstünde adres yok; bunlar açık sayıya girmiyor (31.08 kurulumundan kalan boşluk).",
-  "Gözlenen tempo kotanın altında: 01.09 günü 9 istek, 02.09 günü 2 istek, 03.09 günü 8 istek (ortalama 6,3); bu tempoyla damla 09.09 Çarşamba günü biter, kotayla 07.09 Pazartesi. Düşük günün sebebi kayan 24 saat sınırıydı, kalıcı tempo değil.",
+  "Gözlenen tempo kotanın altında: 01.09 günü 9 istek, 02.09 günü 2 istek, 03.09 günü 8 istek, 04.09 günü 3 istek, 05.09 günü 11 istek (ortalama 6,6); bu tempoyla damla 07.09 Pazartesi günü biter, kotayla 06.09 Pazar. Düşük günün sebebi kayan 24 saat sınırıydı, kalıcı tempo değil.",
   "GSC verisi 3 gün geriden gelir; pencere hesapları buna göre kaydırıldı."
  ],
  "isler": [
   {
    "tarih": "2026-09-04",
    "tarih_tr": "04.09 Cuma",
-   "is": "Dizin damlası: 10 istek gönder, liderkent (Şeyh Şamil) ile başla. Kuyrukta 33 sayfa açık, gün sonunda 23 kalır.",
+   "is": "Tunahan ve Eryaman mahalle sayfaları yeniden tarandı mı: node scripts/gsc-api.mjs denetle https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi — son tarama tarihleri 17.08 / 21.08 idi.",
+   "neden": "İstek 01.09 günü gitti; ertesi sabah API ikisini de hâlâ eski tarama tarihinde gösterdi. Kaldıraç defteri: dizinde OLAN sayfaya istek (Tunahan, Eryaman mahalle) aynı gün tarama getirmedi; ölü sayfada getiriyordu. Yani istek → tarama bağı yalnız dizin dışı sayfada sağlam. Üç gün sonra hâlâ bayatsa 'dizindeki sayfaya istek' kaldıraç defterine çürük yazılır; tazelendiyse sıra yeniden ölçülür.",
+   "kaynak": "DIZIN-DAMLASI-31-08.md (Öncelik 0) + PROTOKOL-gece.md 02.09 08:28 + kaldirac-defteri.json",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-09-05",
+   "tarih_tr": "05.09 Cumartesi",
+   "is": "Tarandıysa sırayı yeniden ölç (serp-olcum, pws=0): Tunahan Mahallesi emlakçı: ilk 10 dışı (04.09); Eryaman Mahallesi emlakçı: 5 (04.09).",
+   "neden": "Tarama tazeliği ile sıra arasındaki ilişki ölçüldü (ilk 3 bandında bayat tarama üç kat daha az) ama 02.09 ilk kontrolünde kendiliğinden taranan iki mahalle sayfası sıra değiştirmedi. İkinci örnek bu ikisi; sonuç ne çıkarsa kaldıraç defterine girer.",
+   "kaynak": "hedef-sorgular.json (son sıra) + kaldirac-defteri.json 'Tarama tazeliği'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-09-06",
+   "tarih_tr": "06.09 Pazar",
+   "is": "Dizin damlası: 7 istek gönder, ozenkent-2-villalari (Yavuz Selim) ile başla. Kuyrukta 7 sayfa açık, gün sonunda 0 kalır.",
    "neden": "Kuyruktaki her sayfa Search Console API ile dizin dışı doğrulandı ve 28 günde sıfır gösterim aldı; tek ilacı dizine girmek. Kota günde yaklaşık 10 istek ve takvim günü değil kayan 24 saat: dünkü istekler sabah gittiyse pencere ertesi gün aynı saatten sonra açılır; 'sorun oluştu' balonu kota dolu demektir, tekrar basılmaz. İstek, dizin dışı sayfada aynı gün tarama getiriyor (damla turları).",
    "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
    "kim": "Claude",
    "ayrinti": [
     {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent",
-     "durum": "\"Liderkent emlakçı\" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
      "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari",
      "durum": "\"Özenkent 2 Villaları emlakçı\" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi",
-     "durum": "\"Kafdağı Sitesi emlakçı\" sorgusunda 3. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi",
-     "durum": "\"Gerçek - 92 Sitesi emlakçı\" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu",
-     "durum": "\"Address Göksu emlakçı\" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari",
-     "durum": "\"Neva Panora Konutları emlakçı\" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil"
     },
     {
      "url": "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim",
@@ -101,20 +98,28 @@
      "durum": "\"Yağan Kent emlakçı\" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil"
     },
     {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower",
-     "durum": "\"Gökdemir Tower emlakçı\" sorgusunda 3. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil"
+     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi",
+     "durum": "\"Konuta Özlem Sitesi emlakçı\" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
     },
     {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi",
-     "durum": "\"Ak 91 Sitesi emlakçı\" sorgusunda 4. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil"
+     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari",
+     "durum": "keşfedildi, dizine alınmadı"
+    },
+    {
+     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari",
+     "durum": "keşfedildi, dizine alınmadı"
+    },
+    {
+     "url": "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line",
+     "durum": "hiç bilinmiyor"
     }
    ]
   },
   {
-   "tarih": "2026-09-04",
-   "tarih_tr": "04.09 Cuma",
-   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil. Etap sorgularında da kutu var, biz yokuz: Eryaman 2. Etap, Eryaman 3. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi. Yeşilova hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
-   "neden": "Bu 7 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 31.08–02.09). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Eryaman (mahalle), Tunahan, Altay, Devlet, Yavuz Selim. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
+   "tarih": "2026-09-06",
+   "tarih_tr": "06.09 Pazar",
+   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Devlet, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil. Etap sorgularında da kutu var, biz yokuz: Eryaman 2. Etap, Eryaman 3. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi. Yeşilova hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
+   "neden": "Bu 8 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 31.08–05.09). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Tunahan, Altay, Yavuz Selim. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
    "kaynak": "hedef-sorgular.json (kutu_var ve kutuda alanları)",
    "kim": "Özgün",
    "ayrinti": [
@@ -131,16 +136,22 @@
      "olcum": "2026-09-02"
     },
     {
+     "sorgu": "Devlet Mahallesi emlakçı",
+     "kutu_yon": "kutudan çıktı",
+     "organik_sira": "ilk 10 dışı",
+     "olcum": "2026-09-04"
+    },
+    {
      "sorgu": "Göksu Mahallesi emlakçı",
      "kutu_yon": "kutu dışında kaldı",
      "organik_sira": "ilk 10 dışı",
-     "olcum": "2026-09-02"
+     "olcum": "2026-09-05"
     },
     {
      "sorgu": "Güzelkent Mahallesi emlakçı",
      "kutu_yon": "kutu dışında kaldı",
      "organik_sira": "ilk 10 dışı",
-     "olcum": "2026-08-31"
+     "olcum": "2026-09-05"
     },
     {
      "sorgu": "Şehit Osman Avcı Mahallesi emlakçı",
@@ -163,148 +174,18 @@
    ]
   },
   {
-   "tarih": "2026-09-04",
-   "tarih_tr": "04.09 Cuma",
-   "is": "Tunahan ve Eryaman mahalle sayfaları yeniden tarandı mı: node scripts/gsc-api.mjs denetle https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi — son tarama tarihleri 17.08 / 21.08 idi.",
-   "neden": "İstek 01.09 günü gitti; ertesi sabah API ikisini de hâlâ eski tarama tarihinde gösterdi. Kaldıraç defteri: dizinde OLAN sayfaya istek (Tunahan, Eryaman mahalle) aynı gün tarama getirmedi; ölü sayfada getiriyordu. Yani istek → tarama bağı yalnız dizin dışı sayfada sağlam. Üç gün sonra hâlâ bayatsa 'dizindeki sayfaya istek' kaldıraç defterine çürük yazılır; tazelendiyse sıra yeniden ölçülür.",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (Öncelik 0) + PROTOKOL-gece.md 02.09 08:28 + kaldirac-defteri.json",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-05",
-   "tarih_tr": "05.09 Cumartesi",
-   "is": "Dizin damlası: 10 istek gönder, elele-sitesi (Güzelkent) ile başla. Kuyrukta 23 sayfa açık, gün sonunda 13 kalır.",
-   "neden": "Kuyruk devam ediyor; gerekçe ve kota kuralı ilk damla gününde (04.09 Cuma).",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
-   "kim": "Claude",
-   "ayrinti": [
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi",
-     "durum": "\"Elele Sitesi emlakçı\" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi",
-     "durum": "\"Konuta Özlem Sitesi emlakçı\" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari",
-     "durum": "\"Acat Konutları emlakçı\" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
-     "durum": "\"Erkaraca Sitesi emlakçı\" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/kuryap-sitesi",
-     "durum": "\"Kuryap Sitesi emlakçı\" sorgusunda 5. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/uyum-90-sitesi",
-     "durum": "\"Uyum 90 Sitesi emlakçı\" sorgusunda 5. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
-     "durum": "\"Polsan1 Ayışığı Sitesi emlakçı\" sorgusunda 6. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi",
-     "durum": "\"Atakent 1 Aşiyan Sitesi emlakçı\" sorgusunda 8. sırada eski adres çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi",
-     "durum": "\"Gülşah - 95 Sitesi emlakçı\" sorgusunda 8. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi",
-     "durum": "\"Kuşburnu Sitesi emlakçı\" sorgusunda 8. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil"
-    }
-   ]
-  },
-  {
-   "tarih": "2026-09-05",
-   "tarih_tr": "05.09 Cumartesi",
-   "is": "Tarandıysa sırayı yeniden ölç (serp-olcum, pws=0): Tunahan Mahallesi emlakçı: ilk 10 dışı (02.09); Eryaman Mahallesi emlakçı: 5 (02.09).",
-   "neden": "Tarama tazeliği ile sıra arasındaki ilişki ölçüldü (ilk 3 bandında bayat tarama üç kat daha az) ama 02.09 ilk kontrolünde kendiliğinden taranan iki mahalle sayfası sıra değiştirmedi. İkinci örnek bu ikisi; sonuç ne çıkarsa kaldıraç defterine girer.",
-   "kaynak": "hedef-sorgular.json (son sıra) + kaldirac-defteri.json 'Tarama tazeliği'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-06",
-   "tarih_tr": "06.09 Pazar",
-   "is": "Dizin damlası: 10 istek gönder, endora-goksu (Göksu) ile başla. Kuyrukta 13 sayfa açık, gün sonunda 3 kalır.",
-   "neden": "Kuyruk devam ediyor; gerekçe ve kota kuralı ilk damla gününde (04.09 Cuma).",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
-   "kim": "Claude",
-   "ayrinti": [
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu",
-     "durum": "\"Endora Göksu emlakçı\" sorgusunda 9. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence",
-     "durum": "\"Diamond Residence emlakçı\" sorgusunda 10. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/arzutas-sitesi",
-     "durum": "\"Arzutaş Sitesi emlakçı\" 5. sırada komşu site sayfamız; doğru sayfa hiç taranmamış (02.09 API)"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi",
-     "durum": "keşfedildi, dizine alınmadı"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
-     "durum": "hiç bilinmiyor"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi",
-     "durum": "hiç bilinmiyor"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence",
-     "durum": "keşfedildi, dizine alınmadı"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi",
-     "durum": "hiç bilinmiyor"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari",
-     "durum": "hiç bilinmiyor"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari",
-     "durum": "keşfedildi, dizine alınmadı"
-    }
-   ]
-  },
-  {
    "tarih": "2026-09-07",
    "tarih_tr": "07.09 Pazartesi",
-   "is": "Dizin damlası: 3 istek gönder, kutlutas-2-bloklari (Şehit Osman Avcı) ile başla. Kuyrukta 3 sayfa açık, gün sonunda 0 kalır.",
-   "neden": "Kuyruk devam ediyor; gerekçe ve kota kuralı ilk damla gününde (04.09 Cuma).",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
-   "kim": "Claude",
-   "ayrinti": [
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari",
-     "durum": "keşfedildi, dizine alınmadı"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/vatan-sitesi",
-     "durum": "keşfedildi, dizine alınmadı"
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line",
-     "durum": "hiç bilinmiyor"
-    }
-   ]
+   "is": "Damla kuyruğu tükenir: yeni kuyruk için görünmezleri API'ye sor (gsc-dizin becerisi; gorunmez-teshis-uret.py → dizin-adaylari-uret.py), yalnız 'dizin dışı' doğrulananlar yeni kuyruğa girer.",
+   "neden": "Kota boşa harcanmasın: 31.08 kurulumunda görünmez sayfaların çoğu zaten dizindeydi, onlara istek göndermek sıra kazandırmıyor. Bitiş gününün (06.09 Pazar) ertesine kondu ki kuyruk boşken kota boş kalmasın.",
+   "kaynak": "DIZIN-DAMLASI-31-08.md giriş notu (57/96 dizindeydi)",
+   "kim": "Claude"
   },
   {
    "tarih": "2026-09-07",
    "tarih_tr": "07.09 Pazartesi",
    "is": "Title/H1 donması biter. İlk iş: 'eryaman emlakçı' için ana sayfa meta description (ve gerekirse title) yeniden kurulur; değişiklik tek başına gider, aynı gün başka şablon işi yapılmaz ki etkisi ayrışsın.",
-   "neden": "'eryaman emlakçı' tıklanma oranı 27.07–11.08 döneminde %5,5, 16.08–31.08 döneminde %2,2; organik sıra ve harita kutusu aynı kaldı, yani sorun sırada değil snippet'te. Baş şüpheli 15.08 tarihli ana sayfa açıklama kısaltması (229 → 119 karakter); nedensellik ölçülmedi, tek şüpheli değil. Donma sebebi: 10.08 başlık değişikliğinin tabanı eski başlıkla alınmıştı, üstüne ikinci müdahale binerse etki ayrışmaz.",
+   "neden": "'eryaman emlakçı' tıklanma oranı 27.07–11.08 döneminde %5,5, 16.08–03.09 döneminde %2,0; organik sıra ve harita kutusu aynı kaldı, yani sorun sırada değil snippet'te. Baş şüpheli 15.08 tarihli ana sayfa açıklama kısaltması (229 → 119 karakter); nedensellik ölçülmedi, tek şüpheli değil. Donma sebebi: 10.08 başlık değişikliğinin tabanı eski başlıkla alınmıştı, üstüne ikinci müdahale binerse etki ayrışmaz.",
    "kaynak": "eryaman-emlakci.json title_donuk + eryaman-emlakci.json dönemler/notlar + PROTOKOL-gece.md satır 157",
    "kim": "Claude"
   },
@@ -314,14 +195,6 @@
    "is": "Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 07.09′de bakılacak.",
    "neden": "Bağlı kayıt 'Ada sayfasının canonical′ı site sayfasına' (çürük) — ölçümü: 30 ada sayfası denetlendi: 17′si dizinde ve 17′sinin de 17′sinde Google canonical olarak ADA SAYFASININ KENDİSİNİ seçmiş. 03.08′de kurulan düzenek dört haftada tek vakada bile yutulmadı.",
    "kaynak": "kaldirac-defteri.json (31.08 API denetimi, googleCanonical sütunu)",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-08",
-   "tarih_tr": "08.09 Salı",
-   "is": "Damla kuyruğu tükenir: yeni kuyruk için görünmezleri API'ye sor (gsc-dizin becerisi; gorunmez-teshis-uret.py → dizin-adaylari-uret.py), yalnız 'dizin dışı' doğrulananlar yeni kuyruğa girer.",
-   "neden": "Kota boşa harcanmasın: 31.08 kurulumunda görünmez sayfaların çoğu zaten dizindeydi, onlara istek göndermek sıra kazandırmıyor. Bitiş gününün (07.09 Pazartesi) ertesine kondu ki kuyruk boşken kota boş kalmasın.",
-   "kaynak": "DIZIN-DAMLASI-31-08.md giriş notu (57/96 dizindeydi)",
    "kim": "Claude"
   },
   {
@@ -336,7 +209,7 @@
    "tarih": "2026-09-16",
    "tarih_tr": "16.09 Çarşamba",
    "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor. Betikte konum kırılımı henüz yok; önce olaylar komutuna konum boyutu eklenir.",
-   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 11, whatsapp_click 7 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
+   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 13, whatsapp_click 9 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
    "kaynak": "git log --grep '#88' + PROTOKOL-gece.md 02.09 (GA4 açıldı) + tik-sonrasi.json",
    "kim": "Claude"
   },
@@ -352,15 +225,15 @@
    "tarih": "2026-09-28",
    "tarih_tr": "28.09 Pazartesi",
    "is": "Beklenen düşüşler sınaması: python3 sonuc-ozeti-uret.py ve sayfa-turu-verimi.py yeniden; toplam tık çizgisi inmiş olmalı, Eryaman satırı inmemiş olmalı.",
-   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 2.446 tıkın 841 tıkı (%34) oradandı. Yazılar: 42 sayfa, 6.717 gösterim / 113 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 1.645 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
+   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 2.324 tıkın 796 tıkı (%34) oradandı. Yazılar: 43 sayfa, 5.853 gösterim / 101 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 1.563 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
    "kaynak": "git log --grep '#79' + sonuc-ozeti.json ayrim + sayfa-turu-verimi.json",
    "kim": "Claude"
   },
   {
-   "tarih": "2026-09-30",
-   "tarih_tr": "30.09 Çarşamba",
+   "tarih": "2026-10-03",
+   "tarih_tr": "03.10 Cumartesi",
    "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
-   "neden": "02.09 ölçümü tek pencere (04.08–31.08); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %83,1, tık payı %79,8; yalın site adı sınıfı TO %1,7 (konum 8,3), alıcı niyeti TO %4,9 (konum 6,8). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
+   "neden": "05.09 ölçümü tek pencere (07.08–03.09); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %83,3, tık payı %80,3; yalın site adı sınıfı TO %0,8 (konum 9,5), alıcı niyeti TO %3,1 (konum 7,1). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
    "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
    "kim": "Claude"
   }
