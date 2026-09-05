@@ -90,17 +90,17 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Çizgi Ötesi Residence emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence ← 03.09 DİZİNDE (kendiliğinden, son tarama 2026-09-03; kota harcanmadı)
       _"Akdal Residence emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent ← 05.09 istek gönderildi  
       _"Liderkent emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari  
       _"Özenkent 2 Villaları emlakçı" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi ← 05.09 istek gönderildi  
       _"Kafdağı Sitesi emlakçı" sorgusunda 3. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gercek-92-sitesi ← 04.09 istek gönderildi  
       _"Gerçek - 92 Sitesi emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu ← 04.09 istek gönderildi  
       _"Address Göksu emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari ← 05.09 istek gönderildi  
       _"Neva Panora Konutları emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  
       _"Özlüce Güzelevim emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
@@ -108,13 +108,13 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Yağan Kent emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower ← 04.09 DİZİNDE (kendiliğinden)  
       _"Gökdemir Tower emlakçı" sorgusunda 3. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ak-91-sitesi ← 05.09 istek gönderildi  
       _"Ak 91 Sitesi emlakçı" sorgusunda 4. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi ← 05.09 istek gönderildi  
       _"Elele Sitesi emlakçı" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  
       _"Konuta Özlem Sitesi emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari ← 05.09 istek gönderildi  
       _"Acat Konutları emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi ← 04.09 DİZİNDE (kendiliğinden)  
       _"Erkaraca Sitesi emlakçı" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
@@ -124,13 +124,13 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Uyum 90 Sitesi emlakçı" sorgusunda 5. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [ ] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi  
       _"Polsan1 Ayışığı Sitesi emlakçı" sorgusunda 6. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi ← 05.09 istek gönderildi  
       _"Atakent 1 Aşiyan Sitesi emlakçı" sorgusunda 8. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi ← 04.09 DİZİNDE (kendiliğinden)  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/gulsah-95-sitesi ← 05.09 DİZİNDE (kendiliğinden)  
       _"Gülşah - 95 Sitesi emlakçı" sorgusunda 8. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/kusburnu-sitesi ← 04.09 DİZİNDE (kendiliğinden)  
       _"Kuşburnu Sitesi emlakçı" sorgusunda 8. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/endora-goksu ← 05.09 istek gönderildi  
       _"Endora Göksu emlakçı" sorgusunda 9. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/diamond-residence ← 04.09 DİZİNDE (kendiliğinden)  
       _"Diamond Residence emlakçı" sorgusunda 10. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
@@ -191,7 +191,7 @@ Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/meltem-sitesi ← 02.09 dizin dışı teyit; istek 'sorun oluştu' (kayan 24 sa sınırı), GÖNDERİLMEDİ — yarın ilk  
       _keşfedildi, dizine alınmadı_
-- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi ← 05.09 istek gönderildi  
       _hiç bilinmiyor_
 
 ## goksu-mahallesi (3)
@@ -215,7 +215,7 @@ Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 
 
 ## seker-mahallesi (1)
 
-- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence ← 04.09 istek gönderildi  
+- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/izoser-residence ← 05.09 istek gönderildi  
       _keşfedildi, dizine alınmadı_
 
 ## yavuz-selim-mahallesi (1)
@@ -228,7 +228,7 @@ Toplam: **45 açık hedef** — günde ~10 kotayla 4-5 gün. Sıra: ÖNCELİK 1 
 Google API ilk turda 500 döndürmüştü. Yeniden soruldu:
 **5'i zaten dizinde** (istek gerekmiyor), 1'i dizin dışı.
 
-- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari ← 04.09 DİZİNDE (kendiliğinden)  
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari ← 05.09 DİZİNDE (kendiliğinden)  
       _hiç bilinmiyor_
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-sitesi ← 31.08 DİZİNDE (yeniden denetim)
 - [x] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi ← 31.08 DİZİNDE (yeniden denetim)
@@ -312,7 +312,9 @@ Bu parti birinci partiden SONRA çekilir.
 > işaretlenmedi. Sebep: 03.09 sabahı 8 istek gitmişti, kayan 24 saat penceresi
 > boşalmamış. Sıradaki tur Endora Göksu'dan devam eder.
 
-> 04.09 ikinci tur — kota TAMAMEN AÇIKTI. 12 aday yeniden denetlendi: 2'si
+> 05.09 turu — kota TAMAMEN AÇIKTI. (Bu blok once yanlislikla 04.09 diye
+> yazilmisti; oturum gece boyunca surdugu icin tarih donmus, commit damgasi
+> 05.09 07:33. Duzeltildi.) 12 aday yeniden denetlendi: 2'si
 > kendiliğinden dizine girmiş (Gülşah 95, Göksu Park Vadi), 10'u hâlâ dışarıda
 > ve **10'unun 10'una da istek gönderildi, hepsi kabul edildi.**
 > Gönderilenler: Endora Göksu, AK 91, Atakent 1 Aşiyan, Neva Panora, Öz Muhtar,
@@ -329,3 +331,26 @@ Bu parti birinci partiden SONRA çekilir.
 > Atakent 1 Aşiyan'ın gönderilme gerekçesi taramadan: o sorguda Oyak Sitesi
 > sayfamız 7. sırada çıkıyordu çünkü doğru sayfa dizin dışıydı.
 
+
+> **05.09 SONUÇ — 10 istek, 10'u da AYNI SAAT içinde taranıp dizine girdi.**
+> Tarama damgaları 04:20–04:32 UTC (07:20–07:32 İstanbul) arasında sıralanmış;
+> istekler o dakikalarda gönderilmişti. Google isteği kuyruğa almadı, anında
+> işledi.
+>
+> | sayfa | tarama (UTC) |
+> |---|---|
+> | goksu/endora-goksu | 04:20:42 |
+> | guzelkent/ak-91-sitesi | 04:22:34 |
+> | eryaman/atakent-1-asiyan-sitesi | 04:24:41 |
+> | sehit-osman-avci/neva-panora-konutlari | 04:26:37 |
+> | seker/izoser-residence | 04:28:37 |
+> | guzelkent/oz-muhtar-sitesi | 04:28:39 |
+> | yavuz-selim/acat-konutlari | 04:31:00 |
+> | seyh-samil/liderkent | 04:31:02 |
+> | goksu/kafdagi-sitesi | 04:32:38 |
+> | guzelkent/elele-sitesi | 04:32:38 |
+>
+> **SIRAYA DA YANSIDI:** Ak 91 Sitesi sabah "URL is unknown to Google"du;
+> istek gönderildi, 04:22'de tarandı ve aynı gün SERP'te **2. sırada** ölçüldü.
+> Bu, damlanın istek→tarama→dizin→SIRA zincirini aynı gün tamamladığı ilk
+> temiz vaka (önceki dönüşüm kayıtlarında sıra ölçümü günler sonraydı).
