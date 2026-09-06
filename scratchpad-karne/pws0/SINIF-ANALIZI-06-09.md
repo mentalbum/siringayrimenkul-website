@@ -68,3 +68,42 @@ içerik derinleştirmesi (TKGM/bilgiemlak/site kaynaklı olgu), 17'si kontrol.
 Okuma 21.09 ve 05.10, aynı sorgular. Başlık müdahalesi (PR #90) iki kolda da
 aynı olduğu için fark içeriğin katkısıdır. UYDURMA VERİ YASAK — kaynak yoksa
 o site kolun dışında bırakılır.
+
+## EK — 06.09 akşam: taramanın hedeflediği sorgu kalıbının GERÇEK hacmi
+
+GSC 28 gün (08.08-04.09): 2.631 sorgu, 648 tık, 43.909 gösterim.
+
+| sorgu sınıfı | sorgu | tık | gösterim | TO | ort. poz |
+|---|---|---|---|---|---|
+| yalın site adı / diğer | 1.640 | 233 | 28.564 | %0,82 | 9,5 |
+| alıcı-kiracı niyeti (satılık/kiralık/fiyat) | 848 | 366 | 11.946 | %3,06 | 7,2 |
+| emlakçı / gayrimenkul | 125 | 49 | 1.809 | %2,71 | **4,6** |
+| bilgi (Eryaman nereye bağlı) | 18 | 0 | 1.590 | %0,00 | 9,3 |
+
+**"\<site adı\> emlakçı" kalıbı: 4 sorgu, 12 gösterim, 0 tık (28 gün).**
+
+Yani 527 sorguluk komple tarama, gerçekte neredeyse hiç aranmayan bir kalıbı
+tarıyor. Bu bir sorun değil — turun amacı **teşhis**: "site adı arandığında
+Google bizim HANGİ sayfamızı seçiyor?" sorusuna cevap veriyor ve yanlış-sayfa /
+eski-adres / ada-kanibalizasyonu bulgularının tamamı buradan çıktı. Ama
+turdaki sıraların doğrudan trafik karşılığı yok; "ilk 3'e çıkarma" işi
+trafik değil **ayırt edicilik** hedefidir. Rapor dili buna göre kurulmalı.
+
+**Asıl hacim iki yerde:**
+1. Yalın site adı — 28.564 gösterim (%65), ama TO %0,82 ve poz 9,5. Bu sınıf
+   "yalın ad içerik çıkmazı" ölçümüyle kapatılmıştı (sıralayan/sıralamayan
+   sayfalar aynı çıktı). Kaldıraç bilinmiyor.
+2. Alıcı-kiracı niyeti — 11.946 gösterim, TO %3,06, 366 tık. En çok tık buradan
+   geliyor ama hedef kitle EV SAHİBİ değil (Özgün kararı: satış/kiralama eşit,
+   alıcı kümesi kayırılmaz).
+
+**En güçlü olduğumuz yer:** "emlakçı/gayrimenkul" sınıfı, ortalama pozisyon 4,6.
+"eryaman emlakçı" 480 gösterim / 17 tık / poz 1,4.
+
+**Bilgi sorguları (1.590 gösterim, poz 9,3, SIFIR tık):** "eryaman nereye bağlı"
+(1.109), "eryaman hangi ilçeye bağlı" (293) ve 16 varyantı. Cevap sitede var
+(ana sayfa: "Etimesgut'un Eryaman bölgesinde") ama üste çıkmıyor.
+KARAR ÖZGÜN'ÜN: bu sorguyu arayan kişi Eryaman'da mülkü olan biri değil
+(zaten bilir) — Özgün'ün "gereksiz tıklanma istemiyoruz / ölçüt: Eryaman'da
+mülkü olana mı sesleniyor" kuralına göre bu iş AÇILMAZ. Ölçüm burada duruyor,
+istenirse mevcut bir sayfaya tek SSS maddesi olarak eklenir (yeni sayfa değil).
