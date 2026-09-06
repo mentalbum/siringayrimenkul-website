@@ -123,6 +123,25 @@
    "tarih": "2026-09-06",
    "n": 34,
    "not": "Karıştırıcı: kısa açıklamalı sitelerin çoğu jenerik adlı; kol ataması buna göre dengelenmeli."
+  },
+  {
+   "tarih": "2026-09-07",
+   "ad": "24 zayif site sayfasina veriye dayali ikinci paragraf",
+   "durum": "acik",
+   "olcum": "Ilk 10 disindaki 34 'yerel bosluk' sayfasindan aciklamasi en kisa 24'u. Siralayan sayfa ort. 913 krk, bunlar 695 krk -> 24'u ort. 1150 krk'e cikti.",
+   "gerekce": "Her paragraf yalniz kendi JSON verisinden (tapu niteligi, parsel m2, blok sayisi, ada paylasimi, alt adlar). 15/24'te denetim ajani uydurma olgu yakaladi ve duzeltti.",
+   "nerede": "PR #91",
+   "yan_bulgu": "aciklama tek <p> icinde duz metin basiliyordu, \\n\\n cokuyordu; sablon paragrafa bolecek sekilde duzeltildi (onceden cok paragrafli 5 kayit da duzeldi)",
+   "sonraki_olcum": "Google yeniden tarayinca; bu 24'un SERP sirasi sonuclar-site-emlakci.jsonl'de kayitli"
+  },
+  {
+   "tarih": "2026-09-07",
+   "ad": "PR #90 sonrasi yeniden tarama: sitemap tabani ilerletilmedigi icin 8 sayfa bekliyor",
+   "durum": "acik",
+   "olcum": "8 capraz-mahalle sayfasinin hicbiri 06.09 merge'unden sonra taranmadi (API denetimi 07.09 02:30). En eski hotki-meydan: 01.08.",
+   "gerekce": "Baslik metni tarama tetiklemez; tek tetikleyici sitemap damgasi. SABLON.site 11.09 okumasindan sonra ilerletilecek diye bilerek geride birakildi. O tarihe kadar tek yol elle GSC istegi.",
+   "risk": "Kota ~13/gun; 8 sayfa ~1 hafta. 21.09 olcumunde bu 8'in yeni baslikta olmamasi ihtimali var, okuma buna gore yapilmali.",
+   "nerede": "DIZIN-DAMLASI-31-08.md 07.09 bolumu"
   }
  ]
 }
