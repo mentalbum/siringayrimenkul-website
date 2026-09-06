@@ -377,3 +377,24 @@ Amaç: birincil çiftlerin iki tarafı da yeni başlıkla taransın (21.09 okuma
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil/yeni-burak-sitesi ← 06.09 istek gönderildi (ESKİ ADRES diyagnostik; hüküm "mevcut", son tarama 28.06; okuma 01.10)
 > 06.09 15:0x — "Kota Aşıldı": devlet-mahallesi/hotki-meydan isteği İŞLENMEDİ (Yeni Burak diyagnostiğinden hemen sonra). 07.09 ≥10:20 sırası: hotki-meydan, hotki-ritm, guzel-ankara-sitesi (guzelkent), guzel-ankara-evleri-sitesi (eryaman), endora-park (eryaman), endora-eryaman (yavuz-selim), park-inci-konutlari (goksu), inci-park-evleri (seyh-samil); kota kalırsa erland-residence (goksu), sutek-bloklari (altay). Hepsi dizinde ("mevcut") — amaç yeni başlıkla yeniden tarama; önce API ile son tarama tarihine bak, 06.09 sonrası taranmış olan atlanır.
 
+
+## 07.09 — PR #90 sonrası yeniden tarama kuyruğu (8 sayfa)
+
+Başlık kuralı 06.09 15:50'de merge edildi ama `SABLON.site` bilerek
+ilerletilmedi (11.09 okumasından sonra ayrı commit). Bu 8 çapraz-mahalle
+çiftinin **hiçbiri** merge'den sonra taranmadı — yeni başlık SERP'te
+ancak yeniden tarandığında görünür. API denetimi (07.09 02:30, hepsi
+"Submitted and indexed"), parantezdeki tarih son tarama:
+
+- [ ] devlet-mahallesi/hotki-meydan (01.08) ← **en eski, öncelik**
+- [ ] guzelkent-mahallesi/guzel-ankara-sitesi (17.08)
+- [ ] seyh-samil-mahallesi/inci-park-evleri (23.08)
+- [ ] yavuz-selim-mahallesi/endora-eryaman (30.08)
+- [ ] eryaman-mahallesi/guzel-ankara-evleri-sitesi (30.08)
+- [ ] goksu-mahallesi/park-inci-konutlari (02.09)
+- [ ] yesilova-mahallesi/hotki-ritm (03.09)
+- [ ] eryaman-mahallesi/endora-park (03.09)
+
+> 07.09 02:35 — hotki-meydan denetlendi (dizinde mevcut), istek gönderildi:
+> **"Kota Aşıldı"** — istek İŞLENMEDİ. Kota 06.09'daki turdan doldu, kayan
+> 24 saat. Yarın öğleden sonra tekrar.
