@@ -68,30 +68,18 @@
   "A": {
    "ad": "İlk 10 dışı — dizin dışı (damla)",
    "kaldirac": "DAMLA — GSC dizin isteği. Ölçüm: istek→aynı gün tarama 14.08 8/8, 29.08 10/10; istek→sıra 31.08 tam-geçmiş denetiminde 6'da 3 (kaldirac-defteri.json). Kota ~10/gün.",
-   "n": 4,
-   "n_site": 4,
+   "n": 2,
+   "n_site": 2,
    "n_hedef": 0,
    "alt": [
     [
      "Discovered - currently not indexed",
-     3
-    ],
-    [
-     "URL is unknown to Google",
-     1
+     2
     ]
    ],
    "mahalle": [
     [
-     "guzelkent-mahallesi",
-     1
-    ],
-    [
      "sehit-osman-avci-mahallesi",
-     1
-    ],
-    [
-     "seker-mahallesi",
      1
     ],
     [
@@ -102,20 +90,16 @@
    "tarama_kovasi": [
     [
      "hiç taranmamış",
-     4
+     2
     ]
    ],
    "sira_dagilimi": [
     [
      0,
-     4
+     2
     ]
    ],
    "istek_durumu": [
-    [
-     "istek gönderildi 05.09",
-     2
-    ],
     [
      "eski kuyrukta, açık",
      1
@@ -129,13 +113,13 @@
   "B": {
    "ad": "İlk 10 dışı — dizinde (sıra sorunu)",
    "kaldirac": "",
-   "n": 72,
-   "n_site": 64,
+   "n": 71,
+   "n_site": 63,
    "n_hedef": 8,
    "alt": [
     [
      "taze denetim",
-     57
+     56
     ],
     [
      "27.08 envanteri (taze denetim yok)",
@@ -180,10 +164,6 @@
      1
     ],
     [
-     "seker-mahallesi",
-     1
-    ],
-    [
      "tunahan-mahallesi",
      1
     ],
@@ -203,7 +183,7 @@
     ],
     [
      "8-30 gün",
-     13
+     12
     ],
     [
      "30+ gün (bayat okuma)",
@@ -221,7 +201,7 @@
    "sira_dagilimi": [
     [
      0,
-     72
+     71
     ]
    ]
   },
@@ -335,25 +315,25 @@
   "D": {
    "ad": "İlk 3'te ama YANLIŞ sayfa",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "n": 88,
-   "n_site": 86,
+   "n": 86,
+   "n_site": 84,
    "n_hedef": 2,
    "alt": [
     [
      "eski",
-     40
+     41
     ],
     [
      "baska_site",
-     19
-    ],
-    [
-     "ada",
-     14
+     18
     ],
     [
      "mahalle",
      13
+    ],
+    [
+     "ada",
+     12
     ],
     [
      "ana_sayfa",
@@ -367,7 +347,7 @@
     ],
     [
      "guzelkent-mahallesi",
-     15
+     12
     ],
     [
      "yavuz-selim-mahallesi",
@@ -403,7 +383,7 @@
     ],
     [
      "seker-mahallesi",
-     2
+     3
     ],
     [
      "etap",
@@ -413,14 +393,14 @@
    "tarama_kovasi": [
     [
      "≤7 gün",
-     28
+     29
     ],
     [
      "hiç taranmamış",
-     13
+     12
     ],
     [
-     "≤7 gün (bayat okuma)",
+     "30+ gün",
      11
     ],
     [
@@ -428,12 +408,12 @@
      10
     ],
     [
-     "30+ gün",
-     10
+     "30+ gün (bayat okuma)",
+     9
     ],
     [
-     "30+ gün (bayat okuma)",
-     10
+     "≤7 gün (bayat okuma)",
+     9
     ],
     [
      "8-30 gün (bayat okuma)",
@@ -443,11 +423,11 @@
    "sira_dagilimi": [
     [
      3,
-     36
+     35
     ],
     [
      2,
-     30
+     29
     ],
     [
      1,
@@ -457,39 +437,39 @@
    "dogru_sayfa_serpte": [
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
-     41
+     44
     ],
     [
      "bilinmiyor",
-     35
+     26
     ],
     [
      "hayır (1. sayfada tek sayfamız var)",
-     10
+     15
     ],
     [
      "evet, ilk 3'te (yol eşleşti)",
-     2
+     1
     ]
    ],
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     74
+     73
     ],
     [
      "YOK",
-     14
+     13
     ]
    ],
    "tutan_sayfa_dizin": [
     [
      "MEVCUT",
-     77
+     70
     ],
     [
      "denetlenmedi",
-     8
+     13
     ],
     [
      "YOK",
@@ -498,12 +478,12 @@
    ],
    "sira1_bizim_kanal": [
     [
-     false,
-     35
+     null,
+     38
     ],
     [
-     null,
-     31
+     false,
+     26
     ],
     [
      true,
@@ -513,27 +493,23 @@
    "alt_x_dogru_dizin": [
     [
      "eski / doğru sayfa dizinde",
-     33
+     34
     ],
     [
      "baska_site / doğru sayfa dizinde",
      16
     ],
     [
-     "ada / doğru sayfa dizinde",
-     12
-    ],
-    [
      "mahalle / doğru sayfa dizinde",
      11
     ],
     [
-     "eski / doğru sayfa DİZİN DIŞI",
-     7
+     "ada / doğru sayfa dizinde",
+     10
     ],
     [
-     "baska_site / doğru sayfa DİZİN DIŞI",
-     3
+     "eski / doğru sayfa DİZİN DIŞI",
+     7
     ],
     [
      "ada / doğru sayfa DİZİN DIŞI",
@@ -544,6 +520,10 @@
      2
     ],
     [
+     "baska_site / doğru sayfa DİZİN DIŞI",
+     2
+    ],
+    [
      "ana_sayfa / doğru sayfa dizinde",
      2
     ]
@@ -551,24 +531,28 @@
    "kaldirac_dagilimi": [
     [
      "doğru sayfa yerine yanlış sayfa çıkıyor",
-     41
+     39
     ],
     [
      "eski adres çıkıyor",
-     33
+     34
     ],
     [
      "DAMLA",
-     14
+     13
     ]
    ],
    "eski_tutan_tarama": [
     [
      "30+ gün (bayat okuma)",
-     15
+     13
     ],
     [
      "30+ gün",
+     7
+    ],
+    [
+     "denetlenmedi",
      7
     ],
     [
@@ -580,12 +564,8 @@
      4
     ],
     [
-     "denetlenmedi",
-     3
-    ],
-    [
      "≤7 gün (bayat okuma)",
-     3
+     2
     ],
     [
      "8-30 gün (bayat okuma)",
@@ -595,15 +575,11 @@
    "eski_canli_308": 0,
    "dizin_disi_istek": [
     [
+     "istek gönderildi 06.09",
+     4
+    ],
+    [
      "istek gönderildi 05.09",
-     3
-    ],
-    [
-     "istek gönderildi 03.09",
-     3
-    ],
-    [
-     "damla kuyruğunda, AÇIK",
      3
     ],
     [
@@ -616,6 +592,10 @@
     ],
     [
      "eski kuyrukta, açık",
+     1
+    ],
+    [
+     "istek gönderildi 03.09",
      1
     ],
     [
@@ -633,11 +613,11 @@
    "alt": [
     [
      "baska_site",
-     17
+     20
     ],
     [
      "ada",
-     15
+     13
     ],
     [
      "mahalle",
@@ -645,7 +625,7 @@
     ],
     [
      "eski",
-     7
+     6
     ],
     [
      "ana_sayfa",
@@ -709,7 +689,7 @@
    "tarama_kovasi": [
     [
      "≤7 gün",
-     31
+     28
     ],
     [
      "30+ gün",
@@ -717,15 +697,15 @@
     ],
     [
      "8-30 gün",
-     6
+     7
     ],
     [
      "hiç taranmamış",
-     5
+     6
     ],
     [
      "30+ gün (bayat okuma)",
-     1
+     2
     ],
     [
      "≤7 gün (bayat okuma)",
@@ -735,41 +715,41 @@
    "sira_dagilimi": [
     [
      4,
-     19
+     20
     ],
     [
      6,
-     11
-    ],
-    [
-     5,
-     9
+     12
     ],
     [
      7,
-     7
+     9
+    ],
+    [
+     5,
+     6
     ],
     [
      9,
      4
     ],
     [
-     10,
+     8,
      2
     ],
     [
-     8,
-     2
+     10,
+     1
     ]
    ],
    "dogru_sayfa_serpte": [
     [
-     "bilinmiyor",
-     25
+     "hayır (1. sayfada tek sayfamız var)",
+     24
     ],
     [
-     "hayır (1. sayfada tek sayfamız var)",
-     18
+     "bilinmiyor",
+     19
     ],
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
@@ -779,45 +759,41 @@
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     49
+     48
     ],
     [
      "YOK",
-     5
+     6
     ]
    ],
    "tutan_sayfa_dizin": [
     [
      "MEVCUT",
-     50
+     49
     ],
     [
      "denetlenmedi",
-     3
-    ],
-    [
-     "YOK",
-     1
+     5
     ]
    ],
    "sira1_bizim_kanal": [
     [
-     false,
-     28
+     null,
+     32
     ],
     [
-     null,
-     26
+     false,
+     22
     ]
    ],
    "alt_x_dogru_dizin": [
     [
      "baska_site / doğru sayfa dizinde",
-     16
+     18
     ],
     [
      "ada / doğru sayfa dizinde",
-     13
+     11
     ],
     [
      "mahalle / doğru sayfa dizinde",
@@ -829,7 +805,11 @@
     ],
     [
      "eski / doğru sayfa dizinde",
-     5
+     4
+    ],
+    [
+     "baska_site / doğru sayfa DİZİN DIŞI",
+     2
     ],
     [
      "ada / doğru sayfa DİZİN DIŞI",
@@ -838,20 +818,16 @@
     [
      "eski / doğru sayfa DİZİN DIŞI",
      2
-    ],
-    [
-     "baska_site / doğru sayfa DİZİN DIŞI",
-     1
     ]
    ],
    "kaldirac_dagilimi": [
     [
      "(boş)",
-     49
+     48
     ],
     [
      "DAMLA",
-     5
+     6
     ]
    ],
    "eski_tutan_tarama": [
@@ -865,17 +841,17 @@
     ],
     [
      "8-30 gün (bayat okuma)",
-     2
+     1
     ]
    ],
    "eski_canli_308": 0,
    "dizin_disi_istek": [
     [
      "istek gönderildi 05.09",
-     3
+     4
     ],
     [
-     "damla kuyruğunda, AÇIK",
+     "istek gönderildi 06.09",
      1
     ],
     [
@@ -887,13 +863,13 @@
   "E": {
    "ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "n": 279,
-   "n_site": 278,
+   "n": 286,
+   "n_site": 285,
    "n_hedef": 1,
    "alt": [
     [
      "dogru",
-     276
+     283
     ],
     [
      "dogru_es",
@@ -903,11 +879,11 @@
    "mahalle": [
     [
      "guzelkent-mahallesi",
-     42
+     47
     ],
     [
      "sehit-osman-avci-mahallesi",
-     37
+     38
     ],
     [
      "eryaman-mahallesi",
@@ -943,7 +919,7 @@
     ],
     [
      "seker-mahallesi",
-     10
+     11
     ],
     [
      "cati",
@@ -953,7 +929,7 @@
    "tarama_kovasi": [
     [
      "≤7 gün",
-     73
+     76
     ],
     [
      "8-30 gün (bayat okuma)",
@@ -965,33 +941,33 @@
     ],
     [
      "≤7 gün (bayat okuma)",
-     47
+     49
     ],
     [
      "30+ gün",
-     17
+     16
+    ],
+    [
+     "hiç taranmamış",
+     11
     ],
     [
      "30+ gün (bayat okuma)",
      11
-    ],
-    [
-     "hiç taranmamış",
-     8
     ]
    ],
    "sira_dagilimi": [
     [
-     1,
-     122
+     2,
+     127
     ],
     [
-     2,
-     120
+     1,
+     121
     ],
     [
      3,
-     37
+     38
     ]
    ],
    "adas_es": 3
@@ -999,39 +975,31 @@
   "Ö": {
    "ad": "Ölçülmedi",
    "kaldirac": "önce ölçüm",
-   "n": 4,
-   "n_site": 4,
+   "n": 2,
+   "n_site": 2,
    "n_hedef": 0,
    "alt": [
     [
      null,
-     4
+     2
     ]
    ],
    "mahalle": [
     [
      "sehit-osman-avci-mahallesi",
-     3
-    ],
-    [
-     "guzelkent-mahallesi",
-     1
+     2
     ]
    ],
    "tarama_kovasi": [
     [
      "hiç taranmamış",
-     3
-    ],
-    [
-     "≤7 gün",
-     1
+     2
     ]
    ],
    "sira_dagilimi": [
     [
      null,
-     4
+     2
     ]
    ]
   }
@@ -1040,25 +1008,25 @@
   "sorgu_toplam": 528,
   "site": 511,
   "hedef": 17,
-  "olculmedi": 4,
-  "ilk3_dogru_E": 279,
-  "hedef_disi_toplam_A_B_AB_C_D_F": 245,
+  "olculmedi": 2,
+  "ilk3_dogru_E": 286,
+  "hedef_disi_toplam_A_B_AB_C_D_F": 240,
   "hedef_disi_kaldirac_ailesi": [
    [
     "boş — analiz ekseni dolduracak",
-    148
+    146
    ],
    [
     "başlık hizası (07.09 sonrası)",
-    41
+    39
    ],
    [
     "301 sindirme (eski adres, 07.09 sonrası başlık hizası da)",
-    33
+    34
    ],
    [
     "damla (kanıtlı)",
-    23
+    21
    ]
   ],
   "gsc_sorgu_satiri_olan": 1,
@@ -1066,16 +1034,16 @@
  },
  "capraz_kontrol": {
   "bu_betik": {
-   "olculen": 507,
-   "ilk3_toplam": 364,
-   "ilk3_dogru_es_dahil": 278,
-   "ilk3_dogru_es_haric": 275,
-   "ilk10_yok": 68
+   "olculen": 509,
+   "ilk3_toplam": 369,
+   "ilk3_dogru_es_dahil": 285,
+   "ilk3_dogru_es_haric": 282,
+   "ilk10_yok": 65
   },
   "dogru_sayfa_json": {
-   "olculen": 507,
-   "ilk3_toplam": 364,
-   "ilk3_dogru": 275,
+   "olculen": 509,
+   "ilk3_toplam": 369,
+   "ilk3_dogru": 282,
    "guncelleme": "2026-09-06"
   },
   "not": "dogru-sayfa.py 'es' (aynı adlı ikinci kayıt) eşleşmesini başka site sayar; bu betik doğru sayar ve adas_es ile işaretler."
@@ -14372,9 +14340,9 @@
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -14419,28 +14387,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/..."
-    },
-    "ilk3u": [
-     "sahibinden.com/...",
-     "siringayrimenkul.com/mahalleler/guzelkent/cagdas-95-sitesi",
-     "hepsiemlak.com/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Çağdaş - 95 Sitesi Emlakçısı Eryaman - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Çağdaş - 95 Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ESKİ SLUG #2 — 301 sindirilmemiş",
+   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/cagdas-95-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/cagdas-95-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -14491,28 +14451,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/..."
-    },
-    "ilk3u": [
-     "sahibinden.com/...",
-     "eryaman.bilgiemlak.com.tr/...",
-     "hepsiemlak.com/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Çağdaş Sistem Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Çağdaş Sistem Sitesi Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "#4 eski başlıkla — bayat aday",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -14563,28 +14515,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/..."
-    },
-    "ilk3u": [
-     "sahibinden.com/...",
-     "eryaman.bilgiemlak.com.tr/...",
-     "siringayrimenkul.com/...cankaya-vefa-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Çankaya Vefa Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Çankaya Vefa Sitesi Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -14596,7 +14540,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 1,
+   "sira": 3,
    "tutan_url": "/mahalleler/guzelkent-mahallesi/cozum-kent-sitesi",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -14635,28 +14579,20 @@
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/...oz-cozum-kent..."
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/...cozum-kent-sitesi",
-     "sahibinden.com/...oz-cozum-kent...",
-     "eryaman.bilgiemlak.com.tr/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Çözüm Kent Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Çözüm Kent Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 eski başlıkla",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -16113,19 +16049,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/ipek-yapi-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/adalar/18476-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/ipek-yapi-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -16140,17 +16072,7 @@
    "son_tarama": "2026-08-31",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-27",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 37,
-    "canonical": "/mahalleler/guzelkent-mahallesi/adalar/18476-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -16163,34 +16085,26 @@
      "poz": 3.2
     },
     "tutan_sayfa": {
-     "gost": 38,
+     "gost": 10,
      "tik": 0,
-     "poz": 6.3
+     "poz": 3.2
     }
    },
    "rakip": {
-    "sira1": "ipekinsaatemlaksincan.sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "ipekinsaatemlaksincan.sahibinden.com",
-     "url": "ipekinsaatemlaksincan.sahibinden.com/"
-    },
-    "ilk3u": [
-     "ipekinsaatemlaksincan.sahibinden.com/",
-     "eryaman.bilgiemlak.com.tr/...",
-     "siringayrimenkul.com/...adalar/18476-1"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "18476/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ada #3 temsil — İpek İnşaat ofis adaşı #1",
+   "bas": "İpek Yapı Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -16431,7 +16345,7 @@
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -17161,15 +17075,19 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/oz-muhtar-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
-   "sinif": "A",
-   "sinif_ad": "İlk 10 dışı — dizin dışı (damla)",
-   "alt_sinif": "Discovered - currently not indexed",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "baska_site",
+   "sira": 7,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
+   "tutan_tur": "baska_site",
+   "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "YOK",
     "kapsam": "Discovered - currently not indexed",
@@ -17184,39 +17102,45 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-26",
+    "kaynak": "dv-bizim-denetim.tsv (2026-09-02)",
+    "tarama_yasi_gun": 7,
+    "canonical": "/mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
+    "denetim_tarihi": "2026-09-02",
+    "denetim_yasi_gun": 4,
+    "kova_guvenilir": false
+   },
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": false,
+   "dogru_sayfa_dizin_disi": true,
    "istek_durumu": "istek gönderildi 05.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
     "dogru_sayfa": null,
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 76,
+     "tik": 0,
+     "poz": 6.0
+    }
    },
    "rakip": {
-    "sira1": "hepsiemlak.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "hepsiemlak.com",
-     "url": "hepsiemlak.com/..."
-    },
-    "ilk3u": [
-     "hepsiemlak.com/...",
-     "remax.com.tr/...",
-     "eryaman.bilgiemlak.com.tr/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "DAMLA — GSC dizin isteği. Ölçüm: istek→aynı gün tarama 14.08 8/8, 29.08 10/10; istek→sıra 31.08 tam-geçmiş denetiminde 6'da 3 (kaldirac-defteri.json). Kota ~10/gün.",
-   "not": "İLK 10'DA YOK — SERP Eryaman odaklı: istek adayı",
+   "bas": "Özügüzelkent Sitesi Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -17225,15 +17149,19 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/ozle-iletisim-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "ada",
    "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "tutan_url": "/mahalleler/guzelkent/adalar/18483-1",
+   "tutan_tur": "ada",
+   "tutan_tur_ad": "ada sayfamız",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -17248,7 +17176,13 @@
    "son_tarama": "2026-07-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -17261,34 +17195,26 @@
      "poz": 9.7
     },
     "tutan_sayfa": {
-     "gost": 59,
+     "gost": 2,
      "tik": 0,
-     "poz": 9.7
+     "poz": 11.0
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/..."
-    },
-    "ilk3u": [
-     "sahibinden.com/...",
-     "eryaman.bilgiemlak.com.tr/...",
-     "siringayrimenkul.com/...ozle-iletisim-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Özle İletişim Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "#3 eski başlıkla",
+   "bas": "18483/1 Ada — Özle İletiş",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
+   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/adalar/18483-1",
    "icerik_dosyasi_var": true
   },
   {
@@ -17339,28 +17265,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/..."
-    },
-    "ilk3u": [
-     "sahibinden.com/...",
-     "siringayrimenkul.com/...ozuguzelkent-sitesi",
-     "eryaman.bilgiemlak.com.tr/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Özügüzelkent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Özügüzelkent Sitesi Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -17865,18 +17783,18 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/sahinbey-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/sahinbey-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
    "alt_sinif": "baska_site",
-   "sira": 3,
+   "sira": 7,
    "tutan_url": "/mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
    "tutan_tur": "baska_site",
    "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -17921,28 +17839,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/...sahinbey-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/...sahinbey-sitesi",
-     "eryaman.bilgiemlak.com.tr/...",
-     "siringayrimenkul.com/...isi-kent-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Isı Kent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "KOMŞU (isi-kent) #3 temsil — sahinbey kendi sayfası görünmüyor",
+   "bas": "Isı Kent Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/sahinbey-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -17951,19 +17861,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 4,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/adalar/18652-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 3,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -17978,17 +17884,7 @@
    "son_tarama": "2026-08-28",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-31",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 2,
-    "canonical": "/mahalleler/guzelkent-mahallesi/adalar/18652-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -18001,34 +17897,26 @@
      "poz": 6.8
     },
     "tutan_sayfa": {
-     "gost": 40,
+     "gost": 12,
      "tik": 0,
-     "poz": 7.2
+     "poz": 6.8
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/...sehit-ferhat-koc-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/...sehit-ferhat-koc-sitesi",
-     "hepsiemlak.com/...",
-     "sahibinden.com/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "18652/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "",
-   "not": "ada #4 temsil — SFK dizinsizdi (21.08 istek), hâlâ görünmüyor; er-ay-3 birleştirme kararıyla ilişkili",
+   "bas": "Şehit Ferhat Koç Sitesi E",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18037,13 +17925,14 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/selale-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/selale-sitesi",
-   "sinif": "Ö",
-   "sinif_ad": "Ölçülmedi",
-   "alt_sinif": null,
-   "sira": null,
-   "tutan_url": null,
-   "tutan_tur": null,
-   "tutan_tur_ad": null,
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/selale-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
+   "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
@@ -18059,7 +17948,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "tutan_dizin": null,
+   "eski_adres_canli": null,
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -18068,13 +17960,27 @@
      "tik": 0,
      "poz": 8.5
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 10,
+     "tik": 0,
+     "poz": 8.5
+    }
    },
-   "rakip": null,
-   "olcum_tarihi": null,
-   "kanal": null,
-   "kaldirac": "önce ölçüm",
-   "not": "kuyrukta var, sonuç dosyasında hiç kaydı yok",
+   "rakip": {
+    "sira1": null,
+    "sira1_bizim_kanal": null,
+    "sira1_kendi_magaza": false,
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
+   },
+   "bas": "Şelale Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18083,19 +17989,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/seniz-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/seniz-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 5,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/adalar/18516-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 3,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/seniz-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -18110,17 +18012,7 @@
    "son_tarama": "2026-08-28",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-27",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 37,
-    "canonical": "/mahalleler/guzelkent-mahallesi/adalar/18516-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -18134,33 +18026,25 @@
     },
     "tutan_sayfa": {
      "gost": 25,
-     "tik": 1,
-     "poz": 9.3
+     "tik": 0,
+     "poz": 8.9
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/...seniz-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/...seniz-sitesi",
-     "eryaman.bilgiemlak.com.tr/...",
-     "hepsiemlak.com/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "18516/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "",
-   "not": "ada #5 temsil — site sayfası taranmalı",
+   "bas": "Şeniz Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18211,28 +18095,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./sirin-91-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./sirin-91-sitesi",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/sirin-91-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/sirin-91-sitesi-18653-ada-678"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "Şirin 91 Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Şirin 91 Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık, kendi sayfası",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18347,28 +18223,20 @@
     }
    },
    "rakip": {
-    "sira1": "ulasemlak.sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "ulasemlak.sahibinden.com",
-     "url": "ulasemlak.sahibinden.com/"
-    },
-    "ilk3u": [
-     "ulasemlak.sahibinden.com/",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ulas-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/ulas-sitesi-18502-18503-ada-681"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Ulaş Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Ulaş Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık; #1 Ulaş Emlak adlı ofis mağazası (yapısal adaş)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18419,28 +18287,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yayikli-2-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yayikli-2-sitesi",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yayikli-2-sitesi",
-     "instagram.com/reel/CivYDgKjJ3O/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Yayıklı 2 Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Yayıklı 2 Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "eski başlık — bayat, tarama adayı",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18451,16 +18311,16 @@
    "sayfa": "/mahalleler/guzelkent-mahallesi/yayikli-4-sitesi",
    "sinif": "F",
    "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 5,
-   "tutan_url": "/mahalleler/guzelkent/ulas-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "alt_sinif": "baska_site",
+   "sira": 6,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/boyut-sitesi",
+   "tutan_tur": "baska_site",
+   "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -18477,14 +18337,14 @@
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
    "tutan_dizin": {
-    "durum": "YOK",
-    "kapsam": "Page with redirect",
-    "son_tarama": "2026-08-25",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 8,
-    "canonical": "/mahalleler/guzelkent-mahallesi/ulas-sitesi",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-17",
+    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
+    "tarama_yasi_gun": 10,
+    "canonical": null,
+    "denetim_tarihi": "2026-08-27",
+    "denetim_yasi_gun": 10,
     "kova_guvenilir": false
    },
    "eski_adres_canli": null,
@@ -18499,34 +18359,26 @@
      "poz": 6.5
     },
     "tutan_sayfa": {
-     "gost": 23,
-     "tik": 2,
-     "poz": 6.9
+     "gost": 130,
+     "tik": 6,
+     "poz": 7.7
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yayikli-4-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yayikli-4-sitesi",
-     "hepsiemlak.com/ankara-etimesgut-guzelkent-satilik/daire/138926-234",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yayikli-4-sitesi/emlak-ofisinden"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Ulaş Sitesi Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Boyut Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "ÇİFT ANOMALİ: ESKİ SLUG (/guzelkent/) + KOMŞU (ulas) temsil — kendi sayfası görünmüyor, güçlü istek adayı",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/yayikli-4-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/boyut-sitesi; harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -18580,25 +18432,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/yeni-isikent-sitesi-18455-ada-684"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yeni-isikent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/yeni-isikent-sitesi-18455-ada-684",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yeni-isikent-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Yeni Isıkent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Yeni Isıkent Sitesi Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18652,25 +18496,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yenigun-isigi-sitesi"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yenigun-isigi-sitesi",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yenigun-isigi-sitesi",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yenigun-isigi-sitesi/emlak-ofisinden"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Yenigün Işığı Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Yenigün Işığı Sitesi Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18724,25 +18560,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yesil-guven-kent"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesil-guven-kent",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yesil-guven-kent",
-     "eryaman.bilgiemlak.com.tr/yer/yesil-guvenkent-sit-14-blok-4458"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Yeşil Güven Kent Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Yeşil Güven Kent Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18751,19 +18579,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/yesim-kent2-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 2,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/yesimkent",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -18778,53 +18602,31 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "bayat-denetim.tsv (2026-09-05)",
-    "tarama_yasi_gun": 41,
-    "canonical": "/mahalleler/guzelkent-mahallesi/yesimkent",
-    "denetim_tarihi": "2026-09-05",
-    "denetim_yasi_gun": 1,
-    "kova_guvenilir": true
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 03.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
     "dogru_sayfa": null,
-    "tutan_sayfa": {
-     "gost": 30,
-     "tik": 1,
-     "poz": 7.0
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "eryaman.bilgiemlak.com.tr",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/yesimkent-2-sit-2-blok-5042"
-    },
-    "ilk3u": [
-     "eryaman.bilgiemlak.com.tr/yer/yesimkent-2-sit-2-blok-5042",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/yesimkent",
-     "sahibinden.com/emlak/ankara-etimesgut-eryaman-guzelkent-mh."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Yeşimkent Satılık Daire ve Kiralık Daire — Emlakçısı",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "eski başlık — bayat tarama adayı; #1 bilgiemlak",
+   "bas": "Yeşim Kent2 Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -18835,16 +18637,16 @@
    "sayfa": "/mahalleler/guzelkent-mahallesi/yesimkent",
    "sinif": "D",
    "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 1,
-   "tutan_url": "/mahalleler/guzelkent/yesimkent",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "alt_sinif": "baska_site",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
+   "tutan_tur": "baska_site",
+   "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -18861,15 +18663,15 @@
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün",
    "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-16",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 48,
-    "canonical": "/mahalleler/guzelkent/yesimkent",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
+    "durum": "YOK",
+    "kapsam": "URL is unknown to Google",
+    "son_tarama": null,
+    "kaynak": "damla-0309-denetim.tsv (2026-09-03)",
+    "tarama_yasi_gun": null,
+    "canonical": null,
+    "denetim_tarihi": "2026-09-03",
+    "denetim_yasi_gun": 3,
+    "kova_guvenilir": true
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
@@ -18882,35 +18684,23 @@
      "tik": 1,
      "poz": 7.0
     },
-    "tutan_sayfa": {
-     "gost": 4,
-     "tik": 0,
-     "poz": 5.5
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/emlak/ankara-cankaya-merkez-yesilkent-mh."
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/guzelkent/yesimkent",
-     "sahibinden.com/emlak/ankara-cankaya-merkez-yesilkent-mh.",
-     "eryaman.bilgiemlak.com.tr/yer/yesimkent-sitesi-18520-ada-686"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Yeşimkent Emlakçısı Eryaman — Satılık, Kiralık ... - Şirin Gayrimenkul",
-   "h": 2,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ORGANİK 1 ama ESKİ SLUG (/guzelkent/) — 301 sindirilmemiş; harita kutusu 2",
+   "bas": "Yeşim Kent2 Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/yesimkent, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -18919,19 +18709,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/yukselay-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/yukselay-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/yukselay-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -18946,17 +18732,7 @@
    "son_tarama": "2026-08-30",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "bayat-denetim.tsv (2026-09-05)",
-    "tarama_yasi_gun": 41,
-    "canonical": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
-    "denetim_tarihi": "2026-09-05",
-    "denetim_yasi_gun": 1,
-    "kova_guvenilir": true
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -18969,34 +18745,26 @@
      "poz": 5.5
     },
     "tutan_sayfa": {
-     "gost": 59,
+     "gost": 2,
      "tik": 0,
-     "poz": 9.7
+     "poz": 5.5
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/kiralik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yukselay-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/kiralik-daire/ankara-etimesgut-eryaman-guzelkent-mh./yukselay-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/yukselay-sitesi-18497-ada-688",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Özle İletişim Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "KOMŞU (özle-iletişim, eski başlık) temsil — kendi sayfası görünmüyor, istek adayı",
+   "bas": "Yükselay Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19047,28 +18815,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/kiralik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./75-yil-sitesi/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/kiralik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./75-yil-sitesi/emlak-ofisinden",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./75-yil-sitesi",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/75-yil-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "75. Yıl Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "75. Yıl Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19086,9 +18846,9 @@
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "YOK",
@@ -19129,28 +18889,20 @@
     }
    },
    "rakip": {
-    "sira1": "facebook.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "facebook.com",
-     "url": "facebook.com/addressgoksu/"
-    },
-    "ilk3u": [
-     "facebook.com/addressgoksu/",
-     "addresseryaman.sahibinden.com/",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci/address-goksu"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Address Göksu Emlakçısı | Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Address Göksu Emlakçısı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "ESKİ SLUG (/sehit-osman-avci/) — 301 sindirilmemiş; #2 sitenin kendi sahibinden mağazası",
+   "not": "ESKI ADRES: beklenen /mahalleler/sehit-osman-avci-mahallesi/address-goksu, ilk kendi sonucumuz /mahalleler/sehit-osman-avci/address-goksu",
    "icerik_dosyasi_var": true
   },
   {
@@ -19204,25 +18956,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/kiralik-daire/istanbul-eyupsultan-alibeykoy-emniyettepe-mah./ahikent-sitesi"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi",
-     "sahibinden.com/kiralik-daire/istanbul-eyupsultan-alibeykoy-emniyettepe-mah./ahikent-sitesi",
-     "facebook.com/groups/1726301394252681/posts/4767534976795959/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Ahikent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Ahikent Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık; İstanbul adaşına rağmen",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19231,14 +18975,19 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/akasya-sitesi",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi",
-   "sinif": "Ö",
-   "sinif_ad": "Ölçülmedi",
-   "alt_sinif": null,
-   "sira": null,
-   "tutan_url": null,
-   "tutan_tur": null,
-   "tutan_tur_ad": null,
-   "dogru_sayfa_serpte": null,
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "baska_site",
+   "sira": 4,
+   "tutan_url": "/mahalleler/cumhuriyet-mahallesi/akasya-sitesi",
+   "tutan_tur": "baska_site",
+   "tutan_tur_ad": "başka site sayfamız",
+   "adas_es": false,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -19253,7 +19002,16 @@
    "son_tarama": "2026-08-30",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
+   "eski_adres_canli": null,
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -19262,13 +19020,27 @@
      "tik": 0,
      "poz": 8.9
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 81,
+     "tik": 0,
+     "poz": 8.9
+    }
    },
-   "rakip": null,
-   "olcum_tarihi": null,
-   "kanal": null,
-   "kaldirac": "önce ölçüm",
-   "not": "kuyrukta var, sonuç dosyasında hiç kaydı yok",
+   "rakip": {
+    "sira1": null,
+    "sira1_bizim_kanal": null,
+    "sira1_kendi_magaza": false,
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
+   },
+   "bas": "Akasya Sitesi - Cumhuriye",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "",
+   "not": "OLU SAYFA (410): beklenen /mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi, ilk kendi sonucumuz /mahalleler/cumhuriyet-mahallesi/akasya-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -19280,7 +19052,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 3,
+   "sira": 2,
    "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -19319,28 +19091,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./akin-688-konutlari/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./akin-688-konutlari/emlak-ofisinden",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./akin-688-konutlari",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Akın 688 Konutları Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Akın 688 Konutları Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19349,19 +19113,15 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 5,
-   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/adalar/46651-6",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 3,
+   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -19376,17 +19136,7 @@
    "son_tarama": "2026-09-03",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 38,
-    "canonical": "/mahalleler/sehit-osman-avci-mahallesi/adalar/46651-6",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -19399,34 +19149,26 @@
      "poz": 8.7
     },
     "tutan_sayfa": {
-     "gost": 128,
+     "gost": 293,
      "tik": 1,
-     "poz": 8.6
+     "poz": 8.7
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./alpak-neve-armonia-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./alpak-neve-armonia-residence",
-     "sahibinden.com/kiralik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./alpak-neve-armonia-residence/emlak-ofisinden",
-     "remax.com.tr/tr/portfoy/P41501033"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "46651/6 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "",
-   "not": "ada temsil — kendi sayfası görünmüyor, tarama adayı",
+   "bas": "Alpak & Neve Armonia Resi",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19435,19 +19177,15 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/ardic-sitesi",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 1,
-   "tutan_url": "/mahalleler/sehit-osman-avci/ardic-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": true,
-    "sira": 3,
-    "kaynak": "ilk3u (tam yol)"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -19462,17 +19200,7 @@
    "son_tarama": "2026-08-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "YOK",
-    "kapsam": "Page with redirect",
-    "son_tarama": "2026-08-26",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 7,
-    "canonical": "/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -19485,34 +19213,26 @@
      "poz": 6.8
     },
     "tutan_sayfa": {
-     "gost": 68,
+     "gost": 144,
      "tik": 3,
-     "poz": 7.0
+     "poz": 6.8
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./ardic-sitesi"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci/ardic-sitesi",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./ardic-sitesi",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Ardıç Sitesi Emlakçısı - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ORGANİK 1 ama ESKİ SLUG; yeni slug #3'te AYRICA listede — çift girdi, 301 sindirim işareti",
+   "bas": "Ardıç Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19563,28 +19283,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./arkadya-goksu-evleri"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./arkadya-goksu-evleri",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri",
-     "hepsiemlak.com/ankara-etimesgut-sehit-osman-avci-kiralik/daire/123623-3564"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Arkadya Göksu Evleri Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Arkadya Göksu Evleri Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19635,28 +19347,20 @@
     }
    },
    "rakip": {
-    "sira1": "eryaman.bilgiemlak.com.tr",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr"
-    },
-    "ilk3u": [
-     "eryaman.bilgiemlak.com.tr",
-     "sahibinden.com",
-     "siringayrimenkul.com"
-    ],
+    "ilk_rakip": null,
+    "ilk3u": null,
     "isgal": 1,
-    "ilk3u_yok": false
+    "ilk3u_yok": true
    },
-   "bas": "Atalay Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-09-01",
+   "bas": "Atalay Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
    "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "01.09 yeniden ölçüm — doğru sayfa, 3.",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19707,28 +19411,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bordo-life-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bordo-life-residence",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-life-residence",
-     "hepsiemlak.com/ankara-etimesgut-sehit-osman-avci-kiralik/residence/0-46941589"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Bordo Life Residence Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Bordo Life Residence Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19740,7 +19436,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 1,
+   "sira": 2,
    "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -19779,28 +19475,20 @@
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bordo-platinum-residence"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence",
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bordo-platinum-residence",
-     "eryaman.bilgiemlak.com.tr/yer/bordo-platinum-konutlari-6190"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Bordo Platinum Residence Emlakçı - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
+   "bas": "Bordo Platinum Residence ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -19809,15 +19497,19 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/bossphorus-konutlari",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "eski",
    "sira": 2,
-   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "tutan_url": "/mahalleler/sehit-osman-avci/bossphorus-konutlari",
+   "tutan_tur": "eski",
+   "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": "belirsiz",
+    "sira": null,
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -19832,7 +19524,13 @@
    "son_tarama": "2026-08-17",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün (bayat okuma)",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -19845,34 +19543,26 @@
      "poz": 6.0
     },
     "tutan_sayfa": {
-     "gost": 6,
-     "tik": 0,
-     "poz": 6.0
+     "gost": 13,
+     "tik": 1,
+     "poz": 6.8
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bossphorus-konutlari/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bossphorus-konutlari/emlak-ofisinden",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari",
-     "hepsiemlak.com/ankara-etimesgut-sehit-osman-avci-satilik/daire/159655-202"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Bossphorus Konutları Emlakçı | Eryaman | Evinizi Satalım, Kiraya ...",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "bas": "Bossphorus Konutları Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
+   "not": "ESKI ADRES: beklenen /mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari, ilk kendi sonucumuz /mahalleler/sehit-osman-avci/bossphorus-konutlari",
    "icerik_dosyasi_var": true
   },
   {
@@ -19881,15 +19571,19 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/bp-residence-eryaman",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "eski",
    "sira": 2,
-   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "tutan_url": "/mahalleler/sehit-osman-avci/bp-residence-eryaman",
+   "tutan_tur": "eski",
+   "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -19904,7 +19598,13 @@
    "son_tarama": "2026-09-03",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -19917,34 +19617,26 @@
      "poz": 6.6
     },
     "tutan_sayfa": {
-     "gost": 207,
-     "tik": 4,
-     "poz": 6.6
+     "gost": 11,
+     "tik": 0,
+     "poz": 5.0
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bp-residence-eryaman"
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-daire/ankara-etimesgut-eryaman-sehit-osman-avci-mh./bp-residence-eryaman",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
-     "hepsiemlak.com/ankara-etimesgut-sehit-osman-avci-satilik/daire/146300-234"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "BP Residence Eryaman Emlakçı | Evinizi Satalım, Kiraya ...",
-   "h": 0,
-   "olcum_tarihi": "2026-08-28",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "bas": "BP Residence Eryaman Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
+   "not": "ESKI ADRES: beklenen /mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman, ilk kendi sonucumuz /mahalleler/sehit-osman-avci/bp-residence-eryaman",
    "icerik_dosyasi_var": true
   },
   {
@@ -19953,19 +19645,15 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 2,
-   "tutan_url": "/mahalleler/sehit-osman-avci/bulvar-1071-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -19980,20 +19668,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-08",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 56,
-    "canonical": "/mahalleler/sehit-osman-avci/bulvar-1071-sitesi",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 03.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -20003,34 +19681,26 @@
      "poz": 8.5
     },
     "tutan_sayfa": {
-     "gost": 18,
-     "tik": 0,
-     "poz": 6.1
+     "gost": 6,
+     "tik": 1,
+     "poz": 8.5
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com"
-    },
-    "ilk3u": [
-     "sahibinden.com",
-     "siringayrimenkul.com",
-     "hepsiemlak.com"
-    ],
-    "isgal": 1,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Bulvar 1071 Sitesi - Satılık, Kiralık, Değerleme",
-   "h": 1,
-   "olcum_tarihi": "2026-09-01",
+   "bas": "Bulvar 1071 Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
    "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "01.09 yeniden ölçüm — ESKİ ADRES (slug taşıması öncesi) + eski başlık; Google kopyası bayat",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -20081,28 +19751,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com"
-    },
-    "ilk3u": [
-     "sahibinden.com",
-     "siringayrimenkul.com",
-     "cansagyo.com"
-    ],
+    "ilk_rakip": null,
+    "ilk3u": null,
     "isgal": 2,
-    "ilk3u_yok": false
+    "ilk3u_yok": true
    },
-   "bas": "Bulvar 312 Konutları Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-09-01",
+   "bas": "Bulvar 312 Konutları Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
    "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "01.09 yeniden ölçüm — doğru sayfa, 2.",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -20375,28 +20037,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com"
-    },
-    "ilk3u": [
-     "sahibinden.com",
-     "eryaman.bilgiemlak.com.tr",
-     "siringayrimenkul.com"
-    ],
+    "ilk_rakip": null,
+    "ilk3u": null,
     "isgal": 3,
-    "ilk3u_yok": false
+    "ilk3u_yok": true
    },
-   "bas": "Daldikenler Yasemin Evleri Sitesi Emlakçı - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-09-01",
+   "bas": "Daldikenler Yasemin Evler",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
    "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "01.09 yeniden ölçüm — doğru sayfa, 3.; başlığı Google yeniden yazmış",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -22199,7 +21853,7 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -22241,7 +21895,7 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -23832,25 +23486,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/kiralik-daire/.../address-enda"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/address-enda",
-     "sahibinden.com/kiralik-daire/.../address-enda",
-     "instagram.com/p/DWt6j8Ajfia/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Address Enda - Eryaman · Şeker Mahallesi - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Address Enda - Eryaman · ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, ara-dönem başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -23861,16 +23507,16 @@
    "sayfa": "/mahalleler/seker-mahallesi/akdal-residence",
    "sinif": "D",
    "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 2,
-   "tutan_url": "/mahalleler/seker-mahallesi/adalar/46361-7",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "alt_sinif": "eski",
+   "sira": 1,
+   "tutan_url": "/mahalleler/seker/akdal-residence",
+   "tutan_tur": "eski",
+   "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -23887,15 +23533,11 @@
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
    "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 38,
-    "canonical": "/mahalleler/seker-mahallesi/adalar/46361-7",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
@@ -23908,35 +23550,23 @@
      "tik": 0,
      "poz": 6.3
     },
-    "tutan_sayfa": {
-     "gost": 134,
-     "tik": 1,
-     "poz": 7.4
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../akdal-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../akdal-residence",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/adalar/46361-7",
-     "hepsiemlak.com/.../83411-2507"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "46361/7 Ada Satılık ve Kiralık Daireler — Akdal Residence",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ada temsil #2 — site sayfası görünmüyor, tarama adayı",
+   "bas": "Akdal Residence Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
+   "not": "ESKI ADRES: beklenen /mahalleler/seker-mahallesi/akdal-residence, ilk kendi sonucumuz /mahalleler/seker/akdal-residence",
    "icerik_dosyasi_var": true
   },
   {
@@ -23945,15 +23575,19 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/altas-relax-line",
    "sayfa": "/mahalleler/seker-mahallesi/altas-relax-line",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "eski",
    "sira": 1,
-   "tutan_url": "/mahalleler/seker-mahallesi/altas-relax-line",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "tutan_url": "/mahalleler/seker/relax-line",
+   "tutan_tur": "eski",
+   "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": "belirsiz",
+    "sira": null,
+    "kaynak": "isgal=3: 1. sayfada 3 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
+   },
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -23968,15 +23602,25 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "dogru_sayfa_dizin_disi": true,
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
     "dogru_sayfa": null,
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 5,
+     "tik": 0,
+     "poz": 4.4
+    }
    },
    "rakip": {
     "sira1": "siringayrimenkul.com",
@@ -23984,15 +23628,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": null,
+    "isgal": 3,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Relax Line Emlakçısı - Şi",
    "h": null,
-   "olcum_tarihi": "2026-08-22",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "#1 (ilk ölçüm; ÇOK ESKİ 'Emlakçısı'+'ücretsiz değerlendirme' kopyasıyla — bayat, tarama adayı); 46361-5 ada #4, altas-rezidans kardeş #7, mahalle #10",
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
+   "not": "ESKI ADRES: beklenen /mahalleler/seker-mahallesi/altas-relax-line, ilk kendi sonucumuz /mahalleler/seker/relax-line",
    "icerik_dosyasi_var": true
   },
   {
@@ -24004,7 +23648,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 3,
+   "sira": 2,
    "tutan_url": "/mahalleler/seker-mahallesi/altas-rezidans",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -24043,28 +23687,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../altas-rezidans"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../altas-rezidans",
-     "hepsiemlak.com/.../14936-2249",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Altaş Rezidans Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Altaş Rezidans Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24115,28 +23751,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../bahcen-eryaman-konutlari"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../bahcen-eryaman-konutlari",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari",
-     "remax.com.tr/tr/portfoy/P17055627"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Bahçen Eryaman Konutları Emlakçı - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Bahçen Eryaman Konutları ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "kendi sayfası, ara-dönem başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24145,19 +23773,15 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/diamond-residence",
    "sayfa": "/mahalleler/seker-mahallesi/diamond-residence",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 10,
-   "tutan_url": "/mahalleler/seker-mahallesi/golden-life-residence",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/seker-mahallesi/diamond-residence",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -24172,17 +23796,7 @@
    "son_tarama": "2026-09-02",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-17",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 10,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 10,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -24195,34 +23809,26 @@
      "poz": 4.0
     },
     "tutan_sayfa": {
-     "gost": 94,
+     "gost": 1,
      "tik": 0,
-     "poz": 6.7
+     "poz": 4.0
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../diamond-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../diamond-residence",
-     "hepsiemlak.com/.../138926-247",
-     "hepsiemlak.com/cankaya/.../9595-2464"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Golden Life Residence Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "",
-   "not": "KOMŞU (golden-life) temsil #10 — diamond kendi sayfası görünmüyor, istek adayı",
+   "bas": "Diamond Residence Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24240,9 +23846,9 @@
    "tutan_tur_ad": "ada sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -24287,28 +23893,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/emlak-konut/.../seker-mh."
-    },
-    "ilk3u": [
-     "sahibinden.com/emlak-konut/.../seker-mh.",
-     "cb.com.tr/.../361690",
-     "hepsiemlak.com/.../2450-1828"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "48305/6 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "48305/6 Ada Satılık ve Ki",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "ada temsil #9 — site sayfası görünmüyor, istek adayı",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari, ilk kendi sonucumuz /mahalleler/seker-mahallesi/adalar/48305-6",
    "icerik_dosyasi_var": true
   },
   {
@@ -24320,7 +23918,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 1,
+   "sira": 2,
    "tutan_url": "/mahalleler/seker-mahallesi/golden-life-residence",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -24359,28 +23957,20 @@
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "goldenlifeankara.sahibinden.com",
-     "url": "goldenlifeankara.sahibinden.com/"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/golden-life-residence",
-     "goldenlifeankara.sahibinden.com/",
-     "hepsiemlak.com/emlak-ofisi/golden-life-gayrimenkul-164828"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Golden Life Residence Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Golden Life Residence Eml",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık — ofis adaşlarına rağmen",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24434,25 +24024,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../hill-tower"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/hill-tower",
-     "sahibinden.com/.../hill-tower",
-     "siringayrimenkul.com/mahalleler/sehit-osman-avci/hill-tower-cadde"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Hill Tower - Satılık ve Kiralık Daire - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Hill Tower Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 (295 gos bayat listesindeydi — SERP güçlü); #3 ESKİ SLUG hill-tower-cadde",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24461,13 +24043,13 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/izoser-residence",
    "sayfa": "/mahalleler/seker-mahallesi/izoser-residence",
-   "sinif": "A",
-   "sinif_ad": "İlk 10 dışı — dizin dışı (damla)",
-   "alt_sinif": "URL is unknown to Google",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/seker-mahallesi/izoser-residence",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -24487,7 +24069,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "istek gönderildi 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -24495,28 +24077,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../izoser-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../izoser-residence",
-     "hepsiemlak.com/.../141761-2163",
-     "com.com.tr/.../10-gayrimenkul"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "DAMLA — GSC dizin isteği. Ölçüm: istek→aynı gün tarama 14.08 8/8, 29.08 10/10; istek→sıra 31.08 tam-geçmiş denetiminde 6'da 3 (kaldirac-defteri.json). Kota ~10/gün.",
-   "not": "İLK 10'DA YOK — ŞOA'daki izo-ser-residence #1 ama Şeker'deki izoser görünmüyor; ad-yazım ikiliği, istek adayı",
+   "bas": "İzoser Residence Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24567,28 +24141,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../meydan-ada-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../meydan-ada-sitesi",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/meydan-ada-sitesi",
-     "hepsiemlak.com/.../134973-606"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Meydan Ada Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Meydan Ada Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24642,25 +24208,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "defneyatirimas.sahibinden.com",
-     "url": "defneyatirimas.sahibinden.com/"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/meydan-cadde",
-     "defneyatirimas.sahibinden.com/",
-     "instagram.com/p/DEAShxkMAPO/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Meydan Cadde Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Meydan Cadde Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24669,15 +24227,19 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/oasis-rezidans",
    "sayfa": "/mahalleler/seker-mahallesi/oasis-rezidans",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
-   "sira": 2,
-   "tutan_url": "/mahalleler/seker-mahallesi/oasis-rezidans",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "baska_site",
+   "sira": 3,
+   "tutan_url": "/mahalleler/altay-mahallesi/oasis-tower",
+   "tutan_tur": "baska_site",
+   "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -24692,7 +24254,17 @@
    "son_tarama": "2026-08-29",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-08",
+    "kaynak": "yalin-hedef-denetim.tsv (2026-09-04)",
+    "tarama_yasi_gun": 27,
+    "canonical": "/mahalleler/altay-mahallesi/oasis-tower",
+    "denetim_tarihi": "2026-09-04",
+    "denetim_yasi_gun": 2,
+    "kova_guvenilir": true
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -24705,34 +24277,26 @@
      "poz": 7.9
     },
     "tutan_sayfa": {
-     "gost": 257,
-     "tik": 2,
-     "poz": 7.9
+     "gost": 256,
+     "tik": 4,
+     "poz": 7.5
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../oasis-rezidans"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../oasis-rezidans",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/oasis-rezidans",
-     "sahibinden.com/kiralik-daire/.../oasis-rezidans"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Oasis Rezidans - Satılık ve Kiralık Daire - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ara-dönem başlık (224 gos, v4 sırasında)",
+   "bas": "Oasis Tower Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/seker-mahallesi/oasis-rezidans, ilk kendi sonucumuz /mahalleler/altay-mahallesi/oasis-tower",
    "icerik_dosyasi_var": true
   },
   {
@@ -24783,28 +24347,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../rainbow-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../rainbow-sitesi",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/rainbow-sitesi",
-     "sahibinden.com/kiralik-daire/.../rainbow-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Rainbow Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Rainbow Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık — 28.08 isteği tuttu (Yeşilova rainbow-konutlari ile karıştırılmasın)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24813,19 +24369,15 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/volga-residence",
    "sayfa": "/mahalleler/seker-mahallesi/volga-residence",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 2,
-   "tutan_url": "/mahalleler/seker-mahallesi/adalar/46368-10",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/seker-mahallesi/volga-residence",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -24840,17 +24392,7 @@
    "son_tarama": "2026-08-21",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 38,
-    "canonical": "/mahalleler/seker-mahallesi/adalar/46368-10",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -24863,34 +24405,26 @@
      "poz": 5.1
     },
     "tutan_sayfa": {
-     "gost": 73,
-     "tik": 0,
-     "poz": 7.9
+     "gost": 144,
+     "tik": 4,
+     "poz": 5.1
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../volga-residence"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../volga-residence",
-     "siringayrimenkul.com/mahalleler/seker-mahallesi/adalar/46368-10",
-     "hepsiemlak.com/.../6182-5129"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "46368/10 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ada temsil #2 — site sayfası görünmüyor, istek adayı",
+   "bas": "Volga Residence Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -24899,15 +24433,19 @@
    "aile": "seker-mahallesi",
    "s": "seker-mahallesi/zirve-loft",
    "sayfa": "/mahalleler/seker-mahallesi/zirve-loft",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "ada",
+   "sira": 4,
+   "tutan_url": "/mahalleler/seker-mahallesi/adalar/46363-1",
+   "tutan_tur": "ada",
+   "tutan_tur_ad": "ada sayfamız",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -24922,10 +24460,16 @@
    "son_tarama": "2026-08-24",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "kuyrukta değil",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -24934,31 +24478,27 @@
      "tik": 5,
      "poz": 8.8
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 60,
+     "tik": 1,
+     "poz": 8.1
+    }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../zirve-loft"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../zirve-loft",
-     "sahibinden.com/kiralik-daire/.../zirve-loft",
-     "emlakjet.com/ilan/...19436804"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "46363/1 Ada Satılık ve Ki",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK — adaşsız görünmez, GÜÇLÜ İSTEK ADAYI",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/seker-mahallesi/zirve-loft, ilk kendi sonucumuz /mahalleler/seker-mahallesi/adalar/46363-1",
    "icerik_dosyasi_var": true
   },
   {
@@ -27605,7 +27145,7 @@
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -28667,7 +28207,7 @@
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -33361,7 +32901,7 @@
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "damla kuyruğunda, AÇIK (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": "istek gönderildi 06.09 (DIZIN-DAMLASI-31-08.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,

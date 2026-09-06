@@ -1,16 +1,16 @@
 {
  "guncelleme": "2026-09-06",
- "toplam": 507,
+ "toplam": 509,
  "hepsi": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 297
+   "n": 304
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 68
+   "n": 65
   },
   {
    "k": "eski",
@@ -20,12 +20,12 @@
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 41
+   "n": 43
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 29
+   "n": 25
   },
   {
    "k": "mahalle",
@@ -38,39 +38,39 @@
    "n": 2
   }
  ],
- "ilk3_toplam": 364,
+ "ilk3_toplam": 369,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 275
+   "n": 282
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 40
+   "n": 41
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 22
-  },
-  {
-   "k": "ada",
-   "ad": "Ada sayfamız",
-   "n": 14
+   "n": 21
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
    "n": 13
+  },
+  {
+   "k": "ada",
+   "ad": "Ada sayfamız",
+   "n": 12
   }
  ],
- "ilk3_dogru": 275,
+ "ilk3_dogru": 282,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
-   26
+   23
   ],
   [
    "yavuz-selim-mahallesi",
@@ -110,7 +110,7 @@
   ],
   [
    "seker-mahallesi",
-   4
+   5
   ]
  ]
 }

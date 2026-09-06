@@ -28,21 +28,21 @@
    ]
   ]
  },
- "olculen": 507,
+ "olculen": 509,
  "kuyruk": 511,
- "kayit": 1724,
+ "kayit": 1781,
  "yas": [
   [
    "0-7 gün",
-   404
+   454
   ],
   [
    "8-14 gün",
-   101
+   54
   ],
   [
    "15-30 gün",
-   2
+   1
   ],
   [
    "30+ gün",
@@ -101,11 +101,9 @@
   },
   {
    "ad": "Kuyrukta olup ölçülmemiş",
-   "adet": 4,
+   "adet": 2,
    "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa.",
    "ornek": [
-    "guzelkent-mahallesi/selale-sitesi",
-    "sehit-osman-avci-mahallesi/akasya-sitesi",
     "sehit-osman-avci-mahallesi/kutlutas-1-bloklari",
     "sehit-osman-avci-mahallesi/kutlutas-2-bloklari"
    ],

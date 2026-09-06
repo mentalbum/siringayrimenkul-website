@@ -44,14 +44,14 @@
    "ad": "İlk 3 payı (ölçülen site sorguları)",
    "birim": "%",
    "artis": "iyi",
-   "son": 71.8,
+   "son": 72.5,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.5,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 4.3,
-   "fark_yuzde": 6.4,
+   "fark": 5.0,
+   "fark_yuzde": 7.4,
    "yon": "iyi",
    "sparkline": [
     67.5,
@@ -61,7 +61,7 @@
     68.7,
     68.4,
     70.8,
-    71.8
+    72.5
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -74,7 +74,7 @@
     "2026-09-06"
    ],
    "nokta_sayisi": 17,
-   "son_bolge_turu_pay": 99.6,
+   "son_bolge_turu_pay": 99.8,
    "onceki_bolge_turu_pay": 99.2,
    "olcum_yontemi_degisti": false,
    "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
@@ -83,14 +83,14 @@
    "ad": "İlk 3'te doğru sayfa payı",
    "birim": "%",
    "artis": "iyi",
-   "son": 75.5,
+   "son": 76.4,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.2,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 8.3,
-   "fark_yuzde": 12.4,
+   "fark": 9.2,
+   "fark_yuzde": 13.7,
    "yon": "iyi",
    "sparkline": [
     67.2,
@@ -100,7 +100,7 @@
     72.6,
     75.4,
     75.5,
-    75.5
+    76.4
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -113,7 +113,7 @@
     "2026-09-06"
    ],
    "nokta_sayisi": 17,
-   "son_bolge_turu_pay": 99.6,
+   "son_bolge_turu_pay": 99.8,
    "onceki_bolge_turu_pay": 99.2,
    "olcum_yontemi_degisti": false,
    "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
@@ -122,14 +122,14 @@
    "ad": "İlk 10 dışı payı",
    "birim": "%",
    "artis": "kotu",
-   "son": 13.4,
+   "son": 12.8,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 14.3,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -0.9,
-   "fark_yuzde": -6.3,
+   "fark": -1.5,
+   "fark_yuzde": -10.5,
    "yon": "iyi",
    "sparkline": [
     14.3,
@@ -139,7 +139,7 @@
     13.9,
     13.8,
     13.8,
-    13.4
+    12.8
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -152,7 +152,7 @@
     "2026-09-06"
    ],
    "nokta_sayisi": 17,
-   "son_bolge_turu_pay": 99.6,
+   "son_bolge_turu_pay": 99.8,
    "onceki_bolge_turu_pay": 99.2,
    "olcum_yontemi_degisti": false,
    "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
@@ -161,14 +161,14 @@
    "ad": "GSC tık (28 gün)",
    "birim": "adet",
    "artis": "iyi",
-   "son": 2324,
+   "son": 2302,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 2531,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -207,
-   "fark_yuzde": -8.2,
+   "fark": -229,
+   "fark_yuzde": -9.0,
    "yon": "kötü",
    "sparkline": [
     2531,
@@ -178,7 +178,7 @@
     2446,
     2350,
     2324,
-    2324
+    2302
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -198,14 +198,14 @@
    "ad": "GSC gösterim (28 gün)",
    "birim": "adet",
    "artis": "iyi",
-   "son": 103466,
+   "son": 102835,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 105951,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -2485,
-   "fark_yuzde": -2.3,
+   "fark": -3116,
+   "fark_yuzde": -2.9,
    "yon": "kötü",
    "sparkline": [
     105951,
@@ -215,7 +215,7 @@
     104876,
     104193,
     103466,
-    103466
+    102835
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -235,14 +235,14 @@
    "ad": "GSC TO (28 gün)",
    "birim": "%",
    "artis": "iyi",
-   "son": 2.25,
+   "son": 2.24,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 2.39,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -0.14,
-   "fark_yuzde": -5.9,
+   "fark": -0.15,
+   "fark_yuzde": -6.3,
    "yon": "kötü",
    "sparkline": [
     2.39,
@@ -252,7 +252,7 @@
     2.33,
     2.26,
     2.25,
-    2.25
+    2.24
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -309,14 +309,14 @@
    "ad": "Eryaman tık (28 gün, Yenimahalle hariç)",
    "birim": "adet",
    "artis": "iyi",
-   "son": 1563,
+   "son": 1556,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 1701,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -138,
-   "fark_yuzde": -8.1,
+   "fark": -145,
+   "fark_yuzde": -8.5,
    "yon": "kötü",
    "sparkline": [
     1701,
@@ -326,7 +326,7 @@
     1645,
     1578,
     1563,
-    1563
+    1556
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -570,7 +570,7 @@
    "ad": "Hedef sorgu: harita kutusunda",
    "birim": "sorgu",
    "artis": "iyi",
-   "son": 7,
+   "son": 8,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -587,7 +587,7 @@
     9,
     null,
     7,
-    7
+    8
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -609,14 +609,14 @@
    "ad": "Hedef sorgu: ilk 10 dışında",
    "birim": "sorgu",
    "artis": "kotu",
-   "son": 8,
+   "son": 7,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 5,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 3,
-   "fark_yuzde": 60.0,
+   "fark": 2,
+   "fark_yuzde": 40.0,
    "yon": "nötr",
    "sparkline": [
     5,
@@ -626,7 +626,7 @@
     8,
     8,
     8,
-    8
+    7
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -685,7 +685,7 @@
    "ad": "Dizin damlası: açık kayıt",
    "birim": "adet",
    "artis": "kotu",
-   "son": 7,
+   "son": 0,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -702,7 +702,7 @@
     33,
     null,
     7,
-    7
+    0
    ],
    "sparkline_tarihler": [
     "2026-08-30",
