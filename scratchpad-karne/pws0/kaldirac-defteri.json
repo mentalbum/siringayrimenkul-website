@@ -96,6 +96,33 @@
    "tarih": "2026-09-06",
    "n": 452,
    "not": "Dürüst kapsam: 12'lik yanlış-sayfa listesinin yalnız 3'ünü ayrıştırır; aynı mahalle ikizleri ve eski adres vakaları başlıkla çözülmez."
+  },
+  {
+   "durum": "olu",
+   "ad": "Eski adres kopyası: SERP'te eski başlık (TO kaybı ölçümü)",
+   "olcum": "06.09: 62 eski-şema adres API ile denetlendi, 35'i 30+ gün taranmamış (en eski 70g). GSC 28 gün, aynı sitenin iki şeması olan 306 çift: eski 135 tık/6.059 gösterim TO %2,23 poz 7,8; yeni 862 tık/34.549 gösterim TO %2,50 poz 7,5. Eski şemanın payı gösterimde %8,0, tıkta %7,5.",
+   "sonuc": "Eski adresle görünmek TO'yu 0,27 puan düşürüyor ≈ 16 tık/28 gün. Özgün'ün 'Evinizi Satalım çıkmadı' gözlemi doğru ama kayıp küçük ve yeniden taratma kaldıracı 03.09'da ölü bulundu. Yeni bilgi: 03.09 testindeki 9 sayfa TAZE kopyaydı; 70 günlük bayat kopya (yeni-burak) 06.09'da tek istekle denendi, okuma 01.10.",
+   "tarih": "2026-09-06",
+   "n": 62,
+   "not": "Sitemap-eski-adresler.xml (906 adres, lastmod 26.07) duruyor; lastmod'u bugüne çekmek yalan tazelik sinyali olur (AGENTS.md), yapılmadı."
+  },
+  {
+   "durum": "dogrulandi",
+   "ad": "Ada başlığından site adını çıkarma (16.08 kararı)",
+   "olcum": "16.08'de Tunahan'ın 25 sitesinin 7'sinde (%28) ada sayfası site sayfasının önündeydi. 04-06.09 taramasında 482 site sorgusunda 15 vaka (%3). GSC: 803 ada sayfası, 15.066 gösterim, 136 tık (TO %0,90), 702'si hiç tık almıyor.",
+   "sonuc": "Karar ÇALIŞTI, geri alma yok. Ada sayfasının düşük TO'su sayfanın doğası; başlığa site adını geri koymak 16.08'de ölçülen zararı geri getirir. Ada sayfası işi KAPALI.",
+   "tarih": "2026-09-06",
+   "n": 803,
+   "not": "Canonical zaten site sayfasına işaret ediyor ama Google %94 oranında reddediyor (16.08 ölçümü)."
+  },
+  {
+   "durum": "acik",
+   "ad": "Yerel boşluk: 34 site sorgusunda ilk 10'da hiç yokuz",
+   "olcum": "06.09: ilk 10 dışı 53 sorgunun 19'u yapısal adaş (ilk 3'te Eryaman yok), 34'ü yerel boşluk (ilk 3 Eryaman'lı, biz yokuz). 34'ün 32'si GSC'de gösterim alıyor (1.534 gösterim/28 tık, ort poz 7,5), 2'si hiç; hepsi dizinde. Açıklama ort 695 krk — doğru çıkanlarda 913, mahalle sayfası yiyenlerde 796.",
+   "sonuc": "HİPOTEZ, ölçülmedi: içerik derinliği. Tasarım: 17 sayfa gerçek veriye dayalı derinleştirme + 17 kontrol, okuma 21.09/05.10 (başlık müdahalesi iki kolda da aynı). Uydurma veri yasak; kaynak yoksa site kol dışı. 'Yalın ad içerik çıkmazı' bulgusu YALIN AD sorguları içindi, '<ad> emlakçı' sınıfı ölçülmedi.",
+   "tarih": "2026-09-06",
+   "n": 34,
+   "not": "Karıştırıcı: kısa açıklamalı sitelerin çoğu jenerik adlı; kol ataması buna göre dengelenmeli."
   }
  ]
 }
