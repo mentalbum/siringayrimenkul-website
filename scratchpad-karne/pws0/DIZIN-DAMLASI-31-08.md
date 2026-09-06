@@ -251,7 +251,7 @@ Bu parti birinci partiden SONRA çekilir.
 
 ## sehit-osman-avci-mahallesi (6)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari ← 06.09 istek gönderildi (10:5x, "Dizine eklenmesi istendi")
       _keşfedildi, dizine alınmadı_
 - [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari  
       _keşfedildi, dizine alınmadı_
