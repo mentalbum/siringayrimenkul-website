@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-09-03",
+ "guncelleme": "2026-09-06",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -87,6 +87,15 @@
    "tarih": "2026-09-03",
    "n": 9,
    "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı."
+  },
+  {
+   "durum": "acik",
+   "ad": "Site başlığında mahalle her kayıtta (PR #90) + 45 sayfalık kontrol kolu",
+   "olcum": "04-06.09 pws=0 taraması (443 sorgu): sıralananların ~%29'unda yanlış sayfamız; çapraz-mahalle çiftler (Güzel Ankara Evleri/Sitesi, Endora Park/Eryaman, Hotki Meydan/Ritm, Park İnci/İnci Park) 09.08 sonekinin dışındaydı. Merge 06.09 15:50 (Özgün kararı). 452 başlık değişti, 70 aynı; 45 sayfa kontrol kolunda eski başlıkta (lib/baslik-kontrol-kolu.ts, 05.10'a kadar). SABLON.site ilerletilmedi. Taban: kontrol 28 ölçüm 20 doğru/5 yanlış/3 dışı; deney 257 ölçüm 164/66/27; doğal düzelme ~%38/hafta.",
+   "sonuc": "OKUMA 21.09 ve 05.10: yanlış→doğru dönüşüm oranı deney vs kontrol vs doğal taban. Tek ölçümle geri alma yok (3-4 gün sonra ikinci ölçüm + ≥0,7 fark + GSC TO düşüşü şartı). Bayat kopyalı sayfalarda etki SERP'te başlık değişmeden görülmez — raporda 'başlık SERP'te değişti mi' süzgeci.",
+   "tarih": "2026-09-06",
+   "n": 452,
+   "not": "Dürüst kapsam: 12'lik yanlış-sayfa listesinin yalnız 3'ünü ayrıştırır; aynı mahalle ikizleri ve eski adres vakaları başlıkla çözülmez."
   }
  ]
 }
