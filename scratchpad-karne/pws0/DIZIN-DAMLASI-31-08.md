@@ -375,4 +375,5 @@ Bu parti birinci partiden SONRA çekilir.
 ## 06.09 — başlık şablonu (PR #90) sonrası yeniden tarama istekleri + eski adres diyagnostiği
 Amaç: birincil çiftlerin iki tarafı da yeni başlıkla taransın (21.09 okuması temiz); eski adres diyagnostiği (Haziran kopyası).
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil/yeni-burak-sitesi ← 06.09 istek gönderildi (ESKİ ADRES diyagnostik; hüküm "mevcut", son tarama 28.06; okuma 01.10)
+> 06.09 15:0x — "Kota Aşıldı": devlet-mahallesi/hotki-meydan isteği İŞLENMEDİ (Yeni Burak diyagnostiğinden hemen sonra). 07.09 ≥10:20 sırası: hotki-meydan, hotki-ritm, guzel-ankara-sitesi (guzelkent), guzel-ankara-evleri-sitesi (eryaman), endora-park (eryaman), endora-eryaman (yavuz-selim), park-inci-konutlari (goksu), inci-park-evleri (seyh-samil); kota kalırsa erland-residence (goksu), sutek-bloklari (altay). Hepsi dizinde ("mevcut") — amaç yeni başlıkla yeniden tarama; önce API ile son tarama tarihine bak, 06.09 sonrası taranmış olan atlanır.
 
