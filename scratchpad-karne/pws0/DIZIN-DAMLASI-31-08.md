@@ -112,7 +112,7 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Ak 91 Sitesi emlakçı" sorgusunda 4. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/elele-sitesi ← 05.09 istek gönderildi  
       _"Elele Sitesi emlakçı" sorgusunda 4. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi  
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi ← 06.09 istek gönderildi (10:4x, "Dizine eklenmesi istendi")
       _"Konuta Özlem Sitesi emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/acat-konutlari ← 05.09 istek gönderildi  
       _"Acat Konutları emlakçı" sorgusunda 4. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
