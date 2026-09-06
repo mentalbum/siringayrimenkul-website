@@ -5,22 +5,22 @@
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 308
+   "n": 318
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 57
+   "n": 54
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 48
+   "n": 49
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 45
+   "n": 46
   },
   {
    "k": "ada",
@@ -30,25 +30,25 @@
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 23
+   "n": 13
   },
   {
    "k": "dis",
    "ad": "Bize ait olmayan sonuç",
-   "n": 2
+   "n": 3
   }
  ],
- "ilk3_toplam": 374,
+ "ilk3_toplam": 379,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 287
+   "n": 296
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 42
+   "n": 43
   },
   {
    "k": "baska_site",
@@ -63,10 +63,15 @@
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 11
+   "n": 5
+  },
+  {
+   "k": "dis",
+   "ad": "Bize ait olmayan sonuç",
+   "n": 1
   }
  ],
- "ilk3_dogru": 287,
+ "ilk3_dogru": 296,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
@@ -81,12 +86,12 @@
    21
   ],
   [
-   "seyh-samil-mahallesi",
-   20
-  ],
-  [
    "sehit-osman-avci-mahallesi",
    17
+  ],
+  [
+   "seyh-samil-mahallesi",
+   12
   ],
   [
    "altay-mahallesi",
