@@ -7,16 +7,16 @@
    "deger": 75,
    "birim": "%",
    "gosterim": "%75",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 377. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 380. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 377
+    "ilk3": 380
    },
    "fark_7g": {
-    "deger": 7.1,
+    "deger": 7.6,
     "onceki": 67.5,
-    "son": 74.6,
+    "son": 75.1,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
@@ -31,20 +31,20 @@
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 78,
+   "deger": 79,
    "birim": "%",
-   "gosterim": "%78",
-   "ne_demek": "İlk 3 sırada olduğumuz 381 sorgunun 299 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%79",
+   "ne_demek": "İlk 3 sırada olduğumuz 384 sorgunun 304 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 299,
-    "ilk3_toplam": 381,
+    "ilk3_dogru": 304,
+    "ilk3_toplam": 384,
     "guncelleme": "2026-09-06"
    },
    "fark_7g": {
-    "deger": 11.3,
+    "deger": 12.0,
     "onceki": 67.2,
-    "son": 78.5,
+    "son": 79.2,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",

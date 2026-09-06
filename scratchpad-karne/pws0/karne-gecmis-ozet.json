@@ -44,14 +44,14 @@
    "ad": "İlk 3 payı (ölçülen site sorguları)",
    "birim": "%",
    "artis": "iyi",
-   "son": 74.6,
+   "son": 75.1,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.5,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 7.1,
-   "fark_yuzde": 10.5,
+   "fark": 7.6,
+   "fark_yuzde": 11.3,
    "yon": "iyi",
    "sparkline": [
     67.5,
@@ -61,7 +61,7 @@
     68.7,
     68.4,
     70.8,
-    74.6
+    75.1
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -83,14 +83,14 @@
    "ad": "İlk 3'te doğru sayfa payı",
    "birim": "%",
    "artis": "iyi",
-   "son": 78.5,
+   "son": 79.2,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.2,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 11.3,
-   "fark_yuzde": 16.8,
+   "fark": 12.0,
+   "fark_yuzde": 17.9,
    "yon": "iyi",
    "sparkline": [
     67.2,
@@ -100,7 +100,7 @@
     72.6,
     75.4,
     75.5,
-    78.5
+    79.2
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -122,14 +122,14 @@
    "ad": "İlk 10 dışı payı",
    "birim": "%",
    "artis": "kotu",
-   "son": 10.6,
+   "son": 10.8,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 14.3,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -3.7,
-   "fark_yuzde": -25.9,
+   "fark": -3.5,
+   "fark_yuzde": -24.5,
    "yon": "iyi",
    "sparkline": [
     14.3,
@@ -139,7 +139,7 @@
     13.9,
     13.8,
     13.8,
-    10.6
+    10.8
    ],
    "sparkline_tarihler": [
     "2026-08-30",
