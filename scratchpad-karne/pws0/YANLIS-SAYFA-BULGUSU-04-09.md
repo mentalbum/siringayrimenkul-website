@@ -136,3 +136,35 @@ başına yetmeyebilir. Ölçüm 21.09'da A ve B ayrı raporlanır.
 **Dokunulmayacak:** ada sayfası vakaları (canonical 17/17 reddedildi),
 eski adres kopyaları (kaldıraç yok, 01.10'da yeniden ölçülecek),
 ana sayfa vakaları (15.08 dersi: ana sayfaya dokunmak TO'yu düşürdü).
+
+## 06.09 akşam — 390 sorguluk taban (site sorguları: 377, mahalle+etap: 14)
+
+| sınıf | sorgu |
+|---|---|
+| doğru | 240 |
+| başka site sayfası | 42 |
+| ilk10 dışı | 33 |
+| eski adres | 26 |
+| ada sayfası | 18 |
+| mahalle sayfası | 7 |
+| sayfa2 | 6 |
+| ölü 410 | 3 |
+| ana sayfa/mağaza | 2 |
+
+İlk 3'te: 281/377 (%75); ilk 3'te DOĞRU sayfa: 223 (%59).
+Sıraladığımız 338 sorgunun 98'i yanlış sayfa (%29).
+
+Mahalleye göre yanlış sayfa (eski adres / ada / başka site / mahalle / ana / ölü):
+- altay-mahallesi: başka site sayfası 5, ada sayfası 3, eski adres 1 — toplam 9/26
+- devlet-mahallesi: başka site sayfası 3, ölü 410 1, ada sayfası 1, mahalle sayfası 1 — toplam 6/44
+- eryaman-mahallesi: başka site sayfası 4, eski adres 1, ada sayfası 1, ana sayfa/mağaza 1, mahalle sayfası 1, ölü 410 1 — toplam 9/51
+- goksu-mahallesi: başka site sayfası 10, ada sayfası 6, eski adres 3, mahalle sayfası 2 — toplam 21/67
+- guzelkent-mahallesi: başka site sayfası 12, eski adres 10, ada sayfası 1 — toplam 23/79
+- sehit-osman-avci-mahallesi: eski adres 8, mahalle sayfası 3, ada sayfası 3, başka site sayfası 2, ölü 410 1 — toplam 17/67
+- seker-mahallesi: eski adres 2, ada sayfası 2, başka site sayfası 1 — toplam 5/16
+- seyh-samil-mahallesi: ada sayfası 1 — toplam 1/1
+- tunahan-mahallesi: başka site sayfası 5, ana sayfa/mağaza 1, eski adres 1 — toplam 7/25
+
+Eski adres vakaları (26): kur-sitesi-46495-ada, uzuner-konutlari, atakent-metro-sitesi, goksu-bilge-sitesi, kasmir-gol-evleri, irem-konutlari, anadolu-sitesi, er-ay-3-sitesi, gercek-92-sitesi, konuta-ozlem-sitesi, kucuk-ankara-villalari, master-kent-sitesi, portakal-cicegi-2-sitesi, postakent-sitesi, cagdas-95-sitesi, ozle-iletisim-sitesi, akdal-residence, altas-relax-line, address-goksu, bp-residence-eryaman, bossphorus-konutlari, garden-zirve, kiratli-residence, soyak-sitesi, tan-yildizi-sitesi, tureli-residence
+
+Bu taban 21.09 karşılaştırmasının referansıdır (PR #90 kontrol kolu: lib/baslik-kontrol-kolu.ts). 137 sorgu (Şeyh Şamil 56, Yavuz Selim 56, Yeşilova 23, Acar, Ak Kent) 07.09'da tamamlanır.
