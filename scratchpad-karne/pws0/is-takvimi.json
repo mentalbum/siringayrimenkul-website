@@ -31,9 +31,7 @@
    "Şeker",
    "Şeyh Şamil"
   ],
-  "etap": [
-   "Eryaman 3. Etap"
-  ],
+  "etap": [],
   "haric_kutu_cikmiyor": [
    "Yeşilova"
   ],
@@ -41,13 +39,14 @@
    "'eryaman emlakçı' (çatı sorgu)",
    "Eryaman 1. Etap",
    "Eryaman 2. Etap",
+   "Eryaman 3. Etap",
    "Eryaman 4. Etap",
    "Eryaman 5. Etap",
    "Tunahan",
    "Altay",
    "Yavuz Selim"
   ],
-  "sorgu_sayisi": 7
+  "sorgu_sayisi": 6
  },
  "turetilen_tarihler": {
   "title_donuk": "2026-09-07",
@@ -81,17 +80,11 @@
   {
    "tarih": "2026-09-07",
    "tarih_tr": "07.09 Pazartesi",
-   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Devlet, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil. Etap sorgularında da kutu var, biz yokuz: Eryaman 3. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi. Yeşilova hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
-   "neden": "Bu 7 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 02.09–06.09). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 2. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Tunahan, Altay, Yavuz Selim. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
+   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Devlet, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil. Yeşilova hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
+   "neden": "Bu 6 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 04.09–06.09). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 2. Etap, Eryaman 3. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Tunahan, Altay, Yavuz Selim. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
    "kaynak": "hedef-sorgular.json (kutu_var ve kutuda alanları)",
    "kim": "Özgün",
    "ayrinti": [
-    {
-     "sorgu": "Eryaman 3. Etap emlakçı",
-     "kutu_yon": "kutudan çıktı",
-     "organik_sira": 6,
-     "olcum": "2026-09-02"
-    },
     {
      "sorgu": "Devlet Mahallesi emlakçı",
      "kutu_yon": "kutudan çıktı",
@@ -126,7 +119,7 @@
      "sorgu": "Şeyh Şamil Mahallesi emlakçı",
      "kutu_yon": "kutu dışında kaldı",
      "organik_sira": 4,
-     "olcum": "2026-09-02"
+     "olcum": "2026-09-06"
     }
    ]
   },

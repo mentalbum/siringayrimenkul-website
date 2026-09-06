@@ -44,14 +44,14 @@
    "ad": "İlk 3 payı (ölçülen site sorguları)",
    "birim": "%",
    "artis": "iyi",
-   "son": 72.5,
+   "son": 73.2,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.5,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 5.0,
-   "fark_yuzde": 7.4,
+   "fark": 5.7,
+   "fark_yuzde": 8.4,
    "yon": "iyi",
    "sparkline": [
     67.5,
@@ -61,7 +61,7 @@
     68.7,
     68.4,
     70.8,
-    72.5
+    73.2
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -83,14 +83,14 @@
    "ad": "İlk 3'te doğru sayfa payı",
    "birim": "%",
    "artis": "iyi",
-   "son": 76.4,
+   "son": 76.7,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 67.2,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 9.2,
-   "fark_yuzde": 13.7,
+   "fark": 9.5,
+   "fark_yuzde": 14.1,
    "yon": "iyi",
    "sparkline": [
     67.2,
@@ -100,7 +100,7 @@
     72.6,
     75.4,
     75.5,
-    76.4
+    76.7
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -122,14 +122,14 @@
    "ad": "İlk 10 dışı payı",
    "birim": "%",
    "artis": "kotu",
-   "son": 12.8,
+   "son": 11.2,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 14.3,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -1.5,
-   "fark_yuzde": -10.5,
+   "fark": -3.1,
+   "fark_yuzde": -21.7,
    "yon": "iyi",
    "sparkline": [
     14.3,
@@ -139,7 +139,7 @@
     13.9,
     13.8,
     13.8,
-    12.8
+    11.2
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -531,14 +531,14 @@
    "ad": "Hedef sorgu: ilk 3'te",
    "birim": "sorgu",
    "artis": "iyi",
-   "son": 3,
+   "son": 4,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": 6,
    "onceki_tarih": "2026-08-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": -3,
-   "fark_yuzde": -50.0,
+   "fark": -2,
+   "fark_yuzde": -33.3,
    "yon": "nötr",
    "sparkline": [
     6,
@@ -548,7 +548,7 @@
     3,
     3,
     3,
-    3
+    4
    ],
    "sparkline_tarihler": [
     "2026-08-30",
@@ -570,7 +570,7 @@
    "ad": "Hedef sorgu: harita kutusunda",
    "birim": "sorgu",
    "artis": "iyi",
-   "son": 8,
+   "son": 9,
    "son_tarih": "2026-09-06",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -587,7 +587,7 @@
     9,
     null,
     7,
-    8
+    9
    ],
    "sparkline_tarihler": [
     "2026-08-30",

@@ -7,16 +7,16 @@
    "deger": 73,
    "birim": "%",
    "gosterim": "%73",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 367. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 370. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 367
+    "ilk3": 370
    },
    "fark_7g": {
-    "deger": 5.0,
+    "deger": 5.7,
     "onceki": 67.5,
-    "son": 72.5,
+    "son": 73.2,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
@@ -31,20 +31,20 @@
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 76,
+   "deger": 77,
    "birim": "%",
-   "gosterim": "%76",
-   "ne_demek": "İlk 3 sırada olduğumuz 369 sorgunun 282 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%77",
+   "ne_demek": "İlk 3 sırada olduğumuz 374 sorgunun 287 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 282,
-    "ilk3_toplam": 369,
+    "ilk3_dogru": 287,
+    "ilk3_toplam": 374,
     "guncelleme": "2026-09-06"
    },
    "fark_7g": {
-    "deger": 9.2,
+    "deger": 9.5,
     "onceki": 67.2,
-    "son": 76.4,
+    "son": 76.7,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
@@ -123,17 +123,17 @@
   {
    "k": "hedef_kutuda",
    "baslik": "Hedef sorgularda harita kutusu",
-   "deger": 8,
+   "deger": 9,
    "birim": "sorgu",
-   "gosterim": "8/17",
-   "ne_demek": "17 hedef sorgunun 8 tanesinde harita kutusunda görünüyoruz, 5 tanesinde kutuda 1. sıradayız; 7 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 3 sorgu.)",
+   "gosterim": "9/17",
+   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 5 tanesinde kutuda 1. sıradayız; 6 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
    "kaynak": "hedef-sorgular.json (ozet.kutuda)",
    "ayrinti": {
     "hedef": 17,
     "kutuda_birinci": 5,
-    "kutu_var_biz_yok": 7,
-    "organik_ilk3": 3,
-    "organik_birinci": 1,
+    "kutu_var_biz_yok": 6,
+    "organik_ilk3": 4,
+    "organik_birinci": 2,
     "guncelleme": "2026-09-06"
    },
    "fark_7g": null
@@ -235,7 +235,7 @@
   "kiyas_tarihi": "2026-08-30"
  },
  "uyarilar": [
-  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 509 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
+  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 511 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
   "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor."
  ]
 }
