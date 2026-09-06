@@ -272,7 +272,7 @@ Bu parti birinci partiden SONRA çekilir.
 
 ## seker-mahallesi (3)
 
-- [ ] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line  
+- [x] https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-relax-line ← 06.09 istek gönderildi (11:1x, "Dizine eklenmesi istendi")
       _hiç bilinmiyor_
 
 ## eryaman-mahallesi (2)
@@ -370,3 +370,4 @@ Bu parti birinci partiden SONRA çekilir.
 > Günün toplamı 11 istek (sabah 10 + Polsan1 Ayışığı). Kalan 7 yarına.
 > 06.09 10:1x — damla turu: API ile 7 hedef doğrulandı (hepsi dışarıda: 4 "keşfedildi-dizine eklenmedi", 3 "bilinmiyor"). İlk istek ozenkent-2-villalari kabul. Klavyesiz tarif BU SABAH ÇALIŞMADI (programatik değer+sentetik Enter işlenmedi); gerçek triple-click+type+Return çalıştı; düğme JS .click() ile açılmıyor, ref/koordinat tıklaması şart.
 > 06.09 10:3x — TUZAK: istek sonrası üst kutuya yazılan yeni URL bazen DÜŞMÜYOR (kutu boş kalıyor, Enter aynı sayfayı yeniden açıyor). Kural: düğmeye tıklamadan ÖNCE hükümdeki `u` hedef URL ile eşleşmeli; eşleşmiyorsa tıklama YOK (aksi halde "Tekrar istek gönder" kota yakar).
+> 06.09 11:1x — tur bitti: 7/7 kabul (ozenkent-2, ozluce-guzelevim, yagan-kent, konuta-ozlem, kutlutas-1, kutlutas-2, altas-relax-line). Kalan açık madde: 0. Çalışan tarif: üst kutuya ÇİFT tıkla (ilk tıklama bildirimi kapatıyor) → yaz → Return → 17 sn → hükümdeki u eşleşiyorsa (1300,372) tıkla → ~60 sn → "Dizine eklenmesi istendi". Okuma: 07.09 sabah API denetle-dosya.
