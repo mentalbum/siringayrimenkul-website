@@ -4,19 +4,19 @@
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 74,
+   "deger": 75,
    "birim": "%",
-   "gosterim": "%74",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 375. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%75",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 377. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 375
+    "ilk3": 377
    },
    "fark_7g": {
-    "deger": 6.7,
+    "deger": 7.1,
     "onceki": 67.5,
-    "son": 74.2,
+    "son": 74.6,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
@@ -34,17 +34,17 @@
    "deger": 78,
    "birim": "%",
    "gosterim": "%78",
-   "ne_demek": "İlk 3 sırada olduğumuz 379 sorgunun 296 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "ne_demek": "İlk 3 sırada olduğumuz 381 sorgunun 299 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 296,
-    "ilk3_toplam": 379,
+    "ilk3_dogru": 299,
+    "ilk3_toplam": 381,
     "guncelleme": "2026-09-06"
    },
    "fark_7g": {
-    "deger": 10.9,
+    "deger": 11.3,
     "onceki": 67.2,
-    "son": 78.1,
+    "son": 78.5,
     "kiyas_tarihi": "2026-08-30",
     "gun": 7,
     "birim": "puan",
@@ -126,11 +126,11 @@
    "deger": 9,
    "birim": "sorgu",
    "gosterim": "9/17",
-   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 5 tanesinde kutuda 1. sıradayız; 6 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
+   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 6 tanesinde kutuda 1. sıradayız; 6 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
    "kaynak": "hedef-sorgular.json (ozet.kutuda)",
    "ayrinti": {
     "hedef": 17,
-    "kutuda_birinci": 5,
+    "kutuda_birinci": 6,
     "kutu_var_biz_yok": 6,
     "organik_ilk3": 4,
     "organik_birinci": 2,
@@ -144,11 +144,11 @@
    "deger": 0,
    "birim": "sayfa",
    "gosterim": "0",
-   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 0; 65 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 0; 66 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
    "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
    "ayrinti": {
-    "bitmis": 65,
-    "toplam": 65
+    "bitmis": 66,
+    "toplam": 66
    },
    "fark_7g": null
   }

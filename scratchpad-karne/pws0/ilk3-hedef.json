@@ -111,11 +111,11 @@
    "alt": [
     [
      "taze denetim",
-     47
+     48
     ],
     [
      "27.08 envanteri (taze denetim yok)",
-     13
+     12
     ]
    ],
    "mahalle": [
@@ -171,18 +171,18 @@
     ],
     [
      "8-30 gün",
-     12
+     13
     ],
     [
      "30+ gün (bayat okuma)",
      8
     ],
     [
-     "8-30 gün (bayat okuma)",
-     4
+     "≤7 gün (bayat okuma)",
+     3
     ],
     [
-     "≤7 gün (bayat okuma)",
+     "8-30 gün (bayat okuma)",
      3
     ]
    ],
@@ -208,13 +208,13 @@
   "C": {
    "ad": "4-10'da doğru sayfa",
    "kaldirac": "",
-   "n": 27,
-   "n_site": 24,
+   "n": 26,
+   "n_site": 23,
    "n_hedef": 3,
    "alt": [
     [
      "4-5",
-     22
+     21
     ],
     [
      "6-10",
@@ -256,13 +256,13 @@
     ],
     [
      "yavuz-selim-mahallesi",
-     2
+     1
     ]
    ],
    "tarama_kovasi": [
     [
      "≤7 gün",
-     16
+     15
     ],
     [
      "≤7 gün (bayat okuma)",
@@ -288,7 +288,7 @@
    "sira_dagilimi": [
     [
      4,
-     16
+     15
     ],
     [
      5,
@@ -307,25 +307,25 @@
   "D": {
    "ad": "İlk 3'te ama YANLIŞ sayfa",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "n": 83,
-   "n_site": 80,
+   "n": 82,
+   "n_site": 79,
    "n_hedef": 3,
    "alt": [
     [
      "eski",
-     43
+     44
     ],
     [
      "baska_site",
-     19
+     18
     ],
     [
      "ada",
-     12
+     10
     ],
     [
      "mahalle",
-     5
+     6
     ],
     [
      "ana_sayfa",
@@ -347,7 +347,7 @@
     ],
     [
      "yavuz-selim-mahallesi",
-     12
+     11
     ],
     [
      "sehit-osman-avci-mahallesi",
@@ -396,12 +396,12 @@
      11
     ],
     [
-     "30+ gün (bayat okuma)",
+     "8-30 gün",
      10
     ],
     [
-     "8-30 gün",
-     9
+     "30+ gün (bayat okuma)",
+     8
     ],
     [
      "hiç taranmamış",
@@ -427,21 +427,21 @@
     ],
     [
      1,
-     25
+     24
     ]
    ],
    "dogru_sayfa_serpte": [
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
-     48
+     53
     ],
     [
      "hayır (1. sayfada tek sayfamız var)",
-     19
+     20
     ],
     [
      "bilinmiyor",
-     15
+     8
     ],
     [
      "evet, ilk 3'te (yol eşleşti)",
@@ -451,7 +451,7 @@
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     74
+     73
     ],
     [
      "YOK",
@@ -465,7 +465,7 @@
     ],
     [
      "denetlenmedi",
-     20
+     19
     ],
     [
      "YOK",
@@ -475,33 +475,33 @@
    "sira1_bizim_kanal": [
     [
      null,
-     47
+     52
     ],
     [
      true,
-     25
+     24
     ],
     [
      false,
-     11
+     6
     ]
    ],
    "alt_x_dogru_dizin": [
     [
      "eski / doğru sayfa dizinde",
-     38
+     39
     ],
     [
      "baska_site / doğru sayfa dizinde",
-     17
+     16
     ],
     [
      "ada / doğru sayfa dizinde",
-     10
+     8
     ],
     [
      "mahalle / doğru sayfa dizinde",
-     5
+     6
     ],
     [
      "eski / doğru sayfa DİZİN DIŞI",
@@ -527,11 +527,11 @@
    "kaldirac_dagilimi": [
     [
      "eski adres çıkıyor",
-     38
+     39
     ],
     [
      "doğru sayfa yerine yanlış sayfa çıkıyor",
-     36
+     34
     ],
     [
      "DAMLA",
@@ -561,7 +561,7 @@
     ],
     [
      "8-30 gün (bayat okuma)",
-     1
+     2
     ]
    ],
    "eski_canli_308": 0,
@@ -595,29 +595,33 @@
   "F": {
    "ad": "4-10'da YANLIŞ sayfa",
    "kaldirac": "",
-   "n": 57,
-   "n_site": 54,
+   "n": 56,
+   "n_site": 53,
    "n_hedef": 3,
    "alt": [
     [
      "baska_site",
-     22
+     21
     ],
     [
      "ada",
-     16
+     15
     ],
     [
      "mahalle",
-     8
-    ],
-    [
-     "eski",
-     6
+     10
     ],
     [
      "ana_sayfa",
      5
+    ],
+    [
+     "eski",
+     4
+    ],
+    [
+     "diger",
+     1
     ]
    ],
    "mahalle": [
@@ -627,7 +631,7 @@
     ],
     [
      "yavuz-selim-mahallesi",
-     10
+     9
     ],
     [
      "sehit-osman-avci-mahallesi",
@@ -689,11 +693,11 @@
     ],
     [
      "hiç taranmamış",
-     7
+     5
     ],
     [
      "30+ gün (bayat okuma)",
-     3
+     4
     ],
     [
      "≤7 gün (bayat okuma)",
@@ -703,7 +707,7 @@
    "sira_dagilimi": [
     [
      4,
-     22
+     20
     ],
     [
      6,
@@ -711,7 +715,7 @@
     ],
     [
      7,
-     10
+     11
     ],
     [
      5,
@@ -719,11 +723,11 @@
     ],
     [
      9,
-     4
+     3
     ],
     [
      8,
-     2
+     3
     ],
     [
      10,
@@ -733,51 +737,51 @@
    "dogru_sayfa_serpte": [
     [
      "hayır (1. sayfada tek sayfamız var)",
-     28
+     31
     ],
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
-     17
+     18
     ],
     [
      "bilinmiyor",
-     12
+     7
     ]
    ],
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     50
+     51
     ],
     [
      "YOK",
-     7
+     5
     ]
    ],
    "tutan_sayfa_dizin": [
     [
      "MEVCUT",
-     49
+     47
     ],
     [
      "denetlenmedi",
-     8
+     9
     ]
    ],
    "sira1_bizim_kanal": [
     [
      null,
-     45
+     49
     ],
     [
      false,
-     12
+     7
     ]
    ],
    "alt_x_dogru_dizin": [
     [
      "baska_site / doğru sayfa dizinde",
-     20
+     19
     ],
     [
      "ada / doğru sayfa dizinde",
@@ -785,7 +789,7 @@
     ],
     [
      "mahalle / doğru sayfa dizinde",
-     8
+     10
     ],
     [
      "ana_sayfa / doğru sayfa dizinde",
@@ -793,10 +797,6 @@
     ],
     [
      "eski / doğru sayfa dizinde",
-     4
-    ],
-    [
-     "ada / doğru sayfa DİZİN DIŞI",
      3
     ],
     [
@@ -804,39 +804,43 @@
      2
     ],
     [
-     "eski / doğru sayfa DİZİN DIŞI",
+     "ada / doğru sayfa DİZİN DIŞI",
      2
+    ],
+    [
+     "eski / doğru sayfa DİZİN DIŞI",
+     1
+    ],
+    [
+     "diger / doğru sayfa dizinde",
+     1
     ]
    ],
    "kaldirac_dagilimi": [
     [
      "(boş)",
-     50
+     51
     ],
     [
      "DAMLA",
-     7
+     5
     ]
    ],
    "eski_tutan_tarama": [
-    [
-     "30+ gün (bayat okuma)",
-     3
-    ],
     [
      "30+ gün",
      2
     ],
     [
-     "8-30 gün (bayat okuma)",
-     1
+     "30+ gün (bayat okuma)",
+     2
     ]
    ],
    "eski_canli_308": 0,
    "dizin_disi_istek": [
     [
      "istek gönderildi 05.09",
-     4
+     3
     ],
     [
      "istek gönderildi 06.09",
@@ -845,23 +849,19 @@
     [
      "eski kuyrukta, açık",
      1
-    ],
-    [
-     "kendiliğinden dizine girdi/tarandı 04.09",
-     1
     ]
    ]
   },
   "E": {
    "ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "n": 300,
-   "n_site": 299,
+   "n": 303,
+   "n_site": 302,
    "n_hedef": 1,
    "alt": [
     [
      "dogru",
-     297
+     300
     ],
     [
      "dogru_es",
@@ -890,12 +890,12 @@
      33
     ],
     [
-     "devlet-mahallesi",
-     25
+     "yavuz-selim-mahallesi",
+     27
     ],
     [
-     "yavuz-selim-mahallesi",
-     24
+     "devlet-mahallesi",
+     25
     ],
     [
      "tunahan-mahallesi",
@@ -921,23 +921,23 @@
    "tarama_kovasi": [
     [
      "≤7 gün",
-     83
+     84
     ],
     [
      "8-30 gün (bayat okuma)",
-     67
-    ],
-    [
-     "8-30 gün",
-     55
+     68
     ],
     [
      "≤7 gün (bayat okuma)",
      53
     ],
     [
+     "8-30 gün",
+     53
+    ],
+    [
      "hiç taranmamış",
-     17
+     19
     ],
     [
      "30+ gün",
@@ -945,21 +945,21 @@
     ],
     [
      "30+ gün (bayat okuma)",
-     10
+     11
     ]
    ],
    "sira_dagilimi": [
     [
      2,
-     134
+     133
     ],
     [
      1,
-     122
+     124
     ],
     [
      3,
-     44
+     46
     ]
    ],
    "adas_es": 3
@@ -981,8 +981,8 @@
   "site": 511,
   "hedef": 17,
   "olculmedi": 0,
-  "ilk3_dogru_E": 300,
-  "hedef_disi_toplam_A_B_AB_C_D_F": 228,
+  "ilk3_dogru_E": 303,
+  "hedef_disi_toplam_A_B_AB_C_D_F": 225,
   "hedef_disi_kaldirac_ailesi": [
    [
     "boş — analiz ekseni dolduracak",
@@ -990,15 +990,15 @@
    ],
    [
     "301 sindirme (eski adres, 07.09 sonrası başlık hizası da)",
-    38
+    39
    ],
    [
     "başlık hizası (07.09 sonrası)",
-    36
+    34
    ],
    [
     "damla (kanıtlı)",
-    17
+    15
    ]
   ],
   "gsc_sorgu_satiri_olan": 1,
@@ -1007,15 +1007,15 @@
  "capraz_kontrol": {
   "bu_betik": {
    "olculen": 511,
-   "ilk3_toplam": 379,
-   "ilk3_dogru_es_dahil": 299,
-   "ilk3_dogru_es_haric": 296,
+   "ilk3_toplam": 381,
+   "ilk3_dogru_es_dahil": 302,
+   "ilk3_dogru_es_haric": 299,
    "ilk10_yok": 54
   },
   "dogru_sayfa_json": {
    "olculen": 511,
-   "ilk3_toplam": 379,
-   "ilk3_dogru": 296,
+   "ilk3_toplam": 381,
+   "ilk3_dogru": 299,
    "guncelleme": "2026-09-06"
   },
   "not": "dogru-sayfa.py 'es' (aynı adlı ikinci kayıt) eşleşmesini başka site sayar; bu betik doğru sayar ve adas_es ile işaretler."
@@ -25252,7 +25252,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 2,
+   "sira": 3,
    "tutan_url": "/mahalleler/seyh-samil-mahallesi/ictas-bloklari",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -25291,28 +25291,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../ictas-bloklari"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../ictas-bloklari",
-     "siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ictas-bloklari",
-     "eryaman.bilgiemlak.com.tr/yer/17347-ada-181"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "İçtaş Blokları - Şeyh Şamil Eryaman - Şirin Gayrimenkul",
-   "h": 1,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "İçtaş Blokları - Şeyh Şam",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "#2 + HARİTA 1, ara-dönem başlık — ŞOA'daki 'İçtaş' sorgusu görünmezdi, 'İçtaş Blokları' tutuyor",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -25487,28 +25479,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/satilik-villa/cankaya-dodurga-mah."
-    },
-    "ilk3u": [
-     "sahibinden.com/satilik-villa/cankaya-dodurga-mah.",
-     "hepsiemlak.com/turkkonut-satilik/villa",
-     "tulaygayrimenkul.com/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
    "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK — Dodurga/Türkkonut gürültüsü; adaşsız sayılır, İSTEK ADAYI",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -25584,7 +25568,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 2,
+   "sira": 1,
    "tutan_url": "/mahalleler/seyh-samil-mahallesi/inci-park-evleri",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -25623,28 +25607,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/sehit-osman-avci-mh./inci-park-evleri-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/sehit-osman-avci-mh./inci-park-evleri-sitesi",
-     "siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/inci-park-evleri",
-     "eryaman.bilgiemlak.com.tr/yer/inci-park-evleri-20-a-blok-3344"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "İnci Park Evleri Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "İnci Park Evleri Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık — kayıt ŞŞ'de, sahibinden ŞOA diyor (mahalle sınırı belirsizliği)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -29719,19 +29695,15 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/acat-konutlari",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/acat-konutlari",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 4,
-   "tutan_url": "/mahalleler/yavuz-selim/guzel-ev-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/acat-konutlari",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -29746,53 +29718,31 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-06-28",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 66,
-    "canonical": "/mahalleler/yavuz-selim/guzel-ev-sitesi",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
     "dogru_sayfa": null,
-    "tutan_sayfa": {
-     "gost": 3,
-     "tik": 0,
-     "poz": 9.0
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../acat-konutlari"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../acat-konutlari",
-     "eryaman.bilgiemlak.com.tr/yer/acat-konutlari-46439-ada-890",
-     "sahibinden.com/.../acat-konutlari/emlak-ofisinden"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Güzel Ev Sitesi Emlakçısı | Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "KOMŞU + ESKİ SLUG temsil (yavuz-selim/guzel-ev) — acat kendi sayfası görünmüyor, istek adayı",
+   "bas": "Acat Konutları Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -29846,25 +29796,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../yavuz-selim-mah."
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/akcakent-87-sitesi",
-     "sahibinden.com/.../yavuz-selim-mah.",
-     "siringayrimenkul.com/mahalleler/yavuz-selim/acat-konutlari"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "Akçakent 87 Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Akçakent 87 Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık; #3 ESKİ SLUG acat",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -29873,13 +29815,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/altintepe-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
-   "sira": 2,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "taze denetim",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -29899,7 +29841,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "kuyrukta değil",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -29908,35 +29850,23 @@
      "tik": 1,
      "poz": 7.3
     },
-    "tutan_sayfa": {
-     "gost": 85,
-     "tik": 1,
-     "poz": 7.3
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../altintepe-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../altintepe-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
-     "sahibinden.com/kiralik-daire/.../altintepe-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
-   "bas": "Altıntepe Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "bas": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -29947,16 +29877,16 @@
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi",
    "sinif": "F",
    "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 9,
-   "tutan_url": "/mahalleler/seyh-samil/concept-eryaman",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "alt_sinif": "mahalle",
+   "sira": 7,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi",
+   "tutan_tur": "mahalle",
+   "tutan_tur_ad": "mahalle sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -29975,13 +29905,13 @@
    "tutan_dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-11",
-    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 22,
-    "canonical": "/mahalleler/seyh-samil/concept-eryaman",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
+    "son_tarama": "2026-08-31",
+    "kaynak": "cf-taze-denetim.tsv (2026-09-03)",
+    "tarama_yasi_gun": 3,
+    "canonical": "/mahalleler/yavuz-selim-mahallesi",
+    "denetim_tarihi": "2026-09-03",
+    "denetim_yasi_gun": 3,
+    "kova_guvenilir": true
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
@@ -29995,34 +29925,26 @@
      "poz": 8.4
     },
     "tutan_sayfa": {
-     "gost": 76,
-     "tik": 0,
-     "poz": 9.1
+     "gost": 273,
+     "tik": 1,
+     "poz": 8.8
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../atadostlar-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../atadostlar-sitesi",
-     "sahibinden.com/.../atadostlar-sitesi/emlak-ofisinden",
-     "eryaman.bilgiemlak.com.tr/yer/2-c-blok-3728"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Concept Eryaman Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Yavuz Selim Mahallesi Eml",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "KOMŞU-MAHALLE + ESKİ SLUG temsil (ŞŞ/concept-eryaman) #9 — atadostlar 27.08'de istek gitmişti, hâlâ görünmüyor",
+   "not": "YANLIS SAYFA (mahalle sayfasi): beklenen /mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi, ilk kendi sonucumuz /mahalleler/yavuz-selim-mahallesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -30073,28 +29995,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../ayata-kent-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../ayata-kent-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ayata-kent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/ayata-sitesi-46439-ada-891"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Ayata Kent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Ayata Kent Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30103,19 +30017,15 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/baskent-sular-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 1,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/baskent-sular-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -30130,13 +30040,7 @@
    "son_tarama": "2026-09-03",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -30149,34 +30053,26 @@
      "poz": 6.1
     },
     "tutan_sayfa": {
-     "gost": 50,
-     "tik": 6,
-     "poz": 5.9
+     "gost": 19,
+     "tik": 2,
+     "poz": 6.1
     }
    },
    "rakip": {
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/baskent-sular-sit-1-blok-4406"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/baskent-sular-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/baskent-sular-sit-1-blok-4406",
-     "eryaman.bilgiemlak.com.tr/yer/...18477-ada-617"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Başkent Sular Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 1,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ORGANİK 1 + HARİTA 1 ama Güzelkent kaydı temsil ediyor (YS kuyruğunda ama sayfa Güzelkent'te); eski başlık",
+   "bas": "Başkent Sular Sitesi Emla",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -30194,9 +30090,9 @@
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=3: 1. sayfada 3 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -30241,28 +30137,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../bizim-sirinkoy-sitesi/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../bizim-sirinkoy-sitesi/emlak-ofisinden",
-     "siringayrimenkul.com/mahalleler/yavuz-selim/bizim-sirinkoy-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/...19508-ada-774"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "Bizim Şirinköy Sitesi - Satılık, Kiralık, Değerleme",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Bizim Şirinköy Sitesi - S",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ESKİ SLUG (/yavuz-selim/) + eski başlık — 301 sindirilmemiş",
+   "not": "ESKI ADRES: beklenen /mahalleler/yavuz-selim-mahallesi/bizim-sirinkoy-sitesi, ilk kendi sonucumuz /mahalleler/yavuz-selim/bizim-sirinkoy-sitesi; dogru sayfa #8; harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -30271,15 +30159,19 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/concept-eryaman",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/concept-eryaman",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
-   "sira": 2,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/concept-eryaman",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "eski",
+   "sira": 3,
+   "tutan_url": "/mahalleler/seyh-samil/concept-eryaman",
+   "tutan_tur": "eski",
+   "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -30294,7 +30186,17 @@
    "son_tarama": "2026-08-29",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-11",
+    "kaynak": "d-eski-denetim.tsv (2026-09-02)",
+    "tarama_yasi_gun": 22,
+    "canonical": "/mahalleler/seyh-samil/concept-eryaman",
+    "denetim_tarihi": "2026-09-02",
+    "denetim_yasi_gun": 4,
+    "kova_guvenilir": false
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -30307,34 +30209,26 @@
      "poz": 8.9
     },
     "tutan_sayfa": {
-     "gost": 68,
+     "gost": 76,
      "tik": 0,
-     "poz": 8.9
+     "poz": 9.1
     }
    },
    "rakip": {
-    "sira1": "demirhanemlakeryaman.sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "demirhanemlakeryaman.sahibinden.com",
-     "url": "demirhanemlakeryaman.sahibinden.com/"
-    },
-    "ilk3u": [
-     "demirhanemlakeryaman.sahibinden.com/",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/concept-eryaman",
-     "eryaman.bilgiemlak.com.tr/yer/concept-eryaman-a-blok-46446-ada-3743"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Concept Eryaman Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "bas": "Concept Eryaman Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
+   "not": "ESKI ADRES: beklenen /mahalleler/yavuz-selim-mahallesi/concept-eryaman, ilk kendi sonucumuz /mahalleler/seyh-samil/concept-eryaman; harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -30388,25 +30282,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "hepsiemlak.com",
-     "url": "hepsiemlak.com/.../14936-2273"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/dogakent-camlik-sitesi",
-     "hepsiemlak.com/.../14936-2273",
-     "eryaman.bilgiemlak.com.tr/yer/...13-775"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Doğakent Çamlık Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 2,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Doğakent Çamlık Sitesi Em",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 + harita 2, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30457,28 +30343,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../dogapark-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../dogapark-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/c-blok-3721"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Doğapark Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Doğapark Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık — 325 gos, v4 sırasındaydı; SERP sağlam, kota gerekmez",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30496,9 +30374,9 @@
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -30546,25 +30424,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../elit-nar-cicegi"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim/elit-nar-cicegi",
-     "sahibinden.com/.../elit-nar-cicegi",
-     "eryaman.bilgiemlak.com.tr/yer/elit-nar-cicegi-46237-ada-882"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Elit Nar Çiçeği Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Elit Nar Çiçeği Satılık v",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ORGANİK 1 ama ESKİ SLUG + eski başlık — 301 sindirilmemiş",
+   "not": "ESKI ADRES: beklenen /mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi, ilk kendi sonucumuz /mahalleler/yavuz-selim/elit-nar-cicegi; dogru sayfa #4",
    "icerik_dosyasi_var": true
   },
   {
@@ -30615,28 +30485,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../emlak-ofisinden",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman",
-     "eryaman.bilgiemlak.com.tr/yer/a-blok-3761"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Endora Eryaman Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Endora Eryaman Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık — 28.08 isteğinin dönüşümü (196 gos)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30645,19 +30507,15 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/erkaraca-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 4,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/adalar/46230-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/erkaraca-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -30672,53 +30530,31 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-26",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 7,
-    "canonical": "/mahalleler/yavuz-selim-mahallesi/adalar/46230-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "kendiliğinden dizine girdi/tarandı 04.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
     "dogru_sayfa": null,
-    "tutan_sayfa": {
-     "gost": 1,
-     "tik": 0,
-     "poz": 4.0
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../erkaraca-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../erkaraca-sitesi",
-     "sahibinden.com/.../erkaraca-sitesi/emlak-ofisinden",
-     "facebook.com/omerrglr/videos/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Yavuz Selim 46230/1 Ada — Tapu ve Blok Künyesi | Eryaman",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "ada temsil #4 — site sayfası görünmüyor, istek adayı",
+   "bas": "Erkaraca Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30765,28 +30601,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../esenkent-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../esenkent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/5-b-blok-4025",
-     "hepsiemlak.com/altindag-karapurcek/..."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
    "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK — Karapürçek Esenkent adaşı gürültüde; istek adayı",
+   "not": "ilk 20 disi",
    "icerik_dosyasi_var": true
   },
   {
@@ -30851,28 +30679,20 @@
     }
    },
    "rakip": {
-    "sira1": "hepsiemlak.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "hepsiemlak.com",
-     "url": "hepsiemlak.com"
-    },
-    "ilk3u": [
-     "hepsiemlak.com",
-     "eylulgayrimenkuldikmen.sahibinden.com",
-     "siringayrimenkul.com"
-    ],
+    "ilk_rakip": null,
+    "ilk3u": null,
     "isgal": 1,
-    "ilk3u_yok": false
+    "ilk3u_yok": true
    },
-   "bas": "Eylül Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 1,
-   "olcum_tarihi": "2026-09-01",
+   "bas": "Eylül Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
    "kanal": "normal",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "01.09 yeniden ölçüm — BAŞKA site sayfamız (Eylül Sitesi) temsil ediyor; 2. sıra rakip mağaza eylulgayrimenkuldikmen",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/yavuz-selim-mahallesi/eylul-evleri, ilk kendi sonucumuz /mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -30881,13 +30701,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/eylul-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 3,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/eylul-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -30907,7 +30727,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "kuyrukta değil",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -30916,7 +30736,11 @@
      "tik": 2,
      "poz": 7.7
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 98,
+     "tik": 2,
+     "poz": 7.7
+    }
    },
    "rakip": {
     "sira1": null,
@@ -30924,15 +30748,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-31",
-   "kanal": "gizli",
-   "kaldirac": "",
-   "not": "GÖRÜNMEZ teyit (141 gos) — damla listesinde kalır",
+   "bas": "Eylül Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -30941,18 +30765,18 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/genc-avrasya-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/genc-avrasya-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 3,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/adalar/46239-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "mahalle",
+   "sira": 6,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi",
+   "tutan_tur": "mahalle",
+   "tutan_tur_ad": "mahalle sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -30971,13 +30795,13 @@
    "tutan_dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-09-01",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 1,
-    "canonical": "/mahalleler/yavuz-selim-mahallesi/adalar/46239-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
+    "son_tarama": "2026-08-31",
+    "kaynak": "cf-taze-denetim.tsv (2026-09-03)",
+    "tarama_yasi_gun": 3,
+    "canonical": "/mahalleler/yavuz-selim-mahallesi",
+    "denetim_tarihi": "2026-09-03",
+    "denetim_yasi_gun": 3,
+    "kova_guvenilir": true
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
@@ -30991,34 +30815,26 @@
      "poz": 7.9
     },
     "tutan_sayfa": {
-     "gost": 47,
-     "tik": 0,
-     "poz": 9.4
+     "gost": 273,
+     "tik": 1,
+     "poz": 8.8
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../genc-avrasya-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../genc-avrasya-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/6-c-blok-3742",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/adalar/46239-1"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "46239/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ada temsil #3 — site sayfası görünmüyor, istek adayı",
+   "bas": "Yavuz Selim Mahallesi Eml",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "",
+   "not": "YANLIS SAYFA (mahalle sayfasi): beklenen /mahalleler/yavuz-selim-mahallesi/genc-avrasya-sitesi, ilk kendi sonucumuz /mahalleler/yavuz-selim-mahallesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -31132,25 +30948,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../gulvatan-sitesi"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/gulvatan-sitesi",
-     "sahibinden.com/.../gulvatan-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/gulvatan-sitesi-19502-ada-782"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Gülvatan Sitesi Satılık Daire ve Kiralık Daire — Emlakçısı ...",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Gülvatan Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 ama ESKİ başlık — tarama adayı (düşük öncelik)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -31168,9 +30976,9 @@
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -31218,25 +31026,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../yavuz-selim-mah."
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim/guz-gol-sitesi",
-     "sahibinden.com/.../yavuz-selim-mah.",
-     "facebook.com/.../195761597569405/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Güz - Göl Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Eryaman Güz - Göl Sitesi ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ORGANİK 1 ama ESKİ SLUG + eski başlık — 301 sindirilmemiş",
+   "not": "ESKI ADRES: beklenen /mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi, ilk kendi sonucumuz /mahalleler/yavuz-selim/guz-gol-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -31254,9 +31054,9 @@
    "tutan_tur_ad": "başka site sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -31301,28 +31101,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../guzel-ankara-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../guzel-ankara-sitesi",
-     "siringayrimenkul.com/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
-     "hepsiemlak.com/etimesgut-yavuz-selim-satilik-site-ici"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Güzel Ankara Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-29",
-   "kanal": null,
+   "bas": "Güzel Ankara Sitesi Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "KOMŞU-MAHALLE temsil (Güzelkent güzel-ankara) — güzel-ev kendi sayfası görünmüyor, istek adayı",
+   "not": "YANLIS SAYFA: beklenen /mahalleler/yavuz-selim-mahallesi/guzel-ev-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -31373,28 +31165,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../havayollari-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../havayollari-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/havayollari-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/2-c-blok-3733"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "Havayolları Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Havayolları Sitesi Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -31606,25 +31390,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../kardeskent-sitesi/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/kardeskent-sitesi",
-     "sahibinden.com/.../kardeskent-sitesi/emlak-ofisinden",
-     "eryaman.bilgiemlak.com.tr/yer/18-a-blok-4055"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Kardeşkent Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Kardeşkent Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -31636,15 +31412,15 @@
    "sinif": "F",
    "sinif_ad": "4-10'da YANLIŞ sayfa",
    "alt_sinif": "ada",
-   "sira": 6,
+   "sira": 8,
    "tutan_url": "/mahalleler/yavuz-selim/adalar/19537-1",
    "tutan_tur": "ada",
    "tutan_tur_ad": "ada sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": null,
+    "var": false,
     "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -31689,28 +31465,20 @@
     }
    },
    "rakip": {
-    "sira1": "hepsiemlak.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "hepsiemlak.com",
-     "url": "hepsiemlak.com/.../111334-7846"
-    },
-    "ilk3u": [
-     "hepsiemlak.com/.../111334-7846",
-     "sahibinden.com/satilik-villa/.../yavuz-selim-mah.",
-     "emlakjet.com/ilan/...19762003"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "19537/1 Ada — Karköy Villaları | Yavuz Selim Mahallesi",
-   "h": 2,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "19537/1 Ada — Karköy Vill",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "ada temsil + ESKİ SLUG (/yavuz-selim/adalar/) #6; harita kutusu 2 — site sayfası görünmüyor, istek adayı",
+   "not": "ESKI ADRES: beklenen /mahalleler/yavuz-selim-mahallesi/karkoy-villalari, ilk kendi sonucumuz /mahalleler/yavuz-selim/adalar/19537-1; harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -31719,19 +31487,15 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/keyfim-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/keyfim-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 3,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/adalar/19507-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/keyfim-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -31746,17 +31510,7 @@
    "son_tarama": "2026-07-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-27",
-    "kaynak": "d-ada-denetim.tsv (2026-09-02)",
-    "tarama_yasi_gun": 37,
-    "canonical": "/mahalleler/yavuz-selim-mahallesi/adalar/19507-1",
-    "denetim_tarihi": "2026-09-02",
-    "denetim_yasi_gun": 4,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -31769,34 +31523,26 @@
      "poz": 8.3
     },
     "tutan_sayfa": {
-     "gost": 22,
+     "gost": 41,
      "tik": 0,
-     "poz": 8.7
+     "poz": 8.3
     }
    },
    "rakip": {
-    "sira1": "eryaman.bilgiemlak.com.tr",
-    "sira1_bizim_kanal": false,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/keyfim-sitesi-19507-ada-789"
-    },
-    "ilk3u": [
-     "eryaman.bilgiemlak.com.tr/yer/keyfim-sitesi-19507-ada-789",
-     "sahibinden.com/satilik-villa/.../yavuz-selim-mah.",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/adalar/19507-1"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "19507/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ada temsil #3 — site sayfası görünmüyor, #1 bilgiemlak; istek adayı",
+   "bas": "Keyfim Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -31805,19 +31551,15 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/kirkayak-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/kirkayak-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 6,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/kirkayak-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": null,
-    "sira": null,
-    "kaynak": "bilinmiyor — ölçüm yalnız ilk sonucumuzun URL'sini kaydediyor, isgal ölçülmemiş"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -31832,17 +31574,7 @@
    "son_tarama": "2026-08-30",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-30",
-    "kaynak": "bayat-denetim.tsv (2026-09-05)",
-    "tarama_yasi_gun": 37,
-    "canonical": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
-    "denetim_tarihi": "2026-09-05",
-    "denetim_yasi_gun": 1,
-    "kova_guvenilir": true
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -31855,34 +31587,26 @@
      "poz": 5.7
     },
     "tutan_sayfa": {
-     "gost": 62,
-     "tik": 0,
-     "poz": 41.7
+     "gost": 76,
+     "tik": 2,
+     "poz": 5.7
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../kirkayak-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../kirkayak-sitesi",
-     "hepsiemlak.com/etimesgut-yavuz-selim-satilik-site-ici",
-     "sahibinden.com/.../yavuz-selim-mah."
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Güz - Göl Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 1,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
-   "kaldirac": "",
-   "not": "KOMŞU (güz-göl) temsil #6; HARİTA KUTUSU 1 — kendi sayfası görünmüyor, istek adayı",
+   "bas": "Kırkayak Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -31929,28 +31653,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "konutemlakankara.sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "konutemlakankara.sahibinden.com",
-     "url": "konutemlakankara.sahibinden.com/"
-    },
-    "ilk3u": [
-     "konutemlakankara.sahibinden.com/",
-     "emlakkonut.com.tr/",
-     "hepsiemlak.com/emlak-ofisi/konut-emlak-2220"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
    "bas": null,
-   "h": 1,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK ama HARİTA KUTUSU 1 — 'Konut Emlak' ofis + Emlak Konut adaşı (yapısal, kazanılamaz)",
+   "not": "ilk 20 disi; harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -31959,13 +31675,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "27.08 envanteri (taze denetim yok)",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/kucukevlerimiz-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -31985,7 +31701,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "istek gönderildi 30.08 (DIZINE-EKLENECEKLER.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -31994,23 +31710,27 @@
      "tik": 0,
      "poz": 5.8
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 20,
+     "tik": 0,
+     "poz": 5.8
+    }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 1,
-   "olcum_tarihi": "2026-08-31",
-   "kanal": "gizli",
-   "kaldirac": "",
-   "not": "istek 30.08, tarandı 20:12 — organikte henüz yok ama HARİTA 1 korunuyor (izlemede)",
+   "bas": "Küçükevlerimiz Sitesi Eml",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -32061,28 +31781,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../metrokent-villalari/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../metrokent-villalari/emlak-ofisinden",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/metrokent-villalari",
-     "eryaman.bilgiemlak.com.tr/yer/metrokent-sitesi-19530-ada-795"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Metrokent Villaları Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Metrokent Villaları Emlak",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32313,13 +32025,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/pasaj-eryaman",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
-   "sinif": "C",
-   "sinif_ad": "4-10'da doğru sayfa",
-   "alt_sinif": "4-5",
-   "sira": 4,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "taze denetim",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -32339,7 +32051,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -32348,35 +32060,23 @@
      "tik": 0,
      "poz": 8.8
     },
-    "tutan_sayfa": {
-     "gost": 25,
-     "tik": 0,
-     "poz": 8.8
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "pasajgayrimenkul.sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "pasajgayrimenkul.sahibinden.com",
-     "url": "pasajgayrimenkul.sahibinden.com/"
-    },
-    "ilk3u": [
-     "pasajgayrimenkul.sahibinden.com/",
-     "facebook.com/demirhanemlakeryaman/",
-     "instagram.com/pasajgayrimenkul/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
-   "bas": "Pasaj Eryaman Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "taze başlık #4 — Pasaj Gayrimenkul ofis adaşı ilk 3'ü kapmış (yapısal)",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32388,7 +32088,7 @@
    "sinif": "E",
    "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "alt_sinif": "dogru",
-   "sira": 1,
+   "sira": 2,
    "tutan_url": "/mahalleler/yavuz-selim-mahallesi/sacak-91-sitesi",
    "tutan_tur": "dogru",
    "tutan_tur_ad": "doğru site sayfası",
@@ -32427,28 +32127,20 @@
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/sacak-91-sitesi-...-803"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sacak-91-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/sacak-91-sitesi-...-803",
-     "sahibinden.com/.../sacak-91-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Saçak 91 Sitesi - Satılık ve Kiralık Daire - Şirin Gayrimenkul",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Saçak 91 Sitesi - Satılık",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, ara-dönem başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32495,28 +32187,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../safir-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../safir-sitesi",
-     "remax.com.tr/tr/portfoy/P83826642",
-     "sahibinden.com/ahi-mesut-mah./baspinar-safir-konutlari"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
    "bas": null,
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK (106 gos) — aday listesinin 9. sırası, teyit edildi",
+   "not": "ilk 20 disi",
    "icerik_dosyasi_var": true
   },
   {
@@ -32525,15 +32209,19 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/sahibin-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/sahibin-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "diger",
+   "sira": 6,
+   "tutan_url": "eryamansiringayrimenkul.sahibinden.com",
+   "tutan_tur": "diger",
+   "tutan_tur_ad": "başka sayfamız (/siteler, blog vb.)",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": false,
+    "sira": null,
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -32548,10 +32236,16 @@
    "son_tarama": "2026-09-05",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": null,
+    "kapsam": null,
+    "son_tarama": null,
+    "kaynak": "denetlenmedi",
+    "tarama_yasi_gun": null
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "kendiliğinden dizine girdi/tarandı 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -32559,28 +32253,20 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/kategori/emlak"
-    },
-    "ilk3u": [
-     "sahibinden.com/kategori/emlak",
-     "sahibinden.com/emlak/ankara",
-     "hepsiemlak.com/ankara-sahibinden/konut"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": null,
-   "h": 1,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "şirin gayrimenkul - sahib",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK — sorgu 'sahibinden' olarak yorumlanıyor (kazanılamaz yapısal adaş); harita 1",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {
@@ -32631,28 +32317,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../sahil-kent-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../sahil-kent-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/sahil-kent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/sahilkent-sitesi-45823-ada-894"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Sahil Kent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Sahil Kent Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32661,15 +32339,19 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/seda-terasevler",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/seda-terasevler",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
-   "sira": 1,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/seda-terasevler",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
+   "alt_sinif": "mahalle",
+   "sira": 3,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi",
+   "tutan_tur": "mahalle",
+   "tutan_tur_ad": "mahalle sayfamız",
    "adas_es": false,
-   "dogru_sayfa_serpte": null,
+   "dogru_sayfa_serpte": {
+    "var": "belirsiz",
+    "sira": null,
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
+   },
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -32684,7 +32366,17 @@
    "son_tarama": "2026-08-16",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün",
-   "tutan_dizin": null,
+   "tutan_dizin": {
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-31",
+    "kaynak": "cf-taze-denetim.tsv (2026-09-03)",
+    "tarama_yasi_gun": 3,
+    "canonical": "/mahalleler/yavuz-selim-mahallesi",
+    "denetim_tarihi": "2026-09-03",
+    "denetim_yasi_gun": 3,
+    "kova_guvenilir": true
+   },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -32697,34 +32389,26 @@
      "poz": 7.5
     },
     "tutan_sayfa": {
-     "gost": 105,
-     "tik": 2,
-     "poz": 7.5
+     "gost": 273,
+     "tik": 1,
+     "poz": 8.8
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../seda-terasevler"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/seda-terasevler",
-     "sahibinden.com/.../seda-terasevler",
-     "eryaman.bilgiemlak.com.tr/yer/seda-terasevler-sitesi-...-805"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Seda Terasevler Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1, taze başlık",
+   "bas": "Yavuz Selim Mahallesi Eml",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
+   "not": "YANLIS SAYFA (mahalle sayfasi): beklenen /mahalleler/yavuz-selim-mahallesi/seda-terasevler, ilk kendi sonucumuz /mahalleler/yavuz-selim-mahallesi",
    "icerik_dosyasi_var": true
   },
   {
@@ -32775,28 +32459,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../serenkoy-sitesi/emlak-ofisinden"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../serenkoy-sitesi/emlak-ofisinden",
-     "eryaman.bilgiemlak.com.tr/yer/serenkoy-sitesi-...-806",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serenkoy-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Serenköy Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Serenköy Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32847,28 +32523,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../serhatkent-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../serhatkent-sitesi",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/6-c-blok-3600"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 2,
+    "ilk3u_yok": true
    },
-   "bas": "Serhatkent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Serhatkent Sitesi Emlakçı",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32919,28 +32587,20 @@
     }
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/.../serpil-sitesi"
-    },
-    "ilk3u": [
-     "sahibinden.com/.../serpil-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/serpil-sitesi-46438-ada-889",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serpil-sitesi"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Serpil Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Serpil Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "taze başlık",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -32949,13 +32609,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/taskent-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
-   "sinif": "E",
-   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
-   "alt_sinif": "dogru",
-   "sira": 2,
-   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
-   "tutan_tur": "dogru",
-   "tutan_tur_ad": "doğru site sayfası",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "taze denetim",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -32975,7 +32635,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -32984,35 +32644,23 @@
      "tik": 2,
      "poz": 6.9
     },
-    "tutan_sayfa": {
-     "gost": 85,
-     "tik": 2,
-     "poz": 6.9
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "eryaman.bilgiemlak.com.tr",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/4-blok-4233"
-    },
-    "ilk3u": [
-     "eryaman.bilgiemlak.com.tr/yer/4-blok-4233",
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/2-blok-4231"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 0,
+    "ilk3u_yok": true
    },
-   "bas": "Eryaman Taşkent Sitesi Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
-   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "eski başlık — aday listesinde 'görünmez' idi (21.08), BUGÜN #2: KENDİLİĞİNDEN KURTULDU, listeden düşer",
+   "bas": null,
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
+   "kaldirac": "",
+   "not": "ilk 20 disi",
    "icerik_dosyasi_var": true
   },
   {
@@ -33066,25 +32714,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "sahibinden.com",
-     "url": "sahibinden.com/emlak-konut/.../yavuz-selim-mah."
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman",
-     "sahibinden.com/emlak-konut/.../yavuz-selim-mah.",
-     "eryaman.bilgiemlak.com.tr/yer/6-a-blok-3760"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 1,
+    "ilk3u_yok": true
    },
-   "bas": "Terasevler Eryaman Satılık Daire ve Kiralık Daire",
-   "h": 0,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Terasevler Eryaman Emlakç",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 ama eski başlık (347 gos) — v4'te sıradaydı, SERP sağlam",
+   "not": null,
    "icerik_dosyasi_var": true
   },
   {
@@ -33138,25 +32778,17 @@
     "sira1": "siringayrimenkul.com",
     "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 2,
-     "alan": "eryaman.bilgiemlak.com.tr",
-     "url": "eryaman.bilgiemlak.com.tr/yer/turaykent-sitesi-...-807"
-    },
-    "ilk3u": [
-     "siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/turaykent-sitesi",
-     "eryaman.bilgiemlak.com.tr/yer/turaykent-sitesi-...-807",
-     "instagram.com/reel/DMtAlpPI4lm/"
-    ],
-    "isgal": null,
-    "ilk3u_yok": false
+    "ilk_rakip": null,
+    "ilk3u": null,
+    "isgal": 3,
+    "ilk3u_yok": true
    },
-   "bas": "Turaykent Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
-   "h": 2,
-   "olcum_tarihi": "2026-08-30",
-   "kanal": null,
+   "bas": "Turaykent Sitesi Emlakçı ",
+   "h": null,
+   "olcum_tarihi": "2026-09-06",
+   "kanal": "normal",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "ORGANİK 1 + harita 2, taze başlık",
+   "not": "harita kutusunda",
    "icerik_dosyasi_var": true
   },
   {

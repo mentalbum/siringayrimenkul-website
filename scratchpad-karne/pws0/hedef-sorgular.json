@@ -5,7 +5,7 @@
   "sonuclar-site-emlakci.jsonl",
   "isgal-3108.json"
  ],
- "kayit_sayisi": 1958,
+ "kayit_sayisi": 2002,
  "satirlar": [
   {
    "sorgu": "eryaman emlakçı",
@@ -621,38 +621,38 @@
    "aile_ad": "Mahalle ailesi",
    "beklenen_sayfa": "/mahalleler/yavuz-selim-mahallesi",
    "olculdu": true,
-   "sira": 5,
+   "sira": 7,
    "sira_etiketi": "4–10",
    "u": "/mahalleler/yavuz-selim-mahallesi",
    "sayfa_turu": "mahalle sayfası",
    "dogru_sayfa": true,
    "kutu_var": true,
-   "kutuda": 2,
+   "kutuda": 1,
    "isgal": 1,
    "isgal_kaynak": "kayıt",
    "n": 10,
-   "tarih": "2026-09-02",
-   "yas_gun": 4,
+   "tarih": "2026-09-06",
+   "yas_gun": 0,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
-   "olcum_sayisi": 6,
-   "not": "02.09 08:35 kontrol — 31.08 tarandı, sıra 5 aynı; kutuda 2.",
+   "olcum_sayisi": 7,
+   "not": "harita kutusunda",
    "onceki": {
-    "tarih": "2026-08-31",
+    "tarih": "2026-09-02",
     "sira": 5,
     "sira_etiketi": "4–10",
-    "u": "cite:siringayrimenkul.com › Mahalleler",
-    "sayfa_turu": "mahalle bölümü (kırıntı, hangi sayfa belirsiz)",
+    "u": "/mahalleler/yavuz-selim-mahallesi",
+    "sayfa_turu": "mahalle sayfası",
     "kutu_var": true,
     "kutuda": 2,
-    "kanal": "gizli",
-    "yas_gun": 6
+    "kanal": "normal",
+    "yas_gun": 4
    },
-   "fark": 0,
-   "yon": "aynı",
-   "kanal_ayni": false,
-   "kutu_yon": "kutuda aynı",
+   "fark": -2,
+   "yon": "geriledi",
+   "kanal_ayni": true,
+   "kutu_yon": "kutuda yükseldi",
    "isgal_dosyasinda_daha_taze": null
   },
   {
@@ -706,7 +706,7 @@
   "ilk4_10": 6,
   "disarida": 7,
   "kutuda": 9,
-  "kutuda_birinci": 5,
+  "kutuda_birinci": 6,
   "kutu_var_biz_yok": 6,
   "kutu_yok": 1,
   "kutu_bilinmiyor": 1,
@@ -717,14 +717,14 @@
   "isgal_toplam": 17,
   "yon": {
    "yükseldi": 1,
-   "geriledi": 2,
-   "aynı": 6,
+   "geriledi": 3,
+   "aynı": 5,
    "ilk 10'a girdi": 1,
    "ilk 10'dan çıktı": 0,
    "dışarıda kaldı": 7
   },
   "onceki_yok": 0,
-  "kanal_degisen_kiyas": 5,
+  "kanal_degisen_kiyas": 4,
   "kanal_belirsiz_kiyas": 2,
   "en_bayat": {
    "sorgu": "eryaman emlakçı",
@@ -736,7 +736,7 @@
    "tarih": "2026-09-06",
    "yas_gun": 0
   },
-  "yas_ortalama_gun": 1.9,
+  "yas_ortalama_gun": 1.7,
   "bayat_7gun": 0,
   "aileler": {
    "cati": {

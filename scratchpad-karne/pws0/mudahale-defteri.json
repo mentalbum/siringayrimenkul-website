@@ -1,11 +1,11 @@
 {
  "guncelleme": "2026-09-06",
- "toplam_istek": 58,
+ "toplam_istek": 59,
  "hepsi_girdi": 54,
- "hepsi_donusum": 93,
+ "hepsi_donusum": 92,
  "ayni_gun_tarandi": 32,
  "olgun": 37,
- "bekleyen": 21,
+ "bekleyen": 22,
  "dizine_girdi": 37,
  "girmedi": 0,
  "donusum": 100,
@@ -46,7 +46,7 @@
   },
   {
    "tarih": "06.09",
-   "istek": 7,
+   "istek": 8,
    "girdi": 3,
    "olgun": 0
   },
@@ -528,8 +528,8 @@
    "son_tarama": "2026-09-05",
    "istekten_sonra_tarandi": true,
    "sira_once": 4,
-   "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "sira_sonra": 2,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -614,6 +614,20 @@
    "sira_once": 3,
    "sira_sonra": 2,
    "olculdu_sonra": true,
+   "sonuc": "henüz erken"
+  },
+  {
+   "url": "https://www.siringayrimenkul.com/mahalleler/seyh-samil/yeni-burak-sitesi",
+   "sayfa": "seyh-samil/yeni-burak-sitesi",
+   "istek_tarihi": "06.09",
+   "gun_gecti": 0,
+   "dizinde": null,
+   "kapsam": null,
+   "son_tarama": null,
+   "istekten_sonra_tarandi": false,
+   "sira_once": 0,
+   "sira_sonra": 0,
+   "olculdu_sonra": false,
    "sonuc": "henüz erken"
   },
   {

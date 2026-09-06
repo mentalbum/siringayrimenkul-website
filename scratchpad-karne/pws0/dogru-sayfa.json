@@ -5,7 +5,7 @@
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 318
+   "n": 320
   },
   {
    "k": "yok",
@@ -15,55 +15,55 @@
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 49
+   "n": 48
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 46
+   "n": 44
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 28
+   "n": 25
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 13
+   "n": 16
   },
   {
    "k": "dis",
    "ad": "Bize ait olmayan sonuç",
-   "n": 3
+   "n": 4
   }
  ],
- "ilk3_toplam": 379,
+ "ilk3_toplam": 381,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 296
+   "n": 299
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 43
+   "n": 44
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 22
+   "n": 21
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 12
+   "n": 10
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 5
+   "n": 6
   },
   {
    "k": "dis",
@@ -71,19 +71,19 @@
    "n": 1
   }
  ],
- "ilk3_dogru": 296,
+ "ilk3_dogru": 299,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
    23
   ],
   [
-   "yavuz-selim-mahallesi",
-   22
-  ],
-  [
    "goksu-mahallesi",
    21
+  ],
+  [
+   "yavuz-selim-mahallesi",
+   19
   ],
   [
    "sehit-osman-avci-mahallesi",
