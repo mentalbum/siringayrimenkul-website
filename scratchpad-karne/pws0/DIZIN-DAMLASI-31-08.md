@@ -253,7 +253,7 @@ Bu parti birinci partiden SONRA çekilir.
 
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-1-bloklari ← 06.09 istek gönderildi (10:5x, "Dizine eklenmesi istendi")
       _keşfedildi, dizine alınmadı_
-- [ ] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari  
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kutlutas-2-bloklari ← 06.09 istek gönderildi (11:0x, "Dizine eklenmesi istendi")
       _keşfedildi, dizine alınmadı_
 
 ## yavuz-selim-mahallesi (5)
