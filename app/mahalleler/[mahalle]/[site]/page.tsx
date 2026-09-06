@@ -27,6 +27,7 @@ import { getSiteFaq } from "@/lib/faq";
 import { getBlogPostBySlug } from "@/lib/content";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
+import { BASLIK_KONTROL_KOLU } from "@/lib/baslik-kontrol-kolu";
 import { OZGUN_ID } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
@@ -85,6 +86,53 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // Ata/Susuz/Cumhuriyet Yenimahalle'dedir — Eryaman'da DEĞİL. O mahallelerdeki
   // sitelere "Eryaman <site adı>" demek yanlış konum iddiasıdır (lib/bolge.ts).
   const eryamanda = eryamandaMi(mahalle);
+  // MAHALLE HER BAŞLIKTA (07.09.2026). 04-06.09 taraması (343 sorgu, pws=0):
+  // sıraladığımız sorguların ~%29'unda Google BAŞKA bir sayfamızı gösteriyor;
+  // doğru sayfalar dizinde ve taze (29/31, 19'u ≤7 gün) — sorun tarama değil
+  // ayırt edicilik. 09.08'de yalnız çekirdek adı çakışan 48 sayfaya sonek
+  // verilmişti; sıra düzeyinde temiz kanıt 4/5 (Aktürk, Elit Yaşam, Eston,
+  // Maybak — Maybak gürültülü; Age başarısız; Sümeyra eski-slug vakasıydı,
+  // sayılmaz). Kapsam dışı kalan çapraz-mahalle çiftler (Güzel Ankara Evleri/
+  // Sitesi, Endora Park/Eryaman, Hotki Meydan/Ritm, Park İnci/İnci Park)
+  // çekirdek adı farklı olduğu için sonek almıyordu ve hâlâ birbirinin yerine
+  // çıkıyor. Kural artık tek: her site sayfası mahallesini taşır.
+  // GSC 28 gün (07.08-03.09): sonekli 45 sayfa TO %2,19 / poz 7,95; soneksiz
+  // 393 sayfa TO %2,15 / poz 7,46 — sonek tıklamayı düşürmüyor. "ad Emlakçı |
+  // lokasyon" 522 sayfada ort. 43,7 karakter, 5'i 60'ı aşıyor.
+  // DÜRÜST KAPSAM: bu şablon 12'lik yanlış-sayfa listesinin yalnız 3'ünü
+  // ayrıştırır (Güzel Ankara, Endora Park, Hotki Meydan). Aynı mahalledeki
+  // ikizler (Camlı Klima/Klima) ve eski adres vakaları (Uzuner) başlıkla
+  // çözülmez; zaten sonekli Age/Bahar/Sutek'e bir şey değişmez.
+  // KONTROL KOLU (lib/baslik-kontrol-kolu.ts): 45 sayfa 05.10'a kadar eski
+  // kuralda kalır — yanlış sayfaların haftada ~%38'i kendiliğinden düzeliyor
+  // (27-31.08→04-05.09: 34/89), kontrolsüz okuma müdahaleyi ayırt edemez.
+  // SABLON.site (app/sitemap.ts) bilerek İLERLETİLMEDİ: başlık metni tarama
+  // tetiklemez, tek tetikleyici sitemap damgasıdır; 11.09 tarama okumasından
+  // sonra ayrı commit'le ilerletilir (AGENTS.md kuralı).
+  const kisaMahalle = mahalleKisaIsim(mahalle);
+  // Adında kendi mahallesi geçen 22 kayıt ("Göksu Aura Sitesi", "Tunahan
+  // Sitesi", "Oyak Göksupark"…): "… | Göksu Eryaman" ikilemesi yerine yalın
+  // "Eryaman". Alt dize karşılaştırması bilerek: JS \b Türkçe harfte çalışmıyor.
+  const adindaMahalleVar =
+    kisaMahalle !== "Eryaman" &&
+    site.isim.toLocaleLowerCase("tr").includes(kisaMahalle.toLocaleLowerCase("tr"));
+  // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman Eryaman"
+  // olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet, Çiğdem sitelerinin
+  // Eryaman Mahallesi kayıtları); adında Eryaman geçen VE Eryaman
+  // Mahallesi'nde olan kayıt lokasyonsuz kalır. Yenimahalle kolu
+  // (eryamanda=false) 27.08'den beri boş; koruma olarak duruyor.
+  const lokasyon = !eryamanda
+    ? mahalle.isim
+    : isimdeEryamanVar
+      ? kisaMahalle === "Eryaman"
+        ? ""
+        : `${kisaMahalle} Mahallesi`
+      : kisaMahalle === "Eryaman"
+        ? "Eryaman Mahallesi"
+        : adindaMahalleVar
+          ? "Eryaman"
+          : `${kisaMahalle} Eryaman`;
+  const kontrolde = BASLIK_KONTROL_KOLU.has(`${mahalle.slug}/${site.slug}`);
   // Ev sahibinin gerçek arama kalıpları ("X satılık daire", "X kiralık daire",
   // "X daire fiyatları", "X emlakçı") başlıkta birebir karşılansın; açıklama
   // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
@@ -129,20 +177,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Bölge ayrımı AYNEN duruyor: Ata/Susuz/Cumhuriyet'te "Eryaman" değil
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
-      absolute: isimdeEryamanVar
-        ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
-        : eryamanda
-          ? isimBirdenCokMahallede(site.isim)
-            ? // Eryaman Mahallesi'nin kısa adı zaten "Eryaman" — sonek "Eryaman
-              // Eryaman" olmasın (canlı denetimde yakalandı: Bahar, Cumhuriyet,
-              // Çiğdem sitelerinin Eryaman Mahallesi kayıtları).
-              `${site.isim} Emlakçı | ${
-                mahalleKisaIsim(mahalle) === "Eryaman"
-                  ? "Eryaman Mahallesi"
-                  : `${mahalleKisaIsim(mahalle)} Eryaman`
-              } | Evinizi Satalım, Kiraya Verelim`
-            : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
-          : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`,
+      absolute: kontrolde
+        ? // KONTROL KOLU — 07.09 öncesi kural, 05.10'a kadar (lib/baslik-kontrol-kolu.ts)
+          isimdeEryamanVar
+          ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
+          : eryamanda
+            ? isimBirdenCokMahallede(site.isim)
+              ? `${site.isim} Emlakçı | ${
+                  kisaMahalle === "Eryaman" ? "Eryaman Mahallesi" : `${kisaMahalle} Eryaman`
+                } | Evinizi Satalım, Kiraya Verelim`
+              : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
+            : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`
+        : lokasyon
+          ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
+          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
