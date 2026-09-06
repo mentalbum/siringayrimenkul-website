@@ -522,7 +522,11 @@ ISLER.sort(key=lambda k: (k["tarih"], k["_oncelik"]))
 for k in ISLER:
     del k["_oncelik"]
 
-if ORT_ISTEK is not None and ORT_ISTEK < KOTA_GUN:
+if KALAN == 0:
+    # 06.09: kuyruk ilk kez tamamen boşaldı; tempo/bitiş hesabı None döner, tr_tarih(None) patlar.
+    UYARILAR.append("Dizin damlası kuyruğu tamamlandı (açık madde 0); tempo ve bitiş hesabı artık "
+                    "anlamsız, yeni kuyruk açılırsa yeniden hesaplanır.")
+elif ORT_ISTEK is not None and ORT_ISTEK < KOTA_GUN and DAMLA_BIT_GOZLENEN and DAMLA_BIT:
     UYARILAR.append(
         f"Gözlenen tempo kotanın altında: {', '.join(f'{g} günü {n} istek' for g, n in sorted(ISTEK_GUN.items()))} "
         f"(ortalama {tr_sayi(ORT_ISTEK, 1)}); bu tempoyla damla {tr_tarih(DAMLA_BIT_GOZLENEN)} günü biter, "
