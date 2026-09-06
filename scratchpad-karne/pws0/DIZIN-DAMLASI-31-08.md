@@ -92,7 +92,7 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Akdal Residence emlakçı" sorgusunda 2. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/liderkent ← 05.09 istek gönderildi  
       _"Liderkent emlakçı" sorgusunda 2. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari  
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/ozenkent-2-villalari ← 06.09 istek gönderildi (10:1x, "Dizine eklenmesi istendi")
       _"Özenkent 2 Villaları emlakçı" sorgusunda 2. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kafdagi-sitesi ← 05.09 istek gönderildi  
       _"Kafdağı Sitesi emlakçı" sorgusunda 3. sırada ada sayfası çıkıyor; doğru sayfa dizinde değil_
@@ -368,3 +368,4 @@ Bu parti birinci partiden SONRA çekilir.
 
 > 05.09 gece — Konuta Özlem'de **Kota Aşıldı**, istek İŞLENMEDİ, işaretlenmedi.
 > Günün toplamı 11 istek (sabah 10 + Polsan1 Ayışığı). Kalan 7 yarına.
+> 06.09 10:1x — damla turu: API ile 7 hedef doğrulandı (hepsi dışarıda: 4 "keşfedildi-dizine eklenmedi", 3 "bilinmiyor"). İlk istek ozenkent-2-villalari kabul. Klavyesiz tarif BU SABAH ÇALIŞMADI (programatik değer+sentetik Enter işlenmedi); gerçek triple-click+type+Return çalıştı; düğme JS .click() ile açılmıyor, ref/koordinat tıklaması şart.
