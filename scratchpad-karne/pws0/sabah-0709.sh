@@ -9,8 +9,10 @@ python3 - <<'PY' > "$S/deney-kollar-urller.txt"
 import json
 k=json.load(open('scratchpad-karne/pws0/tarama-deneyi-kollar.json'))
 urls=[]
-for kol in ('deney','kontrol','genisletme'):
-    for u in k.get(kol,[]): urls.append(u if u.startswith('http') else 'https://www.siringayrimenkul.com'+u)
+for kol in ('deney','kontrol'):
+    for e in k.get(kol,[]):
+        s=e['s'] if isinstance(e,dict) else e
+        urls.append('https://www.siringayrimenkul.com/mahalleler/'+s)
 print('\n'.join(dict.fromkeys(urls)))
 PY
 echo "deney kolu URL: $(wc -l < "$S/deney-kollar-urller.txt")"
