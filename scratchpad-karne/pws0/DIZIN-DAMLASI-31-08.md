@@ -102,9 +102,9 @@ tutuyor), diğerlerinde talep bilinmiyor.
       _"Address Göksu emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-panora-konutlari ← 05.09 istek gönderildi  
       _"Neva Panora Konutları emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim  
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ozluce-guzelevim ← 06.09 istek gönderildi (10:2x; DİKKAT: sonraki turda kutuya yazı düşmeyince aynı sayfada "Tekrar istek gönder"e ikinci tıklama gitmiş olabilir → kota 1 fazla yanmış olabilir)
       _"Özlüce Güzelevim emlakçı" sorgusunda 3. sırada eski adres çıkıyor; doğru sayfa dizinde değil_
-- [ ] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent  
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/yagan-kent ← 06.09 istek gönderildi (10:3x, "Dizine eklenmesi istendi")
       _"Yağan Kent emlakçı" sorgusunda 3. sırada mahalle sayfası çıkıyor; doğru sayfa dizinde değil_
 - [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/gokdemir-tower ← 04.09 DİZİNDE (kendiliğinden)  
       _"Gökdemir Tower emlakçı" sorgusunda 3. sırada komşu site sayfası çıkıyor; doğru sayfa dizinde değil_
@@ -369,3 +369,4 @@ Bu parti birinci partiden SONRA çekilir.
 > 05.09 gece — Konuta Özlem'de **Kota Aşıldı**, istek İŞLENMEDİ, işaretlenmedi.
 > Günün toplamı 11 istek (sabah 10 + Polsan1 Ayışığı). Kalan 7 yarına.
 > 06.09 10:1x — damla turu: API ile 7 hedef doğrulandı (hepsi dışarıda: 4 "keşfedildi-dizine eklenmedi", 3 "bilinmiyor"). İlk istek ozenkent-2-villalari kabul. Klavyesiz tarif BU SABAH ÇALIŞMADI (programatik değer+sentetik Enter işlenmedi); gerçek triple-click+type+Return çalıştı; düğme JS .click() ile açılmıyor, ref/koordinat tıklaması şart.
+> 06.09 10:3x — TUZAK: istek sonrası üst kutuya yazılan yeni URL bazen DÜŞMÜYOR (kutu boş kalıyor, Enter aynı sayfayı yeniden açıyor). Kural: düğmeye tıklamadan ÖNCE hükümdeki `u` hedef URL ile eşleşmeli; eşleşmiyorsa tıklama YOK (aksi halde "Tekrar istek gönder" kota yakar).
