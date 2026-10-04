@@ -177,6 +177,15 @@
    "olcum": "45 sayfa mahalleli basliga gecti; 527 site sayfasi sitemap'te 04.10 damgali",
    "sonraki_olcum": "Deney SERP taramasi 05-06.10 geceleri (kuyruk index 60+); 01.11 GSC sorgu x sayfa tekrar",
    "nerede": "deney-okuma-0410-gsc.md"
+  },
+  {
+   "tarih": "2026-10-04",
+   "ad": "sitemap-eski-adresler.xml kaldirma (son tarih 15.10)",
+   "durum": "acik",
+   "olcum": "GSC 21.09: yonlendirmeli 715, kopya 71 (Temmuz taramali); eski adreslerin %34'u 410 (Yenimahalle). Kosul (robots.ts:45-46) saglandi.",
+   "gerekce": "app/robots.ts yorumundaki kural: en gec 2026-10-15'te robots.ts'teki satir + rota dosyasi silinir, GSC'den sitemap kaldirilir.",
+   "sonraki_olcum": "15.10: sil, GSC Site Haritalari'ndan kaldir, 7 gun sonra 'yonlendirmeli' kovasi degisimi",
+   "nerede": "app/robots.ts:38-46"
   }
  ]
 }
