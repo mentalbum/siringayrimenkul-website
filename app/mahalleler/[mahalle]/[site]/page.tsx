@@ -27,7 +27,6 @@ import { getSiteFaq } from "@/lib/faq";
 import { getBlogPostBySlug } from "@/lib/content";
 import { truncateForMeta } from "@/lib/seo";
 import { siteConfig } from "@/lib/site-config";
-import { BASLIK_KONTROL_KOLU } from "@/lib/baslik-kontrol-kolu";
 import { OZGUN_ID } from "@/lib/structured-data";
 import { eryamandaMi, yerEtiketi } from "@/lib/bolge";
 import { cikarKunye, kunyeCumlesi } from "@/lib/kunye";
@@ -103,12 +102,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   // ayrıştırır (Güzel Ankara, Endora Park, Hotki Meydan). Aynı mahalledeki
   // ikizler (Camlı Klima/Klima) ve eski adres vakaları (Uzuner) başlıkla
   // çözülmez; zaten sonekli Age/Bahar/Sutek'e bir şey değişmez.
-  // KONTROL KOLU (lib/baslik-kontrol-kolu.ts): 45 sayfa 05.10'a kadar eski
-  // kuralda kalır — yanlış sayfaların haftada ~%38'i kendiliğinden düzeliyor
-  // (27-31.08→04-05.09: 34/89), kontrolsüz okuma müdahaleyi ayırt edemez.
-  // SABLON.site (app/sitemap.ts) bilerek İLERLETİLMEDİ: başlık metni tarama
-  // tetiklemez, tek tetikleyici sitemap damgasıdır; 11.09 tarama okumasından
-  // sonra ayrı commit'le ilerletilir (AGENTS.md kuralı).
+  // KONTROL KOLU KAPANDI (04.10): 45 sayfa 05.10'a kadar eski kuralda tutuldu
+  // (lib/baslik-kontrol-kolu.ts, silindi). Okuma: GSC sorgu×sayfa (06.08–02.09
+  // → 10.09–02.10) deney 272 sayfada doğru-sayfa oranı %66,9→%76,1, kontrol 27
+  // sayfada %66,7→%66,7; tık kaybı iki kolda aynı (zarar yok). SERP (pws=0,
+  // 04.10): kontrol 45/45 yerinde saydı (32/8/5 → 31/8/6). Ayrıntı:
+  // scratchpad-karne/pws0/deney-okuma-0410-gsc.md. Kural artık herkese.
+  // SABLON.site 04.10'da ilerletildi (06.09'da bilerek bekletilmişti: deney
+  // sırasında tarama dalgası karışmasın diye). Not: 04.10 dizin denetimi
+  // damgasız da olsa en çok gösterim alan 30 site sayfasının 30'unun yeni
+  // başlıkla dizine girdiğini gösterdi — bayat damga taramayı engellemiyor.
   const kisaMahalle = mahalleKisaIsim(mahalle);
   // Adında kendi mahallesi geçen 22 kayıt ("Göksu Aura Sitesi", "Tunahan
   // Sitesi", "Oyak Göksupark"…): "… | Göksu Eryaman" ikilemesi yerine yalın
@@ -132,7 +135,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         : adindaMahalleVar
           ? "Eryaman"
           : `${kisaMahalle} Eryaman`;
-  const kontrolde = BASLIK_KONTROL_KOLU.has(`${mahalle.slug}/${site.slug}`);
   // Ev sahibinin gerçek arama kalıpları ("X satılık daire", "X kiralık daire",
   // "X daire fiyatları", "X emlakçı") başlıkta birebir karşılansın; açıklama
   // fiyat/değer vaadi + hız taahhüdüyle tıklamaya davet etsin.
@@ -177,20 +179,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Bölge ayrımı AYNEN duruyor: Ata/Susuz/Cumhuriyet'te "Eryaman" değil
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
-      absolute: kontrolde
-        ? // KONTROL KOLU — 07.09 öncesi kural, 05.10'a kadar (lib/baslik-kontrol-kolu.ts)
-          isimdeEryamanVar
-          ? `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`
-          : eryamanda
-            ? isimBirdenCokMahallede(site.isim)
-              ? `${site.isim} Emlakçı | ${
-                  kisaMahalle === "Eryaman" ? "Eryaman Mahallesi" : `${kisaMahalle} Eryaman`
-                } | Evinizi Satalım, Kiraya Verelim`
-              : `${site.isim} Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim`
-            : `${site.isim} Emlakçı | ${mahalle.isim} | Evinizi Satalım, Kiraya Verelim`
-        : lokasyon
-          ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
-          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
+      absolute: lokasyon
+        ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
+        : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
