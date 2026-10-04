@@ -713,12 +713,16 @@ export default async function SitePage({ params }: Props) {
               siteden dışarı çıkarıyordu; ev sahibi CTA'sı ise 3. ekrandaydı.
               İlan arayan için bağlantı duruyor, sadece açıklamanın altına indi. */}
           <div className="flex flex-wrap items-center gap-3">
-            <CtaButton
+            {/* 04.10 denetimi: birincil CTA'nın tıkı hiç ölçülmüyordu (28g'de
+                "4" rakamı referrer çıkarımıydı). degerleme_cta + konum ile
+                telefon/WhatsApp'la aynı raporda okunur. */}
+            <TrackedCtaLink
               href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}
+              gaEvent="degerleme_cta" gaParams={{ konum: "site_ust" }}
               variant="primary"
             >
               Evinizi Değerlendirelim
-            </CtaButton>
+            </TrackedCtaLink>
             <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "site_ust" }} variant="outline">
               {siteConfig.phoneDisplay}
             </TrackedCtaLink>
@@ -734,7 +738,7 @@ export default async function SitePage({ params }: Props) {
             </span>
             <TrackedCtaLink
               href={siteConfig.sahibindenUrl}
-              gaEvent="site_ust_sahibinden"
+              gaEvent="sahibinden_click" gaParams={{ konum: "site_ust" }}
               variant="ghost"
               className="px-0 font-semibold text-gold-dark"
             >
@@ -878,14 +882,15 @@ export default async function SitePage({ params }: Props) {
           )}
           {` içinde bu sayfayı ayıran şey ilan değil arşiv olması: sitenin tapu kimliği, konumu ve fiyatı etkileyen özellikleri burada. ${bulunmaHali(site.isim)} satılık veya kiralık daire mi arıyorsunuz? Güncel ilanlarımız sahibinden.com mağazamızda. Karar aşamasında bize ulaşın, bu sitede portföyümüze eklenen daireleri ilk öğrenen siz olun.`}
         </p>
-        <CtaButton
+        <TrackedCtaLink
           href={siteConfig.sahibindenUrl}
-          external
+          gaEvent="sahibinden_click" gaParams={{ konum: "site_alt" }}
           variant="outline"
           className="mt-4"
+          openInNewTab
         >
           sahibinden.com&apos;daki İlanlarımız
-        </CtaButton>
+        </TrackedCtaLink>
       </section>
 
       <CtaBanner
@@ -897,12 +902,13 @@ export default async function SitePage({ params }: Props) {
         ][varyant % 3]}
         aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
-        <CtaButton
+        <TrackedCtaLink
           href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}
+          gaEvent="degerleme_cta" gaParams={{ konum: "site_banner" }}
           variant="primary"
         >
           Evinizi Değerlendirelim
-        </CtaButton>
+        </TrackedCtaLink>
         <TrackedCtaLink
           href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
             `Merhaba! ${site.isim} (${mahalle.isim}) — bu sitedeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`

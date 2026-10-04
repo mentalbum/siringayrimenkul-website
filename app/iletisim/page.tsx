@@ -3,7 +3,7 @@ import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { getAllMahalleler } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
-import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import { ContactForm } from "@/components/contact/contact-form";
 import { ClockIcon, MapPinIcon, PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
@@ -69,7 +69,7 @@ export default function IletisimPage() {
               <p className="text-sm font-semibold text-navy">WhatsApp</p>
               <TrackedLink
                 href={siteConfig.whatsappUrl}
-                gaEvent="whatsapp_click"
+                gaEvent="whatsapp_click" gaParams={{ konum: "iletisim" }}
                 openInNewTab
                 className="text-sm text-body hover:text-gold-dark"
               >
@@ -104,14 +104,15 @@ export default function IletisimPage() {
               </a>
             </div>
           </div>
-          <CtaButton
+          <TrackedCtaLink
             href={siteConfig.sahibindenUrl}
-            external
+            gaEvent="sahibinden_click" gaParams={{ konum: "iletisim" }}
+            openInNewTab
             variant="outline"
             className="w-full justify-center"
           >
             sahibinden.com&apos;daki İlanlarımız
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
 
         <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">

@@ -1037,7 +1037,7 @@ if _TS:
         <li><span>Telefon tıklaması</span><span class="chip {'iyi' if _t100['phone_click'] >= 1 else 'kotu'}">{tr_sayi(_t100['phone_click'], 2)}</span></li>
         <li><span>WhatsApp</span><span class="chip">{tr_sayi(_t100['whatsapp_click'], 2)}</span></li>
         <li><span>Form başlatma</span><span class="chip">{tr_sayi(_t100['form_start'], 2)}</span></li>
-        <li><span>Site sayfasından sahibinden mağazasına geçiş</span><span class="chip orta">{tr_sayi(_t100['site_ust_sahibinden'], 2)}</span></li>
+        <li><span>Sahibinden mağazasına geçiş (04.10'dan beri tüm bağlar, öncesi yalnız site üstü)</span><span class="chip orta">{tr_sayi(_t100['site_ust_sahibinden'], 2)}</span></li>
       </ul>
       <p class="alt" style="margin:10px 0 0">Sahibinden geçişi ({_t['site_ust_sahibinden']}) telefon tıklamasından
       ({_t['phone_click']}) fazla: site sayfasına gelen, aramak yerine ilanlara gidiyor. Bu bir gözlem,

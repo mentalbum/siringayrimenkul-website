@@ -40,7 +40,8 @@ AD = {"site": "Site sayfaları", "ana sayfa": "Ana sayfa", "mahalle": "Mahalle s
 oturum = ozet["oturum"] or 1
 temas = {"phone_click": olay.get("phone_click", 0), "whatsapp_click": olay.get("whatsapp_click", 0),
          "form_start": olay.get("form_start", 0), "contact_form_submit": olay.get("contact_form_submit", 0),
-         "site_ust_sahibinden": olay.get("site_ust_sahibinden", 0)}
+         # 04.10: tüm sahibinden bağları tek olayda (sahibinden_click + konum); eski ad site üstü düğmesiydi.
+         "site_ust_sahibinden": olay.get("site_ust_sahibinden", 0) + olay.get("sahibinden_click", 0)}
 cikti = {
     "guncelleme": datetime.date.today().isoformat(), "gun": ozet["gun"],
     # GA4'ün penceresi GSC'ninkinden farklı biter (dün / bugün−3); pencere.py'de gerekçesi.
