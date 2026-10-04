@@ -75,4 +75,4 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
   #89 (profil defteri sayı iddiası temizliği), #84 (%90 hedefi dokümanı), #16→#98 (Anka Vega 47542/5, yeniden
   uygulandı); KAPAT #38 (#41 kapsadı), #8 (etap Service+ItemList main'de zaten var), #32 (eski FB sayfası),
   #83 (#89 kapsadı; sektortanitim/bulurum bulguları deftere 7a olarak taşındı), #70 (ŞFK tabela kanıtı
-  sorunlu-siteler'e taşındı). Açık PR: 0.
+  sorunlu-siteler'e taşındı). Açık PR: 0 (#4 de kapatıldı — üç düzeltmesi başka yoldan girmişti).
