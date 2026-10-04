@@ -74,7 +74,9 @@ export function FloatingWhatsAppButton() {
           target="_blank"
           rel="noopener noreferrer"
           onClick={() => sendGAEvent("event", "whatsapp_click", { konum: "mobil_cubuk" })}
-          className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#25D366] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
+          /* Lighthouse erişilebilirlik (04.10): beyaz metin #25D366 üstünde
+             kontrast 1,98 — WhatsApp'ın koyu marka yeşili #128C7E ile 3,9. */
+          className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#128C7E] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
         >
           <WhatsAppIcon className="h-5 w-5" />
           WhatsApp

@@ -192,7 +192,11 @@ export default function HomePage() {
                 sabit "720" ile hemen altındaki {toplamSite} sayacı çelişiyordu —
                 yeni metinde sayı hiç geçmiyor, çelişme kaynağı ortadan kalktı.
                 Metin site sayfalarının giriş cümlesiyle aynı dili konuşuyor. */}
-            <p className="animate-fade-up mt-5 max-w-lg text-base leading-relaxed text-white/75 [animation-delay:0.14s]">
+            {/* 04.10 Lighthouse (mobil): LCP öğesi bu paragraftı ve 5,4 s
+                ölçüldü — opaklık animasyonu 0,14 s gecikme + 0,6 s süreyle
+                LCP'yi animasyonun bitişine erteliyordu. Paragraf artık
+                animasyonsuz; başlık ve düğmeler kademeli girişi koruyor. */}
+            <p className="mt-5 max-w-lg text-base leading-relaxed text-white/75">
               Eryaman&apos;da evinizi kiraya vermek ya da satmak istiyorsanız, güvenle
               emanet edebileceğiniz bir emlakçı arıyorsunuz demektir. Nerede olursanız
               olun, karşınıza doğru kiracıyı ya da alıcıyı çıkarır, süreci baştan sona

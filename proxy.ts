@@ -128,6 +128,11 @@ export function proxy(request: NextRequest) {
         // Bir gün önbellek: sinyal sabit, insan trafiği yok denecek kadar az.
         // Kalıcı önbellek istemiyoruz ki liste değişirse yanıt takılı kalmasın.
         "cache-control": "public, max-age=0, s-maxage=86400",
+        // next.config headers() proxy yanıtına uygulanmaz; aynı dört başlık.
+        "x-content-type-options": "nosniff",
+        "content-security-policy": "frame-ancestors 'self'",
+        "referrer-policy": "strict-origin-when-cross-origin",
+        "permissions-policy": "camera=(), microphone=(), geolocation=()",
       },
     });
   }
