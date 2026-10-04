@@ -1,1 +1,2 @@
 - 04.10 ~21:30: +41 ölçüm (kontrol kolu 41/45, deney 0/174), engel: EVET (reCAPTCHA 41. sorguda, 44 sorgu sonra), kuyruk deney-kuyruk-0410.json
+- 04.10 ~22:30: +19 ölçüm (kontrol 45/45 tamam, deney 15/174), engel: EVET (2. reCAPTCHA 60. sorguda → gün kapandı), kuyruk index 60+
