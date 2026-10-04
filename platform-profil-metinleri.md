@@ -337,8 +337,8 @@ Etimesgut/Ankara · Açıklama: [üstteki ortak metin]. Teşekkürler.
 
 Açıklama metni (ARŞİV — kayıt açılmayacak, metin başka platform için hazır):
 
-Eryaman emlakçısı Şirin Gayrimenkul. Eryaman (Etimesgut) genelinde 500'den
-fazla site ve rezidansın tapu, ada-parsel ve blok kaydını tutan yerel ofis.
+Eryaman emlakçısı Şirin Gayrimenkul. Etimesgut Eryaman'da yerleşik emlak
+ofisi; buradaki siteleri blok blok tanır (sayı iddiası yasağı, 04.09).
 Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan uca danışmanlık.
 Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
