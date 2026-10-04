@@ -12,7 +12,7 @@ import { organizationRef } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Ev Sahibi Hesap Araçları — Kira Artışı, Tapu Harcı, Komisyon",
   description:
-    "Evini kiraya verecek veya satacak ev sahipleri için hesap araçları: TÜFE'ye göre kira artışı, tapu harcı, yasal emlak komisyonu ve boş kalma maliyeti hesaplayıcı. Eryaman'da fiyatı birlikte netleştirelim.",
+    "Ev sahipleri için hesap araçları: TÜFE kira artışı, tapu harcı, yasal emlak komisyonu, boş kalma maliyeti. Eryaman'da fiyatı birlikte netleştirelim.",
   alternates: { canonical: "/araclar" },
 };
 
@@ -40,7 +40,7 @@ const faqItems: FaqItem[] = [
   {
     soru: "Doğru kira veya satış fiyatını nasıl belirlerim?",
     cevap:
-      "İlan sitelerindeki istenen fiyatlar tek başına yanıltıcıdır; doğru fiyat, sitenizdeki ve mahallenizdeki gerçekleşen emsallerle belirlenir. Eryaman'ın mahallelerini ve 500'den fazla sitesini tek tek takip ediyoruz. Satış ya da kiralama kararı aşamasındaysanız değerleme görüşmesiyle başlayalım: sonunda elinizde gerçekçi bir fiyat aralığı ve yol haritası olur.",
+      "İlan sitelerindeki istenen fiyatlar tek başına yanıltıcıdır; doğru fiyat, sitenizdeki ve mahallenizdeki gerçekleşen emsallerle belirlenir. Eryaman'ın mahallelerini ve sitelerini tek tek takip ediyoruz. Satış ya da kiralama kararı aşamasındaysanız değerleme görüşmesiyle başlayalım: sonunda elinizde gerçekçi bir fiyat aralığı ve yol haritası olur.",
   },
   {
     soru: "Bu hesaplayıcıların sonuçları bağlayıcı mı?",

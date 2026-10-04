@@ -47,16 +47,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        description 229→119 karakter, alıcı hitabı kalktı).
     // 20.08: "Ofisimiz" paragrafı kısa/tam cümlelere bölündü — SERP kesitindeki
     //        özne uyumsuzluğu ("yapıyor" + "veriyoruz") giderildi (Özgün bildirimi).
-    { url: `${baseUrl}/`, lastModified: g("2026-08-27"), changeFrequency: "weekly", priority: 1 },
+    // 04.10: "500'den fazla site" sayı kalıbı siteden çıktı (meta, SSS, gövde —
+    //        8 statik sayfa); footer da değişti ama o küresel boilerplate, taban
+    //        ilerletmez. Uzun statik description'lar ≤155'e çekildi.
+    { url: `${baseUrl}/`, lastModified: g("2026-10-04"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
     //        bilgi sorgusuna oynamıyoruz (Özgün kararı; 1.119 gösterim / 0 tık).
-    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-08-27")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-10-04")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
-    { url: `${baseUrl}/etaplar`, lastModified: g("2026-08-27"), changeFrequency: "weekly", priority: 0.9 },
+    { url: `${baseUrl}/etaplar`, lastModified: g("2026-10-04"), changeFrequency: "weekly", priority: 0.9 },
     /* HUB'LAR ELLE TARİHLENMEZ — aşağıdaki dördü içerik klasöründen beslenir.
      * Elle yazılan tarih bir sonraki içerik değişikliğinde sessizce bayatlıyor:
      * 08.08 ölçümünde /blog 2026-07-24 diyordu ama 07.08'de 24 yazı silinmişti,
@@ -66,18 +69,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
     { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/araclar`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/araclar`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-04"), changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
   ];
 

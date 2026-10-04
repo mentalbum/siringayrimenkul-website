@@ -23,7 +23,7 @@ const YETKI_BELGESI_NO = "0603771";
 
 export const metadata: Metadata = {
   title: "Hakkımızda — Eryaman'ın Yerel Emlak Ofisi",
-  description: `${siteConfig.name} — Etimesgut Eryaman'da satılık ve kiralık konutta uzman yerel emlak ofisi. 500'den fazla siteyi tek tek tanıyoruz; evinizi doğru fiyatla satmanız veya kiraya vermeniz için yanınızdayız.`,
+  description: `${siteConfig.name}: Eryaman'da evinizi doğru fiyatla satmanız ya da kiraya vermeniz için yanınızda olan yerel emlak ofisi. 0532 363 96 60`,
   alternates: { canonical: "/hakkimizda" },
 };
 

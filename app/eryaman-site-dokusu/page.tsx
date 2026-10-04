@@ -18,9 +18,9 @@ import { OZGUN_ID, organizationRef } from "@/lib/structured-data";
 const VERI_KESITI = "Temmuz 2026";
 
 export const metadata: Metadata = {
-  title: "Eryaman Site Dokusu Raporu — 500+ Sitenin Tapu Verisiyle Analizi",
+  title: "Eryaman Site Dokusu Raporu — Tapu Verisiyle Site Analizi",
   description:
-    "Eryaman'daki 500'den fazla konut sitesinin tapu tabanlı yapı analizi: kat mülkiyeti oranı, kat yükseklikleri, parsel büyüklükleri ve mahalle dağılımı. TKGM kayıtlarına dayalı, fiyatsız referans rapor.",
+    "Eryaman'daki konut sitelerinin tapu tabanlı yapı analizi: kat mülkiyeti oranı, kat yüksekliği, parsel büyüklüğü, mahalle dağılımı (TKGM, fiyatsız).",
   alternates: { canonical: "/eryaman-site-dokusu" },
 };
 
@@ -88,7 +88,7 @@ export default function SiteDokusuPage() {
     "@type": "Dataset",
     name: "Eryaman ve Çevresi Site Dokusu Verisi",
     description:
-      "Eryaman'daki (Etimesgut) 500'den fazla konut sitesinin tapu tabanlı yapı verisi: tapu niteliği, kat yapısı, parsel alanı, mahalle dağılımı.",
+      "Eryaman'daki (Etimesgut) konut sitelerinin tapu tabanlı yapı verisi: tapu niteliği, kat yapısı, parsel alanı, mahalle dağılımı.",
     url: `${siteConfig.url}/eryaman-site-dokusu`,
     creator: organizationRef,
     maintainer: { "@id": OZGUN_ID },
