@@ -71,3 +71,8 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
   iç trafik, GSC bağı), Bing Webmaster Tools.
 - 05.10: PR #90 son ölçümü → lib/baslik-kontrol-kolu.ts silinir.
 - 04.10 21:20 — PR #96 merge edildi (Özgün). PR #97 merge: kontrol kolu kapandı, SABLON.site 04.10.
+- 04.10 22:00 — Ağustos'tan kalma 9 açık PR karara bağlandı: MERGE #41 (harita hata sınırı + ref düzeltmesi),
+  #89 (profil defteri sayı iddiası temizliği), #84 (%90 hedefi dokümanı), #16→#98 (Anka Vega 47542/5, yeniden
+  uygulandı); KAPAT #38 (#41 kapsadı), #8 (etap Service+ItemList main'de zaten var), #32 (eski FB sayfası),
+  #83 (#89 kapsadı; sektortanitim/bulurum bulguları deftere 7a olarak taşındı), #70 (ŞFK tabela kanıtı
+  sorunlu-siteler'e taşındı). Açık PR: 0.
