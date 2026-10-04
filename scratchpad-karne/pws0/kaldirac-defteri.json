@@ -89,13 +89,14 @@
    "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı."
   },
   {
-   "durum": "acik",
+   "durum": "dogrulandi",
    "ad": "Site başlığında mahalle her kayıtta (PR #90) + 45 sayfalık kontrol kolu",
    "olcum": "04-06.09 pws=0 taraması (443 sorgu): sıralananların ~%29'unda yanlış sayfamız; çapraz-mahalle çiftler (Güzel Ankara Evleri/Sitesi, Endora Park/Eryaman, Hotki Meydan/Ritm, Park İnci/İnci Park) 09.08 sonekinin dışındaydı. Merge 06.09 15:50 (Özgün kararı). 452 başlık değişti, 70 aynı; 45 sayfa kontrol kolunda eski başlıkta (lib/baslik-kontrol-kolu.ts, 05.10'a kadar). SABLON.site ilerletilmedi. Taban: kontrol 28 ölçüm 20 doğru/5 yanlış/3 dışı; deney 257 ölçüm 164/66/27; doğal düzelme ~%38/hafta.",
    "sonuc": "OKUMA 21.09 ve 05.10: yanlış→doğru dönüşüm oranı deney vs kontrol vs doğal taban. Tek ölçümle geri alma yok (3-4 gün sonra ikinci ölçüm + ≥0,7 fark + GSC TO düşüşü şartı). Bayat kopyalı sayfalarda etki SERP'te başlık değişmeden görülmez — raporda 'başlık SERP'te değişti mi' süzgeci.",
    "tarih": "2026-09-06",
    "n": 452,
-   "not": "Dürüst kapsam: 12'lik yanlış-sayfa listesinin yalnız 3'ünü ayrıştırır; aynı mahalle ikizleri ve eski adres vakaları başlıkla çözülmez."
+   "not": "Dürüst kapsam: 12'lik yanlış-sayfa listesinin yalnız 3'ünü ayrıştırır; aynı mahalle ikizleri ve eski adres vakaları başlıkla çözülmez.",
+   "sonuc_0410": "GSC: deney dogru-sayfa %66,9->%76,1, kontrol sabit; TO zarar yok; SERP kontrol 45/45 yerinde saydi. Kontrol kolu 04.10 kapandi (PR #97)."
   },
   {
    "durum": "olu",
@@ -137,11 +138,12 @@
   {
    "tarih": "2026-09-07",
    "ad": "PR #90 sonrasi yeniden tarama: sitemap tabani ilerletilmedigi icin 8 sayfa bekliyor",
-   "durum": "acik",
+   "durum": "dogrulandi",
    "olcum": "8 capraz-mahalle sayfasinin hicbiri 06.09 merge'unden sonra taranmadi (API denetimi 07.09 02:30). En eski hotki-meydan: 01.08.",
    "gerekce": "Baslik metni tarama tetiklemez; tek tetikleyici sitemap damgasi. SABLON.site 11.09 okumasindan sonra ilerletilecek diye bilerek geride birakildi. O tarihe kadar tek yol elle GSC istegi.",
    "risk": "Kota ~13/gun; 8 sayfa ~1 hafta. 21.09 olcumunde bu 8'in yeni baslikta olmamasi ihtimali var, okuma buna gore yapilmali.",
-   "nerede": "DIZIN-DAMLASI-31-08.md 07.09 bolumu"
+   "nerede": "DIZIN-DAMLASI-31-08.md 07.09 bolumu",
+   "sonuc_0410": "GSC: deney dogru-sayfa %66,9->%76,1, kontrol sabit; TO zarar yok; SERP kontrol 45/45 yerinde saydi. Kontrol kolu 04.10 kapandi (PR #97)."
   },
   {
    "tarih": "2026-10-04",
@@ -167,6 +169,14 @@
    "olcum": "Taban 28g (02-29.09): site_ust_sahibinden 26, phone 14, whatsapp 10; degerleme CTA olculmuyordu (~4 tahmin).",
    "sonraki_olcum": "01.11 civari: sahibinden_click konum dagilimi + degerleme_cta/1000 site goruntuleme; sonra WhatsApp'a cevirme deneyi karari",
    "nerede": "DENETIM-04-10.md Yapilanlar"
+  },
+  {
+   "tarih": "2026-10-04",
+   "ad": "Kontrol kolu kapandi, SABLON.site 04.10 (PR #97)",
+   "durum": "acik",
+   "olcum": "45 sayfa mahalleli basliga gecti; 527 site sayfasi sitemap'te 04.10 damgali",
+   "sonraki_olcum": "Deney SERP taramasi 05-06.10 geceleri (kuyruk index 60+); 01.11 GSC sorgu x sayfa tekrar",
+   "nerede": "deney-okuma-0410-gsc.md"
   }
  ]
 }

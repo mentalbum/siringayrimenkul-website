@@ -70,3 +70,4 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
 - Özgün'ün panel işleri: GBP web sitesi bağı UTM, GA4 (contact_form_submit anahtar, saklama 14 ay,
   iç trafik, GSC bağı), Bing Webmaster Tools.
 - 05.10: PR #90 son ölçümü → lib/baslik-kontrol-kolu.ts silinir.
+- 04.10 21:20 — PR #96 merge edildi (Özgün). PR #97 merge: kontrol kolu kapandı, SABLON.site 04.10.
