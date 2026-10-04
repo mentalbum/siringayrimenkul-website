@@ -75,8 +75,9 @@ export function FloatingWhatsAppButton() {
           rel="noopener noreferrer"
           onClick={() => sendGAEvent("event", "whatsapp_click", { konum: "mobil_cubuk" })}
           /* Lighthouse erişilebilirlik (04.10): beyaz metin #25D366 üstünde
-             kontrast 1,98 — WhatsApp'ın koyu marka yeşili #128C7E ile 3,9. */
-          className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#128C7E] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
+             kontrast 1,98; #128C7E ile 4,13 — 14px metin için AA eşiği 4,5.
+             WhatsApp'ın koyu teal'i #075E54 ile 7,1 (canlıda ölçüldü). */
+          className="flex min-h-12 cursor-pointer items-center justify-center gap-2 rounded-full bg-[#075E54] px-5 text-sm font-semibold text-white transition-transform active:scale-95"
         >
           <WhatsAppIcon className="h-5 w-5" />
           WhatsApp
