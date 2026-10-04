@@ -150,7 +150,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        FAQPage işaretlemesinde duruyordu ve bilgi arayanı çekiyordu.
     // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
     //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
-    mahalle: new Date("2026-08-17"),
+    // 04.10: meta description 236–266 → ≤150 karakter, telefon sonda ve
+    //        kesilmez (11 sayfanın SERP'te görünen metni; 15.08(b) site emsali).
+    mahalle: new Date("2026-10-04"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);

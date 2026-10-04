@@ -57,8 +57,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
    * ("(Yeni Batı bölgesi)"), yani Cumhuriyet/Yeni Batı hedefi kaybolmuyor. */
   const baslikIsim = mahalle.isim;
   const siteSayisi = getSitelerByMahalle(mahalle.slug).length;
-  const sitelerParcasi =
-    siteSayisi > 0 ? `${siteSayisi} site ve rezidansı tek tek tanıyor` : "siteleri tek tek tanıyor";
 
   return {
     // "Fiyatları" kelimesi bilerek yok: sayfada fiyat rakamı vermiyoruz (proje
@@ -102,7 +100,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: {
       absolute: `${baslikIsim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
-    description: `${mahalle.isim} emlakçı arayanlara Eryaman'ın yerel ofisi Şirin Gayrimenkul${alias ? ` (${alias} bölgesi)` : ""}: ${mahalle.isim}'ndeki ${sitelerParcasi}. Dairenizin güncel satış ve kira değerini ilanlardaki eski rakamlardan değil, birlikte belirleyelim.`,
+    /* 04.10 DENETİMİ: eski kalıp 11 mahallede 236–266 karakterdi; Google ~155'te
+     * (mobilde ~120) kestiği için ev sahibi çağrısı ve telefon SERP'te hiç
+     * görünmüyordu — site şablonunda 15.08'de düzeltilen hatanın aynısı.
+     * Çözüm site emsaliyle aynı: uzunluk korumalı kalıp, telefon SONDA ve
+     * hiç kesilmez; sınır aşılırsa önce alias parçası, sonra site sayısı
+     * düşer. Beklenti dürüst: bu sayfalara gelen sorgular alıcı/kiracı ve yalın
+     * site adı; Google snippet'i gövdeden yazabilir, iş "ev sahibine doğru
+     * görünsün" düzeltmesidir, trafik hamlesi değil. SABLON.mahalle ilerledi
+     * (11 sayfanın SERP'te görünen metni değişti, küresel boilerplate değil). */
+    description: (() => {
+      const tanima = siteSayisi > 0 ? `${siteSayisi} siteyi tek tek tanıyan` : "siteleri tek tek tanıyan";
+      const govde = (p: string) => `${bulunmaHali(mahalle.isim)} evinizi satmak ya da kiraya vermek istiyorsanız, ${p} emlakçınız`;
+      const kuyruk = `: ${siteConfig.phoneDisplay}`;
+      const aliasParca = alias ? ` (${alias} bölgesi)` : "";
+      const adaylar = [
+        `${govde(tanima)}${aliasParca}${kuyruk}`,
+        `${govde(tanima)}${kuyruk}`,
+        `${govde("siteleri tanıyan")}${kuyruk}`,
+      ];
+      return adaylar.find((a) => a.length <= 150) ?? adaylar[adaylar.length - 1];
+    })(),
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
     robots:
       mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
