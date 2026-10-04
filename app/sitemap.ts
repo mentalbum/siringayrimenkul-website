@@ -138,7 +138,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        ApartmentComplex numberOfAccommodationUnits değişti.
     // 27.08: Yenimahalle kaldırması footer'ı (küresel boilerplate) değiştirdi
     //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
-    site: new Date("2026-08-22"),
+    // 04.10: başlık kontrol kolu kapandı — 06.09'da 452, 04.10'da kalan 45 site
+    //        sayfasının başlığı mahalleli kurala geçti (SERP'te görünen metin).
+    site: new Date("2026-10-04"),
     // 11.08: Place JSON-LD'ye alternateName (alias'lı mahalleler) + PostalAddress
     //        eklendi — yaygın adlı mahallelerde il/ilçe ayrıştırması.
     // 10.08: başlıktan alternatif ad ve bölge eki çıkarıldı — 14 mahallenin
