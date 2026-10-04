@@ -27,7 +27,7 @@ export const metadata: Metadata = {
   // tamamı SERP'te görünüyor, marka adı H1/JSON-LD/og:site_name'de duruyor.
   title: { absolute: "Eryaman Etapları — Etap Haritası ve Site Listesi" },
   description:
-    "Eryaman'ın resmî toplu yapı listesi bulunan 1–5. etapları: her etap hangi mahallede, içinde hangi siteler var, haritada nereye düşüyor. Eryaman'da eviniz mi var? Etabınızın alıcı ve kiracı profilini birlikte konuşalım.",
+    "Eryaman'ın 1–5. etapları: her etap hangi mahallede, hangi siteler var, haritada nerede. Etabınızdaki eviniz için: 0532 363 96 60",
   alternates: { canonical: "/etaplar" },
 };
 

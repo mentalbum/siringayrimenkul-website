@@ -66,8 +66,8 @@ export default function MahallelerPage() {
             Coğrafi bağlam kaybolmuyor: "Etimesgut" başlıkta duruyor ve mahalle
             kayıtlarının uzunAciklama alanlarında geçiyor. */}
         <p className="mt-4 text-base leading-relaxed text-body">
-          Eryaman&apos;ın 11 mahallesini ve 500&apos;den fazla site ile
-          rezidansı Şirin Gayrimenkul olarak yakından tanıyoruz. Planlı etap düzeni ve
+          Eryaman&apos;ın 11 mahallesini, sitelerini ve rezidanslarını Şirin
+          Gayrimenkul olarak yakından tanıyoruz. Planlı etap düzeni ve
           metro hattıyla Ankara&apos;nın en oturmuş yerleşim bölgelerinden biri.
         </p>
         <p className="mt-3 text-sm leading-relaxed text-muted">

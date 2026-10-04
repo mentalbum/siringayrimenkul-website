@@ -16,7 +16,7 @@ import { organizationRef } from "@/lib/structured-data";
 export const metadata: Metadata = {
   title: "Eryaman'da Evimi Kiraya Vermek İstiyorum Diyorsanız — Doğru Kiracı, Doğru Kira",
   description:
-    "'Eryaman'da evimi kiraya vermek istiyorum' diyorsanız doğru yerdesiniz. Kira tespiti, kiracı eleme, sözleşme ve teslim — süreci sizin adınıza yürüten yerel emlakçınız. Aynı gün dönüş: 0532 363 96 60.",
+    "'Eryaman'da evimi kiraya vermek istiyorum' diyorsanız: kira tespiti, kiracı eleme, sözleşme ve teslim bizde. Aynı gün dönüş: 0532 363 96 60.",
   alternates: { canonical: "/eryamanda-ev-kiraya-vermek" },
 };
 
@@ -117,7 +117,7 @@ export default function KirayaVermekPage() {
           yok&quot; diyorsanız doğru yerdesiniz. Kiraya vermenin iki büyük riski vardır: yanlış kira ve yanlış kiracı. İlki evinizi
           aylarca boş bekletir, ikincisi yıllarca uğraştırır. Eryaman&apos;ın{" "}
           <Link href="/siteler" className="font-semibold text-gold-dark hover:underline">
-            500&apos;den fazla sitesini
+            sitelerini
           </Link>{" "}
           tek tek tanıyan yerel ofis olarak ikisini de sizin adınıza yönetiyoruz. (Taşınmaz
           Ticareti Yetki Belgesi No: 0603771)
