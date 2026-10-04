@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
 import { InViewport } from "@/components/maps/in-viewport";
+import { MapErrorBoundary } from "@/components/maps/map-error-boundary";
 import type { EtapMapItem } from "@/components/maps/etap-map";
 
 const EtapMap = dynamic(
@@ -16,8 +17,10 @@ interface EtapMapLoaderProps {
 
 export function EtapMapLoader({ items }: EtapMapLoaderProps) {
   return (
-    <InViewport>
-      <EtapMap items={items} />
-    </InViewport>
+    <MapErrorBoundary>
+      <InViewport>
+        <EtapMap items={items} />
+      </InViewport>
+    </MapErrorBoundary>
   );
 }

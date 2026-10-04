@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import type { Mahalle } from "@/lib/types";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
 import { InViewport } from "@/components/maps/in-viewport";
+import { MapErrorBoundary } from "@/components/maps/map-error-boundary";
 
 const RegionMap = dynamic(
   () => import("@/components/maps/region-map").then((mod) => mod.RegionMap),
@@ -16,8 +17,10 @@ interface RegionMapLoaderProps {
 
 export function RegionMapLoader({ items }: RegionMapLoaderProps) {
   return (
-    <InViewport>
-      <RegionMap items={items} />
-    </InViewport>
+    <MapErrorBoundary>
+      <InViewport>
+        <RegionMap items={items} />
+      </InViewport>
+    </MapErrorBoundary>
   );
 }

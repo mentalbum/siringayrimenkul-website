@@ -5,6 +5,7 @@ import type { Koordinat } from "@/lib/types";
 import type { SiteMapEntry } from "@/components/maps/mahalle-map";
 import { MapSkeleton } from "@/components/maps/map-skeleton";
 import { InViewport } from "@/components/maps/in-viewport";
+import { MapErrorBoundary } from "@/components/maps/map-error-boundary";
 
 const MahalleMap = dynamic(
   () => import("@/components/maps/mahalle-map").then((mod) => mod.MahalleMap),
@@ -25,13 +26,17 @@ export function MahalleMapLoader({
   parseleOdakla,
 }: MahalleMapLoaderProps) {
   return (
-    <InViewport>
-      <MahalleMap
-        center={center}
-        mahalleBoundary={mahalleBoundary}
-        siteler={siteler}
-        parseleOdakla={parseleOdakla}
-      />
-    </InViewport>
+    // Sınır en dışta: modülün geç yüklenmesi de, haritanın kendisi de aynı
+    // kutunun içinde kalsın (gerekçe: map-error-boundary.tsx).
+    <MapErrorBoundary>
+      <InViewport>
+        <MahalleMap
+          center={center}
+          mahalleBoundary={mahalleBoundary}
+          siteler={siteler}
+          parseleOdakla={parseleOdakla}
+        />
+      </InViewport>
+    </MapErrorBoundary>
   );
 }
