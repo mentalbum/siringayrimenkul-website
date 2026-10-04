@@ -456,9 +456,9 @@ export default async function MahallePage({ params }: Props) {
           >
             WhatsApp&apos;tan Yazın
           </TrackedCtaLink>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="outline">
+          <TrackedCtaLink href={siteConfig.sahibindenUrl} gaEvent="sahibinden_click" gaParams={{ konum: "mahalle" }} openInNewTab variant="outline">
             sahibinden.com&apos;daki İlanlarımız
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
         {/* Rakamsız fiyat modülü (SERP ölçümü: portalların üstünlük bloğu fiyat
             istatistiği; bizim kuralımız rakam yazmamak — cevap "fiyatı ne

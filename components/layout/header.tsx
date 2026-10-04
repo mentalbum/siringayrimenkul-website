@@ -5,7 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { sendGAEvent } from "@/lib/ga";
 import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
-import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { CloseIcon, MenuIcon, PhoneIcon } from "@/components/ui/icons";
 
 
@@ -90,9 +90,9 @@ export function Header() {
             <PhoneIcon className="h-4 w-4" />
             {siteConfig.phoneDisplay}
           </a>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="primary">
+          <TrackedCtaLink href={siteConfig.sahibindenUrl} gaEvent="sahibinden_click" gaParams={{ konum: "header" }} openInNewTab variant="primary">
             İlanlarımız
-          </CtaButton>
+          </TrackedCtaLink>
         </div>
 
         <button
@@ -161,14 +161,15 @@ export function Header() {
               <PhoneIcon className="h-5 w-5" />
               {siteConfig.phoneDisplay}
             </a>
-            <CtaButton
+            <TrackedCtaLink
               href={siteConfig.sahibindenUrl}
-              external
+              gaEvent="sahibinden_click" gaParams={{ konum: "header_mobil_menu" }}
+              openInNewTab
               variant="primary"
               className="w-full"
             >
               İlanlarımız
-            </CtaButton>
+            </TrackedCtaLink>
           </div>
         </div>
       )}

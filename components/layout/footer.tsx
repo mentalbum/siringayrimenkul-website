@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { hizmetNav, mainNav, siteConfig } from "@/lib/site-config";
 import { getAllEtaplar, getAllMahalleler, getYayindaMahalleler } from "@/lib/content";
-import { CtaButton } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { TrackedLink } from "@/components/ui/tracked-link";
 import {
   FacebookIcon,
@@ -145,7 +145,7 @@ export function Footer() {
               <PhoneIcon className="h-4 w-4 shrink-0 text-gold" />
               <TrackedLink
                 href={siteConfig.whatsappUrl}
-                gaEvent="whatsapp_click"
+                gaEvent="whatsapp_click" gaParams={{ konum: "footer" }}
                 openInNewTab
                 className="hover:text-gold"
               >
@@ -156,9 +156,9 @@ export function Footer() {
               Pzt–Cmt 09:00–19:00 · Paz 09:00–17:00
             </li>
           </ul>
-          <CtaButton href={siteConfig.sahibindenUrl} external variant="primary" className="mt-5">
+          <TrackedCtaLink href={siteConfig.sahibindenUrl} gaEvent="sahibinden_click" gaParams={{ konum: "footer" }} openInNewTab variant="primary" className="mt-5">
             İlanlarımız — sahibinden.com
-          </CtaButton>
+          </TrackedCtaLink>
           <div className="mt-5 flex items-center gap-3">
             <a
               href={siteConfig.yandexMapsUrl}

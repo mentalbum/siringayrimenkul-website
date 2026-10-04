@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { TrackedLink } from "@/components/ui/tracked-link";
+import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import Link from "next/link";
 import {
   getAllBlogPosts,
@@ -301,14 +302,14 @@ export default function HomePage() {
             </Link>{" "}
             hizmeti sunuyoruz; talep eden müşterilerimiz için 3D sanal tur da çekiyoruz. Güncel
             ilanlarımız{" "}
-            <a
+            <TrackedLink
               href={siteConfig.sahibindenUrl}
-              target="_blank"
-              rel="noopener noreferrer"
+              gaEvent="sahibinden_click" gaParams={{ konum: "anasayfa_metin" }}
+              openInNewTab
               className="font-semibold text-gold-dark hover:underline"
             >
               sahibinden.com mağazamızda
-            </a>
+            </TrackedLink>
             . (Taşınmaz Ticareti Yetki Belgesi No: 0603771)
           </p>
           {/* Tam mahalle adları bilinçli ("Göksu Mahallesi", kırpılmış "Göksu"
@@ -400,14 +401,14 @@ export default function HomePage() {
               return (
                 <Reveal key={ozellik.baslik} delay={i * 70} className="h-full">
                   {ozellik.dis ? (
-                    <a
+                    <TrackedLink
                       href={ozellik.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      gaEvent="sahibinden_click" gaParams={{ konum: "anasayfa_kart" }}
+                      openInNewTab
                       className={kartSinif}
                     >
                       {kartIcerik}
-                    </a>
+                    </TrackedLink>
                   ) : (
                     <Link href={ozellik.href} className={kartSinif}>
                       {kartIcerik}
@@ -569,9 +570,9 @@ export default function HomePage() {
             <CtaButton href="/iletisim" variant="primary">
               Bize Ulaşın
             </CtaButton>
-            <CtaButton href={siteConfig.sahibindenUrl} external variant="outline-light">
+            <TrackedCtaLink href={siteConfig.sahibindenUrl} gaEvent="sahibinden_click" gaParams={{ konum: "anasayfa_banner" }} openInNewTab variant="outline-light">
               İlanlarımız
-            </CtaButton>
+            </TrackedCtaLink>
           </CtaBanner>
         </Reveal>
       </section>
