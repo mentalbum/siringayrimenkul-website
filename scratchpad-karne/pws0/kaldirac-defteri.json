@@ -159,6 +159,14 @@
    "gerekce": "Iki curutucu birbirini yikti: 'zarar yok/mevsimsel' ve 'once basladi' ikisi de curudu.",
    "sonraki_olcum": "11.10 civari: gunluk seri (denetim-0410/gsc-gunluk.mjs kalibi) 24.09 oncesi/sonrasi + deney/kontrol kolu",
    "nerede": "DENETIM-04-10.md"
+  },
+  {
+   "tarih": "2026-10-04",
+   "ad": "Donusum olcumu kuruldu: sahibinden_click + degerleme_cta (PR #92)",
+   "durum": "acik",
+   "olcum": "Taban 28g (02-29.09): site_ust_sahibinden 26, phone 14, whatsapp 10; degerleme CTA olculmuyordu (~4 tahmin).",
+   "sonraki_olcum": "01.11 civari: sahibinden_click konum dagilimi + degerleme_cta/1000 site goruntuleme; sonra WhatsApp'a cevirme deneyi karari",
+   "nerede": "DENETIM-04-10.md Yapilanlar"
   }
  ]
 }

@@ -54,3 +54,19 @@ Lighthouse mobil ana 80/96/100/100, site sayfası 97/96/100/100; TTFB 0,17–0,2
 ## Zamanlama
 05.10: PR #90 son ölçümü → lib/baslik-kontrol-kolu.ts silinir → kod PR'ları (3,4,5,8) ondan sonra.
 PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün kararı.
+
+## Yapılanlar (04.10 akşamı, Özgün "sırayla sen yap" kararı)
+- PR #91 merge (24 sayfa ikinci paragraf + şablonda \n\n paragraf bölme).
+- PR #92 merge — sahibinden_click + konum (10 bağ), degerleme_cta + konum (site_ust/site_banner),
+  footer/iletişim WhatsApp konum; karne betikleri iki olayın toplamını okur. Yerelde dataLayer doğrulandı.
+- PR #93 merge — mahalle meta description ≤150 (118–145), telefon sonda; SABLON.mahalle 04.10.
+- PR #94 merge — güvenlik başlıkları (nosniff, frame-ancestors, referrer, permissions; proxy 410'da da),
+  ana sayfa hero paragrafı animasyonsuz (LCP), mobil WhatsApp düğmesi #128C7E. Canlıda başlıklar ve
+  harita (Tunahan, 69 tile, konsol temiz) doğrulandı.
+- PR #95 merge — Isı Kent/Yeni Isıkent gövde yazımı, Aliş isim, Endora Göksu/Park Yeni Batı temizliği; lastmod.
+- PR #96 AÇIK, merge EDİLMEDİ (Özgün kararı): "500'den fazla site" 14 konum + 6 statik description ≤155.
+- Yapılmadı: Göde/Gölde (tabela doğrulaması Özgün'de); site CTA'sını WhatsApp'a çevirme deneyi (önce
+  ölçüm, 4 hafta sonra karar); llms.txt dinamik sayaç (15.08 kararı gereği duruyor).
+- Özgün'ün panel işleri: GBP web sitesi bağı UTM, GA4 (contact_form_submit anahtar, saklama 14 ay,
+  iç trafik, GSC bağı), Bing Webmaster Tools.
+- 05.10: PR #90 son ölçümü → lib/baslik-kontrol-kolu.ts silinir.
