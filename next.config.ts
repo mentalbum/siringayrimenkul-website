@@ -1,6 +1,23 @@
 import type { NextConfig } from "next";
 
+// 04.10 denetimi: yanıtlarda yalnız HSTS vardı. Dört temel güvenlik başlığı
+// her yola basılır. X-Frame-Options bilerek YOK: CSP frame-ancestors onun
+// yerini aldı, ikisi birden gereksiz. Tam CSP (script-src/connect-src)
+// gtag + maps.googleapis + satır içi bootstrap yüzünden nonce altyapısı
+// ister — ayrı iş. Referrer-Policy tarayıcı varsayılanıyla aynı; Google
+// Maps API anahtarının yönlendiren kısıtı origin'le çalıştığı için harita
+// bozulmaz. proxy.ts'nin 410 yanıtı bu listeyi kendi başlıklarıyla taşır.
+export const GUVENLIK_BASLIKLARI = [
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Content-Security-Policy", value: "frame-ancestors 'self'" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=()" },
+];
+
 const nextConfig: NextConfig = {
+  async headers() {
+    return [{ source: "/:path*", headers: GUVENLIK_BASLIKLARI }];
+  },
   images: {
     // Logo/görseller dosya adı değişmeden güncellenmez — tarayıcı önbelleği 31 gün.
     minimumCacheTTL: 2678400,
