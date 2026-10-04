@@ -142,6 +142,23 @@
    "gerekce": "Baslik metni tarama tetiklemez; tek tetikleyici sitemap damgasi. SABLON.site 11.09 okumasindan sonra ilerletilecek diye bilerek geride birakildi. O tarihe kadar tek yol elle GSC istegi.",
    "risk": "Kota ~13/gun; 8 sayfa ~1 hafta. 21.09 olcumunde bu 8'in yeni baslikta olmamasi ihtimali var, okuma buna gore yapilmali.",
    "nerede": "DIZIN-DAMLASI-31-08.md 07.09 bolumu"
+  },
+  {
+   "tarih": "2026-10-04",
+   "ad": "GBP web sitesi bagi UTM'siz (18.08'den beri) - kanal #1 olculemiyor",
+   "durum": "acik",
+   "olcum": "GA4 sessionMedium=gbp: W31 14, W32 14, W33 4, sonra 7 hafta 0. GSC /?utm_source=google&utm_medium=gbp 481 gos -> 0.",
+   "gerekce": "Site tarafi temiz (UTM'li adres 200, yonlendirme yok) -> GBP kaydinda bag degismis. GBP > satis > web onceligi varken kanal #1 kor.",
+   "nerede": "DENETIM-04-10.md #1; Ozgun GBP paneli"
+  },
+  {
+   "tarih": "2026-10-04",
+   "ad": "Eylul 2026 spam update etkisi KARARSIZ",
+   "durum": "acik",
+   "olcum": "Yasayan sayfalar 24.09'da 2.211->1.870 gos/gun; 30.09 ikinci dalga veride yok (son veri 29.09).",
+   "gerekce": "Iki curutucu birbirini yikti: 'zarar yok/mevsimsel' ve 'once basladi' ikisi de curudu.",
+   "sonraki_olcum": "11.10 civari: gunluk seri (denetim-0410/gsc-gunluk.mjs kalibi) 24.09 oncesi/sonrasi + deney/kontrol kolu",
+   "nerede": "DENETIM-04-10.md"
   }
  ]
 }
