@@ -263,8 +263,8 @@ Bu fikri yeniden açan oturum önce bu bölümü okusun.
 Rehber açıklama metni (iki dizin için ortak):
 
 Eryaman emlakçısı Şirin Gayrimenkul: Etimesgut Eryaman bölgesinde satılık ve
-kiralık konut danışmanlığı. 500'den fazla site ve rezidansın tapu, ada-parsel
-ve blok kaydını tutan yerel ofis. Ev sahiplerine satış ve kiralama sürecinde
+kiralık konut danışmanlığı. Buradaki siteleri blok blok tanıyan yerel ofis
+(sayı iddiası yasağı, 04.09). Ev sahiplerine satış ve kiralama sürecinde
 uçtan uca destek. Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
 **E-POSTA TASLAĞI 1 — bilgi@sektortanitim.com (Özgün gönderecek):**
