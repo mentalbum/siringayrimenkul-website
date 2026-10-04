@@ -76,3 +76,7 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
   uygulandı); KAPAT #38 (#41 kapsadı), #8 (etap Service+ItemList main'de zaten var), #32 (eski FB sayfası),
   #83 (#89 kapsadı; sektortanitim/bulurum bulguları deftere 7a olarak taşındı), #70 (ŞFK tabela kanıtı
   sorunlu-siteler'e taşındı). Açık PR: 0 (#4 de kapatıldı — üç düzeltmesi başka yoldan girmişti).
+- 04.10 23:10 — Canlı Lighthouse (mobil, ana sayfa): performans 80→96, LCP 5,4 s→2,4 s (hero animasyonu, PR #94);
+  erişilebilirlik tek hata WhatsApp düğmesi 4,13 → PR #99 (#075E54, 7,1). Karne Version 21 yayınlandı
+  (gsc-q.mjs depoya, is-takvimi düzeltmesi). 15.10 görevi deftere: sitemap-eski-adresler kaldırma
+  (robots.ts satırı + public/sitemap-eski-adresler.xml + GSC).
