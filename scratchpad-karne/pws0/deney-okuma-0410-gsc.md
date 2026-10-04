@@ -13,7 +13,7 @@ Yalnız iki dönemde de ≥5 gösterimi olan siteler. Ham: scratchpad denetim-04
 | Önce doğru olanların bozulma oranı | 22/182 = %12 | 2/18 = %11 |
 | Gösterim-ağırlıklı doğru sayfa payı | %31,9 → %39,5 | %21,3 → %34,7 (2 siteye bağlı) |
 
-Fisher (düzelme): p ≈ 0,09 — kontrol kolu küçük (9 yanlış), tek başına kesin değil; yön ve
+Fisher (düzelme): p ≈ 0,16 — kontrol kolu küçük (9 yanlış), tek başına kesin değil; yön ve
 büyüklük müdahale lehine, bozulma iki kolda aynı (zarar yok). GSC TO okuması (04.10 denetimi):
 deney/kontrol tık kaybı aynı → başlık tıklamaya zarar vermedi.
 Kontrolde düzelen: arslanlar-sitesi, neva-panora-konutlari. Hâlâ yanlış: cumhuriyet-sitesi,
