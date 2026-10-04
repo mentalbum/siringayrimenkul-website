@@ -7,7 +7,7 @@
     "lng": 32.638933
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/sude-konutlari-boundary.geojson",
-  "aciklama": "Sude Konutları, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 24.734 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Bloktan Oluşan Kargir Apartman\". Site, Göksu'nun yerel kayıtlarda 'Havuzluevler' olarak anılan havuzlu siteler kuşağında, Polsan konutlarıyla komşu konumda yer alır. Bu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
+  "aciklama": "Sude Konutları, Göksu Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 24.734 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"14 Bloktan Oluşan Kargir Apartman\". Site, Göksu'nun yerel kayıtlarda 'Havuzluevler' olarak anılan havuzlu siteler kuşağında, Polsan konutlarıyla komşu konumda yer alır.\n\nEv sahibi açısından bunun iki pratik sonucu var. Birincisi, 14 blok tek bir parselde toplandığı ve kat mülkiyeti kurulu olduğu için emsal çoğunlukla sitenin kendi içinden çıkar; bağımsız bölümler ayrı ayrı tapulu olduğundan değeri ayrıştıran şey bloğun site içindeki konumu, kat ve cephe olur. İkincisi, aynı yerleşim 'Sude Sitesi' ve 'Polsan 2 Sude Konutları' adlarıyla da anılır, kimi kayıtlarda ise Havuzluevler kuşağı içinde geçer; talebin hangi adla geleceği baştan belli olmadığı için sunumun bu adların hepsini karşılaması önem taşır.\n\nBu sitede satılık veya kiralık daireniz mi var? Fiyatı kat, cephe ve manzara belirler — doğru fiyatı, projeyi yakından tanıyan emlakçınızla birlikte belirleyelim.",
   "adalar": [
     {
       "no": "48056",

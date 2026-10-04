@@ -741,7 +741,11 @@ export default async function SitePage({ params }: Props) {
               sahibinden.com mağazamız →
             </TrackedCtaLink>
           </p>
-          <p className="text-base leading-relaxed text-body">{site.aciklama}</p>
+          {site.aciklama.split("\n\n").map((paragraf, i) => (
+            <p key={i} className="text-base leading-relaxed text-body">
+              {paragraf}
+            </p>
+          ))}
           {site.aciklama.includes("sözlüğümüzdeki kat irtifakı maddesinde") && (
             <p className="text-sm leading-relaxed text-muted">
               İlgili terim:{" "}
