@@ -22,3 +22,12 @@ kent-konaklari, gercek-92, kosk, bulvar-312, yildiz-eryaman, palmiye-evleri.
 Karar önerisi: 05.10 sonrası lib/baslik-kontrol-kolu.ts silinir (45 sayfa da yeni kurala geçer).
 SERP taraması (aynı araçla 06.09 tabanıyla kıyas) ek okuma olarak: kontrol 45 + deney'de tabanda
 yanlış/dışı olan sayfalar.
+
+## SERP taraması 04.10 (aynı araç, pws=0, Özgün'ün Chrome'u) — kontrol kolu 41/45
+
+Taban 06.09 → 04.10: doğru 28→27, yanlış 8→8, dışı 5→6. Geçişler: yanlış→doğru 2 (Postakent,
+Özenkent 2), doğru→yanlış 2 (Bulvar 312, Neva Panora), doğru→dışı 4, dışı→doğru 3. Kontrol kolu
+dört haftada YERİNDE SAYDI — doğal taban. 5 sayfada hâlâ eski adres (/mahalleler/<slug> -mahallesi'siz)
+çıkıyor: yeni-huzur-bahcesi, gercek-92, inci-life, sitekonut, kur-sitesi.
+reCAPTCHA 41. sorguda (toplam 44 sorgu); deney kolu (174 sorgu: tabanda yanlış/dışı olanlar) ölçülmedi —
+kuyruk: deney-kuyruk-0410.json (kayıt betiği ekle-deney-0410.py; ölçülenler sonuclar-site-emlakci.jsonl kanal=deney-0410). Ertesi gece devam.
