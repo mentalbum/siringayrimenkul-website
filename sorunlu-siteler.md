@@ -198,7 +198,7 @@ llms.txt + dateModified). Kalanlar sırayla:
 
 ### Açık soru turu (2026-07-28) — 5 karar sorusu + sınırsız kayıtlar
 
-✅ **ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL.** Aynı adada komşu iki parsel:
+⚠️ **BU KART 12.08'de ÇÜRÜTÜLDÜ (Anka Vega 47542/5; 47544/2 Doğan City'nin — çözülmüş karta bak, bunu UYGULAMA).** ~~ÇÖZÜLDÜ — Pozitif Life ↔ Anka Vega dupe DEĞİL.~~ Aynı adada komşu iki parsel:
 Anka Vega 47544/2 (9.387 m², "11 katlı A + 15 katlı B + 4 katlı C blok", 4016. Cad. No:17,
 Google'da 37 yorum), Pozitif Life 47544/4 (7.268 m², "14 katlı A1+A2, ofis-işyeri", 4022. Sk).
 Anka Vega kaydına yanlışlıkla Pozitif Life'ın tapu verisi yazılmıştı; düzeltildi, sınırı da
@@ -483,9 +483,300 @@ gold-stone (23.540m²), tekirdag-park (21.949m²). → Özgün: bunlar yeni/bitm
 + ayyildiz-sitesi (44759 Şenser/Selsen çakışması) yine atlandı.
 + genova tapuda 9 katlı OFİS-İŞYERİ çıktı (konut değil) — metne öyle yazıldı.
 
-### yesilova/dogan-city + anka-vega — AYNI parsel 47544/2 (2026-07-16)
-- İki kayıt da 47544/2'de haritalı; farklı isimli iki site (paylaşım?) ya da biri komşuya
-  kaymış pin. Doğan City adresi 4016.Cd No:10 net → TKGM günü parsel/blok kontrolü.
+### ✅ ÇÖZÜLDÜ — yesilova/dogan-city + anka-vega 47544/2 çakışması (2026-08-12)
+- **Karar: 47544/2 (9.387 m², 11A+15B+4C, ofis-işyeri) = DOĞAN CITY; Anka Vega = 47542/5**
+  (4.640 m², "Ondört Katlı Betonarme Ofis Ve İşyeri", caddenin KUZEY tarafı). Anka Vega
+  kaydı+sınırı 47542/5'e taşındı; Doğan City olduğu gibi kaldı.
+- Kanıt: Etimesgut KEOS resmî numarataj zinciri (kapı→parsel): 4016.Cd **No:10→47544/2**
+  (30 kapı harfi = çarşılı büyük kompleks), **No:17→47542/5**, No:15→47542/6 (=Address
+  Yeşilova, tutarlı). TKGM doğrudan sorgu her iki parseli de teyit etti (12 Ağu, 2 istek).
+- Ders: 28 Tem'de Anka Vega'yı 47544/2'ye taşıyan "çözüm" SERP pinine dayanıyordu; Google/
+  Yandex pinleri bu şeritte caddenin yanlış tarafına kümeleniyor. 25 Tem'deki "kendi konumu
+  4016. Cadde'nin kuzeyinde" tespiti doğruydu. Pin çelişkisinde hakem = KEOS numarataj.
+
+### Susuz turu notları (2026-07-16)
+- **MA1 Tower (goksu/ma1-tower) ipucu: müteahhidi büyük olasılıkla MA1 YAPI** (Majör Göksu'nun
+  müteahhidi; hepsiemlak MA1 Yapı sayfası mevcut, geçmişi 'Neva PLAS 57 konut 2013-15') →
+  bir sonraki turda MA1 Yapı proje listesinden teyit et.
+- Lenora ailesi: 'Lenora Yaşam Konutları' + 'Lenora Nefes' iki ayrı proje; bizim lenora-goksu
+  hangisi tam netleşmedi (tek-blok/2+1-3+1 bilgisi tek IG kaynağıydı, YAZILMADI).
+- neovadi (63376, bordo-gol+paradise komşusu): veri ince, atlandı.
+
+### Devlet kalanları — parti 38 notları (2026-07-16)
+- **4-devlet-mahallesi-sitesi (18700/1): parsel tapuda '7 Katlı Betonarme OKUL, Üniversite,
+  Araştırma'** — mapping yanlış görünüyor (okul parseli); sitenin gerçek adası → Özgün/TKGM.
+- ✅ ornek-tes-is-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; ad tes-is-bloklari'na alternatifAd).
+- hotki-meydan (ADASIZ): be 18684'ü 'HOTKİ RESİDANCE' gösteriyor — ad farkı (Meydan vs Residance);
+  cumhuriyet/hotki-bulvar da ayrı. Hotki ailesi netleşmeli → Özgün.
+- 18674 'Lojman 8-A..D' (kayıt yok — lojman, kayıt açılmaz muhtemelen).
+- Devlet 18680-85/18702/18704 ada sayfaları boş.
+
+### firat-life-style-goksu-sitesi — ✅ SİLİNDİ 2026-07-17 (Özgün onayı; ad goksu-prestij'de alternatifAd)
+- be'nin 'FIRAT LİFE STYLE GÖKSU konutları' dediği 46620/3, TKGM'de '5 Katlı A Blok +
+  17'şer Katlı B,C,D,E' (15.523 m²) — goksu-prestij'in haritalı parseli ve '5 blok 192
+  konut' verisiyle birebir örtüşüyor. → firat-life-style-goksu-sitesi dosyası SİLİNMELİ
+  (Özgün onayı); 'Fırat Life Style Göksu' adı goksu-prestij'e alternatifAd yazıldı. ✔yarı-çözüldü
+- 46524/1 (Eryaman kadastro): '3 Blok Kargir Apartman', 13.908 m² — be adı 'Oyak Atakent2
+  Metro Sitesi'. atakent-metro-sitesi ile atakent-2-sitesi kayıtlarımız muhtemelen AYNI
+  sitenin iki kaydı (dupe şüphesi); atakent-metro'nun eski koordinatı da (32.6263) yanlış
+  bölgeyi gösteriyor. → Özgün: Atakent Metro = Atakent 2 mi? Onaydan sonra 46524/1 haritalanır.
+- 46662 İnci Park araması: /3 'Yedi Katlı A Blok' KAT İRTİFAKI (muhtemelen be'deki 'İnşaat
+  A/B' blokları), /1,/2,/4,/5 Arsa. İnci Park'ın 20A/B/C blokları 46662'nin kalan
+  parsellerinde olabilir ya da be konumu yaklaşık → çözülemedi, inci-park 46623/4'te kaldı.
+- zekioglu-rezidans (46657/1): parsel tapuda ARSA (kat irtifaklı) — bina pini şüpheli;
+  be 46657'yi 'Neva Prestige Metro Rezidens' (yeni proje) gösteriyor. → Özgün.
+
+### Mega dalga D-2 ipuçları (2026-07-15, Yeni Batı + Göksu kentsel gelişim taraması)
+- **firat-life-style-goksu-sitesi'nin evi bulundu: be 46620'yi 'FIRAT LİFE STYLE GÖKSU
+  konutları' gösteriyor** — relax-goksu (46622) mükerrer şüphesi YANLIŞmış, ayrı site!
+  AMA 46620 bizde gode-yasam-konutlari'na haritalı → gode-yasam pini şüpheli;
+  TKGM günü 46620 parselleri incele, firat-life-style'ı haritala, gode-yasam'ı araştır.
+- zekioglu-rezidans (46657): be aynı adayı 'Neva Prestige Metro Rezidens 1-2.Blok'
+  gösteriyor (Neva Prestij bizde 46643'te, müteahhit PDF'iyle) → Neva'nın 2. parseli mi,
+  zekioglu pini mi yanlış? Özgün/TKGM.
+- siyah-beyaz-evler (44781): be 'Adfa İnş. 1. Blok' gösteriyor → teyit gerekli.
+- Çıplak ada sayfaları (blok döküsüz): Yeni Batı 62xxx modern projeleri ve Susuz 63xxx
+  kentsel dönüşüm adaları be'de içeriksiz — bu ~60 kayıt Google/proje portalı yolu istiyor.
+
+### Mega dalga D — şüpheliler + ipuçları (2026-07-15, be ada sayfaları taraması)
+İPUÇLARI (kota günü işlenecek):
+- **atakent-metro: be 6-etap sayfası 'Oyak Atakent2 Metro Sitesi 46524 Ada' diyor** —
+  eski aday 46530 değil! TKGM'de 46524 sorgula, haritala.
+- **inci-park-evleri-sitesi: be 46662'de 'İnci Park Evleri 20A/B/C' gösteriyor** —
+  46623/4 çakışma sorusunun cevabı bu olabilir; TKGM günü 46662 kontrol.
+ŞÜPHELİLER — 2026-07-17 gece BÜYÜK TEMİZLİK: Yandex pinleri 8 şüphelinin TAM parselimizin
+içine düştü → mapping'ler bağımsız doğrulandı, tapu verisiyle zenginleştirildi (be'nin farklı
+ad göstermesi metne yazılmadı, aşağıda not olarak duruyor):
+✔ ayyildiz (44759/1, 6 blok 10-11 katlı KM) — be'nin 'Akgüner KYK+Selsen' iddiası nota düştü.
+✔ ilbeyi (45890/2, 2 blok) — be 'İlbeyli→Doktorlar' bağlantısı Özgün'e soru olarak kalabilir.
+✔ vizyon-prestige (45898/3, 16 katlı, tapu OFİS/rezidans Kİ) + ✔ mood-street (45898/2,
+  14+4 katlı, tapu OFİS/rezidans KM) — Söğüt Cad ticari koridoru; dürüst rezidans formatı.
+✔ beyaz-residence (45794/15, 11 katlı KM) — be 'Tertipler/Tusun' notu arşive.
+✔ gencler-sitesi (45926/4, 17 katlı KM) — be 'Gerim' adı → Gençler=Gerim mi? Özgün (metinde yok).
+✔ goksu-bilge (46457/1 paylaşımlı) + ✔ city-life (CUMHURİYET dosyası; 62658/2, A12+B13 KM).
+KALAN ŞÜPHELİLER (Yandex'te de yok / çözümsüz):
+- SOA/tan-yildizi (46662), yazici-modern (46664): hiçbir kaynakta yok.
+- zekioglu-rezidans (46657), sky-goksu, yildiz-life, merkez-sitesi (Yandex: Merkez yalnız
+  Ahi Mesut'ta ×3 — bizim kayıt muhtemelen yanlış/bölge dışı), angora-goksu (Yandex: yalnız
+  Yapracık) — Özgün.
+- ata/eser-yapi, genova, gold-life, panorama ×3, siyah-beyaz, twin-towers, armoni-life,
+  atasehir (46412 'İnşaat'), endora-plus: ada sayfalarında blok dökümü yok.
+- ✅ Şehr-i Huzur Gold = ASM Gold Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün StreetView tabela kanıtı; birleştirildi, sehr-i-huzur-gold silindi).
+- ✅ Şehr-i Huzur Prestij = ASM Prestij Urhal ÇÖZÜLDÜ 2026-07-17 (Özgün onayı; be 18-A/18-B + tapu '9 Katlı A Ve B Blok' örtüştü; dosya asm-prestij-konutlari olarak yeniden adlandı, eski ad alternatifAd, tapu alıntısıyla zenginleştirildi).
+- eryaman/beyaz-residence (45794): be 'Tertipler/Tusun Apt' gösteriyor, Beyaz yok.
+✅ elif-elvan ÇÖZÜLDÜ 2026-07-17 (Özgün: 'Seyitoğulları ile aynı site'): 46383/1'de kaldı, tapu quote + altAd yazıldı. (Elif Özgen 46384 AYRI — yeni aday.)
+- eryaman/gencler-sitesi (45926): be 'Gerim Sitesi' gösteriyor.
+- seyh-samil/acar-sitesi (46267): be 'Gülistan Apt.4-A' gösteriyor (Acar A-C-D bekleniyordu).
+- SOA/cumhuriyet-sitesi (17491): be adayı Kutlutaş-2 kümesinde, apartmanlar İLÇE adlı
+  (Çayeli, Gebze, Havran, Kaman...) — kayıt kimliği belirsiz.
+- SOA/ahikent-sitesi (46644): be 46644'ü LALEEVLERİ gösteriyor → Ahikent mapping'i YANLIŞ şüphesi güçlendi.
+- SOA/tan-yildizi (46662), yazici-modern (46664): be listelerinde yok.
+
+### Göksu göl-kuşağı — parti 33 notları (2026-07-15)
+- merkez-sitesi + angora-sitesi 46456/1'de haritalı AMA be 46456 blok listesinde
+  Merkez/Angora YOK (liste: Ağaçlı Göl, Akdüzen, Kafdağı, Mutlu, Utkan, Uzuner, Yenigüç)
+  → pin kayması ya da be eksiği; TKGM günü + Özgün'le teyit, ikisi de zenginleştirilMEDİ.
+- goksu-bilge-sitesi de 46457'de haritalı ama be 46457 listesinde YOK (Akşafak/Gölkent2/Havacılar/Utkan var) → aynı şüphe grubunda.
+- golkent-sitesi (ADASIZ): be'de 'Gölkent' (46455 = bizim golkent-1) ve 'Gölkent 2'
+  (46457, bloklar 7-5/7-6) var → golkent-sitesi hangisi? Gölkent 2 mi, golkent-1 dupe mu?
+- YENİ SİTE ADAYLARI (repo'da yok): Eceser (46453), Göksu Aura (46453, 3/3A),
+  Utkukent (46453-46454, Çınar/Kardelen apt), Hava Destek (46455, 5-5/5-6),
+  Akdüzen (46456, 5A/5B), Kafdağı (46456, 1B), Uzuner (46456, 5D — altay/uzuner-konutlari
+  ilişkisi?), Gölkent 2 (46457) → Özgün: kayıt açılsın mı?
+- Tamamlama kuyruğu (TKGM günü, 5 sorgu): 46453/1, 46454/1, 46455/1, 46456/1, 46457/1
+  alan+nitelik → 10 site metnine eklenebilir. goksu-arma sınırı goksu-evleri kopyası
+  (aynı parsel varsayımı) — TKGM günü 46454/1 geometrisiyle çapraz kontrol.
+
+### Türkonut Göl Bölgesi — parti 32 notları (2026-07-15)
+- YENİ SİTE ADAYLARI (repo'da yok, be ada sayfalarında var): İlksebat Sitesi (46486'da
+  10/12/14 blokları), Yuvam Başar Sitesi (46489'da 59-4/59-5) → Özgün: kayıt açılsın mı?
+- serender-sitesi bizde 46487/5'te haritalı; be Serender'in 8+10 bloklarını 46488'de
+  gösteriyor → parsel teyidi (yarın TKGM 46487/5 + gerekirse düzeltme).
+- Tamamlama kuyruğu (yarın 5 sorgu): 46486/2, 46488/2, 46489/1, 46491/2, 46487/5
+  alan+nitelik çek → 17 site metnine ada alan cümlesi eklenebilir (rakamsız kurala uygun).
+
+### SUSUZ modern küme — dikkatli araştırma günü gerek (2026-07-15 ön izleme)
+- sky-goksu: Galaxy Yapı projesi ('Ödüllü SKY-B', 1+1/2+1/3+1, İNŞAAT SÜRÜYOR); bir IG
+  kaynağı 'Yukarıyurtçu Mahallesi' diyor ama bizim kayıt Susuz'da haritalı → mahalle/kayıt
+  teyidi şart. Ayrıca 'Galaxy Göksu' (2 blok 16 kat 126 daire 4+1) AYRI proje — karıştırma.
+- goksu-marina: Arus Grup; 'Göksu Marina 2' etabı DEVAM EDEN inşaat (konutradar) —
+  bizim kayıt 1. etap mı, hangi etap haritalı? Etap ayrımı yapılmadan zenginleştirme yok.
+- Devam eden projelerde sayılar lansmanla değişebiliyor — teslim edilmişleri önceliklendir.
+
+### 3. ETAP KUYRUĞU — kota doldu, yarına hazır analiz (2026-07-15)
+TKGM kotası bu kümenin başında bitti (173xx sorguları FAIL = kota, kayıt yokluğu DEĞİL).
+mahalleId de belirsiz (124123 Eryaman değil; Şeker 124128 de değil — nokta sorgusuyla keşfet:
+tekser koordinatı 39.997848/32.624475). bilgiemlak 3-etap-44 küme analizi HAZIR:
+- tekser-bloklari (SŞ): 6 ada DOSYADA TAM (17322-27) → sadece TKGM sayım + zenginleştirme.
+- tepe-bloklari (SŞ): dosyada 17335; küme 17333-37, diğer 4 ada SAHİPSİZ → tepe'ye eklenebilir (QA kontrolüyle).
+- ictas-bloklari (SŞ): ADASIZ duruyor; be 3.Etap İçtaş = 17346-50 (5 ada, tümü sahipsiz).
+  ESKİ 'SOA ictas dupe' ŞÜPHESİ YANLIŞ ÇIKTI — SOA İçtaş 17498 AYRI. Bu dosya 3.Etap İçtaş
+  olarak haritalanmalı (5 ada + koordinat + sınır) + zenginleştirilmeli. Silme listesinden ÇIKAR.
+- ✅ alarko-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; ad alarko-bloklari'na alternatifAd; kümenin 6 sahipsiz adası hâlâ genişletmeye açık)
+- eston-bloklari (17342) + camlica-sitesi (17341): be 'Eston 2' kümesi 17338-42 içinde;
+  17338-40 sahipsiz. eston-2-sitesi (ADASIZ dosya) muhtemelen bu kümenin asıl kaydı →
+  eston-bloklari ile mükerrer mi? Özgün. Çamlıca ayrı site (Çamlık/Çiçek deseni).
+- Eston 1 kümesi (17328-32, 5 ada) ve Yardımcı-3Etap (17321,17343-45,17358) ve
+  Sutek-3Etap (17352-54): repo'da karşılık kaydı YOK görünüyor — Özgün'e sor
+  (yeni kayıt mı açılmalı, başka adla mı varlar?).
+
+### SOA İntes kümesi — be gruplaması kaba (2026-07-15, QA kapısı yakaladı)
+- bilgiemlak 'İntes Blokları' 4 ada gösteriyor (17468-71) ama 17470 = bizim
+  camlik-sitesi, 17471 = cicek-sitesi. İntes kaydına eklemiştim, QA çakışma verdi
+  → GERİ ALINDI; İntes 17468+17469 ile kaldı.
+- Muhtemelen İntes yapımcı firmanın kümesi; Çamlık/Çiçek o kümede ayrı adlandırılmış
+  siteler. Çamlık/Çiçek zenginleştirilirken bu bağ metne yazılabilir (TKGM verileri
+  hazır: 17470 = 5 apt 6.276 m², 17471 = 5 apt 6.751 m²).
+
+### SOA İçtaş-Kazım Sarı kümesinin sahipsiz 3 adası (2026-07-15)
+- bilgiemlak 'İçtaş, Kazım Sarı Blokları' kümesinde 4 ada gösteriyor: 17480 (7 apt),
+  17481 (9 apt), 17482 (6 apt), 17498 (6 apt = bizim ictas kaydı).
+- Bizim kazim-sari-sitesi ise 17483'te (4 kârgir apt — be kümesinde YOK).
+- 17480/81/82 (toplam 22 apartman) hangi kayda ait? İçtaş'ın mı, Kazım Sarı'nın mı,
+  ayrı bir site mi? → Özgün'e sor; şimdilik iki kayıt kendi tek adasıyla zenginleştirildi.
+
+### tunahan/kur — ✅ ÇÖZÜLDÜ 2026-07-17 (Özgün: iki kayıt 'Kur Sitesi 46495 Ada' + 'Kur Sitesi 46496 Ada' olarak adlandırıldı; jenerik kopya kaldırıldı)
+- kur-sitesi (46496/2) ile kur-sitesi-c2b-2h (46496/2) AYNI ada/parseli taşıyor;
+  bilgiemlak Kur Blokları'nı tek yerleşim, iki ada (46495+46496) olarak gösteriyor.
+- C1B-2K ve C2B-2H kayıtları zenginleştirildi; jenerik "kur-sitesi" muhtemelen silinmeli
+  ya da iki grubun çatı kaydı olarak mı kalmalı? → Özgün onayı.
+
+### devlet/cagkent-sitesi — tapu niteliği "Tarla" (2026-07-15)
+- 18673/1 TKGM'de nitelik "Tarla" + Kat İrtifak (15.885 m²) — binalar var ama cins tashihi
+  yapılmamış görünüyor. Metne nitelik/kat mülkiyeti YAZILMADI, sadece alan verildi.
+- Özgün'e bilgi: bu sitede satışta tapu cinsi sorusu gelebilir (arsa tapulu kat irtifakı).
+
+
+### devlet/arslanlar + cagrikent — AYNI ADA ÇAKIŞMASI (2026-07-14)
+- İki dosya da 18679 adasını iddia ediyor; bilgiemlak 18679'u "Arslanlar Sitesi" gösteriyor.
+- Çağrıkent'in gerçek adası TKGM/başka kaynakla bulunmadan ikisi de zenginleştirilmedi.
+- Devlet'te ayrıca bekleyen TAM eşleşmeler (sıradaki partiler): eryaman-royal-city↔"Royal"
+  (18693, takma ad!), gulhayat (18698), ikizler (18695), mavi-koy (18689), mavikent (18691),
+  mil-kooperatifi↔"Mil Koop" (18687), oray (18701), ozdenizyildizi↔"Özdeniz Yıldızı" (18705),
+  sari-cinar↔"Sarıçınar" (18692), selcuklu (18690), sergah-evleri↔"Eryaman Sergah" (18675),
+  turgut-aslan (18694), yeni-huzur-bahcesi (18677), yesiloz↔"Yeşil Öz" (18686),
+  yildiz-tatil (18706). Tunahan'da da 7 TAM eşleşme var.
+
+### Parti 21 kayıt tamamlama — ✅ TAMAMLANDI 2026-07-15 (6/6 TKGM doğrudan uç noktayla doğrulandı; adalar+koordinat+sınır+alan/nitelik yazıldı)
+altay (18519), gulsah-95 (18518), sirin-91 (18653), yenigun-isigi (18465),
+yesil-guven-kent (18490), yesimkent (18520) — dosyalarda adalar/koordinat alanı YOK;
+TKGM açılınca 124123/{ada}/1 ile doğrula → adalar + koordinat (merkez) + sınır GeoJSON üret,
+açıklamaya alan+nitelik cümlesi ekle.
+
+### Çift-adalı / belirsiz eşleşmeler — 2026-07-16 KISMEN ÇÖZÜLDÜ
+✔ gozde-91: 18641+18642 haritalandı (iki parselde 6'şar blok, toplam 12, ~9.972 m²).
+✔ ozuguzelkent: +18665 eklendi (iki parselde 6'şar blok, toplam ~10.307 m²).
+✔ aksu: 18512 doğrudan sorguyla haritalandı (6 blok=8/8A-8E, 5.072 m²) + zenginleşti.
+✔ baskent-sular: 18477 haritalandı — tapu 'A ve B Blok 14 KATLI' ikiz kule! + zenginleşti.
+✅ 18679/1 = ARSLANLAR KESİNLEŞTİ (Özgün 2026-07-17: önce Çağrıkent sandı, sonra 'pardon,
+  Arslanlar'mış' diye düzeltti; be etiketi doğruymuş). Google'ın 'Çağrıkent' pini YANLIŞ konumda.
+  Çağkent (18673) ayrı site (Özgün). cagrikent-sitesi SİLİNDİ (Özgün 2026-07-17: 'Çağrıkent yok' — Google kaydı hayaletti).
+KALAN (Özgün/ek kaynak):
+✔ gozde-1=18651 (bloklar 8/8A-8E), gozde-2=18652 (10 ailesi) — be blok sayfaları
+  (gozde-1-sit-18651-ada-8-blok-4948 vb.) 2026-07-17 kanıtladı; haritalandı+zenginleşti, Özgün'e sorulmadı.
+✔ Şeniz ÇÖZÜLDÜ 2026-07-17 (Özgün be kroki kanıtı): TEK site, A1-A3 (18516) + B1-B3 (18517);
+  seniz-konut-kooperatifi silindi (alternatifAd olarak seniz-sitesi'nde), haritalandı+zenginleşti.
+- 18519 ad çelişkisi (be kroki 'AKKONAK KENT' vs be sayfa 'Altay Sitesi'): Özgün 2026-07-17
+  'karıştırma, atla' dedi → kayıt Altay Sitesi olarak KALIR, alternatifAd eklenmez, KAPANDI.
+✔ mesa çifti ÇÖZÜLDÜ 2026-07-17 (be küme sayfaları): mesa-calisanlari-kooperatifi=18506+18507
+  (4/4A/4B + 6/6A/6B blokları); mesa-sitesi=18659-18662 (12 blok: 7F/9E/11D + G→O).
+  ÇAPRAZ DEĞİLMİŞ. Aynı gece TKGM ile 18660-62 çekildi (hepsi /1, 3'er blok KM) →
+  mesa-sitesi 4 adalı MultiPolygon sınırla TAMAMLANDI (toplam ~18.985 m²).
+✔ ipek-yapi ÇÖZÜLDÜ 2026-07-17 (Özgün: 'evet aynı yer, İpek Yapı Sitesi diye geçiyor'):
+  18476 haritalandı+zenginleşti, 'İpek Sitesi' alternatifAd.
+✔ 46544 çift-kayıt MEŞRU ÇIKTI 2026-07-17: be iki siteyi de aynı adada gösteriyor —
+  Hassas Çizgi 3 blok (A12-56/B15-54/C13-52) + Özgün İpek 4 blok (A13-44/A14-48/B16-46/C14-50)
+  = tapudaki 7 blok. İki metin de blok paylaşımına göre düzeltildi (parti 54'te ikisi de
+  parselin tamamını sahipleniyordu).
+✔ pinarkent-91 ÇÖZÜLDÜ 2026-07-17 (Özgün: 'aynı site'): 18511 haritalandı+zenginleşti (6/6A-6E blokları), 'Pınar Sitesi' alternatifAd.
+--- (eski metin) ---
+- gozde-1 + gozde-2 ↔ be "gozde-sitesi 18651-18652" (hangi dosya hangi ada? TKGM nitelik+konum ile ayrıştır)
+- gozde-91 ↔ 18641-18642 (iki ada, tek dosya — Anka 2001 tipi çoklu parsel olabilir)
+- seniz-sitesi + seniz-konut-kooperatifi ↔ 18516-18517 (iki dosya iki ada mı, tek site mi?)
+- mesa-sitesi ↔ be "mesa-cls 18506-18507(?)"; mesa-calisanlari-kooperatifi ↔ be "mesa-sitesi 18659" — adlar ÇAPRAZ, dikkat!
+- ozuguzelkent: dosyada 18664, be "18664-18665" — 18665 (anka taramasında görülen 5.212 m² 6 blok parseli) muhtemelen bunun 2. adası → teyitle ekle
+- ipek-yapi ↔ be "ipek-sitesi 18476" (ad farkı var, nitelikle teyit et)
+- pinarkent-91 ↔ be "pinar-sitesi 18511" (ad farkı büyük, temkinli)
+- portakal-cicegi ailesi: 3 dosya (portakal-cicegi, portakal-cicegi-2, 1-portakal-cicegi) ↔ be apartman "18450" + villa bölgesi "19517" — aile ayrıştırması gerekli
+
+### Güzelkent VİLLA BÖLGESİ — 2026-07-16 BÜYÜK ÇÖZÜM (YS ölü bölgesi kapandı!)
+✔ 13 Yavuz Selim dosyası doğrudan ada sorgusuyla haritalandı+zenginleşti (nokta sorgusu
+ölüydü, ada sorgusu çalıştı): doktorlar(17 dubleks), gulvatan(19), kirkayak+guz-gol(24,
+paylaşımlı 19506), kardelen(16 — Güzelkent 18453 Kardelen'den AYRI), metrokent(24),
+ozenkent-2(32), guzel-ev(38), ozharitacilar(57/2 ada), sacak-91(42), seda-terasevler(42),
+yunuskent(46, kat irtifakı), eylul-evleri(18 kârgir ev — eylul-sitesi apartman kaydından ayrı).
+KALAN SORULAR:
+- ✅ guzelkent/guz-gol-sitesi SİLİNDİ 2026-07-17 (Özgün onayı; YS villa kaydı kaldı)
+- Güzelkent klasöründeki villa dosyaları (angora, eczacilar, erenkoy, kosk, ersan,
+  renk-villalari, eryaman-renk-villalari, korukent, portakal-cicegi ailesi) be'de 19516/19517'de
+  listeleniyor AMA be bölgeyi 'Yavuz Selim Mh.' etiketliyor → mahalle ataması + paylaşımlı
+  19516 (Angora+Eczacılar+Köşk/Ersan+Renk) ve 19517 (Erenköy+Korukent+Portakal Çiçeği)
+  haritalaması Özgün onayıyla.
+- Villa bölgesinde repo'da OLMAYAN siteler: Bizim Şirinköy(19508), Karköy(19537), Keyfim(19507),
+  Korukent 91(19508), Turaykent(19526), Yeni İlkay(19508), Yükselen(19524), Serenköy(19532-33-36),
+  Göksu no:24(19505) → yeni kayıt adayları.
+- Villa indexinde 'Başkent Sular no:13-15 (19524)' var — bizim baskent-sular 18477'de (14 katlı
+  ikiz kule, be guzelkent sayfası teyitli). İKİ ayrı Başkent Sular olabilir → Özgün.
+--- (eski not) ---
+Villa bölgesi indexinde 40+ site var (Renk Villaları 19516, Erenköy 19517, Köşk-Ersan 19516,
+Eczacılar 19516, Angora 19516, Korukent no-10/no-15, Guz-Göl 19506, ikinci bir "Kardelen no-17
+19504" vb.). Bizim koordinatsız villa/atipik dosyaların (renk-villalari, eryaman-renk-villalari,
+kucuk-ankara-villalari, erenkoy, eczacilar, kosk, ersan, angora, korukent, kardelen, guz-gol,
+kurtulus, karasimsek, ritim-eryaman, sehit-ferhat-koc, yayikli ailesi, mesa ailesi...) gerçek
+evi burası olabilir. DİKKAT: apartman bölgesindeki adlarla çakışanlar var (Kardelen 18453 vs
+Kardelen no-17 19504) — dosya başına hangi bölge olduğu netleşmeden zenginleştirme YAPMA.
+
+
+### Parti 17-22 TKGM tamamlama kuyruğu (2026-07-14 — kota dolu olduğundan yarına)
+Parti 17-19 (elele, gardenya, gokkusagi, gulenkent, kusburnu, meltem, asilkent, evrimkent,
+tez-konak, yeni-isikent, sahinbey, selale, eryapi, gordogu-sen, nazlideniz, oz-muhtar,
+guzel-ankara, isi-kent, master-kent, ekin, metro-yasam, postakent, yesim-kent2,
+yukselay, er-ay-3 + DEVLET: asiyan, cagkent, camdali, cinar, demirkent, denizim,
+bilgi-sevgi-hosgoru) bilgiemlak blok
+kayıtlarıyla zenginleştirildi; TKGM açılınca her birine tek sorguyla **alan + tapu niteliği +
+kat mülkiyeti** cümlesi eklenecek (`api/parsel/{koordinat}` ya da 124123/{ada}/1).
+DİKKAT: bilgiemlak "Alan" değeri TKGM'den sapıyor (Konuta Özlem: 5.638 vs 5.169 m²) —
+alan HER ZAMAN TKGM'den yazılır, bilgiemlak alanı kullanılmaz.
+
+### Eksik ikinci ada bulunanlar — ✅ TAMAMLANDI 2026-07-15 (18640/18502/18504/18521 TKGM'den çekildi, sınırlar MultiPolygon'a genişletildi, koordinatlar birleşik merkeze düzeltildi)
+- **erkent-sitesi**: dosyada 18639, bilgiemlak 18639+18640 → 18640 TKGM'den doğrulanıp eklenecek.
+- **ulas-sitesi**: dosyada 18503, bilgiemlak 18502+18503 → 18502 eklenecek (koordinatı da GB cebinde, bozuk).
+- **safi-apak-sitesi**: dosyada 18505, bilgiemlak 18504+18505 → 18504 eklenecek (koordinat GB cebi).
+Üçünde de sınır GeoJSON genişletmesi gerekir (Anka 2001/Akkonak yöntemi).
+
+### guzelkent/aksu-sitesi (2026-07-14, parti 15'te atlandı)
+- Dosyadaki koordinat (39.987639, 32.609934) TKGM'de **ada numarasız boş parsele** düşüyor
+  ("Eryaman-/49", 8.125 m², Tarla) — muhtemelen park/yeşil alan parseli.
+- Dosyada ve yerel kayıtta (bilgiemlak `yer/aksu-sitesi-18512-ada-610`) site **18512** adasında;
+  ±260 m yarıçaplı TKGM taramasında 18512 bulunamadı.
+- Yerel kayıtta bloklar: 8, 8A, 8B, 8C, 8-D, 8-E (6 blok).
+- Yapılacak: 18512'nin gerçek konumu bulunup koordinat + sınır GeoJSON yeniden üretilecek,
+  sonra zenginleştirilecek.
+
+### guzelkent/baskent-sular-sitesi (2026-07-14, parti 16'da atlandı)
+- Dosya koordinatı (39.993773, 32.614902) TKGM'de ada numarasız tarlaya düşüyor ("Eryaman-/50", 9.637 m²).
+- Hedef ada 18477 (dosya + bilgiemlak uyumlu); ±180 m taramada bulunamadı, sonra TKGM günlük kotası doldu.
+- Yerel sayfa: `yer/baskent-sular-sitesi-18477-ada-617`.
+
+### guzelkent/cankaya-vefa-sitesi (2026-07-14, parti 16'da atlandı)
+- Dosya koordinatı (39.991810, 32.606339) ada numarasız tarlaya düşüyor ("Eryaman-/883", 5.547 m²).
+- bilgiemlak siteyi İKİ adada gösteriyor: **18521-18522** (`yer/cankaya-vefa-sitesi-18521-18522-ada-622`);
+  dosyada yalnızca 18522/1 var → bulununca ada + sınır genişletmesi de gerekli.
+
+### GÜZELKENT GB CEBİ — sistematik koordinat sorunu (2026-07-14)
+- aksu, ekin, ulas, safi-apak koordinatları TKGM'de ya boş dönüyor ya numarasız tarlaya düşüyor;
+  185xx ada cebinin dosyalardaki koordinatları topluca kaymış görünüyor.
+- Bu cebe girmeden önce koordinat kaynağını düzelt; tek tek halka taramasıyla uğraşma.
+- KOLAY YOL: TKGM'nin `api/parsel/{mahalleId}/{ada}/{parsel}/` doğrudan uç noktası GEÇERLİ
+  (Eryaman mahalleId=124123) — 2026-07-14'te kota dolu olduğu için denenemedi; kota açılınca
+  18512 (aksu), 18477 (başkent sular), 18521+18522 (çankaya vefa), 18501/18503/18505
+  (ekin/ulaş/safi apak) doğrudan çekilip koordinat+sınır yeniden üretilebilir.
+
+### eryaman/atakent-metro — ✅ ÇÖZÜLDÜ 2026-07-17 (46524/1 haritalandı+zenginleşti; Özgün: Atakent 2 Cumhuriyet AYRI site)
+- 46523/8'e force edilmişti; bilgiemlak o adayı Oyak 555'e ait gösteriyor
+  (bloklar A1/A2/B1/D1, TKGM nitelikle uyumlu).
+- Yapılacak: Atakent Metro'nun kendi parseli aranacak, kota açılınca yeniden bakılacak.
+(PR #16'dan 04.10'da taşındı.)
 
 ### Susuz turu notları (2026-07-16)
 - **MA1 Tower (goksu/ma1-tower) ipucu: müteahhidi büyük olasılıkla MA1 YAPI** (Majör Göksu'nun
@@ -1730,3 +2021,69 @@ kazındı, 5 yeni TKGM sorgusu yapıldı (bugün toplam 11). Sonuçlar:
 - **Başlıklar alternatifAdlar'a girdi:** "Demirer (1)/(2) Blokları", "Eston Blokları",
   "Soyak Blokları", "İçtaş, Kazım Sarı Blokları". Kazım Sarı (17483) kaydına dokunulmadı
   (be kümesinde 17483 yok; ada hiçbir resmî listede de yok — eski not geçerli).
+
+## ÇAKIŞMA SÜPÜRMESİ — repo geneli (2026-08-12, Doğan City/Anka Vega turunun devamı)
+
+Anka Vega hatası düzeltildikten sonra "aynı desenden başka kurban var mı?" diye 723 kayıt +
+721 sınır dosyası python ile tarandı (ajan turu; TKGM'ye istek atılmadı). **Hiçbiri
+düzeltilmedi — hepsi Özgün kararı / ayrı oturum işi.**
+
+### Önce iki ARAÇ KUSURU (bunlar bilinmeden yapılan denetim yanıltır)
+1. **map-qa.py'de "bilinen-meşru paylaşım" beyaz listesi YOK.** (113 satır okundu; script
+   çakışmaları süzmeden döküyor, meşruluk bilgisi yalnız bu defterin kapatılmış kartlarında.)
+2. **map-qa.py çakışmayı site JSON'undan değil, boundary.geojson'un `properties.adalar`
+   alanından okuyor** — bu alan 7 kayıtta BAYAT. Sonuç: hem hayalet çakışma üretiyor
+   (19501/1, 19502/1) hem gerçeğini kaçırıyor (17462/1; 75-yil-sitesi'nin sınır dosyası yok).
+
+### KRİTİK — künye JSON'u düzeltilmiş, sınır dosyası eski parselde kalmış (harita yalan söylüyor)
+- **Karma Modern** (ŞOA): JSON 46657/5, geojson **46656/5** (14.887 m² = 2026-07-25'te
+  REDDEDİLEN "Yönetim ve Hizmet Binası" parseli). Pin de o yanlış poligonun içinde.
+  next.config.ts:63-64'te hâlâ /adalar/46656-5 → karma-modern yönlendirmesi var. Üstelik
+  açıklamadaki tapu cümlesi (8.954 m², 12 katlı A + 3 katlı B) üçüncü bir rakam — repoda
+  dayanağı yok. Anka Vega vakasının birebir aynısı.
+- **Güzel Ev Sitesi** (Yavuz Selim): JSON 19501/2 (3.900 m²), geojson **19501/1** — çizilen
+  poligon komşu Özharitacılar'ın 11 dönümlük parseli (halkalar baytı baytına aynı). Sayfa
+  "kendi parselinde bağımsızdır" derken harita komşuyu gösteriyor.
+- **Özharitacılar** (Yavuz Selim): geojson kendi parseline ek olarak **Gülvatan'ın 19502/1**
+  parselini de taşıyor (21.589 m² ≈ 11.111 + 10.538). Gülvatan'ın sayfası "adanın tek
+  sahibidir" diyor — iki yayın birbirini yalanlıyor.
+- Aynı kök neden, eksik yönde: **Concept Eryaman** (+46446/1), **Yeşil Göksu** (+45819/1),
+  **Göksu Metrokent** (46480/1) — 2026-07-25'te künyeye eklenen ikinci parseller sınır
+  dosyalarına hiç işlenmemiş; ada sayfaları sitenin BAŞKA parselinin poligonunu çiziyor.
+
+### KRİTİK — aynı parselde iki kayıt, defterde HİÇ kayıtlı olmayanlar
+- **19504/1 — iki ayrı "Kardelen Sitesi"** (guzelkent + yavuz-selim), koordinatları BİREBİR
+  aynı (0 m) ama metinleri iki farklı tapu tarif ediyor (3 blok apartman 5.560 m² ⟷ 16 dubleks
+  5.347 m²). Doğan City/Anka Vega vakasının aynısı; defterde hiç yok.
+- **44752/1 — ÜÇ kayıt:** ata/eser-yapi-evleri ve susuz/eser-yapi-sitesi sınır geometrileri
+  BAYT AYNI (tek sitenin iki mahalleye düşmüş çift kaydı) + bayer-sitesi aynı tapuyu kopyalamış.
+- **46512/9 — çapraz mahalle:** eryaman/turk-konut-calisanlar ⟷ tunahan/su-damlasi, aynı 10
+  bloklu tapu iki kayıtta.
+- **63368/6** susuz/mahal-cag ⟷ nil-my-home (geometri bayt aynı; tapu 2 konut + 1 ticari blok
+  sayıyor, iki yerleşime yer yok) · **62658/2** cumhuriyet/city-life ⟷ diamond-goksu (kat
+  sayıları çelişiyor) · **18645/1** guzelkent/er-ay-3 ⟷ sehit-ferhat-koc (pinler 1 m; defter
+  zaten "Er-Ay 3 = eski ad" demiş, kayıt silinmemiş).
+
+### Doğrulanmamış paylaşım iddiaları (metinler paylaşımı ikrar ediyor, defterde kart yok)
+46215/5 (onur ⟷ tugce-kent) · 44770/1 (etikent ⟷ selvi-evleri) · 45835/1 (arikovani ⟷
+atasayanlar ⟷ cigdem) · 46265/4 (bizim-alperenler ⟷ caglar-emin) · 46439/1 (acat ⟷ ayata-kent;
+Acat tapudaki 3 bloğun TAMAMINI sahiplenirken aynı cümlede paylaşımı söylüyor — iç çelişki).
+
+### Diğer
+- **Toplam 47 ada/parsel çifti** birden fazla kayıtta; 141 kayıt etkileniyor. Bunların 15'i
+  eski Eryaman kooperatif MEGA-PARSEL deseni (kasıtlı, dupe değil), 4'ü defterde MEŞRU diye
+  kapatılmış — kalanı yukarıda.
+- Defterde ZATEN açık 17 çakışma hâlâ ağaçta; 3'ü "KESİN DUPE" ve Özgün'ün silme onayını
+  bekliyor (46481/1 bahar ⟷ polsan-1-bahar · 44769/1 belmi-kent ⟷ prestij-park · 44784/1
+  palmiye-evleri ⟷ tatli-yamac-palmiye).
+- **Özahikent'in pini komşu Sümeyra'nın parselinin tam içinde** (kendi 12 parselinin hiçbirinde
+  değil) — repo genelinde "başka sitenin poligonuna düşen" tek pin.
+- **kurtulus-sitesi.json'da `adalar` BOŞ** — 723 kaydın tek istisnası; hiçbir denetim aracı
+  bu kaydı görmüyor (sınır dosyası da yok).
+- **Eryaman Port'ta blok sayısı yanlış:** metin "10 blok" diyor, tapu niteliğinde 11 blok harfi
+  var (A + B,C,D,H + F + E,G + J,K,L).
+- **Address Yeşilova'da kanıtsız tapu iddiası:** özellikte "Ticari nitelik: ofis/işyeri (tapu)"
+  yazıyor ama aynı kaydın tapu alıntısında ofis/işyeri geçmiyor.
+- 20 kayıtta açıklama çok paragraflı ama sayfa tek `<p>` basıyor (`whitespace-pre` yok) —
+  paragraf kırılımları HTML'de kayboluyor.
+(PR #16'dan 04.10'da taşındı.)
