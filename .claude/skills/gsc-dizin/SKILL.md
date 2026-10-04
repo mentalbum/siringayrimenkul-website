@@ -81,6 +81,25 @@ Kural: her adayı göndermeden önce `denetle` ile sor. "Submitted and indexed"
   Chrome'u aktif kullanıyor veya ekran kilitli) ZARİF DUR: işaretsiz bırak,
   deftere not, commit, kullanıcıya kısa durum yaz.
 
+## Tarayıcı olayları ulaşmıyorsa (04.10 reçetesi — 11/11 çalıştı)
+
+Gündüz Özgün Chrome'u kullanırken tıklama ve klavye olayları GSC'ye ulaşmıyor
+(`document.activeElement` BODY kalıyor, düğme pencere açmıyor). Çözüm tamamen
+JS/DOM üzerinden; sayfa başına 2 çağrı:
+
+1. `navigate` inspect sayfası → `find "URL denetim arama kutusu (combobox, banner)"`
+   (ref her navigasyonda değişir, yeniden al).
+2. Tek `browser_batch`: `left_click ref` → `form_input ref <URL>` → `left_click ref` →
+   JS: `const el=document.activeElement; el.dispatchEvent(new Event('input',{bubbles:true}));
+   ['keydown','keypress','keyup'].forEach(t=>el.dispatchEvent(new KeyboardEvent(t,{key:'Enter',
+   code:'Enter',keyCode:13,which:13,bubbles:true,cancelable:true})))` → 18 sn bekle → `u`
+   doğrula → JS düğme: `const leaf=[...document.querySelectorAll('*')].find(e=>e.children.length
+   ===0 && /Dizine eklenmesini iste/i.test(e.textContent||''));` `leaf.closest('[role=button],
+   button,[jsaction],[tabindex]')` üzerine mousedown/mouseup/click dispatch (düğme
+   `DIV.button`, `querySelector('button')` BULMAZ) → 5 sn sonra "test etme|bir iki dakika"
+   metni modalı doğrular → 60 sn → "Dizine eklenmesi istendi" / "Kota Aşıldı".
+3. Sonraki sayfadan önce JS ile "Kapat" düğmesine tıkla (toast açıkken yeni URL yutulur).
+
 ## API kanalı (kurulursa)
 
 Servis hesabı anahtarı `~/.config/gsc-servis-anahtari.json` yolunda VARSA

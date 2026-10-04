@@ -398,3 +398,28 @@ ancak yeniden tarandığında görünür. API denetimi (07.09 02:30, hepsi
 > 07.09 02:35 — hotki-meydan denetlendi (dizinde mevcut), istek gönderildi:
 > **"Kota Aşıldı"** — istek İŞLENMEDİ. Kota 06.09'daki turdan doldu, kayan
 > 24 saat. Yarın öğleden sonra tekrar.
+
+## 04.10 — PR #90 kuyruğu kapandı + 24 güçlendirilen sayfaya yeniden tarama (11 istek kabul)
+
+API okuması (04.10 akşam): 07.09 kuyruğundaki 8 çapraz-mahalle sayfasının 5'i kendiliğinden
+yeniden taranmıştı (hotki-meydan 19.09, guzel-ankara-evleri 25.09, endora-park 03.10,
+endora-eryaman 24.09, inci-park-evleri 17.09) → yeni başlık dizinde. Kalan 4 + 24 güçlendirilen
+sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
+
+- [x] guzelkent-mahallesi/guzel-ankara-sitesi ← 04.10 istek gönderildi (son tarama 17.08)
+- [x] yesilova-mahallesi/hotki-ritm ← 04.10 istek gönderildi (03.09)
+- [x] goksu-mahallesi/park-inci-konutlari ← 04.10 istek gönderildi (02.09)
+- [x] altay-mahallesi/erland-residence ← 04.10 istek gönderildi (08.08)
+- [x] goksu-mahallesi/havacilar-sitesi ← 04.10 istek gönderildi (26.07)
+- [x] yavuz-selim-mahallesi/goksu-sitesi ← 04.10 istek gönderildi (07.08)
+- [x] goksu-mahallesi/merkez-sitesi ← 04.10 istek gönderildi (01.09)
+- [x] goksu-mahallesi/doga-konutlari ← 04.10 istek gönderildi (02.09)
+- [x] seyh-samil-mahallesi/mavera-sitesi ← 04.10 istek gönderildi (03.09)
+- [x] seyh-samil-mahallesi/camlica-sitesi ← 04.10 istek gönderildi (08.09)
+- [x] yavuz-selim-mahallesi/utku-sitesi ← 04.10 istek gönderildi (11.09)
+- [ ] yavuz-selim-mahallesi/altintepe-sitesi ← 04.10 KOTA AŞILDI, istek işlenmedi (12.09)
+- [ ] eryaman-mahallesi/platin-konutlari ← sırada (13.09)
+
+> 04.10 — kota ölçümü: 11 kabul, 12. "Kota Aşıldı" (28 gündür istek yoktu → günlük tavan ~11).
+> UI tuzağı çözüldü: tıklama/klavye olayları ulaşmıyordu; form_input + JS Enter + JS düğme
+> tıklaması (gsc-dizin becerisi) 11/11 çalıştı. IndexNow: 49 adres Bing/Yandex'e bildirildi (200).
