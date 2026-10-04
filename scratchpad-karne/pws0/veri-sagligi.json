@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-09-06",
+ "guncelleme": "2026-10-04",
  "gurultu": {
   "cift": 63,
   "sessiz": 55,
@@ -30,23 +30,23 @@
  },
  "olculen": 511,
  "kuyruk": 511,
- "kayit": 1941,
+ "kayit": 2001,
  "yas": [
   [
    "0-7 gün",
-   488
+   60
   ],
   [
    "8-14 gün",
-   22
+   0
   ],
   [
    "15-30 gün",
-   1
+   425
   ],
   [
    "30+ gün",
-   0
+   26
   ]
  ],
  "bulgular": [
@@ -125,7 +125,7 @@
   },
   {
    "ad": "Karne metninde elle yazılmış rakam",
-   "adet": 16,
+   "adet": 17,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
    "ornek": [
     "satır 521: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",

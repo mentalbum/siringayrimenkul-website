@@ -406,19 +406,19 @@ yeniden taranmıştı (hotki-meydan 19.09, guzel-ankara-evleri 25.09, endora-par
 endora-eryaman 24.09, inci-park-evleri 17.09) → yeni başlık dizinde. Kalan 4 + 24 güçlendirilen
 sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
 
-- [x] guzelkent-mahallesi/guzel-ankara-sitesi ← 04.10 istek gönderildi (son tarama 17.08)
-- [x] yesilova-mahallesi/hotki-ritm ← 04.10 istek gönderildi (03.09)
-- [x] goksu-mahallesi/park-inci-konutlari ← 04.10 istek gönderildi (02.09)
-- [x] altay-mahallesi/erland-residence ← 04.10 istek gönderildi (08.08)
-- [x] goksu-mahallesi/havacilar-sitesi ← 04.10 istek gönderildi (26.07)
-- [x] yavuz-selim-mahallesi/goksu-sitesi ← 04.10 istek gönderildi (07.08)
-- [x] goksu-mahallesi/merkez-sitesi ← 04.10 istek gönderildi (01.09)
-- [x] goksu-mahallesi/doga-konutlari ← 04.10 istek gönderildi (02.09)
-- [x] seyh-samil-mahallesi/mavera-sitesi ← 04.10 istek gönderildi (03.09)
-- [x] seyh-samil-mahallesi/camlica-sitesi ← 04.10 istek gönderildi (08.09)
-- [x] yavuz-selim-mahallesi/utku-sitesi ← 04.10 istek gönderildi (11.09)
-- [ ] yavuz-selim-mahallesi/altintepe-sitesi ← 04.10 KOTA AŞILDI, istek işlenmedi (12.09)
-- [ ] eryaman-mahallesi/platin-konutlari ← sırada (13.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi ← 04.10 istek gönderildi (son tarama 17.08)
+- [x] https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/hotki-ritm ← 04.10 istek gönderildi (03.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-inci-konutlari ← 04.10 istek gönderildi (02.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/erland-residence ← 04.10 istek gönderildi (08.08)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havacilar-sitesi ← 04.10 istek gönderildi (26.07)
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/goksu-sitesi ← 04.10 istek gönderildi (07.08)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/merkez-sitesi ← 04.10 istek gönderildi (01.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/doga-konutlari ← 04.10 istek gönderildi (02.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/mavera-sitesi ← 04.10 istek gönderildi (03.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi ← 04.10 istek gönderildi (08.09)
+- [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi ← 04.10 istek gönderildi (11.09)
+- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 04.10 KOTA AŞILDI, istek işlenmedi (12.09)
+- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← sırada (13.09)
 
 > 04.10 — kota ölçümü: 11 kabul, 12. "Kota Aşıldı" (28 gündür istek yoktu → günlük tavan ~11).
 > UI tuzağı çözüldü: tıklama/klavye olayları ulaşmıyordu; form_input + JS Enter + JS düğme

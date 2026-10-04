@@ -1,49 +1,16 @@
 {
- "guncelleme": "2026-09-06",
+ "guncelleme": "2026-10-04",
  "toplam": 511,
  "hepsi": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 324
+   "n": 328
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 55
-  },
-  {
-   "k": "eski",
-   "ad": "Taşınmadan önceki adres",
-   "n": 47
-  },
-  {
-   "k": "baska_site",
-   "ad": "Başka bir site sayfamız",
-   "n": 43
-  },
-  {
-   "k": "ada",
-   "ad": "Ada sayfamız",
-   "n": 22
-  },
-  {
-   "k": "mahalle",
-   "ad": "Mahalle sayfamız",
-   "n": 16
-  },
-  {
-   "k": "dis",
-   "ad": "Bize ait olmayan sonuç",
-   "n": 4
-  }
- ],
- "ilk3_toplam": 384,
- "ilk3": [
-  {
-   "k": "dogru",
-   "ad": "Doğru site sayfası",
-   "n": 304
+   "n": 57
   },
   {
    "k": "eski",
@@ -53,29 +20,57 @@
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 20
+   "n": 38
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 9
+   "n": 22
+  },
+  {
+   "k": "mahalle",
+   "ad": "Mahalle sayfamız",
+   "n": 18
+  },
+  {
+   "k": "dis",
+   "ad": "Bize ait olmayan sonuç",
+   "n": 4
+  }
+ ],
+ "ilk3_toplam": 383,
+ "ilk3": [
+  {
+   "k": "dogru",
+   "ad": "Doğru site sayfası",
+   "n": 309
+  },
+  {
+   "k": "eski",
+   "ad": "Taşınmadan önceki adres",
+   "n": 41
+  },
+  {
+   "k": "baska_site",
+   "ad": "Başka bir site sayfamız",
+   "n": 19
+  },
+  {
+   "k": "ada",
+   "ad": "Ada sayfamız",
+   "n": 8
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
    "n": 6
-  },
-  {
-   "k": "dis",
-   "ad": "Bize ait olmayan sonuç",
-   "n": 1
   }
  ],
- "ilk3_dogru": 304,
+ "ilk3_dogru": 309,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
-   23
+   22
   ],
   [
    "goksu-mahallesi",
@@ -83,19 +78,15 @@
   ],
   [
    "sehit-osman-avci-mahallesi",
-   17
+   19
   ],
   [
    "yavuz-selim-mahallesi",
-   14
+   13
   ],
   [
    "seyh-samil-mahallesi",
    12
-  ],
-  [
-   "altay-mahallesi",
-   9
   ],
   [
    "eryaman-mahallesi",
@@ -106,16 +97,20 @@
    7
   ],
   [
-   "devlet-mahallesi",
-   6
-  ],
-  [
    "tunahan-mahallesi",
    6
   ],
   [
+   "devlet-mahallesi",
+   5
+  ],
+  [
    "seker-mahallesi",
    5
+  ],
+  [
+   "altay-mahallesi",
+   4
   ]
  ]
 }

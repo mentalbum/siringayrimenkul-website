@@ -395,9 +395,9 @@ if TITLE_DONUK:
             # Kaydın adı çürük kaldıracın adı (ör. canonical); iş o değil, kısıt
             # cümlesinin işaret ettiği başlık işi. Ad yalnız kaynak olarak geçer.
             ekle(TITLE_DONUK,
-                 f"Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: {k['kisit']}",
-                 f"Bağlı kayıt '{k['ad']}' (çürük) — ölçümü: {k['olcum']}",
-                 f"kaldirac-defteri.json ({k['kaynak']})", "Claude", oncelik=2)
+                 f"Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: {k.get('kisit','—')}",
+                 f"Bağlı kayıt '{k.get('ad','—')}' (çürük) — ölçümü: {k.get('olcum','—')}",
+                 f"kaldirac-defteri.json ({k.get('kaynak','—')})", "Claude", oncelik=2)
 
 # --- PR #87: ada beklentisi kıyasları (+14 / +28) ---
 _sitemap_k = next((k for k in KD["kaldiraclar"] if k["ad"] == "Sitemap tazelik sinyali"), None)

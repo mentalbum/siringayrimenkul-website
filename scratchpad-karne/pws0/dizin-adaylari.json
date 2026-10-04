@@ -1,1 +1,24 @@
-[]
+[
+ {
+  "yol": "/mahalleler/eryaman-mahallesi/platin-konutlari",
+  "mah": "eryaman-mahallesi",
+  "site": "platin-konutlari",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 92,
+  "tarama": "2026-07-27",
+  "durum": "bayat",
+  "olcum": "2026-09-04"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "site": "altintepe-sitesi",
+  "tur": "eski başlık",
+  "sira": 1,
+  "gos": 24,
+  "tarama": "2026-08-12",
+  "durum": "orta",
+  "olcum": "2026-10-04"
+ }
+]

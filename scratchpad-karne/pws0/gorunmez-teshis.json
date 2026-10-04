@@ -1,35 +1,47 @@
 {
  "guncelleme": "2026-08-31",
  "pencere": {
-  "bas": "2026-08-07",
-  "bit": "2026-09-03",
+  "bas": "2026-09-02",
+  "bit": "2026-09-29",
   "gun": 28
  },
  "sira_sorunu": {
-  "n": 33,
-  "gost": 1679,
-  "tik": 34,
+  "n": 57,
+  "gost": 1183,
+  "tik": 17,
   "poz": 7.7,
   "mah": [
    [
-    "devlet-mahallesi",
+    "goksu-mahallesi",
     10
    ],
    [
-    "goksu-mahallesi",
+    "guzelkent-mahallesi",
     10
+   ],
+   [
+    "devlet-mahallesi",
+    9
+   ],
+   [
+    "yavuz-selim-mahallesi",
+    9
    ],
    [
     "eryaman-mahallesi",
     7
    ],
    [
-    "guzelkent-mahallesi",
-    4
+    "seyh-samil-mahallesi",
+    7
    ],
    [
     "altay-mahallesi",
-    1
+    2
+   ],
+   [
+    "sehit-osman-avci-mahallesi",
+    2
    ],
    [
     "tunahan-mahallesi",
@@ -46,6 +58,6 @@
  },
  "denetlenemedi": 0,
  "hayalet": 0,
- "taze_ama_gorunmez": 16,
+ "taze_ama_gorunmez": 51,
  "olu_liste": []
 }

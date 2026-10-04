@@ -1,20 +1,20 @@
 {
- "guncelleme": "2026-09-05",
+ "guncelleme": "2026-10-04",
  "sorgu": "eryaman emlakçı",
  "kaynak": "api",
  "baslangic": "2026-07-27",
- "son_veri_gunu": "2026-09-03",
- "gun": 39,
+ "son_veri_gunu": "2026-09-29",
+ "gun": 65,
  "pencere": {
   "bas": "2026-07-27",
-  "bit": "2026-09-03",
-  "gun": 39
+  "bit": "2026-09-29",
+  "gun": 65
  },
  "toplam": {
-  "gos": 564,
-  "tik": 23,
-  "to": 4.1,
-  "konum": 1.36
+  "gos": 931,
+  "tik": 36,
+  "to": 3.9,
+  "konum": 1.38
  },
  "haftalar": [
   {
@@ -76,12 +76,56 @@
    "bas": "2026-08-31",
    "bit": "2026-09-06",
    "etiket": "31.08–06.09",
-   "gun": 4,
+   "gun": 7,
+   "kismi": false,
+   "gos": 93,
+   "tik": 3,
+   "to": 3.2,
+   "konum": 1.46
+  },
+  {
+   "bas": "2026-09-07",
+   "bit": "2026-09-13",
+   "etiket": "07.09–13.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 132,
+   "tik": 6,
+   "to": 4.5,
+   "konum": 1.41
+  },
+  {
+   "bas": "2026-09-14",
+   "bit": "2026-09-20",
+   "etiket": "14.09–20.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 111,
+   "tik": 3,
+   "to": 2.7,
+   "konum": 1.44
+  },
+  {
+   "bas": "2026-09-21",
+   "bit": "2026-09-27",
+   "etiket": "21.09–27.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 57,
+   "tik": 2,
+   "to": 3.5,
+   "konum": 1.35
+  },
+  {
+   "bas": "2026-09-28",
+   "bit": "2026-10-04",
+   "etiket": "28.09–04.10",
+   "gun": 2,
    "kismi": true,
-   "gos": 43,
-   "tik": 1,
-   "to": 2.3,
-   "konum": 1.49
+   "gos": 17,
+   "tik": 0,
+   "to": 0.0,
+   "konum": 1.59
   }
  ],
  "donemler": [
@@ -177,26 +221,26 @@
   {
    "k": "d3",
    "ad": "Kısaltma sonrası",
-   "etiket": "16.08–03.09",
+   "etiket": "16.08–29.09",
    "bas": "2026-08-16",
-   "bit": "2026-09-03",
-   "gun": 19,
-   "gos": 299,
-   "tik": 6,
-   "to": 2.0,
-   "konum": 1.44,
+   "bit": "2026-09-29",
+   "gun": 45,
+   "gos": 666,
+   "tik": 19,
+   "to": 2.9,
+   "konum": 1.43,
    "kucuk_ornek": false,
    "sayfalar": [
     {
      "u": "/",
      "ad": "Ana sayfa",
-     "gos": 298,
-     "tik": 5,
-     "to": 1.7,
-     "konum": 1.39,
-     "gun": 19,
+     "gos": 665,
+     "tik": 18,
+     "to": 2.7,
+     "konum": 1.41,
+     "gun": 45,
      "ilk": "2026-08-16",
-     "son": "2026-09-03"
+     "son": "2026-09-29"
     },
     {
      "u": "/mahalleler/eryaman-mahallesi",
@@ -208,6 +252,28 @@
      "gun": 5,
      "ilk": "2026-08-17",
      "son": "2026-08-21"
+    },
+    {
+     "u": "/ev-degerleme",
+     "ad": "Değerleme sayfası",
+     "gos": 2,
+     "tik": 0,
+     "to": 0.0,
+     "konum": 1.5,
+     "gun": 2,
+     "ilk": "2026-09-06",
+     "son": "2026-09-21"
+    },
+    {
+     "u": "/mahalleler/eryaman-mahallesi/ra-da-life",
+     "ad": "/mahalleler/eryaman-mahallesi/ra-da-life",
+     "gos": 1,
+     "tik": 0,
+     "to": 0.0,
+     "konum": 20.0,
+     "gun": 1,
+     "ilk": "2026-09-07",
+     "son": "2026-09-07"
     }
    ],
    "sira_tutan": "/",
@@ -218,13 +284,13 @@
   {
    "u": "/",
    "ad": "Ana sayfa",
-   "gos": 534,
-   "tik": 21,
-   "to": 3.9,
-   "konum": 2.81,
-   "gun": 39,
+   "gos": 901,
+   "tik": 34,
+   "to": 3.8,
+   "konum": 2.24,
+   "gun": 65,
    "ilk": "2026-07-27",
-   "son": "2026-09-03"
+   "son": "2026-09-29"
   },
   {
    "u": "/?utm_source=google&utm_medium=gbp",
@@ -251,13 +317,13 @@
   {
    "u": "/ev-degerleme",
    "ad": "Değerleme sayfası",
-   "gos": 3,
+   "gos": 5,
    "tik": 0,
    "to": 0.0,
-   "konum": 1.33,
-   "gun": 3,
+   "konum": 1.4,
+   "gun": 5,
    "ilk": "2026-08-03",
-   "son": "2026-08-11"
+   "son": "2026-09-21"
   },
   {
    "u": "/mahalleler/altay-mahallesi/frekans-eryaman",
@@ -269,6 +335,17 @@
    "gun": 1,
    "ilk": "2026-08-09",
    "son": "2026-08-09"
+  },
+  {
+   "u": "/mahalleler/eryaman-mahallesi/ra-da-life",
+   "ad": "/mahalleler/eryaman-mahallesi/ra-da-life",
+   "gos": 1,
+   "tik": 0,
+   "to": 0.0,
+   "konum": 20.0,
+   "gun": 1,
+   "ilk": "2026-09-07",
+   "son": "2026-09-07"
   }
  ],
  "utm": {
@@ -283,7 +360,7 @@
    "konum": 1.25
   },
   "ana_konum_utm_varken": 5.83,
-  "ana_konum_utm_sonrasi": 1.38,
+  "ana_konum_utm_sonrasi": 1.4,
   "denetim": "DIŞARIDA — URL is unknown to Google"
  },
  "serp": [
@@ -556,15 +633,171 @@
    "gos": 11,
    "tik": 0,
    "konum": 1.18
+  },
+  {
+   "d": "2026-09-04",
+   "gos": 16,
+   "tik": 1,
+   "konum": 1.38
+  },
+  {
+   "d": "2026-09-05",
+   "gos": 9,
+   "tik": 0,
+   "konum": 1.22
+  },
+  {
+   "d": "2026-09-06",
+   "gos": 25,
+   "tik": 1,
+   "konum": 1.56
+  },
+  {
+   "d": "2026-09-07",
+   "gos": 14,
+   "tik": 1,
+   "konum": 1.5
+  },
+  {
+   "d": "2026-09-08",
+   "gos": 26,
+   "tik": 1,
+   "konum": 1.27
+  },
+  {
+   "d": "2026-09-09",
+   "gos": 9,
+   "tik": 0,
+   "konum": 1.33
+  },
+  {
+   "d": "2026-09-10",
+   "gos": 34,
+   "tik": 1,
+   "konum": 1.47
+  },
+  {
+   "d": "2026-09-11",
+   "gos": 16,
+   "tik": 0,
+   "konum": 1.44
+  },
+  {
+   "d": "2026-09-12",
+   "gos": 18,
+   "tik": 0,
+   "konum": 1.33
+  },
+  {
+   "d": "2026-09-13",
+   "gos": 15,
+   "tik": 3,
+   "konum": 1.53
+  },
+  {
+   "d": "2026-09-14",
+   "gos": 7,
+   "tik": 0,
+   "konum": 1.29
+  },
+  {
+   "d": "2026-09-15",
+   "gos": 7,
+   "tik": 0,
+   "konum": 1.29
+  },
+  {
+   "d": "2026-09-16",
+   "gos": 36,
+   "tik": 0,
+   "konum": 1.56
+  },
+  {
+   "d": "2026-09-17",
+   "gos": 13,
+   "tik": 0,
+   "konum": 1.54
+  },
+  {
+   "d": "2026-09-18",
+   "gos": 19,
+   "tik": 1,
+   "konum": 1.47
+  },
+  {
+   "d": "2026-09-19",
+   "gos": 21,
+   "tik": 2,
+   "konum": 1.43
+  },
+  {
+   "d": "2026-09-20",
+   "gos": 8,
+   "tik": 0,
+   "konum": 1.0
+  },
+  {
+   "d": "2026-09-21",
+   "gos": 13,
+   "tik": 1,
+   "konum": 1.46
+  },
+  {
+   "d": "2026-09-22",
+   "gos": 13,
+   "tik": 0,
+   "konum": 1.31
+  },
+  {
+   "d": "2026-09-23",
+   "gos": 5,
+   "tik": 1,
+   "konum": 1.4
+  },
+  {
+   "d": "2026-09-24",
+   "gos": 6,
+   "tik": 0,
+   "konum": 1.33
+  },
+  {
+   "d": "2026-09-25",
+   "gos": 13,
+   "tik": 0,
+   "konum": 1.38
+  },
+  {
+   "d": "2026-09-26",
+   "gos": 5,
+   "tik": 0,
+   "konum": 1.0
+  },
+  {
+   "d": "2026-09-27",
+   "gos": 2,
+   "tik": 0,
+   "konum": 1.5
+  },
+  {
+   "d": "2026-09-28",
+   "gos": 12,
+   "tik": 0,
+   "konum": 1.58
+  },
+  {
+   "d": "2026-09-29",
+   "gos": 5,
+   "tik": 0,
+   "konum": 1.6
   }
  ],
  "notlar": [
-  "TO üç dönemde %5,5 → %9,2 → %2,0 (27.07–11.08 / 12.08–15.08 / 16.08–03.09); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
+  "TO üç dönemde %5,5 → %9,2 → %2,9 (27.07–11.08 / 12.08–15.08 / 16.08–29.09); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
   "GSC “konum”u mülk düzeyinde en iyi adresimizin konumudur. 27.07–11.08 arasında bu adres harita kutusundaki GBP bağıydı (utm'li adres, konum 1,2, 199 gösterim / 1 tık); ana sayfa “/” aynı günlerde konum 5,8. utm'li adres 11.08 sonrası GSC'de yok (URL denetimi: DIŞARIDA — URL is unknown to Google) ve “/” konumu 1,4 oldu — harita bağının gösterimi artık “/” adresine yazılıyor. Yani sabit görünen 1,2–1,4 harita kutusunun konumudur; organik sırayı GSC değil pws=0 SERP ölçümü verir.",
   "pws=0 SERP ölçümlerinde organik sıra: 3 (09.08), 3 (15.08), 2 (17.08), 3 (30.08); harita kutusunda 1. sıra 4/4 ölçümde. Organik sıra sabit, harita sabit, TO düştü → sorun sırada değil, snippet/başlıkta.",
-  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–03.09 döneminde 5 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
+  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–29.09 döneminde 18 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
   "Baş şüpheli: 2026-08-15 ana sayfa meta description kısaltması (commit 3f58e7f: “ana sayfa 'kim' düzeni: güvenilir emlakçı pasajı SSS'ten görünür metne, blog SSS altına, meta description 229→119, alıcı hitabı kalktı, SSS #6 pozitif kuruldu (#24)”). TO düşüşü bu tarihten sonraki dönemde görülüyor; nedensellik ölçülmedi, tek şüpheli değil (aynı günlerde harita bağı da “/” adresine geçti).",
   "Title/H1 donuk, serbest kalma tarihi 07.09 (08.08 değişikliğinin 4 haftalık bekleme süresi); o tarihe kadar müdahale yalnızca meta description olabilir."
  ],
- "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 14,5/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 03.09 — GSC 2-3 gün geriden gelir."
+ "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 14,3/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 29.09 — GSC 2-3 gün geriden gelir."
 }

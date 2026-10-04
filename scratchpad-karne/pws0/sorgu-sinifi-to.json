@@ -1,107 +1,184 @@
 {
- "guncelleme": "2026-09-05",
+ "guncelleme": "2026-10-04",
  "pencere": {
-  "bas": "2026-08-07",
-  "bit": "2026-09-03",
+  "bas": "2026-09-02",
+  "bit": "2026-09-29",
   "gun": 28
  },
  "gun": 28,
- "toplam_gos": 44108,
- "toplam_tik": 655,
- "to": 1.48,
+ "toplam_gos": 33383,
+ "toplam_tik": 441,
+ "to": 1.32,
  "siniflar": [
   {
    "k": "yalin",
    "ad": "Yalın site adı (ör. “X Sitesi”)",
-   "sorgu": 1689,
-   "gos": 30128,
-   "tik": 235,
-   "to": 0.8,
-   "poz": 9.5
+   "sorgu": 1310,
+   "gos": 23105,
+   "tik": 164,
+   "to": 0.7,
+   "poz": 9.9
   },
   {
    "k": "alici",
    "ad": "Alıcı niyeti (satılık / kiralık / daire)",
-   "sorgu": 809,
-   "gos": 12041,
-   "tik": 371,
-   "to": 3.1,
-   "poz": 7.1
+   "sorgu": 555,
+   "gos": 8207,
+   "tik": 241,
+   "to": 2.9,
+   "poz": 6.9
   },
   {
    "k": "bolge_emlakci",
    "ad": "“Eryaman / mahalle emlakçı”",
-   "sorgu": 26,
-   "gos": 1241,
-   "tik": 28,
-   "to": 2.3,
-   "poz": 3.6
-  },
-  {
-   "k": "site_emlakci",
-   "ad": "“<site> emlakçı”",
-   "sorgu": 79,
-   "gos": 371,
-   "tik": 6,
-   "to": 1.6,
-   "poz": 8.3
+   "sorgu": 21,
+   "gos": 1525,
+   "tik": 22,
+   "to": 1.4,
+   "poz": 3.4
   },
   {
    "k": "marka",
    "ad": "Marka (Şirin Gayrimenkul)",
-   "sorgu": 9,
-   "gos": 263,
-   "tik": 13,
-   "to": 4.9,
+   "sorgu": 10,
+   "gos": 318,
+   "tik": 11,
+   "to": 3.5,
    "poz": 5.0
+  },
+  {
+   "k": "site_emlakci",
+   "ad": "“<site> emlakçı”",
+   "sorgu": 72,
+   "gos": 225,
+   "tik": 3,
+   "to": 1.3,
+   "poz": 15.5
   },
   {
    "k": "sahip",
    "ad": "Ev sahibi niyeti (satmak / kiraya vermek / değerleme)",
-   "sorgu": 15,
-   "gos": 64,
-   "tik": 2,
-   "to": 3.1,
-   "poz": 9.6
+   "sorgu": 2,
+   "gos": 3,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 52.3
   }
  ],
  "makas": [
   {
+   "q": "emlakçı",
+   "gos": 758,
+   "tik": 5,
+   "to": 0.7,
+   "poz": 4.8,
+   "sinif": "bolge_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
+  },
+  {
+   "q": "kıratlı rezidans",
+   "gos": 166,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 5.0,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/kiratli-residence"
+  },
+  {
+   "q": "eryaman emlak",
+   "gos": 164,
+   "tik": 2,
+   "to": 1.2,
+   "poz": 1.5,
+   "sinif": "bolge_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
+  },
+  {
+   "q": "happy life residence",
+   "gos": 76,
+   "tik": 1,
+   "to": 1.3,
+   "poz": 5.0,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/happy-life-residence"
+  },
+  {
+   "q": "doğapark sitesi eryaman",
+   "gos": 67,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 5.0,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi"
+  },
+  {
+   "q": "karma modern sitesi",
+   "gos": 64,
+   "tik": 1,
+   "to": 1.6,
+   "poz": 3.3,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/karma-modern"
+  },
+  {
    "q": "etimesgut emlakçılar",
-   "gos": 126,
+   "gos": 58,
    "tik": 0,
    "to": 0.0,
-   "poz": 2.6,
+   "poz": 3.0,
    "sinif": "bolge_emlakci",
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
-   "q": "emlak",
-   "gos": 57,
-   "tik": 0,
-   "to": 0.0,
-   "poz": 3.5,
-   "sinif": "bolge_emlakci",
+   "q": "eryaman emlakçılar listesi",
+   "gos": 53,
+   "tik": 1,
+   "to": 1.9,
+   "poz": 1.3,
+   "sinif": "site_emlakci",
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
-   "q": "şirin emlak",
-   "gos": 40,
+   "q": "mia concept satılık",
+   "gos": 47,
    "tik": 0,
    "to": 0.0,
-   "poz": 4.6,
-   "sinif": "marka",
-   "sayfa": "https://www.siringayrimenkul.com/"
+   "poz": 4.2,
+   "sinif": "alici",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari"
+  },
+  {
+   "q": "ay sitesi eryaman",
+   "gos": 43,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 5.0,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ay-sitesi"
+  },
+  {
+   "q": "karma modern",
+   "gos": 42,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.3,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/karma-modern"
+  },
+  {
+   "q": "eryaman nüfusu",
+   "gos": 41,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.1,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/blog/eryamanda-hangi-mahalle"
   }
  ],
  "makas_ym": [
   {
-   "q": "başkent göksu sitesi",
-   "gos": 51
-  },
-  {
-   "q": "mes polaris satılık",
-   "gos": 63
+   "q": "anadolu vizyon konutları",
+   "gos": 113
   }
  ]
 }

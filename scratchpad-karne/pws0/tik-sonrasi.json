@@ -1,108 +1,108 @@
 {
- "guncelleme": "2026-09-05",
+ "guncelleme": "2026-10-04",
  "gun": 28,
  "pencere": {
-  "bas": "2026-08-08",
-  "bit": "2026-09-04",
+  "bas": "2026-09-06",
+  "bit": "2026-10-03",
   "gun": 28,
   "kaynak": "GA4: 28daysAgo–yesterday"
  },
  "ozet": {
   "gun": 28,
-  "kullanici": 1874,
-  "oturum": 2278,
-  "gorunum": 3302,
-  "ort_sure_sn": 78,
-  "hemen_cikma": 61.9,
-  "etkilesim_orani": 38.1,
-  "olay": 9051,
-  "phone_click": 13,
-  "tel_oturum_basina": 0.006
+  "kullanici": 1221,
+  "oturum": 1423,
+  "gorunum": 1848,
+  "ort_sure_sn": 53,
+  "hemen_cikma": 63.7,
+  "etkilesim_orani": 36.3,
+  "olay": 5438,
+  "phone_click": 14,
+  "tel_oturum_basina": 0.01
  },
  "temas": {
-  "phone_click": 13,
-  "whatsapp_click": 9,
-  "form_start": 15,
+  "phone_click": 14,
+  "whatsapp_click": 10,
+  "form_start": 4,
   "contact_form_submit": 0,
-  "site_ust_sahibinden": 19
+  "site_ust_sahibinden": 26
  },
  "temas_100": {
-  "phone_click": 0.57,
-  "whatsapp_click": 0.4,
-  "form_start": 0.66,
+  "phone_click": 0.98,
+  "whatsapp_click": 0.7,
+  "form_start": 0.28,
   "contact_form_submit": 0.0,
-  "site_ust_sahibinden": 0.83
+  "site_ust_sahibinden": 1.83
  },
  "aileler": [
   {
    "ad": "Site sayfaları",
    "aile": "site",
-   "sayfa": 469,
-   "goruntuleme": 2102,
-   "oturum": 1879,
+   "sayfa": 309,
+   "goruntuleme": 1166,
+   "oturum": 1104,
    "ort_sure_sn": 47,
-   "hemen_cikma": 60.4,
-   "olay": 6496
+   "hemen_cikma": 62.6,
+   "olay": 3757
   },
   {
    "ad": "Diğer (araçlar, iletişim…)",
    "aile": "diğer",
-   "sayfa": 20,
-   "goruntuleme": 405,
-   "oturum": 304,
-   "ort_sure_sn": 78,
-   "hemen_cikma": 22,
-   "olay": 726
+   "sayfa": 14,
+   "goruntuleme": 254,
+   "oturum": 212,
+   "ort_sure_sn": 37,
+   "hemen_cikma": 30.2,
+   "olay": 517
   },
   {
    "ad": "Ana sayfa",
    "aile": "ana sayfa",
    "sayfa": 1,
-   "goruntuleme": 372,
-   "oturum": 264,
-   "ort_sure_sn": 154,
-   "hemen_cikma": 37.5,
-   "olay": 911
-  },
-  {
-   "ad": "Mahalle sayfaları",
-   "aile": "mahalle",
-   "sayfa": 14,
-   "goruntuleme": 182,
-   "oturum": 145,
-   "ort_sure_sn": 103,
-   "hemen_cikma": 26.9,
-   "olay": 338
+   "goruntuleme": 235,
+   "oturum": 209,
+   "ort_sure_sn": 36,
+   "hemen_cikma": 48.3,
+   "olay": 730
   },
   {
    "ad": "Ada sayfaları",
    "aile": "ada",
-   "sayfa": 107,
-   "goruntuleme": 170,
-   "oturum": 144,
-   "ort_sure_sn": 49,
-   "hemen_cikma": 41,
-   "olay": 430
+   "sayfa": 41,
+   "goruntuleme": 64,
+   "oturum": 50,
+   "ort_sure_sn": 61,
+   "hemen_cikma": 26,
+   "olay": 171
+  },
+  {
+   "ad": "Mahalle sayfaları",
+   "aile": "mahalle",
+   "sayfa": 9,
+   "goruntuleme": 49,
+   "oturum": 42,
+   "ort_sure_sn": 23,
+   "hemen_cikma": 28.6,
+   "olay": 85
   },
   {
    "ad": "Yazılar",
    "aile": "yazı",
-   "sayfa": 10,
-   "goruntuleme": 36,
-   "oturum": 34,
-   "ort_sure_sn": 60,
-   "hemen_cikma": 29.4,
-   "olay": 106
+   "sayfa": 6,
+   "goruntuleme": 34,
+   "oturum": 35,
+   "ort_sure_sn": 72,
+   "hemen_cikma": 62.9,
+   "olay": 114
   },
   {
    "ad": "Etap sayfaları",
    "aile": "etap",
-   "sayfa": 6,
-   "goruntuleme": 35,
-   "oturum": 24,
-   "ort_sure_sn": 30,
-   "hemen_cikma": 4.2,
-   "olay": 44
+   "sayfa": 5,
+   "goruntuleme": 46,
+   "oturum": 33,
+   "ort_sure_sn": 28,
+   "hemen_cikma": 21.2,
+   "olay": 64
   }
  ]
 }

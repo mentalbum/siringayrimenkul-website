@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="/css/base.css?v=2" />
+	<link rel="stylesheet" href="/css/skeleton2.css" />
+	<link rel="stylesheet" href="/css/layout.css" />
+        
+      <style>
+          .clear {
+              clear: both;
+          }
+
+          .tipicerik img {
+              float: left;
+              margin-right: 10px;
+          }
+
+          .tipicerik .six.columns {
+              margin-bottom: 10px;
+          }
+
+          .sosyal {
+              margin:10px 0;
+          }
+          .sosyalLink {
+              background-color: #555;
+              padding: 10px 8px 5px 8px;
+              margin: 0 3px;
+              border-radius: 5px;
+              color:#fff;
+          }
+          .share-on-facebook {
+              background-color: #3B5997;
+          }
+          .share-on-twitter {
+              background-color: #41B7D8;
+          }
+
+          @media only screen and (max-width:480px){
+              #map {
+                  height: 360px !important;
+              }
+
+              .yerleritem {
+                  width: 41%;
+              }
+          }
+      </style>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+        
+<title>Eryaman Rehberi Bilgi Ofisi Emlak </title>
+
+<link rel="canonical" href="https://eryaman.bilgiemlak.com.tr" />
+
+
+<link rel="stylesheet" href="/css/zozo.tabs.min.css" />
+<link rel="stylesheet" href="/css/lightbox.css" />
+<link rel="stylesheet" href="/css/responsiveslides.css" />
+
+<style>
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+	box-shadow:inset 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23));
+	background:-moz-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-webkit-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-o-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:-ms-linear-gradient(top, #ffec64 5%, #ffab23 100%);
+	background:linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23',GradientType=0);
+	background-color:#ffec64;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:arial;
+	font-size:15px;
+	padding:6px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+        width: 85%;
+        text-align: center;
+}
+.myButton:hover {
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ffab23), color-stop(1, #ffec64));
+	background:-moz-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-webkit-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-o-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:-ms-linear-gradient(top, #ffab23 5%, #ffec64 100%);
+	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64',GradientType=0);
+	background-color:#ffab23;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+</style>
+
+</head>
+<body>
+
+    
+<div class="header">
+
+    <div class="container">
+
+        <img src="/images/header10.jpg" alt="Eryaman Rehberi" loading="lazy"  />
+        <div class="row topnav">
+        <div class="nine columns">
+            
+            <div class="ustmenu">
+			<a href="https://www.bilgiemlak.com.tr/" title="Bilgi Ofisi Emlak Anasayfa" target="_blank">&raquo; Bilgi Ofisi Emlak Anasayfa </a>
+            <a href="https://eryaman.bilgiemlak.com.tr/" title="Eryaman Konut Rehberi">&raquo; Eryaman Konut Rehberi </a>
+            <a href="https://eryaman.bilgiemlak.com.tr/firma-rehberi.php" title="Eryaman Firma Rehberi">&raquo; Eryaman Firma Rehberi </a>
+            
+            </div>
+        </div>
+
+
+        <div class="three columns">
+            <div class="aramadiv">
+                <form action="/arama.php" method="get" id="arama"> 
+                    <input type="text" name="kelime" id="kelime" maxlength="100" placeholder="Yer arama" value="" required />
+                        <button type="submit" class="button button-primary" title="Yer arama">
+                            <img width="24" height="24" src="/images/ara.png" alt="Ara" loading="lazy"  />
+                        </button>
+
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+
+    <div class="twelve columns alpha omega">   
+
+        <div class="content">
+
+            <div class="breadcrumb bgbeyaz">
+<em>Eryaman</em>
+</div>
+
+            <h1>Eryaman</h1>
+
+            
+            
+            <div id="yertab">
+                <ul>
+                    <li data-link="harita"><a>Harita</a></li>
+<li data-link="resimleri"><a>Resimleri</a></li>                                     </ul>
+                
+
+<div>
+                    <div> 
+                        
+                        
+                        <div id="map" style="border:1px solid #ddd;width: 100%; height: 550px; margin:2px;"></div>
+                    </div>
+
+                        <div>
+                        <ul class="rslides"><li><img alt="Eryaman" src="/resimler/51e17352e084c.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/526a8ac5beacf.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/526a8bf248928.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/526fe5b6ea348.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/526fe6024808c.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/526fe623d1c53.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/5295b6b9af1e6.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/5295b6bee2620.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/5295b6c549921.jpg" alt="" loading="lazy" /></li><li><img alt="Eryaman" src="/resimler/5295b6ca6a975.jpg" alt="" loading="lazy" /></li></ul>
+                            <div class="clear"></div>
+                        </div>
+
+                    
+                </div>
+            </div>
+
+            <div class="clear"></div>
+            <br />
+
+
+<div class="baslik"><span>Mahalleler</span></div>
+<div class="tipicerik row">
+<div class="six columns"><a href="/yer/altay-mahallesi-35" title="Altay Mahallesi" lat="39.972301" lng="32.641491" class="yerll"><img class="thumb" alt="Altay Mahallesi" loading="lazy" src="/resimler/t_526a8c8b9a0af.jpg" />
+Altay Mahallesi</a></div><div class="six columns"><a href="/yer/eryaman-mh-22" title="Eryaman Mh." lat="39.974483" lng="32.618858" class="yerll"><img class="thumb" alt="Eryaman Mh." loading="lazy" src="/resimler/t_526a8d961fe69.jpg" />
+Eryaman Mh.</a></div><div class="six columns"><a href="/yer/goksu-mh-36" title="Göksu Mh." lat="39.993668" lng="32.644512" class="yerll"><img class="thumb" alt="Göksu Mh." loading="lazy" src="/resimler/t_526a8e52b92b2.jpg" />
+Göksu Mh.</a></div><div class="six columns"><a href="/yer/guzelkent-mh-37" title="Güzelkent Mh." lat="39.990238" lng="32.611736" class="yerll"><img class="thumb" alt="Güzelkent Mh." loading="lazy" src="/resimler/t_526a8f6f1e76f.jpg" />
+Güzelkent Mh.</a></div><div class="six columns"><a href="/yer/susuz-mh-38" title="Susuz Mh." lat="40.010033" lng="32.623688" class="yerll"><img class="thumb" alt="Susuz Mh." loading="lazy" src="/resimler/t_526a92ce31bc8.jpg" />
+Susuz Mh.</a></div><div class="six columns"><a href="/yer/sehit-osman-avci-mh-39" title="Şehit Osman Avcı Mh." lat="39.979340" lng="32.655128" class="yerll"><img class="thumb" alt="Şehit Osman Avcı Mh." loading="lazy" src="/resimler/t_526a93521f8a2.jpg" />
+Şehit Osman Avcı Mh.</a></div><div class="six columns"><a href="/yer/seker-mh-41" title="Şeker Mh." lat="39.966236" lng="32.657799" class="yerll"><img class="thumb" alt="Şeker Mh." loading="lazy" src="/resimler/t_526a93e46b1da.jpg" />
+Şeker Mh.</a></div><div class="six columns"><a href="/yer/seyh-samil-mh-40" title="Şeyh Şamil Mh." lat="39.998951" lng="32.626720" class="yerll"><img class="thumb" alt="Şeyh Şamil Mh." loading="lazy" src="/resimler/t_526a94433f786.jpg" />
+Şeyh Şamil Mh.</a></div><div class="six columns"><a href="/yer/tunahan-mh-42" title="Tunahan Mh." lat="39.987026" lng="32.622841" class="yerll"><img class="thumb" alt="Tunahan Mh." loading="lazy" src="/resimler/t_52690ae2001fd.jpg" />
+Tunahan Mh.</a></div><div class="six columns"><a href="/yer/yavuz-selim-mh-43" title="Yavuz Selim Mh." lat="40.000027" lng="32.613026" class="yerll"><img class="thumb" alt="Yavuz Selim Mh." loading="lazy" src="/resimler/t_526a9559aad4b.jpg" />
+Yavuz Selim Mh.</a></div><div class="six columns"><a href="/yer/yenibati-mahallesi-1901" title="Yenibatı Mahallesi" lat="39.985340" lng="32.661396" class="yerll"><img class="thumb" alt="Yenibatı Mahallesi" loading="lazy" src="/resimler/t_52ac830721302.jpg" />
+Yenibatı Mahallesi</a></div></div><div class="clear"></div><br />
+<div class="sosyal">
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feryaman.bilgiemlak.com.tr%2F" rel="noopener" target="_blank" class="sosyalLink share-on-facebook" aria-label="Facebook'ta paylaşın">
+        <svg fill="#ffffff" height="16" viewBox="0 0 32 32" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M18,32V18h6l1-6h-7V9c0-2,1.002-3,3-3h3V0c-1,0-3.24,0-5,0c-5,0-7,3-7,8v4H6v6h6v14H18z" /></svg></a>
+    <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Feryaman.bilgiemlak.com.tr%2F" rel="noopener" target="_blank" class="sosyalLink share-on-twitter" aria-label="Twitleyin">
+        <svg fill="#ffffff" height="16" viewBox="0 0 512 512" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M492,109.5c-17.4,7.7-36,12.9-55.6,15.3c20-12,35.4-31,42.6-53.6c-18.7,11.1-39.4,19.2-61.5,23.5  C399.8,75.8,374.6,64,346.8,64c-53.5,0-96.8,43.4-96.8,96.9c0,7.6,0.8,15,2.5,22.1C172,179,100.6,140.4,52.9,81.7  c-8.3,14.3-13.1,31-13.1,48.7c0,33.6,17.1,63.3,43.1,80.7C67,210.7,52,206.3,39,199c0,0.4,0,0.8,0,1.2c0,47,33.4,86.1,77.7,95  c-8.1,2.2-16.7,3.4-25.5,3.4c-6.2,0-12.3-0.6-18.2-1.8c12.3,38.5,48.1,66.5,90.5,67.3c-33.1,26-74.9,41.5-120.3,41.5  c-7.8,0-15.5-0.5-23.1-1.4C62.9,432,113.8,448,168.4,448C346.6,448,444,300.3,444,172.2c0-4.2-0.1-8.4-0.3-12.5  C462.6,146,479,128.9,492,109.5z"></path></svg>
+    </a>
+</div>
+
+        </div>
+    </div>
+	<div class="four columns omega"> 
+	<div class="kutu">
+	<div class="bilgikutu ortala">
+<div class="kutubaslik">Satılık ve Kiralık Emlak Ekle</div>
+<div class="kutuicerik">
+<a href="https://www.bilgiemlak.com.tr/emlak-ekle.php" title="Emlak Ekle">
+<img src="/images/emlakekle.gif" />
+<br ><a href="https://www.bilgiemlak.com.tr/emlak-ekle.php" title="Emlak Ekle"><em>25 Yıllık Bilgi Birikimi ve Tecrübesiyle,<br />
+BİLGİ OFİSİ EMLAK 
+Güvencesiyle Gayrimenkulünüzü 
+Birlikte Değerlendirelim.</em> </a>
+
+<div class="bilgikutu ortala">
+ERYAMAN' da SATILIK ve KİRALIK lar bilgiemlak.com.tr </div>
+</div>
+</div>  
+</div>
+
+
+	
+  
+	<div class="kutu">
+<div class="kutuicerik">
+<div class="baslik"><span>ERYAMAN BÖLGELER</span></div>
+<ul class="">
+<li><a href="/yer/1-etap-47" title="Eryaman 1. Etap" class="myButton">Eryaman 1. Etap</a></li>
+<li><a href="/yer/2-etap-48" title="Eryaman 2. Etap" class="myButton">Eryaman 2. Etap</a></li>
+<li><a href="/yer/3-etap-44" title="Eryaman 3. Etap" class="myButton">Eryaman 3. Etap</a></li>
+<li><a href="/yer/4-etap-45" title="Eryaman 4. Etap" class="myButton">Eryaman 4. Etap</a></li>
+<li><a href="/yer/5-etap-46" title="Eryaman 5. Etap" class="myButton">Eryaman 5. Etap</a></li>
+<li><a href="/yer/6-etap-oyak-atakent-49" title="Eryaman 6. Etap (Oyak, Atakent)" class="myButton">Eryaman 6. Etap (Oyak, Atakent)</a></li>
+<li><a href="/yer/altay-mahallesi-konutlari-439" title="Altay Mahallesi Konutları" class="myButton">Eryaman Altay Mahallesi Konutları</a></li>
+<li><a href="/yer/devlet-mah-52" title="Eryaman Devlet Mah." class="myButton">Eryaman Devlet Mah.</a></li>
+<li><a href="/yer/dogakent-51" title="Eryaman Doğakent" class="myButton">Eryaman Doğakent</a></li>
+<li><a href="/yer/eryaman-mahallesi-konutlari-258" title="Eryaman Mahallesi Konutları" class="myButton">Eryaman Mahallesi Konutları</a></li>
+<li><a href="/yer/eryamanevleri-50" title="Eryamanevleri" class="myButton">Eryamanevleri	</a></li>
+<li><a href="/yer/etikent-828" title="Eryaman Etikent" class="myButton">Eryaman Etikent	</a></li>
+<li><a href="/yer/goksu-kentsel-gelisim-ve-donusum-bolgesi-2296" title="Göksu Kentsel Gelişim ve Dönüşüm Bölgesi" class="myButton">Eryaman Göksu Kentsel Gelişim ve Dönüşüm Bölgesi	</a></li>
+<li><a href="/yer/yer/guzelkent-53" title="Eryaman Güzelkent" class="myButton">Eryaman Güzelkent</a></li>
+<li><a href="/yer/guzelkent-villalar-54" title="Eryaman Güzelkent Villalar" class="myButton">Eryaman Güzelkent Villalar	</a></li>
+<li><a href="/yer/laleevleri-kc-konutlari-405" title="Eryaman Laleevleri (KC) Konutları" class="myButton">Eryaman Laleevleri (KC) Konutları</a></li>
+<li><a href="/yer/ozahikent-56" title="Özahikent" class="myButton">Eryaman Özahikent</a></li>
+<li><a href="/yer/susuz-mh-konutlari-829" title="Eryaman Susuz Mh. Konutları" class="myButton">Eryaman Susuz Mh. Konutları</a></li>
+<li><a href="/yer/yenibati-mahallesi-1901" title="Eryaman Yenibatı Mh. Konutları (2)" class="myButton">Eryaman Yenibatı Mh. Konutları</a></li>
+<li><a href="/yer/sehit-osman-avci-mh-konutlari-415" title="Eryaman Şehit Osman Avcı Mh. Konutları" class="myButton">Eryaman Şehit Osman Avcı Mh. Konutları</a></li>
+<li><a href="/yer/seyh-samil-mh-konutlari-830" title="Eryaman Şeyh Şamil Mh. Konutları" class="myButton">Eryaman Şeyh Şamil Mh. Konutları	</a></li>
+<li><a href="/yer/turkonut-gol-bolgesi-122" title="Eryaman Türkonut Göl Bölgesi" class="myButton">Eryaman Türkonut Göl Bölgesi		</a></li>
+<li><a href="/yer/turkonut-metro-bolgesi-121" title="Eryaman Türkonut Metro Bölgesi" class="myButton">Eryaman Türkonut Metro Bölgesi	</a></li>
+<li><a href="/yer/yavuz-selim-mh-konutlari-831" title="Eryaman Yavuz Selim Mh. Konutları" class="myButton">Eryaman Yavuz Selim Mh. Konutları	</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+        ﻿<div class="sixteen columns">
+    
+    <div class="footer">
+
+   <p>&copy; 2012-2026 www.bilgiemlak.com.tr<br />
+            Tüm hakları saklıdır.</p>
+    </div>
+</div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-44818536-1', 'bilgiemlak.com.tr');
+  ga('send', 'pageview');
+
+</script>
+    <script src="/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script src="/js/zozo.tabs.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/lightbox.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/js/responsiveslides.min.js"></script>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+
+    <script src="/js/Polyline.encoded.js"></script>
+
+    <script>
+        let mymap = L.map('map');
+        let mmr = L.marker([39.993309,32.629211]);
+        mmr.bindPopup('Eryaman');
+        mmr.addTo(mymap);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png?{foo}', {foo: 'bar',
+            attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(mymap);
+
+        mymap.setView([39.993309,32.629211],14);
+
+
+        let bounds = L.latLngBounds();
+
+                mpol("ud~rFoo~eEoR}CoJ}Ay]dFmVmCkL{KsK?cJmG_DnHyA|CAxMeHMqI}HSvGiK~OdKpYdB~ICdGaNgDirA_Lau@el@_SwgBvWs\\n\\uWqLai@}Ygy@rGep@`n@sSth@{Gt_@}Al{@rD^{EtAuPu@uOZwBPcH|B{KxAkC~IbDxNlR|DmGxFqCbC{@`B_BvAgAfCkBhCKhC~Bw@vl@f[eGjO_HdBZnSmEtP}DhJmEdFiOz@YLlMJnRgAd^kLxoByRxyAyBjg@qE`l@","","","","");
+
+        mpol("wq~rFevgfEpT_IhH{JnSvL|OtJ_Ad^qEx`@mH`l@}XgQoi@}LmQu@j@eoA","Altay Mahallesi","/yer/altay-mahallesi-35");mpol("}a}rFq~cfEiY{Ra_@}LyOgBcIQ{DrqEtYuDr^hCjMih@dEih@hDen@nAqN","Eryaman Mh.","/yer/eryaman-mh-22");mpol("}x_sFygffEd@ul@cHnCq^dA_Cc@gTql@aH]aMUcOi@uP{@qKEaCE{R~mCfRuKpP_H|PqChc@B|h@hCdVz@","Göksu Mh.","/yer/goksu-mh-36");mpol("{``sFk|_fEkLuEsGcDkTaOcJgUiDiNuB{Gm@kHeLlAgHF{Is@`ApJjFdMjLrO?v[?~Q}LnZ|KvKfEAFgNtAuBhD{IfMxHzH[nKbLzWfB","Güzelkent Mh.","/yer/guzelkent-mh-37");mpol("cxbsFio|eE@yFa@a@qAqIs@}A}ImVnKsPReHb@mDuR_ScSdBaEeZoIdBKkCtCu`@dCa]jCkA}BcJnC_DaEaIjI{K}GyLqN_NbTeqC}SbAyMj@aIbA{I|AuHvBuKjDgHtAmHnBmFdE{AfFFzKoA~IoBtISnFz@~EnYjt@nIp]g@bOsU`OuIdIgP|StPhjBfu@dn@","Susuz Mh.","/yer/susuz-mh-38");mpol("qk}rFajjfE`BzKuAfQ{BrOuAfJkDxG_HjGuIfCmNr@}JG{IIgInBsE|AyW`@aGq@gBqC}C_JgGcSl@eEtH{Dvc@cH~i@cLnQoIbEX","Şehit Osman Avcı Mh.","/yer/sehit-osman-avci-mh-39");mpol("kr}rFclhfEfGia@`AmLiByN~[_J~FwQX~n@iC`f@wBh^","Şeker Mh.","/yer/seker-mh-41");mpol("e{asF_lefEcAjg@y@`RuA|^{O|AmPeBoIxCyGpCwKrOaIzIlCw]|Cy@oDsIdE_D{DaJ`H}JuS_\\pVyMrTcH","Şeyh Şamil Mh.","/yer/seyh-samil-mh-40");mpol("syasFojefEs@`VgAbb@uAh]`Ix`@tI~T~TlPjSvJh@i@bCeeD","Tunahan Mh.","/yer/tunahan-mh-42");mpol("qdcsFqobfEhBpJ~FnN|KvMEzo@sKrVwDuDaNsNwRxByDgYoIdBpBae@fQwT|J}H","Yavuz Selim Mh.","/yer/yavuz-selim-mh-43");mpol("ssasFebifEiBcCz@gOT{@s@sMCiBj@eEJkFdEiNpIdEr@r@`GfLrAzBbBj@rAcAnAwC~EkC~CuAlBkBhGyE|AQpCzBw@jl@wl@nLcKrB","Yenibatı Mahallesi","/yer/yenibati-mahallesi-1901");
+        setTimeout(function(){
+            mymap.setZoom(mymap.getZoom() - 2);
+        }, 1200);
+
+        function mpol (polkod,adi, link) {
+
+            let polyline = L.Polyline.fromEncoded(polkod).addTo(mymap);
+
+            let polygon = L.Polygon.fromEncoded(polkod, {
+                weight: 1,
+                color: '#2196f3'
+            })
+
+            if(adi !== "") {
+                polygon.bindTooltip(adi, { sticky: true })
+                    .bindPopup('<a href="'+link+'">'+adi+'</a>');
+            }
+
+            polygon.addTo(mymap);
+
+            mymap.fitBounds(polyline.getBounds());
+
+        }
+
+        // **********
+
+        jQuery(document).ready(function ($) {
+
+            $(".rslides").responsiveSlides(
+                {
+                    nav: true,
+                    pager: true,
+                    namespace: "centered-btns"
+                }
+            );
+
+            $("#yertab").zozoTabs({
+                theme: "red",
+                rounded: true,
+                orientation: "horizontal",
+                urlBased: true,
+                manualTabId: true,
+                defaultTab: "harita"
+            });
+
+
+        });
+
+    </script>
+
+</div>
+
+</body>
+</html>
