@@ -423,3 +423,14 @@ sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
 > 04.10 — kota ölçümü: 11 kabul, 12. "Kota Aşıldı" (28 gündür istek yoktu → günlük tavan ~11).
 > UI tuzağı çözüldü: tıklama/klavye olayları ulaşmıyordu; form_input + JS Enter + JS düğme
 > tıklaması (gsc-dizin becerisi) 11/11 çalıştı. IndexNow: 49 adres Bing/Yandex'e bildirildi (200).
+
+> 07.10 — API denetimi (istek-sonuc.tsv, n=70): tüm isteklerin 70/70'i dizinde; 04.10'da DİZİNDE OLAN
+> 11 sayfaya gönderilen isteklerin 11'i de istek dakikasında yeniden tarandı (16:25–16:53Z) → "dizindeki
+> sayfaya istek tarama getirmez" (02.09, n=2) bulgusu genellenemez, kaldıraç defteri güncellendi.
+> 07.10 ~15:40 — altintepe-sitesi için istek (Chrome, 04.10 JS reçetesi): kutu + Enter çalıştı, sayfa
+> "URL Google'da mevcut" (API: son tarama 12.09); düğme tıklandı → 5 sn'de "Hata! Bir sorun oluştu —
+> Dizine ekleme isteğiniz gönderilirken sorun oldu" (sınırın ikinci yüzü, 01.09 dersi). İstek
+> İŞLENMEDİ, işaretlenmedi. Son 24 saatte UI isteği yoktu; aynı gün ~140 API URL denetimi yapılmıştı
+> (53 görünmez + 70 istek + 17 ek) — ilişki bilinmiyor, hipotez olarak not. Kural gereği bugün DUR;
+> 08.10 09:00 sonrası tek deneme (altintepe, sonra platin-konutlari; ikisi de dizinde, amaç PR #91
+> kopyasının yeniden taranması).

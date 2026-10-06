@@ -558,7 +558,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_etiketli_pay": 100.0,
+   "son_etiketli_pay": 94.1,
    "onceki_etiketli_pay": 100.0,
    "olcum_yontemi_degisti": false
   },
@@ -566,7 +566,7 @@
    "ad": "Hedef sorgu: harita kutusunda",
    "birim": "sorgu",
    "artis": "iyi",
-   "son": 9,
+   "son": 3,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -583,7 +583,7 @@
     9,
     null,
     null,
-    9
+    3
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -596,7 +596,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 6,
-   "son_etiketli_pay": 100.0,
+   "son_etiketli_pay": 94.1,
    "onceki_etiketli_pay": null,
    "olcum_yontemi_degisti": false,
    "not": "7 gün önceki değer ölçülmedi"
@@ -605,15 +605,15 @@
    "ad": "Hedef sorgu: ilk 10 dışında",
    "birim": "sorgu",
    "artis": "kotu",
-   "son": 7,
+   "son": 6,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": 7,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 0,
-   "fark_yuzde": 0.0,
-   "yon": "nötr",
+   "fark": -1,
+   "fark_yuzde": -14.3,
+   "yon": "iyi",
    "sparkline": [
     7,
     7,
@@ -622,7 +622,7 @@
     7,
     7,
     7,
-    7
+    6
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -635,7 +635,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_etiketli_pay": 100.0,
+   "son_etiketli_pay": 94.1,
    "onceki_etiketli_pay": 100.0,
    "olcum_yontemi_degisti": false
   },
