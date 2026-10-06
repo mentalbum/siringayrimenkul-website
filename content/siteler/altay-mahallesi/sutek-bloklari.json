@@ -30,7 +30,9 @@
         "Hürriyet",
         "Kurtuluş",
         "Zafer"
-      ]
+      ],
+      "alanM2": 6400,
+      "nitelik": "5 Adet Kargir Apartman"
     },
     {
       "no": "17540",
@@ -39,16 +41,21 @@
         "Gökmen",
         "Kuşluca",
         "Pınarcık"
-      ]
+      ],
+      "alanM2": 5928,
+      "nitelik": "4 Adet Kargir Apartman"
     },
     {
       "no": "17542",
+      "parsel": "2",
       "bloklar": [
         "Alkan",
         "Gemlik",
         "Köşker",
         "Reşadiye"
-      ]
+      ],
+      "alanM2": 6343,
+      "nitelik": "4 Blok Kargir Apartman"
     },
     {
       "no": "17543",
@@ -58,7 +65,9 @@
         "Işıklı",
         "Kuyucak",
         "Oymapınar"
-      ]
+      ],
+      "alanM2": 7001,
+      "nitelik": "5 Adet Kargir Apartman"
     }
   ],
   "ozellikler": [

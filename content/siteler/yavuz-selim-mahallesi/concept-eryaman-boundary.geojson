@@ -4,7 +4,8 @@
   "isim": "Concept Eryaman",
   "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
   "adalar": [
-   "46445/1"
+   "46445/1",
+   "46446/1"
   ]
  },
  "geometry": {
@@ -35,6 +36,34 @@
      [
       32.61776,
       40.00212
+     ]
+    ]
+   ],
+   [
+    [
+     [
+      32.61638,
+      40.00221
+     ],
+     [
+      32.61569,
+      40.00179
+     ],
+     [
+      32.61637,
+      40.00119
+     ],
+     [
+      32.61642,
+      40.00119
+     ],
+     [
+      32.61702,
+      40.00161
+     ],
+     [
+      32.61638,
+      40.00221
      ]
     ]
    ]

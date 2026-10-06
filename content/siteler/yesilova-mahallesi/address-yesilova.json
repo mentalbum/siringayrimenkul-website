@@ -7,11 +7,13 @@
     "lng": 32.610743
   },
   "sinirGeoJSON": "siteler/yesilova-mahallesi/address-yesilova-boundary.geojson",
-  "aciklama": "Address Yeşilova, Yeşilova Mahallesi'nde 12 katlı ana bloğu ve 2'şer katlı iki yan bloğuyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '2'şer Katlı A ve C Blok ile 12 Katlı B Blok' niteliğiyle kayıtlı 3.162 m²'lik kat mülkiyetli parsel üzerine kuruludur. Kompakt ölçeğiyle Yeşilova'nın genç dokusunda bilinen yeni nesil adreslerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Address Yeşilova, Yeşilova Mahallesi'nde 12 katlı ana bloğu ve 2'şer katlı iki yan bloğuyla modern bir konut sitesidir. TKGM kayıtlarına göre site, tapuda '2'şer Katlı A ve C Blok ile 12 Katlı B Bloktan Oluşan Betonarme Ofis ve İşyeri' niteliğiyle kayıtlı 3.162 m²'lik kat mülkiyetli parsel üzerine kuruludur. Kompakt ölçeğiyle Yeşilova'nın genç dokusunda bilinen yeni nesil adreslerdendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "47542",
-      "parsel": "6"
+      "parsel": "6",
+      "alanM2": 3162,
+      "nitelik": "2' Şer Katlı A Ve C Blok, 12 Katlı B Bloktan Oluşan Betonarme Ofis Ve İşyeri Ve Arsa"
     }
   ],
   "ozellikler": [

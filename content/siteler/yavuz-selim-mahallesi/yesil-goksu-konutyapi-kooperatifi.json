@@ -11,16 +11,20 @@
   "adalar": [
     {
       "no": "45821",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 9833,
+      "nitelik": "4 Blok Kargir Apartman"
     },
     {
       "no": "45819",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 7191,
+      "nitelik": "3 Adet Kargir Apartman"
     }
   ],
   "ozellikler": [
-    "~9.833 m² parsel (TKGM)",
-    "4 blok (tapu)",
+    "İki parsel: ~9.833 m² + ~7.191 m² — toplam ~17 dönüm (TKGM)",
+    "7 blok — iki parselde 4 + 3 (tapu)",
     "Kat mülkiyetli parsel (TKGM)",
     "Yavuz Selim Mahallesi — kadastroda Eryaman kaydı"
   ],

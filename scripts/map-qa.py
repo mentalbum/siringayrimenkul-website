@@ -80,11 +80,23 @@ def main():
             total += 1
             s = json.load(open(sfile))
             b = json.load(open(bpath))
-            for ada in b.get("properties", {}).get("adalar", []):
+            b_adalar = list(b.get("properties", {}).get("adalar", []))
+            for ada in b_adalar:
                 parsel_owners.setdefault(f"{mslug}:{ada}", []).append(slug)
             rs = rings(b["geometry"])
             if not rs:
                 anomalies.append((mslug, s["isim"], "geometri yok")); continue
+            # Künye JSON'u ile sınır dosyası AYNI parselleri saymalı (2026-08-12
+            # süpürmesi: 8 kayıtta JSON düzeltilmiş, geojson eski parselde kalmıştı —
+            # Karma Modern reddedilen 46656/5'i, Güzel Ev komşusunun parselini çiziyordu).
+            # Sınır dosyasının adalar listesi halka sayısıyla da hizalı olmalı: harita
+            # etiketleri halka sırasından okunur.
+            j_adalar = {f"{a['no']}/{a.get('parsel') or '1'}" for a in s.get("adalar") or []}
+            if j_adalar != set(b_adalar):
+                anomalies.append((mslug, s["isim"],
+                                  f"JSON {sorted(j_adalar)} ≠ geojson {sorted(b_adalar)}"))
+            if len(rs) != len(b_adalar):
+                anomalies.append((mslug, s["isim"], f"{len(rs)} halka, {len(b_adalar)} etiket"))
             clng, clat = centroid(rs[0])
             if mb_rings and not any(point_in_ring(clng, clat, r) for r in mb_rings):
                 anomalies.append((mslug, s["isim"], "parsel merkezi mahalle sınırı DIŞINDA"))

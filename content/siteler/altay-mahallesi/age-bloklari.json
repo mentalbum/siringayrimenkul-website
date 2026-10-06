@@ -37,7 +37,9 @@
         "Ortaköy",
         "Payamlı",
         "Yunuslar"
-      ]
+      ],
+      "alanM2": 6921,
+      "nitelik": "8 Adet Kargir Apartman"
     },
     {
       "no": "17544",
@@ -50,7 +52,9 @@
         "Ortaca",
         "Sümbül",
         "Yenisu"
-      ]
+      ],
+      "alanM2": 7428,
+      "nitelik": "8 Adet Kargir Apartman"
     },
     {
       "no": "17545",
@@ -63,17 +67,22 @@
         "Ovacık",
         "Sabırlı",
         "Yenice"
-      ]
+      ],
+      "alanM2": 6160,
+      "nitelik": "8 Adet Kargir Apartman"
     },
     {
       "no": "17547",
+      "parsel": "2",
       "bloklar": [
         "Aktaş",
         "Erguvan",
         "Kısmetli",
         "Olgunlar",
         "Yarımca"
-      ]
+      ],
+      "alanM2": 5848,
+      "nitelik": "5 Adet Kargir Apartman"
     },
     {
       "no": "17555",
@@ -85,7 +94,9 @@
         "Pamucak",
         "Süphan",
         "Yiğitler"
-      ]
+      ],
+      "alanM2": 6258,
+      "nitelik": "7 Adet Karğir Apartman"
     },
     {
       "no": "17556",
@@ -97,7 +108,9 @@
         "Zambak",
         "Çağla",
         "Özlü"
-      ]
+      ],
+      "alanM2": 5476,
+      "nitelik": "7 Adet Kargir Apartman"
     },
     {
       "no": "17557",
@@ -109,7 +122,9 @@
         "Papatya",
         "Yeşilyurt",
         "Ören"
-      ]
+      ],
+      "alanM2": 6066,
+      "nitelik": "7 Adet Karğir Apartman"
     },
     {
       "no": "17558",
@@ -123,7 +138,9 @@
         "Pamukkale",
         "Yeşilköy",
         "Özyurt"
-      ]
+      ],
+      "alanM2": 7140,
+      "nitelik": "9 Adet Kargir Apartman"
     }
   ],
   "ozellikler": [
