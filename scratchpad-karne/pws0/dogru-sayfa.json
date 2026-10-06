@@ -1,49 +1,16 @@
 {
- "guncelleme": "2026-10-04",
+ "guncelleme": "2026-10-07",
  "toplam": 511,
  "hepsi": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 328
+   "n": 339
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 57
-  },
-  {
-   "k": "eski",
-   "ad": "Taşınmadan önceki adres",
-   "n": 44
-  },
-  {
-   "k": "baska_site",
-   "ad": "Başka bir site sayfamız",
-   "n": 38
-  },
-  {
-   "k": "ada",
-   "ad": "Ada sayfamız",
-   "n": 22
-  },
-  {
-   "k": "mahalle",
-   "ad": "Mahalle sayfamız",
-   "n": 18
-  },
-  {
-   "k": "dis",
-   "ad": "Bize ait olmayan sonuç",
-   "n": 4
-  }
- ],
- "ilk3_toplam": 383,
- "ilk3": [
-  {
-   "k": "dogru",
-   "ad": "Doğru site sayfası",
-   "n": 309
+   "n": 56
   },
   {
    "k": "eski",
@@ -53,32 +20,65 @@
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 19
+   "n": 37
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 8
+   "n": 19
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 6
+   "n": 16
+  },
+  {
+   "k": "dis",
+   "ad": "Bize ait olmayan sonuç",
+   "n": 3
   }
  ],
- "ilk3_dogru": 309,
+ "ilk3_toplam": 384,
+ "ilk3": [
+  {
+   "k": "dogru",
+   "ad": "Doğru site sayfası",
+   "n": 318
+  },
+  {
+   "k": "eski",
+   "ad": "Taşınmadan önceki adres",
+   "n": 37
+  },
+  {
+   "k": "baska_site",
+   "ad": "Başka bir site sayfamız",
+   "n": 20
+  },
+  {
+   "k": "ada",
+   "ad": "Ada sayfamız",
+   "n": 5
+  },
+  {
+   "k": "mahalle",
+   "ad": "Mahalle sayfamız",
+   "n": 4
+  }
+ ],
+ "ilk3_dogru": 318,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
    22
   ],
   [
-   "goksu-mahallesi",
-   21
-  ],
-  [
    "sehit-osman-avci-mahallesi",
    19
+  ],
+  [
+   "goksu-mahallesi",
+   14
   ],
   [
    "yavuz-selim-mahallesi",
@@ -89,23 +89,23 @@
    12
   ],
   [
-   "eryaman-mahallesi",
-   8
-  ],
-  [
    "yesilova-mahallesi",
    7
+  ],
+  [
+   "devlet-mahallesi",
+   6
   ],
   [
    "tunahan-mahallesi",
    6
   ],
   [
-   "devlet-mahallesi",
+   "seker-mahallesi",
    5
   ],
   [
-   "seker-mahallesi",
+   "eryaman-mahallesi",
    5
   ],
   [

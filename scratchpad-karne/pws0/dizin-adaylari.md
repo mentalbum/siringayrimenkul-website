@@ -1,13 +1,13 @@
 # DİZİN İSTEĞİ ADAYLARI — SERP turlarından üretildi
 
-Üretim: 04.10.2026 · `python3 dizin-adaylari-uret.py`  
+Üretim: 07.10.2026 · `python3 dizin-adaylari-uret.py`  
 Ölçüt: sayfa SERP'te kayıp + dizinde bayat. Dizinsizlere kota harcanmaz
 (Özgün kararı) — ayrı bölümde. İstek gönderilmişler düşüldü.  
 Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıldı, 410.  
 **Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve
 SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
-**2 aday · 229 SIRA sorunu (kota harcanmaz) · 28 istek gönderilmiş bekliyor · 62 dizinsiz**
+**2 aday · 230 SIRA sorunu (kota harcanmaz) · 28 istek gönderilmiş bekliyor · 61 dizinsiz**
 
 > **Aday olmak için SERP'te kayıp olmak yetmez, Google'da OLMAMAK gerekir.**
 > 31.08'de ölçüldü: SERP kaybına göre seçilen 203 sayfanın 203'ü de zaten
@@ -18,7 +18,7 @@ SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
 | # | Sayfa | Mahalle | SERP durumu | Sıra | Gösterim | Son tarama |
 |---|---|---|---|---|---|---|
-| 1 | `platin-konutlari` | Eryaman | GÖRÜNMEZ | yok | 92 | 2026-07-27 |
+| 1 | `platin-konutlari` | Eryaman | komşu sayfa temsil | 2. | 92 | 2026-07-27 |
 | 2 | `altintepe-sitesi` | Yavuz Selim | eski başlık | 1. | 24 | 2026-08-12 |
 
 ## SERP'te kayıp AMA dizinde — kota harcanmaz, sıra sorunu
@@ -39,7 +39,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `dort-mevsim-eryaman-konutlari` (Şeker) — ada temsil, sıra 9., 288 gösterim
 - `karma-modern` (Şehit Osman Avcı) — eski başlık, sıra 1., 274 gösterim
 - `mesa-bloklari` (Altay) — eski başlık, sıra 2., 262 gösterim
-- `havuzlu-bahce-konutlari` (Göksu) — komşu sayfa temsil, sıra 4., 248 gösterim
+- `havuzlu-bahce-konutlari` (Göksu) — eski başlık, sıra 2., 248 gösterim
 - `oyak-goksupark` (Göksu) — GÖRÜNMEZ, sıra yok, 245 gösterim
 - `atakent-2-cumhuriyet-sitesi` (Eryaman) — eski başlık, sıra 2., 241 gösterim
 - `vera-city` (Şehit Osman Avcı) — mahalle sayfası temsil, sıra 5., 236 gösterim
@@ -66,7 +66,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `yeni-kaynak-sitesi` (Yavuz Selim) — eski başlık, sıra 2., 142 gösterim
 - `eylul-sitesi` (Yavuz Selim) — eski başlık, sıra 3., 141 gösterim
 - `tekser-bloklari` (Şeyh Şamil) — eski başlık, sıra 3., 141 gösterim
-- … ve 189 sayfa daha
+- … ve 190 sayfa daha
 
 ## İstek gönderildi, tarama bekliyor
 
@@ -104,14 +104,13 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `arslanlar-sitesi` (Devlet) — eski başlık
 - `dastarli-sitesi` (Devlet) — mahalle sayfası temsil
 - `yesiloz-sitesi` (Devlet) — GÖRÜNMEZ
-- `atakent-1-asiyan-sitesi` (Eryaman) — komşu sayfa temsil
-- `guzel-ankara-evleri-sitesi` (Eryaman) — komşu sayfa temsil
-- `endora-goksu` (Göksu) — eski slug
-- `goksu-bilge-sitesi` (Göksu) — eski slug
+- `atakent-1-asiyan-sitesi` (Eryaman) — eski başlık
+- `guzel-ankara-evleri-sitesi` (Eryaman) — eski başlık
+- `goksu-bilge-sitesi` (Göksu) — eski başlık
 - `goksu-park-vadi-konutlari` (Göksu) — eski başlık
-- `gsv-spor-sitesi` (Göksu) — ada temsil
-- `irem-konutlari` (Göksu) — eski slug
-- `kafdagi-sitesi` (Göksu) — ada temsil
+- `gsv-spor-sitesi` (Göksu) — komşu sayfa temsil
+- `irem-konutlari` (Göksu) — GÖRÜNMEZ
+- `kafdagi-sitesi` (Göksu) — eski başlık
 - `paro-life` (Göksu) — eski slug
 - `polsan1-ayisigi-sitesi` (Göksu) — ada temsil
 - `utkan-sitesi` (Göksu) — eski slug

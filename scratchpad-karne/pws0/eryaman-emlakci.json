@@ -1,18 +1,18 @@
 {
- "guncelleme": "2026-10-04",
+ "guncelleme": "2026-10-07",
  "sorgu": "eryaman emlakçı",
  "kaynak": "api",
  "baslangic": "2026-07-27",
- "son_veri_gunu": "2026-09-29",
- "gun": 65,
+ "son_veri_gunu": "2026-10-04",
+ "gun": 70,
  "pencere": {
   "bas": "2026-07-27",
-  "bit": "2026-09-29",
-  "gun": 65
+  "bit": "2026-10-04",
+  "gun": 70
  },
  "toplam": {
-  "gos": 931,
-  "tik": 36,
+  "gos": 956,
+  "tik": 37,
   "to": 3.9,
   "konum": 1.38
  },
@@ -120,12 +120,12 @@
    "bas": "2026-09-28",
    "bit": "2026-10-04",
    "etiket": "28.09–04.10",
-   "gun": 2,
-   "kismi": true,
-   "gos": 17,
-   "tik": 0,
-   "to": 0.0,
-   "konum": 1.59
+   "gun": 7,
+   "kismi": false,
+   "gos": 42,
+   "tik": 1,
+   "to": 2.4,
+   "konum": 1.5
   }
  ],
  "donemler": [
@@ -221,12 +221,12 @@
   {
    "k": "d3",
    "ad": "Kısaltma sonrası",
-   "etiket": "16.08–29.09",
+   "etiket": "16.08–04.10",
    "bas": "2026-08-16",
-   "bit": "2026-09-29",
-   "gun": 45,
-   "gos": 666,
-   "tik": 19,
+   "bit": "2026-10-04",
+   "gun": 50,
+   "gos": 691,
+   "tik": 20,
    "to": 2.9,
    "konum": 1.43,
    "kucuk_ornek": false,
@@ -234,13 +234,13 @@
     {
      "u": "/",
      "ad": "Ana sayfa",
-     "gos": 665,
-     "tik": 18,
-     "to": 2.7,
+     "gos": 690,
+     "tik": 19,
+     "to": 2.8,
      "konum": 1.41,
-     "gun": 45,
+     "gun": 50,
      "ilk": "2026-08-16",
-     "son": "2026-09-29"
+     "son": "2026-10-04"
     },
     {
      "u": "/mahalleler/eryaman-mahallesi",
@@ -284,13 +284,13 @@
   {
    "u": "/",
    "ad": "Ana sayfa",
-   "gos": 901,
-   "tik": 34,
+   "gos": 926,
+   "tik": 35,
    "to": 3.8,
-   "konum": 2.24,
-   "gun": 65,
+   "konum": 2.22,
+   "gun": 70,
    "ilk": "2026-07-27",
-   "son": "2026-09-29"
+   "son": "2026-10-04"
   },
   {
    "u": "/?utm_source=google&utm_medium=gbp",
@@ -789,15 +789,45 @@
    "gos": 5,
    "tik": 0,
    "konum": 1.6
+  },
+  {
+   "d": "2026-09-30",
+   "gos": 4,
+   "tik": 1,
+   "konum": 1.5
+  },
+  {
+   "d": "2026-10-01",
+   "gos": 5,
+   "tik": 0,
+   "konum": 1.4
+  },
+  {
+   "d": "2026-10-02",
+   "gos": 1,
+   "tik": 0,
+   "konum": 2.0
+  },
+  {
+   "d": "2026-10-03",
+   "gos": 11,
+   "tik": 0,
+   "konum": 1.36
+  },
+  {
+   "d": "2026-10-04",
+   "gos": 4,
+   "tik": 0,
+   "konum": 1.5
   }
  ],
  "notlar": [
-  "TO üç dönemde %5,5 → %9,2 → %2,9 (27.07–11.08 / 12.08–15.08 / 16.08–29.09); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
+  "TO üç dönemde %5,5 → %9,2 → %2,9 (27.07–11.08 / 12.08–15.08 / 16.08–04.10); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
   "GSC “konum”u mülk düzeyinde en iyi adresimizin konumudur. 27.07–11.08 arasında bu adres harita kutusundaki GBP bağıydı (utm'li adres, konum 1,2, 199 gösterim / 1 tık); ana sayfa “/” aynı günlerde konum 5,8. utm'li adres 11.08 sonrası GSC'de yok (URL denetimi: DIŞARIDA — URL is unknown to Google) ve “/” konumu 1,4 oldu — harita bağının gösterimi artık “/” adresine yazılıyor. Yani sabit görünen 1,2–1,4 harita kutusunun konumudur; organik sırayı GSC değil pws=0 SERP ölçümü verir.",
   "pws=0 SERP ölçümlerinde organik sıra: 3 (09.08), 3 (15.08), 2 (17.08), 3 (30.08); harita kutusunda 1. sıra 4/4 ölçümde. Organik sıra sabit, harita sabit, TO düştü → sorun sırada değil, snippet/başlıkta.",
-  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–29.09 döneminde 18 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
+  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–04.10 döneminde 19 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
   "Baş şüpheli: 2026-08-15 ana sayfa meta description kısaltması (commit 3f58e7f: “ana sayfa 'kim' düzeni: güvenilir emlakçı pasajı SSS'ten görünür metne, blog SSS altına, meta description 229→119, alıcı hitabı kalktı, SSS #6 pozitif kuruldu (#24)”). TO düşüşü bu tarihten sonraki dönemde görülüyor; nedensellik ölçülmedi, tek şüpheli değil (aynı günlerde harita bağı da “/” adresine geçti).",
   "Title/H1 donuk, serbest kalma tarihi 07.09 (08.08 değişikliğinin 4 haftalık bekleme süresi); o tarihe kadar müdahale yalnızca meta description olabilir."
  ],
- "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 14,3/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 29.09 — GSC 2-3 gün geriden gelir."
+ "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 13,7/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 04.10 — GSC 2-3 gün geriden gelir."
 }

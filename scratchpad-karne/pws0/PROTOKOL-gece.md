@@ -849,3 +849,27 @@ sayfalık bir kaldıracı kapatıyor; bu kadar ince kanıtla kapatılmamalı.
 Adaylar (hepsi dizinde, hepsi 26.07'den beri taranmamış):
 Atatürk, Güneyce, Mavikent, Işıkkent, Göksu Evleri, Havacılar.
 Ölçüt: 24 saat içinde son tarama tarihi değişti mi. Kalan kota ölü sayfalara.
+
+## 07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI
+Özgün talimatı: "ChatGPT'ye durumu aktar, karşılıklı konuşun, uygulayabileceklerini sırayla yap."
+Sohbet "SEO önerilerini önceliklendirme" (akıl yürütme High), iki tur; brifing GSC 28g verisi +
+denendi/ölü listesiyle gitti, ChatGPT ölü yatırımları yeniden önermedi. Uygulanan (PR #105, merge):
+- Hero CTA tüm site sayfalarında: birincil "WhatsApp'tan Konuşalım" (gerçek site adlı hazır mesaj),
+  telefon ikinci, değerleme ghost bağ; yüzen düğme <meta name="wa-mesaj"> okuyor; olaylara `site`
+  parametresi. Gerekçe: form 3 ayda 0 gönderim, temasın tamamı telefon+WhatsApp (14+10/28g).
+- Başlık deneyi 2: 50 tedavi "<Site> Eryaman | Tapu ve Site Bilgileri" + bilgi odaklı description;
+  50 kontrol eski kalıpta. Aday ≥80 gösterim; 04.10'da değişen 45 sayfa, kaldırılan mahalleler ve adaş
+  adlı siteler hariç. Tedavi 15.440 / kontrol 14.293 gösterim, ort. konum 7,65 / 7,60. Okuma 04.11:
+  GSC sayfa×sorgu, aynı konum bandında CTR; SERP 'bas' alanıyla Google'ın başlığı aynen gösterme oranı.
+  Dosyalar: lib/baslik-deneyi-0710.ts, baslik-deneyi-0710.json; kaldıraç defterinde "acik" kayıt.
+- Eski-adres sitemap'i (908 adres) ve robots girdisi kaldırıldı; 308'ler duruyor. GSC'den de silindi.
+  Ölçüt: haftalık SERP "eski" sayısı 41 → <10.
+- "Daire mi arıyorsunuz?" alıcı kutusu data-nosnippet; yetki belgesi TTBS sorgu bağı (hakkımızda).
+- IndexNow: hakkımızda + 520 site sayfası bildirildi. OAI-SearchBot/GPTBot/Bingbot/PerplexityBot 200.
+ChatGPT'nin "dokunma" dedikleri: mahalle kartı inceltme (ilk 3'te yalnız 6 vaka), 1:1 ada 301'i (8 vaka),
+yeni şema. Kuralla elenen: "bu sitenin yönetimi değiliz" notu. Özgün'e düşen: temas etiketleme (4 alan),
+/son-islemler gerçek işlem verisi, GA4 `site` boyutu, BWT paneli, GBP bağı UTM.
+Aynı gün: 4. Devlet Mahallesi Sitesi sayfası 410 (Maliye Lojmanları, ev sahibi yok — PR #104),
+Kurtuluş = Yükselay birleştirmesi (PR #103), 10 kaydın sınır dosyası TKGM parseline oturdu (PR #102).
+Karne: görünmez 53 + istek gönderilmiş sayfalar API ile yeniden denetlendi; gorunmez-teshis,
+dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
