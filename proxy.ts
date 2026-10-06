@@ -77,6 +77,29 @@ const KALDIRILAN_BOLGE_ONEKLERI = [
   "/siteler/yenimahalle",
 ];
 
+/**
+ * KALDIRILAN TEKİL SİTE SAYFALARI — 410 Gone.
+ *
+ * 4. Devlet Mahallesi Sitesi (2026-10-06, Özgün kararı): kayıt 30.06'daki
+ * toplu açılıştan gelmişti; TKGM'ye sorulunca "sitesi" Eryaman Maliye
+ * Lojmanları çıktı (kamu lojmanı, adasız /87-/942-/980 "Tarla" parselleri,
+ * kat mülkiyeti yok) — satacak/kiraya verecek ev sahibi olmayan bir yer.
+ * Sayfa 90 günde 79 gösterim/3 tık almıştı, hepsi komşu site adlarına
+ * sızıntıydı (kendi adıyla hiç aranmıyordu). Yaşayan bir varisi yok, o
+ * yüzden 301 değil 410. Ada sayfası (18700-1) da aynı kayıttan türüyordu;
+ * parsel PR #101'de kayıttan çıkınca o adres de sahipsiz kaldı.
+ * Eski mahalle slug'ı biçimi next.config.ts'teki genel taşıma kuralıyla
+ * önce 308'e düşer, oradan buraya gelir; yine de doğrudan da yazıldı.
+ * Bu set için config.matcher'a da satır eklemek ŞART: site sayfaları
+ * proxy'ye varsayılan olarak uğramaz.
+ */
+const KALDIRILAN_SITE_SAYFALARI = new Set([
+  "/mahalleler/devlet-mahallesi/4-devlet-mahallesi-sitesi",
+  "/mahalleler/devlet/4-devlet-mahallesi-sitesi",
+  "/mahalleler/devlet-mahallesi/adalar/18700-1",
+  "/mahalleler/devlet/adalar/18700-1",
+]);
+
 function kaldirilanBolgede(pathname: string): boolean {
   return KALDIRILAN_BOLGE_ONEKLERI.some(
     (onek) => pathname === onek || pathname.startsWith(onek + "/")
@@ -120,7 +143,11 @@ export function proxy(request: NextRequest) {
   // "/adres/" biçimini 308 ile "/adres"e normalleştiriyor, o da buraya düşüp
   // 410 dönüyor (ölçüldü).
   const { pathname } = request.nextUrl;
-  if (KALDIRILAN_YAZILAR.has(pathname) || kaldirilanBolgede(pathname)) {
+  if (
+    KALDIRILAN_YAZILAR.has(pathname) ||
+    KALDIRILAN_SITE_SAYFALARI.has(pathname) ||
+    kaldirilanBolgede(pathname)
+  ) {
     return new NextResponse(GOVDE, {
       status: 410,
       headers: {
@@ -166,5 +193,10 @@ export const config = {
     "/cumhuriyet",
     "/siteler/yenimahalle/:path*",
     "/siteler/yenimahalle",
+    // Kaldırılan tekil site sayfaları (KALDIRILAN_SITE_SAYFALARI ile birebir):
+    "/mahalleler/devlet-mahallesi/4-devlet-mahallesi-sitesi",
+    "/mahalleler/devlet/4-devlet-mahallesi-sitesi",
+    "/mahalleler/devlet-mahallesi/adalar/18700-1",
+    "/mahalleler/devlet/adalar/18700-1",
   ],
 };

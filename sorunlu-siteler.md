@@ -2227,3 +2227,26 @@ kayıt; pin kaba atılmış. Üç turdur bizi tarlaya sürükleyen buydu.
 fotoğrafları, giriş tabelasında "2 BLOK") Yükselay. Tek sayfada ikisi birden: başlık Yükselay, aranan ad metinde.
 Asıl ad olarak Yükselay seçildi çünkü tapu, blok adlandırması ve yorumlu Google kaydı onu doğruluyor; Kurtuluş'u
 yalnız Yandex ve bizim eski kaydımız taşıyordu.
+
+## 4. Devlet Mahallesi Sitesi SAYFASI KALDIRILDI — 410 (2026-10-06, Özgün kararı: "eveteve")
+Aynı günkü iki bölümün (okul parseli → Maliye Lojmanları kimliği; PR #101) devamı. Özgün'e iki yol sunuldu
+(TUT: adasız parsel desteği + lojman gerçeğini söyleyen metin / SİL), silme onayı geldi.
+**Gerekçe:** yerleşke kamu lojmanı (Eryaman Maliye Lojmanları; adasız /87-/942-/980 "Tarla" parselleri, kat
+mülkiyeti yok) → satacak/kiraya verecek ev sahibi yok; sayfa 90 günde 79 gösterim/3 tık, sorgu kırılımı
+"gülhayat sitesi" 22 + "denizim sitesi" 1 — kendi adıyla HİÇ aranmıyordu. "Gösterimler düşmesin" kuralının
+üçüncü istisnası (TTBS yazısı 31.07, eski FB sayfası 31.08'den sonra); ölçüt yine müşteri değeri.
+**Söküm:**
+- `content/siteler/devlet-mahallesi/4-devlet-mahallesi-sitesi.json` silindi (sınır dosyası PR #101'de
+  gitmişti). `lib/site-olgulari.json`'da kaydı yoktu; kodda/metinde slug'a giden bağ yoktu (grep).
+- `proxy.ts`: yeni `KALDIRILAN_SITE_SAYFALARI` seti + **config.matcher'a dört satır** — site sayfaları
+  proxy'ye varsayılan olarak uğramadığı için sadece sete eklemek YETMEZ (ilk tasarım hatası olurdu).
+  Adresler: iki slug biçimiyle site sayfası + ölü ada adresi `/adalar/18700-1` (parsel PR #101'de kayıttan
+  çıkınca sahipsiz kaldı). Eski mahalle slug'ı önce genel 308 kuralına düşer, oradan 410'a gelir.
+- 301 DEĞİL: yaşayan varis yok. robots.txt'e eklenmedi (kural).
+- Devlet mahalle sayfasındaki site sayısı dinamik; 45 → 44.
+**Ölçüm tarafı:** SERP kuyruk dosyaları (kuyruk-site-emlakci / ilk3-hedef / kuyruk-komple-0409) slug'ı
+hâlâ taşıyor — bir sonraki karne turunda "yok" sayılmasın diye kuyruktan düşürülmeli (üretici varsa
+yeniden üretim yeter). dizin-adaylari-uret.py'nin YASAK süzgeci bu adresi de tanımalı ki 410'lu adrese
+dizin isteği harcanmasın.
+Önbellek dosyaları (nokta-serp/nokta-gmaps-4-devlet…, yeni-18700-1) duruyor; zararsız, ileride Muradiye
+Okulları parseli sorulursa hazır.
