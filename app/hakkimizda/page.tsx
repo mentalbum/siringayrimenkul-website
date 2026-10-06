@@ -20,6 +20,8 @@ import {
 import { ReviewBadge } from "@/components/ui/review-badge";
 
 const YETKI_BELGESI_NO = "0603771";
+/** Ticaret Bakanlığı TTBS belge sorgu ekranı (07.10'da 200 döndüğü doğrulandı). */
+const YETKI_BELGESI_SORGU = "https://ttbs.gtb.gov.tr/Home/BelgeSorgula";
 
 export const metadata: Metadata = {
   title: "Hakkımızda — Eryaman'ın Yerel Emlak Ofisi",
@@ -101,7 +103,17 @@ export default function HakkimizdaPage() {
           ulaşabilirsiniz.
         </p>
         <p className="mt-4 text-xs text-muted">
-          Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO}
+          Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO} ·{" "}
+          {/* Doğrulanabilirlik sinyali (07.10): belge numarası Bakanlığın resmî
+              sorgu ekranına bağlanır; sıralama hilesi değil, kimlik kanıtı. */}
+          <a
+            href={YETKI_BELGESI_SORGU}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline decoration-gold/60 underline-offset-2 hover:text-navy"
+          >
+            Ticaret Bakanlığı kaydında doğrulayın
+          </a>
         </p>
       </header>
 
@@ -170,7 +182,15 @@ export default function HakkimizdaPage() {
                     WhatsApp
                   </a>
                   <span className="text-xs text-muted">
-                    Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO}
+                    Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO} ·{" "}
+                    <a
+                      href={YETKI_BELGESI_SORGU}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-gold/60 underline-offset-2 hover:text-navy"
+                    >
+                      Bakanlık kaydında doğrulayın
+                    </a>
                   </span>
                 </div>
               </div>

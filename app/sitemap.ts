@@ -86,8 +86,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        iddiası kaldırıldı (görünen metin).
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
-    // 06.10: Özgün kartındaki "520sitenin" bitişikliği giderildi (görünen metin).
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
+    // 07.10: yetki belgesi numarası Bakanlığın TTBS sorgu sayfasına bağlandı (görünen metin).
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
   ];
 

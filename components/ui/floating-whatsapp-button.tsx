@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { sendGAEvent } from "@/lib/ga";
 import { PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
@@ -55,7 +56,16 @@ function baglamMesaji(pathname: string): string {
  */
 export function FloatingWhatsAppButton() {
   const pathname = usePathname() ?? "/";
-  const href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(baglamMesaji(pathname))}`;
+  /* Site sayfası kendi gerçek adıyla hazır mesajı <meta name="wa-mesaj"> olarak
+     basar (07.10, ChatGPT istişaresi): slug'dan türetilen ad Türkçe karakterleri
+     düşürüyordu ("Relax Goksu Konutlari"). Sunucu tarafında yol tabanlı mesaj
+     basılır, montajdan sonra meta varsa o kazanır — hidrasyon farkı olmaz. */
+  const [metaMesaj, setMetaMesaj] = useState<string | null>(null);
+  useEffect(() => {
+    const m = document.querySelector<HTMLMetaElement>('meta[name="wa-mesaj"]');
+    setMetaMesaj(m?.content || null);
+  }, [pathname]);
+  const href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(metaMesaj ?? baglamMesaji(pathname))}`;
 
   return (
     <>
