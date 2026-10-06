@@ -1252,6 +1252,7 @@ Tapu-derinliği taramasında çıktı: ata/ada-loft-eryaman ile ata/umut-yapi-si
 
 ## 4. Devlet Mahallesi Sitesi — tapu OKUL parseli (2026-07-25)
 devlet/4-devlet-mahallesi-sitesi kaydının parseli TKGM'de "7 Katlı Betonarme Okul, Üniversite, Araştırma" (8.180 m²). Konut sitesi değil — kayıt ya yanlış parselde ya da site adı okul yerleşkesiyle karışmış. Metne tapu YAZILMADI. (Aynı desen goksu/goksu-metrokent-sitesi'nde de vardı — ikisi birlikte Özgün'e sorulacak.)
+✅ **ÇÖZÜLDÜ 2026-10-06 (kimlik):** 18700/1 = Muradiye Okulları parseli; Google'daki "4. Devlet Mahallesi Sitesi" kaydı ~280 m doğuda, **Eryaman Maliye Lojmanları** yerleşkesi (adasız /87-/942-/980 "Tarla" parselleri, kat mülkiyeti yok). Okul parseli ve poligonu kayıttan çıkarıldı; sayfa TUT/SİL kararı Özgün'de — ayrıntı dosya sonundaki aynı tarihli bölümde.
 
 ## Karma Modern (ŞOA) — tapu "Yönetim ve Hizmet Binası" (2026-07-25)
 sehit-osman-avci/karma-modern parseli TKGM'de "Yönetim Ve Hizmet Binası" (14.982 m²) — konut/rezidans niteliği yok. Kayıt yanlış parselde olabilir ya da proje henüz tapuya yansımamış olabilir. Metne tapu YAZILMADI; nokta sorgusuyla teyit edilecek.
@@ -2090,6 +2091,48 @@ Acat tapudaki 3 bloğun TAMAMINI sahiplenirken aynı cümlede paylaşımı söyl
   paragraf kırılımları HTML'de kayboluyor.
 (PR #16'dan 04.10'da taşındı.)
 
+## 4. Devlet Mahallesi Sitesi = Eryaman Maliye Lojmanları — okul parselinden ÇIKARILDI, kapsam kararı Özgün'de (2026-10-06)
+25.07 kartı ("tapu OKUL parseli") kimlik olarak çözüldü; kaydın KAPSAMI (sayfa kalsın mı) açık.
+
+**Bulgu zinciri (06.10, bulut oturumu TKGM'ye erişemediği için yerelde):**
+- 18700/1 canlı TKGM: "7 Katlı Betonarme Okul, Üniversite, Araştırma Ve Arsası", 8.180 m², Ana Taşınmaz —
+  uyduda bina etiketi **Muradiye Okulları Eryaman** (349.–348. Sk arası, halı sahalı). Kesin konut dışı;
+  tkgm-kunye-uygula ve tkgm-tapu-uygula ikisi de bu niteliği reddediyor. Ada 04.07'de bilgiemlak slug-ada
+  eşlemesinden gelmişti; bilgiemlak'ta 18700 adsız ("18700 Ada") — site adı oradan değil, 30.06 toplu açılıştan.
+- Google Haritalar yer kaydı **"4. Devlet Mahallesi Sitesi"** (Konut Sitesi, 3,5★/72 yorum, /g/1thqd2j7):
+  koordinat 39.974638/32.60742 (yer URL'sinden), adres "Mustafa Kalfaoğlu Cd 2 A". Devlet mahalle poligonunun
+  içinde; okul parselinin ~280 m doğusu, Şapka Devrimi Cd ile 343. Sk arası.
+- Orada ne var: 7 TKGM nokta sondası üç ADASIZ eski kadastro parseli veriyor — **/87** (14.008 m², Kepirkarşı
+  mevkii; avlu + güney bloklar + Aspava köşesi), **/942** (5.446 m²; kuzeybatı + doğu-orta bloklar), **/980**
+  (2.757 m²; kuzey/kuzeydoğu bloklar). Üçü de nitelik "Tarla", zemin "Ana Taşınmaz" (kat mülkiyeti/irtifakı YOK).
+  KEOS adaparsel "0/87 ERYAMAN" (OBJECTID 26085) aynı poligonu tanıyor.
+- Kimlik: bilgiemlak'taki Aspava Pide kaydının adresi "Şapka Devrimi Cad. No:41/A **Maliye Lojmanları İdare
+  Amirliği yanı**" (39.9745/32.6079 = /87 köşesi). Google yorumları: "sessiz sakin lojmanlar, kurumların
+  cimriliğinden eskimiş", "4 yılım / 7 yılım geçti burada" (lojman kiracılığı), "kurye için girip çıkması dert"
+  (kapalı yerleşke). Google'da "Devlet Mahallesi Sitesi" adlı otobüs durağı + aktarma merkezi de var — yerleşik
+  yer adı. Yani **kamu lojmanı (Maliye) yerleşkesi: özel mülkiyet ve kat mülkiyeti yok, satacak/kiraya verecek
+  ev sahibi yok.** (Web aramasında "Eryaman Maliye Lojmanlarında satılık 2+1" başlıklı bir RE/MAX ilanı göründü
+  ama sayfa 404; bu üç parselde kat mülkiyeti olmadığından başka bir lojman grubuna ait olmalı — doğrulanamadı.)
+- KEOS kapı→parsel hakemi bu mahallede ÇALIŞMIYOR: "DEVLET" (14) listesi başka sokakları içeriyor, "ERYAMAN"
+  (15) altında 343–351. Sk / Şapka Devrimi / Mustafa Kalfaoğlu yok. (Ders memory'de.)
+- GSC 90 gün: 79 gösterim / 3 tık, poz 8,3; sorgu kırılımı "gülhayat sitesi" 22 + "denizim sitesi" 1 —
+  sayfa kendi adıyla aranmıyor, komşu adlarına sızıntı alıyor.
+
+**Yapılan (06.10 PR):** kayıttan `adalar` 18700/1 ve okul poligonu (`sinirGeoJSON` + boundary dosyası)
+çıkarıldı; `koordinat` Google kaydının noktasına taşındı (sondalarla /87 avlusunda doğrulandı). Metin ve
+özellik YAZILMADI, `zenginlestirildi` damgası YOK — bu zenginleştirme değil düzeltme. Sayfa artık koordinat
+merkezli, poligonsuz harita gösteriyor (pin yok kuralı). Önbellek: `nokta-serp-4-devlet-mahallesi-sitesi.json`
+eski 18700/1 yanıtı yerine /87 yanıtını taşıyor; `nokta-gmaps-4-devlet-mahallesi-sitesi.json` aynı yanıt.
+Adasız parsel kayda yazılamadı: şema `adalar[].no` boş kabul etmiyor (ada rotası `${no}-${parsel}`, parseInt).
+
+**Özgün kararı (iki yol):**
+1. **SİL** — 410 + söküm şablonu (feedback_gosterimler_dusmesin). Gerekçe: lojman yerleşkesine ev sahibi
+   sayfası anlamsız; trafik kaybı ~0 (kendi adıyla gösterim yok). 18674 "Lojman 8-A..D" için 16.07'de "kayıt
+   açılmaz muhtemelen" denmişti — aynı mantık.
+2. **TUT** — o zaman (a) adasız parsel desteği (kod: `no` boş/"0" kabulü, ada sayfası üretmeme), (b) ad kararı
+   (Google adı "4. Devlet Mahallesi Sitesi" kalır mı, "Eryaman Maliye Lojmanları" alternatif ad olur mu),
+   (c) metin lojman gerçeğini söylemeli, "satılık/kiralık daireniz mi var" kapanışı olmaz.
+Aynı parsellerde başka kayıt yok; dupe riski yok. Komşu kayıtlar (Oray 18701, Gülhayat 18698) yerinde.
 ## SINIR DOSYASI SÜPÜRMESİ UYGULANDI — 12.08 "harita yalan söylüyor" kartları kapandı (2026-10-06)
 Repo geneli JSON `adalar` ↔ `*-boundary.geojson` `properties.adalar` karşılaştırması + önbellek geometrisiyle
 halka centroid sınaması yapıldı (8 etiket uyumsuzluğu, 1 etiketsiz halka, 1 adalı-sınırsız kayıt). TKGM'den 20
