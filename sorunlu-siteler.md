@@ -2146,3 +2146,16 @@ künyesinin yalnız "10 kat, 20 daire" biçimini tanıyordu; "katlı/katli" sone
 522 kayıtlık döküm önce/sonra karşılaştırıldı: **tek kayıt değişti** (sutek konutSayisi 20 → yok), konutSayisi dolu
 139 → 138. Aynı deseni taşıyan uzuner-konutlari, ilgazlar, yardimci-bloklari zaten başka korumalarla eleniyordu.
 Ders: tapu/sınır düzeltmesinden sonra üretilen HTML'in AÇILIŞ CÜMLESİNİ oku — parser hataları ancak orada görünüyor.
+
+## Kurtuluş Sitesi (Güzelkent) — ÜÇÜNCÜ deneme de sonuçsuz, kayıt olduğu gibi kalsın (2026-10-06)
+Depodaki tek koordinatsız kayıt. Google Haritalar'da yer kaydı VAR ve adres birebir tutuyor
+("Güzelkent, 514. Sk. Kurtuluş Sitesi, 06827", /g/11npxmczrg, 39.9924746 / 32.6117925) — ama pin yine
+kadastroda **adasız /38 "Tarla"** parselinde (2.605 m², Ana Taşınmaz). Çevre taraması (5 TKGM nokta sondası):
+kuzey 18489/1 Didem (kat mülkiyetli, A1–A5+46 blok), güneybatı 18488/1 Nazlıdeniz (6 blok), doğu 18494/1
+"Okul ve Çok Amaçlı Salon", batı adasız /35 "Tarla" (9.749 m²). Yani pinin çevresinde **sahipsiz, kat
+mülkiyetli bir konut parseli yok**; Kurtuluş ya komşu bir sitenin blok adı ya da kadastroya yansımamış.
+Kanıt olmadığı için kayda koordinat da YAZILMADI: sınır olmayınca harita kutusu boş çıkar ve şu anki
+"Mahalle haritasını görüntüle" düğmesinden daha kötü olur. Açıklamadaki "tapu kaydı henüz eşleştirilemedi"
+cümlesi dürüst, duruyor. **Dördüncü kez denemeyin** — çözüm Özgün'ün saha bilgisinden gelir (514. Sokak'ta
+Kurtuluş tabelası hangi binada?). Altay'daki Sutek kümesinde "Kurtuluş" adlı bir apartman var (17539 adası);
+AYRI yerleşim, karıştırma.
