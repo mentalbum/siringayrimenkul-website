@@ -2138,3 +2138,11 @@ düşüyordu); Özahikent pini; Metrokent künye alanının 30.171'de kalması (
 "işyeri" penceresinde eliyor; ozellikler "Toplam ~42 dönüm" doğru).
 Teknik ders: mevcut sınır dosyasından halka kopyalarken poligon ([halka]) ile halkayı karıştırmak MultiPolygon
 derinliğini 3'e düşürüyor ve map-qa centroid'de çöküyor — derinlik kontrolü ile yakalandı, düzeltildi.
+
+**Build doğrulamasında çıkan BONUS HATA — Sutek "toplam 20 daireli" (kunye.ts, 06.10).** Üretilen sayfa 22
+apartmanlık küme için "10 katlı, toplam 20 daireli" diyordu: kayıttaki "Örneklenen bloklar 1989 yapımı, 10 katlı,
+20 daireli (yerel kayıt)" satırı BLOK künyesi, site toplamı değil. konutCikar'ın blok-başına koruması virgüllü blok
+künyesinin yalnız "10 kat, 20 daire" biçimini tanıyordu; "katlı/katli" soneki eklendi (`\d+\s*kat(?:l[ıi])?,\s*$`).
+522 kayıtlık döküm önce/sonra karşılaştırıldı: **tek kayıt değişti** (sutek konutSayisi 20 → yok), konutSayisi dolu
+139 → 138. Aynı deseni taşıyan uzuner-konutlari, ilgazlar, yardimci-bloklari zaten başka korumalarla eleniyordu.
+Ders: tapu/sınır düzeltmesinden sonra üretilen HTML'in AÇILIŞ CÜMLESİNİ oku — parser hataları ancak orada görünüyor.
