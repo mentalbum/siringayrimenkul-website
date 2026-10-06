@@ -1,11 +1,11 @@
 {
- "guncelleme": "2026-10-04",
+ "guncelleme": "2026-10-07",
  "kaynaklar": [
   "sonuclar-emlakci.jsonl",
   "sonuclar-site-emlakci.jsonl",
   "isgal-3108.json"
  ],
- "kayit_sayisi": 2071,
+ "kayit_sayisi": 2116,
  "satirlar": [
   {
    "sorgu": "eryaman emlakçı",
@@ -24,7 +24,7 @@
    "isgal_kaynak": null,
    "n": 10,
    "tarih": "2026-08-30",
-   "yas_gun": 35,
+   "yas_gun": 38,
    "kanal": "gizli",
    "kaynak": "sonuclar-emlakci.jsonl",
    "eslesme": "q",
@@ -39,7 +39,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": null,
-    "yas_gun": 48
+    "yas_gun": 51
    },
    "fark": -1,
    "yon": "geriledi",
@@ -72,7 +72,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -87,7 +87,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": -1,
    "yon": "geriledi",
@@ -112,7 +112,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -127,7 +127,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": null,
    "yon": "ilk 10'a girdi",
@@ -152,7 +152,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -167,7 +167,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 5,
    "yon": "yükseldi",
@@ -192,7 +192,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -207,7 +207,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 0,
    "yon": "aynı",
@@ -232,7 +232,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -247,7 +247,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 0,
    "yon": "aynı",
@@ -272,7 +272,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -287,7 +287,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 0,
    "yon": "aynı",
@@ -312,7 +312,7 @@
    "isgal_kaynak": "kayıt",
    "n": 9,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -327,7 +327,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -352,7 +352,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -367,7 +367,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "gizli",
-    "yas_gun": 34
+    "yas_gun": 37
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -392,7 +392,7 @@
    "isgal_kaynak": "kayıt",
    "n": 9,
    "tarih": "2026-09-04",
-   "yas_gun": 30,
+   "yas_gun": 33,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -407,7 +407,7 @@
     "kutu_var": true,
     "kutuda": 1,
     "kanal": "gizli",
-    "yas_gun": 34
+    "yas_gun": 37
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -432,7 +432,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-05",
-   "yas_gun": 29,
+   "yas_gun": 32,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -447,7 +447,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -472,7 +472,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-05",
-   "yas_gun": 29,
+   "yas_gun": 32,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -487,7 +487,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "gizli",
-    "yas_gun": 34
+    "yas_gun": 37
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -512,7 +512,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -527,7 +527,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 0,
    "yon": "aynı",
@@ -552,7 +552,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -567,7 +567,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "gizli",
-    "yas_gun": 34
+    "yas_gun": 37
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -592,7 +592,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -607,7 +607,7 @@
     "kutu_var": true,
     "kutuda": 0,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": 0,
    "yon": "aynı",
@@ -632,7 +632,7 @@
    "isgal_kaynak": "kayıt",
    "n": 10,
    "tarih": "2026-09-06",
-   "yas_gun": 28,
+   "yas_gun": 31,
    "kanal": "normal",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -647,7 +647,7 @@
     "kutu_var": true,
     "kutuda": 2,
     "kanal": "normal",
-    "yas_gun": 32
+    "yas_gun": 35
    },
    "fark": -2,
    "yon": "geriledi",
@@ -672,7 +672,7 @@
    "isgal_kaynak": "isgal dosyası",
    "n": 9,
    "tarih": "2026-08-31",
-   "yas_gun": 34,
+   "yas_gun": 37,
    "kanal": "gizli",
    "kaynak": "sonuclar-site-emlakci.jsonl",
    "eslesme": "q",
@@ -687,7 +687,7 @@
     "kutu_var": false,
     "kutuda": null,
     "kanal": null,
-    "yas_gun": 36
+    "yas_gun": 39
    },
    "fark": null,
    "yon": "dışarıda kaldı",
@@ -729,14 +729,14 @@
   "en_bayat": {
    "sorgu": "eryaman emlakçı",
    "tarih": "2026-08-30",
-   "yas_gun": 35
+   "yas_gun": 38
   },
   "en_taze": {
    "sorgu": "Eryaman 2. Etap emlakçı",
    "tarih": "2026-09-06",
-   "yas_gun": 28
+   "yas_gun": 31
   },
-  "yas_ortalama_gun": 29.7,
+  "yas_ortalama_gun": 32.7,
   "bayat_7gun": 17,
   "aileler": {
    "cati": {

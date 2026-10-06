@@ -1,3 +1,4 @@
+import os
 # -*- coding: utf-8 -*-
 """GSC'den SONUÇ verisini çeker (tık/gösterim/TO) ve karnenin okuduğu JSON'u üretir.
 
@@ -15,7 +16,7 @@ Kullanım: python3 sonuc-ozeti-uret.py     (GSC API çağrısı yapar, ~1 dk)
 """
 import json, re, subprocess, datetime, os
 
-KOK = "/Users/ozgun/websitem"
+KOK = os.path.abspath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".."))  # 07.10: sabit yol worktree'lerde ANA checkout'a yazıyordu
 YM = re.compile(r"/mahalleler/(ata|susuz|cumhuriyet)(-mahallesi)?/")
 
 def calistir(*a):
