@@ -31,3 +31,34 @@ dört haftada YERİNDE SAYDI — doğal taban. 5 sayfada hâlâ eski adres (/mah
 çıkıyor: yeni-huzur-bahcesi, gercek-92, inci-life, sitekonut, kur-sitesi.
 reCAPTCHA 41. sorguda (toplam 44 sorgu); deney kolu (174 sorgu: tabanda yanlış/dışı olanlar) ölçülmedi —
 kuyruk: deney-kuyruk-0410.json (kayıt betiği ekle-deney-0410.py; ölçülenler sonuclar-site-emlakci.jsonl kanal=deney-0410). Ertesi gece devam.
+
+## SERP taraması 06.10 — deney kolu ARA OKUMA (40/174)
+
+05.10 gecesi atlandı; 06.10'da index 60→89 tarandı (29 ölçüm, engelsiz). Devlet ve Eryaman
+mahalleleri deney kolu tamam, Göksu başladı. Kayıt: `kanal=deney-0410`; uzun SERP'lerde araç
+çıktısı kesildiği için kompakt çıkarıcı + `ekle-deney-kompakt.py` eklendi (yalnız n + ilk3 +
+bizim sonuçlarımız; tam yol Chrome'dan gerçek href ile alınır, breadcrumb'dan DEĞİL).
+
+| taban | →doğru | →yanlış | →dışı |
+|---|---|---|---|
+| yanlış (23) | **9** | 12 | 2 |
+| dışı (17) | 1 | 2 | 14 |
+
+**Yanlış→doğru düzelme: 9/23 = %39** (GSC okuması %52; kontrol kolu/doğal taban %22).
+Yön GSC ile aynı, büyüklük arada — örneklem henüz 23 vaka, tam tarama bitmeden sonuç yazılmaz.
+Dışı→doğru yalnız 1/17 (%6): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
+"zaten sıralayan ama yanlış sayfa" vakasında.
+
+Dönüşenler: mavikent (dışı→doğru), atakent-1-asiyan, atakent-metro, guzel-ankara-evleri
+(3 izole vakadan biri ✓), cigdem, endora-goksu. Hâlâ yanlış ad-ikizi vakaları: hotki-meydan
+→ Hotki Ritm (Yeşilova), endora-park → Endora Eryaman (Yavuz Selim), platin-konutlari →
+Platin 2, admira-goksu → Uzunali Göksu 2. **Ad ikizleri başlıkla çözülmüyor** — 06.09
+"dürüst kapsam" notu doğrulandı.
+
+**YENİ DESEN — ESKİ ADRES (2 vaka):** ilk-bahar-sitesi `/mahalleler/devlet/...` ve
+eryaman-evleri `/mahalleler/eryaman/...` eski sluglarla ve ESKİ başlıklarla sıralıyor
+(İlk Bahar #1, Eryaman Evleri #4). Bu sayfalar deneyin yeni başlığını hiç almadı; 301
+sindirimi bekliyor. Analizde "yanlış" sayılmaları deneyin etkisini OLDUĞUNDAN DÜŞÜK gösterir —
+nihai okumada ayrı kova açılmalı.
+
+Kalan: 130 sorgu (Göksu'dan devam, kuyruk index 89+). Araç: `python3 deney-sira.py 4`.
