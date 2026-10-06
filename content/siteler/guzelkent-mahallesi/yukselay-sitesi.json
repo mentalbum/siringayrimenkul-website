@@ -2,23 +2,30 @@
   "isim": "Yükselay Sitesi",
   "slug": "yukselay-sitesi",
   "mahalleSlug": "guzelkent-mahallesi",
+  "adres": "514. Sokak, Güzelkent, Etimesgut/Ankara",
   "koordinat": {
     "lat": 39.991082,
     "lng": 32.613637
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/yukselay-sitesi-boundary.geojson",
-  "aciklama": "Yükselay Sitesi, Etimesgut Güzelkent Mahallesi'nde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 4.761 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve kargir apartman niteliğiyle kayıtlıdır; yerel emlak kayıtlarında blokları 2, 2A ve 2B olarak geçer. Güzelkent'in az katlı, sakin dokusunun derli toplu örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Yükselay Sitesi — yerel ve harita kayıtlarında \"Kurtuluş Sitesi\" olarak da geçer — Etimesgut Güzelkent Mahallesi'nde 514. Sokak üzerinde yer alan butik ölçekli bir konut sitesidir. TKGM kayıtlarına göre site, yaklaşık 4.761 m²'lik kat mülkiyetli tek parsel üzerine kuruludur ve kargir apartman niteliğiyle kayıtlıdır; yerel emlak kayıtlarında blokları 2, 2A ve 2B olarak geçer. Kerkük Parkı ve Arya AVM yürüme mesafesindedir; Didem Sitesi ve Çözüm Kent çevresindeki oturmuş kooperatif dokusunun parçasıdır. Güzelkent'in az katlı, sakin dokusunun derli toplu örneklerindendir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "18497",
-      "parsel": "1"
+      "parsel": "1",
+      "alanM2": 4761,
+      "nitelik": "Kargir Apartman"
     }
   ],
   "ozellikler": [
     "3 blok (2, 2A, 2B)",
     "Yaklaşık 4,8 dönümlük kat mülkiyetli tek parsel (TKGM)",
     "Butik ölçekli, az daireli site",
+    "514. Sokak — Kerkük Parkı ve Arya AVM yürüme mesafesinde",
     "Güzelkent — kadastroda Eryaman kaydı"
   ],
-  "zenginlestirildi": "2026-07-14"
+  "zenginlestirildi": "2026-10-06",
+  "alternatifAdlar": [
+    "Kurtuluş Sitesi"
+  ]
 }

@@ -2215,5 +2215,15 @@ TKGM 18497/1: "Kargir Apartman", 4.761 m², **Kat Mülkiyet** (önbellek yeni-18
 **Google'ın ayrı "Kurtuluş Sitesi" kaydı (39.9924746 / 32.6117925) YANLIŞ KONUMDA:** 220 m kuzeybatıda, adasız
 /38 "Tarla" parselinde, hiçbir sitenin poligonunda değil, Nazlıdeniz'in 5 m yanı. Yorumsuz, fotoğrafsız bir
 kayıt; pin kaba atılmış. Üç turdur bizi tarlaya sürükleyen buydu.
-**Karar Özgün'de:** kurtulus-sitesi.json silinip "Kurtuluş Sitesi" Yükselay'a alternatif ad olarak mı geçsin
-(eski adres 410), yoksa kayıt kalsın mı? Kayda henüz DOKUNULMADI — iki kayda aynı parseli vermek dupe üretir.
+**UYGULANDI (Özgün kararı bana bıraktı, 06.10):** `kurtulus-sitesi.json` SİLİNDİ, Yükselay'a birleştirildi.
+- "Kurtuluş Sitesi" → Yükselay'ın `alternatifAdlar`ı VE açıklamasının ilk cümlesi. Görünür metne yazmak şart:
+  `alternatifAdlar` yalnız `keywords` meta'sına ve JSON-LD `alternateName`e giriyor, ikisini de Google
+  sıralamada kullanmıyor (site sayfası şablonu kontrol edildi).
+- Kurtuluş kaydının içeriği taşındı: adres (514. Sokak), Kerkük Parkı/Arya AVM yakınlığı, Didem–Çözüm Kent
+  komşuluğu. 18497/1 için `alanM2` 4.761 + `nitelik` "Kargir Apartman" yazıldı.
+- Eski adres **301** ile Yükselay'a (iki slug biçimi de, next.config.ts). 410 DEĞİL: varis yaşayan bir sayfa.
+**Neden bu yön:** GSC 90 gün — "kurtuluş sitesi" sorgusu Kurtuluş sayfasına 4 gösterim/0 tık (poz 7,5) getiriyor,
+**Yükselay sayfasının hiç verisi yok**. Yani aranan ad Kurtuluş, ama Google'daki gerçek kayıt (17 yorum, site
+fotoğrafları, giriş tabelasında "2 BLOK") Yükselay. Tek sayfada ikisi birden: başlık Yükselay, aranan ad metinde.
+Asıl ad olarak Yükselay seçildi çünkü tapu, blok adlandırması ve yorumlu Google kaydı onu doğruluyor; Kurtuluş'u
+yalnız Yandex ve bizim eski kaydımız taşıyordu.
