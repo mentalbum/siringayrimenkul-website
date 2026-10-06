@@ -34,17 +34,18 @@ kuyruk: deney-kuyruk-0410.json (kayıt betiği ekle-deney-0410.py; ölçülenler
 
 ## SERP taraması 06.10 — deney kolu ARA OKUMA (40/174)
 
-05.10 gecesi atlandı; 06.10'da index 60→89 tarandı (29 ölçüm, engelsiz). Devlet ve Eryaman
-mahalleleri deney kolu tamam, Göksu başladı. Kayıt: `kanal=deney-0410`; uzun SERP'lerde araç
+05.10 gecesi atlandı; 06.10'da index 60→105 tarandı (45 ölçüm, TEK engel bile görülmedi —
+04.10'da 41. sorguda duvar vardı, bugün 45'te yok; kota kayan 24 saatte dolduğu için
+05.10'un boş geçmesi kotayı tazelemiş olabilir). Devlet ve Eryaman deney kolu tamam, Göksu yarıda. Kayıt: `kanal=deney-0410`; uzun SERP'lerde araç
 çıktısı kesildiği için kompakt çıkarıcı + `ekle-deney-kompakt.py` eklendi (yalnız n + ilk3 +
 bizim sonuçlarımız; tam yol Chrome'dan gerçek href ile alınır, breadcrumb'dan DEĞİL).
 
 | taban | →doğru | →yanlış | →dışı |
 |---|---|---|---|
-| yanlış (23) | **9** | 12 | 2 |
-| dışı (17) | 1 | 2 | 14 |
+| yanlış (36) | **15** | 17 | 4 |
+| dışı (24) | 1 | 3 | 20 |
 
-**Yanlış→doğru düzelme: 9/23 = %39** (GSC okuması %52; kontrol kolu/doğal taban %22).
+**Yanlış→doğru düzelme: 15/36 = %42** (GSC okuması %52; kontrol kolu/doğal taban %22).
 Yön GSC ile aynı, büyüklük arada — örneklem henüz 23 vaka, tam tarama bitmeden sonuç yazılmaz.
 Dışı→doğru yalnız 1/17 (%6): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
 "zaten sıralayan ama yanlış sayfa" vakasında.
@@ -55,10 +56,10 @@ Dönüşenler: mavikent (dışı→doğru), atakent-1-asiyan, atakent-metro, guz
 Platin 2, admira-goksu → Uzunali Göksu 2. **Ad ikizleri başlıkla çözülmüyor** — 06.09
 "dürüst kapsam" notu doğrulandı.
 
-**YENİ DESEN — ESKİ ADRES (2 vaka):** ilk-bahar-sitesi `/mahalleler/devlet/...` ve
-eryaman-evleri `/mahalleler/eryaman/...` eski sluglarla ve ESKİ başlıklarla sıralıyor
-(İlk Bahar #1, Eryaman Evleri #4). Bu sayfalar deneyin yeni başlığını hiç almadı; 301
+**YENİ DESEN — ESKİ ADRES (3 vaka):** ilk-bahar-sitesi `/mahalleler/devlet/...`,
+eryaman-evleri `/mahalleler/eryaman/...` ve ma1-tower `/mahalleler/goksu/...` eski sluglarla
+ve ESKİ başlıklarla sıralıyor (İlk Bahar #1, MA1 Tower #1, Eryaman Evleri #4). Bu sayfalar deneyin yeni başlığını hiç almadı; 301
 sindirimi bekliyor. Analizde "yanlış" sayılmaları deneyin etkisini OLDUĞUNDAN DÜŞÜK gösterir —
 nihai okumada ayrı kova açılmalı.
 
-Kalan: 130 sorgu (Göksu'dan devam, kuyruk index 89+). Araç: `python3 deney-sira.py 4`.
+Kalan: 114 sorgu (Göksu'dan devam, kuyruk index 105+). Araç: `python3 deney-sira.py 4`.
