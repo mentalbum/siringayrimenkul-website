@@ -59,8 +59,8 @@
  * ÖZEL VAKA — goksu-mahallesi/gsv-spor-sitesi bu listede DEĞİL: dizin sorunu
  * değil, adres sorunu. GSC "Duplicate, Google chose different canonical" diyor
  * ve seçtiği kanonik ESKİ adres (/mahalleler/goksu/gsv-spor-sitesi, 25.07'de
- * taranmış). Eski adres zaten sitemap-eski-adresler.xml'de; çözüm iç bağ değil,
- * o adresin yeniden taranması.
+ * taranmış). Çözüm iç bağ değil, o adresin yeniden taranması (eski-adres
+ * site haritası 07.10'da kaldırıldı; 308 duruyor).
  *
  * SONRAKİ TAZELEME: bu liste kendiliğinden bayatlar — sayfa dizine girince
  * çıkarılmalı. Ölçüm komutu (tahmin etme, ölç):

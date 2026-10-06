@@ -15,6 +15,15 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { baslikDeneyinde, bilgiBasligi, bilgiAciklamasi } from "@/lib/baslik-deneyi-0710";
+
+/** Ev sahibinin tek dokunuşla göndereceği WhatsApp mesajı (07.10, ChatGPT
+ * istişaresi): "değerleme" bizim hizmet adımız, "bu sitede dairem var" ise
+ * müşterinin kendi bağlamı — mesaj onun diliyle başlar. Ek almayan "içinde"
+ * kalıbı: site adına ünlü uyumlu ek üretmeye kalkışmıyoruz. */
+function waMesaji(siteIsim: string): string {
+  return `Merhaba, ${siteIsim} içinde dairem var. Satış veya kiralama için güncel emsalleri ve nasıl ilerleyebileceğimizi konuşmak istiyorum.`;
+}
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
 import { FaqSection } from "@/components/ui/faq-section";
@@ -179,9 +188,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Bölge ayrımı AYNEN duruyor: Ata/Susuz/Cumhuriyet'te "Eryaman" değil
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
-      absolute: lokasyon
-        ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
-        : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
+      // BAŞLIK DENEYİ 2 (07.10–04.11): 50 tedavi sayfasında bilgi odaklı başlık
+      // (lib/baslik-deneyi-0710.ts); kontrol ve geri kalan herkes eski kalıpta.
+      absolute: baslikDeneyinde(site)
+        ? bilgiBasligi(site.isim)
+        : lokasyon
+          ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
+          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
@@ -213,6 +226,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // sayfayı etkiliyor, kalan 518'i harfi harfine aynı. SABLON.site tabanı
     // bu yüzden İLERLETİLMEDİ — bkz. AGENTS.md, 17.08 ada emsali.
     description: (() => {
+      if (baslikDeneyinde(site)) return bilgiAciklamasi(site.isim); // deney kolu (adaş siteler kohort dışı)
       const on = isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : "";
       const govde = `${on}${bulunmaHali(site.isim)} evinizi kiraya vermek ya da satmak istiyorsanız, emlakçınız olarak süreci`;
       const kuyruk = ` biz yürütürüz: ${siteConfig.phoneDisplay}`;
@@ -220,6 +234,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       return tam.length <= 155 ? tam : `${govde}${kuyruk}`;
     })(),
     alternates: { canonical: `/mahalleler/${mahalle.slug}/${site.slug}` },
+    // Yüzen WhatsApp düğmesi ve hero aynı hazır mesajı kullanır (gerçek site adı).
+    other: { "wa-mesaj": waMesaji(site.isim) },
     ...(site.alternatifAdlar?.length && {
       keywords: [
         site.isim,
@@ -707,35 +723,54 @@ export default async function SitePage({ params }: Props) {
             {/* 04.10 denetimi: birincil CTA'nın tıkı hiç ölçülmüyordu (28g'de
                 "4" rakamı referrer çıkarımıydı). degerleme_cta + konum ile
                 telefon/WhatsApp'la aynı raporda okunur. */}
+            {/* 07.10 (ChatGPT istişaresi + 04.10 verisi): değerleme formu 3 ayda 0
+                gönderim, temasın tamamı telefon + WhatsApp. Birincil kapı artık
+                gerçek site adıyla hazır mesajlı WhatsApp; telefon ikinci; değerleme
+                sayfası metin bağı olarak duruyor (degerleme_cta ölçümü kesilmesin). */}
+            <TrackedCtaLink
+              href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(waMesaji(site.isim))}`}
+              gaEvent="whatsapp_click" gaParams={{ konum: "site_ust", site: site.slug }}
+              variant="primary"
+              openInNewTab
+            >
+              WhatsApp&apos;tan Konuşalım
+            </TrackedCtaLink>
+            <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "site_ust", site: site.slug }} variant="outline">
+              {siteConfig.phoneDisplay}
+            </TrackedCtaLink>
             <TrackedCtaLink
               href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}
-              gaEvent="degerleme_cta" gaParams={{ konum: "site_ust" }}
-              variant="primary"
+              gaEvent="degerleme_cta" gaParams={{ konum: "site_ust", site: site.slug }}
+              variant="ghost"
+              className="px-0 text-sm font-semibold text-gold-dark"
             >
-              Evinizi Değerlendirelim
-            </TrackedCtaLink>
-            <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "site_ust" }} variant="outline">
-              {siteConfig.phoneDisplay}
+              ya da değerleme talebi bırakın →
             </TrackedCtaLink>
           </div>
           {/* Niyet ayrımı (2026-07-29 denetimi): "satılık daire" sorgusuyla gelen
               İKİ niyet taşır — ev sahibi (birincil, CTA yukarıda ve DOM'da önce)
               ve daire arayan. Daire arayanın dürüst yolu artık ilk ekranda;
               Temmuz kararı (ilk tıklanabilir = ev sahibi CTA'sı) korunuyor. */}
-          <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
-            <span>
-              Daire mi arıyorsunuz? {site.isim} ve çevresindeki{" "}
-              <strong className="text-navy">güncel ilanlarımız</strong>:
-            </span>
-            <TrackedCtaLink
-              href={siteConfig.sahibindenUrl}
-              gaEvent="sahibinden_click" gaParams={{ konum: "site_ust" }}
-              variant="ghost"
-              className="px-0 font-semibold text-gold-dark"
-            >
-              sahibinden.com mağazamız →
-            </TrackedCtaLink>
-          </p>
+          {/* data-nosnippet (07.10, ChatGPT istişaresi): Google snippet'i sayfa
+              metninden kurar; alıcıya seslenen bu kutu yalın site adı sorgusunda
+              snippet'e girip ev sahibini "ilan sitesi" sanmaya itebiliyor. Sıralamayı
+              değil yalnız gösterilebilecek metni etkiler (Google dokümantasyonu). */}
+          <div data-nosnippet>
+            <p className="flex max-w-3xl flex-wrap items-center gap-x-2 gap-y-1 rounded-xl border border-gold/40 bg-gold/10 px-4 py-3 text-sm text-body">
+              <span>
+                Daire mi arıyorsunuz? {site.isim} ve çevresindeki{" "}
+                <strong className="text-navy">güncel ilanlarımız</strong>:
+              </span>
+              <TrackedCtaLink
+                href={siteConfig.sahibindenUrl}
+                gaEvent="sahibinden_click" gaParams={{ konum: "site_ust" }}
+                variant="ghost"
+                className="px-0 font-semibold text-gold-dark"
+              >
+                sahibinden.com mağazamız →
+              </TrackedCtaLink>
+            </p>
+          </div>
           {site.aciklama.split("\n\n").map((paragraf, i) => (
             <p key={i} className="text-base leading-relaxed text-body">
               {paragraf}
@@ -901,10 +936,8 @@ export default async function SitePage({ params }: Props) {
           Evinizi Değerlendirelim
         </TrackedCtaLink>
         <TrackedCtaLink
-          href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
-            `Merhaba! ${site.isim} (${mahalle.isim}) — bu sitedeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
-          )}`}
-          gaEvent="whatsapp_click" gaParams={{ konum: "site" }}
+          href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(waMesaji(site.isim))}`}
+          gaEvent="whatsapp_click" gaParams={{ konum: "site_banner", site: site.slug }}
           variant="outline-light"
           openInNewTab
         >
