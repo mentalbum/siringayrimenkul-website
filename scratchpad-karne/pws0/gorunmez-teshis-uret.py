@@ -13,6 +13,7 @@ Girdi: <scratchpad>/gorunmez-denetim.tsv (gsc-api denetle-dosya çıktısı)
        sayfalar28.tsv (gsc-api sayfalar 28)
 Çıktı: gorunmez-teshis.json — karne-html.py okur.
 """
+import datetime as _dt
 import json, os, sys, collections
 from pencere import pencere_zorunlu
 
@@ -62,7 +63,7 @@ def topla(v):
             "poz": round(sum(x["poz"] for x in v if x["gost"]) / max(1, sum(1 for x in v if x["gost"])), 1),
             "mah": collections.Counter(x["mah"] for x in v).most_common()}
 
-cikti = {"guncelleme": "2026-08-31", "pencere": PENCERE,
+cikti = {"guncelleme": _dt.date.today().isoformat(), "pencere": PENCERE,
          "sira_sorunu": topla(diz), "dizin_sorunu": topla(olu),
          "denetlenemedi": len(hatali), "hayalet": len(hayalet),
          "taze_ama_gorunmez": sum(1 for x in diz if x["tarama"] >= "2026-08-24"),

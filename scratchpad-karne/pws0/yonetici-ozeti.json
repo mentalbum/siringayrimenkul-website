@@ -123,17 +123,17 @@
   {
    "k": "hedef_kutuda",
    "baslik": "Hedef sorgularda harita kutusu",
-   "deger": 9,
+   "deger": 3,
    "birim": "sorgu",
-   "gosterim": "9/17",
-   "ne_demek": "17 hedef sorgunun 9 tanesinde harita kutusunda görünüyoruz, 6 tanesinde kutuda 1. sıradayız; 6 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
+   "gosterim": "3/17",
+   "ne_demek": "17 hedef sorgunun 3 tanesinde harita kutusunda görünüyoruz, 1 tanesinde kutuda 1. sıradayız; 14 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
    "kaynak": "hedef-sorgular.json (ozet.kutuda)",
    "ayrinti": {
     "hedef": 17,
-    "kutuda_birinci": 6,
-    "kutu_var_biz_yok": 6,
+    "kutuda_birinci": 1,
+    "kutu_var_biz_yok": 14,
     "organik_ilk3": 4,
-    "organik_birinci": 2,
+    "organik_birinci": 1,
     "guncelleme": "2026-10-07"
    },
    "fark_7g": null
@@ -157,11 +157,12 @@
   {
    "tarih": "07.10",
    "iso": "2026-10-07",
-   "baslik_sayisi": 1,
+   "baslik_sayisi": 2,
    "basliklar": [
-    "CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI"
+    "CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI",
+    "HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3"
    ],
-   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI"
+   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3"
   }
  ],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",

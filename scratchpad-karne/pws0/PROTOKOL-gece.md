@@ -873,3 +873,38 @@ Aynı gün: 4. Devlet Mahallesi Sitesi sayfası 410 (Maliye Lojmanları, ev sahi
 Kurtuluş = Yükselay birleştirmesi (PR #103), 10 kaydın sınır dosyası TKGM parseline oturdu (PR #102).
 Karne: görünmez 53 + istek gönderilmiş sayfalar API ile yeniden denetlendi; gorunmez-teshis,
 dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
+
+## 07.10 — HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3
+
+- Ölçüm 15:30–15:50, uygulama içi tarayıcı, `pws=0&gl=tr&hl=tr`. Önceki ölçümler 30.08–06.09'dan
+  kalmıştı (31–38 gün bayat; karne 17/17 "bayat" diyordu).
+- **Tarayıcı değişikliği (ölçüm JS'i kırıldı):** Google organik bağları artık `/goto?url=CAES…`
+  (şifreli) — eski çıkarıcı (`a[href^="http"]` + hostname) n=0 veriyor, başlık normal (engel değil).
+  Yeni çıkarıcı alan adını `<cite>` metninden okur; YOL cite kırıntısından güvenilir çıkmıyor
+  ("› Mahalleler" gibi şema etiketleri geliyor) → bizim sonuçlarda `u` h3 başlığından çözüldü
+  (3 kayıt elle: Güzelkent → guzel-ankara-sitesi, ŞOA ve Şeyh Şamil → mahalle sayfası).
+  Ekleyici: oturum scratchpad `hedef-ekle.py` (kanal "normal", hl+hp alanlı). browser_batch sınırı
+  25 eylem (= 8 sorgu/çağrı).
+- **Organik (önceki → bugün):** çatı 3→2 (ana sayfa, doğru) · 1. Etap 2→2 · 2. Etap 5→10 ·
+  3. Etap 1(sahibinden mağazası)→4 · 4. Etap 1→1 · 5. Etap 6→7 (10 dk sonra 3 — organik oynak) ·
+  Eryaman Mah 5→5 · Tunahan/Altay/Devlet/Göksu/Şeker/Yeşilova dışı→dışı · Güzelkent dışı→9
+  (Güzel Ankara Sitesi SİTE sayfasıyla, yanlış sayfa) · ŞOA 5→4 (doğru) · Şeyh Şamil 4→3 (doğru) ·
+  Yavuz Selim 7→6 (doğru). Etap+çatı sorgularında sırayı yine ANA SAYFA tutuyor (6/6).
+  İlk 10: 10→11 · ilk 3: 4→4 · ilk 10'da doğru sayfa: 4→4 (çatı, ŞOA, Şeyh Şamil, Yavuz Selim).
+- **HARİTA KUTUSU: kutuda olduğumuz sorgu 9→3** (çatı 1→2, 1. Etap 1→3, 4. Etap 1→1). Kaybedilen:
+  2. Etap (2→yok), 3. Etap (3→yok), 5. Etap (1→yok), Tunahan (1→yok), Altay (3→yok), Yavuz Selim
+  (1→yok). Yeşilova'da kutu artık ÇIKIYOR (yeşilova gayrimenkul, Yakut, AB) — biz yokuz.
+  Kararlılık sınaması: 2. Etap, 5. Etap, Tunahan 10 dk sonra yeniden ölçüldü — kutudaki 3 ad 3/3
+  AYNI (organik oynarken kutu sabit). Google'ın konum satırı sorguya göre değişiyor ("Eryaman,
+  Etimesgut" / "Tunahan, Etimesgut" / "Etimesgut/Ankara") → kutu sorgunun ima ettiği konuma göre
+  kuruluyor, ölçüm IP'sine göre değil.
+- "Eryaman geçen sorguda %80 kutudayız" kuralı (34 ölçüm) bugün 3/7; geçmeyende 0/10. TEK GÜN;
+  3 günlük eğilim şartı geçerli (08–09.10 aynı 17 sorgu yeniden). Neden ölçülmedi: GBP profil
+  sağlığı (panel Özgün'de), rakip yorum ivmesi, yerel algoritma. Sitedeki hiçbir değişiklik
+  haritayı etkilemez (organik↔harita bağımsızlığı 34 ölçümle gösterilmişti) — çare GBP tarafında.
+- **Form 0 gönderim kırık DEĞİL:** GA4 90g form_start 61 / contact_form_submit 3; 28g 3/0;
+  /ev-degerleme 32 görüntüleme, /iletisim 3. Form fetch yapmıyor, WhatsApp/SMS'e yönleniyor;
+  gönderim olayı tıklamada atılıyor → 0 = kimse göndermedi. Temasın tamamı doğrudan tel+WA (21/21).
+- GSC isteği: altintepe "sorun oluştu" (ayrıntı DIZIN-DAMLASI-31-08.md 07.10 notu).
+- GBP herkese açık görünüm sağlam (15:55, "Şirin Gayrimenkul Eryaman" sorgusu, pws=0): bilgi paneli
+  çıkıyor, 5,0 puan · 404 yorum. Yani kutu kaybı askıya alma/kapanma değil; sıralama kaynaklı.
