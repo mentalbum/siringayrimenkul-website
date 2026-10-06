@@ -296,7 +296,7 @@ export default function SiteDokusuPage() {
           <Link href="/araclar/site-karsilastirma" className="font-semibold text-gold-dark underline-offset-2 hover:underline">
             Site Karşılaştırma Aracı
           </Link>
-          nda ve tekil site sayfalarındadır.
+          &apos;nda ve tekil site sayfalarındadır.
         </p>
       </section>
 

@@ -52,7 +52,11 @@ export default function GizlilikPage() {
             olağan bir müşteri görüşmesi olarak telefonumuzda/WhatsApp geçmişinde kalır.
           </p>
           <p className="mt-3">
-            <strong>Çerezler:</strong> Site deneyimini ölçmek için Google Analytics kullanıyoruz.
+            <strong>Çerezler:</strong>
+            {/* {" "} ŞART: &apos; içeren çok satırlı metnin baştaki boşluğunu derleyici
+                düşürüyor — canlıda "Çerezler:Site" basılıyordu (06.10 ölçümü). */}
+            {" "}
+            Site deneyimini ölçmek için Google Analytics kullanıyoruz.
             Aşağıdaki analitik çerezler siteyi ziyaret ettiğinizde kullanılır. Bu çerezleri
             istemiyorsanız tarayıcınızın çerez engelleme ayarlarını ya da Google&apos;ın{" "}
             <a

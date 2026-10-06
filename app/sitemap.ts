@@ -78,9 +78,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.3 },
+    // 06.10: "Çerezler:Site" bitişikliği giderildi (görünen metin).
+    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-04"), changeFrequency: "yearly", priority: 0.4 },
+    // 06.10: Özgün kartındaki "520sitenin" bitişikliği giderildi (görünen metin).
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
     { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
@@ -157,7 +159,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        ama taban İLERLETİLMEDİ — 31.08 düzeltmesi. Gerekçe aşağıda.
     // 04.10: meta description 236–266 → ≤150 karakter, telefon sonda ve
     //        kesilmez (11 sayfanın SERP'te görünen metni; 15.08(b) site emsali).
-    mahalle: new Date("2026-10-04"),
+    // 06.10: "rezidansıntapu" bitişikliği giderildi — 11 mahalle sayfasının görünen
+    //        tanıtım cümlesi değişti (derleyici, varlık içeren çok satırlı JSX
+    //        metninin baştaki boşluğunu düşürüyor; 08.08 denetimi #3 açık kalmıştı).
+    mahalle: new Date("2026-10-06"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);

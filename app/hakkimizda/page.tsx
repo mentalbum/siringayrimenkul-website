@@ -142,7 +142,11 @@ export default function HakkimizdaPage() {
                 <p className="mt-3 text-sm leading-relaxed text-body">
                   Değerleme talepleriniz ve site/mahalle sorularınız aracıya değil, doğrudan
                   Özgün Şirin&apos;e ulaşır. Bu rehberdeki {toplamSite} site kaydı ve{" "}
-                  {haritaliSite} sitenin gerçek tapu (TKGM) sınırı, mahalle mahalle yürüttüğü
+                  {haritaliSite}
+                  {/* {" "} ŞART: &apos; içeren çok satırlı metnin baştaki boşluğunu derleyici
+                      düşürüyor — canlıda "520sitenin" basılıyordu (06.10 ölçümü). */}
+                  {" "}
+                  sitenin gerçek tapu (TKGM) sınırı, mahalle mahalle yürüttüğü
                   saha çalışmasının ürünü — Eryaman&apos;ı tabeladan değil, ada ve parsel
                   düzeyinde tanır.
                 </p>
@@ -196,7 +200,11 @@ export default function HakkimizdaPage() {
         <h2 className="text-xl">İçerik ve Veri Yöntemimiz</h2>
         <div className="mt-4 space-y-3 text-sm leading-relaxed text-body">
           <p>
-            <strong className="text-navy">Konum ve tapu verisi:</strong> Site sayfalarındaki
+            <strong className="text-navy">Konum ve tapu verisi:</strong>
+            {/* {" "} ŞART: &quot; içeren çok satırlı metnin baştaki boşluğunu derleyici
+                düşürüyor — canlıda "verisi:Site" basılıyordu (06.10 ölçümü). */}
+            {" "}
+            Site sayfalarındaki
             parsel sınırları TKGM parsel sorgu verisine dayanır; her sınır yayına alınmadan önce
             ada/parsel düzeyinde doğrulanır, doğrulanamayan bilgi yayınlanmaz. Sayfalardaki
             &quot;son doğrulama&quot; tarihi, o kaydın en son ne zaman elden geçtiğini gösterir.

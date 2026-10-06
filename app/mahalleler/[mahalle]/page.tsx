@@ -543,8 +543,12 @@ export default async function MahallePage({ params }: Props) {
               emlakçılar listesi" sorgu ailesi GSC'de görünüyor ama kelime sitede
               hiç geçmiyordu (2026-08-07 tespiti). Doğal cümle içinde tutulmalı. */}
           Bölgedeki emlakçılar arasında bizi ayıran şey kayıt tutma biçimimiz: mahalledeki{" "}
-          {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"} tapu
-          yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
+          {siteler.length > 0 ? `${siteler.length} site ve rezidansın` : "sitelerin"}
+          {/* {" "} ŞART (06.10 ölçümü): derleyici, &apos; gibi varlık içeren çok
+              satırlı JSX metninin BAŞTAKİ boşluğunu düşürüyor — canlıda 11 mahalle
+              sayfası "rezidansıntapu" basıyordu (08.08 denetimi #3, hiç kapanmamıştı). */}
+          {" "}
+          tapu yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
           fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. Google&apos;da 5,0
           puanlı işletme profilimiz ve 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
           çalışıyoruz. {bulunmaHali(kisaIsim)} eviniz varsa{" "}
