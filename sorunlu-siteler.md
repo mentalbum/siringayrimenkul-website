@@ -2197,8 +2197,33 @@ kadastroda **adasız /38 "Tarla"** parselinde (2.605 m², Ana Taşınmaz). Çevr
 kuzey 18489/1 Didem (kat mülkiyetli, A1–A5+46 blok), güneybatı 18488/1 Nazlıdeniz (6 blok), doğu 18494/1
 "Okul ve Çok Amaçlı Salon", batı adasız /35 "Tarla" (9.749 m²). Yani pinin çevresinde **sahipsiz, kat
 mülkiyetli bir konut parseli yok**; Kurtuluş ya komşu bir sitenin blok adı ya da kadastroya yansımamış.
-Kanıt olmadığı için kayda koordinat da YAZILMADI: sınır olmayınca harita kutusu boş çıkar ve şu anki
-"Mahalle haritasını görüntüle" düğmesinden daha kötü olur. Açıklamadaki "tapu kaydı henüz eşleştirilemedi"
-cümlesi dürüst, duruyor. **Dördüncü kez denemeyin** — çözüm Özgün'ün saha bilgisinden gelir (514. Sokak'ta
-Kurtuluş tabelası hangi binada?). Altay'daki Sutek kümesinde "Kurtuluş" adlı bir apartman var (17539 adası);
-AYRI yerleşim, karıştırma.
+Kanıt olmadığı için kayda koordinat da YAZILMADI. Altay'daki Sutek kümesinde "Kurtuluş" adlı bir apartman
+var (17539 adası); AYRI yerleşim, karıştırma.
+
+### AYNI GÜN, haritada gezerek ÇÖZÜLDÜ (Özgün talimatı): Kurtuluş = YÜKSELAY SİTESİ (18497/1)
+Google'ın pinine takılıp kalmak hataydı; Yandex'e sorulunca kayıt **adıyla** çıktı.
+**Kanıt zinciri (dördü de bağımsız):**
+1. **Yandex Haritalar kaydın adını birleşik yazıyor: "Kurtuluş Sitesi (Yükselay Sitesi)"** (geo id 4099986469,
+   39.991050 / 32.613606). Yandex iki ayrı yer değil, TEK yer gösteriyor; suggest-geo'da kategori "Konut blokları".
+2. O koordinat **Yükselay'ın parsel poligonunun (18497/1) tam içinde** (point-in-polygon, repo sınır dosyası).
+3. Google'ın kendi "514. Sk. Yükselay Sitesi" kaydı (39.991158 / 32.6137029) da **aynı poligonun içinde** ve
+   adresi **514. Sokak** — yani Kurtuluş kaydımızın 28.07'de yazılan adresiyle AYNI sokak.
+4. Kurtuluş kaydımızdaki çevre tarifi haritada birebir oturuyor: Kerkük Parkı kuzeydoğuda, Emir Sultan Camii
+   kuzeybatıda, Didem/Çözüm Kent kuzeyde. Google fotoğrafında bina girişinde "2 BLOK" tabelası var — Yükselay
+   kaydımızın blok listesi zaten "2, 2A, 2B".
+TKGM 18497/1: "Kargir Apartman", 4.761 m², **Kat Mülkiyet** (önbellek yeni-18497-1.json).
+**Google'ın ayrı "Kurtuluş Sitesi" kaydı (39.9924746 / 32.6117925) YANLIŞ KONUMDA:** 220 m kuzeybatıda, adasız
+/38 "Tarla" parselinde, hiçbir sitenin poligonunda değil, Nazlıdeniz'in 5 m yanı. Yorumsuz, fotoğrafsız bir
+kayıt; pin kaba atılmış. Üç turdur bizi tarlaya sürükleyen buydu.
+**UYGULANDI (Özgün kararı bana bıraktı, 06.10):** `kurtulus-sitesi.json` SİLİNDİ, Yükselay'a birleştirildi.
+- "Kurtuluş Sitesi" → Yükselay'ın `alternatifAdlar`ı VE açıklamasının ilk cümlesi. Görünür metne yazmak şart:
+  `alternatifAdlar` yalnız `keywords` meta'sına ve JSON-LD `alternateName`e giriyor, ikisini de Google
+  sıralamada kullanmıyor (site sayfası şablonu kontrol edildi).
+- Kurtuluş kaydının içeriği taşındı: adres (514. Sokak), Kerkük Parkı/Arya AVM yakınlığı, Didem–Çözüm Kent
+  komşuluğu. 18497/1 için `alanM2` 4.761 + `nitelik` "Kargir Apartman" yazıldı.
+- Eski adres **301** ile Yükselay'a (iki slug biçimi de, next.config.ts). 410 DEĞİL: varis yaşayan bir sayfa.
+**Neden bu yön:** GSC 90 gün — "kurtuluş sitesi" sorgusu Kurtuluş sayfasına 4 gösterim/0 tık (poz 7,5) getiriyor,
+**Yükselay sayfasının hiç verisi yok**. Yani aranan ad Kurtuluş, ama Google'daki gerçek kayıt (17 yorum, site
+fotoğrafları, giriş tabelasında "2 BLOK") Yükselay. Tek sayfada ikisi birden: başlık Yükselay, aranan ad metinde.
+Asıl ad olarak Yükselay seçildi çünkü tapu, blok adlandırması ve yorumlu Google kaydı onu doğruluyor; Kurtuluş'u
+yalnız Yandex ve bizim eski kaydımız taşıyordu.

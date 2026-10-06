@@ -141,6 +141,14 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/guzelkent/eryaman-renk-villalari", destination: "/mahalleler/guzelkent-mahallesi/renk-villalari", permanent: true },
       { source: "/mahalleler/guzelkent/guz-gol-sitesi", destination: "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi", permanent: true },
       { source: "/mahalleler/guzelkent/seniz-konut-kooperatifi", destination: "/mahalleler/guzelkent-mahallesi/seniz-sitesi", permanent: true },
+      // Kurtuluş = Yükselay (2026-10-06): Yandex kaydı "Kurtuluş Sitesi (Yükselay Sitesi)"
+      // diye tek yer gösteriyor, iki harita koordinatı da 18497/1'in poligonu içinde ve
+      // ikisinin adresi de 514. Sokak. Kurtuluş kaydı Yükselay'a birleştirildi; "Kurtuluş
+      // Sitesi" orada alternatif ad ve açıklama cümlesi olarak yaşıyor — yani 301'in varisi
+      // gerçekten yaşayan bir sayfa (410 değil). Üç tur boyunca bizi tarlaya sürükleyen
+      // Google'ın ayrı "Kurtuluş Sitesi" pini 220 m kuzeybatıda, sahipsiz /38 parselindeydi.
+      { source: "/mahalleler/guzelkent/kurtulus-sitesi", destination: "/mahalleler/guzelkent-mahallesi/yukselay-sitesi", permanent: true },
+      { source: "/mahalleler/guzelkent-mahallesi/kurtulus-sitesi", destination: "/mahalleler/guzelkent-mahallesi/yukselay-sitesi", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/akin-689-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari", permanent: true },
       // "-mahallesi" ekli biçim de kapsanmalı: canlı SERP taramasında (2026-08-01)
       // "Akın 688 Konutları emlakçı" aramasında Google TAM BU ADRESİ gösteriyordu
