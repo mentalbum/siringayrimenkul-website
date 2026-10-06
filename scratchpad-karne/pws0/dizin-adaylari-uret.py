@@ -58,7 +58,8 @@ def sinif(r):
     return None
 
 adaylar, dizinsizler, beklemede = [], [], []
-YASAK = ("ata-mahallesi/", "susuz-mahallesi/", "cumhuriyet-mahallesi/")  # 27.08 siteden kaldırıldı, 410
+YASAK = ("ata-mahallesi/", "susuz-mahallesi/", "cumhuriyet-mahallesi/",  # 27.08 siteden kaldırıldı, 410
+         "devlet-mahallesi/4-devlet-mahallesi-sitesi")  # 06.10 sayfa kaldırıldı (Maliye Lojmanları), 410 — istek gönderme
 
 for s, r in son.items():
     if "/" not in s or "/etaplar/" in s:
