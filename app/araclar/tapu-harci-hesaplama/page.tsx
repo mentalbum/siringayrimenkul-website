@@ -12,7 +12,8 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Tapu Harcı (Tapu Masrafı) Hesaplama — Alıcı ve Satıcı Payı (%4) Hesaplayıcı",
   description:
-    "Tapu harcı ne kadar, kim öder? Satış bedelini girin; toplam %4 harcın alıcı ve satıcı paylarını (%2+%2) anında görün. Ev satan ve alanlar için ücretsiz tapu masrafı hesaplayıcı.",
+    // 06.10: 177 → ≤155 karakter (SERP kesme sınırı).
+    "Tapu harcı ne kadar, kim öder? Satış bedelini girin; %4 harcın alıcı ve satıcı paylarını (%2+%2) anında görün. Ücretsiz tapu masrafı hesaplayıcı.",
   alternates: { canonical: "/araclar/tapu-harci-hesaplama" },
 };
 

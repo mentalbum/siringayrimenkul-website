@@ -12,7 +12,8 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Kira Artışı Hesaplama — TÜFE'ye Göre Yasal Kira Zammı Hesaplayıcı",
   description:
-    "Kira artışı nasıl hesaplanır? Mevcut kiranızı ve TÜİK'in açıkladığı 12 aylık TÜFE ortalamasını girin, yasal tavana göre yeni kirayı anında görün. Ev sahipleri için ücretsiz kira zammı hesaplayıcı.",
+    // 06.10: 196 → ≤155 karakter (SERP kesme sınırı).
+    "Kira artışı nasıl hesaplanır? Kiranızı ve 12 aylık TÜFE ortalamasını girin, yasal tavana göre yeni kirayı anında görün. Ücretsiz kira zammı hesaplayıcı.",
   alternates: { canonical: "/araclar/kira-artisi-hesaplama" },
 };
 

@@ -11,7 +11,10 @@ const SON_GUNCELLEME = "30 Temmuz 2026";
 export const metadata: Metadata = {
   title: "Gizlilik ve KVKK Aydınlatma Metni",
   description:
-    "Şirin Gayrimenkul'ün kişisel veri işleme pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz; çerezler yalnız izninizle çalışır.",
+    // 06.10: "çerezler yalnız izninizle çalışır" iddiası kaldırıldı — çerez rıza bandı
+    // 30.07'de söküldü (app/layout.tsx), GA tüm ziyaretçilerde çalışıyor; açıklama gövdeyle
+    // (analitik çerez, tarayıcıdan engellenebilir) hizalandı ve ≤155 karaktere çekildi.
+    "Şirin Gayrimenkul'ün kişisel veri işleme pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz, çerezler yalnız ölçüm için.",
   alternates: { canonical: "/gizlilik" },
 };
 
@@ -52,7 +55,11 @@ export default function GizlilikPage() {
             olağan bir müşteri görüşmesi olarak telefonumuzda/WhatsApp geçmişinde kalır.
           </p>
           <p className="mt-3">
-            <strong>Çerezler:</strong> Site deneyimini ölçmek için Google Analytics kullanıyoruz.
+            <strong>Çerezler:</strong>
+            {/* {" "} ŞART: &apos; içeren çok satırlı metnin baştaki boşluğunu derleyici
+                düşürüyor — canlıda "Çerezler:Site" basılıyordu (06.10 ölçümü). */}
+            {" "}
+            Site deneyimini ölçmek için Google Analytics kullanıyoruz.
             Aşağıdaki analitik çerezler siteyi ziyaret ettiğinizde kullanılır. Bu çerezleri
             istemiyorsanız tarayıcınızın çerez engelleme ayarlarını ya da Google&apos;ın{" "}
             <a

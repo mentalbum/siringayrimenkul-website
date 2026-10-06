@@ -11,7 +11,8 @@ export const metadata: Metadata = {
   // app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata içinde.
   title: "Eryaman Siteleri ve Rezidansları — Evinizi Satalım, Kiraya Verelim",
   description:
-    "Eryaman'daki tüm site ve rezidansların tam listesi. Sitenizi bulun; dairenizin satış ve kira değerini siteyi blok blok tanıyan yerel emlakçınızla netleştirin: 0532 363 96 60.",
+    // 06.10: 174 → ≤155 karakter (SERP kesme sınırı), telefon sonda ve kesilmez.
+    "Eryaman'daki site ve rezidansların tam listesi. Sitenizi bulun; dairenizin satış ve kira değerini siteyi tanıyan emlakçınızla netleştirin: 0532 363 96 60",
   alternates: { canonical: "/siteler" },
 };
 

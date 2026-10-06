@@ -8,7 +8,8 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Emlak Terimleri Sözlüğü — Kat Mülkiyeti, Kârgir, İskân, Emsal Nedir?",
   description:
-    "Kat mülkiyeti ile kat irtifakı farkı, kârgir ne demek, iskân neden önemli, emsal nasıl okunur? Ev satan ve kiraya veren ev sahipleri için temel emlak ve tapu terimlerinin sade açıklaması.",
+    // 06.10: 187 → ≤155 karakter (SERP kesme sınırı).
+    "Kat mülkiyeti ile kat irtifakı farkı, kârgir ne demek, iskân neden önemli, emsal nasıl okunur? Ev sahipleri için emlak-tapu terimlerinin sade açıklaması.",
   alternates: { canonical: "/sozluk" },
 };
 

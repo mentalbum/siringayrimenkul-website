@@ -12,7 +12,8 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   title: "Emlakçı Komisyonu Hesaplama — Satış ve Kiralamada Yasal Hizmet Bedeli",
   description:
-    "Emlakçı komisyonu ne kadar, kim öder? Satışta azami %4 + KDV (alıcı-satıcı %2+%2), kiralamada bir aylık kira + KDV. Bedeli girin, yasal üst sınırı anında görün — ücretsiz hesaplayıcı.",
+    // 06.10: 183 → ≤155 karakter (SERP kesme sınırı).
+    "Emlakçı komisyonu ne kadar, kim öder? Satışta azami %4 + KDV (%2+%2), kiralamada bir aylık kira + KDV. Bedeli girin, yasal üst sınırı anında görün.",
   alternates: { canonical: "/araclar/emlak-komisyonu-hesaplama" },
 };
 
