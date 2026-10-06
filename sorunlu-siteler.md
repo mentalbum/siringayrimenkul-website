@@ -2036,6 +2036,8 @@ düzeltilmedi — hepsi Özgün kararı / ayrı oturum işi.**
    (19501/1, 19502/1) hem gerçeğini kaçırıyor (17462/1; 75-yil-sitesi'nin sınır dosyası yok).
 
 ### KRİTİK — künye JSON'u düzeltilmiş, sınır dosyası eski parselde kalmış (harita yalan söylüyor)
+✅ **ÇÖZÜLDÜ 2026-10-06** — bu başlıktaki 6 kayıt + Age/Sütek/Kardelen/75. Yıl sınırları düzeltildi, map-qa'ya
+JSON↔geojson kontrolü girdi; ayrıntı dosya sonundaki "SINIR DOSYASI SÜPÜRMESİ UYGULANDI" bölümünde.
 - **Karma Modern** (ŞOA): JSON 46657/5, geojson **46656/5** (14.887 m² = 2026-07-25'te
   REDDEDİLEN "Yönetim ve Hizmet Binası" parseli). Pin de o yanlış poligonun içinde.
   next.config.ts:63-64'te hâlâ /adalar/46656-5 → karma-modern yönlendirmesi var. Üstelik
@@ -2087,3 +2089,73 @@ Acat tapudaki 3 bloğun TAMAMINI sahiplenirken aynı cümlede paylaşımı söyl
 - 20 kayıtta açıklama çok paragraflı ama sayfa tek `<p>` basıyor (`whitespace-pre` yok) —
   paragraf kırılımları HTML'de kayboluyor.
 (PR #16'dan 04.10'da taşındı.)
+
+## SINIR DOSYASI SÜPÜRMESİ UYGULANDI — 12.08 "harita yalan söylüyor" kartları kapandı (2026-10-06)
+Repo geneli JSON `adalar` ↔ `*-boundary.geojson` `properties.adalar` karşılaştırması + önbellek geometrisiyle
+halka centroid sınaması yapıldı (8 etiket uyumsuzluğu, 1 etiketsiz halka, 1 adalı-sınırsız kayıt). TKGM'den 20
+parsel canlı çekildi (hepsi kadastro 124123; Karma Modern 124128). Sonuç: uyumsuz 0, halka≠etiket 0, geometri
+sapması 0, adalı-sınırsız 0; `map-qa.py` 521 haritalı sitede 0 anomali.
+
+**Düzeltilenler (PR 06.10):**
+- **Karma Modern**: sınır 46656/5 (reddedilen "Yönetim ve Hizmet Binası") → **46657/5**; TKGM 46657/5 = "12 Katlı
+  A Blok Ve 3 Katlı B Bloklardan Oluşan Betonarme Ofis İşyeri", 8.954 m², Kat Mülkiyet → açıklamadaki tapu cümlesinin
+  "dayanağı yok" notu DÜŞTÜ (önbellek yeni-46657-5.json). Künye tuzağı da giderildi: "on iki katlı A ... ve ofis-işyeri
+  niteliğiyle" aynı cümlede kalınca kunye.ts'in 45 krk kuyruk penceresi 12'yi ticari sanıp eliyor, sayfa "en yüksek
+  bloğu 3 katlı" yazıyordu → cümle ";" ile bölündü, künye 3–12 (en yüksek bloğu 12 katlı). "Kat mülkiyetli parsel
+  (TKGM)" eklendi. next.config.ts'teki /adalar/46656-5 → karma-modern yönlendirmesi BİLEREK duruyor (eski adres
+  yaşayan varise taşınıyor).
+- **Güzel Ev** (YS): sınır 19501/1 (Özharitacılar'ın 11 dönümü) → **19501/2** (3.900 m², 16 dubleks; önbellek
+  dogrudan-guzel-ev-sitesi.json).
+- **Özharitacılar** (YS): Gülvatan'ın 19502/1 halkası sınırdan ÇIKARILDI; yalnız 19501/1.
+- **Concept Eryaman** (+46446/1: "3 Katlı A İle 18 Katlı B, Ofis İşyeri", 6.537 m²), **Yeşil Göksu** (+45819/1:
+  3 apartman, 7.191 m²; 45821/1: 4 blok, 9.833 m²) — ikinci parseller sınıra ve `adalar[].alanM2/nitelik`e işlendi;
+  Yeşil Göksu özellik satırları iki parseli sayıyor (künye alanı 9.833 → 17.024).
+- **Göksu Metrokent**: 28.07'de map-site.py --ada tek parsel yazarken düşen **46480/1** geri geldi (TKGM: "B1 Blok-B3
+  Blok Betonarme Apartman", 12.290 m², Kat Mülkiyet — metindeki "B blokların parseli ~12.290 m²" cümlesinin dayanağı);
+  sınır 2 halka.
+- **75. Yıl** (ŞOA): adalı ama sınırsızdı → Soyak'ın 17462/1 halkasıyla sınır dosyası açıldı (paylaşımlı parsel,
+  alan künyeye yazılmaz — "paylaş" koruması).
+- **Kardelen** (Güzelkent): sınır dosyası eski biçimdeydi (`ada/parsel` alanları, `adalar` listesi yok) → standart
+  biçim, etiket 18453/1.
+- **Age Blokları / Sütek Blokları** (Altay): sınır yalnız ana parseli çiziyordu → 9 ve 5 halka. İki adada parsel
+  numarası 1 DEĞİL **2** çıktı (17547/2 = 5 apartman ↔ 5 blok adı; 17542/2 = 4 ↔ 4; diğer 10 adada da TKGM apartman
+  sayısı blok adı sayısıyla BİREBİR tuttu — eryaman1.com tablosu çapraz doğrulama yöntemi). alanM2/nitelik 12 parsele
+  işlendi; Age toplam parsel 57.549 m², Sütek 31.332 m².
+- **Eryaman Port**: metin "10 blok / on bloklu" derken tapu niteliği 11 blok harfi sayıyor (A, B, C, D, E, F, G, H, J,
+  K, L) → 11.
+- **Address Yeşilova**: "Ticari nitelik: ofis/işyeri (tapu)" satırı DOĞRUYMUŞ — TKGM 47542/6 "2'Şer Katlı A Ve C Blok,
+  12 Katlı B Bloktan Oluşan Betonarme Ofis Ve İşyeri Ve Arsa"; eksik olan açıklamadaki tapu alıntısıydı, tamamlandı;
+  alanM2/nitelik yazıldı.
+- **Doğan City**: künye script'i kayıttaki düzgün niteliği önbellekteki Türkçe karaktersiz ham metinle ("Katli Ablok…") değiştirmişti → GERİ ALINDI. Ders: tkgm-kunye-uygula mevcut niteliği önbellek metni farklıysa ezer; elle düzeltilmiş kayıtlarda çalıştırmadan önce diff'e bak.
+- **map-qa.py**: JSON↔geojson etiket eşitliği ve halka=etiket sayısı artık ANOMALİ (12.08'deki 2. araç kusuru).
+  Beyaz liste (1. kusur) hâlâ yok; paylaşımlı parseller "bilgi" olarak akmaya devam ediyor.
+- "20 kayıtta çok paragraflı açıklama tek `<p>`" kartı: kodda zaten çözülmüş (`site.aciklama.split("\n\n")`), kapandı.
+
+**Dokunulmayanlar (karar/araştırma Özgün'de):** Lale Kent 46665/3 (künye script'i "3 Katlı Betonarme Ofis İşyeri"
+yazacaktı, kayıt kapsamı kararı beklediği için ATLANDI); aynı-parsel dupe kartları (44752/1 üçlüsü, 46512/9,
+63368/6, 62658/2, 18645/1); doğrulanmamış paylaşım iddiaları; kurtulus-sitesi (koordinatsız/adasız, pin tarlaya
+düşüyordu); Özahikent pini; Metrokent künye alanının 30.171'de kalması (metin iki parseli anlatıyor, parser ilkini
+"işyeri" penceresinde eliyor; ozellikler "Toplam ~42 dönüm" doğru).
+Teknik ders: mevcut sınır dosyasından halka kopyalarken poligon ([halka]) ile halkayı karıştırmak MultiPolygon
+derinliğini 3'e düşürüyor ve map-qa centroid'de çöküyor — derinlik kontrolü ile yakalandı, düzeltildi.
+
+**Build doğrulamasında çıkan BONUS HATA — Sutek "toplam 20 daireli" (kunye.ts, 06.10).** Üretilen sayfa 22
+apartmanlık küme için "10 katlı, toplam 20 daireli" diyordu: kayıttaki "Örneklenen bloklar 1989 yapımı, 10 katlı,
+20 daireli (yerel kayıt)" satırı BLOK künyesi, site toplamı değil. konutCikar'ın blok-başına koruması virgüllü blok
+künyesinin yalnız "10 kat, 20 daire" biçimini tanıyordu; "katlı/katli" soneki eklendi (`\d+\s*kat(?:l[ıi])?,\s*$`).
+522 kayıtlık döküm önce/sonra karşılaştırıldı: **tek kayıt değişti** (sutek konutSayisi 20 → yok), konutSayisi dolu
+139 → 138. Aynı deseni taşıyan uzuner-konutlari, ilgazlar, yardimci-bloklari zaten başka korumalarla eleniyordu.
+Ders: tapu/sınır düzeltmesinden sonra üretilen HTML'in AÇILIŞ CÜMLESİNİ oku — parser hataları ancak orada görünüyor.
+
+## Kurtuluş Sitesi (Güzelkent) — ÜÇÜNCÜ deneme de sonuçsuz, kayıt olduğu gibi kalsın (2026-10-06)
+Depodaki tek koordinatsız kayıt. Google Haritalar'da yer kaydı VAR ve adres birebir tutuyor
+("Güzelkent, 514. Sk. Kurtuluş Sitesi, 06827", /g/11npxmczrg, 39.9924746 / 32.6117925) — ama pin yine
+kadastroda **adasız /38 "Tarla"** parselinde (2.605 m², Ana Taşınmaz). Çevre taraması (5 TKGM nokta sondası):
+kuzey 18489/1 Didem (kat mülkiyetli, A1–A5+46 blok), güneybatı 18488/1 Nazlıdeniz (6 blok), doğu 18494/1
+"Okul ve Çok Amaçlı Salon", batı adasız /35 "Tarla" (9.749 m²). Yani pinin çevresinde **sahipsiz, kat
+mülkiyetli bir konut parseli yok**; Kurtuluş ya komşu bir sitenin blok adı ya da kadastroya yansımamış.
+Kanıt olmadığı için kayda koordinat da YAZILMADI: sınır olmayınca harita kutusu boş çıkar ve şu anki
+"Mahalle haritasını görüntüle" düğmesinden daha kötü olur. Açıklamadaki "tapu kaydı henüz eşleştirilemedi"
+cümlesi dürüst, duruyor. **Dördüncü kez denemeyin** — çözüm Özgün'ün saha bilgisinden gelir (514. Sokak'ta
+Kurtuluş tabelası hangi binada?). Altay'daki Sutek kümesinde "Kurtuluş" adlı bir apartman var (17539 adası);
+AYRI yerleşim, karıştırma.

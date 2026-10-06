@@ -337,7 +337,12 @@ function konutCikar(metin: string, kip: Kip, tekBlok = false): number | undefine
             /(blokta|bloklarda|bloğunda|bloklarında)(?!\p{L})/u.test(satirOnek)) ||
           /blo[kğ]\p{L}*\s+başına/u.test(satirOnek) ||
           /(katlı|örneklenen)\s+blo[kğ]\p{L}*\s*$/u.test(yakinOnek) ||
-          /\d+\s*kat,\s*$/.test(yakinOnek) ||
+          // Blok künyesi virgülle dizilir: "10 kat, 20 daire" ve "1989 yapımı,
+          // 10 katlı, 20 daireli" aynı şeydir — ikinci biçim 06.10'a kadar
+          // yakalanmıyordu ve Sutek Blokları'nın 22 apartmanlık kümesi
+          // "toplam 20 daireli" diye yayınlanıyordu (blok künyesi site toplamı
+          // sanılmıştı). "katlı/katli" sonekleri de sayılır.
+          /\d+\s*kat(?:l[ıi])?,\s*$/.test(yakinOnek) ||
           // "14 daireli sakin bir blokla", "36 daireli bloklar": sayı bloğu
           // NİTELİYORSA blok-başınadır (su-damlası). normalize "bir"i "1"
           // yaptığı için ara kelimeler rakam da olabilir.
