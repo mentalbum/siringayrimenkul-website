@@ -64,26 +64,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * Elle yazılan tarih bir sonraki içerik değişikliğinde sessizce bayatlıyor:
      * 08.08 ölçümünde /blog 2026-07-24 diyordu ama 07.08'de 24 yazı silinmişti,
      * /siteler 2026-08-02 diyordu ama o gün 14 kayıt yeniden yazılmıştı. */
-    { url: `${baseUrl}/siteler`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "weekly", priority: 0.8 },
+    // 06.10: meta description 174 → ≤155 (SERP'te görünen metin) — hub tarihi içerik
+    //        klasörüyle bu şablon tarihinin büyüğü (/mahalleler kalıbı).
+    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-06")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
-    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.8 },
+    // 06.10: meta description 189 → ≤155 (SERP'te görünen metin). Aynı gün: kira/tapu/
+    //        komisyon hesaplayıcıları, /sozluk ve /iletisim açıklamaları da ≤155'e çekildi.
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/araclar`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/sozluk`, lastModified: g("2026-08-27"), changeFrequency: "monthly", priority: 0.6 },
-    // 06.10: "Çerezler:Site" bitişikliği giderildi (görünen metin).
+    { url: `${baseUrl}/sozluk`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
+    // 06.10: "Çerezler:Site" bitişikliği giderildi; meta description'daki yanlış rıza
+    //        iddiası kaldırıldı (görünen metin).
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     // 06.10: Özgün kartındaki "520sitenin" bitişikliği giderildi (görünen metin).
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-08-27"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının

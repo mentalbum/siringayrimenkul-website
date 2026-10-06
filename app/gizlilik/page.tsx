@@ -11,7 +11,10 @@ const SON_GUNCELLEME = "30 Temmuz 2026";
 export const metadata: Metadata = {
   title: "Gizlilik ve KVKK Aydınlatma Metni",
   description:
-    "Şirin Gayrimenkul'ün kişisel veri işleme pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz; çerezler yalnız izninizle çalışır.",
+    // 06.10: "çerezler yalnız izninizle çalışır" iddiası kaldırıldı — çerez rıza bandı
+    // 30.07'de söküldü (app/layout.tsx), GA tüm ziyaretçilerde çalışıyor; açıklama gövdeyle
+    // (analitik çerez, tarayıcıdan engellenebilir) hizalandı ve ≤155 karaktere çekildi.
+    "Şirin Gayrimenkul'ün kişisel veri işleme pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz, çerezler yalnız ölçüm için.",
   alternates: { canonical: "/gizlilik" },
 };
 

@@ -15,7 +15,8 @@ import { BuildingIcon, CheckBadgeIcon, MapPinIcon } from "@/components/ui/icons"
 export const metadata: Metadata = {
   title: "Eryaman Ev Değerleme — Evinizi Doğru Fiyatla Satın veya Kiraya Verin",
   description:
-    "Evinizi satmayı veya kiraya vermeyi düşünüyorsanız fiyatı birlikte belirleyelim. Mahallenizi ve sitenizi yakından tanıyan Şirin Gayrimenkul'den gerçekçi fiyat analizi ve satış yol haritası.",
+    // 06.10: 189 → ≤155 karakter (SERP kesme sınırı); açılış "Eryaman" — baş sorgunun yalın biçimi.
+    "Eryaman'da evinizi satmadan ya da kiraya vermeden önce fiyatı birlikte belirleyelim: sitenizi tanıyan Şirin Gayrimenkul'den emsal bazlı fiyat analizi.",
   alternates: { canonical: "/ev-degerleme" },
 };
 

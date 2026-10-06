@@ -11,7 +11,8 @@ import { OfisDurumu } from "@/components/ui/ofis-durumu";
 
 export const metadata: Metadata = {
   title: "İletişim — Eryaman Emlakçınız, Tunahan 4. Etap Çarşı",
-  description: `Eryaman/Etimesgut'ta evinizi satmak veya kiraya vermek için ${siteConfig.name}'a ulaşın: ${siteConfig.phoneDisplay} — Tunahan Mahallesi, 4. Etap Çarşı. WhatsApp ve değerleme formu da açık.`,
+  // 06.10: 175 → ≤155 karakter (SERP kesme sınırı), telefon sonda ve kesilmez.
+  description: `Eryaman'da evinizi satmak veya kiraya vermek için ${siteConfig.name}'a ulaşın — Tunahan Mah. 4. Etap Çarşı. WhatsApp ya da telefon: ${siteConfig.phoneDisplay}`,
   alternates: { canonical: "/iletisim" },
 };
 
