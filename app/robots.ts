@@ -35,18 +35,15 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    /* GEÇİCİ İKİNCİ SİTE HARİTASI (2026-08-16): sitemap-eski-adresler.xml.
-     * 26.07 mahalle slug taşımasından kalan 242 eski adres 308 ile yeni
-     * adreslerine yönleniyor, ama Google eski adresi YENİDEN TARAMADAN
-     * yönlendirmeyi göremiyor — ölçümde (16.08, GSC API) 967 sorguda kendi
-     * sayfalarımız yarışıyor ve bu yarışın %26'sı (7.527 gösterim) eski
-     * adreslerde sıkışmış. Google'ın adres değişikliği rehberi bu durumda
-     * eski adresleri geçici bir site haritasıyla bildirmeyi öneriyor.
-     * KALDIRMA KOŞULU: adresler GSC'de "Yönlendirmeli sayfa" kovasına
-     * geçince ya da en geç 2026-10-15'te bu satır ve dosya SİLİNECEK. */
-    sitemap: [
-      `${siteConfig.url}/sitemap.xml`,
-      `${siteConfig.url}/sitemap-eski-adresler.xml`,
-    ],
+    /* ESKİ ADRES SİTE HARİTASI KALDIRILDI (2026-10-07). 16.08'de 26.07 slug
+     * taşımasının eski adreslerini (908) geçici bir site haritasıyla bildirmiştik
+     * ki Google yeniden tarayıp 308'leri görsün; kaldırma koşulu "en geç 15.10"
+     * idi. 04.10 taramasında ilk 3'teki 74 yanlış URL'nin 41'i hâlâ eski adres:
+     * eski adresleri site haritasında tutmak onları Google'ın gözünde canlı da
+     * tutuyor (ChatGPT istişaresi 07.10; Google'ın taşıma rehberi de taşıma
+     * sonrası eski haritanın kaldırılmasını söyler). Tek adımlı 308'ler ve
+     * next.config.ts'teki tüm yönlendirmeler DURUYOR (en az 1 yıl). Ölçüt:
+     * haftalık SERP taramasında "eski" sayısı 41 → <10 → ~0. */
+    sitemap: `${siteConfig.url}/sitemap.xml`,
   };
 }

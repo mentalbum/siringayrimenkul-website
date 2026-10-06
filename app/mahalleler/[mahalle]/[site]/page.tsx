@@ -15,6 +15,7 @@ import {
 } from "@/lib/content";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
+import { baslikDeneyinde, bilgiBasligi, bilgiAciklamasi } from "@/lib/baslik-deneyi-0710";
 
 /** Ev sahibinin tek dokunuşla göndereceği WhatsApp mesajı (07.10, ChatGPT
  * istişaresi): "değerleme" bizim hizmet adımız, "bu sitede dairem var" ise
@@ -187,9 +188,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // Bölge ayrımı AYNEN duruyor: Ata/Susuz/Cumhuriyet'te "Eryaman" değil
     // mahalle adı basılır (lib/bolge.ts, Yenimahalle kolu).
     title: {
-      absolute: lokasyon
-        ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
-        : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
+      // BAŞLIK DENEYİ 2 (07.10–04.11): 50 tedavi sayfasında bilgi odaklı başlık
+      // (lib/baslik-deneyi-0710.ts); kontrol ve geri kalan herkes eski kalıpta.
+      absolute: baslikDeneyinde(site)
+        ? bilgiBasligi(site.isim)
+        : lokasyon
+          ? `${site.isim} Emlakçı | ${lokasyon} | Evinizi Satalım, Kiraya Verelim`
+          : `${site.isim} Emlakçı | Evinizi Satalım, Kiraya Verelim`,
     },
     // Güven öğesi (yetki belge no) snippet'te: SERP'te 1. sıradaki portal
     // listelerinden farklılaşma — arayan "emlakçı" arıyor, ilan listesi değil
@@ -221,6 +226,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     // sayfayı etkiliyor, kalan 518'i harfi harfine aynı. SABLON.site tabanı
     // bu yüzden İLERLETİLMEDİ — bkz. AGENTS.md, 17.08 ada emsali.
     description: (() => {
+      if (baslikDeneyinde(site)) return bilgiAciklamasi(site.isim); // deney kolu (adaş siteler kohort dışı)
       const on = isimBirdenCokMahallede(site.isim) ? `${mahalleKisaIsim(mahalle)} ` : "";
       const govde = `${on}${bulunmaHali(site.isim)} evinizi kiraya vermek ya da satmak istiyorsanız, emlakçınız olarak süreci`;
       const kuyruk = ` biz yürütürüz: ${siteConfig.phoneDisplay}`;

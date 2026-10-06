@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-09-06",
+ "guncelleme": "2026-10-07",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -186,6 +186,15 @@
    "gerekce": "app/robots.ts yorumundaki kural: en gec 2026-10-15'te robots.ts'teki satir + rota dosyasi silinir, GSC'den sitemap kaldirilir.",
    "sonraki_olcum": "15.10: sil, GSC Site Haritalari'ndan kaldir, 7 gun sonra 'yonlendirmeli' kovasi degisimi",
    "nerede": "app/robots.ts:38-46 (sitemap satiri) + public/sitemap-eski-adresler.xml (statik dosya) + GSC Site Haritalari"
+  },
+  {
+   "tarih": "2026-10-07",
+   "ad": "Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-adres sitemap'i kaldirildi",
+   "durum": "acik",
+   "olcum": "Kurulum olcumu: tedavi 50 sayfa 15.440 gosterim / ort. konum 7,65; kontrol 50 sayfa 14.293 / 7,60 (28g GSC, 07.09-04.10). Adaylar >=80 gosterim; 04.10'da degisen 45 kontrol sayfasi, kaldirilan mahalleler ve adas adli siteler haric. CTA tum sitede: hero birincil WhatsApp (gercek site adli hazir mesaj), degerleme ghost bag. Eski-adres sitemap'i (908 adres) kaldirildi; 04.10'da ilk 3'teki 74 yanlis URL'nin 41'i eski adresti.",
+   "gerekce": "ChatGPT istisaresi 07.10 (Ozgun talimati): yalin site adi sorgularinda (talebin %65'i, poz ~9,5, TO %0,8) ticari baslik yerine '<Site> Eryaman | Tapu ve Site Bilgileri'; degerleme formu 3 ayda 0 gonderim, temasin tamami telefon+WhatsApp.",
+   "sonraki_olcum": "04.11: GSC sayfa x sorgu, yalnizca yalin ad / ad+Eryaman sorgularinda ayni konum bandinda tedavi CTR vs kontrol CTR; SERP tarayici 'bas' alaniyla Google'in basligi aynen gosterme orani; haftalik 'eski' sayisi (41 -> <10); GA4 (phone_click+whatsapp_click)/1000 organik oturum, 8 haftalik taban + kayan 28 gun",
+   "nerede": "lib/baslik-deneyi-0710.ts, scratchpad-karne/pws0/baslik-deneyi-0710.json, app/robots.ts"
   }
  ]
 }
