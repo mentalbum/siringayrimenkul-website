@@ -12,6 +12,7 @@
 //
 // Kullanım:
 //   node ga4-q.mjs <bas> <bit> gunluk   → tarih  oturum  ort_sure_sn  hemen_cikma  goruntuleme
+//   node ga4-q.mjs <bas> <bit> kanal    → tarih  kanal  cihaz  oturum   (07.10, hatirlanirlik-uret.py)
 //   node ga4-q.mjs <bas> <bit> olaylar  → tarih  olay_adi  sayi   (phone_click, whatsapp_click, form_start, contact_form_submit)
 import { createSign } from "node:crypto";
 import { readFileSync } from "node:fs";
@@ -50,6 +51,12 @@ if (komut === "gunluk") {
     orderBys: [{ dimension: { dimensionName: "date" } }], limit: 2000 });
   for (const r of j.rows || []) console.log([gun(r.dimensionValues[0].value), r.dimensionValues[1].value, r.metricValues[0].value].join("\t"));
   console.error(`(${(j.rows || []).length} satır)`);
+} else if (komut === "kanal") {
+  // 07.10: hatırlanırlık bölümü için — tarih  kanal  cihaz  oturum (sessionDefaultChannelGroup × deviceCategory)
+  const j = await rapor({ dateRanges: tarih, dimensions: [{ name: "date" }, { name: "sessionDefaultChannelGroup" }, { name: "deviceCategory" }],
+    metrics: [{ name: "sessions" }], orderBys: [{ dimension: { dimensionName: "date" } }], limit: 10000 });
+  for (const r of j.rows || []) console.log([gun(r.dimensionValues[0].value), r.dimensionValues[1].value, r.dimensionValues[2].value, r.metricValues[0].value].join("\t"));
+  console.error(`(${(j.rows || []).length} satır)`);
 } else {
-  console.error("Komutlar: gunluk | olaylar  <bas> <bit>"); process.exit(1);
+  console.error("Komutlar: gunluk | olaylar | kanal  <bas> <bit>"); process.exit(1);
 }

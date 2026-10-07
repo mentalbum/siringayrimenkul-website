@@ -32,6 +32,8 @@ Doğrudan okunan ölçüm dosyaları (bu klasör):
                                      --yerel: çekmez, mevcut TSV'leri okur)
   python3 sorgu-sinifi-to.py      → sorgu-sinifi-to.json   (sorgular28.tsv; sayfa-sorgu28.tsv
                                     varsa onu da okur → ada-beklenti'den SONRA koş)
+  python3 hatirlanirlik-uret.py   → hatirlanirlik.json     (07.10: GSC marka sorgusu + GA4 mobil Direct +
+                                    gbp-yorum-serisi.jsonl + gbp-performans.jsonl; gsc-q.mjs/ga4-q.mjs bu klasörde)
   python3 tik-sonrasi-uret.py     → tik-sonrasi.json       (ga4-ozet28 / ga4-aile28 / ga4-olaylar28)
   python3 veri-sagligi.py         → veri-sagligi.json      (ölçüm dosyaları + content/siteler)
   python3 gorunmez-teshis-uret.py → gorunmez-teshis.json   (gorunmez-denetim.tsv: gsc-api
@@ -2354,6 +2356,109 @@ if _IT:
 # 02.09 denetimi: başlık kartlarındaki "sorguların ilk 3′te olduğu oran" kartı kaldırıldı —
 # aynı rakam (%{ilk3}) yönetici özetinin 1. kartında aynı hesapla (504 tabanı) basılıyor;
 # iki kez görünmesi okuyucuya iki ayrı ölçüm gibi geliyordu. TOPLAM_I3 hesabı duruyor.
+# --- HATIRLANIRLIK (07.10) -------------------------------------------------------
+# "Ev sahibi karar anında bizi hatırlıyor mu" — arama DIŞI işin sayısal vekilleri.
+# Üretici: hatirlanirlik-uret.py (GSC marka sorgusu, GA4 mobil Direct, yorum temposu,
+# GBP Performans panel kaydı, GBP bağının UTM izi). Aylık okunur; +%25 altı fark yorumlanmaz.
+try:
+    _HT = json.load(open("hatirlanirlik.json"))
+except Exception:
+    _HT = None
+if _HT:
+    _ho = _HT["ozet"]; _hy = _HT["yorum"]; _hh = [h for h in _HT["haftalar"] if h.get("marka_gos") is not None]
+
+    def _ht_fark(x):
+        """+%25 eşiğinin altı 'yorumlanmaz' diye basılır; rozet rengi yalnız eşik üstünde."""
+        if not x or not x.get("onceki"):
+            return '<span class="chip nul">önceki dönem yok</span>'
+        d = round(100 * (x["simdi"] - x["onceki"]) / x["onceki"])
+        if abs(d) < 25:
+            return f'<span class="chip nul">{d:+}% · eşik altı</span>'
+        return f'<span class="chip {"iyi" if d > 0 else "kotu"}">{d:+}%</span>'
+
+    def _ht_cubuk(alan):
+        vs = [h.get(alan) for h in _hh]
+        tepe = max([v for v in vs if v is not None] or [1]) or 1
+        return "".join(
+            f'<span class="hf" style="height:{max(4, round(46 * (v or 0) / tepe))}px" '
+            f'title="{tr_tarih(h["bas"])} haftası · {v}"><i>{v}</i></span>'
+            for h, v in zip(_hh, vs) if v is not None)
+
+    _ht_tempo = "".join(
+        f'<tr><td>{tr_tarih(x["bas"])} → {tr_tarih(x["bit"])}</td><td class="num">+{x["yeni"]}</td>'
+        f'<td class="num">{x["gun"]} gün</td><td class="num">{tr_sayi(x["aylik"], 1)}</td></tr>'
+        for x in _hy["tempo"][-5:])
+    _ht_son = _hy.get("son") or {}
+    _ht_efor = _hy.get("efor_son") or {}
+    _ht_tempo_son = _hy["tempo"][-1]["aylik"] if _hy["tempo"] else None
+    _utm = _HT.get("gbp_utm", {})
+    _utm_28 = (_ho.get("gbp_sayfa_gos_28") or {}).get("simdi")
+    if _utm_28:
+        _utm_html = (f'<span class="chip iyi">GBP bağı UTM′li</span> son 28 günde {tr_sayi(_utm_28)} gösterim '
+                     f'bu adresle geldi; kanal Analytics′te ayrı okunuyor.')
+    else:
+        _utm_html = (f'<span class="chip kotu">GBP bağı UTM′siz</span> Google İşletme Profili′ndeki web sitesi '
+                     f'bağından gelen son gösterim <strong>{tr_tarih(_utm.get("son_gosterim_gunu")) if _utm.get("son_gosterim_gunu") else "—"}</strong>. '
+                     f'O günden beri en önemli kanal Analytics′te ölçülemiyor; panelde bağ '
+                     f'<code>/?utm_source=google&amp;utm_medium=gbp</code> olarak geri yazılmalı.')
+    _gp = _HT.get("gbp_performans") or []
+    if _gp:
+        _gp_satir = "".join(
+            f'<tr><td>{esc(str(g.get("ay", "")))}</td><td class="num">{tr_sayi(g["marka_arama"]) if g.get("marka_arama") is not None else "—"}</td>'
+            f'<td class="num">{tr_sayi(g["cagri"]) if g.get("cagri") is not None else "—"}</td>'
+            f'<td class="num">{tr_sayi(g["yol_tarifi"]) if g.get("yol_tarifi") is not None else "—"}</td>'
+            f'<td class="num">{tr_sayi(g["web_tik"]) if g.get("web_tik") is not None else "—"}</td></tr>' for g in _gp[-6:])
+        _gp_html = (f'<div class="tablo-kabuk"><table><thead><tr><th>Ay</th><th class="num">Marka aramaları</th>'
+                    f'<th class="num">Çağrı</th><th class="num">Yol tarifi</th><th class="num">Web tıkı</th></tr></thead>'
+                    f'<tbody>{_gp_satir}</tbody></table></div>')
+    else:
+        _gp_html = ('<p class="alt" style="margin:8px 0 0">Henüz kayıt yok. Google İşletme Profili → Performans raporu '
+                    'ayda bir okunup <code>gbp-performans.jsonl</code> dosyasına işlenir (panel Özgün′de; rakam elle '
+                    'tahmin edilmez).</p>')
+    hatirlanirlik_html = f"""
+  <h2>Hatırlanırlık — karar anında akla geliyor muyuz</h2>
+  <p class="not">Sıra tarafında tavan yakın; “hafızalara kazınma” arama dışı bir iş ve dört vekille izlenir.
+  Hepsi <strong>aylık</strong> okunur: sayılar küçük, %25′in altındaki fark yorumlanmaz, mevsim kıyası bir yıl ister.
+  <span class="pencere">Search Console son veri günü: {tr_tarih(_HT["son_gsc_gunu"]) if _HT.get("son_gsc_gunu") else "—"}</span></p>
+  <div class="kartlar">
+    <div class="kart"><div class="buyuk">{tr_sayi((_ho.get("marka_gos_28") or {}).get("simdi") or 0)}</div>
+      <div class="etiket">adımızla arama · 28 gün gösterim</div><div class="fark" style="margin-top:8px">{_ht_fark(_ho.get("marka_gos_28"))}</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_ho["direct_mobil_28"]["simdi"])}</div>
+      <div class="etiket">doğrudan gelen · telefon · 28 gün</div><div class="fark" style="margin-top:8px">{_ht_fark(_ho["direct_mobil_28"])}</div></div>
+    <div class="kart"><div class="buyuk">{tr_sayi(_ht_son.get("sirin") or 0)}</div>
+      <div class="etiket">Google yorumu · {tr_tarih(_ht_son["d"]) if _ht_son.get("d") else "—"}</div>
+      <div class="fark" style="margin-top:8px"><span class="chip {"iyi" if (_ht_tempo_son or 0) >= 5 else "orta"}">son tempo {tr_sayi(_ht_tempo_son, 1) if _ht_tempo_son is not None else "—"}/ay</span></div></div>
+    <div class="kart"><div class="buyuk">{("+" + str(_hy["fark"])) if _hy.get("fark") is not None else "—"}</div>
+      <div class="etiket">yorum farkı · kutudaki 2. ofise göre ({tr_sayi(_ht_efor.get("efor") or 0)})</div></div>
+  </div>
+  <p class="alt" style="margin:12px 0 0">{_utm_html}</p>
+  <div class="iki" style="margin-top:16px">
+    <div class="pano">
+      <h3>Adımızla arama — haftalık gösterim</h3>
+      <div class="hafta">{_ht_cubuk("marka_gos")}</div>
+      <p class="alt" style="margin:10px 0 0">“şirin gayrimenkul”, “şirin emlak” ve türevleri; adında Şirin geçen
+      siteler (Şirin 91, Şirinköy) sayılmaz. Search Console nadir sorguları gizler: rakam alt sınırdır.</p>
+      <h3 style="margin-top:16px">Doğrudan gelen (telefon) — haftalık oturum</h3>
+      <div class="hafta">{_ht_cubuk("direct_mobil")}</div>
+      <p class="alt" style="margin:10px 0 0">Adresi yazarak ya da kayıtlı bağdan gelenler. Masaüstü sayılmaz:
+      orada izleme araçlarının trafiği karışıyor.</p>
+    </div>
+    <div class="pano">
+      <h3>Yorum temposu</h3>
+      <div class="tablo-kabuk"><table style="min-width:0">
+        <thead><tr><th>Dönem</th><th class="num">Yeni</th><th class="num">Süre</th><th class="num">Aylık</th></tr></thead>
+        <tbody>{_ht_tempo}</tbody>
+      </table></div>
+      <p class="alt" style="margin:10px 0 0">Yerel sıralamada sayı kadar <strong>düzenli akış</strong> sayılır.
+      Hedef haftada 1–2 metinli yorum; her tapu devri ve kiracı bulma gününde istek gönderilir. Yoruma yanıt yazılmaz.</p>
+      <h3 style="margin-top:16px">Google İşletme Profili — Performans</h3>
+      {_gp_html}
+    </div>
+  </div>
+"""
+else:
+    hatirlanirlik_html = ""
+
 HTML = f"""<title>Bulunabilirlik Karnesi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap">
@@ -2700,6 +2805,7 @@ tr.grup td {{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; co
 {mudahale_html}
 {ilk3hedef_html}
 {tiksonrasi_html}
+{hatirlanirlik_html}
 {sorgusinif_html}
 {dogrusayfa_html}
 {turverim_html}

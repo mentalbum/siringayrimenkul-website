@@ -1,0 +1,310 @@
+{
+ "guncelleme": "2026-10-07",
+ "kaynak": "GSC (gsc-q.mjs, marka sorgu süzgeci) + GA4 (ga4-q.mjs kanal) + gbp-yorum-serisi.jsonl + gbp-performans.jsonl",
+ "marka_suzgec": "(ş|s)irin\\s*(gayrimenkul|emlak|group)",
+ "son_gsc_gunu": "2026-10-04",
+ "ozet": {
+  "marka_gos_28": {
+   "simdi": 177,
+   "onceki": 154,
+   "bit": "2026-10-04"
+  },
+  "marka_tik_28": {
+   "simdi": 12,
+   "onceki": 14
+  },
+  "gbp_sayfa_gos_28": {
+   "simdi": 0,
+   "onceki": 176
+  },
+  "direct_mobil_28": {
+   "simdi": 71,
+   "onceki": 69,
+   "bit": "2026-10-06"
+  },
+  "direct_masaustu_28": {
+   "simdi": 74,
+   "onceki": 102
+  }
+ },
+ "haftalar": [
+  {
+   "bas": "2026-06-29",
+   "tam": true,
+   "marka_gos": 45,
+   "marka_tik": 17,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 49,
+   "direct_masaustu": 26,
+   "sosyal": 3,
+   "ai": 0
+  },
+  {
+   "bas": "2026-07-06",
+   "tam": true,
+   "marka_gos": 22,
+   "marka_tik": 5,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 9,
+   "direct_masaustu": 19,
+   "sosyal": 1,
+   "ai": 0
+  },
+  {
+   "bas": "2026-07-13",
+   "tam": true,
+   "marka_gos": 23,
+   "marka_tik": 3,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 11,
+   "direct_masaustu": 37,
+   "sosyal": 1,
+   "ai": 3
+  },
+  {
+   "bas": "2026-07-20",
+   "tam": true,
+   "marka_gos": 26,
+   "marka_tik": 6,
+   "gbp_sayfa_gos": 59,
+   "direct_mobil": 3,
+   "direct_masaustu": 29,
+   "sosyal": 3,
+   "ai": 2
+  },
+  {
+   "bas": "2026-07-27",
+   "tam": true,
+   "marka_gos": 23,
+   "marka_tik": 4,
+   "gbp_sayfa_gos": 567,
+   "direct_mobil": 26,
+   "direct_masaustu": 30,
+   "sosyal": 0,
+   "ai": 3
+  },
+  {
+   "bas": "2026-08-03",
+   "tam": true,
+   "marka_gos": 46,
+   "marka_tik": 3,
+   "gbp_sayfa_gos": 714,
+   "direct_mobil": 11,
+   "direct_masaustu": 27,
+   "sosyal": 2,
+   "ai": 2
+  },
+  {
+   "bas": "2026-08-10",
+   "tam": true,
+   "marka_gos": 34,
+   "marka_tik": 3,
+   "gbp_sayfa_gos": 176,
+   "direct_mobil": 16,
+   "direct_masaustu": 28,
+   "sosyal": 5,
+   "ai": 0
+  },
+  {
+   "bas": "2026-08-17",
+   "tam": true,
+   "marka_gos": 28,
+   "marka_tik": 2,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 19,
+   "direct_masaustu": 28,
+   "sosyal": 1,
+   "ai": 5
+  },
+  {
+   "bas": "2026-08-24",
+   "tam": true,
+   "marka_gos": 48,
+   "marka_tik": 4,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 17,
+   "direct_masaustu": 19,
+   "sosyal": 2,
+   "ai": 8
+  },
+  {
+   "bas": "2026-08-31",
+   "tam": true,
+   "marka_gos": 44,
+   "marka_tik": 5,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 19,
+   "direct_masaustu": 34,
+   "sosyal": 64,
+   "ai": 12
+  },
+  {
+   "bas": "2026-09-07",
+   "tam": true,
+   "marka_gos": 45,
+   "marka_tik": 3,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 21,
+   "direct_masaustu": 19,
+   "sosyal": 47,
+   "ai": 10
+  },
+  {
+   "bas": "2026-09-14",
+   "tam": true,
+   "marka_gos": 54,
+   "marka_tik": 3,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 25,
+   "direct_masaustu": 25,
+   "sosyal": 12,
+   "ai": 9
+  },
+  {
+   "bas": "2026-09-21",
+   "tam": true,
+   "marka_gos": 44,
+   "marka_tik": 2,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 13,
+   "direct_masaustu": 13,
+   "sosyal": 3,
+   "ai": 10
+  },
+  {
+   "bas": "2026-09-28",
+   "tam": true,
+   "marka_gos": 34,
+   "marka_tik": 4,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 15,
+   "direct_masaustu": 19,
+   "sosyal": 21,
+   "ai": 4
+  },
+  {
+   "bas": "2026-10-05",
+   "tam": false,
+   "marka_gos": null,
+   "marka_tik": null,
+   "gbp_sayfa_gos": null,
+   "direct_mobil": null,
+   "direct_masaustu": null,
+   "sosyal": null,
+   "ai": null
+  }
+ ],
+ "yorum": {
+  "seri": [
+   {
+    "d": "2026-06-24",
+    "sirin": 374,
+    "efor": null,
+    "kaynak": "panel (GBP denetimi)"
+   },
+   {
+    "d": "2026-07-04",
+    "sirin": 376,
+    "efor": null,
+    "kaynak": "hafıza kaydı"
+   },
+   {
+    "d": "2026-07-26",
+    "sirin": 377,
+    "efor": null,
+    "kaynak": "hafıza kaydı"
+   },
+   {
+    "d": "2026-08-09",
+    "sirin": 380,
+    "efor": 376,
+    "kaynak": "sira-karnesi.md:529 (Efor 376)"
+   },
+   {
+    "d": "2026-08-28",
+    "sirin": 398,
+    "efor": null,
+    "kaynak": "bölge turu kutu kartı"
+   },
+   {
+    "d": "2026-09-04",
+    "sirin": 399,
+    "efor": null,
+    "kaynak": "FB/IG oturumu"
+   },
+   {
+    "d": "2026-10-07",
+    "sirin": 404,
+    "efor": 386,
+    "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+   }
+  ],
+  "tempo": [
+   {
+    "bas": "2026-06-24",
+    "bit": "2026-07-04",
+    "gun": 10,
+    "yeni": 2,
+    "aylik": 6.0
+   },
+   {
+    "bas": "2026-07-04",
+    "bit": "2026-07-26",
+    "gun": 22,
+    "yeni": 1,
+    "aylik": 1.4
+   },
+   {
+    "bas": "2026-07-26",
+    "bit": "2026-08-09",
+    "gun": 14,
+    "yeni": 3,
+    "aylik": 6.4
+   },
+   {
+    "bas": "2026-08-09",
+    "bit": "2026-08-28",
+    "gun": 19,
+    "yeni": 18,
+    "aylik": 28.4
+   },
+   {
+    "bas": "2026-08-28",
+    "bit": "2026-09-04",
+    "gun": 7,
+    "yeni": 1,
+    "aylik": 4.3
+   },
+   {
+    "bas": "2026-09-04",
+    "bit": "2026-10-07",
+    "gun": 33,
+    "yeni": 5,
+    "aylik": 4.5
+   }
+  ],
+  "son": {
+   "d": "2026-10-07",
+   "sirin": 404,
+   "efor": 386,
+   "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+  },
+  "efor_son": {
+   "d": "2026-10-07",
+   "sirin": 404,
+   "efor": 386,
+   "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+  },
+  "fark": 18
+ },
+ "gbp_performans": [],
+ "gbp_utm": {
+  "son_gosterim_gunu": "2026-08-11",
+  "aciklama": "GBP 'Web sitesi' bağı UTM'liyken GSC'de /?utm_source=google&utm_medium=gbp sayfası gösterim alır; seri sıfırsa bağ UTM'siz demektir (kanal #1 GA4'te ölçülemez)."
+ },
+ "uyarilar": [
+  "Sorgu boyutu GSC gizlilik süzgecinden geçer: marka gösterimi alt sınırdır, seri olarak okunur.",
+  "+%25 altı fark yorumlanmaz (n küçük); mevsim kıyası için Ekim 2027 gerekir.",
+  "Masaüstü Direct'te izleme/kendi trafiği şüphesi var; hatırlanırlık vekili yalnız MOBİL Direct."
+ ]
+}

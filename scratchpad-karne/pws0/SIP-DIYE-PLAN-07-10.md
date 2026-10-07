@@ -1,0 +1,50 @@
+# Eryaman'da "şıp diye bulunma" planı — 07.10.2026
+
+## 1. Durum (ölçülmüş)
+"Eryaman emlakçı" sorgusunda harita kutusu #1, organik #1-2; 28.08 bölge turunda Sincan/Batıkent dahil 10/10 noktadan kutu #1 (sonuclar-bolge.jsonl, PROTOKOL-gece.md:992-1000) — asıl kapı yerinde, sıra tarafında kapatılacak boşluk yok. Emlakçı niyetli coğrafi gösterimin %87'si "eryaman" ailesinde; "mahalle+emlakçı" ve "site+emlakçı" hacmi GSC'de sıfır (sorgular28.tsv), yani 10/17 mahalle kutusunda olmamamızın arayanı yok. Gerçek boşluk üç yerde: (a) kanal #1'in web ayağı 18.08'den beri ölçülemiyor (GBP bağı UTM'siz, GA4 medium=gbp 7 haftadır 0 — kaldirac-defteri.json), (b) GBP paneli 09.08'den beri okunmadı ve kategori sessizce "Emlak Bürosu"→"Gayrimenkul Danışmanı" olmuş, (c) hatırlanırlık (marka araması, Direct, GBP ad araması) hiçbir yerde seri olarak tutulmuyor. Tavan: çıplak "emlakçı" kutusu ~1,5-2 km hiper-yerel (ofis Tunahan'da, yakınlık #2 faktör, değişmez); dış halka kazancı ancak örtük sorgu kutusunda ve küçük. "Hafızalara kazınma" webden değil GBP, saha ve Instagram'dan gelir; webin işi marka SERP'inin temiz kalması.
+
+## 2. Claude bu hafta yapar (kod / içerik / ölçüm)
+1. "Ücret almıyoruz" cümlelerini yeniden yaz — app/ev-degerleme/page.tsx:215-217, app/page.tsx:515 (FAQPage'e giriyor); Perplexity bizi "ücretsiz değerleme" ile anıyor (07.10 ölçümü). Çerçeve: değerleme = satış/kiralama sürecinin ilk adımı, randevu yeterli; satış-kiralama eşit, rakam yok. Denetim süzgecine "ücret almıyoruz|bedava" eklenir, sitemap.ts:53/:75 tarihi ilerler. PR.
+2. Ana sayfa hero CTA'sına izleme — app/page.tsx:207 CtaButton → TrackedCtaLink (degerleme_cta, konum=anasayfa_hero); metin aynı, sitemap'e dokunulmaz. 3 hafta taban, 01.11'de site_ust WhatsApp oranıyla kıyas (PR #105 deseni). PR.
+3. Facebook kanonik adres — lib/site-config.ts:57 → facebook.com/eryamanemlakci/ (canlı 302 kanıtı; PR #32 kapanış gerekçesi hatalıydı). Küresel blok, SABLON tabanı ilerlemez. PR.
+4. Sahibinden "Hakkımızda" taslağı — "720'den fazla site… Yenimahalle… kayıt altında" kalıbı 17.08 ve 27.08 kurallarını çiğniyor (canlı okuma 07.10); 04.09 onaylı FB/IG dilinden <p>/<strong> kurallı taslak, Özgün'e tek mesaj. Onaydan sonra panelde tek gönderim.
+5. yorum-toplama.md'den "her yoruma yanıt verilir" maddelerini çıkar (06.09 talimatıyla çelişiyor) + bölge turu kaydına kutu kartından Şirin/Efor yorum sayısı alanı (07.10 tabanı 404/5,0 ve 386/4,9). PR.
+6. Ölçüm altyapısı (serp-olcum oturumu): bolge-tur.mjs ilk3u→ilk8u + tür etiketi (portal/dizin/ofis/sosyal); sonuclar-bolge.jsonl'e saat/acik alanları, eski kayıtlara geri doldurma; 20.10 turuna çıplak "emlakçı" × merkez/Göksu/Güzelkent + "eryaman emlakçı" kontrol + "emlak ofisi"; "şirin gayrimenkul" uule marka sorgusu ilk 10 slot (16.08'den beri yok).
+7. Karneye "Hatırlanırlık" bölümü (karne-html.py, anlik-goruntu-uret.py): GSC marka gösterimi/ay (taban ~95-100), GA4 mobil Direct, GBP Performans (gbp-performans.jsonl, Özgün'ün ekran görüntüsünden), yorum sayısı. PR; ilk okuma Kasım başı.
+8. Özgün'ün panel sonuçları gelince: GA4 medium=gbp kontrolü (denetim-0410/ga4-gbp-gunluk.mjs, 48 saat sonra), kategori/hizmet kararları ve BWT kapsam tanısı kaldirac-defteri.json + hafızaya işlenir.
+
+## 3. Özgün yapar (panel / saha) — sırayla
+1. **Bugün, 2 dk:** GBP → Profili düzenle → Web sitesi alanına `https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp` yaz (09.08'deki hâli). "Google tarafından güncellendi" ibaresi ya da bekleyen öneri varsa not et/reddet. Bu olmadan aşağıdakilerin hiçbiri ölçülemez.
+2. **Aynı oturum, 5 dk:** İşletme kategorisi ekranı — birincil + ek kategorileri ekran görüntüsüyle ver; Ağustos-Ekim Gmail'de "profilinizde değişiklik" bildirimi var mı bak. Bilinçli değilse birincil "Emlak Bürosu"na dönsün ("danışman" kelimesi 28 günde 6 gösterim; "emlak ofisi" kutusu üç "Emlak Bürosu" kategorili işletmeyle dolu — PROTOKOL:1022). Bilinçliyse hiçbir şey yapma.
+3. **Aynı oturum, 5 dk:** Performans → son 6 ay: "İşletmenizi bulmak için kullanılan aramalar" tam liste + arama/çağrı/yol tarifi/web tıkı; ekran görüntüsü. Programın 4. adımı, 27.08'den beri hiç alınmadı (bulunabilirlik-programi.md). Ayda bir tekrar (her ayın 7'sinden sonra).
+4. **Kategori kararından 1 hafta sonra, 10 dk:** Hizmetler → her kategoride Google'ın hazır listesinden konut satış + konut kiralama kutucuklarını eşit sayıda işaretle; yeni özel hizmet yazma, "ücretsiz" içeren kutucuk yok (28.08 panel listesi madde 4, yapılmamış). Kategoriyle aynı turda ölçülürse etkiler ayrışmaz.
+5. **Bu hafta, 15 dk:** bing.com/webmasters → Google ile oturum aç → GSC'den içe aktar → Submit URLs'e ana sayfa, /mahalleler, /siteler, /etaplar + 11 mahalle sayfası. Bing dizini 50/1.178 (07.10 panel); ChatGPT araması Bing indeksinden besleniyor, chatgpt.com 90 günde 70 oturum. İçe aktarma takılırsa Claude msvalidate ekler.
+6. **Bu hafta, 10 dk:** bingplaces.com (1hamza.sirin@gmail.com) → kaydımızın (cabfc4da) durumu + YN90F3FA9E81699BCE kimlikli ikinci kayıt var mı; herkese açık kart adı GBP ile uyuşmuyor. Ad alanına dokunma.
+7. **Bu hafta, 5 dk:** Search Console → Mülk ekle → Instagram → @eryamansiringayrimenkul yetkilendir; IG "eryaman emlakçı" organik #4'te (07.10), hangi sorgularla tık aldığı bilinmiyor.
+8. **Bu hafta, 10 dk:** Instagram İçgörüler 31 Ağu–20 Eyl: erişimde "Reklamlardan" payı, takipçi büyümesi, Meta Reklam Yöneticisi Eylül harcaması → ekran görüntüsü. Eylül "Organic Social 125" dalgası fbclid=PAZXh0 kalıbıyla ücretli görünüyor, W41'de 3 oturuma döndü (ga4-ig-hafta.mjs). Kaynağa göre Claude 8 haftalık 4 Reel takvimi yazar (2 satış, 2 kiralama vakası; reklam bütçesi ancak sen istersen).
+9. **Sürekli, işlem başına 1 mesaj:** her tapu devri / kiracı bulma gününde yorum-toplama.md WhatsApp şablonu. Tempo 28.08'den beri ≈4,5/ay (Ağustos patlaması ≈32/ay); hedef düzenli akış, haftada 1-2 — sayı değil süreklilik faktör (Whitespark 2026 #11/#14). Hazır metin yok, yoruma yanıt yok.
+10. **Bu hafta, 15 dk:** Maps'te Efor/Ayyıldız/Premium/REMAX Note'un hafta içi ve Pazar saatlerini + kendi gerçekten telefona baktığın saatleri not et. Temas tıklarının ~%34'ü mesai dışı (GA4, n=68 küçük). GBP saatine DOKUNMA — önce Claude'un 3 günlük 12:00/19:45 uule çifti, sonra karar.
+11. **Hukuk danışmanına 2 soru:** kiraya verme müşterisine sözleşme yıl dönümünde kişisel WhatsApp hatırlatması 6563/Yön. md.6 istisnasına girer mi; ofisin İYS kayıt yükümlülüğü var mı. Yanıt gelmeden hiçbir mesaj gitmez; Hamza ile havuz paylaşımı kararı sende.
+
+## 4. Yapılmayacaklar ve neden
+- GBP adına mahalle/anahtar kelime, mağaza adına anahtar kelime: politika ihlali + askı riski; mevcut "Eryaman" zaten ölçülen kaldıraç (%80 vs %9).
+- Mahalle/etap/site sayfalarına içerik, başlık, "X mahallesi emlakçı" kutusu peşinde koşmak: hacim sıfır, kutuyu o mahallenin ofisleri yakınlıkla tutuyor; site sayfasına metin 31.08'de ölçüldü, etkisiz.
+- GBP saatlerini hemen uzatmak, 7/24 yazmak: iki öneri çürüdü — vitrinli kayıt, sahte saat askı riski, 28.08'de kapalıyken bile 10/10 kutu #1. Yalnız ölçümden sonra ve gerçek saatle.
+- Rakip GBP adı için şikayet (Ayyıldız vb.), Premium kopya nöbeti: bulunabilirliğe etkisi sıfır, bu planın dışında; delil hattı ayrı dosyada.
+- "Şirin gayrimenkul yorumları" için /hakkimizda'ya yorum sayısı/alıntı: yorum sayısı yasağı web için de geçerli (23.07 kapsam genişlemesi).
+- Google Posts, Q&A, Ürünler, fotoğraf tazeliği, açıklama metni: sıra etkisi yok (Sterling Sky kontrollü testler, Whitespark #70-171); yorum metnine mahalle adı kutuyu oynatmıyor (kampanya yalnız alıntı için sürer).
+- GBP hizmet bölgesi genişletme: Whitespark deneyi "hiç etki yok"; 11 mahalle listesi kalır.
+- Bing'i "görünmüyoruz" diye kurtarmak: yanlış öncül, 50 sayfa dizinde ve sıralıyor; sorun kapsam, iş BWT tanısı.
+- Yerel dizin künye paketi (bulurum vb.), Apple Business Connect: kapanmış/yapılmış işler (08.08 canlı), tekrar açılmaz.
+- llms.txt log okuması, AI görünürlük paneli: Vercel log saklama 1 saat/1 gün, "30 gün" yapılamaz; AI tarayıcı erişimi ve JSON-LD zaten temiz.
+- Yandex'e yatırım: 90 günde 17 oturum; ad değişikliği kutuya sokmadı. WhatsApp yayın listesi: İYS onay şartı, kişisel işlem-bağlamlı temas dışında yok.
+- Hız/CrUX, FAQPage/aggregateRating, eryamanemlakci.com, basın, hepsiemlak/Emlakjet ofis üyeliği: defterde çürük/kapalı, değişmedi.
+
+## 5. Nasıl ölçeceğiz
+| Gösterge | Taban | 20.10 | 04.11 |
+|---|---|---|---|
+| Kanal #1 görünür mü: GA4 sessionMedium=gbp oturum/hafta; GSC "/?utm_source=google&utm_medium=gbp" gösterim | 0 (18.08'den beri); Ağustos ~14/hafta | >0 olmalı, yoksa panelde bağ yine değişmiş | 8-14 bandı; GBP Performans Eylül+Ekim kaydı gbp-performans.jsonl'de |
+| Kutu ve organik: 10 nokta uule çıplak "emlakçı" + "emlak ofisi" (kategori/hizmet değişikliğinden 72 saat sonra); çıplak "emlakçı" organik merkez; "eryaman emlakçı" kutu/organik | kutu #1 3/8 nokta (28.08); organik 3→ilk 10 dışı (07.10); eryaman emlakçı kutu #1 / organik #2 | kutu #1 korunuyor mu; ilk8u tür dağılımı 28.08 ile kıyas; saat çifti 3 akşam | iki ardışık ölçümde ilk 10 dışıysa "kalıcı kayıp" notu; dış halka nokta sayısı 3/8'den yükseldi mi |
+| Hatırlanırlık: GSC "şirin gayrimenkul"+"şirin emlak" gösterim/ay; GA4 mobil Direct/hafta; GBP marka terimli arama; yorum sayısı ve aylık tempo; Perplexity 2 soruda "ücretsiz" geçiyor mu | ~95-100 gös/ay; Direct 34-50→17; 404 yorum, 4,5/ay; Perplexity "ücretsiz değerleme" | yorum tempo haftalık not; Perplexity taban satırı ai-gorunurluk.jsonl | aylık ≥5 yorum; +%25 altı fark yorumlanmaz; Perplexity tekrar (kaynak tazeliği haftalar sürer); mevsim kıyası Ekim 2027 |
+
+Dürüst beklenti: bu plan sırayı yükseltmez (zaten #1); kör kanalı açar, paneli 2 aylık ihmalden çıkarır, kural dışı iki metni (ücret, 720 site) temizler ve hatırlanırlığı ilk kez sayıya bağlar. Dış halka ve "emlak ofisi" ailesinde kazanç küçük ve belirsiz; büyüklüğü 04.11'de görülür.
