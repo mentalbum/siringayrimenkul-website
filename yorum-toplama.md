@@ -55,8 +55,6 @@ gelmez.
   silinir.
 - Müşteriye "5 yıldız verin" denmez; "deneyiminizi yazın" denir. Yönlendirilmiş
   yorum talebi de politika ihlalidir.
-- Gelen her yoruma yanıt verilir. Yanıtlanan profiller Google'ın yerel
-  sıralamasında daha iyi konumlanır ve yorum bırakma oranını artırır.
-- Olumsuz bir yorum gelirse silinmesi istenmez; profesyonel tonda, çözüm öneren
-  bir yanıt yazılır. Tek olumsuz yorumun altındaki iyi yanıt, kusursuz bir
-  profilden daha inandırıcıdır.
+- Yorumlara YANIT YAZILMAZ (Özgün, 06.09.2026). Önceki "her yoruma yanıt verilir /
+  olumsuza çözüm öneren yanıt" maddeleri bu talimatla kaldırıldı; olumsuz yorum gelirse
+  silinmesi istenmez, yanıtsız bırakılır ve Özgün'e bildirilir.

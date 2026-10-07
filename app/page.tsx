@@ -204,9 +204,16 @@ export default function HomePage() {
             </p>
 
             <div className="animate-fade-up mt-8 flex flex-wrap items-center gap-x-5 gap-y-4 [animation-delay:0.21s]">
-              <CtaButton href="/ev-degerleme" variant="primary" className="px-8 text-base">
+              {/* 07.10: birincil CTA izlenir hale geldi (degerleme_cta, konum anasayfa_hero);
+                  site sayfalarındaki site_ust/site_banner ile aynı raporda okunur. Metin aynı. */}
+              <TrackedCtaLink
+                href="/ev-degerleme"
+                gaEvent="degerleme_cta" gaParams={{ konum: "anasayfa_hero" }}
+                variant="primary"
+                className="px-8 text-base"
+              >
                 Evinizi Değerlendirelim
-              </CtaButton>
+              </TrackedCtaLink>
               <TrackedLink
                 href={`tel:${siteConfig.phoneTel}`}
                 gaEvent="phone_click"
@@ -512,7 +519,7 @@ export default function HomePage() {
             },
             {
               soru: "Evimi satmak veya kiraya vermek için ne yapmalıyım?",
-              cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Değerlendirme görüşmesi için ek bir ücret almıyoruz; evinizin bulunduğu mahalle ve site hakkında size doğrudan bilgi veriyoruz.`,
+              cevap: `${siteConfig.phoneDisplay} numaralı telefonumuzdan ya da WhatsApp üzerinden bize ulaşmanız yeterli. Evinizin bulunduğu mahalle ve site hakkında size doğrudan bilgi veriyoruz.`,
             },
             {
               soru: "Evimi satsam mı, kiraya mı versem?",

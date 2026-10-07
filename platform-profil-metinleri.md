@@ -342,3 +342,13 @@ ofisi; buradaki siteleri blok blok tanır (sayı iddiası yasağı, 04.09).
 Evini satmak veya kiraya vermek isteyen ev sahiplerine uçtan uca danışmanlık.
 Taşınmaz Ticareti Yetki Belgesi No: 0603771.
 
+## 8. sahibinden.com mağazası — "Hakkımızda" metni (TASLAK 07.10, Özgün onayı bekliyor)
+> 07.10 canlı okuma: mağaza Hakkımızda'sında "720'den fazla site… Yenimahalle… kayıt altında" kalıbı
+> duruyor — 17.08 (sayı iddiası) ve 27.08 (Yenimahalle) kurallarını çiğniyor; kanal sitenin en büyük
+> çıkışı (28 günde ~60 tık). Mağaza ADINA dokunulmaz. Metin 04.09'da IG/FB için onaylanan dille:
+
+<p>Şirin Gayrimenkul, Eryaman'ın yerel emlak ofisidir. Evinizi satarken ya da kiraya verirken karşınıza doğru alıcıyı, doğru kiracıyı biz çıkarırız.</p>
+<p>Eryaman'ın 11 mahallesinde sitenizi blok blok tanıyoruz; değerlemeyi satışın ve kiralamanın ilk adımı olarak yapıyor, süreci tapuya ve teslime kadar sizin adınıza yürütüyoruz.</p>
+<p><strong>Tunahan Mah. 208. Sk. No:4/59, 4. Etap Çarşı — Etimesgut/Ankara</strong><br>Taşınmaz Ticareti Yetki Belgesi No: 0603771 · 0 (532) 363 96 60</p>
+
+*(Onaydan sonra panelde tek gönderim; sayı iddiası, "ücretsiz", fiyat, Yenimahalle yok.)*

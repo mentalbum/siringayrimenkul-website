@@ -60,7 +60,7 @@ function uule(lat, lng) {
   return 'a+' + encodeURIComponent(Buffer.from(metin).toString('base64'));
 }
 
-const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText})}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const loc=(()=>{for(const s of ['.GNm3Qb .AhYzQb','.AhYzQb','.dfB0uf','#swml']){const e=document.querySelector(s);if(e&&e.innerText.trim())return e.innerText.trim().slice(0,60)}const re=/^\\d{5},\\s*[^,]+,\\s*[^,]+$|Konumunuza göre|^Konum:/;const h=[...document.querySelectorAll('span,div')].find(x=>x.children.length===0&&re.test((x.innerText||'').trim()));return h?h.innerText.trim().slice(0,60):''})();return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
+const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText})}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const TUR=d=>/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\\.com\\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\\n/g,' | ');const m=t.match(/(\\d[.,]\\d)\\s*\\((\\d[\\d.]*)\\)/);const kat=(t.match(/\\)\\s*·\\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});const loc=(()=>{for(const s of ['.GNm3Qb .AhYzQb','.AhYzQb','.dfB0uf','#swml']){const e=document.querySelector(s);if(e&&e.innerText.trim())return e.innerText.trim().slice(0,60)}const re=/^\\d{5},\\s*[^,]+,\\s*[^,]+$|Konumunuza göre|^Konum:/;const h=[...document.querySelectorAll('span,div')].find(x=>x.children.length===0&&re.test((x.innerText||'').trim()));return h?h.innerText.trim().slice(0,60):''})();return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),ilk8u:T.slice(0,8).map(x=>x.d+x.p+'#'+TUR(x.d)),hk,saat:new Date().toISOString(),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
 
 if (process.argv.includes('--listele')) {
   console.log('# Bölge turu URL listesi (taze uule — bu listeyi her turda yeniden üret)');
@@ -103,6 +103,9 @@ const CIKAR = () => {
     } catch (e) {}
   }
   const i = T.findIndex((x) => x.d === 'siringayrimenkul.com');
+  // 07.10: kutu kartı alanları (puan/yorum/kategori/açıklık) + ilk 8 organik (tür etiketli) + saat —
+  // Şirin/Efor yorum farkı ve 'arama anında açık' sinyali seri olarak izlensin diye.
+  const TUR=d=>/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\.com\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\n/g,' | ');const m=t.match(/(\d[.,]\d)\s*\((\d[\d.]*)\)/);const kat=(t.match(/\)\s*·\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});
   // 07.10: Google arayüzü değişti — .dfB0uf/#swml boş dönüyor. Yeni gösterge alt bilgi
   // çubuğunda span.AhYzQb (kapsayıcı .GNm3Qb): "06824, Tunahan, Etimesgut/Ankara".
   // Sınıf adları uçucu olduğu için zincir: yeni → eski → metin kalıbı ("posta kodu, semt, ilçe/il").
@@ -118,7 +121,7 @@ const CIKAR = () => {
   return {
     hp: N.length > 0, hs: B + 1, hl: N.slice(0, 6), hyedek: yedek,
     sira: i + 1, u: i >= 0 ? T[i].p : null, bas: i >= 0 ? T[i].t : null,
-    ilk3u: T.slice(0, 3).map((x) => x.d + x.p), n: T.length,
+    ilk3u: T.slice(0, 3).map((x) => x.d + x.p), ilk8u: T.slice(0, 8).map((x) => x.d + x.p + '#' + TUR(x.d)), hk, saat: new Date().toISOString(), n: T.length,
     tt: document.title.slice(0, 60), loc,
   };
 };

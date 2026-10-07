@@ -35,7 +35,7 @@ BILINEN_KULE_ADLARI = ["bulut kule"]
 HATA_KURALLARI = [
     ("alıcı dili", re.compile(rf"(?<![{HARF}])alıcı", re.I)),
     ("kredi iddiası", re.compile(r"krediye uygun|kredisi çıkar", re.I)),
-    ("bedava değerleme", re.compile(r"ücretsiz (değerleme|ekspertiz)", re.I)),
+    ("bedava değerleme", re.compile(r"ücretsiz (değerleme|ekspertiz)|ücret almıyoruz|bedava", re.I)),  # 07.10: Perplexity bizi 'ücretsiz değerleme' ile anıyordu, kaynağı kendi SSS metnimizdi
     ("fiyat rakamı", re.compile(r"\d[\d.,]*\s*(?:TL\b|₺)")),
     ("kule", re.compile(rf"(?<![{HARF}])kule", re.I)),
 ]
