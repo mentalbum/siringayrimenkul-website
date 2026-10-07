@@ -1,6 +1,9 @@
 // GSC Search Analytics ham çekimi — karne üreticilerinin yardımcısı.
 // Kullanım: node gsc-q.mjs <bas> <bit> <dims:virgüllü> [filtre]
 //   filtre biçimi: "boyut::operator::ifade"  (ör. page::excludingRegex::/mahalleler/(ata|susuz)/ )
+// Ortam: GSC_TYPE=image|video|news|discover (varsayılan web). DİKKAT (07.10 ölçümü): page FİLTRESİ +
+// device/country BOYUTU birlikte veriyi yarıdan fazla düşürüyor (31.116 → 13.895); cihaz/ülke kırılımı
+// yalnız filtresiz alınır, filtreli analiz page boyutuyla yapılır.
 // Çıktı: TSV satırları  gösterim \t tık \t konum(2 ondalık) \t boyut1 [\t boyut2 ...]
 // Oturum scratchpad'i silinince kaybolmasın diye depoda (pws0) durur (04.10 dersi).
 import { createSign } from "node:crypto";
@@ -22,6 +25,7 @@ const SA = `https://www.googleapis.com/webmasters/v3/sites/${encodeURIComponent(
 let startRow = 0; const SAYFA = 25000;
 while (true) {
   const body = { startDate: bas, endDate: bit, dimensions: dims.split(","), rowLimit: SAYFA, startRow };
+  if (process.env.GSC_TYPE) body.type = process.env.GSC_TYPE; // web (varsayılan) | image | video | news | discover
   if (filtre) { const [dimension, operator, expression] = filtre.split("::"); body.dimensionFilterGroups = [{ filters: [{ dimension, operator, expression }] }]; }
   const r = await fetch(SA, { method: "POST", headers: { authorization: `Bearer ${jeton}`, "content-type": "application/json" }, body: JSON.stringify(body) });
   const j = await r.json();

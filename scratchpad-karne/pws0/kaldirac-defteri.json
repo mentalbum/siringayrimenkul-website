@@ -200,10 +200,10 @@
   },
   {
    "tarih": "2026-10-07",
-   "ad": "'eryaman emlakci' gosterim dususu (24.09'dan beri ~15->~5/gun) — harita kutusu hipotezi CURUTULDU",
+   "ad": "Eylul sonu dususu: yatay (-%17 her TO kovasi, cihazdan bagimsiz, TO/poz sabit); tek konum kaybi yalin 'emlakci' ana sayfa poz 3,9->6,5",
    "durum": "acik",
    "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17).",
-   "gerekce": "07.10 SERP (pws=0+uule, diger oturum): kutu #1, organik #2 — konum yerinde. Dusus hacim / kutunun tetiklenme sikligi / GSC atif kaynakli; neden BILINMIYOR. GBP birincil kategori 'Gayrimenkul Danismani' (Ozgun paneli: Emlakci/Emlak Acentesi ile kiyas, degisiklik gecmisi 24.09 civari?).",
+   "gerekce": "Kalite-temizligi ve harita-kutusu hipotezleri curutuldu; genis tabanli hacim kaybi, spam update ile ayni gun. Eyleme donuk kalip yok.",
    "sonraki_olcum": "Ozgun: GBP Insights 24.09 oncesi/sonrasi + kategori gecmisi; 20.10 gunluk seri",
    "nerede": "DENETIM-04-10.md 07.10 eki-2"
   },
