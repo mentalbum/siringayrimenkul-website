@@ -90,3 +90,11 @@ dönüştürülebilir bir kalıp yok, 20.10'da yeniden okunacak. GBP bağı 07.1
 Diğer oturumlar 05–07.10: PR #100 (sayfa denetimi), #103 (Kurtuluş=Yükselay), #104 (4. Devlet 410),
 #105 (hero WhatsApp CTA + başlık deneyi 2 + eski-adres sitemap'i kaldırıldı), #106/#107/#108 (karne 07.10,
 hedef sorgular uule ile); deney taraması 76/174 (gece-log).
+**07.10 eki-2 — kaybın ayrışması (sorgu sınıfı × sayfa, site sayfaları, günlük ort. 10–23.09 → 24.09–04.10):**
+yalın ad 624→525 (−%16), alıcı/kiracı 268→229 (−%15, tık 7,1→7,8), **emlakçı 95→44 (−%54)**, bilgi 6→4.
+emlak* sorgularının kaybı neredeyse tamamen **ana sayfada**: 78,9→35,5 gös/gün (−%55), poz 2,98→3,89;
+"eryaman emlakçı" günlük gösterim ~15→~5 (poz 1,3–1,6 = harita kutusundaki GBP bağı, defter 05.09).
+Yorum: 24.09 sonrası kaybın iki ayağı var — (a) site sayfalarında geniş −%15 (spam güncellemesiyle aynı gün),
+(b) ana sayfada emlakçı sınıfı −%55 = harita kutusuna daha az girme (GBP tarafı; 07.10 uule ölçümü 6/17 kutu,
+Eylül'de 9/17). GBP açıklama/onay sorunu aynı dönemde → "Açıklamayı kabul etmemiş" oturumuna iletildi.
+GSC sorgu boyutu gizlilik süzgeciyle günlük ~990 gös gösteriyor (sayfa boyutu 2.223) — oranlar geçerli, mutlaklar değil.

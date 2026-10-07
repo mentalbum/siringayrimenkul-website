@@ -195,6 +195,15 @@
    "gerekce": "ChatGPT istisaresi 07.10 (Ozgun talimati): yalin site adi sorgularinda (talebin %65'i, poz ~9,5, TO %0,8) ticari baslik yerine '<Site> Eryaman | Tapu ve Site Bilgileri'; degerleme formu 3 ayda 0 gonderim, temasin tamami telefon+WhatsApp.",
    "sonraki_olcum": "04.11: GSC sayfa x sorgu, yalnizca yalin ad / ad+Eryaman sorgularinda ayni konum bandinda tedavi CTR vs kontrol CTR; SERP tarayici 'bas' alaniyla Google'in basligi aynen gosterme orani; haftalik 'eski' sayisi (41 -> <10); GA4 (phone_click+whatsapp_click)/1000 organik oturum, 8 haftalik taban + kayan 28 gun",
    "nerede": "lib/baslik-deneyi-0710.ts, scratchpad-karne/pws0/baslik-deneyi-0710.json, app/robots.ts"
+  },
+  {
+   "tarih": "2026-10-07",
+   "ad": "Harita kutusu goruntulenmesi dusuyor: 'eryaman emlakci' gos/gun ~15->~5, ana sayfa emlak* -%55 (24.09'dan beri)",
+   "durum": "acik",
+   "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17).",
+   "gerekce": "Bu sorguda GSC konumu harita kutusundaki GBP bagini yansitir; dusus site degil GBP gorunurlugu. GBP aciklama/onay sorunuyla ayni donem.",
+   "sonraki_olcum": "GBP Insights 24.09 oncesi/sonrasi kesif-goruntulenme (Ozgun paneli); 'eryaman emlakci' gunluk seri 20.10",
+   "nerede": "DENETIM-04-10.md 07.10 eki-2"
   }
  ]
 }
