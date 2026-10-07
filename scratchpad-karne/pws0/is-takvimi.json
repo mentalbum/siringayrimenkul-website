@@ -25,10 +25,7 @@
  },
  "gbp_kutu": {
   "mahalle": [
-   "Eryaman (mahalle)",
-   "Tunahan",
    "Altay",
-   "Devlet",
    "Göksu",
    "Güzelkent",
    "Şehit Osman Avcı",
@@ -39,16 +36,20 @@
   ],
   "etap": [
    "Eryaman 2. Etap",
-   "Eryaman 3. Etap",
-   "Eryaman 5. Etap"
+   "Eryaman 3. Etap"
   ],
-  "haric_kutu_cikmiyor": [],
+  "haric_kutu_cikmiyor": [
+   "Devlet"
+  ],
   "zaten_kutuda": [
    "'eryaman emlakçı' (çatı sorgu)",
    "Eryaman 1. Etap",
-   "Eryaman 4. Etap"
+   "Eryaman 4. Etap",
+   "Eryaman 5. Etap",
+   "Eryaman (mahalle)",
+   "Tunahan"
   ],
-  "sorgu_sayisi": 14
+  "sorgu_sayisi": 10
  },
  "turetilen_tarihler": {
   "title_donuk": "2026-09-07",
@@ -164,15 +165,15 @@
   {
    "tarih": "2026-10-07",
    "tarih_tr": "07.10 Çarşamba",
-   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Eryaman (mahalle), Tunahan, Altay, Devlet, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil, Yavuz Selim, Yeşilova. Etap sorgularında da kutu var, biz yokuz: Eryaman 2. Etap, Eryaman 3. Etap, Eryaman 5. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi.",
-   "neden": "Bu 14 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 07.10–07.10). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 4. Etap. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
+   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Altay, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil, Yavuz Selim, Yeşilova. Etap sorgularında da kutu var, biz yokuz: Eryaman 2. Etap, Eryaman 3. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi. Devlet hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
+   "neden": "Bu 10 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 07.10–07.10). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Eryaman (mahalle), Tunahan. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
    "kaynak": "hedef-sorgular.json (kutu_var ve kutuda alanları)",
    "kim": "Özgün",
    "ayrinti": [
     {
      "sorgu": "Eryaman 2. Etap emlakçı",
      "kutu_yon": "kutudan çıktı",
-     "organik_sira": 10,
+     "organik_sira": 4,
      "olcum": "2026-10-07"
     },
     {
@@ -182,32 +183,8 @@
      "olcum": "2026-10-07"
     },
     {
-     "sorgu": "Eryaman 5. Etap emlakçı",
-     "kutu_yon": "kutudan çıktı",
-     "organik_sira": 7,
-     "olcum": "2026-10-07"
-    },
-    {
-     "sorgu": "Eryaman Mahallesi emlakçı",
-     "kutu_yon": null,
-     "organik_sira": 5,
-     "olcum": "2026-10-07"
-    },
-    {
-     "sorgu": "Tunahan Mahallesi emlakçı",
-     "kutu_yon": "kutudan çıktı",
-     "organik_sira": "ilk 10 dışı",
-     "olcum": "2026-10-07"
-    },
-    {
      "sorgu": "Altay Mahallesi emlakçı",
      "kutu_yon": "kutudan çıktı",
-     "organik_sira": "ilk 10 dışı",
-     "olcum": "2026-10-07"
-    },
-    {
-     "sorgu": "Devlet Mahallesi emlakçı",
-     "kutu_yon": "kutu dışında kaldı",
      "organik_sira": "ilk 10 dışı",
      "olcum": "2026-10-07"
     },

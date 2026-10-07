@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """07.10 hedef sorgu yenilemesi — tarayıcı JS çıktısını sonuclar-*.jsonl'e ekler.
-Kullanım: python3 hedef-ekle.py '<sorgu>' '<json>'
+Kullanım: python3 hedef-ekle.py '<sorgu>' '<json>' [kanal=normal]
 json: {"sira","u","bas","isgal","isgal_sira","n","hp","hl","ilk3","t"}
 """
 import json, sys, datetime, os, re
@@ -12,6 +12,8 @@ MAH = {"Eryaman":"eryaman-mahallesi","Tunahan":"tunahan-mahallesi","Altay":"alta
 ETAP = {1:"altay-mahallesi/etaplar/1",2:"sehit-osman-avci-mahallesi/etaplar/2",3:"seyh-samil-mahallesi/etaplar/3",
         4:"tunahan-mahallesi/etaplar/4",5:"tunahan-mahallesi/etaplar/5"}
 q, ham = sys.argv[1], json.loads(sys.argv[2])
+KANAL = sys.argv[3] if len(sys.argv) > 3 else "normal"  # ör. "uule-eryaman": uule=Eryaman merkez (39.9779,32.6382)
+LOC = ham.get("loc")
 d = datetime.date.today().isoformat()
 hl = ham.get("hl") or []
 hp = bool(ham.get("hp"))
@@ -20,7 +22,7 @@ kutu_not = ("harita kutusunda" if any(re.search(r"şirin", x, re.I) for x in hl)
 if q.lower() == "eryaman emlakçı":
     rec = {"d": d, "s": "eryaman-emlakci", "q": "eryaman emlakçı", "sira": ham["sira"], "u": ham["u"],
            "n": ham["n"], "hl": hl, "hp": hp, "isgal": ham.get("isgal", 0),
-           "not": f"07.10 hedef yenilemesi, pws=0 gl=tr hl=tr; {kutu_not}"}
+           "kanal": KANAL, "loc": LOC, "not": f"07.10 hedef yenilemesi, pws=0 gl=tr hl=tr, kanal {KANAL}; {kutu_not}"}
     yol = os.path.join(PWS0, "sonuclar-emlakci.jsonl")
     beklenen = "/"
 else:
@@ -30,11 +32,11 @@ else:
     else:
         ad = re.fullmatch(r"(.+) Mahallesi emlakçı", q).group(1)
         s = MAH[ad]; tur = "mahalle"; mah = s
-    rec = {"d": d, "kanal": "normal", "tur": tur, "mah": mah, "s": s, "q": q,
+    rec = {"d": d, "kanal": KANAL, "loc": LOC, "tur": tur, "mah": mah, "s": s, "q": q,
            "sira": ham["sira"], "u": ham["u"], "bas": (ham.get("bas") or None),
            "ilk3": [x[:80] for x in ham.get("ilk3", [])], "isgal": ham.get("isgal", 0),
            "isgal_sira": ham.get("isgal_sira", []), "n": ham["n"], "hl": hl, "hp": hp,
-           "s2sira": None, "s2u": None, "not": f"07.10 hedef yenilemesi; {kutu_not}"}
+           "s2sira": None, "s2u": None, "not": f"07.10 hedef yenilemesi, kanal {KANAL}; {kutu_not}"}
     yol = os.path.join(PWS0, "sonuclar-site-emlakci.jsonl")
     beklenen = "/mahalleler/" + s
 open(yol, "a").write(json.dumps(rec, ensure_ascii=False) + "\n")

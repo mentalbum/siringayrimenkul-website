@@ -136,11 +136,6 @@
   "es": []
  },
  {
-  "q": "4. Devlet Mahallesi Sitesi emlakçı",
-  "s": "devlet-mahallesi/4-devlet-mahallesi-sitesi",
-  "es": []
- },
- {
   "q": "Alis Sitesi emlakçı",
   "s": "devlet-mahallesi/alis-sitesi",
   "es": []
@@ -1196,8 +1191,9 @@
  },
  {
   "q": "Kurtuluş Sitesi emlakçı",
-  "s": "guzelkent-mahallesi/kurtulus-sitesi",
-  "es": []
+  "s": "guzelkent-mahallesi/yukselay-sitesi",
+  "es": [],
+  "not": "07.10: Kurtuluş = Yükselay (birleştirildi, PR #103); sorgu yaşıyor, beklenen sayfa Yükselay"
  },
  {
   "q": "Kuşburnu Sitesi emlakçı",

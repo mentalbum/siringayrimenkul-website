@@ -1,14 +1,14 @@
 {
  "guncelleme": "2026-10-07",
  "gurultu": {
-  "cift": 63,
-  "sessiz": 55,
-  "oran": 87,
-  "giris_cikis": 61,
+  "cift": 73,
+  "sessiz": 63,
+  "oran": 86,
+  "giris_cikis": 67,
   "dagilim": [
    [
     0,
-    37
+    45
    ],
    [
     1,
@@ -16,7 +16,7 @@
    ],
    [
     2,
-    5
+    6
    ],
    [
     3,
@@ -25,16 +25,20 @@
    [
     4,
     2
+   ],
+   [
+    6,
+    1
    ]
   ]
  },
- "olculen": 511,
- "kuyruk": 511,
- "kayit": 2046,
+ "olculen": 509,
+ "kuyruk": 509,
+ "kayit": 2078,
  "yas": [
   [
    "0-7 gün",
-   105
+   104
   ],
   [
    "8-14 gün",
@@ -46,19 +50,19 @@
   ],
   [
    "30+ gün",
-   406
+   405
   ]
  ],
  "bulgular": [
   {
    "ad": "Karşılığı olmayan sayfa kaydı (tüm tarihçe)",
-   "adet": 19,
+   "adet": 21,
    "aciklama": "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda 404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar. NOT: karnenin teşhis bölümünde geçen daha küçük sayı yalnız O TURUN görünmez listesinden çıkarılanları sayar; burası tarihçenin tamamı.",
    "ornek": [
     "altay-mahallesi/merkez-sitesi",
     "altay-mahallesi/metropol-bloklari",
     "altay-mahallesi/yildiz-bloklari",
-    "devlet-mahallesi/ahmet-taner-kislali-vadi-evleri"
+    "devlet-mahallesi/4-devlet-mahallesi-sitesi"
    ],
    "agir": true,
    "temiz": false
@@ -81,12 +85,13 @@
   },
   {
    "ad": "Aynı gün iki kez ölçülmüş sayfa",
-   "adet": 3,
+   "adet": 5,
    "aciklama": "Gün içinde yeniden ölçülüp farklı sıra çıkmış. Hata değil, Google gün içinde oynuyor — ama hangi ölçümün geçerli sayıldığı dosya sırasına kalıyor.",
    "ornek": [
     "guzelkent-mahallesi/kardelen-sitesi (2026-08-28)",
     "sehit-osman-avci-mahallesi/bulvar-1071-sitesi (2026-08-28)",
-    "sehit-osman-avci-mahallesi/garden-zirve (2026-08-28)"
+    "sehit-osman-avci-mahallesi/garden-zirve (2026-08-28)",
+    "sehit-osman-avci-mahallesi/etaplar/2 (2026-10-07)"
    ],
    "agir": false,
    "temiz": false

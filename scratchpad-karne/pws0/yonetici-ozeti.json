@@ -15,8 +15,8 @@
    },
    "fark_7g": {
     "deger": 0.0,
-    "onceki": 75.1,
-    "son": 75.1,
+    "onceki": 75.4,
+    "son": 75.4,
     "kiyas_tarihi": "2026-09-30",
     "gun": 7,
     "birim": "puan",
@@ -123,15 +123,15 @@
   {
    "k": "hedef_kutuda",
    "baslik": "Hedef sorgularda harita kutusu",
-   "deger": 3,
+   "deger": 6,
    "birim": "sorgu",
-   "gosterim": "3/17",
-   "ne_demek": "17 hedef sorgunun 3 tanesinde harita kutusunda görünüyoruz, 1 tanesinde kutuda 1. sıradayız; 14 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
+   "gosterim": "6/17",
+   "ne_demek": "17 hedef sorgunun 6 tanesinde harita kutusunda görünüyoruz, 6 tanesinde kutuda 1. sıradayız; 10 sorguda kutu çıkıyor ama biz yokuz. (Organik ilk 3: 4 sorgu.)",
    "kaynak": "hedef-sorgular.json (ozet.kutuda)",
    "ayrinti": {
     "hedef": 17,
-    "kutuda_birinci": 1,
-    "kutu_var_biz_yok": 14,
+    "kutuda_birinci": 6,
+    "kutu_var_biz_yok": 10,
     "organik_ilk3": 4,
     "organik_birinci": 1,
     "guncelleme": "2026-10-07"
@@ -157,12 +157,13 @@
   {
    "tarih": "07.10",
    "iso": "2026-10-07",
-   "baslik_sayisi": 2,
+   "baslik_sayisi": 3,
    "basliklar": [
     "CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI",
-    "HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3"
+    "HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3",
+    "DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1."
    ],
-   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3"
+   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3 · DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1."
   }
  ],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",
@@ -209,7 +210,7 @@
   "kiyas_tarihi": "2026-09-30"
  },
  "uyarilar": [
-  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 511 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
+  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 509 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
   "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor."
  ]
 }
