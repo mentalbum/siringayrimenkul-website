@@ -72,3 +72,42 @@ ESKİ ADRES kovası 4'e çıktı (+ankolular, ada sayfası eski slugda). AYRICA 
 iki sürüm birbiriyle yarışıyor. 04-05.09 taramasındaki "eski adres 11+ çift" bulgusuyla aynı aile.
 
 Kalan: 94 sorgu (Güzelkent'ten devam, kuyruk index 125+). Araç: `python3 deney-sira.py 4`.
+
+
+## 07.10 ikinci dilim — ESKİ ADRES BULGUSU BÜYÜDÜ (dikkat: sitemap kararıyla kesişiyor)
+
+Güzelkent deney kolu yarılandı. Deney 88/174; yanlış→doğru %45 bandında sabit.
+
+**Eski adres vakası 2'den 6'ya çıktı** ve niteliği değişti — artık sadece "eski adres
+sıralıyor" değil, **ikisinde eski adres YENİSİNİ GEÇİYOR**:
+
+| sorgu | eski adres | yeni adres |
+|---|---|---|
+| Küçük Ankara Villaları | `/mahalleler/guzelkent/...` **#1** | `/guzelkent-mahallesi/...` #5 |
+| Konuta Özlem | `/mahalleler/guzelkent/...` **#3** | `/guzelkent-mahallesi/...` #7 |
+| Çağdaş-95 | `/mahalleler/guzelkent/...` #4 | `/guzelkent-mahallesi/...` **#2** |
+| İlk Bahar | `/mahalleler/devlet/...` **#1** | — |
+| MA1 Tower | `/mahalleler/goksu/...` **#1** | — |
+| Eryaman Evleri | `/mahalleler/eryaman/...` #4 | — |
+| Ankolular | `/mahalleler/guzelkent/adalar/...` #3 | — |
+
+Hepsi ESKİ başlıkla ("...Emlakçısı - Şirin Gayrimenkul" kalıbı) çıkıyor, yani deneyin
+yeni başlığını hiç almadılar. Bu sayfalar "yanlış" kovasında sayılıyor ve deneyin
+ölçülen etkisini AŞAĞI çekiyor — nihai okumada ayrı kova şart.
+
+⚠️ **KESİŞME, karar değil gözlem:** `app/sitemap-eski-adresler` 07.10 01:13'te kaldırıldı
+(c407135, ChatGPT istişaresinin 3. işi; defterdeki görev 15.10 içindi). O sitemap'in işi
+Google'a eski adresleri yeniden taratıp 301'i gördürmekti. Bugünkü ölçüm, en az 7 eski
+adresin HÂLÂ canlı sıralandığını ve ikisinin yenisini geçtiğini gösteriyor — yani 301
+sindirimi tamamlanmamış. Kaldırma kararı "eski adresler bitti" varsayımına dayanıyorsa
+veri bunu desteklemiyor; başka bir gerekçeye dayanıyorsa (tarama bütçesi vb.) bu ölçüm
+yalnızca süreyi uzatabileceğine dair bir not. Kararı geri almadım — ilgili oturumun
+bakması için işaretliyorum.
+
+Ayrıca iki ESKİ TEŞHİS ÇÜRÜDÜ: (1) **erenkoy-sitesi** 28.08'de "İstanbul Erenköy
+kaplaması, YAPISAL KESİNLEŞTİ, kuyruktan düş" diye kapatılmıştı — bugün doğru sayfayla
+**#2**. (2) **polsan1-ayisigi** Ağustos'ta "219 gösterim eski adreste, dizinsiz, kota
+istisnası bekliyor" vakasıydı — bugün doğru sayfayla **#2**, istisna hiç gerekmemiş.
+Ders: "yapısal/kurtarılamaz" etiketi 4-6 hafta sonra yeniden sınanmadan kalıcı sayılmaz.
+
+Kalan: 86 sorgu (Güzelkent'ten devam, kuyruk index 141+).
