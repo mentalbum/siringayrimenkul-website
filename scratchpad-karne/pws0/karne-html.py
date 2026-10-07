@@ -77,6 +77,13 @@ Geriye uyum (08.10): üreticilerin yeni alanları (tik-sonrasi temas.temas_oturu
 temas.sahibinden_cikis; dogru-sayfa olcum_yasi, secilmis_yeniden_olcum; hatirlanirlik
 marka_dogrulama_gos_28, direct_mobil_ana_28; eryaman-emlakci mobil_haftalar; karne-gecmis
 temas_oturum_28) .get ile okunur. Alan yoksa o satır eski gösterime düşer, karne çökmez.
+İkinci halka (08.10 onarım), hepsi isteğe bağlı: tik-sonrasi form_start_tanim ("form_sayfalari" |
+"tum_sayfalar"; form satırının etiketi buradan), sahibinden_ozel (özel olayın iki dönemi), uyarilar
+(bölümün altında basılır); dogru-sayfa secilmis_yeniden_olcum.kova ve .onceki_olcumu_yok;
+hatirlanirlik direct_mobil_derin_28.etk_simdi; eryaman-emlakci mobil_haftalar[].bit;
+yonetici-ozeti fark_7g.gurultu.bant (çipte "fark küçük, yorumlanmaz"; fark_7g.not yalnız ipucunda).
+YEDEK KİP: tik-sonrasi-uret.py ga4-temas'ı okuyamazsa temas_oturum null, sahibinden_cikis içi boş
+gelir; karne bunu "alan yok" sayar, form satırını eski tanım etiketiyle basar.
 
 Bayatlık bekçisi (08.10): veri-sagligi.json "kayit" değeri sonuclar-site-emlakci.jsonl'in
 dolu satır sayısından küçükse, ya da dogru-sayfa.json / yonetici-ozeti.json "guncelleme"
@@ -464,13 +471,19 @@ MAH_AD_HAM = {"tunahan-mahallesi": "Tunahan", "altay-mahallesi": "Altay",
               "yesilova-mahallesi": "Yeşilova"}
 # 08.10 (ek-4 c, sözleşme S1) — açık her satır "Google′da yok" diye etiketleniyordu.
 # Ölçüldü: açık 4 satırın 2'si dizinde (yalnız yeni kopyanın taranması bekleniyor),
-# 2'si taşınmadan önceki eski adres; API'ye göre dizin dışı 0. Satırın TÜRÜ üç okuyucuda
-# (bu dosya, yonetici-ozeti-uret.py, is-takvimi-uret.py) AYNI kuralla belirlenir:
-#   eski_adres      adres eski şemada: /mahalleler/<slug>/… ve <slug> "-mahallesi" ile bitmiyor
-#   dizin_disi      değilse, satırdaki "←" sonrası notta "dizin dışı" geçiyor
+# 2'si taşınmadan önceki eski adres; API'ye göre dizin dışı 0. Satırın TÜRÜ dört okuyucuda
+# (bu dosya, yonetici-ozeti-uret.py, anlik-goruntu-uret.py, is-takvimi-uret.py) AYNI kuralla
+# belirlenir; biri değişirse dördü birden değişir:
+#   eski_adres      adres eski şemada: /mahalleler/<slug> (alt yollu ya da yolsuz) ve <slug>
+#                   "-mahallesi" ile bitmiyor
+#   dizin_disi      değilse, satırdaki "←" sonrası notta "dizin dışı" geçiyor; büyük/küçük harf
+#                   ayrımı yok ("DİZİN DIŞI" da eşleşir). Defter notları çoğunlukla büyük harfle
+#                   yazılıyor; düz alt dize araması onları "yeniden tarama" sayıyordu.
 #   yeniden_tarama  ikisi de değil
 # Yalnız dizin_disi "Google′da yok" sayılır. "- [~]" satırları ve https içermeyen
 # "- [ ]" satırları sayım dışıdır.
+# Yazım yonetici-ozeti-uret.py → damla_satir_turu ile satır satır aynı tutulur: harf süzgeci
+# tranahtar.anahtar (str.lower() Türkçe İ'de bozulur), eski kök için sondaki "/" aranmaz.
 DAMLA_ETIKET = {"dizin_disi": ("Google′da yok", "kotu"),
                 "yeniden_tarama": ("yeniden tarama bekliyor", "orta"),
                 "eski_adres": ("eski adres", "orta")}
@@ -478,15 +491,16 @@ DAMLA_ETIKET = {"dizin_disi": ("Google′da yok", "kotu"),
 
 def damla_turu(satir):
     """Açık "- [ ] https://…" satırının türü (S1); satır öyle değilse None."""
-    u = _re.match(r"^- \[ \] (https://\S+)", satir)
+    u = _re.match(r"^- \[ \] (https://\S+)(.*)$", satir)
     if not u:
         return None
-    yol = _re.sub(r"^https://[^/]+", "", u.group(1)).split("?")[0]
-    m = _re.match(r"/mahalleler/([^/]+)/.", yol)
+    m = _re.match(r"^https://[^/]+/mahalleler/([^/?#]+)", u.group(1))
     if m and not m.group(1).endswith("-mahallesi"):
         return "eski_adres"
-    not_ = satir.split("←", 1)[1] if "←" in satir else ""
-    return "dizin_disi" if "dizin dışı" in not_ else "yeniden_tarama"
+    kalan = u.group(2)
+    not_ = kalan.split("←", 1)[1] if "←" in kalan else ""
+    return ("dizin_disi" if tranahtar.anahtar("dizin dışı") in tranahtar.anahtar(not_)
+            else "yeniden_tarama")
 
 
 KUYRUK_OLU = []
@@ -641,8 +655,10 @@ BULGULAR = {
     "sehit-osman-avci": "Güçlü adaş taşıyan site adları var (İçtaş Holding, Soyak GYO, Çamlık/Çiçek ofisleri).",
     "seker": "Küçük ama derli toplu mahalle.",
     "yesilova": "Zayıflığı eski slug kalıntıları (may-tower, green-place, koçaklar).",
-    "eryaman": "Organikte en dengeli mahalle; mahalle sorgusunda sırayı ana sayfa karşılıyor (bilinen yamyamlık).",
 }
+# 08.10 onarım: Eryaman notu ("Organikte en dengeli mahalle; mahalle sorgusunda sırayı ana sayfa
+# karşılıyor") da çıktı. Hem "en …" hem sıra durumu içeriyordu; ikisi de ölçümle değişir ve
+# hangi sayfanın sırayı tuttuğunu hedef sorgu tablosu ("Sırayı tutan sayfa" sütunu) canlı basıyor.
 
 # ---------------- html ----------------
 def meter(i3, o, y, n):
@@ -1137,11 +1153,18 @@ _eniyi = ", ".join(
     f"{_ADI(k)} ({_mq[k]['sira']}." + (" + harita kutusu" if kutuda(_mq[k]) else "") + ")"
     for k in _ORG_VAR[:2])
 
+# 08.10 onarım: "sıradaki" = istek gönderilecek satırlar. Eski adres satırı istek kuyruğuna
+# girmez (is-takvimi-uret.py de almıyor: eski adrese istek kaldıracı defterde ölü); burada
+# "sıradaki" diye listelenince takvimle çelişiyordu. Eski adresler "Dizine eklenecekler"
+# tablosunda kendi etiketiyle durur; burada yalnız sayısı anılır.
+_SIRADAKI = [a for a in KUYRUK_OLU if a["tip"] != "eski_adres"][:5]
 siradaki_html = "".join(
     f'<li><span><strong>{esc(a["site"])}</strong> '
     f'<span class="alt">{esc(MAH_AD.get(a["mah"], a["mah"]))}</span></span>'
     f'<span class="chip {a["renk"]}">{esc(a["tur"])}</span></li>'
-    for a in KUYRUK_OLU[:5]) or '<li class="alt">Kuyruk boş</li>'
+    for a in _SIRADAKI) or '<li class="alt">Kuyruk boş</li>'
+siradaki_eski_not = (f" Ayrıca {DAMLA_SAY['eski_adres']} açık satır eski adres; onlara istek gönderilmez."
+                     if DAMLA_SAY["eski_adres"] else "")
 
 # Bayat yığınlar cümlesi: ilk ikisi DA'dan; "damla sırasının başında" ibaresi
 # yalnız ikisi de KUYRUK_OLU'nun ilk 5'inde mahalle olarak geçiyorsa basılır.
@@ -1149,7 +1172,7 @@ _bayat_ilk2 = " ve ".join(
     f"{MAH_AD.get(k, k)} ({n} sayfa · {tr_sayi(g)} gösterim talebi)" if i == 0
     else f"{MAH_AD.get(k, k)} ({n} · {tr_sayi(g)})"
     for i, (k, n, g) in enumerate(_BAYAT_SIRA[:2]))
-_damla_mah = {a["mah"] for a in KUYRUK_OLU[:5]}
+_damla_mah = {a["mah"] for a in _SIRADAKI}
 _bayat_damla = ("; ikisi de damla sırasının başında"
                 if all(k in _damla_mah for k, _, _ in _BAYAT_SIRA[:2]) else "")
 
@@ -1198,11 +1221,23 @@ if _TS:
     #   sahibinden_cikis    {"olay", "oturum"}: yerleşik click + linkDomain, tüm bağlar
     #   site_ust_sahibinden özel olay toplamı (eski alan; yanında basılır, iki kez sayılmaz)
     # Alan yoksa (eski JSON) kart ve satırlar eski gösterime düşer.
+    # YEDEK KİP (08.10 onarım): tik-sonrasi-uret.py ga4-temas'ı okuyamayınca alanları silmez,
+    # BOŞ yazar (temas_oturum null, sahibinden_cikis {"olay": null, "oturum": null}) ve
+    # form_start'ı eski tanımla (bütün sayfalar, ana sayfadaki arama kutusu dahil) sayar;
+    # hangi tanımla saydığını form_start_tanim alanına koyar ("form_sayfalari" | "tum_sayfalar").
+    # İçi boş sözlük "yeni biçim" sayılınca form satırı "yalnız değerleme/iletişim sayfası"
+    # etiketiyle basılıyordu, rakam ise arama kutusunu sayıyordu. Etiket artık üreticinin
+    # tanım alanından; alan yoksa (eski JSON) ziyaret sayısının varlığına bakılır.
     _to = _t.get("temas_oturum")
     if isinstance(_to, dict):
         _to = _to.get("toplam")
-    _sc = _t.get("sahibinden_cikis") if isinstance(_t.get("sahibinden_cikis"), dict) else None
-    _temas_yeni = _to is not None or _sc is not None
+    if not isinstance(_to, (int, float)):
+        _to = None
+    _sc = _t.get("sahibinden_cikis")
+    if not (isinstance(_sc, dict) and isinstance(_sc.get("olay"), (int, float))):
+        _sc = None
+    _tanim = _TS.get("form_start_tanim")
+    _form_yeni = (_tanim == "form_sayfalari") if _tanim else (_to is not None)
 
     def _y100(n):
         """100 oturumda kaç: n × 100 / oturum (ikisi de JSON'dan)."""
@@ -1226,18 +1261,32 @@ if _TS:
                        f'{_t["contact_form_submit"]} form</div></div>')
         _temas_ust_li = ""
         _temas_not = ""
-    _form_etiket = "Form başlatma (yalnız değerleme/iletişim sayfası)" if _temas_yeni else "Form başlatma"
-    if _sc and _sc.get("olay") is not None:
+    _form_etiket = "Form başlatma (yalnız değerleme/iletişim sayfası)" if _form_yeni else "Form başlatma"
+    if _sc:
+        # Özel olay kırılımı (tik-sonrasi.json → sahibinden_ozel): iki olay adı iki DÖNEMDİR,
+        # iki düğme değil. "site_ust_sahibinden" 04.10'a kadar yalnız site sayfasının üst
+        # düğmesinde atılıyordu; 04.10'dan beri bütün bağlar (üst düğme dahil) "sahibinden_click"
+        # atıyor. Kırılım yoksa (eski JSON) yalnız toplam basılır.
         _ozel = _t.get("site_ust_sahibinden")
-        _ozel_not = f"; özel olay sayımı {tr_sayi(_ozel)}" if isinstance(_ozel, (int, float)) else ""
-        _sc_ziyaret = f" / {tr_sayi(_sc['oturum'])} ziyaret" if _sc.get("oturum") is not None else ""
+        _oz = _TS.get("sahibinden_ozel") if isinstance(_TS.get("sahibinden_ozel"), dict) else {}
+        _oz_eski, _oz_yeni = _oz.get("site_ust_sahibinden"), _oz.get("sahibinden_click")
+        if (isinstance(_ozel, (int, float)) and isinstance(_oz_eski, (int, float))
+                and isinstance(_oz_yeni, (int, float)) and _oz_eski + _oz_yeni == _ozel):
+            _ozel_not = (f"; özel olay sayımı {tr_sayi(_ozel)}: 04.10′a kadar yalnız site üstü düğmesi "
+                         f"{tr_sayi(_oz_eski)}, 04.10′dan beri tüm bağlar {tr_sayi(_oz_yeni)}")
+        elif isinstance(_ozel, (int, float)):
+            _ozel_not = f"; özel olay sayımı {tr_sayi(_ozel)}"
+        else:
+            _ozel_not = ""
+        _sc_ziyaret = (f" / {tr_sayi(_sc['oturum'])} ziyaret"
+                       if isinstance(_sc.get("oturum"), (int, float)) else "")
         _sah_li = (f'<li><span>Sahibinden mağazasına geçiş: {tr_sayi(_sc["olay"])} tık{_sc_ziyaret} '
                    f'<span class="alt">(tüm bağlar, yerleşik click, gelişmiş ölçüm; alt sınır{_ozel_not})</span></span>'
                    f'<span class="chip orta">{tr_sayi(_y100(_sc["olay"]), 2)}</span></li>')
     else:
         _sah_li = ("<li><span>Sahibinden mağazasına geçiş (04.10'dan beri tüm bağlar, öncesi yalnız site üstü)</span>"
                    f'<span class="chip orta">{tr_sayi(_t100_al("site_ust_sahibinden"), 2)}</span></li>')
-    if _sc and _to is not None and _sc.get("oturum") is not None:
+    if _sc and _to is not None and isinstance(_sc.get("oturum"), (int, float)):
         _so = _sc["oturum"]
         if _so == _to:
             _sah_kiyas = f"Sahibinden mağazasına geçen ziyaret ile temas eden ziyaret aynı sayıda ({tr_sayi(_so)})."
@@ -1247,10 +1296,25 @@ if _TS:
         _sah_cumle = (_sah_kiyas + " Mağaza bağı daire arayana sunuluyor; bu geçişler kaybedilmiş ev sahibi "
                       "teması sayılmaz. Gözlemdir, karar değil.")
     else:
-        _sah_cumle = (f"Sahibinden geçişi ({_t.get('site_ust_sahibinden')}) telefon tıklamasından "
-                      f"({_t['phone_click']}) fazla: site sayfasına gelen, aramak yerine ilanlara gidiyor. "
-                      f"Bu bir gözlem, henüz karar değil — {_TS['gun']} gün daha izlenecek.")
+        # Eski gösterim (eski JSON ya da yedek kip). "fazla" hükmü sabit metindi; sayı yoksa
+        # "(None)" basıyor, geçiş telefondan az olsa da "fazla" diyordu. Artık sayılardan kurulur.
+        _ss = _t.get("site_ust_sahibinden")
+        if isinstance(_ss, (int, float)) and _ss > _t["phone_click"]:
+            _sah_cumle = (f"Sahibinden geçişi ({tr_sayi(_ss)}) telefon tıklamasından "
+                          f"({_t['phone_click']}) fazla: site sayfasına gelen, aramak yerine ilanlara gidiyor. "
+                          f"Bu bir gözlem, henüz karar değil — {_TS['gun']} gün daha izlenecek.")
+        elif isinstance(_ss, (int, float)):
+            _sah_cumle = (f"Sahibinden geçişi {tr_sayi(_ss)}, telefon tıklaması {_t['phone_click']}. "
+                          f"Bu bir gözlem, henüz karar değil — {_TS['gun']} gün daha izlenecek.")
+        else:
+            _sah_cumle = "Sahibinden geçişi bu üretimde ölçülmedi."
     _tel100, _wa100, _form100 = _t100_al("phone_click"), _t100_al("whatsapp_click"), _t100_al("form_start")
+    # Üreticinin uyarıları (tik-sonrasi.json → uyarilar). Yedek kipte "Temas ayrıntısı okunamadı…"
+    # burada görünür; yoksa okuyucu form satırının neden eski tanımla sayıldığını bilemez.
+    _ts_uyari = _TS.get("uyarilar") if isinstance(_TS.get("uyarilar"), list) else []
+    _ts_uyari = [u for u in _ts_uyari if isinstance(u, str) and u.strip()]
+    _ts_uyari_p = ('<p class="alt" style="margin-top:10px"><strong>Bu üretimin ölçüm notu.</strong> '
+                   + " ".join(esc(u) for u in _ts_uyari) + "</p>") if _ts_uyari else ""
     tiksonrasi_html = f"""
   <h2>Tıktan sonra — gelen ne yapıyor</h2>
   <p class="not">Search Console tıkı sayar; Analytics tıktan sonrasını. Ev sahibi için asıl
@@ -1288,6 +1352,7 @@ if _TS:
   için boşta (≤3 sn) yüklenir; 3 saniyeden kısa ziyaretler hiç sayılmaz, süreler birkaç saniye
   eksik okunur. (2) 26 telefon bağının 10′u PR #88′e kadar izlenmiyordu — telefon sayısı bir
   <strong>taban</strong>, gerçek sayı daha yüksek. PR yayına girince kıyas tabanı sıfırlanır.</p>
+  {_ts_uyari_p}
 """
 else:
     tiksonrasi_html = ""
@@ -1509,7 +1574,28 @@ def _secilmis_mi(sy):
     return yo >= _SECILMIS_ESIK_N and (kd / kt - od / yo) * 100 >= _SECILMIS_ESIK_PUAN
 
 
-DS_SECILMIS = _secilmis_mi((_DS or {}).get("secilmis_yeniden_olcum"))
+# 08.10 onarım — İKİNCİ İŞARET (takvim ayından bağımsız). Üretici seçim göstergesini EN YENİ
+# ay kovası için yazar. Yeni aya girilip ilk birkaç ölçüm yapıldığı an "yeniden ölçülen" 20
+# eşiğinin altına düşer ve yukarıdaki hüküm kendiliğinden kalkar; oysa eski kova hâlâ yeniden
+# ölçülmemiş durur. Tek yönlü turun kalıcı izi ölçüm yaşı tablosundadır: sorunlu çıkanların hepsi
+# yeni kovaya taşındığı için ESKİ bir kovada ilk 3'teki sıraların TAMAMI doğru kalır (08.10:
+# Eylül kovası 259'da 259). Rastgele bir turdan sonra böyle bir kova kalmaz. Bu iz durdukça
+# "üst sınır" notu basılır; alt sınır da o kovadan SONRAKİ ölçümlerin toplamından hesaplanır.
+def _saf_kovalar(oy):
+    """En yeni kova dışında, ilk 3'teki sıralarının tamamı doğru olan kovalar (ilk3 ≥ eşik)."""
+    if not isinstance(oy, dict):
+        return []
+    kovalar = sorted(k for k, v in oy.items() if isinstance(v, dict))
+    cikan = []
+    for k in kovalar[:-1]:
+        i3, i3d = oy[k].get("ilk3"), oy[k].get("ilk3_dogru")
+        if isinstance(i3, (int, float)) and isinstance(i3d, (int, float)) and i3 >= _SECILMIS_ESIK_N and i3d == i3:
+            cikan.append(k)
+    return cikan
+
+
+_DS_SAF = _saf_kovalar((_DS or {}).get("olcum_yasi"))
+DS_SECILMIS = _secilmis_mi((_DS or {}).get("secilmis_yeniden_olcum")) or bool(_DS_SAF)
 _AY_AD = {"01": "Ocak", "02": "Şubat", "03": "Mart", "04": "Nisan", "05": "Mayıs", "06": "Haziran",
           "07": "Temmuz", "08": "Ağustos", "09": "Eylül", "10": "Ekim", "11": "Kasım", "12": "Aralık"}
 
@@ -1547,9 +1633,15 @@ if _DS:
     _ds_yas = []
     if _oy:
         _kovalar = sorted(_oy)                      # "2026-08" < "2026-09" < "2026-10"
-        _kova_ad = lambda k: _AY_AD.get(str(k)[5:7], str(k))
+        _kova_ad = lambda k: _AY_AD.get(str(k)[5:7]) or str(k) or "tarihi bilinmeyen"
+        _oy_say = lambda k, alan: (_oy[k].get(alan) if isinstance(_oy[k].get(alan), (int, float)) else 0)
         _son_k = _kovalar[-1]
-        _eski = [(k, _oy[k].get("ilk3_dogru") or 0) for k in reversed(_kovalar[:-1])]
+        # Yeniden ölçülmüş kesim: tek yönlü turun izi olan kova varsa (_DS_SAF) ondan SONRAKİ
+        # bütün kovalar; iz yoksa yalnız en yeni kova (08.10'da ikisi de "Ekim" verir). Yeni aya
+        # girilince kesim "Ekim–Kasım" olur: alt sınır üç beş ölçümlük yeni kovadan hesaplanmaz,
+        # Ekim de "yeniden ölçülmedi" diye anılmaz.
+        _yeni_k = ([k for k in _kovalar if k > max(_DS_SAF)] if _DS_SAF else []) or [_son_k]
+        _eski = [(k, _oy_say(k, "ilk3_dogru")) for k in reversed(_kovalar) if k not in _yeni_k]
         _eski = [(k, n) for k, n in _eski if n]
         if _eski:
             _ds_yas.append(f"İlk 3′teki {tr_sayi(_i3d)} doğru sıranın "
@@ -1557,13 +1649,25 @@ if _DS:
                            + " ölçümünden kalma; onlar yeniden ölçülmedi.")
         if (isinstance(_sy, dict) and isinstance(_sy.get("yeniden_olculen"), int)
                 and isinstance(_sy.get("onceden_dogru"), int)):
-            _ds_yas.append(f"Son turda yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgunun "
-                           f"{tr_sayi(_sy['yeniden_olculen'] - _sy['onceden_dogru'])} tanesi önceki ölçümde "
-                           f"sorunlu çıkanlardı.")
-        _s3, _s3d = _oy[_son_k].get("ilk3") or 0, _oy[_son_k].get("ilk3_dogru") or 0
+            # "Sorunlu çıkan" = önceki ölçümü olup doğru sayfa çıkmamış olan. İlk kez ölçülen
+            # sorgunun önceki ölçümü yoktur; üretici onu ayrı verir (onceki_olcumu_yok) ve
+            # burada sorunlu sayılmaz. Tur adı üreticinin kova alanından; yoksa "son turda".
+            _ilk_kez = _sy.get("onceki_olcumu_yok")
+            _ilk_kez = _ilk_kez if isinstance(_ilk_kez, int) and _ilk_kez > 0 else 0
+            _sorunlu = max(0, _sy["yeniden_olculen"] - _sy["onceden_dogru"] - _ilk_kez)
+            _tur_ad = (f"{_kova_ad(_sy['kova'])} ayında" if isinstance(_sy.get("kova"), str) and _sy["kova"] in _oy
+                       else "Son turda")
+            _ds_yas.append(f"{_tur_ad} yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgunun "
+                           f"{tr_sayi(_sorunlu)} tanesi önceki ölçümde sorunlu çıkanlardı"
+                           + (f", {tr_sayi(_ilk_kez)} tanesi ilk kez ölçüldü." if _ilk_kez else "."))
+        # Alt sınır: yeniden ölçülmüş kesimin (_yeni_k) doğru oranı.
+        _s3 = sum(_oy_say(k, "ilk3") for k in _yeni_k)
+        _s3d = sum(_oy_say(k, "ilk3_dogru") for k in _yeni_k)
         _alt_sinir = round(_s3d * 100 / _s3) if _s3 else None
+        _yeni_ad = (_kova_ad(_yeni_k[0]) if len(_yeni_k) == 1
+                    else f"{_kova_ad(_yeni_k[0])}–{_kova_ad(_yeni_k[-1])}")
         if _s3:
-            _ds_yas.append(f"{_kova_ad(_son_k)} ölçümlerinde ilk 3′teki {tr_sayi(_s3)} sıranın "
+            _ds_yas.append(f"{_yeni_ad} ölçümlerinde ilk 3′teki {tr_sayi(_s3)} sıranın "
                            f"{tr_sayi(_s3d)} tanesi doğru (%{_alt_sinir}).")
         if DS_SECILMIS and _alt_sinir is not None and _alt_sinir < _pay:
             _ds_yas.append(f"<strong>%{_pay} üst sınır, %{_alt_sinir} alt sınırdır; gerçek oran arada.</strong>")
@@ -2056,13 +2160,28 @@ if _EE:
         s = x.get("sira")
         cls = "iyi" if s and s <= 3 else ("orta" if s else "kotu")
         org = f"organik {s}." if s else "organik ilk 10′da yok"
-        # "harita 1." yalnız Eryaman konumlu (uule) ölçümde yazılır; konumsuz ölçümde nötr çip
-        if not x.get("harita"):
-            har = '<span class="chip kotu">harita 1. değil</span>'
-        elif x.get("kanal") == UULE:
-            har = '<span class="chip iyi">harita 1.</span>'
-        else:
+        # Harita hükmü (yeşil/kırmızı) yalnız Eryaman konumlu (uule) ölçümde verilir. Konumsuz
+        # ölçümde kutu aramanın yapıldığı yere göre kurulur: kutudaysak da değilsek de çip nötr.
+        # Üreticinin "harita" alanı yalnız "kutuda mıyız" der, kaçıncı olduğumuzu demez; eskiden
+        # o alandan "harita 1." yazılıyordu (07.10'un konumsuz ölçümünde kutuda 2.'ydik). Sıra
+        # ham kayıttaki işletme listesinden okunur (kutu_durum); kayıt bulunamazsa sıra yazılmaz.
+        if x.get("kanal") == UULE:
+            _ham = _son_olcum([h for h in _hgrup.get(tranahtar.anahtar("eryaman emlakçı"), [])
+                               if h.get("d") == x.get("d")])
+            _kd, _ks = kutu_durum(_ham) if _ham and _ham.get("kanal") == UULE else ("bilinmiyor", None)
+            if _kd == "var":
+                har = f'<span class="chip {"iyi" if _ks == 1 else "orta"}">harita {_ks}.</span>'
+            elif _kd == "yok":
+                har = '<span class="chip kotu">haritada yok</span>'
+            elif _kd == "kutu_yok":
+                har = '<span class="chip kotu">harita kutusu çıkmadı</span>'
+            else:
+                har = ('<span class="chip iyi">haritada</span>' if x.get("harita")
+                       else '<span class="chip kotu">haritada yok</span>')
+        elif x.get("harita"):
             har = f'<span class="chip nul" title="{esc(_KONUMSUZ_NOT)}">haritada · konumsuz ölçüm</span>'
+        else:
+            har = f'<span class="chip nul" title="{esc(_KONUMSUZ_NOT)}">haritada yok · konumsuz ölçüm</span>'
         return (f'<li><span>{tr_tarih(x["d"])} <span class="alt">{esc(x.get("kanal") or "")}</span></span>'
                 f'<span><span class="chip {cls}">{org}</span> {har}</span></li>')
 
@@ -2090,11 +2209,15 @@ if _EE:
         _mh_tam = [h for h in _mh if not h.get("kismi")]
         _mh_ort = round(sum(h["tik"] for h in _mh_tam) / len(_mh_tam), 1) if _mh_tam else None
         _mh_ort_cumle = f" Haftalık ortalama {tr_sayi(_mh_ort, 1)} tık." if _mh_ort is not None else ""
+        # Aralık son haftanın BAŞLANGICIYLA kapanıyordu (29.06–28.09; seri 04.10'da bitiyor).
+        # Üretici haftanın bitişini de yazıyor ("bit"); yoksa eski gösterim (başlangıç).
+        _mh_son = tr_tarih(str(_mh[-1].get("bit") or "")) or _mh_et(_mh[-1])
+        _mh_aralik = f" ({esc(_mh_et(_mh[0]))}–{esc(_mh_son)})" if _mh_et(_mh[0]) and _mh_son else ""
         _ee_mobil = f"""
   <div class="pano" style="margin-top:14px">
     <h3>Telefondan gelen tık, hafta hafta</h3>
     <div class="hafta">{_mh_cubuk}</div>
-    <p class="alt" style="margin:10px 0 0">Soldan sağa {len(_mh)} hafta ({esc(_mh_et(_mh[0]))}–{esc(_mh_et(_mh[-1]))}),
+    <p class="alt" style="margin:10px 0 0">Soldan sağa {len(_mh)} hafta{_mh_aralik},
     yalnız telefon.{_mh_ort_cumle} Bu sorguda tıklanma oranıyla hüküm verilmez: sayılar küçük, tek
     haftadan sonuç çıkmaz. Ana sayfanın başlığına ve açıklamasına dokunulmuyor.</p>
   </div>"""
@@ -2473,6 +2596,11 @@ def _fark_chip(f):
     isaret = "+" if d > 0 else ("−" if d < 0 else "")
     birim = _BIRIM_FARK.get(f.get("birim") or "", f.get("birim") or "")
     yontem = " · yöntem değişti" if f.get("olcum_yontemi_degisti") else ""
+    # Fark gürültü bandındaysa (yönetici özeti üreticisi: yon "nötr" + gurultu.bant) çip gri
+    # kalır ve nedeni kısa söyler. Üreticinin uzun notu ipucunda (title) durur, karta basılmaz.
+    _g = f.get("gurultu")
+    if not yontem and d and f.get("yon") == "nötr" and isinstance(_g, dict) and _g.get("bant"):
+        yontem = " · fark küçük, yorumlanmaz"
     return (f'<span class="chip {cls}" title="{esc(f.get("not") or "")}">{ok} {isaret}'
             f'{tr_sayi(abs(d), _ondalik(d))}{(" " + birim) if birim else ""}{yontem}</span>')
 
@@ -2513,16 +2641,17 @@ if _YO:
     for r in _YO["rakamlar"]:
         f = r.get("fark_7g")
         _kiyas = (f' <span class="alt">{tr_tarih(f["kiyas_tarihi"])} tarihine göre</span>' if f else "")
-        # 08.10: yön "nötr" ise üreticinin notu yalnız ipucunda (title) kalmasın, kartta görünsün:
-        # "gürültü bandında" ya da "yalnız sorunlular yeniden ölçüldü" telefonda da okunmalı.
-        _notu = (f'<span class="alt" style="flex-basis:100%">{esc(f["not"])}</span>'
-                 if f and f.get("yon") == "nötr" and f.get("not") else "")
+        # 08.10 onarım: üreticinin fark_7g.not metni karta BASILMAZ, çipin ipucunda (title) kalır.
+        # O notlar 200–400 karakterlik teknik ipuçları (z değeri, seri adı); karnenin en tepesindeki
+        # kartlara düşünce "İlk 3 içinde doğru sayfa" aynı şeyi üç kez söylüyordu. Yön "nötr" ise
+        # neden çipte kısa durur ("yöntem değişti" / "fark küçük, yorumlanmaz"); gerekçenin yalın
+        # hâli üreticinin "Veri uyarıları" kutusunda.
         # "İlk 3 içinde doğru sayfa": yeniden ölçüm tek yönlüyse rakam üst sınırdır (DS_SECILMIS)
         _ust = ('<p class="alt"><strong>Yalnız sorunlu çıkanlar yeniden ölçüldü; bu rakam üst sınır.</strong></p>'
                 if r.get("k") == "dogru_sayfa_pay" and DS_SECILMIS else "")
         _yo_kart += (f'<div class="kart yo"><div class="buyuk">{esc(r["gosterim"])}</div>'
                      f'<div class="etiket">{esc(r["baslik"])}</div>'
-                     f'<div class="fark">{_fark_chip(f)}{_kiyas}{_notu}</div>'
+                     f'<div class="fark">{_fark_chip(f)}{_kiyas}</div>'
                      f'{_ust}<p class="alt">{esc(r["ne_demek"])}</p></div>')
     _yo_yapilan = ""
     for g in _YO.get("bu_hafta_yapilan") or []:
@@ -2549,7 +2678,8 @@ if _YO:
     yonetici_html = f"""
   <h2 class="ilk">Yönetici özeti</h2>
   <p class="not">Karnenin altı ana rakamı. Oklar yedi gün önceki değere göre değişimi gösterir;
-  yeşil iyi, kırmızı kötü, gri ya ölçülmedi ya da ölçüm yöntemi değişti. {_yo_seri}
+  yeşil iyi, kırmızı kötü; gri ise ya ölçülmedi, ya ölçüm yöntemi değişti, ya da fark yorumlanamayacak
+  kadar küçük. {_yo_seri}
   {pencere_satir(_SONUC_P, ' (Search Console)')}
   {pencere_satir((_TS or {}).get('pencere'), ' (Analytics, dün dahil)', 'gün')}</p>
   <div class="kartlar yo">{_yo_kart}</div>
@@ -2842,9 +2972,17 @@ if _HT:
     if _ht_ana_var:
         _ht_dir = _ht_ana
         _ht_dir_etiket = "doğrudan ana sayfaya gelen · telefon · 28 gün"
-        _ht_dir_ek = (f'<div class="alt" style="margin-top:4px">ana sayfa dışındaki sayfaya düşen: '
-                      f'{tr_sayi(_ht_derin.get("simdi") or 0)} (çoğu etkileşimsiz)</div>'
-                      if isinstance(_ht_derin, dict) else "")
+        # "(çoğu etkileşimsiz)" sabit metindi; veri değişse de basılırdı. Etkileşimli oturum
+        # sayısı üreticide var (etk_simdi = Analytics'in "etkileşimli oturum"u); varsa o basılır,
+        # yoksa parantez hiç basılmaz.
+        _ht_dir_ek = ""
+        if isinstance(_ht_derin, dict):
+            _dn, _de = _ht_derin.get("simdi") or 0, _ht_derin.get("etk_simdi")
+            _de_not = (f" ({tr_sayi(_de)} tanesi etkileşimli)"
+                       if _dn and isinstance(_de, (int, float)) else "")
+            _ht_dir_ek = (f'<div class="alt" style="margin-top:4px" title="Etkileşimli: 10 saniyeden uzun '
+                          f'süren ya da birden çok sayfa gezen ziyaret (Analytics tanımı).">'
+                          f'ana sayfa dışındaki sayfaya düşen: {tr_sayi(_dn)}{_de_not}</div>')
         _ht_dir_alan = ("direct_mobil_ana" if any(h.get("direct_mobil_ana") is not None for h in _hh)
                         else "direct_mobil")
     else:
@@ -3136,9 +3274,9 @@ tr.grup td {{ font-size:12px; text-transform:uppercase; letter-spacing:.06em; co
       </ul>
     </div>
     <div class="pano">
-      <h3>Dizin damlası — sıradaki {len(KUYRUK_OLU[:5])}</h3>
+      <h3>Dizin damlası — sıradaki {len(_SIRADAKI)}</h3>
       <ul>{siradaki_html}</ul>
-      <p class="alt" style="margin:10px 0 0">Kota: günde ~{_kota_gun} istek; son {_ISTEK_PENCERE} günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.
+      <p class="alt" style="margin:10px 0 0">Kota: günde ~{_kota_gun} istek; son {_ISTEK_PENCERE} günde {BEKLEYEN_ISTEK} sayfaya istek gönderildi.{siradaki_eski_not}
       Sayfa envanteri ({DA_TARIH} denetimi, o günden beri tazelenmedi): {DTOT['taze']} taze · {DTOT['orta']} orta · {DTOT['bayat']} bayat · {DTOT['dizinsiz']} dizinsiz (toplam {DTOPLAM}).</p>
     </div>
   </div>
