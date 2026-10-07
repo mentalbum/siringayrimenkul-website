@@ -908,3 +908,35 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
 - GSC isteği: altintepe "sorun oluştu" (ayrıntı DIZIN-DAMLASI-31-08.md 07.10 notu).
 - GBP herkese açık görünüm sağlam (15:55, "Şirin Gayrimenkul Eryaman" sorgusu, pws=0): bilgi paneli
   çıkıyor, 5,0 puan · 404 yorum. Yani kutu kaybı askıya alma/kapanma değil; sıralama kaynaklı.
+
+## 07.10 — DÜZELTME: HARİTA KUTUSU "9→3" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1.
+
+- Sınama: aynı sorgular `uule` (GPS) ile — Eryaman merkez (39.9779, 32.6382; bolge-tur.mjs 'eryaman'
+  noktası). "Tunahan Mahallesi emlakçı": uule'siz kutu Efor/Zafer/Efor, biz YOK; uule=Eryaman merkez →
+  **Şirin 1.**; uule=Tunahan merkez (39.9865, 32.6240) → **Şirin 1.** "Eryaman 5. Etap emlakçı": uule'siz
+  yok; iki uule'de de **Şirin 1.** → Kutu tarayıcının IP konumuna göre kuruluyor; "loc" satırı sorgunun
+  adını (Tunahan, Etimesgut) gösterse bile sıralama IP'ye bakıyor. Uygulama içi tarayıcının IP konumu
+  bugün Eryaman dışına düşüyor olmalı; Eylül ölçümlerinin konumu kayıtlı değil, birebir kıyas yapılamaz.
+- 17 sorgu uule=Eryaman merkez ile yeniden ölçüldü (16:05–16:20, kanal "uule-eryaman", `loc` kayıtlı):
+  **kutuda 6/17 ve altısında da 1.**: çatı, 1. Etap, 4. Etap, 5. Etap, Eryaman Mah, Tunahan. Kutu var biz
+  yok 10: 2. Etap (Empa / Bilgi Ofisi / Anıl&Yılmazer), 3. Etap ("Eryaman 3. Etap" YER kaydı / Beyaz /
+  Alaçatı), Altay (İmaj / Erland Rezidans / Neşeli), Göksu, Güzelkent, ŞOA, Şeker, Şeyh Şamil, Yavuz Selim
+  (kutuda üç SİTE adı: Serhatkent / Ayata Kent / Atadostlar — emlakçı değil), Yeşilova. Kutu hiç yok: Devlet.
+- Eylül'le kıyas (Eylül konum kontrolsüz, ihtiyatla): kaybedilen 2. Etap (2→yok), 3. Etap (3→yok),
+  Altay (3→yok), Yavuz Selim (1→yok); korunan çatı/1./4./5. Etap/Tunahan (hepsi 1.); Eryaman Mah
+  bilinmiyor→1. Gerçek değişim 9→6 civarı, 9→3 DEĞİL. Kaybedilen dördünde kutuyu o etabın/mahallenin
+  içindeki ofisler tutuyor (yakınlık); GBP sağlam (5,0 · 404 yorum).
+- Organik, uule ile: çatı 2 (ana sayfa) · 1. Etap 2 · 2. Etap 4 · 3. Etap 4 · 4. Etap 1 · 5. Etap 5 (Sarıgül
+  Sitesi sayfası) + 10 (ana sayfa) · Eryaman Mah 5 · ŞOA 4 (doğru) · Şeyh Şamil 3 (doğru) · Yavuz Selim 6
+  (doğru) · Güzelkent 9 (Güzel Ankara Sitesi sayfası) · Tunahan/Altay/Devlet/Göksu/Şeker/Yeşilova dışı.
+  uule'siz ölçümle fark küçük (2. Etap 10→4, 5. Etap 7→5): organik de konumdan etkileniyor.
+- **YENİ KURAL:** hedef sorgu ölçümü HER ZAMAN uule=Eryaman merkez ile yapılır; kayda kanal
+  "uule-eryaman" ve `loc` yazılır (hedef-ekle.py 3. argüman). uule'siz ölçüm konumu bilinmediği için
+  kıyaslanamaz. Karnedeki hedef sorgu satırları aynı günün SON kaydını (uule) gösterir. 08–09.10 tekrar
+  aynı uule ile. JS: uule'yi sayfada üretip location.href ile gitmek çalışıyor (btoa, Bash gerekmez).
+- Efor: "ERYAMAN EFOR GAYRIMENKUL DANIŞMANLIĞI" (386 yorum) ile "Efor Emlak" (Tunahan Mah. 219. Cad.)
+  aynı telefonları paylaşıyor (0312 283 77 88 / 0533 255 26 88). İki ofis mi, tek ofisin yinelenen kaydı
+  mı AYIRT EDİLEMEDİ (oturumsuz tarayıcıda bilgi paneli yok). Şikayet YOK — 06.09 dersi (27 şüphenin 24'ü
+  çürüdü). Ancak uule'li ölçümde Efor bizi geçmiyor, konu önemsizleşti.
+- Kuyruk temizliği: kuyruk-site-emlakci.json 511→510 (4. Devlet sayfası 410), Kurtuluş sorgusu Yükselay
+  sayfasına bağlandı (veri sağlığı "karşılığı olmayan kayıt" 2→0).

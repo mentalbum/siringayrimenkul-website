@@ -13,10 +13,10 @@ bir panel olarak basar. Kural: sağlık denetimi geçmeyen rakama güvenilmez.
 
 Çıktı: veri-sagligi.json (karne-html.py okur).
 """
-import json, os, collections, datetime, sys
+import os, json, os, collections, datetime, sys
 
 KOK = os.path.dirname(os.path.abspath(__file__))
-ICERIK = "/Users/ozgun/websitem/content/siteler"
+ICERIK = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "content", "siteler")  # 07.10: sabit ana-checkout yolu worktree'de bayat envanter okuyordu
 BUGUN = datetime.date.today().isoformat()
 YM = {"ata-mahallesi", "susuz-mahallesi", "cumhuriyet-mahallesi"}
 

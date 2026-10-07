@@ -44,24 +44,24 @@
    "ad": "İlk 3 payı (ölçülen site sorguları)",
    "birim": "%",
    "artis": "iyi",
-   "son": 75.1,
+   "son": 75.4,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
-   "onceki": 75.1,
+   "onceki": 75.4,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
    "fark": 0.0,
    "fark_yuzde": 0.0,
    "yon": "nötr",
    "sparkline": [
-    75.1,
-    75.1,
-    75.1,
-    75.1,
+    75.4,
+    75.4,
+    75.4,
+    75.4,
     75.0,
-    75.0,
-    75.1,
-    75.1
+    75.2,
+    75.4,
+    75.4
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -120,24 +120,24 @@
    "ad": "İlk 10 dışı payı",
    "birim": "%",
    "artis": "kotu",
-   "son": 11.0,
+   "son": 10.8,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
-   "onceki": 10.8,
+   "onceki": 10.6,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
    "fark": 0.2,
    "fark_yuzde": 1.9,
    "yon": "kötü",
    "sparkline": [
-    10.8,
-    10.8,
-    10.8,
-    10.8,
-    11.2,
+    10.6,
+    10.6,
+    10.6,
+    10.6,
     11.2,
     11.0,
-    11.0
+    10.8,
+    10.8
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -558,7 +558,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_etiketli_pay": 94.1,
+   "son_etiketli_pay": 100.0,
    "onceki_etiketli_pay": 100.0,
    "olcum_yontemi_degisti": false
   },
@@ -566,7 +566,7 @@
    "ad": "Hedef sorgu: harita kutusunda",
    "birim": "sorgu",
    "artis": "iyi",
-   "son": 3,
+   "son": 6,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -583,7 +583,7 @@
     9,
     null,
     null,
-    3
+    6
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -596,7 +596,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 6,
-   "son_etiketli_pay": 94.1,
+   "son_etiketli_pay": 100.0,
    "onceki_etiketli_pay": null,
    "olcum_yontemi_degisti": false,
    "not": "7 gün önceki değer ölçülmedi"
@@ -635,7 +635,7 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_etiketli_pay": 94.1,
+   "son_etiketli_pay": 100.0,
    "onceki_etiketli_pay": 100.0,
    "olcum_yontemi_degisti": false
   },

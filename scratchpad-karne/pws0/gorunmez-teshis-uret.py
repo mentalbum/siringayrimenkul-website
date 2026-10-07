@@ -34,7 +34,7 @@ for L in open(f"{S}/sayfalar28.tsv"):
 # ve tarihçede içerik dosyası artık olmayan 16 anahtar duruyordu (eski slug'lar +
 # yanlış mahalleye yazılmış üç kayıt). Onlar canlıda 404 veriyor — "dizin dışı"
 # değil, YOK. Kota harcanmasın diye içerik dosyasıyla süzülüyor.
-KOK = "/Users/ozgun/websitem/content/siteler"
+KOK = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "content", "siteler")  # 07.10: sabit ana-checkout yolu worktree'de bayat envanter okuyordu
 
 def _gercek(u):
     if "/mahalleler/" not in u: return True          # mahalle kökü vb.
