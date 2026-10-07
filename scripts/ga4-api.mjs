@@ -16,6 +16,12 @@
  *   node scripts/ga4-api.mjs aile [gün=28]     # sayfa AİLESİ bazında (site/ada/mahalle/etap/yazı/diğer)
  *   node scripts/ga4-api.mjs sayfalar [gün=28] # sayfa bazında, görüntülemeye göre
  *   node scripts/ga4-api.mjs olaylar [gün=28]  # olay adı bazında sayılar
+ *
+ * YALNIZ CANLI ALAN ADI (08.10): her istek hostName = www.siringayrimenkul.com ile süzülür.
+ * Aynı ölçüm kimliği yerel sunucuda (localhost) ve önizleme adreslerinde de olay üretiyor;
+ * 04.10'da bir PR'ın yerel doğrulaması 4 sahibinden_click + 2 degerleme_cta yazdı ve karne
+ * bunları ziyaretçi saydı. Süzgeç rapor()'da tek yerde durur; isteğin kendi süzgeci varsa
+ * VE ile birleşir. Çıktı biçimi değişmez. Teşhis için kapatmak: GA4_HOST=hepsi node scripts/ga4-api.mjs …
  */
 import { createSign } from "node:crypto";
 import { readFileSync, existsSync } from "node:fs";
@@ -42,11 +48,21 @@ async function jeton() {
   return j.access_token;
 }
 
+const HOST = process.env.GA4_HOST || "www.siringayrimenkul.com";
+// İsteğin süzgecini canlı alan adıyla VE'ler. Süzgeç zaten bir andGroup ise içine eklenir (iç içe grup kurulmaz).
+function hostlu(govde) {
+  if (HOST === "hepsi") return govde;
+  const h = { filter: { fieldName: "hostName", stringFilter: { matchType: "EXACT", value: HOST } } };
+  const f = govde.dimensionFilter;
+  const birlesik = !f ? h : f.andGroup ? { andGroup: { expressions: [h, ...f.andGroup.expressions] } } : { andGroup: { expressions: [h, f] } };
+  return { ...govde, dimensionFilter: birlesik };
+}
+
 async function rapor(govde) {
   const t = await jeton();
   const r = await fetch(`https://analyticsdata.googleapis.com/v1beta/properties/${MULK}:runReport`, {
     method: "POST", headers: { authorization: `Bearer ${t}`, "content-type": "application/json" },
-    body: JSON.stringify(govde) });
+    body: JSON.stringify(hostlu(govde)) });
   const j = await r.json();
   if (!r.ok) {
     const m = j.error?.message || "";
