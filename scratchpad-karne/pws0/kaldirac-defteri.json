@@ -216,6 +216,60 @@
    "sonuc": "İç bağ → DİZİN bağı doğrulandı; iç bağ → hedef sorguda SIRA bağı yok. Etap sayfalarına içerik yatırımı gerekçelenmiyor; ana sayfa bu sorguları zaten ilk 3–5'te tutuyor (2., 3., 5. Etap'ta 4–10 bandı).",
    "n": 5,
    "nerede": "PROTOKOL-gece.md 07.10 ETAP TABANI OKUMASI; gsc-api denetle"
+  },
+  {
+   "tarih": "2026-10-07",
+   "ad": "Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcum + hatirlanirlik",
+   "durum": "acik",
+   "olcum": "37 ajanli arastirma: 30 oneri -> 18 ayakta, 12 curuk (sip-diye-ajan-sonucu-0710.json). 'eryaman emlakci' kutu #1 / organik #1-2 (28.08 bolge turu 10/10 nokta) — sirada kapatilacak bosluk yok. Hatirlanirlik TABANI (hatirlanirlik.json, 07.10): adimizla arama 28g 177 gosterim (onceki 154, +%15 — %25 esiginin altinda, yorumlanmaz), 12 tik; mobil Direct 28g 71 oturum (onceki 69); Google yorumu 404 (Efor 386, fark +18), tempo 28.08'den beri ~4,5/ay (Agustos kampanyasi ~28/ay); GBP-UTM'li sayfanin GSC'deki son gosterim gunu 11.08; GBP Performans kaydi 0.",
+   "gerekce": "Kanal #1 (GBP) web ayagi 11-18.08'den beri olculemiyor; panel 09.08'den beri okunmadi, birincil kategori sessizce 'Emlak Burosu' -> 'Gayrimenkul Danismani' olmus; hatirlanirlik hicbir yerde seri olarak tutulmuyordu. Yapilanlar: PR #116 (ucret cumleleri, hero CTA izleme, FB kanonik), karne 'Hatirlanirlik' bolumu, bolge-tur.mjs on ayarlari (cekirdek/halka).",
+   "nerede": "SIP-DIYE-PLAN-07-10.md + hatirlanirlik-uret.py + karne 'Hatirlanirlik' bolumu + bolge-tur.mjs ON_AYARLAR",
+   "sonraki_olcum": "20.10 cekirdek tur + hatirlanirlik; 01.11 hero CTA; 04.11 ikinci 28 gunluk pencere + halka turu",
+   "bekleyen_onay": [
+    "GBP 'Web sitesi' alanina ?utm_source=google&utm_medium=gbp (Ozgun yapar ya da hamza oturumu acikken acik onayla Claude)",
+    "sahibinden 'Hakkimizda' taslagi (platform-profil-metinleri.md §8)"
+   ],
+   "takvim": [
+    {
+     "tarih": "2026-10-08",
+     "kim": "Özgün",
+     "oncelik": 1,
+     "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al.",
+     "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor."
+    },
+    {
+     "tarih": "2026-10-10",
+     "kim": "Claude",
+     "is": "GBP bağı değiştiyse 48 saat sonra kontrol: GA4'te medium=gbp oturumu ve GSC'de UTM'li sayfa gösterimi geri geldi mi (python3 hatirlanirlik-uret.py). Özgün'ün Performans ekran görüntüsü geldiyse gbp-performans.jsonl'e işle.",
+     "neden": "Bağ panelde kendiliğinden geri dönebiliyor (18.08'de öyle oldu); değişikliğin tuttuğu ancak seriyle görülür."
+    },
+    {
+     "tarih": "2026-10-14",
+     "kim": "Özgün",
+     "is": "Bing Webmaster Tools: Google ile oturum aç, Search Console'dan içe aktar, ana sayfa + /mahalleler + /siteler + /etaplar + 11 mahalle sayfasını gönder. Bing Places kaydına bak (ad alanına dokunma). Search Console'a Instagram mülkünü ekle. Instagram İçgörüler 31.08–20.09 ekran görüntüsü.",
+     "neden": "Bing dizininde 1.178 adresin ~50'si var ve ChatGPT araması Bing'den besleniyor; Instagram 'eryaman emlakçı' organik 4. sırada ama hangi sorguyla tık aldığı bilinmiyor."
+    },
+    {
+     "tarih": "2026-10-20",
+     "kim": "Claude",
+     "oncelik": 1,
+     "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
+     "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı; iki ardışık ölçüm aynıysa 'kalıcı kayıp' denir. 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor."
+    },
+    {
+     "tarih": "2026-11-01",
+     "kim": "Claude",
+     "is": "Ana sayfa hero düğmesi ilk okuma: GA4 degerleme_cta olayında konum=anasayfa_hero (3 haftalık taban), site_ust WhatsApp oranıyla kıyas.",
+     "neden": "Düğme PR #116'ya kadar hiç ölçülmüyordu; değerleme sayfasına giden yolun en görünür kapısı."
+    },
+    {
+     "tarih": "2026-11-04",
+     "kim": "Claude",
+     "oncelik": 1,
+     "is": "Hatırlanırlık ikinci okuma (adımızla arama, mobil Direct, yorum temposu, GBP Performans Eylül+Ekim) + çekirdek tur tekrarı. Ertesi gün (05.11) halka turu: BOLGE_ON_AYAR=halka (18 sorgu) — GBP kategori/hizmet değişikliğinden en az 72 saat sonra.",
+     "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu)."
+    }
+   ]
   }
  ]
 }

@@ -249,11 +249,59 @@
    "kim": "Claude"
   },
   {
+   "tarih": "2026-10-08",
+   "tarih_tr": "08.10 Perşembe",
+   "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al.",
+   "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Özgün"
+  },
+  {
+   "tarih": "2026-10-10",
+   "tarih_tr": "10.10 Cumartesi",
+   "is": "GBP bağı değiştiyse 48 saat sonra kontrol: GA4'te medium=gbp oturumu ve GSC'de UTM'li sayfa gösterimi geri geldi mi (python3 hatirlanirlik-uret.py). Özgün'ün Performans ekran görüntüsü geldiyse gbp-performans.jsonl'e işle.",
+   "neden": "Bağ panelde kendiliğinden geri dönebiliyor (18.08'de öyle oldu); değişikliğin tuttuğu ancak seriyle görülür.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-14",
+   "tarih_tr": "14.10 Çarşamba",
+   "is": "Bing Webmaster Tools: Google ile oturum aç, Search Console'dan içe aktar, ana sayfa + /mahalleler + /siteler + /etaplar + 11 mahalle sayfasını gönder. Bing Places kaydına bak (ad alanına dokunma). Search Console'a Instagram mülkünü ekle. Instagram İçgörüler 31.08–20.09 ekran görüntüsü.",
+   "neden": "Bing dizininde 1.178 adresin ~50'si var ve ChatGPT araması Bing'den besleniyor; Instagram 'eryaman emlakçı' organik 4. sırada ama hangi sorguyla tık aldığı bilinmiyor.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Özgün"
+  },
+  {
+   "tarih": "2026-10-20",
+   "tarih_tr": "20.10 Salı",
+   "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
+   "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı; iki ardışık ölçüm aynıysa 'kalıcı kayıp' denir. 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-01",
+   "tarih_tr": "01.11 Pazar",
+   "is": "Ana sayfa hero düğmesi ilk okuma: GA4 degerleme_cta olayında konum=anasayfa_hero (3 haftalık taban), site_ust WhatsApp oranıyla kıyas.",
+   "neden": "Düğme PR #116'ya kadar hiç ölçülmüyordu; değerleme sayfasına giden yolun en görünür kapısı.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
    "tarih": "2026-11-04",
    "tarih_tr": "04.11 Çarşamba",
    "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
    "neden": "07.10 ölçümü tek pencere (07.09–04.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %84,4, tık payı %80,9; yalın site adı sınıfı TO %0,7 (konum 9,9), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
    "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-04",
+   "tarih_tr": "04.11 Çarşamba",
+   "is": "Hatırlanırlık ikinci okuma (adımızla arama, mobil Direct, yorum temposu, GBP Performans Eylül+Ekim) + çekirdek tur tekrarı. Ertesi gün (05.11) halka turu: BOLGE_ON_AYAR=halka (18 sorgu) — GBP kategori/hizmet değişikliğinden en az 72 saat sonra.",
+   "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu).",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
    "kim": "Claude"
   }
  ]

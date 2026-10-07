@@ -517,6 +517,24 @@ if t_ss != t_ci:
          f"{kisa(SS['guncelleme'])} ölçümünün ikinci bağımsız 28 günlük penceresi bu gün dolar.",
          "sorgu-sinifi-to.json guncelleme alanı", "Claude")
 
+# ---------------- defterdeki tarihli işler (07.10) ----------------
+# Kaldıraç defterindeki bir kayıt "takvim": [{"tarih": "2026-10-20", "is": "...",
+# "neden": "...", "kim": "Claude"|"Özgün"}] alanı taşıyorsa satırlar buraya girer.
+# NEDEN: 07.10 planının 20.10 / 04.11 okumaları yalnız "sonraki_olcum" serbest metninde
+# duruyordu; o alan takvime girmediği için 21.09 ve 05.10 okumaları da böyle kaçmıştı
+# (defter: okuma_0710 "İlk okuma (21.09/05.10 yapılmamıştı)"). Yeni tarihli iş için
+# koda dokunmak gerekmesin: deftere "takvim" yaz, üreticiyi koş.
+for k in KD.get("kaldiraclar", []):
+    for t_ in k.get("takvim", []) or []:
+        try:
+            _t = tarih_iso(t_["tarih"])
+        except (KeyError, ValueError):
+            UYARILAR.append(f"Defterde tarihi okunamayan takvim satırı: {k.get('ad', '—')[:60]}")
+            continue
+        ekle(_t, t_.get("is", "—"), t_.get("neden", k.get("ad", "—")),
+             f"kaldirac-defteri.json '{k.get('ad', '—')[:70]}'", t_.get("kim", "Claude"),
+             oncelik=t_.get("oncelik", 2))
+
 # ---------------- sırala, yaz ----------------
 ISLER.sort(key=lambda k: (k["tarih"], k["_oncelik"]))
 for k in ISLER:

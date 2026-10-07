@@ -3,6 +3,7 @@
 // her nokta için ayrı IP GEREKMEZ (Google konumu bildirilen koordinattan okur).
 // Konteyner kanalından çalışır; Özgün'ün ev kanalını (günlük ~370 sınırı) HİÇ kullanmaz.
 // Protokol kuralları geçerli: reCAPTCHA/sorry görülürse ÇÖZMEDEN dur, o ölçüm diske yazılmaz.
+// Ön ayarlı turlar (07.10): BOLGE_ON_AYAR=cekirdek|halka node bolge-tur.mjs --listele  (aşağıda ON_AYARLAR)
 // İki kip:
 //   node bolge-tur.mjs --listele   → taze uule'li 14 URL + ölçüm JS'ini basar (uygulama içi
 //                                    tarayıcıyla elle/gece turu için; playwright GEREKMEZ).
@@ -50,6 +51,47 @@ const SORGULAR = process.env.BOLGE_SORGULAR
   ? process.env.BOLGE_SORGULAR.split('|').map((s) => s.trim()).filter(Boolean)
   : ['eryaman emlakçı', 'emlakçı'];
 
+// 07.10 "şıp diye bulunma" planı (SIP-DIYE-PLAN-07-10.md §5): 20.10 ve 04.11 okumaları
+// her seferinde AYNI sorgu×nokta kümesiyle yapılsın diye ön ayar. Elle env yazınca küme
+// oynuyordu (28.08 turu 10 nokta, 07.10 tabanı 1 nokta — yan yana konamadı).
+//   BOLGE_ON_AYAR=cekirdek → 10 sorgu: çıplak "emlakçı" + "eryaman emlakçı" (kontrol) +
+//                            "emlak ofisi" × merkez/Göksu/Güzelkent, + marka sorgusu (merkez).
+//                            20.10 ve 04.11'de; çıplak "emlakçı" organik kaybı kalıcı mı sorusu.
+//   BOLGE_ON_AYAR=halka    → 18 sorgu: "emlakçı" + "emlak ofisi" × 28.08 tabanının 8 noktası,
+//                            + "eryaman emlakçı" × Sincan/Batıkent. GBP kategori/hizmet
+//                            değişikliğinden EN AZ 72 saat sonra; taban kutu #1 3/8 nokta.
+// Günlük reCAPTCHA duvarı ~41-60 sorgu: iki ön ayar aynı gün koşulmaz.
+// Ön ayar verilince BOLGE_SORGULAR / BOLGE_NOKTALAR yok sayılır.
+const ON_AYARLAR = {
+  cekirdek: {
+    noktalar: ['eryaman', 'goksu', 'guzelkent'],
+    sorgular: ['emlakçı', 'eryaman emlakçı', 'emlak ofisi'],
+    ek: [['eryaman', 'şirin gayrimenkul']],
+  },
+  halka: {
+    noktalar: ['eryaman', 'sehit-osman-avci', 'seker', 'goksu', 'altay', 'yesilova', 'guzelkent', 'etimesgut'],
+    sorgular: ['emlakçı', 'emlak ofisi'],
+    ek: [['sincan', 'eryaman emlakçı'], ['batikent', 'eryaman emlakçı']],
+  },
+};
+const ON_AYAR = process.env.BOLGE_ON_AYAR || null;
+if (ON_AYAR && !ON_AYARLAR[ON_AYAR]) {
+  console.error(`Bilinmeyen BOLGE_ON_AYAR="${ON_AYAR}" — geçerli: ${Object.keys(ON_AYARLAR).join(', ')}`);
+  process.exit(1);
+}
+const noktaBul = (ad) => {
+  const nk = TUM_NOKTALAR.find((n) => n.n === ad);
+  if (!nk) throw new Error('Tanımsız nokta: ' + ad);
+  return nk;
+};
+// Ölçülecek (nokta, sorgu) çiftleri — iki kip de bu listeyi yürür.
+const CIFTLER = ON_AYAR
+  ? [
+      ...ON_AYARLAR[ON_AYAR].noktalar.flatMap((n) => ON_AYARLAR[ON_AYAR].sorgular.map((q) => ({ nk: noktaBul(n), q }))),
+      ...ON_AYARLAR[ON_AYAR].ek.map(([n, q]) => ({ nk: noktaBul(n), q })),
+    ]
+  : NOKTALAR.flatMap((nk) => SORGULAR.map((q) => ({ nk, q })));
+
 function uule(lat, lng) {
   const metin = [
     'role:1', 'producer:12', 'provenance:6',
@@ -66,7 +108,8 @@ if (process.argv.includes('--listele')) {
   console.log('# Bölge turu URL listesi (taze uule — bu listeyi her turda yeniden üret)');
   console.log('# Sıra: navigate → 4 sn bekle → aşağıdaki JS → JSONL satırını ANINDA sonuclar-bolge.jsonl\'e yaz.');
   console.log('# loc alanı beklenen semti göstermiyorsa uule tutmamış demektir: DUR, not düş.\n');
-  for (const nk of NOKTALAR) for (const q of SORGULAR) {
+  if (ON_AYAR) console.log(`# Ön ayar: ${ON_AYAR} — ${CIFTLER.length} sorgu; kayda "onayar":"${ON_AYAR}" alanı eklenir.\n`);
+  for (const { nk, q } of CIFTLER) {
     console.log(`${nk.n} | ${q}`);
     console.log(`https://www.google.com/search?q=${encodeURIComponent(q)}&pws=0&gl=tr&hl=tr&uule=${uule(nk.lat, nk.lng)}`);
   }
@@ -74,6 +117,7 @@ if (process.argv.includes('--listele')) {
   console.log(OLCUM_JS);
   console.log('\n# Kayıt biçimi (JS çıktısındaki tt YAZILMAZ; kanal: "ev"):');
   console.log('{"d":"<bugün>","kanal":"ev","nokta":"<nokta>","lat":N,"lng":N,"q":"<sorgu>",...JS çıktısı}');
+  console.log('# hk[].durum ("Açık"/"Kapalı ⋅ Açılış saati…") ve saat alanı JS çıktısında gelir; silme — mesai içi/dışı kıyası buna bakıyor.');
   console.log('# sira:0 ise aynı URL + "&start=10" ile 2. sayfaya bakılır, kayda s2sira eklenir (0=orada da yok).');
   process.exit(0);
 }
@@ -142,8 +186,8 @@ const page = await ctx.newPage();
 
 let yapilan = 0, engel = false;
 disari:
-for (const nk of NOKTALAR) {
-  for (const q of SORGULAR) {
+for (const { nk, q } of CIFTLER) {
+  {
     if (olculen.has(nk.n + '|' + q)) continue;
     if (yapilan >= MAX) break disari;
     const url = `https://www.google.com/search?q=${encodeURIComponent(q)}&pws=0&gl=tr&hl=tr&uule=${uule(nk.lat, nk.lng)}`;
@@ -175,7 +219,7 @@ for (const nk of NOKTALAR) {
         if (/sorry|unusual|olağan/i.test(r.tt)) { engel = true; break disari; }
       }
     }
-    const kayit = { d: BUGUN, kanal: 'konteyner', nokta: nk.n, lat: nk.lat, lng: nk.lng, q, ...r };
+    const kayit = { d: BUGUN, kanal: 'konteyner', ...(ON_AYAR ? { onayar: ON_AYAR } : {}), nokta: nk.n, lat: nk.lat, lng: nk.lng, q, ...r };
     delete kayit.tt;
     fs.appendFileSync(OUT, JSON.stringify(kayit) + '\n');
     console.log(`${nk.n} | ${q} → organik:${r.sira || 'ilk10 dışı'} harita:${r.hp ? (r.hs || 'kutu var, biz yok') : 'kutu yok'} n:${r.n} loc:"${r.loc}"`);
