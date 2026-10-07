@@ -51,7 +51,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 04.10: "500'den fazla site" sayı kalıbı siteden çıktı (meta, SSS, gövde —
     //        8 statik sayfa); footer da değişti ama o küresel boilerplate, taban
     //        ilerletmez. Uzun statik description'lar ≤155'e çekildi.
-    { url: `${baseUrl}/`, lastModified: g("2026-10-07"), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/`, lastModified: g("2026-10-08"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —

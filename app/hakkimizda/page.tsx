@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { CtaButton } from "@/components/ui/button";
 import { CtaBanner } from "@/components/ui/cta-banner";
 import { TrackedCtaLink } from "@/components/ui/tracked-cta-link";
+import { TrackedLink } from "@/components/ui/tracked-link";
 import {
   BuildingIcon,
   CheckBadgeIcon,
@@ -172,15 +173,17 @@ export default function HakkimizdaPage() {
                     <PhoneIcon className="h-4 w-4" />
                     {siteConfig.phoneDisplay}
                   </TrackedCtaLink>
-                  <a
+                  {/* 08.10: düz <a> idi ve whatsapp_click göndermiyordu — sitedeki
+                      izlenmeyen tek WhatsApp bağıydı (telefon bağları PR #88'de 26/26). */}
+                  <TrackedLink
                     href={siteConfig.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    gaEvent="whatsapp_click" gaParams={{ konum: "hakkimizda" }}
+                    openInNewTab
                     className="inline-flex items-center gap-1.5 text-sm font-semibold text-navy transition-colors hover:text-gold-dark"
                   >
                     <WhatsAppIcon className="h-4 w-4" />
                     WhatsApp
-                  </a>
+                  </TrackedLink>
                   <span className="text-xs text-muted">
                     Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO} ·{" "}
                     <a
