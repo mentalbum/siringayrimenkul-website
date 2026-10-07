@@ -532,3 +532,33 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > TEYİT: ~1-2 hafta sonra API'den bak — eski adresler "Page with redirect"
 > veya "Duplicate, Google chose different canonical" olmalı; SERP'te
 > kucuk-ankara-villalari ve konuta-ozlem için yeni adres öne geçmeli.
+
+> 07.10 (devam) — ESKİ ADRESLERİN TAMAMI GÖNDERİLDİ: 11/11 KABUL, kota dolmadı.
+> Deney taraması eski adres kovasını 6'dan 11'e çıkardı; API ile hepsi denetlendi,
+> ONBİRİ DE "Submitted and indexed" ve son taramaları 28.06–19.07 arası — yani
+> HEPSİ 26.07'deki URL göçünden ÖNCE taranmış. Google 308'i hiç görmedi; sitemap'te
+> yoklar, iç bağlantıları yok, dolayısıyla kendiliğinden dönmelerinin yolu yoktu.
+> Gönderilenler (eski yol → yeni yolun -mahallesi'li karşılığı):
+>   guzelkent/kucuk-ankara-villalari · guzelkent/konuta-ozlem-sitesi
+>   guzelkent/adalar/18668-1 · devlet/ilk-bahar-sitesi · eryaman/eryaman-evleri
+>   goksu/ma1-tower · seyh-samil/adalar/17365-1
+>   sehit-osman-avci/bosphorus-ankara-konutlari · .../kiratli-residence
+>   .../tan-yildizi-sitesi · .../adalar/46643-7
+> ZARAR SIRASI (en kötüler): bosphorus ve tan-yildizi eski #2 iken yeni adres ilk
+> 10'da YOK; kiratli eski #2 + yeni #5 (alan adı başına ~2 slot kuralı yüzünden
+> eski adres doğru sayfanın yerini yiyor).
+> --- PROTOKOL DERSLERİ (sonraki oturumlar bunu kullansın) ---
+> 1. ODAK: tek tıklama kutuya düşmüyor (30.08'de de olmuştu). Kalıbı: ÇİFT tıkla →
+>    `document.activeElement.tagName`=='INPUT' doğrula → cmd+a → yaz →
+>    `document.activeElement.value` ile yazının gerçekten düştüğünü doğrula → Enter.
+> 2. DOĞRULAMA: kaybolan yeşil toast'a GÜVENME. Satır kalıcı olarak
+>    "✓ Dizine eklenmesi istendi | TEKRAR İSTEK GÖNDER" durumuna geçiyor. Tek JS ile
+>    oku: istendi-mi + kota-mı + SAYFADAKİ URL. URL kontrolü şart — bir kez yazı
+>    kutuya düşmedi, sayfa önceki URL'de kaldı ve "istendi" damgası ESKİ sayfanındı
+>    (yanlış pozitif yakalandı).
+> 3. "Dizine ekleme isteğiniz gönderilirken sorun oldu" KOTA DEĞİL; aynı oturumda
+>    sonraki URL kabul edildi, hatalı URL 3. denemede geçti. 2-3 kez dene, pes etme.
+> 4. 308 veren adrese istek gönderilebiliyor; GSC reddetmiyor.
+> TEYİT (~2 hafta sonra, 21.10 civarı): API'den bak — eskiler "Page with redirect"
+> veya "Duplicate, Google chose different canonical" olmalı. SERP teyidi: bosphorus,
+> tan-yildizi, kiratli sorgularında yeni adres öne geçmeli.
