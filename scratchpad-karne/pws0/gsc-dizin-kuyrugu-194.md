@@ -562,3 +562,16 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > TEYİT (~2 hafta sonra, 21.10 civarı): API'den bak — eskiler "Page with redirect"
 > veya "Duplicate, Google chose different canonical" olmalı. SERP teyidi: bosphorus,
 > tan-yildizi, kiratli sorgularında yeni adres öne geçmeli.
+
+> 07.10 (kapanış) — KOTA TAVANI: 11 istek geçti, **12.'de "Kota Aşıldı"**.
+> 04.10'da da tavan 11'di (12.'de kota) — iki bağımsız günde aynı sayı,
+> artık "~13" değil **11/gün** diye planla.
+> YARINA KALAN ESKİ ADRESLER (tarama bugün 2 tane daha buldu):
+>   1. yavuz-selim/elit-nar-cicegi — EN ZARARLISI: eski #1, yeni #4
+>   2. seyh-samil/duskent-sitesi — eski #2, yeni ilk 10'da YOK
+> DÜĞME TUZAĞI (yeni): sayfa yatay kayınca "DİZİNE EKLENMESİNİ İSTE" düğmesi
+> (1291,373)'ten (940,370)'e kaydı. ref ile tıklama (`computer` + ref) düğmeyi
+> buluyor ama İŞE YARAMIYOR — sessizce hiçbir şey olmuyor; ekran görüntüsünden
+> gerçek koordinatı alıp piksel tıklaması şart. JS ile metinden düğme arama da
+> başarısız (metin "Dizine eklenmesini iste", BÜYÜK HARF DEĞİL — eşleşme
+> büyük/küçük duyarsız olmalı).
