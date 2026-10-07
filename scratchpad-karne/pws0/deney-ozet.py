@@ -18,8 +18,19 @@ for s, r in son.items():
     if k["kol"] != "deney": continue
     y = sinif(r, s)
     cap[(k["taban"], y)] += 1
-    if y == "yanlis" and r.get("u","").startswith("/mahalleler/") and "-mahallesi/" not in r["u"] and r["u"].count("/")>2:
-        eski_adres.append((s, r["u"]))
+    # Eski adres = /mahalleler/<mahalle>/... ama "-mahallesi/" YOK.
+    # SADECE 1. sonuca bakma: alt sıralardaki eski adres de slot yiyor
+    # (07.10: sutek + bizim-sirinkoy böyle kaçmıştı). Eski kayıtlarda
+    # "bizu" yok, o zaman u + ilk3'ten kurtarılabildiği kadarını al.
+    def _eski(yol):
+        return (yol or "").startswith("/mahalleler/") and "-mahallesi/" not in yol and yol.count("/") > 2
+    adaylar = list(r.get("bizu") or ([r["u"]] if r.get("u") else []))
+    for h in r.get("ilk3", []):
+        if h.startswith("siringayrimenkul.com/"):
+            adaylar.append(h[len("siringayrimenkul.com"):])
+    for yol in dict.fromkeys(adaylar):
+        if _eski(yol):
+            eski_adres.append((s, yol, "1." if yol == r.get("u") else "alt"))
 d = sum(v for (t,_),v in cap.items())
 print(f"DENEY KOLU ölçülen: {d} / {sum(1 for x in kuyruk.values() if x['kol']=='deney')}")
 print(f"{'taban':8} {'→dogru':>7} {'→yanlis':>8} {'→disi':>6}")
@@ -32,4 +43,4 @@ if yt: print(f"\nYanlış→doğru düzelme: {yd}/{yt} = %{round(100*yd/yt)}  (G
 if dt: print(f"Dışı→doğru kazanım:  {dd}/{dt} = %{round(100*dd/dt)}")
 if eski_adres:
     print(f"\nESKİ ADRES vakaları ({len(eski_adres)}) — başlık deneyi bunları çözemez:")
-    for s,u in eski_adres: print(f"  {s} → {u}")
+    for s,u,nerede in eski_adres: print(f"  [{nerede:3}] {s} → {u}")

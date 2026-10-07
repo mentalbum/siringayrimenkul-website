@@ -154,3 +154,20 @@ redirect" / "Duplicate" olmalı, SERP'te yeni adres öne geçmeli.
 `deney-ozet.py` eski adres dedektörü yalnızca 1. sıradaki sonuca bakıyor;
 alt sıralardaki eski adresleri kaçırıyor (2 vaka). Tüm `isgal` listesine
 bakmalı.
+
+### DÜZELTME — dedektör onarıldı, sayı 16
+`deney-ozet.py` artık yalnızca 1. sonuca değil TÜM işgal listesine bakıyor
+(`bizu` alanı `ekle-deney-kompakt.py`'ye eklendi; eski kayıtlarda yok, onlarda
+`ilk3`'ten kurtarılıyor). Onarım bir vaka daha yakaladı: `seker/relax-line`
+(#2'de, yeni adres #1 olduğu için gizlenmişti).
+
+**Canlı eski adres: 16** = 14 (dedektör) + 2 (sutek-sitesi #7, bizim-sirinkoy
+adalar #5 — ilk3'ün altındalar, eski kayıtlardan kurtarılamıyor; bundan sonra
+`bizu` ile yakalanacaklar).
+
+YARINKİ GSC KUYRUĞU (zarar sırasına göre):
+  1. yavuz-selim/elit-nar-cicegi    eski #1 / yeni #4   ← en zararlısı
+  2. seyh-samil/duskent-sitesi      eski #2 / yeni YOK
+  3. seker/relax-line               eski #2 / yeni #1   (slot yiyor)
+  4. yavuz-selim/adalar/19508-3     eski #5 / yeni #3
+  5. tunahan/sutek-sitesi           eski #7 / yeni #1   (en zararsızı)

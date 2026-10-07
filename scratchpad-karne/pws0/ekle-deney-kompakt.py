@@ -14,6 +14,7 @@ bas = (biz[0][2] or '')[:25] if biz else None
 rec = {"d": datetime.date.today().isoformat(), "kanal": "deney-0410", "tur": "site",
        "mah": mah, "s": s, "q": q, "sira": sira, "u": u, "bas": bas,
        "ilk3": [x[:80] for x in ham.get('ilk3', [])], "isgal": len(biz),
+       "bizu": [b[1] for b in biz],
        "isgal_sira": [b[0] for b in biz], "n": ham.get('n', 0), "hl": [],
        "s2sira": None, "s2u": None, "not": "deney"}
 yol = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sonuclar-site-emlakci.jsonl')
