@@ -42,12 +42,12 @@ bizim sonuçlarımız; tam yol Chrome'dan gerçek href ile alınır, breadcrumb'
 
 | taban | →doğru | →yanlış | →dışı |
 |---|---|---|---|
-| yanlış (36) | **15** | 17 | 4 |
-| dışı (24) | 1 | 3 | 20 |
+| yanlış (47) | **21** | 20 | 6 |
+| dışı (29) | 3 | 3 | 23 |
 
-**Yanlış→doğru düzelme: 15/36 = %42** (GSC okuması %52; kontrol kolu/doğal taban %22).
+**Yanlış→doğru düzelme: 21/47 = %45** (GSC okuması %52; kontrol kolu/doğal taban %22).
 Yön GSC ile aynı, büyüklük arada — örneklem henüz 23 vaka, tam tarama bitmeden sonuç yazılmaz.
-Dışı→doğru yalnız 1/17 (%6): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
+Dışı→doğru yalnız 3/29 (%10): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
 "zaten sıralayan ama yanlış sayfa" vakasında.
 
 Dönüşenler: mavikent (dışı→doğru), atakent-1-asiyan, atakent-metro, guzel-ankara-evleri
@@ -62,4 +62,13 @@ ve ESKİ başlıklarla sıralıyor (İlk Bahar #1, MA1 Tower #1, Eryaman Evleri 
 sindirimi bekliyor. Analizde "yanlış" sayılmaları deneyin etkisini OLDUĞUNDAN DÜŞÜK gösterir —
 nihai okumada ayrı kova açılmalı.
 
-Kalan: 114 sorgu (Göksu'dan devam, kuyruk index 105+). Araç: `python3 deney-sira.py 4`.
+07.10'da index 105→125 tarandı (+20 ölçüm, yine engelsiz — iki gün üst üste). Göksu deney kolu
+TAMAM, Güzelkent başladı. Göksu'da art arda 6 doğru çıktı (oyak-goksupark, park-inci, paro-life,
+polsan1-ayisigi, utkan, vaditepe) — **polsan1-ayisigi** dikkat çekici: Ağustos'ta "219 gösterim
+eski adreste, dizinsiz" diye kota istisnası bekleyen vakaydı, şimdi doğru sayfayla #2.
+
+ESKİ ADRES kovası 4'e çıktı (+ankolular, ada sayfası eski slugda). AYRICA yeni alt-desen:
+**cagdas-95-sitesi'nde yeni VE eski adres aynı SERP'te** (#2 yeni, #4 eski) — 301 sindirilmemiş,
+iki sürüm birbiriyle yarışıyor. 04-05.09 taramasındaki "eski adres 11+ çift" bulgusuyla aynı aile.
+
+Kalan: 94 sorgu (Güzelkent'ten devam, kuyruk index 125+). Araç: `python3 deney-sira.py 4`.
