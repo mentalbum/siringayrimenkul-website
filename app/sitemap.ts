@@ -47,10 +47,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        description 229→119 karakter, alıcı hitabı kalktı).
     // 20.08: "Ofisimiz" paragrafı kısa/tam cümlelere bölündü — SERP kesitindeki
     //        özne uyumsuzluğu ("yapıyor" + "veriyoruz") giderildi (Özgün bildirimi).
+    // 07.10: SSS'lerdeki "ücret almıyoruz" cümleleri ilk-adım çerçevesine çevrildi (/ ve /ev-degerleme).
     // 04.10: "500'den fazla site" sayı kalıbı siteden çıktı (meta, SSS, gövde —
     //        8 statik sayfa); footer da değişti ama o küresel boilerplate, taban
     //        ilerletmez. Uzun statik description'lar ≤155'e çekildi.
-    { url: `${baseUrl}/`, lastModified: g("2026-10-04"), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/`, lastModified: g("2026-10-07"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
@@ -72,7 +73,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
     // 06.10: meta description 189 → ≤155 (SERP'te görünen metin). Aynı gün: kira/tapu/
     //        komisyon hesaplayıcıları, /sozluk ve /iletisim açıklamaları da ≤155'e çekildi.
-    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/araclar`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },

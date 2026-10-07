@@ -212,9 +212,9 @@ export default function EvDegerlemePage() {
         title="Ev Değerleme Hakkında Sık Sorulan Sorular"
         items={[
           {
-            soru: "Ev değerleme için ücret ödüyor muyum?",
+            soru: "Değerleme görüşmesi nasıl başlıyor?",
             cevap:
-              "Değerleme için ücret almıyoruz. Bu analizi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için satış sürecinin ilk adımı olarak yapıyoruz — fiyatla birlikte yol haritasını da aynı görüşmede netleştiriyoruz.",
+              "Değerlemeyi, evini satmayı ya da kiraya vermeyi düşünen ev sahipleri için sürecin ilk adımı olarak yapıyoruz; fiyatla birlikte satış ya da kiralama yol haritasını da aynı görüşmede konuşuyoruz. Telefon ya da WhatsApp'tan randevu almanız yeterli.",
           },
           {
             soru: "Değerleme nasıl yapılıyor?",

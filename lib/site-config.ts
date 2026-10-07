@@ -54,7 +54,10 @@ export const siteConfig = {
   yandexMapsUrl: "https://yandex.com.tr/maps/org/40827902036/",
   tiktokUrl: "https://www.tiktok.com/@siringayrimenkul",
   instagramUrl: "https://www.instagram.com/eryamansiringayrimenkul/",
-  facebookUrl: "https://www.facebook.com/profile.php?id=61585267540417",
+  // 07.10: profile.php?id=… adresi canlıda 302 ile /eryamanemlakci/ sayfasına gidiyor (curl ile
+  // ölçüldü); sameAs + footer ~1.200 sayfadan yönlendiren adrese oy veriyordu. Kullanıcı adı
+  // yeni sayfanın (31.08'de kapatılan eski sayfa değil) — PR #32'nin kapanış gerekçesi hatalıydı.
+  facebookUrl: "https://www.facebook.com/eryamanemlakci/",
 } as const;
 
 export const mainNav = [
