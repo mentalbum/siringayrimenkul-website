@@ -1026,3 +1026,8 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
 - SONUÇ: GBP sağlığı/kategori sorunu YOK; gösterim düşüşü = anomali + tümsek erimesi + mevsimsel talep. Kategori
   değişikliği (Gayrimenkul Danışmanı → Emlakçı/Emlak Bürosu) ancak "emlak ofisi" ailesi için 6 gös/gün değerinde;
   Özgün'ün kararı, acil değil. 20.10 günlük seri okumasında "eryaman emlakçı" mobil tabanı (6/gün) yeniden bakılır.
+- Yöntem notu (diğer oturumun 07.10 tuzağı): gsc-q'da `page` FİLTRESİ + device/country BOYUTU birlikte toplamı
+  yarıdan fazla düşürebiliyor. Buradaki "ana sayfa emlak*" cihaz tablosu page filtresiyle alındı; jenerik "emlakçı"
+  için filtresiz günlük seriyle (tüm sayfalar, mobil A=25,6/gün) birebir tuttu, yine de cihaz kırılımı için
+  filtresiz seri esas alınır. Diğer oturumun eki-3 sonucu ("düşüş yatay, her TO kovası −%17, tek konum kaybı yalın
+  'emlakçı'") buradaki üç parçayla uyumlu.

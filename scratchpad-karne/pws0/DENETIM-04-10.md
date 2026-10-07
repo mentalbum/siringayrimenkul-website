@@ -125,3 +125,17 @@ GSC'nin kutu gösterimini ana sayfaya atfetme biçimi).
 > Panel listesine: GBP birincil kategori "Gayrimenkul Danışmanı" (ölçümle ilk teyit) — Özgün kategori geçmişine baksın.
 > Eski adresler: deney taramasında 7 eski adres hâlâ sıralıyor, 2'si yeniyi geçiyor (küçük-ankara-villalari,
 > konuta-ozlem) → öneri: eski adreslere GSC isteği (308'i yeniden okutur), damla kuyruğuna yazıldı.
+**07.10 eki-3 — düşüşün anatomisi (GSC, tam veri; 10–23.09 → 24.09–04.10, günlük ort.):**
+- Tüm site, cihaz: masaüstü gös −%23 / tık −%28; mobil gös −%23 / tık −%22; TO ve poz her ikisinde sabit.
+- Site sayfaları, önceki TO kovasına göre: TO=0 sayfalar −%18, TO 0–2% −%17, TO 2%+ −%17 → **yatay düşüş**,
+  "kalitesiz gösterim temizlendi" hipotezi ÇÜRÜDÜ (ilk ölçümdeki TO artışı filtre+cihaz artefaktıydı, aşağıda).
+- Önceki pozisyona göre: poz 1–3 sayfalar −%40 (ana sayfa ağırlıklı), 4–10 −%15, 11+ −%38.
+- Tek somut KONUM kaybı: yalın **"emlakçı"** sorgusunda ana sayfa 42,1 → 10,7 gös/gün, poz 3,9 → 6,5
+  (Ankara geneli sorgu; masaüstünde 16,5→1,5). "eryaman emlakçı" kutu #1 / organik #2 yerinde (SERP 07.10).
+- Görsel arama 35→36 gös/gün (etkisiz), video 0.
+- Sorgu sınıfı: yalın ad −%16, alıcı/kiracı −%15 (tık 7,1→7,8!), emlakçı −%54 (ana sayfa), bilgi −%34.
+Sonuç: eyleme dönüştürülebilir sayfa/sorgu kalıbı yok; düşüş geniş tabanlı (talep ya da Google'ın
+gösterim kesmesi), spam güncellemesiyle aynı gün başladı. 20.10'da yeniden oku; "emlakçı" sorgusu için
+uule SERP ölçümü (ana sayfa organik konumu) istendi.
+**GSC API tuzağı (07.10 ölçümü):** page FİLTRESİ + device/country BOYUTU birlikte veriyi yarıdan fazla
+düşürüyor (31.116 → 13.895 gösterim); cihaz/ülke kırılımı yalnız filtresiz, filtreli analiz page boyutuyla.
