@@ -24,6 +24,13 @@ sonrası listede görünmez, o durumda eski biçim h devreye girer.
 İşgal (1. sayfada bize ait sonuç sayısı) kayıtta yoksa aynı gün için
 isgal-GGAA.json'dan alınır; o da yoksa null = ölçülmedi.
 
+08.10 (ek-4 i): işgal iki bileşenle okunur. Kayıttaki "isgal" yalnız ana alan adını
+(siringayrimenkul.com) sayar ve YENİDEN TANIMLANMAZ (seri kırılmasın). Sahibinden mağazası
+ve sosyal profillerimiz kayıtta ayrı alanda gelir: "isgal_diger" = [[sıra, varlık], …]
+(SERP çıkarıcısı yazar; eski kayıtlarda alan yok = 0 sayılır). Toplam = isgal +
+len(isgal_diger); satırda ve özette iki bileşen ayrı durur. isgal-GGAA.json'dan gelen
+işgal ise o dosyanın tanımı gereği mağaza ve sosyali zaten içerir (isgal_kaynak ayırır).
+
 Girdi : sonuclar-emlakci.jsonl, sonuclar-site-emlakci.jsonl, isgal-*.json (hepsi KOK)
 Çıktı : hedef-sorgular.json — karne-html.py okuyacak. Elle rakam yok, her turda
         yeniden çalıştırılır.
@@ -264,6 +271,15 @@ def isgal_bul(r):
     return None, None
 
 
+def isgal_diger_bul(r):
+    """Kayıttaki isgal_diger listesi ([[sıra, varlık], …]); alan yoksa None, bozuk öğe atlanır."""
+    v = r.get("isgal_diger")
+    if not isinstance(v, list):
+        return None
+    return [[x[0], x[1]] for x in v
+            if isinstance(x, (list, tuple)) and len(x) >= 2 and isinstance(x[0], int) and isinstance(x[1], str)]
+
+
 def isgal_dosyasi_daha_taze(sorgu, tarih):
     """isgal-GGAA.json'da jsonl kaydından SONRAKİ bir işgal/harita ölçümü varsa onu döndür.
     Organik sıra oradan çıkmaz (siralar listesi mağaza/sosyal dahil), o yüzden satırı
@@ -297,6 +313,8 @@ def satir_kur(h):
         if o and isinstance(o.get("harita"), int):
             kutu_var, kutuda = (True, o["harita"]) if o["harita"] else (None, 0)
     isgal, isgal_kaynak = isgal_bul(r)
+    isgal_diger = isgal_diger_bul(r)          # None = kayıtta alan yok (çıkarıcının eski sürümü)
+    isgal_diger_n = len(isgal_diger or [])    # alan yoksa 0
     sira = r.get("sira") or 0
     u = r.get("u")
 
@@ -306,6 +324,9 @@ def satir_kur(h):
         "u": u, "sayfa_turu": sayfa_turu(u), "dogru_sayfa": dogru_sayfa(u, h["beklenen"]),
         "kutu_var": kutu_var, "kutuda": kutuda,
         "isgal": isgal, "isgal_kaynak": isgal_kaynak,
+        # isgal = ana alan adı (ya da isgal dosyası); isgal_diger = mağaza + sosyal profiller
+        "isgal_diger": isgal_diger, "isgal_diger_n": isgal_diger_n,
+        "isgal_toplam": None if isgal is None else isgal + isgal_diger_n,
         "n": r.get("n"),
         "tarih": r["d"], "yas_gun": (BUGUN - datetime.date.fromisoformat(r["d"])).days,
         "kanal": r.get("kanal"), "kaynak": r["_kaynak"], "eslesme": esl_tipi,
@@ -383,7 +404,11 @@ OZET = {
                                   and s["beklenen_sayfa"] != "/"),
     "ilk10_sayfa_belirsiz": say(lambda s: s["sira"] and s["dogru_sayfa"] is None),
     "isgal_olculen": say(lambda s: s["isgal"] is not None),
-    "isgal_toplam": sum(s["isgal"] for s in olc if s["isgal"] is not None),
+    # toplam = ana alan adı + diğer varlıklar (mağaza, sosyal); iki bileşen ayrı da durur
+    "isgal_toplam": sum(s["isgal_toplam"] for s in olc if s["isgal_toplam"] is not None),
+    "isgal_site": sum(s["isgal"] for s in olc if s["isgal"] is not None),
+    "isgal_diger": sum(s["isgal_diger_n"] for s in olc if s["isgal"] is not None),
+    "isgal_diger_olculen": say(lambda s: s["isgal_diger"] is not None),
     "yon": {k: say(lambda s, k=k: s["yon"] == k)
             for k in ("yükseldi", "geriledi", "aynı", "ilk 10'a girdi", "ilk 10'dan çıktı",
                       "dışarıda kaldı")},
@@ -411,6 +436,9 @@ UYARILAR = [
     "eski kayıtlarda h alanından gelir, yeni kayıtlarda bilinemez (null).",
     "'kutuda' 0 = kutu çıktı ama biz yokuz; null = kutu hiç çıkmadı ya da ölçülmedi ('kutu_var' ayırır).",
     "İşgal 31.08 ve 01–02.09 ölçümlerinde var; daha eski kayıtlarda ölçülmedi (null).",
+    "İşgal toplamı = ana alan adımız + diğer varlıklarımız (sahibinden mağazası, sosyal profiller). Diğer "
+    "varlıklar yalnız kaydında isgal_diger alanı olan ölçümlerde sayılır; alan yoksa 0 alınır, yani "
+    "toplam alt sınırdır (özetteki isgal_diger_olculen kaç satırda ölçüldüğünü verir).",
     "Etap ve 'eryaman emlakçı' sorgularında sırayı çoğunlukla ANA SAYFA tutuyor (dogru_sayfa=false): "
     "sıra var, hedef sayfa görünmüyor — ikisi ayrı okunmalı.",
 ]
@@ -459,7 +487,8 @@ for s in SATIRLAR:
         continue
     sira = str(s["sira"]) if s["sira"] else "dışı"
     sayfa = (s["sayfa_turu"] or "—") + ("" if s["dogru_sayfa"] in (True, None) else " ≠ hedef")
-    isg = "—" if s["isgal"] is None else str(s["isgal"])
+    isg = "—" if s["isgal"] is None else (f"{s['isgal']}+{s['isgal_diger_n']}" if s["isgal_diger"] is not None
+                                           else str(s["isgal"]))
     tarih = f"{s['tarih'][8:10]}.{s['tarih'][5:7]} ({s['yas_gun']} gün)"
     if s["onceki"]:
         o = s["onceki"]
@@ -480,6 +509,8 @@ print(f"ÖZET — organik: 1. sırada {o['birinci']} · ilk 3'te {o['ilk3']} · 
       f"ilk 10 dışı {o['disarida']}  (ölçülen {o['olculen']}/{o['hedef_sayisi']})")
 print(f"       harita kutusu: kutudayız {o['kutuda']} (1. sırada {o['kutuda_birinci']}) · "
       f"kutu var biz yokuz {o['kutu_var_biz_yok']} · kutu hiç yok {o['kutu_yok']} · bilinmiyor {o['kutu_bilinmiyor']}")
+print(f"       işgal toplamı {o['isgal_toplam']} = ana alan adı {o['isgal_site']} + diğer varlıklar {o['isgal_diger']} "
+      f"(diğer varlık {o['isgal_diger_olculen']}/{o['isgal_olculen']} satırda ölçüldü; ölçülmeyen 0 sayılır)")
 print(f"       ilk 10'daki sırayı doğru sayfa tutuyor: {o['ilk10_dogru_sayfa']} · ana sayfa temsil ediyor: "
       f"{o['ilk10_ana_sayfa_temsil']} · sayfa belirsiz (kırıntı): {o['ilk10_sayfa_belirsiz']}")
 print(f"       yön: " + " · ".join(f"{k} {v}" for k, v in o["yon"].items()) +

@@ -19,6 +19,14 @@ KOK = os.path.dirname(os.path.abspath(__file__))
 ICERIK = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "content", "siteler")  # 07.10: sabit ana-checkout yolu worktree'de bayat envanter okuyordu
 BUGUN = datetime.date.today().isoformat()
 YM = {"ata-mahallesi", "susuz-mahallesi", "cumhuriyet-mahallesi"}
+# Karne başlığının ve yönetici özetinin taban aldığı 11 mahalle turu — karne-html.py ve
+# yonetici-ozeti-uret.py TURLAR ile birebir tutulur.
+TURLAR = [
+    "tur-tunahan-2708.json", "tur-altay-2708.json", "tur-devlet-2708.json",
+    "tur-eryaman-2708.json", "tur-goksu-2808.json", "tur-guzelkent-2808.json",
+    "tur-sehit-osman-avci-2908.json", "tur-seker-2908.json", "tur-yesilova-2908.json",
+    "tur-yavuz-selim-2908.json", "tur-seyh-samil-2908.json",
+]
 
 
 def kayitlar(dosya):
@@ -37,21 +45,52 @@ def denetle():
     kuyruk = {r["s"] for r in json.load(open(os.path.join(KOK, "kuyruk-site-emlakci.json")))}
     bulgular = []
 
-    def ekle(ad, adet, aciklama, ornek=None, agir=False):
+    def ekle(ad, adet, aciklama, ornek=None, agir=False, bilgi=False):
         bulgular.append({"ad": ad, "adet": adet, "aciklama": aciklama,
-                         "ornek": ornek, "agir": agir, "temiz": adet == 0})
+                         "ornek": ornek, "agir": agir, "temiz": adet == 0, "bilgi": bilgi})
 
     # 1) Hayalet anahtar: sayfa artık yok
-    sayfa_anahtarlari = {r["s"] for r in ham if r.get("s") and r["s"].count("/") == 1}
-    hayalet = sorted(s for s in sayfa_anahtarlari
-                     if s.split("/")[0] not in YM
-                     and not os.path.exists(f"{ICERIK}/{s}.json"))
-    ekle("Karşılığı olmayan sayfa kaydı (tüm tarihçe)", len(hayalet),
-         "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda "
-         "404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar. NOT: karnenin "
-         "teşhis bölümünde geçen daha küçük sayı yalnız O TURUN görünmez listesinden "
-         "çıkarılanları sayar; burası tarihçenin tamamı.",
-         hayalet[:4], agir=True)
+    # 08.10 (ek-4 f): eskiden TÜM tarihçe sayılıyordu. 21 kaydın 21'i de kuyruk dışıydı
+    # (hiçbir rakama girmiyordu) ama "ağır bulgu 1" kalıcı kalıyordu. Ağır olan, RAKAMA
+    # GİREN hayalettir: ölçüm kuyruğunda ya da karne başlığının taban aldığı tur
+    # dosyalarında durup sitede dosyası olmayan kayıt (08.10'da 2 taneydi, ikisi de tur
+    # dosyasında: 4-devlet-mahallesi-sitesi ve guzelkent/kurtulus-sitesi; aynı gün çıkarıldı).
+    # Tarihçede kalan eskiler ayrı bir bilgi satırıdır.
+    def sayfa_mi(s):
+        return bool(s) and s.count("/") == 1 and s.split("/")[0] not in YM
+
+    def dosyasi_var(s):
+        return os.path.exists(f"{ICERIK}/{s}.json")
+
+    tur_s, tur_okunamayan = set(), []
+    for f in TURLAR:
+        try:
+            tur_s |= {k["s"] for k in json.load(open(os.path.join(KOK, f), encoding="utf-8"))}
+        except (OSError, json.JSONDecodeError, KeyError, TypeError):
+            tur_okunamayan.append(f)
+    tur_site = {s for s in tur_s if sayfa_mi(s)}
+    kuyruk_site = {s for s in kuyruk if sayfa_mi(s)}
+    aktif = kuyruk_site | tur_site
+    hayalet = sorted(s for s in aktif if not dosyasi_var(s))
+    ekle("Karşılığı olmayan sayfa kaydı (kuyruk ve tur dosyaları)", len(hayalet),
+         "Ölçüm kuyruğunda ya da mahalle tur dosyalarında duran ama sitede dosyası olmayan "
+         "kayıt. Bunlar karnenin rakamlarına girer, canlıda 404 verir ve 'dizin dışı' "
+         "sanılıp kota harcanmasına yol açar.",
+         [f"{s} ({'kuyruk' if s in kuyruk_site else 'tur dosyası'})" for s in hayalet[:4]], agir=True)
+    tarihce = sorted(s for s in {r["s"] for r in ham if sayfa_mi(r.get("s"))} - aktif
+                     if not dosyasi_var(s))
+    ekle("Tarihçede kalan eski sayfa kaydı (bilgi)", len(tarihce),
+         "Ölçüm tarihçesinde duran, sitede dosyası olmayan ve artık ne kuyrukta ne tur "
+         "dosyalarında bulunan kayıt. Hiçbir karne rakamına girmez; yalnız bilgi.",
+         tarihce[:4], bilgi=True)
+    # Kuyruk ile tur dosyaları aynı tabanı vermeli: karne başlığı tur dosyalarından,
+    # 'doğru sayfa' bölümü kuyruktan sayar (08.10'a kadar 504'e 509 çıkıyordu).
+    taban_farki = sorted(kuyruk_site ^ tur_site)
+    ekle("Kuyruk ile tur dosyaları arasında fark", len(taban_farki) + len(tur_okunamayan),
+         "Ölçüm kuyruğunda olup hiçbir mahalle tur dosyasında olmayan (ya da tersi) sayfa. "
+         "Fark varsa karnenin iki tepe rakamı ayrı toplamdan hesaplanır.",
+         [f"{s} ({'yalnız kuyrukta' if s in kuyruk_site else 'yalnız tur dosyasında'})"
+          for s in taban_farki[:4]] + [f"{f} okunamadı" for f in tur_okunamayan[:2]])
 
     # 2) Gelecek tarihli ya da imkânsız kayıt
     bozuk_tarih = [r for r in ham if not r.get("d") or r["d"] > BUGUN or r["d"] < "2026-01-01"]
@@ -153,8 +192,8 @@ def denetle():
     ekle("Adresi okunamayan ölçüm (tüm tarihçe)", len(kirinti),
          "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik "
          "ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı "
-         "hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, "
-         "bu yüzden daha küçüktür.",
+         "hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel kuyruğu kapsar, "
+         "bu yüzden daha küçük olabilir.",
          [f"{r['s']} ({r['d']})" for r in kirinti[:4]])
 
     # 6c) KARNE METNİNDE ÇIPLAK RAKAM. karne-html.py'nin kendi docstring'i
@@ -180,12 +219,26 @@ def denetle():
             metin = _re2.sub(r"\{[^}]*\}", "", satir)
             # style="margin:10px 0 0" gibi CSS değerleri karne metni değil
             metin = _re2.sub(r'style="[^"]*"', "", metin)
+            # 08.10 (ek-4 f): veri rakamı OLMAYAN kalıplar ayıklanır. O gün 17 uyarının 17'si
+            # yanlış alarmdı: tarih (27.08), etiket (İlk 10, Organik 1, pws=0), madde numarası
+            # ((1)) ve BULGULAR'daki özel adlar (Umut 19 Emlak, Uyum 90). Eşik değerleri
+            # ("7 günden eski", "Konumu 5 ve üstü") AYIKLANMAZ: metne elle yazılmış sayıdır,
+            # koddaki eşik değişirse sessizce yanlışa düşer.
+            metin = _re2.sub(r"(?<![\w.,])\d{1,2}\.\d{2}(?![\d.])", "", metin)   # tarih GG.AA
+            metin = _re2.sub(r"\b[İi]lk \d+", "", metin)                           # "İlk 10", "ilk 3"
+            metin = _re2.sub(r"\bOrganik \d+", "", metin)                          # "Organik 1"
+            metin = _re2.sub(r"\bpws=\d", "", metin)
+            metin = _re2.sub(r"\(\d\)", "", metin)                                 # (1), (2) madde numarası
+            if icinde_bulgular:
+                # özel ad: büyük harfle başlayan sözcük + sayı, ardından büyük harf ya da ad listesi imi
+                metin = _re2.sub(r"[A-ZÇĞİÖŞÜ][^\s,()\"]* \d+(?= [A-ZÇĞİÖŞÜ]|[,).\"])", "", metin)
             if _re2.search(r"(?<![\w#-])\d{1,4}(?:\.\d{3})*(?![\w%.-])", metin):
                 ciplak.append(f"satır {no}: {satir.strip()[:70]}")
     ekle("Karne metninde elle yazılmış rakam", len(ciplak),
          "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor "
          "ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam "
-         "31.08'de tam olarak böyle oluşmuştu.",
+         "31.08'de tam olarak böyle oluşmuştu. Tarihler, 'İlk 10' gibi etiketler, madde "
+         "numaraları ve özel adlar sayılmaz; kalanlar elle yazılmış sayı ya da eşiktir.",
          ciplak[:4])
 
     # 7) GÜRÜLTÜ TABANI — bir sıra değişimi ne zaman anlamlı?

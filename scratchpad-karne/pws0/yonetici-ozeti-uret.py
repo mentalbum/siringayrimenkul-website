@@ -6,13 +6,15 @@ Karne 14 bölüm oldu; Özgün'ün ilk 10 saniyede görmesi gereken altı rakam 
 JSON'da toplanır. Hiçbir rakam elle yazılmaz: her biri bir üreticinin
 JSON'undan ya da doğrudan ölçüm dosyasından okunur, kaynağı yanına yazılır.
 
-  1. 504 site sorgusunda ilk 3 payı   ← sonuclar-site-emlakci.jsonl + tur-*.json
+  1. site sorgularında ilk 3 payı     ← sonuclar-site-emlakci.jsonl + tur-*.json
                                         (karne başlık kartıyla AYNI hesap, aşağıda neden)
   2. ilk 3'te doğru sayfa payı        ← dogru-sayfa.json
   3. GSC 28g Eryaman tıkı             ← sonuc-ozeti.json  (ayrim.eryaman.simdi.tik)
-  4. GA4 28g temas (tel+WhatsApp+form)← tik-sonrasi.json  (temas)
+  4. GA4 28g temas eden ZİYARET       ← tik-sonrasi.json  (temas.temas_oturum; tık sayıları
+                                        açıklamada. 08.10'a kadar kart tıkı sayıyordu.)
   5. hedef sorgularda kutuda olduğumuz sayı ← hedef-sorgular.json (ozet.kutuda)
-  6. damla kuyruğunda kalan           ← DIZIN-DAMLASI-31-08.md ("- [ ] url" satırları)
+  6. dizin kuyruğu: Google'da olmayan ← DIZIN-DAMLASI-31-08.md (açık "- [ ] https://…" satırları,
+                                        türü sözleşme S1 ile: dizin dışı / yeniden tarama / eski adres)
 
 Her rakam için: değer, bir cümlelik "ne demek", kaynak, 7 günlük fark.
 Fark karne-gecmis-ozet.json'dan OKUNUR; o dosyanın tek sahibi
@@ -25,8 +27,9 @@ Ayrıca:
   "bu hafta ne yapıldı"    ← PROTOKOL-gece.md'nin son 7 gündeki bölüm başlıkları
                              (betikle ayıklanır; gün başına bir madde, en yeni 3 gün)
   "bu hafta ne bekleniyor" ← beklenen düşüşler (sonuc-ozeti + sayfa-turu-verimi),
-                             07.09 (eryaman-emlakci.json title_donuk),
                              14.09 (kaldirac-defteri.json sitemap kaydı: 31.08 + 2 hafta)
+                             (08.10: "07.09 başlık dondurması biter, ilk iş ana sayfa snippet'i"
+                             maddesi kaldırıldı — yanlış alarmdı, gerekçe aşağıda.)
 
 Çalıştırma (KARNE_SCRATCH gerekmez, hepsi bu klasörden okunur):
   python3 yonetici-ozeti-uret.py  → yonetici-ozeti.json
@@ -34,10 +37,14 @@ Ayrıca:
 Sıra: karne-html.py'den ÖNCE, diğer üreticilerden ve anlik-goruntu-uret.py'den
 SONRA koşar (onların JSON'unu okur). Hesaplanamayan rakam None kalır ve gosterim "ölçülmedi" olur; uydurulmaz.
 """
-import json, re, os, datetime, collections
+import json, math, re, os, sys, datetime, collections
 
 KOK = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, KOK)
+from tranahtar import anahtar  # noqa: E402 — Türkçe İ/ı: "DİZİN DIŞI" ile "dizin dışı" aynı sayılsın
 BUGUN = datetime.date.today()
+AY_AD = ["Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran", "Temmuz", "Ağustos", "Eylül", "Ekim",
+         "Kasım", "Aralık"]
 
 
 def yol(ad):
@@ -77,10 +84,13 @@ UYARILAR = []
 # ---------------------------------------------------------------------------
 # Karnenin başlık kartı bu rakamı üretici JSON'undan değil, 11 mahalle turunun
 # kuyruk dosyalarından hesaplıyor (karne-html.py: OLCULEN / TOPLAM_N / TOPLAM_I3).
-# dogru-sayfa.json ise kuyruk-site-emlakci.json'u taban alır ve toplamı 505 verir.
-# Tepe rakam karne başlığıyla AYNI olmalı — aynı sayfada "504" ve "505" birlikte
+# dogru-sayfa.json ise kuyruk-site-emlakci.json'u taban alır.
+# Tepe rakam karne başlığıyla AYNI olmalı — aynı sayfada iki ayrı toplam birlikte
 # görünürse okuyucu hangisine inanacağını bilemez. O yüzden hesap burada karnenin
 # yöntemiyle tekrarlanır; liste karne-html.py TURLAR ile birebir tutulur.
+# 08.10: tur dosyaları kuyrukla hizalandı (sitede dosyası olmayan 2 kayıt çıkarıldı,
+# kuyrukta olup hiçbir tur dosyasında olmayan 7 kayıt eklendi; 504 → 509). İki taban
+# yeniden ayrışırsa 2. rakamdaki uyarı bunu söyler: tur dosyası ya da kuyruk güncellenmeli.
 TURLAR = [
     "tur-tunahan-2708.json", "tur-altay-2708.json", "tur-devlet-2708.json",
     "tur-eryaman-2708.json", "tur-goksu-2808.json", "tur-guzelkent-2808.json",
@@ -109,12 +119,39 @@ def ilk3_payi():
 # ---------------------------------------------------------------------------
 # 6. Damla kuyruğu
 # ---------------------------------------------------------------------------
+# ORTAK SÖZLEŞME S1 (08.10) — karne-html.py, is-takvimi-uret.py ve anlik-goruntu-uret.py
+# AYNI kuralı uygular; biri değişirse dördü birden değişir. Açık "- [ ] https://…" satırı:
+#   adres eski şemadaysa (/mahalleler/<slug>… ve <slug> "-mahallesi" ile bitmiyor) → eski_adres
+#   değilse "←" sonrası notta "dizin dışı" geçiyorsa                               → dizin_disi
+#   değilse                                                                         → yeniden_tarama
+# https içermeyen "- [ ]" satırı sayım dışıdır. NEDEN: 08.10'a kadar her açık satır
+# "Google'da yok" sayılıyordu; o gün açık 4 satırın 2'si dizindeydi (yeniden tarama
+# bekliyordu), 2'si eski adresti, API'ye göre dizin dışı sayfa sıfırdı.
+_DAMLA_ACIK = re.compile(r"^- \[ \] (https://\S+)(.*)$")
+_DAMLA_ESKI = re.compile(r"^https://[^/]+/mahalleler/([^/?#]+)")
+
+
+def damla_satir_turu(satir):
+    m = _DAMLA_ACIK.match(satir)
+    if not m:
+        return None
+    e = _DAMLA_ESKI.match(m.group(1))
+    if e and not e.group(1).endswith("-mahallesi"):
+        return "eski_adres"
+    kalan = m.group(2)
+    notu = kalan.split("←", 1)[1] if "←" in kalan else ""
+    return "dizin_disi" if anahtar("dizin dışı") in anahtar(notu) else "yeniden_tarama"
+
+
 def damla_sayimi():
     metin = open(yol("DIZIN-DAMLASI-31-08.md"), encoding="utf-8").read()
-    # karne-html.py de aynı deseni okuyor: "- [ ] https://…" açık, "- [x] …" bitmiş
-    acik = len(re.findall(r"^- \[ \] https://\S+", metin, re.M))
+    tur = {"dizin_disi": 0, "yeniden_tarama": 0, "eski_adres": 0}
+    for L in metin.splitlines():
+        t = damla_satir_turu(L)
+        if t:
+            tur[t] += 1
     bitmis = len(re.findall(r"^- \[x\] https://\S+", metin, re.M))
-    return acik, bitmis
+    return tur, bitmis
 
 
 # ---------------------------------------------------------------------------
@@ -125,21 +162,40 @@ def damla_sayimi():
 # koşan ötekinin çıktısını siliyordu. Tek sahip artık anlık üretici; burada
 # yalnız eşleme var: tepe rakam → serideki metrik(ler). Serinin "onceki"si tam
 # D-7, yoksa en çok 3 gün geriye en yakın nokta (7-10 gün) — "yedi günlük fark"
-# adına uygun. Temas serisi telefon + WhatsApp'tan kurulur; form
-# (contact_form_submit) seride yok, fark ona kapalıdır ve JSON'da yazılır.
+# adına uygun.
+# 08.10: temas kartı tık yerine temas eden ZİYARETİ sayar (aynı ziyaretçi tek ziyarette
+# üç kez basabiliyor: 28 günde 21 tık 15 ziyaretten geldi). Seri temas_oturum_28
+# (anlik-goruntu-uret.py ga4-temas.mjs ile geri doldurur). tik-sonrasi.json eski sürümse
+# (temas_oturum yok) kart ve fark eski tık serisine döner, uyarı basılır.
+# Dizin kuyruğu kartı yalnız "dizin dışı" türündeki satırları sayar; serisi damla_dizin_disi.
 GECMIS_DOSYA = "karne-gecmis-ozet.json"
 FARK_KAYNAK = {
     "ilk3_pay": ["ilk3_pay"],
     "dogru_sayfa_pay": ["dogru_sayfa_pay"],
     "gsc_eryaman_tik": ["eryaman_tik_28"],
-    "ga4_temas": ["phone_click_28", "whatsapp_click_28"],
+    "ga4_temas": ["temas_oturum_28"],
     "hedef_kutuda": ["hedef_kutuda"],
-    "damla_kalan": ["damla_acik"],
+    "damla_kalan": ["damla_dizin_disi"],
 }
+FARK_KAYNAK_TIK = ["phone_click_28", "whatsapp_click_28"]   # eski tik-sonrasi.json için yedek
 FARK_NOTU = {
-    "ga4_temas": "form hariç (seride telefon + WhatsApp var, contact_form_submit yok); "
-                 "PR #88 (02.09) telefon bağı izlemesini genişletti, taban değişti — ihtiyatla oku",
+    "ga4_temas": "telefon ya da WhatsApp düğmesine basan ziyaret (yalnız canlı alan adı); form gönderimi ayrı sayılır",
+    # 08.10 (eski-1 + ye-1 f): 04-07.10 deney taraması yalnız Eylül'de sorunlu çıkan sorguları
+    # yeniden ölçtü; doğru sayfa payı o hafta +11 puan "iyi" basacaktı. Not yalnız seri
+    # "seçici yeniden ölçüm" bayrağını kaldırdığında basılır ve rakamları seriden alır
+    # (kaç sorgu, kaçı önceden doğruydu, önceki ölçüm ne zamandı) — sabit tarih/rakam yazılmaz,
+    # pencere geçince not kendiliğinden düşer.
+    "dogru_sayfa_pay": "fark o günden beri birikmiş sindirim ve ölçüm tazelemesidir, bu haftanın kazancı değil",
 }
+FARK_NOTU_KOSULU = {"dogru_sayfa_pay": "secici_yeniden_olcum"}   # yalnız bu rejim nedeni işaretliyse
+NEDEN_KISA = {
+    "bolge_turu": "önceki nokta 27.08 öncesi turdan",
+    "kanal_etiketi": "önceki nokta kanal etiketi taşımayan ölçümlerden",
+    "secici_yeniden_olcum": "yalnız bir kesim yeniden ölçüldü, fark tek yönlü",
+    "tanim_degisti": "sayım tanımı değişti",
+}
+GURULTU_Z = 2.0                          # anlik-goruntu-uret.py ile AYNI eşik
+PR88_TARIH = datetime.date(2026, 9, 2)   # telefon bağı izlemesi genişledi; öncesini içeren pencere eksik sayar
 
 
 def gecmis_oku():
@@ -148,6 +204,27 @@ def gecmis_oku():
     except (FileNotFoundError, json.JSONDecodeError):
         return None
     return g if isinstance(g.get("metrikler"), dict) else None
+
+
+def gurultu_birlestir(parcalar):
+    """Temas farkı gürültüden ayrılıyor mu? — anlik-goruntu-uret.py'deki kuralın AYNISI.
+
+    7 gün arayla iki 28 günlük pencere 21 günü paylaşır; fark = giren hafta − çıkan hafta.
+    z = (giren − N·p) / √(N·p·(1−p)), N = giren + çıkan, p = giren haftanın oturum payı;
+    |z| < 2 ise fark gürültü bandındadır. Üretici her seriye giren/çıkan sayılarını yazar
+    (metrik.gurultu); birden çok seri toplanıyorsa (telefon + WhatsApp) sayılar toplanıp z
+    burada yeniden hesaplanır. Bir parçada bile yoksa None: sınanamadı."""
+    gs = [p.get("gurultu") for _, p in parcalar]
+    if not gs or any(g is None for g in gs):
+        return None
+    og, oc = gs[0].get("oturum_giren"), gs[0].get("oturum_cikan")
+    if not og or not oc or any((g.get("oturum_giren"), g.get("oturum_cikan")) != (og, oc) for g in gs):
+        return None
+    giren, cikan = sum(g["giren"] for g in gs), sum(g["cikan"] for g in gs)
+    n, p = giren + cikan, og / (og + oc)
+    z = (giren - n * p) / math.sqrt(n * p * (1 - p)) if n else 0.0
+    return {"z": round(z, 2), "giren": giren, "cikan": cikan, "oturum_giren": og, "oturum_cikan": oc,
+            "olcu": gs[0].get("olcu"), "bant": abs(z) < GURULTU_Z}
 
 
 def fark_kur(gecmis, k, birim):
@@ -175,9 +252,56 @@ def fark_kur(gecmis, k, birim):
         p.get("olcum_yontemi_degisti") is None
         and p.get("onceki_bolge_turu_pay") is not None and p.get("son_bolge_turu_pay") is not None
         and abs(p["son_bolge_turu_pay"] - p["onceki_bolge_turu_pay"]) >= 50 for _, p in parcalar)
-    notlar = [FARK_NOTU[k]] if k in FARK_NOTU else []
-    if rejim:
-        notlar.append("ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil")
+    # Neden: üretici rejim_nedeni listesini yazar (bolge_turu / kanal_etiketi /
+    # secici_yeniden_olcum / tanim_degisti). Eski özet JSON'da alan yoksa SERP kuralı varsayılır.
+    nedenler = []
+    for _, p in parcalar:
+        if p.get("olcum_yontemi_degisti"):
+            nedenler += [n for n in (p.get("rejim_nedeni") or []) if n not in nedenler]
+    if rejim and not nedenler:
+        nedenler = ["bolge_turu"]
+    notlar = [FARK_NOTU[k]] if k in FARK_NOTU and k not in FARK_NOTU_KOSULU else []
+    # Temas: gürültü kuralı (yalnız bu kart; sayılar küçük, pencereler 21 gün örtüşüyor)
+    gurultu = None
+    if k == "ga4_temas":
+        if (datetime.date.fromisoformat(onceki_tarih) - datetime.timedelta(days=28)) < PR88_TARIH:
+            notlar.append("kıyas penceresi 02.09 öncesini içeriyor: o tarihe kadar telefon bağlarının bir kısmı "
+                          "izlenmiyordu (PR #88), ihtiyatla oku")
+        if fark:
+            gurultu = gurultu_birlestir(parcalar)
+            if gurultu:
+                if gurultu["bant"]:
+                    yon = "nötr"
+                notlar.append(("gürültü bandında" if gurultu["bant"] else "gürültü bandının dışında") +
+                              f" (z={tr_sayi(gurultu['z'], 2)}; oturum düzeltmeli)")
+            else:
+                notlar.append("gürültü sınaması yapılamadı (haftalık dilim yok ya da kıyas tam 7 gün değil)")
+    for n in nedenler:
+        if n == "secici_yeniden_olcum":
+            sec = next((p["secici_yeniden_olcum"] for _, p in parcalar if p.get("secici_yeniden_olcum")), None)
+            if sec and sec.get("not"):
+                metin = sec["not"]
+                oo = sec.get("onceki_olcum")
+                if oo:
+                    metin += f"; bu sorguların önceki ölçümü {tr_tarih(oo['bas'])}–{tr_tarih(oo['bit'])} arasındaydı"
+                notlar.append(metin)
+        elif n == "tanim_degisti":
+            notlar += [p["tanim_notu"] for _, p in parcalar if p.get("tanim_notu")]
+        elif n == "kanal_etiketi":
+            notlar.append("ölçüm yöntemi değişti: önceki nokta kanal etiketi taşımayan (27.08 öncesi) ölçümlerden")
+        else:
+            notlar.append("ölçüm yöntemi değişti: önceki nokta 27.08 öncesi turdan, sonuç aynı rejimde değil")
+        if FARK_NOTU_KOSULU.get(k) == n:
+            notlar.append(FARK_NOTU[k])
+            # eski-1: üç rakam BİRLİKTE okunur — doğru sayfa payı yükselirken aynı yeniden ölçüm
+            # ilk 3 payını ve ilk 10 dışını da oynattı; yalnız iyi haber basılmaz. Rakamlar seriden.
+            yan = []
+            for m2, ad2 in (("ilk3_pay", "ilk 3 payı"), ("ilk10_disi", "ilk 10 dışı")):
+                q = (gecmis or {}).get("metrikler", {}).get(m2) or {}
+                if q.get("onceki") is not None and q.get("son") is not None and q.get("onceki_tarih") == onceki_tarih:
+                    yan.append(f"{ad2} %{tr_sayi(q['onceki'], 1)} → %{tr_sayi(q['son'], 1)}")
+            if yan:
+                notlar.append("aynı pencerede " + ", ".join(yan))
     return {
         "deger": fark, "onceki": round(onceki, 2), "son": round(son, 2),
         "kiyas_tarihi": onceki_tarih,
@@ -186,6 +310,9 @@ def fark_kur(gecmis, k, birim):
         "birim": "puan" if birim == "%" else birim,
         "yon": "nötr" if rejim else yon,
         "olcum_yontemi_degisti": rejim,
+        "rejim_nedeni": nedenler,
+        "neden_kisa": "; ".join(NEDEN_KISA.get(n, n) for n in nedenler) or None,
+        "gurultu": gurultu,
         "seri": [m for m, _ in parcalar],
         "not": "; ".join(notlar) or None,
     }
@@ -226,11 +353,33 @@ try:
     _DS = json.load(open(yol("dogru-sayfa.json"), encoding="utf-8"))
     _d3, _t3 = _DS["ilk3_dogru"], _DS["ilk3_toplam"]
     _pay = yuzde(_d3, _t3)
-    ekle("dogru_sayfa_pay", "İlk 3 içinde doğru sayfa", _pay, f"%{_pay}",
-         f"İlk 3 sırada olduğumuz {tr_sayi(_t3)} sorgunun {tr_sayi(_d3)} tanesinde arayanın "
-         f"karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da "
-         f"başka bir site sayfamız tutuyor.",
-         "dogru-sayfa.json", {"ilk3_dogru": _d3, "ilk3_toplam": _t3, "guncelleme": _DS.get("guncelleme")},
+    _bel = next((x["n"] for x in _DS.get("ilk3") or [] if x["k"] == "belirsiz"), 0)
+    _ne = (f"İlk 3 sırada olduğumuz {tr_sayi(_t3)} sorgunun {tr_sayi(_d3)} tanesinde arayanın "
+           f"karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da "
+           f"başka bir site sayfamız tutuyor")
+    if _bel:
+        _ne += f" ({tr_sayi(_bel)} sorguda çıkan adres doğrulanamadı)"
+    _ne += "."
+    # 08.10 (ye-1): son tur yalnız önceden sorunlu çıkan sorguları yeniden ölçtüyse karışık
+    # oran üst sınırdır. Hüküm dogru-sayfa.json'un kendi alanlarından verilir (eşikler
+    # anlik-goruntu-uret.py SECICI_MIN / SECICI_ESIK ile aynı: en az 20 sorgu, 25 puan ayrışma).
+    _oy = _DS.get("olcum_yasi") or {}
+    _sy = _DS.get("secilmis_yeniden_olcum") or {}
+    if (_sy.get("yeniden_olculen", 0) >= 20 and _sy.get("kuyruk_toplam") and _sy.get("kova") in _oy
+            and abs(100 * _sy["onceden_dogru"] / _sy["yeniden_olculen"]
+                    - 100 * _sy["kuyruk_onceden_dogru"] / _sy["kuyruk_toplam"]) >= 25):
+        _kv = _oy[_sy["kova"]]
+        _ay = AY_AD[int(_sy["kova"][5:7]) - 1]
+        _ne += (f" Bu oran üst sınırdır: {_ay} ayında yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgudan "
+                f"yalnız {tr_sayi(_sy['onceden_dogru'])} tanesi önceden doğruydu, yani çoğunlukla sorunlu çıkanlar "
+                f"yeniden ölçüldü. O ölçümlerde ilk 3′teki {tr_sayi(_kv['ilk3'])} sıranın "
+                f"{tr_sayi(_kv['ilk3_dogru'])} tanesi doğru (%{yuzde(_kv['ilk3_dogru'], _kv['ilk3'])}); "
+                f"daha eski ölçümlerden kalan {tr_sayi(_d3 - _kv['ilk3_dogru'])} doğru sıra yeniden ölçülmedi. "
+                f"Gerçek oran bu iki rakamın arasındadır.")
+    ekle("dogru_sayfa_pay", "İlk 3 içinde doğru sayfa", _pay, f"%{_pay}", _ne,
+         "dogru-sayfa.json", {"ilk3_dogru": _d3, "ilk3_toplam": _t3, "adresi_dogrulanamayan": _bel,
+                              "olcum_yasi": _oy or None, "secilmis_yeniden_olcum": _sy or None,
+                              "guncelleme": _DS.get("guncelleme")},
          birim="%")
     # 1. rakamın paydası ile bu dosyanın toplamı farklıysa açıkça söyle (505 / 504 vakası)
     if RAKAMLAR[0]["deger"] is not None and _DS.get("toplam") != RAKAMLAR[0]["ayrinti"]["sorgu"]:
@@ -270,13 +419,32 @@ try:
     # form = contact_form_submit (karne 'Tıktan sonra' bölümüyle aynı tanım).
     # form_start temas değil: formu açıp bırakan da sayılır, gönderim ayrı olay.
     _tel, _wa, _form = _t.get("phone_click", 0), _t.get("whatsapp_click", 0), _t.get("contact_form_submit", 0)
-    _top = _tel + _wa + _form
-    ekle("ga4_temas", "Siteden gelen temas", _top, tr_sayi(_top),
-         f"Son {_TS.get('gun', 28)} günde ziyaretçinin bizimle kurduğu temas: {tr_sayi(_tel)} telefon, "
-         f"{tr_sayi(_wa)} WhatsApp, {tr_sayi(_form)} form (GA4; {tr_sayi(_TS['ozet']['oturum'])} oturum içinden).",
-         "tik-sonrasi.json (temas)",
-         {"telefon": _tel, "whatsapp": _wa, "form": _form, "oturum": _TS["ozet"]["oturum"],
-          "guncelleme": _TS.get("guncelleme")}, birim="temas")
+    _tik = _tel + _wa
+    _ziy = _t.get("temas_oturum")
+    if _ziy is not None:
+        # 08.10 (temas-1): kart tıkı değil temas eden ziyareti sayar; tık dökümü açıklamada.
+        ekle("ga4_temas", "Siteden gelen temas (ziyaret)", _ziy, tr_sayi(_ziy),
+             f"{tr_sayi(_ziy)} ziyaret ({tr_sayi(_tik)} tık: {tr_sayi(_tel)} telefon, {tr_sayi(_wa)} WhatsApp). "
+             f"Son {_TS.get('gun', 28)} günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi "
+             f"bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: "
+             f"{tr_sayi(_form)}. (GA4; {tr_sayi(_TS['ozet']['oturum'])} oturum içinden.)",
+             "tik-sonrasi.json (temas.temas_oturum)",
+             {"temas_oturum": _ziy, "tik": _tik, "telefon": _tel, "whatsapp": _wa, "form": _form,
+              "oturum": _TS["ozet"]["oturum"], "guncelleme": _TS.get("guncelleme")}, birim="ziyaret")
+    else:
+        # tik-sonrasi.json eski sürüm: ziyaret sayısı yok. Kart eski tanımıyla (tık + form) basılır,
+        # fark da tık serisinden okunur — iki tanım karıştırılmaz.
+        FARK_KAYNAK["ga4_temas"] = FARK_KAYNAK_TIK
+        FARK_NOTU["ga4_temas"] = "form hariç (seride telefon + WhatsApp tıkı var, form gönderimi yok)"
+        _top = _tik + _form
+        ekle("ga4_temas", "Siteden gelen temas", _top, tr_sayi(_top),
+             f"Son {_TS.get('gun', 28)} günde ziyaretçinin bizimle kurduğu temas: {tr_sayi(_tel)} telefon, "
+             f"{tr_sayi(_wa)} WhatsApp, {tr_sayi(_form)} form (GA4; {tr_sayi(_TS['ozet']['oturum'])} oturum içinden).",
+             "tik-sonrasi.json (temas)",
+             {"telefon": _tel, "whatsapp": _wa, "form": _form, "oturum": _TS["ozet"]["oturum"],
+              "guncelleme": _TS.get("guncelleme")}, birim="temas")
+        UYARILAR.append("tik-sonrasi.json içinde temas eden ziyaret sayısı (temas.temas_oturum) yok: temas kartı "
+                        "ziyareti değil tıkı sayıyor. tik-sonrasi-uret.py, ga4-temas.mjs çıktısıyla yeniden koşmalı.")
 except Exception as e:
     ekle("ga4_temas", "Siteden gelen temas", None, None,
          "tik-sonrasi.json okunamadı (GA4 çekimi yapılmamış olabilir).", "tik-sonrasi.json", birim="temas")
@@ -308,14 +476,28 @@ except Exception as e:
 
 # 6 ------------------------------------------------------------------------
 try:
-    _acik, _bitmis = damla_sayimi()
-    ekle("damla_kalan", "Damla kuyruğunda kalan", _acik, tr_sayi(_acik),
-         f"Dizine ekleme isteği bekleyen sayfa sayısı {tr_sayi(_acik)}; {tr_sayi(_bitmis)} sayfa işaretlendi "
-         f"(istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
-         "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
-         {"bitmis": _bitmis, "toplam": _acik + _bitmis}, birim="sayfa")
+    _dtur, _bitmis = damla_sayimi()
+    _dd, _yt, _ea = _dtur["dizin_disi"], _dtur["yeniden_tarama"], _dtur["eski_adres"]
+    _acik = _dd + _yt + _ea
+    # Kart yalnız Google'da OLMAYAN (dizin dışı doğrulanmış) sayfayı sayar; yeniden tarama
+    # bekleyen ve eski adres satırları ayrı adla açıklamada ve ayrıntıda durur (S1).
+    _ne = (f"Dizin kuyruğunda Google′da olmadığı doğrulanmış {tr_sayi(_dd)} sayfa var."
+           if _dd else "Dizin kuyruğunda Google′da olmadığı doğrulanmış sayfa yok.")
+    _diger = []
+    if _yt:
+        _diger.append(f"{tr_sayi(_yt)} sayfa yeniden tarama bekliyor (Google′da var, eski hâliyle duruyor)")
+    if _ea:
+        _diger.append(f"{tr_sayi(_ea)} satır eski adres (yönlendirmenin Google′a işlenmesi bekleniyor)")
+    if _diger:
+        _ne += " Kuyrukta ayrıca " + ", ".join(_diger) + "."
+    _ne += (f" Bugüne dek {tr_sayi(_bitmis)} satır işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). "
+            f"İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.")
+    ekle("damla_kalan", "Dizin kuyruğu: Google′da olmayan sayfa", _dd, tr_sayi(_dd), _ne,
+         "DIZIN-DAMLASI-31-08.md (açık \"- [ ] https://…\" satırları, türüne göre)",
+         {"dizin_disi": _dd, "yeniden_tarama": _yt, "eski_adres": _ea, "acik_toplam": _acik,
+          "bitmis": _bitmis, "toplam": _acik + _bitmis}, birim="sayfa")
 except Exception as e:
-    ekle("damla_kalan", "Damla kuyruğunda kalan", None, None,
+    ekle("damla_kalan", "Dizin kuyruğu: Google′da olmayan sayfa", None, None,
          "DIZIN-DAMLASI-31-08.md okunamadı.", "DIZIN-DAMLASI-31-08.md", birim="sayfa")
     UYARILAR.append(f"damla_kalan hesaplanamadı: {e}")
 
@@ -341,10 +523,12 @@ else:
     if _eksik:
         UYARILAR.append("7 gün önceki değer seride yok, fark basılmadı: " + ", ".join(_eksik) +
                         f" — seri {GECMIS.get('seri_bas')} tarihinden beri birikiyor.")
-    _rejim = [r["baslik"] for r in RAKAMLAR if r["fark_7g"] and r["fark_7g"].get("olcum_yontemi_degisti")]
+    _rejim = [r for r in RAKAMLAR if r["fark_7g"] and r["fark_7g"].get("olcum_yontemi_degisti")]
     if _rejim:
-        UYARILAR.append("Ölçüm yöntemi değişti, fark iyi/kötü diye okunmaz: " + ", ".join(_rejim) +
-                        " (önceki nokta 27.08 öncesi turdan).")
+        # neden kart başına yazılır: 27.08 öncesi tur, seçici yeniden ölçüm ve sayım tanımı
+        # değişikliği ayrı şeylerdir (08.10'a kadar hepsine "27.08 öncesi turdan" deniyordu)
+        UYARILAR.append("Fark iyi/kötü diye okunmaz: " + "; ".join(
+            f"{r['baslik']} ({r['fark_7g'].get('neden_kisa') or 'ölçüm yöntemi değişti'})" for r in _rejim) + ".")
 
 # ---------------------------------------------------------------------------
 # Bu hafta ne yapıldı — PROTOKOL-gece.md başlıkları
@@ -428,29 +612,12 @@ try:
 except Exception as e:
     UYARILAR.append(f"beklenen düşüş maddesi kurulamadı: {e}")
 
-# (b) 07.09 — başlık/H1 dondurması biter
-try:
-    _EE = json.load(open(yol("eryaman-emlakci.json"), encoding="utf-8"))
-    _td = _EE.get("title_donuk")
-    _don = _EE.get("donemler") or []
-    _to_ilk = _don[0] if _don else None
-    _to_son = _don[-1] if _don else None
-    # tarih elle yazılmaz: title_donuk alanı verir; "08.08 kararı" gibi gerekçe
-    # rakamları da bu metne girmez, onlar kaldıraç defterinde duruyor
-    metin = (f"{tr_tarih(_td)} — Başlık/H1 dondurması biter (başlık şablonu değişikliğinden sonraki "
-             f"bekleme süresi). O gün ilk iş ana sayfanın başlığı ve snippet′i: \"eryaman emlakçı\" sorgusunda organik "
-             f"sıra yerinde, tıklanma oranı düştü")
-    if _to_ilk and _to_son and _to_ilk is not _to_son:
-        metin += (f" (%{tr_sayi(_to_ilk['to'], 1)} → %{tr_sayi(_to_son['to'], 1)}; "
-                  f"{tr_tarih(_to_ilk['bas'])}–{tr_tarih(_to_ilk['bit'])} ile "
-                  f"{tr_tarih(_to_son['bas'])}–{tr_tarih(_to_son['bit'])} dönemleri)")
-    metin += ". O tarihe kadar başlığa dokunulmaz."
-    BEKLENEN.append({"tarih": tr_tarih(_td), "iso": _td, "metin": metin,
-                     "kaynak": "eryaman-emlakci.json (title_donuk, donemler)",
-                     "ayrinti": {"to_ilk": _to_ilk["to"] if _to_ilk else None,
-                                 "to_son": _to_son["to"] if _to_son else None}})
-except Exception as e:
-    UYARILAR.append(f"07.09 maddesi kurulamadı: {e}")
+# (b) 08.10'da KALDIRILDI (ana-1): "07.09 başlık/H1 dondurması biter; o gün ilk iş ana sayfanın
+# başlığı ve snippet′i: 'eryaman emlakçı'da sıra yerinde, tıklanma oranı düştü" maddesi yanlış
+# alarmdı. İki dönem arasında günlük gösterim neredeyse aynı, fark birkaç tıklık küçük sayı
+# farkı (anlamlı değil); organik sıra da "yerinde" değil, 08.08 başlığıyla iyileşti; Google
+# başlığımızı aynen gösteriyor. Ana sayfa başlığına dokunulmuyor; yeniden açma koşulu kaldıraç
+# defterinde. eryaman-emlakci.json'daki title_donuk / donemler alanları duruyor, burada okunmaz.
 
 # (c) 14.09 — sitemap tazelik düzeltmesinin izleme süresi dolar
 # Tarih elle yazılmaz: kaldıraç kaydının 'kaynak' alanındaki gün (31.08) +

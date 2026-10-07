@@ -155,6 +155,11 @@
   "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6kku%C5%9Fa%C4%9F%C4%B1%20Sitesi%20emlak%C3%A7%C4%B1"
  },
  {
+  "q": "Göksu Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/goksu-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6ksu%20Sitesi%20emlak%C3%A7%C4%B1"
+ },
+ {
   "q": "Gördoğu Şen Sitesi emlakçı",
   "s": "guzelkent-mahallesi/gordogu-sen-sitesi",
   "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=G%C3%B6rdo%C4%9Fu%20%C5%9Een%20Sitesi%20emlak%C3%A7%C4%B1"
@@ -228,11 +233,6 @@
   "q": "Küçük Ankara Villaları emlakçı",
   "s": "guzelkent-mahallesi/kucuk-ankara-villalari",
   "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=K%C3%BC%C3%A7%C3%BCk%20Ankara%20Villalar%C4%B1%20emlak%C3%A7%C4%B1"
- },
- {
-  "q": "Kurtuluş Sitesi emlakçı",
-  "s": "guzelkent-mahallesi/kurtulus-sitesi",
-  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=Kurtulu%C5%9F%20Sitesi%20emlak%C3%A7%C4%B1"
  },
  {
   "q": "Kuşburnu Sitesi emlakçı",
@@ -328,6 +328,11 @@
   "q": "Şehit Ferhat Koç Sitesi emlakçı",
   "s": "guzelkent-mahallesi/sehit-ferhat-koc-sitesi",
   "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=%C5%9Eehit%20Ferhat%20Ko%C3%A7%20Sitesi%20emlak%C3%A7%C4%B1"
+ },
+ {
+  "q": "Şelale Sitesi emlakçı",
+  "s": "guzelkent-mahallesi/selale-sitesi",
+  "url": "https://www.google.com/search?pws=0&gl=tr&hl=tr&q=%C5%9Eelale%20Sitesi%20emlak%C3%A7%C4%B1"
  },
  {
   "q": "Şeniz Sitesi emlakçı",

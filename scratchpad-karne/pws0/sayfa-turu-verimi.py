@@ -7,6 +7,12 @@ site sayfaları kadar (663'e 659) ama sayfa başına tıkları on üçte biri.
 
 Yenimahalle (ata/susuz/cumhuriyet) hariç tutulur — 27.08'de siteden kaldırıldı.
 
+08.10 (ek-4 j): "Mahalle sayfaları" satırı yayındaki 11 mahallenin beyaz listesiyle
+tanımlanır. Öncesinde /mahalleler/<tek bölüm> biçimindeki her adres mahalle sayılıyordu:
+kaldırılan üç mahallenin KÖK sayfası (süzgeç yalnız alt sayfaları eliyordu), 26.07 öncesi
+şemadan kalan kökler (/mahalleler/altay — 308 veriyor) ve iki bozuk adres de satıra
+giriyordu (18 adres; yayında 11 sayfa var). Eski şema kökleri artık ayrı satırdır.
+
 Girdi : <scratchpad>/sayfalar28.tsv  (node scripts/gsc-api.mjs sayfalar 28)
         İlk satırı "# pencere" başlığı: bas/bit/gün oradan okunur (pencere.py).
 Çıktı : sayfa-turu-verimi.json — "pencere": {bas, bit, gun} taşır.
@@ -22,8 +28,14 @@ if not S or not os.path.exists(f"{S}/sayfalar28.tsv"):
 # alıyordu; iki dosya farklı günlerde çekilince (31.08 / 02.09) yanlış oluyordu.
 PENCERE = pencere_zorunlu(f"{S}/sayfalar28.tsv")
 
-YM = re.compile(r"/mahalleler/(ata|susuz|cumhuriyet)(-mahallesi)?/")
+# kök sayfa dahil: ".../susuz-mahallesi" (sonda / yok) da kaldırılmış mahalledir
+YM = re.compile(r"/mahalleler/(ata|susuz|cumhuriyet)(-mahallesi)?(/|$|\?|#)")
+# Yayındaki 11 mahalle (27.08 kapsamı; hedef-sorgular-uret.py MAHALLELER ile aynı liste)
+YAYINDA = {"altay-mahallesi", "devlet-mahallesi", "eryaman-mahallesi", "goksu-mahallesi",
+           "guzelkent-mahallesi", "sehit-osman-avci-mahallesi", "seker-mahallesi",
+           "seyh-samil-mahallesi", "tunahan-mahallesi", "yavuz-selim-mahallesi", "yesilova-mahallesi"}
 AD = {"site": "Site sayfaları", "ada": "Ada sayfaları", "mahalle": "Mahalle sayfaları",
+      "eski": "Eski adres (mahalle kökü)",
       "etap": "Etap sayfaları", "blog": "Yazılar", "diğer": "Diğer (ana sayfa, araçlar)"}
 
 
@@ -36,8 +48,14 @@ def tur(u):
         return "blog"
     if re.search(r"/mahalleler/[^/]+/[^/]+/?$", u):
         return "site"
-    if re.search(r"/mahalleler/[^/]+/?$", u):
-        return "mahalle"
+    m = re.search(r"/mahalleler/([^/?#]+)/?(?:[?#].*)?$", u)
+    if m:
+        slug = m.group(1)
+        if slug in YAYINDA:
+            return "mahalle"
+        if f"{slug}-mahallesi" in YAYINDA:
+            return "eski"      # 26.07 öncesi şema kökü; yeni adrese yönlendiriliyor
+        return "diğer"         # bozuk adres (ör. …/tunahan-mahallesimavicam-sitesi) — mahalle sayfası değil
     return "diğer"
 
 
