@@ -195,7 +195,11 @@ NEDEN_KISA = {
     "tanim_degisti": "sayım tanımı değişti",
 }
 GURULTU_Z = 2.0                          # anlik-goruntu-uret.py ile AYNI eşik
-PR88_TARIH = datetime.date(2026, 9, 2)   # telefon bağı izlemesi genişledi; öncesini içeren pencere eksik sayar
+# Seçici yeniden ölçüm eşikleri — anlik-goruntu-uret.py ile AYNI ad ve değer (iki kopya birlikte değişir).
+SECICI_MIN = 20                          # en az bu kadar sorgu yeniden ölçüldüyse hüküm verilir
+SECICI_ESIK = 25                         # "önceden doğru" payı kuyruk genelinden bu kadar puan ayrışırsa seçicidir
+ARALIK_EN_COK = 30                       # "gerçek oran %A ile %B arasında" yalnız aralık bu kadar puandan darsa basılır
+TEL_IZLEME_TARIH = datetime.date(2026, 9, 2)   # telefon bağı izlemesi genişledi; öncesini içeren pencere eksik sayar
 
 
 def gecmis_oku():
@@ -261,12 +265,22 @@ def fark_kur(gecmis, k, birim):
     if rejim and not nedenler:
         nedenler = ["bolge_turu"]
     notlar = [FARK_NOTU[k]] if k in FARK_NOTU and k not in FARK_NOTU_KOSULU else []
+    # 08.10 onarım: seri, SERP metriklerinde 7 gün önceki nokta o gün bayat girdiyle basıldıysa kıyası
+    # aynı dosyadan yeniden hesaplanan değerle yapar (onceki_karnede_basilan = o gün karnede yazan).
+    # Okuyan geçen haftaki karnede başka rakam gördüyse nedenini burada bulur.
+    basilan = None
+    if len(parcalar) == 1 and parcalar[0][1].get("onceki_karnede_basilan") is not None:
+        basilan = parcalar[0][1]["onceki_karnede_basilan"]
+        on = "%" if birim == "%" else ""
+        notlar.append(f"{tr_tarih(onceki_tarih)} karnesinde bu rakam {on}{tr_sayi(basilan, 1)} basılmıştı (o gün ölçüm "
+                      f"dosyasının tamamı okunmamıştı ya da sayım kuralı farklıydı); kıyas, aynı dosyadan bugünkü "
+                      f"kuralla yeniden hesaplanan {on}{tr_sayi(onceki, 1)} ile yapıldı")
     # Temas: gürültü kuralı (yalnız bu kart; sayılar küçük, pencereler 21 gün örtüşüyor)
     gurultu = None
     if k == "ga4_temas":
-        if (datetime.date.fromisoformat(onceki_tarih) - datetime.timedelta(days=28)) < PR88_TARIH:
-            notlar.append("kıyas penceresi 02.09 öncesini içeriyor: o tarihe kadar telefon bağlarının bir kısmı "
-                          "izlenmiyordu (PR #88), ihtiyatla oku")
+        if (datetime.date.fromisoformat(onceki_tarih) - datetime.timedelta(days=28)) < TEL_IZLEME_TARIH:
+            notlar.append(f"kıyas penceresi {gg_aa(TEL_IZLEME_TARIH)} öncesini içeriyor: o tarihe kadar telefon "
+                          f"bağlarının bir kısmı izlenmiyordu, ihtiyatla oku")
         if fark:
             gurultu = gurultu_birlestir(parcalar)
             if gurultu:
@@ -275,7 +289,10 @@ def fark_kur(gecmis, k, birim):
                 notlar.append(("gürültü bandında" if gurultu["bant"] else "gürültü bandının dışında") +
                               f" (z={tr_sayi(gurultu['z'], 2)}; oturum düzeltmeli)")
             else:
-                notlar.append("gürültü sınaması yapılamadı (haftalık dilim yok ya da kıyas tam 7 gün değil)")
+                # sınanmamış küçük sayı farkına iyi/kötü denmez (−3 tık için kırmızı ok yanıltır)
+                yon = "nötr"
+                notlar.append("gürültü sınaması yapılamadı (haftalık dilim yok ya da kıyas tam 7 gün değil); "
+                              "yön basılmadı")
     for n in nedenler:
         if n == "secici_yeniden_olcum":
             sec = next((p["secici_yeniden_olcum"] for _, p in parcalar if p.get("secici_yeniden_olcum")), None)
@@ -313,6 +330,7 @@ def fark_kur(gecmis, k, birim):
         "rejim_nedeni": nedenler,
         "neden_kisa": "; ".join(NEDEN_KISA.get(n, n) for n in nedenler) or None,
         "gurultu": gurultu,
+        "onceki_karnede_basilan": basilan,
         "seri": [m for m, _ in parcalar],
         "not": "; ".join(notlar) or None,
     }
@@ -360,25 +378,58 @@ try:
     if _bel:
         _ne += f" ({tr_sayi(_bel)} sorguda çıkan adres doğrulanamadı)"
     _ne += "."
-    # 08.10 (ye-1): son tur yalnız önceden sorunlu çıkan sorguları yeniden ölçtüyse karışık
-    # oran üst sınırdır. Hüküm dogru-sayfa.json'un kendi alanlarından verilir (eşikler
-    # anlik-goruntu-uret.py SECICI_MIN / SECICI_ESIK ile aynı: en az 20 sorgu, 25 puan ayrışma).
+    # 08.10 (ye-1) + onarım: ölçümler aynı yaşta değilse karışık oran yanlı olabilir. Hüküm ve
+    # YÖNÜ dogru-sayfa.json → yas_kiyasi'ndan okunur (sınır ayından bu yana ölçülenler ile daha
+    # eski ölçümlerin doğru sayfa oranı; eşikler ve yön orada, tek yerde). İlk sürüm yalnız
+    # seçici yeniden ölçümün MUTLAK farkına bakıyordu: çoğunlukla önceden DOĞRU çıkanlar yeniden
+    # ölçüldüğünde de "yalnız N tanesi önceden doğruydu, sorunlu çıkanlar yeniden ölçüldü, üst
+    # sınır" diyordu; ayrıca takvim ayına bağlıydı, yeni ayda tek sorgu ölçülünce uyarı
+    # kalkıyordu. Ters yönde sınır iddiası yapılmaz (yas_ayrisik: yansız cümle). Seçici yeniden
+    # ölçüm cümlesi yalnız aynı kova içinse ve hükümle AYNI yöndeyse eklenir.
     _oy = _DS.get("olcum_yasi") or {}
     _sy = _DS.get("secilmis_yeniden_olcum") or {}
-    if (_sy.get("yeniden_olculen", 0) >= 20 and _sy.get("kuyruk_toplam") and _sy.get("kova") in _oy
-            and abs(100 * _sy["onceden_dogru"] / _sy["yeniden_olculen"]
-                    - 100 * _sy["kuyruk_onceden_dogru"] / _sy["kuyruk_toplam"]) >= 25):
-        _kv = _oy[_sy["kova"]]
-        _ay = AY_AD[int(_sy["kova"][5:7]) - 1]
-        _ne += (f" Bu oran üst sınırdır: {_ay} ayında yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgudan "
-                f"yalnız {tr_sayi(_sy['onceden_dogru'])} tanesi önceden doğruydu, yani çoğunlukla sorunlu çıkanlar "
-                f"yeniden ölçüldü. O ölçümlerde ilk 3′teki {tr_sayi(_kv['ilk3'])} sıranın "
-                f"{tr_sayi(_kv['ilk3_dogru'])} tanesi doğru (%{yuzde(_kv['ilk3_dogru'], _kv['ilk3'])}); "
-                f"daha eski ölçümlerden kalan {tr_sayi(_d3 - _kv['ilk3_dogru'])} doğru sıra yeniden ölçülmedi. "
-                f"Gerçek oran bu iki rakamın arasındadır.")
+    _yk = _DS.get("yas_kiyasi") or {}
+    _hukum = _yk.get("hukum")
+    if _hukum in ("ust_sinir", "yas_ayrisik"):
+        _tz, _es, _kova = _yk["taze"], _yk["eski"], _yk["taze_kova"]
+        _ay = AY_AD[int(_kova[5:7]) - 1]
+        _to, _eo = yuzde(_tz["ilk3_dogru"], _tz["ilk3"]), yuzde(_es["ilk3_dogru"], _es["ilk3"])
+        # taze taraf sınır ayını ve sonrasını kapsar: tek aysa "<Ay> ayında", değilse "<Ay> ayından bu yana"
+        _ne_zaman = f"{_ay} ayından bu yana" if len(_yk.get("taze_aylar") or []) > 1 else f"{_ay} ayında"
+        # seçim yönü: + çoğunlukla sorunlu çıkanlar yeniden ölçüldü, − çoğunlukla doğru çıkanlar
+        _secim = None
+        if (_sy.get("kova") == _kova and _sy.get("yeniden_olculen", 0) >= SECICI_MIN
+                and _sy.get("kuyruk_toplam")):
+            _secim = (100 * _sy["kuyruk_onceden_dogru"] / _sy["kuyruk_toplam"]
+                      - 100 * _sy["onceden_dogru"] / _sy["yeniden_olculen"])
+        _olcum = (f"{_ne_zaman} ölçülen sorgularda ilk 3′teki {tr_sayi(_tz['ilk3'])} sıranın "
+                  f"{tr_sayi(_tz['ilk3_dogru'])} tanesi doğru (%{_to}). Daha eski ölçümlerden kalan "
+                  f"{tr_sayi(_es['ilk3'])} sıranın {tr_sayi(_es['ilk3_dogru'])} tanesi ")
+        if _hukum == "ust_sinir":
+            _ne += (f" Bu oran üst sınırdır, çünkü ölçümler aynı yaşta değil. {_olcum}doğru görünüyor (%{_eo}), "
+                    f"ama bunlar yeniden ölçülmedi.")
+            if _secim is not None and _secim >= SECICI_ESIK:
+                _od = (f"yalnız {tr_sayi(_sy['onceden_dogru'])} tanesi önceden doğruydu, yani çoğunlukla"
+                       if _sy["onceden_dogru"] else "hiçbiri önceden doğru değildi, yani yalnız")
+                _ne += (f" {_ne_zaman} yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgudan {_od} "
+                        f"sorunlu çıkanlar yeniden ölçüldü.")
+            # aralık yalnız bilgi veriyorsa basılır: yalnız birkaç sorunlu sıra yeniden ölçüldüyse taze
+            # oran çok düşük çıkar, "%6 ile %91 arası" okuyana bir şey söylemez
+            if 0 < _pay - _to <= ARALIK_EN_COK:
+                _ne += f" Gerçek oran %{_to} ile %{_pay} arasındadır."
+            else:
+                _ne += " Gerçek oran bundan düşük olabilir."
+        else:
+            _ne += f" Ölçümler aynı yaşta değil: {_olcum}doğru (%{_eo}) ve bunlar yeniden ölçülmedi."
+            if _secim is not None and -_secim >= SECICI_ESIK:
+                _ne += (f" {_ne_zaman} yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgudan "
+                        f"{tr_sayi(_sy['onceden_dogru'])} tanesi önceden de doğruydu, yani çoğunlukla doğru çıkanlar "
+                        f"yeniden ölçüldü; sorunlu çıkanlar yeniden ölçülmedi.")
+            _ne += " Eski ölçümler tazelenince oran iki yöne de değişebilir."
     ekle("dogru_sayfa_pay", "İlk 3 içinde doğru sayfa", _pay, f"%{_pay}", _ne,
          "dogru-sayfa.json", {"ilk3_dogru": _d3, "ilk3_toplam": _t3, "adresi_dogrulanamayan": _bel,
                               "olcum_yasi": _oy or None, "secilmis_yeniden_olcum": _sy or None,
+                              "yas_kiyasi": _yk or None, "yas_hukmu": _hukum,
                               "guncelleme": _DS.get("guncelleme")},
          birim="%")
     # 1. rakamın paydası ile bu dosyanın toplamı farklıysa açıkça söyle (505 / 504 vakası)
@@ -485,7 +536,10 @@ try:
            if _dd else "Dizin kuyruğunda Google′da olmadığı doğrulanmış sayfa yok.")
     _diger = []
     if _yt:
-        _diger.append(f"{tr_sayi(_yt)} sayfa yeniden tarama bekliyor (Google′da var, eski hâliyle duruyor)")
+        # S1'e göre notunda "dizin dışı" geçmeyen HER açık satır (notsuz satır dahil) bu türe düşer;
+        # "Google′da var" kesin hükmü bu yüzden yazılmaz (bugünkü 2 satır API teyitli, yarınki olmayabilir)
+        _diger.append(f"{tr_sayi(_yt)} sayfa yeniden tarama bekliyor (dizin dışı olduğu doğrulanmadı; "
+                      f"Google′ın sayfayı yeniden okuması bekleniyor)")
     if _ea:
         _diger.append(f"{tr_sayi(_ea)} satır eski adres (yönlendirmenin Google′a işlenmesi bekleniyor)")
     if _diger:

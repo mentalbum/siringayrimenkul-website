@@ -13,7 +13,7 @@ bir panel olarak basar. Kural: sağlık denetimi geçmeyen rakama güvenilmez.
 
 Çıktı: veri-sagligi.json (karne-html.py okur).
 """
-import os, json, os, collections, datetime, sys
+import os, json, re, collections, datetime, sys
 
 KOK = os.path.dirname(os.path.abspath(__file__))
 ICERIK = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), "content", "siteler")  # 07.10: sabit ana-checkout yolu worktree'de bayat envanter okuyordu
@@ -27,6 +27,62 @@ TURLAR = [
     "tur-sehit-osman-avci-2908.json", "tur-seker-2908.json", "tur-yesilova-2908.json",
     "tur-yavuz-selim-2908.json", "tur-seyh-samil-2908.json",
 ]
+
+
+# --- Karne metninde elle yazılmış rakam süzgeci (denetim 6c) ---
+# 08.10 (ek-4 f): veri rakamı OLMAYAN kalıplar ayıklanır. O gün 17 uyarının 14'ü yanlış alarmdı:
+# tarih (27.08), etiket (İlk 10, Organik 1, pws=0), madde numarası ((1)) ve BULGULAR'daki özel
+# adlar (Umut 19 Emlak, Uyum 90). Kalan 3'ü eşik değeriydi ("7 günden eski", "Konumu 5 ve üstü");
+# eşikler AYIKLANMAZ: metne elle yazılmış sayıdır, koddaki eşik değişirse sessizce yanlışa düşer.
+# 08.10 onarım: ilk sürümün maskeleri gerçek veri rakamını da yutuyordu ("ilk 388 sorgu",
+# "Organik 12 tık", "Oran 12.50 puan", BULGULAR'da "Devlet 7, Göksu 36." — 31.08'de bulunan
+# 14 rakam tam bu son kalıptaydı). Maskeler daraltıldı:
+#   tarih    : gün 1-31, ay 01-12 ("12.50" tarih değildir)
+#   İlk N    : yalnız etiket değerleri (3, 5, 10, 20), ardından rakam gelmiyorsa
+#   Organik N: tek hane ve ardından "tık" / "gösterim" gelmiyorsa (sıra etiketi)
+#   özel ad  : BULGULAR'da sayıdan sonra büyük harfli sözcük geliyorsa ("Umut 19 Emlak") ya da
+#              ad envanterdeki bir site adının "… <sayı>" başıysa ("Uyum 90"); virgül ve nokta
+#              ad sayılmaz.
+_TARIH_RE = re.compile(r"(?<![\w.,])(?:0?[1-9]|[12]\d|3[01])\.(?:0[1-9]|1[0-2])(?![\d.])")
+_ILK_ETIKET_RE = re.compile(r"\b[İi]lk (?:3|5|10|20)(?!\d)")
+_ORGANIK_ETIKET_RE = re.compile(r"\bOrganik \d(?!\d)(?!\s*(?:tık|gösterim))")
+_PWS_RE = re.compile(r"\bpws=\d")
+_MADDE_NO_RE = re.compile(r"\(\d\)")
+_OZEL_AD_BUYUK_RE = re.compile(r"[A-ZÇĞİÖŞÜ][^\s,()\"]* \d+(?= [A-ZÇĞİÖŞÜ])")
+_CIPLAK_RE = re.compile(r"(?<![\w#-])\d{1,4}(?:\.\d{3})*(?![\w%.-])")
+_AD_BASI_RE = re.compile(r"^(.*[^\W\d_][^\s]* \d+)(?!\d)")   # en az bir sözcük + sayı ile biten en uzun baş
+
+
+def sayili_site_adlari(icerik=None):
+    """Envanterdeki site adlarının sayıyla biten başları: "Uyum 90 Sitesi" → "Uyum 90",
+    "Elit Yaşam Konutları 2" → kendisi. BULGULAR metninde bunlar özel addır, veri rakamı
+    değil. Sayıyla başlayan adlar ("75. Yıl Sitesi") alınmaz. Envanter okunamazsa boş küme."""
+    adlar = set()
+    for dp, _dn, fn in os.walk(icerik or ICERIK):
+        for f in fn:
+            if not f.endswith(".json"):
+                continue
+            try:
+                ad = json.load(open(os.path.join(dp, f), encoding="utf-8")).get("isim") or ""
+            except (OSError, ValueError, AttributeError):
+                continue
+            m = _AD_BASI_RE.match(ad)
+            if m:
+                adlar.add(m.group(1))
+    return adlar
+
+
+def elle_rakam_var(satir, bulgular_icinde=False, site_adlari=()):
+    """karne-html.py'nin bir satırında f-string ifadesi dışında, metnin içinde duran sayı var mı?"""
+    metin = re.sub(r"\{[^}]*\}", "", satir)            # f-string ifadesi
+    metin = re.sub(r'style="[^"]*"', "", metin)        # style="margin:10px 0 0" karne metni değil
+    for desen in (_TARIH_RE, _ILK_ETIKET_RE, _ORGANIK_ETIKET_RE, _PWS_RE, _MADDE_NO_RE):
+        metin = desen.sub("", metin)
+    if bulgular_icinde:
+        for ad in sorted(site_adlari, key=len, reverse=True):
+            metin = re.sub(r"(?<!\w)" + re.escape(ad) + r"(?!\d)", "", metin)
+        metin = _OZEL_AD_BUYUK_RE.sub("", metin)
+    return bool(_CIPLAK_RE.search(metin))
 
 
 def kayitlar(dosya):
@@ -45,6 +101,9 @@ def denetle():
     kuyruk = {r["s"] for r in json.load(open(os.path.join(KOK, "kuyruk-site-emlakci.json")))}
     bulgular = []
 
+    # bilgi=True: bulgu değil, sayım. Hiçbir rakamı etkilemez; okuyucu (karne-html.py) bunu uyarı
+    # listesine KOYMAMALI, nötr satır olarak basmalı. "temiz" yine adet == 0 demektir (anlamı
+    # bozulmasın diye bilgi satırı temiz sayılmaz); ayrım yalnız bu anahtardan yapılır.
     def ekle(ad, adet, aciklama, ornek=None, agir=False, bilgi=False):
         bulgular.append({"ad": ad, "adet": adet, "aciklama": aciklama,
                          "ornek": ornek, "agir": agir, "temiz": adet == 0, "bilgi": bilgi})
@@ -201,10 +260,10 @@ def denetle():
     # dosyalarından üretiliyor" yazıyor. 31.08 denetimi bu iddiayı yalanlayan
     # 14 rakam buldu (zayıf halkalar + BULGULAR sözlüğü) ve hepsi tabloyla
     # çelişiyordu. Bu denetim olmadan aynı çelişki bir sonraki turda geri gelir.
-    import re as _re2
     kh = os.path.join(KOK, "karne-html.py")
     ciplak = []
     if os.path.exists(kh):
+        site_adlari = sayili_site_adlari()
         icinde_bulgular = False
         for no, satir in enumerate(open(kh), 1):
             if satir.startswith("BULGULAR"):
@@ -215,30 +274,15 @@ def denetle():
                 continue
             if satir.lstrip().startswith("#"):
                 continue
-            # f-string ifadesi olmayan, metnin içinde duran sayı
-            metin = _re2.sub(r"\{[^}]*\}", "", satir)
-            # style="margin:10px 0 0" gibi CSS değerleri karne metni değil
-            metin = _re2.sub(r'style="[^"]*"', "", metin)
-            # 08.10 (ek-4 f): veri rakamı OLMAYAN kalıplar ayıklanır. O gün 17 uyarının 17'si
-            # yanlış alarmdı: tarih (27.08), etiket (İlk 10, Organik 1, pws=0), madde numarası
-            # ((1)) ve BULGULAR'daki özel adlar (Umut 19 Emlak, Uyum 90). Eşik değerleri
-            # ("7 günden eski", "Konumu 5 ve üstü") AYIKLANMAZ: metne elle yazılmış sayıdır,
-            # koddaki eşik değişirse sessizce yanlışa düşer.
-            metin = _re2.sub(r"(?<![\w.,])\d{1,2}\.\d{2}(?![\d.])", "", metin)   # tarih GG.AA
-            metin = _re2.sub(r"\b[İi]lk \d+", "", metin)                           # "İlk 10", "ilk 3"
-            metin = _re2.sub(r"\bOrganik \d+", "", metin)                          # "Organik 1"
-            metin = _re2.sub(r"\bpws=\d", "", metin)
-            metin = _re2.sub(r"\(\d\)", "", metin)                                 # (1), (2) madde numarası
-            if icinde_bulgular:
-                # özel ad: büyük harfle başlayan sözcük + sayı, ardından büyük harf ya da ad listesi imi
-                metin = _re2.sub(r"[A-ZÇĞİÖŞÜ][^\s,()\"]* \d+(?= [A-ZÇĞİÖŞÜ]|[,).\"])", "", metin)
-            if _re2.search(r"(?<![\w#-])\d{1,4}(?:\.\d{3})*(?![\w%.-])", metin):
+            # f-string ifadesi olmayan, metnin içinde duran sayı (maskeler: elle_rakam_var)
+            if elle_rakam_var(satir, icinde_bulgular, site_adlari):
                 ciplak.append(f"satır {no}: {satir.strip()[:70]}")
     ekle("Karne metninde elle yazılmış rakam", len(ciplak),
          "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor "
          "ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam "
          "31.08'de tam olarak böyle oluşmuştu. Tarihler, 'İlk 10' gibi etiketler, madde "
-         "numaraları ve özel adlar sayılmaz; kalanlar elle yazılmış sayı ya da eşiktir.",
+         "numaraları ve özel adlar (site ve işletme adındaki sayı) sayılmaz; kalanlar elle "
+         "yazılmış sayı ya da eşiktir.",
          ciplak[:4])
 
     # 7) GÜRÜLTÜ TABANI — bir sıra değişimi ne zaman anlamlı?
@@ -298,7 +342,7 @@ if __name__ == "__main__":
     if gu["oran"] is not None:
         print(f"gürültü tabanı: {cift_yaz(gu)}")
     for b in c["bulgular"]:
-        im = "TEMİZ" if b["temiz"] else ("AĞIR" if b["agir"] else "uyarı")
+        im = "TEMİZ" if b["temiz"] else ("AĞIR" if b["agir"] else ("bilgi" if b.get("bilgi") else "uyarı"))
         print(f"  [{im:5}] {b['adet']:4}  {b['ad']}")
         if b["ornek"] and not b["temiz"]:
             for o in b["ornek"]:

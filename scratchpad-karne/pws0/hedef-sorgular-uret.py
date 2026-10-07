@@ -28,7 +28,8 @@ isgal-GGAA.json'dan alınır; o da yoksa null = ölçülmedi.
 (siringayrimenkul.com) sayar ve YENİDEN TANIMLANMAZ (seri kırılmasın). Sahibinden mağazası
 ve sosyal profillerimiz kayıtta ayrı alanda gelir: "isgal_diger" = [[sıra, varlık], …]
 (SERP çıkarıcısı yazar; eski kayıtlarda alan yok = 0 sayılır). Toplam = isgal +
-len(isgal_diger); satırda ve özette iki bileşen ayrı durur. isgal-GGAA.json'dan gelen
+len(isgal_diger); satırda ve özette iki bileşen ayrı durur (satır: isgal, isgal_diger [liste],
+isgal_diger_n, isgal_toplam; özet: isgal_site, isgal_diger_toplam, isgal_toplam). isgal-GGAA.json'dan gelen
 işgal ise o dosyanın tanımı gereği mağaza ve sosyali zaten içerir (isgal_kaynak ayırır).
 
 Girdi : sonuclar-emlakci.jsonl, sonuclar-site-emlakci.jsonl, isgal-*.json (hepsi KOK)
@@ -407,7 +408,8 @@ OZET = {
     # toplam = ana alan adı + diğer varlıklar (mağaza, sosyal); iki bileşen ayrı da durur
     "isgal_toplam": sum(s["isgal_toplam"] for s in olc if s["isgal_toplam"] is not None),
     "isgal_site": sum(s["isgal"] for s in olc if s["isgal"] is not None),
-    "isgal_diger": sum(s["isgal_diger_n"] for s in olc if s["isgal"] is not None),
+    # ad satırdaki "isgal_diger" (liste) ile karışmasın diye özette "_toplam" ekiyle
+    "isgal_diger_toplam": sum(s["isgal_diger_n"] for s in olc if s["isgal"] is not None),
     "isgal_diger_olculen": say(lambda s: s["isgal_diger"] is not None),
     "yon": {k: say(lambda s, k=k: s["yon"] == k)
             for k in ("yükseldi", "geriledi", "aynı", "ilk 10'a girdi", "ilk 10'dan çıktı",
@@ -509,7 +511,7 @@ print(f"ÖZET — organik: 1. sırada {o['birinci']} · ilk 3'te {o['ilk3']} · 
       f"ilk 10 dışı {o['disarida']}  (ölçülen {o['olculen']}/{o['hedef_sayisi']})")
 print(f"       harita kutusu: kutudayız {o['kutuda']} (1. sırada {o['kutuda_birinci']}) · "
       f"kutu var biz yokuz {o['kutu_var_biz_yok']} · kutu hiç yok {o['kutu_yok']} · bilinmiyor {o['kutu_bilinmiyor']}")
-print(f"       işgal toplamı {o['isgal_toplam']} = ana alan adı {o['isgal_site']} + diğer varlıklar {o['isgal_diger']} "
+print(f"       işgal toplamı {o['isgal_toplam']} = ana alan adı {o['isgal_site']} + diğer varlıklar {o['isgal_diger_toplam']} "
       f"(diğer varlık {o['isgal_diger_olculen']}/{o['isgal_olculen']} satırda ölçüldü; ölçülmeyen 0 sayılır)")
 print(f"       ilk 10'daki sırayı doğru sayfa tutuyor: {o['ilk10_dogru_sayfa']} · ana sayfa temsil ediyor: "
       f"{o['ilk10_ana_sayfa_temsil']} · sayfa belirsiz (kırıntı): {o['ilk10_sayfa_belirsiz']}")
