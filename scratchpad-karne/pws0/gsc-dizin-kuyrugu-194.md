@@ -514,3 +514,21 @@ Cron'lar oturuma bağlı — oturum kapanırsa "devam" ile elden sürdür.
 > 31.08 TEYİDİ: 5 sayfanın API "son tarama" damgası bugün ~17:00'ye düşmeli.
 > SIRADAKİ: sitekonut + platin-konutlari + zirve-loft (API denetimi yarıda kaldı,
 > yeniden bakılacak) + seker/izoser (dizinsiz, doğal tarama beklenir).
+
+> 07.10 — ESKİ ADRESE İSTEK (yeni taktik, paralel oturumun önerisi): eski
+> /mahalleler/guzelkent/<site> yollarına tarama isteği. ÖNCÜL DOĞRULANDI:
+> her ikisi de HTTP 308 → -mahallesi/ yoluna gidiyor, AMA API'de dördü de
+> (eski+yeni) AYRI AYRI "Submitted and indexed"; eskilerin son taraması
+> 30.06 ve 19.07 — yani Google 308'i HİÇ görmemiş, bu yüzden birleştirme
+> olmamış ve eski adresler SERP'te yeniyi geçiyor.
+> SONUÇ: ikisi de KABUL — "Dizine eklenmesi istendi".
+>   - guzelkent/kucuk-ankara-villalari (ilk iki denemede jenerik hata, 3.'de geçti)
+>   - guzelkent/konuta-ozlem-sitesi (ilk denemede geçti)
+> DERS 1: 308 veren adrese istek gönderilebiliyor — GSC reddetmiyor. Eski
+> adres sindirimi için kullanılabilir kanal.
+> DERS 2: "Dizine ekleme isteğiniz gönderilirken sorun oldu" KOTA HATASI
+> DEĞİL; aynı oturumda başka URL kabul edilebiliyor. Jenerik hatada URL'yi
+> yeniden denetleyip tekrar dene (2-3 deneme), kotayı yanlışlıkla kapalı sayma.
+> TEYİT: ~1-2 hafta sonra API'den bak — eski adresler "Page with redirect"
+> veya "Duplicate, Google chose different canonical" olmalı; SERP'te
+> kucuk-ankara-villalari ve konuta-ozlem için yeni adres öne geçmeli.
