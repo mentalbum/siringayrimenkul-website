@@ -178,3 +178,9 @@ dönüyor — Google arayüzü değişmiş. Protokolde "loc beklenen semti
 göstermiyorsa DUR" yazıyor; bu turda uule'nin tuttuğu kutudaki üç Eryaman
 işletmesinden doğrulandı, ama seçici güncellenmeli yoksa sonraki turlar
 boşuna duracak.
+> 07.10 akşam — yalın "emlakçı" SERP ölçümü (diğer oturum, uule Eryaman merkez, pws=0): **organik 28.08 #3 →
+> ilk 10 DIŞI** (2. sayfada da yok), harita kutusu #1 değişmedi → GSC'deki 42→11 gös/gün kaybı doğrulandı ve
+> organik kanala özgü; harita ve organik kanalların bağımsızlığı bir kez daha tuttu. Tek ölçüm — 20.10 tekrarı
+> olmadan "kalıcı" denmez. Sayfa 1'de yalnız 8 organik slot. Araç notu: bolge-tur.mjs loc seçicisi
+> (.dfB0uf/#swml) boş dönüyor; bu oturumda onarılıyor. Kota: tavan 11/gün (iki gün teyit), "Hata! Bir sorun
+> oluştu" URL'ye özgü ve geçici (kota kanıtı yalnız "Kota Aşıldı"). Eski adres 16 canlı vaka, 11'ine istek.
