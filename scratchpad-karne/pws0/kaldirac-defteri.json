@@ -200,16 +200,11 @@
   },
   {
    "tarih": "2026-10-07",
-<<<<<<< HEAD
-   "ad": "'eryaman emlakci' gosterim dususu (24.09'dan beri ~15->~5/gun) — harita kutusu hipotezi CURUTULDU",
-   "durum": "aciklandi",
-=======
-   "ad": "Eylul sonu dususu: yatay (-%17 her TO kovasi, cihazdan bagimsiz, TO/poz sabit); tek konum kaybi yalin 'emlakci' ana sayfa poz 3,9->6,5",
+   "ad": "Eylul sonu dususu: yatay (-%17 her TO kovasi); yalin 'emlakci' ORGANIK KAYBI dogrulandi (28.08 #3 -> 07.10 ilk 10 disi, uule Eryaman), kutu #1 sabit",
    "durum": "acik",
->>>>>>> origin/main
-   "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17).",
+   "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17). | 07.10 SERP (peer, uule, pws=0): 'emlakci' organik ilk 10 disi (28.08: #3), 2. sayfada yok; kutu #1 (Sirin, Ayyildiz, Efor). TEK olcum.",
    "gerekce": "Kalite-temizligi ve harita-kutusu hipotezleri curutuldu; genis tabanli hacim kaybi, spam update ile ayni gun. Eyleme donuk kalip yok.",
-   "sonraki_olcum": "Ozgun: GBP Insights 24.09 oncesi/sonrasi + kategori gecmisi; 20.10 gunluk seri",
+   "sonraki_olcum": "20.10: ayni nokta+sorgu tekrar (kalici kayip ancak o zaman denir); GSC gunluk seri",
    "nerede": "DENETIM-04-10.md 07.10 eki-2",
    "okuma_0710_b": "Cihaz/gün kırılımı (diğer oturum, gsc-q): (1) 15.09 desktop 208 gösterim konum 1,0 tek-gün anomalisi A penceresini şişiriyor; (2) jenerik 'emlakçı' mobilde 12–21.09 tümseği (20–59 gös/gün, kutu) eridi, Ekim Eylül-başı tabanında; (3) site geneli 5 haftada mobil −%36 / desktop −%39, kiralık −%22 / satılık −%36 (mevsim + spam update). 'eryaman emlakçı' mobil ~15→~6 ama konum 1,4 sabit, uule kutu #1; jenerik 'emlakçı' kutusunda da #1. GBP/kategori sorunu yok; 'emlak ofisi' kutusu kategoriye bağlı ama fırsat 6 gös/gün."
   },
