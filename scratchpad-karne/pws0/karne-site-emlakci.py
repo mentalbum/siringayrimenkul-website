@@ -42,8 +42,23 @@ for x in olculen:
     # sira=0 "ilk 10'da yok" demektir (ilk sürümden beri 4-10 kovasına düşüyordu — 23.08 düzeltme)
     (ilk3 if 0 < r["sira"] <= 3 else dort_on if 3 < r["sira"] <= 10 else yok).append((x, r))
 
-basli = [r for r in rows.values() if r.get("bas")]
-ekli = [r for r in basli if "Evinizi Satalım" in r["bas"]]
+def tam_bas(r):
+    """Google'ın gösterdiği başlığın TAMAMI; bilinmiyorsa None.
+    08.10 (karne incelemesi ana-2): 06.09–07.10 arası kayıtlarda 'bas' 25 karaktere kesik yazıldı;
+    "Evinizi Satalım" eki o 25 karaktere hiç sığmaz. 86 kayıtta da başlık '|' işaretinin hemen önünde
+    kesilmiş ("Ulaş Sitesi Emlakçı "). Kesik kayıt paydaya alınmaz (eskiden hepsi "eski başlık"
+    sayılıyordu). Yeni kayıtlar kesilmemiş 'bas_tam' taşır."""
+    if r.get("bas_tam"):
+        return r["bas_tam"]
+    b = r.get("bas") or ""
+    return b if b and len(b) != 25 and not b.rstrip().endswith("Emlakçı") else None
+
+gorunen = [r for r in rows.values() if r.get("bas") or r.get("bas_tam")]
+basli = [r for r in gorunen if tam_bas(r)]
+kesik = len(gorunen) - len(basli)
+ekli = [r for r in basli if "Evinizi Satalım" in tam_bas(r)]
+# Başlık deneyi 2'nin tedavi başlığı ("<Site> Eryaman | Tapu ve Site Bilgileri"): ek yok ama bayat da değil
+bilgi = [r for r in basli if "Tapu ve Site Bilgileri" in tam_bas(r)]
 
 L = []
 L.append(f"# İlk 3'te OLMAYAN site-emlakçı sorguları — {len(olculen)}/{len(kuyruk)} ölçüldü\n")
@@ -61,8 +76,12 @@ if os.path.exists(YAPISAL) and olculen:
              f"kazanılabilir kümede (yapısal-adaş {len(olculen)-len(kaz)} sorgu hariç): "
              f"**%{round(100*kaz_ilk3/len(kaz))}** ({kaz_ilk3}/{len(kaz)})")
 if basli:
-    L.append(f"- SERP'te görünen {len(basli)} sonucumuzun **{len(ekli)}** tanesinde \"Evinizi Satalım, Kiraya Verelim\" eki görünüyor; "
-             f"kalan {len(basli)-len(ekli)} sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi).\n")
+    L.append(f"- Başlığı tam kaydedilmiş {len(basli)} sonucumuzun **{len(ekli)}** tanesinde \"Evinizi Satalım, Kiraya Verelim\" eki görünüyor"
+             + (f", {len(bilgi)} tanesinde Başlık deneyi 2'nin bilgi başlığı (\"… | Tapu ve Site Bilgileri\")" if bilgi else "")
+             + f"; kalan {len(basli)-len(ekli)-len(bilgi)} sonuçta Google BAYAT kopyanın eski başlığını basıyor (site şablonunda ek zaten var, iş tarama sindirimi)."
+             + (f" {kesik} sonuçta başlık kesik kaydedildiği için sayılmadı." if kesik else "") + "\n")
+elif kesik:
+    L.append(f"- Başlık görünürlüğü ölçülemedi: {kesik} sonucun hepsinde başlık kesik kaydedilmiş.\n")
 L.append("\n## İlk 10'da hiç yokuz\n")
 L.append("| Sorgu | Kayıt | Not |\n|---|---|---|")
 for x, r in yok:

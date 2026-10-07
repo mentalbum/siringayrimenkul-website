@@ -34,13 +34,20 @@ for dosya in ("DIZINE-EKLENECEKLER.md", "gsc-dizin-kuyrugu-194.md"):
     for m in re.finditer(r"(/mahalleler/\S+?)\s.*?istek gönderildi", metin):
         istekli.add(m.group(1).rstrip(">"))
 
-TAZE_BAS = re.compile(r"Emlakçı\s*\|")  # 2026-08 şablonu
+# Güncel başlık şablonları: 2026-08 ("<Site> Emlakçı | …") ve Başlık deneyi 2'nin tedavi başlığı
+# ("<Site> Eryaman | Tapu ve Site Bilgileri", 07.10). İkincisi yoktu; Google yeni başlığı gösterdikçe
+# 50 tedavi sayfası "eski başlık" görünecekti (08.10, karne incelemesi ana-2).
+TAZE_BAS = re.compile(r"Emlakçı\s*\||\|\s*Tapu ve Site Bilgileri")
 
 def sinif(r):
-    """SERP kaybının türü; None = kayıp yok"""
+    """SERP kaybının türü; None = kayıp yok (ya da bilinmiyor)"""
     if r["sira"] == 0:
         return "GÖRÜNMEZ"
     u = r.get("u") or ""
+    # adresi doğrulanamayan kayıt (u = "cite:…" ya da kesik kırıntı): hangi sayfanın çıktığı bilinmiyor,
+    # "komşu sayfa temsil" denemez (dogru-sayfa.py'nin 'belirsiz' kuralıyla aynı)
+    if u.startswith("cite:") or "…" in u or "..." in u:
+        return None
     kendi = r["s"].split("/")[-1]
     mah = r["s"].split("/")[0]
     eski_mah = mah.replace("-mahallesi", "")
@@ -52,7 +59,15 @@ def sinif(r):
         return "komşu sayfa temsil"
     if "/mahalleler/" + eski_mah + "/" in u:
         return "eski slug"
-    bas = r.get("bas") or ""
+    # Başlık: varsa kesilmemiş 'bas_tam'. 06.09–07.10 arası kayıtlarda yalnız 25 karaktere kesilmiş 'bas'
+    # var ("Altıntepe Sitesi Emlakçı " gibi; '|' kesimde kalmış). Kesik başlıktan şablon okunamaz:
+    # o kayıtlara "eski başlık" DENMEZ (bilinmiyor). Aynı kusurun ikinci biçimi: 05–06.09 ve 06–07.10'un 86
+    # kaydında başlık '|' işaretinin hemen önünde kesilmiş ("Ulaş Sitesi Emlakçı "); o da okunamaz sayılır.
+    # 08.10 koşusunda bu iki kuralla "eski başlık" diye listelenen sıra sorunu 134'ten 19'a indi; yeni
+    # şablonu taşıyan altintepe-sitesi adaylıktan düştü.
+    bas = r.get("bas_tam") or r.get("bas") or ""
+    if not r.get("bas_tam") and (len(bas) == 25 or bas.rstrip().endswith("Emlakçı")):
+        return None
     if bas and not TAZE_BAS.search(bas):
         return "eski başlık"
     return None
@@ -92,22 +107,50 @@ for s, r in son.items():
 #   dizinde     → SIRA sorunu; ayrı listeye alınır, kota harcanmaz
 # Doğrulanmış ölü sayfa kümesi İKİ kaynaktan birleşir:
 #   gorunmez-teshis.json  → SERP'te görünmeyenlerin API denetimi (17 sayfa)
-#   DIZIN-DAMLASI-31-08.md → damla kuyruğunun açık maddeleri; hepsi API ile
-#     dizin dışı doğrulandı (71 sayfa). Tek başına ilkini kullanmak listeyi
-#     eksik bırakıyordu.
-import re as _re
+#   DIZIN-DAMLASI-31-08.md → damla kuyruğunun açık maddeleri. Tek başına ilkini
+#     kullanmak listeyi eksik bırakıyordu.
+# 08.10 — AÇIK SATIRIN HEPSİ "DİZİN DIŞI" DEĞİL. 31.08'de kuyruktaki her açık madde API ile dizin dışı
+# doğrulanmıştı; sonradan aynı dosyaya "yeniden tarama" (sayfa dizinde, yalnız kopyası bayat) ve
+# "eski adres" (308 veren 26.07 öncesi adres) satırları da eklendi. Açık satırın türü artık karnenin
+# öbür okuyucularıyla (karne-html.py, yonetici-ozeti-uret.py, is-takvimi-uret.py) AYNI kuralla okunur:
+#   adres /mahalleler/<slug>/… ve <slug> "-mahallesi" ile bitmiyor      → eski_adres
+#   değilse satırın "←" sonrası notunda "dizin dışı" geçiyor            → dizin_disi
+#   değilse                                                             → yeniden_tarama
+# Ölü sayfa kümesine yalnız dizin_disi girer. "https" taşımayan "- [ ]" satırları eskisi gibi sayım dışı.
+def damla_turu(satir):
+    m = re.match(r"- \[ \] (https://\S+)", satir)
+    if not m:
+        return None, None
+    url = m.group(1).rstrip("/")
+    e = re.match(r"/mahalleler/([^/]+)/.", re.sub(r"^https://[^/]+", "", url))
+    if e and not e.group(1).endswith("-mahallesi"):
+        return "eski_adres", url
+    notu = satir.split("←", 1)[1] if "←" in satir else ""
+    return ("dizin_disi" if "dizin dışı" in notu else "yeniden_tarama"), url
+
 _OLU = set()
+_kaynak_okundu = False   # iki kaynaktan en az biri okunabildi mi (boş küme ≠ kaynak yok)
+_damla_say = {"dizin_disi": 0, "yeniden_tarama": 0, "eski_adres": 0}
 try:
     _t = json.load(open("gorunmez-teshis.json"))
     _OLU |= {u.rstrip("/") for u in _t.get("olu_liste", [])}
+    _kaynak_okundu = True
 except Exception:
     pass
 try:
-    _kuyruk = open("DIZIN-DAMLASI-31-08.md").read()
-    _OLU |= {m.rstrip("/") for m in _re.findall(r"^- \[ \] (https://\S+)", _kuyruk, _re.M)}
+    for _satir in open("DIZIN-DAMLASI-31-08.md").read().split("\n"):
+        _tur, _url = damla_turu(_satir)
+        if not _tur:
+            continue
+        _damla_say[_tur] += 1
+        if _tur == "dizin_disi":
+            _OLU.add(_url)
+    _kaynak_okundu = True
 except Exception:
     pass
-if not _OLU:
+# Eskiden "küme boşsa süzme" deniyordu; o kural, doğrulanmış ölü sayfa KALMADIĞINDA (bugünkü durum) bütün
+# SERP-kayıp sayfaları yeniden "aday" yapardı. Süzgeç yalnız iki kaynak da okunamazsa atlanır.
+if not _kaynak_okundu:
     _OLU = None
 
 _SITE = "https://www.siringayrimenkul.com"
@@ -174,5 +217,8 @@ open("dizin-adaylari.md", "w").write("\n".join(sat) + "\n")
 print(f"yazıldı: dizin-adaylari.md — {len(adaylar)} GERÇEK aday, "
       f"{len(sira_sorunlulari)} sıra sorunu (kota harcanmaz), "
       f"{len(beklemede)} bekleyen, {len(dizinsizler)} dizinsiz")
+print(f"damla kuyruğu açık satırları: dizin dışı {_damla_say['dizin_disi']}, "
+      f"yeniden tarama bekleyen {_damla_say['yeniden_tarama']}, eski adres {_damla_say['eski_adres']}"
+      + ("" if _kaynak_okundu else " — UYARI: doğrulama kaynakları okunamadı, liste SÜZÜLMEDİ"))
 json.dump(adaylar, open("dizin-adaylari.json", "w"), ensure_ascii=False, indent=1)
 json.dump(sira_sorunlulari, open("sira-sorunlulari.json", "w"), ensure_ascii=False, indent=1)
