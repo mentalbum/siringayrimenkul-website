@@ -120,3 +120,8 @@ GSC'nin kutu gösterimini ana sayfaya atfetme biçimi).
   verir; Özgün panelde mevcut birincil+ek kategori listesini görüp karar vermeli.
 - "Açık · Kapanış saati 19:00" — Ağustos araştırmasındaki "arama anında açık olmak"
   kaldıracı; saatler hâlâ 19:00'da.
+> 07.10 düzeltme — harita kutusu hipotezi ÇÜRÜTÜLDÜ (diğer oturum, pws=0+uule): "eryaman emlakçı"da kutu #1,
+> organik #2, 28.08'le aynı. Gösterim düşüşü konum kaybı değil; hacim / tetiklenme / atıf — neden bilinmiyor.
+> Panel listesine: GBP birincil kategori "Gayrimenkul Danışmanı" (ölçümle ilk teyit) — Özgün kategori geçmişine baksın.
+> Eski adresler: deney taramasında 7 eski adres hâlâ sıralıyor, 2'si yeniyi geçiyor (küçük-ankara-villalari,
+> konuta-ozlem) → öneri: eski adreslere GSC isteği (308'i yeniden okutur), damla kuyruğuna yazıldı.
