@@ -1003,3 +1003,31 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
   17634 ada, Açelya Ap. 7/1, 0533 255 26 88) ile "Efor Emlak" (56 yorum, "Emlak Bürosu", 5+ yıl, Haznedaroğlu
   Blokları, Üç Şehitler Cad. 17633 ada 3/1, 0312 283 77 88) FARKLI adres ve telefon taşıyor; komşu adalarda
   iki ayrı ofis. Google kuralına aykırı değil, şikayet yok. (06.09 dersi doğrulandı: şüphe → çürüme.)
+
+## 07.10 — "ERYAMAN EMLAKÇI" / ANA SAYFA GÖSTERİM DÜŞÜŞÜ AYRIŞTIRILDI: TEK NEDEN YOK, ÜÇ PARÇA
+
+- Diğer oturumun bulgusu "ana sayfa emlak* 78,9→35,5 gös/gün, neden bilinmiyor" cihaz ve gün kırılımıyla açıldı
+  (gsc-q.mjs; A=10–23.09, B=24.09–04.10):
+  1. **15.09 desktop anomalisi:** "emlakçı" sorgusu o gün desktop'ta **208 gösterim, konum 1,0** (diğer günler
+     0–6). Tek günlük bu sapma A penceresinin desktop ortalamasını 16,5/gün'e şişiriyor; çıkarılınca ~1,2/gün →
+     "desktop 16,5→1,5 düşüşü" GERÇEK DEĞİL (muhtemelen sıra takip aracı/robot).
+  2. **Eylül ortası mobil tümseği:** "emlakçı" (jenerik) mobilde 12–21.09 arası 20–59 gös/gün ve konum 2,7–5
+     (kutudayız); 01–11.09'da 7–16 (konum 6–12), 26.09–04.10'da 4–21 (konum 3–8). Yani "düşüş" aslında ortadaki
+     tümseğin erimesi; Ekim, Eylül başı tabanına yakın.
+  3. **Site geneli talep düşüşü:** 01–07.09 → 29.09–04.10 haftalık gös/gün mobil 2.682→1.710 (−%36), desktop
+     525→319 (−%39); "kiralık" geçen sorgular 129→101 (−%22), "satılık" geçen 198→126 (−%36). Basamak değil,
+     beş haftalık kademeli iniş; mevsim sonu (taşınma sezonu) + spam update birlikte. "eryaman emlakçı" mobil
+     ~15→~6/gün (−%60) bu genel inişten dik ama konum 1,47→1,40 sabit (kutu #1); ülke kırılımı tur %97, değişim yok.
+- Bugünkü uule ölçümü (Eryaman merkez): jenerik "emlakçı" kutusunda **Şirin 1.** (Buğra 2., Hilal Özen Remax 3.
+  "Emlakçı" kategorisi); "emlak" kutusunda 2.; "emlak ofisi" kutusunda yokuz — kutu üç "Emlak Bürosu" kategorili
+  işletmeyle dolu (Ofis Emlak, Lokman Hekim, Etimesgut Emlak Ofisi) → kategori eşleşmesi burada belirleyici.
+  Fırsat küçük: 28 günde ofis/büro/emlakçılar geçen 18 sorgu 168 gösterim / 5 tık (6 gös/gün), üstelik "eryaman
+  emlakçılar listesi" (54, konum 1,2) ve "eryaman emlak ofisleri" (25, konum 2,0) zaten bizde.
+- SONUÇ: GBP sağlığı/kategori sorunu YOK; gösterim düşüşü = anomali + tümsek erimesi + mevsimsel talep. Kategori
+  değişikliği (Gayrimenkul Danışmanı → Emlakçı/Emlak Bürosu) ancak "emlak ofisi" ailesi için 6 gös/gün değerinde;
+  Özgün'ün kararı, acil değil. 20.10 günlük seri okumasında "eryaman emlakçı" mobil tabanı (6/gün) yeniden bakılır.
+- Yöntem notu (diğer oturumun 07.10 tuzağı): gsc-q'da `page` FİLTRESİ + device/country BOYUTU birlikte toplamı
+  yarıdan fazla düşürebiliyor. Buradaki "ana sayfa emlak*" cihaz tablosu page filtresiyle alındı; jenerik "emlakçı"
+  için filtresiz günlük seriyle (tüm sayfalar, mobil A=25,6/gün) birebir tuttu, yine de cihaz kırılımı için
+  filtresiz seri esas alınır. Diğer oturumun eki-3 sonucu ("düşüş yatay, her TO kovası −%17, tek konum kaybı yalın
+  'emlakçı'") buradaki üç parçayla uyumlu.
