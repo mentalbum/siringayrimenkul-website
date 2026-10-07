@@ -60,7 +60,7 @@ function uule(lat, lng) {
   return 'a+' + encodeURIComponent(Buffer.from(metin).toString('base64'));
 }
 
-const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText})}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const loc=(document.querySelector('.dfB0uf')?.innerText||document.querySelector('#swml')?.innerText||'').slice(0,60);return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
+const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText})}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const loc=(()=>{for(const s of ['.GNm3Qb .AhYzQb','.AhYzQb','.dfB0uf','#swml']){const e=document.querySelector(s);if(e&&e.innerText.trim())return e.innerText.trim().slice(0,60)}const re=/^\\d{5},\\s*[^,]+,\\s*[^,]+$|Konumunuza göre|^Konum:/;const h=[...document.querySelectorAll('span,div')].find(x=>x.children.length===0&&re.test((x.innerText||'').trim()));return h?h.innerText.trim().slice(0,60):''})();return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
 
 if (process.argv.includes('--listele')) {
   console.log('# Bölge turu URL listesi (taze uule — bu listeyi her turda yeniden üret)');
@@ -103,7 +103,18 @@ const CIKAR = () => {
     } catch (e) {}
   }
   const i = T.findIndex((x) => x.d === 'siringayrimenkul.com');
-  const loc = (document.querySelector('.dfB0uf')?.innerText || document.querySelector('#swml')?.innerText || '').slice(0, 60);
+  // 07.10: Google arayüzü değişti — .dfB0uf/#swml boş dönüyor. Yeni gösterge alt bilgi
+  // çubuğunda span.AhYzQb (kapsayıcı .GNm3Qb): "06824, Tunahan, Etimesgut/Ankara".
+  // Sınıf adları uçucu olduğu için zincir: yeni → eski → metin kalıbı ("posta kodu, semt, ilçe/il").
+  const loc = (() => {
+    for (const s of ['.GNm3Qb .AhYzQb', '.AhYzQb', '.dfB0uf', '#swml']) {
+      const e = document.querySelector(s);
+      if (e && e.innerText.trim()) return e.innerText.trim().slice(0, 60);
+    }
+    const re = /^\d{5},\s*[^,]+,\s*[^,]+$|Konumunuza göre|^Konum:/;
+    const h = [...document.querySelectorAll('span,div')].find(x => x.children.length === 0 && re.test((x.innerText || '').trim()));
+    return h ? h.innerText.trim().slice(0, 60) : '';
+  })();
   return {
     hp: N.length > 0, hs: B + 1, hl: N.slice(0, 6), hyedek: yedek,
     sira: i + 1, u: i >= 0 ? T[i].p : null, bas: i >= 0 ? T[i].t : null,
