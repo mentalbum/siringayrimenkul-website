@@ -1,0 +1,683 @@
+{
+ "pencereler": {
+  "once": "2026-08-10..2026-09-06",
+  "sonra": "2026-09-08..2026-10-04"
+ },
+ "tedavi": {
+  "n": 24,
+  "gos_once": 802,
+  "gos_sonra": 543,
+  "tik_once": 16,
+  "tik_sonra": 12,
+  "poz_once": 7.32,
+  "poz_sonra": 6.765000000000001,
+  "gos_var_once": 23,
+  "gos_var_sonra": 24,
+  "serp_ilk10": 8,
+  "serp_dogru": 7
+ },
+ "kontrol": {
+  "n": 19,
+  "gos_once": 673,
+  "gos_sonra": 314,
+  "tik_once": 11,
+  "tik_sonra": 3,
+  "poz_once": 8.09,
+  "poz_sonra": 8.0,
+  "gos_var_once": 19,
+  "gos_var_sonra": 13,
+  "serp_ilk10": 4,
+  "serp_dogru": 3
+ },
+ "satirlar": {
+  "tedavi": [
+   {
+    "s": "devlet-mahallesi/ikizler-sitesi",
+    "o": [
+     133,
+     2,
+     6.93
+    ],
+    "n": [
+     5,
+     0,
+     6.8
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "devlet-mahallesi/ilk-bahar-sitesi",
+    "o": [
+     3,
+     0,
+     5.33
+    ],
+    "n": [
+     1,
+     0,
+     5.0
+    ],
+    "sira": 1,
+    "dogru": true
+   },
+   {
+    "s": "devlet-mahallesi/yuceyurt-sitesi",
+    "o": [
+     15,
+     2,
+     6.67
+    ],
+    "n": [
+     2,
+     0,
+     23.5
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "eryaman-mahallesi/isikkent-sitesi",
+    "o": [
+     5,
+     0,
+     6.8
+    ],
+    "n": [
+     2,
+     0,
+     1.5
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "eryaman-mahallesi/platin-konutlari",
+    "o": [
+     40,
+     0,
+     7.42
+    ],
+    "n": [
+     11,
+     0,
+     8.18
+    ],
+    "sira": 2,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/doga-konutlari",
+    "o": [
+     34,
+     1,
+     7.32
+    ],
+    "n": [
+     1,
+     0,
+     8.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/havacilar-sitesi",
+    "o": [
+     11,
+     0,
+     5.27
+    ],
+    "n": [
+     7,
+     0,
+     6.43
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/merkez-sitesi",
+    "o": [
+     33,
+     0,
+     9.06
+    ],
+    "n": [
+     2,
+     0,
+     5.5
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/sude-konutlari",
+    "o": [
+     38,
+     3,
+     6.42
+    ],
+    "n": [
+     3,
+     0,
+     5.67
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "guzelkent-mahallesi/akkonak-sitesi",
+    "o": [
+     32,
+     0,
+     7.41
+    ],
+    "n": [
+     43,
+     1,
+     8.12
+    ],
+    "sira": 2,
+    "dogru": true
+   },
+   {
+    "s": "guzelkent-mahallesi/asilkent-sitesi",
+    "o": [
+     88,
+     1,
+     7.65
+    ],
+    "n": [
+     3,
+     0,
+     7.67
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "guzelkent-mahallesi/erenkoy-sitesi",
+    "o": [
+     17,
+     0,
+     7.35
+    ],
+    "n": [
+     21,
+     0,
+     7.33
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "guzelkent-mahallesi/meltem-sitesi",
+    "o": [
+     2,
+     0,
+     9.5
+    ],
+    "n": [
+     51,
+     0,
+     8.02
+    ],
+    "sira": 1,
+    "dogru": true
+   },
+   {
+    "s": "sehit-osman-avci-mahallesi/camlik-sitesi",
+    "o": [
+     13,
+     0,
+     7.08
+    ],
+    "n": [
+     2,
+     0,
+     17.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "sehit-osman-avci-mahallesi/ucyildiz-sitesi",
+    "o": [
+     0,
+     0,
+     null
+    ],
+    "n": [
+     37,
+     1,
+     6.73
+    ],
+    "sira": 2,
+    "dogru": true
+   },
+   {
+    "s": "seyh-samil-mahallesi/camlica-sitesi",
+    "o": [
+     3,
+     0,
+     8.33
+    ],
+    "n": [
+     14,
+     0,
+     4.57
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/mavera-sitesi",
+    "o": [
+     7,
+     0,
+     6.43
+    ],
+    "n": [
+     15,
+     0,
+     7.47
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/turkuaz-sitesi",
+    "o": [
+     22,
+     0,
+     9.68
+    ],
+    "n": [
+     2,
+     0,
+     8.5
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/altintepe-sitesi",
+    "o": [
+     97,
+     1,
+     7.14
+    ],
+    "n": [
+     135,
+     6,
+     5.42
+    ],
+    "sira": 1,
+    "dogru": true
+   },
+   {
+    "s": "yavuz-selim-mahallesi/esenkent-sitesi",
+    "o": [
+     31,
+     1,
+     6.58
+    ],
+    "n": [
+     36,
+     0,
+     5.36
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/goksu-sitesi",
+    "o": [
+     13,
+     0,
+     7.77
+    ],
+    "n": [
+     1,
+     0,
+     6.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/safir-sitesi",
+    "o": [
+     54,
+     1,
+     8.67
+    ],
+    "n": [
+     3,
+     0,
+     8.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/taskent-sitesi",
+    "o": [
+     86,
+     3,
+     7.09
+    ],
+    "n": [
+     59,
+     4,
+     5.93
+    ],
+    "sira": 1,
+    "dogru": true
+   },
+   {
+    "s": "yavuz-selim-mahallesi/utku-sitesi",
+    "o": [
+     25,
+     1,
+     8.64
+    ],
+    "n": [
+     87,
+     0,
+     6.33
+    ],
+    "sira": 1,
+    "dogru": true
+   }
+  ],
+  "kontrol": [
+   {
+    "s": "tunahan-mahallesi/tunahan-sitesi",
+    "o": [
+     6,
+     0,
+     8.33
+    ],
+    "n": [
+     2,
+     0,
+     8.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "devlet-mahallesi/guneyce-sitesi",
+    "o": [
+     11,
+     0,
+     8.09
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "devlet-mahallesi/mavikent-sitesi",
+    "o": [
+     97,
+     3,
+     7.38
+    ],
+    "n": [
+     57,
+     1,
+     7.0
+    ],
+    "sira": 2,
+    "dogru": true
+   },
+   {
+    "s": "devlet-mahallesi/sahil-sitesi",
+    "o": [
+     1,
+     0,
+     1.0
+    ],
+    "n": [
+     1,
+     0,
+     6.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "devlet-mahallesi/selcuklu-sitesi",
+    "o": [
+     34,
+     1,
+     6.79
+    ],
+    "n": [
+     16,
+     1,
+     6.75
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "devlet-mahallesi/cagkent-sitesi",
+    "o": [
+     173,
+     3,
+     8.09
+    ],
+    "n": [
+     7,
+     0,
+     8.29
+    ],
+    "sira": 1,
+    "dogru": true
+   },
+   {
+    "s": "eryaman-mahallesi/toki-konutlari",
+    "o": [
+     8,
+     0,
+     8.5
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/angora-sitesi",
+    "o": [
+     69,
+     0,
+     8.52
+    ],
+    "n": [
+     34,
+     1,
+     9.59
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/goksu-evleri-sitesi",
+    "o": [
+     6,
+     0,
+     7.5
+    ],
+    "n": [
+     5,
+     0,
+     15.2
+    ],
+    "sira": 3,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/goksupark-konutlari",
+    "o": [
+     123,
+     1,
+     9.85
+    ],
+    "n": [
+     89,
+     0,
+     9.89
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+    "o": [
+     8,
+     0,
+     6.0
+    ],
+    "n": [
+     1,
+     0,
+     7.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "guzelkent-mahallesi/aksu-sitesi",
+    "o": [
+     9,
+     0,
+     6.22
+    ],
+    "n": [
+     4,
+     0,
+     4.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "guzelkent-mahallesi/mesa-sitesi",
+    "o": [
+     9,
+     0,
+     9.56
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/ak-kent-sitesi",
+    "o": [
+     14,
+     1,
+     4.93
+    ],
+    "n": [
+     10,
+     0,
+     15.7
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/baris-sitesi",
+    "o": [
+     11,
+     0,
+     5.55
+    ],
+    "n": [
+     1,
+     0,
+     1.0
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/umut-sitesi",
+    "o": [
+     64,
+     1,
+     8.45
+    ],
+    "n": [
+     87,
+     0,
+     8.3
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "seyh-samil-mahallesi/ilksebat-sitesi",
+    "o": [
+     2,
+     1,
+     1.0
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/konut-sitesi",
+    "o": [
+     3,
+     0,
+     17.67
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 0,
+    "dogru": false
+   },
+   {
+    "s": "yavuz-selim-mahallesi/pasaj-eryaman",
+    "o": [
+     25,
+     0,
+     8.8
+    ],
+    "n": [
+     0,
+     0,
+     null
+    ],
+    "sira": 5,
+    "dogru": true
+   }
+  ]
+ }
+}

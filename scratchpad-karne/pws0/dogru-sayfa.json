@@ -5,17 +5,17 @@
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 338
+   "n": 345
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 55
+   "n": 49
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 41
+   "n": 40
   },
   {
    "k": "baska_site",
@@ -38,17 +38,17 @@
    "n": 3
   }
  ],
- "ilk3_toplam": 384,
+ "ilk3_toplam": 389,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 318
+   "n": 324
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 37
+   "n": 36
   },
   {
    "k": "baska_site",
@@ -66,7 +66,7 @@
    "n": 4
   }
  ],
- "ilk3_dogru": 318,
+ "ilk3_dogru": 324,
  "yanlis_mahalle": [
   [
    "guzelkent-mahallesi",
@@ -93,12 +93,12 @@
    7
   ],
   [
-   "devlet-mahallesi",
+   "tunahan-mahallesi",
    6
   ],
   [
-   "tunahan-mahallesi",
-   6
+   "devlet-mahallesi",
+   5
   ],
   [
    "seker-mahallesi",

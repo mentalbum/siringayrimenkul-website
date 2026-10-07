@@ -4,23 +4,23 @@
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 75,
+   "deger": 76,
    "birim": "%",
-   "gosterim": "%75",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 380. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%76",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 385. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 380
+    "ilk3": 385
    },
    "fark_7g": {
-    "deger": 0.0,
+    "deger": 1.0,
     "onceki": 75.4,
-    "son": 75.4,
+    "son": 76.4,
     "kiyas_tarihi": "2026-09-30",
     "gun": 7,
     "birim": "puan",
-    "yon": "nötr",
+    "yon": "iyi",
     "olcum_yontemi_degisti": false,
     "seri": [
      "ilk3_pay"
@@ -34,17 +34,17 @@
    "deger": 83,
    "birim": "%",
    "gosterim": "%83",
-   "ne_demek": "İlk 3 sırada olduğumuz 384 sorgunun 318 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "ne_demek": "İlk 3 sırada olduğumuz 389 sorgunun 324 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 318,
-    "ilk3_toplam": 384,
+    "ilk3_dogru": 324,
+    "ilk3_toplam": 389,
     "guncelleme": "2026-10-07"
    },
    "fark_7g": {
-    "deger": 3.6,
+    "deger": 4.1,
     "onceki": 79.2,
-    "son": 82.8,
+    "son": 83.3,
     "kiyas_tarihi": "2026-09-30",
     "gun": 7,
     "birim": "puan",
@@ -157,13 +157,15 @@
   {
    "tarih": "07.10",
    "iso": "2026-10-07",
-   "baslik_sayisi": 3,
+   "baslik_sayisi": 5,
    "basliklar": [
     "CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI",
     "HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3",
-    "DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1."
+    "DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1.",
+    "ETAP TABANI OKUMASI (08.08 iç bağ müdahalesi, 19.09'da yapılmamıştı): DİZİNE GİRDİ, SIRAYI ALMADI",
+    "PR #91 OKUMASI (24 güçlendirilen sayfa vs 19 kontrol): ZAYIF OLUMLU, KANIT YETERSİZ — KALDIRAÇ AÇIK KALIR"
    ],
-   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3 · DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1."
+   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3 · DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1. (+2 başlık daha)"
   }
  ],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",

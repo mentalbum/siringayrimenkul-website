@@ -1,0 +1,217 @@
+[
+ {
+  "s": "devlet-mahallesi/ikizler-sitesi",
+  "q": "İkizler Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "devlet-mahallesi/ilk-bahar-sitesi",
+  "q": "İlk Bahar Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "devlet-mahallesi/yuceyurt-sitesi",
+  "q": "Yüceyurt Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "eryaman-mahallesi/isikkent-sitesi",
+  "q": "Işıkkent Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "eryaman-mahallesi/platin-konutlari",
+  "q": "Platin Konutları emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "goksu-mahallesi/doga-konutlari",
+  "q": "Doğa Konutları emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "goksu-mahallesi/havacilar-sitesi",
+  "q": "Havacılar Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "goksu-mahallesi/merkez-sitesi",
+  "q": "Merkez Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "goksu-mahallesi/sude-konutlari",
+  "q": "Sude Konutları emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "guzelkent-mahallesi/akkonak-sitesi",
+  "q": "Akkonak Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "guzelkent-mahallesi/asilkent-sitesi",
+  "q": "Asilkent Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "guzelkent-mahallesi/erenkoy-sitesi",
+  "q": "Erenköy Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "guzelkent-mahallesi/meltem-sitesi",
+  "q": "Meltem Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/camlik-sitesi",
+  "q": "Çamlık Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "sehit-osman-avci-mahallesi/ucyildiz-sitesi",
+  "q": "Üçyıldız Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "seyh-samil-mahallesi/camlica-sitesi",
+  "q": "Çamlıca Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "seyh-samil-mahallesi/mavera-sitesi",
+  "q": "Mavera Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "seyh-samil-mahallesi/turkuaz-sitesi",
+  "q": "Turkuaz Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/altintepe-sitesi",
+  "q": "Altıntepe Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/esenkent-sitesi",
+  "q": "Esenkent Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/goksu-sitesi",
+  "q": "Göksu Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/safir-sitesi",
+  "q": "Safir Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/taskent-sitesi",
+  "q": "Taşkent Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/utku-sitesi",
+  "q": "Utku Sitesi emlakçı",
+  "kol": "tedavi"
+ },
+ {
+  "s": "tunahan-mahallesi/tunahan-sitesi",
+  "q": "Tunahan Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "devlet-mahallesi/guneyce-sitesi",
+  "q": "Güneyce Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "devlet-mahallesi/mavikent-sitesi",
+  "q": "Mavikent Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "devlet-mahallesi/sahil-sitesi",
+  "q": "Sahil Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "devlet-mahallesi/selcuklu-sitesi",
+  "q": "Selçuklu Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "devlet-mahallesi/cagkent-sitesi",
+  "q": "Çağkent Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "eryaman-mahallesi/toki-konutlari",
+  "q": "TOKİ Konutları emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "goksu-mahallesi/angora-sitesi",
+  "q": "Angora Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "goksu-mahallesi/goksu-evleri-sitesi",
+  "q": "Göksu Evleri Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "goksu-mahallesi/goksupark-konutlari",
+  "q": "Göksupark Konutları emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
+  "q": "Hekimler Ve Sağlıkçılar Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "guzelkent-mahallesi/aksu-sitesi",
+  "q": "Aksu Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "guzelkent-mahallesi/mesa-sitesi",
+  "q": "Mesa Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "seyh-samil-mahallesi/ak-kent-sitesi",
+  "q": "Ak Kent Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "seyh-samil-mahallesi/baris-sitesi",
+  "q": "Barış Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "seyh-samil-mahallesi/umut-sitesi",
+  "q": "Umut Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "seyh-samil-mahallesi/ilksebat-sitesi",
+  "q": "İlksebat Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/konut-sitesi",
+  "q": "Konut Sitesi emlakçı",
+  "kol": "kontrol"
+ },
+ {
+  "s": "yavuz-selim-mahallesi/pasaj-eryaman",
+  "q": "Pasaj Eryaman emlakçı",
+  "kol": "kontrol"
+ }
+]

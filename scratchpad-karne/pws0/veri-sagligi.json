@@ -1,18 +1,18 @@
 {
  "guncelleme": "2026-10-07",
  "gurultu": {
-  "cift": 73,
-  "sessiz": 63,
-  "oran": 86,
-  "giris_cikis": 67,
+  "cift": 79,
+  "sessiz": 69,
+  "oran": 87,
+  "giris_cikis": 81,
   "dagilim": [
    [
     0,
-    45
+    50
    ],
    [
     1,
-    18
+    19
    ],
    [
     2,
@@ -34,11 +34,11 @@
  },
  "olculen": 509,
  "kuyruk": 509,
- "kayit": 2078,
+ "kayit": 2121,
  "yas": [
   [
    "0-7 gün",
-   104
+   127
   ],
   [
    "8-14 gün",
@@ -50,7 +50,7 @@
   ],
   [
    "30+ gün",
-   405
+   382
   ]
  ],
  "bulgular": [
