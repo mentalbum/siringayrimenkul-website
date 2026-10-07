@@ -98,3 +98,25 @@ Yorum: 24.09 sonrası kaybın iki ayağı var — (a) site sayfalarında geniş 
 (b) ana sayfada emlakçı sınıfı −%55 = harita kutusuna daha az girme (GBP tarafı; 07.10 uule ölçümü 6/17 kutu,
 Eylül'de 9/17). GBP açıklama/onay sorunu aynı dönemde → "Açıklamayı kabul etmemiş" oturumuna iletildi.
 GSC sorgu boyutu gizlilik süzgeciyle günlük ~990 gös gösteriyor (sayfa boyutu 2.223) — oranlar geçerli, mutlaklar değil.
+
+## 07.10 — harita kutusu hipotezinin SERP sınaması (deney taraması oturumu)
+
+Paralel oturum (GSC kolu) "24.09'dan beri gösterim düştü → muhtemelen harita kutusuna
+daha az giriyoruz" hipotezini iletti. Bugün pws=0 + uule(Eryaman merkez) ile sınandı:
+
+**HİPOTEZ DESTEKLENMEDİ.** "eryaman emlakçı": harita kutusu **#1** (Şirin Gayrimenkul –
+Eryaman), organik **#2** (ana sayfa). 28.08 bölge turundaki (10/10 noktada kutu #1,
+organik 2-3) tabloyla aynı. Yani kutudaki KONUMUMUZ değişmemiş; gösterim düşüşünün
+nedeni başka yerde aranmalı (sorgu hacmi, kutunun hangi sorgularda tetiklendiği, ya da
+GSC'nin kutu gösterimini ana sayfaya atfetme biçimi).
+
+**Kutu kartından iki ham veri (ölçüm, yorum değil):**
+- Yorum **404** / 5,0 (28.08'de 398 idi → yorum akışı sürüyor).
+- **Birincil kategori: "Gayrimenkul Danışmanı"** — Ağustos araştırmasında "birincil
+  kategori tam uygunluğu" #1 sıralama faktörü çıkmış ve "kontrol et" diye Özgün'ün
+  panel listesine yazılmıştı; ölçümle ilk kez görüldü. Hâkim sorgu kelimesi "emlakçı";
+  Google'ın TR listesinde "Emlakçı/Emlak Acentesi" ayrı bir kategori. Bu bir
+  DEĞİŞTİRME önerisi değil — kategori #1 faktör olduğu için yanlış değişiklik zarar
+  verir; Özgün panelde mevcut birincil+ek kategori listesini görüp karar vermeli.
+- "Açık · Kapanış saati 19:00" — Ağustos araştırmasındaki "arama anında açık olmak"
+  kaldıracı; saatler hâlâ 19:00'da.
