@@ -80,3 +80,48 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
   erişilebilirlik tek hata WhatsApp düğmesi 4,13 → PR #99 (#075E54, 7,1). Karne Version 21 yayınlandı
   (gsc-q.mjs depoya, is-takvimi düzeltmesi). 15.10 görevi deftere: sitemap-eski-adresler kaldırma
   (robots.ts satırı + public/sitemap-eski-adresler.xml + GSC).
+
+## 07.10 eki — spam güncellemesi okuması (GSC verisi 04.10'a kadar)
+Site sayfaları (ada/blog/Yenimahalle hariç) gös/gün: 10–23.09 **2.223** → 24–29.09 **1.866** → 30.09–04.10 **1.842**
+(−%17); tık/gün 41 → 34 → 36; pozisyon 7,5 sabit. Ada ailesi 266 → 159 → 122 (bilinçli erime, ayrı).
+Sonuç: 24.09 basamağı Eylül spam güncellemesiyle aynı gün, 30.09 ikinci dalga ek basamak getirmedi,
+10 günde toparlanma yok. Sıra sabitken gösterim düşmesi = daha az sorguda gösteriliyoruz; eyleme
+dönüştürülebilir bir kalıp yok, 20.10'da yeniden okunacak. GBP bağı 07.10'da hâlâ UTM'siz (GA4 medium=gbp 0).
+Diğer oturumlar 05–07.10: PR #100 (sayfa denetimi), #103 (Kurtuluş=Yükselay), #104 (4. Devlet 410),
+#105 (hero WhatsApp CTA + başlık deneyi 2 + eski-adres sitemap'i kaldırıldı), #106/#107/#108 (karne 07.10,
+hedef sorgular uule ile); deney taraması 76/174 (gece-log).
+**07.10 eki-2 — kaybın ayrışması (sorgu sınıfı × sayfa, site sayfaları, günlük ort. 10–23.09 → 24.09–04.10):**
+yalın ad 624→525 (−%16), alıcı/kiracı 268→229 (−%15, tık 7,1→7,8), **emlakçı 95→44 (−%54)**, bilgi 6→4.
+emlak* sorgularının kaybı neredeyse tamamen **ana sayfada**: 78,9→35,5 gös/gün (−%55), poz 2,98→3,89;
+"eryaman emlakçı" günlük gösterim ~15→~5 (poz 1,3–1,6 = harita kutusundaki GBP bağı, defter 05.09).
+Yorum: 24.09 sonrası kaybın iki ayağı var — (a) site sayfalarında geniş −%15 (spam güncellemesiyle aynı gün),
+(b) ana sayfada emlakçı sınıfı −%55 = harita kutusuna daha az girme (GBP tarafı; 07.10 uule ölçümü 6/17 kutu,
+Eylül'de 9/17). GBP açıklama/onay sorunu aynı dönemde → "Açıklamayı kabul etmemiş" oturumuna iletildi.
+GSC sorgu boyutu gizlilik süzgeciyle günlük ~990 gös gösteriyor (sayfa boyutu 2.223) — oranlar geçerli, mutlaklar değil.
+
+## 07.10 — harita kutusu hipotezinin SERP sınaması (deney taraması oturumu)
+
+Paralel oturum (GSC kolu) "24.09'dan beri gösterim düştü → muhtemelen harita kutusuna
+daha az giriyoruz" hipotezini iletti. Bugün pws=0 + uule(Eryaman merkez) ile sınandı:
+
+**HİPOTEZ DESTEKLENMEDİ.** "eryaman emlakçı": harita kutusu **#1** (Şirin Gayrimenkul –
+Eryaman), organik **#2** (ana sayfa). 28.08 bölge turundaki (10/10 noktada kutu #1,
+organik 2-3) tabloyla aynı. Yani kutudaki KONUMUMUZ değişmemiş; gösterim düşüşünün
+nedeni başka yerde aranmalı (sorgu hacmi, kutunun hangi sorgularda tetiklendiği, ya da
+GSC'nin kutu gösterimini ana sayfaya atfetme biçimi).
+
+**Kutu kartından iki ham veri (ölçüm, yorum değil):**
+- Yorum **404** / 5,0 (28.08'de 398 idi → yorum akışı sürüyor).
+- **Birincil kategori: "Gayrimenkul Danışmanı"** — Ağustos araştırmasında "birincil
+  kategori tam uygunluğu" #1 sıralama faktörü çıkmış ve "kontrol et" diye Özgün'ün
+  panel listesine yazılmıştı; ölçümle ilk kez görüldü. Hâkim sorgu kelimesi "emlakçı";
+  Google'ın TR listesinde "Emlakçı/Emlak Acentesi" ayrı bir kategori. Bu bir
+  DEĞİŞTİRME önerisi değil — kategori #1 faktör olduğu için yanlış değişiklik zarar
+  verir; Özgün panelde mevcut birincil+ek kategori listesini görüp karar vermeli.
+- "Açık · Kapanış saati 19:00" — Ağustos araştırmasındaki "arama anında açık olmak"
+  kaldıracı; saatler hâlâ 19:00'da.
+> 07.10 düzeltme — harita kutusu hipotezi ÇÜRÜTÜLDÜ (diğer oturum, pws=0+uule): "eryaman emlakçı"da kutu #1,
+> organik #2, 28.08'le aynı. Gösterim düşüşü konum kaybı değil; hacim / tetiklenme / atıf — neden bilinmiyor.
+> Panel listesine: GBP birincil kategori "Gayrimenkul Danışmanı" (ölçümle ilk teyit) — Özgün kategori geçmişine baksın.
+> Eski adresler: deney taramasında 7 eski adres hâlâ sıralıyor, 2'si yeniyi geçiyor (küçük-ankara-villalari,
+> konuta-ozlem) → öneri: eski adreslere GSC isteği (308'i yeniden okutur), damla kuyruğuna yazıldı.

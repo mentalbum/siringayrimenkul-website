@@ -434,3 +434,7 @@ sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
 > (53 görünmez + 70 istek + 17 ek) — ilişki bilinmiyor, hipotez olarak not. Kural gereği bugün DUR;
 > 08.10 09:00 sonrası tek deneme (altintepe, sonra platin-konutlari; ikisi de dizinde, amaç PR #91
 > kopyasının yeniden taranması).
+
+## 07.10 — eski adresi yeniyi geçen 2 sayfa (öneri: ESKİ adrese istek, 308'i yeniden okutur)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari ← eski #1 / yeni #5 (deney taraması 07.10)
+- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/konuta-ozlem-sitesi ← eski #3 / yeni #7

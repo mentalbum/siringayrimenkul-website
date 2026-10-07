@@ -42,12 +42,12 @@ bizim sonuçlarımız; tam yol Chrome'dan gerçek href ile alınır, breadcrumb'
 
 | taban | →doğru | →yanlış | →dışı |
 |---|---|---|---|
-| yanlış (36) | **15** | 17 | 4 |
-| dışı (24) | 1 | 3 | 20 |
+| yanlış (47) | **21** | 20 | 6 |
+| dışı (29) | 3 | 3 | 23 |
 
-**Yanlış→doğru düzelme: 15/36 = %42** (GSC okuması %52; kontrol kolu/doğal taban %22).
+**Yanlış→doğru düzelme: 21/47 = %45** (GSC okuması %52; kontrol kolu/doğal taban %22).
 Yön GSC ile aynı, büyüklük arada — örneklem henüz 23 vaka, tam tarama bitmeden sonuç yazılmaz.
-Dışı→doğru yalnız 1/17 (%6): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
+Dışı→doğru yalnız 3/29 (%10): başlık, hiç sıralamayan sayfayı ilk 10'a SOKMUYOR; etkisi
 "zaten sıralayan ama yanlış sayfa" vakasında.
 
 Dönüşenler: mavikent (dışı→doğru), atakent-1-asiyan, atakent-metro, guzel-ankara-evleri
@@ -62,4 +62,52 @@ ve ESKİ başlıklarla sıralıyor (İlk Bahar #1, MA1 Tower #1, Eryaman Evleri 
 sindirimi bekliyor. Analizde "yanlış" sayılmaları deneyin etkisini OLDUĞUNDAN DÜŞÜK gösterir —
 nihai okumada ayrı kova açılmalı.
 
-Kalan: 114 sorgu (Göksu'dan devam, kuyruk index 105+). Araç: `python3 deney-sira.py 4`.
+07.10'da index 105→125 tarandı (+20 ölçüm, yine engelsiz — iki gün üst üste). Göksu deney kolu
+TAMAM, Güzelkent başladı. Göksu'da art arda 6 doğru çıktı (oyak-goksupark, park-inci, paro-life,
+polsan1-ayisigi, utkan, vaditepe) — **polsan1-ayisigi** dikkat çekici: Ağustos'ta "219 gösterim
+eski adreste, dizinsiz" diye kota istisnası bekleyen vakaydı, şimdi doğru sayfayla #2.
+
+ESKİ ADRES kovası 4'e çıktı (+ankolular, ada sayfası eski slugda). AYRICA yeni alt-desen:
+**cagdas-95-sitesi'nde yeni VE eski adres aynı SERP'te** (#2 yeni, #4 eski) — 301 sindirilmemiş,
+iki sürüm birbiriyle yarışıyor. 04-05.09 taramasındaki "eski adres 11+ çift" bulgusuyla aynı aile.
+
+Kalan: 94 sorgu (Güzelkent'ten devam, kuyruk index 125+). Araç: `python3 deney-sira.py 4`.
+
+
+## 07.10 ikinci dilim — ESKİ ADRES BULGUSU BÜYÜDÜ (dikkat: sitemap kararıyla kesişiyor)
+
+Güzelkent deney kolu yarılandı. Deney 88/174; yanlış→doğru %45 bandında sabit.
+
+**Eski adres vakası 2'den 6'ya çıktı** ve niteliği değişti — artık sadece "eski adres
+sıralıyor" değil, **ikisinde eski adres YENİSİNİ GEÇİYOR**:
+
+| sorgu | eski adres | yeni adres |
+|---|---|---|
+| Küçük Ankara Villaları | `/mahalleler/guzelkent/...` **#1** | `/guzelkent-mahallesi/...` #5 |
+| Konuta Özlem | `/mahalleler/guzelkent/...` **#3** | `/guzelkent-mahallesi/...` #7 |
+| Çağdaş-95 | `/mahalleler/guzelkent/...` #4 | `/guzelkent-mahallesi/...` **#2** |
+| İlk Bahar | `/mahalleler/devlet/...` **#1** | — |
+| MA1 Tower | `/mahalleler/goksu/...` **#1** | — |
+| Eryaman Evleri | `/mahalleler/eryaman/...` #4 | — |
+| Ankolular | `/mahalleler/guzelkent/adalar/...` #3 | — |
+
+Hepsi ESKİ başlıkla ("...Emlakçısı - Şirin Gayrimenkul" kalıbı) çıkıyor, yani deneyin
+yeni başlığını hiç almadılar. Bu sayfalar "yanlış" kovasında sayılıyor ve deneyin
+ölçülen etkisini AŞAĞI çekiyor — nihai okumada ayrı kova şart.
+
+⚠️ **KESİŞME, karar değil gözlem:** `app/sitemap-eski-adresler` 07.10 01:13'te kaldırıldı
+(c407135, ChatGPT istişaresinin 3. işi; defterdeki görev 15.10 içindi). O sitemap'in işi
+Google'a eski adresleri yeniden taratıp 301'i gördürmekti. Bugünkü ölçüm, en az 7 eski
+adresin HÂLÂ canlı sıralandığını ve ikisinin yenisini geçtiğini gösteriyor — yani 301
+sindirimi tamamlanmamış. Kaldırma kararı "eski adresler bitti" varsayımına dayanıyorsa
+veri bunu desteklemiyor; başka bir gerekçeye dayanıyorsa (tarama bütçesi vb.) bu ölçüm
+yalnızca süreyi uzatabileceğine dair bir not. Kararı geri almadım — ilgili oturumun
+bakması için işaretliyorum.
+
+Ayrıca iki ESKİ TEŞHİS ÇÜRÜDÜ: (1) **erenkoy-sitesi** 28.08'de "İstanbul Erenköy
+kaplaması, YAPISAL KESİNLEŞTİ, kuyruktan düş" diye kapatılmıştı — bugün doğru sayfayla
+**#2**. (2) **polsan1-ayisigi** Ağustos'ta "219 gösterim eski adreste, dizinsiz, kota
+istisnası bekliyor" vakasıydı — bugün doğru sayfayla **#2**, istisna hiç gerekmemiş.
+Ders: "yapısal/kurtarılamaz" etiketi 4-6 hafta sonra yeniden sınanmadan kalıcı sayılmaz.
+
+Kalan: 86 sorgu (Güzelkent'ten devam, kuyruk index 141+).
