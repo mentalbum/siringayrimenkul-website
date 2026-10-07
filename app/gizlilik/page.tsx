@@ -77,7 +77,7 @@ export default function GizlilikPage() {
             >
               Analytics kapsam dışı eklentisini
             </a>{" "}
-            da kullanabilirsiniz.
+            de kullanabilirsiniz.
           </p>
           <CerezTercihi />
           <div className="mt-4 overflow-x-auto">
