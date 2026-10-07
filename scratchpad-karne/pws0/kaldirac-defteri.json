@@ -172,7 +172,8 @@
    "olcum": "GA4 sessionMedium=gbp: W31 14, W32 14, W33 4, sonra 7 hafta 0. GSC /?utm_source=google&utm_medium=gbp 481 gos -> 0.",
    "gerekce": "Site tarafi temiz (UTM'li adres 200, yonlendirme yok) -> GBP kaydinda bag degismis. GBP > satis > web onceligi varken kanal #1 kor.",
    "nerede": "DENETIM-04-10.md #1; Ozgun GBP paneli",
-   "kisit": "UTM'li adres Search Console'da yeniden göründüğü ilk günden 31 gün sonra: 'eryaman emlakçı' için ana sayfa (organik) ve UTM'li adres (harita kutusu bağı) satırları AYRI okunur ve kaydedilir. Komut: node gsc-q.mjs <ilk_gun> <ilk_gun+27> query,page \"query::equals::eryaman emlakçı\". Rakam betimleyicidir; başlık kararı bu okumaya bağlanmaz. O gün bilinene kadar takvim satırı yazılmaz."
+   "kisit": "GBP bağına UTM geri konunca, adres Search Console'da yeniden göründükten 31 gün sonra 'eryaman emlakçı' için ana sayfa (organik) ve harita bağı satırları ayrı okunur. Rakam betimleyicidir; başlık kararı bu okumaya bağlanmaz.",
+   "not": "Okuma günü: UTM'li adresin Search Console'da yeniden göründüğü ilk gün + 31 gün. O gün bilinene kadar takvim satırı yazılmaz; bilinince bu kayda 'takvim' satırı eklenir. Komut: node gsc-q.mjs <ilk_gun> <ilk_gun+27> query,page \"query::equals::eryaman emlakçı\" ('/' satırı organik, UTM'li satır harita kutusu bağı; ikisi AYRI kaydedilir)."
   },
   {
    "tarih": "2026-10-04",
@@ -225,7 +226,7 @@
      "bitis": "2026-10-17",
      "kim": "Claude",
      "oncelik": 1,
-     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır.",
+     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez: 08.10'da 2 yeniden tarama isteğiyle birlikte deney isteği 9 (ilk 5 çift). Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
      "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir."
     },
     {

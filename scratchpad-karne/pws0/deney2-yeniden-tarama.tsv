@@ -5,10 +5,16 @@
 # KURAL:
 #   1. Her gün tedavi + kontrol ÇİFT olarak gider (cift sütunu); günde 11 istek, sira sütunu sırasıyla (90 istek, yaklaşık 9 gün).
 #      Günün son isteği bir çifti bölecekse o çift ertesi güne kalır (o gün 10 istek): bir çiftin iki sayfası aynı gün istek alır.
+#      Kota bütün isteklerde ORTAK (ölçülen tavan günde 11; 04.10 ve 07.10'da 12. istek "Kota Aşıldı" verdi). Aynı güne başka
+#      istek işi yazılıysa önce o gider, deney kalan hakkı kullanır ve günün toplamı 11'i geçmez: 08.10'da 2 yeniden tarama
+#      isteğiyle (DIZIN-DAMLASI-31-08.md'deki açık 2 satır) birlikte deney isteği 9 (sira 1–9, ilk 5 çift).
 #   2. Her istekten ÖNCE tek adreslik API bakışı: node scripts/gsc-api.mjs denetle <url>
 #      son tarama >= 2026-10-06T22:17Z ise istek ATLANIR; o zaman ilk_tarama_yayin_sonrasi sütununa yazılır, yayin_sonrasi_taranmis "evet" olur.
-#   3. İstek gittiyse istek_zamani (UTC, ISO) yazılır; istekten SONRA tek adreslik bakışla tarama doğrulanır ve
-#      ilk_tarama_yayin_sonrasi doldurulur.
+#   3. İstek gittiyse istek_zamani (UTC, ISO: 2026-10-08T07:35:00Z) yazılır; istekten SONRA tek adreslik bakışla tarama
+#      doğrulanır ve ilk_tarama_yayin_sonrasi doldurulur. Deney isteklerinin TEK kaydı bu sütundur: is-takvimi-uret.py günlük
+#      istek sayısını ve "bugün istek gitti mi"yi buradan okur (Türkiye saatiyle güne çevirir). Boş bırakılan istek sayılmaz.
+#      Gönderilen deney isteği DIZIN-DAMLASI-31-08.md'ye "- [x]" satırı olarak da YAZILMAZ: müdahale defteri onu dizin isteği
+#      sayar ve zaten dizinde olan 90 sayfayı "dizine girdi" diye başarıya yazar.
 #   4. Toplu günlük (deney2-tarama-gunlugu.sh, 100 API çağrısı) istek günlerinde KOŞMAZ; son istekten sonraki ilk isteksiz günde bir kez.
 #   5. Bu liste DIZIN-DAMLASI-31-08.md'ye "- [ ]" satırı olarak YAZILMAZ: karne o sayfaları "dizin kuyruğu" sayar.
 #      Bu sayfaların hepsi dizinde; istek yeniden tarama isteğidir.

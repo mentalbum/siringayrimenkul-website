@@ -41,7 +41,7 @@
   "Eski/doğru ayrımı yalnız gerçek href okuyan kanalla yapılır (Chrome + ekle-deney-kompakt.py). ekle-uule.py / serp-cikarici-0710.js çıktısı bu ayrım için kullanılmaz: bağlar şifreli olduğunda adresi başlıktan varsayar.",
   "Sayfa kimliği başlık önekinden varsayılmaz; çözülemeyen kayıt 'belirsiz' yazılır.",
   "Sıra: yansiz_ornek_30 → oncelik_gercek_href → ada_6 → bayat_300_rastgele. deney_ciftleri ayrı takvimde: her çift kendi yeniden taramasından en az 3 gün sonra.",
-  "Aynı sorgu iki dilimde geçiyorsa bir kez ölçülür (çakışanlar dilim notunda).",
+  "Aynı sorgu iki dilimde geçiyorsa bir kez ölçülür (çakışanlar dilim notunda); tek istisna deney_ciftleri: deney sayfası başka dilimde ölçülmüş olsa da yeniden taramadan sonra eşiyle birlikte yeniden ölçülür.",
   "20.10 çekirdek bölge turu ve 04–05.11 turlarıyla aynı geceye konmaz.",
   "İlk gece raporu: 'Eylül'de doğru çıkan N sorgunun M'si hâlâ doğru, X'i ilk 10 dışı, Y'si başka sayfa' + %95 aralık. Rakam düşerse bu gerileme değil, yeni tabandır."
  ],
@@ -180,7 +180,7 @@
    ]
   },
   "bayat_300_rastgele": {
-   "not": "Ağustos+Eylül'den kalan 300 kaydın geri kalanı, aynı tohumla karıştırılmış: yarım kalan tur da yansız örnektir. Hariç: Başlık deneyi 2'nin 100 sayfası (deney_ciftleri'nde) ve öteki üç dilimde zaten olanlar. Gecede en çok 60'lık dilimlerle.",
+   "not": "Bayat 300 kaydın (son ölçümü Ağustos ya da Eylül) bu dilime düşen 178'i, aynı tohumla karıştırılmış: yarım kalan tur da yansız örnektir. Geri kalanı başka dilimlerde: Başlık deneyi 2'nin sayfaları (deney_ciftleri'nde) ve öteki üç dilimde zaten olanlar. Gecede kaç sorgu ölçüleceği kurallar[0]'da.",
    "n": 178,
    "kayitlar": [
     {
