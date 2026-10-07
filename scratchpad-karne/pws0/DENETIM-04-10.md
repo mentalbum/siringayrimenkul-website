@@ -139,3 +139,42 @@ gösterim kesmesi), spam güncellemesiyle aynı gün başladı. 20.10'da yeniden
 uule SERP ölçümü (ana sayfa organik konumu) istendi.
 **GSC API tuzağı (07.10 ölçümü):** page FİLTRESİ + device/country BOYUTU birlikte veriyi yarıdan fazla
 düşürüyor (31.116 → 13.895 gösterim); cihaz/ülke kırılımı yalnız filtresiz, filtreli analiz page boyutuyla.
+
+## 07.10 — Çıplak "emlakçı" taban ölçümü (paralel oturumun GSC bulgusu üzerine)
+
+Paralel oturum GSC'de tek somut konum kaybını çıplak "emlakçı" sorgusunda
+buldu (ana sayfa 42→11 gös/gün, poz 3,9→6,5, masaüstü 16,5→1,5). SERP'te
+sınandı — **GSC'yi doğruluyor ve daha sert**:
+
+| tarih | organik | harita kutusu |
+|---|---|---|
+| 28.08 | **3** | 1 |
+| 07.10 | **ilk 10 DIŞI** (2. sayfada da yok) | **1** |
+
+Ölçüm: `q=emlakçı&pws=0&gl=tr&hl=tr` + uule Eryaman merkez (39.9779, 32.6382),
+`sonuclar-bolge.jsonl`'e yazıldı (28.08 tabanıyla aynı araç/nokta/sorgu).
+
+### Okuma
+1. **Harita kutusu sağlam, organik çöktü.** Kutuda hâlâ #1'iz (ilk üç: biz,
+   Ayyıldız, Efor — üçü de Eryaman, yani uule tuttu). Yani bu bir "işletme
+   görünürlüğü" kaybı değil, SAYFA kaybı. Harita kutusu hipotezinin
+   çürütülmesiyle tutarlı: iki kanal bağımsız.
+2. **GSC'den daha kötü.** GSC "poz 6,5" diyor; bu noktadan ilk 20'de yokuz.
+   İkisi çelişmiyor: GSC yalnızca GÖSTERİLDİĞİMİZ aramaları ortalıyor, biz
+   tek noktadan bakıyoruz. Ama Eryaman merkez bizim en güçlü noktamız
+   olmalıydı — oradan düşmüşsek kayıp gerçek.
+3. Sayfa 1'de yalnızca 8 organik sonuç var (kutu yer kaplıyor) — slot zaten
+   dar, düşüş o yüzden daha keskin hissediliyor.
+
+### İhtiyat
+TEK ölçüm. 20.10 okumasında aynı nokta+sorgu tekrarlanmalı; tek seferlik
+dalgalanma ihtimali elenmeden "kalıcı kayıp" denmemeli. Karşılaştırma için
+bugün ölçülen "eryaman emlakçı" (kutu #1, organik #2) sağlam — yani kayıp
+çıplak sorguya ÖZGÜ, marka/bölge sorgularına bulaşmamış.
+
+### Araç notu
+`bolge-tur.mjs` ölçüm JS'indeki `loc` seçicisi (`.dfB0uf`/`#swml`) boş
+dönüyor — Google arayüzü değişmiş. Protokolde "loc beklenen semti
+göstermiyorsa DUR" yazıyor; bu turda uule'nin tuttuğu kutudaki üç Eryaman
+işletmesinden doğrulandı, ama seçici güncellenmeli yoksa sonraki turlar
+boşuna duracak.
