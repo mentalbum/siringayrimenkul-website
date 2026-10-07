@@ -3,18 +3,18 @@ import { TrackedLink } from "@/components/ui/tracked-link";
 import Link from "next/link";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
 import { siteConfig } from "@/lib/site-config";
+import { CerezTercihi } from "@/components/ui/cerez-tercihi";
 
 // Statik tarih bilinçli: metin değiştikçe elle güncellenir (tek seferlik işler
 // kuralı — otomatik tarih, değişmeyen metne yapay tazelik verir).
-const SON_GUNCELLEME = "30 Temmuz 2026";
+const SON_GUNCELLEME = "7 Ekim 2026";
 
 export const metadata: Metadata = {
   title: "Gizlilik ve KVKK Aydınlatma Metni",
   description:
-    // 06.10: "çerezler yalnız izninizle çalışır" iddiası kaldırıldı — çerez rıza bandı
-    // 30.07'de söküldü (app/layout.tsx), GA tüm ziyaretçilerde çalışıyor; açıklama gövdeyle
-    // (analitik çerez, tarayıcıdan engellenebilir) hizalandı ve ≤155 karaktere çekildi.
-    "Şirin Gayrimenkul'ün kişisel veri işleme pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz, çerezler yalnız ölçüm için.",
+    // 07.10: rıza bandı geri geldi (lib/cerez-rizasi.ts) — "yalnız izninizle" yeniden
+    // doğru; ≤155 karakter.
+    "Şirin Gayrimenkul'ün kişisel veri pratiği: hangi veriler, hangi amaçla, nasıl. Form verileriniz sitemizde saklanmaz; analitik çerezler yalnız izninizle.",
   alternates: { canonical: "/gizlilik" },
 };
 
@@ -59,9 +59,16 @@ export default function GizlilikPage() {
             {/* {" "} ŞART: &apos; içeren çok satırlı metnin baştaki boşluğunu derleyici
                 düşürüyor — canlıda "Çerezler:Site" basılıyordu (06.10 ölçümü). */}
             {" "}
-            Site deneyimini ölçmek için Google Analytics kullanıyoruz.
-            Aşağıdaki analitik çerezler siteyi ziyaret ettiğinizde kullanılır. Bu çerezleri
-            istemiyorsanız tarayıcınızın çerez engelleme ayarlarını ya da Google&apos;ın{" "}
+            Site deneyimini ölçmek için Google Analytics kullanıyoruz. Aşağıdaki analitik
+            çerezler yalnız ekranın altındaki kutuda <strong>Kabul et</strong> derseniz
+            yerleştirilir; <strong>Reddet</strong>
+            {/* {" "} ŞART: aşağıdaki metin &apos; içeriyor ve çok satırlı — derleyici
+                baştaki boşluğu düşürür (06.10 bulgusu). */}
+            {" "}
+            derseniz ya da seçim yapmazsanız Google
+            Analytics hiç yüklenmez ve site aynı şekilde çalışır. Tercihinizi hatırlamak için
+            tarayıcınızın yerel depolamasına tek bir kayıt yazılır (çerez değildir, kimlik
+            taşımaz, bize gönderilmez); 12 ay sonra yeniden sorarız. Dilerseniz Google&apos;ın{" "}
             <a
               href="https://tools.google.com/dlpage/gaoptout"
               target="_blank"
@@ -70,8 +77,9 @@ export default function GizlilikPage() {
             >
               Analytics kapsam dışı eklentisini
             </a>{" "}
-            kullanabilirsiniz; site engelli çerezlerle de aynı şekilde çalışır.
+            da kullanabilirsiniz.
           </p>
+          <CerezTercihi />
           <div className="mt-4 overflow-x-auto">
             <table className="w-full min-w-[480px] border-collapse text-sm">
               <thead>
@@ -100,13 +108,14 @@ export default function GizlilikPage() {
           </div>
           <p className="mt-3 text-sm text-muted">
             Zorunlu (siteyi çalıştıran) çerez kullanmıyoruz; oturum açma, üyelik veya ödeme sistemi
-            yoktur.
+            yoktur. Yukarıdaki çerez tercihi kaydı dışında cihazınıza hiçbir şey yazılmaz.
           </p>
           <p className="mt-3">
             <strong>Çerezsiz toplu ölçüm:</strong> Sayfaların kaç kez görüntülendiğini saymak için
             ayrıca Vercel Web Analytics kullanıyoruz. Bu ölçüm <strong>çerez kullanmaz</strong>,
             cihazınıza hiçbir şey kaydetmez ve sizi kimliklendirmez; yalnızca &quot;bu sayfa bugün
-            kaç kez açıldı&quot; düzeyinde toplu sayılar üretir.
+            kaç kez açıldı&quot;, &quot;telefon düğmesine kaç kez basıldı&quot; düzeyinde toplu
+            sayılar üretir.
           </p>
         </section>
 

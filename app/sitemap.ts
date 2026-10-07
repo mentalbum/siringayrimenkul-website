@@ -84,7 +84,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
     // 06.10: "Çerezler:Site" bitişikliği giderildi; meta description'daki yanlış rıza
     //        iddiası kaldırıldı (görünen metin).
-    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.3 },
+    // 07.10: çerez rıza bandı geri geldi — çerez bölümü, tercih kutusu ve "son
+    //        güncelleme" tarihi değişti (sayfanın kendi içeriği).
+    { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     // 07.10: yetki belgesi numarası Bakanlığın TTBS sorgu sayfasına bağlandı (görünen metin).
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.4 },
