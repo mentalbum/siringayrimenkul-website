@@ -11,8 +11,8 @@
  "donusum": 100,
  "istekten_sonra_tarandi": 69,
  "tarama_orani": 99,
- "girenlerden_olculdu": 51,
- "girenlerden_ilk3": 41,
+ "girenlerden_olculdu": 56,
+ "girenlerden_ilk3": 46,
  "tarihe_gore": [
   {
    "tarih": "01.09",
@@ -170,7 +170,7 @@
    "son_tarama": "2026-09-21",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 0,
+   "sira_sonra": 2,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -450,8 +450,8 @@
    "son_tarama": "2026-10-04",
    "istekten_sonra_tarandi": true,
    "sira_once": 8,
-   "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "sira_sonra": 4,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -479,7 +479,7 @@
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
    "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -493,7 +493,7 @@
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
    "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -507,7 +507,7 @@
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
    "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -520,8 +520,8 @@
    "son_tarama": "2026-10-04",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "sira_sonra": 1,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -590,7 +590,7 @@
    "son_tarama": "2026-09-24",
    "istekten_sonra_tarandi": true,
    "sira_once": 6,
-   "sira_sonra": 6,
+   "sira_sonra": 2,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -632,7 +632,7 @@
    "son_tarama": "2026-09-19",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 7,
+   "sira_sonra": 1,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -702,8 +702,8 @@
    "son_tarama": "2026-09-22",
    "istekten_sonra_tarandi": true,
    "sira_once": 4,
-   "sira_sonra": 0,
-   "olculdu_sonra": false,
+   "sira_sonra": 3,
+   "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
   {
@@ -968,7 +968,7 @@
    "son_tarama": "2026-09-11",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 1,
+   "sira_sonra": 9,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -1024,7 +1024,7 @@
    "son_tarama": "2026-09-26",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 0,
+   "sira_sonra": 1,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },

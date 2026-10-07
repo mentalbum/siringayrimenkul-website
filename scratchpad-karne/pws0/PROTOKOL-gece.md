@@ -940,3 +940,42 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
   çürüdü). Ancak uule'li ölçümde Efor bizi geçmiyor, konu önemsizleşti.
 - Kuyruk temizliği: kuyruk-site-emlakci.json 511→510 (4. Devlet sayfası 410), Kurtuluş sorgusu Yükselay
   sayfasına bağlandı (veri sağlığı "karşılığı olmayan kayıt" 2→0).
+
+## 07.10 — ETAP TABANI OKUMASI (08.08 iç bağ müdahalesi, 19.09'da yapılmamıştı): DİZİNE GİRDİ, SIRAYI ALMADI
+
+- 08.08'de etap sayfalarının 4'ü "Keşfedildi – dizine eklenmedi" idi; footer etap bloğu + bayat 301'lerin
+  kaldırılması aynı gün yapıldı. Soru: iç bağ tarama bütçesi darboğazını açar mı? Okuma 19.09'a konmuştu,
+  yapılmamıştı; bugün API ile: **5/5 etap sayfası dizinde**, son taramalar 21.09–05.10 (taze).
+  GSC 28g (07.09–04.10): 1. Etap 9 gös/0 tık, 2. Etap 27/1, 3. Etap 57/0 (+ eski adres 3/0), 4. Etap 50/2,
+  5. Etap 72/0; ortalama konum 7,4–10,9. Sorgular: "eryaman etapları" 37/3, "eryaman kaç etap" 19/1,
+  "eryaman etaplar haritası" 13/1 — yani etap sayfaları BİLGİ sorgularında görünüyor.
+- "Eryaman N. Etap emlakçı" hedef sorgularında ise sırayı 5/5 ANA SAYFA tutuyor (uule'li ölçüm: 2, 4, 4, 1,
+  5(Sarıgül)+10). Etap sayfası bu sorgularda ilk 10'da hiç yok.
+- Sonuç: iç bağ → dizin bağı DOĞRULANDI (4 keşfedilmemiş sayfa dizine girdi); iç bağ → hedef sorguda sıra
+  bağı YOK. Etap sayfasına içerik yatırımı bu veriyle gerekçelenmiyor; 02.09 bulgusu ("etap sayfaları değil,
+  ana sayfa") yerinde. Kaldıraç defterine işlendi.
+
+## 07.10 — PR #91 OKUMASI (24 güçlendirilen sayfa vs 19 kontrol): ZAYIF OLUMLU, KANIT YETERSİZ — KALDIRAÇ AÇIK KALIR
+
+- Tasarım (06.09 kaldıraç defteri): ilk 10 dışı 53 sorgunun yerel boşluk olanlarından açıklaması en kısa
+  24'üne 07.09'da veriye dayalı ikinci paragraf (PR #91); kontrol = aynı listede güçlendirilmeyen 19
+  (yapısal adaş dosyasındaki 14 çıkarıldı; `pr91-kollar.json`). 21.09/05.10 okumaları YAPILMAMIŞTI; bu ilk.
+- Tarama: 24'ün 24'ü 07.09'dan sonra yeniden tarandı (API, 12.09–04.10; 11'i 04.10 isteğiyle) → yeni
+  kopya Google'da.
+- **SERP (uule=Eryaman merkez, 16:40–17:20):** tedavi ilk 10'da **8/24** (hepsi 1–2. sıra; 7'si doğru
+  sayfa: İlk Bahar 1, Akkonak 2, Meltem 1, Üçyıldız 2, Altıntepe 1, Taşkent 1, Utku 1; Platin'i komşu
+  sayfa Platin 2 temsil ediyor). Kontrol **4/19** (Mavikent 2, Çağkent 1, Pasaj Eryaman 5 doğru; Göksu
+  Evleri'ni Göksu Manzara Evleri temsil ediyor). Taban (04–06.09) her iki kolda 0/0. Fisher p=0,50.
+- **GSC sayfa düzeyi (konumdan bağımsız), 10.08–06.09 → 08.09–04.10:** tedavi gösterim 802→543 (−%32),
+  tık 16→12, medyan konum 7,32→6,77, gösterim alan sayfa 23→24. Kontrol gösterim 673→314 (−%53), tık
+  11→3, medyan konum 8,09→8,00, gösterim alan sayfa 19→13 (6 sayfa sıfıra düştü). Site geneli aynı
+  dönemde düşüyor (24.09 kırılması, DENETIM-04-10); tedavi kolu düşüşten daha az etkilendi.
+- Dört gösterge de aynı yöne bakıyor (ilk 10 oranı 1,6×, gösterim düşüşü yarısı, konum +0,55, kapsam
+  korunmuş) ama hiçbiri tek başına anlamlı değil; karıştırıcılar: seçim yanlılığı (tedavi = en kısa
+  açıklamalar, çoğu jenerik ad), PR #90 başlık değişikliği (iki kolda da var), site geneli düşüş.
+- Adaş gerçeği: iki kolda 15+ sorguda ilk 3 Eryaman dışı (İzmir Işıkkent, İstanbul Erenköy, Çankaya
+  İkizler/Çamlık/Angora/Mesa/Barış, Sincan Selçuklu, Batıkent Ak Kent, ofis adaşları Merkez/Turkuaz/
+  Umut/Aksu/Sahil/Güneyce) → içerikle çözülmez; 06.09 adaş sayımı (19) eksikti.
+- Karar: kaldıraç AÇIK kalır, toplu içerik derinleştirme programı BAŞLATILMAZ (kanıt yetersiz); ikinci
+  okuma 04.11 GSC ile (konum bağımsız; aynı iki kol, aynı pencere uzunluğu). Dosyalar: pr91-okuma-0710.json,
+  pr91-kollar.json.

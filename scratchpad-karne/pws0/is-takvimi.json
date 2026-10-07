@@ -2,7 +2,7 @@
  "guncelleme": "2026-10-07",
  "uretim": "is-takvimi-uret.py",
  "damla": {
-  "acik": 2,
+  "acik": 4,
   "kota_gun": 10,
   "baslangic": "2026-10-07",
   "bitis_kota": "2026-10-07",
@@ -147,7 +147,7 @@
   {
    "tarih": "2026-10-07",
    "tarih_tr": "07.10 Çarşamba",
-   "is": "Dizin damlası: 2 istek gönder, altintepe-sitesi (Yavuz Selim) ile başla. Kuyrukta 2 sayfa açık, gün sonunda 0 kalır.",
+   "is": "Dizin damlası: 4 istek gönder, altintepe-sitesi (Yavuz Selim) ile başla. Kuyrukta 4 sayfa açık, gün sonunda 0 kalır.",
    "neden": "Kuyruktaki her sayfa Search Console API ile dizin dışı doğrulandı ve 28 günde sıfır gösterim aldı; tek ilacı dizine girmek. Kota günde yaklaşık 10 istek ve takvim günü değil kayan 24 saat: dünkü istekler sabah gittiyse pencere ertesi gün aynı saatten sonra açılır; 'sorun oluştu' balonu kota dolu demektir, tekrar basılmaz. İstek, dizin dışı sayfada aynı gün tarama getiriyor (damla turları). İlk sıradaki sayfanın kuyruk notu: 04.10 KOTA AŞILDI, istek işlenmedi (12.09)",
    "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
    "kim": "Claude",
@@ -158,6 +158,14 @@
     },
     {
      "url": "https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari",
+     "durum": ""
+    },
+    {
+     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari",
+     "durum": ""
+    },
+    {
+     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent/konuta-ozlem-sitesi",
      "durum": ""
     }
    ]

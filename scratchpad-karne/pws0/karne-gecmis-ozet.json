@@ -44,15 +44,15 @@
    "ad": "İlk 3 payı (ölçülen site sorguları)",
    "birim": "%",
    "artis": "iyi",
-   "son": 75.4,
+   "son": 77.0,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": 75.4,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 0.0,
-   "fark_yuzde": 0.0,
-   "yon": "nötr",
+   "fark": 1.6,
+   "fark_yuzde": 2.1,
+   "yon": "iyi",
    "sparkline": [
     75.4,
     75.4,
@@ -61,7 +61,7 @@
     75.0,
     75.2,
     75.4,
-    75.4
+    77.0
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -74,22 +74,23 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_bolge_turu_pay": 99.8,
+   "son_bolge_turu_pay": 100.0,
    "onceki_bolge_turu_pay": 99.8,
-   "olcum_yontemi_degisti": false
+   "olcum_yontemi_degisti": false,
+   "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
   },
   "dogru_sayfa_pay": {
    "ad": "İlk 3'te doğru sayfa payı",
    "birim": "%",
    "artis": "iyi",
-   "son": 82.8,
+   "son": 85.5,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": 79.2,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 3.6,
-   "fark_yuzde": 4.5,
+   "fark": 6.3,
+   "fark_yuzde": 8.0,
    "yon": "iyi",
    "sparkline": [
     79.2,
@@ -99,7 +100,7 @@
     80.7,
     80.7,
     82.8,
-    82.8
+    85.5
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -112,23 +113,24 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_bolge_turu_pay": 99.8,
+   "son_bolge_turu_pay": 100.0,
    "onceki_bolge_turu_pay": 99.8,
-   "olcum_yontemi_degisti": false
+   "olcum_yontemi_degisti": false,
+   "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
   },
   "ilk10_disi": {
    "ad": "İlk 10 dışı payı",
    "birim": "%",
    "artis": "kotu",
-   "son": 10.8,
+   "son": 10.2,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": 10.6,
    "onceki_tarih": "2026-09-30",
    "onceki_kaynak": "geri_doldurma",
-   "fark": 0.2,
-   "fark_yuzde": 1.9,
-   "yon": "kötü",
+   "fark": -0.4,
+   "fark_yuzde": -3.8,
+   "yon": "iyi",
    "sparkline": [
     10.6,
     10.6,
@@ -137,7 +139,7 @@
     11.2,
     11.0,
     10.8,
-    10.8
+    10.2
    ],
    "sparkline_tarihler": [
     "2026-09-30",
@@ -150,9 +152,10 @@
     "2026-10-07"
    ],
    "nokta_sayisi": 48,
-   "son_bolge_turu_pay": 99.8,
+   "son_bolge_turu_pay": 100.0,
    "onceki_bolge_turu_pay": 99.8,
-   "olcum_yontemi_degisti": false
+   "olcum_yontemi_degisti": false,
+   "not": "önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)"
   },
   "gsc_tik_28": {
    "ad": "GSC tık (28 gün)",
@@ -680,7 +683,7 @@
    "ad": "Dizin damlası: açık kayıt",
    "birim": "adet",
    "artis": "kotu",
-   "son": 10,
+   "son": 12,
    "son_tarih": "2026-10-07",
    "son_kaynak": "anlik",
    "onceki": null,
@@ -697,7 +700,7 @@
     10,
     null,
     null,
-    10
+    12
    ],
    "sparkline_tarihler": [
     "2026-09-30",

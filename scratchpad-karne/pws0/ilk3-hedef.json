@@ -11,9 +11,10 @@
    "sonuclar-emlakci.jsonl (eryaman emlakçı)"
   ],
   "dizin_denetimleri": [
-   "gorunmez-denetim.tsv"
+   "gorunmez-denetim.tsv",
+   "pr91-denetim.tsv"
   ],
-  "dizin_denetimi_url_sayisi": 53,
+  "dizin_denetimi_url_sayisi": 56,
   "dizin_yedek": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, 554 URL; taze denetim yoksa, ESKİ etiketli)",
   "damla": [
    "DIZIN-DAMLASI-31-08.md",
@@ -52,17 +53,17 @@
   "B": {
    "ad": "İlk 10 dışı — dizinde (sıra sorunu)",
    "kaldirac": "",
-   "n": 61,
-   "n_site": 55,
+   "n": 58,
+   "n_site": 52,
    "n_hedef": 6,
    "alt": [
     [
      "taze denetim",
-     53
+     46
     ],
     [
      "27.08 envanteri (taze denetim yok)",
-     8
+     12
     ]
    ],
    "mahalle": [
@@ -72,11 +73,7 @@
     ],
     [
      "guzelkent-mahallesi",
-     9
-    ],
-    [
-     "yavuz-selim-mahallesi",
-     9
+     10
     ],
     [
      "devlet-mahallesi",
@@ -91,6 +88,10 @@
      7
     ],
     [
+     "yavuz-selim-mahallesi",
+     6
+    ],
+    [
      "mahalle",
      6
     ],
@@ -100,7 +101,7 @@
     ],
     [
      "sehit-osman-avci-mahallesi",
-     2
+     1
     ],
     [
      "tunahan-mahallesi",
@@ -109,34 +110,34 @@
    ],
    "tarama_kovasi": [
     [
-     "8-30 gün",
-     22
-    ],
-    [
      "30+ gün",
      19
     ],
     [
+     "8-30 gün",
+     17
+    ],
+    [
      "≤7 gün",
-     12
+     10
     ],
     [
      "≤7 gün (bayat okuma)",
-     4
+     5
     ],
     [
      "8-30 gün (bayat okuma)",
-     3
+     4
     ],
     [
      "30+ gün (bayat okuma)",
-     1
+     3
     ]
    ],
    "sira_dagilimi": [
     [
      0,
-     61
+     58
     ]
    ]
   },
@@ -155,23 +156,23 @@
   "C": {
    "ad": "4-10'da doğru sayfa",
    "kaldirac": "",
-   "n": 23,
-   "n_site": 21,
+   "n": 26,
+   "n_site": 24,
    "n_hedef": 2,
    "alt": [
     [
      "4-5",
-     16
+     20
     ],
     [
      "6-10",
-     7
+     6
     ]
    ],
    "mahalle": [
     [
      "goksu-mahallesi",
-     4
+     6
     ],
     [
      "seyh-samil-mahallesi",
@@ -200,38 +201,50 @@
     [
      "mahalle",
      2
+    ],
+    [
+     "yavuz-selim-mahallesi",
+     1
     ]
    ],
    "tarama_kovasi": [
     [
      "8-30 gün (bayat okuma)",
-     9
+     10
+    ],
+    [
+     "30+ gün (bayat okuma)",
+     6
     ],
     [
      "hiç taranmamış",
      5
     ],
     [
-     "30+ gün (bayat okuma)",
-     5
+     "≤7 gün (bayat okuma)",
+     3
     ],
     [
-     "≤7 gün (bayat okuma)",
-     4
+     "8-30 gün",
+     1
+    ],
+    [
+     "≤7 gün",
+     1
     ]
    ],
    "sira_dagilimi": [
     [
      4,
-     12
+     15
     ],
     [
      5,
-     4
+     5
     ],
     [
      6,
-     4
+     3
     ],
     [
      7,
@@ -246,24 +259,24 @@
   "D": {
    "ad": "İlk 3'te ama YANLIŞ sayfa",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "n": 66,
-   "n_site": 64,
+   "n": 57,
+   "n_site": 55,
    "n_hedef": 2,
    "alt": [
     [
      "eski",
-     37
+     30
     ],
     [
      "baska_site",
-     18
-    ],
-    [
-     "ada",
-     5
+     17
     ],
     [
      "mahalle",
+     4
+    ],
+    [
+     "ada",
      4
     ],
     [
@@ -273,20 +286,20 @@
    ],
    "mahalle": [
     [
-     "guzelkent-mahallesi",
-     11
-    ],
-    [
-     "goksu-mahallesi",
-     9
-    ],
-    [
      "sehit-osman-avci-mahallesi",
      9
     ],
     [
      "yavuz-selim-mahallesi",
      8
+    ],
+    [
+     "goksu-mahallesi",
+     6
+    ],
+    [
+     "guzelkent-mahallesi",
+     6
     ],
     [
      "seyh-samil-mahallesi",
@@ -302,7 +315,7 @@
     ],
     [
      "devlet-mahallesi",
-     4
+     3
     ],
     [
      "eryaman-mahallesi",
@@ -323,44 +336,48 @@
    ],
    "tarama_kovasi": [
     [
-     "30+ gün (bayat okuma)",
-     23
-    ],
-    [
      "8-30 gün (bayat okuma)",
-     23
+     22
     ],
     [
-     "hiç taranmamış",
-     11
+     "30+ gün (bayat okuma)",
+     18
     ],
     [
      "≤7 gün (bayat okuma)",
-     9
+     8
+    ],
+    [
+     "hiç taranmamış",
+     8
+    ],
+    [
+     "8-30 gün",
+     1
     ]
    ],
    "sira_dagilimi": [
     [
      2,
-     26
+     22
     ],
     [
      3,
-     20
+     19
     ],
     [
      1,
-     20
+     16
     ]
    ],
    "dogru_sayfa_serpte": [
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
-     39
+     34
     ],
     [
      "hayır (1. sayfada tek sayfamız var)",
-     21
+     17
     ],
     [
      "bilinmiyor",
@@ -374,35 +391,35 @@
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     54
+     48
     ],
     [
      "YOK",
-     12
+     9
     ]
    ],
    "tutan_sayfa_dizin": [
     [
      "denetlenmedi",
-     42
+     32
     ],
     [
      "MEVCUT",
-     21
+     20
     ],
     [
      "YOK",
-     3
+     5
     ]
    ],
    "sira1_bizim_kanal": [
     [
      null,
-     42
+     37
     ],
     [
      true,
-     20
+     16
     ],
     [
      false,
@@ -412,22 +429,22 @@
    "alt_x_dogru_dizin": [
     [
      "eski / doğru sayfa dizinde",
-     27
+     23
     ],
     [
      "baska_site / doğru sayfa dizinde",
-     16
+     15
     ],
     [
      "eski / doğru sayfa DİZİN DIŞI",
-     10
-    ],
-    [
-     "ada / doğru sayfa dizinde",
-     5
+     7
     ],
     [
      "mahalle / doğru sayfa dizinde",
+     4
+    ],
+    [
+     "ada / doğru sayfa dizinde",
      4
     ],
     [
@@ -442,35 +459,35 @@
    "kaldirac_dagilimi": [
     [
      "doğru sayfa yerine yanlış sayfa çıkıyor",
-     27
+     25
     ],
     [
      "eski adres çıkıyor",
-     27
+     23
     ],
     [
      "DAMLA",
-     12
+     9
     ]
    ],
    "eski_tutan_tarama": [
     [
      "denetlenmedi",
-     37
+     28
+    ],
+    [
+     "hiç taranmamış",
+     2
     ]
    ],
    "eski_canli_308": 0,
    "dizin_disi_istek": [
     [
-     "kendiliğinden dizine girdi/tarandı 03.09",
-     2
-    ],
-    [
-     "eski kuyrukta, açık",
-     2
-    ],
-    [
      "istek gönderildi 04.09",
+     2
+    ],
+    [
+     "istek gönderildi 06.09",
      2
     ],
     [
@@ -482,11 +499,7 @@
      1
     ],
     [
-     "istek gönderildi 03.09",
-     1
-    ],
-    [
-     "istek gönderildi 06.09",
+     "kendiliğinden dizine girdi/tarandı 03.09",
      1
     ],
     [
@@ -498,20 +511,20 @@
   "F": {
    "ad": "4-10'da YANLIŞ sayfa",
    "kaldirac": "",
-   "n": 54,
-   "n_site": 49,
+   "n": 46,
+   "n_site": 41,
    "n_hedef": 5,
    "alt": [
     [
      "baska_site",
-     18
-    ],
-    [
-     "ada",
-     14
+     13
     ],
     [
      "mahalle",
+     13
+    ],
+    [
+     "ada",
      12
     ],
     [
@@ -520,7 +533,7 @@
     ],
     [
      "eski",
-     4
+     2
     ],
     [
      "diger",
@@ -528,10 +541,6 @@
     ]
    ],
    "mahalle": [
-    [
-     "guzelkent-mahallesi",
-     10
-    ],
     [
      "sehit-osman-avci-mahallesi",
      10
@@ -545,7 +554,7 @@
      6
     ],
     [
-     "goksu-mahallesi",
+     "guzelkent-mahallesi",
      5
     ],
     [
@@ -562,6 +571,10 @@
     ],
     [
      "eryaman-mahallesi",
+     2
+    ],
+    [
+     "goksu-mahallesi",
      2
     ],
     [
@@ -584,55 +597,55 @@
    "tarama_kovasi": [
     [
      "30+ gün (bayat okuma)",
-     26
-    ],
-    [
-     "hiç taranmamış",
-     10
+     22
     ],
     [
      "≤7 gün (bayat okuma)",
      10
     ],
     [
-     "8-30 gün (bayat okuma)",
+     "hiç taranmamış",
      8
+    ],
+    [
+     "8-30 gün (bayat okuma)",
+     6
     ]
    ],
    "sira_dagilimi": [
     [
      4,
-     19
-    ],
-    [
-     7,
-     11
+     17
     ],
     [
      6,
-     11
+     10
     ],
     [
      5,
      7
     ],
     [
-     8,
-     3
+     7,
+     6
     ],
     [
      9,
-     3
+     4
+    ],
+    [
+     8,
+     2
     ]
    ],
    "dogru_sayfa_serpte": [
     [
      "hayır (1. sayfada tek sayfamız var)",
-     34
+     28
     ],
     [
      "belirsiz (ikinci sayfamız var, URL kaydedilmedi)",
-     17
+     15
     ],
     [
      "bilinmiyor",
@@ -642,27 +655,27 @@
    "dogru_sayfa_dizin": [
     [
      "MEVCUT",
-     44
+     38
     ],
     [
      "YOK",
-     10
+     8
     ]
    ],
    "tutan_sayfa_dizin": [
     [
      "MEVCUT",
-     33
+     29
     ],
     [
      "denetlenmedi",
-     21
+     17
     ]
    ],
    "sira1_bizim_kanal": [
     [
      null,
-     51
+     43
     ],
     [
      false,
@@ -672,7 +685,7 @@
    "alt_x_dogru_dizin": [
     [
      "baska_site / doğru sayfa dizinde",
-     15
+     11
     ],
     [
      "mahalle / doğru sayfa dizinde",
@@ -680,7 +693,7 @@
     ],
     [
      "ada / doğru sayfa dizinde",
-     10
+     9
     ],
     [
      "ana_sayfa / doğru sayfa dizinde",
@@ -688,23 +701,19 @@
     ],
     [
      "ada / doğru sayfa DİZİN DIŞI",
-     4
-    ],
-    [
-     "eski / doğru sayfa dizinde",
-     3
-    ],
-    [
-     "baska_site / doğru sayfa DİZİN DIŞI",
      3
     ],
     [
      "mahalle / doğru sayfa DİZİN DIŞI",
-     1
+     2
     ],
     [
-     "eski / doğru sayfa DİZİN DIŞI",
-     1
+     "eski / doğru sayfa dizinde",
+     2
+    ],
+    [
+     "baska_site / doğru sayfa DİZİN DIŞI",
+     2
     ],
     [
      "diger / doğru sayfa DİZİN DIŞI",
@@ -714,35 +723,31 @@
    "kaldirac_dagilimi": [
     [
      "(boş)",
-     44
+     38
     ],
     [
      "DAMLA",
-     10
+     8
     ]
    ],
    "eski_tutan_tarama": [
     [
      "denetlenmedi",
-     4
+     2
     ]
    ],
    "eski_canli_308": 0,
    "dizin_disi_istek": [
     [
      "eski kuyrukta, açık",
-     4
-    ],
-    [
-     "istek gönderildi 05.09",
-     3
+     5
     ],
     [
      "istek gönderildi 03.09",
      1
     ],
     [
-     "istek gönderildi 06.09",
+     "istek gönderildi 05.09",
      1
     ],
     [
@@ -754,13 +759,13 @@
   "E": {
    "ad": "İlk 3'te doğru sayfa (hedef dışı)",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "n": 323,
-   "n_site": 321,
+   "n": 340,
+   "n_site": 338,
    "n_hedef": 2,
    "alt": [
     [
      "dogru",
-     321
+     338
     ],
     [
      "dogru_es",
@@ -770,31 +775,31 @@
    "mahalle": [
     [
      "guzelkent-mahallesi",
-     47
+     56
     ],
     [
      "sehit-osman-avci-mahallesi",
-     43
+     44
+    ],
+    [
+     "goksu-mahallesi",
+     42
     ],
     [
      "eryaman-mahallesi",
      39
     ],
     [
-     "goksu-mahallesi",
-     38
+     "yavuz-selim-mahallesi",
+     35
     ],
     [
      "seyh-samil-mahallesi",
      34
     ],
     [
-     "yavuz-selim-mahallesi",
-     33
-    ],
-    [
      "devlet-mahallesi",
-     28
+     29
     ],
     [
      "altay-mahallesi",
@@ -824,33 +829,41 @@
    "tarama_kovasi": [
     [
      "8-30 gün (bayat okuma)",
-     126
+     125
     ],
     [
      "30+ gün (bayat okuma)",
-     76
+     81
     ],
     [
      "≤7 gün (bayat okuma)",
-     68
+     69
     ],
     [
      "hiç taranmamış",
-     51
+     56
+    ],
+    [
+     "8-30 gün",
+     6
     ],
     [
      "denetlenmedi",
      2
+    ],
+    [
+     "≤7 gün",
+     1
     ]
    ],
    "sira_dagilimi": [
     [
      2,
-     140
+     147
     ],
     [
      1,
-     134
+     144
     ],
     [
      3,
@@ -876,24 +889,24 @@
   "site": 510,
   "hedef": 17,
   "olculmedi": 0,
-  "ilk3_dogru_E": 323,
-  "hedef_disi_toplam_A_B_AB_C_D_F": 204,
+  "ilk3_dogru_E": 340,
+  "hedef_disi_toplam_A_B_AB_C_D_F": 187,
   "hedef_disi_kaldirac_ailesi": [
    [
     "boş — analiz ekseni dolduracak",
-    128
+    122
    ],
    [
     "başlık hizası (07.09 sonrası)",
-    27
+    25
    ],
    [
     "301 sindirme (eski adres, 07.09 sonrası başlık hizası da)",
-    27
+    23
    ],
    [
     "damla (kanıtlı)",
-    22
+    17
    ]
   ],
   "gsc_sorgu_satiri_olan": 1,
@@ -902,15 +915,15 @@
  "capraz_kontrol": {
   "bu_betik": {
    "olculen": 510,
-   "ilk3_toplam": 385,
-   "ilk3_dogru_es_dahil": 321,
-   "ilk3_dogru_es_haric": 319,
-   "ilk10_yok": 55
+   "ilk3_toplam": 393,
+   "ilk3_dogru_es_dahil": 338,
+   "ilk3_dogru_es_haric": 336,
+   "ilk10_yok": 52
   },
   "dogru_sayfa_json": {
    "olculen": 509,
-   "ilk3_toplam": 384,
-   "ilk3_dogru": 318,
+   "ilk3_toplam": 392,
+   "ilk3_dogru": 335,
    "guncelleme": "2026-10-07"
   },
   "not": "dogru-sayfa.py 'es' (aynı adlı ikinci kayıt) eşleşmesini başka site sayar; bu betik doğru sayar ve adas_es ile işaretler."
@@ -3050,10 +3063,10 @@
    },
    "bas": "Çağkent Sitesi Emlakçı | ",
    "h": null,
-   "olcum_tarihi": "2026-10-04",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "kontrol",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -3716,10 +3729,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-04",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -3819,7 +3832,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-28",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 9,
     "canonical": "/mahalleler/devlet-mahallesi/ikizler-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -3854,10 +3867,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -3866,40 +3879,30 @@
    "aile": "devlet-mahallesi",
    "s": "devlet-mahallesi/ilk-bahar-sitesi",
    "sayfa": "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 1,
-   "tutan_url": "/mahalleler/devlet/ilk-bahar-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "tutan_url": "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-29",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 29,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
+    "son_tarama": "2026-09-16",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
+    "tarama_yasi_gun": 21,
+    "canonical": "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
+    "denetim_tarihi": "2026-10-07",
+    "denetim_yasi_gun": 0,
+    "kova_guvenilir": true
    },
-   "son_tarama": "2026-07-29",
+   "son_tarama": "2026-09-16",
    "dizin_durumu": "MEVCUT",
-   "tarama_kovasi": "8-30 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tarama_kovasi": "8-30 gün",
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -3912,7 +3915,7 @@
      "poz": 5.0
     },
     "tutan_sayfa": {
-     "gost": 4,
+     "gost": 1,
      "tik": 0,
      "poz": 5.0
     }
@@ -3928,10 +3931,10 @@
    },
    "bas": "İlk Bahar Sitesi Emlakçıs",
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "deney",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -4056,10 +4059,10 @@
    },
    "bas": "Mavikent Sitesi - Eryaman",
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -4560,10 +4563,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -4748,10 +4751,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol; Sincan adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -5351,7 +5354,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-02",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 5,
     "canonical": "/mahalleler/devlet-mahallesi/yuceyurt-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -5386,10 +5389,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -7483,7 +7486,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-28",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 9,
     "canonical": "/mahalleler/eryaman-mahallesi/isikkent-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -7518,10 +7521,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi; İzmir adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -8250,17 +8253,17 @@
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-27",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 31,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
+    "son_tarama": "2026-09-13",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
+    "tarama_yasi_gun": 24,
+    "canonical": "/mahalleler/eryaman-mahallesi/platin-konutlari",
+    "denetim_tarihi": "2026-10-07",
+    "denetim_yasi_gun": 0,
+    "kova_guvenilir": true
    },
-   "son_tarama": "2026-07-27",
+   "son_tarama": "2026-09-13",
    "dizin_durumu": "MEVCUT",
-   "tarama_kovasi": "30+ gün (bayat okuma)",
+   "tarama_kovasi": "8-30 gün",
    "tutan_dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -8300,10 +8303,10 @@
    },
    "bas": "Platin 2 Konutları - Erya",
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; yol≈(cite) başlık: Platin 2 Konutları - Eryaman Mahallesi - Şirin Gayrimenkul; PR91 tedavi; komşu sayfa (Platin 2) temsil ediyor",
    "icerik_dosyasi_var": true
   },
   {
@@ -8420,10 +8423,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol; jenerik ad",
    "icerik_dosyasi_var": true
   },
   {
@@ -9066,10 +9069,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol; Çankaya Angora Evleri adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -9279,7 +9282,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/goksu-mahallesi/doga-konutlari",
     "denetim_tarihi": "2026-10-07",
@@ -9314,10 +9317,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -9837,7 +9840,7 @@
    "sinif": "D",
    "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
    "alt_sinif": "baska_site",
-   "sira": 2,
+   "sira": 3,
    "tutan_url": "/mahalleler/goksu-mahallesi/goksu-manzara-evleri",
    "tutan_tur": "baska_site",
    "tutan_tur_ad": "başka site sayfamız",
@@ -9900,10 +9903,10 @@
    },
    "bas": "Göksu Manzara Evleri Emla",
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu yok; yol≈(cite) başlık: Göksu Manzara Evleri Emlakçı | Evinizi Satalım, Kiraya Verel; PR91 kontrol; komşu sayfa (Göksu Manzara Evleri) temsil ediyor",
    "icerik_dosyasi_var": true
   },
   {
@@ -10230,10 +10233,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -10535,7 +10538,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/goksu-mahallesi/havacilar-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -10570,10 +10573,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi; Yenimahalle adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -10758,10 +10761,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -11431,7 +11434,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/goksu-mahallesi/merkez-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -11466,10 +11469,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-06",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "deney",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi; ofis adaşları",
    "icerik_dosyasi_var": true
   },
   {
@@ -11606,13 +11609,13 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/oyak-goksupark",
    "sayfa": "/mahalleler/goksu-mahallesi/oyak-goksupark",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "C",
+   "sinif_ad": "4-10'da doğru sayfa",
+   "alt_sinif": "4-5",
+   "sira": 4,
+   "tutan_url": "/mahalleler/goksu-mahallesi/oyak-goksupark",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -11632,7 +11635,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "kuyrukta değil",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -11641,7 +11644,11 @@
      "tik": 0,
      "poz": 11.6
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 19,
+     "tik": 0,
+     "poz": 11.6
+    }
    },
    "rakip": {
     "sira1": null,
@@ -11649,15 +11656,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Oyak Göksupark Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "sayfa tarama deneyinin KONTROL kolunda (38 gun bayat) — ilk 10'da yok",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -11730,19 +11737,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/park-inci-konutlari",
    "sayfa": "/mahalleler/goksu-mahallesi/park-inci-konutlari",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 8,
-   "tutan_url": "/mahalleler/seyh-samil-mahallesi/inci-park-evleri",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "C",
+   "sinif_ad": "4-10'da doğru sayfa",
+   "alt_sinif": "4-5",
+   "sira": 4,
+   "tutan_url": "/mahalleler/goksu-mahallesi/park-inci-konutlari",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -11757,17 +11760,7 @@
    "son_tarama": "2026-07-27",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-23",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 4,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -11780,9 +11773,9 @@
      "poz": 10.0
     },
     "tutan_sayfa": {
-     "gost": 280,
-     "tik": 10,
-     "poz": 6.8
+     "gost": 1,
+     "tik": 0,
+     "poz": 10.0
     }
    },
    "rakip": {
@@ -11794,12 +11787,12 @@
     "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "İnci Park Evleri Emlakçı | Evinizi Satalım, Kiraya Verelim",
+   "bas": "Park İnci Konutları Emlak",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "YAKIN ADLI CIFT: Inci Park Evleri (Seyh Samil) cikiyor, Park Inci Konutlari degil; park-inci tarama deneyi havuzunda (35 gun)",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -11872,19 +11865,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/paro-life",
    "sayfa": "/mahalleler/goksu-mahallesi/paro-life",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 1,
-   "tutan_url": "/mahalleler/goksu/paro-life",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "tutan_url": "/mahalleler/goksu-mahallesi/paro-life",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "Discovered - currently not indexed",
@@ -11899,16 +11888,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "kendiliğinden dizine girdi/tarandı 03.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -11918,9 +11901,9 @@
      "poz": 5.5
     },
     "tutan_sayfa": {
-     "gost": 20,
+     "gost": 55,
      "tik": 2,
-     "poz": 6.0
+     "poz": 5.5
     }
    },
    "rakip": {
@@ -11929,15 +11912,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 2,
+    "isgal": 3,
     "ilk3u_yok": true
    },
-   "bas": "Paro Life Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
+   "bas": "Paro Life Emlakçı | Eryam",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "1. sirada ama ESKI ADRES (/goksu/ semasi)",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -12074,19 +12057,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/polsan1-ayisigi-sitesi",
    "sayfa": "/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 6,
-   "tutan_url": "/mahalleler/goksu-mahallesi/adalar/46478-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -12101,16 +12080,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -12120,9 +12093,9 @@
      "poz": 7.7
     },
     "tutan_sayfa": {
-     "gost": 65,
-     "tik": 0,
-     "poz": 55.8
+     "gost": 146,
+     "tik": 2,
+     "poz": 7.7
     }
    },
    "rakip": {
@@ -12131,15 +12104,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 2,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "46478/1 Ada Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
+   "bas": "Polsan1 Ayışığı Sitesi Em",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "YANLIS SAYFA: ADA sayfasi cikiyor; site sayfasi dizin disi, damla kuyrugunda ACIK",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -12276,19 +12249,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/seyirtepe-baspinar",
    "sayfa": "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 3,
-   "tutan_url": "/mahalleler/goksu/adalar/63400-2",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "27.08 envanteri (taze denetim yok)",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -12303,16 +12272,10 @@
    "son_tarama": "2026-07-27",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -12329,15 +12292,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 0,
     "ilk3u_yok": true
    },
-   "bas": "63400/2 Ada — Seyirtepe Başpınar | Göksu Mahallesi",
+   "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "YANLIS+ESKI: ADA sayfasi, eski /goksu/ semasiyla",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -12359,7 +12322,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-22",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 15,
     "canonical": "/mahalleler/goksu-mahallesi/sude-konutlari",
     "denetim_tarihi": "2026-10-07",
@@ -12394,10 +12357,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -12470,19 +12433,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/utkan-sitesi",
    "sayfa": "/mahalleler/goksu-mahallesi/utkan-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 1,
-   "tutan_url": "/mahalleler/goksu/utkan-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "tutan_url": "/mahalleler/goksu-mahallesi/utkan-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -12497,16 +12456,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 03.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -12516,9 +12469,9 @@
      "poz": 7.6
     },
     "tutan_sayfa": {
-     "gost": 1,
-     "tik": 0,
-     "poz": 6.0
+     "gost": 94,
+     "tik": 1,
+     "poz": 7.6
     }
    },
    "rakip": {
@@ -12527,15 +12480,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 2,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "Utkan Sitesi Emlakçısı Eryaman — Satılık, Kiralık, Değerleme | Şirin .",
+   "bas": "Utkan Sitesi Emlakçı | Er",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "KOPYA (9. cift): ESKI adres 1., yeni adres 3. sirada; baslik da bayat",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -12672,12 +12625,12 @@
     "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": "Uzunali Göksu Konutları 2 Emlakçı - Şirin Gayrimenkul",
+   "bas": "Uzunali Göksu Konutları 2",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "YAKIN ADLI CIFT: '...Konutlari 2' 1. sirada, dogru sayfa 3.",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -12750,19 +12703,15 @@
    "aile": "goksu-mahallesi",
    "s": "goksu-mahallesi/vaditepe-baspinar",
    "sayfa": "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 7,
-   "tutan_url": "/mahalleler/goksu/adalar/63380-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -12777,13 +12726,7 @@
    "son_tarama": "2026-07-27",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -12796,26 +12739,26 @@
      "poz": 7.5
     },
     "tutan_sayfa": {
-     "gost": 3,
+     "gost": 4,
      "tik": 0,
-     "poz": 9.7
+     "poz": 7.5
     }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
     "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "63380/1 Ada — Vaditepe Başpınar | Göksu Mahallesi",
+   "bas": "Vaditepe Başpınar Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": "YANLIS+ESKI: ADA sayfasi, eski /goksu/ semasiyla; site sayfasi 04.09 sabahi kendiliginden dizine girmisti",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -13208,20 +13151,20 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/akkonak-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-24",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 13,
     "canonical": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -13234,7 +13177,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -13243,7 +13186,11 @@
      "tik": 1,
      "poz": 8.1
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 44,
+     "tik": 1,
+     "poz": 8.1
+    }
    },
    "rakip": {
     "sira1": null,
@@ -13251,15 +13198,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Akkonak Sitesi Emlakçı | ",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": null,
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu yok; yol≈(cite) başlık: Akkonaklar Sitesi Emlakçı | Eryaman Mahallesi; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -13380,10 +13327,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ADAS: Sentepe/Avcilar'da da Aksu Sitesi var",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol; ofis adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -13392,18 +13339,18 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/altay-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/altay-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 1,
-   "tutan_url": "/mahalleler/guzelkent/altay-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "F",
+   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "alt_sinif": "mahalle",
+   "sira": 9,
+   "tutan_url": "/mahalleler/altay-mahallesi",
+   "tutan_tur": "mahalle",
+   "tutan_tur_ad": "mahalle sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": "belirsiz",
+    "var": false,
     "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
+    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
    },
    "dizin": {
     "durum": "YOK",
@@ -13420,11 +13367,15 @@
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
    "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
+    "durum": "MEVCUT",
+    "kapsam": "Submitted and indexed",
+    "son_tarama": "2026-08-23",
+    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
+    "tarama_yasi_gun": 4,
+    "canonical": null,
+    "denetim_tarihi": "2026-08-27",
+    "denetim_yasi_gun": 41,
+    "kova_guvenilir": false
    },
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": true,
@@ -13438,26 +13389,26 @@
      "poz": 7.0
     },
     "tutan_sayfa": {
-     "gost": 3,
+     "gost": 44,
      "tik": 0,
-     "poz": 5.3
+     "poz": 12.4
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 2,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "Altay Sitesi Emlakçı | Eryaman | Evinizi Satalım, Kiraya Verelim",
+   "bas": "Altay Mahallesi Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "1. sirada ama ESKI ADRES (/guzelkent/ semasi) — 10. kopya vakasi",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -13466,19 +13417,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/anadolu-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/anadolu-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 4,
-   "tutan_url": "/mahalleler/guzelkent/anadolu-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "27.08 envanteri (taze denetim yok)",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -13493,16 +13440,10 @@
    "son_tarama": "2026-07-27",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "kuyrukta değil",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -13511,11 +13452,7 @@
      "tik": 0,
      "poz": 5.1
     },
-    "tutan_sayfa": {
-     "gost": 2,
-     "tik": 0,
-     "poz": 11.0
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
     "sira1": null,
@@ -13523,15 +13460,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 0,
     "ilk3u_yok": true
    },
-   "bas": "Anadolu Sitesi Satılık ve Kiralık Daireler - Şirin Gayrimenkul",
+   "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "ESKI ADRES + bayat baslik; sayfa tarama deneyinin KONTROL kolunda (38 gun)",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -13606,16 +13543,16 @@
    "sayfa": "/mahalleler/guzelkent-mahallesi/ankolular-sitesi",
    "sinif": "D",
    "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 1,
-   "tutan_url": "/mahalleler/guzelkent/ankolular-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "alt_sinif": "ada",
+   "sira": 3,
+   "tutan_url": "/mahalleler/guzelkent/adalar/18668-1",
+   "tutan_tur": "ada",
+   "tutan_tur_ad": "ada sayfamız",
    "adas_es": false,
    "dogru_sayfa_serpte": {
     "var": "belirsiz",
     "sira": null,
-    "kaynak": "isgal=3: 1. sayfada 3 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "MEVCUT",
@@ -13650,26 +13587,26 @@
      "poz": 7.0
     },
     "tutan_sayfa": {
-     "gost": 10,
+     "gost": 7,
      "tik": 0,
-     "poz": 6.6
+     "poz": 16.0
     }
    },
    "rakip": {
-    "sira1": "siringayrimenkul.com",
-    "sira1_bizim_kanal": true,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 3,
+    "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": "Ankolular Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
+   "bas": "18668/1 Ada — Ankolular S",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "1. sirada ama ESKI ADRES (/guzelkent/ semasi)",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -13755,7 +13692,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-18",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 19,
     "canonical": "/mahalleler/guzelkent-mahallesi/asilkent-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -13790,10 +13727,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -13930,19 +13867,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/cagdas-95-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 2,
-   "tutan_url": "/mahalleler/guzelkent/cagdas-95-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -13957,13 +13890,7 @@
    "son_tarama": "2026-07-27",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -13976,9 +13903,9 @@
      "poz": 7.7
     },
     "tutan_sayfa": {
-     "gost": 1,
+     "gost": 3,
      "tik": 0,
-     "poz": 9.0
+     "poz": 7.7
     }
    },
    "rakip": {
@@ -13987,15 +13914,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 2,
     "ilk3u_yok": true
    },
    "bas": "Çağdaş - 95 Sitesi Emlakç",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/cagdas-95-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/cagdas-95-sitesi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -14196,19 +14123,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/didem-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/didem-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 7,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/nazlideniz-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "27.08 envanteri (taze denetim yok)",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -14223,20 +14146,10 @@
    "son_tarama": "2026-08-19",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-26",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 32,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "kuyrukta değil",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -14245,11 +14158,7 @@
      "tik": 0,
      "poz": 7.3
     },
-    "tutan_sayfa": {
-     "gost": 91,
-     "tik": 4,
-     "poz": 5.4
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
     "sira1": null,
@@ -14257,15 +14166,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 0,
     "ilk3u_yok": true
    },
-   "bas": "Nazlıdeniz Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
+   "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "YANLIS SAYFA: Nazlideniz Sitesi cikiyor (ortak kelime 0)",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -14338,19 +14247,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/durtas-91-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/durtas-91-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 4,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/durtas-91-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=3: 1. sayfada 3 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -14365,17 +14270,7 @@
    "son_tarama": "2026-07-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-17",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 10,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -14388,9 +14283,9 @@
      "poz": 6.8
     },
     "tutan_sayfa": {
-     "gost": 198,
-     "tik": 2,
-     "poz": 8.4
+     "gost": 13,
+     "tik": 0,
+     "poz": 6.8
     }
    },
    "rakip": {
@@ -14399,15 +14294,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 3,
+    "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": "Güzel Ankara Sitesi Emlakçı | Evinizi Satalım, Kiraya Verelim",
+   "bas": "Durtaş 91 Sitesi Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": "YANLIS SAYFA: Guzel Ankara Sitesi cikiyor (ortak kelime 0); durtas-91 tarama deneyi havuzunda (36 gun)",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -14604,19 +14499,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/er-ay-3-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent/er-ay-3-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -14631,13 +14522,7 @@
    "son_tarama": "2026-07-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -14650,26 +14535,26 @@
      "poz": 8.5
     },
     "tutan_sayfa": {
-     "gost": 4,
-     "tik": 0,
-     "poz": 7.8
+     "gost": 21,
+     "tik": 2,
+     "poz": 8.5
     }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
     "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": "Er - Ay 3 Sitesi Emlakçısı Eryaman — Satılık, Kiralık, Değerleme",
+   "bas": "Er - Ay 3 Sitesi Emlakçı ",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ESKI ADRES + bayat baslik",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -14691,7 +14576,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-20",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 17,
     "canonical": "/mahalleler/guzelkent-mahallesi/erenkoy-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -14726,10 +14611,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "YAPISAL ADAS: Kadikoy/Erenkoy + Antalya SERP'i tutuyor",
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi; İstanbul adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -15136,7 +15021,7 @@
    "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
    "alt_sinif": "27.08 envanteri (taze denetim yok)",
    "sira": 0,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/goksu-sitesi",
+   "tutan_url": null,
    "tutan_tur": "yok",
    "tutan_tur_ad": "ilk 10'da yok",
    "adas_es": false,
@@ -15167,31 +15052,23 @@
      "tik": 0,
      "poz": 5.3
     },
-    "tutan_sayfa": {
-     "gost": 24,
-     "tik": 0,
-     "poz": 5.3
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": "sahibinden.com",
-    "sira1_bizim_kanal": false,
+    "sira1": null,
+    "sira1_bizim_kanal": null,
     "sira1_kendi_magaza": false,
-    "ilk_rakip": {
-     "sira": 1,
-     "alan": "sahibinden.com",
-     "url": null
-    },
+    "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": null,
+    "isgal": 0,
     "ilk3u_yok": true
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-08-22",
-   "kanal": null,
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "İLK 10'DA YOK — BEKLENEN: sayfa dün (21.08) canlıya çıktı (TKGM 18478/1); SERP Göksu Mah. + Göksu Emlak ofis adaşlarıyla dolu; dizine giriş bekleniyor",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -15264,19 +15141,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/gozde-1-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/gozde-1-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
    "sira": 2,
-   "tutan_url": "/mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/gozde-1-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -15291,17 +15164,7 @@
    "son_tarama": "2026-08-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "≤7 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-07-28",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 30,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -15314,9 +15177,9 @@
      "poz": 7.1
     },
     "tutan_sayfa": {
-     "gost": 502,
-     "tik": 6,
-     "poz": 6.3
+     "gost": 43,
+     "tik": 0,
+     "poz": 7.1
     }
    },
    "rakip": {
@@ -15328,12 +15191,12 @@
     "isgal": 2,
     "ilk3u_yok": true
    },
-   "bas": "Polsan 1 Gözde Sitesi Eml",
+   "bas": "Gözde 1 Sitesi Emlakçı | ",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/gozde-1-sitesi, ilk kendi sonucumuz /mahalleler/goksu-mahallesi/polsan-1-gozde-sitesi; dogru sayfa #5",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -15473,7 +15336,7 @@
    "sinif": "F",
    "sinif_ad": "4-10'da YANLIŞ sayfa",
    "alt_sinif": "baska_site",
-   "sira": 7,
+   "sira": 4,
    "tutan_url": "/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
    "tutan_tur": "baska_site",
    "tutan_tur_ad": "başka site sayfamız",
@@ -15536,10 +15399,10 @@
    },
    "bas": "Güzel Ankara Sitesi Emlak",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/gulenkent-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -15868,14 +15731,14 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/kardelen-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/kardelen-sitesi",
-   "sinif": "C",
-   "sinif_ad": "4-10'da doğru sayfa",
-   "alt_sinif": "6-10",
-   "sira": 6,
-   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi",
-   "tutan_tur": "dogru_es",
-   "tutan_tur_ad": "doğru (aynı adlı ikinci kaydımız, es)",
-   "adas_es": true,
+   "sinif": "B",
+   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
+   "alt_sinif": "27.08 envanteri (taze denetim yok)",
+   "sira": 0,
+   "tutan_url": null,
+   "tutan_tur": "yok",
+   "tutan_tur_ad": "ilk 10'da yok",
+   "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
@@ -15894,7 +15757,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": null,
+   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -15903,11 +15766,7 @@
      "tik": 0,
      "poz": 6.8
     },
-    "tutan_sayfa": {
-     "gost": 111,
-     "tik": 0,
-     "poz": 35.4
-    }
+    "tutan_sayfa": null
    },
    "rakip": {
     "sira1": null,
@@ -15915,15 +15774,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 0,
     "ilk3u_yok": true
    },
-   "bas": "Kardelen Sitesi - Şehit O",
+   "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/kardelen-sitesi, ilk kendi sonucumuz /mahalleler/sehit-osman-avci-mahallesi/kardelen-sitesi",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -15932,18 +15791,18 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/konuta-ozlem-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
+   "sinif": "D",
+   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
    "alt_sinif": "eski",
-   "sira": 4,
+   "sira": 3,
    "tutan_url": "/mahalleler/guzelkent/konuta-ozlem-sitesi",
    "tutan_tur": "eski",
    "tutan_tur_ad": "taşınmadan önceki adres",
    "adas_es": false,
    "dogru_sayfa_serpte": {
-    "var": false,
+    "var": "belirsiz",
     "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
+    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
    },
    "dizin": {
     "durum": "YOK",
@@ -15960,10 +15819,10 @@
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
    "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
+    "durum": "YOK",
+    "kapsam": "dizin dışı (damla kaydı; API satırı yok)",
     "son_tarama": null,
-    "kaynak": "denetlenmedi",
+    "kaynak": "DIZIN-DAMLASI-31-08.md / gorunmez-teshis.json",
     "tarama_yasi_gun": null
    },
    "eski_adres_canli": null,
@@ -15989,15 +15848,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 1,
+    "isgal": 2,
     "ilk3u_yok": true
    },
    "bas": "Konuta Özlem Sitesi Satıl",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/konuta-ozlem-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/konuta-ozlem-sitesi",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -16133,7 +15992,7 @@
    "sinif": "D",
    "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
    "alt_sinif": "eski",
-   "sira": 2,
+   "sira": 1,
    "tutan_url": "/mahalleler/guzelkent/kucuk-ankara-villalari",
    "tutan_tur": "eski",
    "tutan_tur_ad": "taşınmadan önceki adres",
@@ -16158,10 +16017,10 @@
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün (bayat okuma)",
    "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
+    "durum": "YOK",
+    "kapsam": "dizin dışı (damla kaydı; API satırı yok)",
     "son_tarama": null,
-    "kaynak": "denetlenmedi",
+    "kaynak": "DIZIN-DAMLASI-31-08.md / gorunmez-teshis.json",
     "tarama_yasi_gun": null
    },
    "eski_adres_canli": null,
@@ -16178,8 +16037,8 @@
     "tutan_sayfa": null
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
@@ -16188,10 +16047,10 @@
    },
    "bas": "Küçük Ankara Villaları Em",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "eski adres çıkıyor → 301 sindirme: eski adresin yeniden taranması gerekir; dizindeki sayfaya istek aynı gün tarama getirmedi (02.09), yani kotayla değil doğal taramayla; 07.09 sonrası başlık hizası da geçerli",
-   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/kucuk-ankara-villalari, ilk kendi sonucumuz /mahalleler/guzelkent/kucuk-ankara-villalari; dogru sayfa #4",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -16328,19 +16187,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/master-kent-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/master-kent-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "eski",
-   "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent/master-kent-sitesi",
-   "tutan_tur": "eski",
-   "tutan_tur_ad": "taşınmadan önceki adres",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/master-kent-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": "belirsiz",
-    "sira": null,
-    "kaynak": "isgal=2: 1. sayfada 2 sayfamız var; ilk 3 dışındakilerin URL'si kaydedilmedi"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "Discovered - currently not indexed",
@@ -16355,16 +16210,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -16374,14 +16223,14 @@
      "poz": 9.3
     },
     "tutan_sayfa": {
-     "gost": 33,
-     "tik": 1,
-     "poz": 8.2
+     "gost": 21,
+     "tik": 0,
+     "poz": 9.3
     }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
@@ -16390,10 +16239,10 @@
    },
    "bas": "Master Kent Sitesi Emlakç",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/master-kent-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/master-kent-sitesi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -16402,20 +16251,20 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/meltem-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/meltem-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/meltem-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-26",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 11,
     "canonical": "/mahalleler/guzelkent-mahallesi/meltem-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -16428,7 +16277,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "kendiliğinden dizine girdi/tarandı 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -16437,23 +16286,27 @@
      "tik": 0,
      "poz": 8.0
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 51,
+     "tik": 0,
+     "poz": 8.0
+    }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Meltem Sitesi Emlakçı | E",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": "ilk 20 disi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi; cite eski şema (guzelkent/) gösteriyor — eski adres kopyası olabilir",
    "icerik_dosyasi_var": true
   },
   {
@@ -16570,10 +16423,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol; Çankaya adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -16710,19 +16563,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/oz-muhtar-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 7,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "YOK",
     "kapsam": "URL is unknown to Google",
@@ -16737,20 +16586,10 @@
    "son_tarama": null,
    "dizin_durumu": "YOK",
    "tarama_kovasi": "hiç taranmamış",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-26",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 1,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
-   "dogru_sayfa_dizin_disi": true,
-   "istek_durumu": "istek gönderildi 05.09 (DIZIN-DAMLASI-31-08.md)",
+   "dogru_sayfa_dizin_disi": false,
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -16760,26 +16599,26 @@
      "poz": 6.4
     },
     "tutan_sayfa": {
-     "gost": 123,
-     "tik": 3,
-     "poz": 6.7
+     "gost": 49,
+     "tik": 2,
+     "poz": 6.4
     }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
     "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "Özügüzelkent Sitesi Emlak",
+   "bas": "Öz Muhtar Sitesi Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "DAMLA — doğru sayfa DİZİN DIŞI (slot zaten bizim, yanlış URL tutuyor; 31.08 damla-A-sınıfı ölçütü). Başlık hizası dizinde olmayan sayfaya işlemez; önce dizin isteği (istek→aynı gün tarama 8/8, 10/10).",
-   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/oz-muhtar-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/ozuguzelkent-sitesi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -16788,19 +16627,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/ozle-iletisim-sitesi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
-   "sinif": "D",
-   "sinif_ad": "İlk 3'te ama YANLIŞ sayfa",
-   "alt_sinif": "ada",
-   "sira": 3,
-   "tutan_url": "/mahalleler/guzelkent/adalar/18483-1",
-   "tutan_tur": "ada",
-   "tutan_tur_ad": "ada sayfamız",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -16815,13 +16650,7 @@
    "son_tarama": "2026-07-26",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "30+ gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": null,
-    "kapsam": null,
-    "son_tarama": null,
-    "kaynak": "denetlenmedi",
-    "tarama_yasi_gun": null
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -16833,7 +16662,11 @@
      "tik": 0,
      "poz": 8.4
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 63,
+     "tik": 0,
+     "poz": 8.4
+    }
    },
    "rakip": {
     "sira1": null,
@@ -16844,12 +16677,12 @@
     "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "18483/1 Ada — Özle İletiş",
+   "bas": "Özle İletişim Sitesi Emla",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "doğru sayfa yerine yanlış sayfa çıkıyor → 07.09 sonrası başlık hizası (title/H1 07.09'a kadar donuk)",
-   "not": "ESKI ADRES: beklenen /mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi, ilk kendi sonucumuz /mahalleler/guzelkent/adalar/18483-1",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -16986,19 +16819,15 @@
    "aile": "guzelkent-mahallesi",
    "s": "guzelkent-mahallesi/portakal-cicegi",
    "sayfa": "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
-   "sinif": "F",
-   "sinif_ad": "4-10'da YANLIŞ sayfa",
-   "alt_sinif": "baska_site",
-   "sira": 7,
-   "tutan_url": "/mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi",
-   "tutan_tur": "baska_site",
-   "tutan_tur_ad": "başka site sayfamız",
+   "sinif": "C",
+   "sinif_ad": "4-10'da doğru sayfa",
+   "alt_sinif": "4-5",
+   "sira": 4,
+   "tutan_url": "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
-   "dogru_sayfa_serpte": {
-    "var": false,
-    "sira": null,
-    "kaynak": "isgal=1: 1. sayfada tek sayfamız var, o da yanlış sayfa → doğru sayfa 1. sayfada YOK"
-   },
+   "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
@@ -17013,17 +16842,7 @@
    "son_tarama": "2026-07-29",
    "dizin_durumu": "MEVCUT",
    "tarama_kovasi": "8-30 gün (bayat okuma)",
-   "tutan_dizin": {
-    "durum": "MEVCUT",
-    "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-26",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 1,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
-   },
+   "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
    "istek_durumu": null,
@@ -17036,9 +16855,9 @@
      "poz": 10.0
     },
     "tutan_sayfa": {
-     "gost": 66,
+     "gost": 1,
      "tik": 0,
-     "poz": 8.1
+     "poz": 10.0
     }
    },
    "rakip": {
@@ -17050,12 +16869,12 @@
     "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": "1. Portakal Çiçeği Sitesi",
+   "bas": "Portakal Çiçeği Emlakçı",
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "deney-0410",
    "kaldirac": "",
-   "not": "YANLIS SAYFA: beklenen /mahalleler/guzelkent-mahallesi/portakal-cicegi, ilk kendi sonucumuz /mahalleler/guzelkent-mahallesi/1-portakal-cicegi-sitesi",
+   "not": "deney",
    "icerik_dosyasi_var": true
   },
   {
@@ -19421,7 +19240,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-18",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 19,
     "canonical": "/mahalleler/sehit-osman-avci-mahallesi/camlik-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -19456,10 +19275,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi; Bilkent adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -22456,20 +22275,20 @@
    "aile": "sehit-osman-avci-mahallesi",
    "s": "sehit-osman-avci-mahallesi/ucyildiz-sitesi",
    "sayfa": "/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 2,
+   "tutan_url": "/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-21",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 16,
     "canonical": "/mahalleler/sehit-osman-avci-mahallesi/ucyildiz-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -22482,7 +22301,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "istek gönderildi 01.09 (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -22491,7 +22310,11 @@
      "tik": 1,
      "poz": 6.7
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 37,
+     "tik": 1,
+     "poz": 6.7
+    }
    },
    "rakip": {
     "sira1": null,
@@ -22499,15 +22322,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Üçyıldız Sitesi - Şehit O",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": "ilk 20 disi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -24050,10 +23873,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol; Batıkent adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -24248,10 +24071,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-10-04",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "kontrol",
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol; Çankaya adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -24479,7 +24302,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/seyh-samil-mahallesi/camlica-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -24514,10 +24337,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -25170,10 +24993,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -25673,7 +25496,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/seyh-samil-mahallesi/mavera-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -25708,10 +25531,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -26859,7 +26682,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-26",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 11,
     "canonical": "/mahalleler/seyh-samil-mahallesi/turkuaz-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -26894,10 +26717,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi; ofis adaşları",
    "icerik_dosyasi_var": true
   },
   {
@@ -27018,10 +26841,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 kontrol; ofis adaşları",
    "icerik_dosyasi_var": true
   },
   {
@@ -29284,10 +29107,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-04",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "2. sayfa 3. = genel ~13; ANA SAYFA cikiyor",
+   "not": "kanal uule-eryaman; harita kutusunda; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -29500,17 +29323,17 @@
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
-    "son_tarama": "2026-08-12",
-    "kaynak": "dizin-tarama-2026-08-27.tsv (27.08 envanteri, ESKİ)",
-    "tarama_yasi_gun": 15,
-    "canonical": null,
-    "denetim_tarihi": "2026-08-27",
-    "denetim_yasi_gun": 41,
-    "kova_guvenilir": false
+    "son_tarama": "2026-09-12",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
+    "tarama_yasi_gun": 25,
+    "canonical": "/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
+    "denetim_tarihi": "2026-10-07",
+    "denetim_yasi_gun": 0,
+    "kova_guvenilir": true
    },
-   "son_tarama": "2026-08-12",
+   "son_tarama": "2026-09-12",
    "dizin_durumu": "MEVCUT",
-   "tarama_kovasi": "8-30 gün (bayat okuma)",
+   "tarama_kovasi": "8-30 gün",
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
@@ -29540,10 +29363,10 @@
    },
    "bas": "Altıntepe Sitesi Emlakçı ",
    "h": null,
-   "olcum_tarihi": "2026-10-04",
-   "kanal": "deney-0410",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
-   "not": "kontrol",
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -30245,7 +30068,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-17",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 20,
     "canonical": "/mahalleler/yavuz-selim-mahallesi/esenkent-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -30280,10 +30103,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -30517,7 +30340,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -30552,10 +30375,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-05",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi; Göksu mahalle adaşı",
    "icerik_dosyasi_var": true
   },
   {
@@ -31296,10 +31119,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi; harita kutusunda",
+   "not": "kanal uule-eryaman; harita kutusunda; PR91 kontrol; jenerik ad",
    "icerik_dosyasi_var": true
   },
   {
@@ -31632,13 +31455,13 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/pasaj-eryaman",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "C",
+   "sinif_ad": "4-10'da doğru sayfa",
+   "alt_sinif": "4-5",
+   "sira": 5,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/pasaj-eryaman",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
@@ -31658,7 +31481,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -31671,15 +31494,15 @@
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Pasaj Eryaman Emlakçı | E",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": null,
+   "not": "kanal uule-eryaman; kutu yok; PR91 kontrol",
    "icerik_dosyasi_var": true
   },
   {
@@ -31765,7 +31588,7 @@
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-26",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 11,
     "canonical": "/mahalleler/yavuz-selim-mahallesi/safir-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -31800,10 +31623,10 @@
    },
    "bas": null,
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
    "kaldirac": "",
-   "not": "ilk 20 disi",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -32216,20 +32039,20 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/taskent-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-09-29",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 8,
     "canonical": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -32242,7 +32065,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "eski kuyrukta, açık (DIZINE-EKLENECEKLER.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -32251,23 +32074,27 @@
      "tik": 4,
      "poz": 6.0
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 62,
+     "tik": 4,
+     "poz": 6.0
+    }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Taşkent Sitesi - Yavuz Se",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": "ilk 20 disi",
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu var biz yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -32404,20 +32231,20 @@
    "aile": "yavuz-selim-mahallesi",
    "s": "yavuz-selim-mahallesi/utku-sitesi",
    "sayfa": "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
-   "sinif": "B",
-   "sinif_ad": "İlk 10 dışı — dizinde (sıra sorunu)",
-   "alt_sinif": "taze denetim",
-   "sira": 0,
-   "tutan_url": null,
-   "tutan_tur": "yok",
-   "tutan_tur_ad": "ilk 10'da yok",
+   "sinif": "E",
+   "sinif_ad": "İlk 3'te doğru sayfa (hedef dışı)",
+   "alt_sinif": "dogru",
+   "sira": 1,
+   "tutan_url": "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
+   "tutan_tur": "dogru",
+   "tutan_tur_ad": "doğru site sayfası",
    "adas_es": false,
    "dogru_sayfa_serpte": null,
    "dizin": {
     "durum": "MEVCUT",
     "kapsam": "Submitted and indexed",
     "son_tarama": "2026-10-04",
-    "kaynak": "gorunmez-denetim.tsv (2026-10-07)",
+    "kaynak": "pr91-denetim.tsv (2026-10-07)",
     "tarama_yasi_gun": 3,
     "canonical": "/mahalleler/yavuz-selim-mahallesi/utku-sitesi",
     "denetim_tarihi": "2026-10-07",
@@ -32430,7 +32257,7 @@
    "tutan_dizin": null,
    "eski_adres_canli": null,
    "dogru_sayfa_dizin_disi": false,
-   "istek_durumu": "istek gönderildi 04.10 (DIZIN-DAMLASI-31-08.md)",
+   "istek_durumu": null,
    "gost28": {
     "sorgu_satirlari": [],
     "sorgu_toplam": 0,
@@ -32439,23 +32266,27 @@
      "tik": 0,
      "poz": 6.3
     },
-    "tutan_sayfa": null
+    "tutan_sayfa": {
+     "gost": 94,
+     "tik": 0,
+     "poz": 6.3
+    }
    },
    "rakip": {
-    "sira1": null,
-    "sira1_bizim_kanal": null,
+    "sira1": "siringayrimenkul.com",
+    "sira1_bizim_kanal": true,
     "sira1_kendi_magaza": false,
     "ilk_rakip": null,
     "ilk3u": null,
-    "isgal": 0,
+    "isgal": 1,
     "ilk3u_yok": true
    },
-   "bas": null,
+   "bas": "Utku Sitesi - Yavuz Selim",
    "h": null,
-   "olcum_tarihi": "2026-09-06",
-   "kanal": "normal",
-   "kaldirac": "",
-   "not": null,
+   "olcum_tarihi": "2026-10-07",
+   "kanal": "uule-eryaman",
+   "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",
+   "not": "kanal uule-eryaman; kutu yok; PR91 tedavi",
    "icerik_dosyasi_var": true
   },
   {
@@ -34792,7 +34623,7 @@
     "ilk3u_yok": true
    },
    "bas": null,
-   "h": null,
+   "h": 1,
    "olcum_tarihi": "2026-10-07",
    "kanal": "uule-eryaman",
    "kaldirac": "hedef dışı — ilk 3'te doğru sayfa",

@@ -7,7 +7,7 @@ Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıld
 **Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve
 SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
-**2 aday · 230 SIRA sorunu (kota harcanmaz) · 28 istek gönderilmiş bekliyor · 61 dizinsiz**
+**2 aday · 229 SIRA sorunu (kota harcanmaz) · 27 istek gönderilmiş bekliyor · 59 dizinsiz**
 
 > **Aday olmak için SERP'te kayıp olmak yetmez, Google'da OLMAMAK gerekir.**
 > 31.08'de ölçüldü: SERP kaybına göre seçilen 203 sayfanın 203'ü de zaten
@@ -40,7 +40,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `karma-modern` (Şehit Osman Avcı) — eski başlık, sıra 1., 274 gösterim
 - `mesa-bloklari` (Altay) — eski başlık, sıra 2., 262 gösterim
 - `havuzlu-bahce-konutlari` (Göksu) — eski başlık, sıra 2., 248 gösterim
-- `oyak-goksupark` (Göksu) — GÖRÜNMEZ, sıra yok, 245 gösterim
+- `oyak-goksupark` (Göksu) — eski başlık, sıra 4., 245 gösterim
 - `atakent-2-cumhuriyet-sitesi` (Eryaman) — eski başlık, sıra 2., 241 gösterim
 - `vera-city` (Şehit Osman Avcı) — mahalle sayfası temsil, sıra 5., 236 gösterim
 - `park-mira-evleri` (Göksu) — eski başlık, sıra 1., 233 gösterim
@@ -52,7 +52,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `yeniceri-kule` (Göksu) — eski başlık, sıra 3., 192 gösterim
 - `atakent-sitesi` (Eryaman) — GÖRÜNMEZ, sıra yok, 190 gösterim
 - `serpil-sitesi` (Yavuz Selim) — eski başlık, sıra 3., 186 gösterim
-- `vaditepe-baspinar` (Göksu) — ada temsil, sıra 7., 176 gösterim
+- `vaditepe-baspinar` (Göksu) — eski başlık, sıra 1., 176 gösterim
 - `vizyon-prestige` (Altay) — mahalle sayfası temsil, sıra 7., 173 gösterim
 - `neva-prestij-konutlari` (Şehit Osman Avcı) — eski başlık, sıra 2., 171 gösterim
 - `happy-life-residence` (Şehit Osman Avcı) — eski başlık, sıra 1., 163 gösterim
@@ -66,7 +66,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `yeni-kaynak-sitesi` (Yavuz Selim) — eski başlık, sıra 2., 142 gösterim
 - `eylul-sitesi` (Yavuz Selim) — eski başlık, sıra 3., 141 gösterim
 - `tekser-bloklari` (Şeyh Şamil) — eski başlık, sıra 3., 141 gösterim
-- … ve 190 sayfa daha
+- … ve 189 sayfa daha
 
 ## İstek gönderildi, tarama bekliyor
 
@@ -81,7 +81,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `goksupark-konutlari` (Göksu) — GÖRÜNMEZ, sıra yok, 160 gösterim
 - `sude-konutlari` (Göksu) — GÖRÜNMEZ, sıra yok, 125 gösterim
 - `melis-sitesi` (Şeyh Şamil) — eski başlık, sıra 4., 110 gösterim
-- `utku-sitesi` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 82 gösterim
+- `utku-sitesi` (Yavuz Selim) — eski başlık, sıra 1., 82 gösterim
 - `kur-sitesi-46496-ada` (Tunahan) — eski slug, sıra 2., 65 gösterim
 - `lider-yasam-evleri` (Şeyh Şamil) — eski başlık, sıra 1., 50 gösterim
 - `cumhuriyet-sitesi` (Eryaman) — GÖRÜNMEZ, sıra yok, 46 gösterim
@@ -93,9 +93,8 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `kucukevlerimiz-sitesi` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 18 gösterim
 - `selcuklu-sitesi` (Devlet) — GÖRÜNMEZ, sıra yok, 16 gösterim
 - `camli-klima-bloklari` (Tunahan) — komşu sayfa temsil, sıra 4., 4 gösterim
-- `altay-sitesi` (Güzelkent) — eski slug, sıra 1., 0 gösterim
+- `altay-sitesi` (Güzelkent) — komşu sayfa temsil, sıra 9., 0 gösterim
 - `gordogu-sen-sitesi` (Güzelkent) — eski başlık, sıra 1., 0 gösterim
-- `meltem-sitesi` (Güzelkent) — GÖRÜNMEZ, sıra yok, 0 gösterim
 - `seniz-sitesi` (Güzelkent) — eski başlık, sıra 3., 0 gösterim
 - `goksu-sitesi` (Güzelkent) — GÖRÜNMEZ, sıra yok, 0 gösterim
 
@@ -111,9 +110,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `gsv-spor-sitesi` (Göksu) — komşu sayfa temsil
 - `irem-konutlari` (Göksu) — GÖRÜNMEZ
 - `kafdagi-sitesi` (Göksu) — eski başlık
-- `paro-life` (Göksu) — eski slug
-- `polsan1-ayisigi-sitesi` (Göksu) — ada temsil
-- `utkan-sitesi` (Göksu) — eski slug
+- `polsan1-ayisigi-sitesi` (Göksu) — eski başlık
 - `gercek-92-sitesi` (Güzelkent) — eski slug
 - `gozde-2-sitesi` (Güzelkent) — eski başlık
 - `gulsah-95-sitesi` (Güzelkent) — eski başlık
@@ -121,9 +118,9 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `konuta-ozlem-sitesi` (Güzelkent) — eski slug
 - `kurtulus-sitesi` (Güzelkent) — GÖRÜNMEZ
 - `kusburnu-sitesi` (Güzelkent) — eski başlık
-- `master-kent-sitesi` (Güzelkent) — eski slug
+- `master-kent-sitesi` (Güzelkent) — eski başlık
 - `mesa-calisanlari-kooperatifi` (Güzelkent) — eski başlık
-- `oz-muhtar-sitesi` (Güzelkent) — komşu sayfa temsil
+- `oz-muhtar-sitesi` (Güzelkent) — eski başlık
 - `sehit-ferhat-koc-sitesi` (Güzelkent) — eski başlık
 - `selale-sitesi` (Güzelkent) — eski başlık
 - `yesim-kent2-sitesi` (Güzelkent) — eski başlık
@@ -139,7 +136,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `inci-park-evleri-sitesi` (Şehit Osman Avcı) — eski başlık
 - `neva-panora-konutlari` (Şehit Osman Avcı) — ada temsil
 - `relax-eryaman-konutlari` (Şehit Osman Avcı) — ada temsil
-- `ucyildiz-sitesi` (Şehit Osman Avcı) — GÖRÜNMEZ
+- `ucyildiz-sitesi` (Şehit Osman Avcı) — eski başlık
 - `akdal-residence` (Şeker) — eski slug
 - `altas-relax-line` (Şeker) — komşu sayfa temsil
 - `diamond-residence` (Şeker) — eski başlık

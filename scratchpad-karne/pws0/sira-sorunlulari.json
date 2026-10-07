@@ -157,12 +157,12 @@
   "yol": "/mahalleler/goksu-mahallesi/oyak-goksupark",
   "mah": "goksu-mahallesi",
   "site": "oyak-goksupark",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
+  "tur": "eski başlık",
+  "sira": 4,
   "gos": 245,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi",
@@ -289,12 +289,12 @@
   "yol": "/mahalleler/goksu-mahallesi/vaditepe-baspinar",
   "mah": "goksu-mahallesi",
   "site": "vaditepe-baspinar",
-  "tur": "ada temsil",
-  "sira": 7,
+  "tur": "eski başlık",
+  "sira": 1,
   "gos": 176,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/altay-mahallesi/vizyon-prestige",
@@ -564,12 +564,12 @@
   "yol": "/mahalleler/goksu-mahallesi/park-inci-konutlari",
   "mah": "goksu-mahallesi",
   "site": "park-inci-konutlari",
-  "tur": "komşu sayfa temsil",
-  "sira": 8,
+  "tur": "eski başlık",
+  "sira": 4,
   "gos": 114,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/intes-dogakent-konutlari",
@@ -635,7 +635,7 @@
   "gos": 106,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/isi-kent-sitesi",
@@ -828,12 +828,12 @@
   "yol": "/mahalleler/goksu-mahallesi/seyirtepe-baspinar",
   "mah": "goksu-mahallesi",
   "site": "seyirtepe-baspinar",
-  "tur": "ada temsil",
-  "sira": 3,
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
   "gos": 86,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi",
@@ -887,17 +887,6 @@
   "sira": 2,
   "gos": 79,
   "tarama": "2026-07-27",
-  "durum": "bayat",
-  "olcum": "2026-09-05"
- },
- {
-  "yol": "/mahalleler/guzelkent-mahallesi/akkonak-sitesi",
-  "mah": "guzelkent-mahallesi",
-  "site": "akkonak-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
-  "gos": 78,
-  "tarama": "2026-07-26",
   "durum": "bayat",
   "olcum": "2026-09-05"
  },
@@ -993,12 +982,12 @@
   "yol": "/mahalleler/yavuz-selim-mahallesi/taskent-sitesi",
   "mah": "yavuz-selim-mahallesi",
   "site": "taskent-sitesi",
-  "tur": "GÖRÜNMEZ",
-  "sira": 0,
+  "tur": "eski başlık",
+  "sira": 1,
   "gos": 69,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/akcakent-87-sitesi",
@@ -1031,7 +1020,7 @@
   "gos": 66,
   "tarama": "2026-07-28",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman",
@@ -1075,7 +1064,7 @@
   "gos": 62,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/goksu-vadi-konutlari",
@@ -1290,12 +1279,12 @@
   "yol": "/mahalleler/guzelkent-mahallesi/ozle-iletisim-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "ozle-iletisim-sitesi",
-  "tur": "ada temsil",
-  "sira": 3,
+  "tur": "eski başlık",
+  "sira": 2,
   "gos": 46,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seker-mahallesi/altas-rezidans",
@@ -1317,7 +1306,7 @@
   "gos": 46,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/turkkonut-istas-sitesi",
@@ -1400,23 +1389,23 @@
   "yol": "/mahalleler/guzelkent-mahallesi/anadolu-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "anadolu-sitesi",
-  "tur": "eski slug",
-  "sira": 4,
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
   "gos": 42,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/er-ay-3-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "er-ay-3-sitesi",
-  "tur": "eski slug",
-  "sira": 3,
+  "tur": "eski başlık",
+  "sira": 1,
   "gos": 42,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/guz-gol-sitesi",
@@ -1438,7 +1427,7 @@
   "gos": 41,
   "tarama": "2026-08-11",
   "durum": "orta",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/taniskent-sitesi",
@@ -1493,7 +1482,7 @@
   "gos": 35,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
@@ -1576,12 +1565,12 @@
   "yol": "/mahalleler/guzelkent-mahallesi/durtas-91-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "durtas-91-sitesi",
-  "tur": "komşu sayfa temsil",
-  "sira": 4,
+  "tur": "eski başlık",
+  "sira": 2,
   "gos": 31,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/yesimkent",
@@ -1603,18 +1592,18 @@
   "gos": 30,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-04"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/kucuk-ankara-villalari",
   "mah": "guzelkent-mahallesi",
   "site": "kucuk-ankara-villalari",
   "tur": "eski slug",
-  "sira": 2,
+  "sira": 1,
   "gos": 30,
   "tarama": "2026-08-07",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yesilova-mahallesi/may-tower",
@@ -1647,7 +1636,7 @@
   "gos": 30,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/korukent-sitesi",
@@ -1686,12 +1675,12 @@
   "yol": "/mahalleler/guzelkent-mahallesi/portakal-cicegi",
   "mah": "guzelkent-mahallesi",
   "site": "portakal-cicegi",
-  "tur": "komşu sayfa temsil",
-  "sira": 7,
+  "tur": "eski başlık",
+  "sira": 4,
   "gos": 28,
   "tarama": "2026-07-29",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/akkonaklar-sitesi",
@@ -1823,7 +1812,7 @@
   "gos": 24,
   "tarama": "2026-08-03",
   "durum": "bayat",
-  "olcum": "2026-10-04"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/oz-tamer-sitesi",
@@ -1889,7 +1878,7 @@
   "gos": 23,
   "tarama": "2026-07-30",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/isikkent-sitesi",
@@ -1900,7 +1889,7 @@
   "gos": 23,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/turk-konut-calisanlar-sitesi",
@@ -1917,12 +1906,12 @@
   "yol": "/mahalleler/guzelkent-mahallesi/cagdas-95-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "cagdas-95-sitesi",
-  "tur": "eski slug",
+  "tur": "eski başlık",
   "sira": 2,
   "gos": 22,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/eryaman-evleri",
@@ -1944,7 +1933,7 @@
   "gos": 22,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/sehit-osman-avci-mahallesi/izo-ser-residence",
@@ -1984,11 +1973,11 @@
   "mah": "goksu-mahallesi",
   "site": "goksu-evleri-sitesi",
   "tur": "komşu sayfa temsil",
-  "sira": 2,
+  "sira": 3,
   "gos": 21,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/portakal-cicegi-2-sitesi",
@@ -2027,12 +2016,12 @@
   "yol": "/mahalleler/devlet-mahallesi/ilk-bahar-sitesi",
   "mah": "devlet-mahallesi",
   "site": "ilk-bahar-sitesi",
-  "tur": "eski slug",
+  "tur": "eski başlık",
   "sira": 1,
   "gos": 20,
   "tarama": "2026-07-29",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/atakent-metro-sitesi",
@@ -2072,11 +2061,11 @@
   "mah": "guzelkent-mahallesi",
   "site": "gulenkent-sitesi",
   "tur": "komşu sayfa temsil",
-  "sira": 7,
+  "sira": 4,
   "gos": 18,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/pinarkent-91-sitesi",
@@ -2098,7 +2087,7 @@
   "gos": 17,
   "tarama": "2026-07-27",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi",
@@ -2153,7 +2142,7 @@
   "gos": 14,
   "tarama": "2026-08-11",
   "durum": "orta",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/hekimler-ve-saglikcilar-sitesi",
@@ -2164,7 +2153,7 @@
   "gos": 14,
   "tarama": "2026-08-02",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/cayilkay-sitesi",
@@ -2197,7 +2186,7 @@
   "gos": 13,
   "tarama": "2026-07-29",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/uzunbey-sitesi",
@@ -2219,7 +2208,7 @@
   "gos": 12,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/goksu-sitesi",
@@ -2230,7 +2219,7 @@
   "gos": 11,
   "tarama": "2026-08-07",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/tunahan-mahallesi/tunahan-sitesi",
@@ -2241,7 +2230,7 @@
   "gos": 10,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-04"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seker-mahallesi/address-enda",
@@ -2307,7 +2296,7 @@
   "gos": 9,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/ak-kent-sitesi",
@@ -2318,7 +2307,7 @@
   "gos": 8,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/borankent",
@@ -2340,7 +2329,7 @@
   "gos": 7,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/guzelkent-mahallesi/mesa-sitesi",
@@ -2351,7 +2340,7 @@
   "gos": 7,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/yavuz-selim-mahallesi/ozharitacilar-sitesi",
@@ -2384,7 +2373,7 @@
   "gos": 6,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-09-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/selinkent-sitesi",
@@ -2406,7 +2395,7 @@
   "gos": 6,
   "tarama": "2026-08-07",
   "durum": "bayat",
-  "olcum": "2026-10-06"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/sitekonut-sitesi",
@@ -2434,12 +2423,12 @@
   "yol": "/mahalleler/guzelkent-mahallesi/ankolular-sitesi",
   "mah": "guzelkent-mahallesi",
   "site": "ankolular-sitesi",
-  "tur": "eski slug",
-  "sira": 1,
+  "tur": "ada temsil",
+  "sira": 3,
   "gos": 2,
   "tarama": "2026-08-17",
   "durum": "orta",
-  "olcum": "2026-09-05"
+  "olcum": "2026-10-07"
  },
  {
   "yol": "/mahalleler/seyh-samil-mahallesi/kackar-sitesi",
