@@ -5,7 +5,7 @@
   "sonuclar-site-emlakci.jsonl",
   "isgal-3108.json"
  ],
- "kayit_sayisi": 2150,
+ "kayit_sayisi": 2226,
  "satirlar": [
   {
    "sorgu": "eryaman emlakçı",
@@ -28,7 +28,7 @@
    "kanal": "uule-eryaman",
    "kaynak": "sonuclar-emlakci.jsonl",
    "eslesme": "q",
-   "olcum_sayisi": 6,
+   "olcum_sayisi": 7,
    "not": "07.10 hedef yenilemesi, pws=0 gl=tr hl=tr, kanal uule-eryaman; harita kutusunda",
    "onceki": {
     "tarih": "2026-08-30",

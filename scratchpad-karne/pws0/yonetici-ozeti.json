@@ -4,19 +4,19 @@
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 76,
+   "deger": 77,
    "birim": "%",
-   "gosterim": "%76",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 385. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%77",
+   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 388. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 504,
-    "ilk3": 385
+    "ilk3": 388
    },
    "fark_7g": {
-    "deger": 1.0,
+    "deger": 1.6,
     "onceki": 75.4,
-    "son": 76.4,
+    "son": 77.0,
     "kiyas_tarihi": "2026-09-30",
     "gun": 7,
     "birim": "puan",
@@ -31,20 +31,20 @@
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 83,
+   "deger": 85,
    "birim": "%",
-   "gosterim": "%83",
-   "ne_demek": "İlk 3 sırada olduğumuz 389 sorgunun 324 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%85",
+   "ne_demek": "İlk 3 sırada olduğumuz 392 sorgunun 335 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 324,
-    "ilk3_toplam": 389,
+    "ilk3_dogru": 335,
+    "ilk3_toplam": 392,
     "guncelleme": "2026-10-07"
    },
    "fark_7g": {
-    "deger": 4.1,
+    "deger": 6.3,
     "onceki": 79.2,
-    "son": 83.3,
+    "son": 85.5,
     "kiyas_tarihi": "2026-09-30",
     "gun": 7,
     "birim": "puan",
@@ -141,14 +141,14 @@
   {
    "k": "damla_kalan",
    "baslik": "Damla kuyruğunda kalan",
-   "deger": 2,
+   "deger": 4,
    "birim": "sayfa",
-   "gosterim": "2",
-   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 2; 77 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "gosterim": "4",
+   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 4; 77 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
    "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
    "ayrinti": {
     "bitmis": 77,
-    "toplam": 79
+    "toplam": 81
    },
    "fark_7g": null
   }
