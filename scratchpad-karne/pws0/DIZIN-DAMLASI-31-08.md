@@ -436,5 +436,21 @@ sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
 > kopyasının yeniden taranması).
 
 ## 07.10 — eski adresi yeniyi geçen 2 sayfa (öneri: ESKİ adrese istek, 308'i yeniden okutur)
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari ← eski #1 / yeni #5 (deney taraması 07.10)
-- [ ] https://www.siringayrimenkul.com/mahalleler/guzelkent/konuta-ozlem-sitesi ← eski #3 / yeni #7
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari ← 07.10 istek gönderildi (eski adres; eski #1 / yeni #5, deney taraması 07.10)
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent/konuta-ozlem-sitesi ← 07.10 istek gönderildi (eski adres; eski #3 / yeni #7)
+
+## 08.10 — eski adrese istek: 07.10'un 11 isteği kayda geçti, yenisi gönderilmeyecek
+
+07.10'da 11 eski adrese (26.07 taşımasından önceki şema, 308 veriyor) istek gitti, 11/11 kabul. Kayıt yalnız `gsc-dizin-kuyrugu-194.md`'deydi; sayım bu dosyadan yapıldığı için buraya işlendi (ilk ikisi bir üst başlıkta, kalan dokuzu aşağıda).
+08.10 okuması: yaklaşık 15 saat sonra API'de 11 adresin 10'unda iz yok. Eski adrese YENİ istek gönderilmeyecek (kaldıraç ölü, bkz. kaldirac-defteri.json "Eski adresi yeniden taratma"); okuma 15.10'da.
+Başlık deneyi 2'nin yeniden tarama listesi bu dosyada değil, `deney2-yeniden-tarama.tsv`'de: buraya "- [ ]" satırı olarak yazılmaz (yazılırsa karne o sayfaları kuyrukta sayar).
+
+- [x] https://www.siringayrimenkul.com/mahalleler/guzelkent/adalar/18668-1 ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/devlet/ilk-bahar-sitesi ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/eryaman/eryaman-evleri ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/goksu/ma1-tower ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil/adalar/17365-1 ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/kiratli-residence ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/tan-yildizi-sitesi ← 07.10 istek gönderildi (eski adres)
+- [x] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46643-7 ← 07.10 istek gönderildi (eski adres)

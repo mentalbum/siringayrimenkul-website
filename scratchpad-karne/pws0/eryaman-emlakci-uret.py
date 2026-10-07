@@ -11,16 +11,24 @@ Okuma anahtarı (veriden çıkan, betik her turda yeniden hesaplar):
     en iyi adres harita kutusundaki GBP bağıdır (önce utm'li adres, o adres
     GSC'den düşünce "/"). Yani 1,2–1,4 harita kutusunun konumu; organik sırayı
     GSC değil pws=0 SERP ölçümü verir (sonuclar-emlakci.jsonl'den okunur).
-  - Organik sıra sabitken TO'nun düşmesi snippet/başlık sorunudur.
+  - Bu sorguda TO ile hüküm verilmez: dönemler arasında günlük gösterim
+    neredeyse aynı, fark birkaç tıklık küçük sayı farkıdır. 'Organik sıra sabit'
+    öncülü de yanlış: organik sıra 08.08 başlık değişikliğiyle ~6'dan 2–3'e çıktı.
+    (08.10 düzeltmesi: eski satır "organik sıra sabitken TO'nun düşmesi
+    snippet/başlık sorunudur" diyordu; karne bu hükümle 07.09'a "ilk iş: ana sayfa
+    başlığı/açıklaması" maddesi basıyordu. Ölçüm bunu taşımıyor — kaldıraç defteri
+    "Ana sayfa başlık/açıklama değişikliği" kaydı.)
+  - Hüküm için bakılacak seri mobil tık/hafta (mobil_haftalar); o seri de haftada
+    2-3 tık düzeyinde, yani tek haftadan değil aylardan okunur (mobil_ozet).
 
 Girdi : GSC API (node, servis hesabı anahtarı ~/.config/gsc-servis-anahtari.json)
         sonuclar-emlakci.jsonl (pws=0 SERP ölçümleri, q bazında)
-        git (15.08 açıklama kısaltması commit'inin konusu)
+        git (08.08 başlık, 15.08 açıklama kısaltması ve 20.08 kesit commit'lerinin tarihi/konusu)
 Önbellek: KARNE_SCRATCH varsa ham çekimler oraya TSV yazılır; API erişilemezse
         oradan okunur ve çıktıda "kaynak" alanı bunu söyler.
 Çıktı : eryaman-emlakci.json — karne-html.py okur.
 """
-import json, os, sys, subprocess, datetime, collections, re
+import json, os, sys, subprocess, datetime, collections, re, math
 
 KOK = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.abspath(os.path.join(KOK, "..", ".."))
@@ -31,7 +39,14 @@ BUGUN = datetime.date.today()
 MULK = "https://www.siringayrimenkul.com"
 UTM = f"{MULK}/?utm_source=google&utm_medium=gbp"
 ACIKLAMA_COMMIT = "3f58e7f"                 # 15.08 ana sayfa meta description kısaltması
+KESIT_COMMIT = "ece3008"                    # 20.08: Google'ın kesiti gövdeden derlediğini yazan commit
+BASLIK_COMMIT = "eed9535"                   # 08.08 ana sayfa başlık değişikliği
+# title_donuk JSON'da KALIR (karne-html.py ve yonetici-ozeti-uret.py okuyor); 08.10'dan beri
+# bu tarihe bağlı bir iş yok — başlığa/açıklamaya dokunulmuyor (notlar).
 TITLE_DONUK = datetime.date(2026, 9, 7)
+# Mobil haftalık seri sorgunun tabanını da göstersin diye dört hafta erken başlar
+# (29.06 Pazartesi; haftalar[] ile aynı Pazartesi ızgarası, "bas" ile eşlenir).
+MOBIL_BASLANGIC = datetime.date(2026, 6, 29)
 
 # Üç dönem. D2 = geçiş penceresi: utm'li adres GSC'den düştü (12.08) + ana sayfa
 # açıklaması kısaldı (15.08). D3 bitişi son veri gününe göre her turda kayar.
@@ -211,6 +226,62 @@ while h <= SON:
                      "gun": (min(hb, SON) - h).days + 1, "kismi": hb > SON, **ozet(k)})
     h = hb + datetime.timedelta(days=1)
 
+# ── 4b. Mobil haftalık seri (sorgu süzgeçli gün × cihaz; SAYFA süzgeci yok) ───
+# 08.10: bu sorguda hüküm TO'dan değil mobil tık/hafta serisinden okunur. Masaüstü
+# gösterimi kendi SERP ölçüm günlerimizde kabarıyor; mobil seri bundan etkilenmez.
+# gsc-q.mjs başlığındaki tuzak (SAYFA süzgeci + cihaz boyutu veriyi yarıya düşürür)
+# burada yok: süzgeç yalnız sorguda. Yine de aşağıda gün serisiyle karşılaştırılır
+# (mobil_ozet.kapsama) ve fark varsa uyarıya düşer.
+cihaz_ham, _ = cek("eryaman-emlakci-cihaz-gunluk", MOBIL_BASLANGIC, BUGUN, "date,device", SORGU)
+mobil_gun = {}                               # gün → [gösterim, tık]
+cihaz_gos = collections.Counter()            # BASLANGIC..SON, cihaz → gösterim (kapsama denetimi)
+for _g, _t, _poz, (_d, _cihaz) in satirlar(cihaz_ham, 2):
+    _gun = datetime.date.fromisoformat(_d)
+    if _gun > SON:
+        continue
+    if BASLANGIC <= _gun:
+        cihaz_gos[_cihaz.upper()] += _g
+    if _cihaz.upper() == "MOBILE":
+        _m = mobil_gun.setdefault(_gun, [0, 0])
+        _m[0] += _g
+        _m[1] += _t
+mobil_haftalar = []
+_h = MOBIL_BASLANGIC
+while _h <= SON:
+    _hb = _h + datetime.timedelta(days=6)
+    _k = [v for gun_, v in mobil_gun.items() if _h <= gun_ <= _hb]
+    mobil_haftalar.append({"bas": _h.isoformat(), "bit": _hb.isoformat(), "etiket": f"{gg(_h)}–{gg(_hb)}",
+                           "gun": (min(_hb, SON) - _h).days + 1, "kismi": _hb > SON,
+                           "gos": sum(v[0] for v in _k), "tik": sum(v[1] for v in _k)})
+    _h = _hb + datetime.timedelta(days=1)
+
+
+def hafta_gerek(ort, artis):
+    """Haftalık ortalaması `ort` olan sayımda +artis (0,5 = %50) farkı görmek için
+    KOL BAŞINA gereken hafta. Poisson yaklaşımı, tek yönlü %5 anlamlılık, %80 güç:
+    n = (1,645 + 0,842)² × (λ1 + λ2) / (λ2 − λ1)². Kaba bir büyüklük sırasıdır."""
+    if not ort:
+        return None
+    l1, l2 = ort, ort * (1 + artis)
+    return round(((1.645 + 0.8416) ** 2) * (l1 + l2) / (l2 - l1) ** 2)
+
+
+_tam = [x for x in mobil_haftalar if not x["kismi"]]
+_ort = (sum(x["tik"] for x in _tam) / len(_tam)) if _tam else None
+_gos_gun = sum(v[0] for v in gunluk.values())          # gün serisi toplamı (BASLANGIC..SON)
+_gos_cihaz = sum(cihaz_gos.values())                   # aynı pencere, cihaz kırılımının toplamı
+mobil_ozet = {
+    "bas": _tam[0]["bas"] if _tam else None, "bit": _tam[-1]["bit"] if _tam else None,
+    "hafta": len(_tam), "gos": sum(x["gos"] for x in _tam), "tik": sum(x["tik"] for x in _tam),
+    "ort_tik_hafta": round(_ort, 2) if _ort is not None else None,
+    "en_az": min((x["tik"] for x in _tam), default=None), "en_cok": max((x["tik"] for x in _tam), default=None),
+    # +%50 ve +%100 farkı görmek için kol başına gereken hafta (hafta_gerek docstring'i)
+    "hafta_gerek_50": hafta_gerek(_ort, 0.5), "hafta_gerek_100": hafta_gerek(_ort, 1.0),
+    "mobil_gos_pay": round(100 * cihaz_gos["MOBILE"] / _gos_cihaz, 1) if _gos_cihaz else None,
+    # cihaz kırılımı toplamı / gün serisi toplamı; 1'den uzaksa cihaz boyutu veri düşürüyor demektir
+    "kapsama": round(_gos_cihaz / _gos_gun, 3) if _gos_gun else None,
+}
+
 # ── 5. Dönemler ───────────────────────────────────────────────────────────────
 donemler = []
 for key, b, e, ad in DONEMLER:
@@ -218,13 +289,39 @@ for key, b, e, ad in DONEMLER:
     o = ozet(k)
     kir = sayfa_kirilimi(b, e)
     st = sira_tutan(kir)
+    _gun_say = (e - b).days + 1
     donemler.append({"k": key, "ad": ad, "etiket": f"{gg(b)}–{gg(e)}", "bas": b.isoformat(), "bit": e.isoformat(),
-                     "gun": (e - b).days + 1, **o, "kucuk_ornek": o["gos"] < 100,
+                     "gun": _gun_say, **o, "kucuk_ornek": o["gos"] < 100,
+                     # günlük hız: dönemlerin uzunluğu farklı (16 / 4 / 50+ gün), toplamlar kıyaslanamaz
+                     "gos_gun": round(o["gos"] / _gun_say, 1), "tik_gun": round(o["tik"] / _gun_say, 2),
                      "sayfalar": kir, "sira_tutan": st,
                      "sira_tutan_ad": next((x["ad"] for x in kir if x["u"] == st), None)})
 
 toplam = ozet(list(gunluk.values()))
 sayfalar = sayfa_kirilimi(BASLANGIC, SON)
+
+
+def iki_terimli_p(k, n, p0):
+    """Kesin iki terimli sınama, iki yönlü: n denemede k başarı, beklenen pay p0.
+    p = gözlenenden daha olası OLMAYAN bütün sonuçların olasılık toplamı."""
+    if not n:
+        return None
+    olas = [math.comb(n, i) * p0 ** i * (1 - p0) ** (n - i) for i in range(n + 1)]
+    return min(1.0, sum(x for x in olas if x <= olas[k] * (1 + 1e-9)))
+
+
+# d1 ↔ d3 günlük tık farkı rastlantıdan ayrılıyor mu: iki dönemin tıkları tek havuz,
+# "tıklar günlere eşit dağılsaydı d1'e düşecek pay" = d1 gün sayısı / toplam gün.
+_d1, _d3 = donemler[0], donemler[2]
+donem_farki = {
+    "d1": _d1["etiket"], "d3": _d3["etiket"],
+    "gos_gun": [_d1["gos_gun"], _d3["gos_gun"]], "tik_gun": [_d1["tik_gun"], _d3["tik_gun"]],
+    "tik": [_d1["tik"], _d3["tik"]], "gun": [_d1["gun"], _d3["gun"]],
+    "p": iki_terimli_p(_d1["tik"], _d1["tik"] + _d3["tik"], _d1["gun"] / (_d1["gun"] + _d3["gun"])),
+    "yontem": "kesin iki terimli sınama, iki yönlü: tıklar günlere eşit dağılsaydı d1'e düşecek paya göre",
+}
+if donem_farki["p"] is not None:
+    donem_farki["p"] = round(donem_farki["p"], 3)
 
 # ── 6. utm'li adres: ne zaman düştü, ana sayfa konumu öncesi/sonrası ──────────
 utm_gunler = sorted(sayfa_gun.get(UTM, {}))
@@ -264,17 +361,32 @@ if os.path.exists(yol):
             sira = int(r.get("sira")) if r.get("sira") not in (None, "", "-") else None
         except (TypeError, ValueError):
             sira = None
-        serp[r["d"]] = {"d": r["d"], "sira": sira, "u": (r.get("u") or "")[:60],
-                        "harita": _kutuda(r), "kanal": r.get("kanal") or "oturumlu/belirsiz"}
+        yeni = {"d": r["d"], "sira": sira, "u": (r.get("u") or "")[:60],
+                "harita": _kutuda(r), "kanal": r.get("kanal") or "oturumlu/belirsiz"}
+        # Aynı güne birden çok kayıt düşerse (07.10: üç kayıt) konumu sabitlenmiş ölçüm
+        # (uule-eryaman) kalır; yoksa dosyadaki son kayıt. Karnenin hedef tablosuyla aynı kural.
+        onceki = serp.get(r["d"])
+        if onceki and onceki["kanal"] == "uule-eryaman" and yeni["kanal"] != "uule-eryaman":
+            continue
+        serp[r["d"]] = yeni
 serp = [serp[d] for d in sorted(serp) if d >= BASLANGIC.isoformat()]
 
-# ── 8. 15.08 açıklama kısaltması — commit konusu git'ten (rakam elle yazılmaz) ─
-try:
-    p = subprocess.run(["git", "-C", REPO, "log", "-1", "--format=%h%x09%ad%x09%s", "--date=short", ACIKLAMA_COMMIT],
-                       capture_output=True, text=True, timeout=30)
-    aciklama_commit = dict(zip(("h", "d", "konu"), p.stdout.strip().split("\t", 2))) if p.returncode == 0 and p.stdout.strip() else None
-except Exception:
-    aciklama_commit = None
+
+# ── 8. Commit tarihleri/konuları git'ten (rakam ve tarih elle yazılmaz) ───────
+def commit_oku(h):
+    try:
+        p = subprocess.run(["git", "-C", REPO, "log", "-1", "--format=%h%x09%ad%x09%s", "--date=short", h],
+                           capture_output=True, text=True, timeout=30)
+        if p.returncode == 0 and p.stdout.strip():
+            return dict(zip(("h", "d", "konu"), p.stdout.strip().split("\t", 2)))
+    except Exception:
+        pass
+    return None
+
+
+aciklama_commit = commit_oku(ACIKLAMA_COMMIT)   # 15.08 açıklama kısaltması
+kesit_commit = commit_oku(KESIT_COMMIT)         # 20.08 kesit düzeltmesi
+baslik_commit = commit_oku(BASLIK_COMMIT)       # 08.08 başlık değişikliği
 
 # ── 9. Notlar (her rakam yukarıdaki hesaplardan) ──────────────────────────────
 D = {x["k"]: x for x in donemler}
@@ -310,13 +422,47 @@ if utm["son"]:
         f"{kon(utm['ana_konum_utm_sonrasi'])} oldu — harita bağının gösterimi artık “/” adresine yazılıyor. "
         f"Yani sabit görünen {KONUM_ARALIK} harita kutusunun konumudur; organik sırayı GSC değil pws=0 SERP ölçümü verir.")
 
+def sira_araligi(kayitlar):
+    """SERP kayıtlarının organik sıra aralığı: '2–3' ya da tek değer; ölçüm yoksa None."""
+    v = [s["sira"] for s in kayitlar if s["sira"]]
+    if not v:
+        return None
+    return str(min(v)) if min(v) == max(v) else f"{min(v)}–{max(v)}"
+
+
+def cgun(c):
+    """Commit kaydının tarihi GG.AA biçiminde (c: commit_oku çıktısı)."""
+    return gg(datetime.date.fromisoformat(c["d"]))
+
+
+d3_serp = [s for s in serp if s["d"] >= D["d3"]["bas"]]
+D3_SIRA = sira_araligi(d3_serp)
+SON_SERP = serp[-1] if serp else None
+
 if serp:
     dizi = ", ".join(f"{'—' if s['sira'] is None else s['sira']} ({gg(datetime.date.fromisoformat(s['d']))})" for s in serp)
     harita = sum(1 for s in serp if s["harita"])
-    notlar.append(f"pws=0 SERP ölçümlerinde organik sıra: {dizi}; harita kutusunda 1. sıra {harita}/{len(serp)} ölçümde. "
-                  f"Organik sıra sabit, harita sabit, TO düştü → sorun sırada değil, snippet/başlıkta.")
+    notlar.append(f"pws=0 SERP ölçümlerinde organik sıra: {dizi}; harita kutusunda 1. sıra {harita}/{len(serp)} ölçümde."
+                  + (f" {D['d3']['etiket']} dönemindeki {len(d3_serp)} ölçümde organik sıra {D3_SIRA}." if D3_SIRA else ""))
 else:
     notlar.append("pws=0 SERP ölçümü bu sorgu için bulunamadı (sonuclar-emlakci.jsonl) — organik sıra ölçülmedi.")
+
+# 08.10: eski not "organik sıra sabit, harita sabit, TO düştü → sorun snippet/başlıkta"
+# diyordu. Ölçüm bunu taşımıyor: dönemlerin günlük gösterimi neredeyse aynı, fark
+# birkaç tıklık; hüküm aşağıdaki sınamadan (donem_farki.p) üretilir, elle yazılmaz.
+_f = donem_farki
+_fark_cumle = (f"Günlük gösterim {tr_sayi(_f['gos_gun'][0], 1)} → {tr_sayi(_f['gos_gun'][1], 1)}, "
+               f"günlük tık {tr_sayi(_f['tik_gun'][0], 2)} → {tr_sayi(_f['tik_gun'][1], 2)} "
+               f"({_f['d1']} / {_f['d3']}; {tr_sayi(_f['tik'][0])} tık {_f['gun'][0]} günde, "
+               f"{tr_sayi(_f['tik'][1])} tık {_f['gun'][1]} günde).")
+if _f["p"] is None:
+    notlar.append(_fark_cumle + " Tık sayısı sınama için yetersiz; bu veriyle hüküm verilmez, başlığa dokunulmuyor.")
+elif _f["p"] >= 0.05:
+    notlar.append(_fark_cumle + f" Fark bu hacimde gürültüden ayrılamıyor (bu kadar fark rastlantıyla da "
+                  f"%{tr_sayi(100 * _f['p'])} olasılıkla çıkar). Başlık ya da snippet sorunu kanıtlanmadı, başlığa dokunulmuyor.")
+else:
+    notlar.append(_fark_cumle + f" Fark rastlantıyla zor açıklanır (olasılık %{tr_sayi(100 * _f['p'], 1)}), ama bu tek başına "
+                  f"başlık ya da snippet sorununu göstermez: önce SERP kaydındaki başlık ve kesit okunur, başlığa ölçümsüz dokunulmaz.")
 
 d1_ana = next((x for x in D["d1"]["sayfalar"] if x["u"] == "/"), None)
 d3_ana = next((x for x in D["d3"]["sayfalar"] if x["u"] == "/"), None)
@@ -324,17 +470,45 @@ if d1_ana and d3_ana:
     notlar.append(
         f"Tıkları taşıyan sayfa her dönemde ana sayfa: {D['d1']['etiket']} döneminde “/” {tr_sayi(d1_ana['tik'])} tık "
         f"(konum {kon(d1_ana['konum'])}, organik), {D['d3']['etiket']} döneminde {tr_sayi(d3_ana['tik'])} tık "
-        f"(konum {kon(d3_ana['konum'])}, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.")
+        f"(konum {kon(d3_ana['konum'])}, harita bağı dahil)."
+        # 'Organik sıra sabit' öncülü yanlıştı: d1'de harita bağı ayrı adresteydi, yani “/”
+        # konumu o dönemin ORGANİK sırasıdır ve sonraki SERP ölçümlerinden geridedir.
+        + (f" Organik sıra sabit değildi: {D['d1']['etiket']} döneminde “/” konumu {kon(d1_ana['konum'])} "
+           f"(o günlerde harita bağı ayrı adresteydi, bu organik sıradır), sonraki SERP ölçümlerinde {D3_SIRA}"
+           + (f"; başlık {cgun(baslik_commit)} günü değişmişti." if baslik_commit else ".")
+           if D3_SIRA else ""))
 
-if aciklama_commit:
-    notlar.append(f"Baş şüpheli: {aciklama_commit['d']} ana sayfa meta description kısaltması "
-                  f"(commit {aciklama_commit['h']}: “{aciklama_commit['konu']}”). TO düşüşü bu tarihten sonraki dönemde görülüyor; "
-                  f"nedensellik ölçülmedi, tek şüpheli değil (aynı günlerde harita bağı da “/” adresine geçti).")
+if mobil_ozet["hafta"]:
+    notlar.append(
+        f"Hüküm için bakılacak seri telefondan gelen tık: {mobil_ozet['hafta']} tam haftada "
+        f"({gg(datetime.date.fromisoformat(mobil_ozet['bas']))}–{gg(datetime.date.fromisoformat(mobil_ozet['bit']))}) "
+        f"toplam {tr_sayi(mobil_ozet['tik'])} tık, haftada ortalama {tr_sayi(mobil_ozet['ort_tik_hafta'], 1)} "
+        f"(en az {mobil_ozet['en_az']}, en çok {mobil_ozet['en_cok']}). Bu hacimde tek haftaya bakılmaz.")
+
+if aciklama_commit and kesit_commit:
+    notlar.append(f"{cgun(aciklama_commit)} açıklama kısaltması için kanıt yok: Google {cgun(aciklama_commit)} ve "
+                  f"{cgun(kesit_commit)} tarihlerinde açıklamamızın iki sürümünü de göstermedi, kesiti sayfa gövdesinden "
+                  f"derledi (commit {aciklama_commit['h']} ve {kesit_commit['h']} notları). Bugünkü kesit, SERP kaydına "
+                  f"'kap' alanı gelince okunur.")
 else:
-    notlar.append("Baş şüpheli: 15.08 ana sayfa meta description kısaltması (commit konusu git'ten okunamadı).")
+    notlar.append("Açıklama kısaltması için kanıt yok: Google açıklamamızın iki sürümünü de göstermedi, kesiti sayfa "
+                  "gövdesinden derledi (commit tarihleri git'ten okunamadı). Bugünkü kesit, SERP kaydına 'kap' alanı gelince okunur.")
 
-notlar.append(f"Title/H1 donuk, serbest kalma tarihi {gg(TITLE_DONUK)} (08.08 değişikliğinin 4 haftalık bekleme süresi); "
-              f"o tarihe kadar müdahale yalnızca meta description olabilir.")
+_son_durum = ""
+if SON_SERP and SON_SERP["sira"]:
+    _son_durum = (f" Son SERP ölçümünde ({gg(datetime.date.fromisoformat(SON_SERP['d']))}) organik {SON_SERP['sira']}. sıra, "
+                  f"harita kutusunda {'varız' if SON_SERP['harita'] else 'yokuz'}.")
+_guc = ""
+if mobil_ozet["hafta_gerek_50"]:
+    _guc = (f" Telefondan haftada ortalama {tr_sayi(mobil_ozet['ort_tik_hafta'], 1)} tık geliyor; bu hacimde tıklanma "
+            f"oranı bir buçuk katına çıksa bile farkı görmek yaklaşık {mobil_ozet['hafta_gerek_50']} hafta sürer.")
+notlar.append("Ana sayfa başlığı ve açıklaması: dokunulmuyor." + _son_durum + _guc
+              + " Yeniden açma koşulu kaldıraç defterinde (organik sıra iki ardışık turda 3'ün gerisine düşerse ya da "
+                "SERP kaydı başlığı/kesiti bozuk gösterirse).")
+
+if mobil_ozet["kapsama"] is not None and abs(mobil_ozet["kapsama"] - 1) > 0.05:
+    notlar.append(f"Uyarı: cihaz kırılımının toplamı gün serisinin {yuzde(100 * mobil_ozet['kapsama'])} kadarı; "
+                  f"cihaz boyutu veri düşürüyor, mobil seri eksik olabilir.")
 
 uyari = (f"Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük "
          f"(ortalama {tr_sayi(toplam['gos'] / len(seri), 1)}/gün). Tek güne değil hafta ve dönem toplamına bak. "
@@ -348,6 +522,12 @@ cikti = {
     "pencere": {"bas": BASLANGIC.isoformat(), "bit": SON.isoformat(), "gun": len(seri)},
     "toplam": toplam, "haftalar": haftalar, "donemler": donemler, "sayfalar": sayfalar,
     "utm": utm, "serp": serp, "aciklama_commit": aciklama_commit, "title_donuk": TITLE_DONUK.isoformat(),
+    # 08.10 ekleri — var olan alanların adı/anlamı değişmedi:
+    #   mobil_haftalar: [{bas, bit, etiket, gun, kismi, gos, tik}] 29.06'dan beri, Pazartesi başlangıçlı
+    #   mobil_ozet    : tam haftaların özeti + güç hesabı (hafta_gerek_50/100) + kapsama
+    #   donem_farki   : d1 ↔ d3 günlük gösterim/tık ve farkın rastlantı olasılığı (p)
+    "mobil_haftalar": mobil_haftalar, "mobil_ozet": mobil_ozet, "donem_farki": donem_farki,
+    "kesit_commit": kesit_commit, "baslik_commit": baslik_commit,
     "gunluk": seri, "notlar": notlar, "uyari": uyari,
 }
 json.dump(cikti, open(f"{KOK}/eryaman-emlakci.json", "w"), ensure_ascii=False, indent=1)
@@ -363,6 +543,9 @@ for x in donemler:
     print(f"{x['etiket']:14} {x['gun']:3} {x['gos']:5} {x['tik']:4} {yuzde(x['to']):>7} {kon(x['konum']):>6}  {x['sira_tutan']}")
     for s in x["sayfalar"]:
         print(f"    {s['gos']:5} göst · {s['tik']:3} tık · konum {kon(s['konum']):>5} · {s['ad']}")
+print("\nmobil tık/hafta:", ", ".join(f"{x['tik']}{'*' if x['kismi'] else ''}" for x in mobil_haftalar),
+      f"· ortalama {mobil_ozet['ort_tik_hafta']} ({mobil_ozet['hafta']} tam hafta; * kısmi) · kapsama {mobil_ozet['kapsama']}")
+print(f"d1 ↔ d3 günlük: gösterim {donem_farki['gos_gun']}, tık {donem_farki['tik_gun']}, p={donem_farki['p']}")
 print("\nSERP (pws=0) organik sıra:", ", ".join(f"{s['sira']} ({s['d']}, {s['kanal']})" for s in serp) or "ölçülmedi")
 print(f"utm'li adres: {utm['ilk']} → {utm['son']} ({utm['gun']} gün) · denetim: {utm['denetim']}")
 print("\nNOTLAR")

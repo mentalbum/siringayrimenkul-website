@@ -3,6 +3,88 @@
  "okuma": "2026-11-04",
  "metrik": "GSC sayfa×sorgu, aynı konum bandında CTR; ikincil: doğru sayfa oranı, whatsapp/phone_click (konum=site_ust)",
  "secim": "28g GSC sayfa gösterimi ≥80; 04.10'da değişen 45 kontrol sayfası, kaldırılan mahalleler ve adaş adlı siteler hariç; gösterim sırasına göre dönüşümlü eşleştirme",
+ "metrik_ek": "Okuma kol içi önce/sonra oranının kollar arası oranıdır (fark-ın-farkı); her sayfa için yeni adres + eski adres satırları TOPLANARAK; güven aralığı sayfa kümeli bootstrap ile; aralık 1'i içeriyorsa sonuç SONUÇSUZ yazılır, başlık geri alınmaz da yayılmaz da.",
+ "okuma_takvimi": {
+  "ara": "2026-11-04",
+  "nihai": "2026-11-17",
+  "not": "Ara okuma yalnız ilk 22 çift (en az 24 maruz gün). Nihai okuma son yeniden tarama isteğinden 28 veri günü sonra; istekler 17.10'dan sonraya sarkarsa nihai tarih de o kadar kayar."
+ },
+ "okuma_kurali": [
+  "Kol↔kol düz kıyas YAPILMAZ. Okuma fark-ın-farkıdır: her kolun tıklanma oranı kendi 07.09–04.10 tabanına oranlanır (taban alanı), karar bu iki oranın oranına göre verilir. Gerekçe: kollar gösterim ve konumda eşit ama tıklanma oranında değil (tedavi %1,31, kontrol %2,44; yalın ad sorgularında %0,48 / %0,87); düz kıyas sıfır etkide bile tedaviyi kaybetmiş gösterir.",
+  "Her sayfa için yalnız kendi yayın-sonrası İLK taramasından sonraki günler sayılır, İKİ kolda da (deney2-yeniden-tarama.tsv, ilk_tarama_yayin_sonrasi). Taranmamış sayfa tedavi görmüş sayılmaz. Veri: node gsc-q.mjs <bas> <bit> page,date (page filtresi ile device boyutu birlikte kullanılmaz).",
+  "Eş birincil ölçüt: sayfa düzeyi tüm sorgular tıklanma oranı ve yalın ad / ad+Eryaman sorguları tıklanma oranı. Yalın ad kümesinde 28 günde 25'e 41 tık var: bu küme ancak yaklaşık 2 katlık, sayfa düzeyi ancak yaklaşık %25'lik etkiyi ayırt eder. Karar eşiği okumadan ÖNCE bu dosyaya yazılır (karar_esigi; boşsa okuma yapılmaz).",
+  "Her sayfa için yeni adres + eski adres satırları TOPLANARAK hesaplanır. Ayrıca üç biçim yan yana verilir: (a) tüm sayfalar, (b) eski_adres_kirliligi.siteler hariç, (c) o sitelerde eski + yeni toplanarak. (a) ile (b) yön değiştiriyorsa sonuç KARARSIZ yazılır, kural yayılmaz.",
+  "Aynı hesap konum bandı içinde ve en çok tık alan üçer sayfa hariç tutularak tekrarlanır; iki hesap yön değiştiriyorsa sonuç KARARSIZ yazılır.",
+  "Güven aralığı sayfa kümeli bootstrap ile verilir (gösterimler bağımsız sayılmaz). Aralık 1'i içeriyorsa sonuç SONUÇSUZ yazılır: başlık geri alınmaz da yayılmaz da.",
+  "kiratli-residence ve elit-nar-cicegi çiftleri ayrı raporlanır: eski adresleri hâlâ sıralıyor; kiratli'nin eski adresine 07.10'da istek gitti, elit-nar'ın eski adresine istek gönderilmedi.",
+  "Deney penceresinde eski adresi sindirilen ya da eski adresine istek gönderilen sayfalar tarihleriyle not edilir.",
+  "İkincil, yalnız betimleyici (karar ölçütü değil): Google'ın başlığı aynen gösterme oranı (SERP kaydı bas_tam), '<site> emlakçı' sorgusunda sıra ve doğru sayfa (yeni başlıkta 'Emlakçı' kelimesi yok), ada sayfası payı."
+ ],
+ "karar_esigi": null,
+ "taban": {
+  "pencere": "2026-09-07..2026-10-04",
+  "kaynak": "GSC page ve query,page çekimi (filtresiz), 08.10; yeniden üretildi",
+  "tedavi": {
+   "gos": 15440,
+   "tik": 203,
+   "to": 1.31,
+   "eski_adres_gos": 1098,
+   "eski_adres_tik": 17,
+   "yalin_gos": 5193,
+   "yalin_tik": 25
+  },
+  "kontrol": {
+   "gos": 14293,
+   "tik": 349,
+   "to": 2.44,
+   "eski_adres_gos": 156,
+   "eski_adres_tik": 0,
+   "yalin_gos": 4722,
+   "yalin_tik": 41
+  },
+  "kol_orani": "Kontrol/tedavi tıklanma oranı oranı, sayfa kümeli bootstrap (%95): sayfa düzeyinde yaklaşık 1,86 (1,2–2,9); yalın sınıfta yaklaşık 1,8 (0,8–4,2). Sayfa düzeyinde dengesizlik gerçek; yalın sınıfta taban farkı 1'den ayırt edilemiyor.",
+  "yalin_tanimi": "sorgu-sinifi-to.py sinif() == 'yalin', yalnız yeni adres satırları. Sayfa bazındaki dosyada yalın sütunları yeni + eski adres toplamıdır (tedavi 5549 gösterim / 28 tık, kontrol 4728 / 41).",
+  "sayfa_bazinda": "deney2-taban-sayfa-bazinda.tsv"
+ },
+ "taban_to": {
+  "pencere": "2026-09-07..2026-10-04 (deney öncesi)",
+  "tedavi": {
+   "gos": 15440,
+   "tik": 203,
+   "to": 1.31,
+   "medyan_sayfa_to": 1.18
+  },
+  "kontrol": {
+   "gos": 14293,
+   "tik": 349,
+   "to": 2.44,
+   "medyan_sayfa_to": 1.55
+  },
+  "kural": "Okuma kesitsel DEĞİL fark-içinde-fark: her kolun 28 günlük tıklanma oranı kendi 07.09-04.10 tabanına oranlanır, karar oranların farkına göre verilir; aynı hesap konum bandı içinde ve en çok tık alan üçer sayfa hariç tutularak tekrarlanır; iki hesap yön değiştiriyorsa sonuç kararsız yazılır."
+ },
+ "eski_adres_kirliligi": {
+  "olcum": "2026-10-08, GSC 21.09-04.10 (page; yeniden üretildi)",
+  "tedavi": {
+   "eski": 396,
+   "yeni": 7531
+  },
+  "kontrol": {
+   "eski": 77,
+   "yeni": 6835
+  },
+  "not": "Kontrolde basit slug eşlemesiyle 69; 77 yönlendirme hedefiyle eşlenince (8'i başka bir sitenin eski adresinden bu kola düşen gösterim).",
+  "buyukluk": "28 günde tedavi tıklanma oranı %1,31; eski adres tıkları eklenince %1,40–1,42 (dört sayfada 13 tık; eski adresi görünen 13 sayfanın tamamında 17 tık). Yönü tedavi aleyhine, boyutu küçük.",
+  "siteler": [
+   "kiratli-residence",
+   "sutek-sitesi",
+   "elit-nar-cicegi",
+   "ilona-konutlari",
+   "akdal-residence",
+   "irem-konutlari",
+   "akasya-sitesi (kontrol)"
+  ],
+  "kural": "Tıklanma oranı üç biçimde hesaplanır: (a) tüm sayfalar, (b) bu 7 site hariç, (c) bu sitelerde eski + yeni adres gösterim ve tıkı toplanarak; (a) ile (b) yön değiştiriyorsa sonuç kararsız yazılır, kural yayılmaz. Ek olarak deney penceresinde eski adresi sindirilen ya da eski adresine istek gönderilen sayfalar tarihleriyle not edilir."
+ },
  "tedavi": [
   "eryaman-mahallesi/oyak-555-konut-sitesi",
   "sehit-osman-avci-mahallesi/mia-concept-konutlari",
