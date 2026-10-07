@@ -80,3 +80,13 @@ PR #91 (24 sayfa + şablon paragraf) MERGEABLE, 4 haftadır açık — Özgün k
   erişilebilirlik tek hata WhatsApp düğmesi 4,13 → PR #99 (#075E54, 7,1). Karne Version 21 yayınlandı
   (gsc-q.mjs depoya, is-takvimi düzeltmesi). 15.10 görevi deftere: sitemap-eski-adresler kaldırma
   (robots.ts satırı + public/sitemap-eski-adresler.xml + GSC).
+
+## 07.10 eki — spam güncellemesi okuması (GSC verisi 04.10'a kadar)
+Site sayfaları (ada/blog/Yenimahalle hariç) gös/gün: 10–23.09 **2.223** → 24–29.09 **1.866** → 30.09–04.10 **1.842**
+(−%17); tık/gün 41 → 34 → 36; pozisyon 7,5 sabit. Ada ailesi 266 → 159 → 122 (bilinçli erime, ayrı).
+Sonuç: 24.09 basamağı Eylül spam güncellemesiyle aynı gün, 30.09 ikinci dalga ek basamak getirmedi,
+10 günde toparlanma yok. Sıra sabitken gösterim düşmesi = daha az sorguda gösteriliyoruz; eyleme
+dönüştürülebilir bir kalıp yok, 20.10'da yeniden okunacak. GBP bağı 07.10'da hâlâ UTM'siz (GA4 medium=gbp 0).
+Diğer oturumlar 05–07.10: PR #100 (sayfa denetimi), #103 (Kurtuluş=Yükselay), #104 (4. Devlet 410),
+#105 (hero WhatsApp CTA + başlık deneyi 2 + eski-adres sitemap'i kaldırıldı), #106/#107/#108 (karne 07.10,
+hedef sorgular uule ile); deney taraması 76/174 (gece-log).

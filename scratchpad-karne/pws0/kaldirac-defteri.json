@@ -155,11 +155,11 @@
   },
   {
    "tarih": "2026-10-04",
-   "ad": "Eylul 2026 spam update etkisi KARARSIZ",
-   "durum": "acik",
-   "olcum": "Yasayan sayfalar 24.09'da 2.211->1.870 gos/gun; 30.09 ikinci dalga veride yok (son veri 29.09).",
-   "gerekce": "Iki curutucu birbirini yikti: 'zarar yok/mevsimsel' ve 'once basladi' ikisi de curudu.",
-   "sonraki_olcum": "11.10 civari: gunluk seri (denetim-0410/gsc-gunluk.mjs kalibi) 24.09 oncesi/sonrasi + deney/kontrol kolu",
+   "ad": "Eylul 2026 spam update: site sayfalarinda gosterim -%17, sira sabit (07.10 okumasi)",
+   "durum": "olculdu",
+   "olcum": "Site sayfalari (ada/blog/Yenimahalle haric) gos/gun: 10-23.09 2.223 -> 24-29.09 1.866 -> 30.09-04.10 1.842; tik/gun 41 -> 34 -> 36; yasayan poz 7,5 sabit. Ada: 266 -> 159 -> 122 (bilincli erime). 30.09 ikinci dalga ek basamak getirmedi.",
+   "gerekce": "Basamak 24.09 (resmi baslangic) ile ayni gun; sira sabitken gosterim dususu = daha az sorguda gosterim. 10 gunde toparlanma yok.",
+   "sonraki_olcum": "20.10 civari ayni uc pencere; toparlanma yoksa hangi sorgu siniflarinin kayboldugunu sorgu x sayfa ile ayristir (bilgi sorgulari zaten 0 tik)",
    "nerede": "DENETIM-04-10.md"
   },
   {
