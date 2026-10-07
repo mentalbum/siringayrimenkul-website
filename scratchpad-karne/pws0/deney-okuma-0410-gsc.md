@@ -111,3 +111,46 @@ istisnası bekliyor" vakasıydı — bugün doğru sayfayla **#2**, istisna hiç
 Ders: "yapısal/kurtarılamaz" etiketi 4-6 hafta sonra yeniden sınanmadan kalıcı sayılmaz.
 
 Kalan: 86 sorgu (Güzelkent'ten devam, kuyruk index 141+).
+
+## 07.10 akşam — tarama BİTTİ (210/219, 9 sorgu reCAPTCHA'da kaldı)
+
+Deney kolu **165/174** ölçüldü. Kapanışa yakın tablo:
+
+| taban | →doğru | →yanlış | →dışı |
+|---|---|---|---|
+| yanlış | **51** | 44 | 20 |
+| dışı | **8** | 4 | 38 |
+
+- **Yanlış→doğru düzelme: 51/115 = %44** (kontrol kolu %22 — deney kolu
+  kontrolün İKİ KATI, GSC'nin %52'siyle aynı yönde)
+- Dışı→doğru kazanım: 8/50 = %16
+
+### ESKİ ADRES: deneyin ana gürültü kaynağı (6 → 15)
+Tarama bittiğinde **13 vaka** betiğin kovasında + **2 gizli** (sutek-sitesi,
+bizim-sirinkoy — oralarda YENİ adres öndeydi, betik sadece 1. sonuca baktığı
+için yakalamadı) = toplam 15 canlı eski adres.
+
+Bunlar başlık deneyinin ÖLÇÜMÜNÜ BOZUYOR: "yanlış sayfa" sayılıyorlar ama
+başlıkla ilgileri yok — Google'ın hiç sindirmediği 308'ler. Düzeltilmiş
+düzelme oranı: 51/(115−13) = **%50**, yani GSC okumasının (%52) tam üstüne
+oturuyor. Yani deneyin gerçek etkisi ham orandan daha yüksek.
+
+### Teşhis (API ile kesinleşti)
+11 eski adresin **hepsinin son taraması 28.06–19.07**, yani 26.07'deki URL
+göçünden ÖNCE. Google 308'i hiç görmedi: sitemap'te yoklar, iç bağlantıları
+yok, kendiliğinden dönmelerinin yolu yoktu. Dördü de (eski+yeni) ayrı ayrı
+"Submitted and indexed" olarak duruyor.
+
+Zarar mekanizması: alan adı başına ilk sonuçlarda ~2 slot var; eski adres bir
+slotu yiyor. En kötüler — elit-nar-cicegi (eski #1 / yeni #4), bosphorus ve
+tan-yildizi (eski #2 / yeni ilk 10'da YOK), kiratli (eski #2 / yeni #5).
+
+### Yapılan
+11 eski adrese tarama isteği gönderildi (11/11 kabul), 12.'de kota doldu.
+Kalan 2'si (elit-nar, düşkent) yarına. Teyit ~21.10: API'de "Page with
+redirect" / "Duplicate" olmalı, SERP'te yeni adres öne geçmeli.
+
+### Betikte düzeltilecek
+`deney-ozet.py` eski adres dedektörü yalnızca 1. sıradaki sonuca bakıyor;
+alt sıralardaki eski adresleri kaçırıyor (2 vaka). Tüm `isgal` listesine
+bakmalı.
