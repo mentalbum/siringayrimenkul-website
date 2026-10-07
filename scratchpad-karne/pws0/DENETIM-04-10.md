@@ -184,3 +184,5 @@ boşuna duracak.
 > olmadan "kalıcı" denmez. Sayfa 1'de yalnız 8 organik slot. Araç notu: bolge-tur.mjs loc seçicisi
 > (.dfB0uf/#swml) boş dönüyor; bu oturumda onarılıyor. Kota: tavan 11/gün (iki gün teyit), "Hata! Bir sorun
 > oluştu" URL'ye özgü ve geçici (kota kanıtı yalnız "Kota Aşıldı"). Eski adres 16 canlı vaka, 11'ine istek.
+> 07.10 ~19:00 — "emlakçı" (uule Eryaman, pws=0) bu oturumda bağımsız tekrar: organik 0/9, kutu #1 (Şirin/Efor/Ayyıldız),
+> loc "06824, Tunahan, Etimesgut/Ankara" — peer ölçümüyle birebir. bolge-tur.mjs loc seçicisi onarıldı (829ad9f).
