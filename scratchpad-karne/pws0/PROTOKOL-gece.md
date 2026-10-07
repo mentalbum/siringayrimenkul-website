@@ -979,3 +979,18 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
 - Karar: kaldıraç AÇIK kalır, toplu içerik derinleştirme programı BAŞLATILMAZ (kanıt yetersiz); ikinci
   okuma 04.11 GSC ile (konum bağımsız; aynı iki kol, aynı pencere uzunluğu). Dosyalar: pr91-okuma-0710.json,
   pr91-kollar.json.
+
+## 07.10 — "ERYAMAN EMLAKÇI" SERP YERLEŞİMİ (uule): AI ÖZETİ YOK, 3 REKLAM, IG 4. SIRADA; EFOR ÇİFT KAYDI ÇÜRÜDÜ
+
+- Diğer oturumun açık sorusu ("eryaman emlakçı" gösterimi 24.09'dan beri ~15→~5/gün, neden bilinmiyor) için
+  SERP yerleşimine bakıldı (18:05, uule=Eryaman merkez): **AI ile genel bakış YOK** (metin ve DOM'da yok; sekme
+  çubuğunda "AI Modu" var ama sonuç sayfasında özet blok yok) → düşüş AI özetinden değil. Üstte 3 reklam
+  kabı; sonra Yerel Sonuçlar (Şirin 1. — 5,0 · 404 · "Gayrimenkul Danışmanı" · 208. Sk. 4. Etap Çarşı · 19:00'a
+  kadar açık; Efor 2. — 4,9 · 386 · aynı kategori "Gayrimenkul Danışmanı"; Premium 3.); organik: 1 Şirin ana
+  sayfa, 2 hepsiemlak, 3 premium, **4 Instagram @eryamansiringayrimenkul**, 5 Aganta; "Kısa videolar" ve
+  "İnsanlar şunları da soruyor" blokları var. Not: kategori sorusunda Efor da "Gayrimenkul Danışmanı" →
+  kategori farkı bizi geri atmıyor; kutuda 1.'yiz.
+- Efor çift kaydı ÇÜRÜDÜ: "ERYAMAN EFOR GAYRIMENKUL DANIŞMANLIĞI" (386 yorum, 25+ yıl, Tunahan Mah. 219. Cad.
+  17634 ada, Açelya Ap. 7/1, 0533 255 26 88) ile "Efor Emlak" (56 yorum, "Emlak Bürosu", 5+ yıl, Haznedaroğlu
+  Blokları, Üç Şehitler Cad. 17633 ada 3/1, 0312 283 77 88) FARKLI adres ve telefon taşıyor; komşu adalarda
+  iki ayrı ofis. Google kuralına aykırı değil, şikayet yok. (06.09 dersi doğrulandı: şüphe → çürüme.)
