@@ -28,6 +28,15 @@ Amaç: `kuyruk-oncelikli.json`'daki kalan sorguları her gece ≤180'lik dilimle
 > (kanibalizasyon ihtimali için mahalle sayfasının aynı sorgularda çıkıp
 > çıkmadığına bakılır).
 
+> **07.10 UYARISI — ÖNCE BUNU OKU (Adım 3'teki JS ARTIK ÇALIŞMIYOR).** Google organik bağları
+> `/goto?url=CAES…` (şifreli) oldu; aşağıdaki `#rso a[href^="http"]` çıkarıcısı n=0 döndürür, başlık
+> normal görünür (engel değil). Yeni çıkarıcı: `serp-cikarici-0710.js` (alan adı `<cite>`'tan; bizim
+> sayfanın yolu `biz[][4]` tam h3 başlığından çözülür). Ekleyiciler: `hedef-ekle.py` (17 hedef) ve
+> `ekle-uule.py` (site sorguları). **Harita kutusu ve hedef sorgu ölçümünde `uule` ŞART** (Eryaman merkez
+> 39.9779, 32.6382; JS'te btoa ile üretilip `location.href` ile gidilir — uule'siz ölçüm tarayıcının IP
+> konumuna bağlıdır ve 07.10'da "kutu 9→3" yanılgısına yol açtı). browser_batch sınırı 25 eylem = 8 sorgu.
+> Ayrıntı: 07.10 bölümleri (dosyanın sonu).
+
 ## Adımlar
 
 1. **Dilimi çıkar** — şu komutu OLDUĞU GİBİ çalıştır, keşif yapma:
