@@ -124,9 +124,12 @@ if T:
             UYARILAR.append(f"{ad}: ga4-olaylar28.tsv {temas[ad]}, ga4-temas {t} diyor. İki çekimin penceresi "
                             f"farklı olabilir; ga4-api çıktıları yeniden çekilmeli.")
     for h in T.get("suzulen_host") or []:
-        ic = ", ".join(f"{k} {v}" for k, v in (h.get("izlenen_olaylar") or {}).items())
-        UYARILAR.append(f"Canlı alan adı dışından gelen {h.get('oturum')} oturum sayılmadı ({h.get('ad')}"
-                        + (f"; içinde {ic}" if ic else "") + ").")
+        # Karne Özgün'e hitap eder: olay adlarını değil ne olduğunu söyle. Ayrıntı JSON'da durur
+        # (ga4_temas.suzulen_host); yerel sunucu = sitenin geliştirme kopyasında yapılan deneme.
+        _yer = "kendi bilgisayarımızdaki deneme kopyası" if "localhost" in (h.get("ad") or "") else f"canlı site dışındaki bir adres ({h.get('ad')})"
+        _n_olay = sum((h.get("izlenen_olaylar") or {}).values())
+        UYARILAR.append(f"Sitenin {_yer} üzerinden gelen {h.get('oturum')} oturum sayılmadı"
+                        + (f"; içlerinde {_n_olay} deneme tıklaması vardı" if _n_olay else "") + ".")
 else:
     UYARILAR.append(f"Temas ayrıntısı okunamadı ({T_HATA}). Temas eden ziyaret ve sahibinden çıkışı bu üretimde "
                     f"yok; form başlatma eski tanımla (bütün sayfalar, ana sayfadaki arama kutusu dahil) sayıldı.")

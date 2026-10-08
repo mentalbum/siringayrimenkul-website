@@ -117,3 +117,23 @@ const BIZ=[/siringayrimenkul\.com/,/eryamansiringayrimenkul\.sahibinden/,
 ```
 Sonuç `isgal-GGAA.json`'a yazılır, karnede "1. sayfa işgali" tablosunda görünür.
 İlk ölçüm (31.08, 9 sorgu): 86 organik sıranın 12'si bizim (%14).
+
+## 08.10.2026 — ölçüm aracı kuralları (ayrıntı: PROTOKOL-gece.md sonundaki "08.10" bölümü)
+
+- **Eski adres / doğru sayfa ayrımı yalnız GERÇEK bağı okuyan kanalla yapılır**
+  (Chrome + `serp-cikarici-kompakt.js` + `ekle-deney-kompakt.py`). 07.10'dan beri
+  Google bağları şifreliyor; `serp-cikarici-0710.js` + `ekle-uule.py` kanalında adres
+  başlıktan/kırıntıdan çözülür ve `u_kaynak` alanına nasıl çözüldüğü yazılır
+  (`href` | `cite` | `baslik`). Çözülemeyen kayıt `u = "cite:…"` olur ve karnede
+  "adresi doğrulanamayan" sayılır. Sayfa kimliği başlık ÖNEKİNDEN varsayılmaz.
+- **Yeni alanlar:** `bas_tam` (Google'ın gösterdiği başlığın tamamı; eski `bas` 25 karakter
+  kalır), `kap` (ilk sonucumuzun kutu metni, yalnız hedef sorgularda), `isgal_diger`
+  (sahibinden mağazası ve sosyal profillerimiz), `cite_mah`, `bizu`.
+- **Yeniden ölçüm turu yalnız sorunlu çıkanları değil kuyruğun tamamını, rastgele sırayla
+  döner.** Yalnız sorunlular ölçülürse "doğru sayfa" oranı tek yönde düzelir (08.10:
+  Eylül kovası 259/259, Ekim kovası 80/111). Hazır sıra: `yeniden-olcum-kuyrugu-0810.json`.
+- **Bölge turu** (`bolge-tur.mjs`): JS çıktısında `hata` alanı varsa ya da `n < 5` ise kayıt
+  YAZILMAZ; bu "ilk 10 dışı" değildir. Ön ayarlar: `BOLGE_ON_AYAR=cekirdek|halka`.
+- `serp-cikarici-kompakt.js` özgün 06.10 betiği değil, 0710 çıkarıcısından türetildi; ilk
+  kullanımda bir sorguda iki çıkarıcının `sira` ve `n` değerleri karşılaştırılır.
+- Gecede en çok ~100 site sorgusu; robot duvarında dur, çözüm yalnız Özgün'de.

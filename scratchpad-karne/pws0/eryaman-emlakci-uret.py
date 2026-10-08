@@ -442,7 +442,7 @@ SON_SERP = serp[-1] if serp else None
 if serp:
     dizi = ", ".join(f"{'—' if s['sira'] is None else s['sira']} ({gg(datetime.date.fromisoformat(s['d']))})" for s in serp)
     harita = sum(1 for s in serp if s["harita"])
-    notlar.append(f"pws=0 SERP ölçümlerinde organik sıra: {dizi}; harita kutusunda 1. sıra {harita}/{len(serp)} ölçümde."
+    notlar.append(f"pws=0 SERP ölçümlerinde organik sıra: {dizi}; harita kutusunda {harita}/{len(serp)} ölçümde varız (kutu içindeki sıra yalnız Eryaman konumlu ölçümde yazılır)."
                   + (f" {D['d3']['etiket']} dönemindeki {len(d3_serp)} ölçümde organik sıra {D3_SIRA}." if D3_SIRA else ""))
 else:
     notlar.append("pws=0 SERP ölçümü bu sorgu için bulunamadı (sonuclar-emlakci.jsonl) — organik sıra ölçülmedi.")

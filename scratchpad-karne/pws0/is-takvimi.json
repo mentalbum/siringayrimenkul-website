@@ -1,12 +1,17 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "uretim": "is-takvimi-uret.py",
  "damla": {
-  "acik": 4,
+  "acik": 0,
+  "acik_tur": {
+   "dizin_disi": 0,
+   "yeniden_tarama": 0,
+   "eski_adres": 0
+  },
   "kota_gun": 10,
-  "baslangic": "2026-10-07",
-  "bitis_kota": "2026-10-07",
-  "gun_sayisi": 1,
+  "baslangic": "2026-10-08",
+  "bitis_kota": null,
+  "gun_sayisi": 0,
   "istek_gunluk": {
    "01.09": 9,
    "03.09": 8,
@@ -14,10 +19,14 @@
    "06.09": 8,
    "04.09": 3,
    "02.09": 2,
-   "04.10": 11
+   "04.10": 11,
+   "07.10": 11
   },
-  "ortalama_istek": 7.4,
-  "bitis_gozlenen": "2026-10-07",
+  "kuyruk_disi_istek": 11,
+  "deney_istek": 0,
+  "deney_istek_gunluk": {},
+  "ortalama_istek": 7.9,
+  "bitis_gozlenen": null,
   "kendiliginden_dizine_giren": 20,
   "yeniden_denetimde_dizinde": 5,
   "bitmis": 77,
@@ -60,7 +69,7 @@
  },
  "uyarilar": [
   "DIZIN-DAMLASI-31-08.md içinde 16 açıklama satırının üstünde adres yok; bunlar açık sayıya girmiyor (31.08 kurulumundan kalan boşluk).",
-  "Gözlenen tempo kotanın altında: 01.09 günü 9 istek, 02.09 günü 2 istek, 03.09 günü 8 istek, 04.09 günü 3 istek, 04.10 günü 11 istek, 05.09 günü 11 istek, 06.09 günü 8 istek (ortalama 7,4); bu tempoyla damla 07.10 Çarşamba günü biter, kotayla 07.10 Çarşamba. Düşük günün sebebi kayan 24 saat sınırıydı, kalıcı tempo değil.",
+  "Dizin damlası kuyruğu tamamlandı (açık madde 0); tempo ve bitiş hesabı artık anlamsız, yeni kuyruk açılırsa yeniden hesaplanır.",
   "GSC verisi 3 gün geriden gelir; pencere hesapları buna göre kaydırıldı."
  ],
  "isler": [
@@ -81,38 +90,6 @@
    "kim": "Claude"
   },
   {
-   "tarih": "2026-09-07",
-   "tarih_tr": "07.09 Pazartesi",
-   "is": "Title/H1 donması biter. İlk iş: 'eryaman emlakçı' için ana sayfa meta description (ve gerekirse title) yeniden kurulur; değişiklik tek başına gider, aynı gün başka şablon işi yapılmaz ki etkisi ayrışsın.",
-   "neden": "'eryaman emlakçı' tıklanma oranı 27.07–11.08 döneminde %5,5, 16.08–04.10 döneminde %2,9; organik sıra ve harita kutusu aynı kaldı, yani sorun sırada değil snippet'te. Baş şüpheli 15.08 tarihli ana sayfa açıklama kısaltması (229 → 119 karakter); nedensellik ölçülmedi, tek şüpheli değil. Donma sebebi: 10.08 başlık değişikliğinin tabanı eski başlıkla alınmıştı, üstüne ikinci müdahale binerse etki ayrışmaz.",
-   "kaynak": "eryaman-emlakci.json title_donuk + eryaman-emlakci.json dönemler/notlar + PROTOKOL-gece.md satır 157",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-07",
-   "tarih_tr": "07.09 Pazartesi",
-   "is": "Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 07.09′de bakılacak.",
-   "neden": "Bağlı kayıt 'Ada sayfasının canonical′ı site sayfasına' (çürük) — ölçümü: 30 ada sayfası denetlendi: 17′si dizinde ve 17′sinin de 17′sinde Google canonical olarak ADA SAYFASININ KENDİSİNİ seçmiş. 03.08′de kurulan düzenek dört haftada tek vakada bile yutulmadı.",
-   "kaynak": "kaldirac-defteri.json (31.08 API denetimi, googleCanonical sütunu)",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-07",
-   "tarih_tr": "07.09 Pazartesi",
-   "is": "Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: —",
-   "neden": "Bağlı kayıt 'PR #90 sonrasi yeniden tarama: sitemap tabani ilerletilmedigi icin 8 sayfa bekliyor' (çürük) — ölçümü: 8 capraz-mahalle sayfasinin hicbiri 06.09 merge'unden sonra taranmadi (API denetimi 07.09 02:30). En eski hotki-meydan: 01.08.",
-   "kaynak": "kaldirac-defteri.json (—)",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-09-07",
-   "tarih_tr": "07.09 Pazartesi",
-   "is": "Donma bittiğinde ikinci başlık işi: ada sayfası başlığı. Kaldıraç defteri notu: —",
-   "neden": "Bağlı kayıt 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-adres sitemap'i kaldirildi' (çürük) — ölçümü: Kurulum olcumu: tedavi 50 sayfa 15.440 gosterim / ort. konum 7,65; kontrol 50 sayfa 14.293 / 7,60 (28g GSC, 07.09-04.10). Adaylar >=80 gosterim; 04.10'da degisen 45 kontrol sayfasi, kaldirilan mahalleler ve adas adli siteler haric. CTA tum sitede: hero birincil WhatsApp (gercek site adli hazir mesaj), degerleme ghost bag. Eski-adres sitemap'i (908 adres) kaldirildi; 04.10'da ilk 3'teki 74 yanlis URL'nin 41'i eski adresti.",
-   "kaynak": "kaldirac-defteri.json (—)",
-   "kim": "Claude"
-  },
-  {
    "tarih": "2026-09-14",
    "tarih_tr": "14.09 Pazartesi",
    "is": "Ada beklentisi kıyası 1/2: KARNE_SCRATCH ile python3 ada-beklenti-uret.py → ada-beklenti-gecmis.jsonl'e kıyas satırı düşer, tabanla yan yana okunur.",
@@ -123,7 +100,7 @@
   {
    "tarih": "2026-09-16",
    "tarih_tr": "16.09 Çarşamba",
-   "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor. Betikte konum kırılımı henüz yok; önce olaylar komutuna konum boyutu eklenir.",
+   "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor.",
    "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 12, whatsapp_click 9 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
    "kaynak": "git log --grep '#88' + PROTOKOL-gece.md 02.09 (GA4 açıldı) + tik-sonrasi.json",
    "kim": "Claude"
@@ -145,37 +122,11 @@
    "kim": "Claude"
   },
   {
-   "tarih": "2026-10-07",
-   "tarih_tr": "07.10 Çarşamba",
-   "is": "Dizin damlası: 4 istek gönder, altintepe-sitesi (Yavuz Selim) ile başla. Kuyrukta 4 sayfa açık, gün sonunda 0 kalır.",
-   "neden": "Kuyruktaki her sayfa Search Console API ile dizin dışı doğrulandı ve 28 günde sıfır gösterim aldı; tek ilacı dizine girmek. Kota günde yaklaşık 10 istek ve takvim günü değil kayan 24 saat: dünkü istekler sabah gittiyse pencere ertesi gün aynı saatten sonra açılır; 'sorun oluştu' balonu kota dolu demektir, tekrar basılmaz. İstek, dizin dışı sayfada aynı gün tarama getiriyor (damla turları). İlk sıradaki sayfanın kuyruk notu: 04.10 KOTA AŞILDI, istek işlenmedi (12.09)",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
-   "kim": "Claude",
-   "ayrinti": [
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi",
-     "durum": ""
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari",
-     "durum": ""
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent/kucuk-ankara-villalari",
-     "durum": ""
-    },
-    {
-     "url": "https://www.siringayrimenkul.com/mahalleler/guzelkent/konuta-ozlem-sitesi",
-     "durum": ""
-    }
-   ]
-  },
-  {
-   "tarih": "2026-10-07",
-   "tarih_tr": "07.10 Çarşamba",
-   "is": "GBP yorum kampanyası: sıradaki yorumlarda şu mahalle adları geçsin — Altay, Göksu, Güzelkent, Şehit Osman Avcı, Şeker, Şeyh Şamil, Yavuz Selim, Yeşilova. Etap sorgularında da kutu var, biz yokuz: Eryaman 2. Etap, Eryaman 3. Etap — yorumda etap adı geçirmek henüz denenmedi, ölçülmedi. Devlet hariç: orada harita kutusu hiç çıkmıyor, yorum boşa gider.",
-   "neden": "Bu 10 sorguda harita kutusu çıkıyor ama biz kutuda değiliz (son ölçüm 07.10–07.10). Harita kutusu organik sıradan bağımsız ölçüldü; kaldıracı sayfa değil işletme profili. Yorumlarda mahalle adı geçirmek yürüyen kampanya, etkisi henüz ölçülmedi. Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: 'eryaman emlakçı' (çatı sorgu), Eryaman 1. Etap, Eryaman 4. Etap, Eryaman 5. Etap, Eryaman (mahalle), Tunahan. Kural: her yoruma farklı mahalle adı, hazır metin kopyalatılmaz, kiracı aleyhine ifade yok.",
-   "kaynak": "hedef-sorgular.json (kutu_var ve kutuda alanları)",
+   "tarih": "2026-10-08",
+   "tarih_tr": "08.10 Perşembe",
+   "is": "Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği sürer, ne yazacağı müşteriye bırakılır.",
+   "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar.",
+   "kaynak": "kaldirac-defteri.json 'Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyas' + hedef-sorgular.json (kutu_var ve kutuda alanları)",
    "kim": "Özgün",
    "ayrinti": [
     {
@@ -243,18 +194,28 @@
   {
    "tarih": "2026-10-08",
    "tarih_tr": "08.10 Perşembe",
-   "is": "Damla kuyruğu tükenir: yeni kuyruk için görünmezleri API'ye sor (gsc-dizin becerisi; gorunmez-teshis-uret.py → dizin-adaylari-uret.py), yalnız 'dizin dışı' doğrulananlar yeni kuyruğa girer.",
-   "neden": "Kota boşa harcanmasın: 31.08 kurulumunda görünmez sayfaların çoğu zaten dizindeydi, onlara istek göndermek sıra kazandırmıyor. Bitiş gününün (07.10 Çarşamba) ertesine kondu ki kuyruk boşken kota boş kalmasın.",
-   "kaynak": "DIZIN-DAMLASI-31-08.md giriş notu (57/96 dizindeydi)",
-   "kim": "Claude"
+   "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
+   "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir.",
+   "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
+   "kim": "Claude",
+   "bitis": "2026-10-17",
+   "bitis_tr": "17.10 Cumartesi"
   },
   {
    "tarih": "2026-10-08",
    "tarih_tr": "08.10 Perşembe",
-   "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al.",
+   "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al. Aynı oturumda WhatsApp'ta 'dairem' ve \"Eryaman'daki evim\" ifadelerini ara; 09.09–06.10 arasında 'Merhaba' ile başlayan sohbetleri say ve her birini ev sahibi / daire arayan / diğer diye ayır (yalnız adet; isim ve numara yok).",
    "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor.",
    "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
    "kim": "Özgün"
+  },
+  {
+   "tarih": "2026-10-09",
+   "tarih_tr": "09.10 Cuma",
+   "is": "Yansız 30'luk örnek + 31 gerçek-href sorgusu (yeniden-olcum-kuyrugu-0810.json: yansiz_ornek_30, oncelik_gercek_href). Kayıt ekle-deney-kompakt.py ile; robot duvarında dur.",
+   "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır.",
+   "kaynak": "kaldirac-defteri.json 'Tepe SERP rakamları seçici yeniden ölçümle şişik (üst sınır)'",
+   "kim": "Claude"
   },
   {
    "tarih": "2026-10-10",
@@ -262,6 +223,14 @@
    "is": "GBP bağı değiştiyse 48 saat sonra kontrol: GA4'te medium=gbp oturumu ve GSC'de UTM'li sayfa gösterimi geri geldi mi (python3 hatirlanirlik-uret.py). Özgün'ün Performans ekran görüntüsü geldiyse gbp-performans.jsonl'e işle.",
    "neden": "Bağ panelde kendiliğinden geri dönebiliyor (18.08'de öyle oldu); değişikliğin tuttuğu ancak seriyle görülür.",
    "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-11",
+   "tarih_tr": "11.10 Pazar",
+   "is": "Yalın 'emlakçı' ara okuma: 05–08.10 Search Console verisi gelince telefondan günlük gösterim ve konum (node gsc-q.mjs 2026-09-21 2026-10-10 query,date,device \"query::equals::emlakçı\").",
+   "neden": "07.10 ölçümünde ana sayfa bu sorguda organik ilk 10 dışındaydı (tek nokta, tek gün). 04.10'a kadar Search Console'da organik bandında gösterim sürüyordu (28.09–04.10 telefondan 86 gösterim, konum 5,5). 20.10 turundan önce kaybın sürüp sürmediği veriden görülür. Ana sayfada değişiklik yapılmaz.",
+   "kaynak": "kaldirac-defteri.json 'Eylul sonu dususu: yatay (-%17 her TO kovasi); yalin 'emlakci' ORGANIK'",
    "kim": "Claude"
   },
   {
@@ -273,10 +242,18 @@
    "kim": "Özgün"
   },
   {
+   "tarih": "2026-10-15",
+   "tarih_tr": "15.10 Perşembe",
+   "is": "Eski adrese istek okuması: 07.10'da istek giden 11 eski adres için Search Console günlük gösterim (gsc-q.mjs page,date) ve URL denetimi (11 tek adreslik bakış, o günkü isteklerden sonra). İstek gitmemiş hacimli eski adreslerle kıyaslanır; sonuç deftere yazılır.",
+   "neden": "08.10 okumasında istekten 15 saat sonra 11 adresin 10'unda iz yoktu ve kaldıraç defterde ölü. Bu okuma ölü hükmünü ya doğrular ya da daraltır; o güne kadar eski adrese istek gönderilmez.",
+   "kaynak": "kaldirac-defteri.json 'Eski adresi yeniden taratma (yönlendirme birleştirme)'",
+   "kim": "Claude"
+  },
+  {
    "tarih": "2026-10-20",
    "tarih_tr": "20.10 Salı",
    "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
-   "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı; iki ardışık ölçüm aynıysa 'kalıcı kayıp' denir. 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor.",
+   "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı (tek nokta, tek gün). 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\".",
    "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
    "kim": "Claude"
   },
@@ -291,17 +268,41 @@
   {
    "tarih": "2026-11-04",
    "tarih_tr": "04.11 Çarşamba",
-   "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
-   "neden": "07.10 ölçümü tek pencere (07.09–04.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %84,4, tık payı %80,9; yalın site adı sınıfı TO %0,7 (konum 9,9), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
-   "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
+   "is": "Hatırlanırlık ikinci okuma (adımızla arama, mobil Direct, yorum temposu, GBP Performans Eylül+Ekim) + çekirdek tur tekrarı. Ertesi gün (05.11) halka turu: BOLGE_ON_AYAR=halka (18 sorgu) — GBP kategori/hizmet değişikliğinden en az 72 saat sonra.",
+   "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu). Çekirdek tur tekrarında yalın 'emlakçı' için: 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\". Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz; GBP bağına UTM geri konduysa bu okuma Direct için kıyas değil taban kaydıdır.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
    "kim": "Claude"
   },
   {
    "tarih": "2026-11-04",
    "tarih_tr": "04.11 Çarşamba",
-   "is": "Hatırlanırlık ikinci okuma (adımızla arama, mobil Direct, yorum temposu, GBP Performans Eylül+Ekim) + çekirdek tur tekrarı. Ertesi gün (05.11) halka turu: BOLGE_ON_AYAR=halka (18 sorgu) — GBP kategori/hizmet değişikliğinden en az 72 saat sonra.",
-   "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu).",
-   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "is": "PR #91 ikinci okuma: güçlendirilen 24 site sayfası, Search Console'da pr91-kollar.json kollarıyla (konumdan bağımsız okuma).",
+   "neden": "07.10 ilk okuması zayıf olumluydu, anlamlı değildi (gösterim düşüşü tedavi −%32, kontrol −%53). İkinci 28 günlük pencere bu gün dolar; okuma yalnız 'sonraki_olcum' metninde durduğu için takvime alındı.",
+   "kaynak": "kaldirac-defteri.json '24 zayif site sayfasina veriye dayali ikinci paragraf'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-04",
+   "tarih_tr": "04.11 Çarşamba",
+   "is": "Başlık deneyi 2 ara okuma (yalnız ilk 22 çift, en az 24 maruz gün). Okumadan önce karar eşiği baslik-deneyi-0710.json'a yazılır.",
+   "neden": "Ara okuma yön verir, karar nihai okumada. Kollar düz kıyaslanmaz: her kol kendi 07.09–04.10 tabanına oranlanır ve her sayfa yalnız yeni başlıkla tarandıktan sonraki günleriyle sayılır (okuma kuralı baslik-deneyi-0710.json'da).",
+   "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-05",
+   "tarih_tr": "05.11 Perşembe",
+   "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
+   "neden": "08.10 ölçümü tek pencere (07.09–04.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %84,4, tık payı %80,9; yalın site adı sınıfı TO %0,7 (konum 9,9), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
+   "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-17",
+   "tarih_tr": "17.11 Salı",
+   "is": "Başlık deneyi 2 nihai okuma (son istek + 28 veri günü).",
+   "neden": "Karar okuması. İstekler 17.10'dan sonraya sarkarsa bu tarih de o kadar kayar. Güven aralığı 1'i içeriyorsa sonuç 'sonuçsuz' yazılır: başlık geri alınmaz da öteki sayfalara yayılmaz da.",
+   "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
    "kim": "Claude"
   }
  ]

@@ -1,88 +1,254 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "gun": 28,
  "pencere": {
-  "bas": "2026-09-09",
-  "bit": "2026-10-06",
+  "bas": "2026-09-10",
+  "bit": "2026-10-07",
   "gun": 28,
   "kaynak": "GA4: 28daysAgo–yesterday"
  },
  "ozet": {
   "gun": 28,
-  "kullanici": 1153,
-  "oturum": 1338,
-  "gorunum": 1710,
-  "ort_sure_sn": 53,
-  "hemen_cikma": 65.9,
-  "etkilesim_orani": 34.1,
-  "olay": 5059,
+  "kullanici": 1120,
+  "oturum": 1296,
+  "gorunum": 1636,
+  "ort_sure_sn": 58,
+  "hemen_cikma": 66,
+  "etkilesim_orani": 34,
+  "olay": 4883,
   "phone_click": 12,
   "tel_oturum_basina": 0.009
  },
  "temas": {
   "phone_click": 12,
   "whatsapp_click": 9,
-  "form_start": 3,
+  "form_start": 0,
   "contact_form_submit": 0,
-  "site_ust_sahibinden": 25
+  "site_ust_sahibinden": 24,
+  "temas_oturum": 15,
+  "sahibinden_cikis": {
+   "olay": 49,
+   "oturum": 46
+  }
  },
  "temas_100": {
-  "phone_click": 0.9,
-  "whatsapp_click": 0.67,
-  "form_start": 0.22,
+  "phone_click": 0.93,
+  "whatsapp_click": 0.69,
+  "form_start": 0.0,
   "contact_form_submit": 0.0,
-  "site_ust_sahibinden": 1.87
+  "site_ust_sahibinden": 1.85,
+  "temas_oturum": 1.16,
+  "sahibinden_cikis": {
+   "olay": 3.78,
+   "oturum": 3.55
+  }
+ },
+ "form_start_tanim": "form_sayfalari",
+ "sahibinden_ozel": {
+  "site_ust_sahibinden": 20,
+  "sahibinden_click": 4,
+  "konum": [
+   {
+    "olay": "site_ust_sahibinden",
+    "konum": "(not set)",
+    "n": 20,
+    "oturum": 18
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "site_alt",
+    "n": 3,
+    "oturum": 3
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "header",
+    "n": 1,
+    "oturum": 1
+   }
+  ]
+ },
+ "temas_kaynak": "ga4-temas.mjs",
+ "uyarilar": [
+  "Sitenin kendi bilgisayarımızdaki deneme kopyası üzerinden gelen 4 oturum sayılmadı; içlerinde 6 deneme tıklaması vardı."
+ ],
+ "ga4_temas": {
+  "pencere": {
+   "bas": "2026-09-10",
+   "bit": "2026-10-07"
+  },
+  "host": "www.siringayrimenkul.com",
+  "oturum": {
+   "mobile": 1005,
+   "desktop": 285,
+   "tablet": 4
+  },
+  "temas_olay": {
+   "phone_click": 12,
+   "whatsapp_click": 9
+  },
+  "temas_oturum": {
+   "toplam": 15,
+   "phone_click": 7,
+   "whatsapp_click": 8
+  },
+  "temas_konum": [
+   "phone_click/mobil_cubuk: 7 olay, 5 oturum",
+   "whatsapp_click/mobil_cubuk: 6 olay, 6 oturum",
+   "phone_click/site_ust: 4 olay, 4 oturum",
+   "phone_click/anasayfa_hero: 1 olay, 1 oturum",
+   "whatsapp_click/(not set): 1 olay, 1 oturum",
+   "whatsapp_click/site: 1 olay, 1 oturum",
+   "whatsapp_click/site_ust: 1 olay, 1 oturum"
+  ],
+  "form": {
+   "form_start_form_sayfasinda": 0,
+   "form_start_baska_sayfada": [
+    "/: 3"
+   ],
+   "contact_form_submit": 0,
+   "form_sayfasi_goruntuleme": {
+    "toplam": 33,
+    "bot_izli": 23,
+    "insan_tahmini": 10
+   }
+  },
+  "sahibinden_cikis_click": {
+   "olay": 49,
+   "oturum": 46,
+   "cihaz": {
+    "mobile": 34,
+    "desktop": 15
+   }
+  },
+  "sahibinden_ozel_olay": {
+   "site_ust_sahibinden": 20,
+   "sahibinden_click": 4
+  },
+  "sahibinden_ozel_konum": [
+   {
+    "olay": "site_ust_sahibinden",
+    "konum": "(not set)",
+    "n": 20,
+    "oturum": 18
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "site_alt",
+    "n": 3,
+    "oturum": 3
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "header",
+    "n": 1,
+    "oturum": 1
+   }
+  ],
+  "click_linkdomain": [
+   {
+    "alan": "eryamansiringayrimenkul.sahibinden.com",
+    "olay": 49,
+    "oturum": 46
+   },
+   {
+    "alan": "wa.me",
+    "olay": 8,
+    "oturum": 7
+   },
+   {
+    "alan": "maps.app.goo.gl",
+    "olay": 5,
+    "oturum": 5
+   },
+   {
+    "alan": "maps.google.com",
+    "olay": 1,
+    "oturum": 1
+   }
+  ],
+  "degerleme_cta": [],
+  "mobil_ofis_saati": {
+   "acik": {
+    "oturum": 511,
+    "etkilesimli": 152,
+    "phone_click": 7,
+    "whatsapp_click": 3,
+    "temas_oturum_yaklasik": 10,
+    "temas_100": 1.96
+   },
+   "kapali": {
+    "oturum": 506,
+    "etkilesimli": 165,
+    "phone_click": 0,
+    "whatsapp_click": 4,
+    "temas_oturum_yaklasik": 4,
+    "temas_100": 0.79
+   },
+   "oran_kapali_bolu_acik": 0.4
+  },
+  "suzulen_host": [
+   {
+    "ad": "localhost",
+    "oturum": 4,
+    "olay": 24,
+    "izlenen_olaylar": {
+     "sahibinden_click": 4,
+     "degerleme_cta": 2
+    }
+   }
+  ]
  },
  "aileler": [
   {
    "ad": "Site sayfaları",
    "aile": "site",
    "sayfa": 297,
-   "goruntuleme": 1094,
-   "oturum": 1032,
-   "ort_sure_sn": 48,
+   "goruntuleme": 1073,
+   "oturum": 1016,
+   "ort_sure_sn": 50,
    "hemen_cikma": 65,
-   "olay": 3541
+   "olay": 3489
   },
   {
    "ad": "Ana sayfa",
    "aile": "ana sayfa",
    "sayfa": 1,
-   "goruntuleme": 208,
-   "oturum": 185,
-   "ort_sure_sn": 48,
-   "hemen_cikma": 53,
-   "olay": 640
+   "goruntuleme": 189,
+   "oturum": 168,
+   "ort_sure_sn": 79,
+   "hemen_cikma": 54.2,
+   "olay": 579
   },
   {
    "ad": "Diğer (araçlar, iletişim…)",
    "aile": "diğer",
    "sayfa": 13,
-   "goruntuleme": 224,
-   "oturum": 185,
-   "ort_sure_sn": 33,
-   "hemen_cikma": 34.6,
-   "olay": 459
+   "goruntuleme": 199,
+   "oturum": 162,
+   "ort_sure_sn": 34,
+   "hemen_cikma": 36.4,
+   "olay": 413
   },
   {
    "ad": "Ada sayfaları",
    "aile": "ada",
-   "sayfa": 37,
-   "goruntuleme": 60,
-   "oturum": 47,
-   "ort_sure_sn": 54,
-   "hemen_cikma": 27.7,
-   "olay": 153
+   "sayfa": 33,
+   "goruntuleme": 55,
+   "oturum": 42,
+   "ort_sure_sn": 60,
+   "hemen_cikma": 16.7,
+   "olay": 139
   },
   {
    "ad": "Yazılar",
    "aile": "yazı",
-   "sayfa": 5,
-   "goruntuleme": 38,
-   "oturum": 39,
-   "ort_sure_sn": 51,
-   "hemen_cikma": 69.2,
-   "olay": 130
+   "sayfa": 6,
+   "goruntuleme": 40,
+   "oturum": 40,
+   "ort_sure_sn": 50,
+   "hemen_cikma": 70,
+   "olay": 135
   },
   {
    "ad": "Etap sayfaları",
@@ -90,19 +256,19 @@
    "sayfa": 5,
    "goruntuleme": 48,
    "oturum": 33,
-   "ort_sure_sn": 29,
-   "hemen_cikma": 27.3,
+   "ort_sure_sn": 28,
+   "hemen_cikma": 21.2,
    "olay": 66
   },
   {
    "ad": "Mahalle sayfaları",
    "aile": "mahalle",
-   "sayfa": 9,
-   "goruntuleme": 38,
-   "oturum": 33,
-   "ort_sure_sn": 27,
-   "hemen_cikma": 36.4,
-   "olay": 70
+   "sayfa": 8,
+   "goruntuleme": 32,
+   "oturum": 30,
+   "ort_sure_sn": 18,
+   "hemen_cikma": 40,
+   "olay": 62
   }
  ]
 }

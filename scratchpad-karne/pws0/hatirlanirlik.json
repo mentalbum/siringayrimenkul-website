@@ -1,11 +1,12 @@
 {
- "guncelleme": "2026-10-07",
- "kaynak": "GSC (gsc-q.mjs, marka sorgu süzgeci) + GA4 (ga4-q.mjs kanal) + gbp-yorum-serisi.jsonl + gbp-performans.jsonl",
+ "guncelleme": "2026-10-08",
+ "kaynak": "GSC (gsc-q.mjs: date,query + marka sorgu süzgeci) + GA4 (ga4-q.mjs kanal, acilis, gbp; yalnız canlı alan adı) + gbp-yorum-serisi.jsonl + gbp-performans.jsonl",
  "marka_suzgec": "(ş|s)irin\\s*(gayrimenkul|emlak|group)",
+ "marka_dogrulama_suzgec": "yorum|[şs]ik[aâ]yet",
  "son_gsc_gunu": "2026-10-04",
  "ozet": {
   "marka_gos_28": {
-   "simdi": 177,
+   "simdi": 140,
    "onceki": 154,
    "bit": "2026-10-04"
   },
@@ -13,185 +14,316 @@
    "simdi": 12,
    "onceki": 14
   },
+  "marka_dogrulama_gos_28": {
+   "simdi": 37,
+   "onceki": 0
+  },
   "gbp_sayfa_gos_28": {
    "simdi": 0,
    "onceki": 176
   },
   "direct_mobil_28": {
-   "simdi": 71,
-   "onceki": 69,
-   "bit": "2026-10-06"
+   "simdi": 66,
+   "onceki": 71,
+   "bit": "2026-10-07"
+  },
+  "direct_mobil_ana_28": {
+   "simdi": 17,
+   "onceki": 25,
+   "bit": "2026-10-07",
+   "etk_simdi": 7,
+   "etk_onceki": 10
+  },
+  "direct_mobil_derin_28": {
+   "simdi": 49,
+   "onceki": 46,
+   "bit": "2026-10-07",
+   "etk_simdi": 6,
+   "etk_onceki": 11
   },
   "direct_masaustu_28": {
-   "simdi": 74,
-   "onceki": 102
+   "simdi": 67,
+   "onceki": 87
   }
  },
+ "marka_sorgu_28": [
+  {
+   "sorgu": "şirin gayrimenkul",
+   "sinif": "cekirdek",
+   "simdi": 82,
+   "onceki": 96
+  },
+  {
+   "sorgu": "şirin gayrimenkul yorumları",
+   "sinif": "dogrulama",
+   "simdi": 37,
+   "onceki": 0
+  },
+  {
+   "sorgu": "şirin emlak",
+   "sinif": "cekirdek",
+   "simdi": 30,
+   "onceki": 43
+  },
+  {
+   "sorgu": "şirin emlak eryaman",
+   "sinif": "cekirdek",
+   "simdi": 23,
+   "onceki": 3
+  },
+  {
+   "sorgu": "şirin emlak sahibinden",
+   "sinif": "cekirdek",
+   "simdi": 4,
+   "onceki": 12
+  },
+  {
+   "sorgu": "şirin group",
+   "sinif": "cekirdek",
+   "simdi": 1,
+   "onceki": 0
+  }
+ ],
  "haftalar": [
   {
    "bas": "2026-06-29",
    "tam": true,
    "marka_gos": 45,
    "marka_tik": 17,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
-   "direct_mobil": 49,
-   "direct_masaustu": 26,
+   "direct_mobil": 45,
+   "direct_mobil_ana": 44,
+   "direct_mobil_derin": 1,
+   "direct_masaustu": 2,
    "sosyal": 3,
-   "ai": 0
+   "ai": 0,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-07-06",
    "tam": true,
    "marka_gos": 22,
    "marka_tik": 5,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 9,
-   "direct_masaustu": 19,
+   "direct_mobil_ana": 6,
+   "direct_mobil_derin": 3,
+   "direct_masaustu": 11,
    "sosyal": 1,
-   "ai": 0
+   "ai": 0,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-07-13",
    "tam": true,
    "marka_gos": 23,
    "marka_tik": 3,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 11,
-   "direct_masaustu": 37,
+   "direct_mobil_ana": 3,
+   "direct_mobil_derin": 8,
+   "direct_masaustu": 20,
    "sosyal": 1,
-   "ai": 3
+   "ai": 3,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-07-20",
    "tam": true,
    "marka_gos": 26,
    "marka_tik": 6,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 59,
    "direct_mobil": 3,
-   "direct_masaustu": 29,
+   "direct_mobil_ana": 0,
+   "direct_mobil_derin": 3,
+   "direct_masaustu": 14,
    "sosyal": 3,
-   "ai": 2
+   "ai": 2,
+   "gbp_mobil": 0,
+   "utm": "gecis"
   },
   {
    "bas": "2026-07-27",
    "tam": true,
    "marka_gos": 23,
    "marka_tik": 4,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 567,
    "direct_mobil": 26,
-   "direct_masaustu": 30,
+   "direct_mobil_ana": 3,
+   "direct_mobil_derin": 23,
+   "direct_masaustu": 20,
    "sosyal": 0,
-   "ai": 3
+   "ai": 3,
+   "gbp_mobil": 2,
+   "utm": "var"
   },
   {
    "bas": "2026-08-03",
    "tam": true,
    "marka_gos": 46,
    "marka_tik": 3,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 714,
    "direct_mobil": 11,
-   "direct_masaustu": 27,
+   "direct_mobil_ana": 1,
+   "direct_mobil_derin": 10,
+   "direct_masaustu": 16,
    "sosyal": 2,
-   "ai": 2
+   "ai": 2,
+   "gbp_mobil": 6,
+   "utm": "var"
   },
   {
    "bas": "2026-08-10",
    "tam": true,
    "marka_gos": 34,
    "marka_tik": 3,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 176,
    "direct_mobil": 16,
-   "direct_masaustu": 28,
+   "direct_mobil_ana": 3,
+   "direct_mobil_derin": 13,
+   "direct_masaustu": 20,
    "sosyal": 5,
-   "ai": 0
+   "ai": 0,
+   "gbp_mobil": 4,
+   "utm": "gecis"
   },
   {
    "bas": "2026-08-17",
    "tam": true,
    "marka_gos": 28,
    "marka_tik": 2,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 19,
-   "direct_masaustu": 28,
+   "direct_mobil_ana": 2,
+   "direct_mobil_derin": 17,
+   "direct_masaustu": 20,
    "sosyal": 1,
-   "ai": 5
+   "ai": 5,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-08-24",
    "tam": true,
    "marka_gos": 48,
    "marka_tik": 4,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 17,
-   "direct_masaustu": 19,
+   "direct_mobil_ana": 8,
+   "direct_mobil_derin": 9,
+   "direct_masaustu": 17,
    "sosyal": 2,
-   "ai": 8
+   "ai": 8,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-08-31",
    "tam": true,
    "marka_gos": 44,
    "marka_tik": 5,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 19,
-   "direct_masaustu": 34,
+   "direct_mobil_ana": 10,
+   "direct_mobil_derin": 9,
+   "direct_masaustu": 33,
    "sosyal": 64,
-   "ai": 12
+   "ai": 12,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-09-07",
    "tam": true,
    "marka_gos": 45,
    "marka_tik": 3,
+   "marka_dogrulama": 0,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 21,
-   "direct_masaustu": 19,
+   "direct_mobil_ana": 4,
+   "direct_mobil_derin": 17,
+   "direct_masaustu": 18,
    "sosyal": 47,
-   "ai": 10
+   "ai": 10,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-09-14",
    "tam": true,
-   "marka_gos": 54,
+   "marka_gos": 40,
    "marka_tik": 3,
+   "marka_dogrulama": 14,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 25,
+   "direct_mobil_ana": 6,
+   "direct_mobil_derin": 19,
    "direct_masaustu": 25,
    "sosyal": 12,
-   "ai": 9
+   "ai": 9,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-09-21",
    "tam": true,
-   "marka_gos": 44,
+   "marka_gos": 28,
    "marka_tik": 2,
+   "marka_dogrulama": 16,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 13,
+   "direct_mobil_ana": 4,
+   "direct_mobil_derin": 9,
    "direct_masaustu": 13,
    "sosyal": 3,
-   "ai": 10
+   "ai": 10,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-09-28",
    "tam": true,
-   "marka_gos": 34,
+   "marka_gos": 27,
    "marka_tik": 4,
+   "marka_dogrulama": 7,
    "gbp_sayfa_gos": 0,
    "direct_mobil": 15,
-   "direct_masaustu": 19,
+   "direct_mobil_ana": 6,
+   "direct_mobil_derin": 9,
+   "direct_masaustu": 18,
    "sosyal": 21,
-   "ai": 4
+   "ai": 4,
+   "gbp_mobil": 0,
+   "utm": "yok"
   },
   {
    "bas": "2026-10-05",
    "tam": false,
    "marka_gos": null,
    "marka_tik": null,
+   "marka_dogrulama": null,
    "gbp_sayfa_gos": null,
    "direct_mobil": null,
+   "direct_mobil_ana": null,
+   "direct_mobil_derin": null,
    "direct_masaustu": null,
    "sosyal": null,
-   "ai": null
+   "ai": null,
+   "gbp_mobil": null,
+   "utm": null
   }
  ],
  "yorum": {
@@ -300,11 +432,42 @@
  "gbp_performans": [],
  "gbp_utm": {
   "son_gosterim_gunu": "2026-08-11",
-  "aciklama": "GBP 'Web sitesi' bağı UTM'liyken GSC'de /?utm_source=google&utm_medium=gbp sayfası gösterim alır; seri sıfırsa bağ UTM'siz demektir (kanal #1 GA4'te ölçülemez)."
+  "son_ga4_oturum_gunu": "2026-08-11",
+  "simdi": "yok",
+  "aciklama": "GBP 'Web sitesi' bağı UTM'liyken GSC'de /?utm_source=google&utm_medium=gbp sayfası gösterim alır; seri sıfırsa bağ UTM'siz demektir (kanal #1 GA4'te ölçülemez).",
+  "direct_karisim": {
+   "utmli": {
+    "hafta": 2,
+    "bas": "2026-07-27",
+    "bit": "2026-08-09",
+    "ardisik": true,
+    "ana_min": 1,
+    "ana_max": 3,
+    "ana_ort": 2.0,
+    "gbp_mobil_min": 2,
+    "gbp_mobil_max": 6
+   },
+   "utmsiz": {
+    "hafta": 7,
+    "bas": "2026-08-17",
+    "bit": "2026-10-04",
+    "ardisik": true,
+    "ana_min": 2,
+    "ana_max": 10,
+    "ana_ort": 5.7,
+    "gbp_mobil_min": 0,
+    "gbp_mobil_max": 0
+   },
+   "beklenen_ana_28": 8
+  }
  },
  "uyarilar": [
   "Sorgu boyutu GSC gizlilik süzgecinden geçer: marka gösterimi alt sınırdır, seri olarak okunur.",
   "+%25 altı fark yorumlanmaz (n küçük); mevsim kıyası için Ekim 2027 gerekir.",
-  "Masaüstü Direct'te izleme/kendi trafiği şüphesi var; hatırlanırlık vekili yalnız MOBİL Direct."
+  "Masaüstü Direct'te izleme/kendi trafiği şüphesi var; vekil yalnız MOBİL Direct'in ana sayfaya inen kısmı. Site sayfasına doğrudan düşen oturumlar ayrı tutulur.",
+  "GBP bağı UTM'sizken profil düğmesinden gelenler mobil Direct ana sayfaya karışır. UTM'li haftalarda (27.07–09.08) ana sayfaya doğrudan gelen mobil oturum haftada 1–3 (ortalama 2), UTM'siz haftalarda (17.08–04.10) haftada 2–10 (ortalama 5,7); UTM'li haftalarda profilden gelen mobil oturum (medium=gbp) haftada 2–6. UTM geri konunca ana sayfa mobil Direct 28 günde yaklaşık 8 beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra yapılır.",
+  "GBP bağı UTM'siz ve GBP Performans kaydı yokken mobil Direct hatırlanırlık vekili olarak okunmaz; yalnız taban kaydıdır.",
+  "Adımızın yanında 'yorum' ya da 'şikayet' geçen aramalar çekirdek markadan ayrı sayılır: son 28 günde 37 gösterim (önceki 0).",
+  "Ana sayfaya doğrudan gelen mobil oturum 28 günde 17 (önceki 25); sayı 30 eşiğinin altındayken yüzde fark yorumlanmaz."
  ]
 }

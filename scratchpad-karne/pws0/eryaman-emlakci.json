@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "sorgu": "eryaman emlakçı",
  "kaynak": "api",
  "baslangic": "2026-07-27",
@@ -141,6 +141,8 @@
    "to": 5.5,
    "konum": 1.24,
    "kucuk_ornek": false,
+   "gos_gun": 12.5,
+   "tik_gun": 0.69,
    "sayfalar": [
     {
      "u": "/?utm_source=google&utm_medium=gbp",
@@ -202,6 +204,8 @@
    "to": 9.2,
    "konum": 1.32,
    "kucuk_ornek": true,
+   "gos_gun": 16.2,
+   "tik_gun": 1.5,
    "sayfalar": [
     {
      "u": "/",
@@ -230,6 +234,8 @@
    "to": 2.9,
    "konum": 1.43,
    "kucuk_ornek": false,
+   "gos_gun": 13.8,
+   "tik_gun": 0.4,
    "sayfalar": [
     {
      "u": "/",
@@ -391,6 +397,13 @@
    "u": "cite:siringayrimenkul.com (ana sayfa)",
    "harita": true,
    "kanal": "gizli"
+  },
+  {
+   "d": "2026-10-07",
+   "sira": 2,
+   "u": "/",
+   "harita": true,
+   "kanal": "uule-eryaman"
   }
  ],
  "aciklama_commit": {
@@ -399,6 +412,180 @@
   "konu": "ana sayfa 'kim' düzeni: güvenilir emlakçı pasajı SSS'ten görünür metne, blog SSS altına, meta description 229→119, alıcı hitabı kalktı, SSS #6 pozitif kuruldu (#24)"
  },
  "title_donuk": "2026-09-07",
+ "mobil_haftalar": [
+  {
+   "bas": "2026-06-29",
+   "bit": "2026-07-05",
+   "etiket": "29.06–05.07",
+   "gun": 7,
+   "kismi": false,
+   "gos": 27,
+   "tik": 4
+  },
+  {
+   "bas": "2026-07-06",
+   "bit": "2026-07-12",
+   "etiket": "06.07–12.07",
+   "gun": 7,
+   "kismi": false,
+   "gos": 24,
+   "tik": 0
+  },
+  {
+   "bas": "2026-07-13",
+   "bit": "2026-07-19",
+   "etiket": "13.07–19.07",
+   "gun": 7,
+   "kismi": false,
+   "gos": 32,
+   "tik": 4
+  },
+  {
+   "bas": "2026-07-20",
+   "bit": "2026-07-26",
+   "etiket": "20.07–26.07",
+   "gun": 7,
+   "kismi": false,
+   "gos": 23,
+   "tik": 1
+  },
+  {
+   "bas": "2026-07-27",
+   "bit": "2026-08-02",
+   "etiket": "27.07–02.08",
+   "gun": 7,
+   "kismi": false,
+   "gos": 34,
+   "tik": 5
+  },
+  {
+   "bas": "2026-08-03",
+   "bit": "2026-08-09",
+   "etiket": "03.08–09.08",
+   "gun": 7,
+   "kismi": false,
+   "gos": 65,
+   "tik": 3
+  },
+  {
+   "bas": "2026-08-10",
+   "bit": "2026-08-16",
+   "etiket": "10.08–16.08",
+   "gun": 7,
+   "kismi": false,
+   "gos": 54,
+   "tik": 3
+  },
+  {
+   "bas": "2026-08-17",
+   "bit": "2026-08-23",
+   "etiket": "17.08–23.08",
+   "gun": 7,
+   "kismi": false,
+   "gos": 73,
+   "tik": 0
+  },
+  {
+   "bas": "2026-08-24",
+   "bit": "2026-08-30",
+   "etiket": "24.08–30.08",
+   "gun": 7,
+   "kismi": false,
+   "gos": 77,
+   "tik": 2
+  },
+  {
+   "bas": "2026-08-31",
+   "bit": "2026-09-06",
+   "etiket": "31.08–06.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 75,
+   "tik": 1
+  },
+  {
+   "bas": "2026-09-07",
+   "bit": "2026-09-13",
+   "etiket": "07.09–13.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 117,
+   "tik": 5
+  },
+  {
+   "bas": "2026-09-14",
+   "bit": "2026-09-20",
+   "etiket": "14.09–20.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 106,
+   "tik": 3
+  },
+  {
+   "bas": "2026-09-21",
+   "bit": "2026-09-27",
+   "etiket": "21.09–27.09",
+   "gun": 7,
+   "kismi": false,
+   "gos": 54,
+   "tik": 1
+  },
+  {
+   "bas": "2026-09-28",
+   "bit": "2026-10-04",
+   "etiket": "28.09–04.10",
+   "gun": 7,
+   "kismi": false,
+   "gos": 32,
+   "tik": 0
+  }
+ ],
+ "mobil_ozet": {
+  "bas": "2026-06-29",
+  "bit": "2026-10-04",
+  "hafta": 14,
+  "gos": 793,
+  "tik": 32,
+  "ort_tik_hafta": 2.29,
+  "en_az": 0,
+  "en_cok": 5,
+  "hafta_gerek_50": 27,
+  "hafta_gerek_100": 8,
+  "mobil_gos_pay": 71.9,
+  "kapsama": 1.0
+ },
+ "donem_farki": {
+  "d1": "27.07–11.08",
+  "d3": "16.08–04.10",
+  "gos_gun": [
+   12.5,
+   13.8
+  ],
+  "tik_gun": [
+   0.69,
+   0.4
+  ],
+  "tik": [
+   11,
+   20
+  ],
+  "gun": [
+   16,
+   50
+  ],
+  "p": 0.146,
+  "yontem": "kesin iki terimli sınama, iki yönlü: tıklar günlere eşit dağılsaydı d1'e düşecek paya göre"
+ },
+ "kesit_commit": {
+  "h": "ece3008",
+  "d": "2026-08-20",
+  "konu": "Ana sayfa: SERP kesitindeki özne uyumsuzluğu giderildi (#48)"
+ },
+ "baslik_commit": {
+  "h": "eed9535",
+  "d": "2026-08-08",
+  "konu": "Anasayfa 'eryaman emlakçı' paketi: 48 karakterlik başlık + sitemap tazelik onarımı + iç link ve vitrin düzeltmeleri"
+ },
  "gunluk": [
   {
    "d": "2026-07-27",
@@ -824,10 +1011,12 @@
  "notlar": [
   "TO üç dönemde %5,5 → %9,2 → %2,9 (27.07–11.08 / 12.08–15.08 / 16.08–04.10); GSC konumu aynı dönemlerde 1,2 / 1,3 / 1,4. 12.08–15.08 dönemi 4 gün / 65 gösterim: oran güvenilmez.",
   "GSC “konum”u mülk düzeyinde en iyi adresimizin konumudur. 27.07–11.08 arasında bu adres harita kutusundaki GBP bağıydı (utm'li adres, konum 1,2, 199 gösterim / 1 tık); ana sayfa “/” aynı günlerde konum 5,8. utm'li adres 11.08 sonrası GSC'de yok (URL denetimi: DIŞARIDA — URL is unknown to Google) ve “/” konumu 1,4 oldu — harita bağının gösterimi artık “/” adresine yazılıyor. Yani sabit görünen 1,2–1,4 harita kutusunun konumudur; organik sırayı GSC değil pws=0 SERP ölçümü verir.",
-  "pws=0 SERP ölçümlerinde organik sıra: 3 (09.08), 3 (15.08), 2 (17.08), 3 (30.08); harita kutusunda 1. sıra 4/4 ölçümde. Organik sıra sabit, harita sabit, TO düştü → sorun sırada değil, snippet/başlıkta.",
-  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–04.10 döneminde 19 tık (konum 1,4, harita bağı dahil). Harita bağı dahil edildiği hâlde tık düşmüşse organik tık kaybı bundan da büyüktür.",
-  "Baş şüpheli: 2026-08-15 ana sayfa meta description kısaltması (commit 3f58e7f: “ana sayfa 'kim' düzeni: güvenilir emlakçı pasajı SSS'ten görünür metne, blog SSS altına, meta description 229→119, alıcı hitabı kalktı, SSS #6 pozitif kuruldu (#24)”). TO düşüşü bu tarihten sonraki dönemde görülüyor; nedensellik ölçülmedi, tek şüpheli değil (aynı günlerde harita bağı da “/” adresine geçti).",
-  "Title/H1 donuk, serbest kalma tarihi 07.09 (08.08 değişikliğinin 4 haftalık bekleme süresi); o tarihe kadar müdahale yalnızca meta description olabilir."
+  "pws=0 SERP ölçümlerinde organik sıra: 3 (09.08), 3 (15.08), 2 (17.08), 3 (30.08), 2 (07.10); harita kutusunda 5/5 ölçümde varız (kutu içindeki sıra yalnız Eryaman konumlu ölçümde yazılır). 16.08–04.10 dönemindeki 3 ölçümde organik sıra 2–3.",
+  "Günlük gösterim 12,5 → 13,8, günlük tık 0,69 → 0,40 (27.07–11.08 / 16.08–04.10; 11 tık 16 günde, 20 tık 50 günde). Fark bu hacimde gürültüden ayrılamıyor (bu kadar fark rastlantıyla da %15 olasılıkla çıkar). Başlık ya da snippet sorunu kanıtlanmadı, başlığa dokunulmuyor.",
+  "Tıkları taşıyan sayfa her dönemde ana sayfa: 27.07–11.08 döneminde “/” 10 tık (konum 5,8, organik), 16.08–04.10 döneminde 19 tık (konum 1,4, harita bağı dahil). Organik sıra sabit değildi: 27.07–11.08 döneminde “/” konumu 5,8 (o günlerde harita bağı ayrı adresteydi, bu organik sıradır), sonraki SERP ölçümlerinde 2–3; başlık 08.08 günü değişmişti.",
+  "Hüküm için bakılacak seri telefondan gelen tık: 14 tam haftada (29.06–04.10) toplam 32 tık, haftada ortalama 2,3 (en az 0, en çok 5). Bu hacimde tek haftaya bakılmaz.",
+  "15.08 açıklama kısaltması için kanıt yok: Google 15.08 ve 20.08 tarihlerinde açıklamamızın iki sürümünü de göstermedi, kesiti sayfa gövdesinden derledi (commit 3f58e7f ve ece3008 notları). Bugünkü kesit, SERP kaydına 'kap' alanı gelince okunur.",
+  "Ana sayfa başlığı ve açıklaması: dokunulmuyor. Son SERP ölçümünde (07.10) organik 2. sıra, harita kutusunda varız. Telefondan haftada ortalama 2,3 tık geliyor; bu hacimde tıklanma oranı bir buçuk katına çıksa bile farkı görmek yaklaşık 27 hafta sürer. Yeniden açma koşulu kaldıraç defterinde (organik sıra iki ardışık turda 3'ün gerisine düşerse ya da SERP kaydı başlığı/kesiti bozuk gösterirse)."
  ],
  "uyari": "Sorgu düzeyi veri: GSC gizlilik süzgeci bazı günleri düşürür; günlük gösterim küçük (ortalama 13,7/gün). Tek güne değil hafta ve dönem toplamına bak. Son veri günü 04.10 — GSC 2-3 gün geriden gelir."
 }

@@ -1928,20 +1928,24 @@ try:
 except Exception:
     _KD = []
 _ROZET = {"kanitli": ("işe yarıyor", "iyi"), "curuk": ("çürütüldü", "kotu"),
-          "acik": ("açık soru", "orta")}
+          "acik": ("açık soru", "orta"),
+          # 08.10: defterde bu üç durum da vardı ama hiçbir grupta basılmıyordu
+          # (7 kayıt karnede görünmüyordu, sayaç ise hepsini sayıyordu).
+          "dogrulandi": ("doğrulandı", "iyi"), "olu": ("ölü, denenmez", "kotu"),
+          "olculdu": ("ölçüldü, izleniyor", "orta")}
 def _kaldirac_kart(k):
     yazi, sinif = _ROZET.get(k["durum"], ("?", "orta"))
     kisit = f'<p class="alt" style="margin:6px 0 0">{esc(k["kisit"])}</p>' if k.get("kisit") else ""
     return (f'<div class="kaldirac {sinif}"><div class="kbas">'
             f'<strong>{esc(k["ad"])}</strong><span class="krozet">{yazi}</span></div>'
-            f'<p>{esc(k["olcum"])}</p>{kisit}'
+            f'<p>{esc(k.get("olcum") or k.get("sonuc") or "")}</p>{kisit}'
             f'<p class="kkaynak">{esc(k.get("kaynak",""))}</p></div>')
-def _kaldirac_grup(durum):
-    v = [k for k in _KD if k["durum"] == durum]
+def _kaldirac_grup(*durumlar):
+    v = [k for k in _KD if k["durum"] in durumlar]
     return "".join(_kaldirac_kart(k) for k in v) or '<p class="alt">kayıt yok</p>'
-kaldirac_kanitli = _kaldirac_grup("kanitli")
-kaldirac_curuk = _kaldirac_grup("curuk")
-kaldirac_acik = _kaldirac_grup("acik")
+kaldirac_kanitli = _kaldirac_grup("kanitli", "dogrulandi")
+kaldirac_curuk = _kaldirac_grup("curuk", "olu")
+kaldirac_acik = _kaldirac_grup("acik", "olculdu")
 kaldirac_say = len(_KD)
 
 # --- hedef sorgular (02.09) -----------------------------------------------
@@ -3132,6 +3136,7 @@ tr.vurgu td {{ background:var(--yuzey) }}
 .bek {{ background:var(--yuzey); border:1px dashed var(--cizgi); border-radius:8px; padding:10px 14px; display:flex; flex-direction:column; gap:2px }}
 .bek > span:first-of-type {{ color:var(--altin); font-weight:600; font-size:13.5px }}
 .iki {{ display:grid; grid-template-columns:1fr 1fr; gap:16px }}
+.iki > * {{ min-width:0 }}  /* 08.10: geniş tablo ızgara hücresini sayfa dışına itiyordu */
 @media (max-width:760px) {{ .iki {{ grid-template-columns:1fr }} }}
 .pano {{ background:var(--yuzey); border:1px solid var(--cizgi); border-radius:8px; padding:16px 18px }}
 .kgrup {{ font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--m3);

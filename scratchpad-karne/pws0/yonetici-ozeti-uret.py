@@ -406,13 +406,12 @@ try:
                   f"{tr_sayi(_tz['ilk3_dogru'])} tanesi doğru (%{_to}). Daha eski ölçümlerden kalan "
                   f"{tr_sayi(_es['ilk3'])} sıranın {tr_sayi(_es['ilk3_dogru'])} tanesi ")
         if _hukum == "ust_sinir":
-            _ne += (f" Bu oran üst sınırdır, çünkü ölçümler aynı yaşta değil. {_olcum}doğru görünüyor (%{_eo}), "
-                    f"ama bunlar yeniden ölçülmedi.")
+            # 08.10 birleştirme: üst kart kısa tutulur; sayıların dökümü "Sırayı hangi sayfamız
+            # tutuyor" bölümünde aynı JSON'dan basılıyor.
+            _ne += (f" Bu oran üst sınırdır: {_ne_zaman} yeniden ölçülen sorgularda oran %{_to}, "
+                    f"yeniden ölçülmeyen eski ölçümlerde %{_eo}.")
             if _secim is not None and _secim >= SECICI_ESIK:
-                _od = (f"yalnız {tr_sayi(_sy['onceden_dogru'])} tanesi önceden doğruydu, yani çoğunlukla"
-                       if _sy["onceden_dogru"] else "hiçbiri önceden doğru değildi, yani yalnız")
-                _ne += (f" {_ne_zaman} yeniden ölçülen {tr_sayi(_sy['yeniden_olculen'])} sorgudan {_od} "
-                        f"sorunlu çıkanlar yeniden ölçüldü.")
+                _ne += " Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı."
             # aralık yalnız bilgi veriyorsa basılır: yalnız birkaç sorunlu sıra yeniden ölçüldüyse taze
             # oran çok düşük çıkar, "%6 ile %91 arası" okuyana bir şey söylemez
             if 0 < _pay - _to <= ARALIK_EN_COK:
@@ -679,6 +678,8 @@ except Exception as e:
 try:
     _KD = json.load(open(yol("kaldirac-defteri.json"), encoding="utf-8"))
     _sm = next(k for k in _KD["kaldiraclar"] if k["ad"].lower().startswith("sitemap"))
+    if _sm.get("durum") != "acik":
+        raise StopIteration  # 08.10: okuma yapıldı; kayıt kapandıysa "bekleniyor" maddesi basılmaz
     _mg = re.search(r"(\d{1,2})\.(\d{2})", _sm.get("kaynak", ""))
     _mh = re.search(r"(\d+)\s*-\s*(\d+)\s*hafta", _sm.get("kisit", ""))
     if not (_mg and _mh):
@@ -698,6 +699,8 @@ try:
     BEKLENEN.append({"tarih": gg_aa(_bit), "iso": _bit.isoformat(), "metin": metin,
                      "kaynak": "kaldirac-defteri.json (Sitemap tazelik sinyali: kaynak tarihi + kisit haftası)",
                      "ayrinti": {"baslangic": _bas.isoformat(), "hafta": _hafta_ust, "durum": _sm.get("durum")}})
+except StopIteration:
+    pass
 except Exception as e:
     UYARILAR.append(f"14.09 maddesi kurulamadı: {e}")
 

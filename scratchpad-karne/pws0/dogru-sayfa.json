@@ -1,59 +1,64 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "toplam": 509,
  "hepsi": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 359
+   "n": 382
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 52
-  },
-  {
-   "k": "eski",
-   "ad": "Taşınmadan önceki adres",
-   "n": 32
+   "n": 63
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 30
+   "n": 21
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 17
+   "n": 14
+  },
+  {
+   "k": "eski",
+   "ad": "Taşınmadan önceki adres",
+   "n": 14
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 16
+   "n": 12
+  },
+  {
+   "k": "belirsiz",
+   "ad": "Adresi doğrulanamayan",
+   "n": 2
   },
   {
    "k": "dis",
    "ad": "Bize ait olmayan sonuç",
-   "n": 3
+   "n": 1
   }
  ],
- "ilk3_toplam": 392,
+ "ilk3_toplam": 390,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 335
-  },
-  {
-   "k": "eski",
-   "ad": "Taşınmadan önceki adres",
-   "n": 30
+   "n": 354
   },
   {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 19
+   "n": 13
+  },
+  {
+   "k": "eski",
+   "ad": "Taşınmadan önceki adres",
+   "n": 13
   },
   {
    "k": "mahalle",
@@ -64,28 +69,29 @@
    "k": "ada",
    "ad": "Ada sayfamız",
    "n": 4
+  },
+  {
+   "k": "belirsiz",
+   "ad": "Adresi doğrulanamayan",
+   "n": 2
   }
  ],
- "ilk3_dogru": 335,
+ "ilk3_dogru": 354,
  "yanlis_mahalle": [
   [
    "sehit-osman-avci-mahallesi",
-   19
+   9
   ],
   [
    "yavuz-selim-mahallesi",
-   13
-  ],
-  [
-   "seyh-samil-mahallesi",
-   12
-  ],
-  [
-   "guzelkent-mahallesi",
-   11
+   9
   ],
   [
    "goksu-mahallesi",
+   8
+  ],
+  [
+   "guzelkent-mahallesi",
    8
   ],
   [
@@ -93,15 +99,11 @@
    7
   ],
   [
-   "tunahan-mahallesi",
-   6
-  ],
-  [
    "devlet-mahallesi",
    5
   ],
   [
-   "seker-mahallesi",
+   "seyh-samil-mahallesi",
    5
   ],
   [
@@ -110,7 +112,58 @@
   ],
   [
    "altay-mahallesi",
-   4
+   3
+  ],
+  [
+   "tunahan-mahallesi",
+   2
   ]
- ]
+ ],
+ "olcum_yasi": {
+  "2026-08": {
+   "kayit": 23,
+   "ilk3": 20,
+   "ilk3_dogru": 15
+  },
+  "2026-09": {
+   "kayit": 277,
+   "ilk3": 259,
+   "ilk3_dogru": 259
+  },
+  "2026-10": {
+   "kayit": 209,
+   "ilk3": 111,
+   "ilk3_dogru": 80
+  }
+ },
+ "secilmis_yeniden_olcum": {
+  "yeniden_olculen": 209,
+  "onceden_dogru": 37,
+  "kuyruk_onceden_dogru": 328,
+  "kuyruk_toplam": 509,
+  "kova": "2026-10",
+  "onceki_olcumu_yok": 0
+ },
+ "yas_kiyasi": {
+  "taze_kova": "2026-10",
+  "taze_aylar": [
+   "2026-10"
+  ],
+  "taze": {
+   "kayit": 209,
+   "ilk3": 111,
+   "ilk3_dogru": 80
+  },
+  "eski": {
+   "kayit": 300,
+   "ilk3": 279,
+   "ilk3_dogru": 274
+  },
+  "taze_oran": 72.1,
+  "eski_oran": 98.2,
+  "fark": 26.1,
+  "etki": 18.7,
+  "hukum": "ust_sinir"
+ },
+ "uulesiz_kayit": 482
 }

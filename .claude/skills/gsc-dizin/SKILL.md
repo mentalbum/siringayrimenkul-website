@@ -191,3 +191,20 @@ başlatmadı) ve `inspect?…&id=<url>` deep-link 404 veriyor. İşleyen sıra:
   Şüpheye düşersen tekrar basma; ertesi gün `gsc-api.mjs denetle` ile son tarama
   tarihine bak (istek kabul edilmişse tarama damgası istek dakikasına düşer).
 - Kota bitince aynı akış "Kota Aşıldı" ile döner; o istek işlenmemiştir.
+
+## 08.10.2026 — kotanın yeni alıcısı ve kuyruk işaretleri
+
+- **Eski adrese (308 veren adres) istek GÖNDERİLMEZ.** 07.10'da gönderilen 11 isteğin 10'unda
+  ~15 saat sonra API'de iz yoktu; eski adres sönünce gösterim yeni adrese devrolmuyor
+  (kaldıraç defteri: "Eski adresi yeniden taratma", durum ölü).
+- **Günlük 11 isteğin bugünkü alıcısı Başlık deneyi 2'nin iki kolu:** sıra ve kurallar
+  `scratchpad-karne/pws0/deney2-yeniden-tarama.tsv` başlığında. Tedavi + kontrol ÇİFT gider;
+  her istekten önce tek adreslik `gsc-api.mjs denetle`; `istek_zamani` o dosyaya yazılır.
+  Bu istekler `DIZIN-DAMLASI-31-08.md`'ye satır olarak YAZILMAZ (karne dizin kuyruğu sayar).
+- **Açık satırın türü** (beş okuyucuda aynı kural): eski şemalı adres → eski adres; notta
+  "dizin dışı" → dizin dışı; diğerleri → yeniden tarama. Yalnız "dizin dışı" olanlar
+  "Google'da yok" sayılır. `- [~]` = gönderilmeyecek / gereği kalmadı (sayılmaz).
+- "Hata! Bir sorun oluştu" balonu için bu dosyadaki iki bölüm (01.09 ve 02.09 dersleri)
+  "sınır demektir" diyor; 04.10 ve 07.10 gözlemi ise balonun adrese özgü ve geçici de
+  olabildiği yönünde. Kesin kanıt yalnız "Kota Aşıldı" metnidir: balon görülünce aynı adres
+  bir kez daha denenir, yine balon gelirse o gün durulur.

@@ -1,14 +1,14 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "gurultu": {
-  "cift": 80,
-  "sessiz": 70,
+  "cift": 84,
+  "sessiz": 74,
   "oran": 88,
-  "giris_cikis": 87,
+  "giris_cikis": 99,
   "dagilim": [
    [
     0,
-    51
+    55
    ],
    [
     1,
@@ -34,11 +34,11 @@
  },
  "olculen": 509,
  "kuyruk": 509,
- "kayit": 2153,
+ "kayit": 2226,
  "yas": [
   [
    "0-7 gün",
-   152
+   209
   ],
   [
    "8-14 gün",
@@ -50,22 +50,41 @@
   ],
   [
    "30+ gün",
-   357
+   300
   ]
  ],
  "bulgular": [
   {
-   "ad": "Karşılığı olmayan sayfa kaydı (tüm tarihçe)",
+   "ad": "Karşılığı olmayan sayfa kaydı (kuyruk ve tur dosyaları)",
+   "adet": 0,
+   "aciklama": "Ölçüm kuyruğunda ya da mahalle tur dosyalarında duran ama sitede dosyası olmayan kayıt. Bunlar karnenin rakamlarına girer, canlıda 404 verir ve 'dizin dışı' sanılıp kota harcanmasına yol açar.",
+   "ornek": [],
+   "agir": true,
+   "temiz": true,
+   "bilgi": false
+  },
+  {
+   "ad": "Tarihçede kalan eski sayfa kaydı (bilgi)",
    "adet": 21,
-   "aciklama": "Ölçüm tarihçesinde duran ama sitede dosyası olmayan kayıt. Bunlar canlıda 404 verir; 'dizin dışı' sanılıp kota harcanmasına yol açar. NOT: karnenin teşhis bölümünde geçen daha küçük sayı yalnız O TURUN görünmez listesinden çıkarılanları sayar; burası tarihçenin tamamı.",
+   "aciklama": "Ölçüm tarihçesinde duran, sitede dosyası olmayan ve artık ne kuyrukta ne tur dosyalarında bulunan kayıt. Hiçbir karne rakamına girmez; yalnız bilgi.",
    "ornek": [
     "altay-mahallesi/merkez-sitesi",
     "altay-mahallesi/metropol-bloklari",
     "altay-mahallesi/yildiz-bloklari",
     "devlet-mahallesi/4-devlet-mahallesi-sitesi"
    ],
-   "agir": true,
-   "temiz": false
+   "agir": false,
+   "temiz": false,
+   "bilgi": true
+  },
+  {
+   "ad": "Kuyruk ile tur dosyaları arasında fark",
+   "adet": 0,
+   "aciklama": "Ölçüm kuyruğunda olup hiçbir mahalle tur dosyasında olmayan (ya da tersi) sayfa. Fark varsa karnenin iki tepe rakamı ayrı toplamdan hesaplanır.",
+   "ornek": [],
+   "agir": false,
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Tarihi bozuk kayıt",
@@ -73,7 +92,8 @@
    "aciklama": "Gelecek tarihli ya da alanı boş kayıt. Değişim hesabı tarih sırasına dayandığı için tek bir bozuk tarih yükselen/düşen tablosunu ters çevirebilir.",
    "ornek": [],
    "agir": true,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Sıra değeri aralık dışı",
@@ -81,7 +101,8 @@
    "aciklama": "Ölçüm ilk 10 sonucu görüyor; 1-10 dışındaki değer ya ölçüm hatası ya eski num=20 kalıntısıdır.",
    "ornek": [],
    "agir": false,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Aynı gün iki kez ölçülmüş sayfa",
@@ -94,7 +115,8 @@
     "sehit-osman-avci-mahallesi/etaplar/2 (2026-10-07)"
    ],
    "agir": false,
-   "temiz": false
+   "temiz": false,
+   "bilgi": false
   },
   {
    "ad": "Kaldırılan mahalleye yeni ölçüm",
@@ -102,7 +124,8 @@
    "aciklama": "Ata/Susuz/Cumhuriyet 27.08'de siteden kaldırıldı ve 410 dönüyor. Onlara harcanan ölçüm, kanalın günlük sorgu bütçesinden gider.",
    "ornek": [],
    "agir": false,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Kuyrukta olup ölçülmemiş",
@@ -110,7 +133,8 @@
    "aciklama": "Ölçüm kuyruğunda olup bir kez bile sıraya bakılmamış sayfa.",
    "ornek": [],
    "agir": false,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Envanterde var, kuyrukta YOK",
@@ -118,29 +142,31 @@
    "aciklama": "Sitede sayfası olan ama ölçüm kuyruğunda hiç yer almayan kayıt — adaş paylaşımı da hesaba katıldı. Bu sayfaların sırası hiç bilinmiyor, yani karnenin kapsama iddiası olduğundan iyi görünüyor.",
    "ornek": [],
    "agir": true,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Adresi okunamayan ölçüm (tüm tarihçe)",
    "adet": 0,
-   "aciklama": "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel 504 sorguyu kapsar, bu yüzden daha küçüktür.",
+   "aciklama": "Sıra kaydedilmiş ama hangi sayfanın sıralandığı okunamamış (adres kesik ya da <cite> kırıntısı). Doğru sayfa teşhisine giremezler. NOT: 'Sırayı hangi sayfamız tutuyor' bölümündeki sayı yalnız güncel kuyruğu kapsar, bu yüzden daha küçük olabilir.",
    "ornek": [],
    "agir": false,
-   "temiz": true
+   "temiz": true,
+   "bilgi": false
   },
   {
    "ad": "Karne metninde elle yazılmış rakam",
-   "adet": 17,
-   "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu.",
+   "adet": 3,
+   "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu. Tarihler, 'İlk 10' gibi etiketler, madde numaraları ve özel adlar (site ve işletme adındaki sayı) sayılmaz; kalanlar elle yazılmış sayı ya da eşiktir.",
    "ornek": [
-    "satır 521: \"seyh-samil\": \"Mahalle sayfası kanibalizasyonunun merkezi: site adı ar",
-    "satır 522: \"yavuz-selim\": \"Ada sayfası kanibalizasyonunun ikinci merkezi (Erkarac",
-    "satır 756: <li><span><strong>Yenimahalle</strong> <span class=\"alt\">27.08′de site",
-    "satır 858: <p class=\"etk\">Organik 1 olduklarımız</p><p class=\"tags\">{birler or '—"
+    "satır 1417: <p class=\"alt\" style=\"margin:8px 0 10px\">Konumu 5 ve üstü, 40+ gösteri",
+    "satır 1473: <p class=\"alt\" style=\"margin:10px 0 0\">Sıra okumak için isteğin üzerin",
+    "satır 2103: <li><span>7 günden eski ölçüm</span><span class=\"chip {'kotu' if _ho['"
    ],
    "agir": false,
-   "temiz": false
+   "temiz": false,
+   "bilgi": false
   }
  ],
- "temiz_mi": false
+ "temiz_mi": true
 }

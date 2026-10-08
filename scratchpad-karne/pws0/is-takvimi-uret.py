@@ -505,8 +505,24 @@ if BIZ_YOK:
              f"Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: "
              f"{', '.join(GBP_ZATEN)}. Kural: her yoruma farklı mahalle adı, hazır metin "
              f"kopyalatılmaz, kiracı aleyhine ifade yok.")
+    # 08.10: Google Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi
+    # yasaklıyor. Defterde "karar_bekliyor" işaretli kampanya kaydı durdukça karne yeni
+    # mahalle/site adı ÖNERMEZ; satır karar bekleyen iş olarak basılır. Kayıt kapanınca
+    # (karar_bekliyor kalkınca) eski metin geri gelir ya da satır tümden kalkar.
+    _yorum_kaydi = next((k for k in KD.get("kaldiraclar", [])
+                         if k.get("karar_bekliyor") and tranahtar.anahtar(k.get("ad", "")).startswith("yorumda mahalle")), None)
+    _gbp_kaynak = "hedef-sorgular.json (kutu_var ve kutuda alanları)"
+    if _yorum_kaydi:
+        is_ = ("Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp "
+               "sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği "
+               "sürer, ne yazacağı müşteriye bırakılır.")
+        neden = ("Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız "
+                 "memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. "
+                 f"Kampanyanın ölçülen kazancı yok: bu {len(BIZ_YOK)} sorguda harita kutusu çıkıyor ama biz hâlâ "
+                 "kutuda değiliz. " + _yorum_kaydi.get("kisit", ""))
+        _gbp_kaynak = f"kaldirac-defteri.json '{_yorum_kaydi.get('ad', '')[:60]}' + " + _gbp_kaynak
     ekle(GBP_GUN, is_, neden,
-         "hedef-sorgular.json (kutu_var ve kutuda alanları)", "Özgün",
+         _gbp_kaynak, "Özgün",
          ayrinti=[{"sorgu": s["sorgu"], "kutu_yon": s.get("kutu_yon"), "organik_sira": s["sira"] or "ilk 10 dışı",
                    "olcum": s["tarih"]} for s in BIZ_YOK])
 
@@ -647,6 +663,10 @@ _ga4_kaynak = os.path.join(REPO, "scripts", "ga4-api.mjs")
 try:
     with open(_ga4_kaynak, encoding="utf-8") as f:
         GA4_KONUM_VAR = "konum" in f.read()
+    # 08.10: konum kırılımı artık ga4-temas.mjs'te (temas_konum); o varsa "henüz yok" denmez
+    if not GA4_KONUM_VAR and os.path.exists(os.path.join(KOK, "ga4-temas.mjs")):
+        with open(os.path.join(KOK, "ga4-temas.mjs"), encoding="utf-8") as f:
+            GA4_KONUM_VAR = "konum" in f.read()
 except FileNotFoundError:
     GA4_KONUM_VAR = False
 temas = TS.get("temas", {})

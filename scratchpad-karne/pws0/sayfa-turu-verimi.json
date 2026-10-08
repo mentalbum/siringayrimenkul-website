@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "pencere": {
   "bas": "2026-09-07",
   "bit": "2026-10-04",
@@ -19,10 +19,10 @@
   {
    "tur": "diğer",
    "ad": "Diğer (ana sayfa, araçlar)",
-   "sayfa": 18,
-   "gos": 4428,
+   "sayfa": 20,
+   "gos": 4430,
    "tik": 83,
-   "tik_sayfa": 4.61,
+   "tik_sayfa": 4.15,
    "to": 1.87
   },
   {
@@ -46,11 +46,11 @@
   {
    "tur": "mahalle",
    "ad": "Mahalle sayfaları",
-   "sayfa": 18,
-   "gos": 1540,
-   "tik": 8,
-   "tik_sayfa": 0.44,
-   "to": 0.52
+   "sayfa": 11,
+   "gos": 1221,
+   "tik": 4,
+   "tik_sayfa": 0.36,
+   "to": 0.33
   },
   {
    "tur": "etap",
@@ -60,6 +60,15 @@
    "tik": 3,
    "tik_sayfa": 0.5,
    "to": 1.38
+  },
+  {
+   "tur": "eski",
+   "ad": "Eski adres (mahalle kökü)",
+   "sayfa": 2,
+   "gos": 52,
+   "tik": 2,
+   "tik_sayfa": 1.0,
+   "to": 3.85
   }
  ]
 }

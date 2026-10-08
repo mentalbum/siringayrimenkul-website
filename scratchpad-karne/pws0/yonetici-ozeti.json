@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "rakamlar": [
   {
    "k": "ilk3_pay",
@@ -7,53 +7,113 @@
    "deger": 77,
    "birim": "%",
    "gosterim": "%77",
-   "ne_demek": "Ölçülen 504 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 388. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "ne_demek": "Ölçülen 509 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 390. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
-    "sorgu": 504,
-    "ilk3": 388
+    "sorgu": 509,
+    "ilk3": 390
    },
    "fark_7g": {
-    "deger": 1.6,
+    "deger": 1.2,
     "onceki": 75.4,
-    "son": 77.0,
-    "kiyas_tarihi": "2026-09-30",
+    "son": 76.6,
+    "kiyas_tarihi": "2026-10-01",
     "gun": 7,
     "birim": "puan",
-    "yon": "iyi",
-    "olcum_yontemi_degisti": false,
+    "yon": "nötr",
+    "olcum_yontemi_degisti": true,
+    "rejim_nedeni": [
+     "secici_yeniden_olcum"
+    ],
+    "neden_kisa": "yalnız bir kesim yeniden ölçüldü, fark tek yönlü",
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
     "seri": [
      "ilk3_pay"
     ],
-    "not": null
+    "not": "pencerede yeniden ölçülen 209 sorgudan 37 tanesi önceden doğru sayfaydı (kuyruk genelinde 509 sorgudan 328); çoğunlukla sorunlu çıkanlar yeniden ölçüldü, fark tek yönlü; bu sorguların önceki ölçümü 22.08–06.09 arasındaydı"
    }
   },
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 85,
+   "deger": 91,
    "birim": "%",
-   "gosterim": "%85",
-   "ne_demek": "İlk 3 sırada olduğumuz 392 sorgunun 335 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor.",
+   "gosterim": "%91",
+   "ne_demek": "İlk 3 sırada olduğumuz 390 sorgunun 354 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor (2 sorguda çıkan adres doğrulanamadı). Bu oran üst sınırdır: Ekim ayında yeniden ölçülen sorgularda oran %72, yeniden ölçülmeyen eski ölçümlerde %98. Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı. Gerçek oran %72 ile %91 arasındadır.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 335,
-    "ilk3_toplam": 392,
-    "guncelleme": "2026-10-07"
+    "ilk3_dogru": 354,
+    "ilk3_toplam": 390,
+    "adresi_dogrulanamayan": 2,
+    "olcum_yasi": {
+     "2026-08": {
+      "kayit": 23,
+      "ilk3": 20,
+      "ilk3_dogru": 15
+     },
+     "2026-09": {
+      "kayit": 277,
+      "ilk3": 259,
+      "ilk3_dogru": 259
+     },
+     "2026-10": {
+      "kayit": 209,
+      "ilk3": 111,
+      "ilk3_dogru": 80
+     }
+    },
+    "secilmis_yeniden_olcum": {
+     "yeniden_olculen": 209,
+     "onceden_dogru": 37,
+     "kuyruk_onceden_dogru": 328,
+     "kuyruk_toplam": 509,
+     "kova": "2026-10",
+     "onceki_olcumu_yok": 0
+    },
+    "yas_kiyasi": {
+     "taze_kova": "2026-10",
+     "taze_aylar": [
+      "2026-10"
+     ],
+     "taze": {
+      "kayit": 209,
+      "ilk3": 111,
+      "ilk3_dogru": 80
+     },
+     "eski": {
+      "kayit": 300,
+      "ilk3": 279,
+      "ilk3_dogru": 274
+     },
+     "taze_oran": 72.1,
+     "eski_oran": 98.2,
+     "fark": 26.1,
+     "etki": 18.7,
+     "hukum": "ust_sinir"
+    },
+    "yas_hukmu": "ust_sinir",
+    "guncelleme": "2026-10-08"
    },
    "fark_7g": {
-    "deger": 6.3,
-    "onceki": 79.2,
-    "son": 85.5,
-    "kiyas_tarihi": "2026-09-30",
+    "deger": 10.9,
+    "onceki": 79.9,
+    "son": 90.8,
+    "kiyas_tarihi": "2026-10-01",
     "gun": 7,
     "birim": "puan",
-    "yon": "iyi",
-    "olcum_yontemi_degisti": false,
+    "yon": "nötr",
+    "olcum_yontemi_degisti": true,
+    "rejim_nedeni": [
+     "secici_yeniden_olcum"
+    ],
+    "neden_kisa": "yalnız bir kesim yeniden ölçüldü, fark tek yönlü",
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
     "seri": [
      "dogru_sayfa_pay"
     ],
-    "not": null
+    "not": "pencerede yeniden ölçülen 209 sorgudan 37 tanesi önceden doğru sayfaydı (kuyruk genelinde 509 sorgudan 328); çoğunlukla sorunlu çıkanlar yeniden ölçüldü, fark tek yönlü; bu sorguların önceki ölçümü 22.08–06.09 arasındaydı; fark o günden beri birikmiş sindirim ve ölçüm tazelemesidir, bu haftanın kazancı değil; aynı pencerede ilk 3 payı %75,4 → %76,6, ilk 10 dışı %10,6 → %12,4"
    }
   },
   {
@@ -71,18 +131,22 @@
      "bit": "2026-10-04",
      "gun": 28
     },
-    "uretim": "2026-10-07",
+    "uretim": "2026-10-08",
     "toplam_tik": 1325
    },
    "fark_7g": {
-    "deger": -46,
-    "onceki": 1208,
+    "deger": -44,
+    "onceki": 1206,
     "son": 1162,
-    "kiyas_tarihi": "2026-09-30",
+    "kiyas_tarihi": "2026-10-01",
     "gun": 7,
     "birim": "tık",
     "yon": "kötü",
     "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
     "seri": [
      "eryaman_tik_28"
     ],
@@ -91,33 +155,48 @@
   },
   {
    "k": "ga4_temas",
-   "baslik": "Siteden gelen temas",
-   "deger": 21,
-   "birim": "temas",
-   "gosterim": "21",
-   "ne_demek": "Son 28 günde ziyaretçinin bizimle kurduğu temas: 12 telefon, 9 WhatsApp, 0 form (GA4; 1.338 oturum içinden).",
-   "kaynak": "tik-sonrasi.json (temas)",
+   "baslik": "Siteden gelen temas (ziyaret)",
+   "deger": 15,
+   "birim": "ziyaret",
+   "gosterim": "15",
+   "ne_demek": "15 ziyaret (21 tık: 12 telefon, 9 WhatsApp). Son 28 günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: 0. (GA4; 1.296 oturum içinden.)",
+   "kaynak": "tik-sonrasi.json (temas.temas_oturum)",
    "ayrinti": {
+    "temas_oturum": 15,
+    "tik": 21,
     "telefon": 12,
     "whatsapp": 9,
     "form": 0,
-    "oturum": 1338,
-    "guncelleme": "2026-10-07"
+    "oturum": 1296,
+    "guncelleme": "2026-10-08"
    },
    "fark_7g": {
-    "deger": -8,
-    "onceki": 29,
-    "son": 21,
-    "kiyas_tarihi": "2026-09-30",
+    "deger": -6,
+    "onceki": 21,
+    "son": 15,
+    "kiyas_tarihi": "2026-10-01",
     "gun": 7,
-    "birim": "temas",
-    "yon": "kötü",
-    "olcum_yontemi_degisti": false,
-    "seri": [
-     "phone_click_28",
-     "whatsapp_click_28"
+    "birim": "ziyaret",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": true,
+    "rejim_nedeni": [
+     "tanim_degisti"
     ],
-    "not": "form hariç (seride telefon + WhatsApp var, contact_form_submit yok); PR #88 (02.09) telefon bağı izlemesini genişletti, taban değişti — ihtiyatla oku"
+    "neden_kisa": "sayım tanımı değişti",
+    "gurultu": {
+     "z": -0.79,
+     "giren": 3,
+     "cikan": 9,
+     "oturum_giren": 284,
+     "oturum_cikan": 507,
+     "olcu": "ziyaret",
+     "bant": true
+    },
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "temas_oturum_28"
+    ],
+    "not": "telefon ya da WhatsApp düğmesine basan ziyaret (yalnız canlı alan adı); form gönderimi ayrı sayılır; gürültü bandında (z=-0,79; oturum düzeltmeli); kart bugünden itibaren tık yerine temas eden ziyareti sayıyor (önceki karnelerde basılı rakam tıktı); fark ziyaret serisinden, aynı tanımla"
    }
   },
   {
@@ -134,38 +213,54 @@
     "kutu_var_biz_yok": 10,
     "organik_ilk3": 4,
     "organik_birinci": 1,
-    "guncelleme": "2026-10-07"
+    "guncelleme": "2026-10-08"
    },
    "fark_7g": null
   },
   {
    "k": "damla_kalan",
-   "baslik": "Damla kuyruğunda kalan",
-   "deger": 4,
+   "baslik": "Dizin kuyruğu: Google′da olmayan sayfa",
+   "deger": 0,
    "birim": "sayfa",
-   "gosterim": "4",
-   "ne_demek": "Dizine ekleme isteği bekleyen sayfa sayısı 4; 77 sayfa işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
-   "kaynak": "DIZIN-DAMLASI-31-08.md (\"- [ ] url\" satırları)",
+   "gosterim": "0",
+   "ne_demek": "Dizin kuyruğunda Google′da olmadığı doğrulanmış sayfa yok. Bugüne dek 77 satır işaretlendi (istek gönderildi ya da kendiliğinden dizine girdi). İstek yalnız GSC arayüzünden, günlük kotayla gidiyor.",
+   "kaynak": "DIZIN-DAMLASI-31-08.md (açık \"- [ ] https://…\" satırları, türüne göre)",
    "ayrinti": {
+    "dizin_disi": 0,
+    "yeniden_tarama": 0,
+    "eski_adres": 0,
+    "acik_toplam": 0,
     "bitmis": 77,
-    "toplam": 81
+    "toplam": 77
    },
    "fark_7g": null
   }
  ],
  "bu_hafta_yapilan": [
   {
+   "tarih": "08.10",
+   "iso": "2026-10-08",
+   "baslik_sayisi": 2,
+   "basliklar": [
+    "ölçüm aracı düzeltmeleri",
+    "inceleme sonrası onarım (yukarıdaki bölümün eki)"
+   ],
+   "metin": "08.10 — ölçüm aracı düzeltmeleri · inceleme sonrası onarım (yukarıdaki bölümün eki)"
+  },
+  {
    "tarih": "07.10",
    "iso": "2026-10-07",
-   "baslik_sayisi": 5,
+   "baslik_sayisi": 7,
    "basliklar": [
     "CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI",
     "HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3",
     "DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1.",
     "ETAP TABANI OKUMASI (08.08 iç bağ müdahalesi, 19.09'da yapılmamıştı): DİZİNE GİRDİ, SIRAYI ALMADI",
-    "PR #91 OKUMASI (24 güçlendirilen sayfa vs 19 kontrol): ZAYIF OLUMLU, KANIT YETERSİZ — KALDIRAÇ AÇIK KALIR"
+    "PR #91 OKUMASI (24 güçlendirilen sayfa vs 19 kontrol): ZAYIF OLUMLU, KANIT YETERSİZ — KALDIRAÇ AÇIK KALIR",
+    "\"ERYAMAN EMLAKÇI\" SERP YERLEŞİMİ (uule): AI ÖZETİ YOK, 3 REKLAM, IG 4. SIRADA; EFOR ÇİFT KAYDI ÇÜRÜDÜ",
+    "\"ERYAMAN EMLAKÇI\" / ANA SAYFA GÖSTERİM DÜŞÜŞÜ AYRIŞTIRILDI: TEK NEDEN YOK, ÜÇ PARÇA"
    ],
-   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3 · DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1. (+2 başlık daha)"
+   "metin": "07.10 — CHATGPT İSTİŞARESİ UYGULANDI: HERO WHATSAPP, BAŞLIK DENEYİ 2 (50/50), ESKİ-ADRES SİTEMAP'İ KALDIRILDI · HEDEF SORGULAR YENİDEN ÖLÇÜLDÜ (17/17, pws=0): ORGANİK YERİNDE, HARİTA KUTUSU 9→3 · DÜZELTME: HARİTA KUTUSU \"9→3\" ÖLÇÜM KONUMU ARTEFAKTI; KONUM SABİTLİ (uule) ÖLÇÜMDE 6/17 VE ALTISINDA DA 1. (+4 başlık daha)"
   }
  ],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",
@@ -182,37 +277,16 @@
     "yazi_gos": 2570,
     "yazi_tik": 34
    }
-  },
-  {
-   "tarih": "07.09",
-   "iso": "2026-09-07",
-   "metin": "07.09 — Başlık/H1 dondurması biter (başlık şablonu değişikliğinden sonraki bekleme süresi). O gün ilk iş ana sayfanın başlığı ve snippet′i: \"eryaman emlakçı\" sorgusunda organik sıra yerinde, tıklanma oranı düştü (%5,5 → %2,9; 27.07–11.08 ile 16.08–04.10 dönemleri). O tarihe kadar başlığa dokunulmaz.",
-   "kaynak": "eryaman-emlakci.json (title_donuk, donemler)",
-   "ayrinti": {
-    "to_ilk": 5.5,
-    "to_son": 2.9
-   }
-  },
-  {
-   "tarih": "14.09",
-   "iso": "2026-09-14",
-   "metin": "14.09 — Sitemap tazelik düzeltmesinin (31.08 düzeltmesi — PR #87) izleme süresi dolar: tarama dağılımı 1-2 hafta izleniyor. Sonuç henüz ölçülmedi; o güne kadar Google site sayfalarını ada sayfalarından taze görmeye başlamadıysa kaldıraç yeniden değerlendirilir. Kaldıraç defterindeki durumu: açık, sonuç bekleniyor.",
-   "kaynak": "kaldirac-defteri.json (Sitemap tazelik sinyali: kaynak tarihi + kisit haftası)",
-   "ayrinti": {
-    "baslangic": "2026-08-31",
-    "hafta": 2,
-    "durum": "acik"
-   }
   }
  ],
  "gecmis": {
   "dosya": "karne-gecmis-ozet.json",
   "sahip": "anlik-goruntu-uret.py",
-  "kayit": 48,
-  "kiyas_tarihi": "2026-09-30"
+  "kayit": 49,
+  "kiyas_tarihi": "2026-10-01"
  },
  "uyarilar": [
-  "Toplam sorgu sayısı iki dosyada farklı: karne başlığı/tepe rakam 504 (11 mahalle turu), dogru-sayfa.json 509 (kuyruk-site-emlakci tabanı). Tepe rakam karneyle aynı hesabı kullanır.",
-  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Damla kuyruğunda kalan — seri 2026-08-21 tarihinden beri birikiyor."
+  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Dizin kuyruğu: Google′da olmayan sayfa — seri 2026-08-21 tarihinden beri birikiyor.",
+  "Fark iyi/kötü diye okunmaz: Site sorgularında ilk 3 (yalnız bir kesim yeniden ölçüldü, fark tek yönlü); İlk 3 içinde doğru sayfa (yalnız bir kesim yeniden ölçüldü, fark tek yönlü); Siteden gelen temas (ziyaret) (sayım tanımı değişti)."
  ]
 }

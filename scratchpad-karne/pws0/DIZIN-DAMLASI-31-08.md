@@ -417,8 +417,8 @@ sayfadan (PR #91, 04.10 merge) en eski taranmış 7'si için UI'den istek:
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/mavera-sitesi ← 04.10 istek gönderildi (03.09)
 - [x] https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/camlica-sitesi ← 04.10 istek gönderildi (08.09)
 - [x] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/utku-sitesi ← 04.10 istek gönderildi (11.09)
-- [ ] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 04.10 KOTA AŞILDI, istek işlenmedi (12.09)
-- [ ] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← sırada (13.09)
+- [~] https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/altintepe-sitesi ← 08.10: istek gereği kalmadı (API: dizinde, son tarama 07.10; adaylığı kesik başlık kaydından doğan bir ölçüm artefaktıydı)
+- [~] https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-konutlari ← 08.10: istek gereği kalmadı (API: dizinde, son tarama 13.09, 07.09 içerik değişikliğinden sonra)
 
 > 04.10 — kota ölçümü: 11 kabul, 12. "Kota Aşıldı" (28 gündür istek yoktu → günlük tavan ~11).
 > UI tuzağı çözüldü: tıklama/klavye olayları ulaşmıyordu; form_input + JS Enter + JS düğme

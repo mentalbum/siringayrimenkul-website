@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "donem": {
   "bas": "2026-09-07",
   "bit": "2026-10-04",
@@ -610,6 +610,15 @@
   },
   {
    "tarih": "2026-10-07",
+   "ada_pay_puan": -4.7,
+   "ada_tik_fark": -9,
+   "ortak_sorgu_fark": -198,
+   "ada_onde_fark": -31,
+   "sayfa_ada_tik_fark": -58,
+   "ada_oran_fark": -0.06
+  },
+  {
+   "tarih": "2026-10-08",
    "ada_pay_puan": -4.7,
    "ada_tik_fark": -9,
    "ortak_sorgu_fark": -198,

@@ -59,11 +59,11 @@
    "kisit": "Trafik büyüyünce yeniden bak."
   },
   {
-   "durum": "acik",
+   "durum": "olculdu",
    "ad": "Sitemap tazelik sinyali",
-   "olcum": "31.08: canlı sitemap′teki 1.178 adresin 1.146′sı aynı damgayı taşıyordu (27.08 footer değişikliği dört tabanı birden itmişti). Tabanlar gerçek tarihlere döndü.",
+   "olcum": "31.08: canlı sitemap′teki 1.178 adresin 1.146′sı aynı damgayı taşıyordu (27.08 footer değişikliği dört tabanı birden itmişti). Tabanlar gerçek tarihlere döndü. 08.10 okuması: başlık deneyinin 100 site sayfasında, 04.10'da site tabanı ilerledikten sonraki 3 günde 28 sayfa yeniden tarandı (günde yaklaşık %9); öncesindeki iki haftada günde yaklaşık %3 (URL Denetimi API, kaba tahmin, tek gözlem). Yön olumlu.",
    "kaynak": "31.08 düzeltmesi — PR #87",
-   "kisit": "Sonuç henüz ölçülmedi; tarama dağılımı 1-2 hafta izlenecek."
+   "kisit": "Damga tek başına taramayı garanti etmiyor: 06.10 damgalı bir sayfa 08.10'da hâlâ 18.09 taramasındaydı. Acil yeniden tarama gerekiyorsa dizin isteği kullanılır (istek dakikasında tarama getiriyor)."
   },
   {
    "durum": "acik",
@@ -226,7 +226,7 @@
      "bitis": "2026-10-17",
      "kim": "Claude",
      "oncelik": 1,
-     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez: 08.10'da 2 yeniden tarama isteğiyle birlikte deney isteği 9 (ilk 5 çift). Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
+     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
      "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir."
     },
     {
@@ -353,6 +353,16 @@
      "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır."
     }
    ]
+  },
+  {
+   "tarih": "2026-10-08",
+   "ad": "Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyası)",
+   "durum": "acik",
+   "karar_bekliyor": true,
+   "olcum": "Kazanç ölçülemedi: mahalle + emlakçı sorgularının Search Console'da görünen hacmi yok; hedef sorgularda harita kutusu 07.10'da 6/17 ve kampanya süresince kalıcı kutu girişi olmadı. Yorumdaki anahtar kelimenin kutu sırasını oynatmadığı dış kontrollü deneyde de görülmüştü (Sterling Sky, 2023). Risk: Google Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız olumlu yorum istemeyi yasaklıyor; yönlendirilmiş yorumlar Haritalar'dan kaldırılabiliyor.",
+   "kisit": "Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar.",
+   "kaynak": "Google Haritalar katkı politikası (support.google.com/contributionpolicy/answer/7400114, 08.10.2026 okuması, iki ayrı çekim) + hedef-sorgular.json + hatirlanirlik.json",
+   "nerede": "yorum-toplama.md, bulunabilirlik-programi.md, is-takvimi-uret.py (GBP yorum maddesi)"
   }
  ]
 }
