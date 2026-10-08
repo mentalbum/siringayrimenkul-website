@@ -5,12 +5,12 @@
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 382
+   "n": 377
   },
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 63
+   "n": 66
   },
   {
    "k": "baska_site",
@@ -20,12 +20,12 @@
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 14
+   "n": 16
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 14
+   "n": 16
   },
   {
    "k": "ada",
@@ -33,32 +33,27 @@
    "n": 12
   },
   {
-   "k": "belirsiz",
-   "ad": "Adresi doğrulanamayan",
-   "n": 2
-  },
-  {
    "k": "dis",
    "ad": "Bize ait olmayan sonuç",
    "n": 1
   }
  ],
- "ilk3_toplam": 390,
+ "ilk3_toplam": 383,
  "ilk3": [
   {
    "k": "dogru",
    "ad": "Doğru site sayfası",
-   "n": 354
-  },
-  {
-   "k": "baska_site",
-   "ad": "Başka bir site sayfamız",
-   "n": 13
+   "n": 348
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 13
+   "n": 15
+  },
+  {
+   "k": "baska_site",
+   "ad": "Başka bir site sayfamız",
+   "n": 12
   },
   {
    "k": "mahalle",
@@ -69,15 +64,14 @@
    "k": "ada",
    "ad": "Ada sayfamız",
    "n": 4
-  },
-  {
-   "k": "belirsiz",
-   "ad": "Adresi doğrulanamayan",
-   "n": 2
   }
  ],
- "ilk3_dogru": 354,
+ "ilk3_dogru": 348,
  "yanlis_mahalle": [
+  [
+   "guzelkent-mahallesi",
+   10
+  ],
   [
    "sehit-osman-avci-mahallesi",
    9
@@ -91,8 +85,8 @@
    8
   ],
   [
-   "guzelkent-mahallesi",
-   8
+   "seyh-samil-mahallesi",
+   7
   ],
   [
    "yesilova-mahallesi",
@@ -100,15 +94,11 @@
   ],
   [
    "devlet-mahallesi",
-   5
-  ],
-  [
-   "seyh-samil-mahallesi",
-   5
+   6
   ],
   [
    "eryaman-mahallesi",
-   5
+   4
   ],
   [
    "altay-mahallesi",
@@ -121,24 +111,24 @@
  ],
  "olcum_yasi": {
   "2026-08": {
-   "kayit": 23,
-   "ilk3": 20,
-   "ilk3_dogru": 15
+   "kayit": 21,
+   "ilk3": 18,
+   "ilk3_dogru": 13
   },
   "2026-09": {
-   "kayit": 277,
-   "ilk3": 259,
-   "ilk3_dogru": 259
+   "kayit": 249,
+   "ilk3": 233,
+   "ilk3_dogru": 233
   },
   "2026-10": {
-   "kayit": 209,
-   "ilk3": 111,
-   "ilk3_dogru": 80
+   "kayit": 239,
+   "ilk3": 132,
+   "ilk3_dogru": 102
   }
  },
  "secilmis_yeniden_olcum": {
-  "yeniden_olculen": 209,
-  "onceden_dogru": 37,
+  "yeniden_olculen": 239,
+  "onceden_dogru": 67,
   "kuyruk_onceden_dogru": 328,
   "kuyruk_toplam": 509,
   "kova": "2026-10",
@@ -150,20 +140,20 @@
    "2026-10"
   ],
   "taze": {
-   "kayit": 209,
-   "ilk3": 111,
-   "ilk3_dogru": 80
+   "kayit": 239,
+   "ilk3": 132,
+   "ilk3_dogru": 102
   },
   "eski": {
-   "kayit": 300,
-   "ilk3": 279,
-   "ilk3_dogru": 274
+   "kayit": 270,
+   "ilk3": 251,
+   "ilk3_dogru": 246
   },
-  "taze_oran": 72.1,
-  "eski_oran": 98.2,
-  "fark": 26.1,
-  "etki": 18.7,
+  "taze_oran": 77.3,
+  "eski_oran": 98.0,
+  "fark": 20.7,
+  "etki": 13.6,
   "hukum": "ust_sinir"
  },
- "uulesiz_kayit": 482
+ "uulesiz_kayit": 490
 }

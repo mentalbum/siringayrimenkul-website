@@ -1,0 +1,563 @@
+{
+ "guncelleme": "2026-10-08",
+ "uretim": "yansiz-ornek-uret.py",
+ "tohum": 20261008,
+ "ornek": 30,
+ "olculen": 30,
+ "olcum_gunleri": [
+  "2026-10-08"
+ ],
+ "onceden_ilk3_dogru": 28,
+ "hala_ilk3_dogru": 21,
+ "ilk3te_ama_yanlis_sayfa": 2,
+ "ilk3ten_dustu": 5,
+ "hala_ilk3_dogru_yuzde": 75.0,
+ "hala_ilk3_dogru_aralik95": [
+  56.6,
+  87.3
+ ],
+ "simdi_ilk3": 25,
+ "simdi_ilk3_dogru": 23,
+ "simdi_ilk3_dogru_yuzde": 92.0,
+ "bozulanlar": [
+  {
+   "s": "seyh-samil-mahallesi/tekser-bloklari",
+   "onceki_sira": 3,
+   "simdi_sira": 4,
+   "simdi_sinif": "dogru",
+   "u": "/mahalleler/seyh-samil-mahallesi/tekser-bloklari"
+  },
+  {
+   "s": "guzelkent-mahallesi/gulsah-95-sitesi",
+   "onceki_sira": 1,
+   "simdi_sira": 4,
+   "simdi_sinif": "mahalle",
+   "u": "/mahalleler/guzelkent-mahallesi"
+  },
+  {
+   "s": "eryaman-mahallesi/oyak-sitesi",
+   "onceki_sira": 1,
+   "simdi_sira": 0,
+   "simdi_sinif": "yok",
+   "u": null
+  },
+  {
+   "s": "seyh-samil-mahallesi/eston-1-bloklari",
+   "onceki_sira": 2,
+   "simdi_sira": 4,
+   "simdi_sinif": "dogru",
+   "u": "/mahalleler/seyh-samil-mahallesi/eston-1-bloklari"
+  },
+  {
+   "s": "guzelkent-mahallesi/gozde-91-sitesi",
+   "onceki_sira": 3,
+   "simdi_sira": 2,
+   "simdi_sinif": "eski",
+   "u": "/mahalleler/guzelkent/gozde-91-sitesi"
+  },
+  {
+   "s": "seyh-samil-mahallesi/yesil-vadim-sitesi",
+   "onceki_sira": 2,
+   "simdi_sira": 6,
+   "simdi_sinif": "mahalle",
+   "u": "/mahalleler/seyh-samil-mahallesi"
+  },
+  {
+   "s": "seyh-samil-mahallesi/ictas-bloklari",
+   "onceki_sira": 3,
+   "simdi_sira": 3,
+   "simdi_sinif": "baska_site",
+   "u": "/mahalleler/sehit-osman-avci-mahallesi/ictas"
+  }
+ ],
+ "satirlar": [
+  {
+   "s": "sehit-osman-avci-mahallesi/akin-688-konutlari",
+   "q": "Akın 688 Konutları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/sehit-osman-avci-mahallesi/akin-688-konutlari"
+   }
+  },
+  {
+   "s": "devlet-mahallesi/gulhayat-sitesi",
+   "q": "Gülhayat Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/devlet-mahallesi/gulhayat-sitesi"
+   }
+  },
+  {
+   "s": "seyh-samil-mahallesi/tekser-bloklari",
+   "q": "Tekser Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 4,
+    "sinif": "dogru",
+    "u": "/mahalleler/seyh-samil-mahallesi/tekser-bloklari"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/gulsah-95-sitesi",
+   "q": "Gülşah - 95 Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 4,
+    "sinif": "mahalle",
+    "u": "/mahalleler/guzelkent-mahallesi"
+   }
+  },
+  {
+   "s": "goksu-mahallesi/finest-bloklari",
+   "q": "Finest Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/goksu-mahallesi/finest-bloklari"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/yeni-isikent-sitesi",
+   "q": "Yeni Isıkent Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/guzelkent-mahallesi/yeni-isikent-sitesi"
+   }
+  },
+  {
+   "s": "eryaman-mahallesi/asm-golt-sitesi",
+   "q": "ASM Gold Konutları (Urhal Sitesi) emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/eryaman-mahallesi/asm-golt-sitesi"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/cankaya-vefa-sitesi",
+   "q": "Çankaya Vefa Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/guzelkent-mahallesi/cankaya-vefa-sitesi"
+   }
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/cizgi-otesi-residence",
+   "q": "Çizgi Ötesi Residence emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/dogus-91-sitesi",
+   "q": "Doğuş 91 Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/guzelkent-mahallesi/dogus-91-sitesi"
+   }
+  },
+  {
+   "s": "seyh-samil-mahallesi/ilkdogus-sitesi",
+   "q": "İlkdoğuş Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/seyh-samil-mahallesi/ilkdogus-sitesi"
+   }
+  },
+  {
+   "s": "eryaman-mahallesi/oyak-sitesi",
+   "q": "Oyak Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 0,
+    "sinif": "yok",
+    "u": null
+   }
+  },
+  {
+   "s": "yesilova-mahallesi/sertower-busidence",
+   "q": "Sertower Busidence emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-08-29",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/yesilova-mahallesi/sertower-busidence"
+   }
+  },
+  {
+   "s": "tunahan-mahallesi/klima-bloklari",
+   "q": "Klima Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/tunahan-mahallesi/klima-bloklari"
+   }
+  },
+  {
+   "s": "devlet-mahallesi/alis-sitesi",
+   "q": "Alis Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/devlet-mahallesi/alis-sitesi"
+   }
+  },
+  {
+   "s": "seyh-samil-mahallesi/eston-1-bloklari",
+   "q": "Eston 1 Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 4,
+    "sinif": "dogru",
+    "u": "/mahalleler/seyh-samil-mahallesi/eston-1-bloklari"
+   }
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/relax-goksu-konutlari",
+   "q": "Relax Göksu Konutları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 5,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 3,
+    "sinif": "dogru",
+    "u": "/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/erkent-sitesi",
+   "q": "Erkent Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/guzelkent-mahallesi/erkent-sitesi"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/gozde-91-sitesi",
+   "q": "Gözde 91 Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "eski",
+    "u": "/mahalleler/guzelkent/gozde-91-sitesi"
+   }
+  },
+  {
+   "s": "guzelkent-mahallesi/yesim-kent2-sitesi",
+   "q": "Yeşim Kent2 Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/guzelkent-mahallesi/yesim-kent2-sitesi"
+   }
+  },
+  {
+   "s": "seyh-samil-mahallesi/yesil-vadim-sitesi",
+   "q": "Yeşil Vadim Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 6,
+    "sinif": "mahalle",
+    "u": "/mahalleler/seyh-samil-mahallesi"
+   }
+  },
+  {
+   "s": "devlet-mahallesi/ozdenizyildizi-sitesi",
+   "q": "Özdenizyıldızı Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 4,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 3,
+    "sinif": "dogru",
+    "u": "/mahalleler/devlet-mahallesi/ozdenizyildizi-sitesi"
+   }
+  },
+  {
+   "s": "goksu-mahallesi/yeniceri-kule",
+   "q": "Yeniçeri Kule emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-05",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 3,
+    "sinif": "dogru",
+    "u": "/mahalleler/goksu-mahallesi/yeniceri-kule"
+   }
+  },
+  {
+   "s": "eryaman-mahallesi/atakent-vadi-sitesi",
+   "q": "Atakent Vadi Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 3,
+    "sinif": "dogru",
+    "u": "/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi"
+   }
+  },
+  {
+   "s": "yesilova-mahallesi/green-hill",
+   "q": "Green Hill emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-08-29",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/yesilova-mahallesi/green-hill"
+   }
+  },
+  {
+   "s": "sehit-osman-avci-mahallesi/ahikent-sitesi",
+   "q": "Ahikent Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/sehit-osman-avci-mahallesi/ahikent-sitesi"
+   }
+  },
+  {
+   "s": "seyh-samil-mahallesi/ictas-bloklari",
+   "q": "İçtaş Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 3,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 3,
+    "sinif": "baska_site",
+    "u": "/mahalleler/sehit-osman-avci-mahallesi/ictas"
+   }
+  },
+  {
+   "s": "yavuz-selim-mahallesi/baskent-sular-sitesi",
+   "q": "Başkent Sular Sitesi emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-06",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/yavuz-selim-mahallesi/baskent-sular-sitesi"
+   }
+  },
+  {
+   "s": "tunahan-mahallesi/haznedaroglu-bloklari",
+   "q": "Haznedaroğlu Blokları emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 2,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 1,
+    "sinif": "dogru",
+    "u": "/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari"
+   }
+  },
+  {
+   "s": "tunahan-mahallesi/gokdemir-premium",
+   "q": "Gökdemir Premium emlakçı",
+   "olculdu": true,
+   "onceki": {
+    "d": "2026-09-04",
+    "sira": 1,
+    "sinif": "dogru"
+   },
+   "simdi": {
+    "d": "2026-10-08",
+    "sira": 2,
+    "sinif": "dogru",
+    "u": "/mahalleler/tunahan-mahallesi/gokdemir-premium"
+   }
+  }
+ ],
+ "yansitma": {
+  "eski_kova_kayit": 270,
+  "tahmini_ilk3_pay": 70.1,
+  "tahmini_dogru_sayfa_pay": 86.6,
+  "karnedeki_ilk3_pay": 75.2,
+  "karnedeki_dogru_sayfa_pay": 90.9,
+  "not": "Örnek oranları yeniden ölçülmemiş eski kayıtlara uygulandı; kaba tahmin."
+ }
+}
