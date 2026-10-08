@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-10-07",
+ "guncelleme": "2026-10-08",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -49,7 +49,7 @@
    "ad": "Ada sayfasının canonical′ı site sayfasına",
    "olcum": "30 ada sayfası denetlendi: 17′si dizinde ve 17′sinin de 17′sinde Google canonical olarak ADA SAYFASININ KENDİSİNİ seçmiş. 03.08′de kurulan düzenek dört haftada tek vakada bile yutulmadı.",
    "kaynak": "31.08 API denetimi, googleCanonical sütunu",
-   "kisit": "Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). İlacı başlık tarafında, 07.09′de bakılacak."
+   "kisit": "Ada sayfası SERP′te site sayfasının yerine çıktığında sıra 2,30 → 4,05′e düşüyor (n=557 vs 59). Başlık tarafı 16.08'de uygulanmıştı (title/H1/description'da site adı yok; 08.10'da canlıda doğrulandı); 06.09 okumasında iş kapandı (bkz. 'Ada başlığından site adını çıkarma' kaydı)."
   },
   {
    "durum": "curuk",
@@ -86,7 +86,16 @@
    "sonuc": "Eski adrese dizin isteği göndermek slotu kısa vadede serbest bırakmıyor; kota oraya harcanmaz. Sınır: 'Page with redirect' damgası ile ölçüm arası yalnız 1-3 gün — birleştirme daha uzun sürüyor olabilir, 'hiç olmaz' değil 'günler içinde olmaz' denir.",
    "tarih": "2026-09-03",
    "n": 9,
-   "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı."
+   "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı.",
+   "okuma_0810": "07.10'da 11 eski adrese istek gönderildi (11/11 kabul; hepsinin son taraması 26.07 taşımasından önce). 08.10 01:03 API denetimi, istekten yaklaşık 15 saat sonra: 11 adresin 10'unda iz yok (userCanonical hâlâ kendisi, son taramalar 28.06–19.07). Dizindeki normal sayfada istek aynı dakikada tarama getiriyordu; 308 veren adreste getirmedi. Ayrıca sindirim = devir değil: eski adresi sönen 10 çiftte (24.08–06.09 → 21.09–04.10) eski adres gösterimi 536 → 4, yeni adres 828 → 828 (hiç artmadı), toplam −%39, tık 33 → 21; eski adresi hiç görünmeyen 161 site sayfasında aynı dönemde −%15. Karar: eski adrese YENİ istek yok, kota Başlık deneyi 2 yeniden taramasına gider. 07.10 partisi deney kolu, istek gitmemiş hacimli eski adresler kontrol kolu sayılır; okuma 15.10.",
+   "takvim": [
+    {
+     "tarih": "2026-10-15",
+     "kim": "Claude",
+     "is": "Eski adrese istek okuması: 07.10'da istek giden 11 eski adres için Search Console günlük gösterim (gsc-q.mjs page,date) ve URL denetimi (11 tek adreslik bakış, o günkü isteklerden sonra). İstek gitmemiş hacimli eski adreslerle kıyaslanır; sonuç deftere yazılır.",
+     "neden": "08.10 okumasında istekten 15 saat sonra 11 adresin 10'unda iz yoktu ve kaldıraç defterde ölü. Bu okuma ölü hükmünü ya doğrular ya da daraltır; o güne kadar eski adrese istek gönderilmez."
+    }
+   ]
   },
   {
    "durum": "dogrulandi",
@@ -114,7 +123,8 @@
    "sonuc": "Karar ÇALIŞTI, geri alma yok. Ada sayfasının düşük TO'su sayfanın doğası; başlığa site adını geri koymak 16.08'de ölçülen zararı geri getirir. Ada sayfası işi KAPALI.",
    "tarih": "2026-09-06",
    "n": 803,
-   "not": "Canonical zaten site sayfasına işaret ediyor ama Google %94 oranında reddediyor (16.08 ölçümü)."
+   "not": "Canonical zaten site sayfasına işaret ediyor ama Google %94 oranında reddediyor (16.08 ölçümü).",
+   "okuma_0810": "SERP'te ada sayfası çıkan site sorgusu 42 (31.08) → 22 (06.09) → 12 (07.10): NET sayı, devir var. 06.09'daki 22'nin 4'ü hâlâ ada, 6'sı doğru sayfaya, 6'sı ilk 10 dışına, 3'ü başka site sayfamıza, 2'si mahalle sayfasına geçti, 1'i (Yükselen) 30.08'den beri ölçülmedi. Bugünkü 12'nin 7'si 06.09'dan sonra giren yeni vaka (2'si doğru sayfadan). 12'nin 4'ünde SERP'teki ada kopyası temmuz taramalı (eski başlık), 7'sinde 16.08 sonrası taranmış ve yeni başlıkla çıkıyor (başlık çözmüyor). 12'nin 5'i PR #90 kontrol kolundan, başlıkları 04.10'da değişti ve aynı akşam ölçüldü. Ada sayfası GSC gösterimi haftalık 3.362 (27.07) → 657 (28.09); aynı haftalarda site sayfası 11.162 → 11.883. Sıradaki ölçüm: yeniden-olcum-kuyrugu-0810.json ada_6 dilimi."
   },
   {
    "durum": "acik",
@@ -135,7 +145,15 @@
    "nerede": "PR #91",
    "yan_bulgu": "aciklama tek <p> icinde duz metin basiliyordu, \\n\\n cokuyordu; sablon paragrafa bolecek sekilde duzeltildi (onceden cok paragrafli 5 kayit da duzeldi)",
    "sonraki_olcum": "04.11 GSC (konum bağımsız), pr91-kollar.json kollarıyla",
-   "sonuc_0710": "24/24 yeniden tarandı (12.09–04.10). SERP uule 8/24 ilk 10 (hepsi 1–2. sıra), kontrol 4/19; GSC gösterim düşüşü tedavi −%32 vs kontrol −%53, medyan konum +0,55 vs 0. Zayıf olumlu, anlamlı değil (PROTOKOL 07.10 PR #91 OKUMASI)."
+   "sonuc_0710": "24/24 yeniden tarandı (12.09–04.10). SERP uule 8/24 ilk 10 (hepsi 1–2. sıra), kontrol 4/19; GSC gösterim düşüşü tedavi −%32 vs kontrol −%53, medyan konum +0,55 vs 0. Zayıf olumlu, anlamlı değil (PROTOKOL 07.10 PR #91 OKUMASI).",
+   "takvim": [
+    {
+     "tarih": "2026-11-04",
+     "kim": "Claude",
+     "is": "PR #91 ikinci okuma: güçlendirilen 24 site sayfası, Search Console'da pr91-kollar.json kollarıyla (konumdan bağımsız okuma).",
+     "neden": "07.10 ilk okuması zayıf olumluydu, anlamlı değildi (gösterim düşüşü tedavi −%32, kontrol −%53). İkinci 28 günlük pencere bu gün dolar; okuma yalnız 'sonraki_olcum' metninde durduğu için takvime alındı."
+    }
+   ]
   },
   {
    "tarih": "2026-09-07",
@@ -153,7 +171,9 @@
    "durum": "acik",
    "olcum": "GA4 sessionMedium=gbp: W31 14, W32 14, W33 4, sonra 7 hafta 0. GSC /?utm_source=google&utm_medium=gbp 481 gos -> 0.",
    "gerekce": "Site tarafi temiz (UTM'li adres 200, yonlendirme yok) -> GBP kaydinda bag degismis. GBP > satis > web onceligi varken kanal #1 kor.",
-   "nerede": "DENETIM-04-10.md #1; Ozgun GBP paneli"
+   "nerede": "DENETIM-04-10.md #1; Ozgun GBP paneli",
+   "kisit": "GBP bağına UTM geri konunca, adres Search Console'da yeniden göründükten 31 gün sonra 'eryaman emlakçı' için ana sayfa (organik) ve harita bağı satırları ayrı okunur. Rakam betimleyicidir; başlık kararı bu okumaya bağlanmaz.",
+   "not": "Okuma günü: UTM'li adresin Search Console'da yeniden göründüğü ilk gün + 31 gün. O gün bilinene kadar takvim satırı yazılmaz; bilinince bu kayda 'takvim' satırı eklenir. Komut: node gsc-q.mjs <ilk_gun> <ilk_gun+27> query,page \"query::equals::eryaman emlakçı\" ('/' satırı organik, UTM'li satır harita kutusu bağı; ikisi AYRI kaydedilir)."
   },
   {
    "tarih": "2026-10-04",
@@ -187,7 +207,8 @@
    "olcum": "GSC 21.09: yonlendirmeli 715, kopya 71 (Temmuz taramali); eski adreslerin %34'u 410 (Yenimahalle). Kosul (robots.ts:45-46) saglandi.",
    "gerekce": "app/robots.ts yorumundaki kural: en gec 2026-10-15'te robots.ts'teki satir + rota dosyasi silinir, GSC'den sitemap kaldirilir.",
    "sonraki_olcum": "15.10: sil, GSC Site Haritalari'ndan kaldir, 7 gun sonra 'yonlendirmeli' kovasi degisimi",
-   "nerede": "app/robots.ts:38-46 (sitemap satiri) + public/sitemap-eski-adresler.xml (statik dosya) + GSC Site Haritalari"
+   "nerede": "app/robots.ts:38-46 (sitemap satiri) + public/sitemap-eski-adresler.xml (statik dosya) + GSC Site Haritalari",
+   "taban_0810": "07.10 kaldırma anı tabanı: SERP'te eski adres çıkan site sorgusu 14 (ilk 3'te 13), eski biçimli ilk sonuç 20; uule kayıtlarındaki eksik sayım düzeltilince en az 16 / 22. 41 → 14 düşüşü harita kaldırılmadan ÖNCE gerçekleşti, kaldırmaya yazılmaz. Yeni ölçüt: 16 → 5 ve altı, ayrıca eski → doğru geçişlerinde sıranın korunması. Sayım yalnız gerçek href okuyan kanalla yapılır (yeniden-olcum-kuyrugu-0810.json oncelik_gercek_href dilimi)."
   },
   {
    "tarih": "2026-10-07",
@@ -195,8 +216,33 @@
    "durum": "acik",
    "olcum": "Kurulum olcumu: tedavi 50 sayfa 15.440 gosterim / ort. konum 7,65; kontrol 50 sayfa 14.293 / 7,60 (28g GSC, 07.09-04.10). Adaylar >=80 gosterim; 04.10'da degisen 45 kontrol sayfasi, kaldirilan mahalleler ve adas adli siteler haric. CTA tum sitede: hero birincil WhatsApp (gercek site adli hazir mesaj), degerleme ghost bag. Eski-adres sitemap'i (908 adres) kaldirildi; 04.10'da ilk 3'teki 74 yanlis URL'nin 41'i eski adresti.",
    "gerekce": "ChatGPT istisaresi 07.10 (Ozgun talimati): yalin site adi sorgularinda (talebin %65'i, poz ~9,5, TO %0,8) ticari baslik yerine '<Site> Eryaman | Tapu ve Site Bilgileri'; degerleme formu 3 ayda 0 gonderim, temasin tamami telefon+WhatsApp.",
-   "sonraki_olcum": "04.11: GSC sayfa x sorgu, yalnizca yalin ad / ad+Eryaman sorgularinda ayni konum bandinda tedavi CTR vs kontrol CTR; SERP tarayici 'bas' alaniyla Google'in basligi aynen gosterme orani; haftalik 'eski' sayisi (41 -> <10); GA4 (phone_click+whatsapp_click)/1000 organik oturum, 8 haftalik taban + kayan 28 gun",
-   "nerede": "lib/baslik-deneyi-0710.ts, scratchpad-karne/pws0/baslik-deneyi-0710.json, app/robots.ts"
+   "sonraki_olcum": "04.11 ARA okuma (yalnız ilk 22 çift, en az 24 maruz gün), 17.11 NİHAİ okuma (son istek + 28 veri günü). Okuma kuralı baslik-deneyi-0710.json okuma_kurali alanında, özeti: (1) kol↔kol düz kıyas YAPILMAZ, fark-ın-farkı: her kolun tıklanma oranı kendi 07.09–04.10 tabanına oranlanır (tedavi %1,31 / kontrol %2,44; yalın ad %0,48 / %0,87), karar oranların oranına göre; (2) her sayfa yalnız kendi yayın-sonrası ilk taramasından sonraki günleriyle sayılır, iki kolda da (deney2-yeniden-tarama.tsv); taranmamış sayfa tedavi görmüş sayılmaz; (3) eş birincil ölçüt sayfa düzeyi tüm sorgular tıklanma oranı: yalın ad kümesi ancak ~2 katlık, sayfa düzeyi ancak ~%25'lik etkiyi ayırt eder; karar eşiği okumadan ÖNCE yazılır; (4) her sayfa için yeni + eski adres satırları toplanarak ve ayrıca 7 kirli site hariç tutularak (eski adres payı tedavide %5,0, kontrolde %1,1); yön değiştiriyorsa KARARSIZ; (5) güven aralığı sayfa kümeli bootstrap ile, aralık 1'i içeriyorsa SONUÇSUZ: başlık geri alınmaz da yayılmaz da; (6) kiratli-residence ve elit-nar-cicegi çiftleri ayrı raporlanır. İkincil, betimleyici: SERP 'bas_tam' alanıyla Google'ın başlığı aynen gösterme oranı (her çift kendi yeniden taramasından en az 3 gün sonra, eşli ölçülür); 'eski' sayısı (taban_0810); GA4 (phone_click+whatsapp_click)/1000 organik oturum, 8 haftalık taban + kayan 28 gün.",
+   "nerede": "lib/baslik-deneyi-0710.ts, scratchpad-karne/pws0/baslik-deneyi-0710.json, app/robots.ts",
+   "sonraki_olcum_0710": "04.11: GSC sayfa x sorgu, yalnizca yalin ad / ad+Eryaman sorgularinda ayni konum bandinda tedavi CTR vs kontrol CTR; SERP tarayici 'bas' alaniyla Google'in basligi aynen gosterme orani; haftalik 'eski' sayisi (41 -> <10); GA4 (phone_click+whatsapp_click)/1000 organik oturum, 8 haftalik taban + kayan 28 gun",
+   "taban_0810": "07.10 kaldırma anı tabanı: SERP'te eski adres çıkan site sorgusu 14 (ilk 3'te 13), eski biçimli ilk sonuç 20; uule kayıtlarındaki eksik sayım düzeltilince en az 16 / 22. 41 → 14 düşüşü harita kaldırılmadan ÖNCE gerçekleşti, kaldırmaya yazılmaz. Yeni ölçüt: 16 → 5 ve altı, ayrıca eski → doğru geçişlerinde sıranın korunması. Sayım yalnız gerçek href okuyan kanalla yapılır (yeniden-olcum-kuyrugu-0810.json oncelik_gercek_href dilimi).",
+   "takvim": [
+    {
+     "tarih": "2026-10-08",
+     "bitis": "2026-10-17",
+     "kim": "Claude",
+     "oncelik": 1,
+     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez: 08.10'da 2 yeniden tarama isteğiyle birlikte deney isteği 9 (ilk 5 çift). Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
+     "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir."
+    },
+    {
+     "tarih": "2026-11-04",
+     "kim": "Claude",
+     "is": "Başlık deneyi 2 ara okuma (yalnız ilk 22 çift, en az 24 maruz gün). Okumadan önce karar eşiği baslik-deneyi-0710.json'a yazılır.",
+     "neden": "Ara okuma yön verir, karar nihai okumada. Kollar düz kıyaslanmaz: her kol kendi 07.09–04.10 tabanına oranlanır ve her sayfa yalnız yeni başlıkla tarandıktan sonraki günleriyle sayılır (okuma kuralı baslik-deneyi-0710.json'da)."
+    },
+    {
+     "tarih": "2026-11-17",
+     "kim": "Claude",
+     "oncelik": 1,
+     "is": "Başlık deneyi 2 nihai okuma (son istek + 28 veri günü).",
+     "neden": "Karar okuması. İstekler 17.10'dan sonraya sarkarsa bu tarih de o kadar kayar. Güven aralığı 1'i içeriyorsa sonuç 'sonuçsuz' yazılır: başlık geri alınmaz da öteki sayfalara yayılmaz da."
+    }
+   ]
   },
   {
    "tarih": "2026-10-07",
@@ -204,9 +250,17 @@
    "durum": "acik",
    "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17). | 07.10 SERP (peer, uule, pws=0): 'emlakci' organik ilk 10 disi (28.08: #3), 2. sayfada yok; kutu #1 (Sirin, Ayyildiz, Efor). TEK olcum.",
    "gerekce": "Kalite-temizligi ve harita-kutusu hipotezleri curutuldu; genis tabanli hacim kaybi, spam update ile ayni gun. Eyleme donuk kalip yok.",
-   "sonraki_olcum": "20.10: ayni nokta+sorgu tekrar (kalici kayip ancak o zaman denir); GSC gunluk seri",
+   "sonraki_olcum": "20.10: aynı nokta + sorgu tekrar (çekirdek bölge turu) ve GSC günlük seri. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\". Ara okuma 11.10 (05–08.10 verisi gelince). Ana sayfada değişiklik yapılmaz.",
    "nerede": "DENETIM-04-10.md 07.10 eki-2",
-   "okuma_0710_b": "Cihaz/gün kırılımı (diğer oturum, gsc-q): (1) 15.09 desktop 208 gösterim konum 1,0 tek-gün anomalisi A penceresini şişiriyor; (2) jenerik 'emlakçı' mobilde 12–21.09 tümseği (20–59 gös/gün, kutu) eridi, Ekim Eylül-başı tabanında; (3) site geneli 5 haftada mobil −%36 / desktop −%39, kiralık −%22 / satılık −%36 (mevsim + spam update). 'eryaman emlakçı' mobil ~15→~6 ama konum 1,4 sabit, uule kutu #1; jenerik 'emlakçı' kutusunda da #1. GBP/kategori sorunu yok; 'emlak ofisi' kutusu kategoriye bağlı ama fırsat 6 gös/gün."
+   "okuma_0710_b": "Cihaz/gün kırılımı (diğer oturum, gsc-q): (1) 15.09 desktop 208 gösterim konum 1,0 tek-gün anomalisi A penceresini şişiriyor; (2) jenerik 'emlakçı' mobilde 12–21.09 tümseği (20–59 gös/gün, kutu) eridi, Ekim Eylül-başı tabanında; (3) site geneli 5 haftada mobil −%36 / desktop −%39, kiralık −%22 / satılık −%36 (mevsim + spam update). 'eryaman emlakçı' mobil ~15→~6 ama konum 1,4 sabit, uule kutu #1; jenerik 'emlakçı' kutusunda da #1. GBP/kategori sorunu yok; 'emlak ofisi' kutusu kategoriye bağlı ama fırsat 6 gös/gün.",
+   "takvim": [
+    {
+     "tarih": "2026-10-11",
+     "kim": "Claude",
+     "is": "Yalın 'emlakçı' ara okuma: 05–08.10 Search Console verisi gelince telefondan günlük gösterim ve konum (node gsc-q.mjs 2026-09-21 2026-10-10 query,date,device \"query::equals::emlakçı\").",
+     "neden": "07.10 ölçümünde ana sayfa bu sorguda organik ilk 10 dışındaydı (tek nokta, tek gün). 04.10'a kadar Search Console'da organik bandında gösterim sürüyordu (28.09–04.10 telefondan 86 gösterim, konum 5,5). 20.10 turundan önce kaybın sürüp sürmediği veriden görülür. Ana sayfada değişiklik yapılmaz."
+    }
+   ]
   },
   {
    "tarih": "2026-10-07",
@@ -234,7 +288,7 @@
      "tarih": "2026-10-08",
      "kim": "Özgün",
      "oncelik": 1,
-     "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al.",
+     "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al. Aynı oturumda WhatsApp'ta 'dairem' ve \"Eryaman'daki evim\" ifadelerini ara; 09.09–06.10 arasında 'Merhaba' ile başlayan sohbetleri say ve her birini ev sahibi / daire arayan / diğer diye ayır (yalnız adet; isim ve numara yok).",
      "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor."
     },
     {
@@ -254,7 +308,7 @@
      "kim": "Claude",
      "oncelik": 1,
      "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
-     "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı; iki ardışık ölçüm aynıysa 'kalıcı kayıp' denir. 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor."
+     "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı (tek nokta, tek gün). 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\"."
     },
     {
      "tarih": "2026-11-01",
@@ -267,7 +321,36 @@
      "kim": "Claude",
      "oncelik": 1,
      "is": "Hatırlanırlık ikinci okuma (adımızla arama, mobil Direct, yorum temposu, GBP Performans Eylül+Ekim) + çekirdek tur tekrarı. Ertesi gün (05.11) halka turu: BOLGE_ON_AYAR=halka (18 sorgu) — GBP kategori/hizmet değişikliğinden en az 72 saat sonra.",
-     "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu)."
+     "neden": "07.10 tabanının ikinci bağımsız 28 günlük penceresi bu gün dolar; +%25 altı fark yorumlanmaz. İki ön ayar aynı gün koşulmaz (günlük reCAPTCHA duvarı ~41-60 sorgu). Çekirdek tur tekrarında yalın 'emlakçı' için: 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\". Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz; GBP bağına UTM geri konduysa bu okuma Direct için kıyas değil taban kaydıdır."
+    }
+   ],
+   "duzeltme_0810": "olcum alanındaki iki hatırlanırlık rakamı ayrıştırıldı. MARKA: 07.09–04.10 177 gösterim = çekirdek 140 (şirin gayrimenkul 82, şirin emlak 30, şirin emlak eryaman 23, şirin emlak sahibinden 4, şirin group 1) + doğrulama 37 ('şirin gayrimenkul yorumları', 0 tık; 90 günde yalnız 6 günde görünüyor, 14–28.09). Önceki 28 gün 154 ve içinde 'yorumları' yok; yani çekirdek 154 → 140 (−%9, eşik altı), '+%15' okuması geçersiz. DIRECT: 09.09–06.10 mobil Direct 71 oturum = ana sayfa 18 (7 etkileşimli) + site sayfaları 53 (8 etkileşimli); önceki 28 gün ana 24 / diğer 45. GBP bağı UTM'liyken (20.07–16.08) ana sayfa mobil Direct haftada 0–3, UTM'sizken (24.08–04.10) 4–10; aynı UTM'li haftalarda mobil medium=gbp 2–6/hafta. Bugünkü 18'in büyük kısmı büyük olasılıkla profil düğmesi tıkı (kesin kanıt değil). UTM geri konunca ~7/28 gün beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra. 04.11 okuması UTM geri konduysa Direct için kıyas değil taban kaydıdır. Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz.",
+   "kisit": "08.10 düzeltmesi: adımızla arama tabanı 140 çekirdek + 37 'yorumları' araması (toplam 177; çekirdek önceki dönemde 154, fark eşik altı). Mobil Direct'in 71 oturumundan 18'i ana sayfaya, 53'ü site sayfalarına gelmiş. Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz: GBP bağı UTM'sizken profil düğmesinden gelenler de bu kovaya düşüyor."
+  },
+  {
+   "tarih": "2026-10-08",
+   "ad": "Ana sayfa başlık/açıklama değişikliği ('eryaman emlakçı' TO'su için)",
+   "durum": "acik",
+   "olcum": "TO %5,5 → %2,9 farkı 11 tık (27.07–11.08, 16 gün) ile 20 tık (16.08–04.10, 50 gün) arasındaki fark; günlük gösterim 12,5 → 13,8 sabit, günlük tık 0,69 → 0,40, fark anlamlı değil (p=0,15; mobil p=0,20). Organik sıra 08.08 başlığıyla ~6 → 2–3, kutu 1. Google başlığı aynen gösteriyor (32 tam, 14 önek kayıt); açıklamanın iki sürümünü de göstermedi (15.08, 20.08). Mobil tık 2,3/hafta: +%50 farkı görmek ~27 hafta.",
+   "kaynak": "08.10 GSC query×date×device (eryaman-emlakci.json donem_farki, mobil_ozet) + sonuclar-*.jsonl + GA4 iniş=/",
+   "kisit": "DOKUNMA. Yeniden açma: organik sıra iki ardışık turda 3'ün gerisinde ya da kap/bas_tam kaydı bozuk başlık/kesit gösterirse. 'Çürük'e ancak kap kaydı Google'ın açıklamamızı hâlâ göstermediğini doğrularsa ve yalnız açıklama için çevrilir."
+  },
+  {
+   "tarih": "2026-10-08",
+   "ad": "Tepe SERP rakamları seçici yeniden ölçümle şişik (üst sınır)",
+   "durum": "acik",
+   "olcum": "Ekim'de yeniden ölçülen 209 site sorgusunun yalnız 37'si önceden doğruydu (172'si zaten sorunlu çıkanlardı); o 37'nin 8'i bozulmuş (6'sı ilk 10 dışına, 2'si ada sayfasına). Son kayıtların yaşına göre: Eylül kovasında ilk 3'teki 259 sıranın 259'u doğru (sorunluların hepsi Ekim'de yeniden ölçüldüğü için), Ekim kovasında 111'in 80'i doğru. 'Doğru' sayılan 382 kaydın 291'i 06.09 ve öncesinden, hiç yeniden ölçülmedi. Yani 'ilk 3 içinde doğru sayfa' %91 (354/390) üst sınır, Ekim kovasının %72'si alt sınır; 'site sorgularında ilk 3' payı da aynı nedenle üst sınır.",
+   "gerekce": "Yalnız sorunlu çıkanlar yeniden ölçülürse yanlışların düzeleni paya yazılır, doğruların bozulanı görülmez; oran tek yönde düzelir. Search Console konumu bayat sayfalarda değişmemiş (235 sayfada 7,51 → 7,50), büyük düşüş beklenmez ama yön ölçülmeden bilinmez.",
+   "kaynak": "08.10: sonuclar-site-emlakci.jsonl son kayıtları (509 sorgu), dogru-sayfa.py sınıflaması + 08.10 düzeltmeleri; sayılar yeniden-olcum-kuyrugu-0810.json 'girdi' alanında",
+   "kisit": "Yansız rakam gelene kadar karnedeki iki tepe SERP rakamı üst sınır diye okunur, 7 günlük fark oku yorumlanmaz. Yeniden ölçüm turu yalnız sorunluları değil kuyruğun tamamını, rastgele sırayla döner.",
+   "sonraki_olcum": "yeniden-olcum-kuyrugu-0810.json: önce yansız 30'luk örnek (291 kayıttan sabit tohumla) + gerçek href isteyen 31 sorgu; bozulma oranı 291 kayda yansıtılıp buraya yazılır. Sonra ada 6 ve kalan 178 bayat kayıt (gecede en çok ~100 site sorgusu). Deney çiftleri ayrı takvimde.",
+   "nerede": "scratchpad-karne/pws0/yeniden-olcum-kuyrugu-0810.json",
+   "takvim": [
+    {
+     "tarih": "2026-10-09",
+     "kim": "Claude",
+     "is": "Yansız 30'luk örnek + 31 gerçek-href sorgusu (yeniden-olcum-kuyrugu-0810.json: yansiz_ornek_30, oncelik_gercek_href). Kayıt ekle-deney-kompakt.py ile; robot duvarında dur.",
+     "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır."
     }
    ]
   }

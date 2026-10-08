@@ -13,11 +13,24 @@ Tarihler ve rakamlar elle yazılmaz, veriden türetilir:
   • damla günleri  : DIZIN-DAMLASI-31-08.md'deki açık "- [ ] url" satırları
                      günlük kotaya (KOTA_GUN) bölünür → bitiş tarihi;
                      gözlenen tempo aynı dosyadaki "← gg.aa istek gönderildi"
-                     işaretlerinden sayılır
+                     işaretlerinden sayılır. Açık satırın TÜRÜ satir_turu() ile
+                     belirlenir (08.10 ortak kuralı S1, bütün okuyucularda aynı):
+                     eski_adres / dizin_disi / yeniden_tarama. Yalnız dizin_disi
+                     "Google'da yok" gerekçesiyle basılır. "- [~]" satırı kuyruk
+                     dışıdır: açık/bitmiş sayımına girmez; üstünde "← gg.aa istek
+                     gönderildi" yazıyorsa (eski adrese giden istek) yalnız KOTA
+                     sayımına girer.
+  • deney istekleri: deney2-yeniden-tarama.tsv'nin istek_zamani sütunu. Başlık deneyi 2
+                     istekleri damla dosyasına yazılmaz; kota ortak olduğu için tempo
+                     ve "bugün istek gitti mi" hesabına buradan girer.
   • kutu listesi   : hedef-sorgular.json (kutu_var ve kutuda == 0)
   • tarama denetimi: damla dosyasındaki mahalle sayfası isteklerinin tarihi + 3 / + 4
   • title donması  : eryaman-emlakci.json title_donuk (yedek: PROTOKOL-gece.md'deki
-                     "…'a kadar başlık/H1 deneyi YAPILMAZ" cümlesi)
+                     "…'a kadar başlık/H1 deneyi YAPILMAZ" cümlesi). 08.10'dan beri bu
+                     tarihe iş BAĞLANMIYOR (bkz. "07.09" bölümü); alan yalnız
+                     turetilen_tarihler'de durur.
+  • defter takvimi : kaldirac-defteri.json kayıtlarındaki "takvim" listeleri
+                     (yeni tarihli iş için koda dokunulmaz, deftere yazılır)
   • ada kıyasları  : PR #87 commit tarihi (git log) + 14 / + 28
   • GA4 konum      : PR #88 commit tarihi (git log) + 14
   • beklenen düşüş : Yenimahalle kaldırma commit'i (#79) + 28 + GSC gecikmesi
@@ -25,7 +38,11 @@ Tarihler ve rakamlar elle yazılmaz, veriden türetilir:
 Git'e ulaşılamazsa yedek tarih kullanılır ve kaynak alanına "(yedek tarih)" düşülür.
 
 Çıktı: is-takvimi.json — {guncelleme, damla, gbp_kutu, uyarilar, isler[]}
-       isler[i] = {tarih (ISO, sıralama için), tarih_tr, is, neden, kaynak, kim, ayrinti?}
+       isler[i] = {tarih (ISO, sıralama için), tarih_tr, is, neden, kaynak, kim, ayrinti?,
+                   bitis?, bitis_tr? (günlerce süren iş)}
+       damla.acik = istek kuyruğu (dizin dışı + yeniden tarama); damla.acik_tur = üç türün sayısı
+       damla.istek_gunluk = gün → o gün giden BÜTÜN istekler (damla + kuyruk dışı + deney);
+       damla.kuyruk_disi_istek / damla.deney_istek = bunların içindeki iki ayrı kalem
 karne-html.py bu dosyayı okuyabilir; bu betik karneye dokunmaz.
 Çalıştırma: python3 is-takvimi-uret.py   (KARNE_SCRATCH gerekmez)
 """
@@ -47,7 +64,16 @@ YIL = BUGUN.year
 
 # karne-html.py'deki _kota_gun ile aynı sayı (kaldıraç defteri: "Kota günde ~10,
 # kayan 24 saat"). karne-html.py içe aktarılmıyor: içe aktarmak tüm karneyi koşturur.
+# Planlama sayısı budur: güvenli taraf. Ölçülen tavan 11 (04.10 ve 07.10 turlarında 11 istek
+# kabul edildi, 12.'de "Kota Aşıldı"); Başlık deneyi 2 takvimi "günde 11" derken bu tavanı
+# kastediyor. İki rakam aynı takvimde yan yana durduğu için metinde ikisi de yazılır.
 KOTA_GUN = 10
+KOTA_TAVAN = 11
+# Deney isteklerinin kaydı (elle tutulur); "#" ile başlayan satırlar açıklama.
+DENEY_TSV = "deney2-yeniden-tarama.tsv"
+# istek_zamani UTC yazılır; gün hesabı Türkiye saatiyle yapılır (yıl boyu UTC+3). Gece
+# 01:30'da giden istek UTC'de bir önceki güne düşer, takvimde o günün isteğidir.
+TR_SAAT = datetime.timezone(datetime.timedelta(hours=3))
 # eryaman-emlakci.json uyarısı "GSC 2-3 gün geriden gelir" — güvenli tarafta 3.
 GSC_GECIKME = 3
 # Karnedeki bütün GSC bölümleri 28 günlük pencereyle ölçülüyor; kıyas için ikinci
@@ -143,6 +169,39 @@ def kok_sayfa(url):
 
 
 # ---------------- damla kuyruğu ----------------
+TUR_AD = {"dizin_disi": "dizin dışı", "yeniden_tarama": "yeniden tarama bekleyen", "eski_adres": "eski adres"}
+
+
+def satir_turu(url, ok_sonrasi):
+    """Açık "- [ ] https://…" satırının türü — 08.10 ORTAK KURALI (S1). Aynı kural
+    karne-html.py, yonetici-ozeti-uret.py ve anlik-goruntu-uret.py'de de var; biri
+    değişirse hepsi değişir.
+
+      eski_adres     : adres yolu eski şemada — /mahalleler/<slug>… ve <slug>
+                       "-mahallesi" ile bitmiyor (26.07 taşımasından önceki adres, 308
+                       verir). Mahalle KÖKÜ de (/mahalleler/altay) buraya girer: o da
+                       308 veren eski adrestir, altında çocuk yol olması şart değil.
+      dizin_disi     : değilse, satırdaki "←" SONRASI notta "dizin dışı" geçiyor
+      yeniden_tarama : geri kalanı (sayfa dizinde; içeriği/başlığı değişti)
+
+    ok_sonrasi: satırda "←" işaretinden sonra gelen metin; ok yoksa boş dizgi. Okun
+    SOLUNDAKİ metne bakılmaz: "… dizin dışı sanılıyordu ← dizinde, yeniden tarama"
+    satırı yeniden_tarama'dır (öteki okuyucular da yalnız ok sonrasını okur).
+
+    NEDEN: üç okuyucu da her açık satırı "Google'da yok" sayıyordu. 08.10'da 4 açık
+    satırın 2'si dizindeydi, 2'si eski adresti, API'ye göre dizin dışı sayfa 0'dı;
+    karne yine de "her sayfa dizin dışı doğrulandı" gerekçesiyle iş basıyordu.
+    """
+    m = re.search(r"/mahalleler/([^/?#\s]+)", url)
+    if m and not m.group(1).endswith("-mahallesi"):
+        return "eski_adres"
+    # .lower() Türkçe I/İ'de bozulur ("DİZİN DIŞI" eşleşmez) — tranahtar.anahtar şart.
+    # anahtar() ı'yı da i'ye indirger; bu yüzden aranan ifade de aynı süzgeçten geçer.
+    if tranahtar.anahtar("dizin dışı") in tranahtar.anahtar(ok_sonrasi or ""):
+        return "dizin_disi"
+    return "yeniden_tarama"
+
+
 def damla_oku():
     """DIZIN-DAMLASI-31-08.md → açık kayıtlar (dosya sırası = kuyruk sırası),
     bitmiş kayıtlar (tarih + açıklama), adressiz satır sayısı.
@@ -150,9 +209,19 @@ def damla_oku():
     Dosyada bazı açıklama satırlarının ("_hiç bilinmiyor_") üstünde URL yok —
     31.08 kurulumundan geliyor. Bunlar kuyrukta sayılmaz ama uyarı olarak raporlanır:
     sayı "kalan" ile oynamasın diye sessizce yutulmuyor.
+
+    Sayılmayanlar: "- [ ]" olup https içermeyen satırlar (07.09 slug listesi) ve
+    "- [~]" satırları. "- [~]" = damla kuyruğunun DIŞINDA tutulan satır: bilerek
+    vazgeçilen istek ya da dizin isteği olmayan istek (eski adrese giden, 308'i yeniden
+    okutma isteği). Açık da bitmiş de sayılmaz. Üstünde "← GG.AA istek gönderildi"
+    yazıyorsa dördüncü liste (kuyruk_disi) olarak döner: kota harcadı, tempo sayımına
+    girer. NEDEN "- [x]" değil: mudahale-defteri-uret.py "- [x] <adres> ← GG.AA istek
+    gönderildi" satırlarını DİZİN isteği sayar ve "dizine girdi mi" diye izler; eski
+    adres için bu soru terstir (başarı = dizinden düşmesi), 07.10'un 11 eski adres
+    isteği "- [x]" yazılınca defter 70/70 yerine 70/81 basıyordu.
     """
     yol = os.path.join(KOK, "DIZIN-DAMLASI-31-08.md")
-    acik, bitmis, adressiz = [], [], 0
+    acik, bitmis, kuyruk_disi, adressiz = [], [], [], 0
     mah, son = None, None  # son: bir önceki satır URL satırıysa o kayıt
     with open(yol, encoding="utf-8") as f:
         for sat in f:
@@ -161,9 +230,19 @@ def damla_oku():
                 mah = m.group(1)
             m = re.match(r"^- \[ \] (https://\S+)\s*(.*)$", sat)
             if m:
-                son = {"url": m.group(1), "mah": mah, "not": m.group(2).strip(" ←").strip(),
-                       "durum": ""}
+                kalan = m.group(2)
+                # tür yalnız ok SONRASI metinden; "not" gösterim için, bütün kalan metin
+                ok_sonrasi = kalan.split("←", 1)[1] if "←" in kalan else ""
+                not_ = kalan.strip(" ←").strip()
+                son = {"url": m.group(1), "mah": mah, "not": not_,
+                       "tur": satir_turu(m.group(1), ok_sonrasi), "durum": ""}
                 acik.append(son)
+                continue
+            m = re.match(r"^- \[~\] (https://\S+)\s*←\s*(\d\d\.\d\d)\s*(.*)$", sat)
+            if m:
+                kuyruk_disi.append({"url": m.group(1), "tarih": m.group(2),
+                                    "aciklama": m.group(3).strip()})
+                son = None
                 continue
             m = re.match(r"^- \[x\] (https://\S+)\s*←\s*(\d\d\.\d\d)\s*(.*)$", sat)
             if m:
@@ -180,16 +259,75 @@ def damla_oku():
                 son = None
                 continue
             son = None
-    return acik, bitmis, adressiz
+    return acik, bitmis, kuyruk_disi, adressiz
 
 
-ACIK, BITMIS, ADRESSIZ = damla_oku()
+def yerel_gun(z):
+    """istek_zamani hücresi → Türkiye saatiyle gün. Kabul edilen yazımlar:
+    '2026-10-08T07:35:00Z', '2026-10-08T07:35+00:00' (saat dilimli: UTC+3'e çevrilir),
+    '2026-10-08 10:35' (dilimsiz: yerel saat sayılır), '2026-10-08'. Okunamazsa None."""
+    z = (z or "").strip()
+    try:
+        if len(z) == 10:
+            return datetime.date.fromisoformat(z)
+        dt = datetime.datetime.fromisoformat(z.replace("Z", "+00:00").replace(" ", "T", 1))
+    except ValueError:
+        return None
+    if dt.tzinfo is not None:
+        dt = dt.astimezone(TR_SAAT)
+    return dt.date()
+
+
+def deney_istek_oku():
+    """deney2-yeniden-tarama.tsv → {gün (date): istek adedi}; istek_zamani dolu satırlar.
+
+    NEDEN: Başlık deneyi 2'nin 90 isteği damla dosyasına yazılmıyor (yazılırsa karne o
+    sayfaları dizin kuyruğu, müdahale defteri de dizin isteği sayar). Kayıt yalnız bu
+    TSV'de; okunmazsa 08–17.10 arası günde 11 istek giderken tempo ve "bugün istek
+    gitti mi" hesabı hiçbirini görmez, takvim kota doluyken bugüne istek işi yazar.
+    Dosya yoksa ya da sütun yoksa boş döner (deney bitince dosya silinebilir).
+    """
+    yol = os.path.join(KOK, DENEY_TSV)
+    gunler, bozuk = {}, 0
+    try:
+        f = open(yol, encoding="utf-8")
+    except FileNotFoundError:
+        return gunler
+    with f:
+        sutun = None
+        for sat in f:
+            if sat.startswith("#") or not sat.strip():
+                continue
+            hucre = sat.rstrip("\n").split("\t")
+            if sutun is None:  # ilk veri satırı başlıktır
+                if "istek_zamani" not in hucre:
+                    UYARILAR.append(f"{DENEY_TSV}: istek_zamani sütunu yok, deney istekleri sayılamadı.")
+                    return gunler
+                sutun = hucre.index("istek_zamani")
+                continue
+            z = hucre[sutun].strip() if len(hucre) > sutun else ""
+            if not z:
+                continue
+            g = yerel_gun(z)
+            if g is None:
+                bozuk += 1
+                continue
+            gunler[g] = gunler.get(g, 0) + 1
+    if bozuk:
+        UYARILAR.append(f"{DENEY_TSV}: {bozuk} satırın istek_zamani okunamadı (beklenen: 2026-10-08T07:35:00Z); "
+                        f"bu istekler tempo sayımına girmedi.")
+    return gunler
+
+
+ACIK, BITMIS, KUYRUK_DISI, ADRESSIZ = damla_oku()
 if ADRESSIZ:
     UYARILAR.append(f"DIZIN-DAMLASI-31-08.md içinde {ADRESSIZ} açıklama satırının üstünde adres yok; "
                     f"bunlar açık sayıya girmiyor (31.08 kurulumundan kalan boşluk).")
 
 # Gözlenen tempo: hangi gün kaç istek KABUL edildi (kendiliğinden dizine girenler
-# kota harcamaz, tempoya girmez).
+# kota harcamaz, tempoya girmez). Kota bütün isteklerde ortak olduğu için üç kaynak
+# toplanır: damla satırları ("- [x]"), kuyruk dışı istekler ("- [~]", eski adres) ve
+# Başlık deneyi 2 istekleri (TSV).
 ISTEK_GUN = {}
 KENDILIGINDEN = 0   # istek olmadan taranan/dizine giren (kota harcanmadı)
 ZATEN_DIZINDE = 0   # yeniden denetimde "dizinde" çıkan (kuyruğa hiç girmemeliydi)
@@ -202,12 +340,47 @@ for b in BITMIS:
         KENDILIGINDEN += 1
     elif "yeniden denetim" in a:
         ZATEN_DIZINDE += 1
+KUYRUK_DISI_ISTEK = 0
+for b in KUYRUK_DISI:
+    if "istek gönderildi" in tranahtar.anahtar(b["aciklama"]):
+        ISTEK_GUN[b["tarih"]] = ISTEK_GUN.get(b["tarih"], 0) + 1
+        KUYRUK_DISI_ISTEK += 1
+DENEY_ISTEK_GUN = deney_istek_oku()
+for _g, _n in DENEY_ISTEK_GUN.items():
+    ISTEK_GUN[f"{_g:%d.%m}"] = ISTEK_GUN.get(f"{_g:%d.%m}", 0) + _n
 
-SON_ISLEM = max((gg_aa(b["tarih"]) for b in BITMIS), default=None)
-# Bugün tur yapıldıysa (dosyada bugünün işareti varsa) damla yarın başlar.
+# Son işlem günü: damla işareti ya da herhangi bir istek (kota ortak).
+SON_ISLEM = max([gg_aa(b["tarih"]) for b in BITMIS] + [gg_aa(g) for g in ISTEK_GUN], default=None)
+# Bugün tur yapıldıysa (dosyada bugünün işareti ya da TSV'de bugünün deney isteği varsa)
+# damla yarın başlar: kota bugün harcandı.
 DAMLA_BAS = BUGUN if (SON_ISLEM is None or SON_ISLEM < BUGUN) else SON_ISLEM + datetime.timedelta(days=1)
+# GBP yorum işi kotaya bağlı değil; eskiden beri "damla dosyasında bugünün işareti varsa
+# yarın" kuralıyla tarihleniyor. Deney istekleri bu tarihi oynatmasın diye ayrı tutulur:
+# yoksa 08–17.10 arası her gün deney isteği gittiği için iş hep yarına yazılırdı.
+_son_damla = max((gg_aa(b["tarih"]) for b in BITMIS), default=None)
+GBP_GUN = BUGUN if (_son_damla is None or _son_damla < BUGUN) else _son_damla + datetime.timedelta(days=1)
 
-KALAN = len(ACIK)
+KD = yukle("kaldirac-defteri.json")
+
+# Türlere ayır (satir_turu). İstek kuyruğu = dizin_disi + yeniden_tarama, dosya sırasıyla.
+# eski_adres satırı kuyruğa GİRMEZ: eski adrese istek kaldıracı defterde ölü; satır
+# yalnız sayılır ve uyarı olarak gösterilir (karar elle verilir, takvim iş basmaz).
+ACIK_TUR = {t: [a for a in ACIK if a["tur"] == t] for t in TUR_AD}
+KUYRUK = [a for a in ACIK if a["tur"] != "eski_adres"]
+_eski_k = next((k for k in KD["kaldiraclar"] if k["ad"].startswith("Eski adresi yeniden taratma")), None)
+_DURUM_AD = {"olu": "ölü", "curuk": "çürük", "acik": "açık", "kanitli": "kanıtlı", "dogrulandi": "doğrulandı"}
+if ACIK_TUR["eski_adres"]:
+    _d = (_eski_k or {}).get("durum")
+    UYARILAR.append(
+        f"DIZIN-DAMLASI-31-08.md içinde {len(ACIK_TUR['eski_adres'])} açık satır eski adres (26.07 taşımasından "
+        f"önceki şema): istek kuyruğuna alınmadı. Eski adrese istek kaldıracının defterdeki durumu: "
+        f"{_DURUM_AD.get(_d, _d) if _d else 'kayıt yok'}.")
+if ACIK and not ACIK_TUR["dizin_disi"]:
+    UYARILAR.append(
+        f"Açık {len(ACIK)} satırın hiçbiri dizin dışı değil ({len(ACIK_TUR['yeniden_tarama'])} yeniden tarama "
+        f"bekleyen, {len(ACIK_TUR['eski_adres'])} eski adres); 'Google'da yok' sayısı 0.")
+
+KALAN = len(KUYRUK)
 DAMLA_GUN = math.ceil(KALAN / KOTA_GUN) if KALAN else 0
 DAMLA_BIT = DAMLA_BAS + datetime.timedelta(days=DAMLA_GUN - 1) if DAMLA_GUN else None
 ORT_ISTEK = (sum(ISTEK_GUN.values()) / len(ISTEK_GUN)) if ISTEK_GUN else None
@@ -217,41 +390,74 @@ DAMLA_BIT_GOZLENEN = (DAMLA_BAS + datetime.timedelta(days=math.ceil(KALAN / ORT_
 ISLER = []
 
 
-def ekle(tarih, is_, neden, kaynak, kim, oncelik=1, ayrinti=None):
+def ekle(tarih, is_, neden, kaynak, kim, oncelik=1, ayrinti=None, bitis=None):
+    """bitis: iş birden çok güne yayılıyorsa son günü (tek satır basılır, tarih = ilk gün)."""
     kayit = {"tarih": iso(tarih), "tarih_tr": tr_tarih(tarih), "is": is_, "neden": neden,
              "kaynak": kaynak, "kim": kim, "_oncelik": oncelik}
+    if bitis is not None:
+        kayit["bitis"] = iso(bitis)
+        kayit["bitis_tr"] = tr_tarih(bitis)
     if ayrinti is not None:
         kayit["ayrinti"] = ayrinti
     ISLER.append(kayit)
 
 
 # --- damla günleri ---
+# Gerekçe TÜRE göre basılır (08.10): "API ile dizin dışı doğrulandı, tek ilacı dizine
+# girmek" cümlesi yalnız dizin_disi satırları için doğrudur. Dizindeki sayfaya giden
+# istek yeniden tarama isteğidir; onu "Google'da yok" diye göstermek karneyi yanıltıyordu.
 for gun_no in range(DAMLA_GUN):
     bas_i = gun_no * KOTA_GUN
-    dilim = ACIK[bas_i:bas_i + KOTA_GUN]
+    dilim = KUYRUK[bas_i:bas_i + KOTA_GUN]
     kalan_once = KALAN - bas_i
     kalan_sonra = kalan_once - len(dilim)
     t = DAMLA_BAS + datetime.timedelta(days=gun_no)
     ilk = dilim[0]
-    is_ = (f"Dizin damlası: {len(dilim)} istek gönder, {slug_ad(ilk['url'])} ile başla. "
+    n_dd = sum(1 for a in dilim if a["tur"] == "dizin_disi")
+    n_yt = len(dilim) - n_dd
+    if n_dd and n_yt:
+        bas = f"Dizin isteği: {len(dilim)} istek gönder ({n_dd} dizin dışı, {n_yt} yeniden tarama)"
+    elif n_dd:
+        bas = f"Dizin damlası: {len(dilim)} istek gönder"
+    else:
+        bas = f"Yeniden tarama isteği: {len(dilim)} sayfa"
+    is_ = (f"{bas}, {slug_ad(ilk['url'])} ile başla. "
            f"Kuyrukta {kalan_once} sayfa açık, gün sonunda {kalan_sonra} kalır.")
     if gun_no == 0:
-        neden = (f"Kuyruktaki her sayfa Search Console API ile dizin dışı doğrulandı ve 28 günde "
-                 f"sıfır gösterim aldı; tek ilacı dizine girmek. Kota günde yaklaşık {KOTA_GUN} istek "
-                 f"ve takvim günü değil kayan 24 saat: dünkü istekler sabah gittiyse pencere ertesi "
-                 f"gün aynı saatten sonra açılır; 'sorun oluştu' balonu kota dolu demektir, tekrar "
-                 f"basılmaz. İstek, dizin dışı sayfada aynı gün tarama getiriyor (damla turları).")
+        parca = []
+        if n_dd:
+            parca.append(f"Dizin dışı {n_dd} sayfa: her biri Search Console API ile dizin dışı doğrulandı ve "
+                         f"28 günde sıfır gösterim aldı; tek ilacı dizine girmek. İstek, dizin dışı sayfada "
+                         f"aynı gün tarama getiriyor (damla turları).")
+        if n_yt:
+            parca.append(f"Yeniden tarama {n_yt} sayfa: dizinde, içeriği/başlığı değişti; yeniden tarama isteği. "
+                         f"Bu sayfalar Google'da var, eksik olan yeni hâllerinin okunması. Dizindeki sayfaya "
+                         f"istek de tarama getiriyor (kaldıraç defteri 'Dizin isteği damlası', 04.10 eki).")
+        parca.append(f"Kota günde yaklaşık {KOTA_GUN} istek (ölçülen tavan {KOTA_TAVAN}) ve takvim günü değil "
+                     f"kayan 24 saat: dünkü istekler sabah gittiyse pencere ertesi gün aynı saatten sonra açılır; "
+                     f"'sorun oluştu' balonu kota dolu demektir, tekrar basılmaz. Kota bütün isteklerde ortaktır: "
+                     f"aynı güne yazılı başka istek işi varsa (ör. Başlık deneyi 2) günün toplamı {KOTA_TAVAN} "
+                     f"isteği geçmez; bu satırdaki sayfalar önce gider, kalan hak öteki işe kalır.")
+        neden = " ".join(parca)
         if ilk["not"]:
             neden += f" İlk sıradaki sayfanın kuyruk notu: {ilk['not']}"
     else:
         # Aynı gerekçeyi beş gün art arda basmak okuyucuyu boğar; ilk günde tam hâli var.
         neden = f"Kuyruk devam ediyor; gerekçe ve kota kuralı ilk damla gününde ({tr_tarih(DAMLA_BAS)})."
     ekle(t, is_, neden,
-         "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası) + kaldirac-defteri.json 'Dizin isteği damlası'",
+         "DIZIN-DAMLASI-31-08.md (açık satırlar, dosya sırası; tür satir_turu ile) + "
+         "kaldirac-defteri.json 'Dizin isteği damlası'",
          "Claude", oncelik=0,
-         ayrinti=[{"url": a["url"], "durum": a["durum"]} for a in dilim])
+         # durum: karne satırın yanına basar. Satırın altında açıklama yoksa (yeniden tarama
+         # satırlarında yok) kuyruk notu gösterilir; tür her durumda başta yazar.
+         ayrinti=[{"url": a["url"], "tur": a["tur"],
+                   "durum": TUR_AD[a["tur"]] + (f" · {a['durum'] or a['not']}" if (a["durum"] or a["not"]) else "")}
+                  for a in dilim])
 
-if DAMLA_BIT:
+# "Kuyruk tükenir → görünmezleri API'ye sor" işi yalnız DİZİN DIŞI kuyruk varken anlamlı:
+# biten odur. Açık satırların hepsi yeniden tarama ise dizin dışı kuyruk zaten boştur ve
+# bu iş boş yere yazılır (08.10'da 4 açık satırın hiçbiri dizin dışı değilken 09.10'a yazılıyordu).
+if DAMLA_BIT and ACIK_TUR["dizin_disi"]:
     t = DAMLA_BIT + datetime.timedelta(days=1)
     ekle(t, "Damla kuyruğu tükenir: yeni kuyruk için görünmezleri API'ye sor "
             "(gsc-dizin becerisi; gorunmez-teshis-uret.py → dizin-adaylari-uret.py), "
@@ -299,14 +505,13 @@ if BIZ_YOK:
              f"Zaten kutuda olduğumuz sorgular için yorum istemeye gerek yok: "
              f"{', '.join(GBP_ZATEN)}. Kural: her yoruma farklı mahalle adı, hazır metin "
              f"kopyalatılmaz, kiracı aleyhine ifade yok.")
-    ekle(DAMLA_BAS, is_, neden,
+    ekle(GBP_GUN, is_, neden,
          "hedef-sorgular.json (kutu_var ve kutuda alanları)", "Özgün",
          ayrinti=[{"sorgu": s["sorgu"], "kutu_yon": s.get("kutu_yon"), "organik_sira": s["sira"] or "ilk 10 dışı",
                    "olcum": s["tarih"]} for s in BIZ_YOK])
 
 # --- mahalle sayfası yeniden tarama denetimi (+3 / +4 gün) ---
 MAH_ISTEK = [b for b in BITMIS if kok_sayfa(b["url"]) and "istek gönderildi" in b["aciklama"]]
-KD = yukle("kaldirac-defteri.json")
 _damla_kaldirac = next((k for k in KD["kaldiraclar"] if k["ad"] == "Dizin isteği damlası"), None)
 _ek_cumle = ""
 if _damla_kaldirac:
@@ -369,29 +574,25 @@ else:
         TITLE_DONUK = gg_aa(m.group(1))
         TITLE_KAYNAK = "PROTOKOL-gece.md ('…kadar başlık/H1 deneyi YAPILMAZ')"
 if TITLE_DONUK:
-    d = {x["k"]: x for x in EE.get("donemler", [])}
-    d1, d3 = d.get("d1"), d.get("d3")
-    ac = EE.get("aciklama_commit", {})
-    m = re.search(r"meta description (\d+)→(\d+)", ac.get("konu", ""))
-    kisaltma = f"{m.group(1)} → {m.group(2)} karakter" if m else "kısaltıldı"
-    is_ = (f"Title/H1 donması biter. İlk iş: 'eryaman emlakçı' için ana sayfa meta description "
-           f"(ve gerekirse title) yeniden kurulur; değişiklik tek başına gider, aynı gün başka "
-           f"şablon işi yapılmaz ki etkisi ayrışsın.")
-    neden = ""
-    if d1 and d3:
-        neden = (f"'eryaman emlakçı' tıklanma oranı {d1['etiket']} döneminde %{tr_sayi(d1['to'], 1)}, "
-                 f"{d3['etiket']} döneminde %{tr_sayi(d3['to'], 1)}; organik sıra ve harita kutusu "
-                 f"aynı kaldı, yani sorun sırada değil snippet'te. ")
-    neden += (f"Baş şüpheli {kisa(ac.get('d', ''))} tarihli ana sayfa açıklama kısaltması ({kisaltma}); "
-              f"nedensellik ölçülmedi, tek şüpheli değil. Donma sebebi: 10.08 başlık değişikliğinin "
-              f"tabanı eski başlıkla alınmıştı, üstüne ikinci müdahale binerse etki ayrışmaz.")
-    ekle(TITLE_DONUK, is_, neden, f"{TITLE_KAYNAK} + eryaman-emlakci.json dönemler/notlar + PROTOKOL-gece.md satır 157",
-         "Claude", oncelik=1)
-    # Kaldıraç defterinde bu tarihe bağlanmış başka iş var mı (ör. ada sayfası başlığı)
+    # 08.10: burada öncelik-1 bir madde vardı — "Title/H1 donması biter. İlk iş: 'eryaman
+    # emlakçı' için ana sayfa meta description (ve gerekirse title) yeniden kurulur". Madde
+    # d1/d3 tıklanma oranı farkını "sorun snippet'te" diye okuyordu. Ölçüm bunu taşımıyor:
+    # günlük gösterim iki dönemde neredeyse aynı, fark birkaç tık ve rastlantıdan ayrılmıyor
+    # (eryaman-emlakci.json donem_farki); organik sıra da sabit değildi, yükselmişti. Madde
+    # KALDIRILDI ve yerine tıklık eşik KONMADI; başlığa/açıklamaya dokunulmuyor. Yeniden açma
+    # koşulu kaldıraç defterinde: "Ana sayfa başlık/açıklama değişikliği" kaydının kisit alanı.
+    #
+    # Kaldıraç defterinde bu tarihe bağlanmış, HENÜZ BAKILMAMIŞ bir iş var mı?
+    # 08.10: koşul "kisit ya da olcum metninde 07.09 geçiyor" idi ve üç kayıt eşleşiyordu —
+    # ikisi tarih rastlantısı ("API denetimi 07.09 02:30", "28g GSC, 07.09-04.10"; biri hâlâ
+    # koşan Başlık deneyi 2), üçüncüsü 16.08'de yapılmış ada başlığı işi. Karne üçünü de
+    # "(çürük) … ikinci başlık işi: ada sayfası başlığı" diye basıyordu. Şimdi üç şart birden:
+    # kayıt çürük, kısıt cümlesi 07.09'u anıyor ve iş hâlâ "bakılacak" diye bekliyor.
     for k in KD["kaldiraclar"]:
         if k["ad"] == "Ev sahibi dilli başlık şablonu":
             continue  # bu kayıt donmanın kendisi, iş değil
-        if "07.09" in k.get("kisit", "") or "07.09" in k.get("olcum", ""):
+        _kisit = k.get("kisit", "")
+        if k.get("durum") == "curuk" and "07.09" in _kisit and "bakılacak" in _kisit:
             # Kaydın adı çürük kaldıracın adı (ör. canonical); iş o değil, kısıt
             # cümlesinin işaret ettiği başlık işi. Ad yalnız kaynak olarak geçer.
             ekle(TITLE_DONUK,
@@ -524,16 +725,19 @@ if t_ss != t_ci:
 # duruyordu; o alan takvime girmediği için 21.09 ve 05.10 okumaları da böyle kaçmıştı
 # (defter: okuma_0710 "İlk okuma (21.09/05.10 yapılmamıştı)"). Yeni tarihli iş için
 # koda dokunmak gerekmesin: deftere "takvim" yaz, üreticiyi koş.
+# İsteğe bağlı alanlar: "oncelik" (aynı gün içinde sıra; küçük önce, varsayılan 2) ve
+# "bitis" (ISO; günlerce süren iş tek satırda durur, tarih = ilk gün).
 for k in KD.get("kaldiraclar", []):
     for t_ in k.get("takvim", []) or []:
         try:
             _t = tarih_iso(t_["tarih"])
+            _b = tarih_iso(t_["bitis"]) if t_.get("bitis") else None
         except (KeyError, ValueError):
             UYARILAR.append(f"Defterde tarihi okunamayan takvim satırı: {k.get('ad', '—')[:60]}")
             continue
         ekle(_t, t_.get("is", "—"), t_.get("neden", k.get("ad", "—")),
              f"kaldirac-defteri.json '{k.get('ad', '—')[:70]}'", t_.get("kim", "Claude"),
-             oncelik=t_.get("oncelik", 2))
+             oncelik=t_.get("oncelik", 2), bitis=_b)
 
 # ---------------- sırala, yaz ----------------
 ISLER.sort(key=lambda k: (k["tarih"], k["_oncelik"]))
@@ -546,7 +750,8 @@ if KALAN == 0:
                     "anlamsız, yeni kuyruk açılırsa yeniden hesaplanır.")
 elif ORT_ISTEK is not None and ORT_ISTEK < KOTA_GUN and DAMLA_BIT_GOZLENEN and DAMLA_BIT:
     UYARILAR.append(
-        f"Gözlenen tempo kotanın altında: {', '.join(f'{g} günü {n} istek' for g, n in sorted(ISTEK_GUN.items()))} "
+        f"Gözlenen tempo kotanın altında: "
+        f"{', '.join(f'{g} günü {n} istek' for g, n in sorted(ISTEK_GUN.items(), key=lambda t: gg_aa(t[0])))} "
         f"(ortalama {tr_sayi(ORT_ISTEK, 1)}); bu tempoyla damla {tr_tarih(DAMLA_BIT_GOZLENEN)} günü biter, "
         f"kotayla {tr_tarih(DAMLA_BIT)}. Düşük günün sebebi kayan 24 saat sınırıydı, kalıcı tempo değil.")
 UYARILAR.append(f"GSC verisi {GSC_GECIKME} gün geriden gelir; pencere hesapları buna göre kaydırıldı.")
@@ -555,12 +760,19 @@ CIKTI = {
     "guncelleme": iso(BUGUN),
     "uretim": "is-takvimi-uret.py",
     "damla": {
+        # acik = istek kuyruğu (dizin dışı + yeniden tarama). 08.10'a kadar bütün açık
+        # satırlar sayılıyordu; eski adres satırı artık kuyrukta değil, acik_tur'da ayrı durur.
         "acik": KALAN,
+        "acik_tur": {t: len(v) for t, v in ACIK_TUR.items()},
         "kota_gun": KOTA_GUN,
         "baslangic": iso(DAMLA_BAS),
         "bitis_kota": iso(DAMLA_BIT) if DAMLA_BIT else None,
         "gun_sayisi": DAMLA_GUN,
+        # gün → o gün giden bütün istekler (damla + kuyruk dışı + deney); kota ortak
         "istek_gunluk": ISTEK_GUN,
+        "kuyruk_disi_istek": KUYRUK_DISI_ISTEK,           # "- [~] … ← GG.AA istek gönderildi" (eski adres)
+        "deney_istek": sum(DENEY_ISTEK_GUN.values()),     # deney2-yeniden-tarama.tsv istek_zamani
+        "deney_istek_gunluk": {f"{g:%d.%m}": n for g, n in sorted(DENEY_ISTEK_GUN.items())},
         "ortalama_istek": round(ORT_ISTEK, 1) if ORT_ISTEK is not None else None,
         "bitis_gozlenen": iso(DAMLA_BIT_GOZLENEN) if DAMLA_BIT_GOZLENEN else None,
         "kendiliginden_dizine_giren": KENDILIGINDEN,
@@ -583,8 +795,9 @@ with open(os.path.join(KOK, "is-takvimi.json"), "w", encoding="utf-8") as f:
     json.dump(CIKTI, f, ensure_ascii=False, indent=1)
     f.write("\n")
 
-print(f"is-takvimi.json: {len(ISLER)} iş, damla {KALAN} açık → {DAMLA_BAS:%d.%m}–"
+_tur_ozet = ", ".join(f"{TUR_AD[t]} {len(v)}" for t, v in ACIK_TUR.items())
+print(f"is-takvimi.json: {len(ISLER)} iş, istek kuyruğu {KALAN} açık ({_tur_ozet}) → {DAMLA_BAS:%d.%m}–"
       f"{DAMLA_BIT:%d.%m} (kota {KOTA_GUN}/gün)" if DAMLA_BIT else
-      f"is-takvimi.json: {len(ISLER)} iş, damla kuyruğu boş")
+      f"is-takvimi.json: {len(ISLER)} iş, istek kuyruğu boş ({_tur_ozet})")
 for u in UYARILAR:
     print("UYARI:", u)

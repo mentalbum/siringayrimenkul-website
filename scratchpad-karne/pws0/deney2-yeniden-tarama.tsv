@@ -1,0 +1,128 @@
+# Başlık deneyi 2 — iki kola EŞLİ yeniden tarama isteği sırası ve maruz kalma kaydı (08.10.2026)
+# NEDEN: yeni başlık 07.10 01:16'da (06.10 22:16Z) yayına girdi; 08.10 00:5x API okumasında 50 tedavi sayfasının
+#   yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Taranmamış sayfa tedavi görmüş sayılmaz.
+#   Aynı yayın bütün site sayfalarının gövdesini de değiştirdi; yalnız tedaviyi taratmak kollar arasına ikinci fark koyar.
+# KURAL:
+#   1. Her gün tedavi + kontrol ÇİFT olarak gider (cift sütunu); günde 11 istek, sira sütunu sırasıyla (90 istek, yaklaşık 9 gün).
+#      Günün son isteği bir çifti bölecekse o çift ertesi güne kalır (o gün 10 istek): bir çiftin iki sayfası aynı gün istek alır.
+#      Kota bütün isteklerde ORTAK (ölçülen tavan günde 11; 04.10 ve 07.10'da 12. istek "Kota Aşıldı" verdi). Aynı güne başka
+#      istek işi yazılıysa önce o gider, deney kalan hakkı kullanır ve günün toplamı 11'i geçmez: 08.10'da 2 yeniden tarama
+#      isteğiyle (DIZIN-DAMLASI-31-08.md'deki açık 2 satır) birlikte deney isteği 9 (sira 1–9, ilk 5 çift).
+#   2. Her istekten ÖNCE tek adreslik API bakışı: node scripts/gsc-api.mjs denetle <url>
+#      son tarama >= 2026-10-06T22:17Z ise istek ATLANIR; o zaman ilk_tarama_yayin_sonrasi sütununa yazılır, yayin_sonrasi_taranmis "evet" olur.
+#   3. İstek gittiyse istek_zamani (UTC, ISO: 2026-10-08T07:35:00Z) yazılır; istekten SONRA tek adreslik bakışla tarama
+#      doğrulanır ve ilk_tarama_yayin_sonrasi doldurulur. Deney isteklerinin TEK kaydı bu sütundur: is-takvimi-uret.py günlük
+#      istek sayısını ve "bugün istek gitti mi"yi buradan okur (Türkiye saatiyle güne çevirir). Boş bırakılan istek sayılmaz.
+#      Gönderilen deney isteği DIZIN-DAMLASI-31-08.md'ye "- [x]" satırı olarak da YAZILMAZ: müdahale defteri onu dizin isteği
+#      sayar ve zaten dizinde olan 90 sayfayı "dizine girdi" diye başarıya yazar.
+#   4. Toplu günlük (deney2-tarama-gunlugu.sh, 100 API çağrısı) istek günlerinde KOŞMAZ; son istekten sonraki ilk isteksiz günde bir kez.
+#   5. Bu liste DIZIN-DAMLASI-31-08.md'ye "- [ ]" satırı olarak YAZILMAZ: karne o sayfaları "dizin kuyruğu" sayar.
+#      Bu sayfaların hepsi dizinde; istek yeniden tarama isteğidir.
+#   6. Eski adreslere (kiratli-residence, elit-nar-cicegi …) istek gönderilmez; yalnız aşağıdaki yeni adresler.
+# OKUMA: tıklanma oranı her sayfa için yalnız ilk_tarama_yayin_sonrasi'ndan sonraki günlerden hesaplanır, İKİ kolda da
+#   (baslik-deneyi-0710.json okuma_kurali).
+# SÜTUNLAR: sira = istek sırası ("-" = 08.10 okumasında yayın sonrası taranmıştı, istek gerekmiyor);
+#   yayin_sonrasi_taranmis = evet/hayir (her bakışta güncellenir); son_tarama_0810 = 08.10 00:5x API okuması (taban, değişmez);
+#   gos28 / tik28 = 07.09–04.10 Search Console sayfa gösterimi / tıkı (deney öncesi taban).
+# SINIRDA: çift 25 kontrol 2026-10-06T22:35:43Z — yayından sonraki ilk 45 dakikada taranmış; ilk bakışta yeniden doğrula.
+sira	cift	kol	url	yayin_sonrasi_taranmis	istek_zamani	ilk_tarama_yayin_sonrasi	son_tarama_0810	gos28	tik28
+1	1	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi	hayir			2026-09-27T06:57:38Z	2306	40
+2	1	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari	hayir			2026-09-30T16:08:34Z	1659	5
+3	2	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari	hayir			2026-10-03T22:18:07Z	841	5
+4	2	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi	hayir			2026-10-05T04:31:03Z	737	11
+5	3	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi	hayir			2026-09-28T04:53:01Z	732	15
+-	3	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-bahar-sitesi	evet		2026-10-07T20:47:52Z	2026-10-07T20:47:52Z	660	15
+6	4	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/canberk-sitesi	hayir			2026-10-01T14:05:24Z	660	9
+7	4	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri	hayir			2026-10-05T13:11:05Z	546	8
+8	5	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari	hayir			2026-09-05T01:39:31Z	509	8
+9	5	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/dema-park	hayir			2026-09-14T07:41:52Z	505	3
+10	6	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri	hayir			2026-09-23T15:57:07Z	504	6
+11	6	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/koz-modern	hayir			2026-09-27T08:04:02Z	476	3
+-	7	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/age-sitesi	evet		2026-10-07T06:05:20Z	2026-10-07T06:05:20Z	441	2
+12	7	kontrol	https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/address-eryaman	hayir			2026-10-06T18:26:37Z	439	12
+13	8	tedavi	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari	hayir			2026-09-26T06:28:55Z	433	2
+14	8	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yesil-gol-sitesi	hayir			2026-09-27T11:40:52Z	432	11
+15	9	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-life-residence	hayir			2026-09-19T06:51:38Z	427	1
+16	9	kontrol	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/eryaman-royal-city	hayir			2026-09-29T07:46:27Z	396	34
+17	10	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/dogapark-sitesi	hayir			2026-10-05T02:07:28Z	387	4
+18	10	kontrol	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-vadi-sitesi	hayir			2026-09-29T18:43:47Z	375	3
+19	11	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kiratli-residence	hayir			2026-09-13T08:46:36Z	370	2
+20	11	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/konum-eryaman	hayir			2026-09-26T16:49:47Z	325	19
+21	12	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serhatkent-sitesi	hayir			2026-09-18T08:35:10Z	320	3
+22	12	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sarigul-sitesi	hayir			2026-10-04T08:44:36Z	319	2
+23	13	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi	hayir			2026-09-18T23:32:20Z	301	6
+-	13	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence	evet		2026-10-07T03:01:49Z	2026-10-07T03:01:49Z	290	3
+24	14	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/terasevler-eryaman	hayir			2026-10-02T06:26:57Z	289	2
+25	14	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/hill-tower-goksu	hayir			2026-09-06T17:23:04Z	288	2
+26	15	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sutek-sitesi	hayir			2026-09-18T10:02:35Z	281	1
+27	15	kontrol	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/inci-park-evleri	hayir			2026-10-04T18:45:47Z	280	10
+28	16	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/basak-sitesi	hayir			2026-08-29T17:40:54Z	280	6
+29	16	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/mercan-smart-house	hayir			2026-09-07T17:07:19Z	276	48
+30	17	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bp-residence-eryaman	hayir			2026-10-04T20:02:02Z	269	6
+31	17	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/metromall-sitesi	hayir			2026-09-06T13:02:48Z	265	5
+32	18	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yurt-prestij-konutlari	hayir			2026-10-05T18:30:47Z	265	7
+33	18	kontrol	https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sertower-busidence	hayir			2026-09-23T11:33:31Z	259	9
+34	19	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ankapark-konutlari	hayir			2026-09-18T01:34:46Z	258	3
+-	19	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/ozar-sitesi	evet		2026-10-07T20:14:53Z	2026-10-07T20:14:53Z	257	2
+35	20	tedavi	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/demirel-park-evleri	hayir			2026-09-06T10:36:25Z	247	3
+36	20	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/happy-life-residence	hayir			2026-10-06T10:29:25Z	244	10
+37	21	tedavi	https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/pozitif-life	hayir			2026-08-28T06:43:39Z	241	1
+38	21	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/safir-rezidans	hayir			2026-08-29T13:49:19Z	235	2
+39	22	tedavi	https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/meydan-ada-sitesi	hayir			2026-10-02T13:59:34Z	234	4
+40	22	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/kur-sitesi-46496-ada	hayir			2026-09-23T12:02:21Z	228	3
+41	23	tedavi	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/ilona-konutlari	hayir			2026-10-05T11:26:26Z	226	0
+-	23	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-mira-evleri	evet		2026-10-07T09:03:06Z	2026-10-07T09:03:06Z	226	8
+42	24	tedavi	https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/penta-5	hayir			2026-10-04T23:08:49Z	225	0
+43	24	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/neva-prestij-konutlari	hayir			2026-09-25T21:28:36Z	213	5
+44	25	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/irem-konutlari	hayir			2026-10-04T18:04:15Z	212	6
+-	25	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-evler-sitesi	evet		2026-10-06T22:35:43Z	2026-10-06T22:35:43Z	210	1
+45	26	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bulvar-1071-sitesi	hayir			2026-09-19T09:42:04Z	207	4
+46	26	kontrol	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/ilke-sitesi	hayir			2026-09-25T14:51:33Z	207	6
+47	27	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/neopolitan-eryaman	hayir			2026-10-05T16:59:29Z	205	6
+48	27	kontrol	https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/bahcen-eryaman-konutlari	hayir			2026-10-02T13:01:36Z	204	1
+49	28	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-2-cumhuriyet-sitesi	hayir			2026-10-06T19:26:29Z	203	5
+50	28	kontrol	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/ornek-ari-sitesi	hayir			2026-10-05T16:00:05Z	201	20
+51	29	tedavi	https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/altas-rezidans	hayir			2026-09-17T20:09:39Z	200	7
+52	29	kontrol	https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/guzel-ankara-sitesi	hayir			2026-10-04T16:25:12Z	198	2
+53	30	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/elit-nar-cicegi	hayir			2026-09-25T19:54:47Z	195	6
+-	30	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/karma-modern	evet		2026-10-07T13:23:15Z	2026-10-07T13:23:15Z	194	18
+54	31	tedavi	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/bayrak-sitesi	hayir			2026-09-16T03:07:07Z	193	4
+55	31	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/ardic-sitesi	hayir			2026-09-12T19:47:24Z	190	7
+56	32	tedavi	https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/arya-nuans-residence	hayir			2026-09-22T23:50:44Z	187	1
+57	32	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/aksafak-sitesi	hayir			2026-08-31T10:43:27Z	187	3
+58	33	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/yeni-kaynak-sitesi	hayir			2026-09-14T17:52:56Z	182	2
+59	33	kontrol	https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/sakalar-tower	hayir			2026-10-01T15:57:07Z	179	0
+60	34	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/serpil-sitesi	hayir			2026-09-05T01:25:27Z	176	4
+61	34	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/gokdemir-premium	hayir			2026-10-04T16:32:37Z	176	5
+62	35	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/cizgi-otesi-residence	hayir			2026-09-18T21:14:39Z	174	0
+63	35	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/haznedaroglu-bloklari	hayir			2026-10-04T05:32:56Z	173	1
+64	36	tedavi	https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence	hayir			2026-09-17T20:30:22Z	167	2
+65	36	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/akasya-sitesi	hayir			2026-09-21T01:23:15Z	165	0
+66	37	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/gokdemirler-suit	hayir			2026-08-28T12:45:53Z	165	1
+-	37	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/metropark-plus	evet		2026-10-07T02:21:30Z	2026-10-07T02:21:30Z	165	6
+67	38	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/atakent-1-asiyan-sitesi	hayir			2026-10-06T18:35:07Z	164	6
+68	38	kontrol	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/mil-kooperatifi-sitesi	hayir			2026-09-19T09:43:06Z	160	5
+69	39	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/yeni-portakal-cicegi-sitesi	hayir			2026-09-23T16:36:51Z	159	1
+70	39	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/goksu-park-vadi-konutlari	hayir			2026-10-01T00:35:49Z	157	2
+71	40	tedavi	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/umar-sitesi	hayir			2026-09-13T09:40:06Z	156	0
+72	40	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/daldikenler-yasemin-evleri-sitesi	hayir			2026-10-04T00:06:50Z	156	13
+73	41	tedavi	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/bilgi-sevgi-hosgoru-sitesi	hayir			2026-09-17T02:37:09Z	155	2
+74	41	kontrol	https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/mesa-bloklari	hayir			2026-09-04T22:42:34Z	154	2
+75	42	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/atadostlar-sitesi	hayir			2026-09-12T04:20:58Z	153	1
+76	42	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/maybak-sitesi	hayir			2026-09-29T18:15:50Z	150	2
+77	43	tedavi	https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/asiyan-sitesi	hayir			2026-09-22T15:24:00Z	149	1
+78	43	kontrol	https://www.siringayrimenkul.com/mahalleler/yesilova-mahallesi/kayra-loft	hayir			2026-09-23T08:16:37Z	148	1
+79	44	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/address-goksu	hayir			2026-09-25T20:49:30Z	148	3
+80	44	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/golkent-1-sitesi	hayir			2026-09-03T04:46:59Z	147	2
+81	45	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan1-ayisigi-sitesi	hayir			2026-09-24T02:46:37Z	146	2
+82	45	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/elit-yasam-evleri	hayir			2026-09-20T11:16:15Z	146	5
+83	46	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/bordo-platinum-residence	hayir			2026-10-06T18:55:58Z	144	0
+-	46	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/akturk-sitesi	evet		2026-10-07T11:42:36Z	2026-10-07T11:42:36Z	143	1
+84	47	tedavi	https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/boyut-sitesi	hayir			2026-09-24T04:11:47Z	140	2
+85	47	kontrol	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/gul-sitesi	hayir			2026-09-15T05:18:07Z	140	4
+86	48	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/yeniceri-kule	hayir			2026-10-01T17:33:02Z	139	1
+87	48	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/elit-yasam-konutlari-2	hayir			2026-10-04T00:34:47Z	139	5
+-	49	tedavi	https://www.siringayrimenkul.com/mahalleler/yavuz-selim-mahallesi/endora-eryaman	evet		2026-10-07T15:58:00Z	2026-10-07T15:58:00Z	138	0
+88	49	kontrol	https://www.siringayrimenkul.com/mahalleler/guzelkent-mahallesi/erkent-sitesi	hayir			2026-10-05T10:39:35Z	138	1
+89	50	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/platin-2-konutlari	hayir			2026-10-05T11:19:00Z	137	0
+90	50	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/demirer-sitesi	hayir			2026-10-05T13:08:44Z	136	3
