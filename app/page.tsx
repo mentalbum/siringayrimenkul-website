@@ -341,7 +341,7 @@ export default function HomePage() {
             ))}
             .{" "}
             <Link href="/siteler" className="font-medium text-navy hover:text-gold-dark hover:underline">
-              Eryaman&apos;daki {toplamSite}&apos;den fazla site ve rezidansı
+              Eryaman&apos;daki site ve rezidansları
             </Link>{" "}
             tek tek tanıyoruz.
           </p>

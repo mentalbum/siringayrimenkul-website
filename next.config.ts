@@ -114,6 +114,10 @@ const nextConfig: NextConfig = {
       // (46432-1 kuralları 27.08 Yenimahalle kaldırmasıyla silindi — varisi ata-mahallesi'ndeydi.)
       { source: "/mahalleler/goksu/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
       { source: "/mahalleler/goksu-mahallesi/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
+      // 08.10.2026: 46479-2 de Göksu Metrokent'in 90b7f70'te düzeltilen eski
+      // parseli; iki biçim de 404 veriyordu (eski biçim 308 -> 404).
+      { source: "/mahalleler/goksu/adalar/46479-2", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
+      { source: "/mahalleler/goksu-mahallesi/adalar/46479-2", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
       { source: "/mahalleler/sehit-osman-avci/adalar/46656-5", destination: "/mahalleler/sehit-osman-avci-mahallesi/karma-modern", permanent: true },
       { source: "/mahalleler/sehit-osman-avci-mahallesi/adalar/46656-5", destination: "/mahalleler/sehit-osman-avci-mahallesi/karma-modern", permanent: true },
 
@@ -124,7 +128,14 @@ const nextConfig: NextConfig = {
       { source: "/mahalleler/altay/firat-life-style", destination: "/mahalleler/altay-mahallesi/firat-life-style-botanik", permanent: true },
       { source: "/mahalleler/altay/frekans-cadde", destination: "/mahalleler/altay-mahallesi/frekans-eryaman", permanent: true },
       { source: "/mahalleler/altay/kutlutas-villalari", destination: "/mahalleler/altay-mahallesi/kutlutas-sitesi", permanent: true },
-      { source: "/mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence", permanent: true },
+      // 08.10.2026: hedef PARSELİN değil ADIN sahibi. 23.07'de silinen kayıt
+      // 46651/6'yı (Alpak & Neve) anlatıyordu, o yüzden oraya yönlenmişti; ama
+      // "Bosphorus Ankara Konutları" adı bossphorus-konutlari kaydının takma adı
+      // (alternatifAdlar). 07.10 SERP'inde bu eski adres "Bossphorus Konutları"
+      // sorgusunda 2. sıradaydı ve tıklayanı Alpak & Neve sayfasına düşürüyordu.
+      // -mahallesi'li biçim 404 veriyordu; o da aynı hedefe bağlandı.
+      { source: "/mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari", permanent: true },
+      { source: "/mahalleler/sehit-osman-avci-mahallesi/bosphorus-ankara-konutlari", destination: "/mahalleler/sehit-osman-avci-mahallesi/bossphorus-konutlari", permanent: true },
       { source: "/mahalleler/devlet/cagrikent-sitesi", destination: "/mahalleler/devlet-mahallesi", permanent: true },
       { source: "/mahalleler/devlet/ornek-tes-is-sitesi", destination: "/mahalleler/devlet-mahallesi/tes-is-bloklari", permanent: true },
       { source: "/mahalleler/eryaman/ankapark-sitesi", destination: "/mahalleler/eryaman-mahallesi/ankapark-konutlari", permanent: true },
