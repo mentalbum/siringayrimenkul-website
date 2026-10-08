@@ -31,6 +31,8 @@ Doğrudan okunan ölçüm dosyaları (bu klasör):
                                      28daysAgo–yesterday penceresiyle aynı günler. tik-sonrasi-uret.py okur.)
   python3 sonuc-ozeti-uret.py     → sonuc-ozeti.json       (gsc-api'yi kendisi çağırır)
   python3 dogru-sayfa.py          → dogru-sayfa.json
+  python3 yansiz-ornek-uret.py    → yansiz-ornek.json      (dogru-sayfa.py'den sonra; 08.10: eski "doğru"
+                                    kayıtlardan sabit tohumla seçilmiş örneğin yeniden ölçüm okuması)
   python3 sayfa-turu-verimi.py    → sayfa-turu-verimi.json (sayfalar28.tsv)
   python3 ada-beklenti-uret.py    → ada-beklenti.json + ada-beklenti-gecmis.jsonl
                                     (gsc-q.mjs ile sayfa-sorgu28.tsv / sayfa-toplam28.tsv çeker;
@@ -84,6 +86,9 @@ hatirlanirlik direct_mobil_derin_28.etk_simdi; eryaman-emlakci mobil_haftalar[].
 yonetici-ozeti fark_7g.gurultu.bant (çipte "fark küçük, yorumlanmaz"; fark_7g.not yalnız ipucunda).
 YEDEK KİP: tik-sonrasi-uret.py ga4-temas'ı okuyamazsa temas_oturum null, sahibinden_cikis içi boş
 gelir; karne bunu "alan yok" sayar, form satırını eski tanım etiketiyle basar.
+Yansız örnek (08.10): yansiz-ornek.json isteğe bağlı. Dosya yoksa ya da olculen 0 ise "Sırayı hangi
+sayfamız tutuyor" panosundaki "Yansız örnek" paragrafı basılmaz, bölüm eski hâliyle çıkar. Paragraf
+basılıyorsa dosya bayatlık bekçisine de girer (guncelleme tarihi en yeni ölçümden eskiyse uyarı).
 
 Bayatlık bekçisi (08.10): veri-sagligi.json "kayit" değeri sonuclar-site-emlakci.jsonl'in
 dolu satır sayısından küçükse, ya da dogru-sayfa.json / yonetici-ozeti.json "guncelleme"
@@ -1599,6 +1604,96 @@ DS_SECILMIS = _secilmis_mi((_DS or {}).get("secilmis_yeniden_olcum")) or bool(_D
 _AY_AD = {"01": "Ocak", "02": "Şubat", "03": "Mart", "04": "Nisan", "05": "Mayıs", "06": "Haziran",
           "07": "Temmuz", "08": "Ağustos", "09": "Eylül", "10": "Ekim", "11": "Kasım", "12": "Aralık"}
 
+# 08.10 — YANSIZ ÖRNEK. "Üst sınır / alt sınır" aralığı seçici yeniden ölçümün izidir; gerçek oranın
+# nerede durduğunu söylemez. yansiz-ornek-uret.py, eski "doğru" kayıtlardan SABİT TOHUMLA seçilmiş
+# örneğin yeniden ölçümünü okur ve bozulma oranını yeniden ölçülmemiş kayıtlara yansıtır
+# (yansiz-ornek.json). Bütün rakamlar o dosyadan; burada elle rakam yok. Dosya yoksa ya da örnek
+# ölçülmediyse (olculen 0) hiçbir şey basılmaz. Cümleler ek almayan kalıpla ("N tanesi") kurulur.
+try:
+    _YN = json.load(open("yansiz-ornek.json"))
+    _YN = _YN if isinstance(_YN, dict) else None
+except Exception:
+    _YN = None
+# dogru-sayfa.py → SINIF_AD ile AYNI adlar (o betik içe aktarılamaz: adı tireli, modül düzeyinde
+# çalışır). dogru-sayfa.json bir sınıfa ad veriyorsa o ad kullanılır; bu sözlük yedektir.
+_YN_SINIF = {"dogru": "Doğru site sayfası", "eski": "Taşınmadan önceki adres",
+             "baska_site": "Başka bir site sayfamız", "ada": "Ada sayfamız", "mahalle": "Mahalle sayfamız",
+             "belirsiz": "Adresi doğrulanamayan", "dis": "Bize ait olmayan sonuç", "yok": "İlk 10′da yok"}
+
+
+def _yn_say(x):
+    """Sayıysa kendisi, değilse None (bool sayı sayılmaz)."""
+    return x if isinstance(x, (int, float)) and not isinstance(x, bool) else None
+
+
+def _yansiz_ornek_html(yn, sinif_ad, renk):
+    """Panoya düşen "Yansız örnek" paragrafı + bozulan sorguların listesi; basılacak şey yoksa ""."""
+    if not isinstance(yn, dict) or not _yn_say(yn.get("olculen")):
+        return ""
+    olc = yn["olculen"]
+    orn = _yn_say(yn.get("ornek")) or olc
+    gun = sorted(g for g in (yn.get("olcum_gunleri") or []) if isinstance(g, str) and len(g) >= 10)
+    tarih = ("" if not gun else f" (ölçüm {tr_tarih(gun[0])})" if gun[0] == gun[-1]
+             else f" (ölçüm {tr_tarih(gun[0])}–{tr_tarih(gun[-1])})")
+    c = [f"Daha önce doğru sayılan eski ölçümlerden rastgele seçilmiş {tr_sayi(olc)} sorgu yeniden ölçüldü."
+         if orn == olc else
+         f"Daha önce doğru sayılan eski ölçümlerden rastgele seçilmiş {tr_sayi(orn)} sorgunun "
+         f"{tr_sayi(olc)} tanesi yeniden ölçüldü."]
+    k, hala = _yn_say(yn.get("onceden_ilk3_dogru")), _yn_say(yn.get("hala_ilk3_dogru"))
+    if k and hala is not None:
+        dustu, yanlis = _yn_say(yn.get("ilk3ten_dustu")), _yn_say(yn.get("ilk3te_ama_yanlis_sayfa"))
+        ek = ([f"{tr_sayi(dustu)} tanesi ilk 3′ten düştü"] if dustu else []) + (
+            [f"{tr_sayi(yanlis)} tanesi ilk 3′te ama yanlış sayfayla çıkıyor"] if yanlis else [])
+        c.append(f"Önceden ilk 3′te doğru sayfayla çıkan {tr_sayi(k)} sorgunun "
+                 f"<strong>{tr_sayi(hala)} tanesi hâlâ öyle</strong>" + ("; " + ", ".join(ek) if ek else "") + ".")
+    ys = yn.get("yansitma") if isinstance(yn.get("yansitma"), dict) else {}
+    tah = []
+    for ad, a_t, a_k in (("ilk 3 payı", "tahmini_ilk3_pay", "karnedeki_ilk3_pay"),
+                         ("doğru sayfa payı", "tahmini_dogru_sayfa_pay", "karnedeki_dogru_sayfa_pay")):
+        t, kr = _yn_say(ys.get(a_t)), _yn_say(ys.get(a_k))
+        if t is not None:
+            tah.append(f"{ad} yaklaşık <strong>%{round(t)}</strong>"
+                       + (f" (karnede %{round(kr)})" if kr is not None else ""))
+    if tah:
+        c.append("Bu orana göre kaba tahmin: " + ", ".join(tah) + ".")
+    ar = yn.get("hala_ilk3_dogru_aralik95")
+    if isinstance(ar, list) and len(ar) == 2 and all(_yn_say(x) is not None for x in ar):
+        yz = _yn_say(yn.get("hala_ilk3_dogru_yuzde"))
+        c.append("Örnek küçük olduğu için aralık geniş: “hâlâ öyle” payı "
+                 + (f"%{round(yz)} ölçüldü, gerçekte " if yz is not None else "gerçekte ")
+                 + f"%{round(ar[0])} ile %{round(ar[1])} arası olabilir.")
+    # bozulanlar: önceden ilk 3′te doğru sayfayla çıkıp şimdi öyle çıkmayan sorgular
+    q_of = {x.get("s"): x.get("q") for x in (yn.get("satirlar") or []) if isinstance(x, dict)}
+    sira = lambda p: f"{p}." if isinstance(p, int) and not isinstance(p, bool) and 0 < p < 99 else "yok"
+
+    def _ad(s):
+        # okunur ad: örnek satırındaki sorgudan ("Tekser Blokları emlakçı" → "Tekser Blokları");
+        # sorgu yoksa slug'dan ("tekser-bloklari" → "Tekser Bloklari")
+        q = q_of.get(s)
+        if isinstance(q, str) and q.strip():
+            return re.sub(r"\s+emlakçı\s*$", "", q.strip())
+        return str(s).split("/")[-1].replace("-", " ").title()
+
+    li = ""
+    for b in (x for x in (yn.get("bozulanlar") or []) if isinstance(x, dict) and x.get("s")):
+        sn, ss = b.get("simdi_sinif"), b.get("simdi_sira")
+        if sn == "dogru":       # sayfa doğru, sıra 4–10
+            etiket, cls = "doğru sayfa, ilk 3 dışı", "orta"
+        else:
+            etiket, cls = sinif_ad.get(sn) or _YN_SINIF.get(sn) or str(sn or "—"), renk.get(sn, "nul")
+        mah = MAH_AD.get(str(b["s"]).split("/")[0], "")
+        li += (f'<li><span><strong>{esc(_ad(b["s"]))}</strong> '
+               f'<span class="alt">{esc(mah)}{" · " if mah else ""}{sira(b.get("onceki_sira"))} → {sira(ss)}</span></span>'
+               f'<span class="chip {cls}">{esc(etiket)}</span></li>')
+    n_boz = li.count("<li>")
+    liste = (f'<details style="margin:10px 0 0"><summary><strong>Bozulan {tr_sayi(n_boz)} sorgu</strong> '
+             f'<span class="alt">(önceki sıra → şimdiki sıra)</span></summary><ul>{li}</ul></details>'
+             if n_boz else "")
+    return (f'<p class="alt" style="margin:10px 0 0"><strong>Yansız örnek{tarih}.</strong> {" ".join(c)}</p>'
+            + liste)
+
+
+_ds_yansiz = ""
 if _DS:
     _RENK = {"dogru": "iyi", "eski": "kotu", "ada": "orta", "mahalle": "orta",
              "baska_site": "orta", "belirsiz": "nul", "dis": "kotu", "yok": "kotu"}
@@ -1672,6 +1767,10 @@ if _DS:
         if DS_SECILMIS and _alt_sinir is not None and _alt_sinir < _pay:
             _ds_yas.append(f"<strong>%{_pay} üst sınır, %{_alt_sinir} alt sınırdır; gerçek oran arada.</strong>")
     _ds_yas_p = f'<p class="alt" style="margin:10px 0 0">{" ".join(_ds_yas)}</p>' if _ds_yas else ""
+    _ds_sinif_ad = {x["k"]: _DS_AD.get(x["k"], x["ad"]) for x in list(_DS["hepsi"]) + list(_DS.get("ilk3") or [])}
+    _ds_yansiz = _yansiz_ornek_html(_YN, _ds_sinif_ad, _RENK)
+    # satır sonu da paragrafla gelir: dosya yokken pano eski çıktıyla bayt bayt aynı kalsın
+    _ds_yansiz_satir = f"\n      {_ds_yansiz}" if _ds_yansiz else ""
     dogrusayfa_html = f"""
   <h2>Sırayı hangi sayfamız tutuyor</h2>
   <p class="not">“İlk 3′teyiz” demek “doğru sayfa çıkıyor” demek değil. Site adını arayan
@@ -1684,7 +1783,7 @@ if _DS:
       kazanılmış (%{_pay}); kalan <strong>{_i3y} tanesinde</strong> sıra bizde ama açılan sayfa
       aranan site değil.{_i3_bel_cumle}</p>
       <div class="bar" style="height:14px"><i style="width:{_pay}%"></i></div>
-      {_ds_yas_p}
+      {_ds_yas_p}{_ds_yansiz_satir}
       <p class="alt" style="margin:10px 0 0">Yanlış sayfanın en yoğun olduğu mahalleler:
       {_yanlis_mah}.</p>
     </div>
@@ -2567,7 +2666,8 @@ if GERIDE:
         f"Karne {tr_sayi(GERIDE)} ölçüm geride: son ölçümler rakamlara henüz işlenmedi (ölçüm dosyasında "
         f"{tr_sayi(_OLCUM_SATIR)} kayıt var, hesaplar {tr_sayi(_vs_kayit)} kayıtla yapılmış). Üst üreticiler "
         f"yeniden koşmalı; o zamana kadar tepe rakamlar eski ölçümü gösterir.")
-for _dosya, _j in (("dogru-sayfa.json", _DS), ("yonetici-ozeti.json", _YO)):
+for _dosya, _j in (("dogru-sayfa.json", _DS), ("yonetici-ozeti.json", _YO),
+                   ("yansiz-ornek.json", _YN if _ds_yansiz else None)):
     _g = (_j or {}).get("guncelleme")
     if _g and _EN_YENI_OLCUM and str(_g)[:10] < _EN_YENI_OLCUM:
         KARNE_UYARI.append(

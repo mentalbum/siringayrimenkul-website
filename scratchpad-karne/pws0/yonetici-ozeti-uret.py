@@ -23,6 +23,12 @@ bu betik de aynı dosyayı kendi şemasıyla yazıyordu — son koşan kazanıyo
 bölüm boş kalıyordu; o yüzden yazma kaldırıldı. Eşleme FARK_KAYNAK'ta; seri
 yoksa fark null, uydurulmaz.
 
+Yansız örnek (08.10): 1. ve 2. kartın "ne demek" metnine, yansiz-ornek.json varsa ve yansitma
+alanı doluysa tek cümle eklenir: "Yansız örneğe göre gerçek değer yaklaşık %X." (yansitma.
+tahmini_ilk3_pay / tahmini_dogru_sayfa_pay, tam sayıya yuvarlanır; ayrıntıda yansiz_tahmin).
+2. kartta bu cümle "Gerçek oran %A ile %B arasındadır." kapanışının YERİNE geçer (ikisi birlikte
+çelişir). Kartın deger/gosterim alanı DEĞİŞMEZ, seri aynı tanımla sürer. Dosya yoksa eski metin.
+
 Ayrıca:
   "bu hafta ne yapıldı"    ← PROTOKOL-gece.md'nin son 7 gündeki bölüm başlıkları
                              (betikle ayıklanır; gün başına bir madde, en yeni 3 gün)
@@ -337,6 +343,35 @@ def fark_kur(gecmis, k, birim):
 
 
 # ---------------------------------------------------------------------------
+# Yansız örnek (08.10) — iki tepe SERP kartına "gerçek değer yaklaşık %X" cümlesi
+# ---------------------------------------------------------------------------
+# İki tepe SERP rakamı seçici yeniden ölçümle şişiyordu (Ekim'de yalnız sorunlu çıkanlar yeniden
+# ölçüldü). yansiz-ornek-uret.py, eski "doğru" kayıtlardan sabit tohumla seçilmiş örneğin yeniden
+# ölçümünü okur ve bozulma oranını yeniden ölçülmemiş kayıtlara yansıtır (yansiz-ornek.json →
+# yansitma). Burada yalnız OKUNUR: kartın açıklamasına tek cümle düşer, kartın deger/gosterim alanı
+# değişmez (zaman serisi aynı tanımla sürsün). Dosya yoksa, örnek ölçülmediyse (olculen 0) ya da
+# yansıtma alanı boşsa cümle basılmaz, kart eski metniyle kalır.
+YANSIZ_DOSYA = "yansiz-ornek.json"
+YANSIZ_ALAN = {"ilk3_pay": "tahmini_ilk3_pay", "dogru_sayfa_pay": "tahmini_dogru_sayfa_pay"}
+
+
+def yansiz_tahmin(k):
+    """Kart k için yansız örnekten yansıtılmış tahmin (ham sayı, ör. 70.1) ya da None."""
+    try:
+        y = json.load(open(yol(YANSIZ_DOSYA), encoding="utf-8"))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return None
+    if not isinstance(y, dict) or not y.get("olculen") or not isinstance(y.get("yansitma"), dict):
+        return None
+    v = y["yansitma"].get(YANSIZ_ALAN.get(k))
+    return v if isinstance(v, (int, float)) and not isinstance(v, bool) else None
+
+
+def yansiz_cumle(v):
+    return f" Yansız örneğe göre gerçek değer yaklaşık %{round(v)}." if v is not None else ""
+
+
+# ---------------------------------------------------------------------------
 # Rakamlar
 # ---------------------------------------------------------------------------
 RAKAMLAR = []
@@ -355,12 +390,13 @@ def ekle(k, baslik, deger, gosterim, ne_demek, kaynak, ayrinti=None, birim=None)
 try:
     _n, _i3 = ilk3_payi()
     _pay = yuzde(_i3, _n)
+    _yt = yansiz_tahmin("ilk3_pay")
     ekle("ilk3_pay", "Site sorgularında ilk 3", _pay, f"%{_pay}",
          f"Ölçülen {tr_sayi(_n)} site sorgusu içinde ilk 3 sıradan birini tuttuğumuz "
          f"sorgu sayısı {tr_sayi(_i3)}. (Sıra var demek doğru sayfa çıkıyor demek değil; "
-         f"o ayrım 2. rakamda.)",
+         f"o ayrım 2. rakamda.)" + yansiz_cumle(_yt),
          "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
-         {"sorgu": _n, "ilk3": _i3}, birim="%")
+         {"sorgu": _n, "ilk3": _i3, "yansiz_tahmin": _yt}, birim="%")
 except Exception as e:  # dosya yoksa uydurma, boş bırak
     ekle("ilk3_pay", "Site sorgularında ilk 3", None, None,
          "Ölçüm dosyası okunamadı.", "sonuclar-site-emlakci.jsonl + tur-*.json", birim="%")
@@ -390,6 +426,7 @@ try:
     _sy = _DS.get("secilmis_yeniden_olcum") or {}
     _yk = _DS.get("yas_kiyasi") or {}
     _hukum = _yk.get("hukum")
+    _yt = yansiz_tahmin("dogru_sayfa_pay")
     if _hukum in ("ust_sinir", "yas_ayrisik"):
         _tz, _es, _kova = _yk["taze"], _yk["eski"], _yk["taze_kova"]
         _ay = AY_AD[int(_kova[5:7]) - 1]
@@ -413,11 +450,14 @@ try:
             if _secim is not None and _secim >= SECICI_ESIK:
                 _ne += " Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı."
             # aralık yalnız bilgi veriyorsa basılır: yalnız birkaç sorunlu sıra yeniden ölçüldüyse taze
-            # oran çok düşük çıkar, "%6 ile %91 arası" okuyana bir şey söylemez
-            if 0 < _pay - _to <= ARALIK_EN_COK:
-                _ne += f" Gerçek oran %{_to} ile %{_pay} arasındadır."
-            else:
-                _ne += " Gerçek oran bundan düşük olabilir."
+            # oran çok düşük çıkar, "%6 ile %91 arası" okuyana bir şey söylemez.
+            # 08.10: yansız örnek varsa "gerçek oran" kapanışı onun cümlesidir (aşağıda); aralık ya da
+            # "düşük olabilir" cümlesi onunla birlikte basılmaz, ikisi aynı soruya iki cevap olur.
+            if _yt is None:
+                if 0 < _pay - _to <= ARALIK_EN_COK:
+                    _ne += f" Gerçek oran %{_to} ile %{_pay} arasındadır."
+                else:
+                    _ne += " Gerçek oran bundan düşük olabilir."
         else:
             _ne += f" Ölçümler aynı yaşta değil: {_olcum}doğru (%{_eo}) ve bunlar yeniden ölçülmedi."
             if _secim is not None and -_secim >= SECICI_ESIK:
@@ -425,11 +465,12 @@ try:
                         f"{tr_sayi(_sy['onceden_dogru'])} tanesi önceden de doğruydu, yani çoğunlukla doğru çıkanlar "
                         f"yeniden ölçüldü; sorunlu çıkanlar yeniden ölçülmedi.")
             _ne += " Eski ölçümler tazelenince oran iki yöne de değişebilir."
+    _ne += yansiz_cumle(_yt)
     ekle("dogru_sayfa_pay", "İlk 3 içinde doğru sayfa", _pay, f"%{_pay}", _ne,
          "dogru-sayfa.json", {"ilk3_dogru": _d3, "ilk3_toplam": _t3, "adresi_dogrulanamayan": _bel,
                               "olcum_yasi": _oy or None, "secilmis_yeniden_olcum": _sy or None,
                               "yas_kiyasi": _yk or None, "yas_hukmu": _hukum,
-                              "guncelleme": _DS.get("guncelleme")},
+                              "guncelleme": _DS.get("guncelleme"), "yansiz_tahmin": _yt},
          birim="%")
     # 1. rakamın paydası ile bu dosyanın toplamı farklıysa açıkça söyle (505 / 504 vakası)
     if RAKAMLAR[0]["deger"] is not None and _DS.get("toplam") != RAKAMLAR[0]["ayrinti"]["sorgu"]:

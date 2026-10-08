@@ -345,11 +345,12 @@
    "kisit": "Yansız rakam gelene kadar karnedeki iki tepe SERP rakamı üst sınır diye okunur, 7 günlük fark oku yorumlanmaz. Yeniden ölçüm turu yalnız sorunluları değil kuyruğun tamamını, rastgele sırayla döner.",
    "sonraki_olcum": "yeniden-olcum-kuyrugu-0810.json: önce yansız 30'luk örnek (291 kayıttan sabit tohumla) + gerçek href isteyen 31 sorgu; bozulma oranı 291 kayda yansıtılıp buraya yazılır. Sonra ada 6 ve kalan 178 bayat kayıt (gecede en çok ~100 site sorgusu). Deney çiftleri ayrı takvimde.",
    "nerede": "scratchpad-karne/pws0/yeniden-olcum-kuyrugu-0810.json",
+   "okuma_0810": "Yansız 30'luk örnek 08.10'da ölçüldü (gerçek bağ kanalı, robot duvarı yok): önceden ilk 3'te doğru 28 sorgunun 21'i hâlâ öyle (%75; %95 aralık 57–87), 2'si ilk 3'te ama yanlış sayfa, 5'i ilk 3'ten düştü. Kaba yansıtma: ilk 3 payı ~%70 (karnede %75), doğru sayfa ~%87 (karnede %91).",
    "takvim": [
     {
      "tarih": "2026-10-09",
      "kim": "Claude",
-     "is": "Yansız 30'luk örnek + 31 gerçek-href sorgusu (yeniden-olcum-kuyrugu-0810.json: yansiz_ornek_30, oncelik_gercek_href). Kayıt ekle-deney-kompakt.py ile; robot duvarında dur.",
+     "is": "Kalan gerçek-bağ sorguları (ada 5 + Yeşilova dilimi 21): yeniden-olcum-kuyrugu-0810.json; 08.10'da 44. sorguda robot duvarı çıktı, yansız örnek ve 8 öncelikli sorgu tamamlandı.",
      "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır."
     }
    ]
