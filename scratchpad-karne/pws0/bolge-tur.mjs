@@ -11,6 +11,9 @@
 //   PW_KOK=<playwright-core kurulu dizin> node bolge-tur.mjs [MAX=n] → kendi Chromium'uyla sürer.
 //     NOT 23.08: konteynerden denendi, çıkış politikası google.com'u 403'lüyor — bu kip ancak
 //     google.com'a çıkışı olan bir ortamda işe yarar. Tekrar deneyip vakit yakma.
+// 08.10 (karne incelemesi ana-3): çıkarıcı alan adını <cite>'tan okur (şifreli `/goto?url=…` bağlarında
+//   eski seçici n=0 veriyordu) ve 5'ten az sonuç bulursa {hata:"cikarim", n, tt} döner. O çıktı ve n<5
+//   "ilk 10 dışı" DEĞİLDİR; iki kipte de kayıt yazılmaz. Gerçek SERP'te henüz denenmedi (ilk turda n'e bak).
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -18,7 +21,10 @@ import { createRequire } from 'node:module';
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(DIR, 'sonuclar-bolge.jsonl');
-const BUGUN = new Date().toISOString().slice(0, 10);
+// 08.10: tarih İstanbul gününden alınır. Eskiden UTC'den alınıyordu (toISOString): gece 00:00–03:00 arası
+// koşan tur bir önceki günün damgasını yazıyor, "bugün ölçülenler" süzgeci de dünün kayıtlarını bugünkü
+// sanıp o sorguları atlıyordu. Python ekleyiciler zaten yerel tarih yazıyor. en-CA biçimi = YYYY-AA-GG.
+const BUGUN = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 const MAX = Number(process.env.MAX || Infinity);
 
 const TUM_NOKTALAR = [
@@ -102,7 +108,7 @@ function uule(lat, lng) {
   return 'a+' + encodeURIComponent(Buffer.from(metin).toString('base64'));
 }
 
-const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a[href^="http"]')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){try{const u=new URL(x.href);const d=u.hostname.replace('www.','');const k=d+u.pathname;if(!G.has(k)){G.add(k);T.push({d,p:u.pathname,t:x.querySelector('h3').innerText})}}catch(e){}}const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const TUR=d=>/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\\.com\\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\\n/g,' | ');const m=t.match(/(\\d[.,]\\d)\\s*\\((\\d[\\d.]*)\\)/);const kat=(t.match(/\\)\\s*·\\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});const loc=(()=>{for(const s of ['.GNm3Qb .AhYzQb','.AhYzQb','.dfB0uf','#swml']){const e=document.querySelector(s);if(e&&e.innerText.trim())return e.innerText.trim().slice(0,60)}const re=/^\\d{5},\\s*[^,]+,\\s*[^,]+$|Konumunuza göre|^Konum:/;const h=[...document.querySelectorAll('span,div')].find(x=>x.children.length===0&&re.test((x.innerText||'').trim()));return h?h.innerText.trim().slice(0,60):''})();return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),ilk8u:T.slice(0,8).map(x=>x.d+x.p+'#'+TUR(x.d)),hk,saat:new Date().toISOString(),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
+const OLCUM_JS = `(()=>{let N=[...document.querySelectorAll('.dbg0pd')].map(e=>e.innerText.trim());if(!N.length)N=[...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map(e=>e.innerText.trim());const B=N.findIndex(x=>/Şirin/i.test(x));const a=[...document.querySelectorAll('#rso a')].filter(x=>x.querySelector('h3'));const T=[];const G=new Set();for(const x of a){const c=x.closest('[data-hveid],div.MjjYud,div.g')||x.parentElement;const cs=c?[...c.querySelectorAll('cite')]:[];const ci=cs.find(e=>/^https?:\\/\\//.test(e.innerText.trim()))||cs[0]||null;const ct=ci?ci.innerText.trim():'';let h=null;try{const u=new URL(x.href);if(/^https?:$/.test(u.protocol)&&!/google\\./.test(u.hostname))h=u}catch(e){}let d='',p='';if(/^https?:\\/\\//.test(ct)){const s=ct.split('›').map(y=>y.trim());try{d=new URL(s[0]).hostname.replace('www.','')}catch(e){d=s[0]}p=h?h.pathname:'/'+s.slice(1).filter(y=>y!=='...'&&y!=='…').join('/')}else if(h){d=h.hostname.replace('www.','');p=h.pathname}else{d='?'+ct.slice(0,30)}const t=x.querySelector('h3').innerText;const k=d+p+(h?'':t);if(!G.has(k)){G.add(k);T.push({d,p,t})}}if(T.length<5)return JSON.stringify({hata:'cikarim',n:T.length,tt:document.title.slice(0,60)});const i=T.findIndex(x=>x.d==='siringayrimenkul.com');const TUR=d=>d[0]==='?'?'belirsiz':/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\\.com\\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\\n/g,' | ');const m=t.match(/(\\d[.,]\\d)\\s*\\((\\d[\\d.]*)\\)/);const kat=(t.match(/\\)\\s*·\\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});const loc=(()=>{for(const s of ['.GNm3Qb .AhYzQb','.AhYzQb','.dfB0uf','#swml']){const e=document.querySelector(s);if(e&&e.innerText.trim())return e.innerText.trim().slice(0,60)}const re=/^\\d{5},\\s*[^,]+,\\s*[^,]+$|Konumunuza göre|^Konum:/;const h=[...document.querySelectorAll('span,div')].find(x=>x.children.length===0&&re.test((x.innerText||'').trim()));return h?h.innerText.trim().slice(0,60):''})();return JSON.stringify({hp:N.length>0,hs:B+1,hl:N.slice(0,6),sira:i+1,u:i>=0?T[i].p:null,bas:i>=0?T[i].t:null,ilk3u:T.slice(0,3).map(x=>x.d+x.p),ilk8u:T.slice(0,8).map(x=>x.d+x.p+'#'+TUR(x.d)),hk,saat:new Date().toISOString(),n:T.length,loc,tt:document.title.slice(0,45)})})()`;
 
 if (process.argv.includes('--listele')) {
   console.log('# Bölge turu URL listesi (taze uule — bu listeyi her turda yeniden üret)');
@@ -117,6 +123,7 @@ if (process.argv.includes('--listele')) {
   console.log(OLCUM_JS);
   console.log('\n# Kayıt biçimi (JS çıktısındaki tt YAZILMAZ; kanal: "ev"):');
   console.log('{"d":"<bugün>","kanal":"ev","nokta":"<nokta>","lat":N,"lng":N,"q":"<sorgu>",...JS çıktısı}');
+  console.log('# UYARI: JS çıktısında "hata" alanı varsa ya da n<5 ise kayıt YAZMA; "ilk 10 dışı" değildir (çıkarım hatası: boş/yarım SERP ya da değişen DOM). 4 sn daha bekleyip JS\'i bir kez daha koş; yine hata ise o sorguyu atla, not düş. Üst üste 3 sorguda hata çıkarsa turu durdur (çıkarıcı bozulmuş olabilir).');
   console.log('# hk[].durum ("Açık"/"Kapalı ⋅ Açılış saati…") ve saat alanı JS çıktısında gelir; silme — mesai içi/dışı kıyası buna bakıyor.');
   console.log('# sira:0 ise aynı URL + "&start=10" ile 2. sayfaya bakılır, kayda s2sira eklenir (0=orada da yok).');
   process.exit(0);
@@ -138,18 +145,36 @@ const CIKAR = () => {
   const yedek = N.length === 0;
   if (yedek) N = [...document.querySelectorAll('div[role="heading"][aria-level="3"]')].map((e) => e.innerText.trim());
   const B = N.findIndex((x) => /Şirin/i.test(x));
-  const a = [...document.querySelectorAll('#rso a[href^="http"]')].filter((x) => x.querySelector('h3'));
+  // 08.10 (karne incelemesi ana-3): Google organik bağları `/goto?url=…` (şifreli) olunca eski seçici
+  // (`#rso a[href^="http"]` + hostname) n=0 veriyordu. Alan adı artık önce sonucun kapsayıcısındaki <cite>
+  // metninden okunur (serp-cikarici-0710.js ile aynı mantık); cite adres taşımıyorsa ve bağ google dışıysa
+  // bağdan. Yol: bağ gerçek adresse oradan, değilse cite kırıntısından (kırıntı yolu güvenilmez).
+  // Hiçbiri yoksa sonuç yine SAYILIR (alan adı "?…"), yoksa sıralar kayar.
+  // OLCUM_JS ile bu işlev AYNI çıkarımı yapar; birini değiştirirsen öbürünü de değiştir.
+  const a = [...document.querySelectorAll('#rso a')].filter((x) => x.querySelector('h3'));
   const T = []; const G = new Set();
   for (const x of a) {
-    try {
-      const u = new URL(x.href); const d = u.hostname.replace('www.', ''); const k = d + u.pathname;
-      if (!G.has(k)) { G.add(k); T.push({ d, p: u.pathname, t: x.querySelector('h3').innerText }); }
-    } catch (e) {}
+    const c = x.closest('[data-hveid],div.MjjYud,div.g') || x.parentElement;
+    const cs = c ? [...c.querySelectorAll('cite')] : [];
+    const ci = cs.find((e) => /^https?:\/\//.test(e.innerText.trim())) || cs[0] || null;
+    const ct = ci ? ci.innerText.trim() : '';
+    let h = null;
+    try { const u = new URL(x.href); if (/^https?:$/.test(u.protocol) && !/google\./.test(u.hostname)) h = u; } catch (e) {}
+    let d = '', p = '';
+    if (/^https?:\/\//.test(ct)) {
+      const s = ct.split('›').map((y) => y.trim());
+      try { d = new URL(s[0]).hostname.replace('www.', ''); } catch (e) { d = s[0]; }
+      p = h ? h.pathname : '/' + s.slice(1).filter((y) => y !== '...' && y !== '…').join('/');
+    } else if (h) { d = h.hostname.replace('www.', ''); p = h.pathname; } else { d = '?' + ct.slice(0, 30); }
+    const t = x.querySelector('h3').innerText; const k = d + p + (h ? '' : t);
+    if (!G.has(k)) { G.add(k); T.push({ d, p, t }); }
   }
+  // 5'ten az sonuç = çıkarım hatası (boş/yarım SERP, değişen DOM). "İlk 10 dışı" DEĞİLDİR; kayıt yazılmaz.
+  if (T.length < 5) return { hata: 'cikarim', n: T.length, tt: document.title.slice(0, 60) };
   const i = T.findIndex((x) => x.d === 'siringayrimenkul.com');
   // 07.10: kutu kartı alanları (puan/yorum/kategori/açıklık) + ilk 8 organik (tür etiketli) + saat —
   // Şirin/Efor yorum farkı ve 'arama anında açık' sinyali seri olarak izlensin diye.
-  const TUR=d=>/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\.com\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\n/g,' | ');const m=t.match(/(\d[.,]\d)\s*\((\d[\d.]*)\)/);const kat=(t.match(/\)\s*·\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});
+  const TUR=d=>d[0]==='?'?'belirsiz':/sahibinden|hepsiemlak|emlakjet|zingat|endeksa|trovit/.test(d)?'portal':/instagram|facebook|tiktok|youtube/.test(d)?'sosyal':/yandex|bulurum|com\.com\.tr|bilgiemlak|rehberi/.test(d)?'dizin':/century21|remax|coldwell|turyap|kw\./.test(d)?'franchise':'ofis';const hk=[...document.querySelectorAll('.dbg0pd')].map(n=>{const c=n.closest('.rllt__details');const t=(c?c.innerText:n.innerText).replace(/\n/g,' | ');const m=t.match(/(\d[.,]\d)\s*\((\d[\d.]*)\)/);const kat=(t.match(/\)\s*·\s*([^|]+)/)||[])[1];const dur=(t.match(/(Açık|Kapalı|Kapanmak üzere|Açılmak üzere)[^|]*/)||[])[0];return {ad:n.innerText.trim().slice(0,50),puan:m?m[1]:null,yorum:m?parseInt(m[2].replace('.','')):null,kat:kat?kat.trim().slice(0,30):null,durum:dur?dur.trim().slice(0,40):null}});
   // 07.10: Google arayüzü değişti — .dfB0uf/#swml boş dönüyor. Yeni gösterge alt bilgi
   // çubuğunda span.AhYzQb (kapsayıcı .GNm3Qb): "06824, Tunahan, Etimesgut/Ankara".
   // Sınıf adları uçucu olduğu için zincir: yeni → eski → metin kalıbı ("posta kodu, semt, ilçe/il").
@@ -184,7 +209,10 @@ const ctx = await browser.newContext({
 });
 const page = await ctx.newPage();
 
-let yapilan = 0, engel = false;
+// engel = robot duvarı / gezinme hatası (o gün bitti). cikarimDur = üst üste 3 çıkarım hatası (çıkarıcı
+// bozulmuş olabilir; robot duvarı DEĞİL, çıkarıcı düzeltilince aynı gün sürdürülebilir). Ayrı bayrak:
+// son satırda ikisi aynı ifadeyle ("ENGELLE KESİLDİ") basılınca okuyan "o gün bitti" sanıyordu.
+let yapilan = 0, hatali = 0, ardisik = 0, engel = false, cikarimDur = false;
 disari:
 for (const { nk, q } of CIFTLER) {
   {
@@ -209,16 +237,26 @@ for (const { nk, q } of CIFTLER) {
     }
     let r;
     try { r = await page.evaluate(CIKAR); } catch (e) { console.error(`HATA js ${nk.n}|${q}: ${e.message}`); continue; }
-    if (r.n === 0) {
+    if (r.hata || r.n < 5) {
       await bekle(2500);
       try { r = await page.evaluate(CIKAR); } catch (e) {}
-      if (r.n === 0) {
-        const hdump = path.join(process.env.HATA_DIZINI || DIR, `bolge-hata-${nk.n}.html`);
-        fs.writeFileSync(hdump, await page.content());
-        console.error(`BOŞ SERP: ${nk.n}|${q} — title="${r.tt}" → ${hdump}`);
-        if (/sorry|unusual|olağan/i.test(r.tt)) { engel = true; break disari; }
-      }
     }
+    // 08.10: çıkarım hatası (hata alanı ya da n<5) "ilk 10 dışı" DEĞİLDİR; eskiden sira:0 diye dosyaya
+    // yazılıyordu. Artık kayıt YAZILMAZ, sayfa dökülür, tur sıradaki sorguyla sürer.
+    if (r.hata || r.n < 5) {
+      const hdump = path.join(process.env.HATA_DIZINI || DIR, `bolge-hata-${nk.n}.html`);
+      fs.writeFileSync(hdump, await page.content());
+      console.error(`ÇIKARIM HATASI: ${nk.n}|${q} — n=${r.n} title="${r.tt}" → ${hdump} (kayıt YAZILMADI)`);
+      if (/sorry|unusual|olağan/i.test(r.tt || '')) { engel = true; break disari; }
+      hatali++;
+      if (++ardisik >= 3) { // tek tük hata atlanır; üst üste 3 hata çıkarıcının bozulduğunu gösterir, sorgu bütçesi yakılmaz
+        console.error('ÜST ÜSTE 3 ÇIKARIM HATASI — çıkarıcı bozulmuş olabilir, tur durduruldu');
+        cikarimDur = true; break disari;
+      }
+      await bekle(20000 + Math.random() * 15000); // tempo yazılmayan sorguda da korunur
+      continue;
+    }
+    ardisik = 0;
     const kayit = { d: BUGUN, kanal: 'konteyner', ...(ON_AYAR ? { onayar: ON_AYAR } : {}), nokta: nk.n, lat: nk.lat, lng: nk.lng, q, ...r };
     delete kayit.tt;
     fs.appendFileSync(OUT, JSON.stringify(kayit) + '\n');
@@ -228,5 +266,5 @@ for (const { nk, q } of CIFTLER) {
   }
 }
 await browser.close();
-console.log(`BİTTİ: +${yapilan} ölçüm${engel ? ' — ENGELLE KESİLDİ' : ''}`);
-process.exit(engel ? 2 : 0);
+console.log(`BİTTİ: +${yapilan} ölçüm${hatali ? `, ${hatali} çıkarım hatası (yazılmadı)` : ''}${engel ? ' — ENGELLE KESİLDİ' : ''}${cikarimDur ? ' — ÇIKARIM HATASIYLA DURDU (robot duvarı değil)' : ''}`);
+process.exit(engel || cikarimDur ? 2 : 0);

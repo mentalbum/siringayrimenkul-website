@@ -1,7 +1,17 @@
 #!/usr/bin/env python3
 """07.10 hedef sorgu yenilemesi — tarayıcı JS çıktısını sonuclar-*.jsonl'e ekler.
 Kullanım: python3 hedef-ekle.py '<sorgu>' '<json>' [kanal=normal]
-json: {"sira","u","bas","isgal","isgal_sira","n","hp","hl","ilk3","t"}
+json: serp-cikarici-0710.js çıktısı: {"sira","u","bas","bas_tam","kap","u_kaynak","isgal","isgal_sira",
+      "isgal_diger","n","hp","hl","ilk3","t"}
+08.10 ekleri (karne incelemesi ana-2 + ek-4): kayda Google'ın gösterdiği başlığın TAMAMI (bas_tam),
+  baş sorguda ('eryaman emlakçı') ayrıca 25 karakterlik bas ve sonuç kutusu metni (kap, en çok 300 karakter),
+  yolun kaynağı (u_kaynak: href|cite|baslik) ve sitemiz dışındaki varlıklarımızın sıraları
+  (isgal_diger: [[sıra, varlık], …]) yazılır. Çıkarıcı eski sürümse bu alanlar null kalır (= ölçülmedi).
+  'isgal' yeniden tanımlanmadı: yalnız siringayrimenkul.com sonuçlarının sayısı.
+kap nasıl okunur (baş sorgu): içinde 'biz çıkarırız' ya da 'doğru alıcıyı' varsa Google meta description'ı
+  gösteriyor; 'arayan ev sahipleri için' ya da '11 mahalle' varsa kesiti gövdeden derliyor. Telefon numarası
+  ayıraç DEĞİLDİR (gövdede de geçiyor). kap boş ya da yalnız başlık + cite ise çıkarıcıda kapsayıcı bir üst
+  öğeye alınır.
 """
 import json, sys, datetime, os, re
 PWS0 = os.path.dirname(os.path.abspath(__file__))
@@ -21,7 +31,9 @@ kutu_not = ("harita kutusunda" if any(re.search(r"şirin", x, re.I) for x in hl)
             else ("harita kutusu var, biz yokuz" if hp else "harita kutusu çıkmadı"))
 if q.lower() == "eryaman emlakçı":
     rec = {"d": d, "s": "eryaman-emlakci", "q": "eryaman emlakçı", "sira": ham["sira"], "u": ham["u"],
-           "n": ham["n"], "hl": hl, "hp": hp, "isgal": ham.get("isgal", 0),
+           "u_kaynak": ham.get("u_kaynak"),
+           "bas": (ham.get("bas") or None), "bas_tam": (ham.get("bas_tam") or None), "kap": (ham.get("kap") or None),
+           "n": ham["n"], "hl": hl, "hp": hp, "isgal": ham.get("isgal", 0), "isgal_diger": ham.get("isgal_diger"),
            "kanal": KANAL, "loc": LOC, "not": f"07.10 hedef yenilemesi, pws=0 gl=tr hl=tr, kanal {KANAL}; {kutu_not}"}
     yol = os.path.join(PWS0, "sonuclar-emlakci.jsonl")
     beklenen = "/"
@@ -33,9 +45,11 @@ else:
         ad = re.fullmatch(r"(.+) Mahallesi emlakçı", q).group(1)
         s = MAH[ad]; tur = "mahalle"; mah = s
     rec = {"d": d, "kanal": KANAL, "loc": LOC, "tur": tur, "mah": mah, "s": s, "q": q,
-           "sira": ham["sira"], "u": ham["u"], "bas": (ham.get("bas") or None),
+           "sira": ham["sira"], "u": ham["u"], "u_kaynak": ham.get("u_kaynak"),
+           "bas": (ham.get("bas") or None), "bas_tam": (ham.get("bas_tam") or None),
            "ilk3": [x[:80] for x in ham.get("ilk3", [])], "isgal": ham.get("isgal", 0),
-           "isgal_sira": ham.get("isgal_sira", []), "n": ham["n"], "hl": hl, "hp": hp,
+           "isgal_sira": ham.get("isgal_sira", []), "isgal_diger": ham.get("isgal_diger"),
+           "n": ham["n"], "hl": hl, "hp": hp,
            "s2sira": None, "s2u": None, "not": f"07.10 hedef yenilemesi, kanal {KANAL}; {kutu_not}"}
     yol = os.path.join(PWS0, "sonuclar-site-emlakci.jsonl")
     beklenen = "/mahalleler/" + s

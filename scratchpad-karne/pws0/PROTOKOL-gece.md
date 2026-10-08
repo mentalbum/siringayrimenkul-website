@@ -1031,3 +1031,75 @@ dizin-adaylari, mudahale-defteri üreticileri bu denetimle yeniden koştu.
   için filtresiz günlük seriyle (tüm sayfalar, mobil A=25,6/gün) birebir tuttu, yine de cihaz kırılımı için
   filtresiz seri esas alınır. Diğer oturumun eki-3 sonucu ("düşüş yatay, her TO kovası −%17, tek konum kaybı yalın
   'emlakçı'") buradaki üç parçayla uyumlu.
+
+## 08.10 — ölçüm aracı düzeltmeleri
+
+Karne incelemesinin (07.10 gecesi, 7 araştırmacı + 7 şüpheci) ölçüm araçlarına düşen maddeleri. Google araması
+yapılmadı; araçlar elle kurulmuş SERP benzeri sayfalarda (başsız Chrome, yerel dosya) ve eski kayıtlarla sınandı.
+GERÇEK SERP'TE DENENMEDİ; aşağıdaki "ilk ölçümde bak" listesi bu yüzden var.
+
+- **Yeniden ölçüm kuralı (ye-2):** Site sorgusu yeniden ölçüm turu yalnız sorunlu çıkanları değil kuyruğun
+  tamamını, rastgele sırayla döner; yalnız sorunlular ölçülürse oran tek yönde düzelir (08.10: Eylül kovası
+  259/259, Ekim kovası 80/111). 07.10'dan beri bağlar şifreli: sayfa kimliği başlık önekinden VARSAYILMAZ,
+  çözülemeyen kayıt belirsiz yazılır. 07.10 bölümündeki "uule'siz ölçüm kıyaslanamaz" cümlesi hedef sorgular
+  içindir, site sorgularına genellenmez: Ekim'de hem uule'siz hem uule'li ölçülen 43 site sorgusunun 40'ında
+  sınıf aynı; gerçek değişim 2 ve ters yönlü (Erenköy doğru→yok, Meltem yok→çıktı), üçüncüsü İlk Bahar'ın
+  yanlış etiketi.
+- **`ekle-uule.py` artık "başlık site adıyla başlıyorsa doğru sayfa" demiyor.** O kısayol eski adres kopyalarını
+  ve kardeş adları (Platin / Platin 2) "doğru" yazıyordu. Yeni sıra: gerçek bağ varsa o yol → cite'ta eki
+  olmayan mahalle bölümü varsa ESKİ ADRES → başlığın ilk parçası `content/siteler` adıyla TAM ve TEK
+  eşleşiyorsa o kayıt → adaşlarda mahalle başlıktan ya da cite'tan, okunamıyorsa `u = "cite:…"`. Önek hiçbir
+  durumda "doğru" üretmez. Mahalle, ada, etap ve ana sayfa sonuçları da başlıktan tanınır. 07.10'un 12 uule
+  kaydı eldeki alanlarla yeniden işlendi: İlk Bahar ve Meltem "eski", Platin ve Göksu Evleri "başka site",
+  kalan 8 "doğru" çıktı (dosyadaki kayıtlar DEĞİŞTİRİLMEDİ).
+- **Kalan kör nokta (önemli):** şifreli bağda cite çoğu sonuçta mahalle bölümünü hiç göstermiyor
+  ("› ... › altintepe-sitesi"); 07.10'da yolu görülen 11 sonucumuzun 7'si böyleydi. O sonuçta yeni adres ile
+  eski adres kopyası başlıktan ayrılamaz. Kayıt yine yazılır ama `cite_mah` alanı null kalır ("yeni" =
+  …-mahallesi görüldü, "eski" = eksiz bölüm görüldü, null = AYRIM YAPILAMADI). Büyüklüğü: gerçek bağla
+  ölçülmüş eski kayıtlarda adı tutan 506 sonucun 55'i (%11) eski adresti; Ekim deney-0410 kanalında 101'in
+  11'i. Yani şifreli kanalda "eski adres" sayısı eksik, "doğru" fazla çıkar; "eski 41 → <10" gibi bir okuma
+  bu kanalın kayıtlarıyla YAPILMAZ. Kesin ayrım için tur gerçek bağ veren kanalda ölçülür
+  (`u_kaynak = "href"`); çıkarıcı gerçek bağ bulursa yolu artık oradan alıyor.
+- **`serp-cikarici-0710.js` yeni alanlar** (biz satırı aynı: 5 eleman, [4] tam başlık): `bas_tam` (başlığın
+  tamamı; `bas` 25 karakter olarak duruyor), `kap` (ilk sonucumuzun kutu metni, en çok 300 karakter; yalnız baş
+  sorgu kaydına yazılır), `u_kaynak` (href | cite), `biz_k`, `isgal_diger` ([[sıra, varlık], …]; sahibinden
+  mağazası, Instagram, TikTok, Facebook; tam ana makine + yol eşleşmesi, `isgal` eski tanımıyla duruyor).
+  `hedef-ekle.py`, `ekle-uule.py`, `ekle-deney-kompakt.py`, `ekle-deney-0410.py` bunları kayda geçiriyor.
+- **`kap` nasıl okunur:** içinde "biz çıkarırız" ya da "doğru alıcıyı" varsa Google meta description'ı
+  gösteriyor; "arayan ev sahipleri için" ya da "11 mahalle" varsa kesiti gövdeden derliyor. Telefon numarası
+  ayıraç DEĞİL (08.10 canlı sayfa: açıklamada 1, gövdede 6 kez).
+- **`serp-cikarici-kompakt.js` depoya kondu.** 06.10'da kullanılan özgün JS bulunamadı; dosya 0710
+  çıkarıcısından türetildi. Bağ şifreliyse yolu "cite:…" verir; o kanalda 0710 çıkarıcısı + `ekle-uule.py` kullan.
+- **`bolge-tur.mjs`:** alan adı cite'tan okunuyor; 5'ten az sonuç bulunursa `{hata:"cikarim", n, tt}` döner.
+  O çıktı "ilk 10 dışı" DEĞİLDİR, kayıt YAZILMAZ (sürücü de yazmıyor; üst üste 3 hatada turu durduruyor).
+- **`dizin-adaylari-uret.py`:** Başlık deneyi 2'nin "… | Tapu ve Site Bilgileri" başlığı güncel sayılıyor;
+  kesik kaydedilmiş başlıktan (25 karakterde ya da "|" işaretinin hemen önünde kesilmiş) "eski başlık" hükmü
+  verilmiyor; damla kuyruğunun açık satırlarından yalnız notunda "dizin dışı" yazanlar ölü sayfa sayılıyor
+  (yeniden tarama ve eski adres satırları değil). 08.10 koşusu: 2 aday → 0 aday (altintepe-sitesi başlık
+  düzeltmesiyle, platin-konutlari "dizinde" olduğu için düştü); "eski başlık" diye listelenen sıra sorunu
+  134 → 19. `karne-site-emlakci.py` de kesik başlıkları paydadan çıkarıyor (492 sonucun 303'ü kesikti).
+- **İlk ölçümde bak (gerçek SERP):** (1) `tail -3 sonuclar-emlakci.jsonl`: `bas_tam` ve `kap` dolu mu; kap
+  yalnız başlık + cite ise çıkarıcıda kapsayıcı bir üst öğeye alınır. (2) `isgal_diger`: "eryaman emlakçı"
+  sorgusunda Instagram sonucumuz görünüyorsa listede var mı (şifreli bağda "Instagram · <ad>" satırından
+  okunuyor, bu yol denenmedi). (3) Site sorgularında `cite_mah` dağılımı: null payı 07.10'daki gibi yüksekse
+  tur gerçek bağ veren kanala alınır. (4) Bölge turunda `n` 8–10 arası mı; "hata" dönüyorsa kayıt yazma.
+
+### 08.10 — inceleme sonrası onarım (yukarıdaki bölümün eki)
+
+İnceleme turundan çıkan düzeltmeler. Hepsi yerel sınamayla doğrulandı; Google araması yapılmadı.
+
+- **`dizin-adaylari-uret.py` damla satırı kuralı** artık öbür dört okuyucuyla (`karne-html.py`,
+  `yonetici-ozeti-uret.py`, `anlik-goruntu-uret.py`, `is-takvimi-uret.py`) aynı yazımda: nottaki "dizin dışı"
+  büyük ya da küçük harfle yazılabilir ("← 08.10 API: DİZİN DIŞI" da sayılır), mahalle kökü
+  (`/mahalleler/altay`) da eski adres sayılır. 08.10 koşusunun sonucu değişmedi (0 aday, 113 sıra sorunu).
+  Kural beş dosyada duruyor; biri değişirse beşi birden değişir.
+- **`ekle-uule.py`:** (1) adında "<no> Ada" geçen iki site kaydı (Kur Sitesi 46495 Ada, Kur Sitesi 46496 Ada)
+  kesik başlıkta ada sayfası sanılmıyor. (2) Slug `mah/slug` biçiminde değilse betik çökmüyor, uyarıp kaydı
+  yazıyor. (3) `serp-cikarici-kompakt.js` satırı da okunuyor: yol `cite:<kırıntı>` ise kırıntı cite sayılır
+  (eski adres kopyası "doğru" yazılmaz), 25 karakterden uzun başlık `bas_tam` olur, `bas` 25 karakter kalır.
+- **`ekle-deney-kompakt.py`:** yol `cite:…` geldiğinde ekrandaki durum `BELIRSIZ` (eskiden `YANLIS` basıyordu;
+  yazılan kayıt aynı).
+- **`bolge-tur.mjs` sürücüsü:** üst üste 3 çıkarım hatasında son satır "ÇIKARIM HATASIYLA DURDU (robot duvarı
+  değil)" der; "ENGELLE KESİLDİ" yalnız robot duvarı ya da gezinme hatası içindir. İkisinde de çıkış kodu 2.
+  Kayıt tarihi İstanbul gününden alınıyor (eskiden UTC'den: gece 00:00–03:00 arası koşan tur bir önceki günün
+  tarihini yazıyor, o günün ölçülmüş sorgularını da atlıyordu).
