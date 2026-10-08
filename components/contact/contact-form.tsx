@@ -57,14 +57,17 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
     return () => window.clearTimeout(id);
   }, []);
 
-  // Site sayfalarındaki "Evinizi Değerlendirelim" linkleri ?mahalle=&site=
-  // taşır — formu önceden doldur (statik sayfayı useSearchParams'a sokmadan;
+  // Site sayfalarındaki "Evinizi Değerlendirelim" linkleri ?mahalle=&site=,
+  // hizmet sayfalarındakiler ?niyet=satis|kiralama taşır — formu önceden doldur (statik sayfayı useSearchParams'a sokmadan;
   // SitelerBrowser'daki desenle aynı, setTimeout lint kuralı için).
   useEffect(() => {
     const id = window.setTimeout(() => {
       const params = new URLSearchParams(window.location.search);
       const m = params.get("mahalle");
       const s = params.get("site");
+      const n = params.get("niyet");
+      if (n === "satis") setTalepTuru(talepTurleri[0]);
+      if (n === "kiralama") setTalepTuru(talepTurleri[1]);
       if (m && mahalleler.some((item) => item.slug === m)) {
         setMahalleSlug(m);
         if (s && siteler?.some((item) => item.slug === s && item.mahalleSlug === m)) {
@@ -105,6 +108,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
       kanal,
       mahalle: mahalleSlug || "(yok)",
       site: seciliSite?.slug ?? "(yok)",
+      niyet: talepTuru === talepTurleri[0] ? "satis" : talepTuru === talepTurleri[1] ? "kiralama" : "diger",
     });
   }
 
