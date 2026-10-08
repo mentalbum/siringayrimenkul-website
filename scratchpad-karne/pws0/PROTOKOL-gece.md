@@ -1083,3 +1083,23 @@ GERÇEK SERP'TE DENENMEDİ; aşağıdaki "ilk ölçümde bak" listesi bu yüzden
   sorgusunda Instagram sonucumuz görünüyorsa listede var mı (şifreli bağda "Instagram · <ad>" satırından
   okunuyor, bu yol denenmedi). (3) Site sorgularında `cite_mah` dağılımı: null payı 07.10'daki gibi yüksekse
   tur gerçek bağ veren kanala alınır. (4) Bölge turunda `n` 8–10 arası mı; "hata" dönüyorsa kayıt yazma.
+
+### 08.10 — inceleme sonrası onarım (yukarıdaki bölümün eki)
+
+İnceleme turundan çıkan düzeltmeler. Hepsi yerel sınamayla doğrulandı; Google araması yapılmadı.
+
+- **`dizin-adaylari-uret.py` damla satırı kuralı** artık öbür dört okuyucuyla (`karne-html.py`,
+  `yonetici-ozeti-uret.py`, `anlik-goruntu-uret.py`, `is-takvimi-uret.py`) aynı yazımda: nottaki "dizin dışı"
+  büyük ya da küçük harfle yazılabilir ("← 08.10 API: DİZİN DIŞI" da sayılır), mahalle kökü
+  (`/mahalleler/altay`) da eski adres sayılır. 08.10 koşusunun sonucu değişmedi (0 aday, 113 sıra sorunu).
+  Kural beş dosyada duruyor; biri değişirse beşi birden değişir.
+- **`ekle-uule.py`:** (1) adında "<no> Ada" geçen iki site kaydı (Kur Sitesi 46495 Ada, Kur Sitesi 46496 Ada)
+  kesik başlıkta ada sayfası sanılmıyor. (2) Slug `mah/slug` biçiminde değilse betik çökmüyor, uyarıp kaydı
+  yazıyor. (3) `serp-cikarici-kompakt.js` satırı da okunuyor: yol `cite:<kırıntı>` ise kırıntı cite sayılır
+  (eski adres kopyası "doğru" yazılmaz), 25 karakterden uzun başlık `bas_tam` olur, `bas` 25 karakter kalır.
+- **`ekle-deney-kompakt.py`:** yol `cite:…` geldiğinde ekrandaki durum `BELIRSIZ` (eskiden `YANLIS` basıyordu;
+  yazılan kayıt aynı).
+- **`bolge-tur.mjs` sürücüsü:** üst üste 3 çıkarım hatasında son satır "ÇIKARIM HATASIYLA DURDU (robot duvarı
+  değil)" der; "ENGELLE KESİLDİ" yalnız robot duvarı ya da gezinme hatası içindir. İkisinde de çıkış kodu 2.
+  Kayıt tarihi İstanbul gününden alınıyor (eskiden UTC'den: gece 00:00–03:00 arası koşan tur bir önceki günün
+  tarihini yazıyor, o günün ölçülmüş sorgularını da atlıyordu).

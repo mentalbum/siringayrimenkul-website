@@ -21,7 +21,10 @@ import { createRequire } from 'node:module';
 
 const DIR = path.dirname(fileURLToPath(import.meta.url));
 const OUT = path.join(DIR, 'sonuclar-bolge.jsonl');
-const BUGUN = new Date().toISOString().slice(0, 10);
+// 08.10: tarih İstanbul gününden alınır. Eskiden UTC'den alınıyordu (toISOString): gece 00:00–03:00 arası
+// koşan tur bir önceki günün damgasını yazıyor, "bugün ölçülenler" süzgeci de dünün kayıtlarını bugünkü
+// sanıp o sorguları atlıyordu. Python ekleyiciler zaten yerel tarih yazıyor. en-CA biçimi = YYYY-AA-GG.
+const BUGUN = new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Istanbul', year: 'numeric', month: '2-digit', day: '2-digit' }).format(new Date());
 const MAX = Number(process.env.MAX || Infinity);
 
 const TUM_NOKTALAR = [
@@ -206,7 +209,10 @@ const ctx = await browser.newContext({
 });
 const page = await ctx.newPage();
 
-let yapilan = 0, hatali = 0, ardisik = 0, engel = false;
+// engel = robot duvarı / gezinme hatası (o gün bitti). cikarimDur = üst üste 3 çıkarım hatası (çıkarıcı
+// bozulmuş olabilir; robot duvarı DEĞİL, çıkarıcı düzeltilince aynı gün sürdürülebilir). Ayrı bayrak:
+// son satırda ikisi aynı ifadeyle ("ENGELLE KESİLDİ") basılınca okuyan "o gün bitti" sanıyordu.
+let yapilan = 0, hatali = 0, ardisik = 0, engel = false, cikarimDur = false;
 disari:
 for (const { nk, q } of CIFTLER) {
   {
@@ -245,7 +251,7 @@ for (const { nk, q } of CIFTLER) {
       hatali++;
       if (++ardisik >= 3) { // tek tük hata atlanır; üst üste 3 hata çıkarıcının bozulduğunu gösterir, sorgu bütçesi yakılmaz
         console.error('ÜST ÜSTE 3 ÇIKARIM HATASI — çıkarıcı bozulmuş olabilir, tur durduruldu');
-        engel = true; break disari;
+        cikarimDur = true; break disari;
       }
       await bekle(20000 + Math.random() * 15000); // tempo yazılmayan sorguda da korunur
       continue;
@@ -260,5 +266,5 @@ for (const { nk, q } of CIFTLER) {
   }
 }
 await browser.close();
-console.log(`BİTTİ: +${yapilan} ölçüm${hatali ? `, ${hatali} çıkarım hatası (yazılmadı)` : ''}${engel ? ' — ENGELLE KESİLDİ' : ''}`);
-process.exit(engel ? 2 : 0);
+console.log(`BİTTİ: +${yapilan} ölçüm${hatali ? `, ${hatali} çıkarım hatası (yazılmadı)` : ''}${engel ? ' — ENGELLE KESİLDİ' : ''}${cikarimDur ? ' — ÇIKARIM HATASIYLA DURDU (robot duvarı değil)' : ''}`);
+process.exit(engel || cikarimDur ? 2 : 0);

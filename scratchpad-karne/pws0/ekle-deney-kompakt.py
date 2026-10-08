@@ -27,5 +27,7 @@ rec = {"d": datetime.date.today().isoformat(), "kanal": "deney-0410", "tur": "si
 yol = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'sonuclar-site-emlakci.jsonl')
 open(yol, 'a').write(json.dumps(rec, ensure_ascii=False) + '\n')
 hedef = '/mahalleler/' + s
-durum = 'DOGRU' if u == hedef else ('DISI' if not u else 'YANLIS')
+# Bağ şifreliyse yol "cite:<kırıntı>" gelir: sayfa bilinmiyor demektir, 'YANLIS' değil (dogru-sayfa.py de
+# bu kaydı "adresi doğrulanamayan" sayar).
+durum = 'DISI' if not u else ('BELIRSIZ' if u.startswith('cite:') else ('DOGRU' if u == hedef else 'YANLIS'))
 print(f"{s} → {durum} | sira {sira} | {u}")

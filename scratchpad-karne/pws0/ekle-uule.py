@@ -4,7 +4,11 @@ Kullanım: python3 ekle-uule.py '<slug>' '<q>' '<json>' [kanal=uule-eryaman] [no
   json: serp-cikarici-0710.js çıktısı ({"sira","u","bas","bas_tam","u_kaynak","isgal","isgal_sira","isgal_diger",
         "biz":[[sira, p, bas25, cite90, tamBaslik],...],"biz_k":["cite"|"href",...],"n","hp","hl","ilk3","loc"}).
         biz satırı 5 elemanlıdır: [3] = cite metni, [4] = Google'ın gösterdiği h3'ün TAMAMI.
-        (Elle verilen 4 elemanlı eski biçim [sira, p, bas25, tamBaslik] de okunur.)
+        (Elle verilen 4 elemanlı eski biçim [sira, p, bas25, tamBaslik] de okunur. serp-cikarici-kompakt.js
+        satırı da okunur: 3 eleman [sira, yol, tamBaslik], bağ şifreliyse yol = "cite:<kırıntı>"; o kırıntı
+        cite sayılır, 25 karakterden uzun [2] tam başlıktır.)
+  slug: 'mah/slug' (site sorgusu). Mahalle/etap sorguları hedef-ekle.py'nin işidir; '/' içermeyen slug
+        verilirse betik çökmez, uyarıp kaydı yazar (sayfa yine başlıktan/cite'tan çözülür).
 
 SAYFA NASIL ÇÖZÜLÜR (08.10, karne incelemesi ye-2 adım 0). 07.10'dan beri Google bağları şifreli; yol
 cite kırıntısından güvenilir çıkmıyor. Eski kısayol ("başlık site adıyla başlıyorsa beklenen sayfa say")
@@ -87,7 +91,11 @@ def dizin(kok=ICERIK):
 
 def parcalar(p, cite):
     """Alan adından sonraki kırıntı bölümleri. Önce p (çıkarıcı cite'ın TAMAMINDAN kurar), yoksa cite metni
-    (90 karakterde kesik gelebilir: o zaman son bölüm kesik sayılır)."""
+    (90 karakterde kesik gelebilir: o zaman son bölüm kesik sayılır). Kompakt çıkarıcı şifreli bağda yolu
+    "cite:<kırıntı>" verir (cite ayrı gelmez): o kırıntı cite olarak okunur, yok sayılmaz (yoksa
+    "› mahalleler › devlet" gibi eski adres kırıntısı gözden kaçar ve kopya "doğru" yazılırdı)."""
+    if p and p.startswith("cite:") and not cite:
+        cite, p = p[5:], ""
     if p and not p.startswith("cite:"):
         segs = [x for x in p.split("/") if x]
     elif cite:
@@ -175,7 +183,9 @@ def mahalle_basligi(tam, kesik):
 def coz(s, tam, p, cite, D, kesik=False):
     """Bir sonucumuzun hangi sayfa olduğunu çözer → (u, u_kaynak, not). s = beklenen 'mah/slug'."""
     isimler, sluglar = D
-    exp_mah, exp_slug = s.split("/", 1)
+    exp_mah, _, exp_slug = s.partition("/")   # '/' yoksa (mahalle anahtarı verilmiş) çökmez: exp_slug = ""
+    if p and p.startswith("cite:"):           # kompakt çıkarıcı satırı: yol yerine "cite:<kırıntı>"
+        cite, p = cite or p[5:], ""
     segs = parcalar(p, cite)
     tamam = [x for x in segs if not kesik_mi(x)]
     kirinti = (cite or p or "").strip()[:90]
@@ -186,6 +196,14 @@ def coz(s, tam, p, cite, D, kesik=False):
 
     eslesen, kalan = site_basliktan(tam, isimler, kesik)
     ada = ADA.search(n) if not eslesen else None
+    # Adında "<no> Ada" geçen site kaydı (Kur Sitesi 46495 Ada / 46496 Ada): başlık 25 karakterde kesikse
+    # ("Kur Sitesi 46495 Ada Emla") ayraçta biten parça çıkmaz ve sonuç ada sayfası sanılırdı. Başlığın
+    # "… Ada"ya kadarki kısmı bir `isim`le TAM ve TEK eşleşiyorsa (ve o adla başlayan daha uzun bir kayıt
+    # adı yoksa: önek kuralı) site kaydıdır. Gerçek ada başlığı ("Tunahan 46495 Ada — Tapu…") eşleşmez.
+    if ada:
+        ada_adi = n[:ada.end()]
+        if len(isimler.get(ada_adi, [])) == 1 and not any(x.startswith(ada_adi + " ") for x in isimler):
+            eslesen, kalan, ada = list(isimler[ada_adi]), n[ada.end():], None
     etap = re.match(r"eryaman (\d)\. etap\b", n) if not eslesen else None
     tur, mseg, mi = cite_mahalle(segs)
 
@@ -215,6 +233,8 @@ def coz(s, tam, p, cite, D, kesik=False):
         if len(eslesen) == 1:
             return eski(eslesen[0].split("/", 1)[1], "baslik", "site başlıktan (kayıt bugün başka mahallede)")
         if not kalan_seg and not eslesen and mah == exp_mah:
+            if not exp_slug:   # sorgu site sorgusu değil (slug'da '/' yok): mahalle kökü
+                return f"/mahalleler/{mseg}", "cite", "eski adres (cite), sayfa başlıktan doğrulanamadı"
             return eski(exp_slug, "cite", "sayfa başlıktan doğrulanamadı, sorgunun sitesi varsayıldı")
         return eski(BILINMEYEN, "cite", "hangi sayfa olduğu okunamadı")
 
@@ -287,6 +307,8 @@ def satir_coz(s, b, kaynak, D):
         cite, tam = "", b[3] or ""
     else:
         cite, tam = "", ""
+        if len(bas25) > 25:   # 3 elemanlı kompakt satır: [2] kesilmemiş başlık ('bas' 25 karakter KALIR)
+            tam, bas25 = bas25, bas25[:25]
     if re.match(r"https?://", tam):  # 4 elemanlı satırda [3] cite gelmiş: başlık diye yazma
         print(f"UYARI: {sira}. sıradaki sonucumuzda tam başlık yerine cite geldi; başlık yok sayıldı", file=sys.stderr)
         cite, tam = tam, ""
@@ -303,11 +325,16 @@ def main(argv):
     s, q, ham = argv[1], argv[2], json.loads(argv[3])
     kanal = argv[4] if len(argv) > 4 else "uule-eryaman"
     ek_not = argv[5] if len(argv) > 5 else ""
+    if "/" not in s:
+        print(f"UYARI: slug '{s}' 'mah/slug' biçiminde değil; bu betik site sorgusu içindir "
+              "(mahalle/etap sorgusu: hedef-ekle.py). Kayıt yine yazılıyor.", file=sys.stderr)
     D = dizin()
     if not D[0]:
         print(f"UYARI: {ICERIK} okunamadı; site sonuçları 'cite:' (adresi doğrulanamayan) yazılacak", file=sys.stderr)
     biz = ham.get("biz") or []
     biz_k = ham.get("biz_k") or []
+    if not biz_k and ham.get("u_kaynak") == "href":   # kompakt çıkarıcı: biz_k yok, u_kaynak İLK sonucumuzun kaynağı
+        biz_k = ["href"]
     kayitlar = [satir_coz(s, b, biz_k[i] if i < len(biz_k) else None, D) for i, b in enumerate(biz)]
     ilk = kayitlar[0] if kayitlar else None
     hl = ham.get("hl") or []
@@ -326,7 +353,7 @@ def main(argv):
     open(os.path.join(K, "sonuclar-site-emlakci.jsonl"), "a").write(json.dumps(rec, ensure_ascii=False) + "\n")
     hedef = "/mahalleler/" + s
     u = rec["u"]
-    m = re.match(r"/mahalleler/([^/]+)/.", u or "")
+    m = re.match(r"/mahalleler/([^/?#]+)", u or "")   # eski şema: alt yollu ya da yolsuz (mahalle kökü de)
     if not u:
         durum = "DISI"
     elif u.startswith("cite:"):

@@ -7,6 +7,7 @@ Dizinsizlere kota harcanmaz (Özgün kararı) — ayrı listede raporlanır.
 Zaten istek gönderilmişler (28-29.08) düşülür.
 """
 import json, re, datetime
+import tranahtar
 
 rows = [json.loads(l) for l in open("sonuclar-site-emlakci.jsonl") if l.strip()]
 son = {}
@@ -112,21 +113,27 @@ for s, r in son.items():
 # 08.10 — AÇIK SATIRIN HEPSİ "DİZİN DIŞI" DEĞİL. 31.08'de kuyruktaki her açık madde API ile dizin dışı
 # doğrulanmıştı; sonradan aynı dosyaya "yeniden tarama" (sayfa dizinde, yalnız kopyası bayat) ve
 # "eski adres" (308 veren 26.07 öncesi adres) satırları da eklendi. Açık satırın türü artık karnenin
-# öbür okuyucularıyla (karne-html.py, yonetici-ozeti-uret.py, is-takvimi-uret.py) AYNI kuralla okunur:
-#   adres /mahalleler/<slug>/… ve <slug> "-mahallesi" ile bitmiyor      → eski_adres
-#   değilse satırın "←" sonrası notunda "dizin dışı" geçiyor            → dizin_disi
-#   değilse                                                             → yeniden_tarama
+# öbür okuyucularıyla (karne-html.py, yonetici-ozeti-uret.py, anlik-goruntu-uret.py, is-takvimi-uret.py)
+# AYNI kuralla okunur; biri değişirse beşi birden değişir:
+#   eski_adres      adres eski şemada: /mahalleler/<slug> (alt yollu ya da yolsuz; mahalle KÖKÜ de eski
+#                   adrestir) ve <slug> "-mahallesi" ile bitmiyor
+#   dizin_disi      değilse, satırın "←" SONRASI notunda "dizin dışı" geçiyor; büyük/küçük harf ayrımı yok
+#                   ("DİZİN DIŞI", "Dizin dışı" da eşleşir). Harf süzgeci tranahtar.anahtar: str.lower()
+#                   Türkçe İ'de bozulur. Okun SOLUNDAKİ metne bakılmaz.
+#   yeniden_tarama  ikisi de değil
 # Ölü sayfa kümesine yalnız dizin_disi girer. "https" taşımayan "- [ ]" satırları eskisi gibi sayım dışı.
+# Yazım öbür okuyuculardaki işlevle satır satır aynı tutulur (bu betik ayrıca adresi de döndürür).
 def damla_turu(satir):
-    m = re.match(r"- \[ \] (https://\S+)", satir)
+    m = re.match(r"^- \[ \] (https://\S+)(.*)$", satir)
     if not m:
         return None, None
     url = m.group(1).rstrip("/")
-    e = re.match(r"/mahalleler/([^/]+)/.", re.sub(r"^https://[^/]+", "", url))
+    e = re.match(r"^https://[^/]+/mahalleler/([^/?#]+)", m.group(1))
     if e and not e.group(1).endswith("-mahallesi"):
         return "eski_adres", url
-    notu = satir.split("←", 1)[1] if "←" in satir else ""
-    return ("dizin_disi" if "dizin dışı" in notu else "yeniden_tarama"), url
+    kalan = m.group(2)
+    notu = kalan.split("←", 1)[1] if "←" in kalan else ""
+    return ("dizin_disi" if tranahtar.anahtar("dizin dışı") in tranahtar.anahtar(notu) else "yeniden_tarama"), url
 
 _OLU = set()
 _kaynak_okundu = False   # iki kaynaktan en az biri okunabildi mi (boş küme ≠ kaynak yok)
