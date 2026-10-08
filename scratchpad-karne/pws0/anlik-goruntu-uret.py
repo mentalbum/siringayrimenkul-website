@@ -13,10 +13,19 @@ karne-gecmis.jsonl'a EKLER; aynı gün ikinci koşu o günün satırını deği�
   "geri_doldurma"  — ham veriden (SERP jsonl, GSC/GA4 günlük API) o gün için
                      SONRADAN hesaplanan değer. Anlık satırla aynı gün çakışırsa
                      özet anlık satırı üstün tutar (karnede görünen oydu).
+                     İSTİSNA (08.10 onarım) — SERP metriklerinin GEÇMİŞ noktaları: iki
+                     kaynak aynı jsonl'den hesaplanır; ayrışıyorsa anlık satır o gün bayat
+                     girdiyle ya da eski sınıflamayla basılmıştır. Kıyas ve sparkline geri
+                     doldurma değerini kullanır, o gün basılan değer metrikte
+                     onceki_karnede_basilan alanında durur. Ölçülen vaka: 07.10 anlık satırı
+                     doğru sayfa payını 85,5 basmıştı, aynı günün tam dosyayla değeri 90,8;
+                     düzeltme olmasa 14.10 karnesi hiç yeni ölçüm yokken "+5,3, iyi" derdi.
+                     Son nokta (bugünkü anlık) olduğu gibi kalır: karnede basılan odur.
 
 Geri doldurma yöntemi (21.08'den bugüne, her gün için):
   SERP  : sonuclar-site-emlakci.jsonl — her sayfa için o güne kadarki EN TAZE ölçüm
-          (dogru-sayfa.py ile aynı sınıflama; kuyruk-site-emlakci.json üyeliği).
+          (dogru-sayfa.py ile aynı sınıflama: adaş eş "doğru", uule kaydında eski
+          şema kırıntısı "belirsiz"; kuyruk-site-emlakci.json üyeliği ve "es" alanı).
           Her satır kullanılan ölçümlerin kanal dağılımını (serp_kanal) ve bölge
           turundan (27.08+) gelen payını (serp_bolge_turu_pay) taşır — NEDEN:
           22-23.08 turunun "ilk 10 dışı" sonuçları kararsız çıktı; 02.09'da
@@ -37,6 +46,14 @@ Geri doldurma yöntemi (21.08'den bugüne, her gün için):
           AYNI: 28daysAgo→yesterday, yani [D-28, D-1]. Ort. süre ve hemen çıkma
           oturumla ağırlıklı ortalama; olaylar (phone/whatsapp) toplam.
           Haftalık dilimler de yazılır (*_hafta: son 7 gün) — "son 4 hafta" okuması.
+  Temas : ga4-temas.mjs <bas> <bit> (bu klasörde ya da KARNE_SCRATCH'te; tek JSON, alan
+          temas_oturum.toplam) — telefon ya da WhatsApp düğmesine basan ZİYARET sayısı,
+          yalnız canlı alan adı. Çağrı pahalı olduğu için her gün değil SABİT haftalık
+          ızgarada (TEMAS_IZGARA_BAS + 7k) ve kıyasın iki ucunda (bugün, −7) çekilir;
+          penceresi 3 günden eski bitmiş değerler jsonl'deki eski satırdan taşınır, yeniden
+          çekilmez. İlk koşu ızgaranın tamamını çeker (08.10'da 7 pencere + 2 haftalık dilim
+          = 9 çağrı); sonraki günlerde yalnız eksik uçlar: bugün, varsa −7, olgunlaşmamış
+          son ızgara günü ve iki haftalık dilim (en çok 5 çağrı). Betik yoksa seri yok.
   Ham çekimler KARNE_SCRATCH'e TSV olarak bırakılır; API düşerse (--yerel ya da
   hata) oradaki TSV okunur, o da yoksa alanlar null kalır ve uyarı basılır.
 
@@ -44,6 +61,20 @@ DİKKAT — iki kaynak aynı günün değerinde birkaç yüzde ayrışabilir: GS
 günleri sonradan tamamlar (31.08'de çekilen 28 günlük toplam 2.531 tık, aynı
 pencere 02.09'da 2.603), GA4 dünü gece yeniden işler. Bu hata değil, veri
 olgunlaşması; özetteki her nokta kaynağını taşır.
+
+YÖN HÜKMÜNÜ SUSTURAN ÜÇ KURAL (özet; karne ve yönetici özeti bu alanları okur):
+  Rejim   : iki ucun ölçüm rejimi ayrışıyor (SERP'te bölge turu payı, hedefte kanal etiketi).
+  Seçici  : (08.10) ilk3_pay ve dogru_sayfa_pay için — pencerede yeniden ölçülen sorguların
+            "önceden doğru" payı kuyruk genelinden ≥25 puan ayrışıyorsa (ve ≥20 sorgu yeniden
+            ölçüldüyse) tur yalnız bir kesimi yeniden ölçmüştür; fark tek yönlüdür. 08.10'da
+            ölçülen: 209 sorgunun 37'si önceden doğruydu, kuyrukta 509'un 328'i.
+  Gürültü : (08.10) temas sayıları küçük. 7 gün arayla iki 28 günlük pencere 21 günü
+            paylaşır; fark = giren hafta − çıkan hafta. z = (giren − N·p) / √(N·p·(1−p)),
+            N = giren + çıkan, p = giren haftanın oturum payı. |z| < 2 ise yön "nötr".
+            Oturum düşüşünü temas oranı düşüşünden ayırır; sıfır temaslı haftayı yakalar.
+            Sınama yapılamıyorsa (haftalık dilim yok, kıyas tam 7 gün değil) yön yine "nötr":
+            sınanmamış küçük sayı farkına iyi/kötü denmez.
+  Üçünde de olcum_yontemi_degisti / gurultu / secici_yeniden_olcum alanları nedenini taşır.
 
 Kullanım (KARNE_SCRATCH şart: ham TSV'ler oraya yazılır; gsc-q.mjs orada, ga4-q.mjs bu klasörde durur):
   python3 anlik-goruntu-uret.py                 # anlık satır + geri doldurma (API) + özet
@@ -53,10 +84,10 @@ Kullanım (KARNE_SCRATCH şart: ham TSV'ler oraya yazılır; gsc-q.mjs orada, ga
 Girdi : sonuc-ozeti.json, tik-sonrasi.json, dogru-sayfa.json, hedef-sorgular.json,
         ada-beklenti.json, ada-beklenti-gecmis.jsonl, gorunmez-teshis.json,
         veri-sagligi.json, DIZIN-DAMLASI-31-08.md, kuyruk-site-emlakci.json,
-        sonuclar-site-emlakci.jsonl, sonuclar-emlakci.jsonl
+        sonuclar-site-emlakci.jsonl, sonuclar-emlakci.jsonl, (varsa) ga4-temas.mjs
 Çıktı : karne-gecmis.jsonl (birikir), karne-gecmis-ozet.json (her koşuda yeniden)
 """
-import json, os, re, sys, subprocess, datetime, collections
+import json, math, os, re, sys, subprocess, datetime, collections
 
 KOK = os.path.dirname(os.path.abspath(__file__))
 S = os.environ.get("KARNE_SCRATCH", "")
@@ -91,11 +122,13 @@ METRIKLER = [
     ("ga4_hemen",           "GA4 hemen çıkma (28 gün)",             "%",     "kotu"),
     ("phone_click_28",      "Telefon tıklaması (28 gün)",           "adet",  "iyi"),
     ("whatsapp_click_28",   "WhatsApp tıklaması (28 gün)",          "adet",  "iyi"),
+    ("temas_oturum_28",     "Temas eden ziyaret (28 gün)",          "ziyaret", "iyi"),
     ("hedef_ilk3",          "Hedef sorgu: ilk 3'te",                "sorgu", "iyi"),
     ("hedef_kutuda",        "Hedef sorgu: harita kutusunda",        "sorgu", "iyi"),
     ("hedef_disi",          "Hedef sorgu: ilk 10 dışında",          "sorgu", "kotu"),
     ("ada_beklenti_orani",  "Ada sayfaları: alınan / beklenen tık", "oran",  "iyi"),
     ("damla_acik",          "Dizin damlası: açık kayıt",            "adet",  "kotu"),
+    ("damla_dizin_disi",    "Dizin kuyruğu: Google′da olmayan sayfa", "adet", "kotu"),
     ("dizin_disi_sayisi",   "API'nin dizin dışı doğruladığı sayfa", "adet",  "kotu"),
     ("veri_saglik_agir",    "Veri sağlığı: ağır bulgu",             "adet",  "kotu"),
 ]
@@ -108,6 +141,30 @@ HEDEF_METRIK = ("hedef_ilk3", "hedef_kutuda", "hedef_disi")
 # aynı kıyasa "kanal değişti" diyor — 02.09'da 26.08 noktası 17/17 etiketsizken
 # seri "hedef ilk 3: 8 → 3, kötü" basıyordu).
 REJIM_ESIK = 50
+# "Önceki nokta daha çok 27.08 öncesi turdan" notu için en az ayrışma (puan). 08.10'a kadar her
+# pozitif fark notu basıyordu: %99,8'e karşı %100 için de "27.08 öncesi turdan" deniyordu.
+REJIM_NOT_ESIK = 5
+# Seçici yeniden ölçüm (08.10, ye-1 f): pencerede en az SECICI_MIN sorgu yeniden ölçüldüyse ve
+# bunların "önceden doğru" payı kuyruk genelinden SECICI_ESIK puan ayrışıyorsa fark tek yönlüdür.
+SECICI_METRIK = ("ilk3_pay", "dogru_sayfa_pay")
+SECICI_MIN = 20
+SECICI_ESIK = 25
+# Gürültü kuralı (08.10, temas-1): 28 günlük metrik → haftalık dilim alan(lar)ı. Ziyaret dilimi
+# yoksa (ga4-temas.mjs koşmadıysa) temas_oturum_28 için telefon + WhatsApp tıkı yedek ölçüdür.
+TEMAS_HAFTA = {
+    "phone_click_28": [(("phone_click_hafta",), "tık")],
+    "whatsapp_click_28": [(("whatsapp_click_hafta",), "tık")],
+    "temas_oturum_28": [(("temas_oturum_hafta",), "ziyaret"),
+                        (("phone_click_hafta", "whatsapp_click_hafta"), "tık")],
+}
+GURULTU_Z = 2.0
+TEMAS_OLGUN_GUN = 3    # penceresi bu kadar gün önce bitmiş temas değeri yeniden çekilmez (GA4 dünü yeniden işler)
+# Temas eden ziyaret serisinin sabit haftalık ızgarası: bu günden başlayarak 7 günde bir (bölge
+# turunun ilk günü; 08.10 ilk geri doldurmasının günleriyle aynı: 27.08, 03.09 … 08.10).
+TEMAS_IZGARA_BAS = datetime.date(2026, 8, 27)
+# SERP metriklerinde aynı günün anlık ve geri doldurma değeri en az bu kadar ayrışıyorsa (değerler
+# bir ondalıkla yazılır) anlık satır bayat girdiyle basılmış sayılır.
+SERP_AYRISMA = 0.05
 
 
 def tr_sayi(n, ondalik=0):
@@ -133,6 +190,38 @@ def yuzde(a, b, nd=1):
 def kanal_sayimi(kayitlar):
     """Kanal dağılımı; etiketi olmayan eski kayıtlar 'etiketsiz' (27.08 öncesi hepsi böyle)."""
     return dict(collections.Counter((r.get("kanal") or "etiketsiz") for r in kayitlar))
+
+
+# --- Dizin damlası satır türü — ORTAK SÖZLEŞME S1 (08.10) ---
+# karne-html.py, yonetici-ozeti-uret.py ve is-takvimi-uret.py AYNI kuralı uygular; biri
+# değişirse dördü birden değişir. Açık "- [ ] https://…" satırı:
+#   adres eski şemadaysa (/mahalleler/<slug>… ve <slug> "-mahallesi" ile bitmiyor) → eski_adres
+#   değilse "←" sonrası notta "dizin dışı" geçiyorsa                               → dizin_disi
+#   değilse                                                                         → yeniden_tarama
+# https içermeyen "- [ ]" satırı sayım dışıdır (kapanmış eski kuyruk listeleri).
+_DAMLA_ACIK = re.compile(r"^- \[ \] (https://\S+)(.*)$")
+_DAMLA_ESKI = re.compile(r"^https://[^/]+/mahalleler/([^/?#]+)")
+
+
+def damla_satir_turu(satir):
+    m = _DAMLA_ACIK.match(satir)
+    if not m:
+        return None
+    e = _DAMLA_ESKI.match(m.group(1))
+    if e and not e.group(1).endswith("-mahallesi"):
+        return "eski_adres"
+    kalan = m.group(2)
+    notu = kalan.split("←", 1)[1] if "←" in kalan else ""
+    return "dizin_disi" if anahtar("dizin dışı") in anahtar(notu) else "yeniden_tarama"
+
+
+def damla_turleri(metin):
+    say = {"dizin_disi": 0, "yeniden_tarama": 0, "eski_adres": 0}
+    for L in metin.splitlines():
+        t = damla_satir_turu(L)
+        if t:
+            say[t] += 1
+    return say
 
 
 # ======================= 1) ANLIK SATIR =======================
@@ -171,6 +260,9 @@ def anlik_satir():
         r["ga4_hemen"] = ts["ozet"]["hemen_cikma"]
         r["phone_click_28"] = ts["temas"]["phone_click"]
         r["whatsapp_click_28"] = ts["temas"]["whatsapp_click"]
+        # 08.10: temas eden ZİYARET (tik-sonrasi-uret.py ga4-temas.mjs çıktısından yazar);
+        # eski tik-sonrasi.json'da alan yok → null, seri geri doldurmadan beslenir
+        r["temas_oturum_28"] = ts["temas"].get("temas_oturum")
         r["ga4_pencere"] = ts.get("pencere")
     if hs:
         o = hs["ozet"]
@@ -179,11 +271,20 @@ def anlik_satir():
         r["hedef_disi"] = o["disarida"]
     if ab:
         r["ada_beklenti_orani"] = ab["ada"]["oran"]
-    # damla: "- [ ] url" açık, "- [x] url ← …" bitmiş
+    # damla: "- [ ] https://…" açık (türü S1 ile), "- [x] url ← …" bitmiş.
+    # 08.10: damla_acik eskiden HER "- [ ]" satırını sayıyordu (kapanmış 07.09 kuyruğunun
+    # https'siz satırları dahil) ve hepsi "dizin dışı" okunuyordu. Artık yalnız https'li açık
+    # satırlar sayılır ve üç türe ayrılır; damla_tanim alanı tanım değişikliğini işaretler
+    # (özet, eski tanımlı noktayla kıyasta yön hükmü vermez).
     dp = f"{KOK}/DIZIN-DAMLASI-31-08.md"
     if os.path.exists(dp):
-        metin = open(dp).read()
-        r["damla_acik"] = len(re.findall(r"^- \[ \]", metin, re.M))
+        metin = open(dp, encoding="utf-8").read()
+        dt = damla_turleri(metin)
+        r["damla_acik"] = sum(dt.values())
+        r["damla_dizin_disi"] = dt["dizin_disi"]
+        r["damla_yeniden_tarama"] = dt["yeniden_tarama"]
+        r["damla_eski_adres"] = dt["eski_adres"]
+        r["damla_tanim"] = "S1"
         r["damla_biten"] = len(re.findall(r"^- \[x\]", metin, re.M | re.I))
     if gt:
         r["dizin_disi_sayisi"] = gt["dizin_sorunu"]["n"]
@@ -205,8 +306,23 @@ def anlik_satir():
 
 
 # ======================= 2) GERİ DOLDURMA =======================
-# --- SERP: dogru-sayfa.py'deki sinif() ile birebir; oradan değişirse burası da ---
-def sinif(r):
+# --- SERP: dogru-sayfa.py'deki ESKI_CITE + es_sozlugu() + sinif() ile birebir; oradan değişirse burası da ---
+ESKI_CITE = re.compile(
+    r"siringayrimenkul\.com/(?:mahalleler/)?"
+    r"(?:altay|devlet|eryaman|goksu|guzelkent|sehit-osman-avci|seker|seyh-samil|tunahan|yavuz-selim|yesilova)"
+    r"(?:/|$)")
+
+
+def es_sozlugu(kuyruk_kayitlari):
+    """s → adaş eşlerin yolları ({"/mahalleler/<es>", …}); kuyruğun "es" alanından."""
+    es = collections.defaultdict(set)
+    for r in kuyruk_kayitlari:
+        for e in (r.get("es") or []):
+            es[r["s"]].add(f"/mahalleler/{e}")
+    return dict(es)
+
+
+def sinif(r, es):
     u = (r.get("u") or "")
     if not r.get("sira"):
         return "yok"
@@ -218,7 +334,11 @@ def sinif(r):
         return "mahalle"
     if "/mahalleler/" not in u:
         return "dis"
-    if u.rstrip("/") == f"/mahalleler/{r['s']}":
+    yol = u.rstrip("/")
+    if yol == f"/mahalleler/{r['s']}" or yol in es.get(r["s"], ()):
+        # 08.10: u başlıktan çözülmüş (ekle-uule.py) ve kırıntı eski şemayı gösteriyor
+        if r.get("kanal") == "uule-eryaman" and any(ESKI_CITE.search(x) for x in (r.get("ilk3") or [])):
+            return "belirsiz"
         return "dogru"
     m = re.match(r"/mahalleler/([^/]+)/", u)
     if m and not m.group(1).endswith("-mahallesi"):
@@ -240,11 +360,66 @@ def jsonl(ad):
     return out
 
 
-def serp_serisi(gunler):
-    """Her gün için: o güne kadarki en taze ölçümle ilk3 / doğru sayfa / ilk 10 dışı."""
-    kuyruk = {r["s"] for r in json.load(open(f"{KOK}/kuyruk-site-emlakci.json"))}
+def serp_kayitlari():
+    """(kuyruk içi SERP kayıtları [gün, dosya sırası], adaş eş sözlüğü)."""
+    kq = json.load(open(f"{KOK}/kuyruk-site-emlakci.json", encoding="utf-8"))
+    kuyruk = {r["s"] for r in kq}
     kayit = [r for r in jsonl("sonuclar-site-emlakci.jsonl") if r.get("s") in kuyruk and r.get("d")]
     kayit.sort(key=lambda r: (r["d"], r["_sira_no"]))   # gün içinde dosya sırası: son yazılan geçerli
+    return kayit, es_sozlugu(kq)
+
+
+def secici_yeniden_olcum(onceki_t, son_t, kayit=None, es=None):
+    """(onceki_t, son_t] penceresinde YENİDEN ölçülen sorguların önceki sınıfı kuyruk geneline
+    benziyor mu? Benzemiyorsa tur seçiciydi (08.10: yalnız Eylül'de sorunlu çıkanlar yeniden
+    ölçüldü) ve ilk 3 / doğru sayfa payındaki fark tüm kuyruğun hareketi değildir.
+
+    "Önceki sınıf" = sorgunun onceki_t gününe kadarki son ölçümü. Pencerede ilk kez ölçülen
+    sorgu yeniden ölçüm sayılmaz (ilk_kez alanında ayrı durur)."""
+    if kayit is None:
+        kayit, es = serp_kayitlari()
+    gecmis = collections.defaultdict(list)
+    for r in kayit:
+        if r["d"] <= son_t:
+            gecmis[r["s"]].append(r)
+    yeniden = onceden_dogru = kuyruk_dogru = kuyruk_toplam = ilk_kez = 0
+    onceki_gunler, yeni_gunler = [], []
+    for v in gecmis.values():
+        onceki = [x for x in v if x["d"] <= onceki_t]
+        yeni = [x for x in v if x["d"] > onceki_t]
+        if not onceki:
+            ilk_kez += 1
+            continue
+        dogruydu = sinif(onceki[-1], es) == "dogru"
+        kuyruk_toplam += 1
+        kuyruk_dogru += dogruydu
+        if yeni:
+            yeniden += 1
+            onceden_dogru += dogruydu
+            onceki_gunler.append(onceki[-1]["d"])
+            yeni_gunler.append(yeni[-1]["d"])
+    if not kuyruk_toplam:
+        return None
+    yp, kp = yuzde(onceden_dogru, yeniden), yuzde(kuyruk_dogru, kuyruk_toplam)
+    tek_yonlu = bool(yeniden >= SECICI_MIN and yp is not None and kp is not None
+                     and abs(yp - kp) >= SECICI_ESIK)
+    c = {"yeniden_olculen": yeniden, "onceden_dogru": onceden_dogru,
+         "kuyruk_onceden_dogru": kuyruk_dogru, "kuyruk_toplam": kuyruk_toplam,
+         "yeniden_pay": yp, "kuyruk_pay": kp, "ilk_kez": ilk_kez, "tek_yonlu": tek_yonlu,
+         "pencere": {"bas": onceki_t, "bit": son_t},
+         "yeni_olcum": {"bas": min(yeni_gunler), "bit": max(yeni_gunler)} if yeni_gunler else None,
+         "onceki_olcum": {"bas": min(onceki_gunler), "bit": max(onceki_gunler)} if onceki_gunler else None}
+    if tek_yonlu:
+        kesim = "sorunlu çıkanlar" if yp < kp else "doğru çıkanlar"
+        c["not"] = (f"pencerede yeniden ölçülen {tr_sayi(yeniden)} sorgudan {tr_sayi(onceden_dogru)} tanesi "
+                    f"önceden doğru sayfaydı (kuyruk genelinde {tr_sayi(kuyruk_toplam)} sorgudan "
+                    f"{tr_sayi(kuyruk_dogru)}); çoğunlukla {kesim} yeniden ölçüldü, fark tek yönlü")
+    return c
+
+
+def serp_serisi(gunler):
+    """Her gün için: o güne kadarki en taze ölçümle ilk3 / doğru sayfa / ilk 10 dışı."""
+    kayit, ES = serp_kayitlari()
     son = {}
     i = 0
     cikti = {}
@@ -259,7 +434,7 @@ def serp_serisi(gunler):
             continue
         ilk3 = [r for r in son.values() if r.get("sira") and r["sira"] <= 3]
         yok = sum(1 for r in son.values() if not r.get("sira"))
-        dogru3 = sum(1 for r in ilk3 if sinif(r) == "dogru")
+        dogru3 = sum(1 for r in ilk3 if sinif(r, ES) == "dogru")
         bolge = sum(1 for r in son.values() if r["d"] >= BOLGE_TURU_BAS)
         cikti[gs] = {"ilk3_pay": yuzde(len(ilk3), n), "dogru_sayfa_pay": yuzde(dogru3, len(ilk3)),
                      "ilk10_disi": yuzde(yok, n), "serp_olculen": n,
@@ -420,8 +595,43 @@ def ga4_pencere(d, o, bas, bit):
             "phone": ev.get("phone_click", 0), "wa": ev.get("whatsapp_click", 0), "gun": len(r)}
 
 
-def geri_doldur():
+_TEMAS_UYARILDI = set()
+
+
+def temas_cek(bas, bit):
+    """[bas, bit] aralığında temas eden ziyaret sayısı (ga4-temas.mjs → temas_oturum.toplam).
+    Betik, KARNE_SCRATCH ya da çıktı yoksa None: seri yok denir, üretici durmaz."""
+    betik = yardimci("ga4-temas.mjs")
+    ad = f"ga4-temas-{bas.isoformat()}-{bit.isoformat()}.json"
+    # betik yoksa çağrı denenmez; --yerel'de eldeki önbellek dosyası yine okunur
+    if not os.path.exists(betik) and not (YEREL and S and os.path.exists(f"{S}/{ad}")):
+        if "betik" not in _TEMAS_UYARILDI:
+            _TEMAS_UYARILDI.add("betik")
+            print("UYARI: ga4-temas.mjs yok — temas_oturum_28 için seri yok (geri doldurulmadı)", file=sys.stderr)
+        return None
+    sat = calistir([betik, bas.isoformat(), bit.isoformat()], ad)
+    if sat is None:
+        return None
+    try:
+        return int(json.loads("\n".join(sat))["temas_oturum"]["toplam"])
+    except (ValueError, KeyError, TypeError) as e:
+        print(f"UYARI: {ad} okunamadı ({e}) — o günün temas_oturum alanı null", file=sys.stderr)
+        return None
+
+
+def geri_doldur(eski=()):
     gunler = [GERI_BAS + datetime.timedelta(days=i) for i in range((BUGUN - GERI_BAS).days + 1)]
+    # Temas eden ziyaret: 28 günlük değer SABİT haftalık ızgarada (TEMAS_IZGARA_BAS + 7k) ve kıyasın
+    # iki ucunda (bugün, −7); haftalık dilim yalnız gürültü kuralının iki ucunda (bugün ve −28).
+    # Eldeki olgun değer yeniden çekilmez.
+    # 08.10 onarım: ızgara BUGUN'e çapalıydı (bugün − 7k). Zincir başka bir gün koşunca ızgaranın
+    # bütün günleri değişiyor, her yeni günde 7 pencere + 2 dilim = 9 çağrı yapılıyordu. Sabit
+    # ızgarada geçmiş noktalar bir kez çekilir; eksik kalan nokta sonraki koşuda kendiliğinden dolar.
+    eski_geri = {r["tarih"]: r for r in eski if r.get("kaynak") == "geri_doldurma"}
+    sabit_izgara = {TEMAS_IZGARA_BAS + datetime.timedelta(days=7 * k)
+                    for k in range((BUGUN - TEMAS_IZGARA_BAS).days // 7 + 1)}
+    izgara = {"temas_oturum_28": sabit_izgara | {BUGUN, BUGUN - datetime.timedelta(days=7)},
+              "temas_oturum_hafta": {BUGUN, BUGUN - datetime.timedelta(days=28)}}
     serp = serp_serisi(gunler)
     hedef = hedef_serisi(gunler)
     # ada beklentisi: ada-beklenti-gecmis.jsonl'daki (tarih → oran) satırları
@@ -471,6 +681,14 @@ def geri_doldur():
             if h:
                 r.update({"ga4_oturum_hafta": h["oturum"], "ga4_sure_hafta": h["sure"], "ga4_hemen_hafta": h["hemen"],
                           "phone_click_hafta": h["phone"], "whatsapp_click_hafta": h["wa"]})
+        bit = g - datetime.timedelta(days=1)
+        for alan, gun_sayisi in (("temas_oturum_28", 28), ("temas_oturum_hafta", 7)):
+            v = eski_geri.get(gs, {}).get(alan)
+            if g in izgara[alan] and (v is None or (BUGUN - bit).days < TEMAS_OLGUN_GUN):
+                yeni = temas_cek(g - datetime.timedelta(days=gun_sayisi), bit)
+                v = yeni if yeni is not None else v
+            if v is not None:
+                r[alan] = v
         satirlar.append(r)
     return satirlar
 
@@ -495,6 +713,37 @@ def ust_yaz(satirlar, yeni):
     return list(d.values())
 
 
+def temas_gurultu(m, son_t, onceki_t, geri_satir):
+    """Temas farkı gürültüden ayrılıyor mu? (docstring'deki z kuralı.)
+
+    28 günlük iki pencere 7 gün arayla 21 günü paylaşır; fark yalnız GİREN hafta [t−7, t−1]
+    ile ÇIKAN haftanın [t−35, t−29] farkıdır. Oturum da değiştiği için beklenen pay giren
+    haftanın oturum payıdır. Haftalık dilimler geri doldurma satırlarında durur
+    (hafta(t) ve hafta(t−28)); yoksa ya da kıyas tam 7 gün değilse None (sınanamadı)."""
+    if m not in TEMAS_HAFTA or not onceki_t:
+        return None
+    son_d = datetime.date.fromisoformat(son_t)
+    if (son_d - datetime.date.fromisoformat(onceki_t)).days != 7:
+        return None
+    g = geri_satir.get(son_t)
+    c = geri_satir.get((son_d - datetime.timedelta(days=28)).isoformat())
+    if not g or not c:
+        return None
+    og, oc = g.get("ga4_oturum_hafta"), c.get("ga4_oturum_hafta")
+    if not og or not oc:
+        return None
+    for alanlar, olcu in TEMAS_HAFTA[m]:
+        gv, cv = [g.get(a) for a in alanlar], [c.get(a) for a in alanlar]
+        if None in gv or None in cv:
+            continue
+        giren, cikan = sum(gv), sum(cv)
+        n, p = giren + cikan, og / (og + oc)
+        z = (giren - n * p) / math.sqrt(n * p * (1 - p)) if n else 0.0
+        return {"z": round(z, 2), "giren": giren, "cikan": cikan, "oturum_giren": og, "oturum_cikan": oc,
+                "olcu": olcu, "bant": abs(z) < GURULTU_Z}
+    return None
+
+
 def ozet_kur(satirlar):
     # gün → (değer, kaynak, satır); aynı günde anlık satır geri doldurmayı ezer (karnede basılan oydu)
     seri = {m: {} for m in METRIK_AD}
@@ -506,6 +755,23 @@ def ozet_kur(satirlar):
     # anlık satır SERP rejim payını taşımaz (dogru-sayfa.json'dan gelir); aynı günün
     # geri doldurma satırı varsa pay oradan okunur
     geri_satir = {r["tarih"]: r for r in satirlar if r["kaynak"] == "geri_doldurma"}
+
+    # SERP metrikleri iki kaynakta da AYNI jsonl'den hesaplanır; aynı günün iki değeri ayrışıyorsa
+    # anlık satır o gün bayat girdiyle (ya da eski sınıflamayla) basılmıştır. Geri doldurma tam
+    # dosya ve güncel sınıflamayla hesaplanmış olandır — "son" nokta da öyle hesaplanıyor. GEÇMİŞ
+    # noktalarda seri geri doldurma değerini taşır, karnede o gün basılan değer `basilan`da kalır.
+    # Son gün dokunulmaz (karnede basılan rakam odur).
+    basilan = {m: {} for m in SERP_METRIK}
+    for m in SERP_METRIK:
+        if not seri[m]:
+            continue
+        son_gun = max(seri[m])
+        for t, (v, k, _r) in list(seri[m].items()):
+            g = geri_satir.get(t)
+            gv = g.get(m) if g else None
+            if t != son_gun and k == "anlik" and gv is not None and abs(gv - v) >= SERP_AYRISMA:
+                basilan[m][t] = v
+                seri[m][t] = (gv, "geri_doldurma", g)
 
     def bolge_pay(t, r):
         v = r.get("serp_bolge_turu_pay")
@@ -522,6 +788,17 @@ def ozet_kur(satirlar):
 
     def ayrisiyor(a, b):
         return a is not None and b is not None and abs(a - b) >= REJIM_ESIK
+
+    # seçici yeniden ölçüm: iki SERP metriği aynı pencereyi paylaşır, bir kez hesaplanır
+    _serp_kayit = []
+    _secici = {}
+
+    def secici(onceki_t, son_t):
+        if (onceki_t, son_t) not in _secici:
+            if not _serp_kayit:
+                _serp_kayit.extend(serp_kayitlari())
+            _secici[(onceki_t, son_t)] = secici_yeniden_olcum(onceki_t, son_t, *_serp_kayit)
+        return _secici[(onceki_t, son_t)]
 
     metrikler = {}
     for m, ad, birim, artis in METRIKLER:
@@ -541,6 +818,8 @@ def ozet_kur(satirlar):
                 onceki_t = t
                 break
         onceki_v = s[onceki_t][0] if onceki_t else None
+        onceki_k = s[onceki_t][1] if onceki_t else None
+        onceki_basilan = basilan.get(m, {}).get(onceki_t) if onceki_t else None
         fark = fark_yuzde = None
         if onceki_v is not None:
             fark = round(son_v - onceki_v, 2)
@@ -549,42 +828,94 @@ def ozet_kur(satirlar):
             yon = "nötr"
         else:
             yon = "iyi" if (fark > 0) == (artis == "iyi") else "kötü"
+        # Gürültü kuralı (temas metrikleri): fark gürültü bandındaysa ya da sınanamadıysa yön
+        # hükmü verilmez (−3 tık gibi küçük sayıda sınanmamış kırmızı ok yanıltır)
+        gurultu = temas_gurultu(m, son_t, onceki_t, geri_satir) if fark else None
+        if m in TEMAS_HAFTA and fark and (gurultu is None or gurultu["bant"]):
+            yon = "nötr"
         # 8 noktalı sparkline: son gün ve ondan önceki 7 gün, günlük kadans; boş gün null
         sp_t = [(son_d - datetime.timedelta(days=7 - i)).isoformat() for i in range(8)]
         sp = [s[t][0] if t in s else None for t in sp_t]
         kayit = {"ad": ad, "birim": birim, "artis": artis,
                  "son": son_v, "son_tarih": son_t, "son_kaynak": son_k,
                  "onceki": onceki_v, "onceki_tarih": onceki_t,
-                 "onceki_kaynak": s[onceki_t][1] if onceki_t else None,
+                 "onceki_kaynak": onceki_k, "onceki_karnede_basilan": onceki_basilan,
                  "fark": fark, "fark_yuzde": fark_yuzde, "yon": yon,
                  "sparkline": sp, "sparkline_tarihler": sp_t,
                  "nokta_sayisi": len(s)}
         notlar = []
+        if gurultu:
+            kayit["gurultu"] = gurultu
+            notlar.append(("gürültü bandında" if gurultu["bant"] else "gürültü bandının dışında") +
+                          f" (z={tr_sayi(gurultu['z'], 2)}; oturum düzeltmeli)")
+        elif m in TEMAS_HAFTA and fark:
+            notlar.append("gürültü sınaması yapılamadı (haftalık dilim yok ya da kıyas tam 7 gün değil); "
+                          "yön basılmadı")
+        if m in SERP_METRIK:
+            kayit["sparkline_duzeltilen"] = [t for t in sp_t if t in basilan[m]]
+        if onceki_basilan is not None:
+            notlar.append(f"{onceki_t[8:10]}.{onceki_t[5:7]} karnesinde basılan değer {tr_sayi(onceki_basilan, 1)} idi "
+                          f"(o gün girdi eksikti ya da sınıflama farklıydı); kıyas aynı ölçüm dosyasından yeniden "
+                          f"hesaplanan {tr_sayi(onceki_v, 1)} ile yapıldı")
         if onceki_t is None:
             notlar.append("7 gün önceki değer ölçülmedi")
-        elif son_k != s[onceki_t][1] and (m.startswith("gsc_") or m.startswith("ga4_")
-                                          or m in ("eryaman_tik_28", "phone_click_28", "whatsapp_click_28")):
-            # yalnız GSC/GA4: SERP ve hedef değerleri iki kaynakta da aynı jsonl'den gelir, ayrışmaz
+        elif son_k != onceki_k and (m.startswith("gsc_") or m.startswith("ga4_")
+                                    or m in ("eryaman_tik_28", "phone_click_28", "whatsapp_click_28",
+                                             "temas_oturum_28")):
+            # yalnız GSC/GA4: SERP değerleri iki kaynakta da aynı jsonl'den gelir; ayrıştığı
+            # geçmiş noktalar yukarıda geri doldurma değerine çevrildi (onceki_karnede_basilan)
             notlar.append("iki uç farklı kaynaktan (anlık JSON / geri doldurma); GSC son günleri sonradan "
                           "tamamlar, GA4 dünü yeniden işler — birkaç yüzde ayrışma veri olgunlaşmasıdır")
         rejim = False
+        nedenler = []   # olcum_yontemi_degisti'nin nedeni: bolge_turu / kanal_etiketi / secici_yeniden_olcum / tanim_degisti
         if m in SERP_METRIK:
             # rejim payı: iki ucun ölçümleri ne kadar bölge turundan (27.08+) geliyor
             kayit["son_bolge_turu_pay"] = bolge_pay(son_t, son_r)
             kayit["onceki_bolge_turu_pay"] = bolge_pay(onceki_t, s[onceki_t][2]) if onceki_t else None
-            if onceki_t and (kayit["onceki_bolge_turu_pay"] or 0) < (kayit["son_bolge_turu_pay"] or 0):
+            if onceki_t and ((kayit["son_bolge_turu_pay"] or 0)
+                             - (kayit["onceki_bolge_turu_pay"] or 0)) >= REJIM_NOT_ESIK:
                 notlar.append("önceki nokta daha çok 27.08 öncesi turdan; o turun 'ilk 10 dışı' sonuçları "
                               "yeniden ölçümde büyük ölçüde geri döndü (bkz. pencere_notu.serp)")
             rejim = ayrisiyor(kayit["son_bolge_turu_pay"], kayit["onceki_bolge_turu_pay"])
+            if rejim:
+                nedenler.append("bolge_turu")
+        if m in SECICI_METRIK and onceki_t:
+            sec = secici(onceki_t, son_t)
+            if sec:
+                kayit["secici_yeniden_olcum"] = sec
+                if sec["tek_yonlu"]:
+                    rejim = True
+                    nedenler.append("secici_yeniden_olcum")
+                    notlar.append(sec["not"])
         if m in HEDEF_METRIK:
             kayit["son_etiketli_pay"] = etiketli_pay(son_t, son_r)
             kayit["onceki_etiketli_pay"] = etiketli_pay(onceki_t, s[onceki_t][2]) if onceki_t else None
             rejim = ayrisiyor(kayit["son_etiketli_pay"], kayit["onceki_etiketli_pay"])
             if rejim:
+                nedenler.append("kanal_etiketi")
                 notlar.append("önceki nokta kanal etiketi taşımayan (27.08 öncesi) ölçümlerden; hedef sorgular "
                               "bölümü aynı kıyasa 'kanal değişti' diyor — fark iyi/kötü diye okunmaz")
+        # Tanım değişikliği (08.10). (a) Temas kartı tık yerine ziyareti saymaya başladı: kartın
+        # ziyaret bastığı İLK gün işaretlenir (fark geri doldurulmuş ziyaret serisinden, aynı
+        # tanımla hesaplanır; işaret bir gün önceki karnede basılı rakamın tık olduğunu söyler).
+        # (b) damla_acik artık yalnız https'li açık satırları sayıyor: eski tanımlı noktayla kıyas.
+        if m == "temas_oturum_28" and son_k == "anlik":
+            ilk_anlik = min(t for t, v in s.items() if v[1] == "anlik")
+            if son_t == ilk_anlik:
+                rejim = True
+                nedenler.append("tanim_degisti")
+                kayit["tanim_notu"] = ("kart bugünden itibaren tık yerine temas eden ziyareti sayıyor (önceki "
+                                       "karnelerde basılı rakam tıktı); fark ziyaret serisinden, aynı tanımla")
+                notlar.append(kayit["tanim_notu"])
+        if m == "damla_acik" and onceki_t and son_r.get("damla_tanim") != s[onceki_t][2].get("damla_tanim"):
+            rejim = True
+            nedenler.append("tanim_degisti")
+            kayit["tanim_notu"] = ("açık kayıt sayımı değişti: yalnız adresi yazılı açık satırlar sayılıyor; "
+                                   "önceki nokta kapanmış eski listeleri de sayıyordu")
+            notlar.append(kayit["tanim_notu"])
         # Rejim ayrışınca yön hükmü verilmez: karne ve yönetici özeti bu alanı okur.
         kayit["olcum_yontemi_degisti"] = bool(rejim)
+        kayit["rejim_nedeni"] = nedenler
         if rejim:
             kayit["yon"] = "nötr"
         if notlar:
@@ -606,9 +937,22 @@ def ozet_kur(satirlar):
             "serp": "her sayfa için o güne kadarki en taze ölçüm; payda = o güne dek en az bir kez ölçülen sayfa sayısı "
                     "(serp_olculen). 27.08 öncesi tur (22-23.08) kanal sınırında koştu ve 'ilk 10 dışı' sonuçları "
                     "kararsız çıktı: o sıfırların çoğu yeniden ölçümde ilk 10'a döndü. serp_bolge_turu_pay düşük "
-                    "noktalar aynı ölçüm rejiminde değildir.",
+                    "noktalar aynı ölçüm rejiminde değildir. İlk 3 ve doğru sayfa payında fark, pencerede yeniden "
+                    "ölçülen sorgular kuyruğun geneline benziyorsa okunur; yalnız sorunlu (ya da yalnız doğru) "
+                    "çıkanlar yeniden ölçüldüyse fark tek yönlüdür ve yön basılmaz (metrikteki "
+                    "secici_yeniden_olcum alanı). Geçmiş bir günün karnede basılan değeri aynı günün ölçüm "
+                    "dosyasından yeniden hesaplanan değerden ayrışıyorsa (o gün girdi eksikti ya da sınıflama "
+                    "farklıydı) kıyas ve sparkline yeniden hesaplanan değeri kullanır; basılan değer "
+                    "onceki_karnede_basilan alanında durur.",
             "hedef": "17 hedef sorgu; geri doldurmada yalnız sıra (kutu bilgisi geriye dönük güvenilir değil); "
                      "kanal karışık (hedef_kanal), 27.08 öncesi kayıtlar etiketsiz",
+            "temas": "temas eden ziyaret = 28 günde telefon ya da WhatsApp düğmesine basan ziyaret (yalnız canlı alan "
+                     "adı; form gönderimi ayrı). Sabit haftalık ızgarada ve kıyas günlerinde geri doldurulur, ara "
+                     "günler boş kalır. 27.08 "
+                     "öncesini içeren pencereler siteden kaldırılan Yenimahalle sayfalarının temaslarını da taşır, "
+                     "02.09 öncesinde telefon bağlarının bir kısmı izlenmiyordu: eski seviyeler hedef değildir. "
+                     "Temas farkı gürültü kuralından geçer (yön yalnız |z| ≥ 2 ise basılır; sınama "
+                     "yapılamıyorsa yön basılmaz).",
         },
         "metrikler": metrikler,
     }
@@ -618,7 +962,7 @@ def main():
     eski = gecmisi_oku()
     yeni = [anlik_satir()]
     if not YALNIZ_ANLIK:
-        yeni += geri_doldur()
+        yeni += geri_doldur(eski)
     hepsi = ust_yaz(eski, yeni)
     gecmisi_yaz(hepsi)
     oz = ozet_kur(hepsi)
