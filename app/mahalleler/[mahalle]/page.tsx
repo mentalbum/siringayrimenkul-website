@@ -464,15 +464,27 @@ export default async function MahallePage({ params }: Props) {
             sayfamızdan tanıyabilirsiniz.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
+          {/* 08.10: satış ve kiralama iki eşit kapı; ayrım `niyet` parametresinde,
+              olay adı ve konum eski seriyle aynı. */}
           <TrackedCtaLink
             href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
-              `Merhaba! ${mahalle.isim} — bu mahalledeki dairem için satış/kiralama değerlendirmesi almak istiyorum.`
+              `Merhaba, ${mahalle.isim} içindeki dairemi satmak istiyorum. Nasıl ilerleyebileceğimizi konuşmak istiyorum.`
             )}`}
-            gaEvent="whatsapp_click" gaParams={{ konum: "mahalle" }}
+            gaEvent="whatsapp_click" gaParams={{ konum: "mahalle", niyet: "satis" }}
             variant="primary"
             openInNewTab
           >
-            WhatsApp&apos;tan Yazın
+            Satış için WhatsApp
+          </TrackedCtaLink>
+          <TrackedCtaLink
+            href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(
+              `Merhaba, ${mahalle.isim} içindeki dairemi kiraya vermek istiyorum. Nasıl ilerleyebileceğimizi konuşmak istiyorum.`
+            )}`}
+            gaEvent="whatsapp_click" gaParams={{ konum: "mahalle", niyet: "kiralama" }}
+            variant="primary"
+            openInNewTab
+          >
+            Kiralama için WhatsApp
           </TrackedCtaLink>
           <TrackedCtaLink href={siteConfig.sahibindenUrl} gaEvent="sahibinden_click" gaParams={{ konum: "mahalle" }} openInNewTab variant="outline">
             sahibinden.com&apos;daki İlanlarımız

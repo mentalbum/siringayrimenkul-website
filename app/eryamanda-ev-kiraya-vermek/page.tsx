@@ -126,7 +126,7 @@ export default function KirayaVermekPage() {
             sonraydı — kiralama hunisi zaten satıştan 3,9 kat düşük dönüşüyor,
             sayfa farkı kapatmak yerine açıyordu. Kapıyı başlığın altına aldık. */}
         <div className="mt-6 flex flex-wrap items-center gap-3">
-          <CtaButton href="/ev-degerleme" variant="primary">
+          <CtaButton href="/ev-degerleme?niyet=kiralama" variant="primary">
             Kira Değerlendirmesi İsteyin
           </CtaButton>
           <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "kiraya_ust" }} variant="outline">
@@ -153,7 +153,7 @@ export default function KirayaVermekPage() {
           biz karşıladığımız için telefonunuz gün boyu çalmaz. Nihai kiracı kararı ise her zaman
           sizindir — biz eleriz, siz seçersiniz.
         </p>
-        <CtaButton href="/ev-degerleme" variant="primary" className="mt-4">
+        <CtaButton href="/ev-degerleme?niyet=kiralama" variant="primary" className="mt-4">
           Kiracı Arama Sürecini Başlatalım
         </CtaButton>
       </section>
@@ -296,7 +296,7 @@ export default function KirayaVermekPage() {
         baslik="İlk Adım: Kira Değerlendirmesi"
         aciklama="Dairenizin güncel kira değerini sitenizdeki gerçek kiralamalara göre birlikte belirleyelim; kiracı arama sürecini aynı gün başlatalım."
       >
-        <CtaButton href="/ev-degerleme" variant="primary">
+        <CtaButton href="/ev-degerleme?niyet=kiralama" variant="primary">
           Kira Değerlendirmesi İsteyin
         </CtaButton>
         <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "kiraya_banner" }} variant="outline-light">
