@@ -1,18 +1,18 @@
 {
  "guncelleme": "2026-10-08",
  "gurultu": {
-  "cift": 84,
-  "sessiz": 74,
+  "cift": 90,
+  "sessiz": 79,
   "oran": 88,
-  "giris_cikis": 99,
+  "giris_cikis": 101,
   "dagilim": [
    [
     0,
-    55
+    59
    ],
    [
     1,
-    19
+    20
    ],
    [
     2,
@@ -24,7 +24,7 @@
    ],
    [
     4,
-    2
+    3
    ],
    [
     6,
@@ -34,11 +34,11 @@
  },
  "olculen": 509,
  "kuyruk": 509,
- "kayit": 2226,
+ "kayit": 2264,
  "yas": [
   [
    "0-7 gün",
-   209
+   239
   ],
   [
    "8-14 gün",
@@ -50,7 +50,7 @@
   ],
   [
    "30+ gün",
-   300
+   270
   ]
  ],
  "bulgular": [
@@ -159,9 +159,9 @@
    "adet": 3,
    "aciklama": "Karne 'her rakam ölçümden üretiliyor' diyor; bu satırlar sabit sayı içeriyor ve veri değişince sessizce yanlışa düşerler. Tabloyla çelişen 14 rakam 31.08'de tam olarak böyle oluşmuştu. Tarihler, 'İlk 10' gibi etiketler, madde numaraları ve özel adlar (site ve işletme adındaki sayı) sayılmaz; kalanlar elle yazılmış sayı ya da eşiktir.",
    "ornek": [
-    "satır 1417: <p class=\"alt\" style=\"margin:8px 0 10px\">Konumu 5 ve üstü, 40+ gösteri",
-    "satır 1473: <p class=\"alt\" style=\"margin:10px 0 0\">Sıra okumak için isteğin üzerin",
-    "satır 2103: <li><span>7 günden eski ölçüm</span><span class=\"chip {'kotu' if _ho['"
+    "satır 1422: <p class=\"alt\" style=\"margin:8px 0 10px\">Konumu 5 ve üstü, 40+ gösteri",
+    "satır 1478: <p class=\"alt\" style=\"margin:10px 0 0\">Sıra okumak için isteğin üzerin",
+    "satır 2206: <li><span>7 günden eski ölçüm</span><span class=\"chip {'kotu' if _ho['"
    ],
    "agir": false,
    "temiz": false,

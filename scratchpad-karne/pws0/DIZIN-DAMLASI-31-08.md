@@ -455,3 +455,31 @@ Başlık deneyi 2'nin yeniden tarama listesi bu dosyada değil, `deney2-yeniden-
 - [~] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/kiratli-residence ← 07.10 istek gönderildi (eski adres)
 - [~] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/tan-yildizi-sitesi ← 07.10 istek gönderildi (eski adres)
 - [~] https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci/adalar/46643-7 ← 07.10 istek gönderildi (eski adres)
+
+## 08.10 — Başlık deneyi 2: iki kola eşli yeniden tarama (11/11 kabul, kota tavanı yine 11)
+
+Sıra ve kurallar `deney2-yeniden-tarama.tsv`'de; bu istekler dizin isteği DEĞİL yeniden tarama
+isteğidir (sayfaların hepsi zaten dizinde), o yüzden buraya `- [ ]` satırı olarak yazılmaz.
+
+Gönderilenler (sıra → saat, UTC): oyak-555 07:14 · relax-goksu 07:16 · mia-concept 07:17 ·
+kasmir-mavi-orkide 07:19 · mavicam 07:20 · canberk 07:21 · kc-lale 07:24 · dema-park 07:28 ·
+havuzlu-bahce 07:30 · arkadya-goksu 07:31 · koz-modern 07:33. **12. istek (address-eryaman)
+"Kota Aşıldı" verdi** — 04.10 ve 07.10'dan sonra üçüncü bağımsız günde de tavan 11.
+
+**İSTEK → TARAMA bağı yine sağlam:** 11 adresin 10'u istekten 1–3 dakika sonra yeniden tarandı
+(API, aynı oturum). Koz Modern henüz 27.09 taramasında; 09.10 sabahı yeniden bakılır.
+
+**Kota penceresi:** 10:02 ve 10:09'da "Kota Aşıldı" (istek işlenmedi), 10:13'te ilk istek geçti.
+07.10 istekleri 10:05–11:18 arasındaydı; yani pencere gerçekten kayan 24 saat ve ilk hak
+dünkü ilk isteğin saatinde açılıyor.
+
+**Arayüz dersi (yeni):** Chrome'da BAŞKA bir sekme öndeyken Search Console sekmesi odak alamıyor:
+tıklama geçiyor ama `document.activeElement` BODY kalıyor, kutuya yazılan adres düşmüyor ve
+`input.focus()` de işe yaramıyor. Ölçüm sekmesi kapatılınca sorun bitti. Kural: istek turunda
+Search Console sekmesi TEK sekme olsun (SERP ölçümü ayrı turda).
+
+**Onay kutusu dersi (teyit):** "Dizine eklenmesi istendi" kutusu açıkken kutuya yazılan yeni adres
+YUTULUYOR. Sıra: Kapat'a bas → 5 sn bekle → adresi yaz → 18 sn bekle → URL'yi doğrula → düğmeye bas.
+
+**"Bir sorun oluştu" (teyit):** kc-lale ve havuzlu-bahce'de çıktı, ikisi de ikinci denemede geçti.
+Kota değil, adrese özgü geçici hata.

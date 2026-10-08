@@ -4,14 +4,15 @@
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 77,
+   "deger": 75,
    "birim": "%",
-   "gosterim": "%77",
-   "ne_demek": "Ölçülen 509 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 390. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.)",
+   "gosterim": "%75",
+   "ne_demek": "Ölçülen 509 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 383. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.) Yansız örneğe göre gerçek değer yaklaşık %70.",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 509,
-    "ilk3": 390
+    "ilk3": 383,
+    "yansiz_tahmin": 70.1
    },
    "fark_7g": {
     "deger": 1.2,
@@ -40,32 +41,32 @@
    "deger": 91,
    "birim": "%",
    "gosterim": "%91",
-   "ne_demek": "İlk 3 sırada olduğumuz 390 sorgunun 354 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor (2 sorguda çıkan adres doğrulanamadı). Bu oran üst sınırdır: Ekim ayında yeniden ölçülen sorgularda oran %72, yeniden ölçülmeyen eski ölçümlerde %98. Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı. Gerçek oran %72 ile %91 arasındadır.",
+   "ne_demek": "İlk 3 sırada olduğumuz 383 sorgunun 348 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor. Bu oran üst sınırdır: Ekim ayında yeniden ölçülen sorgularda oran %77, yeniden ölçülmeyen eski ölçümlerde %98. Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı. Yansız örneğe göre gerçek değer yaklaşık %87.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
-    "ilk3_dogru": 354,
-    "ilk3_toplam": 390,
-    "adresi_dogrulanamayan": 2,
+    "ilk3_dogru": 348,
+    "ilk3_toplam": 383,
+    "adresi_dogrulanamayan": 0,
     "olcum_yasi": {
      "2026-08": {
-      "kayit": 23,
-      "ilk3": 20,
-      "ilk3_dogru": 15
+      "kayit": 21,
+      "ilk3": 18,
+      "ilk3_dogru": 13
      },
      "2026-09": {
-      "kayit": 277,
-      "ilk3": 259,
-      "ilk3_dogru": 259
+      "kayit": 249,
+      "ilk3": 233,
+      "ilk3_dogru": 233
      },
      "2026-10": {
-      "kayit": 209,
-      "ilk3": 111,
-      "ilk3_dogru": 80
+      "kayit": 239,
+      "ilk3": 132,
+      "ilk3_dogru": 102
      }
     },
     "secilmis_yeniden_olcum": {
-     "yeniden_olculen": 209,
-     "onceden_dogru": 37,
+     "yeniden_olculen": 239,
+     "onceden_dogru": 67,
      "kuyruk_onceden_dogru": 328,
      "kuyruk_toplam": 509,
      "kova": "2026-10",
@@ -77,23 +78,24 @@
       "2026-10"
      ],
      "taze": {
-      "kayit": 209,
-      "ilk3": 111,
-      "ilk3_dogru": 80
+      "kayit": 239,
+      "ilk3": 132,
+      "ilk3_dogru": 102
      },
      "eski": {
-      "kayit": 300,
-      "ilk3": 279,
-      "ilk3_dogru": 274
+      "kayit": 270,
+      "ilk3": 251,
+      "ilk3_dogru": 246
      },
-     "taze_oran": 72.1,
-     "eski_oran": 98.2,
-     "fark": 26.1,
-     "etki": 18.7,
+     "taze_oran": 77.3,
+     "eski_oran": 98.0,
+     "fark": 20.7,
+     "etki": 13.6,
      "hukum": "ust_sinir"
     },
     "yas_hukmu": "ust_sinir",
-    "guncelleme": "2026-10-08"
+    "guncelleme": "2026-10-08",
+    "yansiz_tahmin": 86.6
    },
    "fark_7g": {
     "deger": 10.9,
@@ -240,12 +242,13 @@
   {
    "tarih": "08.10",
    "iso": "2026-10-08",
-   "baslik_sayisi": 2,
+   "baslik_sayisi": 3,
    "basliklar": [
     "ölçüm aracı düzeltmeleri",
-    "inceleme sonrası onarım (yukarıdaki bölümün eki)"
+    "inceleme sonrası onarım (yukarıdaki bölümün eki)",
+    "(sabah) — yansız örnek ölçüldü, çıkarıcılar gerçek SERP'te doğrulandı"
    ],
-   "metin": "08.10 — ölçüm aracı düzeltmeleri · inceleme sonrası onarım (yukarıdaki bölümün eki)"
+   "metin": "08.10 — ölçüm aracı düzeltmeleri · inceleme sonrası onarım (yukarıdaki bölümün eki) · (sabah) — yansız örnek ölçüldü, çıkarıcılar gerçek SERP'te doğrulandı"
   },
   {
    "tarih": "07.10",

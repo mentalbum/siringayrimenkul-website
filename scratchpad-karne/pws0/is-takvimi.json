@@ -9,7 +9,7 @@
    "eski_adres": 0
   },
   "kota_gun": 10,
-  "baslangic": "2026-10-08",
+  "baslangic": "2026-10-09",
   "bitis_kota": null,
   "gun_sayisi": 0,
   "istek_gunluk": {
@@ -20,12 +20,15 @@
    "04.09": 3,
    "02.09": 2,
    "04.10": 11,
-   "07.10": 11
+   "07.10": 11,
+   "08.10": 11
   },
   "kuyruk_disi_istek": 11,
-  "deney_istek": 0,
-  "deney_istek_gunluk": {},
-  "ortalama_istek": 7.9,
+  "deney_istek": 11,
+  "deney_istek_gunluk": {
+   "08.10": 11
+  },
+  "ortalama_istek": 8.2,
   "bitis_gozlenen": null,
   "kendiliginden_dizine_giren": 20,
   "yeniden_denetimde_dizinde": 5,
@@ -212,7 +215,7 @@
   {
    "tarih": "2026-10-09",
    "tarih_tr": "09.10 Cuma",
-   "is": "Yansız 30'luk örnek + 31 gerçek-href sorgusu (yeniden-olcum-kuyrugu-0810.json: yansiz_ornek_30, oncelik_gercek_href). Kayıt ekle-deney-kompakt.py ile; robot duvarında dur.",
+   "is": "Kalan gerçek-bağ sorguları (ada 5 + Yeşilova dilimi 21): yeniden-olcum-kuyrugu-0810.json; 08.10'da 44. sorguda robot duvarı çıktı, yansız örnek ve 8 öncelikli sorgu tamamlandı.",
    "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır.",
    "kaynak": "kaldirac-defteri.json 'Tepe SERP rakamları seçici yeniden ölçümle şişik (üst sınır)'",
    "kim": "Claude"

@@ -1103,3 +1103,39 @@ GERÇEK SERP'TE DENENMEDİ; aşağıdaki "ilk ölçümde bak" listesi bu yüzden
   değil)" der; "ENGELLE KESİLDİ" yalnız robot duvarı ya da gezinme hatası içindir. İkisinde de çıkış kodu 2.
   Kayıt tarihi İstanbul gününden alınıyor (eskiden UTC'den: gece 00:00–03:00 arası koşan tur bir önceki günün
   tarihini yazıyor, o günün ölçülmüş sorgularını da atlıyordu).
+
+## 08.10 (sabah) — yansız örnek ölçüldü, çıkarıcılar gerçek SERP'te doğrulandı
+
+**Kanal:** Özgün'ün Chrome'u, `pws=0&gl=tr&hl=tr`, uule YOK (Eylül ve 06–07.10 deney kayıtlarıyla aynı rejim),
+`serp-cikarici-kompakt.js` + `ekle-deney-kompakt.py` (kanal alanı `deney-0410`).
+
+**Çıkarıcı doğrulaması (ilk kez gerçek sayfada):** "Akın 688 Konutları emlakçı" sayfasında kompakt çıkarıcı ve
+0710 çıkarıcısı aynı sonucu verdi (sıra 2, n 9, `u_kaynak` = href). Chrome'da bağlar ŞİFRELİ DEĞİL: gerçek adres
+okunuyor, yani eski adres / doğru sayfa ayrımı bu kanalda yapılabiliyor. `kap` alanı sonucun kutu metnini okudu
+(site sayfasında Google meta description'ımızı gösteriyor). `bas_tam` Google'ın gösterdiği başlığın tamamını veriyor.
+
+**Yansız örnek (yansiz_ornek_30, 30/30, robot duvarı yok):** önceden ilk 3'te doğru sayfayla çıkan 28 sorgunun
+21'i hâlâ öyle (%75; %95 aralık 57–87). 2'si ilk 3'te ama yanlış sayfa (Gözde 91: eski adres 2.; İçtaş Blokları:
+ŞOA'daki İçtaş sayfası 3.). 5'i ilk 3'ten düştü (Tekser 3→4 ve Eston 1 2→4 doğru sayfayla; Gülşah 95 1→4 ve Yeşil
+Vadim 2→6 mahalle sayfasıyla; Oyak Sitesi 1→ilk 10 dışı, SERP Çayyolu'ndaki adaşa dönmüş). Kaba yansıtma
+(`yansiz-ornek.json`): ilk 3 payı ~%70 (karnede %75), doğru sayfa ~%87 (karnede %91). Bu bir gerileme değil,
+seçici yeniden ölçümün gizlediği tabandır.
+
+**Gözlem (bas_tam sayesinde):** 30 sorgunun çoğunda Google hâlâ 04.10 ÖNCESİ başlığı gösteriyor
+("<Site> Emlakçı | Evinizi Satalım, Kiraya Verelim", mahallesiz) ya da kendi kurduğu başlığı
+("<Site> - <Mahalle> Eryaman - Şirin Gayrimenkul"). Mahalleli yeni başlık yalnız birkaç sayfada görünüyor
+(Alis, Çizgi Ötesi, Relax Göksu, Erkent). Yani 04.10 başlık değişikliği de Google'a büyük ölçüde ulaşmamış;
+Başlık deneyi 2'nin yeniden tarama istekleri bu yüzden önemli.
+
+**Öncelikli 8 sorgu (07.10'da adresi başlıktan varsayılanlar):** İlk Bahar gerçekte ESKİ ADRES (1. sırada
+`/mahalleler/devlet/ilk-bahar-sitesi`); Meltem ve Platin ilk 10'da yok; Göksu Evleri'nde Göksu Manzara Evleri
+sayfası 4.; Mavikent doğru sayfa 6.; Çağkent ve Altıntepe doğru 1.; Akkonak doğru 2.
+
+**Robot duvarı:** 44. sorguda (İnci Life Residence) çıktı; duruldu, o ölçüm yazılmadı, çözülmedi. Kalanlar:
+ada dilimi 5 sorgu + Yeşilova dilimi 21 sorgu. Sayım: 30 örnek + 8 öncelik + 5 yineleme (araç bağlantısı bir
+toplu çağrının ortasında koptu, sorgular arka planda koşmuş, çıktısı kaybolmuştu) + 1 duvar.
+DERS: toplu çağrıda bağlantı koparsa sorgular yine de gider; kopmadan sonra ÖNCE yüklü sayfayı oku, aynı
+sorguları yeniden gönderme. Toplu çağrı en çok 3–4 sorgu olsun.
+
+**GSC kotası:** 10:02 ve 10:09'da "Kota Aşıldı" (istek işlenmedi). 07.10 istekleri ~10:05–10:45 arasındaydı;
+kayan 24 saat penceresi 10:09'da henüz açılmamıştı.

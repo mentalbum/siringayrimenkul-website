@@ -11,8 +11,8 @@
  "donusum": 100,
  "istekten_sonra_tarandi": 68,
  "tarama_orani": 97,
- "girenlerden_olculdu": 56,
- "girenlerden_ilk3": 47,
+ "girenlerden_olculdu": 55,
+ "girenlerden_ilk3": 46,
  "tarihe_gore": [
   {
    "tarih": "01.09",
@@ -338,7 +338,7 @@
    "son_tarama": "2026-09-18",
    "istekten_sonra_tarandi": true,
    "sira_once": 2,
-   "sira_sonra": 2,
+   "sira_sonra": 1,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -996,7 +996,7 @@
    "son_tarama": "2026-09-08",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 1,
+   "sira_sonra": 2,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },
@@ -1024,7 +1024,7 @@
    "son_tarama": "2026-09-26",
    "istekten_sonra_tarandi": true,
    "sira_once": 0,
-   "sira_sonra": 1,
+   "sira_sonra": 0,
    "olculdu_sonra": true,
    "sonuc": "dizine girdi"
   },

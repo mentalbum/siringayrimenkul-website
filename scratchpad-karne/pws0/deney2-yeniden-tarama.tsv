@@ -26,18 +26,18 @@
 #   gos28 / tik28 = 07.09–04.10 Search Console sayfa gösterimi / tıkı (deney öncesi taban).
 # SINIRDA: çift 25 kontrol 2026-10-06T22:35:43Z — yayından sonraki ilk 45 dakikada taranmış; ilk bakışta yeniden doğrula.
 sira	cift	kol	url	yayin_sonrasi_taranmis	istek_zamani	ilk_tarama_yayin_sonrasi	son_tarama_0810	gos28	tik28
-1	1	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi	hayir			2026-09-27T06:57:38Z	2306	40
-2	1	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari	hayir			2026-09-30T16:08:34Z	1659	5
-3	2	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari	hayir			2026-10-03T22:18:07Z	841	5
-4	2	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi	hayir			2026-10-05T04:31:03Z	737	11
-5	3	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi	hayir			2026-09-28T04:53:01Z	732	15
+1	1	tedavi	https://www.siringayrimenkul.com/mahalleler/eryaman-mahallesi/oyak-555-konut-sitesi	evet	2026-10-08T07:14:00Z	2026-10-08T07:15:07Z	2026-09-27T06:57:38Z	2306	40
+2	1	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/relax-goksu-konutlari	evet	2026-10-08T07:16:30Z	2026-10-08T07:18:40Z	2026-09-30T16:08:34Z	1659	5
+3	2	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari	evet	2026-10-08T07:17:45Z	2026-10-08T07:19:23Z	2026-10-03T22:18:07Z	841	5
+4	2	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/kasmir-mavi-orkide-sitesi	evet	2026-10-08T07:19:20Z	2026-10-08T07:19:23Z	2026-10-05T04:31:03Z	737	11
+5	3	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/mavicam-sitesi	evet	2026-10-08T07:20:15Z	2026-10-08T07:21:37Z	2026-09-28T04:53:01Z	732	15
 -	3	kontrol	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/polsan-1-bahar-sitesi	evet		2026-10-07T20:47:52Z	2026-10-07T20:47:52Z	660	15
-6	4	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/canberk-sitesi	hayir			2026-10-01T14:05:24Z	660	9
-7	4	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri	hayir			2026-10-05T13:11:05Z	546	8
-8	5	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari	hayir			2026-09-05T01:39:31Z	509	8
-9	5	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/dema-park	hayir			2026-09-14T07:41:52Z	505	3
-10	6	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri	hayir			2026-09-23T15:57:07Z	504	6
-11	6	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/koz-modern	hayir			2026-09-27T08:04:02Z	476	3
+6	4	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/canberk-sitesi	evet	2026-10-08T07:21:40Z	2026-10-08T07:24:24Z	2026-10-01T14:05:24Z	660	9
+7	4	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/kc-lale-evleri	evet	2026-10-08T07:24:15Z	2026-10-08T07:25:35Z	2026-10-05T13:11:05Z	546	8
+8	5	tedavi	https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/havuzlu-bahce-konutlari	evet	2026-10-08T07:30:30Z	2026-10-08T07:31:33Z	2026-09-05T01:39:31Z	509	8
+9	5	kontrol	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/dema-park	evet	2026-10-08T07:28:20Z	2026-10-08T07:29:27Z	2026-09-14T07:41:52Z	505	3
+10	6	tedavi	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/arkadya-goksu-evleri	evet	2026-10-08T07:31:50Z	2026-10-08T07:33:32Z	2026-09-23T15:57:07Z	504	6
+11	6	kontrol	https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/koz-modern	hayir	2026-10-08T07:33:05Z		2026-09-27T08:04:02Z	476	3
 -	7	tedavi	https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/age-sitesi	evet		2026-10-07T06:05:20Z	2026-10-07T06:05:20Z	441	2
 12	7	kontrol	https://www.siringayrimenkul.com/mahalleler/altay-mahallesi/address-eryaman	hayir			2026-10-06T18:26:37Z	439	12
 13	8	tedavi	https://www.siringayrimenkul.com/mahalleler/seyh-samil-mahallesi/atayildiz-yasam-konutlari	hayir			2026-09-26T06:28:55Z	433	2

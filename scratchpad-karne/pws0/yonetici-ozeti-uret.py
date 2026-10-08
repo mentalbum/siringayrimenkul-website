@@ -358,8 +358,12 @@ YANSIZ_ALAN = {"ilk3_pay": "tahmini_ilk3_pay", "dogru_sayfa_pay": "tahmini_dogru
 def yansiz_tahmin(k):
     """Kart k için yansız örnekten yansıtılmış tahmin (ham sayı, ör. 70.1) ya da None."""
     try:
-        y = json.load(open(yol(YANSIZ_DOSYA), encoding="utf-8"))
-    except (FileNotFoundError, json.JSONDecodeError):
+        with open(yol(YANSIZ_DOSYA), encoding="utf-8") as f:
+            y = json.load(f)
+    # 08.10 inceleme: isteğe bağlı bir dosyanın bozuk olması (UTF-8 değil, izin yok, dizin)
+    # iki ANA kartı boşaltıyordu — hata çağıran kartın try bloğuna kaçıyordu. Bu dosya yoksa
+    # ya da okunamıyorsa kart eski metnine düşer, seri kırılmaz.
+    except (OSError, ValueError):
         return None
     if not isinstance(y, dict) or not y.get("olculen") or not isinstance(y.get("yansitma"), dict):
         return None
