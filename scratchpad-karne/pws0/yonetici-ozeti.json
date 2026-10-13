@@ -1,72 +1,65 @@
 {
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-14",
  "rakamlar": [
   {
    "k": "ilk3_pay",
    "baslik": "Site sorgularında ilk 3",
-   "deger": 75,
+   "deger": 74,
    "birim": "%",
-   "gosterim": "%75",
-   "ne_demek": "Ölçülen 509 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 383. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.) Yansız örneğe göre gerçek değer yaklaşık %70.",
+   "gosterim": "%74",
+   "ne_demek": "Ölçülen 509 site sorgusu içinde ilk 3 sıradan birini tuttuğumuz sorgu sayısı 379. (Sıra var demek doğru sayfa çıkıyor demek değil; o ayrım 2. rakamda.) Yansız örneğe göre gerçek değer yaklaşık %69.",
    "kaynak": "sonuclar-site-emlakci.jsonl + tur-*.json (karne başlık kartıyla aynı hesap)",
    "ayrinti": {
     "sorgu": 509,
-    "ilk3": 383,
-    "yansiz_tahmin": 70.1
+    "ilk3": 379,
+    "yansiz_tahmin": 69.4
    },
    "fark_7g": {
-    "deger": 1.2,
-    "onceki": 75.4,
-    "son": 76.6,
-    "kiyas_tarihi": "2026-10-01",
+    "deger": -2.1,
+    "onceki": 76.6,
+    "son": 74.5,
+    "kiyas_tarihi": "2026-10-07",
     "gun": 7,
     "birim": "puan",
-    "yon": "nötr",
-    "olcum_yontemi_degisti": true,
-    "rejim_nedeni": [
-     "secici_yeniden_olcum"
-    ],
-    "neden_kisa": "yalnız bir kesim yeniden ölçüldü, fark tek yönlü",
+    "yon": "kötü",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
     "gurultu": null,
-    "onceki_karnede_basilan": null,
+    "onceki_karnede_basilan": 77.0,
     "seri": [
      "ilk3_pay"
     ],
-    "not": "pencerede yeniden ölçülen 209 sorgudan 37 tanesi önceden doğru sayfaydı (kuyruk genelinde 509 sorgudan 328); çoğunlukla sorunlu çıkanlar yeniden ölçüldü, fark tek yönlü; bu sorguların önceki ölçümü 22.08–06.09 arasındaydı"
+    "not": "07.10 karnesinde bu rakam %77,0 basılmıştı (o gün ölçüm dosyasının tamamı okunmamıştı ya da sayım kuralı farklıydı); kıyas, aynı dosyadan bugünkü kuralla yeniden hesaplanan %76,6 ile yapıldı"
    }
   },
   {
    "k": "dogru_sayfa_pay",
    "baslik": "İlk 3 içinde doğru sayfa",
-   "deger": 91,
+   "deger": 92,
    "birim": "%",
-   "gosterim": "%91",
-   "ne_demek": "İlk 3 sırada olduğumuz 383 sorgunun 348 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor. Bu oran üst sınırdır: Ekim ayında yeniden ölçülen sorgularda oran %77, yeniden ölçülmeyen eski ölçümlerde %98. Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı. Yansız örneğe göre gerçek değer yaklaşık %87.",
+   "gosterim": "%92",
+   "ne_demek": "İlk 3 sırada olduğumuz 379 sorgunun 348 tanesinde arayanın karşısına doğru site sayfası çıkıyor; kalanında sırayı ada, mahalle, eski adres ya da başka bir site sayfamız tutuyor. Bu oran üst sınırdır: Ekim ayında yeniden ölçülen sorgularda oran %79, yeniden ölçülmeyen eski ölçümlerde %100. Yeniden ölçülenlerin çoğu önceki ölçümde sorunlu çıkanlardı. Yansız örneğe göre gerçek değer yaklaşık %86.",
    "kaynak": "dogru-sayfa.json",
    "ayrinti": {
     "ilk3_dogru": 348,
-    "ilk3_toplam": 383,
+    "ilk3_toplam": 379,
     "adresi_dogrulanamayan": 0,
     "olcum_yasi": {
-     "2026-08": {
-      "kayit": 21,
-      "ilk3": 18,
-      "ilk3_dogru": 13
-     },
      "2026-09": {
       "kayit": 249,
       "ilk3": 233,
       "ilk3_dogru": 233
      },
      "2026-10": {
-      "kayit": 239,
-      "ilk3": 132,
-      "ilk3_dogru": 102
+      "kayit": 260,
+      "ilk3": 146,
+      "ilk3_dogru": 115
      }
     },
     "secilmis_yeniden_olcum": {
-     "yeniden_olculen": 239,
-     "onceden_dogru": 67,
+     "yeniden_olculen": 260,
+     "onceden_dogru": 80,
      "kuyruk_onceden_dogru": 328,
      "kuyruk_toplam": 509,
      "kova": "2026-10",
@@ -78,69 +71,67 @@
       "2026-10"
      ],
      "taze": {
-      "kayit": 239,
-      "ilk3": 132,
-      "ilk3_dogru": 102
+      "kayit": 260,
+      "ilk3": 146,
+      "ilk3_dogru": 115
      },
      "eski": {
-      "kayit": 270,
-      "ilk3": 251,
-      "ilk3_dogru": 246
+      "kayit": 249,
+      "ilk3": 233,
+      "ilk3_dogru": 233
      },
-     "taze_oran": 77.3,
-     "eski_oran": 98.0,
-     "fark": 20.7,
-     "etki": 13.6,
+     "taze_oran": 78.8,
+     "eski_oran": 100.0,
+     "fark": 21.2,
+     "etki": 13.1,
      "hukum": "ust_sinir"
     },
     "yas_hukmu": "ust_sinir",
-    "guncelleme": "2026-10-08",
-    "yansiz_tahmin": 86.6
+    "guncelleme": "2026-10-14",
+    "yansiz_tahmin": 86.5
    },
    "fark_7g": {
-    "deger": 10.9,
-    "onceki": 79.9,
-    "son": 90.8,
-    "kiyas_tarihi": "2026-10-01",
+    "deger": 1.0,
+    "onceki": 90.8,
+    "son": 91.8,
+    "kiyas_tarihi": "2026-10-07",
     "gun": 7,
     "birim": "puan",
-    "yon": "nötr",
-    "olcum_yontemi_degisti": true,
-    "rejim_nedeni": [
-     "secici_yeniden_olcum"
-    ],
-    "neden_kisa": "yalnız bir kesim yeniden ölçüldü, fark tek yönlü",
+    "yon": "iyi",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
     "gurultu": null,
-    "onceki_karnede_basilan": null,
+    "onceki_karnede_basilan": 85.5,
     "seri": [
      "dogru_sayfa_pay"
     ],
-    "not": "pencerede yeniden ölçülen 209 sorgudan 37 tanesi önceden doğru sayfaydı (kuyruk genelinde 509 sorgudan 328); çoğunlukla sorunlu çıkanlar yeniden ölçüldü, fark tek yönlü; bu sorguların önceki ölçümü 22.08–06.09 arasındaydı; fark o günden beri birikmiş sindirim ve ölçüm tazelemesidir, bu haftanın kazancı değil; aynı pencerede ilk 3 payı %75,4 → %76,6, ilk 10 dışı %10,6 → %12,4"
+    "not": "07.10 karnesinde bu rakam %85,5 basılmıştı (o gün ölçüm dosyasının tamamı okunmamıştı ya da sayım kuralı farklıydı); kıyas, aynı dosyadan bugünkü kuralla yeniden hesaplanan %90,8 ile yapıldı"
    }
   },
   {
    "k": "gsc_eryaman_tik",
    "baslik": "Google′dan gelen tık (Eryaman)",
-   "deger": 1162,
+   "deger": 1052,
    "birim": "tık",
-   "gosterim": "1.162",
-   "ne_demek": "Son 28 günde (07.09–04.10) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 65.372 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
+   "gosterim": "1.052",
+   "ne_demek": "Son 28 günde (14.09–11.10) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 61.101 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
    "kaynak": "sonuc-ozeti.json (ayrim.eryaman.simdi)",
    "ayrinti": {
-    "gos": 65372,
+    "gos": 61101,
     "donem": {
-     "bas": "2026-09-07",
-     "bit": "2026-10-04",
+     "bas": "2026-09-14",
+     "bit": "2026-10-11",
      "gun": 28
     },
-    "uretim": "2026-10-08",
-    "toplam_tik": 1325
+    "uretim": "2026-10-14",
+    "toplam_tik": 1150
    },
    "fark_7g": {
-    "deger": -44,
-    "onceki": 1206,
-    "son": 1162,
-    "kiyas_tarihi": "2026-10-01",
+    "deger": -110,
+    "onceki": 1162,
+    "son": 1052,
+    "kiyas_tarihi": "2026-10-07",
     "gun": 7,
     "birim": "tık",
     "yon": "kötü",
@@ -161,45 +152,18 @@
    "deger": 15,
    "birim": "ziyaret",
    "gosterim": "15",
-   "ne_demek": "15 ziyaret (21 tık: 12 telefon, 9 WhatsApp). Son 28 günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: 0. (GA4; 1.296 oturum içinden.)",
+   "ne_demek": "15 ziyaret (17 tık: 6 telefon, 11 WhatsApp). Son 28 günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: 0. (GA4; 1.191 oturum içinden.)",
    "kaynak": "tik-sonrasi.json (temas.temas_oturum)",
    "ayrinti": {
     "temas_oturum": 15,
-    "tik": 21,
-    "telefon": 12,
-    "whatsapp": 9,
+    "tik": 17,
+    "telefon": 6,
+    "whatsapp": 11,
     "form": 0,
-    "oturum": 1296,
-    "guncelleme": "2026-10-08"
+    "oturum": 1191,
+    "guncelleme": "2026-10-14"
    },
-   "fark_7g": {
-    "deger": -6,
-    "onceki": 21,
-    "son": 15,
-    "kiyas_tarihi": "2026-10-01",
-    "gun": 7,
-    "birim": "ziyaret",
-    "yon": "nötr",
-    "olcum_yontemi_degisti": true,
-    "rejim_nedeni": [
-     "tanim_degisti"
-    ],
-    "neden_kisa": "sayım tanımı değişti",
-    "gurultu": {
-     "z": -0.79,
-     "giren": 3,
-     "cikan": 9,
-     "oturum_giren": 284,
-     "oturum_cikan": 507,
-     "olcu": "ziyaret",
-     "bant": true
-    },
-    "onceki_karnede_basilan": null,
-    "seri": [
-     "temas_oturum_28"
-    ],
-    "not": "telefon ya da WhatsApp düğmesine basan ziyaret (yalnız canlı alan adı); form gönderimi ayrı sayılır; gürültü bandında (z=-0,79; oturum düzeltmeli); kart bugünden itibaren tık yerine temas eden ziyareti sayıyor (önceki karnelerde basılı rakam tıktı); fark ziyaret serisinden, aynı tanımla"
-   }
+   "fark_7g": null
   },
   {
    "k": "hedef_kutuda",
@@ -215,9 +179,26 @@
     "kutu_var_biz_yok": 10,
     "organik_ilk3": 4,
     "organik_birinci": 1,
-    "guncelleme": "2026-10-08"
+    "guncelleme": "2026-10-14"
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 0,
+    "onceki": 6,
+    "son": 6,
+    "kiyas_tarihi": "2026-10-07",
+    "gun": 7,
+    "birim": "sorgu",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "hedef_kutuda"
+    ],
+    "not": null
+   }
   },
   {
    "k": "damla_kalan",
@@ -239,6 +220,15 @@
   }
  ],
  "bu_hafta_yapilan": [
+  {
+   "tarih": "14.10",
+   "iso": "2026-10-14",
+   "baslik_sayisi": 1,
+   "basliklar": [
+    "(00:40–00:50) — haftalık \"emlakçı\" endeksi, 1. tur: uule ÜÇ SORGUDAN SONRA TUTMADI"
+   ],
+   "metin": "14.10 — (00:40–00:50) — haftalık \"emlakçı\" endeksi, 1. tur: uule ÜÇ SORGUDAN SONRA TUTMADI"
+  },
   {
    "tarih": "08.10",
    "iso": "2026-10-08",
@@ -271,25 +261,24 @@
   {
    "tarih": null,
    "iso": null,
-   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 1.325 tıkın %13 kadarı (173) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 2.570 gösterim / 34 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (1.162 tık).",
+   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 1.150 tıkın %9 kadarı (106) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 2.209 gösterim / 28 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (1.052 tık).",
    "kaynak": "sonuc-ozeti.json (ayrim) + sayfa-turu-verimi.json (blog)",
    "ayrinti": {
-    "yenimahalle_tik": 173,
-    "toplam_tik": 1325,
-    "pay": 13,
-    "yazi_gos": 2570,
-    "yazi_tik": 34
+    "yenimahalle_tik": 106,
+    "toplam_tik": 1150,
+    "pay": 9,
+    "yazi_gos": 2209,
+    "yazi_tik": 28
    }
   }
  ],
  "gecmis": {
   "dosya": "karne-gecmis-ozet.json",
   "sahip": "anlik-goruntu-uret.py",
-  "kayit": 49,
-  "kiyas_tarihi": "2026-10-01"
+  "kayit": 50,
+  "kiyas_tarihi": "2026-10-07"
  },
  "uyarilar": [
-  "7 gün önceki değer seride yok, fark basılmadı: Hedef sorgularda harita kutusu, Dizin kuyruğu: Google′da olmayan sayfa — seri 2026-08-21 tarihinden beri birikiyor.",
-  "Fark iyi/kötü diye okunmaz: Site sorgularında ilk 3 (yalnız bir kesim yeniden ölçüldü, fark tek yönlü); İlk 3 içinde doğru sayfa (yalnız bir kesim yeniden ölçüldü, fark tek yönlü); Siteden gelen temas (ziyaret) (sayım tanımı değişti)."
+  "7 gün önceki değer seride yok, fark basılmadı: Siteden gelen temas (ziyaret), Dizin kuyruğu: Google′da olmayan sayfa — seri 2026-08-21 tarihinden beri birikiyor."
  ]
 }

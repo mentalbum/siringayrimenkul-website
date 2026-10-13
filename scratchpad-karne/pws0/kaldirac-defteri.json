@@ -250,7 +250,7 @@
    "durum": "acik",
    "olcum": "GSC sorgu x sayfa: ana sayfa emlak* 78,9->35,5 gos/gun, poz 2,98->3,89; uule olcumu 07.10 kutu 6/17 (Eylul 9/17). | 07.10 SERP (peer, uule, pws=0): 'emlakci' organik ilk 10 disi (28.08: #3), 2. sayfada yok; kutu #1 (Sirin, Ayyildiz, Efor). TEK olcum.",
    "gerekce": "Kalite-temizligi ve harita-kutusu hipotezleri curutuldu; genis tabanli hacim kaybi, spam update ile ayni gun. Eyleme donuk kalip yok.",
-   "sonraki_olcum": "20.10: aynı nokta + sorgu tekrar (çekirdek bölge turu) ve GSC günlük seri. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\". Ara okuma 11.10 (05–08.10 verisi gelince). Ana sayfada değişiklik yapılmaz.",
+   "sonraki_olcum": "20.10 çekirdek tur (uule loc kontrolüyle); GSC haftalık 'emlakçı' serisi izlenir, ana sayfa toplam gösterimi sabit kaldıkça alarm yok.",
    "nerede": "DENETIM-04-10.md 07.10 eki-2",
    "okuma_0710_b": "Cihaz/gün kırılımı (diğer oturum, gsc-q): (1) 15.09 desktop 208 gösterim konum 1,0 tek-gün anomalisi A penceresini şişiriyor; (2) jenerik 'emlakçı' mobilde 12–21.09 tümseği (20–59 gös/gün, kutu) eridi, Ekim Eylül-başı tabanında; (3) site geneli 5 haftada mobil −%36 / desktop −%39, kiralık −%22 / satılık −%36 (mevsim + spam update). 'eryaman emlakçı' mobil ~15→~6 ama konum 1,4 sabit, uule kutu #1; jenerik 'emlakçı' kutusunda da #1. GBP/kategori sorunu yok; 'emlak ofisi' kutusu kategoriye bağlı ama fırsat 6 gös/gün.",
    "takvim": [
@@ -260,7 +260,8 @@
      "is": "Yalın 'emlakçı' ara okuma: 05–08.10 Search Console verisi gelince telefondan günlük gösterim ve konum (node gsc-q.mjs 2026-09-21 2026-10-10 query,date,device \"query::equals::emlakçı\").",
      "neden": "07.10 ölçümünde ana sayfa bu sorguda organik ilk 10 dışındaydı (tek nokta, tek gün). 04.10'a kadar Search Console'da organik bandında gösterim sürüyordu (28.09–04.10 telefondan 86 gösterim, konum 5,5). 20.10 turundan önce kaybın sürüp sürmediği veriden görülür. Ana sayfada değişiklik yapılmaz."
     }
-   ]
+   ],
+   "okuma_1410": "Yalın 'emlakçı' KALICI KAYIP ilan edildi (iki koşul da tuttu): (i) uule=Eryaman merkez 14.10 n=9, organik ilk 10 dışı; (ii) GSC 'emlakçı' 05–11.10 haftası 13 gösterim (<30; önceki haftalar 170/421/58/98). NEDEN: organik ilk 10 artık il geneli listeler (armut, endeksa, remax, century21, hepsiemlak/ankara, bulurum, Wikipedia) — Google sorguyu yerel değil Ankara geneli yorumluyor; Eryaman sayfası sıralanamaz. Ana sayfanın toplam gösterimi sabit (76–142/gün), ticari kayıp yok. Harita kutusu merkezden #1 sürüyor. YAPILACAK İŞ YOK; ana sayfa başlığına dokunulmaz. 20.10 çekirdek turunda kutu+organik tekrar."
   },
   {
    "tarih": "2026-10-07",

@@ -1139,3 +1139,35 @@ sorguları yeniden gönderme. Toplu çağrı en çok 3–4 sorgu olsun.
 
 **GSC kotası:** 10:02 ve 10:09'da "Kota Aşıldı" (istek işlenmedi). 07.10 istekleri ~10:05–10:45 arasındaydı;
 kayan 24 saat penceresi 10:09'da henüz açılmamıştı.
+
+## 14.10 (00:40–00:50) — haftalık "emlakçı" endeksi, 1. tur: uule ÜÇ SORGUDAN SONRA TUTMADI
+
+`BOLGE_ON_AYAR=emlakci_haftalik` (8 nokta, Özgün'ün Chrome'u, pws=0). İlk üç sorgu doğru konumla döndü (loc: "06820,
+Etimesgut" / "Şehit Osman Avcı" / "Altay"), sonraki beşi (Şeker, Göksu, Yeşilova, Güzelkent, Etimesgut) hep
+"06824, Tunahan, Etimesgut/Ankara" verdi ve kutu içeriği aynıydı (Şirin #1 · Efor · Emre Emlak Elvankent).
+Kontrol: taze uule ile KIZILAY (20 km) ve Yeşilova yeniden → yine "Tunahan". Yani Google bir noktadan sonra uule'yi
+yok sayıp oturumun (ofis/Tunahan) konumuna yapışıyor. 28.08 turunda 10 nokta 10 farklı kutu vermişti; o gün tutuyordu.
+**Kural (yeni):** her bölge kaydında `loc` beklenen mahalleyle eşleşmiyorsa `konum_dogrulandi:false` + not; endekse
+girmez. Toplu turda uule'nin tuttuğu ilk 2-3 sorgudan sonra her sorguda loc kontrolü ŞART; tutmuyorsa dur, sorgu yakma.
+Deneme için: sorgular arası 60+ sn bekleme, ya da gizli pencere/başka profil; 20.10 çekirdek turundan önce sınanacak.
+
+**Geçerli 3 noktadan bulgu (eryaman merkez / ŞOA / Altay):** yalın "emlakçı" sorgusunun ORGANİK ilk 10'u artık tümüyle
+Ankara geneli listeler (armut.com/ankara-emlakci, endeksa agents, remaxyusufbalci "en iyi emlakçı ankara", century21,
+hepsiemlak/ankara, bulurum, remax, Wikipedia "Emlakçı"). Hiçbir Eryaman sayfası yok. Ana sayfamızın 28.08 → 07.10
+"3 → ilk 10 dışı" kaybı sayfa zayıflaması değil, SORGU YORUMUNUN DEĞİŞMESİ (yerel → il geneli). GSC'de "emlakçı"
+haftalık gösterim 170 / 421 / 58 / 98 / 13 (05–11.10 haftası 13) — ana sayfanın toplam gösterimi sabit (76–142/gün).
+Kutu: merkezden #1 (405 yorum; Efor 385), ŞOA ve Altay'dan kutuda yokuz (28.08 ile aynı).
+
+## 14.10 (00:50–01:00) — gerçek-href kuyruğu bitti: 5 ada + 21 Yeşilova/Yavuz Selim (deney-0410)
+
+Bugün toplam 26 site-emlakçı ölçümü + 8 bölge sorgusu + 2 kontrol = ~36 sorgu; robot duvarı görülmedi (08.10'da 44.
+sorguda gelmişti). 21'lik Yeşilova diliminde: ilk 10'da doğru sayfa 15, yanlış sayfa 3, ilk 10 dışı 5 (Address,
+Doğan City, Eryaman Port, Meva Şehir, Yükselen — hepsi ilan portalı/instagram/proje sitesi sayfaları). Üç yanlış:
+Özenkent → ozenkent-2-villalari #3 (ayırt edicilik), Lowland Business → Yeşilova mahalle sayfası #4 (sayfa hiç
+sıralamıyor), May Tower → `/mahalleler/yesilova/may-tower` #2 (ESKİ ŞEMA, 301'li adres hâlâ dizinde — eski_adres
+sayımına girer). İlkiz ilk denemede sonuç sayfası yerine işletme kartı döndürdü (n:0, kaydedilmedi); 10 dk sonra aynı
+sorgu normal SERP verdi (#1 + İlkiz 2 #4). KURAL: n:0 dönen sorgu kaydedilmez, tur sonunda bir kez yinelenir.
+**bas_tam gözlemi:** Penta 5 (tedavi kolu) SERP'te "Penta 5 Eryaman | Tapu ve Site Bilgileri - Şirin Gayrimenkul"
+başlığıyla #2 — yeniden tarama isteği gönderilmemiş bir tedavi sayfasında yeni başlığın kendiliğinden yansıdığı ilk
+gözlem (08.10'da Bordo Life/Göksu Metrokent kendi kendine taranmıştı; Penta 5 onlardan değil). Diğer 14 doğru sonucun
+başlığı hâlâ eski "Emlakçı | Evinizi Satalım…" ya da Google'ın yeniden yazdığı "- Yeşilova Eryaman - Şirin Gayrimenkul".

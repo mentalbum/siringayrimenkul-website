@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-14",
  "toplam": 509,
  "hepsi": [
   {
@@ -10,7 +10,7 @@
   {
    "k": "yok",
    "ad": "İlk 10′da yok",
-   "n": 66
+   "n": 71
   },
   {
    "k": "baska_site",
@@ -20,17 +20,17 @@
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 16
+   "n": 17
   },
   {
    "k": "eski",
    "ad": "Taşınmadan önceki adres",
-   "n": 16
+   "n": 14
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 12
+   "n": 8
   },
   {
    "k": "dis",
@@ -38,7 +38,7 @@
    "n": 1
   }
  ],
- "ilk3_toplam": 383,
+ "ilk3_toplam": 379,
  "ilk3": [
   {
    "k": "dogru",
@@ -46,24 +46,24 @@
    "n": 348
   },
   {
-   "k": "eski",
-   "ad": "Taşınmadan önceki adres",
-   "n": 15
-  },
-  {
    "k": "baska_site",
    "ad": "Başka bir site sayfamız",
-   "n": 12
+   "n": 13
+  },
+  {
+   "k": "eski",
+   "ad": "Taşınmadan önceki adres",
+   "n": 13
   },
   {
    "k": "mahalle",
    "ad": "Mahalle sayfamız",
-   "n": 4
+   "n": 3
   },
   {
    "k": "ada",
    "ad": "Ada sayfamız",
-   "n": 4
+   "n": 2
   }
  ],
  "ilk3_dogru": 348,
@@ -89,10 +89,6 @@
    7
   ],
   [
-   "yesilova-mahallesi",
-   7
-  ],
-  [
    "devlet-mahallesi",
    6
   ],
@@ -107,28 +103,27 @@
   [
    "tunahan-mahallesi",
    2
+  ],
+  [
+   "yesilova-mahallesi",
+   2
   ]
  ],
  "olcum_yasi": {
-  "2026-08": {
-   "kayit": 21,
-   "ilk3": 18,
-   "ilk3_dogru": 13
-  },
   "2026-09": {
    "kayit": 249,
    "ilk3": 233,
    "ilk3_dogru": 233
   },
   "2026-10": {
-   "kayit": 239,
-   "ilk3": 132,
-   "ilk3_dogru": 102
+   "kayit": 260,
+   "ilk3": 146,
+   "ilk3_dogru": 115
   }
  },
  "secilmis_yeniden_olcum": {
-  "yeniden_olculen": 239,
-  "onceden_dogru": 67,
+  "yeniden_olculen": 260,
+  "onceden_dogru": 80,
   "kuyruk_onceden_dogru": 328,
   "kuyruk_toplam": 509,
   "kova": "2026-10",
@@ -140,19 +135,19 @@
    "2026-10"
   ],
   "taze": {
-   "kayit": 239,
-   "ilk3": 132,
-   "ilk3_dogru": 102
+   "kayit": 260,
+   "ilk3": 146,
+   "ilk3_dogru": 115
   },
   "eski": {
-   "kayit": 270,
-   "ilk3": 251,
-   "ilk3_dogru": 246
+   "kayit": 249,
+   "ilk3": 233,
+   "ilk3_dogru": 233
   },
-  "taze_oran": 77.3,
-  "eski_oran": 98.0,
-  "fark": 20.7,
-  "etki": 13.6,
+  "taze_oran": 78.8,
+  "eski_oran": 100.0,
+  "fark": 21.2,
+  "etki": 13.1,
   "hukum": "ust_sinir"
  },
  "uulesiz_kayit": 490

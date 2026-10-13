@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-14",
  "uretim": "is-takvimi-uret.py",
  "damla": {
   "acik": 0,
@@ -9,7 +9,7 @@
    "eski_adres": 0
   },
   "kota_gun": 10,
-  "baslangic": "2026-10-09",
+  "baslangic": "2026-10-14",
   "bitis_kota": null,
   "gun_sayisi": 0,
   "istek_gunluk": {
@@ -21,14 +21,16 @@
    "02.09": 2,
    "04.10": 11,
    "07.10": 11,
-   "08.10": 11
+   "08.10": 11,
+   "13.10": 10
   },
   "kuyruk_disi_istek": 11,
-  "deney_istek": 11,
+  "deney_istek": 21,
   "deney_istek_gunluk": {
-   "08.10": 11
+   "08.10": 11,
+   "13.10": 10
   },
-  "ortalama_istek": 8.2,
+  "ortalama_istek": 8.4,
   "bitis_gozlenen": null,
   "kendiliginden_dizine_giren": 20,
   "yeniden_denetimde_dizinde": 5,
@@ -104,7 +106,7 @@
    "tarih": "2026-09-16",
    "tarih_tr": "16.09 Çarşamba",
    "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor.",
-   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 12, whatsapp_click 9 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
+   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 6, whatsapp_click 11 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
    "kaynak": "git log --grep '#88' + PROTOKOL-gece.md 02.09 (GA4 açıldı) + tik-sonrasi.json",
    "kim": "Claude"
   },
@@ -120,15 +122,57 @@
    "tarih": "2026-09-28",
    "tarih_tr": "28.09 Pazartesi",
    "is": "Beklenen düşüşler sınaması: python3 sonuc-ozeti-uret.py ve sayfa-turu-verimi.py yeniden; toplam tık çizgisi inmiş olmalı, Eryaman satırı inmemiş olmalı.",
-   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 1.325 tıkın 173 tıkı (%13) oradandı. Yazılar: 31 sayfa, 2.570 gösterim / 34 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 1.162 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
+   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 1.150 tıkın 106 tıkı (%9) oradandı. Yazılar: 29 sayfa, 2.209 gösterim / 28 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 1.052 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
    "kaynak": "git log --grep '#79' + sonuc-ozeti.json ayrim + sayfa-turu-verimi.json",
    "kim": "Claude"
   },
   {
    "tarih": "2026-10-08",
    "tarih_tr": "08.10 Perşembe",
+   "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10 ve 13.10 gönderildi (09–12.10 kota kullanılmadı: Claude haftalık kotası doluydu); kalan 67 istek 14–21.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
+   "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir.",
+   "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
+   "kim": "Claude",
+   "bitis": "2026-10-17",
+   "bitis_tr": "17.10 Cumartesi"
+  },
+  {
+   "tarih": "2026-10-08",
+   "tarih_tr": "08.10 Perşembe",
+   "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al. Aynı oturumda WhatsApp'ta 'dairem' ve \"Eryaman'daki evim\" ifadelerini ara; 09.09–06.10 arasında 'Merhaba' ile başlayan sohbetleri say ve her birini ev sahibi / daire arayan / diğer diye ayır (yalnız adet; isim ve numara yok).",
+   "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Özgün"
+  },
+  {
+   "tarih": "2026-10-09",
+   "tarih_tr": "09.10 Cuma",
+   "is": "Kalan gerçek-bağ sorguları (ada 5 + Yeşilova dilimi 21): yeniden-olcum-kuyrugu-0810.json; 08.10'da 44. sorguda robot duvarı çıktı, yansız örnek ve 8 öncelikli sorgu tamamlandı.",
+   "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır.",
+   "kaynak": "kaldirac-defteri.json 'Tepe SERP rakamları seçici yeniden ölçümle şişik (üst sınır)'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-10",
+   "tarih_tr": "10.10 Cumartesi",
+   "is": "GBP bağı değiştiyse 48 saat sonra kontrol: GA4'te medium=gbp oturumu ve GSC'de UTM'li sayfa gösterimi geri geldi mi (python3 hatirlanirlik-uret.py). Özgün'ün Performans ekran görüntüsü geldiyse gbp-performans.jsonl'e işle.",
+   "neden": "Bağ panelde kendiliğinden geri dönebiliyor (18.08'de öyle oldu); değişikliğin tuttuğu ancak seriyle görülür.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-11",
+   "tarih_tr": "11.10 Pazar",
+   "is": "Yalın 'emlakçı' ara okuma: 05–08.10 Search Console verisi gelince telefondan günlük gösterim ve konum (node gsc-q.mjs 2026-09-21 2026-10-10 query,date,device \"query::equals::emlakçı\").",
+   "neden": "07.10 ölçümünde ana sayfa bu sorguda organik ilk 10 dışındaydı (tek nokta, tek gün). 04.10'a kadar Search Console'da organik bandında gösterim sürüyordu (28.09–04.10 telefondan 86 gösterim, konum 5,5). 20.10 turundan önce kaybın sürüp sürmediği veriden görülür. Ana sayfada değişiklik yapılmaz.",
+   "kaynak": "kaldirac-defteri.json 'Eylul sonu dususu: yatay (-%17 her TO kovasi); yalin 'emlakci' ORGANIK'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-14",
+   "tarih_tr": "14.10 Çarşamba",
    "is": "Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği sürer, ne yazacağı müşteriye bırakılır.",
-   "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar.",
+   "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar. 14.10: ChatGPT'nin nötr istek metni + 5-7 gün sonra tek hatırlatma + kayıt şeması chatgpt-istisare-1310.md §2'de; Özgün onaylarsa yorum-toplama.md güncellenir.",
    "kaynak": "kaldirac-defteri.json 'Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyas' + hedef-sorgular.json (kutu_var ve kutuda alanları)",
    "kim": "Özgün",
    "ayrinti": [
@@ -195,48 +239,6 @@
    ]
   },
   {
-   "tarih": "2026-10-08",
-   "tarih_tr": "08.10 Perşembe",
-   "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
-   "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir.",
-   "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
-   "kim": "Claude",
-   "bitis": "2026-10-17",
-   "bitis_tr": "17.10 Cumartesi"
-  },
-  {
-   "tarih": "2026-10-08",
-   "tarih_tr": "08.10 Perşembe",
-   "is": "Google İşletme Profili: 'Web sitesi' alanına https://www.siringayrimenkul.com/?utm_source=google&utm_medium=gbp yaz; aynı oturumda kategori ekranının ve Performans (son 6 ay) sayfasının ekran görüntüsünü al. Aynı oturumda WhatsApp'ta 'dairem' ve \"Eryaman'daki evim\" ifadelerini ara; 09.09–06.10 arasında 'Merhaba' ile başlayan sohbetleri say ve her birini ev sahibi / daire arayan / diğer diye ayır (yalnız adet; isim ve numara yok).",
-   "neden": "En çok müşteri getiren kanalın web ayağı 11.08'den beri ölçülemiyor (UTM'li sayfanın son gösterim günü 11.08); panel 09.08'den beri okunmadı, birincil kategori değişmiş görünüyor.",
-   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
-   "kim": "Özgün"
-  },
-  {
-   "tarih": "2026-10-09",
-   "tarih_tr": "09.10 Cuma",
-   "is": "Kalan gerçek-bağ sorguları (ada 5 + Yeşilova dilimi 21): yeniden-olcum-kuyrugu-0810.json; 08.10'da 44. sorguda robot duvarı çıktı, yansız örnek ve 8 öncelikli sorgu tamamlandı.",
-   "neden": "Karnenin iki tepe SERP rakamı üst sınır: Ekim'de yalnız sorunlu çıkan sorgular yeniden ölçüldü, doğru sayılan 291 kayıt 06.09 ve öncesinden. Rastgele 30 sorgu, doğruların ne kadarının bozulduğunu gösterir. Rakam düşerse bu gerileme değil, yeni tabandır.",
-   "kaynak": "kaldirac-defteri.json 'Tepe SERP rakamları seçici yeniden ölçümle şişik (üst sınır)'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-10",
-   "tarih_tr": "10.10 Cumartesi",
-   "is": "GBP bağı değiştiyse 48 saat sonra kontrol: GA4'te medium=gbp oturumu ve GSC'de UTM'li sayfa gösterimi geri geldi mi (python3 hatirlanirlik-uret.py). Özgün'ün Performans ekran görüntüsü geldiyse gbp-performans.jsonl'e işle.",
-   "neden": "Bağ panelde kendiliğinden geri dönebiliyor (18.08'de öyle oldu); değişikliğin tuttuğu ancak seriyle görülür.",
-   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-11",
-   "tarih_tr": "11.10 Pazar",
-   "is": "Yalın 'emlakçı' ara okuma: 05–08.10 Search Console verisi gelince telefondan günlük gösterim ve konum (node gsc-q.mjs 2026-09-21 2026-10-10 query,date,device \"query::equals::emlakçı\").",
-   "neden": "07.10 ölçümünde ana sayfa bu sorguda organik ilk 10 dışındaydı (tek nokta, tek gün). 04.10'a kadar Search Console'da organik bandında gösterim sürüyordu (28.09–04.10 telefondan 86 gösterim, konum 5,5). 20.10 turundan önce kaybın sürüp sürmediği veriden görülür. Ana sayfada değişiklik yapılmaz.",
-   "kaynak": "kaldirac-defteri.json 'Eylul sonu dususu: yatay (-%17 her TO kovasi); yalin 'emlakci' ORGANIK'",
-   "kim": "Claude"
-  },
-  {
    "tarih": "2026-10-14",
    "tarih_tr": "14.10 Çarşamba",
    "is": "Bing Webmaster Tools: Google ile oturum aç, Search Console'dan içe aktar, ana sayfa + /mahalleler + /siteler + /etaplar + 11 mahalle sayfasını gönder. Bing Places kaydına bak (ad alanına dokunma). Search Console'a Instagram mülkünü ekle. Instagram İçgörüler 31.08–20.09 ekran görüntüsü.",
@@ -293,10 +295,10 @@
    "kim": "Claude"
   },
   {
-   "tarih": "2026-11-05",
-   "tarih_tr": "05.11 Perşembe",
+   "tarih": "2026-11-11",
+   "tarih_tr": "11.11 Çarşamba",
    "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
-   "neden": "08.10 ölçümü tek pencere (07.09–04.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %84,4, tık payı %80,9; yalın site adı sınıfı TO %0,7 (konum 9,9), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
+   "neden": "14.10 ölçümü tek pencere (14.09–11.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %83,5, tık payı %82,0; yalın site adı sınıfı TO %0,7 (konum 9,3), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
    "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
    "kim": "Claude"
   },

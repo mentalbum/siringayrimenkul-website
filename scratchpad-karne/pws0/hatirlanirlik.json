@@ -1,106 +1,90 @@
 {
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-14",
  "kaynak": "GSC (gsc-q.mjs: date,query + marka sorgu süzgeci) + GA4 (ga4-q.mjs kanal, acilis, gbp; yalnız canlı alan adı) + gbp-yorum-serisi.jsonl + gbp-performans.jsonl",
  "marka_suzgec": "(ş|s)irin\\s*(gayrimenkul|emlak|group)",
  "marka_dogrulama_suzgec": "yorum|[şs]ik[aâ]yet",
- "son_gsc_gunu": "2026-10-04",
+ "son_gsc_gunu": "2026-10-11",
  "ozet": {
   "marka_gos_28": {
-   "simdi": 140,
-   "onceki": 154,
-   "bit": "2026-10-04"
+   "simdi": 129,
+   "onceki": 165,
+   "bit": "2026-10-11"
   },
   "marka_tik_28": {
-   "simdi": 12,
+   "simdi": 14,
    "onceki": 14
   },
   "marka_dogrulama_gos_28": {
-   "simdi": 37,
+   "simdi": 43,
    "onceki": 0
   },
   "gbp_sayfa_gos_28": {
    "simdi": 0,
-   "onceki": 176
+   "onceki": 0
   },
   "direct_mobil_28": {
-   "simdi": 66,
-   "onceki": 71,
-   "bit": "2026-10-07"
+   "simdi": 54,
+   "onceki": 79,
+   "bit": "2026-10-13"
   },
   "direct_mobil_ana_28": {
-   "simdi": 17,
-   "onceki": 25,
-   "bit": "2026-10-07",
-   "etk_simdi": 7,
+   "simdi": 16,
+   "onceki": 24,
+   "bit": "2026-10-13",
+   "etk_simdi": 6,
    "etk_onceki": 10
   },
   "direct_mobil_derin_28": {
-   "simdi": 49,
-   "onceki": 46,
-   "bit": "2026-10-07",
-   "etk_simdi": 6,
-   "etk_onceki": 11
+   "simdi": 38,
+   "onceki": 55,
+   "bit": "2026-10-13",
+   "etk_simdi": 7,
+   "etk_onceki": 12
   },
   "direct_masaustu_28": {
-   "simdi": 67,
-   "onceki": 87
+   "simdi": 55,
+   "onceki": 94
   }
  },
  "marka_sorgu_28": [
   {
    "sorgu": "şirin gayrimenkul",
    "sinif": "cekirdek",
-   "simdi": 82,
-   "onceki": 96
+   "simdi": 73,
+   "onceki": 98
   },
   {
    "sorgu": "şirin gayrimenkul yorumları",
    "sinif": "dogrulama",
-   "simdi": 37,
+   "simdi": 43,
    "onceki": 0
   },
   {
    "sorgu": "şirin emlak",
    "sinif": "cekirdek",
-   "simdi": 30,
-   "onceki": 43
+   "simdi": 31,
+   "onceki": 45
   },
   {
    "sorgu": "şirin emlak eryaman",
    "sinif": "cekirdek",
-   "simdi": 23,
-   "onceki": 3
-  },
-  {
-   "sorgu": "şirin emlak sahibinden",
-   "sinif": "cekirdek",
-   "simdi": 4,
-   "onceki": 12
+   "simdi": 24,
+   "onceki": 6
   },
   {
    "sorgu": "şirin group",
    "sinif": "cekirdek",
    "simdi": 1,
    "onceki": 0
+  },
+  {
+   "sorgu": "şirin emlak sahibinden",
+   "sinif": "cekirdek",
+   "simdi": 0,
+   "onceki": 16
   }
  ],
  "haftalar": [
-  {
-   "bas": "2026-06-29",
-   "tam": true,
-   "marka_gos": 45,
-   "marka_tik": 17,
-   "marka_dogrulama": 0,
-   "gbp_sayfa_gos": 0,
-   "direct_mobil": 45,
-   "direct_mobil_ana": 44,
-   "direct_mobil_derin": 1,
-   "direct_masaustu": 2,
-   "sosyal": 3,
-   "ai": 0,
-   "gbp_mobil": 0,
-   "utm": "yok"
-  },
   {
    "bas": "2026-07-06",
    "tam": true,
@@ -311,6 +295,22 @@
   },
   {
    "bas": "2026-10-05",
+   "tam": true,
+   "marka_gos": 34,
+   "marka_tik": 5,
+   "marka_dogrulama": 6,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 10,
+   "direct_mobil_ana": 1,
+   "direct_mobil_derin": 9,
+   "direct_masaustu": 8,
+   "sosyal": 4,
+   "ai": 5,
+   "gbp_mobil": 0,
+   "utm": "yok"
+  },
+  {
+   "bas": "2026-10-12",
    "tam": false,
    "marka_gos": null,
    "marka_tik": null,
@@ -369,6 +369,12 @@
     "sirin": 404,
     "efor": 386,
     "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+   },
+   {
+    "d": "2026-10-14",
+    "sirin": 405,
+    "efor": 385,
+    "kaynak": "bolge-tur hk"
    }
   ],
   "tempo": [
@@ -413,21 +419,28 @@
     "gun": 33,
     "yeni": 5,
     "aylik": 4.5
+   },
+   {
+    "bas": "2026-10-07",
+    "bit": "2026-10-14",
+    "gun": 7,
+    "yeni": 1,
+    "aylik": 4.3
    }
   ],
   "son": {
-   "d": "2026-10-07",
-   "sirin": 404,
-   "efor": 386,
-   "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+   "d": "2026-10-14",
+   "sirin": 405,
+   "efor": 385,
+   "kaynak": "bolge-tur hk"
   },
   "efor_son": {
-   "d": "2026-10-07",
-   "sirin": 404,
-   "efor": 386,
-   "kaynak": "uule SERP kutu kartı (Efor 4,9/386, Ayyıldız 4,8/51)"
+   "d": "2026-10-14",
+   "sirin": 405,
+   "efor": 385,
+   "kaynak": "bolge-tur hk"
   },
-  "fark": 18
+  "fark": 20
  },
  "gbp_performans": [],
  "gbp_utm": {
@@ -448,13 +461,13 @@
     "gbp_mobil_max": 6
    },
    "utmsiz": {
-    "hafta": 7,
+    "hafta": 8,
     "bas": "2026-08-17",
-    "bit": "2026-10-04",
+    "bit": "2026-10-11",
     "ardisik": true,
-    "ana_min": 2,
+    "ana_min": 1,
     "ana_max": 10,
-    "ana_ort": 5.7,
+    "ana_ort": 5.1,
     "gbp_mobil_min": 0,
     "gbp_mobil_max": 0
    },
@@ -465,9 +478,9 @@
   "Sorgu boyutu GSC gizlilik süzgecinden geçer: marka gösterimi alt sınırdır, seri olarak okunur.",
   "+%25 altı fark yorumlanmaz (n küçük); mevsim kıyası için Ekim 2027 gerekir.",
   "Masaüstü Direct'te izleme/kendi trafiği şüphesi var; vekil yalnız MOBİL Direct'in ana sayfaya inen kısmı. Site sayfasına doğrudan düşen oturumlar ayrı tutulur.",
-  "GBP bağı UTM'sizken profil düğmesinden gelenler mobil Direct ana sayfaya karışır. UTM'li haftalarda (27.07–09.08) ana sayfaya doğrudan gelen mobil oturum haftada 1–3 (ortalama 2), UTM'siz haftalarda (17.08–04.10) haftada 2–10 (ortalama 5,7); UTM'li haftalarda profilden gelen mobil oturum (medium=gbp) haftada 2–6. UTM geri konunca ana sayfa mobil Direct 28 günde yaklaşık 8 beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra yapılır.",
+  "GBP bağı UTM'sizken profil düğmesinden gelenler mobil Direct ana sayfaya karışır. UTM'li haftalarda (27.07–09.08) ana sayfaya doğrudan gelen mobil oturum haftada 1–3 (ortalama 2), UTM'siz haftalarda (17.08–11.10) haftada 1–10 (ortalama 5,1); UTM'li haftalarda profilden gelen mobil oturum (medium=gbp) haftada 2–6. UTM geri konunca ana sayfa mobil Direct 28 günde yaklaşık 8 beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra yapılır.",
   "GBP bağı UTM'siz ve GBP Performans kaydı yokken mobil Direct hatırlanırlık vekili olarak okunmaz; yalnız taban kaydıdır.",
-  "Adımızın yanında 'yorum' ya da 'şikayet' geçen aramalar çekirdek markadan ayrı sayılır: son 28 günde 37 gösterim (önceki 0).",
-  "Ana sayfaya doğrudan gelen mobil oturum 28 günde 17 (önceki 25); sayı 30 eşiğinin altındayken yüzde fark yorumlanmaz."
+  "Adımızın yanında 'yorum' ya da 'şikayet' geçen aramalar çekirdek markadan ayrı sayılır: son 28 günde 43 gösterim (önceki 0).",
+  "Ana sayfaya doğrudan gelen mobil oturum 28 günde 16 (önceki 24); sayı 30 eşiğinin altındayken yüzde fark yorumlanmaz."
  ]
 }

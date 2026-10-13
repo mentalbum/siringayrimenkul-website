@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-14",
  "uretim": "yansiz-ornek-uret.py",
  "tohum": 20261008,
  "ornek": 30,
@@ -553,11 +553,11 @@
   }
  ],
  "yansitma": {
-  "eski_kova_kayit": 270,
-  "tahmini_ilk3_pay": 70.1,
-  "tahmini_dogru_sayfa_pay": 86.6,
-  "karnedeki_ilk3_pay": 75.2,
-  "karnedeki_dogru_sayfa_pay": 90.9,
+  "eski_kova_kayit": 249,
+  "tahmini_ilk3_pay": 69.4,
+  "tahmini_dogru_sayfa_pay": 86.5,
+  "karnedeki_ilk3_pay": 74.5,
+  "karnedeki_dogru_sayfa_pay": 91.8,
   "not": "Örnek oranları yeniden ölçülmemiş eski kayıtlara uygulandı; kaba tahmin."
  }
 }
