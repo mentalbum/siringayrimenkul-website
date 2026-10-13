@@ -63,6 +63,7 @@ const SORGULAR = process.env.BOLGE_SORGULAR
 //   BOLGE_ON_AYAR=cekirdek → 10 sorgu: çıplak "emlakçı" + "eryaman emlakçı" (kontrol) +
 //                            "emlak ofisi" × merkez/Göksu/Güzelkent, + marka sorgusu (merkez).
 //                            20.10 ve 04.11'de; çıplak "emlakçı" organik kaybı kalıcı mı sorusu.
+//   BOLGE_ON_AYAR=emlakci_haftalik → 8 sorgu: yalın "emlakçı" × 28.08'in 8 noktası, HAFTALIK (13.10).
 //   BOLGE_ON_AYAR=halka    → 18 sorgu: "emlakçı" + "emlak ofisi" × 28.08 tabanının 8 noktası,
 //                            + "eryaman emlakçı" × Sincan/Batıkent. GBP kategori/hizmet
 //                            değişikliğinden EN AZ 72 saat sonra; taban kutu #1 3/8 nokta.
@@ -78,6 +79,15 @@ const ON_AYARLAR = {
     noktalar: ['eryaman', 'sehit-osman-avci', 'seker', 'goksu', 'altay', 'yesilova', 'guzelkent', 'etimesgut'],
     sorgular: ['emlakçı', 'emlak ofisi'],
     ek: [['sincan', 'eryaman emlakçı'], ['batikent', 'eryaman emlakçı']],
+  },
+  // 13.10 (ChatGPT istişaresi D): yalın "emlakçı" için HAFTALIK sentetik görünürlük endeksi.
+  //   Aynı 8 nokta (28.08 tabanı), yalnız organik; ölçüt ilk-10 nokta payı + medyan organik konum.
+  //   Tek noktanın 3→11 olması önemsiz; 8 noktanın 8'inden 2'sine düşmek gerçek. GSC ana sayfa
+  //   gösterimi + temas sabitse ticari kayıp sayılmaz (kaldirac-defteri 'kalıcı kayıp' iki koşullu kural).
+  emlakci_haftalik: {
+    noktalar: ['eryaman', 'sehit-osman-avci', 'seker', 'goksu', 'altay', 'yesilova', 'guzelkent', 'etimesgut'],
+    sorgular: ['emlakçı'],
+    ek: [],
   },
 };
 const ON_AYAR = process.env.BOLGE_ON_AYAR || null;

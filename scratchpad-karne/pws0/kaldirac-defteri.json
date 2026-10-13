@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-10-08",
+ "guncelleme": "2026-10-13",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -226,7 +226,7 @@
      "bitis": "2026-10-17",
      "kim": "Claude",
      "oncelik": 1,
-     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10–17.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
+     "is": "Başlık deneyi 2: iki kola eşli yeniden tarama isteği (günde 11, deney2-yeniden-tarama.tsv sırasıyla). 08.10 ve 13.10 gönderildi (09–12.10 kota kullanılmadı: Claude haftalık kotası doluydu); kalan 67 istek 14–21.10 arası her gün; her istekten önce tek adreslik API bakışı, sayfa zaten taranmışsa istek atlanır. Aynı güne başka istek işi yazılıysa günün toplamı 11'i geçmez; bir çift bölünecekse o gün 10 istek gider. Gönderilen her isteğin zamanı deney2-yeniden-tarama.tsv'ye yazılır; takvim günlük istek sayısını oradan okur.",
      "neden": "Yeni başlık 07.10'da yayına girdi, ama 08.10 okumasında 50 tedavi sayfasının yalnız 2'si, 50 kontrol sayfasının 8'i o andan sonra taranmıştı. Google yeni başlığı görmeden deney ölçülemez: ölçülen etki gerçek etkinin %33–63'üne seyrelir ve bu tık sayısıyla gürültüye gömülür. İstek iki kola birlikte gider, çünkü aynı yayın bütün site sayfalarının gövdesini de değiştirdi. Bu sayfaların hepsi Google'da var; istek yeni hâllerinin okunması içindir."
     },
     {
@@ -325,7 +325,8 @@
     }
    ],
    "duzeltme_0810": "olcum alanındaki iki hatırlanırlık rakamı ayrıştırıldı. MARKA: 07.09–04.10 177 gösterim = çekirdek 140 (şirin gayrimenkul 82, şirin emlak 30, şirin emlak eryaman 23, şirin emlak sahibinden 4, şirin group 1) + doğrulama 37 ('şirin gayrimenkul yorumları', 0 tık; 90 günde yalnız 6 günde görünüyor, 14–28.09). Önceki 28 gün 154 ve içinde 'yorumları' yok; yani çekirdek 154 → 140 (−%9, eşik altı), '+%15' okuması geçersiz. DIRECT: 09.09–06.10 mobil Direct 71 oturum = ana sayfa 18 (7 etkileşimli) + site sayfaları 53 (8 etkileşimli); önceki 28 gün ana 24 / diğer 45. GBP bağı UTM'liyken (20.07–16.08) ana sayfa mobil Direct haftada 0–3, UTM'sizken (24.08–04.10) 4–10; aynı UTM'li haftalarda mobil medium=gbp 2–6/hafta. Bugünkü 18'in büyük kısmı büyük olasılıkla profil düğmesi tıkı (kesin kanıt değil). UTM geri konunca ~7/28 gün beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra. 04.11 okuması UTM geri konduysa Direct için kıyas değil taban kaydıdır. Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz.",
-   "kisit": "08.10 düzeltmesi: adımızla arama tabanı 140 çekirdek + 37 'yorumları' araması (toplam 177; çekirdek önceki dönemde 154, fark eşik altı). Mobil Direct'in 71 oturumundan 18'i ana sayfaya, 53'ü site sayfalarına gelmiş. Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz: GBP bağı UTM'sizken profil düğmesinden gelenler de bu kovaya düşüyor."
+   "kisit": "08.10 düzeltmesi: adımızla arama tabanı 140 çekirdek + 37 'yorumları' araması (toplam 177; çekirdek önceki dönemde 154, fark eşik altı). Mobil Direct'in 71 oturumundan 18'i ana sayfaya, 53'ü site sayfalarına gelmiş. Mobil Direct, GBP Performans kaydı gelene kadar hatırlanırlık vekili olarak okunmaz: GBP bağı UTM'sizken profil düğmesinden gelenler de bu kovaya düşüyor.",
+   "not_1310": "ChatGPT 4. istişare (chatgpt-istisare-1310.md): web tarafı 17.11'e kadar dondurulsun; GBP kategorisiyle OYNANMASIN (kutu #1, yeniden doğrulama riski) — plan §3.2 'Emlak Bürosu'na dönsün' maddesi düştü, yalnız ekran görüntüsü + bildirim kontrolü kaldı; UTM bizim şemada kalır (utm_medium=gbp); yorum SOP'si B1 = 08.10 politika bulgusu; yeni deney E = GBP WhatsApp sohbeti (ayrı kayıt)."
   },
   {
    "tarih": "2026-10-08",
@@ -364,6 +365,16 @@
    "kisit": "Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar.",
    "kaynak": "Google Haritalar katkı politikası (support.google.com/contributionpolicy/answer/7400114, 08.10.2026 okuması, iki ayrı çekim) + hedef-sorgular.json + hatirlanirlik.json",
    "nerede": "yorum-toplama.md, bulunabilirlik-programi.md, is-takvimi-uret.py (GBP yorum maddesi)"
+  },
+  {
+   "tarih": "2026-10-13",
+   "ad": "GBP'ye yerel WhatsApp sohbeti (ChatGPT 13.10 önerisi)",
+   "durum": "acik",
+   "karar_bekliyor": true,
+   "olcum": "Henüz ölçülmedi. Dayanak: temas kanalı sırası GBP > sahibinden > web (ölçülü); siteden temasın 9/21'i WhatsApp; GBP web bağı UTM'siz olduğu için Map Pack → web → WhatsApp zincirinin ilk halkası görünmüyor.",
+   "kisit": "GBP paneli değişikliği: Özgün'ün açık onayı şart. Özellik profilde görünmeyebilir (Profili düzenle → İletişim → Sohbet). Hazır mesaj benzersiz olmalı ki WhatsApp'ta sayılabilsin. 30 gün: o mesajla başlayan konuşma sayısı; kontrol: GBP çağrı+mesaj+web tıkı toplamı ARTMALI (telefonu WhatsApp'a kaydırmak başarı değil).",
+   "kaynak": "chatgpt-istisare-1310.md (E)",
+   "nerede": "GBP paneli (hamza hesabı)"
   }
  ]
 }

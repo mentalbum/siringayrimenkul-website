@@ -188,5 +188,6 @@
   "sehit-osman-avci-mahallesi/elit-yasam-konutlari-2",
   "guzelkent-mahallesi/erkent-sitesi",
   "sehit-osman-avci-mahallesi/demirer-sitesi"
- ]
+ ],
+ "okuma_kurali_ek_1310": "ChatGPT 13.10 (A): birincil okuma atama bazlı ITT — her URL için t0 = 07.10 sonrası ilk doğrulanmış tarama; 'Google yeni başlığı gösterdi mi' DAHİL OLMA KOŞULU DEĞİL (tedavinin parçası). İkincil mekanizma ölçütü rendered_title_state = test-başlığı / Google-yeniden-yazdı / eski-görünümlü (bas_tam alanından). Tedavi koluna özel iç bağ/lastmod verilmez. 17.11'de URL'lerin anlamlı kısmı hâlâ yayın-sonrası taranmamışsa takvim uzatılır, test değiştirilmez."
 }

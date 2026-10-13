@@ -483,3 +483,16 @@ YUTULUYOR. Sıra: Kapat'a bas → 5 sn bekle → adresi yaz → 18 sn bekle → 
 
 **"Bir sorun oluştu" (teyit):** kc-lale ve havuzlu-bahce'de çıktı, ikisi de ikinci denemede geçti.
 Kota değil, adrese özgü geçici hata.
+
+## 13.10 — Başlık deneyi 2 yeniden tarama, 2. gün (10/10 kabul; 09–12.10 boşa geçti)
+
+09–12.10'da hiç istek gidemedi (Claude'ın haftalık kotası dolmuştu; başka oturum da göndermedi). 13.10 22:54–23:11:
+sira 12–22 (15 hariç: bordo-life 12.10'da kendiliğinden taranmıştı; 23 goksu-metrokent de 11.10'da) → 10 istek, 10 kabul;
+çift 14 (24 terasevler / 25 hill-tower) bölünmesin diye 11. istek kullanılmadı. **İstek → tarama:** 10'u da 1–3 dakika içinde
+yeniden tarandı (API). Toplam 21/90 gönderildi; kalan 69, günde 10–11 ile ~21.10'da biter. Nihai okuma tarihi (son istek
++ 28 veri günü) buna göre ~18.11'e kayar; baslik-deneyi-0710.json'daki 17.11 "en erken" sayılır.
+
+**Arayüz dersi (yeni):** Piksel tıklaması (1241,359) bu oturumda düğmeye ULAŞMADI (pencere boyutu değişmişti: 1470×779);
+JS ile `closest('[role=button],button,[jsaction],[tabindex]')` üzerine mousedown/mouseup/click göndermek her seferinde
+çalıştı. Artık düğme için yalnız JS tıklaması kullanılır. Başka sekme (ChatGPT) arka planda açıkken Search Console
+AKTİF sekmede sorunsuz çalıştı; 08.10'daki odak sorunu yalnız Search Console arka plandayken oluyor.
