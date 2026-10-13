@@ -61,3 +61,48 @@ kaydırmak başarı değil). Web tarafını 17.11'e kadar büyük ölçüde dond
   Uygulama: bolge-tur.mjs'e BOLGE_ON_AYAR=emlakci_haftalik (yalın "emlakçı" × 28.08 tabanının 8 noktası, haftalık) eklendi; 10 yerine 8 nokta, çünkü taban 8 noktayla ölçüldü.
 - E: Yeni, ölçülebilir, kurallarla çelişmiyor; GBP paneli değişikliği → Özgün'ün açık onayı şart. Özellik Türkiye'de/bu
   kategoride görünmeyebilir; panelde "Sohbet" seçeneği var mı diye bakılacak. Kaldıraç defterine "acik, karar Özgün'de" yazıldı.
+
+## 2. tur (14.10 00:34, Özgün "konuş" dedi) — karar ayrıntıları
+
+**1) GBP WhatsApp sohbeti:** (a) Türkiye/kategori uygunluğu: ChatGPT "bilmiyorum" dedi; Google özelliği "belirli bölgelerde,
+bazı profillerde" diyor; panel yolu Profili düzenle → İletişim → Sohbet → WhatsApp; "Sohbet" alanı yoksa zorla açmanın yolu yok.
+(b) Kullanıcı tarafı: Search/Maps sonuçlarında click-to-chat düğmesi gösterilebiliyor; yerleşim profil/bölge bazlı, dört yüzeyde
+(mobil Search, mobil Maps, masaüstü Search/Maps) oturum kapalı kontrol edilmeli. (c) 24 saat şartı: yeni WhatsApp entegrasyonu
+için böyle bir kural bulunamadı; o kural 31.07.2024'te kapatılan Google mesajlaşma ürünüydü. Tek kişilik ofis için profil kapanma
+riski gösteren güncel kural yok. (d) Benzersiz hazır mesaj: "Merhaba, Google İşletme Profilinizden yazıyorum. Eryaman'da bir
+dairem var; satış veya kiralama için görüşmek istiyorum." — sitedekilerden farklı olsun; sayım WhatsApp'ta elle; GBP "Mesajlar"
+raporunun WhatsApp'ı ayırdığı belgeli değil. (e) Telefonu yer mi: güvenilir veri yok, varsayım yapma. 30 günlük okuma: önceki
+30 / sonraki 30 gün; ana KPI (GBP arama tıkı + benzersiz WhatsApp konuşması) / 1.000 profil görüntülemesi; kanal kayması başarı
+sayılmaz, toplam doğrudan temas oranı artmalı.
+
+**2) Nötr yorum isteme metni (Özgün onaylarsa yorum-toplama.md'ye girer):**
+> Bugünkü işlem sürecinde bizimle çalıştığınız için teşekkür ederiz.
+> Deneyiminizi Google'da paylaşmak isterseniz aşağıdaki bağlantıyı kullanabilirsiniz:
+> https://www.siringayrimenkul.com/yorum
+> Şirin Gayrimenkul
+Hatırlatma: 5–7 gün sonra yalnız bir kez, aynı tonda. Kayıt: işlem_tarihi | satış/kiralama | yorum_istendi_tarihi |
+hatırlatma_tarihi | yorum_geldi E/H | yorum_tarihi. Ölçüt: yorum geldi / yorum istendi. Personele yorum kotası KONMAZ
+(Google manipülasyon sayıyor).
+
+**3) Instagram faaliyet kanıtı (şablon 1, satış):** Görsel: sitenin dış cephesi/ortak alanından gerçek saha fotoğrafı, kişisel
+veri yok; üzerinde küçük "Satış süreci tamamlandı". Metin: "Eryaman'da bir konut için yürüttüğümüz satış süreci tamamlandı.
+Portföyün hazırlanmasından görüşmelerin yürütülmesine, evrak kontrolünden tapu sürecine kadar işlemi başından sonuna takip ettik.
+Eryaman'da evini satmayı düşünen mülk sahipleri satış süreciyle ilgili bizimle iletişime geçebilir. Şirin Gayrimenkul".
+Ölçüm: profil ziyareti + DM/WhatsApp başlatma; saha gönderisinde takipçi dışı erişim + kaydetme; ikincil temas / 1.000 erişim;
+beğeni sayısı ölçüt değil. ChatGPT üç şablon istendiği hâlde YALNIZ satış şablonunu yazdı; kiralama ve saha şablonları aşağıda Claude tarafından aynı kalıpla yazıldı.
+
+**Claude notu:** Şablon metinleri kurallara uygun (fiyat/ücretsiz/sayı iddiası/yorum sayısı/ad-adres yok; ton ölçülü-kurumsal).
+"Mülk sahipleri" ifadesi bizim dilde "ev sahipleri"; yayına girerse öyle yazılır. Üç konu da panel/saha işi: karar Özgün'de.
+
+**Şablon 2, kiralama (Claude yazdı, ChatGPT'nin kalıbıyla):** Görsel: sitenin dış cephesi ya da ortak alanı, gerçek saha
+fotoğrafı; üzerinde küçük "Kiralama süreci tamamlandı". Metin: "Eryaman'da bir konut için yürüttüğümüz kiralama süreci
+tamamlandı. Kira bedelinin belirlenmesinden kiracı görüşmelerine, sözleşmeden teslime kadar süreci ev sahibi adına takip ettik.
+Eryaman'da evini kiraya vermeyi düşünen ev sahipleri kiralama süreciyle ilgili bizimle iletişime geçebilir. Şirin Gayrimenkul".
+Ölçüm: profil ziyareti + DM/WhatsApp başlatma; ikincil temas / 1.000 erişim.
+
+**Şablon 3, saha bilgisi (Claude yazdı):** Görsel: belirli bir sitede çekilmiş gerçek saha fotoğrafı (blok cephesi, çevre
+düzeni, ulaşım noktası); üzerinde site adı. Metin: "<Site adı>, <Mahalle> — bu hafta sahadaydık. Sitenin blok düzeni, tapu
+niteliği ve çevresi hakkında güncel bilgiler sitemizdeki site sayfasında. Bu sitede daireniz varsa satış ya da kiralama için
+bize yazabilirsiniz. Şirin Gayrimenkul". Ölçüm: takipçi dışı erişim + kaydetme; profil ziyareti; ikincil temas / 1.000 erişim.
+Kural: fiyat, "ücretsiz", sayı/üstünlük iddiası, yorum sayısı, müşteri adı/adres yok; "kule" yok; Yenimahalle yok;
+gerçek saha ziyareti yoksa paylaşılmaz.

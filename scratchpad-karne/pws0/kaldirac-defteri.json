@@ -362,7 +362,7 @@
    "durum": "acik",
    "karar_bekliyor": true,
    "olcum": "Kazanç ölçülemedi: mahalle + emlakçı sorgularının Search Console'da görünen hacmi yok; hedef sorgularda harita kutusu 07.10'da 6/17 ve kampanya süresince kalıcı kutu girişi olmadı. Yorumdaki anahtar kelimenin kutu sırasını oynatmadığı dış kontrollü deneyde de görülmüştü (Sterling Sky, 2023). Risk: Google Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız olumlu yorum istemeyi yasaklıyor; yönlendirilmiş yorumlar Haritalar'dan kaldırılabiliyor.",
-   "kisit": "Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar.",
+   "kisit": "Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar. 14.10: ChatGPT'nin nötr istek metni + 5-7 gün sonra tek hatırlatma + kayıt şeması chatgpt-istisare-1310.md §2'de; Özgün onaylarsa yorum-toplama.md güncellenir.",
    "kaynak": "Google Haritalar katkı politikası (support.google.com/contributionpolicy/answer/7400114, 08.10.2026 okuması, iki ayrı çekim) + hedef-sorgular.json + hatirlanirlik.json",
    "nerede": "yorum-toplama.md, bulunabilirlik-programi.md, is-takvimi-uret.py (GBP yorum maddesi)"
   },
@@ -372,8 +372,8 @@
    "durum": "acik",
    "karar_bekliyor": true,
    "olcum": "Henüz ölçülmedi. Dayanak: temas kanalı sırası GBP > sahibinden > web (ölçülü); siteden temasın 9/21'i WhatsApp; GBP web bağı UTM'siz olduğu için Map Pack → web → WhatsApp zincirinin ilk halkası görünmüyor.",
-   "kisit": "GBP paneli değişikliği: Özgün'ün açık onayı şart. Özellik profilde görünmeyebilir (Profili düzenle → İletişim → Sohbet). Hazır mesaj benzersiz olmalı ki WhatsApp'ta sayılabilsin. 30 gün: o mesajla başlayan konuşma sayısı; kontrol: GBP çağrı+mesaj+web tıkı toplamı ARTMALI (telefonu WhatsApp'a kaydırmak başarı değil).",
-   "kaynak": "chatgpt-istisare-1310.md (E)",
+   "kisit": "GBP paneli değişikliği: Özgün'ün açık onayı şart. Özellik profilde görünmeyebilir (Profili düzenle → İletişim → Sohbet). Hazır mesaj benzersiz olmalı ki WhatsApp'ta sayılabilsin. 30 gün: o mesajla başlayan konuşma sayısı; kontrol: GBP çağrı+mesaj+web tıkı toplamı ARTMALI (telefonu WhatsApp'a kaydırmak başarı değil). 14.10 (ChatGPT 2. tur): Türkiye/kategori uygunluğu bilinmiyor, Google 'belirli bölgeler' diyor; 24 saat yanıt şartı yeni WhatsApp entegrasyonunda yok (eski Google mesajlaşma ürününe aitti). Hazır mesaj önerisi: 'Merhaba, Google İşletme Profilinizden yazıyorum. Eryaman'da bir dairem var; satış veya kiralama için görüşmek istiyorum.' Okuma: önceki 30 / sonraki 30 gün, (GBP arama tıkı + benzersiz WhatsApp konuşması) / 1.000 profil görüntülemesi.",
+   "kaynak": "chatgpt-istisare-1310.md (E); 2. tur 14.10",
    "nerede": "GBP paneli (hamza hesabı)"
   }
  ]
