@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-15",
  "uretim": "is-takvimi-uret.py",
  "damla": {
   "acik": 0,
@@ -9,7 +9,7 @@
    "eski_adres": 0
   },
   "kota_gun": 10,
-  "baslangic": "2026-10-14",
+  "baslangic": "2026-10-16",
   "bitis_kota": null,
   "gun_sayisi": 0,
   "istek_gunluk": {
@@ -22,15 +22,17 @@
    "04.10": 11,
    "07.10": 11,
    "08.10": 11,
-   "13.10": 10
+   "13.10": 10,
+   "15.10": 11
   },
   "kuyruk_disi_istek": 11,
-  "deney_istek": 21,
+  "deney_istek": 32,
   "deney_istek_gunluk": {
    "08.10": 11,
-   "13.10": 10
+   "13.10": 10,
+   "15.10": 11
   },
-  "ortalama_istek": 8.4,
+  "ortalama_istek": 8.6,
   "bitis_gozlenen": null,
   "kendiliginden_dizine_giren": 20,
   "yeniden_denetimde_dizinde": 5,
@@ -171,6 +173,14 @@
   {
    "tarih": "2026-10-14",
    "tarih_tr": "14.10 Çarşamba",
+   "is": "Bing Webmaster Tools: Google ile oturum aç, Search Console'dan içe aktar, ana sayfa + /mahalleler + /siteler + /etaplar + 11 mahalle sayfasını gönder. Bing Places kaydına bak (ad alanına dokunma). Search Console'a Instagram mülkünü ekle. Instagram İçgörüler 31.08–20.09 ekran görüntüsü.",
+   "neden": "Bing dizininde 1.178 adresin ~50'si var ve ChatGPT araması Bing'den besleniyor; Instagram 'eryaman emlakçı' organik 4. sırada ama hangi sorguyla tık aldığı bilinmiyor.",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Özgün"
+  },
+  {
+   "tarih": "2026-10-15",
+   "tarih_tr": "15.10 Perşembe",
    "is": "Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği sürer, ne yazacağı müşteriye bırakılır.",
    "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar. 14.10: ChatGPT'nin nötr istek metni + 5-7 gün sonra tek hatırlatma + kayıt şeması chatgpt-istisare-1310.md §2'de; Özgün onaylarsa yorum-toplama.md güncellenir.",
    "kaynak": "kaldirac-defteri.json 'Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyas' + hedef-sorgular.json (kutu_var ve kutuda alanları)",
@@ -239,27 +249,27 @@
    ]
   },
   {
-   "tarih": "2026-10-14",
-   "tarih_tr": "14.10 Çarşamba",
-   "is": "Bing Webmaster Tools: Google ile oturum aç, Search Console'dan içe aktar, ana sayfa + /mahalleler + /siteler + /etaplar + 11 mahalle sayfasını gönder. Bing Places kaydına bak (ad alanına dokunma). Search Console'a Instagram mülkünü ekle. Instagram İçgörüler 31.08–20.09 ekran görüntüsü.",
-   "neden": "Bing dizininde 1.178 adresin ~50'si var ve ChatGPT araması Bing'den besleniyor; Instagram 'eryaman emlakçı' organik 4. sırada ama hangi sorguyla tık aldığı bilinmiyor.",
-   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
-   "kim": "Özgün"
-  },
-  {
-   "tarih": "2026-10-15",
-   "tarih_tr": "15.10 Perşembe",
-   "is": "Eski adrese istek okuması: 07.10'da istek giden 11 eski adres için Search Console günlük gösterim (gsc-q.mjs page,date) ve URL denetimi (11 tek adreslik bakış, o günkü isteklerden sonra). İstek gitmemiş hacimli eski adreslerle kıyaslanır; sonuç deftere yazılır.",
-   "neden": "08.10 okumasında istekten 15 saat sonra 11 adresin 10'unda iz yoktu ve kaldıraç defterde ölü. Bu okuma ölü hükmünü ya doğrular ya da daraltır; o güne kadar eski adrese istek gönderilmez.",
-   "kaynak": "kaldirac-defteri.json 'Eski adresi yeniden taratma (yönlendirme birleştirme)'",
-   "kim": "Claude"
-  },
-  {
    "tarih": "2026-10-20",
    "tarih_tr": "20.10 Salı",
    "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
    "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı (tek nokta, tek gün). 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\".",
    "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-28",
+   "tarih_tr": "28.10 Çarşamba",
+   "is": "Eski adres iç bağ deneyi okuması (eski-adres-deneyi-1410.tsv): her kolda 'son tarama > 2026-10-15' oranı (API denetle-dosya, 100 adres); 07.10 istekli 8 adres ayrı kova. İkincil: varislerin aynı sorgulardaki gösterim payı (gsc sayfalar 28g).",
+   "neden": "Eski adres kopyaları (132 site + 113 ada, 3.032 gös/28g) 308'i hiç görmemiş; dizin isteği zayıf, sitemap taratmadı; son denenmemiş tetikleyici taranan sayfadan iç bağ.",
+   "kaynak": "kaldirac-defteri.json 'Eski adresi yeniden taratma (yönlendirme birleştirme)'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-28",
+   "tarih_tr": "28.10 Çarşamba",
+   "is": "Eski adres iç bağ deneyi okuması (bkz. okuma_kurali)",
+   "neden": "Deney 14.10 gece yayına girdi; 14 gün tarama penceresi.",
+   "kaynak": "kaldirac-defteri.json 'Eski adres tarama deneyi: /eski-adresler (noindex) sayfasından 50 eski'",
    "kim": "Claude"
   },
   {

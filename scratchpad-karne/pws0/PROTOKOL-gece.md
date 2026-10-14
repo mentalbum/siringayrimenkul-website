@@ -1200,3 +1200,17 @@ Ayrıntı: KARAR-BEKLEYENLER-1410.md.
 başlamadı). (2) Paylaşımlı ağaçta tsc, bayat `.next/types/validator.ts` yüzünden başka dalın rotasına takılıyor;
 dal doğrulamasında eslint + build kullan ya da `.next/types`'ı yeniden üret. (3) Başka dalın izlediği dosyalar
 ağaçta untracked duruyorsa checkout kilitlenir: önce cmp ile birebir aynı mı bak, aynıysa kopyayı kaldır.
+
+## 15.10 (00:54–01:09) — Başlık deneyi 2 yeniden tarama 3. gün: 11/11 kabul, 11/11 dakikalar içinde tarandı
+
+Önce API: sıradaki 34 adayın 18'i 13–14.10'da kendiliğinden taranmış (04.10 site tabanının etkisi sürüyor) →
+TSV'de `-` işaretlendi, istek harcanmadı. Kalan 11 (6 tedavi / 5 kontrol: hill-tower, inci-park, bp-residence,
+yurt-prestij, sertower, demirel-park, pozitif-life, safir, neva-prestij, irem, bulvar-1071) UI'den gönderildi;
+hepsi istekten 0–5 dk sonra taranmış (API). Pencere: ilk istek 21:54Z (13.10'un ilk isteğinden 25 saat sonra) →
+sonraki pencere ~15.10 22:00Z (16.10 01:00 yerel). Durum: istek 32 / kendiliğinden 28 / bekleyen 40 (100 satır).
+Reçete değişmedi: SC yeni sekmede ve önde (ChatGPT sekmesi arkada kaldı, odak sorunu çıkmadı); adres JS native
+setter + Enter; 18 sn; düğme JS; 45 sn; sonuç oku; Kapat; 5 sn. Bir toplu çağrıda bağlantı koptu, sayfa durumu
+okunarak isteğin gittiği görüldü (tekrar gönderilmedi). Ders: tsv-isaretle.py'de yanlış kol adı istek zamanını
+ezdi; betik artık pws0'da değil scratchpad'de — sütun adı doğrulanmadan çalıştırma.
+Aynı turda: sitemap GSC'ye yeniden gönderildi (ada lastmod değişimi), IndexNow 4 sayfa (/siteler, /iletisim,
+/mahalleler, 46480-1), karne v32 yayınlandı.
