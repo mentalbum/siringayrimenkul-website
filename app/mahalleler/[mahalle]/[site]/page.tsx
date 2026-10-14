@@ -671,7 +671,7 @@ export default async function SitePage({ params }: Props) {
                             >
                               <Image
                                 src={yol}
-                                alt={`${site.isim} ${etiket} ada — saha fotoğrafı ${i + 1}`}
+                                alt={`${site.isim} — saha fotoğrafı ${i + 1} (ada görünümü)`}
                                 width={1440}
                                 height={1080}
                                 sizes="(min-width: 640px) 92px, 30vw"

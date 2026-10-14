@@ -67,7 +67,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * /siteler 2026-08-02 diyordu ama o gün 14 kayıt yeniden yazılmıştı. */
     // 06.10: meta description 174 → ≤155 (SERP'te görünen metin) — hub tarihi içerik
     //        klasörüyle bu şablon tarihinin büyüğü (/mahalleler kalıbı).
-    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-06")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
+    // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
+    //        (86 → 70 karakter, SERP'te görünen metin); /iletisim ile aynı gün.
+    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-14")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
@@ -89,7 +91,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     // 07.10: yetki belgesi numarası Bakanlığın TTBS sorgu sayfasına bağlandı (görünen metin).
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
+    // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
+    //        (72 → 62 karakter, SERP'te görünen metin). /hakkimizda değişmedi, eki duruyor.
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-14"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
@@ -280,9 +284,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Yandex; tarama sırasına dair bir vaat değiller.
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) => {
     const gruplar = new Map<string, number>();
+    // 14.10: ada sayfasının içeriği (tapu niteliği, blok künyesi, galeri, SSS)
+    // SİTE kaydından türüyor, mahalle JSON'undan değil. Tarih mahalle
+    // dosyasından okununca 605 tek-siteli ada aynı damgayı taşıyordu (tazelik
+    // sinyali düz). Tek-siteli adada (adet === 1) sahip site tektir; tarih o
+    // sitenin JSON + sınır dosyasından okunur (site sayfasıyla aynı kaynak).
+    const sahipSite = new Map<string, string>();
     for (const ada of getAllAdalar(mahalle.slug)) {
       const key = adaRouteKey(ada);
       gruplar.set(key, (gruplar.get(key) ?? 0) + 1);
+      sahipSite.set(key, ada.site.slug);
     }
     // Ada sayfasındaki saha fotoğrafları (adalar[].gorseller) burada bildirilir.
     // Sayfada Next'in /_next/image proxy'si üzerinden servis ediliyorlar ve
@@ -292,13 +303,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const ada of getAllAdalar(mahalle.slug)) {
       if (ada.gorseller?.length) gorselMap.set(adaRouteKey(ada), ada.gorseller);
     }
-    return [...gruplar]
-      .filter(([, adet]) => adet === 1)
-      .map(([key]) => {
+    return [...sahipSite]
+      .filter(([key]) => gruplar.get(key) === 1)
+      .map(([key, siteSlug]) => {
         const gorseller = gorselMap.get(key);
         return {
           url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
-          lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.ada),
+          lastModified: enYeni(getSiteLastModified(mahalle.slug, siteSlug), SABLON.ada),
           changeFrequency: "yearly" as const,
           priority: 0.2,
           ...(gorseller && { images: gorseller.map((y) => `${baseUrl}${y}`) }),

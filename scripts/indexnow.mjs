@@ -4,23 +4,30 @@
 //
 // Kullanım:
 //   node scripts/indexnow.mjs /mahalleler/tunahan-mahallesi/dema-park [...yol]
-//   node scripts/indexnow.mjs --son-commit          (son commit'te değişen site sayfaları)
+//   node scripts/indexnow.mjs --son-commit          (son commit'te değişen içerik sayfaları)
 //   node scripts/indexnow.mjs --son-commit=3        (son 3 commit)
 //
-// Anahtar: public/<key>.txt (deploy edilmiş olmalı — motorlar anahtarı
-// https://<host>/<key>.txt adresinden doğrular).
+// --son-commit eşlemesi (content/ dosyası → sayfa yolu):
+//   content/siteler/<mahalle>/<site>.json  → /mahalleler/<mahalle>/<site>
+//   content/mahalleler/<mahalle>.json      → /mahalleler/<mahalle>
+//   content/blog/<slug>.mdx                → /blog/<slug>
+//   Sınır .geojson, lastmod.json ve şablon (JSX) değişiklikleri eşlenmez —
+//   o sayfaların yolunu elle ver.
+//
+// Anahtar: public/<KEY>.txt SABİT (14.10). Eskiden public/ altındaki ilk
+// 32-hex .txt dosyası readdirSync sırasına göre seçiliyordu; iki anahtar
+// dosyası varken hangisinin gideceği dosya sistemi sırasına kalıyordu. İkinci
+// dosya (07db06e6…) silindi. Motorlar anahtarı https://<host>/<KEY>.txt
+// adresinden doğrular — dosya deploy edilmiş olmalı.
 import { execSync } from "node:child_process";
-import { readdirSync } from "node:fs";
+import { existsSync } from "node:fs";
 
 const HOST = "www.siringayrimenkul.com";
-const keyDosya = readdirSync(new URL("../public", import.meta.url)).find((f) =>
-  /^[0-9a-f]{32}\.txt$/.test(f)
-);
-if (!keyDosya) {
-  console.error("public/ altında 32-hex .txt anahtar dosyası yok.");
+const KEY = "4f66b60d9d5d45368c5f4e5f538adf2a";
+if (!existsSync(new URL(`../public/${KEY}.txt`, import.meta.url))) {
+  console.error(`public/${KEY}.txt yok — anahtar dosyası silinmiş ya da taşınmış.`);
   process.exit(1);
 }
-const KEY = keyDosya.replace(".txt", "");
 
 let yollar = process.argv.slice(2).filter((a) => !a.startsWith("--"));
 const sonCommit = process.argv.find((a) => a.startsWith("--son-commit"));
@@ -31,8 +38,13 @@ if (sonCommit) {
     encoding: "utf8",
   }).split("\n");
   for (const d of dosyalar) {
-    const m = d.match(/^content\/siteler\/([^/]+)\/([^/]+)\.json$/);
-    if (m) yollar.push(`/mahalleler/${m[1]}/${m[2]}`);
+    const site = d.match(/^content\/siteler\/([^/]+)\/([^/]+)\.json$/);
+    if (site) { yollar.push(`/mahalleler/${site[1]}/${site[2]}`); continue; }
+    const mahalle = d.match(/^content\/mahalleler\/([^/]+)\.json$/);
+    if (mahalle) { yollar.push(`/mahalleler/${mahalle[1]}`); continue; }
+    // content/blog: 19 yazının tamamı .mdx (14.10'da sayıldı; lib/content.ts de .mdx okur).
+    const blog = d.match(/^content\/blog\/([^/]+)\.mdx$/);
+    if (blog) yollar.push(`/blog/${blog[1]}`);
   }
 }
 yollar = [...new Set(yollar)];

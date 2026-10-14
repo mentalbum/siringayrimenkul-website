@@ -122,8 +122,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       return adaylar.find((a) => a.length <= 150) ?? adaylar[adaylar.length - 1];
     })(),
     alternates: { canonical: `/mahalleler/${mahalle.slug}` },
-    robots:
-      mahalle.durum === "yakinda" ? { index: false, follow: true } : { index: true, follow: true },
+    // 14.10: robots yalnız "yakinda" durumunda yazılır. Next metadata birleşimi
+    // SIĞ (generate-metadata.md "Merging": iç içe alanlar son segmentçe tümüyle
+    // değiştirilir): burada her durumda yazılan robots nesnesi kök layout'un
+    // googleBot direktiflerini (max-image-preview:large, max-snippet:-1,
+    // max-video-preview:-1) eziyordu — 11 mahalle sayfası yalnız "index, follow"
+    // taşıyordu. Alan hiç verilmeyince kök miras kalır.
+    ...(mahalle.durum === "yakinda" && { robots: { index: false, follow: true } }),
   };
 }
 
