@@ -56,11 +56,11 @@
  * çıktı — listeden çıkarıldılar. Yani liste her gün biraz bayatlar; dizin
  * isteği GÖNDERMEDEN ÖNCE o sayfayı tek tek doğrula, kota boşa gitmesin.
  *
- * ÖZEL VAKA — goksu-mahallesi/gsv-spor-sitesi bu listede DEĞİL: dizin sorunu
- * değil, adres sorunu. GSC "Duplicate, Google chose different canonical" diyor
- * ve seçtiği kanonik ESKİ adres (/mahalleler/goksu/gsv-spor-sitesi, 25.07'de
- * taranmış). Çözüm iç bağ değil, o adresin yeniden taranması (eski-adres
- * site haritası 07.10'da kaldırıldı; 308 duruyor).
+ * ÖZEL VAKA (KAPANDI 14.10) — goksu-mahallesi/gsv-spor-sitesi: Ağustos'ta GSC
+ * "Duplicate, Google chose different canonical" diyor ve kanonik olarak ESKİ
+ * adresi (/mahalleler/goksu/gsv-spor-sitesi, 25.07 taraması) seçiyordu. 14.10
+ * API denetimi: "Submitted and indexed", kanonik kendi adresi, son tarama
+ * 16.09 — eski-adres sorunu bu sayfa için kendiliğinden kapandı.
  *
  * SONRAKİ TAZELEME: bu liste kendiliğinden bayatlar — sayfa dizine girince
  * çıkarılmalı. Ölçüm komutu (tahmin etme, ölç):
@@ -160,18 +160,16 @@
  *   yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi
  *   yavuz-selim-mahallesi/yunuskent-sitesi, yesilova-mahallesi/gokdemir-tower
  *   yesilova-mahallesi/lokasyon-eryaman
- * KALAN TEK KAYIT HAYALET ADAYI: sehit-osman-avci-mahallesi/cumhuriyet-sitesi
- * "URL is unknown to Google" dedi ama content/siteler/sehit-osman-avci-mahallesi/
- * cumhuriyet-sitesi.json YOK — 511f45ab ile Kutlutaş 2 Blokları'na birleştirilmiş
- * (24.08'deki metropol-bloklari dersiyle aynı durum; eryaman-mahallesi'ndeki
- * cumhuriyet-sitesi AYRI bir site). 14.10 bakımının kapsamı yalnız "dizinde"
- * hükmü alanları çıkarmaktı; bu kaydı silme kararı ayrı verilmeli.
+ * HAYALET KAYIT ÇIKARILDI (15.10, inceleme): sehit-osman-avci-mahallesi/
+ * cumhuriyet-sitesi "URL is unknown to Google" demişti ama content/siteler/
+ * sehit-osman-avci-mahallesi/cumhuriyet-sitesi.json YOK — 511f45ab ile Kutlutaş 2
+ * Blokları'na birleştirilmiş (24.08'deki metropol-bloklari emsaliyle aynı durum;
+ * eryaman-mahallesi'ndeki cumhuriyet-sitesi AYRI bir site). Liste 14.10 itibarıyla
+ * BOŞ: 112 kaydın 111'i dizinde, 1'i hayaletti. Mekanizma (komşu kartı
+ * yönlendirmesi) duruyor; yeni kayıt ancak API teyitli "dizin dışı" + JSON
+ * dosyası VAR koşuluyla eklenir.
  */
-const DIZINSIZ: Record<string, readonly string[]> = {
-  "sehit-osman-avci-mahallesi": [
-    "cumhuriyet-sitesi",
-  ],
-};
+const DIZINSIZ: Record<string, readonly string[]> = {};
 
 /** Bu mahalledeki dizinsiz site slug'ları (ölçüm tarihi: 2026-08-01). */
 export function taramaOncelikliSlugs(mahalleSlug: string): readonly string[] {
