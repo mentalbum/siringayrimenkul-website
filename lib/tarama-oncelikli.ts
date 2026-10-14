@@ -83,141 +83,93 @@
  * EK 2026-08-24: caglar-belde-sitesi çıkarıldı — 23.08 istek → 35 dk'da
  * tarandı, DİZİNDE (API teyitli). Dünkü Güzelkent 8'lisinin 5'i UNKNOWN'dan
  * "Discovered"a ilerledi (istek işleniyor); dizine girince çıkarılacaklar.
+ *
+ * 14.10 BAKIM (GSC API teyitli): 111 çıkarıldı (dizinde), 1 kaldı.
+ * Denetim: 112 adresin tamamı URL Inspection ile tek tek soruldu (1 dizin dışı,
+ * 0 hata). Çıkarılanlar (hükmü "URL Google'da mevcut"):
+ *   altay-mahallesi/betontas-bloklari, altay-mahallesi/eryaman-park-evleri
+ *   altay-mahallesi/ilbeyi-sitesi, altay-mahallesi/vatan-sitesi
+ *   devlet-mahallesi/arslanlar-sitesi, devlet-mahallesi/dastarli-sitesi
+ *   devlet-mahallesi/denizim-sitesi, devlet-mahallesi/mavi-koy-sitesi
+ *   devlet-mahallesi/sedirkent-sitesi, devlet-mahallesi/sergah-evleri
+ *   devlet-mahallesi/turkkonut-sinem-sitesi, devlet-mahallesi/vatan-sitesi
+ *   devlet-mahallesi/yesiloz-sitesi, eryaman-mahallesi/atakent-1-asiyan-sitesi
+ *   eryaman-mahallesi/ay-sitesi, eryaman-mahallesi/caglar-sitesi
+ *   eryaman-mahallesi/guzel-ankara-evleri-sitesi
+ *   eryaman-mahallesi/lacin-eryaman-sitesi, goksu-mahallesi/endora-goksu
+ *   goksu-mahallesi/goksu-arma, goksu-mahallesi/goksu-bilge-sitesi
+ *   goksu-mahallesi/goksu-park-vadi-konutlari, goksu-mahallesi/gsv-spor-sitesi
+ *   goksu-mahallesi/irem-konutlari, goksu-mahallesi/kafdagi-sitesi
+ *   goksu-mahallesi/paro-life, goksu-mahallesi/polsan1-ayisigi-sitesi
+ *   goksu-mahallesi/tulip-life, goksu-mahallesi/utkan-sitesi
+ *   goksu-mahallesi/utku-kent-2-sitesi
+ *   guzelkent-mahallesi/1-portakal-cicegi-sitesi
+ *   guzelkent-mahallesi/ak-91-sitesi, guzelkent-mahallesi/altay-sitesi
+ *   guzelkent-mahallesi/ankolular-sitesi, guzelkent-mahallesi/arzutas-sitesi
+ *   guzelkent-mahallesi/buyuk-ankara-sitesi
+ *   guzelkent-mahallesi/dogus-91-sitesi, guzelkent-mahallesi/ekin-sitesi
+ *   guzelkent-mahallesi/elele-sitesi, guzelkent-mahallesi/gercek-92-sitesi
+ *   guzelkent-mahallesi/gordogu-sen-sitesi, guzelkent-mahallesi/gozde-1-sitesi
+ *   guzelkent-mahallesi/gozde-2-sitesi, guzelkent-mahallesi/gulsah-95-sitesi
+ *   guzelkent-mahallesi/ipek-yapi-sitesi
+ *   guzelkent-mahallesi/konuta-ozlem-sitesi
+ *   guzelkent-mahallesi/kurtulus-sitesi, guzelkent-mahallesi/kusburnu-sitesi
+ *   guzelkent-mahallesi/master-kent-sitesi, guzelkent-mahallesi/meltem-sitesi
+ *   guzelkent-mahallesi/mesa-calisanlari-kooperatifi
+ *   guzelkent-mahallesi/oz-muhtar-sitesi, guzelkent-mahallesi/renk-villalari
+ *   guzelkent-mahallesi/sehit-ferhat-koc-sitesi
+ *   guzelkent-mahallesi/selale-sitesi, guzelkent-mahallesi/seniz-sitesi
+ *   guzelkent-mahallesi/yesim-kent2-sitesi
+ *   guzelkent-mahallesi/yukselay-sitesi
+ *   sehit-osman-avci-mahallesi/address-goksu
+ *   sehit-osman-avci-mahallesi/akasya-sitesi
+ *   sehit-osman-avci-mahallesi/akin-688-konutlari
+ *   sehit-osman-avci-mahallesi/arkadya-goksu-evleri
+ *   sehit-osman-avci-mahallesi/bossphorus-konutlari
+ *   sehit-osman-avci-mahallesi/bulvar-1071-sitesi
+ *   sehit-osman-avci-mahallesi/bulvar-312-konutlari
+ *   sehit-osman-avci-mahallesi/cicek-sitesi
+ *   sehit-osman-avci-mahallesi/cizgi-otesi-residence
+ *   sehit-osman-avci-mahallesi/gode-yasam-konutlari
+ *   sehit-osman-avci-mahallesi/goksu-prestij
+ *   sehit-osman-avci-mahallesi/hill-tower-goksu
+ *   sehit-osman-avci-mahallesi/ictas
+ *   sehit-osman-avci-mahallesi/inci-park-evleri-sitesi
+ *   sehit-osman-avci-mahallesi/kardelen-sitesi
+ *   sehit-osman-avci-mahallesi/metropark-concept
+ *   sehit-osman-avci-mahallesi/neva-panora-konutlari
+ *   sehit-osman-avci-mahallesi/relax-eryaman-konutlari
+ *   sehit-osman-avci-mahallesi/soyak-sitesi
+ *   sehit-osman-avci-mahallesi/ucyildiz-sitesi
+ *   sehit-osman-avci-mahallesi/yildiz-eryaman, seker-mahallesi/address-enda
+ *   seker-mahallesi/akdal-residence, seker-mahallesi/altas-relax-line
+ *   seker-mahallesi/altas-rezidans, seker-mahallesi/diamond-residence
+ *   seker-mahallesi/izoser-residence, seyh-samil-mahallesi/acar-sitesi
+ *   seyh-samil-mahallesi/camlica-sitesi, seyh-samil-mahallesi/gul-sitesi
+ *   seyh-samil-mahallesi/kosk-birlik-sitesi
+ *   seyh-samil-mahallesi/kuryap-sitesi, seyh-samil-mahallesi/liderkent
+ *   seyh-samil-mahallesi/onur-sitesi, seyh-samil-mahallesi/ozanadolu
+ *   seyh-samil-mahallesi/ozluce-guzelevim, seyh-samil-mahallesi/sumeyra-sitesi
+ *   seyh-samil-mahallesi/yagan-kent, seyh-samil-mahallesi/yesil-asiyan-sitesi
+ *   seyh-samil-mahallesi/zadegan-sitesi, tunahan-mahallesi/akturk-sitesi
+ *   tunahan-mahallesi/camli-klima-bloklari, tunahan-mahallesi/ilgazlar-sitesi
+ *   tunahan-mahallesi/okyanus-plaza, yavuz-selim-mahallesi/acat-konutlari
+ *   yavuz-selim-mahallesi/erkaraca-sitesi
+ *   yavuz-selim-mahallesi/ozenkent-2-villalari
+ *   yavuz-selim-mahallesi/sahibin-sitesi, yavuz-selim-mahallesi/uyum-90-sitesi
+ *   yavuz-selim-mahallesi/yesil-goksu-konutyapi-kooperatifi
+ *   yavuz-selim-mahallesi/yunuskent-sitesi, yesilova-mahallesi/gokdemir-tower
+ *   yesilova-mahallesi/lokasyon-eryaman
+ * KALAN TEK KAYIT HAYALET ADAYI: sehit-osman-avci-mahallesi/cumhuriyet-sitesi
+ * "URL is unknown to Google" dedi ama content/siteler/sehit-osman-avci-mahallesi/
+ * cumhuriyet-sitesi.json YOK — 511f45ab ile Kutlutaş 2 Blokları'na birleştirilmiş
+ * (24.08'deki metropol-bloklari dersiyle aynı durum; eryaman-mahallesi'ndeki
+ * cumhuriyet-sitesi AYRI bir site). 14.10 bakımının kapsamı yalnız "dizinde"
+ * hükmü alanları çıkarmaktı; bu kaydı silme kararı ayrı verilmeli.
  */
 const DIZINSIZ: Record<string, readonly string[]> = {
-  "altay-mahallesi": [
-    "betontas-bloklari",
-    "eryaman-park-evleri",
-    "ilbeyi-sitesi",
-    "vatan-sitesi",
-  ],
-  "devlet-mahallesi": [
-    "arslanlar-sitesi",
-    "dastarli-sitesi",
-    "denizim-sitesi",
-    "mavi-koy-sitesi",
-    "sedirkent-sitesi",
-    "sergah-evleri",
-    "turkkonut-sinem-sitesi",
-    "vatan-sitesi",
-    "yesiloz-sitesi",
-  ],
-  "eryaman-mahallesi": [
-    "atakent-1-asiyan-sitesi",
-    "ay-sitesi",
-    "caglar-sitesi",
-    "guzel-ankara-evleri-sitesi",
-    "lacin-eryaman-sitesi",
-  ],
-  "goksu-mahallesi": [
-    "endora-goksu",
-    "goksu-arma",
-    "goksu-bilge-sitesi",
-    "goksu-park-vadi-konutlari",
-    "gsv-spor-sitesi",
-    "irem-konutlari",
-    "kafdagi-sitesi",
-    "paro-life",
-    "polsan1-ayisigi-sitesi",
-    "tulip-life",
-    "utkan-sitesi",
-    "utku-kent-2-sitesi",
-  ],
-  "guzelkent-mahallesi": [
-    "1-portakal-cicegi-sitesi",
-    "ak-91-sitesi",
-    "altay-sitesi",
-    "ankolular-sitesi",
-    "arzutas-sitesi",
-    "buyuk-ankara-sitesi",
-    "dogus-91-sitesi",
-    "ekin-sitesi",
-    "elele-sitesi",
-    "gercek-92-sitesi",
-    "gordogu-sen-sitesi",
-    "gozde-1-sitesi",
-    "gozde-2-sitesi",
-    "gulsah-95-sitesi",
-    "ipek-yapi-sitesi",
-    "konuta-ozlem-sitesi",
-    "kurtulus-sitesi",
-    "kusburnu-sitesi",
-    "master-kent-sitesi",
-    "meltem-sitesi",
-    "mesa-calisanlari-kooperatifi",
-    "oz-muhtar-sitesi",
-    "renk-villalari",
-    "sehit-ferhat-koc-sitesi",
-    "selale-sitesi",
-    "seniz-sitesi",
-    "yesim-kent2-sitesi",
-    "yukselay-sitesi",
-  ],
   "sehit-osman-avci-mahallesi": [
-    "address-goksu",
-    "akasya-sitesi",
-    "akin-688-konutlari",
-    "arkadya-goksu-evleri",
-    "bossphorus-konutlari",
-    "bulvar-1071-sitesi",
-    "bulvar-312-konutlari",
-    "cicek-sitesi",
-    "cizgi-otesi-residence",
     "cumhuriyet-sitesi",
-    "gode-yasam-konutlari",
-    "goksu-prestij",
-    "hill-tower-goksu",
-    "ictas",
-    "inci-park-evleri-sitesi",
-    "kardelen-sitesi",
-    "metropark-concept",
-    "neva-panora-konutlari",
-    "relax-eryaman-konutlari",
-    "soyak-sitesi",
-    "ucyildiz-sitesi",
-    "yildiz-eryaman",
-  ],
-  "seker-mahallesi": [
-    "address-enda",
-    "akdal-residence",
-    "altas-relax-line",
-    "altas-rezidans",
-    "diamond-residence",
-    "izoser-residence",
-  ],
-  "seyh-samil-mahallesi": [
-    "acar-sitesi",
-    "camlica-sitesi",
-    "gul-sitesi",
-    "kosk-birlik-sitesi",
-    "kuryap-sitesi",
-    "liderkent",
-    "onur-sitesi",
-    "ozanadolu",
-    "ozluce-guzelevim",
-    "sumeyra-sitesi",
-    "yagan-kent",
-    "yesil-asiyan-sitesi",
-    "zadegan-sitesi",
-  ],
-  "tunahan-mahallesi": [
-    "akturk-sitesi",
-    "camli-klima-bloklari",
-    "ilgazlar-sitesi",
-    "okyanus-plaza",
-  ],
-  "yavuz-selim-mahallesi": [
-    "acat-konutlari",
-    "erkaraca-sitesi",
-    "ozenkent-2-villalari",
-    "sahibin-sitesi",
-    "uyum-90-sitesi",
-    "yesil-goksu-konutyapi-kooperatifi",
-    "yunuskent-sitesi",
-  ],
-  "yesilova-mahallesi": [
-    "gokdemir-tower",
-    "lokasyon-eryaman",
   ],
 };
 

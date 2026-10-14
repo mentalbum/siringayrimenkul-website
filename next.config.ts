@@ -112,9 +112,14 @@ const nextConfig: NextConfig = {
       // git geçmişinden doğrulandı (90b7f70/07bd9f8/8e6950d). Hem eski hem
       // yeni slug biçimi yazıldı ki genel taşıma kuralına düşüp zincir olmasın.
       // (46432-1 kuralları 27.08 Yenimahalle kaldırmasıyla silindi — varisi ata-mahallesi'ndeydi.)
-      { source: "/mahalleler/goksu/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
-      { source: "/mahalleler/goksu-mahallesi/adalar/46480-1", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
-      // 08.10.2026: 46479-2 de Göksu Metrokent'in 90b7f70'te düzeltilen eski
+      // 14.10.2026: 46480-1 kuralları SİLİNDİ. 46480/1 28.07'de (07bd9f8) kayıttan
+      // düşmüştü ve 12.08'de ölü sayılmıştı; ama 06.10'da (f8f6d51e) TKGM sınır
+      // süpürmesiyle Göksu Metrokent'e GERİ EKLENDİ (alanM2 12290, "B1 Blok-B3
+      // Blok Betonarme Apartman"; sınır dosyası 46477/1 + 46480/1 iki halka).
+      // Yani yaşayan bir ada sayfası (sitemap'te de var) kendi site sayfasına
+      // 308'leniyordu. Ölü olan yalnız 46479/2 (90b7f70'te 46477/1 + 46480/1
+      // ile değiştirildi, bugün hiçbir kayıtta yok) — onun kuralları duruyor.
+      // 08.10.2026: 46479-2 Göksu Metrokent'in 90b7f70'te düzeltilen eski
       // parseli; iki biçim de 404 veriyordu (eski biçim 308 -> 404).
       { source: "/mahalleler/goksu/adalar/46479-2", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },
       { source: "/mahalleler/goksu-mahallesi/adalar/46479-2", destination: "/mahalleler/goksu-mahallesi/goksu-metrokent-sitesi", permanent: true },

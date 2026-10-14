@@ -9,7 +9,10 @@ import { siteConfig } from "@/lib/site-config";
 export const metadata: Metadata = {
   // Ticari mesaj ev sahibine seslenir (Özgün kararı, 2026-08-01) — gerekçe
   // app/mahalleler/[mahalle]/[site]/page.tsx generateMetadata içinde.
-  title: "Eryaman Siteleri ve Rezidansları — Evinizi Satalım, Kiraya Verelim",
+  // 14.10: `absolute` — kök şablonun "| Şirin Gayrimenkul" eki başlığı 86
+  // karaktere çıkarıyordu (dinamik ailelerde 07.08'de alınan kararla aynı
+  // gerekçe: ek SERP'te kesiliyor, marka H1/JSON-LD/og:site_name'de duruyor).
+  title: { absolute: "Eryaman Siteleri ve Rezidansları — Evinizi Satalım, Kiraya Verelim" },
   description:
     // 06.10: 174 → ≤155 karakter (SERP kesme sınırı), telefon sonda ve kesilmez.
     "Eryaman'daki site ve rezidansların tam listesi. Sitenizi bulun; dairenizin satış ve kira değerini siteyi tanıyan emlakçınızla netleştirin: 0532 363 96 60",

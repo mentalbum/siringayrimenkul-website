@@ -280,9 +280,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Yandex; tarama sırasına dair bir vaat değiller.
   const adaSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.flatMap((mahalle) => {
     const gruplar = new Map<string, number>();
+    // 14.10: ada sayfasının içeriği (tapu niteliği, blok künyesi, galeri, SSS)
+    // SİTE kaydından türüyor, mahalle JSON'undan değil. Tarih mahalle
+    // dosyasından okununca 605 tek-siteli ada aynı damgayı taşıyordu (tazelik
+    // sinyali düz). Tek-siteli adada (adet === 1) sahip site tektir; tarih o
+    // sitenin JSON + sınır dosyasından okunur (site sayfasıyla aynı kaynak).
+    const sahipSite = new Map<string, string>();
     for (const ada of getAllAdalar(mahalle.slug)) {
       const key = adaRouteKey(ada);
       gruplar.set(key, (gruplar.get(key) ?? 0) + 1);
+      sahipSite.set(key, ada.site.slug);
     }
     // Ada sayfasındaki saha fotoğrafları (adalar[].gorseller) burada bildirilir.
     // Sayfada Next'in /_next/image proxy'si üzerinden servis ediliyorlar ve
@@ -292,13 +299,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const ada of getAllAdalar(mahalle.slug)) {
       if (ada.gorseller?.length) gorselMap.set(adaRouteKey(ada), ada.gorseller);
     }
-    return [...gruplar]
-      .filter(([, adet]) => adet === 1)
-      .map(([key]) => {
+    return [...sahipSite]
+      .filter(([key]) => gruplar.get(key) === 1)
+      .map(([key, siteSlug]) => {
         const gorseller = gorselMap.get(key);
         return {
           url: `${baseUrl}/mahalleler/${mahalle.slug}/adalar/${key}`,
-          lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.ada),
+          lastModified: enYeni(getSiteLastModified(mahalle.slug, siteSlug), SABLON.ada),
           changeFrequency: "yearly" as const,
           priority: 0.2,
           ...(gorseller && { images: gorseller.map((y) => `${baseUrl}${y}`) }),
