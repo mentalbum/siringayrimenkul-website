@@ -67,7 +67,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * /siteler 2026-08-02 diyordu ama o gün 14 kayıt yeniden yazılmıştı. */
     // 06.10: meta description 174 → ≤155 (SERP'te görünen metin) — hub tarihi içerik
     //        klasörüyle bu şablon tarihinin büyüğü (/mahalleler kalıbı).
-    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-06")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
+    // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
+    //        (86 → 70 karakter, SERP'te görünen metin); /iletisim ile aynı gün.
+    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-14")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
@@ -89,7 +91,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     // 07.10: yetki belgesi numarası Bakanlığın TTBS sorgu sayfasına bağlandı (görünen metin).
     { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.4 },
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.4 },
+    // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
+    //        (72 → 62 karakter, SERP'te görünen metin). /hakkimizda değişmedi, eki duruyor.
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-14"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
