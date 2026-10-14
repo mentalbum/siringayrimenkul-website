@@ -1171,3 +1171,32 @@ sorgu normal SERP verdi (#1 + İlkiz 2 #4). KURAL: n:0 dönen sorgu kaydedilmez,
 başlığıyla #2 — yeniden tarama isteği gönderilmemiş bir tedavi sayfasında yeni başlığın kendiliğinden yansıdığı ilk
 gözlem (08.10'da Bordo Life/Göksu Metrokent kendi kendine taranmıştı; Penta 5 onlardan değil). Diğer 14 doğru sonucun
 başlığı hâlâ eski "Emlakçı | Evinizi Satalım…" ya da Google'ın yeniden yazdığı "- Yeşilova Eryaman - Şirin Gayrimenkul".
+
+## 14–15.10 (23:00–03:30) — "görünürlükte en iyi" turu: keşif (6 ajan) → uygulama (2 PR) → inceleme
+
+Özgün talimatı 14.10 gece: "websitemizi görünürlükte en iyi hale getirmeye çalış, hepsini tamamen sen yapacaksın."
+Keşif: tarihçe/yasaklar, kod haritası, canlı tarama (1.178 adresin tamamı GET: 1.178/1.178 200, canonical/H1/JSON-LD
+hatasız, 25 eski adres tek adımlı 308, soft-404 yok), GSC/GA4 okuması, Google dışı kanallar, rakip kıyas. Ham çıktılar
+oturum scratchpad'inde (gorunurluk/, tarama/, rakip/, serp/) — silinecek; özetler kaldirac-defteri.json ve
+KARAR-BEKLEYENLER-1410.md'de.
+
+**Yapılan (main'e merge, 15.10 ~03:20):**
+- PR #120 teknik hijyen: 605 ada sayfasının sitemap lastmod'u artık sahip SİTE kaydından (1 → 9 farklı tarih);
+  11 mahalle sayfasında googleBot direktifleri geri geldi (page-level robots yalnız 'yakinda' iken); /siteler
+  ve /iletisim başlıkları marka eksiz (86→66, 72→52 karakter; statik sitemap tarihleri 14.10); llms.txt'ye
+  /etaplar ve /eryaman-site-dokusu; IndexNow tek sabit anahtar (4f66…) + --son-commit mahalle/blog eşlemesi;
+  site sayfası galeri alt metninde çıplak ada no kaldırıldı; DIZINSIZ listesi API ile denetlendi: 112 kaydın
+  111'i dizinde → liste BOŞ (1 hayalet kayıt da çıkarıldı). 46480-1: git geçmişi 46480/1'in GÜNCEL Göksu
+  Metrokent parseli olduğunu gösterdi → 12.08'deki iki 'ölü ada' 308 kuralı kaldırıldı, ada sayfası yaşıyor.
+- PR #119 eski adres tarama deneyi: /eski-adresler (noindex,follow; sitemap dışı) sayfasından 50 eski adrese
+  düz iç bağ; 50 kontrol bağlanmadı; /siteler ve /mahalleler sonunda tek satırlık not+bağ. Birincil küme 44/48
+  (07.10 istekli 8 adres dışarıda), karar eşiği yayından önce sabit (Fisher p<0,05 VE ≥15 puan). Okuma 28.10.
+**Okuma (15.10, bir gün erken):** 07.10'da istek giden 11 eski adresin 4'ü istekten sonra tarandı ve birleşti
+(16 sa–6,5 gün gecikme); isteksiz tabanda 9/93. 08.10'daki "ölü" hükmü erkendi → defterde 'zayif'.
+**Yalnız Özgün'ün yapabileceği (giriş gerektiren):** Bing Webmaster Tools kaydı (GSC içe aktarma) + Bing Places
+kontrolü (Bing harita paketinde Tekinşahlar/Ayyıldız/Ekol var, biz yokuz); GBP bağına UTM + Sohbet alanı.
+Ayrıntı: KARAR-BEKLEYENLER-1410.md.
+**Dersler:** (1) Workflow betiğinde ajan istemine kod parçası yazarken `${...}` kaçışlanmalı (iki ajan hiç
+başlamadı). (2) Paylaşımlı ağaçta tsc, bayat `.next/types/validator.ts` yüzünden başka dalın rotasına takılıyor;
+dal doğrulamasında eslint + build kullan ya da `.next/types`'ı yeniden üret. (3) Başka dalın izlediği dosyalar
+ağaçta untracked duruyorsa checkout kilitlenir: önce cmp ile birebir aynı mı bak, aynıysa kopyayı kaldır.

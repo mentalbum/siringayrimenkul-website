@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-10-13",
+ "guncelleme": "2026-10-14",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -80,22 +80,23 @@
    "kisit": "20.08'de iç bağın DİZİNE sokmadığı ölçülmüştü; şimdi SIRALAMAYA da etkisi olmadığı ölçüldü. İki soru da kapandı — site sayfalarına çapraz bağ eklemek bir kaldıraç değil. (Ana sayfadan site sayfalarına sıfır bağ olması da bu ölçümün içinde.)"
   },
   {
-   "durum": "olu",
+   "durum": "zayif",
    "ad": "Eski adresi yeniden taratma (yönlendirme birleştirme)",
    "olcum": "İlk 3'e giremeyen 9 sorguda sırayı, 26.07 taşımasından kalan ESKİ adres tutuyor (ör. 'Anadolu Sitesi emlakçı' #4 → /mahalleler/guzelkent/anadolu-sitesi). Hipotez: eski adres yeniden taranırsa Google 308'i görür, birleştirir, slot doğru sayfaya geçer. ÖLÇÜM 03.09: dokuzunun DOKUZUNDA da SERP ölçümü, Google'ın o adresi son taramasından SONRA yapılmış — yani Google taze kopyasıyla bile eski adresi göstermeyi sürdürüyor. Üçünde (Atakent 1 Aşiyan, Portakal Çiçeği, Yayıklı 4) Google 'Page with redirect' damgasını 25-27.08'de basmış, 27-28.08 ölçümünde eski adres HÂLÂ sıradaydı.",
-   "sonuc": "Eski adrese dizin isteği göndermek slotu kısa vadede serbest bırakmıyor; kota oraya harcanmaz. Sınır: 'Page with redirect' damgası ile ölçüm arası yalnız 1-3 gün — birleştirme daha uzun sürüyor olabilir, 'hiç olmaz' değil 'günler içinde olmaz' denir.",
+   "sonuc": "08.10 hükmü 15.10 okumasıyla daraltıldı: istek eski adresi taratıyor (4/11, isteksiz tabanın 3,6 katı) ama gecikmeli ve garantisiz; kota kararı yine Başlık deneyi 2'ye tahsisli, eski adrese istek yalnız deney 2 bitince (21.10 sonrası) değerlendirilir. Daha güçlü ölçüm: 28.10 iç bağ deneyi (100 adres, iki kol).",
    "tarih": "2026-09-03",
    "n": 9,
    "not": "Yan bulgu: eski adreslerin HİÇBİRİ canlı sitemap'te değil (1.187 adres tarandı, eski şema 0). ilk3-hedef.json'daki eski_adres_canli.sitemapte alanı HEDEFİ kastediyor, eski adresi değil — ad yanıltıcı.",
    "okuma_0810": "07.10'da 11 eski adrese istek gönderildi (11/11 kabul; hepsinin son taraması 26.07 taşımasından önce). 08.10 01:03 API denetimi, istekten yaklaşık 15 saat sonra: 11 adresin 10'unda iz yok (userCanonical hâlâ kendisi, son taramalar 28.06–19.07). Dizindeki normal sayfada istek aynı dakikada tarama getiriyordu; 308 veren adreste getirmedi. Ayrıca sindirim = devir değil: eski adresi sönen 10 çiftte (24.08–06.09 → 21.09–04.10) eski adres gösterimi 536 → 4, yeni adres 828 → 828 (hiç artmadı), toplam −%39, tık 33 → 21; eski adresi hiç görünmeyen 161 site sayfasında aynı dönemde −%15. Karar: eski adrese YENİ istek yok, kota Başlık deneyi 2 yeniden taramasına gider. 07.10 partisi deney kolu, istek gitmemiş hacimli eski adresler kontrol kolu sayılır; okuma 15.10.",
    "takvim": [
     {
-     "tarih": "2026-10-15",
+     "tarih": "2026-10-28",
      "kim": "Claude",
-     "is": "Eski adrese istek okuması: 07.10'da istek giden 11 eski adres için Search Console günlük gösterim (gsc-q.mjs page,date) ve URL denetimi (11 tek adreslik bakış, o günkü isteklerden sonra). İstek gitmemiş hacimli eski adreslerle kıyaslanır; sonuç deftere yazılır.",
-     "neden": "08.10 okumasında istekten 15 saat sonra 11 adresin 10'unda iz yoktu ve kaldıraç defterde ölü. Bu okuma ölü hükmünü ya doğrular ya da daraltır; o güne kadar eski adrese istek gönderilmez."
+     "is": "Eski adres iç bağ deneyi okuması (eski-adres-deneyi-1410.tsv): her kolda 'son tarama > 2026-10-15' oranı (API denetle-dosya, 100 adres); 07.10 istekli 8 adres ayrı kova. İkincil: varislerin aynı sorgulardaki gösterim payı (gsc sayfalar 28g).",
+     "neden": "Eski adres kopyaları (132 site + 113 ada, 3.032 gös/28g) 308'i hiç görmemiş; dizin isteği zayıf, sitemap taratmadı; son denenmemiş tetikleyici taranan sayfadan iç bağ."
     }
-   ]
+   ],
+   "okuma_1510": "14.10 19:57Z API (bir gün erken): 07.10'da istek giden 11 eski adresin 4'ü istekten SONRA tarandı (ma1-tower +16 sa, ilk-bahar +1 g, kucuk-ankara +1,5 g, eryaman-evleri +6,5 g) ve dördü de 'Page with redirect' + canonical yeni adrese geçti. 6'sında iz yok (son tarama 28.06–19.07; kiratli 362 gös ve 46643-7 123 gös dahil). bosphorus 07.10 03:01Z'de istekten ÖNCE taranmış (08.10'daki '1 iz' budur) ve Google canonical'ı 308 hedefi değil alpak-neve-armonia-residence. Kontrol: aynı gün denetlenen, istek almamış 93 eski adreste 07.10 sonrası tarama 9/93 (%10) → istekli %36, Fisher tek yönlü p=0,030. HÜKÜM: 08.10'daki 'ölü' erkendi (15 saatlik pencere); kaldıraç 'zayıf ama var': aynı dakikada değil 16 saat–6,5 gün gecikmeli, garanti değil. Gösterim devri (sindirim ≠ devir) 28.10'a kalır: pencerede istek sonrası yalnız 4 veri günü. Dosya: eski-adres-okuma-1510.md"
   },
   {
    "durum": "dogrulandi",
@@ -376,6 +377,40 @@
    "kisit": "GBP paneli değişikliği: Özgün'ün açık onayı şart. Özellik profilde görünmeyebilir (Profili düzenle → İletişim → Sohbet). Hazır mesaj benzersiz olmalı ki WhatsApp'ta sayılabilsin. 30 gün: o mesajla başlayan konuşma sayısı; kontrol: GBP çağrı+mesaj+web tıkı toplamı ARTMALI (telefonu WhatsApp'a kaydırmak başarı değil). 14.10 (ChatGPT 2. tur): Türkiye/kategori uygunluğu bilinmiyor, Google 'belirli bölgeler' diyor; 24 saat yanıt şartı yeni WhatsApp entegrasyonunda yok (eski Google mesajlaşma ürününe aitti). Hazır mesaj önerisi: 'Merhaba, Google İşletme Profilinizden yazıyorum. Eryaman'da bir dairem var; satış veya kiralama için görüşmek istiyorum.' Okuma: önceki 30 / sonraki 30 gün, (GBP arama tıkı + benzersiz WhatsApp konuşması) / 1.000 profil görüntülemesi.",
    "kaynak": "chatgpt-istisare-1310.md (E); 2. tur 14.10",
    "nerede": "GBP paneli (hamza hesabı)"
+  },
+  {
+   "tarih": "2026-10-14",
+   "ad": "Eski adres tarama deneyi: /eski-adresler (noindex) sayfasından 50 eski adrese iç bağ, 50 kontrol (PR #119)",
+   "durum": "deney",
+   "olcum": "Taban 14.10 (API, 100 adres = 28g gösterime göre ilk 100 eski şema site/ada adresi, hepsi canlı 308): 55 'Page with redirect', 39 'Submitted and indexed' (eski kopya dizinde, canonical kendisi), 3 'Crawled - currently not indexed', 2 noindex, 1 Duplicate. Tedavi 39 site + 11 ada (gos28 1.564 / tık 18), kontrol 39 site + 11 ada (1.184 / 17); tür içinde dönüşümlü atama. Son tarama > 07.10 15:00Z: tedavi 3 / kontrol 7; > 15.10 olan 0. 07.10 istekli 11'in 8'i listede (6 tedavi / 2 kontrol) → okumada ayrı kova.",
+   "gerekce": "GSC 28g: eski şema adresler 232 sayfa / 3.032 gös / 46 tık; 15 vakada eski adres yeniyi geçiyor, 19'unda yeni adres hiç görünmüyor. URL denetimi: eski adresler 'indexed, canonical=kendisi', son tarama 12.08/28.08 (308 hiç görülmemiş); Googlebot UA ile canlı 308 doğrulandı. Dizin isteği zayıf (4/11), eski-adres sitemap'i (16.08–07.10) taratmadı. Denenmemiş tek tetikleyici: taranan sayfadan iç bağ.",
+   "nerede": "app/eski-adresler/page.tsx, lib/eski-adres-deneyi-1410.ts, app/siteler/page.tsx, app/mahalleler/page.tsx; veri: pws0/eski-adres-deneyi-1410.tsv, eski-adres-deneyi-tedavi.json",
+   "okuma_kurali": "28.10: her kolda 'son tarama > 2026-10-15' oranı (birincil, API lastCrawlTime); 'Page with redirect'e geçen oran (ikincil); varislerin gösterim payı (28g sayfalar, üçüncül). 07.10 istekli 8 adres ayrı kova (dışarıda tutulursa 44/48). Noindex/duplicate 3 adreste birleşme beklenmez. Fark yoksa sayfa kaldırılır ve kaldıraç 'olu' yazılır; fark varsa kalan 127 eski adres sayfaya eklenir.",
+   "kaldirma_kosulu": "Okuma yapıldıktan sonra sayfa ve iki hub bağı kaldırılır (deney sayfası kalıcı değil).",
+   "takvim": [
+    {
+     "tarih": "2026-10-28",
+     "kim": "Claude",
+     "is": "Eski adres iç bağ deneyi okuması (bkz. okuma_kurali)",
+     "neden": "Deney 14.10 gece yayına girdi; 14 gün tarama penceresi."
+    }
+   ]
+  },
+  {
+   "tarih": "2026-10-14",
+   "ad": "Teknik hijyen 14.10 (PR #120): ada sitemap lastmod, mahalle robots, statik başlık eki, llms.txt, IndexNow anahtarı, galeri alt, DIZINSIZ bakımı",
+   "durum": "yapildi",
+   "olcum": "Keşif turu (14.10, 6 ajan): 605 ada sayfasının sitemap lastmod'u mahalle JSON'undan okunuyordu (605/605 aynı damga 16.08; ada içeriği site kaydından türer); 11 mahalle sayfasında robots alanı kök googleBot direktiflerini eziyordu (canlı: googlebot meta yok); /siteler 86 ve /iletisim 72 karakterlik başlık (marka eki); sitemap'te yönlendiren 1 ada adresi (goksu 46480-1); IndexNow iki anahtar dosyası ve rastgele seçim; galeri alt metninde çıplak ada no; DIZINSIZ listesi 24.08'den beri bakımsız.",
+   "beklenti": "Sıra kazancı beklenmez (hijyen). Ölçülebilir: ada ailesinde lastmod ayrışması (sitemap'te farklı tarih sayısı), mahalle sayfalarında googlebot meta geri geldi, sitemap'te yönlendiren adres 0. Tabanlar ilerletilmedi (küresel boilerplate kuralı).",
+   "nerede": "app/sitemap.ts, app/mahalleler/[mahalle]/page.tsx, app/siteler/page.tsx, app/iletisim/page.tsx, app/llms.txt/route.ts, scripts/indexnow.mjs, lib/tarama-oncelikli.ts, app/mahalleler/[mahalle]/[site]/page.tsx (yalnız alt metni)"
+  },
+  {
+   "tarih": "2026-10-14",
+   "ad": "Bosphorus eski adresi: Google canonical 308 hedefi değil (alpak-neve-armonia-residence)",
+   "durum": "acik",
+   "olcum": "API 14.10: /mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari → 'Page with redirect', son tarama 07.10 03:01Z, Google canonical = /mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence; canlı 308 hedefi bossphorus-konutlari (PR #117 düzeltmesi 08.10). Google taramayı PR #117'den ÖNCE yapmış olabilir (eski hedef armonia-konutlari → alpak-neve kuralı). 28g: alpak-neve 276 gös, bossphorus 2.",
+   "kisit": "Yeniden tarama olmadan düzelmez; 28.10 deney okumasında bu adres kontrol kolunda (sira 43) — o okumada canonical yeniden bakılır.",
+   "nerede": "next.config.ts (bosphorus kuralları), eski-adres-okuma-1510.md satır 8"
   }
  ]
 }
