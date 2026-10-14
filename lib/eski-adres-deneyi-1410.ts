@@ -25,7 +25,11 @@
  * ÇAKIŞMA: 07.10 dizine ekleme isteğindeki 11 adresin 8'i bu havuzda
  * (tedavi: kiratli-residence, 46643-7, 17365-1, 18668-1, eryaman-evleri,
  * konuta-ozlem-sitesi; kontrol: bosphorus-ankara-konutlari, ilk-bahar-sitesi).
- * Okumada ayrı kova açılır ya da dışarıda tutulur (o zaman kollar 44 / 48).
+ * BİRİNCİL KÜME (15.10'da yayından önce sabitlendi): bu 8 adres birincil
+ * analizden DIŞARIDA tutulur — kollar 44 (tedavi) / 48 (kontrol); 07.10
+ * isteğinin kendi etkisi (15.10 okuması: istekli %36 vs isteksiz %10) tedavi
+ * lehine asimetrik (6/2) olduğundan içeride tutmak sonucu şişirirdi. 8 adres
+ * yalnız EK KOVA olarak ayrıca raporlanır, karara girmez.
  *
  * OKUMA KURALI (28.10, node scripts/gsc-api.mjs denetle-dosya, aynı 100 adres):
  *   0. adım — UYGULANDI MI? (manipülasyon kontrolü, birincil ölçütten ÖNCE):
@@ -47,9 +51,16 @@
  *     tetikleyici zayıflar, bu yüzden uzatma sınırsız tekrarlanmaz.
  *     Taranmışsa tedavi kolunda sayılacak taramalar o tarihten SONRAKİLER
  *     (öncesi deneyle ilişkisiz).
- *   birincil = her kolda lastCrawlTime'ı tabandan farklı VE > 2026-10-15 olan
- *   adres oranı; karar iki oranın farkına göre (kol↔kol düz kıyas, tabanlar
- *   eşlenik). İkincil = varis adresin aynı sorgulardaki gösterim payı (gsc
+ *   birincil = her kolda (44 / 48) lastCrawlTime'ı tabandan farklı VE
+ *   /eski-adresler sayfasının ilk taranma anından (0. adım; o an yoksa
+ *   Vercel yayın anı 15.10) SONRA olan adres oranı; karar iki oranın farkına
+ *   göre (kol↔kol düz kıyas, tabanlar eşlenik).
+ *   KARAR EŞİĞİ (okumadan önce sabit): Fisher kesin testi tek yönlü p < 0,05
+ *   VE mutlak fark ≥ 15 puan → "iç bağ taratıyor" (kalan 127 eski adres
+ *   sayfaya eklenir); p ≥ 0,05 → "ayırt edilemedi" (sayfa kaldırılır, kaldıraç
+ *   'olu'); p < 0,05 ama fark < 15 puan → "zayıf" (sayfa kaldırılır, defterde
+ *   zayıf yazılır, genişletme yok). Birleşme ölçütü ('Page with redirect'e
+ *   geçen oran) aynı eşikle ikinci satır olarak raporlanır. İkincil = varis adresin aynı sorgulardaki gösterim payı (gsc
  *   'sayfalar 28' eski/varis oranı, kol bazında); kesin ikincil okuma 11.11.
  *
  * KALDIRMA KOŞULU: /eski-adresler sayfası ve bu dosya, 28.10 okuması
