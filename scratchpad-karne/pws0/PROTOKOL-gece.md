@@ -1214,3 +1214,14 @@ okunarak isteğin gittiği görüldü (tekrar gönderilmedi). Ders: tsv-isaretle
 ezdi; betik artık pws0'da değil scratchpad'de — sütun adı doğrulanmadan çalıştırma.
 Aynı turda: sitemap GSC'ye yeniden gönderildi (ada lastmod değişimi), IndexNow 4 sayfa (/siteler, /iletisim,
 /mahalleler, 46480-1), karne v32 yayınlandı.
+
+## 15.10 (01:20) — uule sınaması: 60 sn aralıkla üç nokta, kutular FARKLI çıktı
+
+14.10'da arka arkaya atılan sorgularda uule 3. sorgudan sonra tutmamış, hepsi "Tunahan" olmuştu. Bugün aynı
+Chrome, yalın "emlakçı", noktalar arası 60 sn: Şeker → loc "Ankara", kutu Emre Emlak / Bi'Hanem / İdeal;
+Göksu → loc "Ankara", kutu Emre Emlak / relax göksu / Efor; Yeşilova → loc "06796, Yeşilova, Etimesgut/Ankara",
+kutu Emre Emlak / yeşilova gayrimenkul / Alfa. Üç kutu birbirinden farklı → konum sorgudan sorguya değişiyor,
+yapışma yok. Ancak loc etiketi iki noktada yalnız "Ankara" (il düzeyi) — nokta hassasiyeti etiketten
+doğrulanamıyor. **20.10 çekirdek turu kuralı:** sorgular arası ≥60 sn; her kayıtta loc + kutu ilk 3 ad
+yazılır; loc "Ankara" ise konum_dogrulandi:"belirsiz", kutu bir önceki noktayla aynıysa false. Bu 3 sorgu
+endekse yazılmadı (organik çıkarımı yapılmadı, yalnız protokol sınaması). Bugün toplam SERP sorgusu: 3.
