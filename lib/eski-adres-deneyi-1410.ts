@@ -28,6 +28,25 @@
  * Okumada ayrı kova açılır ya da dışarıda tutulur (o zaman kollar 44 / 48).
  *
  * OKUMA KURALI (28.10, node scripts/gsc-api.mjs denetle-dosya, aynı 100 adres):
+ *   0. adım — UYGULANDI MI? (manipülasyon kontrolü, birincil ölçütten ÖNCE):
+ *     node scripts/gsc-api.mjs denetle https://www.siringayrimenkul.com/eski-adresler \
+ *       https://www.siringayrimenkul.com/siteler https://www.siringayrimenkul.com/mahalleler
+ *     → "son tarama:" (lastCrawlTime) üçü için okuma dosyasına yazılır.
+ *     Deneyin tek keşif yolu bu iki hub'ın yeniden taranıp /eski-adresler'in
+ *     izlenmesi; kurulumda hub'lar bayattı (14.10 API: /siteler son tarama
+ *     2026-09-07T14:41Z — 37 gün —, /mahalleler 2026-10-08T19:02Z; /eski-adresler
+ *     "URL is unknown to Google"). Bu yüzden app/sitemap.ts'te iki hub'ın
+ *     statik tarihi 14.10'a çekildi (ölçülmüş tek tazelik kaldıracı).
+ *     /eski-adresler 15.10–28.10 arasında TARANMAMIŞSA: sonuç "UYGULANAMADI"
+ *     yazılır, birincil ölçüt OKUNMAZ (tedavi oranı = kontrol oranı çıkar ve
+ *     bu "iç bağ işe yaramadı" değil "bağ hiç görülmedi" demektir; ikisi
+ *     ayırt edilemez) ve pencere uzatılır: yeni okuma tarihi buraya ve
+ *     app/eski-adresler/page.tsx başına yazılır. Uzatma kararına şu da
+ *     yazılmalı: Google uzun süre noindex kalan sayfayı zamanla nofollow
+ *     gibi ele alıp bağlarını izlemeyi bırakabilir — pencere uzadıkça
+ *     tetikleyici zayıflar, bu yüzden uzatma sınırsız tekrarlanmaz.
+ *     Taranmışsa tedavi kolunda sayılacak taramalar o tarihten SONRAKİLER
+ *     (öncesi deneyle ilişkisiz).
  *   birincil = her kolda lastCrawlTime'ı tabandan farklı VE > 2026-10-15 olan
  *   adres oranı; karar iki oranın farkına göre (kol↔kol düz kıyas, tabanlar
  *   eşlenik). İkincil = varis adresin aynı sorgulardaki gösterim payı (gsc
@@ -37,7 +56,10 @@
  * YAPILDIKTAN SONRA kaldırılır (sonuç ne olursa olsun; işe yaradıysa kalan
  * eski adresler için ayrı karar). Sayfa noindex,follow ve site haritasında
  * YOK; hub sayfalarındaki (siteler, mahalleler) tek satırlık bağ da onunla
- * birlikte söküllür.
+ * birlikte sökülür. Sökme de iki hub'ın görünür içeriğini değiştirir:
+ * app/sitemap.ts'teki /siteler ve /mahalleler statik tarihleri o gün yeniden
+ * ilerletilir (14.10'da bağ eklenince ilerletildiği gibi; SABLON tabanlarına
+ * dokunulmaz).
  *
  * KAYNAK: scratchpad-karne/pws0/eski-adres-deneyi-1410.tsv (tasarım, 100
  * satır, taban sütunları) ve scratchpad-karne/pws0/eski-adres-deneyi-tedavi.json
