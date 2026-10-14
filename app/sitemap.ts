@@ -56,7 +56,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
     //        bilgi sorgusuna oynamıyoruz (Özgün kararı; 1.119 gösterim / 0 tık).
-    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-10-04")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
+    // 14.10: eski adres tarama deneyi — sayfa sonuna not + /eski-adresler bağı eklendi
+    //        (görünür gövde; lib/eski-adres-deneyi-1410.ts). 28.10'da bağ sökülünce
+    //        bu tarih yeniden ilerletilmeli (o da görünür içerik değişikliği).
+    { url: `${baseUrl}/mahalleler`, lastModified: [icerikKlasoruTarihi("mahalleler"), g("2026-10-14")].reduce((a, b) => (a && b ? (a > b ? a : b) : a || b)), changeFrequency: "weekly", priority: 0.9 },
     // Etap hub'ı: mahalleden bağımsız etap aramalarının adresi ve beş etap
     // sayfasına giden tek toplayıcı bağ (08.08 ölçümü: 5 etap sayfasının 4'ü
     // "Keşfedildi – dizine eklenmedi" kuyruğunda).
@@ -69,6 +72,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        klasörüyle bu şablon tarihinin büyüğü (/mahalleler kalıbı).
     // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
     //        (86 → 70 karakter, SERP'te görünen metin); /iletisim ile aynı gün.
+    //        Aynı gün: eski adres tarama deneyi — sayfa sonuna not + /eski-adresler bağı
+    //        eklendi (görünür gövde). 28.10'da bağ sökülünce bu tarih yeniden ilerletilmeli.
     { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-14")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların

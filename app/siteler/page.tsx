@@ -78,6 +78,17 @@ export default function SitelerPage() {
         <SitelerBrowser gruplar={inceltGruplar(mahalleler)} />
       </div>
 
+      {/* ESKİ ADRES TARAMA DENEYİ (14.10, okuma 28.10): tek satırlık bağ, kaldırma
+          koşulu lib/eski-adres-deneyi-1410.ts'te. Footer'a KOYMA (küresel şablon). */}
+      <p className="mt-10 text-sm leading-relaxed text-muted">
+        Mahalle adresleri 26.07.2026&apos;da yenilendi; eski adresler yeni sayfalara
+        yönlendirilir (
+        <Link href="/eski-adresler" className="font-semibold text-gold-dark hover:underline">
+          taşınan adresler
+        </Link>
+        ).
+      </p>
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
