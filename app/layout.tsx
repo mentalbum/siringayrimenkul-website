@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { FloatingWhatsAppButton } from "@/components/ui/floating-whatsapp-button";
+import { CerezBandi } from "@/components/ui/cerez-bandi";
 import { Analytics } from "@vercel/analytics/next";
 import { GaYukleyici } from "@/components/analytics/ga-yukleyici";
 import { siteConfig } from "@/lib/site-config";
@@ -257,10 +258,13 @@ export default async function RootLayout({
             birlikte yüklüyor ve mobil LCP'ye ölçülmüş ~1,6 sn bindiriyordu.
             Satır içi bootstrap dataLayer'ı ilk byte'tan kurar (olaylar
             kuyruklanır, kayıp yok); ağır gtag.js boşta (idle) enjekte edilir.
-            Çerez rıza bandı 2026-07-30'da Özgün'ün açık talimatıyla kaldırıldı
-            (gerekçe/uyarılar sorunlu-siteler.md defterinde) — GA tüm
-            ziyaretçilerde çalışır, /gizlilik metni bu duruma göre günceldir.
-            Olay gönderimi lib/ga.ts üzerinden — davranış birebir aynı. */}
+            RIZA (2026-10-07, Özgün: "ceza yemeyeceğimiz hale getir"): 30.07'de
+            kaldırılan çerez bandı geri geldi. Bootstrap gtag'e 'consent default'
+            = denied kurar; gtag.js YALNIZ "Kabul et"ten sonra yüklenir
+            (components/analytics/ga-yukleyici.tsx, lib/cerez-rizasi.ts) —
+            rızasız ziyaretçi için Google'a tek istek gitmez. /gizlilik metni
+            bu duruma göre güncel. Olay gönderimi lib/ga.ts üzerinden; olaylar
+            ayrıca çerezsiz Vercel Analytics'e aynalanır. */}
         {siteConfig.gaMeasurementId && (
           <>
             <script
@@ -268,11 +272,16 @@ export default async function RootLayout({
                 __html:
                   `window.dataLayer=window.dataLayer||[];` +
                   `function gtag(){dataLayer.push(arguments);}` +
+                  // Rıza varsayılanı DENIED, config'ten önce (Google Consent Mode kuralı).
+                  // Kayıtlı/yeni "kabul" update'i ga-yukleyici ve cerez-rizasi kuyruklar.
+                  `gtag('consent','default',{'ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','analytics_storage':'denied'});` +
                   `gtag('js',new Date());` +
                   `gtag('config','${siteConfig.gaMeasurementId}');`,
               }}
             />
             <GaYukleyici gaId={siteConfig.gaMeasurementId} />
+            {/* Bant yalnız GA tanımlıysa anlamlı: çerez koyan tek bileşen o. */}
+            <CerezBandi />
           </>
         )}
         {/* Vercel Web Analytics: ÇEREZSİZ toplu sayaç — kimlik/çerez yok,
