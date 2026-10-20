@@ -1,0 +1,357 @@
+[
+ {
+  "parsel": "63357/3",
+  "nitelik": "Eğitim Tesis Alanı",
+  "alan": "4.200,00",
+  "durum": "1",
+  "lat": 39.994462,
+  "lng": 32.652207,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63387/2",
+  "nitelik": "17 Katlı Betonarme Apartman Binası Ve Arsası",
+  "alan": "7.841,04",
+  "durum": "1",
+  "lat": 40.003812,
+  "lng": 32.641801,
+  "yapi": true,
+  "yandex_yakin": [
+   {
+    "ad": "Park Evo Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Doğa Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Vaditepe Başpınar Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Endora Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Çınar Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Hayal Park Evleri",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   }
+  ]
+ },
+ {
+  "parsel": "63387/3",
+  "nitelik": "12 Katlı Betonarme Apartman Ve Arsası",
+  "alan": "5.652,84",
+  "durum": "1",
+  "lat": 40.003567,
+  "lng": 32.640394,
+  "yapi": true,
+  "yandex_yakin": [
+   {
+    "ad": "Neva Palas Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Doğa Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Vaditepe Başpınar Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Endora Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Çınar Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Hayal Park Evleri",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   }
+  ]
+ },
+ {
+  "parsel": "63387/4",
+  "nitelik": "Arsa",
+  "alan": "20.720,00",
+  "durum": "1",
+  "lat": 40.002697,
+  "lng": 32.64129,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63388/1",
+  "nitelik": "20 Katlı A Blok Ve 22 Katlı B Blok Betonarme Mesken Ve Arsası",
+  "alan": "9.708,30",
+  "durum": "1",
+  "lat": 40.004104,
+  "lng": 32.636628,
+  "yapi": true,
+  "yandex_yakin": [
+   {
+    "ad": "Neva Palas Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Acar Sitesi",
+    "alt": "Şeyh Şamil Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Endora Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Yeşil Vadim Konutları",
+    "alt": "Şeyh Şamil Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Hayal Park Evleri",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Çağlar Emin Evleri",
+    "alt": "Şeyh Şamil Mah., Etimesgut, Ankara"
+   }
+  ]
+ },
+ {
+  "parsel": "63389/1",
+  "nitelik": "Arsa",
+  "alan": "12.912,97",
+  "durum": "1",
+  "lat": 40.001115,
+  "lng": 32.638442,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63390/1",
+  "nitelik": "Arsa",
+  "alan": "36,00",
+  "durum": "1",
+  "lat": 40.002058,
+  "lng": 32.63889,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63391/3",
+  "nitelik": "Arsa",
+  "alan": "7.194,66",
+  "durum": "1",
+  "lat": 40.00015,
+  "lng": 32.639987,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63392/1",
+  "nitelik": "Arsa",
+  "alan": "36,00",
+  "durum": "1",
+  "lat": 40.001634,
+  "lng": 32.641922,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63393/1",
+  "nitelik": "Arsa",
+  "alan": "9.665,00",
+  "durum": "1",
+  "lat": 40.002177,
+  "lng": 32.643074,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63393/2",
+  "nitelik": "Arsa",
+  "alan": "1.904,96",
+  "durum": "1",
+  "lat": 40.001874,
+  "lng": 32.643789,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63394/1",
+  "nitelik": "Arsa",
+  "alan": "5.857,00",
+  "durum": "1",
+  "lat": 40.001809,
+  "lng": 32.64496,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63395/1",
+  "nitelik": "Arsa",
+  "alan": "49,00",
+  "durum": "1",
+  "lat": 40.001172,
+  "lng": 32.645354,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63401/1",
+  "nitelik": "15 Er Katlı A Ve B Bloktan Oluşan Betonarme Mesken Ve Arsası",
+  "alan": "7.000,00",
+  "durum": "1",
+  "lat": 39.999535,
+  "lng": 32.650322,
+  "yapi": true,
+  "yandex_yakin": [
+   {
+    "ad": "Admira Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Oyak Göksupark Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Bordo Loca Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Park Evo Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Göksupark Vadi Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Uzunali Göksu Konutları",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   }
+  ]
+ },
+ {
+  "parsel": "63401/2",
+  "nitelik": "Arsa",
+  "alan": "9.157,60",
+  "durum": "1",
+  "lat": 39.999198,
+  "lng": 32.651496,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63401/3",
+  "nitelik": "Arsa",
+  "alan": "4.934,40",
+  "durum": "1",
+  "lat": 39.998925,
+  "lng": 32.650673,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63405/1",
+  "nitelik": "Arsa",
+  "alan": "5.799,00",
+  "durum": "1",
+  "lat": 40.000817,
+  "lng": 32.644517,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63406/3",
+  "nitelik": "Arsa",
+  "alan": "2.787,00",
+  "durum": "1",
+  "lat": 40.001033,
+  "lng": 32.644139,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63407/5",
+  "nitelik": "Arsa",
+  "alan": "2.449,00",
+  "durum": "1",
+  "lat": 39.999503,
+  "lng": 32.63987,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63407/6",
+  "nitelik": "Arsa",
+  "alan": "8.204,00",
+  "durum": "1",
+  "lat": 39.997929,
+  "lng": 32.640291,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63408/1",
+  "nitelik": "Arsa",
+  "alan": "68,00",
+  "durum": "1",
+  "lat": 39.99826,
+  "lng": 32.64156,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63409/1",
+  "nitelik": "Arsa",
+  "alan": "9.157,60",
+  "durum": "1",
+  "lat": 39.998645,
+  "lng": 32.655158,
+  "yapi": false,
+  "yandex_yakin": []
+ },
+ {
+  "parsel": "63933/3",
+  "nitelik": "A,B,C,D,E Bloklardan Oluşan 29 Katlı Betonarme Apartman, F Blok 1 Katlı Betonarme Ofis, İşyeri Ve Arsası",
+  "alan": "27.276,00",
+  "durum": "1",
+  "lat": 39.991355,
+  "lng": 32.643625,
+  "yapi": true,
+  "yandex_yakin": [
+   {
+    "ad": "Utkan Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Gölkent 1 Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Yakamoz Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Havuzlu Evler Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Türkkonut Havacılar Sitesi 1",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   },
+   {
+    "ad": "Yeni Güç Sitesi",
+    "alt": "Göksu Mah., Etimesgut, Ankara"
+   }
+  ]
+ }
+]
