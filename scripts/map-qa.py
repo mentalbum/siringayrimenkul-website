@@ -19,27 +19,41 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITELER = os.path.join(REPO, "content", "siteler")
 MAHALLELER = os.path.join(REPO, "content", "mahalleler")
 
-# Mahalle sınırı dışında kalan ama BİLEREK o mahallede tutulan parseller.
-# content/mahalleler/*-boundary.geojson OSM kaynaklı ve kaba: ilçe/mahalle
-# sınırı yer yer parsellerin içinden geçiyor. Hakem OSM çizgisi değil, TKGM
-# (ilçe) + KEOS numarataj/mahalle kaydı (bellek kuralı: "pin değil
-# numarataj"). Buraya yalnız o teyitle girilir; gerekçe yanında yazılır.
+# MAHALLE SINIRI KONTROLÜ — content/mahalleler/*-boundary.geojson OSM kaynaklı
+# ve kaba: ilçe/mahalle sınırı yer yer parsellerin içinden geçiyor. Hakem OSM
+# çizgisi değil, TKGM (ilçe) + KEOS mahalle poligonu/numarataj (bellek kuralı:
+# "pin değil numarataj").
 # 20.10.2026: map-qa 26.07 slug taşımasından beri bu kontrolü hiç çalıştır-
 # mamıştı (dosya adı '<slug>-boundary.geojson' aranıyordu, gerçek ad
 # 'goksu-boundary.geojson'); yol artık mahalle JSON'undaki sinirGeoJSON'dan
-# kuruluyor. Kontrol açılınca dışarıda görünen 7 kayıt aşağıda.
+# kuruluyor. Kontrol açılınca 7 kayıt dışarıda çıktı; ikiye ayrıldı.
+#
+# Anahtar "mahalle/slug" → o kayıtta sınır DIŞINDA olması BEKLENEN halka
+# etiketleri. Hesaplanan küme beklenenden farklıysa (yeni bir halka dışarı
+# kayarsa ya da düzeltilip içeri girerse) kontrol yine öter.
+#
+# (1) GEREKÇELİ — TKGM + KEOS ile o mahallede olduğu teyitli:
 SINIR_DISI_BILINEN = {
-    # 20.10 KEOS turu öncesi var olan kayıtlar — OSM sınırı parseli dışarıda
-    # bırakıyor, KEOS mahalle kaydı/komşuluk kayıtları o mahallede tutuyor.
-    "eryaman-mahallesi/maximum-konutlari",
-    "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
-    "goksu-mahallesi/ma1-tower",
-    "goksu-mahallesi/maybak-konutlari",
-    "sehit-osman-avci-mahallesi/izo-ser-residence",
-    "seyh-samil-mahallesi/ozahikent-sitesi",   # 9. halka sınır çizgisinin üstünde
-    # 20.10: TKGM ilçe=Etimesgut (Susuz Yenimahalle'de); OSM Göksu çizgisi
-    # parseli ikiye bölüyor. Gerekçe: pws0/KAPSAM-BELIRSIZ-2010.md.
-    "goksu-mahallesi/cag-life-sitesi",
+    # TKGM ilçe=Etimesgut (Susuz Yenimahalle'de); KEOS envanterinde, 38 KEOS
+    # mahallesinden yalnız Göksu değiyor; OSM Göksu çizgisi parseli ikiye
+    # bölüyor (merkez çizgiye 25 m). Döküm: kapsam-2010/keos-63387.json,
+    # gerekçe: pws0/KAPSAM-BELIRSIZ-2010.md.
+    "goksu-mahallesi/cag-life-sitesi": {"63387/2"},
+}
+# (2) TEYİT BEKLEYEN — OSM'ye göre dışarıda, hatta çoğu BAŞKA bir mahallenin
+# OSM poligonunun içinde; depoda KEOS/numarataj teyidi YOK (20.10'daki 16/16
+# KEOS teyidi PR #121 parsellerini kapsıyordu, bunları değil). ANOMALİ değil
+# BİLGİ olarak basılır ki kör nokta görünür kalsın; 18.11 turunda KEOS
+# type=mahalle poligon sınaması yapılıp her kayıt kendi gerekçesiyle ya (1)'e
+# geçer ya mahallesi taşınır. 20.10 ölçümü (kendi sınırına uzaklık / OSM'de
+# hangi poligonun içinde):
+SINIR_DISI_TEYIT_BEKLEYEN = {
+    "eryaman-mahallesi/maximum-konutlari": {"46515/1"},          # 522 m / Devlet
+    "eryaman-mahallesi/turk-konut-calisanlar-sitesi": {"46512/9"},  # 1.079 m / Tunahan
+    "goksu-mahallesi/ma1-tower": {"64517/1"},                    # 409 m / hiçbiri; Susuz↔Göksu kartı AÇIK (sorunlu-siteler.md)
+    "goksu-mahallesi/maybak-konutlari": {"46474/1"},             # 69 m / Şehit Osman Avcı
+    "sehit-osman-avci-mahallesi/izo-ser-residence": {"46362/1"}, # 80 m / Şeker (kadastro mahallesi de Şeker)
+    "seyh-samil-mahallesi/ozahikent-sitesi": {"48062/1"},        # 190 m / Yavuz Selim (12 halkadan biri)
 }
 
 
@@ -85,6 +99,7 @@ def haversine(lat1, lng1, lat2, lng2):
 
 def main():
     anomalies = []
+    teyit_bekleyen = []  # SINIR_DISI_TEYIT_BEKLEYEN'de olup beklenen gibi dışarıda duranlar
     parsel_owners = {}   # "mahalle:46659/2" -> [site slugs]
     total = 0
 
@@ -98,8 +113,9 @@ def main():
         if m.get("sinirGeoJSON") and os.path.exists(mb_path):
             mb_rings = rings(json.load(open(mb_path))["geometry"])
         else:
+            # Sessizce atlamak 26.07–20.10 arası körlüğün ta kendisiydi: sayaca gir.
             mb_rings = []
-            print(f"UYARI: {mslug} mahalle sınırı yok ({m.get('sinirGeoJSON')}) — sınır kontrolü atlandı")
+            anomalies.append((mslug, "-", f"mahalle sınırı yok ({m.get('sinirGeoJSON')}) — sınır kontrolü atlandı"))
 
         for sfile in sorted(glob.glob(os.path.join(SITELER, mslug, "*.json"))):
             slug = os.path.basename(sfile)[:-5]
@@ -128,16 +144,22 @@ def main():
                 anomalies.append((mslug, s["isim"], f"{len(rs)} halka, {len(b_adalar)} etiket"))
             clng, clat = centroid(rs[0])
             # Her halkanın merkezi ayrı sınanır (çok parselli kayıtlarda tek bir
-            # halka yanlış mahalleye kayabilir); bilinen sınır-üstü kayıtlar
-            # SINIR_DISI_BILINEN ile susturulur, listeden çıkınca yeniden ötmeye başlar.
-            if mb_rings and f"{mslug}/{slug}" not in SINIR_DISI_BILINEN:
-                disarida = [
-                    i for i, r in enumerate(rs)
+            # halka yanlış mahalleye kayabilir). Bulunan dış-halka kümesi,
+            # listelerdeki BEKLENEN kümeyle karşılaştırılır: fark varsa anomali;
+            # teyit bekleyen listedekiler beklenen kümeyle tutuyorsa BİLGİ.
+            if mb_rings:
+                anahtar = f"{mslug}/{slug}"
+                disarida = {
+                    (b_adalar[i] if i < len(b_adalar) else f"halka {i}")
+                    for i, r in enumerate(rs)
                     if not any(point_in_ring(*centroid(r), mr) for mr in mb_rings)
-                ]
-                if disarida:
-                    etiket = ", ".join(b_adalar[i] if i < len(b_adalar) else f"halka {i}" for i in disarida)
-                    anomalies.append((mslug, s["isim"], f"parsel merkezi mahalle sınırı DIŞINDA ({etiket})"))
+                }
+                beklenen = SINIR_DISI_BILINEN.get(anahtar) or SINIR_DISI_TEYIT_BEKLEYEN.get(anahtar) or set()
+                if disarida != beklenen:
+                    anomalies.append((mslug, s["isim"],
+                                      f"parsel merkezi mahalle sınırı DIŞINDA: {sorted(disarida)} (beklenen {sorted(beklenen)})"))
+                elif anahtar in SINIR_DISI_TEYIT_BEKLEYEN:
+                    teyit_bekleyen.append((mslug, s["isim"], ", ".join(sorted(disarida))))
             if mlat:
                 d = haversine(mlat, mlng, clat, clng)
                 if d > 4000:
@@ -152,6 +174,9 @@ def main():
     print(f"Haritalı site: {total}")
     print(f"ANOMALİ: {len(anomalies)}")
     for mslug, isim, r in anomalies:
+        print(f"  [{mslug}] {isim} — {r}")
+    print(f"\nSINIR DIŞI — KEOS TEYİDİ BEKLİYOR (bilgi, {len(teyit_bekleyen)}; bkz. SINIR_DISI_TEYIT_BEKLEYEN):")
+    for mslug, isim, r in teyit_bekleyen:
         print(f"  [{mslug}] {isim} — {r}")
     print(f"\nPAYLAŞIMLI PARSEL (bilgi, {len(shared)}):")
     for k, v in sorted(shared.items()):
