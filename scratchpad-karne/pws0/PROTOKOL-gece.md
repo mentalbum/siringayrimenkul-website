@@ -1291,3 +1291,13 @@ OSM'de BAŞKA mahallenin poligonunda → BİLGİ satırı, 18.11), kaynak dökü
 yorum/metin düzeltmeleri. Çürütülenler korundu ('Göksu Kent Sitesi' alt adı Google Suggest'te var; Neva/Yuvam/Duru olguları kaynaklı).
 Ders: adres cümlesi yazmadan OSM yol geometrisiyle mesafe ölç; 'ANOMALİ: 0' çıktısına güvenme — kontrolün gerçekten koştuğunu bir kez
 kır-ve-gör ile sına (izin listesi boşken 7 kayıt ötmeli).
+
+## 21.10 (00:35–00:50) — ÇAĞ LIFE GERİ ALINDI: Özgün "Yenimahalle'deymiş" (PR #124, 7e56b3c0)
+
+PR #123'te TKGM ilçe=Etimesgut + KEOS envanteri gerekçesiyle goksu altında yeniden açılan Çağ Life ~1 saat yayında kaldı; Özgün
+düzeltti. Kayıt silindi, 4 susuz→goksu yönlendirmesi kaldırıldı (susuz adresleri proxy 410'una döndü), goksu site + ada 63387-2
+adresleri KALDIRILAN_SITE_SAYFALARI'nda 410, Duru Göksu'daki 'Çağ Life ile aynı adada' atıfları çıkarıldı. Sitemap 1.213 → 1.211,
+535 site. DERS: parsel/ilçe teyidi site ADINI teyit etmez — 63387/2'deki 17 katlı blok gerçek ve Etimesgut'ta, ama adı 'Çağ Life'
+değil (Yandex toponimi + ilan slug'ı yanıltıcıydı; 27.08'de silinen eski kayıt da siteyi 'Bulut Kule ile yan yana, 2. İnönü'nün
+başında' diye Susuz tarafına koyuyordu — o ipucu ciddiye alınmalıydı). Yenimahalle grubundan bir adres 'yanlış mahalleymiş' diye
+geri getirilmeden önce Özgün'e sorulur. Bloğun gerçek adı KAPSAM-BELIRSIZ tablosunda Özgün'e soruldu.
