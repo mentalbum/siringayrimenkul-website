@@ -98,6 +98,15 @@ const KALDIRILAN_SITE_SAYFALARI = new Set([
   "/mahalleler/devlet/4-devlet-mahallesi-sitesi",
   "/mahalleler/devlet-mahallesi/adalar/18700-1",
   "/mahalleler/devlet/adalar/18700-1",
+  // Çağ Life (2026-10-20/21): 27.08'de Susuz'la silinen kayıt, TKGM parsel
+  // ilçesi Etimesgut diye goksu altında yeniden açıldı ve ~1 saat yayında
+  // kaldı (IndexNow'a bildirildi, GSC'de 'unknown'); Özgün "Çağ Life
+  // Yenimahalle'de" dedi → kayıt silindi. Yaşayan varisi yok: 410. Eski
+  // susuz adresleri zaten KALDIRILAN_BOLGE_ONEKLERI ile 410.
+  "/mahalleler/goksu-mahallesi/cag-life-sitesi",
+  "/mahalleler/goksu/cag-life-sitesi",
+  "/mahalleler/goksu-mahallesi/adalar/63387-2",
+  "/mahalleler/goksu/adalar/63387-2",
 ]);
 
 function kaldirilanBolgede(pathname: string): boolean {
@@ -198,5 +207,9 @@ export const config = {
     "/mahalleler/devlet/4-devlet-mahallesi-sitesi",
     "/mahalleler/devlet-mahallesi/adalar/18700-1",
     "/mahalleler/devlet/adalar/18700-1",
+    "/mahalleler/goksu-mahallesi/cag-life-sitesi",
+    "/mahalleler/goksu/cag-life-sitesi",
+    "/mahalleler/goksu-mahallesi/adalar/63387-2",
+    "/mahalleler/goksu/adalar/63387-2",
   ],
 };
