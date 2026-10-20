@@ -1244,3 +1244,24 @@ Saat 18:30–18:40: biz ve Efor "Kapanmak üzere 19:00", Kılıç ve Ayyıldız 
 kutuda → tek açıklama saat değil; ama iki yeni gelen kutu üyesinin ADINDA "Eryaman Emlakçı" dizisi var (ad eşleşmesi kaldıracı,
 harita-kutusu-bulgular.md). **İş: 21.10 12:00–13:00 aynı 3 sorgu, aynı oturum (Tunahan) — öğlen #1 isek saat etkisi, değilsek
 gerçek kayıp.** GBP adı/saatleri değiştirilmez (kural); bu yalnız ölçüm.
+
+## 20.10 (19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi
+
+Özgün talimatı 20.10: "her aratmada en önde görünebilmesi için eksiklerimiz varsa araştır ve geliştir; Eryaman'daki tüm
+sitelerdeki ev sahiplerini hedefliyoruz." Araştırma (22 ajan, TKGM'siz): 5 kaynak → 88 ham → 33 tekil aday → mahalle bazında
+doğrulama + bağımsız çürütme → 12 kabul / 16 belirsiz / 6 ret. Uygulama Özgün'ün "sıra sıra" düzeniyle elden yapıldı: her kayıt
+TKGM canlı sorgusu + map-site.py doğrulama kapısı (mahalle içi, çakışma yok), metin elle, kalıplarla.
+**Önemli dersler:**
+- GSC eksik site keşfi için kör: yalnız zaten gösterim aldığımız sorguları gösterir. Eksikler HARİTA kaynaklarından çıktı (OSM
+  keyyushi changeset'i Göksu kuzey kuşağını 2025'te çizmiş; Yandex toponimleri ikinci kaynak).
+- GSC'nin asıl verdiği: AD YAZIMI AÇIĞI (9 grup 1.475 gösterim, konum 9–11) — hedeflerin 9'u deney kolunda → 18.11.
+- Künye ayrıştırıcısı (lib/kunye.ts) metinden sayı/tapu durumu çıkarıyor: komşu sitenin blok sayısı, blok NUMARASI ('3 Blok'),
+  'kat mülkiyetine geçiş' ifadesi yanlış künye üretti. YENİ KAYIT YAZINCA ŞART: gerçek lib'lerle künye + SSS çıktısını sına
+  (JITI_ALIAS='{"@/":"<repo>/"}' node node_modules/.bin/jiti <test.mjs>; test betiği scratchpad/kunye-test.mjs kalıbı).
+- lib/faq.ts: metinde 'paylaş' → "aynı parseli paylaşıyor mu → Evet" SSS'si (yanlış pozitif; 'aynı yerleşim adasında' yaz);
+  'ofis-işyeri' → tapu ofis SSS'si (yalnız gerçekten ofis tapusunda kullan).
+- TKGM kapalı parsel (durum 0) → gittigiParselListe halefleri (Atakent: 2007 ifrazı, trafo parselleri ayrılmış; trafo iç
+  halkası sınır dosyasında etiket kaymasına yol açar → yalnız dış halka).
+**Deney etkisi:** komşu kartı rotasyonu tedavi 33 / kontrol 31 sayfada; baslik-deneyi-0710.json → pr121_etkisi (duyarlılık hesabı).
+**Yayın:** canlı 12/12 200, sitemap 1.206; IndexNow 16 adres; GSC sitemap yeniden gönderildi. GSC dizin istekleri 21.10'dan
+itibaren (kota bugün doldu). Belirsiz 16 aday Özgün'e: KAPSAM-BELIRSIZ-2010.md.

@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-20",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -411,6 +411,68 @@
    "olcum": "API 14.10: /mahalleler/sehit-osman-avci/bosphorus-ankara-konutlari → 'Page with redirect', son tarama 07.10 03:01Z, Google canonical = /mahalleler/sehit-osman-avci-mahallesi/alpak-neve-armonia-residence; canlı 308 hedefi bossphorus-konutlari (PR #117 düzeltmesi 08.10). Google taramayı PR #117'den ÖNCE yapmış olabilir (eski hedef armonia-konutlari → alpak-neve kuralı). 28g: alpak-neve 276 gös, bossphorus 2.",
    "kisit": "Yeniden tarama olmadan düzelmez; 28.10 deney okumasında bu adres kontrol kolunda (sira 43) — o okumada canonical yeniden bakılır.",
    "nerede": "next.config.ts (bosphorus kuralları), eski-adres-okuma-1510.md satır 8"
+  },
+  {
+   "tarih": "2026-10-20",
+   "ad": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
+   "durum": "yapildi",
+   "olcum": "5 kaynaklı keşif (GSC 480 gün, sorunlu-siteler.md, KKG/bilgiemlak/emlakjet listeleri, OSM+Yandex, Google Suggest) → 88 ham, 33 tekil aday; mahalle bazında doğrulama + bağımsız çürütme: 12 kabul, 16 belirsiz, 6 ret. GSC'de eksik site neredeyse yok (GSC yalnız gösterim aldığımız sorguları gösterir); asıl eksikler harita kaynaklarından çıktı — Göksu'nun kuzey yapılaşma kuşağında 5 yeni yüksek yapı. Ayrıca Atakent Sitesi yanlış parseldeydi (Başak'ın parseli) → düzeltildi.",
+   "beklenti": "Sıra iddiası yok: bu sitelerin ev sahibi '<site adı>' aradığında artık bir sayfamız var. Ölçüt: 28 gün sonra 12 sayfanın GSC gösterimi (taban 0) ve '<ad> emlakçı' SERP'inde ilk 10.",
+   "nerede": "content/siteler (12 yeni JSON + sınır), PR #121; belirsizler pws0/KAPSAM-BELIRSIZ-2010.md",
+   "takvim": [
+    {
+     "tarih": "2026-10-21",
+     "kim": "Claude",
+     "is": "12 yeni sayfaya GSC dizin isteği (deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi."
+    },
+    {
+     "tarih": "2026-11-18",
+     "kim": "Claude",
+     "is": "12 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek."
+    }
+   ]
+  },
+  {
+   "tarih": "2026-10-20",
+   "ad": "Ad yazımı açığı: aranan ama kayıtta olmayan yazımlar (alternatifAdlar)",
+   "durum": "acik",
+   "olcum": "GSC 480 gün: 9 kesin grupta 1.475 gösterim, konum 9–11 (Alpak & Neva Armonia 622 — kayıtta 'Neve'; ASM/Urhal Platin 291; Teras Evler 172; Havuzlubahçe 120; Gökdemir Suit 79; KC Göksupark 73; Polsan Ayışığı 65; Relaks Göksu 29). Hedef sayfaların 7'si tedavi, 2'si kontrol kolunda.",
+   "kisit": "Başlık deneyi 2 kollarındaki sayfalara 17.11'e kadar dokunulmaz. alternatifAdlar yalnız JSON-LD alternateName + meta keywords'e gider; görünür etki için aciklama'da 'yerel kayıtlarda X olarak da geçer' kalıbı gerekir (Gölkent örneği).",
+   "takvim": [
+    {
+     "tarih": "2026-11-18",
+     "kim": "Claude",
+     "is": "Ad yazımı açığı: 9 kesin grubun doğru yazımını kaynakla teyit et (Neva/Neve vb.), alternatifAdlar + görünür 'olarak da geçer' cümlesi ekle; lastmod; IndexNow."
+    }
+   ]
+  },
+  {
+   "tarih": "2026-10-20",
+   "ad": "Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutularında yokuz (Tunahan konumu)",
+   "durum": "acik",
+   "olcum": "Çekirdek tur (60 sn aralık, uule Tunahan'a yapıştı): 'emlakçı' kutu Efor/Kılıç/Ayyıldız; 'eryaman emlakçı' kutu Kılıç/Ayyıldız/Efor — biz yokuz (07.10 ve 14.10'da #1). 'emlak ofisi' kutu #3. Profil sağlam (5,0 / 405). Saat 18:30: biz ve Efor 'Kapanmak üzere 19:00', Kılıç ve Ayyıldız 20:00'ye kadar açık; ikisinin adında 'Eryaman Emlakçı' dizisi var.",
+   "kisit": "GBP adı ve gerçek dışı saat yazılmaz (kural). Yalnız ölçüm.",
+   "takvim": [
+    {
+     "tarih": "2026-10-21",
+     "kim": "Claude",
+     "is": "12:00–13:00 aynı üç sorgu, aynı oturum (Tunahan), 60 sn aralık: öğlen kutuda #1 isek saat etkisi (kapanışa yakın saatte düşüş), değilsek gerçek kayıp → Özgün'e haber."
+    }
+   ]
+  },
+  {
+   "tarih": "2026-10-20",
+   "ad": "lib/faq.ts 'paylaş' tetiği yanlış SSS üretiyor",
+   "durum": "acik",
+   "olcum": "Metinde 'paylaş' kökü geçen her site sayfasında 'aynı parseli mi paylaşıyor? → Evet' SSS'si ve FAQPage şeması çıkıyor; main'de 72 sayfada parsel aslında tek siteye ait (PR #121 incelemesi). Ayrıca atakent-vadi-sitesi sınırında trafo iç halkası harita etiketlerini kaydırıyor.",
+   "kisit": "Şablon değişikliği deney kollarını da etkiler → 17.11 sonrası.",
+   "takvim": [
+    {
+     "tarih": "2026-11-18",
+     "kim": "Claude",
+     "is": "faq.ts tetiğini gerçek parsel paylaşım verisine bağla (getAllAdalar sayımı); atakent-vadi sınırındaki iç halkayı temizle; map-qa halka sayımını renderer'la hizala."
+    }
+   ]
   }
  ]
 }
