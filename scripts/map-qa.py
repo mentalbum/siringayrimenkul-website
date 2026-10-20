@@ -26,7 +26,8 @@ MAHALLELER = os.path.join(REPO, "content", "mahalleler")
 # 20.10.2026: map-qa 26.07 slug taşımasından beri bu kontrolü hiç çalıştır-
 # mamıştı (dosya adı '<slug>-boundary.geojson' aranıyordu, gerçek ad
 # 'goksu-boundary.geojson'); yol artık mahalle JSON'undaki sinirGeoJSON'dan
-# kuruluyor. Kontrol açılınca 7 kayıt dışarıda çıktı; ikiye ayrıldı.
+# kuruluyor. Kontrol açılınca 7 kayıt dışarıda çıktı; ikiye ayrıldı (7.'si
+# Çağ Life idi, 21.10'da silindi).
 #
 # Anahtar "mahalle/slug" → o kayıtta sınır DIŞINDA olması BEKLENEN halka
 # etiketleri. Hesaplanan küme beklenenden farklıysa (yeni bir halka dışarı
@@ -34,11 +35,10 @@ MAHALLELER = os.path.join(REPO, "content", "mahalleler")
 #
 # (1) GEREKÇELİ — TKGM + KEOS ile o mahallede olduğu teyitli:
 SINIR_DISI_BILINEN = {
-    # TKGM ilçe=Etimesgut (Susuz Yenimahalle'de); KEOS envanterinde, 38 KEOS
-    # mahallesinden yalnız Göksu değiyor; OSM Göksu çizgisi parseli ikiye
-    # bölüyor (merkez çizgiye 25 m). Döküm: kapsam-2010/keos-63387.json,
-    # gerekçe: pws0/KAPSAM-BELIRSIZ-2010.md.
-    "goksu-mahallesi/cag-life-sitesi": {"63387/2"},
+    # 20.10: 'Çağ Life' (63387/2) TKGM ilçe=Etimesgut + KEOS gerekçesiyle buraya
+    # girmişti; 21.10'da Özgün 'Çağ Life Yenimahalle'de' dedi → kayıt silindi.
+    # Ders: parsel/ilçe teyidi ADI teyit etmez (benzer adlı proje tuzağı).
+    # Bugün gerekçeli kayıt yok; biçim: "mahalle/slug": {"ada/parsel", ...}.
 }
 # (2) TEYİT BEKLEYEN — OSM'ye göre dışarıda, hatta çoğu BAŞKA bir mahallenin
 # OSM poligonunun içinde; depoda KEOS/numarataj teyidi YOK (20.10'daki 16/16

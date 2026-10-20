@@ -7,7 +7,7 @@
     "lng": 32.640662
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/duru-goksu-boundary.geojson",
-  "aciklama": "Duru Göksu, Göksu Mahallesi'nde 2. İnönü Caddesi No:20'de yer alan 12 katlı tek bloklu bir konut yapısıdır; yerel kayıtlarda 'Duru Göksu Apartmanı' olarak da geçer ve Çağ Life Sitesi ile aynı yerleşim adasındadır. TKGM kayıtlarına göre yaklaşık 5.653 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '12 Katlı Betonarme Apartman' olarak tanımlar. Zemin katındaki ticari birimlerde market ve eczane hizmet verir; konut daireleri üst katlardadır. Cadde cepheli konum ve zemindeki ticaret, değerlemede kat ve cephe farkını belirgin kılar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Duru Göksu, Göksu Mahallesi'nde 2. İnönü Caddesi No:20'de yer alan 12 katlı tek bloklu bir konut yapısıdır; yerel kayıtlarda 'Duru Göksu Apartmanı' olarak da geçer. TKGM kayıtlarına göre yaklaşık 5.653 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '12 Katlı Betonarme Apartman' olarak tanımlar. Zemin katındaki ticari birimlerde market ve eczane hizmet verir; konut daireleri üst katlardadır. Cadde cepheli konum ve zemindeki ticaret, değerlemede kat ve cephe farkını belirgin kılar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63387",
@@ -22,7 +22,6 @@
     "12 katlı tek blok (tapu kaydı)",
     "Kat mülkiyetli parsel (TKGM)",
     "Zeminde eczane (adres kayıtları) ve market (harita kaydı)",
-    "Çağ Life ile aynı adada (TKGM)",
     "2. İnönü Caddesi No:20 (adres kayıtları)",
     "Göksu — kuzey yapılaşma kuşağı"
   ],
