@@ -22,3 +22,19 @@ Bu adlar en az bir kaynakta Eryaman'ın 11 mahallesinde geçiyor ama ikinci bağ
 | Yeşilova | İkon Yeşilova | YAN BULGU: aday listesinde yoktu, Yeşilova sondaları sırasında bulundu |
 
 Ret edilenler (eklenmeyecek): Arı Rezidans, Buray Konutları, New Garden Eryaman, Salihkent Sitesi, Kardeşler Sitesi, Pozitif Roi Konutları.
+
+## Ek (20.10 akşam): belirsiz adayların TKGM parselleri
+
+Her biri gerçek, ayrı bir parsel; hiçbiri mevcut 532 kaydın sınırında değil. Eksik olan yalnız ADIN ikinci kaynaktan teyidi — sen 'evet, orası X' dersen sayfa açılır.
+
+| Ad | Parsel | Tapu niteliği (TKGM) |
+|---|---|---|
+| Melis Evleri | 45918/4 | 8 Katli Beton  Apartman (1,752.00 m²) |
+| Gerim Sitesi | 45926/1 | Arsa (2,871.00 m²) |
+| Neva Başpınar Sitesi | 63391/3 | Arsa (7,194.66 m²) |
+| Park Prestij Sitesi | 46648/2 | 10 Katli Betonarme Apartman Ve Arsasi (2,500.00 m²) |
+| Bulut Life Konutları | 47550/6 | 12  Katli Betonarme Ofis Işyeri Ve Arsasi (2,500.00 m²) |
+| Benna Prestij Sitesi | 47553/3 | 11 Katlı Betonarme Ofis Işyeri Ve Arsası (2,720.00 m²) |
+| İkon Yeşilova | 47549/7 | 3 Katlı A Blok 11 Kat B Bloktan Oluşan Betonarme Ofis Işyeri Ve Arsası (2,500.00 m²) |
+
+KEOS (belediye) teyidi: Fırat Residence'ın parseli Altay sınırında (Yandex'in 'Şeker' etiketi yanlıştı); 12 yeni kaydın mahallesi belediye sınırıyla da tutuyor.

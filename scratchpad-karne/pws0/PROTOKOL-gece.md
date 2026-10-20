@@ -1265,3 +1265,12 @@ TKGM canlı sorgusu + map-site.py doğrulama kapısı (mahalle içi, çakışma 
 **Deney etkisi:** komşu kartı rotasyonu tedavi 33 / kontrol 31 sayfada; baslik-deneyi-0710.json → pr121_etkisi (duyarlılık hesabı).
 **Yayın:** canlı 12/12 200, sitemap 1.206; IndexNow 16 adres; GSC sitemap yeniden gönderildi. GSC dizin istekleri 21.10'dan
 itibaren (kota bugün doldu). Belirsiz 16 aday Özgün'e: KAPSAM-BELIRSIZ-2010.md.
+
+## 20.10 (21:00–21:45) — KEOS teyidi, karne v33, KC Göksupark alt adı (PR #122)
+
+KEOS (belediye e-imar) `$.ajax` ile çalıştı (fetch 403): `type=mahalle` belediye mahalle poligonlarını, `type=adaparsel` parsel
+poligonunu veriyor → 12 yeni kayıt + Atakent'in 2 parseli + Başak: 16/16 parsel merkezi bizim mahalle atamasıyla aynı belediye
+mahallesinde (Fırat Residence → ALTAY: PR #121'de açık kalan soru kapandı; ŞOA KEOS'ta 'AVCI'). Adres zinciri eski sokak adlarıyla
+(numaralı yeni caddeler yok) → belirsiz adaylara adresle parsel bulunamadı; TKGM nokta sorgusuyla 7 belirsiz adayın parseli alındı
+(hepsi gerçek, atanmamış parsel; KAPSAM-BELIRSIZ-2010.md ek tablo). Karne boru hattı yeniden koşuldu (karne-kos.sh depoya alındı),
+v33 yayında. Ad yazımı açığının deney dışı tek hedefi (Göksupark → 'KC Göksupark', 73 gös) PR #122 ile main'e girdi.
