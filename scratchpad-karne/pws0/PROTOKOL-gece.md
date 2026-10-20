@@ -1225,3 +1225,22 @@ yapışma yok. Ancak loc etiketi iki noktada yalnız "Ankara" (il düzeyi) — n
 doğrulanamıyor. **20.10 çekirdek turu kuralı:** sorgular arası ≥60 sn; her kayıtta loc + kutu ilk 3 ad
 yazılır; loc "Ankara" ise konum_dogrulandi:"belirsiz", kutu bir önceki noktayla aynıysa false. Bu 3 sorgu
 endekse yazılmadı (organik çıkarımı yapılmadı, yalnız protokol sınaması). Bugün toplam SERP sorgusu: 3.
+
+## 20.10 (18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30)
+
+**GSC:** API ön denetimi: deney 2'nin bekleyen 40 sayfasından 31'i 15–19.10'da kendiliğinden taranmış (işaretlendi). Kalan
+9'dan 8'i gönderildi (ilke, akasya, gokdemirler-suit, goksu-park-vadi, golkent-1, polsan1-ayisigi, erkent, demirer) + /siteler
+(07.09'dan beri taranmamıştı, başlığı 14.10'da değişti). Sakalar Tower: 1. deneme "Hata!", 2. deneme bağlantı kopmasında
+belirsiz, 3. deneme "Kota Aşıldı" → 21.10'a (yanında /iletisim). Tavan bugün 10-11 (Hata dahil). Deney 2'de kalan: 1 (sakalar).
+/eski-adresler 15.10 02:38Z'de taranmış (noindex, beklenen) → 28.10 okumasının 0. adımı sağlandı.
+
+**Çekirdek tur (60 sn aralık):** uule YİNE tuttu GİBİ GÖRÜNMEDİ — üç noktanın üçü de loc "06824, Tunahan" (Göksu ve Güzelkent
+konum_dogrulandi:false). 6 sorgu sonra durduruldu. Tunahan = ofisin mahallesi; sonuçlar ofis konumundan okunabilir:
+- "emlakçı": kutu Efor (389) / Kılıç (45, "ERYAMAN EMLAKÇI ... KILIÇ") / Ayyıldız (51, "Eryaman Emlakçı ...") — **biz yokuz**.
+- "eryaman emlakçı": kutu Kılıç / Ayyıldız / Efor — **biz yokuz** (07.10 ve 14.10'da #1'dik). Organik: ana sayfa #2.
+- "emlak ofisi": kutu Ofis Emlak / Efor / **Şirin #3**.
+- Marka: bilgi kartı sağlam (Şirin Gayrimenkul – Eryaman, 5,0 / 405, "Kapanmak üzere · 19:00").
+Saat 18:30–18:40: biz ve Efor "Kapanmak üzere 19:00", Kılıç ve Ayyıldız 20:00'ye kadar açık. Efor kapanışa yakın olduğu hâlde
+kutuda → tek açıklama saat değil; ama iki yeni gelen kutu üyesinin ADINDA "Eryaman Emlakçı" dizisi var (ad eşleşmesi kaldıracı,
+harita-kutusu-bulgular.md). **İş: 21.10 12:00–13:00 aynı 3 sorgu, aynı oturum (Tunahan) — öğlen #1 isek saat etkisi, değilsek
+gerçek kayıp.** GBP adı/saatleri değiştirilmez (kural); bu yalnız ölçüm.
