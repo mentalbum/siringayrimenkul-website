@@ -1,14 +1,25 @@
 [
  {
+  "yol": "/mahalleler/yesilova-mahallesi/meva-sehir",
+  "mah": "yesilova-mahallesi",
+  "site": "meva-sehir",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 680,
+  "tarama": "2026-08-02",
+  "durum": "bayat",
+  "olcum": "2026-10-14"
+ },
+ {
   "yol": "/mahalleler/sehit-osman-avci-mahallesi/inci-life-residence",
   "mah": "sehit-osman-avci-mahallesi",
   "site": "inci-life-residence",
-  "tur": "ada temsil",
-  "sira": 5,
+  "tur": "mahalle sayfası temsil",
+  "sira": 8,
   "gos": 359,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-04"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/seker-mahallesi/dort-mevsim-eryaman-konutlari",
@@ -278,12 +289,12 @@
   "yol": "/mahalleler/yesilova-mahallesi/green-place-residence",
   "mah": "yesilova-mahallesi",
   "site": "green-place-residence",
-  "tur": "eski slug",
+  "tur": "eski başlık",
   "sira": 2,
   "gos": 93,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-29"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/admira-goksu-konutlari",
@@ -429,6 +440,17 @@
   "olcum": "2026-09-05"
  },
  {
+  "yol": "/mahalleler/yesilova-mahallesi/address-yesilova",
+  "mah": "yesilova-mahallesi",
+  "site": "address-yesilova",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 68,
+  "tarama": "2026-07-26",
+  "durum": "bayat",
+  "olcum": "2026-10-14"
+ },
+ {
   "yol": "/mahalleler/goksu-mahallesi/doga-konutlari",
   "mah": "goksu-mahallesi",
   "site": "doga-konutlari",
@@ -531,23 +553,23 @@
   "yol": "/mahalleler/yavuz-selim-mahallesi/yukselen-sitesi",
   "mah": "yavuz-selim-mahallesi",
   "site": "yukselen-sitesi",
-  "tur": "ada temsil",
-  "sira": 4,
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
   "gos": 50,
   "tarama": "2026-08-11",
   "durum": "orta",
-  "olcum": "2026-08-30"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/elif-elvan-sitesi",
   "mah": "eryaman-mahallesi",
   "site": "elif-elvan-sitesi",
-  "tur": "ada temsil",
-  "sira": 2,
+  "tur": "komşu sayfa temsil",
+  "sira": 3,
   "gos": 47,
   "tarama": "2026-08-15",
   "durum": "orta",
-  "olcum": "2026-10-04"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/mavikent-sitesi",
@@ -592,6 +614,17 @@
   "tarama": "2026-07-27",
   "durum": "bayat",
   "olcum": "2026-10-07"
+ },
+ {
+  "yol": "/mahalleler/yesilova-mahallesi/eryaman-port",
+  "mah": "yesilova-mahallesi",
+  "site": "eryaman-port",
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
+  "gos": 42,
+  "tarama": "2026-08-06",
+  "durum": "bayat",
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/goksu-mahallesi/angora-sitesi",
@@ -649,17 +682,6 @@
   "olcum": "2026-10-07"
  },
  {
-  "yol": "/mahalleler/yesilova-mahallesi/kocaklar-tower",
-  "mah": "yesilova-mahallesi",
-  "site": "kocaklar-tower",
-  "tur": "eski slug",
-  "sira": 2,
-  "gos": 34,
-  "tarama": "2026-08-07",
-  "durum": "bayat",
-  "olcum": "2026-08-29"
- },
- {
   "yol": "/mahalleler/goksu-mahallesi/golkent-sitesi",
   "mah": "goksu-mahallesi",
   "site": "golkent-sitesi",
@@ -669,6 +691,17 @@
   "tarama": "2026-07-26",
   "durum": "bayat",
   "olcum": "2026-10-06"
+ },
+ {
+  "yol": "/mahalleler/yavuz-selim-mahallesi/ilkiz-sitesi",
+  "mah": "yavuz-selim-mahallesi",
+  "site": "ilkiz-sitesi",
+  "tur": "eski başlık",
+  "sira": 1,
+  "gos": 32,
+  "tarama": "2026-08-17",
+  "durum": "orta",
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/guneyce-sitesi",
@@ -697,11 +730,11 @@
   "mah": "yesilova-mahallesi",
   "site": "may-tower",
   "tur": "eski slug",
-  "sira": 1,
+  "sira": 2,
   "gos": 30,
   "tarama": "2026-08-12",
   "durum": "orta",
-  "olcum": "2026-08-29"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/gunotesi-sitesi",
@@ -740,12 +773,12 @@
   "yol": "/mahalleler/yesilova-mahallesi/dogan-city",
   "mah": "yesilova-mahallesi",
   "site": "dogan-city",
-  "tur": "mahalle sayfası temsil",
-  "sira": 6,
+  "tur": "GÖRÜNMEZ",
+  "sira": 0,
   "gos": 26,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-29"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/devlet-mahallesi/hotki-meydan",
@@ -807,11 +840,11 @@
   "mah": "devlet-mahallesi",
   "site": "yeni-huzur-bahcesi-sitesi",
   "tur": "ada temsil",
-  "sira": 3,
+  "sira": 5,
   "gos": 24,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-10-04"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/sehit-osman-avci-mahallesi/tan-yildizi-sitesi",
@@ -961,11 +994,11 @@
   "mah": "yesilova-mahallesi",
   "site": "lowland-business",
   "tur": "mahalle sayfası temsil",
-  "sira": 3,
+  "sira": 4,
   "gos": 19,
   "tarama": "2026-07-26",
   "durum": "bayat",
-  "olcum": "2026-08-29"
+  "olcum": "2026-10-14"
  },
  {
   "yol": "/mahalleler/eryaman-mahallesi/armina-park-evleri",

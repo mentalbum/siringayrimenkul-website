@@ -1,76 +1,82 @@
 {
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-20",
  "gun": 28,
  "pencere": {
-  "bas": "2026-09-16",
-  "bit": "2026-10-13",
+  "bas": "2026-09-22",
+  "bit": "2026-10-19",
   "gun": 28,
   "kaynak": "GA4: 28daysAgo–yesterday"
  },
  "ozet": {
   "gun": 28,
-  "kullanici": 1022,
-  "oturum": 1191,
-  "gorunum": 1498,
-  "ort_sure_sn": 58,
-  "hemen_cikma": 64.2,
-  "etkilesim_orani": 35.8,
-  "olay": 4471,
-  "phone_click": 6,
-  "tel_oturum_basina": 0.005
+  "kullanici": 932,
+  "oturum": 1086,
+  "gorunum": 1420,
+  "ort_sure_sn": 61,
+  "hemen_cikma": 61.2,
+  "etkilesim_orani": 38.8,
+  "olay": 4198,
+  "phone_click": 7,
+  "tel_oturum_basina": 0.006
  },
  "temas": {
-  "phone_click": 6,
-  "whatsapp_click": 11,
-  "form_start": 0,
+  "phone_click": 7,
+  "whatsapp_click": 10,
+  "form_start": 1,
   "contact_form_submit": 0,
-  "site_ust_sahibinden": 23,
+  "site_ust_sahibinden": 29,
   "temas_oturum": 15,
   "sahibinden_cikis": {
-   "olay": 40,
-   "oturum": 37
+   "olay": 43,
+   "oturum": 41
   }
  },
  "temas_100": {
-  "phone_click": 0.5,
+  "phone_click": 0.64,
   "whatsapp_click": 0.92,
-  "form_start": 0.0,
+  "form_start": 0.09,
   "contact_form_submit": 0.0,
-  "site_ust_sahibinden": 1.93,
-  "temas_oturum": 1.26,
+  "site_ust_sahibinden": 2.67,
+  "temas_oturum": 1.38,
   "sahibinden_cikis": {
-   "olay": 3.36,
-   "oturum": 3.11
+   "olay": 3.96,
+   "oturum": 3.78
   }
  },
  "form_start_tanim": "form_sayfalari",
  "sahibinden_ozel": {
-  "site_ust_sahibinden": 13,
-  "sahibinden_click": 10,
+  "site_ust_sahibinden": 11,
+  "sahibinden_click": 18,
   "konum": [
    {
     "olay": "site_ust_sahibinden",
     "konum": "(not set)",
-    "n": 13,
-    "oturum": 12
-   },
-   {
-    "olay": "sahibinden_click",
-    "konum": "site_alt",
-    "n": 4,
-    "oturum": 4
+    "n": 11,
+    "oturum": 10
    },
    {
     "olay": "sahibinden_click",
     "konum": "site_ust",
-    "n": 4,
-    "oturum": 4
+    "n": 7,
+    "oturum": 7
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "site_alt",
+    "n": 6,
+    "oturum": 6
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "anasayfa_kart",
+    "n": 2,
+    "oturum": 2
    },
    {
     "olay": "sahibinden_click",
     "konum": "footer",
-    "n": 1,
-    "oturum": 1
+    "n": 2,
+    "oturum": 2
    },
    {
     "olay": "sahibinden_click",
@@ -86,78 +92,84 @@
  ],
  "ga4_temas": {
   "pencere": {
-   "bas": "2026-09-16",
-   "bit": "2026-10-13"
+   "bas": "2026-09-22",
+   "bit": "2026-10-19"
   },
   "host": "www.siringayrimenkul.com",
   "oturum": {
-   "mobile": 924,
-   "desktop": 264,
-   "tablet": 2
+   "mobile": 823,
+   "desktop": 261,
+   "tablet": 1
   },
   "temas_olay": {
-   "phone_click": 6,
-   "whatsapp_click": 11
+   "phone_click": 7,
+   "whatsapp_click": 10
   },
   "temas_oturum": {
    "toplam": 15,
-   "phone_click": 5,
-   "whatsapp_click": 10
+   "phone_click": 6,
+   "whatsapp_click": 9
   },
   "temas_konum": [
-   "whatsapp_click/mobil_cubuk: 9 olay, 8 oturum",
-   "phone_click/mobil_cubuk: 3 olay, 3 oturum",
+   "whatsapp_click/mobil_cubuk: 8 olay, 7 oturum",
+   "phone_click/mobil_cubuk: 4 olay, 4 oturum",
    "phone_click/site_ust: 3 olay, 3 oturum",
    "whatsapp_click/site_ust: 2 olay, 2 oturum"
   ],
   "form": {
-   "form_start_form_sayfasinda": 0,
+   "form_start_form_sayfasinda": 1,
    "form_start_baska_sayfada": [
     "/: 3"
    ],
    "contact_form_submit": 0,
    "form_sayfasi_goruntuleme": {
-    "toplam": 32,
-    "bot_izli": 25,
-    "insan_tahmini": 7
+    "toplam": 35,
+    "bot_izli": 22,
+    "insan_tahmini": 13
    }
   },
   "sahibinden_cikis_click": {
-   "olay": 40,
-   "oturum": 37,
+   "olay": 43,
+   "oturum": 41,
    "cihaz": {
-    "mobile": 31,
-    "desktop": 9
+    "mobile": 32,
+    "desktop": 11
    }
   },
   "sahibinden_ozel_olay": {
-   "site_ust_sahibinden": 13,
-   "sahibinden_click": 10
+   "site_ust_sahibinden": 11,
+   "sahibinden_click": 18
   },
   "sahibinden_ozel_konum": [
    {
     "olay": "site_ust_sahibinden",
     "konum": "(not set)",
-    "n": 13,
-    "oturum": 12
-   },
-   {
-    "olay": "sahibinden_click",
-    "konum": "site_alt",
-    "n": 4,
-    "oturum": 4
+    "n": 11,
+    "oturum": 10
    },
    {
     "olay": "sahibinden_click",
     "konum": "site_ust",
-    "n": 4,
-    "oturum": 4
+    "n": 7,
+    "oturum": 7
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "site_alt",
+    "n": 6,
+    "oturum": 6
+   },
+   {
+    "olay": "sahibinden_click",
+    "konum": "anasayfa_kart",
+    "n": 2,
+    "oturum": 2
    },
    {
     "olay": "sahibinden_click",
     "konum": "footer",
-    "n": 1,
-    "oturum": 1
+    "n": 2,
+    "oturum": 2
    },
    {
     "olay": "sahibinden_click",
@@ -169,18 +181,18 @@
   "click_linkdomain": [
    {
     "alan": "eryamansiringayrimenkul.sahibinden.com",
-    "olay": 40,
-    "oturum": 37
+    "olay": 43,
+    "oturum": 41
    },
    {
     "alan": "wa.me",
-    "olay": 9,
-    "oturum": 9
+    "olay": 8,
+    "oturum": 8
    },
    {
     "alan": "maps.app.goo.gl",
-    "olay": 5,
-    "oturum": 5
+    "olay": 3,
+    "oturum": 3
    },
    {
     "alan": "maps.google.com",
@@ -188,25 +200,28 @@
     "oturum": 1
    }
   ],
-  "degerleme_cta": [],
+  "degerleme_cta": [
+   "site_banner: 1",
+   "site_ust: 1"
+  ],
   "mobil_ofis_saati": {
    "acik": {
-    "oturum": 445,
-    "etkilesimli": 142,
-    "phone_click": 4,
+    "oturum": 394,
+    "etkilesimli": 138,
+    "phone_click": 5,
     "whatsapp_click": 6,
-    "temas_oturum_yaklasik": 10,
-    "temas_100": 2.25
+    "temas_oturum_yaklasik": 11,
+    "temas_100": 2.79
    },
    "kapali": {
-    "oturum": 491,
-    "etkilesimli": 164,
+    "oturum": 439,
+    "etkilesimli": 159,
     "phone_click": 1,
-    "whatsapp_click": 5,
-    "temas_oturum_yaklasik": 6,
-    "temas_100": 1.22
+    "whatsapp_click": 4,
+    "temas_oturum_yaklasik": 5,
+    "temas_100": 1.14
    },
-   "oran_kapali_bolu_acik": 0.54
+   "oran_kapali_bolu_acik": 0.41
   },
   "suzulen_host": [
    {
@@ -224,72 +239,72 @@
   {
    "ad": "Site sayfaları",
    "aile": "site",
-   "sayfa": 287,
-   "goruntuleme": 989,
-   "oturum": 938,
-   "ort_sure_sn": 46,
-   "hemen_cikma": 63.4,
-   "olay": 3236
+   "sayfa": 281,
+   "goruntuleme": 930,
+   "oturum": 863,
+   "ort_sure_sn": 49,
+   "hemen_cikma": 59.7,
+   "olay": 3044
   },
   {
    "ad": "Diğer (araçlar, iletişim…)",
    "aile": "diğer",
-   "sayfa": 13,
-   "goruntuleme": 191,
-   "oturum": 156,
-   "ort_sure_sn": 40,
-   "hemen_cikma": 34,
-   "olay": 392
+   "sayfa": 14,
+   "goruntuleme": 181,
+   "oturum": 150,
+   "ort_sure_sn": 37,
+   "hemen_cikma": 30,
+   "olay": 371
   },
   {
    "ad": "Ana sayfa",
    "aile": "ana sayfa",
    "sayfa": 1,
-   "goruntuleme": 166,
-   "oturum": 148,
-   "ort_sure_sn": 97,
-   "hemen_cikma": 50,
-   "olay": 501
+   "goruntuleme": 156,
+   "oturum": 139,
+   "ort_sure_sn": 85,
+   "hemen_cikma": 51.8,
+   "olay": 462
+  },
+  {
+   "ad": "Ada sayfaları",
+   "aile": "ada",
+   "sayfa": 27,
+   "goruntuleme": 50,
+   "oturum": 34,
+   "ort_sure_sn": 68,
+   "hemen_cikma": 14.7,
+   "olay": 110
   },
   {
    "ad": "Yazılar",
    "aile": "yazı",
    "sayfa": 6,
    "goruntuleme": 34,
-   "oturum": 35,
-   "ort_sure_sn": 29,
-   "hemen_cikma": 71.4,
-   "olay": 116
+   "oturum": 33,
+   "ort_sure_sn": 31,
+   "hemen_cikma": 63.6,
+   "olay": 110
   },
   {
    "ad": "Etap sayfaları",
    "aile": "etap",
    "sayfa": 5,
-   "goruntuleme": 47,
-   "oturum": 34,
-   "ort_sure_sn": 33,
-   "hemen_cikma": 11.8,
-   "olay": 59
-  },
-  {
-   "ad": "Ada sayfaları",
-   "aile": "ada",
-   "sayfa": 27,
-   "goruntuleme": 46,
-   "oturum": 34,
-   "ort_sure_sn": 64,
-   "hemen_cikma": 17.6,
-   "olay": 117
+   "goruntuleme": 37,
+   "oturum": 27,
+   "ort_sure_sn": 36,
+   "hemen_cikma": 3.7,
+   "olay": 44
   },
   {
    "ad": "Mahalle sayfaları",
    "aile": "mahalle",
    "sayfa": 8,
-   "goruntuleme": 25,
-   "oturum": 25,
-   "ort_sure_sn": 46,
-   "hemen_cikma": 44,
-   "olay": 50
+   "goruntuleme": 32,
+   "oturum": 26,
+   "ort_sure_sn": 67,
+   "hemen_cikma": 26.9,
+   "olay": 57
   }
  ]
 }

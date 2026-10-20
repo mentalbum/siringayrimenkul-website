@@ -1,8 +1,8 @@
 {
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-20",
  "pencere": {
-  "bas": "2026-09-14",
-  "bit": "2026-10-11",
+  "bas": "2026-09-21",
+  "bit": "2026-10-18",
   "gun": 28
  },
  "gun": 28,
@@ -10,65 +10,65 @@
   {
    "tur": "site",
    "ad": "Site sayfaları",
-   "sayfa": 630,
-   "gos": 49781,
-   "tik": 917,
-   "tik_sayfa": 1.46,
-   "to": 1.84
+   "sayfa": 604,
+   "gos": 46439,
+   "tik": 809,
+   "tik_sayfa": 1.34,
+   "to": 1.74
   },
   {
    "tur": "diğer",
    "ad": "Diğer (ana sayfa, araçlar)",
-   "sayfa": 20,
-   "gos": 4422,
-   "tik": 73,
-   "tik_sayfa": 3.65,
-   "to": 1.65
+   "sayfa": 15,
+   "gos": 4056,
+   "tik": 68,
+   "tik_sayfa": 4.53,
+   "to": 1.68
   },
   {
    "tur": "blog",
    "ad": "Yazılar",
-   "sayfa": 29,
-   "gos": 2209,
-   "tik": 28,
-   "tik_sayfa": 0.97,
-   "to": 1.27
+   "sayfa": 25,
+   "gos": 1918,
+   "tik": 23,
+   "tik_sayfa": 0.92,
+   "to": 1.2
   },
   {
    "tur": "ada",
    "ad": "Ada sayfaları",
-   "sayfa": 442,
-   "gos": 3154,
-   "tik": 23,
+   "sayfa": 408,
+   "gos": 2641,
+   "tik": 22,
    "tik_sayfa": 0.05,
-   "to": 0.73
+   "to": 0.83
   },
   {
    "tur": "mahalle",
    "ad": "Mahalle sayfaları",
    "sayfa": 11,
-   "gos": 1088,
-   "tik": 4,
-   "tik_sayfa": 0.36,
-   "to": 0.37
-  },
-  {
-   "tur": "eski",
-   "ad": "Eski adres (mahalle kökü)",
-   "sayfa": 2,
-   "gos": 47,
-   "tik": 3,
-   "tik_sayfa": 1.5,
-   "to": 6.38
+   "gos": 952,
+   "tik": 5,
+   "tik_sayfa": 0.45,
+   "to": 0.53
   },
   {
    "tur": "etap",
    "ad": "Etap sayfaları",
    "sayfa": 5,
-   "gos": 179,
+   "gos": 161,
    "tik": 3,
    "tik_sayfa": 0.6,
-   "to": 1.68
+   "to": 1.86
+  },
+  {
+   "tur": "eski",
+   "ad": "Eski adres (mahalle kökü)",
+   "sayfa": 2,
+   "gos": 45,
+   "tik": 2,
+   "tik_sayfa": 1.0,
+   "to": 4.44
   }
  ]
 }

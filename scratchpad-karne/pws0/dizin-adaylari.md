@@ -1,13 +1,13 @@
 # DİZİN İSTEĞİ ADAYLARI — SERP turlarından üretildi
 
-Üretim: 14.10.2026 · `python3 dizin-adaylari-uret.py`  
+Üretim: 20.10.2026 · `python3 dizin-adaylari-uret.py`  
 Ölçüt: sayfa SERP'te kayıp + dizinde bayat. Dizinsizlere kota harcanmaz
 (Özgün kararı) — ayrı bölümde. İstek gönderilmişler düşüldü.  
 Yenimahalle grubu (Ata/Susuz/Cumhuriyet) hariç — 27.08'de siteden kaldırıldı, 410.  
 **Bu liste ADAY listesidir**: istek öncesi sayfa API ile doğrulanır ve
 SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 
-**0 aday · 119 SIRA sorunu (kota harcanmaz) · 13 istek gönderilmiş bekliyor · 17 dizinsiz**
+**0 aday · 122 SIRA sorunu (kota harcanmaz) · 13 istek gönderilmiş bekliyor · 16 dizinsiz**
 
 > **Aday olmak için SERP'te kayıp olmak yetmez, Google'da OLMAMAK gerekir.**
 > 31.08'de ölçüldü: SERP kaybına göre seçilen 203 sayfanın 203'ü de zaten
@@ -24,7 +24,8 @@ SERP'te kendiliğinden kurtulmuşsa kota harcanmaz.
 Bu sayfalar Google'da var; SERP'te kaybolmalarının sebebi dizin değil.
 Dizin isteği göndermek kotayı boşa yakar.
 
-- `inci-life-residence` (Şehit Osman Avcı) — ada temsil, sıra 5., 359 gösterim
+- `meva-sehir` (Yeşilova) — GÖRÜNMEZ, sıra yok, 680 gösterim
+- `inci-life-residence` (Şehit Osman Avcı) — mahalle sayfası temsil, sıra 8., 359 gösterim
 - `dort-mevsim-eryaman-konutlari` (Şeker) — GÖRÜNMEZ, sıra yok, 288 gösterim
 - `mesa-bloklari` (Altay) — eski başlık, sıra 2., 262 gösterim
 - `atakent-2-cumhuriyet-sitesi` (Eryaman) — eski başlık, sıra 2., 241 gösterim
@@ -49,7 +50,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `safir-sitesi` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 106 gösterim
 - `zirveden-goksu` (Göksu) — eski başlık, sıra 3., 103 gösterim
 - `seda-terasevler` (Yavuz Selim) — mahalle sayfası temsil, sıra 3., 94 gösterim
-- `green-place-residence` (Yeşilova) — eski slug, sıra 2., 93 gösterim
+- `green-place-residence` (Yeşilova) — eski başlık, sıra 2., 93 gösterim
 - `admira-goksu-konutlari` (Göksu) — komşu sayfa temsil, sıra 7., 93 gösterim
 - `platin-konutlari` (Eryaman) — GÖRÜNMEZ, sıra yok, 92 gösterim
 - `karkoy-villalari` (Yavuz Selim) — GÖRÜNMEZ, sıra yok, 88 gösterim
@@ -63,8 +64,7 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `demirkent-sitesi` (Devlet) — ada temsil, sıra 6., 72 gösterim
 - `eryapi-sitesi` (Güzelkent) — eski başlık, sıra 2., 70 gösterim
 - `evrimkent-sitesi` (Güzelkent) — eski başlık, sıra 1., 69 gösterim
-- `doga-konutlari` (Göksu) — GÖRÜNMEZ, sıra yok, 66 gösterim
-- … ve 79 sayfa daha
+- … ve 82 sayfa daha
 
 ## İstek gönderildi, tarama bekliyor
 
@@ -94,10 +94,9 @@ Dizin isteği göndermek kotayı boşa yakar.
 - `konuta-ozlem-sitesi` (Güzelkent) — eski slug
 - `kurtulus-sitesi` (Güzelkent) — GÖRÜNMEZ
 - `akasya-sitesi` (Şehit Osman Avcı) — GÖRÜNMEZ
-- `bulvar-312-konutlari` (Şehit Osman Avcı) — ada temsil
+- `bulvar-312-konutlari` (Şehit Osman Avcı) — mahalle sayfası temsil
 - `neva-panora-konutlari` (Şehit Osman Avcı) — ada temsil
 - `relax-eryaman-konutlari` (Şehit Osman Avcı) — GÖRÜNMEZ
 - `camlica-sitesi` (Şeyh Şamil) — GÖRÜNMEZ
 - `sahibin-sitesi` (Yavuz Selim) — GÖRÜNMEZ
-- `gokdemir-tower` (Yeşilova) — komşu sayfa temsil
-- `lokasyon-eryaman` (Yeşilova) — komşu sayfa temsil
+- `lokasyon-eryaman` (Yeşilova) — eski başlık

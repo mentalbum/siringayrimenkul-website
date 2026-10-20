@@ -1,45 +1,45 @@
 {
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-20",
  "kaynak": "GSC (gsc-q.mjs: date,query + marka sorgu süzgeci) + GA4 (ga4-q.mjs kanal, acilis, gbp; yalnız canlı alan adı) + gbp-yorum-serisi.jsonl + gbp-performans.jsonl",
  "marka_suzgec": "(ş|s)irin\\s*(gayrimenkul|emlak|group)",
  "marka_dogrulama_suzgec": "yorum|[şs]ik[aâ]yet",
- "son_gsc_gunu": "2026-10-11",
+ "son_gsc_gunu": "2026-10-18",
  "ozet": {
   "marka_gos_28": {
-   "simdi": 129,
-   "onceki": 165,
-   "bit": "2026-10-11"
+   "simdi": 106,
+   "onceki": 177,
+   "bit": "2026-10-18"
   },
   "marka_tik_28": {
-   "simdi": 14,
-   "onceki": 14
+   "simdi": 12,
+   "onceki": 15
   },
   "marka_dogrulama_gos_28": {
-   "simdi": 43,
-   "onceki": 0
+   "simdi": 34,
+   "onceki": 14
   },
   "gbp_sayfa_gos_28": {
    "simdi": 0,
    "onceki": 0
   },
   "direct_mobil_28": {
-   "simdi": 54,
-   "onceki": 79,
-   "bit": "2026-10-13"
+   "simdi": 42,
+   "onceki": 85,
+   "bit": "2026-10-19"
   },
   "direct_mobil_ana_28": {
-   "simdi": 16,
-   "onceki": 24,
-   "bit": "2026-10-13",
-   "etk_simdi": 6,
-   "etk_onceki": 10
+   "simdi": 11,
+   "onceki": 29,
+   "bit": "2026-10-19",
+   "etk_simdi": 3,
+   "etk_onceki": 13
   },
   "direct_mobil_derin_28": {
-   "simdi": 38,
-   "onceki": 55,
-   "bit": "2026-10-13",
-   "etk_simdi": 7,
-   "etk_onceki": 12
+   "simdi": 31,
+   "onceki": 56,
+   "bit": "2026-10-19",
+   "etk_simdi": 5,
+   "etk_onceki": 14
   },
   "direct_masaustu_28": {
    "simdi": 55,
@@ -50,57 +50,41 @@
   {
    "sorgu": "şirin gayrimenkul",
    "sinif": "cekirdek",
-   "simdi": 73,
-   "onceki": 98
-  },
-  {
-   "sorgu": "şirin gayrimenkul yorumları",
-   "sinif": "dogrulama",
-   "simdi": 43,
-   "onceki": 0
+   "simdi": 51,
+   "onceki": 110
   },
   {
    "sorgu": "şirin emlak",
    "sinif": "cekirdek",
-   "simdi": 31,
-   "onceki": 45
+   "simdi": 35,
+   "onceki": 40
+  },
+  {
+   "sorgu": "şirin gayrimenkul yorumları",
+   "sinif": "dogrulama",
+   "simdi": 34,
+   "onceki": 14
   },
   {
    "sorgu": "şirin emlak eryaman",
    "sinif": "cekirdek",
-   "simdi": 24,
-   "onceki": 6
-  },
-  {
-   "sorgu": "şirin group",
-   "sinif": "cekirdek",
-   "simdi": 1,
-   "onceki": 0
+   "simdi": 20,
+   "onceki": 11
   },
   {
    "sorgu": "şirin emlak sahibinden",
    "sinif": "cekirdek",
    "simdi": 0,
-   "onceki": 16
+   "onceki": 15
+  },
+  {
+   "sorgu": "şirin group",
+   "sinif": "cekirdek",
+   "simdi": 0,
+   "onceki": 1
   }
  ],
  "haftalar": [
-  {
-   "bas": "2026-07-06",
-   "tam": true,
-   "marka_gos": 22,
-   "marka_tik": 5,
-   "marka_dogrulama": 0,
-   "gbp_sayfa_gos": 0,
-   "direct_mobil": 9,
-   "direct_mobil_ana": 6,
-   "direct_mobil_derin": 3,
-   "direct_masaustu": 11,
-   "sosyal": 1,
-   "ai": 0,
-   "gbp_mobil": 0,
-   "utm": "yok"
-  },
   {
    "bas": "2026-07-13",
    "tam": true,
@@ -311,6 +295,22 @@
   },
   {
    "bas": "2026-10-12",
+   "tam": true,
+   "marka_gos": 17,
+   "marka_tik": 1,
+   "marka_dogrulama": 5,
+   "gbp_sayfa_gos": 0,
+   "direct_mobil": 7,
+   "direct_mobil_ana": 1,
+   "direct_mobil_derin": 6,
+   "direct_masaustu": 12,
+   "sosyal": 4,
+   "ai": 5,
+   "gbp_mobil": 0,
+   "utm": "yok"
+  },
+  {
+   "bas": "2026-10-19",
    "tam": false,
    "marka_gos": null,
    "marka_tik": null,
@@ -461,13 +461,13 @@
     "gbp_mobil_max": 6
    },
    "utmsiz": {
-    "hafta": 8,
+    "hafta": 9,
     "bas": "2026-08-17",
-    "bit": "2026-10-11",
+    "bit": "2026-10-18",
     "ardisik": true,
     "ana_min": 1,
     "ana_max": 10,
-    "ana_ort": 5.1,
+    "ana_ort": 4.7,
     "gbp_mobil_min": 0,
     "gbp_mobil_max": 0
    },
@@ -478,9 +478,9 @@
   "Sorgu boyutu GSC gizlilik süzgecinden geçer: marka gösterimi alt sınırdır, seri olarak okunur.",
   "+%25 altı fark yorumlanmaz (n küçük); mevsim kıyası için Ekim 2027 gerekir.",
   "Masaüstü Direct'te izleme/kendi trafiği şüphesi var; vekil yalnız MOBİL Direct'in ana sayfaya inen kısmı. Site sayfasına doğrudan düşen oturumlar ayrı tutulur.",
-  "GBP bağı UTM'sizken profil düğmesinden gelenler mobil Direct ana sayfaya karışır. UTM'li haftalarda (27.07–09.08) ana sayfaya doğrudan gelen mobil oturum haftada 1–3 (ortalama 2), UTM'siz haftalarda (17.08–11.10) haftada 1–10 (ortalama 5,1); UTM'li haftalarda profilden gelen mobil oturum (medium=gbp) haftada 2–6. UTM geri konunca ana sayfa mobil Direct 28 günde yaklaşık 8 beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra yapılır.",
+  "GBP bağı UTM'sizken profil düğmesinden gelenler mobil Direct ana sayfaya karışır. UTM'li haftalarda (27.07–09.08) ana sayfaya doğrudan gelen mobil oturum haftada 1–3 (ortalama 2), UTM'siz haftalarda (17.08–18.10) haftada 1–10 (ortalama 4,7); UTM'li haftalarda profilden gelen mobil oturum (medium=gbp) haftada 2–6. UTM geri konunca ana sayfa mobil Direct 28 günde yaklaşık 8 beklenir; ilk geçerli kıyas UTM tarihinden 56 gün sonra yapılır.",
   "GBP bağı UTM'siz ve GBP Performans kaydı yokken mobil Direct hatırlanırlık vekili olarak okunmaz; yalnız taban kaydıdır.",
-  "Adımızın yanında 'yorum' ya da 'şikayet' geçen aramalar çekirdek markadan ayrı sayılır: son 28 günde 43 gösterim (önceki 0).",
-  "Ana sayfaya doğrudan gelen mobil oturum 28 günde 16 (önceki 24); sayı 30 eşiğinin altındayken yüzde fark yorumlanmaz."
+  "Adımızın yanında 'yorum' ya da 'şikayet' geçen aramalar çekirdek markadan ayrı sayılır: son 28 günde 34 gösterim (önceki 14).",
+  "Ana sayfaya doğrudan gelen mobil oturum 28 günde 11 (önceki 29); sayı 30 eşiğinin altındayken yüzde fark yorumlanmaz."
  ]
 }

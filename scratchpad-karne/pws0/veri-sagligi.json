@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-14",
+ "guncelleme": "2026-10-20",
  "gurultu": {
   "cift": 90,
   "sessiz": 79,
@@ -34,23 +34,23 @@
  },
  "olculen": 509,
  "kuyruk": 509,
- "kayit": 2264,
+ "kayit": 2290,
  "yas": [
   [
    "0-7 gün",
-   155
+   26
   ],
   [
    "8-14 gün",
-   84
+   184
   ],
   [
    "15-30 gün",
-   0
+   50
   ],
   [
    "30+ gün",
-   270
+   249
   ]
  ],
  "bulgular": [
@@ -138,11 +138,17 @@
   },
   {
    "ad": "Envanterde var, kuyrukta YOK",
-   "adet": 0,
+   "adet": 12,
    "aciklama": "Sitede sayfası olan ama ölçüm kuyruğunda hiç yer almayan kayıt — adaş paylaşımı da hesaba katıldı. Bu sayfaların sırası hiç bilinmiyor, yani karnenin kapsama iddiası olduğundan iyi görünüyor.",
-   "ornek": [],
+   "ornek": [
+    "altay-mahallesi/firat-residence",
+    "eryaman-mahallesi/sekerkonut-sitesi",
+    "goksu-mahallesi/arnova-goksu",
+    "goksu-mahallesi/cinar-goksu-konutlari",
+    "goksu-mahallesi/golyaka-evleri"
+   ],
    "agir": true,
-   "temiz": true,
+   "temiz": false,
    "bilgi": false
   },
   {
@@ -168,5 +174,5 @@
    "bilgi": false
   }
  ],
- "temiz_mi": true
+ "temiz_mi": false
 }

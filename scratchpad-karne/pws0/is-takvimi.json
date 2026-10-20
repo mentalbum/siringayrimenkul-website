@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-15",
+ "guncelleme": "2026-10-20",
  "uretim": "is-takvimi-uret.py",
  "damla": {
   "acik": 0,
@@ -9,7 +9,7 @@
    "eski_adres": 0
   },
   "kota_gun": 10,
-  "baslangic": "2026-10-16",
+  "baslangic": "2026-10-21",
   "bitis_kota": null,
   "gun_sayisi": 0,
   "istek_gunluk": {
@@ -23,14 +23,16 @@
    "07.10": 11,
    "08.10": 11,
    "13.10": 10,
-   "15.10": 11
+   "15.10": 11,
+   "20.10": 8
   },
   "kuyruk_disi_istek": 11,
-  "deney_istek": 32,
+  "deney_istek": 40,
   "deney_istek_gunluk": {
    "08.10": 11,
    "13.10": 10,
-   "15.10": 11
+   "15.10": 11,
+   "20.10": 8
   },
   "ortalama_istek": 8.6,
   "bitis_gozlenen": null,
@@ -108,7 +110,7 @@
    "tarih": "2026-09-16",
    "tarih_tr": "16.09 Çarşamba",
    "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor.",
-   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 6, whatsapp_click 11 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
+   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 7, whatsapp_click 10 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
    "kaynak": "git log --grep '#88' + PROTOKOL-gece.md 02.09 (GA4 açıldı) + tik-sonrasi.json",
    "kim": "Claude"
   },
@@ -124,7 +126,7 @@
    "tarih": "2026-09-28",
    "tarih_tr": "28.09 Pazartesi",
    "is": "Beklenen düşüşler sınaması: python3 sonuc-ozeti-uret.py ve sayfa-turu-verimi.py yeniden; toplam tık çizgisi inmiş olmalı, Eryaman satırı inmemiş olmalı.",
-   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 1.150 tıkın 106 tıkı (%9) oradandı. Yazılar: 29 sayfa, 2.209 gösterim / 28 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 1.052 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
+   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 998 tıkın 69 tıkı (%7) oradandı. Yazılar: 25 sayfa, 1.918 gösterim / 23 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 933 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
    "kaynak": "git log --grep '#79' + sonuc-ozeti.json ayrim + sayfa-turu-verimi.json",
    "kim": "Claude"
   },
@@ -179,8 +181,8 @@
    "kim": "Özgün"
   },
   {
-   "tarih": "2026-10-15",
-   "tarih_tr": "15.10 Perşembe",
+   "tarih": "2026-10-20",
+   "tarih_tr": "20.10 Salı",
    "is": "Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği sürer, ne yazacağı müşteriye bırakılır.",
    "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar. 14.10: ChatGPT'nin nötr istek metni + 5-7 gün sonra tek hatırlatma + kayıt şeması chatgpt-istisare-1310.md §2'de; Özgün onaylarsa yorum-toplama.md güncellenir.",
    "kaynak": "kaldirac-defteri.json 'Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyas' + hedef-sorgular.json (kutu_var ve kutuda alanları)",
@@ -257,6 +259,22 @@
    "kim": "Claude"
   },
   {
+   "tarih": "2026-10-21",
+   "tarih_tr": "21.10 Çarşamba",
+   "is": "12 yeni sayfaya GSC dizin isteği (deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-21",
+   "tarih_tr": "21.10 Çarşamba",
+   "is": "12:00–13:00 aynı üç sorgu, aynı oturum (Tunahan), 60 sn aralık: öğlen kutuda #1 isek saat etkisi (kapanışa yakın saatte düşüş), değilsek gerçek kayıp → Özgün'e haber.",
+   "neden": "Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutularında yokuz (Tunahan konumu)",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutuların'",
+   "kim": "Claude"
+  },
+  {
    "tarih": "2026-10-28",
    "tarih_tr": "28.10 Çarşamba",
    "is": "Eski adres iç bağ deneyi okuması (eski-adres-deneyi-1410.tsv): her kolda 'son tarama > 2026-10-15' oranı (API denetle-dosya, 100 adres); 07.10 istekli 8 adres ayrı kova. İkincil: varislerin aynı sorgulardaki gösterim payı (gsc sayfalar 28g).",
@@ -305,10 +323,10 @@
    "kim": "Claude"
   },
   {
-   "tarih": "2026-11-11",
-   "tarih_tr": "11.11 Çarşamba",
+   "tarih": "2026-11-17",
+   "tarih_tr": "17.11 Salı",
    "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
-   "neden": "14.10 ölçümü tek pencere (14.09–11.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %83,5, tık payı %82,0; yalın site adı sınıfı TO %0,7 (konum 9,3), alıcı niyeti TO %3,0 (konum 6,9). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
+   "neden": "20.10 ölçümü tek pencere (21.09–18.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %82,9, tık payı %81,0; yalın site adı sınıfı TO %0,6 (konum 8,8), alıcı niyeti TO %2,8 (konum 7,1). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
    "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
    "kim": "Claude"
   },
@@ -318,6 +336,30 @@
    "is": "Başlık deneyi 2 nihai okuma (son istek + 28 veri günü).",
    "neden": "Karar okuması. İstekler 17.10'dan sonraya sarkarsa bu tarih de o kadar kayar. Güven aralığı 1'i içeriyorsa sonuç 'sonuçsuz' yazılır: başlık geri alınmaz da öteki sayfalara yayılmaz da.",
    "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-18",
+   "tarih_tr": "18.11 Çarşamba",
+   "is": "12 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-18",
+   "tarih_tr": "18.11 Çarşamba",
+   "is": "Ad yazımı açığı: 9 kesin grubun doğru yazımını kaynakla teyit et (Neva/Neve vb.), alternatifAdlar + görünür 'olarak da geçer' cümlesi ekle; lastmod; IndexNow.",
+   "neden": "Ad yazımı açığı: aranan ama kayıtta olmayan yazımlar (alternatifAdlar)",
+   "kaynak": "kaldirac-defteri.json 'Ad yazımı açığı: aranan ama kayıtta olmayan yazımlar (alternatifAdlar)'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-18",
+   "tarih_tr": "18.11 Çarşamba",
+   "is": "faq.ts tetiğini gerçek parsel paylaşım verisine bağla (getAllAdalar sayımı); atakent-vadi sınırındaki iç halkayı temizle; map-qa halka sayımını renderer'la hizala.",
+   "neden": "lib/faq.ts 'paylaş' tetiği yanlış SSS üretiyor",
+   "kaynak": "kaldirac-defteri.json 'lib/faq.ts 'paylaş' tetiği yanlış SSS üretiyor'",
    "kim": "Claude"
   }
  ]
