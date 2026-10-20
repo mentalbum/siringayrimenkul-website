@@ -26,12 +26,33 @@ const nextConfig: NextConfig = {
   async redirects() {
     // 27.08: Yenimahalle grubu (ata/susuz/cumhuriyet mahalleleri) siteden
     // kaldırıldı. Eski adresleri proxy.ts 410 (Gone) ile kapatıyor; buraya o
-    // mahallelere YENİ kural ekleme. TEK İSTİSNA aşağıdaki ÇAPRAZ-KAYNAK bloğu:
-    // kaynağı YAŞAYAN bir mahallenin eski slug'ı olan bu kurallar bilerek
-    // duruyor — silinselerdi kaynak adres genel slug-taşıma kuralına düşüp
-    // 301→404 zinciri üretirdi; şimdi 301→410 (proxy hedefi yakalıyor), Google
-    // adresi kesin sinyalle düşürüyor.
+    // mahallelere YENİ kural ekleme. İKİ İSTİSNA:
+    // (1) Aşağıdaki ÇAPRAZ-KAYNAK bloğu: kaynağı YAŞAYAN bir mahallenin eski
+    //     slug'ı olan bu kurallar bilerek duruyor — silinselerdi kaynak adres
+    //     genel slug-taşıma kuralına düşüp 301→404 zinciri üretirdi; şimdi
+    //     301→410 (proxy hedefi yakalıyor), Google adresi kesin sinyalle düşürüyor.
+    // (2) Kaldırılan mahallede kayıtlı bir site YAŞAYAN bir mahallede yeniden
+    //     açılırsa (yanlış mahalle ataması düzeltmesi) eski adresi 410 yerine
+    //     buradan 301 alır — proxy.ts'in "yaşayan varise 301" kuralı. Bugün tek
+    //     örnek Çağ Life (aşağıda).
     return [
+      // 20.10: Çağ Life Sitesi 27.08'de Yenimahalle grubuyla birlikte "Susuz" diye
+      // silinmişti; TKGM parsel kaydı (124123/63387/2) ilçeyi ETİMESGUT veriyor —
+      // Susuz Yenimahalle ilçesindedir, parsel Göksu'nun kuzey sınırında.
+      // Gerekçe ve kaynak dökümü: scratchpad-karne/pws0/KAPSAM-BELIRSIZ-2010.md
+      // ("Çağ Life mahalle gerekçesi"). Kayıt goksu-mahallesi altında yeniden
+      // açıldı; eski site VE eski tek-siteli ada adresleri 410 yerine yaşayan
+      // sayfaya gider (proxy 410 öneki bu dört adres için burada ezilir;
+      // redirects proxy'den önce çalışır). Ada adresi (tek siteli 63387/2) ada
+      // sayfasına değil site sayfasına gider: tek siteli ada sayfası 03.08'den
+      // beri dizinlenebilir (noindex yalnız paylaşımlı adada) ama canonical'ı
+      // site sayfasını gösteriyor; GSC'deki 7 gösterim/1 tıklık eski adresin
+      // sinyali araya hop girmeden oraya aksın. (Ada→ada emsali 31.08 bloğu;
+      // 46479-2/46656-5 ise 12.08 ÖLÜ ADA bloğu, kayıtsız adalar için.)
+      { source: "/mahalleler/susuz/cag-life-sitesi", destination: "/mahalleler/goksu-mahallesi/cag-life-sitesi", permanent: true },
+      { source: "/mahalleler/susuz-mahallesi/cag-life-sitesi", destination: "/mahalleler/goksu-mahallesi/cag-life-sitesi", permanent: true },
+      { source: "/mahalleler/susuz/adalar/63387-2", destination: "/mahalleler/goksu-mahallesi/cag-life-sitesi", permanent: true },
+      { source: "/mahalleler/susuz-mahallesi/adalar/63387-2", destination: "/mahalleler/goksu-mahallesi/cag-life-sitesi", permanent: true },
       { source: "/mahalleler/yavuz-selim/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
       { source: "/mahalleler/yavuz-selim-mahallesi/adalar/46432-1", destination: "/mahalleler/ata-mahallesi/gozde-evler-sitesi", permanent: true },
       { source: "/mahalleler/goksu/alya-park", destination: "/mahalleler/susuz-mahallesi/alya-park", permanent: true },
@@ -205,8 +226,9 @@ const nextConfig: NextConfig = {
 
       // Search Console'un raporladığı gerçek 404'ler (2026-07-28). Ada rota
       // anahtarı bugün "<ada>-<parsel>"; Google'ın hâlâ denediği parselsiz eski
-      // biçim 404 veriyordu. Ada sayfaları artık noindex olduğu için hedef,
-      // adanın kendisi değil o adadaki SİTE sayfası — link değeri dizindeki
+      // biçim 404 veriyordu. Ada sayfasının canonical'ı site sayfasını gösterdiği
+      // için (28.07'deki noindex 03.08'de kalktı; noindex yalnız paylaşımlı adada)
+      // hedef, adanın kendisi değil o adadaki SİTE sayfası — link değeri dizindeki
       // sayfaya aksın. "etaplar/undefined" ise ölü bir link hatasının kalıntısı.
       { source: "/mahalleler/tunahan/adalar/46497", destination: "/mahalleler/tunahan-mahallesi/sarigul-sitesi", permanent: true },
       { source: "/mahalleler/tunahan-mahallesi/adalar/46497", destination: "/mahalleler/tunahan-mahallesi/sarigul-sitesi", permanent: true },

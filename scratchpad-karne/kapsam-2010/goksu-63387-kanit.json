@@ -1,0 +1,1037 @@
+{
+ "amac": "Çağ Life Sitesi (63387/2) ve Duru Göksu (63387/3) kayıtlarının kaynak dökümü — PR #123 doğrulamasında istendi (oturum scratchpad'i silineceği için depoya alındı). Anlatı notları: notlar-63387/*.md; KEOS: keos-63387.json; TKGM: tkgm-cache.json.",
+ "tarih": "2026-10-20",
+ "yandex_suggest_geo": {
+  "aciklama": "suggest-maps.yandex.ru suggest-geo (kotasız) — 63387/2 merkezine yakın toponimler; 'sinir_63387_2_icinde' TKGM poligonuna göre PIP",
+  "kayitlar": [
+   {
+    "mesafe_m": 33,
+    "ad": "Çağ Life Sitesi",
+    "yandex_id": "5084625006",
+    "tam": "Çağ Life Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.6414794921875,
+    "lat": 40.00398254394531,
+    "sinir_63387_2_icinde": true
+   },
+   {
+    "mesafe_m": 89,
+    "ad": "Bulut Kule",
+    "yandex_id": "6943549744",
+    "tam": "Bulut Kule, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.640907287597656,
+    "lat": 40.00421905517578,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 97,
+    "ad": "Duru Göksu",
+    "yandex_id": "6942549184",
+    "tam": "Duru Göksu, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64076232910156,
+    "lat": 40.00345993041992,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 101,
+    "ad": "5331. Cad.",
+    "yandex_id": "2413098680",
+    "tam": "5331. Cad., Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.641075134277344,
+    "lat": 40.0045280456543,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 145,
+    "ad": "Ser İnci Konutları",
+    "yandex_id": "5431953377",
+    "tam": "Ser İnci Konutları, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.641685485839844,
+    "lat": 40.0051155090332,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 185,
+    "ad": "Doğa Konutları",
+    "yandex_id": "3530358645",
+    "tam": "Doğa Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.643455505371094,
+    "lat": 40.00272750854492,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 227,
+    "ad": "Çınar Göksu Konutları",
+    "yandex_id": "6103826885",
+    "tam": "Çınar Göksu Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64384460449219,
+    "lat": 40.002498626708984,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 237,
+    "ad": "Ilgaz Life",
+    "yandex_id": "4227305329",
+    "tam": "Ilgaz Life, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.63966751098633,
+    "lat": 40.002437591552734,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 297,
+    "ad": "Zirveden Göksu",
+    "yandex_id": "2216701348",
+    "tam": "Zirveden Göksu, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.63838195800781,
+    "lat": 40.003299713134766,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 309,
+    "ad": "Vaditepe Başpınar Konutları",
+    "yandex_id": "4097405379",
+    "tam": "Vaditepe Başpınar Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.645057678222656,
+    "lat": 40.002586364746094,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 313,
+    "ad": "Paro Life",
+    "yandex_id": "6962282524",
+    "tam": "Paro Life, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64228057861328,
+    "lat": 40.00101852416992,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 314,
+    "ad": "5328. Cad.",
+    "yandex_id": "2413098678",
+    "tam": "5328. Cad., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.6435661315918,
+    "lat": 40.006290435791016,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 338,
+    "ad": "Perla Life Sitesi",
+    "yandex_id": "3770457430",
+    "tam": "Perla Life Sitesi, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.645755767822266,
+    "lat": 40.00410842895508,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 351,
+    "ad": "Park Evo Sitesi",
+    "yandex_id": "3410549785",
+    "tam": "Park Evo Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64588165283203,
+    "lat": 40.00337600708008,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 369,
+    "ad": "5328. Cad., 8CB",
+    "yandex_id": "3721543568",
+    "tam": "8CB, 5328. Cad., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.6458740234375,
+    "lat": 40.00269317626953,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 390,
+    "ad": "Tulip Life",
+    "yandex_id": "4097360359",
+    "tam": "Tulip Life, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64145278930664,
+    "lat": 40.00031661987305,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 419,
+    "ad": "Admira Sitesi",
+    "yandex_id": "4097409799",
+    "tam": "Admira Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64612579345703,
+    "lat": 40.00202178955078,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 429,
+    "ad": "Mahal Çağ Sitesi",
+    "yandex_id": "4257437689",
+    "tam": "Mahal Çağ Sitesi, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.64319610595703,
+    "lat": 40.00751495361328,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 435,
+    "ad": "Hanzade Tower",
+    "yandex_id": "5946198627",
+    "tam": "Hanzade Tower, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.63915252685547,
+    "lat": 40.00715255737305,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 441,
+    "ad": "Göksu Manzara Evleri",
+    "yandex_id": "4097398309",
+    "tam": "Göksu Manzara Evleri, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.646907806396484,
+    "lat": 40.003173828125,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 443,
+    "ad": "Alina Konutları",
+    "yandex_id": "4097358909",
+    "tam": "Alina Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64170455932617,
+    "lat": 39.99983215332031,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 445,
+    "ad": "Neva Palas Sitesi",
+    "yandex_id": "3360951085",
+    "tam": "Neva Palas Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.63764572143555,
+    "lat": 40.0062370300293,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 472,
+    "ad": "Uzunali Göksu 2 Konutları",
+    "yandex_id": "6962940914",
+    "tam": "Uzunali Göksu 2 Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64681625366211,
+    "lat": 40.00200653076172,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 480,
+    "ad": "Bordo Göl Evleri",
+    "yandex_id": "3511266815",
+    "tam": "Bordo Göl Evleri, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.646942138671875,
+    "lat": 40.00558090209961,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 521,
+    "ad": "Kılıçaslan Vadi 1 Evleri",
+    "yandex_id": "4097397379",
+    "tam": "Kılıçaslan Vadi 1 Evleri, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64786911010742,
+    "lat": 40.00325012207031,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 527,
+    "ad": "Evinora Konutları 1",
+    "yandex_id": "2216773596",
+    "tam": "Evinora Konutları 1, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64777755737305,
+    "lat": 40.00258255004883,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 537,
+    "ad": "Gölyaka Evleri",
+    "yandex_id": "4256313639",
+    "tam": "Gölyaka Evleri, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64502716064453,
+    "lat": 39.999664306640625,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 544,
+    "ad": "Uzunali Göksu Konutları",
+    "yandex_id": "4097399099",
+    "tam": "Uzunali Göksu Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64763259887695,
+    "lat": 40.001808166503906,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 549,
+    "ad": "Göksupark Vadi Konutları",
+    "yandex_id": "4097354759",
+    "tam": "Göksupark Vadi Konutları, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64645004272461,
+    "lat": 40.000396728515625,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 657,
+    "ad": "City Life 2",
+    "yandex_id": "6943998964",
+    "tam": "City Life 2, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.64324188232422,
+    "lat": 40.009613037109375,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 667,
+    "ad": "Neo Vadi Konutları",
+    "yandex_id": "6944034864",
+    "tam": "Neo Vadi Konutları, Susuz Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.64814758300781,
+    "lat": 40.007328033447266,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 829,
+    "ad": "Itri Parkı",
+    "yandex_id": "2452908025",
+    "tam": "Itri Parkı, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.639404296875,
+    "lat": 39.996585845947266,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 902,
+    "ad": "Kaşmir Göl Evleri",
+    "yandex_id": "2216783731",
+    "tam": "Kaşmir Göl Evleri, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.6452522277832,
+    "lat": 39.99614334106445,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 967,
+    "ad": "Bordo Loca Sitesi",
+    "yandex_id": "4202045733",
+    "tam": "Bordo Loca Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.652923583984375,
+    "lat": 40.00208282470703,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 1207,
+    "ad": "Oyak Göksupark Sitesi",
+    "yandex_id": "4188719513",
+    "tam": "Oyak Göksupark Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.652549743652344,
+    "lat": 39.996734619140625,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 1428,
+    "ad": "Kaşmir Mavi Orkide Sitesi",
+    "yandex_id": "4189379973",
+    "tam": "Kaşmir Mavi Orkide Sitesi, Göksu Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64332962036133,
+    "lat": 39.991024017333984,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 1616,
+    "ad": "Kaşmir Yonca Sitesi",
+    "yandex_id": "4194229213",
+    "tam": "Kaşmir Yonca Sitesi, Cumhuriyet Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.65687942504883,
+    "lat": 39.99498748779297,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 2058,
+    "ad": "Göldekent Sitesi",
+    "yandex_id": "3874669800",
+    "tam": "Göldekent Sitesi, Şehit Osman Avcı Mah., Etimesgut, Ankara, Türkiye",
+    "lon": 32.64944839477539,
+    "lat": 39.98625564575195,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 2063,
+    "ad": "Gölde Luxe 1 Konutları",
+    "yandex_id": "3366329966",
+    "tam": "Gölde Luxe 1 Konutları, Cumhuriyet Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.65806198120117,
+    "lat": 39.99006271362305,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 2086,
+    "ad": "Gölde Luxe 1 Konutları, 5A",
+    "yandex_id": "3366455175",
+    "tam": "5A, Gölde Luxe 1 Konutları, Cumhuriyet Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.65861892700195,
+    "lat": 39.99018096923828,
+    "sinir_63387_2_icinde": false
+   },
+   {
+    "mesafe_m": 2134,
+    "ad": "Gölde Luxe 2 Konutları",
+    "yandex_id": "3366329969",
+    "tam": "Gölde Luxe 2 Konutları, Cumhuriyet Mah., Yenimahalle, Ankara, Türkiye",
+    "lon": 32.65713882446289,
+    "lat": 39.988643646240234,
+    "sinir_63387_2_icinde": false
+   }
+  ]
+ },
+ "cag_life_kanit_dosyasi": {
+  "kimlik": "goksu/parsel-63387-2",
+  "parsel": {
+   "ada": "63387",
+   "parsel": "2",
+   "nitelik": "17 Katlı Betonarme Apartman Binası Ve Arsası",
+   "alan_m2": "7.841,04",
+   "lat": 40.003812,
+   "lng": 32.641801,
+   "kadastro": "Eryaman 124123 (girdi)"
+  },
+  "ad": "Çağ Life Sitesi",
+  "kaynaklar": [
+   {
+    "tur": "Yandex toponim",
+    "url": "https://suggest-maps.yandex.ru/suggest-geo?v=9&search_type=all&part=%C3%87a%C4%9F%20Life&ll=32.641801,40.003812&spn=0.03,0.02&results=7&lang=tr_TR&bases=geo,biz",
+    "ne_diyor": "'Çağ Life Sitesi, Göksu Mah., Etimesgut' geo-id 5084625006; URI içindeki koordinat lon 32.641479 lat 40.003983 = parsel noktasına 33 m ve 63387/2 TKGM sınırının İÇİNDE (yandex-yakin-cozum.json)"
+   },
+   {
+    "tur": "İlan (Remaxnote, arama dizini başlığı)",
+    "url": "https://www.remaxnote.com/ilan/etimesgut-goksu-mah-cag-life-sitesi-kiralik-4-plus1-daire-KKSZyIeN",
+    "ne_diyor": "'Etimesgut Göksu Mah. Çağ Life Sitesi Kiralık 4+1 Daire' — site 20.10'da bakımda (sayfa 500), başlık WebSearch dizininden"
+   },
+   {
+    "tur": "Moovit yer kaydı (arama dizini snippet'i)",
+    "url": "https://moovitapp.com/index/tr/toplu_ta%C5%9F%C4%B1ma-%C3%87a%C4%9F_Life-Ankara-site_227997635-1723",
+    "ne_diyor": "'Çağ Life' adresi: Yenimahalle 5331. Cadde, 06105 Susuz, Ankara — 5331. Cad. Yandex noktası parselin kuzey kenarında (101 m); sayfa bot'a 403"
+   },
+   {
+    "tur": "Depo geçmişi (silinmiş kayıt)",
+    "url": "git show 30f27612^:content/siteler/susuz-mahallesi/cag-life-sitesi.json",
+    "ne_diyor": "isim 'Çağ Life Sitesi', adalar 63387/2, koordinat 40.00382/32.641539, TKGM tabanlı sınır girdideki noktayı içeriyor; kaynak: Özgün'ün Susuz 'Site Seçiniz' ekran görüntüleri (commit 4fa4ee4f, 06.07); PR #79 (30f27612, 27.08) ile Yenimahalle grubu olarak silindi"
+   },
+   {
+    "tur": "Depo notu",
+    "url": "scratchpad-karne/pws0/gsc-dizin-kuyrugu-194.md:302",
+    "ne_diyor": "23.08: TKGM koordinat sorgusu kayıt koordinatını 63387/2'ye düşürdü (17 katlı); 'Yakacık Çağ Life' 6 katlı DIŞ ADAŞ"
+   },
+   {
+    "tur": "TKGM nitelik (girdi)",
+    "url": "girdi",
+    "ne_diyor": "17 Katlı Betonarme Apartman Binası Ve Arsası, 7.841,04 m²"
+   }
+  ],
+  "mahalle_celiskisi": [
+   {
+    "kaynak": "OSM is_in",
+    "url": "https://overpass-api.de/api/interpreter?data=[out:json];is_in(40.003812,32.641801);out tags;",
+    "diyor": "Yenimahalle (admin_level 6) + Susuz Mahallesi (admin_level 8)"
+   },
+   {
+    "kaynak": "bilgiemlak ada sayfası",
+    "url": "https://eryaman.bilgiemlak.com.tr/yer/63387-ada-1691",
+    "diyor": "'Susuz Mh., Göksu Kentsel Gelişim ve Dönüşüm Bölgesi', 35.149 m², merkez 40.0031/32.6411 (etiket güvenilmez)"
+   },
+   {
+    "kaynak": "Moovit",
+    "diyor": "Susuz / Yenimahalle, 5331. Cadde"
+   },
+   {
+    "kaynak": "Yandex toponim",
+    "diyor": "Göksu Mah., Etimesgut"
+   },
+   {
+    "kaynak": "Remaxnote ilan başlığı",
+    "diyor": "Etimesgut Göksu Mah."
+   },
+   {
+    "kaynak": "TKGM kadastro + KEOS (girdi, 20.10)",
+    "diyor": "Eryaman kadastro mahallesi; parent Göksu dedi"
+   },
+   {
+    "kaynak": "Eski depo kaydı",
+    "diyor": "susuz-mahallesi"
+   }
+  ],
+  "adaslar": [
+   {
+    "ad": "Çağ Life Yakacık",
+    "yer": "Yenimahalle Yakacık Mah.",
+    "url": "https://www.instagram.com/caglifeyakacik/",
+    "ek": "emlakjet ilan 16234119 'Yenimahalle Yakacık'ın gözde sitesi Çağ Life' (şimdi 404); 23.08 notu: 6 katlı"
+   },
+   {
+    "ad": "Çağ Yaşam Evleri / 'Cag Life Houses' durağı",
+    "yer": "Yenimahalle Cumhuriyet Mah., 2424. Sok. (4,2 km)",
+    "url": "yandex suggest: ymapsbm1://org?oid=182731632180"
+   },
+   {
+    "ad": "Mahal Çağ Sitesi",
+    "yer": "Susuz Mah. (429 m)",
+    "url": "yandex geo-id 4257437689",
+    "ek": "farklı ad, karıştırma"
+   }
+  ],
+  "komsular_yandex": [
+   {
+    "ad": "Bulut Kule",
+    "mesafe_m": 89,
+    "sinir_icinde": false,
+    "not": "Susuz etiketli; eski Susuz kaydı bulut-kule = 63384/1 (23.08 notu)"
+   },
+   {
+    "ad": "Duru Göksu",
+    "mesafe_m": 97,
+    "sinir_icinde": false,
+    "not": "Göksu/Etimesgut etiketli; 63387/3 (12 kat) ya da 63387/4 (arsa) olabilir, doğrulanmadı"
+   }
+  ],
+  "osm": {
+   "not": "±130 m'de adlı bina yok; building=apartments ways 1422367589/1422367590/1422367591 adsız; Migros ve Şule Delen Eczanesi ~120 m batıda (32.6404)",
+   "dosya": "osm-130m.json"
+  }
+ },
+ "osm_yollar": {
+  "aciklama": "OSM Overpass dökümünden (20.10) ada 63387 çevresindeki yollar; mesafe hesabı: 5331 → 63387/2'ye 9,0 m (kuzey), 5328 → 7,4 m (doğu), 2. İnönü → 83,8–100,4 m; 2. İnönü → 63387/3'e 9,7 m",
+  "yollar": {
+   "854461918": {
+    "ad": "5328. Cadde",
+    "tags": {
+     "highway": "residential",
+     "lane_markings": "no",
+     "lanes": "2",
+     "name": "5328. Cadde",
+     "surface": "compacted"
+    },
+    "koordinatlar": [
+     [
+      32.6425454,
+      40.0027356
+     ],
+     [
+      32.6424006,
+      40.0028918
+     ],
+     [
+      32.6423094,
+      40.0030089
+     ],
+     [
+      32.6422504,
+      40.0031095
+     ],
+     [
+      32.6421887,
+      40.0032349
+     ],
+     [
+      32.6421377,
+      40.0033869
+     ],
+     [
+      32.642076,
+      40.0035759
+     ],
+     [
+      32.6420438,
+      40.0037526
+     ],
+     [
+      32.6420358,
+      40.0039355
+     ],
+     [
+      32.6420438,
+      40.0041307
+     ],
+     [
+      32.6420559,
+      40.0043391
+     ],
+     [
+      32.642133,
+      40.0045277
+     ],
+     [
+      32.6422262,
+      40.0047018
+     ],
+     [
+      32.642304,
+      40.0048436
+     ],
+     [
+      32.6424435,
+      40.0050265
+     ],
+     [
+      32.6426527,
+      40.0052997
+     ],
+     [
+      32.6428614,
+      40.0055432
+     ],
+     [
+      32.6428812,
+      40.0055663
+     ],
+     [
+      32.6430577,
+      40.0057722
+     ],
+     [
+      32.6436183,
+      40.0063845
+     ],
+     [
+      32.6437364,
+      40.0065077
+     ],
+     [
+      32.6438329,
+      40.0066084
+     ],
+     [
+      32.6440608,
+      40.0068303
+     ],
+     [
+      32.6442915,
+      40.0070275
+     ],
+     [
+      32.6448319,
+      40.0074573
+     ]
+    ]
+   },
+   "854461920": {
+    "ad": "2. İnönü Caddesi",
+    "tags": {
+     "highway": "secondary",
+     "lanes": "3",
+     "lit": "yes",
+     "name": "2. İnönü Caddesi",
+     "oneway": "yes",
+     "sidewalk:left": "no",
+     "sidewalk:right": "yes",
+     "surface": "asphalt"
+    },
+    "koordinatlar": [
+     [
+      32.6399451,
+      40.0033227
+     ],
+     [
+      32.639967,
+      40.0031826
+     ],
+     [
+      32.6399783,
+      40.0031292
+     ],
+     [
+      32.6399986,
+      40.0030335
+     ],
+     [
+      32.6400496,
+      40.0028373
+     ],
+     [
+      32.640114,
+      40.0026473
+     ],
+     [
+      32.6402293,
+      40.0023627
+     ],
+     [
+      32.6403259,
+      40.0021654
+     ],
+     [
+      32.6403928,
+      40.0020439
+     ],
+     [
+      32.640407,
+      40.0020209
+     ],
+     [
+      32.6404616,
+      40.0019327
+     ],
+     [
+      32.6406088,
+      40.0017258
+     ],
+     [
+      32.6407228,
+      40.0015737
+     ],
+     [
+      32.6409119,
+      40.0013508
+     ],
+     [
+      32.6410225,
+      40.0012483
+     ],
+     [
+      32.6410849,
+      40.0011905
+     ],
+     [
+      32.6412311,
+      40.001059
+     ],
+     [
+      32.6415905,
+      40.0007755
+     ],
+     [
+      32.6418889,
+      40.0005371
+     ],
+     [
+      32.6420147,
+      40.0004365
+     ],
+     [
+      32.642583,
+      39.9999824
+     ],
+     [
+      32.6428739,
+      39.9997455
+     ],
+     [
+      32.6430437,
+      39.9995913
+     ],
+     [
+      32.6431685,
+      39.9994523
+     ],
+     [
+      32.6432452,
+      39.9993292
+     ],
+     [
+      32.6432529,
+      39.9993111
+     ],
+     [
+      32.6432957,
+      39.9992185
+     ],
+     [
+      32.6433126,
+      39.9991816
+     ],
+     [
+      32.6433228,
+      39.9991593
+     ],
+     [
+      32.6433568,
+      39.9990749
+     ]
+    ]
+   },
+   "872371803": {
+    "ad": "5331. Cadde",
+    "tags": {
+     "highway": "residential",
+     "lane_markings": "no",
+     "lanes": "2",
+     "name": "5331. Cadde",
+     "surface": "asphalt"
+    },
+    "koordinatlar": [
+     [
+      32.6402588,
+      40.0047232
+     ],
+     [
+      32.6416722,
+      40.0044087
+     ],
+     [
+      32.6418582,
+      40.0043673
+     ],
+     [
+      32.6420559,
+      40.0043391
+     ]
+    ]
+   },
+   "1318010060": {
+    "ad": "2. İnönü Caddesi",
+    "tags": {
+     "highway": "secondary",
+     "lanes": "3",
+     "lit": "yes",
+     "name": "2. İnönü Caddesi",
+     "oneway": "yes",
+     "sidewalk:left": "no",
+     "sidewalk:right": "yes",
+     "surface": "asphalt"
+    },
+    "koordinatlar": [
+     [
+      32.6436383,
+      39.9991689
+     ],
+     [
+      32.6435864,
+      39.9992794
+     ],
+     [
+      32.6435108,
+      39.9993776
+     ],
+     [
+      32.6434375,
+      39.9994773
+     ],
+     [
+      32.6433626,
+      39.9995583
+     ],
+     [
+      32.6433134,
+      39.9996116
+     ],
+     [
+      32.6431999,
+      39.9997112
+     ],
+     [
+      32.6429263,
+      39.9999248
+     ],
+     [
+      32.6428441,
+      39.9999884
+     ],
+     [
+      32.6426319,
+      40.0001525
+     ],
+     [
+      32.6424984,
+      40.0002556
+     ],
+     [
+      32.6422959,
+      40.0004122
+     ],
+     [
+      32.6421033,
+      40.0005611
+     ],
+     [
+      32.6420599,
+      40.0005947
+     ],
+     [
+      32.6420193,
+      40.0006272
+     ],
+     [
+      32.6414001,
+      40.0011227
+     ],
+     [
+      32.6412338,
+      40.0012665
+     ],
+     [
+      32.6410702,
+      40.0014165
+     ],
+     [
+      32.640987,
+      40.0015028
+     ],
+     [
+      32.6409495,
+      40.001547
+     ],
+     [
+      32.6408623,
+      40.0016549
+     ],
+     [
+      32.6407751,
+      40.0017668
+     ],
+     [
+      32.6406476,
+      40.0019457
+     ],
+     [
+      32.6405721,
+      40.0020694
+     ],
+     [
+      32.6405536,
+      40.0020996
+     ],
+     [
+      32.6404385,
+      40.0023155
+     ],
+     [
+      32.6403272,
+      40.0025589
+     ],
+     [
+      32.6402655,
+      40.0027212
+     ],
+     [
+      32.6402092,
+      40.0029164
+     ],
+     [
+      32.6401542,
+      40.0031198
+     ],
+     [
+      32.6401474,
+      40.0031512
+     ],
+     [
+      32.6401163,
+      40.0032963
+     ],
+     [
+      32.640112,
+      40.00333
+     ],
+     [
+      32.6401076,
+      40.0033922
+     ],
+     [
+      32.6401023,
+      40.0034746
+     ],
+     [
+      32.6400987,
+      40.0035992
+     ],
+     [
+      32.6400984,
+      40.0036154
+     ],
+     [
+      32.6400952,
+      40.0037968
+     ],
+     [
+      32.6401038,
+      40.0039824
+     ],
+     [
+      32.6401211,
+      40.0041484
+     ],
+     [
+      32.6401485,
+      40.0043217
+     ],
+     [
+      32.6401992,
+      40.0045389
+     ],
+     [
+      32.6402588,
+      40.0047232
+     ],
+     [
+      32.6403163,
+      40.0048702
+     ],
+     [
+      32.6403844,
+      40.0050164
+     ],
+     [
+      32.6405014,
+      40.0052446
+     ],
+     [
+      32.6406716,
+      40.0055073
+     ],
+     [
+      32.640866,
+      40.0057836
+     ],
+     [
+      32.641051,
+      40.0060195
+     ],
+     [
+      32.6411019,
+      40.0060831
+     ],
+     [
+      32.6412722,
+      40.006296
+     ],
+     [
+      32.6419094,
+      40.0070924
+     ],
+     [
+      32.64216,
+      40.0074055
+     ],
+     [
+      32.6430242,
+      40.0084855
+     ]
+    ]
+   }
+  }
+ },
+ "osm_dugumler_63387_3": {
+  "12863308750": {
+   "lat": 40.0034354,
+   "lon": 32.6403931,
+   "tags": {
+    "brand": "Migros",
+    "brand:wikidata": "Q1754510",
+    "name": "Migros",
+    "opening_hours": "Mo-Su,PH 09:00-22:00",
+    "shop": "supermarket"
+   }
+  },
+  "12863355847": {
+   "lat": 40.0036024,
+   "lon": 32.6403853,
+   "tags": {
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "name": "Şule Delen Eczanesi"
+   }
+  }
+ },
+ "duru_goksu_adres_kaynaklari": {
+  "adres": "Göksu Mah. 2. İnönü Cad. No:20/D (Duru Göksu Apt.) — nöbetçi eczane listeleri",
+  "urls": [
+   "https://www.ankaramasasi.com.tr/haber/2223997/ankara-nobetci-eczaneler-17-ekim-2026-listesi",
+   "https://www.eczaneler.gen.tr/eczaneler/ankara-etimesgut",
+   "https://www.firmasec.com/firma/aerz31-sule-delen-eczanesi",
+   "https://www.yeniankara.com.tr/amp/ankara/acil-ilac-arayanlar-dikkat-iste-ankaranin-20-agustos-persembe-nobetci-eczaneleri-179619",
+   "https://www.yeniankara.com.tr/ankara/ankara-nobetci-eczaneler-17-18-ekim-2026-hafta-sonu-hangi-eczaneler-acik-186533",
+   "https://yandex.com.tr/maps/115679/etimesgut/geo/duru_goksu/6942549184/"
+  ]
+ },
+ "moovit_notu": "Çağ Life için Moovit dizin özeti '5331. Cadde' diyor; sayfa 403 (Cloudflare), ham kayıt alınamadı — bu yüzden site metninde cadde bilgisi '(harita kayıtları)' etiketiyle, OSM yol geometrisine dayanıyor."
+}

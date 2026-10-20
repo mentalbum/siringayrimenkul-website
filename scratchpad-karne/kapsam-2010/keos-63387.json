@@ -1,0 +1,278 @@
+{
+ "kaynak": "KEOS — Etimesgut Belediyesi e-imar servisi (keos.etimesgut.bel.tr/imardurumu/, imarsvc.aspx; adaparsel / parsel / mahalle fonksiyonları, sayfa içi $.ajax GET)",
+ "tarih": "2026-10-20T20:05Z",
+ "yorum": "KEOS Etimesgut Belediyesi'nin envanteridir: parsel bu envanterde POLY ile dönüyorsa parsel Etimesgut ilçesindedir (Yenimahalle'deki Susuz parselleri, ör. Bulut Kule 63384/1, bu envanterde yok — 20.10 1. tur). Mahalle poligonları kaba: Göksu 17 nokta (16 köşe + kapanış noktası), kuzey kenarı tek doğru parça (40.0034→40.0038) ve 63387 adasını ikiye bölüyor. 'merkezHangiMahalle' boş = parsel merkezi Etimesgut'un 38 mahalle poligonundan HİÇBİRİNDE değil (poligon seti ilçe sınırında parseli dışarıda bırakıyor), başka bir Etimesgut mahallesi de parselin hiçbir köşesini içermiyor → Etimesgut içinde tek aday Göksu.",
+ "sonuc": {
+  "63387/2": {
+   "site": "Çağ Life Sitesi",
+   "merkez": [
+    40.00382,
+    32.641759
+   ],
+   "merkezHangiMahalle": [],
+   "koseler": {
+    "GÖKSU": "4/8"
+   }
+  },
+  "63387/3": {
+   "site": "Duru Göksu",
+   "merkez": [
+    40.003581,
+    32.640533
+   ],
+   "merkezHangiMahalle": [
+    "GÖKSU"
+   ],
+   "koseler": {
+    "GÖKSU": "3/6"
+   }
+  },
+  "63388/1": {
+   "site": "(adsız yapı parseli — belirsiz listesinde)",
+   "merkez": [
+    40.004095,
+    32.636776
+   ],
+   "merkezHangiMahalle": [],
+   "koseler": {
+    "GÖKSU": "1/8"
+   }
+  },
+  "63401/1": {
+   "site": "(adsız yapı parseli — belirsiz listesinde)",
+   "merkez": [
+    39.999534,
+    32.650323
+   ],
+   "merkezHangiMahalle": [
+    "GÖKSU"
+   ],
+   "koseler": {
+    "GÖKSU": "6/6"
+   }
+  }
+ },
+ "parseller": {
+  "63387/2": {
+   "TAPU_MAH_ADI": "ERYAMAN",
+   "OBJECTID": 32974,
+   "ring": [
+    [
+     32.641985,
+     40.003558
+    ],
+    [
+     32.641938,
+     40.003912
+    ],
+    [
+     32.641956,
+     40.004181
+    ],
+    [
+     32.641865,
+     40.004274
+    ],
+    [
+     32.641187,
+     40.004429
+    ],
+    [
+     32.641118,
+     40.003261
+    ],
+    [
+     32.642039,
+     40.003384
+    ],
+    [
+     32.641985,
+     40.003558
+    ]
+   ]
+  },
+  "63387/3": {
+   "TAPU_MAH_ADI": "ERYAMAN",
+   "OBJECTID": 32975,
+   "ring": [
+    [
+     32.64022,
+     40.003876
+    ],
+    [
+     32.640222,
+     40.003481
+    ],
+    [
+     32.640267,
+     40.003147
+    ],
+    [
+     32.641118,
+     40.003261
+    ],
+    [
+     32.641152,
+     40.003843
+    ],
+    [
+     32.64022,
+     40.003876
+    ]
+   ]
+  },
+  "63387/1": {
+   "TAPU_MAH_ADI": null,
+   "OBJECTID": 32973,
+   "not": "POLY sorgulanmadı"
+  },
+  "63388/1": {
+   "TAPU_MAH_ADI": "ERYAMAN",
+   "OBJECTID": 32976,
+   "ring": [
+    [
+     32.636689,
+     40.004514
+    ],
+    [
+     32.636519,
+     40.004437
+    ],
+    [
+     32.636441,
+     40.004198
+    ],
+    [
+     32.636457,
+     40.004029
+    ],
+    [
+     32.636517,
+     40.00391
+    ],
+    [
+     32.637114,
+     40.003069
+    ],
+    [
+     32.637782,
+     40.004092
+    ],
+    [
+     32.636689,
+     40.004514
+    ]
+   ]
+  },
+  "63401/1": {
+   "TAPU_MAH_ADI": "ERYAMAN",
+   "OBJECTID": 32994,
+   "ring": [
+    [
+     32.649742,
+     39.999711
+    ],
+    [
+     32.649971,
+     39.999227
+    ],
+    [
+     32.651173,
+     39.999078
+    ],
+    [
+     32.651082,
+     39.999685
+    ],
+    [
+     32.650228,
+     39.99979
+    ],
+    [
+     32.649742,
+     39.999711
+    ]
+   ]
+  }
+ },
+ "goksuPoligonu": {
+  "OBJECTID": 8,
+  "ADI_NUMARASI": "GÖKSU",
+  "geometry": {
+   "type": "Polygon",
+   "coordinates": [
+    [
+     [
+      32.635596,
+      39.977861
+     ],
+     [
+      32.639953,
+      39.977368
+     ],
+     [
+      32.648907,
+      39.977412
+     ],
+     [
+      32.648985,
+      39.97985
+     ],
+     [
+      32.648733,
+      39.981069
+     ],
+     [
+      32.648102,
+      39.982223
+     ],
+     [
+      32.647828,
+      39.987985
+     ],
+     [
+      32.650527,
+      39.989369
+     ],
+     [
+      32.654341,
+      39.990684
+     ],
+     [
+      32.655409,
+      39.990857
+     ],
+     [
+      32.655448,
+      39.992962
+     ],
+     [
+      32.656309,
+      40.001166
+     ],
+     [
+      32.656275,
+      40.003432
+     ],
+     [
+      32.635174,
+      40.003787
+     ],
+     [
+      32.636876,
+      39.997882
+     ],
+     [
+      32.637176,
+      39.993776
+     ],
+     [
+      32.635596,
+      39.977861
+     ]
+    ]
+   ]
+  }
+ },
+ "sayim_notu": "'koseler' sayımları halkanın nokta sayısı üzerinden, kapanış noktası (ilk=son) DAHİL: benzersiz köşeyle 63387/2 3/7, 63387/3 3/5, 63388/1 1/7, 63401/1 5/5. 'koseler' ve 'merkezHangiMahalle' KEOS'un 38 mahalle poligonunun TAMAMI üzerinden hesaplandı; yalnız sıfırdan büyük sayımlar listelendi (yani Göksu dışında hiçbir Etimesgut mahallesi bu parsellerin tek noktasını bile içermiyor). Dosyada yalnız Göksu poligonu saklandı; diğer 37 poligon KEOS'tan type=mahalle ile yeniden çekilebilir."
+}
