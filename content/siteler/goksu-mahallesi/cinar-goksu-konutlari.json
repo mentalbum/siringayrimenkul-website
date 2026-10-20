@@ -1,0 +1,26 @@
+{
+  "isim": "Çınar Göksu Konutları",
+  "slug": "cinar-goksu-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.002472,
+    "lng": 32.643876
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/cinar-goksu-konutlari-boundary.geojson",
+  "aciklama": "Çınar Göksu Konutları, Göksu Mahallesi'nde 5328. Cadde üzerinde yer alan 18 katlı, tek bloklu bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 4.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '18 Katlı Betonarme Apartman' olarak tanımlar. Yapı, aynı adada hemen yanındaki Doğa Konutları ile neredeyse eş ölçekte bir ikili oluşturur: iki parsel de yaklaşık dört dönüm, iki yapı da 18 katlıdır. Bu benzerlik ev sahibi için emsal okumayı kolaylaştırır; iki bloğun aynı kat ve cephedeki daireleri doğrudan karşılaştırılabilir. Aynı adı taşıyan, Göksu dışındaki ayrı bir yerleşimle karıştırılmamalıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63381",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~4.000 m² parsel (TKGM)",
+    "18 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Doğa Konutları ile aynı adada, eş ölçekte (TKGM)",
+    "5328. Cadde (adres kayıtları)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

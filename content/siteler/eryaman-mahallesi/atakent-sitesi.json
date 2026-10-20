@@ -3,24 +3,28 @@
   "slug": "atakent-sitesi",
   "mahalleSlug": "eryaman-mahallesi",
   "koordinat": {
-    "lat": 39.977709499999996,
-    "lng": 32.6297596
+    "lat": 39.972509,
+    "lng": 32.630427
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/atakent-sitesi-boundary.geojson",
-  "aciklama": "Atakent Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 26.289 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı şöyle tanımlar: \"6 Blok Kargir Apartman\". Site, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin parçasıdır; bölge kısaca 'Atakent' diye geçer. OYAK'ın kurumsal tarihçesine göre Eryaman Atakent toplu konut projesi OYAK-TOKİ işbirliğiyle geliştirilmiş; konutlar 2003 ve 2004'te üyelere tahsis edilmiş, teslimler 2006'da yapılmıştır. Bu köken, bölgeyi planlı ve tek elden üretilmiş bir toplu konut dokusu yapar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Atakent Sitesi, Eryaman Mahallesi'nde, yerel kullanımda 'Oyak Atakent' olarak anılan toplu konut bölgesinin en büyük yerleşimlerinden biridir: iki komşu parsele yayılan on sekiz bloktan oluşur. TKGM kayıtlarına göre parsellerden birinde tapu '12 Blok Kargir Apartman', diğerinde '6 Blok Kargir Apartman' niteliğindedir; toplam yaklaşık 72 dönümlük kat mülkiyetli alan, 2007'deki ifraz işlemleriyle bugünkü sınırlarını almıştır. OYAK'ın kurumsal tarihçesine göre Eryaman Atakent toplu konut projesi OYAK-TOKİ işbirliğiyle geliştirilmiş; konutlar 2003 ve 2004'te üyelere tahsis edilmiş, teslimler 2006'da yapılmıştır. Bu köken, bölgeyi planlı ve tek elden üretilmiş bir toplu konut dokusu yapar. On sekiz blokluk ölçekte emsal kümesi geniştir; değer farkını çoğu zaman blokun site içindeki konumu, kat ve cephe belirler. Atakent bölgesindeki Başak, Atakent Vadi ve Atakent 1 Aşiyan gibi siteler ayrı parsellerde ayrı yerleşimlerdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
-      "no": "46528",
-      "parsel": "1",
-      "etap": ""
+      "no": "46537",
+      "parsel": "2"
+    },
+    {
+      "no": "46538",
+      "parsel": "2"
     }
   ],
   "ozellikler": [
-    "~26.289 m² parsel (TKGM)",
-    "Kat mülkiyetli parsel (TKGM)",
+    "18 blok — 12+6 (tapu kaydı)",
+    "~72.113 m² iki parsel (TKGM)",
+    "Kat mülkiyetli parseller (TKGM)",
     "OYAK-TOKİ işbirliğiyle geliştirilen Atakent bölgesi",
     "Tahsisler 2003-2004, teslim 2006 (OYAK tarihçesi)",
     "Eryaman Mahallesi"
   ],
-  "zenginlestirildi": "2026-08-01"
+  "zenginlestirildi": "2026-10-20"
 }

@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Daldiken Safa Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46657/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65902,
+      39.96948
+     ],
+     [
+      32.65896,
+      39.96952
+     ],
+     [
+      32.65848,
+      39.96959
+     ],
+     [
+      32.65848,
+      39.96867
+     ],
+     [
+      32.65903,
+      39.96855
+     ],
+     [
+      32.65906,
+      39.96858
+     ],
+     [
+      32.65902,
+      39.96948
+     ]
+    ]
+   ]
+  ]
+ }
+}

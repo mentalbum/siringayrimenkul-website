@@ -1,0 +1,29 @@
+{
+  "isim": "Lotus Eryaman",
+  "slug": "lotus-eryaman",
+  "mahalleSlug": "seker-mahallesi",
+  "koordinat": {
+    "lat": 39.967926,
+    "lng": 32.655338
+  },
+  "sinirGeoJSON": "siteler/seker-mahallesi/lotus-eryaman-boundary.geojson",
+  "aciklama": "Lotus Eryaman, Şeker Mahallesi'nde Rainbow Sitesi ile Meydan Cadde arasında yer alan iki bloklu bir yapıdır. Geliştirici Özşeker İnşaat'ın tanıtımına göre proje teslim edilmiştir ve 80 adet 2+1 daire ile 6 ticari dükkândan oluşur. TKGM kayıtlarına göre yaklaşık 6.196 m²'lik parselde tapu kaydı A ve B bloklarını betonarme ofis-işyeri niteliğinde tanımlar — konut olarak kullanılan dairelerde bu tapu tipi değerleme ve kullanım açısından fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz; ayrıntıyı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Kat sayısında tapu ile geliştirici tanıtımı farklı rakamlar verir; ilan hazırlanırken bağımsız bölümün tapudaki kat bilgisi esas alınmalıdır. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46361",
+      "parsel": "3"
+    }
+  ],
+  "alternatifAdlar": [
+    "Lotus Eryaman Sitesi"
+  ],
+  "ozellikler": [
+    "~6.196 m² parsel (TKGM)",
+    "A ve B blok — tapu niteliği ofis-işyeri (tapu kaydı)",
+    "80 adet 2+1 daire + 6 dükkân (geliştirici tanıtımı)",
+    "Özşeker İnşaat projesi, teslim edildi (geliştirici tanıtımı)",
+    "Rainbow Sitesi ve Meydan Cadde ile aynı adada (TKGM)",
+    "Şeker Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

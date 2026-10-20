@@ -1,0 +1,30 @@
+{
+  "isim": "Fırat Residence",
+  "slug": "firat-residence",
+  "mahalleSlug": "altay-mahallesi",
+  "koordinat": {
+    "lat": 39.966011,
+    "lng": 32.647564
+  },
+  "sinirGeoJSON": "siteler/altay-mahallesi/firat-residence-boundary.geojson",
+  "aciklama": "Fırat Residence, Altay Mahallesi'nin Eryaman Evleri kuşağında, 1408. Cadde üzerindeki rezidans kümesinin doğu ucunda yer alır; yerleşim adasını Mood Street, Vizyon Prestige ve Arya Nüans Residence ile paylaşır. TKGM kayıtlarına göre yaklaşık 5.155 m²'lik parselde tapu kaydı yapıyı '12 katlı A blok ile 2 katlı B blok betonarme işyeri' olarak tanımlar — yapı tapuda ofis-işyeri niteliğiyle kayıtlıdır; konut olarak kullanılan bağımsız bölümlerde bu tapu tipi değerleme ve kullanım açısından fark yaratır, işlem öncesi güncel kaydı birlikte kontrol ederiz. Aynı adada dört ayrı yapının bulunması, ilan ve değerlemede kapı numarasıyla bağımsız bölüm bilgisinin birlikte doğrulanmasını gerektirir. Bu yapıda satılık veya kiralık biriminiz mi var? Ticari nitelikli yapılarda doğru fiyat kat, cephe ve kullanım tipiyle netleşir — değeri, yapıyı yakından tanıyan emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45898",
+      "parsel": "5"
+    }
+  ],
+  "alternatifAdlar": [
+    "Fırat Rezidans",
+    "Fırat Residans"
+  ],
+  "ozellikler": [
+    "~5.155 m² parsel (TKGM)",
+    "12 katlı A blok + 2 katlı B blok (tapu kaydı)",
+    "Tapu niteliği işyeri — rezidans tipi kullanım (tapu kaydı)",
+    "Mood Street, Vizyon Prestige ve Arya Nüans ile aynı adada (TKGM)",
+    "1408. Cadde (adres kayıtları)",
+    "Altay — Eryaman Evleri kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

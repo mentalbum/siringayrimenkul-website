@@ -1,0 +1,28 @@
+{
+  "isim": "Göksu Sitesi 24 Villa",
+  "slug": "goksu-sitesi-24-villa",
+  "mahalleSlug": "yavuz-selim-mahallesi",
+  "koordinat": {
+    "lat": 39.996445,
+    "lng": 32.609983
+  },
+  "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/goksu-sitesi-24-villa-boundary.geojson",
+  "aciklama": "Göksu Sitesi 24 Villa, Yavuz Selim Mahallesi'nin Güzelkent villalar kuşağında yirmi dört konuttan oluşan yatay dokulu bir sitedir. TKGM kayıtlarına göre yaklaşık 9.989 m²'lik parselde tapu kaydı yapıları '24 Adet Kargir Apartman Ev' olarak sayar — yüksek bloklar değil, yan yana dizilen konutlardan oluşan bir yerleşim. Aynı adı taşıyan ve on altı evden oluşan Göksu Sitesi, mahallenin doğusunda ayrı bir parseldedir; yerel kayıtlarda iki site konut sayısıyla ayrılır ('16 Villa' ve '24 Villa'). Yaklaşık on dönümlük parselde yirmi dört konutun yer alması, her konuta bahçe ve açık alan payı bırakan bir düzen demektir; değeri konutun parsel içindeki konumu, bahçe kullanımı ve iç durumu belirler. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "19505",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Göksu Sitesi no:24"
+  ],
+  "ozellikler": [
+    "~9.989 m² parsel (TKGM)",
+    "24 konut (tapu kaydı)",
+    "Yatay dokulu villa sitesi",
+    "16 evli Göksu Sitesi'nden ayrı parsel",
+    "Yavuz Selim — Güzelkent villalar kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}
