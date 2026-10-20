@@ -448,15 +448,34 @@
   },
   {
    "tarih": "2026-10-20",
-   "ad": "Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutularında yokuz (Tunahan konumu)",
+   "ad": "Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de (herkes kapalı) #2 (Tunahan)",
    "durum": "acik",
-   "olcum": "Çekirdek tur (60 sn aralık, uule Tunahan'a yapıştı): 'emlakçı' kutu Efor/Kılıç/Ayyıldız; 'eryaman emlakçı' kutu Kılıç/Ayyıldız/Efor — biz yokuz (07.10 ve 14.10'da #1). 'emlak ofisi' kutu #3. Profil sağlam (5,0 / 405). Saat 18:30: biz ve Efor 'Kapanmak üzere 19:00', Kılıç ve Ayyıldız 20:00'ye kadar açık; ikisinin adında 'Eryaman Emlakçı' dizisi var.",
-   "kisit": "GBP adı ve gerçek dışı saat yazılmaz (kural). Yalnız ölçüm.",
+   "olcum": "Çekirdek tur (60 sn aralık, uule Tunahan'a yapıştı): 'emlakçı' kutu Efor/Kılıç/Ayyıldız; 'eryaman emlakçı' kutu Kılıç/Ayyıldız/Efor — biz yokuz (07.10 ve 14.10'da #1). 'emlak ofisi' kutu #3. Profil sağlam (5,0 / 405). Saat 18:30: biz ve Efor 'Kapanmak üzere 19:00', Kılıç ve Ayyıldız 20:00'ye kadar açık; ikisinin adında 'Eryaman Emlakçı' dizisi var. | 20:37 (yerel), tüm rakipler kapalı: 'eryaman emlakçı' kutu Efor (kapalı) / ŞİRİN #2 (kapalı) / Ozanım (AÇIK, 22:00) — 18:30'da kutuda olan Kılıç ve Ayyıldız (20:00 kapanış) düştü. Yorum: kutu üyeliği 'şu an açık/kapanmak üzere' durumuna duyarlı; adında 'Eryaman Emlakçı' geçen açık işletmeler kapanış saatimize yakın bizi geçiyor. İki ölçüm, bir gün — seri gerekli.",
+   "kisit": "GBP saatleri yalnız GERÇEK çalışma saatiyse değişir (gerçek dışı saat yazılmaz); ölçüm bitmeden öneri yok. Özgün'e soru: ofis fiilen 19:00'dan sonra da yanıt veriyor mu?",
    "takvim": [
     {
      "tarih": "2026-10-21",
      "kim": "Claude",
-     "is": "12:00–13:00 aynı üç sorgu, aynı oturum (Tunahan), 60 sn aralık: öğlen kutuda #1 isek saat etkisi (kapanışa yakın saatte düşüş), değilsek gerçek kayıp → Özgün'e haber."
+     "is": "Harita kutusu saat serisi (10.21): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+     "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun)."
+    },
+    {
+     "tarih": "2026-10-22",
+     "kim": "Claude",
+     "is": "Harita kutusu saat serisi (10.22): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+     "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun)."
+    },
+    {
+     "tarih": "2026-10-23",
+     "kim": "Claude",
+     "is": "Harita kutusu saat serisi (10.23): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+     "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun)."
+    },
+    {
+     "tarih": "2026-10-24",
+     "kim": "Claude",
+     "is": "Saat serisi okuması: 9 ölçümde kutu üyeliği × açık/kapalı durumu tablosu; Özgün'e saat sorusu (gerçek çalışma saati) ile birlikte rapor.",
+     "neden": "3 gün × 3 saat seri tamamlanmış olur."
     }
    ]
   },

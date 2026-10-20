@@ -269,9 +269,33 @@
   {
    "tarih": "2026-10-21",
    "tarih_tr": "21.10 Çarşamba",
-   "is": "12:00–13:00 aynı üç sorgu, aynı oturum (Tunahan), 60 sn aralık: öğlen kutuda #1 isek saat etkisi (kapanışa yakın saatte düşüş), değilsek gerçek kayıp → Özgün'e haber.",
-   "neden": "Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutularında yokuz (Tunahan konumu)",
-   "kaynak": "kaldirac-defteri.json 'Harita kutusu: 20.10 18:30'da 'emlakçı' ve 'eryaman emlakçı' kutuların'",
+   "is": "Harita kutusu saat serisi (10.21): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-22",
+   "tarih_tr": "22.10 Perşembe",
+   "is": "Harita kutusu saat serisi (10.22): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-23",
+   "tarih_tr": "23.10 Cuma",
+   "is": "Harita kutusu saat serisi (10.23): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-24",
+   "tarih_tr": "24.10 Cumartesi",
+   "is": "Saat serisi okuması: 9 ölçümde kutu üyeliği × açık/kapalı durumu tablosu; Özgün'e saat sorusu (gerçek çalışma saati) ile birlikte rapor.",
+   "neden": "3 gün × 3 saat seri tamamlanmış olur.",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
    "kim": "Claude"
   },
   {
