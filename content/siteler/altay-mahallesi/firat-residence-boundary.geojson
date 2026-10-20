@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Fırat Residence",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45898/5"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64786,
+      39.96622
+     ],
+     [
+      32.64719,
+      39.9662
+     ],
+     [
+      32.64722,
+      39.9653
+     ],
+     [
+      32.64773,
+      39.96527
+     ],
+     [
+      32.64786,
+      39.96622
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,55 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Hayal Park Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63391/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64153,
+      40.00067
+     ],
+     [
+      32.64132,
+      40.00084
+     ],
+     [
+      32.64121,
+      40.00093
+     ],
+     [
+      32.6411,
+      40.00102
+     ],
+     [
+      32.641,
+      40.00112
+     ],
+     [
+      32.6409,
+      40.00121
+     ],
+     [
+      32.64023,
+      40.00066
+     ],
+     [
+      32.64085,
+      40.00017
+     ],
+     [
+      32.64153,
+      40.00067
+     ]
+    ]
+   ]
+  ]
+ }
+}

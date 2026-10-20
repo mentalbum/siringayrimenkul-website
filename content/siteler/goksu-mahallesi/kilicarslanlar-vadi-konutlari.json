@@ -1,0 +1,29 @@
+{
+  "isim": "Kılıçarslanlar Vadi Konutları",
+  "slug": "kilicarslanlar-vadi-konutlari",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.003226,
+    "lng": 32.647813
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/kilicarslanlar-vadi-konutlari-boundary.geojson",
+  "aciklama": "Kılıçarslanlar Vadi Konutları, Göksu Mahallesi'nin kuzey sınırında, Akıncılar Caddesi üzerinde yer alan 17 katlı tek bloklu bir konut yapısıdır; yerel harita kayıtlarında 'Kılıçaslan Vadi 1 Evleri' adıyla da geçer. TKGM kayıtlarına göre yaklaşık 4.248 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '17 Katlı Betonarme Apartman' olarak tanımlar. Yapı, Evinora Sitesi, Koru Eryaman ve Göksu Manzara Evleri ile aynı yerleşim adasındadır; yüksek katlı bu dizide değer farkını kat ve cephe belirler. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63379",
+      "parsel": "4"
+    }
+  ],
+  "alternatifAdlar": [
+    "Kılıçaslan Vadi 1 Evleri"
+  ],
+  "ozellikler": [
+    "~4.248 m² parsel (TKGM)",
+    "17 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Evinora, Koru Eryaman ve Göksu Manzara ile aynı adada (TKGM)",
+    "Akıncılar Caddesi (adres kayıtları)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

@@ -1,0 +1,29 @@
+{
+  "isim": "Arnova Göksu",
+  "slug": "arnova-goksu",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.000765,
+    "lng": 32.643254
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/arnova-goksu-boundary.geojson",
+  "aciklama": "Arnova Göksu, Göksu Mahallesi'nin kuzeyindeki yeni yapılaşma kuşağında, Paro Life ile aynı yerleşim adasında yer alan bir konut projesidir. TKGM kayıtlarına göre yaklaşık 11.205 m²'lik parselde tapu kaydı üç yapı sayar: 11 katlı A blok ile 13 katlı B blok betonarme apartman, bunlara ek olarak tek katlı C blok ticari birim (tapuda ofis ve işyeri). Konut daireleri A ve B bloklardadır; parselin bir bölümünü tek katlı ticari C blok kaplar. İki konut bloğu arasındaki kat farkı, değer karşılaştırmasında ayrıca hesaba katılır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63406",
+      "parsel": "2"
+    }
+  ],
+  "alternatifAdlar": [
+    "Arnova Göksu Sitesi"
+  ],
+  "ozellikler": [
+    "~11.205 m² parsel (TKGM)",
+    "11 katlı A blok + 13 katlı B blok apartman (tapu kaydı)",
+    "Tek katlı C blok ticari birim (tapuda ofis ve işyeri)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Paro Life ile aynı adada (TKGM)",
+    "Göksu — kuzey yapılaşma kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

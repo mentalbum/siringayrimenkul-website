@@ -1,0 +1,51 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Eray 4 Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "18658/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60844,
+      39.9866
+     ],
+     [
+      32.60783,
+      39.98687
+     ],
+     [
+      32.60767,
+      39.98683
+     ],
+     [
+      32.60732,
+      39.98638
+     ],
+     [
+      32.60734,
+      39.98631
+     ],
+     [
+      32.60797,
+      39.98603
+     ],
+     [
+      32.60803,
+      39.98605
+     ],
+     [
+      32.60844,
+      39.9866
+     ]
+    ]
+   ]
+  ]
+ }
+}

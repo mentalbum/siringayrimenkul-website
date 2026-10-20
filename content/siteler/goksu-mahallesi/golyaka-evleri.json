@@ -1,0 +1,24 @@
+{
+  "isim": "Gölyaka Evleri",
+  "slug": "golyaka-evleri",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.999683,
+    "lng": 32.644989
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/golyaka-evleri-boundary.geojson",
+  "aciklama": "Gölyaka Evleri, Göksu Mahallesi'nin kuzeyindeki yeni yapılaşma kuşağında yer alan apartman tipi bir konut yerleşimidir; Mercan Smart House ve Göksu Park Vadi Konutları ile aynı yerleşim adasındadır. TKGM'de yaklaşık 8.102 m²'lik parselin niteliği hâlâ 'Arsa' görünür ve zemin kat irtifakı aşamasındadır; kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Yeni kuşağın yerleşimlerinde emsal sayısı henüz sınırlıdır; değer, aynı adadaki komşu projelerle kat ve cephe üzerinden karşılaştırılarak netleşir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63404",
+      "parsel": "1"
+    }
+  ],
+  "ozellikler": [
+    "~8.102 m² parsel (TKGM)",
+    "Kat irtifaklı — tapuda 'Arsa' (TKGM)",
+    "Mercan Smart House ve Göksu Park Vadi ile aynı adada (TKGM)",
+    "Göksu — kuzey yapılaşma kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

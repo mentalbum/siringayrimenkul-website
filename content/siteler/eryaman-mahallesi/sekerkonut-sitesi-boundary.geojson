@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Şekerkonut Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45923/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.6098,
+      39.97443
+     ],
+     [
+      32.60854,
+      39.97442
+     ],
+     [
+      32.60855,
+      39.9741
+     ],
+     [
+      32.6098,
+      39.9741
+     ],
+     [
+      32.6098,
+      39.97443
+     ]
+    ]
+   ]
+  ]
+ }
+}

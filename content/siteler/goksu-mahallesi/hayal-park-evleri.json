@@ -1,0 +1,26 @@
+{
+  "isim": "Hayal Park Evleri",
+  "slug": "hayal-park-evleri",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.000676,
+    "lng": 32.640911
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/hayal-park-evleri-boundary.geojson",
+  "aciklama": "Hayal Park Evleri, Göksu Mahallesi'nde 2. İnönü Caddesi üzerinde yer alan tek bloklu, yüksek katlı bir konut yapısıdır. TKGM kayıtlarına göre yaklaşık 6.380 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '16 Katlı Betonarme Apartman' olarak tanımlar. Yapı, Endora Göksu, Tulip Life ve Alina Konutları ile aynı yerleşim adasındadır; yüksek katlı yapıların yan yana bulunması karşılaştırmayı kat ve cephe düzeyine taşır. Etimesgut'un başka mahallelerindeki (Fatih Sultan, Bağlıca) aynı adlı projelerle karıştırılmaması için ilanlarda Göksu ve cadde bilgisi birlikte kullanılmalıdır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63391",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~6.380 m² parsel (TKGM)",
+    "16 katlı yapı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Endora Göksu, Tulip Life ve Alina Konutları ile aynı adada (TKGM)",
+    "2. İnönü Caddesi (adres kayıtları)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

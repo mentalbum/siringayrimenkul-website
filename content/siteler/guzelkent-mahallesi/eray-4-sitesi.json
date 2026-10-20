@@ -1,0 +1,28 @@
+{
+  "isim": "Eray 4 Sitesi",
+  "slug": "eray-4-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.986467,
+    "lng": 32.607861
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/eray-4-sitesi-boundary.geojson",
+  "aciklama": "Eray 4 Sitesi, Güzelkent Mahallesi'nde üç bloktan oluşan orta katlı bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 5.158 m²'lik kat mülkiyetli parselde tapu kaydı yapıları '6 Katlı A, B ve C Blok Betonarme Apartman' olarak sayar; yerel kayıtlarda bloklar 12A, 12B ve 12C adlarıyla geçer. Altı katlı üç bloğun beş dönümü aşan parsele yayılması, Güzelkent'in orta katlı yapı dokusuyla uyumludur. Güzelkent'teki Er-Ay 3 Sitesi ile Eryapı Sitesi (yerelde 'Eray Sitesi') ayrı yerleşimlerdir; Eray 1, Eray 2 ve Eray 5 adlı siteler ise Eryaman dışındadır. İlan ve değerlemede '4' numarası belirleyicidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18658",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Eray4 Sitesi"
+  ],
+  "ozellikler": [
+    "~5.158 m² parsel (TKGM)",
+    "3 blok (A, B, C), 6 katlı (tapu kaydı)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Bloklar 12A / 12B / 12C (yerel kayıt)",
+    "Güzelkent Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

@@ -1,0 +1,33 @@
+{
+  "isim": "Öz Muhtarlar Sitesi",
+  "slug": "oz-muhtarlar-sitesi",
+  "mahalleSlug": "guzelkent-mahallesi",
+  "koordinat": {
+    "lat": 39.9945,
+    "lng": 32.6171
+  },
+  "sinirGeoJSON": "siteler/guzelkent-mahallesi/oz-muhtarlar-sitesi-boundary.geojson",
+  "aciklama": "Öz Muhtarlar Sitesi, Güzelkent Mahallesi'nde iki ardışık parsele yayılan on iki bloklu bir konut sitesidir. TKGM kayıtlarına göre parsellerin ikisi de tapuda '6 Blok Kargir Apartman' niteliğiyle kayıtlıdır; toplam yaklaşık 9.387 m²'lik alanda kat mülkiyeti kurulmuştur. Yerel emlak kayıtlarında bloklar iki grupta sıralanır: 8 ile 8A–8E ve 6 ile 6A–6E. Site, Konuta Özlem, Tez Konak ve Çağdaş Sistem siteleriyle aynı şeritte yer alır. Adı benzeyen Öz Muhtar Sitesi (yerel kayıtlarda 'Öz Muhtarlar 2') Güzelkent'in güneyinde, bu sitenin yaklaşık 1,2 km güneybatısında ayrı bir yerleşimdir; ilan ve değerlemede iki sitenin karıştırılmaması için blok numarası belirleyicidir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "18470",
+      "parsel": "1"
+    },
+    {
+      "no": "18471",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Özmuhtarlar Sitesi"
+  ],
+  "ozellikler": [
+    "~9.387 m² iki parsel (TKGM)",
+    "12 blok — 6+6 (tapu kaydı)",
+    "Kat mülkiyetli parseller (TKGM)",
+    "Bloklar 8, 8A–8E ve 6, 6A–6E (yerel kayıt)",
+    "Konuta Özlem, Tez Konak ve Çağdaş Sistem ile aynı şeritte",
+    "Güzelkent Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-20"
+}

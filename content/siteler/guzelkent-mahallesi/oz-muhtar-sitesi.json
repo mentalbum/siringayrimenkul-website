@@ -1,8 +1,6 @@
 {
   "isim": "Öz Muhtar Sitesi",
   "alternatifAdlar": [
-    "Öz Muhtarlar Sitesi",
-    "Özmuhtarlar Sitesi",
     "Öz Muhtarlar 2 Sitesi",
     "Özmuhtar 2 Sitesi"
   ],
@@ -13,7 +11,7 @@
     "lng": 32.608585
   },
   "sinirGeoJSON": "siteler/guzelkent-mahallesi/oz-muhtar-sitesi-boundary.geojson",
-  "aciklama": "Öz Muhtar Sitesi — yerel kayıtlarda \"Öz Muhtarlar 2\" ve bitişik yazımla \"Özmuhtar 2\" adlarıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.013 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 7 ile 7A'dan 7E'ye uzanan adlarla sıralanıyor — altı blok. Gökkuşağı Sitesi'yle ardışık adalardadır. Siteyi üreten kuruluş S.S. Özmuhtarlar Konut Yapı Kooperatifi'dir; kooperatif 1993'te Eryaman Güzelkent Konut Üretim Yapı Kooperatifleri Birliği'ne (Eryaman-Koop) katılmış ve 43 kooperatifin yürüttüğü Eryaman Güzelkent Çevre Geliştirme Projesi'nin parçası olmuştur. Öz Muhtar'da dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat için sitenin emsallerini yakından izleyen emlakçınızla ilerleyin.",
+  "aciklama": "Öz Muhtar Sitesi — yerel kayıtlarda \"Öz Muhtarlar 2\" ve bitişik yazımla \"Özmuhtar 2\" adlarıyla geçer — Etimesgut Güzelkent Mahallesi'nde yer alan yerleşik bir konut sitesidir. TKGM kayıtlarına göre site, tapuda \"6 Blok Kargir Apartman\" niteliğiyle kayıtlı 5.013 m²'lik kat mülkiyetli tek parsel üzerine kurulu. Yerel emlak kayıtlarında bloklar 7 ile 7A'dan 7E'ye uzanan adlarla sıralanıyor — altı blok. Gökkuşağı Sitesi'yle ardışık adalardadır. Öz Muhtar adını taşıyan yerleşimler S.S. Özmuhtarlar Konut Yapı Kooperatifi'nin projeleri olarak bilinir; kooperatif 1993'te Eryaman Güzelkent Konut Üretim Yapı Kooperatifleri Birliği'ne (Eryaman-Koop) katılmış ve 43 kooperatifin yürüttüğü Eryaman Güzelkent Çevre Geliştirme Projesi'nin parçası olmuştur. Adı benzeyen Öz Muhtarlar Sitesi, bu sitenin yaklaşık 1,2 km kuzeydoğusunda iki parsele yayılan ayrı bir yerleşimdir; ilan ve değerlemede iki site blok numarasıyla ayrılır. Öz Muhtar'da dairenizi satmak ya da kiraya vermek istiyorsanız, doğru fiyat için sitenin emsallerini yakından izleyen emlakçınızla ilerleyin.",
   "adalar": [
     {
       "no": "18670",

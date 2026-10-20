@@ -1,0 +1,67 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Kılıçarslanlar Vadi Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63379/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64735,
+      40.00344
+     ],
+     [
+      32.64739,
+      40.00329
+     ],
+     [
+      32.64743,
+      40.00306
+     ],
+     [
+      32.64741,
+      40.00296
+     ],
+     [
+      32.64826,
+      40.00293
+     ],
+     [
+      32.64826,
+      40.003
+     ],
+     [
+      32.64825,
+      40.00312
+     ],
+     [
+      32.64823,
+      40.00323
+     ],
+     [
+      32.64821,
+      40.00334
+     ],
+     [
+      32.64818,
+      40.00346
+     ],
+     [
+      32.64816,
+      40.00353
+     ],
+     [
+      32.64735,
+      40.00344
+     ]
+    ]
+   ]
+  ]
+ }
+}

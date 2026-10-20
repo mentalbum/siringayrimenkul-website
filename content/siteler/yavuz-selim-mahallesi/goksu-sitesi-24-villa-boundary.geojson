@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Göksu Sitesi 24 Villa",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "19505/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61041,
+      39.99706
+     ],
+     [
+      32.60955,
+      39.99705
+     ],
+     [
+      32.60955,
+      39.99583
+     ],
+     [
+      32.61042,
+      39.99584
+     ],
+     [
+      32.61041,
+      39.99706
+     ]
+    ]
+   ]
+  ]
+ }
+}
