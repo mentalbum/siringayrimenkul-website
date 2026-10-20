@@ -7,7 +7,7 @@
     "lng": 32.609983
   },
   "sinirGeoJSON": "siteler/yavuz-selim-mahallesi/goksu-sitesi-24-villa-boundary.geojson",
-  "aciklama": "Göksu Sitesi 24 Villa, Yavuz Selim Mahallesi'nin Güzelkent villalar kuşağında yirmi dört konuttan oluşan yatay dokulu bir sitedir. TKGM kayıtlarına göre yaklaşık 9.989 m²'lik parselde tapu kaydı yapıları '24 Adet Kargir Apartman Ev' olarak sayar — yüksek bloklar değil, yan yana dizilen konutlardan oluşan bir yerleşim. Aynı adı taşıyan ve on altı evden oluşan Göksu Sitesi, mahallenin doğusunda ayrı bir parseldedir; yerel kayıtlarda iki site konut sayısıyla ayrılır ('16 Villa' ve '24 Villa'). Yaklaşık on dönümlük parselde yirmi dört konutun yer alması, her konuta bahçe ve açık alan payı bırakan bir düzen demektir; değeri konutun parsel içindeki konumu, bahçe kullanımı ve iç durumu belirler. Bu sitede satılık veya kiralık eviniz mi var? Bahçeli dokuda doğru fiyat konum, bahçe kullanımı ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Göksu Sitesi 24 Villa, Yavuz Selim Mahallesi'nin Güzelkent villalar kuşağında yirmi dört konuttan oluşan yatay dokulu bir sitedir. TKGM kayıtlarına göre yaklaşık 9.989 m²'lik parselde tapu kaydı yapıları '24 Adet Kargir Apartman Ev' olarak sayar — yüksek bloklar değil, yan yana dizilen konutlardan oluşan bir yerleşim. Aynı adı taşıyan iki site daha vardır: on altı evden oluşan Göksu Sitesi bu sitenin yaklaşık 500 m kuzeydoğusunda, Güzelkent'teki Göksu Sitesi ise yaklaşık 600 m uzakta ayrı parsellerdedir; yerel kayıtlarda Yavuz Selim'deki iki site konut sayısıyla ayrılır ('16 Villa' ve '24 Villa'). Yaklaşık on dönümlük parselde yirmi dört konut bulunur; değeri konutun parsel içindeki konumu ve iç durumu belirler. Bu sitede satılık veya kiralık eviniz mi var? Doğru fiyat konutun site içindeki konumu ve iç durumuyla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "19505",
@@ -15,7 +15,7 @@
     }
   ],
   "alternatifAdlar": [
-    "Göksu Sitesi no:24"
+    "Göksu Villaları"
   ],
   "ozellikler": [
     "~9.989 m² parsel (TKGM)",

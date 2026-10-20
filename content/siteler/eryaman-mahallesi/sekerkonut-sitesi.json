@@ -7,7 +7,7 @@
     "lng": 32.609173
   },
   "sinirGeoJSON": "siteler/eryaman-mahallesi/sekerkonut-sitesi-boundary.geojson",
-  "aciklama": "Şekerkonut Sitesi, Eryaman Mahallesi'nde 335. Cadde üzerinde yer alan bir konut sitesidir; yerel kayıtlarda 'Şeker Konutları' ve 'Şeker Konut Sitesi' adlarıyla da geçer — adlar aynı yerleşimi işaret eder, Şeker Mahallesi'yle bir ilgisi yoktur. TKGM kayıtlarına göre yaklaşık 3.865 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'Kargir Apartman' olarak tanımlar; yerel emlak kayıtlarında bloklar '1 Blok' ve '3 Blok' gibi numaralarla anılır. Site, yerleşim adasını ASM Prestij Konutları ve Pınar Sitesi ile paylaşır; aynı adada üç ayrı sitenin bulunması, ilan ve değerlemede hangi yapıdan söz edildiğinin kapı numarasıyla netleştirilmesini gerektirir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Şekerkonut Sitesi, Eryaman Mahallesi'nde yer alan bir konut sitesidir; yerel kayıtlarda 'Şeker Konutları' ve 'Şeker Konut Sitesi' adlarıyla da geçer — adlar aynı yerleşimi işaret eder; site Şeker Mahallesi'nde değil, Eryaman Mahallesi'ndedir. TKGM kayıtlarına göre yaklaşık 3.865 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'Kargir Apartman' olarak tanımlar; yerel emlak kayıtlarında bloklar numarayla anılır. Site, ASM Prestij Konutları ve Pınar Sitesi ile aynı yerleşim adasında yer alır; aynı adada üç ayrı sitenin bulunması, ilan ve değerlemede hangi yapıdan söz edildiğinin kapı numarasıyla netleştirilmesini gerektirir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "45923",
@@ -23,7 +23,6 @@
     "Tapu niteliği kargir apartman (TKGM)",
     "Kat mülkiyetli parsel (TKGM)",
     "ASM Prestij ve Pınar Sitesi ile aynı adada (TKGM)",
-    "335. Cadde (adres kayıtları)",
     "Eryaman Mahallesi"
   ],
   "zenginlestirildi": "2026-10-20"

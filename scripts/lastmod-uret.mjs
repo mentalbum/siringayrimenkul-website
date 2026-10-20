@@ -76,6 +76,9 @@ const kirli = yalnizGecmis
 const dosyalar = {};
 const yurdu = (dizin) => {
   for (const girdi of fs.readdirSync(dizin, { withFileTypes: true })) {
+    // Nokta dosyaları (.DS_Store vb.) git'te yok sayılıyor ve hiçbir sayfa
+    // onları okumuyor; taranırsa her makinede "bugün" damgalı sahte fark üretir.
+    if (girdi.name.startsWith(".")) continue;
     const tam = path.join(dizin, girdi.name);
     if (girdi.isDirectory()) {
       yurdu(tam);

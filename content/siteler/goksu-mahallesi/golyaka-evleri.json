@@ -7,21 +7,17 @@
     "lng": 32.644989
   },
   "sinirGeoJSON": "siteler/goksu-mahallesi/golyaka-evleri-boundary.geojson",
-  "aciklama": "Gölyaka Evleri, Göksu Mahallesi'nin kuzeyindeki yeni yapılaşma kuşağında, 5342. Sokak üzerinde yer alan apartman tipi bir konut yerleşimidir. Site, yerleşim adasını Mercan Smart House ve Göksu Park Vadi Konutları ile paylaşır. TKGM'de yaklaşık 8.102 m²'lik parselin niteliği bugün hâlâ 'Arsa' olarak görünür; bu, yapılar tamamlanmış olsa da cins değişikliği ve kat mülkiyetine geçiş işlemlerinin tapuya henüz yansımamış olabileceğini gösterir. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Yeni kuşağın yerleşimlerinde emsal sayısı henüz sınırlıdır; değer, aynı adadaki komşu projelerle kat ve cephe üzerinden karşılaştırılarak netleşir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "aciklama": "Gölyaka Evleri, Göksu Mahallesi'nin kuzeyindeki yeni yapılaşma kuşağında yer alan apartman tipi bir konut yerleşimidir; Mercan Smart House ve Göksu Park Vadi Konutları ile aynı yerleşim adasındadır. TKGM'de yaklaşık 8.102 m²'lik parselin niteliği hâlâ 'Arsa' görünür ve zemin kat irtifakı aşamasındadır; kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Yeni kuşağın yerleşimlerinde emsal sayısı henüz sınırlıdır; değer, aynı adadaki komşu projelerle kat ve cephe üzerinden karşılaştırılarak netleşir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
   "adalar": [
     {
       "no": "63404",
       "parsel": "1"
     }
   ],
-  "alternatifAdlar": [
-    "Göksu Gölyaka Evleri"
-  ],
   "ozellikler": [
     "~8.102 m² parsel (TKGM)",
-    "Tapu niteliği arsa — kat mülkiyeti işlemi kontrol edilmeli (TKGM)",
+    "Kat irtifaklı — tapuda 'Arsa' (TKGM)",
     "Mercan Smart House ve Göksu Park Vadi ile aynı adada (TKGM)",
-    "5342. Sokak (adres kayıtları)",
     "Göksu — kuzey yapılaşma kuşağı"
   ],
   "zenginlestirildi": "2026-10-20"
