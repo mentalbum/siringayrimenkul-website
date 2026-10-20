@@ -19,6 +19,29 @@ REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITELER = os.path.join(REPO, "content", "siteler")
 MAHALLELER = os.path.join(REPO, "content", "mahalleler")
 
+# Mahalle sınırı dışında kalan ama BİLEREK o mahallede tutulan parseller.
+# content/mahalleler/*-boundary.geojson OSM kaynaklı ve kaba: ilçe/mahalle
+# sınırı yer yer parsellerin içinden geçiyor. Hakem OSM çizgisi değil, TKGM
+# (ilçe) + KEOS numarataj/mahalle kaydı (bellek kuralı: "pin değil
+# numarataj"). Buraya yalnız o teyitle girilir; gerekçe yanında yazılır.
+# 20.10.2026: map-qa 26.07 slug taşımasından beri bu kontrolü hiç çalıştır-
+# mamıştı (dosya adı '<slug>-boundary.geojson' aranıyordu, gerçek ad
+# 'goksu-boundary.geojson'); yol artık mahalle JSON'undaki sinirGeoJSON'dan
+# kuruluyor. Kontrol açılınca dışarıda görünen 7 kayıt aşağıda.
+SINIR_DISI_BILINEN = {
+    # 20.10 KEOS turu öncesi var olan kayıtlar — OSM sınırı parseli dışarıda
+    # bırakıyor, KEOS mahalle kaydı/komşuluk kayıtları o mahallede tutuyor.
+    "eryaman-mahallesi/maximum-konutlari",
+    "eryaman-mahallesi/turk-konut-calisanlar-sitesi",
+    "goksu-mahallesi/ma1-tower",
+    "goksu-mahallesi/maybak-konutlari",
+    "sehit-osman-avci-mahallesi/izo-ser-residence",
+    "seyh-samil-mahallesi/ozahikent-sitesi",   # 9. halka sınır çizgisinin üstünde
+    # 20.10: TKGM ilçe=Etimesgut (Susuz Yenimahalle'de); OSM Göksu çizgisi
+    # parseli ikiye bölüyor. Gerekçe: pws0/KAPSAM-BELIRSIZ-2010.md.
+    "goksu-mahallesi/cag-life-sitesi",
+}
+
 
 def rings(geom):
     t, c = geom["type"], geom["coordinates"]
@@ -69,8 +92,14 @@ def main():
         m = json.load(open(mfile)); mslug = m["slug"]
         mc = m.get("merkezKoordinat", {})
         mlat, mlng = mc.get("lat"), mc.get("lng")
-        mb_path = os.path.join(MAHALLELER, f"{mslug}-boundary.geojson")
-        mb_rings = rings(json.load(open(mb_path))["geometry"]) if os.path.exists(mb_path) else []
+        # Sınır dosyasının adı slug'dan türetilmez ('goksu-mahallesi' →
+        # 'goksu-boundary.geojson'); mahalle JSON'u söyler.
+        mb_path = os.path.join(REPO, "content", m.get("sinirGeoJSON", ""))
+        if m.get("sinirGeoJSON") and os.path.exists(mb_path):
+            mb_rings = rings(json.load(open(mb_path))["geometry"])
+        else:
+            mb_rings = []
+            print(f"UYARI: {mslug} mahalle sınırı yok ({m.get('sinirGeoJSON')}) — sınır kontrolü atlandı")
 
         for sfile in sorted(glob.glob(os.path.join(SITELER, mslug, "*.json"))):
             slug = os.path.basename(sfile)[:-5]
@@ -98,8 +127,17 @@ def main():
             if len(rs) != len(b_adalar):
                 anomalies.append((mslug, s["isim"], f"{len(rs)} halka, {len(b_adalar)} etiket"))
             clng, clat = centroid(rs[0])
-            if mb_rings and not any(point_in_ring(clng, clat, r) for r in mb_rings):
-                anomalies.append((mslug, s["isim"], "parsel merkezi mahalle sınırı DIŞINDA"))
+            # Her halkanın merkezi ayrı sınanır (çok parselli kayıtlarda tek bir
+            # halka yanlış mahalleye kayabilir); bilinen sınır-üstü kayıtlar
+            # SINIR_DISI_BILINEN ile susturulur, listeden çıkınca yeniden ötmeye başlar.
+            if mb_rings and f"{mslug}/{slug}" not in SINIR_DISI_BILINEN:
+                disarida = [
+                    i for i, r in enumerate(rs)
+                    if not any(point_in_ring(*centroid(r), mr) for mr in mb_rings)
+                ]
+                if disarida:
+                    etiket = ", ".join(b_adalar[i] if i < len(b_adalar) else f"halka {i}" for i in disarida)
+                    anomalies.append((mslug, s["isim"], f"parsel merkezi mahalle sınırı DIŞINDA ({etiket})"))
             if mlat:
                 d = haversine(mlat, mlng, clat, clng)
                 if d > 4000:

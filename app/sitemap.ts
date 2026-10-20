@@ -219,9 +219,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const enYeni = (icerik: Date | undefined, taban: Date) =>
     icerik && icerik > taban ? icerik : taban;
 
+  // Mahalle sayfası kendi JSON'una DEĞİL, o mahalledeki site kartlarına bağlı:
+  // yeni bir site kaydı girince sayfada yeni kart ve "N site" sayısı değişir,
+  // mahalle JSON'u değişmez (20.10 ölçümü: Göksu'ya 3 kart eklendi, sitemap
+  // 06.10'da kalmıştı). Etap sayfalarıyla aynı kural: en yeni site tarihi.
+  // Bu toplu şablon damgası değildir — yalnız gerçekten kart alan mahalle ilerler.
   const mahalleSayfalari: MetadataRoute.Sitemap = yayindaMahalleler.map((mahalle) => ({
     url: `${baseUrl}/mahalleler/${mahalle.slug}`,
-    lastModified: enYeni(getMahalleLastModified(mahalle.slug), SABLON.mahalle),
+    lastModified: enYeni(
+      [
+        getMahalleLastModified(mahalle.slug),
+        ...getSitelerByMahalle(mahalle.slug).map((site) => getSiteLastModified(mahalle.slug, site.slug)),
+      ].sort((a, b) => b.getTime() - a.getTime())[0],
+      SABLON.mahalle
+    ),
     changeFrequency: "weekly",
     priority: 0.8,
   }));
