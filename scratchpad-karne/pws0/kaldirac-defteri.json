@@ -414,21 +414,21 @@
   },
   {
    "tarih": "2026-10-20",
-   "ad": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
+   "ad": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kayıt)",
    "durum": "yapildi",
-   "olcum": "5 kaynaklı keşif (GSC 480 gün, sorunlu-siteler.md, KKG/bilgiemlak/emlakjet listeleri, OSM+Yandex, Google Suggest) → 88 ham, 33 tekil aday; mahalle bazında doğrulama + bağımsız çürütme: 12 kabul, 16 belirsiz, 6 ret. GSC'de eksik site neredeyse yok (GSC yalnız gösterim aldığımız sorguları gösterir); asıl eksikler harita kaynaklarından çıktı — Göksu'nun kuzey yapılaşma kuşağında 5 yeni yüksek yapı. Ayrıca Atakent Sitesi yanlış parseldeydi (Başak'ın parseli) → düzeltildi.",
+   "olcum": "5 kaynaklı keşif (GSC 480 gün, sorunlu-siteler.md, KKG/bilgiemlak/emlakjet listeleri, OSM+Yandex, Google Suggest) → 88 ham, 33 tekil aday; mahalle bazında doğrulama + bağımsız çürütme: 12 kabul, 16 belirsiz, 6 ret. GSC'de eksik site neredeyse yok (GSC yalnız gösterim aldığımız sorguları gösterir); asıl eksikler harita kaynaklarından çıktı — Göksu'nun kuzey yapılaşma kuşağında 5 yeni yüksek yapı. Ayrıca Atakent Sitesi yanlış parseldeydi (Başak'ın parseli) → düzeltildi. 2. tur (PR #123, 20.10 gece): 16 belirsiz + Göksu 63xxx kuşak süpürmesi, 26 ajanlı ikinci kaynak araştırması → 4 kabul: Neva Başpınar (63391/3), Yuvam Başar (46489/1 paylaşımlı), Çağ Life (63387/2 — 27.08'de 'Susuz' diye silinmişti; TKGM ilçe Etimesgut + KEOS envanteri, eski susuz site+ada adresleri 301 → goksu sayfası), Duru Göksu (63387/3). Toplam 536 site, sitemap 1.213. İki inceleme turu (21 + 12 bulgu): Çağ Life adresi yanlış yazılmıştı (2. İnönü köşesi değil 5331×5328 köşesi — OSM mesafe ölçümü yakaladı); Göksukent'te 'paylaşır' kökü canlı sayfada yanlış SSS üretiyordu (düzeltildi); scripts/map-qa.py mahalle sınırı kontrolü 26.07'den beri sessizce KAPALIYMIŞ (dosya adı hatası) → açıldı, 6 eski kayıt sınır dışı ve KEOS teyitsiz (teyit 18.11); app/sitemap.ts mahalle lastmod artık o mahalledeki en yeni siteyi de sayıyor.",
    "beklenti": "Sıra iddiası yok: bu sitelerin ev sahibi '<site adı>' aradığında artık bir sayfamız var. Ölçüt: 28 gün sonra 12 sayfanın GSC gösterimi (taban 0) ve '<ad> emlakçı' SERP'inde ilk 10.",
-   "nerede": "content/siteler (12 yeni JSON + sınır), PR #121; belirsizler pws0/KAPSAM-BELIRSIZ-2010.md",
+   "nerede": "content/siteler (16 yeni JSON + sınır), PR #121 + PR #123; belirsizler + Çağ Life gerekçesi + ertelenenler pws0/KAPSAM-BELIRSIZ-2010.md; KEOS/OSM/Yandex dökümü scratchpad-karne/kapsam-2010/ (keos-63387.json, goksu-63387-kanit.json, notlar-63387/)",
    "takvim": [
     {
      "tarih": "2026-10-21",
      "kim": "Claude",
-     "is": "12 yeni sayfaya GSC dizin isteği (deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi."
+     "is": "16 yeni sayfaya GSC dizin isteği (≈18:16 sonrası kota; deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi."
     },
     {
      "tarih": "2026-11-18",
      "kim": "Claude",
-     "is": "12 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek."
+     "is": "16 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek. Aynı turda: 46489/1 + 63391 komşu listelerine Yuvam Başar/Neva Başpınar, Alina 'paylaşır' SSS düzeltmesi, map-qa SINIR_DISI_TEYIT_BEKLEYEN 6 kayıt için KEOS type=mahalle sınaması (+ Ma1 Susuz↔Göksu kartı), lib/kunye.ts m² pencere hatası (18 kayıt), golyaka/altintepe 'zemin kat irtifakı' kalıbı."
     }
    ]
   },
@@ -490,6 +490,21 @@
      "tarih": "2026-11-18",
      "kim": "Claude",
      "is": "faq.ts tetiğini gerçek parsel paylaşım verisine bağla (getAllAdalar sayımı); atakent-vadi sınırındaki iç halkayı temizle; map-qa halka sayımını renderer'la hizala."
+    }
+   ]
+  },
+  {
+   "tarih": "2026-10-20",
+   "ad": "map-qa mahalle sınırı kontrolü 26.07'den beri kördü; 6 kaydın mahallesi KEOS teyitsiz",
+   "durum": "acik",
+   "olcum": "PR #123 teknik incelemesi: scripts/map-qa.py '<slug>-boundary.geojson' arıyordu, gerçek ad 'goksu-boundary.geojson' → 11/11 mahallede sınır dosyası bulunamıyor, kontrol sessizce atlanıyor, 'ANOMALİ: 0'. Açılınca 7 kayıt dışarıda: Çağ Life (gerçek sınır parseli, gerekçeli) + 6 eski kayıt — Maximum Konutları 522 m içeride DEĞİL, OSM Devlet poligonunda; Türk Konut Çalışanlar 1.079 m / Tunahan; Ma1 Tower 409 m / hiçbiri (Susuz↔Göksu kartı sorunlu-siteler.md'de AÇIK); Maybak 69 m / ŞOA; İzo-Ser 80 m / Şeker (kadastro mahallesi de Şeker); Özahikent 48062/1 190 m / Yavuz Selim. Depoda bu 6 kayıt için KEOS/numarataj teyidi yok.",
+   "beklenti": "Mahalle yanlışsa sayfa yanlış mahalle sayfasında ve yanlış 'X Mahallesi' metniyle duruyor (ayırt edicilik sorunu, 04-05.09 bulgusuyla aynı sınıf). KEOS type=mahalle poligon sınaması 6 kaydı 10 dakikada çözer; taşınacaklar için URL değişir (301 + lastmod).",
+   "nerede": "scripts/map-qa.py SINIR_DISI_TEYIT_BEKLEYEN; pws0/KAPSAM-BELIRSIZ-2010.md ertelenenler (d)",
+   "takvim": [
+    {
+     "tarih": "2026-11-18",
+     "kim": "Claude",
+     "is": "KEOS type=mahalle ile 6 kaydın mahallesini sına; teyit gelen SINIR_DISI_BILINEN'e gerekçeyle, gelmeyen taşınır (301 + lastmod)."
     }
    ]
   }

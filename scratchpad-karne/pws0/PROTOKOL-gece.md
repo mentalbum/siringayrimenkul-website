@@ -1274,3 +1274,20 @@ mahallesinde (Fırat Residence → ALTAY: PR #121'de açık kalan soru kapandı;
 (numaralı yeni caddeler yok) → belirsiz adaylara adresle parsel bulunamadı; TKGM nokta sorgusuyla 7 belirsiz adayın parseli alındı
 (hepsi gerçek, atanmamış parsel; KAPSAM-BELIRSIZ-2010.md ek tablo). Karne boru hattı yeniden koşuldu (karne-kos.sh depoya alındı),
 v33 yayında. Ad yazımı açığının deney dışı tek hedefi (Göksupark → 'KC Göksupark', 73 gös) PR #122 ile main'e girdi.
+
+## 20.10 (22:00–23:45) — KAPSAM TURU 2. DİLİM: 4 yeni site (PR #123, 9d5defa0), Çağ Life Susuz→Göksu, iki inceleme turu
+
+16 belirsiz aday + Göksu 63xxx kuşak süpürmesi için 26 ajanlı ikinci kaynak araştırması (TKGM/SERP'siz; her kabul ayrı şüpheciyle) → 4 kabul:
+Neva Başpınar (63391/3, tapu 'Arsa'/kat irtifakı), Yuvam Başar (46489/1 paylaşımlı, --force), Çağ Life (63387/2), Duru Göksu (63387/3).
+Çağ Life 27.08'de Yenimahalle grubuyla 'Susuz' diye silinmişti; TKGM ilçe=Etimesgut (Susuz Yenimahalle'de) + KEOS envanteri (38 belediye
+mahallesinden yalnız Göksu değiyor) → goksu-mahallesi altında yeniden; eski susuz site + tek-siteli ada adresleri (4 kural) 410 yerine
+308 → yaşayan sayfa (yerelde doğrulandı). Toplam 536 site, sitemap 1.213.
+İnceleme 1 (3 mercek, veri bulguları 2'şer şüpheci; kural/teknik şüphecileri 22:20'ye kadar oturum kotasına takıldı): 21 bulgu →
+Çağ Life adresi YANLIŞTI ('2. İnönü köşesi' değil 5331×5328 köşesi; 2. İnönü 84–100 m ötede — OSM yol mesafesi), Göksukent'te 'paylaşır'
+kökü canlı sayfada yanlış 'aynı parseli paylaşıyor → Evet' SSS'si üretiyordu, eski ada adresi 301'siz kalmıştı, **scripts/map-qa.py mahalle
+sınırı kontrolü 26.07'den beri sessizce kapalıymış** (dosya adı hatası), app/sitemap.ts mahalle lastmod yeni kartları görmüyordu.
+İnceleme 2 (düzeltme doğrulaması, 19 ajan): 12 bulgu → map-qa izin listesi ikiye ayrıldı (6 eski sınır-dışı kaydın KEOS teyidi yok, çoğu
+OSM'de BAŞKA mahallenin poligonunda → BİLGİ satırı, 18.11), kaynak dökümü depoya (Yandex 'Çağ Life Sitesi, Göksu Mah., Etimesgut'),
+yorum/metin düzeltmeleri. Çürütülenler korundu ('Göksu Kent Sitesi' alt adı Google Suggest'te var; Neva/Yuvam/Duru olguları kaynaklı).
+Ders: adres cümlesi yazmadan OSM yol geometrisiyle mesafe ölç; 'ANOMALİ: 0' çıktısına güvenme — kontrolün gerçekten koştuğunu bir kez
+kır-ve-gör ile sına (izin listesi boşken 7 kayıt ötmeli).
