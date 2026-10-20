@@ -1,0 +1,63 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Duru Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63387/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64022,
+      40.00388
+     ],
+     [
+      32.64022,
+      40.00382
+     ],
+     [
+      32.64021,
+      40.00371
+     ],
+     [
+      32.64022,
+      40.00359
+     ],
+     [
+      32.64022,
+      40.00348
+     ],
+     [
+      32.64023,
+      40.00337
+     ],
+     [
+      32.64025,
+      40.00326
+     ],
+     [
+      32.64027,
+      40.00315
+     ],
+     [
+      32.64112,
+      40.00326
+     ],
+     [
+      32.64115,
+      40.00384
+     ],
+     [
+      32.64022,
+      40.00388
+     ]
+    ]
+   ]
+  ]
+ }
+}

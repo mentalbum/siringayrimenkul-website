@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Neva Başpınar",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63391/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.63926,
+      39.99992
+     ],
+     [
+      32.64024,
+      39.9997
+     ],
+     [
+      32.64085,
+      40.00017
+     ],
+     [
+      32.64023,
+      40.00066
+     ],
+     [
+      32.64008,
+      40.00053
+     ],
+     [
+      32.63926,
+      39.99992
+     ]
+    ]
+   ]
+  ]
+ }
+}

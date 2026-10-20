@@ -38,3 +38,24 @@ Her biri gerçek, ayrı bir parsel; hiçbiri mevcut 532 kaydın sınırında de�
 | İkon Yeşilova | 47549/7 | 3 Katlı A Blok 11 Kat B Bloktan Oluşan Betonarme Ofis Işyeri Ve Arsası (2,500.00 m²) |
 
 KEOS (belediye) teyidi: Fırat Residence'ın parseli Altay sınırında (Yandex'in 'Şeker' etiketi yanlıştı); 12 yeni kaydın mahallesi belediye sınırıyla da tutuyor.
+
+## 2. tur (20.10 gece): ikinci kaynak araştırması + kuşak süpürmesi — sonuç
+
+**Sayfası AÇILANLAR (PR ile):** Neva Başpınar (Göksu, 63391/3; Başpınar İnşaat, 57 daire 4+1), Yuvam Başar Sitesi (Şeyh Şamil, 46489/1'de 59-4/59-5 blokları; kooperatif + müteahhit listesi + tesisat referansı), Çağ Life Sitesi (Göksu, 63387/2 — 27.08'de 'Susuz' diye silinmişti; TKGM ilçe Etimesgut), Duru Göksu (Göksu, 63387/3; nöbetçi eczane adres kayıtları 'Duru Göksu Apt.').
+
+**RET (eklenmeyecek):** Gerim (tek apartman, Wikimapia 'Gerim Apartmanı' — site değil), Başaran Life (iz yok), Neva Palas / Bordo Göl Evleri / Gölde Luxe / Söğüt Bahçe (Yenimahalle'de: Susuz / Yeni Batı), Göksu Kent Konutları (= mevcut Göksukent Sitesi; alt ad eklendi), 63933/3 (= Kaşmir Mavi Orkide'nin eksik konut parseli; kontrol kolunda → 18.11'de parsel eklenir).
+
+**Hâlâ senin bilgini bekleyenler (tek kaynak, ad teyidi yok):**
+| Ad / parsel | Nerede | Ne biliniyor |
+|---|---|---|
+| Salkuma | Eryaman, Dil Devrimi Cad. No:13 (46380) | 'Salkuma Apt' tek blok; ayrıca 46385'te 'Salkuma Sitesi 1. Blok' etiketi — iki ayrı bina mı? |
+| Melis Evleri | Eryaman, 45918/4 (8 katlı, Arya Evleri'nin adası) | Yandex + bilgiemlak; tabela/ilan teyidi yok |
+| Siraç Konutları | Eryaman, 335. Cad. 3 | yalnız Yandex |
+| Park Prestij Sitesi | ŞOA, 46648/2 (10 katlı) | yalnız Yandex |
+| Bulut Life | Yeşilova, 47550/6 (12 katlı, tapu ofis-işyeri) | yalnız Yandex |
+| Benna Prestij | Yeşilova, 47553/3 (11 katlı, tapu ofis-işyeri) | yalnız Yandex |
+| İkon Yeşilova | Yeşilova, 47549/7 (3+11 katlı, tapu ofis-işyeri) | yalnız Yandex |
+| Çizgi Ötesi Göksu | Göksu (Dek-Em, 39 konut, 2017 ruhsat) | proje gerçek, kesin konum yok |
+| Ay Sevgi, Halil İbrahim, Özentürk, Yıldırım | Altay / Yeşilova | yalnız rakip listesi; hiçbir iz yok — muhtemelen yok |
+| **Adsız parsel 63388/1** | Göksu, Zirveden Göksu'nun adası | 20 katlı A + 22 katlı B blok, 9.708 m² — adı hiçbir kaynakta yok (Göksu Marina 2. etap olabilir) |
+| **Adsız parsel 63401/1** | Göksu, İhlas Cad. 14 | 15'er katlı A+B blok, 7.000 m² — adı hiçbir kaynakta yok |
