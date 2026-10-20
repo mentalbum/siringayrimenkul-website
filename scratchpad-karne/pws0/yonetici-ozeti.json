@@ -155,12 +155,13 @@
   {
    "tarih": "20.10",
    "iso": "2026-10-20",
-   "baslik_sayisi": 2,
+   "baslik_sayisi": 3,
    "basliklar": [
     "(18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30)",
-    "(19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi"
+    "(19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi",
+    "(21:00–21:45) — KEOS teyidi, karne v33, KC Göksupark alt adı (PR #122)"
    ],
-   "metin": "20.10 — (18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30) · (19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi"
+   "metin": "20.10 — (18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30) · (19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi · (21:00–21:45) — KEOS teyidi, karne v33, KC Göksupark alt adı (PR #122)"
   },
   {
    "tarih": "15.10",
