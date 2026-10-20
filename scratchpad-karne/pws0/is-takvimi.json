@@ -261,9 +261,9 @@
   {
    "tarih": "2026-10-21",
    "tarih_tr": "21.10 Çarşamba",
-   "is": "12 yeni sayfaya GSC dizin isteği (deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi.",
-   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
-   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)'",
+   "is": "16 yeni sayfaya GSC dizin isteği (≈18:16 sonrası kota; deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kayıt)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kay'",
    "kim": "Claude"
   },
   {
@@ -365,9 +365,9 @@
   {
    "tarih": "2026-11-18",
    "tarih_tr": "18.11 Çarşamba",
-   "is": "12 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek.",
-   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)",
-   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121, 12 yeni kayıt)'",
+   "is": "16 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek. Aynı turda: 46489/1 + 63391 komşu listelerine Yuvam Başar/Neva Başpınar, Alina 'paylaşır' SSS düzeltmesi, map-qa SINIR_DISI_TEYIT_BEKLEYEN 6 kayıt için KEOS type=mahalle sınaması (+ Ma1 Susuz↔Göksu kartı), lib/kunye.ts m² pencere hatası (18 kayıt), golyaka/altintepe 'zemin kat irtifakı' kalıbı.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kayıt)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kay'",
    "kim": "Claude"
   },
   {
@@ -384,6 +384,14 @@
    "is": "faq.ts tetiğini gerçek parsel paylaşım verisine bağla (getAllAdalar sayımı); atakent-vadi sınırındaki iç halkayı temizle; map-qa halka sayımını renderer'la hizala.",
    "neden": "lib/faq.ts 'paylaş' tetiği yanlış SSS üretiyor",
    "kaynak": "kaldirac-defteri.json 'lib/faq.ts 'paylaş' tetiği yanlış SSS üretiyor'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-18",
+   "tarih_tr": "18.11 Çarşamba",
+   "is": "KEOS type=mahalle ile 6 kaydın mahallesini sına; teyit gelen SINIR_DISI_BILINEN'e gerekçeyle, gelmeyen taşınır (301 + lastmod).",
+   "neden": "map-qa mahalle sınırı kontrolü 26.07'den beri kördü; 6 kaydın mahallesi KEOS teyitsiz",
+   "kaynak": "kaldirac-defteri.json 'map-qa mahalle sınırı kontrolü 26.07'den beri kördü; 6 kaydın mahalles'",
    "kim": "Claude"
   }
  ]

@@ -138,14 +138,14 @@
   },
   {
    "ad": "Envanterde var, kuyrukta YOK",
-   "adet": 12,
+   "adet": 16,
    "aciklama": "Sitede sayfası olan ama ölçüm kuyruğunda hiç yer almayan kayıt — adaş paylaşımı da hesaba katıldı. Bu sayfaların sırası hiç bilinmiyor, yani karnenin kapsama iddiası olduğundan iyi görünüyor.",
    "ornek": [
     "altay-mahallesi/firat-residence",
     "eryaman-mahallesi/sekerkonut-sitesi",
     "goksu-mahallesi/arnova-goksu",
-    "goksu-mahallesi/cinar-goksu-konutlari",
-    "goksu-mahallesi/golyaka-evleri"
+    "goksu-mahallesi/cag-life-sitesi",
+    "goksu-mahallesi/cinar-goksu-konutlari"
    ],
    "agir": true,
    "temiz": false,
