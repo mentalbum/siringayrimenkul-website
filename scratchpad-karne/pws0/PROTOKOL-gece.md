@@ -1292,7 +1292,7 @@ yorum/metin düzeltmeleri. Çürütülenler korundu ('Göksu Kent Sitesi' alt ad
 Ders: adres cümlesi yazmadan OSM yol geometrisiyle mesafe ölç; 'ANOMALİ: 0' çıktısına güvenme — kontrolün gerçekten koştuğunu bir kez
 kır-ve-gör ile sına (izin listesi boşken 7 kayıt ötmeli).
 
-## 21.10 (00:35–00:50) — ÇAĞ LIFE GERİ ALINDI: Özgün "Yenimahalle'deymiş" (PR #124, 7e56b3c0)
+## 20.10 (23:20–23:30) — ÇAĞ LIFE GERİ ALINDI: Özgün "Yenimahalle'deymiş" (PR #124, 7e56b3c0)
 
 PR #123'te TKGM ilçe=Etimesgut + KEOS envanteri gerekçesiyle goksu altında yeniden açılan Çağ Life ~1 saat yayında kaldı; Özgün
 düzeltti. Kayıt silindi, 4 susuz→goksu yönlendirmesi kaldırıldı (susuz adresleri proxy 410'una döndü), goksu site + ada 63387-2
