@@ -117,6 +117,11 @@ def main():
     if not os.path.exists(site_path):
         print(f"SORUN: site json yok: {site_path}"); sys.exit(1)
     site = json.load(open(site_path))
+    # Mahalle JSON'u TKGM isteğinden ÖNCE okunur: yoksa kota harcamadan dur.
+    mjson_path = os.path.join(MAHALLELER, f"{mahalle}.json")
+    if not os.path.exists(mjson_path):
+        print(f"SORUN: mahalle json yok: {mjson_path}"); sys.exit(1)
+    mjson = json.load(open(mjson_path))
 
     if ada_modu:
         try:
@@ -160,13 +165,22 @@ def main():
         problems.append(f"ÇAKIŞMA: {ada_parsel} zaten {owner}'a atanmış (duplicate/parça?)")
 
     clng, clat = centroid(rings(geom)[0])
-    mb_path = os.path.join(MAHALLELER, f"{mahalle}-boundary.geojson")
-    if os.path.exists(mb_path):
+    # Sınır dosyasının adı slug'dan türetilmez ('goksu-mahallesi' →
+    # 'goksu-boundary.geojson'); mahalle JSON'u söyler. 26.07 slug taşımasından
+    # 21.10'a kadar burada '<mahalle>-boundary.geojson' aranıyordu: dosya hiç
+    # bulunamadı, kontrol sessizce atlandı ve her parsel "✓ mahalle içinde"
+    # diye geçti (Ahsenler Göksu 63388/1 vakasında map-qa yakaladı).
+    mb_path = os.path.join(REPO, "content", mjson.get("sinirGeoJSON") or "")
+    if mjson.get("sinirGeoJSON") and os.path.exists(mb_path):
         mb = json.load(open(mb_path))
         inside = any(point_in_ring(clng, clat, r) for r in rings(mb["geometry"]))
         if not inside:
             problems.append(f"SINIR DIŞI: parsel merkezi {mahalle} sınırının dışında "
-                            f"(kadastro: {p['mahalleAd']})")
+                            f"(kadastro: {p['mahalleAd']}) — OSM sınırı kaba olabilir; "
+                            f"hakem TKGM ilçe + KEOS, gerekçeyi map-qa.py SINIR_DISI_BILINEN'e yaz")
+    else:
+        problems.append(f"SINIR YOK: {mahalle} için mahalle sınır dosyası bulunamadı "
+                        f"({mjson.get('sinirGeoJSON')}) — sınır kontrolü yapılamadı")
 
     if problems and not force:
         for pr in problems:
@@ -200,7 +214,10 @@ def main():
         json.dump(yeni, f, ensure_ascii=False, indent=2); f.write("\n")
 
     nitelik = p["nitelik"][:42].replace("\n", " ").replace("\r", " ")
-    flag = "  ✓ mahalle içinde · ✓ çakışma yok" + ("  (FORCE)" if force and problems else "")
+    if problems:  # buraya yalnız --force ile gelinir; geçilen sorunlar açıkça yazılır
+        flag = "\n".join(f"  ⚠ zorlandı (FORCE): {pr}" for pr in problems)
+    else:
+        flag = "  ✓ mahalle içinde · ✓ çakışma yok"
     print(f"OK {site['isim']} -> {ada_parsel} | kadastro: {p['mahalleAd']} | "
           f"alan: {p['alan']} | {nitelik}\n{flag}")
 

@@ -1,0 +1,26 @@
+{
+  "isim": "Benna Prestij Sitesi",
+  "slug": "benna-prestij-sitesi",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.961623,
+    "lng": 32.605264
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/benna-prestij-sitesi-boundary.geojson",
+  "aciklama": "Benna Prestij Sitesi, Yeşilova Mahallesi'nde Prof. Dr. Necmettin Erbakan Caddesi'nin kenarında yer alan tek bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.720 m²'lik parselde tapu kaydı yapıyı '11 Katlı Betonarme Ofis İşyeri' niteliğinde tanımlar ve parsel tapuda kat irtifakı aşamasındadır; kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapudaki niteliğe karşın yapıdaki daireler konut olarak kullanılır; bu tapu tipi değerlemede fark yaratabildiği için bağımsız bölümün tapu niteliğini işlem öncesi birlikte kontrol ederiz — ne anlama geldiğini sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Ana cadde kenarındaki konum, değerlemede kat ve cephe farkını belirgin kılar. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47553",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~2.720 m² parsel (TKGM)",
+    "11 katlı — tapu niteliği ofis işyeri (TKGM)",
+    "Kat irtifaklı parsel (TKGM)",
+    "Tek bloklu konut sitesi",
+    "Daireler konut olarak kullanılıyor",
+    "Yeşilova Mahallesi — Prof. Dr. Necmettin Erbakan Caddesi kenarı (harita kayıtları)"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

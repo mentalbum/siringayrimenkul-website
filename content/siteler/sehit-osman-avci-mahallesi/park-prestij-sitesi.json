@@ -1,0 +1,28 @@
+{
+  "isim": "Park Prestij Sitesi",
+  "slug": "park-prestij-sitesi",
+  "mahalleSlug": "sehit-osman-avci-mahallesi",
+  "koordinat": {
+    "lat": 39.975084,
+    "lng": 32.655404
+  },
+  "sinirGeoJSON": "siteler/sehit-osman-avci-mahallesi/park-prestij-sitesi-boundary.geojson",
+  "aciklama": "Park Prestij Sitesi, Şehit Osman Avcı Mahallesi'nde 2649. Sokak üzerinde yer alan tek bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 2.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '10 Katlı Betonarme Apartman ve Arsası' olarak tanımlar. Kadastroda parsel Şeker kaydıyla izlenir; idari olarak ise site Şehit Osman Avcı Mahallesi sınırları içindedir. Aynı yerleşim adasında Ödevci Sitesi ve Atalay Sitesi ile birlikte yer alır. Tek apartmanlı yapılarda emsal okuması aynı binadaki satış ve kiralamalardan başlar; daire tipi ve bağımsız bölüm bilgisi için işlem öncesi güncel tapu kaydını birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46648",
+      "parsel": "2"
+    }
+  ],
+  "ozellikler": [
+    "~2.500 m² parsel (TKGM)",
+    "10 katlı betonarme apartman (tapu kaydı)",
+    "Tek bloklu konut sitesi",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Kadastroda Şeker kaydı (TKGM)",
+    "2649. Sokak üzerinde (harita kayıtları)",
+    "Ödevci ve Atalay siteleriyle aynı adada (TKGM)",
+    "Şehit Osman Avcı Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

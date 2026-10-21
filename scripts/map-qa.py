@@ -38,7 +38,16 @@ SINIR_DISI_BILINEN = {
     # 20.10: 'Çağ Life' (63387/2) TKGM ilçe=Etimesgut + KEOS gerekçesiyle buraya
     # girmişti; 21.10'da Özgün 'Çağ Life Yenimahalle'de' dedi → kayıt silindi.
     # Ders: parsel/ilçe teyidi ADI teyit etmez (benzer adlı proje tuzağı).
-    # Bugün gerekçeli kayıt yok; biçim: "mahalle/slug": {"ada/parsel", ...}.
+    # Biçim: "mahalle/slug": {"ada/parsel", ...}.
+    #
+    # 21.10: Ahsenler Göksu Sitesi 63388/1 — adını ve Göksu'yu Özgün verdi
+    # (belirsiz tablo yanıtı); geliştirici tanıtımı 'Ahsenler Göksu Konutları';
+    # TKGM ilçe=Etimesgut (kadastro Eryaman); KEOS Etimesgut envanterinde
+    # (keos-63387.json: Göksu poligonu 7 köşenin 1'ini içeriyor, merkez hiçbir
+    # KEOS mahallesinde değil — kuzey ilçe sınırı kuşağı, Çağ Life ile aynı
+    # durum). Aynı adadaki Zirveden Göksu (63388/2) ve Ilgaz Life (63388/3)
+    # OSM Göksu içinde. Çağ Life dersi: burada AD Özgün'den geldi, Yandex'ten değil.
+    "goksu-mahallesi/ahsenler-goksu-sitesi": {"63388/1"},
 }
 # (2) TEYİT BEKLEYEN — OSM'ye göre dışarıda, hatta çoğu BAŞKA bir mahallenin
 # OSM poligonunun içinde; depoda KEOS/numarataj teyidi YOK (20.10'daki 16/16

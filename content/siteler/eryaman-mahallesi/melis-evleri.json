@@ -1,0 +1,27 @@
+{
+  "isim": "Melis Evleri",
+  "slug": "melis-evleri",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.975417,
+    "lng": 32.610745
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/melis-evleri-boundary.geojson",
+  "aciklama": "Melis Evleri, Eryaman Mahallesi'nde 4. Cadde ile 337. Sokak'ın kesiştiği köşede yer alan tek bloklu bir konut sitesidir. TKGM kayıtlarına göre yaklaşık 1.752 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '8 Katlı Beton Apartman' olarak tanımlar. Site, Arya Evleri ve Siraç Konutları ile aynı yerleşim adasında yer alır; her biri ayrı tapu parselindedir. Satış ya da kiralama öncesinde dairenin bağımsız bölüm kaydını güncel tapudan birlikte kontrol ederiz. Şeyh Şamil Mahallesi'ndeki Melis Sitesi ise adı benzeyen, ayrı adada ayrı bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45918",
+      "parsel": "4"
+    }
+  ],
+  "ozellikler": [
+    "Tek bloklu konut sitesi",
+    "8 katlı — tapu nitelik kaydı (TKGM)",
+    "~1.752 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Arya Evleri ve Siraç Konutları ile aynı adada, ayrı parsellerde (TKGM)",
+    "4. Cadde ile 337. Sokak köşesi (harita kayıtları)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

@@ -1,0 +1,31 @@
+{
+  "isim": "Arya Göksu Evleri",
+  "slug": "arya-goksu-evleri",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.999457,
+    "lng": 32.650503
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/arya-goksu-evleri-boundary.geojson",
+  "aciklama": "Arya Göksu Evleri, Göksu Mahallesi'nde İhlas Caddesi üzerinde yer alan iki bloklu bir konut sitesidir; adres kayıtlarında İhlas Caddesi 14-A ve 14-B numaralarıyla geçer. Geliştirici tanıtımına göre site, Endora Projeler markasıyla çalışan Arıkan Yapı Teknolojileri'nin tamamlanan projeleri arasındadır; proje kaydında başlangıç 2021, bitiş 2023 olarak verilir. Aynı tanıtım iki blokta toplam 56 daire bulunduğunu ve dairelerin tamamının iki ayrı yerleşim planıyla 4+1 olarak tasarlandığını belirtir. TKGM kayıtlarına göre yaklaşık 7.000 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '15'er katlı A ve B bloktan oluşan betonarme mesken' olarak tanımlar. Dairelerin tamamının aynı tipte olması emsal okumayı kolaylaştırır: değer farkını büyük ölçüde plan seçeneği, kat, cephe, manzara ve iç durum belirler; geliştirici tanıtımı projede göl manzarasını öne çıkarır. Aynı yerleşim adasında Çizgi Ötesi Göksu ile birlikte yer alır; adı benzese de Eryaman Mahallesi'ndeki Arya Evleri ve Altay Mahallesi'ndeki Arya Nüans Residence'tan ayrı bir yerleşimdir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63401",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Arya Göksu"
+  ],
+  "ozellikler": [
+    "~7.000 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "A ve B blok, 15'er katlı — tapu nitelik kaydı (TKGM)",
+    "56 daire, tamamı 4+1, iki plan seçeneği (geliştirici tanıtımı)",
+    "Arıkan Yapı Teknolojileri (Endora Projeler) projesi, 2021–2023 (geliştirici tanıtımı)",
+    "İhlas Caddesi 14-A / 14-B (adres kayıtları)",
+    "Çizgi Ötesi Göksu ile aynı adada (TKGM)",
+    "Göksu — kuzey yapılaşma kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

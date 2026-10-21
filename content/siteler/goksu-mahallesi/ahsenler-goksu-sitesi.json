@@ -1,0 +1,31 @@
+{
+  "isim": "Ahsenler Göksu Sitesi",
+  "slug": "ahsenler-goksu-sitesi",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 40.003898,
+    "lng": 32.637045
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/ahsenler-goksu-sitesi-boundary.geojson",
+  "aciklama": "Ahsenler Göksu Sitesi, Göksu Mahallesi'nin kuzey kesiminde yer alan, Ahsenler İnşaat imzalı iki bloklu bir konut sitesidir; geliştiricinin tanıtımında 'Ahsenler Göksu Konutları' adıyla geçer. TKGM kayıtlarına göre yaklaşık 9.708 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '20 Katlı A Blok ve 22 Katlı B Blok Betonarme Mesken' olarak tanımlar. Geliştirici tanıtımına göre proje, her biri yaklaşık 160 m² büyüklüğünde toplam 77 daireden oluşur. Tanıtım bu ölçünün net mi brüt mü olduğunu belirtmez; dairenin alanını işlem öncesi güncel kayıtlardan birlikte kontrol ederiz. Zirveden Göksu ve Ilgaz Life ile aynı yerleşim adasındadır. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat blok, kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63388",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Ahsenler Göksu Konutları",
+    "Ahsenler Göksu"
+  ],
+  "ozellikler": [
+    "~9.708 m² parsel (TKGM)",
+    "2 blok: A Blok 20 katlı, B Blok 22 katlı (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Ahsenler İnşaat projesi (geliştirici tanıtımı)",
+    "Toplam 77 daire, her biri ~160 m² (geliştirici tanıtımı)",
+    "Zirveden Göksu ve Ilgaz Life ile aynı adada (TKGM)",
+    "Göksu — kuzey yapılaşma kuşağı"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

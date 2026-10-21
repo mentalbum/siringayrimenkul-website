@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Benna Prestij Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47553/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60491,
+      39.96149
+     ],
+     [
+      32.60558,
+      39.96138
+     ],
+     [
+      32.60571,
+      39.96173
+     ],
+     [
+      32.60492,
+      39.96187
+     ],
+     [
+      32.60487,
+      39.96184
+     ],
+     [
+      32.60491,
+      39.96149
+     ]
+    ]
+   ]
+  ]
+ }
+}

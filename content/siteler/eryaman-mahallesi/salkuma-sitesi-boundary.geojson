@@ -1,0 +1,47 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Salkuma Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46380/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.62144,
+      39.97184
+     ],
+     [
+      32.62096,
+      39.97177
+     ],
+     [
+      32.62079,
+      39.97164
+     ],
+     [
+      32.62122,
+      39.97129
+     ],
+     [
+      32.62175,
+      39.97134
+     ],
+     [
+      32.62189,
+      39.97148
+     ],
+     [
+      32.62144,
+      39.97184
+     ]
+    ]
+   ]
+  ]
+ }
+}

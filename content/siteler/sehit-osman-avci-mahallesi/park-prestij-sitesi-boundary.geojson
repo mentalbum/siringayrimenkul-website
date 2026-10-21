@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Park Prestij Sitesi",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "46648/2"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65512,
+      39.97485
+     ],
+     [
+      32.65557,
+      39.97486
+     ],
+     [
+      32.6557,
+      39.97486
+     ],
+     [
+      32.65569,
+      39.97531
+     ],
+     [
+      32.6551,
+      39.9753
+     ],
+     [
+      32.65512,
+      39.97485
+     ]
+    ]
+   ]
+  ]
+ }
+}
