@@ -1,0 +1,28 @@
+{
+  "isim": "Çizgi Ötesi Göksu",
+  "slug": "cizgi-otesi-goksu",
+  "mahalleSlug": "goksu-mahallesi",
+  "koordinat": {
+    "lat": 39.998916,
+    "lng": 32.650658
+  },
+  "sinirGeoJSON": "siteler/goksu-mahallesi/cizgi-otesi-goksu-boundary.geojson",
+  "aciklama": "Çizgi Ötesi Göksu, Göksu Mahallesi'nde Dek-Em İnşaat'ın geliştirdiği tek bloklu bir konut projesidir. Proje tanıtımlarına göre yapı 15 katlı tek bloktan oluşur ve toplam 39 konut barındırır; geliştirici kaydı bunları 37 adet 4+1 daire ile 2 adet 5+1 dubleks daire olarak ayırır, tanıtımlarda 4+1 daireler brüt yaklaşık 165 m² olarak verilir. Geliştirici kaydına göre yapı ruhsatı 2017 tarihlidir, kapalı inşaat alanı yaklaşık 10.411 m²'dir ve projede bir kreş, kapalı ve açık otopark, fitness salonu ile spor ve dinlenme alanları sayılır. Geliştirici projeyi tamamlanan işleri arasında listeler; TKGM'de ise yaklaşık 4.934 m²'lik parselin niteliği hâlâ 'Arsa' görünür ve tapuda kat irtifakı aşamasındadır; kat mülkiyetinden farkını sözlüğümüzdeki kat irtifakı maddesinde anlattık. Tapu aşaması için işlem öncesi güncel kaydı birlikte kontrol ederiz. Aynı yerleşim adasında Arya Göksu Evleri ile birlikte yer alır. Adı benzese de Şehit Osman Avcı Mahallesi'ndeki Çizgi Ötesi Residence'tan ayrı bir projedir. Dairelerin neredeyse tamamı 4+1 olduğundan emsal okumada değer farkını büyük ölçüde kat, cephe ve iç durum belirler; iki dubleks daire kendi emsalleriyle ayrıca değerlendirilir. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "63401",
+      "parsel": "3"
+    }
+  ],
+  "ozellikler": [
+    "~4.934 m² parsel (TKGM)",
+    "Kat irtifaklı — tapuda 'Arsa' (TKGM)",
+    "15 katlı tek blok (proje tanıtımları)",
+    "39 konut: 37 adet 4+1 ve 2 adet 5+1 dubleks (geliştirici kaydı)",
+    "Dek-Em İnşaat projesi, ruhsat 2017 (geliştirici kaydı)",
+    "Kreş, kapalı ve açık otopark, fitness salonu (geliştirici kaydı)",
+    "Arya Göksu Evleri ile aynı adada (TKGM)",
+    "Göksu Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

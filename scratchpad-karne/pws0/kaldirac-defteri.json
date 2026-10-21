@@ -1,6 +1,6 @@
 {
  "_not": "Sıra iyileştirme kaldıraçları. Her kayıt ÖLÇÜME dayanır; kaynak alanı nerede ölçüldüğünü söyler. Hipotez eklenmez — ancak ölçüldükten sonra girer.",
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-21",
  "kaldiraclar": [
   {
    "durum": "kanitli",
@@ -450,7 +450,7 @@
    "tarih": "2026-10-20",
    "ad": "Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de (herkes kapalı) #2 (Tunahan)",
    "durum": "acik",
-   "olcum": "Çekirdek tur (60 sn aralık, uule Tunahan'a yapıştı): 'emlakçı' kutu Efor/Kılıç/Ayyıldız; 'eryaman emlakçı' kutu Kılıç/Ayyıldız/Efor — biz yokuz (07.10 ve 14.10'da #1). 'emlak ofisi' kutu #3. Profil sağlam (5,0 / 405). Saat 18:30: biz ve Efor 'Kapanmak üzere 19:00', Kılıç ve Ayyıldız 20:00'ye kadar açık; ikisinin adında 'Eryaman Emlakçı' dizisi var. | 20:37 (yerel), tüm rakipler kapalı: 'eryaman emlakçı' kutu Efor (kapalı) / ŞİRİN #2 (kapalı) / Ozanım (AÇIK, 22:00) — 18:30'da kutuda olan Kılıç ve Ayyıldız (20:00 kapanış) düştü. Yorum: kutu üyeliği 'şu an açık/kapanmak üzere' durumuna duyarlı; adında 'Eryaman Emlakçı' geçen açık işletmeler kapanış saatimize yakın bizi geçiyor. İki ölçüm, bir gün — seri gerekli.",
+   "olcum": "Çekirdek tur (60 sn aralık, uule Tunahan'a yapıştı): 'emlakçı' kutu Efor/Kılıç/Ayyıldız; 'eryaman emlakçı' kutu Kılıç/Ayyıldız/Efor — biz yokuz (07.10 ve 14.10'da #1). 'emlak ofisi' kutu #3. Profil sağlam (5,0 / 405). Saat 18:30: biz ve Efor 'Kapanmak üzere 19:00', Kılıç ve Ayyıldız 20:00'ye kadar açık; ikisinin adında 'Eryaman Emlakçı' dizisi var. | 20:37 (yerel), tüm rakipler kapalı: 'eryaman emlakçı' kutu Efor (kapalı) / ŞİRİN #2 (kapalı) / Ozanım (AÇIK, 22:00) — 18:30'da kutuda olan Kılıç ve Ayyıldız (20:00 kapanış) düştü. Yorum: kutu üyeliği 'şu an açık/kapanmak üzere' durumuna duyarlı; adında 'Eryaman Emlakçı' geçen açık işletmeler kapanış saatimize yakın bizi geçiyor. İki ölçüm, bir gün — seri gerekli. 21.10 Özgün: gerçek hafta içi kapanış 20:00 (hafta sonu ve sabah saatleri profilde doğru); profil saatini 20:00'e çekmeyi 'şimdilik dursun' dedi — seri profil 19:00'dayken ölçülüyor. Hipotez doğrulanırsa (kutudan düşüş 19:00 'kapanmak üzere' ile çakışıyorsa) karar yeniden sorulur: değişiklik GERÇEK saati yansıtır, kural ihlali değildir.",
    "kisit": "GBP saatleri yalnız GERÇEK çalışma saatiyse değişir (gerçek dışı saat yazılmaz); ölçüm bitmeden öneri yok. Özgün'e soru: ofis fiilen 19:00'dan sonra da yanıt veriyor mu?",
    "takvim": [
     {

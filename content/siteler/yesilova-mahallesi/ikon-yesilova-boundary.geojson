@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "İkon Yeşilova",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47549/7"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60938,
+      39.96183
+     ],
+     [
+      32.60943,
+      39.96201
+     ],
+     [
+      32.60948,
+      39.96218
+     ],
+     [
+      32.60877,
+      39.96231
+     ],
+     [
+      32.60866,
+      39.96196
+     ],
+     [
+      32.60938,
+      39.96183
+     ]
+    ]
+   ]
+  ]
+ }
+}

@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Arya Göksu Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63401/1"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.64974,
+      39.99971
+     ],
+     [
+      32.64997,
+      39.99923
+     ],
+     [
+      32.65117,
+      39.99908
+     ],
+     [
+      32.65108,
+      39.99969
+     ],
+     [
+      32.65023,
+      39.99979
+     ],
+     [
+      32.64974,
+      39.99971
+     ]
+    ]
+   ]
+  ]
+ }
+}

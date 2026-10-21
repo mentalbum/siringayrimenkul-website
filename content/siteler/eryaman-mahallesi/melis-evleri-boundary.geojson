@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Melis Evleri",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "45918/4"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.61102,
+      39.97559
+     ],
+     [
+      32.61048,
+      39.9756
+     ],
+     [
+      32.61048,
+      39.97557
+     ],
+     [
+      32.61049,
+      39.97526
+     ],
+     [
+      32.61102,
+      39.97525
+     ],
+     [
+      32.61102,
+      39.97559
+     ]
+    ]
+   ]
+  ]
+ }
+}

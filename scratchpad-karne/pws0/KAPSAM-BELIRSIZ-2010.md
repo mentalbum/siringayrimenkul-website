@@ -64,3 +64,23 @@ KEOS (belediye) teyidi: Fırat Residence'ın parseli Altay sınırında (Yandex'
 | **Adsız parsel 63388/1** | Göksu, Zirveden Göksu'nun adası | 20 katlı A + 22 katlı B blok, 9.708 m² — adı hiçbir kaynakta yok (Göksu Marina 2. etap olabilir); KEOS envanterinde (Etimesgut), Göksu poligonu 7 köşenin 1'ini içeriyor — ilçe sınırı parseli |
 | **Adsız parsel 63387/2** | Göksu, 5331. Cad. × 5328. Cad. köşesi (Duru Göksu'nun adası) | 17 katlı tek blok, 7.841 m², kat mülkiyeti, TKGM ilçe Etimesgut, KEOS envanterinde — Yandex 'Çağ Life' diyordu, Özgün 'Çağ Life Yenimahalle'de' dedi (20.10 gece); gerçek adı? |
 | **Adsız parsel 63401/1** | Göksu, İhlas Cad. 14 | 15'er katlı A+B blok, 7.000 m² — adı hiçbir kaynakta yok; KEOS: tamamen Göksu (5/5 köşe) |
+
+## 3. tur (21.10): Özgün'ün yanıtları — 10 kabul
+
+Özgün belirsiz tabloyu tek tek yanıtladı (AskUserQuestion, 21.10 öğleden önce). Sayfası AÇILACAKLAR (PR, `icerik/yeni-siteler-2110`):
+
+| Site | Mahalle | Parsel (TKGM) | Özgün |
+|---|---|---|---|
+| Salkuma Sitesi | Eryaman | 46380/1 — Kargir Apartman, 3.581 m², Kat Mülkiyet | tek bloklu site; **Bahar Sitesi'nin yanındaki** bina (Dil Devrimi Cad. No:13). 46385/11'deki bilgiemlak 'Salkuma Sitesi 1. Blok' etiketi BAŞKA bina — adı bilinmiyor |
+| Melis Evleri | Eryaman | 45918/4 — 8 Katlı Beton Apartman, 1.752 m² | tek apartmanlı site |
+| Siraç Konutları | Eryaman | 45918/6 — 8 Katlı Betonarme Mesken, 1.506 m² (Yandex noktasında TKGM nokta sorgusu) | tek apartmanlı site |
+| Park Prestij Sitesi | Şehit Osman Avcı | 46648/2 — 10 Katlı Betonarme Apartman, 2.500 m² | tek apartmanlı site |
+| Bulut Life Konutları | Yeşilova | 47550/6 — 12 Katlı Ofis İşyeri, 2.500 m² | konut, tek bloklu site (tapu ofis-işyeri) |
+| Benna Prestij Sitesi | Yeşilova | 47553/3 — 11 Katlı Ofis İşyeri, 2.720 m² | konut, tek bloklu site (tapu ofis-işyeri) |
+| İkon Yeşilova | Yeşilova | 47549/7 — 3 katlı A + 11 katlı B, Ofis İşyeri, 2.500 m² | konut, tek bloklu site (tapu ofis-işyeri) |
+| Çizgi Ötesi Göksu | Göksu | 63401/3 — Arsa, 4.934 m² | **konumu Özgün verdi** |
+| Ahsenler Göksu Sitesi | Göksu | 63388/1 — 20 katlı A + 22 katlı B Mesken, 9.708 m² | **adı Özgün verdi** (önceki 'adsız 63388/1') |
+| Arya Göksu Evleri | Göksu | 63401/1 — 15'er katlı A+B Mesken, 7.000 m² | **adı Özgün verdi** (önceki 'adsız 63401/1') |
+
+**Hâlâ açık:** 63387/2 (17 katlı tek blok, Duru Göksu'nun adası) — Özgün bilmiyor, "sonra tekrar anlat" dedi (harita/fotoğrafla yeniden sorulacak). 46385/11 (bilgiemlak'ın yanlış 'Salkuma 1. Blok' etiketi; 2006, 8 kat, 32 daire) — gerçek adı bilinmiyor. Ay Sevgi / Halil İbrahim / Özentürk / Yıldırım — Özgün "pas geçelim" dedi, dokunulmuyor.
+**Yan düzeltme:** armina-park-evleri ve ayka-park-sitesi metinleri "adasını … Salkuma Sitesi ile paylaşır" diyordu — Salkuma o adada değil ve 'paylaş' kökü lib/faq.ts'de yanlış 'aynı parseli paylaşıyor → Evet' SSS'si üretiyordu (46385/5 ve /9 farklı parseller). İkisi de deney kollarında değil; bu PR'da düzeltiliyor.

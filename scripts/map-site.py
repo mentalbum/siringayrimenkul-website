@@ -160,13 +160,23 @@ def main():
         problems.append(f"ÇAKIŞMA: {ada_parsel} zaten {owner}'a atanmış (duplicate/parça?)")
 
     clng, clat = centroid(rings(geom)[0])
-    mb_path = os.path.join(MAHALLELER, f"{mahalle}-boundary.geojson")
-    if os.path.exists(mb_path):
+    # Sınır dosyasının adı slug'dan türetilmez ('goksu-mahallesi' →
+    # 'goksu-boundary.geojson'); mahalle JSON'u söyler. 26.07 slug taşımasından
+    # 21.10'a kadar burada '<mahalle>-boundary.geojson' aranıyordu: dosya hiç
+    # bulunamadı, kontrol sessizce atlandı ve her parsel "✓ mahalle içinde"
+    # diye geçti (Ahsenler Göksu 63388/1 vakasında map-qa yakaladı).
+    mjson = json.load(open(os.path.join(MAHALLELER, f"{mahalle}.json")))
+    mb_path = os.path.join(REPO, "content", mjson.get("sinirGeoJSON") or "")
+    if mjson.get("sinirGeoJSON") and os.path.exists(mb_path):
         mb = json.load(open(mb_path))
         inside = any(point_in_ring(clng, clat, r) for r in rings(mb["geometry"]))
         if not inside:
             problems.append(f"SINIR DIŞI: parsel merkezi {mahalle} sınırının dışında "
-                            f"(kadastro: {p['mahalleAd']})")
+                            f"(kadastro: {p['mahalleAd']}) — OSM sınırı kaba olabilir; "
+                            f"hakem TKGM ilçe + KEOS, gerekçeyi map-qa.py SINIR_DISI_BILINEN'e yaz")
+    else:
+        problems.append(f"SINIR YOK: {mahalle} için mahalle sınır dosyası bulunamadı "
+                        f"({mjson.get('sinirGeoJSON')}) — sınır kontrolü yapılamadı")
 
     if problems and not force:
         for pr in problems:

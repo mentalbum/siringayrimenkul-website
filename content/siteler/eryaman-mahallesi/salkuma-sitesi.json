@@ -1,0 +1,30 @@
+{
+  "isim": "Salkuma Sitesi",
+  "slug": "salkuma-sitesi",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.971556,
+    "lng": 32.621342
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/salkuma-sitesi-boundary.geojson",
+  "aciklama": "Salkuma Sitesi, Eryaman Mahallesi'nde Dil Devrimi Caddesi No:13'te yer alan tek bloklu bir konut sitesidir; yerel kayıtlarda 'Salkuma Apartmanı' olarak da geçer. TKGM kayıtlarına göre yaklaşık 3.581 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı 'Kargir Apartman' olarak tanımlar. Site, Bahar Sitesi ile aynı yerleşim adasında, ondan ayrı kendi parselinde yer alır. Satış ya da kiralama öncesinde dairenin bağımsız bölüm kaydını güncel tapudan birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "46380",
+      "parsel": "1"
+    }
+  ],
+  "alternatifAdlar": [
+    "Salkuma Apartmanı"
+  ],
+  "ozellikler": [
+    "Tek bloklu konut sitesi",
+    "~3.581 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tapu niteliği 'Kargir Apartman' (TKGM)",
+    "Bahar Sitesi ile aynı adada, ayrı parselde (TKGM)",
+    "Dil Devrimi Caddesi No:13 (adres kayıtları)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

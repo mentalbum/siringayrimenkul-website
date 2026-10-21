@@ -1,0 +1,39 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Bulut Life Konutları",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "47550/6"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.60792,
+      39.96202
+     ],
+     [
+      32.60777,
+      39.96151
+     ],
+     [
+      32.60827,
+      39.96143
+     ],
+     [
+      32.60842,
+      39.96193
+     ],
+     [
+      32.60792,
+      39.96202
+     ]
+    ]
+   ]
+  ]
+ }
+}

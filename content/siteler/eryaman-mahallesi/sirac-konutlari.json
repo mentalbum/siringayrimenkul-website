@@ -1,0 +1,27 @@
+{
+  "isim": "Siraç Konutları",
+  "slug": "sirac-konutlari",
+  "mahalleSlug": "eryaman-mahallesi",
+  "koordinat": {
+    "lat": 39.975711,
+    "lng": 32.610184
+  },
+  "sinirGeoJSON": "siteler/eryaman-mahallesi/sirac-konutlari-boundary.geojson",
+  "aciklama": "Siraç Konutları, Eryaman Mahallesi'nde yer alan tek bloklu bir konut sitesidir; harita kayıtlarında adresi 335. Cadde No:3 olarak geçer. TKGM kayıtlarına göre yaklaşık 1.506 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '8 Katlı Betonarme Mesken Ve Arsası' olarak tanımlar. Site, Arya Evleri ve Melis Evleri ile aynı yerleşim adasında yer alır; bu iki komşu site ayrı tapu parsellerindedir. Yapım yılı ve daire planı gibi ayrıntıları işlem öncesi güncel kayıtlar üzerinden birlikte kontrol ederiz. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "45918",
+      "parsel": "6"
+    }
+  ],
+  "ozellikler": [
+    "~1.506 m² parsel (TKGM)",
+    "8 katlı betonarme mesken — tapu nitelik kaydı (TKGM)",
+    "Tek bloklu konut sitesi",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Arya Evleri ve Melis Evleri ile aynı adada, ayrı parsellerde (TKGM)",
+    "335. Cadde No:3 (harita kayıtları)",
+    "Eryaman Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}

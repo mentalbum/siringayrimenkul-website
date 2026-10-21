@@ -1,0 +1,43 @@
+{
+ "type": "Feature",
+ "properties": {
+  "isim": "Çizgi Ötesi Göksu",
+  "kaynak": "TKGM Parsel Sorgu (CBS) verisine dayalıdır; bilgilendirme amaçlıdır, resmi kadastro belgesi yerine geçmez.",
+  "adalar": [
+   "63401/3"
+  ]
+ },
+ "geometry": {
+  "type": "MultiPolygon",
+  "coordinates": [
+   [
+    [
+     [
+      32.65117,
+      39.99908
+     ],
+     [
+      32.64997,
+      39.99923
+     ],
+     [
+      32.65015,
+      39.99885
+     ],
+     [
+      32.65033,
+      39.99873
+     ],
+     [
+      32.65125,
+      39.99858
+     ],
+     [
+      32.65117,
+      39.99908
+     ]
+    ]
+   ]
+  ]
+ }
+}

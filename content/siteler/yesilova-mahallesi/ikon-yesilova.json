@@ -1,0 +1,28 @@
+{
+  "isim": "İkon Yeşilova",
+  "slug": "ikon-yesilova",
+  "mahalleSlug": "yesilova-mahallesi",
+  "koordinat": {
+    "lat": 39.962075,
+    "lng": 32.609076
+  },
+  "sinirGeoJSON": "siteler/yesilova-mahallesi/ikon-yesilova-boundary.geojson",
+  "aciklama": "İkon Yeşilova, Yeşilova Mahallesi'nde 4013. Cadde kenarında yer alan bir konut sitesidir; parseli kuzeyde Hotki Ritm, doğuda Penta 5 ile sınırdaştır ve Sakalar Tower da aynı yerleşim adasındadır. TKGM kayıtlarına göre yaklaşık 2.500 m²'lik kat mülkiyetli parselde tapu kaydı yapıyı '3 Katlı A Blok 11 Kat B Bloktan Oluşan Betonarme Ofis İşyeri' olarak tanımlar. Sahada tek bir yapı kütlesi olarak görünse de tapu kaydı iki blok sayar: 3 katlı A blok ve 11 katlı B blok. Daireler konut olarak kullanılır; ana yapının tapu niteliği ise ofis-işyeridir — bu tapu tipi değerleme ve kullanım açısından fark yaratabilir. Bağımsız bölümün tapu niteliğini işlem öncesi birlikte kontrol ederiz; ayrıntıyı sözlüğümüzdeki rezidans tapusu maddesinde anlattık. Bu sitede satılık veya kiralık daireniz mi var? Doğru fiyat kat, cephe ve iç durumla netleşir — değeri, siteyi ve emsallerini yakından izleyen emlakçınızla birlikte belirleyin.",
+  "adalar": [
+    {
+      "no": "47549",
+      "parsel": "7"
+    }
+  ],
+  "ozellikler": [
+    "~2.500 m² parsel (TKGM)",
+    "Kat mülkiyetli parsel (TKGM)",
+    "Tapu niteliği ofis-işyeri — kayıtta 3 katlı A ve 11 katlı B blok (TKGM)",
+    "Konut olarak kullanılan daireler; sahada tek yapı kütlesi",
+    "Kuzeyde Hotki Ritm, doğuda Penta 5 ile sınırdaş",
+    "Sakalar Tower ile aynı yerleşim adasında",
+    "4013. Cadde kenarı (harita kayıtları)",
+    "Yeşilova Mahallesi"
+  ],
+  "zenginlestirildi": "2026-10-21"
+}
