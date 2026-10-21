@@ -5,6 +5,7 @@ import Link from "next/link";
 import { katGosterimi, type KunyeSatiri } from "@/lib/kunye";
 import { sendGAEvent } from "@/lib/ga";
 import { bulunmaHali } from "@/lib/turkce";
+import { aramaNormalize } from "@/lib/site-arama";
 
 /** Site Karşılaştırma Aracı — fiyat/aidat bilinçli olarak YOK (güncel piyasa
  * rakamı sitede yayınlanmaz kuralı + enflasyonda bayatlama). Karşılaştırılan
@@ -47,13 +48,13 @@ export function SiteKarsilastirma({ veri }: { veri: KunyeSatiri[] }) {
   const [secili, setSecili] = useState<KunyeSatiri[]>([]);
 
   const adaylar = useMemo(() => {
-    const q = arama.toLocaleLowerCase("tr-TR").trim();
+    const q = aramaNormalize(arama).trim();
     if (q.length < 2) return [];
     return veri
       .filter(
         (s) =>
-          s.isim.toLocaleLowerCase("tr-TR").includes(q) ||
-          s.mahalleIsim.toLocaleLowerCase("tr-TR").includes(q)
+          aramaNormalize(s.isim).includes(q) ||
+          aramaNormalize(s.mahalleIsim).includes(q)
       )
       .filter((s) => !secili.some((x) => x.slug === s.slug && x.mahalleSlug === s.mahalleSlug))
       .slice(0, 8);

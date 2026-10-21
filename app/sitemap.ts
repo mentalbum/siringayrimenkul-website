@@ -74,7 +74,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     //        (86 → 70 karakter, SERP'te görünen metin); /iletisim ile aynı gün.
     //        Aynı gün: eski adres tarama deneyi — sayfa sonuna not + /eski-adresler bağı
     //        eklendi (görünür gövde). 28.10'da bağ sökülünce bu tarih yeniden ilerletilmeli.
-    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-14")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
+    // 21.10: arama düzeltildi; filtre temizleme ve doğru sonuç sayacı eklendi.
+    { url: `${baseUrl}/siteler`, lastModified: [icerikKlasoruTarihi("siteler"), g("2026-10-21")].reduce((a, b) => (a > b ? a : b)), changeFrequency: "weekly", priority: 0.8 },
     /* 08.08 (2. kez): footer'a "Eryaman Etapları" bloğu eklendi (5996267,
      * 288167c) — footer KÜRESEL şablon, aşağıdaki sabit tarihli sayfaların
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
@@ -86,7 +87,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 21.10: /araclar, kira-artisi/tapu-harci/emlak-komisyonu hesaplayıcıları noindex oldu
     //        (yalnız Türkiye geneli jenerik sorgularda çıkıyordu, 0 tık) — site haritasından çıkarıldı;
     //        Eryaman'a özel site-karsilastirma kalır.
-    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-21"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
     // 06.10: "Çerezler:Site" bitişikliği giderildi; meta description'daki yanlış rıza

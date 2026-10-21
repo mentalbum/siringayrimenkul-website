@@ -5,6 +5,7 @@ import Link from "next/link";
 import { SiteCard } from "@/components/site/site-card";
 import type { SiteOzet } from "@/components/site/siteler-browser";
 import { SearchIcon } from "@/components/ui/icons";
+import { aramaNormalize as normalize } from "@/lib/site-arama";
 
 /** Tek mahallenin site listesini gezilebilir kılar: /siteler'deki
  * SitelerBrowser ile aynı arama dili (aynı kutu, aynı sonuç cümleleri), ama
@@ -21,15 +22,6 @@ const ARAMA_ESIGI = 12;
  * taramak zorlaşıyor. */
 const HARF_ESIGI = 30;
 
-/** Türkçe klavyesiz yazım da eşleşsin ("cinar" → "Çınar", "sirin" → "Şirin"):
- * küçült, birleşen işaretleri (ç, ş, ğ, ü, ö) ayrıştırıp at, noktasız ı'yı i'ye
- * indir. Kendi sitesini arayan ev sahibi çoğu zaman düz harfle yazıyor. */
-const normalize = (s: string) =>
-  s
-    .toLocaleLowerCase("tr")
-    .normalize("NFD")
-    .replace(/\p{M}/gu, "")
-    .replaceAll("ı", "i");
 // Bitişik yazımlar da eşleşsin ("eryamanevleri" → "Eryaman Evleri").
 const duz = (s: string) => normalize(s).replace(/\s+/g, "");
 
