@@ -21,7 +21,15 @@ import { baslikDeneyinde, bilgiBasligi, bilgiAciklamasi } from "@/lib/baslik-den
  * istişaresi): "değerleme" bizim hizmet adımız, "bu sitede dairem var" ise
  * müşterinin kendi bağlamı — mesaj onun diliyle başlar. Ek almayan "içinde"
  * kalıbı: site adına ünlü uyumlu ek üretmeye kalkışmıyoruz. */
-function waMesaji(siteIsim: string): string {
+// Niyet verilirse mesaj o kolu adıyla söyler (08.10): ilk ekrandaki iki eşit
+// kapı (satış / kiralama) bunu kullanır; niyetsiz hâli banner ve yüzen düğmede.
+function waMesaji(siteIsim: string, niyet?: "satis" | "kiralama"): string {
+  if (niyet === "satis") {
+    return `Merhaba, ${siteIsim} içindeki dairemi satmak istiyorum. Güncel emsalleri ve nasıl ilerleyebileceğimizi konuşmak istiyorum.`;
+  }
+  if (niyet === "kiralama") {
+    return `Merhaba, ${siteIsim} içindeki dairemi kiraya vermek istiyorum. Güncel emsalleri ve nasıl ilerleyebileceğimizi konuşmak istiyorum.`;
+  }
   return `Merhaba, ${siteIsim} içinde dairem var. Satış veya kiralama için güncel emsalleri ve nasıl ilerleyebileceğimizi konuşmak istiyorum.`;
 }
 import { CtaBanner } from "@/components/ui/cta-banner";
@@ -727,13 +735,24 @@ export default async function SitePage({ params }: Props) {
                 gönderim, temasın tamamı telefon + WhatsApp. Birincil kapı artık
                 gerçek site adıyla hazır mesajlı WhatsApp; telefon ikinci; değerleme
                 sayfası metin bağı olarak duruyor (degerleme_cta ölçümü kesilmesin). */}
+            {/* 08.10: tek düğme iki eşit kapıya ayrıldı — satış ve kiralama aynı
+                ağırlıkta, mesaj niyeti adıyla taşıyor. Olay adı ve konum aynı
+                kaldı (07.10 serisi toplamda kesilmesin); ayrım `niyet` parametresinde. */}
             <TrackedCtaLink
-              href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(waMesaji(site.isim))}`}
-              gaEvent="whatsapp_click" gaParams={{ konum: "site_ust", site: site.slug }}
+              href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(waMesaji(site.isim, "satis"))}`}
+              gaEvent="whatsapp_click" gaParams={{ konum: "site_ust", site: site.slug, niyet: "satis" }}
               variant="primary"
               openInNewTab
             >
-              WhatsApp&apos;tan Konuşalım
+              Satış için WhatsApp
+            </TrackedCtaLink>
+            <TrackedCtaLink
+              href={`${siteConfig.whatsappUrl}?text=${encodeURIComponent(waMesaji(site.isim, "kiralama"))}`}
+              gaEvent="whatsapp_click" gaParams={{ konum: "site_ust", site: site.slug, niyet: "kiralama" }}
+              variant="primary"
+              openInNewTab
+            >
+              Kiralama için WhatsApp
             </TrackedCtaLink>
             <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "site_ust", site: site.slug }} variant="outline">
               {siteConfig.phoneDisplay}
@@ -926,7 +945,7 @@ export default async function SitePage({ params }: Props) {
           `${site.isim} İçindeki Daireniz İçin Doğru Fiyatı Birlikte Bulalım`,
           "Dairenizin Bu Sitedeki Gerçek Değerini Konuşalım",
         ][varyant % 3]}
-        aciklama="Fiyatı ve satış yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
+        aciklama="Fiyatı ve satış ya da kiralama yol haritasını birlikte netleştirelim; doğrudan bizimle çalışın, aynı gün dönüş alın."
       >
         <TrackedCtaLink
           href={`/ev-degerleme?mahalle=${mahalle.slug}&site=${site.slug}`}

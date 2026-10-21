@@ -135,7 +135,7 @@ export default function EvSatmakPage() {
         {/* Niyet denetimi (2026-07-29): hero'da tıklanabilir CTA yoktu; hizmet
             niyetli ziyaretçi ilk ekranda eylem yolu görmeli. */}
         <div className="mt-6">
-          <CtaButton href="/ev-degerleme" variant="primary" className="px-8">
+          <CtaButton href="/ev-degerleme?niyet=satis" variant="primary" className="px-8">
             Evinizi Değerlendirelim
           </CtaButton>
         </div>
@@ -173,7 +173,7 @@ export default function EvSatmakPage() {
                 elinizin altında; tapu harcı ve vergi kalemlerini de görüşmede tek tek
                 netleştiririz.
               </p>
-              <CtaButton href="/ev-degerleme" variant="primary" className="mt-4">
+              <CtaButton href="/ev-degerleme?niyet=satis" variant="primary" className="mt-4">
                 Değerlemeyle Başlayın
               </CtaButton>
             </div>
@@ -318,7 +318,7 @@ export default function EvSatmakPage() {
         baslik="Satış Kararının İlk Adımı: Değerleme"
         aciklama="Dairenizin güncel satış değerini sitenizdeki gerçek emsallerle birlikte netleştirelim; satış yol haritanızı aynı görüşmede çıkaralım."
       >
-        <CtaButton href="/ev-degerleme" variant="primary">
+        <CtaButton href="/ev-degerleme?niyet=satis" variant="primary">
           Evinizi Değerlendirelim
         </CtaButton>
         <TrackedCtaLink href={`tel:${siteConfig.phoneTel}`} gaEvent="phone_click" gaParams={{ konum: "satmak_banner" }} variant="outline-light">
