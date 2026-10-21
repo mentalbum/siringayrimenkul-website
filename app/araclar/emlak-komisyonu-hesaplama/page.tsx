@@ -15,6 +15,11 @@ export const metadata: Metadata = {
     // 06.10: 183 → ≤155 karakter (SERP kesme sınırı).
     "Emlakçı komisyonu ne kadar, kim öder? Satışta azami %4 + KDV (%2+%2), kiralamada bir aylık kira + KDV. Bedeli girin, yasal üst sınırı anında görün.",
   alternates: { canonical: "/araclar/emlak-komisyonu-hesaplama" },
+  // 21.10: GSC'de bu sayfa ailesi yalnız Türkiye geneli "kira zammı / komisyon / tapu harcı
+  // hesaplama" sorgularında çıkıyordu (28 günde 236 gösterim, 0 tık; Özgün: "bu aramalarda
+  // çıkmak istemiyorum"). Sayfa ev sahibi sayfalarından bağlı kalmaya devam eder, dizinden çıkar.
+  // İçerik-kapsam kuralı: jenerik araç aramada görünmez (feedback-blog-sadece-eryaman).
+  robots: { index: false, follow: true },
 };
 
 const faqItems: FaqItem[] = [

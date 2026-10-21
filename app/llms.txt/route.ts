@@ -47,7 +47,8 @@ export function GET() {
     `- [Site ve rezidans dizini](${siteConfig.url}/siteler): Eryaman'daki siteler tek listede. Toplam ${toplamSite}+ site/rezidans sayfası.`,
     `- [Eryaman Site Dokusu Raporu](${siteConfig.url}/eryaman-site-dokusu): tapu verisiyle site analizi — kat mülkiyeti oranı, kat yüksekliği, parsel büyüklüğü, mahalle dağılımı (TKGM, fiyatsız)`,
     `- [Ev değerleme](${siteConfig.url}/ev-degerleme): satış/kiralama öncesi emsal bazlı fiyat analizi`,
-    `- [Ev sahibi hesap araçları](${siteConfig.url}/araclar): kira artışı (TÜFE), tapu harcı, yasal komisyon, boş kalma maliyeti hesaplayıcıları`,
+    // 21.10: jenerik hesaplayıcılar (kira artışı/tapu harcı/komisyon) noindex oldu; burada yalnız Eryaman'a özel araç listelenir.
+    `- [Site karşılaştırma aracı](${siteConfig.url}/araclar/site-karsilastirma): Eryaman sitelerini tapu verisiyle yan yana karşılaştırma`,
     `- [Emlak terimleri sözlüğü](${siteConfig.url}/sozluk): kat mülkiyeti, kat irtifakı, ada/parsel gibi terimlerin sade tanımları`,
     `- [Blog](${siteConfig.url}/blog): Eryaman odaklı rehberler — satış süreci, kira tespiti ve mahalle yazıları`,
     "",

@@ -83,10 +83,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-07"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
-    { url: `${baseUrl}/araclar`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/kira-artisi-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.7 },
-    { url: `${baseUrl}/araclar/tapu-harci-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
-    { url: `${baseUrl}/araclar/emlak-komisyonu-hesaplama`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
+    // 21.10: /araclar, kira-artisi/tapu-harci/emlak-komisyonu hesaplayıcıları noindex oldu
+    //        (yalnız Türkiye geneli jenerik sorgularda çıkıyordu, 0 tık) — site haritasından çıkarıldı;
+    //        Eryaman'a özel site-karsilastirma kalır.
     { url: `${baseUrl}/araclar/site-karsilastirma`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/eryaman-site-dokusu`, lastModified: icerikKlasoruTarihi("siteler"), changeFrequency: "monthly", priority: 0.7 },
     { url: `${baseUrl}/sozluk`, lastModified: g("2026-10-06"), changeFrequency: "monthly", priority: 0.6 },
