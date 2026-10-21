@@ -241,10 +241,16 @@ export default async function RootLayout({
         <noscript>
           <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
         </noscript>
+        <a
+          href="#ana-icerik"
+          className="fixed left-4 top-3 z-[100] -translate-y-24 rounded-xl bg-navy px-4 py-3 text-sm font-semibold text-white shadow-lg focus:translate-y-0 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        >
+          İçeriğe geç
+        </a>
         <Header />
-        <main className="flex-1">{children}</main>
+        <main id="ana-icerik" tabIndex={-1} className="flex-1 scroll-mt-24 outline-none">{children}</main>
         <Footer />
-        <FloatingWhatsAppButton />
+        <FloatingWhatsAppButton mahalleler={getAllMahalleler().map(({ slug, isim }) => ({ slug, isim }))} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}

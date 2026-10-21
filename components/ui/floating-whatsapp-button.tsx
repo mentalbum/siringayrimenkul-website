@@ -5,12 +5,13 @@ import { usePathname } from "next/navigation";
 import { sendGAEvent } from "@/lib/ga";
 import { PhoneIcon, WhatsAppIcon } from "@/components/ui/icons";
 import { siteConfig } from "@/lib/site-config";
+import { bulunmaHali } from "@/lib/turkce";
 
-/** Sayfa bağlamına göre hazır WhatsApp mesajı: müşteri tek dokunuşla derdini
- * yazmış olur, biz de hangi sayfadan geldiğini görürüz. Slug'dan okunabilir ad
- * üretirken Türkçe karakter kaybını kabul ediyoruz — mesajı gönderen zaten
- * düzeltebilir, önemli olan bağlamın taşınması. */
-function baglamMesaji(pathname: string): string {
+type MahalleOzet = { slug: string; isim: string };
+
+/** Mahalle adları içerik kaydından gelir; site sayfalarında gerçek adlı meta
+ * mesajı önceliklidir. Ada bağlantısı, görüşülen sayfanın bağlamını taşır. */
+function baglamMesaji(pathname: string, mahalleler: MahalleOzet[]): string {
   const parca = pathname.split("/").filter(Boolean);
   const adlastir = (slug: string) =>
     slug
@@ -22,18 +23,22 @@ function baglamMesaji(pathname: string): string {
     return `Merhaba, Eryaman ${parca[3]}. Etap'ta bir dairem var, değerlendirmek istiyorum.`;
   }
   if (parca[0] === "mahalleler" && parca[1] && parca[2] === "adalar") {
-    return "Merhaba, bu adadaki dairem hakkında görüşmek istiyorum.";
+    return `Merhaba, bu adadaki dairem hakkında görüşmek istiyorum.\nİncelediğim sayfa: ${siteConfig.url}${pathname}`;
   }
   if (parca[0] === "mahalleler" && parca[2]) {
     return `Merhaba, ${adlastir(parca[2])} ile ilgili yazıyorum — bu sitede bir dairem var.`;
   }
   if (parca[0] === "mahalleler" && parca[1]) {
-    return `Merhaba, ${adlastir(parca[1])} Mahallesi'nde bir dairem var, değerlendirmek istiyorum.`;
+    const mahalle = mahalleler.find(({ slug }) => slug === parca[1]);
+    if (mahalle) return `Merhaba, ${bulunmaHali(mahalle.isim)} bir dairem var, değerlendirmek istiyorum.`;
   }
   if (parca[0] === "eryamanda-ev-kiraya-vermek") {
     return "Merhaba, Eryaman'daki evimi kiraya vermek istiyorum.";
   }
-  if (parca[0] === "eryamanda-ev-satmak" || parca[0] === "ev-degerleme") {
+  if (parca[0] === "ev-degerleme") {
+    return "Merhaba, Eryaman'daki evimin satış veya kira değerini öğrenmek istiyorum.";
+  }
+  if (parca[0] === "eryamanda-ev-satmak") {
     return "Merhaba, Eryaman'daki evimi satmayı düşünüyorum, değerleme istiyorum.";
   }
   if (parca[0] === "araclar" || parca[0] === "blog" || parca[0] === "sozluk") {
@@ -54,18 +59,22 @@ function baglamMesaji(pathname: string): string {
  * MASAÜSTÜ: başlıkta telefon zaten görünür olduğu için yüzen WhatsApp dairesi
  * yeterli; alt çubuk gereksiz yer kaplar.
  */
-export function FloatingWhatsAppButton() {
+export function FloatingWhatsAppButton({ mahalleler }: { mahalleler: MahalleOzet[] }) {
   const pathname = usePathname() ?? "/";
   /* Site sayfası kendi gerçek adıyla hazır mesajı <meta name="wa-mesaj"> olarak
      basar (07.10, ChatGPT istişaresi): slug'dan türetilen ad Türkçe karakterleri
      düşürüyordu ("Relax Goksu Konutlari"). Sunucu tarafında yol tabanlı mesaj
      basılır, montajdan sonra meta varsa o kazanır — hidrasyon farkı olmaz. */
-  const [metaMesaj, setMetaMesaj] = useState<string | null>(null);
+  const [metaMesaj, setMetaMesaj] = useState<{ pathname: string; mesaj: string | null } | null>(null);
   useEffect(() => {
-    const m = document.querySelector<HTMLMetaElement>('meta[name="wa-mesaj"]');
-    setMetaMesaj(m?.content || null);
+    const id = window.setTimeout(() => {
+      const m = document.querySelector<HTMLMetaElement>('meta[name="wa-mesaj"]');
+      setMetaMesaj({ pathname, mesaj: m?.content || null });
+    }, 0);
+    return () => window.clearTimeout(id);
   }, [pathname]);
-  const href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(metaMesaj ?? baglamMesaji(pathname))}`;
+  const sayfaMesaji = metaMesaj?.pathname === pathname ? metaMesaj.mesaj : null;
+  const href = `${siteConfig.whatsappUrl}?text=${encodeURIComponent(sayfaMesaji ?? baglamMesaji(pathname, mahalleler))}`;
 
   return (
     <>
