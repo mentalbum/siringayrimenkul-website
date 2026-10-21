@@ -14,6 +14,11 @@ export const metadata: Metadata = {
   description:
     "Ev sahipleri için hesap araçları: TÜFE kira artışı, tapu harcı, yasal emlak komisyonu, boş kalma maliyeti. Eryaman'da fiyatı birlikte netleştirelim.",
   alternates: { canonical: "/araclar" },
+  // 21.10: GSC'de bu sayfa ailesi yalnız Türkiye geneli "kira zammı / komisyon / tapu harcı
+  // hesaplama" sorgularında çıkıyordu (28 günde 236 gösterim, 0 tık; Özgün: "bu aramalarda
+  // çıkmak istemiyorum"). Sayfa ev sahibi sayfalarından bağlı kalmaya devam eder, dizinden çıkar.
+  // İçerik-kapsam kuralı: jenerik araç aramada görünmez (feedback-blog-sadece-eryaman).
+  robots: { index: false, follow: true },
 };
 
 const faqItems: FaqItem[] = [
