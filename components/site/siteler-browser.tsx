@@ -1,9 +1,10 @@
 "use client";
 
-import { useDeferredValue, useEffect, useMemo, useState } from "react";
+import { useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { SiteCard } from "@/components/site/site-card";
 import { SearchIcon } from "@/components/ui/icons";
+import { aramaNormalize as normalize, odaTipiOku } from "@/lib/site-arama";
 
 /** Liste görünümü için inceltilmiş site verisi — kartta yalnız ilk üç satır
  * göründüğünden tam açıklama yerine kısa özet taşınır (sayfa ağırlığını
@@ -23,7 +24,6 @@ interface SitelerBrowserProps {
   gruplar: { mahalle: { slug: string; isim: string }; siteler: SiteOzet[] }[];
 }
 
-const normalize = (s: string) => s.toLocaleLowerCase("tr");
 /** "2,5+1" → 2.5 — süzgeç şeridini küçükten büyüğe dizmek için. */
 const odaTipiSira = (tip: string) => {
   const [oda, salon] = tip.split("+");
@@ -35,6 +35,11 @@ const duz = (s: string) => normalize(s).replace(/\s+/g, "");
 export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
   const [sorgu, setSorgu] = useState("");
   const [odaTipi, setOdaTipi] = useState<string | null>(null);
+  const aramaInput = useRef<HTMLInputElement>(null);
+  const bilinenOdaTipleri = useMemo(
+    () => new Set(gruplar.flatMap(({ siteler }) => siteler.flatMap((site) => site.odaTipleri ?? []))),
+    [gruplar]
+  );
 
   // Prefill from a ?ara= query (e.g. the homepage hero search) without opting
   // the statically-rendered page into useSearchParams / Suspense.
@@ -44,30 +49,45 @@ export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
   // Hash ayrıca sunucuya gitmez — sayfa statik kalır, Google aynı adresi sayar,
   // canonical'a dokunulmaz ve 520 taranabilir iç bağ prerender HTML'inde durur.
   useEffect(() => {
-    const hashOku = () => {
-      const hash = window.location.hash.match(/^#oda=(.+)$/);
-      setOdaTipi(hash ? decodeURIComponent(hash[1]) : null);
+    const adresOku = () => {
+      setSorgu(new URLSearchParams(window.location.search).get("ara") ?? "");
+      setOdaTipi(odaTipiOku(window.location.hash, bilinenOdaTipleri));
     };
-    const id = window.setTimeout(() => {
-      const ara = new URLSearchParams(window.location.search).get("ara");
-      if (ara) setSorgu(ara);
-      hashOku();
-    }, 0);
-    // Adres çubuğunda hash değiştirmek sayfayı yeniden mount etmez; süzgeç
-    // paylaşılan linkte olduğu gibi burada da uyanık kalsın. (odaTipiSec
-    // replaceState kullanıyor, o olay üretmiyor — geri besleme döngüsü yok.)
-    window.addEventListener("hashchange", hashOku);
+    const id = window.setTimeout(adresOku, 0);
+    // Geri/ileri gezinmede hem arama hem oda filtresi adresten geri yüklenir.
+    window.addEventListener("popstate", adresOku);
+    window.addEventListener("hashchange", adresOku);
     return () => {
       window.clearTimeout(id);
-      window.removeEventListener("hashchange", hashOku);
+      window.removeEventListener("popstate", adresOku);
+      window.removeEventListener("hashchange", adresOku);
     };
-  }, []);
+  }, [bilinenOdaTipleri]);
+
+  function adresGuncelle(arama: string, tip: string | null) {
+    const adres = new URL(window.location.href);
+    if (arama.trim()) adres.searchParams.set("ara", arama.trim());
+    else adres.searchParams.delete("ara");
+    adres.hash = tip ? `oda=${encodeURIComponent(tip)}` : "";
+    // Her tuş için yeni geçmiş girdisi veya sunucu isteği oluşturma.
+    window.history.replaceState(null, "", adres.pathname + adres.search + adres.hash);
+  }
+
+  function sorguDegistir(arama: string) {
+    setSorgu(arama);
+    adresGuncelle(arama, odaTipi);
+  }
+
+  function filtreleriTemizle() {
+    setSorgu("");
+    setOdaTipi(null);
+    adresGuncelle("", null);
+    aramaInput.current?.focus();
+  }
 
   const odaTipiSec = (tip: string | null) => {
     setOdaTipi(tip);
-    // Adres çubuğu paylaşılabilir kalsın ama geçmiş kirlenmesin.
-    const temiz = window.location.pathname + window.location.search;
-    window.history.replaceState(null, "", tip ? `${temiz}#oda=${encodeURIComponent(tip)}` : temiz);
+    adresGuncelle(sorgu, tip);
   };
 
   const ertelenmisSorgu = useDeferredValue(sorgu);
@@ -168,14 +188,25 @@ export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
       <div className="relative max-w-md">
         <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted" />
         <input
+          ref={aramaInput}
           type="search"
           value={sorgu}
-          onChange={(event) => setSorgu(event.target.value)}
+          onChange={(event) => sorguDegistir(event.target.value)}
           placeholder="Site, rezidans veya mahalle adı ile arayın…"
           aria-label="Site, rezidans veya mahalle adı ile arayın"
           className="w-full rounded-xl border border-border bg-surface px-4 py-3 pl-11 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
         />
       </div>
+
+      {(sorgu.trim() || odaTipi) && (
+        <button
+          type="button"
+          onClick={filtreleriTemizle}
+          className="mt-2 min-h-11 cursor-pointer rounded-lg px-3 py-2 text-sm font-semibold text-gold-dark underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+        >
+          Filtreleri temizle
+        </button>
+      )}
 
       {tipSayaclari.tipler.length > 0 && (
         <>
@@ -251,9 +282,11 @@ export function SitelerBrowser({ gruplar }: SitelerBrowserProps) {
       )}
 
       {sorgu.trim() && (
-        <p className="mt-3 text-sm text-muted">
+        <p className="mt-3 text-sm text-muted" role="status">
           {toplamEslesme > 0 ? (
-            `${toplamEslesme} sonuç bulundu.`
+            odaTipi
+              ? `Aramanızla eşleşen ${toplamEslesme} sitenin ${odaEslesme} tanesinde ${odaTipi} kaydı var.`
+              : `${toplamEslesme} sonuç bulundu.`
           ) : (
             <>
               Sonuç bulunamadı. Farklı bir isim deneyin veya{" "}
