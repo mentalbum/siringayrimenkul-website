@@ -117,6 +117,11 @@ def main():
     if not os.path.exists(site_path):
         print(f"SORUN: site json yok: {site_path}"); sys.exit(1)
     site = json.load(open(site_path))
+    # Mahalle JSON'u TKGM isteğinden ÖNCE okunur: yoksa kota harcamadan dur.
+    mjson_path = os.path.join(MAHALLELER, f"{mahalle}.json")
+    if not os.path.exists(mjson_path):
+        print(f"SORUN: mahalle json yok: {mjson_path}"); sys.exit(1)
+    mjson = json.load(open(mjson_path))
 
     if ada_modu:
         try:
@@ -165,7 +170,6 @@ def main():
     # 21.10'a kadar burada '<mahalle>-boundary.geojson' aranıyordu: dosya hiç
     # bulunamadı, kontrol sessizce atlandı ve her parsel "✓ mahalle içinde"
     # diye geçti (Ahsenler Göksu 63388/1 vakasında map-qa yakaladı).
-    mjson = json.load(open(os.path.join(MAHALLELER, f"{mahalle}.json")))
     mb_path = os.path.join(REPO, "content", mjson.get("sinirGeoJSON") or "")
     if mjson.get("sinirGeoJSON") and os.path.exists(mb_path):
         mb = json.load(open(mb_path))
@@ -210,7 +214,10 @@ def main():
         json.dump(yeni, f, ensure_ascii=False, indent=2); f.write("\n")
 
     nitelik = p["nitelik"][:42].replace("\n", " ").replace("\r", " ")
-    flag = "  ✓ mahalle içinde · ✓ çakışma yok" + ("  (FORCE)" if force and problems else "")
+    if problems:  # buraya yalnız --force ile gelinir; geçilen sorunlar açıkça yazılır
+        flag = "\n".join(f"  ⚠ zorlandı (FORCE): {pr}" for pr in problems)
+    else:
+        flag = "  ✓ mahalle içinde · ✓ çakışma yok"
     print(f"OK {site['isim']} -> {ada_parsel} | kadastro: {p['mahalleAd']} | "
           f"alan: {p['alan']} | {nitelik}\n{flag}")
 
