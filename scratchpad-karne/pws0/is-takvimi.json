@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-28",
  "uretim": "is-takvimi-uret.py",
  "damla": {
   "acik": 0,
@@ -9,7 +9,7 @@
    "eski_adres": 0
   },
   "kota_gun": 10,
-  "baslangic": "2026-10-21",
+  "baslangic": "2026-10-28",
   "bitis_kota": null,
   "gun_sayisi": 0,
   "istek_gunluk": {
@@ -110,7 +110,7 @@
    "tarih": "2026-09-16",
    "tarih_tr": "16.09 Çarşamba",
    "is": "GA4 'konum' özel boyutu ilk okuma: node scripts/ga4-api.mjs olaylar 14 — phone_click ve whatsapp_click hangi sayfadan, hangi bağdan geliyor.",
-   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 7, whatsapp_click 10 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
+   "neden": "PR #88 (02.09 Çarşamba) ile telefon bağlarının tamamı tek olay adı ve konum parametresiyle izleniyor; öncesinde bağların bir kısmı hiç sayılmıyordu. Özel boyut geriye dönük çalışmaz, anlamlı ilk okuma yayından 14 gün sonra. Eski tanımla 28 günde phone_click 9, whatsapp_click 11 sayılmıştı; taban sıfırlandığı için bu rakamlarla kıyas yapılmaz, sadece hangi konum kaç tık getiriyor okunur.",
    "kaynak": "git log --grep '#88' + PROTOKOL-gece.md 02.09 (GA4 açıldı) + tik-sonrasi.json",
    "kim": "Claude"
   },
@@ -126,7 +126,7 @@
    "tarih": "2026-09-28",
    "tarih_tr": "28.09 Pazartesi",
    "is": "Beklenen düşüşler sınaması: python3 sonuc-ozeti-uret.py ve sayfa-turu-verimi.py yeniden; toplam tık çizgisi inmiş olmalı, Eryaman satırı inmemiş olmalı.",
-   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 998 tıkın 69 tıkı (%7) oradandı. Yazılar: 25 sayfa, 1.918 gösterim / 23 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 933 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
+   "neden": "Yenimahalle sayfaları 27.08 Perşembe günü siteden kaldırıldı (410 dönüyor); son 28 günde toplam 921 tıkın 37 tıkı (%4) oradandı. Yazılar: 24 sayfa, 1.831 gösterim / 23 tık; 24 genel yazı 07.08 Cuma günü kapatılmıştı, o da eriyecek. Bu gün, kaldırmadan sonraki ilk tam 28 günlük pencerenin okunabildiği gündür (GSC 3 gün geriden gelir). Ölçüt Eryaman satırı: son 28 günde 887 tık; toplam iner ama Eryaman inmezse plan tutuyor, Eryaman da inerse gerçek sorun var.",
    "kaynak": "git log --grep '#79' + sonuc-ozeti.json ayrim + sayfa-turu-verimi.json",
    "kim": "Claude"
   },
@@ -183,6 +183,54 @@
   {
    "tarih": "2026-10-20",
    "tarih_tr": "20.10 Salı",
+   "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
+   "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı (tek nokta, tek gün). 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\".",
+   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-21",
+   "tarih_tr": "21.10 Çarşamba",
+   "is": "25 yeni sayfaya GSC dizin isteği (≈18:16 sonrası kota; deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #125 10 yeni kayıt; Çağ Life geri alındı)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #12'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-21",
+   "tarih_tr": "21.10 Çarşamba",
+   "is": "Harita kutusu saat serisi (10.21): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-22",
+   "tarih_tr": "22.10 Perşembe",
+   "is": "Harita kutusu saat serisi (10.22): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-23",
+   "tarih_tr": "23.10 Cuma",
+   "is": "Harita kutusu saat serisi (10.23): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
+   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-24",
+   "tarih_tr": "24.10 Cumartesi",
+   "is": "Saat serisi okuması: 9 ölçümde kutu üyeliği × açık/kapalı durumu tablosu; Özgün'e saat sorusu (gerçek çalışma saati) ile birlikte rapor.",
+   "neden": "3 gün × 3 saat seri tamamlanmış olur.",
+   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-10-28",
+   "tarih_tr": "28.10 Çarşamba",
    "is": "Yorum kampanyası kararı: yorum isterken mahalle ya da site adı yazdırmayı sürdürüp sürdürmeyeceğine karar ver. Karar gelene kadar yeni yönlendirme önerilmiyor; yorum isteği sürer, ne yazacağı müşteriye bırakılır.",
    "neden": "Google'ın Haritalar katkı politikası yorum isterken belirli içerik talep etmeyi ve yalnız memnun müşteriden istemeyi yasaklıyor; yönlendirilmiş yorumlar kaldırılabiliyor. Kampanyanın ölçülen kazancı yok: bu 10 sorguda harita kutusu çıkıyor ama biz hâlâ kutuda değiliz. Karar Özgün'de: kalıbı 09.08'de kendisi onaylamıştı. Karar gelene kadar karne yeni mahalle ya da site adı önermez. Google metninde profil kısıtlaması sahte ya da teşvikli yoruma bağlı; içerik talebi için yazılı sonuç yorumun silinmesi. Ağustos kampanyasında gelen yorumlar, kutudaki ikinci ofise olan farkın tamamı kadar. 14.10: ChatGPT'nin nötr istek metni + 5-7 gün sonra tek hatırlatma + kayıt şeması chatgpt-istisare-1310.md §2'de; Özgün onaylarsa yorum-toplama.md güncellenir.",
    "kaynak": "kaldirac-defteri.json 'Yorumda mahalle ya da site adı yazdırma (GBP yorum kampanyas' + hedef-sorgular.json (kutu_var ve kutuda alanları)",
@@ -251,54 +299,6 @@
    ]
   },
   {
-   "tarih": "2026-10-20",
-   "tarih_tr": "20.10 Salı",
-   "is": "Çekirdek bölge turu: BOLGE_ON_AYAR=cekirdek node bolge-tur.mjs --listele (10 sorgu, Özgün'ün Chrome'u, pws=0). Ardından python3 hatirlanirlik-uret.py ve Eylül sonu düşüşü serisinin yeniden okuması.",
-   "neden": "Yalın 'emlakçı' sorgusunda ana sayfa 28.08'de organik 3. iken 07.10'da ilk 10 dışındaydı (tek nokta, tek gün). 'emlak ofisi' ve marka sorgusu ilk kez tabanlanıyor. 'Kalıcı kayıp' ancak iki koşul birlikte tutarsa denir: (i) uule=Eryaman merkez ölçümünde n≥5 ve organik ilk 10 dışı, (ii) ölçümden önceki son TAM Search Console haftasında 'emlakçı' mobil gösterimi 30'dan az YA DA gösterim ağırlıklı konum 3,0'dan küçük (yalnız harita kutusu gösterimi kalmış). Taban: 28.09–04.10 mobil 86 gösterim / konum 5,5; 21–27.09 49 / 5,2. Komut: node gsc-q.mjs 2026-09-21 <son_veri_gunu> query,date,device \"query::equals::emlakçı\".",
-   "kaynak": "kaldirac-defteri.json 'Sip diye bulunma plani (07.10): sira tavanda, bosluk GBP paneli + olcu'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-21",
-   "tarih_tr": "21.10 Çarşamba",
-   "is": "16 yeni sayfaya GSC dizin isteği (≈18:16 sonrası kota; deney 2 kalanı sakalar + /iletisim ile birlikte, günde 11); önce API denetimi.",
-   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kayıt)",
-   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kay'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-21",
-   "tarih_tr": "21.10 Çarşamba",
-   "is": "Harita kutusu saat serisi (10.21): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
-   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
-   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-22",
-   "tarih_tr": "22.10 Perşembe",
-   "is": "Harita kutusu saat serisi (10.22): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
-   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
-   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-23",
-   "tarih_tr": "23.10 Cuma",
-   "is": "Harita kutusu saat serisi (10.23): 12:00, 18:30 ve 20:30'da 'eryaman emlakçı' (Tunahan, Chrome, 60 sn aralık) — kutu sırası ve işletmelerin açık/kapalı durumu kaydedilir.",
-   "neden": "'şu an açık' etkisini 3 günlük 3 saatlik seriyle ayırmak; sonuç 24.10'da Özgün'e (saat kararı onun).",
-   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-10-24",
-   "tarih_tr": "24.10 Cumartesi",
-   "is": "Saat serisi okuması: 9 ölçümde kutu üyeliği × açık/kapalı durumu tablosu; Özgün'e saat sorusu (gerçek çalışma saati) ile birlikte rapor.",
-   "neden": "3 gün × 3 saat seri tamamlanmış olur.",
-   "kaynak": "kaldirac-defteri.json 'Harita kutusu ve 'şu an açık' sinyali: 18:30'da kutuda yokuz, 20:37'de'",
-   "kim": "Claude"
-  },
-  {
    "tarih": "2026-10-28",
    "tarih_tr": "28.10 Çarşamba",
    "is": "Eski adres iç bağ deneyi okuması (eski-adres-deneyi-1410.tsv): her kolda 'son tarama > 2026-10-15' oranı (API denetle-dosya, 100 adres); 07.10 istekli 8 adres ayrı kova. İkincil: varislerin aynı sorgulardaki gösterim payı (gsc sayfalar 28g).",
@@ -349,14 +349,6 @@
   {
    "tarih": "2026-11-17",
    "tarih_tr": "17.11 Salı",
-   "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
-   "neden": "20.10 ölçümü tek pencere (21.09–18.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %82,9, tık payı %81,0; yalın site adı sınıfı TO %0,6 (konum 8,8), alıcı niyeti TO %2,8 (konum 7,1). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
-   "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
-   "kim": "Claude"
-  },
-  {
-   "tarih": "2026-11-17",
-   "tarih_tr": "17.11 Salı",
    "is": "Başlık deneyi 2 nihai okuma (son istek + 28 veri günü).",
    "neden": "Karar okuması. İstekler 17.10'dan sonraya sarkarsa bu tarih de o kadar kayar. Güven aralığı 1'i içeriyorsa sonuç 'sonuçsuz' yazılır: başlık geri alınmaz da öteki sayfalara yayılmaz da.",
    "kaynak": "kaldirac-defteri.json 'Baslik deneyi 2: bilgi odakli baslik (50/50), hero CTA WhatsApp, eski-'",
@@ -365,9 +357,17 @@
   {
    "tarih": "2026-11-18",
    "tarih_tr": "18.11 Çarşamba",
-   "is": "16 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek. Aynı turda: 46489/1 + 63391 komşu listelerine Yuvam Başar/Neva Başpınar, Alina 'paylaşır' SSS düzeltmesi, map-qa SINIR_DISI_TEYIT_BEKLEYEN 6 kayıt için KEOS type=mahalle sınaması (+ Ma1 Susuz↔Göksu kartı), lib/kunye.ts m² pencere hatası (18 kayıt), golyaka/altintepe 'zemin kat irtifakı' kalıbı.",
-   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kayıt)",
-   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 4 yeni kay'",
+   "is": "25 yeni sayfanın 28 günlük GSC gösterim/tık okuması; dizinde olmayanlar için istek. Aynı turda: 46489/1 + 63391 komşu listelerine Yuvam Başar/Neva Başpınar, Alina 'paylaşır' SSS düzeltmesi, map-qa SINIR_DISI_TEYIT_BEKLEYEN 6 kayıt için KEOS type=mahalle sınaması (+ Ma1 Susuz↔Göksu kartı), lib/kunye.ts m² pencere hatası (18 kayıt), golyaka/altintepe 'zemin kat irtifakı' kalıbı.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #125 10 yeni kayıt; Çağ Life geri alındı)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #12'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-18",
+   "tarih_tr": "18.11 Çarşamba",
+   "is": "Korpustaki 'paylaş' kökü taraması (~141 kayıt): farklı parsellerdeki 'adasını … ile paylaşır' cümlelerini 'aynı yerleşim adasında … ile birlikte yer alır' kalıbına çevir (deney kolları 17.11 okumasından sonra); 63387/2 ve 46385/11 adlarını Özgün'e harita/fotoğrafla yeniden sor.",
+   "neden": "Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #125 10 yeni kayıt; Çağ Life geri alındı)",
+   "kaynak": "kaldirac-defteri.json 'Kapsam açığı: sayfası olmayan siteler (PR #121 12 + PR #123 3 + PR #12'",
    "kim": "Claude"
   },
   {
@@ -392,6 +392,14 @@
    "is": "KEOS type=mahalle ile 6 kaydın mahallesini sına; teyit gelen SINIR_DISI_BILINEN'e gerekçeyle, gelmeyen taşınır (301 + lastmod).",
    "neden": "map-qa mahalle sınırı kontrolü 26.07'den beri kördü; 6 kaydın mahallesi KEOS teyitsiz",
    "kaynak": "kaldirac-defteri.json 'map-qa mahalle sınırı kontrolü 26.07'den beri kördü; 6 kaydın mahalles'",
+   "kim": "Claude"
+  },
+  {
+   "tarih": "2026-11-25",
+   "tarih_tr": "25.11 Çarşamba",
+   "is": "Cihaz kırılımı ve sorgu sınıfı TO yeniden: KARNE_SCRATCH ile python3 cihaz-uret.py ve python3 sorgu-sinifi-to.py (sorgular28.tsv taze çekilmiş olmalı).",
+   "neden": "28.10 ölçümü tek pencere (28.09–25.10); önceki dönem mülkün rampasına değdiği için dönem farkı büyümeyi değil rampayı ölçüyordu. İkinci bağımsız 28 günlük pencere bu gün dolar. Taban: telefon gösterim payı %82,5, tık payı %79,4; yalın site adı sınıfı TO %0,7 (konum 8,8), alıcı niyeti TO %2,3 (konum 7,1). Yenimahalle kalıntısı bu ikinci pencerede artık yok, Eryaman'a özgü ilk temiz okuma.",
+   "kaynak": "cihaz.json + sorgu-sinifi-to.json guncelleme alanları + cihaz.json uyarıları",
    "kim": "Claude"
   }
  ]

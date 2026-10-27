@@ -1,59 +1,59 @@
 {
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-28",
  "pencere": {
-  "bas": "2026-09-21",
-  "bit": "2026-10-18",
+  "bas": "2026-09-28",
+  "bit": "2026-10-25",
   "gun": 28
  },
  "gun": 28,
- "toplam_gos": 24862,
- "toplam_tik": 303,
- "to": 1.22,
+ "toplam_gos": 23266,
+ "toplam_tik": 255,
+ "to": 1.1,
  "siniflar": [
   {
    "k": "yalin",
    "ad": "Yalın site adı (ör. “X Sitesi”)",
-   "sorgu": 997,
-   "gos": 17014,
-   "tik": 105,
-   "to": 0.6,
+   "sorgu": 964,
+   "gos": 15866,
+   "tik": 106,
+   "to": 0.7,
    "poz": 8.8
   },
   {
    "k": "alici",
    "ad": "Alıcı niyeti (satılık / kiralık / daire)",
-   "sorgu": 405,
-   "gos": 6215,
-   "tik": 174,
-   "to": 2.8,
+   "sorgu": 376,
+   "gos": 5704,
+   "tik": 130,
+   "to": 2.3,
    "poz": 7.1
   },
   {
    "k": "bolge_emlakci",
    "ad": "“Eryaman / mahalle emlakçı”",
-   "sorgu": 19,
-   "gos": 1151,
-   "tik": 9,
-   "to": 0.8,
-   "poz": 3.0
+   "sorgu": 20,
+   "gos": 1223,
+   "tik": 6,
+   "to": 0.5,
+   "poz": 3.2
+  },
+  {
+   "k": "site_emlakci",
+   "ad": "“<site> emlakçı”",
+   "sorgu": 71,
+   "gos": 265,
+   "tik": 3,
+   "to": 1.1,
+   "poz": 16.0
   },
   {
    "k": "marka",
    "ad": "Marka (Şirin Gayrimenkul)",
    "sorgu": 8,
-   "gos": 241,
-   "tik": 12,
-   "to": 5.0,
-   "poz": 5.2
-  },
-  {
-   "k": "site_emlakci",
-   "ad": "“<site> emlakçı”",
-   "sorgu": 65,
-   "gos": 240,
-   "tik": 3,
-   "to": 1.2,
-   "poz": 14.6
+   "gos": 207,
+   "tik": 10,
+   "to": 4.8,
+   "poz": 5.8
   },
   {
    "k": "sahip",
@@ -68,49 +68,99 @@
  "makas": [
   {
    "q": "eryaman emlak",
-   "gos": 618,
-   "tik": 2,
-   "to": 0.3,
-   "poz": 2.6,
+   "gos": 707,
+   "tik": 1,
+   "to": 0.1,
+   "poz": 3.1,
    "sinif": "bolge_emlakci",
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
    "q": "eryaman emlakçı",
-   "gos": 206,
+   "gos": 220,
    "tik": 4,
-   "to": 1.9,
-   "poz": 1.5,
+   "to": 1.8,
+   "poz": 1.7,
    "sinif": "bolge_emlakci",
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
-   "q": "eryaman emlakçılar listesi",
-   "gos": 60,
+   "q": "emlakçı",
+   "gos": 146,
    "tik": 0,
    "to": 0.0,
-   "poz": 1.8,
-   "sinif": "site_emlakci",
+   "poz": 4.7,
+   "sinif": "bolge_emlakci",
    "sayfa": "https://www.siringayrimenkul.com/"
   },
   {
    "q": "mia concept satılık",
-   "gos": 58,
-   "tik": 0,
-   "to": 0.0,
-   "poz": 4.9,
+   "gos": 81,
+   "tik": 1,
+   "to": 1.2,
+   "poz": 4.7,
    "sinif": "alici",
    "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/mia-concept-konutlari"
   },
   {
-   "q": "park evo",
-   "gos": 47,
+   "q": "eryaman emlakçılar listesi",
+   "gos": 65,
    "tik": 0,
    "to": 0.0,
-   "poz": 4.3,
+   "poz": 2.4,
+   "sinif": "site_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
+  },
+  {
+   "q": "sutek sitesi",
+   "gos": 58,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.9,
    "sinif": "yalin",
-   "sayfa": "https://www.siringayrimenkul.com/mahalleler/goksu-mahallesi/park-evo-konutlari"
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/tunahan-mahallesi/sutek-sitesi"
+  },
+  {
+   "q": "akdal rezidans",
+   "gos": 57,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.9,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/seker-mahallesi/akdal-residence"
+  },
+  {
+   "q": "karma modern",
+   "gos": 56,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.4,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/sehit-osman-avci-mahallesi/karma-modern"
+  },
+  {
+   "q": "emlak",
+   "gos": 49,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 3.3,
+   "sinif": "bolge_emlakci",
+   "sayfa": "https://www.siringayrimenkul.com/"
+  },
+  {
+   "q": "çınar sitesi eryaman",
+   "gos": 41,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 4.6,
+   "sinif": "yalin",
+   "sayfa": "https://www.siringayrimenkul.com/mahalleler/devlet-mahallesi/cinar-sitesi"
   }
  ],
- "makas_ym": []
+ "makas_ym": [
+  {
+   "q": "koruçam sitesi",
+   "gos": 55
+  }
+ ]
 }

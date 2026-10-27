@@ -1,21 +1,21 @@
 {
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-28",
  "donem": {
-  "bas": "2026-09-21",
-  "bit": "2026-10-18",
+  "bas": "2026-09-28",
+  "bit": "2026-10-25",
   "gun": 28,
   "veri_gun": 28
  },
  "gun": 28,
  "pencere": {
-  "bas": "2026-09-21",
-  "bit": "2026-10-18",
+  "bas": "2026-09-28",
+  "bit": "2026-10-25",
   "gun": 28
  },
  "kesik": false,
- "dokum_satir": 1822,
- "yenimahalle_dusulen": 173,
- "kullanilan_satir": 1649,
+ "dokum_satir": 1690,
+ "yenimahalle_dusulen": 114,
+ "kullanilan_satir": 1576,
  "bantlar": [
   "1-3",
   "4-5",
@@ -25,125 +25,125 @@
  ],
  "egri": {
   "1-3": {
-   "gos": 1516,
-   "tik": 45,
-   "to": 2.97,
-   "to_ham": 2.9683377308707124
+   "gos": 1582,
+   "tik": 39,
+   "to": 2.47,
+   "to_ham": 2.4652338811630847
   },
   "4-5": {
-   "gos": 2771,
-   "tik": 75,
-   "to": 2.71,
-   "to_ham": 2.7066041140382535
+   "gos": 2362,
+   "tik": 68,
+   "to": 2.88,
+   "to_ham": 2.8789161727349706
   },
   "6-7": {
-   "gos": 5432,
-   "tik": 85,
-   "to": 1.56,
-   "to_ham": 1.56480117820324
+   "gos": 5098,
+   "tik": 73,
+   "to": 1.43,
+   "to_ham": 1.4319340918007062
   },
   "8-10": {
-   "gos": 11158,
-   "tik": 65,
-   "to": 0.58,
-   "to_ham": 0.5825416741351497
+   "gos": 10648,
+   "tik": 61,
+   "to": 0.57,
+   "to_ham": 0.572877535687453
   },
   "10+": {
-   "gos": 2057,
-   "tik": 6,
-   "to": 0.29,
-   "to_ham": 0.2916869227029655
+   "gos": 2296,
+   "tik": 3,
+   "to": 0.13,
+   "to_ham": 0.13066202090592335
   }
  },
  "egri_site": {
   "1-3": {
-   "gos": 145,
+   "gos": 177,
    "tik": 19,
-   "to": 13.1,
-   "to_ham": 13.10344827586207
+   "to": 10.73,
+   "to_ham": 10.734463276836157
   },
   "4-5": {
-   "gos": 2409,
-   "tik": 73,
-   "to": 3.03,
-   "to_ham": 3.0303030303030303
+   "gos": 2006,
+   "tik": 65,
+   "to": 3.24,
+   "to_ham": 3.2402791625124627
   },
   "6-7": {
-   "gos": 5246,
-   "tik": 81,
-   "to": 1.54,
-   "to_ham": 1.5440335493709494
+   "gos": 4842,
+   "tik": 68,
+   "to": 1.4,
+   "to_ham": 1.4043783560512184
   },
   "8-10": {
-   "gos": 10625,
-   "tik": 64,
-   "to": 0.6,
-   "to_ham": 0.6023529411764705
+   "gos": 10134,
+   "tik": 60,
+   "to": 0.59,
+   "to_ham": 0.5920663114268798
   },
   "10+": {
-   "gos": 1676,
-   "tik": 4,
-   "to": 0.24,
-   "to_ham": 0.2386634844868735
+   "gos": 1932,
+   "tik": 3,
+   "to": 0.16,
+   "to_ham": 0.15527950310559005
   }
  },
  "aileler": [
   {
    "aile": "ada",
    "ad": "Ada sayfaları",
-   "satir": 116,
-   "gos": 801,
-   "tik": 2,
-   "to": 0.25,
-   "poz": 10.0,
+   "satir": 90,
+   "gos": 695,
+   "tik": 1,
+   "to": 0.14,
+   "poz": 10.3,
    "bant_pay": {
-    "1-3": 0.5,
-    "4-5": 1.9,
-    "6-7": 11.5,
-    "8-10": 57.9,
-    "10+": 28.2
+    "1-3": 0.4,
+    "4-5": 0.1,
+    "6-7": 8.6,
+    "8-10": 56.1,
+    "10+": 34.7
    }
   },
   {
    "aile": "site",
    "ad": "Site sayfaları",
-   "satir": 1097,
-   "gos": 20101,
-   "tik": 241,
-   "to": 1.2,
+   "satir": 1073,
+   "gos": 19091,
+   "tik": 215,
+   "to": 1.13,
    "poz": 8.1,
    "bant_pay": {
-    "1-3": 0.7,
-    "4-5": 12.0,
-    "6-7": 26.1,
-    "8-10": 52.9,
-    "10+": 8.3
+    "1-3": 0.9,
+    "4-5": 10.5,
+    "6-7": 25.4,
+    "8-10": 53.1,
+    "10+": 10.1
    }
   },
   {
    "aile": "mahalle",
    "ad": "Mahalle sayfaları",
-   "satir": 65,
-   "gos": 170,
-   "tik": 1,
-   "to": 0.59,
-   "poz": 11.9,
+   "satir": 64,
+   "gos": 150,
+   "tik": 0,
+   "to": 0.0,
+   "poz": 12.5,
    "bant_pay": {
-    "1-3": 5.9,
-    "4-5": 1.2,
-    "6-7": 1.8,
-    "8-10": 47.6,
-    "10+": 43.5
+    "1-3": 4.7,
+    "4-5": 1.3,
+    "6-7": 2.0,
+    "8-10": 45.3,
+    "10+": 46.7
    }
   },
   {
    "aile": "etap",
    "ad": "Etap sayfaları",
-   "satir": 1,
-   "gos": 1,
+   "satir": 2,
+   "gos": 2,
    "tik": 0,
    "to": 0.0,
-   "poz": 35.0,
+   "poz": 34.0,
    "bant_pay": {
     "1-3": 0.0,
     "4-5": 0.0,
@@ -155,411 +155,411 @@
   {
    "aile": "diğer",
    "ad": "Diğer (ana sayfa, yazılar, araçlar)",
-   "satir": 370,
-   "gos": 2662,
-   "tik": 34,
-   "to": 1.28,
+   "satir": 347,
+   "gos": 2743,
+   "tik": 29,
+   "to": 1.06,
    "poz": 7.9,
    "bant_pay": {
-    "1-3": 51.1,
-    "4-5": 13.5,
-    "6-7": 6.9,
-    "8-10": 17.0,
-    "10+": 11.5
+    "1-3": 51.0,
+    "4-5": 12.9,
+    "6-7": 9.2,
+    "8-10": 16.3,
+    "10+": 10.6
    }
   }
  ],
  "ada": {
-  "gos": 801,
-  "tik": 2,
-  "to": 0.25,
-  "beklenen": 5.3,
-  "fark": -3.3,
-  "oran": 0.38,
+  "gos": 695,
+  "tik": 1,
+  "to": 0.14,
+  "beklenen": 3.5,
+  "fark": -2.5,
+  "oran": 0.29,
   "olculmeyen_gos": 0,
   "bantlar": [
    {
     "bant": "1-3",
     "satir": 3,
-    "gos": 4,
+    "gos": 3,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 2.97,
+    "egri_to": 2.47,
     "beklenen": 0.1,
     "fark": -0.1
    },
    {
     "bant": "4-5",
-    "satir": 5,
-    "gos": 15,
+    "satir": 1,
+    "gos": 1,
     "tik": 1,
-    "to": 6.67,
-    "egri_to": 2.71,
-    "beklenen": 0.4,
-    "fark": 0.6
+    "to": 100.0,
+    "egri_to": 2.88,
+    "beklenen": 0.0,
+    "fark": 1.0
    },
    {
     "bant": "6-7",
-    "satir": 10,
-    "gos": 92,
+    "satir": 7,
+    "gos": 60,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 1.56,
-    "beklenen": 1.4,
-    "fark": -1.4
+    "egri_to": 1.43,
+    "beklenen": 0.9,
+    "fark": -0.9
    },
    {
     "bant": "8-10",
-    "satir": 51,
-    "gos": 464,
+    "satir": 43,
+    "gos": 390,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 0.58,
-    "beklenen": 2.7,
-    "fark": -2.7
+    "egri_to": 0.57,
+    "beklenen": 2.2,
+    "fark": -2.2
    },
    {
     "bant": "10+",
-    "satir": 47,
-    "gos": 226,
-    "tik": 1,
-    "to": 0.44,
-    "egri_to": 0.29,
-    "beklenen": 0.7,
-    "fark": 0.3
+    "satir": 36,
+    "gos": 241,
+    "tik": 0,
+    "to": 0.0,
+    "egri_to": 0.13,
+    "beklenen": 0.3,
+    "fark": -0.3
    }
   ]
  },
  "ada_site_egrisi": {
-  "gos": 801,
-  "tik": 2,
-  "to": 0.25,
-  "beklenen": 5.7,
-  "fark": -3.7,
-  "oran": 0.35,
+  "gos": 695,
+  "tik": 1,
+  "to": 0.14,
+  "beklenen": 3.8,
+  "fark": -2.8,
+  "oran": 0.26,
   "olculmeyen_gos": 0,
   "bantlar": [
    {
     "bant": "1-3",
     "satir": 3,
-    "gos": 4,
+    "gos": 3,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 13.1,
-    "beklenen": 0.5,
-    "fark": -0.5
+    "egri_to": 10.73,
+    "beklenen": 0.3,
+    "fark": -0.3
    },
    {
     "bant": "4-5",
-    "satir": 5,
-    "gos": 15,
+    "satir": 1,
+    "gos": 1,
     "tik": 1,
-    "to": 6.67,
-    "egri_to": 3.03,
-    "beklenen": 0.5,
-    "fark": 0.5
+    "to": 100.0,
+    "egri_to": 3.24,
+    "beklenen": 0.0,
+    "fark": 1.0
    },
    {
     "bant": "6-7",
-    "satir": 10,
-    "gos": 92,
+    "satir": 7,
+    "gos": 60,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 1.54,
-    "beklenen": 1.4,
-    "fark": -1.4
+    "egri_to": 1.4,
+    "beklenen": 0.8,
+    "fark": -0.8
    },
    {
     "bant": "8-10",
-    "satir": 51,
-    "gos": 464,
+    "satir": 43,
+    "gos": 390,
     "tik": 0,
     "to": 0.0,
-    "egri_to": 0.6,
-    "beklenen": 2.8,
-    "fark": -2.8
+    "egri_to": 0.59,
+    "beklenen": 2.3,
+    "fark": -2.3
    },
    {
     "bant": "10+",
-    "satir": 47,
-    "gos": 226,
-    "tik": 1,
-    "to": 0.44,
-    "egri_to": 0.24,
-    "beklenen": 0.5,
-    "fark": 0.5
+    "satir": 36,
+    "gos": 241,
+    "tik": 0,
+    "to": 0.0,
+    "egri_to": 0.16,
+    "beklenen": 0.4,
+    "fark": -0.4
    }
   ]
  },
  "kontrol_ada_haric": {
-  "gos": 22934,
-  "tik": 276,
-  "beklenen": 276.0,
+  "gos": 21986,
+  "tik": 244,
+  "beklenen": 244.0,
   "fark": 0.0
  },
  "ortak": {
-  "sorgu": 63,
-  "ada_gorunen_sorgu": 99,
-  "ada_yalniz_sorgu": 36,
-  "ada_onde_sorgu": 15,
-  "ada_onde_gos": 188,
+  "sorgu": 45,
+  "ada_gorunen_sorgu": 79,
+  "ada_yalniz_sorgu": 34,
+  "ada_onde_sorgu": 13,
+  "ada_onde_gos": 186,
   "ada_onde_tik": 0,
-  "ada_gos": 607,
-  "site_gos": 1706,
-  "toplam_gos": 2345,
-  "ada_pay_ada_site": 26.2,
-  "ada_pay_toplam": 25.9,
-  "ada_tik": 1,
-  "site_tik": 11,
-  "ada_to": 0.16,
-  "site_to": 0.64,
-  "ada_poz": 10.0,
+  "ada_gos": 392,
+  "site_gos": 1175,
+  "toplam_gos": 1580,
+  "ada_pay_ada_site": 25.0,
+  "ada_pay_toplam": 24.8,
+  "ada_tik": 0,
+  "site_tik": 15,
+  "ada_to": 0.0,
+  "site_to": 1.28,
+  "ada_poz": 10.6,
   "site_poz": 7.7,
   "ornekler": [
    {
-    "q": "demirel park evleri",
-    "ada_gos": 1,
-    "ada_tik": 0,
-    "ada_poz": 24.0,
-    "site_gos": 147,
-    "site_tik": 0,
-    "site_poz": 7.7
-   },
-   {
     "q": "meydan ada sitesi",
-    "ada_gos": 39,
+    "ada_gos": 34,
     "ada_tik": 0,
-    "ada_poz": 10.8,
-    "site_gos": 97,
+    "ada_poz": 11.0,
+    "site_gos": 105,
     "site_tik": 1,
-    "site_poz": 6.0
+    "site_poz": 5.5
    },
    {
     "q": "serhatkent sitesi",
     "ada_gos": 1,
     "ada_tik": 0,
     "ada_poz": 63.0,
-    "site_gos": 111,
+    "site_gos": 92,
     "site_tik": 0,
-    "site_poz": 8.7
+    "site_poz": 8.9
    },
    {
     "q": "happy life residence",
-    "ada_gos": 31,
+    "ada_gos": 23,
     "ada_tik": 0,
-    "ada_poz": 9.8,
-    "site_gos": 67,
+    "ada_poz": 10.3,
+    "site_gos": 69,
     "site_tik": 0,
     "site_poz": 5.8
-   },
-   {
-    "q": "yeni kaynak sitesi",
-    "ada_gos": 2,
-    "ada_tik": 0,
-    "ada_poz": 8.0,
-    "site_gos": 87,
-    "site_tik": 0,
-    "site_poz": 7.4
-   },
-   {
-    "q": "türeli rezidans",
-    "ada_gos": 75,
-    "ada_tik": 0,
-    "ada_poz": 9.6,
-    "site_gos": 10,
-    "site_tik": 0,
-    "site_poz": 10.3
    },
    {
     "q": "göksukent sitesi",
     "ada_gos": 2,
     "ada_tik": 0,
     "ada_poz": 49.5,
-    "site_gos": 78,
+    "site_gos": 77,
     "site_tik": 0,
     "site_poz": 9.0
+   },
+   {
+    "q": "bizim şirinköy sitesi",
+    "ada_gos": 33,
+    "ada_tik": 0,
+    "ada_poz": 7.0,
+    "site_gos": 44,
+    "site_tik": 0,
+    "site_poz": 8.7
+   },
+   {
+    "q": "türeli rezidans",
+    "ada_gos": 67,
+    "ada_tik": 0,
+    "ada_poz": 10.2,
+    "site_gos": 1,
+    "site_tik": 0,
+    "site_poz": 38.0
    },
    {
     "q": "kur sitesi",
     "ada_gos": 4,
     "ada_tik": 0,
-    "ada_poz": 10.8,
-    "site_gos": 73,
+    "ada_poz": 10.5,
+    "site_gos": 64,
     "site_tik": 0,
-    "site_poz": 10.5
+    "site_poz": 11.0
    },
    {
     "q": "haznedaroğlu blokları",
-    "ada_gos": 23,
+    "ada_gos": 20,
     "ada_tik": 0,
-    "ada_poz": 11.8,
-    "site_gos": 53,
+    "ada_poz": 11.9,
+    "site_gos": 47,
     "site_tik": 1,
-    "site_poz": 9.4
+    "site_poz": 9.9
    },
    {
-    "q": "bizim şirinköy sitesi",
-    "ada_gos": 37,
+    "q": "bilgi sevgi hoşgörü sitesi",
+    "ada_gos": 3,
     "ada_tik": 0,
-    "ada_poz": 6.7,
-    "site_gos": 39,
+    "ada_poz": 13.0,
+    "site_gos": 62,
     "site_tik": 0,
-    "site_poz": 9.5
+    "site_poz": 7.3
    },
    {
-    "q": "genç efes sitesi",
-    "ada_gos": 10,
+    "q": "yeni kaynak sitesi",
+    "ada_gos": 2,
     "ada_tik": 0,
-    "ada_poz": 7.9,
-    "site_gos": 59,
+    "ada_poz": 8.0,
+    "site_gos": 61,
     "site_tik": 0,
-    "site_poz": 9.7
+    "site_poz": 7.1
    },
    {
-    "q": "sutek sitesi",
-    "ada_gos": 1,
+    "q": "durtaş 91 sitesi",
+    "ada_gos": 51,
     "ada_tik": 0,
-    "ada_poz": 36.0,
-    "site_gos": 64,
+    "ada_poz": 10.2,
+    "site_gos": 2,
     "site_tik": 0,
-    "site_poz": 5.9
+    "site_poz": 11.5
+   },
+   {
+    "q": "kazım sarı sitesi",
+    "ada_gos": 6,
+    "ada_tik": 0,
+    "ada_poz": 12.3,
+    "site_gos": 43,
+    "site_tik": 1,
+    "site_poz": 7.7
    }
   ]
  },
  "kapsam": {
   "ada": {
-   "toplam_gos": 2641,
-   "dokum_gos": 801,
+   "toplam_gos": 2349,
+   "dokum_gos": 695,
    "gos_pay": 30.0,
-   "toplam_tik": 22,
-   "dokum_tik": 2,
-   "tik_pay": 9.0
+   "toplam_tik": 17,
+   "dokum_tik": 1,
+   "tik_pay": 6.0
   },
   "site": {
-   "toplam_gos": 46439,
-   "dokum_gos": 20101,
+   "toplam_gos": 44508,
+   "dokum_gos": 19091,
    "gos_pay": 43.0,
-   "toplam_tik": 809,
-   "dokum_tik": 241,
-   "tik_pay": 30.0
+   "toplam_tik": 777,
+   "dokum_tik": 215,
+   "tik_pay": 28.0
   },
   "mahalle": {
-   "toplam_gos": 997,
-   "dokum_gos": 170,
+   "toplam_gos": 895,
+   "dokum_gos": 150,
    "gos_pay": 17.0,
-   "toplam_tik": 7,
-   "dokum_tik": 1,
-   "tik_pay": 14.0
+   "toplam_tik": 5,
+   "dokum_tik": 0,
+   "tik_pay": 0.0
   },
   "etap": {
-   "toplam_gos": 161,
-   "dokum_gos": 1,
+   "toplam_gos": 166,
+   "dokum_gos": 2,
    "gos_pay": 1.0,
-   "toplam_tik": 3,
+   "toplam_tik": 1,
    "dokum_tik": 0,
    "tik_pay": 0.0
   },
   "diğer": {
-   "toplam_gos": 5974,
-   "dokum_gos": 2662,
-   "gos_pay": 45.0,
-   "toplam_tik": 91,
-   "dokum_tik": 34,
-   "tik_pay": 37.0
+   "toplam_gos": 5992,
+   "dokum_gos": 2743,
+   "gos_pay": 46.0,
+   "toplam_tik": 87,
+   "dokum_tik": 29,
+   "tik_pay": 33.0
   }
  },
  "sayfa_duzeyi": {
   "egri": {
    "1-3": {
-    "gos": 2702,
-    "tik": 55,
-    "to": 2.04,
-    "to_ham": 2.0355292376017764
+    "gos": 109,
+    "tik": 6,
+    "to": 5.5,
+    "to_ham": 5.504587155963303
    },
    "4-5": {
-    "gos": 2340,
-    "tik": 139,
-    "to": 5.94,
-    "to_ham": 5.94017094017094
+    "gos": 5109,
+    "tik": 182,
+    "to": 3.56,
+    "to_ham": 3.5623409669211195
    },
    "6-7": {
-    "gos": 21411,
-    "tik": 407,
-    "to": 1.9,
-    "to_ham": 1.900892064826491
+    "gos": 20244,
+    "tik": 405,
+    "to": 2.0,
+    "to_ham": 2.000592768227623
    },
    "8-10": {
-    "gos": 26374,
-    "tik": 304,
-    "to": 1.15,
-    "to_ham": 1.1526503374535528
+    "gos": 25087,
+    "tik": 271,
+    "to": 1.08,
+    "to_ham": 1.080240762147726
    },
    "10+": {
-    "gos": 744,
-    "tik": 5,
-    "to": 0.67,
-    "to_ham": 0.6720430107526881
+    "gos": 1012,
+    "tik": 6,
+    "to": 0.59,
+    "to_ham": 0.5928853754940712
    }
   },
   "ada": {
-   "sayfa": 408,
-   "gos": 2641,
-   "tik": 22,
-   "to": 0.83,
-   "beklenen": 37.5,
-   "fark": -15.5,
-   "oran": 0.59,
+   "sayfa": 378,
+   "gos": 2349,
+   "tik": 17,
+   "to": 0.72,
+   "beklenen": 32.9,
+   "fark": -15.9,
+   "oran": 0.52,
    "olculmeyen_gos": 0,
    "bantlar": [
     {
      "bant": "1-3",
-     "sayfa": 30,
-     "gos": 47,
-     "tik": 4,
-     "to": 8.51,
-     "egri_to": 2.04,
-     "beklenen": 1.0,
-     "fark": 3.0
+     "sayfa": 28,
+     "gos": 45,
+     "tik": 3,
+     "to": 6.67,
+     "egri_to": 5.5,
+     "beklenen": 2.5,
+     "fark": 0.5
     },
     {
      "bant": "4-5",
-     "sayfa": 33,
-     "gos": 85,
-     "tik": 1,
-     "to": 1.18,
-     "egri_to": 5.94,
-     "beklenen": 5.0,
-     "fark": -4.0
+     "sayfa": 32,
+     "gos": 96,
+     "tik": 2,
+     "to": 2.08,
+     "egri_to": 3.56,
+     "beklenen": 3.4,
+     "fark": -1.4
     },
     {
      "bant": "6-7",
-     "sayfa": 100,
-     "gos": 570,
-     "tik": 6,
-     "to": 1.05,
-     "egri_to": 1.9,
-     "beklenen": 10.8,
-     "fark": -4.8
+     "sayfa": 87,
+     "gos": 556,
+     "tik": 8,
+     "to": 1.44,
+     "egri_to": 2.0,
+     "beklenen": 11.1,
+     "fark": -3.1
     },
     {
      "bant": "8-10",
-     "sayfa": 168,
-     "gos": 1588,
-     "tik": 9,
-     "to": 0.57,
-     "egri_to": 1.15,
-     "beklenen": 18.3,
-     "fark": -9.3
+     "sayfa": 158,
+     "gos": 1249,
+     "tik": 4,
+     "to": 0.32,
+     "egri_to": 1.08,
+     "beklenen": 13.5,
+     "fark": -9.5
     },
     {
      "bant": "10+",
-     "sayfa": 77,
-     "gos": 351,
-     "tik": 2,
-     "to": 0.57,
-     "egri_to": 0.67,
+     "sayfa": 73,
+     "gos": 403,
+     "tik": 0,
+     "to": 0.0,
+     "egri_to": 0.59,
      "beklenen": 2.4,
-     "fark": -0.4
+     "fark": -2.4
     }
    ]
   }
@@ -643,11 +643,20 @@
    "ada_onde_fark": -40,
    "sayfa_ada_tik_fark": -72,
    "ada_oran_fark": 0.0
+  },
+  {
+   "tarih": "2026-10-28",
+   "ada_pay_puan": -2.7,
+   "ada_tik_fark": -11,
+   "ortak_sorgu_fark": -272,
+   "ada_onde_fark": -42,
+   "sayfa_ada_tik_fark": -77,
+   "ada_oran_fark": -0.09
   }
  ],
  "dipnotlar": [
   "Beklenen tık eğrisi ada HARİÇ sayfalardan kurulu; o sayfaların sapmaları tanım gereği sıfıra toplanır. Bu yüzden tabloda yalnız ada satırı okunur — “site sayfaları beklenenin üstünde” denmez, öyle bir ölçüm yok.",
-  "Sayfa×sorgu dökümü Google'ın gizlediği (anonim) sorguları içermez; bu dönemde dökümde görünen pay ada tıklarında %9, site tıklarında %30. Beklenti tablosu görünen bölümü ölçer; tam kapsamlı ikinci bakış (sayfa düzeyi, kaba konum) ayrıca verilir.",
+  "Sayfa×sorgu dökümü Google'ın gizlediği (anonim) sorguları içermez; bu dönemde dökümde görünen pay ada tıklarında %6, site tıklarında %28. Beklenti tablosu görünen bölümü ölçer; tam kapsamlı ikinci bakış (sayfa düzeyi, kaba konum) ayrıca verilir.",
   "Konum bandı satırın 28 günlük ORTALAMA konumundan; 3,2 ortalama, 1 ile 6 arasında dağılmış günlerin ortalaması olabilir. Bandlar büyüklük sırası için güvenilirdir, ondalığı için değil.",
   "Aynı sorguda iki sayfamız da çıkınca ikisi de gösterim sayar; ada payı bu çift sayımın ta kendisi, bir hata değil."
  ]

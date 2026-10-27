@@ -1,5 +1,5 @@
 {
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-28",
  "rakamlar": [
   {
    "k": "ilk3_pay",
@@ -14,7 +14,24 @@
     "ilk3": 379,
     "yansiz_tahmin": 69.4
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 0.0,
+    "onceki": 74.5,
+    "son": 74.5,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "puan",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "ilk3_pay"
+    ],
+    "not": null
+   }
   },
   {
    "k": "dogru_sayfa_pay",
@@ -70,49 +87,100 @@
      "hukum": "ust_sinir"
     },
     "yas_hukmu": "ust_sinir",
-    "guncelleme": "2026-10-20",
+    "guncelleme": "2026-10-28",
     "yansiz_tahmin": 86.5
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 0.0,
+    "onceki": 91.8,
+    "son": 91.8,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "puan",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "dogru_sayfa_pay"
+    ],
+    "not": null
+   }
   },
   {
    "k": "gsc_eryaman_tik",
    "baslik": "Google′dan gelen tık (Eryaman)",
-   "deger": 933,
+   "deger": 887,
    "birim": "tık",
-   "gosterim": "933",
-   "ne_demek": "Son 28 günde (21.09–18.10) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 56.362 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
+   "gosterim": "887",
+   "ne_demek": "Son 28 günde (28.09–25.10) Google aramasından sitede KALAN Eryaman sayfalarına gelen tık; 54.007 gösterim. Siteden kaldırılan Yenimahalle sayfaları bu rakama dahil değil.",
    "kaynak": "sonuc-ozeti.json (ayrim.eryaman.simdi)",
    "ayrinti": {
-    "gos": 56362,
+    "gos": 54007,
     "donem": {
-     "bas": "2026-09-21",
-     "bit": "2026-10-18",
+     "bas": "2026-09-28",
+     "bit": "2026-10-25",
      "gun": 28
     },
-    "uretim": "2026-10-20",
-    "toplam_tik": 998
+    "uretim": "2026-10-28",
+    "toplam_tik": 921
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": -46,
+    "onceki": 933,
+    "son": 887,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "tık",
+    "yon": "kötü",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "eryaman_tik_28"
+    ],
+    "not": null
+   }
   },
   {
    "k": "ga4_temas",
    "baslik": "Siteden gelen temas (ziyaret)",
-   "deger": 15,
+   "deger": 17,
    "birim": "ziyaret",
-   "gosterim": "15",
-   "ne_demek": "15 ziyaret (17 tık: 7 telefon, 10 WhatsApp). Son 28 günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: 0. (GA4; 1.086 oturum içinden.)",
+   "gosterim": "17",
+   "ne_demek": "17 ziyaret (20 tık: 9 telefon, 11 WhatsApp). Son 28 günde telefon ya da WhatsApp düğmesine basan ziyaret sayısı; aynı kişi bir ziyarette birkaç kez basabildiği için tık değil ziyaret sayılır. Form gönderimi: 0. (GA4; 1.054 oturum içinden.)",
    "kaynak": "tik-sonrasi.json (temas.temas_oturum)",
    "ayrinti": {
-    "temas_oturum": 15,
-    "tik": 17,
-    "telefon": 7,
-    "whatsapp": 10,
+    "temas_oturum": 17,
+    "tik": 20,
+    "telefon": 9,
+    "whatsapp": 11,
     "form": 0,
-    "oturum": 1086,
-    "guncelleme": "2026-10-20"
+    "oturum": 1054,
+    "guncelleme": "2026-10-28"
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 2,
+    "onceki": 15,
+    "son": 17,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "ziyaret",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "temas_oturum_28"
+    ],
+    "not": "telefon ya da WhatsApp düğmesine basan ziyaret (yalnız canlı alan adı); form gönderimi ayrı sayılır; gürültü sınaması yapılamadı (haftalık dilim yok ya da kıyas tam 7 gün değil); yön basılmadı"
+   }
   },
   {
    "k": "hedef_kutuda",
@@ -128,9 +196,26 @@
     "kutu_var_biz_yok": 10,
     "organik_ilk3": 4,
     "organik_birinci": 1,
-    "guncelleme": "2026-10-20"
+    "guncelleme": "2026-10-28"
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 0,
+    "onceki": 6,
+    "son": 6,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "sorgu",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "hedef_kutuda"
+    ],
+    "not": null
+   }
   },
   {
    "k": "damla_kalan",
@@ -148,55 +233,39 @@
     "bitmis": 77,
     "toplam": 77
    },
-   "fark_7g": null
+   "fark_7g": {
+    "deger": 0,
+    "onceki": 0,
+    "son": 0,
+    "kiyas_tarihi": "2026-10-20",
+    "gun": 8,
+    "birim": "sayfa",
+    "yon": "nötr",
+    "olcum_yontemi_degisti": false,
+    "rejim_nedeni": [],
+    "neden_kisa": null,
+    "gurultu": null,
+    "onceki_karnede_basilan": null,
+    "seri": [
+     "damla_dizin_disi"
+    ],
+    "not": null
+   }
   }
  ],
- "bu_hafta_yapilan": [
-  {
-   "tarih": "20.10",
-   "iso": "2026-10-20",
-   "baslik_sayisi": 4,
-   "basliklar": [
-    "(18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30)",
-    "(19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi",
-    "(21:00–21:45) — KEOS teyidi, karne v33, KC Göksupark alt adı (PR #122)",
-    "(22:00–23:45) — KAPSAM TURU 2. DİLİM: 4 yeni site (PR #123, 9d5defa0), Çağ Life Susuz→Göksu, iki inceleme turu"
-   ],
-   "metin": "20.10 — (18:15–18:40) — GSC 4. gün + çekirdek tur: HARİTA KUTUSUNDAN DÜŞÜŞ GÖZLEMİ (saat 18:30) · (19:00–20:30) — KAPSAM TURU: 12 yeni site yayında (PR #121), Atakent parsel düzeltmesi · (21:00–21:45) — KEOS teyidi, karne v33, KC Göksupark alt adı (PR #122) (+1 başlık daha)"
-  },
-  {
-   "tarih": "15.10",
-   "iso": "2026-10-15",
-   "baslik_sayisi": 2,
-   "basliklar": [
-    "(00:54–01:09) — Başlık deneyi 2 yeniden tarama 3. gün: 11/11 kabul, 11/11 dakikalar içinde tarandı",
-    "(01:20) — uule sınaması: 60 sn aralıkla üç nokta, kutular FARKLI çıktı"
-   ],
-   "metin": "15.10 — (00:54–01:09) — Başlık deneyi 2 yeniden tarama 3. gün: 11/11 kabul, 11/11 dakikalar içinde tarandı · (01:20) — uule sınaması: 60 sn aralıkla üç nokta, kutular FARKLI çıktı"
-  },
-  {
-   "tarih": "14.10",
-   "iso": "2026-10-14",
-   "baslik_sayisi": 2,
-   "basliklar": [
-    "(00:40–00:50) — haftalık \"emlakçı\" endeksi, 1. tur: uule ÜÇ SORGUDAN SONRA TUTMADI",
-    "(00:50–01:00) — gerçek-href kuyruğu bitti: 5 ada + 21 Yeşilova/Yavuz Selim (deney-0410)"
-   ],
-   "metin": "14.10 — (00:40–00:50) — haftalık \"emlakçı\" endeksi, 1. tur: uule ÜÇ SORGUDAN SONRA TUTMADI · (00:50–01:00) — gerçek-href kuyruğu bitti: 5 ada + 21 Yeşilova/Yavuz Selim (deney-0410)"
-  }
- ],
+ "bu_hafta_yapilan": [],
  "bu_hafta_yapilan_kurali": "PROTOKOL-gece.md'nin son 7 gündeki tarihli bölüm başlıkları; gün başına bir madde, en yeni 3 gün.",
  "bu_hafta_beklenen": [
   {
    "tarih": null,
    "iso": null,
-   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 998 tıkın %7 kadarı (69) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 1.918 gösterim / 23 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (933 tık).",
+   "metin": "Search Console′un toplam tık çizgisi İNECEK, panik yok: son 28 gündeki 921 tıkın %4 kadarı (37) artık sitede olmayan Yenimahalle sayfalarından geldi; kapatılan genel yazılar da 1.831 gösterim / 23 tık taşıyordu. İkisi eriyecek; ölçüt Eryaman satırı (887 tık).",
    "kaynak": "sonuc-ozeti.json (ayrim) + sayfa-turu-verimi.json (blog)",
    "ayrinti": {
-    "yenimahalle_tik": 69,
-    "toplam_tik": 998,
-    "pay": 7,
-    "yazi_gos": 1918,
+    "yenimahalle_tik": 37,
+    "toplam_tik": 921,
+    "pay": 4,
+    "yazi_gos": 1831,
     "yazi_tik": 23
    }
   }
@@ -204,10 +273,10 @@
  "gecmis": {
   "dosya": "karne-gecmis-ozet.json",
   "sahip": "anlik-goruntu-uret.py",
-  "kayit": 51,
-  "kiyas_tarihi": null
+  "kayit": 52,
+  "kiyas_tarihi": "2026-10-20"
  },
  "uyarilar": [
-  "7 gün önceki değer seride yok, fark basılmadı: Site sorgularında ilk 3, İlk 3 içinde doğru sayfa, Google′dan gelen tık (Eryaman), Siteden gelen temas (ziyaret), Hedef sorgularda harita kutusu, Dizin kuyruğu: Google′da olmayan sayfa — seri 2026-08-21 tarihinden beri birikiyor."
+  "PROTOKOL-gece.md içinde son 7 güne ait tarihli başlık yok."
  ]
 }

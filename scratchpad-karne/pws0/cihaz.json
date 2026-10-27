@@ -1,142 +1,142 @@
 {
- "guncelleme": "2026-10-20",
+ "guncelleme": "2026-10-28",
  "kaynak": "GSC Search Analytics API, mülk düzeyi, boyut=device (gsc-q.mjs)",
- "son_veri_gunu": "2026-10-18",
+ "son_veri_gunu": "2026-10-25",
  "gun": 28,
  "pencere": {
-  "bas": "2026-09-21",
-  "bit": "2026-10-18",
+  "bas": "2026-09-28",
+  "bit": "2026-10-25",
   "gun": 28
  },
  "onceki_pencere": {
-  "bas": "2026-08-24",
-  "bit": "2026-09-20",
+  "bas": "2026-08-31",
+  "bit": "2026-09-27",
   "gun": 28
  },
  "donem": {
-  "bas": "2026-09-21",
-  "bit": "2026-10-18"
+  "bas": "2026-09-28",
+  "bit": "2026-10-25"
  },
  "onceki_donem": {
-  "bas": "2026-08-24",
-  "bit": "2026-09-20",
+  "bas": "2026-08-31",
+  "bit": "2026-09-27",
   "rampa": false
  },
  "cihazlar": [
   {
    "k": "MOBILE",
    "ad": "Telefon",
-   "gos": 47076,
-   "tik": 808,
-   "to": 1.72,
-   "poz": 7.6,
-   "gos_pay": 82.9,
-   "tik_pay": 81.0,
+   "gos": 44127,
+   "tik": 731,
+   "to": 1.66,
+   "poz": 7.62,
+   "gos_pay": 82.5,
+   "tik_pay": 79.4,
    "onceki": {
-    "gos": 72833,
-    "tik": 1416,
-    "to": 1.94,
-    "poz": 8.07
+    "gos": 65690,
+    "tik": 1246,
+    "to": 1.9,
+    "poz": 7.98
    },
-   "onceki_gos_pay": 84.1,
+   "onceki_gos_pay": 84.4,
    "fark": {
-    "gos_yuzde": -35.4,
-    "tik_yuzde": -42.9,
-    "to_puan": -0.22,
-    "poz": -0.47
+    "gos_yuzde": -32.8,
+    "tik_yuzde": -41.3,
+    "to_puan": -0.24,
+    "poz": -0.36
    }
   },
   {
    "k": "DESKTOP",
    "ad": "Masaüstü",
-   "gos": 9413,
-   "tik": 185,
-   "to": 1.97,
-   "poz": 6.83,
-   "gos_pay": 16.6,
-   "tik_pay": 18.5,
+   "gos": 9070,
+   "tik": 184,
+   "to": 2.03,
+   "poz": 7.01,
+   "gos_pay": 17.0,
+   "tik_pay": 20.0,
    "onceki": {
-    "gos": 13245,
-    "tik": 298,
-    "to": 2.25,
-    "poz": 6.88
+    "gos": 11774,
+    "tik": 260,
+    "to": 2.21,
+    "poz": 7.04
    },
-   "onceki_gos_pay": 15.3,
+   "onceki_gos_pay": 15.1,
    "fark": {
-    "gos_yuzde": -28.9,
-    "tik_yuzde": -37.9,
-    "to_puan": -0.28,
-    "poz": -0.05
+    "gos_yuzde": -23.0,
+    "tik_yuzde": -29.2,
+    "to_puan": -0.18,
+    "poz": -0.03
    }
   },
   {
    "k": "TABLET",
    "ad": "Tablet",
-   "gos": 276,
-   "tik": 5,
-   "to": 1.81,
-   "poz": 7.16,
+   "gos": 282,
+   "tik": 6,
+   "to": 2.13,
+   "poz": 7.18,
    "gos_pay": 0.5,
-   "tik_pay": 0.5,
+   "tik_pay": 0.7,
    "onceki": {
-    "gos": 484,
-    "tik": 7,
-    "to": 1.45,
-    "poz": 7.23
+    "gos": 411,
+    "tik": 8,
+    "to": 1.95,
+    "poz": 7.25
    },
-   "onceki_gos_pay": 0.6,
+   "onceki_gos_pay": 0.5,
    "fark": {
-    "gos_yuzde": -43.0,
-    "tik_yuzde": -28.6,
-    "to_puan": 0.36,
+    "gos_yuzde": -31.4,
+    "tik_yuzde": -25.0,
+    "to_puan": 0.18,
     "poz": -0.07
    }
   }
  ],
  "toplam": {
-  "gos": 56765,
-  "tik": 998,
-  "to": 1.76,
-  "poz": 7.47
+  "gos": 53479,
+  "tik": 921,
+  "to": 1.72,
+  "poz": 7.51
  },
  "onceki_toplam": {
-  "gos": 86562,
-  "tik": 1721,
-  "to": 1.99,
-  "poz": 7.88
+  "gos": 77875,
+  "tik": 1514,
+  "to": 1.94,
+  "poz": 7.83
  },
  "toplam_fark": {
-  "gos_yuzde": -34.4,
-  "tik_yuzde": -42.0,
-  "to_puan": -0.23,
-  "poz": -0.41
+  "gos_yuzde": -31.3,
+  "tik_yuzde": -39.2,
+  "to_puan": -0.22,
+  "poz": -0.32
  },
  "mobil_pay": {
-  "gos": 82.9,
-  "tik": 81.0,
-  "onceki_gos": 84.1,
+  "gos": 82.5,
+  "tik": 79.4,
+  "onceki_gos": 84.4,
   "onceki_tik": 82.3
  },
  "kapsam": {
-  "satir": 1022,
+  "satir": 921,
   "kesik": false,
-  "gos": 25700,
-  "tik": 303,
+  "gos": 23879,
+  "tik": 255,
   "gos_pay": 45.0,
-  "tik_pay": 30.0
+  "tik_pay": 28.0
  },
  "yenimahalle": {
-  "kapsam_ici_gos": 1965,
-  "kapsam_ici_tik": 25,
-  "kapsam_ici_gos_pay": 7.6,
-  "kapsam_ici_tik_pay": 8.3,
-  "eryaman_gos": 23735,
-  "eryaman_tik": 278,
-  "eryaman_telefon_gos_pay": 85.1,
-  "eryaman_telefon_tik_pay": 82.7,
-  "eryaman_telefon_to": 1.14,
-  "eryaman_masaustu_to": 1.37,
-  "yenimahalle_telefon_gos_pay": 86.6
+  "kapsam_ici_gos": 1198,
+  "kapsam_ici_tik": 10,
+  "kapsam_ici_gos_pay": 5.0,
+  "kapsam_ici_tik_pay": 3.9,
+  "eryaman_gos": 22681,
+  "eryaman_tik": 245,
+  "eryaman_telefon_gos_pay": 84.8,
+  "eryaman_telefon_tik_pay": 78.4,
+  "eryaman_telefon_to": 1.0,
+  "eryaman_masaustu_to": 1.58,
+  "yenimahalle_telefon_gos_pay": 88.5
  },
  "baslik_gozlem": {
   "degisiklik": "2026-08-08",
@@ -233,9 +233,9 @@
   ]
  },
  "uyarilar": [
-  "Mülk düzeyi, sayfa süzgeci yok: sayfa×cihaz çekimi bu dönemde gösterimin %45 kadarını kapsıyor (1.022 satır), bu tablo tam sayıma yakın.",
-  "27.08'de kaldırılan Yenimahalle sayfalarının kalıntı gösterimi toplamın içinde. Sayfa süzgeçli alt kümede Yenimahalle payı %7,6; Yenimahalle HARİÇ telefon payı %85,1 (tam sayımda %82,9). Eryaman'a özgü tam sayım ölçülemez, alt küme yön gösterir.",
-  "GSC verisi 18.10 gününe kadar; son 28 gün 21.09–18.10, önceki 28 gün 24.08–20.09.",
+  "Mülk düzeyi, sayfa süzgeci yok: sayfa×cihaz çekimi bu dönemde gösterimin %45 kadarını kapsıyor (921 satır), bu tablo tam sayıma yakın.",
+  "27.08'de kaldırılan Yenimahalle sayfalarının kalıntı gösterimi toplamın içinde. Sayfa süzgeçli alt kümede Yenimahalle payı %5,0; Yenimahalle HARİÇ telefon payı %84,8 (tam sayımda %82,5). Eryaman'a özgü tam sayım ölçülemez, alt küme yön gösterir.",
+  "GSC verisi 25.10 gününe kadar; son 28 gün 28.09–25.10, önceki 28 gün 31.08–27.09.",
   "Konum, gösterim ağırlıklı ortalama; cihazlar arası konum farkı SERP'in cihaza göre farklı dizilmesinden de gelir (harita kutusu, görsel şerit)."
  ]
 }
