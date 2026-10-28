@@ -5,7 +5,6 @@ import Link from "next/link";
 import {
   getAllBlogPosts,
   getAllMahalleler,
-  getSitelerByMahalle,
   getYayindaMahalleler,
 } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
@@ -113,16 +112,7 @@ export default function HomePage() {
   // BlogCard istemci ağacına da giriyor; özetteki yer tutucular burada açılır.
   const sonYazilar = getAllBlogPosts().slice(0, 3).map(yaziTokenlariniAc);
 
-  const siteGruplari = getYayindaMahalleler()
-    .map((mahalle) => ({ mahalle, siteler: getSitelerByMahalle(mahalle.slug) }))
-    .filter((grup) => grup.siteler.length > 0);
-  const toplamSite = siteGruplari.reduce((sum, grup) => sum + grup.siteler.length, 0);
-  const mahalleSayisi = siteGruplari.length;
-  // Tapu (TKGM) sınırıyla haritalanmış site sayısı — ofisin somut farkı.
-  const haritaliSite = siteGruplari.reduce(
-    (sum, grup) => sum + grup.siteler.filter((site) => site.sinirGeoJSON).length,
-    0
-  );
+  const mahalleSayisi = getYayindaMahalleler().length;
 
   return (
     <div>
@@ -233,13 +223,9 @@ export default function HomePage() {
                 Sitenizi mi merak ediyorsunuz?
               </p>
               <HeroSearch />
-              {/* "{toplamSite}+ site/rezidans" 2026-08-08'e kadar düz metindi:
-                  iç link denetimi ana sayfanın <main> gövdesinden /siteler
-                  arşivine TEK bir link bile çıkmadığını gösterdi (yalnız menü
-                  ve footer). 730 sayfalık en büyük varlığımıza giden yol. */}
               <p className="mt-3 text-xs text-white/55">
                 <Link href="/siteler" className="font-semibold text-gold hover:underline">
-                  {toplamSite}+ site/rezidans
+                  Site rehberlerini inceleyin
                 </Link>{" "}
                 · {mahalleSayisi} mahalle arasından bulun · veya{" "}
                 <Link href="/mahalleler" className="font-semibold text-gold hover:underline">
@@ -251,17 +237,17 @@ export default function HomePage() {
 
           <dl className="animate-fade-up mt-12 flex flex-wrap gap-x-10 gap-y-5 border-t border-white/10 pt-7 [animation-delay:0.42s]">
             <div>
-              <dd className="text-2xl font-semibold tabular-nums text-gold">{toplamSite}+</dd>
-              <dt className="mt-0.5 text-xs font-medium text-white/60">Site &amp; Rezidans</dt>
+              <dd className="text-2xl font-semibold text-gold">Eryaman</dd>
+              <dt className="mt-0.5 text-xs font-medium text-white/60">Site ve Rezidans Rehberleri</dt>
             </div>
             <div>
               <dd className="text-2xl font-semibold tabular-nums text-gold">{mahalleSayisi}</dd>
               <dt className="mt-0.5 text-xs font-medium text-white/60">Mahalle Rehberi</dt>
             </div>
             <div>
-              <dd className="text-2xl font-semibold tabular-nums text-gold">{haritaliSite}+</dd>
+              <dd className="text-2xl font-semibold text-gold">Haritalı</dd>
               <dt className="mt-0.5 text-xs font-medium text-white/60">
-                Tapu Sınırıyla Haritalı Site
+                Tapu Sınırlarıyla Site Bilgileri
               </dt>
             </div>
           </dl>
@@ -508,10 +494,10 @@ export default function HomePage() {
               /* Soru kalıbında yalın "emlakçı" bilinçli (2026-08-08): ana sayfa
                  SSS'sinin hiçbir sorusunda kelime geçmiyordu; cevap aynı zamanda
                  adressiz/belgesiz vitrin sitelere karşı örtük konumlanma —
-                 yorum SAYISI yazılmaz (kural), 5,0 puan serbest. */
+                 yorum puanı ve sayısı gösterilmez. */
               soru: "Eryaman'da güvenilir emlakçı nasıl bulunur?",
               cevap:
-                "Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir ofis adresi ve işletme profili. Türkiye'de emlak aracılığı yetki belgesine bağlıdır; bizim belge numaramız 0603771. Ofisimiz Tunahan Mahallesi'nde 4. Etap Çarşı'da — arayıp randevu alabileceğiniz, kapısından girebileceğiniz bir yer. Google'daki işletme profilimiz 5,0 puanlıdır. Adres ve belge bilgisi paylaşmayan emlak sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.",
+                "Üç şeyi kontrol etmenizi öneririz: Taşınmaz Ticareti Yetki Belgesi, gerçek bir ofis adresi ve işletme profili. Türkiye'de emlak aracılığı yetki belgesine bağlıdır; bizim belge numaramız 0603771. Ofisimiz Tunahan Mahallesi'nde 4. Etap Çarşı'da — arayıp randevu alabileceğiniz, kapısından girebileceğiniz bir yer. Adres ve belge bilgisi paylaşmayan emlak sayfalarına ev bilgilerinizi bırakmadan önce bu üç kontrolü yapın.",
             },
             {
               soru: "Şirin Gayrimenkul hangi bölgelerde hizmet veriyor?",

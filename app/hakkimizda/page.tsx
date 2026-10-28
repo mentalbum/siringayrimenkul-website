@@ -1,7 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import Image from "next/image";
-import { getAllMahalleler, getSitelerByMahalle } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef, ozgunPersonJsonLd } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -47,7 +46,7 @@ const adimlar = [
     icon: BuildingIcon,
     baslik: "Güncel İlanlar sahibinden.com'da",
     aciklama:
-      "Sitemiz bir ilan panosu değil, bölge rehberidir. Güncel satılık/kiralık ilanlarımızı sahibinden.com üzerindeki mağazamızdan takip edebilirsiniz.",
+      "Güncel satılık ve kiralık ilanlarımızı sahibinden.com üzerindeki mağazamızdan takip edebilirsiniz.",
   },
   {
     icon: CubeIcon,
@@ -68,15 +67,6 @@ const aboutJsonLd = {
 };
 
 export default function HakkimizdaPage() {
-  // Deneyim iddiası yerine işin kendisi: rehberdeki gerçek site ve tapu
-  // sınırı sayıları — "bölgeyi tanıyoruz" lafının kanıtı.
-  const gruplar = getAllMahalleler().map((m) => getSitelerByMahalle(m.slug));
-  const toplamSite = gruplar.reduce((sum, siteler) => sum + siteler.length, 0);
-  const haritaliSite = gruplar.reduce(
-    (sum, siteler) => sum + siteler.filter((site) => site.sinirGeoJSON).length,
-    0
-  );
-
   return (
     <div className="mx-auto max-w-4xl px-4 py-12 sm:px-6">
       <script
@@ -98,10 +88,9 @@ export default function HakkimizdaPage() {
           takip ediyoruz.
         </p>
         <p className="mt-4 text-base leading-relaxed text-body">
-          Bu sitede ilan yayınlamıyoruz — güncel satılık ve kiralık ilanlarımıza sahibinden.com
-          üzerindeki mağazamızdan ulaşabilirsiniz. Burada bulacağınız şey, mahalle ve site bazlı
-          rehber içerikler; evinizi satmak ya da kiraya vermek istiyorsanız da doğrudan bize
-          ulaşabilirsiniz.
+          Mahalle ve site rehberlerimizde evinizin bulunduğu yerleşimi inceleyebilir,
+          satış veya kiralama süreci için doğrudan bizimle görüşebilirsiniz. Güncel satılık ve
+          kiralık ilanlarımız sahibinden.com mağazamızda yer alır.
         </p>
         <p className="mt-4 text-xs text-muted">
           Taşınmaz Ticareti Yetki Belgesi No: {YETKI_BELGESI_NO} ·{" "}
@@ -142,8 +131,7 @@ export default function HakkimizdaPage() {
       <section className="mt-12">
         <h2 className="text-xl">Ekibimiz</h2>
         <div className="mt-5 space-y-5">
-          {/* Danışman profili — E-E-A-T: içeriğin arkasındaki kişi.
-              Fotoğraf bilinçli yok; kanıt işin kendisi (site + tapu sayıları). */}
+          {/* Danışman profili: içerikten ve ilk görüşmeden sorumlu kişi. */}
           <div id="ozgun-sirin" className="rounded-2xl border border-gold/40 bg-surface p-6">
             <div className="flex flex-wrap items-start gap-5">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-navy font-heading text-xl font-semibold text-gold">
@@ -153,15 +141,10 @@ export default function HakkimizdaPage() {
                 <p className="text-lg font-semibold text-navy">Özgün Şirin</p>
                 <p className="text-sm text-muted">Emlak Danışmanı — Eryaman</p>
                 <p className="mt-3 text-sm leading-relaxed text-body">
-                  Değerleme talepleriniz ve site/mahalle sorularınız aracıya değil, doğrudan
-                  Özgün Şirin&apos;e ulaşır. Bu rehberdeki {toplamSite} site kaydı ve{" "}
-                  {haritaliSite}
-                  {/* {" "} ŞART: &apos; içeren çok satırlı metnin baştaki boşluğunu derleyici
-                      düşürüyor — canlıda "520sitenin" basılıyordu (06.10 ölçümü). */}
-                  {" "}
-                  sitenin gerçek tapu (TKGM) sınırı, mahalle mahalle yürüttüğü
-                  saha çalışmasının ürünü — Eryaman&apos;ı tabeladan değil, ada ve parsel
-                  düzeyinde tanır.
+                  Değerleme talepleriniz ve site/mahalle sorularınız doğrudan
+                  Özgün Şirin&apos;e ulaşır. Satış ve kiralama görüşmelerinde evinizin
+                  bulunduğu siteyi, dairenizin özelliklerini ve güncel emsalleri birlikte
+                  değerlendirir; izlenecek adımları netleştirirsiniz.
                 </p>
                 <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-3">
                   <TrackedCtaLink

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getAllMahalleler, getYayindaMahalleler, getSitelerByMahalle } from "@/lib/content";
+import { getAllMahalleler, getSitelerByMahalle } from "@/lib/content";
 import { siteConfig } from "@/lib/site-config";
 import { organizationRef } from "@/lib/structured-data";
 import { Breadcrumbs } from "@/components/ui/breadcrumbs";
@@ -55,15 +55,10 @@ export default function EvDegerlemePage() {
     }))
   );
 
-  const toplamSite = getYayindaMahalleler().reduce(
-    (sum, mahalle) => sum + getSitelerByMahalle(mahalle.slug).length,
-    0
-  );
-
   const serviceJsonLd = {
     "@context": "https://schema.org",
     "@type": "Service",
-    name: "Ev Değerleme ve Satış Danışmanlığı",
+    name: "Ev Değerleme, Satış ve Kiralama Danışmanlığı",
     serviceType: "Gayrimenkul değerleme ve satış/kiralama danışmanlığı",
     description:
       "Eryaman bölgesinde satış veya kiralama öncesi fiyat analizi — mahalle ve site bazlı emsal karşılaştırması ve uçtan uca süreç yönetimiyle.",
@@ -89,9 +84,7 @@ export default function EvDegerlemePage() {
         <p className="mt-4 text-base leading-relaxed text-body">
           &quot;Evim ne kadar eder?&quot; sorusunun cevabı, ilan sitelerindeki fiyatlardan değil;
           mahallenizi, sitenizi ve güncel emsalleri yakından takip eden yerel bir gözden geçer.
-          Eryaman&apos;ın 11 mahallesindeki{" "}
-          {toplamSite}+ site/rezidansı tek tek
-          tanıyoruz. Değerlemeyi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için
+          Eryaman&apos;ın 11 mahallesinde çalışıyoruz. Değerlemeyi, evini satmayı veya kiraya vermeyi düşünen ev sahipleri için
           yapıyoruz: görüşmenin sonunda elinizde gerçekçi bir fiyat aralığıyla birlikte satış ya
           da kiralama yol haritanız da olur.
         </p>
@@ -107,7 +100,7 @@ export default function EvDegerlemePage() {
       </header>
 
       <section className="mt-12 grid gap-10 lg:grid-cols-[1fr_1.2fr]">
-        <Reveal className="space-y-5">
+        <Reveal className="order-2 space-y-5 lg:order-1">
           <h2 className="text-xl">Neden Şirin Gayrimenkul?</h2>
           <div className="flex items-start gap-3 rounded-2xl border border-border bg-surface p-5">
             <MapPinIcon className="h-5 w-5 shrink-0 text-gold-dark" />
@@ -146,19 +139,18 @@ export default function EvDegerlemePage() {
           </p>
         </Reveal>
 
-        <Reveal delay={90}>
+        <Reveal delay={90} className="order-1 lg:order-2">
         <div id="degerleme-formu" className="h-full scroll-mt-24 rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="text-xl">Değerleme Talebi Oluşturun</h2>
           <p className="mt-1.5 text-sm text-muted">
-            Bilgileriniz WhatsApp üzerinden bize iletilir; genellikle aynı gün ön
-            değerlendirmeyle dönüş yaparız.
+            Satış veya kiralama seçiminizi yapıp WhatsApp&apos;ta görüşmeye başlayın.
+            Daire ayrıntılarını görüşmede paylaşabilirsiniz.
           </p>
-          {/* Karar anındaki güven satırı — yorum SAYISI bilinçli yok (kural). */}
           <p className="mt-2 text-xs text-muted">
-            Taşınmaz Ticareti Yetki Belgesi No: 0603771 · 5,0 puanlı Google profili
+            Danışmanınız: Özgün Şirin · Taşınmaz Ticareti Yetki Belgesi No: 0603771
           </p>
           <div className="mt-6">
-            <ContactForm mahalleler={mahalleler} siteler={siteler} />
+            <ContactForm mahalleler={mahalleler} siteler={siteler} yalnizEvSahibi />
           </div>
         </div>
         </Reveal>
@@ -225,11 +217,6 @@ export default function EvDegerlemePage() {
             soru: "Sonucu ne kadar sürede öğrenirim?",
             cevap:
               "Temel bilgileri paylaştıktan sonra genellikle aynı gün içinde ön değerlendirme yapıyoruz. Yerinde inceleme gerekiyorsa randevuya göre birkaç gün içinde net fiyat aralığını iletiyoruz.",
-          },
-          {
-            soru: "Eryaman dışındaki evler için de değerleme yapıyor musunuz?",
-            cevap:
-              "Odak bölgemiz Eryaman'ın 11 mahallesidir. Bölge dışındaki talepler için yine de bize ulaşabilirsiniz; yardımcı olamayacaksak doğru yönlendirmeyi yaparız.",
           },
         ]}
       />

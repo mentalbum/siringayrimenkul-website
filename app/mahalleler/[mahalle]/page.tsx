@@ -554,8 +554,7 @@ export default async function MahallePage({ params }: Props) {
               sayfası "rezidansıntapu" basıyordu (08.08 denetimi #3, hiç kapanmamıştı). */}
           {" "}
           tapu yapısını, bloklarını ve emsallerini tek tek arşivliyor; değerlemeyi ilan
-          fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. Google&apos;da 5,0
-          puanlı işletme profilimiz ve 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
+          fiyatlarından değil gerçekleşen satış ve kiralamalardan okuyoruz. 0603771 no&apos;lu Taşınmaz Ticareti Yetki Belgemizle
           çalışıyoruz. {bulunmaHali(kisaIsim)} eviniz varsa{" "}
           <Link
             href={`/ev-degerleme?mahalle=${mahalle.slug}`}

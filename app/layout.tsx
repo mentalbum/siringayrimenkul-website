@@ -226,10 +226,8 @@ export default async function RootLayout({
      * lib/google-reviews.ts aynı kuralı Review düğümü için zaten doğru
      * uyguluyordu; bu, o kuralın AggregateRating'de kalmış açığıydı.
      *
-     * GÖRÜNÜR yorum kutusu KALIYOR (components/ui/review-badge.tsx kendi
-     * verisini ayrıca çekiyor): kuralın yasakladığı şey işaretleme, ekranda
-     * gösterim değil. Harita kutusundaki 5,0 puan da GBP'den gelir,
-     * bu değişiklikten etkilenmez. */
+     * 28.10 içerik kararı: görünür puan ve yıldız da kaldırıldı.
+     * ReviewBadge yalnız işletme profilindeki yorumlara bağlantı verir. */
   };
 
   return (
