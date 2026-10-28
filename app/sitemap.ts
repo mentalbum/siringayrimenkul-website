@@ -38,6 +38,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
    * anasayfa hiç çıkmıyordu). */
   const g = (tarih: string) => new Date(tarih);
   const statikSayfalar: MetadataRoute.Sitemap = [
+    // 28.10: ana sayfa/hakkımızda sayı-puan temizliği, değerleme/iletişim formu sadeleşmesi.
     // 27.08: Yenimahalle grubu (Ata/Susuz/Cumhuriyet) siteden kaldırıldı —
     //        footer KÜRESEL şablonundan bölüm silindi, ana sayfa/mahalleler/
     //        ev-satmak/ev-kiraya/ev-degerleme metinleri değişti; tüm sabit
@@ -51,7 +52,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 04.10: "500'den fazla site" sayı kalıbı siteden çıktı (meta, SSS, gövde —
     //        8 statik sayfa); footer da değişti ama o küresel boilerplate, taban
     //        ilerletmez. Uzun statik description'lar ≤155'e çekildi.
-    { url: `${baseUrl}/`, lastModified: g("2026-10-08"), changeFrequency: "weekly", priority: 1 },
+    { url: `${baseUrl}/`, lastModified: g("2026-10-28"), changeFrequency: "weekly", priority: 1 },
     // 08.08: etap hub'ına giden bölüm eklendi.
     // 15.08(b): 'nereye bağlı' cevabı Özgün kararıyla geri söküldü (bilgi trafiği istenmiyor).
     // 17.08: "Eryaman; Etimesgut ilçesine bağlı…" giriş cümlesi söküldü —
@@ -81,7 +82,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
      * tamamı değişti. AGENTS.md kuralı gereği elle güncellendi. */
     // 06.10: meta description 189 → ≤155 (SERP'te görünen metin). Aynı gün: kira/tapu/
     //        komisyon hesaplayıcıları, /sozluk ve /iletisim açıklamaları da ≤155'e çekildi.
-    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-07"), changeFrequency: "monthly", priority: 0.8 },
+    { url: `${baseUrl}/ev-degerleme`, lastModified: g("2026-10-28"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-satmak`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     { url: `${baseUrl}/eryamanda-ev-kiraya-vermek`, lastModified: g("2026-10-04"), changeFrequency: "monthly", priority: 0.8 },
     // 21.10: /araclar, kira-artisi/tapu-harci/emlak-komisyonu hesaplayıcıları noindex oldu
@@ -95,10 +96,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/gizlilik`, lastModified: g("2026-10-06"), changeFrequency: "yearly", priority: 0.3 },
     { url: `${baseUrl}/blog`, lastModified: icerikKlasoruTarihi("blog"), changeFrequency: "weekly", priority: 0.7 },
     // 07.10: yetki belgesi numarası Bakanlığın TTBS sorgu sayfasına bağlandı (görünen metin).
-    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-07"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/hakkimizda`, lastModified: g("2026-10-28"), changeFrequency: "yearly", priority: 0.4 },
     // 14.10: <title> `absolute` oldu — kök şablonun "| Şirin Gayrimenkul" eki düştü
     //        (72 → 62 karakter, SERP'te görünen metin). /hakkimizda değişmedi, eki duruyor.
-    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-14"), changeFrequency: "yearly", priority: 0.4 },
+    { url: `${baseUrl}/iletisim`, lastModified: g("2026-10-28"), changeFrequency: "yearly", priority: 0.4 },
   ];
 
   /* ŞABLON TABANLARI — bir sayfa ailesinin lastModified'ı, içerik dosyasının
@@ -177,7 +178,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // 06.10: "rezidansıntapu" bitişikliği giderildi — 11 mahalle sayfasının görünen
     //        tanıtım cümlesi değişti (derleyici, varlık içeren çok satırlı JSX
     //        metninin baştaki boşluğunu düşürüyor; 08.08 denetimi #3 açık kalmıştı).
-    mahalle: new Date("2026-10-06"),
+    // 28.10: görünür yorum puanı kaldırıldı; site sayfası tabanı değişmedi.
+    mahalle: new Date("2026-10-28"),
     // 11.08: 4. Etap'a yönetimin sitesinden (eryaman4.com) doğrulanmış tek-yönetim
     //        cümlesi girdi — özgün tanıtım cümlesi olmayan tek etaptı.
     // 09.08: başlık düzeni site şablonuyla hizalandı, marka eki kalktı (96→80);

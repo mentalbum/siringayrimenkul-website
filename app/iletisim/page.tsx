@@ -121,8 +121,8 @@ export default function IletisimPage() {
         <div className="rounded-2xl border border-border bg-surface p-6 sm:p-8">
           <h2 className="text-xl">Mesaj Gönderin</h2>
           <p className="mt-1.5 text-sm text-muted">
-            Ne kadar detay paylaşırsanız o kadar hızlı dönüş alırsınız. Form, mesajınızı WhatsApp
-            üzerinden iletir.
+            Talebinizi seçip WhatsApp&apos;ta devam edin. Dilerseniz mesajınıza
+            daire ve iletişim bilgilerinizi ekleyebilirsiniz.
           </p>
           <div className="mt-6">
             <ContactForm mahalleler={mahalleler} />

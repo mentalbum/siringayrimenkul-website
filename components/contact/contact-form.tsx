@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { useEffect, useMemo, useRef, useState, type FormEvent, type MouseEvent } from "react";
 import { sendGAEvent } from "@/lib/ga";
 import { siteConfig } from "@/lib/site-config";
 import { CheckBadgeIcon, WhatsAppIcon } from "@/components/ui/icons";
@@ -25,20 +25,38 @@ export interface FormSite {
 
 interface ContactFormProps {
   mahalleler: { slug: string; isim: string }[];
+  /** Değerleme akışı yalnız ev sahiplerine seslenir; genel iletişim korunur. */
+  yalnizEvSahibi?: boolean;
   /** Site-farkında değerleme: verilirse mahalleye göre site seçimi açılır ve
    * ?mahalle=&site= parametreleriyle önceden doldurulur. */
   siteler?: FormSite[];
 }
 
-export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
+export function ContactForm({ mahalleler, siteler, yalnizEvSahibi = false }: ContactFormProps) {
   const [isim, setIsim] = useState("");
   const [telefon, setTelefon] = useState("");
-  const [talepTuru, setTalepTuru] = useState<string>(talepTurleri[0]);
+  const [talepTuru, setTalepTuru] = useState("");
   const [mahalleSlug, setMahalleSlug] = useState("");
   const [siteSlug, setSiteSlug] = useState("");
   const [metrekare, setMetrekare] = useState("");
   const [odaSayisi, setOdaSayisi] = useState("");
   const [mesaj, setMesaj] = useState("");
+  const formRef = useRef<HTMLFormElement>(null);
+  const basladi = useRef(false);
+  const formKonumu = yalnizEvSahibi ? "degerleme" : "iletisim";
+
+  useEffect(() => {
+    const form = formRef.current;
+    if (!form || typeof IntersectionObserver === "undefined") return;
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        sendGAEvent("event", "contact_form_view", { form: formKonumu });
+        observer.disconnect();
+      }
+    });
+    observer.observe(form);
+    return () => observer.disconnect();
+  }, [formKonumu]);
   // WhatsApp herkeste yok — mobilde SMS ikinci bir kapı olsun. Sunucuda
   // bilinemez, mount sonrası açılır.
   const [mobil, setMobil] = useState(false);
@@ -63,6 +81,9 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
   useEffect(() => {
     const id = window.setTimeout(() => {
       const params = new URLSearchParams(window.location.search);
+      const niyet = params.get("niyet");
+      if (niyet === "satis") setTalepTuru(talepTurleri[0]);
+      if (niyet === "kiralama") setTalepTuru(talepTurleri[1]);
       const m = params.get("mahalle");
       const s = params.get("site");
       if (m && mahalleler.some((item) => item.slug === m)) {
@@ -85,7 +106,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
   function talepMetni() {
     const mahalleIsim = mahalleler.find((m) => m.slug === mahalleSlug)?.isim;
     return [
-      `Merhaba, ben ${isim}.`,
+      isim.trim() ? `Merhaba, ben ${isim.trim()}.` : "Merhaba,",
       "",
       `Talep: ${talepTuru}`,
       mahalleIsim ? `Mahalle: ${mahalleIsim}` : null,
@@ -94,15 +115,19 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
       odaSayisi ? `Oda Sayısı: ${odaSayisi}` : null,
       mesaj ? `Not: ${mesaj}` : null,
       "",
-      `Telefon: ${telefon}`,
+      telefon.trim() ? `Telefon: ${telefon.trim()}` : null,
     ]
       .filter((satir) => satir !== null)
       .join("\n");
   }
 
   function olay(kanal: string) {
+    // Geçmiş seri korunur; bu olay gerçek mesaj teslimi değil, uygulamaya geçiştir.
     sendGAEvent("event", "contact_form_submit", {
       kanal,
+      form: formKonumu,
+      asama: "uygulamaya_gecis",
+      niyet: talepTuru === talepTurleri[0] ? "satis" : talepTuru === talepTurleri[1] ? "kiralama" : "diger",
       mahalle: mahalleSlug || "(yok)",
       site: seciliSite?.slug ?? "(yok)",
     });
@@ -115,70 +140,66 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
     window.open(url, "_blank", "noopener,noreferrer");
   }
 
-  function handleSms() {
-    // Zorunlu alanlar tarayıcı doğrulamasından geçmiyor (submit değil) — elle bak.
-    if (!isim.trim() || !telefon.trim()) {
-      window.alert("SMS ile göndermek için ad soyad ve telefon alanlarını doldurun.");
-      return;
-    }
+  function handleSms(event: MouseEvent<HTMLButtonElement>) {
+    if (!event.currentTarget.form?.reportValidity()) return;
     olay("sms");
     // "?&body=" hem iOS hem Android'de çalışan ortak biçim.
     window.location.href = `sms:${siteConfig.phoneTel}?&body=${encodeURIComponent(talepMetni())}`;
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
-      <div>
-        <label htmlFor="talepTuru" className="text-sm font-medium text-navy">
-          Talebiniz
-        </label>
-        <select
-          id="talepTuru"
-          name="talepTuru"
-          required
-          value={talepTuru}
-          onChange={(event) => setTalepTuru(event.target.value)}
-          className="mt-1.5 w-full cursor-pointer rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-        >
-          {talepTurleri.map((tur) => (
-            <option key={tur} value={tur}>
-              {tur}
-            </option>
-          ))}
-        </select>
-      </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+    <form
+      ref={formRef}
+      onSubmit={handleSubmit}
+      onChange={() => {
+        if (basladi.current) return;
+        basladi.current = true;
+        sendGAEvent("event", "contact_form_start", { form: formKonumu });
+      }}
+      className="space-y-4"
+    >
+      {yalnizEvSahibi ? (
+        <fieldset>
+          <legend className="text-sm font-medium text-navy">Talebiniz</legend>
+          <div className="mt-2 grid gap-3 sm:grid-cols-2">
+            {talepTurleri.slice(0, 2).map((tur) => (
+              <label key={tur} className="flex min-h-12 cursor-pointer items-center gap-3 rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy has-checked:border-gold has-checked:bg-gold/10 focus-within:ring-2 focus-within:ring-gold/30">
+                <input
+                  type="radio"
+                  name="talepTuru"
+                  value={tur}
+                  checked={talepTuru === tur}
+                  onChange={(event) => setTalepTuru(event.target.value)}
+                  required
+                  className="h-4 w-4 shrink-0 accent-gold-dark"
+                />
+                {tur}
+              </label>
+            ))}
+          </div>
+        </fieldset>
+      ) : (
         <div>
-          <label htmlFor="isim" className="text-sm font-medium text-navy">
-            Ad Soyad
+          <label htmlFor="talepTuru" className="text-sm font-medium text-navy">
+            Talebiniz
           </label>
-          <input
-            id="isim"
-            name="isim"
-            type="text"
+          <select
+            id="talepTuru"
+            name="talepTuru"
             required
-            autoComplete="name"
-            value={isim}
-            onChange={(event) => setIsim(event.target.value)}
-            className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-          />
+            value={talepTuru}
+            onChange={(event) => setTalepTuru(event.target.value)}
+            className="mt-1.5 w-full cursor-pointer rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
+          >
+            <option value="" disabled>Talebinizi seçin</option>
+            {talepTurleri.map((tur) => (
+              <option key={tur} value={tur}>
+                {tur}
+              </option>
+            ))}
+          </select>
         </div>
-        <div>
-          <label htmlFor="telefon" className="text-sm font-medium text-navy">
-            Telefon
-          </label>
-          <input
-            id="telefon"
-            name="telefon"
-            type="tel"
-            required
-            autoComplete="tel"
-            value={telefon}
-            onChange={(event) => setTelefon(event.target.value)}
-            className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-          />
-        </div>
-      </div>
+      )}
       <div className={siteler ? "grid gap-4 sm:grid-cols-2" : undefined}>
         <div>
           <label htmlFor="mahalleSlug" className="text-sm font-medium text-navy">
@@ -236,64 +257,74 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
           </span>
         </p>
       )}
-      {/* Opsiyonel alanlar katlı geliyor: form ne kadar uzun görünürse o kadar
-          terk ediliyor. Zorunlu olan yalnız ad ve telefon; gerisi görüşmede de
-          konuşulabilir. Değerleme sayfasından gelen için açık başlıyor, çünkü
-          orada m²/oda bilgisi işi gerçekten hızlandırıyor. */}
-      <details className="group rounded-xl border border-border bg-surface-muted px-4 py-3" open={Boolean(siteler)}>
+      <details className="group rounded-xl border border-border bg-surface-muted px-4 py-3">
         <summary className="flex cursor-pointer list-none items-center justify-between text-sm font-medium text-navy [&::-webkit-details-marker]:hidden">
-          Daire bilgisi ekleyin <span className="text-xs font-normal text-muted">(opsiyonel — daha hızlı dönüş)</span>
+          Ayrıntı ekleyin <span className="text-xs font-normal text-muted">(isteğe bağlı)</span>
         </summary>
         <div className="mt-4 space-y-4">
-      <div className="grid gap-4 sm:grid-cols-2">
-        <div>
-          <label htmlFor="metrekare" className="text-sm font-medium text-navy">
-            m² <span className="text-muted">(opsiyonel)</span>
-          </label>
-          <input
-            id="metrekare"
-            name="metrekare"
-            type="number"
-            min="0"
-            inputMode="numeric"
-            value={metrekare}
-            onChange={(event) => setMetrekare(event.target.value)}
-            className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-          />
-        </div>
-        <div>
-          <label htmlFor="odaSayisi" className="text-sm font-medium text-navy">
-            Oda Sayısı <span className="text-muted">(opsiyonel)</span>
-          </label>
-          <select
-            id="odaSayisi"
-            name="odaSayisi"
-            value={odaSayisi}
-            onChange={(event) => setOdaSayisi(event.target.value)}
-            className="mt-1.5 w-full cursor-pointer rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-          >
-            <option value="">Seçiniz</option>
-            {odaSecenekleri.map((oda) => (
-              <option key={oda} value={oda}>
-                {oda}
-              </option>
-            ))}
-          </select>
-        </div>
-      </div>
-      <div>
-        <label htmlFor="mesaj" className="text-sm font-medium text-navy">
-          Mesajınız <span className="text-muted">(opsiyonel)</span>
-        </label>
-        <textarea
-          id="mesaj"
-          name="mesaj"
-          rows={4}
-          value={mesaj}
-          onChange={(event) => setMesaj(event.target.value)}
-          className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
-        />
-      </div>
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label htmlFor="isim" className="text-sm font-medium text-navy">Ad Soyad (isteğe bağlı)</label>
+                  <input id="isim" name="isim" type="text" autoComplete="name" value={isim}
+                    onChange={(event) => setIsim(event.target.value)}
+                    className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" />
+                </div>
+                <div>
+                  <label htmlFor="telefon" className="text-sm font-medium text-navy">Telefon (isteğe bağlı)</label>
+                  <input id="telefon" name="telefon" type="tel" autoComplete="tel" value={telefon}
+                    onChange={(event) => setTelefon(event.target.value)}
+                    className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30" />
+                </div>
+              </div>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <div>
+              <label htmlFor="metrekare" className="text-sm font-medium text-navy">
+                m² <span className="text-muted">(opsiyonel)</span>
+              </label>
+              <input
+                id="metrekare"
+                name="metrekare"
+                type="number"
+                min="0"
+                inputMode="numeric"
+                value={metrekare}
+                onChange={(event) => setMetrekare(event.target.value)}
+                className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
+              />
+            </div>
+            <div>
+              <label htmlFor="odaSayisi" className="text-sm font-medium text-navy">
+                Oda Sayısı <span className="text-muted">(opsiyonel)</span>
+              </label>
+              <select
+                id="odaSayisi"
+                name="odaSayisi"
+                value={odaSayisi}
+                onChange={(event) => setOdaSayisi(event.target.value)}
+                className="mt-1.5 w-full cursor-pointer rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
+              >
+                <option value="">Seçiniz</option>
+                {odaSecenekleri.map((oda) => (
+                  <option key={oda} value={oda}>
+                    {oda}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label htmlFor="mesaj" className="text-sm font-medium text-navy">
+              Mesajınız <span className="text-muted">(opsiyonel)</span>
+            </label>
+            <textarea
+              id="mesaj"
+              name="mesaj"
+              rows={4}
+              value={mesaj}
+              onChange={(event) => setMesaj(event.target.value)}
+              className="mt-1.5 w-full rounded-xl border border-border bg-surface px-4 py-3 text-sm text-navy outline-none focus:border-gold focus:ring-2 focus:ring-gold/30"
+            />
+          </div>
         </div>
       </details>
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -302,7 +333,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
           className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:bg-gold-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold sm:w-auto"
         >
           <WhatsAppIcon className="h-4 w-4" />
-          WhatsApp ile Gönder
+          WhatsApp&apos;ta devam et
         </button>
         {mobil ? (
           <button
@@ -310,7 +341,7 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
             onClick={handleSms}
             className="inline-flex min-h-11 w-full cursor-pointer items-center justify-center gap-2 rounded-full border border-border px-6 py-3 text-sm font-semibold text-navy transition-colors duration-200 hover:border-gold hover:text-gold-dark sm:w-auto"
           >
-            SMS ile Gönder
+            SMS&apos;te devam et
           </button>
         ) : (
           <a
@@ -324,8 +355,8 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
       </div>
       <OfisDurumu />
       <p className="text-xs leading-relaxed text-muted">
-        Butonlar mesajınızı hazır yazılmış hâlde açar — göndermek için orada gönder tuşuna
-        basmayı unutmayın. WhatsApp da SMS de kullanmak istemiyorsanız doğrudan arayın:{" "}
+        Mesajınız seçtiğiniz uygulamada hazır açılır. Bize ulaşması için uygulamadaki
+        gönder düğmesine basın. Dilerseniz doğrudan arayın:{" "}
         <a
           href={`tel:${siteConfig.phoneTel}`}
           onClick={() => sendGAEvent("event", "phone_click", { konum: "iletisim_formu_alt" })}
@@ -333,8 +364,8 @@ export function ContactForm({ mahalleler, siteler }: ContactFormProps) {
         >
           {siteConfig.phoneDisplay}
         </a>
-        . Bilgileriniz sitemizde saklanmaz; mesajınız kendi WhatsApp uygulamanız üzerinden bize
-        iletilir. Ayrıntılar:{" "}
+        . Forma yazdığınız bilgiler sitemizde saklanmaz; yalnızca WhatsApp veya SMS mesajınıza
+        eklenir. Ayrıntılar:{" "}
         <Link href="/gizlilik" className="font-semibold text-gold-dark hover:underline">
           Gizlilik ve KVKK Aydınlatma Metni
         </Link>
