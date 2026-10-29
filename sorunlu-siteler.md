@@ -2250,3 +2250,11 @@ yeniden üretim yeter). dizin-adaylari-uret.py'nin YASAK süzgeci bu adresi de t
 dizin isteği harcanmasın.
 Önbellek dosyaları (nokta-serp/nokta-gmaps-4-devlet…, yeni-18700-1) duruyor; zararsız, ileride Muradiye
 Okulları parseli sorulursa hazır.
+
+## Çerez bandı GERİ GELDİ (2026-10-07, Özgün: "ceza yemeyeceğimiz hale getir")
+30.07'de kaldırılan rıza bandı yeniden kuruldu; 06.10 sayfa denetiminde /gizlilik'in "izninizle" dediği ama GA'nın herkeste çalıştığı çelişki raporlanmış, Özgün'e seçenekler (bant / GA'yı kaldır / böyle kalsın) ve 2026 ceza aralıkları (aydınlatma 85.437–1.709.200 TL, veri güvenliği 256.357–17.092.242 TL; KVKK çerez rehberi 2025 güncellemesi analitik çerezde açık rıza) anlatılmış, karar "ceza yemeyeceğimiz hale getir". Kurulum (PR, dal `teknik/cerez-rizasi`):
+- lib/cerez-rizasi.ts tek kaynak: tercih localStorage `cerez-rizasi` ({secim, tarih}), 12 ay geçerli; RIZA_DEGISTI / RIZA_SIFIRLA olayları.
+- TEMEL rıza modu: layout bootstrap `gtag('consent','default', …denied)`; gtag.js YALNIZ "Kabul et"ten sonra yüklenir (ga-yukleyici) — rızasız ziyaretçi için Google'a tek istek yok. Gelişmiş mod (çerezsiz ping + modelleme) bilinçli seçilmedi: modelleme eşiği ~1.000 rızasız olay/gün, trafiğimizin çok üstünde.
+- "Reddet"/tercih sıfırlama: consent update denied + `_ga`, `_ga_*` çerezleri silinir. Bant: iki eşit düğme, çerez duvarı yok, /gizlilik'te "Çerez tercihimi değiştir" kutusu.
+- Dönüşüm olayları (phone_click, whatsapp_click, sahibinden_click, değerleme CTA) lib/ga.ts üzerinden çerezsiz Vercel Analytics `track()`e aynalandı — Hobby planda toplanmaz, Pro'da panelde görünür; karne betikleri (scripts/ga4-api.mjs) GA tarafında yalnız kabul edenleri görecek, toplamlar Vercel + GSC'den okunmalı.
+- BEKLENTİ: GA ziyaretçi/olay sayıları düşer (rıza oranı kadar), bu veri kaybı değil ölçüm tabanı değişimi; karne okumalarında 07.10 kırılma noktası olarak işlenmeli.
